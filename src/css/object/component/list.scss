@@ -1,0 +1,11 @@
+@use '../../object/utility/utility.scss';
+.c-list {
+  display:flex;
+  align-items: center;
+}
+
+.c-list__header {
+  @extend .c-list;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
