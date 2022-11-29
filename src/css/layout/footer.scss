@@ -1,5 +1,50 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
-footer {
-  height: 300px;
+#footer {
+  width: 100%;
+  background-color: utility.$pale-blue;
+}
+
+.l-footer-inner {
+  width:1180px;
+  height: 265px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.l-footer-links {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+.l-footer-list {
+  margin-top: 28px;
+  column-count: 2;
+}
+
+.l-footer-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.l-footer-link {
+  color: utility.$black;
+  text-decoration: none;
+}
+
+.l-footer-link__top {
+  @extend .l-footer-link;
+  margin-top: 30px;
+}
+
+.l-footer-copyright {
+  background-color: utility.$gray;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }

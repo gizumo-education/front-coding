@@ -1,11 +1,11 @@
 @use '../../object/utility/utility.scss';
 .c-list {
   display:flex;
-  align-items: center;
 }
 
 .c-list-link {
   @extend .c-list;
+  align-items: center;
   & > li {
     border-left: 1px solid utility.$black;
     margin-left: 16px;
@@ -31,4 +31,9 @@
   @extend .c-list;
   justify-content: flex-end;
   margin-right: 100px;
+}
+
+.c-list-footer {
+  @extend .c-list;
+  flex-direction: column;
 }
