@@ -1,8 +1,60 @@
 @use '../object/utility/utility.scss';
 // headerのスタイルを記述するファイル
-header {
+#header {
   display: flex;
   align-items: center;
   justify-content: right;
   height: 100px;
 }
+
+.l-header-button {
+  height: 50px;
+  width: 160px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  background-color: utility.$blue;
+  border-radius: 10px;
+  justify-content: center;
+  gap: 10px;
+  color: utility.$white;
+}
+
+.l-header-list {
+  display:flex;
+  align-items: center;
+}
+
+.l-header-list-link {
+  @extend .l-header-list;
+  & > li {
+    border-left: 1px solid utility.$black;
+    margin-left: 16px;
+    padding-left: 16px;
+  }
+  & > li:first-child {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
+.l-header-list-button {
+  @extend .l-header-list;
+  & > li {
+    margin-left: 15px;
+  }
+  & > li:first-child {
+    margin-left: 25px;
+  }
+}
+.l-header-navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+.l-header-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
