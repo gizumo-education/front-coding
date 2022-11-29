@@ -4,7 +4,30 @@
   align-items: center;
 }
 
-.c-list__header {
+.c-list-link {
+  @extend .c-list;
+  & > li {
+    border-left: 1px solid utility.$black;
+    margin-left: 16px;
+    padding-left: 16px;
+  }
+  & > li:first-child {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
+.c-list-button {
+  @extend .c-list;
+  & > li {
+    margin-left: 15px;
+  }
+  & > li:first-child {
+    margin-left: 25px;
+  }
+}
+
+.c-list-header {
   @extend .c-list;
   justify-content: flex-end;
   margin-right: 100px;

@@ -1,5 +1,8 @@
 @use '../object/utility/utility.scss';
 // headerのスタイルを記述するファイル
 header {
+  display: flex;
+  align-items: center;
+  justify-content: right;
   height: 100px;
 }

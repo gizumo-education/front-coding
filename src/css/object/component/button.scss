@@ -1,15 +1,20 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
 .c-button {
-
+  transition: .3s;
+}
+.c-button:hover {
+  opacity: .8;
 }
 
-.c-button__search {
+.c-button-search {
+  @extend .c-button;
   height: 60px;
   border-radius: 50%;
 }
 
-.c-button__header {
+.c-button-header {
+  @extend .c-button;
   height: 50px;
   width: 160px;
   font-size: 14px;

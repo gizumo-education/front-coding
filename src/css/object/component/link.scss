@@ -5,3 +5,10 @@
 .c-link:hover {
   opacity: .8;
 }
+
+.c-link-header {
+  @extend .c-link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
