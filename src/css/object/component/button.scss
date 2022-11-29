@@ -8,3 +8,16 @@
   height: 60px;
   border-radius: 50%;
 }
+
+.c-button__header {
+  height: 50px;
+  width: 160px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  background-color: utility.$blue;
+  border-radius: 10px;
+  justify-content: center;
+  gap: 10px;
+  color: utility.$white;
+}
