@@ -3,7 +3,11 @@
 .c-button {
   height: 60px;
   border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
   transition: .3s;
+  border: none;
+  color: utility.$white;
 }
 .c-button:hover {
   opacity: .8;
@@ -15,8 +19,12 @@
   justify-content: center;
   gap: 4px;
   align-items: center;
-  border: none;
-  color: utility.$white;
   background-color: utility.$button;
   width: 140px;
+}
+.c-button-featured {
+  @extend .c-button;
+  width: 360px;
+  line-height:60px;
+  background-color: utility.$button;
 }
