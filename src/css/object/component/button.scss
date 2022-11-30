@@ -1,6 +1,8 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
 .c-button {
+  height: 60px;
+  border-radius: 30px;
   transition: .3s;
 }
 .c-button:hover {
@@ -9,6 +11,12 @@
 
 .c-button-search {
   @extend .c-button;
-  height: 60px;
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  border: none;
+  color: utility.$white;
+  background-color: utility.$button;
+  width: 140px;
 }
