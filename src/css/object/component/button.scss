@@ -19,12 +19,12 @@
   justify-content: center;
   gap: 4px;
   align-items: center;
-  background-color: utility.$button;
+  background-color: utility.$pink;
   width: 140px;
 }
 .c-button-newest {
   @extend .c-button;
   width: 360px;
   line-height:60px;
-  background-color: utility.$button;
+  background-color: utility.$pink;
 }
