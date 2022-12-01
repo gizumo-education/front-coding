@@ -3,8 +3,6 @@
 .c-button {
   height: 60px;
   border-radius: 30px;
-  font-size: 18px;
-  font-weight: 700;
   transition: .3s;
   border: none;
   color: utility.$white;
@@ -21,16 +19,22 @@
   align-items: center;
   background-color: utility.$pink;
   width: 140px;
+  font-size: 18px;
+  font-weight: 700;
 }
 .c-button-newest {
   @extend .c-button;
   width: 360px;
   line-height: 60px;
   background-color: utility.$pink;
+  font-size: 18px;
+  font-weight: 700;
 }
 .c-button-contents {
   @extend .c-button;
   width: 420px;
   line-height: 60px;
   background-color: utility.$pink;
+  font-size: 18px;
+  font-weight: 700;
 }
