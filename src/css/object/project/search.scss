@@ -1,14 +1,22 @@
 @use '../../object/utility/utility.scss';
 
 .p-search {
-  
+
 }
 .p-search-inner {
   width: 1180px;
-  margin: 60px auto;
-  padding: 40px 0;
   text-align: center;
   background-color: utility.$light-blue;
+}
+.p-search-inner-top {
+  @extend .p-search-inner;
+  margin: 60px auto;
+  padding: 40px 0;
+}
+.p-search-inner-bottom {
+  @extend .p-search-inner;
+  margin: 150px auto 200px;
+  padding: 40px 0;
 }
 .p-search-description {
   font-size: 20px;
