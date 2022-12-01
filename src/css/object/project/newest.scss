@@ -1,43 +1,43 @@
 @use '../../object/utility/utility.scss';
-.p-featured {
+.p-newest {
   background-color: utility.$pale-blue;
 }
 
-.p-featured-inner {
+.p-newest-inner {
   width: 1180px;
   margin: 0 auto;
   padding: 64px 0;
 }
-.p-featured-list-box {
+.p-newest-list-box {
   position: relative;
   margin-top: 25px;
 }
 
-.p-featured-list {
+.p-newest-list {
   display: flex;
   gap: 20px;
 }
 
-.p-featured-image {
+.p-newest-image {
   border-radius: 10px;
 }
 
-.p-featured-link {
+.p-newest-link {
   color: utility.$black;
 }
 
-.p-featured-description {
+.p-newest-description {
   padding: 8px 0;
   font-size: 16px;
 }
-.p-featured-detail {
+.p-newest-detail {
   font-size: 14px;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.p-featured-marker {
+.p-newest-marker {
   display: inline-block;
   background-color: utility.$marker;
   width: 60px;
@@ -46,12 +46,12 @@
   margin-right: 10px;
 }
 
-.p-featured-button-box {
+.p-newest-button-box {
   margin: 60px auto 0;
   text-align: center;
 }
 
-.p-featured-button {
+.p-newest-button {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -61,11 +61,11 @@
   border: none;
 }
 
-.p-featured-left {
-  @extend .p-featured-button;
+.p-newest-left {
+  @extend .p-newest-button;
   top: 70px;
 }
-.p-featured-left::after {
+.p-newest-left::after {
   content: '';
   width: 15px;
   height: 15px;
@@ -79,12 +79,12 @@
   border-left: 1px solid;
 }
 
-.p-featured-right {
-  @extend .p-featured-button;
+.p-newest-right {
+  @extend .p-newest-button;
   top: 70px;
   right: 0px;
 }
-.p-featured-right::after {
+.p-newest-right::after {
   content: '';
   width: 15px;
   height: 15px;
