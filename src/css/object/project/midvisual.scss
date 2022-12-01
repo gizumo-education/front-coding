@@ -1,0 +1,34 @@
+@use '../../object/utility/utility.scss';
+.p-midvisual {
+  width: 100%;
+  height: 300px;
+}
+
+.p-midvisual-image {
+  @extend .p-midvisual;
+  position: relative;
+  background-image: url("../img/picture/midvisual.jpg");
+  text-align: center;
+}
+
+.p-midvisual-image::before {
+  @extend .p-midvisual;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: utility.$black;
+  opacity: .5;
+}
+
+.p-midvisual-text {
+  position: absolute;
+  color: utility.$white;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 50px;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
