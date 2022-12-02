@@ -22,6 +22,10 @@
   justify-content: center;
   gap: 10px;
   color: utility.$white;
+  transition: .3s;
+}
+.l-header-button:hover {
+  opacity: .8;
 }
 
 .l-header-list {

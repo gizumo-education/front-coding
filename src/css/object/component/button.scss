@@ -3,13 +3,8 @@
 .c-button {
   height: 60px;
   border-radius: 30px;
-  transition: .3s;
   border: none;
   color: utility.$white;
-}
-
-.c-button:hover {
-  opacity: .8;
 }
 
 .c-button-search {
