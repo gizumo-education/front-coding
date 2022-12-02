@@ -35,6 +35,7 @@
   padding: 8px 0;
   font-size: 16px;
 }
+
 .p-newest-detail {
   font-size: 14px;
   display: flex;
@@ -70,6 +71,7 @@
   @extend .p-newest-button;
   top: 70px;
 }
+
 .p-newest-left::after {
   content: '';
   width: 15px;
@@ -80,7 +82,7 @@
   rotate: -45deg;
   transform: translateY(-50%);
   border-color: utility.$black;
-  border-top:1px solid;
+  border-top: 1px solid;
   border-left: 1px solid;
 }
 
@@ -89,6 +91,7 @@
   top: 70px;
   right: 0px;
 }
+
 .p-newest-right::after {
   content: '';
   width: 15px;

@@ -38,6 +38,7 @@
     border: none;
   }
 }
+
 .l-header-list-button {
   @extend .l-header-list;
   & > li {
@@ -47,11 +48,13 @@
     margin-left: 25px;
   }
 }
+
 .l-header-navigation {
   display: flex;
   justify-content: flex-end;
   margin-right: 100px;
 }
+
 .l-header-link {
   display: flex;
   justify-content: center;

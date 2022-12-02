@@ -3,46 +3,55 @@
 .p-search {
 
 }
+
 .p-search-inner {
   width: 1180px;
   text-align: center;
   background-color: utility.$light-blue;
 }
+
 .p-search-inner-top {
   @extend .p-search-inner;
   margin: 60px auto;
   padding: 40px 0;
 }
+
 .p-search-inner-bottom {
   @extend .p-search-inner;
   margin: 150px auto 200px;
   padding: 40px 0;
 }
+
 .p-search-description {
   font-size: 20px;
   margin-top: 30px;
 }
+
 .p-search-form {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-top: 26px;
 }
+
 .p-search-input {
   border-radius: 10px;
   border: 1px solid utility.$input;
   font-size: 18px;
   height: 60px;
 }
+
 .p-search-input-select {
   @extend .p-search-input;
   appearance: none;
   width: 200px;
   padding-left: 15px;
 }
+
 .p-search-input-select-inner {
   position: relative;
 }
+
 .p-search-input-select-inner:before {
   position: absolute;
   content: '';
