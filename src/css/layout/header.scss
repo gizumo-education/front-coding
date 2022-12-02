@@ -1,6 +1,6 @@
 @use '../object/utility/utility.scss';
 // headerのスタイルを記述するファイル
-#header {
+.l-header {
   display: flex;
   align-items: center;
   justify-content: right;
@@ -28,13 +28,9 @@
   opacity: .8;
 }
 
-.l-header__list {
+.l-header__list-link {
   display: flex;
   align-items: center;
-}
-
-.l-header__list-link {
-  @extend .l-header__list;
   & > li {
     border-left: 1px solid utility.$black;
     margin-left: 16px;
@@ -48,7 +44,8 @@
 }
 
 .l-header__list-button {
-  @extend .l-header__list;
+  display: flex;
+  align-items: center;
   & > li {
     margin-left: 15px;
   }

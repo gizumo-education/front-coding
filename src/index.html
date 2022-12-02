@@ -9,7 +9,7 @@
   <title>医療事務求人を探すならギズジョブ</title>
 </head>
 <body>
-  <header id="header">
+  <header class="l-header">
     <nav class="l-header__navigation">
       <ul class="l-header__list-link">
         <li><a href="" class="l-header__link c-link">ギズジョブ医療事務とは</a></li>
@@ -26,14 +26,16 @@
   <main>
     <section class="p-search"><!--検索-->
       <div class="p-keyvisual">
-        <img class="p-keyvisual__image" src="img/picture/keyvisual.jpg" alt="key visual">
+        <h1>
+          <img class="p-keyvisual__image" src="img/picture/keyvisual.jpg" alt="医療事務〜">
+        </h1>
       </div>
       <div class="p-search__inner-top">
         <h2 class="h2">お仕事検索</h2>
         <p class="p-search__description">働きたい職種・地域・希望給与を入れて検索！</p>
-        <form action="submit" class="p-search__form">
+        <form action="#" class="p-search__form">
           <div class="p-search__input-select-inner">
-            <select name="jobs" id="job-select-top" class="p-search__input-select">
+            <select name="jobs" class="p-search__input-select">
               <option value="medical-assistant" selected>医療事務</option>
               <option value="compounding-medicine-assistant">調剤事務</option>
               <option value="health-information-manager">診療情報管理士</option>
@@ -44,7 +46,7 @@
             </select>
           </div>
           <div class="p-search__input-select-inner">
-            <select name="prefecture" id="prefecture-select-top" class="p-search__input-select">
+            <select name="prefecture" class="p-search__input-select">
               <option value="ibaraki">茨城県</option>
               <option value="kanagawa">神奈川県</option>
               <option value="gunma">群馬県</option>
@@ -55,7 +57,7 @@
             </select>
           </div>
           <div class="p-search__input-select-inner">
-            <select name="salary" id="sarlary-select-top" class="p-search__input-select">
+            <select name="salary" class="p-search__input-select">
               <option value="170,000">月給17万〜</option>
               <option value="180,000">月給18万〜</option>
               <option value="190,000">月給19万〜</option>
@@ -74,7 +76,7 @@
     </section>
     <section class="p-newest">
       <div class="p-newest-inner">
-        <h3 class="p-newest-heading">新着求人</h3><!--新着求人-->
+        <h2 class="p-newest-heading">新着求人</h2><!--新着求人-->
         <div class="p-newest-list-box">
           <ul class="p-newest-list">
             <li>
@@ -130,11 +132,11 @@
         </div>
       </div>
     </section>
-    <section class="p-midvisual-image">
-      <h2 class="p-midvisual-text">ギズジョブなら理想の職場がきっと見つかる<br>
+    <div class="p-midvisual-image">
+      <p class="p-midvisual-text">ギズジョブなら理想の職場がきっと見つかる<br>
         ギズジョブは完全無料の求職者向け求人サービスです。
-      </h2>
-    </section>
+      </p>
+    </div>
     <section class="p-feature">
       <div class="p-feature-inner">
         <h2 class="h2">ギズジョブの4つの特徴</h2>
@@ -275,7 +277,7 @@
         <p class="p-search-description">働きたい職種・地域・希望給与を入れて検索！</p>
         <form action="submit" class="p-search-form">
           <div class="p-search-input-select-inner">
-            <select name="jobs" id="job-select-bottom" class="p-search-input-select">
+            <select name="jobs" class="p-search-input-select">
               <option value="medical-assistant" selected>医療事務</option>
               <option value="compounding-medicine-assistant">調剤事務</option>
               <option value="health-information-manager">診療情報管理士</option>
@@ -286,7 +288,7 @@
             </select>
           </div>
           <div class="p-search-input-select-inner">
-            <select name="prefecture" id="prefecture-select-bottom" class="p-search-input-select">
+            <select name="prefecture" class="p-search-input-select">
               <option value="ibaraki">茨城県</option>
               <option value="kanagawa">神奈川県</option>
               <option value="gunma">群馬県</option>
@@ -297,7 +299,7 @@
             </select>
           </div>
           <div class="p-search-input-select-inner">
-            <select name="salary" id="sarlary-select-bottom" class="p-search-input-select">
+            <select name="salary" class="p-search-input-select">
               <option value="170,000">月給17万〜</option>
               <option value="180,000">月給18万〜</option>
               <option value="190,000">月給19万〜</option>
@@ -315,7 +317,7 @@
       </div>
     </section>
   </main>
-  <footer id="footer">
+  <footer class="l-footer">
     <div class="l-footer-inner">
       <div class="l-footer-links">
         <nav>
@@ -337,6 +339,6 @@
     <div class="l-footer-copyright">
       <small>© 2022 Gizumo Inc.</small>
     </div>
-  </footer>
+  </footerclass>
 </body>
 </html>
