@@ -4,14 +4,14 @@
   height: 300px;
 }
 
-.p-midvisual-image {
+.p-midvisual__image {
   @extend .p-midvisual;
   position: relative;
   background-image: url("../img/picture/midvisual.jpg");
   text-align: center;
 }
 
-.p-midvisual-image::before {
+.p-midvisual__image::before {
   @extend .p-midvisual;
   content: '';
   position: absolute;
@@ -21,7 +21,7 @@
   opacity: .5;
 }
 
-.p-midvisual-text {
+.p-midvisual__text {
   position: absolute;
   color: utility.$white;
   font-weight: 700;

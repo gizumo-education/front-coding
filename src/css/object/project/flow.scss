@@ -3,19 +3,19 @@
 
 }
 
-.p-flow-inner {
+.p-flow__inner {
   width: 1180px;
   margin: 0 auto;
   text-align: center;
 }
 
-.p-flow-list {
+.p-flow__list {
   display: flex;
   margin-top: 50px;
   gap: 20px;
 }
 
-.p-flow-item {
+.p-flow__item {
   position: relative;
   height: 360px;
   width: 100%;
@@ -24,7 +24,7 @@
   border-radius: 10px;
 }
 
-.p-flow-image-box {
+.p-flow__image-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,12 +32,12 @@
   margin-top: 30px;
 }
 
-.p-flow-image-box-entry {
-  @extend .p-flow-image-box;
+.p-flow__image-box-entry {
+  @extend .p-flow__image-box;
   margin-left: 10px;
 }
 
-.p-flow-item::before {
+.p-flow__item::before {
   position: absolute;
   right: -32px;
   top: 50%;
@@ -48,11 +48,11 @@
   border-right: 20px solid transparent;
 }
 
-.p-flow-item:last-child:before {
+.p-flow__item:last-child:before {
   border: none;
 }
 
-.p-flow-item-step {
+.p-flow__item-step {
   position: absolute;
   display: flex;
   align-items: center;
@@ -69,20 +69,20 @@
   border-radius: 50%;
 }
 
-.p-flow-item-heading {
+.p-flow__item-heading {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 
-.p-flow-item-heading-box {
+.p-flow__item-heading-box {
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.p-flow-item-text {
+.p-flow__item-text {
   text-align: left;
   font-size: 14px;
   line-height: 20px;

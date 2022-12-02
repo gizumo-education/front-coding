@@ -19,7 +19,7 @@
   font-weight: 700;
 }
 
-.c-button-newest {
+.c-button__newest {
   @extend .c-button;
   width: 360px;
   line-height: 60px;
@@ -28,7 +28,7 @@
   font-weight: 700;
 }
 
-.c-button-contents {
+.c-button__contents {
   @extend .c-button;
   width: 420px;
   line-height: 60px;

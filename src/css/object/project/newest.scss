@@ -3,48 +3,48 @@
   background-color: utility.$pale-blue;
 }
 
-.p-newest-inner {
+.p-newest__inner {
   width: 1180px;
   margin: 0 auto;
   padding: 64px 0;
 }
 
-.p-newest-heading {
+.p-newest__heading {
   font-size: 25px;
 }
 
-.p-newest-list-box {
+.p-newest__list-box {
   position: relative;
   margin-top: 25px;
 }
 
-.p-newest-list {
+.p-newest__list {
   display: flex;
   gap: 20px;
 }
 
-.p-newest-image {
+.p-newest__image {
   border-radius: 10px;
 }
 
-.p-newest-link {
+.p-newest__link {
   color: utility.$black;
 }
 
-.p-newest-description {
+.p-newest__description {
   padding: 8px 0;
   font-size: 16px;
   line-height: 22px;
 }
 
-.p-newest-detail {
+.p-newest__detail {
   font-size: 14px;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.p-newest-marker {
+.p-newest__marker {
   display: inline-block;
   background-color: utility.$marker;
   width: 60px;
@@ -53,12 +53,12 @@
   margin-right: 10px;
 }
 
-.p-newest-button-box {
+.p-newest__button-box {
   margin: 60px auto 0;
   text-align: center;
 }
 
-.p-newest-button {
+.p-newest__button {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -68,12 +68,12 @@
   border: none;
 }
 
-.p-newest-left {
-  @extend .p-newest-button;
+.p-newest__left {
+  @extend .p-newest__button;
   top: 70px;
 }
 
-.p-newest-left::after {
+.p-newest__left::after {
   content: '';
   width: 15px;
   height: 15px;
@@ -87,13 +87,13 @@
   border-left: 1px solid;
 }
 
-.p-newest-right {
-  @extend .p-newest-button;
+.p-newest__right {
+  @extend .p-newest__button;
   top: 70px;
   right: 0px;
 }
 
-.p-newest-right::after {
+.p-newest__right::after {
   content: '';
   width: 15px;
   height: 15px;

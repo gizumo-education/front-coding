@@ -5,7 +5,7 @@
   background-color: utility.$pale-blue;
 }
 
-.l-footer-inner {
+.l-footer__inner {
   width:1180px;
   height: 265px;
   margin: 0 auto;
@@ -14,33 +14,33 @@
   padding-top: 50px;
 }
 
-.l-footer-links {
+.l-footer__links {
   font-size: 16px;
   line-height: 36px;
 }
 
-.l-footer-list {
+.l-footer__list {
   margin-top: 28px;
   column-count: 2;
 }
 
-.l-footer-images {
+.l-footer__images {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.l-footer-link {
+.l-footer__link {
   color: utility.$black;
   text-decoration: none;
 }
 
-.l-footer-link__top {
-  @extend .l-footer-link;
+.l-footer__link-top {
+  @extend .l-footer__link;
   margin-top: 30px;
 }
 
-.l-footer-copyright {
+.l-footer__copyright {
   background-color: utility.$gray;
   height: 35px;
   display: flex;
