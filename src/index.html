@@ -26,14 +26,14 @@
   <main>
     <section class="p-search"><!--検索-->
       <div class="p-keyvisual">
-        <img class="p-keyvisual-image" src="img/picture/keyvisual.jpg" alt="key visual">
+        <img class="p-keyvisual__image" src="img/picture/keyvisual.jpg" alt="key visual">
       </div>
-      <div class="p-search-inner-top">
+      <div class="p-search__inner-top">
         <h2 class="h2">お仕事検索</h2>
-        <p class="p-search-description">働きたい職種・地域・希望給与を入れて検索！</p>
-        <form action="submit" class="p-search-form">
-          <div class="p-search-input-select-inner">
-            <select name="jobs" id="job-select-top" class="p-search-input-select">
+        <p class="p-search__description">働きたい職種・地域・希望給与を入れて検索！</p>
+        <form action="submit" class="p-search__form">
+          <div class="p-search__input-select-inner">
+            <select name="jobs" id="job-select-top" class="p-search__input-select">
               <option value="medical-assistant" selected>医療事務</option>
               <option value="compounding-medicine-assistant">調剤事務</option>
               <option value="health-information-manager">診療情報管理士</option>
@@ -43,8 +43,8 @@
               <option value="hospital-se">病院内SE</option>
             </select>
           </div>
-          <div class="p-search-input-select-inner">
-            <select name="prefecture" id="prefecture-select-top" class="p-search-input-select">
+          <div class="p-search__input-select-inner">
+            <select name="prefecture" id="prefecture-select-top" class="p-search__input-select">
               <option value="ibaraki">茨城県</option>
               <option value="kanagawa">神奈川県</option>
               <option value="gunma">群馬県</option>
@@ -54,8 +54,8 @@
               <option value="tochigi">栃木県</option>
             </select>
           </div>
-          <div class="p-search-input-select-inner">
-            <select name="salary" id="sarlary-select-top" class="p-search-input-select">
+          <div class="p-search__input-select-inner">
+            <select name="salary" id="sarlary-select-top" class="p-search__input-select">
               <option value="170,000">月給17万〜</option>
               <option value="180,000">月給18万〜</option>
               <option value="190,000">月給19万〜</option>
@@ -65,8 +65,8 @@
               <option value="230,000">月給23万〜</option>
             </select>
           </div>
-          <input class="p-search-input-text" type="text" placeholder="キーワード・企業名・スキルなど">
-          <button type="submit" class="c-button-search">
+          <input class="p-search__input-text" type="text" placeholder="キーワード・企業名・スキルなど">
+          <button type="submit" class="c-button__search">
             <img src="img/icon/button-search.png" alt="">検索する
           </button>
         </form>

@@ -4,56 +4,56 @@
 
 }
 
-.p-search-inner {
+.p-search__inner {
   width: 1180px;
   text-align: center;
   background-color: utility.$light-blue;
   border-radius: 10px;
 }
 
-.p-search-inner-top {
-  @extend .p-search-inner;
+.p-search__inner-top {
+  @extend .p-search__inner;
   margin: 60px auto;
   padding: 40px 0;
 }
 
-.p-search-inner-bottom {
-  @extend .p-search-inner;
+.p-search__inner-bottom {
+  @extend .p-search__inner;
   margin: 150px auto 200px;
   padding: 40px 0;
 }
 
-.p-search-description {
+.p-search__description {
   font-size: 20px;
   margin-top: 30px;
 }
 
-.p-search-form {
+.p-search__form {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-top: 26px;
 }
 
-.p-search-input {
+.p-search__input {
   border-radius: 10px;
   border: 1px solid utility.$input;
   font-size: 18px;
   height: 60px;
 }
 
-.p-search-input-select {
-  @extend .p-search-input;
+.p-search__input-select {
+  @extend .p-search__input;
   appearance: none;
   width: 200px;
   padding-left: 15px;
 }
 
-.p-search-input-select-inner {
+.p-search__input-select-inner {
   position: relative;
 }
 
-.p-search-input-select-inner:before {
+.p-search__input-select-inner:before {
   position: absolute;
   content: '';
   top: 50%;
@@ -66,8 +66,8 @@
   border-right: 10px solid transparent;
 }
 
-.p-search-input-text {
-  @extend .p-search-input;
+.p-search__input-text {
+  @extend .p-search__input;
   padding-left :8px;
   width: 300px;
 }
