@@ -1,10 +1,5 @@
 @use '../../object/utility/utility.scss';
-.p-flow {
-
-}
-
 .p-flow__inner {
-  width: 1180px;
   margin: 0 auto;
   text-align: center;
 }
@@ -62,7 +57,7 @@
   height: 60px;
   width: 60px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: utility.$bold;
   line-height: 20px;
   background-color: utility.$pink;
   color: utility.$white;
@@ -70,7 +65,7 @@
 }
 
 .p-flow__item-heading {
-  font-weight: 700;
+  font-weight: utility.$bold;
   font-size: 24px;
   line-height: 30px;
 }
