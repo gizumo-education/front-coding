@@ -9,6 +9,9 @@
   position: relative;
   background-image: url("../img/picture/midvisual.jpg");
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .p-midvisual__image::before {
@@ -28,7 +31,4 @@
   font-size: 25px;
   line-height: 50px;
   margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
