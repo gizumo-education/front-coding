@@ -1,7 +1,10 @@
 @use '../../object/utility/utility.scss';
+.p-search__top {
+  padding: 60px 0;
+}
 
-.p-search {
-
+.p-search__bottom {
+  padding: 150px 0 200px;
 }
 
 .p-search__inner {
@@ -9,30 +12,20 @@
   text-align: center;
   background-color: utility.$light-blue;
   border-radius: 10px;
-}
-
-.p-search__inner-top {
-  @extend .p-search__inner;
-  margin: 60px auto;
   padding: 40px 0;
-}
-
-.p-search__inner-bottom {
-  @extend .p-search__inner;
-  margin: 150px auto 200px;
-  padding: 40px 0;
+  margin: 0 auto;
 }
 
 .p-search__description {
   font-size: 20px;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .p-search__form {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 26px;
+  padding-top: 26px;
 }
 
 .p-search__input {

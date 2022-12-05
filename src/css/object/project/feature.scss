@@ -13,7 +13,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .p-feature__item {
@@ -31,7 +31,7 @@
 }
 
 .p-feature__item-text {
-  margin-top: 36px;
+  padding: 36px 0;
   line-height: 20px;
   font-size: 14px;
 }
