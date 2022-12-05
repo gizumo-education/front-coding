@@ -39,8 +39,9 @@
 
 .p-flow__item::before {
   position: absolute;
-  right: -32px;
+  right: -22px;
   top: 50%;
+  transform-origin: center 0;
   rotate: -90deg;
   content: '';
   border-top: 20px solid utility.$pink;
