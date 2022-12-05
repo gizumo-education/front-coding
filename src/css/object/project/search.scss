@@ -1,19 +1,26 @@
 @use '../../object/utility/utility.scss';
-.p-search__top {
-  padding: 60px 0;
-}
 
-.p-search__bottom {
-  padding: 150px 0 200px;
+.p-search {
+  &__top {
+    padding: 60px 0;
+  }
+  &__bottom {
+    padding: 150px 0 200px;
+  }
 }
 
 .p-search__inner {
   width: 1180px;
+  min-width: 400px;
   text-align: center;
   background-color: utility.$light-blue;
   border-radius: 10px;
   padding: 40px 0;
   margin: 0 auto;
+  @include utility.sp {
+    width: 100%;
+    margin: 40px 15px;
+  }
 }
 
 .p-search__description {

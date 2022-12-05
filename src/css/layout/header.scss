@@ -9,6 +9,19 @@
   top: 0;
   background-color: utility.$white;
   z-index: 10000;
+  @include utility.sp {
+    height: 70px;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    @include utility.sp {
+      display: none;
+
+    }
+  }
 }
 
 .l-header__button {
@@ -50,11 +63,7 @@
   margin-left: 25px;
 }
 
-.l-header__navigation {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 100px;
-}
+
 
 .l-header__link {
   display: flex;

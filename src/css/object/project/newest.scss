@@ -4,9 +4,13 @@
 }
 
 .p-newest__inner {
-  width: 1180px;
+  max-width: 1180px;
+  min-width: 400px;
   margin: 0 auto;
   padding: 64px 0;
+  @include utility.sp {
+    
+  }
 }
 
 .p-newest__heading {
