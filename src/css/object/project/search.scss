@@ -1,0 +1,66 @@
+@use '../../object/utility/utility.scss';
+.p-search__top {
+  padding: 60px 0;
+}
+
+.p-search__bottom {
+  padding: 150px 0 200px;
+}
+
+.p-search__inner {
+  width: 1180px;
+  text-align: center;
+  background-color: utility.$light-blue;
+  border-radius: 10px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.p-search__description {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.p-search__form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 26px;
+}
+
+.p-search__input {
+  border-radius: 10px;
+  border: 1px solid utility.$input;
+  font-size: 18px;
+  height: 60px;
+}
+
+.p-search__input-select {
+  @extend .p-search__input;
+  appearance: none;
+  width: 200px;
+  padding-left: 15px;
+}
+
+.p-search__input-select-inner {
+  position: relative;
+}
+
+.p-search__input-select-inner:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid utility.$input;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.p-search__input-text {
+  @extend .p-search__input;
+  padding-left :8px;
+  width: 300px;
+}

@@ -1,0 +1,90 @@
+@use '../../object/utility/utility.scss';
+.p-flow {
+
+}
+
+.p-flow__inner {
+  width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.p-flow__list {
+  display: flex;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.p-flow__item {
+  position: relative;
+  height: 360px;
+  width: 100%;
+  padding: 30px 18px 0;
+  border: 2px solid utility.$pink;
+  border-radius: 10px;
+}
+
+.p-flow__image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+
+.p-flow__image-box-entry {
+  @extend .p-flow__image-box;
+  margin-left: 10px;
+}
+
+.p-flow__item::before {
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  transform-origin: center 0;
+  rotate: -90deg;
+  content: '';
+  border-top: 20px solid utility.$pink;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.p-flow__item:last-child:before {
+  border: none;
+}
+
+.p-flow__item-step {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  left: 8px;
+  height: 60px;
+  width: 60px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  background-color: utility.$pink;
+  color: utility.$white;
+  border-radius: 50%;
+}
+
+.p-flow__item-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.p-flow__item-heading-box {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-flow__item-text {
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 20px;
+}

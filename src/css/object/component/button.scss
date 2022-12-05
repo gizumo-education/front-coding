@@ -1,2 +1,38 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+.c-button {
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  color: utility.$white;
+}
+
+.c-button__search {
+  @extend .c-button;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  background-color: utility.$pink;
+  width: 140px;
+  font-size: 18px;
+  font-weight: utility.$bold;
+}
+
+.c-button__newest {
+  @extend .c-button;
+  width: 360px;
+  line-height: 60px;
+  background-color: utility.$pink;
+  font-size: 18px;
+  font-weight: utility.$bold;
+}
+
+.c-button__contents {
+  @extend .c-button;
+  width: 420px;
+  line-height: 60px;
+  background-color: utility.$pink;
+  font-size: 18px;
+  font-weight: utility.$bold;
+}

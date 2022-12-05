@@ -1,0 +1,8 @@
+@use '../../object/utility/utility.scss';
+.c-link {
+  transition: .3s;
+}
+
+.c-link:hover {
+  opacity: .8;
+}

@@ -1,0 +1,37 @@
+@use '../../object/utility/utility.scss';
+.p-feature {
+  padding: 105px 0;
+}
+
+.p-feature__inner {
+  width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.p-feature__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.p-feature__item {
+  background-color: utility.$feature;
+  width: 570px;
+  padding: 40px 50px 0;
+  border-radius: 10px;
+}
+
+.p-feature__item-heading {
+  font-size: 24px;
+  font-weight: utility.$bold;
+  color: utility.$pink;
+}
+
+.p-feature__item-text {
+  margin: 36px 0;
+  line-height: 20px;
+  font-size: 14px;
+}
+
