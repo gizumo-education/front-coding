@@ -46,12 +46,8 @@
 .l-header__list-button {
   display: flex;
   align-items: center;
-  & > li {
-    margin-left: 15px;
-  }
-  & > li:first-child {
-    margin-left: 25px;
-  }
+  gap: 15px;
+  margin-left: 25px;
 }
 
 .l-header__navigation {
