@@ -1,10 +1,5 @@
 @use '../../object/utility/utility.scss';
-
-.c-heading__h1 {
-
-}
-
 .c-heading__h2 {
   font-size: 25px;
-  font-weight: 700;
+  font-weight: utility.$bold;
 }
