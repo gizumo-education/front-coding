@@ -22,6 +22,9 @@
   display: flex;
   gap: 20px;
 }
+.p-newest__card {
+  width: 100%;
+}
 
 .p-newest__image {
   border-radius: 10px;
@@ -32,9 +35,14 @@
 }
 
 .p-newest__description {
-  padding: 8px 0;
+  margin: 8px 0;
   font-size: 16px;
   line-height: 22px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .p-newest__detail {
@@ -42,6 +50,14 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.p-newest__detail-item {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .p-newest__marker {
