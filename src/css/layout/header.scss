@@ -24,6 +24,30 @@
   }
 }
 
+.l-header__hamburger {
+  display: none;
+  @include utility.sp {
+    position:relative;
+    display: inline-block;
+    height: 38px;
+    width: 50px;
+    right: 15px;
+    span{
+      position:absolute;
+      display: inline-block;
+      background-color: utility.$black;
+      height: 6px;
+      width: 50px;
+      &:first-child {
+        top: 16px;
+      }
+      &:last-child {
+        top: 32px;
+      }
+    }
+  }
+}
+
 .l-header__button {
   height: 50px;
   width: 160px;
@@ -63,8 +87,6 @@
   margin-left: 25px;
 }
 
-
-
 .l-header__link {
   display: flex;
   justify-content: center;
@@ -72,4 +94,3 @@
   font-size: 16px;
   color: utility.$black;
 }
-
