@@ -9,17 +9,24 @@
   margin: 0 auto;
   padding: 64px 0;
   @include utility.sp {
-    
+    padding: 64px 15px;
+    text-align: center;
   }
 }
 
 .p-newest__heading {
   font-size: 25px;
+  @include utility.sp {
+    font-weight: utility.$bold;
+  }
 }
 
 .p-newest__list-box {
   position: relative;
   margin-top: 25px;
+  @include utility.sp {
+
+  }
 }
 
 .p-newest__list {
@@ -28,14 +35,31 @@
 }
 .p-newest__card {
   width: 100%;
+  @include utility.sp {
+    display: none;
+  }
+}
+
+.p-newest__card:first-child {
+  @include utility.sp {
+    display: block;
+  }
 }
 
 .p-newest__image {
   border-radius: 10px;
+  @include utility.sp {
+    width: 100%;
+  }
 }
 
 .p-newest__link {
   color: utility.$black;
+  @include utility.sp {
+    position: relative;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .p-newest__description {
@@ -47,6 +71,9 @@
   -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
+  @include utility.sp {
+    font-weight: utility.$bold;
+  }
 }
 
 .p-newest__detail {
@@ -71,11 +98,17 @@
   line-height: 21px;
   text-align: center;
   margin-right: 10px;
+  @include utility.sp {
+    margin-right: 20px;
+  }
 }
 
 .p-newest__button-box {
   margin: 60px auto 0;
   text-align: center;
+  @include utility.sp {
+    margin: 44px auto 0;
+  }
 }
 
 .p-newest__button {
@@ -91,6 +124,10 @@
 .p-newest__left {
   @extend .p-newest__button;
   top: 70px;
+  @include utility.sp {
+    top: 40%;
+    left: 0;
+  }
 }
 
 .p-newest__left::after {
@@ -111,6 +148,9 @@
   @extend .p-newest__button;
   top: 70px;
   right: 0px;
+  @include utility.sp {
+    top: 40%;
+  }
 }
 
 .p-newest__right::after {
