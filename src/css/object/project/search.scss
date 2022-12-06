@@ -3,6 +3,9 @@
 .p-search {
   &__top {
     padding: 60px 0;
+    @include utility.sp {
+      padding: 20px 0;
+    }
   }
   &__bottom {
     padding: 150px 0 200px;
@@ -16,7 +19,7 @@
   padding: 40px 0;
   margin: 0 auto;
   @include utility.sp {
-    margin: 0 40px 15px;
+    margin: 0 40px;
     padding: 15px 25px 20px;
   }
 }
@@ -26,6 +29,7 @@
   margin-top: 30px;
   @include utility.sp {
     margin-top: 16px;
+    font-size: 14px;
   }
 }
 
@@ -66,6 +70,12 @@
 .p-search__selects {
   display: flex;
   gap: 15px;
+  @include utility.sp {
+    gap: unset;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .p-search__input-select-inner {
@@ -93,7 +103,6 @@
   padding-left :8px;
   width: 300px;
   @include utility.sp {
-    width: auto;
-    flex-grow:6;
+    width: 100%;
   }
 }
