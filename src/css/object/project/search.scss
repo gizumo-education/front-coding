@@ -10,7 +10,6 @@
 }
 
 .p-search__inner {
-  width: 1180px;
   min-width: 400px;
   text-align: center;
   background-color: utility.$light-blue;
@@ -18,8 +17,7 @@
   padding: 40px 0;
   margin: 0 auto;
   @include utility.sp {
-    width: 100%;
-    margin: 40px 15px;
+    margin: 0 40px 15px;
   }
 }
 
@@ -33,6 +31,9 @@
   justify-content: center;
   gap: 15px;
   margin-top: 26px;
+  @include utility.sp {
+    flex-wrap: wrap;
+  }
 }
 
 .p-search__input {
