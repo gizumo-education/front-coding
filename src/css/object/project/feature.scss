@@ -21,6 +21,8 @@
   margin-top: 50px;
   @include utility.sp {
     padding-top: 15px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
