@@ -2,12 +2,20 @@
 .p-flow__inner {
   margin: 0 auto;
   text-align: center;
+  @include utility.sp {
+    padding: 60px 15px 0;
+  }
 }
 
 .p-flow__list {
   display: flex;
   margin-top: 50px;
   gap: 20px;
+  @include utility.sp {
+    flex-direction: column;
+    margin: 35px 45px 0;
+    gap: 42px;
+  }
 }
 
 .p-flow__item {
@@ -17,6 +25,11 @@
   padding: 30px 18px 0;
   border: 2px solid utility.$pink;
   border-radius: 10px;
+
+  @include utility.sp {
+    height: auto;
+    padding: 30px 18px 20px;
+  }
 }
 
 .p-flow__image-box {
@@ -41,6 +54,12 @@
   border-top: 20px solid utility.$pink;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
+  @include utility.sp {
+    rotate: 0deg;
+    right: 50%;
+    transform: translateX(50%);
+    top: calc(100% + 10px);
+  }
 }
 
 .p-flow__item:last-child:before {
@@ -68,6 +87,9 @@
   font-weight: utility.$bold;
   font-size: 24px;
   line-height: 30px;
+  @include utility.sp {
+    font-size: 20px;
+  }
 }
 
 .p-flow__item-heading-box {
@@ -75,11 +97,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include utility.sp {
+    height: 0;
+  }
 }
 
 .p-flow__item-text {
   text-align: left;
   font-size: 14px;
   line-height: 20px;
-  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.p-flow__br {
+  @include utility.sp {
+    display: none;
+  }
 }
