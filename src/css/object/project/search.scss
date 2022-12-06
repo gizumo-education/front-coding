@@ -45,6 +45,10 @@
   border: 1px solid utility.$input;
   font-size: 18px;
   height: 60px;
+  @include utility.sp {
+    height: 30px;
+    border-radius: 5px;
+  }
 }
 
 .p-search__input-select {
@@ -53,7 +57,9 @@
   width: 200px;
   padding-left: 15px;
   @include utility.sp {
-    width: auto;
+    width: 100px;
+    padding-left: 8px;
+    font-size: 12px;
   }
 }
 
@@ -73,13 +79,13 @@
   position: absolute;
   content: '';
   top: 50%;
-  right: 15px;
+  right: 10px;
   transform: translateY(-50%);
   width: 0;
   height: 0;
-  border-top: 10px solid utility.$input;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
+  border-top: 8px solid utility.$input;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
 }
 
 .p-search__input-text {
