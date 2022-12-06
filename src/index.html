@@ -34,38 +34,40 @@
         <h2 class="c-heading__h2">お仕事検索</h2>
         <p class="p-search__description">働きたい職種・地域・希望給与を入れて検索！</p>
         <form action="#" class="p-search__form">
-          <div class="p-search__input-select-inner">
-            <select name="jobs" class="p-search__input-select">
-              <option value="medical-assistant" selected>医療事務</option>
-              <option value="compounding-medicine-assistant">調剤事務</option>
-              <option value="health-information-manager">診療情報管理士</option>
-              <option value="dental-assistant">歯科助手</option>
-              <option value="dental-hygienist">歯科事務</option>
-              <option value="nursing-aid">看護補助・看護助手</option>
-              <option value="hospital-se">病院内SE</option>
-            </select>
-          </div>
-          <div class="p-search__input-select-inner">
-            <select name="prefecture" class="p-search__input-select">
-              <option value="ibaraki">茨城県</option>
-              <option value="kanagawa">神奈川県</option>
-              <option value="gunma">群馬県</option>
-              <option value="saitama">埼玉県</option>
-              <option value="chiba">千葉県</option>
-              <option value="tokyo" selected>東京都</option>
-              <option value="tochigi">栃木県</option>
-            </select>
-          </div>
-          <div class="p-search__input-select-inner">
-            <select name="salary" class="p-search__input-select">
-              <option value="170,000">月給17万〜</option>
-              <option value="180,000">月給18万〜</option>
-              <option value="190,000">月給19万〜</option>
-              <option value="200,000" selected>月給20万〜</option>
-              <option value="210,000">月給21万〜</option>
-              <option value="220,000">月給22万〜</option>
-              <option value="230,000">月給23万〜</option>
-            </select>
+          <div class="p-search__selects">
+            <div class="p-search__input-select-inner">
+              <select name="jobs" class="p-search__input-select">
+                <option value="medical-assistant" selected>医療事務</option>
+                <option value="compounding-medicine-assistant">調剤事務</option>
+                <option value="health-information-manager">診療情報管理士</option>
+                <option value="dental-assistant">歯科助手</option>
+                <option value="dental-hygienist">歯科事務</option>
+                <option value="nursing-aid">看護補助・看護助手</option>
+                <option value="hospital-se">病院内SE</option>
+              </select>
+            </div>
+            <div class="p-search__input-select-inner">
+              <select name="prefecture" class="p-search__input-select">
+                <option value="ibaraki">茨城県</option>
+                <option value="kanagawa">神奈川県</option>
+                <option value="gunma">群馬県</option>
+                <option value="saitama">埼玉県</option>
+                <option value="chiba">千葉県</option>
+                <option value="tokyo" selected>東京都</option>
+                <option value="tochigi">栃木県</option>
+              </select>
+            </div>
+            <div class="p-search__input-select-inner">
+              <select name="salary" class="p-search__input-select">
+                <option value="170,000">月給17万〜</option>
+                <option value="180,000">月給18万〜</option>
+                <option value="190,000">月給19万〜</option>
+                <option value="200,000" selected>月給20万〜</option>
+                <option value="210,000">月給21万〜</option>
+                <option value="220,000">月給22万〜</option>
+                <option value="230,000">月給23万〜</option>
+              </select>
+            </div>
           </div>
           <input class="p-search__input-text" type="text" placeholder="キーワード・企業名・スキルなど">
           <button type="submit" class="c-button__search">
