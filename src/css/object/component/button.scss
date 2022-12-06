@@ -35,4 +35,7 @@
   background-color: utility.$pink;
   font-size: 18px;
   font-weight: utility.$bold;
+  @include utility.sp {
+    width: 100%;
+  }
 }
