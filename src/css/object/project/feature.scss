@@ -1,11 +1,17 @@
 @use '../../object/utility/utility.scss';
 .p-feature {
   padding: 105px 0;
+  @include utility.sp {
+    padding: 54px 0;
+  }
 }
 
 .p-feature__inner {
   margin: 0 auto;
   text-align: center;
+  @include utility.sp {
+    padding: 0 15px;
+  }
 }
 
 .p-feature__list {
@@ -13,6 +19,9 @@
   flex-wrap: wrap;
   gap: 40px;
   margin-top: 50px;
+  @include utility.sp {
+    padding-top: 15px;
+  }
 }
 
 .p-feature__item {
@@ -26,11 +35,18 @@
   font-size: 24px;
   font-weight: utility.$bold;
   color: utility.$pink;
+  @include utility.sp {
+    font-size: 20px;
+  }
 }
 
 .p-feature__item-text {
   margin: 36px 0;
   line-height: 20px;
   font-size: 14px;
+  @include utility.sp {
+    font-size: 12px;
+    margin: 30px 0;
+  }
 }
 
