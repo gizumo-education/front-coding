@@ -12,6 +12,7 @@
   @include utility.sp {
     height: 70px;
   }
+
   @include utility.tab {
     height: 70px;
   }
@@ -23,6 +24,7 @@
     @include utility.sp {
       display: none;
     }
+
     @include utility.tab {
       display: none;
     }
@@ -51,6 +53,7 @@
       }
     }
   }
+
   @include utility.tab {
     position:relative;
     display: inline-block;
@@ -86,6 +89,7 @@
   color: utility.$white;
   transition: .3s;
 }
+
 .l-header__button:hover {
   opacity: .8;
 }
@@ -118,4 +122,29 @@
   align-items: center;
   font-size: 16px;
   color: utility.$black;
+}
+
+.l-header__menu {
+  display: none;
+  &-display {
+    position:absolute;
+    display: inline-block;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 58px 60px 235px;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+  &-item {
+    a{
+      font-size: 22px;
+      font-weight: utility.$bold;
+      color: utility.$white;
+    }
+  }
 }
