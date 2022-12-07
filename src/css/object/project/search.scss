@@ -63,7 +63,7 @@
   width: 200px;
   padding-left: 15px;
   @include utility.sp {
-    width: 100px;
+    width: 100%;
     padding-left: 8px;
     font-size: 12px;
   }
@@ -73,8 +73,8 @@
   display: flex;
   gap: 15px;
   @include utility.sp {
-    gap: unset;
     width: 100%;
+    gap: 15px;
     justify-content: space-between;
     align-items: center;
   }
@@ -82,9 +82,7 @@
 
 .p-search__input-select-inner {
   position: relative;
-  @include utility.sp {
-    width: 100px;
-  }
+  width: 100%;
 }
 
 .p-search__input-select-inner:before {
