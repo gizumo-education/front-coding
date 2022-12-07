@@ -12,6 +12,9 @@
   @include utility.sp {
     height: 70px;
   }
+  @include utility.tab {
+    height: 70px;
+  }
 
   &__navigation {
     display: flex;
@@ -19,7 +22,9 @@
     margin-right: 100px;
     @include utility.sp {
       display: none;
-
+    }
+    @include utility.tab {
+      display: none;
     }
   }
 }
@@ -27,6 +32,26 @@
 .l-header__hamburger {
   display: none;
   @include utility.sp {
+    position:relative;
+    display: inline-block;
+    height: 38px;
+    width: 50px;
+    right: 15px;
+    span{
+      position:absolute;
+      display: inline-block;
+      background-color: utility.$black;
+      height: 6px;
+      width: 50px;
+      &:first-child {
+        top: 16px;
+      }
+      &:last-child {
+        top: 32px;
+      }
+    }
+  }
+  @include utility.tab {
     position:relative;
     display: inline-block;
     height: 38px;

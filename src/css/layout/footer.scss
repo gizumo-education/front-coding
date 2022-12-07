@@ -7,6 +7,10 @@
   @include utility.sp {
     padding-top: 40px;
   }
+
+  @include utility.tab {
+    padding-top: 40px;
+  }
 }
 
 .l-footer__inner {
@@ -15,6 +19,12 @@
   display: flex;
   justify-content: space-between;
   @include utility.sp {
+    flex-direction: column;
+    height: auto;
+    padding: 0 40px 0;
+  }
+
+  @include utility.tab {
     flex-direction: column;
     height: auto;
     padding: 0 40px 0;
@@ -39,6 +49,11 @@
     margin: 0 auto;
     width: 100%;
   }
+
+  @include utility.tab {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .l-footer__image {
@@ -56,6 +71,10 @@
   @include utility.sp {
     margin: 0;
   }
+
+  @include utility.tab {
+    margin: 0;
+  }
 }
 
 .l-footer__copyright {
@@ -66,6 +85,11 @@
   align-items: center;
   font-size: 14px;
   @include utility.sp {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  @include utility.tab {
     margin-top: 40px;
     width: 100%;
   }

@@ -5,6 +5,9 @@
   @include utility.sp {
     height: 60px;
   }
+  @include utility.tab {
+    height: 60px;
+  }
 }
 
 .p-midvisual__image {
@@ -37,6 +40,11 @@
   line-height: 50px;
   margin: 0 auto;
   @include utility.sp {
+    font-size: 14px;
+    font-weight: utility.$regular;
+    line-height: 20px;
+  }
+  @include utility.tab {
     font-size: 14px;
     font-weight: utility.$regular;
     line-height: 20px;
