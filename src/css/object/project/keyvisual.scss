@@ -8,6 +8,22 @@
 .p-keyvisual__image {
   margin: 0 auto;
   object-fit: cover;
-  object-position: 50% 100%;
   min-height: 270px;
+  &-sp {
+    display: none;
+  }
+  @include utility.sp {
+    display: none;
+    &-sp {
+      display: block;
+      width: 100%;
+    }
+  }
+  @include utility.tab {
+    display: none;
+    &-sp {
+      display: block;
+      width: 100%;
+    }
+  }
 }
