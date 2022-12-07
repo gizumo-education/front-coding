@@ -125,16 +125,18 @@
 }
 
 .l-header__menu {
-  display: none;
-  transition: .3s;
-  &-display {
-    position:absolute;
-    display: inline-block;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color:rgba(0, 0, 0, 0.5);
-    padding: 58px 60px 235px;
+  position:absolute;
+  display: inline-block;
+  top: 70px;
+  left: 0;
+  transform:translateX(130%);
+  width: 100%;
+  transition: 1s;
+  padding: 58px 60px 235px;
+  background-color:rgba(0, 0, 0, 0.5);
+  &-display{
+    @extend .l-header__menu;
+    transform:translateX(0%);
   }
   &-list {
     display: flex;
@@ -146,6 +148,7 @@
       font-size: 22px;
       font-weight: utility.$bold;
       color: utility.$white;
+      white-space: nowrap;
     }
   }
 }
