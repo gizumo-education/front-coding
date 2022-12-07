@@ -3,11 +3,6 @@
 .p-keyvisual {
   background-color: utility.$keyvisual;
   text-align: center;
-
-
-  @include utility.sp {
-
-  }
 }
 
 .p-keyvisual__image {
