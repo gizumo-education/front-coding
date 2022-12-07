@@ -6,6 +6,7 @@
     @include utility.sp {
       padding: 20px 15px;
     }
+
     @include utility.tab {
       padding: 20px 15px;
     }
@@ -15,6 +16,7 @@
     @include utility.sp {
       padding: 60px 15px 100px;
     }
+
     @include utility.tab {
       padding: 60px 15px 100px;
     }
@@ -30,6 +32,7 @@
   @include utility.sp {
     padding: 15px 25px 20px;
   }
+
   @include utility.tab {
     padding: 15px 25px 20px;
   }
@@ -42,6 +45,7 @@
     margin-top: 16px;
     font-size: 14px;
   }
+
   @include utility.tab {
     margin-top: 16px;
     font-size: 14px;
@@ -57,6 +61,7 @@
     flex-wrap: wrap;
     margin-top: 14px;
   }
+
   @include utility.tab {
     flex-wrap: wrap;
     margin-top: 14px;
@@ -72,6 +77,7 @@
     height: 30px;
     border-radius: 5px;
   }
+
   @include utility.tab {
     height: 30px;
     border-radius: 5px;
@@ -88,6 +94,7 @@
     padding-left: 8px;
     font-size: 12px;
   }
+
   @include utility.tab {
     width: 100%;
     padding-left: 8px;
@@ -104,6 +111,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   @include utility.tab {
     width: 100%;
     gap: 15px;
@@ -137,6 +145,7 @@
   @include utility.sp {
     width: 100%;
   }
+  
   @include utility.tab {
     width: 100%;
   }

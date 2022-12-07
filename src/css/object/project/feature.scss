@@ -42,6 +42,12 @@
   width: 570px;
   padding: 40px 50px 0;
   border-radius: 10px;
+  @include utility.sp {
+    width: 100%;
+  }
+  @include utility.tab {
+    width: 100%;
+  }
 }
 
 .p-feature__item-heading {
