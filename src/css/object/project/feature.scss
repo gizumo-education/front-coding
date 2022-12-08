@@ -2,8 +2,9 @@
 .p-feature {
   padding: 105px 0;
   @include utility.sp {
-    padding: 54px 0 0;
+    padding: 0.54rem 0 0;
   }
+
   @include utility.tab {
     padding: 54px 0 0;
   }
@@ -15,6 +16,7 @@
   @include utility.sp {
     padding: 0 15px;
   }
+
   @include utility.tab {
     padding: 0 15px;
   }
@@ -26,12 +28,15 @@
   gap: 40px;
   margin-top: 50px;
   @include utility.sp {
-    padding-top: 15px;
+    gap: .2rem;
+    margin-top: .38rem;
     align-items: center;
     justify-content: center;
   }
+
   @include utility.tab {
-    padding-top: 15px;
+    gap: .2rem;
+    margin-top: 38px;
     align-items: center;
     justify-content: center;
   }
@@ -40,11 +45,13 @@
 .p-feature__item {
   background-color: utility.$feature;
   width: 570px;
-  padding: 40px 50px 0;
+  padding: 40px 50px;
   border-radius: 10px;
   @include utility.sp {
+    padding: .3rem .17rem;
     width: 100%;
   }
+
   @include utility.tab {
     width: 100%;
   }
@@ -55,24 +62,27 @@
   font-weight: utility.$bold;
   color: utility.$pink;
   @include utility.sp {
-    font-size: 20px;
+    font-size: .2rem;
   }
+
   @include utility.tab {
     font-size: 20px;
   }
 }
 
 .p-feature__item-text {
-  margin: 36px 0;
+  margin-top: 36px;
   line-height: 20px;
   font-size: 14px;
   @include utility.sp {
-    font-size: 12px;
-    margin: 30px 0;
+    font-size: .12rem;
+    line-height: .17rem;
+    margin-top: 30px;
   }
+
   @include utility.tab {
     font-size: 12px;
-    margin: 30px 0;
+    margin-top: 30px;
   }
 }
 
