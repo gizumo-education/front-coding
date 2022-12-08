@@ -4,6 +4,7 @@
   @include utility.sp {
     padding-top:60px;
   }
+
   @include utility.tab {
     padding-top:60px;
   }
@@ -15,6 +16,7 @@
   @include utility.sp {
     padding: 0 15px;
   }
+
   @include utility.tab {
     padding: 0 15px;
   }
@@ -29,6 +31,7 @@
     gap: 18px;
     margin: 30px 0 34px;
   }
+
   @include utility.tab {
     flex-direction: column;
     gap: 18px;
@@ -57,11 +60,15 @@
 .p-contents__item-resume {
   @extend .p-contents__item;
   background-image: url("../img/picture/resume.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .p-contents__item-pc {
   @extend .p-contents__item;
   background-image: url("../img/picture/pc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .p-contents__item-text {
@@ -85,6 +92,7 @@
   @include utility.sp {
     font-size: 22px;
   }
+
   @include utility.tab {
     font-size: 22px;
   }
@@ -98,6 +106,7 @@
     font-size: 14px;
     margin-top: 52px;
   }
+
   @include utility.tab {
     font-size: 14px;
     margin-top: 52px;
