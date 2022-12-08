@@ -32,7 +32,6 @@
   @include utility.sp {
     padding: .15rem .255rem .20rem;
   }
-
   @include utility.tab {
     padding: 15px 25px 20px;
   }
@@ -42,10 +41,10 @@
   font-size: 25px;
   font-weight: utility.$bold;
   @include utility.sp {
-    font-size: .25rem;
+    font-size: .22rem;
   }
   @include utility.tab {
-    font-size: .25rem;
+    font-size: 22px;
   }
 }
 
@@ -59,7 +58,7 @@
 
   @include utility.tab {
     margin-top: .16rem;
-    font-size: .14rem;
+    font-size: 14px;
   }
 }
 
@@ -109,6 +108,7 @@
   }
 
   @include utility.tab {
+    font-size: 12px;
     width: 100%;
     padding-left: 8px;
   }
@@ -160,6 +160,7 @@
   }
 
   @include utility.tab {
+    font-size: 14px;
     width: 100%;
   }
 }

@@ -12,7 +12,7 @@
   }
 
   @include utility.tab {
-    padding: .3rem .15rem .6rem;
+    padding: 30px 15px 60px;
     text-align: center;
   }
 }
@@ -37,7 +37,7 @@
   }
 
   @include utility.tab {
-    margin-top: 0.35rem;
+    margin-top: 35px;
   }
 }
 
@@ -109,9 +109,9 @@
   }
 
   @include utility.tab {
-    margin: .11rem 0;
-    font-size: .16rem;
-    line-height: .22rem;
+    margin: 11px 0;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: utility.$bold;
   }
 }
@@ -124,6 +124,10 @@
   @include utility.sp {
     font-size: 0.14rem;
     gap: .04rem;
+  }
+  @include utility.tab {
+    font-size: 14px;
+    gap: 4px;
   }
 }
 
@@ -147,6 +151,10 @@
     width: .6rem;
     line-height: .21rem;
   }
+  @include utility.tab {
+    margin-right: 21px;
+    line-height: 21px;
+  }
 }
 
 .p-newest__button-box {
@@ -157,7 +165,7 @@
   }
 
   @include utility.tab {
-    margin: .44rem auto 0;
+    margin: 44px auto 0;
   }
 }
 
