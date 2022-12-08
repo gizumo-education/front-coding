@@ -4,11 +4,11 @@
   &__top {
     padding: 60px 0;
     @include utility.sp {
-      padding: 20px 15px;
+      padding: .25rem .15rem;
     }
 
     @include utility.tab {
-      padding: 20px 15px;
+      padding: .25rem .15rem;
     }
   }
   &__bottom {
@@ -30,7 +30,7 @@
   padding: 40px 0;
   margin: 0 auto;
   @include utility.sp {
-    padding: 15px 25px 20px;
+    padding: .15rem .255rem .20rem;
   }
 
   @include utility.tab {
@@ -42,13 +42,13 @@
   font-size: 20px;
   margin-top: 30px;
   @include utility.sp {
-    margin-top: 16px;
-    font-size: 14px;
+    margin-top: .16rem;
+    font-size: .14rem;
   }
 
   @include utility.tab {
-    margin-top: 16px;
-    font-size: 14px;
+    margin-top: .16rem;
+    font-size: .14rem;
   }
 }
 
@@ -58,13 +58,15 @@
   gap: 15px;
   margin-top: 26px;
   @include utility.sp {
+    gap: .155rem;
     flex-wrap: wrap;
-    margin-top: 14px;
+    margin-top: .135rem;
   }
 
   @include utility.tab {
+    gap: .155rem;
     flex-wrap: wrap;
-    margin-top: 14px;
+    margin-top: .135rem;
   }
 }
 
@@ -91,7 +93,7 @@
   padding-left: 15px;
   @include utility.sp {
     width: 100%;
-    padding-left: 8px;
+    padding-left: .075rem;
     font-size: 12px;
   }
 
@@ -107,14 +109,14 @@
   gap: 15px;
   @include utility.sp {
     width: 100%;
-    gap: 15px;
+    gap: .15rem;
     justify-content: space-between;
     align-items: center;
   }
 
   @include utility.tab {
     width: 100%;
-    gap: 15px;
+    gap: .15rem;
     justify-content: space-between;
     align-items: center;
   }
@@ -145,7 +147,7 @@
   @include utility.sp {
     width: 100%;
   }
-  
+
   @include utility.tab {
     width: 100%;
   }

@@ -17,6 +17,11 @@
   width: 140px;
   font-size: 18px;
   font-weight: utility.$bold;
+  @include utility.sp {
+    font-size: .18rem;
+    width: 16rem;
+    height: .4rem;
+  }
 }
 
 .c-button__newest {
@@ -45,7 +50,7 @@
   @include utility.sp {
     width: 100%;
   }
-  
+
   @include utility.tab {
     width: 100%;
   }
