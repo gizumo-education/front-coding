@@ -9,6 +9,7 @@
   top: 0;
   background-color: utility.$white;
   z-index: 10000;
+  overflow-x: hidden;
   @include utility.sp {
     height: 70px;
   }
@@ -34,7 +35,7 @@
 .l-header__hamburger {
   display: none;
   @include utility.sp {
-    position:relative;
+    position: relative;
     display: inline-block;
     height: 38px;
     width: 50px;
@@ -57,13 +58,13 @@
   }
 
   @include utility.tab {
-    position:relative;
+    position: relative;
     display: inline-block;
     height: 38px;
     width: 50px;
     right: 15px;
     span{
-      position:absolute;
+      position: absolute;
       display: inline-block;
       background-color: utility.$black;
       height: 6px;
@@ -129,17 +130,17 @@
 
 .l-header__menu {
   position: absolute;
-  display: none;
+  //display: none;
   top: 70px;
   left: 0;
-  transform:translateX(130%);
+  transform: translateX(130%);
   width: 100%;
   transition: 1s;
   padding: 58px 60px 235px;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   &-display{
     @extend .l-header__menu;
-    transform:translateX(0%);
+    transform: translateX(0%);
   }
   &-list {
     display: flex;

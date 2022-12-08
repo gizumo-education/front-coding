@@ -6,12 +6,13 @@ $(function() {
   $('.l-header__hamburger').on('click', menuClick);
   
   function menuClick() {
-    let className = document.getElementById("header__menu").className;
-    if(className == "l-header__menu") {
-      document.getElementById("header__menu").className = "l-header__menu-display";
+    console.log('click');
+    let className = document.getElementById("hamburger__menu").className;
+    if(className == "p-hamburger__menu") {
+      document.getElementById("hamburger__menu").className = "p-hamburger__menu-display";
     }
     else {
-      document.getElementById("header__menu").className = "l-header__menu";
+      document.getElementById("hamburger__menu").className = "p-hamburger__menu";
     }
   }
 
