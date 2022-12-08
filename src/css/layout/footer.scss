@@ -5,7 +5,7 @@
   background-color: utility.$pale-blue;
   padding-top: 50px;
   @include utility.sp {
-    padding-top: 40px;
+    padding-top: .4rem;
   }
 
   @include utility.tab {
@@ -21,7 +21,7 @@
   @include utility.sp {
     flex-direction: column;
     height: auto;
-    padding: 0 40px 0;
+    padding: 0 0.4rem 0;
   }
 
   @include utility.tab {
@@ -63,13 +63,19 @@
 .l-footer__link {
   color: utility.$black;
   text-decoration: none;
+  @include utility.sp {
+    font-size: .16rem;
+    line-height: .36rem;
+  }
 }
 
 .l-footer__link-top {
   @extend .l-footer__link;
   margin-top: 30px;
+
   @include utility.sp {
     margin: 0;
+    font-size: .16rem;
   }
 
   @include utility.tab {

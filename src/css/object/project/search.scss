@@ -38,6 +38,17 @@
   }
 }
 
+.p-search__heading {
+  font-size: 25px;
+  font-weight: utility.$bold;
+  @include utility.sp {
+    font-size: .25rem;
+  }
+  @include utility.tab {
+    font-size: .25rem;
+  }
+}
+
 .p-search__description {
   font-size: 20px;
   margin-top: 30px;
@@ -92,15 +103,14 @@
   width: 200px;
   padding-left: 15px;
   @include utility.sp {
+    font-size: .12rem;
     width: 100%;
     padding-left: .075rem;
-    font-size: 12px;
   }
 
   @include utility.tab {
     width: 100%;
     padding-left: 8px;
-    font-size: 12px;
   }
 }
 
@@ -145,6 +155,7 @@
   padding-left :8px;
   width: 300px;
   @include utility.sp {
+    font-size: .14rem;
     width: 100%;
   }
 

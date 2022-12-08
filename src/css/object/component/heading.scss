@@ -3,9 +3,9 @@
   font-size: 25px;
   font-weight: utility.$bold;
   @include utility.sp {
-    font-size: .22rem;
+    font-size: .25rem;
   }
   @include utility.tab {
-    font-size: .22rem;
+    font-size: .25rem;
   }
 }
