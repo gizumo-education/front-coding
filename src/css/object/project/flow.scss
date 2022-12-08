@@ -60,6 +60,7 @@
 
   @include utility.tab {
     height: auto;
+    margin: 53px 0 22px 0;
   }
 }
 
@@ -89,7 +90,7 @@
     rotate: 0deg;
     right: 50%;
     transform: translateX(50%);
-    top: calc(100% + 10px);
+    top: calc(100% + 15px);
   }
 }
 
@@ -112,6 +113,21 @@
   background-color: utility.$pink;
   color: utility.$white;
   border-radius: 50%;
+  @include utility.sp {
+    top: .08rem;
+    left: .08rem;
+    height: .45rem;
+    width: .45rem;
+    font-size: .1rem;
+    line-height: .12rem;
+  }
+
+  @include utility.tab {
+    height: 45px;
+    width: 45px;
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 .p-flow__item-heading {
