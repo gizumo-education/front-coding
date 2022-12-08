@@ -14,7 +14,7 @@
   &__bottom {
     padding: 150px 0 200px;
     @include utility.sp {
-      padding: 60px 15px 100px;
+      padding: .6rem .15rem 1rem;
     }
 
     @include utility.tab {

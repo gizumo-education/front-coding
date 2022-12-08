@@ -3,11 +3,13 @@
   margin: 0 auto;
   text-align: center;
   @include utility.sp {
-    padding: 60px 15px 0;
+    padding: .6rem .15rem 0;
   }
+
   @include utility.tab {
     padding: 60px 15px 0;
   }
+
 }
 
 .p-flow__list {
@@ -16,9 +18,10 @@
   gap: 20px;
   @include utility.sp {
     flex-direction: column;
-    margin: 35px 45px 0;
+    margin: .35rem 0.45rem 0;
     gap: 42px;
   }
+
   @include utility.tab {
     flex-direction: column;
     margin: 35px 45px 0;
@@ -36,11 +39,12 @@
 
   @include utility.sp {
     height: auto;
-    padding: 30px 18px 20px;
+    padding: 0 .18rem .2rem;
   }
+
   @include utility.tab {
     height: auto;
-    padding: 30px 18px 20px;
+    padding: 0 18px 20px;
   }
 }
 
@@ -49,6 +53,14 @@
   align-items: center;
   justify-content: center;
   height: 150px;
+  @include utility.sp {
+    height: auto;
+    margin: .53rem 0 .22rem 0;
+  }
+
+  @include utility.tab {
+    height: auto;
+  }
 }
 
 .p-flow__image-box-entry {
@@ -70,8 +82,9 @@
     rotate: 0deg;
     right: 50%;
     transform: translateX(50%);
-    top: calc(100% + 10px);
+    top: calc(100% + .15rem);
   }
+
   @include utility.tab {
     rotate: 0deg;
     right: 50%;
@@ -106,8 +119,10 @@
   font-size: 24px;
   line-height: 30px;
   @include utility.sp {
-    font-size: 20px;
+    font-size: .2rem;
+    line-height: .3rem;
   }
+
   @include utility.tab {
     font-size: 20px;
   }
@@ -119,10 +134,11 @@
   align-items: center;
   justify-content: center;
   @include utility.sp {
-    height: 0;
+    height: 100%;
   }
+
   @include utility.tab {
-    height: 0;
+    height: 100%;
   }
 }
 
@@ -137,6 +153,7 @@
   @include utility.sp {
     display: none;
   }
+
   @include utility.tab {
     display: none;
   }
