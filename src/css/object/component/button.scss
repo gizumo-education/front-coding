@@ -19,8 +19,11 @@
   font-weight: utility.$bold;
   @include utility.sp {
     font-size: .18rem;
-    width: 16rem;
+    width: 1.6rem;
     height: .4rem;
+  }
+  @include utility.tab {
+    width: 40%;
   }
 }
 
@@ -33,6 +36,7 @@
   font-weight: utility.$bold;
   @include utility.sp {
     width: 100%;
+    font-size: .18rem;
   }
 
   @include utility.tab {
