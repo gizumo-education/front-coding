@@ -3,10 +3,12 @@
   width: 100%;
   height: 300px;
   @include utility.sp {
-    height: 60px;
+    height: 100%;
+    padding: .16rem;
   }
+
   @include utility.tab {
-    height: 60px;
+    height: .75rem;
   }
 }
 
@@ -33,17 +35,18 @@
 }
 
 .p-midvisual__text {
-  position: absolute;
+  z-index: 10000;
   color: utility.$white;
   font-weight: utility.$bold;
   font-size: 25px;
   line-height: 50px;
   margin: 0 auto;
   @include utility.sp {
-    font-size: 14px;
+    font-size: .14rem;
     font-weight: utility.$regular;
-    line-height: 20px;
+    line-height: .2rem;
   }
+
   @include utility.tab {
     font-size: 14px;
     font-weight: utility.$regular;
