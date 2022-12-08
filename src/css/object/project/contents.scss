@@ -2,11 +2,11 @@
 .p-contents {
   padding-top: 105px;
   @include utility.sp {
-    padding-top:.6rem;
+    padding-top: .6rem;
   }
 
   @include utility.tab {
-    padding-top:60px;
+    padding-top: 60px;
   }
 }
 
@@ -28,7 +28,7 @@
   margin: 50px 0 80px;
   @include utility.sp {
     flex-direction: column;
-    gap: 18px;
+    gap: .18rem;
     margin: .3rem 0 .34rem;
   }
 
@@ -43,7 +43,6 @@
   width: 100%;
   height: 240px;
   @include utility.sp {
-    //padding: 100px;
     height: 100%;
   }
 
@@ -81,8 +80,8 @@
   }
 
   @include utility.tab {
-    gap: .53rem;
-    padding: 70px 64px 0;
+    gap: 53px;
+    padding: 60px 50px;
   }
 }
 
@@ -110,7 +109,7 @@
   font-size: 24px;
   font-weight: utility.$bold;
   @include utility.sp {
-    font-size: 22px;
+    font-size: .22rem;
   }
 
   @include utility.tab {
