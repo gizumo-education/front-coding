@@ -34,6 +34,8 @@
 
 .l-header__hamburger {
   display: none;
+  background-color: transparent;
+  border: none;
   @include utility.sp {
     position: relative;
     display: inline-block;
@@ -43,8 +45,9 @@
     span{
       position:absolute;
       display: inline-block;
-      
       background-color: utility.$black;
+      left: 0;
+      top: 0;
       height: 6px;
       width: 50px;
       border-radius: 3px;
@@ -128,31 +131,4 @@
   color: utility.$black;
 }
 
-.l-header__menu {
-  position: absolute;
-  //display: none;
-  top: 70px;
-  left: 0;
-  transform: translateX(130%);
-  width: 100%;
-  transition: 1s;
-  padding: 58px 60px 235px;
-  background-color: rgba(0, 0, 0, 0.5);
-  &-display{
-    @extend .l-header__menu;
-    transform: translateX(0%);
-  }
-  &-list {
-    display: flex;
-    flex-direction: column;
-    gap: 38px;
-  }
-  &-item {
-    a{
-      font-size: 22px;
-      font-weight: utility.$bold;
-      color: utility.$white;
-      white-space: nowrap;
-    }
-  }
-}
+

@@ -21,6 +21,9 @@
     font-size: .18rem;
     width: 1.6rem;
     height: .4rem;
+    &-icon{
+      width: .18rem;
+    }
   }
   @include utility.tab {
     width: 40%;
