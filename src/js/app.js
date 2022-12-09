@@ -1,4 +1,5 @@
 import $ from "jquery";
+import 'slick-carousel';
 
 $(function() {
   console.log('環境構築完了');
@@ -29,6 +30,25 @@ $(function() {
       document.getElementById("hamburger__menu").className = "p-hamburger__menu";
     }
   }
+
+  $(function(){
+    $('.p-newest__list').slick({
+      infinite: true,
+      //autoplay: true,
+      arrows: true,
+      autoplaySpeed: 3000,
+      speed: 1600,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive:[{
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
+    });
+  });
 
 })
 

@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
 .p-hamburger {
+
   display: inline-block;
   position: fixed;
   top: 70px;
@@ -7,6 +8,9 @@
   height: 100%;
   overflow-x: hidden;
   z-index: 5000;
+  @include utility.pc {
+    display: none;
+  }
 }
 .p-hamburger__menu {
   @include utility.pc {
