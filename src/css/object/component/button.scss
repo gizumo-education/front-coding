@@ -17,6 +17,17 @@
   width: 140px;
   font-size: 18px;
   font-weight: utility.$bold;
+  @include utility.sp {
+    font-size: .18rem;
+    width: 1.6rem;
+    height: .4rem;
+    &-icon{
+      width: .18rem;
+    }
+  }
+  @include utility.tab {
+    width: 40%;
+  }
 }
 
 .c-button__newest {
@@ -26,6 +37,14 @@
   background-color: utility.$pink;
   font-size: 18px;
   font-weight: utility.$bold;
+  @include utility.sp {
+    width: 100%;
+    font-size: .18rem;
+  }
+
+  @include utility.tab {
+    width: 100%;
+  }
 }
 
 .c-button__contents {
@@ -35,4 +54,11 @@
   background-color: utility.$pink;
   font-size: 18px;
   font-weight: utility.$bold;
+  @include utility.sp {
+    width: 100%;
+  }
+
+  @include utility.tab {
+    width: 100%;
+  }
 }

@@ -2,6 +2,15 @@
 .p-midvisual {
   width: 100%;
   height: 300px;
+  @include utility.sp {
+    height: 100%;
+    padding: .16rem;
+  }
+
+  @include utility.tab {
+    height: 100%;
+    padding: 16px;
+  }
 }
 
 .p-midvisual__image {
@@ -27,10 +36,21 @@
 }
 
 .p-midvisual__text {
-  position: absolute;
+  z-index: 1;
   color: utility.$white;
-  font-weight: 700;
+  font-weight: utility.$bold;
   font-size: 25px;
   line-height: 50px;
   margin: 0 auto;
+  @include utility.sp {
+    font-size: .14rem;
+    font-weight: utility.$regular;
+    line-height: .2rem;
+  }
+
+  @include utility.tab {
+    font-size: 14px;
+    font-weight: utility.$regular;
+    line-height: 20px;
+  }
 }

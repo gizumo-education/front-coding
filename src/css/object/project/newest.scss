@@ -4,34 +4,89 @@
 }
 
 .p-newest__inner {
-  width: 1180px;
   margin: 0 auto;
   padding: 64px 0;
+  @include utility.sp {
+    padding: .3rem .15rem .6rem;
+    text-align: center;
+  }
+
+  @include utility.tab {
+    padding: 30px 15px 60px;
+    text-align: center;
+  }
 }
 
 .p-newest__heading {
   font-size: 25px;
+  @include utility.sp {
+    font-size: .25rem;
+    font-weight: utility.$bold;
+  }
+
+  @include utility.tab {
+    font-weight: utility.$bold;
+  }
 }
 
 .p-newest__list-box {
   position: relative;
   margin-top: 25px;
+  @include utility.sp {
+    margin-top: 0.35rem;
+  }
+
+  @include utility.tab {
+    margin-top: 35px;
+  }
 }
 
 .p-newest__list {
   display: flex;
-  gap: 20px;
+  //gap: 20px;
 }
 .p-newest__card {
   width: 100%;
+  @include utility.sp {
+    display: none;
+  }
+
+  @include utility.tab {
+    display: none;
+  }
+}
+
+.p-newest__card:first-child {
+  @include utility.sp {
+    display: block;
+  }
+
+  @include utility.tab {
+    display: block;
+  }
 }
 
 .p-newest__image {
   border-radius: 10px;
+  width: 100%;
 }
 
 .p-newest__link {
   color: utility.$black;
+  @include utility.pc {
+    margin: 0 10px;
+  }
+  @include utility.sp {
+    position: relative;
+    width: 100%;
+    text-align: left;
+  }
+
+  @include utility.tab {
+    position: relative;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .p-newest__description {
@@ -43,6 +98,19 @@
   -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
+  @include utility.sp {
+    margin: .11rem 0;
+    font-size: .16rem;
+    line-height: .22rem;
+    font-weight: utility.$bold;
+  }
+
+  @include utility.tab {
+    margin: 11px 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: utility.$bold;
+  }
 }
 
 .p-newest__detail {
@@ -50,6 +118,14 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  @include utility.sp {
+    font-size: 0.14rem;
+    gap: .04rem;
+  }
+  @include utility.tab {
+    font-size: 14px;
+    gap: 4px;
+  }
 }
 
 .p-newest__detail-item {
@@ -67,11 +143,27 @@
   line-height: 21px;
   text-align: center;
   margin-right: 10px;
+  @include utility.sp {
+    margin-right: .21rem;
+    width: .6rem;
+    line-height: .21rem;
+  }
+  @include utility.tab {
+    margin-right: 21px;
+    line-height: 21px;
+  }
 }
 
 .p-newest__button-box {
   margin: 60px auto 0;
   text-align: center;
+  @include utility.sp {
+    margin: .44rem auto 0;
+  }
+
+  @include utility.tab {
+    margin: 44px auto 0;
+  }
 }
 
 .p-newest__button {
@@ -82,11 +174,28 @@
   background-color: utility.$white;
   border-radius: 50%;
   border: none;
+  @include utility.sp {
+    width: 0.42rem;
+    height: 0.42rem;
+  }
+  @include utility.tab {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
 }
 
 .p-newest__left {
   @extend .p-newest__button;
   top: 70px;
+  @include utility.sp {
+    top: 38%;
+    left: 0;
+  }
+
+  @include utility.tab {
+    top: 38%;
+    left: 0;
+  }
 }
 
 .p-newest__left::after {
@@ -107,6 +216,13 @@
   @extend .p-newest__button;
   top: 70px;
   right: 0px;
+  @include utility.sp {
+    top: 38%;
+  }
+
+  @include utility.tab {
+    top: 38%;
+  }
 }
 
 .p-newest__right::after {
