@@ -34,19 +34,22 @@ $(function() {
   $(function(){
     $('.p-newest__list').slick({
       infinite: true,
-      //autoplay: true,
+      autoplay: true,
       arrows: true,
+      dots: false,
       autoplaySpeed: 3000,
       speed: 1600,
       slidesToShow: 4,
       slidesToScroll: 4,
+      prevArrow: $('.p-newest__left'),
+      nextArrow: $('.p-newest__right'),
       responsive:[{
         breakpoint: 1199,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
         }
-      }]
+      }],
     });
   });
 
