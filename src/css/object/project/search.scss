@@ -1,24 +1,66 @@
 @use '../../object/utility/utility.scss';
-.p-search__top {
-  padding: 60px 0;
-}
 
-.p-search__bottom {
-  padding: 150px 0 200px;
+.p-search {
+  &__top {
+    padding: 60px 0;
+    @include utility.sp {
+      padding: .25rem .15rem;
+    }
+
+    @include utility.tab {
+      padding: .25rem .15rem;
+    }
+  }
+  &__bottom {
+    padding: 150px 0 200px;
+    @include utility.sp {
+      padding: .6rem .15rem 1rem;
+    }
+
+    @include utility.tab {
+      padding: 60px 15px 100px;
+    }
+  }
 }
 
 .p-search__inner {
-  width: 1180px;
   text-align: center;
   background-color: utility.$light-blue;
   border-radius: 10px;
   padding: 40px 0;
+  max-width: 1180px;
   margin: 0 auto;
+  @include utility.sp {
+    padding: .15rem .255rem .20rem;
+  }
+  @include utility.tab {
+    padding: 15px 25px 20px;
+  }
+}
+
+.p-search__heading {
+  font-size: 25px;
+  font-weight: utility.$bold;
+  @include utility.sp {
+    font-size: .22rem;
+  }
+  @include utility.tab {
+    font-size: 22px;
+  }
 }
 
 .p-search__description {
   font-size: 20px;
   margin-top: 30px;
+  @include utility.sp {
+    margin-top: .16rem;
+    font-size: .14rem;
+  }
+
+  @include utility.tab {
+    margin-top: .16rem;
+    font-size: 14px;
+  }
 }
 
 .p-search__form {
@@ -26,6 +68,17 @@
   justify-content: center;
   gap: 15px;
   margin-top: 26px;
+  @include utility.sp {
+    gap: .155rem;
+    flex-wrap: wrap;
+    margin-top: .135rem;
+  }
+
+  @include utility.tab {
+    gap: .155rem;
+    flex-wrap: wrap;
+    margin-top: .135rem;
+  }
 }
 
 .p-search__input {
@@ -33,6 +86,15 @@
   border: 1px solid utility.$input;
   font-size: 18px;
   height: 60px;
+  @include utility.sp {
+    height: .3rem;
+    border-radius: .05rem;
+  }
+
+  @include utility.tab {
+    height: 30px;
+    border-radius: 5px;
+  }
 }
 
 .p-search__input-select {
@@ -40,27 +102,66 @@
   appearance: none;
   width: 200px;
   padding-left: 15px;
+  @include utility.sp {
+    font-size: .12rem;
+    width: 100%;
+    padding-left: .075rem;
+  }
+
+  @include utility.tab {
+    font-size: 12px;
+    width: 100%;
+    padding-left: 8px;
+  }
+}
+
+.p-search__selects {
+  display: flex;
+  gap: 15px;
+  @include utility.sp {
+    width: 100%;
+    gap: .15rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include utility.tab {
+    width: 100%;
+    gap: .15rem;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .p-search__input-select-inner {
   position: relative;
+  width: 100%;
 }
 
 .p-search__input-select-inner:before {
   position: absolute;
   content: '';
   top: 50%;
-  right: 15px;
+  right: 10px;
   transform: translateY(-50%);
   width: 0;
   height: 0;
-  border-top: 10px solid utility.$input;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
+  border-top: 8px solid utility.$input;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
 }
 
 .p-search__input-text {
   @extend .p-search__input;
   padding-left :8px;
   width: 300px;
+  @include utility.sp {
+    font-size: .14rem;
+    width: 100%;
+  }
+
+  @include utility.tab {
+    font-size: 14px;
+    width: 100%;
+  }
 }

@@ -1,0 +1,33 @@
+@use '../../object/utility/utility.scss';
+.p-hamburger__menu {
+  @include utility.pc {
+    display: none;
+  }
+  overflow: auto;
+  position: fixed;
+  z-index: 10000;
+  display: inline-block;
+  left: 130%;
+  width: 100%;
+  max-height: 80vh;
+  transition: 1s;
+  padding: .58rem .6rem 2.35rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  &-display {
+    @extend .p-hamburger__menu;
+    left: 0;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: .38rem;
+  }
+  &-item {
+    a {
+      font-size: .22rem;
+      font-weight: utility.$bold;
+      color: utility.$white;
+      white-space: nowrap;
+    }
+  }
+}
