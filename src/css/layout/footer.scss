@@ -34,11 +34,18 @@
 .l-footer__links {
   font-size: 16px;
   line-height: 36px;
+  @include utility.sp {
+    font-size: .16rem;
+    line-height: .36rem;
+  }
 }
 
 .l-footer__list {
   margin-top: 28px;
   column-count: 2;
+  @include utility.sp {
+    margin-top: .28rem;
+  }
 }
 
 .l-footer__images {
@@ -46,6 +53,7 @@
   flex-direction: column;
   gap: 15px;
   @include utility.sp {
+    gap: .15rem;
     margin: 0 auto;
     width: 100%;
   }
@@ -90,7 +98,9 @@
   align-items: center;
   font-size: 14px;
   @include utility.sp {
-    margin-top: 40px;
+    font-size: .14rem;
+    margin-top: .4rem;
+    height: .35rem;
     width: 100%;
   }
 

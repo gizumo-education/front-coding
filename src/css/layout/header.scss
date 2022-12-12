@@ -11,11 +11,13 @@
   z-index: 10000;
   overflow-x: hidden;
   @include utility.sp {
-    height: 70px;
+    height: auto;
+    padding: .16rem 0;
   }
 
   @include utility.tab {
-    height: 70px;
+    height: auto;
+    padding: 16px 0;
   }
 
   &__navigation {
@@ -36,8 +38,8 @@
   display: none;
   background-color: transparent;
   border: none;
-  &-border{
-    position:absolute;
+  &-border {
+    position: absolute;
     display: none;
     background-color: utility.$black;
     left: 0;
@@ -59,7 +61,7 @@
     height: 38px;
     width: 50px;
     right: 15px;
-    &-border{
+    &-border {
       display: inline-block;
       &-clicked {
         opacity: 0;
