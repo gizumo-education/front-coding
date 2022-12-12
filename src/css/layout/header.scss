@@ -36,26 +36,43 @@
   display: none;
   background-color: transparent;
   border: none;
+  &-border{
+    position:absolute;
+    display: none;
+    background-color: utility.$black;
+    left: 0;
+    top: 16px;
+    height: 6px;
+    width: 50px;
+    border-radius: 3px;
+    transition: .3s;
+    &:first-child {
+      top: 0px;
+    }
+    &:last-child {
+      top: 32px;
+    }
+  }
   @include utility.sp {
     position: relative;
     display: inline-block;
     height: 38px;
     width: 50px;
     right: 15px;
-    span{
-      position:absolute;
+    &-border{
       display: inline-block;
-      background-color: utility.$black;
-      left: 0;
-      top: 0;
-      height: 6px;
-      width: 50px;
-      border-radius: 3px;
-      &:first-child {
-        top: 16px;
-      }
-      &:last-child {
-        top: 32px;
+      &-clicked {
+        opacity: 0;
+        &:first-child {
+          rotate: 45deg;
+          opacity: 1;
+          top: 50%;
+        }
+        &:last-child {
+          rotate: -45deg;
+          opacity: 1;
+          top: 50%;
+        }
       }
     }
   }
@@ -66,20 +83,21 @@
     height: 38px;
     width: 50px;
     right: 15px;
-    span{
-      position: absolute;
+    &-border {
       display: inline-block;
-      background-color: utility.$black;
-      left: 0;
-      top: 0;
-      height: 6px;
-      width: 50px;
-      border-radius: 3px;
-      &:first-child {
-        top: 16px;
-      }
-      &:last-child {
-        top: 32px;
+      &-clicked {
+        top: 70%;
+        opacity: 0;
+        &:first-child {
+          rotate: 45deg;
+          opacity: 1;
+          top: 50%;
+        }
+        &:last-child {
+          rotate: -45deg;
+          opacity: 1;
+          top: 50%;
+        }
       }
     }
   }

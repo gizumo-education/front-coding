@@ -21,13 +21,15 @@ $(function() {
   });
   
   function menuClick() {
-    console.log('click');
-    let className = document.getElementById("hamburger__menu").className;
-    if(className == "p-hamburger__menu") {
+    $(".l-header__hamburger-border").toggleClass('l-header__hamburger-border-clicked');
+    if($("#hamburger__menu").attr("class") == "p-hamburger__menu") {
+
       document.getElementById("hamburger__menu").className = "p-hamburger__menu-display";
+      $(".is-pined").css('overflow','hidden');
     }
     else {
       document.getElementById("hamburger__menu").className = "p-hamburger__menu";
+      $(".is-pined").css('overflow','auto');
     }
   }
 
