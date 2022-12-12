@@ -24,10 +24,10 @@ $(function() {
     $('.l-header__hamburger-border').toggleClass('l-header__hamburger-border-clicked');
     $('.p-hamburger__menu').toggleClass('p-hamburger__menu-display');
     if($('#hamburger__menu').attr('class') == 'p-hamburger__menu') {
-      $('.is-pined').css('overflow','hidden');
+      $('.is-pined').css('overflow','auto');
     }
     else {
-      $('.is-pined').css('overflow','auto');
+      $('.is-pined').css('overflow','hidden');
     }
   }
 
