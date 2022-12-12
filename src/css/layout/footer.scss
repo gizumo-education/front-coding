@@ -44,7 +44,10 @@
   margin-top: 28px;
   column-count: 2;
   @include utility.sp {
-    margin-top: .28rem;
+    margin: .28rem 0 .22rem;
+  }
+  @include utility.tab {
+    margin: 28px 0 22px;
   }
 }
 
