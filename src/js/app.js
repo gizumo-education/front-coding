@@ -10,26 +10,24 @@ $(function() {
     //スクロールのスピード
     let speed = 500;
     //リンク元を取得
-    let href= $(this).attr("href");
+    let href= $(this).attr('href');
     //リンク先を取得
-    let target = $(href == "#" || href == "" ? 'html' : href);
+    let target = $(href == '#' || href == '' ? 'html' : href);
     //リンク先までの距離を取得
     let position = target.offset().top;
     //スムーススクロール
-    $("html, body").animate({scrollTop:position}, speed, "swing");
+    $('html, body').animate({scrollTop:position}, speed, 'swing');
     return false;
   });
   
   function menuClick() {
-    $(".l-header__hamburger-border").toggleClass('l-header__hamburger-border-clicked');
-    if($("#hamburger__menu").attr("class") == "p-hamburger__menu") {
-
-      document.getElementById("hamburger__menu").className = "p-hamburger__menu-display";
-      $(".is-pined").css('overflow','hidden');
+    $('.l-header__hamburger-border').toggleClass('l-header__hamburger-border-clicked');
+    $('.p-hamburger__menu').toggleClass('p-hamburger__menu-display');
+    if($('#hamburger__menu').attr('class') == 'p-hamburger__menu') {
+      $('.is-pined').css('overflow','hidden');
     }
     else {
-      document.getElementById("hamburger__menu").className = "p-hamburger__menu";
-      $(".is-pined").css('overflow','auto');
+      $('.is-pined').css('overflow','auto');
     }
   }
 
