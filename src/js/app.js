@@ -17,6 +17,7 @@ $(function() {
     let position = target.offset().top;
     //スムーススクロール
     $('html, body').animate({scrollTop:position}, speed, 'swing');
+    menuClick();
     return false;
   });
   
