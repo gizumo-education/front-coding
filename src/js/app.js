@@ -31,7 +31,7 @@ $(function() {
     }
   }
 
-  $(function(){
+  $(function() {
     $('.p-newest__list').slick({
       infinite: true,
       autoplay: true,
