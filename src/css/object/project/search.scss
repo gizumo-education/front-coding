@@ -28,6 +28,7 @@
   background-color: utility.$light-blue;
   border-radius: 10px;
   padding: 40px 0;
+  max-width: 1180px;
   margin: 0 auto;
   @include utility.sp {
     padding: .15rem .255rem .20rem;
