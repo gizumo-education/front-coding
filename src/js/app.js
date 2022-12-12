@@ -41,14 +41,13 @@ $(function() {
       autoplaySpeed: 3000,
       speed: 1600,
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 1,
       prevArrow: $('.p-newest__left'),
       nextArrow: $('.p-newest__right'),
       responsive:[{
         breakpoint: 1199,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
         }
       }],
     });
