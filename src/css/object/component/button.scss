@@ -1,2 +1,16 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-blue-button  {
+  border-radius: 5px;
+  border: none;
+}
+
+.c-pink-button {
+  border-radius: 50px;
+  border: 1px solid utility.$magenta;
+  background-color: utility.$magenta;
+  color: utility.$white;
+  font-size: 18px;
+  font-weight: utility.$bold;
+}

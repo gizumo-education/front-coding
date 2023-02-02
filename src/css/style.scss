@@ -13,8 +13,15 @@
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/title.scss';
+@use './object/component/magenta-form.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/search.scss';
+@use './object/project/scroll-images.scss';
+@use './object/project/unit.scss';
+@use './object/project/unit-secondary.scss';
+@use './object/project/unit-tertiary.scss';
 /*-------------------------------------------*/

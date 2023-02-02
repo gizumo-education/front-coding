@@ -1,2 +1,75 @@
 @use '../object/utility/utility.scss';
 // headerのスタイルを記述するファイル
+
+.l-header {
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: utility.$white;
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    max-width: 90%;
+    & > ul {
+      margin: auto 0;
+      white-space: nowrap;
+      & > li {
+        display: inline-block;
+        list-style: none;
+        & > a {
+          text-align: center;
+          color : inherit;
+          font-size:16px;
+        }
+        :hover {
+          opacity: .8;
+          transition: .3s;
+        }
+        &::after {
+          content: "";
+          width: 1px;
+          height: 23px;
+          display: inline-block;
+          margin: 0 20px;
+          background-color: utility.$black;
+        }
+        &:last-child::after {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  &__buttons {
+    &__button {
+      width: 140px;
+      margin: 25px 0px 25px 15px;
+      padding: 16px 21px 16px 10px;
+      background-color: utility.$headerButton;
+      color: utility.$white;
+      line-height: 20px;
+
+      &:first-child {
+        width: 160px;
+        margin-left: 25px;
+      }
+
+      & > img {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        margin-bottom: 2px;
+
+        &:first-child {
+          width: 20px;
+        }
+      }
+    }
+  }
+};
+

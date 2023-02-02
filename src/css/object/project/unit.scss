@@ -1,0 +1,42 @@
+@use '../../object/utility/utility.scss';
+
+//ギズジョブ４つの特徴
+
+.p-unit {
+    max-width: 80%;
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+      &__text {
+        width: calc(95% / 2);
+        height: 180px;
+        margin-top: 40px;
+        background-color: utility.$unitBox;
+        text-align: center;
+        border-radius: 10px;
+
+        & > dt {
+          margin-top: 40px;
+          font-size: 24px;
+          font-weight: utility.$bold;
+          color: utility.$magenta;
+        }
+
+        & > dd {
+          width: 85%;
+          margin: 36px auto 0 auto;
+          font-size: 14px;
+          font-weight: utility.$regular;
+          text-align: center;
+          
+        }
+
+        &:nth-child(2n) {
+          margin-left: 5%;
+        }
+      }
+    }
+  }
