@@ -5,17 +5,21 @@
   &__hero {
     padding-top: 100px;
     width: 100vw;
+    & > img {
+    width: 100vw;
+    height: auto;
+    }
   }
-
-  &__secondary {
+}
+.p-keyvisual__secondary {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  font-size: 25px;
+  & > img {
     width: 100vw;
     height: auto;
     position: relative;
-    & > img {
-      width: 100vw;
-      height: auto;
-      position: relative;
-    }
   }
 }
 

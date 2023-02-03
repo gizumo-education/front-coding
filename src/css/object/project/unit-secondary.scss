@@ -1,21 +1,23 @@
 @use '../../object/utility/utility.scss';
 
 .p-unit-secondary {
-  max-width: 80%;
+  margin-top: 106px;
+
   &__content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap:20px;
     margin-top: 50px;
 
-    &__text {
+    &__group{
       border: solid 1px utility.$magenta;
       border-radius: 10px;
-      width: calc(calc(100% - 60px) / 4);
+      width: 278px;
       position: relative;
       display: block;
       text-align: center;
-      & > span {
+
+      &__icon {
         margin-top: 8.8px;
         margin-left: 8.8px;
         width: 60px;
@@ -23,65 +25,60 @@
         position: relative;
         top: 0;
         left: 0;
-
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: utility.$magenta;
         border-radius: 50%;
-
-        & > span {
-          color: utility.$white;
-          font-size: 16px;
-          font-weight: utility.$bold;
-          line-height: 25px;
-          text-align: center;
-        }
-
+        color: utility.$white;
+        font-size: 16px;
+        font-weight: utility.$bold;
+        line-height: 25px;
+        text-align: center;
       }
+
       & > img {
         width: 100px;
         height: 100px;
       }
+      
+      &__title {
+          width: 77%;
+          height: 60px;
+          margin: 22px auto 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items:center;
+          font-size: 24px;
+          font-weight: utility.$bold;
+          line-height: 30px;
+        }
 
-      & > h2 {
-        width: 77%;
-        height: 60px;
-        margin: 22px auto 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        font-size: 24px;
-        font-weight: utility.$bold;
-        line-height: 30px;
-      }
+        &__text {
+          width: 237px;
+          margin: 20px auto 40px auto;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: utility.$regular;
+        }
 
-      & > p {
-        width: 85%;
-        margin: 20px auto 0 auto;
-        padding-bottom: 38px;
-        font-size: 14px;
-        font-weight: utility.$regular;
-      }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          transform: translate(0, -50%);
+          border-top: 20px solid transparent;
+          border-right: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-left: 20px solid utility.$magenta;
+          width: 20px;
+          height: 40px;
+        }
 
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 100%;
-        transform: translate(0, -50%);
-        border-top: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-bottom: 20px solid transparent;
-        border-left: 20px solid utility.$magenta;
-        width: 20px;
-        height: 40px;
-      }
-
-      &:last-child::after {
-        display: none;
+        &:last-child::after {
+          display: none;
+        }
       }
     }
   }
-
-}

@@ -5,13 +5,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
   padding-top: 64px;
   padding-bottom: 67px;
   background-color: utility.$scrollBackground;
 
   &__title {
     font-size: 25px;
+    text-align: left;
   }
 
   &__group {
@@ -23,14 +23,21 @@
   &__image {
     margin-left: 20px;
     margin-top: 25px;
+    border-radius: 10px;
 
     &:first-child {
       margin-left: 0;
     }
-    & > p {
-      margin-top: 8px;
-      font-size: 16px;
+
+    & > img {
+      width: 280px;
+      height: 200px;
     }
+  }
+  &__text {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 22px;
   }
   
   &__detail {
@@ -41,23 +48,22 @@
     font-size: 14px;
     line-height: 20px;
     
-    & > dt {
+    &__title {
       width: 60px;
       margin: 4 10px 0 0;
       text-align: center;
       background-color: utility.$scrollText;
     }
   
-  & > dd {
+  &__detail {
     margin-left: 10px;
     }
   }
 
   &__button {
-    width: 360px;
-    height: 60px;
     display: block;
-    margin: auto;
-    margin-top: 60px;
+    text-align: center;
+    margin: 60px auto 0 auto;
+    width: 360px;
   }
 }

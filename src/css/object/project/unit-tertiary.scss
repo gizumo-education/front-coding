@@ -2,12 +2,22 @@
 
 .p-unit-tertiary {
   display: block;
+  margin-top: 106px;
+  margin-bottom: 90px;
   &__content {
     margin-top: 50px;
-    &__text.u-overlay::before {
+    display: radius;
+
+    &__group::before {
+      position: absolute;
+      width: 380px;
+      height: 240px;
+      left: 0;
+      top: 0;
       border-radius: 10px;
     }
-    &__text {
+
+    &__group {
       width: 380px;
       height: 240px;
       display: inline-block;
@@ -27,7 +37,7 @@
         border-radius: 10px;
       }
       
-      & > h2 {
+      &__title {
         position: absolute;
         top: 30%;
         left: 50%;
@@ -39,7 +49,7 @@
         z-index: 2;
       }
       
-      & > p {
+      &__text {
         width: 70%;
         position: absolute;
         bottom: 20%;

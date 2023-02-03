@@ -2,7 +2,7 @@
 // 共通パーツであるボタンのスタイルを記述するファイル
 
 .c-blue-button  {
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
 }
 
@@ -13,4 +13,18 @@
   color: utility.$white;
   font-size: 18px;
   font-weight: utility.$bold;
+}
+
+.c-pink-button-scroll {
+  border-radius: 50px;
+  border: 1px solid utility.$magenta;
+  background-color: utility.$magenta;
+  color: utility.$white;
+  font-size: 18px;
+  font-weight: utility.$bold;
+  padding: 17px 72px;
+  line-height: 26px;
+  white-space: nowrap;
+  width: 360px;
+  height: 60px;
 }

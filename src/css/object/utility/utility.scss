@@ -2,11 +2,16 @@
 @forward '../../foundation/_mixins.scss';
 
 .u-wrapper {
-  width: 80%;
+  max-width: 75%;
   margin: auto;
 }
 
-a:hover {
+.u-hover:hover {
   opacity: .8;
   transition: .3s;
+  cursor: pointer;
+}
+
+.br-10 {
+  border-radius: 10px;
 }

@@ -3,60 +3,64 @@
 
 .l-header {
   width: 100vw;
-  height: 100px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   background-color: utility.$white;
+  padding: 25px 0;
+
   &__nav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     flex-wrap: nowrap;
     margin: 0 auto;
     max-width: 90%;
-    & > ul {
-      margin: auto 0;
-      white-space: nowrap;
-      & > li {
-        display: inline-block;
-        list-style: none;
-        & > a {
-          text-align: center;
-          color : inherit;
-          font-size:16px;
-        }
-        :hover {
-          opacity: .8;
-          transition: .3s;
-        }
-        &::after {
-          content: "";
-          width: 1px;
-          height: 23px;
-          display: inline-block;
-          margin: 0 20px;
-          background-color: utility.$black;
-        }
-        &:last-child::after {
-          display: none;
-        }
-      }
+    
+    &__item {
+      display: inline-block;
+      text-align: end;
+    }
+    
+    &__text {
+      color : inherit;
+      font-size:16px;
+      line-height: 23px;
+      display: inline-block;
+      list-style: none;
+    }
+    
+    &__icon {
+      width: auto;
+      height: 18px;
+    }
+
+    &__line {
+      content: "";
+      width: 1px;
+      height: 23px;
+      display: inline-block;
+      margin: 0 25px;
+      background-color: utility.$black;
     }
   }
-  
   &__buttons {
+    margin-left: 25px;
+    display: flex;
+    gap: 15px;
+
     &__button {
       width: 140px;
-      margin: 25px 0px 25px 15px;
       padding: 16px 21px 16px 10px;
       background-color: utility.$headerButton;
       color: utility.$white;
+      font-size: 14px;
       line-height: 20px;
+      text-align: center;
 
       &:first-child {
         width: 160px;
-        margin-left: 25px;
       }
 
       & > img {
@@ -71,5 +75,4 @@
       }
     }
   }
-};
-
+}
