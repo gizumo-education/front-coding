@@ -1,0 +1,68 @@
+@use '../../object/utility/utility.scss' as utility;
+
+.p-news {
+  background-color: utility.$pale-blue;
+  padding: 64px 0 67px;
+  &__container {
+    display: flex;
+    padding-top: 25px;
+    &-box {
+      margin-left: 20px;
+      width: 280px;
+      img {
+        height: 200px;
+      }
+      &--items {
+        padding-top: 2.92px;
+        dl {
+          display: flex;
+          padding-top: 4px;
+          dt {
+            width: 60px;
+            height: 21px;
+            background-color: utility.$pale-pink;
+            font-family: Noto Sans JP;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+          }
+          dd {
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            text-align: left;
+            margin-left: 10px;
+          }
+        }
+        
+      }
+      p {
+        font-family: Noto Sans JP;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        padding-top: 8.08px;
+      }
+    }
+    :first-child {
+      margin-left: 0;
+      &--items {
+        text-align: center;
+      }
+    }
+  }
+  &-more {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    &__button {
+      width: 360px;
+      height: 60px;
+      background-color: utility.$pink;
+      line-height: 60px;
+      border-radius: 30px;
+    }
+  }
+}

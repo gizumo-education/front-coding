@@ -1,0 +1,48 @@
+@use '../../object/utility/utility.scss' as utility;
+
+.p-features {
+  padding-top: 106px;
+  &__title {
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  &-main {
+    display: flex;
+    padding-top: 53px;
+    flex-wrap: wrap;
+    &__box {
+      height: 180px;
+      width: 570px;
+      border-radius: 10px;
+      background-color: utility.$pale-pink;
+      &--title {
+        color: utility.$pink;
+        text-align: center;
+        padding-top: 40px;
+        font-family: Noto Sans JP;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+      &--text {
+        text-align: center;
+        padding: 4px 45px 0;
+        font-family: Noto Sans JP;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        display: grid;
+        place-items: center;
+        height:94px;
+      }
+    }
+    &__box:nth-child(2n) {
+      margin-left: 40px;
+    }
+    &__box:nth-child(n+3) {
+      margin-top: 40px;
+    }
+  }
+}

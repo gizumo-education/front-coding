@@ -1,0 +1,70 @@
+@use '../../object/utility/utility.scss' as utility;
+
+.p-job-search {
+  background-color: utility.$white;
+  padding: 61px 0 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-main {
+    padding: 40px;
+    background-color: utility.$sky-blue;
+    width: 1180px;
+    height: 240px;
+    text-align: center;
+  }
+  &__text {
+    padding-top: 20px;
+    font-family: Noto Sans JP;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  &__box {
+    padding-top: 26px;
+    display: flex;
+    select {
+      width: 200px;
+      border: 1px solid utility.$pink;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 17px 15px 15px;
+      margin-left: 15px;
+      appearance: none;
+      background-image: url(../img/icon/pulldown.png);
+      background-position: right 15px center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+    :first-child {
+      margin-left: 0;
+    }
+  }
+  &__form {
+    width: 300px;
+    height: 60px;
+    border: 1px solid #DE1E79;
+    margin-left: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-left: 10px;
+    color: utility.$black;
+    text-align-last: left;
+  }
+  &__button {
+    background-color: utility.$pink;
+    width: 140px;
+    height: 60px;
+    margin-left: 15px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    background-image: url(../img/icon/roupe-white.png);
+    background-position: left 15px center;
+    background-repeat: no-repeat;
+    padding-left: 48px;
+  }
+}

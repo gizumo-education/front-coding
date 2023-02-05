@@ -1,2 +1,54 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as utility;
 // footerのスタイルを記述するファイル
+
+.l-footer {
+  padding-top: 55px;
+  background-color: utility.$pale-blue;
+  &-main {
+  display: flex;
+  justify-content: space-between;
+    &__nav {
+      padding-top: 24px;
+      a {
+        color: utility.$black;
+      }
+      &--top {
+        font-family: Noto Sans JP;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+      }
+      &-box {
+        display: flex;
+        padding: 27px 0;
+        li {
+          width: 160px;
+          display: block;
+          font-family: Noto Sans JP;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 36px;
+        }
+      }
+    }
+    &__img {
+      display: flex;
+      flex-direction: column;
+      :last-child {
+        padding: 15px 0 25px;
+      }
+      img {
+      }
+    }
+  }
+    &__credit {
+    height: 35px;
+    background: utility.$gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+}

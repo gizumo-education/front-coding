@@ -9,6 +9,7 @@
 @use './layout/footer.scss';
 @use './layout/header.scss';
 @use './layout/inner.scss';
+@use './layout/main.scss';
 /*-------------------------------------------*/
 
 /*component---------------------------------*/
@@ -17,4 +18,10 @@
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/job-search.scss';
+@use './object/project/news.scss';
+@use './object/project/description.scss';
+@use './object/project/features.scss';
+@use './object/project/flow.scss';
+@use './object/project/contents.scss';
 /*-------------------------------------------*/
