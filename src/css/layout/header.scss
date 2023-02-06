@@ -46,6 +46,7 @@
       margin-right: 15px;
     }
   }
+
   &__buttons {
     margin-left: 25px;
     display: flex;
@@ -76,19 +77,17 @@
       }
     }
   }
-}
-
-//タブレット対応
-@media screen and (max-width:1199px) {
-  .l-header {
-    &__nav {
-      display: none;
+  //タブレット対応
+  @include utility.tab {
+    .l-header {
+      font-size: 0.1rem;
 
     }
+
+
   }
+  
+  //スマホ対応
 }
 
-//スマホ対応
-@media screen and (max-width:767px) {
 
-}
