@@ -1,2 +1,11 @@
 @use '../object/utility/utility.scss';
+@use '../object/utility/overlay.scss';
 // innerのスタイルを記述するファイル
+
+.l-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
