@@ -63,6 +63,20 @@ h2 {
   text-align: center;
 }
 
+input {
+  transition: .3s;
+}
+input:hover {
+  opacity: .8;
+}
+
+select {
+  transition: .3s;
+}
+select:hover {
+  opacity: .8;
+}
+
 .is-pc {
   @include base.pc {
     display: block!important;
