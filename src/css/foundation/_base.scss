@@ -48,11 +48,11 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  transition: .3s;
 }
 
 a:hover {
   opacity: .8;
-  transition: .3s;
 }
 
 h2 {
