@@ -8,8 +8,12 @@
 
 .u-hover:hover {
   opacity: .8;
-  transition: .3s;
+  transition: .3s .3s;
   cursor: pointer;
+}
+
+.u-hover {
+  transition: .3s;
 }
 
 .br-10 {
