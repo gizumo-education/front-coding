@@ -15,9 +15,7 @@
     opacity: 0.5;
     width: 1600px;
     margin: 0 auto;
-    @include utility.sp {
-      width: 400px;
-    }
+    width: 100%;
   }
   p {
     position: absolute;
@@ -30,5 +28,10 @@
     width: 100%;
     text-align: center;
     transform: translate(-50%,-50%);
+    @include utility.sp {
+      font-size: .12rem;
+      line-height: .2rem;
+      font-weight: 400;
+    }
   }
 }
