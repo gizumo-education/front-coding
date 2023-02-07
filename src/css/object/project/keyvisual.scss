@@ -1,2 +1,47 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as utility;
 // ページ上部のキービジュアルに関するスタイル
+.p-keyvisual {
+  background-color: utility.$blue-gray;
+  &-img {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    height: 500px;
+    &-text {
+      position: absolute;
+      left: 51%;
+      top: 3.5%;
+    }
+    &__title {
+      position: absolute;
+      top: 8%;
+      left: 44%;
+      color: utility.$white;
+      width: 800px;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 65px;
+      text-shadow: 0px 4px 4px utility.$shadow;
+    }
+    &-job-text {
+      position: absolute;
+      top:10.8%;
+      left: 50.5%;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29px;
+      color: utility.$green;
+      width: 391px;
+      height: 69px;
+      background-color: utility.$white;
+      text-align: center;
+      line-height: 69px;
+      border: 2.3px solid utility.$green;
+      border-radius: 10px;
+    }
+    &-job-quantity {
+      font-weight: 700;
+      font-size: 40px;
+    }
+  }
+}

@@ -1,2 +1,14 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as utility;
 // 共通パーツであるボタンのスタイルを記述するファイル
+.c-button {
+  color: utility.$white;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  transition: .3s;
+}
+.c-button:hover {
+  opacity: .8;
+}
