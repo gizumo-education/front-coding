@@ -2,4 +2,7 @@
 
 .l-main {
   padding: 100px 0 200px;
+  @include utility.sp {
+    padding: 70px 0 0;
+  }
 }
