@@ -13,11 +13,9 @@
     padding: 40px;
     background-color: utility.$sky-blue;
     width: 1180px;
-    height: 240px;
     text-align: center;
     @include utility.sp {
-      padding: 15px 25.5px 20px;
-      width: 400px;
+      padding: 15px 24px 20px;
     }
   }
   &__text {
@@ -25,13 +23,18 @@
     font-family: Noto Sans JP;
     font-size: 20px;
     font-weight: 400;
+    @include utility.sp {
+      font-size: .12rem;
+      padding-top: 16px;
+    }
   }
   &__box {
     padding-top: 26px;
     display: flex;
     @include utility.sp {
       flex-wrap: wrap;
-      margin-top: 14px;
+      margin-top: 13px;
+      padding: 0;
     }
     select {
       width: 200px;
@@ -48,9 +51,13 @@
       cursor: pointer;
       transition: .3s;
       @include utility.sp {
-        margin: 0;
-        width: 100px;
-        height: 30px;
+        margin-left: .11rem;
+        width: 1rem;
+        height: .3rem;
+        font-size: .11rem;
+        background-size: .1rem;
+        padding: 0 0 0 10px;
+        background-position: right .08rem center;
       }
     }
     select:hover {
@@ -71,6 +78,11 @@
     line-height: 26px;
     padding-left: 10px;
     color: utility.$black;
+    @include utility.sp {
+      margin: 16px auto 0;
+      width: 3.2rem;
+      height: .3rem;
+    }
   }
   &__button {
     background-color: utility.$pink;
@@ -85,5 +97,10 @@
     background-position: left 15px center;
     background-repeat: no-repeat;
     padding-left: 48px;
+    @include utility.sp {
+      margin: 19px auto 0;
+      width: 160px;
+      height: 40px;
+    }
   }
 }
