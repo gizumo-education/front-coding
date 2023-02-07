@@ -32,12 +32,13 @@
       }
     }
     &__img {
-      display: flex;
-      flex-direction: column;
-      :last-child {
-        padding: 15px 0 25px;
+      a {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
       }
-      img {
+      &--bottom {
+        margin-top: 15px;
       }
     }
   }
