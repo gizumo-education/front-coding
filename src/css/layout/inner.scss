@@ -2,6 +2,7 @@
 // innerのスタイルを記述するファイル
 
 .l-inner {
-  width: 1180px;
-  margin: 0 auto;
+    margin: 0 auto;
+    max-width: 1180px;
+    min-width: 370px;
 }

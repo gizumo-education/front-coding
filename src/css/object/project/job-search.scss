@@ -6,12 +6,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include utility.sp {
+    padding: 25px 15px;
+  }
   &-main {
     padding: 40px;
     background-color: utility.$sky-blue;
     width: 1180px;
     height: 240px;
     text-align: center;
+    @include utility.sp {
+      padding: 15px 25.5px 20px;
+      width: 400px;
+    }
   }
   &__text {
     padding-top: 20px;
@@ -22,6 +29,10 @@
   &__box {
     padding-top: 26px;
     display: flex;
+    @include utility.sp {
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
     select {
       width: 200px;
       border: 1px solid utility.$pink;
@@ -36,6 +47,11 @@
       background-repeat: no-repeat;
       cursor: pointer;
       transition: .3s;
+      @include utility.sp {
+        margin: 0;
+        width: 100px;
+        height: 30px;
+      }
     }
     select:hover {
       opacity: .8;

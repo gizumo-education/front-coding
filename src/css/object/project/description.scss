@@ -15,6 +15,9 @@
     opacity: 0.5;
     width: 1600px;
     margin: 0 auto;
+    @include utility.sp {
+      width: 400px;
+    }
   }
   p {
     position: absolute;
