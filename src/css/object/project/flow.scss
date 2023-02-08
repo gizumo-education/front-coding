@@ -24,8 +24,10 @@
       width: 280px;
       border: 2.268px solid utility.$pink;
       border-radius: 10px;
+      height: 360px;
       @include utility.sp {
         padding-bottom: 22px;
+        height: 290px;
       }
         &__img {
         position: absolute;
@@ -63,6 +65,10 @@
         padding: 100px 30px 0;
         display: grid;
         place-items: center;
+        @include utility.tab {
+          font-size: 19px;
+          padding: 100px 0 0;
+        }
         @include utility.sp {
           font-size: 19px;
           padding: 70px 0 0;

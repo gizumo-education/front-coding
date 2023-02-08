@@ -6,6 +6,7 @@
     position: relative;
     margin: 0 auto;
     display: block;
+    height: 500px;
     @include utility.sp {
       display: none;
     }

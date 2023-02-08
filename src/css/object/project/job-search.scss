@@ -50,6 +50,7 @@
       background-repeat: no-repeat;
       cursor: pointer;
       transition: .3s;
+      background-color: utility.$white;
       @include utility.sp {
         margin-left: .11rem;
         width: 1rem;
