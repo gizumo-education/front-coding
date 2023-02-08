@@ -16,15 +16,16 @@
   }
   &-main {
     display: flex;
-    padding-top: 53px;
+    margin-top: 53px;
     flex-wrap: wrap;
+    gap: 40px;
     &__box {
-      height: 180px;
+      padding: 40px 0 30px;
       width: 570px;
       border-radius: 10px;
       background-color: utility.$pale-pink;
       @include utility.tab {
-        width: 100%;
+        width: 5.6rem;
       }
       @include utility.sp {
         width: 100%;
@@ -32,54 +33,25 @@
       &--title {
         color: utility.$pink;
         text-align: center;
-        padding-top: 40px;
         font-family: Noto Sans JP;
         font-size: 24px;
         font-weight: 700;
         line-height: 24px;
-        @include utility.tab {
-          padding-top: 30px;
-        }
-        @include utility.sp {
-          padding-top: 30px;
-        }
       }
       &--text {
         text-align: center;
-        padding: 4px 45px 0;
+        margin: 4px 45px 0;
         font-family: Noto Sans JP;
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
         display: grid;
         place-items: center;
-        height:94px;
-        @include utility.tab {
-          padding: 30px .1rem 0;
-          font-size: 12px;
-        }
+        height: 60px;
         @include utility.sp {
-          padding: 30px .1rem 0;
+          margin: 30px .1rem 0;
           font-size: 12px;
         }
-      }
-    }
-    &__box:nth-child(2n) {
-      margin-left: 40px;
-      @include utility.tab {
-        margin: 21px 0 0;
-      }
-      @include utility.sp {
-        margin: 21px 0 0;
-      }
-    }
-    &__box:nth-child(n+3) {
-      margin-top: 40px;
-      @include utility.tab {
-        margin: 21px 0 0;
-      }
-      @include utility.sp {
-        margin: 21px 0 0;
       }
     }
   }

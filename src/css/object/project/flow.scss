@@ -6,11 +6,11 @@
     padding-top: 60px;
   }
   &-main {
-    padding-top: 50px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     @include utility.sp {
-      padding-top: 34px;
+      margin-top: 34px;
       flex-direction: column;
     }
     > img {
@@ -24,7 +24,6 @@
       width: 280px;
       border: 2.268px solid utility.$pink;
       border-radius: 10px;
-      height: 360px;
       @include utility.sp {
         padding-bottom: 22px;
         height: 290px;
@@ -40,7 +39,7 @@
           top: 16%;
           left: 38%;
         }
-        &--twinkle {
+        &__twinkle {
           top: 13%;
           left: 27%;
           @include utility.sp {
@@ -49,14 +48,14 @@
           }
         }
       }
-      &--arrow {
+      &__arrow {
         display: none;
         @include utility.sp {
           display: block;
           margin: 9px;
         }
       }
-      &--title {
+      &__title {
         text-align: center;
         font-family: Noto Sans JP;
         font-size: 24px;
@@ -65,6 +64,7 @@
         padding: 100px 30px 0;
         display: grid;
         place-items: center;
+        height: 160px;
         @include utility.tab {
           font-size: 19px;
           padding: 100px 0 0;
@@ -74,7 +74,7 @@
           padding: 70px 0 0;
         }
       }
-      &--text {
+      &__text {
         font-family: Noto Sans JP;
         font-size: 14px;
         font-weight: 400;

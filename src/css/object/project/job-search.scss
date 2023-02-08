@@ -2,12 +2,12 @@
 
 .p-job-search {
   background-color: utility.$white;
-  padding: 61px 0 59px;
+  padding-top: 61px;
   display: flex;
   align-items: center;
   justify-content: center;
   @include utility.sp {
-    padding: 25px 15px;
+    padding: 25px .1rem 0;
   }
   &-main {
     padding: 40px;
@@ -19,22 +19,21 @@
     }
   }
   &__text {
-    padding-top: 20px;
+    margin-top: 20px;
     font-family: Noto Sans JP;
     font-size: 20px;
     font-weight: 400;
     @include utility.sp {
       font-size: .12rem;
-      padding-top: 16px;
+      margin-top: 16px;
     }
   }
   &__box {
-    padding-top: 26px;
+    margin-top: 26px;
     display: flex;
     @include utility.sp {
       flex-wrap: wrap;
       margin-top: 13px;
-      padding: 0;
     }
     select {
       width: 200px;

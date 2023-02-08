@@ -6,10 +6,10 @@
     padding: 60px 0 45px;
   }
   &-main {
-    padding-top: 50px;
+    margin-top: 50px;
     display: flex;
     @include utility.sp {
-      padding-top: 13px;
+      margin-top: 13px;
       flex-direction: column;
     }
       :first-child {
@@ -39,7 +39,7 @@
         opacity: 0.5;
         border-radius: 10px;
       }
-      &--title {
+      &__title {
         position: absolute;
         color: utility.$white;
         font-family: Noto Sans JP;
@@ -56,7 +56,7 @@
           top: 25%;
           }
       }
-      &--text {
+      &__text {
         position: absolute;
         color: utility.$white;
         text-align: center;
@@ -72,7 +72,7 @@
           font-size: 14px;
           }
       }
-      &--note-pc {
+      &__note-pc {
         background-image: url(../img/picture/note-pc.jpg);
       }
     }

@@ -3,6 +3,7 @@
 
 .l-footer {
   padding-top: 55px;
+  margin-top: 200px;
   background-color: utility.$pale-blue;
   @include utility.sp {
     padding-top: 40px;
@@ -11,6 +12,7 @@
   &-main {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 25px;
   @include utility.sp {
     flex-direction: column;
     padding: 0 .4rem 50px;
@@ -34,7 +36,7 @@
       }
       &-box {
         display: flex;
-        padding: 27px 0;
+        margin-top: 27px;
         @include utility.sp {
           }
         li {
