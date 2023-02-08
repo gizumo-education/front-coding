@@ -2,6 +2,9 @@
 
 .p-features {
   padding-top: 106px;
+  @include utility.sp {
+    padding: 55px .1rem 0;
+  }
   &__title {
     text-align: center;
     font-family: Noto Sans JP;
@@ -17,6 +20,9 @@
       width: 570px;
       border-radius: 10px;
       background-color: utility.$pale-pink;
+      @include utility.sp {
+        width: 100%;;
+      }
       &--title {
         color: utility.$pink;
         text-align: center;
@@ -25,6 +31,9 @@
         font-size: 24px;
         font-weight: 700;
         line-height: 24px;
+        @include utility.sp {
+          padding-top: 30px;
+        }
       }
       &--text {
         text-align: center;
@@ -36,13 +45,23 @@
         display: grid;
         place-items: center;
         height:94px;
+        @include utility.sp {
+          padding: 30px .1rem 0;
+          font-size: 12px;
+        }
       }
     }
     &__box:nth-child(2n) {
       margin-left: 40px;
+      @include utility.sp {
+        margin: 21px 0 0;
+      }
     }
     &__box:nth-child(n+3) {
       margin-top: 40px;
+      @include utility.sp {
+        margin: 21px 0 0;
+      }
     }
   }
 }

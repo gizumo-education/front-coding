@@ -2,26 +2,56 @@
 
 .p-flow {
   padding-top: 105px;
+  @include utility.sp {
+    padding-top: 60px;
+  }
   &-main {
     padding-top: 50px;
     display: flex;
     align-items: center;
+    @include utility.sp {
+      padding-top: 34px;
+      flex-direction: column;
+    }
+    > img {
+      @include utility.sp {
+        display: none;
+      }
+    }
     &__box {
       position: relative;
-      padding: 10px;
+      padding: 10px 10px 42px;
       width: 280px;
-      height: 360px;
       border: 2.268px solid utility.$pink;
       border-radius: 10px;
-      &__img {
+      @include utility.sp {
+        padding-bottom: 22px;
+      }
+        &__img {
         position: absolute;
         top: 15%;
         left: 35%;
         display: block;
+        @include utility.sp {
+          width: 75px;
+          height: 75px;
+          top: 16%;
+          left: 38%;
+        }
         &--twinkle {
           top: 13%;
           left: 27%;
-
+          @include utility.sp {
+            top: 16%;
+            left: 35%;
+          }
+        }
+      }
+      &--arrow {
+        display: none;
+        @include utility.sp {
+          display: block;
+          margin: 9px;
         }
       }
       &--title {
@@ -31,9 +61,12 @@
         font-weight: 700;
         line-height: 30px;
         padding: 100px 30px 0;
-        height: 160px;
         display: grid;
         place-items: center;
+        @include utility.sp {
+          font-size: 19px;
+          padding: 70px 0 0;
+        }
       }
       &--text {
         font-family: Noto Sans JP;
@@ -41,6 +74,9 @@
         font-weight: 400;
         line-height: 20px;
         padding: 18px 5px 0;
+        @include utility.sp {
+          padding-top: 10px;
+        }
       }
     }
   }
