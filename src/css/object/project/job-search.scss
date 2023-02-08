@@ -12,8 +12,8 @@
   &-main {
     padding: 40px;
     background-color: utility.$sky-blue;
-    width: 1180px;
     text-align: center;
+    border-radius: 10px;
     @include utility.sp {
       padding: 15px 24px 20px;
     }
@@ -51,6 +51,9 @@
       cursor: pointer;
       transition: .3s;
       background-color: utility.$white;
+      @include utility.tab {
+        width: 1.8rem;
+      }
       @include utility.sp {
         margin-left: .11rem;
         width: 1rem;
@@ -79,6 +82,9 @@
     line-height: 26px;
     padding-left: 10px;
     color: utility.$black;
+    @include utility.tab {
+      width: 3rem;
+    }
     @include utility.sp {
       margin: 16px auto 0;
       width: 3.2rem;

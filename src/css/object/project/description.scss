@@ -13,11 +13,11 @@
     right: 0;
     background-color: utility.$black;
     opacity: 0.5;
-    width: 1600px;
+    width: 100%;
     margin: 0 auto;
-    @include utility.sp {
-      width: 100%;
-    }
+  }
+  img {
+    width: 100%;
   }
   p {
     position: absolute;

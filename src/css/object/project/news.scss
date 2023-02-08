@@ -23,6 +23,9 @@
     justify-content: center;
     &-box {
       margin-left: 20px;
+      img {
+        border-radius: 10px;
+      }
       @include utility.sp {
         display: none;
         padding: 0 .1rem;
