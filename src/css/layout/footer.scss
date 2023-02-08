@@ -4,11 +4,22 @@
 .l-footer {
   padding-top: 55px;
   background-color: utility.$pale-blue;
+  @include utility.sp {
+    padding-top: 40px;
+    margin-top: 75px;
+    }
   &-main {
   display: flex;
   justify-content: space-between;
+  @include utility.sp {
+    flex-direction: column;
+    padding: 0 .4rem 50px;
+    }
     &__nav {
       padding-top: 24px;
+      @include utility.sp {
+        padding: 0;
+        }
       a {
         color: utility.$black;
       }
@@ -17,10 +28,15 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 23px;
+        @include utility.sp {
+          margin: 0 auto;
+          }
       }
       &-box {
         display: flex;
         padding: 27px 0;
+        @include utility.sp {
+          }
         li {
           width: 160px;
           display: block;
@@ -28,6 +44,9 @@
           font-size: 16px;
           font-weight: 400;
           line-height: 36px;
+          @include utility.sp {
+            width: 1.7rem;
+          }
         }
       }
     }
@@ -36,6 +55,11 @@
         display: flex;
         flex-direction: column;
         margin: 0;
+        @include utility.sp {
+          height: 85px;
+          width: 320px;
+          margin: 0 auto;
+          }
       }
       &--bottom {
         margin-top: 15px;
