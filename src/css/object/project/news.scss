@@ -23,7 +23,6 @@
     position: relative;
     display: flex;
     margin-top: 25px;
-    justify-content: center;
     &-box {
       margin-left: 20px;
       img {
@@ -55,11 +54,9 @@
             font-size: 14px;
             font-weight: 400;
             line-height: 17px;
-            text-align: left;
             margin-left: 10px;
           }
         }
-        
       }
       p {
         font-family: Noto Sans JP;
@@ -71,9 +68,6 @@
     }
     :first-child {
       margin-left: 0;
-      &--items {
-        text-align: center;
-      }
     }
     &__left {
       position: absolute;
@@ -159,7 +153,6 @@
     }
     &__button {
       width: 360px;
-      height: 60px;
       background-color: utility.$pink;
       line-height: 60px;
       border-radius: 30px;

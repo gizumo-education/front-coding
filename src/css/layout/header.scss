@@ -10,7 +10,6 @@
     padding: 16px 15px 15px 0;
   }
   &__inner {
-    height: inherit;
     display: flex;
     justify-content: center;
     @include utility.sp {
@@ -46,8 +45,6 @@
       display: none;
     }
     li {
-      justify-content: center;
-      align-items: center;
       img {
         margin-right: 10px;
         vertical-align: middle;
