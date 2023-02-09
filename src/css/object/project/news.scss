@@ -20,6 +20,7 @@
     }
   }
   &__container {
+    position: relative;
     display: flex;
     margin-top: 25px;
     justify-content: center;
@@ -72,6 +73,80 @@
       margin-left: 0;
       &--items {
         text-align: center;
+      }
+    }
+    &__left {
+      position: absolute;
+      opacity: .6;
+      background-color: utility.$white;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      width: 60px;
+      height: 60px;
+      top: 25%;
+      left: 0px;
+      @include utility.sp {
+        width: 0.42rem;
+        height: 0.42rem;
+        top: 54%;
+        left: 10px;
+      }
+      @include utility.tab {
+        width: .6rem;
+        height: .6rem;
+        top: 20%;
+        left: 0px;
+      }
+      &::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        rotate: -45deg;
+        transform: translateY(-50%);
+        border-color: utility.$black;
+        border-top: 1px solid;
+        border-left: 1px solid;
+      }
+    }
+    &__right {
+      position: absolute;
+      opacity: .6;
+      background-color: utility.$white;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      width: 60px;
+      height: 60px;
+      top: 25%;
+      right: 0px;
+      @include utility.sp {
+        width: 0.42rem;
+        height: 0.42rem;
+        top: 54%;
+        right: 10px;
+      }
+      @include utility.tab {
+        width: .6rem;
+        height: .6rem;
+        top: 20%;
+        right: 0px;
+      }
+      &::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        top: 50%;
+        right: 50%;
+        position: absolute;
+        rotate: 45deg;
+        transform: translateY(-50%);
+        border-color: utility.$black;
+        border-top: 1px solid;
+        border-right: 1px solid;
       }
     }
   }
