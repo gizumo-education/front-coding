@@ -5,4 +5,7 @@
   @include utility.sp {
     padding-top: 70px;
   }
+  @include utility.tab {
+    padding: 1rem 0;
+  }
 }

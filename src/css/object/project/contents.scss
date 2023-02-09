@@ -3,7 +3,10 @@
 .p-contents {
   padding-top: 105px;
   @include utility.sp {
-    padding-top: 60px;
+    padding-top: .6rem;
+  }
+  @include utility.tab {
+    padding-top: 1rem;
   }
   &-main {
     margin-top: 50px;
@@ -12,16 +15,24 @@
       margin-top: 13px;
       flex-direction: column;
     }
+    @include utility.tab {
+      margin-top: .5rem;
+    }
     &__box {
       width: 380px;
       height: 240px;
       background-image: url(../img/picture/manual.jpg);
       position: relative;
       margin-left: 20px;
+      border-radius: 10px;
       @include utility.sp {
         padding-top: 30px;
         margin: 17px auto 0;
         width: 100%;
+      }
+      @include utility.tab {
+        margin-left: .2rem;
+        height: 2.4rem;
       }
       &:before {
         content: '';
@@ -49,7 +60,11 @@
         @include utility.sp {
           font-size: 21px;
           top: 25%;
-          }
+        }
+        @include utility.tab {
+          font-size: .24rem;
+          line-height: 0.24rem;
+        }
       }
       &__text {
         position: absolute;
@@ -65,7 +80,11 @@
         width: 290px;
         @include utility.sp {
           font-size: 14px;
-          }
+        }
+        @include utility.tab {
+          font-size: .16rem;
+          line-height: 0.23rem;
+        }
       }
       &__note-pc {
         background-image: url(../img/picture/note-pc.jpg);
@@ -87,13 +106,9 @@
         margin: 34px auto 0;
         width: 370px;
       }
+      @include utility.tab {
+        margin: .8rem auto 0;
+      }
     }
-  }
-}
-
-.bottom {
-  padding-top: 150px;
-  @include utility.sp {
-    padding-top: 60px;
   }
 }

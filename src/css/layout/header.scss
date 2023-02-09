@@ -9,6 +9,9 @@
   @include utility.sp {
     padding: 16px 15px 15px 0;
   }
+  @include utility.tab {
+    padding: .25rem 0;
+  }
   &__inner {
     display: flex;
     justify-content: center;
@@ -37,6 +40,10 @@
       font-size: 16px;
       color: utility.$black;
       line-height: 19px;
+      @include utility.tab {
+        font-size: .15rem;
+        line-height: .2rem;
+      }
     }
   }
   &__buttons {

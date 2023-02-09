@@ -25,6 +25,9 @@
     margin-top: 25px;
     &-box {
       margin-left: 20px;
+      @include utility.tab {
+        margin-left: 0.1rem;
+      }
       img {
         border-radius: 10px;
       }

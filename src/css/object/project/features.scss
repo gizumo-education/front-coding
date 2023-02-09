@@ -3,7 +3,7 @@
 .p-features {
   padding-top: 106px;
   @include utility.tab  {
-    padding: 55px .1rem 0;
+    padding: .5rem .1rem 0;
   }
   @include utility.sp  {
     padding: 55px .1rem 0;
@@ -22,6 +22,10 @@
     @include utility.sp {
       margin-top: 38px;
       gap: .21rem;
+    }
+    @include utility.tab {
+      margin-top: 0.4rem;
+      gap: .2rem;
     }
     &__box {
       padding: 40px 0 30px;

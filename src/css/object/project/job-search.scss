@@ -57,6 +57,7 @@
       background-color: utility.$white;
       @include utility.tab {
         width: 1.8rem;
+        font-size: 0.18rem;
       }
       @include utility.sp {
         margin-left: .11rem;
@@ -88,6 +89,7 @@
     color: utility.$black;
     @include utility.tab {
       width: 3rem;
+      font-size: 0.18rem;
     }
     @include utility.sp {
       margin: 16px auto 0;
@@ -114,5 +116,14 @@
       width: 160px;
       height: 40px;
     }
+  }
+}
+.bottom {
+  padding-top: 150px;
+  @include utility.sp {
+    padding-top: 60px;
+  }
+  @include utility.tab {
+    padding-top: 1.5rem;
   }
 }

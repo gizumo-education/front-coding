@@ -3,15 +3,21 @@
 .p-flow {
   padding-top: 105px;
   @include utility.sp {
-    padding-top: 60px;
+    padding-top: .6rem;
+  }
+  @include utility.tab {
+    padding-top: .6rem;
   }
   &-main {
     margin-top: 50px;
     display: flex;
     align-items: center;
     @include utility.sp {
-      margin-top: 34px;
+      margin-top: .34rem;
       flex-direction: column;
+    }
+    @include utility.tab {
+      margin-top: .4rem;
     }
     > img {
       @include utility.sp {
@@ -28,6 +34,9 @@
         padding-bottom: 22px;
         height: 290px;
       }
+      @include utility.tab {
+        padding: .1rem .1rem .42rem;
+      }
         &__img {
         position: absolute;
         top: 15%;
@@ -41,7 +50,7 @@
         }
         &__twinkle {
           top: 13%;
-          left: 27%;
+          left: 20%;
           @include utility.sp {
             top: 16%;
             left: 35%;

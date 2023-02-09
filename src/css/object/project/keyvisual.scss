@@ -27,6 +27,9 @@
       font-size: 50px;
       line-height: 65px;
       text-shadow: 0px 4px 4px utility.$shadow;
+      @include utility.tab {
+        font-size: 0.5rem;;
+      }
       @include utility.sp {
         display: none;
       }
@@ -48,6 +51,9 @@
       border-radius: 10px;
       @include utility.sp {
         display: none;
+      }
+      @include utility.tab {
+        top:11.5%;
       }
     }
     &-job-quantity {
