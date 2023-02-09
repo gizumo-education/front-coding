@@ -28,7 +28,7 @@
         width: 5.6rem;
       }
       @include utility.sp {
-        width: 100%;
+        width: 3.7rem;
       }
       &--title {
         color: utility.$pink;
@@ -40,7 +40,7 @@
       }
       &--text {
         text-align: center;
-        margin: 4px 45px 0;
+        margin: 26px 45px 0;
         font-family: Noto Sans JP;
         font-size: 14px;
         font-weight: 400;
