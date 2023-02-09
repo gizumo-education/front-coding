@@ -72,6 +72,7 @@
         @include utility.sp {
           font-size: 19px;
           padding: 70px 0 0;
+          height: 0px;
         }
       }
       &__text {
@@ -79,9 +80,10 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
-        padding: 18px 5px 0;
+        margin-top: 20px;
+        padding: 0 10px;
         @include utility.sp {
-          padding-top: 10px;
+          margin-top: 40px;
         }
       }
     }

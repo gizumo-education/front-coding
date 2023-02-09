@@ -19,16 +19,20 @@
     margin-top: 53px;
     flex-wrap: wrap;
     gap: 40px;
+    @include utility.sp {
+      margin-top: 38px;
+      gap: .21rem;
+    }
     &__box {
       padding: 40px 0 30px;
       width: 570px;
       border-radius: 10px;
       background-color: utility.$pale-pink;
       @include utility.tab {
-        width: 5.6rem;
+        width: 5.65rem;
       }
       @include utility.sp {
-        width: 3.7rem;
+        width: 3.8rem;
       }
       &--title {
         color: utility.$pink;

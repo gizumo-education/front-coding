@@ -1,9 +1,9 @@
 @use '../../object/utility/utility.scss' as utility;
 
 .p-contents {
-  padding: 105px 0 89px;
+  padding-top: 105px;
   @include utility.sp {
-    padding: 60px 0 45px;
+    padding-top: 60px;
   }
   &-main {
     margin-top: 50px;
@@ -11,12 +11,6 @@
     @include utility.sp {
       margin-top: 13px;
       flex-direction: column;
-    }
-      :first-child {
-      margin-left: 0;
-      @include utility.sp {
-        margin: 17px auto 0;
-      }
     }
     &__box {
       width: 380px;
@@ -27,7 +21,7 @@
       @include utility.sp {
         padding-top: 30px;
         margin: 17px auto 0;
-        width: 3.7rem;
+        width: 100%;
       }
       &:before {
         content: '';
@@ -94,5 +88,12 @@
         width: 370px;
       }
     }
+  }
+}
+
+.bottom {
+  padding-top: 150px;
+  @include utility.sp {
+    padding-top: 60px;
   }
 }

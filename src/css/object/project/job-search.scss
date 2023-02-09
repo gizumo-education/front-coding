@@ -17,6 +17,11 @@
     @include utility.sp {
       padding: 15px 24px 20px;
     }
+    &__title {
+      @include utility.sp {
+        font-size: 0.24rem;
+      }
+    }
   }
   &__text {
     margin-top: 20px;
@@ -24,7 +29,7 @@
     font-size: 20px;
     font-weight: 400;
     @include utility.sp {
-      font-size: .12rem;
+      font-size: .15rem;
       margin-top: 16px;
     }
   }
