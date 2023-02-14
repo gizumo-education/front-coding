@@ -30,7 +30,7 @@
       display: none;
     }
     @include utility.tab {
-      margin: 0 .3rem;
+      margin: 0 .1rem;
     }
     li {
       border-right:1px solid #000000;
@@ -77,6 +77,7 @@
       @include utility.tab {
         width: 1.8rem;
         line-height: .5rem;
+        margin-left: 0.1rem;
       }
     }
     &--others {
