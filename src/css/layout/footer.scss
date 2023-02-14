@@ -19,7 +19,7 @@
     padding-bottom: 25px;
     @include utility.sp {
     flex-direction: column;
-    padding: 0 .4rem 50px;
+    padding: 0 .4rem 40px;
     }
     @include utility.tab {
       padding: 0.3rem;;
@@ -27,7 +27,7 @@
     &__nav {
       padding-top: 24px;
       @include utility.tab {
-        padding: 24px .5rem 0;
+        padding-top: .24rem;
         width: 5rem;
         }
       @include utility.sp {

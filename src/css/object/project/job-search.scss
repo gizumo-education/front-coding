@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   @include utility.sp {
-    padding: 25px .1rem 0;
+    padding: 25px .5rem 0;
   }
   @include utility.tab {
     padding-top: .61rem;
@@ -18,7 +18,7 @@
     text-align: center;
     border-radius: 10px;
     @include utility.sp {
-      padding: 15px 24px 20px;
+      padding: 15px .1rem 20px;
     }
     @include utility.tab {
       padding: .3rem;
@@ -49,6 +49,7 @@
     @include utility.sp {
       flex-wrap: wrap;
       margin-top: 13px;
+      padding: 0 .2rem;
     }
     @include utility.tab {
       margin-top: .26rem;
@@ -75,7 +76,7 @@
         height: 0.6rem;
       }
       @include utility.sp {
-        margin-left: .5rem;
+        margin-left: .1rem;
         width: 1rem;
         height: .3rem;
         font-size: .11rem;

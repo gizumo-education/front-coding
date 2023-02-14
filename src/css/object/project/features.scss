@@ -3,7 +3,7 @@
 .p-features {
   padding-top: 106px;
   @include utility.tab  {
-    padding: .5rem .1rem 0;
+    padding: .5rem .18rem 0;
   }
   @include utility.sp  {
     padding: 55px .1rem 0;
@@ -16,9 +16,10 @@
   }
   &-main {
     display: flex;
-    margin-top: 53px;
+    margin: 53px auto 0;
     flex-wrap: wrap;
     gap: 40px;
+    padding: 0 auto;
     @include utility.sp {
       margin-top: 38px;
       gap: .21rem;
@@ -33,7 +34,8 @@
       border-radius: 10px;
       background-color: utility.$pale-pink;
       @include utility.tab {
-        width: 5.65rem;
+        width: 5.7rem;
+        padding: .3rem 0 .2rem;
       }
       @include utility.sp {
         width: 3.8rem;
@@ -45,6 +47,9 @@
         font-size: 24px;
         font-weight: 700;
         line-height: 24px;
+        @include utility.tab {
+          font-size: .3rem;
+        }
       }
       &--text {
         text-align: center;
@@ -59,6 +64,10 @@
         @include utility.sp {
           margin: 30px .1rem 0;
           font-size: 12px;
+        }
+        @include utility.tab {
+          font-size: .18rem;
+          margin: .15rem .4rem 0;
         }
       }
     }
