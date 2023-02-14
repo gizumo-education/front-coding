@@ -10,7 +10,7 @@
     padding: 16px 15px 15px 0;
   }
   @include utility.tab {
-    padding: .25rem 0;
+    padding: .1rem 0;
   }
   &__inner {
     display: flex;
@@ -25,13 +25,19 @@
   }
   &__nav {
     display: flex;
-    padding: 0 30px;
+    margin: 0 30px;
     @include utility.sp {
       display: none;
+    }
+    @include utility.tab {
+      margin: 0 .3rem;
     }
     li {
       border-right:1px solid #000000;
       padding: 0 20px;
+      @include utility.tab {
+        padding: 0 .1rem;
+      }
     }
     :last-child {
       border: none;
@@ -43,6 +49,11 @@
       @include utility.tab {
         font-size: .15rem;
         line-height: .2rem;
+      }
+      img {
+        @include utility.tab {
+        width: .2rem;
+        }
       }
     }
   }
@@ -58,16 +69,22 @@
       }
     }
     &--mind {
-      height: 50px;
       width: 160px;
       border-radius: 10px;
       background-color: utility.$blue;
       margin-left: 15px;
       line-height: 50px;
+      @include utility.tab {
+        width: 1.8rem;
+        line-height: .5rem;
+      }
     }
     &--others {
       @extend .l-header__buttons--mind;
       width: 140px;
+      @include utility.tab {
+        width: 1.4rem;
+      }
     }
   }
   &__hamburger-menu {
