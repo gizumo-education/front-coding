@@ -6,7 +6,7 @@
     padding-top: .5rem;
   }
   @include utility.sp  {
-    padding: 55px .1rem 0;
+    padding: .55rem .1rem 0;
   }
   &__title {
     text-align: center;
@@ -21,7 +21,7 @@
     gap: 40px;
     padding: 0 auto;
     @include utility.sp {
-      margin-top: 38px;
+      margin-top: .38rem;
       gap: .21rem;
     }
     @include utility.tab {
@@ -62,7 +62,7 @@
         display: grid;
         place-items: center;
         @include utility.sp {
-          margin: 30px .1rem 0;
+          margin: .3rem .1rem 0;
           font-size: 12px;
         }
         @include utility.tab {

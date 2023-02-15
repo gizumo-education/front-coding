@@ -12,7 +12,7 @@
     margin-top: 50px;
     display: flex;
     @include utility.sp {
-      margin-top: 13px;
+      margin-top: .13rem;
       flex-direction: column;
     }
     @include utility.tab {
@@ -21,7 +21,7 @@
     :first-child {
       margin-left: 0;
       @include utility.sp {
-        margin: 17px auto 0;
+        margin: .17rem auto 0;
       }
     }
     &__box {
@@ -32,8 +32,8 @@
       margin-left: 20px;
       border-radius: 10px;
       @include utility.sp {
-        padding-top: 30px;
-        margin: 17px auto 0;
+        padding-top: .3rem;
+        margin: .17rem auto 0;
         width: 3.8rem;
         max-width: 380px;
       }
@@ -110,7 +110,7 @@
       font-weight: 700;
       line-height: 18px;
       @include utility.sp {
-        margin: 34px auto 0;
+        margin: .34rem auto 0;
         width: 3.7rem;
       }
       @include utility.tab {

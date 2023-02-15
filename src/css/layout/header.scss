@@ -7,7 +7,7 @@
   width: 100%;
   background-color: utility.$white;
   @include utility.sp {
-    padding: 16px 15px 15px 0;
+    padding: .16rem .15rem .15rem 0;
   }
   @include utility.tab {
     padding: .1rem 0;
