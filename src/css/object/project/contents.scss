@@ -34,9 +34,12 @@
       @include utility.sp {
         padding-top: 30px;
         margin: 17px auto 0;
+        width: 3.8rem;
+        max-width: 380px;
       }
       @include utility.tab {
         margin-left: .2rem;
+        height: 2.4rem;
       }
       &:before {
         content: '';
