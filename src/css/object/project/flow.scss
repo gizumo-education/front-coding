@@ -2,45 +2,99 @@
 
 .p-flow {
   padding-top: 105px;
+  @include utility.sp {
+    padding-top: .6rem;
+  }
+  @include utility.tab {
+    padding-top: .6rem;
+  }
   &-main {
-    padding-top: 50px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
+    @include utility.sp {
+      margin-top: .34rem;
+      flex-direction: column;
+      padding: 0 .5rem;
+    }
+    @include utility.tab {
+      margin-top: .4rem;
+    }
+    > img {
+      @include utility.sp {
+        display: none;
+      }
+    }
     &__box {
       position: relative;
-      padding: 10px;
-      width: 280px;
-      height: 360px;
+      padding: 10px 10px 42px;
       border: 2.268px solid utility.$pink;
       border-radius: 10px;
-      &__img {
+      @include utility.sp {
+        padding-bottom: .22rem;
+        height: 290px;
+      }
+      @include utility.tab {
+        padding: .1rem .03rem .3rem;
+      }
+        &__img {
         position: absolute;
         top: 15%;
         left: 35%;
         display: block;
-        &--twinkle {
-          top: 13%;
-          left: 27%;
-
+        @include utility.sp {
+          width: 75px;
+          height: 75px;
+          top: 16%;
+          left: 38%;
+        }
+        @include utility.tab {
+          width: 1.1rem;
+          top: 16%;
+          left: 34%;
         }
       }
-      &--title {
+      &__arrow {
+        display: none;
+        @include utility.sp {
+          display: block;
+          margin: .09rem;
+        }
+      }
+      &__title {
         text-align: center;
         font-family: Noto Sans JP;
         font-size: 24px;
         font-weight: 700;
         line-height: 30px;
         padding: 100px 30px 0;
-        height: 160px;
         display: grid;
         place-items: center;
+        height: 160px;
+        @include utility.tab {
+          font-size: 19px;
+          padding: 1rem 0 0;
+        }
+        @include utility.sp {
+          font-size: 19px;
+          padding: 70px 0 0;
+          height: 0px;
+        }
       }
-      &--text {
+      &__text {
         font-family: Noto Sans JP;
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
-        padding: 18px 5px 0;
+        margin-top: 20px;
+        padding: 0 10px;
+        @include utility.sp {
+          margin-top: .4rem;
+        }
+        @include utility.tab {
+          padding: 0 .1rem;
+          margin-top: .1rem;
+        }
       }
     }
   }

@@ -2,6 +2,12 @@
 
 .p-features {
   padding-top: 106px;
+  @include utility.tab  {
+    padding-top: .5rem;
+  }
+  @include utility.sp  {
+    padding: .55rem .1rem 0;
+  }
   &__title {
     text-align: center;
     font-family: Noto Sans JP;
@@ -10,39 +16,61 @@
   }
   &-main {
     display: flex;
-    padding-top: 53px;
+    margin: 53px auto 0;
     flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 auto;
+    @include utility.sp {
+      margin-top: .38rem;
+      gap: .21rem;
+    }
+    @include utility.tab {
+      margin-top: 0.4rem;
+      gap: .2rem;
+    }
     &__box {
-      height: 180px;
+      padding: 40px 0 30px;
       width: 570px;
       border-radius: 10px;
       background-color: utility.$pale-pink;
+      @include utility.tab {
+        width: 49%;
+        padding: .3rem 0 .2rem;
+      }
+      @include utility.sp {
+        width: 3.8rem;
+      }
       &--title {
         color: utility.$pink;
         text-align: center;
-        padding-top: 40px;
         font-family: Noto Sans JP;
         font-size: 24px;
         font-weight: 700;
         line-height: 24px;
+        @include utility.tab {
+          font-size: .3rem;
+        }
       }
       &--text {
         text-align: center;
-        padding: 4px 45px 0;
+        margin-top: 26px;
+        padding: 0 45px 0;
         font-family: Noto Sans JP;
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
         display: grid;
         place-items: center;
-        height:94px;
+        @include utility.sp {
+          margin: .3rem .1rem 0;
+          font-size: 12px;
+        }
+        @include utility.tab {
+          font-size: .18rem;
+          margin-top: .15rem;
+          padding: 0 .3rem;
+        }
       }
-    }
-    &__box:nth-child(2n) {
-      margin-left: 40px;
-    }
-    &__box:nth-child(n+3) {
-      margin-top: 40px;
     }
   }
 }

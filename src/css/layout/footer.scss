@@ -3,12 +3,37 @@
 
 .l-footer {
   padding-top: 55px;
+  margin-top: 200px;
   background-color: utility.$pale-blue;
+  @include utility.sp {
+    padding-top: .4rem;
+    margin-top: 1rem;
+    }
+    @include utility.tab {
+      margin-top: 1rem;
+      padding-top: 0.3rem;
+    }
   &-main {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    @include utility.sp {
+    flex-direction: column;
+    padding: 0 .4rem .4rem;
+    }
+    @include utility.tab {
+      padding: 0.3rem;;
+    }
     &__nav {
       padding-top: 24px;
+      @include utility.tab {
+        padding-top: .24rem;
+        width: 5rem;
+        }
+      @include utility.sp {
+        padding: 0;
+        width: 3rem;
+        }
       a {
         color: utility.$black;
       }
@@ -17,12 +42,15 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 23px;
+        @include utility.sp {
+          margin: 0 auto;
+          }
       }
       &-box {
         display: flex;
-        padding: 27px 0;
+        margin-top: 27px;
+        justify-content: space-between;
         li {
-          width: 160px;
           display: block;
           font-family: Noto Sans JP;
           font-size: 16px;
@@ -32,10 +60,17 @@
       }
     }
     &__img {
+      @include utility.sp {
+        margin-top: 22px;
+      }
       a {
         display: flex;
         flex-direction: column;
         margin: 0;
+        @include utility.sp {
+          width: 3.2rem;
+          margin: 0 auto;
+          }
       }
       &--bottom {
         margin-top: 15px;

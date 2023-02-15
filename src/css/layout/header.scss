@@ -6,10 +6,18 @@
   z-index: 999;
   width: 100%;
   background-color: utility.$white;
+  @include utility.sp {
+    padding: .16rem .15rem .15rem 0;
+  }
+  @include utility.tab {
+    padding: .1rem 0;
+  }
   &__inner {
-    height: inherit;
     display: flex;
     justify-content: center;
+    @include utility.sp {
+      justify-content: flex-end;;
+    }
   }
   &-content {
     display: flex;
@@ -17,10 +25,19 @@
   }
   &__nav {
     display: flex;
-    padding: 0 30px;
+    margin: 0 30px;
+    @include utility.sp {
+      display: none;
+    }
+    @include utility.tab {
+      margin: 0 .1rem;
+    }
     li {
-      border-right:1px solid #000000;
+      border-right:1px solid utility.$black;
       padding: 0 20px;
+      @include utility.tab {
+        padding: 0 .1rem;
+      }
     }
     :last-child {
       border: none;
@@ -29,29 +46,61 @@
       font-size: 16px;
       color: utility.$black;
       line-height: 19px;
+      @include utility.tab {
+        font-size: .15rem;
+        line-height: .2rem;
+      }
+      img {
+        margin-right: 3px;
+        @include utility.tab {
+        width: .2rem;
+        }
+      }
     }
   }
   &__buttons {
     display: flex;
+    @include utility.sp {
+      display: none;
+    }
     li {
-      justify-content: center;
-      align-items: center;
       img {
         margin-right: 10px;
         vertical-align: middle;
+        @include utility.tab {
+          width: .2rem;
+          margin-right: 0.1rem;
+        }
       }
     }
     &--mind {
-      height: 50px;
       width: 160px;
       border-radius: 10px;
       background-color: utility.$blue;
       margin-left: 15px;
       line-height: 50px;
+      @include utility.tab {
+        width: 1.8rem;
+        line-height: .5rem;
+        margin-left: 0.1rem;
+      }
     }
     &--others {
       @extend .l-header__buttons--mind;
       width: 140px;
+      @include utility.tab {
+        width: 1.4rem;
+      }
+    }
+  }
+  &__hamburger-menu {
+    display: none;
+    @include utility.sp {
+      display: block;
+      border: none;
+      background-color: utility.$white;
+      padding: 0;
+      cursor: pointer;
     }
   }
 }

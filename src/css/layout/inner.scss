@@ -2,6 +2,10 @@
 // innerのスタイルを記述するファイル
 
 .l-inner {
-  width: 1180px;
   margin: 0 auto;
+  max-width: 1180px;
+  min-width: 360px;
+  @include utility.tab {
+    padding: 0 .3rem;
+  }
 }

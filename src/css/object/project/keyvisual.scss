@@ -2,26 +2,36 @@
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual {
   background-color: utility.$blue-gray;
-  &-img {
+&-img {
     position: relative;
     margin: 0 auto;
     display: block;
-    height: 500px;
+    @include utility.sp {
+      display: none;
+    }
     &-text {
       position: absolute;
       left: 51%;
       top: 3.5%;
+      @include utility.sp {
+        display: none;
+      }
     }
     &__title {
       position: absolute;
       top: 8%;
       left: 44%;
       color: utility.$white;
-      width: 800px;
       font-weight: 700;
       font-size: 50px;
       line-height: 65px;
       text-shadow: 0px 4px 4px utility.$shadow;
+      @include utility.tab {
+        font-size: 0.5rem;;
+      }
+      @include utility.sp {
+        display: none;
+      }
     }
     &-job-text {
       position: absolute;
@@ -38,10 +48,33 @@
       line-height: 69px;
       border: 2.3px solid utility.$green;
       border-radius: 10px;
+      @include utility.sp {
+        display: none;
+      }
+      @include utility.tab {
+        top:11.5%;
+      }
     }
     &-job-quantity {
       font-weight: 700;
       font-size: 40px;
+      @include utility.sp {
+        display: none;
+      }
+    }
+  }
+  &--sp {
+    display: none;
+    @include utility.sp {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    @include utility.tab {
+      display: none;
+      &-sp {
+        display: block;
+      }
     }
   }
 }

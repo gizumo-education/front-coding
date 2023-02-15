@@ -1,5 +1,11 @@
 @use '../object/utility/utility.scss' as utility;
 
 .l-main {
-  padding: 100px 0 200px;
+  padding-top: 100px;
+  @include utility.sp {
+    padding-top: 70px;
+  }
+  @include utility.tab {
+    padding: .7rem 0;
+  }
 }

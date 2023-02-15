@@ -13,8 +13,11 @@
     right: 0;
     background-color: utility.$black;
     opacity: 0.5;
-    width: 1600px;
+    width: 100%;
     margin: 0 auto;
+  }
+  img {
+    width: 100%;
   }
   p {
     position: absolute;
@@ -27,5 +30,14 @@
     width: 100%;
     text-align: center;
     transform: translate(-50%,-50%);
+    @include utility.sp {
+      font-size: .14rem;
+      line-height: .2rem;
+      font-weight: 400;
+    }
+    @include utility.tab {
+      font-size: .25rem;
+      line-height: 0.57rem;
+    }
   }
 }
