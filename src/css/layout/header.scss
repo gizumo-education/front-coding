@@ -33,7 +33,7 @@
       margin: 0 .1rem;
     }
     li {
-      border-right:1px solid #000000;
+      border-right:1px solid utility.$black;
       padding: 0 20px;
       @include utility.tab {
         padding: 0 .1rem;
