@@ -3,7 +3,7 @@
 .p-contents {
   padding-top: 105px;
   @include utility.sp {
-    padding-top: .6rem;
+    padding: .6rem .1rem 0;
   }
   @include utility.tab {
     padding-top: 1rem;
@@ -11,7 +11,6 @@
   &-main {
     margin-top: 50px;
     display: flex;
-    padding: 0 .1rem;
     @include utility.sp {
       margin-top: 13px;
       flex-direction: column;
@@ -21,6 +20,9 @@
     }
     :first-child {
       margin-left: 0;
+      @include utility.sp {
+        margin: 17px auto 0;
+      }
     }
     &__box {
       width: 380px;
@@ -32,11 +34,9 @@
       @include utility.sp {
         padding-top: 30px;
         margin: 17px auto 0;
-        width: 100%;
       }
       @include utility.tab {
         margin-left: .2rem;
-        height: 2.4rem;
       }
       &:before {
         content: '';
@@ -58,7 +58,7 @@
         line-height: 24px;
         top: 35%;
         left: 50%;
-        width: 240px;
+        width: 100%;
         text-align: center;
         transform: translate(-50%,-50%);
         @include utility.sp {
@@ -81,7 +81,7 @@
         transform: translate(-50%,-50%);
         top: 65%;
         left: 50%;
-        width: 290px;
+        width: 100%;
         @include utility.sp {
           font-size: 14px;
         }

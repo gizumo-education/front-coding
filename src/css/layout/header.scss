@@ -51,6 +51,7 @@
         line-height: .2rem;
       }
       img {
+        margin-right: 3px;
         @include utility.tab {
         width: .2rem;
         }
@@ -66,6 +67,10 @@
       img {
         margin-right: 10px;
         vertical-align: middle;
+        @include utility.tab {
+          width: .2rem;
+          margin-right: 0.1rem;
+        }
       }
     }
     &--mind {

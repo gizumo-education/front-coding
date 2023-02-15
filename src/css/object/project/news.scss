@@ -67,6 +67,7 @@
             margin-left: 10px;
             @include utility.tab {
               font-size: 0.2rem;
+              margin-left: 0.1rem;
             }
           }
         }
@@ -183,7 +184,9 @@
 
 .is-show {
   display: block;
-  width: 100%;
+  @include utility.sp {
+    width: 100%;
+  }
   p {
     @include utility.sp {
       font-weight: 700;

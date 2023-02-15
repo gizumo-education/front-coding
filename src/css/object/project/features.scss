@@ -3,7 +3,7 @@
 .p-features {
   padding-top: 106px;
   @include utility.tab  {
-    padding: .5rem .18rem 0;
+    padding-top: .5rem;
   }
   @include utility.sp  {
     padding: 55px .1rem 0;
@@ -34,7 +34,7 @@
       border-radius: 10px;
       background-color: utility.$pale-pink;
       @include utility.tab {
-        width: 5.7rem;
+        width: 49%;
         padding: .3rem 0 .2rem;
       }
       @include utility.sp {
@@ -53,21 +53,22 @@
       }
       &--text {
         text-align: center;
-        margin: 26px 45px 0;
+        margin-top: 26px;
+        padding: 0 45px 0;
         font-family: Noto Sans JP;
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
         display: grid;
         place-items: center;
-        height: 60px;
         @include utility.sp {
           margin: 30px .1rem 0;
           font-size: 12px;
         }
         @include utility.tab {
           font-size: .18rem;
-          margin: .15rem .4rem 0;
+          margin-top: .15rem;
+          padding: 0 .3rem;
         }
       }
     }
