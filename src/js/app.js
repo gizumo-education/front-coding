@@ -21,3 +21,7 @@ $('.slider').slick({
     }
   ]
 });
+
+$(".openbtn").click(function () {
+  $(this).toggleClass('active');
+});
