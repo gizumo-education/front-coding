@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ギズジョブは完全無料の求職者向け求人サービスです">
   <meta name="keywords" content="ギズジョブ,ギズジョブ医療事務,医療事務求人,医療事務">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="./css/style.scss">
   <title>医療事務求人を探すならギズジョブ</title>
 </head>
 <body>
@@ -23,10 +25,19 @@
           <li><a href="" class="c-button l-header__buttons--others"><img src="./img/icon/log.png" alt="">検索履歴</a></li>
         </ul>
       </div>
-      <button class="l-header__hamburger-menu"><img src="./img/icon/sp/humbarger-menu.png" alt=""></button>
+      <div class="openbtn"><span></span><span></span><span></span></div>
     </div>
   </header>
-  <main class="l-main">
+  <main class="l-main" id="top">
+    <div class="p-menu" id="js__nav">
+      <ul>
+        <li><a href="#top">トップ</a></li>
+        <li><a href="#news">新着求人</a></li>
+        <li><a href="#features">４つの特徴</a></li>
+        <li><a href="#flow">転職までの流れ</a></li>
+        <li><a href="#contents">転職お役立ちコンテンツ</a></li>
+      </ul>
+    </div>
     <div class="p-keyvisual">
       <img src="./img/picture/keyvisual.jpg" alt="" class="p-keyvisual-img">
       <img class="p-keyvisual--sp" src="./img/picture/sp/キービジュアル.jpg" alt="">
@@ -74,83 +85,157 @@
         </div>
       </div>
     </div>
-    <div class="p-news">
+    <div class="p-news" id="news">
       <div class="l-inner">
         <img class="p-news__img" src="./img/icon/new-title.png" alt="">
         <h2 class="p-news__title">新着求人</h2>
         <div class="p-news__container">
-          <a class="p-news__container-box is-show">
-            <img src="./img/picture/slide-1.jpg" alt="">
-            <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-            <div class="p-news__container-box--items">
-              <dl>
-                <dt>給与</dt>
-                <dd>月給 148,000円～</dd>
-              </dl>
-              <dl>
-                <dt>所在地</dt>
-                <dd>三重県伊勢市</dd>
-              </dl>
-              <dl>
-                <dt>最寄駅</dt>
-                <dd>伊勢市駅 徒歩15分</dd>
-              </dl>
-            </div>
-          </a>
-          <a class="p-news__container-box">
-            <img src="./img/picture/slide-2.jpg" alt="">
-            <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-            <div class="p-news__container-box--items">
-              <dl>
-                <dt>給与</dt>
-                <dd>月給 148,000円～</dd>
-              </dl>
-              <dl>
-                <dt>所在地</dt>
-                <dd>三重県伊勢市</dd>
-              </dl>
-              <dl>
-                <dt>最寄駅</dt>
-                <dd>伊勢市駅 徒歩15分</dd>
-              </dl>
-            </div>
-          </a>
-          <a class="p-news__container-box">
-            <img src="./img/picture/slide-3.jpg" alt="">
-            <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-            <div class="p-news__container-box--items">
-              <dl>
-                <dt>給与</dt>
-                <dd>月給 148,000円～</dd>
-              </dl>
-              <dl>
-                <dt>所在地</dt>
-                <dd>三重県伊勢市</dd>
-              </dl>
-              <dl>
-                <dt>最寄駅</dt>
-                <dd>伊勢市駅 徒歩15分</dd>
-              </dl>
-            </div>
-          </a>
-          <a class="p-news__container-box">
-            <img src="./img/picture/slide-4.jpg" alt="">
-            <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-            <div class="p-news__container-box--items">
-              <dl>
-                <dt>給与</dt>
-                <dd>月給 148,000円～</dd>
-              </dl>
-              <dl>
-                <dt>所在地</dt>
-                <dd>三重県伊勢市</dd>
-              </dl>
-              <dl>
-                <dt>最寄駅</dt>
-                <dd>伊勢市駅 徒歩15分</dd>
-              </dl>
-            </div>
-          </a>
+          <div class="slider">
+            <a class="p-news__container-box is-show">
+              <img src="./img/picture/slide-1.jpg" alt="">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news__container-box--items">
+                <dl>
+                  <dt>給与</dt>
+                  <dd>月給 148,000円～</dd>
+                </dl>
+                <dl>
+                  <dt>所在地</dt>
+                  <dd>三重県伊勢市</dd>
+                </dl>
+                <dl>
+                  <dt>最寄駅</dt>
+                  <dd>伊勢市駅 徒歩15分</dd>
+                </dl>
+              </div>
+            </a>
+            <a class="p-news__container-box">
+              <img src="./img/picture/slide-2.jpg" alt="">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news__container-box--items">
+                <dl>
+                  <dt>給与</dt>
+                  <dd>月給 148,000円～</dd>
+                </dl>
+                <dl>
+                  <dt>所在地</dt>
+                  <dd>三重県伊勢市</dd>
+                </dl>
+                <dl>
+                  <dt>最寄駅</dt>
+                  <dd>伊勢市駅 徒歩15分</dd>
+                </dl>
+              </div>
+            </a>
+            <a class="p-news__container-box">
+              <img src="./img/picture/slide-3.jpg" alt="">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news__container-box--items">
+                <dl>
+                  <dt>給与</dt>
+                  <dd>月給 148,000円～</dd>
+                </dl>
+                <dl>
+                  <dt>所在地</dt>
+                  <dd>三重県伊勢市</dd>
+                </dl>
+                <dl>
+                  <dt>最寄駅</dt>
+                  <dd>伊勢市駅 徒歩15分</dd>
+                </dl>
+              </div>
+            </a>
+            <a class="p-news__container-box">
+              <img src="./img/picture/slide-4.jpg" alt="">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news__container-box--items">
+                <dl>
+                  <dt>給与</dt>
+                  <dd>月給 148,000円～</dd>
+                </dl>
+                <dl>
+                  <dt>所在地</dt>
+                  <dd>三重県伊勢市</dd>
+                </dl>
+                <dl>
+                  <dt>最寄駅</dt>
+                  <dd>伊勢市駅 徒歩15分</dd>
+                </dl>
+              </div>
+            </a>
+            <a class="p-news__container-box">
+              <img src="./img/picture/slide-1.jpg" alt="">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news__container-box--items">
+                <dl>
+                  <dt>給与</dt>
+                  <dd>月給 148,000円～</dd>
+                </dl>
+                <dl>
+                  <dt>所在地</dt>
+                  <dd>三重県伊勢市</dd>
+                </dl>
+                <dl>
+                  <dt>最寄駅</dt>
+                  <dd>伊勢市駅 徒歩15分</dd>
+                </dl>
+              </div>
+            </a>
+            <a class="p-news__container-box">
+              <img src="./img/picture/slide-2.jpg" alt="">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news__container-box--items">
+                <dl>
+                  <dt>給与</dt>
+                  <dd>月給 148,000円～</dd>
+                </dl>
+                <dl>
+                  <dt>所在地</dt>
+                  <dd>三重県伊勢市</dd>
+                </dl>
+                <dl>
+                  <dt>最寄駅</dt>
+                  <dd>伊勢市駅 徒歩15分</dd>
+                </dl>
+              </div>
+            </a>
+            <a class="p-news__container-box">
+              <img src="./img/picture/slide-3.jpg" alt="">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news__container-box--items">
+                <dl>
+                  <dt>給与</dt>
+                  <dd>月給 148,000円～</dd>
+                </dl>
+                <dl>
+                  <dt>所在地</dt>
+                  <dd>三重県伊勢市</dd>
+                </dl>
+                <dl>
+                  <dt>最寄駅</dt>
+                  <dd>伊勢市駅 徒歩15分</dd>
+                </dl>
+              </div>
+            </a>
+            <a class="p-news__container-box">
+              <img src="./img/picture/slide-4.jpg" alt="">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news__container-box--items">
+                <dl>
+                  <dt>給与</dt>
+                  <dd>月給 148,000円～</dd>
+                </dl>
+                <dl>
+                  <dt>所在地</dt>
+                  <dd>三重県伊勢市</dd>
+                </dl>
+                <dl>
+                  <dt>最寄駅</dt>
+                  <dd>伊勢市駅 徒歩15分</dd>
+                </dl>
+              </div>
+            </a>
+          </div>
           <button class="p-news__container__left"></button>
           <button class="p-news__container__right"></button>
         </div>
@@ -163,7 +248,7 @@
       <img src="./img/picture/center-img.jpg" alt="">
       <p>ギズジョブなら理想の職場がきっと見つかる<br>ギズジョブは完全無の求職者向け求人サービスです。</p>
     </div>
-    <div class="p-features">
+    <div class="p-features" id="features">
       <div class="l-inner">
         <h2>ギズジョブの4つの特徴</h2>
         <div class="p-features-main">
@@ -186,7 +271,7 @@
         </div>
       </div>
     </div>
-    <div class="p-flow">
+    <div class="p-flow" id="flow">
       <div class="l-inner">
         <h2>転職までの流れ</h2>
         <div class="p-flow-main">
@@ -223,7 +308,7 @@
         </div>
       </div>
     </div>
-    <div class="p-contents">
+    <div class="p-contents" id="contents">
       <div class="l-inner">
         <h2>転職お役立ちコンテンツ</h2>
         <div class="p-contents-main">
