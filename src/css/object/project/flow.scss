@@ -1,0 +1,18 @@
+@use '../../object/utility/utility.scss' as util;
+@use '../../foundation/mixins.scss' as mixin;
+
+// 転職までの流れパートのスタイル
+
+.p-flow {
+  width: 1180px;
+  margin: 0 auto;
+  @include mixin.clearfix;
+
+  &__title {
+    font-size: 25px;
+    font-weight: util.$bold;
+    margin-top: 105px;
+    text-align: center;
+  }
+  
+}

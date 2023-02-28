@@ -1,0 +1,83 @@
+@use '../../object/utility/utility.scss' as util;
+//　検索フォームのスタイル
+
+
+.p-search {
+  width: 1190px;
+  padding: 40px;
+  background-color: util.$search-bg;
+  margin: 60px auto;
+
+  &__title {
+    text-align: center;
+    font-weight: util.$bold;
+    font-size: 25px;
+  }
+
+  &__text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: util.$regular;
+  }
+
+  &__form {
+    text-align: center;
+    margin-top: 25px;
+
+    &__box {
+      display: inline-block;
+      margin-left: 15px;
+      height: 60px;
+      width: 200px;
+      position: relative;
+      box-sizing: border-box;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        top: 25px;
+        right: 15px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid util.$border-pink;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+    }
+
+    &__item {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: util.$regular;
+      padding: 15px;
+      height: 100%;
+      width: 100%;
+      border-color: util.$border-pink;
+      border-radius: 10px;
+      appearance: none;
+
+
+      &:nth-child(4) {
+        width: 300px;
+        margin-left: 15px;
+      }
+    }
+
+    &__button {
+      display: inline-block;
+      margin-left: 15px;
+      height: 60px;
+      box-sizing: border-box;
+      font-weight: util.$regular;
+      appearance: none;
+
+    }
+  }
+
+}

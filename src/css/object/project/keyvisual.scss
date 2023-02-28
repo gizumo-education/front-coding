@@ -1,2 +1,7 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as util;
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual {
+  background-color: util.$key-bg;
+  text-align: center;
+}

@@ -1,0 +1,58 @@
+@use '../../object/utility/utility.scss' as util;
+@use '../../foundation/mixins.scss' as mixin;
+// 特徴紹介のスタイル
+
+.p-feature {
+  width: 1180px;
+  margin: 0 auto;
+  @include mixin.clearfix;
+
+  &__title {
+    font-size: 25px;
+    font-weight: util.$bold;
+    margin-top: 106px;
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: 53px;
+    display: block;
+
+    &__item {
+      width: 570px;
+      height: 180px;
+      background-color: util.$feature-bg;
+      border-radius: 10px;
+      float: left;
+      margin-top: 40px;
+      margin-left: 40px;
+      padding: 40px;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+
+      &:nth-child(-n+2) {
+        margin-top: 0;
+      }
+
+      &:nth-child(2n+1) {
+        margin-left: 0;
+      }
+
+
+      &__title {
+        font-size: 24px;
+        font-weight: util.$bold;
+        color: util.$pink;
+        text-align: center;
+      }
+
+      &__text {
+        font-size: 14px;
+        font-weight: util.$regular;
+        line-height: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

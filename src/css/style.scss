@@ -3,6 +3,8 @@
 /*foundation---------------------------------*/
 @use './foundation/_reset.scss';
 @use './foundation/_base.scss';
+@use './foundation/_variables.scss';
+@use './foundation/_mixins.scss';
 /*-------------------------------------------*/
 
 /*layout---------------------------------*/
@@ -13,8 +15,19 @@
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/list.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/search.scss';
+@use './object/project/new.scss';
+@use './object/project/middle.scss';
+@use './object/project/feature.scss';
+@use './object/project/flow.scss';
+@use './object/project/column.scss';
+/*-------------------------------------------*/
+
+/*utility---------------------------------*/
+@use './object/utility/utility.scss';
 /*-------------------------------------------*/
