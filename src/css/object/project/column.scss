@@ -61,5 +61,10 @@
   &__link {
     margin-top: 80px;
     padding: 21px 93px;
+
+    &:hover {
+      opacity: .8;
+      transition: .3s;
+    }
   }
 }

@@ -15,13 +15,11 @@
     color: util.$white;
     text-align: center;
     position: absolute;
-    z-index: 1000;
   }
 
   &__content {
-    background-color: util.$black;
+    background-color: util.$shade;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
   }
 }

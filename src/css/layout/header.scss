@@ -5,6 +5,7 @@
 .l-header {
   width: 100%;
   position: fixed;
+  z-index: 1000;
   top: 0;
   background-color: util.$white;
 }
@@ -23,6 +24,11 @@
       padding: 0 15px;
       border-left: solid 1px util.$black;
       font-size: 15px;
+
+      &:hover {
+        opacity: .8;
+        transition: .3s;
+      }
 
       &:first-child {
         border: none;
