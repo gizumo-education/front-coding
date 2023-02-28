@@ -5,16 +5,29 @@
 @use './foundation/_base.scss';
 /*-------------------------------------------*/
 
-/*layout---------------------------------*/
+/*layout-------------------------------------*/
 @use './layout/footer.scss';
 @use './layout/header.scss';
 @use './layout/inner.scss';
+@use './layout/main.scss';
 /*-------------------------------------------*/
 
-/*component---------------------------------*/
+/*component----------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/textlink.scss';
+@use './object/component/link.scss';
 /*-------------------------------------------*/
 
-/*project---------------------------------*/
+/*project------------------------------------*/
+@use './object/project/contents.scss';
+@use './object/project/features.scss';
+@use './object/project/flow.scss';
+@use './object/project/information.scss';
 @use './object/project/keyvisual.scss';
+@use './object/project/search.scss';
+@use './object/project/message.scss';
+/*-------------------------------------------*/
+
+/*utility------------------------------------*/
+@use './object/utility/clearfix.scss';
 /*-------------------------------------------*/

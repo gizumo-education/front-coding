@@ -1,2 +1,60 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as utility;
 // footerのスタイルを記述するファイル
+
+.l-footer {
+  height: 265px;
+  background-color: utility.$paleBlue;
+  &__navi {
+    float: left;
+    padding-top: 79px;
+  }
+  &__navi-left {
+    float: left;
+    margin-bottom: 28px;
+  }
+  &__navi-right {
+    float: left;
+    margin-left: 39px;
+  }
+  &__top-link {
+    display: block;
+    margin-bottom: 27px;
+  }
+  &__guide-link {
+    display: block;
+    margin-bottom: 16px;
+  }
+  &__contact-link {
+    display: block;
+    margin-bottom: 16px;
+  }
+  &__faq-link {
+    display: block;
+  }
+  &__policy-link {
+    display: block;
+    margin-bottom: 16px;
+  }
+  &__map-link {
+    display: block;
+  }
+  &__banner {
+    float: right;
+    padding-top: 55px;
+  }
+  &__banner-mother {
+    display: block;
+    margin-bottom: 15px;
+  }
+  &__banner-nursing {
+    display: block;
+  }
+
+  &__copyright {
+    height: 35px;
+    line-height: 35px;
+    background-color: utility.$lightGray;
+    text-align: center;
+    font-size: 14px;
+  }
+}

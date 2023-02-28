@@ -1,2 +1,40 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as utility;
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual {
+    margin: 100px 0 61px 0;
+    background-color: utility.$dustyBlue;
+  &__image {
+    margin: 0 auto;
+    width: 1262px;
+    height: 500px;
+    background-image: url(../img/picture/keyvisual.jpg);
+    background-size: cover;
+    text-align: center;
+  }
+  &__message {
+    float: right;
+    padding: 56px 30px 0 0;
+  }
+  &__rank {
+    padding-bottom: 47.5px;
+  }
+  &__copy {
+    padding-bottom: 55px;
+  }
+  &__publish {
+    display: inline-block;
+    width: 391px;
+    height: 69px;
+    border: 3px solid utility.$green;
+    border-radius: 10px;
+    color: utility.$green;
+    background-color: utility.$white;
+    line-height: 69px;
+    font-size: 20px;
+  }
+  &__font-emphasis {
+    font-size: 40px;
+    font-weight: bold;
+  }
+}

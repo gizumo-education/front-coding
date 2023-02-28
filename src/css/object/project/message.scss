@@ -1,0 +1,19 @@
+@use '../../object/utility/utility.scss' as utility;
+
+.p-message {
+  margin-bottom: 106px;
+  height: 300px;
+  background-image: 
+  url(../img/picture/copy-filter.png), 
+  url(../img/picture/copy-image.jpg);
+  background-size: cover;
+  text-align: center;
+  color: utility.$white;
+  font-size: 25px;
+  line-height: 36px;
+  font-weight: 700;
+  &__text {
+    margin-bottom: 21px;
+    padding-top: 104px;
+  }
+}
