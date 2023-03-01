@@ -1,17 +1,28 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/mixins' as mixin;
 
 .p-features {
   margin-top: 106px;
   text-align: center;
+  @include mixin.tab {
+    margin-top: 1.06rem;
+  }
   &__title {
     font-size: 25px;
     font-weight: 700;
+    @include mixin.tab {
+      font-size: 0.25rem;
+    }
   }
   &__features {
     margin-top: 53px;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    @include mixin.tab {
+      margin-top: 0.53rem;
+      gap: 0.4rem;
+    }
   }
   &__feature {
     padding-top: 40px;
@@ -19,30 +30,59 @@
     border-radius: 10px;
     width: calc(( 100% - 40px )/ 2);
     background-color: utility.$palePink;
+    @include mixin.tab {
+      padding-top: 0.4rem;
+      padding-bottom: 0.3rem;
+      border-radius: 0.1rem;
+      width: calc(( 100% - 0.4rem )/ 2);
+    }
   }
   &__feature-title {
     color: utility.$deepPink;
     font-size: 24px;
     font-weight: 700;
+    @include mixin.tab {
+      font-size: 0.24rem;
+    }
   }
   &__application-text {
     margin-top: 36px;
     font-size: 14px;
     line-height: 20px;
+    @include mixin.tab{
+      margin-top: 0,36rem;
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+    }
   }
   &__safe-text {
     margin-top: 36px;
     font-size: 14px;
     line-height: 20px;
+    @include mixin.tab {
+      margin-top: 0.36rem;
+      font-size: 0.14rem;
+      line-height: 0.2rem;   
+    }
   }
   &__understand-text {
     margin-top: 36px;
     font-size: 14px;
     line-height: 20px;
+    @include mixin.tab {
+      margin-top: 0.36rem;
+      font-size: 0.14rem;
+      line-height: 0.2rem;   
+    }
   }
   &__free-text {
     margin-top: 26px;
     font-size: 14px;
     line-height: 20px;
+  }
+  @include mixin.tab {
+    margin-top: 0.26rem;
+    font-size: 0.14rem;
+    line-height: 0.2rem;
   }
 }
