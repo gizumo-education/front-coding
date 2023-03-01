@@ -1,5 +1,5 @@
 @use '../../object/utility/utility.scss';
-
+@use '../../foundation/mixins' as mixin;
 
 .p-information {
   &__area {
@@ -7,24 +7,45 @@
     padding: 64px 0 67px 0;
     background-color: utility.$paleBlue;
     font-size: 16px;
+    @include mixin.tab {
+      margin-top: 0.59rem;
+      padding: 0.64rem 0 0.67rem 0;
+      font-size: 0.16rem;
+    }
   }
   &__title {
     font-size: 25px;
+    @include mixin.tab {
+      font-size: 0.25rem;
+    }
   }
   &__lists {
     margin-top: 25px;
     display: flex;
     gap: 20px;
+    @include mixin.tab {
+      margin-top: 0.25rem;
+      gap: 0.2rem;
+    }
   }
   &__image {
     width: 280px;
     height: 200px;
     border-radius: 10px;
+    @include mixin.tab {
+      width: 2.8rem;
+      height: 2rem;
+      border-radius: 0.1rem;
+    }
   }
   &__article-title {
     margin-top: 8px;
     line-height: 22px;
     color: utility.$black;
+    @include mixin.tab {
+      margin-top: 0.08rem;
+      line-height: 0.22rem;
+    }
   }
   &__table {
     margin-top: 1.9px;
@@ -34,20 +55,36 @@
     line-height: 21px;
     font-size: 14px;
     color: utility.$black;
+    @include mixin.tab {
+      margin-top: 0.019rem;
+      border-spacing: 0 0.05rem;
+      line-height: 0.21rem;
+      font-size: 0.14rem;
+    }
 
   }
   &__table-heading {
     width: 60px;
     text-align: center;
     background-color: utility.$pastelPink;
+    @include mixin.tab {
+      width: 0.6rem;
+    }
   }
   &__table-content {
     padding-left: 10px;
+    @include mixin.tab {
+      padding-left: 0.1rem;
+    }
   }
   &__button {
     display: block;
     margin: 61px auto 0px;
     width: 360px;
     text-align: center;
+    @include mixin.tab {
+      margin: 0.61rem auto 0;
+      width: 3.6rem;
+    }
   }
 }
