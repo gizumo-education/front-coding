@@ -15,31 +15,42 @@
   width: 90%;
   margin: 0 auto;
   padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
-  &__list {
-    text-align: right;
 
+  &-a__list {
     &__item {
       display: inline;
       padding: 0 15px;
       border-left: solid 1px util.$black;
-      font-size: 15px;
+      font-size: 16px;
+      transition: .3s;
+
+      & a {
+        color: util.$black;
+      }
 
       &:hover {
         opacity: .8;
-        transition: .3s;
       }
 
       &:first-child {
         border: none;
       }
+    }
+  }
 
-      &:nth-child(n+4) {
-        border: none;
-      }
+  &-b__list {
+    &__item {
+      display: inline;
+      font-size: 14px;
+      line-height: 20px;
+      transition: .3s;
 
-      &:nth-child(-n+3) a {
-        color: util.$black;
+      &:hover {
+        opacity: .8;
       }
     }
   }

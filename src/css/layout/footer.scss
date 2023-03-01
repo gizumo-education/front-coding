@@ -30,10 +30,10 @@
       &__item {
         line-height: 36px;
         color: util.$black;
+        transition: .3s;
 
         &:hover {
           opacity: .8;
-          transition: .3s;
         }
       }
     }
@@ -41,14 +41,18 @@
 
   &__img {
 
-
-    &__item {
+    &__link {
+      display: block;
       width: 320px;
       margin-top: 15px;
-      display: block;
+      transition: .3s;
 
       &:first-child {
         margin-top: 0;
+      }
+
+      &:hover {
+        opacity: .8;
       }
     }
   }
