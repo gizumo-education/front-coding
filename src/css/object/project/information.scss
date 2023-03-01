@@ -3,6 +3,7 @@
 
 .p-information {
   &__area {
+    margin-top: 59px;
     padding: 64px 0 67px 0;
     background-color: utility.$paleBlue;
     font-size: 16px;
@@ -23,11 +24,12 @@
     border-radius: 10px;
   }
   &__article-title {
+    color: utility.$black;
     margin-bottom: 1.9px;
     line-height: 22px;
   }
   &__table {
-    margin-bottom: 61px;
+    color: utility.$black;
     border-collapse: separate;
     border-spacing: 0 5px;
     border-top: none;
@@ -44,7 +46,7 @@
   }
   &__button {
     display: block;
-    margin: 0 auto;
+    margin: 61px auto 0px;
     width: 360px;
     text-align: center;
   }

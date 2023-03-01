@@ -2,31 +2,31 @@
 
 .p-search {
   &__top{
-    margin-bottom: 59px;
+    margin-top: 61px;
     padding: 40px 0;
     border-radius: 10px;
-    height: 240px;
     background-color: utility.$pastelBlue;
     text-align: center;
   }
   &__bottom {
-    margin-bottom: 150px;
+    margin-top: 150px;
     padding: 40px 0;
     border-radius: 10px;
     background-color: utility.$pastelBlue;
-    height: 240px;
     text-align: center;
   }
   &__title {
     font-size: 25px;
     font-weight: 700;
-    padding-bottom: 20px;
   }
   &__sentense {
+    margin-top: 20px;
     font-size: 20px;
-    padding-bottom: 26px;
   }
-  &__select-container{
+  &__form {
+    margin-top: 26px;
+  }
+  &__first-container{
     position: relative;
     display: inline-block;
     &::after {
@@ -34,7 +34,24 @@
       content: '';
       position: absolute;
       top: 25px;
-      right: 25px;
+      right: 15px;
+      width: 10px;
+      pointer-events: none;
+      border-top: 10px solid utility.$vividPink;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+    }
+  }
+  &__container{
+    margin-left: 16px;
+    position: relative;
+    display: inline-block;
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 25px;
+      right: 15px;
       width: 10px;
       pointer-events: none;
       border-top: 10px solid utility.$vividPink;
@@ -44,11 +61,9 @@
   }
   &__select {
     position: relative;
-    margin-right: 16px;
     padding: 16.5px 14.5px;
     appearance: none; 
     width: 200px;
-    height: 60px;
     background-color: utility.$white;
     border: 1px solid utility.$vividPink;
     font-size: 18px;
@@ -62,11 +77,10 @@
     }
   }
   &__text {
-    margin-right: 16px;
+    margin-left: 16px;
     padding: 16.5px 14.5px;
     position: relative;
     width: 300px;
-    height: 60px;
     border: 1px solid utility.$vividPink;
     border-radius: 10px;
     font-size: 18px;
@@ -75,12 +89,15 @@
       border: 3px solid utility.$vividPink;
     }
   }
+  &__link {
+    margin-left: 16px;
+    cursor: pointer;
+  }
   &__button {
     padding: 0 20px 0 14.2px;
   }
   &__icon-search {
     margin-right: 4px;
-    height: 30px;
     vertical-align: middle;
   }
 }

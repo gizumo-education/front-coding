@@ -2,7 +2,6 @@
 // ページ上部のキービジュアルに関するスタイル
 
 .p-keyvisual {
-    margin: 100px 0 61px 0;
     background-color: utility.$dustyBlue;
   &__image {
     margin: 0 auto;
@@ -13,17 +12,17 @@
     text-align: center;
   }
   &__message {
-    float: right;
-    padding: 56px 30px 0 0;
+    float: left;
+    margin: 56px 0 0 432px;
   }
   &__rank {
-    padding-bottom: 47.5px;
   }
   &__copy {
-    padding-bottom: 55px;
+    margin-top: 47.5px;
   }
   &__publish {
     display: inline-block;
+    margin-top: 55px;
     width: 391px;
     height: 69px;
     border: 3px solid utility.$green;

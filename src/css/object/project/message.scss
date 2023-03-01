@@ -1,8 +1,7 @@
 @use '../../object/utility/utility.scss';
 
 .p-message {
-  margin-bottom: 106px;
-  height: 300px;
+  padding: 104px 0 106px 0;
   background-image: 
   url(../img/picture/copy-filter.png), 
   url(../img/picture/copy-image.jpg);
@@ -14,6 +13,5 @@
   font-weight: 700;
   &__text {
     margin-bottom: 21px;
-    padding-top: 104px;
   }
 }

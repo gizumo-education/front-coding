@@ -1,8 +1,8 @@
 @use '../../object/utility/utility.scss';
 
 .p-flow {
-  margin-bottom: 106.1px;
-  &__title {
+  margin-top: 105px;
+    &__title {
     margin-bottom: 51.1px;
     text-align: center;
     font-size: 25px;
@@ -13,10 +13,10 @@
     gap: 20px;
     position: relative;
   }
-  &__step {
+  &__step1 {
+    padding: 58.5px 0 40.8px 0;
     position: relative;
     width: calc((100% - 60px) / 4);
-    height: 357.7px;
     border: 3px solid utility.$deepPink;
     border-radius: 10px;
     &::after{
@@ -31,13 +31,55 @@
       border-right: 20px solid transparent;
       border-bottom: 20px solid transparent
     }
-    &:last-child::after{
+  }
+  &__step2 {
+    padding: 68.8px 0 40.8px 0;
+    position: relative;
+    width: calc((100% - 60px) / 4);
+    border: 3px solid utility.$deepPink;
+    border-radius: 10px;
+    &::after{
       content: "";
-      display: none;
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 277px;
+      border-top: 20px solid transparent;
+      border-left: 20px solid utility.$deepPink;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid transparent
     }
   }
+  &__step3 {
+    padding: 58.8px 0 40.8px 0;
+    position: relative;
+    width: calc((100% - 60px) / 4);
+    border: 3px solid utility.$deepPink;
+    border-radius: 10px;
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 277px;
+      border-top: 20px solid transparent;
+      border-left: 20px solid utility.$deepPink;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid transparent
+    }
+  }
+  &__step4 {
+    padding: 53.7px 0 40.8px 0;
+    position: relative;
+    width: calc((100% - 60px) / 4);
+    border: 3px solid utility.$deepPink;
+    border-radius: 10px;
+  }
+
   &__step-circle {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -49,75 +91,71 @@
     border-radius: 50%;
   }
   &__step1-image {
-    margin: 0 78.8px 20px 96.5px;
-    padding-top: 58.8px;
+    margin: 0 78.8px 0 96.5px;
   }
   &__step2-image {
-    margin: 0 103.8px 30px 93.8px;
-    padding-top: 68.8px;
+    margin: 0 103.8px 0 93.8px;
   }
   &__step3-image {
-    margin: 0 82.2px 33px 88.7px;
-    padding-top: 58.8px;
+    margin: 0 82.2px 0 88.7px;
   }
   &__step4-image {
-    margin: 0 91.3px 28px 78.4px;
-    padding-top: 53.7px;
+    margin: 0 91.3px 0 78.4px;
   }
   &__step1-title {
-    margin-bottom: 18px;
+    margin-top: 20px;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
     text-align: center;
   }
   &__step2-title {
-    margin-bottom: 18px;
+    margin-top: 30px;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
     text-align: center;
   }
   &__step3-title {
-    margin-bottom: 30px;
+    margin-top: 33px;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
     text-align: center;
   }
   &__step4-title {
-    margin-bottom: 30px;
+    margin-top: 28px;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
     text-align: center;
   }
   &__step1-text {
+    margin-top: 18px;
     margin-left: 20.8px;
     width: 237px;
-    height: 60px;
     font-size: 14px;
     line-height: 20px;
   }
   &__step2-text {
+    margin-top: 18px;
     margin-left: 18.8px;
     width: 237px;
-    height: 60px;
     font-size: 14px;
     line-height: 20px;
   }
   &__step3-text {
+    margin-top: 30px;
     margin-left: 18.8px;
     width: 237px;
-    height: 60px;
     font-size: 14px;
     line-height: 20px;
 
   }
   &__step4-text {
+    margin-top: 30px;
     margin-left: 20px;
     width: 237px;
-    height: 60px;
     font-size: 14px;
     line-height: 20px;
   }

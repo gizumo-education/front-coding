@@ -10,4 +10,9 @@
   font-weight: 700;
   height: 60px;
   line-height: 60px;
+  opacity: 1;
+  transition: .3s;
+  &:hover {
+    opacity: 0.8;
+  }
 }

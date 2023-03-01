@@ -2,15 +2,17 @@
 // footerのスタイルを記述するファイル
 
 .l-footer {
-  height: 265px;
-  background-color: utility.$paleBlue;
+  margin-top: 150px;
+  &__area {
+    height: 265px;
+    background-color: utility.$paleBlue;
+  }
   &__navi {
     float: left;
-    padding-top: 79px;
+    margin-top: 79px;
   }
   &__navi-left {
     float: left;
-    margin-bottom: 28px;
   }
   &__navi-right {
     float: left;
@@ -18,40 +20,40 @@
   }
   &__top-link {
     display: block;
-    margin-bottom: 27px;
   }
   &__guide-link {
     display: block;
-    margin-bottom: 16px;
+    margin-top: 27px;
   }
   &__contact-link {
     display: block;
-    margin-bottom: 16px;
+    margin-top: 16px;
   }
   &__faq-link {
+    margin-top: 16px;
     display: block;
   }
   &__policy-link {
     display: block;
-    margin-bottom: 16px;
+    margin-top: 27px;
   }
   &__map-link {
+    margin-top: 16px;
     display: block;
   }
   &__banner {
     float: right;
-    padding-top: 55px;
+    margin-top: 55px;
   }
   &__banner-mother {
     display: block;
-    margin-bottom: 15px;
   }
   &__banner-nursing {
+    margin-top: 15px;
     display: block;
   }
 
   &__copyright {
-    height: 35px;
     line-height: 35px;
     background-color: utility.$lightGray;
     text-align: center;

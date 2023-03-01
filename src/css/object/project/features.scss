@@ -1,8 +1,8 @@
 @use '../../object/utility/utility.scss';
 
 .p-features {
+  margin-top: 106px;
   text-align: center;
-  margin-bottom: 105px;
   &__title {
     margin-bottom: 53px;
     font-size: 25px;
@@ -15,36 +15,33 @@
   }
   &__feature {
     padding-top: 40px;
-    height: 180px; 
+    padding-bottom: 30px;
     border-radius: 10px;
     width: calc(( 100% - 40px )/ 2);
     background-color: utility.$palePink;
   }
-  &__application-title {
+  &__feature-title {
     color: utility.$deepPink;
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 36px;
   }
-  &__safe-title {
-    color: utility.$deepPink;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 36px;
+  &__application-text {
+    margin-top: 36px;
+    font-size: 14px;
+    line-height: 20px;
   }
-  &__understand-title {
-    color: utility.$deepPink;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 36px;
+  &__safe-text {
+    margin-top: 36px;
+    font-size: 14px;
+    line-height: 20px;
   }
-  &__free-title {
-    color: utility.$deepPink;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 26px;
+  &__understand-text {
+    margin-top: 36px;
+    font-size: 14px;
+    line-height: 20px;
   }
-  &__text {
+  &__free-text {
+    margin-top: 26px;
     font-size: 14px;
     line-height: 20px;
   }
