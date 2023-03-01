@@ -3,12 +3,12 @@
 .p-flow {
   margin-top: 105px;
     &__title {
-    margin-bottom: 51.1px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-  }
-  &__steps {
+      text-align: center;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    &__steps {
+    margin-top: 51.1px;
     display: flex;
     gap: 20px;
     position: relative;

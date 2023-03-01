@@ -18,17 +18,17 @@
     gap: 20px;
   }
   &__image {
-    margin-bottom: 8px;
     width: 280px;
     height: 200px;
     border-radius: 10px;
   }
   &__article-title {
-    margin-bottom: 1.9px;
+    margin-top: 8px;
     line-height: 22px;
     color: utility.$black;
   }
   &__table {
+    margin-top: 1.9px;
     border-collapse: separate;
     border-spacing: 0 5px;
     border-top: none;
