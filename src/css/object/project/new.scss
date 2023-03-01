@@ -7,15 +7,15 @@
 
 
 .p-new {
-  width: 1180px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 65px 0;
+  margin-top: 60px;
+  background-color: util.$new-bg;
+  @include mixin.clearfix;
 
   &__wrapper {
-    width: 100%;
-    padding: 65px 0;
-    background-color: util.$new-bg;
-    @include mixin.clearfix;
-
+    width: 1180px;
+    margin: 0 auto;
   }
 
   &__title {
@@ -33,10 +33,5 @@
     display: block;
     margin: 0 auto;
     margin-top: 60px;
-
-    &:hover {
-      opacity: .8;
-      transition: .3s;
-    }
   }
 }

@@ -3,11 +3,11 @@
 
 
 .p-search {
-  width: 1190px;
+  width: 1180px;
   padding: 40px;
   background-color: util.$search-bg;
   border-radius: 10px;
-  margin: 60px auto;
+  margin: 60px auto 0;
 
   &__title {
     text-align: center;
@@ -23,12 +23,12 @@
   }
 
   &__form {
-    text-align: center;
     margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
 
     &__box {
-      display: inline-block;
-      margin-left: 15px;
+      display: block;
       height: 60px;
       width: 200px;
       position: relative;
@@ -45,15 +45,9 @@
         border-right: 10px solid transparent;
         border-top: 10px solid util.$border-pink;
       }
-
-      &:first-child {
-        margin-left: 0;
-      }
-
     }
 
     &__item {
-      display: inline-block;
       font-size: 18px;
       line-height: 26px;
       font-weight: util.$regular;
@@ -62,27 +56,25 @@
       width: 100%;
       border: 1px solid util.$border-pink;
       border-radius: 10px;
+      box-sizing: border-box;
       appearance: none;
 
 
       &:nth-child(4) {
         width: 300px;
-        margin-left: 15px;
+        // margin-left: 15px;
         height: 60px;
       }
     }
 
     &__button {
-      display: inline-block;
-      margin-left: 15px;
+      display: block;
       height: 60px;
       box-sizing: border-box;
       font-weight: util.$regular;
       appearance: none;
-      transition: .3s;
 
       &:hover {
-        opacity: .8;
         cursor: pointer;
       }
 

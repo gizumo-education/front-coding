@@ -18,5 +18,11 @@
   font-weight: util.$bold;
   background-color: util.$pink;
   border-radius: 50px;
+  transition: .3s;
+
+  &:hover {
+    opacity: .8;
+  }
+
 }
 
