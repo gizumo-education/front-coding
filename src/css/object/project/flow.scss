@@ -1,0 +1,162 @@
+@use '../../object/utility/utility.scss';
+
+.p-flow {
+  margin-top: 105px;
+    &__title {
+      text-align: center;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    &__steps {
+    margin-top: 51.1px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+  &__step1 {
+    padding: 58.5px 0 40.8px 0;
+    position: relative;
+    width: calc((100% - 60px) / 4);
+    border: 3px solid utility.$deepPink;
+    border-radius: 10px;
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 277px;
+      border-top: 20px solid transparent;
+      border-left: 20px solid utility.$deepPink;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid transparent
+    }
+  }
+  &__step2 {
+    padding: 68.8px 0 40.8px 0;
+    position: relative;
+    width: calc((100% - 60px) / 4);
+    border: 3px solid utility.$deepPink;
+    border-radius: 10px;
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 277px;
+      border-top: 20px solid transparent;
+      border-left: 20px solid utility.$deepPink;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid transparent
+    }
+  }
+  &__step3 {
+    padding: 58.8px 0 40.8px 0;
+    position: relative;
+    width: calc((100% - 60px) / 4);
+    border: 3px solid utility.$deepPink;
+    border-radius: 10px;
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 277px;
+      border-top: 20px solid transparent;
+      border-left: 20px solid utility.$deepPink;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid transparent
+    }
+  }
+  &__step4 {
+    padding: 53.7px 0 40.8px 0;
+    position: relative;
+    width: calc((100% - 60px) / 4);
+    border: 3px solid utility.$deepPink;
+    border-radius: 10px;
+  }
+
+  &__step-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8.8px;
+    left: 8.8px;
+    width: 60px;
+    height: 60px;
+    background-color: utility.$deepPink;
+    border-radius: 50%;
+  }
+  &__step1-image {
+    margin: 0 78.8px 0 96.5px;
+  }
+  &__step2-image {
+    margin: 0 103.8px 0 93.8px;
+  }
+  &__step3-image {
+    margin: 0 82.2px 0 88.7px;
+  }
+  &__step4-image {
+    margin: 0 91.3px 0 78.4px;
+  }
+  &__step1-title {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__step2-title {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__step3-title {
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__step4-title {
+    margin-top: 28px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__step1-text {
+    margin-top: 18px;
+    margin-left: 20.8px;
+    width: 237px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &__step2-text {
+    margin-top: 18px;
+    margin-left: 18.8px;
+    width: 237px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &__step3-text {
+    margin-top: 30px;
+    margin-left: 18.8px;
+    width: 237px;
+    font-size: 14px;
+    line-height: 20px;
+
+  }
+  &__step4-text {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 237px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

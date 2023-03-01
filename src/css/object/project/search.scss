@@ -1,0 +1,104 @@
+@use '../../object/utility/utility.scss';
+
+.p-search {
+  &__top{
+    margin-top: 61px;
+    padding: 40px 0;
+    border-radius: 10px;
+    background-color: utility.$pastelBlue;
+    text-align: center;
+  }
+  &__bottom {
+    margin-top: 150px;
+    padding: 40px 0;
+    border-radius: 10px;
+    background-color: utility.$pastelBlue;
+    text-align: center;
+  }
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  &__sentense {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  &__form {
+    margin-top: 26px;
+  }
+  &__first-container{
+    position: relative;
+    display: inline-block;
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 25px;
+      right: 15px;
+      width: 10px;
+      pointer-events: none;
+      border-top: 10px solid utility.$vividPink;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+    }
+  }
+  &__container{
+    margin-left: 16px;
+    position: relative;
+    display: inline-block;
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 25px;
+      right: 15px;
+      width: 10px;
+      pointer-events: none;
+      border-top: 10px solid utility.$vividPink;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+    }
+  }
+  &__select {
+    position: relative;
+    padding: 16.5px 14.5px;
+    appearance: none; 
+    width: 200px;
+    background-color: utility.$white;
+    border: 1px solid utility.$vividPink;
+    font-size: 18px;
+    border-radius: 10px;
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+      border: 3px solid utility.$vividPink;
+    }
+  }
+  &__text {
+    margin-left: 16px;
+    padding: 16.5px 14.5px;
+    position: relative;
+    width: 300px;
+    border: 1px solid utility.$vividPink;
+    border-radius: 10px;
+    font-size: 18px;
+    &:focus {
+      outline: none;
+      border: 3px solid utility.$vividPink;
+    }
+  }
+  &__link {
+    margin-left: 16px;
+    cursor: pointer;
+  }
+  &__button {
+    cursor: pointer;
+    padding: 0 20px 0 14.2px;
+  }
+  &__icon-search {
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+}

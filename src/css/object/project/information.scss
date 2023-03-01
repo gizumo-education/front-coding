@@ -1,0 +1,53 @@
+@use '../../object/utility/utility.scss';
+
+
+.p-information {
+  &__area {
+    margin-top: 59px;
+    padding: 64px 0 67px 0;
+    background-color: utility.$paleBlue;
+    font-size: 16px;
+  }
+  &__title {
+    font-size: 25px;
+  }
+  &__lists {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+  }
+  &__image {
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  &__article-title {
+    margin-top: 8px;
+    line-height: 22px;
+    color: utility.$black;
+  }
+  &__table {
+    margin-top: 1.9px;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    border-top: none;
+    line-height: 21px;
+    font-size: 14px;
+    color: utility.$black;
+
+  }
+  &__table-heading {
+    width: 60px;
+    text-align: center;
+    background-color: utility.$pastelPink;
+  }
+  &__table-content {
+    padding-left: 10px;
+  }
+  &__button {
+    display: block;
+    margin: 61px auto 0px;
+    width: 360px;
+    text-align: center;
+  }
+}
