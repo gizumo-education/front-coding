@@ -9,11 +9,10 @@
     font-size: 16px;
   }
   &__title {
-    float: left;
-    padding-bottom: 25px;
     font-size: 25px;
   }
   &__lists {
+    margin-top: 25px;
     display: flex;
     gap: 20px;
   }
