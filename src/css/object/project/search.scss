@@ -1,34 +1,66 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/mixins' as mixin;
 
 .p-search {
-  &__top{
+  &__top {
     margin-top: 61px;
     padding: 40px 0;
     border-radius: 10px;
     background-color: utility.$pastelBlue;
     text-align: center;
+
+    @include mixin.tab {
+      margin-top: 0.61rem;
+      padding: 0.4rem 0;
+      border-radius: 0.1rem;
+    }
   }
+
   &__bottom {
     margin-top: 150px;
     padding: 40px 0;
     border-radius: 10px;
     background-color: utility.$pastelBlue;
     text-align: center;
+
+    @include mixin.tab {
+      margin-top: 1.5rem;
+      padding: 0.4rem 0;
+      border-radius: 0.1rem;
+    }
   }
+
   &__title {
     font-size: 25px;
     font-weight: 700;
+
+    @include mixin.tab {
+      font-size: 0.25rem;
+    }
   }
+
   &__sentense {
     margin-top: 20px;
     font-size: 20px;
+
+    @include mixin.tab {
+      margin-top: 0.2rem;
+      font-size: 0.2rem;
+    }
   }
+
   &__form {
     margin-top: 26px;
+
+    @include mixin.tab {
+      margin-top: 0.2rem;
+    }
   }
-  &__first-container{
+
+  &__first-container {
     position: relative;
     display: inline-block;
+
     &::after {
       display: block;
       content: '';
@@ -41,11 +73,28 @@
       border-right: 10px solid transparent;
       border-left: 10px solid transparent;
     }
+
+    @include mixin.tab {
+      &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0.25rem;
+        right: 0.15rem;
+        width: 0.1rem;
+        pointer-events: none;
+        border-top: 0.1rem solid utility.$vividPink;
+        border-right: 0.1rem solid transparent;
+        border-left: 0.1rem solid transparent;
+      }
+    }
   }
-  &__container{
+
+  &__container {
     margin-left: 16px;
     position: relative;
     display: inline-block;
+
     &::after {
       display: block;
       content: '';
@@ -58,24 +107,55 @@
       border-right: 10px solid transparent;
       border-left: 10px solid transparent;
     }
+
+    @include mixin.tab {
+      &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0.25rem;
+        right: 0.15rem;
+        width: 0.1rem;
+        pointer-events: none;
+        border-top: 0.1rem solid utility.$vividPink;
+        border-right: 0.1rem solid transparent;
+        border-left: 0.1rem solid transparent;
+      }
+    }
   }
+
   &__select {
     position: relative;
     padding: 16.5px 14.5px;
-    appearance: none; 
+    appearance: none;
     width: 200px;
     background-color: utility.$white;
     border: 1px solid utility.$vividPink;
     font-size: 18px;
     border-radius: 10px;
+
     &::-ms-expand {
       display: none;
     }
+
     &:focus {
       outline: none;
       border: 3px solid utility.$vividPink;
     }
+
+    @include mixin.tab {
+      padding: 0.165rem 0.145rem;
+      width: 2rem;
+      font-size: 0.18rem;
+      border-radius: 0.1rem;
+
+      &:focus {
+        outline: none;
+        border: 0.03rem solid utility.$vividPink;
+      }
+    }
   }
+
   &__text {
     margin-left: 16px;
     padding: 16.5px 14.5px;
@@ -84,21 +164,43 @@
     border: 1px solid utility.$vividPink;
     border-radius: 10px;
     font-size: 18px;
+
     &:focus {
       outline: none;
       border: 3px solid utility.$vividPink;
     }
+
+    @include mixin.tab {
+      margin-left: 0.16rem;
+      padding: 0.165rem 0.145rem;
+      width: 3rem;
+      border: 0.01rem solid utility.$vividPink;
+      border-radius: 0.1rem;
+      font-size: 0.18rem;
+    }
   }
+
   &__link {
     margin-left: 16px;
     cursor: pointer;
+    @include mixin.tab {
+      margin-left: 0.16rem;
+    }
   }
+
   &__button {
     cursor: pointer;
     padding: 0 20px 0 14.2px;
+    @include mixin.tab {
+      padding: 0 0.2rem 0 0.142rem;
+    }
   }
+
   &__icon-search {
     margin-right: 4px;
     vertical-align: middle;
+    @include mixin.tab {
+      margin-right: 0.04rem;
+    }
   }
 }
