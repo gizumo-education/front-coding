@@ -6,7 +6,8 @@
   &:hover {
     opacity: 0.8;
   }
-  &:link {
+  &:link,
+  &:visited {
     color: utility.$black;
   }
 }

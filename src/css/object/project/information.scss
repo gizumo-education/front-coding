@@ -26,6 +26,7 @@
   &__article-title {
     margin-bottom: 1.9px;
     line-height: 22px;
+    color: utility.$black;
   }
   &__table {
     border-collapse: separate;
@@ -33,6 +34,8 @@
     border-top: none;
     line-height: 21px;
     font-size: 14px;
+    color: utility.$black;
+
   }
   &__table-heading {
     width: 60px;
