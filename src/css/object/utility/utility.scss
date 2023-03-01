@@ -1,2 +1,17 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
+@use '../../foundation/_variables.scss' as var;
+
+
+
+.is-pink {
+  color: var.$heart;
+}
+
+.u-nav-icon {
+  height: 15px;
+}
+
+.u-w140 {
+  width: 140px;
+}

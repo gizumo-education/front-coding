@@ -1,2 +1,28 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as util;
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button__nav {
+  height: 50px;
+  padding: 15px 25px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 10px;
+  color: util.$white;
+  background-color: util.$head-btn;
+}
+
+.c-button__reg {
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: util.$bold;
+  background-color: util.$pink;
+  border-radius: 50px;
+  transition: .3s;
+
+  &:hover {
+    opacity: .8;
+  }
+
+}
+
