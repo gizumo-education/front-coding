@@ -1,4 +1,6 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/mixins' as mixin;
+
 // 共通パーツであるボタンのスタイルを記述するファイル
 
 .c-button {
@@ -14,5 +16,11 @@
   transition: .3s;
   &:hover {
     opacity: 0.8;
+  }
+  @include mixin.tab {
+    border-radius: 0.5rem;
+    font-size: 0.18rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
   }
 }

@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/mixins' as mixin;
 
 .p-message {
   padding: 104px 0 106px 0;
@@ -6,6 +7,8 @@
   url(../img/picture/copy-filter.png), 
   url(../img/picture/copy-image.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   color: utility.$white;
   font-size: 25px;
@@ -13,5 +16,10 @@
   font-weight: 700;
   &__text {
     margin-top: 21px;
+  }
+  @include mixin.tab {
+    padding: 1.04rem 0 1.06rem 0;
+    font-size: 0.25rem;
+    line-height: 0.36rem;
   }
 }
