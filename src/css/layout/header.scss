@@ -10,7 +10,6 @@
   background-color: util.$white;
 }
 
-
 .l-header__nav-menu {
   width: 90%;
   margin: 0 auto;
@@ -19,8 +18,7 @@
   justify-content: flex-end;
   align-items: center;
 
-
-  &-a__list {
+  &-link__list {
     &__item {
       display: inline;
       padding: 0 15px;
@@ -43,7 +41,7 @@
     }
   }
 
-  &-b__list {
+  &-button__list {
     &__item {
       display: inline;
       font-size: 14px;
