@@ -1,5 +1,9 @@
+@use '../foundation/mixins' as mixin;
 
 .l-inner {
   width: 1180px;
   margin: 0 auto;
+  @include mixin.tab {
+    width: 11.80rem;
+  }  
 }

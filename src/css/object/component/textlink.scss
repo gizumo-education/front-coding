@@ -1,6 +1,7 @@
 @use '../../object/utility/utility.scss';
 
 .c-textlink {
+  display: inline;
   font-size: 16px;
   transition: .3s;
   &:hover {
