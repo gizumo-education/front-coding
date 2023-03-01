@@ -1,0 +1,37 @@
+@use '../../object/utility/utility.scss' as util;
+@use '../../foundation/mixins.scss' as mixin;
+
+// 新着求人情報のスタイル
+
+
+
+
+.p-new {
+  width: 100%;
+  padding: 65px 0;
+  margin-top: 60px;
+  background-color: util.$new-bg;
+  @include mixin.clearfix;
+
+  &__wrapper {
+    width: 1180px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: util.$regular;
+  }
+
+  &__content {
+    margin-top: 25px;
+  }
+
+  &__link {
+    width: 360px;
+    padding: 17px 72px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}
