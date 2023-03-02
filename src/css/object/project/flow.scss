@@ -167,6 +167,14 @@
       height: 0.6rem;
     }
   }
+  &__step-icon {
+    width: 42px;
+    height: 38px;
+    @include mixin.tab {
+      width: 0.42rem;
+      height: 0.38rem;
+    }
+  }
   &__step1-image {
     margin: 0 78.8px 0 96.5px;
     @include mixin.tab {
