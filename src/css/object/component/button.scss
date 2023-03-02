@@ -9,7 +9,6 @@
   border-radius: 10px;
   color: util.$white;
   background-color: util.$head-btn;
-
   @include util.tab {
     height: 0.5rem;
     padding: 0.15rem 0.25rem;

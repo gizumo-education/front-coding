@@ -42,6 +42,10 @@
     line-height: 55px;
     color: util.$white;
     text-align: center;
+    @include util.tab {
+      font-size: 0.2rem;
+      line-height: 0.5rem;
+    }
     @include util.sp {
       font-size: 0.15rem;
       line-height: 0.3rem;

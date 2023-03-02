@@ -35,7 +35,9 @@
   &__link {
     font-size: 16px;
     font-weight: util.$regular;
-
+    @include util.tab {
+      font-size: 0.15rem;
+    }
     @include util.sp {
       padding: 0 0.1rem;
       font-size: 0.15rem;
@@ -49,12 +51,12 @@
       margin-top: 25px;
       column-count: 2;
       width: 350px;
-
       @include util.tab {
+        margin-top: 0.2rem;
         width: 5rem;
       }
-
       @include util.sp {
+        margin-top: 0.2rem;
         width: 100%;
       }
       
@@ -62,7 +64,9 @@
         line-height: 36px;
         color: util.$black;
         transition: .3s;
-
+        @include util.tab {
+          line-height: 0.36rem;
+        }
         @include util.sp {
           line-height: 0.36rem;
         }
@@ -85,13 +89,13 @@
       width: 320px;
       margin-top: 15px;
       transition: .3s;
-
       @include util.tab {
         width: 3.2rem;
+        margin-top: 0.15rem;
       }
-
       @include util.sp {
         width: 100%;
+        margin-top: 0.1rem;
 
         & img {
           width: 100%;
@@ -114,10 +118,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include util.sp {
+      height: 0.3rem;
+    }
 
     &__text {
       font-size: 14px;
       font-weight: util.$regular;;
+      @include util.sp {
+        height: 0.12rem;
+      }
     }
   }
 }

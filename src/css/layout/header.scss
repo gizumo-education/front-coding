@@ -17,13 +17,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
   @include util.tab {
     width: 100%;
     padding: 0.25rem;
     justify-content: center;
   }
-
   @include util.sp {
     padding: 16px 0;
   }
@@ -67,7 +65,6 @@
       font-size: 16px;
       line-height: 20px;
       transition: .3s;
-
       @include util.tab {
         padding: 0 0.1rem;
         font-size: 0.16rem;
@@ -98,7 +95,6 @@
       font-size: 14px;
       line-height: 20px;
       transition: .3s;
-
       @include util.tab {
         font-size: 0.14rem;
         line-height: 0.2rem;
@@ -111,29 +107,5 @@
   }
 }
 
-.l-header__sp-menu {
-  display: none;
-
-  @include util.sp {
-    width: 100%;
-    padding: 0.3rem;
-    background-color: util.$shade;
-    display: flex;
-    display: none;
-    flex-flow: column;
-
-    &__link {
-      font-size: 0.1rem;
-      font-weight: util.$bold;
-      color: util.$white;
-      line-height: 0.4rem;
-      transition: .3s;
-
-      &:hover {
-        opacity: .8;
-      }
-    }
-  }
-}
 
 

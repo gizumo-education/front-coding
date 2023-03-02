@@ -25,6 +25,7 @@
     }
     @include util.sp {
       font-size: 0.2rem;
+      margin-top: 0.6rem;
     }
   }
 
@@ -38,6 +39,7 @@
     }
     @include util.sp {
       display: block;
+      margin-top: 0.3rem;
     }
 
     &__item {

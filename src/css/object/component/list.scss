@@ -103,6 +103,7 @@
   @include util.sp {
     display: block;
     padding: 0 0.5rem;
+    margin-top: 0.3rem;
   }
 
 
@@ -121,6 +122,9 @@
     @include util.sp {
       width: 100%;
       margin-top: 0.3rem;
+      &:first-child {
+        margin-top: 0;
+      }
     }
 
 
@@ -128,7 +132,6 @@
       position: absolute;
       top: 9px;
       left: 9px;
-
       @include util.tab {
         width: 0.6rem;
       }
@@ -138,7 +141,6 @@
     &__img {
       height: 90px;
       margin: 0 auto;
-
       @include util.tab {
         height: 0.9rem;
       }
@@ -159,7 +161,7 @@
         height: 0.6rem;
       }
       @include util.sp {
-        font-size: 0.2rem;
+        font-size: 0.15rem;
         line-height: 0.2rem;
       }
     }
@@ -170,10 +172,13 @@
       line-height: 20px;
       text-align: left;
       margin-top: 18px;
-
       @include util.tab {
         font-size: 0.14rem;
         line-height: 0.2rem;
+      }
+      @include util.sp {
+        font-size: 0.1rem;
+        line-height: 0.15rem;
       }
     }
 

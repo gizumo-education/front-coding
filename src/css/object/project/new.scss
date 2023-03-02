@@ -30,6 +30,9 @@
   &__title {
     font-size: 25px;
     font-weight: util.$bold;
+    @include util.tab {
+      font-size: 0.25rem;
+    }
     @include util.sp {
       text-align: center;
       font-size: 0.2rem;
@@ -38,6 +41,9 @@
 
   &__content {
     margin-top: 25px;
+    @include util.tab {
+      margin-top: 0.25rem;
+    }
     @include util.sp {
       margin-top: 0.3rem;
     }

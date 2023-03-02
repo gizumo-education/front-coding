@@ -9,11 +9,12 @@
   @include util.tab {
     width: 100%;
     padding: 0 0.2rem;
+    margin-bottom: 1.5rem;
   }
   @include util.sp {
     width: 100%;
     padding: 0 0.2rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 1rem;
   }
 
   &__title {
@@ -26,6 +27,7 @@
     }
     @include util.sp {
       font-size: 0.2rem;
+      margin-top: 0.8rem;
     }
   }
 
@@ -33,8 +35,12 @@
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    @include util.tab {
+      margin-top: 0.5rem;
+    }
     @include util.sp {
       display: block;
+      margin-top: 0.4rem;
     }
 
     &__item {
@@ -103,7 +109,6 @@
         font-weight: util.$regular;
         margin-top: 45px;
         line-height: 23px;
-
         @include util.tab {
           font-size: 0.16rem;
           margin-top: 0.45rem;
@@ -122,7 +127,9 @@
     margin-top: 80px;
     padding: 21px 93px;
     @include util.tab {
-      margin-top: 0.8rem;
+      margin-top: 0.6rem;
+      padding: 0.2rem 0.8rem;
+
     }
     @include util.sp {
       width: 100%;
