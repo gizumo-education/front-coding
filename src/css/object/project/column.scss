@@ -1,38 +1,73 @@
 @use '../../object/utility/utility.scss' as util;
-@use '../../foundation/mixins.scss' as mixin;
-
 // お役立ちコンテンツパート
 
 .p-column {
   width: 1180px;
   margin: 0 auto;
   text-align: center;
-  @include mixin.clearfix;
   margin-bottom: 150px;
+  @include util.tab {
+    width: 100%;
+    padding: 0 0.2rem;
+    margin-bottom: 1.5rem;
+  }
+  @include util.sp {
+    width: 100%;
+    padding: 0 0.2rem;
+    margin-bottom: 1rem;
+  }
 
   &__title {
     font-size: 25px;
     font-weight: util.$bold;
     margin-top: 105px;
+    @include util.tab {
+      font-size: 0.25rem;
+      margin-top: 1rem;
+    }
+    @include util.sp {
+      font-size: 0.2rem;
+      margin-top: 0.8rem;
+    }
   }
 
   &__list {
     margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    @include util.tab {
+      margin-top: 0.5rem;
+    }
+    @include util.sp {
+      display: block;
+      margin-top: 0.4rem;
+    }
 
     &__item {
-      float: left;
       width: 380px;
-      margin-left: 20px;
       position: relative;
-
-      &:first-child {
-        margin-left: 0;
+      @include util.tab {
+        width: 3.8rem;
       }
+      @include util.sp {
+        width: 100%;
+        margin-top: 0.2rem;
+      }
+
 
       &__link {
         display: block;
         width: 100%;
         height: 100%;
+      }
+
+      &__img {
+        @include util.tab {
+          height: 2.4rem;
+        }
+        @include util.sp {
+          height: 2.3rem;
+        }
       }
 
 
@@ -47,12 +82,25 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
+
+        @include util.tab {
+          margin-top: -2.4rem;
+        }
+        @include util.sp {
+          margin-top: -2.3rem;
+        }
       }
 
       &__title {
         color: util.$white;
         font-size: 24px;
         font-weight: util.$bold;
+        @include util.tab {
+          font-size: 0.24rem;
+        }
+        @include util.sp {
+          font-size: 0.2rem;
+        }
       }
 
       &__text {
@@ -61,6 +109,16 @@
         font-weight: util.$regular;
         margin-top: 45px;
         line-height: 23px;
+        @include util.tab {
+          font-size: 0.16rem;
+          margin-top: 0.45rem;
+          line-height: 0.23rem;
+        }
+        @include util.sp {
+          font-size: 0.12rem;
+          margin-top: 0.4rem;
+          line-height: 0.2rem;
+        }
       }
     }
   }
@@ -68,6 +126,16 @@
   &__link {
     margin-top: 80px;
     padding: 21px 93px;
+    @include util.tab {
+      margin-top: 0.6rem;
+      padding: 0.2rem 0.8rem;
+
+    }
+    @include util.sp {
+      width: 100%;
+      padding: 0.2rem 0.6rem;
+      margin-top: 0.5rem;
+    }
 
     &:hover {
       opacity: .8;

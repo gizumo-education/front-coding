@@ -1,5 +1,4 @@
 @use '../../object/utility/utility.scss' as util;
-
 //　リストに関するスタイル
 
 .c-list__new {
@@ -9,6 +8,15 @@
 
   &__item {
     width: 280px;
+    @include util.tab {
+      width: 2.8rem;
+    }
+    @include util.sp {
+      width: 100%;
+      &:nth-child(n+2) {
+        display: none;
+      }
+    }
 
     &__link {
       display: block;
@@ -22,8 +30,8 @@
       }
     }
 
-
     &__img {
+      width: 100%;
       border-radius: 10px;
     }
   
@@ -32,23 +40,49 @@
       font-size: 16px;
       line-height: 22px;
       font-weight: util.$regular;
+      @include util.tab {
+        font-size: 0.16rem;
+        line-height: 0.22rem;
+      }
+      @include util.sp {
+        font-size: 0.16rem;
+        line-height: 0.22rem;
+        font-weight: util.$bold;
+      }
     }
 
     &__table {
       margin-top: 6px;
       border-collapse: separate;
       border-spacing: 4px;
+      @include util.sp {
+        margin-top: 0.1rem;
+      }
     
 
       & tr {
         font-size: 14px;
         line-height: 20px;
         font-weight: util.$regular;
+        @include util.tab {
+          font-size: 0.14rem;
+          line-height: 0.2rem;
+        }
+        @include util.sp {
+          font-size: 0.14rem;
+          line-height: 0.2rem;
+        }
 
         & th {
           width: 60px;
           text-align: center;
           background-color: util.$list-bg;
+          @include util.tab {
+            width: 0.6rem;
+          }
+          @include util.sp {
+            width: 0.6rem;
+          }
         }
 
         & td {
@@ -66,6 +100,11 @@
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  @include util.sp {
+    display: block;
+    padding: 0 0.5rem;
+    margin-top: 0.3rem;
+  }
 
 
   &__item {
@@ -73,20 +112,38 @@
     padding: 55px 20px 40px;
     box-sizing: border-box;
     border: 2px solid util.$pink;
-    border-radius: 10px;
+    border-radius: 20px;
     position: relative;
     text-align: center;
+    @include util.tab {
+      width: 2.7rem;
+      padding: 0.55rem 0.2rem 0.4rem;
+    }
+    @include util.sp {
+      width: 100%;
+      margin-top: 0.3rem;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
 
 
     &__index {
       position: absolute;
       top: 9px;
       left: 9px;
+      @include util.tab {
+        width: 0.6rem;
+      }
+
     }
 
     &__img {
       height: 90px;
       margin: 0 auto;
+      @include util.tab {
+        height: 0.9rem;
+      }
 
       & img {
         height: 100%;
@@ -98,7 +155,15 @@
       font-weight: util.$bold;
       line-height: 30px;
       margin-top: 20px;
-      height: 60px;
+      @include util.tab {
+        font-size: 0.24rem;
+        line-height: 0.3rem;
+        height: 0.6rem;
+      }
+      @include util.sp {
+        font-size: 0.15rem;
+        line-height: 0.2rem;
+      }
     }
 
     &__text {
@@ -107,10 +172,21 @@
       line-height: 20px;
       text-align: left;
       margin-top: 18px;
+      @include util.tab {
+        font-size: 0.14rem;
+        line-height: 0.2rem;
+      }
+      @include util.sp {
+        font-size: 0.1rem;
+        line-height: 0.15rem;
+      }
     }
 
     &:first-child {
       &::before {
+        content: none;
+      }
+      &::after {
         content: none;
       }
     }
@@ -126,8 +202,28 @@
       border-top: 20px solid transparent;
       border-bottom: 20px solid transparent;
       border-left: 20px solid util.$pink;
+      @include util.tab {
+        left: -0.3rem;
+        border-width: 0.3rem;
+      }
+      @include util.sp {
+        display: none;
+      }
     }
 
-
+    @include util.sp {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        left: 50%;
+        top: -0.25rem;
+        transform: translateX(-50%);
+        border-right: 0.15rem solid transparent;
+        border-left: 0.15rem solid transparent;
+        border-top: 0.15rem solid util.$pink;
+      }
+    }
   }
 }

@@ -1,18 +1,29 @@
 @use '../../object/utility/utility.scss' as util;
-@use '../../foundation/mixins.scss' as mixin;
-
 // 転職までの流れパートのスタイル
 
 .p-flow {
   width: 1180px;
   margin: 0 auto;
-  @include mixin.clearfix;
+  @include util.tab {
+    width: 100%;
+    padding: 0 0.2rem;
+  }
+  @include util.sp {
+    width: 100%;
+  }
 
   &__title {
     font-size: 25px;
     font-weight: util.$bold;
     margin-top: 105px;
     text-align: center;
+    @include util.tab {
+      font-size: 0.25rem;
+      margin-top: 1rem;
+    }
+    @include util.sp {
+      font-size: 0.2rem;
+      margin-top: 0.6rem;
+    }
   }
-  
 }

@@ -4,22 +4,53 @@
 .p-middle {
   width: 100%;
   height: 300px;
-  background-image: url("../../src/img/picture/middle.jpg");
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include util.tab {
+    height: 2.5rem;
+  }
+  @include util.sp {
+    height: 1rem;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+
+  }
   
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: util.$shade;
+    margin-top: -300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include util.tab {
+      height: 2.5rem;
+      margin-top: -2.5rem;
+    }
+    @include util.sp {
+      height: 1rem;
+      margin-top: -1rem;
+    }
+  }
+
   &__text {
     font-size: 25px;
+    font-weight: util.$bold;
     line-height: 55px;
     color: util.$white;
     text-align: center;
-    position: absolute;
+    @include util.tab {
+      font-size: 0.2rem;
+      line-height: 0.5rem;
+    }
+    @include util.sp {
+      font-size: 0.15rem;
+      line-height: 0.3rem;
+      font-weight: util.$regular;
+    }
   }
 
-  &__content {
-    background-color: util.$shade;
-    width: 100%;
-    height: 100%;
-  }
 }
