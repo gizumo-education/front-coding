@@ -16,6 +16,23 @@
     background-color: red;
     font-size: 0.16rem;
   }
+  @include mixin.sp {
+    padding: 0;
+  }
+
+  &__menu {
+    display: none;
+    @include mixin.sp {
+      display: block;
+      background-image: url(../img/icon/menu.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      float: right;
+      margin: 0.15rem 0.15rem 0.15rem 0;
+      width: 0.5rem;
+      height: 0.38rem;
+    }
+  }
 
   &__container {
     float: right;
@@ -23,6 +40,9 @@
 
     @include mixin.tab {
       padding-right: 1rem;
+    }
+    @include mixin.sp {
+      display: none;
     }
   }
 
