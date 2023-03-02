@@ -13,7 +13,7 @@
 
   @include mixin.tab {
     padding: 0.25rem 0;
-    background-color: red;
+    background-color: pink;
     font-size: 0.16rem;
   }
   @include mixin.sp {
@@ -27,7 +27,7 @@
       display: block;
       background-image: url(../img/icon/menu.png);
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       float: right;
       margin: 0.15rem 0.15rem 0.15rem 0;
       width: 0.5rem;
@@ -57,10 +57,11 @@
   }
 
   &__list {
-    margin-left: 48px;
+    margin-left: 16px;
     display: inline;
     @include mixin.tab {
-      margin-left: 0.1rem;
+      margin-left: 0.14rem;
+      font-size: 0.14rem;
     }
   }
 
@@ -79,7 +80,7 @@
       display: inline-block;
       position: relative;
       top: 2px;
-      right: 24px;
+      right: 8px;
       width: 1px;
       height: 16px;
       background-color: utility.$black;
@@ -90,7 +91,7 @@
         display: inline-block;
         position: relative;
         top: 0.02rem;
-        right: 0.24rem;
+        right: 0.05rem;
         width: 0.01rem;
         height: 0.16rem;
         background-color: utility.$black;
@@ -104,7 +105,7 @@
       display: inline-block;
       position: relative;
       top: 2px;
-      right: 24px;
+      right: 8px;
       width: 1px;
       height: 16px;
       background-color: utility.$black;
@@ -116,7 +117,7 @@
         display: inline-block;
         position: relative;
         top: 0.02rem;
-        right: 0.24rem;
+        right: 0.05rem;
         width: 0.01rem;
         height: 0.16rem;
         background-color: utility.$black;
