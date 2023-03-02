@@ -34,7 +34,7 @@
       padding: 0.4rem 0;
       border-radius: 0.1rem;
     }
-    
+
     @include mixin.sp {
       margin-top: 0.6rem;
       padding: 0.15rem;
@@ -76,6 +76,7 @@
     @include mixin.tab {
       margin-top: 0.2rem;
     }
+
     @include mixin.sp {
       margin-top: 0.12rem;
     }
@@ -243,7 +244,7 @@
       border-radius: 0.1rem;
       font-size: 0.18rem;
     }
-    
+
     @include mixin.sp {
       margin-left: 0;
       margin-top: 0.16rem;
@@ -258,9 +259,11 @@
   &__link {
     margin-left: 16px;
     cursor: pointer;
+
     @include mixin.tab {
       margin-left: 0.16rem;
     }
+
     @include mixin.sp {
       margin-left: 0;
       margin-top: 0.19rem;
@@ -270,20 +273,24 @@
   &__button {
     cursor: pointer;
     padding: 0 20px 0 14.2px;
+
     @include mixin.tab {
       padding: 0 0.2rem 0 0.142rem;
     }
+
     @include mixin.sp {
-      padding: 0 0.43rem 0 0.12rem ;
+      padding: 0 0.43rem 0 0.12rem;
     }
   }
 
   &__icon-search {
     margin-right: 4px;
     vertical-align: middle;
+
     @include mixin.tab {
       margin-right: 0.04rem;
     }
+
     @include mixin.sp {
       vertical-align: top;
       width: 0.17rem;
