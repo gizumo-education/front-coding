@@ -1,13 +1,19 @@
 @use "../../foundation/mixins" as mixin;
 
 .u-breakline {
-  display: none;
-
-  @include mixin.tab {
+  &__pc {
     display: block;
+
+    @include mixin.sp {
+      display: none;
+    }
   }
 
-  @include mixin.sp {
-    display: block;
+  &__sp {
+    display: none;
+
+    @include mixin.sp {
+      display: block;
+    }
   }
 }
