@@ -4,4 +4,19 @@
 .p-keyvisual {
   background-color: util.$key-bg;
   text-align: center;
+
+  &__img {
+    @include util.sp {
+      display: none;
+    }
+  }
+
+  &__sp {
+    display: none;
+    width: 100%;
+
+    @include util.sp {
+      display: block;
+    }
+  }
 }

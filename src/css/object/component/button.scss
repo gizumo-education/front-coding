@@ -9,6 +9,12 @@
   border-radius: 10px;
   color: util.$white;
   background-color: util.$head-btn;
+
+  @include util.tab {
+    height: 0.5rem;
+    padding: 0.15rem 0.25rem;
+    margin-left: 0.15rem;
+  }
 }
 
 .c-button__reg {
@@ -19,6 +25,13 @@
   background-color: util.$pink;
   border-radius: 50px;
   transition: .3s;
+  @include util.tab {
+    font-size: 0.18rem;
+  }
+  @include util.sp {
+    font-size: 0.15rem;
+
+  }
 
   &:hover {
     opacity: .8;

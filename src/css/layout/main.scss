@@ -1,8 +1,16 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as util;
 // innerのスタイルを記述するファイル
 
 .l-main {
   margin-top: 100px;
+
+  @include util.tab {
+    margin-top: 1rem;
+  }
+
+  @include util.sp {
+    margin-top: 70px;
+  }
 }
 
 

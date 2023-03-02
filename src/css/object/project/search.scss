@@ -9,10 +9,28 @@
   border-radius: 10px;
   margin: 60px auto 0;
 
+  @include util.tab {
+    width: auto;
+    padding: 0.4rem;
+    margin: 0.6rem 0.2rem 0;
+  }
+  @include util.sp {
+    width: auto;
+    padding: 0.15rem;
+    margin: 0.6rem 0.1rem 0;
+  }
+
+
   &__title {
     text-align: center;
     font-weight: util.$bold;
     font-size: 25px;
+    @include util.tab {
+      font-size: 0.25rem;
+    }
+    @include util.sp {
+      font-size: 0.2rem;
+    }
   }
 
   &__text {
@@ -20,19 +38,46 @@
     margin-top: 20px;
     font-size: 20px;
     font-weight: util.$regular;
+    @include util.tab {
+      font-size: 0.2rem;
+    }
+    @include util.sp {
+      font-size: 0.15rem;
+    }
   }
 
   &__form {
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
+    @include util.sp {
+      display: block;
+    }
+
+    &__select {
+      display: flex;
+      justify-content: space-between;
+    }
 
     &__box {
-      display: block;
       height: 60px;
       width: 200px;
       position: relative;
       box-sizing: border-box;
+      margin-left: 16px;
+      @include util.tab {
+        height: 0.6rem;
+        width: 2rem;
+        margin-left: 0.1rem;
+      }
+      @include util.sp {
+        height: 0.3rem;
+        width: 2rem;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
 
       &::after {
         position: absolute;
@@ -44,6 +89,16 @@
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
         border-top: 10px solid util.$border-pink;
+        @include util.tab {
+          top: 0.25rem;
+          right: 0.15rem;
+          border-width: 0.1rem;
+        }
+        @include util.sp {
+          top: 0.13rem;
+          right: 0.1rem;
+          border-width: 0.06rem;
+        }
       }
     }
 
@@ -58,12 +113,31 @@
       border-radius: 10px;
       box-sizing: border-box;
       appearance: none;
+      @include util.tab {
+        font-size: 0.18rem;
+        line-height: 0.26rem;
+        padding: 0.15rem;
+      }
+      @include util.sp {
+        font-size: 0.1rem;
+        line-height: 0.1rem;
+        padding: 0.08rem;
+      }
 
 
-      &:nth-child(4) {
+      &:nth-child(2) {
         width: 300px;
-        // margin-left: 15px;
         height: 60px;
+        @include util.tab {
+          width: 3rem;
+          height: 0.6rem;
+          margin-left: 0.1rem;
+        }
+        @include util.sp {
+          width: 100%;
+          height: 0.3rem;
+          margin-top: 0.1rem;
+        }
       }
     }
 
@@ -73,6 +147,14 @@
       box-sizing: border-box;
       font-weight: util.$regular;
       appearance: none;
+      @include util.tab {
+        height: 0.6rem;
+        margin-left: 0.1rem;
+      }
+      @include util.sp {
+        height: 0.3rem;
+        margin: 0.1rem auto 0;
+      }
 
       &:hover {
         cursor: pointer;
@@ -82,3 +164,4 @@
   }
 
 }
+
