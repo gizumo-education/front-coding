@@ -20,6 +20,7 @@
     }
 
     @include mixin.sp {
+      position: relative;
       width: 100%;
       height: 2.7rem;
       background-image: url(../img/picture/keyvisual-sp.jpg);
@@ -36,8 +37,9 @@
       margin: 0.56rem 0 0 4.32rem;
     }
     @include mixin.sp {
-      float: right;
-      margin: 0.61rem 0 0 0;
+      position: absolute;
+      top: 0.61rem;
+      right: 0;
     }
   }
 
