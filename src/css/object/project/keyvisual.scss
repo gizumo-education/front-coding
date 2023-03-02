@@ -8,6 +8,7 @@
 
   &__image {
     margin: 0 auto;
+    position: relative;
     width: 1262px;
     height: 500px;
     background-image: url(../img/picture/keyvisual.jpg);
@@ -15,6 +16,7 @@
     text-align: center;
 
     @include mixin.tab {
+      position: relative;
       width: 12.62rem;
       height: 5rem;
     }
@@ -30,14 +32,16 @@
   }
 
   &__message {
-    float: left;
-    margin: 56px 0 0 432px;
+    position: absolute;
+    top: 56.4px;
+    right: 30px;
 
     @include mixin.tab {
-      margin: 0.56rem 0 0 4.32rem;
+      position: absolute;
+      top: 0.56rem;
+      right: 0.3rem;
     }
     @include mixin.sp {
-      position: absolute;
       top: 0.61rem;
       right: 0;
     }
@@ -53,8 +57,9 @@
     margin-top: 47.5px;
 
     @include mixin.tab {
-      margin-top: 0.475rem;
+      margin-top: 0.47rem;
     }
+
     @include mixin.sp {
       margin-top: 0.15rem;
       width: 2.72rem;
@@ -102,6 +107,7 @@
     @include mixin.tab {
       font-size: 0.4rem;
     }
+
     @include mixin.sp {
       font-size: 0.16rem;
     }
