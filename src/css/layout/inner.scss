@@ -4,8 +4,14 @@
   width: 1180px;
   min-width: 1180px;
   margin: 0 auto;
+
   @include mixin.tab {
     width: 11.8rem;
     min-width: 11.8rem;
-  }  
+  }
+
+  @include mixin.sp {
+    width: 3.7rem;
+    min-width: 3.7rem;
+  }
 }

@@ -23,4 +23,10 @@
     height: 0.6rem;
     line-height: 0.6rem;
   }
+  @include mixin.sp {
+    border-radius: 0.5rem;
+    font-size: 0.18rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+  }
 }
