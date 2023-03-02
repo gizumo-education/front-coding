@@ -35,6 +35,14 @@
     }
   }
 
+  &__list {
+    margin-left: 48px;
+    display: inline;
+    @include mixin.tab {
+      margin-left: 0.48rem;
+    }
+  }
+
   &__icon-black {
     height: 16px;
     vertical-align: middle;
@@ -45,11 +53,17 @@
   }
 
   &__link-obsession {
-    margin-left: 48px;
-
+    &::before {
+      content: " ";
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      right: 24px;
+      width: 1px;
+      height: 16px;
+      background-color: utility.$black;
+    }
     @include mixin.tab {
-      margin-left: 0.48rem;
-
       &::before {
         content: " ";
         display: inline-block;
@@ -61,153 +75,138 @@
         background-color: utility.$black;
       }
     }
-
-  &::before {
-    content: " ";
-    display: inline-block;
-    position: relative;
-    top: 2px;
-    right: 24px;
-    width: 1px;
-    height: 16px;
-    background-color: utility.$black;
-  }
-}
-
-&__link-column {
-  margin-left: 48px;
-
-  &::before {
-    content: " ";
-    display: inline-block;
-    position: relative;
-    top: 2px;
-    right: 24px;
-    width: 1px;
-    height: 16px;
-    background-color: utility.$black;
   }
 
-  @include mixin.tab {
-    margin-left: 0.48rem;
-
+  &__link-column {
     &::before {
       content: " ";
       display: inline-block;
       position: relative;
-      top: 0.02rem;
-      right: 0.24rem;
-      width: 0.01rem;
-      height: 0.16rem;
+      top: 2px;
+      right: 24px;
+      width: 1px;
+      height: 16px;
       background-color: utility.$black;
     }
+
+    @include mixin.tab {
+      &::before {
+        content: " ";
+        display: inline-block;
+        position: relative;
+        top: 0.02rem;
+        right: 0.24rem;
+        width: 0.01rem;
+        height: 0.16rem;
+        background-color: utility.$black;
+      }
+    }
   }
-}
 
-&__link-curious {
-  margin-left: 25px;
+  &__link-curious {
+    margin-left: 25px;
 
-  @include mixin.tab {
-    margin-left: 0.25rem;
+    @include mixin.tab {
+      margin-left: 0.25rem;
+    }
   }
-}
 
-&__link-brouse {
-  margin-left: 15px;
+  &__link-brouse {
+    margin-left: 15px;
 
-  @include mixin.tab {
-    margin-left: 0.15rem;
+    @include mixin.tab {
+      margin-left: 0.15rem;
+    }
   }
-}
 
-&__link-search {
-  margin-left: 15px;
+  &__link-search {
+    margin-left: 15px;
 
-  @include mixin.tab {
-    margin-left: 0.15rem;
+    @include mixin.tab {
+      margin-left: 0.15rem;
+    }
   }
-}
 
-&__button-curious {
-  padding: 0 21px 0 10px;
-  border-radius: 10px;
-  background-color: utility.$skyBlue;
-  min-width: 164px;
-  font-size: 14px;
-  color: utility.$white;
+  &__button-curious {
+    padding: 0 21px 0 10px;
+    border-radius: 10px;
+    background-color: utility.$skyBlue;
+    min-width: 164px;
+    font-size: 14px;
+    color: utility.$white;
 
-  @include mixin.tab {
-    padding: 0 0.21rem 0 0.1rem;
-    border-radius: 0.1rem;
-    font-size: 0.14rem;
-    min-width: 1.7rem;
+    @include mixin.tab {
+      padding: 0 0.21rem 0 0.1rem;
+      border-radius: 0.1rem;
+      font-size: 0.14rem;
+      min-width: 1.7rem;
+    }
   }
-}
 
-&__button-browse {
-  padding: 0 32px 0 24px;
-  border-radius: 10px;
-  background-color: utility.$skyBlue;
-  min-width: 144px;
-  color: utility.$white;
-  font-size: 14px;
+  &__button-browse {
+    padding: 0 32px 0 24px;
+    border-radius: 10px;
+    background-color: utility.$skyBlue;
+    min-width: 144px;
+    color: utility.$white;
+    font-size: 14px;
 
-  @include mixin.tab {
-    padding: 0 0.32rem 0 0.24rem;
-    border-radius: 0.1rem;
-    font-size: 0.14rem;
-    min-width: 1.5rem;
+    @include mixin.tab {
+      padding: 0 0.32rem 0 0.24rem;
+      border-radius: 0.1rem;
+      font-size: 0.14rem;
+      min-width: 1.5rem;
+    }
   }
-}
 
-&__button-search {
-  padding: 0 28px 0 30px;
-  border-radius: 10px;
-  background-color: utility.$skyBlue;
-  min-width: 144px;
-  color: utility.$white;
-  font-size: 14px;
+  &__button-search {
+    padding: 0 28px 0 30px;
+    border-radius: 10px;
+    background-color: utility.$skyBlue;
+    min-width: 144px;
+    color: utility.$white;
+    font-size: 14px;
 
-  @include mixin.tab {
-    padding: 0 0.28rem 0 0.3rem;
-    border-radius: 0.1rem;
-    font-size: 0.14rem;
-    min-width: 1.5rem;
+    @include mixin.tab {
+      padding: 0 0.28rem 0 0.3rem;
+      border-radius: 0.1rem;
+      font-size: 0.14rem;
+      min-width: 1.5rem;
+    }
   }
-}
 
-&__icon-curious {
-  height: 18px;
-  vertical-align: middle;
+  &__icon-curious {
+    height: 18px;
+    vertical-align: middle;
 
-  @include mixin.tab {
-    height: 0.18rem;
+    @include mixin.tab {
+      height: 0.18rem;
+    }
   }
-}
 
-&__icon-browse {
-  height: 18px;
-  vertical-align: middle;
+  &__icon-browse {
+    height: 18px;
+    vertical-align: middle;
 
-  @include mixin.tab {
-    height: 0.18rem;
+    @include mixin.tab {
+      height: 0.18rem;
+    }
   }
-}
 
-&__icon-search {
-  height: 16px;
-  vertical-align: middle;
+  &__icon-search {
+    height: 16px;
+    vertical-align: middle;
 
-  @include mixin.tab {
-    height: 0.16rem;
+    @include mixin.tab {
+      height: 0.16rem;
+    }
   }
-}
 
-&__button-text {
-  margin-left: 10px;
+  &__button-text {
+    margin-left: 10px;
 
-  @include mixin.tab {
-    height: 0.1rem;
+    @include mixin.tab {
+      height: 0.1rem;
+    }
   }
-}
 }
