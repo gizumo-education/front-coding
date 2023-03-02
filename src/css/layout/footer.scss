@@ -1,8 +1,6 @@
 @use '../object/utility/utility.scss';
 @use '../foundation/mixins' as mixin;
 
-// footerのスタイルを記述するファイル
-
 .l-footer {
   margin-top: 150px;
 
@@ -84,11 +82,18 @@
     }
   }
 
-  &__banner {
+  &__banners {
     float: right;
     margin-top: 55px;
     @include mixin.tab {
-      margin-top: 0.5rem;
+      margin-top: 0.55rem;
+    }
+  }
+
+  &__banner {
+    width: 322px;
+    @include mixin.tab {
+      width: 3.22rem;
     }
   }
 
