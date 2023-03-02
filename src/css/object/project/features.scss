@@ -79,10 +79,11 @@
     margin-top: 26px;
     font-size: 14px;
     line-height: 20px;
+    @include mixin.tab {
+      margin-top: 0.26rem;
+      font-size: 0.1rem;
+      line-height: 0.2rem;
+    }
   }
-  @include mixin.tab {
-    margin-top: 0.26rem;
-    font-size: 0.14rem;
-    line-height: 0.2rem;
-  }
+
 }
