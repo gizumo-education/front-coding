@@ -284,17 +284,23 @@
   }
 
   &__icon-search {
-    margin-right: 4px;
     vertical-align: middle;
-
-    @include mixin.tab {
-      margin-right: 0.04rem;
-    }
 
     @include mixin.sp {
       vertical-align: top;
       width: 0.17rem;
       margin: 0.11rem 0.1rem 0 0;
+    }
+  }
+
+  &__search-text {
+    margin-left: 4px;
+
+    @include mixin.tab {
+      margin-left: 0.04em;
+    }
+    @include mixin.sp {
+      margin-left: 0.04em;
     }
   }
 }

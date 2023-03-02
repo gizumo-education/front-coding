@@ -41,6 +41,7 @@
       top: 0.56rem;
       right: 0.3rem;
     }
+
     @include mixin.sp {
       top: 0.61rem;
       right: 0;
@@ -48,7 +49,15 @@
   }
 
   &__rank {
+    @include mixin.tab {
+      display: block;
+      margin: 0 auto;
+      width: 3.41rem;
+    }
+
     @include mixin.sp {
+      display: block;
+      margin: 0 auto;
       width: 1.49rem;
     }
   }
@@ -61,8 +70,21 @@
     }
 
     @include mixin.sp {
-      margin-top: 0.15rem;
+      margin-top: 0.12rem;
       width: 2.72rem;
+    }
+  }
+
+  &__copy-gizjob {
+    @include mixin.tab {
+      margin: 0 auto;
+      display: block;
+      width: 8rem;
+    }
+    @include mixin.sp {
+      margin: 0 auto;
+      display: block;
+      width: 8rem;
     }
   }
 
