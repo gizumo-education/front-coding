@@ -17,6 +17,7 @@
 
     @include mixin.tab {
       position: relative;
+      background-size: cover;
       width: 12.62rem;
       height: 5rem;
     }

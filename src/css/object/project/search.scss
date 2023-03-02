@@ -230,12 +230,12 @@
     border: 1px solid utility.$vividPink;
     border-radius: 10px;
     font-size: 18px;
-
+    
     &:focus {
       outline: none;
       border: 3px solid utility.$vividPink;
     }
-
+    
     @include mixin.tab {
       margin-left: 0.16rem;
       padding: 0.165rem 0.145rem;
@@ -244,7 +244,7 @@
       border-radius: 0.1rem;
       font-size: 0.18rem;
     }
-
+    
     @include mixin.sp {
       margin-left: 0;
       margin-top: 0.16rem;
@@ -279,6 +279,7 @@
     }
 
     @include mixin.sp {
+      margin-top: 0.19rem;
       padding: 0 0.43rem 0 0.12rem;
     }
   }
