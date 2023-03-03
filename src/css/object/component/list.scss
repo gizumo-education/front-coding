@@ -3,19 +3,16 @@
 
 .c-list__new {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 
   &__item {
     width: 280px;
+    margin-right: 20px;
     @include util.tab {
       width: 2.8rem;
+      margin-right: 0.28rem;
     }
     @include util.sp {
       width: 100%;
-      &:nth-child(n+2) {
-        display: none;
-      }
     }
 
     &__link {
