@@ -7,8 +7,8 @@
   background-color: utility.$paleBlue;
 
   @include mixin.tab {
-    height: 2.6rem;
     margin-top: 1.5rem;
+    font-size: 0.16rem;
   }
   @include mixin.sp {
     margin-top: 1rem;
@@ -19,12 +19,14 @@
     display: flex;
     justify-content: space-between;
     padding-top: 55px;
-    padding-bottom: 25px;
+    padding-bottom: 28px;
     @include mixin.tab {
+      padding-top: 0.55rem;
+      padding-bottom: 0.28rem;
     }
     @include mixin.sp {
       margin: 0 auto;
-      padding: 0.38rem 0.4rem 0.4rem 0.4rem;
+      padding: 0.38rem 0.15rem 0.4rem 0.15rem;
       flex-direction: column;
       justify-content: flex-start;
     }
@@ -34,23 +36,21 @@
     margin-top: 24px;
     display: inline-block;
     @include mixin.tab {
+      margin-top: 0.24rem;
     }
   }
   
   &__navi-inner {
     display: flex;
+    margin-top: 27px;
+    line-height: 36px;
     @include mixin.sp {
       margin-top: 0.27rem;
       line-height: 0.36rem;
     }
   }
 
-  &__navi-left {
-    margin-top: 27px;
-  }
-
   &__navi-right {
-    margin-top: 27px;
     margin-left: 39px;
 
     @include mixin.tab {
@@ -91,10 +91,6 @@
 
   &__policy-link {
     display: block;
-
-    @include mixin.tab {
-      margin-top: 0.27rem;
-    }
   }
 
   &__map-link {
@@ -107,19 +103,16 @@
   }
 
   &__banners {
-    @include mixin.tab {
-      margin-top: 0.55rem;
-    }
     @include mixin.sp {
       margin-top: 0.22rem;
     }
   }
 
   &__banner {
-    width: 322px;
+    width: 320px;
 
     @include mixin.tab {
-      width: 3.22rem;
+      width: 3.2rem;
     }
     @include mixin.sp {
       width: 100%;
