@@ -38,12 +38,19 @@
     @include mixin.tab {
       margin-top: 0.24rem;
     }
+    @include mixin.sp {
+      margin-top: 0;
+    }
   }
   
   &__navi-inner {
     display: flex;
     margin-top: 27px;
     line-height: 36px;
+    @include mixin.tab {
+      margin-top: 0.27rem;
+      line-height: 0.36rem;
+    }
     @include mixin.sp {
       margin-top: 0.27rem;
       line-height: 0.36rem;
@@ -52,7 +59,6 @@
 
   &__navi-right {
     margin-left: 39px;
-
     @include mixin.tab {
       margin-left: 0.39rem;
     }
@@ -74,7 +80,6 @@
   &__contact-link {
     display: block;
     margin-top: 16px;
-
     @include mixin.tab {
       margin-top: 0.16rem;
     }
@@ -83,7 +88,6 @@
   &__faq-link {
     margin-top: 16px;
     display: block;
-
     @include mixin.tab {
       margin-top: 0.16rem;
     }
@@ -96,7 +100,6 @@
   &__map-link {
     margin-top: 16px;
     display: block;
-
     @include mixin.tab {
       margin-top: 0.16rem;
     }
@@ -110,7 +113,6 @@
 
   &__banner {
     width: 320px;
-
     @include mixin.tab {
       width: 3.2rem;
     }
@@ -126,11 +128,9 @@
   &__banner-nursing {
     margin-top: 15px;
     display: block;
-
     @include mixin.tab {
       margin-top: 0.15rem;
     }
-
     @include mixin.sp {
       margin-top: 0.15rem;
     }
@@ -141,7 +141,6 @@
     background-color: utility.$lightGray;
     text-align: center;
     font-size: 14px;
-
     @include mixin.tab {
       line-height: 0.35rem;
       font-size: 0.14rem;
