@@ -4,37 +4,59 @@
 .l-footer {
   margin-top: 150px;
   font-size: 16px;
+  background-color: utility.$paleBlue;
 
   @include mixin.tab {
+    height: 2.6rem;
     margin-top: 1.5rem;
   }
-
-  &__area {
-    height: 265px;
-    background-color: utility.$paleBlue;
-
+  @include mixin.sp {
+    margin-top: 1rem;
+    font-size: 0.16rem;
+  }
+  
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 25px;
     @include mixin.tab {
-      height: 2.6rem;
+    }
+    @include mixin.sp {
+      margin: 0 auto;
+      padding: 0.38rem 0.4rem 0.4rem 0.4rem;
+      flex-direction: column;
+      justify-content: flex-start;
     }
   }
 
   &__navi {
-    float: left;
-    margin-top: 79px;
-
+    margin-top: 24px;
+    display: inline-block;
     @include mixin.tab {
-      margin-top: 0.7rem;
+    }
+  }
+  
+  &__navi-inner {
+    display: flex;
+    @include mixin.sp {
+      margin-top: 0.27rem;
+      line-height: 0.36rem;
     }
   }
 
   &__navi-left {
-    float: left;
+    margin-top: 27px;
   }
 
   &__navi-right {
-    float: left;
+    margin-top: 27px;
     margin-left: 39px;
+
     @include mixin.tab {
+      margin-left: 0.39rem;
+    }
+    @include mixin.sp {
       margin-left: 0.39rem;
     }
   }
@@ -45,56 +67,62 @@
 
   &__guide-link {
     display: block;
-    margin-top: 27px;
     @include mixin.tab {
-      margin-top: 0.27rem;
     }
   }
 
   &__contact-link {
     display: block;
     margin-top: 16px;
+
     @include mixin.tab {
-    margin-top: 0.16rem;
+      margin-top: 0.16rem;
     }
   }
 
   &__faq-link {
     margin-top: 16px;
     display: block;
+
     @include mixin.tab {
-    margin-top: 0.16rem;
+      margin-top: 0.16rem;
     }
   }
 
   &__policy-link {
     display: block;
-    margin-top: 27px;
+
     @include mixin.tab {
-    margin-top: 0.27rem;
+      margin-top: 0.27rem;
     }
   }
 
   &__map-link {
     margin-top: 16px;
     display: block;
+
     @include mixin.tab {
       margin-top: 0.16rem;
     }
   }
 
   &__banners {
-    float: right;
-    margin-top: 55px;
     @include mixin.tab {
       margin-top: 0.55rem;
+    }
+    @include mixin.sp {
+      margin-top: 0.22rem;
     }
   }
 
   &__banner {
     width: 322px;
+
     @include mixin.tab {
       width: 3.22rem;
+    }
+    @include mixin.sp {
+      width: 100%;
     }
   }
 
@@ -105,8 +133,13 @@
   &__banner-nursing {
     margin-top: 15px;
     display: block;
+
     @include mixin.tab {
-    margin-top: 0.15rem;
+      margin-top: 0.15rem;
+    }
+
+    @include mixin.sp {
+      margin-top: 0.15rem;
     }
   }
 
@@ -115,9 +148,14 @@
     background-color: utility.$lightGray;
     text-align: center;
     font-size: 14px;
+
     @include mixin.tab {
-    line-height: 0.35rem;
-    font-size: 0.14rem;
+      line-height: 0.35rem;
+      font-size: 0.14rem;
+    }
+    @include mixin.sp {
+      line-height : 0.35rem;
+      font-size: 0.14rem;
     }
   }
 }
