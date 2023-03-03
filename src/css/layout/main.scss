@@ -5,4 +5,7 @@
   @include mixin.tab {
     margin-top: 1rem;
   }
+  @include mixin.sp {
+    margin-top: 0.7rem;
+  }
 }

@@ -40,7 +40,7 @@
     padding-right: 100px;
 
     @include mixin.tab {
-      padding-right: 1rem;
+      padding-right: 0.5rem;
     }
     @include mixin.sp {
       display: none;

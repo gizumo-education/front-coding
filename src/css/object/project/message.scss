@@ -14,7 +14,7 @@
   font-size: 25px;
   line-height: 36px;
   font-weight: 700;
-
+  
   @include mixin.tab {
     padding: 1.04rem 0 1.06rem 0;
     font-size: 0.25rem;
@@ -40,7 +40,4 @@
       margin-top: 0.02rem;
     }
   }
-
-
-
 }
