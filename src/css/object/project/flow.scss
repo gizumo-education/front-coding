@@ -275,12 +275,10 @@
   &__step-icon {
     width: 42px;
     height: 38px;
-
     @include mixin.tab {
       width: 0.42rem;
       height: 0.38rem;
     }
-
     @include mixin.sp {
       width: 0.26rem;
       height: 0.24rem;
@@ -288,12 +286,11 @@
   }
 
   &__step1-image {
-    margin: 0 78.8px 0 96.5px;
-
+    display: block;
+    margin: 0 auto;
     @include mixin.tab {
-      margin: 0 0.78rem 0 0.96rem;
+      width: 1rem;
     }
-
     @include mixin.sp {
       width: 0.76rem;
       height: 0.75rem;
@@ -302,12 +299,11 @@
   }
 
   &__step2-image {
-    margin: 0 103.8px 0 93.8px;
-
+    display: block;
+    margin: 0 auto;
     @include mixin.tab {
-      margin: 0 1.03rem 0 rem;
+      width: 0.79rem;
     }
-
     @include mixin.sp {
       width: 0.74rem;
       height: 0.74rem;
@@ -316,12 +312,11 @@
   }
 
   &__step3-image {
-    margin: 0 82.2px 0 88.7px;
-
+    display: block;
+    margin: 0 auto;
     @include mixin.tab {
-      margin: 0 0.82rem 0 0.88rem;
+      width: 1rem;
     }
-
     @include mixin.sp {
       width: 0.8rem;
       height: 0.75rem;
@@ -330,12 +325,11 @@
   }
 
   &__step4-image {
-    margin: 0 91.3px 0 78.4px;
-
+    display: block;
+    margin: 0 auto;
     @include mixin.tab {
-      margin: 0 0.91rem 0 0.78rem;
+      width: 1rem;
     }
-
     @include mixin.sp {
       width: 0.73rem;
       height: 0.75rem;
@@ -343,22 +337,8 @@
     }
   }
 
-  &__step1-title {
+  &__step-title {
     margin-top: 20px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-
-    @include mixin.tab {
-      margin-top: 0.2rem;
-      font-size: 0.2rem;
-      line-height: 0.28rem;
-    }
-  }
-
-  &__step2-title {
-    margin-top: 30px;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -367,53 +347,7 @@
     @include mixin.tab {
       margin-top: 0.3rem;
       font-size: 0.24rem;
-      line-height: 0.3rem;
-    }
-
-    @include mixin.sp {
-      margin-top: 0.22rem;
-      font-size: 0.2rem;
       line-height: 0.28rem;
-    }
-  }
-
-  &__step3-title {
-    margin-top: 33px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-
-    @include mixin.tab {
-      margin-top: 0.33rem;
-      font-size: 0.24rem;
-      line-height: 0.3rem;
-    }
-
-    @include mixin.sp {
-      margin-top: 0.22rem;
-      font-size: 0.2rem;
-      line-height: 0.28rem;
-    }
-  }
-
-  &__step4-title {
-    margin-top: 28px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-
-    @include mixin.tab {
-      margin-top: 0.28rem;
-      font-size: 0.24rem;
-      line-height: 0.3rem;
-    }
-
-    @include mixin.sp {
-      margin-top: 0.22rem;
-      font-size: 0.2rem;
-      line-height: 0.2rem;
     }
   }
 
