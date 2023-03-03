@@ -249,10 +249,14 @@
       margin-left: 0;
       margin-top: 0.16rem;
       padding: 0.04rem 0.06rem;
-      width: 3rem;
+      width: 100%;
       border: 0.01rem solid utility.$vividPink;
       border-radius: 0.05rem;
       font-size: 0.14rem;
+      &:focus {
+        outline: none;
+        border: 0.02rem solid utility.$vividPink;
+      }
     }
   }
 
