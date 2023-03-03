@@ -94,7 +94,7 @@
         display: block;
         position: absolute;
         left: 50%;
-        top: calc(100% + 0.1rem);
+        top: calc(100% + 0.15rem);
         transform: translateX(-50%) rotate(180deg);
         bottom: 0;
         border-bottom: 0.2rem solid utility.$deepPink;
@@ -153,7 +153,7 @@
         content: "";
         display: block;
         position: absolute;
-        top: calc(100% + 0.1rem);
+        top: calc(100% + 0.15rem);
         left: 50%;
         bottom: 0;
         border-bottom: 0.2rem solid utility.$deepPink;
@@ -214,7 +214,7 @@
         display: block;
         position: absolute;
         left: 50%;
-        top: calc(100% + 0.1rem);
+        top: calc(100% + 0.15rem);
         bottom: 0;
         border-bottom: 0.2rem solid utility.$deepPink;
         border-top: 0.2rem solid transparent;
@@ -347,6 +347,11 @@
     @include mixin.tab {
       margin-top: 0.3rem;
       font-size: 0.24rem;
+      line-height: 0.28rem;
+    }
+    @include mixin.sp {
+      margin-top: 0.22rem;
+      font-size: 0.2rem;
       line-height: 0.28rem;
     }
   }
