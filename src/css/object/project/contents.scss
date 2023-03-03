@@ -7,11 +7,17 @@
   @include mixin.tab {
     margin-top: 1rem;
   }
+  @include mixin.sp {
+    margin-top: 0.61rem;
+  }
 
   &__title {
     font-size: 25px;
     font-weight: 700;
     @include mixin.tab {
+      font-size: 0.25rem;
+    }
+    @include mixin.sp {
       font-size: 0.25rem;
     }
   }
@@ -26,6 +32,11 @@
       margin-top: 0.5rem;
       line-height: 0.23rem;
     }
+    @include mixin.sp {
+      flex-direction: column;
+      gap: 0.17rem;
+      margin-top: 0.3rem;
+    }
   }
 
   &__content-manual {
@@ -37,8 +48,14 @@
       url(../img/picture/contents-image1.jpg);
     color: utility.$white;
     @include mixin.tab {
-      padding: 0.73rem 0 0,55rem 0;
+      padding: 0.73rem 0 0.6rem 0;
       width: 3.8rem;
+      border-radius: 0.1rem;
+    }
+    @include mixin.sp {
+      padding: 0.6rem 0 0.6rem 0;
+      width: 100%;
+      background-size: cover;
       border-radius: 0.1rem;
     }
   }
@@ -52,8 +69,14 @@
       url(../img/picture/contents-image2.jpg);
     color: utility.$white;
     @include mixin.tab {
-      padding: 0.71rem 0 0.55erm 0;
+      padding: 0.71rem 0 0.55rem 0;
       width: 3.8rem;
+      border-radius: 0.1rem;
+    }
+    @include mixin.sp {
+      padding: 0.6rem 0 0.6rem 0;
+      width: 100%;
+      background-size: cover;
       border-radius: 0.1rem;
     }
   }
@@ -64,6 +87,9 @@
     @include mixin.tab {
       font-size: 0.24rem;
     }
+    @include mixin.sp {
+      font-size: 0.21rem;
+    }
   }
 
   &__content-text {
@@ -73,6 +99,11 @@
       margin-top: 0.45rem;
       font-size: 0.16rem;
     }
+    @include mixin.sp {
+      margin-top: 0.53rem;
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+    }
   }
 
   &__button {
@@ -81,6 +112,10 @@
     @include mixin.tab {
       margin-top: 0.8rem;
       width: 4.2rem;
+    }
+    @include mixin.sp {
+      margin-top: 0.34rem;
+      width: 100%;
     }
   }
 }
