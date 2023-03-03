@@ -90,18 +90,17 @@
       width: 2.77rem;
 
       &::after {
+        content: "";
         display: block;
         position: absolute;
-        content: "";
         left: 50%;
         top: calc(100% + 0.1rem);
+        transform: translateX(-50%) rotate(180deg);
+        bottom: 0;
         border-bottom: 0.2rem solid utility.$deepPink;
         border-top: 0.2rem solid transparent;
         border-left: 0.2rem solid transparent;
         border-right: 0.2rem solid transparent;
-        transform: translateX(-50%) rotate(180deg);
-        bottom: 0;
-        height: 0.2rem;
       }
     }
   }
@@ -150,19 +149,19 @@
       padding: 0.53rem 0 0.2rem 0;
       width: 2.77rem;
     }
+
     &::after {
+      content: "";
       display: block;
       position: absolute;
-      content: "";
-      left: 50%;
       top: calc(100% + 0.1rem);
+      left: 50%;
+      bottom: 0;
       border-bottom: 0.2rem solid utility.$deepPink;
       border-top: 0.2rem solid transparent;
       border-left: 0.2rem solid transparent;
       border-right: 0.2rem solid transparent;
       transform: translateX(-50%) rotate(180deg);
-      bottom: 0;
-      height: 0.2rem;
     }
   }
 
@@ -172,7 +171,6 @@
     width: calc((100% - 60px) / 4);
     border: 3px solid utility.$deepPink;
     border-radius: 10px;
-
     &::after {
       content: "";
       display: block;
@@ -185,13 +183,11 @@
       border-right: 20px solid transparent;
       border-bottom: 20px solid transparent
     }
-
     @include mixin.tab {
       padding: 0.58rem 0 0.40rem 0;
       width: calc((100% - 0.6rem) / 4);
       border: 0.03rem solid utility.$deepPink;
       border-radius: 0.1rem;
-
       &::after {
         content: "";
         display: block;
@@ -205,24 +201,22 @@
         border-bottom: 0.2rem solid transparent
       }
     }
-
     @include mixin.sp {
       padding: 0.53rem 0 0.2rem 0;
       width: 2.77rem;
     }
     &::after {
+      content: "";
       display: block;
       position: absolute;
-      content: "";
       left: 50%;
       top: calc(100% + 0.1rem);
+      bottom: 0;
       border-bottom: 0.2rem solid utility.$deepPink;
       border-top: 0.2rem solid transparent;
       border-left: 0.2rem solid transparent;
       border-right: 0.2rem solid transparent;
       transform: translateX(-50%) rotate(180deg);
-      bottom: 0;
-      height: 0.2rem;
     }
   }
 
@@ -232,19 +226,16 @@
     width: calc((100% - 60px) / 4);
     border: 3px solid utility.$deepPink;
     border-radius: 10px;
-
     @include mixin.tab {
       padding: 0.53rem 0 0.40rem 0;
       width: calc((100% - 0.6rem) / 4);
       border: 0.03rem solid utility.$deepPink;
       border-radius: 0.1rem;
     }
-
     @include mixin.sp {
       padding: 0.53rem 0 0.2rem 0;
       width: 2.77rem;
     }
-
   }
 
   &__step-circle {
@@ -258,14 +249,12 @@
     height: 60px;
     background-color: utility.$deepPink;
     border-radius: 50%;
-
     @include mixin.tab {
       top: 0.08rem;
       left: 0.08rem;
       width: 0.6rem;
       height: 0.6rem;
     }
-
     @include mixin.sp {
       top: 0.08rem;
       left: 0.08rem;
@@ -277,12 +266,10 @@
   &__step-icon {
     width: 42px;
     height: 38px;
-
     @include mixin.tab {
       width: 0.42rem;
       height: 0.38rem;
     }
-
     @include mixin.sp {
       width: 0.26rem;
       height: 0.24rem;
@@ -291,11 +278,9 @@
 
   &__step1-image {
     margin: 0 78.8px 0 96.5px;
-
     @include mixin.tab {
       margin: 0 0.78rem 0 0.96rem;
     }
-
     @include mixin.sp {
       width: 0.76rem;
       height: 0.75rem;
@@ -305,11 +290,9 @@
 
   &__step2-image {
     margin: 0 103.8px 0 93.8px;
-
     @include mixin.tab {
       margin: 0 1.03rem 0 rem;
     }
-
     @include mixin.sp {
       width: 0.74rem;
       height: 0.74rem;
@@ -319,17 +302,25 @@
 
   &__step3-image {
     margin: 0 82.2px 0 88.7px;
-
     @include mixin.tab {
       margin: 0 0.82rem 0 0.88rem;
+    }
+    @include mixin.sp {
+      width: 0.8rem;
+      height: 0.75rem;
+      margin: 0 0.98rem 0 0.98rem;
     }
   }
 
   &__step4-image {
     margin: 0 91.3px 0 78.4px;
-
     @include mixin.tab {
       margin: 0 0.91rem 0 0.78rem;
+    }
+    @include mixin.sp {
+      width: 0.73rem;
+      height: 0.75rem;
+      margin: 0 1rem 0 1rem;
     }
   }
 
@@ -339,11 +330,10 @@
     font-size: 24px;
     line-height: 30px;
     text-align: center;
-
     @include mixin.tab {
       margin-top: 0.2rem;
       font-size: 0.2rem;
-      line-height: 0.3rem;
+      line-height: 0.28rem;
     }
   }
 
@@ -353,17 +343,15 @@
     font-size: 24px;
     line-height: 30px;
     text-align: center;
-
     @include mixin.tab {
       margin-top: 0.3rem;
       font-size: 0.24rem;
       line-height: 0.3rem;
     }
-
     @include mixin.sp {
       margin-top: 0.22rem;
       font-size: 0.2rem;
-      line-height: 0.3rem;
+      line-height: 0.28rem;
     }
   }
 
@@ -373,11 +361,15 @@
     font-size: 24px;
     line-height: 30px;
     text-align: center;
-
     @include mixin.tab {
       margin-top: 0.33rem;
       font-size: 0.24rem;
       line-height: 0.3rem;
+    }
+    @include mixin.sp {
+      margin-top: 0.22rem;
+      font-size: 0.2rem;
+      line-height: 0.28rem;
     }
   }
 
@@ -387,11 +379,15 @@
     font-size: 24px;
     line-height: 30px;
     text-align: center;
-
     @include mixin.tab {
       margin-top: 0.28rem;
       font-size: 0.24rem;
       line-height: 0.3rem;
+    }
+    @include mixin.sp {
+      margin-top: 0.22rem;
+      font-size: 0.2rem;
+      line-height: 0.2rem;
     }
   }
 
@@ -401,7 +397,6 @@
     width: 237px;
     font-size: 14px;
     line-height: 20px;
-
     @include mixin.tab {
       margin-top: 0.18rem;
       margin-left: 0.2rem;
@@ -410,7 +405,10 @@
       line-height: 0.2rem;
     }
     @include mixin.sp {
+      margin: 0.1rem auto 0 auto;
       width: 2.4rem;
+      font-size: 0.14rem;
+      line-height: 0.2rem;
     }
   }
 
@@ -420,11 +418,16 @@
     width: 237px;
     font-size: 14px;
     line-height: 20px;
-
     @include mixin.tab {
       margin-top: 0.18rem;
       margin-left: 0.18rem;
       width: 2.37rem;
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+    }
+    @include mixin.sp {
+      margin: 0.1rem auto 0 auto;
+      width: 2.4rem;
       font-size: 0.14rem;
       line-height: 0.2rem;
     }
@@ -436,7 +439,6 @@
     width: 237px;
     font-size: 14px;
     line-height: 20px;
-
     @include mixin.tab {
       margin-top: 0.30rem;
       margin-left: 0.18rem;
@@ -444,7 +446,12 @@
       font-size: 0.14rem;
       line-height: 0.2rem;
     }
-
+    @include mixin.sp {
+      margin: 0.1rem auto 0 auto;
+      width: 2.4rem;
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+    }
   }
 
   &__step4-text {
@@ -453,11 +460,16 @@
     width: 237px;
     font-size: 14px;
     line-height: 20px;
-
     @include mixin.tab {
       margin-top: 0.3rem;
       margin-left: 0.2rem;
       width: 2.37rem;
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+    }
+    @include mixin.sp {
+      margin: 0.1rem auto 0 auto;
+      width: 2.4rem;
       font-size: 0.14rem;
       line-height: 0.2rem;
     }
