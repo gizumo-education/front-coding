@@ -2,6 +2,7 @@
 
 .l-main {
   margin-top: 100px;
+  position: relative;
   @include mixin.tab {
     margin-top: 1rem;
   }
