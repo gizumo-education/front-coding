@@ -127,9 +127,9 @@
   }
 
   &__container {
-    margin-left: 16px;
-    position: relative;
     display: inline-block;
+    position: relative;
+    margin-left: 16px;
     &::after {
       display: block;
       content: '';
@@ -174,13 +174,13 @@
 
   &__select {
     position: relative;
+    width: 200px;
     padding: 16.5px 14.5px;
     appearance: none;
-    width: 200px;
     background-color: utility.$white;
     border: 1px solid utility.$vividPink;
-    font-size: 18px;
     border-radius: 10px;
+    font-size: 18px;
     &::-ms-expand {
       display: none;
     }
@@ -189,18 +189,18 @@
       border: 3px solid utility.$vividPink;
     }
     @include mixin.tab {
-      padding: 0.165rem 0.145rem;
       width: 2rem;
-      font-size: 0.18rem;
+      padding: 0.165rem 0.145rem;
       border-radius: 0.1rem;
+      font-size: 0.18rem;
       &:focus {
         outline: none;
         border: 0.03rem solid utility.$vividPink;
       }
     }
     @include mixin.sp {
-      padding: 0.05rem 0.07rem;
       width: 1rem;
+      padding: 0.05rem 0.07rem;
       border: 0.01rem solid utility.$vividPink;
       border-radius: 0.05rem;
       font-size: 0.12rem;
@@ -213,10 +213,10 @@
   }
 
   &__text {
-    margin-left: 16px;
-    padding: 16.5px 14.5px;
     position: relative;
     width: 300px;
+    margin-left: 16px;
+    padding: 16.5px 14.5px;
     border: 1px solid utility.$vividPink;
     border-radius: 10px;
     font-size: 18px;
@@ -225,18 +225,18 @@
       border: 3px solid utility.$vividPink;
     }
     @include mixin.tab {
+      width: 3rem;
       margin-left: 0.16rem;
       padding: 0.165rem 0.145rem;
-      width: 3rem;
-      border: 0.015ssrem solid utility.$vividPink;
+      border: 0.015rem solid utility.$vividPink;
       border-radius: 0.1rem;
       font-size: 0.18rem;
     }
     @include mixin.sp {
-      margin-left: 0;
-      margin-top: 0.16rem;
-      padding: 0.04rem 0.06rem;
       width: 100%;
+      margin-top: 0.16rem;
+      margin-left: 0;
+      padding: 0.04rem 0.06rem;
       border: 0.01rem solid utility.$vividPink;
       border-radius: 0.05rem;
       font-size: 0.14rem;
@@ -277,9 +277,9 @@
       width: 0.29rem;
     }
     @include mixin.sp {
-      vertical-align: top;
-      margin: 0.11rem 0.1rem 0 0;
       width: 0.17rem;
+      margin: 0.11rem 0.1rem 0 0;
+      vertical-align: top;
     }
   }
 

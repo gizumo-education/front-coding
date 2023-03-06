@@ -23,10 +23,10 @@
   }
 
   &__features {
-    margin-top: 53px;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    margin-top: 53px;
     @include mixin.tab {
       margin-top: 0.53rem;
       justify-content: center;

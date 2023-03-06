@@ -9,21 +9,19 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
   color: utility.$white;
+  text-align: center;
   font-size: 25px;
-  line-height: 36px;
   font-weight: 700;
-  
+  line-height: 36px;
   @include mixin.tab {
     padding: 1.04rem 0 1.06rem 0;
     font-size: 0.25rem;
     line-height: 0.36rem;
   }
-
   @include mixin.sp {
-    background-size: cover;
     padding: 0.16rem 0 0.16rem 0;
+    background-size: cover;
     font-size: 0.14rem;
     font-weight: 400;
     line-height: 0.2rem;
@@ -31,11 +29,9 @@
 
   &__text {
     margin-top: 21px;
-
     @include mixin.tab {
       margin-top: 0.21rem;
     }
-  
     @include mixin.sp {
       margin-top: 0.02rem;
     }

@@ -10,21 +10,19 @@
   padding: 25px 0;
   background-color: utility.$white;
   font-size: 16px;
-  
   @include mixin.tab {
     padding: 0.25rem 0;
     font-size: 0.16rem;
   }
   @include mixin.sp {
-    font-size: 0.15rem;
-    height: 0.7rem;
     padding: 0;
+    height: 0.7rem;
+    font-size: 0.15rem;
   }
   
   &__container {
     float: right;
     padding-right: 100px;
-    
     @include mixin.tab {
       padding-right: 0.5rem;
     }
@@ -36,15 +34,14 @@
   &__lists {
     display: flex;
     line-height: 50px;
-
     @include mixin.tab {
       line-height: 0.5rem;
     }
   }
 
   &__list {
-    margin-left: 16px;
     display: inline;
+    margin-left: 16px;
     @include mixin.tab {
       margin-left: 0.14rem;
       font-size: 0.14rem;
@@ -54,7 +51,6 @@
   &__icon-black {
     height: 16px;
     vertical-align: middle;
-
     @include mixin.tab {
       height: 0.16rem;
     }
@@ -113,7 +109,6 @@
 
   &__link-curious {
     margin-left: 25px;
-
     @include mixin.tab {
       margin-left: 0.25rem;
     }
@@ -121,7 +116,6 @@
 
   &__link-brouse {
     margin-left: 15px;
-
     @include mixin.tab {
       margin-left: 0.15rem;
     }
@@ -129,7 +123,6 @@
 
   &__link-search {
     margin-left: 15px;
-
     @include mixin.tab {
       margin-left: 0.15rem;
     }
@@ -138,27 +131,25 @@
   &__button-curious {
     padding: 0 21px 0 10px;
     border-radius: 10px;
-    background-color: utility.$skyBlue;
     min-width: 164px;
-    font-size: 14px;
+    background-color: utility.$skyBlue;
     color: utility.$white;
-
+    font-size: 14px;
     @include mixin.tab {
       padding: 0 0.21rem 0 0.1rem;
       border-radius: 0.1rem;
-      font-size: 0.14rem;
       min-width: 1.7rem;
+      font-size: 0.14rem;
     }
   }
 
   &__button-browse {
     padding: 0 32px 0 24px;
     border-radius: 10px;
-    background-color: utility.$skyBlue;
     min-width: 144px;
+    background-color: utility.$skyBlue;
     color: utility.$white;
     font-size: 14px;
-
     @include mixin.tab {
       padding: 0 0.32rem 0 0.24rem;
       border-radius: 0.1rem;
@@ -170,23 +161,21 @@
   &__button-search {
     padding: 0 28px 0 30px;
     border-radius: 10px;
-    background-color: utility.$skyBlue;
     min-width: 144px;
+    background-color: utility.$skyBlue;
     color: utility.$white;
     font-size: 14px;
-
     @include mixin.tab {
       padding: 0 0.28rem 0 0.3rem;
+      min-width: 1.5rem;
       border-radius: 0.1rem;
       font-size: 0.14rem;
-      min-width: 1.5rem;
     }
   }
 
   &__icon-curious {
     height: 18px;
     vertical-align: middle;
-
     @include mixin.tab {
       height: 0.18rem;
     }
@@ -195,7 +184,6 @@
   &__icon-browse {
     height: 18px;
     vertical-align: middle;
-
     @include mixin.tab {
       height: 0.18rem;
     }
@@ -204,7 +192,6 @@
   &__icon-search {
     height: 16px;
     vertical-align: middle;
-
     @include mixin.tab {
       height: 0.16rem;
     }
@@ -212,7 +199,6 @@
 
   &__button-text {
     margin-left: 10px;
-
     @include mixin.tab {
       height: 0.1rem;
     }

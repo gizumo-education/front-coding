@@ -3,11 +3,9 @@
 
 .p-flow {
   margin-top: 105px;
-
   @include mixin.tab {
     margin-top: 1.05rem;
   }
-
   @include mixin.sp {
     margin-top: 0.6rem;
   }
@@ -16,42 +14,37 @@
     text-align: center;
     font-size: 25px;
     font-weight: 700;
-
     @include mixin.tab {
       font-size: 0.25rem;
     }
-
     @include mixin.sp {
       font-size: 0.25rem;
     }
   }
 
   &__steps {
-    margin-top: 51.1px;
     display: flex;
     gap: 20px;
     position: relative;
-
+    margin-top: 51.1px;
     @include mixin.tab {
       margin-top: 0.51rem;
       gap: 0.2rem
     }
-
     @include mixin.sp {
-      margin-top: 0.35rem;
-      gap: 0.4rem;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 0.4rem;
+      margin-top: 0.35rem;
     }
   }
 
   &__step1 {
-    padding: 58.5px 0 40.8px 0;
     position: relative;
     width: calc((100% - 60px) / 4);
+    padding: 58.5px 0 40.8px 0;
     border: 3px solid utility.$deepPink;
     border-radius: 10px;
-
     &::after {
       content: "";
       display: block;
@@ -64,13 +57,11 @@
       border-right: 20px solid transparent;
       border-bottom: 20px solid transparent
     }
-
     @include mixin.tab {
       padding: 0.58rem 0 0.40rem 0;
       width: calc((100% - 0.6rem) / 4);
       border: 0.03rem solid utility.$deepPink;
       border-radius: 0.1rem;
-
       &::after {
         content: "";
         display: block;
@@ -88,7 +79,6 @@
     @include mixin.sp {
       padding: 0.53rem 0 0.2rem 0;
       width: 2.77rem;
-
       &::after {
         content: "";
         display: block;
@@ -106,12 +96,11 @@
   }
 
   &__step2 {
-    padding: 68.8px 0 40.8px 0;
     position: relative;
+    padding: 68.8px 0 40.8px 0;
     width: calc((100% - 60px) / 4);
     border: 3px solid utility.$deepPink;
     border-radius: 10px;
-
     &::after {
       content: "";
       display: block;
@@ -124,13 +113,11 @@
       border-right: 20px solid transparent;
       border-bottom: 20px solid transparent
     }
-
     @include mixin.tab {
-      padding: 0.68rem 0 0.40rem 0;
       width: calc((100% - 0.6rem) / 4);
+      padding: 0.68rem 0 0.40rem 0;
       border: 0.03rem solid utility.$deepPink;
       border-radius: 0.1rem;
-
       &::after {
         content: "";
         display: block;
@@ -148,7 +135,6 @@
     @include mixin.sp {
       padding: 0.53rem 0 0.2rem 0;
       width: 2.77rem;
-
       &::after {
         content: "";
         display: block;
@@ -171,7 +157,6 @@
     width: calc((100% - 60px) / 4);
     border: 3px solid utility.$deepPink;
     border-radius: 10px;
-
     &::after {
       content: "";
       display: block;
@@ -184,13 +169,11 @@
       border-right: 20px solid transparent;
       border-bottom: 20px solid transparent
     }
-
     @include mixin.tab {
       padding: 0.58rem 0 0.40rem 0;
       width: calc((100% - 0.6rem) / 4);
       border: 0.03rem solid utility.$deepPink;
       border-radius: 0.1rem;
-
       &::after {
         content: "";
         display: block;
@@ -204,11 +187,9 @@
         border-bottom: 0.2rem solid transparent
       }
     }
-
     @include mixin.sp {
       padding: 0.53rem 0 0.2rem 0;
       width: 2.77rem;
-
       &::after {
         content: "";
         display: block;
@@ -231,14 +212,12 @@
     width: calc((100% - 60px) / 4);
     border: 3px solid utility.$deepPink;
     border-radius: 10px;
-
     @include mixin.tab {
       padding: 0.53rem 0 0.40rem 0;
       width: calc((100% - 0.6rem) / 4);
       border: 0.03rem solid utility.$deepPink;
       border-radius: 0.1rem;
     }
-
     @include mixin.sp {
       padding: 0.53rem 0 0.2rem 0;
       width: 2.77rem;
@@ -256,14 +235,12 @@
     height: 60px;
     background-color: utility.$deepPink;
     border-radius: 50%;
-
     @include mixin.tab {
       top: 0.08rem;
       left: 0.08rem;
       width: 0.6rem;
       height: 0.6rem;
     }
-
     @include mixin.sp {
       top: 0.08rem;
       left: 0.08rem;
@@ -343,7 +320,6 @@
     font-size: 24px;
     line-height: 30px;
     text-align: center;
-
     @include mixin.tab {
       margin-top: 0.3rem;
       font-size: 0.24rem;
@@ -357,43 +333,39 @@
   }
 
   &__step1-text {
+    width: 237px;
     margin-top: 18px;
     margin-left: 20.8px;
-    width: 237px;
     font-size: 14px;
     line-height: 20px;
-
     @include mixin.tab {
+      width: 2.37rem;
       margin-top: 0.18rem;
       margin-left: 0.2rem;
-      width: 2.37rem;
       font-size: 0.14rem;
       line-height: 0.2rem;
     }
-
     @include mixin.sp {
-      margin: 0.1rem auto 0 auto;
       width: 2.4rem;
+      margin: 0.1rem auto 0 auto;
       font-size: 0.14rem;
       line-height: 0.2rem;
     }
   }
 
   &__step2-text {
+    width: 237px;
     margin-top: 18px;
     margin-left: 18.8px;
-    width: 237px;
     font-size: 14px;
     line-height: 20px;
-
     @include mixin.tab {
+      width: 2.37rem;
       margin-top: 0.18rem;
       margin-left: 0.18rem;
-      width: 2.37rem;
       font-size: 0.14rem;
       line-height: 0.2rem;
     }
-
     @include mixin.sp {
       margin: 0.1rem auto 0 auto;
       width: 2.4rem;
@@ -403,46 +375,42 @@
   }
 
   &__step3-text {
+    width: 237px;
     margin-top: 30px;
     margin-left: 18.8px;
-    width: 237px;
     font-size: 14px;
     line-height: 20px;
-
     @include mixin.tab {
+      width: 2.37rem;
       margin-top: 0.30rem;
       margin-left: 0.18rem;
-      width: 2.37rem;
       font-size: 0.14rem;
       line-height: 0.2rem;
     }
-
     @include mixin.sp {
-      margin: 0.1rem auto 0 auto;
       width: 2.4rem;
+      margin: 0.1rem auto 0 auto;
       font-size: 0.14rem;
       line-height: 0.2rem;
     }
   }
 
   &__step4-text {
+    width: 237px;
     margin-top: 30px;
     margin-left: 20px;
-    width: 237px;
     font-size: 14px;
     line-height: 20px;
-
     @include mixin.tab {
+      width: 2.37rem;
       margin-top: 0.3rem;
       margin-left: 0.2rem;
-      width: 2.37rem;
       font-size: 0.14rem;
       line-height: 0.2rem;
     }
-
     @include mixin.sp {
-      margin: 0.1rem auto 0 auto;
       width: 2.4rem;
+      margin: 0.1rem auto 0 auto;
       font-size: 0.14rem;
       line-height: 0.2rem;
     }

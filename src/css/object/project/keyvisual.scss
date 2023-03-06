@@ -14,14 +14,12 @@
     background-image: url(../img/picture/keyvisual.jpg);
     background-size: cover;
     text-align: center;
-
     @include mixin.tab {
       position: relative;
-      background-size: cover;
       width: 11.8rem;
       height: 5rem;
+      background-size: cover;
     }
-
     @include mixin.sp {
       position: relative;
       width: 100%;
@@ -52,14 +50,14 @@
   &__rank {
     @include mixin.tab {
       display: block;
-      margin: 0 auto;
       width: 3.41rem;
+      margin: 0 auto;
     }
 
     @include mixin.sp {
       display: block;
-      margin: 0 auto;
       width: 1.49rem;
+      margin: 0 auto;
     }
   }
 
@@ -71,33 +69,33 @@
     }
 
     @include mixin.sp {
-      margin-top: 0.12rem;
       width: 2.72rem;
+      margin-top: 0.12rem;
     }
   }
 
   &__copy-gizjob {
     @include mixin.tab {
-      margin: 0 auto;
       display: block;
       width: 8rem;
+      margin: 0 auto;
     }
     @include mixin.sp {
-      margin: 0 auto;
       display: block;
       width: 8rem;
+      margin: 0 auto;
     }
   }
 
   &__publish {
     display: inline-block;
-    margin-top: 55px;
     width: 391px;
     height: 69px;
+    margin-top: 55px;
     border: 3px solid utility.$green;
     border-radius: 10px;
-    color: utility.$green;
     background-color: utility.$white;
+    color: utility.$green;
     line-height: 69px;
     font-size: 20px;
 
@@ -115,7 +113,6 @@
       width: 1.7rem;
       height: 0.3rem;
       margin-top: 0.18rem;
-      height: 0.3rem;
       border: 0.01rem solid utility.$green;
       border-radius: 0.06rem;
       line-height: 0.3rem;

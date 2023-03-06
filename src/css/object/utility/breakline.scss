@@ -3,7 +3,6 @@
 .u-breakline {
   &__pc {
     display: block;
-
     @include mixin.sp {
       display: none;
     }
@@ -11,7 +10,6 @@
 
   &__sp {
     display: none;
-
     @include mixin.sp {
       display: block;
     }
