@@ -102,89 +102,90 @@
           働きたい職種・地域・希望給与を入れて検索！
         </p>
         <form class="p-search__form" action="test" method="POST">
-          <div class="p-search__first-container">
-            <select class="p-search__select" name="category">
-              <option value="medical-affairs" selected>
-                医療事務
-              </option>
-              <option value="dispensing-affairs">
-                調剤事務
-              </option>
-              <option value="medical-information-manager">
-                診療情報管理士
-              </option>
-              <option value="dental-assistant">
-                歯科助手
-              </option>
-              <option value="dental-office">
-                歯科事務
-              </option>
-              <option value="nursing-assistant">
-                看護補助・看護助手
-              </option>
-              <option value="hospital-se">
-                病院内SE
-              </option>
-            </select>
+          <div class="p-search__containers">
+            <div class="p-search__first-container">
+              <select class="p-search__select" name="category">
+                <option value="medical-affairs" selected>
+                  医療事務
+                </option>
+                <option value="dispensing-affairs">
+                  調剤事務
+                </option>
+                <option value="medical-information-manager">
+                  診療情報管理士
+                </option>
+                <option value="dental-assistant">
+                  歯科助手
+                </option>
+                <option value="dental-office">
+                  歯科事務
+                </option>
+                <option value="nursing-assistant">
+                  看護補助・看護助手
+                </option>
+                <option value="hospital-se">
+                  病院内SE
+                </option>
+              </select>
+            </div>
+            <div class="p-search__container">
+              <select class="p-search__select" name="prefecture">
+                <option value="ibaraki">
+                  茨城県
+                </option>
+                <option value="kanagawa">
+                  神奈川県
+                </option>
+                <option value="gunma">
+                  群馬県
+                </option>
+                <option value="saitama">
+                  埼玉県
+                </option>
+                <option value="chiba">
+                  千葉県
+                </option>
+                <option value="tokyo" selected>
+                  東京都
+                </option>
+                <option value="tochigi">
+                  栃木県
+                </option>
+              </select>
+            </div>
+            <div class="p-search__container">
+              <select class="p-search__select" name="salary">
+                <option value="170000">
+                  月給17万～
+                </option>
+                <option value="180000">
+                  月給18万～
+                </option>
+                <option value="190000">
+                  月給19万～
+                </option>
+                <option value="200000" selected>
+                  月給20万～
+                </option>
+                <option value="210000">
+                  月給21万～
+                </option>
+                <option value="220000">
+                  月給22万～
+                </option>
+                <option value="230000">
+                  月給23万～
+                </option>
+              </select>
+            </div>
+            <input class="p-search__text" type="text" placeholder="キーワード・企業名・スキルなど">
           </div>
-          <div class="p-search__container">
-            <select class="p-search__select" name="prefecture">
-              <option value="ibaraki">
-                茨城県
-              </option>
-              <option value="kanagawa">
-                神奈川県
-              </option>
-              <option value="gunma">
-                群馬県
-              </option>
-              <option value="saitama">
-                埼玉県
-              </option>
-              <option value="chiba">
-                千葉県
-              </option>
-              <option value="tokyo" selected>
-                東京都
-              </option>
-              <option value="tochigi">
-                栃木県
-              </option>
-            </select>
-          </div>
-          <div class="p-search__container">
-            <select class="p-search__select" name="salary">
-              <option value="170000">
-                月給17万～
-              </option>
-              <option value="180000">
-                月給18万～
-              </option>
-              <option value="190000">
-                月給19万～
-              </option>
-              <option value="200000" selected>
-                月給20万～
-              </option>
-              <option value="210000">
-                月給21万～
-              </option>
-              <option value="220000">
-                月給22万～
-              </option>
-              <option value="230000">
-                月給23万～
-              </option>
-            </select>
-          </div>
-          <br class="u-breakline__sp">
-          <input class="p-search__text" type="text" placeholder="キーワード・企業名・スキルなど">
-          <span class="c-link p-search__link">
-            <button type="submit" class="c-button p-search__button">
-              <img class="p-search__icon-search" src="../src/img/icon/search-white-icon.png" alt="検索">
-              <span class="p-search__search-text">検索する</span>
-            </button>
-          </span>
+            <span class="c-link p-search__link">
+              <button type="submit" class="c-button p-search__button">
+                <img class="p-search__icon-search" src="../src/img/icon/search-white-icon.png" alt="検索">
+                <span class="p-search__search-text">検索する</span>
+              </button>
+            </span>
         </form>
       </div>
     </section>
