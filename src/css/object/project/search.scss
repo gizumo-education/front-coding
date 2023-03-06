@@ -8,13 +8,11 @@
     border-radius: 10px;
     background-color: utility.$pastelBlue;
     text-align: center;
-
     @include mixin.tab {
       margin-top: 0.61rem;
       padding: 0.4rem 0;
       border-radius: 0.1rem;
     }
-
     @include mixin.sp {
       margin-top: 0.25rem;
       padding: 0.15rem;
@@ -28,13 +26,11 @@
     border-radius: 10px;
     background-color: utility.$pastelBlue;
     text-align: center;
-
     @include mixin.tab {
       margin-top: 1.5rem;
       padding: 0.4rem 0;
       border-radius: 0.1rem;
     }
-
     @include mixin.sp {
       margin-top: 0.6rem;
       padding: 0.15rem;
@@ -45,11 +41,9 @@
   &__title {
     font-size: 25px;
     font-weight: 700;
-
     @include mixin.tab {
       font-size: 0.25rem;
     }
-
     @include mixin.sp {
       font-size: 0.22rem;
     }
@@ -58,12 +52,10 @@
   &__sentense {
     margin-top: 20px;
     font-size: 20px;
-
     @include mixin.tab {
       margin-top: 0.2rem;
       font-size: 0.2rem;
     }
-
     @include mixin.sp {
       margin-top: 0.16rem;
       font-size: 0.14rem;
@@ -72,11 +64,9 @@
 
   &__form {
     margin-top: 26px;
-
     @include mixin.tab {
       margin-top: 0.2rem;
     }
-
     @include mixin.sp {
       margin-top: 0.12rem;
     }
@@ -85,7 +75,6 @@
   &__first-container {
     position: relative;
     display: inline-block;
-
     &::after {
       display: block;
       content: '';
@@ -98,7 +87,6 @@
       border-right: 10px solid transparent;
       border-left: 10px solid transparent;
     }
-
     @include mixin.tab {
       &::after {
         display: block;
@@ -113,7 +101,6 @@
         border-left: 0.1rem solid transparent;
       }
     }
-
     @include mixin.sp {
       &::after {
         display: block;
@@ -133,7 +120,6 @@
     margin-left: 16px;
     position: relative;
     display: inline-block;
-
     &::after {
       display: block;
       content: '';
@@ -146,7 +132,6 @@
       border-right: 10px solid transparent;
       border-left: 10px solid transparent;
     }
-
     @include mixin.tab {
       &::after {
         display: block;
@@ -161,7 +146,6 @@
         border-left: 0.1rem solid transparent;
       }
     }
-
     @include mixin.sp {
       &::after {
         display: block;
@@ -186,28 +170,23 @@
     border: 1px solid utility.$vividPink;
     font-size: 18px;
     border-radius: 10px;
-
     &::-ms-expand {
       display: none;
     }
-
     &:focus {
       outline: none;
       border: 3px solid utility.$vividPink;
     }
-
     @include mixin.tab {
       padding: 0.165rem 0.145rem;
       width: 2rem;
       font-size: 0.18rem;
       border-radius: 0.1rem;
-
       &:focus {
         outline: none;
         border: 0.03rem solid utility.$vividPink;
       }
     }
-
     @include mixin.sp {
       padding: 0.05rem 0.07rem;
       width: 1rem;
@@ -230,12 +209,10 @@
     border: 1px solid utility.$vividPink;
     border-radius: 10px;
     font-size: 18px;
-    
     &:focus {
       outline: none;
       border: 3px solid utility.$vividPink;
     }
-    
     @include mixin.tab {
       margin-left: 0.16rem;
       padding: 0.165rem 0.145rem;
@@ -244,7 +221,6 @@
       border-radius: 0.1rem;
       font-size: 0.18rem;
     }
-    
     @include mixin.sp {
       margin-left: 0;
       margin-top: 0.16rem;
@@ -263,11 +239,9 @@
   &__link {
     margin-left: 16px;
     cursor: pointer;
-
     @include mixin.tab {
       margin-left: 0.16rem;
     }
-
     @include mixin.sp {
       margin-left: 0;
       margin-top: 0.19rem;
@@ -277,11 +251,9 @@
   &__button {
     cursor: pointer;
     padding: 0 20px 0 14.2px;
-
     @include mixin.tab {
       padding: 0 0.2rem 0 0.142rem;
     }
-
     @include mixin.sp {
       margin-top: 0.19rem;
       padding: 0 0.43rem 0 0.12rem;
@@ -290,7 +262,9 @@
 
   &__icon-search {
     vertical-align: middle;
-
+    @include mixin.tab {
+      width: 0.29rem;
+    }
     @include mixin.sp {
       vertical-align: top;
       width: 0.17rem;
@@ -300,12 +274,11 @@
 
   &__search-text {
     margin-left: 4px;
-
     @include mixin.tab {
-      margin-left: 0.04em;
+      margin-left: 0.04rem;
     }
     @include mixin.sp {
-      margin-left: 0.04em;
+      margin-left: 0.04rem;
     }
   }
 }
