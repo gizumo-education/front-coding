@@ -111,6 +111,7 @@
       }
     }
     @include mixin.sp {
+    margin-left: 0;
       &::after {
         display: block;
         content: '';
@@ -156,7 +157,7 @@
       }
     }
     @include mixin.sp {
-    margin-left: 0.1rem;
+    margin-left: 0;
       &::after {
         display: block;
         content: '';
