@@ -18,18 +18,30 @@
     position: fixed;
     z-index: 1000;
     width: 100%;
-    padding: 0.3rem;
-    background-color: util.$shade;
-    display: none;
+    right: -100%;
+    padding: 0.5rem;
+    background-color: util.$nav;
+    display: flex;
     flex-flow: column;
+    transition: .4s;
+    padding-bottom: 2.5rem;
 
+    &.active {
+      right: 0;
+    }
 
     &__link {
-      font-size: 0.1rem;
+      font-size: 0.2rem;
       font-weight: util.$bold;
       color: util.$white;
-      line-height: 0.4rem;
+      line-height: 0.2rem;
       transition: .3s;
+      margin-top: 0.3rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
 
       &:hover {
         opacity: .8;
