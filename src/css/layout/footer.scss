@@ -5,6 +5,7 @@
   margin-top: 150px;
   font-size: 16px;
   background-color: utility.$paleBlue;
+
   @include mixin.tab {
     margin-top: 1.5rem;
     font-size: 0.16rem;
@@ -52,7 +53,7 @@
     }
     @include mixin.sp {
       margin-top: 0.27rem;
-      line-height: 0.36rem;
+      line-height: 0.3rem;
     }
   }
 
