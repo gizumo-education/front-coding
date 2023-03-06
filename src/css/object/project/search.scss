@@ -193,6 +193,7 @@
     @include mixin.tab {
       width: 2rem;
       padding: 0.165rem 0.145rem;
+      border: 0.02rem solid utility.$vividPink;
       border-radius: 0.1rem;
       font-size: 0.18rem;
       &:focus {
@@ -230,9 +231,13 @@
       width: 3rem;
       margin-left: 0.16rem;
       padding: 0.165rem 0.145rem;
-      border: 0.015rem solid utility.$vividPink;
+      border: 0.02rem solid utility.$vividPink;
       border-radius: 0.1rem;
       font-size: 0.18rem;
+      &:focus {
+        outline: none;
+        border: 0.03rem solid utility.$vividPink;
+      }
     }
     @include mixin.sp {
       width: 100%;
@@ -244,7 +249,7 @@
       font-size: 0.14rem;
       &:focus {
         outline: none;
-        border: 0.02rem solid utility.$vividPink;
+        border: 0.017rem solid utility.$vividPink;
       }
     }
   }
