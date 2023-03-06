@@ -72,6 +72,15 @@
     }
   }
 
+  &__containers {
+    display: inline-block;
+    @include mixin.sp {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
   &__first-container {
     position: relative;
     display: inline-block;
@@ -147,6 +156,7 @@
       }
     }
     @include mixin.sp {
+    margin-left: 0.1rem;
       &::after {
         display: block;
         content: '';
@@ -217,7 +227,7 @@
       margin-left: 0.16rem;
       padding: 0.165rem 0.145rem;
       width: 3rem;
-      border: 0.01rem solid utility.$vividPink;
+      border: 0.015ssrem solid utility.$vividPink;
       border-radius: 0.1rem;
       font-size: 0.18rem;
     }
