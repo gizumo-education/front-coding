@@ -14,7 +14,7 @@
     padding: 0.57rem 0 0 0.6rem;
     background-color: rgba(0, 0, 0, 0.7);
   }
-  
+
   &__icon {
     display: none;
     cursor: pointer;
@@ -38,6 +38,7 @@
     height: 0.06rem;
     background-color: utility.$black;
     border-radius: 10rem;
+    transition: 0.5s ease-in;
     &:nth-child(2) {
       position: absolute;
       top: 0.16rem;
