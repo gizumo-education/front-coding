@@ -18,6 +18,16 @@ $(function () {
   $(function () {
     $('.p-hamburgermenu__icon').on('click', function () {
       $(".p-hamburgermenu").toggleClass("u-active");
+      noScroll();
     });
   });
+
+  function noScroll() {
+    if ($(".u-active").length) {
+      $("body").css('overflow', 'hidden');
+    } else {
+      $("body").css('overflow', 'auto');
+    }
+  }
+
 });
