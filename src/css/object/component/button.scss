@@ -1,18 +1,32 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/mixins' as mixin;
+
 // 共通パーツであるボタンのスタイルを記述するファイル
 
 .c-button {
-  background-color: utility.$deepPink;
+  opacity: 1;
+  height: 60px;
   border: none;
   border-radius: 50px;
+  background-color: utility.$deepPink;
   color: utility.$white;
   font-size: 18px;
   font-weight: 700;
-  height: 60px;
   line-height: 60px;
-  opacity: 1;
   transition: .3s;
   &:hover {
     opacity: 0.8;
+  }
+  @include mixin.tab {
+    height: 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 0.18rem;
+    line-height: 0.6rem;
+  }
+  @include mixin.sp {
+    height: 0.4rem;
+    border-radius: 0.5rem;
+    font-size: 0.18rem;
+    line-height: 0.4rem;
   }
 }
