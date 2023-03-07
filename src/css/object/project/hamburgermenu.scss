@@ -19,13 +19,39 @@
       display: block;
       border: none;
       background-color: transparent;
-      background-image: url(../img/icon/menu.png);
-      background-repeat: no-repeat;
-      background-size: contain;
+      // background-image: url(../img/icon/menu.png);
+      // background-repeat: no-repeat;
+      // background-size: contain;
       float: right;
       margin: 0.15rem 0.15rem 0.15rem 0;
       width: 0.5rem;
       height: 0.38rem;
+      position: relative;
+      background-color: utility.$black;
+      height: 0.06rem;
+      border-radius: 10rem;
+      &::after {
+        display: block;
+        content: "";
+        position: absolute; 
+        width: 0.5rem;
+        top: 0.16rem;
+        right: 0;
+        background-color: utility.$black;
+        height: 0.06rem;
+        border-radius: 10rem;
+      }
+      &::before {
+        display: block;
+        content: "";
+        position: absolute; 
+        width: 0.5rem;
+        top: 0.32rem;
+        right: 0;
+        background-color: utility.$black;
+        height: 0.06rem;
+        border-radius: 10rem;
+      }
     }
   }
   
