@@ -17,17 +17,17 @@ $(function () {
   // slide menu
   $(function () {
     $('.p-hamburgermenu__icon').on('click', function () {
-      $(".p-hamburgermenu").toggleClass("u-active");
+      $(".p-hamburgermenu").toggleClass("u-active__menu");
+      $(".p-hamburgermenu__icon").toggleClass("u-active__close");
       noScroll();
     });
   });
 
   function noScroll() {
-    if ($(".u-active").length) {
+    if ($(".u-active__menu").length) {
       $("body").css('overflow', 'hidden');
     } else {
       $("body").css('overflow', 'auto');
     }
   }
-
 });
