@@ -15,6 +15,7 @@
 
   &__icon {
     display: none;
+    cursor: pointer;
     @include mixin.sp {
       display: block;
       border: none;
