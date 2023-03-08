@@ -31,20 +31,24 @@
   }
   &__list {
     width: 280px;
+    margin-left: 20px;
+    &:first-child {
+      margin-left: 0;
+    }
     @include mixin.tab {
       width: 2.8rem;
+      margin-left: 0.2rem;
     }
     @include mixin.sp {
+      margin-left: 0;
       width: 3.7rem;
     }
   }
   &__lists {
     display: flex;
-    gap: 20px;
     margin-top: 25px;
     @include mixin.tab {
       justify-content: center;
-      gap: 0.2rem;
       margin-top: 0.25rem;
     }
     @include mixin.sp {
