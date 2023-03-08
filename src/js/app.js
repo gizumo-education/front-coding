@@ -2,8 +2,6 @@ import $ from "jquery";
 import "slick-carousel";
 
 $(function () {
-  console.log('環境構築完了');
-
   // Smooth Scroll
   $(function () {
     $('a[href^="#"]').on('click', function () {
