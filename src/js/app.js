@@ -10,7 +10,7 @@ $(function () {
       var href = $(this).attr("href");
       var target = $(href == "#" || href == "" ? 'html' : href);
       var position = target.offset().top - 150;
-      $('body,html').animate({ scrollTop: position }, 400, 'swing');
+      $('body,html').animate({ scrollTop: position }, 600, 'swing');
       return false;
     });
   });
@@ -33,6 +33,7 @@ $(function () {
     }
   }
 
+  // slick
   $('.responsive').slick({
     infinite: true,
     arrow: true,
