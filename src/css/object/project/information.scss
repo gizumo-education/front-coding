@@ -147,13 +147,13 @@
 
 .slick-prev {
   z-index: 90;
-  top: 80px;
+  top: 100px;
   left: 2px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   @include mixin.tab {
-    top: 0.9rem;
+    top: 1rem;
     left: 0.22rem;
     width: 0.6rem;
     height: 0.6rem;
@@ -215,7 +215,7 @@
 
 .slick-next {
   z-index: 90;
-  top: 80px;
+  top: 100px;
   right: 26px;
   width: 60px;
   height: 60px;
@@ -223,7 +223,7 @@
   @include mixin.tab {
     width: 0.6rem;
     height: 0.6rem;
-    top: 0.9rem;
+    top: 1rem;
     right: 0.13rem
   }
   @include mixin.sp {
