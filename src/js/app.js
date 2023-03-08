@@ -1,4 +1,5 @@
 import $ from "jquery";
+import "slick-carousel";
 
 $(function () {
   console.log('環境構築完了');
@@ -23,6 +24,7 @@ $(function () {
     });
   });
 
+  // no scroll
   function noScroll() {
     if ($(".u-active__menu").length) {
       $("body").css('overflow', 'hidden');
@@ -30,4 +32,22 @@ $(function () {
       $("body").css('overflow', 'auto');
     }
   }
+
+  $('.responsive').slick({
+    infinite: true,
+    arrow: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          infinite: true,
+          arrow: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 });
