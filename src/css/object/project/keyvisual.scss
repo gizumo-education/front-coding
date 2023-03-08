@@ -1,2 +1,5 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+.p-keyvisual__img {
+    background-size: cover;
+}
