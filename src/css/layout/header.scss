@@ -11,14 +11,28 @@
     margin-left: 397px;
     padding-top: 40px;
     &__medical {
-        font-family: 'Noto Sans JP';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        color: rgb(0, 0, 0);
-        margin-right: 35px;
-        line-height: 23px;
+      position: relative;
+      font-family: 'Noto Sans JP';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: rgb(0, 0, 0);
+      margin-right: 35px;
+      line-height: 23px;
+        &::after {
+          position: absolute;
+          right: -18px;
+          top: 0;
+          content:"";
+          height: 23px;
+          width: 1px;
+          display: block;
+          background-color: rgb(0, 0, 0);
         }
+        &:last-child::after {
+          display: none;
+        }
+    }
   }
 }
 .p-header-menu-button {
