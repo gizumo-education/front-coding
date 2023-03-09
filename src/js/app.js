@@ -41,7 +41,7 @@ $(function () {
   const slideNum = $(".p-information__list").length;
 
   function slickPC() {
-    $(".slider").not('.slick-initialized').slick({
+    $(".js-slider").not('.slick-initialized').slick({
       infinite: true,
       arrow: true,
       slidesToShow: 4,
@@ -50,7 +50,7 @@ $(function () {
   }
 
   function slickSP() {
-    $(".slider").not('.slick-initialized').slick({
+    $(".js-slider").not('.slick-initialized').slick({
       infinite: true,
       arrow: true,
       slidesToShow: 1,
