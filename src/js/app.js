@@ -77,14 +77,14 @@ $(function () {
       }
     } else {
       if ($('.slick-initialized').length > 0) {
-        if (slideNum < 1) {
+        if (slideNum < 2) {
           $('.slick-initialized').slick('unslick');
         } else {
           $('.slick-initialized').slick('unslick');
           slickSP();
         }
       } else {
-        if (slideNum < 1) {
+        if (slideNum < 2) {
           $('.slick').slick('unslick');
         } else {
           $('.slick').slick('unslick');
