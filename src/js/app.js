@@ -7,8 +7,11 @@ $(function () {
     $('a[href^="#"]').on('click', function () {
       var href = $(this).attr("href");
       var target = $(href == "#" || href == "" ? 'html' : href);
-      var position = target.offset().top - 150;
+      var position = target.offset().top - 131;
       $('body,html').animate({ scrollTop: position }, 600, 'swing');
+      $(".p-hamburgermenu").toggleClass("u-active__menu");
+      $(".p-hamburgermenu__icon").toggleClass("u-active__close");
+      noScroll();
       return false;
     });
   });
@@ -17,6 +20,13 @@ $(function () {
   $(function () {
     $('.p-hamburgermenu__icon').on('click', function () {
       $(".p-hamburgermenu").toggleClass("u-active__menu");
+      if($(".p-hamburgermenu").hasClass("u-active__menu")) {
+        $(".p-hamburgermenu__link").stop().fadeIn(300);
+        console.log('show!');
+      } else {
+        $(".p-hamburgermenu__link").stop().fadeOut(300);
+        console.log('hide...');
+      }
       $(".p-hamburgermenu__icon").toggleClass("u-active__close");
       noScroll();
     });
