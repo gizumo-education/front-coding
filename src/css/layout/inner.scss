@@ -1,11 +1,5 @@
 @use '../object/utility/utility.scss';
 // innerのスタイルを記述するファイル
-.c-search__whopper {
-    width: 1180px;
-    height: 240px;
-    margin-top: 61px;
-    margin-left: 140px;
-    border-radius: 10px;
-    text-align: center;
-    background: rgb(222, 238, 249);
-  }
+.l-inner-wrapper {
+  width: 1262px;
+}

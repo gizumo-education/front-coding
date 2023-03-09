@@ -6,18 +6,15 @@
 }
 .p-header-menu {
   display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
   &__list {
-    position: absolute;
-    margin-left: 397px;
     padding-top: 40px;
     &__medical {
       position: relative;
-      font-family: 'Noto Sans JP';
-      font-style: normal;
-      font-weight: 400;
       font-size: 16px;
       color: rgb(0, 0, 0);
-      margin-right: 35px;
+      margin-left: 35px;
       line-height: 23px;
         &::after {
           position: absolute;
@@ -36,10 +33,8 @@
   }
 }
 .p-header-menu-button {
-  position: absolute;
-  margin-left: 1030px;
   padding-top: 25px;
-  padding-bottom: 98.32%;
+  margin-left: 25px;
   &__list {
     border-radius: 10px;
     height: 50px;
