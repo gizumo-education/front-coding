@@ -5,13 +5,14 @@
   display: none;
   @include mixin.sp {
     display: block;
+    margin-top: 0.7rem;
     position: fixed;
     width: 100%;
     height: 5.54rem;
     transition: left 0.6s ease;
     left: 4rem;
     z-index: 100;
-    padding: 0.57rem 0 0 0.6rem;
+    padding: 0.38rem 0 0 0.6rem;
     background-color: rgba(0, 0, 0, 0.7);
   }
 
@@ -60,15 +61,13 @@
   }
 
   &__lists {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__list {
-    margin-top: 0.38rem;
+    display: none;
   }
 
   &__link {
+    line-height: 0.6rem;
+    width: 3rem;
+    height: 0.6rem;
     color: utility.$white;
     font-size: 0.22rem;
     font-weight: 700;
