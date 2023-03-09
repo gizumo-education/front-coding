@@ -22,10 +22,8 @@ $(function () {
       $(".p-hamburgermenu").toggleClass("u-active__menu");
       if($(".p-hamburgermenu").hasClass("u-active__menu")) {
         $(".p-hamburgermenu__lists").stop().fadeIn(300);
-        console.log('show!');
       } else {
         $(".p-hamburgermenu__lists").stop().fadeOut(300);
-        console.log('hide...');
       }
       $(".p-hamburgermenu__icon").toggleClass("u-active__close");
       noScroll();
