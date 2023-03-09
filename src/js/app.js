@@ -17,16 +17,11 @@ $(function () {
   });
 
   // slide menu
-  $(function () {
-    $('.p-hamburgermenu__icon').on('click', function () {
-      $(".p-hamburgermenu").show().addClass("u-active__menu");
-      if ($(".p-hamburgermenu").hasClass("u-active__menu")) {
-        $(".p-hamburgermenu").show().addClass("u-active__menu");
-        $(".p-hamburgermenu__icon").addClass("u-active__close");
-      } else {
-        $(".p-hamburgermenu").removeClass("u-active__menu").hide();
-        $(".p-hamburgermenu__icon").removeClass("u-active__close");
-      }
+  $(function() {
+    $(".p-hamburgermenu__icon").on("click", function() {
+      $(".p-hamburgermenu").toggleClass("u-active__menu");
+      $(".p-hamburgermenu__icon").toggleClass("u-active__close");
+      $(".p-hamburgermenu").addClass("u-active__transitionTime");
       noScroll();
     });
   });
@@ -102,9 +97,7 @@ $(function () {
   slickConfirm();
 
   $(window).on('resize', function () {
-    console.log("リサイズしてる");
     windowWidth = window.innerWidth;
-    console.log("リサイズ後の画面幅" + windowWidth);
     slickConfirm();
   });
 });

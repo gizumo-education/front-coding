@@ -47,7 +47,7 @@
       margin-left: 0.2rem;
     }
     @include mixin.sp {
-      margin-left: 0;
+      margin-left: 0.01rem;
     }
   }
 
@@ -235,7 +235,7 @@
     width: 0.6rem;
     height: 0.6rem;
     top: 1rem;
-    right: 0.13rem
+    right: 0;
   }
   @include mixin.sp {
     width: 0.4rem;
