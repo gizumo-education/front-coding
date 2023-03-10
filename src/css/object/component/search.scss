@@ -1,9 +1,10 @@
 @use '../../object/utility/utility.scss';
 .c-search__wrapper {
+  width: 1262px;
+  margin: 0 auto;
   width: 1180px;
   height: 240px;
   margin-top: 61px;
-  margin-left: 140px;
   border-radius: 10px;
   background: rgb(222, 238, 249);
   text-align: center;
@@ -20,6 +21,7 @@
 }
 .c-search__list__wrapper {
   display: flex;
+  justify-content: center
 }
 .c-search__list {
   width: 200px;
@@ -35,6 +37,9 @@
   background-size: 10px 10px, 10px 10px;
   background-position: calc(100% - 20px) 50%, calc(100% - 10px) 50%;
   background-repeat: no-repeat;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 .c-search__inpot {
   width: 299px;
