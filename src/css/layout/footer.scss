@@ -1,2 +1,50 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
+
+.l-footer {
+  margin-top: 200px;
+  background-color: #EFF6FC;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    &__top {
+      margin-top: 79px;
+    }
+    &__nav {
+      margin-top: 27px;
+      margin-left: 39px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &__inner {
+        display: flex;
+        margin-right: 39px;
+      }
+      &__item {
+        line-height: 36px;
+      }
+    }
+  }
+
+  &__banner {
+    margin-top: 55px;
+    &__item {
+      &:last-child{
+        margin-top: 15px;
+      }
+    }
+  }
+
+  &__copyright {
+    margin-top: 25px;
+    background-color: #D7D7D7;
+    vertical-align: middle;
+      &__text {
+        text-align: center;
+        line-height: 35px;
+      }
+  }
+}

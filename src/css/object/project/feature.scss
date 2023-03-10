@@ -1,0 +1,31 @@
+@use '../../object/utility/utility.scss';
+// 「ギズジョブの4つの特徴」セクションのスタイルを記述
+
+.p-feature {
+  margin-top: 106px;
+  text-align: center;
+  &__inner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    margin-top: 53px;
+  }
+  &__item {
+    background-color: #F7D2DB;
+    border-radius: 10px;
+    width: calc((100% - 40px)/2);
+    flex-direction:column;
+    padding: 40px 47px;
+  }
+  &__subtitle {
+    color: #DE5579;
+  }
+
+  &__text {
+    margin-top: 36px;
+    line-height: 20px;
+  }
+}

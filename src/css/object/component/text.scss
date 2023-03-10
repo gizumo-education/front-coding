@@ -1,0 +1,23 @@
+@use '../../object/utility/utility.scss';
+// テキストのスタイルを記述するファイル
+
+
+.c-heading {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.c-text-subtitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.c-text-regular {
+  font-size: 16px;
+}
+
+.c-text-small {
+  font-size: 14px;
+}
+
