@@ -1,2 +1,28 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+.c-button__newjods {
+  width: 360px;
+  height: 60px;
+  background: rgb(222, 85, 121);
+  border: none;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  margin-top: 60px;
+  margin-left: 550px;
+  font-size: 18px;
+}
+.c-button__column {
+  width: 420px;
+  height: 60px;
+  background: rgb(222, 85, 121);
+  border: none;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  margin-top: 80px;
+  margin-left: 510px;
+  font-size: 18px;
+}
+.c-button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
