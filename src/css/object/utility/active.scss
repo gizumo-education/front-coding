@@ -1,0 +1,25 @@
+.u-active__menu {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.u-active__transitionTime {
+  transition: all 0.6s ease-in;
+}
+
+.u-active__close 
+> .p-hamburgermenu__line:first-child {
+  transform: rotate(35deg) translate(0.06rem, 0.17rem);
+  width: 0.6rem;
+}
+
+.u-active__close 
+> .p-hamburgermenu__line:nth-child(2) {
+  opacity: 0;
+}
+
+.u-active__close 
+> .p-hamburgermenu__line:last-child {
+  transform: rotate(-35deg) translate(0.04rem, -0.15rem);
+  width: 0.6rem;
+}
