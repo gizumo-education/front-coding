@@ -1,0 +1,43 @@
+@use '../../object/utility/utility.scss';
+.c-feature {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 25px;
+  color: rgb(0, 0, 0);
+  margin-top: 106px;
+  text-align: center;
+}
+.c-feature__innerbox__wrapper {
+  font-size: 0;
+  display: flex;
+  margin-top: 53px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.c-feature__innerbox:nth-child(2n+1) {
+  margin-left: 0;
+}
+.c-feature__innerbox {
+  width: 570px;
+  height: 180px;
+  background: rgb(247, 210, 219);
+  border-radius: 10px;
+  margin-left: 40px;
+  margin-top: 40px;
+  text-align: center;
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgb(222, 85, 121);
+    padding-top: 40px;
+  }
+  &__text {
+    width: 447px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 36px;
+    margin-left: 62px;
+  }
+}
