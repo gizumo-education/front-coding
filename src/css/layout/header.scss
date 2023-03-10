@@ -1,8 +1,13 @@
 @use '../object/utility/utility.scss';
 // headerのスタイルを記述するファイル
+
 .p-header {
   width: 100%;
   height: 100px;
+  position: fixed;
+  z-index: 999;
+  background-color: rgb(255, 255, 255);
+  top: 0;
 }
 .p-header-menu {
   display: flex;
