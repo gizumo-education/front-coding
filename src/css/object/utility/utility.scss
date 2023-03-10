@@ -1,2 +1,14 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
+
+.u-mx-auto {
+  margin: 0 auto;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-relative {
+  position: relative;
+}

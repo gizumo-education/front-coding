@@ -1,2 +1,32 @@
+@use '../../foundation/variables' as v;
+@use '../../foundation/mixins' as m;
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+.p-key-visual {
+  background: #98b1be;
+  height: 500px;
+  background-image: url(../img/picture/keyvisualpc.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &__text {
+    font-size: 20px;
+    color: #2eb6aa;
+    background-color: #fff;
+    padding: 4px 40px;
+    border: solid 2px #2eb6aa;
+    border-radius: 8px;
+    position: absolute;
+    top: 384px;
+    left: 634.5px;
+    pointer-events: none;
+  }
+
+  &__text > span {
+    font-size: 40px;
+    font-weight: v.$bold;
+    line-height: 58px;
+  }
+}

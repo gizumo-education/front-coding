@@ -1,0 +1,12 @@
+.l-main {
+  padding-top: 100px;
+
+  > * + *:nth-of-type(-n + 3) {
+    margin-top: 60px !important;
+  }
+
+  // 5番目以降7番目までに適用
+  > * + *:nth-of-type(n + 5):nth-of-type(-n + 7) {
+    margin-top: 105px !important;
+  }
+}

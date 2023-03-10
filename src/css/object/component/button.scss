@@ -1,2 +1,33 @@
+@use '../../foundation/variables' as v;
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+.c-button {
+  color: v.$white;
+  height: 60px;
+  font-size: 18px;
+  font-weight: v.$bold;
+  background: #de5579;
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+  padding: 17px 0px;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--small {
+    @extend .c-button;
+    width: 140px;
+    position: relative;
+  }
+
+  &--search::after {
+    position: absolute;
+  }
+
+  &--large {
+    @extend .c-button;
+    width: 360px;
+  }
+}

@@ -1,3 +1,5 @@
+@use '../foundation/variables' as v;
+
 // 共通のパーツを作成
 @mixin pc {
   @media screen and (min-width: 1200px) {
@@ -19,8 +21,18 @@
 
 @mixin clearfix {
   &:after {
-    content: "";
+    content: '';
     display: block;
     clear: both;
   }
+}
+
+@mixin heading-lv2 {
+  font-size: 25px;
+  font-weight: v.$bold;
+}
+
+@mixin heading-lv3 {
+  font-size: 24px;
+  font-weight: v.$bold;
 }

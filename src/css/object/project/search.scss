@@ -1,0 +1,63 @@
+@use '../../foundation/variables' as v;
+@use '../../foundation/mixins' as m;
+
+.p-search {
+  background: #deeef9;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 8px;
+  text-align: center;
+
+  &__heading {
+    @include m.heading-lv2;
+  }
+
+  &__text {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  &__form-area {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
+    margin-top: 26px;
+  }
+
+  &__form-area__wrapper {
+    position: relative;
+  }
+
+  &__form-area__wrapper::after {
+    content: '';
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #de1e79 transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+  }
+
+  &__form-area__wrapper > select,
+  &__form-area > input[type='text'] {
+    appearance: none;
+    font-size: 18px;
+    border: solid 1px #de1e79;
+    border-radius: 8px;
+    width: 200px;
+    height: 60px;
+    padding: 0px 15px;
+    position: relative;
+  }
+
+  &__form-area > input[type='text'] {
+    width: 300px;
+  }
+
+  // 二回目の.p-searchのみ適用
+  .p-useful + & {
+    margin-top: 150px !important;
+  }
+}

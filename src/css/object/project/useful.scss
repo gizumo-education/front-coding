@@ -1,0 +1,63 @@
+@use '../../foundation/variables' as v;
+@use '../../foundation/mixins' as m;
+
+.p-useful {
+  &__heading {
+    @include m.heading-lv2;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  &__list__item {
+    flex: 1 1;
+  }
+
+  &__list__item > a {
+    width: 380px;
+    height: 240px;
+    // color: red;
+    color: v.$white;
+    text-align: center;
+    padding: 71px 40px 51px;
+    position: relative;
+  }
+
+  &__list__item > a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 8px;
+    background-image: url(../img/picture/usefulmanual.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+  }
+
+  &__list__item:nth-of-type(2) > a::before {
+    background-image: url(../img/picture/usefultrivia.jpg);
+  }
+
+  &__list__item > a > h3 {
+    @include m.heading-lv3;
+    line-height: 24px;
+    position: relative;
+  }
+
+  &__list__item > a > p {
+    line-height: 23px;
+    margin-top: 45px;
+    position: relative;
+  }
+
+  &__button-wrapper {
+    margin-top: 80px;
+  }
+}

@@ -1,4 +1,5 @@
 @use '../object/utility/utility' as base;
+@use '../foundation/variables' as v;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 *,
@@ -8,7 +9,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 body {
@@ -39,7 +40,6 @@ body {
   }
 }
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -48,29 +48,34 @@ img {
 
 a {
   display: inline-block;
+  color: v.$black;
   text-decoration: none;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .is-pc {
   @include base.pc {
-    display: block!important;
+    display: block !important;
   }
   @include base.tab {
-    display: block!important;
+    display: block !important;
   }
   @include base.sp {
-    display: none!important;
+    display: none !important;
   }
 }
 
 .is-sp {
   @include base.pc {
-    display: none!important;
+    display: none !important;
   }
   @include base.tab {
-    display: none!important;
+    display: none !important;
   }
   @include base.sp {
-    display: block!important;
+    display: block !important;
   }
 }
