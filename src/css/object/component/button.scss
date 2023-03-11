@@ -8,7 +8,15 @@
   font-weight: bold;
   color: #fff;
   border: none;
+
+  & > a {
+    color: #fff;
+  }
 }
 
-
+.c-btn:hover,
+.c-btn__link:hover {
+  opacity: .8;
+  transition: .3s;
+}
 
