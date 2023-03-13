@@ -7,6 +7,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 25px;
   }
 
   &__link {
@@ -39,7 +40,6 @@
   }
 
   &__copyright {
-    margin-top: 25px;
     background-color: #D7D7D7;
     vertical-align: middle;
       &__text {
