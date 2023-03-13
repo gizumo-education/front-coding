@@ -7,7 +7,7 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background-color: #fff;
+    background-color: utility.$white;
     z-index: 100;
 
 
@@ -27,7 +27,7 @@
     &__item {
       margin-left: 20px;
       padding-left: 20px;
-      border-left: 1px solid #000;
+      border-left: 1px solid utility.$black;
 
       &:first-child {
         margin-left: 0;
@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     font-size: 16px;
-    color: #fff;
+    color: utility.$white;
     margin-left: 25px;
 
     &__inner {
@@ -51,14 +51,14 @@
     &__item {
       font-size: 14px;
       padding: 16px 0px;
-      background-color: #92C5EA;
+      background-color: utility.$blue;
       border: none;
       border-radius: 10px;
       margin-left: 15px;
       align-items: center;
       text-align: center;
       width: 140px;
-      color: #fff;
+      color: utility.$white;
 
       &:first-child{
         width: 160px;
@@ -66,7 +66,7 @@
       }
 
       & > a{
-        color: #fff;
+        color: utility.$white;
       }
 
       &__img {

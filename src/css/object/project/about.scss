@@ -22,7 +22,7 @@
       height:100%;
       top: 0;
       left: 0;
-      background-color: #000;
+      background-color: utility.$black;
       opacity: 0.5;
     }
   }
@@ -30,7 +30,7 @@
 
   &__text {
     text-align: center;
-    color: #fff;
+    color: utility.$white;
     position: relative;
     z-index: 3;
     & > span {

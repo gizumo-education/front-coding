@@ -2,7 +2,7 @@
 // 「お仕事検索」セクションのスタイルを記述
 
 .p-search {
-  background-color: #DEEEF9;
+  background-color: utility.$baby-blue;
   border-radius: 10px;
   padding: 40px;
   text-align: center;
@@ -36,7 +36,7 @@
       &::after {
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
-        border-top: 10px solid #DE1E79;
+        border-top: 10px solid utility.$dark-pink;
         content: "";
         position: absolute;
         right: 15px;
@@ -55,13 +55,13 @@
     &__select__item,
     &__input__item {
       font-size: 18px;
-      border: 1px solid #DE1E79;
+      border: 1px solid utility.$dark-pink;
       border-radius: 10px;
-      background: #ffffff;
+      background-color: utility.$white;
 
       &:focus {
         outline: 0;
-        border: 1px solid #DE1E79;
+        border: 1px solid utility.$dark-pink;
       }
     }
 

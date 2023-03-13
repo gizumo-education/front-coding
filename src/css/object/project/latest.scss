@@ -3,7 +3,7 @@
 
 .p-latest {
   margin-top: 59px;
-  background-color: #EFF6FC;
+  background-color: utility.$skyblue;
   padding: 64px 0 67px 0;
 
   &__title {
@@ -54,7 +54,7 @@
     }
     dl dt {
       width: 60px;
-      background-color: #FFCAD0;
+      background-color: utility.$baby-pink;
       margin-top: 4px;
       text-align: center;
     }

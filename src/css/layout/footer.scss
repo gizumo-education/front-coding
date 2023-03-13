@@ -3,7 +3,7 @@
 
 .l-footer {
   margin-top: 200px;
-  background-color: #EFF6FC;
+  background-color: utility.$skyblue;
   padding-top: 55px;
   &__inner {
     display: flex;
@@ -40,7 +40,7 @@
   }
 
   &__copyright {
-    background-color: #D7D7D7;
+    background-color: utility.$gray;
     vertical-align: middle;
       &__text {
         text-align: center;

@@ -14,14 +14,14 @@
     margin-top: 53px;
   }
   &__item {
-    background-color: #F7D2DB;
+    background-color: utility.$peach;
     border-radius: 10px;
     width: calc((100% - 40px)/2);
     flex-direction:column;
     padding: 40px 47px;
   }
   &__subtitle {
-    color: #DE5579;
+    color: utility.$pink;
   }
 
   &__text {
