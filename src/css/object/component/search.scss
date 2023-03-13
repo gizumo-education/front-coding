@@ -1,11 +1,11 @@
 @use '../../object/utility/utility.scss';
 .c-search__wrapper {
-  height: 240px;
   margin-top: 61px;
   border-radius: 10px;
   background: rgb(222, 238, 249);
   text-align: center;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 .c-search {
   &__title {
