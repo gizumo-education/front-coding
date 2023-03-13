@@ -47,7 +47,10 @@
     background: rgb(146, 197, 234);
     color: rgb(255, 255, 255);
     padding: 15px;
-    margin-right: 10px;
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 .l-icon__reading {
