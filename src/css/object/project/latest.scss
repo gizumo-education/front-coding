@@ -14,12 +14,12 @@
   &__inner__item {
     display: flex;
     justify-content: center;
+    margin-top: 25px;
   }
 
   &__item {
     max-width: 280px;
     margin-left: 20px;
-    margin-top: 25px;
     &:first-child{
       margin-left: 0;
     }
