@@ -4,6 +4,7 @@
 .l-footer {
   margin-top: 200px;
   background-color: #EFF6FC;
+  padding-top: 55px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -12,7 +13,7 @@
 
   &__link {
     &__top {
-      margin-top: 79px;
+      margin-top: 24px;
     }
     &__nav {
       margin-top: 27px;
@@ -31,7 +32,6 @@
   }
 
   &__banner {
-    margin-top: 55px;
     &__item {
       &:last-child{
         margin-top: 15px;
