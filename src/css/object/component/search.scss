@@ -1,6 +1,5 @@
 @use '../../object/utility/utility.scss';
 .c-search__wrapper {
-  width: 1262px;
   margin: 0 auto;
   width: 1180px;
   height: 240px;
@@ -26,7 +25,6 @@
   }
   &__list {
     width: 200px;
-    height: 60px;
     margin-top: 26px;
     border: 1px solid rgb(222, 30, 121);
     border-radius: 10px;
