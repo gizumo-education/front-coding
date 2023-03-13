@@ -20,6 +20,11 @@
   cursor: pointer;
 }
 
+.c-btn,
+.c-btn__link {
+  transition: .3s;
+}
+
 .c-btn:hover,
 .c-btn__link:hover {
   opacity: .8;
