@@ -1,77 +1,81 @@
 @use '../../object/utility/utility.scss';
-.c-change__title {
-  font-size: 25px;
-  line-height: 25px;
-  margin-top: 105px;
-  text-align: center;
-  font-weight: 700;
-}
-.c-change__innerdox__wrapper {
-  display: flex;
-  justify-content: center
-}
-.c-change__innerdox {
-  width: 277.73px;
-  height: 357.73px;
-  border-radius: 10px;
-  border: 2.268px solid rgb(222, 85, 121);
-  margin-top: 51.13px;
-  margin-left: 22.27px;
-  position: relative;
-  &:first-child {
-    margin-left: 0;
-  }
-  &__step {
-    margin-top: 8.87px;
-    margin-left: 8.87px;
-  }
-  &__img {
-    width: 102.29px;
-    height: 100px;
-    position: absolute;
-    margin-top: 58.87px;
-    margin-left: 30px;
-  }
+.c-change {
   &__title {
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 105px;
     text-align: center;
-    width: 216px;
-    height: 60px;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    margin-top: 110px;
-    margin-left: 25px;
   }
-  &__text {
-    width: 237px;
-    height: 60px;
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 18px;
-    margin-left: 18.87px;
+  &__innerdox {
+    width: 277.73px;
+    height: 357.73px;
+    border-radius: 10px;
+    border: 2.268px solid rgb(222, 85, 121);
+    margin-top: 51.13px;
+    margin-left: 22.27px;
+    position: relative;
+    &:first-child {
+      margin-left: 0;
+    }
+    &__step {
+      margin-top: 8.87px;
+      margin-left: 8.87px;
+    }
+    &__img {
+      width: 102.29px;
+      height: 100px;
+      position: absolute;
+      top: 58.87px;
+      left: 90px;
+    }
+    &__title {
+      text-align: center;
+      width: 216px;
+      height: 60px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      position: absolute;
+      left: 25px;
+      top: 178px;
+    }
+    &__text {
+      width: 237px;
+      height: 60px;
+      font-size: 14px;
+      line-height: 20px;
+      position: absolute;
+      left: 20px;
+      top: 256px;
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: center
+    }
   }
-}
-.c-change__icon1 {
-  border-left: 20px solid rgb(222, 30, 121);
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  margin-left: 275px;
-  position: absolute;
-  bottom: 150px;
-}
-.c-change__icon2 {
-  border-left: 20px solid rgb(222, 30, 121);
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  margin-left: 275px;
-  position: absolute;
-  bottom: 150px;
-}
-.c-change__icon3 {
-  border-left: 20px solid rgb(222, 30, 121);
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  margin-left: 275px;
-  position: absolute;
-  bottom: 150px;
+  &__icon1 {
+    border-left: 20px solid rgb(222, 30, 121);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    margin-left: 275px;
+    position: absolute;
+    bottom: 150px;
+  }
+  &__icon2 {
+    border-left: 20px solid rgb(222, 30, 121);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    margin-left: 275px;
+    position: absolute;
+    bottom: 150px;
+  }
+  &__icon3 {
+    border-left: 20px solid rgb(222, 30, 121);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    margin-left: 275px;
+    position: absolute;
+    bottom: 150px;
+  }
 }

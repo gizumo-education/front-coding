@@ -1,15 +1,14 @@
 @use '../object/utility/utility.scss';
 // headerのスタイルを記述するファイル
 
-.p-header {
+.l-header {
   width: 100%;
   height: 100px;
   position: fixed;
   z-index: 999;
   background-color: rgb(255, 255, 255);
-  top: 0;
 }
-.p-header-menu {
+.l-header__menu__inner {
   display: flex;
   justify-content: flex-end;
   margin-right: 100px;
@@ -37,10 +36,11 @@
     }
   }
 }
-.p-header-menu-button {
+.l-header__menu__button {
   padding-top: 25px;
   margin-left: 25px;
   &__list {
+    transition: 0.3s;
     border-radius: 10px;
     height: 50px;
     font-family: 'Noto Sans JP';
@@ -54,6 +54,6 @@
     margin-right: 10px;
   }
 }
-.p-icon__reading {
+.l-icon__reading {
   width: 15px;
 }
