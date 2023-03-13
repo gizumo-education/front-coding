@@ -8,10 +8,16 @@
   font-weight: bold;
   color: #fff;
   border: none;
+  cursor: pointer;
 
   & > a {
     color: #fff;
+    display: block;
   }
+}
+
+.c-btn__link {
+  cursor: pointer;
 }
 
 .c-btn:hover,
