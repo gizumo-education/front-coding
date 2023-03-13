@@ -14,7 +14,6 @@
     background: rgb(247, 210, 219);
     border-radius: 10px;
     margin-left: 40px;
-    margin-top: 40px;
     text-align: center;
     &__title {
       font-weight: 700;
@@ -36,6 +35,9 @@
     }
     &:nth-child(2n+1) {
       margin-left: 0;
+    }
+    &:nth-child(n+3) {
+      margin-top: 40px;
     }
   }
 }
