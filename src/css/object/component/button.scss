@@ -2,7 +2,6 @@
 // 共通パーツであるボタンのスタイルを記述するファイル
 .c-button__newjods {
   width: 360px;
-  height: 60px;
   background: rgb(222, 85, 121);
   border: none;
   font-weight: 700;
@@ -10,7 +9,8 @@
   color: rgb(255, 255, 255);
   margin-top: 60px;
   text-align: center;
-  padding-top: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 18px;
   transition: 0.3s;
   &:hover {
@@ -23,7 +23,6 @@
 }
 .c-button__column {
   width: 420px;
-  height: 60px;
   background: rgb(222, 85, 121);
   border: none;
   font-weight: 700;
@@ -33,7 +32,8 @@
   font-size: 18px;
   transition: 0.3s;
   text-align: center;
-  padding: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   &:hover {
     opacity: 0.8;
     transition: 0.3s;
