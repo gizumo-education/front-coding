@@ -8,16 +8,17 @@
     &__wrapper {
       height: 265px;
       display: flex;
+      justify-content: space-evenly
     }
     &__title {
       padding-top: 79px;
-      margin-left: 150px;
+      // margin-left: 150px;
       font-weight: 400;
       font-size: 16px;
       line-height: 23px;
       color: rgb(0, 0, 0);
     }
-    &__inner__last {
+    &__last {
       text-align: center;
       font-size: 14px;
       line-height: 14px;
@@ -33,7 +34,6 @@
       }
       &__dox1 {
         margin-top: 27px;
-        margin-left: 150px;
         font-size: 16px;
         line-height: 36px;
         &__text {
@@ -43,7 +43,6 @@
       }
       &__dox2 {
         margin-top: 27px;
-        margin-left: 39px;
         width: 96px;
         height: 100px;
         font-size: 16px;
