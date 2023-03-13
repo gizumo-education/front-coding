@@ -4,7 +4,7 @@
 .p-latest {
   margin-top: 59px;
   background-color: #EFF6FC;
-padding: 64px 0 67px 0;
+  padding: 64px 0 67px 0;
 
   &__title {
     text-align: left;
@@ -36,6 +36,9 @@ padding: 64px 0 67px 0;
     }
   }
 
+  &__img img{
+    border-radius: 10px;
+  }
   &__text {
     margin-top: 8px;
     line-height: 22px;
