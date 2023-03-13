@@ -6,12 +6,13 @@
     background: rgb(239, 246, 252);
     margin-top: 200px;
     &__wrapper {
+      padding-top: 55px;
       height: 265px;
       display: flex;
       justify-content: space-evenly
     }
     &__title {
-      padding-top: 79px;
+      padding-top: 20px;
       font-weight: 400;
       font-size: 16px;
       line-height: 23px;
@@ -53,7 +54,6 @@
   }
   &__img {
     &__child {
-      padding-top: 55px;
       padding-left: 600px;
     }
     &__old {
