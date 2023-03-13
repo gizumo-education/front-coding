@@ -11,7 +11,6 @@
     height: 357.73px;
     border-radius: 10px;
     border: 2.268px solid rgb(222, 85, 121);
-    margin-top: 51.13px;
     margin-left: 22.27px;
     position: relative;
     &:first-child {
@@ -48,7 +47,8 @@
     }
     &__wrapper {
       display: flex;
-      justify-content: center
+      justify-content: center;
+      margin-top: 51.13px;
     }
   }
   &__icon1 {

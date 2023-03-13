@@ -6,38 +6,39 @@
   height: 100px;
   position: fixed;
   z-index: 999;
+  padding-top: 25px;
   background-color: rgb(255, 255, 255);
 }
 .l-header__menu__inner {
   display: flex;
   justify-content: flex-end;
   margin-right: 100px;
-  &__list {
-    padding-top: 40px;
-    &__medical {
-      position: relative;
-      font-size: 16px;
-      color: rgb(0, 0, 0);
-      margin-left: 35px;
-      line-height: 23px;
-        &::after {
-          position: absolute;
-          right: -18px;
-          top: 0;
-          content:"";
-          height: 23px;
-          width: 1px;
-          display: block;
-          background-color: rgb(0, 0, 0);
-        }
-        &:last-child::after {
-          display: none;
-        }
+  &__img {
+    vertical-align: middle;
+  }
+  &__medical {
+    position: relative;
+    height: 50px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin-left: 35px;
+    line-height: 45px;
+    &::after {
+      position: absolute;
+      right: -18px;
+      top: 12px;
+      content:"";
+      height: 23px;
+      width: 1px;
+      display: block;
+      background-color: rgb(0, 0, 0);
+    }
+    &:last-child::after {
+      display: none;
     }
   }
 }
 .l-header__menu__button {
-  padding-top: 25px;
   margin-left: 25px;
   &__list {
     transition: 0.3s;
