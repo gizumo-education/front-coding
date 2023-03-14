@@ -1,8 +1,12 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
 
-.u-mx-auto {
-  margin: 0 auto;
+.u-mt-medium {
+  margin-top: 60px !important;
+}
+
+.u-mt-large {
+  margin-top: 105px !important;
 }
 
 .u-text-center {

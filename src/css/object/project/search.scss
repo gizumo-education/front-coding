@@ -57,8 +57,7 @@
     width: 300px;
   }
 
-  // 二回目の.p-searchのみ適用
-  .p-useful + & {
-    margin-top: 150px !important;
+  &--bottom {
+    margin-top: 150px;
   }
 }
