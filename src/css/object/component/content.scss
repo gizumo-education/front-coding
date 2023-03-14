@@ -1,5 +1,8 @@
 @use '../../object/utility/utility.scss';
 .c-content {
+  &__wrapper {
+    padding-top: 106px;
+  }
   &__title {
     font-weight: 700;
     font-size: 25px;
