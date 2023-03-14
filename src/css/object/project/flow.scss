@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     // gap: 19px;
-    padding: 9px 20px 41px 9px;
+    // padding: 9px 20px 41px 9px;
     border: 2px solid #de5579;
     border-radius: 8px;
     position: relative;
@@ -43,6 +43,8 @@
 
   &__list__item > img {
     align-self: flex-start;
+    padding-top: 9px;
+    padding-left: 9px;
   }
 
   &__list__item > h3 {
@@ -71,7 +73,7 @@
   &__list__item > p {
     line-height: 20px;
     margin-top: 18px;
-    padding-left: 11px;
+    padding: 0px 20px 41px;
   }
 
   &__list__item:nth-child(n + 3) > p {
