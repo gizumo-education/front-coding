@@ -1,9 +1,8 @@
-@use '../../foundation/variables' as v;
-@use '../../foundation/mixins' as m;
+@use '../../object/utility/utility.scss' as vm;
 
 .p-features {
   &__heading {
-    @include m.heading-lv2;
+    @include vm.heading-lv2;
   }
 
   &__list {
@@ -14,7 +13,7 @@
   }
 
   &__list__item {
-    background: #f7d2db;
+    background: vm.$light-pink;
     text-align: center;
     flex: 1 1 calc(50% - 20px);
     border-radius: 8px;
@@ -22,8 +21,8 @@
   }
 
   &__list__item > h3 {
-    color: #de5579;
-    @include m.heading-lv3;
+    color: vm.$pink;
+    @include vm.heading-lv3;
   }
 
   &__list__item > p {

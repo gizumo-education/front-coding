@@ -1,5 +1,7 @@
+@use '../utility/utility.scss' as vm;
+
 .p-new-offers {
-  background: #eff6fc;
+  background: vm.$light-blue;
   padding: 65px 0;
 
   &__heading {
@@ -40,7 +42,7 @@
     > span:first-child {
       width: 60px;
       text-align: center;
-      background: #ffcad0;
+      background: vm.$new-offers-span;
     }
     > span:last-child {
       line-height: 17px;

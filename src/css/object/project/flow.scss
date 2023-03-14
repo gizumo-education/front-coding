@@ -1,9 +1,8 @@
-@use '../../foundation/variables' as v;
-@use '../../foundation/mixins' as m;
+@use '../../object/utility/utility.scss' as vm;
 
 .p-flow {
   &__heading {
-    @include m.heading-lv2;
+    @include vm.heading-lv2;
   }
 
   &__list {
@@ -19,7 +18,7 @@
     align-items: center;
     // gap: 19px;
     // padding: 9px 20px 41px 9px;
-    border: 2px solid #de5579;
+    border: 2px solid vm.$light-pink;
     border-radius: 8px;
     position: relative;
   }
@@ -30,7 +29,7 @@
     height: 0;
     border-style: solid;
     border-width: 22px 0 22px 22px;
-    border-color: transparent transparent transparent #de5579;
+    border-color: transparent transparent transparent vm.$light-pink;
     position: absolute;
     top: 50%;
     right: -24px;
@@ -49,7 +48,7 @@
 
   &__list__item > h3 {
     font-size: 24px;
-    font-weight: v.$bold;
+    font-weight: vm.$bold;
     line-height: 30px;
     text-align: center;
   }

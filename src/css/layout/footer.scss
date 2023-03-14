@@ -1,5 +1,4 @@
-@use '../foundation/variables' as v;
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as vm;
 // footerのスタイルを記述するファイル
 .l-footer {
   background: #eff6fc;
@@ -15,7 +14,6 @@
   &__nav__list {
     display: flex;
     width: 359px;
-    // column-gap: 39px;
     flex-wrap: wrap;
     line-height: 36px;
     margin-top: 27px;
@@ -26,7 +24,7 @@
   }
 
   &__nav__list__item > a {
-    color: v.$black;
+    color: vm.$black;
   }
 
   &__img-area {
@@ -37,6 +35,6 @@
 
   &__copyrights-text {
     padding: 11px 0;
-    background: #d7d7d7;
+    background: vm.$grey;
   }
 }

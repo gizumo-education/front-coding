@@ -1,12 +1,11 @@
-@use '../../foundation/variables' as v;
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as vm;
 // 共通パーツであるボタンのスタイルを記述するファイル
 .c-button {
-  color: v.$white;
+  color: vm.$white;
   height: 60px;
   font-size: 18px;
-  font-weight: v.$bold;
-  background: #de5579;
+  font-weight: vm.$bold;
+  background: vm.$pink;
   border-radius: 32px;
   border: none;
   cursor: pointer;

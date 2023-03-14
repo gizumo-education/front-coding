@@ -1,15 +1,14 @@
-@use '../../foundation/variables' as v;
-@use '../../foundation/mixins' as m;
+@use '../utility/utility.scss' as vm;
 
 .p-search {
-  background: #deeef9;
+  background: vm.$blue;
   padding: 40px;
   margin: 0 auto;
   border-radius: 8px;
   text-align: center;
 
   &__heading {
-    @include m.heading-lv2;
+    @include vm.heading-lv2;
   }
 
   &__text {
@@ -33,7 +32,7 @@
     content: '';
     border-style: solid;
     border-width: 10px 10px 0 10px;
-    border-color: #de1e79 transparent transparent transparent;
+    border-color: vm.$form-border transparent transparent transparent;
     position: absolute;
     top: 50%;
     right: 15px;
@@ -44,8 +43,8 @@
   &__form-area > input[type='text'] {
     appearance: none;
     font-size: 18px;
-    background-color: #fff; //これがないとfirefoxで背景色がグレーになる
-    border: solid 1px #de1e79;
+    background-color: vm.$white; //これがないとfirefoxで背景色がグレーになる
+    border: solid 1px vm.$form-border;
     border-radius: 8px;
     width: 200px;
     height: 60px;

@@ -1,9 +1,8 @@
-@use '../../foundation/variables' as v;
-@use '../../foundation/mixins' as m;
+@use '../utility/utility.scss' as vm;
 
 .p-useful {
   &__heading {
-    @include m.heading-lv2;
+    @include vm.heading-lv2;
   }
 
   &__list {
@@ -19,8 +18,7 @@
   &__list__item > a {
     width: 380px;
     height: 240px;
-    // color: red;
-    color: v.$white;
+    color: vm.$white;
     text-align: center;
     padding: 71px 40px 51px;
     position: relative;
@@ -46,7 +44,7 @@
   }
 
   &__list__item > a > h3 {
-    @include m.heading-lv3;
+    @include vm.heading-lv3;
     line-height: 24px;
     position: relative;
   }

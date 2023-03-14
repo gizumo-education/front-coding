@@ -1,5 +1,4 @@
-@use '../../foundation/variables' as v;
-@use '../../foundation/mixins' as m;
+@use '../../object/utility/utility.scss' as vm;
 
 .p-about-us {
   display: flex;
@@ -18,8 +17,8 @@
   }
 
   &__heading {
-    @include m.heading-lv2;
-    color: v.$white;
+    @include vm.heading-lv2;
+    color: vm.$white;
     width: fit-content;
     margin: auto;
     text-align: center;
