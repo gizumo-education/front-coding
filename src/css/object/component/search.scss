@@ -52,9 +52,10 @@
     margin-left: 16px;
   }
   &__button {
+    font-weight: 700;
+    line-height: 30px;
     margin-left: 15px;
     width: 140px;
-    height: 60px;
     color:  utility.$white;
     font-size: 18px;
     transition: 0.3s;
