@@ -10,18 +10,19 @@
     justify-content: space-between;
     align-items: center;
     padding: 55px 0 25px;
-    font-size: 16px;
   }
 
   &__nav__list {
     display: flex;
+    width: 359px;
+    // column-gap: 39px;
     flex-wrap: wrap;
     line-height: 36px;
     margin-top: 27px;
   }
 
   &__nav__list__item {
-    flex-basis: calc(50% - 39px / 2);
+    flex-basis: 50%;
   }
 
   &__nav__list__item > a {
