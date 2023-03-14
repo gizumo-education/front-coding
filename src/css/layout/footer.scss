@@ -3,7 +3,7 @@
 .l-footer {
   &__inner {
     width: 100%;
-    background: rgb(239, 246, 252);
+    background: utility.$footer-background;
     margin-top: 200px;
     &__wrapper {
       padding-top: 55px;
@@ -16,14 +16,14 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 23px;
-      color: rgb(0, 0, 0);
+      color: utility.$black;
     }
     &__last {
       text-align: center;
       font-size: 14px;
       height: 35px;
       padding-top: 11px;
-      background: rgb(215, 215, 215);
+      background: utility.$white;
     }
     &__access {
       &__wrapper {
@@ -35,7 +35,7 @@
         line-height: 36px;
         &__text {
           display: block;
-          color: rgb(0, 0, 0);
+          color: utility.$black;
         }
       }
       &__dox2 {
@@ -47,7 +47,7 @@
         line-height: 36px;
         &__text {
           display: block;
-          color: rgb(0, 0, 0);
+          color: utility.$black;
         }
       }
     }

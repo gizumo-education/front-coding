@@ -3,7 +3,7 @@
   &__wrapper {
     width: 100%;
     padding-bottom: 67px;
-    background: #EFF6FC;
+    background: utility.$jobs-background;
     margin-top: 59px;
   }
   &__title {
@@ -29,7 +29,7 @@
       &__text {
         font-size: 16px;
         line-height: 22px;
-        color: rgb(0, 0, 0);
+        color: utility.$black;
         margin-top: 8.08px;
       }
     }
@@ -39,17 +39,17 @@
   &__list {
     width: 60px;
     height: 21px;
-    background: #FFCAD0;
+    background: utility.$jobs-pink;
     margin-top: 6px;
     text-align: center;
     font-size: 14px;
     line-height: 20px;
-    color: rgb(0, 0, 0);
+    color: utility.$black;
     &__text {
       font-size: 14px;
       line-height: 32px;
       margin-left: 10px;
-      color: rgb(0, 0, 0);
+      color: utility.$black;
     }
     &__wrapper {
       display: flex;

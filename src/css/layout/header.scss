@@ -7,7 +7,7 @@
   position: fixed;
   z-index: 999;
   padding-top: 25px;
-  background-color: rgb(255, 255, 255);
+  background-color: utility.$white;
 }
 .l-header__menu__inner {
   display: flex;
@@ -20,7 +20,7 @@
     position: relative;
     height: 50px;
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: utility.$black;
     margin-left: 35px;
     line-height: 45px;
     &::after {
@@ -31,7 +31,7 @@
       height: 23px;
       width: 1px;
       display: block;
-      background-color: rgb(0, 0, 0);
+      background-color: utility.$black;
     }
     &:last-child::after {
       display: none;
@@ -45,8 +45,8 @@
     border-radius: 10px;
     font-size: 14px;
     line-height: 20px;
-    background: rgb(146, 197, 234);
-    color: rgb(255, 255, 255);
+    background: utility.$header-button;
+    color: utility.$white;
     padding: 15px 25px;
     margin-left: 10px;
     &:first-child {

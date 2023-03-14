@@ -4,21 +4,21 @@
     font-weight: 700;
     font-size: 25px;
     line-height: 25px;
-    color: rgb(0, 0, 0);
+    color: utility.$black;
     margin-top: 106px;
     text-align: center;
   }
   &__innerbox {
     width: 570px;
     padding-bottom: 40px;
-    background: rgb(247, 210, 219);
+    background: utility.$feature-background;
     border-radius: 10px;
     margin-left: 40px;
     text-align: center;
     &__title {
       font-weight: 700;
       font-size: 24px;
-      color: rgb(222, 85, 121);
+      color: utility.$pink;
       padding-top: 40px;
     }
     &__text {
