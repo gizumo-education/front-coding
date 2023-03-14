@@ -16,19 +16,20 @@
     margin-top: 20px;
   }
 
-  &__form-area {
+  &__form {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 15px;
     font-size: 18px;
     margin-top: 26px;
   }
 
-  &__form-area__wrapper {
+  &__form__wrapper {
     position: relative;
   }
 
-  &__form-area__wrapper::after {
+  &__form__wrapper::after {
     content: '';
     border-style: solid;
     border-width: 10px 10px 0 10px;
@@ -39,8 +40,8 @@
     transform: translateY(-50%);
   }
 
-  &__form-area__wrapper > select,
-  &__form-area > input[type='text'] {
+  &__form__wrapper > select,
+  &__form > input[type='text'] {
     appearance: none;
     font-size: 18px;
     background-color: vm.$white; //これがないとfirefoxで背景色がグレーになる
@@ -52,7 +53,7 @@
     position: relative;
   }
 
-  &__form-area > input[type='text'] {
+  &__form > input[type='text'] {
     width: 300px;
   }
 
