@@ -12,6 +12,7 @@
   cursor: pointer;
   padding: 17px 0px;
   transition: 0.3s;
+
   &:hover {
     opacity: 0.8;
   }
@@ -19,12 +20,26 @@
   &--small {
     @extend .c-button;
     width: 140px;
-    position: relative;
+
+    > svg {
+      vertical-align: middle;
+    }
   }
 
-  &--search::after {
-    position: absolute;
-  }
+  // div:has(&--small) {
+  //   position: relative;
+  // }
+
+  // div:has(&--small)::after {
+  //   content: '';
+  //   width: 30px;
+  //   height: 30px;
+  //   position: absolute;
+  //   top: 25%;
+  //   left: 14px;
+  //   background: url(../img/icon/search.png);
+  //   background-repeat: no-repeat;
+  // }
 
   &--large {
     @extend .c-button;
