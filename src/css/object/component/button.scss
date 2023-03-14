@@ -20,29 +20,14 @@
   &--small {
     @extend .c-button;
     width: 140px;
-
     > svg {
       vertical-align: middle;
     }
   }
 
-  // div:has(&--small) {
-  //   position: relative;
-  // }
-
-  // div:has(&--small)::after {
-  //   content: '';
-  //   width: 30px;
-  //   height: 30px;
-  //   position: absolute;
-  //   top: 25%;
-  //   left: 14px;
-  //   background: url(../img/icon/search.png);
-  //   background-repeat: no-repeat;
-  // }
-
   &--large {
     @extend .c-button;
     width: 360px;
+    line-height: 26px;
   }
 }
