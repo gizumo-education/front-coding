@@ -2,13 +2,13 @@
 .c-jobs {
   &__wrapper {
     width: 100%;
+    padding-top: 64px;
     padding-bottom: 67px;
     background: utility.$jobs-background;
     margin-top: 59px;
   }
   &__title {
     font-size: 25px;
-    padding-top: 64px;
     font-family: 'Inter';
   }
   &__detail {
