@@ -52,13 +52,10 @@
     }
   }
   &__img {
-    &__child {
-      padding-left: 600px;
-    }
+    margin-left: 600px;
     &__old {
       display: block;
       margin-top: 15px;
-      padding-left: 600px;
     }
   }
 }
