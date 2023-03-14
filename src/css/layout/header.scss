@@ -36,6 +36,9 @@
     &:last-child::after {
       display: none;
     }
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 .l-header__menu__button {
