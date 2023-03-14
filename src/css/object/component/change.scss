@@ -1,0 +1,80 @@
+@use '../../object/utility/utility.scss';
+.c-change {
+  &__wrapper {
+    padding-top: 105px;
+  }
+  &__title {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+  }
+  &__innerdox {
+    width: 277.73px;
+    height: 357.73px;
+    border-radius: 10px;
+    border: 2.268px solid utility.$pink;
+    margin-left: 22.27px;
+    position: relative;
+    &:first-child {
+      margin-left: 0;
+    }
+    &__step {
+      margin-top: 8.87px;
+      margin-left: 8.87px;
+    }
+    &__img {
+      width: 102.29px;
+      height: 100px;
+      position: absolute;
+      top: 58.87px;
+      left: 90px;
+    }
+    &__title {
+      text-align: center;
+      width: 216px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      position: absolute;
+      left: 25px;
+      top: 178px;
+    }
+    &__text {
+      width: 237px;
+      font-size: 14px;
+      line-height: 20px;
+      position: absolute;
+      left: 20px;
+      top: 256px;
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 51.13px;
+    }
+  }
+  &__icon1 {
+    border-left: 20px solid utility.$red;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    margin-left: 275px;
+    position: absolute;
+    bottom: 150px;
+  }
+  &__icon2 {
+    border-left: 20px solid utility.$red;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    margin-left: 275px;
+    position: absolute;
+    bottom: 150px;
+  }
+  &__icon3 {
+    border-left: 20px solid utility.$red;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    margin-left: 275px;
+    position: absolute;
+    bottom: 150px;
+  }
+}

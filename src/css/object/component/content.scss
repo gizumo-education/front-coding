@@ -1,0 +1,110 @@
+@use '../../object/utility/utility.scss';
+.c-content {
+  &__wrapper {
+    padding-top: 106px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+  }
+  &__img {
+    &__wrapper {
+      display: flex;
+      margin-top: 50px;
+      justify-content: center;
+    }
+    &__manual {
+      width: 380px;
+      background-image: url(../img/picture/manual-icon.jpg);
+      border-radius: 10px;
+      position: relative;
+      margin-left: 20px;
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.8;
+        transition: 0.3s;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background: utility.$black;
+        opacity: 0.5;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 240px;
+        border-radius: 10px;
+      }
+    }
+    &__title {
+      position: absolute;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: utility.$white;
+      top: 71px;
+      left: 107.56px;
+    }
+    &__text {
+      position: absolute;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      text-align: center;
+      color: utility.$white;
+      top: 139px;
+      left: 60px;
+      right: 64px;
+    }
+    &__trivia {
+      width: 380px;
+      height: 240px;
+      background-image: url(../img/picture/Trivia-icon.jpg);
+      border-radius: 10px;
+      margin-left: 20px;
+      position: relative;
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.8;
+        transition: 0.3s;
+      }
+      &__title {
+        position: absolute;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+        color: utility.$white;
+        top: 71px;
+        left: 70px;
+      }
+      &__text {
+        position: absolute;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        color: utility.$white;
+        top: 139px;
+        left: 42.2px;
+        right: 49.8px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background: utility.$black;
+        opacity: 0.5;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 240px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

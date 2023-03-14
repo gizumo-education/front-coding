@@ -1,0 +1,87 @@
+@use '../../object/utility/utility.scss';
+.c-search__inner {
+  padding-top: 61px;
+  &__box {
+    padding-top: 150px;
+
+  }
+}
+.c-search__wrapper {
+  border-radius: 10px;
+  background: utility.$search-background;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.c-search {
+  &__title {
+  font-weight: 700;
+  font-size: 25px;
+  }
+  &__text {
+    line-height: 29px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  &__list__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+  }
+  &__list {
+    width: 200px;
+    height: 59px;
+    border: 1px solid utility.$red;
+    border-radius: 10px;
+    margin-left: 16px;
+    font-size: 18px;
+    appearance: none;
+    padding-left: 14px;
+    background-image: linear-gradient(45deg, transparent 50%, utility.$red 50%),  linear-gradient(135deg, utility.$red 50%, transparent 50%);
+    background-size: 10px 10px, 10px 10px;
+    background-position: calc(100% - 20px) 50%, calc(100% - 10px) 50%;
+    background-repeat: no-repeat;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__inpot {
+    width: 299px;
+    height: 59px;
+    border: 1px solid utility.$red;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 16px;
+  }
+  &__button {
+    font-weight: 700;
+    line-height: 30px;
+    margin-left: 15px;
+    width: 140px;
+    color:  utility.$white;
+    font-size: 18px;
+    transition: 0.3s;
+    background: utility.$pink;
+    border-radius: 50px;
+    border: none;
+    &:hover {
+      opacity: 0.8;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+  &__img::before {
+    content: "";
+    position: absolute;
+    width: 29.98px;
+    height: 29.98px;
+    background-image: url("../img/icon/search-icon.png");
+    display: inline-block;
+    top: 4px;
+    left: 5px;
+  }
+}

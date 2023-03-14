@@ -1,0 +1,59 @@
+@use '../../object/utility/utility.scss';
+.c-jobs {
+  &__wrapper {
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 67px;
+    background: utility.$jobs-background;
+    margin-top: 59px;
+  }
+  &__title {
+    font-size: 25px;
+    font-family: 'Inter';
+  }
+  &__detail {
+    &__wrapper {
+      justify-content: center;
+      display: flex;
+      margin-top: 25px;
+    }
+    &__inner {
+      width: 280px;
+      margin-left: 20px;
+      transition: 0.3s;
+      &:first-child {
+        margin-left: 0;
+      }
+      &__img {
+        border-radius: 10px;
+      }
+      &__text {
+        font-size: 16px;
+        line-height: 22px;
+        color: utility.$black;
+        margin-top: 8.08px;
+      }
+    }
+  }
+}
+.c-jobs {
+  &__list {
+    width: 60px;
+    height: 21px;
+    background: utility.$jobs-pink;
+    margin-top: 6px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: utility.$black;
+    &__text {
+      font-size: 14px;
+      line-height: 32px;
+      margin-left: 10px;
+      color: utility.$black;
+    }
+    &__wrapper {
+      display: flex;
+    }
+  }
+}
