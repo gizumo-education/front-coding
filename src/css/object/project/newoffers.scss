@@ -30,10 +30,14 @@
     display: flex;
     gap: 10px;
     line-height: 21px;
+    font-size: 14px;
     > span:first-child {
       width: 60px;
       text-align: center;
       background: #ffcad0;
+    }
+    > span:last-child {
+      line-height: 17px;
     }
   }
 
