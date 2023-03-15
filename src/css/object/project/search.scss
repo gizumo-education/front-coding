@@ -1,11 +1,13 @@
 @use '../utility/utility.scss' as vm;
 
 .p-search {
-  background: vm.$blue;
-  padding: 40px;
-  margin: 0 auto;
-  border-radius: 8px;
-  text-align: center;
+  &__inner {
+    background: vm.$blue;
+    padding: 15px 25px 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    text-align: center;
+  }
 
   &__heading {
     @include vm.heading-lv2;
@@ -14,6 +16,10 @@
   &__text {
     font-size: 20px;
     margin-top: 20px;
+    @include vm.sp {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   &__form {
@@ -23,10 +29,22 @@
     gap: 15px;
     font-size: 18px;
     margin-top: 26px;
+    width: 100%;
+    @include vm.sp {
+      all: initial;
+      font-size: 18px;
+      display: flex;
+      gap: 11px 30px;
+      flex-wrap: wrap;
+    }
   }
 
   &__form__wrapper {
     position: relative;
+    width: 200px;
+    @include vm.sp {
+      width: calc(100% / 3);
+    }
   }
 
   &__form__wrapper::after {
@@ -40,21 +58,40 @@
     transform: translateY(-50%);
   }
 
-  &__form__wrapper > select,
-  &__form > input[type='text'] {
+  &__form__wrapper > select {
     appearance: none;
     font-size: 18px;
     background-color: vm.$white; //これがないとfirefoxで背景色がグレーになる
     border: solid 1px vm.$form-border;
     border-radius: 8px;
-    width: 200px;
+    width: inherit;
     height: 60px;
     padding: 0px 15px;
     position: relative;
+    @include vm.sp {
+      width: inherit;
+      height: 30px;
+      font-size: 12px;
+      padding: 5px 8px;
+    }
   }
 
   &__form > input[type='text'] {
+    appearance: none;
+    font-size: 18px;
+    border: solid 1px vm.$form-border;
+    border-radius: 8px;
     width: 300px;
+    height: 60px;
+    padding: 0px 15px;
+    position: relative;
+    @include vm.sp {
+      width: 100%;
+      font-size: 14px;
+      height: 30px;
+      line-height: 20px;
+      padding: 5px 0 5px 8px;
+    }
   }
 
   &--bottom {
