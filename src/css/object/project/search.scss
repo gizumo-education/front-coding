@@ -3,10 +3,13 @@
 .p-search {
   &__inner {
     background: vm.$blue;
-    padding: 15px 25px 20px;
     margin: 0 auto;
+    padding: 40px;
     border-radius: 8px;
     text-align: center;
+    @include vm.sp {
+      padding: 15px 25px 20px;
+    }
   }
 
   &__heading {
