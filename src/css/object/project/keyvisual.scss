@@ -27,11 +27,12 @@
       width: 170px;
       font-size: 8px;
       line-height: 12px;
-      padding: 3px 23px;
+      padding: 3px 1px;
+      text-align: center;
       border: solid 1px vm.$key-visual-text;
       left: 190px;
       top: 188px;
-      box-sizing: content-box;
+      // box-sizing: content-box;
     }
   }
 
