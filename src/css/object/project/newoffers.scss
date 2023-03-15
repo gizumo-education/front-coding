@@ -38,6 +38,10 @@
   &__list__item > a > h3 {
     line-height: 22px;
     margin-top: 8px;
+    @include vm.sp {
+      font-size: 16px;
+      font-weight: vm.$bold;
+    }
   }
 
   &__list__item__list > * + * {
@@ -62,5 +66,8 @@
 
   &__button-wrapper {
     margin-top: 60px;
+    @include vm.sp {
+      margin-top: 45px;
+    }
   }
 }
