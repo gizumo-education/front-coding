@@ -22,7 +22,9 @@
       vertical-align: middle;
     }
     @include vm.sp {
-      padding: 11px 43px;
+      width: 160px;
+      padding: 11px 20px;
+      line-height: 18px;
     }
   }
 
@@ -31,7 +33,7 @@
     width: 360px;
     line-height: 26px;
     @include vm.sp {
-      padding: 21px 77px;
+      width: 100%;
       line-height: 18px;
     }
   }
