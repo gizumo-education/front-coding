@@ -21,11 +21,18 @@
     > svg {
       vertical-align: middle;
     }
+    @include vm.sp {
+      padding: 11px 43px;
+    }
   }
 
   &--large {
     @extend .c-button;
     width: 360px;
     line-height: 26px;
+    @include vm.sp {
+      padding: 21px 77px;
+      line-height: 18px;
+    }
   }
 }
