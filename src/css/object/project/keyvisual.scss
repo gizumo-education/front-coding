@@ -8,6 +8,10 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  @include vm.sp {
+    height: 270px;
+    background-image: url(../img/picture/keyvisualsp.jpg);
+  }
 
   &__text {
     font-size: 20px;
@@ -19,11 +23,25 @@
     position: absolute;
     top: 384px;
     left: 634.5px;
+    @include vm.sp {
+      width: 170px;
+      font-size: 8px;
+      line-height: 12px;
+      padding: 3px 23px;
+      border: solid 1px vm.$key-visual-text;
+      left: 190px;
+      top: 188px;
+      box-sizing: content-box;
+    }
   }
 
   &__text > span {
     font-size: 40px;
     font-weight: vm.$bold;
     line-height: 58px;
+    @include vm.sp {
+      font-size: 16px;
+      line-height: initial;
+    }
   }
 }

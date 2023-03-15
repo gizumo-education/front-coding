@@ -2,6 +2,7 @@
 // innerのスタイルを記述するファイル
 .l-inner {
   max-width: 1180px;
+  height: auto;
   margin: 0 auto;
 
   @include vm.sp {
