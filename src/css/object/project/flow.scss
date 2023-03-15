@@ -1,6 +1,10 @@
 @use '../../object/utility/utility.scss' as vm;
 
 .p-flow {
+  @include vm.sp {
+    padding: 0 60px;
+  }
+
   &__heading {
     @include vm.heading-lv2;
   }
@@ -13,7 +17,6 @@
       flex-direction: column;
       gap: 40px;
       margin-top: 35px;
-      padding: 0 60px;
     }
   }
 
