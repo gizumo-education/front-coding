@@ -7,6 +7,13 @@
   background: vm.$white;
   position: fixed;
   z-index: 100;
+  @include vm.sp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+    height: 70px;
+  }
 
   &__nav {
     display: flex;
@@ -16,6 +23,9 @@
 
   &__nav__list {
     display: flex;
+    @include vm.sp {
+      display: none;
+    }
   }
 
   &__nav__list__item {
@@ -45,6 +55,9 @@
     display: flex;
     gap: 15px;
     font-size: 14px;
+    @include vm.sp {
+      display: none;
+    }
   }
 
   &__nav__list--button__item > a {
@@ -57,7 +70,12 @@
       opacity: 0.8;
     }
   }
+
   &__nav__list--button__item > a > svg {
     vertical-align: text-bottom;
+  }
+
+  &__nav--sp {
+    display: none;
   }
 }
