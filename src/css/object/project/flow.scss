@@ -11,6 +11,7 @@
     margin-top: 51px;
     @include vm.sp {
       flex-direction: column;
+      gap: 40px;
     }
   }
 
@@ -35,6 +36,14 @@
     top: 50%;
     right: -24px;
     transform: translateY(-50%);
+    @include vm.sp {
+      border-style: solid;
+      border-width: 20px 20px 0 20px;
+      border-color: #de557a transparent transparent transparent;
+      top: 100%;
+      right: 50%;
+      transform: translate(50%, 50%);
+    }
   }
 
   &__list__item:last-child:after {
