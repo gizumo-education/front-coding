@@ -12,6 +12,8 @@
     margin-top: 53px;
     @include vm.sp {
       flex-direction: column;
+      margin-top: 38px;
+      gap: 21px;
     }
   }
 
