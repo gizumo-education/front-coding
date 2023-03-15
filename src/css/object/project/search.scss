@@ -38,21 +38,31 @@
       all: initial;
       font-size: 18px;
       display: flex;
+      justify-content: center;
       gap: 11px 30px;
       flex-wrap: wrap;
       margin-top: 13px;
     }
   }
 
-  &__form__wrapper {
-    position: relative;
-    width: 200px;
+  &__form__inner {
+    display: flex;
+    gap: 15px;
     @include vm.sp {
-      width: calc(100% / 3);
+      width: 100%;
     }
   }
 
-  &__form__wrapper::after {
+  &__form__select-wrapper {
+    position: relative;
+    width: 200px;
+    @include vm.sp {
+      width: 100%;
+      min-width: 80px;
+    }
+  }
+
+  &__form__select-wrapper::after {
     content: '';
     border-style: solid;
     border-width: 10px 10px 0 10px;
@@ -61,12 +71,18 @@
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
+    @include vm.sp {
+      right: 8px;
+      border-style: solid;
+      border-width: 7px 6.5px 0 6.5px;
+      border-color: vm.$form-border transparent transparent transparent;
+    }
   }
 
-  &__form__wrapper > select {
+  &__form__select-wrapper > select {
     appearance: none;
     font-size: 18px;
-    background-color: vm.$white; //これがないとfirefoxで背景色がグレーになる
+    background-color: vm.$white; // firefox対応
     border: solid 1px vm.$form-border;
     border-radius: 8px;
     width: inherit;
@@ -92,16 +108,16 @@
     position: relative;
     @include vm.sp {
       width: 100%;
-      font-size: 14px;
       height: 30px;
+      font-size: 14px;
       line-height: 20px;
-      padding: 5px 0 5px 8px;
+      padding: 5px 8px;
     }
   }
 
   &__form > .c-button--small {
     @include vm.sp {
-      margin-top: 20px;
+      margin-top: 5px; // gapと合わせて20pxの余白
     }
   }
 
