@@ -1,9 +1,11 @@
 @use '../object/utility/utility.scss' as vm;
 // innerのスタイルを記述するファイル
 .l-inner {
+  width: 100%;
   max-width: 1180px;
   height: auto;
   margin: 0 auto;
+  padding: 0 15px;
 
   @include vm.sp {
     max-width: 370px;

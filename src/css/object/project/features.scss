@@ -10,6 +10,9 @@
     flex-wrap: wrap;
     gap: 40px;
     margin-top: 53px;
+    @include vm.sp {
+      flex-direction: column;
+    }
   }
 
   &__list__item {
