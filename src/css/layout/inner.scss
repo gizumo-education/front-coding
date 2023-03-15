@@ -1,6 +1,10 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as vm;
 // innerのスタイルを記述するファイル
 .l-inner {
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
+
+  @include vm.sp {
+    max-width: 370px;
+  }
 }
