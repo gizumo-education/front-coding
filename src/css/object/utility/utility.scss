@@ -1,2 +1,18 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
+
+.u-mt-medium {
+  margin-top: 60px !important;
+}
+
+.u-mt-large {
+  margin-top: 105px !important;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-relative {
+  position: relative;
+}

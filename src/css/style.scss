@@ -6,8 +6,9 @@
 /*-------------------------------------------*/
 
 /*layout---------------------------------*/
-@use './layout/footer.scss';
 @use './layout/header.scss';
+@use './layout/main.scss';
+@use './layout/footer.scss';
 @use './layout/inner.scss';
 /*-------------------------------------------*/
 
@@ -16,5 +17,11 @@
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
+@use './object/project/flow.scss';
+@use './object/project/features.scss';
+@use './object/project/aboutus.scss';
 @use './object/project/keyvisual.scss';
+@use './object/project/newoffers.scss';
+@use './object/project/search.scss';
+@use './object/project/useful.scss';
 /*-------------------------------------------*/

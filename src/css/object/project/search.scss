@@ -1,0 +1,63 @@
+@use '../utility/utility.scss' as vm;
+
+.p-search {
+  background: vm.$blue;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 8px;
+  text-align: center;
+
+  &__heading {
+    @include vm.heading-lv2;
+  }
+
+  &__text {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    margin-top: 26px;
+  }
+
+  &__form__wrapper {
+    position: relative;
+  }
+
+  &__form__wrapper::after {
+    content: '';
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: vm.$form-border transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+  }
+
+  &__form__wrapper > select,
+  &__form > input[type='text'] {
+    appearance: none;
+    font-size: 18px;
+    background-color: vm.$white; //これがないとfirefoxで背景色がグレーになる
+    border: solid 1px vm.$form-border;
+    border-radius: 8px;
+    width: 200px;
+    height: 60px;
+    padding: 0px 15px;
+    position: relative;
+  }
+
+  &__form > input[type='text'] {
+    width: 300px;
+  }
+
+  &--bottom {
+    margin-top: 150px;
+  }
+}

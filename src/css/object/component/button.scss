@@ -1,2 +1,31 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as vm;
 // 共通パーツであるボタンのスタイルを記述するファイル
+.c-button {
+  color: vm.$white;
+  font-size: 18px;
+  font-weight: vm.$bold;
+  background: vm.$pink;
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+  padding: 17px 0px;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--small {
+    @extend .c-button;
+    width: 140px;
+    > svg {
+      vertical-align: middle;
+    }
+  }
+
+  &--large {
+    @extend .c-button;
+    width: 360px;
+    line-height: 26px;
+  }
+}

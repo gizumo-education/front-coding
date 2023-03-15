@@ -1,2 +1,29 @@
-@use '../../object/utility/utility.scss';
+@use '../utility/utility.scss' as vm;
 // ページ上部のキービジュアルに関するスタイル
+.p-key-visual {
+  background: vm.$key-visual-background;
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/picture/keyvisualpc.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &__text {
+    font-size: 20px;
+    color: vm.$key-visual-text;
+    background-color: vm.$white;
+    padding: 4px 40px;
+    border: solid 2px vm.$key-visual-text;
+    border-radius: 8px;
+    position: absolute;
+    top: 384px;
+    left: 634.5px;
+  }
+
+  &__text > span {
+    font-size: 40px;
+    font-weight: vm.$bold;
+    line-height: 58px;
+  }
+}

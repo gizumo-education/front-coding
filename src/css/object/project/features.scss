@@ -1,0 +1,33 @@
+@use '../../object/utility/utility.scss' as vm;
+
+.p-features {
+  &__heading {
+    @include vm.heading-lv2;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 53px;
+  }
+
+  &__list__item {
+    background: vm.$light-pink;
+    text-align: center;
+    flex: 1 1 calc(50% - 20px);
+    border-radius: 8px;
+    padding: 40px 61px;
+  }
+
+  &__list__item > h3 {
+    color: vm.$pink;
+    @include vm.heading-lv3;
+  }
+
+  &__list__item > p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 36px;
+  }
+}
