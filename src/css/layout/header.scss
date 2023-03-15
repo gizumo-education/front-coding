@@ -7,6 +7,13 @@
   background: vm.$white;
   position: fixed;
   z-index: 100;
+  @include vm.tab {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+    height: 70px;
+  }
   @include vm.sp {
     display: flex;
     align-items: center;
@@ -23,6 +30,9 @@
 
   &__nav__list {
     display: flex;
+    @include vm.tab {
+      display: none;
+    }
     @include vm.sp {
       display: none;
     }
@@ -55,6 +65,9 @@
     display: flex;
     gap: 15px;
     font-size: 14px;
+    @include vm.tab {
+      display: none;
+    }
     @include vm.sp {
       display: none;
     }

@@ -35,20 +35,15 @@
     margin-top: 26px;
     width: 100%;
     @include vm.tab {
-      align-items: initial;
-      gap: 11px 30px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 15px;
       margin-top: 13px;
     }
     @include vm.sp {
       align-items: initial;
-      gap: 11px 30px;
+      gap: 15px;
       flex-wrap: wrap;
       margin-top: 13px;
-      // all: initial;
-      // font-size: 18px;
-      // display: flex;
-      // justify-content: center;
     }
   }
 
@@ -115,8 +110,8 @@
     position: relative;
     @include vm.tab {
       width: 100%;
-      // max-width: 630px;
-      height: 30px;
+      max-width: 630px;
+      height: 60px;
       font-size: 14px;
       line-height: 20px;
       padding: 5px 8px;
