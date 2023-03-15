@@ -19,19 +19,21 @@
     margin-left: 20px;
 
     &:first-child {
-      margin-left: 20px;
+      margin-left: 0;
     }
 
     &__img-1 {
       background-image: url(../img/picture/content_1.jpg);
       background-size: cover;
       background-repeat: no-repeat;
+      border-radius: 10px;
     }
 
     &__img-2 {
       background-image: url(../img/picture/content_2.jpg);
       background-size: cover;
       background-repeat: no-repeat;
+      border-radius: 10px;
     }
   }
 
@@ -44,6 +46,7 @@
       height: 100%;
       color: utility.$white;
       padding: 70px 42px;
+      text-align: center;
 
 
       &::after {
