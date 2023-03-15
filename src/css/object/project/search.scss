@@ -97,7 +97,9 @@
   }
 
   &__form > .c-button--small {
-    margin-top: 20px;
+    @include vm.sp {
+      margin-top: 20px;
+    }
   }
 
   &--bottom {
