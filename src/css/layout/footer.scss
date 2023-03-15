@@ -3,6 +3,9 @@
 .l-footer {
   background: #eff6fc;
   margin-top: 200px;
+  @include vm.sp {
+    margin-top: 100px;
+  }
 
   &__inner {
     display: flex;
@@ -43,5 +46,8 @@
   &__copyrights-text {
     padding: 11px 0;
     background: vm.$grey;
+    @include vm.sp {
+      font-size: 14px;
+    }
   }
 }

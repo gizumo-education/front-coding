@@ -19,6 +19,7 @@
     @include vm.sp {
       font-size: 14px;
       line-height: 20px;
+      margin-top: 16px;
     }
   }
 
@@ -36,6 +37,7 @@
       display: flex;
       gap: 11px 30px;
       flex-wrap: wrap;
+      margin-top: 13px;
     }
   }
 
@@ -94,7 +96,14 @@
     }
   }
 
+  &__form > .c-button--small {
+    margin-top: 20px;
+  }
+
   &--bottom {
     margin-top: 150px;
+    @include vm.sp {
+      margin-top: 60px;
+    }
   }
 }
