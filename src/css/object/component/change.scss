@@ -78,3 +78,69 @@
     bottom: 150px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .c-change {
+    &__wrapper {
+      padding-top: 1.05rem;
+    }
+    &__title {
+      font-size: 0.25rem;
+    }
+    &__innerdox {
+      width: 2.77rem;
+      height: 3.57rem;
+      border-radius: 0.1rem;
+      border: 0.02rem solid utility.$pink;
+      margin-left: 0.22rem;
+      &__step {
+        width: 0.6rem;
+        margin-top: 0.08rem;
+        margin-left: 0.08rem;
+      }
+      &__img {
+        width: 1.02rem;
+        height: 1rem;
+        top: 0.58rem;
+        left: 0.90rem;
+      }
+      &__title {
+        width: 2.16rem;
+        font-size: 0.24rem;
+        line-height: 0.30rem;
+        left: 0.25rem;
+        top: 1.78rem;
+      }
+      &__text {
+        width: 2.37rem;
+        font-size: 0.14rem;
+        line-height: 0.20rem;
+        left: 0.20rem;
+        top: 2.56rem;
+      }
+      &__wrapper {
+        margin-top: 0.51rem;
+      }
+    }
+    &__icon1 {
+      border-left: 0.2rem solid utility.$red;
+      border-top: 0.2rem solid transparent;
+      border-bottom: 0.2rem solid transparent;
+      margin-left: 2.75rem;
+      bottom: 1.5rem;
+    }
+    &__icon2 {
+      border-left: 0.2rem solid utility.$red;
+      border-top: 0.2rem solid transparent;
+      border-bottom: 0.2rem solid transparent;
+      margin-left: 2.75rem;
+      bottom: 1.5rem;
+    }
+    &__icon3 {
+      border-left: 0.2rem solid utility.$red;
+      border-top: 0.2rem solid transparent;
+      border-bottom: 0.2rem solid transparent;
+      margin-left: 2.75rem;
+      bottom: 1.5rem;
+    }
+  }
+}

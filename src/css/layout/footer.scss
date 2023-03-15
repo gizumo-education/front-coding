@@ -59,3 +59,47 @@
     }
   }
 }
+@media screen and (max-width: 1199px) {
+  .l-footer {
+    &__inner {
+      margin-top: 2rem;
+      &__wrapper {
+        padding-top: 0.55rem;
+        height: 2.65rem;
+      }
+      &__title {
+        padding-top: 0.2rem;
+        font-size: 0.16rem;
+        line-height: 0.23rem;
+      }
+      &__last {
+        font-size: 0.14rem;
+        height: 0.35rem;
+        padding-top: 0.11rem;
+      }
+      &__access {
+        &__wrapper {
+          margin-top: 0.27rem;
+        }
+        &__dox1 {
+          width: 0.96rem;
+          font-size: 0.16rem;
+          line-height: 0.36rem;
+        }
+        &__dox2 {
+          margin-left: 0.39rem;
+          width: 2.3rem;
+          padding-bottom: 0.28rem;
+          font-size: 0.16rem;
+          line-height: 0.36rem;
+        }
+      }
+    }
+    &__img {
+      margin-left: 5.6rem;
+      &__old {
+        margin-top: 0.15rem;
+      }
+    }
+  }
+}

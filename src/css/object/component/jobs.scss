@@ -57,3 +57,46 @@
     }
   }
 }
+@media screen and (max-width: 1199px) {
+  .c-jobs {
+    &__wrapper {
+      padding-top: 0.64rem;
+      padding-bottom: 0.67rem;
+      margin-top: 0.59rem;
+    }
+    &__title {
+      font-size: 0.25rem;
+    }
+    &__detail {
+      &__wrapper {
+        margin-top: 0.25rem;
+      }
+      &__inner {
+        width: 2.8rem;
+        margin-left: 0.2rem;
+        &__img {
+          border-radius: 0.1rem;
+        }
+        &__text {
+          font-size: 0.16rem;
+          line-height: 0.22rem;
+          margin-top: 0.08rem;
+        }
+      }
+    }
+  }
+  .c-jobs {
+    &__list {
+      width: 0.6rem;
+      height: 0.21rem;
+      margin-top: 0.06rem;
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+      &__text {
+        font-size: 0.14rem;
+        line-height: 0.32rem;
+        margin-left: 0.1rem;
+      }
+    }
+  }
+}

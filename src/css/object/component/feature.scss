@@ -43,3 +43,35 @@
     }
   }
 }
+@media screen and (max-width: 1199px) {
+  .c-feature {
+    &__wrapper {
+      padding-top: 1.06rem;
+    }
+    &__title {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
+    &__innerbox {
+      width: 5.7rem;
+      padding-bottom: 0.4rem;
+      border-radius: 0.1rem;
+      margin-left: 0.4rem;
+      &__title {
+        font-size: 0.24rem;
+        padding-top: 0.4rem;
+      }
+      &__text {
+        font-size: 0.14rem;
+        line-height: 0.2rem;
+        margin-top: 0.36rem;
+      }
+      &__wrapper {
+        margin-top: 0.53rem;
+      }
+      &:nth-child(n+3) {
+        margin-top: 0.4rem;
+      }
+    }
+  }
+}

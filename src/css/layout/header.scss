@@ -63,3 +63,40 @@
 .l-icon__reading {
   width: 18px;
 }
+@media screen and (max-width: 1199px) {
+  .l-header {
+    height: 1rem;
+    padding-top: 0.25rem;
+  }
+  .l-header__menu__inner {
+    margin-right: 0.1rem;
+    &__medical {
+      height: 0.5rem;
+      font-size: 0.16rem;
+      margin-left: 0.35rem;
+      line-height: 0.45rem;
+      &::after {
+        right: -0.18rem;
+        top: 0.12rem;
+        height: 0.23rem;
+        width: 0.01rem;
+      }
+    }
+  }
+  .l-header__menu__button {
+    margin-left: 0.25rem;
+    &__list {
+      border-radius: 0.1rem;
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+      padding: 0.15rem 0.25rem;
+      margin-left: 0.1rem;
+    }
+  }
+  .l-icon__reading {
+    width: 0.20rem;
+  }
+  .l-icon__heart {
+    width: 0.23rem;
+  }
+}
