@@ -1,4 +1,4 @@
-@use '../foundation/variables' as v;
+@use '../foundation/variables' as var;
 
 // 共通のパーツを作成
 @mixin pc {
@@ -29,10 +29,13 @@
 
 @mixin heading-lv2 {
   font-size: 25px;
-  font-weight: v.$bold;
+  font-weight: var.$bold;
 }
 
 @mixin heading-lv3 {
   font-size: 24px;
-  font-weight: v.$bold;
+  font-weight: var.$bold;
+  @include sp {
+    font-size: 20px;
+  }
 }
