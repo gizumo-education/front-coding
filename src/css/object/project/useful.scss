@@ -15,11 +15,12 @@
   }
 
   &__list__item {
+    width: 100%;
     flex: 1 1;
   }
 
   &__list__item > a {
-    width: 380px;
+    width: inherit;
     height: 240px;
     color: vm.$white;
     text-align: center;
