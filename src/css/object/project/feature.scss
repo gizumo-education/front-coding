@@ -4,6 +4,11 @@
 .p-feature {
   margin-top: 106px;
   text-align: center;
+
+  @include utility.tab {
+    margin-top: 1.06rem;
+  }
+
   &__inner {
     width: 100%;
     height: auto;
@@ -12,14 +17,27 @@
     gap: 40px;
     justify-content: space-between;
     margin-top: 53px;
+
+    @include utility.tab {
+      gap: 0.4rem;
+      margin-top: 0.53rem;
+    }
   }
+
   &__item {
     background-color: utility.$peach;
     border-radius: 10px;
     width: calc((100% - 40px)/2);
     flex-direction:column;
     padding: 40px 47px;
+
+    @include utility.tab {
+      border-radius: 0.1rem;
+      width: calc((100% - 0.4rem)/2);
+      padding: 0.4rem 0.47rem;
+    }
   }
+
   &__subtitle {
     color: utility.$pink;
   }
@@ -27,5 +45,10 @@
   &__text {
     margin-top: 36px;
     line-height: 20px;
+
+    @include utility.tab {
+      margin-top: 0.36rem;
+      line-height: 0.2rem;
+    }
   }
 }

@@ -5,28 +5,56 @@
   margin-top: 200px;
   background-color: utility.$skyblue;
   padding-top: 55px;
+
+  @include utility.tab {
+    margin-top: 2rem;
+    padding-top: 0.55rem;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
     padding-bottom: 25px;
+
+    @include utility.tab {
+      padding-bottom: 0.25rem;
+    }
   }
 
   &__link {
     &__top {
       margin-top: 24px;
+
+      @include utility.tab {
+        margin-top: 0.24rem;
+      }
     }
+
     &__nav {
       margin-top: 27px;
       margin-left: 39px;
+
+      @include utility.tab {
+        margin-top: 0.27rem;
+        margin-left: 0.39rem;
+      }
+
       &:first-child {
         margin-left: 0;
       }
+
       &__inner {
         display: flex;
       }
+
       &__item {
         line-height: 36px;
+
+        @include utility.tab {
+          line-height: 0.36rem;
+        }
       }
+
     }
   }
 
@@ -34,7 +62,12 @@
     &__item {
       &:last-child{
         margin-top: 15px;
+
+        @include utility.tab {
+          margin-bottom: 0.15rem;
+        }
       }
+
     }
   }
 
@@ -44,6 +77,10 @@
       &__text {
         text-align: center;
         line-height: 35px;
+
+        @include utility.tab {
+          line-height: 0.35rem;
+        }
       }
   }
 }

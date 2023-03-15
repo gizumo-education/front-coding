@@ -10,6 +10,10 @@
     background-color: utility.$white;
     z-index: 100;
 
+    @include utility.tab {
+      height: 1rem;
+    }
+
 
   &__nav {
     padding-top: 25px;
@@ -17,6 +21,13 @@
     align-items: center;
     justify-content: flex-end;
     margin-right: 100px;
+
+    @include utility.tab {
+      padding-top: 0.25rem;
+      margin-right: 0;
+      justify-content: center;
+
+    }
   }
 
   &__list {
@@ -24,10 +35,20 @@
     align-items: center;
     font-size: 16px;
 
+    @include utility.tab {
+      font-size: 0.16rem;
+    }
+
     &__item {
       margin-left: 20px;
       padding-left: 20px;
       border-left: 1px solid utility.$black;
+
+      @include utility.tab {
+        margin-left: 0.2rem;
+        padding-left: 0.2rem;
+        border-left: 0.01rem solid utility.$black;
+      }
 
       &:first-child {
         margin-left: 0;
@@ -43,6 +64,10 @@
     font-size: 16px;
     color: utility.$white;
     margin-left: 25px;
+
+    @include utility.tab {
+      margin-left: 0.25rem;
+    }
 
     &__inner {
       display: flex;
@@ -60,9 +85,21 @@
       width: 140px;
       color: utility.$white;
 
+      @include utility.tab {
+        font-size: 0.14rem;
+        padding: 0.16rem 0rem;
+        border-radius: 0.1rem;
+        margin-left: 0.15rem;
+        width: 1.4rem;
+      }
+
       &:first-child{
         width: 160px;
         margin-left: 0;
+
+        @include utility.tab {
+          width: 1.6rem;
+        }
       }
 
       & > a{
@@ -72,6 +109,10 @@
       &__img {
         margin-right: 10px;
         vertical-align: text-bottom;
+
+        @include utility.tab {
+          margin-right: 0.1rem;
+        }
       }
     }
   }

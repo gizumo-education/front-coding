@@ -14,6 +14,11 @@
     align-items: center;
     position: relative;
     z-index: 1;
+
+    @include utility.tab {
+      padding: 1.04rem 0;
+    }
+
     &::after{
       content: "";
       position: absolute;
@@ -37,6 +42,10 @@
       display: block;
       &:last-child{
         margin-top: 21px;
+
+        @include utility.tab {
+          margin-top: 0.21rem;
+        }
       }
     }
   }

@@ -6,20 +6,39 @@
   background-color: utility.$skyblue;
   padding: 64px 0 67px 0;
 
+  @include utility.tab {
+    margin-top: 0.59rem;
+    padding: 0.64rem 0 0.67rem 0;
+  }
+
   &__title {
     text-align: left;
     font-size: 25px;
+
+    @include utility.tab {
+      font-size: 0.25rem;
+    }
   }
 
   &__inner__item {
     display: flex;
     justify-content: center;
     margin-top: 25px;
+
+    @include utility.tab {
+      margin-top: 0.25rem;
+    }
   }
 
   &__item {
     max-width: 280px;
     margin-left: 20px;
+
+    @include utility.tab {
+      max-width: 2.8rem;
+      margin-left: 0.2rem;
+    }
+
     &:first-child{
       margin-left: 0;
     }
@@ -33,17 +52,37 @@
       height: 0;
       border-left: 8px solid transparent;
       border-right: 8px solid transparent;
+
+      @include utility.tab {
+        right: 0.1rem;
+        border-left: 0.08rem solid transparent;
+        border-right: 0.08rem solid transparent;
+      }
     }
   }
 
   &__img img{
     border-radius: 10px;
+
+    @include utility.tab {
+      border-radius: 0.1rem;
+    }
   }
   &__text {
     margin-top: 8px;
     line-height: 22px;
+
+    @include utility.tab {
+      margin-top: 0.08rem;
+      line-height: 0.22rem;
+    }
+
     &__detail {
       margin-top: 7px;
+
+      @include utility.tab {
+        margin-top: 0.07rem;
+      }
     }
 
     dl {
@@ -51,16 +90,30 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+
+      @include utility.tab {
+        width: 2.8rem;
+      }
     }
     dl dt {
       width: 60px;
       background-color: utility.$baby-pink;
       margin-top: 4px;
       text-align: center;
+
+      @include utility.tab {
+        width: 0.6rem;
+        margin-top: 0.04rem;
+      }
     }
     dl dd {
       width: 210px;
       margin-left: 10px;
+
+      @include utility.tab {
+        width: 2.1rem;
+        margin-left: 0.1rem;
+      }
     }
   }
 
@@ -69,5 +122,11 @@
     width: 360px;
     margin: 60px auto 0;
     display: block;
+
+    @include utility.tab {
+      padding: 0.17rem 0.72rem;
+      width: 3.6rem;
+      margin: 0.6rem auto 0;
+    }
   }
 }

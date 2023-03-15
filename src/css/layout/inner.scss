@@ -4,4 +4,8 @@
 .l-inner {
   max-width: 1180px;
   margin: 0 auto;
+
+  @include utility.tab {
+    max-width: 11.8rem;
+  }
 }

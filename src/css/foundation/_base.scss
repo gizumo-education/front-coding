@@ -23,6 +23,7 @@ body {
 @include base.tab {
   body {
     font-size: 0.1rem;
+    padding-top: 1rem;
   }
   html {
     font-size: calc(100vw / 12);

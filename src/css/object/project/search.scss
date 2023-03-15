@@ -8,9 +8,20 @@
   text-align: center;
   margin-top: 61px;
 
+  @include utility.tab {
+    border-radius: 0.1rem;
+    padding: 0.4rem;
+    margin-top: 0.61rem;
+  }
+
   &__subtitle {
     font-size: 20px;
     margin-top: 20px;
+
+    @include utility.tab {
+      font-size: 0.2rem;
+      margin-top: 0.2rem;
+    }
   }
 
   &__form {
@@ -18,8 +29,16 @@
     justify-content: center;
     margin-top: 27px;
 
+    @include utility.tab {
+      margin-top: 0.27rem;
+    }
+
     &__item {
       margin-left: 16px;
+
+      @include utility.tab {
+        margin-left: 0.16rem;
+      }
       &:first-child {
         margin-left: 0;
       }
@@ -32,6 +51,11 @@
         border-radius: 0;
         width: 200px;
         padding: 17px 15px;
+
+        @include utility.tab {
+          width: 2rem;
+          padding: 0.17rem 0.15rem;
+        }
       }
       &::after {
         border-left: 10px solid transparent;
@@ -42,6 +66,14 @@
         right: 15px;
         top: 25px;
         width: 0;
+
+        @include utility.tab {
+          border-left: 0.1rem solid transparent;
+          border-right: 0.1rem solid transparent;
+          border-top: 0.1rem solid utility.$dark-pink;
+          right: 0.15rem;
+          top: 0.25rem;
+        }
       }
     }
 
@@ -49,6 +81,11 @@
       &__item {
         padding: 16px 18px 16px 10px;
         width: 300px;
+
+        @include utility.tab {
+          padding: 0.16rem 0.18rem 0.16rem 0.1rem;
+          width: 3rem;
+        }
       }
     }
 
@@ -59,15 +96,33 @@
       border-radius: 10px;
       background-color: utility.$white;
 
+      @include utility.tab {
+        font-size: 0.18rem;
+        border: 0.01rem solid utility.$dark-pink;
+        border-radius: 0.1rem;
+      }
+
       &:focus {
         outline: 0;
         border: 1px solid utility.$dark-pink;
+
+        @include utility.tab {
+          border: 0.01rem solid utility.$dark-pink;
+        }
       }
     }
 
     &__submit {
       width: 140px;
       text-align: center;
+
+      @include utility.tab {
+        width: 1.4rem;
+      }
+
+      & img{
+        width: 0.3rem;
+      }
     }
   }
 }

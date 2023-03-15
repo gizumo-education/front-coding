@@ -5,19 +5,35 @@
 .c-heading {
   font-size: 25px;
   font-weight: bold;
+
+  @include utility.tab {
+    font-size: 0.25rem;
+  }
 }
 
 .c-text-subtitle {
   font-size: 24px;
   font-weight: bold;
+
+  @include utility.tab {
+    font-size: 0.24rem;
+  }
 }
 
 
 .c-text-regular {
   font-size: 16px;
+
+  @include utility.tab {
+    font-size: 0.16rem;
+  }
 }
 
 .c-text-small {
   font-size: 14px;
+
+  @include utility.tab {
+    font-size: 0.14rem;
+  }
 }
 
