@@ -1,0 +1,73 @@
+@use '../../object/utility/utility.scss';
+// 「お仕事検索」セクションのスタイルを記述
+
+.p-search {
+  background-color: utility.$baby-blue;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  margin-top: 61px;
+
+  &__subtitle {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+
+    &__item {
+      margin-left: 16px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    &__select {
+      position: relative;
+      &__item {
+        appearance: none;
+        border-radius: 0;
+        width: 200px;
+        padding: 17px 15px;
+      }
+      &::after {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid utility.$dark-pink;
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 25px;
+        width: 0;
+      }
+    }
+
+    &__input {
+      &__item {
+        padding: 16px 18px 16px 10px;
+        width: 300px;
+      }
+    }
+
+    &__select__item,
+    &__input__item {
+      font-size: 18px;
+      border: 1px solid utility.$dark-pink;
+      border-radius: 10px;
+      background-color: utility.$white;
+
+      &:focus {
+        outline: 0;
+        border: 1px solid utility.$dark-pink;
+      }
+    }
+
+    &__submit {
+      width: 140px;
+      text-align: center;
+    }
+  }
+}

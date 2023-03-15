@@ -1,2 +1,32 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-btn {
+  background-color: utility.$pink;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: utility.$white;
+  border: none;
+  cursor: pointer;
+
+  & > a {
+    color: utility.$white;
+    display: block;
+  }
+}
+
+.c-btn__link {
+  cursor: pointer;
+}
+
+.c-btn,
+.c-btn__link {
+  transition: .3s;
+}
+
+.c-btn:hover,
+.c-btn__link:hover {
+  opacity: .8;
+  transition: .3s;
+}

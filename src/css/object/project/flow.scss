@@ -1,0 +1,73 @@
+@use '../../object/utility/utility.scss';
+// 「転職までの流れ」セクションのスタイルを記述
+
+.p-flow {
+  margin-top: 105px;
+
+  &__heading {
+    text-align: center;
+  }
+  &__inner {
+    margin-top: 51px;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  &__item {
+    width: calc(100%/4);
+    height: auto;
+    border: 2.268px solid utility.$pink;
+    border-radius: 15px;
+    padding: 60px 19px 41px 22px;
+    position: relative;
+
+    &__number {
+      position: absolute;
+      left: 9px;
+      bottom: 286px;
+    }
+
+    &__icon {
+      text-align: center;
+      height: 100px;
+    }
+
+    &__arrow {
+      position: relative;
+      margin-left: 20px;
+
+      &::after {
+        border: 20px solid transparent;
+        border-left-color: utility.$pink;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate( -0%, -50%);
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:60px;
+  }
+
+  &__text {
+    margin-top: 18px;
+    line-height: 20px;
+  }
+}

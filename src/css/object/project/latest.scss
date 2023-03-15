@@ -1,0 +1,73 @@
+@use '../../object/utility/utility.scss';
+// 「新着求人」セクションのスタイルを記述
+
+.p-latest {
+  margin-top: 59px;
+  background-color: utility.$skyblue;
+  padding: 64px 0 67px 0;
+
+  &__title {
+    text-align: left;
+    font-size: 25px;
+  }
+
+  &__inner__item {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  &__item {
+    max-width: 280px;
+    margin-left: 20px;
+    &:first-child{
+      margin-left: 0;
+    }
+    &::before{
+      position: absolute;
+      content: '';
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+    }
+  }
+
+  &__img img{
+    border-radius: 10px;
+  }
+  &__text {
+    margin-top: 8px;
+    line-height: 22px;
+    &__detail {
+      margin-top: 7px;
+    }
+
+    dl {
+      width: 280px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    dl dt {
+      width: 60px;
+      background-color: utility.$baby-pink;
+      margin-top: 4px;
+      text-align: center;
+    }
+    dl dd {
+      width: 210px;
+      margin-left: 10px;
+    }
+  }
+
+  &__btn {
+    padding: 17px 72px;
+    width: 360px;
+    margin: 60px auto 0;
+    display: block;
+  }
+}
