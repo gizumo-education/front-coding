@@ -45,7 +45,7 @@
     max-width: 200px;
     height: 60px;
     @include vm.sp {
-      max-width: auto;
+      max-width: initial;
     }
   }
 
