@@ -64,6 +64,7 @@
     font-size: 24px;
     font-weight: vm.$bold;
     line-height: 30px;
+    padding: 0 11px;
     text-align: center;
     @include vm.tab {
       font-size: 0.24rem;
@@ -93,8 +94,10 @@
     font-size: 14px;
     line-height: 20px;
     margin-top: 18px;
+    padding: 0 11px;
     @include vm.sp {
       font-size: 0.14rem;
+      line-height: 0.2rem;
       margin-top: 10px !important;
     }
   }
