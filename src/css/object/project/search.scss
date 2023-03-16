@@ -126,6 +126,9 @@
   }
 
   &__form > .c-button--small {
+    @include vm.tab {
+      margin-top: 5px; // gapと合わせて20pxの余白
+    }
     @include vm.sp {
       margin-top: 5px; // gapと合わせて20pxの余白
     }
