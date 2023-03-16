@@ -33,6 +33,9 @@
     flex-wrap: wrap;
     line-height: 36px;
     margin-top: 27px;
+    @include vm.tab {
+      line-height: 0.36rem;
+    }
   }
 
   &__nav__list__item {
