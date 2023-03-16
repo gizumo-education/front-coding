@@ -143,15 +143,15 @@
         <div class="p-key-visual">
           <div class="p-key-visual__inner l-inner u-relative"></div>
         </div>
-        <div class="p-search u-mt-medium l-inner">
+        <div class="p-search l-inner u-mt-medium">
           <div class="p-search__inner">
             <h2 class="p-search__heading">お仕事検索</h2>
-            <p class="p-search__text">
+            <h3 class="p-search__sub-heading">
               働きたい職種・地域・希望給与を入れて検索！
-            </p>
+            </h3>
             <form class="p-search__form">
-              <div class="p-search__form__inner">
-                <div class="p-search__form__select-wrapper">
+              <div class="p-search__form__select-area">
+                <div>
                   <select name="job" id="job">
                     <option value="医療事務" selected>医療事務</option>
                     <option value="調剤事務">調剤事務</option>
@@ -164,7 +164,7 @@
                     <option value="病院内SE">病院内SE</option>
                   </select>
                 </div>
-                <div class="p-search__form__select-wrapper">
+                <div>
                   <select name="region" id="region">
                     <option value="茨城県">茨城県</option>
                     <option value="神奈川県">神奈川県</option>
@@ -175,7 +175,7 @@
                     <option value="栃木県">栃木県</option>
                   </select>
                 </div>
-                <div class="p-search__form__select-wrapper">
+                <div>
                   <select name="price" id="price">
                     <option value="月給17万〜">月給17万〜</option>
                     <option value="月給18万〜">月給18万〜</option>
@@ -187,7 +187,12 @@
                   </select>
                 </div>
               </div>
-              <input type="text" placeholder="キーワード・企業名・スキルなど" />
+              <div class="p-search__form__input-wrapper">
+                <input
+                  type="text"
+                  placeholder="キーワード・企業名・スキルなど"
+                />
+              </div>
               <button class="c-button--small" type="submit">
                 <svg
                   width="30"
