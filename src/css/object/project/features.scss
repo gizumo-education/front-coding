@@ -1,6 +1,9 @@
 @use '../../object/utility/utility.scss' as vm;
 
 .p-features {
+  @include vm.sp {
+    margin-top: 55px !important;
+  }
   &__heading {
     @include vm.heading-lv2;
   }
