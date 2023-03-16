@@ -2,7 +2,7 @@
 
 .p-search {
   &__inner {
-    padding: 40px;
+    padding: 25px;
     background: vm.$blue;
     border-radius: 8px;
   }
@@ -65,6 +65,8 @@
 
   &__form__select-area > div > select {
     appearance: none;
+    color: vm.$black;
+    background: vm.$white;
     font-size: 18px;
     line-height: 26px;
     padding: 17px 15px;

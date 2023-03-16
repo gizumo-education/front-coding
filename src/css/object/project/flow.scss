@@ -78,6 +78,12 @@
     margin-top: 20px;
   }
 
+  &__list__item:first-child > h3 > br {
+    @include vm.tab {
+      display: none;
+    }
+  }
+
   &__list__item:nth-child(2) > h3 {
     margin-top: 40px;
   }
