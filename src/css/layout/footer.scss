@@ -4,6 +4,10 @@
   width: 100%;
   background: vm.$light-blue;
   margin-top: 200px;
+  font-size: 16px;
+  @include vm.tab {
+    font-size: 0.16rem;
+  }
   @include vm.sp {
     margin-top: 100px;
   }
@@ -23,27 +27,26 @@
 
   &__nav {
     @include vm.sp {
+      width: 100%;
+    }
+  }
+
+  &__nav__inner {
+    display: flex;
+    gap: 39px;
+    margin-top: 27px;
+    @include vm.sp {
       font-size: 16px;
     }
   }
 
   &__nav__list {
     display: flex;
-    flex: 1 1 360px;
-    flex-wrap: wrap;
-    line-height: 36px;
-    margin-top: 27px;
-    @include vm.tab {
-      line-height: 0.36rem;
-    }
+    flex-direction: column;
   }
 
   &__nav__list__item {
-    flex-basis: 50%;
-  }
-
-  &__nav__list__item > a {
-    color: vm.$black;
+    line-height: 36px;
   }
 
   &__img-area {
