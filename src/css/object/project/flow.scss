@@ -28,6 +28,7 @@
     border: 2px solid vm.$pink;
     border-radius: 8px;
     position: relative;
+    padding: 9px 20px 40px 9px;
   }
 
   &__list__item::after {
@@ -57,8 +58,6 @@
 
   &__list__item > img {
     align-self: flex-start;
-    padding-top: 9px;
-    padding-left: 9px;
   }
 
   &__list__item > h3 {
@@ -66,6 +65,9 @@
     font-weight: vm.$bold;
     line-height: 30px;
     text-align: center;
+    @include vm.tab {
+      font-size: 0.24rem;
+    }
     @include vm.sp {
       margin-top: 22px !important;
     }
@@ -88,12 +90,12 @@
   }
 
   &__list__item > p {
+    font-size: 14px;
     line-height: 20px;
     margin-top: 18px;
-    padding: 0px 20px 41px;
     @include vm.sp {
+      font-size: 0.14rem;
       margin-top: 10px !important;
-      padding: 0px 19px 21px;
     }
   }
 
