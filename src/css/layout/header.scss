@@ -140,29 +140,29 @@
         }
       }
     }
-    // &__nav {
-    //   display: block;
-    //   position: fixed;
-    //   z-index: 999;
-    //   top: 0;
-    //   left: 0;
-    //   right: 0;
-    //   bottom: 0;
-    //   height: 5.54rem;
-    //   margin-top: 0.7rem;
-    //   background-color: utility.$nav;
-    //   &__menu__ul {
-    //     font-weight: 700;
-    //     font-size: 0.22rem;
-    //     line-height: 0.22rem;
-    //     padding-top: 0.2rem;
-    //     padding-left: 0.6rem;
-    //   }
-    //   &__menu__li a {
-    //     color: utility.$nav-color;
-    //     margin-top: 0.38rem;
-    //   }
-    // }
+    &__nav {
+      display: block;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 5.54rem;
+      margin-top: 0.7rem;
+      background-color: utility.$nav;
+      &__menu__ul {
+        font-weight: 700;
+        font-size: 0.22rem;
+        line-height: 0.22rem;
+        padding-top: 0.2rem;
+        padding-left: 0.6rem;
+      }
+      &__menu__li a {
+        color: utility.$nav-color;
+        margin-top: 0.38rem;
+      }
+    }
   }
   
   
