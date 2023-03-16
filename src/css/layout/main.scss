@@ -2,9 +2,6 @@
 
 .l-main {
   padding-top: 100px;
-  @include vm.tab {
-    padding-top: 70px;
-  }
   @include vm.sp {
     padding-top: 70px;
   }
