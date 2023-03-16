@@ -3,10 +3,13 @@
 .l-header {
   width: 100%;
   height: 100px;
-  padding: 25px 50px;
+  padding: 25px 100px;
   background: vm.$white;
   position: fixed;
   z-index: 100;
+  @include vm.tab {
+    padding: 0.25rem 1rem;
+  }
   @include vm.sp {
     display: flex;
     align-items: center;
@@ -19,6 +22,9 @@
     display: flex;
     justify-content: flex-end;
     gap: 25px;
+    @include vm.tab {
+      gap: 0.25rem;
+    }
   }
 
   &__nav__list {
@@ -38,15 +44,25 @@
     line-height: 23px;
     border-left: solid 1px vm.$black;
     padding: 0 24px;
+    @include vm.tab {
+      font-size: 0.16rem;
+      padding: 0 0.24rem;
+    }
   }
 
   &__nav__list__item:first-child > a {
     border: none;
-    padding: 0 24px 0 0;
+    padding: 0 24px 0 0 !important;
+    @include vm.tab {
+      padding: 0 0.24rem 0 0 !important;
+    }
   }
 
   &__nav__list__item:last-child > a {
-    padding: 0 0 0 24px;
+    padding: 0 0 0 24px !important;
+    @include vm.tab {
+      padding: 0 0 0 0.24rem !important;
+    }
   }
 
   &__nav__list__item > a > svg {
@@ -57,6 +73,10 @@
     display: flex;
     gap: 15px;
     font-size: 14px;
+    @include vm.tab {
+      gap: 0.15rem;
+      font-size: 0.14rem;
+    }
     @include vm.sp {
       display: none;
     }
@@ -73,10 +93,17 @@
     &:hover {
       opacity: 0.8;
     }
+    @include vm.tab {
+      width: 1.4rem;
+      padding: 0.15rem;
+    }
   }
 
   &__nav__list--button__item:first-child > a {
     width: 160px;
+    @include vm.tab {
+      width: 1.6rem;
+    }
   }
 
   &__nav__list--button__item > a > svg {
