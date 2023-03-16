@@ -9,11 +9,6 @@
     display: flex;
     gap: 20px;
     margin-top: 50px;
-    @include vm.tab {
-      flex-direction: column;
-      gap: 40px;
-      // margin-top: 30px;
-    }
     @include vm.sp {
       flex-direction: column;
       gap: 18px;
@@ -31,15 +26,12 @@
     height: 240px;
     color: vm.$white;
     text-align: center;
-    padding: 71px 40px 51px;
     position: relative;
-    @include vm.tab {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 360px;
-      padding: 60px 70px;
-    }
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 360px;
   }
 
   &__list__item > a::before {
@@ -69,11 +61,12 @@
 
   &__list__item > a > span {
     display: inline-block;
+    font-size: 16px;
     line-height: 23px;
     margin-top: 45px;
     position: relative;
-    @include vm.tab {
-      font-size: 16px;
+    @include vm.sp {
+      font-size: 14px;
     }
   }
 

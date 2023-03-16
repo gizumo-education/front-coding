@@ -8,9 +8,6 @@
   height: 38px;
   margin-left: auto;
   cursor: pointer;
-  @include vm.tab {
-    display: flex;
-  }
   @include vm.sp {
     display: flex;
   }

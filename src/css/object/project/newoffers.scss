@@ -45,7 +45,7 @@
   // slicker導入前暫定処置
   &__list__item:nth-child(n + 2) {
     @include vm.tab {
-      display: none;
+      // display: none;
     }
     @include vm.sp {
       display: none;
@@ -53,19 +53,14 @@
   }
 
   &__list__item > a > img {
-    border-radius: 8px;
+    border-radius: 18px;
   }
 
   &__list__item > a > h3 {
+    font-size: 16px;
     line-height: 22px;
     margin-top: 8px;
-    @include vm.tab {
-      font-size: 16px;
-      font-weight: vm.$bold;
-      margin-top: 10px;
-    }
     @include vm.sp {
-      font-size: 16px;
       font-weight: vm.$bold;
       margin-top: 10px;
     }
@@ -91,18 +86,15 @@
     line-height: 21px;
     font-size: 14px;
     margin-top: 8px;
-    @include vm.tab {
-      gap: 20px;
-    }
     @include vm.sp {
       gap: 20px;
     }
+  }
 
-    > span:first-child {
-      width: 60px;
-      text-align: center;
-      background: vm.$new-offers-span;
-    }
+  &__list__item__list__item > span:first-child {
+    width: 60px;
+    text-align: center;
+    background: vm.$new-offers-span;
   }
 
   &__button-wrapper {
