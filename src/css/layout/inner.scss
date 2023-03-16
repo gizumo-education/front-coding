@@ -6,8 +6,10 @@
   height: auto;
   margin: 0 auto;
 
+  @include vm.tab {
+    padding: 0 50px;
+  }
   @include vm.sp {
-    // max-width: 370px;
     padding: 0 15px;
   }
 }

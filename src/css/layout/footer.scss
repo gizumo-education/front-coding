@@ -9,17 +9,21 @@
   }
 
   &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 55px 0px 25px !important;
     width: 100%;
-    @include vm.tab {
-      padding: 55px 25px 25px !important;
-    }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 55px !important;
+    padding-bottom: 25px !important;
     @include vm.sp {
       flex-direction: column;
       padding: 38px 25px 40px !important;
+    }
+  }
+
+  &__nav {
+    @include vm.sp {
+      font-size: 16px;
     }
   }
 
@@ -44,19 +48,21 @@
     flex-direction: column;
     flex: 1 1;
     gap: 15px;
-    width: 100%;
     @include vm.sp {
+      width: 100%;
       margin-top: 22px;
     }
   }
 
   &__img-area > a {
-    width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   &__img-area img {
-    width: 100%;
-    object-fit: fill;
+    @include vm.sp {
+      width: 100%;
+    }
   }
 
   &__copyrights-text {

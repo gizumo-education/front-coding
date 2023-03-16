@@ -4,12 +4,19 @@
   background: vm.$light-blue;
   padding: 65px 0;
 
+  @include vm.tab {
+    padding: 30px 0 60px;
+  }
   @include vm.sp {
     padding: 30px 0 60px;
   }
 
   &__heading {
     font-size: 25px;
+    @include vm.tab {
+      text-align: center;
+      font-weight: vm.$bold;
+    }
     @include vm.sp {
       text-align: center;
       font-weight: vm.$bold;
@@ -21,6 +28,9 @@
     justify-content: center;
     gap: 20px;
     margin-top: 25px;
+    @include vm.tab {
+      margin-top: 35px;
+    }
     @include vm.sp {
       margin-top: 35px;
     }
@@ -34,6 +44,9 @@
 
   // slicker導入前暫定処置
   &__list__item:nth-child(n + 2) {
+    @include vm.tab {
+      display: none;
+    }
     @include vm.sp {
       display: none;
     }
@@ -46,6 +59,11 @@
   &__list__item > a > h3 {
     line-height: 22px;
     margin-top: 8px;
+    @include vm.tab {
+      font-size: 16px;
+      font-weight: vm.$bold;
+      margin-top: 10px;
+    }
     @include vm.sp {
       font-size: 16px;
       font-weight: vm.$bold;
@@ -55,6 +73,9 @@
 
   &__list__item__list {
     margin-top: 7px;
+    @include vm.tab {
+      margin-top: 12px;
+    }
     @include vm.sp {
       margin-top: 12px;
     }
@@ -70,6 +91,9 @@
     line-height: 21px;
     font-size: 14px;
     margin-top: 8px;
+    @include vm.tab {
+      gap: 20px;
+    }
     @include vm.sp {
       gap: 20px;
     }
@@ -83,6 +107,9 @@
 
   &__button-wrapper {
     margin-top: 60px;
+    @include vm.tab {
+      margin-top: 45px;
+    }
     @include vm.sp {
       margin-top: 45px;
     }
