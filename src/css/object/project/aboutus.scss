@@ -27,6 +27,9 @@
     text-align: center;
     line-height: 47px; // fixします
     position: relative;
+    @include vm.tab {
+      line-height: 0.47rem;
+    }
     @include vm.sp {
       font-size: 14px;
       font-weight: vm.$regular;
