@@ -50,6 +50,10 @@
   &__form__inner {
     display: flex;
     gap: 15px;
+    @include vm.tab {
+      width: 100%;
+      min-width: 630px;
+    }
     @include vm.sp {
       width: 100%;
     }
@@ -57,7 +61,8 @@
 
   &__form__select-wrapper {
     position: relative;
-    width: 200px;
+    width: 100%;
+    min-width: 200px;
     @include vm.sp {
       width: 100%;
       min-width: 80px;
@@ -112,7 +117,8 @@
     padding: 0px 15px;
     position: relative;
     @include vm.tab {
-      width: 630px;
+      width: 100%;
+      min-width: 630px;
       height: 60px;
       line-height: 20px;
       padding: 5px 8px;
