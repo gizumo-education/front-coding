@@ -21,8 +21,11 @@
     > svg {
       vertical-align: middle;
     }
+    @include vm.tab {
+      font-size: 0.18rem;
+      padding: 0.17rem 0;
+    }
     @include vm.sp {
-      width: 160px;
       padding: 11px 20px;
       line-height: 18px;
     }
@@ -32,6 +35,9 @@
     @extend .c-button;
     width: 360px;
     line-height: 26px;
+    @include vm.tab {
+      width: 3.6rem;
+    }
     @include vm.sp {
       width: 100%;
       line-height: 18px;

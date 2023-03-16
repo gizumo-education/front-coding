@@ -37,5 +37,9 @@
     font-size: 14px;
     line-height: 20px;
     margin-top: 36px;
+    @include vm.tab {
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+    }
   }
 }

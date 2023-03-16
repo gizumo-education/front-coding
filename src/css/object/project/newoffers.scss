@@ -9,6 +9,9 @@
 
   &__heading {
     font-size: 25px;
+    @include vm.tab {
+      font-size: 0.25rem;
+    }
     @include vm.sp {
       text-align: center;
       font-weight: vm.$bold;
@@ -46,6 +49,10 @@
     font-size: 16px;
     line-height: 22px;
     margin-top: 8px;
+    @include vm.tab {
+      font-size: 0.16rem;
+      line-height: 0.22rem;
+    }
     @include vm.sp {
       font-weight: vm.$bold;
       margin-top: 10px;
@@ -69,6 +76,10 @@
     line-height: 21px;
     font-size: 14px;
     margin-top: 8px;
+    @include vm.tab {
+      font-size: 0.14rem;
+      line-height: 0.21rem;
+    }
     @include vm.sp {
       gap: 20px;
     }
@@ -78,6 +89,9 @@
     width: 60px;
     text-align: center;
     background: vm.$new-offers-span;
+    @include vm.tab {
+      width: 0.6rem;
+    }
   }
 
   &__button-wrapper {

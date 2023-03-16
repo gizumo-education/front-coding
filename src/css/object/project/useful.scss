@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 360px;
+    // height: 360px;
   }
 
   &__list__item > a::before {
@@ -57,6 +57,9 @@
     @include vm.heading-lv3;
     line-height: 24px;
     position: relative;
+    @include vm.tab {
+      line-height: 0.24rem;
+    }
   }
 
   &__list__item > a > span {
@@ -65,6 +68,10 @@
     line-height: 23px;
     margin-top: 45px;
     position: relative;
+    @include vm.tab {
+      font-size: 0.16rem;
+      line-height: 0.23rem;
+    }
     @include vm.sp {
       font-size: 14px;
     }

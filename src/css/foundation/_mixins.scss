@@ -30,11 +30,17 @@
 @mixin heading-lv2 {
   font-size: 25px;
   font-weight: var.$bold;
+  @include tab {
+    font-size: 0.25rem;
+  }
 }
 
 @mixin heading-lv3 {
   font-size: 24px;
   font-weight: var.$bold;
+  @include tab {
+    font-size: 0.24rem;
+  }
   @include sp {
     font-size: 20px;
   }
