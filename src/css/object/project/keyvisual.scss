@@ -19,35 +19,35 @@
     }
   }
 
-  &__text {
-    font-size: 20px;
-    color: vm.$key-visual-text;
-    background-color: vm.$white;
-    padding: 4px 40px;
-    border: solid 2px vm.$key-visual-text;
-    border-radius: 8px;
-    position: absolute;
-    bottom: 47px;
-    right: 10%;
-    @include vm.sp {
-      width: 170px;
-      font-size: 8px;
-      line-height: 12px;
-      padding: 3px 1px;
-      text-align: center;
-      border: solid 1px vm.$key-visual-text;
-      top: 188px;
-      right: 40px;
-    }
-  }
+  // &__text {
+  //   font-size: 20px;
+  //   color: vm.$key-visual-text;
+  //   background-color: vm.$white;
+  //   padding: 4px 40px;
+  //   border: solid 2px vm.$key-visual-text;
+  //   border-radius: 8px;
+  //   position: absolute;
+  //   bottom: 47px;
+  //   right: 10%;
+  //   @include vm.sp {
+  //     width: 170px;
+  //     font-size: 8px;
+  //     line-height: 12px;
+  //     padding: 3px 1px;
+  //     text-align: center;
+  //     border: solid 1px vm.$key-visual-text;
+  //     top: 188px;
+  //     right: 40px;
+  //   }
+  // }
 
-  &__text > span {
-    font-size: 40px;
-    font-weight: vm.$bold;
-    line-height: 58px;
-    @include vm.sp {
-      font-size: 16px;
-      line-height: initial;
-    }
-  }
+  // &__text > span {
+  //   font-size: 40px;
+  //   font-weight: vm.$bold;
+  //   line-height: 58px;
+  //   @include vm.sp {
+  //     font-size: 16px;
+  //     line-height: initial;
+  //   }
+  // }
 }

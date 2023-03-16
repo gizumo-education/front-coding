@@ -59,11 +59,11 @@
     border-color: vm.$pink transparent transparent transparent;
     @include vm.tab {
       // top: 0.25rem;
-      right: 12px;
+      right: 0.12rem;
     }
   }
 
-  &__form__select-area > div > select {
+  &__form__select-area__wrapper > select {
     appearance: none;
     color: vm.$black;
     background: vm.$white;
