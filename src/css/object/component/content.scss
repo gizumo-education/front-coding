@@ -168,3 +168,71 @@
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .c-content {
+    &__wrapper {
+      padding-top: 0.61rem;
+    }
+    &__img {
+      &__wrapper {
+        display: block;
+        margin-top: 0.17rem;
+      }
+      &__manual {
+        width: 3.6rem;
+        height: 2.3rem;
+        margin-top: 0.3rem;
+        margin-left: 0.05rem;
+        &::before {
+          left: 0rem;
+          right: 0rem;
+          top: 0rem;
+          bottom: 1rem;
+          height: 2.3rem;
+        }
+        &:first-child {
+          margin-left: 0.05rem;
+        }
+      }
+      &__title {
+        font-size: 0.21rem;
+        line-height: 0.21rem;
+        top: 0.71rem;
+        left: 1.07rem;
+      }
+      &__text {
+        font-size: 0.14rem;
+        line-height: 0.2rem;
+        top: 1.39rem;
+        left: 0.6rem;
+        right: 0.64rem;
+      }
+      &__trivia {
+        width: 3.6rem;
+        height: 2.3rem;
+        top: 0.15rem;
+        margin-left: 0.05rem;
+        &__title {
+          font-size: 0.21rem;
+          line-height: 0.21rem;
+          top: 0.71rem;
+          left: 0.7rem;
+        }
+        &__text {
+          font-size: 0.14rem;
+          line-height: 0.2rem;
+          top: 139px;
+          left: 0.42rem;
+          right: 0.49rem;
+        }
+        &::before {
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          height: 2.3rem;
+        }
+      }
+    }
+  }
+}

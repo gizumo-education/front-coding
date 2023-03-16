@@ -63,6 +63,12 @@
 .l-icon__reading {
   width: 18px;
 }
+.l-header__nav {
+  display: none;
+  &__toggle {
+  display: none;
+  }
+}
 @media screen and (max-width: 1199px) {
   .l-header {
     height: 1rem;
@@ -99,4 +105,65 @@
   .l-icon__heart {
     width: 0.23rem;
   }
+}
+@media screen and (max-width: 767px) {
+  .l-header {
+    height: 0.7rem;
+    padding-top: 0;
+    &__menu__inner {
+      display: none;
+    }
+    &__nav__toggle {
+      display: block;
+      position: relative;
+      width: 0.5rem;
+      height: 0.35rem;
+      top: 0.18rem;
+      left: 3.35rem;
+      & i {
+        display: block;
+        border-radius: 50rem;
+        width: 100%;
+        height: 0.06rem;
+        background-color: utility.$black;
+        position: absolute;
+        &:nth-child(1) {
+          top: 0;
+        }
+        &:nth-child(2) {
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+        &:nth-child(3) {
+          bottom: 0;
+        }
+      }
+    }
+    &__nav {
+      display: block;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 5.54rem;
+      margin-top: 0.7rem;
+      background-color: utility.$nav;
+      &__menu__ul {
+        font-weight: 700;
+        font-size: 0.22rem;
+        line-height: 0.22rem;
+        padding-top: 0.2rem;
+        padding-left: 0.6rem;
+      }
+      &__menu__li a {
+        color: utility.$nav-color;
+        margin-top: 0.38rem;
+      }
+    }
+  }
+  
+  
 }

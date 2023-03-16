@@ -75,3 +75,34 @@
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .c-feature {
+    &__wrapper {
+      padding-top: 0.55rem;
+    }
+    &__innerbox {
+      width: 3.7rem;
+      margin-bottom: 0.3rem;
+      margin-left: 0;
+      &__title {
+        font-size: 0.2rem;
+        padding-top: 0.3rem;
+      }
+      &__text {
+        font-size: 0.12rem;
+        line-height: 0.17rem;
+        margin-top: 0.4rem;
+      }
+      &__wrapper {
+        display: block;
+        margin-top: 0.21rem;
+      }
+      &__span {
+        display: inline-block;
+      }
+      &__br {
+        display: none;
+      }
+    }
+  }
+}

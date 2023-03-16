@@ -148,3 +148,62 @@
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .c-search__inner {
+    padding-top: 0.25rem;
+    &__box {
+      padding-top: 0.6rem;
+    }
+  }
+  .c-search__wrapper {
+    padding-top: 0.15rem;
+    padding-bottom: 0.2rem;
+  }
+  .c-search {
+    &__title {
+    font-size: 0.22rem;
+    }
+    &__text {
+      line-height: 0.2rem;
+      font-size: 0.14rem;
+      margin-top: 0.16rem;
+    }
+    &__list__wrapper {
+      display: block;
+      margin-top: 0.13rem;
+    }
+    &__list {
+      display: inline-block;
+      width: 0.99rem;
+      height: 0.29rem;
+      margin-left: 0.11rem;
+      font-size: 0.12rem;
+      padding-left: 0.07rem;
+      background-image: linear-gradient(45deg, transparent 50%, utility.$red 50%),  linear-gradient(135deg, utility.$red 50%, transparent 50%);
+      background-size: 6.5px 6.5px, 6.5px 6.5px;
+      background-position: calc(100% - 0.13rem) 50%, calc(100% - 0.07rem) 50%;
+    }
+    &__inpot {
+      display: block;
+      width: 3.19rem;
+      height: 0.29rem;
+      font-size: 0.14rem;
+      margin-left: 0.225rem;
+      margin-top: 0.16rem;
+    }
+    &__button {
+      display: block;
+      margin-top: 0.19rem;
+      line-height: 0.18rem;
+      margin-left: 1.05rem;
+      width: 1.6rem;
+      font-size: 0.18rem;
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem;
+    }
+    &__img {
+      width: 0.17rem;
+      height: 0.17rem;
+    }
+  }
+}

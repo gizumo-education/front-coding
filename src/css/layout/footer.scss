@@ -103,3 +103,45 @@
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .l-footer {
+    &__inner {
+      margin-top: 1rem;
+      &__wrapper {
+        padding-top: 0.38rem;
+        height: 4.43rem;
+        display: block;
+      }
+      &__title {
+        margin-left: 0.4rem;
+        padding-top: 0;
+      }
+      &__last {
+        font-size: 0.16rem;
+        height: 0.35rem;
+        padding-top: 0.1rem;
+      }
+      &__access {
+        &__wrapper {
+          display: flex;
+        }
+        &__dox1 {
+          margin-left: 0.45rem;
+        }
+        &__dox2 {
+          width: 1.6rem;
+        }
+      }
+    }
+    &__img {
+      margin-top: 0.22rem;
+      margin-left: 0.25rem;
+      &__child {
+        width: 3.2rem;
+      }
+      &__old {
+        width: 3.2rem;
+      }
+    }
+  }
+}

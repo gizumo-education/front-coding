@@ -8,6 +8,7 @@
     margin-top: 59px;
   }
   &__title {
+    font-weight: 700;
     font-size: 25px;
     font-family: 'Inter';
   }
@@ -96,6 +97,44 @@
         font-size: 0.14rem;
         line-height: 0.32rem;
         margin-left: 0.1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .c-jobs {
+    &__wrapper {
+      padding-top: 0.3rem;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__detail {
+      &__wrapper {
+        text-align: center;
+        display: block;
+        margin-top: 0.35rem;
+      }
+      &__inner {
+        margin-top: 0.25rem;
+        width: 3.7rem;
+        margin-left: 0;
+        &__text {
+          text-align: left;
+          margin-top: 0.1rem;
+        }
+        &__img {
+          width: 3.7rem;
+        }
+      }
+    }
+  }
+  .c-jobs {
+    &__list {
+      margin-top: 0.11rem;
+      &__text {
+        margin-left: 0.21rem;
+        line-height: 0.4rem;
       }
     }
   }

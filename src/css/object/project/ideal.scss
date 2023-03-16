@@ -47,3 +47,20 @@
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .p-ideal {
+    &__img {
+      width: 100%;
+      height: 0.75rem;
+      &::before {
+        height: 0.75rem;
+      }
+    }
+    &__jobs {
+      font-weight: 400;
+      font-size: 0.14rem;
+      line-height: 0.23rem;
+      padding-top: 0.16rem;
+    }
+  }
+}

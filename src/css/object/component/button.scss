@@ -62,3 +62,13 @@
     padding-bottom: 0.21rem;
   }
 }
+@media screen and (max-width: 767px) {
+  .c-button__newjods {
+    width: 3.7rem;
+    margin-top: 0.44rem;
+  }
+  .c-button__column {
+    width: 3.7rem;
+    margin-top: 0.34rem;
+  }
+}
