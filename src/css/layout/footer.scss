@@ -9,6 +9,7 @@
     font-size: 0.16rem;
   }
   @include vm.sp {
+    font-size: 0.16rem;
     margin-top: 100px;
   }
 
@@ -21,7 +22,8 @@
     padding-bottom: 25px !important;
     @include vm.sp {
       flex-direction: column;
-      padding: 38px 50px 40px !important;
+      // padding: 38px 50px 40px !important;
+      padding: 0.38rem 0.5rem 0.4rem !important;
     }
   }
 
@@ -36,7 +38,10 @@
     gap: 39px;
     margin-top: 27px;
     @include vm.sp {
-      font-size: 16px;
+      gap: 0.39rem;
+      // font-size: 16px;
+      gap: 0.39rem;
+      font-size: 0.16rem;
     }
   }
 
@@ -47,6 +52,9 @@
 
   &__nav__list__item {
     line-height: 36px;
+    @include vm.sp {
+      line-height: 0.36rem;
+    }
   }
 
   &__img-area {
@@ -56,7 +64,8 @@
     gap: 15px;
     @include vm.sp {
       width: 100%;
-      margin-top: 22px;
+      gap: 0.15rem;
+      margin-top: 0.22rem;
     }
   }
 
@@ -75,7 +84,8 @@
     padding: 11px 0;
     background: vm.$grey;
     @include vm.sp {
-      font-size: 14px;
+      padding: 0.11rem;
+      font-size: 0.14rem;
     }
   }
 }

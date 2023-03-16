@@ -7,9 +7,9 @@
   margin: 0 auto;
 
   @include vm.tab {
-    padding: 0 15px;
+    padding: 0 0.15rem;
   }
   @include vm.sp {
-    padding: 0 15px;
+    padding: 0 0.15rem;
   }
 }
