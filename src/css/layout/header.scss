@@ -114,13 +114,24 @@
       display: none;
     }
     &__nav__toggle {
+      background: none;
+      border: none;
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
       display: block;
       position: relative;
       width: 0.5rem;
       height: 0.35rem;
       top: 0.18rem;
       left: 3.35rem;
-      & i {
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.8;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      & span {
         display: block;
         border-radius: 50rem;
         width: 100%;
