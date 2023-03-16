@@ -91,6 +91,9 @@
     height: 60px;
     padding: 0px 15px;
     position: relative;
+    @include vm.tab {
+      padding: 5px 8px;
+    }
     @include vm.sp {
       width: inherit;
       height: 30px;
@@ -109,10 +112,8 @@
     padding: 0px 15px;
     position: relative;
     @include vm.tab {
-      width: 100%;
-      max-width: 630px;
+      width: 630px;
       height: 60px;
-      font-size: 14px;
       line-height: 20px;
       padding: 5px 8px;
     }
