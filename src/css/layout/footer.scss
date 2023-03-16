@@ -19,14 +19,26 @@
     @include utility.tab {
       padding-bottom: 0.25rem;
     }
+    @include utility.sp {
+      display: block;
+    }
   }
 
   &__link {
+    &__inner {
+      @include utility.sp {
+        display: block;
+        margin: 0 auto;
+      }
+    }
     &__top {
       margin-top: 24px;
 
       @include utility.tab {
         margin-top: 0.24rem;
+      }
+      @include utility.sp {
+        margin-left: 0.5rem;
       }
     }
 
@@ -45,6 +57,12 @@
 
       &__inner {
         display: flex;
+
+        @include utility.sp {
+          width: 3.2rem;
+          margin: 0 auto;
+          margin-left: 0.55rem;
+        }
       }
 
       &__item {
@@ -60,14 +78,26 @@
 
   &__banner {
     &__item {
+      @include utility.sp {
+        text-align: center;
+      }
+      @include utility.sp {
+        margin-top: 0.22rem;
+      }
+
       &:last-child{
         margin-top: 15px;
 
         @include utility.tab {
-          margin-bottom: 0.15rem;
+          margin-top: 0.15rem;
         }
       }
 
+      & img {
+        @include utility.sp {
+          width: 3.2rem;
+        }
+      }
     }
   }
 

@@ -6,7 +6,7 @@
     background-image: url(../img/picture/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 100%;
+    width: 100vw;
     padding: 104px 0;
     position: relative;
     display: flex;
@@ -17,6 +17,9 @@
 
     @include utility.tab {
       padding: 1.04rem 0;
+    }
+    @include utility.sp {
+      padding: 0.16rem 0;
     }
 
     &::after{
@@ -38,6 +41,12 @@
     color: utility.$white;
     position: relative;
     z-index: 3;
+
+    @include utility.sp {
+      font-size: 0.14rem;
+      font-weight: normal;
+    }
+
     & > span {
       display: block;
       &:last-child{

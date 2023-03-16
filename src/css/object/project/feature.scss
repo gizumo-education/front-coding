@@ -22,6 +22,9 @@
       gap: 0.4rem;
       margin-top: 0.53rem;
     }
+    @include utility.sp {
+      display: block;
+    }
   }
 
   &__item {
@@ -36,6 +39,15 @@
       width: calc((100% - 0.4rem)/2);
       padding: 0.4rem 0.47rem;
     }
+    @include utility.sp {
+      width: 100%;
+      margin-top: 0.21rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
   }
 
   &__subtitle {

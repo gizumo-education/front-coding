@@ -6,4 +6,21 @@
   background-position: center;
   background-size:cover;
   width: 100%;
+
+  @include utility.sp {
+    display: none;
+  }
+}
+
+.p-key-visual-sp img{
+  display: none;
+
+  @include utility.sp {
+    display: block;
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+  }
 }
