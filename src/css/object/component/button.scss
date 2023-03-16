@@ -8,7 +8,7 @@
   border-radius: 32px;
   border: none;
   cursor: pointer;
-  padding: 17px 0px;
+  padding: 15px 0px;
   transition: 0.3s;
 
   &:hover {
@@ -22,8 +22,7 @@
       vertical-align: middle;
     }
     @include vm.tab {
-      font-size: 0.18rem;
-      padding: 0.17rem 0;
+      font-size: 0.15rem 0;
     }
     @include vm.sp {
       padding: 11px 20px;

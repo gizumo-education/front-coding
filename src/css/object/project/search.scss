@@ -49,8 +49,8 @@
     border-width: 10px 10px 0 10px;
     border-color: vm.$pink transparent transparent transparent;
     @include vm.tab {
-      top: 0.25rem;
-      right: 0.15rem;
+      // top: 0.25rem;
+      right: 12px;
     }
   }
 
@@ -62,6 +62,7 @@
     border: solid 1px vm.$pink;
     border-radius: 8px;
     width: inherit;
+    height: inherit;
     @include vm.tab {
       font-size: 0.18rem;
       line-height: 0.26rem;
@@ -84,6 +85,7 @@
     border-radius: 8px;
     padding: 17px 10px;
     width: inherit;
+    height: inherit;
     @include vm.tab {
       font-size: 0.18rem;
       padding: 0.17rem 0.1rem;
@@ -92,7 +94,7 @@
   }
 
   &__form > .c-button--small {
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     max-width: 140px;
   }
 
