@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/mixins.scss';
 .p-ideal {
   &__img {
     height: 300px;
@@ -7,6 +8,13 @@
     background-position:50%;
     background-size:cover;
     position: relative;
+    @include mixins.tab {
+      height: 3rem;
+    }
+    @include mixins.sp {
+      width: 100%;
+      height: 0.75rem;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -17,6 +25,12 @@
       top: 0;
       bottom: 0;
       height: 300px;
+      @include mixins.tab {
+        height: 3rem;
+      }
+      @include mixins.sp {
+        height: 0.75rem;
+      }
     }
   }
   &__jobs {
@@ -30,33 +44,12 @@
     font-weight: 700;
     color: utility.$white;
     padding-top: 104px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .p-ideal {
-    &__img {
-      height: 3rem;
-      &::before {
-        height: 3rem;
-      }
-    }
-    &__jobs {
+    @include mixins.tab {
       font-size: 0.25rem;
       line-height: 0.56rem;
       padding-top: 1.04rem;
     }
-  }
-}
-@media screen and (max-width: 767px) {
-  .p-ideal {
-    &__img {
-      width: 100%;
-      height: 0.75rem;
-      &::before {
-        height: 0.75rem;
-      }
-    }
-    &__jobs {
+    @include mixins.sp {
       font-weight: 400;
       font-size: 0.14rem;
       line-height: 0.23rem;

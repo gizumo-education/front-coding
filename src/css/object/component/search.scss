@@ -1,8 +1,21 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/mixins.scss';
 .c-search__inner {
   padding-top: 61px;
+  @include mixins.tab {
+    padding-top: 0.61rem;
+  }
+  @include mixins.sp {
+    padding-top: 0.25rem;
+  }
   &__box {
     padding-top: 150px;
+    @include mixins.tab {
+      padding-top: 1.5rem;
+    }
+    @include mixins.sp {
+      padding-top: 0.6rem;
+    }
   }
 }
 .c-search__wrapper {
@@ -11,21 +24,53 @@
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  @include mixins.tab {
+    border-radius: 0.1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+  @include mixins.sp {
+    padding-top: 0.15rem;
+    padding-bottom: 0.2rem;
+  }
 }
 .c-search {
   &__title {
   font-weight: 700;
   font-size: 25px;
+  @include mixins.tab {
+    font-size: 0.25rem;
+  }
+  @include mixins.sp {
+    font-size: 0.22rem;
+  }
   }
   &__text {
     line-height: 29px;
     font-size: 20px;
     margin-top: 20px;
+    @include mixins.tab {
+      line-height: 0.29rem;
+      font-size: 0.2rem;
+      margin-top: 0.20rem;
+    }
+    @include mixins.sp {
+      line-height: 0.2rem;
+      font-size: 0.14rem;
+      margin-top: 0.16rem;
+    }
   }
   &__list__wrapper {
     display: flex;
     justify-content: center;
     margin-top: 26px;
+    @include mixins.tab {
+      margin-top: 0.26rem;
+    }
+    @include mixins.sp {
+      display: block;
+      margin-top: 0.13rem;
+    }
   }
   &__list {
     width: 200px;
@@ -40,6 +85,29 @@
     background-size: 10px 10px, 10px 10px;
     background-position: calc(100% - 20px) 50%, calc(100% - 10px) 50%;
     background-repeat: no-repeat;
+    @include mixins.tab {
+      width: 2rem;
+      height: 0.59rem;
+      border: 0.01rem solid utility.$red;
+      border-radius: 0.1rem;
+      margin-left: 0.16rem;
+      font-size: 0.18rem;
+      padding-left: 0.14rem;
+      background-size: 0.1rem 0.1rem, 0.1rem 0.1rem;
+      background-position: calc(100% - 0.2rem) 50%, calc(100% - 0.1rem) 50%;
+    }
+    @include mixins.sp {
+      color: utility.$black;
+      display: inline-block;
+      width: 0.99rem;
+      height: 0.29rem;
+      margin-left: 0.11rem;
+      font-size: 0.12rem;
+      padding-left: 0.07rem;
+      background-image: linear-gradient(45deg, transparent 50%, utility.$red 50%),  linear-gradient(135deg, utility.$red 50%, transparent 50%);
+      background-size: 6.5px 6.5px, 6.5px 6.5px;
+      background-position: calc(100% - 0.13rem) 50%, calc(100% - 0.07rem) 50%;
+    }
     &:first-child {
       margin-left: 0;
     }
@@ -55,6 +123,22 @@
     text-align: center;
     font-size: 18px;
     margin-left: 16px;
+    @include mixins.tab {
+      width: 2.99rem;
+      height: 0.59rem;
+      border: 0.01rem solid utility.$red;
+      border-radius: 0.1rem;
+      font-size: 0.18rem;
+      margin-left: 0.16rem;
+    }
+    @include mixins.sp {
+      display: block;
+      width: 3.19rem;
+      height: 0.29rem;
+      font-size: 0.14rem;
+      margin-left: 0.225rem;
+      margin-top: 0.16rem;
+    }
   }
   &__button {
     font-weight: 700;
@@ -67,132 +151,14 @@
     background: utility.$pink;
     border-radius: 50px;
     border: none;
-    &:hover {
-      opacity: 0.8;
-      transition: 0.3s;
-      cursor: pointer;
-    }
-  }
-  &__img {
-    width: 29.98px;
-    height: 29.98px;
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/icon/search-icon.png");
-      display: inline-block;
-      top: 4px;
-      left: 5px;
-    }
-  }
-}
-@media screen and (max-width: 1199px) {
-  .c-search__inner {
-    padding-top: 0.61rem;
-    &__box {
-      padding-top: 1.5rem;
-    }
-  }
-  .c-search__wrapper {
-    border-radius: 0.1rem;
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
-  }
-  .c-search {
-    &__title {
-    font-size: 0.25rem;
-    }
-    &__text {
-      line-height: 0.29rem;
-      font-size: 0.2rem;
-      margin-top: 0.20rem;
-    }
-    &__list__wrapper {
-      margin-top: 0.26rem;
-    }
-    &__list {
-      width: 2rem;
-      height: 0.59rem;
-      border: 0.01rem solid utility.$red;
-      border-radius: 0.1rem;
-      margin-left: 0.16rem;
-      font-size: 0.18rem;
-      padding-left: 0.14rem;
-      background-size: 0.1rem 0.1rem, 0.1rem 0.1rem;
-      background-position: calc(100% - 0.2rem) 50%, calc(100% - 0.1rem) 50%;
-    }
-    &__inpot {
-      width: 2.99rem;
-      height: 0.59rem;
-      border: 0.01rem solid utility.$red;
-      border-radius: 0.1rem;
-      font-size: 0.18rem;
-      margin-left: 0.16rem;
-    }
-    &__button {
+    @include mixins.tab {
       line-height: 0.30rem;
       margin-left: 0.15rem;
       width: 1.4rem;
       font-size: 0.18rem;
       border-radius: 0.5rem;
     }
-    &__img {
-      width: 0.29rem;
-      height: 0.29rem;
-      &::before {
-        width: 0.29rem;
-        height: 0.29rem;
-        top: 0.04rem;
-        left: 0.05rem;
-      }
-    }
-  }
-}
-@media screen and (max-width: 767px) {
-  .c-search__inner {
-    padding-top: 0.25rem;
-    &__box {
-      padding-top: 0.6rem;
-    }
-  }
-  .c-search__wrapper {
-    padding-top: 0.15rem;
-    padding-bottom: 0.2rem;
-  }
-  .c-search {
-    &__title {
-    font-size: 0.22rem;
-    }
-    &__text {
-      line-height: 0.2rem;
-      font-size: 0.14rem;
-      margin-top: 0.16rem;
-    }
-    &__list__wrapper {
-      display: block;
-      margin-top: 0.13rem;
-    }
-    &__list {
-      color: utility.$black;
-      display: inline-block;
-      width: 0.99rem;
-      height: 0.29rem;
-      margin-left: 0.11rem;
-      font-size: 0.12rem;
-      padding-left: 0.07rem;
-      background-image: linear-gradient(45deg, transparent 50%, utility.$red 50%),  linear-gradient(135deg, utility.$red 50%, transparent 50%);
-      background-size: 6.5px 6.5px, 6.5px 6.5px;
-      background-position: calc(100% - 0.13rem) 50%, calc(100% - 0.07rem) 50%;
-    }
-    &__inpot {
-      display: block;
-      width: 3.19rem;
-      height: 0.29rem;
-      font-size: 0.14rem;
-      margin-left: 0.225rem;
-      margin-top: 0.16rem;
-    }
-    &__button {
+    @include mixins.sp {
       display: block;
       margin-top: 0.19rem;
       line-height: 0.18rem;
@@ -202,9 +168,36 @@
       padding-top: 0.1rem;
       padding-bottom: 0.1rem;
     }
-    &__img {
+    &:hover {
+      opacity: 0.8;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+  &__img {
+    width: 29.98px;
+    height: 29.98px;
+    @include mixins.tab {
+      width: 0.29rem;
+      height: 0.29rem;
+    }
+    @include mixins.sp {
       width: 0.17rem;
       height: 0.17rem;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon/search-icon.png");
+      display: inline-block;
+      top: 4px;
+      left: 5px;
+      @include mixins.tab {
+        width: 0.29rem;
+        height: 0.29rem;
+        top: 0.04rem;
+        left: 0.05rem;
+      }
     }
   }
 }

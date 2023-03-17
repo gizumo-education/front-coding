@@ -1,7 +1,14 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/mixins.scss';
 .c-feature {
   &__wrapper {
     padding-top: 106px;
+    @include mixins.tab {
+      padding-top: 1.06rem;
+    }
+    @include mixins.sp {
+      padding-top: 0.55rem;
+    }
   }
   &__title {
     font-weight: 700;
@@ -9,6 +16,10 @@
     line-height: 25px;
     color: utility.$black;
     text-align: center;
+    @include mixins.tab {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
   }
   &__innerbox {
     width: 570px;
@@ -17,16 +28,45 @@
     border-radius: 10px;
     margin-left: 40px;
     text-align: center;
+    @include mixins.tab {
+      width: 5.7rem;
+      padding-bottom: 0.4rem;
+      border-radius: 0.1rem;
+      margin-left: 0.4rem;
+    }
+    @include mixins.sp {
+      width: 3.7rem;
+      margin-left: 0;
+      margin-top: 0.21rem;
+    }
     &__title {
       font-weight: 700;
       font-size: 24px;
       color: utility.$pink;
       padding-top: 40px;
+      @include mixins.tab {
+        font-size: 0.24rem;
+        padding-top: 0.4rem;
+      }
+      @include mixins.sp {
+        font-size: 0.2rem;
+        padding-top: 0.3rem;
+      }
     }
     &__text {
       font-size: 14px;
       line-height: 20px;
       margin-top: 36px;
+      @include mixins.tab {
+        font-size: 0.14rem;
+        line-height: 0.2rem;
+        margin-top: 0.36rem;
+      }
+      @include mixins.sp {
+        font-size: 0.12rem;
+        line-height: 0.17rem;
+        margin-top: 0.3rem;
+      }
     }
     &__wrapper {
       font-size: 0;
@@ -34,76 +74,33 @@
       margin-top: 53px;
       flex-wrap: wrap;
       justify-content: center;
+      @include mixins.tab {
+        margin-top: 0.53rem;
+      }
+      @include mixins.sp {
+        display: block;
+        margin-top: 0.38rem;
+      }
     }
     &:nth-child(2n+1) {
       margin-left: 0;
     }
     &:nth-child(n+3) {
       margin-top: 40px;
-    }
-  }
-}
-@media screen and (max-width: 1199px) {
-  .c-feature {
-    &__wrapper {
-      padding-top: 1.06rem;
-    }
-    &__title {
-      font-size: 0.25rem;
-      line-height: 0.25rem;
-    }
-    &__innerbox {
-      width: 5.7rem;
-      padding-bottom: 0.4rem;
-      border-radius: 0.1rem;
-      margin-left: 0.4rem;
-      &__title {
-        font-size: 0.24rem;
-        padding-top: 0.4rem;
-      }
-      &__text {
-        font-size: 0.14rem;
-        line-height: 0.2rem;
-        margin-top: 0.36rem;
-      }
-      &__wrapper {
-        margin-top: 0.53rem;
-      }
-      &:nth-child(n+3) {
+      @include mixins.tab {
         margin-top: 0.4rem;
       }
-    }
-  }
-}
-@media screen and (max-width: 767px) {
-  .c-feature {
-    &__wrapper {
-      padding-top: 0.55rem;
-    }
-    &__innerbox {
-      width: 3.7rem;
-      margin-left: 0;
-      margin-top: 0.21rem;
-      &__title {
-        font-size: 0.2rem;
-        padding-top: 0.3rem;
-      }
-      &__text {
-        font-size: 0.12rem;
-        line-height: 0.17rem;
-        margin-top: 0.3rem;
-      }
-      &__wrapper {
-        display: block;
-        margin-top: 0.38rem;
-      }
-      &:nth-child(n+3) {
+      @include mixins.sp {
         margin-top: 0.21rem;
       }
-      &__span {
+    }
+    &__span {
+      @include mixins.sp {
         display: inline-block;
       }
-      &__br {
+    }
+    &__br {
+      @include mixins.sp {
         display: none;
       }
     }

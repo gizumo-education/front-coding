@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/mixins.scss';
 .c-jobs {
   &__wrapper {
     width: 100%;
@@ -6,33 +7,83 @@
     padding-bottom: 67px;
     background: utility.$jobs-background;
     margin-top: 59px;
+    @include mixins.tab {
+      padding-top: 0.64rem;
+      padding-bottom: 0.67rem;
+      margin-top: 0.59rem;
+    }
+    @include mixins.sp {
+      margin-top: 0.25rem;
+      padding-top: 0.3rem;
+    }
   }
   &__title {
     font-weight: 700;
     font-size: 25px;
     font-family: 'Inter';
+    @include mixins.tab {
+      font-size: 0.25rem;
+    }
+    @include mixins.sp {
+      text-align: center;
+    }
   }
   &__detail {
     &__wrapper {
       justify-content: center;
       display: flex;
       margin-top: 25px;
+      @include mixins.tab {
+        margin-top: 0.25rem;
+      }
+      @include mixins.sp {
+        text-align: center;
+        display: block;
+        margin-top: 0.35rem;
+      }
     }
     &__inner {
       width: 280px;
       margin-left: 20px;
       transition: 0.3s;
+      @include mixins.tab {
+        width: 2.8rem;
+        margin-left: 0.2rem;
+      }
+      @include mixins.sp {
+        margin-top: 0.1rem;
+        width: 3.7rem;
+        margin-left: 0;
+      }
       &:first-child {
         margin-left: 0;
+        @include mixins.sp {
+          margin-top: 0;
+        }
       }
       &__img {
         border-radius: 10px;
+        @include mixins.tab {
+          border-radius: 0.1rem;
+        }
+        @include mixins.sp {
+          width: 3.7rem;
+        }
       }
       &__text {
         font-size: 16px;
         line-height: 22px;
         color: utility.$black;
         margin-top: 8.08px;
+        @include mixins.tab {
+          font-size: 0.16rem;
+          line-height: 0.22rem;
+          margin-top: 0.08rem;
+        }
+        @include mixins.sp {
+          text-align: left;
+          margin-top: 0.1rem;
+        }
       }
     }
   }
@@ -47,102 +98,36 @@
     font-size: 14px;
     line-height: 20px;
     color: utility.$black;
-    &__text {
-      font-size: 14px;
-      line-height: 32px;
-      margin-left: 10px;
-      color: utility.$black;
-    }
-    &__wrapper {
-      display: flex;
-    }
-  }
-}
-@media screen and (max-width: 1199px) {
-  .c-jobs {
-    &__wrapper {
-      padding-top: 0.64rem;
-      padding-bottom: 0.67rem;
-      margin-top: 0.59rem;
-    }
-    &__title {
-      font-size: 0.25rem;
-    }
-    &__detail {
-      &__wrapper {
-        margin-top: 0.25rem;
-      }
-      &__inner {
-        width: 2.8rem;
-        margin-left: 0.2rem;
-        &__img {
-          border-radius: 0.1rem;
-        }
-        &__text {
-          font-size: 0.16rem;
-          line-height: 0.22rem;
-          margin-top: 0.08rem;
-        }
-      }
-    }
-  }
-  .c-jobs {
-    &__list {
+    @include mixins.tab {
       width: 0.6rem;
       height: 0.21rem;
       margin-top: 0.06rem;
       font-size: 0.14rem;
       line-height: 0.2rem;
-      &__text {
+    }
+    @include mixins.sp {
+      margin-top: 0.11rem;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 32px;
+      margin-left: 10px;
+      color: utility.$black;
+      @include mixins.tab {
         font-size: 0.14rem;
         line-height: 0.32rem;
         margin-left: 0.1rem;
       }
-    }
-  }
-}
-@media screen and (max-width: 767px) {
-  .c-jobs {
-    &__wrapper {
-      margin-top: 0.25rem;
-      padding-top: 0.3rem;
-    }
-    &__title {
-      text-align: center;
-    }
-    &__detail {
-      &__wrapper {
-        text-align: center;
-        display: block;
-        margin-top: 0.35rem;
-      }
-      &__inner {
-        margin-top: 0.1rem;
-        width: 3.7rem;
-        margin-left: 0;
-        &:first-child {
-          margin-top: 0;
-        }
-        &__text {
-          text-align: left;
-          margin-top: 0.1rem;
-        }
-        &__img {
-          width: 3.7rem;
-        }
-      }
-    }
-  }
-  .c-jobs {
-    &__list {
-      margin-top: 0.11rem;
-      &__wrapper {
-        margin-top: 0.04rem;
-        height: 0.21rem;
-      }
-      &__text {
+      @include mixins.sp {
         margin-left: 0.21rem;
         line-height: 0.4rem;
+      }
+    }
+    &__wrapper {
+      display: flex;
+      @include mixins.sp {
+        margin-top: 0.04rem;
+        height: 0.21rem;
       }
     }
   }
