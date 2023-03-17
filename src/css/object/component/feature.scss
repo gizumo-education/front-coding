@@ -23,6 +23,7 @@
   }
   &__innerbox {
     width: 570px;
+    padding-top: 40px;
     padding-bottom: 40px;
     background: utility.$feature-background;
     border-radius: 10px;
@@ -30,6 +31,7 @@
     text-align: center;
     @include mixins.tab {
       width: 5.7rem;
+      padding-top: 0.4rem;
       padding-bottom: 0.4rem;
       border-radius: 0.1rem;
       margin-left: 0.4rem;
@@ -37,20 +39,19 @@
     @include mixins.sp {
       width: 3.7rem;
       margin-left: 0;
-      margin-top: 0.21rem;
+      margin-top: 0.3rem;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
     }
     &__title {
       font-weight: 700;
       font-size: 24px;
       color: utility.$pink;
-      padding-top: 40px;
       @include mixins.tab {
         font-size: 0.24rem;
-        padding-top: 0.4rem;
       }
       @include mixins.sp {
         font-size: 0.2rem;
-        padding-top: 0.3rem;
       }
     }
     &__text {
