@@ -82,6 +82,9 @@
     @include utility.tab {
       border-radius: 0.1rem;
     }
+    @include utility.sp {
+      width: 3.7rem;
+    }
   }
 
   &__text {
