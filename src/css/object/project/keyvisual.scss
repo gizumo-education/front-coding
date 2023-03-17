@@ -6,12 +6,15 @@
   &__inner {
     width: 100%;
     max-width: 1600px;
-    height: 500px;
+    height: 50rem;
     background-image: url(../img/picture/keyvisualpc.jpg);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    @include vm.tab {
+      height: 5rem;
+    }
     @include vm.sp {
       max-width: 400px;
       height: 270px;
