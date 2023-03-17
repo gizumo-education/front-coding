@@ -56,10 +56,6 @@
 
     &:first-child{
       margin-left: 0;
-
-      @include utility.sp {
-        margin: 0 auto;
-      }
     }
 
     &::before{
@@ -174,9 +170,7 @@
     }
     @include utility.sp {
       width: 3.7rem;
-      text-align: center;
       padding: 0.21rem 0;
     }
-
   }
 }
