@@ -10,6 +10,10 @@
     margin-top: 0.59rem;
     padding: 0.64rem 0 0.67rem 0;
   }
+  @include utility.sp {
+    margin-top: 0.25rem;
+    padding: 0.3rem 0.15rem 0.6rem 0.15rem;
+  }
 
   &__title {
     text-align: left;
@@ -20,6 +24,7 @@
     }
     @include utility.sp {
       text-align: center;
+      font-weight: bold;
     }
   }
 
@@ -78,9 +83,11 @@
 
   &__img img{
     border-radius: 15px;
+    width: 280px;
 
     @include utility.tab {
       border-radius: 0.1rem;
+      width: 2.8rem;
     }
     @include utility.sp {
       width: 3.7rem;
@@ -96,11 +103,14 @@
       line-height: 0.22rem;
     }
     @include utility.sp {
-      width: 3.7rem;
+      width: 3.58rem;
     }
 
     &__heading {
-      font-weight: bold;
+      @include utility.sp {
+        font-weight: bold;
+        line-height: 0.22rem;
+      }
     }
 
     &__detail {
@@ -134,6 +144,10 @@
         width: 0.6rem;
         margin-top: 0.04rem;
       }
+
+      &:first-child {
+        margin-top: 0;
+      }
     }
     dl dd {
       width: 210px;
@@ -147,19 +161,22 @@
   }
 
   &__btn {
-    padding: 17px 72px;
+    padding: 17px 0;
     width: 360px;
     margin: 60px auto 0;
+    text-align: center;
     display: block;
 
     @include utility.tab {
-      padding: 0.17rem 0.72rem;
+      padding: 0.17rem 0;
       width: 3.6rem;
       margin: 0.6rem auto 0;
     }
     @include utility.sp {
       width: 3.7rem;
       text-align: center;
+      padding: 0.21rem 0;
     }
+
   }
 }

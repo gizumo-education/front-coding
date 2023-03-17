@@ -45,6 +45,7 @@
     @include utility.sp {
       font-size: 0.14rem;
       font-weight: normal;
+      line-height: 0.2rem;
     }
 
     & > span {
@@ -54,6 +55,9 @@
 
         @include utility.tab {
           margin-top: 0.21rem;
+        }
+        @include utility.sp {
+          margin-top: 0.02rem;
         }
       }
     }
