@@ -5,7 +5,7 @@
 
   &__inner {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
     height: 50rem;
     background-image: url(../img/picture/keyvisualpc.jpg);
     background-size: 100% 100%;
@@ -13,11 +13,12 @@
     background-repeat: no-repeat;
     position: relative;
     @include vm.tab {
+      width: 12rem;
       height: 5rem;
     }
     @include vm.sp {
-      max-width: 400px;
-      height: 270px;
+      width: 4rem;
+      height: 2.7rem;
       background-image: url(../img/picture/keyvisualsp.jpg);
     }
   }
