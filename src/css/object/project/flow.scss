@@ -70,7 +70,10 @@
       font-size: 0.24rem;
     }
     @include vm.sp {
+      font-size: 0.2rem;
+      line-height: initial;
       margin-top: 22px !important;
+      padding: 0;
     }
   }
 
@@ -87,6 +90,7 @@
   &__list__item:nth-child(2) > h3 {
     margin-top: 40px;
   }
+
   &__list__item:nth-child(n + 3) > h3 {
     margin-top: 33px;
     line-height: 35px;
@@ -111,5 +115,4 @@
   &__list__item:nth-child(n + 3) > p {
     margin-top: 30px;
   }
-
 }
