@@ -54,6 +54,7 @@
       line-height: 0.22rem;
     }
     @include vm.sp {
+      font-size: 0.16rem;
       font-weight: vm.$bold;
       margin-top: 10px;
     }
@@ -81,6 +82,7 @@
       line-height: 0.21rem;
     }
     @include vm.sp {
+      font-size: 0.14rem;
       gap: 20px;
     }
   }

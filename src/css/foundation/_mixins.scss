@@ -33,6 +33,9 @@
   @include tab {
     font-size: 0.25rem;
   }
+  @include sp {
+    font-size: 0.25rem;
+  }
 }
 
 @mixin heading-lv3 {
@@ -42,6 +45,6 @@
     font-size: 0.24rem;
   }
   @include sp {
-    font-size: 20px;
+    font-size: 0.2rem;
   }
 }

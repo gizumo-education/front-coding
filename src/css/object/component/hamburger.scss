@@ -8,9 +8,11 @@
   height: 38px;
   margin-left: auto;
   cursor: pointer;
+
   @include vm.sp {
     display: flex;
   }
+
   span {
     display: inline-block;
     background: vm.$black;

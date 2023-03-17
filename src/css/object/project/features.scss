@@ -26,6 +26,9 @@
     flex: 1 1 calc(50% - 20px);
     border-radius: 8px;
     padding: 40px 61px;
+    @include vm.sp {
+      padding: 30px 11px;
+    }
   }
 
   &__list__item > h3 {
@@ -39,7 +42,8 @@
     margin-top: 36px;
     @include vm.tab {
       font-size: 0.14rem;
-      line-height: 0.2rem;
+      line-height: initial;
+      margin-top: 30px;
     }
   }
 }
