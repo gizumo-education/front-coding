@@ -119,6 +119,10 @@
     }
 
     &__input {
+        @include utility.sp {
+          margin-top: 0.16rem;
+        }
+
       &__item {
         padding: 16px 18px 16px 10px;
         width: 300px;
@@ -129,7 +133,6 @@
         }
         @include utility.sp {
           width: 100%;
-          margin-top: 0.16rem;
         }
       }
     }
@@ -175,11 +178,29 @@
       }
 
       & img{
-        width: 0.3rem;
+        width: 30px;
+        vertical-align: middle;
+
+        @include utility.tab {
+          width: 0.3rem;
+        }
         @include utility.sp {
           width: 0.18rem;
+          vertical-align: baseline;
+        }
+      }
+
+      & span {
+        font-size: 18px;
+
+        @include utility.tab {
+          font-size: 0.18rem;
+        }
+        @include utility.sp {
+          font-size: 0.18rem;
         }
       }
     }
   }
 }
+
