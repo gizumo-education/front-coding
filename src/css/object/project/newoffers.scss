@@ -43,6 +43,12 @@
 
   &__list__item > a > img {
     border-radius: 18px;
+    @include vm.tab {
+      border-radius: 0.18rem;
+    }
+    @include vm.sp {
+      border-radius: 0.18rem;
+    }
   }
 
   &__list__item > a > h3 {
@@ -85,6 +91,7 @@
     @include vm.sp {
       font-size: 0.14rem;
       gap: 20px;
+      line-height: 0.21rem;
     }
   }
 
@@ -92,7 +99,12 @@
     width: 60px;
     text-align: center;
     background: vm.$new-offers-span;
+
     @include vm.tab {
+      width: 0.6rem;
+    }
+
+    @include vm.sp {
       width: 0.6rem;
     }
   }

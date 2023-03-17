@@ -18,29 +18,52 @@
   &--small {
     @extend .c-button;
     width: 140px;
-
-    svg {
-      vertical-align: middle;
-    }
+    max-width: 140px;
 
     @include vm.tab {
-      font-size: 0.15rem;
+      font-size: 0.18rem;
+      padding: 0.15rem;
+      width: 1.4rem;
     }
 
     @include vm.sp {
-      padding: 0.1rem 0;
+      font-size: 0.18rem;
+      padding: 0.11rem 0.13rem;
       line-height: 0.18rem;
+      width: 160px;
+      max-width: initial;
+    }
+  }
+
+  &--small > svg {
+    vertical-align: middle;
+    @include vm.tab {
+      width: 0.23rem;
+      height: auto;
+    }
+    @include vm.sp {
+      font-size: 0.18rem;
+      width: 0.18rem;
+      height: auto;
     }
   }
 
   &--large {
     @extend .c-button;
     width: 360px;
+    font-size: 18px;
     line-height: 26px;
 
     @include vm.sp {
       width: 100%;
-      line-height: 0.18rem;
+      font-size: 0.18rem;
+      line-height: 0.26rem;
+    }
+
+    @include vm.sp {
+      width: 100%;
+      font-size: 0.18rem;
+      line-height: 0.26rem;
     }
   }
 }
