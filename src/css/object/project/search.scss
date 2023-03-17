@@ -13,6 +13,9 @@
     padding: 0.4rem;
     margin-top: 0.61rem;
   }
+  @include utility.sp {
+    padding: 0.25rem;
+  }
 
   &__subtitle {
     font-size: 20px;
@@ -25,6 +28,7 @@
     @include utility.sp {
       font-size: 0.14rem;
       margin-top: 0.16rem;
+      width: 100%;
     }
   }
 
@@ -74,6 +78,7 @@
         border-radius: 0;
         width: 200px;
         padding: 17px 15px;
+        color:  utility.$black;
 
         @include utility.tab {
           width: 2rem;
