@@ -31,6 +31,9 @@
     @include vm.tab {
       gap: 0.25rem;
     }
+    @include vm.sp {
+      gap: 0.25rem;
+    }
   }
 
   &__nav__list {
@@ -56,6 +59,11 @@
       font-size: 0.16rem;
       padding: 0 0.24rem;
     }
+
+    @include vm.sp {
+      font-size: 0.16rem;
+      padding: 0 0.24rem;
+    }
   }
 
   &__nav__list__item:first-child > a {
@@ -65,10 +73,18 @@
     @include vm.tab {
       padding: 0 0.24rem 0 0 !important;
     }
+
+    @include vm.sp {
+      padding: 0 0.24rem 0 0 !important;
+    }
   }
 
   &__nav__list__item:last-child > a {
     padding: 0 0 0 24px !important;
+
+    @include vm.sp {
+      padding: 0 0 0 0.24rem !important;
+    }
 
     @include vm.tab {
       padding: 0 0 0 0.24rem !important;
@@ -116,7 +132,7 @@
 
   &__nav__list--button__item:first-child > a {
     width: 160px;
-    
+
     @include vm.tab {
       width: 1.6rem;
       padding: 0.15rem 0.1rem;

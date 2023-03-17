@@ -8,11 +8,12 @@
 
   @include vm.tab {
     font-size: 0.16rem;
+    margin-top: 2rem;
   }
 
   @include vm.sp {
     font-size: 0.16rem;
-    margin-top: 100px;
+    margin-top: 1rem;
   }
 
   &__inner {
@@ -23,9 +24,13 @@
     padding-top: 55px !important;
     padding-bottom: 25px !important;
 
+    @include vm.tab {
+      padding-top: 0.55rem !important;
+      padding-bottom: 0.25rem !important;
+    }
+
     @include vm.sp {
       flex-direction: column;
-      // padding: 38px 50px 40px !important;
       padding: 0.38rem 0.5rem 0.4rem !important;
     }
   }
@@ -40,7 +45,12 @@
     display: flex;
     gap: 39px;
     margin-top: 27px;
-    
+
+    @include vm.tab {
+      gap: 0.39rem;
+      margin-top: 0.27rem;
+    }
+
     @include vm.sp {
       gap: 0.39rem;
       font-size: 0.16rem;
@@ -55,6 +65,9 @@
   &__nav__list__item {
     line-height: 36px;
 
+    @include vm.tab {
+      line-height: 0.36rem;
+    }
     @include vm.sp {
       line-height: 0.36rem;
     }
