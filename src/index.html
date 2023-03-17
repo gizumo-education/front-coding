@@ -485,16 +485,16 @@
             <a href="" class="c-button--large">医療事務コラムをもっと見る</a>
           </div>
         </article>
-        <!-- <div class="p-search p-search--bottom l-inner">
+        <div class="p-search p-search--bottom l-inner">
           <div class="p-search__inner">
             <h2 class="p-search__heading">お仕事検索</h2>
-            <p class="p-search__text">
+            <h3 class="p-search__sub-heading">
               働きたい職種・地域・希望給与を入れて検索！
-            </p>
+            </h3>
             <form class="p-search__form">
-              <div class="p-search__form__inner">
-                <div class="p-search__form__select-wrapper">
-                  <select name="job" id="jobBottom">
+              <div class="p-search__form__select-area">
+                <div class="p-search__form__select-area__wrapper">
+                  <select name="job" id="job">
                     <option value="医療事務" selected>医療事務</option>
                     <option value="調剤事務">調剤事務</option>
                     <option value="診療情報管理士">診療情報管理士</option>
@@ -506,8 +506,8 @@
                     <option value="病院内SE">病院内SE</option>
                   </select>
                 </div>
-                <div class="p-search__form__select-wrapper">
-                  <select name="region" id="regionBottom">
+                <div class="p-search__form__select-area__wrapper">
+                  <select name="region" id="region">
                     <option value="茨城県">茨城県</option>
                     <option value="神奈川県">神奈川県</option>
                     <option value="群馬県">群馬県</option>
@@ -517,8 +517,8 @@
                     <option value="栃木県">栃木県</option>
                   </select>
                 </div>
-                <div class="p-search__form__select-wrapper">
-                  <select name="price" id="priceBottom">
+                <div class="p-search__form__select-area__wrapper">
+                  <select name="price" id="price">
                     <option value="月給17万〜">月給17万〜</option>
                     <option value="月給18万〜">月給18万〜</option>
                     <option value="月給19万〜">月給19万〜</option>
@@ -529,7 +529,12 @@
                   </select>
                 </div>
               </div>
-              <input type="text" placeholder="キーワード・企業名・スキルなど" />
+              <div class="p-search__form__input-wrapper">
+                <input
+                  type="text"
+                  placeholder="キーワード・企業名・スキルなど"
+                />
+              </div>
               <button class="c-button--small" type="submit">
                 <svg
                   width="30"
@@ -547,7 +552,7 @@
               </button>
             </form>
           </div>
-        </div> -->
+        </div>
       </main>
       <footer class="l-footer">
         <div class="l-footer__inner l-inner">

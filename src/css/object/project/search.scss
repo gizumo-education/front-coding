@@ -5,6 +5,9 @@
     padding: 25px;
     background: vm.$blue;
     border-radius: 8px;
+    @include vm.sp {
+      padding: 0.15rem 0.25rem;
+    }
   }
 
   &__heading {
@@ -18,6 +21,9 @@
     text-align: center;
     line-height: 29px;
     margin-top: 20px;
+    @include vm.sp {
+      margin-top: 0.16rem;
+    }
   }
 
   &__form {
@@ -27,6 +33,7 @@
     margin-top: 26px;
     @include vm.sp {
       flex-direction: column;
+      margin-top: 0.13rem;
     }
   }
 
@@ -119,5 +126,12 @@
 
   &__form > .c-button--small > svg {
     vertical-align: middle;
+  }
+
+  &--bottom {
+    margin-top: 150px;
+    @include vm.sp {
+      margin-top: 60px;
+    }
   }
 }
