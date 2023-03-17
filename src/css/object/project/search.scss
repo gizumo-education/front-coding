@@ -13,6 +13,9 @@
   &__heading {
     @include vm.heading-lv2;
     text-align: center;
+    @include vm.sp {
+      font-size: 0.22rem;
+    }
   }
 
   &__sub-heading {
@@ -22,6 +25,7 @@
     line-height: 29px;
     margin-top: 20px;
     @include vm.sp {
+      font-size: 0.14rem;
       margin-top: 0.16rem;
       line-height: initial;
     }
@@ -48,17 +52,18 @@
     }
   }
 
-  &__form__select-area > div {
+  &__form__select-area__wrapper {
     position: relative;
     width: 100%;
     max-width: 200px;
     height: 60px;
     @include vm.sp {
       max-width: initial;
+      height: 0.3rem;
     }
   }
 
-  &__form__select-area > div::after {
+  &__form__select-area__wrapper::after {
     position: absolute;
     content: '';
     top: 25px;
@@ -67,8 +72,14 @@
     border-width: 10px 10px 0 10px;
     border-color: vm.$pink transparent transparent transparent;
     @include vm.tab {
-      // top: 0.25rem;
       right: 0.12rem;
+    }
+    @include vm.sp {
+      top: 0.1rem;
+      right: 0.07rem;
+      border-style: solid;
+      border-width: 7px 6.5px 0 6.5px;
+      border-color: vm.$pink transparent transparent transparent;
     }
   }
 
@@ -88,6 +99,11 @@
       line-height: 0.26rem;
       padding: 0.17rem 0.15rem;
     }
+    @include vm.sp {
+      font-size: 0.12rem;
+      line-height: initial;
+      padding: 0.05rem 0.08rem;
+    }
   }
 
   &__form__input-wrapper {
@@ -97,6 +113,7 @@
     height: 60px;
     @include vm.sp {
       max-width: initial;
+      height: 0.3rem;
     }
   }
 
