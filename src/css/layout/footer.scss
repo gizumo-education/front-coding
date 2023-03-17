@@ -117,7 +117,8 @@
     }
     @include mixins.sp {
       margin-top: 0.22rem;
-      margin-left: 0.25rem;
+      margin-left: 0;
+      text-align: center;
     }
     &__child {
       @include mixins.sp {
@@ -125,7 +126,6 @@
       }
     }
     &__old {
-      display: block;
       margin-top: 15px;
       @include mixins.tab {
         margin-top: 0.15rem;
