@@ -31,7 +31,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // height: 360px;
+    @include vm.tab {
+      padding: 0 0.4rem;
+    }
   }
 
   &__list__item > a::before {

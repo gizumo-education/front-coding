@@ -10,15 +10,18 @@
   background: vm.$white;
   position: fixed;
   z-index: 100;
+
   @include vm.tab {
+    height: 1rem;
     padding: 0.25rem 0.3rem;
   }
+
   @include vm.sp {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 0.15rem;
-    height: 70px;
+    height: 0.7rem;
   }
 
   &__nav {
@@ -32,6 +35,7 @@
 
   &__nav__list {
     display: flex;
+
     @include vm.sp {
       display: none;
     }
@@ -47,6 +51,7 @@
     line-height: 23px;
     border-left: solid 1px vm.$black;
     padding: 0 24px;
+
     @include vm.tab {
       font-size: 0.16rem;
       padding: 0 0.24rem;
@@ -56,6 +61,7 @@
   &__nav__list__item:first-child > a {
     border: none;
     padding: 0 24px 0 0 !important;
+
     @include vm.tab {
       padding: 0 0.24rem 0 0 !important;
     }
@@ -63,6 +69,7 @@
 
   &__nav__list__item:last-child > a {
     padding: 0 0 0 24px !important;
+
     @include vm.tab {
       padding: 0 0 0 0.24rem !important;
     }
@@ -76,10 +83,12 @@
     display: flex;
     gap: 15px;
     font-size: 14px;
+
     @include vm.tab {
       gap: 0.15rem;
       font-size: 0.14rem;
     }
+
     @include vm.sp {
       display: none;
     }
@@ -94,9 +103,11 @@
     padding: 15px;
     text-align: center;
     transition: 0.3s;
+
     &:hover {
       opacity: 0.8;
     }
+
     @include vm.tab {
       width: 1.4rem;
       padding: 0.15rem;
@@ -105,6 +116,7 @@
 
   &__nav__list--button__item:first-child > a {
     width: 160px;
+    
     @include vm.tab {
       width: 1.6rem;
       padding: 0.15rem 0.1rem;
