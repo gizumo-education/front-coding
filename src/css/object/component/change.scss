@@ -34,12 +34,17 @@
     }
     @include mixins.sp {
       width: 2.77rem;
-      margin-left: 0;
+      margin-left: auto;
+      margin-right: auto;
       margin-top: 0.41rem;
       height: 2.9rem;
     }
     &:first-child {
       margin-left: 0;
+      @include mixins.sp {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
     &__step {
       margin-top: 8.87px;
@@ -129,7 +134,7 @@
       @include mixins.sp {
         display: block;
         margin-top: 0.35rem;
-        margin-left: 0.45rem;
+        // margin-left: 0.45rem;
       }
     }
     &__br {
