@@ -5,9 +5,11 @@
   background: vm.$light-blue;
   margin-top: 200px;
   font-size: 16px;
+
   @include vm.tab {
     font-size: 0.16rem;
   }
+
   @include vm.sp {
     font-size: 0.16rem;
     margin-top: 100px;
@@ -20,6 +22,7 @@
     align-items: center;
     padding-top: 55px !important;
     padding-bottom: 25px !important;
+
     @include vm.sp {
       flex-direction: column;
       // padding: 38px 50px 40px !important;
@@ -37,9 +40,8 @@
     display: flex;
     gap: 39px;
     margin-top: 27px;
+    
     @include vm.sp {
-      gap: 0.39rem;
-      // font-size: 16px;
       gap: 0.39rem;
       font-size: 0.16rem;
     }
@@ -52,6 +54,7 @@
 
   &__nav__list__item {
     line-height: 36px;
+
     @include vm.sp {
       line-height: 0.36rem;
     }
@@ -62,6 +65,7 @@
     flex-direction: column;
     flex: 1 1;
     gap: 15px;
+
     @include vm.sp {
       width: 100%;
       gap: 0.15rem;
@@ -83,6 +87,7 @@
   &__copyrights-text {
     padding: 11px 0;
     background: vm.$grey;
+
     @include vm.sp {
       padding: 0.11rem;
       font-size: 0.14rem;
