@@ -31,9 +31,9 @@
       line-height: 0.47rem;
     }
     @include vm.sp {
-      font-size: 14px;
+      font-size: 0.14rem;
       font-weight: vm.$regular;
-      line-height: 20px;
+      line-height: 0.2rem;
     }
   }
 }

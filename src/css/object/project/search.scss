@@ -23,6 +23,7 @@
     margin-top: 20px;
     @include vm.sp {
       margin-top: 0.16rem;
+      line-height: initial;
     }
   }
 
