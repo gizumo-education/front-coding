@@ -39,7 +39,7 @@
         line-height: 0.23rem;
       }
       @include mixins.sp {
-        margin-left: 0.4rem;
+        margin-left: 0.3rem;
         padding-top: 0;
       }
     }
@@ -80,7 +80,7 @@
           line-height: 0.36rem;
         }
         @include mixins.sp {
-          margin-left: 0.45rem;
+          margin-left: 0.35rem;
         }
         &__text {
           display: block;
@@ -101,7 +101,7 @@
           line-height: 0.36rem;
         }
         @include mixins.sp {
-          width: 1.6rem;
+          width: 1.8rem;
         }
         &__text {
           display: block;
