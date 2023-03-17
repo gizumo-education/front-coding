@@ -7,6 +7,10 @@
   @include utility.tab {
     margin-top: 1.06rem;
   }
+  @include utility.sp {
+    margin-top: 0.61rem;
+    width: 3.7rem;
+  }
 
   &__heading {
     text-align: center;
@@ -21,6 +25,7 @@
     }
     @include utility.sp {
       display: block;
+      margin-top: 0.3rem;
     }
   }
 
@@ -125,18 +130,20 @@
 
   &__btn {
     width: 420px;
-    padding: 21px 93px;
+    padding: 21px 0;
+    text-align: center;
     margin: 80px auto 0px auto;
     display: block;
 
     @include utility.tab {
       width: 4.2rem;
-      padding: 0.21rem 0.93rem;
+      padding: 0.21rem 0;
       margin: 0.8rem auto 0 auto;
     }
     @include utility.sp {
       width: 3.7rem;
       text-align: center;
+      margin: 0.35rem auto 0.6rem auto;
     }
   }
 }

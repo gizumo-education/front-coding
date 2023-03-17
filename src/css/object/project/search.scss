@@ -15,6 +15,8 @@
   }
   @include utility.sp {
     padding: 0.25rem;
+    margin-top: 0.25rem;
+    width: 3.7rem;
   }
 
   &__subtitle {
@@ -97,7 +99,8 @@
         content: "";
         position: absolute;
         top: 50%;
-        left: 85%;
+        left: 100%;
+        margin: 0 -25px;
         transform: translate( -0%, -50%);
         width: 0;
 
@@ -105,11 +108,13 @@
           border-left: 0.1rem solid transparent;
           border-right: 0.1rem solid transparent;
           border-top: 0.1rem solid utility.$dark-pink;
+          margin: 0 -0.25rem;
         }
         @include utility.sp {
           border-left: 0.06rem solid transparent;
           border-right: 0.06rem solid transparent;
           border-top: 0.07rem solid utility.$dark-pink;
+          margin: 0 -0.19rem;
         }
       }
     }

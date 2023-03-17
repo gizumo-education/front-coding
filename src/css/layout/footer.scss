@@ -4,11 +4,13 @@
 .l-footer {
   margin-top: 200px;
   background-color: utility.$skyblue;
-  padding-top: 55px;
 
   @include utility.tab {
     margin-top: 2rem;
     padding-top: 0.55rem;
+  }
+  @include utility.sp {
+    margin-top: 1rem;
   }
 
   &__inner {
@@ -21,6 +23,7 @@
     }
     @include utility.sp {
       display: block;
+      padding: 0.38rem 0.4rem 0.4rem 0.4rem;
     }
   }
 
@@ -38,7 +41,7 @@
         margin-top: 0.24rem;
       }
       @include utility.sp {
-        margin-left: 0.5rem;
+        margin-top: 0;
       }
     }
 
@@ -59,9 +62,7 @@
         display: flex;
 
         @include utility.sp {
-          width: 3.2rem;
           margin: 0 auto;
-          margin-left: 0.55rem;
         }
       }
 

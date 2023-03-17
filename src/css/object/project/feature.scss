@@ -8,6 +8,10 @@
   @include utility.tab {
     margin-top: 1.06rem;
   }
+  @include utility.sp {
+    margin-top: 0.55rem;
+    width: 3.7rem;
+  }
 
   &__inner {
     width: 100%;
@@ -24,6 +28,7 @@
     }
     @include utility.sp {
       display: block;
+      margin-top: 0.38rem;
     }
   }
 
@@ -42,6 +47,7 @@
     @include utility.sp {
       width: 100%;
       margin-top: 0.21rem;
+      padding: 0.3rem 0.17rem;
 
       &:first-child {
         margin-top: 0;

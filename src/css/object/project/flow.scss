@@ -7,6 +7,9 @@
   @include utility.tab {
     margin-top: 1.05rem;
   }
+  @include utility.sp {
+    margin-top: 0.6rem;
+  }
 
   &__heading {
     text-align: center;
@@ -23,6 +26,7 @@
     }
     @include utility.sp {
       display: block;
+      margin-top: 0.35rem;
     }
   }
 
@@ -45,11 +49,14 @@
 
     &__number {
       position: absolute;
-      left: 3%;
-      bottom: 79%;
+      width: 60px;
+      top: 0;
+      left: 0;
+      margin: 9px;
 
       @include utility.tab {
         width: 0.6rem;
+        margin: 0.09rem;
       }
       @include utility.sp {
         width: 0.45rem;
@@ -85,7 +92,7 @@
       }
 
       &::after {
-        border: 20px solid transparent;
+        border: 0.2rem solid transparent;
         border-left-color: utility.$pink;
         content: "";
         position: absolute;
@@ -94,10 +101,11 @@
         transform: translate( -0%, -50%);
 
         @include utility.sp {
-          border: 20px solid transparent;
+          border: 0.2rem solid transparent;
           border-top-color: utility.$pink;
-          top: 105%;
+          top: 100%;
           left: 50%;
+          margin: 0.1rem 0;
           transform: translate( -50%, -0%);
         }
       }
