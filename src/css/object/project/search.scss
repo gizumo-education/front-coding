@@ -103,13 +103,6 @@
     border-width: 10px 10px 0 10px;
     border-color: vm.$pink transparent transparent transparent;
 
-    @media screen and (min-width: 768px) and (max-width: 950px) {
-      border-style: solid;
-      border-width: 0.07rem 0.065rem 0 0.065rem;
-      border-color: vm.$pink transparent transparent transparent;
-      top: 55%;
-    }
-
     @include vm.tab {
       border-style: solid;
       border-width: 0.1rem 0.1rem 0 0.1rem;
