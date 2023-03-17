@@ -1,6 +1,9 @@
 @use '../../object/utility/utility.scss' as vm;
 
 .p-flow {
+  @include vm.tab {
+  }
+
   @include vm.sp {
     padding: 0 0.6rem;
   }
@@ -13,15 +16,18 @@
     display: flex;
     gap: 22px;
     margin-top: 51px;
+    @include vm.tab {
+      gap: 0.22rem;
+      margin-top: 0.51rem;
+    }
     @include vm.sp {
       flex-direction: column;
-      gap: 40px;
-      margin-top: 35px;
+      gap: 0.4rem;
+      margin-top: 0.35rem;
     }
   }
 
   &__list__item {
-    flex: 1 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +35,15 @@
     border-radius: 8px;
     position: relative;
     padding: 9px 20px 40px 9px;
+    @include vm.tab {
+      width: 2.77rem;
+      border-radius: 0.08rem;
+      padding: 0.09rem 0.2rem 0.4rem 0.09rem;
+    }
+    @include vm.sp {
+      border-radius: 0.08rem;
+      padding: 0.09rem 0.2rem 0.4rem 0.09rem;
+    }
   }
 
   &__list__item::after {
@@ -42,9 +57,15 @@
     top: 50%;
     right: -24px;
     transform: translateY(-50%);
+
+    @include vm.tab {
+      border-width: 0.22rem 0 0.22rem 0.22rem;
+      right: -0.24rem;
+    }
+
     @include vm.sp {
       border-style: solid;
-      border-width: 20px 20px 0 20px;
+      border-width: 0.2rem 0.2rem 0 0.2rem;
       border-color: #de557a transparent transparent transparent;
       top: 101%;
       right: 50%;
