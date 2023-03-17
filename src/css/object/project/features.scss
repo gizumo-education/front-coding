@@ -1,11 +1,10 @@
 @use '../../object/utility/utility.scss' as vm;
 
 .p-features {
-
   @include vm.sp {
-    margin-top: 55px !important;
+    margin-top: 0.55rem !important;
   }
-  
+
   &__heading {
     @include vm.heading-lv2;
   }
@@ -15,10 +14,14 @@
     flex-wrap: wrap;
     gap: 40px;
     margin-top: 53px;
+    @include vm.tab {
+      gap: 0.4rem;
+      margin-top: 0.53rem;
+    }
     @include vm.sp {
       flex-direction: column;
-      margin-top: 38px;
-      gap: 21px;
+      gap: 0.21rem;
+      margin-top: 0.38rem;
     }
   }
 
@@ -28,8 +31,15 @@
     flex: 1 1 calc(50% - 20px);
     border-radius: 8px;
     padding: 40px 61px;
+    @include vm.tab {
+      flex: 1 1 calc(50% - 0.2rem);
+      border-radius: 0.08rem;
+      padding: 0.4rem 0.61rem;
+    }
     @include vm.sp {
-      padding: 30px 11px;
+      flex: 1 1 calc(50% - 0.2rem);
+      border-radius: 0.08rem;
+      padding: 0.3rem 0.11rem;
     }
   }
 
@@ -42,10 +52,16 @@
     font-size: 14px;
     line-height: 20px;
     margin-top: 36px;
+
     @include vm.tab {
       font-size: 0.14rem;
+      margin-top: 0.36rem;
+    }
+
+    @include vm.sp {
+      font-size: 0.14rem;
       line-height: initial;
-      margin-top: 30px;
+      margin-top: 0.3rem;
     }
   }
 }
