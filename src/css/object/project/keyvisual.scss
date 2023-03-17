@@ -6,7 +6,7 @@
   &__inner {
     width: 100%;
     max-width: 1200px;
-    height: 50rem;
+    height: 500px;
     background-image: url(../img/picture/keyvisualpc.jpg);
     background-size: 100% 100%;
     background-position: center;
@@ -23,35 +23,52 @@
     }
   }
 
-  // &__text {
-  //   font-size: 20px;
-  //   color: vm.$key-visual-text;
-  //   background-color: vm.$white;
-  //   padding: 4px 40px;
-  //   border: solid 2px vm.$key-visual-text;
-  //   border-radius: 8px;
-  //   position: absolute;
-  //   bottom: 47px;
-  //   right: 10%;
-  //   @include vm.sp {
-  //     width: 170px;
-  //     font-size: 8px;
-  //     line-height: 12px;
-  //     padding: 3px 1px;
-  //     text-align: center;
-  //     border: solid 1px vm.$key-visual-text;
-  //     top: 188px;
-  //     right: 40px;
-  //   }
-  // }
+  &__link > h2 {
+    font-size: 20px;
+    line-height: 29px;
+    color: vm.$key-visual-text;
+    background-color: vm.$white;
+    padding: 4px 45px;
+    border: solid 2px vm.$key-visual-text;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 47px;
+    right: 237px;
+    @include vm.tab {
+      font-size: 0.2rem;
+      line-height: 0.29rem;
+      color: vm.$key-visual-text;
+      background-color: vm.$white;
+      padding: 0.04rem 0.45rem;
+      border: solid 0.02rem vm.$key-visual-text;
+      border-radius: 0.08rem;
+      position: absolute;
+      bottom: 0.47rem;
+      right: 2.37rem;
+    }
+    @include vm.sp {
+      font-size: 0.08rem;
+      line-height: 0.12rem;
+      padding: 0.03rem 0.25rem;
+      text-align: center;
+      border: solid 0.01rem vm.$key-visual-text;
+      border-radius: 0.08rem;
+      bottom: 0.52rem;
+      right: 0.41rem;
+    }
+  }
 
-  // &__text > span {
-  //   font-size: 40px;
-  //   font-weight: vm.$bold;
-  //   line-height: 58px;
-  //   @include vm.sp {
-  //     font-size: 16px;
-  //     line-height: initial;
-  //   }
-  // }
+  &__link > h2 > span {
+    font-size: 40px;
+    line-height: 58px;
+    font-weight: vm.$bold;
+    @include vm.tab {
+      font-size: 0.4rem;
+      line-height: 0.58rem;
+    }
+    @include vm.sp {
+      font-size: 0.16rem;
+      line-height: 0.23rem;
+    }
+  }
 }
