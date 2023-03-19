@@ -7,7 +7,6 @@
 
   @include utility.tab {
     margin-top: 2rem;
-    padding-top: 0.55rem;
   }
   @include utility.sp {
     margin-top: 1rem;
@@ -16,9 +15,11 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    padding-top: 55px;
     padding-bottom: 25px;
 
     @include utility.tab {
+      padding-top: 0.55rem;
       padding-bottom: 0.25rem;
     }
     @include utility.sp {
