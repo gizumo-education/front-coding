@@ -126,6 +126,10 @@
       margin-top: 0.44rem;
       line-height: 0.23rem;
     }
+    @include utility.tab {
+      margin-top: 0.53rem;
+      line-height: 0.20rem;
+    }
   }
 
   &__btn {
