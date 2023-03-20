@@ -110,12 +110,6 @@
     }
   }
 
-  &__list__item:first-child > h3 > br {
-    @include vm.sp {
-      display: none;
-    }
-  }
-
   &__list__item:nth-child(2) > h3 {
     margin-top: 40px;
     @include vm.tab {
@@ -146,6 +140,12 @@
     }
     @include vm.sp {
       margin-top: 0.22rem;
+    }
+  }
+
+  &__list__item > h3 > br {
+    @include vm.sp {
+      display: none;
     }
   }
 
