@@ -65,13 +65,15 @@
 
     &__icon {
       text-align: center;
-      height: 100px;
 
-      @include utility.tab {
-        height: 1rem;
+      & img {
+        width: 100px;
 
-        & img {
+        @include utility.tab {
           width: 1rem;
+        }
+        @include utility.sp {
+          width: 0.75rem;
         }
       }
     }
