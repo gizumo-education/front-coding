@@ -20,7 +20,7 @@
   @include mix.tab {
     margin-top: 1.05rem !important;
   }
-  
+
   @include mix.sp {
     margin-top: 0.6rem !important;
   }
@@ -32,4 +32,13 @@
 
 .u-relative {
   position: relative;
+}
+
+.u-overflow-y-tab-pc--visible {
+  @include mix.pc {
+    overflow-y: visible !important;
+  }
+  @include mix.tab {
+    overflow-y: visible !important;
+  }
 }
