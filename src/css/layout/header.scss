@@ -68,28 +68,42 @@
     }
   }
   &__nav {
-    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: ease .3s;
     @include mixins.sp {
-      display: block;
-      position: fixed;
+      display: flex;
+      position: static;
+      transform: initial;
       z-index: 999;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       height: 5.54rem;
-      margin-top: 0.7rem;
+      margin-top: 0.35rem;
       background-color: utility.$nav;
+      transform: translateX(100%);
       &__menu__ul {
         font-weight: 700;
         font-size: 0.22rem;
         line-height: 0.22rem;
         padding-top: 0.2rem;
         padding-left: 0.6rem;
+        justify-content: space-between;
+        position: inherit;
+        top: 0;
+        left: 0;
+        // transform: translate(0, 0);
       }
       &__menu__li a {
         color: utility.$nav-color;
         margin-top: 0.38rem;
+        display: block;
       }
     }
     &__toggle {
@@ -119,6 +133,7 @@
           height: 0.06rem;
           background-color: utility.$black;
           position: absolute;
+          transition: ease .3s;
           &:nth-child(1) {
             top: 0;
           }
@@ -163,6 +178,24 @@
   &__img {
     vertical-align: bottom;
   }
+}
+.l-header__nav.active {
+  transform: translateX(0);
+}
+
+.l-header__nav__toggle.active span:nth-child(1) {
+  top: 0.1rem;
+  transform: rotate(45deg);
+}
+
+.l-header__nav__toggle.active span:nth-child(2) {
+  opacity: 0;
+
+}
+
+.l-header__nav__toggle.active span:nth-child(3) {
+  top: 0.1rem;
+  transform: rotate(-45deg);
 }
 .l-icon__reading {
   width: 18px;
