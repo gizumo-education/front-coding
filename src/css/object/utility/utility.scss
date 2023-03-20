@@ -33,11 +33,12 @@
   position: relative;
 }
 
-.u-overflow-y-tab-pc--visible {
+.u-scroll-lock {
+  overflow: hidden;
   @include mix.pc {
-    overflow-y: visible !important;
+    overflow: visible;
   }
   @include mix.tab {
-    overflow-y: visible !important;
+    overflow: visible;
   }
 }

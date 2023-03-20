@@ -10,11 +10,10 @@ $(function () {
     $('.l-header__nav__list--sp').toggleClass('js-active');
 
     // スクロールロックのトグル処理
-    if ($('body').css('overflow-y') === 'visible') {
-      $('body').css('overflow-y', 'hidden');
-    } else {
-      $('body').css('overflow-y', 'visible');
-    }
+    $('body').toggleClass('u-scroll-lock');
+    $('body').on('touchmove', function (e) {
+      e.preventDefault();
+    });
 
     //
   });
