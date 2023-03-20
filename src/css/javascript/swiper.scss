@@ -11,7 +11,7 @@ html {
     --swiper-navigation-sides-offset: 0.15rem !important;
   }
   @include vm.sp {
-    --swiper-navigation-size: 0.3rem !important;
+    --swiper-navigation-size: 0.2rem !important;
     --swiper-navigation-top-offset: 2.85rem !important;
     --swiper-navigation-sides-offset: 0.15rem !important;
   }
@@ -24,55 +24,58 @@ html {
     opacity: 0.7;
     width: 60px;
     height: 60px;
+    padding-right: 3.5px;
     @include vm.tab {
       width: 0.6rem;
       height: 0.6rem;
+      padding-right: 0.035rem;
     }
     @include vm.sp {
       width: 0.42rem;
       height: 0.42rem;
+      padding-right: 0.035rem;
     }
   }
 
-  &-button-prev::after {
-    content: '';
-  }
+  // &-button-prev::after {
+  //   content: '';
+  // }
 
-  &-button-prev > span {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 0.7px;
-    background: vm.$black;
-    @include vm.tab {
-      width: 0.2rem;
-      height: 0.007rem;
-    }
-    @include vm.sp {
-      width: 0.2rem;
-      height: 0.007rem;
-    }
-  }
+  // &-button-prev > span {
+  //   content: '';
+  //   position: absolute;
+  //   width: 20px;
+  //   height: 0.7px;
+  //   background: vm.$black;
+  //   @include vm.tab {
+  //     width: 0.2rem;
+  //     height: 0.007rem;
+  //   }
+  //   @include vm.sp {
+  //     width: 0.2rem;
+  //     height: 0.007rem;
+  //   }
+  // }
 
-  &-button-prev > span:first-child {
-    transform: translateY(-7px) rotate(-45deg);
-    @include vm.tab {
-      transform: translateY(-0.07rem) rotate(-45deg);
-    }
-    @include vm.sp {
-      transform: translateY(-0.07rem) rotate(-45deg);
-    }
-  }
+  // &-button-prev > span:first-child {
+  //   transform: translateY(-7px) rotate(-45deg);
+  //   @include vm.tab {
+  //     transform: translateY(-0.07rem) rotate(-45deg);
+  //   }
+  //   @include vm.sp {
+  //     transform: translateY(-0.07rem) rotate(-45deg);
+  //   }
+  // }
 
-  &-button-prev > span:last-child {
-    transform: translateY(7px) rotate(45deg);
-    @include vm.tab {
-      transform: translateY(0.07rem) rotate(45deg);
-    }
-    @include vm.sp {
-      transform: translateY(0.07rem) rotate(45deg);
-    }
-  }
+  // &-button-prev > span:last-child {
+  //   transform: translateY(7px) rotate(45deg);
+  //   @include vm.tab {
+  //     transform: translateY(0.07rem) rotate(45deg);
+  //   }
+  //   @include vm.sp {
+  //     transform: translateY(0.07rem) rotate(45deg);
+  //   }
+  // }
 
   &-button-next {
     background: vm.$white;
@@ -80,53 +83,56 @@ html {
     opacity: 0.7;
     width: 60px;
     height: 60px;
+    padding-left: 3.5px;
     @include vm.tab {
       width: 0.6rem;
       height: 0.6rem;
+      padding-left: 0.035rem;
     }
     @include vm.sp {
       width: 0.42rem;
       height: 0.42rem;
+      padding-left: 0.035rem;
     }
   }
 
-  &-button-next::after {
-    content: '';
-  }
+  // &-button-next::after {
+  //   content: '';
+  // }
 
-  &-button-next > span {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 0.7px;
-    background: vm.$black;
-    @include vm.tab {
-      width: 0.2rem;
-      height: 0.007rem;
-    }
-    @include vm.sp {
-      width: 0.2rem;
-      height: 0.007rem;
-    }
-  }
+  // &-button-next > span {
+  //   content: '';
+  //   position: absolute;
+  //   width: 20px;
+  //   height: 0.7px;
+  //   background: vm.$black;
+  //   @include vm.tab {
+  //     width: 0.2rem;
+  //     height: 0.007rem;
+  //   }
+  //   @include vm.sp {
+  //     width: 0.2rem;
+  //     height: 0.007rem;
+  //   }
+  // }
 
-  &-button-next > span:first-child {
-    transform: translateY(-7px) rotate(45deg);
-    @include vm.tab {
-      transform: translateY(-0.07rem) rotate(45deg);
-    }
-    @include vm.sp {
-      transform: translateY(-0.07rem) rotate(45deg);
-    }
-  }
+  // &-button-next > span:first-child {
+  //   transform: translateY(-7px) rotate(45deg);
+  //   @include vm.tab {
+  //     transform: translateY(-0.07rem) rotate(45deg);
+  //   }
+  //   @include vm.sp {
+  //     transform: translateY(-0.07rem) rotate(45deg);
+  //   }
+  // }
 
-  &-button-next > span:last-child {
-    transform: translateY(7px) rotate(-45deg);
-    @include vm.tab {
-      transform: translateY(0.07rem) rotate(-45deg);
-    }
-    @include vm.sp {
-      transform: translateY(0.07rem) rotate(-45deg);
-    }
-  }
+  // &-button-next > span:last-child {
+  //   transform: translateY(7px) rotate(-45deg);
+  //   @include vm.tab {
+  //     transform: translateY(0.07rem) rotate(-45deg);
+  //   }
+  //   @include vm.sp {
+  //     transform: translateY(0.07rem) rotate(-45deg);
+  //   }
+  // }
 }
