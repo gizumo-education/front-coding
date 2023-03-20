@@ -1,0 +1,24 @@
+@use '../../object/utility/utility.scss' as vm;
+
+.c-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 0.5rem;
+  height: 0.38rem;
+  margin-left: auto;
+  cursor: pointer;
+
+  @include vm.sp {
+    display: flex;
+  }
+
+  span {
+    display: inline-block;
+    background: vm.$black;
+    line-height: 0;
+    width: 100%;
+    height: 0.06rem;
+    border-radius: 0.08rem;
+  }
+}

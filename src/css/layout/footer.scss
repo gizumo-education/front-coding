@@ -1,40 +1,109 @@
 @use '../object/utility/utility.scss' as vm;
 // footerのスタイルを記述するファイル
 .l-footer {
-  background: #eff6fc;
+  width: 100%;
+  background: vm.$light-blue;
   margin-top: 200px;
+  font-size: 16px;
+
+  @include vm.tab {
+    font-size: 0.16rem;
+    margin-top: 2rem;
+  }
+
+  @include vm.sp {
+    font-size: 0.16rem;
+    margin-top: 1rem;
+  }
 
   &__inner {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 55px 0 25px;
+    padding-top: 55px !important;
+    padding-bottom: 25px !important;
+
+    @include vm.tab {
+      padding-top: 0.55rem !important;
+      padding-bottom: 0.25rem !important;
+    }
+
+    @include vm.sp {
+      flex-direction: column;
+      padding: 0.38rem 0.5rem 0.4rem !important;
+    }
+  }
+
+  &__nav {
+    @include vm.sp {
+      width: 100%;
+    }
+  }
+
+  &__nav__inner {
+    display: flex;
+    gap: 39px;
+    margin-top: 27px;
+
+    @include vm.tab {
+      gap: 0.39rem;
+      margin-top: 0.27rem;
+    }
+
+    @include vm.sp {
+      gap: 0.39rem;
+      font-size: 0.16rem;
+    }
   }
 
   &__nav__list {
     display: flex;
-    width: 359px;
-    flex-wrap: wrap;
-    line-height: 36px;
-    margin-top: 27px;
+    flex-direction: column;
   }
 
   &__nav__list__item {
-    flex-basis: 50%;
-  }
+    line-height: 36px;
 
-  &__nav__list__item > a {
-    color: vm.$black;
+    @include vm.tab {
+      line-height: 0.36rem;
+    }
+    @include vm.sp {
+      line-height: 0.36rem;
+    }
   }
 
   &__img-area {
     display: flex;
     flex-direction: column;
+    flex: 1 1;
     gap: 15px;
+
+    @include vm.sp {
+      width: 100%;
+      gap: 0.15rem;
+      margin-top: 0.22rem;
+    }
+  }
+
+  &__img-area > a {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__img-area img {
+    @include vm.sp {
+      width: 100%;
+    }
   }
 
   &__copyrights-text {
     padding: 11px 0;
     background: vm.$grey;
+
+    @include vm.sp {
+      padding: 0.11rem;
+      font-size: 0.14rem;
+    }
   }
 }

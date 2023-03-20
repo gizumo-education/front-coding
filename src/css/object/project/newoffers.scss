@@ -3,34 +3,105 @@
 .p-new-offers {
   background: vm.$light-blue;
   padding: 65px 0;
+  @include vm.tab {
+    padding: 0.65rem 0;
+  }
+  @include vm.sp {
+    padding: 0.3rem 0 0.6rem;
+  }
 
   &__heading {
     font-size: 25px;
+    @include vm.tab {
+      font-size: 0.25rem;
+    }
+    @include vm.sp {
+      font-size: 0.25rem;
+      text-align: center;
+      font-weight: vm.$bold;
+    }
   }
 
   &__list {
     display: flex;
+    justify-content: center;
     gap: 20px;
     margin-top: 25px;
+    @include vm.tab {
+      gap: 0.2rem;
+      margin-top: 0.25rem;
+    }
+    @include vm.sp {
+      gap: 0.2rem;
+      margin-top: 0.35rem;
+    }
   }
 
   &__list__item {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    @include vm.tab {
+      gap: 0.08rem;
+    }
+    @include vm.sp {
+      gap: 0.08rem;
+    }
+  }
+
+  // slicker導入前暫定処置
+  &__list__item:nth-child(n + 2) {
+    @include vm.sp {
+      display: none;
+    }
   }
 
   &__list__item > a > img {
-    border-radius: 8px;
+    border-radius: 18px;
+    @include vm.tab {
+      border-radius: 0.18rem;
+    }
+    @include vm.sp {
+      width: 100%;
+      border-radius: 0.18rem;
+    }
   }
 
   &__list__item > a > h3 {
+    font-size: 16px;
     line-height: 22px;
     margin-top: 8px;
+    @include vm.tab {
+      font-size: 0.16rem;
+      line-height: 0.22rem;
+      margin-top: 0.08rem;
+    }
+    @include vm.sp {
+      font-size: 0.16rem;
+      line-height: initial;
+      margin-top: 0.1rem;
+      font-weight: vm.$bold;
+    }
+  }
+
+  &__list__item__list {
+    margin-top: 7px;
+    @include vm.tab {
+      margin-top: 0.07rem;
+    }
+    @include vm.sp {
+      margin-top: 0.12rem;
+    }
   }
 
   &__list__item__list > * + * {
     margin-top: 4px;
+    @include vm.tab {
+      margin-top: 0.04rem;
+    }
+    @include vm.sp {
+      margin-top: 0.04rem;
+    }
   }
 
   &__list__item__list__item {
@@ -39,17 +110,41 @@
     line-height: 21px;
     font-size: 14px;
     margin-top: 8px;
-    > span:first-child {
-      width: 60px;
-      text-align: center;
-      background: vm.$new-offers-span;
+    @include vm.tab {
+      gap: 0.1rem;
+      font-size: 0.14rem;
+      line-height: 0.21rem;
+      margin-top: 0.08rem;
     }
-    > span:last-child {
-      line-height: 17px;
+    @include vm.sp {
+      font-size: 0.14rem;
+      gap: 0.2rem;
+      line-height: 0.21rem;
+      margin-top: 0.08rem;
+    }
+  }
+
+  &__list__item__list__item > span:first-child {
+    width: 60px;
+    text-align: center;
+    background: vm.$new-offers-span;
+
+    @include vm.tab {
+      width: 0.6rem;
+    }
+
+    @include vm.sp {
+      width: 0.6rem;
     }
   }
 
   &__button-wrapper {
     margin-top: 60px;
+    @include vm.tab {
+      margin-top: 0.6rem;
+    }
+    @include vm.sp {
+      margin-top: 0.45rem;
+    }
   }
 }

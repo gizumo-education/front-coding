@@ -9,19 +9,40 @@
     display: flex;
     gap: 20px;
     margin-top: 50px;
+    @include vm.tab {
+      gap: 0.2rem;
+      margin-top: 0.5rem;
+    }
+    @include vm.sp {
+      flex-direction: column;
+      gap: 0.18rem;
+      margin-top: 0.3rem;
+    }
   }
 
   &__list__item {
+    width: 100%;
     flex: 1 1;
   }
 
   &__list__item > a {
-    width: 380px;
+    width: inherit;
     height: 240px;
     color: vm.$white;
     text-align: center;
-    padding: 71px 40px 51px;
     position: relative;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include vm.tab {
+      padding: 0 0.4rem;
+      height: 2.4rem;
+    }
+    @include vm.sp {
+      padding: 0 0.4rem;
+      height: 2.4rem;
+    }
   }
 
   &__list__item > a::before {
@@ -37,6 +58,12 @@
     background-position: center;
     background-repeat: no-repeat;
     filter: brightness(50%);
+    @include vm.tab {
+      border-radius: 0.08rem;
+    }
+    @include vm.sp {
+      border-radius: 0.08rem;
+    }
   }
 
   &__list__item:nth-of-type(2) > a::before {
@@ -47,15 +74,39 @@
     @include vm.heading-lv3;
     line-height: 24px;
     position: relative;
+    @include vm.tab {
+      line-height: 0.24rem;
+    }
+    @include vm.sp {
+      line-height: 0.24rem;
+    }
   }
 
-  &__list__item > a > p {
+  &__list__item > a > span {
+    display: inline-block;
+    font-size: 16px;
     line-height: 23px;
     margin-top: 45px;
     position: relative;
+    @include vm.tab {
+      font-size: 0.16rem;
+      line-height: 0.23rem;
+      margin-top: 0.45rem;
+    }
+    @include vm.sp {
+      font-size: 0.14rem;
+      line-height: 0.23rem;
+      margin-top: 0.45rem;
+    }
   }
 
   &__button-wrapper {
     margin-top: 80px;
+    @include vm.tab {
+      margin-top: 0.8rem;
+    }
+    @include vm.sp {
+      margin-top: 0.35rem;
+    }
   }
 }

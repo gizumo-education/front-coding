@@ -6,6 +6,14 @@
   height: 300px;
   position: relative;
 
+  @include vm.tab {
+    height: 3rem;
+  }
+
+  @include vm.sp {
+    height: 0.75rem;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -22,7 +30,17 @@
     width: fit-content;
     margin: auto;
     text-align: center;
-    line-height: 46.5px; // fixします
+    line-height: 47px; // fixします
     position: relative;
+
+    @include vm.tab {
+      line-height: 0.47rem;
+    }
+
+    @include vm.sp {
+      font-size: 0.14rem;
+      font-weight: vm.$regular;
+      line-height: 0.2rem;
+    }
   }
 }

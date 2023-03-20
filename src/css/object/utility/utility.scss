@@ -1,12 +1,29 @@
+@use '../../foundation/_mixins.scss' as mix;
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
 
 .u-mt-medium {
   margin-top: 60px !important;
+
+  @include mix.tab {
+    margin-top: 0.6rem !important;
+  }
+
+  @include mix.sp {
+    margin-top: 0.25rem !important;
+  }
 }
 
 .u-mt-large {
   margin-top: 105px !important;
+
+  @include mix.tab {
+    margin-top: 1.05rem !important;
+  }
+  
+  @include mix.sp {
+    margin-top: 0.6rem !important;
+  }
 }
 
 .u-text-center {

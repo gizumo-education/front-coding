@@ -9,7 +9,8 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 10px;
+  font-feature-settings: 'palt'; // sp用。footer-navの改行対策。
 }
 
 body {

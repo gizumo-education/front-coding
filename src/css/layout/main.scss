@@ -1,3 +1,13 @@
+@use '../object/utility/utility.scss' as vm;
+
 .l-main {
   padding-top: 100px;
+
+  @include vm.tab {
+    padding-top: 1rem;
+  }
+
+  @include vm.sp {
+    padding-top: 0.7rem;
+  }
 }

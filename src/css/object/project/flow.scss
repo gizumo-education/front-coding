@@ -1,6 +1,13 @@
 @use '../../object/utility/utility.scss' as vm;
 
 .p-flow {
+  @include vm.tab {
+  }
+
+  @include vm.sp {
+    padding: 0 0.6rem;
+  }
+
   &__heading {
     @include vm.heading-lv2;
   }
@@ -9,18 +16,34 @@
     display: flex;
     gap: 22px;
     margin-top: 51px;
+    @include vm.tab {
+      gap: 0.22rem;
+      margin-top: 0.51rem;
+    }
+    @include vm.sp {
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-top: 0.35rem;
+    }
   }
 
   &__list__item {
-    flex: 1 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // gap: 19px;
-    // padding: 9px 20px 41px 9px;
     border: 2px solid vm.$pink;
     border-radius: 8px;
     position: relative;
+    padding: 9px 20px 40px 9px;
+    @include vm.tab {
+      width: 2.77rem;
+      border-radius: 0.08rem;
+      padding: 0.09rem 0.2rem 0.4rem 0.09rem;
+    }
+    @include vm.sp {
+      border-radius: 0.08rem;
+      padding: 0.09rem 0.2rem 0.4rem 0.09rem;
+    }
   }
 
   &__list__item::after {
@@ -34,6 +57,20 @@
     top: 50%;
     right: -24px;
     transform: translateY(-50%);
+
+    @include vm.tab {
+      border-width: 0.22rem 0 0.22rem 0.22rem;
+      right: -0.24rem;
+    }
+
+    @include vm.sp {
+      border-style: solid;
+      border-width: 0.2rem 0.2rem 0 0.2rem;
+      border-color: #de557a transparent transparent transparent;
+      top: 101%;
+      right: 50%;
+      transform: translate(50%, 50%);
+    }
   }
 
   &__list__item:last-child:after {
@@ -42,40 +79,102 @@
 
   &__list__item > img {
     align-self: flex-start;
-    padding-top: 9px;
-    padding-left: 9px;
   }
 
   &__list__item > h3 {
     font-size: 24px;
     font-weight: vm.$bold;
     line-height: 30px;
+    padding: 0 11px;
     text-align: center;
+    @include vm.tab {
+      font-size: 0.24rem;
+      line-height: 0.3rem;
+      padding: 0 0.11rem;
+    }
+    @include vm.sp {
+      font-size: 0.2rem;
+      line-height: initial;
+      margin-top: 0.22rem !important;
+      padding: 0;
+    }
   }
 
   &__list__item:first-child > h3 {
     margin-top: 20px;
+    @include vm.tab {
+      margin-top: 0.2rem;
+    }
+    @include vm.sp {
+      margin-top: 0.2rem;
+    }
   }
 
   &__list__item:nth-child(2) > h3 {
     margin-top: 40px;
+    @include vm.tab {
+      margin-top: 0.4rem;
+    }
+    @include vm.sp {
+      margin-top: 0.4rem;
+    }
   }
+
   &__list__item:nth-child(n + 3) > h3 {
     margin-top: 33px;
     line-height: 35px;
+    @include vm.tab {
+      margin-top: 0.33rem;
+      line-height: 0.35rem;
+    }
+    @include vm.sp {
+      margin-top: 0.33rem;
+      line-height: 0.35rem;
+    }
   }
 
   &__list__item:nth-child(4) > h3 {
     margin-top: 22px;
+    @include vm.tab {
+      margin-top: 0.22rem;
+    }
+    @include vm.sp {
+      margin-top: 0.22rem;
+    }
+  }
+
+  &__list__item > h3 > br {
+    @include vm.sp {
+      display: none;
+    }
   }
 
   &__list__item > p {
+    font-size: 14px;
     line-height: 20px;
     margin-top: 18px;
-    padding: 0px 20px 41px;
+    padding: 0 11px;
+    @include vm.tab {
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+      margin-top: 0.1rem !important;
+      padding: 0 0.11rem;
+    }
+    @include vm.sp {
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+      margin-top: 0.1rem !important;
+      padding: 0 0.11rem;
+    }
   }
 
   &__list__item:nth-child(n + 3) > p {
     margin-top: 30px;
+    @include vm.tab {
+      margin-top: 0.3rem;
+    }
+    @include vm.sp {
+      margin-top: 0.3rem;
+    }
   }
 }
