@@ -25,6 +25,7 @@
     @include utility.sp {
       text-align: center;
       font-weight: bold;
+      font-size: 0.25rem;
     }
   }
 
@@ -74,6 +75,11 @@
         border-left: 0.08rem solid transparent;
         border-right: 0.08rem solid transparent;
       }
+      @include utility.sp {
+        right: 0.1rem;
+        border-left: 0.08rem solid transparent;
+        border-right: 0.08rem solid transparent;
+      }
     }
   }
 
@@ -104,6 +110,7 @@
 
     &__heading {
       @include utility.sp {
+        font-size: 0.16rem;
         font-weight: bold;
         line-height: 0.22rem;
       }
@@ -129,16 +136,29 @@
       @include utility.tab {
         width: 2.8rem;
       }
+      @include utility.sp {
+        width: 3.58rem;
+      }
     }
     dl dt {
       width: 60px;
+      height: 21px;
       background-color: utility.$baby-pink;
       margin-top: 4px;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       @include utility.tab {
         width: 0.6rem;
+        height: 0.21rem;
         margin-top: 0.04rem;
+      }
+      @include utility.sp {
+        width: 0.6rem;
+        height: 0.21rem;
+        margin-top: 0.04rem;
+        font-size: 0.14rem;
       }
 
       &:first-child {
@@ -152,6 +172,11 @@
       @include utility.tab {
         width: 2.1rem;
         margin-left: 0.1rem;
+      }
+      @include utility.sp {
+        width: 2.77rem;
+        margin-left: 0.21rem;
+        font-size: 0.14rem;
       }
     }
   }

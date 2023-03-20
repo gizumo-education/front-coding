@@ -54,6 +54,10 @@
         margin-top: 0.27rem;
         margin-left: 0.39rem;
       }
+      @include utility.sp {
+        margin-top: 0.27rem;
+        margin-left: 0.39rem;
+      }
 
       &:first-child {
         margin-left: 0;
@@ -73,6 +77,9 @@
         @include utility.tab {
           line-height: 0.36rem;
         }
+        @include utility.sp {
+          line-height: 0.36rem;
+        }
       }
 
     }
@@ -82,8 +89,6 @@
     &__item {
       @include utility.sp {
         text-align: center;
-      }
-      @include utility.sp {
         margin-top: 0.22rem;
       }
 
@@ -91,6 +96,9 @@
         margin-top: 15px;
 
         @include utility.tab {
+          margin-top: 0.15rem;
+        }
+        @include utility.sp {
           margin-top: 0.15rem;
         }
       }
@@ -111,6 +119,9 @@
         line-height: 35px;
 
         @include utility.tab {
+          line-height: 0.35rem;
+        }
+        @include utility.sp {
           line-height: 0.35rem;
         }
       }
