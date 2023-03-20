@@ -68,5 +68,9 @@
       margin-top: 0.36rem;
       line-height: 0.2rem;
     }
+    @include utility.sp {
+      margin-top: 0.3rem;
+      line-height: 0.17rem;
+    }
   }
 }
