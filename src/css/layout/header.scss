@@ -142,4 +142,31 @@
   &__nav__list--button__item > a > svg {
     vertical-align: text-bottom;
   }
+
+  &__nav__list--sp {
+    width: 100%;
+    height: calc(100% - 0.7rem);
+    opacity: 0.7;
+    font-size: 0.22rem;
+    background: vm.$black;
+    font-weight: vm.$bold;
+    padding: 0.57rem 0.6rem;
+    transition: 0.3s;
+    position: fixed;
+    top: 0.7rem;
+    right: -100%;
+  }
+
+  &__nav__list--sp > li + li {
+    margin-top: 0.38rem;
+  }
+
+  &__nav__list--sp.js-active {
+    right: 0%;
+  }
+
+  &__nav__list--sp > li > a {
+    color: vm.$white;
+    line-height: 0.22rem;
+  }
 }
