@@ -200,7 +200,7 @@
   &--bottom {
     margin-top: 150px;
 
-    @include vm.sp {
+    @include vm.tab {
       margin-top: 1.5rem;
     }
 
