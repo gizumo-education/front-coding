@@ -93,41 +93,38 @@
     width: 60px;
     height: 21px;
     background: utility.$jobs-pink;
-    margin-top: 6px;
     text-align: center;
     font-size: 14px;
-    line-height: 20px;
     color: utility.$black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include mixins.tab {
       width: 0.6rem;
-      height: 0.21rem;
-      margin-top: 0.06rem;
       font-size: 0.14rem;
-      line-height: 0.2rem;
     }
     @include mixins.sp {
-      margin-top: 0.11rem;
     }
     &__text {
       font-size: 14px;
-      line-height: 32px;
+      height: 21px;
       margin-left: 10px;
       color: utility.$black;
+      display: flex;
+      align-items: center;
       @include mixins.tab {
         font-size: 0.14rem;
-        line-height: 0.32rem;
         margin-left: 0.1rem;
       }
       @include mixins.sp {
         margin-left: 0.21rem;
-        line-height: 0.4rem;
       }
     }
     &__wrapper {
       display: flex;
+      margin-top: 4px;
       @include mixins.sp {
         margin-top: 0.04rem;
-        height: 0.21rem;
       }
     }
   }
