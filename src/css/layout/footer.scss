@@ -4,36 +4,109 @@
 .l-footer {
   margin-top: 200px;
   background-color: utility.$skyblue;
-  padding-top: 55px;
+
+  @include utility.tab {
+    margin-top: 2rem;
+  }
+  @include utility.sp {
+    margin-top: 1rem;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
+    padding-top: 55px;
     padding-bottom: 25px;
+
+    @include utility.tab {
+      padding-top: 0.55rem;
+      padding-bottom: 0.25rem;
+    }
+    @include utility.sp {
+      display: block;
+      padding: 0.38rem 0.4rem 0.4rem 0.4rem;
+    }
   }
 
   &__link {
+    &__inner {
+      @include utility.sp {
+        display: block;
+        margin: 0 auto;
+      }
+    }
     &__top {
       margin-top: 24px;
+
+      @include utility.tab {
+        margin-top: 0.24rem;
+      }
+      @include utility.sp {
+        margin-top: 0;
+      }
     }
+
     &__nav {
       margin-top: 27px;
       margin-left: 39px;
+
+      @include utility.tab {
+        margin-top: 0.27rem;
+        margin-left: 0.39rem;
+      }
+      @include utility.sp {
+        margin-top: 0.27rem;
+        margin-left: 0.39rem;
+      }
+
       &:first-child {
         margin-left: 0;
       }
+
       &__inner {
         display: flex;
+
+        @include utility.sp {
+          margin: 0 auto;
+        }
       }
+
       &__item {
         line-height: 36px;
+
+        @include utility.tab {
+          line-height: 0.36rem;
+        }
+        @include utility.sp {
+          line-height: 0.36rem;
+        }
       }
+
     }
   }
 
   &__banner {
     &__item {
+      @include utility.sp {
+        text-align: center;
+        margin-top: 0.22rem;
+      }
+
       &:last-child{
         margin-top: 15px;
+
+        @include utility.tab {
+          margin-top: 0.15rem;
+        }
+        @include utility.sp {
+          margin-top: 0.15rem;
+        }
+      }
+
+      & img {
+        @include utility.sp {
+          width: 3.2rem;
+        }
       }
     }
   }
@@ -44,6 +117,13 @@
       &__text {
         text-align: center;
         line-height: 35px;
+
+        @include utility.tab {
+          line-height: 0.35rem;
+        }
+        @include utility.sp {
+          line-height: 0.35rem;
+        }
       }
   }
 }

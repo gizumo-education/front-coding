@@ -10,6 +10,15 @@
   border: none;
   cursor: pointer;
 
+  @include utility.tab {
+    border-radius: 0.5rem;
+    font-size: 0.18rem;
+  }
+  @include utility.sp {
+    border-radius: 0.5rem;
+    font-size: 0.18rem;
+  }
+
   & > a {
     color: utility.$white;
     display: block;

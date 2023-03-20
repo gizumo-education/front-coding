@@ -4,14 +4,30 @@
 .p-flow {
   margin-top: 105px;
 
+  @include utility.tab {
+    margin-top: 1.05rem;
+  }
+  @include utility.sp {
+    margin-top: 0.6rem;
+  }
+
   &__heading {
     text-align: center;
   }
+
   &__inner {
     margin-top: 51px;
     display: flex;
     width: 100%;
     height: auto;
+
+    @include utility.tab {
+      margin-top: 0.51rem;
+    }
+    @include utility.sp {
+      display: block;
+      margin-top: 0.35rem;
+    }
   }
 
   &__item {
@@ -22,33 +38,83 @@
     padding: 60px 19px 41px 22px;
     position: relative;
 
+    @include utility.tab {
+      border-radius: 0.15rem;
+      padding: 0.6rem 0.19rem 0.41rem 0.22rem;
+    }
+    @include utility.sp {
+      width: 2.8rem;
+      padding: 0.54rem 0 0.21rem 0;
+    }
+
     &__number {
       position: absolute;
-      left: 9px;
-      bottom: 286px;
+      width: 60px;
+      top: 0;
+      left: 0;
+      margin: 9px;
+
+      @include utility.tab {
+        width: 0.6rem;
+        margin: 0.09rem;
+      }
+      @include utility.sp {
+        width: 0.45rem;
+      }
     }
 
     &__icon {
       text-align: center;
       height: 100px;
+      margin: 0 auto;
+
+      @include utility.tab {
+        width: 1rem;
+        height: auto;
+      }
+      @include utility.sp {
+        width: 0.75rem;
+        height: auto;
+      }
     }
 
     &__arrow {
       position: relative;
       margin-left: 20px;
 
+      @include utility.tab {
+        margin-left: 0.2rem;
+      }
+      @include utility.sp {
+        margin: 0.41rem auto 0 auto;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
       &::after {
-        border: 20px solid transparent;
+        border: 0.2rem solid transparent;
         border-left-color: utility.$pink;
         content: "";
         position: absolute;
         top: 50%;
         left: 100%;
         transform: translate( -0%, -50%);
+
+        @include utility.sp {
+          border: 0.2rem solid transparent;
+          border-top-color: utility.$pink;
+          top: 100%;
+          left: 50%;
+          margin: 0.1rem 0;
+          transform: translate( -50%, -0%);
+        }
       }
 
       &:first-child {
         margin-left: 0;
+        margin: 0 auto;
       }
       &:last-child::after {
         display: none;
@@ -58,16 +124,38 @@
 
   &__subtitle {
     margin-top: 20px;
-    line-height: 30px;
+    line-height: 35px;
     text-align: center;
     display:flex;
     align-items: center;
     justify-content: center;
     height:60px;
+
+    @include utility.tab {
+      margin-top: 0.2rem;
+      line-height: 0.35rem;
+      height:0.6rem;
+    }
+
+    @include utility.sp {
+      line-height: 0.29rem;
+      height: auto;
+    }
   }
 
   &__text {
     margin-top: 18px;
     line-height: 20px;
+
+    @include utility.tab {
+      margin-top: 0.18rem;
+      line-height: 0.2rem;
+    }
+    @include utility.sp {
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+      width: 2.4rem;
+      margin: 0.1rem auto 0 auto;
+    }
   }
 }

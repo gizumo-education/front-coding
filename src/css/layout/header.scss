@@ -8,7 +8,14 @@
     width: 100%;
     height: 100px;
     background-color: utility.$white;
-    z-index: 100;
+    z-index: 50;
+
+    @include utility.tab {
+      height: 1rem;
+    }
+    @include utility.sp {
+      height: 0.7rem;
+    }
 
 
   &__nav {
@@ -17,6 +24,16 @@
     align-items: center;
     justify-content: flex-end;
     margin-right: 100px;
+
+    @include utility.tab {
+      padding-top: 0.25rem;
+      margin-right: 0;
+      justify-content: center;
+
+    }
+    @include utility.sp {
+      display: none;
+    }
   }
 
   &__list {
@@ -24,10 +41,20 @@
     align-items: center;
     font-size: 16px;
 
+    @include utility.tab {
+      font-size: 0.16rem;
+    }
+
     &__item {
       margin-left: 20px;
       padding-left: 20px;
       border-left: 1px solid utility.$black;
+
+      @include utility.tab {
+        margin-left: 0.2rem;
+        padding-left: 0.2rem;
+        border-left: 0.01rem solid utility.$black;
+      }
 
       &:first-child {
         margin-left: 0;
@@ -43,6 +70,10 @@
     font-size: 16px;
     color: utility.$white;
     margin-left: 25px;
+
+    @include utility.tab {
+      margin-left: 0.25rem;
+    }
 
     &__inner {
       display: flex;
@@ -60,9 +91,21 @@
       width: 140px;
       color: utility.$white;
 
+      @include utility.tab {
+        font-size: 0.14rem;
+        padding: 0.16rem 0rem;
+        border-radius: 0.1rem;
+        margin-left: 0.15rem;
+        width: 1.4rem;
+      }
+
       &:first-child{
         width: 160px;
         margin-left: 0;
+
+        @include utility.tab {
+          width: 1.6rem;
+        }
       }
 
       & > a{
@@ -72,7 +115,103 @@
       &__img {
         margin-right: 10px;
         vertical-align: text-bottom;
+
+        @include utility.tab {
+          margin-right: 0.1rem;
+        }
       }
     }
   }
 }
+
+
+// ハンバーガーボタン
+.l-header__hamburger {
+  display: none;
+
+  @include utility.sp {
+    position: fixed;
+    right: 0.1rem;
+    top: 0.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 0.5rem;
+    background-color: transparent;
+    color: #000;
+  }
+
+    & span {
+      display: block;
+      position: relative;
+      top: 0;
+      margin: 0 auto;
+      width: 0.5rem;
+      height: 0.06rem;
+      background-color: #000;
+      background-color: utility.$black;
+      border-radius: 0.05rem;
+    }
+
+    & span::before,
+    & span::after{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 0.5rem;
+      height: 0.06rem;
+      background-color: inherit;
+      border-radius: 0.05rem;
+    }
+
+    & span::before{
+      top: -0.15rem;
+    }
+
+    & span::after{
+      top: 0.15rem;
+    }
+  }
+
+
+  // ハンバーガーメニュー
+
+  .l-header__hamburger {
+    &__nav {
+      display: none;
+    }
+  }
+
+  @include utility.sp {
+    .l-header__hamburger {
+      &__nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5.54rem;
+        margin-top: 0.7rem;
+        background-color: utility.$black;
+        opacity: 0.7;
+      }
+
+      &__list {
+        padding: 0.57rem 0.6rem;
+
+        & a {
+          color: #fff;
+        }
+      }
+
+      &__item {
+        margin-top: 0.38rem;
+        font-size: 0.22rem;
+        font-weight: bold;
+      }
+    }
+  }
+

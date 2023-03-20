@@ -6,7 +6,7 @@
     background-image: url(../img/picture/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 100%;
+    width: 100vw;
     padding: 104px 0;
     position: relative;
     display: flex;
@@ -14,6 +14,14 @@
     align-items: center;
     position: relative;
     z-index: 1;
+
+    @include utility.tab {
+      padding: 1.04rem 0;
+    }
+    @include utility.sp {
+      padding: 0.16rem 0;
+    }
+
     &::after{
       content: "";
       position: absolute;
@@ -33,10 +41,24 @@
     color: utility.$white;
     position: relative;
     z-index: 3;
+
+    @include utility.sp {
+      font-size: 0.14rem;
+      font-weight: normal;
+      line-height: 0.2rem;
+    }
+
     & > span {
       display: block;
       &:last-child{
         margin-top: 21px;
+
+        @include utility.tab {
+          margin-top: 0.21rem;
+        }
+        @include utility.sp {
+          margin-top: 0.02rem;
+        }
       }
     }
   }
