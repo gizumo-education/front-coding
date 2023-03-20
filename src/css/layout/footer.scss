@@ -23,7 +23,8 @@
       }
       @include mixins.sp {
         padding-top: 0.38rem;
-        height: 4.43rem;
+        padding-bottom: 0.38rem;
+        height: auto;
         display: block;
       }
     }
@@ -68,7 +69,7 @@
           margin-top: 0.27rem;
         }
         @include mixins.sp {
-          display: flex;
+          margin-left: 0.3rem;
         }
       }
       &__dox1 {
@@ -80,7 +81,7 @@
           line-height: 0.36rem;
         }
         @include mixins.sp {
-          margin-left: 0.35rem;
+          width: 1.5rem;
         }
         &__text {
           display: block;
