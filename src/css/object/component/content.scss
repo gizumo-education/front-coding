@@ -1,18 +1,35 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/mixins.scss';
 .c-content {
   &__wrapper {
     padding-top: 106px;
+    @include mixins.tab {
+      padding-top: 1.06rem;
+    }
+    @include mixins.sp {
+      padding-top: 0.61rem;
+    }
   }
   &__title {
     font-weight: 700;
     font-size: 25px;
     text-align: center;
+    @include mixins.tab {
+      font-size: 0.25rem;
+    }
   }
   &__img {
     &__wrapper {
       display: flex;
       margin-top: 50px;
       justify-content: center;
+      @include mixins.tab {
+        margin-top: 0.5rem;
+      }
+      @include mixins.sp {
+        display: block;
+        margin-top: 0.17rem;
+      }
     }
     &__manual {
       width: 380px;
@@ -21,12 +38,27 @@
       position: relative;
       margin-left: 20px;
       transition: 0.3s;
+      @include mixins.tab {
+        width: 3.8rem;
+        border-radius: 0.1rem;
+        margin-left: 0.2rem;
+      }
+      @include mixins.sp {
+        background-size: cover;
+        width: 3.6rem;
+        height: 2.3rem;
+        margin-top: 0.3rem;
+        margin-left: 0.05rem;
+      }
       &:hover {
         opacity: 0.8;
         transition: 0.3s;
       }
       &:first-child {
         margin-left: 0;
+        @include mixins.sp {
+          margin-left: 0.05rem;
+        }
       }
       &::before {
         content: "";
@@ -39,6 +71,17 @@
         bottom: 0;
         height: 240px;
         border-radius: 10px;
+        @include mixins.tab {
+          height: 2.4rem;
+          border-radius: 0.1rem;
+        }
+        @include mixins.sp {
+          left: 0rem;
+          right: 0rem;
+          top: 0rem;
+          bottom: 1rem;
+          height: 2.3rem;
+        }
       }
     }
     &__title {
@@ -49,6 +92,18 @@
       color: utility.$white;
       top: 71px;
       left: 107.56px;
+      @include mixins.tab {
+        font-size: 0.24rem;
+        line-height: 0.24rem;
+        top: 0.71rem;
+        left: 1.07rem;
+      }
+      @include mixins.sp {
+        font-size: 0.21rem;
+        line-height: 0.21rem;
+        top: 0.59rem;
+        left: 1.07rem;
+      }
     }
     &__text {
       position: absolute;
@@ -60,6 +115,20 @@
       top: 139px;
       left: 60px;
       right: 64px;
+      @include mixins.tab {
+        font-size: 0.16rem;
+        line-height: 0.23rem;
+        top: 1.39rem;
+        left: 0.6rem;
+        right: 0.64rem;
+      }
+      @include mixins.sp {
+        font-size: 0.14rem;
+        line-height: 0.2rem;
+        top: 1.3rem;
+        left: 0.7rem;
+        right: 0.64rem;
+      }
     }
     &__trivia {
       width: 380px;
@@ -69,6 +138,19 @@
       margin-left: 20px;
       position: relative;
       transition: 0.3s;
+      @include mixins.tab {
+        width: 3.8rem;
+        height: 2.4rem;
+        border-radius: 0.1rem;
+        margin-left: 0.2rem;
+      }
+      @include mixins.sp {
+        background-size: cover;
+        width: 3.6rem;
+        height: 2.3rem;
+        top: 0.15rem;
+        margin-left: 0.05rem;
+      }
       &:hover {
         opacity: 0.8;
         transition: 0.3s;
@@ -81,6 +163,18 @@
         color: utility.$white;
         top: 71px;
         left: 70px;
+        @include mixins.tab {
+          font-size: 0.24rem;
+          line-height: 0.24rem;
+          top: 0.71rem;
+          left: 0.7rem;
+        }
+        @include mixins.sp {
+          font-size: 0.21rem;
+          line-height: 0.21rem;
+          top: 0.71rem;
+          left: 0.7rem;
+        }
       }
       &__text {
         position: absolute;
@@ -92,6 +186,20 @@
         top: 139px;
         left: 42.2px;
         right: 49.8px;
+        @include mixins.tab {
+          font-size: 0.16rem;
+          line-height: 0.23rem;
+          top: 1.39rem;
+          left: 0.42rem;
+          right: 0.49rem;
+        }
+        @include mixins.sp {
+          font-size: 0.14rem;
+          line-height: 0.2rem;
+          top: 1.39rem;
+          left: 0.42rem;
+          right: 0.49rem;
+        }
       }
       &::before {
         content: "";
@@ -104,6 +212,17 @@
         bottom: 0;
         height: 240px;
         border-radius: 10px;
+        @include mixins.tab {
+          height: 2.4rem;
+          border-radius: 0.1rem;
+        }
+        @include mixins.sp {
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          height: 2.3rem;
+        }
       }
     }
   }

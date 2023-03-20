@@ -1,12 +1,22 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/mixins.scss';
 .c-change {
   &__wrapper {
     padding-top: 105px;
+    @include mixins.tab {
+      padding-top: 1.05rem;
+    }
+    @include mixins.sp {
+      padding-top: 0.6rem;
+    }
   }
   &__title {
     font-size: 25px;
     text-align: center;
     font-weight: 700;
+    @include mixins.tab {
+      font-size: 0.25rem;
+    }
   }
   &__innerdox {
     width: 277.73px;
@@ -15,12 +25,38 @@
     border: 2.268px solid utility.$pink;
     margin-left: 22.27px;
     position: relative;
+    @include mixins.tab {
+      width: 2.77rem;
+      height: 3.57rem;
+      border-radius: 0.1rem;
+      border: 0.02rem solid utility.$pink;
+      margin-left: 0.22rem;
+    }
+    @include mixins.sp {
+      width: 2.77rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0.41rem;
+      height: 2.9rem;
+    }
     &:first-child {
       margin-left: 0;
+      @include mixins.sp {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
     &__step {
       margin-top: 8.87px;
       margin-left: 8.87px;
+      @include mixins.tab {
+        width: 0.6rem;
+        margin-top: 0.08rem;
+        margin-left: 0.08rem;
+      }
+      @include mixins.sp {
+        width: 0.45rem;
+      }
     }
     &__img {
       width: 102.29px;
@@ -28,6 +64,19 @@
       position: absolute;
       top: 58.87px;
       left: 90px;
+      @include mixins.tab {
+        width: 1.02rem;
+        height: 1rem;
+        top: 0.58rem;
+        left: 0.90rem;
+      }
+      @include mixins.sp {
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+        width: 0.76rem;
+        height: 0.75rem;
+      }
     }
     &__title {
       text-align: center;
@@ -38,6 +87,21 @@
       position: absolute;
       left: 25px;
       top: 178px;
+      @include mixins.tab {
+        width: 2.16rem;
+        font-size: 0.24rem;
+        line-height: 0.30rem;
+        left: 0.25rem;
+        top: 1.78rem;
+      }
+      @include mixins.sp {
+        position: absolute;
+        left: 0.03rem;
+        top: 1.5rem;
+        width: 2.7rem;
+        font-size: 0.2rem;
+        line-height: 0.29rem;
+      }
     }
     &__text {
       width: 237px;
@@ -46,11 +110,37 @@
       position: absolute;
       left: 20px;
       top: 256px;
+      @include mixins.tab {
+        width: 2.37rem;
+        font-size: 0.14rem;
+        line-height: 0.20rem;
+        left: 0.20rem;
+        top: 2.56rem;
+      }
+      @include mixins.sp {
+        width: 2.5rem;
+        position: absolute;
+        left: 0.15rem;
+        top: 2rem;
+      }
     }
     &__wrapper {
       display: flex;
       justify-content: center;
       margin-top: 51.13px;
+      @include mixins.tab {
+        margin-top: 0.51rem;
+      }
+      @include mixins.sp {
+        display: block;
+        margin-top: 0.35rem;
+        // margin-left: 0.45rem;
+      }
+    }
+    &__br {
+      @include mixins.sp {
+        display: none;
+      }
     }
   }
   &__icon1 {
@@ -60,6 +150,21 @@
     margin-left: 275px;
     position: absolute;
     bottom: 150px;
+    @include mixins.tab {
+      border-left: 0.2rem solid utility.$red;
+      border-top: 0.2rem solid transparent;
+      border-bottom: 0.2rem solid transparent;
+      margin-left: 2.75rem;
+      bottom: 1.5rem;
+    }
+    @include mixins.sp {
+      border-left: 0.2rem solid transparent;
+      border-right: 0.2rem solid transparent;
+      border-top: 0.2rem solid utility.$red;
+      position: absolute;
+      right: 1.2rem;
+      top: 3rem;
+    }
   }
   &__icon2 {
     border-left: 20px solid utility.$red;
@@ -68,6 +173,23 @@
     margin-left: 275px;
     position: absolute;
     bottom: 150px;
+    @include mixins.tab {
+      border-left: 0.2rem solid utility.$red;
+      border-top: 0.2rem solid transparent;
+      border-bottom: 0.2rem solid transparent;
+      margin-left: 2.75rem;
+      bottom: 1.5rem;
+    }
+    @include mixins.sp {
+      width: 0;
+      height: 0;
+      border-left: 0.2rem solid transparent;
+      border-right: 0.2rem solid transparent;
+      border-top: 0.2rem solid utility.$red;
+      position: absolute;
+      right: 1.2rem;
+      top: 3rem;
+    }
   }
   &__icon3 {
     border-left: 20px solid utility.$red;
@@ -76,5 +198,22 @@
     margin-left: 275px;
     position: absolute;
     bottom: 150px;
+    @include mixins.tab {
+      border-left: 0.2rem solid utility.$red;
+      border-top: 0.2rem solid transparent;
+      border-bottom: 0.2rem solid transparent;
+      margin-left: 2.75rem;
+      bottom: 1.5rem;
+    }
+    @include mixins.sp {
+      width: 0;
+      height: 0;
+      border-left: 0.2rem solid transparent;
+      border-right: 0.2rem solid transparent;
+      border-top: 0.2rem solid utility.$red;
+      position: absolute;
+      right: 1.2rem;
+      top: 3rem;
+    }
   }
 }

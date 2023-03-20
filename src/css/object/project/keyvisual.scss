@@ -1,6 +1,22 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/mixins.scss';
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual__img {
   width: 100%;
   margin-top: 100px;
+  @include mixins.tab {
+    margin-top: 1rem;
+  }
+  @include mixins.sp {
+    display: none;
+  }
+  &__sp {
+    display: none;
+    @include mixins.sp {
+      width: 4rem;
+      display: block;
+      margin-top: 0;
+      padding-top: 0.7rem;
+    }
+  }
 }

@@ -1,15 +1,32 @@
 @use '../object/utility/utility.scss';
+@use '../foundation/mixins.scss';
 // footerのスタイルを記述するファイル
 .l-footer {
   &__inner {
     width: 100%;
     background: utility.$footer-background;
     margin-top: 200px;
+    @include mixins.tab {
+      margin-top: 2rem;
+    }
+    @include mixins.sp {
+      margin-top: 1rem;
+    }
     &__wrapper {
       padding-top: 55px;
       height: 265px;
       display: flex;
-      justify-content: space-evenly
+      justify-content: space-evenly;
+      @include mixins.tab {
+        padding-top: 0.55rem;
+        height: 2.65rem;
+      }
+      @include mixins.sp {
+        padding-top: 0.38rem;
+        padding-bottom: 0.38rem;
+        height: auto;
+        display: block;
+      }
     }
     &__title {
       padding-top: 20px;
@@ -17,6 +34,15 @@
       font-size: 16px;
       line-height: 23px;
       color: utility.$black;
+      @include mixins.tab {
+        padding-top: 0.2rem;
+        font-size: 0.16rem;
+        line-height: 0.23rem;
+      }
+      @include mixins.sp {
+        margin-left: 0.3rem;
+        padding-top: 0;
+      }
     }
     &__last {
       text-align: center;
@@ -24,15 +50,39 @@
       height: 35px;
       padding-top: 11px;
       background: utility.$gray;
+      @include mixins.tab {
+        font-size: 0.14rem;
+        height: 0.35rem;
+        padding-top: 0.11rem;
+      }
+      @include mixins.sp {
+        font-size: 0.16rem;
+        height: 0.35rem;
+        padding-top: 0.1rem;
+      }
     }
     &__access {
       &__wrapper {
         display: flex;
         margin-top: 27px;
+        @include mixins.tab {
+          margin-top: 0.27rem;
+        }
+        @include mixins.sp {
+          margin-left: 0.3rem;
+        }
       }
       &__dox1 {
         font-size: 16px;
         line-height: 36px;
+        @include mixins.tab {
+          width: 0.96rem;
+          font-size: 0.16rem;
+          line-height: 0.36rem;
+        }
+        @include mixins.sp {
+          width: 1.5rem;
+        }
         &__text {
           display: block;
           color: utility.$black;
@@ -44,6 +94,16 @@
         padding-bottom: 28px;
         font-size: 16px;
         line-height: 36px;
+        @include mixins.tab {
+          margin-left: 0.39rem;
+          width: 2.3rem;
+          padding-bottom: 0.28rem;
+          font-size: 0.16rem;
+          line-height: 0.36rem;
+        }
+        @include mixins.sp {
+          width: 1.8rem;
+        }
         &__text {
           display: block;
           color: utility.$black;
@@ -53,9 +113,27 @@
   }
   &__img {
     margin-left: 560px;
+    @include mixins.tab {
+      margin-left: 5.6rem;
+    }
+    @include mixins.sp {
+      margin-top: 0.22rem;
+      margin-left: 0;
+      text-align: center;
+    }
+    &__child {
+      @include mixins.sp {
+        width: 3.2rem;
+      }
+    }
     &__old {
-      display: block;
       margin-top: 15px;
+      @include mixins.tab {
+        margin-top: 0.15rem;
+      }
+      @include mixins.sp {
+        width: 3.2rem;
+      }
     }
   }
 }
