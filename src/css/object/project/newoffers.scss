@@ -23,16 +23,16 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    // display: flex;
+    // justify-content: center;
+    // gap: 20px;
     margin-top: 25px;
     @include vm.tab {
-      gap: 0.2rem;
+      // gap: 0.2rem;
       margin-top: 0.25rem;
     }
     @include vm.sp {
-      gap: 0.2rem;
+      // gap: 0.2rem;
       margin-top: 0.35rem;
     }
   }
@@ -50,11 +50,11 @@
   }
 
   // slicker導入前暫定処置
-  &__list__item:nth-child(n + 2) {
-    @include vm.sp {
-      display: none;
-    }
-  }
+  // &__list__item:nth-child(n + 2) {
+  //   @include vm.sp {
+  //     display: none;
+  //   }
+  // }
 
   &__list__item > a > img {
     border-radius: 18px;
