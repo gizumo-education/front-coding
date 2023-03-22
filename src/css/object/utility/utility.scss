@@ -33,6 +33,14 @@
   position: relative;
 }
 
+.u-anchor {
+  @include mix.sp {
+    display: block;
+    padding-top: 0.7rem;
+    margin-top: -0.7rem;
+  }
+}
+
 .u-scroll-lock {
   overflow: hidden;
   @include mix.pc {
