@@ -24,15 +24,14 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-  // ハンバーガーメニュー系処理
+  // ハンバーガーメニュー系の処理ここから↓
   const hamburger = document.getElementsByClassName('c-hamburger')[0];
 
-  // 開閉処理
+  // 開閉処理の定義
   let isScrollable = true;
   const banScroll = (e) => {
     e.preventDefault();
   };
-
   const toggleHamburger = () => {
     hamburger.classList.toggle('js-active');
     document
@@ -48,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     isScrollable = !isScrollable;
   };
 
-  // スクロールロック系処理
+  // 開閉処理のイベント登録
   hamburger.addEventListener('click', function () {
     toggleHamburger();
   });
@@ -56,8 +55,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // ハンバーガーメニュー内のリンククリック時、ハンバガーメニューを閉じる処理
   const listSpItems = [
     ...document.getElementsByClassName('l-header__nav__list--sp__item'),
-  ]; // HTMLCollectionを配列に変換
+  ]; // 配列に変換
 
+  // イベント登録
   listSpItems.forEach((item) => {
     item.addEventListener('click', function () {
       toggleHamburger();
