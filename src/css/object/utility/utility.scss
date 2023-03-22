@@ -32,21 +32,3 @@
 .u-relative {
   position: relative;
 }
-
-.u-anchor {
-  @include mix.sp {
-    display: block;
-    padding-top: 0.8rem;
-    margin-top: -0.8rem;
-  }
-}
-
-.u-scroll-lock {
-  overflow: hidden;
-  @include mix.pc {
-    overflow: visible;
-  }
-  @include mix.tab {
-    overflow: visible;
-  }
-}
