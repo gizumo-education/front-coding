@@ -1,6 +1,8 @@
 @use '../../object/utility/utility.scss' as vm;
 
 .c-hamburger {
+  border: none;
+  background: none;
   display: none;
   flex-direction: column;
   justify-content: space-between;
