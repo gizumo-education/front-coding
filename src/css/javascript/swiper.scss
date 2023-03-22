@@ -37,46 +37,6 @@ html {
     }
   }
 
-  // &-button-prev::after {
-  //   content: '';
-  // }
-
-  // &-button-prev > span {
-  //   content: '';
-  //   position: absolute;
-  //   width: 20px;
-  //   height: 0.7px;
-  //   background: vm.$black;
-  //   @include vm.tab {
-  //     width: 0.2rem;
-  //     height: 0.007rem;
-  //   }
-  //   @include vm.sp {
-  //     width: 0.2rem;
-  //     height: 0.007rem;
-  //   }
-  // }
-
-  // &-button-prev > span:first-child {
-  //   transform: translateY(-7px) rotate(-45deg);
-  //   @include vm.tab {
-  //     transform: translateY(-0.07rem) rotate(-45deg);
-  //   }
-  //   @include vm.sp {
-  //     transform: translateY(-0.07rem) rotate(-45deg);
-  //   }
-  // }
-
-  // &-button-prev > span:last-child {
-  //   transform: translateY(7px) rotate(45deg);
-  //   @include vm.tab {
-  //     transform: translateY(0.07rem) rotate(45deg);
-  //   }
-  //   @include vm.sp {
-  //     transform: translateY(0.07rem) rotate(45deg);
-  //   }
-  // }
-
   &-button-next {
     background: vm.$white;
     border-radius: 50%;
@@ -95,44 +55,4 @@ html {
       padding-left: 0.035rem;
     }
   }
-
-  // &-button-next::after {
-  //   content: '';
-  // }
-
-  // &-button-next > span {
-  //   content: '';
-  //   position: absolute;
-  //   width: 20px;
-  //   height: 0.7px;
-  //   background: vm.$black;
-  //   @include vm.tab {
-  //     width: 0.2rem;
-  //     height: 0.007rem;
-  //   }
-  //   @include vm.sp {
-  //     width: 0.2rem;
-  //     height: 0.007rem;
-  //   }
-  // }
-
-  // &-button-next > span:first-child {
-  //   transform: translateY(-7px) rotate(45deg);
-  //   @include vm.tab {
-  //     transform: translateY(-0.07rem) rotate(45deg);
-  //   }
-  //   @include vm.sp {
-  //     transform: translateY(-0.07rem) rotate(45deg);
-  //   }
-  // }
-
-  // &-button-next > span:last-child {
-  //   transform: translateY(7px) rotate(-45deg);
-  //   @include vm.tab {
-  //     transform: translateY(0.07rem) rotate(-45deg);
-  //   }
-  //   @include vm.sp {
-  //     transform: translateY(0.07rem) rotate(-45deg);
-  //   }
-  // }
 }
