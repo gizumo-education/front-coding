@@ -157,15 +157,15 @@
     right: -100%;
   }
 
-  &__nav__list--sp > li + li {
-    margin-top: 0.38rem;
-  }
-
   &__nav__list--sp.js-active {
     right: 0%;
   }
 
-  &__nav__list--sp > li > a {
+  &__nav__list--sp__item + &__nav__list--sp__item {
+    margin-top: 0.38rem;
+  }
+
+  &__nav__list--sp__item > a {
     color: vm.$white;
     width: 100%;
     line-height: 0.22rem;
