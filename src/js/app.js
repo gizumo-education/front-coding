@@ -38,9 +38,11 @@ document.addEventListener('DOMContentLoaded', function () {
       .getElementsByClassName('l-header__nav__list--sp')[0]
       .classList.toggle('js-active');
     if (isScrollable) {
+      document.body.style.overflowY = 'hidden';
       document.addEventListener('wheel', banScroll, { passive: false });
       document.addEventListener('touchmove', banScroll, { passive: false });
     } else {
+      document.body.style.overflowY = '';
       document.removeEventListener('wheel', banScroll);
       document.removeEventListener('touchmove', banScroll);
     }
