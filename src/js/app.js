@@ -6,9 +6,9 @@ $(function() {
 
   const ham = $('#js-header__nav__toggle');
   const nav = $('#js-header__nav');
-  ham.on('click', function () { //ハンバーガーメニューをクリックしたら
-    ham.toggleClass('active'); // ハンバーガーメニューにactiveクラスを付け外し
-    nav.toggleClass('active'); // ナビゲーションメニューにactiveクラスを付け外し
+  ham.on('click', function () {
+    ham.toggleClass('active');
+    nav.toggleClass('active');
   });
   
   const header = $('#header');
@@ -26,22 +26,21 @@ $(function() {
   
 $(document).ready(function(){
   $('.c-jobs__detail__wrapper').slick({
-    autoplay: true, //自動再生
-    infinite: true, //スライドのループ有効化
-    // dots: true, //ドットのナビゲーションを表示
-    slidesToShow: 4, //表示するスライドの数
-    slidesToScroll: 1, //スクロールで切り替わるスライドの数
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     responsive: [{
-      breakpoint: 768, //ブレークポイントが768px
+      breakpoint: 1199,
       settings: {
-        slidesToShow: 4, //表示するスライドの数
-        slidesToScroll: 1, //スクロールで切り替わるスライドの数
+        slidesToShow: 4,
+        slidesToScroll: 1,
       }
     }, {
-      breakpoint: 480, //ブレークポイントが480px
+      breakpoint: 768,
       settings: {
-        slidesToShow: 1, //表示するスライドの数
-        slidesToScroll: 1, //スクロールで切り替わるスライドの数
+        slidesToShow: 1,
+        slidesToScroll: 1,
       }
     }]
   });

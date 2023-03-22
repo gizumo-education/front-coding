@@ -131,6 +131,15 @@
 }
 .c-jobs__detail__margin {
   margin-left: 15px;
+  &:first-child {
+    margin-left: 0;
+  }
+  @include mixins.sp {
+    margin-left: 0;
+  }
+}
+.slick-slider {
+  position: relative;
 }
 .slick-arrow {
   background: none;
@@ -150,10 +159,14 @@
   background-color: utility.$white-button;
   border-radius: 50px;
   position: absolute;
-  top: 0;
-  bottom: 120px;
+  top: -35%;
+  bottom: 0;
   margin: auto;
   left: 20px;
+  @include mixins.sp {
+    bottom: 0;
+    top: 10%;
+  }
 }
 .slick-next::before,
 .slick-next::after,
@@ -162,8 +175,8 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: -1px;
+  right: -1px;
   margin: auto;
   content: "";
   vertical-align: middle;
@@ -176,12 +189,9 @@
   border-right: 1px solid utility.$black;
 }
 .slick-next {
-  right: -1110px;
-  @include mixins.tab {
-    right: -920px;
-  }
+  right: -91%;
   @include mixins.sp {
-    right: -280px;
+    right: -80%;
   }
 }
 .slick-next::after {
@@ -189,7 +199,7 @@
   transform: rotate(45deg);
 }
 .slick-prev {
-  left: 15px;
+  left: 0;
 }
 .slick-prev::after {
   left: 4px;
