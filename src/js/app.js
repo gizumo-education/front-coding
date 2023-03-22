@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import Swiper, { Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
