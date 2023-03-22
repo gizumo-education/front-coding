@@ -30,7 +30,7 @@
     width: fit-content;
     margin: auto;
     text-align: center;
-    line-height: 47px; // fixします
+    line-height: 47px;
     position: relative;
 
     @include vm.tab {

@@ -16,7 +16,7 @@
     <title>医療事務求人を探すならギズジョブ</title>
   </head>
   <body>
-    <div class="l-page-wrapper">
+    <div class="l-page-wrapper" id="top">
       <header class="l-header">
         <nav class="l-header__nav">
           <ul class="l-header__nav__list">
@@ -127,17 +127,19 @@
               >
             </li>
           </ul>
-          <ul class="l-header__nav--sp">
-            <li>あああ</li>
-            <li>あああ</li>
-            <li>あああ</li>
+          <ul class="l-header__nav__list--sp is-sp">
+            <li class="l-header__nav__list--sp__item"><a href="#top">トップ</a></li>
+            <li class="l-header__nav__list--sp__item"><a href="#new-offers">新着求人</a></li>
+            <li class="l-header__nav__list--sp__item"><a href="#features">4つの特徴</a></li>
+            <li class="l-header__nav__list--sp__item"><a href="#flow">転職までの流れ</a></li>
+            <li class="l-header__nav__list--sp__item"><a href="#useful">転職お役立ちコンテンツ</a></li>
           </ul>
         </nav>
-        <div class="c-hamburger">
+        <button class="c-hamburger is-sp" aria-label="サイトマップを開く">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </header>
       <main class="l-main">
         <div class="p-key-visual">
@@ -215,11 +217,11 @@
             </form>
           </div>
         </div>
-        <article class="p-new-offers u-mt-medium">
-          <div class="l-inner">
+        <article class="p-new-offers u-mt-medium" id="new-offers">
+          <div class="l-inner swiper">
             <h2 class="p-new-offers__heading">新着求人</h2>
-            <ul class="p-new-offers__list">
-              <li class="p-new-offers__list__item">
+            <ul class="p-new-offers__list swiper-wrapper">
+              <li class="p-new-offers__list__item swiper-slide">
                 <a href="">
                   <img src="./img/picture/offer1.jpg" alt="" />
                   <h3>
@@ -238,7 +240,7 @@
                   </ul>
                 </a>
               </li>
-              <li class="p-new-offers__list__item">
+              <li class="p-new-offers__list__item swiper-slide">
                 <a href="">
                   <img src="./img/picture/offer2.jpg" alt="" />
                   <h3>
@@ -257,7 +259,7 @@
                   </ul>
                 </a>
               </li>
-              <li class="p-new-offers__list__item">
+              <li class="p-new-offers__list__item swiper-slide">
                 <a href="">
                   <img src="./img/picture/offer3.jpg" alt="" />
                   <h3>
@@ -276,7 +278,83 @@
                   </ul>
                 </a>
               </li>
-              <li class="p-new-offers__list__item">
+              <li class="p-new-offers__list__item swiper-slide">
+                <a href="">
+                  <img src="./img/picture/offer4.jpg" alt="" />
+                  <h3>
+                    平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人
+                  </h3>
+                  <ul class="p-new-offers__list__item__list">
+                    <li class="p-new-offers__list__item__list__item">
+                      <span>給与</span><span>月給 148,000円～</span>
+                    </li>
+                    <li class="p-new-offers__list__item__list__item">
+                      <span>所在地</span><span>三重県伊勢市</span>
+                    </li>
+                    <li class="p-new-offers__list__item__list__item">
+                      <span>最寄駅</span><span>伊勢市駅 徒歩15分</span>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="p-new-offers__list__item swiper-slide">
+                <a href="">
+                  <img src="./img/picture/offer1.jpg" alt="" />
+                  <h3>
+                    平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人
+                  </h3>
+                  <ul class="p-new-offers__list__item__list">
+                    <li class="p-new-offers__list__item__list__item">
+                      <span>給与</span><span>月給 148,000円～</span>
+                    </li>
+                    <li class="p-new-offers__list__item__list__item">
+                      <span>所在地</span><span>三重県伊勢市</span>
+                    </li>
+                    <li class="p-new-offers__list__item__list__item">
+                      <span>最寄駅</span><span>伊勢市駅 徒歩15分</span>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="p-new-offers__list__item swiper-slide">
+                <a href="">
+                  <img src="./img/picture/offer2.jpg" alt="" />
+                  <h3>
+                    平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人
+                  </h3>
+                  <ul class="p-new-offers__list__item__list">
+                    <li class="p-new-offers__list__item__list__item">
+                      <span>給与</span><span>月給 148,000円～</span>
+                    </li>
+                    <li class="p-new-offers__list__item__list__item">
+                      <span>所在地</span><span>三重県伊勢市</span>
+                    </li>
+                    <li class="p-new-offers__list__item__list__item">
+                      <span>最寄駅</span><span>伊勢市駅 徒歩15分</span>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="p-new-offers__list__item swiper-slide">
+                <a href="">
+                  <img src="./img/picture/offer3.jpg" alt="" />
+                  <h3>
+                    平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人
+                  </h3>
+                  <ul class="p-new-offers__list__item__list">
+                    <li class="p-new-offers__list__item__list__item">
+                      <span>給与</span><span>月給 148,000円～</span>
+                    </li>
+                    <li class="p-new-offers__list__item__list__item">
+                      <span>所在地</span><span>三重県伊勢市</span>
+                    </li>
+                    <li class="p-new-offers__list__item__list__item">
+                      <span>最寄駅</span><span>伊勢市駅 徒歩15分</span>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="p-new-offers__list__item swiper-slide">
                 <a href="">
                   <img src="./img/picture/offer4.jpg" alt="" />
                   <h3>
@@ -296,6 +374,14 @@
                 </a>
               </li>
             </ul>
+            <div class="swiper-button-prev">
+              <span></span>
+              <span></span>
+            </div>
+            <div class="swiper-button-next">
+              <span></span>
+              <span></span>
+            </div>
             <div class="p-new-offers__button-wrapper u-text-center">
               <a href="" class="c-button--large">新着求人一覧をもっと見る</a>
             </div>
@@ -307,7 +393,7 @@
             ギズジョブは完全無料の求職者向け求人サービスです。
           </h2>
         </article>
-        <article class="p-features l-inner u-mt-large">
+        <article class="p-features l-inner u-mt-large" id="features">
           <h2 class="p-features__heading u-text-center">
             ギズジョブの4つの特徴
           </h2>
@@ -338,7 +424,7 @@
             </li>
           </ul>
         </article>
-        <article class="p-flow l-inner u-mt-large">
+        <article class="p-flow l-inner u-mt-large" id="flow">
           <h2 class="p-flow__heading u-text-center">転職までの流れ</h2>
           <ol class="p-flow__list">
             <li class="p-flow__list__item">
@@ -455,7 +541,7 @@
             </li>
           </ol>
         </article>
-        <article class="p-useful l-inner u-mt-large">
+        <article class="p-useful l-inner u-mt-large" id="useful">
           <h2 class="p-useful__heading u-text-center">
             転職お役立ちコンテンツ
           </h2>
@@ -597,6 +683,5 @@
           © 2022 Gizumo Inc.
         </p>
       </footer>
-    </div>
   </body>
 </html>
