@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const banScroll = (e) => {
     e.preventDefault();
   };
+
   const toggleHamburger = () => {
     hamburger.classList.toggle('js-active');
     document
@@ -40,12 +41,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (isScrollable) {
       document.addEventListener('wheel', banScroll, { passive: false });
       document.addEventListener('touchmove', banScroll, { passive: false });
-      isScrollable = !isScrollable;
     } else {
       document.removeEventListener('wheel', banScroll);
       document.removeEventListener('touchmove', banScroll);
-      isScrollable = !isScrollable;
     }
+    isScrollable = !isScrollable;
   };
 
   // スクロールロック系処理
