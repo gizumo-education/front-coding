@@ -14,6 +14,10 @@ html {
   scroll-behavior: smooth;
 }
 
+:target {
+  scroll-margin-top: 0.7rem;
+}
+
 body {
   font-weight: base.$regular;
   font-family: 'Noto Sans JP', sans-serif;
