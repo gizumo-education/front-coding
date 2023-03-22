@@ -11,6 +11,7 @@
 html {
   font-size: 10px;
   font-feature-settings: 'palt'; // sp用。footer-navの改行対策。
+  scroll-behavior: smooth;
 }
 
 body {
