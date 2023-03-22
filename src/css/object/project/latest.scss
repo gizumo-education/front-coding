@@ -199,3 +199,93 @@
     }
   }
 }
+
+// スリックカルーセルの矢印のためのスタイル
+.slide-arrow {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: utility.$white;
+  opacity: 0.7;
+  border-color: transparent;
+
+  @include utility.tab {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  @include utility.sp {
+    top: 50%;
+    width: 0.42rem;
+    height: 0.42rem;
+  }
+}
+
+.prev-arrow {
+  left: 0;
+  z-index: 10;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    color: utility.$black;
+    line-height: 1;
+    width: 15px;
+    height: 15px;
+    border: 0.70px solid utility.$black;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateX(25%) rotate(-135deg);
+
+    @include utility.tab {
+      width: 0.15rem;
+      height: 0.15rem;
+    }
+    @include utility.sp {
+      width: 0.07rem;
+      height: 0.07rem;
+    }
+  }
+}
+
+.next-arrow {
+  right: 0;
+  margin-right: 15px;
+
+  @include utility.tab {
+    margin-right: 0.15rem;
+  }
+  @include utility.sp {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    color: utility.$black;
+    line-height: 1;
+    line-height: 1;
+    width: 15px;
+    height: 15px;
+    border: 0.70px solid utility.$black;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateX(-25%) rotate(45deg);
+
+    @include utility.tab {
+      width: 0.15rem;
+      height: 0.15rem;
+    }
+    @include utility.sp {
+      width: 0.07rem;
+      height: 0.07rem;
+    }
+  }
+}
+
