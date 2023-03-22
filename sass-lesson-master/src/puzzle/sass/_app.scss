@@ -1,0 +1,100 @@
+@use 'variable';
+
+.wrapper {
+  width: 400px;
+	margin: 0 auto;
+}
+
+@mixin square($color){
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	background-color: $color;
+}
+
+.header {
+	position: relative;
+	height: 100px;
+	background-color:variable.$navy;
+
+	// 白い部分
+	&__box {
+		position: absolute;
+		background-color:variable.$white;
+		right: 20px;
+		top: 20px;
+		padding: 10px;
+
+		// 正方形三つ横並び
+		&__square {
+			@each $color in variable.$classNames {
+				$index_key: index(variable.$classNames,$color);
+				@debug $index_key;
+				&.is-#{$color} {
+					@include square(nth(variable.$buttonColor,$index_key));
+				}
+			}
+
+				&:first-child {
+					margin-left: 0;
+				}
+		}
+	}
+}
+
+
+@mixin rectangle($color){
+	box-sizing: border-box;
+	width: 150px;
+	height: 50px;
+	background-color: $color;
+	padding: 5px solid;
+	border: 5px solid;
+	border-color: variable.$white;
+	margin-top: 10px;
+}
+
+.middle {
+	&__sidebar {
+		width: 150px;
+		height: 250px;
+		background-color:variable.$green;
+		float: left;
+	}
+
+	&__main{
+		position: relative;
+		width: 250px;
+		height: 250px;
+		background-color: variable.$red;
+		float: left;
+
+		// 三つの長方形をまとめる
+		&__frame{
+			position: absolute;
+			right: 60px;
+			top: 40px;
+
+			&__rectangle{
+				@each $color in variable.$classNames {
+					$index_key: index(variable.$classNames,$color);
+					&.is-#{$color} {
+						@include rectangle(nth(variable.$buttonColor,$index_key));
+					}
+				}
+				&:first-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	height: 100px;
+	background-color:variable.$orange;
+	display: block;
+	content: "";
+	clear: both;
+}
