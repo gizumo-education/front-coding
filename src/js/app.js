@@ -11,10 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
   new Swiper('.swiper', {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 27,
     breakpoints: {
       768: {
         slidesPerView: 4,
+        spaceBetween: 20,
       },
     },
     navigation: {
