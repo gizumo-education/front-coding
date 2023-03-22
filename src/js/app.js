@@ -9,7 +9,16 @@ $(function() {
   ham.on('click', function () {
     ham.toggleClass('active');
     nav.toggleClass('active');
+    noScroll();
   });
+
+  function noScroll() {
+    if($(".active").length) {
+      $("body").css('overflow','hidden');
+    } else {
+      $("body").css('overflow','auto');
+    }
+  }
   
   const header = $('#header');
   
