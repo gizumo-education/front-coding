@@ -22,9 +22,9 @@ import 'swiper/css/navigation';
 //   });
 // });
 
-// スライダー実装ここから
 document.addEventListener('DOMContentLoaded', function () {
   console.log('vanilla js called');
+  // スライダー実装
   Swiper.use(Navigation);
   new Swiper('.swiper', {
     loop: true,
