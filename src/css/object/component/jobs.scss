@@ -75,6 +75,7 @@
         line-height: 22px;
         color: utility.$black;
         margin-top: 8.08px;
+        text-align: left;
         @include mixins.tab {
           font-size: 0.16rem;
           line-height: 0.22rem;
