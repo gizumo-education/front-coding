@@ -1,5 +1,80 @@
 import $ from "jquery";
+import 'slick-carousel';
 
 $(function() {
   console.log('環境構築完了');
+
+  const ham = $('#js-header__nav__toggle');
+  const nav = $('#js-header__nav');
+  function active_nav() {
+    nav.removeClass('active');
+  }
+  function active_ham() {
+    ham.removeClass('active');
+  }
+  function active_body() {
+    $('body').removeClass('active');
+  }
+  function resize() {
+    $(window).resize(function() {
+      active_nav();
+      active_ham();
+      active_body();
+    });
+  }
+
+  ham.on('click', function () {
+    ham.toggleClass('active');
+    nav.toggleClass('active');
+    $('body').toggleClass('active');
+  });
+  
+
+  $('.l-header__nav a').on('click',function() {
+    active_nav();
+    active_ham();
+    active_body();
+  });
+
+  ham.on('click', function () {
+    resize();
+  });
+
+  
+  const header = $('#header');
+  
+  $('a[href^="#"]').on('click', function() {
+    const gap = header.outerHeight();
+    const speed = 500;
+    const href = $(this).attr('href');
+    const target = $(href == "#" || href == "" ? "html" : href);
+    const position = target.offset().top - gap;
+
+    $('html, body').animate({ scrollTop: position }, speed, 'swing');
+    return false;
+  });
+  
+  $(document).ready(function(){
+    $('.c-jobs__detail__wrapper').slick({
+      autoplay: true,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      swipe: true,
+      swipeToSlide: true,
+      responsive: [{
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      }, {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
+    });
+  });
 })

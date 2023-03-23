@@ -75,6 +75,7 @@
         line-height: 22px;
         color: utility.$black;
         margin-top: 8.08px;
+        text-align: left;
         @include mixins.tab {
           font-size: 0.16rem;
           line-height: 0.22rem;
@@ -126,6 +127,112 @@
       @include mixins.sp {
         margin-top: 0.04rem;
       }
+    }
+  }
+}
+.c-jobs__detail__margin {
+  margin-left: 15px;
+  &:first-child {
+    margin-left: 0;
+  }
+  @include mixins.sp {
+    margin-left: 0;
+  }
+}
+.slick {
+  &-slider {
+    position: relative;
+    text-align: center;
+  }
+  &-arrow {
+    background: none;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    color: transparent;
+    z-index: 10;
+    transition: opacity 0.5s;
+    z-index: 10;
+    background-color: utility.$white-button;
+    border-radius: 50px;
+    position: absolute;
+    top: -35%;
+    bottom: 0;
+    margin: auto;
+    left: 20px;
+    @include mixins.sp {
+      bottom: 0;
+      top: 10%;
+    }
+  }
+  &-next {
+    right: -92.5%;
+    @include mixins.tab {
+      right: -90%;
+    }
+    @include mixins.sp {
+      right: -80%;
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -1px;
+      right: -1px;
+      margin: auto;
+      content: "";
+      vertical-align: middle;
+    }
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -1px;
+      right: -1px;
+      margin: auto;
+      content: "";
+      vertical-align: middle;
+      width: 15px;
+      height: 15px;
+      border-top: 1px solid utility.$black;
+      border-right: 1px solid utility.$black;
+      right: 4px;
+      transform: rotate(45deg);
+    }
+  }
+  &-prev {
+    left: 0.6%;
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -1px;
+      right: -1px;
+      margin: auto;
+      content: "";
+      vertical-align: middle;
+    }
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -1px;
+      right: -1px;
+      margin: auto;
+      content: "";
+      vertical-align: middle;
+      width: 15px;
+      height: 15px;
+      border-top: 1px solid utility.$black;
+      border-right: 1px solid utility.$black;
+      left: 4px;
+      transform: rotate(-135deg);
     }
   }
 }

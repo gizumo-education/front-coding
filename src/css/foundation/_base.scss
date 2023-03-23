@@ -74,3 +74,8 @@ a {
     display: block!important;
   }
 }
+
+body.active {
+  height: 100%;
+  overflow: hidden;
+}
