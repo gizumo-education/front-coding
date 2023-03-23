@@ -6,30 +6,38 @@ $(function() {
 
   const ham = $('#js-header__nav__toggle');
   const nav = $('#js-header__nav');
+  function active_nav() {
+    nav.removeClass('active');
+  }
+  function active_ham() {
+    ham.removeClass('active');
+  }
+  function active_body() {
+    $('body').removeClass('active');
+  }
+  function resize() {
+    $(window).resize(function() {
+      active_nav();
+      active_ham();
+      active_body();
+    });
+  }
+
   ham.on('click', function () {
     ham.toggleClass('active');
     nav.toggleClass('active');
-    $("body").toggleClass("active");
+    $('body').toggleClass('active');
   });
   
-  $('.l-header__nav a').on('click',function() {
-    $('#js-header__nav').removeClass('active');
-  });
 
   $('.l-header__nav a').on('click',function() {
-    $('#js-header__nav__toggle').removeClass('active');
-  });
-
-  $('.l-header__nav a').on('click',function() {
-    $('body').removeClass('active');
+    active_nav();
+    active_ham();
+    active_body();
   });
 
   ham.on('click', function () {
-    $(window).resize(function() {
-      $('#js-header__nav').removeClass('active');
-      $('#js-header__nav__toggle').removeClass('active');
-      $('body').removeClass('active');
-    });
+    resize();
   });
 
   
@@ -38,11 +46,11 @@ $(function() {
   $('a[href^="#"]').on('click', function() {
     const gap = header.outerHeight();
     const speed = 500;
-    const href = $(this).attr("href");
+    const href = $(this).attr('href');
     const target = $(href == "#" || href == "" ? "html" : href);
     const position = target.offset().top - gap;
 
-    $("html, body").animate({ scrollTop: position }, speed, "swing");
+    $('html, body').animate({ scrollTop: position }, speed, 'swing');
     return false;
   });
   
