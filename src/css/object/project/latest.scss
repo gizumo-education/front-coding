@@ -77,7 +77,7 @@
     }
   }
 
-  &__img {
+  &__img  img{
     border-radius: 15px;
     width: 280px;
 
@@ -251,14 +251,6 @@
 
 .next-arrow {
   right: 0;
-  // margin-right: 15px;
-
-  @include utility.tab {
-    margin-right: 0.15rem;
-  }
-  @include utility.sp {
-    margin-right: 0;
-  }
 
   &::before {
     content: '';
