@@ -21,8 +21,9 @@ $(function() {
 
     // リサイズを行ったときに画面が固定されているのを解除するための処理
     window.addEventListener( 'resize', function() {
-    $("body").removeClass("fixed");
-    $(".l-header__hamburger").removeClass('active');
+      $(".l-header__hamburger").removeClass('active');
+      $(".l-header__hamburger__nav").removeClass('open');
+      $("body").removeClass("fixed");
     }, false );
 
 
