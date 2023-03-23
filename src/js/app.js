@@ -9,7 +9,7 @@ $(function() {
   ham.on('click', function () {
     ham.toggleClass('active');
     nav.toggleClass('active');
-    noScroll();
+    $("body").toggleClass("active");
   });
   
   $('.l-header__nav a').on('click',function() {
@@ -21,17 +21,17 @@ $(function() {
   });
 
   $('.l-header__nav a').on('click',function() {
-    noScroll();
-    return false;
+    $('body').removeClass('active');
   });
 
-  function noScroll() {
-    if($(".active").length) {
-      $("body").css('overflow','hidden');
-    } else {
-      $("body").css('overflow','auto');
-    }
-  }
+  ham.on('click', function () {
+    $(window).resize(function() {
+      $('#js-header__nav').removeClass('active');
+      $('#js-header__nav__toggle').removeClass('active');
+      $('body').removeClass('active');
+    });
+  });
+
   
   const header = $('#header');
   
@@ -52,6 +52,8 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    swipe: true,
+    swipeToSlide: true,
     responsive: [{
       breakpoint: 1199,
       settings: {
