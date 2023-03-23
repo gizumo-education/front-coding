@@ -28,9 +28,17 @@ $(function() {
     const href = $(this).attr("href");
     const target = $(href == "#" || href == "" ? "html" : href);
     const position = target.offset().top - gap;
-    
+
     $("html, body").animate({ scrollTop: position }, speed, "swing");
     return false;
+  });
+
+  $('.l-header__nav a').on('click',function() {
+    $('#js-header__nav').removeClass('active');
+  });
+
+  $('.l-header__nav a').on('click',function() {
+    $('#js-header__nav__toggle').removeClass('active');
   });
   
 $(document).ready(function(){
