@@ -9,13 +9,13 @@ $(function() {
   $(".l-header__hamburger").on('click', function () {
     $(this).toggleClass('active');
     $(".l-header__hamburger__nav").toggleClass('open');
-    $("body").toggleClass('fixed');
+    $('body').toggleClass('fixed');
   });
 
   $(".l-header__hamburger__item a").on('click', function () {
     $(".l-header__hamburger").removeClass('active');
     $(".l-header__hamburger__nav").removeClass('open');
-    $("body").removeClass('fixed');
+    $("body").removeClass("fixed");
   });
 
 
