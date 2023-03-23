@@ -140,6 +140,7 @@
 }
 .slick-slider {
   position: relative;
+  text-align: center;
 }
 .slick-arrow {
   background: none;
@@ -189,7 +190,7 @@
   border-right: 1px solid utility.$black;
 }
 .slick-next {
-  right: -91%;
+  right: -92.5%;
   @include mixins.sp {
     right: -80%;
   }
@@ -199,7 +200,7 @@
   transform: rotate(45deg);
 }
 .slick-prev {
-  left: 0;
+  left: 0.6%;
 }
 .slick-prev::after {
   left: 4px;
