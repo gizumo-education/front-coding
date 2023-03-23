@@ -191,6 +191,9 @@
 }
 .slick-next {
   right: -92.5%;
+  @include mixins.tab {
+    right: -90%;
+  }
   @include mixins.sp {
     right: -80%;
   }
