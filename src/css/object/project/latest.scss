@@ -82,10 +82,11 @@
     width: 280px;
 
     @include utility.tab {
-      border-radius: 0.1rem;
+      border-radius: 0.15rem;
       width: 2.8rem;
     }
     @include utility.sp {
+      border-radius: 0.15rem;
       width: 3.7rem;
     }
   }
