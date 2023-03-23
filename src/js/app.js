@@ -46,27 +46,27 @@ $(function() {
     return false;
   });
   
-$(document).ready(function(){
-  $('.c-jobs__detail__wrapper').slick({
-    autoplay: true,
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    swipe: true,
-    swipeToSlide: true,
-    responsive: [{
-      breakpoint: 1199,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
-      }
-    }, {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      }
-    }]
+  $(document).ready(function(){
+    $('.c-jobs__detail__wrapper').slick({
+      autoplay: true,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      swipe: true,
+      swipeToSlide: true,
+      responsive: [{
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      }, {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
+    });
   });
-});
 })
