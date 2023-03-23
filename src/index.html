@@ -7,11 +7,13 @@
   <meta name="description" content="ギズジョブは完全無料の求職者向け求人サービスです">
   <meta name="keywords" content="ギズジョブ, ギズジョブ医療事務, 医療事務求人, 医療事務">
   <title>医療事務求人を探すならギズジョブ</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
 </head>
-<body>
+<body id="top">
 
   <!-- ヘッダー -->
-  <header class="l-header">
+  <header class="l-header" id="header">
     <nav class="l-header__nav">
       <ul class="l-header__list">
           <li class="l-header__list__item">
@@ -59,16 +61,15 @@
       <span></span>
     </button>
 
-    <nav class="l-header__hamburger__nav">
+    <nav class="l-header__hamburger__nav" id="nav">
       <ul class="l-header__hamburger__list">
-        <li class="l-header__hamburger__item"><a href="">トップ</a></li>
-        <li class="l-header__hamburger__item"><a href="">新着求人</a></li>
-        <li class="l-header__hamburger__item"><a href="">４つの特徴</a></li>
-        <li class="l-header__hamburger__item"><a href="">転職までの流れ</a></li>
-        <li class="l-header__hamburger__item"><a href="">転職のお役立ちコンテンツ</a></li>
+        <li class="l-header__hamburger__item"><a href="#top">トップ</a></li>
+        <li class="l-header__hamburger__item"><a href="#latest">新着求人</a></li>
+        <li class="l-header__hamburger__item"><a href="#feature">４つの特徴</a></li>
+        <li class="l-header__hamburger__item"><a href="#flow">転職までの流れ</a></li>
+        <li class="l-header__hamburger__item"><a href="#contents">転職のお役立ちコンテンツ</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main>
@@ -133,90 +134,130 @@
     </section>
 
     <!-- 新着求人 -->
-    <section class="p-latest">
+    <section class="p-latest" id="latest">
       <div class="l-inner">
         <h2 class="p-latest__title">新着求人</h2>
-        <ul class="p-latest__inner__item">
-            <li class="p-latest__item c-btn__link">
-              <a href="">
-                <div class="p-latest__img">
-                  <img src="img/picture/recruit_1.jpg" alt="">
+        <ul class="p-latest__inner__item p-latest__slick">
+          <li class="p-latest__item c-btn__link">
+            <a href="">
+              <div class="p-latest__img">
+                <img src="img/picture/recruit_1.jpg" alt="">
+              </div>
+              <div class="p-latest__text">
+                <p class="p-latest__text__heading c-text-regular">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
+                <div class="p-latest__text__detail c-text-small">
+                  <dl>
+                    <dt>給料</dt>
+                    <dd>月給 148,000円～</dd>
+                    <dt>所在地</dt>
+                    <dd>三重県伊勢市</dd>
+                    <dt>最寄駅</dt>
+                    <dd>伊勢市駅 徒歩15分</dd>
+                  </dl>
                 </div>
-                <div class="p-latest__text">
-                  <p class="p-latest__text__heading c-text-regular">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
-                  <div class="p-latest__text__detail c-text-small">
-                    <dl>
-                      <dt>給料</dt>
-                      <dd>月給 148,000円～</dd>
-                      <dt>所在地</dt>
-                      <dd>三重県伊勢市</dd>
-                      <dt>最寄駅</dt>
-                      <dd>伊勢市駅 徒歩15分</dd>
-                    </dl>
-                  </div>
+              </div>
+            </a>
+          </li>
+          <li class="p-latest__item c-btn__link">
+            <a href="">
+              <div class="p-latest__img">
+                <img src="img/picture/recruit_2.jpg" alt="">
+              </div>
+              <div class="p-latest__text">
+                <p class="p-latest__text__heading c-text-regular">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
+                <div class="p-latest__text__detail c-text-small">
+                  <dl>
+                    <dt>給料</dt>
+                    <dd>月給 148,000円～</dd>
+                    <dt>所在地</dt>
+                    <dd>三重県伊勢市</dd>
+                    <dt>最寄駅</dt>
+                    <dd>伊勢市駅 徒歩15分</dd>
+                  </dl>
                 </div>
-              </a>
-            </li>
-            <li class="p-latest__item c-btn__link">
-              <a href="">
-                <div class="p-latest__img">
-                  <img src="img/picture/recruit_2.jpg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="p-latest__item c-btn__link">
+            <a href="">
+              <div class="p-latest__img">
+                <img src="img/picture/recruit_3.jpg" alt="">
+              </div>
+              <div class="p-latest__text">
+                <p class="p-latest__text__heading c-text-regular">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
+                <div class="p-latest__text__detail c-text-small">
+                  <dl>
+                    <dt>給料</dt>
+                    <dd>月給 148,000円～</dd>
+                    <dt>所在地</dt>
+                    <dd>三重県伊勢市</dd>
+                    <dt>最寄駅</dt>
+                    <dd>伊勢市駅 徒歩15分</dd>
+                  </dl>
                 </div>
-                <div class="p-latest__text">
-                  <p class="p-latest__text__heading c-text-regular">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
-                  <div class="p-latest__text__detail c-text-small">
-                    <dl>
-                      <dt>給料</dt>
-                      <dd>月給 148,000円～</dd>
-                      <dt>所在地</dt>
-                      <dd>三重県伊勢市</dd>
-                      <dt>最寄駅</dt>
-                      <dd>伊勢市駅 徒歩15分</dd>
-                    </dl>
-                  </div>
+              </div>
+            </a>
+          </li>
+          <li class="p-latest__item c-btn__link">
+            <a href="">
+              <div class="p-latest__img">
+                <img src="img/picture/recruit_4.jpg" alt="">
+              </div>
+              <div class="p-latest__text">
+                <p class="p-latest__text__heading c-text-regular">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
+                <div class="p-latest__text__detail c-text-small">
+                  <dl>
+                    <dt>給料</dt>
+                    <dd>月給 148,000円～</dd>
+                    <dt>所在地</dt>
+                    <dd>三重県伊勢市</dd>
+                    <dt>最寄駅</dt>
+                    <dd>伊勢市駅 徒歩15分</dd>
+                  </dl>
                 </div>
-              </a>
-            </li>
-            <li class="p-latest__item c-btn__link">
-              <a href="">
-                <div class="p-latest__img">
-                  <img src="img/picture/recruit_3.jpg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="p-latest__item c-btn__link">
+            <a href="">
+              <div class="p-latest__img">
+                <img src="img/picture/recruit_1.jpg" alt="">
+              </div>
+              <div class="p-latest__text">
+                <p class="p-latest__text__heading c-text-regular">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
+                <div class="p-latest__text__detail c-text-small">
+                  <dl>
+                    <dt>給料</dt>
+                    <dd>月給 148,000円～</dd>
+                    <dt>所在地</dt>
+                    <dd>三重県伊勢市</dd>
+                    <dt>最寄駅</dt>
+                    <dd>伊勢市駅 徒歩15分</dd>
+                  </dl>
                 </div>
-                <div class="p-latest__text">
-                  <p class="p-latest__text__heading c-text-regular">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
-                  <div class="p-latest__text__detail c-text-small">
-                    <dl>
-                      <dt>給料</dt>
-                      <dd>月給 148,000円～</dd>
-                      <dt>所在地</dt>
-                      <dd>三重県伊勢市</dd>
-                      <dt>最寄駅</dt>
-                      <dd>伊勢市駅 徒歩15分</dd>
-                    </dl>
-                  </div>
+              </div>
+            </a>
+          </li>
+          <li class="p-latest__item c-btn__link">
+            <a href="">
+              <div class="p-latest__img">
+                <img src="img/picture/recruit_2.jpg" alt="">
+              </div>
+              <div class="p-latest__text">
+                <p class="p-latest__text__heading c-text-regular">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
+                <div class="p-latest__text__detail c-text-small">
+                  <dl>
+                    <dt>給料</dt>
+                    <dd>月給 148,000円～</dd>
+                    <dt>所在地</dt>
+                    <dd>三重県伊勢市</dd>
+                    <dt>最寄駅</dt>
+                    <dd>伊勢市駅 徒歩15分</dd>
+                  </dl>
                 </div>
-              </a>
-            </li>
-            <li class="p-latest__item c-btn__link">
-              <a href="">
-                <div class="p-latest__img">
-                  <img src="img/picture/recruit_4.jpg" alt="">
-                </div>
-                <div class="p-latest__text">
-                  <p class="p-latest__text__heading c-text-regular">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
-                  <div class="p-latest__text__detail c-text-small">
-                    <dl>
-                      <dt>給料</dt>
-                      <dd>月給 148,000円～</dd>
-                      <dt>所在地</dt>
-                      <dd>三重県伊勢市</dd>
-                      <dt>最寄駅</dt>
-                      <dd>伊勢市駅 徒歩15分</dd>
-                    </dl>
-                  </div>
-                </div>
-              </a>
-            </li>
+              </div>
+            </a>
+          </li>
         </ul>
         <div class="p-latest__btn c-btn">
           <a href="">新着求人一覧をもっと見る</a>
@@ -233,7 +274,7 @@
     </section>
 
     <!-- ギズジョブの4つの特徴 -->
-    <section class="p-feature l-inner">
+    <section class="p-feature l-inner" id="feature">
       <h2 class="c-heading">ギズジョブの4つの特徴</h2>
         <ul class="p-feature__inner">
           <li class="p-feature__item">
@@ -261,7 +302,7 @@
     </section>
 
     <!-- 転職までの流れ -->
-    <section class="p-flow l-inner">
+    <section class="p-flow l-inner" id="flow">
       <h2 class="p-flow__heading c-heading">転職までの流れ</h2>
         <ul class="p-flow__inner">
           <li class="p-flow__item p-flow__item__arrow">
@@ -312,7 +353,7 @@
     </section>
 
     <!-- 転職お役立ちコンテンツ -->
-    <section class="p-contents l-inner">
+    <section class="p-contents l-inner" id="contents">
       <h2 class="p-contents__heading c-heading">転職お役立ちコンテンツ</h2>
         <ul class="p-contents__inner">
           <li class="p-contents__item p-contents__item__img-1 c-btn__link">
