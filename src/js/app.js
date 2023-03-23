@@ -5,6 +5,13 @@ $(function() {
   console.log('環境構築完了');
 
 
+  function clikckLinkOrResize () {
+    $(".l-header__hamburger").removeClass('active');
+    $(".l-header__hamburger__nav").removeClass('open');
+    $("body").removeClass("fixed");
+  }
+
+
   // ハンバーガーメニュー
   $(".l-header__hamburger").on('click', function () {
     $(this).toggleClass('active');
@@ -13,21 +20,17 @@ $(function() {
   });
 
   $(".l-header__hamburger__item a").on('click', function () {
-    $(".l-header__hamburger").removeClass('active');
-    $(".l-header__hamburger__nav").removeClass('open');
-    $("body").removeClass("fixed");
+    clikckLinkOrResize();
   });
 
 
-    // リサイズを行ったときに画面が固定されているのを解除するための処理
-    window.addEventListener( 'resize', function() {
-      $(".l-header__hamburger").removeClass('active');
-      $(".l-header__hamburger__nav").removeClass('open');
-      $("body").removeClass("fixed");
-    }, false );
+  // リサイズを行ったときに画面が固定されているのを解除するための処理
+  window.addEventListener( 'resize', function() {
+    clikckLinkOrResize();
+  }, false );
 
 
-    // SPページ内リンク
+  // SPページ内リンク
   const header = $('#header'); // #headerを取得
 
   $('a[href^="#"]').on('click', function() {
