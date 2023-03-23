@@ -19,6 +19,13 @@ $(function() {
   });
 
 
+    // リサイズを行ったときに画面が固定されているのを解除するための処理
+    window.addEventListener( 'resize', function() {
+    $("body").removeClass("fixed");
+    $(".l-header__hamburger").removeClass('active');
+    }, false );
+
+
     // SPページ内リンク
   const header = $('#header'); // #headerを取得
 
