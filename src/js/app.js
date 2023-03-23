@@ -11,6 +11,19 @@ $(function() {
     nav.toggleClass('active');
     noScroll();
   });
+  
+  $('.l-header__nav a').on('click',function() {
+    $('#js-header__nav').removeClass('active');
+  });
+
+  $('.l-header__nav a').on('click',function() {
+    $('#js-header__nav__toggle').removeClass('active');
+  });
+
+  $('.l-header__nav a').on('click',function() {
+    noScroll();
+    return false;
+  });
 
   function noScroll() {
     if($(".active").length) {
@@ -31,14 +44,6 @@ $(function() {
 
     $("html, body").animate({ scrollTop: position }, speed, "swing");
     return false;
-  });
-
-  $('.l-header__nav a').on('click',function() {
-    $('#js-header__nav').removeClass('active');
-  });
-
-  $('.l-header__nav a').on('click',function() {
-    $('#js-header__nav__toggle').removeClass('active');
   });
   
 $(document).ready(function(){
