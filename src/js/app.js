@@ -5,7 +5,7 @@ $(function() {
   console.log('環境構築完了');
 
 
-  function clikckLinkOrResize () {
+  function toggleHamburgerMenu () {
     $(".l-header__hamburger").removeClass('active');
     $(".l-header__hamburger__nav").removeClass('open');
     $("body").removeClass("fixed");
@@ -20,13 +20,13 @@ $(function() {
   });
 
   $(".l-header__hamburger__item a").on('click', function () {
-    clikckLinkOrResize();
+    toggleHamburgerMenu();
   });
 
 
   // リサイズを行ったときに画面が固定されているのを解除するための処理
   window.addEventListener( 'resize', function() {
-    clikckLinkOrResize();
+    toggleHamburgerMenu();
   }, false );
 
 
