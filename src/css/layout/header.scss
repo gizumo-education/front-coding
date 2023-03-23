@@ -240,8 +240,3 @@
 .l-header__hamburger__nav.open{
   left: 0;
 }
-
-// SP用のハンバーガーメニューが表示されている時は背景がスクロールできなくさせる
-body.fixed {
-  overflow: hidden;
-}
