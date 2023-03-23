@@ -45,7 +45,7 @@ $(function() {
 
 
   // スリックカルーセル
-  $('.slick-latest').slick({
+  $('.p-latest__slick').slick({
     autoplay: true,
     cssEase: 'linear',
     infinite: true,
@@ -53,8 +53,8 @@ $(function() {
     slidesToScroll: 1,
     swipe: true,
     swipeToSlide: true,
-    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-    nextArrow: '<button class="slide-arrow next-arrow"></button>',
+    prevArrow: '<button class="p-latest__slick__arrow p-latest__slick__prev-arrow"></button>',
+    nextArrow: '<button class="p-latest__slick__arrow p-latest__slick__next-arrow"></button>',
     responsive: [{
       breakpoint: 767,
       settings: {
