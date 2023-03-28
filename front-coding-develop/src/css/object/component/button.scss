@@ -1,2 +1,21 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+$blue: #92C5EA;
+$pink: #DE5579;
+$white: #FFFFFF;
+
+.c-header-button {
+	background: $blue;
+	border-radius: 10px;
+	color: $white;
+	border: none;
+	padding: 10px;
+}
+.c-pink-button {
+	background: $pink;
+	border-radius: 30px;
+	color: $white;
+	font-size: 18px;
+	border: none;
+	padding: 10px;
+}

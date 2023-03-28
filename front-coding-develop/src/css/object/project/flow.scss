@@ -1,0 +1,40 @@
+@use '../../object/utility/utility.scss';
+$pink: #DE5579;
+
+.p-flow {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px 0 30px 0;
+}
+
+.p-flow-item {
+	border: 2px solid $pink;
+	border-radius: 10px;
+	width: 270px;
+	height: 357px;
+	flex-grow: 1;
+}
+
+.p-flow-img {
+	display: block;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+}
+
+.p-flow-title {
+	text-align: center;
+	padding-top: 20px;
+	font-size: 24px;
+}
+
+.p-flow-text {
+	text-align: center;
+	padding: 20px 0 0 50px;
+	font-size: 14px;
+	width: 237px;
+}
+
+.p-flow-space {
+	margin-top:24px;
+}

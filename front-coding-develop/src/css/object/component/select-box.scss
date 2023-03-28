@@ -1,0 +1,32 @@
+@use '../../object/utility/utility.scss';
+$pink: #DE1E79;
+
+.c-select-box {
+	border: 1px solid $pink;
+	border-radius: 7px;
+	width: 200px;
+	height: 60px;
+	font-size: 18px;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.c-select-box::-ms-expand {
+	display: none;
+}
+
+select {
+	background-image: url(../img/icon/select.png);
+	background-position: right 10px center;
+	background-repeat: no-repeat;
+	background-size: 20px 10px;
+}
+
+.c-select-keyword {
+	width: 300px;
+	border: 1px solid $pink;
+	border-radius: 7px;
+	height: 60px;
+	font-size: 18px;
+}
+

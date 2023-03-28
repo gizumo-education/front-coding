@@ -1,2 +1,9 @@
 @use '../object/utility/utility.scss';
 // innerのスタイルを記述するファイル
+
+.inner {
+ width: 1180px;
+ font-family: Noto Sans JP;
+ margin-right: auto;
+ margin-left: auto;
+}

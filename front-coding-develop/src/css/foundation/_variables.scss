@@ -1,6 +1,27 @@
 $white: #fff;
 $black: #000;
+$pink: #DE5579;
 
 // フォントの太さ
 $regular: 400;
 $bold: 700;
+
+.f-header {
+	background-color: $white;
+}
+
+.f-header-font {
+	color: $black;
+	font-size: 16px;
+}
+
+.f-explanation-text {
+	color: $white;
+	font-size: 25px;
+}
+
+.f-footer-text {
+	color: $black;
+	display: block;
+	padding-top: 10px;
+}

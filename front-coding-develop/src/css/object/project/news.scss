@@ -1,0 +1,60 @@
+@use '../../object/utility/utility.scss';
+$white-blue: #EFF6FC;
+$white-pink: #FFCAD0;
+
+.p-news-back {
+  background: $white-blue;
+}
+.p-news {
+  background: $white-blue;
+  margin-top: 30px;
+  display: flex;
+}
+.p-news-item {
+  font-size: 15px;
+  width: 280px;
+  margin-right: 20px;
+}
+
+.p-news-item:last-child {
+  margin-right: 0;
+}
+
+.p-news-subjects {
+  padding: 5px 5px 0 0;
+}
+
+.p-news-title {
+  font-size: 20px;
+  margin: 30px auto;
+  padding-top: 30px;
+}
+
+.p-news-contents {
+  font-size: 14px;
+  
+}
+
+.p-news-text {
+  display: inline;
+}
+
+.p-news-background {
+  background-color: $white-pink;
+  width: 60px;
+  height: 21px;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+}
+
+.p-news-img {
+  width: 280px;
+  height: 200px;
+  border-radius: 10px;
+}
+.p-news-button {
+  padding-top: 67px;
+  padding-bottom: 67px;
+  text-align: center;
+}
