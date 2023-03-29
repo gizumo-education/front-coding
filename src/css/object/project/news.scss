@@ -9,11 +9,17 @@ $white-pink: #FFCAD0;
   background: $white-blue;
   margin-top: 30px;
   display: flex;
+  position: relative;
 }
+
 .p-news-item {
   font-size: 15px;
   width: 280px;
   margin-right: 20px;
+}
+
+.p-news-detail {
+  margin: 10px 0 10px 0;
 }
 
 .p-news-item:last-child {
@@ -44,7 +50,8 @@ $white-pink: #FFCAD0;
   width: 60px;
   height: 21px;
   display: inline-block;
-  padding: 5px;
+  padding-top: 3px;
+  margin: 5px;
   text-align: center;
 }
 

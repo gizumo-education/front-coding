@@ -13,9 +13,15 @@ $bold: 700;
 .f-header-font {
 	color: $black;
 	font-size: 16px;
+	padding-right: 15px;
 }
 
 .f-explanation-text {
 	color: $white;
 	font-size: 25px;
+}
+
+.f-footer-text {
+	color: $black;
+	display: flex;
 }
