@@ -7,18 +7,26 @@ $white: #fff;
 	padding-top: 30px;
 }
 
+.p-column-subject {
+	padding: 105px 0 50px 0;
+}
+
 .p-column-contents {
 	background-image: url(../img/picture/resume-background.jpg);
 	background-repeat: no-repeat;
 	height: 240px;
 	width: 380px;
-	margin-left: 30px;
+	margin-left: 20px;
 	border-radius: 10px;
 	position: relative;
 	flex-grow: 1;
 	display:flex;
 	justify-content:center;
 	align-items:center;
+}
+
+.p-column-contents:first-child {
+	margin-left: 0;
 }
 
 .p-column-contents::before {
@@ -40,6 +48,8 @@ $white: #fff;
 .p-column-title {
 	font-size: 24px;
 	text-align: center;
+	font-weight: 700;
+	font-family: Noto Sans JP;
 }
 
 .p-column-text {
@@ -55,6 +65,6 @@ $white: #fff;
 }
 
 .p-column-button {
-	padding-top: 30px;
+	padding-top: 80px;
 	text-align: center;
 }

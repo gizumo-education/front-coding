@@ -6,8 +6,8 @@ $gray: #D7D7D7;
 .l-footer {
   background: $white-blue;
   margin-top: 200px;
-  padding-top:20px;
   height: 265px;
+  font-size: 16px;
   > .inner {
     display: flex;
     justify-content: space-between;
@@ -15,12 +15,14 @@ $gray: #D7D7D7;
 }
 
 .l-footer-title {
-  padding-top: 70px;
+  padding: 79px 0 27px 0;
+
 }
 
 .l-footer-text {
   float: left;
-  padding-top: 20px;
+  line-height: 36px;
+  padding-bottom: 28px;
 }
 
 .l-footer-text:last-child {
@@ -34,14 +36,18 @@ $gray: #D7D7D7;
 
 .l-footer-pictures {
   float: left;
-  padding-top: 30px;
+  padding-top: 55px;
 }
 
 .l-footer-img {
   display: block;
   width: 320px;
   height: 85px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.l-footer-img:last-child {
+  margin-bottom: 25px;
 }
 
 .l-footer-bottom {

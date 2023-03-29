@@ -1,24 +1,29 @@
 @use '../../object/utility/utility.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 $pink: #DE5579;
+
+.p-flow-subject {
+	padding-top: 105px;
+}
 
 .p-flow {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 30px 0 30px 0;
+	padding-top: 51.13px;
 }
 
 .p-flow-item {
 	border: 2px solid $pink;
 	border-radius: 10px;
-	width: 270px;
-	height: 357px;
+	width: 277.73px;
+	height: 370.73px;
 	flex-grow: 1;
 }
 
 .p-flow-img {
 	display: block;
 	margin: auto;
-	width: 100px;
+	width: 102.29px;
 	height: 100px;
 }
 
@@ -26,13 +31,15 @@ $pink: #DE5579;
 	text-align: center;
 	padding-top: 20px;
 	font-size: 24px;
-	font: Noto Sans JP;
+	line-height: 24px;
+	font-family: Noto Sans JP;
+	font-weight: 700;
 }
 
 .p-flow-text {
 	text-align: left;
 	line-height: 18px;
-	padding: 20px 0 0 50px;
+	padding: 18px 0 40.87px 50px;
 	font-size: 14px;
 	width: 237px;
 }

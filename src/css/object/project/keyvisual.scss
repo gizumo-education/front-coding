@@ -1,7 +1,10 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+$blue: #98B1BE;
 
 .p-key-visual {
-	height: 500px;
+	background-color: $blue;
+	height: 100%;
 	text-align: center;
+	width: 100%;
 }
