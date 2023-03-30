@@ -7,7 +7,6 @@ $white-pink: #FFCAD0;
 }
 .p-news {
   background: $white-blue;
-  margin-top: 30px;
   display: flex;
   position: relative;
 }
@@ -16,6 +15,11 @@ $white-pink: #FFCAD0;
   font-size: 15px;
   width: 280px;
   margin-right: 20px;
+
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
 }
 
 .p-news-detail {
@@ -28,9 +32,10 @@ $white-pink: #FFCAD0;
 }
 
 .p-news-title {
-  font-size: 20px;
-  margin: 59px auto;
+  font-size: 24px;
+  margin: 64px 0 25px 0;
   padding-top: 30px;
+
 }
 
 .p-news-contents {

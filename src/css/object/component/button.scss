@@ -10,12 +10,46 @@ $white: #FFFFFF;
 	border-radius: 10px;
 	color: $white;
 	border: none;
-	padding: 10px 20px;
+	padding: 16px 16px 16px 35px;
 	margin-left: 15px;
+	text-align: center;
+	background-position: left 10px center;
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	overflow-wrap: break-word;
+
+	margin-top: 10px;
+
+	&.heart {
+		background-image: url(../img/icon/heart.png);
+	}
+
+	&.clock {
+		background-image: url(../img/icon/clock.png);
+	}
+
+	&.history {
+		background-image: url(../img/icon/history.png);
+	}
+
+	&:hover {
+		opacity: 0.8;
+		transition: 0.3s;
+	}
+}
+
+.c-header-button:first-child {
+	width: 180px;
+	padding: 16px 16px 16px 50px;
+}
+
+.c-header-place {
+	position: relative;
 }
 
 .c-header-button:hover {
-	cursor: pointer;
+	opacity: 0.8;
+	transition: 0.3s;
 }
 
 .c-pink-button {
@@ -30,9 +64,12 @@ $white: #FFFFFF;
 
 .c-pink-button:hover {
 	cursor: pointer;
+	opacity: 0.8;
+	transition: 0.3s;
 }
 
 .c-pink-large-button {
 	padding: 20px 60px;
 	font-size: 18px;
+	border-radius: 30px;
 }

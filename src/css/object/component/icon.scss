@@ -5,11 +5,6 @@
 	height: 15px;
 }
 
-.c-header-icon {
-	width: 17px;
-	height: 17px;
-}
-
 .c-search-icon {
 	width: 29.98px;
 	height: 29.98px;
@@ -18,8 +13,7 @@
 .c-flow-direction {
 	display: flex;
 	justify-content: center;
-	height: 40px;
-	margin-top: 140px;
+	align-items: center;
 }
 
 .c-flow-icon {

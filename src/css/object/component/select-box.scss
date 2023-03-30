@@ -24,6 +24,14 @@ select {
 	background-size: 20px 10px;
 }
 
+.c-select-container-above{
+	margin: 61px auto 59px auto;
+}
+
+.c-select-container-bottom {
+	margin: 150px auto 200px auto;
+}
+
 .c-select-keyword {
 	width: 300px;
 	border: 1px solid $pink;
@@ -31,4 +39,5 @@ select {
 	height: 60px;
 	font-size: 18px;
 	margin: 0 15px 0 15px;
+	padding: 0 20px 0 10px;
 }
