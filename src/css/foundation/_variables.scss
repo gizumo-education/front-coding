@@ -27,4 +27,9 @@ $bold: 700;
 .f-footer-text {
 	color: $black;
 	display: flex;
+
+	&:hover {
+		opacity: 0.8;
+		transition: 0.3s;
+	}
 }
