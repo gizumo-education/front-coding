@@ -23,26 +23,31 @@ $white: #fff;
 	display:flex;
 	justify-content:center;
 	align-items:center;
-}
 
-.p-column-contents:first-child {
-	margin-left: 0;
-}
+	&:hover {
+		opacity: 0.8;
+		transition: 0.3s;
+	}
 
-.p-column-contents::before {
-	content: '';
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 10px;
-	top: 0;
-	left: 0;
-	height: 240px;
-	width: 100%;
-	display: block;
-	position: absolute;
-}
+	&:first-child {
+		margin-left: 0;
+	}
+	
+	&::before {
+		content: '';
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 10px;
+		top: 0;
+		left: 0;
+		height: 240px;
+		width: 100%;
+		display: block;
+		position: absolute;
+	}
 
-.p-column-contents:nth-child(2n) {
-	background-image: url(../img/picture/laptop-background.jpg);
+	&:nth-child(2n) {
+		background-image: url(../img/picture/laptop-background.jpg);
+	}
 }
 
 .p-column-title {
