@@ -11,6 +11,14 @@ $pink: #DE1E79;
 	appearance: none;
 	margin-left: 15px;
 	padding: 17px 0 17px 15px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.c-select-subject {
+	margin-top: 26.5px;
 }
 
 .c-select-box::-ms-expand {

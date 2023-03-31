@@ -10,6 +10,7 @@ $black: #000000;
   background: $white-blue;
   display: flex;
   position: relative;
+  padding-top: 25px;
 }
 
 .p-news-item {
@@ -35,9 +36,10 @@ $black: #000000;
 
 .p-news-title {
   font-size: 24px;
-  margin: 64px 0 25px 0;
-  padding-top: 64px;
+}
 
+.p-news-container {
+  padding-top: 64px;
 }
 
 .p-news-contents {
