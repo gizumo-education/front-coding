@@ -33,49 +33,51 @@
     <div class="p-key-visual">
       <img src="img/picture/key-visual.jpg" alt="キービジュアル">
     </div>
-    <div class="p-search c-select-container-above inner">
-      <div class="c-title p-search-title">
-        <h2>お仕事検索</h2>
+      <div class="p-search c-select-container-above inner">
+        <div class="c-title p-search-title">
+          <h2>お仕事検索</h2>
+        </div>
+        <div class="p-search-text">
+          <h3>働きたい職種・地域・希望給与を入れて検索！</h3>
+        </div>
+        <form action="">
+          <!-- 職種 -->
+          <select name="job" size="1" class="c-select-box">
+            <option value="医療事務">医療事務</option>
+            <option value="調剤事務">調剤事務</option>
+            <option value="診療情報管理士">診療情報管理士</option>
+            <option value="歯科助手">歯科助手</option>
+            <option value="歯科事務">歯科事務</option>
+            <option value="看護補助・看護助手">看護補助・看護助手</option>
+            <option value="病院内SE">病院内SE</option>
+          </select>
+          <!-- 地域 -->
+          <select name="area" size="1" class="c-select-box">
+            <option value="東京都">東京都</option>
+            <option value="茨城県">茨城県</option>
+            <option value="神奈川県">神奈川県</option>
+            <option value="群馬県">群馬県</option>
+            <option value="埼玉県">埼玉県</option>
+            <option value="千葉県">千葉県</option>
+            <option value="栃木県">栃木県</option>
+          </select>
+          <!-- 月収 -->
+          <select name="income" size="1" class="c-select-box">
+            <option value="月給20万〜">月給20万〜</option>
+            <option value="月給17万〜">月給17万〜</option>
+            <option value="月給18万〜">月給18万〜</option>
+            <option value="月給19万〜">月給19万〜</option>
+            <option value="月給21万〜">月給21万〜</option>
+            <option value="月給22万〜">月給22万〜</option>
+            <option value="月給23万〜">月給23万〜</option>
+          </select>
+          <!-- キーワード -->
+          <input type="text" placeholder="キーワード・企業名・スキルなど" class="c-select-keyword">
+          <button href="" type="submit" class="c-pink-button p-search-button c-search-icon">
+            検索する
+          </button>
+        </form>
       </div>
-      <div class="p-search-text">
-        <h2>働きたい職種・地域・希望給与を入れて検索！</h2>
-      </div>
-      <!-- 職種 -->
-      <select name="job" size="1" class="c-select-box">
-        <option value="医療事務">医療事務</option>
-        <option value="調剤事務">調剤事務</option>
-        <option value="診療情報管理士">診療情報管理士</option>
-        <option value="歯科助手">歯科助手</option>
-        <option value="歯科事務">歯科事務</option>
-        <option value="看護補助・看護助手">看護補助・看護助手</option>
-        <option value="病院内SE">病院内SE</option>
-      </select>
-      <!-- 地域 -->
-      <select name="area" size="1" class="c-select-box">
-        <option value="東京都">東京都</option>
-        <option value="茨城県">茨城県</option>
-        <option value="神奈川県">神奈川県</option>
-        <option value="群馬県">群馬県</option>
-        <option value="埼玉県">埼玉県</option>
-        <option value="千葉県">千葉県</option>
-        <option value="栃木県">栃木県</option>
-      </select>
-      <!-- 月収 -->
-      <select name="income" size="1" class="c-select-box">
-        <option value="月給20万〜">月給20万〜</option>
-        <option value="月給17万〜">月給17万〜</option>
-        <option value="月給18万〜">月給18万〜</option>
-        <option value="月給19万〜">月給19万〜</option>
-        <option value="月給21万〜">月給21万〜</option>
-        <option value="月給22万〜">月給22万〜</option>
-        <option value="月給23万〜">月給23万〜</option>
-      </select>
-      <!-- キーワード -->
-      <input type="text" placeholder="キーワード・企業名・スキルなど" class="c-select-keyword">
-      <a href="" class="c-pink-button p-search-button c-search-icon">
-        検索する
-      </a>
-    </div>
     <div class="p-news-back">
       <div class="inner">
         <div class="p-news-title">
@@ -192,7 +194,7 @@
       <ul class="p-characteristic-contents inner">
         <li class="p-characteristic-item">
           <div class="p-characteristic-title">
-            <h2>WEB上で応募完結</h2>
+            <h3>WEB上で応募完結</h3>
           </div>
           <div class="p-characteristic-text">
             <p>
@@ -203,7 +205,7 @@
         </li>
         <li class="p-characteristic-item">
           <div class="p-characteristic-title">
-            <h2>安心・安全</h2>
+            <h3>安心・安全</h3>
           </div>
           <div class="p-characteristic-text">
             <p>
@@ -214,7 +216,7 @@
         </li>
         <li class="p-characteristic-item">
           <div class="p-characteristic-title">
-            <h2>わかりやすい</h2>
+            <h3>わかりやすい</h3>
           </div>
           <div class="p-characteristic-text">
             <p>
@@ -225,7 +227,7 @@
         </li>
         <li class="p-characteristic-item">
           <div class="p-characteristic-title">
-            <h2>完全無料</h2>
+            <h3>完全無料</h3>
           </div>
           <div class="p-characteristic-text">
             <p>
@@ -337,7 +339,7 @@
         </a>
       </div>
       <div class="p-column-button inner">
-        <button class="c-pink-button c-pink-large-button">医療事務コラムをもっと見る</button>
+        <a class="c-pink-button c-pink-large-button">医療事務コラムをもっと見る</a>
       </div>
     </div>
     <div class="p-search c-select-container inner c-select-container-bottom">
@@ -345,10 +347,9 @@
         <h2>お仕事検索</h2>
       </div>
       <div class="p-search-text">
-        <h2>働きたい職種・地域・希望給与を入れて検索！</h2>
+        <h3>働きたい職種・地域・希望給与を入れて検索！</h3>
       </div>
-      <div>
-      </div>
+    <form action="">
       <!-- 職種 -->
       <select name="job" size="1" class="c-select-box">
         <option value="医療事務">医療事務</option>
@@ -381,10 +382,11 @@
       </select>
       <!-- キーワード -->
       <input type="text" placeholder="キーワード・企業名・スキルなど" class="c-select-keyword">
-      <a href="" class="c-pink-button p-search-button c-search-icon">
+      <button href="" type="submit" class="c-pink-button p-search-button c-search-icon">
         検索する
-      </a>
-    </div>
+      </button>
+    </form>
+  </div>
   </main>
   <footer>
     <div class="l-footer">
