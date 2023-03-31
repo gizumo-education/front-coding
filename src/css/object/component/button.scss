@@ -10,10 +10,8 @@ $white: #FFFFFF;
 	border-radius: 10px;
 	color: $white;
 	border: none;
-	padding: 16px 16px 16px 35px;
 	margin-left: 15px;
 	text-align: center;
-	background-position: left 10px center;
 	background-repeat: no-repeat;
 	background-size: 18px 18px;
 	overflow-wrap: break-word;
@@ -22,14 +20,20 @@ $white: #FFFFFF;
 
 	&.heart {
 		background-image: url(../img/icon/heart.png);
+		padding: 15px 21px 15px 41px;
+		background-position: left 15px center;
 	}
 
 	&.clock {
 		background-image: url(../img/icon/clock.png);
+		padding: 15px 32px 15px 52px;
+		background-position: left 25px center;
 	}
 
 	&.history {
 		background-image: url(../img/icon/history.png);
+		padding: 15px 28px 15px 56px;
+		background-position: left 25px center;
 	}
 
 	&:hover {
@@ -71,5 +75,5 @@ $white: #FFFFFF;
 .c-pink-large-button {
 	padding: 20px 60px;
 	font-size: 18px;
-	border-radius: 30px;
+	border-radius: 60px;
 }

@@ -1,6 +1,7 @@
 @use '../../object/utility/utility.scss';
 $white-blue: #EFF6FC;
 $white-pink: #FFCAD0;
+$black: #000000;
 
 .p-news-back {
   background: $white-blue;
@@ -15,6 +16,7 @@ $white-pink: #FFCAD0;
   font-size: 15px;
   width: 280px;
   margin-right: 20px;
+  color: $black;
 
   &:hover {
     opacity: 0.8;
