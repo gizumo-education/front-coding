@@ -1,0 +1,73 @@
+@use '../../object/utility/utility.scss';
+$white-blue: #EFF6FC;
+$white-pink: #FFCAD0;
+$black: #000000;
+
+.p-news-back {
+  background: $white-blue;
+}
+.p-news {
+  background: $white-blue;
+  display: flex;
+  position: relative;
+  padding-top: 25px;
+}
+
+.p-news-item {
+  font-size: 15px;
+  width: 280px;
+  margin-right: 20px;
+  color: $black;
+
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+}
+
+.p-news-detail {
+  margin: 8px 0 6.92px 0;
+  line-height: 22px;
+}
+
+.p-news-item:last-child {
+  margin-right: 0;
+}
+
+.p-news-title {
+  font-size: 24px;
+}
+
+.p-news-container {
+  padding-top: 64px;
+}
+
+.p-news-contents {
+  font-size: 14px;
+  
+}
+
+.p-news-text {
+  display: inline;
+}
+
+.p-news-background {
+  background-color: $white-pink;
+  width: 60px;
+  height: 21px;
+  display: inline-block;
+  padding-top: 3px;
+  margin: 3px;
+  text-align: center;
+}
+
+.p-news-img {
+  width: 280px;
+  height: 200px;
+  border-radius: 10px;
+}
+.p-news-button {
+  padding-top: 67px;
+  padding-bottom: 67px;
+  text-align: center;
+}

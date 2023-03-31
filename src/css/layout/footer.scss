@@ -1,2 +1,61 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
+$white-blue: #EFF6FC;
+$gray: #D7D7D7;
+
+.l-footer {
+  background: $white-blue;
+  margin-top: 200px;
+  height: 265px;
+  font-size: 16px;
+  > .inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.l-footer-title {
+  padding: 79px 0 27px 0;
+
+}
+
+.l-footer-text {
+  float: left;
+  line-height: 36px;
+  padding-bottom: 28px;
+}
+
+.l-footer-text:last-child {
+  padding-left: 30px;
+}
+
+.l-footer-contents {
+  display: inline;
+  font-size: 16px;
+}
+
+.l-footer-pictures {
+  float: left;
+  padding-top: 55px;
+}
+
+.l-footer-img {
+  display: block;
+  width: 320px;
+  height: 85px;
+  margin-bottom: 15px;
+}
+
+.l-footer-img:last-child {
+  margin-bottom: 25px;
+}
+
+.l-footer-bottom {
+  background: $gray;
+  height: 35px;
+  text-align: center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size: 14px;
+}

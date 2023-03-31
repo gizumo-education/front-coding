@@ -1,0 +1,42 @@
+@use '../../object/utility/utility.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+$white-pink: #F7D2DB;
+$pink: #DE5579;
+
+.p-characteristic {
+	margin-top: 106px;
+	line-height: 20.27px;
+}
+
+.p-characteristic-contents {
+	margin-top: 59px;
+	display: flex;
+	flex-wrap: wrap;
+	display: flex;
+	gap: 40px;
+}
+
+.p-characteristic-title {
+	color: $pink;
+	font-size: 24px;
+	font-family: 'Noto Sans JP', sans-serif;
+	margin-top: 30px;
+	font-weight: 700;
+}
+
+.p-characteristic-text {
+	margin-top: 30px;
+	font-size: 14px;
+	line-height: 20.27px;
+}
+
+.p-characteristic-item {
+	background-color: $white-pink;
+	padding: 10px;
+	border-radius: 10px;
+	height: 180px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	width: 570px;
+}

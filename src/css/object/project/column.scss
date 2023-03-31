@@ -1,0 +1,77 @@
+@use '../../object/utility/utility.scss';
+$white: #fff;
+
+.p-column-subject {
+	padding-top: 105px;
+}
+
+.p-column {
+	display: flex;
+	flex-wrap: nowrap;
+	padding-top: 50px;
+}
+
+.p-column-contents {
+	background-image: url(../img/picture/resume-background.jpg);
+	background-repeat: no-repeat;
+	height: 240px;
+	width: 380px;
+	margin-left: 20px;
+	border-radius: 10px;
+	position: relative;
+	flex-grow: 1;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+	&:hover {
+		opacity: 0.8;
+		transition: 0.3s;
+	}
+
+	&:first-child {
+		margin-left: 0;
+	}
+	
+	&::before {
+		content: '';
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 10px;
+		top: 0;
+		left: 0;
+		height: 240px;
+		width: 100%;
+		display: block;
+		position: absolute;
+	}
+
+	&:nth-child(2n) {
+		background-image: url(../img/picture/laptop-background.jpg);
+	}
+}
+
+.p-column-title {
+	font-size: 24px;
+	text-align: center;
+	font-weight: 700;
+	font-family: Noto Sans JP;
+}
+
+.p-column-text {
+	color: $white;
+	position: absolute;
+	font-size: 16px;
+	text-align: center;
+}
+
+.p-column-paragraph {
+	padding-top: 35px;
+	line-height: 25px;
+}
+
+.p-column-button {
+	padding-top: 80px;
+	text-align: center;
+	width: 360px;
+	height: 60px;
+}

@@ -1,2 +1,17 @@
 @use '../object/utility/utility.scss';
 // headerのスタイルを記述するファイル
+$black: #000000;
+
+.l-header {
+	position: fixed;
+	width: 100%;
+	height: 91px;
+	z-index: 1000;
+	text-align: right;
+	padding-top: 20px;
+}
+
+.l-Vertical-line {
+	border-left: 2px solid $black;
+	padding: 2px 15px;
+}

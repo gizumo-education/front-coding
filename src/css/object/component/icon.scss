@@ -1,0 +1,31 @@
+@use '../../object/utility/utility.scss';
+
+.c-header-symbol {
+	width: 15px;
+	height: 15px;
+}
+
+.c-search-icon {
+	background-image: url(../img/icon/white-glass.png);
+	padding: 15px 20px 21px 48px;
+	text-align: center;
+	background-position: left 15px center;
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	overflow-wrap: break-word;
+	text-align: center;
+	width: 140px;
+	height: 60px;
+}
+
+.c-flow-direction {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.c-flow-icon {
+	margin: 8.87px 0 0 8.87px;
+	width: 60px;
+	height: 60px;
+}

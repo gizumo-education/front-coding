@@ -1,0 +1,20 @@
+@use '../../object/utility/utility.scss';
+$white-blue: #EFF6FC;
+
+.p-search {
+	text-align: center;
+	background: $white-blue;
+	height: 240px;
+	border-radius: 10px;
+	padding-top: 40px;
+}
+
+.p-search-text {
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.p-search-button {
+	width: 140px;
+	height: 60px;
+}

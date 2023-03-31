@@ -1,2 +1,10 @@
 @use '../object/utility/utility.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 // innerのスタイルを記述するファイル
+
+.inner {
+ width: 1180px;
+ font-family: Noto Sans JP;
+ margin-right: auto;
+ margin-left: auto;
+}

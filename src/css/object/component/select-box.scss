@@ -1,0 +1,51 @@
+@use '../../object/utility/utility.scss';
+$pink: #DE1E79;
+
+.c-select-box {
+	border: 1px solid $pink;
+	border-radius: 7px;
+	width: 200px;
+	height: 60px;
+	font-size: 18px;
+	-webkit-appearance: none;
+	appearance: none;
+	margin-left: 15px;
+	padding: 17px 0 17px 15px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.c-select-subject {
+	margin-top: 26.5px;
+}
+
+.c-select-box::-ms-expand {
+	display: none;
+}
+
+select {
+	background-image: url(../img/icon/select.png);
+	background-position: right 10px center;
+	background-repeat: no-repeat;
+	background-size: 20px 10px;
+}
+
+.c-select-container-above{
+	margin: 61px auto 59px auto;
+}
+
+.c-select-container-bottom {
+	margin: 150px auto 200px auto;
+}
+
+.c-select-keyword {
+	width: 300px;
+	border: 1px solid $pink;
+	border-radius: 7px;
+	height: 60px;
+	font-size: 18px;
+	margin: 0 15px 0 15px;
+	padding: 0 20px 0 10px;
+}

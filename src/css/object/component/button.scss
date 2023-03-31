@@ -1,2 +1,79 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+$blue: #92C5EA;
+$pink: #DE5579;
+$white: #FFFFFF;
+
+.c-header-button {
+	background: $blue;
+	font-size: 14px;
+	border-radius: 10px;
+	color: $white;
+	border: none;
+	margin-left: 15px;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	overflow-wrap: break-word;
+	transition: 0.3s;
+
+	&.heart {
+		background-image: url(../img/icon/heart.png);
+		padding: 15px 21px 15px 41px;
+		background-position: left 15px center;
+	}
+
+	&.clock {
+		background-image: url(../img/icon/clock.png);
+		padding: 15px 32px 15px 52px;
+		background-position: left 25px center;
+	}
+
+	&.history {
+		background-image: url(../img/icon/history.png);
+		padding: 15px 28px 15px 56px;
+		background-position: left 25px center;
+	}
+
+	&:hover {
+		opacity: 0.8;
+		transition: 0.3s;
+	}
+}
+
+.c-header-button:first-child {
+	width: 180px;
+	padding: 16px 16px 16px 50px;
+}
+
+.c-header-place {
+	position: relative;
+}
+
+.c-header-button:hover {
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+.c-pink-button {
+	background: $pink;
+	border-radius: 30px;
+	color: $white;
+	font-size: 18px;
+	border: none;
+	padding: 10px;
+	font-weight: 700;
+	transition: 0.3s;
+}
+
+.c-pink-button:hover {
+	cursor: pointer;
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+.c-pink-large-button {
+	padding: 20px 60px;
+	font-size: 18px;
+	border-radius: 60px;
+}

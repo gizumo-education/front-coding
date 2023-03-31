@@ -9,12 +9,22 @@
 @use './layout/footer.scss';
 @use './layout/header.scss';
 @use './layout/inner.scss';
+@use './layout/main.scss';
 /*-------------------------------------------*/
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/title.scss';
+@use './object/component/icon.scss';
+@use './object/component/select-box.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/explanation.scss';
+@use './object/project/news.scss';
+@use './object/project/column.scss';
+@use './object/project/characteristic.scss';
+@use './object/project/search-box.scss';
+@use './object/project/flow.scss';
 /*-------------------------------------------*/
