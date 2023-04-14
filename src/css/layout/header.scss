@@ -1,2 +1,76 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' ;
 // headerのスタイルを記述するファイル
+.l-header {
+  width: 100%;
+  background-color: utility.$white;
+  padding: 25px 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.l-header__nav {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.l-header__lists {
+  display: flex;
+}
+.l-header__list {
+    padding: 0 25px;
+    margin: 15px 0;
+    border-left: 1px solid utility.$black;
+    &:first-child {
+      border-left: none;
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+    &>a {
+      color: utility.$black;
+      font-size: 16px;
+      transition: .3s;
+    }
+    &:hover {
+      opacity: .8;
+    }
+    &-image {
+      width: 18px;
+      vertical-align: middle;
+    }
+  }
+
+.l-header__button {
+  display: flex;
+  margin-left: 25px;
+  &-item {
+      display: inline-block;
+      width: 140px;
+      margin-left: 15px;
+      text-align: center;
+      background: #92C5EA;
+      border-radius: 10px;
+      transition: .3s;
+    &:hover {
+      opacity: .8;
+    }
+    &:first-child {
+      width: 160px;
+      margin-left: 0;
+    }
+  }
+  &-content {
+    padding: 15px 0;
+    color: utility.$white;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &-image {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
