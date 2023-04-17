@@ -1,0 +1,36 @@
+@use '../../object/utility/utility.scss';
+// ギズジョブbの特徴に関するスタイル
+.p-feature {
+  padding: 105px 0;
+  text-align: center;
+  &__title {
+    font-size: 25px;
+    font-weight: utility.$bold;
+  }
+  &__container {
+    width: utility.$container;
+    margin: 0 auto;
+  }
+  &__lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 53px;
+  }
+  &__list {
+    width: calc((100% - 40px)/ 2);
+    padding: 40px 47px;
+    background-color: utility.$lightpink;
+    border-radius: 10px;
+  }
+  &__name {
+    color: utility.$pink;
+    font-size: 24px;
+    font-weight: utility.$bold;
+  }
+  &__detail {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 36px;
+  }
+}
