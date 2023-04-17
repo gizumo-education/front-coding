@@ -1,0 +1,27 @@
+@use '../../object/utility/utility.scss';
+// サブビジュアルに関するスタイル
+.p-subvisual {
+  height: 300px;
+  position: relative;
+  text-align: center;
+  &__image {
+    height: 100%;
+  }
+  &__title {
+    width: 100%;
+    height: 100%;
+    padding: 104px 0;
+    color: utility.$white;
+    font-size: 25px;
+    font-weight: utility.$bold;
+    line-height: 36px;
+    background-color: utility.$shadow;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__mt {
+    margin-top: 20px;
+  }
+}
