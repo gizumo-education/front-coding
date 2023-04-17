@@ -30,7 +30,7 @@
         right: -50px;
         border-top: 30px solid transparent;
         border-right: 25px solid transparent;
-        border-left: 25px solid util.$magenta;
+        border-left: 25px solid util.$pink;
         border-bottom: 30px solid transparent;
         transform: translate(0, -50%);
       }
@@ -39,7 +39,7 @@
       }
     }
     &__point {
-      background: util.$magenta;
+      background: util.$pink;
       color: util.$white;
       font-size: 16px;
       font-weight: util.$bold;;
@@ -70,5 +70,8 @@
       line-height: 20px;
       font-size: 14px;
     }
+  }
+  &__button {
+    margin: auto;
   }
 }

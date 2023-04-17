@@ -18,8 +18,10 @@
     }
     &__title {
       position: absolute;
-      font-size: 50px;
-      font-weight: util.$bold;
+      font: {
+        size: 50px;
+        weight:  util.$bold;
+      };
       color: util.$white;
       top: 265px;
       left: 432px;
@@ -29,9 +31,9 @@
       width: 391px;
       height: 69px;
       background-color: util.$white;
-      border: 2.3px solid util.$lightGreen;
-      border-radius: 10px;
+      border-radius: util.$radius;
       text-align: center;
+      border: 2.3px solid util.$lightGreen;
       position: absolute;
       top: 385.15px;
       left: 635.65px;

@@ -9,17 +9,23 @@ $lightGray:#D7D7D7;
 $shadowGray:#00000040;
 $lightPink:#FFCAD0;
 $palePink:#F7D2DB;
-$pink:#DE1E79;
-$magenta: #DE5579;
+$pink:#DE5579;
+$magenta: #DE1E79;
+
 
 // フォントの太さ
 $regular: 400;
 $bold: 700;
 
 $radius: 10px;
-
-@mixin hover {
+@mixin hoverFrame {
+  display: block;
   transition: .3s;
+  cursor: pointer;
+  border-radius: $radius;
+  text-align: center;
+}
+@mixin hover {
   opacity: .8;
 }
 

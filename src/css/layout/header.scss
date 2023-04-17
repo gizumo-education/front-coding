@@ -22,14 +22,16 @@
       & > li {
         display: flex;
         font-size: 16px;
+        line-height: 20px;
         border-left: 1px solid util.$black;
         margin-left: 30px;
         padding-left: 30px;
         &:first-child {
-          @include util.firstChild();
+          margin-left: 0;
           border: none;
         }
         a {
+          @include util.hoverFrame();
           color: util.$black;
           &:hover {
             @include util.hover();
@@ -53,27 +55,25 @@
       display: flex;
       font-size: 14px;
       margin-left: 25px;
-      box-sizing: border-box;
       & > li {
-        height: 50px;
-        width: 140px;
-        text-align: center;
-        box-sizing: border-box;
         margin-left: 15px;
         color: util.$white;
-        background-color: util.$blue;
         border-radius: util.$radius;
-        a {
-          display: block;
-          color: util.$white;
+        background-color: util.$blue;
+        width: 140px;
+        a { 
+          @include util.hoverFrame();
+          width: 140px;
+          height: 50px;
           padding: 15px 0;
+          color: util.$white;
           &:hover {
             @include util.hover();
           }
         }
         &:first-child {
+          margin-left: 0;
           width: 160px;
-          @include util.firstChild();
         }
     }
     &__icon-hart {
@@ -82,14 +82,15 @@
         &::before{
           content: url(../img/icon/icon-hart.png);
           vertical-align: -4px;
-          padding-right: 10.4px;
+          padding-right: 9px;
         }
       }
     }
     &__icon-clock a{
         &::before{
           content: '';
-          background-image: url(../img/icon/icon-clock.png);
+          background-image: url(../img/icon/icon-clock.png);         
+          background-position: 0px 2px;
           background-repeat: no-repeat;
           background-size: 18px 18px;
           padding-right: 23px;
