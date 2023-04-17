@@ -1,2 +1,38 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+.p-keyvisual {
+  margin-top: 100px;
+  background-color: utility.$gray;
+  position: relative;
+  text-align: center;
+  &__box {
+    position: absolute;
+    top: 56px;
+    right: 10%;
+  }
+  &__logo {
+    display: block;
+    width: 341px;
+    margin: 0 auto;
+  }
+  &__word {
+    display: block;
+    width: 800px;
+    margin: 40px auto 0;
+  }
+  &__postings{
+    display: inline-block;
+    padding: 6px 41px 0;
+    margin-top: 54px;
+    color: utility.$green;
+    font-size: 20px;
+    line-height: 50px;
+    background-color: utility.$white;
+    border: 2.3px solid utility.$green;
+    border-radius: 10px;
+    &-bold {
+      font-size: 40px;
+      font-weight: utility.$bold;
+    }
+  }
+}
