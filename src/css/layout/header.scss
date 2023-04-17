@@ -59,15 +59,14 @@
         width: 140px;
         text-align: center;
         box-sizing: border-box;
-        padding: 15px 0;
         margin-left: 15px;
         color: util.$white;
         background-color: util.$blue;
         border-radius: util.$radius;
         a {
           display: block;
-          height: 50px;
           color: util.$white;
+          padding: 15px 0;
           &:hover {
             @include util.hover();
           }

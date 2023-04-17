@@ -15,6 +15,9 @@
     font-size: 16px;
     & > a{
       color: util.$black;
+      &:hover {
+        @include util.hover();
+      }
     }
   }
   &__small {
@@ -36,6 +39,9 @@
       }
       & > li a {
         color: util.$black;
+        &:hover {
+          @include util.hover();
+        }
       }
     }
     &__left {
@@ -45,6 +51,9 @@
       }
       & > li a {
         color: util.$black;
+        &:hover {
+          @include util.hover();
+        }
       }
     }
   }
@@ -54,6 +63,9 @@
       margin-top: 15px;
       &:first-child {
         margin-top: 0;
+      }
+      &:hover {
+        @include util.hover();
       }
     }
     &__under {
