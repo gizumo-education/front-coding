@@ -1,6 +1,29 @@
 $white: #fff;
 $black: #000;
+$blue:#92C5EA;
+$lightBlue:#DEEEF9;
+$paleBlue:#EFF6FC;
+$lightGreen:#2EB6AA;
+$gray:#98B1BE;
+$lightGray:#D7D7D7;
+$shadowGray:#00000040;
+$lightPink:#FFCAD0;
+$palePink:#F7D2DB;
+$pink:#DE1E79;
+$magenta: #DE5579;
 
 // フォントの太さ
 $regular: 400;
 $bold: 700;
+
+$radius: 10px;
+
+@mixin hover {
+  transition: .3s;
+  opacity: .8;
+}
+
+
+@mixin firstChild {
+  margin-left: 0;
+}

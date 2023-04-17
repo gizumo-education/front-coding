@@ -1,2 +1,108 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as util;
 // headerのスタイルを記述するファイル
+.l-header {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: util.$white;
+  z-index: 1000;
+  &__wrapper {
+    margin: auto;
+    display: flex;
+    width: 1400px;
+    justify-content: flex-end;
+    padding: 25px 0;
+    &__link {
+      display: flex;
+      font-size: 16px;
+      line-height: 21px;
+      align-items: center;
+      & > li {
+        display: flex;
+        font-size: 16px;
+        border-left: 1px solid util.$black;
+        margin-left: 30px;
+        padding-left: 30px;
+        &:first-child {
+          @include util.firstChild();
+          border: none;
+        }
+        a {
+          color: util.$black;
+          &:hover {
+            @include util.hover();
+          }
+        }
+      }
+      &__icon-search a{
+        &::before {
+          content: url(../img/icon/icon-search.png);
+          vertical-align: -4px;
+        }
+      }
+      &__icon-book a{
+        &::before {
+          content: url(../img/icon/icon-book.png);
+          vertical-align: -4px;
+        }
+      }
+    }
+    &__list {
+      display: flex;
+      font-size: 14px;
+      margin-left: 25px;
+      box-sizing: border-box;
+      & > li {
+        height: 50px;
+        width: 140px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 15px 0;
+        margin-left: 15px;
+        color: util.$white;
+        background-color: util.$blue;
+        border-radius: util.$radius;
+        a {
+          display: block;
+          height: 50px;
+          color: util.$white;
+          &:hover {
+            @include util.hover();
+          }
+        }
+        &:first-child {
+          width: 160px;
+          @include util.firstChild();
+        }
+    }
+    &__icon-hart {
+      & > a {
+        display: block;
+        &::before{
+          content: url(../img/icon/icon-hart.png);
+          vertical-align: -4px;
+          padding-right: 10.4px;
+        }
+      }
+    }
+    &__icon-clock a{
+        &::before{
+          content: '';
+          background-image: url(../img/icon/icon-clock.png);
+          background-repeat: no-repeat;
+          background-size: 18px 18px;
+          padding-right: 23px;
+        }
+      }
+      &__icon-search a{
+        &::before{
+          content: url(../img/icon/icon-camera.png);
+          vertical-align: -2px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

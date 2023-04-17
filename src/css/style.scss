@@ -1,8 +1,8 @@
 @charset "UTF-8";
-
 /*foundation---------------------------------*/
 @use './foundation/_reset.scss';
 @use './foundation/_base.scss';
+@use './foundation/_variables.scss';
 /*-------------------------------------------*/
 
 /*layout---------------------------------*/
@@ -17,4 +17,10 @@
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/search.scss';
+@use './object/project/jobInfo.scss';
+@use './object/project/feature.scss';
+@use './object/project/plan.scss';
+@use './object/project/contents.scss';
+@use './object/project/about.scss';
 /*-------------------------------------------*/

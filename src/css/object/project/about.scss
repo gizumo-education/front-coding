@@ -1,0 +1,32 @@
+@use '../../object/utility/utility.scss' as util;
+.p-about {
+  margin: auto;
+  background-image: url(../img/picture/about-img.jpg);
+  width: 1600px;
+  height: 300px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: util.$black;
+    width: 1600px;
+    height: 300px;
+    opacity: 50%;
+  }
+  &__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &__text {
+      color: util.$white;
+      text-align: center;
+      line-height: 36px;
+      margin-top: 21px;
+      font: {
+        size: 25px;
+        weight: util.$bold;
+      };
+    }
+  }
+}
