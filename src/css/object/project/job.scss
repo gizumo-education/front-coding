@@ -1,0 +1,56 @@
+@use '../../object/utility/utility.scss';
+// ジョブに関するスタイル
+.p-job {
+  background-color: utility.$skyblue;
+  padding: 64px 0 67px;
+  text-align: center;
+  &__container {
+    width: utility.$container;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: left;
+  }
+  &__lists {
+    display: flex;
+    margin-top: 25px;
+  }
+  &__list {
+    width: calc((100% - 20px * 3) / 4);
+    margin-left: 20px;
+    text-align: left;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &__image {
+    border-radius: 10px;
+  }
+  &__detail {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 8px;
+  }
+  &__table {
+    margin-top: 8px;
+    border-collapse: separate;
+    border-spacing: 4px;
+  }
+  &__name {
+    width: 60px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    background-color: utility.$sakura;
+  }
+  &__value {
+    font-size: 14px;
+    padding-left: 6px;
+  }
+  &__button {
+    padding: 0 72px;
+    margin-top: 60px;
+  }
+}
