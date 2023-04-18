@@ -1,0 +1,76 @@
+@use '../../object/utility/utility.scss';
+// 転職の流れnagareに関するスタイル
+.p-flow {
+  text-align: center;
+  &__title {
+    font-size: 25px;
+    font-weight: utility.$bold;
+  }
+  &__container {
+    width: utility.$container;
+    margin: 0 auto;
+  }
+  &__lists {
+    display: flex;
+    margin-top: 52px;
+  }
+  &__list {
+    width: calc((100% - 22px * 3)/ 4);
+    height: 360px;
+    padding: 50px 18px 40px;
+    margin-left: 22px;
+    font-size: 24px;
+    line-height: 60px;
+    border: 2px solid utility.$pink;
+    border-radius: 10px;
+    position: relative;
+    &:first-child {
+      margin-left: 0;
+    }
+    &::after {
+      border-left: 20px solid utility.$form-box;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      content: "";
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+    }
+    &:last-child::after {
+      content: none;
+    }
+    &:nth-child(1),&:nth-child(2) {
+      line-height: 30px;
+    }
+  }
+  &__step {
+    display: inline-grid;
+    width: 60px;
+    height: 60px;
+    color: utility.$white;
+    font-size: 16px;
+    line-height: 19px;
+    align-content: center;
+    background-color: utility.$pink;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+  &__icon {
+    width: 100px;
+    height: 100px;
+  }
+  &__name {
+    margin-top: 30px;
+    font-weight: utility.$bold;
+  }
+  &__detail {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 18px;
+    text-align: left;
+  }
+}
