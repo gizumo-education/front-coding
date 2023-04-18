@@ -25,6 +25,13 @@
       margin-left: 0;
     }
   }
+  &__link {
+    color: utility.$black;
+    transition: .3s;
+    &:hover {
+      opacity: .8;
+    }
+  }
   &__image {
     border-radius: 10px;
   }
