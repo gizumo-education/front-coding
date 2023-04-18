@@ -8,7 +8,7 @@
     margin: 0 auto;
     text-align: center;
     border-radius: 10px;
-    background-color: utility.$form-bg;
+    background-color: utility.$blue;
   }
   &__title {
     font-size: 25px;
@@ -28,7 +28,7 @@
     margin-left: 15px;
     position: relative;
     &::after {
-      border-top: 10px solid utility.$form-box;
+      border-top: 10px solid utility.$deep-pink;
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
       content: "";
@@ -45,7 +45,7 @@
     font-size: 18px;
     line-height: 26px;
     background-color: utility.$white;
-    border: 1px solid utility.$form-box;
+    border: 1px solid utility.$deep-pink;
     border-radius: 10px;
     appearance: none;
     -webkit-appearance: none;
@@ -60,7 +60,7 @@
     margin-left: 15px;
     font-size: 18px;
     line-height: 26px;
-    border: 1px solid utility.$form-box;
+    border: 1px solid utility.$deep-pink;
     border-radius: 10px;
     vertical-align: bottom;
     appearance: none;
