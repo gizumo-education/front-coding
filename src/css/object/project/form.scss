@@ -44,10 +44,12 @@
     padding: 16px 15px;
     font-size: 18px;
     line-height: 26px;
+    background-color: utility.$white;
     border: 1px solid utility.$form-box;
     border-radius: 10px;
     appearance: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
     &:first-child {
       margin-left: 0;
     }
@@ -63,6 +65,7 @@
     vertical-align: bottom;
     appearance: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
   }
   &__button {
     padding: 0 20px 0 14px;
