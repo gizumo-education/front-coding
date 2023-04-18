@@ -22,8 +22,11 @@
         @include util.firstChild();
       }
       a {
+        display: block;
+        transition: .3s;
+        cursor: pointer;
+        border-radius: util.$radius;
         color: util.$black;
-        @include util.hoverFrame();
         &:hover {
           @include util.hover();
         }
