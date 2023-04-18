@@ -2,18 +2,19 @@
 // 共通パーツであるボタンのスタイルを記述するファイル
 .c-button {
   &__middle {
+    height: 60px;
+    width: 360px;
     border-radius: 30px;
+    line-height: 60px;
     background-color: util.$pink;
     border: none;
     cursor: pointer;
     transition: .3s;
-    & > a {
-      line-height: 60px;
-      height: 60px;
-      width: 360px;
-      color: util.$white;
-      box-sizing: border-box;
-    }
+    color: util.$white;
+    text: {
+      align: center;
+      decoration: none; 
+    };
     font: {
       size: 18px;
       weight: util.$bold;
@@ -26,11 +27,15 @@
     width: 140px;
     height: 60px;
     border-radius: 30px;
-    background-color: util.$pink;
     margin-left: 16px;
-    background-image: url(../img/icon/search-button.png);
-    background-position: 15.02px 14.02px;
-    background-repeat: no-repeat;
+    color: util.$white;
+    padding-left: 30px;
+    background: {
+      color: util.$pink;
+      image: url(../img/icon/search-button.png);
+      position: 15.02px 14.02px;
+      repeat: no-repeat;
+    };
     border: none;
     cursor: pointer;
     transition: .3s;

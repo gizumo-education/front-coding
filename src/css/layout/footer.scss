@@ -58,7 +58,10 @@
     }
   }
   &__banner {
+    width: 320px;
+    height: 85px;
     & > a {
+      transition: .3s;
       margin-top: 15px;
       &:first-child {
         margin-top: 0;

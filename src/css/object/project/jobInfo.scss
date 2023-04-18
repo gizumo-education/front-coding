@@ -32,9 +32,8 @@
         }
       }
     }
-    &__img img{
-      width: 280px;
-      height: 200px;
+    &__img  {
+      display: block;
       border-radius: util.$radius;
     }
     &__summary {

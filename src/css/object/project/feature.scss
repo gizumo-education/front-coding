@@ -28,6 +28,9 @@
       &:nth-child(2n+1) {
         @include util.firstChild();
       }
+      &:nth-child(-n+2) {
+        margin-top: 0;
+      }
     }
     &__summary {
       font-size: 24px;

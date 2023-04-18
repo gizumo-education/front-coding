@@ -51,6 +51,7 @@
       padding: 11px 9px;
     }
     &__img {
+      display: block;
       height: 99px;
       width: 102px;
       margin: auto;
@@ -61,7 +62,7 @@
       text-align: center;
       height: 60px;
       line-height: 30px;
-      margin-top: 20px;
+      margin-top: 30px;
     }
     &__text {
       margin: 18px auto 0;

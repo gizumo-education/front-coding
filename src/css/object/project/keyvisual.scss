@@ -7,36 +7,31 @@
     margin: auto;
     height: 500px;
     width: 1262px;
-    position: relative;
     &__logo {
-      background-image: url(../img/icon/keyvisual.png);
-      height: 168px;
-      width: 341px;
-      position: absolute;
-      top: 56px;
-      left: 665px;
+      display: block;
+      margin-left: 655px;
+      padding-top: 56px;
     }
     &__title {
-      position: absolute;
       font: {
         size: 50px;
         weight:  util.$bold;
       };
       color: util.$white;
-      top: 265px;
-      left: 432px;
       text-shadow: 4px 4px 3px util.$shadowGray;
+      margin-left: 432px;
+      padding-top: 40px;
     }
     &__box {
+      display: block;
       width: 391px;
       height: 69px;
       background-color: util.$white;
       border-radius: util.$radius;
       text-align: center;
       border: 2.3px solid util.$lightGreen;
-      position: absolute;
-      top: 385.15px;
-      left: 635.65px;
+      margin-top: 55px;
+      margin-left: 635px;
       &__text {
         color: util.$lightGreen;
         line-height: 58px;
@@ -50,6 +45,27 @@
           };
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .p-keyvisual {
+    &__wrapper {
+      width: 100%;
+      background: {
+        size: contain;
+        repeat: no-repeat;
+        position: center bottom;
+      };
+    }
+    &__logo {
+      width: auto;
+      height: auto;
+      position: absolute;
+    }
+    &__title {
+      font-size: 17px;
     }
   }
 }
