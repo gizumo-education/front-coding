@@ -51,21 +51,27 @@
 
 @media screen and (max-width: 1199px) {
   .p-keyvisual {
+    width: 97%;
     &__wrapper {
-      width: 100%;
       background: {
         size: contain;
         repeat: no-repeat;
-        position: center bottom;
       };
+      &__logo {
+        width: 30%;
+        padding: 0;
+      }
+      &__title {
+        margin: auto;
+      }
+      &__box {
+      }
     }
-    &__logo {
-      width: auto;
-      height: auto;
-      position: absolute;
-    }
-    &__title {
-      font-size: 17px;
-    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .p-keyvisual {
+
   }
 }
