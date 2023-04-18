@@ -1,6 +1,7 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
 .l-footer {
+  margin-top: 140px;
   background-color: utility.$skyblue;
   &__container {
     width: utility.$container;
