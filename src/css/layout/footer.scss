@@ -1,2 +1,8 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as var;
 // footerのスタイルを記述するファイル
+
+#footer {
+  background-color: var.$background-color;
+  padding: 55px 210px 25px 210px;
+  width: 100%;
+}

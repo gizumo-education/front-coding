@@ -1,0 +1,31 @@
+@use '../object/utility/utility.scss' as var;
+
+.l-wrapper {
+  width: 100%;
+  font-weight: var.$regular;
+  font-size: 16px;
+}
+
+button, input, select {
+  appearance: none;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var.$bold;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  
+}

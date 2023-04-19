@@ -1,0 +1,211 @@
+@use '../../object/utility/utility.scss' as var;
+// ページ上部のキービジュアルに関するスタイル
+
+.p-keyVisual {
+  height: 500px;
+  justify-content: flex-end;
+  position: relative;
+
+  &__img {
+    height: 500px;
+    z-index: 10;
+  }
+  &__text {
+    position: absolute;
+    left: 51.88%;
+    top: 10%;
+
+  }
+  &__message {
+    position: absolute;
+    left: 37.94%;
+    top: 55.17%;
+  }
+  &__number {
+    position: absolute;
+    left: 50%;
+    top: 80.17%;
+
+    background-color: var.$white;
+    padding: 5px 40px;
+    border-radius: 10px;
+    border: #2EB6AA solid 2px;
+
+    p {
+      color: #2EB6AA;
+      font-weight: var.$bold;
+      font-size: 40px;
+
+      &::before {
+        content: "現在の求人掲載数：";
+        font-weight: var.$regular;  
+        font-size: 20px;      
+
+      }
+    }
+  }
+}
+
+.p-columnLeft {
+  width: 170px;
+  height: 500px;
+  background: #98B1BE;
+}
+.p-columnRight {
+  width: 170px;
+  height: 500px;
+  background: #98B1BE;
+}
+
+.p-seachJob {
+  &__box {
+    background-color: var.$serchBoxColor;
+    text-align: center;
+  }
+}
+
+.p-articles {
+
+  & > p {
+    font-size: 25px;
+    font-weight: var.$regular;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__list {
+    li {
+      margin-left: 20px;
+      p {
+        margin-top: 5px;
+      }
+      table {
+        margin-top: 5px;
+      }
+    }
+  
+    li:first-child {
+      margin-left: 0;
+    }
+  }
+
+}
+
+.p-belt {
+  position: relative;
+
+  img {
+    height: 300px;
+  }
+  p {
+    font-weight: var.$bold;
+    font-size: 25px;
+    color: var.$white;
+  }
+
+  &__cover {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__textUpper {
+    position: absolute;
+    top: 33%;
+    left: 35%;
+    z-index: 1;
+  }
+  &__textLower {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    z-index: 1;
+  
+
+  }
+}
+
+.p-flowContainer {
+  display: flex; 
+  justify-content: center;
+  
+  li {
+    margin-left: 20px;
+  }
+  li:first-child {
+    margin-left: 0;
+  }
+  
+  li:last-child::after {
+    content: none;
+  }
+}
+.p-helpContents {
+  display: flex;
+  margin-top: 50px;
+}
+.p-helpContent {
+  position: relative;
+  width: 380px;
+  height: 240px;
+
+  margin-left: 20px;
+
+  li:first-child {
+    margin-left: 0;
+  }
+
+  &__cover {
+    display: block;
+    width: 380px;
+    height: 240px;
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__title {
+    color: var.$white;
+    opacity: 2;
+
+    padding-top: 70px;
+  }
+  &__text {
+    color: var.$white;
+    opacity: 2;
+
+    margin-top: 45px;
+    padding: 0 60px;
+  }
+}
+
+.p-footer {
+  justify-content: space-between;
+}
+
+.p-footerList {
+
+  ul {
+    li {
+      margin-top: 20px;
+    }
+
+    li:first-child {
+      margin-top: 25px;
+    }
+  }
+}
+
+.p-footerImg {
+  flex-direction: column;
+
+  img {
+    display: block;
+  }
+}

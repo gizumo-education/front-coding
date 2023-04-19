@@ -1,0 +1,51 @@
+@use '../utility/utility.scss' as var;
+
+.c-searchJobList {
+  width: 200px;
+  height: 60px;
+  border: 1px solid var.$pink;
+  border-radius: 10px;
+}
+.c-searchJobInput {
+  width: 300px;
+  height: 60px;
+  border: 1px solid var.$pink;
+  border-radius: 10px;
+}
+
+.c-boxFlow {
+  height: 350px;
+  width: 270px;
+  
+  border: 2px solid var.$pink;
+  border-radius: 10px;
+  position: relative;
+
+  text-align: center;
+
+  &::after {
+    border-left: 16px solid var.$pink;
+    border-right: 16px solid transparent;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    content: "";
+    position: absolute;
+    right: -12.5%;
+    top: 40%;
+    width: 0;
+  }
+
+  
+  h2 {
+    position: absolute;
+    top: 50%;
+  }
+  p{
+    position: absolute;
+    top: 70%;
+
+  }
+}
+
+
+

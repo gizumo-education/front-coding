@@ -9,12 +9,24 @@
 @use './layout/footer.scss';
 @use './layout/header.scss';
 @use './layout/inner.scss';
+@use './layout/wrapper.scss';
 /*-------------------------------------------*/
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/imgIcon.scss';
+@use './object/component/box.scss';
+@use './object/component/table.scss';
+@use './object/component/feature.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
-@use './object/project/keyvisual.scss';
+@use './object/project/project.scss';
 /*-------------------------------------------*/
+
+/*utility---------------------------------*/
+@use './object/utility/marginPadding.scss';
+@use './object/utility/display.scss';
+/*-------------------------------------------*/
+
+
