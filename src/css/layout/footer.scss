@@ -1,2 +1,61 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
+.l-footer {
+  margin-top: 140px;
+  background-color: utility.$skyblue;
+  &__container {
+    width: utility.$container;
+    padding: 55px 0 25px;
+    margin: 0 auto;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    line-height: 23px;
+    margin-top: 25px;
+  }
+  &__linklists {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-top: 27px;
+    line-height: 36px;
+  }
+  &__linklist {
+    width: 160px;
+    margin-left: 40px;
+    &:nth-child(2n+1) {
+      width: 96px;
+      margin-left: 0;
+    }
+  }
+  &__link {
+    color: utility.$black;
+    transition: .3s;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &__linkimage {
+    width: 320px;
+    margin-top: 15px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__image {
+    transition: .3s;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &__copyright {
+    display: block;
+    width: 100%;
+    padding: 11px 0;
+    font-size: 14px;
+    text-align: center;
+    background-color: utility.$lightgray;
+  }
+}

@@ -1,0 +1,75 @@
+@use '../../object/utility/utility.scss';
+// フォームに関するスタイル
+.p-form {
+  padding: 60px;
+  &__container {
+    width: utility.$container;
+    padding: 40px 0;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    background-color: utility.$blue;
+  }
+  &__title {
+    font-size: 25px;
+    font-weight: utility.$bold;
+  }
+  &__detail {
+    font-size: 20px;
+    line-height: 29px;
+    margin-top: 20px;
+  }
+  &__row {
+    margin-top: 26.5px;
+  }
+  &__selectarea {
+    display: inline-block;
+    width: 200px;
+    margin-left: 15px;
+    position: relative;
+    &::after {
+      border-top: 10px solid utility.$deep-pink;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+    }
+  }
+  &__selectbox {
+    width: 100%;
+    padding: 16px 15px;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: utility.$white;
+    border: 1px solid utility.$deep-pink;
+    border-radius: 10px;
+    appearance: none;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &__search {
+    width: 300px;
+    padding: 16px 0 16px 10px;
+    margin-left: 15px;
+    font-size: 18px;
+    line-height: 26px;
+    border: 1px solid utility.$deep-pink;
+    border-radius: 10px;
+    vertical-align: bottom;
+    appearance: none;
+  }
+  &__button {
+    padding: 0 20px 0 14px;
+    margin-left: 15px;
+  }
+  &__icon {
+    width: 29px;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+}
