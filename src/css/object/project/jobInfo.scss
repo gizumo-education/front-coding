@@ -61,3 +61,18 @@
     margin: 60px auto 0;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .p-jobInfo {
+    &__wrapper {
+      width: 95%;
+      &__items {
+        display: block;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 767px) {
+
+}

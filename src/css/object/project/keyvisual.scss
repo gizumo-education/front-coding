@@ -50,27 +50,44 @@
 }
 
 @media screen and (max-width: 1199px) {
+  html {
+    font-size: 62.5%;
+  }
   .p-keyvisual {
-    width: 97%;
     &__wrapper {
+      width: auto;
+      height: auto;
       background: {
+        position: center top;
         size: contain;
         repeat: no-repeat;
       };
       &__logo {
-        width: 30%;
+        margin: 0;
+        width: 10%;
         padding: 0;
       }
       &__title {
-        margin: auto;
+        font-size: 1.7rem;
+        margin: 0;
       }
       &__box {
+        width: 22.9%;
+        height: 20%;
+        margin: 0;
+        &__text {
+          line-height: 3rem;
+          font-size: 0.7rem;
+          & >span {
+            font-size: 1.6rem;
+          }
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .p-keyvisual {
 
   }

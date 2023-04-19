@@ -64,3 +64,16 @@
     }
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .p-search {
+    width: 95%;
+    &__formContent {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+}
