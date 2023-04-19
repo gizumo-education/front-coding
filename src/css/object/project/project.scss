@@ -1,6 +1,11 @@
 @use '../../object/utility/utility.scss' as var;
 // ページ上部のキービジュアルに関するスタイル
 
+
+.p-keyVisuals {
+  display: flex;
+  justify-content: center;
+}
 .p-keyVisual {
   height: 500px;
   justify-content: flex-end;
@@ -51,6 +56,11 @@
     background-color: var.$serchBoxColor;
     text-align: center;
   }
+}
+
+.p-searchJobLists {
+  display: flex;
+  justify-content: center;
 }
 
 .p-articles {
