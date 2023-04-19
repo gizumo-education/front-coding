@@ -129,7 +129,6 @@
 
 .p-flowContainer {
   display: flex; 
-  justify-content: center;
   
   li {
     margin-left: 20px;
@@ -141,6 +140,23 @@
   li:last-child::after {
     content: none;
   }
+}
+.p-flowContainer {
+  justify-content: center;
+
+}
+.p-boxFlow {
+  text-align: center;
+  
+}
+.p-flowTitle {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+.p-flowText {
+  display: block;
+  width: 90%;
 }
 .p-helpContents {
   display: flex;
