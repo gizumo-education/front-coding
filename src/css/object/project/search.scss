@@ -1,0 +1,66 @@
+@use '../utility/utility.scss' as util;
+.p-search {
+  background-color: util.$lightBlue;
+  width: 1180px;
+  height: 240px;
+  margin: 61px auto 0;
+  padding: 40px;
+  border-radius: util.$radius;
+  text-align: center;
+  &__title {
+    font-size: 25px;
+    font-weight: util.$bold;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 29px;
+    margin-top: 20px;
+  }
+  &__formContent {
+    display: flex;
+    margin-top: 26.5px;
+    &__select {
+      position: relative;
+      margin-left: 16px;
+      &:first-of-type {
+        @include util.firstChild();
+      }
+      &__box {
+        width: 200px;
+        height: 60px;
+        appearance: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+        outline: none;
+        font-size: 18px;
+        padding-left: 15px;
+        border-radius: util.$radius;
+        border: 1px solid util.$pink;
+        background-color: util.$white;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 25px;
+        right: 14.5px;
+        width: 0;
+        height: 0;
+        border-top: 10px solid util.$pink;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
+    }
+    &__text {
+      width: 300px;
+      height: 60px;
+      font-size: 18px;
+      border: 1px solid util.$pink;
+      border-radius: 10px;
+      margin-left: 16px;
+      appearance: none;
+      outline: none;
+      padding-left: 9.5px;
+    }
+  }
+}

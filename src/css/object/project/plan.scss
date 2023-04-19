@@ -1,0 +1,78 @@
+@use '../../object/utility/utility.scss' as util;
+
+.p-plan {
+  width: 1180px;
+  margin: 105px auto 0;
+  &__title {
+    text-align: center;
+    font: {
+      size: 25px;
+      weight: util.$bold;
+    }
+  }
+  &__list {
+    margin-top: 51.13px;
+    display: flex;
+    & > li {
+      width: 277.73px;
+      height: 357.73px;
+      margin-left: 22.17px;
+      border: 2.27px solid util.$magenta;
+      border-radius: util.$radius;
+      position: relative;
+      &:first-child {
+        @include util.firstChild();
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -50px;
+        border-top: 30px solid transparent;
+        border-right: 25px solid transparent;
+        border-left: 25px solid util.$pink;
+        border-bottom: 30px solid transparent;
+        transform: translate(0, -50%);
+      }
+      &:last-child::after {
+        content: none;
+      }
+    }
+    &__point {
+      background: util.$pink;
+      color: util.$white;
+      font-size: 16px;
+      font-weight: util.$bold;;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      text-align: center;
+      margin: 8.87px 0 0 8.87px;
+      padding: 11px 9px;
+    }
+    &__img {
+      display: block;
+      height: 99px;
+      width: 102px;
+      margin: auto;
+    }
+    &__title {
+      font-size: 24px;
+      font-weight: util.$bold;
+      text-align: center;
+      height: 60px;
+      line-height: 30px;
+      margin-top: 30px;
+    }
+    &__text {
+      margin: 18px auto 0;
+      width: 237px;
+      height: 60px;
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
+  &__button {
+    margin: auto;
+  }
+}

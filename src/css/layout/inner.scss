@@ -1,2 +1,12 @@
 @use '../object/utility/utility.scss';
 // innerのスタイルを記述するファイル
+.l-main {
+  padding-top: 100px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .l-main {
+    padding-top: 0;
+  }
+}

@@ -1,2 +1,77 @@
-@use '../../object/utility/utility.scss';
+@use '../utility/utility.scss' as util;
 // ページ上部のキービジュアルに関するスタイル
+.p-keyvisual {
+  background-color: util.$gray;
+  &__wrapper {
+    background-image: url(../img/picture/keyvisual-bg.jpg);
+    margin: auto;
+    height: 500px;
+    width: 1262px;
+    &__logo {
+      display: block;
+      margin-left: 655px;
+      padding-top: 56px;
+    }
+    &__title {
+      font: {
+        size: 50px;
+        weight:  util.$bold;
+      };
+      color: util.$white;
+      text-shadow: 4px 4px 3px util.$shadowGray;
+      margin-left: 432px;
+      padding-top: 40px;
+    }
+    &__box {
+      display: block;
+      width: 391px;
+      height: 69px;
+      background-color: util.$white;
+      border-radius: util.$radius;
+      text-align: center;
+      border: 2.3px solid util.$lightGreen;
+      margin-top: 55px;
+      margin-left: 635px;
+      &__text {
+        color: util.$lightGreen;
+        line-height: 58px;
+        font: {
+          size: 20px;
+          weight: util.$bold;
+        };
+        & > span {
+          font: {
+            size: 40px;
+          };
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .p-keyvisual {
+    width: 97%;
+    &__wrapper {
+      background: {
+        size: contain;
+        repeat: no-repeat;
+      };
+      &__logo {
+        width: 30%;
+        padding: 0;
+      }
+      &__title {
+        margin: auto;
+      }
+      &__box {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .p-keyvisual {
+
+  }
+}

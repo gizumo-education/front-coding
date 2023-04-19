@@ -1,0 +1,76 @@
+@use '../../object/utility/utility.scss' as util;
+.p-contents {
+  width: 1180px;
+  margin: 105px auto 0;
+  &__title {
+    text-align: center;
+    font: {
+      size: 25px;
+      weight: util.$bold;
+    }
+  }
+  &__list {
+    display: flex;
+    margin-top: 50px;
+    & > li {
+      background-image: url(../img/picture//print.jpg);
+      width: 380px;
+      height: 240px;
+      border-radius: util.$radius;
+      text-align: center;
+      border-radius: 0px;
+      margin-left: 20px;
+      position: relative;
+      transition: .3s;
+      cursor: pointer;
+      & > a {
+        display: block;
+        width: 380px;
+        height: 240px;
+        color: util.$white;
+      }
+      &::before {
+        content: '';
+        width: 380px;
+        height: 240px;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: util.$black;
+        opacity: 50%;
+      }
+      &:first-child {
+        @include util.firstChild();
+      }
+      &:nth-child(2) {
+        background-image: url(../img/picture/pc.jpg);
+      }
+      &:hover {
+        @include util.hover();
+      }
+    }
+    &__box {
+      display: block;
+      padding: 63px 46px;
+      position: absolute;
+      z-index: 100;
+    }
+    &__title {
+      font: {
+        size: 24px;
+        weight: util.$bold;
+      }
+    }
+    &__detail {
+      font-size: 16px;
+      margin-top: 44px;
+      line-height: 23px;
+      width: 288px;
+    }
+  }
+  &__button {
+    display: block;
+    margin: 80px auto 0;
+  }
+}

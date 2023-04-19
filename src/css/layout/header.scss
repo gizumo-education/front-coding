@@ -1,2 +1,118 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as util;
 // headerのスタイルを記述するファイル
+.l-header {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: util.$white;
+  z-index: 1000;
+  &__wrapper {
+    margin: auto;
+    display: flex;
+    width: 1400px;
+    justify-content: flex-end;
+    padding: 25px 0;
+    &__link {
+      display: flex;
+      font-size: 16px;
+      line-height: 21px;
+      align-items: center;
+      & > li {
+        display: flex;
+        font-size: 16px;
+        border-left: 1px solid util.$black;
+        margin-left: 30px;
+        padding-left: 30px;
+        &:first-child {
+          margin-left: 0;
+          border: none;
+        }
+        a {
+          @include util.hoverFrame();
+          color: util.$black;
+          &:hover {
+            @include util.hover();
+          }
+        }
+      }
+      &__icon-search a{
+        &::before {
+          content: url(../img/icon/icon-search.png);
+          vertical-align: -4px;
+        }
+      }
+      &__icon-book a{
+        &::before {
+          content: url(../img/icon/icon-book.png);
+          vertical-align: -4px;
+        }
+      }
+    }
+    &__list {
+      display: flex;
+      font-size: 14px;
+      margin-left: 25px;
+      & > li {
+        margin-left: 15px;
+        color: util.$white;
+        border-radius: util.$radius;
+        background-color: util.$blue;
+        width: 140px;
+        a { 
+          @include util.hoverFrame();
+          width: 140px;
+          height: 50px;
+          padding: 15px 0;
+          color: util.$white;
+          &:hover {
+            @include util.hover();
+          }
+        }
+        &:first-child {
+          margin-left: 0;
+          width: 160px;
+        }
+    }
+    &__icon-hart {
+      & > a {
+        display: block;
+        &::before{
+          content: url(../img/icon/icon-hart.png);
+          vertical-align: -4px;
+          padding-right: 6px;
+        }
+      }
+    }
+    &__icon-clock a{
+        &::before{
+          content: url(../img/icon/icon-clock.png);
+          vertical-align: -4px;
+          padding-right: 9px;
+        }
+      }
+      &__icon-search a{
+        &::before{
+          content: url(../img/icon/icon-camera.png);
+          vertical-align: -2px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .l-header {
+    height: 0;
+    &__wrapper {
+      display: none;
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+}

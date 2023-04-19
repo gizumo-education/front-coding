@@ -1,0 +1,50 @@
+@use '../utility/utility.scss' as util;
+
+.p-feature {
+  width: 1180px;
+  margin: 106px auto 0;
+  &__title {
+    text-align: center;
+    font: {
+      size: 25px;
+      weight:util.$bold;
+    }
+  }
+  &__list {
+    margin-top: 51.13px;
+    display: flex;
+    flex-wrap: wrap;
+    & > li {
+      width: 570px;
+      height: 180px;
+      margin: 40px 0 0 40px;
+      padding: 40px 0;
+      text-align: center;
+      background-color: util.$palePink;
+      border-radius: 10px;
+      &:first-child {
+        @include util.firstChild();
+      }
+      &:nth-child(2n+1) {
+        @include util.firstChild();
+      }
+      &:nth-child(-n+2) {
+        margin-top: 0;
+      }
+    }
+    &__summary {
+      font-size: 24px;
+      color: util.$pink;
+      font-weight: util.$bold;
+    }
+    &__detail {
+      font-size: 14px;
+      margin: 36px auto 0;
+      width: 475px;
+      line-height: 20px;
+      &:last-child {
+        margin-top: 26px;
+      }
+    }
+  }
+}

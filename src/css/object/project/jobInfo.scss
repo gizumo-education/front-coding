@@ -1,0 +1,63 @@
+@use '../utility/utility.scss' as util;
+
+.p-jobInfo {
+  margin-top: 59px;
+  padding: 64px 0px 67px;
+  background-color: util.$paleBlue;
+  &__wrapper {
+    width: 1180px;
+    margin: auto;
+  }
+  &__title {
+    font-size: 25px;
+  }
+  &__items {
+    display: flex;
+    margin-top: 25px;
+    & > li {
+      width: 280px;
+      height: 331px;
+      margin-left: 20px;
+      &:first-child{
+        @include util.firstChild();
+      }
+      a {
+        display: block;
+        transition: .3s;
+        cursor: pointer;
+        border-radius: util.$radius;
+        color: util.$black;
+        &:hover {
+          @include util.hover();
+        }
+      }
+    }
+    &__img  {
+      display: block;
+      border-radius: util.$radius;
+    }
+    &__summary {
+      margin-top: 8.08px;
+      line-height: 22px;
+      font-size: 16px;
+    }
+    &__detail {
+      margin-top: 6.92px;
+      font-size: 14px;
+      display: flex;
+      & > dt {
+        line-height: 21px;
+        width: 60px;
+        background: util.$lightPink;
+        text-align: center;
+      }
+      & > dd {
+        margin-left: 10px;
+      }
+    }
+  }
+  &__button {
+    display: block;
+    margin: 60px auto 0;
+  }
+}

@@ -1,2 +1,55 @@
-@use '../../object/utility/utility.scss';
+@use '../utility/utility.scss' as util;
 // 共通パーツであるボタンのスタイルを記述するファイル
+.c-button {
+  &__middle {
+    height: 60px;
+    width: 360px;
+    border-radius: 30px;
+    line-height: 60px;
+    background-color: util.$pink;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    color: util.$white;
+    text: {
+      align: center;
+      decoration: none; 
+    };
+    font: {
+      size: 18px;
+      weight: util.$bold;
+    };
+    &:hover {
+      @include util.hover();
+    }
+  }
+  &__short {
+    width: 140px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 16px;
+    color: util.$white;
+    padding-left: 30px;
+    background: {
+      color: util.$pink;
+      image: url(../img/icon/search-button.png);
+      position: 15.02px 14.02px;
+      repeat: no-repeat;
+    };
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    & > a {
+      display: block;
+      padding: 14px 15px 14px 35px;
+      color: util.$white;
+    }
+    font: {
+      size: 18px;
+      weight: util.$bold;
+    };
+    &:hover {
+      @include util.hover();
+    }
+  }
+}
