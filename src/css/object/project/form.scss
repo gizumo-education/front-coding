@@ -48,8 +48,6 @@
     border: 1px solid utility.$deep-pink;
     border-radius: 10px;
     appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     &:first-child {
       margin-left: 0;
     }
@@ -64,8 +62,6 @@
     border-radius: 10px;
     vertical-align: bottom;
     appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
   }
   &__button {
     padding: 0 20px 0 14px;
