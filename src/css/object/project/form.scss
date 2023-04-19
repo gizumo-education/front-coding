@@ -1,7 +1,13 @@
 @use '../../object/utility/utility.scss';
 // フォームに関するスタイル
 .p-form {
-  padding: 60px;
+  padding: 60px 10px;
+  @include utility.tab {
+    padding: .6rem .1rem;
+  }
+  @include utility.sp {
+    padding: .25rem .15rem;
+  }
   &__container {
     width: utility.$container;
     padding: 40px 0;
@@ -9,24 +15,68 @@
     text-align: center;
     border-radius: 10px;
     background-color: utility.$blue;
+    @include utility.tab {
+      width: utility.$tab-container;
+      padding: .4rem 0;
+    }
+    @include utility.sp {
+      width: utility.$sp-container;
+      padding: .15rem .25rem .2rem;
+    }
   }
   &__title {
     font-size: 25px;
     font-weight: utility.$bold;
+    @include utility.tab {
+      font-size: .25rem;
+    }
+    @include utility.sp {
+      font-size: .22em;
+    }
   }
   &__detail {
     font-size: 20px;
     line-height: 29px;
     margin-top: 20px;
+    @include utility.tab {
+      font-size: .2rem;
+      line-height: .29rem;
+      margin-top: .2rem;
+    }
+    @include utility.sp {
+      font-size: .14rem;
+      line-height: .2rem;
+      margin-top: .16rem;
+    }
   }
   &__row {
     margin-top: 26.5px;
+    @include utility.tab {
+      margin-top: .265rem;
+    }
+    @include utility.sp {
+      margin-top: .13rem;
+    }
   }
   &__selectarea {
     display: inline-block;
     width: 200px;
     margin-left: 15px;
     position: relative;
+    &:first-child {
+      margin-left: 0;
+    }
+    @include utility.tab {
+      width: 2rem;
+      margin-left: .15rem;
+    }
+    @include utility.sp {
+      width: 1rem;
+      margin-left: .07rem;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
     &::after {
       border-top: 10px solid utility.$deep-pink;
       border-left: 10px solid transparent;
@@ -37,6 +87,18 @@
       top: 50%;
       transform: translateY(-50%);
       width: 0;
+      @include utility.tab {
+        border-top: .1rem solid utility.$deep-pink;
+        border-left: .1rem solid transparent;
+        border-right: .1rem solid transparent;
+        right: .15rem;
+      }
+      @include utility.sp {
+        border-top: .07rem solid utility.$deep-pink;
+        border-left: .07rem solid transparent;
+        border-right: .07rem solid transparent;
+        right: .05rem;
+      }
     }
   }
   &__selectbox {
@@ -48,8 +110,16 @@
     border: 1px solid utility.$deep-pink;
     border-radius: 10px;
     appearance: none;
-    &:first-child {
-      margin-left: 0;
+    @include utility.tab {
+      padding: .16rem .15rem;
+      font-size: .18rem;
+      line-height: .26rem;
+    }
+    @include utility.sp {
+      padding: .06rem .08rem;
+      font-size: .12rem;
+      line-height: .17rem;
+      border-radius: .05rem;
     }
   }
   &__search {
@@ -62,14 +132,49 @@
     border-radius: 10px;
     vertical-align: bottom;
     appearance: none;
+    @include utility.tab {
+      width: 3rem;
+      padding: .16rem 0 .16rem .1rem;
+      margin-left: .15rem;
+      font-size: .18rem;
+      line-height: .26rem;
+      vertical-align: baseline;
+    }
+    @include utility.sp {
+      width: 3.2rem;
+      padding: .05rem .07rem;
+      margin-top: .15rem;
+      margin-left: 0;
+      font-size: .14rem;
+      line-height: .2rem;
+      border-radius: .05rem;
+    }
   }
   &__button {
     padding: 0 20px 0 14px;
     margin-left: 15px;
+    @include utility.tab {
+      padding: 0 .2rem 0 .14rem;
+      margin-left: .15rem;
+    }
+    @include utility.sp {
+      padding: .1rem .43rem .12rem .13rem;
+      margin-top: .24rem;
+      margin-left: 0;
+    }
   }
   &__icon {
     width: 29px;
     margin-right: 4px;
     vertical-align: middle;
+    @include utility.tab {
+      width: .29rem;
+      margin-left: .04rem;
+    }
+    @include utility.sp {
+      width: .18rem;
+      margin-right: .14rem;
+      vertical-align: text-top;
+    }
   }
 }

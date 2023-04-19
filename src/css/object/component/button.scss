@@ -11,6 +11,13 @@
   cursor: pointer;
   transition: .3s;
   appearance: none;
+  @include utility.tab {
+    font-size: .18rem;
+    line-height: .6rem;
+  }
+  @include utility.sp {
+    line-height: .18rem;
+  }
   &:hover {
     opacity: .8;
   }
