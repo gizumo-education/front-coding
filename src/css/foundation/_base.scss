@@ -72,14 +72,14 @@ select {
 
 h1 {
   font-size: 25px;
-  font-weight: var.$bold;
+  font-weight: base.$bold;
   line-height: 25px;
   text-align: center;
 }
 
 h2 {
   font-size: 24px;
-  font-weight: var.$bold;
+  font-weight: base.$bold;
 }
 
 .is-pc {

@@ -1,19 +1,18 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../utility/utility.scss' as var;
 
-.c-header__icon {
+.c-icon__header {
   width: 18px;
-  height: 18px
-}
 
-.c-keyVisual {
-  height: 500px;
-  width: 100vw;
+  &__margin {
+    margin-right: 10px;
+  }
 }
 
 .c-searchBtn__icon {
   width: 30px;
   height: 30px;
 }
+
 
 .c-pulldown {
   position: relative;
@@ -30,19 +29,6 @@
   }
 }
 
-.c-imgBelt {
-  width: 100vw;
-}
-
-.c-imgCover {
-  background: var.$beltCover;
-  opacity: 0.5;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .c-iconFlowStep {
   position: absolute;
   top: 10px;
@@ -57,11 +43,3 @@
   width: 100px;
   height: 100px;
 }
-
-
-.c-copyRight {
-  width: 100%;
-  background: var.$copyRight;
-  text-align: center;
-}
-

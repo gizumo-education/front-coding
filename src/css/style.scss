@@ -14,18 +14,26 @@
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
-@use './object/component/imgIcon.scss';
+@use './object/component/icon.scss';
+@use './object/component/image.scss';
 @use './object/component/box.scss';
 @use './object/component/table.scss';
-@use './object/component/feature.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
-@use './object/project/project.scss';
+@use './object/project/article.scss';
+@use './object/project/belt.scss';
+@use './object/project/column.scss';
+@use './object/project/copyRight.scss';
+@use './object/project/feature.scss';
+@use './object/project/flow.scss';
+@use './object/project/keyVisual.scss';
+@use './object/project/search.scss';
 /*-------------------------------------------*/
 
 /*utility---------------------------------*/
-@use './object/utility/marginPadding.scss';
+@use './object/utility/margin.scss';
+@use './object/utility/padding.scss';
 @use './object/utility/display.scss';
 /*-------------------------------------------*/
 

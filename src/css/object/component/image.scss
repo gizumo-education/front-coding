@@ -1,0 +1,23 @@
+@use '../../object/utility/utility.scss' as var;
+
+
+
+.c-keyVisual {
+  height: 500px;
+  width: 100vw;
+}
+
+.c-imgBelt {
+  width: 100vw;
+}
+
+.c-imgCover {
+  background: var.$beltCover;
+  opacity: 0.5;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+

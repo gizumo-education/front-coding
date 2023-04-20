@@ -1,0 +1,24 @@
+
+@for $i from 1 through 4 {
+  .u-m#{$i * 5} {
+    margin: #{$i * 5}px;
+  }}
+
+@for $i from 1 through 40 {
+  .u-mt#{$i * 5} {
+    margin-top: #{$i * 5}px;
+  }}
+
+@for $i from 1 through 20 {
+  .u-ml#{$i * 5} {
+    margin-left: #{$i * 5}px;
+  }}
+@for $i from 1 through 20 {
+  .u-mr#{$i * 5} {
+    margin-right: #{$i * 5}px;
+  }}
+  @for $i from 1 through 20 {
+    .u-mTopBottom#{$i * 5} {
+      margin: #{$i * 5}px 0;
+    }}
+

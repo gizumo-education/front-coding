@@ -1,0 +1,15 @@
+@use '../utility/utility.scss' as var;
+
+.p-seach {
+  &__container {
+    background-color: var.$serchBoxColor;
+    text-align: center;
+    border-radius: 5px;
+
+  }
+}
+
+.p-searchBox {
+  display: flex;
+  justify-content: center;
+}

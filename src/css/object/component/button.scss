@@ -1,14 +1,14 @@
 @use '../../object/utility/utility.scss' as var;
 // 共通パーツであるボタンのスタイルを記述するファイル
 
-.c-header__button {
-    
+.c-button__header {
   &__in {
     width: 140px;
     height: 50px;
     background: #92C5EA;
     border-radius: 10px;
     
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 16px;
@@ -16,14 +16,6 @@
   }
   &__inList {
     width: 160px;
-    height: 50px;
-    background: #92C5EA;
-    border-radius: 10px;
-    
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    color: var.$white;
   }
 }
 

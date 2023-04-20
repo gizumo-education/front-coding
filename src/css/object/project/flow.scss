@@ -1,0 +1,33 @@
+@use '../utility/utility.scss' as var;
+
+.p-flowContainer {
+  display: flex; 
+  
+  li {
+    margin-left: 20px;
+  }
+  li:first-child {
+    margin-left: 0;
+  }
+  
+  li:last-child::after {
+    content: none;
+  }
+}
+.p-flowContainer {
+  justify-content: center;
+
+}
+.p-boxFlow {
+  text-align: center;
+  
+}
+.p-flowTitle {
+  line-height: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+.p-flowText {
+  width: 90%;
+  line-height: 20px;
+}
