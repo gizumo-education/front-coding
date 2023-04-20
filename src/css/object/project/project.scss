@@ -119,13 +119,17 @@
   &__textUpper {
     position: absolute;
     top: 33%;
-    left: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
     z-index: 1;
   }
   &__textLower {
     position: absolute;
     top: 55%;
-    left: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
     z-index: 1;
   
 
