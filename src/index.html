@@ -18,23 +18,24 @@
           <li><a href=""><img src="./img/icon/book.png" class="c-header__icon" alt="本">ギズジョブ医療事務コラム</a></li>
         </ul>
         <ul class="l-header__buttons u-flex">
-          <li>
-            <button class="c-header__button--list u-flex">
+
+          <li class="c-header__button">
+            <a class="c-header__button__inList u-flex">
               <img src="./img/icon/heart.png" class="c-header__icon u-mr10" alt="ハート">
               気になるリスト
-            </button>
+            </a>
           </li>
-          <li>
-            <button class="c-header__button u-flex">
+          <li class="c-header__button">
+            <a class="c-header__button__in u-flex">
               <img src="./img/icon/clock.png" class="c-header__icon u-mr10" alt="時計">
               閲覧履歴
-            </button>
+            </a>
           </li>
-          <li>
-            <button class="c-header__button u-flex">
+          <li class="c-header__button">
+            <a class="c-header__button__in u-flex">
               <img src="./img/icon/serchWeb.png" class="c-header__icon u-mr10" alt="虫眼鏡">
               検索履歴
-            </button>
+            </a>
           </li>
         </ul>
       </nav>
@@ -88,10 +89,12 @@
               </select>
             </div>
             <input type="text" placeholder="キーワード・企業名・スキルなど" class="c-searchJobInput u-p15 u-ml15">
-            <button class="c-searchBtn u-ml15">
-              <img src="./img/icon/whiteGlass.png" class="c-searchBtn__icon" alt="虫眼鏡">
-              検索する
-            </button>
+            <div class="c-searchBtn u-ml15">
+              <a class="c-searchBtn__in">
+                <img src="./img/icon/whiteGlass.png" class="c-searchBtn__icon" alt="虫眼鏡">
+                検索する
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -190,9 +193,9 @@
             </li>
           </ul>
           <div class="c-btnArea">
-            <button class="c-wideBtn u-mt60">
+            <a class="c-wideBtn u-mt60">
               新着求人一覧をもっと見る
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -210,7 +213,7 @@
         <h1>ギズジョブの4つの特徴</h1>
         <ul class="c-featureContainer u-mt50">
           <li class="c-featureBox">
-            <h2 class="c-featureTitle">WEBW上で応募完結</h2>
+            <h2 class="c-featureTitle">WEB上で応募完結</h2>
             <p class="c-featureText u-mt35">
               エントリーシートの記入を済ませれば、あとは気になる企業に応募して
               待つだけで面接アポまで完結！
@@ -300,9 +303,9 @@
           </li>
         </ul>
         <div class="c-btnArea">
-          <button class="c-wideBtn u-mt60">
+          <a class="c-wideBtn u-mt60">
             医療事務コラムをもっと見る
-          </button>
+          </a>
         </div>
       </section>
 
@@ -334,7 +337,7 @@
               </select>
             </div>
             <div class="c-pulldown">
-              <select id="slary" class="c-searchJobList u-p15 u-ml15">
+              <select id="salary" class="c-searchJobList u-p15 u-ml15">
                 <option value="">月給17万〜</option>
                 <option value="">月給18万〜</option>
                 <option value="">月給19万〜</option>
@@ -345,13 +348,16 @@
               </select>
             </div>
             <input type="text" placeholder="キーワード・企業名・スキルなど" class="c-searchJobInput u-p15 u-ml15">
-            <button class="c-searchBtn u-ml15">
-              <img src="./img/icon/whiteGlass.png" class="c-searchBtn__icon" alt="虫眼鏡">
-              検索する
-            </button>
+            <div class="c-searchBtn u-ml15">
+              <a class="c-searchBtn__in">
+                <img src="./img/icon/whiteGlass.png" class="c-searchBtn__icon" alt="虫眼鏡">
+                検索する
+              </a>
+            </div>
           </div>
         </div>
       </section>
+      
     </main>
     <footer id="footer" class="u-mt200">
       <div class="inner p-footer u-flex">

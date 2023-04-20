@@ -27,13 +27,11 @@ h2 {
 }
 
 a {
-  display: inline-block;
   text-decoration: none;
-  color: inherit;
-  
-  
-  :hover {
-    opacity: .8;
-    transition: .3s;
-  }
+  color: inherit; 
+}
+
+a:hover {
+  opacity: .8;
+  transition: .3s;
 }
