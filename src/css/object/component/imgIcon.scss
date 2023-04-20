@@ -7,6 +7,7 @@
 
 .c-keyVisual {
   height: 500px;
+  width: 100vw;
 }
 
 .c-searchBtn__icon {
@@ -29,6 +30,9 @@
   }
 }
 
+.c-imgBelt {
+  width: 100vw;
+}
 
 .c-imgCover {
   background: var.$beltCover;
