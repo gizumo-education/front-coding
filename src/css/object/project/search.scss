@@ -20,35 +20,37 @@
     display: flex;
     margin-top: 26.5px;
     &__select {
-      position: relative;
-      margin-left: 16px;
-      &:first-of-type {
-        @include util.firstChild();
-      }
-      &__box {
-        width: 200px;
-        height: 60px;
-        appearance: none;
-        -webkit-appearance: none;
-        cursor: pointer;
-        outline: none;
-        font-size: 18px;
-        padding-left: 15px;
-        border-radius: util.$radius;
-        border: 1px solid util.$pink;
-        background-color: util.$white;
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        top: 25px;
-        right: 14.5px;
-        width: 0;
-        height: 0;
-        border-top: 10px solid util.$pink;
-        border-right: 10px solid transparent;
-        border-left: 10px solid transparent;
-        border-bottom: 10px solid transparent;
+      display: flex;
+      &__option {
+        margin-left: 16px;
+        &:first-of-type {
+          @include util.firstChild();
+        }
+        &__box {
+          position: relative;
+          width: 200px;
+          height: 60px;
+          appearance: none;
+          -webkit-appearance: none;
+          cursor: pointer;
+          outline: none;
+          font-size: 18px;
+          padding-left: 15px;
+          border-radius: util.$radius;
+          border: 1px solid util.$pink;
+          background-color: util.$white;
+          &::after {
+            content: '';
+            top: 25px;
+            right: 14.5px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid util.$pink;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+          }
+        }
       }
     }
     &__text {
@@ -67,13 +69,92 @@
 
 @media screen and (max-width: 1199px) {
   .p-search {
+    background-color: util.$lightBlue;
     width: 95%;
+    height: 100%;
+    margin: 0.61rem auto 0;
+    padding: 0.4rem;
+    &__title {
+      font-size: 0.25rem;
+    }
+    &__text {
+      font-size: 0.2rem;
+      line-height: 0.29rem;
+      margin-top: 0.20rem;
+    }
     &__formContent {
-      flex-wrap: wrap;
+      margin-top: 0.26rem;
+      &__select {
+        width: 100%;
+        height: 100%;
+        &__option {
+          margin-left: 0.16rem;
+          &__box {
+            width: 100%;
+            height: 100%;
+            font-size: 0.18rem;
+            padding-left: 0.15rem;
+            border-radius: util.$spRadius;
+          }
+        }
+      }
+      &__text {
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        border-radius: util.$spRadius;
+      }
     }
   }
 }
 
 @media screen and (max-width: 767px) {
-
+  .p-search {
+    width: 95%;
+    height: auto;
+    margin-top: 0.25rem;
+    padding: 0.15rem 0.25rem 0.2rem;
+    &__title {
+      font-size: 0.22rem;
+      font-weight: util.$bold;
+    }
+    &__text {
+      font-size: 0.14rem;
+      margin-top: 0.16rem;
+    }
+    &__formContent {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      &__select {
+        width: 100%;
+        height: 100%;
+        &__option {
+          width: 100%;
+          height: 100%;        
+          &__box {
+            width: 100%;
+            height: 100%;
+            font-size: 0.12rem;
+            line-height: 0.17rem;
+            padding: 0.05rem;
+            margin-top: 0.13rem;
+            &::after {
+              width: 100%;
+              height: 100%; 
+            }
+          }
+        }
+      }
+      &__text {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0.15rem auto 0;
+        font-size: 0.14rem;
+        padding: 0.04rem 0 0.04rem 0.06rem;
+        line-height: 0.3rem;
+      }
+    }
+  }
 }

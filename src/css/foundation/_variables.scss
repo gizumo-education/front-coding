@@ -18,6 +18,7 @@ $regular: 400;
 $bold: 700;
 
 $radius: 10px;
+$spRadius: 0.05rem;
 @mixin hoverFrame {
   display: block;
   transition: .3s;
