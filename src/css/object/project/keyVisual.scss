@@ -2,20 +2,20 @@
 // ページ上部のキービジュアルに関するスタイル
 
 
-.p-keyVisuals {
+.p-keyVisual__container {
   display: flex;
-  justify-content: center;
 }
+
 .p-keyVisual {
-  height: 500px;
   justify-content: flex-end;
   position: relative;
-
-  &__img {
+  
+  &__image {
     height: 500px;
-    z-index: 10;
+    width: 100vw;
   }
-  &__text {
+
+  &__ranking {
     position: absolute;
     left: 51.88%;
     top: 10%;
@@ -36,7 +36,7 @@
     border-radius: 10px;
     border: #2EB6AA solid 2px;
 
-    p {
+    &__text {
       color: #2EB6AA;
       font-weight: var.$bold;
       font-size: 40px;
