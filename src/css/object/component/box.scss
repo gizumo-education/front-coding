@@ -1,17 +1,5 @@
 @use '../utility/utility.scss' as var;
 
-.c-searchJobList {
-  width: 200px;
-  height: 60px;
-  border: 1px solid var.$pink;
-  border-radius: 10px;
-}
-.c-searchJobInput {
-  width: 300px;
-  height: 60px;
-  border: 1px solid var.$pink;
-  border-radius: 10px;
-}
 
 .c-boxFlow {
   height: 350px;

@@ -8,26 +8,11 @@
   }
 }
 
-.c-searchBtn__icon {
+.c-icon__searchBtn {
   width: 30px;
   height: 30px;
 }
 
-
-.c-pulldown {
-  position: relative;
-  
-  &::after {
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-top: 9px solid var.$pink;
-      content: "";
-      position: absolute;
-      right: 10px;
-      top: 25px;
-      width: 0;
-  }
-}
 
 .c-iconFlowStep {
   position: absolute;

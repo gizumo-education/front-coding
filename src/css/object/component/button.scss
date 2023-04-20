@@ -19,24 +19,19 @@
   }
 }
 
-.c-searchBtn {
+.c-button__search {
+  display: flex;
+  width: 140px;
+  height: 60px;
+
+  background-color: var.$pink;
+  border-radius: 30px;
   
-  &__in {
-    display: flex;
-    width: 140px;
-    height: 60px;
-    @include var.clearfix;
-    
-    background-color: var.$pink;
-    border-radius: 30px;
-    
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: var.$bold;
-    color: var.$white;
-  }
-  
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: var.$bold;
+  color: var.$white;
 }
 
 .c-btnArea {

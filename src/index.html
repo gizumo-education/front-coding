@@ -55,9 +55,9 @@
         <div class="p-seach__container u-p40">
           <h1>お仕事検索</h1>
           <p class="u-mt20">働きたい職種・地域・希望給与を入れて検索！</p>
-          <div class="p-searchBox u-mt25">
-            <div class="c-pulldown">
-              <select id="job" class="c-searchJobList u-p15">
+          <ul class="p-search__box u-mt25">
+            <li class="c-pulldown">
+              <select id="job" class="c-pulldown__list">
                 <option value="">医療事務</option>
                 <option value="">調剤事務</option>
                 <option value="">診療情報管理士</option>
@@ -66,9 +66,9 @@
                 <option value="">看護補助・看護助手</option>
                 <option value="">病院内SE</option>
               </select>
-            </div>
-            <div class="c-pulldown">
-              <select id="area" class="c-searchJobList u-p15 u-ml15">
+            </li>
+            <li class="c-pulldown">
+              <select id="area" class="c-pulldown__list">
                 <option value="">茨城県</option>
                 <option value="">神奈川県</option>
                 <option value="">群馬県</option>
@@ -77,9 +77,9 @@
                 <option value="" selected>東京都</option>
                 <option value="">栃木県</option>
               </select>
-            </div>
-            <div class="c-pulldown">
-              <select id="wage" class="c-searchJobList u-p15 u-ml15">
+            </li>
+            <li class="c-pulldown">
+              <select id="wage" class="c-pulldown__list">
                 <option value="">月給17万〜</option>
                 <option value="">月給18万〜</option>
                 <option value="">月給19万〜</option>
@@ -88,15 +88,17 @@
                 <option value="">月給22万〜</option>
                 <option value="">月給23万〜</option>
               </select>
-            </div>
-            <input type="text" placeholder="キーワード・企業名・スキルなど" class="c-searchJobInput u-p15 u-ml15">
-            <div class="c-searchBtn u-ml15">
-              <a class="c-searchBtn__in">
-                <img src="./img/icon/whiteGlass.png" class="c-searchBtn__icon" alt="虫眼鏡">
+            </li>
+            <li>
+              <input type="text" placeholder="キーワード・企業名・スキルなど" class="c-input__search">
+            </li>
+            <li>
+              <a class="c-button__search">
+                <img src="./img/icon/whiteGlass.png" class="c-icon__searchBtn" alt="虫眼鏡">
                 検索する
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -298,13 +300,13 @@
         </div>
       </section>
 
-      <section class="l-inner p-seachJob u-mt150">
-        <div class="p-seachJob__box u-p40">
+      <section class="l-inner p-seach u-mt150">
+        <div class="p-seach__container u-p40">
           <h1>お仕事検索</h1>
           <p class="u-mt20">働きたい職種・地域・希望給与を入れて検索！</p>
-          <div class="p-searchJobLists u-mt25">
-            <div class="c-pulldown">
-              <select id="occupation" class="c-searchJobList u-p15">
+          <ul class="p-search__box u-mt25">
+            <li class="c-pulldown">
+              <select id="occupation" class="c-pulldown__list">
                 <option value="">医療事務</option>
                 <option value="">調剤事務</option>
                 <option value="">診療情報管理士</option>
@@ -313,9 +315,9 @@
                 <option value="">看護補助・看護助手</option>
                 <option value="">病院内SE</option>
               </select>
-            </div>
-            <div class="c-pulldown">
-              <select id="place" class="c-searchJobList u-p15 u-ml15">
+            </li>
+            <li class="c-pulldown">
+              <select id="place" class="c-pulldown__list">
                 <option value="">茨城県</option>
                 <option value="">神奈川県</option>
                 <option value="">群馬県</option>
@@ -324,9 +326,9 @@
                 <option value="" selected>東京都</option>
                 <option value="">栃木県</option>
               </select>
-            </div>
-            <div class="c-pulldown">
-              <select id="salary" class="c-searchJobList u-p15 u-ml15">
+            </li>
+            <li class="c-pulldown">
+              <select id="salary" class="c-pulldown__list">
                 <option value="">月給17万〜</option>
                 <option value="">月給18万〜</option>
                 <option value="">月給19万〜</option>
@@ -335,17 +337,20 @@
                 <option value="">月給22万〜</option>
                 <option value="">月給23万〜</option>
               </select>
-            </div>
-            <input type="text" placeholder="キーワード・企業名・スキルなど" class="c-searchJobInput u-p15 u-ml15">
-            <div class="c-searchBtn u-ml15">
-              <a class="c-searchBtn__in">
-                <img src="./img/icon/whiteGlass.png" class="c-searchBtn__icon" alt="虫眼鏡">
+            </li>
+            <li>
+              <input type="text" placeholder="キーワード・企業名・スキルなど" class="c-input__search">
+            </li>
+            <li>
+              <a class="c-button__search">
+                <img src="./img/icon/whiteGlass.png" class="c-icon__searchBtn" alt="虫眼鏡">
                 検索する
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
+      
       
     </main>
     <footer id="footer" class="u-mt200">

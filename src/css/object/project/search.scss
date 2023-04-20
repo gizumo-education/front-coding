@@ -9,7 +9,15 @@
   }
 }
 
-.p-searchBox {
+.p-search__box {
   display: flex;
   justify-content: center;
+
+  li {
+    margin-left: 15px;
+  }
+
+  li:first-child {
+    margin-left: 0;
+  }
 }
