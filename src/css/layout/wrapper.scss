@@ -2,40 +2,5 @@
 
 .l-wrapper {
   width: 100%;
-  font-weight: var.$regular;
   font-size: 16px;
-}
-
-button, input, select {
-	border: none;
-	outline: none;
-  appearance: none;
-  -webkit-appearance: none;
-	-moz-appearance: none;
-}
-
-h1 {
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 25px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: var.$bold;
-}
-
-a {
-  text-decoration: none;
-  color: inherit; 
-}
-
-a:hover {
-  opacity: .8;
-  transition: .3s;
-}
-
-select {
-  font-size: 18px;
 }

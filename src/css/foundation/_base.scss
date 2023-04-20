@@ -49,6 +49,37 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  color: inherit; 
+}
+
+a:hover {
+  opacity: .8;
+  transition: .3s;
+}
+
+button, input, select {
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select {
+  font-size: 18px;
+}
+
+
+h1 {
+  font-size: 25px;
+  font-weight: var.$bold;
+  line-height: 25px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var.$bold;
 }
 
 .is-pc {
