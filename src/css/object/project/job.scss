@@ -78,6 +78,7 @@
       border-radius: .1rem;
     }
     @include utility.sp {
+      width: 100%;
       border-radius: .1rem;
     }
   }
@@ -147,7 +148,7 @@
       margin-top: .6rem;
     }
     @include utility.sp {
-      padding: .21rem .77rem;
+      padding: .21rem .7rem;
       margin-top: .44rem;
     }
   }

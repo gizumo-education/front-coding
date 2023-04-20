@@ -78,12 +78,15 @@
       margin-top: .54rem;
       font-size: .2rem;
       line-height: .5rem;
+      border-radius: .1rem;
     }
     @include utility.sp {
       padding: .04rem .23rem .02rem;
       margin-top: .18rem;
       font-size: .08rem;
       line-height: .16rem;
+      border: .01rem solid utility.$green;
+      border-radius: .05rem;
     }
     &-bold {
       font-size: 40px;

@@ -31,7 +31,7 @@
       font-size: .25rem;
     }
     @include utility.sp {
-      font-size: .22em;
+      font-size: .22rem;
     }
   }
   &__detail {
@@ -104,6 +104,7 @@
   &__selectbox {
     width: 100%;
     padding: 16px 15px;
+    color: utility.$black;
     font-size: 18px;
     line-height: 26px;
     background-color: utility.$white;
@@ -129,6 +130,7 @@
     margin-left: 15px;
     font-size: 18px;
     line-height: 26px;
+    background-color: utility.$white;
     border: 1px solid utility.$deep-pink;
     border-radius: 10px;
     vertical-align: bottom;
