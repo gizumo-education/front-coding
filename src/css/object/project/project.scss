@@ -83,6 +83,8 @@
       }
       p {
         margin-top: 5px;
+        line-height: 22px;
+
       }
       table {
         margin-top: 5px;
@@ -166,6 +168,8 @@
 .p-flowText {
   display: block;
   width: 90%;
+  line-height: 20px;
+
 }
 .p-helpContents {
   display: flex;
@@ -218,6 +222,7 @@
     top: 65%;
     left: 50%;
     transform: translate(-50%,-50%);
+    line-height: 23px;
   }
   &__knowledge {
     background-image: url("../img/picture/knowledge.jpg"); 
