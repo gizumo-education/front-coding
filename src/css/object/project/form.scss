@@ -67,7 +67,7 @@
       margin-left: 0;
     }
     @include utility.tab {
-      width: 2rem;
+      width: 16%;
       margin-left: .15rem;
     }
     @include utility.sp {
@@ -112,8 +112,9 @@
     appearance: none;
     @include utility.tab {
       padding: .16rem .15rem;
-      font-size: .18rem;
+      font-size: .14rem;
       line-height: .26rem;
+      border-radius: .1rem;
     }
     @include utility.sp {
       padding: .06rem .08rem;
@@ -133,11 +134,12 @@
     vertical-align: bottom;
     appearance: none;
     @include utility.tab {
-      width: 3rem;
+      width: 25%;
       padding: .16rem 0 .16rem .1rem;
       margin-left: .15rem;
-      font-size: .18rem;
+      font-size: .14rem;
       line-height: .26rem;
+      border-radius: .1rem;
       vertical-align: baseline;
     }
     @include utility.sp {
@@ -147,6 +149,7 @@
       margin-left: 0;
       font-size: .14rem;
       line-height: .2rem;
+      border-radius: .1rem;
       border-radius: .05rem;
     }
   }

@@ -18,7 +18,7 @@
     display: flex;
     justify-content: flex-end;
     @include utility.tab {
-      width: utility.$tab-container;
+      width: 11.8rem;
     }
     @include utility.sp {
       display: none;
