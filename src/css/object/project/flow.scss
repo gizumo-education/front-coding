@@ -13,14 +13,7 @@
     }
   }
   &__container {
-    width: utility.$container;
     margin: 0 auto;
-    @include utility.tab {
-      width: utility.$tab-container;
-    }
-    @include utility.sp {
-      width: utility.$sp-container;
-    }
   }
   &__lists {
     display: flex;

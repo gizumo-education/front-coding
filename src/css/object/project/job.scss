@@ -11,14 +11,7 @@
     padding: .3rem .15rem .6rem;
   }
   &__container {
-    width: utility.$container;
     margin: 0 auto;
-    @include utility.tab {
-      width: utility.$tab-container;
-    }
-    @include utility.sp {
-      width: utility.$sp-container;
-    }
   }
   &__title {
     font-size: 25px;
@@ -58,7 +51,7 @@
     }
     @include utility.sp {
       display: none;
-      width: utility.$sp-container;
+      width: 3.7rem;
       margin-left: 0;
       &:first-child {
         display: block;
