@@ -65,7 +65,7 @@
 }
 @media screen and (max-width: 1199px) {
   .p-contents {
-    width: 100%;
+    width: 95%;
     margin: 105px auto 0;
     &__title {
       text-align: center;
@@ -76,8 +76,10 @@
     &__list {
       & > li {
         width: 100%;
-        height: 100%;
+        height: auto;
+        background-size: cover;
         &:nth-child(2) {
+          background-size: cover;
         }
       }
       &__box {

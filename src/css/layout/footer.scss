@@ -79,6 +79,7 @@
   .l-footer {
     width: 100%;
     height: 100%;
+    margin-top: 2rem;
     &__inner {
       width: 95%;
       margin: auto;
@@ -96,26 +97,9 @@
     }
     &__category {
       font-size: 0.16rem;
-      &__right {
-        }
-        & > li a {
-        
-        }
-      &__left {
-        & > li {
-        }
-        & > li a {
-        }
-      }
     }
     &__banner {
       display: block;
-      width: 100%;
-      height: 100%;
-      & > a {
-      }
-      &__under {
-      }
     }
   }
 }
@@ -123,7 +107,7 @@
   .l-footer {
     width: 100%;
     height: auto;
-    margin-top: 100px;
+    margin-top: 1rem;
     &__inner {
       width: 100%;
       height: 100%;
@@ -137,21 +121,19 @@
     &__title {
       justify-content: center;
     }
-    &__category {
-    }
     &__banner {
-      display: block;
       width: 100%;
       height: 100%;
       margin-top: 0.22rem;
       & > a {
+        display: block;
         width: 100%;
         height: 100%;
       }
-    }
-    &__title {
-      font-size: 0.16rem;
-      & > a{
+      &__top {
+        display: block;
+        width: 100%;
+        height: 100%;
       }
     }
   }

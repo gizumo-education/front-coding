@@ -54,13 +54,15 @@
     &__wrapper {
       height: 100%;
       width: 100%;
+      padding: 0.7rem 0 0.5rem;
       background: {
         position: center bottom;
-        size: contain;
+        size: cover;
         repeat: no-repeat;
       };
       &__logo {
-        margin-left: 60%;
+        margin-left: 52%;
+        padding-top: 0;
         width: 30%;
       }
       &__title {
@@ -72,9 +74,9 @@
         };
       }
       &__box {
-        margin: 0;
+        margin-left: 50%;
         &__text {
-          color: util.$lightGreen;
+          display: inline-block;
           line-height: 0.58rem;
           font: {
             size: 0.2rem;
