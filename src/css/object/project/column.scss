@@ -1,15 +1,12 @@
 @use '../utility/utility.scss' as var;
 
-.p-helpContents {
+.p-columnContainer {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-
-  li:first-child {
-    margin-left: 0;
-  }
 }
-.p-helpContent {
+
+.p-column {
   width: 380px;
   height: 240px;
 
