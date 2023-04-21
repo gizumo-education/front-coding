@@ -1,2 +1,49 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as var;
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button__header {
+  &__in {
+    width: 140px;
+    height: 50px;
+    background: #92C5EA;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: var.$white;
+  }
+  &__inList {
+    width: 160px;
+  }
+}
+
+.c-buttonMain {
+  background-color: var.$pink;
+  border-radius: 30px;
+  font-weight: var.$bold;
+  color: var.$white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-buttonSearch {
+  width: 140px;
+  height: 60px;
+  font-size: 18px;
+}
+
+.c-buttonWideArea {
+  display: flex;
+  justify-content: center;
+}
+
+.c-buttonWide {
+  height: 60px;
+  width: 360px;
+  font-size: 18px;
+}
+

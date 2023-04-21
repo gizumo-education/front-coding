@@ -1,0 +1,52 @@
+@use '../../object/utility/utility.scss' as var;
+// ページ上部のキービジュアルに関するスタイル
+
+
+.p-keyVisual__container {
+  display: flex;
+}
+
+.p-keyVisual {
+  position: relative;
+
+  background-image: url("../img/picture/keyVisual.jpg");
+  width: 100vw;
+  height: 500px;
+  background-size: cover;    
+  background-position:center;
+
+  &__ranking {
+    position: absolute;
+    left: 51.88%;
+    top: 10%;
+
+  }
+  &__message {
+    position: absolute;
+    left: 37.94%;
+    top: 55.17%;
+  }
+  &__number {
+    position: absolute;
+    left: 50%;
+    top: 80.17%;
+
+    background-color: var.$white;
+    padding: 5px 40px;
+    border-radius: 10px;
+    border: #2EB6AA solid 2px;
+
+    &__text {
+      color: #2EB6AA;
+      font-weight: var.$bold;
+      font-size: 40px;
+
+      &::before {
+        content: "現在の求人掲載数：";
+        font-weight: var.$regular;  
+        font-size: 20px;      
+
+      }
+    }
+  }
+}

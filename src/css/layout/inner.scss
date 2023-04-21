@@ -1,2 +1,12 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as var;
 // innerのスタイルを記述するファイル
+
+.l-inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.l-article {
+  width: 100%;
+  background-color: var.$background-color;
+}

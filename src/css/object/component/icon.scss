@@ -1,0 +1,30 @@
+@use '../utility/utility.scss' as var;
+
+.c-icon__header {
+  width: 18px;
+
+  &__margin {
+    margin-right: 10px;
+  }
+}
+
+.c-icon__searchBtn {
+  width: 30px;
+  height: 30px;
+}
+
+
+.c-iconFlowStep {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+}
+.c-iconFlow {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  width: 100px;
+  height: 100px;
+}

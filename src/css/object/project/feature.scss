@@ -1,0 +1,42 @@
+@use '../utility/utility.scss' as var;
+
+.p-featureContainer {
+  margin-top: 50px;
+
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  
+  li:nth-child(odd) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  li:nth-child(even) {
+    margin-right: 0;
+  }
+  li:nth-child(-n+2) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  li:nth-child(n+3) {
+    margin-bottom: 0;
+  }
+}
+
+.p-featureBox {
+  height: 180px;
+  width: 570px;
+  border-radius: 10px;
+  padding: 40px 60px;
+  margin: 40px;
+  background-color: var.$light-pink;
+
+  &__title {
+    color: var.$pink;
+  }
+  &__text {
+    line-height: 20px;
+  }
+}
+

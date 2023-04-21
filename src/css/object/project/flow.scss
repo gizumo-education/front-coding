@@ -1,0 +1,65 @@
+@use '../utility/utility.scss' as var;
+
+.p-flowContainer {
+  display: flex; 
+
+  margin-top: 50px;
+  
+  li {
+    margin-left: 20px;
+  }
+  li:first-child {
+    margin-left: 0;
+  }
+  
+  li:last-child::after {
+    content: none;
+  }
+}
+.p-flowContainer {
+  justify-content: center;
+
+}
+
+.p-flowBox {
+  height: 350px;
+  width: 270px;
+  
+  border: 2px solid var.$pink;
+  border-radius: 10px;
+  position: relative;
+
+  text-align: center;
+
+  &::after {
+    border-left: 16px solid var.$pink;
+    border-right: 16px solid transparent;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(100%,-50%);
+
+    width: 0;
+  }
+
+  &__title {
+    line-height: 30px;
+    width: 90%;
+    margin: 0 auto;
+  
+    position: absolute;
+      top: 50%;
+      left: 5%;
+  }
+  &__text {
+    width: 90%;
+    line-height: 20px;
+  
+    position: absolute;
+      top: 70%;
+      left: 5%;
+  }
+}

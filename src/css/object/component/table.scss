@@ -1,0 +1,18 @@
+@use '../utility/utility.scss' as var;
+
+.c-table {
+  border-collapse: separate;
+  border-spacing: 10px 5px;
+  
+  margin-top: 6px;
+}
+.c-th {
+  width: 60px;
+  height: 20px;
+  background-color: var.$light-pink;
+  text-align: center;
+}
+.c-td {
+  height: 20px;
+  text-align: left;
+}

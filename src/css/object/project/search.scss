@@ -1,0 +1,23 @@
+@use '../utility/utility.scss' as var;
+
+.p-seach {
+  &__container {
+    background-color: var.$serchBoxColor;
+    text-align: center;
+    border-radius: 5px;
+
+  }
+}
+
+.p-search__box {
+  display: flex;
+  justify-content: center;
+
+  li {
+    margin-left: 15px;
+  }
+
+  li:first-child {
+    margin-left: 0;
+  }
+}

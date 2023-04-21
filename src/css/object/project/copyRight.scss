@@ -1,0 +1,6 @@
+@use '../utility/utility.scss' as var;
+.p-copyRight {
+  width: 100%;
+  background: var.$copyRight;
+  text-align: center;
+}
