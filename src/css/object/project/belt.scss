@@ -3,39 +3,32 @@
 .p-belt {
   position: relative;
 
-  img {
+  &__image {
     height: 300px;
-  }
-  p {
-    font-weight: var.$bold;
-    font-size: 25px;
-    color: var.$white;
+    width: 100vw;
   }
 
   &__cover {
     width: 100%;
     height: 300px;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
-  &__textUpper {
+  &__text {
+    font-weight: var.$bold;
+    font-size: 25px;
+    color: var.$white;
+  }
+
+  &__textTop {
     position: absolute;
     top: 33%;
     left: 50%;
     transform: translate(-50%,-50%);
-
-    z-index: 1;
   }
-  &__textLower {
+  &__textBottom {
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
-
-    z-index: 1;
-  
-
   }
 }

@@ -1,8 +1,10 @@
 @use '../utility/utility.scss' as var;
 
-.p-articles {
+.p-article {
+  background-color: var.$background-color;
+  padding: 65px 0;
 
-  & > p {
+  &__title {
     font-size: 25px;
     font-weight: var.$regular;
     line-height: 30px;
@@ -11,23 +13,27 @@
   }
 
   &__list {
+    display: flex;
+    margin-top: 25px;
+
     li {
       margin-left: 20px;
-      img {
-        border-radius: 15px;
-      }
-      p {
-        margin-top: 5px;
-        line-height: 22px;
-
-      }
-      table {
-        margin-top: 5px;
-      }
     }
-  
+    
     li:first-child {
       margin-left: 0;
+    }
+
+    &__img {
+      border-radius: 15px;
+      width: 280px;
+      height: 200px;
+
+    }
+    &__text {
+      margin-top: 5px;
+      line-height: 22px;
+  
     }
   }
 

@@ -1,11 +1,9 @@
 @use '../../object/utility/utility.scss' as var;
 
 
-.c-imgBelt {
-  width: 100vw;
-}
 
-.c-imgCover {
+
+.c-cover {
   background: var.$beltCover;
   opacity: 0.5;
 
