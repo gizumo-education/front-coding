@@ -4,18 +4,39 @@
   background-color: utility.$skyblue;
   padding: 64px 0 67px;
   text-align: center;
+  @include utility.tab {
+    padding: .64rem 0 .67rem;
+  }
+  @include utility.sp {
+    padding: .3rem .15rem .6rem;
+  }
   &__container {
-    width: utility.$container;
     margin: 0 auto;
   }
   &__title {
     font-size: 25px;
     line-height: 30px;
     text-align: left;
+    @include utility.tab {
+      font-size: .25rem;
+      line-height: .3rem;
+    }
+    @include utility.sp {
+      font-size: .25rem;
+      line-height: .25rem;
+      text-align: center;
+    }
   }
   &__lists {
     display: flex;
     margin-top: 25px;
+    @include utility.tab {
+      margin-top: .25rem;
+    }
+    @include utility.sp {
+      display: block;
+      margin-top: .35rem;
+    }
   }
   &__list {
     width: calc((100% - 20px * 3) / 4);
@@ -23,6 +44,18 @@
     text-align: left;
     &:first-child {
       margin-left: 0;
+    }
+    @include utility.tab {
+      width: calc((100% - .2rem * 3) / 4);
+      margin-left: .2rem;
+    }
+    @include utility.sp {
+      display: none;
+      width: 3.7rem;
+      margin-left: 0;
+      &:first-child {
+        display: block;
+      }
     }
   }
   &__link {
@@ -34,16 +67,42 @@
   }
   &__image {
     border-radius: 10px;
+    @include utility.tab {
+      border-radius: .1rem;
+    }
+    @include utility.sp {
+      width: 100%;
+      border-radius: .1rem;
+    }
   }
   &__detail {
     font-size: 16px;
     line-height: 22px;
     margin-top: 8px;
+    @include utility.tab {
+      font-size: .16rem;
+      line-height: .22rem;
+      margin-top: .08rem;
+    }
+    @include utility.sp {
+      font-size: .16rem;
+      font-weight: utility.$bold;
+      line-height: .22rem;
+      margin-top: .1rem;
+    }
   }
   &__table {
     margin-top: 8px;
     border-collapse: separate;
     border-spacing: 4px;
+    @include utility.tab {
+      margin-top: .08rem;
+      border-spacing: .04rem;
+    }
+    @include utility.sp {
+      margin-top: .1rem;
+      border-spacing: .04rem;
+    }
   }
   &__name {
     width: 60px;
@@ -51,13 +110,39 @@
     line-height: 20px;
     text-align: center;
     background-color: utility.$sakura;
+    @include utility.tab {
+      width: .6rem;
+      font-size: .14rem;
+      line-height: .2rem;
+    }
+    @include utility.sp {
+      width: .6rem;
+      font-size: .14rem;
+      line-height: .2rem;
+    }
   }
   &__value {
     font-size: 14px;
     padding-left: 6px;
+    @include utility.tab {
+      font-size: .14rem;
+      padding-left: .06rem;
+    }
+    @include utility.sp {
+      font-size: .14rem;
+      padding-left: .21rem;
+    }
   }
   &__button {
     padding: 0 72px;
     margin-top: 60px;
+    @include utility.tab {
+      padding: 0 .72rem;
+      margin-top: .6rem;
+    }
+    @include utility.sp {
+      padding: .21rem .7rem;
+      margin-top: .44rem;
+    }
   }
 }

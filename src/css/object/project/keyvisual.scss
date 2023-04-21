@@ -8,21 +8,60 @@
   position: relative;
   text-align: center;
   background-image: url(../img/picture/keyvisual.jpg);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position:center;
+  @include utility.tab {
+    height: 5rem;
+    margin-top: 1rem;
+  }
+  @include utility.sp {
+    height: 2.7rem;
+    margin-top: .7rem;
+    background-image: url(../img/picture/keyvisual_sp.jpg);
+  }
   &__box {
     position: absolute;
     top: 56px;
     right: 10%;
+    @include utility.tab {
+      top: .56rem;
+    }
+    @include utility.sp {
+      top: .6rem;
+      right: 1%;
+    }
   }
-  &__logo {
+  &__logo-pc {
     display: block;
     width: 341px;
     margin: 0 auto;
+    @include utility.tab {
+      width: 3.41rem;
+    }
+    @include utility.sp {
+      display: none;
+    }
+  }
+  &__logo-sp {
+    display: none;
+    @include utility.sp {
+      display: block;
+      width: 1.5rem;
+      margin: 0 auto;
+    }
   }
   &__word {
     width: 800px;
     margin-top: 40px;
+    @include utility.tab {
+      width: 8rem;
+      margin-top: .4rem;
+    }
+    @include utility.sp {
+      width: 2.7rem;
+      margin-top: .16rem;
+    }
   }
   &__postings{
     display: inline-block;
@@ -34,9 +73,30 @@
     background-color: utility.$white;
     border: 2.3px solid utility.$green;
     border-radius: 10px;
+    @include utility.tab {
+      padding: .06rem .41rem 0;
+      margin-top: .54rem;
+      font-size: .2rem;
+      line-height: .5rem;
+      border-radius: .1rem;
+    }
+    @include utility.sp {
+      padding: .04rem .23rem .02rem;
+      margin-top: .18rem;
+      font-size: .08rem;
+      line-height: .16rem;
+      border: .01rem solid utility.$green;
+      border-radius: .05rem;
+    }
     &-bold {
       font-size: 40px;
       font-weight: utility.$bold;
+      @include utility.tab {
+        font-size: .4rem;
+      }
+      @include utility.sp {
+        font-size: .16rem;
+      }
     }
   }
 }

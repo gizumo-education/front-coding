@@ -5,14 +5,26 @@
   &__title {
     font-size: 25px;
     font-weight: utility.$bold;
+    @include utility.tab {
+      font-size: .25rem;
+    }
+    @include utility.sp {
+      font-size: .25rem;
+    }
   }
   &__container {
-    width: utility.$container;
     margin: 0 auto;
   }
   &__lists {
     display: flex;
     margin-top: 52px;
+    @include utility.tab {
+      margin-top: .52rem;
+    }
+    @include utility.sp {
+      display: block;
+      margin-top: .35rem;
+    }
   }
   &__list {
     width: calc((100% - 22px * 3)/ 4);
@@ -24,8 +36,38 @@
     border: 2px solid utility.$pink;
     border-radius: 10px;
     position: relative;
+    @include utility.tab {
+      width: calc((100% - .22rem * 3)/ 4);
+      height: 3.6rem;
+      padding: .5rem .18rem .4rem;
+      margin-left: .22rem;
+      font-size: .24rem;
+      line-height: .6rem;
+      border-radius: .1rem;
+    }
+    @include utility.sp {
+      width: 2.8rem;
+      height: 3rem;
+      padding: .53rem .04rem .2rem;
+      margin: .41rem auto 0 ;
+      font-size: .2rem;
+      line-height: .29rem;
+      border-radius: .1rem;
+    }
     &:first-child {
       margin-left: 0;
+      @include utility.sp {
+        margin: .35rem auto 0 ;
+      }
+    }
+    &:nth-child(1),&:nth-child(2) {
+      line-height: 30px;
+      @include utility.tab {
+        line-height: .3rem;
+      }
+      @include utility.sp {
+        line-height: .29rem;
+      }
     }
     &::after {
       border-left: 20px solid utility.$deep-pink;
@@ -37,12 +79,23 @@
       top: 50%;
       transform: translateY(-50%);
       width: 0;
+      @include utility.tab {
+        border-left: .2rem solid utility.$deep-pink;
+        border-top: .2rem solid transparent;
+        border-bottom: .2rem solid transparent;
+        right: -0.2rem;
+      }
+      @include utility.sp {
+        border-top: .2rem solid utility.$deep-pink;
+        border-left: .2rem solid transparent;
+        border-right: .2rem solid transparent;
+        top: 105%;
+        right: 50%;
+        transform: translateX(50%);
+      }
     }
     &:last-child::after {
       content: none;
-    }
-    &:nth-child(1),&:nth-child(2) {
-      line-height: 30px;
     }
   }
   &__step {
@@ -58,19 +111,65 @@
     position: absolute;
     top: 8px;
     left: 8px;
+    @include utility.tab {
+      width: .6rem;
+      height: .6rem;
+      font-size: .16rem;
+      line-height: .19rem;
+      top: .08rem;
+      left: .08rem;
+    }
+    @include utility.sp {
+      width: .45rem;
+      height: .45rem;
+      font-size: .1rem;
+      line-height: .12rem;
+      top: .08rem;
+      left: .08rem;
+    }
   }
   &__icon {
     width: 100px;
     height: 100px;
+    @include utility.tab {
+      width: .8rem;
+      height: .8rem;
+    }
+    @include utility.sp {
+      width: .75rem;
+      height: .75rem;
+    }
   }
   &__name {
     margin-top: 30px;
     font-weight: utility.$bold;
+    @include utility.tab {
+      margin-top: .3rem;
+    }
+    @include utility.sp {
+      margin-top: .22rem;
+    }
   }
   &__detail {
     font-size: 14px;
     line-height: 20px;
     margin-top: 18px;
     text-align: left;
+    @include utility.tab {
+      font-size: .14rem;
+      line-height: .2rem;
+      margin-top: .18rem;
+    }
+    @include utility.sp {
+      width: 2.4rem;
+      font-size: .14rem;
+      line-height: .2rem;
+      margin: .1rem auto 0;
+    }
+  }
+  &__blank {
+    @include utility.sp {
+      display: none;
+    }
   }
 }

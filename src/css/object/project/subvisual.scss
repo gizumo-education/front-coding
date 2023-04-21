@@ -4,16 +4,42 @@
   width: 100%;
   height: 300px;
   background-image: url(../img/picture/subvisual.jpg);
+  background-size: cover;
   text-align: center;
+  @include utility.tab {
+    height: 3rem;
+  }
+  @include utility.sp {
+    height: .75rem;
+    background-size: contain;
+  }
   &__title {
+    height: 100%;
     padding: 104px 0;
     color: utility.$white;
     font-size: 25px;
     font-weight: utility.$bold;
     line-height: 36px;
     background-color: utility.$shadow;
+    @include utility.tab {
+      padding: 1.04rem 0;
+      font-size: .25rem;
+      line-height: .36rem;
+    }
+    @include utility.sp {
+      padding: .16rem .25rem;
+      font-size: .14rem;
+      font-weight: utility.$regular;
+      line-height: .2rem;
+    }
   }
   &__text {
     margin-top: 20px;
+    @include utility.tab {
+      margin-top: .2rem;
+    }
+    @include utility.sp {
+      margin-top: .02rem;
+    }
   }
 }

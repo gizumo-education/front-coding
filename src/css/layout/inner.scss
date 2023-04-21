@@ -1,2 +1,11 @@
 @use '../object/utility/utility.scss';
 // innerのスタイルを記述するファイル
+.l-inner__container {
+  width: 1180px;
+  @include utility.tab {
+    width: 84%;
+  }
+  @include utility.sp {
+    width: 3.7rem;
+  }
+}

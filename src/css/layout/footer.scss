@@ -3,17 +3,40 @@
 .l-footer {
   margin-top: 140px;
   background-color: utility.$skyblue;
+  @include utility.tab {
+    margin-top: 1.4rem;
+  }
+  @include utility.sp {
+    margin-top: 1rem;
+  }
   &__container {
-    width: utility.$container;
     padding: 55px 0 25px;
     margin: 0 auto;
     font-size: 16px;
     display: flex;
     justify-content: space-between;
+    @include utility.tab {
+      padding: .55rem 0 .25rem;
+      font-size: .16rem;
+    }
+    @include utility.sp {
+      padding: .4rem 0;
+      font-size: .16rem;
+      display: block;
+    }
   }
   &__title {
     line-height: 23px;
     margin-top: 25px;
+    @include utility.tab {
+      line-height: .23rem;
+      margin-top: .25rem;
+    }
+    @include utility.sp {
+      width: 3.1rem;
+      line-height: .23rem;
+      margin: 0 auto;
+    }
   }
   &__linklists {
     display: flex;
@@ -21,13 +44,37 @@
     width: 300px;
     margin-top: 27px;
     line-height: 36px;
+    @include utility.tab {
+      width: 3rem;
+      margin-top: .27rem;
+      line-height: .36rem;
+    }
+    @include utility.sp {
+      width: 3rem;
+      margin: .27rem auto 0;
+      line-height: .36rem;
+    }
   }
   &__linklist {
     width: 160px;
     margin-left: 40px;
+    @include utility.tab {
+      width: 1.6rem;
+      margin-left: .4rem;
+    }
+    @include utility.sp {
+      width: 1.6rem;
+      margin-left: .4rem;
+    }
     &:nth-child(2n+1) {
       width: 96px;
       margin-left: 0;
+      @include utility.tab {
+        width: .96rem;
+      }
+      @include utility.sp {
+        width: .96rem;
+      }
     }
   }
   &__link {
@@ -40,8 +87,19 @@
   &__linkimage {
     width: 320px;
     margin-top: 15px;
+    @include utility.tab {
+      width: 3.2rem;
+      margin-top: .15rem;
+    }
+    @include utility.sp {
+      width: 3.2rem;
+      margin: .15rem auto 0;
+    }
     &:first-child {
       margin-top: 0;
+      @include utility.sp {
+        margin-top: .22rem;
+      }
     }
   }
   &__image {
@@ -57,5 +115,13 @@
     font-size: 14px;
     text-align: center;
     background-color: utility.$lightgray;
+    @include utility.tab {
+      padding: .11rem 0;
+      font-size: .14rem;
+    }
+    @include utility.sp {
+      padding: .1rem;
+      font-size: .14rem;
+    }
   }
 }

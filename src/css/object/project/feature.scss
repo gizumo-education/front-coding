@@ -3,12 +3,23 @@
 .p-feature {
   padding: 105px 0;
   text-align: center;
+  @include utility.tab {
+    padding: 1.05rem 0;
+  }
+  @include utility.sp {
+    padding: .55rem 0 .6rem;
+  }
   &__title {
     font-size: 25px;
     font-weight: utility.$bold;
+    @include utility.tab {
+      font-size: .25rem;
+    }
+    @include utility.sp {
+      font-size: .25rem;
+    }
   }
   &__container {
-    width: utility.$container;
     margin: 0 auto;
   }
   &__lists {
@@ -16,21 +27,65 @@
     flex-wrap: wrap;
     gap: 40px;
     margin-top: 53px;
+    @include utility.tab {
+      gap: .4rem;
+      margin-top: .53rem;
+    }
+    @include utility.sp {
+      display: block;
+      margin: .38rem auto 0;
+    }
   }
   &__list {
     width: calc((100% - 40px)/ 2);
     padding: 40px 47px;
     background-color: utility.$lightpink;
     border-radius: 10px;
+    @include utility.tab {
+      width: calc((100% - .4rem)/ 2);
+      padding: .4rem .47rem;
+      border-radius: .1rem;
+    }
+    @include utility.sp {
+      width: 100%;
+      padding: .3rem .1rem;
+      border-radius: .1rem;
+      margin-top: .21rem;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
   }
   &__name {
     color: utility.$pink;
     font-size: 24px;
     font-weight: utility.$bold;
+    @include utility.tab {
+      font-size: .24rem;
+    }
+    @include utility.sp {
+      font-size: .2rem;
+    }
   }
   &__detail {
     font-size: 14px;
     line-height: 20px;
     margin-top: 36px;
+    @include utility.tab {
+      font-size: .14rem;
+      line-height: .2rem;
+      margin-top: .36rem;
+    }
+    @include utility.sp {
+      font-size: .12rem;
+      line-height: .17rem;
+      margin-top: .3rem;
+    }
+  }
+  &__blank {
+    display: none;
+    @include utility.sp {
+      display: block;
+    }
   }
 }
