@@ -81,21 +81,17 @@
         &::after {
           position: absolute;
           content: '';
-          top: 25px;
-          right: 14.5px;
+          top: 50%;
+          right: 5%;
           width: 0;
           height: 0;
+          transform: translate(0, -50%);
           border-top: 10px solid util.$pink;
           border-right: 10px solid transparent;
           border-left: 10px solid transparent;
           border-bottom: 10px solid transparent;
           @include m.sp {
             top: 50%;
-            left: 75%;
-            border-top: 0.10rem solid util.$pink;
-            border-right: 0.10rem solid transparent;
-            border-left: 0.10rem solid transparent;
-            border-bottom: 0.10rem solid transparent;
           }
         }
         &:first-of-type {
@@ -126,7 +122,7 @@
             font-size: 0.12rem;
             line-height: 0.17rem;
             padding: 0.05rem;
-            margin-top: 0.13rem;
+            margin-top: 0;
           }
         }
       }
