@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss' as util;
+@use '../../foundation/mixins' as m;
 .p-about {
   height: 300px;
   width: 100%;
@@ -7,9 +8,22 @@
   background-repeat: no-repeat;
   background-position: center;
   padding: 104px 0 103px;
+  @include m.tab {
+    height: 100%;
+    width: 100%;
+  }
+  @include m.sp {
+    height: 100%;
+    width: 100%;
+    padding: 0.16rem 0;
+  }
   &__box {
     display: block;
     margin: auto;
+    @include m.sp {
+      display: block;
+      margin: auto;
+    }
     &__text {
       color: util.$white;
       text-align: center;
@@ -19,35 +33,12 @@
         size: 25px;
         weight: util.$bold;
       };
-      &:first-of-type {
-        margin-top: 0;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .p-about {
-    height: 100%;
-    width: 100%;
-    &__box {
-      &__text {
+      @include m.tab {
         font: {
           size: 0.25rem;
         };
       }
-    }
-  }
-}
-@media screen and (max-width: 767px) {
-  .p-about {
-    height: 100%;
-    width: 100%;
-    padding: 0.16rem 0;
-    &__box {
-      display: block;
-      margin: auto;
-      &__text {
+      @include m.sp {
         color: util.$white;
         line-height: 0.2rem;
         margin-top: 0;
@@ -55,6 +46,9 @@
           size: 0.14rem;
           weight: util.$regular;
         };
+      }
+      &:first-of-type {
+        margin-top: 0;
       }
     }
   }
