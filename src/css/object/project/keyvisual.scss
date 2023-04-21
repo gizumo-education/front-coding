@@ -80,6 +80,8 @@
       margin-left: 635px;
       @include m.tab {
         margin-left: 50%;
+        width: 3.88rem;
+        height: 0.66rem;
       }
       @include m.sp {
         display: block;

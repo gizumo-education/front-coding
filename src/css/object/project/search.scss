@@ -25,7 +25,7 @@
     font-size: 25px;
     font-weight: util.$bold;
     @include m.tab {
-      font-size: 0.25rem;    
+      font-size: 0.25rem; 
     }
     @include m.sp {
       font-size: 0.22rem;
@@ -81,7 +81,7 @@
         &::after {
           position: absolute;
           content: '';
-          top: 50%;
+          top: 60%;
           right: 5%;
           width: 0;
           height: 0;
@@ -91,7 +91,7 @@
           border-left: 10px solid transparent;
           border-bottom: 10px solid transparent;
           @include m.sp {
-            top: 50%;
+            top: 60%;
           }
         }
         &:first-of-type {
