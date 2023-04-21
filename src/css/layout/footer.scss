@@ -3,12 +3,16 @@
 
 #footer {
   background-color: var.$background-color;
-  padding: 55px 210px 25px 210px;
   width: 100%;
 }
 
 .p-footer {
+  display: flex;
   justify-content: space-between;
+}
+
+.p-footerNav {
+  padding-top: 80px;
 }
 
 .p-footerList {
@@ -24,10 +28,9 @@
   }
 }
 
-.p-footerImg {
+.p-footerImage {
+  display: flex;
   flex-direction: column;
 
-  img {
-    display: block;
-  }
+  padding: 55px 0 25px;
 }
