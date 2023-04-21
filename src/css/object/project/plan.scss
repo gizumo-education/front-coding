@@ -94,11 +94,12 @@
           position: absolute;
           top: 100%;
           right: 50%;
-          transform: translate(50%, 50%) rotate(90deg);
+          transform: translate(50%, 0%) rotate(90deg);
           border-top: 30px solid transparent;
           border-right: 25px solid transparent;
           border-left: 25px solid util.$pink;
           border-bottom: 30px solid transparent;
+          margin-top: 10px;
         }
       }
       &:last-child::after {
