@@ -1,4 +1,5 @@
 @use '../utility/utility.scss' as util;
+@use '../../foundation/mixins' as m;
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual {
   background-color: util.$gray;
@@ -7,10 +8,41 @@
     margin: auto;
     height: 500px;
     width: 1262px;
+    @include m.tab {
+      height: 100%;
+      width: 100%;
+      padding: 0.7rem 0 0.5rem;
+      background: {
+        position: center bottom;
+        size: cover;
+        repeat: no-repeat;
+      };
+    }
+    @include m.sp {
+      width: 100%;
+      height: auto;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 0.7rem 0 0.52rem;
+    }
     &__logo {
       display: block;
       margin-left: 655px;
       padding-top: 56px;
+      @include m.tab {
+        height: 100%;
+        width: 100%;
+        margin-left: 52%;
+        padding-top: 0;
+        width: 30%;
+      }
+      @include m.sp {
+        width: 30%;
+        height: 30%;
+        padding-top: 0;
+        margin-left: 52%;
+      }
     }
     &__title {
       font: {
@@ -21,6 +53,20 @@
       text-shadow: 4px 4px 3px util.$shadowGray;
       margin-left: 432px;
       padding-top: 40px;
+      @include m.tab {
+        width: 100%;
+        text-align: right;
+        margin: 0;
+        font: {
+          size: 0.50rem;
+        };
+      }
+      @include m.sp {
+        font-size: 0.17rem;
+        margin-top: 1.8px;
+        padding-top: 0;
+        margin-left: 30%;
+      }
     }
     &__box {
       display: block;
@@ -32,6 +78,18 @@
       border: 2.3px solid util.$lightGreen;
       margin-top: 55px;
       margin-left: 635px;
+      @include m.tab {
+        margin-left: 50%;
+      }
+      @include m.sp {
+        display: block;
+        margin-left: 1.85rem;
+        margin-top: 0.18rem;
+        width: 1.7rem;
+        height: 100%;
+        border-radius: util.$spRadius;
+        border: 0.01rem solid util.$lightGreen;
+      }
       &__text {
         color: util.$lightGreen;
         line-height: 58px;
@@ -39,39 +97,32 @@
           size: 20px;
           weight: util.$bold;
         };
+        @include m.tab {
+          display: inline-block;
+          line-height: 0.58rem;
+          font: {
+            size: 0.2rem;
+            weight: util.$bold;
+          };
+        }
+        @include m.sp {
+          font-size: 0.08rem;
+          line-height: 0.23rem;
+        }
         & > span {
           font: {
             size: 40px;
           };
+          @include m.tab {
+            font: {
+              size: 0.4rem;
+            };
+          }
+          @include m.sp {
+            font-size: 0.16rem;
+          }
         }
       }
     }
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .p-keyvisual {
-    width: 97%;
-    &__wrapper {
-      background: {
-        size: contain;
-        repeat: no-repeat;
-      };
-      &__logo {
-        width: 30%;
-        padding: 0;
-      }
-      &__title {
-        margin: auto;
-      }
-      &__box {
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .p-keyvisual {
-
   }
 }

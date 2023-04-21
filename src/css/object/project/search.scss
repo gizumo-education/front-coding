@@ -1,4 +1,5 @@
 @use '../utility/utility.scss' as util;
+@use '../../foundation/mixins' as m;
 .p-search {
   background-color: util.$lightBlue;
   width: 1180px;
@@ -7,48 +8,123 @@
   padding: 40px;
   border-radius: util.$radius;
   text-align: center;
+  @include m.tab { 
+    background-color: util.$lightBlue;
+    width: 95%;
+    height: 100%;
+    margin: 0.61rem auto 0;
+    padding: 0.4rem;     
+  }
+  @include m.sp {
+    width: 95%;
+    height: auto;
+    margin-top: 0.25rem;
+    padding: 0.15rem 0.25rem 0.2rem;
+  }
   &__title {
     font-size: 25px;
     font-weight: util.$bold;
+    @include m.tab {
+      font-size: 0.25rem;    
+    }
+    @include m.sp {
+      font-size: 0.22rem;
+      font-weight: util.$bold;
+    }
   }
   &__text {
     font-size: 20px;
     line-height: 29px;
     margin-top: 20px;
+    @include m.tab {
+      font-size: 0.2rem;
+      line-height: 0.29rem;
+      margin-top: 0.20rem;    
+    }
+    @include m.sp {
+      font-size: 0.14rem;
+      margin-top: 0.16rem;
+    }
   }
   &__formContent {
     display: flex;
     margin-top: 26.5px;
+    @include m.tab {
+      margin-top: 0.26rem;      
+    }
+    @include m.sp {
+      display: flex;
+      flex-wrap: wrap;
+    }
     &__select {
-      position: relative;
-      margin-left: 16px;
-      &:first-of-type {
-        @include util.firstChild();
+      display: flex;
+      @include m.tab {
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;    
       }
-      &__box {
-        width: 200px;
-        height: 60px;
-        appearance: none;
-        -webkit-appearance: none;
-        cursor: pointer;
-        outline: none;
-        font-size: 18px;
-        padding-left: 15px;
-        border-radius: util.$radius;
-        border: 1px solid util.$pink;
-        background-color: util.$white;
+      @include m.sp {
+        width: 100%;
+        height: 100%;
       }
-      &::after {
-        content: '';
-        position: absolute;
-        top: 25px;
-        right: 14.5px;
-        width: 0;
-        height: 0;
-        border-top: 10px solid util.$pink;
-        border-right: 10px solid transparent;
-        border-left: 10px solid transparent;
-        border-bottom: 10px solid transparent;
+      &__option {
+        position: relative;
+        margin-left: 16px;
+        @include m.tab {
+          width: calc((100% - 0.4rem) / 2);
+          margin-left: 0.16rem; 
+        }
+        @include m.sp {
+          width: 100%;
+          height: 100%;
+        }
+        &::after {
+          position: absolute;
+          content: '';
+          top: 50%;
+          right: 5%;
+          width: 0;
+          height: 0;
+          transform: translate(0, -50%);
+          border-top: 10px solid util.$pink;
+          border-right: 10px solid transparent;
+          border-left: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          @include m.sp {
+            top: 50%;
+          }
+        }
+        &:first-of-type {
+          @include util.firstChild();
+        }
+        &__box {
+          width: 200px;
+          height: 60px;
+          appearance: none;
+          -webkit-appearance: none;
+          cursor: pointer;
+          outline: none;
+          font-size: 18px;
+          padding-left: 15px;
+          border-radius: util.$radius;
+          border: 1px solid util.$pink;
+          background-color: util.$white;
+          @include m.tab {
+            width: 100%;
+            padding: 0.16rem;
+            height: 100%;
+            font-size: 0.18rem;
+            border-radius: util.$spRadius;      
+          }
+          @include m.sp {
+            width: 100%;
+            height: 100%;
+            font-size: 0.12rem;
+            line-height: 0.17rem;
+            padding: 0.05rem;
+            margin-top: 0;
+          }
+        }
       }
     }
     &__text {
@@ -61,6 +137,22 @@
       appearance: none;
       outline: none;
       padding-left: 9.5px;
+      @include m.tab {
+        width:60%;
+        height: 100%;
+        font-size: 0.18rem;
+        padding: 0.16rem;
+        border-radius: util.$spRadius;     
+      }
+      @include m.sp {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0.15rem auto 0;
+        font-size: 0.14rem;
+        padding: 0.04rem 0 0.04rem 0.06rem;
+        line-height: 0.3rem;
+      }
     }
   }
 }
