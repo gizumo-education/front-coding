@@ -7,13 +7,13 @@
 }
 
 .p-keyVisual {
-  justify-content: flex-end;
   position: relative;
-  
-  &__image {
-    height: 500px;
-    width: 100vw;
-  }
+
+  background-image: url("../img/picture/keyVisual.jpg");
+  width: 100vw;
+  height: 500px;
+  background-size: cover;    
+  background-position:center;
 
   &__ranking {
     position: absolute;
