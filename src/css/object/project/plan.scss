@@ -74,17 +74,21 @@
         position: absolute;
         top: 50%;
         right: -50px;
-        border-top: 25px solid transparent;
-        border-right: 30px solid transparent;
-        border-left: 20px solid #DE5579;
-        border-bottom: 25px solid transparent;
+        border-top: 30px solid transparent;
+        border-right: 25px solid transparent;
+        border-left: 25px solid #DE5579;
+        border-bottom: 30px solid transparent;
         transform: translate(0, -50%);
         @include m.tab {
           content: "";
           position: absolute;
           top: 50%;
-          right: -50px;
-          transform: translate(0, -50%);
+          right: 0px;
+          border-top: 0.3rem solid transparent;
+          border-right: 0.25rem solid transparent;
+          border-left: 0.25rem solid #DE5579;
+          border-bottom: 0.3rem solid transparent;
+          transform: translate(100%, -50%);
           z-index: 200;
         }
         @include m.sp {
@@ -92,12 +96,11 @@
           position: absolute;
           top: 100%;
           right: 50%;
-          transform: translate(50%, 0%) rotate(90deg);
+          transform: translate(50%, 50%) rotate(90deg);
           border-top: 0.15rem solid transparent;
           border-right: 0.15rem solid transparent;
           border-left: 0.15rem solid util.$pink;
           border-bottom: 0.15rem solid transparent;
-          margin-top: 0.1rem;
         }
       }
       &:last-child::after {

@@ -81,17 +81,25 @@
         &::after {
           position: absolute;
           content: '';
-          top: 60%;
+          top: 50%;
           right: 5%;
           width: 0;
           height: 0;
-          transform: translate(0, -50%);
+          transform: translate(0, -25%);
           border-top: 10px solid util.$pink;
           border-right: 10px solid transparent;
           border-left: 10px solid transparent;
           border-bottom: 10px solid transparent;
           @include m.sp {
-            top: 60%;
+            top: 52%;
+            right: 5%;
+            width: 0;
+            height: 0;
+            transform: translate(0, -25%);
+            border-top: 0.1rem solid util.$pink;
+            border-right: 0.1rem solid transparent;
+            border-left: 0.1rem solid transparent;
+            border-bottom: 0.10rem solid transparent;
           }
         }
         &:first-of-type {
