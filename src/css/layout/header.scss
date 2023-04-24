@@ -24,7 +24,7 @@
     justify-content: flex-end;
     padding: 25px 0;
     @include m.tab {
-      width: 95%;
+      width: 100%;
       height: 100%;
     }
     @include m.sp {
@@ -59,15 +59,18 @@
           border-left: none;
         }
         @include m.tab {
+          &:first-child {
+            width: 80%;
+          }
           &:nth-child(2) {
-            width: 70%;
+            width: 55%;
           }
         }
         a {
           @include util.hoverFrame();
           color: util.$black;
           @include m.tab {
-            padding-left: 20px;
+            padding-left: 10px;
           }
           &:hover {
             @include util.hover();
