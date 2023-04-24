@@ -92,10 +92,11 @@
           top: 100%;
           right: 50%;
           transform: translate(50%, 0%) rotate(90deg);
-          border-top: 0.2rem solid transparent;
+          border-top: 0.3rem solid transparent;
           border-right: 0.25rem solid transparent;
           border-left: 0.25rem solid util.$pink;
-          border-bottom: 0.2rem solid transparent;
+          border-bottom: 0.3rem solid transparent;
+          margin-top: 0.05rem;
         }
       }
       &:last-child::after {
