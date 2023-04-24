@@ -23,11 +23,12 @@ $(function() {
 
   $('a[href^="#"]').on('click', hideMenu);
   let headerHeight = $('.l-header').outerHeight();
-  let speed = 0;
+  let speed = 500;
     function hideMenu() {
       $('.l-header__open-line').removeClass('is-active');
       $('.l-header__slidedown').removeClass('toggle-scroll');
       $('body').removeClass('is-fixed').css({'top': 0});
+      window.scrollTo(0,scroll);
       let href= $(this).attr("href");
       let target = $(href == "#" || href == "" ? 'html' : href);
       let position = target.offset().top - headerHeight;
