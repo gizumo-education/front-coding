@@ -83,10 +83,6 @@
         background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/picture/pc.jpg);
         background-repeat: no-repeat;
         border-radius: util.$radius;
-        @include m.tab {
-        }
-        @include m.sp {
-        }
       }
       &:hover {
         @include util.hover();
