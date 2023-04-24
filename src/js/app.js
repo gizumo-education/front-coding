@@ -1,4 +1,5 @@
 import $ from "jquery";
+import 'slick-carousel';
 
 $(function() {
   console.log('環境構築完了');
@@ -32,4 +33,17 @@ $(function() {
       state = false;
       return false;
   }
+
+  $('.p-job__lists').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+  });
 })
