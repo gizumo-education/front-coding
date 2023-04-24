@@ -1,30 +1,30 @@
 @use '../../object/utility/utility.scss' as util;
+@use '../../foundation/mixins' as m;
 .p-about {
-  width: 100%;
   height: 300px;
-  position: relative;
-  background: {
-    image:  url(../img/picture/about-img.jpg);
-    position: center bottom;
-    repeat: no-repeat;
-    size: cover;
-  };
-  &::before {
-    content: '';
-    position: absolute;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/picture/about-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 104px 0 103px;
+  @include m.tab {
+    height: 100%;
     width: 100%;
-    height: 300px;
-    background: {
-      color: util.$black;
-      size: cover
-    };
-    opacity: 50%;
+    padding: 1rem 0;
+  }
+  @include m.sp {
+    height: 100%;
+    width: 100%;
+    padding: 0.16rem 0;
   }
   &__box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: block;
+    margin: auto;
+    @include m.sp {
+      display: block;
+      margin: auto;
+    }
     &__text {
       color: util.$white;
       text-align: center;
@@ -34,6 +34,22 @@
         size: 25px;
         weight: util.$bold;
       };
+      @include m.tab {
+        margin-top: 0.21rem;
+        line-height: 0.36rem;
+        font: {
+          size: 0.25rem;
+        };
+      }
+      @include m.sp {
+        color: util.$white;
+        line-height: 0.2rem;
+        margin-top: 0;
+        font: {
+          size: 0.14rem;
+          weight: util.$regular;
+        };
+      }
       &:first-of-type {
         margin-top: 0;
       }

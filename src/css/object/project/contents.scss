@@ -1,50 +1,88 @@
 @use '../../object/utility/utility.scss' as util;
+@use '../../foundation/mixins' as m;
 .p-contents {
   width: 1180px;
   margin: 105px auto 0;
+  @include m.tab {
+    width: 95%;
+    margin: 1.05rem auto 0;
+  }
+  @include m.sp {
+    width: 95%;
+    height: 100%;
+  }
   &__title {
     text-align: center;
     font: {
       size: 25px;
       weight: util.$bold;
     }
+    @include m.tab {
+      text-align: center;
+      font: {
+        size: 0.25rem;
+      }
+    }
+    @include m.sp {
+      font: {
+        size: 0.25rem;
+        weight: util.$bold;
+      }
+    }
   }
   &__list {
     display: flex;
     margin-top: 50px;
+    justify-content: center;
+    @include m.sp {
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin-top: 50px;
+    }
     & > li {
-      background-image: url(../img/picture//print.jpg);
+      display: block;
+      background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/picture//print.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
       width: 380px;
       height: 240px;
       border-radius: util.$radius;
       text-align: center;
-      border-radius: 0px;
       margin-left: 20px;
-      position: relative;
       transition: .3s;
       cursor: pointer;
+      @include m.tab {
+        width: 3.8rem;
+        height: 2.4rem;
+        background-size: cover;
+        &:nth-child(2) {
+          background-size: cover;
+        }
+      }
+      @include m.sp {
+        width: 100%;
+        height: 100%;
+        border-radius: util.$radius;
+        background-size: cover;
+        margin: 0.17rem auto 0;
+      }
       & > a {
         display: block;
-        width: 380px;
-        height: 240px;
+        height: 100%;
         color: util.$white;
-      }
-      &::before {
-        content: '';
-        width: 380px;
-        height: 240px;
-        border-radius: 10px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: util.$black;
-        opacity: 50%;
+        @include m.sp {
+          width: 100%;
+          height: 100%;
+        }
       }
       &:first-child {
         @include util.firstChild();
       }
       &:nth-child(2) {
-        background-image: url(../img/picture/pc.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/picture/pc.jpg);
+        background-repeat: no-repeat;
+        border-radius: util.$radius;
       }
       &:hover {
         @include util.hover();
@@ -53,13 +91,30 @@
     &__box {
       display: block;
       padding: 63px 46px;
-      position: absolute;
-      z-index: 100;
+      @include m.tab {
+        padding: 0.63rem 0.46rem;
+      }
+      @include m.sp {
+        width: 100%;
+        height: 100%;
+      }
     }
     &__title {
       font: {
         size: 24px;
         weight: util.$bold;
+      }
+      @include m.tab {
+        font: {
+          size: 0.24rem;
+          weight: util.$bold;
+        }
+      }
+      @include m.sp {
+        margin: 0;
+        font: {
+          size: 0.21rem;
+        }
       }
     }
     &__detail {
@@ -67,10 +122,28 @@
       margin-top: 44px;
       line-height: 23px;
       width: 288px;
+      @include m.tab {
+        margin-top: 0.44rem;
+        font-size: 0.16rem;
+        width: 2.8rem;
+      }
+      @include m.sp {
+        margin-top: 0.44rem;
+        line-height: 0.2rem;
+        font-size: 0.14rem;
+        padding: 0 0.13rem;
+        width: 100%;
+      }
     }
   }
   &__button {
     display: block;
     margin: 80px auto 0;
+    @include m.tab {
+    }
+    @include m.sp {
+      display: block;
+      margin: 0.55rem auto 0;
+    }
   }
 }

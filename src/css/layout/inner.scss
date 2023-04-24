@@ -7,6 +7,14 @@
 
 @media screen and (max-width: 1199px) {
   .l-main {
+    width: 100%;
     padding-top: 0;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .l-main {
+    width: 100%;
+    padding-top: 0;
+  } 
 }
