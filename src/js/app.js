@@ -6,15 +6,17 @@ $(function() {
 
   $('.l-header__hamburger').on('click', activeBtn);
   let state = false;
+  let scroll;
     function activeBtn() {
       $('.l-header__open-line').toggleClass('is-active');
       $('.l-header__slidedown').stop().toggleClass('toggle-scroll');
-      let scroll = $(window).scrollTop();
       if (state == false) {
+        scroll = $(window).scrollTop();
         $('body').addClass('is-fixed').css({'top': -scroll});
         state = true;
       } else {
         $('body').removeClass('is-fixed').css({'top': 0});
+        window.scrollTo(0,scroll);
         state = false;
       }
   };
