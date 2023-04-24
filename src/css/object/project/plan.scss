@@ -84,6 +84,7 @@
           position: absolute;
           top: 50%;
           right: -50px;
+          transform: translate(0, -50%);
           z-index: 200;
         }
         @include m.sp {
