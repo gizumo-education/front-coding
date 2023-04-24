@@ -78,10 +78,6 @@
       }
       &:first-child {
         @include util.firstChild();
-        @include m.tab {
-        }
-        @include m.sp {
-        }
       }
       &:nth-child(2) {
         background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/picture/pc.jpg);
