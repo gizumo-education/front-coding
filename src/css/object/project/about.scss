@@ -35,6 +35,8 @@
         weight: util.$bold;
       };
       @include m.tab {
+        margin-top: 0.21rem;
+        line-height: 0.36rem;
         font: {
           size: 0.25rem;
         };
