@@ -5,7 +5,7 @@
   margin: 105px auto 0;
   @include m.tab {
     width: 95%;
-    margin: 105px auto 0;
+    margin: 1.05rem auto 0;
   }
   @include m.sp {
     width: 95%;
@@ -131,6 +131,7 @@
       line-height: 23px;
       width: 288px;
       @include m.tab {
+        margin-top: 0.44rem;
         font-size: 0.16rem;
         width: 2.8rem;
       }
