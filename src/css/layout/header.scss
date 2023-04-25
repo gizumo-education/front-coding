@@ -213,18 +213,22 @@
       transition: all 0.6s;  
       font: {
         size: 0.22rem;
+        weight: util.$bold;
       };
-      & >li {
-        margin-top: 0.38rem;
-        &:first-child {
-          margin-top: 0;
-        }
-      }
     }
     &__lists {
       @include m.sp {
-        text-align: left;
-        color: util.$white;
+        padding: 0.57rem 0 0 0.6rem;
+      }
+        & >li {
+          margin-top: 0.38rem;
+          &:first-child {
+            margin-top: 0;
+          }
+        @include m.sp {
+          text-align: left;
+          color: util.$white;
+        }
       }
     }
   }
