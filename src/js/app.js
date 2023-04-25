@@ -22,16 +22,16 @@ $(function() {
   };
 
   $('a[href^="#"]').on('click', hideMenu);
-  let headerHeight = $('.l-header').outerHeight();
-  let speed = 500;
+  const headerHeight = $('.l-header').outerHeight();
+  const speed = 500;
     function hideMenu() {
       $('.l-header__open-line').removeClass('is-active');
       $('.l-header__slidedown').removeClass('toggle-scroll');
       $('body').removeClass('is-fixed').css({'top': 0});
       window.scrollTo(0,scroll);
-      let href= $(this).attr("href");
-      let target = $(href == "#" || href == "" ? 'html' : href);
-      let position = target.offset().top - headerHeight;
+      const href= $(this).attr("href");
+      const target = $(href == "#" || href == "" ? 'html' : href);
+      const position = target.offset().top - headerHeight;
       $('html, body').stop().animate({scrollTop:position}, speed, "swing");
       state = false;
       return false;
