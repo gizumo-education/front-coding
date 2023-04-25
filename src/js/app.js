@@ -10,7 +10,7 @@ $(function() {
     function activeBtn() {
       $('.l-header__open-line').toggleClass('is-active');
       $('.l-header__slidedown').stop().toggleClass('toggle-scroll');
-      if (state == false) {
+      if (state === false) {
         scroll = $(window).scrollTop();
         $('body').addClass('is-fixed').css({'top': -scroll});
         state = true;
