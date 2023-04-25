@@ -15,7 +15,7 @@
   @include m.sp {
     @include m.max();
     text-align: right;
-    padding: 0.16rem 0.15rem;
+    padding: 0.16rem 0;
   }
   &__wrapper {
     margin: auto;
@@ -168,7 +168,7 @@
       background-color: transparent;
       border: none;
       width: 0.5rem;
-      box-sizing: border-box;     
+      box-sizing: border-box;    
     }
     &__line {
       @include m.sp {
@@ -181,5 +181,38 @@
         }
       }
     }
+  }
+  &__nav {
+    display: none;
+    @include m.sp {
+      display: block;
+      position: fixed;
+      width: 100%;
+      right: -120%;
+      height: 5.54rem;
+      z-index: 300;
+      margin-top: 0.16rem;
+      background-color: util.$black;
+      opacity: 70%;
+      transition: all 0.6s;  
+      font: {
+        size: 0.22rem;
+      };
+      & >li {
+        margin-top: 0.38rem;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    &__lists {
+      @include m.sp {
+        text-align: left;
+        color: util.$white;
+      }
+    }
+  }
+  &__nav.navActive {
+    right: 0%;
   }
 }
