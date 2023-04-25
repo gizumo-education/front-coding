@@ -122,6 +122,7 @@
       width: .5rem;
       height: .38rem;
       margin: 0 0 0 auto;
+      cursor: pointer;
       position: relative;
     }
   }
@@ -138,9 +139,19 @@
     &:nth-child(3) {
       top: .32rem;
     }
+    &.is-active:nth-child(1) {
+      top: 10px;
+      transform: translateY(6px) rotate(-45deg);
+    }
+    &.is-active:nth-child(2) {
+      display: none;
+    }
+    &.is-active:nth-child(3) {
+      top: 10px;
+      transform: translateY(6px) rotate(45deg);
+    }
   }
   &__slidedown {
-    display: none;
     width: 100%;
     padding: .56rem .60rem 2.3rem;
     background-color: utility.$shadow;
@@ -150,6 +161,11 @@
     text-align: center;
     position: fixed;
     top: .7rem;
+    right: -120%;
+    transition: all .8s;
+    &.toggle-scroll {
+      right: 0;
+    }
   }
   &__menu {
     margin-top: .38rem;
@@ -157,4 +173,11 @@
       margin-top: 0;
     }
   }
+  &__page-link {
+    color: utility.$white;
+  }
+}
+.is-fixed {
+  position: fixed;
+  width: 100%;
 }

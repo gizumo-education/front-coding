@@ -98,7 +98,8 @@
       font-size: .24rem;
     }
     @include utility.sp {
-    }font-size: .21rem;
+      font-size: .21rem;
+    }
   }
   &__detail {
     color: utility.$white;
