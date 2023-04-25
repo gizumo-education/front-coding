@@ -221,13 +221,18 @@
         padding: 0.57rem 0 0 0.6rem;
       }
         & >li {
-          margin-top: 0.38rem;
+          @include m.sp {
+            margin-top: 0.38rem;
+            text-align: left;
+            color: util.$white;
+          }
           &:first-child {
             margin-top: 0;
           }
-        @include m.sp {
-          text-align: left;
-          color: util.$white;
+        & > a {
+          @include m.sp {
+            color: util.$white;
+          }
         }
       }
     }

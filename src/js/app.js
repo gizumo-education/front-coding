@@ -15,3 +15,13 @@ $(function() {
     $('.l-header__nav').removeClass('navActive');
   });
 })
+
+$(function() {
+  $('a[href^="#"]').click(function() {
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $('body,html').animate({scrollTop:position}, 400, 'swing');
+    return false;
+  });
+});
