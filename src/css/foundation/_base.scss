@@ -65,6 +65,8 @@ button, input, select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  background-color: base.$white;
+  color: base.$black;
 }
 
 select, input {
