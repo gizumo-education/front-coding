@@ -3,14 +3,31 @@
 .c-icon__header {
   width: 18px;
 
+  @include var.tab {
+    width: .18rem;     
+  }
+  
   &__margin {
     margin-right: 10px;
+
+    @include var.tab {
+      margin-right: .1rem;
+    }
   }
 }
 
 .c-icon__searchBtn {
   width: 30px;
   height: 30px;
+
+  @include var.tab {
+    width: .3rem;
+    height: .3rem;
+  }
+  @include var.sp {
+    width: 0.18rem;
+    height: 0.18rem;
+  }
 }
 
 
@@ -20,11 +37,34 @@
   left: 10px;
   width: 60px;
   height: 60px;
+
+  @include var.tab {
+    width: .6rem;
+    height: .6rem;
+    top: .1rem;
+    left: .1rem;
+  }
+  @include var.sp {
+    top: .1rem;
+    left: .1rem;
+    width: .45rem;
+    height: .45rem;
+  }
 }
 .c-iconFlow {
   position: absolute;
-  top: 15%;
-  left: 33%;
+  top: 30%;
+  left: 50%;
   width: 100px;
   height: 100px;
+  transform: translate(-50%, -50%);
+
+  @include var.tab {
+    width: 1rem;
+    height: 1rem;
+  }
+  @include var.sp {
+    width: .76rem;
+    height: .75rem;
+  }
 }

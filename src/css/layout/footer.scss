@@ -4,15 +4,46 @@
 #footer {
   background-color: var.$background-color;
   width: 100%;
+  margin-top: 200px;
+
+  @include var.tab {
+    margin-top: 2rem;
+  }
+  @include var.sp {
+    margin-top: 1rem;
+    padding: .4rem;
+  }
 }
 
 .p-footer {
   display: flex;
   justify-content: space-between;
+  // padding: 0 210px;
+
+  @include var.sp {
+    flex-direction: column;
+    align-items: start;
+  }
+  a {
+    @include var.tab {
+      font-size: .16rem;
+    }
+    @include var.sp {
+      font-size: .16rem;
+    }
+  }
 }
 
 .p-footerNav {
   padding-top: 80px;
+
+  @include var.tab {
+    padding-top: .8rem;
+  }
+  @include var.sp {
+    padding: 0;
+    font-size: .16rem;
+  }
 }
 
 .p-footerList {
@@ -20,10 +51,28 @@
   ul {
     li {
       margin-top: 20px;
-    }
 
+      @include var.tab {
+        margin-top: .2rem;
+      }
+    }
     li:first-child {
       margin-top: 25px;
+  
+      @include var.tab {
+        margin-top: .25rem;
+      }
+    }
+  }
+
+  &__right {
+    margin-left: 40px;
+    
+    @include var.tab {
+      margin-leftd: .4rem;
+    }
+    @include var.sp {
+      margin-left: .4rem;
     }
   }
 }
@@ -33,4 +82,35 @@
   flex-direction: column;
 
   padding: 55px 0 25px;
+
+  @include var.tab {
+    padding: .55rem 0 .25rem;
+  }
+  @include var.sp {
+    padding: 0;
+    margin-top: .22rem;
+  }
+
+  &__image {
+    @include var.tab {
+      width: 3.2rem;
+      height: .85rem;
+    }
+    @include var.sp {
+      width: 3.2rem;
+      height: .85rem;
+    }
+  }
+  
+
+  &__bottom {
+    margin-top: 15px;
+
+    @include var.tab {
+      margin-top: .15rem;
+    }
+    @include var.sp {
+      margin-top: .15rem;
+    }
+  }
 }

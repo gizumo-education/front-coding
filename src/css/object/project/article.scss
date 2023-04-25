@@ -2,22 +2,46 @@
 
 .p-article {
   background-color: var.$background-color;
+  margin-top: 60px;
   padding: 65px 0;
 
+  @include var.tab {
+    margin-top: .6rem;
+    padding: .65rem 0;
+  }
+  @include var.sp {
+    margin-top: 0.25rem;
+    padding: .3rem 0 .6rem 0;
+  }
+
   &__title {
-    font-size: 25px;
-    font-weight: var.$regular;
-    line-height: 30px;
-    letter-spacing: 0em;
     text-align: left;
+    
+    @include var.sp {
+      text-align: center;
+
+    }
   }
 
   &__list {
     display: flex;
     margin-top: 25px;
 
+    @include var.tab {
+      margin-top: .25rem;
+    }
+    @include var.sp {
+      margin-top: .35rem;
+      li:not(:first-child) {
+        display: none;
+      }
+    }
+
     li {
       margin-left: 20px;
+      @include var.tab {
+        margin-left: .2rem;
+      }
     }
     
     li:first-child {
@@ -25,16 +49,60 @@
     }
 
     &__img {
+      background-image: url("../img/picture/article1.jpg");
+      background-size: cover;    
+      background-position:center top;
       border-radius: 15px;
       width: 280px;
       height: 200px;
+
+      @include var.tab {
+        width: 2.8rem;
+        height: 2rem;
+      }
+      @include var.sp{
+        width: 3.7rem;
+        height: 2.08rem;
+      }
 
     }
     &__text {
       margin-top: 5px;
       line-height: 22px;
+
+      @include var.tab {
+        margin-top: .05rem;
+        line-height: .22rem;
+        font-size: .16rem;
+      }
+      @include var.sp{
+        font-weight: var.$bold;
+        font-size: .16rem;
+        line-height: .22rem;
+      }
   
     }
   }
 
+}
+
+.p-articleButton {
+  margin-top: 60px;
+  height: 60px;
+  width: 360px;
+  font-size: 18px;
+
+  @include var.tab {
+    margin-top: .6rem;
+    height: .6rem;
+    width: 3.6rem;
+    font-size: .18rem;
+  }
+  @include var.sp {
+    margin-top: .45rem;
+    width: 3.7rem;
+    height: .6rem;
+    border-radius: .3rem;
+    font-size: .18rem;
+  }
 }

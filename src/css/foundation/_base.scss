@@ -69,6 +69,25 @@ button, input, select {
 
 select, input {
   font-size: 18px;
+
+  @include base.tab {
+    font-size: .18rem;
+  }
+  @include base.sp {
+    font-size: .12rem;
+  }
+}
+
+table {
+  font-size: 14px;
+
+  @include base.tab {
+    font-size: 0.14rem;
+  }
+  @include base.sp {
+    font-size: 0.14rem;
+  }
+  
 }
 
 
@@ -77,11 +96,27 @@ h2 {
   font-weight: base.$bold;
   line-height: 25px;
   text-align: center;
+
+  @include base.tab {
+    font-size: .25rem;
+    line-height: .25rem;
+  }
+  @include base.sp {
+    font-size: .25rem;
+    line-height: .25rem;
+  }
 }
 
 h3 {
   font-size: 24px;
   font-weight: base.$bold;
+
+  @include base.tab {
+    font-size: .24rem;
+  }
+  @include base.sp {
+    font-size: .2rem;
+  }
 }
 
 .is-pc {

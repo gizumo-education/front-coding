@@ -1,23 +1,94 @@
 @use '../utility/utility.scss' as var;
 
-.p-seach {
-  &__container {
-    background-color: var.$serchBoxColor;
-    text-align: center;
-    border-radius: 5px;
+.p-search__containerTop {
+  margin-top: 60px;
 
+  @include var.tab {
+    margin-top: .6rem;
+  }
+  @include var.sp {
+    margin-top: .25rem;
+  }
+}
+.p-search__containerBottom {
+  margin-top: 150px;
+
+  @include var.tab {
+    margin-top: 1.5rem;
+  }
+  @include var.sp {
+    margin-top: .6rem;
   }
 }
 
-.p-search__box {
-  display: flex;
-  justify-content: center;
+.p-search {
+  background-color: var.$serchBoxColor;
+  text-align: center;
+  border-radius: 5px;
+  padding: 40px;
 
-  li {
-    margin-left: 15px;
+  @include var.tab {
+    padding: .4rem;
   }
+  @include var.sp {
+    padding: .2rem;
+    border-radius: .05rem;
+  }
+  
 
-  li:first-child {
-    margin-left: 0;
+  &__text {
+    margin-top: 20px;
+
+    @include var.tab {
+      margin-top: .2rem;
+    }
+    @include var.sp {
+      margin-top: .16rem;
+      font-size: .14rem;
+    }
+    
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+  
+    margin-top: 25px;
+
+    @include var.tab {
+      margin-top: .25rem;
+    }
+    @include var.sp {
+      flex-wrap: wrap;
+      margin-top: .135rem;
+    }
+  
+    li {
+      margin-left: 15px;
+
+      @include var.tab {
+        margin-left: .15rem;
+      }
+      @include var.sp {
+        margin-left: .1rem;
+      }
+    }
+  
+    li:first-child {
+      margin-left: 0;
+    }
+
+    @include var.sp {
+      li:nth-last-child(2),
+      li:last-child {
+        margin-left: 0;
+      }
+      li:nth-last-child(2) {
+        margin-top: .16rem;
+      }
+
+      li:last-child {
+        margin-top: .2rem;
+      }
+    }
   }
 }

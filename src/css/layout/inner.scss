@@ -4,9 +4,12 @@
 .l-inner {
   width: 1180px;
   margin: 0 auto;
+
+  @include var.tab {
+    width: 11.80rem;
+  }
+  @include var.sp {
+    width: 3.7rem;
+  }
 }
 
-.l-article {
-  width: 100%;
-  background-color: var.$background-color;
-}

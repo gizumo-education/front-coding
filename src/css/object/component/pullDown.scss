@@ -2,16 +2,33 @@
 
 .c-pulldown {
   position: relative;
-  
+
+  @include var.tab {
+    width: 2rem;
+    height: .6rem;
+  }  
+
   &::after {
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-top: 9px solid var.$pink;
-      content: "";
-      position: absolute;
-      right: 10px;
-      top: 25px;
-      width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 9px solid var.$pink;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(50%, -50%);
+    
+    @include var.tab {
+      border-left: .08rem solid transparent;
+      border-right: .08rem solid transparent;
+      border-top: .08rem solid var.$pink; 
+    }
+    @include var.sp {
+      border-left: .07rem solid transparent;
+      border-right: .07rem solid transparent;
+      border-top: .07rem solid var.$pink; 
+      right: 12%;
+    }
   }
 
   &__list {
@@ -21,5 +38,16 @@
     border-radius: 10px;
 
     padding: 15px;
+
+    @include var.tab {
+      width: 2rem;
+      height: .6rem;
+      padding: .15rem;
+    }
+    @include var.sp {
+      width: 1rem;
+      height: 0.3rem;
+      padding: 0.07rem;
+    }
   }
 }

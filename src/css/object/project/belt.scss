@@ -4,26 +4,52 @@
   position: relative;
 
   &__image {
-    height: 300px;
     width: 100vw;
-  }
+    height: 300px;
+    background-image: url("../img/picture/belt.jpg");
+    background-size: cover;    
+    background-position:center;
 
+    @include var.tab {
+      height: 3rem;
+    }
+    @include var.sp {
+      height: .75rem;
+    }
+  }
+  
   &__cover {
     width: 100%;
     height: 300px;
-  
+    
     background: var.$beltCover;
     opacity: 0.5;
-  
+    
     position: absolute;
     top: 0;
     left: 0;
+
+    @include var.tab {
+      height: 3rem;
+    }
+    @include var.sp {
+      height: .75rem;
+    }
   }
 
   &__text {
     font-weight: var.$bold;
     font-size: 25px;
     color: var.$white;
+
+    @include var.tab {
+      font-size: .25rem;
+    }
+    @include var.sp {
+      font-size: .14rem;
+      font-weight: var.$regular;
+      text-align: center;
+    }
   }
 
   &__textTop {
@@ -31,11 +57,22 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
+
+    @include var.sp {
+      width: 100%;
+      top: 38%;
+    }
   }
   &__textBottom {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
+    white-space: nowrap;
+
+    @include var.sp {
+      width: 100%;
+      top: 62%;
+    }
   }
 }
