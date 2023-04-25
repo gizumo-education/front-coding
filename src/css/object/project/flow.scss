@@ -1,15 +1,45 @@
 @use '../utility/utility.scss' as var;
 
+.p-flow {
+  margin-top: 100px;
+
+  @include var.tab {
+    margin-top: 1rem;
+  }
+  @include var.sp {
+    margin-top: .6rem;
+  }
+} 
+
 .p-flowContainer {
   display: flex; 
-
   margin-top: 50px;
+
+  @include var.tab {
+    margin-top: .5rem;
+  }
+  @include var.sp {
+    flex-direction: column;
+    align-items: center;
+    margin-top: .35rem;
+  }
   
   li {
     margin-left: 20px;
+
+    @include var.tab {
+      margin-left: .2rem;
+    }
+    @include var.sp {
+      margin-left: 0;
+      margin-top: .41rem;
+    }
   }
   li:first-child {
     margin-left: 0;
+    @include var.sp {
+      margin-top: 0;
+    }
   }
   
   li:last-child::after {
@@ -31,18 +61,43 @@
 
   text-align: center;
 
+  @include var.tab {
+    height: 3.5rem;
+    width: 2.7rem;
+  }
+  @include var.sp {
+    height: 2.9rem;
+    width: 2.77rem;
+
+  }
+
   &::after {
-    border-left: 16px solid var.$pink;
-    border-right: 16px solid transparent;
-    border-top: 18px solid transparent;
-    border-bottom: 18px solid transparent;
+    border-left: 20px solid var.$pink;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
     content: "";
     position: absolute;
     top: 50%;
     right: 0%;
     transform: translate(100%,-50%);
 
-    width: 0;
+    @include var.tab {
+      border-left: .2rem solid var.$pink;
+      border-right: .2rem solid transparent;
+      border-top: .2rem solid transparent;
+      border-bottom: .2rem solid transparent;
+    }
+    @include var.sp {
+      top: 100%;
+      right: 50%;
+      transform: translate(50%, 30%);
+      border-top: .2rem solid var.$pink;
+      border-left: .2rem solid transparent;
+      border-right: .2rem solid transparent;
+
+    }
+
   }
 
   &__title {
@@ -51,15 +106,34 @@
     margin: 0 auto;
   
     position: absolute;
-      top: 50%;
-      left: 5%;
+    top: 50%;
+    left: 5%;
+    
+    @include var.tab {
+      line-height: .3rem;
+    }
+    @include var.sp {
+      width: 100%;
+      left: 0;
+      line-height: .28rem;
+    }
   }
   &__text {
     width: 90%;
     line-height: 20px;
   
     position: absolute;
-      top: 70%;
-      left: 5%;
+    top: 70%;
+    left: 5%;
+
+    @include var.tab {
+      line-height: .2rem;
+      font-size: .14rem;
+    }
+    @include var.sp {
+      font-size: .14rem;
+      line-height: .2rem;
+    }
+    
   }
 }

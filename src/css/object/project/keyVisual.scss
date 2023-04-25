@@ -4,6 +4,14 @@
 
 .p-keyVisual__container {
   display: flex;
+  padding-top: 100px;
+
+  @include var.tab {
+    padding-top: 1rem;
+  }
+  @include var.sp {
+    padding-top: 0.67rem;
+  }
 }
 
 .p-keyVisual {
@@ -15,37 +23,99 @@
   background-size: cover;    
   background-position:center;
 
+  @include var.tab {
+    height: 5rem;
+  }
+  @include var.sp {
+    background-image: url("../img/picture/keyVisual_sp.jpg");
+    height: 2.7rem;
+  }
+
   &__ranking {
     position: absolute;
-    left: 51.88%;
     top: 10%;
+    left: 51.88%;
 
+    @include var.tab {
+      height: 1.68rem;
+      width: 3.41rem;
+    }
+    @include var.sp {
+      top: 23%;
+      width: 1.5rem;
+      height: 0.7rem;
+    } 
   }
+
   &__message {
     position: absolute;
-    left: 37.94%;
-    top: 55.17%;
+    top: 50%;
+    left: 40%;
+    transform: translate(-10%, 50%);
+    
+    @include var.tab {
+      width: 8rem;
+      height: .65rem;
+    }
+    @include var.sp {
+      top: 55%;
+      width: 2.5rem;
+      height: 0.2rem;
+    }
   }
   &__number {
     position: absolute;
-    left: 50%;
     top: 80.17%;
-
+    left: 50%;
+    
     background-color: var.$white;
     padding: 5px 40px;
     border-radius: 10px;
     border: #2EB6AA solid 2px;
 
+    @include var.tab {
+      padding: .05rem .4rem;
+    }
+    @include var.sp {
+      top: 70%;
+      padding: 0.03rem 0.24rem;
+    }
+  
     &__text {
       color: #2EB6AA;
       font-weight: var.$bold;
       font-size: 40px;
 
+      @include var.tab {
+        font-size: .4rem;
+      }
+      @include var.sp {
+        font-size: 0.16rem;
+      }
+      
       &::before {
         content: "現在の求人掲載数：";
         font-weight: var.$regular;  
         font-size: 20px;      
-
+        
+        @include var.tab {
+          font-size: .2rem;
+        }
+        @include var.sp {
+          font-size: 0.08rem;
+        }
+      }
+      &::after {
+        content: "件";
+        font-weight: var.$regular;  
+        font-size: 20px;      
+        
+        @include var.tab {
+          font-size: .2rem;
+        }
+        @include var.sp {
+          font-size: 0.08rem;
+        }
       }
     }
   }

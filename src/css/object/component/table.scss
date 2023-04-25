@@ -1,18 +1,45 @@
 @use '../utility/utility.scss' as var;
 
 .c-table {
-  border-collapse: separate;
-  border-spacing: 10px 5px;
-  
   margin-top: 6px;
+
+  border-collapse: separate;
+  border-spacing: 10px 8px;
+  
+  @include var.tab {
+    margin-top: .06rem;
+    border-spacing: 0.1rem .008rem;
+  }
+  @include var.sp {
+    margin-top: .12rem;
+    border-spacing: .2rem .06rem;
+  }
 }
 .c-th {
   width: 60px;
   height: 20px;
   background-color: var.$light-pink;
   text-align: center;
+  vertical-align: middle;
+
+  @include var.tab {
+    width: .6rem;
+    height: .2rem;
+  }
+  @include var.sp {
+    width: .6rem;
+    height: .21rem;
+  }
 }
 .c-td {
   height: 20px;
   text-align: left;
+  vertical-align: middle;
+
+  @include var.tab {
+    height: .2rem;
+  }
+  @include var.sp {
+    height: .2rem;
+  }
 }

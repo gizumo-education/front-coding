@@ -13,9 +13,19 @@
     align-items: center;
     font-size: 16px;
     color: var.$white;
+
+    @include var.tab {
+        width: 1.4rem;
+        height: .5rem;
+        font-size: .16rem;
+    }
   }
   &__inList {
     width: 160px;
+
+    @include var.tab {
+      width: 1.6rem;
+    }
   }
 }
 
@@ -30,20 +40,24 @@
   align-items: center;
 }
 
-.c-buttonSearch {
+.p-searchButton {
   width: 140px;
   height: 60px;
   font-size: 18px;
+
+  @include var.tab {
+    width: 1.4rem;
+    height: .6rem;
+    font-size: .18rem;
+  }
+  @include var.sp {
+    width: 1.6rem;
+    height: 0.4rem;
+    font-size: .18rem;
+  }
 }
 
 .c-buttonWideArea {
   display: flex;
   justify-content: center;
 }
-
-.c-buttonWide {
-  height: 60px;
-  width: 360px;
-  font-size: 18px;
-}
-

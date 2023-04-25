@@ -11,34 +11,102 @@
   padding-right: 100px; 
   justify-content: flex-end;
 
+  @include var.tab{
+    padding-right: 1rem;
+  }
+  @include var.sp{
+    padding-right: 0;
+  }
+
   &__menu {
     display: flex;
     padding: 40px 0 40px 40px;
     
+    @include var.tab {
+      padding: .4rem 0 .4rem .4rem;
+    }
+    @include var.sp {
+      display: none;
+    }
     li {
       border-left: solid 1px;
       padding-left: 15px;
       margin-left: 15px;
+      @include var.tab {
+        border-left: solid .01rem;
+        padding-left: .15rem;
+        margin-left: .15rem;
+      }
     }
-
     li:first-child{
       margin-left: 0;
       padding-left: 0;
       border: none;
     }
+
   }
 
+  &__text {
+    @include var.tab {
+      font-size: .16rem;
+      line-height: .23rem;
+      white-space: nowrap;
+    }
+  }
+  
   &__buttons {
     display: flex;
     padding: 25px 0;
+    @include var.tab {
+      padding: .25rem 0;
+    }
+    @include var.sp {
+      display: none;
+    }
+
     li {
       margin-left: 15px;
-    }
 
+      @include var.tab {
+        margin-left: .15rem;
+      }
+    }
     li:first-child{
       margin-left: 25px;
+      @include var.tab {
+        margin-left: .25rem;
+      }
     }
+
   }
 
+  &__hamburgerMenu {
+    @include var.pc {
+      display: none;
+    }
+    @include var.tab {
+      display: none;
+    }
+
+    @include var.sp {
+      display: block;
+      padding: 0.16rem 0.16rem 0.16rem 0;
+    }
+
+    span:first-child {
+      margin-top: 0;
+    }
+
+    &__bar {
+      display: block;
+      height: 0.06rem;
+      width: 0.5rem;
+      border-radius: 0.05rem;
+      background-color: var.$black;
+      margin-top: 0.1rem;
+    }
+  }
 }
+
+
 
