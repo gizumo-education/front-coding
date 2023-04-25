@@ -11,19 +11,26 @@
   }
   @include var.sp {
     margin-top: 1rem;
-    padding: .4rem;
+    padding: .4rem 0;
   }
 }
 
 .p-footer {
   display: flex;
   justify-content: space-between;
-  // padding: 0 210px;
+  width: 1180px;
+  margin: 0 auto;
 
+  @include var.tab {
+    width: 11.8rem;
+  }
   @include var.sp {
+    width: 100%;
+    width: 100%;
     flex-direction: column;
     align-items: start;
   }
+
   a {
     @include var.tab {
       font-size: .16rem;
@@ -41,7 +48,8 @@
     padding-top: .8rem;
   }
   @include var.sp {
-    padding: 0;
+    padding-top: 0;
+    padding-left: .5rem;
     font-size: .16rem;
   }
 }
@@ -88,6 +96,7 @@
   }
   @include var.sp {
     padding: 0;
+    padding-left: .4rem;
     margin-top: .22rem;
   }
 
