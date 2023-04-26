@@ -180,16 +180,16 @@
         border: 0.04rem solid util.$black;
         border-radius: util.$spRadius;
         transition: all .4s;
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -50%); 
         width: 100%;
         &:nth-of-type(1) {
+          position: absolute;
+          top: 0;
         }
         &:nth-of-type(2) {
         }
         &:nth-of-type(3) {
-          
+          position: absolute;
+          bottom: 0;
         }
       }
     }
@@ -198,13 +198,15 @@
     @include m.sp {
       & > span {
         &:nth-of-type(1) {
-          transform: rotate(-45deg);
+          transform: translateY(-100%) rotate(-45deg);
+          top: 50%;
         }
         &:nth-of-type(2) {
           opacity: 0;
         }
         &:nth-of-type(3) {
           transform: rotate(45deg);
+          bottom: 50%;
         }
       }
     }
