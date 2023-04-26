@@ -1,5 +1,6 @@
 import $ from "jquery";
 import 'slick-carousel';
+import 'slick-carousel/slick/slick.css';
 
 $(function() {
   console.log('環境構築完了');
@@ -18,10 +19,19 @@ $(function() {
 
 $(function() {
   $('a[href^="#"]').click(function() {
+    var adjust = -100;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $('body,html').animate({scrollTop:position}, 400, 'swing');
+    var position = target.offset().top + adjust;
+    $('body,html').animate({scrollTop:position}, 700, 'swing');
     return false;
   });
 });
+
+$(function() {
+  $('.slider').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+  });
+})
