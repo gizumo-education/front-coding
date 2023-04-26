@@ -1,5 +1,11 @@
 @use '../object/utility/utility.scss';
 // innerのスタイルを記述するファイル
+body {
+  &.fixed {
+    height: 100%;
+    overflow: hidden;
+  }
+}
 .l-main {
   padding-top: 100px;
   margin: auto;

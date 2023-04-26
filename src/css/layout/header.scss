@@ -172,7 +172,7 @@
       background-color: transparent;
       border: none;
       width: 0.65rem;
-      height: 0.65rem; 
+      height: 0.65rem;
     }
     &__line {
       @include m.sp {
@@ -196,6 +196,7 @@
   }
   &__sp.active {
     @include m.sp {
+      overflow: scroll;
       & > span {
         &:nth-of-type(1) {
           transform: translateY(-100%) rotate(-45deg);

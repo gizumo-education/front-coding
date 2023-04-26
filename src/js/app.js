@@ -9,10 +9,12 @@ $(function() {
 $(function() {
   $('.l-header__sp').click(function() {
     $(this).toggleClass('active');
+    $('body').addClass('fixed');
     $('.l-header__nav').toggleClass('navActive');
   });
   $('.l-header__nav a').click(function() {
     $('.l-header__sp').removeClass('active');
+    $('html').removeClass('fixed');
     $('.l-header__nav').removeClass('navActive');
   });
 })
