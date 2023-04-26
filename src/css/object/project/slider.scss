@@ -1,4 +1,73 @@
 @use '../utility/utility.scss' as util;
 @use '../../foundation/mixins' as m;
 .slider {
+  width: 100%;
+  margin: 35px auto 0;
+}
+.slider a {
+  color: util.$black;
+}
+.slide-items {
+  width: 100%;
+  height: 100%;
+}
+.slick-slide {
+  width: 100%;
+  padding-left: 20px;
+  @include m.sp {
+    padding-left: 0;
+  }
+}
+.slick-slide:first-child {
+  margin-left: 0;
+}
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-prev, .slick-next {
+  font-size: 0;
+  line-height: 0;
+  z-index: 300;
+  position: absolute;
+  top: 55%;
+  display: block;
+  width: 0.62rem;
+  height: 0.62rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  padding: 0;
+  opacity: 70%;
+}
+
+.slick-prev {
+  left: 0;
+  z-index: 100;
+}
+.slick-next {
+  right: 0;
+}
+.slick-prev::before,
+.slick-next::before {
+  content: '';
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top: 1px solid util.$black;
+  border-left: 1px solid util.$black;
+  top: 0;
+  left: 50%;
+}
+.slick-prev::before {
+  transform: translate(-40%, 0) rotate(-45deg);
+}
+.slick-next::before {
+  transform: translate(-50%, 0) rotate(135deg);
 }

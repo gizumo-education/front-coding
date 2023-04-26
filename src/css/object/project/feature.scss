@@ -117,10 +117,6 @@
       }
       &:last-child {
         margin-top: 26px;
-        @include m.tab {
-        }
-        @include m.sp {
-        }
       }
       &__spbr {
         display: none;
