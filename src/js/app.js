@@ -30,10 +30,11 @@ $(function() {
 
 $(function() {
   $('.slider').slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     infinite: true,
     arrows: true,
+    prevArrow: $('.test'),
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [{
