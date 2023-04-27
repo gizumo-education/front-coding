@@ -16,7 +16,7 @@
     @include m.max();
     text-align: right;
     height: 100%;
-    padding: 0.16rem 0;
+    padding: 0.16rem;
   }
   &__wrapper {
     margin: auto;
@@ -168,16 +168,17 @@
       position: relative;
       padding: 0;
       top: 0;
+      box-sizing: border-box;
       left: 0;
       background-color: transparent;
       border: none;
-      width: 0.65rem;
-      height: 0.65rem;
+      width: 0.5rem;
+      height: 0.38rem;
     }
     &__line {
       @include m.sp {
         display: block;
-        border: 0.04rem solid util.$black;
+        border: 0.03rem solid util.$black;
         border-radius: util.$spRadius;
         transition: all .4s;
         width: 100%;
