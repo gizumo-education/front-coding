@@ -24,8 +24,6 @@
   }
 
   &__list {
-    // display: flex;
-    // justify-content: space-between;
     margin-top: 25px;
     position: relative;
 
@@ -90,10 +88,11 @@
     &__next {
       position: absolute;
       top: 20%;
-      right: 0;
+      right: 1.25%;
 
       @include var.sp {
         top: 45%;
+        right: 0;
       }
 
       &::before {
@@ -120,7 +119,7 @@
       }
     }
     
-    li {
+    &__box {
       margin-left: 20px;
       @include var.tab {
         margin-left: .2rem;
