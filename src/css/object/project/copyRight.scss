@@ -3,11 +3,14 @@
   width: 100%;
   background: var.$copyRight;
   text-align: center;
+  padding: 10px 0;
 
   @include var.tab {
     font-size: .16rem;
+    padding: .1rem;
   }
   @include var.sp {
     font-size: .14rem;
+    padding: .1rem;
   }
 }
