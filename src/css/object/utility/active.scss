@@ -1,0 +1,22 @@
+@use '../utility/utility.scss' as var;
+
+.u-active__menu {
+  left: 0;
+  transition: left .5s ease-in-out;
+}
+
+.u-active__icon {
+  @include var.sp {
+    display: block;
+    cursor: pointer;
+    background-image: url("../img/icon/close.png");
+    background-size: cover;
+    background-position:center;
+    width: .5rem;
+    height: .38rem;
+    margin: 0.16rem;
+  }
+} 
+.u-hidden {
+  display: none;
+}

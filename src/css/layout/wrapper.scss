@@ -3,4 +3,8 @@
 .l-wrapper {
   width: 100%;
   font-size: 16px;
+
+  &__is-fixed {
+    overflow-y: hidden;
+  }
 }

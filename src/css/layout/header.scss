@@ -4,7 +4,15 @@
 #header {
   position: fixed;
   width: 100%;
+  height: 100px;
   z-index: 100;
+
+  @include var.tab {
+    height: 1rem;
+  }
+  @include var.sp {
+    height: .7rem;
+  }
 }
 .l-header {
   background-color: var.$white;
@@ -81,16 +89,12 @@
   }
 
   &__hamburgerMenu {
-    @include var.pc {
-      display: none;
-    }
-    @include var.tab {
-      display: none;
-    }
+    display: none;
 
     @include var.sp {
       display: block;
       padding: 0.16rem 0.16rem 0.16rem 0;
+      cursor: pointer;
     }
 
     span:first-child {
@@ -104,6 +108,56 @@
       border-radius: 0.05rem;
       background-color: var.$black;
       margin-top: 0.1rem;
+    }
+
+    &__closeIcon {
+      display: none;
+    }
+
+    &__inside {
+      display: none;
+      @include var.sp {
+        display: block;
+        position: absolute;
+        top: 0.7rem;
+        left: 100%;
+        width: 100%;
+        height: 5.54rem;
+        transition: .5s;
+      }
+      &__background {
+        @include var.sp {
+        background-color: var.$black;
+        opacity: 0.7;
+        width: 100%;
+        height: 5.54rem;
+        }
+      }
+      &__box {
+        @include var.sp {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 5.54rem;
+          padding: .6rem;
+
+          li {
+            margin-top: .38rem;
+          }
+          li:first-child {
+            margin-top: 0;
+          }
+        }
+        &__text {
+          @include var.sp {
+            color: var.$white;
+            font-size: .22rem;
+            line-height: .22rem;
+            font-weight: var.$bold;
+          }
+        }
+      }
     }
   }
 }

@@ -24,20 +24,102 @@
   }
 
   &__list {
-    display: flex;
     margin-top: 25px;
+    position: relative;
 
     @include var.tab {
       margin-top: .25rem;
     }
     @include var.sp {
       margin-top: .35rem;
-      li:not(:first-child) {
-        display: none;
-      }
     }
 
-    li {
+    &__arrow {
+      position: absolute;
+      z-index: 20;
+      height: 60px;
+      width: 60px;
+      background-color: var.$white;
+      opacity: .7;
+      border-radius: 50%;
+      cursor: pointer;
+
+      @include var.tab {
+        height: .6rem;
+        width: .6rem;
+      }
+      @include var.sp {
+        height: .42rem;
+        width: .42rem;
+      }
+    }
+    &__prev {
+      position: absolute;
+      top: 20%;
+      left: 0;
+
+      @include var.sp {
+        top: 45%;
+      }
+
+      &::before {
+        content: "";
+        background-image: url("../img/icon/arrowLeft.png");
+        background-size: cover;    
+        background-position:center;
+        width: 15px;
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include var.tab {
+          width: .15rem;
+          height: .3rem;
+        }
+        @include var.sp {
+          width: .07rem;
+          height: .14rem;
+          
+        }
+      }
+    }
+    &__next {
+      position: absolute;
+      top: 20%;
+      right: 1.25%;
+
+      @include var.sp {
+        top: 45%;
+        right: 0;
+      }
+
+      &::before {
+        content: "";
+        background-image: url("../img/icon/arrowRight.png");
+        background-size: cover;    
+        background-position:center;
+        width: 15px;
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include var.tab {
+          width: .15rem;
+          height: .3rem;
+        }
+        @include var.sp {
+          width: .07rem;
+          height: .14rem;
+          
+        }
+      }
+    }
+    
+    &__box {
       margin-left: 20px;
       @include var.tab {
         margin-left: .2rem;
@@ -83,7 +165,6 @@
   
     }
   }
-
 }
 
 .p-articleButton {
