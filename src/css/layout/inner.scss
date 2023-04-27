@@ -1,20 +1,19 @@
 @use '../object/utility/utility.scss';
+@use '../foundation/mixins.scss' as m;
 // innerのスタイルを記述するファイル
+body.active {
+    height: 100%;
+    overflow: hidden;
+}
 .l-main {
   padding-top: 100px;
   margin: auto;
-}
-
-@media screen and (max-width: 1199px) {
-  .l-main {
+  @include m.tab {
     width: 100%;
     padding-top: 0;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .l-main {
+  @include m.sp {
     width: 100%;
     padding-top: 0;
-  } 
+  }
 }

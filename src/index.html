@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.scss" type="text/scss">
 </head>
 <body>
-<header class="l-header">
+  <header class="l-header">
   <div class="l-header__wrapper">
     <ul class="l-header__wrapper__link">
       <li>
@@ -39,9 +39,18 @@
     <span class="l-header__sp__line"></span>
     <span class="l-header__sp__line"></span>
   </button>
+  <nav class="l-header__nav">
+    <ul class="l-header__nav__lists">
+      <li class="l-header__nav__lists__list"><a href="#sec1">トップ</a></li>
+      <li class="l-header__nav__lists__list"><a href="#sec2">新着求人</a></li>
+      <li class="l-header__nav__lists__list"><a href="#sec3">4つの特徴</a></li>
+      <li class="l-header__nav__lists__list"><a href="#sec4">転職までの流れ</a></li>
+      <li class="l-header__nav__lists__list"><a href="#sec5">転職お役立ちコンテンツ</a></li>
+    </ul>
+  </nav>
 </header>
 <main class="l-main">
-  <div class="p-keyvisual">
+  <div class="p-keyvisual" id="sec1">
     <div class="p-keyvisual__wrapper">
       <img class="p-keyvisual__wrapper__logo" src="../src/img/icon/keyvisual.png" alt="" width="341px" height="168px">
       <h1 class="p-keyvisual__wrapper__title">医療事務求人を探すならギズジョブ</h1>
@@ -96,10 +105,10 @@
       <button class="c-button__short">検索する</button>
     </form>
   </div>
-  <div class="p-jobInfo">
+  <div class="p-jobInfo" id="sec2">
     <div class="p-jobInfo__wrapper">
       <h2 class="p-jobInfo__title">新着求人</h2>
-      <ul class="p-jobInfo__items">
+      <ul class="p-jobInfo__items slider">
         <li>
           <a href="">
             <img src="../src/img/picture/job01.jpg" class="p-jobInfo__items__img" alt="" width="280px" height="200px">
@@ -180,6 +189,26 @@
             </dl>
           </a>
         </li>
+        <li>
+          <a href="">
+            <img src="../src/img/picture/job01.jpg" class="p-jobInfo__items__img" alt="" width="280px" height="200px">
+            <p class="p-jobInfo__items__summary">
+              平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
+            </p>
+            <dl class="p-jobInfo__items__detail">
+              <dt>給与</dt>
+              <dd>月給 148,000円～</dd>
+            </dl>
+            <dl class="p-jobInfo__items__detail">
+              <dt>所在地</dt>
+              <dd>三重県伊勢市</dd>
+            </dl>
+            <dl class="p-jobInfo__items__detail">
+              <dt>最寄駅</dt>
+              <dd>伊勢市駅 徒歩15分</dd>
+            </dl>
+          </a>
+        </li>
       </ul>
       <a class="c-button__middle p-jobInfo__button" href="">新着求人一覧をもっと見る</a>
     </div>
@@ -190,7 +219,7 @@
       <p class="p-about__box__text">ギズジョブは完全無料の求職者向け求人サービスです。</p>
     </div>
   </div>
-  <section class="p-feature">
+  <section class="p-feature" id="sec3">
     <h2 class="p-feature__title">ギズジョブの4つの特徴</h2>
     <ul class="p-feature__list">
       <li>
@@ -220,7 +249,7 @@
       </li>
     </ul>
   </section>
-  <section class="p-plan">
+  <section class="p-plan" id="sec4">
     <h2 class="p-plan__title">転職までの流れ</h2>
     <ul class="p-plan__list">
       <li>
@@ -249,7 +278,7 @@
       </li>
     </ul>
   </section>
-  <section class="p-contents">
+  <section class="p-contents" id="sec5">
     <h2 class="p-contents__title">転職お役立ちコンテンツ</h2>
     <ul class="p-contents__list">
       <li>

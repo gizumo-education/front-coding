@@ -15,7 +15,8 @@
   @include m.sp {
     @include m.max();
     text-align: right;
-    padding: 0.16rem 0.15rem;
+    height: 100%;
+    padding: 0.16rem;
   }
   &__wrapper {
     margin: auto;
@@ -23,6 +24,7 @@
     width: 1400px;
     justify-content: flex-end;
     padding: 25px 0;
+    position: relative;
     @include m.tab {
       width: 100%;
       height: 100%;
@@ -163,23 +165,91 @@
     display: none;
     @include m.sp {
       display: inline-block;
-      text-align: right;
+      position: relative;
       padding: 0;
+      top: 0;
+      box-sizing: border-box;
+      left: 0;
       background-color: transparent;
       border: none;
       width: 0.5rem;
-      box-sizing: border-box;     
+      height: 0.38rem;
     }
     &__line {
       @include m.sp {
         display: block;
-        border: 0.05rem solid util.$black;
+        border: 0.03rem solid util.$black;
         border-radius: util.$spRadius;
-        margin-top: 0.1rem;
-        &:first-child {
-          margin-top: 0;
+        transition: all .4s;
+        width: 100%;
+        &:nth-of-type(1) {
+          position: absolute;
+          top: 0;
+        }
+        &:nth-of-type(3) {
+          position: absolute;
+          bottom: 0;
         }
       }
     }
+  }
+  &__sp.active {
+    @include m.sp {
+      & > span {
+        &:nth-of-type(1) {
+          transform: translateY(-100%) rotate(-45deg);
+          top: 50%;
+        }
+        &:nth-of-type(2) {
+          opacity: 0;
+        }
+        &:nth-of-type(3) {
+          transform: rotate(45deg);
+          bottom: 50%;
+        }
+      }
+    }
+  }
+  &__nav {
+    display: none;
+    @include m.sp {
+      display: block;
+      position: fixed;
+      width: 100%;
+      right: -120%;
+      height: 5.54rem;
+      z-index: 300;
+      margin-top: 0.16rem;
+      background-color: util.$black;
+      opacity: 70%;
+      transition: all 0.6s;  
+      font: {
+        size: 0.22rem;
+        weight: util.$bold;
+      };
+    }
+    &__lists {
+      @include m.sp {
+        padding: 0.57rem 0 0 0.6rem;
+      }
+        & >li {
+          @include m.sp {
+            margin-top: 0.38rem;
+            text-align: left;
+            color: util.$white;
+          }
+          &:first-child {
+            margin-top: 0;
+          }
+        & > a {
+          @include m.sp {
+            color: util.$white;
+          }
+        }
+      }
+    }
+  }
+  &__nav.navActive {
+    right: 0%;
   }
 }
