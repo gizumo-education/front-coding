@@ -1,2 +1,75 @@
 @use '../object/utility/utility.scss';
+@use '../foundation/variables';
 // headerのスタイルを記述するファイル
+.icon-lync {
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center left;
+}
+
+.icon-button {
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center left 10px;
+}
+
+.header {
+	padding: 20px;
+	background-color: white;
+	width: 100%;
+	position: fixed;
+	z-index: 2000;
+
+	&-inner {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		&-text {
+			display: flex;
+			font-size: 16px;
+			margin-left: 10px;
+
+			&-child- {
+				border-left: 1px solid black;
+				padding-left: 20px;
+			}
+		}
+	}
+}
+
+.search {
+	background-image: url("../img/design/header-search.png");
+}
+
+.book {
+	background-image: url("../img/design/header-book.png");
+}
+
+.heart {
+	background-image: url("../img/design/ header-heart.png");
+}
+
+.Watch {
+	background-image: url("../img/design/header-time.png");
+}
+
+.search_History {
+	background-image: url("../img/design/header-search-box.png");
+}
+
+.header-inner-text-child {
+  color: black;
+  padding: 0 17px;
+}
+
+.header-inner-button {
+  margin-left: 10px;
+}
+
+.header-inner-button-text {
+  padding: 16px 10px 16px 40px;
+  background-color: #92C5EA;
+  border-radius: 10px;
+  color: white;
+}

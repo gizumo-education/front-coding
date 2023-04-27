@@ -1,2 +1,16 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.newjobs-button {
+  border: solid 1px #DE5579;
+  background-color: #DE5579;
+  border-radius: 40px;
+  background-position: center left 14px;
+  background-size: 29px;
+  font-size: 18px;
+  padding: 17px 72px;
+  color: white;
+  font-weight: 700px;
+  
+}
+

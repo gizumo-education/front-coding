@@ -1,0 +1,97 @@
+@use '../object/utility/utility.scss';
+
+// news
+.news {
+  width: 100%;
+  background-color: #EFF6FC;
+  margin-top: 59px;
+  padding-bottom: 67px;
+}
+
+.news-text {
+  width: 278px;
+  font-weight: 400px;
+  font-size: 25px;
+  padding: 64px 0 25px;
+  position: relative;
+
+  &-button {
+    display: flex;
+    justify-content: space-between;
+
+    &-circle {
+      transform: translate(0px ,130px);
+    }
+
+    &-left {
+      transform: translate(-43px ,116px);
+    }
+
+    &-circle-right {
+      transform: translate(19px ,130px);
+    }
+
+    &-right {
+      transform: translate(-20px ,116px);
+    }
+  }
+}
+
+
+
+.newjobs-inner {
+  display: flex;
+  background-image: url(../img//design/newleft.png);
+  background-repeat: no-repeat;
+  margin-bottom: 190px;
+
+  &-box {
+    width: 280px;
+    height: 200px;
+    margin-left: 20px;
+  }
+
+  &-box:first-child {
+    margin-left: 0;
+  }
+}
+
+.newjobs-box-set {
+  padding-bottom: 60px;
+}
+
+.newjobs-sub-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+  line-height: 22px;
+}
+
+.newjobs-box {
+  display: flex;
+  margin-top: 8.92px;
+  font-size: 14px;
+  font-weight: 400;
+
+
+  &-sb {
+    background-color: #FFCAD0;
+    text-align: center;
+
+    &-rite {
+      margin-left: 10px;
+    }
+  }
+}
+
+.salary {
+  padding: 0 16px;
+}
+
+.location_neareststation {
+  padding: 0 9PX;
+}
+
+.newjobs-button- {
+  text-align: center;
+}

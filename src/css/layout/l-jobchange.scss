@@ -1,0 +1,82 @@
+@use '../object/utility/utility.scss';
+
+.jobchange {
+  padding-top: 105px;
+  text-align: center;
+
+  &-right {
+    display: flex;
+
+    &-fast {
+      transform: translate(277px ,276px);
+    }
+
+    &-second {
+      transform: translate(557px ,276px);
+    }
+
+    &-third {
+      transform: translate(839px ,276px);
+    }
+  }
+
+  &-text {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  &-box {
+    padding-top: 51px;
+    display: flex;
+    justify-content: space-between;
+
+    &-children {
+      border: solid 2.268px #DE5579;
+      border-radius: 10px;
+      width: 277.73px;
+      height: 357.73px;
+
+      &-img {
+        padding-top: 58.87px;
+      }
+
+      &-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-top: 20px;
+      }
+
+      &-sub {
+        font-size: 14px;
+        font-weight: 400px;
+        line-height: 20.27px;
+        margin-top: 18px;
+        width: 237px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.step-fast {
+  background-image: url("../img/design/STEP1.png");
+}
+
+.step-second {
+  background-image: url("../img/design/STEP2.png");
+}
+
+.step-third {
+  background-image: url("../img/design/STEP3.png");
+}
+
+.step-force {
+  background-image: url("../img/design/STEP4.png");
+}
+
+.stepimg {
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+}
