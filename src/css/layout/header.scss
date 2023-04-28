@@ -1,15 +1,11 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as util;
 // headerのスタイルを記述するファイル
 
 .l-header {
-  background: #fff;
+  background: util.$white;
   padding: 25px 0 25px 396px;
   &__nav {
     display: flex;
-
-    & a {
-      text-decoration: none;
-    }
 
     &__index {
       font-size: 16px;
