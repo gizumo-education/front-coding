@@ -2,18 +2,21 @@
 // ページ上部のキービジュアルに関するスタイル
 
 .p-keyvisual {
-  background: util.$cerulean;
-  position: relative;
-
-  &__background {
-    text-align: center;
-  }
+  height: 500px;
+  width: 100%;
+  padding: 56.49px 0 0 607px;
+  background-image: url(../img/picture/keyvisual.jpg);
   
   &__content {
-    position: absolute;
-    top: 56.5px;
-    left: 607px;
-    text-align: center;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+      height: 168.51px;
+      width: 341.81px;
+    }
 
     &__title {
       margin-top: 50px;
@@ -29,6 +32,7 @@
       margin: 54px auto 0;
       background: util.$white;
       border: 2.3px solid util.$green;
+      text-align: center;
       border-radius: 10px;
       line-height: 66.7px;
       color: util.$green;

@@ -7,8 +7,10 @@
   left: 0;
   width: 100%;
   background: util.$white;
-  padding: 25px 0 25px 396px;
+  padding: 25px 100px 25px 0;
   z-index: 10000;
+  display: flex;
+  justify-content: flex-end;
   
   &__nav {
     display: flex;

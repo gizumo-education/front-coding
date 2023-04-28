@@ -73,8 +73,9 @@
 
     &::before {
       position: absolute;
-      top: 160px;
-      right: -22px;
+      top: 50%;
+      left: calc(100% + 2px);
+      transform: translate(0, -50%);
       content: "";
       width: 0;
       height: 0;
@@ -156,18 +157,25 @@
       align-items: center;
       color: #fff;
 
-      &__title {
-        font-size: 24px;
-        font-weight: util.$bold;
-        color: util.$white;
+      &__link {
+        height: 100%;
+        width: 100%;
+        padding-top: 71px;
+        
+        &__title {
+          font-size: 24px;
+          font-weight: util.$bold;
+          color: util.$white;
+        }
+  
+        &__detail {
+          margin-top: 44px;
+          font-size: 16px;
+          line-height: 23px;
+          color: util.$white;
+        }
       }
 
-      &__detail {
-        margin-top: 44px;
-        font-size: 16px;
-        line-height: 23px;
-        color: util.$white;
-      }
     }
   }
 }

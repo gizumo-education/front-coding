@@ -16,11 +16,15 @@
     display: flex;
 
     &__item {
-      width: 280px;
       margin-left: 20px;
+      width: 280px;
 
       &:first-child {
         margin-left: 0;
+      }
+
+      &__img {
+        border-radius: 10px;
       }
 
       &__title {
