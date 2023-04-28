@@ -1,2 +1,54 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as util;
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button {
+  &__header {
+    height: 50px;
+    width: 160px;
+    border-radius: 10px;
+    background-color: util.$blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: util.$small;
+
+    & span {
+      color: util.$white;
+      font-weight: util.$regular;
+      margin-left: 10px;
+    }
+  }
+
+  &__submit {
+    height: 60px;
+    width: 140px;
+    @include util.btn(util.$redBtn);
+
+    & span {
+      font-size: 18px;
+      font-weight: util.$bold;
+      color: util.$white;
+    }
+  }
+
+  &__requirement {
+    padding: 17px 72px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 26.06px;
+
+    @include util.btn(util.$redBtn);
+    color: util.$white;
+  }
+
+  &__columns {
+    height: 60px;
+    width: 420px;
+    padding: 21px 93px;
+    text-align: center;
+    font-size: 18px;
+
+    @include util.btn(util.$redBtn);
+    color: util.$white;
+  }
+}

@@ -13,8 +13,23 @@
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/nav.scss';
+@use './object/component/box.scss';
+@use './object/component/table.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/search.scss';
+@use './object/project/requirement.scss';
+@use './object/project/midVision.scss';
+@use './object/project/features.scss';
+@use './object/project/flow.scss';
+@use './object/project/columns.scss';
+/*-------------------------------------------*/
+
+/*utilities---------------------------------*/
+@use './object/utility/padding.scss';
+@use './object/utility/pseudo.scss';
+@use './object/utility/margin.scss';
 /*-------------------------------------------*/

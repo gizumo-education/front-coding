@@ -1,2 +1,47 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as util;
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual {
+  background: util.$cerulean;
+  position: relative;
+
+  &__background {
+    text-align: center;
+  }
+  
+  &__content {
+    position: absolute;
+    top: 56.5px;
+    left: 607px;
+    text-align: center;
+
+    &__title {
+      margin-top: 50px;
+      color: util.$white;
+      font-size: util.$title;
+      font-weight: util.$bold;
+      text-shadow: 0 4px 4px util.$shadow;
+    }
+
+    &__count {
+      height: 69px;
+      width: 391px;
+      margin: 54px auto 0;
+      background: util.$white;
+      border: 2.3px solid util.$green;
+      border-radius: 10px;
+      font-size: util.$keySmall;
+      line-height: 66.7px;
+      color: util.$green;
+      
+      & span {
+        font-size: 20px;
+
+        & span {
+          font-size: 40px;
+          font-weight: util.$bold;
+        }
+      }
+    }
+  }
+}

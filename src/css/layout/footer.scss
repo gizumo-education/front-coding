@@ -1,2 +1,65 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as util;
 // footerのスタイルを記述するファイル
+
+.l-footer {
+  margin-top: 200px;
+  width: 100%;
+  
+  &__content {
+    height: 265px;
+    background: util.$aliceBlue;
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+
+      &__links {
+        margin-top: 79px;
+        font-size: 16px;
+
+        &__lower {
+          display: flex;
+          margin-top: 27px;
+          line-height: 36px;
+
+          &__guide {
+            display: flex;
+            flex-direction: column;
+          }
+
+          &__policies {
+            margin-left: 39px;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+
+      &__banners {
+        margin-top: 55px;
+        display: flex;
+        flex-direction: column;
+
+        &__banner {
+          height: 85px;
+          width: 320px;
+          margin-top: 15px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+
+      }
+    }
+  }
+
+  &__copyright {
+    background-color: util.$rightGray;
+    padding: 10px 0 11px;
+    &__text {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}

@@ -1,3 +1,5 @@
+@use './variables' as val;
+
 // 共通のパーツを作成
 @mixin pc {
   @media screen and (min-width: 1200px) {
@@ -23,4 +25,49 @@
     display: block;
     clear: both;
   }
+}
+
+@mixin boxBorder($backColor, $borderColor) {
+  background-color: $backColor;
+  border: 1px solid $borderColor;
+  border-radius: 10px;
+}
+
+@mixin boxNonBorder($backColor) {
+  background-color: $backColor;
+  border-radius: 10px;
+}
+
+@mixin boxBackgroundImage($imgPath) {
+  position: relative;
+  height: 240px;
+  width: 380px;
+  border-radius: 10px;
+  background-image: url($imgPath);
+  padding: 71px 0 55px;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: val.$black;
+    border-radius: 10px;
+    opacity: .5;
+  }
+}
+
+@mixin btn($color) {
+  background-color: $color;
+  border: none;
+  border-radius: 30px;
+}
+
+@mixin title {
+  font-size: 25px;
+  font-weight: val.$bold;
+  text-align: center;
 }

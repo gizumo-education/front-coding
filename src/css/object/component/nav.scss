@@ -1,0 +1,14 @@
+@use '../../object/utility/utility.scss' ;
+
+.c-nav {
+  &__header {
+    border-left: 1px solid #000;
+    padding-left: 15px;
+    margin-left: 15px;
+
+    & span {
+      color: utility.$black;
+      font-weight: utility.$regular;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@use '../../object/utility/utility.scss' as util;
+
+.p-search {
+  height: 240px;
+  padding: 40px;
+  margin: 60px auto 0;
+  text-align: center;
+  background: util.$rightBlue;
+  border-radius: 10px;
+  
+  &__title {
+    font-size: util.$titleSub;
+    font-weight: util.$bold;
+  }
+
+  &__description {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  &__form {
+    margin-top: 26px;
+    display: flex;
+
+    &__select {
+      margin-left: 16px;
+      
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    &__input {
+      margin-left: 16px;
+    }
+
+    &__submit {
+      margin-left: 15.5px;
+    }
+  }
+}
