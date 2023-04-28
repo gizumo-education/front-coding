@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: util.$small;
+    font-size: 14px;
 
     & span {
       color: util.$white;
@@ -22,7 +22,7 @@
   &__submit {
     height: 60px;
     width: 140px;
-    @include util.btn(util.$redBtn);
+    @include util.btn(util.$violet);
 
     & span {
       font-size: 18px;
@@ -37,7 +37,7 @@
     font-size: 18px;
     line-height: 26.06px;
 
-    @include util.btn(util.$redBtn);
+    @include util.btn(util.$violet);
     color: util.$white;
   }
 
@@ -48,7 +48,7 @@
     text-align: center;
     font-size: 18px;
 
-    @include util.btn(util.$redBtn);
+    @include util.btn(util.$violet);
     color: util.$white;
   }
 }

@@ -18,7 +18,7 @@
     &__title {
       margin-top: 50px;
       color: util.$white;
-      font-size: util.$title;
+      font-size: 50px;
       font-weight: util.$bold;
       text-shadow: 0 4px 4px util.$shadow;
     }
@@ -30,7 +30,6 @@
       background: util.$white;
       border: 2.3px solid util.$green;
       border-radius: 10px;
-      font-size: util.$keySmall;
       line-height: 66.7px;
       color: util.$green;
       

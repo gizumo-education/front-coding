@@ -50,7 +50,7 @@
     &__title {
       font-size: 24px;
       font-weight: util.$bold;
-      color: util.$redBtn;
+      color: util.$violet;
     }
 
     &__detail {
@@ -67,7 +67,7 @@
     padding: 60px 0 42px 0;
     height: 360px;
     width: 280px;
-    border: 2.27px solid util.$redBtn;
+    border: 2.27px solid util.$violet;
     border-radius: 10px;
     background-color: util.$white;
 
@@ -91,7 +91,7 @@
       width: 60px;
       text-align: center;
       border-radius: 50%;
-      background-color: util.$redBtn;
+      background-color: util.$violet;
 
       &__text {
         position: absolute;
