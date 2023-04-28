@@ -64,6 +64,8 @@
   background-color: $color;
   border: none;
   border-radius: 30px;
+  font-weight: val.$bold;
+  color: val.$white;
 }
 
 @mixin title {

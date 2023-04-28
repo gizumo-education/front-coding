@@ -26,8 +26,6 @@
 
     & span {
       font-size: 18px;
-      font-weight: util.$bold;
-      color: util.$white;
     }
   }
 
@@ -38,7 +36,6 @@
     line-height: 26.06px;
 
     @include util.btn(util.$violet);
-    color: util.$white;
   }
 
   &__columns {
@@ -49,6 +46,5 @@
     font-size: 18px;
 
     @include util.btn(util.$violet);
-    color: util.$white;
   }
 }
