@@ -8,6 +8,8 @@
   width: 100%;
   background: util.$white;
   padding: 25px 0 25px 396px;
+  z-index: 10000;
+  
   &__nav {
     display: flex;
 
