@@ -37,8 +37,13 @@
       height: 0.6rem;
       width: 1.4rem;
     }
-    @include util.btn(util.$violet);
 
+    @include util.sp {
+      height: 0.4rem;
+      width: 1.6rem;
+    }
+
+    @include util.btn(util.$violet);
 
     & span {
       font-size: 18px;

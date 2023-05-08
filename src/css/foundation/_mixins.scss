@@ -70,6 +70,14 @@
   border-radius: 30px;
   font-weight: val.$bold;
   color: val.$white;
+
+  @include tab {
+    border-radius: 0.3rem;
+  }
+
+  @include sp {
+    border-radius: 0.3rem;
+  }
 }
 
 @mixin title {

@@ -30,6 +30,13 @@
         padding: 0.17rem 0.15rem;
         font-size: 0.18rem
       }
+
+      @include util.sp {
+        height: 0.3rem;
+        width: 1rem;
+        padding: 0.055rem 0.075rem;
+        font-size: 0.12rem
+      }
   
       @include util.boxBorder(util.$white, util.$red);
     }
@@ -47,6 +54,13 @@
       width: 3rem;
       font-size: 0.18rem;
       padding: 0.165rem 0.095rem;
+    }
+
+    @include util.sp {
+      height: 0.3rem;
+      width: 3.2rem;
+      font-size: 0.14rem;
+      padding: 0.045rem 0.065rem;
     }
 
     &::placeholder {

@@ -83,6 +83,13 @@
         margin: 0.54rem 0 0 6.35rem;
         line-height: 0.667rem;
       }
+
+      @include util.sp {
+        height: 0.3rem;
+        width: 1.7rem;
+        margin: 0.18rem 0 0 1.89rem;
+        line-height: 0.231rem;
+      }
       
       & span {
         font-size: 20px;
@@ -91,12 +98,20 @@
           font-size: 0.2rem;
         }
 
+        @include util.tab {
+          font-size: 0.08rem;
+        }
+
         & span {
           font-size: 40px;
           font-weight: util.$bold;
           
           @include util.tab {
             font-size: 0.4rem;
+          }
+
+          @include util.sp {
+            font-size: 0.16rem;
           }
         }
       }

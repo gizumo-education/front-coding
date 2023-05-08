@@ -13,6 +13,13 @@
     padding: 0.4rem;
     margin: 0.6rem auto 0;
   }
+
+  @include util.sp {
+    height: 2.4rem;
+    width: 100%;
+    padding: 0.15rem 0 0.2rem;
+    margin: 0.25rem auto 0;
+  }
   
   &__title {
     font-size: 25px;
@@ -20,6 +27,10 @@
 
     @include util.tab {
       font-size: 0.25rem;
+    }
+
+    @include util.sp {
+      font-size: 0.22rem;
     }
   }
 
@@ -31,6 +42,11 @@
       margin-top: 0.2rem;
       font-size: 0.2rem;
     }
+
+    @include util.sp {
+      margin-top: 0.16rem;
+      font-size: 0.14rem;
+    }
   }
 
   &__form {
@@ -41,6 +57,7 @@
     }
 
     @include util.sp {
+      margin-top: 0.13rem;
       flex-direction: column;
       align-items: center;
     }
@@ -52,6 +69,11 @@
       @include util.tab {
         margin-left: 0.16rem;
       }
+
+      @include util.sp {
+        margin-left: 0.1rem;
+      }
+      
       &:first-child {
         margin-left: 0;
       }
@@ -59,10 +81,21 @@
 
     &__input {
       margin-left: 16px;
+
+      @include util.sp {
+        margin-top: 0.16rem;
+        margin-left: 0;
+      }
+
     }
 
     &__submit {
       margin-left: 15.5px;
+
+      @include util.sp {
+        margin-top: 0.19rem;
+        margin-left: 0;
+      }
     }
   }
 }
