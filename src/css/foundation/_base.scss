@@ -49,6 +49,28 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  color: base.$black;
+  transition: .3s;
+  &:hover {
+    opacity: .8;
+  }
+}
+
+button {
+  cursor: pointer;
+  transition: .3s;
+  &:hover {
+    opacity: .8;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .is-pc {

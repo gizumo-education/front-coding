@@ -1,0 +1,28 @@
+@use '../../object/utility/utility.scss' as util;
+
+
+.p-columns {
+  margin-top: 105px;
+
+  &__title {
+    @include util.title;
+  }
+
+  &__contents {
+    margin-top: 50px;
+    display: flex;
+
+    &__item {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__link {
+    margin: 80px auto 0;
+    text-align: center;
+  }
+}

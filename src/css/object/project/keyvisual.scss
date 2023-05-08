@@ -1,2 +1,50 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as util;
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual {
+  height: 500px;
+  width: 100%;
+  padding: 56.49px 0 0 607px;
+  background-image: url(../img/picture/keyvisual.jpg);
+  
+  &__content {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+      height: 168.51px;
+      width: 341.81px;
+    }
+
+    &__title {
+      margin-top: 50px;
+      color: util.$white;
+      font-size: 50px;
+      font-weight: util.$bold;
+      text-shadow: 0 4px 4px util.$shadow;
+    }
+
+    &__count {
+      height: 69px;
+      width: 391px;
+      margin: 54px auto 0;
+      background: util.$white;
+      border: 2.3px solid util.$green;
+      text-align: center;
+      border-radius: 10px;
+      line-height: 66.7px;
+      color: util.$green;
+      
+      & span {
+        font-size: 20px;
+
+        & span {
+          font-size: 40px;
+          font-weight: util.$bold;
+        }
+      }
+    }
+  }
+}

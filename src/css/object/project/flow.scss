@@ -1,0 +1,22 @@
+@use '../../object/utility/utility.scss' as util;
+
+.p-flow {
+    margin-top: 105px;
+
+  &__title {
+    @include util.title;
+  }
+
+  &__content {
+    display: flex;
+    margin-top: 50px;
+
+    &__item {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

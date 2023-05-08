@@ -1,0 +1,30 @@
+@use '../../object/utility/utility.scss' as util;
+
+.p-features {
+  margin-top: 106px;
+  text-align: center;
+
+  &__title {
+    font-size: 25px;
+    font-weight: util.$bold;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 53px;
+
+    &__item {
+      margin: 40px 0 0 40px;
+
+      &:nth-child(-n + 2) {
+        margin-top: 0;
+      }
+
+      &:nth-child(2n - 1) {
+        margin-left: 0;
+      }
+    }
+  }
+
+}

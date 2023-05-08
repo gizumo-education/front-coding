@@ -1,0 +1,31 @@
+@use '../../object/utility/utility.scss' as util;
+
+.p-midVision {
+  background-color: util.$black;
+  position: relative;
+  
+  &__background {
+    width: 100%;
+    opacity: .5;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    &__title {
+      font-size: 25px;
+      line-height: 36px;
+      font-weight: util.$bold;
+      color: util.$white;
+      margin-top: 20px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,262 @@
+@use '../../object/utility/utility.scss' as util;
+
+.c-box {
+
+  &__select {
+
+    &__relative {
+      position: relative;
+
+      &::before{
+        content: "";
+        position: absolute;
+        top: calc(50% + 5px);
+        left: 80%;
+        transform: translateY(-50%);
+        border: 10px solid transparent;
+        border-top: 10px solid util.$red;
+      }
+    }
+
+    &__child {
+      height: 60px;
+      width: 200px;
+      padding: 17px 15px;
+      font-size: 18px;
+
+      @include util.tab {
+        height: 0.6rem;
+        width: 2rem;
+        padding: 0.17rem 0.15rem;
+        font-size: 0.18rem
+      }
+  
+      @include util.boxBorder(util.$white, util.$red);
+    }
+  }
+
+  &__input {
+    height: 60px;
+    width: 300px;
+    font-size: 18px;
+    padding: 16.5px 9.5px;
+    @include util.boxBorder(util.$white, util.$red);
+
+    @include util.tab {
+      height: 0.6rem;
+      width: 3rem;
+      font-size: 0.18rem;
+      padding: 0.165rem 0.095rem;
+    }
+
+    &::placeholder {
+      color: util.$gray;
+    }
+  }
+
+  &__features {
+    height: 180px;
+    width: 570px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    @include util.boxNonBorder(util.$pale);
+
+    @include util.tab {
+      height: 1.8rem;
+      width: calc(100% / 2 - 0.4rem);
+      padding: 0.4rem;
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: util.$bold;
+      color: util.$violet;
+
+      @include util.tab {
+        font-size: 0.24rem;
+      }
+    }
+
+    &__detail {
+      margin-top: auto;
+      font-size: 14px;
+      line-height: 20.27px;
+
+      @include util.tab {
+        font-size: 0.14rem;
+        line-height: 0.20rem;
+      }
+    }
+  }
+
+  &__flow {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0 42px 0;
+    width: 280px;
+    border: 2.27px solid util.$violet;
+    border-radius: 10px;
+    background-color: util.$white;
+
+    @include util.tab {
+      padding: 0.6rem 0 0.42rem 0;
+      width: 2.8rem;
+    }
+
+    
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: calc(100% + 2px);
+      transform: translate(0, -50%);
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 0 20px 20px;
+      border-color: transparent transparent transparent #de557a;
+    }
+
+    &__step {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 60px;
+      width: 60px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: util.$violet;
+
+      @include util.tab {
+        height: 0.6rem;
+        width: 0.6rem;
+      }
+
+      &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+        line-height: 19.36px;
+        font-weight: util.$bold;
+        color: util.$white;
+
+        @include util.tab {
+          font-size: 0.16rem;
+          line-height: 0.1936rem;
+        }
+      }
+    }
+
+    &__icon {
+      height: 100px;
+      width: 100px;
+      display: block;
+      margin: 0 auto;
+
+      @include util.tab {
+        height: 1rem;
+        width: 1rem;
+      }
+    }
+
+    &__text {
+      margin-top: 20px;
+
+      &__title {
+        height: 60px;
+        width: 216px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 24px;
+        font-weight: util.$bold;
+        line-height: 30px;
+
+        @include util.tab {
+          height: 0.6rem;
+          width: 2.16rem;
+          font-size: 0.24rem;
+          line-height: 0.3rem;
+        }
+      }
+  
+      &__detail {
+        width: 237px;
+        margin: 18px auto 0;
+        font-size: 14px;
+        line-height: 20.27px;
+
+        @include util.tab {
+          height: 0.6rem;
+          width: 2.37rem;
+          margin: 0,18rem auto 0;
+          font-size: 0.14rem;
+          line-height: 0.20rem;
+        }
+      }
+    }
+  }
+
+  &__columns {
+    @for $i from 1 through 3{
+      &__#{$i} {
+        @include util.boxBackgroundImage('../img/picture/column#{$i}.jpg');
+      }
+    }
+
+    &__text {
+
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+
+      &__link {
+        height: 100%;
+        width: 100%;
+        padding-top: 71px;
+
+        @include util.tab {
+          padding-top: 0.71rem;
+        }
+        
+        &__title {
+          font-size: 24px;
+          font-weight: util.$bold;
+          color: util.$white;
+
+          @include util.tab {
+            font-size: 0.24rem;
+          }
+          
+        }
+  
+        &__detail {
+          margin-top: 44px;
+          font-size: 16px;
+          line-height: 23px;
+          color: util.$white;
+
+          @include util.tab {
+            font-size: 0.16rem;
+            line-height: 0.23rem;
+          }
+        }
+      }
+
+    }
+  }
+}

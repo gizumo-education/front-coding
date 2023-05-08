@@ -1,0 +1,13 @@
+.u-pseudo {
+
+  &__none {
+    
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+}

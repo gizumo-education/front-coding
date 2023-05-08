@@ -1,2 +1,46 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as util;
 // headerのスタイルを記述するファイル
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: util.$white;
+  padding: 25px 100px 25px 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: flex-end;
+  
+  &__nav {
+    display: flex;
+
+    &__index {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+
+      & > li {
+
+        &:first-child {
+          border: 0;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    &__btn {
+      display: flex;
+      margin-left: 25px;
+
+      & li {
+        margin-left: 15px;
+        
+        &:first-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
