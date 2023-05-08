@@ -10,8 +10,9 @@
       &::before{
         content: "";
         position: absolute;
-        top: 25px;
-        left: 165px;
+        top: calc(50% + 5px);
+        left: 80%;
+        transform: translateY(-50%);
         border: 10px solid transparent;
         border-top: 10px solid util.$red;
       }
@@ -22,6 +23,13 @@
       width: 200px;
       padding: 17px 15px;
       font-size: 18px;
+
+      @include util.tab {
+        height: 0.6rem;
+        width: 2rem;
+        padding: 0.17rem 0.15rem;
+        font-size: 0.18rem
+      }
   
       @include util.boxBorder(util.$white, util.$red);
     }
@@ -33,6 +41,13 @@
     font-size: 18px;
     padding: 16.5px 9.5px;
     @include util.boxBorder(util.$white, util.$red);
+
+    @include util.tab {
+      height: 0.6rem;
+      width: 3rem;
+      font-size: 0.18rem;
+      padding: 0.165rem 0.095rem;
+    }
 
     &::placeholder {
       color: util.$gray;
@@ -47,16 +62,31 @@
     flex-direction: column;
     @include util.boxNonBorder(util.$pale);
 
+    @include util.tab {
+      height: 1.8rem;
+      width: calc(100% / 2 - 0.4rem);
+      padding: 0.4rem;
+    }
+
     &__title {
       font-size: 24px;
       font-weight: util.$bold;
       color: util.$violet;
+
+      @include util.tab {
+        font-size: 0.24rem;
+      }
     }
 
     &__detail {
       margin-top: auto;
       font-size: 14px;
       line-height: 20.27px;
+
+      @include util.tab {
+        font-size: 0.14rem;
+        line-height: 0.20rem;
+      }
     }
   }
 
@@ -65,11 +95,17 @@
     display: flex;
     flex-direction: column;
     padding: 60px 0 42px 0;
-    height: 360px;
     width: 280px;
     border: 2.27px solid util.$violet;
     border-radius: 10px;
     background-color: util.$white;
+
+    @include util.tab {
+      padding: 0.6rem 0 0.42rem 0;
+      width: 2.8rem;
+    }
+
+    
 
     &::before {
       position: absolute;
@@ -94,6 +130,11 @@
       border-radius: 50%;
       background-color: util.$violet;
 
+      @include util.tab {
+        height: 0.6rem;
+        width: 0.6rem;
+      }
+
       &__text {
         position: absolute;
         top: 50%;
@@ -103,16 +144,28 @@
         line-height: 19.36px;
         font-weight: util.$bold;
         color: util.$white;
+
+        @include util.tab {
+          font-size: 0.16rem;
+          line-height: 0.1936rem;
+        }
       }
     }
 
     &__icon {
+      height: 100px;
+      width: 100px;
       display: block;
       margin: 0 auto;
+
+      @include util.tab {
+        height: 1rem;
+        width: 1rem;
+      }
     }
 
     &__text {
-      margin-top: auto;
+      margin-top: 20px;
 
       &__title {
         height: 60px;
@@ -125,14 +178,28 @@
         font-size: 24px;
         font-weight: util.$bold;
         line-height: 30px;
+
+        @include util.tab {
+          height: 0.6rem;
+          width: 2.16rem;
+          font-size: 0.24rem;
+          line-height: 0.3rem;
+        }
       }
   
       &__detail {
-        height: 60px;
         width: 237px;
         margin: 18px auto 0;
         font-size: 14px;
         line-height: 20.27px;
+
+        @include util.tab {
+          height: 0.6rem;
+          width: 2.37rem;
+          margin: 0,18rem auto 0;
+          font-size: 0.14rem;
+          line-height: 0.20rem;
+        }
       }
     }
   }
@@ -161,11 +228,20 @@
         height: 100%;
         width: 100%;
         padding-top: 71px;
+
+        @include util.tab {
+          padding-top: 0.71rem;
+        }
         
         &__title {
           font-size: 24px;
           font-weight: util.$bold;
           color: util.$white;
+
+          @include util.tab {
+            font-size: 0.24rem;
+          }
+          
         }
   
         &__detail {
@@ -173,6 +249,11 @@
           font-size: 16px;
           line-height: 23px;
           color: util.$white;
+
+          @include util.tab {
+            font-size: 0.16rem;
+            line-height: 0.23rem;
+          }
         }
       }
 
