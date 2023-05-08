@@ -1,0 +1,9 @@
+@use '../../object/utility/utility.scss' as util;
+
+.u-sp {
+  display: none;
+
+  @include util.sp {
+    display: block;
+  }
+}

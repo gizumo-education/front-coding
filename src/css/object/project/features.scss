@@ -4,18 +4,39 @@
   margin-top: 106px;
   text-align: center;
 
+  @include util.tab {
+    margin-top: 1.06rem;
+  }
+
   &__title {
     font-size: 25px;
     font-weight: util.$bold;
+
+    @include util.tab {
+      font-size: 0.25rem;
+    }
   }
 
   &__content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 53px;
+
+    @include util.tab {
+      margin-top: 0.53rem;
+    }
+
+    @include util.sp {
+      flex-direction: column;
+    }
 
     &__item {
       margin: 40px 0 0 40px;
+
+      @include util.tab {
+        margin: 0.4rem 0 0 0.4rem;
+      }
 
       &:nth-child(-n + 2) {
         margin-top: 0;

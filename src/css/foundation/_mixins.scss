@@ -46,6 +46,11 @@
   background-image: url($imgPath);
   text-align: center;
 
+  @include tab {
+    height: 2.4rem;
+    width: 3.8rem;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -71,4 +76,8 @@
   font-size: 25px;
   font-weight: val.$bold;
   text-align: center;
+
+  @include tab {
+    font-size: 0.25rem;
+  }
 }

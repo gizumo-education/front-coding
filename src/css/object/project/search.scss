@@ -7,24 +7,51 @@
   text-align: center;
   background: util.$rightBlue;
   border-radius: 10px;
+
+  @include util.tab {
+    height: 2.4rem;
+    padding: 0.4rem;
+    margin: 0.6rem auto 0;
+  }
   
   &__title {
     font-size: 25px;
     font-weight: util.$bold;
+
+    @include util.tab {
+      font-size: 0.25rem;
+    }
   }
 
   &__description {
     margin-top: 20px;
     font-size: 20px;
+
+    @include util.tab {
+      margin-top: 0.2rem;
+      font-size: 0.2rem;
+    }
   }
 
   &__form {
     margin-top: 26px;
     display: flex;
+    @include util.tab {
+      margin-top: 0.26rem;
+    }
 
+    @include util.sp {
+      flex-direction: column;
+      align-items: center;
+    }
+    
     &__select {
       margin-left: 16px;
+      display: flex;
       
+      @include util.tab {
+        margin-left: 0.16rem;
+      }
       &:first-child {
         margin-left: 0;
       }

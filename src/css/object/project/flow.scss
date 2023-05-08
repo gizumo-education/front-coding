@@ -3,6 +3,10 @@
 .p-flow {
     margin-top: 105px;
 
+    @include util.tab {
+      margin-top: 1.05rem;
+    }
+
   &__title {
     @include util.title;
   }
@@ -11,8 +15,16 @@
     display: flex;
     margin-top: 50px;
 
+    @include util.tab {
+      margin-top: 0.5rem;
+    }
+
     &__item {
       margin-left: 20px;
+
+      @include util.tab {
+        margin-left: 0.2rem;
+      }
 
       &:first-child {
         margin-left: 0;

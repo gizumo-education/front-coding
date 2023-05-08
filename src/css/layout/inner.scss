@@ -1,7 +1,11 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as util;
 // innerのスタイルを記述するファイル
 
 .l-inner {
   width: 1180px;
   margin: 0 auto;
+
+  @include util.tab {
+    width: 97.5%;
+  }
 }

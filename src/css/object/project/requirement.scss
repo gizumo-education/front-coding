@@ -6,18 +6,38 @@
   padding: 64px 0 67px;
   background-color: util.$aliceBlue;
 
+  @include util.tab {
+    margin-top: 0.59rem;
+    padding: 0.64rem 0 0.67rem;
+  }
+
   &__title {
     font-size: 25px;
+    margin-top: 0.59rem;
 
+    @include util.tab {
+      font-size: 0.25rem;
+    }
   }
 
   &__carousel {
-    margin-top: 25px;
+    width: 100%;
+    margin: 25px auto 0;
     display: flex;
+    justify-content: center;
+
+    @include util.tab {
+      margin: 0.25rem auto 0;
+    }
 
     &__item {
       margin-left: 20px;
       width: 280px;
+
+      @include util.tab {
+        margin-left: 0.2rem;
+        width: 25%;
+      }
 
       &:first-child {
         margin-left: 0;
@@ -31,13 +51,27 @@
         margin-top: 8.08px;
         font-size: 16px;
         line-height: 22px;
+
+        @include util.tab {
+          margin-top: 0.00808rem;
+          font-size: 0.16rem;
+          line-height: 0.22rem;
+        }
       }
 
       &__table {
         margin-top: 6.92px;
 
+        @include util.tab {
+          margin-top: 0.0692rem;
+        }
+
         & .c-table {
           margin-top: 4px;
+
+          @include util.tab {
+            margin-top: 0.04rem;
+          }
 
           &:first-child {
             margin-top: 0;
@@ -50,5 +84,9 @@
   &__link {
     margin: 60px auto 0;
     text-align: center;
+
+    @include util.tab {
+      margin: 0.6rem auto 0;
+    }
   }
 }

@@ -5,12 +5,22 @@
   align-items: center;
   font-size: 14px;
 
+  @include util.tab {
+    font-size: 0.14rem;
+  }
+
   &__title {
     height: 21px;
     width: 60px;
     text-align: center;
     line-height: 20px;
     background-color: util.$pink;
+
+    @include util.tab {
+      height: 0.21rem;
+      width: 0.6rem;
+      line-height: 0.2rem;
+    }
   }
 
   &__content {
