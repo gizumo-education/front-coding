@@ -62,51 +62,53 @@
         </div>
       </div>
     </div>
-    <div class="l-inner p-search">
-      <h2 class="p-search__title">お仕事検索</h2>
-      <p class="p-search__description">働きたい職種・地域・希望給与を入れて検索！</p>
-      <form class="p-search__form" action="#">
-        <div class="p-search__form__select">
-          <div class="c-box__select__relative">
-            <select class="c-box__select__child" name="occupation">
-              <option selected value="医療事務">医療事務</option>
-              <option value="調剤事務">調剤事務</option>
-              <option value="診療情報管理士">診療情報管理士</option>
-              <option value="歯科助手">歯科助手</option>
-              <option value="歯科事務">歯科事務</option>
-              <option value="看護補助・看護助手">看護補助・看護助手</option>
-              <option value="病院内SE">病院内SE</option>
-            </select>
+    <div class="l-inner">
+      <div class="p-search">
+        <h2 class="p-search__title">お仕事検索</h2>
+        <p class="p-search__description">働きたい職種・地域・希望給与を入れて検索！</p>
+        <form class="p-search__form" action="#">
+          <div class="p-search__form__select">
+            <div class="c-box__select__relative">
+              <select class="c-box__select__child" name="occupation">
+                <option selected value="医療事務">医療事務</option>
+                <option value="調剤事務">調剤事務</option>
+                <option value="診療情報管理士">診療情報管理士</option>
+                <option value="歯科助手">歯科助手</option>
+                <option value="歯科事務">歯科事務</option>
+                <option value="看護補助・看護助手">看護補助・看護助手</option>
+                <option value="病院内SE">病院内SE</option>
+              </select>
+            </div>
+            <div class="p-search__form__select c-box__select__relative">
+              <select class="c-box__select__child" name="location">
+                <option value="茨城県">茨城県</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="東京都">東京都</option>
+                <option value="栃木県">栃木県</option>
+              </select>
+            </div>
+            <div class="p-search__form__select c-box__select__relative">
+              <select class="c-box__select__child" name="salary">
+                <option value="月給17万〜">月給17万〜</option>
+                <option value="月給18万〜">月給18万〜</option>
+                <option value="月給19万〜">月給19万〜</option>
+                <option selected value="月給20万〜">月給20万〜</option>
+                <option value="月給21万〜">月給21万〜</option>
+                <option value="月給22万〜">月給22万〜</option>
+                <option value="月給23万〜">月給23万〜</option>
+              </select>
+            </div>
           </div>
-          <div class="p-search__form__select c-box__select__relative">
-            <select class="c-box__select__child" name="location">
-              <option value="茨城県">茨城県</option>
-              <option value="神奈川県">神奈川県</option>
-              <option value="群馬県">群馬県</option>
-              <option value="埼玉県">埼玉県</option>
-              <option value="千葉県">千葉県</option>
-              <option value="東京都">東京都</option>
-              <option value="栃木県">栃木県</option>
-            </select>
-          </div>
-          <div class="p-search__form__select c-box__select__relative">
-            <select class="c-box__select__child" name="salary">
-              <option value="月給17万〜">月給17万〜</option>
-              <option value="月給18万〜">月給18万〜</option>
-              <option value="月給19万〜">月給19万〜</option>
-              <option selected value="月給20万〜">月給20万〜</option>
-              <option value="月給21万〜">月給21万〜</option>
-              <option value="月給22万〜">月給22万〜</option>
-              <option value="月給23万〜">月給23万〜</option>
-            </select>
-          </div>
-        </div>
-        <input type="text" class="p-search__form__input c-box__input" placeholder="キーワード・企業名・スキルなど">
-        <button type="submit" class="p-search__form__submit c-button__submit">
-          <img src="./img/icon/icon_serch_white.png" alt="">
-          <span>検索する</span>
-        </button>
-      </form>
+          <input type="text" class="p-search__form__input c-box__input" placeholder="キーワード・企業名・スキルなど">
+          <button type="submit" class="p-search__form__submit c-button__submit">
+            <img class="c-button__submit__icon"src="./img/icon/icon_serch_white.png" alt="">
+            <span>検索する</span>
+          </button>
+        </form>
+      </div>
     </div>
     <div class="p-requirement">
       <div class="l-inner">
@@ -132,7 +134,7 @@
               </div>
             </a>
           </li>
-          <li class="p-requirement__carousel__item">
+          <li class="p-requirement__carousel__item u-pc">
             <a href="">
               <img class="p-requirement__carousel__item__img" src="./img/picture/carousel2.jpg" alt="">
               <p class="p-requirement__carousel__item__title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
@@ -152,7 +154,7 @@
               </div>
             </a>
           </li>
-          <li class="p-requirement__carousel__item">
+          <li class="p-requirement__carousel__item u-pc">
             <a href="">
               <img class="p-requirement__carousel__item__img" src="./img/picture/carousel3.jpg" alt="">
               <p class="p-requirement__carousel__item__title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
@@ -172,7 +174,7 @@
               </div>
             </a>
           </li>
-          <li class="p-requirement__carousel__item">
+          <li class="p-requirement__carousel__item u-pc">
             <a href="">
               <img class="p-requirement__carousel__item__img" src="./img/picture/carousel4.jpg" alt="">
               <p class="p-requirement__carousel__item__title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
@@ -239,19 +241,6 @@
               <h3>エントリーシートの作成</h3>
             </div>
             <p class="c-box__flow__text__detail">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ</p>
-          </div>
-        <li class="p-flow__content__item">
-          <div class="c-box__flow">
-            <div class="c-box__flow__step">
-              <p class="c-box__flow__step__text">STEP<br>1</p>
-            </div>
-            <img class="c-box__flow__icon" src="./img/icon/icon_entry.png" alt="">
-            <div class="c-box__flow__text">
-              <div class="c-box__flow__text__title">
-                <h3>エントリーシートの作成</h3>
-              </div>
-              <p class="c-box__flow__text__detail">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-            </div>
           </div>
         </li>
         <li class="p-flow__content__item c-box__flow">
@@ -330,49 +319,53 @@
         <a href="" class="c-button__columns">医療事務コラムをもっと見る</a>
       </div>
     </div>
-    <div class="l-inner p-search mt150">
-      <h2 class="p-search__title">お仕事検索</h2>
-      <p class="p-search__description">働きたい職種・地域・希望給与を入れて検索！</p>
-      <form class="p-search__form" action="#">
-        <div class="p-search__form__select c-box__select__relative">
-          <select class="c-box__select__child" name="occupation">
-            <option selected value="医療事務">医療事務</option>
-            <option value="調剤事務">調剤事務</option>
-            <option value="診療情報管理士">診療情報管理士</option>
-            <option value="歯科助手">歯科助手</option>
-            <option value="歯科事務">歯科事務</option>
-            <option value="看護補助・看護助手">看護補助・看護助手</option>
-            <option value="病院内SE">病院内SE</option>
-          </select>
-        </div>
-        <div class="p-search__form__select c-box__select__relative">
-          <select class="p-search__form__select c-box__select__child" name="location">
-            <option value="茨城県">茨城県</option>
-            <option value="神奈川県">神奈川県</option>
-            <option value="群馬県">群馬県</option>
-            <option value="埼玉県">埼玉県</option>
-            <option value="千葉県">千葉県</option>
-            <option selected value="東京都">東京都</option>
-            <option value="栃木県">栃木県</option>
-          </select>
-        </div>
-        <div class="p-search__form__select c-box__select__relative">
-          <select class="p-search__form__select c-box__select__child" name="salary">
-            <option value="月給17万〜">月給17万〜</option>
-            <option value="月給18万〜">月給18万〜</option>
-            <option value="月給19万〜">月給19万〜</option>
-            <option selected value="月給20万〜">月給20万〜</option>
-            <option value="月給21万〜">月給21万〜</option>
-            <option value="月給22万〜">月給22万〜</option>
-            <option value="月給23万〜">月給23万〜</option>
-          </select>
-        </div>
-        <input type="text" class="p-search__form__input c-box__input" placeholder="キーワード・企業名・スキルなど">
-        <button type="submit" class="p-search__form__submit c-button__submit">
-          <img src="./img/icon/icon_serch_white.png" alt="">
-          <span>検索する</span>
-        </button>
-      </form>
+    <div class="l-inner u-margin__t150-pc u-margin__t60-sp">
+      <div class="p-search">
+        <h2 class="p-search__title">お仕事検索</h2>
+        <p class="p-search__description">働きたい職種・地域・希望給与を入れて検索！</p>
+        <form class="p-search__form" action="#">
+          <div class="p-search__form__select">
+            <div class="c-box__select__relative">
+              <select class="c-box__select__child" name="occupation">
+                <option selected value="医療事務">医療事務</option>
+                <option value="調剤事務">調剤事務</option>
+                <option value="診療情報管理士">診療情報管理士</option>
+                <option value="歯科助手">歯科助手</option>
+                <option value="歯科事務">歯科事務</option>
+                <option value="看護補助・看護助手">看護補助・看護助手</option>
+                <option value="病院内SE">病院内SE</option>
+              </select>
+            </div>
+            <div class="p-search__form__select c-box__select__relative">
+              <select class="c-box__select__child" name="location">
+                <option value="茨城県">茨城県</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="東京都">東京都</option>
+                <option value="栃木県">栃木県</option>
+              </select>
+            </div>
+            <div class="p-search__form__select c-box__select__relative">
+              <select class="c-box__select__child" name="salary">
+                <option value="月給17万〜">月給17万〜</option>
+                <option value="月給18万〜">月給18万〜</option>
+                <option value="月給19万〜">月給19万〜</option>
+                <option selected value="月給20万〜">月給20万〜</option>
+                <option value="月給21万〜">月給21万〜</option>
+                <option value="月給22万〜">月給22万〜</option>
+                <option value="月給23万〜">月給23万〜</option>
+              </select>
+            </div>
+          </div>
+          <input type="text" class="p-search__form__input c-box__input" placeholder="キーワード・企業名・スキルなど">
+          <button type="submit" class="p-search__form__submit c-button__submit">
+            <img class="c-button__submit__icon"src="./img/icon/icon_serch_white.png" alt="">
+            <span>検索する</span>
+          </button>
+        </form>
+      </div>
     </div>
   </main>
   <footer class="l-footer">

@@ -4,23 +4,50 @@
 .l-footer {
   margin-top: 200px;
   width: 100%;
+  @include util.tab {
+    margin-top: 2rem;
+  }
+  
+  @include util.sp {
+    margin-top: 1rem;
+  }
   
   &__content {
-    height: 265px;
     background: util.$aliceBlue;
-
+    
     &__inner {
       display: flex;
       justify-content: space-between;
+      padding-bottom: 25px;
+
+      @include util.sp {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
       &__links {
         margin-top: 79px;
         font-size: 16px;
 
+        @include util.tab {
+          margin-top: 0.79rem;
+          font-size: 0.16rem;
+        }
+
+        @include util.sp {
+          margin-top: 0.38rem;
+        }
+
         &__lower {
           display: flex;
           margin-top: 27px;
           line-height: 36px;
+
+          @include util.tab {
+            margin-top: 0.27rem;
+            line-height: 0.36rem;
+          }
 
           &__guide {
             display: flex;
@@ -40,10 +67,24 @@
         display: flex;
         flex-direction: column;
 
+        @include util.tab {
+          margin-top: 0.55rem;
+        }
+
+        @include util.sp {
+          margin-top: 0.22rem;
+        }
+
         &__banner {
           height: 85px;
           width: 320px;
           margin-top: 15px;
+
+          @include util.tab {
+            height: 0.85rem;
+            width: 3.2rem;
+            margin-top: 0.15rem;
+          }
 
           &:first-child {
             margin-top: 0;

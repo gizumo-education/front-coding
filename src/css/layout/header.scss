@@ -15,8 +15,15 @@
 
   @include util.tab {
     height: 1rem;
-    padding: 1.5% 0;
+    padding: 0.25rem 1rem 0.25rem 0;
     justify-content: center;
+  }
+
+  @include util.sp {
+    height: 0.7rem;
+    padding: 0.16rem  0.15rem;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   &__nav {

@@ -23,7 +23,7 @@
     }
 
     @include util.sp {
-      height: 4rem;
+      height: 2.7rem;
       max-width: 100%;
       padding-top: 0.61rem;
       background-image: url(../img/picture/keyvisual_sp.jpg);
@@ -98,7 +98,7 @@
           font-size: 0.2rem;
         }
 
-        @include util.tab {
+        @include util.sp {
           font-size: 0.08rem;
         }
 

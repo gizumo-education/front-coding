@@ -73,10 +73,10 @@
         }
 
         @include util.sp {
+          width: 100%;
           border-radius: 0.1rem;
         }
       }
-
 
       &__title {
         margin-top: 8.08px;
@@ -88,6 +88,13 @@
           font-size: 0.16rem;
           line-height: 0.22rem;
         }
+
+        @include util.sp {
+          margin-top: 0.101rem;
+          font-size: 0.16rem;
+          line-height: 0.22rem;
+          font-weight: util.$bold;
+        }
       }
 
       &__table {
@@ -95,6 +102,10 @@
 
         @include util.tab {
           margin-top: 0.0692rem;
+        }
+
+        @include util.sp {
+          margin-top: 0.12rem;
         }
 
         & .c-table {
@@ -118,6 +129,9 @@
 
     @include util.tab {
       margin: 0.6rem auto 0;
+    }
+    @include util.sp {
+      margin-top: 0.45rem;
     }
   }
 }

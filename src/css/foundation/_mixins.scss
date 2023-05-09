@@ -88,4 +88,8 @@
   @include tab {
     font-size: 0.25rem;
   }
+
+  @include sp() {
+    font-size: 0.25rem;
+  }
 }

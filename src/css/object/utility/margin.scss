@@ -1,3 +1,17 @@
-.mt150 {
+@use '../../object/utility/utility.scss' as util;
+
+.u-margin__t150-pc {
   margin-top: 150px;
+
+  @include util.sp {
+    margin-top: 0;
+  }
+}
+
+.u-margin__t60-sp {
+  margin-top: 0;
+
+  @include util.sp {
+    margin-top: 0.6rem;
+  }
 }

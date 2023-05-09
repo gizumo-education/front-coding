@@ -15,7 +15,20 @@
         transform: translateY(-50%);
         border: 10px solid transparent;
         border-top: 10px solid util.$red;
+
+        @include util.tab {
+          top: calc(50% + 0.05rem);
+          border: 0.1rem solid transparent;
+          border-top: 0.1rem solid util.$red;
+        }
+  
+        @include util.sp {
+          top: calc(50% + 0.05rem);
+          border: 0.07rem solid transparent;
+          border-top: 0.07rem solid util.$red;
+        }
       }
+
     }
 
     &__child {
@@ -79,7 +92,12 @@
     @include util.tab {
       height: 1.8rem;
       width: calc(100% / 2 - 0.4rem);
-      padding: 0.4rem;
+      padding: 0.4rem 0.17rem;
+    }
+
+    @include util.sp {
+      width: 100%;
+      padding: 0.3rem;
     }
 
     &__title {
@@ -89,6 +107,10 @@
 
       @include util.tab {
         font-size: 0.24rem;
+      }
+
+      @include util.sp {
+        font-size: 0.2rem;
       }
     }
 
@@ -100,6 +122,11 @@
       @include util.tab {
         font-size: 0.14rem;
         line-height: 0.20rem;
+      }
+
+      @include util.sp {
+        font-size: 0.12rem;
+        line-height: 0.17rem;
       }
     }
   }
@@ -115,8 +142,12 @@
 
     @include util.tab {
       padding: 0.6rem 0 0.42rem 0;
-      height: 3.6rem;
       width: 2.8rem;
+    }
+
+    @include util.sp {
+      padding: 0.55rem 0 0.22rem;
+      width: 75%;
     }
 
     
@@ -132,6 +163,18 @@
       border-style: solid;
       border-width: 20px 0 20px 20px;
       border-color: transparent transparent transparent #de557a;
+
+      @include util.tab {
+        border-width: 0.2rem 0 0.2rem 0.2rem;
+      }
+
+      @include util.sp {
+        top: calc(114% - 0.2rem);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-width:0.2rem 0.2rem 0 0.2rem;
+        border-color: #de557a transparent transparent transparent;
+      }
     }
 
     &__step {
@@ -145,8 +188,17 @@
       background-color: util.$violet;
 
       @include util.tab {
+        top: 0.1rem;
+        left: 0.1rem;
         height: 0.6rem;
         width: 0.6rem;
+      }
+
+      @include util.sp {
+        top: 0.084rem;
+        left: 0.084rem;
+        height: 0.45rem;
+        width: 0.45rem;
       }
 
       &__text {
@@ -163,6 +215,11 @@
           font-size: 0.16rem;
           line-height: 0.1936rem;
         }
+
+        @include util.sp {
+          font-size: 0.1rem;
+          line-height: 0.121rem;
+        }
       }
     }
 
@@ -175,6 +232,11 @@
       @include util.tab {
         height: 1rem;
         width: 1rem;
+      }
+
+      @include util.sp {
+        height: 0.75rem;
+        width: 0.75rem;
       }
     }
 
@@ -199,6 +261,19 @@
           font-size: 0.24rem;
           line-height: 0.3rem;
         }
+
+        @include util.sp {
+          height: auto;
+          width: 100%;
+          font-size: 0.2rem;
+          line-height: 0.28rem;
+        }
+
+        & br {
+          @include util.sp {
+            display: none;
+          }
+        }
       }
   
       &__detail {
@@ -208,9 +283,14 @@
         line-height: 20.27px;
 
         @include util.tab {
-          height: 0.6rem;
           width: 2.37rem;
-          margin: 0,18rem auto 0;
+          margin: 0.18rem auto 0;
+          font-size: 0.14rem;
+          line-height: 0.20rem;
+        }
+
+        @include util.sp {
+          margin: 0.1rem auto 0;
           font-size: 0.14rem;
           line-height: 0.20rem;
         }

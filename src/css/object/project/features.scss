@@ -8,11 +8,19 @@
     margin-top: 1.06rem;
   }
 
+  @include util.sp {
+    margin-top: 0.55rem;
+  }
+
   &__title {
     font-size: 25px;
     font-weight: util.$bold;
 
     @include util.tab {
+      font-size: 0.25rem;
+    }
+
+    @include util.sp {
       font-size: 0.25rem;
     }
   }
@@ -28,7 +36,9 @@
     }
 
     @include util.sp {
+      margin-top: 0.38rem;
       flex-direction: column;
+      align-items: center;
     }
 
     &__item {
@@ -38,8 +48,16 @@
         margin: 0.4rem 0 0 0.4rem;
       }
 
+      @include util.sp {
+        margin: 0.21rem 0 0 0;
+      }
+
       &:nth-child(-n + 2) {
         margin-top: 0;
+
+        @include util.sp {
+          margin-top: 0.21rem;
+        }
       }
 
       &:nth-child(2n - 1) {
