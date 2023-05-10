@@ -37,6 +37,7 @@
 
         @include util.sp {
           margin-top: 0.38rem;
+          font-size: 0.16rem;
         }
 
         &__lower {
@@ -45,6 +46,11 @@
           line-height: 36px;
 
           @include util.tab {
+            margin-top: 0.27rem;
+            line-height: 0.36rem;
+          }
+
+          @include util.sp {
             margin-top: 0.27rem;
             line-height: 0.36rem;
           }
@@ -58,6 +64,14 @@
             margin-left: 39px;
             display: flex;
             flex-direction: column;
+
+            @include util.tab {
+              margin-left: 0.39rem;
+            }
+
+            @include util.sp {
+              margin-left: 0.39rem;
+            }
           }
         }
       }
@@ -86,6 +100,11 @@
             margin-top: 0.15rem;
           }
 
+          @include util.sp {
+            height: 0.85rem;
+            width: 3.2rem;
+          }
+
           &:first-child {
             margin-top: 0;
           }
@@ -98,9 +117,27 @@
   &__copyright {
     background-color: util.$rightGray;
     padding: 10px 0 11px;
+
+    @include util.tab {
+      padding: 0.1rem 0 0.11rem;
+    }
+
+    @include util.sp {
+      padding: 0.1rem 0 0.11rem;
+    }
+
     &__text {
       font-size: 14px;
       text-align: center;
+
+      @include util.tab {
+        font-size: 0.14rem;
+      }
+  
+      @include util.sp {
+        font-size: 0.14rem;
+      }
+
     }
   }
 }

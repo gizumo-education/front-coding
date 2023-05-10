@@ -31,11 +31,29 @@
   background-color: $backColor;
   border: 1px solid $borderColor;
   border-radius: 10px;
+
+  @include tab {
+    border-radius: 0.1rem;
+  }
+
+  @include sp {
+    border-radius: 0.1rem;
+  }
+
 }
 
 @mixin boxNonBorder($backColor) {
   background-color: $backColor;
   border-radius: 10px;
+
+  @include tab {
+    border-radius: 0.1rem;
+  }
+
+  @include sp {
+    border-radius: 0.1rem;
+  }
+  
 }
 
 @mixin boxBackgroundImage($imgPath) {
@@ -49,6 +67,12 @@
   @include tab {
     height: 2.4rem;
     width: 3.8rem;
+    border-radius: 0.1rem;
+  }
+
+  @include sp {
+    height: 2.3rem;
+    width: 100%;
   }
 
   &::before {

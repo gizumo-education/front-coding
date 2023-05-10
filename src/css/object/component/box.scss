@@ -144,12 +144,15 @@
     background-color: util.$white;
 
     @include util.tab {
-      padding: 0.6rem 0 0.42rem 0;
-      width: 2.8rem;
+      width: calc((100% - 0.6rem) / 4);
+      padding: 0.6rem 0 0.42rem;
+      border: 0.0227rem solid util.$violet;
+      border-radius: 0.1rem;
     }
 
     @include util.sp {
-      padding: 0.55rem 0 0.22rem;
+      padding: 0.55rem 0.2rem 0.22rem;
+      border: 0.0227rem solid util.$violet;
       width: 75%;
     }
 
@@ -168,11 +171,12 @@
       border-color: transparent transparent transparent #de557a;
 
       @include util.tab {
+        left: calc(100% + 0.0227rem);
         border-width: 0.2rem 0 0.2rem 0.2rem;
       }
 
       @include util.sp {
-        top: calc(114% - 0.2rem);
+        top: calc(100% + 0.0227rem + (0.4rem / 2));
         left: 50%;
         transform: translate(-50%, -50%);
         border-width:0.2rem 0.2rem 0 0.2rem;
@@ -246,6 +250,14 @@
     &__text {
       margin-top: 20px;
 
+      @include util.tab {
+        margin-top: 0.2rem;
+      }
+
+      @include util.sp {
+        margin-top: 0.2rem;
+      }
+
       &__title {
         height: 60px;
         width: 216px;
@@ -293,6 +305,7 @@
         }
 
         @include util.sp {
+          width: 2.37rem;
           margin: 0.1rem auto 0;
           font-size: 0.14rem;
           line-height: 0.20rem;
@@ -329,6 +342,10 @@
         @include util.tab {
           padding-top: 0.71rem;
         }
+
+        @include util.sp {
+          padding-top: 0.6rem;
+        }
         
         &__title {
           font-size: 24px;
@@ -337,6 +354,10 @@
 
           @include util.tab {
             font-size: 0.24rem;
+          }
+
+          @include util.sp {
+            font-size: 0.21rem;
           }
           
         }
@@ -348,8 +369,14 @@
           color: util.$white;
 
           @include util.tab {
+            margin-top: 0.44rem;
             font-size: 0.16rem;
             line-height: 0.23rem;
+          }
+
+          @include util.sp {
+            margin-top: 0.53rem;
+            font-size: 0.14rem;
           }
         }
       }
