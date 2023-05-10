@@ -52,16 +52,23 @@
         margin: 0.21rem 0 0 0;
       }
 
+      
       &:nth-child(-n + 2) {
         margin-top: 0;
-
+        
         @include util.sp {
           margin-top: 0.21rem;
         }
       }
-
+      
       &:nth-child(2n - 1) {
         margin-left: 0;
+      }
+      
+      &:first-child {
+        @include util.sp {
+          margin-top: 0;
+        }
       }
     }
   }
