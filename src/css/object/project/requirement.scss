@@ -2,22 +2,64 @@
 
 .p-requirement {
   width: 100%;
+  overflow: hidden;
   margin-top: 59px;
   padding: 64px 0 67px;
   background-color: util.$aliceBlue;
 
+  @include util.tab {
+    margin-top: 0.59rem;
+    padding: 0.64rem 0 0.67rem;
+  }
+
+  @include util.sp {
+    margin-top: 0.25rem;
+    padding: 0.3rem 0 0.6rem;
+  }
+
   &__title {
     font-size: 25px;
+    margin-top: 0.59rem;
 
+    @include util.tab {
+      font-size: 0.25rem;
+    }
+
+    @include util.sp {
+      margin-top: 0;
+      font-size: 0.25rem;
+      font-weight: util.$bold;
+      text-align: center;
+    }
   }
 
   &__carousel {
-    margin-top: 25px;
+    width: 100%;
+    margin: 25px auto 0;
     display: flex;
+    justify-content: center;
+
+    @include util.tab {
+      margin: 0.25rem auto 0;
+    }
+
+    @include util.sp {
+      margin: 0.35rem auto 0;
+    }
 
     &__item {
       margin-left: 20px;
       width: 280px;
+
+      @include util.tab {
+        margin-left: 0.2rem;
+        width: 25%;
+      }
+
+      @include util.sp {
+        margin-left: 0;
+        width: 100%;
+      }
 
       &:first-child {
         margin-left: 0;
@@ -25,19 +67,53 @@
 
       &__img {
         border-radius: 10px;
+
+        @include util.tab {
+          border-radius: 0.1rem;
+        }
+
+        @include util.sp {
+          width: 100%;
+          border-radius: 0.1rem;
+        }
       }
 
       &__title {
         margin-top: 8.08px;
         font-size: 16px;
         line-height: 22px;
+
+        @include util.tab {
+          margin-top: 0.00808rem;
+          font-size: 0.16rem;
+          line-height: 0.22rem;
+        }
+
+        @include util.sp {
+          margin-top: 0.101rem;
+          font-size: 0.16rem;
+          line-height: 0.22rem;
+          font-weight: util.$bold;
+        }
       }
 
       &__table {
         margin-top: 6.92px;
 
+        @include util.tab {
+          margin-top: 0.0692rem;
+        }
+
+        @include util.sp {
+          margin-top: 0.12rem;
+        }
+
         & .c-table {
           margin-top: 4px;
+
+          @include util.tab {
+            margin-top: 0.04rem;
+          }
 
           &:first-child {
             margin-top: 0;
@@ -50,5 +126,12 @@
   &__link {
     margin: 60px auto 0;
     text-align: center;
+
+    @include util.tab {
+      margin: 0.6rem auto 0;
+    }
+    @include util.sp {
+      margin-top: 0.45rem;
+    }
   }
 }

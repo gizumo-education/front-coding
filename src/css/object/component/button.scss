@@ -12,20 +12,64 @@
     justify-content: center;
     font-size: 14px;
 
+    @include util.tab {
+      height: 0.5rem;
+      width: 1.6rem;
+      font-size: 0.14rem;
+    }
+
     & span {
       color: util.$white;
       font-weight: util.$regular;
       margin-left: 10px;
+
+      @include util.tab {
+        margin-left: 0.1rem;
+      }
     }
   }
 
   &__submit {
     height: 60px;
     width: 140px;
+
+    @include util.tab {
+      height: 0.6rem;
+      width: 1.4rem;
+    }
+
+    @include util.sp {
+      height: 0.4rem;
+      width: 1.6rem;
+    }
+
     @include util.btn(util.$violet);
+
+    &__icon {
+      height: 30px;
+      width: 30px;
+
+      @include util.tab {
+        height: 0.3rem;
+        width: 0.3rem;
+      }
+
+      @include util.sp {
+        height: 0.18rem;
+        width: 0.18rem;
+      }
+    }
 
     & span {
       font-size: 18px;
+
+      @include util.tab {
+        font-size: 0.18rem;
+      }
+
+      @include util.sp {
+        font-size: 0.16rem;
+      }
     }
   }
 
@@ -34,6 +78,19 @@
     text-align: center;
     font-size: 18px;
     line-height: 26.06px;
+
+    @include util.tab {
+      padding: 0.17rem 0.72rem;
+      font-size: 0.18rem;
+      line-height: 0.2606rem;
+    }
+
+    @include util.sp {
+      width: 100%;
+      padding: 0.21rem 0;
+      font-size: 0.18rem;
+      line-height: 0.18rem;
+    }
 
     @include util.btn(util.$violet);
   }
@@ -44,6 +101,19 @@
     padding: 21px 93px;
     text-align: center;
     font-size: 18px;
+
+    @include util.tab {
+      height: 0.6rem;
+      width: 4.2rem;
+      padding: 0.21rem 0.93rem;
+      font-size: 0.18rem
+    }
+
+    @include util.sp {
+      width: 100%;
+      padding: 0.21rem 0;
+      font-size: 0.18rem
+    }
 
     @include util.btn(util.$violet);
   }

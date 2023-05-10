@@ -15,7 +15,20 @@
         transform: translateY(-50%);
         border: 10px solid transparent;
         border-top: 10px solid util.$red;
+
+        @include util.tab {
+          top: calc(50% + 0.05rem);
+          border: 0.1rem solid transparent;
+          border-top: 0.1rem solid util.$red;
+        }
+  
+        @include util.sp {
+          top: calc(50% + 0.05rem);
+          border: 0.07rem solid transparent;
+          border-top: 0.07rem solid util.$red;
+        }
       }
+
     }
 
     &__child {
@@ -30,6 +43,13 @@
         padding: 0.17rem 0.15rem;
         font-size: 0.18rem
       }
+
+      @include util.sp {
+        height: 0.3rem;
+        width: 1rem;
+        padding: 0.055rem 0.075rem;
+        font-size: 0.12rem
+      }
   
       @include util.boxBorder(util.$white, util.$red);
     }
@@ -39,14 +59,21 @@
     height: 60px;
     width: 300px;
     font-size: 18px;
-    padding: 16.5px 9.5px;
+    padding: 17px 10px;
     @include util.boxBorder(util.$white, util.$red);
 
     @include util.tab {
       height: 0.6rem;
       width: 3rem;
       font-size: 0.18rem;
-      padding: 0.165rem 0.095rem;
+      padding: 0.17rem 0.1rem;
+    }
+
+    @include util.sp {
+      height: 0.3rem;
+      width: 3.2rem;
+      font-size: 0.14rem;
+      padding: 0.045rem 0.065rem;
     }
 
     &::placeholder {
@@ -65,7 +92,13 @@
     @include util.tab {
       height: 1.8rem;
       width: calc(100% / 2 - 0.4rem);
-      padding: 0.4rem;
+      padding: 0.4rem 0.17rem;
+    }
+
+    @include util.sp {
+      height: auto;
+      width: 100%;
+      padding: 0.3rem 0.1rem;
     }
 
     &__title {
@@ -75,6 +108,10 @@
 
       @include util.tab {
         font-size: 0.24rem;
+      }
+
+      @include util.sp {
+        font-size: 0.2rem;
       }
     }
 
@@ -87,6 +124,13 @@
         font-size: 0.14rem;
         line-height: 0.20rem;
       }
+
+      @include util.sp {
+        margin-top: 0.3rem;
+        font-size: 0.12rem;
+        line-height: 0.17rem;
+      }
+
     }
   }
 
@@ -94,15 +138,22 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 60px 0 42px 0;
-    width: 280px;
+    padding: 60px 20px 42px;
     border: 2.27px solid util.$violet;
     border-radius: 10px;
     background-color: util.$white;
 
     @include util.tab {
-      padding: 0.6rem 0 0.42rem 0;
-      width: 2.8rem;
+      width: calc((100% - 0.6rem) / 4);
+      padding: 0.6rem 0 0.42rem;
+      border: 0.0227rem solid util.$violet;
+      border-radius: 0.1rem;
+    }
+
+    @include util.sp {
+      padding: 0.55rem 0.2rem 0.22rem;
+      border: 0.0227rem solid util.$violet;
+      width: 75%;
     }
 
     
@@ -118,6 +169,19 @@
       border-style: solid;
       border-width: 20px 0 20px 20px;
       border-color: transparent transparent transparent #de557a;
+
+      @include util.tab {
+        left: calc(100% + 0.0227rem);
+        border-width: 0.2rem 0 0.2rem 0.2rem;
+      }
+
+      @include util.sp {
+        top: calc(100% + 0.0227rem + (0.4rem / 2));
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-width:0.2rem 0.2rem 0 0.2rem;
+        border-color: #de557a transparent transparent transparent;
+      }
     }
 
     &__step {
@@ -131,8 +195,17 @@
       background-color: util.$violet;
 
       @include util.tab {
+        top: 0.1rem;
+        left: 0.1rem;
         height: 0.6rem;
         width: 0.6rem;
+      }
+
+      @include util.sp {
+        top: 0.084rem;
+        left: 0.084rem;
+        height: 0.45rem;
+        width: 0.45rem;
       }
 
       &__text {
@@ -149,6 +222,11 @@
           font-size: 0.16rem;
           line-height: 0.1936rem;
         }
+
+        @include util.sp {
+          font-size: 0.1rem;
+          line-height: 0.121rem;
+        }
       }
     }
 
@@ -162,10 +240,23 @@
         height: 1rem;
         width: 1rem;
       }
+
+      @include util.sp {
+        height: 0.75rem;
+        width: 0.75rem;
+      }
     }
 
     &__text {
       margin-top: 20px;
+
+      @include util.tab {
+        margin-top: 0.2rem;
+      }
+
+      @include util.sp {
+        margin-top: 0.2rem;
+      }
 
       &__title {
         height: 60px;
@@ -185,6 +276,19 @@
           font-size: 0.24rem;
           line-height: 0.3rem;
         }
+
+        @include util.sp {
+          height: auto;
+          width: 100%;
+          font-size: 0.2rem;
+          line-height: 0.28rem;
+        }
+
+        & br {
+          @include util.sp {
+            display: none;
+          }
+        }
       }
   
       &__detail {
@@ -194,9 +298,15 @@
         line-height: 20.27px;
 
         @include util.tab {
-          height: 0.6rem;
           width: 2.37rem;
-          margin: 0,18rem auto 0;
+          margin: 0.18rem auto 0;
+          font-size: 0.14rem;
+          line-height: 0.20rem;
+        }
+
+        @include util.sp {
+          width: 2.37rem;
+          margin: 0.1rem auto 0;
           font-size: 0.14rem;
           line-height: 0.20rem;
         }
@@ -232,6 +342,10 @@
         @include util.tab {
           padding-top: 0.71rem;
         }
+
+        @include util.sp {
+          padding-top: 0.6rem;
+        }
         
         &__title {
           font-size: 24px;
@@ -240,6 +354,10 @@
 
           @include util.tab {
             font-size: 0.24rem;
+          }
+
+          @include util.sp {
+            font-size: 0.21rem;
           }
           
         }
@@ -251,8 +369,14 @@
           color: util.$white;
 
           @include util.tab {
+            margin-top: 0.44rem;
             font-size: 0.16rem;
             line-height: 0.23rem;
+          }
+
+          @include util.sp {
+            margin-top: 0.53rem;
+            font-size: 0.14rem;
           }
         }
       }

@@ -2,47 +2,117 @@
 // ページ上部のキービジュアルに関するスタイル
 
 .p-keyvisual {
-  height: 500px;
-  width: 100%;
-  padding: 56.49px 0 0 607px;
-  background-image: url(../img/picture/keyvisual.jpg);
+  height: auto;
+  max-width: 100%;
+  background-color: util.$cerulean;
   
   &__content {
-    width: 800px;
-    display: flex;
-    flex-direction: column;
+    height: 500px;
+    width: 1262px;
+    padding-top: 56.49px;
+    margin: 0 auto;
     align-items: center;
+    background-image: url(../img/picture/keyvisual.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @include util.tab {
+      height: 5rem;
+      max-width: 100%;
+      padding-top: 0.56rem;
+    }
+
+    @include util.sp {
+      height: 2.7rem;
+      max-width: 100%;
+      padding-top: 0.61rem;
+      background-image: url(../img/picture/keyvisual_sp.jpg);
+    }
 
     &__logo {
       height: 168.51px;
       width: 341.81px;
+      margin-left: 655px;
+
+      @include util.tab {
+        height: 1.6rem;
+        width: 3.4rem;
+        margin-left: 6.55rem;
+      }
+
+      @include util.sp {
+        height: 0.73rem;
+        width: 1.5rem;
+        margin-left: 2rem;
+      }
     }
 
     &__title {
-      margin-top: 50px;
+      margin: 50px 0 0 432px;
       color: util.$white;
       font-size: 50px;
       font-weight: util.$bold;
       text-shadow: 0 4px 4px util.$shadow;
+
+      @include util.tab {
+        margin: 0.5rem 0 0 4.32rem;
+        font-size: 0.45rem;
+      }
+
+      @include util.sp {
+        margin: 0.12rem 0 0 1.24rem;
+        font-size: 0.17rem;
+      }
     }
+
 
     &__count {
       height: 69px;
       width: 391px;
-      margin: 54px auto 0;
+      margin: 54px 0 0 635.65px;
       background: util.$white;
       border: 2.3px solid util.$green;
       text-align: center;
       border-radius: 10px;
       line-height: 66.7px;
       color: util.$green;
+
+      @include util.tab {
+        height: 0.69rem;
+        width: 3.91rem;
+        margin: 0.54rem 0 0 6.35rem;
+        line-height: 0.667rem;
+      }
+
+      @include util.sp {
+        height: 0.3rem;
+        width: 1.7rem;
+        margin: 0.18rem 0 0 1.89rem;
+        line-height: 0.231rem;
+      }
       
       & span {
         font-size: 20px;
 
+        @include util.tab {
+          font-size: 0.2rem;
+        }
+
+        @include util.sp {
+          font-size: 0.08rem;
+        }
+
         & span {
           font-size: 40px;
           font-weight: util.$bold;
+          
+          @include util.tab {
+            font-size: 0.4rem;
+          }
+
+          @include util.sp {
+            font-size: 0.16rem;
+          }
         }
       }
     }
