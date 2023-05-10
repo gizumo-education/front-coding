@@ -82,6 +82,10 @@
     &__input {
       margin-left: 16px;
 
+      @include util.tab {
+        margin-left: 0.16rem;
+      }
+
       @include util.sp {
         margin-top: 0.16rem;
         margin-left: 0;

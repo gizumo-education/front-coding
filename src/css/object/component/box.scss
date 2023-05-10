@@ -59,14 +59,14 @@
     height: 60px;
     width: 300px;
     font-size: 18px;
-    padding: 16.5px 9.5px;
+    padding: 17px 10px;
     @include util.boxBorder(util.$white, util.$red);
 
     @include util.tab {
       height: 0.6rem;
       width: 3rem;
       font-size: 0.18rem;
-      padding: 0.165rem 0.095rem;
+      padding: 0.17rem 0.1rem;
     }
 
     @include util.sp {
@@ -96,8 +96,9 @@
     }
 
     @include util.sp {
+      height: auto;
       width: 100%;
-      padding: 0.3rem;
+      padding: 0.3rem 0.1rem;
     }
 
     &__title {
@@ -125,9 +126,11 @@
       }
 
       @include util.sp {
+        margin-top: 0.3rem;
         font-size: 0.12rem;
         line-height: 0.17rem;
       }
+
     }
   }
 
