@@ -21,7 +21,7 @@
 
   @include util.sp {
     height: 0.7rem;
-    padding: 0.16rem  0.15rem;
+    padding: 0.16rem 0.15rem;
     justify-content: flex-end;
     align-items: center;
   }
@@ -72,13 +72,17 @@
   }
 
   &__hamburger-menu {
+    display: block;
     width: 0.5rem;
     height: 0.06rem;
     position: relative;
     border-radius: 0.1rem;
     background: util.$black;
+    transition: .3s;
 
+    
     &::before {
+      display: block;
       content: "";
       width: 100%;
       height: 100%;
@@ -86,9 +90,11 @@
       position: absolute;
       top: calc(-0.1rem - 0.06rem);
       background: util.$black;
+      transition: .3s;
     }
-
+    
     &::after {
+      display: block;
       content: "";
       width: 100%;
       height: 100%;
@@ -96,6 +102,49 @@
       position: absolute;
       top: calc(0.1rem + 0.06rem);
       background: util.$black;
+      transition: .3s;
+    }
+
+    &.active {
+      background-color: transparent;
+
+      &::before {
+        top: 0;
+        background-color: util.$black;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        top: 0;
+        background-color: util.$black;
+        transform: rotate(-45deg);
+      }
+    }
+
+    &__items {
+      height: 5.54rem;
+      width: 100%;
+      padding: .57rem .625rem;
+      position: fixed;
+      z-index: 1000;
+      top: .7rem;
+      left: 100%;
+      background: rgba($color: util.$black, $alpha: .7);
+      transition: .3s;
+
+      &.active {
+        left: 0;
+      }
+
+      &__item {
+        margin-top: 0.38rem;
+
+        & > a {
+          font-size: .22rem;
+          font-weight: util.$bold;
+          color: rgba($color: util.$white, $alpha: 1);
+        }
+      }
     }
   }
 }
