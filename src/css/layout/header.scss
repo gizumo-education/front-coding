@@ -11,22 +11,23 @@
   &__nav {
     display: flex;
     justify-content: flex-end;
-    padding-top: 25px;
-    position: absolute;
-    right: 6.25%;
+    padding: 25px 0;
+    width: 100%;
+    background-color: uty.$white;
 
     &__scope {
       height: 18.01px;
       width: 18.01px;
     }
     &__book {
-      margin-right: 5px;
+      margin-right: 0.5px;
       height: 17px;
       width: 21.31px;
     }
     &__frequent {
-      @include uty.paddingFix();
       @include uty.frequentFont();
+      display: flex;
+      align-items: center;
       
       &__guide {
         color: uty.$black;
@@ -34,6 +35,7 @@
     }
     &__history {
       display: flex;
+      padding-right: 6.25%;
       margin-left: 25px;
 
       &__guide {
@@ -43,22 +45,19 @@
           margin-left: 0;
         }
         &-heart {
-          padding-left: 10px;
-          padding-right: 21px;
           @include uty.historyGuide();
-          @include uty.paddingFix();
+          @include uty.headerFont();
+          width: 160px;
         }
         &-clock {
-          padding-left: 30px;
-          padding-right: 28px;
           @include uty.historyGuide();
-          @include uty.paddingFix();
+          @include uty.headerFont();
+          width: 140px;
         }
         &-library {
-          padding-left: 24px;
-          padding-right: 32px;
           @include uty.historyGuide();
-          @include uty.paddingFix();
+          @include uty.headerFont();
+          width: 140px;
         }
       }
     }

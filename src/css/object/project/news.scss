@@ -5,7 +5,9 @@
   padding-top: 59px;
 
   &__news {
+    background-color: uty.$ash;
     padding: 119px 0 67px 0;
+    width: 100%;
 
     &__contents {
       display: flex;
@@ -16,8 +18,12 @@
         margin-left: 20px;
         position: relative;
 
+        &:first-child {
+          position: relative;
+          bottom: 55px;
+          margin-left: 0;
+        }
         &__title {
-          display: block;
           font-size: 25px;
           font-family: uty.$inter;
           font-weight: uty.$regular;
@@ -29,17 +35,14 @@
           width: 280px;
           border-radius: 10px;
         }
-        &:first-child {
-          position: relative;
-          bottom: 55px;
-          margin-left: 0;
-        }
+        
         &__detail {
           font-size: 14px;
           font-weight: uty.$regular;
           line-height: 17px;
           margin-top: 8.08px;
           width: 280px;
+          color: uty.$black;
 
           &__comment {
             font-weight: uty.$regular;
@@ -48,11 +51,13 @@
             margin: 8.8px 0 6.92px 0;
           }
           & span {
+            text-align: center;
             display: inline-block;
-            padding: 1px 16px;
+            padding: 1px;
+            line-height: 20.27px;
             background-color: uty.$cherry;
-            margin-top: 4px;
-            margin-right: 10px;
+            margin: 4px 10px 0 0;
+            width: 60px;
           }
         }
       }

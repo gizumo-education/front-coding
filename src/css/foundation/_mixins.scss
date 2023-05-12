@@ -2,6 +2,13 @@
 // 共通のパーツを作成
 
 //font
+@mixin headerFont() {
+  &__text {
+    font-size: 14px;
+    font-weight: uty.$regular;
+    line-height: 20.27px;
+  }
+}
 @mixin formFont() {
   font-size: 18px;
   font-weight: uty.$regular;
@@ -11,6 +18,12 @@
   font-size: 24px;
   font-weight: uty.$bold;
   line-height: 30px;
+}
+@mixin baloonFont() {
+  font-family: uty.$inter;
+  font-size: 16px;
+  font-weight: uty.$bold;
+  line-height: 19px;
 }
 
 //layout
@@ -31,10 +44,12 @@
 }
 @mixin historyGuide() {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
   background-color: #92C5EA;
   border-radius: 15px;
   color: uty.$white;
-  line-height: 20px;
 
   &__img {
     height: 18px;
@@ -106,6 +121,7 @@
 }
 @mixin contentText() {
   &__title {
+    color: uty.$white;
     font-size: 24px;
     font-weight: uty.$bold;
     line-height: 24px;
@@ -113,6 +129,7 @@
     top: 71px;
   }
   &__tip {
+    color: uty.$white;
     position: relative;
     top: 115px;
     font-size: 16px;
@@ -120,8 +137,17 @@
     line-height: 23px;
   }
 }
+// baloon
+@mixin baloon() {
+  height: 30px;
+  width: 30px;
+  padding: 30px;
+  border-radius: 50%;
+  color: uty.$white;
+  background-color: uty.$pink;
+}
 
-//triangle
+// triangle
 @mixin triangleBottom() {
   &::after {
     position: absolute;
@@ -140,7 +166,8 @@
     border: 24px solid transparent;
     position: absolute;
     border-left-color: uty.$pink;
-    top: 44.4%;
+    transform: translateY(-50%);
+    top: 50%;
     left: -26px;
   }
 }

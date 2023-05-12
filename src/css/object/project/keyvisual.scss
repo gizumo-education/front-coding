@@ -4,10 +4,15 @@
 .p-keyvisual{
   padding-top: 100px;
 
-  &__keyvisual {
-    display: block;
-    margin: 0 auto;
-    width: 1262px;
-    height: 500px;
+    &__keyvisual {
+      width: 100%;
+      background-color: uty.$background__keyvisual;
+
+      &__img {
+      display: block;
+      margin: 0 auto;
+      width: 1262px;
+      height: 500px;
+    }
   }
 }

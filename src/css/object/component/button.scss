@@ -3,6 +3,7 @@
 
 .c-button {
   @include uty.button();
+  cursor: pointer;
 
   &__scope {
     margin-right: 4px;

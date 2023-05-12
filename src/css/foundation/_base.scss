@@ -49,9 +49,14 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     opacity: .8;
+    transition: .3s;
+  }
+  &:not(:hover) {
+    opacity: none;
     transition: .3s;
   }
 }
@@ -61,6 +66,10 @@ button {
 
   &:hover {
     opacity: .8;
+    transition: .3s;
+  }
+  &:not(:hover) {
+    opacity: none;
     transition: .3s;
   }
 }
