@@ -13,8 +13,21 @@
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/pullDown.scss';
+@use './object/component/input.scss';
+@use './object/component/table.scss';
+@use './object/component/icon.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/jobSearch.scss';
+@use './object/project/newJobs.scss';
+@use './object/project/gizjob.scss';
+@use './object/project/feature.scss';
+@use './object/project/copyright.scss';
+/*-------------------------------------------*/
+
+/*utility---------------------------------*/
+@use './object/utility/flex.scss';
 /*-------------------------------------------*/

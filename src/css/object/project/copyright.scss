@@ -1,0 +1,9 @@
+@use '../utility/utility.scss' as var;
+
+.p-copyright {
+  background-color: var.$gray;
+  text-align: center;
+  font-size: 14px;
+  height: 35px;
+  padding: 10px 0;
+}

@@ -1,0 +1,10 @@
+@use '../utility/utility.scss' as var;
+
+.c-headerIcon {
+  width: 18px;
+  top: 1.01%;
+  bottom: 98.59%;
+  &_button {
+    margin-right: 10px;
+  }
+}

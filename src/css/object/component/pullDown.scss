@@ -1,0 +1,23 @@
+@use '../../object/utility/utility.scss' as var;
+
+.c-pulldown {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 0;
+    transform: translate(-200%, -350%);
+    border-top: 10px solid var.$pink; /* 好みで高さ色を変えてください */
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+  &_list {
+    width: 190px;
+    height: 57px;
+    border: 1px solid var.$pink;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 17px;
+  }
+}

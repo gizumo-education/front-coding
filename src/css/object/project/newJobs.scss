@@ -1,0 +1,35 @@
+@use '../utility/utility.scss' as var;
+
+.p-newJobs {
+  margin-top: 59px;
+  background-color: var.$skyBlue;
+  padding: 65px 0;
+  &_character {
+    text-align: left;
+    font-weight: var.$regular;
+  }
+  &_list {
+    display: flex;
+    &_detail {
+      margin-top: 25px;
+      margin-left: 20px;
+    }
+    &_character {
+      margin-top: 5px;
+      line-height: 22px;
+      font-size: 15px;
+    }
+  }
+}
+
+.p-newJobs_button {
+  margin-top: 60px;
+  height: 60px;
+  width: 360px;
+  font-size: 18px;
+}
+
+.p-newJobs_button_center {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,33 @@
+@use '../utility/utility.scss' as var;
+
+.p-jobSearch_top {
+  margin-top: 60px;
+}
+
+.p-jobSearch {
+  background-color: var.$searchBoxColor;
+  text-align: center;
+  border-radius: 5px;
+  padding: 40px;
+  &_character {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  &_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    li {
+      margin-left: 15px;
+    }
+    li:first-child {
+      margin-left: 0px;
+    }
+  }
+}
+
+.p-searchButton {
+  width: 140px;
+  height: 60px;
+  font-size: 18px;
+}

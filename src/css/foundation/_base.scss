@@ -19,6 +19,12 @@ body {
   line-height: 1;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 @include base.tab {
   body {
     font-size: 0.1rem;
@@ -49,6 +55,27 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  opacity: .8;
+  transition: .3s;
+}
+
+a:hover {
+  opacity: .8;
+  transition: .3s;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: base.$bold;
+  line-height: 25px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: base.$bold;
 }
 
 .is-pc {

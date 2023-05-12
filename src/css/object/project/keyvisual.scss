@@ -1,2 +1,11 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as var;
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyVisual {
+  position: relative;
+  width: 100vw;
+  height: 500px;
+  background-size: cover;
+  background-position:center;
+  background-image: url(../img/picture/keyvisual.jpg);
+}
