@@ -32,8 +32,9 @@
       text-align: center;
     }
   }
-
+  
   &__carousel {
+    position: relative;
     width: 100%;
     margin: 25px auto 0;
     display: flex;
@@ -53,7 +54,7 @@
 
       @include util.tab {
         margin-left: 0.2rem;
-        width: 25%;
+        width: 2.78rem;
       }
 
       @include util.sp {
@@ -61,11 +62,8 @@
         width: 100%;
       }
 
-      &:first-child {
-        margin-left: 0;
-      }
-
       &__img {
+        display: block;
         border-radius: 10px;
 
         @include util.tab {
@@ -107,20 +105,116 @@
         @include util.sp {
           margin-top: 0.12rem;
         }
-
+        
         & .c-table {
           margin-top: 4px;
-
+          
           @include util.tab {
             margin-top: 0.04rem;
           }
-
+          
           &:first-child {
             margin-top: 0;
           }
         }
       }
     }
+    
+    .slick-track {
+      margin-left: -20px;
+
+      @include util.tab {
+        margin-left: -0.2rem;
+      }
+
+      @include util.sp {
+        margin-left: 0;
+      }
+    }
+
+    .slick-arrow {
+      position: absolute;
+      border-radius: 50%;
+      z-index: 100;
+      height: 60px;
+      width: 60px;
+      background: rgba($color: util.$white, $alpha: 0.7);
+      
+      @include util.tab {
+        height: 0.6rem;
+        width: 0.6rem;
+      }
+  
+      @include util.sp {
+        height: 0.42rem;
+        width: 0.42rem;
+      }
+    }
+  
+    .slick-prev {
+      top: 70px;
+      left: 0%;
+  
+      @include util.tab {
+        top: 0.7rem;
+      }
+  
+      @include util.sp {
+        top: 1.57rem;
+      }
+      
+      &__arrow {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        
+        &::before{
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 50%;
+          height: 20px;
+          width: 20px;
+          border-left: 0.707px solid util.$black;
+          border-bottom: 0.707px solid util.$black;
+          transform: translate(-25%, -50%) rotate(45deg);
+        }
+      }
+    }
+  
+    .slick-next {
+      top: 70px;
+      left: calc(100% - 60px);
+      
+      @include util.tab {
+        top: 0.7rem;
+        left: calc(100% - 0.6rem);
+      }
+  
+      @include util.sp {
+        top: 1.57rem;
+        left: calc(100% - 0.42rem);
+      }
+  
+      &__arrow {
+        height: 100%;
+        width: 100%;
+        position: relative;
+  
+        &::before{
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 50%;
+          height: 20px;
+          width: 20px;
+          border-top: 0.707px solid util.$black;
+          border-right: 0.707px solid util.$black;
+          transform: translate(-75%, -50%) rotate(45deg);
+        }
+      }
+    }
+  
   }
 
   &__link {
