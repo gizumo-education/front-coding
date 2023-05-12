@@ -13,7 +13,7 @@ $('#js-hamburger').on('click', function() {
 });
 
 $('.p-requirement__carousel').slick({
-  // variableWidth:true,
+  variableWidth:true,
   arrows: true,
   slidesToShow: 4,
   speed: 600,
