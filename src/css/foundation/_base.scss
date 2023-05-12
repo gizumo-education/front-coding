@@ -56,6 +56,12 @@ a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+  opacity: .8;
+  transition: .3s;
+}
+
+a:hover {
   opacity: .8;
   transition: .3s;
 }
