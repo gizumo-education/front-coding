@@ -1,2 +1,44 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as var;
 // headerのスタイルを記述するファイル
+
+#header {
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+}
+
+.l-header {
+  background-color: var.$white;
+  padding-right: 100px;
+  justify-content: flex-end;
+  display: flex;
+  &_character {
+    font-size: 16px;
+  }
+  &_topPart {
+    display: flex;
+    padding: 40px 0 40px 40px;
+    li {
+      border-left: solid 1px;
+      padding-left: 15px;
+      margin-left: 15px;
+    }
+    li:first-child{
+      margin-left: 0;
+      padding-left: 0;
+      border: none;
+    }
+  }
+  &_button {
+    display: flex;
+    padding: 25px 0;
+    li {
+      margin-left: 15px;
+    }
+    li:first-child {
+      margin-left: 25px;
+    }
+  }
+}

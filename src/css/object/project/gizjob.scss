@@ -1,0 +1,10 @@
+@use '../utility/utility.scss' as var;
+
+.p-gizjobImg {
+  background-image: url(../img/picture/gizjob.png);
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  background-size: cover;    
+  background-position:center;
+}

@@ -1,2 +1,47 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as var;
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-header_button {
+  &_shape {
+    width: 140px;
+    height: 50px;
+    background: #92C5EA;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: var.$white;
+    &_heart {
+      width: 160px;
+      height: 50px;
+      background: #92C5EA;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      color: var.$white;
+    }
+  }
+}
+
+.c-searchButton {
+  background-color: var.$pink;
+  border-radius: 30px;
+  font-weight: var.$bold;
+  color: var.$white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-newJobs_button {
+  background-color: var.$pink;
+  border-radius: 30px;
+  font-weight: var.$bold;
+  color: var.$white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,2 +1,42 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as var;
 // footerのスタイルを記述するファイル
+
+#footer {
+  width: 100%;
+  margin-top: 200px;
+  background-color: var.$skyBlue;
+}
+
+.p-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1180px;
+  margin: 0 auto;
+  &_nav {
+    padding-top: 80px;
+    font-size: 16px;
+  }
+}
+
+.p-footerList {
+  margin-top: 20px;
+  li {
+    margin-top: 20px;
+  }
+  li:first-child {
+    margin-top: 25px;
+  }
+  &_right {
+    margin-left: 40px;
+  }
+}
+
+.p-footerImg {
+  display: flex;
+  flex-direction: column;
+  padding: 55px 0 25px;
+  width: 320px;
+  &_bottom {
+    margin-top: 15px;
+  }
+}
