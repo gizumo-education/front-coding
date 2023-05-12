@@ -1,2 +1,34 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as uty;
 // innerのスタイルを記述するファイル
+.l-inner {
+  @include uty.inner();
+
+  &__keyvisual {
+    background-color: uty.$background__keyvisual;
+  }
+  &__news {
+    background-color: uty.$ash;
+  }
+  &__group1 {
+    @include uty.groupLayout();
+    height: 300px;
+    background-image: url('../img/picture/img-group1.jpg');
+    position: relative;
+    
+    &::before {
+      @include uty.shadow();
+    }
+  }
+  &__group2 {
+    @include uty.groupLayout();
+  }
+  &__group3 {
+    @include uty.groupLayout();
+  }
+  &__footer {
+    background-color: uty.$ash;
+  }
+  &__copyright {
+    background-color: uty.$grey;
+  }
+}

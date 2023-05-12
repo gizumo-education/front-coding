@@ -1,4 +1,151 @@
+@use './variables.scss' as uty;
 // 共通のパーツを作成
+
+//font
+@mixin formFont() {
+  font-size: 18px;
+  font-weight: uty.$regular;
+  line-height: 26.06px;
+}
+@mixin group4Font() {
+  font-size: 24px;
+  font-weight: uty.$bold;
+  line-height: 30px;
+}
+
+//layout
+@mixin inner() {
+  margin: 0 auto;
+  max-width: 1600px;
+  position: relative;
+}
+//header
+@mixin frequentFont() {
+  font-weight: uty.$regular;
+  font-size: 16px;
+  line-height: 23px;
+}
+@mixin paddingFix() {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@mixin historyGuide() {
+  display: flex;
+  background-color: #92C5EA;
+  border-radius: 15px;
+  color: uty.$white;
+  line-height: 20px;
+
+  &__img {
+    height: 18px;
+    width: 20.96px;
+  }
+  &__text {
+    margin-left: 10.04px;
+  }
+}
+
+// component
+// button
+@mixin button() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: uty.$pink;
+  color: uty.$white;
+  border-radius: 30px;
+  border: none;
+}
+@mixin slideButton() {
+  position: relative;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  border: 0.707px solid;
+  transform: rotate(45deg);
+}
+
+//project
+// img
+@mixin shadow() {
+  content: "";
+  position: absolute;
+  top: 0;  bottom: 0;
+  left: 0;  right: 0;
+  background: uty.$black;
+  opacity:0.5;
+}
+
+// form
+@mixin select() {
+  appearance: none;
+  padding: 17px 0 17px 15px;
+  border-radius: 10px;
+  border: 1px solid uty.$pink;
+}
+@mixin input() {
+  height: 60px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid uty.$pink;
+  padding-left: 10px;
+}
+
+// group
+@mixin groupLayout() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@mixin backgroundimg() {
+  height: 240px;
+  width: 380px;
+  position: relative;
+}
+@mixin contentText() {
+  &__title {
+    font-size: 24px;
+    font-weight: uty.$bold;
+    line-height: 24px;
+    position: relative;
+    top: 71px;
+  }
+  &__tip {
+    position: relative;
+    top: 115px;
+    font-size: 16px;
+    font-weight: uty.$regular;
+    line-height: 23px;
+  }
+}
+
+//triangle
+@mixin triangleBottom() {
+  &::after {
+    position: absolute;
+    pointer-events: none;
+    content: "";
+    border: 10px solid transparent;
+    width: 20px;
+    top: 25px;
+    right: 25px;
+    border-top-color: uty.$pink;
+  }
+}
+@mixin triangleRight() {
+  &::after {
+    content: "";
+    border: 24px solid transparent;
+    position: absolute;
+    border-left-color: uty.$pink;
+    top: 44.4%;
+    left: -26px;
+  }
+}
+
+// responsive
 @mixin pc {
   @media screen and (min-width: 1200px) {
     @content;

@@ -1,2 +1,13 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as uty;
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual{
+  padding-top: 100px;
+
+  &__keyvisual {
+    display: block;
+    margin: 0 auto;
+    width: 1262px;
+    height: 500px;
+  }
+}

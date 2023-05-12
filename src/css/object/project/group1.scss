@@ -1,0 +1,17 @@
+@use '../../object/utility/utility.scss' as uty;
+// group1のスタイルを記述するファイル
+
+.p-group1__group1 {
+  color: uty.$white;
+  font-size: 25px;
+  font-weight: uty.$bold;
+  line-height: 36px;
+  z-index: 1;
+
+  &__margin-bottom {
+    margin-bottom: 10.5px;
+  }
+  &__margin-top {
+    margin-top: 10.5px;
+  }
+}

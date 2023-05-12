@@ -1,2 +1,66 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as uty;
 // headerのスタイルを記述するファイル
+
+.l-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 25px;
+    position: absolute;
+    right: 6.25%;
+
+    &__scope {
+      height: 18.01px;
+      width: 18.01px;
+    }
+    &__book {
+      margin-right: 5px;
+      height: 17px;
+      width: 21.31px;
+    }
+    &__frequent {
+      @include uty.paddingFix();
+      @include uty.frequentFont();
+      
+      &__guide {
+        color: uty.$black;
+      }
+    }
+    &__history {
+      display: flex;
+      margin-left: 25px;
+
+      &__guide {
+        margin-left: 15px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+        &-heart {
+          padding-left: 10px;
+          padding-right: 21px;
+          @include uty.historyGuide();
+          @include uty.paddingFix();
+        }
+        &-clock {
+          padding-left: 30px;
+          padding-right: 28px;
+          @include uty.historyGuide();
+          @include uty.paddingFix();
+        }
+        &-library {
+          padding-left: 24px;
+          padding-right: 32px;
+          @include uty.historyGuide();
+          @include uty.paddingFix();
+        }
+      }
+    }
+  }
+}
