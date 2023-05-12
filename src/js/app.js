@@ -23,6 +23,7 @@ $('.p-requirement__carousel').slick({
     {
       breakpoint: 768,
       settings: {
+        variableWidth: false,
         slidesToShow: 1,
       }
     }

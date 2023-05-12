@@ -142,7 +142,7 @@
         & > a {
           font-size: .22rem;
           font-weight: util.$bold;
-          color: util.$white_rgba;
+          color: rgba($color: util.$white, $alpha: 1);
         }
       }
     }
