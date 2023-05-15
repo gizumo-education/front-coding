@@ -1,29 +1,26 @@
 @use '../../object/utility/utility.scss' as uty;
 // catchcopyのスタイルを記述するファイル
+.p-catchcopy {
+  background: url('../img/picture/img-group1.jpg') no-repeat;
+  background-size: cover;
 
-.p-catchcopy__catchcopy {
-  @include uty.groupLayout();
-  height: 300px;
-  background-image: url('../img/picture/img-group1.jpg');
-  position: relative;
-  z-index: -2;
+  &__catchcopy {
+    @include uty.groupLayout();
+    height: 300px;
+    background-color: uty.$shadow;
 
-  &::before {
-    @include uty.shadow();
-    z-index: -1;
-  }
-  &__phrase {
-    color: uty.$white;
-    font-size: 25px;
-    font-weight: uty.$bold;
-    line-height: 36px;
-    text-align: center;
+    &__phrase {
+      color: uty.$white;
+      font-size: 25px;
+      font-weight: uty.$bold;
+      line-height: 36px;
 
-    &__margin-bottom {
-      margin-bottom: 10.5px;
-    }
-    &__margin-top {
-      margin-top: 10.5px;
+      &__margin-bottom {
+        margin-bottom: 10.5px;
+      }
+      &__margin-top {
+        margin-top: 10.5px;
+      }
     }
   }
 }

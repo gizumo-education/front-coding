@@ -2,10 +2,10 @@
 // newsのスタイルを記述するファイル
 
 .p-news {
-  padding-top: 59px;
+  background-color: uty.$ash;
+  margin-top: 59px;
 
   &__news {
-    background-color: uty.$ash;
     padding: 119px 0 67px 0;
     width: 100%;
 

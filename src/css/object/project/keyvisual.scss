@@ -2,11 +2,11 @@
 // ページ上部のキービジュアルに関するスタイル
 
 .p-keyvisual{
+  background-color: uty.$background__keyvisual;
   padding-top: 100px;
 
     &__keyvisual {
       width: 100%;
-      background-color: uty.$background__keyvisual;
 
       &__img {
       display: block;

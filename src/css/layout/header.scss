@@ -7,13 +7,13 @@
   top: 0;
   z-index: 10;
   width: 100%;
+  background-color: uty.$white;
   
   &__nav {
     display: flex;
     justify-content: flex-end;
     padding: 25px 0;
     width: 100%;
-    background-color: uty.$white;
 
     &__scope {
       height: 18.01px;

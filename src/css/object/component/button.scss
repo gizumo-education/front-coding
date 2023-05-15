@@ -4,6 +4,10 @@
 .c-button {
   @include uty.button();
   cursor: pointer;
+  font-size: 18px;
+  font-weight: uty.$bold;
+  line-height: 18px;
+  
 
   &__scope {
     margin-right: 4px;

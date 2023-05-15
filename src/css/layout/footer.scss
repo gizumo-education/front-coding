@@ -2,12 +2,12 @@
 // footerのスタイルを記述するファイル
 
 .l-footer {
-  padding-top: 200px;
+  background-color: uty.$ash;
+  margin-top: 200px;
 
   &__footer {
     position: relative;
     height: 265px;
-    background-color: uty.$ash;
     width: 100%;
 
     & a {
