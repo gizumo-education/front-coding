@@ -1,0 +1,71 @@
+@use '../../object/utility/utility.scss' as uty;
+// newsのスタイルを記述するファイル
+
+.p-news {
+  background-color: uty.$ash;
+  margin-top: 59px;
+
+  &__news {
+    padding: 119px 0 67px 0;
+    width: 100%;
+
+    &__contents {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+
+      &__content {
+        margin-left: 20px;
+        position: relative;
+
+        &:first-child {
+          position: relative;
+          bottom: 55px;
+          margin-left: 0;
+        }
+        &__title {
+          font-size: 25px;
+          font-family: uty.$inter;
+          font-weight: uty.$regular;
+          line-height: 30px;
+          margin-bottom: 25px;
+        }
+        &__img {
+          height: 200px;
+          width: 280px;
+          border-radius: 10px;
+        }
+        
+        &__detail {
+          font-size: 14px;
+          font-weight: uty.$regular;
+          line-height: 17px;
+          margin-top: 8.08px;
+          width: 280px;
+          color: uty.$black;
+
+          &__comment {
+            font-weight: uty.$regular;
+            font-size: 16px;
+            line-height: 22px;
+            margin: 8.8px 0 6.92px 0;
+          }
+          & span {
+            text-align: center;
+            display: inline-block;
+            padding: 1px;
+            line-height: 20.27px;
+            background-color: uty.$cherry;
+            margin: 4px 10px 0 0;
+            width: 60px;
+          }
+        }
+      }
+    }
+    &__button {
+      margin: 0 auto;
+      width: 360px;
+      padding: 17px 72px;
+    }
+  }
+}

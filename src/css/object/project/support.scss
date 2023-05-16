@@ -1,0 +1,60 @@
+@use '../../object/utility/utility.scss' as uty;
+//supportのスタイルを記述するファイル
+
+.p-support {
+  padding-top: 106px;
+
+  &__support {
+    height: 478px;
+    width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+
+    &__title {
+      font-size: 25px;
+      font-weight: uty.$bold;
+      line-height: 25px;
+    }
+    &__features {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 53px;
+
+      &__feature {
+        height: 180px;
+        width: 570px;
+        background-color: uty.$feature-pink;
+        border-radius: 10px;
+        margin-left: 40px;
+        margin-top: 40px;
+
+        &:nth-child(2n + 1) {
+          margin-left: 0;
+        }
+        &:nth-child(-n + 2) {
+          margin-top: 0;
+        }
+        &__title {
+          font-size: 24px;
+          font-weight: uty.$bold;
+          line-height: 24px;
+          color: uty.$pink;
+          padding-top: 40px;
+        }
+        &__text {
+          font-size: 14px;
+          font-weight: uty.$regular;
+          line-height: 20px;
+          margin-top: 36px;
+
+          &-fixed {
+            font-size: 14px;
+            font-weight: uty.$regular;
+            line-height: 20px;
+            margin-top: 26px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,2 +1,5 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as uty;
 // innerのスタイルを記述するファイル
+.l-inner {
+  @include uty.inner();
+}

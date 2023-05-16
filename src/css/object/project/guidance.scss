@@ -1,0 +1,56 @@
+@use '../../object/utility/utility.scss' as uty;
+// guidanceのスタイルを記述するファイル
+
+.p-guidance {
+  padding: 106.13px 0 89px 0;
+
+  &__guidance {
+    text-align: center;
+
+    &__title {
+      font-size: 25px;
+      font-weight: uty.$bold;
+      line-height: 25px;
+    }
+    &__contents {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+
+      & > li {
+        margin-left: 20px;
+
+          &:first-child {
+            margin-left: 0;
+          }
+      }
+      &__content-1 {
+        border-radius: 10px;
+        background-image: url('../img/picture/img-group4__source1.jpg');
+        @include uty.backgroundimg();
+        @include uty.contentText();
+        
+        &::before {
+          @include uty.shadow();
+          border-radius: 10px;
+        }
+      }
+      &__content-2 {
+        border-radius: 10px;
+        background-image: url('../img/picture/img-group4__source2.jpg');
+        @include uty.backgroundimg();
+        @include uty.contentText();
+
+        &::before {
+          @include uty.shadow();
+          border-radius: 10px;
+        }
+      }
+    }
+    &__button{
+      margin: 80px auto 0 auto;
+      padding: 21px 93px;
+      width: 420px;
+    }
+  }
+}

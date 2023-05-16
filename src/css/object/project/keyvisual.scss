@@ -1,2 +1,18 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as uty;
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual{
+  background-color: uty.$background__keyvisual;
+  padding-top: 100px;
+
+    &__keyvisual {
+      width: 100%;
+
+      &__img {
+      display: block;
+      margin: 0 auto;
+      width: 1262px;
+      height: 500px;
+    }
+  }
+}

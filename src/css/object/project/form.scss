@@ -1,0 +1,53 @@
+@use '../../object/utility/utility.scss' as uty;
+// formに関するスタイル
+
+.p-form {
+  padding-top: 61px;
+
+  &__form {
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 1180px;
+    background-color: uty.$background__form;
+    border-radius: 10px;
+    text-align: center;
+
+    &__title {
+      font-size: 25px;
+      font-weight: uty.$bold;
+      line-height: 25px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      font-weight: uty.$regular;
+      line-height: 29px;
+      margin-top: 20px;
+    }
+
+    &__area {
+      display: flex;
+      justify-content: center;
+      margin-top: 26.5px;
+
+      &__select {
+        position: relative;
+        margin-left: 16px;
+        @include uty.triangleBottom();
+
+        &__job {
+          padding-right: 22px;
+        }
+        &__region {
+          padding-right: 112px;
+        }
+        &__salary {
+          padding-right: 91px;
+        }
+      }
+      &__button {
+        width: 140px;
+      }
+    }
+  }
+}

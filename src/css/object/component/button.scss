@@ -1,2 +1,45 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss'as uty;
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button {
+  @include uty.button();
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: uty.$bold;
+  line-height: 18px;
+  
+
+  &__scope {
+    margin-right: 4px;
+  }
+}
+
+.c-select {
+  @include uty.select();
+  @include uty.formFont();
+}
+
+.c-input {
+  margin: 0 15.5px 0 16px;
+  @include uty.input();
+  @include uty.formFont();
+}
+
+.c-slide {
+  background-color: uty.$white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  opacity: 0.7;
+
+  &__left {
+    @include uty.slideButton();
+    left: 25px;
+    border-color:  transparent transparent uty.$black uty.$black;
+  }
+  &__right {
+    @include uty.slideButton();
+    left: 15px;
+    border-color:  uty.$black uty.$black transparent transparent;
+  }
+}
