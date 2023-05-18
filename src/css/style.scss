@@ -9,12 +9,28 @@
 @use './layout/footer.scss';
 @use './layout/header.scss';
 @use './layout/inner.scss';
+@use './layout/main.scss';
+@use './layout/search.scss';
+@use './layout/article.scss';
+@use './layout/group1.scss';
+@use './layout/group2.scss';
+@use './layout/group3.scss';
+@use './layout/group4.scss';
+@use './layout/copyRight.scss';
 /*-------------------------------------------*/
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/select.scss';
+@use './object/component/keyword.scss';
+@use './object/component/searchForm.scss';
+@use './object/component/box.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/job.scss';
+@use './object/project/pinkBox.scss';
+@use './object/project/step.scss';
+@use './object/project/usefulContents.scss';
 /*-------------------------------------------*/

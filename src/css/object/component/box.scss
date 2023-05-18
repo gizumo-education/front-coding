@@ -1,0 +1,12 @@
+@use '../../object/utility/utility.scss';
+// 共通パーツであるboxのスタイルを記述するファイル
+
+// ボックス
+.c-pink-box {
+  width: 60px;
+  height: 21px;
+  background: #FFCAD0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,2 +1,33 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
+
+
+// フォント
+.u-Noto-text {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+};
+
+.u-inter-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+};
+
+// イメージ
+.u-clock {
+  width: 18px;
+};
+
+// aタグ
+.u-a-black {
+  color: #000000;
+}
+
+a:hover{
+  opacity: .8;
+  transition: .3s;
+}

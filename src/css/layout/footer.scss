@@ -1,2 +1,68 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
+
+.footer {
+  margin-top: 200px;
+  height: 265px;
+  background: #EFF6FC;
+  display: flex;
+  justify-content: center;
+  
+  &__wrapper {
+    width: 1180px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__links {
+      margin-top: 79px;
+
+      &__top {
+        font-size: 16px;
+        line-height: 23px;
+        color: #000000;
+      }
+
+      &__link {
+        margin-top: 27px;
+        display: flex;
+
+        &__contents {
+          font-size: 16px;
+          line-height: 36px;
+          color: #000000;
+          margin-left: 39px;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    &__pictures {
+      width: 320px;
+      height: 85px;
+      border: 1px solid #BDBDBD;
+      position: relative;
+      background-color: #ffffff;
+      margin-top: 15px;
+
+      &:first-child {
+        margin-top: 55px;
+      }
+      
+      &__img {
+        height: 100%;
+        position: absolute;
+        right: 0;
+      }
+      &__gradation {
+        position: absolute;
+        width: 230px;
+        height: 100%;
+        background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 50%, rgba(255, 255, 255, 0.992) 68%, rgba(255, 255, 255, 0.965) 74.7%, rgba(255, 255, 255, 0.918) 79.6%, rgba(255, 255, 255, 0.851) 83.6%, rgba(255, 255, 255, 0.765) 87%, rgba(255, 255, 255, 0.655) 90%, rgba(255, 255, 255, 0.525) 92.7%, rgba(255, 255, 255, 0.376) 95.3%, rgba(255, 255, 255, 0.208) 97.6%, rgba(255, 255, 255, 0.024) 99.7%, rgba(255, 255, 255, 0) 100%);
+      }
+    }
+  }
+}

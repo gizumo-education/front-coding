@@ -1,0 +1,26 @@
+@use '../object/utility/utility.scss';
+// group2のスタイルを記述するファイル
+
+.group2 {
+  margin-top: 106px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &__cont-wrapper {
+    margin-top: 53px;
+  }
+  &__cont-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+    &:first-child {
+      margin-top: 53px;
+    }
+  }
+}

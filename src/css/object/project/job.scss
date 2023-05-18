@@ -1,0 +1,54 @@
+@use '../../object/utility/utility.scss';
+// 新着求人の項目に関するスタイル
+
+.job-file {
+  display: flex;
+  justify-content: center;
+  & > li {
+    margin-left: 20px;
+    width: 280px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.job-img {
+  width: 280px;
+  height: 200px;
+};
+
+.job-detail {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 8.08px;
+}
+
+.job-item {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+
+  &:first-child {
+    margin-top: 6.92px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 20px;
+
+  }
+  &__detail {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.job-scroll {
+  position: absolute;
+  top: 189px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

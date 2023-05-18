@@ -1,0 +1,40 @@
+@use '../../object/utility/utility.scss';
+// useful-contentsの項目に関するスタイル
+
+.useful-contents {
+  width: 380px;
+  height: 240px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__background {
+    width: 380px;
+    height: 240px;
+    border-radius: 10px;
+    position: absolute;
+    background: #000000;
+    opacity: 0.5;
+  }
+
+  &__msg-wrapper {
+    text-align: center;
+    position: absolute;
+    top: 0;
+
+    &__title {
+      margin-top: 71px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+
+    &__detail {
+      margin-top: 45px;
+      font-size: 16px;
+      line-height: 23px;
+      color: #FFFFFF;
+    }
+  }
+}

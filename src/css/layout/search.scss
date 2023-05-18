@@ -1,0 +1,46 @@
+@use '../object/utility/utility.scss';
+// searchのスタイルを記述するファイル
+
+.search {
+  margin-top: 61px;
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    width: 1180px;
+    height: 240px;
+    background-color: #DEEEF9;
+    border-radius: 10px;
+    text-align: center;
+
+    &__title {
+      margin-top: 40px;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 25px;
+    };
+
+    &__detail {
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 29px;
+    };
+
+    &__select-input {
+      margin-top: 26px;
+      display: flex;
+      justify-content: center;
+
+      &__contents {
+        margin-left: 15px;
+        &:first-child {
+          margin-left: 0;
+        }
+      };
+    };
+  };
+};
+
+.search.search2 {
+  margin-top: 150px;
+}
