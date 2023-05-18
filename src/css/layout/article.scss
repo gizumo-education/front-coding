@@ -1,0 +1,38 @@
+@use '../object/utility/utility.scss';
+// articleのスタイルを記述するファイル
+
+.article {
+  width: 100%;
+  margin-top: 59px;
+  background: #EFF6FC;
+  
+  &__wrapper {
+    width: 1180px;
+    height: 636px;
+    position: relative;
+    margin: auto;
+
+    &__title {
+      padding-top: 64px;
+      font-size: 25px;
+      line-height: 30px;
+    };
+
+    &__job {
+      margin-top: 25px;
+    }
+
+    &__button-box {
+      margin-top: 59px;
+      text-align: center;
+
+      &__button {
+        width: 360px !important;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #FFFFFF;
+      }
+    }
+  };
+};
