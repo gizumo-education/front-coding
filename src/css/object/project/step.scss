@@ -47,9 +47,15 @@
 
   &__img {
     position: absolute;
+    top: 54px;
     left: 0;
     right: 0;
     margin: auto;
+    width: 109px;
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__title {
@@ -57,7 +63,15 @@
     font-size: 24px;
     line-height: 30px;
     text-align: center;
-    margin-top: 110px;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__detail {
