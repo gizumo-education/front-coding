@@ -1,7 +1,7 @@
 @use '../../object/utility/utility.scss';
 // 新着求人の項目に関するスタイル
 
-.job-file {
+.p-job-file {
   display: flex;
   justify-content: center;
 
@@ -37,19 +37,19 @@
   }
 }
 
-.job-img {
+.p-job-img {
   width: 280px;
   height: 200px;
   border-radius: 10px;
 };
 
-.job-detail {
+.p-job-detail {
   font-size: 16px;
   line-height: 22px;
   margin-top: 8.08px;
 }
 
-.job-item {
+.p-job-item {
   margin-top: 4px;
   display: flex;
   align-items: center;
