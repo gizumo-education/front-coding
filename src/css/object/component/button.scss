@@ -63,7 +63,12 @@
 }
 
 
-button:hover{
-  opacity: .8;
+// hoverのスタイル
+
+button{
   transition: .3s;
+  &:hover{
+    opacity: .8;
+    transition: .3s;
+  }
 }

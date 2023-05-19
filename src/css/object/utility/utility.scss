@@ -27,7 +27,11 @@
   color: #000000;
 }
 
-a:hover{
-  opacity: .8;
+a {
   transition: .3s;
+  
+  &:hover{
+    opacity: .8;
+    transition: .3s;
+  }
 }
