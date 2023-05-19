@@ -4,15 +4,19 @@
 .job-file {
   display: flex;
   justify-content: center;
-  &__contents {
+
+  &__list {
     margin-left: 20px;
-    width: 280px;
-    position: relative;
-    cursor: pointer;
 
     &:first-child {
       margin-left: 0;
     }
+  }
+  
+  &__contents {
+    width: 280px;
+    position: relative;
+    cursor: pointer;
 
     &__button {
       width: 100%;
