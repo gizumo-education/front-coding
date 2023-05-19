@@ -11,7 +11,6 @@
 @use './layout/inner.scss';
 @use './layout/main.scss';
 @use './layout/search.scss';
-@use './layout/article.scss';
 /*-------------------------------------------*/
 
 /*component---------------------------------*/
@@ -32,4 +31,5 @@
 @use './object/project/feature.scss';
 @use './object/project/process.scss';
 @use './object/project/support.scss';
+@use './object/project/article.scss';
 /*-------------------------------------------*/
