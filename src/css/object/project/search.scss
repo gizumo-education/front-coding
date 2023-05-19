@@ -1,7 +1,7 @@
-@use '../object/utility/utility.scss';
+@use '../../object/utility/utility.scss';
 // searchのスタイルを記述するファイル
 
-.search {
+.p-search {
   margin-top: 61px;
   display: flex;
   justify-content: center;
@@ -41,6 +41,6 @@
   };
 };
 
-.search.search2 {
+.search2 {
   margin-top: 150px;
 }

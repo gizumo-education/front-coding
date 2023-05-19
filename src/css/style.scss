@@ -10,7 +10,6 @@
 @use './layout/header.scss';
 @use './layout/inner.scss';
 @use './layout/main.scss';
-@use './layout/search.scss';
 /*-------------------------------------------*/
 
 /*component---------------------------------*/
@@ -32,4 +31,5 @@
 @use './object/project/process.scss';
 @use './object/project/support.scss';
 @use './object/project/article.scss';
+@use './object/project/search.scss';
 /*-------------------------------------------*/
