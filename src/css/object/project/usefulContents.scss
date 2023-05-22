@@ -2,14 +2,14 @@
 // useful-contentsの項目に関するスタイル
 
 .p-useful-contents {
-  width: 380px;
+  max-width: 380px;
   height: 240px;
   position: relative;
   display: flex;
   justify-content: center;
 
   &__background {
-    width: 380px;
+    width: 100%;
     height: 240px;
     border-radius: 10px;
     position: absolute;
