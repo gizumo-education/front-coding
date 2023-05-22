@@ -48,7 +48,7 @@
         @include uty.sp {
           width: 3.7rem;
           margin: .21rem 0 0 0 ;
-          padding-bottom: .3rem;
+          padding: 0 .17rem .3rem .17rem;
         }
         &:nth-child(2n + 1) {
           margin-left: 0;
