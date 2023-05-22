@@ -33,6 +33,7 @@
 
       &__contents {
         margin-left: 15px;
+        display: flex;
         &:first-child {
           margin-left: 0;
         }
