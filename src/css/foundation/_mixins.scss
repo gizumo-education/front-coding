@@ -15,9 +15,9 @@
   line-height: 26.06px;
 }
 @mixin group4Font() {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: uty.$bold;
-  line-height: 30px;
+  line-height: 28.96px;
 }
 @mixin baloonFont() {
   font-family: uty.$inter;
@@ -99,6 +99,12 @@
   border-radius: 10px;
   border: 1px solid uty.$pink;
 }
+@mixin spSelect() {
+  appearance: none;
+  padding: 5.5px 0 6.5px 7.5px;
+  border-radius: 10px;
+  border: 1px solid uty.$pink;
+}
 @mixin input() {
   height: 60px;
   width: 300px;
@@ -149,16 +155,9 @@
 
 // triangle
 @mixin triangleBottom() {
-  &::after {
-    position: absolute;
-    pointer-events: none;
-    content: "";
-    border: 10px solid transparent;
-    width: 20px;
-    top: 25px;
-    right: 25px;
-    border-top-color: uty.$pink;
-  }
+  position: absolute;
+  pointer-events: none;
+  content: "";
 }
 @mixin triangleRight() {
   &::after {

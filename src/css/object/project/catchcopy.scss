@@ -4,11 +4,24 @@
   background: url('../img/picture/img-group1.jpg') no-repeat;
   background-size: cover;
 
+  @include uty.tab {
+    width: 1199px;
+    margin: 0 auto;
+  }
+  @include uty.sp {
+    background: url('../img/picture/img-sp-group1.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: .75rem;
+  }
   &__catchcopy {
     @include uty.groupLayout();
     height: 300px;
     background-color: uty.$shadow;
 
+    @include uty.sp {
+      height: .75rem;
+    }
     &__phrase {
       color: uty.$white;
       font-size: 25px;
@@ -16,8 +29,17 @@
       line-height: 36px;
       text-align: center;
 
+      @include uty.sp {
+        font-size: .14rem;
+        line-height: .2027rem;
+        font-weight: uty.$regular;
+      }
       &__margin-top {
         margin-top: 21px;
+
+        @include uty.sp {
+          margin-top: .0236rem;
+        }
       }
     }
   }
