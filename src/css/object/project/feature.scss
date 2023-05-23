@@ -11,13 +11,21 @@
     text-align: center;
   }
 
+  &__contents{
+    text-align: center;
+  }
+
   &__cont-wrapper {
     margin-top: 40px;
-    display: flex;
-    justify-content: center;
+    margin-left: 40px;
+    display: inline-flex;
 
-    &:first-child {
+    &:nth-child(-n+2) {
       margin-top: 53px;
+    }
+
+    &:nth-child(odd){
+      margin-left: 0;
     }
   }
 }
