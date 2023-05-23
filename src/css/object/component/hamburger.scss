@@ -1,0 +1,26 @@
+@use '../../object/utility/utility.scss';
+// 共通パーツであるhamburgerのスタイルを記述するファイル
+
+.c-hamburger {
+  width: 50px;
+  padding: inherit;
+  border: inherit;
+  display: inline-block;
+  background-color: rgba(0,0,0,0);
+  font-size: 0;
+
+
+  &__patty {
+    height: 6px;
+    width: 100%;
+    background-color: #000;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

@@ -8,8 +8,6 @@
   z-index: 2;
   background-color: #ffffff;
 
-  
-
   &__wrapper{
     display: flex;
     align-items: center;
@@ -36,6 +34,27 @@
     &:first-child {
       width: 160px;
       margin-left: 25px;
-    };
-  };
-};
+    }
+  }
+  &__hamburger{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  .l-header {
+    height: 70px;
+  
+    &__wrapper{
+      display: none;
+    }
+  
+    &__hamburger{
+      display: block;
+      position: absolute;
+      top: 13px;
+      // right: 15px;
+    }
+  }
+}
