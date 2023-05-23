@@ -1,0 +1,19 @@
+@use '../../object/utility/utility.scss';
+// processのスタイルを記述するファイル
+
+.p-process {
+  margin-top: 105px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &__step-wrapper {
+    margin-top: 51.13px;
+    display: flex;
+    justify-content: center;
+  }
+}

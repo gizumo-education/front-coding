@@ -1,0 +1,40 @@
+@use '../../object/utility/utility.scss';
+// supportのスタイルを記述するファイル
+
+.p-support {
+  margin-top: 105px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &__cont-wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    &__contents {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__button-wrapper {
+    margin-top: 80px;
+    text-align: center;
+
+    &__button {
+      width: 420px !important;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+  }
+}

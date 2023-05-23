@@ -1,0 +1,13 @@
+@use '../../object/utility/utility.scss';
+// copyRightのスタイルを記述するファイル
+
+.p-copy-right {
+  width: 100%;
+  height: 35px;
+  background-color: #D7D7D7;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

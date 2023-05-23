@@ -1,2 +1,74 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button {
+  width: 140px;
+  height: 50px;
+  border: none;
+  padding: 0;
+  border-radius: 10px;
+  cursor: pointer;
+};
+
+.c-search-button {
+  width: 140px;
+  height: 60px;
+  border: none;
+  padding: 0;
+  border-radius: 30px;
+  background-color: #DE5579;
+  cursor: pointer;
+}
+
+
+// くの字ボタン
+.c-circle-button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: none;
+  opacity: 0.7;
+  cursor: pointer;
+  
+}
+
+
+
+
+// 左
+.c-left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%) rotate(-135deg);
+  width: 15px;
+  height: 15px;
+  border-top: 0.707px solid #000000;
+  border-right: 0.707px solid #000000;
+}
+
+
+// 右
+.c-right-arrow {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 15px;
+  height: 15px;
+  border-top: 0.707px solid #000000;
+  border-right: 0.707px solid #000000;
+}
+
+
+// hoverのスタイル
+
+button{
+  transition: .3s;
+  &:hover{
+    opacity: .8;
+    transition: .3s;
+  }
+}

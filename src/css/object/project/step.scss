@@ -1,0 +1,90 @@
+@use '../../object/utility/utility.scss';
+// stepの項目に関するスタイル
+
+.p-step {
+  width: 280px;
+  height: 360px;
+  border: 2.27px solid #DE5579;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 20px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;   /* 縦軸をセンタリングする */ 
+    left: -22px;
+    transform: translateY(-50%);   /* 縦軸をセンタリングする */  
+    border: 20px solid transparent;
+    border-left: 20px solid #DE5579;
+  }
+
+  &:first-child::before {
+    content: none;
+  }
+
+  &__circle {
+    width: 60px;
+    height: 60px;
+    background: #DE5579;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    
+    &__text {
+      padding-top: 11px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ffffff;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 54px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 109px;
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 216px;
+  }
+
+  &__detail {
+    height: 60px;
+    max-width: 237px;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    top: 258px;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+

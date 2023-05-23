@@ -1,0 +1,44 @@
+@use '../../object/utility/utility.scss';
+// searchのスタイルを記述するファイル
+
+.p-search {
+  margin-top: 61px;
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    width: 1180px;
+    padding-bottom: 40.5px;
+    background-color: #DEEEF9;
+    border-radius: 10px;
+    text-align: center;
+
+    &__title {
+      padding-top: 40px;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 25px;
+    };
+
+    &__detail {
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 29px;
+    };
+
+    &__select-input {
+      margin-top: 26px;
+      display: flex;
+      justify-content: center;
+
+      &__contents {
+        margin-left: 15px;
+        display: flex;
+        &:first-child {
+          margin-left: 0;
+        }
+      };
+    };
+  };
+};
+

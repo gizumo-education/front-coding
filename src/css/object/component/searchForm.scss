@@ -1,0 +1,29 @@
+@use '../../object/utility/utility.scss';
+// 共通パーツであるsearchFormのスタイルを記述するファイル
+
+.c-search-form {
+  display: flex;
+
+  &__box {
+    width: 300px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #DE1E79;
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 9.5px;
+  };
+
+  &__button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    
+  };
+};

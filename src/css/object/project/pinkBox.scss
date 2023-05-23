@@ -1,0 +1,31 @@
+@use '../../object/utility/utility.scss';
+// pinkBoxの項目に関するスタイル
+
+.p-pink-box {
+  width: 570px;
+  height: 180px;
+  background: #F7D2DB;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 40px;
+  
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &__title {
+    padding-top: 40px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #DE5579;
+  }
+
+  &__detail {
+    margin: 26px auto 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    max-width: 475px;
+  }
+}
