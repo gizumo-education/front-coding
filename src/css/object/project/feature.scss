@@ -18,7 +18,8 @@
   &__cont-wrapper {
     margin-top: 40px;
     margin-left: 40px;
-    display: inline-flex;
+    display: inline-block;
+    vertical-align: middle;
 
     &:nth-child(-n+2) {
       margin-top: 53px;
