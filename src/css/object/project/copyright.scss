@@ -2,6 +2,13 @@
 // copylightのスタイルを記述するファイル
 .p-copyright {
   background-color: uty.$grey;
+  
+  @include uty.tab {
+    width: 1199px;
+  }
+  @include uty.sp {
+    width: 100%;
+  }
 }
 .p-copyright__text {
   text-align: center;
@@ -9,4 +16,9 @@
   font-size: 14px;
   font-weight: uty.$regular;
   line-height: 14px;
+
+  @include uty.sp {
+    font-size: .14rem;
+    line-height: .14rem;
+  }
 }

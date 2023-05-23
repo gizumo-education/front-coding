@@ -5,15 +5,28 @@
   background-color: uty.$ash;
   margin-top: 59px;
 
+  @include uty.tab {
+    width: 1199px;
+  }
+  @include uty.sp {
+    width: 100%;
+    margin-top: .25rem;
+  }
   &__news {
     padding: 119px 0 67px 0;
     width: 100%;
 
+    @include uty.sp {
+      padding: .3rem 0 .6rem 0;
+    }
     &__contents {
       display: flex;
       justify-content: center;
-      margin-top: 25px;
 
+      @include uty.sp {
+        display: block;
+        text-align: center;
+      }
       &__content {
         margin-left: 20px;
         position: relative;
@@ -22,6 +35,10 @@
           position: relative;
           bottom: 55px;
           margin-left: 0;
+
+          @include uty.sp {
+            bottom: 0;
+          }
         }
         &__title {
           font-size: 25px;
@@ -29,13 +46,33 @@
           font-weight: uty.$regular;
           line-height: 30px;
           margin-bottom: 25px;
+
+          @include uty.sp {
+            font-weight: uty.$bold;
+            font-size: .25rem;
+            line-height: .3rem;
+            margin-bottom: .25rem;
+          }
         }
         &__img {
           height: 200px;
           width: 280px;
           border-radius: 10px;
+
+          @include uty.sp {
+            display: none;
+          }
         }
-        
+        &__sp-img {
+          display: none;
+
+          @include uty.sp {
+            display: block;
+            width: 3.7rem;
+            height: 2.08rem;
+            border-radius: 10px;
+          }
+        }
         &__detail {
           font-size: 14px;
           font-weight: uty.$regular;
@@ -44,11 +81,27 @@
           width: 280px;
           color: uty.$black;
 
+          @include uty.sp {
+            display: none;
+            text-align: left;
+            font-size: .14rem;
+            line-height: .1694rem;
+            width: 3.7rem;
+          }
+          &__sp {
+            display: block;
+          }
           &__comment {
             font-weight: uty.$regular;
             font-size: 16px;
             line-height: 22px;
             margin: 8.8px 0 6.92px 0;
+
+            @include uty.sp {
+              font-size: .16rem;
+              line-height: .22rem;
+              font-weight: uty.$bold;
+            }
           }
           & span {
             text-align: center;
@@ -58,6 +111,12 @@
             background-color: uty.$cherry;
             margin: 4px 10px 0 0;
             width: 60px;
+
+            @include uty.sp {
+              font-size: .14rem;
+              line-height: .2027rem;
+              width: .6rem;
+            }
           }
         }
       }
@@ -66,6 +125,12 @@
       margin: 0 auto;
       width: 360px;
       padding: 17px 72px;
+
+      @include uty.sp {
+        width: 3.7rem;
+        height: .6rem;
+        padding: .21rem .72rem;
+      }
     }
   }
 }

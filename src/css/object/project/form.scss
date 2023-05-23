@@ -4,6 +4,13 @@
 .p-form {
   padding-top: 61px;
 
+  @include uty.tab {
+    width: 1199px;
+  }
+  @include uty.sp {
+    width: 100%;
+    padding-top: .25rem;
+  }
   &__form {
     padding: 40px 0;
     margin: 0 auto;
@@ -12,10 +19,20 @@
     border-radius: 10px;
     text-align: center;
 
+    @include uty.sp {
+      width: 3.7rem;
+      height: 2.4rem;
+      padding: .15rem 0 .2rem 0;
+    }
     &__title {
       font-size: 25px;
       font-weight: uty.$bold;
       line-height: 25px;
+
+      @include uty.sp {
+        font-size: .22rem;
+        line-height: .22rem;
+      }
     }
 
     &__subtitle {
@@ -23,6 +40,12 @@
       font-weight: uty.$regular;
       line-height: 29px;
       margin-top: 20px;
+
+      @include uty.sp {
+        margin-top: .16rem;
+        font-size: .14rem;
+        line-height: .2027rem;
+      }
     }
 
     &__area {
@@ -30,23 +53,69 @@
       justify-content: center;
       margin-top: 26.5px;
 
+      @include uty.sp {
+        display: block;
+        margin-top: .135rem;
+      }
       &__select {
         position: relative;
         margin-left: 16px;
-        @include uty.triangleBottom();
 
+        @include uty.sp {
+          float: left;
+          margin-left: .1rem;
+
+          &:first-child {
+            margin-left: 0;
+            padding-left: 0.25rem;
+          }
+        }
+        &::after {
+          @include uty.triangleBottom();
+          border: 10px solid transparent;
+          border-top-color: uty.$pink;
+          width: 20px;
+          top: 25px;
+          right: 25px;
+
+          @include uty.sp {
+            border: .07rem solid transparent;
+            border-top-color: uty.$pink;
+            top: .12rem;
+            right: .1rem;
+            width: .13rem;
+            height: .07rem;
+          }
+        }
         &__job {
+          color: uty.$black;
           padding-right: 22px;
         }
         &__region {
+          color: uty.$black;
           padding-right: 112px;
+
+          @include uty.sp {
+            padding-right: 0;
+          }
         }
         &__salary {
+          color: uty.$black;
           padding-right: 91px;
+
+          @include uty.sp {
+            padding-right: 0;
+          }
         }
       }
       &__button {
         width: 140px;
+
+        @include uty.sp {
+          width: 1.6rem;
+          height: .4rem;
+          margin: .195rem auto 0 auto;
+        }
       }
     }
   }
