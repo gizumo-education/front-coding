@@ -10,6 +10,7 @@
   cursor: pointer;
 };
 
+// 検索ボタン
 .c-search-button {
   width: 140px;
   height: 60px;
@@ -18,17 +19,6 @@
   border-radius: 30px;
   background-color: #DE5579;
   cursor: pointer;
-}
-
-
-@media screen and (max-width:767px) {
-  .c-search-button {
-    &__img {
-      width: 18px;
-      margin-left: 13px;
-      margin-right: 14px;
-    }
-  }
 }
 
 // くの字ボタン
@@ -44,9 +34,6 @@
   
 }
 
-
-
-
 // 左
 .c-left-arrow {
   position: absolute;
@@ -58,7 +45,6 @@
   border-top: 0.707px solid #000000;
   border-right: 0.707px solid #000000;
 }
-
 
 // 右
 .c-right-arrow {
@@ -72,7 +58,6 @@
   border-right: 0.707px solid #000000;
 }
 
-
 // hoverのスタイル
 
 button{
@@ -80,5 +65,37 @@ button{
   &:hover{
     opacity: .8;
     transition: .3s;
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  // 検索ボタン
+  .c-search-button {
+    &__img {
+      width: 18px;
+      margin-left: 13px;
+      margin-right: 14px;
+    }
+  }
+
+  // くの字ボタン
+  .c-circle-button {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    
+  }
+
+  // 左
+  .c-left-arrow {
+    width: 10px;
+    height: 10px;
+  }
+
+  // 右
+  .c-right-arrow {
+    width: 10px;
+    height: 10px;
   }
 }

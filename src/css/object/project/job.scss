@@ -38,11 +38,15 @@
   }
 }
 
-.p-job-img {
+.p-job-large-img {
   width: 280px;
   height: 200px;
   border-radius: 10px;
-};
+  display: block;
+}
+.p-job-small-img {
+  display: none;
+}
 
 .p-job-detail {
   font-size: 16px;
@@ -68,5 +72,68 @@
     margin-left: 10px;
     font-size: 14px;
     line-height: 17px;
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  .p-job-file {
+    margin-top: 35px;
+  
+    &__list {
+      margin-left: 20px;
+      display: none;
+  
+      &:first-child {
+        margin-left: 0;
+        display: block;
+      }
+    }
+    
+    &__contents {
+      max-width: 370px;
+  
+      &__button {
+      }
+    }
+  
+    &__arrow-btn{
+      position: absolute;
+      top: 247px;
+  
+      &:first-child {
+        left: 0;
+      }
+    }
+  }
+  
+  .p-job-large-img {
+    display: none;
+  }
+  .p-job-small-img {
+    display: block;
+  }
+
+  
+  .p-job-detail {
+    font-weight: 700;
+    margin-top: 10.08px;
+    text-align: start;
+  }
+  
+  .p-job-item {
+  
+    &:first-child {
+      margin-top: 11.92px;
+    }
+  
+    &__title {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__detail {
+      margin-left: 21.06px;
+      line-height: 20px;
+    }
   }
 }
