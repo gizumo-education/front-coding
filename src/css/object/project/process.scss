@@ -17,3 +17,21 @@
     justify-content: center;
   }
 }
+
+
+@media screen and (max-width:767px) {
+  .p-process {
+    margin-top: 60px;
+  
+    &__title {
+      
+    }
+  
+    &__step-wrapper {
+      margin: 34px auto 0;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 280px;
+    }
+  }  
+}
