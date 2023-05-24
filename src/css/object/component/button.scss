@@ -21,6 +21,16 @@
 }
 
 
+@media screen and (max-width:767px) {
+  .c-search-button {
+    &__img {
+      width: 18px;
+      margin-left: 13px;
+      margin-right: 14px;
+    }
+  }
+}
+
 // くの字ボタン
 .c-circle-button {
   position: relative;

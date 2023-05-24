@@ -37,8 +37,50 @@
         &:first-child {
           margin-left: 0;
         }
-      };
-    };
-  };
-};
+      }
+    }
+  }
+}
 
+
+
+@media screen and (max-width:767px) {
+  .p-search {
+    margin-top: 25px;
+  
+    &__wrapper {
+      width: 370px;
+      padding-bottom: 20px;
+  
+      &__title {
+        padding-top: 15px;
+        font-size: 22px;
+        line-height: 22px;
+      }
+  
+      &__detail {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+  
+      &__select-input {
+        margin-top: 13px;
+        display: flex;
+        flex-wrap: wrap;
+  
+        &__contents {
+          margin-left: 10.5px;
+          display: flex;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-top: 15.5px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
