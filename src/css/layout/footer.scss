@@ -40,28 +40,84 @@
       }
     }
 
-    &__pictures {
-      width: 320px;
-      height: 85px;
-      border: 1px solid #BDBDBD;
-      position: relative;
-      background-color: #ffffff;
-      margin-top: 15px;
+    &__pic-wrapper {
+      margin-top: 55px;
 
-      &:first-child {
-        margin-top: 55px;
+      &__pictures {
+        width: 320px;
+        height: 85px;
+        border: 1px solid #BDBDBD;
+        position: relative;
+        background-color: #ffffff;
+        margin-top: 15px;
+
+        &:first-child {
+          margin-top: 0px;
+        }
+        
+        &__img {
+          height: 100%;
+          position: absolute;
+          right: 0;
+        }
+        &__gradation {
+          position: absolute;
+          width: 230px;
+          height: 100%;
+          background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 50%, rgba(255, 255, 255, 0.992) 68%, rgba(255, 255, 255, 0.965) 74.7%, rgba(255, 255, 255, 0.918) 79.6%, rgba(255, 255, 255, 0.851) 83.6%, rgba(255, 255, 255, 0.765) 87%, rgba(255, 255, 255, 0.655) 90%, rgba(255, 255, 255, 0.525) 92.7%, rgba(255, 255, 255, 0.376) 95.3%, rgba(255, 255, 255, 0.208) 97.6%, rgba(255, 255, 255, 0.024) 99.7%, rgba(255, 255, 255, 0) 100%);
+        }
       }
-      
-      &__img {
-        height: 100%;
-        position: absolute;
-        right: 0;
+
+    }
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  .l-footer {
+    margin-top: 100px;
+    
+    &__wrapper {
+      width: 320px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__links {
+        margin-top: 38px;
+
+        &__top {
+
+        }
+
+        &__link {
+
+          &__contents {
+
+            &:first-child {
+
+            }
+          }
+        }
       }
-      &__gradation {
-        position: absolute;
-        width: 230px;
-        height: 100%;
-        background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 50%, rgba(255, 255, 255, 0.992) 68%, rgba(255, 255, 255, 0.965) 74.7%, rgba(255, 255, 255, 0.918) 79.6%, rgba(255, 255, 255, 0.851) 83.6%, rgba(255, 255, 255, 0.765) 87%, rgba(255, 255, 255, 0.655) 90%, rgba(255, 255, 255, 0.525) 92.7%, rgba(255, 255, 255, 0.376) 95.3%, rgba(255, 255, 255, 0.208) 97.6%, rgba(255, 255, 255, 0.024) 99.7%, rgba(255, 255, 255, 0) 100%);
+
+      &__pic-wrapper {
+        margin-top: 22px;
+
+        &__pictures {
+  
+          &:first-child {
+
+          }
+          
+          &__img {
+
+          }
+          &__gradation {
+            
+          }
+        }
+
       }
     }
   }
