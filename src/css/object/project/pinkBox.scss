@@ -29,3 +29,29 @@
     max-width: 475px;
   }
 }
+
+
+@media screen and (max-width:767px) {
+  .p-pink-box {
+    width: 370px;
+    height: inherit;
+    padding-bottom: 30px;
+    
+    &:first-child {
+      
+    }
+  
+    &__title {
+      padding-top: 30px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  
+    &__detail {
+      margin: 30px auto 0;
+      font-size: 12px;
+      line-height: 17px;
+      max-width: 350px;
+    }
+  }
+}

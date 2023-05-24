@@ -29,3 +29,33 @@
     }
   }
 }
+
+
+@media screen and (max-width:767px) {
+  .p-feature {
+  margin-top: 55px;
+
+    &__title {
+
+    }
+
+    &__contents{
+      max-width: 370px;
+      margin: 38px auto 0;
+    }
+
+    &__cont-wrapper {
+      margin-top: 40px;
+      margin-left: 0;
+      display: inline-flex;
+
+      &:nth-child(-n+2) {
+        margin-top: 40px;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
