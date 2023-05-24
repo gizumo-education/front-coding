@@ -8,9 +8,17 @@
   display: flex;
   justify-content: center;
 
+  &__large-img {
+    display: block;
+  }
+
+  &__small-img {
+    display: none;
+  }
+
   &__background {
     width: 100%;
-    height: 240px;
+    height: 100%;
     border-radius: 10px;
     position: absolute;
     background: #000000;
@@ -43,5 +51,44 @@
     height: 100%;
     position: absolute;
     top: 0;
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  .p-useful-contents {
+    max-width: 370px;
+    height: 235px;
+  
+    &__large-img {
+      display: none;
+    }
+  
+    &__small-img {
+      display: block;
+    }
+  
+    &__background {
+
+    }
+  
+    &__msg-wrapper {
+  
+      &__title {
+        margin-top: 60.45px;
+        font-size: 21px;
+        line-height: 21px;
+      }
+  
+      &__detail {
+        margin-top: 53px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    
+    &__btn {
+      
+    }
   }
 }

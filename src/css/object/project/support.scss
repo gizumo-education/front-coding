@@ -38,3 +38,38 @@
     }
   }
 }
+
+
+@media screen and (max-width:767px) {
+  .p-support {
+    margin-top: 60px;
+  
+    &__title {
+
+    }
+  
+    &__cont-wrapper {
+      margin: 30.55px auto 0;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 370px;
+  
+      &__contents {
+        margin-left: 0;
+        margin-top: 17.55px;
+  
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  
+    &__button-wrapper {
+      margin-top: 34.86px;
+  
+      &__button {
+        width: 370px !important;
+      }
+    }
+  }
+}
