@@ -5,6 +5,14 @@
   position: relative;
   display: flex;
   justify-content: center;
+
+  &__large-img{
+    display: block;
+  }
+
+  &__small-img{
+    display: none;
+  }
   
   &__background {
     width: 100%;
@@ -29,6 +37,40 @@
 
       &:first-child {
         margin-top: 0;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  .p-service {
+  
+    &__large-img{
+      display: none;
+    }
+  
+    &__small-img{
+      display: block;
+    }
+    
+    &__background {
+      
+    }
+  
+    &__msg-wrapper {
+      position: absolute;
+      top: 0;
+  
+      &__message {
+        margin-top: 2.36px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+  
+        &:first-child {
+          margin-top: 16.18px;
+        }
       }
     }
   }
