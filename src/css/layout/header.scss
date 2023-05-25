@@ -2,28 +2,28 @@
 // headerのスタイルを記述するファイル
 
 .l-header {
-  padding: 25px 100px;
+  padding: 25px 100px 25px 0px;
   width: 100%;
   position: fixed;
   height: 100px;
   z-index: 999;
   background-color: utility.$white;
+  display: flex;
+  justify-content: flex-end;
   &__container {
+    width: 1103px;
+    height: 50px;
     display: flex;
     justify-content: flex-end;
     &__links {
+      font-size: 16px;
+      width: 608px;
       display: flex;
       align-items: center;
-       img {
+      justify-content: space-between;
+      img {
         width: 18px;
-       }
-       li {
-        padding: 0px 20px;
-        border-left: solid 1px utility.$black;
-        &:first-child {
-          border-left: 0px;
-        }
-       }
+      }
     }
     &__link {
       color: utility.$black;
@@ -32,6 +32,7 @@
     &__buttons {
       display: flex;
       align-items: center;
+      margin-left: 25px;
       li {
         display: flex;
         margin-left: 15px;
@@ -43,9 +44,6 @@
         width: 18px;
         display: inline-block;
         margin-right: 10px;
-      }
-      span {
-        width: 10px;
       }
       a {
         color: utility.$white;
