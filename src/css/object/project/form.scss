@@ -1,0 +1,74 @@
+@use '../../object/utility/utility.scss';
+
+.p-form {
+  margin-top: 60px;
+  &__inner {
+    background-color: utility.$lightBlue;
+    height: 240px;
+    text-align: center;
+    padding: 40px 0px;
+    &__title {
+      font-size: 25px;
+      font-weight: utility.$bold;
+    }
+    &__text {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    &__lists {
+      margin-top: 27px;
+      display: flex;
+      justify-content: center;
+      li {
+        margin-left: 15px;
+        &:first-child {
+          margin-left: 0px;
+        }
+      }
+      &__list {
+        position: relative;
+        &::after {
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid utility.$magenta;
+          content: "";
+          position: absolute;
+          width: 0;
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+          pointer-events: none;
+        }
+        &__select {
+          height: 60px;
+          width: 200px;
+          border: 1px solid utility.$magenta;
+          border-radius: 10px;
+          appearance: none;
+          font-size: 18px;
+          padding: 0px 15px;
+          &:first-child {
+            margin-left: 0px;
+          }
+        }
+        &__input {
+          height: 60px;
+          width: 300px;
+          font-size: 18px;
+          border: 1px solid utility.$magenta;
+          border-radius: 10px;
+          padding-left: 10px;
+        }
+        &__button {
+          width: 140px;
+          &__image {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  
+  
+}
