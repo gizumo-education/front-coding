@@ -4,118 +4,104 @@
 .l-main {
   margin-top: 100px;
   background-color: #98B1BE;
-  &__no1 {
-    position: absolute;
-    top: 56.49px;
-    left: 655px;
 
-    &__large-img {
-      display: block;
-    }
-    &__small-img {
-      display: none;
-    }
-  }
-  
   &__wrapper {
-    position: relative;
-    width: 1262px;
+    background-image: url(/img/picture/mainPicture/main_woman.jpg);
+    max-width: 1262px;
+    width: 100%;
+    height: 500px;
     margin: auto;
-    
-    &__large-img {
-      display: block;
-    }
-    &__small-img {
-      display: none;
-    }
-  }
+    position: relative;
 
-  &__contents {
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 432px;
+    &__contents {
+      position: absolute;
+      right: 30px;
 
+      &__large-no1 {
+        display: block;
+        margin: auto;
+        padding-top: 56.49px;
+      }
 
-    &__title {
-      font-size: 50px;
-      line-height: 65px;
-      color: #FFFFFF;
-      margin-top: 265px;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    };
-    
-    &__button {
-      width: 391px;
-      height: 69px;
-      margin-top: 54px;
-      font-size: 20px;
-      line-height: 29px;
-      color: #2EB6AA;
-      background-color: #FFFFFF;
-      border: 2.3px solid #2EB6AA;
-      border-radius: 10px;
-      padding: 0;
-      cursor: pointer;
-      span {
-        font-weight: bold;
-        font-size: 40px;
+      &__small-no1 {
+        display: none;
+      }
+
+      &__title {
+        font-size: 50px;
+        line-height: 65px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 40px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+
+      &__button {
+        width: 391px;
+        height: 69px;
+        font-size: 20px;
+        line-height: 29px;
+        color: #2EB6AA;
+        background-color: #FFFFFF;
+        border: 2.3px solid #2EB6AA;
+        border-radius: 10px;
+        padding: 0;
+        cursor: pointer;
+        display: block;
+        margin: 54px auto 0;
+        span {
+          font-weight: bold;
+          font-size: 40px;
+        }
       }
     }
   }
 }
 
-
 @media screen and (max-width:767px) {
-
   .l-main {
     margin-top: 70px;
-    
-    &__no1 {
-      top: 61.64px;
-      left: 196px;
-
-      &__large-img {
-        display: none;
-      }
-      &__small-img {
-        display: block;
-      }
-    }
-    
+  
     &__wrapper {
-      width: 400px;
-      
-      &__large-img {
-        display: none;
-      }
-      &__small-img {
-        display: block;
-      }
-    }
+      background-image: url(/img/picture/mainPicture/sp-main_woman.jpg);
+      max-width: 400px;
+      height: 270px;
   
-    &__contents {
-      left: 124.68px;
+      &__contents {
+        position: absolute;
+        right: 4px;
   
+        &__large-no1 {
+          display: none;
+        }
   
-      &__title {
-        font-size: 17px;
-        line-height: 22px;
-        margin-top: 147.65px;
-      }
-      
-      &__button {
-        width: 170px;
-        height: 30px;
-        margin-top: 22.35px;
-        margin-left: 30px;
-        font-size: 8px;
-        line-height: 12px;
-        span {
-          font-size: 16px;
+        &__small-no1 {
+          display: block;
+          margin: auto;
+          margin-left: 72px;
+          padding-top: 61.64px;
+        }
+
+        &__title {
+          font-weight: 700;
+          font-size: 17px;
+          line-height: 22px;
+          margin-top: 12.65px;
+        }
+  
+        &__button {
+          width: 170px;
+          height: 30px;
+          margin-top: 22.35px;
+          margin-left: 70px;
+          font-size: 8px;
+          line-height: 12px;
+          
+          span {
+            font-size: 16px;
+          }
         }
       }
     }
-  }
-
+  }  
 }
