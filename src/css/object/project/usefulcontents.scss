@@ -1,0 +1,56 @@
+@use '../../object/utility/utility.scss';
+
+.p-usefulcontents {
+  padding-top: 106px;
+  &__inner {
+    text-align: center;
+    &__title {
+      font-size: 25px;
+      font-weight: utility.$bold;
+    }
+    &__lists {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      li {
+        margin-left: 20px;
+      }
+      a {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/picture/usefulcontents1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 380px;
+        padding: 71px 0px 55px;
+        border-radius: 10px;
+        color: utility.$white;
+        &:first-child {
+          margin-left: 0px;
+        }
+        &:nth-child(2) {
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/picture/usefulcontents2.jpg);
+          background-size: contain;
+        }
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: utility.$bold;
+      }
+      p {
+        margin-top: 44px;
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+    &__button {
+      margin: 80px auto 0px;
+      line-height: 60px;
+      &__link {
+        width: 420px;
+        color: utility.$white;
+        font-size: 18px;
+        font-weight: utility.$bold;
+      }
+    }
+  }
+}

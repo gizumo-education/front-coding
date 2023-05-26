@@ -1,2 +1,70 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
+.l-footer {
+  margin-top: 200px;
+  width: 100%;
+  &__main {
+    height: 265px;
+    background-color: utility.$lightGray;
+    &__inner {
+      width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      &__links {
+        margin-top: 79px;
+        font-size: 16px;
+        &__top {
+          color: utility.$black;
+        }
+        &__info {
+          display: flex;
+          margin-top: 27px;
+          &__lists {
+            line-height: 36px;
+            height: 108px;
+            margin-left: 39px;
+            a {
+              color: utility.$black;
+            }
+            &:first-child {
+              margin-left: 0px;
+            }
+          }
+        }
+      }
+      &__images {
+        margin-top: 55px;
+        &__baby {
+          width: 320px;
+          height: 85px;
+          background: url(../img/picture/footer1.jpg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: right;
+          background-color: white;
+          border: 1px solid utility.$charcoal;
+        }
+        &__lady {
+          width: 320px;
+          height: 85px;
+          background: url(../img/picture/footer2.jpg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: right;
+          background-color: white;
+          margin-top: 15px;
+          border: 1px solid utility.$charcoal;
+        }
+      }
+    }
+  }
+  &__banner {
+    height: 35px;
+    width: 100%;
+    background-color: utility.$ash;
+    text-align: center;
+    font-size: 14px;
+    line-height: 35px;
+  }
+}
