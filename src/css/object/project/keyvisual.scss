@@ -1,7 +1,6 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual {
-  padding-top: 100px;
   background-color: utility.$gray;
   width: 100%;
   &__image {

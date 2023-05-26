@@ -59,13 +59,13 @@
         <div class="p-keyvisual__image__label">現在の求人掲載数：<span class="p-keyvisual__image__label__font">2,320</span>件</div>
       </div>
     </div>
-    <form class="p-form">
+    <div class="p-form">
       <div class="l-inner p-form__inner">
         <h2 class="p-form__inner__title">お仕事検索</h2>
         <p class="p-form__inner__text">働きたい職種・地域・希望給与を入れて検索！</p>
-        <ul class="p-form__inner__lists">
-          <li class="p-form__inner__lists__list">
-            <select class="p-form__inner__lists__list__select" name="profession" id="">
+        <form class="p-form__inner__lists">
+          <div class="p-form__inner__lists__list p-form__inputs">
+            <select class="p-form__inner__lists__list__select" name="profession" id="profession">
               <option value="医療事務" selected>医療事務</option>
               <option value="調剤事務">調剤事務</option>
               <option value="診療情報管理士">診療情報管理士</option>
@@ -74,9 +74,9 @@
               <option value="看護補助・看護助手">看護補助・看護助手</option>
               <option value="病院内SE">病院内SE</option>
             </select>
-          </li>
-          <li class="p-form__inner__lists__list">
-            <select class="p-form__inner__lists__list__select" name="area" id="">
+          </div>
+          <div class="p-form__inner__lists__list p-form__inputs">
+            <select class="p-form__inner__lists__list__select" name="area" id="area">
               <option value="茨城県">茨城県</option>
               <option value="神奈川県">神奈川県</option>
               <option value="群馬県">群馬県</option>
@@ -85,9 +85,9 @@
               <option value="東京都" selected>東京都</option>
               <option value="栃木県">栃木県</option>
             </select>
-          </li>
-          <li class="p-form__inner__lists__list">
-            <select class="p-form__inner__lists__list__select" name="salary" id="">
+          </div>
+          <div class="p-form__inner__lists__list p-form__inputs">
+            <select class="p-form__inner__lists__list__select" name="salary" id="salary">
               <option value="月給17万〜">月給17万〜</option>
               <option value="月給18万〜">月給18万〜</option>
               <option value="月給19万〜">月給19万〜</option>
@@ -96,19 +96,19 @@
               <option value="月給22万〜">月給22万〜</option>
               <option value="月給23万〜">月給23万〜</option>
             </select>
-          </li>
-          <li>
+          </div>
+          <div class=" p-form__inputs">
             <input class="p-form__inner__lists__list__input" type="text" placeholder="キーワード・企業名・スキルなど">
-          </li>
-          <li>
+          </div>
+          <div class=" p-form__inputs">
             <button class="p-form__inner__lists__list__button c-btn" type="submit">
               <img class="p-form__inner__lists__list__button__img" src="img/icon/sarch-white.png" alt="">
               検索する
             </button>
-          </li>
-        </ul>
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
     <section class="p-recruit">
       <div class="l-inner p-recruit__inner">
         <h2 class="p-recruit__inner__title">新着求人</h2>
@@ -261,7 +261,7 @@
     </section>
     <section class="p-flow">
       <div class="l-inner p-flow__inner">
-        <h1 class="p-flow__inner__title">転職までの流れ</h1>
+        <h2 class="p-flow__inner__title">転職までの流れ</h2>
         <ul class="p-flow__inner__lists">
           <li>
             <div class="p-flow__inner__lists__step">STEP<br>1</div>
@@ -330,13 +330,13 @@
         </div>
       </div>
     </section>
-    <form class="p-form u-margin__150">
+    <div class="p-form u-margin__150">
       <div class="l-inner p-form__inner">
         <h2 class="p-form__inner__title">お仕事検索</h2>
         <p class="p-form__inner__text">働きたい職種・地域・希望給与を入れて検索！</p>
-        <ul class="p-form__inner__lists">
-          <li class="p-form__inner__lists__list">
-            <select class="p-form__inner__lists__list__select" name="profession" id="">
+        <form class="p-form__inner__lists">
+          <div class="p-form__inner__lists__list p-form__inputs">
+            <select class="p-form__inner__lists__list__select" name="profession" id="profession-sub">
               <option value="医療事務" selected>医療事務</option>
               <option value="調剤事務">調剤事務</option>
               <option value="診療情報管理士">診療情報管理士</option>
@@ -345,9 +345,9 @@
               <option value="看護補助・看護助手">看護補助・看護助手</option>
               <option value="病院内SE">病院内SE</option>
             </select>
-          </li>
-          <li class="p-form__inner__lists__list">
-            <select class="p-form__inner__lists__list__select" name="area" id="">
+          </div>
+          <div class="p-form__inner__lists__list p-form__inputs">
+            <select class="p-form__inner__lists__list__select" name="area" id="area-sub">
               <option value="茨城県">茨城県</option>
               <option value="神奈川県">神奈川県</option>
               <option value="群馬県">群馬県</option>
@@ -356,9 +356,9 @@
               <option value="東京都" selected>東京都</option>
               <option value="栃木県">栃木県</option>
             </select>
-          </li>
-          <li class="p-form__inner__lists__list">
-            <select class="p-form__inner__lists__list__select" name="salary" id="">
+          </div>
+          <div class="p-form__inner__lists__list p-form__inputs">
+            <select class="p-form__inner__lists__list__select" name="salary" id="salary-sub">
               <option value="月給17万〜">月給17万〜</option>
               <option value="月給18万〜">月給18万〜</option>
               <option value="月給19万〜">月給19万〜</option>
@@ -367,19 +367,19 @@
               <option value="月給22万〜">月給22万〜</option>
               <option value="月給23万〜">月給23万〜</option>
             </select>
-          </li>
-          <li>
+          </div>
+          <div class=" p-form__inputs">
             <input class="p-form__inner__lists__list__input" type="text" placeholder="キーワード・企業名・スキルなど">
-          </li>
-          <li>
+          </div>
+          <div class=" p-form__inputs">
             <button class="p-form__inner__lists__list__button c-btn" type="submit">
               <img class="p-form__inner__lists__list__button__img" src="img/icon/sarch-white.png" alt="">
               検索する
             </button>
-          </li>
-        </ul>
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
   </main>
   <footer class="l-footer">
     <div class="l-footer__main">

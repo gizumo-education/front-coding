@@ -14,8 +14,7 @@
       flex-wrap: wrap;
       li {
         width: 570px;
-        height: 180px;
-        padding-top: 40px;
+        padding: 40px 0px;
         background-color: utility.$pink;
         border-radius: 10px;
         margin: 40px 0px 0px 40px;
@@ -37,7 +36,6 @@
       p {
         margin-top: 36px;
         font-size: 14px;
-        height: 40px;
         line-height: 20px;
       }
     }
