@@ -68,7 +68,8 @@
       margin-top: 34.86px;
   
       &__button {
-        width: 370px !important;
+        max-width: 370px;
+        width: 100% !important;
       }
     }
   }

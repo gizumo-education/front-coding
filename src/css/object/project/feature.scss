@@ -48,6 +48,8 @@
       margin-top: 21px;
       margin-left: 0;
       display: inline-flex;
+      width: 100%;
+      max-width: 370px;
 
       &:nth-child(-n+2) {
         margin-top: 21px;
