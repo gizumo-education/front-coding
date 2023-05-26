@@ -49,6 +49,20 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  transition: .3s
+}
+
+a:hover {
+  opacity: .8;
+}
+
+button {
+  transition: .3s
+}
+
+button:hover {
+  opacity: .8;
+  cursor: pointer;
 }
 
 .is-pc {

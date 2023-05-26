@@ -1,0 +1,60 @@
+@use '../../object/utility/utility.scss';
+
+.p-recruit {
+  margin-top: 60px;
+  background-color: utility.$lightGray;
+  padding: 64px 0 67px;
+  &__inner {
+    &__title {
+      font-size: 25px;
+    }
+    &__lists {
+      margin-top: 25px;
+      display: flex;
+      li {
+        margin-left: 20px;
+        &:first-child {
+          margin-left: 0px;
+        }
+        img {
+          border-radius: 10px;
+        }
+      }
+      &__link {
+        color: utility.$black;
+      }
+      &__text {
+        font-size: 16px;
+        margin-top: 8px;
+        line-height: 22px;
+      }
+      &__conditions {
+        display: flex;
+        font-size: 14px;
+        margin-top: 5px;
+        align-items: center;
+        &:first-child {
+          margin-top: 7px;
+        }
+        &__condition {
+          background-color: utility.$babyPink;
+          width: 60px;
+          text-align: center;
+          line-height: 20px;
+        }
+        &__detail {
+          margin-left: 10px;
+        }
+      }
+    }
+    &__button {
+      margin: 77px auto 0px;
+      text-align: center;
+      line-height: 60px;
+      &__link {
+        color: utility.$white;
+        width: 360px;
+      }
+    }
+  }
+}
