@@ -20,9 +20,13 @@
           border-radius: 10px;
         }
       }
+      &__link {
+        color: utility.$black;
+      }
       &__text {
         font-size: 16px;
         margin-top: 8px;
+        line-height: 22px;
       }
       &__conditions {
         display: flex;
