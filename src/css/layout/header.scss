@@ -36,9 +36,21 @@
           border-radius: 30px;
           margin-top: .1rem;
           width: .5rem;
+          position: relative;
     
           &:first-child {
             margin-top: 0;
+          }
+          &.active:nth-child(1) {
+            top: .14rem;
+            transform: rotate(-45deg);
+          }
+          &.active:nth-child(2) {
+            display: none;
+          }
+          &.active:nth-child(3) {
+            top: -.01rem;
+            transform: rotate(45deg);
           }
         }
       }
@@ -95,6 +107,40 @@
           @include uty.historyGuide();
           @include uty.headerFont();
           width: 140px;
+        }
+      }
+    }
+  }
+  @include uty.sp {
+    
+  }
+  &__dropdown {
+    display: none;
+    position: absolute;
+    left: 4rem;
+    top: .7rem;
+    width: 4rem;
+    height: 5.54rem;
+    background-color: uty.$shadowHeader;
+    font-size: .22rem;
+    line-height: .22rem;
+    font-weight: uty.$bold;
+
+    @include uty.sp {
+      display: block;
+    }
+    &__list {
+      padding: .57rem 0 0 .6025rem;
+
+      &__nav {
+        margin-top: .38rem;
+
+        & > a {
+          cursor: pointer;
+          color: uty.$white;
+        }
+        &:first-child {
+          margin-top: 0;
         }
       }
     }

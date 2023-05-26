@@ -15,59 +15,60 @@
   &__news {
     padding: 119px 0 67px 0;
     width: 100%;
+    position: relative;
 
     @include uty.sp {
       padding: .3rem 0 .6rem 0;
     }
-    &__contents {
-      display: flex;
-      justify-content: center;
+    &__title {
+      position: absolute;
+      top: 64px;
+      left: 210px;
+      font-size: 25px;
+      font-family: uty.$inter;
+      font-weight: uty.$regular;
+      line-height: 30px;
 
       @include uty.sp {
-        display: block;
+        font-weight: uty.$bold;
+        font-size: .25rem;
+        line-height: .3rem;
+        top: .3rem;
+        left: 1.5rem;
+      }
+    }
+    &__contents {
+      @include uty.sp {
+        margin-top: .55rem;
         text-align: center;
       }
       &__content {
-        margin-left: 20px;
         position: relative;
 
         &:first-child {
-          position: relative;
           bottom: 55px;
-          margin-left: 0;
+          margin: 50px 0 0 0;
 
           @include uty.sp {
             bottom: 0;
-          }
-        }
-        &__title {
-          font-size: 25px;
-          font-family: uty.$inter;
-          font-weight: uty.$regular;
-          line-height: 30px;
-          margin-bottom: 25px;
-
-          @include uty.sp {
-            font-weight: uty.$bold;
-            font-size: .25rem;
-            line-height: .3rem;
-            margin-bottom: .25rem;
+            margin: 0;
           }
         }
         &__img {
-          height: 200px;
           width: 280px;
+          height: 200px;
           border-radius: 10px;
 
           @include uty.sp {
-            display: none;
+            width: 0;
+            height: 0;
+            border-radius: 10px;
           }
         }
         &__sp-img {
-          display: none;
+          width: 0;
 
           @include uty.sp {
-            display: block;
             width: 3.7rem;
             height: 2.08rem;
             border-radius: 10px;
@@ -82,14 +83,10 @@
           color: uty.$black;
 
           @include uty.sp {
-            display: none;
             text-align: left;
             font-size: .14rem;
             line-height: .1694rem;
             width: 3.7rem;
-          }
-          &__sp {
-            display: block;
           }
           &__comment {
             font-weight: uty.$regular;
@@ -130,7 +127,79 @@
         width: 3.7rem;
         height: .6rem;
         padding: .21rem .72rem;
+        margin: .4484rem auto 0 auto;
       }
     }
   }
+}
+
+.slick-prev {
+  @include uty.slideButton();
+  width: 60px;
+  height: 60px;
+  left: 210px;
+  top: 189px;
+
+  &::before {
+    @include uty.slideArrowPrev();
+    border-top: 1px solid uty.$black;
+    border-left: 1px solid uty.$black;
+    width: 20px;
+    height: 20px;
+    right: 15px;
+    top: 20px;
+  }
+  @include uty.sp {
+    @include uty.slideButton();
+    height: .42rem;
+    width: .42rem;
+    left: .15rem;
+    top: 1.57rem;
+
+    &::before {
+      @include uty.slideArrowPrev();
+      border-top: .01rem solid uty.$black;
+      border-left: .01rem solid uty.$black;
+      width: .1rem;
+      height: .1rem;
+      left: .19rem;
+      top: .16rem;
+    }
+  }
+}
+
+.slick-next {
+  @include uty.slideButton();
+  width: 60px;
+  height: 60px;
+  right: 210px;
+  top: 189px;
+
+  &::before {
+    @include uty.slideArrowNext();
+    border-top: 1px solid uty.$black;
+    border-right: 1px solid uty.$black;
+    width: 20px;
+    height: 20px;
+    left: 15px;
+    top: 20px;
+  }
+  @include uty.sp {
+    @include uty.slideButton();
+    height: .42rem;
+    width: .42rem;
+    left: 3.43rem;
+    top: 1.57rem;
+
+    &::before {
+      @include uty.slideArrowNext();
+      border-top: .01rem solid uty.$black;
+      border-right: .01rem solid uty.$black;
+      width: .1rem;
+      height: .1rem;
+      left: .14rem;
+      top: .16rem;
+    }
+  }
+  
 }

@@ -51,22 +51,3 @@
     line-height: .2027rem;
   }
 }
-
-.c-slide {
-  background-color: uty.$white;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  opacity: 0.7;
-
-  &__left {
-    @include uty.slideButton();
-    left: 25px;
-    border-color:  transparent transparent uty.$black uty.$black;
-  }
-  &__right {
-    @include uty.slideButton();
-    left: 15px;
-    border-color:  uty.$black uty.$black transparent transparent;
-  }
-}
