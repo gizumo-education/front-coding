@@ -1,10 +1,19 @@
 @use '../../object/utility/utility.scss';
 // articleのスタイルを記述するファイル
 
+@use '../../foundation/_mixins.scss';
+
 .p-article {
   width: 100%;
   margin-top: 59px;
   background: #EFF6FC;
+  @include mixins.tab {
+    margin-top: 0.59rem;
+  }
+  @include mixins.sp {
+    margin-top: 0.25rem;
+    padding: 0 0.15rem;
+  }
   
   &__wrapper {
     max-width: 1180px;
@@ -12,15 +21,42 @@
     padding-bottom: 67px;
     position: relative;
     margin: auto;
+    @include mixins.tab {
+      max-width: 11.80rem;
+      padding-top: 0.64rem;
+      padding-bottom: 0.67rem;
+    }
+    @include mixins.sp {
+      max-width: 3.70rem;
+      padding-top: 0.30rem;
+      padding-bottom: 0.60rem;
+      text-align: center;
+    }
 
     &__title {
       font-size: 25px;
       line-height: 30px;
+      @include mixins.tab {
+        font-size: 0.25rem;
+        line-height: 0.30rem;
+      }
+      @include mixins.sp {
+        font-family: 'Noto Sans JP';
+        font-weight: 700;
+        line-height: 0.25rem;
+        font-size: 0.25rem;
+      }
     }
 
     &__button-box {
       margin-top: 59px;
       text-align: center;
+      @include mixins.tab {
+        margin-top: 0.59rem;
+      }
+      @include mixins.sp {
+        margin-top: 0.44rem;
+      }
 
       &__button {
         max-width: 360px;
@@ -29,36 +65,15 @@
         font-size: 18px;
         line-height: 26px;
         color: #FFFFFF;
-      }
-    }
-  }
-}
-
-
-@media screen and (max-width:767px) {
-  .p-article {
-    margin-top: 25px;
-    padding: 0 15px;
-    
-    &__wrapper {
-      max-width: 370px;
-      padding-top: 30px;
-      padding-bottom: 60px;
-      text-align: center;
-  
-      &__title {
-        font-family: 'Noto Sans JP';
-        font-weight: 700;
-        line-height: 25px;
-        font-size: 0.25rem;
-      }
-  
-      &__button-box {
-        margin-top: 44px;
-  
-        &__button {
-          line-height: 18px;
-          max-width: 370px;
+        @include mixins.tab {
+          max-width: 3.60rem;
+          font-size: 0.18rem;
+          line-height: 0.26rem;
+        }
+        @include mixins.sp {
+          font-size: 0.18rem;
+          line-height: 0.18rem;
+          max-width: 3.70rem;
         }
       }
     }

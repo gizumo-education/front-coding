@@ -26,6 +26,8 @@
     height: 0.60rem;
   }
   @include mixins.sp {
+    height: 0.60rem;
+    border-radius: 0.30rem;
     &__img {
       width: 0.18rem;
       margin-left: 0.13rem;
@@ -44,7 +46,26 @@
   border: none;
   opacity: 0.7;
   cursor: pointer;
-  
+  @include mixins.tab {
+    width: 0.60rem;
+    height: 0.60rem;
+  }
+  @include mixins.sp {
+    width: 0.42rem;
+    height: 0.42rem;
+  }
+
+  &__img {
+    @include mixins.tab {
+      width: 0.3rem;
+      height: 0.3rem;
+    }
+    @include mixins.sp {
+      width: 0.18rem;
+      margin-left: 0.13rem;
+      margin-right: 0.14rem;
+    }
+  }
 }
 
 // 左
@@ -57,6 +78,14 @@
   height: 15px;
   border-top: 0.707px solid #000000;
   border-right: 0.707px solid #000000;
+  @include mixins.tab {
+    width: 0.15rem;
+    height: 0.15rem;
+  }
+  @include mixins.sp {
+    width: 0.1rem;
+    height: 0.1rem;
+  }
 }
 
 // 右
@@ -69,10 +98,17 @@
   height: 15px;
   border-top: 0.707px solid #000000;
   border-right: 0.707px solid #000000;
+  @include mixins.tab {
+    width: 0.15rem;
+    height: 0.15rem;
+  }
+  @include mixins.sp {
+    width: 0.1rem;
+    height: 0.1rem;
+  }
 }
 
 // hoverのスタイル
-
 button{
   transition: .3s;
   &:hover{
@@ -81,34 +117,3 @@ button{
   }
 }
 
-
-@media screen and (max-width:767px) {
-  // 検索ボタン
-  .c-search-button {
-    &__img {
-      // width: 18px;
-      // margin-left: 13px;
-      // margin-right: 14px;
-    }
-  }
-
-  // くの字ボタン
-  .c-circle-button {
-    position: relative;
-    width: 42px;
-    height: 42px;
-    
-  }
-
-  // 左
-  .c-left-arrow {
-    width: 10px;
-    height: 10px;
-  }
-
-  // 右
-  .c-right-arrow {
-    width: 10px;
-    height: 10px;
-  }
-}
