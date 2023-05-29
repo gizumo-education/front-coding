@@ -1,6 +1,8 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
 
+@use '../../foundation/_mixins.scss';
+
 .c-button {
   width: 140px;
   height: 50px;
@@ -19,6 +21,17 @@
   border-radius: 30px;
   background-color: #DE5579;
   cursor: pointer;
+  @include mixins.tab {
+    width: 1.40rem;
+    height: 0.60rem;
+  }
+  @include mixins.sp {
+    &__img {
+      width: 0.18rem;
+      margin-left: 0.13rem;
+      margin-right: 0.14rem;
+    }
+  }
 }
 
 // くの字ボタン
@@ -73,9 +86,9 @@ button{
   // 検索ボタン
   .c-search-button {
     &__img {
-      width: 18px;
-      margin-left: 13px;
-      margin-right: 14px;
+      // width: 18px;
+      // margin-left: 13px;
+      // margin-right: 14px;
     }
   }
 
