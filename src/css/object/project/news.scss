@@ -13,7 +13,7 @@
     margin-top: .25rem;
   }
   &__news {
-    padding: 119px 0 67px 0;
+    padding: 64px 0 67px 0;
     width: 100%;
     position: relative;
 
@@ -21,15 +21,15 @@
       padding: .3rem 0 .6rem 0;
     }
     &__title {
-      position: absolute;
-      top: 64px;
-      left: 210px;
+      text-align: center;
+      padding: 0 1075px 25px 0;
       font-size: 25px;
       font-family: uty.$inter;
       font-weight: uty.$regular;
       line-height: 30px;
 
       @include uty.sp {
+        padding: 0 0 .3rem 0;
         font-weight: uty.$bold;
         font-size: .25rem;
         line-height: .3rem;
@@ -39,7 +39,6 @@
     }
     &__contents {
       @include uty.sp {
-        margin-top: .55rem;
         text-align: center;
       }
       &__content {
@@ -47,7 +46,7 @@
 
         &:first-child {
           bottom: 55px;
-          margin: 50px 0 0 0;
+          margin-top: 50px;
 
           @include uty.sp {
             bottom: 0;
@@ -132,13 +131,20 @@
     }
   }
 }
+.slick-slider {
+  width: 1180px;
+  margin: 0 auto;
 
+  @include uty.sp {
+    width: auto;
+  }
+}
 .slick-prev {
   @include uty.slideButton();
   width: 60px;
   height: 60px;
-  left: 210px;
-  top: 189px;
+  left: 0;
+  top: 70px;
 
   &::before {
     @include uty.slideArrowPrev();
@@ -172,8 +178,8 @@
   @include uty.slideButton();
   width: 60px;
   height: 60px;
-  right: 210px;
-  top: 189px;
+  right: 15px;
+  top: 70px;
 
   &::before {
     @include uty.slideArrowNext();
