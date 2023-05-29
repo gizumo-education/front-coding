@@ -79,12 +79,12 @@
           display: block;
           margin: auto;
           margin-left: 72px;
-          padding-top: 61.64px;
+          padding-top: 0.6164rem;
         }
 
         &__title {
           font-weight: 700;
-          font-size: 17px;
+          font-size: 0.17rem;
           line-height: 22px;
           margin-top: 12.65px;
         }
@@ -94,11 +94,11 @@
           height: 30px;
           margin-top: 22.35px;
           margin-left: 70px;
-          font-size: 8px;
+          font-size: 0.08rem;
           line-height: 12px;
           
           span {
-            font-size: 16px;
+            font-size: 0.16rem;
           }
         }
       }
