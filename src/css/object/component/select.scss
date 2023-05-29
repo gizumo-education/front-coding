@@ -23,6 +23,7 @@
     @include mixins.tab {
       width: 2.00rem;
       height: 0.60rem;
+      border-radius: 0.10rem;
       padding-left: 0.15rem;
       font-size: 0.18rem;
       line-height: 0.26rem;
@@ -30,7 +31,7 @@
     @include mixins.sp {
       width: 1rem;
       height: 0.30rem;
-      border-radius: 5px;
+      border-radius: 0.05rem;
       padding-left: 0.08rem;
       font-size: 0.12rem;
       line-height: 0.17rem;

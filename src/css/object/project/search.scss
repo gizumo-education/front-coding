@@ -26,10 +26,12 @@
     @include mixins.tab {
       width: 11.80rem;
       padding-bottom: 0.405rem;
+      border-radius: 0.10rem;
     }
     @include mixins.sp {
       width: 37rem;
       padding-bottom: 0.20rem;
+      border-radius: 0.10rem;
     }
 
     &__title {
