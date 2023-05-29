@@ -36,7 +36,7 @@ $(function() {
   });
 })
 
-/* スライドショーの操作 */
+/* slick */
 $('#slideshow').slick({
   infinite: true,
   slidesToShow: 4,
@@ -49,8 +49,6 @@ $('#slideshow').slick({
     },
   ],
 });
-
-$('.slick-slide').removeAttr('style');
 
 /* カスタムメソッド */
 $.extend({
