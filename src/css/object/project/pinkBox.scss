@@ -1,6 +1,8 @@
 @use '../../object/utility/utility.scss';
 // pinkBoxの項目に関するスタイル
 
+@use '../../foundation/_mixins.scss';
+
 .p-pink-box {
   width: 570px;
   height: 180px;
@@ -8,9 +10,22 @@
   border-radius: 10px;
   text-align: center;
   margin-left: 40px;
-  
   &:first-child {
     margin-left: 0;
+  }
+  @include mixins.tab {
+    width: 5.70rem;
+    height: 1.80rem;
+    border-radius: 0.10rem;
+    margin-left: 0.40rem;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  @include mixins.sp {
+    width: 3.70rem;
+    height: inherit;
+    padding-bottom: 0.30rem;
   }
 
   &__title {
@@ -19,6 +34,16 @@
     font-size: 24px;
     line-height: 24px;
     color: #DE5579;
+    @include mixins.tab {
+      padding-top: 0.40rem;
+      font-size: 0.24rem;
+      line-height: 0.24rem;
+    }
+    @include mixins.sp {
+      padding-top: 0.30rem;
+      font-size: 0.20rem;
+      line-height: 0.20rem;
+    }
   }
 
   &__detail {
@@ -27,31 +52,17 @@
     line-height: 20px;
     text-align: center;
     max-width: 475px;
-  }
-}
-
-
-@media screen and (max-width:767px) {
-  .p-pink-box {
-    width: 370px;
-    height: inherit;
-    padding-bottom: 30px;
-    
-    &:first-child {
-      
+    @include mixins.tab {
+      margin: 0.26rem auto 0;
+      font-size: 0.14rem;
+      line-height: 0.20rem;
+      max-width: 4.75rem;
     }
-  
-    &__title {
-      padding-top: 30px;
-      font-size: 20px;
-      line-height: 20px;
-    }
-  
-    &__detail {
-      margin: 30px auto 0;
-      font-size: 12px;
-      line-height: 17px;
-      max-width: 350px;
+    @include mixins.sp {
+      margin: 0.30rem auto 0;
+      font-size: 0.12rem;
+      line-height: 0.17rem;
+      max-width: 3.50rem;
     }
   }
 }
