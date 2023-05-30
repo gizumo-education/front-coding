@@ -1,6 +1,8 @@
 @use '../../object/utility/utility.scss';
 // stepの項目に関するスタイル
 
+@use '../../foundation/_mixins.scss';
+
 .p-step {
   width: 280px;
   height: 360px;
@@ -8,11 +10,9 @@
   border-radius: 10px;
   position: relative;
   margin-left: 20px;
-
   &:first-child {
     margin-left: 0;
   }
-
   &::before {
     content: "";
     position: absolute;
@@ -22,9 +22,41 @@
     border: 20px solid transparent;
     border-left: 20px solid #DE5579;
   }
-
   &:first-child::before {
     content: none;
+  }
+  @include mixins.tab {
+    width: 2.80rem;
+    height: 3.60rem;
+    border: 0.0227rem solid #DE5579;
+    border-radius: 0.10rem;
+    margin-left: 0.20rem;
+    &::before {
+      left: -0.22rem;
+      border: 0.20rem solid transparent;
+      border-left: 0.20rem solid #DE5579;
+    }
+  }
+  @include mixins.sp {
+    width: 2.80rem;
+    height: 2.93rem;
+    margin-left: 0;
+    margin-top: 0.39rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -0.32rem;
+      left: 50%;
+      transform: translateX(-50%) rotate(90deg);
+      border: 0.20rem solid transparent;
+      border-left: 0.20rem solid #DE5579;
+    }
+    &:first-child::before {
+      content: none;
+    }
   }
 
   &__circle {
@@ -35,6 +67,16 @@
     margin-top: 10px;
     margin-left: 10px;
     text-align: center;
+    @include mixins.tab {
+      width: 0.60rem;
+      height: 0.60rem;
+      margin-top: 0.10rem;
+      margin-left: 0.10rem;
+    }
+    @include mixins.sp {
+      width: 0.45rem;
+      height: 0.45rem;
+    }
     
     &__text {
       padding-top: 11px;
@@ -42,6 +84,16 @@
       font-size: 16px;
       line-height: 19px;
       color: #ffffff;
+      @include mixins.tab {
+        padding-top: 0.11rem;
+        font-size: 0.16rem;
+        line-height: 0.19rem;
+      }
+      @include mixins.sp {
+        padding-top: 0.11rem;
+        font-size: 0.10rem;
+        line-height: 0.12rem;
+      }
     }
   }
 
@@ -56,6 +108,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include mixins.tab {
+      top: 0.54rem;
+      width: 1.09rem;
+      height: 1.11rem;
+    }
+    @include mixins.sp {
+      position: absolute;
+      top: 0.55rem;
+      width: 0.85rem;
+      height: 0.75rem;
+    }
+
+    &__large {
+      display: block;
+      @include mixins.tab {
+        display: block;
+        width: 100%;
+      }
+      @include mixins.sp {
+        display: none;
+      }
+    }
+    &__small {
+      display: none;
+      @include mixins.tab {
+        display: none;
+      }
+      @include mixins.sp {
+        display: block;
+        width: 100%;
+      }
+    }
   }
 
   &__title {
@@ -73,6 +157,20 @@
     justify-content: center;
     align-items: center;
     max-width: 216px;
+    @include mixins.tab {
+      font-size: 0.24rem;
+      line-height: 0.30rem;
+      top: 1.80rem;
+      height: 0.60rem;
+      max-width: 2.16rem;
+    }
+    @include mixins.sp {
+      font-size: 0.20rem;
+      line-height: 0.20rem;
+      top: 1.52rem;
+      height: initial;
+      max-width: 2.61rem;
+    }
   }
 
   &__detail {
@@ -85,6 +183,20 @@
     right: 0;
     left: 0;
     margin: auto;
+    @include mixins.tab {
+      height: 0.60rem;
+      max-width: 2.37rem;
+      font-size: 0.14rem;
+      line-height: 0.20rem;
+      top: 2.58rem;
+    }
+    @include mixins.sp {
+      height: 0.60rem;
+      max-width: 2.37rem;
+      font-size: 0.14rem;
+      line-height: 0.20rem;
+      position: absolute;
+      top: 1.91rem;
+    }
   }
 }
-

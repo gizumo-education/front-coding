@@ -1,6 +1,8 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるboxのスタイルを記述するファイル
 
+@use '../../foundation/_mixins.scss';
+
 // ボックス
 .c-pink-box {
   width: 60px;
@@ -9,4 +11,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include mixins.tab {
+    width: 0.60rem;
+    height: 0.21rem;
+  }
+  @include mixins.sp {
+    width: 0.60rem;
+    height: 0.21rem;
+  }
 }

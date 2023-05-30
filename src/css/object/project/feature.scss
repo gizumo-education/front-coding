@@ -1,31 +1,76 @@
 @use '../../object/utility/utility.scss';
 // featureのスタイルを記述するファイル
 
+@use '../../foundation/_mixins.scss';
+
 .p-feature {
   margin-top: 106px;
+  @include mixins.tab {
+    margin-top: 1.06rem;
+  }
+  @include mixins.sp {
+    margin-top: 0.55rem;
+    padding: 0 0.15rem;
+  }
 
   &__title {
     font-weight: 700;
     font-size: 25px;
     line-height: 25px;
     text-align: center;
+    @include mixins.tab {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
+    @include mixins.sp {
+      font-size: 0.25rem;
+    }
   }
 
   &__contents{
     text-align: center;
+    @include mixins.tab {
+
+    }
+    @include mixins.sp {
+      max-width: 3.70rem;
+      margin: 0.38rem auto 0;
+    }
   }
 
   &__cont-wrapper {
     margin-top: 40px;
     margin-left: 40px;
     display: inline-flex;
-
     &:nth-child(-n+2) {
       margin-top: 53px;
     }
-
     &:nth-child(odd){
       margin-left: 0;
+    }
+    @include mixins.tab {
+      margin-top: 0.40rem;
+      margin-left: 0.40rem;
+      display: inline-flex;
+      &:nth-child(-n+2) {
+        margin-top: 0.53rem;
+      }
+      &:nth-child(odd){
+        margin-left: 0;
+      }
+    }
+    @include mixins.sp {
+      margin-top: 0.21rem;
+      margin-left: 0;
+      display: inline-flex;
+      width: 100%;
+      max-width: 3.70rem;
+      &:nth-child(-n+2) {
+        margin-top: 0.21rem;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
     }
   }
 }

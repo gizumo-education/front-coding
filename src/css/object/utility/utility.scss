@@ -2,6 +2,8 @@
 @forward '../../foundation/_mixins.scss';
 
 
+@use '../../foundation/_mixins.scss';
+
 // フォント
 .u-Noto-text {
   font-family: 'Noto Sans JP';
@@ -38,4 +40,31 @@ a {
 
 .u-search2 {
   margin-top: 150px !important;
+  @include mixins.tab {
+    margin-top: 1.50rem !important;
+  }
+  @include mixins.sp {
+    margin-top: 0.60rem !important;
+  }
+}
+
+// 改行
+.u-pc-br {
+  display: block;
+  @include mixins.tab {
+    display: block;
+  }
+  @include mixins.sp {
+    display: none;
+  }
+}
+
+.u-sp-br {
+  display: none;
+  @include mixins.tab {
+    display: none;
+  }
+  @include mixins.sp {
+    display: block;
+  }
 }

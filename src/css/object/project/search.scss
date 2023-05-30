@@ -1,35 +1,84 @@
 @use '../../object/utility/utility.scss';
 // searchのスタイルを記述するファイル
 
+@use '../../foundation/_mixins.scss';
+
+
 .p-search {
   margin-top: 61px;
   display: flex;
   justify-content: center;
+  @include mixins.sp {
+    margin-top: 0.61rem;
+    padding: 0 0.15rem;
+  }
+  @include mixins.sp {
+    margin-top: 25px;
+    padding: 0 0.15rem;
+  }
 
   &__wrapper {
     width: 1180px;
     padding-bottom: 40.5px;
+    padding-top: 40px;
     background-color: #DEEEF9;
     border-radius: 10px;
     text-align: center;
+    @include mixins.tab {
+      width: 11.80rem;
+      padding-bottom: 0.405rem;
+      padding-top: 0.40rem;
+      border-radius: 0.10rem;
+    }
+    @include mixins.sp {
+      width: 37rem;
+      padding-bottom: 0.20rem;
+      padding-top: 0.15rem;
+      border-radius: 0.10rem;
+    }
 
     &__title {
-      padding-top: 40px;
       font-weight: 700;
       font-size: 25px;
       line-height: 25px;
+      @include mixins.tab {
+        font-size: 0.25rem;
+        line-height: 0.25rem;
+      }
+      @include mixins.sp {
+        font-size: 0.22rem;
+        line-height: 0.22rem;
+      }
     };
 
     &__detail {
       margin-top: 20px;
       font-size: 20px;
       line-height: 29px;
+      @include mixins.tab {
+        margin-top: 0.20rem;
+        font-size: 0.20rem;
+        line-height: 0.29rem;
+      }
+      @include mixins.sp {
+        margin-top: 16px;
+        font-size: 0.14rem;
+        line-height: 0.20rem;
+      }
     };
 
     &__select-input {
       margin-top: 26px;
       display: flex;
       justify-content: center;
+      @include mixins.tab {
+        margin-top: 0.26rem;
+      }
+      @include mixins.sp {
+        margin-top: 0.13rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
 
       &__contents {
         margin-left: 15px;
@@ -37,8 +86,24 @@
         &:first-child {
           margin-left: 0;
         }
-      };
-    };
-  };
-};
-
+        @include mixins.tab {
+          margin-left: 0.15rem;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+        @include mixins.sp {
+          margin-left: 0.10rem;
+          display: flex;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-top: 15.5px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

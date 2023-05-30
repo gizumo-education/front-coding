@@ -1,20 +1,56 @@
 @use '../../object/utility/utility.scss';
 // useful-contentsの項目に関するスタイル
 
+@use '../../foundation/_mixins.scss';
+
 .p-useful-contents {
   max-width: 380px;
   height: 240px;
   position: relative;
   display: flex;
   justify-content: center;
+  @include mixins.tab {
+    max-width: 3.80rem;
+    height: 2.40rem;
+  }
+  @include mixins.sp {
+    max-width: 3.70rem;
+    height: 2.35rem;
+  }
+
+  &__large-img {
+    display: block;
+    @include mixins.tab {
+      display: block;
+    }
+    @include mixins.sp {
+      display: none;
+    }
+  }
+
+  &__small-img {
+    display: none;
+    @include mixins.tab {
+      display: none;
+    }
+    @include mixins.sp {
+      display: block;
+    }
+  }
 
   &__background {
     width: 100%;
-    height: 240px;
+    height: 100%;
     border-radius: 10px;
     position: absolute;
     background: #000000;
     opacity: 0.5;
+    @include mixins.tab {
+      border-radius: 0.10rem;
+    }
+    @include mixins.sp {
+      border-radius: 0.10rem;
+    }
   }
 
   &__msg-wrapper {
@@ -28,6 +64,16 @@
       font-size: 24px;
       line-height: 24px;
       color: #FFFFFF;
+      @include mixins.tab {
+        margin-top: 0.71rem;
+        font-size: 0.24rem;
+        line-height: 0.24rem;
+      }
+      @include mixins.sp {
+        margin-top: 0.6045rem;
+        font-size: 0.21rem;
+        line-height: 0.21rem;
+      }
     }
 
     &__detail {
@@ -35,6 +81,16 @@
       font-size: 16px;
       line-height: 23px;
       color: #FFFFFF;
+      @include mixins.tab {
+        margin-top: 0.45rem;
+        font-size: 0.16rem;
+        line-height: 0.23rem;
+      }
+      @include mixins.sp {
+        margin-top: 0.53rem;
+        font-size: 0.14rem;
+        line-height: 0.20rem;
+      }
     }
   }
   

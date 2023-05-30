@@ -1,16 +1,34 @@
 @use '../../object/utility/utility.scss';
 // 新着求人の項目に関するスタイル
 
+@use '../../foundation/_mixins.scss';
+
 .p-job-file {
   display: flex;
   justify-content: center;
   margin-top: 25px;
+  @include mixins.tab {
+    margin-top: 0.25rem;
+  }
+  @include mixins.sp {
+    margin-top: 0.35rem;
+  }
 
   &__list {
     margin-left: 20px;
-
     &:first-child {
       margin-left: 0;
+    }
+    @include mixins.tab {
+      margin-left: 0.20rem;
+    }
+    @include mixins.sp {
+      margin-left: 0.20rem;
+      display: none;
+      &:first-child {
+        margin-left: 0;
+        display: block;
+      }
     }
   }
   
@@ -18,6 +36,12 @@
     max-width: 280px;
     position: relative;
     cursor: pointer;
+    @include mixins.tab {
+      max-width: 2.80rem;
+    }
+    @include mixins.sp {
+      max-width: 3.70rem;
+    }
 
     &__button {
       width: 100%;
@@ -31,42 +55,112 @@
     position: absolute;
     top: 189px;
     right: 0;
-
     &:first-child {
       left: 0;
+    }
+    @include mixins.tab {
+      top: 1.89rem;
+    }
+    @include mixins.sp {
+      position: absolute;
+      top: 2.47rem;
+      &:first-child {
+        left: 0;
+      }
     }
   }
 }
 
-.p-job-img {
+.p-job-large-img {
   width: 280px;
   height: 200px;
   border-radius: 10px;
-};
+  display: block;
+  @include mixins.tab {
+    width: 2.80rem;
+    height: 2rem;
+    border-radius: 0.10rem;
+  }
+  @include mixins.sp {
+    display: none;
+  }
+}
+.p-job-small-img {
+  display: none;
+  @include mixins.tab {
+    display: none;
+  }
+  @include mixins.sp {
+    display: block;
+    width: 3.70rem;
+    height: 2.08rem;
+    border-radius: 10px;
+  }
+}
 
 .p-job-detail {
   font-size: 16px;
   line-height: 22px;
   margin-top: 8.08px;
+  @include mixins.tab {
+    font-size: 0.16rem;
+    line-height: 0.22rem;
+    margin-top: 0.0808rem;
+  }
+  @include mixins.sp {
+    font-size: 0.16rem;
+    line-height: 0.22rem;
+    font-weight: 700;
+    margin-top: 0.1008rem;
+    text-align: start;
+  }
 }
 
 .p-job-item {
   margin-top: 4px;
   display: flex;
   align-items: center;
-
   &:first-child {
     margin-top: 6.92px;
+  }
+  @include mixins.tab {
+    margin-top: 0.04rem;
+    &:first-child {
+      margin-top: 0.0692rem;
+    }
+  }
+  @include mixins.sp {
+    &:first-child {
+      margin-top: 11.92px;
+    }
   }
 
   &__title {
     font-size: 14px;
     line-height: 20px;
-
+    @include mixins.tab {
+      font-size: 0.14rem;
+      line-height: 0.20rem;
+    }
+    @include mixins.sp {
+      font-size: 0.14rem;
+      line-height: 0.20rem;
+    }
   }
   &__detail {
     margin-left: 10px;
     font-size: 14px;
     line-height: 17px;
+    @include mixins.tab {
+      margin-left: 0.10rem;
+      font-size: 0.14rem;
+      line-height: 0.17rem;
+    }
+    @include mixins.sp {
+      font-size: 0.14rem;
+      line-height: 0.17rem;
+      margin-left: 0.2106rem;
+      line-height: 0.20rem;
+    }
   }
 }

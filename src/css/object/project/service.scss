@@ -1,10 +1,34 @@
 @use '../../object/utility/utility.scss';
 // serviceのスタイルを記述するファイル
 
+@use '../../foundation/_mixins.scss';
+
 .p-service {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  &__large-img{
+    display: block;
+    @include mixins.tab {
+      display: block;
+    }
+    @include mixins.sp {
+      display: none;
+    }
+  }
+
+  &__small-img{
+    display: none;
+    @include mixins.tab {
+      display: none;
+    }
+    @include mixins.sp {
+      display: block;
+      width: 4rem;
+    }
+  }
   
   &__background {
     width: 100%;
@@ -16,9 +40,13 @@
 
   &__msg-wrapper {
     position: absolute;
-    top: 104px;
-    top: 35%;
     text-align: center;
+    @include mixins.tab {
+    }
+    @include mixins.sp {
+      position: absolute;
+      top: 0;
+    }
 
     &__message {
       margin-top: 21px;
@@ -26,9 +54,22 @@
       font-size: 25px;
       line-height: 36px;
       color: #FFFFFF;
-
       &:first-child {
         margin-top: 0;
+      }
+      @include mixins.tab {
+        margin-top: 0.21rem;
+        font-size: 0.25rem;
+        line-height: 0.36rem;
+      }
+      @include mixins.sp {
+        margin-top: 0.0236rem;
+        font-weight: 400;
+        font-size: 0.14rem;
+        line-height: 0.20rem;
+        &:first-child {
+          margin-top: 0.1618rem;
+        }
       }
     }
   }

@@ -1,33 +1,62 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるselectのスタイルを記述するファイル
 
+@use '../../foundation/_mixins.scss';
+
 .c-select-box {
   display: inline-flex;
   align-items: center;
   position: relative;
-};
 
-.c-select-box select {
-  appearance: none;
-  min-width: 200px;
-  height: 60px;
-  border: 1px solid #DE1E79;
-  background-color: #fff;
-  cursor: pointer;
-  border-radius: 10px;
-  padding-left: 15px;
-  font-size: 18px;
-  line-height: 26px;
-  }
-
-.c-select-box::after {
-  position: absolute;
-  right: 15px;
-  width: 20px;
-  height: 10px;
-  background-color: #DE1E79;
-  clip-path: polygon(0 0, 100% 0, 50% 100%);
-  content: "";
-  pointer-events: none;
+  & select {
+    appearance: none;
+    width: 200px;
+    height: 60px;
+    border: 1px solid #DE1E79;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    @include mixins.tab {
+      width: 2.00rem;
+      height: 0.60rem;
+      border-radius: 0.10rem;
+      padding-left: 0.15rem;
+      font-size: 0.18rem;
+      line-height: 0.26rem;
+    }
+    @include mixins.sp {
+      width: 1rem;
+      height: 0.30rem;
+      border-radius: 0.05rem;
+      padding-left: 0.08rem;
+      font-size: 0.12rem;
+      line-height: 0.17rem;
+    }
   }
   
+  &::after {
+    position: absolute;
+    right: 15px;
+    width: 20px;
+    height: 10px;
+    background-color: #DE1E79;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: "";
+    pointer-events: none;
+    @include mixins.tab {
+      right: 15px;
+      width: 0.20rem;
+      height: 0.10rem;
+    }
+    @include mixins.sp {
+      right: 10px;
+      width: 0.13rem;
+      height: 0.07rem;
+    }
+  }
+}
+
