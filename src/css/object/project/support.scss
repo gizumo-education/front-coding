@@ -1,26 +1,60 @@
 @use '../../object/utility/utility.scss';
 // supportのスタイルを記述するファイル
 
+@use '../../foundation/_mixins.scss';
+
 .p-support {
   margin-top: 105px;
+  @include mixins.tab {
+    margin-top: 1.05rem;
+  }
+  @include mixins.sp {
+    margin-top: 0.60rem;
+    padding: 0 0.15rem;
+  }
 
   &__title {
     font-weight: 700;
     font-size: 25px;
     line-height: 25px;
     text-align: center;
+    @include mixins.tab {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
+    @include mixins.sp {
+      font-size: 0.25rem;
+    }
   }
 
   &__cont-wrapper {
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    @include mixins.tab {
+      margin-top: 0.50rem;
+    }
+    @include mixins.sp {
+      margin: 0.3055rem auto 0;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 3.70rem;
+    }
 
     &__contents {
       margin-left: 20px;
-
       &:first-child {
         margin-left: 0;
+      }
+      @include mixins.tab {
+        margin-left: 0.20rem;
+      }
+      @include mixins.sp {
+        margin-left: 0;
+        margin-top: 0.1755rem;
+        &:first-child {
+          margin-top: 0;
+        }
       }
     }
   }
@@ -28,6 +62,12 @@
   &__button-wrapper {
     margin-top: 80px;
     text-align: center;
+    @include mixins.tab {
+      margin-top: 0.80rem;
+    }
+    @include mixins.sp {
+      margin-top: 0.3486rem;
+    }
 
     &__button {
       width: 420px !important;
@@ -35,42 +75,17 @@
       font-size: 18px;
       line-height: 18px;
       color: #FFFFFF;
-    }
-  }
-}
-
-
-@media screen and (max-width:767px) {
-  .p-support {
-    margin-top: 60px;
-    padding: 0 15px;
-  
-    &__title {
-      font-size: 0.25rem;
-    }
-  
-    &__cont-wrapper {
-      margin: 30.55px auto 0;
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 370px;
-  
-      &__contents {
-        margin-left: 0;
-        margin-top: 17.55px;
-  
-        &:first-child {
-          margin-top: 0;
-        }
+      @include mixins.tab {
+        width: 4.20rem !important;
+        font-weight: 700;
+        font-size: 0.18rem;
+        line-height: 0.18rem;
       }
-    }
-  
-    &__button-wrapper {
-      margin-top: 34.86px;
-  
-      &__button {
-        max-width: 370px;
+      @include mixins.sp {
+        max-width: 3.70rem;
         width: 100% !important;
+        font-size: 0.18rem;
+        line-height: 0.18rem;
       }
     }
   }
