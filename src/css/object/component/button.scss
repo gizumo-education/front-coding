@@ -29,6 +29,9 @@
   @include mixins.tab {
     width: 1.40rem;
     height: 0.60rem;
+    &__img {
+      width: 0.3rem;
+    }
   }
   @include mixins.sp {
     height: 0.60rem;
