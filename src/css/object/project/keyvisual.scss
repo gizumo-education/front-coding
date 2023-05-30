@@ -18,7 +18,7 @@
 .p-keyvisual-slogan {
   margin-top: 40px;
   font-size: 50px;
-  color: white;
+  color: base.$white;
   font-weight: bold;
   filter: drop-shadow(0 2mm 1mm rgba(0, 0, 0, 0.25));
 }
@@ -27,7 +27,7 @@
   margin: 55px auto 0 auto;
   font-size: 20px;
   color: base.$blue-green;
-  background-color: white;
+  background-color: base.$white;
   border-radius: 10px;
   box-sizing: border-box;
   border: base.$blue-green 2px solid;

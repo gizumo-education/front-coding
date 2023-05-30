@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as base;
 
 .c-media-listing {
   width: 280px;
@@ -48,6 +48,6 @@
 }
 
 .c-media-footer-bg {
-  background-color: white;
+  background-color: base.$white;
   width: 320px;
 }
