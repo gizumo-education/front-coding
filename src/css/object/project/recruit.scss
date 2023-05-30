@@ -92,13 +92,13 @@
           margin-top: 0.05rem;
           
         }
-        &:first-child {
+        &-top {
           margin-top: 7px;
           @include utility.tab {
             margin-top: 0.07rem;
           }
           @include utility.sp {
-            margin-top: 1rem;
+            margin-top: 0.11rem;
           }
         }
         &__condition {
