@@ -68,3 +68,24 @@ a {
     display: block;
   }
 }
+
+//ハンバーガーメニューのpatty
+.u-patty1 {
+  transform-origin: left bottom;
+}
+.u-patty1.active {
+  transform: rotate(33deg) translateX(5px);
+}
+
+
+.u-patty2.active {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.u-patty3 {
+  transform-origin: left top;
+}
+.u-patty3.active {
+  transform: rotate(-33deg) translateX(5px);
+}
