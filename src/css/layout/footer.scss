@@ -3,27 +3,74 @@
 .l-footer {
   margin-top: 200px;
   width: 100%;
+  @include utility.tab {
+    margin-top: 2rem;
+  }
+  @include utility.sp {
+    margin-top: 1rem;
+  }
   &__main {
     height: 265px;
     background-color: utility.$lightGray;
+    @include utility.tab {
+      height: 2.65rem;
+    }
+    @include utility.sp {
+      padding-bottom: 0.4rem;
+    }
+    height: 100%;
     &__inner {
       width: 1180px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
+      @include utility.tab {
+        width: 11.8rem;
+      }
+      @include utility.sp {
+        width: 100%;
+        flex-direction: column;
+      }
       &__links {
         margin-top: 79px;
         font-size: 16px;
+        @include utility.tab {
+          margin-top: 0.79rem;
+          font-size: 0.16rem;
+        }
+        @include utility.sp {
+          margin-top: 0.38rem;
+          font-size: 0.16rem;
+        }
         &__top {
           color: utility.$black;
+          @include utility.sp {
+            margin-left: 0.5rem;
+          }
         }
         &__info {
           display: flex;
           margin-top: 27px;
+          @include utility.tab {
+            margin-top: 0.27rem;
+          }
+          @include utility.sp {
+            margin-left: 0.55rem;
+            margin-top: 0.27rem;
+          }
           &__lists {
             line-height: 36px;
             height: 108px;
             margin-left: 39px;
+            @include utility.tab {
+              line-height: 0.36rem;
+              height: 1.08rem;
+              margin-left: 0.39rem;
+            }
+            @include utility.sp {
+              line-height: 0.36rem;
+              height: 100%;
+            }
             a {
               color: utility.$black;
             }
@@ -35,6 +82,12 @@
       }
       &__images {
         margin-top: 55px;
+        @include utility.tab {
+          margin-top: 0.55rem;
+        }
+        @include utility.sp {
+          margin: 0.22rem 0.4rem 0;
+        }
         &__baby {
           width: 320px;
           height: 85px;
@@ -44,6 +97,16 @@
           background-position: right;
           background-color: white;
           border: 1px solid utility.$charcoal;
+          @include utility.tab {
+            width: 3.2rem;
+            height: 0.85rem;
+            border: 0.01rem solid utility.$charcoal;
+          }
+          @include utility.sp {
+            width: 100%;
+            height: 0.85rem;
+            border: 0.01rem solid utility.$charcoal;
+          }
         }
         &__lady {
           width: 320px;
@@ -55,6 +118,18 @@
           background-color: white;
           margin-top: 15px;
           border: 1px solid utility.$charcoal;
+          @include utility.tab {
+            width: 3.2rem;
+            height: 0.85rem;
+            margin-top: 0.15rem;
+            border: 0.01rem solid utility.$charcoal;
+          }
+          @include utility.sp {
+            width: 100%;
+            height: 0.85rem;
+            margin-top: 0.15rem;
+            border: 0.01rem solid utility.$charcoal;
+          }
         }
       }
     }
@@ -66,5 +141,15 @@
     text-align: center;
     font-size: 14px;
     line-height: 35px;
+    @include utility.tab {
+      height: 0.35rem;
+      font-size: 0.14rem;
+      line-height: 0.35rem;
+    }
+    @include utility.sp {
+      height: 0.35rem;
+      font-size: 0.14rem;
+      line-height: 0.35rem;
+    }
   }
 }

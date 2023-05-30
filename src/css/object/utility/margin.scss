@@ -1,3 +1,11 @@
+@use './utility.scss';
+
 .u-margin__150 {
   margin-top: 150px;
+  @include utility.tab {
+    margin-top: 1.5rem;
+  }
+  @include utility.sp {
+    margin-top: 0.6rem;
+  }
 }

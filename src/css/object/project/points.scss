@@ -2,41 +2,100 @@
 
 .p-points {
   margin-top: 105px;
+  @include utility.tab {
+    margin-top: 1.05rem;
+  }
+  @include utility.sp {
+    margin-top: 0.55rem;
+  }
   &__inner {
     text-align: center;
     &__title {
       font-size: 25px;
       font-weight: utility.$bold;
+      @include utility.tab {
+        font-size: 0.25rem;
+      }
+      @include utility.sp {
+        font-size: 0.25rem;
+        flex-direction: column;
+      }
     }
     &__lists {
       margin-top: 53px;
       display: flex;
       flex-wrap: wrap;
+      @include utility.tab {
+        margin-top: 0.53rem;
+      }
+      @include utility.sp {
+        margin-top: 0.38rem;
+      }
       li {
         width: 570px;
         padding: 40px 0px;
         background-color: utility.$pink;
         border-radius: 10px;
         margin: 40px 0px 0px 40px;
+        @include utility.tab {
+          width: 5.7rem;
+          padding: 0.4rem 0;
+          border-radius: 0.1rem;
+          margin: 0.4rem 0 0 0.4rem;
+        }
+        @include utility.sp {
+          margin: 0.21rem 0 0;
+          width: 100%;
+          padding: 0.3rem 0.17rem;
+        }
         &:nth-child(-n+2) {
           margin-top: 0px;
+        }
+        &:nth-child(2) {
+          @include utility.sp {
+            margin-top: 0.21rem;
+          }
         }
         &:nth-child(2n+1) {
           margin-left: 0px;
         }
         &:last-child p {
           margin-top: 26px;
+          @include utility.tab {
+            margin-top: 0.26rem;
+          }
         }
       }
       h3 {
         font-size: 24px;
         font-weight: utility.$bold;
         color: utility.$magenta;
+        @include utility.tab {
+          font-size: 0.24rem;
+        }
+        @include utility.sp {
+          font-size: 0.2rem;
+        }
       }
       p {
         margin-top: 36px;
         font-size: 14px;
         line-height: 20px;
+        @include utility.tab {
+          margin-top: 0.36rem;
+          font-size: 0.14rem;
+          line-height: 0.2rem;
+        }
+        @include utility.sp {
+          margin-top: 0.3rem;
+          font-size: 0.12rem;
+          line-height: 0.17rem;
+        }
+        br {
+          @include utility.sp {
+            display: none;
+          }
+        }
       }
     }
   }

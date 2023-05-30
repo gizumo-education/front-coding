@@ -4,4 +4,10 @@
 .l-inner {
   width: 1180px;
   margin: 0 auto;
+  @include utility.tab {
+    width: 11.8rem;
+  }
+  @include utility.sp {
+    width: 3.7rem;
+  }
 }
