@@ -1,37 +1,44 @@
 @use '../../object/utility/utility.scss';
 // processのスタイルを記述するファイル
 
+@use '../../foundation/_mixins.scss';
+
 .p-process {
   margin-top: 105px;
+  @include mixins.tab {
+    margin-top: 1.05rem;
+  }
+  @include mixins.sp {
+    margin-top: 0.60rem;
+  }
 
   &__title {
     font-weight: 700;
     font-size: 25px;
     line-height: 25px;
     text-align: center;
+    @include mixins.tab {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
+    @include mixins.sp {
+      font-size: 0.25rem;
+    }
   }
 
   &__step-wrapper {
     margin-top: 51.13px;
     display: flex;
     justify-content: center;
-  }
-}
-
-
-@media screen and (max-width:767px) {
-  .p-process {
-    margin-top: 60px;
-  
-    &__title {
+    @include mixins.tab {
       font-size: 0.25rem;
+      line-height: 0.25rem;
     }
-  
-    &__step-wrapper {
-      margin: 34px auto 0;
+    @include mixins.sp {
+      margin: 0.34rem auto 0;
       display: flex;
       flex-wrap: wrap;
-      max-width: 280px;
+      max-width: 2.80rem;
     }
-  }  
+  }
 }
