@@ -10,6 +10,11 @@
   padding: 0;
   border-radius: 10px;
   cursor: pointer;
+  @include mixins.tab {
+    width: 1.40rem;
+    height: 0.50rem;
+    border-radius: 0.10rem;
+  }
 };
 
 // 検索ボタン
