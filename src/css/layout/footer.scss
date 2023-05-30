@@ -1,40 +1,87 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
 
+@use '../foundation/_mixins.scss';
+
 .l-footer {
   margin-top: 200px;
   padding-bottom: 25px;
   background: #EFF6FC;
   display: flex;
   justify-content: center;
+  @include mixins.tab {
+    margin-top: 2.00rem;
+    padding-bottom: 0.25rem;
+  }
+  @include mixins.sp {
+    margin-top: 0.1rem;
+  }
   
   &__wrapper {
     width: 1180px;
     height: 100%;
     display: flex;
     justify-content: space-between;
+    @include mixins.tab {
+      width: 11.80rem;
+    }
+    @include mixins.sp {
+      width: 3.20rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
     &__links {
       margin-top: 79px;
+      @include mixins.tab {
+        margin-top: 0.79rem;
+      }
+      @include mixins.sp {
+        margin-top: 0.38rem;
+      }
 
       &__top {
         font-size: 16px;
         line-height: 23px;
         color: #000000;
+        @include mixins.tab {
+          font-size: 0.16rem;
+          line-height: 0.23rem;
+        }
+        @include mixins.sp {
+          font-size: 0.16rem;
+          line-height: 0.23rem;
+        }
       }
 
       &__link {
         margin-top: 27px;
         display: flex;
+        @include mixins.tab {
+          margin-top: 0.27rem;
+        }
+        @include mixins.sp {
+          margin-top: 0.27rem;
+        }
 
         &__contents {
           font-size: 16px;
           line-height: 36px;
           color: #000000;
           margin-left: 39px;
-
           &:first-child {
             margin-left: 0;
+          }
+          @include mixins.tab {
+            font-size: 0.16rem;
+            line-height: 0.36rem;
+            margin-left: 0.39rem;
+          }
+          @include mixins.sp {
+            font-size: 0.16rem;
+            line-height: 0.36rem;
+            margin-left: 0.39rem;
           }
         }
       }
@@ -42,6 +89,12 @@
 
     &__pic-wrapper {
       margin-top: 55px;
+      @include mixins.tab {
+        margin-top: 0.55rem;
+      }
+      @include mixins.sp {
+        margin-top: 0.22rem;
+      }
 
       &__pictures {
         width: 320px;
@@ -50,9 +103,19 @@
         position: relative;
         background-color: #ffffff;
         margin-top: 15px;
-
         &:first-child {
-          margin-top: 0px;
+          margin-top: 0;
+        }  @include mixins.tab {
+          width: 3.20rem;
+          height: 0.85rem;
+          border: 0.01rem solid #BDBDBD;
+          margin-top: 0.15rem;
+        }
+        @include mixins.sp {
+          width: 3.20rem;
+          height: 0.85rem;
+          border: 0.01rem solid #BDBDBD;
+          margin-top: 0.15rem;
         }
         
         &__img {
@@ -65,60 +128,15 @@
           width: 230px;
           height: 100%;
           background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 50%, rgba(255, 255, 255, 0.992) 68%, rgba(255, 255, 255, 0.965) 74.7%, rgba(255, 255, 255, 0.918) 79.6%, rgba(255, 255, 255, 0.851) 83.6%, rgba(255, 255, 255, 0.765) 87%, rgba(255, 255, 255, 0.655) 90%, rgba(255, 255, 255, 0.525) 92.7%, rgba(255, 255, 255, 0.376) 95.3%, rgba(255, 255, 255, 0.208) 97.6%, rgba(255, 255, 255, 0.024) 99.7%, rgba(255, 255, 255, 0) 100%);
-        }
-      }
-
-    }
-  }
-}
-
-
-@media screen and (max-width:767px) {
-  .l-footer {
-    margin-top: 100px;
-    
-    &__wrapper {
-      width: 320px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-
-      &__links {
-        margin-top: 38px;
-
-        &__top {
-
-        }
-
-        &__link {
-
-          &__contents {
-
-            &:first-child {
-
-            }
+          @include mixins.tab {
+            width: 2.30rem;
+          }
+          @include mixins.sp {
+            width: 2.30rem;
           }
         }
       }
 
-      &__pic-wrapper {
-        margin-top: 22px;
-
-        &__pictures {
-  
-          &:first-child {
-
-          }
-          
-          &__img {
-
-          }
-          &__gradation {
-            
-          }
-        }
-
-      }
     }
   }
 }
