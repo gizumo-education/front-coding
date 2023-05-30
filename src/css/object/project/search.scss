@@ -20,32 +20,32 @@
   &__wrapper {
     width: 1180px;
     padding-bottom: 40.5px;
+    padding-top: 40px;
     background-color: #DEEEF9;
     border-radius: 10px;
     text-align: center;
     @include mixins.tab {
       width: 11.80rem;
       padding-bottom: 0.405rem;
+      padding-top: 0.40rem;
       border-radius: 0.10rem;
     }
     @include mixins.sp {
       width: 37rem;
       padding-bottom: 0.20rem;
+      padding-top: 0.15rem;
       border-radius: 0.10rem;
     }
 
     &__title {
-      padding-top: 40px;
       font-weight: 700;
       font-size: 25px;
       line-height: 25px;
       @include mixins.tab {
-        padding-top: 0.40rem;
         font-size: 0.25rem;
         line-height: 0.25rem;
       }
       @include mixins.sp {
-        padding-top: 0.15rem;
         font-size: 0.22rem;
         line-height: 0.22rem;
       }

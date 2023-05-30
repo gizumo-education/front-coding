@@ -5,13 +5,11 @@
 
 .l-footer {
   margin-top: 200px;
-  padding-bottom: 25px;
   background: #EFF6FC;
   display: flex;
   justify-content: center;
   @include mixins.tab {
     margin-top: 2.00rem;
-    padding-bottom: 0.25rem;
   }
   @include mixins.sp {
     margin-top: 1rem;
@@ -20,25 +18,29 @@
   &__wrapper {
     width: 1180px;
     height: 100%;
+    padding-bottom: 25px;
     display: flex;
     justify-content: space-between;
     @include mixins.tab {
       width: 11.80rem;
+      padding-top: 0.55rem;
+      padding-bottom: 0.25rem;
     }
     @include mixins.sp {
       width: 3.20rem;
+      padding-top: 0.38rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
 
     &__links {
-      margin-top: 79px;
+      margin-top: 24px;
       @include mixins.tab {
-        margin-top: 0.79rem;
+        margin-top: 0.24rem;
       }
       @include mixins.sp {
-        margin-top: 0.38rem;
+        margin-top: 0;
       }
 
       &__top {
@@ -88,12 +90,12 @@
     }
 
     &__pic-wrapper {
-      margin-top: 55px;
+      margin-top: 0;
       @include mixins.tab {
-        margin-top: 0.55rem;
+        margin-top: 0;
       }
       @include mixins.sp {
-        margin-top: 0.22rem;
+        margin-top: 0;
       }
 
       &__pictures {
@@ -105,7 +107,8 @@
         margin-top: 15px;
         &:first-child {
           margin-top: 0;
-        }  @include mixins.tab {
+        }  
+        @include mixins.tab {
           width: 3.20rem;
           height: 0.85rem;
           border: 0.01rem solid #BDBDBD;
@@ -116,6 +119,9 @@
           height: 0.85rem;
           border: 0.01rem solid #BDBDBD;
           margin-top: 0.15rem;
+          &:first-child {
+            margin-top: 0.22rem;
+          }  
         }
         
         &__img {
