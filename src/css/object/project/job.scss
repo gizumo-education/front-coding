@@ -139,7 +139,7 @@
     font-size: 14px;
     line-height: 20px;
     @include mixins.tab {
-      font-size: 0,14rem;
+      font-size: 0.14rem;
       line-height: 0.20rem;
     }
     @include mixins.sp {
