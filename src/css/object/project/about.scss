@@ -1,0 +1,21 @@
+@use '../../object/utility/utility.scss' as base;
+
+.p-about-card {
+  background-color: base.$salmon-pink;
+  border-radius: 10px;
+  width: 570px;
+  height: 180px;
+  padding: 40px 0;
+}
+
+.p-about-card:nth-child(2n) {
+  margin-left: 40px;
+}
+
+.p-about-card:nth-child(3), .p-about-card:nth-child(4) {
+  margin-top: 40px;
+}
+
+.p-about-card-excerpt {
+  line-height: 1.6em;
+}

@@ -1,2 +1,71 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as base;
+// @use '../../foundation/_variables.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button-icons {
+  height: 18px;
+}
+
+.c-button-icons-black {
+  padding-top: 4px;
+}
+
+.c-button-icon-search {
+  width: 30px;
+  height: 30px;
+}
+
+.c-button-icons-colored, .c-button-icon-search {
+  vertical-align: middle;
+}
+
+.c-button-top {
+  transition: .3s;
+  height: 50px;
+  border-radius: 10px;
+  background-color: base.$light_blue;
+  line-height: 50px;
+}
+
+.c-button-top:hover {
+  opacity: .8;
+}
+
+.c-button-top-wide {
+  width: 160px;
+}
+
+.c-button-top-narrow {
+  width: 140px;
+}
+
+.c-button-featured {
+  transition: 0.3s;
+  border-radius: 30px;
+  background-color: base.$featured;
+  height: 60px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.c-button-featured:hover {
+  opacity: 0.8;
+}
+
+.c-button-featured-search {
+  width: 140px;
+}
+
+.c-button-featured-search-container {
+  margin-left: 15px;
+}
+
+.c-button-to-listings {
+  width: 360px;
+}
+
+.c-button-to-articles {
+  width: 420px;
+}

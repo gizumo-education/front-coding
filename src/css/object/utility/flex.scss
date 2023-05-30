@@ -1,0 +1,19 @@
+@use '../../object/utility/utility.scss';
+
+.u-flex-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.u-flex-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.u-flex-space-between {
+  justify-content: space-between;
+}
+
+.u-flex-wrap {
+  flex-wrap: wrap;
+}

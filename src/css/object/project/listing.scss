@@ -1,0 +1,94 @@
+@use '../../object/utility/utility.scss' as base;
+
+.p-listing-bg {
+  background-color: base.$pale-blue-bg;
+  padding: 64px 0 0;
+}
+
+.p-listing-items {
+  margin-top: 25px;
+}
+
+.p-listing-item {
+  margin-left: 20px;
+}
+
+.p-listing-item:first-child {
+  margin-left: 0;
+}
+
+.p-listing-item-title {
+  margin-top: 8px;
+  width: 280px;
+  line-height: 1.3em;
+}
+
+.p-listing-item-overview {
+  margin-top: 6px;
+}
+
+.p-listing-item-info {
+  margin-top: 4px;
+}
+
+.p-listing-item-info:first-child {
+  margin-top: 0;
+}
+
+.p-listing-item-name {
+  text-align: center;
+  width: 60px;
+  background-color: base.$pale-pink;
+}
+
+.p-listing-item-detail{
+  margin-left: 10px;
+}
+
+.p-listing-item-name, .p-listing-item-detail {
+  padding: 5px 0;
+}
+
+.p-listing-button {
+  margin-top: 60px;
+}
+
+.p-listing-featured {
+  width: 100%;
+  line-height: 2.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p-listing-button-scroll {
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 19px 19px;
+  margin-top: 70px;
+}
+
+.p-listing-button-right {
+  margin-left: 1120px;
+}
+
+.p-listing-arrow {
+  color: #000;
+  width: 21px;
+  height: 21px;
+  border: 1px solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+}
+
+.p-listing-arrow-left {
+  transform: translateX(25%) rotate(-135deg);
+}
+
+.p-listing-arrow-right {
+  transform: translateX(-25%) rotate(45deg);
+}

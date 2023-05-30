@@ -1,2 +1,38 @@
 @use '../object/utility/utility.scss';
 // headerのスタイルを記述するファイル
+
+.l-header-nav-bg {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+}
+
+.l-header-nav-content {
+  align-items: center;
+  left: 100px;
+  top: 25px;
+}
+
+.l-header-nav-link {
+  border-left: solid 1px black;
+  padding-left: 1em;
+  margin-left: 1em;
+}
+
+.l-header-nav-link:first-child {
+  border-left: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.l-header-nav-buttons {
+  margin-left: 25px;
+}
+
+.l-header-nav-button {
+  margin-left: 15px;
+}
+
+.l-header-nav-button:first-child {
+  margin-left: 0;
+}

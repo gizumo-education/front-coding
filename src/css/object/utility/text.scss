@@ -1,0 +1,54 @@
+@use '../../object/utility/utility.scss' as base;
+
+//color
+.u-text-black {
+  color: black;
+}
+
+.u-text-white {
+  color: white;
+}
+
+.u-text-feature {
+  color: base.$featured;
+}
+
+.u-text-grayed {
+  color: base.$grayed-text;
+}
+
+//font-size
+.u-text-size-14 {
+  font-size: 14px;
+}
+
+.u-text-size-16 {
+  font-size: 16px;
+}
+
+.u-text-size-18 {
+  font-size: 18px;
+}
+
+.u-text-size-24 {
+  font-size: 24px;
+}
+
+.u-text-size-25 {
+  font-size: 25px;
+}
+
+//weight
+.u-text-bold {
+  font-weight: bold;
+}
+
+//animation
+
+.u-text-link {
+  transition: .3s;
+}
+
+.u-text-link:hover {
+  opacity: .8;
+}

@@ -1,2 +1,42 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as base;
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual-elements {
+  top: 50px;
+  right: 30px;
+}
+
+.p-keyvisual-bg-color {
+  background-color: base.$gray-bg-keyvisual;
+}
+
+.p-keyvisual-image {
+  width: 1260px;
+  height: 500px;
+}
+
+.p-keyvisual-slogan {
+  margin-top: 40px;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  filter: drop-shadow(0 2mm 1mm rgba(0, 0, 0, 0.25));
+}
+
+.p-keyvisual-data {
+  margin: 55px auto 0 auto;
+  font-size: 20px;
+  color: base.$blue-green;
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: base.$blue-green 2px solid;
+  width: 390px;
+  height: 70px;
+  line-height: 60px;
+}
+
+.p-keyvisual-data-number {
+  font-size: 40px;
+  font-weight: bold;
+}
