@@ -23,10 +23,11 @@
     @include mixins.tab {
       max-width: 12.62rem;
       height: 5rem;
+      background-size: cover;
     }
     @include mixins.sp {
       background-image: url(../img/picture/mainPicture/sp-main_woman.jpg);
-      background-size: contain;
+      background-size: cover;
       max-width: 4rem;
       height: 2.70rem;
     }
