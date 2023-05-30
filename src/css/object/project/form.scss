@@ -2,10 +2,34 @@
 
 .p-form {
   margin-top: 60px;
+  @include utility.tab {
+    margin-top: 0.6rem;
+  }
+  @include utility.sp {
+    margin-top: 0.25rem;
+  }
   &__inputs {
     margin-left: 15px;
+    @include utility.tab {
+      margin-left: 0.15rem;
+    }
+    @include utility.sp {
+      margin-left: 0.11rem;
+    }
       &:first-child {
         margin-left: 0px;
+      }
+      &:nth-child(4) {
+        @include utility.sp {
+          margin-top: 0.16rem;
+          margin-left: 0;
+        }
+      }
+      &:nth-child(5) {
+        @include utility.sp {
+          margin-top: 0.195rem;
+          margin-left: 0;
+        }
       }
   }
   &__inner {
@@ -13,18 +37,46 @@
     text-align: center;
     padding: 40px 0px;
     border-radius: 10px;
+    @include utility.tab {
+      padding: 0.4rem 0;
+      border-radius: 0.1rem;
+    }
+    @include utility.sp {
+      padding: 0.15rem 0 0.2rem;
+    }
     &__title {
       font-size: 25px;
       font-weight: utility.$bold;
+      @include utility.tab {
+        font-size: 0.25rem;
+      }
+      @include utility.sp {
+        font-size: 0.22rem;
+      }
     }
     &__text {
       font-size: 20px;
       margin-top: 20px;
+      @include utility.tab {
+        font-size: 0.2rem;
+        margin-top: 0.2rem;
+      }
+      @include utility.sp {
+        font-size: 0.14rem;
+        margin-top: 0.16rem;
+      }
     }
     &__lists {
       margin-top: 27px;
       display: flex;
       justify-content: center;
+      @include utility.tab {
+        margin-top: 0.27rem;
+      }
+      @include utility.sp {
+        margin-top: 0.135rem;
+        flex-wrap: wrap;
+      }
       &__list {
         position: relative;
         &::after {
@@ -38,6 +90,19 @@
           right: 15px;
           transform: translateY(-50%);
           pointer-events: none;
+          @include utility.tab {
+            border-left: 0.1rem solid transparent;
+            border-right: 0.1rem solid transparent;
+            border-top: 0.1rem solid utility.$magenta;
+            right: 0.15rem;
+          }
+          @include utility.sp {
+            top: 0.155rem;
+            right: 0.07rem;
+            border-left: 0.07rem solid transparent;
+            border-right: 0.07rem solid transparent;
+            border-top: 0.07rem solid utility.$magenta;
+          }
         }
         &__select {
           height: 60px;
@@ -47,6 +112,20 @@
           appearance: none;
           font-size: 18px;
           padding: 0px 15px;
+          @include utility.tab {
+            height: 0.6rem;
+            width: 2rem;
+            border-radius: 0.1rem;
+            font-size: 0.18rem;
+            padding: 0 0.15rem;
+          }
+          @include utility.sp {
+            height: 0.29rem;
+            width: 0.99rem;
+            font-size: 0.12rem;
+            border-radius: 0.05rem;
+            background-color: utility.$white;
+          }
           &:first-child {
             margin-left: 0px;
           }
@@ -58,11 +137,43 @@
           border: 1px solid utility.$magenta;
           border-radius: 10px;
           padding-left: 10px;
+          @include utility.tab {
+            height: 0.6rem;
+            width: 3rem;
+            font-size: 0.18rem;
+            border-radius: 0.1rem;
+            padding-left: 0.1rem;
+          }
+          @include utility.sp {
+            height: 0.29rem;
+            width: 3.19rem;
+            font-size: 0.14rem;
+            border-radius: 0.05rem;
+            padding-left: 0.065rem;
+          }
         }
         &__button {
           width: 140px;
-          &__image {
-            font-size: 30px;
+          @include utility.tab {
+            width: 1.4rem;
+          }
+          @include utility.sp {
+            width: 1.6rem;
+            line-height: 0.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &__img {
+            width: 30px;
+            @include utility.tab {
+              width: 0.3rem;
+              
+            }
+            @include utility.sp {
+              width: 0.18rem;
+              margin-right: 0.14rem;
+            }
           }
         }
       }

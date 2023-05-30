@@ -2,16 +2,36 @@
 
 .p-flow {
   margin-top: 105px;
+  @include utility.tab {
+    margin-top: 1.05rem;
+  }
+  @include utility.sp {
+    margin-top: 0.6rem;
+  }
   &__inner {
     text-align: center;
     &__title {
       font-size: 25px;
       font-weight: utility.$bold;
+      @include utility.tab {
+        font-size: 0.25rem;
+      }
+      @include utility.sp {
+        font-size: 0.25rem;
+      }
     }
     &__lists {
       margin-top: 51px;
       display: flex;
       justify-content: center;
+      @include utility.tab {
+        margin-top: 0.51rem;
+      }
+      @include utility.sp {
+        margin: 0.36rem auto 0;
+        flex-direction: column;
+        width: 2.7rem;
+      }
       li {
         border: 2px solid utility.$magenta;
         border-radius: 10px;
@@ -19,6 +39,21 @@
         width: 277px;
         margin-left: 20px;
         position: relative;
+        @include utility.tab {
+          border: 0.02rem solid utility.$magenta;
+          border-radius: 0.1rem;
+          height: 3.57rem;
+          width: 2.77rem;
+          margin-left: 0.2rem;
+        }
+        @include utility.sp {
+          width: 100%;
+          height: 100%;
+          margin: 0.41rem 0 0;
+          border: 0.027rem solid utility.$magenta;
+          border-radius: 0.15rem;
+          padding-bottom: 0.3rem;
+        }
         &::after {
           border-left: 20px solid utility.$magenta;
           border-bottom: 20px solid transparent;
@@ -29,9 +64,26 @@
           top: 50%;
           right: -22px;
           transform: translateY(-50%);
+          @include utility.tab {
+            border-left: 0.2rem solid utility.$magenta;
+            border-bottom: 0.2rem solid transparent;
+            border-top: 0.2rem solid transparent;
+            right: -0.22rem;
+          }
+          @include utility.sp {
+            top: 100%;
+            right: 47%;
+            border-left: 0.2rem solid utility.$magenta;
+            border-bottom: 0.2rem solid transparent;
+            border-top: 0.2rem solid transparent;
+            transform: rotate(90deg);
+          }
         }
         &:first-child {
           margin-left: 0px;
+          @include utility.sp {
+            margin-top: 0;
+          }
         }
         &:last-child::after {
           display: none;
@@ -39,12 +91,33 @@
       }
       img {
         height: 100px;
+        @include utility.tab {
+          height: 1rem;
+        }
+        @include utility.sp {
+          height: 0.75rem;
+        }
       }
       h3 {
         margin-top: 20px;
         font-size: 26px;
         font-weight: utility.$bold;
         height: 60px;
+        @include utility.tab {
+          margin-top: 0.2rem;
+          font-size: 0.26rem;
+          height: 0.6rem;
+        }
+        @include utility.sp {
+          margin-top: 0.22rem;
+          font-size: 0.2rem;
+          height: 100%;
+        }
+        br {
+          @include utility.sp {
+            display: none;
+          }
+        }
       }
       p {
         height: 60px;
@@ -53,6 +126,20 @@
         font-size: 14px;
         text-align: left;
         line-height: 20px;
+        @include utility.tab {
+          height: 0.6rem;
+          width: 2.37rem;
+          margin-top: 0.18rem;
+          font-size: 0.14rem;
+          line-height: 0.2rem;
+        }
+        @include utility.sp {
+          margin-top: 0.1rem;
+          font-size: 0.14rem;
+          width: 2.4rem;
+          line-height: 0.2rem;
+          height: 100%;
+        }
       }
       &__step {
         height: 60px;
@@ -65,12 +152,35 @@
         padding: 11px;
         line-height: 20px;
         margin: 9px 0px 0px 9px;
+        @include utility.tab {
+          height: 0.6rem;
+          width: 0.6rem;
+          border-radius: 0.3rem;
+          font-size: 0.16rem;
+          padding: 0.11rem;
+          line-height: 0.2rem;
+          margin: 0.09rem 0 0 0.09rem;
+        }
+        @include utility.sp {
+          height: 0.45rem;
+          width: 0.45rem;
+          border-radius: 0.23rem;
+          font-size: 0.1rem;
+          line-height: 0.15rem;
+          margin: 0.08rem 0 0 0.08rem;
+        }
       }
       &__title-single {
         line-height: 60px;
+        @include utility.tab {
+          line-height: 0.6rem;
+        }
       }
       &__title-double {
         line-height: 30px;
+        @include utility.tab {
+          line-height: 0.3rem;
+        }
       }
     }
   }

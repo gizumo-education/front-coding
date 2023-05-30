@@ -4,20 +4,59 @@
   margin-top: 60px;
   background-color: utility.$lightGray;
   padding: 64px 0 67px;
+  @include utility.tab {
+    margin-top: 0.6rem;
+    padding: 0.64rem 0 0.67rem;
+  }
+  @include utility.sp {
+    margin-top: 0.25rem;
+    padding: 0.3rem 0 0.6rem;
+  }
   &__inner {
     &__title {
       font-size: 25px;
+      @include utility.tab {
+        font-size: 0.25rem;
+      }
+      @include utility.sp {
+        font-weight: utility.$bold;
+        text-align: center;
+        font-size: 0.25rem;
+      }
     }
     &__lists {
       margin-top: 25px;
       display: flex;
+      @include utility.tab {
+        margin-top: 0.25rem;
+      }
+      @include utility.sp {
+        margin-top: 0.35rem;
+        display: inline-block;
+      }
       li {
         margin-left: 20px;
+        @include utility.tab {
+          margin-left: 0.2rem;
+        }
         &:first-child {
           margin-left: 0px;
+          @include utility.sp {
+            display: inline-block;
+          }
         }
         img {
           border-radius: 10px;
+          @include utility.tab {
+            border-radius: 0.1rem;
+          }
+          @include utility.sp {
+            width: 3.7rem;
+            border-radius: 0.1rem;
+          }
+        }
+        @include utility.sp {
+          display: none;
         }
       }
       &__link {
@@ -27,23 +66,63 @@
         font-size: 16px;
         margin-top: 8px;
         line-height: 22px;
+        @include utility.tab {
+          font-size: 0.16rem;
+          margin-top: 0.08rem;
+          line-height: 0.22rem;
+        }
+        @include utility.sp {
+          margin-top: 0.1rem;
+          font-size: 0.16rem;
+          font-weight: utility.$bold;
+          line-height: 0.22rem;
+        }
       }
       &__conditions {
         display: flex;
         font-size: 14px;
         margin-top: 5px;
         align-items: center;
+        @include utility.tab {
+          font-size: 0.14rem;
+          margin-top: 0.05rem;
+        }
+        @include utility.sp {
+          font-size: 0.14rem;
+          margin-top: 0.05rem;
+          
+        }
         &:first-child {
           margin-top: 7px;
+          @include utility.tab {
+            margin-top: 0.07rem;
+          }
+          @include utility.sp {
+            margin-top: 1rem;
+          }
         }
         &__condition {
           background-color: utility.$babyPink;
           width: 60px;
           text-align: center;
           line-height: 20px;
+          @include utility.tab {
+            width: 0.6rem;
+            line-height: 0.2rem;
+          }
+          @include utility.sp {
+            width: 0.6rem;
+            line-height: 0.2rem;
+          }
         }
         &__detail {
           margin-left: 10px;
+          @include utility.tab {
+            margin-left: 0.1rem;
+          }
+          @include utility.sp {
+            margin-left: 0.21rem;
+          }
         }
       }
     }
@@ -51,9 +130,24 @@
       margin: 77px auto 0px;
       text-align: center;
       line-height: 60px;
+      @include utility.tab {
+        margin-top: 0.77rem;
+        line-height: 0.6rem;
+      }
+      @include utility.sp {
+        margin-top: 0.44rem;
+        
+      }
       &__link {
         color: utility.$white;
         width: 360px;
+        @include utility.tab {
+          width: 3.6rem;
+        }
+        @include utility.sp {
+          width: 100%;
+          line-height: 0.6rem;
+        }
       }
     }
   }
