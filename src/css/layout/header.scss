@@ -1,22 +1,39 @@
 @use '../object/utility/utility.scss' as base;
 // headerのスタイルを記述するファイル
 
+.header-text-general {
+  color: base.$black;
+  text-align: center;
+}
+
 .l-header-nav-bg {
   height: 100px;
   width: 100%;
   background-color: base.$white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 .l-header-nav-content {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   left: 100px;
   top: 25px;
+  position: absolute;
 }
 
 .l-header-nav-link {
   border-left: solid 1px base.$black;
   padding-left: 1em;
   margin-left: 1em;
+}
+
+.l-header-nav-links {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
 }
 
 .l-header-nav-link:first-child {
@@ -27,6 +44,9 @@
 
 .l-header-nav-buttons {
   margin-left: 25px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
 }
 
 .l-header-nav-button {

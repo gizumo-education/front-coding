@@ -1,7 +1,7 @@
 @use '../../object/utility/utility.scss' as base;
 
 .p-listing-bg {
-  background-color: base.$pale-blue-bg;
+  background-color: base.$paleBlueBg;
   padding: 64px 0 0;
 }
 
@@ -38,7 +38,7 @@
 .p-listing-item-name {
   text-align: center;
   width: 60px;
-  background-color: base.$pale-pink;
+  background-color: base.$palePink;
 }
 
 .p-listing-item-detail{

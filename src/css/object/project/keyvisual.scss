@@ -7,7 +7,7 @@
 }
 
 .p-keyvisual-bg-color {
-  background-color: base.$gray-bg-keyvisual;
+  background-color: base.$grayBgKeyvisual;
 }
 
 .p-keyvisual-image {
@@ -26,11 +26,11 @@
 .p-keyvisual-data {
   margin: 55px auto 0 auto;
   font-size: 20px;
-  color: base.$blue-green;
+  color: base.$blueGreen;
   background-color: base.$white;
   border-radius: 10px;
   box-sizing: border-box;
-  border: base.$blue-green 2px solid;
+  border: base.$blueGreen 2px solid;
   width: 390px;
   height: 70px;
   line-height: 60px;

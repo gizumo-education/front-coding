@@ -24,3 +24,17 @@
     clear: both;
   }
 }
+
+@mixin button-top($textColor, $bgColor) {
+  color: $textColor;
+  transition: .3s;
+  height: 50px;
+  border-radius: 10px;
+  background-color: $bgColor;
+  line-height: 50px;
+  &:hover {
+    opacity: 0.8;
+  }
+} 
+
+// (hover: hover)

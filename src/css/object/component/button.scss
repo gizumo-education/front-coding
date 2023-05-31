@@ -1,8 +1,7 @@
 @use '../../object/utility/utility.scss' as base;
-// @use '../../foundation/_variables.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
 
-.c-button-icons {
+.c-button-icons-black, .c-button-icons-colored {
   height: 18px;
 }
 
@@ -19,23 +18,17 @@
   vertical-align: middle;
 }
 
-.c-button-top {
-  transition: .3s;
-  height: 50px;
-  border-radius: 10px;
-  background-color: base.$light_blue;
-  line-height: 50px;
-}
-
 .c-button-top:hover {
   opacity: .8;
 }
 
 .c-button-top-wide {
+  @include base.button-top(base.$white, base.$lightBlue);
   width: 160px;
 }
 
 .c-button-top-narrow {
+  @include base.button-top(base.$white, base.$lightBlue);
   width: 140px;
 }
 
@@ -68,4 +61,15 @@
 
 .c-button-to-articles {
   width: 420px;
+}
+
+//animation
+
+.c-button-text-link {
+  transition: .3s;
+  color: base.$black;
+}
+
+.c-button-text-link:hover {
+  opacity: .8;
 }

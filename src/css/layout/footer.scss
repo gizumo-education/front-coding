@@ -2,7 +2,7 @@
 // footerのスタイルを記述するファイル
 
 .l-footer-bg {
-  background-color: base.$pale-blue-bg;
+  background-color: base.$paleBlueBg;
   height: 265px;
 }
 
@@ -46,6 +46,6 @@
 }
 
 .l-footer-copyright {
-  background-color: base.$gray-bg-copyright;
+  background-color: base.$grayBgCopyright;
   line-height: 35px;
 }

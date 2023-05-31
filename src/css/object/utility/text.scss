@@ -14,7 +14,7 @@
 }
 
 .u-text-grayed {
-  color: base.$grayed-text;
+  color: base.$grayedText;
 }
 
 //font-size
@@ -41,14 +41,4 @@
 //weight
 .u-text-bold {
   font-weight: bold;
-}
-
-//animation
-
-.u-text-link {
-  transition: .3s;
-}
-
-.u-text-link:hover {
-  opacity: .8;
 }
