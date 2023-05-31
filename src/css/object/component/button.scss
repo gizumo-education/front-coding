@@ -1,2 +1,65 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as base;
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button-icons-black, .c-button-icons-colored {
+  height: 18px;
+}
+
+.c-button-icons-black {
+  padding-top: 4px;
+}
+
+.c-button-icon-search {
+  width: 30px;
+  height: 30px;
+}
+
+.c-button-icons-colored, .c-button-icon-search {
+  vertical-align: middle;
+}
+
+.c-button-top:hover {
+  opacity: .8;
+}
+
+.c-button-top-wide {
+  @include base.button-top(base.$white, base.$lightBlue);
+  width: 160px;
+}
+
+.c-button-top-narrow {
+  @include base.button-top(base.$white, base.$lightBlue);
+  width: 140px;
+}
+
+.c-button-featured-search {
+  @include base.button-featured(base.$featured, base.$white, base.$bold);
+  width: 140px;
+}
+
+.c-button-featured-search-container {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.c-button-featured-to-listings {
+  @include base.button-featured(base.$featured, base.$white, base.$bold);
+  width: 360px;
+}
+
+.c-button-featured-to-articles {
+  @include base.button-featured(base.$featured, base.$white, base.$bold);
+  width: 420px;
+}
+
+//animation
+
+.c-button-text-link {
+  transition: .3s;
+  color: base.$black;
+}
+
+.c-button-text-link:hover {
+  opacity: .8;
+}

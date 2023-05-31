@@ -1,0 +1,20 @@
+@use '../../object/utility/utility.scss' as base;
+
+.c-media-article-bg-basics {
+  @include base.article-bg;
+  background: url(../img/picture/bg_article_basics.jpg) rgba(0, 0, 0, 0.5);
+}
+
+.c-media-article-bg-tips {
+  @include base.article-bg;
+  background: url(../img/picture/bg_article_tips.jpg) rgba(0, 0, 0, 0.5);
+}
+
+.c-media-footer {
+  height: 85px;
+}
+
+.c-media-footer-bg {
+  background-color: base.$white;
+  width: 320px;
+}

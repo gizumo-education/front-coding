@@ -1,0 +1,122 @@
+@use '../../object/utility/utility.scss' as base;
+
+.p-listing-bg {
+  background-color: base.$paleBlueBg;
+  padding: 64px 0 0;
+  margin-top: 60px;
+}
+
+.p-listing-container {
+  text-align: left;
+  display: block;
+  width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-listing-heading {
+  font-size: 25px;
+}
+
+.p-listing-items {
+  margin-top: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.p-listing-item {
+  margin-left: 20px;
+}
+
+.p-listing-item:first-child {
+  margin-left: 0;
+}
+
+.p-listing-sample-image {
+  width: 280px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.p-listing-item-title {
+  margin-top: 8px;
+  width: 280px;
+  line-height: 1.3em;
+  font-size: 16px;
+}
+
+.p-listing-item-overview {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.p-listing-item-info {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: row;
+}
+
+.p-listing-item-info:first-child {
+  margin-top: 0;
+}
+
+.p-listing-item-name {
+  text-align: center;
+  width: 60px;
+  background-color: base.$palePink;
+}
+
+.p-listing-item-detail{
+  margin-left: 10px;
+}
+
+.p-listing-item-name, .p-listing-item-detail {
+  padding: 5px 0;
+}
+
+.p-listing-button {
+  margin-top: 60px;
+}
+
+.p-listing-featured-image {
+  height: 300px;
+  background: url(../img/picture/bg_featured_image.jpg) rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin-top: 67px;
+  text-align: center;
+  position: relative;
+}
+
+.p-listing-featured-text {
+  width: 100%;
+  line-height: 2.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: base.$white;
+  font-size: 25px;
+  font-weight: base.$bold;
+}
+
+.p-listing-button-left {
+  @include base.button-carousel;
+}
+
+.p-listing-button-right {
+  @include base.button-carousel;
+  margin-left: 1120px;
+}
+
+.p-listing-arrow-left {
+  @include base.button-carousel-arrow(base.$black);
+  transform: translateX(25%) rotate(-135deg);
+}
+
+.p-listing-arrow-right {
+  @include base.button-carousel-arrow(base.$black);
+  transform: translateX(-25%) rotate(45deg);
+}

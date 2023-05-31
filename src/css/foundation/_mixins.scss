@@ -24,3 +24,86 @@
     clear: both;
   }
 }
+
+@mixin button-top($textColor, $bgColor) {
+  color: $textColor;
+  transition: .3s;
+  height: 50px;
+  border-radius: 10px;
+  background-color: $bgColor;
+  line-height: 50px;
+  &:hover {
+    opacity: 0.8;
+  }
+} 
+
+@mixin search-bar($bgColor) {
+  padding: 40px 0;
+  width: 1180px;
+  height: 240px;
+  background-color: $bgColor;
+  border-radius: 10px;
+  display: block;
+  width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+@mixin search-box($borderColor, $bgColor) {
+  border: 1px solid $borderColor;
+  border-radius: 10px;
+  background-color: $bgColor;
+  font-size: 18px;
+} 
+
+@mixin button-featured($bgColor, $textColor, $fontWeight) {
+  transition: 0.3s;
+  border-radius: 30px;
+  background-color: $bgColor;
+  height: 60px;
+  font-size: 18px;
+  color: $textColor;
+  font-weight: $fontWeight;
+  line-height: 60px;
+  &:hover {
+    opacity: 0.8;
+  }
+} 
+
+@mixin button-carousel {
+  position: absolute;
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 19px 19px;
+  margin-top: 70px;
+} 
+
+@mixin button-carousel-arrow($textColor) {
+  color: $textColor;
+  width: 21px;
+  height: 21px;
+  border: 1px solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+} 
+
+@mixin article-bg {
+  width: 380px;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin-left: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 70px 0 55px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+} 
