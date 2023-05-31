@@ -26,11 +26,11 @@ $('.l-header__hamburger-menu__button').click(function() {
 
 $('a[href^="#"]').click(function(){
   stopScroll();
-  var adjust = -100;
-  var speed = 400;
-  var href= $(this).attr("href");
-  var target = $(href == "#" || href == "" ? 'html' : href);
-  var position = target.offset().top + adjust;
+  let headerHeight = $('.l-header').outerHeight();
+  let speed = 400;
+  let href= $(this).attr("href");
+  let target = $(href === "#" || href === "" ? 'html' : href);
+  let position = target.offset().top - headerHeight;
   $('body,html').animate({scrollTop:position}, speed, 'swing');
   buttonOpen();
   showMenu();
