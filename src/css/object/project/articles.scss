@@ -1,9 +1,41 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as base;
+
+.p-articles {
+  margin-top: 106px;
+}
+
+.p-articles-heading {
+  font-size: 25px;
+  font-weight: base.$bold;
+}
+
+.p-articles-links {
+  margin-top: 50px;
+  display: block;
+  width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+}
 
 .p-articles-button {
   margin-top: 80px;
 }
 
+.p-articles-link {
+  color: base.$white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-articles-link-title {
+  font-size: 24px;
+  font-weight: base.$bold;
+}
+
 .p-articles-link-text {
   line-height: 1.4em;
+  font-size: 14px;
 }
