@@ -1,2 +1,661 @@
 @use '../object/utility/utility.scss';
+@use '../object/component/button.scss';
 // innerのスタイルを記述するファイル
+.l {
+  &-inner {
+    &__board {
+      width: 100%;
+      height: 500px;
+      background-color: #98B1BE;
+      position: relative;
+      display: inline-block;
+      margin-top: 100px;
+      margin-bottom: 60px;
+      &__wrap {
+        display: flex;
+        width: 1360px;
+        height: 500px;
+      }
+      &__pic {
+        height: 500px;
+        background-image: url(../img/picture/key-visual.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &__box {
+        display: block;
+        width: 105px;
+        height: 500px;
+        background-color: #98B1BE;
+        z-index: 100px;
+        position: absolute;
+        &:first-child {
+          width: 165px;
+          left: 70px;
+        }
+        &:last-child {
+          right: 67px;
+          top: 0;
+        }
+      }
+      &__leaf {
+        &-l {
+          display: block;
+          width: 44.9px;
+          height: 141.82;
+          z-index: 100px;
+          position: absolute;
+          top: 90px;
+          left: 800px;
+        }
+        &-r {
+          display: block;
+          width: 44.9px;
+          height: 141.82;
+          z-index: 100px;
+          position: absolute;
+          top: 90px;
+          left: 1095px;
+        }
+      }
+      &__asterisk {
+        display: block;
+        width: 10px;
+        height: 14px;
+        position: absolute;
+        top: 90px;
+        left: 1067px;
+      }
+      &__keyword {
+        display: block;
+        width: 252.87px;
+        height: 161px;
+        position: absolute;
+        top: 100px;
+        left: 850px;
+        &__ranking {
+          display: block;
+          width: 251px;
+          height: 23px;
+          z-index: 100px;
+        }
+        &__no1 {
+          display: block;
+          width: 232px;
+          height: 90px;
+          z-index: 200px;
+          position: absolute;
+          top: 15px;
+          left: 10px;
+        }
+      }
+      &__research {
+        display: block;
+        width: 120px;
+        height: 10px;
+        z-index: 100px;
+        position: absolute;
+        top: 220px;
+        left: 970px;
+      }
+      &__main {
+        &-letter {
+          display: block;
+          width: 810px;
+          height: 55px;
+          z-index: 100px;
+          position: absolute;
+          top: 270px;
+          left: 520px;
+        }
+      }
+      &__text {
+        display: inline-block;
+        border: 2px solid #2EB6AA;
+        background: #ffffff;
+        padding: 10px 41px 7px 41px;
+        border-radius: 10px;
+        text-align: center;
+        vertical-align: bottom;
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        color: #2EB6AA;
+        line-height: 29px;
+        position: absolute;
+        top: 384px;
+        left: 809.5px;
+        &-sentence {
+          display: inline-block;
+          font-weight: 400;
+          font-size: 20px;
+        }
+        &-number {
+          display: inline-block;
+          font-weight: 700;
+          font-size: 40px;
+        }
+      }
+    }
+    &__form {
+      width: 100%;
+      text-align: center;
+      &__box {
+        display: inline-block;
+        width: 1180px;
+        height: 240px;
+        text-align: center;
+        background-color: #DEEEF9;
+        border-radius: 10px;
+      }
+      &__title {
+        display: block;
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 25px;
+        margin-top: 40px;
+        &-sub {
+          display: block;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 28.96px;
+          margin-top: 20px;
+          margin-bottom: 26px;
+        }
+      }
+      &-label {
+        display: none;
+      }
+      &__select {
+        display: flex;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        &__style {
+          margin-left: 15px;
+          position: relative;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:nth-child(3) {
+            margin-right: 15px
+          }
+          &::after {
+            content: '';
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 28px;
+            left: 166px;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid #DE1E79;
+            border-bottom: 10px solid transparent;
+          }
+        }
+      }
+      &-input {
+        box-sizing: border-box;
+        width: 200px;
+        height: 60px;
+        background-color: #ffffff;
+        font-family: 'Noto Sans JP';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26.06px;
+        border: 1px solid #DE1E79;
+        border-radius: 10px;
+        padding: 17px 0 17px 15px;
+        position: relative;
+      }
+      &-btn {
+        @include button.btn-style();
+        background-image: url(../img/icon/icon-big-glass.png);
+        background-repeat: no-repeat;
+        background-position: 12px 15px;
+        width: 140px;
+        margin-left: 15px;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    &__slider {
+      width: 100%;
+      background-color: #EFF6FC;
+      display: block;
+      text-align: center;
+      margin-top: 60px;
+      &__title {
+        display: block;
+        margin: 0 0 25px 210px;
+        padding-top: 64px;
+      }
+      &__wrap {
+        display: flex;
+        justify-content: center;
+      }
+      &__box {
+        margin-left: 20px;
+        &:first-child {
+          margin-left: 0;
+        }
+        &-pic {
+          width: 280px;
+          height: 200px;
+          margin-bottom: 8.08px;
+        }
+        &-content {
+          display: block;
+          width: 278px;
+          height: 44px;
+          font-family: 'Noto Sans JP';
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+        }
+      }
+      &__describe {
+        display: flex;
+        margin-top: 7px;
+        &-content {
+          display: block;
+          width: 60px;
+          height: 21px;
+          background-color: #FFCAD0;
+          text-align: center;
+          font-family: 'Noto Sans JP';
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20.27px;
+        }
+        &-icon {
+          display: block;
+          height: 17px;
+          margin-left: 10px;
+        }
+      }
+      &-btn {
+        @include button.btn-style();
+        width: 360px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 17px 72px;
+        margin: 61px 0 67px 0;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    &__center {
+      display: block;
+      width: 100%;
+      height: 300px;
+      &-pic {
+        display: block;
+        width: 100%;
+        height: 300px;
+        z-index: 100px;
+      }
+      &__box {
+        display: block;
+        position: relative;
+        &__bg {
+          display: block;
+          width: 100%;
+          height: 300px;
+          background-color: #000000;
+          z-index: 200px;
+          position: absolute;
+          top: 0;
+          opacity: 0.5;
+        }
+        &__text {
+          display: inline-block;
+          color: #ffffff;
+          font-family: 'Noto Sans JP';
+          font-size: 25px;
+          font-weight: 700;
+          line-height: 36px;
+          text-align: center;
+          position: absolute;
+          top: 104px;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          z-index: 300px;
+          &-main {
+            margin-bottom: 21px;
+          }
+        }
+      }
+    }
+    &__feature {
+      &-title {
+        display: block;
+        font-family: 'Noto Sans JP';
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 106px;
+        margin-bottom: 13px;
+      }
+      &__boxes {
+        align-items: center;
+        margin-left: 40px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      &__wrap {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        &__box {
+          display: block;
+          width: 570px;
+          height: 180px;
+          background-color: #F7D2DB;
+          border-radius: 10px;
+          text-align: center;
+          margin-top: 40px;
+          &__sub {
+            &-title {
+              display: inline-block;
+              width: 570px;
+              font-family: 'Noto Sans JP';
+              font-size: 24px;
+              color: #DE5579;
+              font-weight: 700;
+              line-height: 24px;
+              margin-top: 40px;
+            }
+          }
+          &__content {
+            display: inline-block;
+            font-family: 'Noto Sans JP';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-top: 36px;
+            white-space: pre-wrap;
+            &:last-child {
+              margin-top: 26px;
+            }
+          }
+        }
+      }
+    }
+    &__recruit {
+      &__title {
+        display: block;
+        font-family: 'Noto Sans JP';
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 105px;
+      }
+      &__wrap {
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+      }
+      &__box {
+        display: block;
+        width: 280px;
+        height: 360px;
+        border: 2.27px solid #DE5579;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+        z-index: 50px;
+        &__circle {
+          display: block;
+          width: 60px;
+          height: 60px;
+          border-radius: 30px;
+          background-color: #DE5579;
+          z-index: 100px;
+          margin: 8px 0 0 8px;
+          &-icon {
+            position: absolute;
+            top: 23px;
+            left: 17px;
+            z-index: 200px;
+          }
+        }
+        &__es {
+          margin-bottom: 20px;
+        }
+        &__glass {
+          margin-bottom: 30px;
+        }
+        &__emails {
+          display: inline-block;
+          width: 107px;
+          height: 100px;
+          margin-bottom: 33px;
+          position: relative;
+        }
+        &__email {
+          &-1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+          &-2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+        }
+        &__border {
+          &-big {
+            &-1 {
+              position: absolute;
+              top: 6px;
+              left: 0;
+            }
+            &-2 {
+              position: absolute;
+              bottom: 36px;
+              right: 0;
+            }
+          }
+          &-medium {
+            &-1 {
+              position: absolute;
+              top: 21px;
+              left: 10px;
+            }
+            &-2 {
+              position: absolute;
+              bottom: 21px;
+              right: 10px;
+            }
+          }
+          &-small {
+            &-1 {
+              position: absolute;
+              top: 36px;
+              left: 20px;
+            }
+            &-2 {
+              position: absolute;
+              bottom: 6px;
+              right: 20px;
+            }
+          }
+        }
+        &__shiny {
+          display: inline-block;
+          width: 108px;
+          height: 111px;
+          margin-bottom: 28px;
+          position: relative;
+        }
+        &__shining {
+          &-big {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+          &-medium {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+          &-small {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+        }
+        &__sub {
+          &-title {
+            display: block;
+            font-family: 'Noto Sans JP';
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 35px;
+            white-space: pre-line;
+          }
+        }
+        &__content {
+          display: inline-block;
+          width: 237px;
+          height: 60px;
+          word-wrap: break-word;
+          font-family: Noto Sans JP;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          margin-top: 18px;
+        }
+      }
+      &__gap {
+        display: inline-block;
+        position: relative;
+        width: 20px;
+        height: 360px;
+      }
+      &__triangle {
+        width: 0;
+        height: 0;
+        border-left: 20px solid #DE5579;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        z-index: 100px;
+        position: absolute;
+        top: 180px;
+      }
+    }
+    &__contents {
+      text-align: center;
+      &__wrap {
+        display: flex;
+        justify-content: center;
+      }
+      &__title {
+        font-family: 'Noto Sans JP';
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 25px;
+        margin-top: 105px;
+        text-align: center;
+      }
+      &__box {
+        margin-top: 50px;
+        margin-left: 20px;
+        position: relative;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      &__black {
+        display: block;
+        width: 380px;
+        height: 240px;
+        background-color: #000000;
+        border-radius: 10px;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+      }
+      &__sub {
+        font-family: 'Noto Sans JP';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #ffffff;
+        width: 380px;
+        text-align: center;
+        position: absolute;
+        top: 71px;
+      }
+      &__describe {
+        font-family: 'Noto Sans JP';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #ffffff;
+        width: 380px;
+        white-space: pre-line;
+        text-align: center;
+        position: absolute;
+        top: 139px;
+      }
+      &-btn {
+        @include button.btn-style();
+        width: 420px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 21px 0;
+        margin-top: 80px;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    &__last {
+      &__box {
+        margin-top: 210px;
+        margin-bottom: 200px;
+        text-align: center;
+      }
+    }
+  }
+}
+.inner {
+  &-area {
+    display: inline-block;
+    width: 300px;
+    margin-left: 15px;
+  }
+  &__slider {
+    &-salary {
+      width: 114px;
+    }
+    &-area {
+      width: 84px;
+    }
+    &-station {
+      width: 117px;
+    }
+  }
+  &__content {
+    &-entry {
+      width: 447px;
+    }
+    &-easy {
+      width: 475px;
+    }
+    &-price {
+      width: 447px;
+    }
+  }
+}
