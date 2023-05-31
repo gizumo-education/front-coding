@@ -1,11 +1,38 @@
 @use '../../object/utility/utility.scss' as base;
 
+.p-about {
+  margin-top: 106px;
+}
+
+.p-about-heading {
+  font-size: 25px;
+  font-weight: base.$bold;
+}
+
+.p-about-content {
+  margin-top: 50px;
+  display: block;
+  width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .p-about-card {
   background-color: base.$salmonPink;
   border-radius: 10px;
   width: 570px;
   height: 180px;
   padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-about-card:last-child {
+  padding-bottom: 30px;
 }
 
 .p-about-card:nth-child(2n) {
@@ -16,6 +43,13 @@
   margin-top: 40px;
 }
 
+.p-about-card-title {
+  font-size: 24px;
+  color: base.$featured;
+  line-height: 1.6em;
+}
+
 .p-about-card-excerpt {
   line-height: 1.6em;
+  font-size: 14px;
 }
