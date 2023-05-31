@@ -88,3 +88,8 @@ a {
 .u-patty3.active {
   transform: rotate(-33deg) translateX(3px);
 }
+
+// スクロールを禁止する
+.u-no-scroll {
+  overflow: hidden;
+}
