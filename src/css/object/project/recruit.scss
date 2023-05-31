@@ -25,6 +25,7 @@
       }
     }
     &__lists {
+      margin-left: -20px;
       margin-top: 25px;
       display: flex;
       @include utility.tab {
@@ -32,7 +33,6 @@
       }
       @include utility.sp {
         margin-top: 0.35rem;
-        display: inline-block;
       }
       li {
         margin-left: 20px;
@@ -41,9 +41,6 @@
         }
         &:first-child {
           margin-left: 0px;
-          @include utility.sp {
-            display: inline-block;
-          }
         }
         img {
           border-radius: 10px;
@@ -55,12 +52,10 @@
             border-radius: 0.1rem;
           }
         }
-        @include utility.sp {
-          display: none;
-        }
       }
       &__link {
         color: utility.$black;
+        margin-left: 20px;
       }
       &__text {
         font-size: 16px;
