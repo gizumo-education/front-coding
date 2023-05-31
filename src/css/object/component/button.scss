@@ -32,21 +32,6 @@
   width: 140px;
 }
 
-// .c-button-featured {
-//   transition: 0.3s;
-//   border-radius: 30px;
-//   background-color: base.$featured;
-//   height: 60px;
-//   font-size: 18px;
-//   color: base.$white;
-//   font-weight: bold;
-//   line-height: 60px;
-// }
-
-// .c-button-featured:hover {
-//   opacity: 0.8;
-// }
-
 .c-button-featured-search {
   @include base.button-featured(base.$featured, base.$white, base.$bold);
   width: 140px;
@@ -58,11 +43,13 @@
   flex-direction: row;
 }
 
-.c-button-to-listings {
+.c-button-featured-to-listings {
+  @include base.button-featured(base.$featured, base.$white, base.$bold);
   width: 360px;
 }
 
-.c-button-to-articles {
+.c-button-featured-to-articles {
+  @include base.button-featured(base.$featured, base.$white, base.$bold);
   width: 420px;
 }
 
