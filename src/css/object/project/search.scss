@@ -1,11 +1,18 @@
 @use '../../object/utility/utility.scss' as base;
 
-.p-search {
-  padding: 40px 0;
-  width: 1180px;
-  height: 240px;
-  background-color: base.$paleBlueSearch;
-  border-radius: 10px;
+.p-search-top {
+  @include base.search-bar(base.$paleBlueSearch);
+  margin-top: 60px;
+}
+
+.p-search-bottom {
+  @include base.search-bar(base.$paleBlueSearch);
+  margin-top: 150px;
+}
+
+.p-search-heading {
+  font-size: 25px;
+  font-weight: base.$bold;
 }
 
 .p-search-sub-heading {
@@ -16,6 +23,8 @@
 .p-search-bar {
   width: 1100px;
   margin: 26px auto 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .p-search-select-box-container, .p-search-blank-box {
@@ -26,13 +35,8 @@
   margin-left: 0;
 }
 
-.p-search-box {
-  border: 1px solid base.$featured;
-  border-radius: 10px;
-  background-color: base.$white;
-}
-
 .p-search-select-box {
+  @include base.search-box(base.$featured, base.$white);
   width: 200px;
   height: 60px;
   padding: 16px 14px;
@@ -43,6 +47,7 @@
 }
 
 .p-search-blank-box {
+  @include base.search-box(base.$featured, base.$white);
   width: 300px;
   padding: 18px 10px;
 }
