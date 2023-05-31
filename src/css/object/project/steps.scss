@@ -1,5 +1,24 @@
 @use '../../object/utility/utility.scss' as base;
-// カードに関するスタイル
+
+.p-steps {
+  margin-top: 105px;
+}
+
+.p-steps-heading {
+  font-size: 25px;
+  font-weight: base.$bold;
+}
+
+.p-steps-content {
+  margin-top: 50px;
+  position: relative;
+  display: block;
+  width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+}
 
 .p-steps-border-box {
   box-sizing: border-box;
@@ -7,8 +26,10 @@
   border-radius: 10px;
   width: 278px;
   height: 358px;
-  // margin-left: 22px;
   padding: 60px 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .p-steps-border-box:first-child {
@@ -38,14 +59,21 @@
   padding: 9px 0;
   background-color: base.$featured;
   border-radius: 50%;
+  font-size: 16px;
+  position: absolute;
+  color: base.$white;
 }
 
 .p-steps-step {
   line-height: 1.3em;
+  font-size: 24px;
 }
 
 .p-steps-abstract {
   width: 237px;
   line-height: 1.5em;
+  font-size: 14px;
+  text-align: left;
+  margin: 0 auto;
 }
 
