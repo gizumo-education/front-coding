@@ -2,12 +2,15 @@
 // ページ上部のキービジュアルに関するスタイル
 
 .p-keyvisual-elements {
+  position: absolute;
   top: 50px;
   right: 30px;
 }
 
 .p-keyvisual-bg-color {
   background-color: base.$grayBgKeyvisual;
+  position: relative;
+  margin-top: 100px;
 }
 
 .p-keyvisual-image {
