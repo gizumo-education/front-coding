@@ -1,7 +1,6 @@
 @use '../../object/utility/utility.scss' as base;
-// @use '../../../foundation/_variables.scss';
 
-.c-search {
+.p-search {
   padding: 40px 0;
   width: 1180px;
   height: 240px;
@@ -9,31 +8,31 @@
   border-radius: 10px;
 }
 
-.c-search-sub-heading {
+.p-search-sub-heading {
   font-size: 20px;
   margin-top: 20px;
 }
 
-.c-search-bar {
+.p-search-bar {
   width: 1100px;
   margin: 26px auto 0;
 }
 
-.c-search-select-box-container, .c-search-blank-box {
+.p-search-select-box-container, .p-search-blank-box {
   margin-left: 16px;
 }
 
-.c-search-select-box-container:first-child {
+.p-search-select-box-container:first-child {
   margin-left: 0;
 }
 
-.c-search-box {
+.p-search-box {
   border: 1px solid base.$featured;
   border-radius: 10px;
   background-color: base.$white;
 }
 
-.c-search-select-box {
+.p-search-select-box {
   width: 200px;
   height: 60px;
   padding: 16px 14px;
@@ -43,20 +42,20 @@
   -moz-appearance: none;
 }
 
-.c-search-blank-box {
+.p-search-blank-box {
   width: 300px;
   padding: 18px 10px;
 }
 
-.c-search-blank-box::placeholder {
+.p-search-blank-box::placeholder {
   color: base.$grayedText;
 }
 
-.c-search-select-box-container{
+.p-search-select-box-container{
   position: relative;
 }
 
-.c-search-select-box-container:after {
+.p-search-select-box-container:after {
   content: "";
   position: absolute;
   right: 15px;

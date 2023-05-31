@@ -1,20 +1,33 @@
 @use '../object/utility/utility.scss' as base;
 // footerのスタイルを記述するファイル
 
+.l-footer-general {
+  text-align: left;
+  color: base.$black;
+  margin-top: 150px;
+}
+
 .l-footer-bg {
   background-color: base.$paleBlueBg;
   height: 265px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 .l-footer-texts {
+  position: absolute;
   top: 80px;
   left: 210px;
+  font-size: 16px;
 }
 
 .l-footer-nav-list {
   padding-left: 5px;
   line-height: 2em;
   margin-top: 27px;
+  display: flex;
+  flex-direction: row;
 }
 
 .l-footer-nav-items {
@@ -26,16 +39,13 @@
 }
 
 .l-footer-image-bars {
+  position: absolute;
   top: 55px;
   right: 210px;
 }
 
-.l-footer-img {
-  height: 85px;
-  right: 0;
-}
-
 .l-footer-img-bg {
+  position: relative;
   background-color: base.$white;
   width: 320px;
   height: 85px;
@@ -45,7 +55,16 @@
   margin-top: 15px;
 }
 
+.l-footer-img {
+  position: absolute;
+  height: 85px;
+  right: 0;
+}
+
 .l-footer-copyright {
   background-color: base.$grayBgCopyright;
   line-height: 35px;
+  font-size: 14px;
+  text-align: center;
 }
+

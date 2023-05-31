@@ -15,12 +15,12 @@
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
-@use './object/component/search.scss';
 @use './object/component/media.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/search.scss';
 @use './object/project/listing.scss';
 @use './object/project/about.scss';
 @use './object/project/steps.scss';
