@@ -1,2 +1,42 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.search {
+  width: 18px;
+  height: 18px;
+};
+
+.c-btn__secondary {
+  padding: 15px 20px;
+  width: auto;
+  border-radius: 10px;
+};
+
+
+.c-btn__secondary:hover {
+  opacity: .8;
+  transition: .3s;
+};
+
+
+.heart {
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+
+};
+
+.c-clock {
+  vertical-align: middle;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+};
+
+.c-browser_search {
+  vertical-align: middle;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
