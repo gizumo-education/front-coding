@@ -1,2 +1,47 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button {
+  color : #fff;
+  background-color: #92C5EA;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 14px;
+  position: relative;
+}
+
+.c-button-heart::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  background-image: url(../img/icon/heart.png);
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 20px;
+}
+
+.c-button-clock::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  background-image: url(../img/icon/clock.png);
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 18px;
+}
+
+.c-button-history::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 30px;
+  background-image: url(../img/icon/history.png);
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+}

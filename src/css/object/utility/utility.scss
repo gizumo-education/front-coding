@@ -1,2 +1,14 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
+
+.px-1 {
+  padding: 15px 21px 15px 41px !important;
+}
+
+.px-2 {
+  padding: 15px 32px 15px 52px !important;
+}
+
+.px-3 {
+  padding: 15px 28px 15px 56px !important;
+}
