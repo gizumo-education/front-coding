@@ -1,4 +1,5 @@
 import $ from "jquery";
+import 'slick-carousel';
 
 $(function() {
   console.log('環境構築完了');
@@ -10,7 +11,7 @@ $(function() {
     $('body').toggleClass('u-no-scroll');
   });
 
-  // スムーズなスクロール
+  // スクロール
   $('a[href^="#"]').click(function(event) {
     event.preventDefault();
     var target = $(this.hash);
@@ -20,5 +21,19 @@ $(function() {
       }, 400);
     }
   });
-});
 
+  // スライダー
+  $('.p-job-file').slick({
+    prevArrow: '<button class="p-job-file__arrow-btn c-circle-button"><span class="c-left-arrow"></span></button>',
+    nextArrow: '<button class="p-job-file__arrow-btn c-circle-button"><span class="c-right-arrow"></span></button>',
+    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
