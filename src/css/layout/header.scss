@@ -12,8 +12,7 @@
 
   &__inner {
     display: flex;
-    max-width: 1400px;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
 
@@ -51,6 +50,7 @@
   }
 
   &__btn {
+    margin-right: 100px;
     font-size: 0;
   }
   &__btn .c-button {
