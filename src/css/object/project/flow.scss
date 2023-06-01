@@ -1,0 +1,30 @@
+@use '../../object/utility/utility.scss';
+
+.p-flow {
+  padding-top: 105px;
+
+  &__inner {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    margin-top: 51px;
+    display: flex;
+  }
+
+  &__item {
+    text-align: center;
+    margin-right: 22px;
+    border: solid 2px #DE5579;
+    border-radius: 10px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__img {
+    
+  }
+}
