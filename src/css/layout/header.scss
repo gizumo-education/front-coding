@@ -24,6 +24,7 @@
     display: none;
     @include utility.sp {
       display: flex;
+      position: relative;
     }
     &__bar {
       width: 0.5rem;
@@ -31,9 +32,24 @@
       background-color: utility.$black;
       display: block;
       border-radius: 0.03rem;
-      margin-top: 0.1rem;
+      position: absolute;
+      transition: all .4s;
       &:first-child {
-        margin-top: 0;
+        top: 0.16rem;
+      }
+      &:nth-child(3) {
+        bottom: 0.16rem;
+      }
+      &.active {
+        &:first-child {
+          transform: translateY(0.16rem) rotate(-45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: translateY(-0.16rem) rotate(45deg);
+        }
       }
     }
     &__button {
@@ -44,6 +60,35 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+    }
+  }
+  &__nav {
+    display: none;
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+    right: -120%;
+    transition: all 0.6s;
+    @include utility.sp {
+      display: inline-block;
+    }
+    &.active {
+      right: 0;
+    }
+    &__container {
+      background-color: utility.$clearBlack;
+      padding: 0.57rem 0.59rem 2.35rem;
+    }
+    &__list {
+      margin-top: 0.38rem;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    &__link {
+      color: utility.$white;
+      font-size: 0.22rem;
+      font-weight: utility.$bold;
     }
   }
   &__container {
