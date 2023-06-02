@@ -4,15 +4,22 @@
 @use '../../foundation/_mixins.scss';
 
 .p-article {
-  width: 100%;
   margin-top: 59px;
-  background: #EFF6FC;
   @include mixins.tab {
     margin-top: 0.59rem;
   }
   @include mixins.sp {
     margin-top: 0.25rem;
-    padding: 0 0.15rem;
+  }
+  
+  &__box {
+    width: 100%;
+    background: #EFF6FC;
+    @include mixins.tab {
+    }
+    @include mixins.sp {
+      padding: 0 0.15rem;
+    }
   }
   
   &__wrapper {
