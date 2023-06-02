@@ -1,2 +1,63 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
+
+.l-footer {
+  padding-top: 55px;
+  margin-top: 140px;
+  background-color: #EFF6FC;
+
+  &__top {
+    padding-bottom: 25px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    font-size: 16px;
+  }
+
+  &__link {
+    color: #000000;
+    margin-top: 24px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 295px;
+
+    &__item {
+      margin-right: 39px;
+      margin-bottom: 25px;
+      color: #000000;
+    }
+
+    &__item:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &__item:nth-child(5) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img:nth-child(2) {
+    margin-top: 15px;
+  }
+
+  &__bottom {
+    background-color: #D7D7D7;
+    padding: 10px 0;
+
+    small {
+      display: block;
+      color: #000000;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
