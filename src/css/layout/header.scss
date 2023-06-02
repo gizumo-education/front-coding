@@ -26,6 +26,11 @@
     margin-right: 62px;
     position: relative;
 
+    &:hover {
+      opacity: .8;
+      transition: .3s
+    }
+
     &:nth-child(2):before {
       content: '';
       display: block;

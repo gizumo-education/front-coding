@@ -19,6 +19,11 @@
 
   &__link {
     color: #000;
+
+    &:hover {
+      opacity: .8;
+      transition: .3s
+    }
   }
 
   &__img {
