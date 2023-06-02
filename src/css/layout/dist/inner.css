@@ -189,17 +189,29 @@
 }
 .l-inner__slider {
   width: 100%;
+  height: 636px;
   background-color: #EFF6FC;
-  display: block;
+  display: inline-flex;
+  justify-content: center;
   text-align: center;
   margin-top: 60px;
 }
-.l-inner__slider__title {
-  display: block;
-  margin: 0 0 25px 210px;
-  padding-top: 64px;
-}
 .l-inner__slider__wrap {
+  display: block;
+  width: 1180px;
+  height: 386px;
+  margin-top: 64px;
+}
+.l-inner__slider__wrap__title {
+  font-family: Inter;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  display: block;
+  margin-bottom: 25px;
+}
+.l-inner__slider__boxes {
   display: flex;
   justify-content: center;
 }
@@ -234,6 +246,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  text-align: left;
 }
 .l-inner__slider__describe {
   display: flex;
@@ -251,7 +264,13 @@
   font-weight: 400;
   line-height: 20.27px;
 }
-.l-inner__slider__describe-icon {
+.l-inner__slider__describe-text {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #000000;
+  text-align: left;
   display: block;
   height: 17px;
   margin-left: 10px;
@@ -372,6 +391,11 @@
 .l-inner__feature__wrap__box__content:last-child {
   margin-top: 26px;
 }
+.l-inner__recruit {
+  width: 100%;
+  height: 435px;
+  margin-top: 105px;
+}
 .l-inner__recruit__title {
   display: block;
   font-family: "Noto Sans JP";
@@ -379,12 +403,12 @@
   font-weight: 700;
   line-height: 25px;
   text-align: center;
-  margin-top: 105px;
 }
 .l-inner__recruit__wrap {
   display: flex;
   margin-top: 50px;
   justify-content: center;
+  position: relative;
 }
 .l-inner__recruit__box {
   display: block;
@@ -402,36 +426,58 @@
   height: 60px;
   border-radius: 30px;
   background-color: #DE5579;
-  z-index: 100px;
-  margin: 8px 0 0 8px;
+  margin: 10px 0 0 10px;
 }
 .l-inner__recruit__box__circle-icon {
-  position: absolute;
-  top: 23px;
-  left: 17px;
-  z-index: 200px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 42px;
+  height: 38px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #ffffff;
+  text-align: center;
+  margin: 11px 9px;
 }
 .l-inner__recruit__box__es {
-  margin-bottom: 20px;
+  display: block;
+  width: 102.29px;
+  height: 100px;
+  position: absolute;
+  top: 60px;
+  right: 80px;
 }
 .l-inner__recruit__box__glass {
-  margin-bottom: 30px;
+  display: block;
+  width: 79.95px;
+  height: 79.95px;
+  position: absolute;
+  top: 70.02px;
+  left: 95.02px;
 }
 .l-inner__recruit__box__emails {
   display: inline-block;
-  width: 107px;
+  width: 106.76px;
   height: 100px;
-  margin-bottom: 33px;
-  position: relative;
+  position: absolute;
+  top: 62px;
+  left: 91px;
 }
 .l-inner__recruit__box__shiny {
-  display: inline-block;
-  width: 108px;
-  height: 111px;
-  margin-bottom: 28px;
-  position: relative;
+  display: block;
+  width: 107.97px;
+  height: 110.13px;
+  position: absolute;
+  top: 56px;
+  left: 81px;
 }
-.l-inner__recruit__box__sub-title {
+.l-inner__recruit__text__box {
+  display: block;
+  margin-top: 110px;
+}
+.l-inner__recruit__text__box__sub-title {
   display: block;
   font-family: "Noto Sans JP";
   font-size: 24px;
@@ -439,12 +485,12 @@
   line-height: 35px;
   white-space: pre-line;
 }
-.l-inner__recruit__box__content {
+.l-inner__recruit__text__box__content {
   display: inline-block;
   width: 237px;
   height: 60px;
   word-wrap: break-word;
-  font-family: Noto Sans JP;
+  font-family: "Noto Sans JP";
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -553,14 +599,11 @@
   width: 300px;
   margin-left: 15px;
 }
-.inner__slider-salary {
-  width: 114px;
+.inner__recruit__content {
+  margin-top: 133px;
 }
-.inner__slider-area {
-  width: 84px;
-}
-.inner__slider-station {
-  width: 117px;
+.inner__recruit__text {
+  margin-top: 30px;
 }
 .inner__content-entry {
   width: 447px;

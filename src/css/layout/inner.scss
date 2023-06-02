@@ -189,16 +189,28 @@
     }
     &__slider {
       width: 100%;
+      height: 636px;
       background-color: #EFF6FC;
-      display: block;
+      display: inline-flex;
+      justify-content: center;
       text-align: center;
       margin-top: 60px;
-      &__title {
-        display: block;
-        margin: 0 0 25px 210px;
-        padding-top: 64px;
-      }
       &__wrap {
+        display: block;
+        width: 1180px;
+        height: 386px;
+        margin-top: 64px;
+        &__title {
+          font-family: Inter;
+          font-size: 25px;
+          font-weight: 400;
+          line-height: 30px;
+          text-align: left;
+          display: block;
+          margin-bottom: 25px;
+        }
+      }
+      &__boxes {
         display: flex;
         justify-content: center;
       }
@@ -232,6 +244,7 @@
           font-size: 16px;
           font-weight: 400;
           line-height: 22px;
+          text-align: left;
         }
       }
       &__describe {
@@ -249,7 +262,13 @@
           font-weight: 400;
           line-height: 20.27px;
         }
-        &-icon {
+        &-text {
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 17px;
+          color: #000000;
+          text-align: left;
           display: block;
           height: 17px;
           margin-left: 10px;
@@ -369,6 +388,9 @@
       }
     }
     &__recruit {
+      width: 100%;
+      height: 435px;
+      margin-top: 105px;
       &__title {
         display: block;
         font-family: 'Noto Sans JP';
@@ -376,12 +398,12 @@
         font-weight: 700;
         line-height: 25px;
         text-align: center;
-        margin-top: 105px;
       }
       &__wrap {
         display: flex;
         margin-top: 50px;
         justify-content: center;
+        position: relative;
       }
       &__box {
         display: block;
@@ -398,56 +420,80 @@
           height: 60px;
           border-radius: 30px;
           background-color: #DE5579;
-          z-index: 100px;
-          margin: 8px 0 0 8px;
+          margin: 10px 0 0 10px;
           &-icon {
-            position: absolute;
-            top: 23px;
-            left: 17px;
-            z-index: 200px;
+            display: inline-block;
+            box-sizing: border-box;
+            width: 42px;
+            height: 38px;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+            color: #ffffff;
+            text-align: center;
+            margin: 11px 9px;
           }
         }
         &__es {
-          margin-bottom: 20px;
+          display: block;
+          width: 102.29px;
+          height: 100px;
+          position: absolute;
+          top: 60px;
+          right: 80px;
         }
         &__glass {
-          margin-bottom: 30px;
+          display: block;
+          width: 79.95px;
+          height: 79.95px;
+          position: absolute;
+          top: 70.02px;
+          left: 95.02px;
         }
         &__emails {
           display: inline-block;
-          width: 107px;
+          width: 106.76px;
           height: 100px;
-          margin-bottom: 33px;
-          position: relative;
+          position: absolute;
+          top: 62px;
+          left: 91px;
         }
         &__shiny {
-          display: inline-block;
-          width: 108px;
-          height: 111px;
-          margin-bottom: 28px;
-          position: relative;
+          display: block;
+          width: 107.97px;
+          height: 110.13px;
+          position: absolute;
+          top: 56px;
+          left: 81px;
         }
-        &__sub {
-          &-title {
-            display: block;
-            font-family: 'Noto Sans JP';
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 35px;
-            white-space: pre-line;
+      }
+      &__text {
+        &__box {
+          display: block;
+          margin-top: 110px;
+          &__sub {
+            &-title {
+              display: block;
+              font-family: 'Noto Sans JP';
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 35px;
+              white-space: pre-line;
+            }
           }
-        }
-        &__content {
-          display: inline-block;
-          width: 237px;
-          height: 60px;
-          word-wrap: break-word;
-          font-family: Noto Sans JP;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 20px;
-          text-align: left;
-          margin-top: 18px;
+          &__content {
+            display: inline-block;
+            width: 237px;
+            height: 60px;
+            word-wrap: break-word;
+            font-family: 'Noto Sans JP';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            margin-top: 18px;
+          }
         }
       }
       &__gap {
@@ -549,15 +595,12 @@
     width: 300px;
     margin-left: 15px;
   }
-  &__slider {
-    &-salary {
-      width: 114px;
+  &__recruit {
+    &__content {
+      margin-top: 133px;
     }
-    &-area {
-      width: 84px;
-    }
-    &-station {
-      width: 117px;
+    &__text {
+      margin-top: 30px;
     }
   }
   &__content {
