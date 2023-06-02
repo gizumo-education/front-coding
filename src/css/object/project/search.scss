@@ -34,6 +34,28 @@ input, select {
 
   &-form__item {
     margin-right: 16px;
+    position: relative;
+
+    &:nth-child(1)::after, &:nth-child(2)::after, &:nth-child(3)::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 15px;
+      border: 10px solid transparent;
+      border-top: 10px solid #DE1E79;
+    }
+
+    &:nth-child(5)::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 15px;
+      left: 14px;
+      background-image: url(../img/icon/white-search.png);
+      background-repeat: no-repeat;
+      height: 301px;
+      width: 310px;
+    }
 
     &:last-of-type {
       margin-right: 0;
@@ -48,18 +70,6 @@ input, select {
     height: 60px;
     border-radius: 10px;
     border: solid 1px #DE5579;
-    position: relative;
-  }
-
-  &-form__select::after {
-      content: '';
-      display: block;
-      width: 1px;
-      height: 15px;
-      position: absolute;
-      top: 2px;
-      right: 10px;
-      background-color: #000000;
   }
 
   &-form__keyword {
@@ -69,31 +79,5 @@ input, select {
       height: 60px;
       border-radius: 10px;
       border: solid 1px #DE5579;
-  }
-
-  &-form__btn {
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    background-color: #DE5579;
-    border: solid 1px #DE5579;
-    border-radius: 30px;
-    font-size: 18px;
-    padding: 16px 20px 21px 48px;
-    width: 140px;
-    height: 60px;
-    box-sizing: border-box;
-  }
-
-  &-form__btn::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 14px;
-    left: 10px;
-    background-image: url(../img/icon/white-search.png);
-    background-repeat: no-repeat;
-    height: 18px;
-    width: 20px;
   }
 }
