@@ -15,6 +15,7 @@
   }
   @include mixins.sp {
     margin-top: 0.35rem;
+    margin-left: 0;
   }
 
   &__list {
@@ -44,6 +45,7 @@
     }
     @include mixins.sp {
       max-width: 3.70rem;
+      margin-left: 0;
     }
 
     &__button {
@@ -67,6 +69,9 @@
     }
     @include mixins.sp {
       top: 1.57rem;
+      &:first-child {
+        left: 0;
+      }
     }
   }
 }
