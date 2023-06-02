@@ -88,7 +88,9 @@
     }
     &__form {
       width: 100%;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      //text-align: center;
       &__box {
         display: inline-block;
         width: 1180px;
@@ -119,16 +121,13 @@
       }
       &__select {
         display: flex;
-        margin-bottom: 40px;
-        margin-left: 40px;
+        width: 1180px;
+        margin: 0 40px 40px 40px;
         &__style {
-          margin-left: 15px;
+          margin-left: 16px;
           position: relative;
           &:first-child {
             margin-left: 0;
-          }
-          &:nth-child(3) {
-            margin-right: 15px
           }
           &::after {
             content: '';
@@ -141,6 +140,35 @@
             border-right: 15px solid transparent;
             border-top: 15px solid #DE1E79;
             border-bottom: 10px solid transparent;
+          }
+        }
+        &__area {
+          display: inline-flex;
+          &-search {
+            display: block;
+            box-sizing: border-box;
+            width: 300px;
+            height: 60px;
+            background-color: #ffffff;
+            font-family: 'Noto Sans JP';
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26.06px;
+            border: 1px solid #DE1E79;
+            border-radius: 10px;
+            padding: 17px 20px 17px 10px;
+          }
+          &-btn {
+            display: block;
+            @include button.btn-style();
+            background-image: url(../img/icon/icon-big-glass.png);
+            background-repeat: no-repeat;
+            background-position: 12px 15px;
+            width: 140px;
+            margin-left: 15.5px;
+            &:hover {
+              opacity: 0.5;
+            }
           }
         }
       }
@@ -157,17 +185,6 @@
         border-radius: 10px;
         padding: 17px 0 17px 15px;
         position: relative;
-      }
-      &-btn {
-        @include button.btn-style();
-        background-image: url(../img/icon/icon-big-glass.png);
-        background-repeat: no-repeat;
-        background-position: 12px 15px;
-        width: 140px;
-        margin-left: 15px;
-        &:hover {
-          opacity: 0.5;
-        }
       }
     }
     &__slider {
