@@ -19,6 +19,9 @@ $(function() {
       $('html, body').animate({
         scrollTop: target.offset().top
       }, 400);
+      $('.c-hamburger__patty').removeClass('active');
+      $('.p-contentsLink').removeClass('active');
+      $('body').removeClass('u-no-scroll');
     }
   });
 
