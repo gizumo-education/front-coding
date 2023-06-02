@@ -14,10 +14,12 @@
 /*component---------------------------------*/
 @use './object/component/button.scss';
 @use './object/component/title.scss';
+@use './object/component/center.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/content.scss';
 @use './object/project/flow.scss';
 @use './object/project/subvisual.scss';
 @use './object/project/search.scss';
