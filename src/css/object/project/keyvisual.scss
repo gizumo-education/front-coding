@@ -1,2 +1,138 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+
+.p-main {
+  &__keyvisual {
+    width: 100%;
+    height: 500px;
+    background-color: #98B1BE;
+    &__img {
+      position: relative;
+      margin: 0 auto;
+      height: 500px;
+      width: 1200px;
+      background-image: url(../img/picture/keyvisual.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &__headline {
+        position: absolute;
+        top: 270px;
+        right: 50px;
+        font-size: 47px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow:3px 3px 3px #98B1BE;
+      };
+      &__content {
+        position: absolute;
+        bottom: 60px;
+        right: 250px;
+        display: inline-block;
+        padding: 10px 25px;
+        border-radius: 10px;
+        font-size: 16px;
+        color: #2EB6AA;
+        background-color: #fff;
+        border: 1px solid #2EB6AA; 
+        .p-main__keyvisual__span {
+          font-weight: bold;
+          font-size: 35px;
+        };
+      };
+    };
+  };
+  .p-main__job {
+    padding: 60px 0 60px 0;
+    background-color: #fff;
+    &__search {
+      margin: 0 auto;
+      padding: 40px 0;
+      width: 1180px;
+      height: 240px;
+      border: 1px solid #DE1E79;
+      border-radius: 10px;
+      background-color: #DEEEF9;
+      &__headline {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+      };
+      &__content {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+      };
+      &__select {
+        text-align: center;
+        .p-main__job__detail {
+          position: relative;
+          margin: 26px 16px 0 0;
+          padding: 16px 14px 16px;
+          width: 200px;
+          height: 60px;
+          border: 1px solid #DE1E79;
+          border-radius: 10px;
+          font-size: 18px;
+          -webkit-appearance: none;
+          appearance: none;
+        };
+        .p-main__job__detail__other {
+          width: 300px;
+          height: 60px;
+          margin-right: 15px;
+          padding: 16px 14px 16px;
+          border: 1px solid #DE1E79;
+          border-radius: 10px;
+          font-size: 18px;
+        };
+      };
+    };
+  };
+
+  .p-main__newoffer {
+    padding: 60px 0;
+    background-color: #EFF6FC;
+      &__title {
+        font-size: 25px;
+      };
+      &__lists {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .p-main__newoffer__list {
+          margin-right: 20px;
+          width: 280px;
+          .p-main__newoffer__img {
+            border-radius: 10px;
+          };
+          .p-main__newoffer__content {
+            margin-top: 8px;
+            font-size: 16px;
+            color: #000;
+          };
+          .p-main__newoffer__explanation {
+            margin-top: 5px;
+            font-size: 14px;
+            text-align: center;
+            color: #000;
+            line-height: 20px;
+            width: 60px;
+            background-color: #FFCAD0;
+            display: inline-block;
+          };
+          .p-main__newoffer__detail {
+            margin: 9px;
+            margin-left: 10px;
+            font-size: 14px;
+            color: #000;
+            display: inline-block;
+          };
+        };
+      };
+      .p-main__newoffer__list:last-child {
+        margin-right: 0;
+      };
+  };
+};

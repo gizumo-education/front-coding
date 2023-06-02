@@ -40,3 +40,78 @@
   width: 16px;
   height: 16px;
 }
+
+.c-keyvisual__content {
+  position: absolute;
+  top: 50px;
+  right: 250px;
+};
+
+
+.c-selectjob__search {
+  display: inline-block;
+  position: relative;
+};
+
+.c-selectjob__search::before {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  border: 10px solid transparent;
+  border-top: 10px solid #DE1E79;
+  z-index: 100000;
+};
+
+
+
+.c-main__jobsearch__btn {
+  display: inline-block;
+  margin: 0 auto;
+  height: 60px;
+  width: 140px;
+  text-align: center;
+  background-color: #DE5579;
+  border-radius: 30px;
+  .c-jobsearch__icon {
+    margin-top: 15px;
+    height: 30px;
+    width: 30px;
+  };
+  .c-main__pink__btn {
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0 4px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    background-color: #DE5579;
+  };
+};
+.c-main__jobsearch__btn:hover {
+  opacity: .8;
+  transition: .3s;
+};
+
+
+.c-main__newoffer__btn__block {
+  text-align: center;
+  .c-main__newoffer__btn {
+    display: inline-block;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 360px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #DE5579;
+    margin: 60px auto 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+  };
+  .c-main__newoffer__btn:hover {
+    opacity: .8;
+    transition: .3s;
+  };
+};

@@ -1,48 +1,54 @@
 @use '../object/utility/utility.scss';
 // headerのスタイルを記述するファイル
-
-.l-header__navs {
+.l-header {
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  .l-header__nav__list {
+  z-index: 1000000;
+  .l-header__navs {
+    width: 100%;
+    background-color: #fff;
     display: flex;
-    .l-header__nav__link {
-      padding: 0 20px;
-      border-right: 1px solid #000;
-      .l-header__nav__link__content {
-        display: inline-block;
-        vertical-align: top;
-        font-size: 16px;
-        color: #000;
+    align-items: center;
+    justify-content: right;
+    .l-header__nav__list {
+      display: flex;
+      .l-header__nav__link {
+        padding: 0 20px;
+        border-right: 1px solid #000;
+        .l-header__nav__link__content {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 16px;
+          color: #000;
+          z-index: 100000;
+        };
+      };
+      .l-header__nav__link:hover {
+        opacity: .8;
+        transition: .3s;
+      };
+      .l-header__nav__link:last-child {
+        border: none;
+      };
+      .l-header__btn__color {
+        background-color: #92C5EA;
+        .l-header__btn__content {
+          margin-left: 10px;
+          display: inline-block;
+          vertical-align: top;
+          font-size: 14px;
+          color: #fff
+        };
       };
     };
-    .l-header__nav__link:last-child {
-      border: none;
+    .l-header__nav__list__li {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      margin-right: 15px;
     };
-    .l-header__btn__color {
-      background-color: #92C5EA;
-      .l-header__btn__content {
-        margin-left: 10px;
-        display: inline-block;
-        vertical-align: top;
-        font-size: 14px;
-        color: #fff
-      };
+    .l-header__nav__list__li:last-child {
+      margin-right: 100px;
     };
   };
-  .l-header__nav__list__li {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-right: 15px;
-  };
-  .l-header__nav__list__li:last-child {
-    margin-right: 100px;
-  };  
 };
-
