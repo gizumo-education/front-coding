@@ -19,13 +19,38 @@
     margin-right: 22px;
     border: solid 2px #DE5579;
     border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
     &:last-of-type {
       margin-right: 0;
     }
   }
 
+  &__badge {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    display: inline-block;
+    padding-top: 10px;
+    line-height: 19px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    background-color: #DE5579;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  &__img {
+    flex-grow: 1;
+  }
+
   &__title {
+    flex-grow: 1;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
@@ -36,5 +61,6 @@
     margin-top: 18px;
     font-size: 14px;
     line-height: 20px;
+    text-align: left;
   }
 }
