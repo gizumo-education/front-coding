@@ -1,7 +1,7 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as work;
 
 .p-work {
-  background-color: #EFF6FC;
+  background-color: work.$footer-blue;
   padding: 120px 0 67px;
 
   &__list {
@@ -18,7 +18,7 @@
   }
 
   &__link {
-    color: #000;
+    color: work.$black;
 
     &:hover {
       opacity: .8;
@@ -42,7 +42,7 @@
 
   &__label {
     display: inline-block;
-    background-color: #FFCAD0;
+    background-color: work.$pink3;
     margin-right: 10px;
     width: 60px;
     height: 21px;

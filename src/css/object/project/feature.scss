@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as feature;
 
 .p-feature {
   padding-top: 106px;
@@ -12,7 +12,7 @@
   &__item {
     border-radius: 10px;
     padding: 40px 0;
-    background-color: #F7D2DB;
+    background-color: feature.$pink2;
     margin-right: 40px;
     width: 570px;
     height: 180px;
@@ -31,13 +31,13 @@
   &__title {
     font-size: 24px;
     font-weight: 700;
-    color: #DE5579;
+    color: feature.$pink;
   }
 
   &__text {
     margin-top: 36px;
     font-size: 14px;
-    color: #000000;
+    color: feature.$black;
     line-height: 20px;
   }
 }

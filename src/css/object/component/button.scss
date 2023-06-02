@@ -1,9 +1,9 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as btn;
 // 共通パーツであるボタンのスタイルを記述するファイル
 
 .c-button {
-  color : #fff;
-  background-color: #92C5EA;
+  color : btn.$white;
+  background-color: btn.$blue;
   display: inline-block;
   border-radius: 10px;
   font-size: 14px;
@@ -52,8 +52,8 @@
 }
 
 .c-more-button {
-  color : #fff;
-  background-color: #DE5579;
+  color : btn.$white;
+  background-color: btn.$pink;
   display: inline-block;
   border-radius: 10px;
   font-size: 18px;
@@ -69,9 +69,9 @@
 .c-search-btn {
   position: relative;
   font-weight: 700;
-  color: #fff;
-  background-color: #DE5579;
-  border: solid 1px #DE5579;
+  color: btn.$white;
+  background-color: btn.$pink;
+  border: solid 1px btn.$pink;
   border-radius: 30px;
   font-size: 18px;
   padding: 16px 20px 21px 48px;

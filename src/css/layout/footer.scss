@@ -1,10 +1,10 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as footer;
 // footerのスタイルを記述するファイル
 
 .l-footer {
   padding-top: 55px;
   margin-top: 140px;
-  background-color: #EFF6FC;
+  background-color: footer.$footer-blue;
 
   &__top {
     padding-bottom: 25px;
@@ -20,7 +20,7 @@
   }
 
   &__link {
-    color: #000000;
+    color: footer.$black;
     margin-top: 24px;
 
     &:hover {
@@ -38,7 +38,7 @@
     &__item {
       margin-right: 39px;
       margin-bottom: 25px;
-      color: #000000;
+      color: footer.$black;
 
       &:hover {
         opacity: .8;
@@ -60,12 +60,12 @@
   }
 
   &__bottom {
-    background-color: #D7D7D7;
+    background-color: footer.$gray;
     padding: 10px 0;
 
     small {
       display: block;
-      color: #000000;
+      color: footer.$black;
       font-size: 14px;
       text-align: center;
     }

@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as subkey;
 
 .p-subvisual {
   padding-top: 104px;
@@ -12,7 +12,7 @@
 
   &__text {
     font-weight: 700;
-    color: #fff;
+    color: subkey.$white;
     text-align: center;
     font-size: 25px;
 

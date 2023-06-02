@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as sea;
 
 input, select {
   -webkit-appearance: none;
@@ -9,7 +9,7 @@ input, select {
   padding: 60px;
 
   &__content {
-    background-color: #DEEEF9;
+    background-color: sea.$blue2;
     height: 240px;
     padding: 40px;
     box-sizing: border-box;
@@ -37,7 +37,7 @@ input, select {
       top: 25px;
       right: 15px;
       border: 10px solid transparent;
-      border-top: 10px solid #DE1E79;
+      border-top: 10px solid sea.$pink;
     }
 
     &:nth-child(5)::after {
@@ -64,7 +64,7 @@ input, select {
     width: 200px;
     height: 60px;
     border-radius: 10px;
-    border: solid 1px #DE5579;
+    border: solid 1px sea.$pink;
   }
 
   &-form__keyword {
@@ -73,6 +73,6 @@ input, select {
       width: 300px;
       height: 60px;
       border-radius: 10px;
-      border: solid 1px #DE5579;
+      border: solid 1px sea.$pink;
   }
 }

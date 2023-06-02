@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as flow;
 
 .p-flow {
   padding-top: 105px;
@@ -12,7 +12,7 @@
     padding: 60px 20px 40px;
     text-align: center;
     margin-right: 22px;
-    border: solid 2px #DE5579;
+    border: solid 2px flow.$pink;
     border-radius: 10px;
     position: relative;
     display: flex;
@@ -31,10 +31,10 @@
     padding-top: 10px;
     line-height: 19px;
     font-size: 16px;
-    color: #fff;
+    color: flow.$white;
     font-weight: 700;
     text-align: center;
-    background-color: #DE5579;
+    background-color: flow.$pink;
     width: 60px;
     height: 60px;
     border-radius: 50%;
