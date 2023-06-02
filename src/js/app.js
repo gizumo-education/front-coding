@@ -11,19 +11,21 @@ $(function() {
     $('body').toggleClass('u-no-scroll');
   });
 
-  // スクロール
-  $('a[href^="#"]').click(function(event) {
-    event.preventDefault();
-    const target = $(this.hash);
-    if (target.length) {
-      $('html, body').animate({
-        scrollTop: target.offset().top
-      }, 400);
+// スクロール
+$('a[href^="#"]').click(function(event) {
+  event.preventDefault();
+  const target = $(this.hash);
+  const headerHeight = $('.l-header').outerHeight();
+  if (target.length) {
+    $('html, body').animate({
+      scrollTop: target.offset().top - headerHeight
+    }, 400, function() {
       $('.c-hamburger__patty').removeClass('active');
       $('.p-contentsLink').removeClass('active');
       $('body').removeClass('u-no-scroll');
-    }
-  });
+    });
+  }
+});
 
   // スライダー
   $('.p-job-file').slick({

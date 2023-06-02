@@ -86,10 +86,3 @@
     }
   }
 }
-
-#article {
-  @include mixins.sp{
-    padding-top: 0.95rem;
-    margin-top:-0.7rem;
-  }
-}
