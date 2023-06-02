@@ -1,7 +1,7 @@
 @use '../../object/utility/utility.scss';
 
 .p-content {
-  padding-top: 106px;
+  padding: 106px 0 90px;
 
   &__inner {
     max-width: 1180px;
@@ -24,6 +24,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     z-index: -1;
+    border-radius: 10px;
 
     &:last-of-type {
       margin-right: 0;
@@ -40,6 +41,7 @@
       background-color: #000000;
       opacity: .5;
       z-index: -1;
+      border-radius: 10px;
     }
 
     &:nth-child(2) {
