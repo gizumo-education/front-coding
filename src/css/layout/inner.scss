@@ -7,113 +7,61 @@
       width: 100%;
       height: 500px;
       background-color: #98B1BE;
-      position: relative;
       display: inline-block;
       margin-top: 100px;
       margin-bottom: 60px;
+      position: relative;
       &__wrap {
-        display: flex;
-        width: 1360px;
-        height: 500px;
-      }
-      &__pic {
-        height: 500px;
-        background-image: url(../img/picture/key-visual.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-      &__box {
         display: block;
-        width: 105px;
-        height: 500px;
-        background-color: #98B1BE;
-        z-index: 100px;
-        position: absolute;
-        &:first-child {
-          width: 165px;
-          left: 70px;
+        position: relative;
+        &__pic {
+          height: 500px;
+          background-image: url(../img/picture/key-visual.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
         }
-        &:last-child {
-          right: 67px;
-          top: 0;
-        }
-      }
-      &__leaf {
-        &-l {
+        &__box {
           display: block;
-          width: 44.9px;
-          height: 141.82;
+          width: 105px;
+          height: 500px;
+          background-color: #98B1BE;
           z-index: 100px;
           position: absolute;
-          top: 90px;
-          left: 800px;
+          &:first-child {
+            width: 165px;
+            left: 70px;
+          }
+          &:last-child {
+            right: 67px;
+            top: 0;
+          }
         }
-        &-r {
+        &__keyword {
           display: block;
-          width: 44.9px;
-          height: 141.82;
-          z-index: 100px;
+          width: 341.81px;
+          height: 168.51px;
           position: absolute;
-          top: 90px;
-          left: 1095px;
+          top: 74.95px;
+          left: 830px;
         }
-      }
-      &__asterisk {
-        display: block;
-        width: 10px;
-        height: 14px;
-        position: absolute;
-        top: 90px;
-        left: 1067px;
-      }
-      &__keyword {
-        display: block;
-        width: 252.87px;
-        height: 161px;
-        position: absolute;
-        top: 100px;
-        left: 850px;
-        &__ranking {
-          display: block;
-          width: 251px;
-          height: 23px;
-          z-index: 100px;
-        }
-        &__no1 {
-          display: block;
-          width: 232px;
-          height: 90px;
-          z-index: 200px;
-          position: absolute;
-          top: 15px;
-          left: 10px;
-        }
-      }
-      &__research {
-        display: block;
-        width: 120px;
-        height: 10px;
-        z-index: 100px;
-        position: absolute;
-        top: 220px;
-        left: 970px;
-      }
-      &__main {
-        &-letter {
-          display: block;
-          width: 810px;
-          height: 55px;
-          z-index: 100px;
-          position: absolute;
-          top: 270px;
-          left: 520px;
+        &__main {
+          &-letter {
+            display: block;
+            width: 800px;
+            height: 65px;
+            z-index: 200px;
+            position: absolute;
+            top: 265px;
+            right: 193px;
+          }
         }
       }
       &__text {
         display: inline-block;
+        box-sizing: border-box;
         border: 2px solid #2EB6AA;
         background: #ffffff;
-        padding: 10px 41px 7px 41px;
+        padding: 5px 41.5px 6px 41.5px;
         border-radius: 10px;
         text-align: center;
         vertical-align: bottom;
@@ -128,11 +76,13 @@
           display: inline-block;
           font-weight: 400;
           font-size: 20px;
+          line-height: 28.96px;
         }
         &-number {
           display: inline-block;
           font-weight: 700;
           font-size: 40px;
+          line-height: 57.92px;
         }
       }
     }
@@ -235,10 +185,21 @@
         display: flex;
         justify-content: center;
       }
-      &__box {
+      &__link {
+        display: block;
         margin-left: 20px;
         &:first-child {
           margin-left: 0;
+        }
+      }
+      &__box {
+        display: block;
+        margin-left: 20px;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:hover {
+          opacity: 0.5;
         }
         &-pic {
           width: 280px;
@@ -246,6 +207,7 @@
           margin-bottom: 8.08px;
         }
         &-content {
+          color: #000000;
           display: block;
           width: 278px;
           height: 44px;
@@ -259,6 +221,7 @@
         display: flex;
         margin-top: 7px;
         &-content {
+          color: #000000;
           display: block;
           width: 60px;
           height: 21px;
@@ -440,79 +403,12 @@
           margin-bottom: 33px;
           position: relative;
         }
-        &__email {
-          &-1 {
-            position: absolute;
-            top: 0;
-            right: 0;
-          }
-          &-2 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-          }
-        }
-        &__border {
-          &-big {
-            &-1 {
-              position: absolute;
-              top: 6px;
-              left: 0;
-            }
-            &-2 {
-              position: absolute;
-              bottom: 36px;
-              right: 0;
-            }
-          }
-          &-medium {
-            &-1 {
-              position: absolute;
-              top: 21px;
-              left: 10px;
-            }
-            &-2 {
-              position: absolute;
-              bottom: 21px;
-              right: 10px;
-            }
-          }
-          &-small {
-            &-1 {
-              position: absolute;
-              top: 36px;
-              left: 20px;
-            }
-            &-2 {
-              position: absolute;
-              bottom: 6px;
-              right: 20px;
-            }
-          }
-        }
         &__shiny {
           display: inline-block;
           width: 108px;
           height: 111px;
           margin-bottom: 28px;
           position: relative;
-        }
-        &__shining {
-          &-big {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-          }
-          &-medium {
-            position: absolute;
-            top: 0;
-            right: 0;
-          }
-          &-small {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-          }
         }
         &__sub {
           &-title {
@@ -623,7 +519,7 @@
     }
     &__last {
       &__box {
-        margin-top: 210px;
+        margin-top: 150px;
         margin-bottom: 200px;
         text-align: center;
       }
