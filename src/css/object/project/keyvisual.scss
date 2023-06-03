@@ -1,11 +1,11 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as base;
 // ページ上部のキービジュアルに関するスタイル
 
 .p-main {
   &__keyvisual {
     width: 100%;
     height: 500px;
-    background-color: #98B1BE;
+    background-color: base.$gray;
     &__img {
       position: relative;
       margin: 0 auto;
@@ -21,8 +21,8 @@
         right: 50px;
         font-size: 47px;
         font-weight: bold;
-        color: #fff;
-        text-shadow:3px 3px 3px #98B1BE;
+        color: base.$white;
+        text-shadow:3px 3px 3px base.$gray;
       };
       &__content {
         position: absolute;
@@ -32,9 +32,9 @@
         padding: 10px 25px;
         border-radius: 10px;
         font-size: 16px;
-        color: #2EB6AA;
-        background-color: #fff;
-        border: 1px solid #2EB6AA; 
+        color: base.$skygreen;
+        background-color: base.$white;
+        border: 1px solid base.$skygreen; 
         .p-main__keyvisual__span {
           font-weight: bold;
           font-size: 35px;
@@ -44,15 +44,15 @@
   };
   .p-main__job {
     padding: 60px 0 60px 0;
-    background-color: #fff;
+    background-color: base.$white;
     &__search {
       margin: 0 auto;
       padding: 40px 0;
       width: 1180px;
       height: 240px;
-      border: 1px solid #DE1E79;
+      border: 1px solid base.$pink;
       border-radius: 10px;
-      background-color: #DEEEF9;
+      background-color: base.$whitegray;
       &__headline {
         text-align: center;
         font-size: 25px;
@@ -71,7 +71,7 @@
           padding: 16px 14px 16px;
           width: 200px;
           height: 60px;
-          border: 1px solid #DE1E79;
+          border: 1px solid base.$pink;
           border-radius: 10px;
           font-size: 18px;
           -webkit-appearance: none;
@@ -82,7 +82,7 @@
           height: 60px;
           margin-right: 15px;
           padding: 16px 14px 16px;
-          border: 1px solid #DE1E79;
+          border: 1px solid base.$pink;
           border-radius: 10px;
           font-size: 18px;
         };
@@ -92,7 +92,7 @@
 
   .p-main__newoffer {
     padding: 60px 0;
-    background-color: #EFF6FC;
+    background-color: base.$whiteblue;
       &__title {
         font-size: 25px;
       };
@@ -110,23 +110,23 @@
           .p-main__newoffer__content {
             margin-top: 8px;
             font-size: 16px;
-            color: #000;
+            color: base.$black;
           };
           .p-main__newoffer__explanation {
             margin-top: 5px;
             font-size: 14px;
             text-align: center;
-            color: #000;
+            color: base.$black;
             line-height: 20px;
             width: 60px;
-            background-color: #FFCAD0;
+            background-color: base.$whitepink;
             display: inline-block;
           };
           .p-main__newoffer__detail {
             margin: 9px;
             margin-left: 10px;
             font-size: 14px;
-            color: #000;
+            color: base.$black;
             display: inline-block;
           };
         };
@@ -135,4 +135,43 @@
         margin-right: 0;
       };
   };
+
+  .p-main__sub {
+    position: relative;
+    &__visual {
+      padding: 104px 0 103px;
+      max-width: 100%;
+      height: 300px;
+      background-image: url(../img/picture/subvisual.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 10;
+      opacity: 0.5;
+    };
+    &__title {
+      // text-align: center;
+      position: absolute;
+      top: 104px;
+      left: 34%;
+      z-index: 10000;
+    };
+    &__title__two {
+      // margin-top: 21px;
+      // text-align: center;
+      position: absolute;
+      top: 161px;
+      left: 32%;
+      z-index: 10000;
+    };
+  };
+  .p-main__sub::before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: base.$black;
+    z-index: -1;
+  };
+
 };
