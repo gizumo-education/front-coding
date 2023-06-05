@@ -1,8 +1,10 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
 
-.u-size__font {
-  font-size: 25px;
-  font-weight: bold;
-  color: #fff;
+.u-padding__six {
+  padding: 60px 0 60px 0;
+};
+
+.u-padding__onefive {
+  padding: 150px 0 200px;
 };

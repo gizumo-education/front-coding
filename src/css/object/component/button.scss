@@ -1,45 +1,32 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as base;
 // 共通パーツであるボタンのスタイルを記述するファイル
 
-.search {
-  width: 18px;
-  height: 18px;
+
+.c-size__font {
+  font-size: 25px;
+  font-weight: base.$bold;
+  color: base.$white;
 };
 
-.c-btn__secondary {
-  padding: 15px 20px;
-  width: auto;
+.c-nav__style {
+  font-size: 14px;
+  font-weight: base.$regular;
+  color: base.$white;
+  padding: 15px 0 15px 10px;
+  margin-right: 15px;
+  background-color: #92C5EA;
   border-radius: 10px;
 };
 
 
-.c-btn__secondary:hover {
+.c-nav__style:hover {
   opacity: .8;
   transition: .3s;
 };
 
-
-.heart {
-  vertical-align: middle;
-  display: inline-block;
-  width: 20px;
-  height: 18px;
-
+.c-nav__style:last-child {
+  margin-right: 100px;
 };
-
-.c-clock {
-  vertical-align: middle;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-};
-
-.c-browser_search {
-  vertical-align: middle;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
 
 .c-keyvisual__content {
   position: absolute;
@@ -94,9 +81,9 @@
 };
 
 
-.c-main__newoffer__btn__block {
+.c-main__btn__block {
   text-align: center;
-  .c-main__newoffer__btn {
+  .c-main__btn {
     display: inline-block;
     -webkit-appearance: none;
     appearance: none;
@@ -110,8 +97,22 @@
     color: #fff;
     border: none;
   };
-  .c-main__newoffer__btn:hover {
+  .c-main__btn:hover {
     opacity: .8;
     transition: .3s;
   };
+};
+
+
+.c-flow__arrow::after {
+  content: "";
+  position: absolute;
+  top: 160px;
+  right: -42px;
+  border: 20px solid transparent;
+  border-left: 20px solid #DE1E79;
+  z-index: 100000;
+};
+.c-flow__arrow:last-child::after {
+ border: none;
 };
