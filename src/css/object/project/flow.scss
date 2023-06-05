@@ -9,6 +9,7 @@
   }
 
   &__item {
+    position: relative;
     padding: 60px 20px 40px;
     text-align: center;
     margin-right: 22px;
@@ -20,6 +21,21 @@
 
     &:last-of-type {
       margin-right: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -50px;
+      transform: translate(0, -50%);
+      border: 25px solid transparent;
+      border-left: 25px solid flow.$pink;
+    }
+
+    &:nth-child(4)::after {
+      content: "";
+      border: none;
     }
   }
 
