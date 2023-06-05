@@ -45,7 +45,9 @@
     &__list::before {
       position: absolute;
       counter-increment: number 1;
-      content:'STEP'counter(number);
+      content:'STEP\A' counter(number);
+      white-space: pre;
+      text-align: center;
       padding: 20px 5px;
       font-size: 16px;
       color: base.$white;
