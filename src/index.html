@@ -49,6 +49,56 @@
         <p class="p-main__keyvisual__img__content">現在の求人掲載数:<span class="p-main__keyvisual__span">2,320</span>件</p>
       </div>
     </div>
+    <section class="p-main__job u-padding__six">
+      <div class="p-main__job__search">
+        <h2 class="p-main__job__search__headline">お仕事検索</h2>
+        <p class="p-main__job__search__content">働きたい職種・地域・給与希望を入れて検索!</p>
+        <div class="p-main__job__search__select">
+          <form action="jobsearch">
+            <div class="c-selectjob__search">
+              <select name="job" class="p-main__job__detail">
+                <option value="医療事務"selected>医療事務</option>
+                <option value="調剤薬局">調剤薬局</option>
+                <option value="診療情報管理士">診療情報管理士</option>
+                <option value="歯科助手">歯科助手</option>
+                <option value="歯科事務">歯科事務</option>
+                <option value="看護補助・看護助手">看護補助・看護助手</option>
+                <option value="病院SE">病院SE</option>
+              </select>
+            </div>
+            <div class="c-selectjob__search">
+              <select name="area" class="p-main__job__detail">
+                <option value="茨城県">茨城県</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="東京都"selected>東京都</option>
+                <option value="栃木県">栃木県</option>
+              </select>
+            </div>
+            <div class="c-selectjob__search">
+              <select name="salary" class="p-main__job__detail">
+                <option value="17">月給17万〜</option>
+                <option value="18">月給18万〜</option>
+                <option value="19">月給19万〜</option>
+                <option value="20"selected>月給20万〜</option>
+                <option value="21">月給21万〜</option>
+                <option value="22">月給22万〜</option>
+                <option value="23">月給23万〜</option>
+              </select>
+            </div>
+            <table>
+              <input type="text" class="p-main__job__detail__other" name="other" placeholder="キーワード・企業名・スキルなど">
+              <div class="c-main__jobsearch__btn">
+                <img class="c-jobsearch__icon" src="img/icon/pink_search.png">
+                <input type="submit" class="c-main__pink__btn" value="検索する">
+              </div>
+            </table>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>

@@ -1,0 +1,48 @@
+@use '../../object/utility/utility.scss' as base;
+
+.p-main__job {
+  background-color: base.$white;
+  &__search {
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 1180px;
+    height: 240px;
+    border: 1px solid base.$pink;
+    border-radius: 10px;
+    background-color: base.$whitegray;
+    &__headline {
+      text-align: center;
+      font-size: 25px;
+      font-weight: base.$bold;
+    };
+    &__content {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 20px;
+    };
+    &__select {
+      text-align: center;
+      .p-main__job__detail {
+        position: relative;
+        margin: 26px 16px 0 0;
+        padding: 16px 14px 16px;
+        width: 200px;
+        height: 60px;
+        border: 1px solid base.$pink;
+        border-radius: 10px;
+        font-size: 18px;
+        -webkit-appearance: none;
+        appearance: none;
+      };
+      .p-main__job__detail__other {
+        width: 300px;
+        height: 60px;
+        margin-right: 15px;
+        padding: 16px 14px 16px;
+        border: 1px solid base.$pink;
+        border-radius: 10px;
+        font-size: 18px;
+      };
+    };
+  };
+};
