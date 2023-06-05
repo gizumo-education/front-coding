@@ -20,7 +20,7 @@
         top: 270px;
         right: 50px;
         font-size: 47px;
-        font-weight: bold;
+        font-weight: base.$bold;
         color: base.$white;
         text-shadow:3px 3px 3px base.$gray;
       };
@@ -36,139 +36,10 @@
         background-color: base.$white;
         border: 1px solid base.$skygreen; 
         .p-main__keyvisual__span {
-          font-weight: bold;
+          font-weight: base.$bold;
           font-size: 35px;
         };
       };
     };
   };
-  .p-main__job {
-    padding: 60px 0 60px 0;
-    background-color: base.$white;
-    &__search {
-      margin: 0 auto;
-      padding: 40px 0;
-      width: 1180px;
-      height: 240px;
-      border: 1px solid base.$pink;
-      border-radius: 10px;
-      background-color: base.$whitegray;
-      &__headline {
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-      };
-      &__content {
-        text-align: center;
-        margin-top: 20px;
-        font-size: 20px;
-      };
-      &__select {
-        text-align: center;
-        .p-main__job__detail {
-          position: relative;
-          margin: 26px 16px 0 0;
-          padding: 16px 14px 16px;
-          width: 200px;
-          height: 60px;
-          border: 1px solid base.$pink;
-          border-radius: 10px;
-          font-size: 18px;
-          -webkit-appearance: none;
-          appearance: none;
-        };
-        .p-main__job__detail__other {
-          width: 300px;
-          height: 60px;
-          margin-right: 15px;
-          padding: 16px 14px 16px;
-          border: 1px solid base.$pink;
-          border-radius: 10px;
-          font-size: 18px;
-        };
-      };
-    };
-  };
-
-  .p-main__newoffer {
-    padding: 60px 0;
-    background-color: base.$whiteblue;
-      &__title {
-        font-size: 25px;
-      };
-      &__lists {
-        margin-top: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .p-main__newoffer__list {
-          margin-right: 20px;
-          width: 280px;
-          .p-main__newoffer__img {
-            border-radius: 10px;
-          };
-          .p-main__newoffer__content {
-            margin-top: 8px;
-            font-size: 16px;
-            color: base.$black;
-          };
-          .p-main__newoffer__explanation {
-            margin-top: 5px;
-            font-size: 14px;
-            text-align: center;
-            color: base.$black;
-            line-height: 20px;
-            width: 60px;
-            background-color: base.$whitepink;
-            display: inline-block;
-          };
-          .p-main__newoffer__detail {
-            margin: 9px;
-            margin-left: 10px;
-            font-size: 14px;
-            color: base.$black;
-            display: inline-block;
-          };
-        };
-      };
-      .p-main__newoffer__list:last-child {
-        margin-right: 0;
-      };
-  };
-
-  .p-main__sub {
-    position: relative;
-    &__visual {
-      padding: 104px 0 103px;
-      max-width: 100%;
-      height: 300px;
-      background-image: url(../img/picture/subvisual.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 10;
-      opacity: 0.5;
-    };
-    &__title {
-      position: absolute;
-      top: 104px;
-      left: 34%;
-      z-index: 10000;
-    };
-    &__title__two {
-      position: absolute;
-      top: 161px;
-      left: 32%;
-      z-index: 10000;
-    };
-  };
-  .p-main__sub::before {
-    content:'';
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    background-color: base.$black;
-    z-index: -1;
-  };
-
 };
