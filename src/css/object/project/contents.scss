@@ -1,0 +1,102 @@
+@use '../../object/utility/utility.scss' as base;
+
+.p-main__contents {
+  padding-top: 106px;
+  &__title {
+    font-size: 25px;
+    font-weight: base.$bold;
+    text-align: center;
+  };
+  .p-main__contents__block {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    &__list {
+      position: relative;
+      margin-right: 20px;
+      border-radius: 10px;
+      .p-main__contents__block__img {
+        width: 380px;
+        height: 240px;
+        background-image: url(../img/picture/contents1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+        z-index: 1;
+      };
+      .p-main__contents__block__img__second {
+        width: 380px;
+        height: 240px;
+        background-image: url(../img/picture/contents2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+        z-index: 1;
+      };
+      .p-main__contents__block__content {
+        position: absolute;
+        top: 70px;
+        left: 100px;
+        // margin-top: 70px;
+        font-size: 24px;
+        font-weight: base.$bold;
+        color: base.$white;
+        z-index: 10;
+      };
+      .p-main__contents__block__content__second {
+        position: absolute;
+        top: 71px;
+        left: 70px;
+        // margin-top: 70px;
+        font-size: 24px;
+        font-weight: base.$bold;
+        color: base.$white;
+        z-index: 10;
+      };
+      .p-main__contents__block__detail {
+        position: absolute;
+        top: 139px;
+        left: 60px;
+        font-size: 16px;
+        font-weight: base.$regular;
+        color: base.$white;
+        text-align: center;
+        z-index: 10;
+      };
+      .p-main__contents__block__detail__second {
+        position: absolute;
+        top: 140px;
+        left: 42px;
+        // margin-top: 44px;
+        font-size: 16px;
+        font-weight: base.$regular;
+        color: base.$white;
+        text-align: center;
+        z-index: 10;
+      };
+    };
+    .p-main__contents__block__list:hover {
+      opacity: .8;
+      transition: .3s;
+    };
+    .p-main__contents__block__content__second:hover {
+      opacity: .8;
+      transition: .3s;
+    };
+    .p-main__contents__block__list::before {
+      content:'';
+      position: absolute;
+      width: 100%;
+      height: 240px;
+      border-radius: 10px;
+      background-color: base.$black;
+      z-index: -1;
+    };
+    .p-main__contents__block__list:last-child {
+      margin-right: 0;
+    };
+
+  };
+};
