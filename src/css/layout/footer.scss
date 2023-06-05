@@ -1,2 +1,55 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as base;
 // footerのスタイルを記述するファイル
+
+.p-footers {
+  background-color: base.$whiteblue;
+  .p-footer {
+    display: flex;
+    justify-content: space-between;
+    &__block {
+      &__element {
+        width: 295px;
+        display: flex;
+        margin-top: 27px;
+        flex-wrap: wrap;
+        font-size: 16px;
+        font-weight: base.$regular;
+        color: base.$black;
+        &__list {
+          margin: 20px 39px 0 0;
+          &__content {
+            color: base.$black;
+          };
+          &__content:hover {
+            opacity: .8;
+            transition: .3s;
+          };
+        };
+        &__list:nth-child(2n) {
+          margin: 20px 0 0;
+        };
+      };
+      &__element:first-child {
+        margin-top: 79px;
+      };
+    };
+    &__aside {
+      &__block {
+        margin: 55px 0 25px;
+        &__list {
+          margin-top: 15px;
+        };
+        &__list:first-child {
+          margin-top: 0;
+        };
+      };
+    };
+  };
+  .p-footer__small {
+    padding: 10px 0;
+    background-color: base.$blackgray;
+    font-size: 14px;
+    font-weight: base.$regular;
+    text-align: center
+  };
+};
