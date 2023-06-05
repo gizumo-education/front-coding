@@ -1,0 +1,62 @@
+@use '../../object/utility/utility.scss' as base;
+
+ //  flow
+
+ .p-main__flow {
+  padding-top: 105px;
+  &__title {
+    font-size: 25px;
+    font-weight: base.$bold;
+    text-align: center;
+  };
+  &__block {
+    margin-top: 51px;
+    display: flex;
+    justify-content: center;
+    counter-reset: number 0;
+    z-index: 1;
+    &__list {
+      position: relative;
+      margin-right: 20px;
+      padding: 20px 0 40px;
+      width: 277px;
+      height: 357px;
+      border: 2px solid base.$orangepink;
+      border-radius: 10px;
+      &__img {
+        margin: 55px 0 20px;
+        text-align: center;
+      };
+      &__content {
+        font-size: 24px;
+        font-weight: base.$bold;
+        text-align: center;
+      };
+      &__detail {
+        margin: 18px auto 0;
+        width: 237px;
+        font-size: 14px;
+        font-weight: base.$regular;
+      };
+    };
+    &__list:last-child {
+      margin-right: 0;
+    };
+    &__list::before {
+      position: absolute;
+      counter-increment: number 1;
+      content:'STEP'counter(number);
+      padding: 20px 5px;
+      font-size: 16px;
+      color: base.$white;
+      font-weight: base.$bold;
+      width: 60px;
+      height: 60px;
+      top: 10px;
+      left: 10px;
+      border-radius: 50%;
+      z-index: 11;
+      background-color: base.$orangepink;
+    };
+  };
+};
