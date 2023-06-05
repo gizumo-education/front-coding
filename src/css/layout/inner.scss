@@ -91,8 +91,8 @@
       display: flex;
       justify-content: center;
       &__box {
-        display: inline-block;
-        width: 1180px;
+        display: block;
+        box-sizing: border-box;
         height: 240px;
         text-align: center;
         background-color: #DEEEF9;
@@ -120,7 +120,7 @@
       }
       &__select {
         display: flex;
-        width: 1180px;
+        box-sizing: border-box;
         margin: 0 40px 40px 40px;
         &__style {
           margin-left: 16px;
@@ -134,7 +134,7 @@
             height: 0;
             position: absolute;
             top: 28px;
-            left: 166px;
+            right: 15px;
             border-left: 15px solid transparent;
             border-right: 15px solid transparent;
             border-top: 15px solid #DE1E79;
@@ -180,6 +180,7 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 26.06px;
+        appearance: none;
         border: 1px solid #DE1E79;
         border-radius: 10px;
         padding: 17px 0 17px 15px;
@@ -581,9 +582,11 @@
     }
     &__last {
       &__box {
+        display: flex;
+        width: 100%;
+        justify-content: center;
         margin-top: 150px;
         margin-bottom: 200px;
-        text-align: center;
       }
     }
   }
