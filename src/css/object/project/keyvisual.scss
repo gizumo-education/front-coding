@@ -48,3 +48,12 @@
   }
 
 }
+
+@include key.tab {
+  .p-keyvisual {
+
+    &__text {
+      font-size: 0.16rem;
+    }
+  }
+}
