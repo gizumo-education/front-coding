@@ -1,2 +1,91 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as footer;
 // footerのスタイルを記述するファイル
+
+.l-footer {
+  padding-top: 55px;
+  margin-top: 140px;
+  background-color: footer.$footer-blue;
+
+  &__top {
+    padding-bottom: 25px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    font-size: 16px;
+  }
+
+  &__link {
+    color: footer.$black;
+    margin-top: 24px;
+    transition: .3s;
+
+    &:hover {
+      opacity: .8;
+      transition: .3s
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 295px;
+
+    &__item {
+      margin-right: 39px;
+      margin-bottom: 25px;
+      color: footer.$black;
+      transition: .3s;
+
+      &:hover {
+        opacity: .8;
+        transition: .3s
+      }
+    }
+
+    &__item:nth-child(2n-1) {
+      width: 96px;
+    }
+
+    &__item:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &__item:nth-child(5) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__right__link {
+    display: block;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+      transition: .3s;
+      cursor: pointer;
+    }
+  }
+
+  &__right__link:nth-child(2) {
+    margin-top: 15px;
+  }
+
+  &__bottom {
+    background-color: footer.$gray;
+    padding: 10px 0;
+
+    small {
+      display: block;
+      color: footer.$black;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@use '../../object/utility/utility.scss' as flow;
+
+.p-flow {
+  padding-top: 105px;
+
+  &__list {
+    margin-top: 51px;
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    padding: 60px 20px 40px;
+    text-align: center;
+    margin-right: 22px;
+    border: solid 2px flow.$pink;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -50px;
+      transform: translate(0, -50%);
+      border: 25px solid transparent;
+      border-left: 25px solid flow.$pink;
+    }
+
+    &:nth-child(4)::after {
+      content: "";
+      border: none;
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    display: inline-block;
+    padding-top: 10px;
+    line-height: 19px;
+    font-size: 16px;
+    color: flow.$white;
+    font-weight: 700;
+    text-align: center;
+    background-color: flow.$pink;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  &__img {
+    flex-grow: 1;
+  }
+
+  &__title {
+    flex-grow: 1;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 25px;
+  }
+
+  &__text {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+  }
+}

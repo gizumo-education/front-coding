@@ -1,0 +1,59 @@
+@use '../../object/utility/utility.scss' as work;
+
+.p-work {
+  background-color: work.$footer-blue;
+  padding: 64px 0 67px;
+
+  &__list {
+    display: flex;
+    margin: 25px 0 61px;
+  }
+
+  &__item {
+    margin-right: 20px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: work.$black;
+    transition: .3s;
+
+    &:hover {
+      opacity: .8;
+      transition: .3s
+    }
+  }
+
+  &__img img {
+    border-radius: 10px;
+  }
+
+  &__title {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__block {
+    margin-top: 5px;
+  }
+
+  &__label {
+    display: inline-block;
+    background-color: work.$pink3;
+    margin-right: 10px;
+    width: 60px;
+    height: 21px;
+    line-height: 21px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &__text {
+    display: inline-block;
+    font-size: 14px;
+  }
+}

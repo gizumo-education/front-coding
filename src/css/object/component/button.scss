@@ -1,2 +1,84 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as btn;
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button {
+  color : btn.$white;
+  background-color: btn.$blue;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 14px;
+  position: relative;
+  transition: .3s;
+
+  &:hover {
+    opacity: .8;
+    transition: .3s
+  }
+}
+
+.c-button-heart::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  background-image: url(../img/icon/heart.png);
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 20px;
+}
+
+.c-button-clock::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  background-image: url(../img/icon/clock.png);
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 18px;
+}
+
+.c-button-history::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 30px;
+  background-image: url(../img/icon/history.png);
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+}
+
+.c-more-button {
+  color : btn.$white;
+  background-color: btn.$pink;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 18px;
+  border-radius: 30px;
+  margin: 0 auto;
+  transition: .3s;
+
+  &:hover {
+    opacity: .8;
+    transition: .3s;
+  }
+}
+
+.c-search-btn {
+  position: relative;
+  font-weight: 700;
+  color: btn.$white;
+  background-color: btn.$pink;
+  border: solid 1px btn.$pink;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 16px 20px 21px 48px;
+  width: 140px;
+  height: 60px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
