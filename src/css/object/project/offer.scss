@@ -17,6 +17,7 @@
         .p-main__newoffer__list {
           margin-right: 20px;
           width: 280px;
+          transition: .3s;
           .p-main__newoffer__img {
             border-radius: 10px;
           };
@@ -24,9 +25,10 @@
             margin-top: 8px;
             font-size: 16px;
             color: base.$black;
+            line-height: 22px;
           };
           .p-main__newoffer__explanation {
-            margin-top: 5px;
+            margin-top: 4px;
             font-size: 14px;
             text-align: center;
             color: base.$black;
@@ -36,7 +38,6 @@
             display: inline-block;
           };
           .p-main__newoffer__detail {
-            margin: 9px;
             margin-left: 10px;
             font-size: 14px;
             color: base.$black;
@@ -48,59 +49,6 @@
           transition: .3s;
         };
       };
-
-      &__lists::before {
-        content: "";
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        border-bottom: solid 1px base.$black;
-        border-left: solid 1px base.$black;
-        transform:rotate(45deg);
-        position: absolute;
-        top:200px;
-        left:35px;
-        z-index: 20;
-      };
-      &__lists::after{
-        content:"";
-        width:60px;
-        height: 60px;
-        background: base.$white;
-        border-radius: 50%;
-        position: absolute;
-        opacity: 0.7;
-        top: 180px;
-        left: 10px;
-        z-index: 10;
-    };
-
-    &__list::before {
-      content: "";
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border-top: solid 1px #000;
-      border-right: solid 1px #000;
-      transform:rotate(45deg);
-      position: absolute;
-      top:200px;
-      right:35px;
-      z-index: 20;
-    };
-    &__list::after{
-      content:"";
-      width:60px;
-      height: 60px;
-      background: base.$white;
-      border-radius: 50%;
-      position: absolute;
-      opacity: 0.7;
-      top: 180px;
-      right: 10px;
-      z-index: 10;
-  };
-
     
       .p-main__newoffer__list:last-child {
         margin-right: 0;
