@@ -82,3 +82,70 @@
   box-sizing: border-box;
   cursor: pointer;
 }
+
+@include btn.tab {
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .c-burger-btn {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+  }
+
+  .c-bars {
+    height: 38px;
+  }
+
+  .c-bar {
+    border-radius: 3px;
+    background-color: btn.$black;
+    display: block;
+    width: 50px;
+    height: 6px;
+  }
+
+  .c-bar_top {
+    transform: translateY(-10px);
+  }
+
+  .c-bar_bottom {
+    transform: translateY(10px);
+  }
+}
+
+@include btn.sp {
+  .c-burger-btn {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+  }
+
+  .c-bars {
+    height: 38px;
+  }
+
+  .c-bar {
+    border-radius: 3px;
+    background-color: btn.$black;
+    display: block;
+    width: 50px;
+    height: 6px;
+  }
+
+  .c-bar_top {
+    transform: translateY(-10px);
+  }
+
+  .c-bar_bottom {
+    transform: translateY(10px);
+  }
+}

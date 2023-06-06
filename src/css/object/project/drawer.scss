@@ -1,0 +1,76 @@
+@use '../../object/utility/utility.scss' as drawer;
+
+.p-drawer {
+  display: none;
+}
+
+@include drawer.tab {
+.p-drawer {
+    padding-top: 57px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    opacity: 0.7;
+    background-color: drawer.$black;
+    width: 100%;
+    height: 100vh;
+
+    &__list {
+      text-align: center;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__item {
+      margin-top: 38px;
+
+      &:first-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    &__link {
+      color: drawer.$white;
+      font-size: 22px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+}
+
+@include drawer.sp {
+  .p-drawer {
+      padding-top: 57px;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      opacity: 0.7;
+      background-color: drawer.$black;
+      width: 100%;
+      height: 100vh;
+
+      &__list {
+        position: absolute;
+        top: 57px;
+        left: 60px;
+      }
+
+      &__item {
+        margin-top: 38px;
+
+        &:first-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      &__link {
+        color: drawer.$white;
+        font-size: 22px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+    }
+  }
+

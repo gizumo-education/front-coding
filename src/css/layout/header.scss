@@ -90,5 +90,32 @@
       margin-right: 0;
     }
   }
+}
 
+@include header.tab {
+  .l-header {
+    height: 70px;
+    padding: 16px 0;
+
+    &__nav {
+      display: none;
+    }
+    &__btn {
+      display: none;
+    }
+  }
+}
+
+@include header.sp {
+  .l-header {
+    height: 70px;
+    padding: 0;
+
+    &__nav {
+      display: none;
+    }
+    &__btn {
+      display: none;
+    }
+  }
 }
