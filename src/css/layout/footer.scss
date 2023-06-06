@@ -64,10 +64,12 @@
   &__right__link {
     display: block;
     transition: .3s;
+    cursor: pointer;
 
     &:hover {
       opacity: .8;
       transition: .3s;
+      cursor: pointer;
     }
   }
 

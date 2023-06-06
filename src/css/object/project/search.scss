@@ -58,6 +58,15 @@ input, select {
     }
   }
 
+  &-form__link {
+    transition: .3s;
+
+    &:hover {
+      opacity: .8;
+      transition: .3s;
+    }
+  }
+
   &-form__select {
     display: inline-block;
     padding-left: 10px;

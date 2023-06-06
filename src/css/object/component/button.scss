@@ -64,7 +64,7 @@
 
   &:hover {
     opacity: .8;
-    transition: .3s
+    transition: .3s;
   }
 }
 
@@ -80,4 +80,5 @@
   width: 140px;
   height: 60px;
   box-sizing: border-box;
+  cursor: pointer;
 }
