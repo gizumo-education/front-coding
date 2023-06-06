@@ -83,6 +83,10 @@
   cursor: pointer;
 }
 
+.c-burger-btn {
+  display: none;
+}
+
 @include btn.tab {
 
   .c-search-btn {
@@ -106,6 +110,7 @@
   }
 
   .c-burger-btn {
+    display: block;
     position: absolute;
     top: 16px;
     right: 15px;
@@ -134,6 +139,7 @@
 
 @include btn.sp {
   .c-burger-btn {
+    display: block;
     position: absolute;
     top: 16px;
     right: 15px;
