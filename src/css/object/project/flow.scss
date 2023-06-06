@@ -18,13 +18,12 @@
     &__list {
       position: relative;
       margin-right: 20px;
-      padding: 20px 0 40px;
+      padding-bottom: 40px;
       width: 277px;
       height: 357px;
       border: 2px solid base.$orangepink;
       border-radius: 10px;
       &__img {
-        margin: 55px 0 20px;
         text-align: center;
       };
       &__content {
@@ -37,28 +36,28 @@
         width: 237px;
         font-size: 14px;
         font-weight: base.$regular;
+        font-weight: base.$regular;
+        line-height: 20px;
+      };
+      .p-main__step {
+        position: absolute;
+        top: 9px;
+        left: 9px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: base.$orangepink;
+        font-weight: base.$bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        padding-top: 10px;
+        display: inline-block;
+        color: base.$white;
       };
     };
     &__list:last-child {
       margin-right: 0;
-    };
-    &__list::before {
-      position: absolute;
-      counter-increment: number 1;
-      content:'STEP\A' counter(number);
-      white-space: pre;
-      text-align: center;
-      padding: 20px 5px;
-      font-size: 16px;
-      color: base.$white;
-      font-weight: base.$bold;
-      width: 60px;
-      height: 60px;
-      top: 10px;
-      left: 10px;
-      border-radius: 50%;
-      z-index: 11;
-      background-color: base.$orangepink;
     };
   };
 };
