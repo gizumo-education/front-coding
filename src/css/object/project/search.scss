@@ -87,3 +87,47 @@ input, select {
       border: solid 1px sea.$pink;
   }
 }
+
+@include sea.sp {
+  .p-search {
+
+    &-form__list {
+      display: block;
+      text-align: center;
+    }
+
+    &-form__item {
+      margin-right: 0.1rem;
+    }
+
+    &-form__item:nth-child(1), &-form__item:nth-child(2), &-form__item:nth-child(3) {
+      display: inline-block;
+    }
+
+    &-form__item:nth-child(4) {
+      display: inline-block;
+      margin-top: 0.15rem;
+    }
+
+    &-form__item:nth-child(5) {
+      margin-top: 0.19rem;
+    }
+
+    &-form__item:nth-child(4), &-form__item:nth-child(5) {
+      margin-right: 0;
+    }
+
+    &-form__select {
+      padding-left: 0.1rem;
+      height: 0.3rem;
+      width: 1rem;
+    }
+
+    &-form__keyword {
+      padding: 4px 0 4px 6px;
+      width: 3.2rem;
+      height: 0.3rem;
+      display: block;
+    }
+  }
+}
