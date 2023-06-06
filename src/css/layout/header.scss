@@ -11,7 +11,7 @@
   z-index: 1000000;
   &__navs {
     width: 100%;
-    background-color: #fff;
+    background-color: base.$white;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -19,12 +19,13 @@
       display: flex;
       .l-header__nav__link {
         padding: 0 20px;
-        border-right: 1px solid #000;
+        border-right: 1px solid base.$black;
+        transition: .9s;
         .l-header__nav__link__content {
           display: inline-block;
           vertical-align: top;
           font-size: 16px;
-          color: #000;
+          color: base.$black;
           z-index: 100000;
         };
       };
