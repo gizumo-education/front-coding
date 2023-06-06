@@ -1,7 +1,6 @@
 @use '../../object/utility/utility.scss' as subkey;
 
 .p-subvisual {
-  padding-top: 104px;
   background-image: url(../img/picture/subvisual.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -9,6 +8,13 @@
   height: 300px;
   position: relative;
   z-index: 10;
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   &__text {
     font-weight: 700;
