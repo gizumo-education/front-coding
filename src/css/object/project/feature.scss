@@ -42,6 +42,20 @@
   }
 }
 
+.pc-br {
+  display: block;
+}
+
+.sp-br {
+  display: none;
+}
+
+@include feature.pc {
+  .py-4 {
+    padding: 40px 0 30px !important;
+  }
+}
+
 @include feature.tab {
   .p-feature {
 
@@ -90,6 +104,8 @@
       padding: 30px 0;
       margin-top: 20px;
       margin-right: 0;
+      width: 370px;
+      height: 144px;
 
       &:nth-child(-n+2) {
         margin-top: 20px;
@@ -109,5 +125,13 @@
       font-size: 12px;
       line-height: 17px;
     }
+  }
+
+  .pc-br {
+    display: none;
+  }
+
+  .sp-br {
+    display: block;
   }
 }
