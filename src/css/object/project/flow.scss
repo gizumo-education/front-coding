@@ -2,14 +2,14 @@
 
  //  flow
 
- .p-main__flow {
+ .p-flow {
   padding-top: 105px;
-  &__title {
+  &__main__title {
     font-size: 25px;
     font-weight: base.$bold;
     text-align: center;
   };
-  &__block {
+  &__main__block {
     margin-top: 51px;
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@
         font-weight: base.$regular;
         line-height: 20px;
       };
-      .p-main__step {
+      .p-flow__main__step {
         position: absolute;
         top: 9px;
         left: 9px;

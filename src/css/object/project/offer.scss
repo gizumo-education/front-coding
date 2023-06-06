@@ -2,7 +2,7 @@
 
   // 新着求人
 
-  .p-main__newoffer {
+  .p-offer__newoffer {
     position: relative;
     padding: 60px 0;
     background-color: base.$whiteblue;
@@ -14,20 +14,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        .p-main__newoffer__list {
+        .p-offer__newoffer__list {
           margin-right: 20px;
           width: 280px;
           transition: .3s;
-          .p-main__newoffer__img {
+          .p-offer__newoffer__img {
             border-radius: 10px;
           };
-          .p-main__newoffer__content {
+          .p-offer__newoffer__content {
             margin-top: 8px;
             font-size: 16px;
             color: base.$black;
             line-height: 22px;
           };
-          .p-main__newoffer__explanation {
+          .p-offer__newoffer__explanation {
             margin-top: 4px;
             font-size: 14px;
             text-align: center;
@@ -37,20 +37,20 @@
             background-color: base.$whitepink;
             display: inline-block;
           };
-          .p-main__newoffer__detail {
+          .p-offer__newoffer__detail {
             margin-left: 10px;
             font-size: 14px;
             color: base.$black;
             display: inline-block;
           };
         };
-        .p-main__newoffer__list:hover {
+        .p-offer__newoffer__list:hover {
           opacity: .8;
           transition: .3s;
         };
       };
     
-      .p-main__newoffer__list:last-child {
+      .p-offer__newoffer__list:last-child {
         margin-right: 0;
       };
   };

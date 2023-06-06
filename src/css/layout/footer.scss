@@ -1,12 +1,12 @@
 @use '../object/utility/utility.scss' as base;
 // footerのスタイルを記述するファイル
 
-.p-footers {
+.l-footer {
   background-color: base.$whiteblue;
-  .p-footer {
+  &__block {
     display: flex;
     justify-content: space-between;
-    &__block {
+    &__area {
       &__element {
         width: 295px;
         display: flex;
@@ -37,7 +37,7 @@
         margin-top: 79px;
       };
     };
-    &__aside {
+    &__area__aside {
       &__block {
         margin: 55px 0 25px;
         &__list {
@@ -54,7 +54,9 @@
       };
     };
   };
-  .p-footer__small {
+  .l-footer__block__area__small {
+    display: inline-block;
+    width: 100%;
     padding: 10px 0;
     background-color: base.$blackgray;
     font-size: 14px;

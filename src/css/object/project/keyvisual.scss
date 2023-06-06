@@ -1,8 +1,8 @@
 @use '../../object/utility/utility.scss' as base;
 // ページ上部のキービジュアルに関するスタイル
 
-.p-main {
-  &__keyvisual {
+.p-keyvisual {
+  &__main {
     width: 100%;
     height: 500px;
     background-color: base.$gray;

@@ -2,13 +2,13 @@
 // 共通パーツであるボタンのスタイルを記述するファイル
 
 
-.c-size__font {
+.c-button__size__font {
   font-size: 25px;
   font-weight: base.$bold;
   color: base.$white;
 };
 
-.c-nav__style {
+.c-button__nav__style {
   font-size: 14px;
   font-weight: base.$regular;
   color: base.$white;
@@ -20,28 +20,28 @@
 };
 
 
-.c-nav__style:hover {
+.c-button__nav__style:hover {
   opacity: .8;
   transition: .3s;
 };
 
-.c-nav__style:last-child {
+.c-button__nav__style:last-child {
   margin-right: 100px;
 };
 
-.c-keyvisual__content {
+.c-button__keyvisual__content {
   position: absolute;
   top: 50px;
   right: 250px;
 };
 
 
-.c-selectjob__search {
+.c-button__selectjob__search {
   display: inline-block;
   position: relative;
 };
 
-.c-selectjob__search::before {
+.c-button__selectjob__search::before {
   content: "";
   position: absolute;
   bottom: 15px;
@@ -53,7 +53,7 @@
 
 
 
-.c-main__jobsearch__btn {
+.c-button__main__jobsearch__btn {
   display: inline-block;
   margin: 0 auto;
   height: 60px;
@@ -63,12 +63,12 @@
   text-align: center;
   background-color: base.$orangepink;
   border-radius: 30px;
-  .c-jobsearch__icon {
+  .c-button__jobsearch__icon {
     margin-top: 15px;
     height: 30px;
     width: 30px;
   };
-  .c-main__pink__btn {
+  .c-button__main__pink__btn {
     -webkit-appearance: none;
     appearance: none;
     padding: 0 4px;
@@ -80,47 +80,47 @@
     background-color: base.$orangepink;
   };
 };
-.c-main__jobsearch__btn:hover {
+.c-button__main__jobsearch__btn:hover {
   opacity: .8;
   transition: .3s;
 };
 
 
-.c-icon__note {
+.c-button__icon__note {
   margin: 58px 0 20px;
 };
 
-.c-icon__search {
+.c-button__icon__search {
   margin: 68px 0 30px;
 };
 
-.c-icon__mail {
+.c-button__icon__mail {
   margin: 58px 0 33px;
 };
 
-.c-icon__kirakira {
+.c-button__icon__kirakira {
   margin: 53px 0 28px;
 };
 
-.c-line__2 {
+.c-button__line__2 {
   line-height: 30px;
 };
 
-.c-line {
+.c-button__line {
   line-height: 35px;
 };
 
-.c-content {
+.c-button__content {
   margin: 30px auto 0;
 };
 
-.c-content2 {
+.c-button__content2 {
 margin: 18px auto 0;
 };
 
-.c-main__btn__block {
+.c-button__main__btn__block {
   text-align: center;
-  .c-main__btn {
+  .c-button__main__btn {
     display: inline-block;
     -webkit-appearance: none;
     appearance: none;
@@ -136,14 +136,14 @@ margin: 18px auto 0;
     color: base.$white;
     border: none;
   };
-  .c-main__btn:hover {
+  .c-button__main__btn:hover {
     opacity: .8;
     transition: .3s;
   };
 };
 
 
-.c-flow__arrow::after {
+.c-button__flow__arrow::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -153,6 +153,6 @@ margin: 18px auto 0;
   border-left: 20px solid base.$pink;
   z-index: 100000;
 };
-.c-flow__arrow:last-child::after {
+.c-button__flow__arrow:last-child::after {
  border: none;
 };

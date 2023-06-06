@@ -2,14 +2,14 @@
 
  //4つの特徴
 
- .p-main__feature {
+ .p-feature {
   padding-top: 106px;
-  &__title {
+  &__main__title {
     text-align: center;
     font-size: 25px;
     font-weight: base.$bold;
   };
-  &__block {
+  &__main__block {
     margin-top: 53px;
     display: flex;
     flex-wrap: wrap;
