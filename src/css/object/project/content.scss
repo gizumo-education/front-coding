@@ -51,6 +51,7 @@
     height: 100%;
     color: content.$white;
     border-radius: 10px;
+    transition: .3s;
 
     &:hover {
       opacity: .8;

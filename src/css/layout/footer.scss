@@ -22,6 +22,7 @@
   &__link {
     color: footer.$black;
     margin-top: 24px;
+    transition: .3s;
 
     &:hover {
       opacity: .8;
@@ -39,6 +40,7 @@
       margin-right: 39px;
       margin-bottom: 25px;
       color: footer.$black;
+      transition: .3s;
 
       &:hover {
         opacity: .8;
@@ -55,7 +57,17 @@
     }
   }
 
-  &__img:nth-child(2) {
+  &__right__link {
+    display: block;
+    transition: .3s;
+
+    &:hover {
+      opacity: .8;
+      transition: .3s;
+    }
+  }
+
+  &__right__link:nth-child(2) {
     margin-top: 15px;
   }
 
