@@ -89,3 +89,22 @@
     }
   }
 }
+
+@include footer.sp {
+  .l-footer {
+    padding-top: 38px;
+
+    &__top {
+      padding-bottom: 40px;
+    }
+
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__right {
+      margin-top: 22px;
+    }
+  }
+}
