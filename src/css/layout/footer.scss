@@ -19,6 +19,7 @@
           margin: 20px 39px 0 0;
           &__content {
             color: base.$black;
+            transition: .9s;
           };
           &__content:hover {
             opacity: .8;
@@ -41,6 +42,7 @@
         margin: 55px 0 25px;
         &__list {
           margin-top: 15px;
+          transition: .3s;
         };
         &__list:first-child {
           margin-top: 0;
