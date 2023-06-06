@@ -10,47 +10,55 @@
   position: relative;
   &__wrap {
     display: block;
-    position: relative;
     &__pic {
+      display: block;
       height: 500px;
       background-image: url(../img/picture/key-visual.jpg);
       background-repeat: no-repeat;
       background-position: center;
-    }
-    &__box {
-      display: block;
-      width: 105px;
-      height: 500px;
-      background-color: #98B1BE;
-      z-index: 100px;
-      position: absolute;
-      &:first-child {
-        width: 165px;
-        left: 70px;
+      position: relative;
+      &__box {
+        display: block;
+        width: 105px;
+        height: 500px;
+        background-color: #98B1BE;
+        z-index: 100px;
+        position: absolute;
+        &:first-child {
+          width: 165px;
+          left: 60px;
+        }
+        &:last-child {
+          right: 0;
+          top: 0;
+          right: -90px;
+        }
       }
-      &:last-child {
-        right: 67px;
-        top: 0;
-      }
     }
+  }
+  &__items {
+    display: block;
+    margin: 0 auto;
+    width: 1262px;
+    height: 500px;
+    z-index: 400px;
+    position: relative;
     &__keyword {
       display: block;
       width: 341.81px;
       height: 168.51px;
       position: absolute;
       top: 74.95px;
-      left: 830px;
+      left: 655px;
     }
-    &__main {
-      &-letter {
-        display: block;
-        width: 800px;
-        height: 65px;
-        z-index: 200px;
-        position: absolute;
-        top: 265px;
-        right: 193px;
-      }
+    &__main-letter {
+      display: block;
+      width: 800px;
+      height: 65px;
+      z-index: 500px;
+      position: absolute;
+      top: 265px;
+      right: 30px;
     }
   }
   &__text {
@@ -68,7 +76,7 @@
     line-height: 29px;
     position: absolute;
     top: 384px;
-    left: 809.5px;
+    left: 634.5px;
     &-sentence {
       display: inline-block;
       font-weight: 400;
