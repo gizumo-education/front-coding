@@ -48,6 +48,10 @@
       }
     }
 
+    &__item:nth-child(2n-1) {
+      width: 96px;
+    }
+
     &__item:nth-child(2n) {
       margin-right: 0;
     }
