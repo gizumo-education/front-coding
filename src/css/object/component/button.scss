@@ -84,6 +84,16 @@
 }
 
 @include btn.tab {
+
+  .c-search-btn {
+    font-size: 18px;
+    padding: 6px 43px 12px 45px;
+    width: 160px;
+    height: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
   button {
     background-color: transparent;
     border: none;
