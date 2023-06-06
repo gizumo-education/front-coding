@@ -1,0 +1,144 @@
+@use '../../object/utility/utility.scss';
+
+.p-recruit {
+  width: 100%;
+  height: 435px;
+  margin-top: 105px;
+  &__title {
+    display: block;
+    font-family: 'Noto Sans JP';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+  }
+  &__wrap {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    position: relative;
+  }
+  &__box {
+    display: block;
+    width: 280px;
+    height: 360px;
+    border: 2.27px solid #DE5579;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 50px;
+    &__circle {
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      background-color: #DE5579;
+      margin: 10px 0 0 10px;
+      &-icon {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 42px;
+        height: 38px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        color: #ffffff;
+        text-align: center;
+        margin: 11px 9px;
+      }
+    }
+    &__es {
+      display: block;
+      width: 102.29px;
+      height: 100px;
+      position: absolute;
+      top: 60px;
+      right: 80px;
+    }
+    &__glass {
+      display: block;
+      width: 79.95px;
+      height: 79.95px;
+      position: absolute;
+      top: 70.02px;
+      left: 95.02px;
+    }
+    &__emails {
+      display: inline-block;
+      width: 106.76px;
+      height: 100px;
+      position: absolute;
+      top: 62px;
+      left: 91px;
+    }
+    &__shiny {
+      display: block;
+      width: 107.97px;
+      height: 110.13px;
+      position: absolute;
+      top: 56px;
+      left: 81px;
+    }
+  }
+  &__text {
+    &__box {
+      display: block;
+      margin-top: 110px;
+      &-2 {
+        display: block;
+        margin-top: 133px;
+      }
+      &__sub {
+        &-title {
+          display: block;
+          font-family: 'Noto Sans JP';
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 35px;
+          white-space: pre-line;
+        }
+      }
+      &__content {
+        display: inline-block;
+        width: 237px;
+        height: 60px;
+        word-wrap: break-word;
+        font-family: 'Noto Sans JP';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        margin-top: 18px;
+        &-2 {
+          display: inline-block;
+          width: 237px;
+          height: 60px;
+          word-wrap: break-word;
+          font-family: 'Noto Sans JP';
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  &__gap {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 360px;
+  }
+  &__triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid #DE5579;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    z-index: 100px;
+    position: absolute;
+    top: 180px;
+  }
+}

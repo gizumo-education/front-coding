@@ -1,2 +1,85 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+.p-key-visual {
+  width: 100%;
+  height: 500px;
+  background-color: #98B1BE;
+  display: inline-block;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  position: relative;
+  &__wrap {
+    display: block;
+    position: relative;
+    &__pic {
+      height: 500px;
+      background-image: url(../img/picture/key-visual.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &__box {
+      display: block;
+      width: 105px;
+      height: 500px;
+      background-color: #98B1BE;
+      z-index: 100px;
+      position: absolute;
+      &:first-child {
+        width: 165px;
+        left: 70px;
+      }
+      &:last-child {
+        right: 67px;
+        top: 0;
+      }
+    }
+    &__keyword {
+      display: block;
+      width: 341.81px;
+      height: 168.51px;
+      position: absolute;
+      top: 74.95px;
+      left: 830px;
+    }
+    &__main {
+      &-letter {
+        display: block;
+        width: 800px;
+        height: 65px;
+        z-index: 200px;
+        position: absolute;
+        top: 265px;
+        right: 193px;
+      }
+    }
+  }
+  &__text {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid #2EB6AA;
+    background: #ffffff;
+    padding: 5px 41.5px 6px 41.5px;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: bottom;
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    color: #2EB6AA;
+    line-height: 29px;
+    position: absolute;
+    top: 384px;
+    left: 809.5px;
+    &-sentence {
+      display: inline-block;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28.96px;
+    }
+    &-number {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 57.92px;
+    }
+  }
+}
