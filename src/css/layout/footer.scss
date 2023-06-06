@@ -28,6 +28,9 @@
         &__list:nth-child(2n) {
           margin: 20px 0 0;
         };
+        &__list:nth-child(2n-1) {
+          width: 96px;
+        };
       };
       &__element:first-child {
         margin-top: 79px;
@@ -41,6 +44,10 @@
         };
         &__list:first-child {
           margin-top: 0;
+        };
+        &__list:hover {
+          opacity: .8;
+          transition: .3s;
         };
       };
     };
