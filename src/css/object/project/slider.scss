@@ -7,13 +7,13 @@
   background-color: #EFF6FC;
   display: inline-flex;
   justify-content: center;
-  text-align: center;
   margin-top: 60px;
   &__wrap {
     display: block;
     width: 1180px;
     height: 386px;
     margin-top: 64px;
+    text-align: center;
     &__title {
       font-family: Inter;
       font-size: 25px;
@@ -48,6 +48,7 @@
       width: 280px;
       height: 200px;
       margin-bottom: 8.08px;
+      border-radius: 10px;
     }
     &-content {
       color: #000000;
@@ -91,10 +92,12 @@
   &-btn {
     @include button.btn-style();
     width: 360px;
+    height: 60px;
     box-sizing: border-box;
-    text-align: center;
     padding: 17px 72px;
     margin: 61px 0 67px 0;
+    vertical-align: middle;
+    line-height: 26.06px;
     &:hover {
       opacity: 0.5;
     }
