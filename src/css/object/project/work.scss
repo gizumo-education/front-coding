@@ -89,3 +89,33 @@
     }
   }
 }
+
+@include work.sp {
+
+  .p-work {
+
+    &__list {
+      justify-content: center;
+      margin: 35px 0 44px;
+    }
+
+    &__item {
+      width: 370px;
+      margin-right: 0;
+    }
+
+    &__item:not(:first-child) {
+      display: none;
+    }
+
+    &__img {
+      text-align: center;
+    }
+
+    &__img img {
+      width: 370px;
+      height: 208px;
+      border-radius: 10px;
+    }
+  }
+}

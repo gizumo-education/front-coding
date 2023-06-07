@@ -13,20 +13,20 @@
   height: 500px;
   position: relative;
 
-  &__img {
+  &__pc-img {
     position: absolute;
     top: 56px;
-    left: 710px;
-    width: 341px;
-    height: 141px;
+    right: 265px;
   }
 
   &__title {
+    font-size: 50px;
+    font-weight: 700;
+    color: key.$white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
-    top: 53%;
-    left: 32%;
-    width: 800px;
-    height: 65px;
+    right: 30px;
+    top: 265px;
   }
 
   &__text {
@@ -46,5 +46,104 @@
       font-weight: 700;
     }
   }
+}
 
+@include key.pc {
+  .p-keyvisual {
+
+    &__sp-img {
+      display: none;
+    }
+
+    &__sp-title {
+      display: none;
+    }
+  }
+}
+
+@include key.tab {
+  .p-keyvisual-wrapper {
+    height: 5rem;
+  }
+
+  .p-keyvisual {
+    height: 5rem;
+
+    &__pc-img {
+      top: 0.56rem;
+      right: 2.65rem;
+    }
+
+    &__sp-img {
+      display: none;
+    }
+
+    &__title {
+      font-size: 0.5rem;
+      font-weight: 700;
+      right: 0.3rem;
+      top: 2.65rem;
+    }
+
+    &__text {
+      font-size: 0.2rem;
+      padding: 0.1rem 0.4rem 0.18rem;
+      border-radius: 0.1rem;
+      border: solid 0.02rem key.$green;
+      position: absolute;
+      bottom: 10.83%;
+      right: 24.97%;
+
+      span {
+        font-size: 0.4rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@include key.sp {
+
+  .p-keyvisual-wrapper {
+    width: 100%;
+    height: 2.7rem;
+  }
+
+  .p-keyvisual {
+    height: 2.7rem;
+    background-image: url(../img/picture/sp-keyvisual.png);
+
+    &__sp-img {
+      display: block;
+      position: absolute;
+      top: 0.61rem;
+      right: 0.5rem;
+    }
+
+    &__pc-img {
+      display: none;;
+    }
+
+    &__title {
+      font-size: 0.17rem;
+      right: 0.03rem;
+      top: 1.47rem;
+    }
+
+    &__text {
+      font-size: 2px;
+      padding: 8px 23px 8px 23px;
+      border: solid 1px key.$green;
+      bottom: 0.52rem;
+      left: 1.9rem;
+      width: 1.7rem;
+      height: 0.3rem;
+
+      span {
+        display: inline-block;
+        font-size: 0.16rem;
+        font-weight: 700;
+      }
+    }
+  }
 }
