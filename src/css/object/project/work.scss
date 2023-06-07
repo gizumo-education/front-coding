@@ -61,31 +61,44 @@
 }
 
 @include work.tab {
-
   .p-work {
+    padding: 0.64rem 0 0.67rem;
 
     &__list {
-      justify-content: center;
-      margin: 35px 0 44px;
+      display: flex;
+      margin: 0.25rem 0 0.61rem;
     }
 
     &__item {
-      width: 370px;
-      margin-right: 0;
-    }
-
-    &__item:not(:first-child) {
-      display: none;
-    }
-
-    &__img {
-      text-align: center;
+      margin-right: 0.2rem;
     }
 
     &__img img {
-      width: 370px;
-      height: 208px;
-      border-radius: 10px;
+      width: 2.8rem;
+      height: 2rem;
+      border-radius: 0.1rem;
+    }
+
+    &__title {
+      margin-top: 0.05rem;
+      font-size: 0.16rem;
+      line-height: 0.22rem;
+    }
+
+    &__block {
+      margin-top: 0.05rem;
+    }
+
+    &__label {
+      margin-right: 0.1rem;
+      width: 0.6rem;
+      height: 0.21rem;
+      line-height: 0.21rem;
+      font-size: 0.14rem;
+    }
+
+    &__text {
+      font-size: 0.14rem;
     }
   }
 }
