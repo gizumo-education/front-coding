@@ -90,12 +90,12 @@
 @include btn.tab {
 
   .c-search-btn {
-    font-size: 18px;
-    padding: 6px 43px 12px 45px;
-    width: 160px;
-    height: 40px;
-    box-sizing: border-box;
-    cursor: pointer;
+    font-size: 0.18rem;
+    padding: 0.16rem 0.2rem 0.21rem 0.48rem;
+    width: 1.4rem;
+    height: 0.6rem;
+    border: solid 0.01rem btn.$pink;
+    border-radius: 0.3rem;
   }
 
   button {
