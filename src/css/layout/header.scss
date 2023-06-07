@@ -55,7 +55,7 @@
         margin-left: 15px;
         &:first-child {
           width: 160px;
-          padding-left: 10px;
+          padding: 16px 21px 16px 10px;
         }
         &:last-child {
           padding: 17px 28px 17px 30px;
@@ -64,19 +64,22 @@
           opacity: 0.8;
         }
         &__content {
-          display: inline-block;
+          display: flex;
           box-sizing: border-box;
           font-family: 'Noto Sans JP';
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
-          line-height: 20px;
+          line-height: 20.27px;
           color: #FFFFFF;
+          align-items: center;
           word-break: keep-all;
         }
         &__heart {
           display: inline-block;
-          margin-right: 10px;
+          width: 20.96px;
+          height: 18px;
+          margin-right: 10.04px;
         }
         &__clock {
           display: inline-block;
