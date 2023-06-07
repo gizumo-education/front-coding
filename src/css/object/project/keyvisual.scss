@@ -1,2 +1,45 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as base;
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual {
+  &__main {
+    width: 100%;
+    height: 500px;
+    background-color: base.$gray;
+    &__img {
+      position: relative;
+      margin: 0 auto;
+      height: 500px;
+      width: 1200px;
+      background-image: url(../img/picture/keyvisual.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &__headline {
+        position: absolute;
+        top: 270px;
+        right: 50px;
+        font-size: 47px;
+        font-weight: base.$bold;
+        color: base.$white;
+        text-shadow:3px 3px 3px base.$gray;
+      };
+      &__content {
+        position: absolute;
+        bottom: 60px;
+        right: 250px;
+        display: inline-block;
+        padding: 10px 25px;
+        border-radius: 10px;
+        font-size: 16px;
+        color: base.$skygreen;
+        background-color: base.$white;
+        border: 1px solid base.$skygreen; 
+        .p-main__keyvisual__span {
+          font-weight: base.$bold;
+          font-size: 35px;
+        };
+      };
+    };
+  };
+};

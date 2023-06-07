@@ -1,2 +1,107 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as base;
 // headerのスタイルを記述するファイル
+
+
+
+
+.l-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  &__navs {
+    width: 100%;
+    background-color: base.$white;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    .l-header__nav__list {
+      display: flex;
+      .l-header__nav__link {
+        padding: 0 20px;
+        border-right: 1px solid base.$black;
+        transition: .9s;
+        .l-header__nav__link__content {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 16px;
+          color: base.$black;
+          z-index: 100000;
+        };
+      };
+      .l-header__nav__link:hover {
+        opacity: .8;
+        transition: .3s;
+      };
+      .l-header__nav__link:last-child {
+        border: none;
+      };
+    };
+  };
+
+  .l-header__nav__block {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+    border-radius: 10px;
+    z-index: 1;
+    &__one {
+      display: inline-block;
+      padding-right: 20px;
+      padding-left: 40px;
+    };
+    &__one::before {
+      content: '';
+      width: 20px;
+      height: 18px;
+      background-image: url(../img/icon/heart.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      z-index: 10;
+    };
+  
+    &__two {
+      display: inline-block;
+      padding-right: 30px;
+      padding-left: 50px;
+  
+    };
+    &__two::before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      background-image: url(../img/icon/clock.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 15px;
+      left: 195px;
+      z-index: 10;
+    };
+  
+    &__three {
+      display: inline-block;
+      padding-right: 27px;
+      padding-left: 55px;
+    };
+    &__three::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background-image: url(../img/icon/browser_search.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 15px;
+      left: 355px;
+      z-index: 10;
+    };
+  };
+};

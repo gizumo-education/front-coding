@@ -1,2 +1,158 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as base;
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+
+.c-button__size__font {
+  font-size: 25px;
+  font-weight: base.$bold;
+  color: base.$white;
+};
+
+.c-button__nav__style {
+  font-size: 14px;
+  font-weight: base.$regular;
+  color: base.$white;
+  padding: 15px 0 15px 10px;
+  margin-right: 15px;
+  background-color: base.$skyBlue;
+  border-radius: 10px;
+  transition: .3s;
+};
+
+
+.c-button__nav__style:hover {
+  opacity: .8;
+  transition: .3s;
+};
+
+.c-button__nav__style:last-child {
+  margin-right: 100px;
+};
+
+.c-button__keyvisual__content {
+  position: absolute;
+  top: 50px;
+  right: 250px;
+};
+
+
+.c-button__selectjob__search {
+  display: inline-block;
+  position: relative;
+};
+
+.c-button__selectjob__search::before {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  border: 10px solid transparent;
+  border-top: 10px solid #DE1E79;
+  z-index: 100000;
+};
+
+
+
+.c-button__main__jobsearch__btn {
+  display: inline-block;
+  margin: 0 auto;
+  height: 60px;
+  width: 140px;
+  cursor: pointer;
+  transition: .3s;
+  text-align: center;
+  background-color: base.$orangepink;
+  border-radius: 30px;
+  .c-button__jobsearch__icon {
+    margin-top: 15px;
+    height: 30px;
+    width: 30px;
+  };
+  .c-button__main__pink__btn {
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0 4px;
+    cursor: pointer;
+    color: base.$white;
+    font-size: 18px;
+    font-weight: base.$bold;
+    border: none;
+    background-color: base.$orangepink;
+  };
+};
+.c-button__main__jobsearch__btn:hover {
+  opacity: .8;
+  transition: .3s;
+};
+
+
+.c-button__icon__note {
+  margin: 58px 0 20px;
+};
+
+.c-button__icon__search {
+  margin: 68px 0 30px;
+};
+
+.c-button__icon__mail {
+  margin: 58px 0 33px;
+};
+
+.c-button__icon__kirakira {
+  margin: 53px 0 28px;
+};
+
+.c-button__line__2 {
+  line-height: 30px;
+};
+
+.c-button__line {
+  line-height: 35px;
+};
+
+.c-button__content {
+  margin: 30px auto 0;
+};
+
+.c-button__content2 {
+margin: 18px auto 0;
+};
+
+.c-button__main__btn__block {
+  text-align: center;
+  .c-button__main__btn {
+    display: inline-block;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 360px;
+    height: 60px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 30px;
+    background-color: base.$orangepink;
+    margin: 60px auto 0;
+    font-size: 18px;
+    font-weight: base.$bold;
+    color: base.$white;
+    border: none;
+  };
+  .c-button__main__btn:hover {
+    opacity: .8;
+    transition: .3s;
+  };
+};
+
+
+.c-button__flow__arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -42px;
+  transform: translate(0, -50%);
+  border: 20px solid transparent;
+  border-left: 20px solid base.$pink;
+  z-index: 100000;
+};
+.c-button__flow__arrow:last-child::after {
+ border: none;
+};

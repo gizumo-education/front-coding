@@ -1,0 +1,42 @@
+@use '../../object/utility/utility.scss' as base;
+
+ //4つの特徴
+
+ .p-feature {
+  padding-top: 106px;
+  &__main__title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: base.$bold;
+  };
+  &__main__block {
+    margin-top: 53px;
+    display: flex;
+    flex-wrap: wrap;
+    &__list {
+      padding: 40px 0;
+      margin-right: 40px;
+      width: 570px;
+      background-color: base.$backpink;
+      border-radius: 10px;
+      &__content {
+        text-align: center;
+        font-size: 24px;
+        font-weight: base.$bold;
+        color: base.$orangepink;
+      };
+      &__detail {
+        text-align: center;
+        margin-top: 36px;
+        font-size: 14px;
+        line-height: 20px;
+      };
+    };
+    &__list:nth-child(2n) {
+      margin-right: 0;
+    };
+    &__list:nth-child(n+3) {
+      margin-top: 40px;
+    };
+  };
+};

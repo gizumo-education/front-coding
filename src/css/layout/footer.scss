@@ -1,2 +1,66 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as base;
 // footerのスタイルを記述するファイル
+
+.l-footer {
+  background-color: base.$whiteblue;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    &__area {
+      &__element {
+        width: 295px;
+        display: flex;
+        margin-top: 27px;
+        flex-wrap: wrap;
+        font-size: 16px;
+        font-weight: base.$regular;
+        color: base.$black;
+        &__list {
+          margin: 20px 39px 0 0;
+          &__content {
+            color: base.$black;
+            transition: .9s;
+          };
+          &__content:hover {
+            opacity: .8;
+            transition: .3s;
+          };
+        };
+        &__list:nth-child(2n) {
+          margin: 20px 0 0;
+        };
+        &__list:nth-child(2n-1) {
+          width: 96px;
+        };
+      };
+      &__element:first-child {
+        margin-top: 79px;
+      };
+    };
+    &__area__aside {
+      &__block {
+        margin: 55px 0 25px;
+        &__list {
+          margin-top: 15px;
+          transition: .3s;
+        };
+        &__list:first-child {
+          margin-top: 0;
+        };
+        &__list:hover {
+          opacity: .8;
+          transition: .3s;
+        };
+      };
+    };
+  };
+  .l-footer__block__area__small {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: base.$blackgray;
+    font-size: 14px;
+    font-weight: base.$regular;
+    text-align: center
+  };
+};
