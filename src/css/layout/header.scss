@@ -93,27 +93,75 @@
 }
 
 @include header.tab {
+  .px-1 {
+    padding: 0.15rem 0.21rem 0.15rem 0.41rem !important;
+  }
+
+  .px-2 {
+    padding: 0.15rem 0.32rem 0.15rem 0.52rem !important;
+  }
+
+  .px-3 {
+    padding: 0.15rem 0.28rem 0.15rem 0.56rem !important;
+  }
+
   .l-header {
-    height: 70px;
-    padding: 16px 0;
+    padding: 0.25rem 0;
 
     &__nav {
-      display: none;
+      margin-right: 0.25rem;
     }
+
+    &__nav__item {
+      font-size: 0.16rem;
+      margin-right: 0.62rem;
+
+      &:nth-child(2):before {
+        content: '';
+        display: block;
+        top: 0.02rem;
+        left: -0.17rem;
+        height: 0.18rem;
+        width: 0.18rem;
+      }
+
+      &:nth-child(3):before {
+        content: '';
+        display: block;
+        top: 0.02rem;
+        left: -0.24rem;
+        height: 0.17rem;
+        width: 0.22rem;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 0.01rem;
+        height: 0.15rem;
+        top: 0.02rem;
+        right: -0.21rem;
+      }
+    }
+
     &__btn {
-      display: none;
+      margin-right: 1rem;
+    }
+    &__btn .c-button {
+      margin-right: 0.15rem;
     }
   }
 }
 
 @include header.sp {
-  .l-header {
-    height: 70px;
-    padding: 0;
+    .l-header {
+      height: 0.7rem;
+      padding: 0;
 
     &__nav {
       display: none;
     }
+
     &__btn {
       display: none;
     }

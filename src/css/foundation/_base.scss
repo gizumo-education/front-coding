@@ -28,3 +28,13 @@ body {
     // 1200pxの画面幅で見たときにfont-sizeが100pxになるように計算
   }
 }
+
+@include base.sp {
+  body {
+    font-size: 0.1rem;
+  }
+  html {
+    font-size: calc(100vw / 4);
+    // 1200pxの画面幅で見たときにfont-sizeが100pxになるように計算
+  }
+}

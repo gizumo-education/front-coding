@@ -131,8 +131,9 @@
     }
 
     &__text {
-      font-size: 2px;
-      padding: 8px 23px 8px 23px;
+      white-space: nowrap;
+      font-size: 0.05rem;
+      padding: 0.06rem 0.23rem 0.08rem 0.17rem;
       border: solid 1px key.$green;
       bottom: 0.52rem;
       left: 1.9rem;

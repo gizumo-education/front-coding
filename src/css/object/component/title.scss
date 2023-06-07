@@ -13,6 +13,12 @@
 
 @include title.tab {
   .c-title {
+    font-size: 0.25rem;
+  }
+}
+
+@include title.sp {
+  .c-title {
     font-size: 22px;
   }
 
