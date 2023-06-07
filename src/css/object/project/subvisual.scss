@@ -29,6 +29,20 @@
   }
 }
 
+@include subkey.tab {
+  .p-subvisual {
+    height: 3rem;
+
+    &__text {
+      font-size: 0.25rem;
+
+      &:last-of-type {
+        margin-top: 0.2rem;
+      }
+    }
+  }
+}
+
 @include subkey.sp {
   .p-subvisual {
     height: 75px;
