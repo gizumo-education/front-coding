@@ -9,6 +9,9 @@
   top: 0;
   left: 0;
   z-index: 1000000;
+  &__block {
+    display: none;
+  };
   &__navs {
     width: 100%;
     background-color: base.$white;
@@ -105,3 +108,30 @@
     };
   };
 };
+
+@include base.sp {
+  .l-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 0.7rem;
+    padding: 10px;
+    background-color: base.$white;
+    &__block {
+      display: block;
+      position: absolute;
+      right: 0.15rem;
+      #nav-input:checked ~ .c-button__hamburger__close {
+        display: block;
+        opacity: .5;
+      }
+      #nav-input:checked ~ .c-button__hamburger__content {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+      }
+    }
+    &__navs {
+      display: none;
+    }
+  }
+}
