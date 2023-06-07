@@ -22,6 +22,9 @@
     &:first-child {
       margin-left: 0;
     }
+    &:hover {
+      opacity: 0.8;
+    }
   }
   &__black {
     display: block;
@@ -68,7 +71,7 @@
     padding: 21px 0;
     margin-top: 80px;
     &:hover {
-      opacity: 0.5;
+      opacity: 0.8;
     }
   }
 }
