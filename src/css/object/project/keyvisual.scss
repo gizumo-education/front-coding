@@ -3,16 +3,18 @@
 .p-key-visual {
   width: 100%;
   height: 500px;
-  background-color: #98B1BE;
   display: inline-block;
   margin-top: 100px;
   margin-bottom: 60px;
   position: relative;
   &__wrap {
-    display: block;
+    display: flex;
+    justify-content: center;
+    background-color: #98B1BE;
     &__pic {
       display: block;
       height: 500px;
+      width: 1200px;
       background-image: url(../img/picture/key-visual.jpg);
       background-repeat: no-repeat;
       background-position: center;
@@ -25,69 +27,67 @@
         z-index: 100px;
         position: absolute;
         &:first-child {
-          width: 165px;
-          left: 60px;
+          left: -60px;
         }
         &:last-child {
           right: 0;
           top: 0;
-          right: -90px;
+          right: -100px;
         }
       }
-    }
-  }
-  &__items {
-    display: block;
-    margin: 0 auto;
-    width: 1262px;
-    height: 500px;
-    z-index: 400px;
-    position: relative;
-    &__keyword {
-      display: block;
-      width: 341.81px;
-      height: 168.51px;
-      position: absolute;
-      top: 74.95px;
-      left: 655px;
-    }
-    &__main-letter {
-      display: block;
-      width: 800px;
-      height: 65px;
-      z-index: 500px;
-      position: absolute;
-      top: 265px;
-      right: 30px;
-    }
-  }
-  &__text {
-    display: inline-block;
-    box-sizing: border-box;
-    border: 2px solid #2EB6AA;
-    background: #ffffff;
-    padding: 5px 41.5px 6px 41.5px;
-    border-radius: 10px;
-    text-align: center;
-    vertical-align: bottom;
-    font-family: 'Noto Sans JP';
-    font-style: normal;
-    color: #2EB6AA;
-    line-height: 29px;
-    position: absolute;
-    top: 384px;
-    left: 634.5px;
-    &-sentence {
-      display: inline-block;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 28.96px;
-    }
-    &-number {
-      display: inline-block;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 57.92px;
+      &__items {
+        display: block;
+        margin: 0 auto;
+        width: 1200px;
+        height: 500px;
+        z-index: 400px;
+        &__keyword {
+          display: block;
+          width: 341.81px;
+          height: 168.51px;
+          position: absolute;
+          top: 74.95px;
+          left: 655px;
+        }
+        &__main-letter {
+          display: block;
+          width: 800px;
+          height: 65px;
+          z-index: 500px;
+          position: absolute;
+          top: 265px;
+          right: 30px;
+        }
+      }
+      &__text {
+        display: inline-block;
+        box-sizing: border-box;
+        border: 2px solid #2EB6AA;
+        background: #ffffff;
+        padding: 5px 41.5px 6px 41.5px;
+        border-radius: 10px;
+        text-align: center;
+        vertical-align: bottom;
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        color: #2EB6AA;
+        line-height: 29px;
+        position: absolute;
+        top: 384px;
+        left: 634.5px;
+        &-sentence {
+          display: inline-block;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 28.96px;
+        }
+        &-number {
+          display: inline-block;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 57.92px;
+        }
+      }
     }
   }
 }
