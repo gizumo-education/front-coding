@@ -114,20 +114,20 @@
 
 @include content.sp {
   .p-content {
-    padding-top: 61px;
+    padding: 0.25rem 0 0.25rem;
 
     &__list {
       flex-direction: column;
       align-items: center;
-      margin-top: 30px;
-      margin-bottom: 35px;
+      margin-top: 0.3rem;
+      margin-bottom: 0.35rem;
     }
 
     &__item {
-      margin-top: 17px;
+      margin-top: 0.17rem;
       margin-right: 0;
-      height: 235px;
-      width: 370px;
+      height: 2.35rem;
+      width: 3.7rem;
 
       &:first-of-type {
         margin-top: 0;
@@ -135,13 +135,13 @@
     }
 
     &__title {
-      font-size: 21px;
-      margin-top: 60px;
+      font-size: 0.21rem;
+      margin-top: 0.6rem;
     }
 
     &__text {
-      font-size: 14px;
-      margin-top: 53px;
+      font-size: 0.14rem;
+      margin-top: 0.53rem;
     }
   }
 }
