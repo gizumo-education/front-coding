@@ -105,15 +105,19 @@
 
 @include work.sp {
 
+  .pxy-2 {
+    padding: 0.21rem 0.77rem;
+  }
+
   .p-work {
 
     &__list {
       justify-content: center;
-      margin: 35px 0 44px;
+      margin: 0.35rem 0 0.44rem;
     }
 
     &__item {
-      width: 370px;
+      width: 3.7rem;
       margin-right: 0;
     }
 
@@ -126,9 +130,9 @@
     }
 
     &__img img {
-      width: 370px;
-      height: 208px;
-      border-radius: 10px;
+      width: 3.7rem;
+      height: 2.08rem;
+      border-radius: 0.1rem;
     }
   }
 }
