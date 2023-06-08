@@ -6,10 +6,10 @@
   margin: 0 auto;
 
   @include inner.tab {
-    width: 97.5%;
+    max-width: 11.80rem;
   }
 
   @include inner.sp {
-    width: 92.5%;
+    max-width: 11.80rem;
   }
 }

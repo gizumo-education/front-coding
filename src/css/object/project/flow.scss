@@ -1,5 +1,9 @@
 @use '../../object/utility/utility.scss' as flow;
 
+.pc-br {
+  display: block;
+}
+
 .p-flow {
   padding-top: 105px;
 
@@ -124,6 +128,10 @@
 }
 
 @include flow.sp {
+  .pc-br {
+    display: none;
+  }
+
   .p-flow {
     padding-top: 0.6rem;
 
@@ -144,7 +152,7 @@
       &::after {
         content: "";
         position: absolute;
-        top: 112%;
+        top: 115%;
         right: 50%;
         transform: translate(50%, -50%);
         border: 0.25rem solid transparent;

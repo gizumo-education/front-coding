@@ -86,9 +86,10 @@
   height: 60px;
   box-sizing: border-box;
   cursor: pointer;
-  text-align: center;
-  height: 60px;
-  line-height: 60px;
+
+  span {
+    display: inline-block;
+  }
 }
 
 .c-burger-btn {

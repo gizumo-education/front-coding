@@ -77,6 +77,11 @@
     margin-top: 15px;
   }
 
+  &__right__img {
+    width: 320px;
+    height: 85px;
+  }
+
   &__bottom {
     background-color: footer.$gray;
     padding: 10px 0;
@@ -133,6 +138,11 @@
       margin-top: 0.15rem;
     }
 
+    &__right__img {
+      width: 3.2rem;
+      height: 0.85rem;
+    }
+
     &__bottom {
       padding: 0.1rem 0;
 
@@ -158,6 +168,11 @@
 
     &__right {
       margin-top: 0.22rem;
+    }
+
+    &__right__img {
+      width: 3.2rem;
+      height: 0.85rem;
     }
   }
 }

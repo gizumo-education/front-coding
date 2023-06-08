@@ -7,6 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>医療事務求人を探すならギズジョブ</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="main.js"></script>
 </head>
 <body>
   <header class="l-header">
@@ -40,7 +47,7 @@
     </div>
   </header>
 
-  <div class="p-keyvisual-wrapper">
+  <div id="sec1" class="p-keyvisual-wrapper">
     <section class="p-keyvisual">
       <div class="l-inner">
         <img class="p-keyvisual__pc-img" src="img/icon/logo.png" alt="2021年 使って良かった転職サイトno.1">
@@ -97,7 +104,7 @@
             <li class="p-search-form__item">
               <button class="c-search-btn">
                 <img class="p-search-form__img" src="img/icon/white-search.png" alt="">
-                検索する
+                <span>検索する</span>
               </button>
             </li>
           </ul>
@@ -106,14 +113,15 @@
     </div>
   </section>
 
-  <section class="p-work">
+  <section id="sec2" class="p-work">
     <div class="l-inner">
       <h2 class="c-subtitle">新着求人</h2>
       <ul class="p-work__list">
         <li class="p-work__item">
           <a href="" class="p-work__link">
-            <figure class="p-work__img">
-              <img src="img/picture/work1.jpg" alt="女性1">
+            <figure class="p-work__img-wrapper">
+              <img class="p-work__sp-img" src="img/picture/sp-work.jpg" alt="女性1">
+              <img class="p-work__pc-img" src="img/picture/work1.jpg" alt="女性1">
             </figure>
             <div class="p-work__body">
               <h3 class="p-work__title">平日・夕方までの勤務!伊勢市の伊勢赤
@@ -135,7 +143,7 @@
         </li>
         <li class="p-work__item">
           <a href="" class="p-work__link">
-            <figure class="p-work__img">
+            <figure class="p-work__img-wrapper">
               <img src="img/picture/work2.jpg" alt="女性2">
             </figure>
             <div class="p-work__body">
@@ -158,7 +166,7 @@
         </li>
         <li class="p-work__item">
           <a href="" class="p-work__link">
-            <figure class="p-work__img">
+            <figure class="p-work__img-wrapper">
               <img src="img/picture/work3.jpg" alt="女性3">
             </figure>
             <div class="p-work__body">
@@ -181,7 +189,7 @@
         </li>
         <li class="p-work__item">
           <a href="" class="p-work__link">
-            <figure class="p-work__img">
+            <figure class="p-work__img-wrapper">
               <img src="img/picture/work4.jpg" alt="女性4">
             </figure>
             <div class="p-work__body">
@@ -217,7 +225,7 @@
     <div class="u-black-musk"></div>
   </section>
 
-  <section class="p-feature">
+  <section id="sec3" class="p-feature">
     <div class="l-inner">
       <h2 class="c-title">ギズジョブの4つの特徴</h2>
       <ul class="p-feature__list">
@@ -241,7 +249,7 @@
     </div>
   </section>
 
-  <section class="p-flow">
+  <section id="sec4" class="p-flow">
     <div class="l-inner">
       <h2 class="c-title">転職までの流れ</h2>
       <ul class="p-flow__list">
@@ -250,7 +258,7 @@
           <figure class="p-flow__img">
             <img src="img/icon/flow1.png" alt="エントリーシートの作成">
           </figure>
-          <h3 class="p-flow__title">エントリーシートの<br>作成</h3>
+          <h3 class="p-flow__title">エントリーシートの<br class="pc-br">作成</h3>
           <p class="p-flow__text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ</p>
         </li>
         <li class="p-flow__item">
@@ -258,7 +266,7 @@
           <figure class="p-flow__img">
             <img src="img/icon/flow2.png" alt="気になる企業をピックアップ">
           </figure>
-          <h3 class="p-flow__title">気になる企業の<br>ピックアップ</h3>
+          <h3 class="p-flow__title">気になる企業の<br class="pc-br">ピックアップ</h3>
           <p class="p-flow__text">こにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ</p>
         </li>
         <li class="p-flow__item">
@@ -281,7 +289,7 @@
     </div>
   </section>
 
-  <section class="p-content">
+  <section id="sec5" class="p-content">
     <div class="l-inner">
       <h2 class="c-title">転職お役立ちコンテンツ</h2>
       <ul class="p-content__list">
@@ -380,10 +388,10 @@
           </div>
           <div class="l-footer__right">
             <a class="l-footer__right__link">
-              <img src="img/picture/footer1.jpg" alt="笑顔の女性と赤ちゃん">
+              <img class="l-footer__right__img" src="img/picture/footer1.jpg" alt="笑顔の女性と赤ちゃん">
             </a>
             <a class="l-footer__right__link">
-              <img src="img/picture/footer2.jpg" alt="笑顔の看護師とおばあちゃん">
+              <img class="l-footer__right__img" src="img/picture/footer2.jpg" alt="笑顔の看護師とおばあちゃん">
             </a>
           </div>
         </div>

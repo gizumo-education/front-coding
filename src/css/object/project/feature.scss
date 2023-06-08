@@ -16,7 +16,6 @@
     background-color: feature.$pink2;
     margin-right: 40px;
     width: 570px;
-    height: 180px;
     text-align: center;
     margin-top: 40px;
 
@@ -62,40 +61,46 @@
     padding-top: 1.06rem;
 
     &__list {
-      margin-top: 0.53rem;
-      flex-direction: column;
+      display: flex;
       justify-content: center;
-      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 0.53rem;
     }
 
     &__item {
-      margin-right: 0;
       border-radius: 0.1rem;
       padding: 0.4rem 0;
+      background-color: feature.$pink2;
+      margin-right: 0.4rem;
       width: 5.7rem;
-      height: 1.8rem;
-      margin-top: 0.4rem;
+      text-align: center;
+      margin-top: 40px;
 
-      &:nth-child(1) {
+      &:nth-child(-n+2) {
         margin-top: 0;
       }
 
-      &:nth-child(-n+2) {
-        margin-top: 0.4rem;
+      &:nth-child(2n) {
+        margin-right: 0;
       }
     }
 
     &__title {
       font-size: 0.24rem;
+      font-weight: 700;
+      color: feature.$pink;
     }
 
     &__text {
       margin-top: 0.36rem;
       font-size: 0.14rem;
+      color: feature.$black;
       line-height: 0.2rem;
     }
   }
 }
+
+
 
 @include feature.sp {
   .p-feature {
@@ -107,7 +112,6 @@
 
     &__item {
       width: 3.7rem;
-      height: 1.44rem;
       padding: 0.3rem 0;
 
       &:nth-child(-n+2) {
