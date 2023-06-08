@@ -135,6 +135,7 @@
     border-bottom: 20px solid transparent;
     z-index: 100px;
     position: absolute;
-    top: 44.5%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
