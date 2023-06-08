@@ -99,10 +99,16 @@
 
 @include feature.sp {
   .p-feature {
+    padding-top: 0.55rem;
+
+    &__list {
+      margin-top: 0.38rem;
+    }
 
     &__item {
       width: 3.7rem;
       height: 1.44rem;
+      padding: 0.3rem 0;
 
       &:nth-child(-n+2) {
         margin-top: 0.2rem;
@@ -111,6 +117,10 @@
 
       &:nth-child(3) {
         margin-right: 0;
+      }
+
+      &:first-of-type {
+        margin-top: 0;
       }
     }
 

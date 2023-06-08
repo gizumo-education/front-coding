@@ -144,17 +144,6 @@
     height: 0.6rem;
     line-height: 0.6rem;
   }
-
-  button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    padding: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
 }
 
 @include btn.sp {
@@ -198,5 +187,16 @@
 
   .c-bar_bottom {
     transform: translateY(10px);
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 }
