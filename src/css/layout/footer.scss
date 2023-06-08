@@ -97,6 +97,8 @@
           margin: 0.55rem 0.2rem 0.25rem 0;
           &__list {
             margin-top: 0.15rem;
+            width: 3.22rem;
+            height: 0.87rem;
           };
         };
       };
@@ -122,15 +124,15 @@
       justify-content: center;
       &__area {
         &__element {
-          width: 295px;
+          width: 2.95rem;
           display: flex;
-          margin-top: 27px;
+          margin-top: 0.27rem;
           flex-wrap: wrap;
-          font-size: 16px;
+          font-size: 0.16rem;
           font-weight: base.$regular;
           color: base.$black;
           &__list {
-            margin: 20px 39px 0 0;
+            margin: 0.2rem 0.39rem 0 0;
             &__content {
               color: base.$black;
               transition: .9s;
@@ -141,7 +143,7 @@
             };
           };
           &__list:nth-child(2n) {
-            margin: 20px 0 0;
+            margin: 0.2rem 0 0;
           };
         };
         &__element:first-child {
