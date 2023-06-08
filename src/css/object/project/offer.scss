@@ -21,6 +21,9 @@
           .p-offer__newoffer__img {
             border-radius: 10px;
           };
+          .p-offer__newoffer__img__sp {
+            display: none;
+          };
           .p-offer__newoffer__content {
             margin-top: 8px;
             font-size: 16px;
@@ -53,4 +56,87 @@
       .p-offer__newoffer__list:last-child {
         margin-right: 0;
       };
+  };
+
+
+
+
+  @include base.tab {
+
+    .p-offer__newoffer {
+      padding: 0.6rem 0;
+        &__title {
+          font-size: 0.25rem;
+        };
+        &__lists {
+          margin-top: 0.25rem;
+          .p-offer__newoffer__list {
+            margin-right: 0.2rem;
+            width: 2.8rem;
+            .p-offer__newoffer__content {
+              margin-top: 0.08rem;
+              font-size: 0.16rem;
+              line-height: 0.22rem;
+            };
+            .p-offer__newoffer__explanation {
+              margin-top: 0.04rem;
+              font-size: 0.14rem;
+              line-height: 0.2rem;
+              width: 0.6rem;
+            };
+            .p-offer__newoffer__detail {
+              margin-left: 0.1rem;
+              font-size: 0.14rem;
+            };
+          };
+        };
+    };
+  }
+
+
+
+
+
+
+  @include base.sp {
+    .p-offer__newoffer {
+      padding: 0.3rem 0 0.6rem 0;
+        &__title {
+          font-weight: base.$bold;
+          font-size: 0.25rem;
+          line-height: 0.25rem;
+          text-align: center;
+        };
+        &__lists {
+          margin-top: 0.35rem;
+          .p-offer__newoffer__list {
+            margin-right: 0;
+            width: 3.7rem;
+            .p-offer__newoffer__img {
+              display: none;
+            };
+            .p-offer__newoffer__img__sp {
+              display: inline-block;
+              width: 3.7rem;
+              height: 2.08rem;
+            };
+            .p-offer__newoffer__content {
+              margin-top: 0.1rem;
+              font-weight: base.$bold;
+              font-size: 0.16rem;
+              line-height: 0.22rem;
+            };
+            .p-offer__newoffer__detail {
+              margin-left: 0.2rem;
+              font-weight: base.$regular;
+            };
+          };
+          .p-offer__newoffer__explanation:first-child {
+            margin-top: 12px;
+          };
+          .p-offer__newoffer__list:nth-child(n + 2) {
+            display: none;
+          };
+        };
+    };
   };
