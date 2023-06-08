@@ -9,6 +9,7 @@
   width: 100%;
   padding: 25px 0;
   z-index: 999;
+  height: 100px;
 
   &__inner {
     display: flex;
@@ -42,6 +43,8 @@
       background-repeat: no-repeat;
       height: 18px;
       width: 18px;
+      background-size: contain;
+    vertical-align: middle;
     }
 
     &:nth-child(3):before {
@@ -54,6 +57,8 @@
       background-repeat: no-repeat;
       height: 17px;
       width: 22px;
+      background-size: contain;
+      vertical-align: middle;
     }
 
     &::after {
@@ -93,6 +98,7 @@
 }
 
 @include header.tab {
+
   .px-1 {
     padding: 0.15rem 0.21rem 0.15rem 0.41rem !important;
   }
@@ -106,6 +112,7 @@
   }
 
   .l-header {
+    height: 1rem;
     padding: 0.25rem 0;
 
     &__nav {
@@ -145,7 +152,7 @@
     }
 
     &__btn {
-      margin-right: 1rem;
+      margin-right: 0.3rem;
     }
     &__btn .c-button {
       margin-right: 0.15rem;

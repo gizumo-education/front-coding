@@ -73,6 +73,10 @@
 }
 
 @include content.tab {
+  .pxy-2 {
+    padding: 0.21rem 0.93rem;
+  }
+
   .p-content {
     padding: 1.06rem 0 0.9rem;
 
@@ -113,8 +117,12 @@
 }
 
 @include content.sp {
+  .pxy-2 {
+    padding: 0.21rem 0.68rem !important;
+  }
+
   .p-content {
-    padding: 0.25rem 0 0.25rem;
+    padding: 0.25rem 0 0.35rem;
 
     &__list {
       flex-direction: column;
@@ -124,6 +132,7 @@
     }
 
     &__item {
+      background-size: contain;
       margin-top: 0.17rem;
       margin-right: 0;
       height: 2.35rem;

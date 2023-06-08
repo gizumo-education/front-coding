@@ -17,6 +17,8 @@
     position: absolute;
     top: 56px;
     right: 265px;
+    width: 341px;
+    height: 141px;
   }
 
   &__title {
@@ -72,6 +74,8 @@
     &__pc-img {
       top: 0.56rem;
       right: 2.65rem;
+      width: 3.41rem;
+      height: 1.41rem;
     }
 
     &__sp-img {
@@ -105,23 +109,27 @@
 @include key.sp {
 
   .p-keyvisual-wrapper {
-    width: 100%;
+    background-color: transparent;
     height: 2.7rem;
   }
 
   .p-keyvisual {
     height: 2.7rem;
     background-image: url(../img/picture/sp-keyvisual.png);
+    background-size: contain;
+    width: 100%;
 
     &__sp-img {
       display: block;
       position: absolute;
+      width: 1.49rem;
+      height: 0.62rem;
       top: 0.61rem;
       right: 0.5rem;
     }
 
     &__pc-img {
-      display: none;;
+      display: none;
     }
 
     &__title {

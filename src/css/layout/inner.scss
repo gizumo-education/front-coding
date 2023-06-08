@@ -4,4 +4,12 @@
 .l-inner {
   max-width: 1180px;
   margin: 0 auto;
+
+  @include inner.tab {
+    width: 97.5%;
+  }
+
+  @include inner.sp {
+    width: 92.5%;
+  }
 }
