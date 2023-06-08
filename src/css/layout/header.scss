@@ -109,7 +109,76 @@
   };
 };
 
+
+
+
+
+@include base.tab {
+
+  .l-header {
+    &__block {
+      display: none;
+    };
+    &__navs {
+      width: 100%;
+      .l-header__nav__list {
+        .l-header__nav__link {
+          padding: 0 0.1rem;
+          .l-header__nav__link__content {
+            font-size: 0.13rem;
+          };
+        };
+      };
+    };
+  
+    .l-header__nav__block {
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+      border-radius: 0.1rem;
+      &__one {
+        padding-right: 0.2rem;
+        padding-left: 0.4rem;
+      };
+      &__one::before {
+        content: '';
+        width: 0.2rem;
+        height: 0.18rem;
+        top: 0.15rem;
+        left: 0.15rem;
+      };
+    
+      &__two {
+        padding-right: 0.3rem;
+        padding-left: 0.5rem;
+    
+      };
+      &__two::before {
+        width: 0.18rem;
+        height: 0.18rem;
+        top: 0.15rem;
+        left: 1.95rem;
+      };
+    
+      &__three {
+        padding-right: 0.27rem;
+        padding-left: 0.55rem;
+      };
+      &__three::before {
+        width: 0.16rem;
+        height: 0.16rem;
+        top: 0.15rem;
+        left: 3.55rem;
+      };
+    };
+  };
+}
+
+
+
+
+
 @include base.sp {
+
   .l-header {
     position: sticky;
     top: 0;
