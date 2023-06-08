@@ -19,11 +19,11 @@
     margin-top: 50px;
     margin-left: 20px;
     position: relative;
+    transition: all 0.3s;
     &:first-child {
       margin-left: 0;
     }
     &:hover {
-      transition: all 0.3s;
       opacity: 0.8;
     }
   }
@@ -71,8 +71,8 @@
     text-align: center;
     padding: 21px 0;
     margin-top: 80px;
+    transition: all 0.3s;
     &:hover {
-      transition: all 0.3s;
       opacity: 0.8;
     }
   }

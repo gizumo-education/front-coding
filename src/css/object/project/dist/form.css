@@ -96,10 +96,10 @@
   background-position: 12px 15px;
   width: 140px;
   margin-left: 15.5px;
+  transition: all 0.3s;
 }
 .p-form__select__area-btn:hover {
   cursor: pointer;
-  transition: all 0.3s;
   opacity: 0.8;
 }
 .p-form-input {
