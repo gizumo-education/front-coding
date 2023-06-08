@@ -19,22 +19,6 @@
       background-repeat: no-repeat;
       background-position: center;
       position: relative;
-      &__box {
-        display: block;
-        width: 105px;
-        height: 500px;
-        background-color: #98B1BE;
-        z-index: 100px;
-        position: absolute;
-        &:first-child {
-          left: -60px;
-        }
-        &:last-child {
-          right: 0;
-          top: 0;
-          right: -100px;
-        }
-      }
       &__items {
         display: block;
         margin: 0 auto;
@@ -87,6 +71,16 @@
           font-size: 40px;
           line-height: 57.92px;
         }
+      }
+      &__box {
+        display: block;
+        width: 40px;
+        height: 500px;
+        background-color: #98B1BE;
+        z-index: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
       }
     }
   }

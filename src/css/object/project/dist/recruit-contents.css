@@ -1,4 +1,7 @@
 .p-recruit-contents {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
   text-align: center;
 }
 .p-recruit-contents__wrap {

@@ -2,6 +2,9 @@
 @use '../component/button.scss';
 
 .p-recruit-contents {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
   text-align: center;
   &__wrap {
     display: flex;
