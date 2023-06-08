@@ -60,3 +60,89 @@
     };
   };
 };
+
+
+
+
+@include base.tab {
+
+  .p-flow {
+    padding-top: 1.05rem;
+    &__main__title {
+      font-size: 0.25rem;
+    };
+    &__main__block {
+      margin-top: 0.51rem;
+      &__list {
+        margin-right: 0.2rem;
+        padding-bottom: 0.4rem;
+        width: 2.77rem;
+        height: 3.57rem;
+        border-radius: 0.1rem;
+        &__content {
+          font-size: 0.24rem;
+        };
+        &__detail {
+          width: 2.37rem;
+          font-size: 0.14rem;
+          line-height: 0.2rem;
+        };
+        .p-flow__main__step {
+          top: 0.09rem;
+          left: 0.09rem;
+          width: 0.6rem;
+          height: 0.6rem;
+          font-size: 0.16rem;
+          line-height: 0.19rem;
+          padding-top: 0.1rem;
+        };
+      };
+    };
+  };
+}
+
+
+
+@include base.sp {
+
+  .p-flow {
+    padding-top: 0.6rem;
+    &__main__title {
+      line-height: 0.25rem;
+    };
+    &__main__block {
+      margin-top: 0.35rem;
+      flex-flow: column;
+      &__list {
+        width: 2.9rem;
+        height: 2.77rem;
+        margin: 0.42rem auto 0;
+        padding-bottom: 0.2rem;
+        &__content {
+          font-size: 0.2rem;
+          font-weight: base.$bold;
+          line-height: 0.29rem;
+          .p-flow__pc__br {
+            display: none;
+          };
+        };
+        &__detail {
+          width: 2.37rem;
+        };
+        .p-flow__main__step {
+          width: 0.45rem;
+          height: 0.45rem;
+          padding-top: 0.11rem;
+          font-size: 0.1rem;
+          line-height: 0.12rem;
+        };
+      };
+      &__list:last-child {
+        margin: 0.42rem auto 0;
+      };
+      &__list:first-child {
+        margin-top: 0;
+      };
+    };
+  };
+}
