@@ -41,6 +41,9 @@
     display: flex;
     box-sizing: border-box;
     margin: 0 40px 40px 40px;
+    &__box {
+      display: flex;
+    }
     &__style {
       margin-left: 16px;
       position: relative;
