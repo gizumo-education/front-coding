@@ -13,6 +13,8 @@
   }
 
   &__item {
+    width: 277px;
+    height: 357px;
     position: relative;
     padding: 60px 20px 40px;
     text-align: center;
@@ -41,6 +43,11 @@
       content: "";
       border: none;
     }
+  }
+
+  &__img img {
+    width: 100px;
+    height: 100px;
   }
 
   &__badge {
@@ -89,6 +96,8 @@
     }
 
     &__item {
+      width: 2.77rem;
+      height: 3.57rem;
       padding: 0.6rem 0.2rem 0.4rem;
       margin-right: 0.22rem;
       border: solid 0.02rem flow.$pink;
@@ -101,6 +110,11 @@
         border: 0.25rem solid transparent;
         border-left: 0.25rem solid flow.$pink;
       }
+    }
+
+    &__img img {
+      width: 1rem;
+      height: 1rem;
     }
 
     &__badge {
@@ -142,9 +156,11 @@
     }
 
     &__item {
+      width: 2.79rem;
+      height: 2.9rem;
       margin-top: 0.4rem;
       margin-right: 0;
-      padding: 0.53rem 0.19rem 0.21rem;
+      padding: 0.53rem 0.09rem 0.21rem;
 
       &:first-of-type {
         margin-top: 0;
@@ -161,6 +177,11 @@
       }
     }
 
+    &__img img {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+
     &__badge {
       padding-top: 0.1rem;
       line-height: 0.12rem;
@@ -170,9 +191,10 @@
     }
 
     &__title {
+      white-space: nowrap;
       margin-top: 0.22rem;
       font-size: 0.2rem;
-      line-height: 0.29rem;
+      line-height: 0.28rem;
     }
 
     &__text {

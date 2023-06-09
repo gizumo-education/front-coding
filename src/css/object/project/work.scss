@@ -153,5 +153,28 @@
         border-radius: 0.1rem;
       }
     }
+
+    &__title {
+      font-size: 0.16rem;
+      font-weight: 700;
+      line-height: 0.22rem;
+      margin-top: 0.05rem;
+    }
+
+    &__block {
+      margin-top: 0.05rem;
+    }
+
+    &__label {
+      font-size: 0.14rem;
+      margin-right: 0.1rem;
+      width: 0.6rem;
+      height: 0.21rem;
+      line-height: 0.21rem;
+    }
+
+    &__text {
+      font-size: 0.14rem;
+    }
   }
 }
