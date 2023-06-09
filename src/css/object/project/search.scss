@@ -153,7 +153,8 @@ input, select {
     padding: 0.25rem 0;
 
     &__content {
-      padding: 0.15rem 0 0.2rem 0;
+      padding: 0.15rem 0 0.2rem;
+      margin: auto 0.15rem;
       height: 2.4rem;
     }
 
