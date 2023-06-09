@@ -100,3 +100,119 @@
 
   };
 };
+
+
+
+
+
+@include base.tab {
+
+  .p-contents {
+    padding-top: 1.06rem;
+    &__title {
+      font-size: 0.25rem;
+    };
+    .p-contents__block {
+      margin-top: 0.5rem;
+      &__list {
+        margin-right: 0.2rem;
+        border-radius: 0.1rem;
+        .p-contents__block__img {
+          width: 3.8rem;
+          height: 2.4rem;
+        };
+        .p-contents__block__img__second {
+          width: 3.8rem;
+          padding: 1.2rem 0;
+        };
+        .p-contents__block__content {
+          top: 0.7rem;
+          left: 1rem;
+          font-size: 0.24rem;
+        };
+        .p-contents__block__content__second {
+          top: 0.71rem;
+          left: 0.7rem;
+          font-size: 0.24rem;
+        };
+        .p-contents__block__detail {
+          top: 1.39rem;
+          left: 0.6rem;
+          font-size: 0.16rem;
+          line-height: 0.23rem;
+        };
+        .p-contents__block__detail__second {
+          top: 1.4rem;
+          left: 0.42rem;
+          font-size: 0.16rem;
+          line-height: 0.23rem;
+        };
+      };
+      .p-contents__block__list::before {
+        height: 2.4rem;
+        border-radius: 0.1rem;
+      };
+    };
+  };
+}
+
+
+
+
+
+@include base.sp {
+
+  .p-contents {
+    padding-top: 0.61rem;
+    .p-contents__block {
+      margin-top: 0.3rem;
+      flex-wrap: wrap;
+      &__list {
+        margin-right: 0;
+        margin-top: 0.17rem;
+        .p-contents__block__img {
+          width: 3.7rem;
+          height: 2.34rem;
+        };
+        .p-contents__block__img__second {
+          width: 3.7rem;
+          height: 2.33rem;
+          padding: 0;
+        };
+        .p-contents__block__content {
+          top: 0.6rem;
+          left: 1.1rem;
+          font-size: 0.21rem;
+          line-height: 0.21rem;
+        };
+        .p-contents__block__content__second {
+          top: 0.6rem;
+          left: 0.8rem;
+          font-size: 0.21rem;
+          line-height: 0.21rem;
+        };
+        .p-contents__block__detail {
+          top: 1.34rem;
+          left: 0.73rem;
+          font-size: 0.14rem;
+          line-height: 0.2rem;
+        };
+        .p-contents__block__detail__second {
+          top: 1.33rem;
+          left: 0.59rem;
+          font-size: 0.14rem;
+          line-height: 0.2rem;
+        };
+      };
+      &__list:first-child {
+        margin-top: 0;
+      };
+      .p-contents__block__list::before {
+        height: 100%;
+      };
+      &__list:last-child {
+        margin-right: 0;
+      };
+    };
+  };
+}

@@ -45,3 +45,88 @@
     };
   };
 };
+
+
+
+@include base.tab {
+
+.p-jobsearch {
+  &__search {
+    padding: 0.4rem 0;
+    width: 95%;
+    height: 2.4rem;
+    &__headline {
+      font-size: 0.25rem;
+    };
+    &__content {
+      margin-top: 0.2rem;
+      font-size: 0.2rem;
+    };
+    &__select {
+      .p-jobsearch__detail {
+        margin: 0.26rem 0.16rem 0 0;
+        padding: 0.16rem 0.14rem 0.16rem;
+        width: 2rem;
+        height: 0.6rem;
+        font-size: 0.18rem;
+      };
+      .p-jobsearch__detail__other {
+        width: 3rem;
+        height: 0.6rem;
+        margin-right: 0.15rem;
+        padding: 0.16rem 0.14rem 0.16rem;
+        font-size: 0.18rem;
+      };
+    };
+  };
+};
+}
+
+
+
+
+
+@include base.sp {
+  .p-jobsearch {
+    &__sp {
+      padding: 0.6rem 0 1rem;
+    };
+    &__search {
+      width: 3.7rem;
+      height: 2.4rem;
+      border-radius: 0.1rem;
+      padding: 0.15rem 0 0.2rem;
+      &__headline {
+        font-size: 0.22rem;
+        line-height: 0.22rem;
+      };
+      &__content {
+        margin-top: 0.16rem;
+        font-size: 0.14rem;
+        line-height: 0.2rem;
+      };
+      &__select {
+        text-align: center;
+        .p-jobsearch__detail {
+          margin: 0.13rem 0.11rem 0.16rem 0;
+          padding: 0.06rem 0.08rem 0.07rem;
+          width: 1rem;
+          height: 0.3rem;
+          border-radius: 0.05rem;
+          font-weight: base.$regular;
+          font-size: 0.12rem;
+          line-height: 0.17rem;
+        };
+        .p-jobsearch__detail__other {
+          width: 3.2rem;
+          height: 0.3rem;
+          padding: 0.045rem 0.065rem;
+          border-radius: 0.05rem;
+          font-weight: base.$regular;
+          font-size: 0.14rem;
+          line-height: 0.2rem;
+        };
+      };
+    };
+  };
+};

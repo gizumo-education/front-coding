@@ -9,6 +9,9 @@
   top: 0;
   left: 0;
   z-index: 1000000;
+  &__block {
+    display: none;
+  };
   &__navs {
     width: 100%;
     background-color: base.$white;
@@ -40,68 +43,180 @@
   };
 
   .l-header__nav__block {
-    position: relative;
     margin-top: 25px;
     margin-bottom: 25px;
-    
     border-radius: 10px;
     z-index: 1;
-    &__one {
-      display: inline-block;
-      padding-right: 20px;
-      padding-left: 40px;
+    &__ul {
+    display: flex;
+      &__li {
+        position: relative;
+        margin-right: 15px;
+        &__one {
+          display: inline-block;
+          padding-right: 20px;
+          padding-left: 40px;
+        };
+        &__one::before {
+          content: '';
+          width: 20px;
+          height: 18px;
+          background-image: url(../img/icon/heart.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          z-index: 10;
+        };
+      
+        &__two {
+          display: inline-block;
+          padding-right: 30px;
+          padding-left: 47px;
+      
+        };
+        &__two::before {
+          content: '';
+          width: 18px;
+          height: 18px;
+          background-image: url(../img/icon/clock.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          z-index: 10;
+        };
+      
+        &__three {
+          display: inline-block;
+          padding-right: 27px;
+          padding-left: 50px;
+        };
+        &__three::before {
+          content: '';
+          width: 16px;
+          height: 16px;
+          background-image: url(../img/icon/browser_search.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          z-index: 10;
+        };
+      };
+      &__li:last-child {
+        margin-right: 100px;
+      };
     };
-    &__one::before {
-      content: '';
-      width: 20px;
-      height: 18px;
-      background-image: url(../img/icon/heart.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      z-index: 10;
+  }; 
+};
+
+
+
+
+
+@include base.tab {
+
+  .l-header {
+    &__block {
+      display: none;
+    };
+    &__navs {
+      width: 100%;
+      .l-header__nav__list {
+        .l-header__nav__link {
+          padding: 0 0.1rem;
+          .l-header__nav__link__content {
+            font-size: 0.13rem;
+          };
+        };
+      };
     };
   
-    &__two {
-      display: inline-block;
-      padding-right: 30px;
-      padding-left: 50px;
-  
+    .l-header__nav__block {
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+      border-radius: 0.1rem;
+      &__ul {
+      &__li {
+        margin-right: 0.15rem;
+        &__one {
+          padding-right: 0.2rem;
+          padding-left: 0.4rem;
+        };
+        &__one::before {
+          content: '';
+          width: 0.17rem;
+          height: 0.17rem;
+          top: 30%;
+          left: 0.15rem;
+        };
+      
+        &__two {
+          padding-right: 0.3rem;
+          padding-left: 0.4rem;
+      
+        };
+        &__two::before {
+          width: 0.18rem;
+          height: 0.18rem;
+          top: 30%;
+          left: 0.15rem;
+        };
+      
+        &__three {
+          padding-right: 0.27rem;
+          padding-left: 0.4rem;
+        };
+        &__three::before {
+          width: 0.16rem;
+          height: 0.16rem;
+          top: 30%;
+          left: 0.15rem;
+        };
+      };
+      &__li:last-child {
+        margin-right: 1rem;
+      };
     };
-    &__two::before {
-      content: '';
-      width: 18px;
-      height: 18px;
-      background-image: url(../img/icon/clock.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      position: absolute;
-      top: 15px;
-      left: 195px;
-      z-index: 10;
-    };
-  
-    &__three {
-      display: inline-block;
-      padding-right: 27px;
-      padding-left: 55px;
-    };
-    &__three::before {
-      content: '';
-      width: 16px;
-      height: 16px;
-      background-image: url(../img/icon/browser_search.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      position: absolute;
-      top: 15px;
-      left: 355px;
-      z-index: 10;
     };
   };
-};
+}
+
+
+
+
+
+@include base.sp {
+
+  .l-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 0.7rem;
+    padding: 10px;
+    background-color: base.$white;
+    &__block {
+      display: block;
+      position: absolute;
+      right: 0.15rem;
+      #nav-input:checked ~ .c-button__hamburger__close {
+        display: block;
+        opacity: .5;
+      }
+      #nav-input:checked ~ .c-button__hamburger__content {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+      }
+    }
+    &__navs {
+      display: none;
+    }
+  }
+}

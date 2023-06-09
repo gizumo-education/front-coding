@@ -13,7 +13,6 @@
   font-weight: base.$regular;
   color: base.$white;
   padding: 15px 0 15px 10px;
-  margin-right: 15px;
   background-color: base.$skyBlue;
   border-radius: 10px;
   transition: .3s;
@@ -25,14 +24,14 @@
   transition: .3s;
 };
 
-.c-button__nav__style:last-child {
-  margin-right: 100px;
-};
-
 .c-button__keyvisual__content {
   position: absolute;
   top: 50px;
   right: 250px;
+};
+
+.c-button__keyvisual__content__sp {
+  display: none;
 };
 
 
@@ -155,4 +154,308 @@ margin: 18px auto 0;
 };
 .c-button__flow__arrow:last-child::after {
  border: none;
+};
+
+
+
+
+@include base.tab {
+
+  // header
+  .c-button__nav__style {
+    font-size: 0.1rem;
+    padding: 0.15rem 0 0.15rem 0.1rem;
+  };
+  .c-button__search {
+    width: 0.15rem;
+    height: 0.14rem;
+  };
+  .c-button__book {
+    width: 0.15rem;
+    height: 0.14rem;
+  };
+
+
+  // keyvisual
+  .c-button__keyvisual__content {
+    top: 0.8rem;
+    right: 2.5rem;
+    width: 2.5rem;
+    height: 1.5rem;
+  };
+  
+  .c-button__selectjob__search::before {
+    bottom: 0.15rem;
+    right: 0.3rem;
+    border: 0.1rem solid transparent;
+    border-top: 0.1rem solid #DE1E79;
+  };
+  
+  
+  .c-button__main__jobsearch__btn {
+    height: 0.6rem;
+    width: 1.4rem;
+    .c-button__jobsearch__icon {
+      margin-top: 0.15rem;
+      height: 0.3rem;
+      width: 0.3rem;
+    };
+    .c-button__main__pink__btn {
+      padding: 0 0.04rem;
+      font-size: 0.18rem;
+    };
+  };
+
+
+
+  // offer
+  .c-button__main__btn__block {
+    .c-button__main__btn {
+      width: 3.6rem;
+      height: 0.6rem;
+      border-radius: 0.3rem;
+      margin: 0.6rem auto 0;
+      font-size: 0.18rem;
+    };
+  };
+
+  // subvisual
+  .c-button__size__font {
+    font-size: 0.25rem;
+  };
+
+
+  // flow
+  .c-button__icon__note {
+    width: 0.93rem;
+    height: 0.9rem;
+    margin: 0.53rem 0 0.25rem;
+  };
+  
+  .c-button__icon__search {
+    width: 0.93rem;
+    height: 0.9rem;
+    margin: 0.5rem 0 0.25rem;
+  };
+  
+  .c-button__icon__mail {
+    width: 0.93rem;
+    height: 0.9rem;
+    margin: 0.5rem 0 0.32rem;
+  };
+  
+  .c-button__icon__kirakira {
+    width: 0.93rem;
+    height: 0.9rem;
+    margin: 0.53rem 0 0.32rem;
+  };
+
+  .c-button__line__2 {
+    line-height: 0.3rem;
+  };
+
+  .c-button__line {
+    line-height: 0.4rem;
+  };
+
+  .c-button__content {
+    margin: 0.23rem auto 0;
+  };
+
+  .c-button__content2 {
+    margin: 0.18rem auto 0;
+  };
+
+  .c-button__flow__arrow::after {
+    top: 50%;
+    right: -0.42rem;
+    border: 0.2rem solid transparent;
+    border-left: 0.2rem solid base.$pink;
+  };
+
+
+}
+
+
+
+
+@include base.sp {
+
+  .c-button__hamburger {
+    &__unshown {
+      display: none;
+    }
+    &__bar {
+      display: inline-block;
+      width: 30px;
+      height: 22px;
+      vertical-align: middle;
+      margin: 0.07rem 0.15rem 0 0;
+    }
+    &__bar span,
+    &__bar span::before,
+    &__bar span::after {
+      position: absolute;
+      margin-right: 10px;
+      height: 0.06rem;
+      width: 0.4rem;
+      border-radius: 5px;
+      background-color: base.$black;
+      display: block;
+      content: '';
+      cursor: pointer;
+      z-index: 100000;
+    }
+    &__bar span:before {
+      bottom: -0.15rem;
+    }
+    &__bar span:after {
+      bottom: -0.3rem;
+    }
+    &__content {
+      position: fixed;
+      top: 0.7rem;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0.57rem 0 0 0.6rem;
+      background-color: base.$black;
+      opacity: .7;
+      transition: .3s ease-in-out;
+      -webkit-transform: translateX(105%);
+      transform: translateX(105%);
+      z-index: -1;
+      &__list {
+        margin-top: 0.38rem;
+        &__title {
+          font-weight: base.$bold;
+          font-size: 22px;
+          line-height: 22px;
+          color: base.$white;
+          z-index: 100;
+          opacity: 1;
+        };
+      };
+      &__list:first-child {
+        margin-top: 0;
+      };
+    };
+  };
+
+
+
+  .c-button__keyvisual__content {
+    display: none;
+  };
+
+  .c-button__keyvisual__content__sp {
+    display: inline-block;
+    position: absolute;
+    top: 0.6rem;
+    right: 0.5rem;
+  };
+
+
+
+  .c-button__selectjob__search::before {
+    bottom: 0.2rem;
+    right: 0.18rem;
+    border: 0.07rem solid transparent;
+    border-top: 0.07rem solid #DE1E79;
+  };
+
+  .c-button__main__jobsearch__btn {
+    margin-top: 0.19rem;
+    height: 0.4rem;
+    width: 1.6rem;
+    border-radius: 0.2rem;
+    .c-button__jobsearch__icon {
+      margin-top: 0.11rem;
+      height: 0.17rem;
+      width: 0.17rem;
+    };
+    .c-button__main__pink__btn {
+      text-align: center;
+      font-size: 0.18rem;
+      line-height: 0.18rem;
+    };
+  };
+
+
+  //新着求人
+    .c-button__main__btn {
+      margin-top: 0.35rem;
+    };
+
+
+  //subvisual
+    .c-button__size__font {
+      font-weight: base.$regular;
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+    };
+
+
+  // flow
+  .c-button__icon__note {
+    margin: 0.53rem 0 0.2rem;
+    width: 0.76rem;
+    height: 0.75rem;
+  };
+
+  .c-button__icon__search {
+    margin: 0.53rem 0 0.22rem;
+    width: 0.74rem;
+    height: 0.74rem;
+  };
+
+  .c-button__icon__mail {
+    margin: 0.53rem 0 0.22rem;
+    width: 0.8rem;
+    height: 0.75rem;
+  };
+
+  .c-button__icon__kirakira {
+    margin: 0.53rem 0 0.22rem;
+    width: 0.73rem;
+    height: 0.75rem;
+  };
+
+
+  .c-button__line__2 {
+    line-height: 0.3rem;
+  };
+
+  .c-button__line {
+    line-height: 0.45rem;
+  };
+
+  .c-button__content {
+    margin: 0.2rem auto 0;
+  };
+
+  .c-button__content2 {
+  margin: 0.1rem auto 0;
+  };
+
+  .c-button__flow__arrow::after {
+    content: "";
+    position: absolute;
+    top: 112%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border: 0.2rem solid transparent;
+    border-top: 0.2rem solid base.$pink;
+    z-index: 100000;
+  };
+
+
+    // contents
+    .c-button__main__btn__block {
+      text-align: center;
+      .c-button__main__btn {
+        width: 3.7rem;
+        margin: 0.34rem auto 0;
+      };
+    };
 };

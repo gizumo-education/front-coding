@@ -64,3 +64,108 @@
     text-align: center
   };
 };
+
+
+
+
+
+@include base.tab {
+
+  .l-footer {
+    &__block {
+      &__area {
+        &__element {
+          width: 2.95rem;
+          margin: 0.27rem 0 0 0.2rem;
+          font-size: 0.16rem;
+          &__list {
+            margin: 0.2rem 0.39rem 0 0;
+          };
+          &__list:nth-child(2n) {
+            margin: 0.2rem 0 0;
+          };
+          &__list:nth-child(2n-1) {
+            width: 0.96rem;
+          };
+        };
+        &__element:first-child {
+          margin-top: 0.79rem;
+        };
+      };
+      &__area__aside {
+        &__block {
+          margin: 0.55rem 0.2rem 0.25rem 0;
+          &__list {
+            margin-top: 0.15rem;
+            width: 3.22rem;
+            height: 0.87rem;
+          };
+        };
+      };
+    };
+    .l-footer__block__area__small {
+      padding: 0.1rem 0;
+      font-size: 0.14rem;
+    };
+  };
+}
+
+
+
+
+
+
+@include base.sp {
+
+  .l-footer {
+    &__block {
+      padding: 0.38rem 0 0.4rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      &__area {
+        &__element {
+          width: 2.95rem;
+          display: flex;
+          margin-top: 0.27rem;
+          flex-wrap: wrap;
+          font-size: 0.16rem;
+          font-weight: base.$regular;
+          color: base.$black;
+          &__list {
+            margin: 0.2rem 0.39rem 0 0;
+            &__content {
+              color: base.$black;
+              transition: .9s;
+            };
+            &__content:hover {
+              opacity: .8;
+              transition: .3s;
+            };
+          };
+          &__list:nth-child(2n) {
+            margin: 0.2rem 0 0;
+          };
+          &__list:nth-child(2n-1) {
+            width: 0.96rem;
+          };
+        };
+        &__element:first-child {
+          margin-top: 0;
+        };
+      };
+      &__area__aside {
+        &__block {
+          margin: 0.22rem 0 0;
+          &__list a img {
+            width: 3.2rem;
+            height: 0.85rem;
+          };
+          &__list:first-child {
+            margin-top: 0;
+          };
+        };
+      };
+    };
+  };
+  
+}

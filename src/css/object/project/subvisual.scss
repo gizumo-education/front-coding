@@ -31,3 +31,38 @@
     z-index: 10000;
   };
 };
+
+
+
+@include base.tab {
+
+  .p-subvisual__sub {
+    padding: 1.04rem 0 1.03rem;
+    height: 3rem;
+    &__visual {
+      height: 3rem;
+    };
+    &__title__two {
+      margin-top: 0.24rem;
+    };
+  };
+}
+
+
+
+
+@include base.sp {
+
+  .p-subvisual__sub {
+    padding: 0.16rem 0 0.16rem;
+    height: 0.75rem;
+    &__visual {
+      height: 0.75rem;
+    };
+    &__title__two {
+      text-align: center;
+      margin-top: 0.02rem;
+      z-index: 10000;
+    };
+  };
+}

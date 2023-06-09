@@ -10,6 +10,32 @@
 </head>
 <body>
   <header class="l-header">
+    <div class="l-header__block">
+      <div class="c-button__hamburger">
+        <input class=" c-button__hamburger__unshown" id="nav-input" type="checkbox">
+        <label class="c-button__hamburger__bar" for="nav-input"><span></span></label>
+        <label class="c-button__hamburger__unshown c-button__hamburger__close" for="nav-input"></label>
+        <div class="c-button__hamburger__content">
+          <ul>
+            <li class="c-button__hamburger__content__list">
+              <a class="c-button__hamburger__content__list__title" href="#">トップ</a>
+            </li>
+            <li class="c-button__hamburger__content__list">
+              <a class="c-button__hamburger__content__list__title" href="#">新着求人</a>
+            </li>
+            <li class="c-button__hamburger__content__list">
+              <a class="c-button__hamburger__content__list__title" href="#">4つの特徴</a>
+            </li>
+            <li class="c-button__hamburger__content__list">
+              <a class="c-button__hamburger__content__list__title" href="#">転職までの流れ</a>
+            </li>
+            <li class="c-button__hamburger__content__list">
+              <a class="c-button__hamburger__content__list__title" href="#">転職お役立ち</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <nav class="l-header__navs">
       <div class="l-header__nav">
         <ul class="l-header__nav__list">
@@ -35,9 +61,17 @@
         </ul>
       </div>
       <div class="l-header__nav__block">
-        <a class="l-header__nav__block__one c-button__nav__style" href="#">気になるリスト</a>
-        <a class="l-header__nav__block__two c-button__nav__style" href="#">閲覧履歴</a>
-        <a class="l-header__nav__block__three c-button__nav__style" href="#">検索履歴</a>
+        <ul class="l-header__nav__block__ul">
+          <li class="l-header__nav__block__ul__li">
+            <a class="l-header__nav__block__ul__li__one c-button__nav__style" href="#">気になるリスト</a>
+          </li>
+          <li class="l-header__nav__block__ul__li">
+            <a class="l-header__nav__block__ul__li__two c-button__nav__style" href="#">閲覧履歴</a>
+          </li>
+          <li class="l-header__nav__block__ul__li">
+            <a class="l-header__nav__block__ul__li__three c-button__nav__style" href="#">検索履歴</a>
+          </li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -45,6 +79,7 @@
     <div class="p-keyvisual__main">
       <div class="p-keyvisual__main__img">
         <img class="c-button__keyvisual__content" src="img/icon/keyvisual_content.png" alt="女性の写真">
+        <img class="c-button__keyvisual__content__sp" src="img/icon/sp-keyvisual_content.png" alt="女性の写真">
         <h1 class="p-keyvisual__main__img__headline">医療事務求人を探すならギズジョブ</h1>
         <p class="p-keyvisual__main__img__content">現在の求人掲載数:<span class="p-main__keyvisual__span">2,320</span>件</p>
       </div>
@@ -104,6 +139,7 @@
           <li class="p-offer__newoffer__list">
             <a href="#">
               <img class="p-offer__newoffer__img" src="img/picture/newoffer1.jpg" alt="女性の医療事務の写真1">
+              <img class="p-offer__newoffer__img__sp" src="img/picture/sp-offer.png" alt="女性の医療事務の写真1">
               <h3 class="p-offer__newoffer__content">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h3>
               <h4 class="p-offer__newoffer__explanation">給与</h4><p class="p-offer__newoffer__detail">月給 148,000円〜</p><br>
               <h4 class="p-offer__newoffer__explanation">所在地</h4><p class="p-offer__newoffer__detail">三重県伊勢市</p><br>
@@ -155,7 +191,7 @@
           <li class="p-feature__main__block__list">
             <h3 class="p-feature__main__block__list__content">WEB上で応募完結</h3>
             <p class="p-feature__main__block__list__detail">
-              エントリーシートの記入を済ませば、あとは気になる企業に応募して<br>
+              エントリーシートの記入を済ませば、<br class="p-feature__sp__br">あとは気になる企業に応募して<br class="p-feature__pc__br">
               待つだけで面接アポまで完結!
             </p>
           </li>
@@ -169,15 +205,15 @@
           <li class="p-feature__main__block__list">
             <h3 class="p-feature__main__block__list__content">わかりやすい</h3>
             <p class="p-feature__main__block__list__detail">
-              当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br>
-              といったご自身にピッタリマッチした求人を見つけることができる!
+              当求人サイトは医療事務に特化しておりさらに<br class="p-feature__sp__br">こだわり検索や地域から検索<br class="p-feature__pc__br">
+              といったご自身に<br class="p-feature__sp__br">ピッタリマッチした求人を見つけることができる!
             </p>
           </li>
           <li class="p-feature__main__block__list">
             <h3 class="p-feature__main__block__list__content">完全無料</h3>
             <p class="p-feature__main__block__list__detail">
-              当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br>
-              運営されています。ですので求職者の方からは応募前はもちろん、<br>
+              当サイトは求人元の企業やグループ会社からのスポンサー費用に<br class="p-feature__sp__br">よって<br class="p-feature__pc__br">
+              運営されています。ですので求職者の方からは<br class="p-feature__sp__br">応募前はもちろん、<br class="p-feature__pc__br">
               内定後も費用は一切いただきません。
             </p>
           </li>
@@ -192,7 +228,7 @@
             <div class="p-flow__main__block__list__img">
               <img class="c-button__icon__note" src="img/icon/flow1.png" alt="エントリーシートのアイコン">
             </div>
-            <h3 class="p-flow__main__block__list__content c-button__line__2">エントリーシートの<br>作成</h3>
+            <h3 class="p-flow__main__block__list__content c-button__line__2">エントリーシートの<br class="p-flow__pc__br">作成</h3>
             <p class="p-flow__main__block__list__detail c-button__content2">
               ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ
             </p>
@@ -203,7 +239,7 @@
             <div class="p-flow__main__block__list__img">
               <img class="c-button__icon__search" src="img/icon/flow2.png" alt="虫眼鏡のアイコン">
             </div>
-            <h3 class="p-flow__main__block__list__content c-button__line__2">気になる企業の<br>ピックアップ</h3>
+            <h3 class="p-flow__main__block__list__content c-button__line__2">気になる企業の<br class="p-flow__pc__br">ピックアップ</h3>
             <p class="p-flow__main__block__list__detail c-button__content2">
               ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが
             </p>
@@ -271,7 +307,7 @@
       </div>
     </section>
 
-    <section class="p-jobsearch u-padding__six">
+    <section class="p-jobsearch u-padding__six p-jobsearch__sp">
       <div class="p-jobsearch__search">
         <h2 class="p-jobsearch__search__headline">お仕事検索</h2>
         <p class="p-jobsearch__search__content">働きたい職種・地域・給与希望を入れて検索!</p>
