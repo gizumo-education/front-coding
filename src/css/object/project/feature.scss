@@ -5,6 +5,7 @@
 
   &__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 53px;
   }
@@ -15,7 +16,6 @@
     background-color: feature.$pink2;
     margin-right: 40px;
     width: 570px;
-    height: 180px;
     text-align: center;
     margin-top: 40px;
 
@@ -39,5 +39,112 @@
     font-size: 14px;
     color: feature.$black;
     line-height: 20px;
+  }
+}
+
+.pc-br {
+  display: block;
+}
+
+.sp-br {
+  display: none;
+}
+
+@include feature.pc {
+  .py-4 {
+    padding: 40px 0 30px !important;
+  }
+}
+
+@include feature.tab {
+  .p-feature {
+    padding-top: 1.06rem;
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 0.53rem;
+    }
+
+    &__item {
+      border-radius: 0.1rem;
+      padding: 0.4rem 0;
+      background-color: feature.$pink2;
+      margin-right: 0.4rem;
+      width: 5.7rem;
+      text-align: center;
+      margin-top: 40px;
+
+      &:nth-child(-n+2) {
+        margin-top: 0;
+      }
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    &__title {
+      font-size: 0.24rem;
+      font-weight: 700;
+      color: feature.$pink;
+    }
+
+    &__text {
+      margin-top: 0.36rem;
+      font-size: 0.14rem;
+      color: feature.$black;
+      line-height: 0.2rem;
+    }
+  }
+}
+
+
+
+@include feature.sp {
+  .p-feature {
+    padding-top: 0.55rem;
+
+    &__list {
+      margin-top: 0.38rem;
+    }
+
+    &__item {
+      width: 3.7rem;
+      padding: 0.3rem 0;
+      margin-top: 0.2rem;
+
+      &:nth-child(-n+2) {
+        margin-top: 0.2rem;
+        margin-right: 0;
+      }
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    &__title {
+      font-size: 0.2rem;
+    }
+
+    &__text {
+      margin-top: 0.3rem;
+      font-size: 0.12rem;
+      line-height: 0.17rem;
+    }
+  }
+
+  .pc-br {
+    display: none;
+  }
+
+  .sp-br {
+    display: block;
   }
 }

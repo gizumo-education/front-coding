@@ -17,6 +17,7 @@
   }
 
   &__text {
+    white-space: nowrap;
     font-weight: 700;
     color: subkey.$white;
     text-align: center;
@@ -24,6 +25,35 @@
 
     &:last-of-type {
       margin-top: 20px;
+    }
+  }
+}
+
+@include subkey.tab {
+  .p-subvisual {
+    height: 3rem;
+
+    &__text {
+      font-size: 0.25rem;
+
+      &:last-of-type {
+        margin-top: 0.2rem;
+      }
+    }
+  }
+}
+
+@include subkey.sp {
+  .p-subvisual {
+    height: 0.75rem;
+
+    &__text {
+      font-size: 0.14rem;
+      font-weight: 400;
+
+      &:last-of-type {
+        margin-top: 0.03rem;
+      }
     }
   }
 }

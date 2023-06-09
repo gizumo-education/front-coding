@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as title;
 
 .c-title {
   font-size: 25px;
@@ -9,4 +9,25 @@
   font-size: 25px;
   font-weight: 400;
   text-align: left;
+}
+
+@include title.tab {
+  .c-title {
+    font-size: 0.25rem;
+  }
+
+  .c-subtitle {
+    font-size: 0.25rem;
+  }
+}
+
+@include title.sp {
+  .c-title {
+    font-size: 0.22rem;
+  }
+
+  .c-subtitle {
+    text-align: center;
+    font-weight: 700;
+  }
 }

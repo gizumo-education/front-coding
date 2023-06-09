@@ -25,7 +25,9 @@
   background-image: url(../img/icon/heart.png);
   background-repeat: no-repeat;
   height: 18px;
-  width: 20px;
+  width: 21px;
+  background-size: contain;
+  vertical-align: middle;
 }
 
 .c-button-clock::before {
@@ -38,6 +40,8 @@
   background-repeat: no-repeat;
   height: 18px;
   width: 18px;
+  background-size: contain;
+  vertical-align: middle;
 }
 
 .c-button-history::before {
@@ -50,6 +54,8 @@
   background-repeat: no-repeat;
   height: 16px;
   width: 16px;
+  background-size: contain;
+  vertical-align: middle;
 }
 
 .c-more-button {
@@ -61,6 +67,7 @@
   border-radius: 30px;
   margin: 0 auto;
   transition: .3s;
+  white-space: nowrap;
 
   &:hover {
     opacity: .8;
@@ -69,16 +76,128 @@
 }
 
 .c-search-btn {
-  position: relative;
   font-weight: 700;
   color: btn.$white;
   background-color: btn.$pink;
   border: solid 1px btn.$pink;
   border-radius: 30px;
   font-size: 18px;
-  padding: 16px 20px 21px 48px;
   width: 140px;
   height: 60px;
   box-sizing: border-box;
   cursor: pointer;
+
+  span {
+    display: inline-block;
+  }
+}
+
+.c-burger-btn {
+  display: none;
+}
+
+@include btn.tab {
+
+  .c-button {
+    border-radius: 0.1rem;
+    font-size: 0.14rem;
+  }
+
+  .c-button-heart::before {
+    content: '';
+    display: block;
+    top: 0.14rem;
+    left: 0.1rem;
+    height: 0.18rem;
+    width: 0.21rem;
+  }
+
+  .c-button-clock::before {
+    content: '';
+    display: block;
+    top: 0.14rem;
+    left: 0.24rem;
+    height: 0.18rem;
+    width: 0.18rem;
+  }
+
+  .c-button-history::before {
+    content: '';
+    display: block;
+    top: 0.14rem;
+    left: 0.3rem;
+    height: 0.16rem;
+    width: 0.16rem;
+  }
+
+  .c-more-button {
+    border-radius: 0.1rem;
+    font-size: 0.18rem;
+    border-radius: 0.3rem;
+  }
+
+  .c-search-btn {
+    font-size: 0.18rem;
+    width: 1.4rem;
+    height: 0.6rem;
+    border: solid 0.01rem btn.$pink;
+    border-radius: 0.3rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+  }
+}
+
+@include btn.sp {
+
+  .c-search-btn {
+    width: 1.6rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.18rem;
+    border-radius: 0.3rem;
+  }
+
+  .c-more-button {
+    border-radius: 0.1rem;
+    font-size: 0.18rem;
+    border-radius: 0.3rem;
+  }
+
+  .c-burger-btn {
+    display: block;
+    position: absolute;
+    top: 0.16rem;
+    right: 0.15rem;
+  }
+
+  .c-bars {
+    height: 38px;
+  }
+
+  .c-bar {
+    border-radius: 3px;
+    background-color: btn.$black;
+    display: block;
+    width: 50px;
+    height: 6px;
+  }
+
+  .c-bar_top {
+    transform: translateY(-10px);
+  }
+
+  .c-bar_bottom {
+    transform: translateY(10px);
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
 }

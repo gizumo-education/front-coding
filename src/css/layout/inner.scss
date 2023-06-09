@@ -1,7 +1,15 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as inner;
 // innerのスタイルを記述するファイル
 
 .l-inner {
   max-width: 1180px;
   margin: 0 auto;
+
+  @include inner.tab {
+    max-width: 11.80rem;
+  }
+
+  @include inner.sp {
+    max-width: 11.80rem;
+  }
 }
