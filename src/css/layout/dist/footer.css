@@ -1,0 +1,111 @@
+.l-footer {
+  width: 100%;
+}
+.l-footer__box {
+  height: 265px;
+  background-color: #EFF6FC;
+  position: relative;
+  display: flex;
+}
+.l-footer__top {
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #000000;
+  margin-top: 79px;
+  margin-left: 210px;
+  transition: all 0.3s;
+}
+.l-footer__top:hover {
+  opacity: 0.8;
+}
+.l-footer__wrap {
+  display: flex;
+  margin-top: 27px;
+  margin-left: 215px;
+  position: absolute;
+  left: 0;
+  bottom: 28px;
+}
+.l-footer__wrap-left {
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  display: block;
+  width: 96px;
+  height: 108px;
+  transition: all 0.3s;
+}
+.l-footer__wrap-left-text {
+  color: #000000;
+}
+.l-footer__wrap-left-text:hover {
+  opacity: 0.8;
+}
+.l-footer__wrap-right {
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  display: block;
+  width: 160px;
+  height: 72px;
+  margin-left: 39px;
+  transition: all 0.3s;
+}
+.l-footer__wrap-right-text {
+  color: #000000;
+}
+.l-footer__wrap-right-text:hover {
+  opacity: 0.8;
+}
+.l-footer__pic {
+  margin-top: 55px;
+  margin-right: 210px;
+  position: absolute;
+  right: 0;
+}
+.l-footer__pic__box {
+  display: flex;
+  width: 320px;
+  height: 85px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.l-footer__pic__box:last-child {
+  margin-bottom: 0;
+}
+.l-footer__pic__white {
+  display: block;
+  width: 320px;
+  height: 85px;
+  background-color: #ffffff;
+  z-index: 100px;
+}
+.l-footer__pic__img {
+  z-index: 200px;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s;
+}
+.l-footer__pic__img:hover {
+  opacity: 0.8;
+}
+.l-footer__copyright {
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  background-color: #D7D7D7;
+}
+.l-footer__copyright__sentence {
+  display: block;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+}

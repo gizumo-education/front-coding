@@ -1,2 +1,7 @@
 @use '../object/utility/utility.scss';
+@use '../object/component/button.scss';
 // innerのスタイルを記述するファイル
+.l-inner {
+  width: 100%;
+  background-color: #ffffff;
+}

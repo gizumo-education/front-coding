@@ -1,0 +1,119 @@
+.p-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.p-form:last-child {
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+.p-form__box {
+  display: block;
+  box-sizing: border-box;
+  height: 240px;
+  text-align: center;
+  background-color: #DEEEF9;
+  border-radius: 10px;
+}
+.p-form__title {
+  display: block;
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 25px;
+  margin-top: 40px;
+}
+.p-form__title-sub {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28.96px;
+  margin-top: 20px;
+  margin-bottom: 26px;
+}
+.p-form-label {
+  display: none;
+}
+.p-form__select {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 40px 40px 40px;
+}
+.p-form__select__box {
+  display: flex;
+}
+.p-form__select__style {
+  margin-left: 16px;
+  position: relative;
+}
+.p-form__select__style:first-child {
+  margin-left: 0;
+}
+.p-form__select__style::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 28px;
+  right: 15px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #DE1E79;
+  border-bottom: 10px solid transparent;
+}
+.p-form__select__area {
+  display: inline-flex;
+}
+.p-form__select__area-search {
+  display: block;
+  box-sizing: border-box;
+  width: 300px;
+  height: 60px;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.06px;
+  border: 1px solid #DE1E79;
+  border-radius: 10px;
+  padding: 17px 20px 17px 10px;
+  margin-left: 15px;
+}
+.p-form__select__area-btn {
+  display: block;
+  display: inline-block;
+  font-family: "Noto Sans JP";
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  height: 60px;
+  background-color: #DE5579;
+  border-radius: 30px;
+  border: none;
+  background-image: url(../img/icon/icon-big-glass.png);
+  background-repeat: no-repeat;
+  background-position: 12px 15px;
+  width: 140px;
+  margin-left: 15.5px;
+  transition: all 0.3s;
+}
+.p-form__select__area-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.p-form-input {
+  box-sizing: border-box;
+  width: 200px;
+  height: 60px;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.06px;
+  appearance: none;
+  border: 1px solid #DE1E79;
+  border-radius: 10px;
+  padding: 17px 0 17px 15px;
+  position: relative;
+}
