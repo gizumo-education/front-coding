@@ -10,6 +10,7 @@
   background-image: url(../img/picture/keyvisual.png);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 1262px;
   height: 500px;
   position: relative;
 
@@ -70,6 +71,7 @@
 
   .p-keyvisual {
     height: 5rem;
+    max-width: 100%;
 
     &__pc-img {
       top: 0.56rem;

@@ -88,7 +88,7 @@
 
     &__item {
       margin-right: 0.2rem;
-      height: 240px;
+      height: 2.4rem;
       width: calc((100% - 0.4rem) / 3);
       border-radius: 0.1rem;
 
@@ -151,6 +151,7 @@
     &__text {
       font-size: 0.14rem;
       margin-top: 0.53rem;
+      line-height: 0.2rem;
     }
   }
 }

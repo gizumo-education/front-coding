@@ -19,6 +19,10 @@ body {
   line-height: 1;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 @include base.tab {
   body {
     font-size: 0.1rem;
