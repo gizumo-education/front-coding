@@ -97,6 +97,7 @@
       &::after {
         content: "";
         position: absolute;
+        right: -0.5rem;
         border: 0.25rem solid transparent;
         border-left: 0.25rem solid flow.$pink;
       }
@@ -152,7 +153,7 @@
       &::after {
         content: "";
         position: absolute;
-        top: 115%;
+        top: 114%;
         right: 50%;
         transform: translate(50%, -50%);
         border: 0.25rem solid transparent;
