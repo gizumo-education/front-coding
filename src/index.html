@@ -12,25 +12,25 @@
   <header class="l-header">
     <div class="l-header__block">
       <div class="c-button__hamburger">
-        <input class=" c-button__hamburger__unshown" id="nav-input" type="checkbox">
-        <label class="c-button__hamburger__bar" for="nav-input"><span></span></label>
+        <input class="c-button__hamburger__unshown" id="nav-input" type="checkbox">
+        <label class="c-button__hamburger__bar" for="nav-input"><span class="c-button__hamburger__bar__span"></span></label>
         <label class="c-button__hamburger__unshown c-button__hamburger__close" for="nav-input"></label>
         <div class="c-button__hamburger__content">
           <ul>
             <li class="c-button__hamburger__content__list">
-              <a class="c-button__hamburger__content__list__title" href="#">トップ</a>
+              <a class="c-button__hamburger__content__list__title" href="#top">トップ</a>
             </li>
             <li class="c-button__hamburger__content__list">
-              <a class="c-button__hamburger__content__list__title" href="#">新着求人</a>
+              <a class="c-button__hamburger__content__list__title" href="#offer">新着求人</a>
             </li>
             <li class="c-button__hamburger__content__list">
-              <a class="c-button__hamburger__content__list__title" href="#">4つの特徴</a>
+              <a class="c-button__hamburger__content__list__title" href="#feature">4つの特徴</a>
             </li>
             <li class="c-button__hamburger__content__list">
-              <a class="c-button__hamburger__content__list__title" href="#">転職までの流れ</a>
+              <a class="c-button__hamburger__content__list__title" href="#flow">転職までの流れ</a>
             </li>
             <li class="c-button__hamburger__content__list">
-              <a class="c-button__hamburger__content__list__title" href="#">転職お役立ち</a>
+              <a class="c-button__hamburger__content__list__title" href="#contents">転職お役立ち</a>
             </li>
           </ul>
         </div>
@@ -75,7 +75,7 @@
       </div>
     </nav>
   </header>
-  <main class="p-keyvisual">
+  <main id="top" class="p-keyvisual lick-scroll">
     <div class="p-keyvisual__main">
       <div class="p-keyvisual__main__img">
         <img class="c-button__keyvisual__content" src="img/icon/keyvisual_content.png" alt="女性の写真">
@@ -132,10 +132,10 @@
         </div>
       </div>
     </section>
-    <section class="p-offer__newoffer">
+    <section id="offer" class="p-offer__newoffer lick-scroll">
       <div class="l-inner">
         <h2 class="p-offer__newoffer__title">新着求人</h2>
-        <ul class="p-offer__newoffer__lists">
+        <ul class="p-offer__newoffer__lists"> 
           <li class="p-offer__newoffer__list">
             <a href="#">
               <img class="p-offer__newoffer__img" src="img/picture/newoffer1.jpg" alt="女性の医療事務の写真1">
@@ -174,7 +174,7 @@
             </a>
           </li>
         </ul>
-        <div class="c-button__main__btn__block">
+        <div class="c-button__main__btn__block"> 
           <input class="c-button__main__btn" type="submit" value="新着求人一覧をもっと見る">
         </div>
       </div>
@@ -184,7 +184,7 @@
       <h2 class="p-subvisual__sub__title c-button__size__font">ギズジョブなら理想の職場がきっと見つかる</h2>
       <h2 class="p-subvisual__sub__title__two c-button__size__font">ギズジョブは完全無料の求職者向けサービスです。</h2>  
     </section>
-    <section class="p-feature">
+    <section id="feature" class="p-feature lick-scroll">
       <div class="l-inner">
         <h2 class="p-feature__main__title">ギズジョブの4つの特徴</h2>
         <ul class="p-feature__main__block">
@@ -220,7 +220,7 @@
         </ul>
       </div>
     </section>
-    <section class="p-flow">
+    <section id="flow" class="p-flow lick-scroll">
       <div class="inner">
         <h2 class="p-flow__main__title">転職までの流れ</h2>
         <ul class="p-flow__main__block">
@@ -270,7 +270,7 @@
         </ul>
       </div>
     </section>
-    <section class="p-contents">
+    <section id="contents" class="p-contents lick-scroll">
       <div class="inner">
         <h2 class="p-contents__title">転職お役立ちコンテンツ</h2>
         <div class="p-contents__block">

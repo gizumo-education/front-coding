@@ -287,31 +287,58 @@ margin: 18px auto 0;
     }
     &__bar {
       display: inline-block;
-      width: 30px;
-      height: 22px;
-      vertical-align: middle;
-      margin: 0.07rem 0.15rem 0 0;
-    }
-    &__bar span,
-    &__bar span::before,
-    &__bar span::after {
-      position: absolute;
-      margin-right: 10px;
-      height: 0.06rem;
-      width: 0.4rem;
-      border-radius: 5px;
-      background-color: base.$black;
-      display: block;
-      content: '';
-      cursor: pointer;
-      z-index: 100000;
-    }
-    &__bar span:before {
-      bottom: -0.15rem;
-    }
-    &__bar span:after {
-      bottom: -0.3rem;
-    }
+      position: fixed;
+      top: 0.32rem;
+      right: 0.16rem;
+      height: 0.38rem;
+      width: 0.5rem;
+      z-index: 10;
+      background-color: base.$white;
+      &__span {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 0.05rem;
+        border-radius: 0.05rem;
+        background-color: base.$black;
+        transition: .2s;
+      };
+      &__span::before,
+      &__span::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.05rem;
+        background-color: base.$black;
+        transition: .5s; 
+      };
+      &__span::before {
+        transform: translateY(-0.16rem);
+      };
+      &__span::after {
+        transform: translateY(0.16rem);
+      };
+
+
+      // ハンバーガーX
+      &__span.open {
+        background-color: transparent;
+      };
+      &__span.open::before,
+      &__span.open::after {
+        content: '';
+        transition: .2s;
+      };
+      &__span.open::before {
+        transform: rotate(45deg);
+      };
+      &__span.open::after {
+        transform: rotate(-45deg);
+      };
+    };
+
+
     &__content {
       position: fixed;
       top: 0.7rem;
