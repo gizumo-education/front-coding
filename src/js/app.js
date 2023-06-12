@@ -1,5 +1,5 @@
 import $ from "jquery";
-// import 'slick-carousel';
+import 'slick-carousel';
 
 $(function() {
   console.log('環境構築完了');
@@ -47,3 +47,27 @@ $('a[href^="#"]').click(function () {
 });
 
 
+
+// カルーセル
+  $('.p-offer__newoffer__lists').slick({
+    variableWidth: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    infinite: true,
+    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>',
+    
+    responsive: [
+      {
+      breakpoint: 767,
+      settings: {
+        variableWidth: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding:"0", 
+      },
+      },
+    ],
+  });

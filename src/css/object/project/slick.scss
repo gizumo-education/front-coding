@@ -1,0 +1,259 @@
+@use '../../object/utility/utility.scss' as base;
+
+
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+        position: relative;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+  .prev-arrow {
+    position: absolute;
+    left: 0;
+    top: 32%;
+    transform: translate(0, -50%);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    opacity: .7;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  .prev-arrow:hover {
+    opacity: .8;
+    transition: .3s;
+  }
+  .prev-arrow::before {
+    display: block;
+    margin-left: 17px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 4000000;
+}
+
+
+  .next-arrow{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 32%;
+    transform: translate(0, -50%);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    opacity: .7;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  .next-arrow:hover {
+    opacity: .8;
+    transition: .3s;
+  }
+  .next-arrow::before {
+    display: block;
+    margin-left: 9px;
+    content: '';
+	right: 20px;
+	width: 20px;
+	height: 20px;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+    z-index: 4000000;
+}
+
+
+
+
+
+
+
+@include base.tab {
+
+  .slick-slide {
+    min-height: 0.01rem;
+    .slick-vertical & {
+      border: 0.01rem solid transparent;
+    }
+  }
+    
+    
+  .prev-arrow {
+  width: 0.6rem;
+  height: 0.6rem;
+  }
+  .prev-arrow::before {
+    margin-left: 0.17rem;
+    left: -0.3rem;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-bottom: 0.01rem solid #000;
+    border-left: 0.01rem solid #000;
+  }
+    
+    
+  .next-arrow{
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  .next-arrow::before {
+    margin-left: 0.07rem;
+    right: 0.2rem;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-top: 0.01rem solid #000;
+    border-right: 0.01rem solid #000;
+  }
+}
+
+
+
+
+
+
+
+@include base.sp {
+
+  .l-inner {
+    width: 95%;
+    .slick-slide {
+        min-height: 0.01rem;
+        .slick-vertical & {
+          border: 0.01rem solid transparent;
+        }
+      } 
+      .prev-arrow {
+      width: 0.42rem;
+      height: 0.42rem;
+      left: 0.1rem;
+      top: 62%;
+      }
+      .prev-arrow::before {
+        margin-left: 0.12rem;
+        left: -0.3rem;
+        width: 0.14rem;
+        height: 0.14rem;
+        border-bottom: 0.01rem solid #000;
+        border-left: 0.01rem solid #000;
+      }
+        
+        
+      .next-arrow{
+        width: 0.42rem;
+        height: 0.42rem;
+        top: 62%;
+      }
+      .next-arrow::before {
+        margin-left: 0.05rem;
+        right: 0.2rem;
+        width: 0.14rem;
+        height: 0.14rem;
+        border-top: 0.01rem solid #000;
+        border-right: 0.01rem solid #000;
+      }
+    }
+  }
