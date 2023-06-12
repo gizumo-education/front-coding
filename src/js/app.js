@@ -16,11 +16,9 @@ $("a[href^='#']:not([href='#'])").click(function() {
   $('body').toggleClass('noscroll');
   $('.p-drawer').toggleClass('open');
 
-  let target = $($(this).attr("href")).offset().top;
+  const target = $($(this).attr("href")).offset().top - 60;
 
-  target -=80;
-
-  $('html, body').animate({scrollTop: target}, 500);
+  $('html, body').animate({ scrollTop : target }, 500);
 });
 
 $('.p-work__list').slick({
