@@ -190,6 +190,11 @@
     transform: translateY(10px);
   }
 
+  body.noscroll {
+    overflow: hidden;
+    height: 100%;
+  }
+
   button {
     background-color: transparent;
     border: none;
