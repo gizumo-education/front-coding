@@ -117,3 +117,65 @@
   padding: 17px 0 17px 15px;
   position: relative;
 }
+
+@media screen and (max-width: 767px) {
+  .p-form__box {
+    width: 370px;
+    height: auto;
+  }
+  .p-form__title {
+    font-size: 22px;
+    line-height: 22px;
+    margin-top: 15px;
+  }
+  .p-form__title-sub {
+    font-size: 14px;
+    line-height: 20.27px;
+    margin-top: 16px;
+    margin-bottom: 13px;
+  }
+  .p-form-input {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 17.38px;
+    padding: 6px 0 7px 8px;
+    border-radius: 5px;
+  }
+  .p-form__select {
+    margin: 0 25px 20px 25px;
+  }
+  .p-form__select__style {
+    margin-left: 10px;
+  }
+  .p-form__select__style::after {
+    top: 13px;
+    right: 8px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #DE1E79;
+    border-bottom: 7px solid transparent;
+  }
+  .p-form__select__box {
+    flex-flow: wrap;
+  }
+  .p-form__select__area {
+    display: block;
+  }
+  .p-form__select__area-search {
+    width: 320px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 20.27px;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  .p-form__select__area-btn {
+    width: 160px;
+    height: 40px;
+    background-size: 17.98px 17.97px;
+    background-position: 16px;
+    margin-top: 19px;
+    margin-left: 0;
+  }
+}
