@@ -110,6 +110,8 @@
       background-color: base.$whiteblue;
         &__title {
           font-size: 0.25rem;
+          text-align: center;
+          font-weight: base.$bold;
         };
         &__lists {
           margin-top: 0.25rem;
