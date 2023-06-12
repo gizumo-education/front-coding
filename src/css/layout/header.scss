@@ -200,6 +200,10 @@
     position: fixed;
     width:100%;
   }
+  body.active {
+    height: 100%;
+    overflow: hidden;
+  }
   .c-button__hamburger__content {
     position:relative;
   }
