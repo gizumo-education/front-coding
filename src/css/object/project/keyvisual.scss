@@ -85,3 +85,50 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .p-key-visual {
+    margin-top: 70px;
+    height: 270px;
+    margin-bottom: 25px;
+    &__wrap__pic {
+      width: 400px;
+      height: 270px;
+      background-size: cover;
+      &__items {
+        width: 400px;
+        height: 270px;
+        &__keyword {
+          width: 149.54px;
+          height: 62.02px;
+          top: 70.16px;
+          left: 200px;
+        }
+        &__main-letter {
+          width: 272px;
+          height: 22px;
+          top: 147.65px;
+          right: 3.32px;
+        }
+      }
+      &__box {
+        display: none;
+      }
+      &__text {
+        padding: 4px 23.77px 3px 23.23px;
+        line-height: 0;
+        border: 1px solid #2EB6AA;
+        top: 188px;
+        left: 189.77px;
+        &-sentence {
+          font-size: 8px;
+          line-height: 11.58px;
+        }
+        &-number {
+          font-size: 16px;
+          line-height: 23.17px;
+        }
+      }
+    }
+  }
+}
