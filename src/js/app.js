@@ -6,23 +6,21 @@ $(function() {
 })
 
 //ハンバーガー
-$(".c-burger-btn").on('click',function(){
+$(".c-burger-btn").on('click',function() {
   $('.p-drawer').toggleClass('open');
   $('body').toggleClass('noscroll');
 });
 
-$("a[href^='#']:not([href='#'])").click(function () {
+$("a[href^='#']:not([href='#'])").click(function() {
 
   $('body').toggleClass('noscroll');
   $('.p-drawer').toggleClass('open');
 
-  var target = $($(this).attr("href")).offset().top;
+  let target = $($(this).attr("href")).offset().top;
 
   target -=80;
 
-  $("html, body").animate({scrollTop: target}, 500);
-
-  return false;
+  $('html, body').animate({scrollTop: target}, 500);
 });
 
 $('.p-work__list').slick({
