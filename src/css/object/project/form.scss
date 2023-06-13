@@ -115,6 +115,10 @@
 
 @media screen and (max-width: 767px) {
   .p-form {
+    &:last-child {
+      margin-top: 60px;
+      margin-bottom: 100px;
+    }
     &__box {
       width: 370px;
       height: auto;
