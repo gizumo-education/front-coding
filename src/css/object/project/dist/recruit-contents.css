@@ -16,6 +16,24 @@
   margin-top: 105px;
   text-align: center;
 }
+.p-recruit-contents__pic-manual {
+  display: block;
+  width: 380px;
+  height: 240px;
+  border-radius: 10px;
+  background-image: url(../img/picture/manual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p-recruit-contents__pic-trivia {
+  display: block;
+  width: 380px;
+  height: 240px;
+  border-radius: 10px;
+  background-image: url(../img/picture/trivia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .p-recruit-contents__box {
   margin-top: 50px;
   margin-left: 20px;
@@ -84,4 +102,43 @@
 }
 .p-recruit-contents-btn:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+  .p-recruit-contents__wrap {
+    display: block;
+    text-align: center;
+  }
+  .p-recruit-contents__title {
+    margin-top: 60px;
+  }
+  .p-recruit-contents__box {
+    margin-top: 17.55px;
+    margin-left: 0;
+  }
+  .p-recruit-contents__box:first-child {
+    margin-top: 30.55px;
+  }
+  .p-recruit-contents__pic-manual {
+    width: 370px;
+    height: 234.9px;
+  }
+  .p-recruit-contents__pic-trivia {
+    width: 370px;
+    height: 234.9px;
+  }
+  .p-recruit-contents__black {
+    width: 370px;
+    height: 234.9px;
+  }
+  .p-recruit-contents__sub {
+    width: 370px;
+  }
+  .p-recruit-contents__describe {
+    width: 370px;
+  }
+  .p-recruit-contents-btn {
+    width: 370px;
+    margin-top: 34.86px;
+  }
 }
