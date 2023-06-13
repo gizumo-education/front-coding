@@ -110,3 +110,60 @@
 .p-slider-btn:hover {
   opacity: 0.8;
 }
+
+.slider__pic-1 {
+  background-image: url(../img/picture/recruit-pic1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__pic-2 {
+  background-image: url(../img/picture/recruit-pic2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__pic-3 {
+  background-image: url(../img/picture/recruit-pic3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__pic-4 {
+  background-image: url(../img/picture/recruit-pic4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .p-slider {
+    height: 600px;
+    margin-top: 25px;
+  }
+  .p-slider__wrap {
+    margin-top: 30px;
+  }
+  .p-slider__wrap__title {
+    font-family: "Noto Sans JP";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .p-slider__box-pic {
+    width: 370px;
+    height: 208px;
+  }
+  .p-slider__box-content {
+    width: 358px;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  .p-slider__box:nth-child(n+2) {
+    display: none;
+  }
+  .p-slider-btn {
+    width: 370px;
+    margin: 44px 0 60px 0;
+  }
+}
