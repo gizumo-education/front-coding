@@ -60,7 +60,6 @@ $('a[href^="#"]').click(function() {
         variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerPadding:"0", 
       },
       },
     ],
