@@ -52,6 +52,9 @@
         line-height: 20px;
         margin-top: 36px;
         white-space: pre-wrap;
+        &-sp {
+          display: none;
+        }
         &-3 {
           display: inline-block;
           width: 475px;
@@ -71,6 +74,61 @@
           line-height: 20px;
           margin-top: 26px;
           white-space: pre-wrap;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-feature {
+    margin-top: 55px;
+    &-title {
+      margin-bottom: 17px;
+    }
+    &__boxes {
+      display: block;
+    }
+    &__wrap {
+      text-align: center;
+      &__box {
+        display: inline-block;
+        width: 370px;
+        height: fit-content;
+        margin-top: 21px;
+        margin-left: 0;
+        &__sub-title {
+          width: 370px;
+          font-size: 20px;
+          line-height: 20px;
+          margin-top: 30px;
+        }
+        &__content {
+          width: 370px;
+          font-size: 12px;
+          line-height: 17px;
+          margin: 30px 0;
+          white-space: initial;
+          &-sp {
+            display: initial;
+            &-pc {
+              display: none;
+            }
+          }
+          &-3 {
+            width: 370px;
+            font-size: 12px;
+            line-height: 17px;
+            margin: 30px 0;
+            white-space: initial;
+          }
+          &-4 {
+            width: 370px;
+            font-size: 12px;
+            line-height: 17px;
+            margin: 30px 0;
+            white-space: initial;
+          }
         }
       }
     }
