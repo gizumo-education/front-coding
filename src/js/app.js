@@ -9,7 +9,8 @@ $(function() {
 // ハンバーガーをクリック後Xに
 $(function() {
   $('.c-button__hamburger__bar').on('click', function() {
-    $('.c-button__hamburger__bar__span').toggleClass('open'); 
+    $('.c-button__hamburger__bar__span').toggleClass('open');
+    $('.c-button__hamburger__content').css('display', 'block'); 
   })
 });
 
