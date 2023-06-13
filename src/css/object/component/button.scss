@@ -361,6 +361,7 @@ margin: 18px auto 0;
       -webkit-transform: translateX(105%);
       transform: translateX(105%);
       z-index: -1;
+      display: none;
       &__list {
         margin-top: 0.38rem;
         &__title {
