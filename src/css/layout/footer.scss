@@ -113,3 +113,29 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .l-footer {
+    &__box {
+      display: block;
+      height: 443px;
+    }
+    &__top {
+      font-size: 16px;
+      line-height: 23.17px;
+      margin-top: 38px;
+      margin-left: 50px;
+    }
+    &__wrap {
+      margin-top: 27px;
+      margin-left: 55px;
+      bottom: initial;
+    }
+    &__pic {
+      display: grid;
+      justify-content: center;
+      margin: 157px 0 0 0;
+      position: initial;
+    }
+  }
+}

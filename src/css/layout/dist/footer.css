@@ -109,3 +109,27 @@
   line-height: 14px;
   text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+  .l-footer__box {
+    display: block;
+    height: 443px;
+  }
+  .l-footer__top {
+    font-size: 16px;
+    line-height: 23.17px;
+    margin-top: 38px;
+    margin-left: 50px;
+  }
+  .l-footer__wrap {
+    margin-top: 27px;
+    margin-left: 55px;
+    bottom: initial;
+  }
+  .l-footer__pic {
+    display: grid;
+    justify-content: center;
+    margin: 157px 0 0 0;
+    position: initial;
+  }
+}
