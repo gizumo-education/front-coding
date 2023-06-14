@@ -93,6 +93,7 @@
 }
 .l-header__hamburger {
   display: none;
+  transition: all 0.3s;
 }
 .l-header__hamburger:hover {
   opacity: 0.8;
