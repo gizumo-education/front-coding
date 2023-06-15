@@ -129,6 +129,45 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .p-slider {
+    height: initial;
+    &__wrap {
+      width: 758px;
+      height: initial;
+      &__title {
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+    &__box {
+      margin-left: 10px;
+      width: 180px;
+      &-pic {
+        width: 180px;
+        height: 140px;
+      }
+      &-content {
+        width: 180px;
+        height: 36px;
+        font-size: 10px;
+        line-height: 18px;
+      }
+    }
+    &__describe {
+      &-content {
+        width: 50px;
+        height: 18px;
+        font-size: 8px;
+        line-height: 18px;
+      }
+      &-text {
+        font-size: 8px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .p-slider {
     height: 600px;
