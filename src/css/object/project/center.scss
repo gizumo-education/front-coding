@@ -45,6 +45,23 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .p-center {
+    height: 200px;
+    &-pic {
+      height: 200px;
+    }
+    &__box {
+      &__bg {
+        height: 200px;
+      }
+      &__text {
+        top: 54px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .p-center {
     height: 75px;
