@@ -86,6 +86,31 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .p-key-visual__wrap__pic {
+    width: 768px;
+    background-size: cover;
+    &__items {
+      width: 768px;
+      &__keyword {
+        width: 280px;
+        height: initial;
+        left: 400px;
+      }
+      &__main-letter {
+        width: 700px;
+        height: initial;
+      }
+    }
+    &__box {
+      display: none;
+    }
+    &__text {
+      left: 300px;
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .p-key-visual {
     margin-top: 70px;
