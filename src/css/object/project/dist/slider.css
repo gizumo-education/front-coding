@@ -184,19 +184,30 @@
     text-align: center;
     margin-bottom: 35px;
   }
+  .p-slider__box {
+    width: initial;
+  }
   .p-slider__box-pic {
     width: 370px;
     height: 208px;
   }
   .p-slider__box-content {
     width: 358px;
+    height: fit-content;
     font-family: "Noto Sans JP";
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
+    margin-bottom: 7.92px;
   }
   .p-slider__box:nth-child(n+2) {
     display: none;
+  }
+  .p-slider__describe {
+    margin-top: 4px;
+  }
+  .p-slider__describe:first-child {
+    margin-top: 11.92px;
   }
   .p-slider-btn {
     width: 370px;

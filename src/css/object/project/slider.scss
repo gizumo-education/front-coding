@@ -184,19 +184,28 @@
       }
     }
     &__box {
+      width: initial;
       &-pic {
         width: 370px;
         height: 208px;
       }
       &-content {
         width: 358px;
+        height: fit-content;
         font-family: 'Noto Sans JP';
         font-size: 16px;
         font-weight: 700;
         line-height: 22px;
+        margin-bottom: 7.92px;
       }
       &:nth-child(n+2) {
         display: none;
+      }
+    }
+    &__describe {
+      margin-top: 4px;
+      &:first-child {
+        margin-top: 11.92px;
       }
     }
     &-btn {
