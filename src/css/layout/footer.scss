@@ -114,6 +114,20 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .l-footer {
+    &__top {
+      margin-left: 55px;
+    }
+    &__wrap {
+      margin-left: 60px;
+    }
+    &__pic {
+      margin-right: 30px;
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .l-footer {
     &__box {
