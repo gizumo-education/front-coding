@@ -104,6 +104,35 @@
   opacity: 0.8;
 }
 
+@media screen and (max-width: 1199px) {
+  .p-recruit-contents__box {
+    margin-left: 10px;
+  }
+  .p-recruit-contents__pic-manual {
+    width: 240px;
+    height: 160px;
+  }
+  .p-recruit-contents__pic-trivia {
+    width: 240px;
+    height: 160px;
+  }
+  .p-recruit-contents__black {
+    width: 240px;
+    height: 160px;
+  }
+  .p-recruit-contents__sub {
+    width: 240px;
+    font-size: 18px;
+    line-height: 18px;
+    top: 51px;
+  }
+  .p-recruit-contents__describe {
+    width: 240px;
+    font-size: 12px;
+    line-height: 19px;
+    top: 89px;
+  }
+}
 @media screen and (max-width: 767px) {
   .p-recruit-contents__wrap {
     display: block;

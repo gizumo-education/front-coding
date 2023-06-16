@@ -100,6 +100,39 @@
     }
   }
 }
+@media screen and (max-width: 1199px) {
+  .p-recruit-contents {
+    &__box {
+      margin-left: 10px;
+    }
+    &__pic {
+      &-manual {
+        width: 240px;
+        height: 160px;
+      }
+      &-trivia {
+        width: 240px;
+        height: 160px;
+      }
+    }
+    &__black {
+      width: 240px;
+      height: 160px;
+    }
+    &__sub {
+      width: 240px;
+      font-size: 18px;
+      line-height: 18px;
+      top: 51px;
+    }
+    &__describe {
+      width: 240px;
+      font-size: 12px;
+      line-height: 19px;
+      top: 89px;
+    }
+  }
+}
 
 @media screen and (max-width: 767px) {
   .p-recruit-contents {
