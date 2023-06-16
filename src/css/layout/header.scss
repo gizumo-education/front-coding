@@ -108,43 +108,53 @@
     display: flex;
     align-items: center;
     &__left {
-      font-size: 13px;
-      line-height: 18px;
+      font-size: 10px;
+      line-height: 13px;
       margin-top: 0;
-      right: 460px;
+      right: 50%;
+      &__box {
+        padding: 0 10px;
+        &__glass {
+          width: 15px;
+        }
+        &__book {
+          width: 15px;
+        }
+      }
     }
     &__right {
-      right: 25px;
+      right: 20px;
       margin-top: 0;
       &__box {
         align-items: center;
         width: fit-content;
         padding: 10px 15px;
+        height: 40px;
         &:first-child {
           width: fit-content;
-          padding-left: 9px;
+          padding: 10px 15px 10px 9px;
         }
         &:last-child {
           padding: 10px 15px;
         }
         &__heart {
-          width: 17px;
-          height: 14px;
-          margin-right: 8px;
+          width: 14px;
+          height: auto;
+          margin-right: 5px;
         }
         &__clock {
-          width: 14px;
-          height: 14px;
-          margin-right: 8px;
+          width: 12px;
+          height: auto;
+          margin-right: 5px;
         }
         &__search {
-          width: 14px;
-          height: 14px;
-          margin-right: 8px;
+          width: 12px;
+          height: auto;
+          margin-right: 5px;
         }
         &__content {
-          font-size: 12px;
-          line-height: 18px;
+          font-size: 10px;
+          line-height: 13px;
         }
       }
     }
