@@ -232,14 +232,18 @@
     }
     &__box {
       height: 293px;
+      width: 280px;
       &__circle {
         width: 45px;
         height: 45px;
+        margin: 10px 0 0 10px;
         &-icon {
           width: 26px;
           height: 24px;
           font-size: 10px;
           line-height: 12.1px;
+          padding: 0;
+          margin: 11px 9px;
         }
       }
       &__es {
@@ -281,8 +285,14 @@
       }
       &__content {
         margin-top: 10px;
+        width: 240px;
+        font-size: 14px;
+        line-height: 20px;
         &-2 {
           margin-top: 10px;
+          width: 240px;
+          font-size: 14px;
+          line-height: 20px;
         }
       }
     }

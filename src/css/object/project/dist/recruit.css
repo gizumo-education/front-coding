@@ -230,16 +230,20 @@
   }
   .p-recruit__box {
     height: 293px;
+    width: 280px;
   }
   .p-recruit__box__circle {
     width: 45px;
     height: 45px;
+    margin: 10px 0 0 10px;
   }
   .p-recruit__box__circle-icon {
     width: 26px;
     height: 24px;
     font-size: 10px;
     line-height: 12.1px;
+    padding: 0;
+    margin: 11px 9px;
   }
   .p-recruit__box__es {
     width: 76.72px;
@@ -280,9 +284,15 @@
   }
   .p-recruit__text__box__content {
     margin-top: 10px;
+    width: 240px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .p-recruit__text__box__content-2 {
     margin-top: 10px;
+    width: 240px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .p-recruit__gap {
     width: 100%;

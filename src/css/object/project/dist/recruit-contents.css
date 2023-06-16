@@ -135,7 +135,9 @@
 }
 @media screen and (max-width: 767px) {
   .p-recruit-contents__wrap {
-    display: block;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     text-align: center;
   }
   .p-recruit-contents__title {
@@ -162,9 +164,15 @@
   }
   .p-recruit-contents__sub {
     width: 370px;
+    font-size: 24px;
+    line-height: 24px;
+    top: 60.45px;
   }
   .p-recruit-contents__describe {
     width: 370px;
+    font-size: 16px;
+    line-height: 23px;
+    top: 134.45px;
   }
   .p-recruit-contents-btn {
     width: 370px;
