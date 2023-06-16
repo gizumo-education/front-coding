@@ -1,4 +1,5 @@
 @use '../object/utility/utility.scss';
+@use '../foundation/_mixins.scss';
 // footerのスタイルを記述するファイル
 .l {
   &-footer {
@@ -114,7 +115,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@include mixins.tab() {
   .l-footer {
     &__top {
       margin-left: 55px;
@@ -128,7 +129,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@include mixins.sp() {
   .l-footer {
     &__box {
       display: block;

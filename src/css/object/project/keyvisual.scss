@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/_mixins.scss';
 // ページ上部のキービジュアルに関するスタイル
 .p-key-visual {
   width: 100%;
@@ -86,7 +87,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@include mixins.tab() {
   .p-key-visual__wrap__pic {
     width: 768px;
     background-size: cover;
@@ -111,7 +112,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@include mixins.sp() {
   .p-key-visual {
     margin-top: 70px;
     height: 270px;

@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/_mixins.scss';
 
 .p-recruit {
   display: block;
@@ -142,7 +143,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@include mixins.tab() {
   .p-recruit {
     height: fit-content;
     &__box {
@@ -220,7 +221,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@include mixins.sp() {
   .p-recruit {
     height: fit-content;
     display: grid;

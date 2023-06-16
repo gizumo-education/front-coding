@@ -132,7 +132,7 @@
   background-size: cover;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .p-slider {
     height: initial;
   }

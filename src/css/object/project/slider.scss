@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
 @use '../component/button.scss';
+@use '../../foundation/_mixins.scss';
 
 .p-slider {
   width: 100%;
@@ -129,7 +130,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@include mixins.tab() {
   .p-slider {
     height: initial;
     &__wrap {
@@ -168,7 +169,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@include mixins.sp() {
   .p-slider {
     height: 600px;
     margin-top: 25px;

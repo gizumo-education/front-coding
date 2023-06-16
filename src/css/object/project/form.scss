@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
 @use '../component/button.scss';
+@use '../../foundation/_mixins.scss';
 
 .p-form {
   width: 100%;
@@ -113,7 +114,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@include mixins.tab() {
   .p-form {
     &__box {
       width: 740px;
@@ -149,7 +150,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@include mixins.sp() {
   .p-form {
     &:last-child {
       margin-top: 60px;

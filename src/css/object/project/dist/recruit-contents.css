@@ -104,7 +104,7 @@
   opacity: 0.8;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .p-recruit-contents__box {
     margin-left: 10px;
   }

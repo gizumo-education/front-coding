@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/_mixins.scss';
 
 .p-feature {
   width: 100%;
@@ -80,7 +81,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@include mixins.tab() {
   .p-feature {
     &-title {
       margin-bottom: 33px;
@@ -117,7 +118,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@include mixins.sp() {
   .p-feature {
     margin-top: 55px;
     &-title {
