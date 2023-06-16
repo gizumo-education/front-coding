@@ -142,6 +142,84 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .p-recruit {
+    height: fit-content;
+    &__box {
+      width: 180px;
+      height: 260px;
+      &__circle {
+        width: 40px;
+        height: 40px;
+        margin: 5px 0 0 5px;
+        &-icon {
+          width: 30px;
+          height: 30px;
+          font-size: 10px;
+          line-height: 13px;
+          margin: 0;
+          padding: 7px 1px 0 1px;
+        }
+      }
+      &__es {
+        width: 70px;
+        height: auto;
+        top: 40px;
+        right: 50px;
+      }
+      &__glass {
+        width: 55px;
+        height: auto;
+        top: 50px;
+        left: 60px;
+      }
+      &__emails {
+        width: 80px;
+        height: auto;
+        top: 50px;
+        left: 50px;
+      }
+      &__shiny {
+        width: 80px;
+        height: auto;
+        top: 40px;
+        left: 50px;
+      }
+    }
+    &__text__box {
+      margin-top: 80px;
+      &__sub-title {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &__content {
+        width: 160px;
+        font-size: 11px;
+        line-height: 14px;
+        margin-top: 15px;
+        &-2 {
+          width: 160px;
+          font-size: 11px;
+          line-height: 14px;
+          margin-top: 27px;
+        }
+      }
+      &-2 {
+        margin-top: 90px;
+      }
+    }
+    &__gap {
+      width: 10px;
+      height: 260px;
+    }
+    &__triangle {
+      border-left: 10px solid #DE5579;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .p-recruit {
     height: fit-content;
