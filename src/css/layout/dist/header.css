@@ -171,9 +171,7 @@
     display: block;
     width: 50.01px;
     height: 38px;
-    margin-left: auto;
-    margin-right: 15px;
-    margin-top: 16px;
+    margin: 16px 15px 16px auto;
   }
   .l-header__hamburger__bar {
     display: block;

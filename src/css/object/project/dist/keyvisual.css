@@ -120,7 +120,7 @@
     background-size: cover;
   }
   .p-key-visual__wrap__pic__items {
-    width: 400px;
+    width: 100%;
     height: 270px;
   }
   .p-key-visual__wrap__pic__items__keyword {
