@@ -1,0 +1,49 @@
+@use '../../object/utility/utility.scss' as var;
+// ページ上部のキービジュアルに関するスタイル
+.p-recruit {
+  margin-top: 60px;
+  background: var.$lightPurple;
+  &__inner {
+    padding: 64px 0 67px;
+    text-align: center;
+    position: relative;
+    & h2 {
+      text-align-last: left;
+    }
+    &__list {
+      display: flex;
+      text-align: left;
+      justify-content: space-between;
+      margin-top: 25px;
+      font-size: 14px;
+      & figcaption {
+        width: 95%;
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      & p {
+        margin-top: 5px;
+        &:first-of-type {
+          margin-top: 8px;
+        }
+      }
+      & span {
+        display: inline-block;
+        text-align: center;
+        width: 60px;
+        line-height: 1.5;
+        margin-right: 10px;
+        background: var.$lightPink;
+      }
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 360px;
+      height: 60px;
+      margin: 60px auto 0;
+    }
+  }
+}

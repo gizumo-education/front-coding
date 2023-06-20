@@ -1,2 +1,47 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as var;
 // ページ上部のキービジュアルに関するスタイル
+.p-keyvisual {
+  text-align: center;
+  background-color: #98B1BE;
+  &__inner {
+    width: 1260px;
+    margin: 0 auto;
+    position: relative;
+    &__key {
+    }
+    &__img {
+      float: left;
+      position: absolute;
+      &:nth-child(2) {
+        top: 12%;
+        left: 54%;
+      }
+      &:nth-child(3) {
+        top: 15%;
+        left: 50%;
+      }
+      &:nth-child(4) {
+        top: 55%;
+        left: 31%;
+      }
+      &:nth-child(5) {
+        top: 43%;
+        left: 64%;
+      }
+      &:nth-child(6) {
+        padding: 10px 45px 15px;
+        top: 76%;
+        left: 48%;
+        border: 2px solid var.$green;
+        border-radius: 10px;
+        font-size: 20px;
+        color: var.$green;
+        background-color: white;
+        & span {
+          font-size: 40px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

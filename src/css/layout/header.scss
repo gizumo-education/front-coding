@@ -1,2 +1,50 @@
 @use '../object/utility/utility.scss';
 // headerのスタイルを記述するファイル
+
+.l-header {
+  display: flex;
+  padding: 25px 100px;
+  font-size: 16px;
+  justify-content: right;
+  align-items: center;
+  &__nav {
+    &__list {
+      display: flex;
+    }
+    &__list__info {
+      padding: 0 10px;
+      border-left: 1px solid black;
+      &:first-child {
+        padding-left: 0;
+        border: none;
+      }
+      &:last-child {
+        padding-right: 0;
+        & img {
+          margin-right: 3px;
+        }
+      }
+      & img {
+        vertical-align: middle;
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    margin-left: 25px;
+    &__info {
+      margin-left: 15px;
+      &:first-child {
+        margin-left: 0;
+        & a {
+          width: 160px;
+          padding-left: 10px;
+        }
+      }
+    }
+    & img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+}

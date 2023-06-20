@@ -1,0 +1,32 @@
+@use '../../object/utility/utility.scss' as var;
+// ページ上部のキービジュアルに関するスタイル
+.p-point {
+  padding: 105px 0;
+  text-align: center;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 53px;
+    & li {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 570px;
+      height: 180px;
+      background: var.$pink;
+      border-radius: 10px;
+      margin-top: 40px;
+      &:nth-child(-n+2) {
+        margin-top: 0;
+      }
+    }
+    & li p {
+      font-size: 14px;
+      &:first-child {
+        font-size: 24px;
+        color: var.$magenta;
+      }
+    }
+  }
+}

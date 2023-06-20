@@ -1,0 +1,64 @@
+@use '../../object/utility/utility.scss' as var;
+// ページ上部のキービジュアルに関するスタイル
+.p-step {
+  text-align: center;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    & li {
+      width: 278px;
+      height: 358px;
+      padding: 60px 20px 40px;
+      line-height: 1.5;
+      border: 2px solid var.$magenta;
+      border-radius: 10px;
+      position: relative;
+      & p:nth-of-type(1) {
+        line-height: 1;
+      }
+      & p:nth-of-type(2) {
+        height: 100px;
+      }
+      & p:nth-of-type(3) {
+        height: 60px;
+        margin-top: 20px;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      & p:nth-of-type(4) {
+        margin-top: 18px;
+        font-size: 14px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 108%;
+        transform: translate(-50%, -50%);
+        border-width: 20px;
+        border-style: solid;
+        border-color: transparent transparent transparent var.$magenta;
+      }
+      &:last-child::after {
+        content: none;
+      }
+    }
+    &__order {
+      position: absolute;
+      top: 9px;
+      left: 9px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 16px;
+      color: var.$white;
+      background-color: var.$magenta;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
