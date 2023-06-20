@@ -1,0 +1,58 @@
+@use '../../object/utility/utility.scss';
+
+.p-news-images {
+  margin-top: 60px;
+  padding: 64px 0 67px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: utility.$scrollBackground;
+
+  &__title {
+    margin-left: 6%;
+    font-size: 25px;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &__image {
+    margin-left: 25px;
+    margin-top: 20px;
+    &:first-child {
+      margin-left: 0;
+    }
+    & > p {
+      width: 278px;
+      margin-top: 8.08px;
+      font-size: 16px;
+    }
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    font-size: 14px;
+    line-height: 20px;
+
+    & > h1 {
+      width: 60px;
+      margin: 4px 10px 0 0 ;
+      text-align: center;
+      background-color: utility.$scrollText;
+    }
+  }
+
+  &__button {
+    width: 360px;
+    height: 60px;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+  }
+}

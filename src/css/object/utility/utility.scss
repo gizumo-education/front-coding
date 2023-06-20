@@ -1,2 +1,12 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
+
+.u-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+a:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}

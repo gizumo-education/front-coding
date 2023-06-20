@@ -1,0 +1,71 @@
+@use '../../object/utility/utility.scss';
+
+.p-unit-useful {
+  display: block;
+
+  &__title {
+    margin-top: 106px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  &__content {
+    margin-top: 50px;
+
+    &__text.u-overlay::before {
+      border-radius: 10px;
+    }
+
+    &__text {
+      width: 380px;
+      height: 240px;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      border-radius: 10px;
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      & > img {
+        width: 380px;
+        height: 240px;
+        position: relative;
+        border-radius: 10px;
+      }
+
+      & > h2 {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: utility.$white;
+        font-size: 24px;
+        white-space: nowrap;
+        z-index: 2;
+      }
+
+      & > p {
+        width: 70%;
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: utility.$white;
+        font-size: 16px;
+        line-height: 28px;
+        white-space: nowrap;
+        z-index: 2;
+      }
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 420px;
+    height: 60px;
+    margin: 80px auto 90px auto;
+  }
+}

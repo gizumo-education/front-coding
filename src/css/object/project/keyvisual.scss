@@ -1,2 +1,23 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+.p-keyvisual {
+  width: 100%;
+  padding-top: 100px;
+
+  & > img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__second {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    & > img {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  }
+}
