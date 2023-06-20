@@ -1,7 +1,11 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as var;
 // headerのスタイルを記述するファイル
 
 .l-header {
+  position: fixed;
+  background-color: var.$white;
+  z-index: 99;
+  width: 100%;
   display: flex;
   padding: 25px 100px;
   font-size: 16px;
