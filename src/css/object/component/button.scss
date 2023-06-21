@@ -1,2 +1,99 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-btn__pink {
+  @include utility.inputInit;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: utility.$white;
+  background-color: utility.$magenta;
+  cursor: pointer;
+  &:hover {
+    opacity: .8;
+    transition: .3s;
+  }
+}
+.c-btn__blue {
+  width: 140px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: utility.$white;
+  background-color: utility.$blue;
+  &:hover {
+    opacity: .8;
+    transition: .3s;
+  }
+}
+.c-select {
+  @include utility.inputInit;
+  width: 200px;
+  background: utility.$white;
+  padding: 15px;
+  border: 1px solid utility.$magenta;
+  border-radius: 10px;
+  font-size: 18px;
+  position: relative;
+}
+.c-input {
+  @include utility.inputInit;
+  width: 300px;
+  background: utility.$white;
+  padding: 15px 19px 15px 9px;
+  border: 1px solid utility.$magenta;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-left: 16px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.c-prev-btn {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: utility.$translucentWhite;
+  border-radius: 50%;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 60%;
+    border-right: 1px solid utility.$black;
+    border-top: 1px solid utility.$black;
+    transform: translate(-50%, -50%) rotate(-135deg);
+  }
+  & a {
+    width: 100%;
+    height: 100%;
+  }
+}
+.c-next-btn {
+  position: absolute;
+  top: 30%;
+  right: 1.5%;
+  width: 60px;
+  height: 60px;
+  background-color: utility.$translucentWhite;
+  border-radius: 50%;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 45%;
+    border-right: 1px solid utility.$black;
+    border-top: 1px solid utility.$black;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  & a {
+    width: 100%;
+    height: 100%;
+  }
+}

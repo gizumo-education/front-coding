@@ -49,6 +49,14 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  &:hover {
+    opacity: .8;
+    transition: .3s;
+  }
+}
+
+h2 {
+  font-size: 25px;
 }
 
 .is-pc {
@@ -73,4 +81,8 @@ a {
   @include base.sp {
     display: block!important;
   }
+}
+
+.bold {
+  font-weight: bold;
 }

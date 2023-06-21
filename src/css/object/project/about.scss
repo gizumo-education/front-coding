@@ -1,0 +1,18 @@
+@use '../../object/utility/utility.scss';
+// ページ上部のキービジュアルに関するスタイル
+.p-about {
+  text-align: center;
+  padding: 103px 0;
+  background-image: url(../img/picture/about.jpg);
+  background-size: cover;
+  position: relative;
+  &::before {
+    @include utility.backgroundDark;
+  }
+  &__inner {
+    position: relative;
+    color: utility.$white;
+    font-size: 25px;
+    line-height: 2;
+  }
+}

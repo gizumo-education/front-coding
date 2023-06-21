@@ -1,2 +1,58 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
+.l-footer {
+  margin-top: 200px;
+  padding-top: 55px;
+  background: utility.$lightPurple;
+  font-size: 16px;
+  &__inner {
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+      &__nav {
+        &__top {
+          margin-top: 25px;
+        }
+        &__list {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 35px;
+          margin-left: 5px;
+          width: 320px;
+          height: 75%;
+          & li {
+            width: 50%;
+          }
+        }
+      }
+      &__link {
+        display: flex;
+        flex-direction: column;
+        &__item {
+          width: 320px;
+          height: 85px;
+          margin-top: 15px;
+          background: utility.$white;
+          border: 1px solid utility.$gray;
+          &:nth-child(1) {
+            margin-top: 0;
+            background-image: url(../img/picture/footer_01.jpg);
+            background-position: right top;
+            background-repeat: no-repeat;
+          }
+          &:nth-child(2) {
+            background-image: url(../img/picture/footer_02.jpg);
+            background-position: right top;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+  &__copy {
+    margin-top: 20px;
+    padding: 10px 0;
+    text-align: center;
+    background: utility.$lightGray;
+  }
+}
