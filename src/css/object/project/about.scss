@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
 .p-about {
   text-align: center;
@@ -7,11 +7,11 @@
   background-size: cover;
   position: relative;
   &::before {
-    @include var.backgroundDark;
+    @include utility.backgroundDark;
   }
   &__inner {
     position: relative;
-    color: var.$white;
+    color: utility.$white;
     font-size: 25px;
     line-height: 2;
   }

@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
 .p-content {
   padding: 106px 0 150px;
@@ -30,7 +30,7 @@
     &:nth-child(2) {
       background-image: url(../img/picture/content_02.jpg);
       &::before {
-        @include var.backgroundDark;
+        @include utility.backgroundDark;
         border-radius: 10px;
       }
     }
@@ -55,7 +55,7 @@
     & p {
       position: relative;
       top: 30%;
-      color: var.$white;
+      color: utility.$white;
       &:nth-of-type(1) {
         font-size: 24px;
       }

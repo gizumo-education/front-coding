@@ -1,13 +1,13 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
 
 .c-btn__pink {
-  @include var.inputInit;
+  @include utility.inputInit;
   padding: 10px 20px;
   border-radius: 30px;
   font-size: 18px;
-  color: var.$white;
-  background-color: var.$magenta;
+  color: utility.$white;
+  background-color: utility.$magenta;
   cursor: pointer;
   &:hover {
     opacity: .8;
@@ -19,29 +19,29 @@
   padding: 15px 20px;
   border-radius: 10px;
   font-size: 14px;
-  color: var.$white;
-  background-color: var.$blue;
+  color: utility.$white;
+  background-color: utility.$blue;
   &:hover {
     opacity: .8;
     transition: .3s;
   }
 }
 .c-select {
-  @include var.inputInit;
+  @include utility.inputInit;
   width: 200px;
-  background: var.$white;
+  background: utility.$white;
   padding: 15px;
-  border: 1px solid var.$magenta;
+  border: 1px solid utility.$magenta;
   border-radius: 10px;
   font-size: 18px;
   position: relative;
 }
 .c-input {
-  @include var.inputInit;
+  @include utility.inputInit;
   width: 300px;
-  background: var.$white;
+  background: utility.$white;
   padding: 15px 19px 15px 9px;
-  border: 1px solid var.$magenta;
+  border: 1px solid utility.$magenta;
   border-radius: 10px;
   font-size: 18px;
   margin-left: 16px;
@@ -55,7 +55,7 @@
   left: 0;
   width: 60px;
   height: 60px;
-  background-color: var.$translucentWhite;
+  background-color: utility.$translucentWhite;
   border-radius: 50%;
   &::after {
     content: '';
@@ -64,8 +64,8 @@
     height: 20px;
     top: 50%;
     left: 60%;
-    border-right: 1px solid var.$black;
-    border-top: 1px solid var.$black;
+    border-right: 1px solid utility.$black;
+    border-top: 1px solid utility.$black;
     transform: translate(-50%, -50%) rotate(-135deg);
   }
   & a {
@@ -79,7 +79,7 @@
   right: 1.5%;
   width: 60px;
   height: 60px;
-  background-color: var.$translucentWhite;
+  background-color: utility.$translucentWhite;
   border-radius: 50%;
   &::after {
     content: '';
@@ -88,8 +88,8 @@
     height: 20px;
     top: 50%;
     left: 45%;
-    border-right: 1px solid var.$black;
-    border-top: 1px solid var.$black;
+    border-right: 1px solid utility.$black;
+    border-top: 1px solid utility.$black;
     transform: translate(-50%, -50%) rotate(45deg);
   }
   & a {

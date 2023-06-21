@@ -1,8 +1,8 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
 .p-recruit {
   margin-top: 60px;
-  background: var.$lightPurple;
+  background: utility.$lightPurple;
   &__inner {
     padding: 64px 0 67px;
     text-align: center;
@@ -34,7 +34,7 @@
         width: 60px;
         line-height: 1.5;
         margin-right: 10px;
-        background: var.$lightPink;
+        background: utility.$lightPink;
       }
     }
     &__btn {

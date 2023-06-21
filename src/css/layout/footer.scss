@@ -1,9 +1,9 @@
-@use '../object/utility/utility.scss' as var;
+@use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
 .l-footer {
   margin-top: 200px;
   padding-top: 55px;
-  background: var.$lightPurple;
+  background: utility.$lightPurple;
   font-size: 16px;
   &__inner {
     &__menu {
@@ -32,8 +32,8 @@
           width: 320px;
           height: 85px;
           margin-top: 15px;
-          background: var.$white;
-          border: 1px solid var.$gray;
+          background: utility.$white;
+          border: 1px solid utility.$gray;
           &:nth-child(1) {
             margin-top: 0;
             background-image: url(../img/picture/footer_01.jpg);
@@ -53,6 +53,6 @@
     margin-top: 20px;
     padding: 10px 0;
     text-align: center;
-    background: var.$lightGray;
+    background: utility.$lightGray;
   }
 }

@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
 .p-step {
   text-align: center;
@@ -11,7 +11,7 @@
       height: 358px;
       padding: 60px 20px 40px;
       line-height: 1.5;
-      border: 2px solid var.$magenta;
+      border: 2px solid utility.$magenta;
       border-radius: 10px;
       position: relative;
       & p:nth-of-type(1) {
@@ -40,7 +40,7 @@
         transform: translate(-50%, -50%);
         border-width: 20px;
         border-style: solid;
-        border-color: transparent transparent transparent var.$magenta;
+        border-color: transparent transparent transparent utility.$magenta;
       }
       &:last-child::after {
         content: none;
@@ -54,8 +54,8 @@
       width: 60px;
       height: 60px;
       font-size: 16px;
-      color: var.$white;
-      background-color: var.$magenta;
+      color: utility.$white;
+      background-color: utility.$magenta;
       display: flex;
       justify-content: center;
       align-items: center;

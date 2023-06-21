@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual {
   text-align: center;
@@ -30,10 +30,10 @@
         padding: 10px 45px 15px;
         top: 76%;
         left: 48%;
-        border: 2px solid var.$green;
+        border: 2px solid utility.$green;
         border-radius: 10px;
         font-size: 20px;
-        color: var.$green;
+        color: utility.$green;
         background-color: white;
         & span {
           font-size: 40px;
