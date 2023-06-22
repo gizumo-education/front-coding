@@ -26,11 +26,12 @@
           text-align: center;
           color: inherit;
           font-size: 16px;
+          transition: 1s;
         }
 
         :hover {
-          opacity: 0.8;
-          transition: 0.3s;
+          opacity: 0.5;
+          transition: 1s;
         }
 
         &::after {
@@ -50,6 +51,11 @@
   }
 
   &__buttons {
+
+    &> a {
+      font-size: 14px;
+    }
+
     &__button {
       width: 140px;
       margin: 25px 0px 25px 15px;

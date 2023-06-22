@@ -28,6 +28,21 @@
     padding-top: 26px;
     
     &__container {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 60%;
+        right: 15px;
+        transform: translateY(-50%);
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 10px solid utility.$pink;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
       
       &__input {
         display: flex;

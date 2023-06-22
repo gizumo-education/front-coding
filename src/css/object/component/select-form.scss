@@ -7,9 +7,12 @@
   padding: 17px 0 17px 15px;
   margin-left: 15px;
   border: 1px solid utility.$pink;
-
+  appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  
   &:focus {
-    outline: 1px solid utility.$pink;
+    outline: 2px solid utility.$pink;
   }
 
   &.long {

@@ -9,13 +9,11 @@
   background-color: utility.$scrollBackground;
 
   &__title {
-    margin-left: 6%;
     font-size: 25px;
   }
 
   &__group {
     display: flex;
-    justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
   }
@@ -30,21 +28,24 @@
       width: 278px;
       margin-top: 8.08px;
       font-size: 16px;
+      line-height: 22px;
     }
   }
 
   &__detail {
     display: flex;
     flex-direction: row;
-    margin-top: 7px;
     font-size: 14px;
-    line-height: 20px;
+    margin-top: 7px;
 
-    & > h1 {
+    & > dt {
       width: 60px;
-      margin: 4px 10px 0 0 ;
       text-align: center;
       background-color: utility.$scrollText;
+    }
+
+    & > dd {
+      margin-left: 10px;
     }
   }
 
@@ -52,7 +53,8 @@
     width: 360px;
     height: 60px;
     display: block;
-    margin: auto;
-    margin-top: 60px;
+    padding: 17px 70px;
+    margin: 60px auto 0 auto;
+    font-weight: utility.$bold;
   }
 }
