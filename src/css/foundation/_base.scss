@@ -86,3 +86,9 @@ h2 {
 .bold {
   font-weight: bold;
 }
+
+@include base.sp {
+  h2 {
+    font-size: 0.25rem;
+  }
+}

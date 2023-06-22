@@ -56,3 +56,47 @@
     background: utility.$lightGray;
   }
 }
+
+@include utility.sp {
+  .l-footer {
+    margin-top: 100px;
+    padding-top: 0;
+    &__inner {
+      padding: 40px;
+      font-size: 0.15rem;
+      &__menu {
+        flex-direction: column;
+        &__nav {
+          width: 95%;
+          margin: 0 auto;
+          height: 50%;
+          &__top {
+            margin-top: 0;
+          }
+          &__list {
+            justify-content: space-between;
+            width: 100%;
+            margin-left: 0;
+            white-space: nowrap;
+            & li {
+              width: 45%;
+              &:nth-child(n+3) {
+                margin-top: 15px;
+              }
+            }
+          }
+        }
+        &__link {
+          margin-top: 20px;
+          &__item {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &__copy {
+      margin-top: 0;
+      font-size: 0.12rem;
+    }
+  }
+}

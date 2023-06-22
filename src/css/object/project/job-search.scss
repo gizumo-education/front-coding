@@ -14,24 +14,87 @@
     display: flex;
     margin-top: 25px;
     &__select {
-      margin-left: 16px;
-      position: relative;
-      &:first-child {
-        margin-left: 0;
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        top: 60%;
-        left: 88%;
-        transform: translate(-50%, -50%) rotate(90deg);
-        border-width: 10px;
-        border-style: solid;
-        border-color: transparent transparent transparent  utility.$magenta;
+      display: flex;
+      &__btn {
+        margin-left: 16px;
+        position: relative;
+        &:first-child {
+          margin-left: 0;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: 60%;
+          left: 88%;
+          transform: translate(-50%, -50%) rotate(90deg);
+          border-width: 10px;
+          border-style: solid;
+          border-color: transparent transparent transparent utility.$magenta;
+        }
       }
     }
-    &__btn {
+    &__input {
+      margin-left: 16px;
+    }
+    & button {
+      width: 140px;
       margin-left: 15px;
+      padding-left: 48px;
+      position: relative;
+      &::before {
+        content: url(../img/icon/search.png);
+        position: absolute;
+        top: 25%;
+        left: 10%;
+      }
+    }
+  }
+}
+
+@include utility.sp {
+  .p-job-search {
+    margin-top: 25px;
+    padding: 15px 25px 20px;
+    & h2 {
+      font-size: 0.2rem;
+    }
+    &__text {
+      margin-top: 20px;
+      font-size: 1.4em;
+    }
+    &__form {
+      width: 100%;
+      display: block;
+      flex-wrap: wrap;
+      margin-top: 25px;
+      &__select {
+        justify-content: space-between;
+        margin-left: 0;
+        &:first-child {
+          margin-left: 0;
+        }
+        &__btn {
+          width: 35%;
+          margin-left: 10px;
+          &::after {
+            border-width: 6px;
+          }
+        }
+      }
+      &__input {
+        margin-top: 16px;
+        margin-left: 0;
+      }
+      & button {
+        width: 60%;
+        height: auto;
+        margin: 20px auto 0;
+        padding: 10px;
+        &::before {
+          top: 25%;
+          left: 10%;
+        }
+      }
     }
   }
 }

@@ -16,3 +16,15 @@
     line-height: 2;
   }
 }
+
+@include utility.sp {
+  .p-about {
+    min-height: 75px;
+    padding: 16px 25px;
+    &__inner {
+      font-size: 0.14rem;
+      line-height: 1.6;
+      font-weight: normal;
+    }
+  }
+}

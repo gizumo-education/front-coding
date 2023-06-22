@@ -14,7 +14,7 @@
     position: relative;
     border-radius: 10px;
     &:nth-child(1) {
-      background-image: url(../img/picture/content_01.jpg);
+      background: url(../img/picture/content_01.jpg) no-repeat center center / cover;
       &::before {
         content: '';
         background-color: rgba(0, 0, 0, 0.5);
@@ -28,14 +28,14 @@
       }
     }
     &:nth-child(2) {
-      background-image: url(../img/picture/content_02.jpg);
+      background: url(../img/picture/content_02.jpg) no-repeat center center / cover;
       &::before {
         @include utility.backgroundDark;
         border-radius: 10px;
       }
     }
     &:nth-child(3) {
-      background-image: url(../img/picture/content_01.jpg);
+      background: url(../img/picture/content_01.jpg) no-repeat center center / cover;
       &::before {
         content: '';
         background-color: rgba(0, 0, 0, 0.5);
@@ -70,7 +70,35 @@
     align-items: center;
     justify-content: center;
     width: 420px;
-    height: 60px;
     margin: 80px auto 0;
+  }
+}
+
+@include utility.sp {
+  .p-content {
+    padding: 60px 0 35px;
+    &__list {
+      display: block;
+      margin-top: 30px;
+      & li {
+        width: 100%;
+        margin: 18px auto 0;
+        &:first-child {
+          margin-top: 0;
+        }
+        & p {
+          &:nth-child(1) {
+            font-size: 0.2rem;
+          }
+          &:nth-child(2) {
+            font-size: 0.15rem;
+          }
+        }
+      }
+    }
+    &__btn {
+      width: 100%;
+      margin-top: 35px;
+    }
   }
 }

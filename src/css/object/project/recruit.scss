@@ -8,7 +8,7 @@
     text-align: center;
     position: relative;
     & h2 {
-      text-align-last: left;
+      text-align: left;
     }
     &__list {
       display: flex;
@@ -42,8 +42,54 @@
       align-items: center;
       justify-content: center;
       width: 360px;
-      height: 60px;
       margin: 60px auto 0;
+    }
+  }
+}
+
+@include utility.sp {
+  .p-recruit {
+    margin-top: 25px;
+    &__inner {
+      padding: 50px 0 67px;
+      & h2 {
+        font-weight: bold;
+        text-align: center;
+      }
+      &__list {
+        justify-content: center;
+        margin-top: 50px;
+        font-size: 0.15rem;
+        & figure {
+          width: 100%;
+          & figcaption {
+            font-weight: bold;
+            width: 100%;
+            font-size: 0.16rem;
+          }
+          & img {
+            width: 100%;
+          }
+        }
+        & li {
+          &:nth-child(2) {
+            display: none;
+          }
+          &:nth-child(3) {
+            display: none;
+          }
+          &:nth-child(4) {
+            display: none;
+          }
+        }
+        & span {
+          margin-right: 20px;
+        }
+      }
+      &__btn {
+        width: 100%;
+        margin-top: 45px;
+      }
     }
   }
 }

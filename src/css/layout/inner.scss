@@ -4,3 +4,9 @@
   margin: 0 auto;
   width: 1180px;
 }
+
+@include utility.sp {
+  .l-inner {
+    width: 95%;
+  }
+}

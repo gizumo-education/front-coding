@@ -43,3 +43,52 @@
     }
   }
 }
+
+@include utility.sp {
+  .p-keyvisual {
+    height: 270px;
+    &__inner {
+      width: 100%;
+      &__key {
+        height: 270px;
+        object-fit: cover;
+      }
+      &__img {
+        float: left;
+        position: absolute;
+        object-fit: cover;
+        &:nth-child(2) {
+          width: 25%;
+          top: 24%;
+          left: 56%;
+        }
+        &:nth-child(3) {
+          width: 35%;
+          top: 25%;
+          left: 50%;
+        }
+        &:nth-child(4) {
+          width: 55%;
+          top: 60%;
+          left: 40%;
+        }
+        &:nth-child(5) {
+          width: 10%;
+          top: 45%;
+          left: 67%;
+        }
+        &:nth-child(6) {
+          padding: 6px 23px 5px;
+          top: 76%;
+          left: 45%;
+          border: 1px solid utility.$green;
+          border-radius: 5px;
+          font-size: 0.05rem;
+          & span {
+            font-size: 0.1rem;
+          }
+        }
+      }
+    }
+  }
+}
