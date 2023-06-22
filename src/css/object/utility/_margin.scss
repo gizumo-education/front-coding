@@ -1,0 +1,26 @@
+@use '../../object/utility/utility.scss' as var;
+//細かなmarginを使うスタイル。
+
+.u-margin-feature {
+  margin-top: 26px;
+}
+
+.u-margin-flow-img-search {
+  margin-top: 20px;
+}
+
+.u-margin-flow-img-offer {
+  margin-top: 7px;
+}
+
+.u-margin-flow-name {
+  margin-top: 20px;
+}
+
+.u-margin-flow-name-apply {
+  margin-top: 38px;
+}
+
+.u-margin-flow-detail-entry {
+  margin-top: 18px;
+}

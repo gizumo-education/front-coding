@@ -1,0 +1,71 @@
+@use '../../object/utility/utility.scss' as var;
+//フォーム部分のスタイルをまとめたもの。
+.p-form {
+  width: 1180px;
+  height: 240px;
+  background-color: var.$white;
+  margin: 60px auto 0;
+  text-align: center;
+  &-parts {
+    height: 240px;
+    background-color: var.$formBlue;
+    border-radius: 10px;
+    font-size: 0px;
+    padding: 40px;
+    &-title {
+      font-size: 25px;
+      font-weight: var.$bold;
+    }
+    &-description {
+      font-size: 20px;
+      margin: 20px auto 28px;
+    }
+    &-selects {
+      display: flex;
+    }
+    &-select {
+      margin-left: 15px;
+      position: relative;
+      &:first-child {
+        margin-left: 0;
+      }
+      &::after {
+        content: '';
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid var.$buttonRed;
+        transform: rotate(180deg);
+        position: absolute;
+        top: 40%;
+        right: 5%;
+      }
+    }
+    &-select-area {
+      appearance: none;
+      width: 200px;
+      height: 60px;
+      border-radius: 10px;
+      font-size: 18px;
+      border: 1px solid var.$borderRed;
+      padding: 17px 0 17px 15px;
+    }
+    &-input {
+      width: 300px;
+      height: 60px;
+      font-size: 18px;
+      line-height: 26px;
+      border-radius: 10px;
+      border: 1px solid var.$borderRed;
+      margin-left: 15px;
+      padding: 17px 0 17px 10px;
+    }
+    &-button {
+      width: 140px;
+      height: 60px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: var.$bold;
+      margin-left: 15px;
+    }
+  }
+}

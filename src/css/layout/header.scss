@@ -1,2 +1,15 @@
-@use '../object/utility/utility.scss';
+@use '../object/utility/utility.scss' as var;
 // headerのスタイルを記述するファイル
+
+.l-header {
+  height: 50px;
+  width: 100%;
+  padding: 40px 0;
+  background-color: var.$white;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+

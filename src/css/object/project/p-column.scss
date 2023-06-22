@@ -1,0 +1,85 @@
+@use '../../object/utility/utility.scss' as var;
+//転職お役立ちコンテンツのスタイルをまとめたもの。
+
+.p-column {
+  width: 1180px;
+  height: 455px;
+  margin: 105px auto 0;
+  text-align: center;
+  &-title {
+    font-size: 25px;
+    font-weight: var.$bold;
+    line-height: 25px;
+  }
+  &-contents {
+    display: flex;
+    margin-top: 50px;
+    &-item {
+      width: 380px;
+      height: 240px;
+      background-image: url("../img/picture/column2.png");
+      margin-left: 20px;
+      position: relative;
+      &::before {
+        content: '';
+        background-color: var.$black;
+        position: absolute;
+        width: 380px;
+        height: 240px;
+        opacity: 0.5;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+      }
+      &:hover {
+        opacity: 0.8;
+        transition: .3s;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &:nth-child(2) {
+        background-image: url("../img/picture/column1.png");
+      }
+      & a {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: var.$white;
+        width: 380px;
+        height: 240px;
+        padding-top: 70px;
+      }
+      &-name {
+        font-size: 24px;
+        font-weight: var.$bold;
+        line-height: 24px;
+      }
+      &-detail {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 23px;
+        margin-top: 45px;
+      }
+    }
+  }
+  &-button {
+    display: block;
+    width: 420px;
+    height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    margin: 80px auto 0;
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    & span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  }

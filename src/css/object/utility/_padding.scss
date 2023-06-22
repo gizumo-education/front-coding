@@ -1,0 +1,10 @@
+@use '../../object/utility/utility.scss' as var;
+//下のフォーム部分のpaddingだけ変えたいためのスタイル
+
+.u-padding {
+  width: 1180px;
+  height: 240px;
+  background-color: var.$white;
+  margin: 150px auto 0;
+  text-align: center;
+}
