@@ -39,6 +39,8 @@
     font-size: 14px;
     font-weight: var.$regular;
     margin-left: 15px;
+    display: flex;
+    align-items: center;
     &:first-child {
       min-width: 129px;
       margin-left: 0;
