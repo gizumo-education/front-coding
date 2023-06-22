@@ -8,8 +8,8 @@
   font-size: 18px;
   font-weight: var.$bold;
   cursor: pointer;
+  transition: .3s;
   &:hover {
     opacity: 0.8;
-    transition: .3s;
   }
 }

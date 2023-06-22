@@ -20,6 +20,7 @@
       background-image: url("../img/picture/column2.png");
       margin-left: 20px;
       position: relative;
+      transition: opacity .3s;
       &::before {
         content: '';
         background-color: var.$black;
@@ -33,7 +34,6 @@
       }
       &:hover {
         opacity: 0.8;
-        transition: .3s;
       }
       &:first-child {
         margin-left: 0;
