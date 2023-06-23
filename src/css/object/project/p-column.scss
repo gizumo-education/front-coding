@@ -17,7 +17,7 @@
     &-item {
       width: 380px;
       height: 240px;
-      background-image: url("../img/picture/column2.png");
+      background-image: url("../img/picture/column2.jpg");
       margin-left: 20px;
       position: relative;
       transition: opacity .3s;
@@ -39,7 +39,7 @@
         margin-left: 0;
       }
       &:nth-child(2) {
-        background-image: url("../img/picture/column1.png");
+        background-image: url("../img/picture/column1.jpg");
       }
       & a {
         display: inline-block;
