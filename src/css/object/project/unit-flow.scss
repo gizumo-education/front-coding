@@ -8,7 +8,7 @@
   &__title {
     text-align: center;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: utility.$bold;
   }
 
   &__content {
@@ -19,7 +19,7 @@
 
     &__text {
       margin-left: 22px;
-      border: solid 1px utility.$pink;
+      border: solid 3px utility.$pink;
       border-radius: 10px;
       position: relative;
       text-align: center;
@@ -49,18 +49,20 @@
         margin: 20px auto 0 auto;
         font-size: 24px;
         line-height: 30px;
+        font-weight: utility.$bold;
       }
 
       & > p {
         font-size: 14px;
         width: 80%;
         margin: 18px auto 0 auto;
+        line-height: 21px;
       }
 
       &::after {
         content: "";
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 100%;
         border-top: 20px solid transparent;
         border-bottom: 20px solid transparent;

@@ -49,6 +49,10 @@
         transition: 1s;
       }
 
+      :nth-child(2n){
+        margin-top: 15px;
+      }
+
       :hover {
         opacity: 0.8;
         transition: 1s;

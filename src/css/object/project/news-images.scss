@@ -24,6 +24,11 @@
     &:first-child {
       margin-left: 0;
     }
+
+    & > img {
+      border-radius: 10px;
+    }
+    
     & > p {
       width: 278px;
       margin-top: 8.08px;
@@ -40,7 +45,10 @@
 
     & > dt {
       width: 60px;
+      height: 21px;
+      font-size: 14px;
       text-align: center;
+      padding-top: 2px;
       background-color: utility.$scrollText;
     }
 
@@ -51,7 +59,6 @@
 
   &__button {
     width: 360px;
-    height: 60px;
     display: block;
     padding: 17px 70px;
     margin: 60px auto 0 auto;
