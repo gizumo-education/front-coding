@@ -17,4 +17,16 @@
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/form.scss';
+@use './object/project/news.scss';
+@use './object/project/eyeCatching.scss';
+@use './object/project/feature.scss';
+@use './object/project/flow.scss';
+@use './object/project/column.scss';
+/*-------------------------------------------*/
+
+/*utility---------------------------------*/
+@use './object/utility/_space.scss';
+@use './object/utility/_padding.scss';
+@use './object/utility/_margin.scss';
 /*-------------------------------------------*/

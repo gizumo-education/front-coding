@@ -1,0 +1,72 @@
+@use '../../object/utility/utility.scss';
+//転職までの流れ部分のスタイルをまとめたもの。
+.p-flow {
+  height: 435px;
+  width: 1180px;
+  margin: 105px auto 0;
+  text-align: center;
+  &-title {
+    font-size: 25px;
+    font-weight: utility.$bold;
+    line-height: 25px;
+  }
+  &-contents {
+    display: flex;
+    margin-top: 50px;
+    &-item {
+      width: 280px;
+      height: 360px;
+      border: 2px solid utility.$red;
+      background-color: utility.$white;
+      border-radius: 10px;
+      margin-left: 20px;
+      padding: 50px 19px 0;
+      position: relative;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:not(:last-child)::after {
+        content: '';
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid utility.$red;
+        transform: translate(-50%, -50%) rotate(90deg);
+        position: absolute;
+        top: 50%;
+        left: 104.4%;
+      }
+      &-circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: utility.$red;
+        color: utility.$white;
+        font-size: 16px;
+        font-weight: utility.$bold;
+        top: 9px;
+        left: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-img {
+        margin-top: 10px;
+        max-width: 100%;
+        height: auto;
+      }
+      &-name {
+        font-size: 24px;
+        font-weight: utility.$bold;
+        line-height: 30px;
+        margin-top: 30px;
+      }
+      &-detail {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        margin-top: 30px;
+      }
+    }
+  }
+}

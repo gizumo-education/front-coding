@@ -43,12 +43,16 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
+  transition: opacity .3s;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .is-pc {

@@ -1,0 +1,115 @@
+@use '../../object/utility/utility.scss';
+//新着求人部分のスタイルをまとめたもの。
+
+.p-news {
+  height: 636px;
+  background-color: utility.$sky-blue;
+  margin-top: 60px;
+  padding-top: 64px;
+  &-container {
+    width: 1180px;
+    margin: 0 auto;
+  }
+  &-title {
+    font-size: 25px;
+  }
+  &-contents {
+    margin-top: 25px;
+    display: flex;
+    position: relative;
+    &-leftCircle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: utility.$white;
+      opacity: .7;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-top: 1px solid utility.$black;
+        border-left: 1px solid utility.$black;
+        position: absolute;
+        top: 50%;
+        left: 35px;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+    &-rightCircle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: utility.$white;
+      opacity: .7;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-top: 1px solid utility.$black;
+        border-left: 1px solid utility.$black;
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        transform: translate(-50%, -50%) rotate(135deg);
+      }
+    }
+    &-item {
+      margin-left: 20px;
+      color: utility.$black;
+      &:first-child {
+        margin-left: 0;
+      }
+      &-img {
+        border-radius: 10px;
+      }
+      &-text {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      &-info {
+        font-size: 14px;
+        margin-top: 5px;
+        line-height: 17px;
+        &:first-child {
+          margin-top: 7px;
+        }
+        & span {
+          display: inline-block;
+          width: 60px;
+          height: 20px;
+          background-color: utility.$background-pink-light;
+          text-align: center;
+          line-height: 20px;
+          margin-right: 10px
+        }
+      }
+    }
+  }
+  &-button {
+    display: block;
+    width: 360px;
+    height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    margin: 60px auto 0;
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    & span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
