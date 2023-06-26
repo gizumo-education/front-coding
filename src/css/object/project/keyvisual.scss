@@ -2,7 +2,7 @@
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual {
   height: 500px;
-  background-color: var.$topBlue;
+  background-color: var.$background-blue;
   &-backImg {
     margin: 0 auto;
     width: 1260px;
@@ -30,9 +30,9 @@
       width: 390px;
       height: 70px;
       background-color: var.$white;
-      color: var.$keyvisualText;
+      color: var.$green;
       font-size: 20px;
-      border: 2px solid var.$keyvisualText;
+      border: 2px solid var.$green;
       line-height: 30px;
       border-radius: 10px;
       margin-top: 55px;

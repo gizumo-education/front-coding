@@ -16,7 +16,7 @@
     &-item {
       width: 280px;
       height: 360px;
-      border: 2px solid var.$buttonRed;
+      border: 2px solid var.$red;
       background-color: var.$white;
       border-radius: 10px;
       margin-left: 20px;
@@ -29,7 +29,7 @@
         content: '';
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
-        border-bottom: 20px solid var.$buttonRed;
+        border-bottom: 20px solid var.$red;
         transform: translate(-50%, -50%) rotate(90deg);
         position: absolute;
         top: 50%;
@@ -40,7 +40,7 @@
         height: 60px;
         border-radius: 50%;
         position: absolute;
-        background-color: var.$buttonRed;
+        background-color: var.$red;
         color: var.$white;
         font-size: 16px;
         font-weight: var.$bold;
