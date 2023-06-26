@@ -1,0 +1,69 @@
+@use '../../object/utility/utility.scss';
+
+//検索欄
+.p-search {
+  max-width: 80%;
+  margin-top: 60px;
+  padding: 40px;
+  text-align: center;
+  background-color: utility.$searchBackground;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  & > h2 {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 26px;
+    
+    &__container {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 60%;
+        right: 15px;
+        transform: translateY(-50%);
+        content: "";
+        width: 0;
+        height: 0;
+        pointer-events: none;
+        border-top: 10px solid utility.$pink;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
+      
+      &__input {
+        display: flex;
+      }
+
+      &__button {
+        width: 140px;
+        margin-left: 15px;
+        cursor: pointer;
+        display: flex;
+        transition: .3s;
+        
+        & > img {
+          padding: 15px 4px 15px 14px;
+        }
+        
+        & > p {
+          margin-top: 21px;
+        }
+      }
+    }
+  }
+}
