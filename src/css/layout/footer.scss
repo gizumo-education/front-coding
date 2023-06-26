@@ -63,7 +63,7 @@
     padding-top: 0;
     &__inner {
       padding: 40px;
-      font-size: 0.15rem;
+      font-size: 0.16rem;
       &__menu {
         flex-direction: column;
         &__nav {
@@ -74,7 +74,7 @@
             margin-top: 0;
           }
           &__list {
-            justify-content: space-between;
+            justify-content: left;
             width: 100%;
             margin-left: 0;
             white-space: nowrap;
@@ -96,7 +96,7 @@
     }
     &__copy {
       margin-top: 0;
-      font-size: 0.12rem;
+      font-size: 0.14rem;
     }
   }
 }

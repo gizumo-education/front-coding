@@ -37,6 +37,9 @@ body {
     font-size: calc(100vw / 4);
     // 400pxの画面幅で見たときにfont-sizeが100pxになるように計算
   }
+  h2 {
+    font-size: 0.25rem;
+  }
 }
 
 
