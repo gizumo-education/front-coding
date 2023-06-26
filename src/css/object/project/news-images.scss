@@ -16,6 +16,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+
+    &> a {
+      transition: .3s;
+    }
   }
 
   &__image {
@@ -63,5 +67,6 @@
     padding: 17px 70px;
     margin: 60px auto 0 auto;
     font-weight: utility.$bold;
+    transition: .3s;
   }
 }

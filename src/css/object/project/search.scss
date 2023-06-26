@@ -38,6 +38,7 @@
         content: "";
         width: 0;
         height: 0;
+        pointer-events: none;
         border-top: 10px solid utility.$pink;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;

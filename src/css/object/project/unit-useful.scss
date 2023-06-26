@@ -7,6 +7,7 @@
     margin-top: 106px;
     font-size: 25px;
     text-align: center;
+    font-weight: utility.$bold;
   }
 
   &__content {
@@ -43,6 +44,7 @@
         transform: translate(-50%, 0);
         color: utility.$white;
         font-size: 24px;
+        font-weight: utility.$bold;
         white-space: nowrap;
         z-index: 2;
       }
@@ -55,6 +57,7 @@
         transform: translate(-50%, 0);
         color: utility.$white;
         font-size: 16px;
+        font-weight: utility.$regular;
         line-height: 28px;
         white-space: nowrap;
         z-index: 2;
@@ -66,6 +69,9 @@
     display: block;
     width: 420px;
     height: 60px;
+    padding: 21px 0;
     margin: 80px auto 90px auto;
+    font-weight: utility.$bold;
+    transition: .3s;
   }
 }
