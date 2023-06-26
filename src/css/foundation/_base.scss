@@ -53,6 +53,9 @@ a {
   &:hover {
     opacity: .8;
   }
+  &:visited {
+    color: base.$black;
+  }
 }
 
 h2 {

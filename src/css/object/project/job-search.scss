@@ -39,13 +39,17 @@
     & button {
       width: 140px;
       margin-left: 15px;
-      padding-left: 48px;
+      padding-top: 5px;
       position: relative;
       &::before {
-        content: url(../img/icon/search.png);
-        position: absolute;
-        top: 25%;
-        left: 10%;
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        transform: translate(-10%, -5%);
+        background: url(../img/icon/search.png) no-repeat;
+        background-size: contain;
+        vertical-align: middle;
       }
     }
   }
@@ -91,6 +95,7 @@
         margin: 20px auto 0;
         padding: 10px;
         &::before {
+          width: 1%;
           top: 25%;
           left: 10%;
         }

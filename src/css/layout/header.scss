@@ -37,18 +37,49 @@
   &__link {
     display: flex;
     margin-left: 25px;
+    text-align: left;
     &__info {
       margin-left: 15px;
-      &:first-child {
+      &:nth-child(1) {
+        position: relative;
         margin-left: 0;
         & a {
           width: 160px;
-          padding-left: 10px;
+          padding-left: 41px;
+          &::before {
+            content: url(../img/icon/heart.png);
+            position: absolute;
+            top: 30%;
+            left: 8%;
+          }
+        }
+      }
+      &:nth-child(2) {
+        position: relative;
+        & a {
+          padding-left: 52px;
+          &::before {
+            content: url(../img/icon/clock.png);
+            position: absolute;
+            top: 31%;
+            left: 18%;
+          }
+        }
+      }
+      &:nth-child(3) {
+        position: relative;
+        & a {
+          padding-left: 52px;
+          &::before {
+            content: url(../img/icon/history.png);
+            position: absolute;
+            top: 33%;
+            left: 18%;
+          }
         }
       }
     }
     & img {
-      vertical-align: middle;
       margin-right: 10px;
     }
   }
