@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 //転職までの流れ部分のスタイルをまとめたもの。
 .p-flow {
   height: 435px;
@@ -7,7 +7,7 @@
   text-align: center;
   &-title {
     font-size: 25px;
-    font-weight: var.$bold;
+    font-weight: utility.$bold;
     line-height: 25px;
   }
   &-contents {
@@ -16,8 +16,8 @@
     &-item {
       width: 280px;
       height: 360px;
-      border: 2px solid var.$red;
-      background-color: var.$white;
+      border: 2px solid utility.$red;
+      background-color: utility.$white;
       border-radius: 10px;
       margin-left: 20px;
       padding: 50px 19px 0;
@@ -29,7 +29,7 @@
         content: '';
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
-        border-bottom: 20px solid var.$red;
+        border-bottom: 20px solid utility.$red;
         transform: translate(-50%, -50%) rotate(90deg);
         position: absolute;
         top: 50%;
@@ -40,10 +40,10 @@
         height: 60px;
         border-radius: 50%;
         position: absolute;
-        background-color: var.$red;
-        color: var.$white;
+        background-color: utility.$red;
+        color: utility.$white;
         font-size: 16px;
-        font-weight: var.$bold;
+        font-weight: utility.$bold;
         top: 9px;
         left: 9px;
         display: flex;
@@ -57,7 +57,7 @@
       }
       &-name {
         font-size: 24px;
-        font-weight: var.$bold;
+        font-weight: utility.$bold;
         line-height: 30px;
         margin-top: 30px;
       }

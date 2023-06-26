@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 // footerの部品のスタイルを記述するファイル
 
 .p-footer-menu {
@@ -11,7 +11,7 @@
   &-nav {
     margin-top: 80px;
     & a {
-      color: var.$black;
+      color: utility.$black;
     }
     &-link {
       margin-top: 30px;
@@ -41,7 +41,7 @@
 
 .p-footer-logo {
   height: 35px;
-  background-color: var.$grey;
+  background-color: utility.$grey;
   font-size: 14px;
   line-height: 14px;
   display: flex;

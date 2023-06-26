@@ -1,9 +1,9 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 //新着求人部分のスタイルをまとめたもの。
 
 .p-news {
   height: 636px;
-  background-color: var.$sky-blue;
+  background-color: utility.$sky-blue;
   margin-top: 60px;
   padding-top: 64px;
   &-container {
@@ -21,7 +21,7 @@
       width: 60px;
       height: 60px;
       border-radius: 50%;
-      background-color: var.$white;
+      background-color: utility.$white;
       opacity: .7;
       position: absolute;
       top: 70px;
@@ -31,8 +31,8 @@
         display: inline-block;
         width: 20px;
         height: 20px;
-        border-top: 1px solid var.$black;
-        border-left: 1px solid var.$black;
+        border-top: 1px solid utility.$black;
+        border-left: 1px solid utility.$black;
         position: absolute;
         top: 50%;
         left: 35px;
@@ -43,7 +43,7 @@
       width: 60px;
       height: 60px;
       border-radius: 50%;
-      background-color: var.$white;
+      background-color: utility.$white;
       opacity: .7;
       position: absolute;
       top: 70px;
@@ -53,8 +53,8 @@
         display: inline-block;
         width: 20px;
         height: 20px;
-        border-top: 1px solid var.$black;
-        border-left: 1px solid var.$black;
+        border-top: 1px solid utility.$black;
+        border-left: 1px solid utility.$black;
         position: absolute;
         top: 50%;
         left: 25px;
@@ -63,7 +63,7 @@
     }
     &-item {
       margin-left: 20px;
-      color: var.$black;
+      color: utility.$black;
       &:first-child {
         margin-left: 0;
       }
@@ -86,7 +86,7 @@
           display: inline-block;
           width: 60px;
           height: 20px;
-          background-color: var.$background-pink-light;
+          background-color: utility.$background-pink-light;
           text-align: center;
           line-height: 20px;
           margin-right: 10px

@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 // ページ上部header内のスタイルをまとめたもの。
 
 .p-header {
@@ -9,9 +9,9 @@
   }
   &-nav {
     font-size: 16px;
-    font-weight: var.$regular;
-    color: var.$black;
-    border-left: 1px solid var.$black;
+    font-weight: utility.$regular;
+    color: utility.$black;
+    border-left: 1px solid utility.$black;
     padding-left: 20px;
     margin-left: 20px;
     &:first-child {
@@ -20,7 +20,7 @@
       margin-left: 0;
     }
     &-text {
-      color: var.$black;
+      color: utility.$black;
     }
   }
   &-btns {
@@ -33,11 +33,11 @@
   }
   &-btn {
     min-width: 84px;
-    background-color: var.$blue;
+    background-color: utility.$blue;
     padding: 15px 30px;
     border-radius: 10px;
     font-size: 14px;
-    font-weight: var.$regular;
+    font-weight: utility.$regular;
     margin-left: 15px;
     display: flex;
     align-items: center;

@@ -1,8 +1,8 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual {
   height: 500px;
-  background-color: var.$background-blue;
+  background-color: utility.$background-blue;
   &-backImg {
     margin: 0 auto;
     width: 1260px;
@@ -29,17 +29,17 @@
       display: inline-block;
       width: 390px;
       height: 70px;
-      background-color: var.$white;
-      color: var.$green;
+      background-color: utility.$white;
+      color: utility.$green;
       font-size: 20px;
-      border: 2px solid var.$green;
+      border: 2px solid utility.$green;
       line-height: 30px;
       border-radius: 10px;
       margin-top: 55px;
       padding: 20px 42px 10px;
       & span {
         font-size: 40px;
-        font-weight: var.$bold;
+        font-weight: utility.$bold;
         margin-left: 7px;
       }
   }

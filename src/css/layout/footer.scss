@@ -1,8 +1,8 @@
-@use '../object/utility/utility.scss' as var;
+@use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
 
 .l-footer {
   width: 100%;
   height: 300px;
-  background-color: var.$sky-blue;
+  background-color: utility.$sky-blue;
 }

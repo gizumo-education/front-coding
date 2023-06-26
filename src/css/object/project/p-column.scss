@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 //転職お役立ちコンテンツのスタイルをまとめたもの。
 
 .p-column {
@@ -8,7 +8,7 @@
   text-align: center;
   &-title {
     font-size: 25px;
-    font-weight: var.$bold;
+    font-weight: utility.$bold;
     line-height: 25px;
   }
   &-contents {
@@ -23,7 +23,7 @@
       transition: opacity .3s;
       &::before {
         content: '';
-        background-color: var.$black;
+        background-color: utility.$black;
         position: absolute;
         width: 380px;
         height: 240px;
@@ -46,14 +46,14 @@
         position: absolute;
         top: 0;
         left: 0;
-        color: var.$white;
+        color: utility.$white;
         width: 380px;
         height: 240px;
         padding-top: 70px;
       }
       &-name {
         font-size: 24px;
-        font-weight: var.$bold;
+        font-weight: utility.$bold;
         line-height: 24px;
       }
       &-detail {

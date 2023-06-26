@@ -1,12 +1,12 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
 
 .c-button {
   all: unset;
-  color: var.$white;
-  background-color: var.$red;
+  color: utility.$white;
+  background-color: utility.$red;
   font-size: 18px;
-  font-weight: var.$bold;
+  font-weight: utility.$bold;
   cursor: pointer;
   transition: opacity .3s;
   &:hover {

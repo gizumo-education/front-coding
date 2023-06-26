@@ -1,20 +1,20 @@
-@use '../../object/utility/utility.scss' as var;
+@use '../../object/utility/utility.scss';
 //フォーム部分のスタイルをまとめたもの。
 .p-form {
   width: 1180px;
   height: 240px;
-  background-color: var.$white;
+  background-color: utility.$white;
   margin: 60px auto 0;
   text-align: center;
   &-parts {
     height: 240px;
-    background-color: var.$light-blue;
+    background-color: utility.$light-blue;
     border-radius: 10px;
     font-size: 0px;
     padding: 40px;
     &-title {
       font-size: 25px;
-      font-weight: var.$bold;
+      font-weight: utility.$bold;
     }
     &-description {
       font-size: 20px;
@@ -33,7 +33,7 @@
         content: '';
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
-        border-bottom: 10px solid var.$red;
+        border-bottom: 10px solid utility.$red;
         transform: rotate(180deg);
         position: absolute;
         top: 40%;
@@ -46,7 +46,7 @@
       height: 60px;
       border-radius: 10px;
       font-size: 18px;
-      border: 1px solid var.$cherry-red;
+      border: 1px solid utility.$cherry-red;
       padding: 17px 0 17px 15px;
     }
     &-input {
@@ -55,7 +55,7 @@
       font-size: 18px;
       line-height: 26px;
       border-radius: 10px;
-      border: 1px solid var.$cherry-red;
+      border: 1px solid utility.$cherry-red;
       margin-left: 15px;
       padding: 17px 0 17px 10px;
     }
@@ -64,7 +64,7 @@
       height: 60px;
       border-radius: 30px;
       font-size: 18px;
-      font-weight: var.$bold;
+      font-weight: utility.$bold;
       margin-left: 15px;
     }
   }
