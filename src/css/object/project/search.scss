@@ -47,11 +47,20 @@
       
       &__input {
         display: flex;
+      }
 
-        & > button {
-          width: 140px;
-          margin-left: 15px;
-          cursor: pointer;
+      &__button {
+        width: 140px;
+        margin-left: 15px;
+        cursor: pointer;
+        display: flex;
+        
+        & > img {
+          padding: 15px 4px 15px 14px;
+        }
+        
+        & > p {
+          margin-top: 21px;
         }
       }
     }
