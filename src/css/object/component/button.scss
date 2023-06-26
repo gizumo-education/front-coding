@@ -10,9 +10,9 @@
   color: utility.$white;
   background-color: utility.$magenta;
   cursor: pointer;
+  transition: .3s;
   &:hover {
     opacity: .8;
-    transition: .3s;
   }
 }
 .c-btn__blue {
@@ -22,9 +22,9 @@
   font-size: 14px;
   color: utility.$white;
   background-color: utility.$blue;
+  transition: .3s;
   &:hover {
     opacity: .8;
-    transition: .3s;
   }
 }
 .c-select {
