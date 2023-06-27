@@ -50,6 +50,36 @@
   }
 }
 
+@include utility.tab {
+  .p-recruit {
+    margin-top: 5%;
+    &__inner {
+      padding: 6% 0;
+      &__list {
+        width: 100%;
+        margin-top: 3%;
+        font-size: 0.14rem;
+        & li {
+          width: 24%;
+          & figcaption {
+            width: 100%;
+          }
+        }
+        & p {
+          margin-top: 3%;
+          &:first-of-type {
+            margin-top: 4%;
+          }
+        }
+      }
+      &__btn {
+        width: 35%;
+        padding: 2%;
+      }
+    }
+  }
+}
+
 @include utility.sp {
   .p-recruit {
     margin-top: 25px;

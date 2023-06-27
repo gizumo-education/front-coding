@@ -44,12 +44,43 @@
       &::before {
         content: '';
         display: inline-block;
-        width: 30px;
-        height: 30px;
+        width: 1.5em;
+        height: 1.5em;
         transform: translate(-10%, -5%);
         background: url(../img/icon/search.png) no-repeat;
         background-size: contain;
         vertical-align: middle;
+      }
+    }
+  }
+}
+
+@include utility.tab {
+  .p-job-search {
+    margin-top: 5%;
+    padding: 3% 1%;
+    &__text {
+      font-size: 0.2rem;
+    }
+    &__form {
+      justify-content: space-between;
+      &__select {
+        width: 55%;
+        &__btn {
+          width: 33%;
+        }
+      }
+      &__input {
+        width: 26%;
+        margin-left: 0;
+      }
+      &__btn {
+        width: 15%;
+        & button {
+          width: 100%;
+          margin-left: 0;
+          padding-top: 0;
+        }
       }
     }
   }
@@ -90,14 +121,14 @@
         margin-left: 0;
       }
       & button {
-        width: 60%;
+        width: 50%;
         height: auto;
         margin: 20px auto 0;
         padding: 10px;
         &::before {
-          width: 1%;
-          top: 25%;
-          left: 10%;
+          width: 1em;
+          height: 1em;
+          transform: translate(-120%, -10%);
         }
       }
     }

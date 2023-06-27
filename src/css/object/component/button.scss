@@ -19,6 +19,9 @@
   }
 }
 .c-btn__blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 140px;
   height: 50px;
   padding: 17px 20px;
@@ -27,6 +30,7 @@
   color: utility.$white;
   background-color: utility.$blue;
   transition: .3s;
+  white-space: nowrap;
   &:hover {
     opacity: .8;
   }
@@ -110,7 +114,46 @@
   }
 }
 
-
+@include utility.tab {
+  .c-btn__pink {
+    width: 100%;
+    height: 100%;
+    font-size: 0.18rem;
+  }
+  .c-btn__blue {
+    width: 100%;
+    height: 100%;
+    padding: 6%;
+    font-size: 0.14rem;
+  }
+  .c-select {
+    width: 100%;
+    height: 100%;
+    font-size: 0.18rem;
+  }
+  .c-input {
+    width: 100%;
+    height: 100%;
+    font-size: 0.18rem;
+  }
+  .c-prev-btn {
+    width: 6em;
+    height: 6em;
+    &::after {
+      width: 2em;
+      height: 2em;
+    }
+  }
+  .c-next-btn {
+    width: 6em;
+    height: 6em;
+    right: 0;
+    &::after {
+      width: 2em;
+      height: 2em;
+    }
+  }
+}
 
 @include utility.sp {
   .c-btn__pink {
@@ -138,7 +181,8 @@
   .c-prev-btn {
     width: 42px;
     height: 42px;
-    top: 45%;
+    top: 41%;
+    left: 0;
     &::after {
       width: 14px;
       height: 14px;
@@ -147,7 +191,8 @@
   .c-next-btn {
     width: 42px;
     height: 42px;
-    top: 45%;
+    top: 41%;
+    right: 0;
     &::after {
       width: 14px;
       height: 14px;

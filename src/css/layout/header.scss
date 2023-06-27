@@ -7,7 +7,7 @@
   z-index: 99;
   width: 100%;
   display: flex;
-  padding: 25px 100px;
+  padding: 25px 100px 25px 0;
   font-size: 16px;
   justify-content: right;
   align-items: center;
@@ -45,36 +45,45 @@
         margin-left: 0;
         & a {
           width: 160px;
-          padding-left: 41px;
           &::before {
-            content: url(../img/icon/heart.png);
-            position: absolute;
-            top: 30%;
-            left: 8%;
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            transform: translate(-50%, 5%);
+            background: url(../img/icon/heart.png) no-repeat;
+            background-size: contain;
+            vertical-align: middle;
           }
         }
       }
       &:nth-child(2) {
         position: relative;
         & a {
-          padding-left: 52px;
           &::before {
-            content: url(../img/icon/clock.png);
-            position: absolute;
-            top: 31%;
-            left: 18%;
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            transform: translate(-50%, 5%);
+            background: url(../img/icon/clock.png) no-repeat;
+            background-size: contain;
+            vertical-align: middle;
           }
         }
       }
       &:nth-child(3) {
         position: relative;
         & a {
-          padding-left: 52px;
           &::before {
-            content: url(../img/icon/history.png);
-            position: absolute;
-            top: 33%;
-            left: 18%;
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            transform: translate(-50%, 5%);
+            background: url(../img/icon/history.png) no-repeat;
+            background-size: contain;
+            vertical-align: middle;
           }
         }
       }
@@ -113,9 +122,49 @@
   }
 }
 
+@include utility.tab {
+  .l-header {
+    padding: 2.5%;
+    font-size: 0.16rem;
+    &__nav {
+      width: 60%;
+      &__list {
+        justify-content: center;
+      }
+      &__list__info {
+        padding: 0 4%;
+      }
+    }
+    &__link {
+      width: 40%;
+      margin-left: 0;
+      &__info {
+        width: 30%;
+        margin-left: 3%;
+        &:nth-child(1) {
+          width: 40%;
+          & a {
+            width: 100%;
+          }
+        }
+        &:nth-child(2) {
+          & a {
+            width: 100%;
+          }
+        }
+        &:nth-child(3) {
+          & a {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
 @include utility.sp {
   .l-header {
-    padding: 15px;
+    padding: 4%;
     &__link {
       display: none;
     }

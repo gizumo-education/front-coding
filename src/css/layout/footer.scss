@@ -57,6 +57,32 @@
   }
 }
 
+@include utility.tab {
+  .l-footer {
+    margin-top: 16%;
+    padding-top: 5%;
+    font-size: 0.16rem;
+    &__inner {
+      &__menu {
+        &__nav {
+          &__top {
+            margin-top: 2%;
+          }
+          &__list {
+            margin-top: 8%;
+            margin-left: 1%;
+            width: 70%;
+          }
+        }
+      }
+    }
+    &__copy {
+      margin-top: 2%;
+      padding: 1% 0;
+    }
+  }
+}
+
 @include utility.sp {
   .l-footer {
     margin-top: 100px;

@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    line-height: 1.5;
   }
   & li {
     width: 380px;
@@ -62,7 +63,6 @@
       &:nth-of-type(2) {
         margin-top: 45px;
         font-size: 16px;
-        line-height: 1.5;
       }
     }
   }
@@ -72,6 +72,38 @@
     justify-content: center;
     width: 420px;
     margin: 80px auto 0;
+  }
+}
+
+@include utility.tab {
+  .p-content {
+    padding: 8% 0;
+    &__list {
+      margin-top: 5%;
+      & li {
+        width: 32.5%;
+        height: auto;
+        padding: 5% 0;
+        & a {
+          width: auto;
+          height: auto;
+        }
+        & p {
+          &:nth-of-type(1) {
+            font-size: 0.24rem;
+          }
+          &:nth-of-type(2) {
+            margin-top: 10%;
+            font-size: 0.16rem;
+          }
+        }
+      }
+    }
+    &__btn {
+      width: 35%;
+      margin: 6% auto 0;
+      padding: 2%;
+    }
   }
 }
 

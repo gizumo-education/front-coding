@@ -3,7 +3,7 @@
 .p-about {
   text-align: center;
   padding: 103px 0;
-  background-image: url(../img/picture/about.jpg);
+  background: url(../img/picture/about.jpg) center;
   background-size: cover;
   position: relative;
   &::before {
@@ -14,6 +14,15 @@
     color: utility.$white;
     font-size: 25px;
     line-height: 2;
+  }
+}
+
+@include utility.tab {
+  .p-about {
+    padding: 5% 0;
+    &__inner {
+      font-size: 0.25rem;
+    }
   }
 }
 

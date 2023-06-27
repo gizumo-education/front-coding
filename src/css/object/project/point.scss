@@ -33,6 +33,32 @@
   }
 }
 
+@include utility.tab {
+  .p-point {
+    padding: 7% 0;
+    &__list {
+      margin-top: 4%;
+      & li {
+        width: 49%;
+        height: auto;
+        margin-top: 2%;
+        padding: 3% 0;
+      }
+      & li p {
+        font-size: 0.14rem;
+        &:nth-child(1) {
+          margin-top: 0;
+          font-size: 0.24rem;
+        }
+        &:nth-child(2) {
+          margin-top: 5%;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+}
+
 @include utility.sp {
   .p-point {
     padding: 55px 0 60px;
