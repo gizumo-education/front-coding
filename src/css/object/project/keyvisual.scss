@@ -56,19 +56,9 @@
     text-align: center;
     &__inner {
       width: 100%;
-      &__key {
-      }
       &__img {
         &__head {
           margin-top: 0;
-          & img:nth-child(1) {
-          }
-          & img:nth-child(2) {
-          }
-          & img:nth-child(3) {
-          }
-        }
-        &:nth-child(2) {
         }
         & p {
           padding: 1% 5%;
@@ -113,8 +103,6 @@
             position: absolute;
             transform: translate(-120%, 1100%);
           }
-        }
-        &:nth-child(2) {
         }
         & p {
           padding: 1% 5%;
