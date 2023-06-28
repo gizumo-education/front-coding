@@ -68,17 +68,22 @@
     &__list {
       margin-top: 4%;
       & li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 23.7%;
         height: auto;
         padding: 6% 2% 4%;
         & p:nth-of-type(2) {
-          height: auto;
+          height: 30%;
+          width: 8em;
         }
         & p:nth-of-type(3) {
-          height: auto;
+          height: 30%;
           font-size: 0.24rem;
         }
         & p:nth-of-type(4) {
+          height: 30%;
           margin-top: 10px;
           font-size: 0.14rem;
         }
@@ -108,15 +113,15 @@
         width: 100%;
         height: 100%;
         margin: 12% auto 0;
-        padding: 20% 6% 6%;
+        padding: 18% 6% 6%;
         & p:nth-of-type(1) {
           font-size: 0.1rem;
         }
         & p:nth-of-type(2) {
-          width: 30%;
+          height: 30%;
+          width: 8em;
         }
         & p:nth-of-type(3) {
-          height: auto;
           margin-top: 2%;
           font-size: 0.2rem;
           white-space: nowrap;
