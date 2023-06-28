@@ -145,16 +145,28 @@
           width: 40%;
           & a {
             width: 100%;
+            &::before {
+              width: 0.2rem;
+              height: 0.2rem;
+            }
           }
         }
         &:nth-child(2) {
           & a {
             width: 100%;
+            &::before {
+              width: 0.2rem;
+              height: 0.2rem;
+            }
           }
         }
         &:nth-child(3) {
           & a {
             width: 100%;
+            &::before {
+              width: 0.2rem;
+              height: 0.2rem;
+            }
           }
         }
       }
