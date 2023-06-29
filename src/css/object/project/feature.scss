@@ -5,6 +5,7 @@
   height: 480px;
   margin: 105px auto 0;
   text-align: center;
+  overflow: hidden;
   @include utility.tab {
     width: 11.8rem;
     height: 4.8rem;

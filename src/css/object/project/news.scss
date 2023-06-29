@@ -162,15 +162,22 @@
         }
       }
       &-text {
+        width: 278px;
+        height: 44px;
         margin-top: 8px;
         font-size: 16px;
         line-height: 22px;
+        overflow: hidden;
         @include utility.tab {
+          width: 2.78rem;
+          height: 0.44rem;
           margin-top: 0.08rem;
           font-size: 0.16rem;
           line-height: 0.22rem;
         }
         @include utility.sp {
+          width: 3.58rem;
+          height: 0.44rem;
           margin-top: 0.1rem;
           font-size: 0.16rem;
           font-weight: utility.$bold;
@@ -178,15 +185,22 @@
         }
       }
       &-info {
+        width: 278px;
+        height: 21px;
         font-size: 14px;
         margin-top: 5px;
         line-height: 17px;
+        overflow: hidden;
         @include utility.tab {
+          width: 2.78rem;
+          height: 0.21rem;
           font-size: 0.14rem;
           margin-top: 0.05rem;
           line-height: 0.17rem;
         }
         @include utility.sp {
+          width: 3.58rem;
+          height: 0.21rem;
           font-size: 0.14rem;
           margin-top: 0.04rem;
           line-height: 0.17rem;
