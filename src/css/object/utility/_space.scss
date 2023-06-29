@@ -3,4 +3,7 @@
 
 .u-space {
   margin-left: 10px;
+  @include utility.tab {
+    margin-left: 0.1rem;
+  }
 }

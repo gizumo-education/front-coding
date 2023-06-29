@@ -4,6 +4,14 @@
   height: 300px;
   background-image: url("../img/picture/workplace.jpg");
   position: relative;
+  @include utility.tab {
+    height: 3rem;
+    background-size: cover;
+  }
+  @include utility.sp {
+    height: 0.75rem;
+    background-size: cover;
+  }
   &::before {
     content: '';
     background-color: utility.$black;
@@ -11,8 +19,15 @@
     width: 100%;
     height: 300px;
     opacity: 0.5;
+    @include utility.tab {
+      height: 3rem;
+    }
+    @include utility.sp {
+      height: 0.75rem;
+    }
   }
   &-text {
+    width: 625px;
     position: absolute;
     font-size: 25px;
     font-weight: utility.$bold;
@@ -22,8 +37,25 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @include utility.tab {
+      width: 6.25rem;
+      font-size: 0.25rem;
+      line-height: 0.36rem;
+    }
+    @include utility.sp {
+      width: 3.6rem;
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+      font-weight: utility.$regular;
+    }
     & p:last-child {
       margin-top: 21px;
+      @include utility.tab {
+        margin-top: 0.21rem;
+      }
+      @include utility.sp {
+        margin-top: 0.02rem;
+      }
     }
   }
 }

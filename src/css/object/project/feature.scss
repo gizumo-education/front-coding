@@ -5,39 +5,111 @@
   height: 480px;
   margin: 105px auto 0;
   text-align: center;
+  @include utility.tab {
+    width: 11.8rem;
+    height: 4.8rem;
+    margin: 1.05rem auto 0;
+  }
+  @include utility.sp {
+    width: 100%;
+    height: 7.3rem;
+    margin: 0.55rem auto 0;
+  }
   &-title {
     font-size: 25px;
     font-weight: utility.$bold;
     line-height: 25px;
+    @include utility.tab {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
+    @include utility.sp {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
   }
   &-contents {
     display: flex;
     flex-wrap: wrap;
     margin-top: 55px;
+    @include utility.tab {
+      margin-top: 0.55rem;
+    }
+    @include utility.sp {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0.38rem;
+    }
     &-item {
       width: 570px;
       height: 180px;
       background-color: utility.$background-pink-deep;
       border-radius: 10px;
-      padding: 40px;
+      padding: 40px 0;
       flex-basis: auto;
+      @include utility.tab {
+        width: 5.7rem;
+        height: 1.8rem;
+        border-radius: 0.1rem;
+        padding: 0.4rem 0;
+      }
+      @include utility.sp {
+        width: 3.7rem;
+        height: 1.44rem;
+        border-radius: 0.1rem;
+        padding: 0.3rem 0;
+      }
       &:nth-child(2n) {
         margin-left: 40px;
+        @include utility.tab {
+          margin-left: 0.4rem;
+        }
+        @include utility.sp {
+          margin-top: 0.21rem;
+          margin-left: 0;
+        }
       }
       &:nth-child(n + 3) {
         margin-top: 40px;
+        @include utility.tab {
+          margin-top: 0.4rem;
+        }
+        @include utility.sp {
+          margin-top: 0.21rem;
+          height: 1.6rem;
+        }
       }
       &-name {
         font-size: 24px;
         line-height: 24px;
         font-weight: utility.$bold;
         color: utility.$red;
+        @include utility.tab {
+          font-size: 0.24rem;
+          line-height: 0.24rem;
+        }
+        @include utility.sp {
+          font-size: 0.2rem;
+          line-height: 0.2rem;
+        }
       }
       &-detail {
         font-size: 14px;
         line-height: 20px;
-        margin-top: 36px;
-        max-width: 475px;
+        margin: 36px auto 0;
+        min-width: 475px;
+        @include utility.tab {
+          font-size: 0.14rem;
+          line-height: 0.2rem;
+          margin: 0.36rem auto 0;
+          min-width: 4.75rem;
+        }
+        @include utility.sp {
+          font-size: 0.12rem;
+          line-height: 0.17rem;;
+          min-width: 3.5rem;
+          margin: 0.3rem auto 0;
+        }
       }
     }
   }

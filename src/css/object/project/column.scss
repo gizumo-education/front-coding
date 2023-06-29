@@ -6,21 +6,60 @@
   height: 455px;
   margin: 105px auto 0;
   text-align: center;
+  @include utility.tab {
+    width: 11.8rem;
+    height: 4.55rem;
+    margin: 1.05rem auto 0;
+  }
+  @include utility.sp {
+    width: 100%;
+    height: 8.9rem;
+    margin: 0.61rem auto 0;
+  }
   &-title {
     font-size: 25px;
     font-weight: utility.$bold;
     line-height: 25px;
+    @include utility.tab {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
+    @include utility.sp {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
   }
   &-contents {
     display: flex;
     margin-top: 50px;
+    @include utility.tab {
+      margin-top: 0.5rem;
+    }
+    @include utility.sp {
+      flex-direction: column;
+      margin-top: 0.3rem;
+    }
     &-item {
       width: 380px;
       height: 240px;
       background-image: url("../img/picture/column2.jpg");
       margin-left: 20px;
+      border-radius: 10px;
       position: relative;
       transition: opacity .3s;
+      @include utility.tab {
+        width: 3.8rem;
+        height: 2.4rem;
+        margin-left: 0.2rem;
+        border-radius: 0.1rem;
+      }
+      @include utility.sp {
+        width: 3.7rem;
+        height: 2.35rem;
+        background-size: cover;
+        border-radius: 0.1rem;
+        margin: 0.18rem auto 0;
+      }
       &::before {
         content: '';
         background-color: utility.$black;
@@ -31,36 +70,76 @@
         border-radius: 10px;
         top: 0;
         left: 0;
-      }
-      &:hover {
-        opacity: 0.8;
+        @include utility.tab {
+          width: 3.8rem;
+          height: 2.4rem;
+          border-radius: 0.1rem;
+        }
+        @include utility.sp {
+          width: 3.7rem;
+          height: 2.35rem;
+          border-radius: 0.1rem;
+        }
       }
       &:first-child {
         margin-left: 0;
+        @include utility.sp {
+          margin: 0.18rem auto 0;
+        }
       }
       &:nth-child(2) {
         background-image: url("../img/picture/column1.jpg");
       }
-      & a {
-        display: inline-block;
+
+      &-block {
+        display: block;
         position: absolute;
-        top: 0;
-        left: 0;
-        color: utility.$white;
-        width: 380px;
-        height: 240px;
-        padding-top: 70px;
+        width: 288px;
+        height: 115px;
+        margin: 71px 45px 0;
+        @include utility.tab {
+          width: 2.88rem;
+          height: 1.15rem;
+          margin: 0.71rem 0.45rem 0;
+        }
+        @include utility.sp {
+          width: 2.6rem;
+          height: 1.15rem;
+          margin: 0.6rem 0.59rem 0;
+        }
       }
       &-name {
+        display: inline-block;
+        color: utility.$white;
         font-size: 24px;
         font-weight: utility.$bold;
         line-height: 24px;
+        @include utility.tab {
+          font-size: 0.24rem;
+          line-height: 0.24rem;
+        }
+        @include utility.sp {
+          font-size: 0.21rem;
+          line-height: 0.21rem;
+        }
       }
       &-detail {
+        display: inline-block;
+        color: utility.$white;
         display: inline-block;
         font-size: 16px;
         line-height: 23px;
         margin-top: 45px;
+        @include utility.tab {
+          font-size: 0.16rem;
+          line-height: 0.23rem;
+          margin-top: 0.45rem;
+        }
+        @include utility.sp {
+          font-size: 0.14rem;
+          line-height: 0.2rem;
+          margin-top: 0.53rem;
+        }
       }
     }
   }
@@ -71,6 +150,21 @@
     border-radius: 30px;
     text-align: center;
     margin: 80px auto 0;
+    @include utility.tab {
+      width: 4.2rem;
+      height: 0.6rem;
+      border-radius: 0.3rem;
+      margin: 0.8rem auto 0;
+      font-size: 0.18rem;
+    }
+    @include utility.sp {
+      width: 3.7rem;
+      height: 0.6rem;
+      border-radius: 0.3rem;
+      margin: 0.35rem auto 0;
+      font-size: 0.18rem;
+      line-height: 0.18rem;
+    }
     &::before {
       content: '';
       display: inline-block;

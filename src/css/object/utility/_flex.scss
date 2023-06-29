@@ -1,0 +1,9 @@
+@use '../../object/utility/utility.scss';
+//formの部品に対してflexを付けたいだけのをスタイル。
+
+.u-flex {
+  display: flex;
+  @include utility.sp {
+    flex-direction: column;
+  }
+}
