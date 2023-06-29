@@ -5,13 +5,40 @@
   padding-top: 55px;
   background: utility.$lightPurple;
   font-size: 16px;
+  @include utility.tab {
+    margin-top: 1.6rem;
+    padding-top: .5rem;
+    font-size: .16rem;
+  }
+  @include utility.sp {
+    margin-top: 1rem;
+    padding-top: 0;
+  }
   &__inner {
+    @include utility.sp {
+      padding: 10%;
+      font-size: 0.16rem;
+    }
     &__menu {
       display: flex;
       justify-content: space-between;
+      @include utility.sp {
+        flex-direction: column;
+      }
       &__nav {
+        @include utility.sp {
+          width: 95%;
+          margin: 0 auto;
+          height: 50%;
+        }
         &__top {
           margin-top: 25px;
+          @include utility.tab {
+            margin-top: 2%;
+          }
+          @include utility.sp {
+            margin-top: 0;
+          }
         }
         &__list {
           display: flex;
@@ -20,14 +47,35 @@
           margin-left: 5px;
           width: 320px;
           height: 65%;
+          @include utility.tab {
+            margin-top: 8%;
+            margin-left: 1%;
+            width: 70%;
+          }
+          @include utility.sp {
+            justify-content: left;
+            width: 100%;
+            margin-top: 14%;
+            margin-left: 0;
+            white-space: nowrap;
+          }
           & li {
             width: 50%;
+            @include utility.sp {
+              width: 45%;
+              &:nth-child(n+3) {
+                margin-top: 7%;
+              }
+            }
           }
         }
       }
       &__link {
         display: flex;
         flex-direction: column;
+        @include utility.sp {
+          margin-top: 9%;
+        }
         &__item {
           width: 320px;
           height: 85px;
@@ -45,6 +93,9 @@
             background-position: right top;
             background-repeat: no-repeat;
           }
+          @include utility.sp {
+            width: 100%;
+          }
         }
       }
     }
@@ -54,74 +105,11 @@
     padding: 10px 0;
     text-align: center;
     background: utility.$lightGray;
-  }
-}
-
-@include utility.tab {
-  .l-footer {
-    margin-top: 16%;
-    padding-top: 5%;
-    font-size: 0.16rem;
-    &__inner {
-      &__menu {
-        &__nav {
-          &__top {
-            margin-top: 2%;
-          }
-          &__list {
-            margin-top: 8%;
-            margin-left: 1%;
-            width: 70%;
-          }
-        }
-      }
-    }
-    &__copy {
+    @include utility.tab {
       margin-top: 2%;
       padding: 1% 0;
     }
-  }
-}
-
-@include utility.sp {
-  .l-footer {
-    margin-top: 25%;
-    padding-top: 0;
-    &__inner {
-      padding: 10%;
-      font-size: 0.16rem;
-      &__menu {
-        flex-direction: column;
-        &__nav {
-          width: 95%;
-          margin: 0 auto;
-          height: 50%;
-          &__top {
-            margin-top: 0;
-          }
-          &__list {
-            justify-content: left;
-            width: 100%;
-            margin-top: 14%;
-            margin-left: 0;
-            white-space: nowrap;
-            & li {
-              width: 45%;
-              &:nth-child(n+3) {
-                margin-top: 7%;
-              }
-            }
-          }
-        }
-        &__link {
-          margin-top: 9%;
-          &__item {
-            width: 100%;
-          }
-        }
-      }
-    }
-    &__copy {
+    @include utility.sp {
       margin-top: 0;
       padding: 2% 0;
       font-size: 0.14rem;

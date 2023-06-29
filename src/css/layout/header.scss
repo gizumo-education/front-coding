@@ -11,26 +11,43 @@
   font-size: 16px;
   justify-content: right;
   align-items: center;
+  @include utility.tab {
+    padding: .35rem;
+    font-size: .16rem;
+  }
+  @include utility.sp {
+    padding: .14rem;
+  }
   &__nav {
+    @include utility.tab {
+      width: 60%;
+    }
     &__list {
       display: flex;
-    }
-    &__list__info {
-      white-space: nowrap;
-      padding: 0 30px;
-      border-left: 1px solid black;
-      &:first-child {
-        padding-left: 0;
-        border: none;
+      @include utility.tab {
+        justify-content: center;
+        align-items: center;
       }
-      &:last-child {
-        padding-right: 0;
-        & img {
-          margin-right: 3px;
+      &__info {
+        white-space: nowrap;
+        padding: 0 30px;
+        border-left: 1px solid black;
+        @include utility.tab {
+          padding: 0 .1rem;
         }
-      }
-      & img {
-        vertical-align: middle;
+        &:first-child {
+          padding-left: 0;
+          border: none;
+        }
+        &:last-child {
+          padding-right: 0;
+          & img {
+            margin-right: 3px;
+          }
+        }
+        & img {
+          vertical-align: middle;
+        }
       }
     }
   }
@@ -38,13 +55,30 @@
     display: flex;
     margin-left: 25px;
     text-align: left;
+    @include utility.tab {
+      width: 40%;
+      margin-left: 0;
+    }
+    @include utility.sp {
+      display: none;
+    }
     &__info {
       margin-left: 15px;
+      @include utility.tab {
+        width: 30%;
+        margin-left: .1rem;
+      }
       &:nth-child(1) {
         position: relative;
         margin-left: 0;
+        @include utility.tab {
+          width: 40%;
+        }
         & a {
           width: 160px;
+          @include utility.tab {
+            width: 100%;
+          }
           &::before {
             content: '';
             display: inline-block;
@@ -54,12 +88,19 @@
             background: url(../img/icon/heart.png) no-repeat;
             background-size: contain;
             vertical-align: middle;
+            @include utility.tab {
+              width: .2rem;
+              height: .2rem;
+            }
           }
         }
       }
       &:nth-child(2) {
         position: relative;
         & a {
+          @include utility.tab {
+            width: 100%;
+          }
           &::before {
             content: '';
             display: inline-block;
@@ -69,12 +110,19 @@
             background: url(../img/icon/clock.png) no-repeat;
             background-size: contain;
             vertical-align: middle;
+            @include utility.tab {
+              width: .2rem;
+              height: .2rem;
+            }
           }
         }
       }
       &:nth-child(3) {
         position: relative;
         & a {
+          @include utility.tab {
+            width: 100%;
+          }
           &::before {
             content: '';
             display: inline-block;
@@ -84,6 +132,10 @@
             background: url(../img/icon/history.png) no-repeat;
             background-size: contain;
             vertical-align: middle;
+            @include utility.tab {
+              width: .2rem;
+              height: .2rem;
+            }
           }
         }
       }
@@ -95,90 +147,30 @@
   &__hamburger {
     display: none;
     position: relative;
-    width: 50px;
-    height: 38px;
-    padding: 10px;
+    width: .5rem;
+    height: .38rem;
+    padding: .1rem;
     & span {
       position: absolute;
       top: 15%;
       left: 50%;
-      width: 50px;
-      height: 6px;
+      width: .5rem;
+      height: .06rem;
       background: utility.$black;
       border-radius: 10px;
-      transition: all 0.2s;
+      transition: all .2s;
       &:nth-of-type(1) {
         transform: translate(-50%, -100%);
       }
       &:nth-of-type(2) {
-        margin-top: 16px;
+        margin-top: .16rem;
         transform: translate(-50%, -100%);
       }
       &:nth-of-type(3) {
-        margin-top: 32px;
+        margin-top: .32rem;
         transform: translate(-50%, -100%);
       }
     }
   }
 }
 
-@include utility.tab {
-  .l-header {
-    padding: 2.5%;
-    font-size: 0.16rem;
-    &__nav {
-      width: 60%;
-      &__list {
-        justify-content: center;
-      }
-      &__list__info {
-        padding: 0 4%;
-      }
-    }
-    &__link {
-      width: 40%;
-      margin-left: 0;
-      &__info {
-        width: 30%;
-        margin-left: 3%;
-        &:nth-child(1) {
-          width: 40%;
-          & a {
-            width: 100%;
-            &::before {
-              width: 0.2rem;
-              height: 0.2rem;
-            }
-          }
-        }
-        &:nth-child(2) {
-          & a {
-            width: 100%;
-            &::before {
-              width: 0.2rem;
-              height: 0.2rem;
-            }
-          }
-        }
-        &:nth-child(3) {
-          & a {
-            width: 100%;
-            &::before {
-              width: 0.2rem;
-              height: 0.2rem;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@include utility.sp {
-  .l-header {
-    padding: 4%;
-    &__link {
-      display: none;
-    }
-  }
-}
