@@ -2,9 +2,17 @@
 //下のフォーム部分のpaddingだけ変えたいためのスタイル
 
 .u-padding {
-  width: 1180px;
   height: 240px;
   background-color: utility.$white;
   margin: 150px auto 0;
   text-align: center;
+  @include utility.tab {
+    height: 2.4rem;
+    margin: 1.5rem auto 0;
+  }
+  @include utility.sp {
+    width: 100%;
+    height: 2.4rem;
+    margin-top: 0.6rem;
+  }
 }

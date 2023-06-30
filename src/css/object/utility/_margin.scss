@@ -3,24 +3,51 @@
 
 .u-margin-feature {
   margin-top: 26px;
+  @include utility.tab {
+    margin-top: 0.26rem;
+  }
 }
 
 .u-margin-flow-img-search {
   margin-top: 20px;
+  @include utility.tab {
+    margin-top: 0.2rem;
+  }
+  @include utility.sp {
+    margin-top: 0;
+  }
 }
 
 .u-margin-flow-img-offer {
   margin-top: 7px;
+  @include utility.tab {
+    margin-top: 0.07rem;
+  }
+  @include utility.sp {
+    margin-top: 0;
+  }
 }
 
 .u-margin-flow-name {
   margin-top: 20px;
+  @include utility.tab {
+    margin-top: 0.2rem;
+  }
 }
 
 .u-margin-flow-name-apply {
   margin-top: 38px;
+  @include utility.tab {
+    margin-top: 0.38rem;
+  }
 }
 
 .u-margin-flow-detail-entry {
   margin-top: 18px;
+  @include utility.tab {
+    margin-top: 0.18rem;
+  }
+  @include utility.sp {
+    margin-top: 0;
+  }
 }

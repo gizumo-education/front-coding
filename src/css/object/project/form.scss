@@ -1,24 +1,61 @@
 @use '../../object/utility/utility.scss';
 //フォーム部分のスタイルをまとめたもの。
 .p-form {
-  width: 1180px;
   height: 240px;
   background-color: utility.$white;
-  margin: 60px auto 0;
+  margin-top: 60px;
   text-align: center;
+  @include utility.tab {
+    width: 100%;
+    height: 2.4rem;
+    margin-top: 0.6rem;
+  }
+  @include utility.sp {
+    width: 100%;
+    height: 2.4rem;
+    margin-top: 0.25rem;
+  }
   &-parts {
+    width: 1180px;
     height: 240px;
     background-color: utility.$light-blue;
     border-radius: 10px;
     font-size: 0px;
     padding: 40px;
+    margin: 0 auto;
+    @include utility.tab {
+      width: 11.8rem;
+      height: 2.4rem;
+      border-radius: 0.1rem;
+      padding: 0.4rem;
+    }
+    @include utility.sp {
+      width: 3.7rem;
+      height: 2.4rem;
+      padding: 0.15rem 0.25rem 0.2rem;
+      margin: 0 auto;
+    }
     &-title {
       font-size: 25px;
       font-weight: utility.$bold;
+      @include utility.tab {
+        font-size: 0.25rem;
+      }
+      @include utility.sp {
+        font-size: 0.22rem;
+      }
     }
     &-description {
       font-size: 20px;
       margin: 20px auto 28px;
+      @include utility.tab {
+        font-size: 0.2rem;
+        margin: 0.2rem auto 0.28rem;
+      }
+      @include utility.sp {
+        font-size: 0.14rem;
+        margin: 0.16rem auto 0;
+      }
     }
     &-selects {
       display: flex;
@@ -26,6 +63,12 @@
     &-select {
       margin-left: 15px;
       position: relative;
+      @include utility.tab {
+        margin-left: 0.15rem;
+      }
+      @include utility.sp {
+        margin-left: 0.1rem;
+      }
       &:first-child {
         margin-left: 0;
       }
@@ -38,6 +81,17 @@
         position: absolute;
         top: 40%;
         right: 5%;
+        @include utility.tab {
+          border-left: 0.1rem solid transparent;
+          border-right: 0.1rem solid transparent;
+          border-bottom: 0.1rem solid utility.$red;
+        }
+        @include utility.sp {
+          border-left: 0.07rem solid transparent;
+          border-right: 0.07rem solid transparent;
+          border-bottom: 0.07rem solid utility.$red;
+          top: 60%;
+        }
       }
     }
     &-select-area {
@@ -48,6 +102,22 @@
       font-size: 18px;
       border: 1px solid utility.$cherry-red;
       padding: 17px 0 17px 15px;
+      @include utility.tab {
+        width: 2rem;
+        height: 0.6rem;
+        border-radius: 0.1rem;
+        font-size: 0.18rem;
+        border: 0.01rem solid utility.$cherry-red;
+        padding: 0.17rem 0 0.17rem 0.15rem;
+      }
+      @include utility.sp {
+        width: 1rem;
+        height: 0.3rem;
+        font-size: 0.12rem;
+        border-radius: 0.05rem;
+        padding: 0.06rem 0 0.07rem 0.08rem;
+        margin-top: 0.13rem;
+      }
     }
     &-input {
       width: 300px;
@@ -58,14 +128,65 @@
       border: 1px solid utility.$cherry-red;
       margin-left: 15px;
       padding: 17px 0 17px 10px;
+      @include utility.tab {
+        width: 3rem;
+        height: 0.6rem;
+        font-size: 0.18rem;
+        line-height: 0.26rem;
+        border-radius: 0.1rem;
+        border: 0.01rem solid utility.$cherry-red;
+        margin-left: 0.15rem;
+        padding: 0.17rem 0 0.17rem 0.1rem;
+      }
+      @include utility.sp {
+        width: 3.19rem;
+        height: 0.29rem;
+        font-size: 0.14rem;
+        border-radius: 0.05rem;
+        padding: 0.04rem 0 0.04rem 0.06rem;
+        margin-top: 0.16rem;
+        margin-left: 0;
+        line-height: 0.25rem;
+      }
     }
     &-button {
       width: 140px;
       height: 60px;
       border-radius: 30px;
-      font-size: 18px;
       font-weight: utility.$bold;
       margin-left: 15px;
+      @include utility.tab {
+        width: 1.4rem;
+        height: 0.6rem;
+        border-radius: 0.3rem;
+        font-size: 0.18rem;
+        margin-left: 0.15rem;
+      }
+      @include utility.sp {
+        width: 1.6rem;
+        height: 0.4rem;
+        margin: 0.2rem auto 0;
+        font-size: 0.18rem;
+        text-align: left;
+        border-radius: 0.3rem;
+      }
+      &-img {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        @include utility.tab {
+          width: 0.3rem;
+          height: 0.3rem;
+          margin-right: 0.05rem;
+        }
+        @include utility.sp {
+          width: 0.18rem;
+          height: 0.18rem;
+          margin-left: 0.13rem;
+          margin-right: 0.14rem;
+          vertical-align: bottom;
+        }
+      }
     }
   }
 }
