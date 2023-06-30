@@ -8,7 +8,7 @@
     text-align: center;
     position: relative;
     & h2 {
-      text-align-last: left;
+      text-align: left;
     }
     &__list {
       display: flex;
@@ -16,6 +16,9 @@
       justify-content: space-between;
       margin-top: 25px;
       font-size: 14px;
+      & img {
+        border-radius: 10px;
+      }
       & figcaption {
         width: 95%;
         margin-top: 8px;
@@ -33,6 +36,7 @@
         text-align: center;
         width: 60px;
         line-height: 1.5;
+        white-space: nowrap;
         margin-right: 10px;
         background: utility.$lightPink;
       }
@@ -42,8 +46,93 @@
       align-items: center;
       justify-content: center;
       width: 360px;
-      height: 60px;
       margin: 60px auto 0;
+    }
+  }
+}
+
+@include utility.tab {
+  .p-recruit {
+    margin-top: 5%;
+    &__inner {
+      padding: 6% 0;
+      &__list {
+        width: 100%;
+        margin-top: 3%;
+        font-size: 0.14rem;
+        & li {
+          width: 24%;
+          & figcaption {
+            width: 100%;
+            font-size: 0.16rem;
+          }
+        }
+        & p {
+          margin-top: 3%;
+          &:first-of-type {
+            margin-top: 4%;
+          }
+        }
+      }
+      &__btn {
+        width: 35%;
+        padding: 2%;
+      }
+    }
+  }
+}
+
+@include utility.sp {
+  .p-recruit {
+    margin-top: 5%;
+    &__inner {
+      padding: 9% 0 16%;
+      & h2 {
+        font-weight: bold;
+        text-align: center;
+      }
+      &__list {
+        justify-content: center;
+        margin-top: 9%;
+        font-size: 0.14rem;
+        & figure {
+          width: 100%;
+          & figcaption {
+            font-weight: bold;
+            width: 100%;
+            margin-top: 2%;
+            font-size: 0.16rem;
+          }
+          & img {
+            width: 100%;
+          }
+        }
+        & p {
+          margin-top: 1%;
+          &:first-of-type {
+            margin-top: 3%;
+          }
+        }
+        & li {
+          &:nth-child(2) {
+            display: none;
+          }
+          &:nth-child(3) {
+            display: none;
+          }
+          &:nth-child(4) {
+            display: none;
+          }
+        }
+        & span {
+          width: 15%;
+          margin-right: 5%;
+        }
+      }
+      &__btn {
+        width: 100%;
+        margin-top: 14%;
+      }
     }
   }
 }

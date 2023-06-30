@@ -19,6 +19,10 @@ body {
   line-height: 1;
 }
 
+h2 {
+  font-size: 25px;
+}
+
 @include base.tab {
   body {
     font-size: 0.1rem;
@@ -26,6 +30,9 @@ body {
   html {
     font-size: calc(100vw / 12);
     // 1200pxの画面幅で見たときにfont-sizeが100pxになるように計算
+  }
+  h2 {
+    font-size: 0.25rem;
   }
 }
 
@@ -36,6 +43,9 @@ body {
   html {
     font-size: calc(100vw / 4);
     // 400pxの画面幅で見たときにfont-sizeが100pxになるように計算
+  }
+  h2 {
+    font-size: 0.25rem;
   }
 }
 
@@ -49,15 +59,15 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  transition: .3s;
   &:hover {
     opacity: .8;
-    transition: .3s;
+  }
+  &:visited {
+    color: base.$black;
   }
 }
 
-h2 {
-  font-size: 25px;
-}
 
 .is-pc {
   @include base.pc {

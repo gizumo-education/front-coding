@@ -3,3 +3,14 @@
 .l-main {
   padding-top: 100px;
 }
+@include utility.tab {
+  .l-main {
+    padding-top: 9%;
+  }
+}
+
+@include utility.sp {
+  .l-main {
+    padding-top: 14%;
+  }
+}

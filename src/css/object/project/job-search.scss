@@ -14,24 +14,123 @@
     display: flex;
     margin-top: 25px;
     &__select {
-      margin-left: 16px;
-      position: relative;
-      &:first-child {
-        margin-left: 0;
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        top: 60%;
-        left: 88%;
-        transform: translate(-50%, -50%) rotate(90deg);
-        border-width: 10px;
-        border-style: solid;
-        border-color: transparent transparent transparent  utility.$magenta;
+      display: flex;
+      &__btn {
+        margin-left: 16px;
+        position: relative;
+        &:first-child {
+          margin-left: 0;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: 60%;
+          left: 88%;
+          transform: translate(-50%, -50%) rotate(90deg);
+          border-width: 10px;
+          border-style: solid;
+          border-color: transparent transparent transparent utility.$magenta;
+        }
       }
     }
-    &__btn {
+    &__input {
+      margin-left: 16px;
+    }
+    & button {
+      width: 140px;
       margin-left: 15px;
+      padding-top: 5px;
+      position: relative;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        transform: translate(-10%, -5%);
+        background: url(../img/icon/search.png) no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@include utility.tab {
+  .p-job-search {
+    margin-top: 5%;
+    padding: 3% 1%;
+    &__text {
+      font-size: 0.2rem;
+    }
+    &__form {
+      justify-content: space-between;
+      &__select {
+        width: 55%;
+        &__btn {
+          width: 33%;
+        }
+      }
+      &__input {
+        width: 26%;
+        margin-left: 0;
+      }
+      &__btn {
+        width: 15%;
+        & button {
+          width: 100%;
+          margin-left: 0;
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@include utility.sp {
+  .p-job-search {
+    margin-top: 5%;
+    padding: 5%;
+    & h2 {
+      font-size: 0.22rem;
+    }
+    &__text {
+      margin-top: 5%;
+      font-size: 0.14rem;
+    }
+    &__form {
+      width: 100%;
+      display: block;
+      flex-wrap: wrap;
+      margin-top: 5%;
+      &__select {
+        justify-content: space-between;
+        margin-left: 0;
+        &:first-child {
+          margin-left: 0;
+        }
+        &__btn {
+          width: 35%;
+          margin-left: 2%;
+          &::after {
+            border-width: 0.7em;
+          }
+        }
+      }
+      &__input {
+        margin-top: 5%;
+        margin-left: 0;
+      }
+      & button {
+        width: 50%;
+        height: auto;
+        margin: 5% auto 0;
+        padding: 2%;
+        &::before {
+          width: 1em;
+          height: 1em;
+          transform: translate(-90%, -10%);
+        }
+      }
     }
   }
 }

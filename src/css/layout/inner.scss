@@ -4,3 +4,15 @@
   margin: 0 auto;
   width: 1180px;
 }
+
+@include utility.tab {
+  .l-inner {
+    width: 95%;
+  }
+}
+
+@include utility.sp {
+  .l-inner {
+    width: 95%;
+  }
+}
