@@ -1,0 +1,70 @@
+@use '../../object/utility/utility.scss';
+
+.p-introduction {
+  padding: 65px 0 65px 0;
+  background-color: utility.$skyblue;
+  
+  &__title {
+    font-size: 25px;
+  }
+  
+  &__list {
+
+    &__group {
+      margin-top: 40px;
+
+      &__child {
+        display: inline-flex;
+        flex-direction: column;
+        margin-left: 15px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      
+      &__caption {
+        width: 280px;
+        font-size: 16px;
+        margin-top: 10px;
+        line-height: 1.3;
+        word-break: break-all;
+
+      }
+      &__detail {
+        margin-top: 7px;
+
+        & > p {
+          font-size: 14px;
+          margin-top: 5px;
+  
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+
+        & span {
+          margin-right: 7px;
+          background-color: utility.$lightpink;
+          display: inline-flex;
+          height: 20px;
+          width: 60px;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    img {
+      height: 200px;
+      width: 280px;
+      border-radius: 10px;
+    }
+
+    &__link {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

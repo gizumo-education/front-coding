@@ -1,0 +1,63 @@
+@use '../../object/utility/utility.scss';
+
+.p-feature {
+  padding-top: 105px;
+  text-align: center;
+
+  &__list {
+    
+    & > h2 {
+      font-size: 25px;
+      font-weight: utility.$bold;
+      color: utility.$black;
+    }
+    
+    &__group {
+      padding-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      &__child {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        height: 180px;
+        width: 570px;
+        background-color: utility.$pink;
+        border-radius:10px;
+        padding-top: 40px;
+        margin-left: 40px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:nth-child(2n+1) {
+          margin-left: 0;
+        }
+
+        &:nth-child(n+3) {
+          margin-top: 40px;
+        }
+        
+        &__title {
+          display: inline-flex;
+          font-size: 24px;
+          font-weight: utility.$bold;
+          color: utility.$mazenta;
+        }
+
+        &__text {
+          font-size: 14px;
+          color: utility.$black;
+          margin-top: 40px;
+          line-height: 1.5;
+          word-break: keep-all;
+          overflow-wrap: break-word;
+        }
+      }
+    }
+  }
+}

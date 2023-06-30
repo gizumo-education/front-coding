@@ -1,0 +1,37 @@
+@use '../../object/utility/utility.scss';
+
+.p-subvisual {
+
+  &__content {
+    position: relative;
+    background-color: utility.$black;
+    
+    img {
+      height: 300px;
+      width: auto;
+      opacity: 0.6;
+      display: block;
+    }
+    
+    &__text {
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      display: inline-flex;
+      text-align: center;
+      flex-direction: column;
+
+      & > h2 {
+        font-weight: utility.$bold;
+        font-size: 25px;
+        color: utility.$white;
+        margin-top: 20px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

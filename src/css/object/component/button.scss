@@ -1,2 +1,57 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-btn__blue {
+  background-color: utility.$blue;
+  padding: 14px 0 14px 0;
+  border-radius:10px;
+  margin-left: 15px;
+  height: 50px;
+  width: 140px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: .3s;
+
+  &:first-child {
+    width: 160px;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.c-btn__pink {
+  background-color: utility.$mazenta;
+  height: 60px;
+  color: utility.$white;
+  font-size: 18px;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: .3s;
+  
+  &.search {
+    width: 140px;
+  }
+
+  &.introduction {
+    width: 360px;
+  }
+
+  &.support {
+    width: 420px;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}
