@@ -4,11 +4,16 @@
   width: 100%;
   padding-top: 100px;
   text-align: center;
-  background-color: utility.$keyvisualBackground;
+  //background-color: utility.$keyvisualBackground;
 
   &__image {
     position: relative;
     // mix-blend-mode: soft-light;
+    background-color: utility.$keyvisualBackground;
+    
+    &__sp {
+      display: none;
+    }
 
     &__inner {
       position: absolute;
@@ -20,6 +25,7 @@
         margin-top: 40px;
         & > h1 {
           font-size: 50px;
+          line-height: 65px;
           font-weight: utility.$bold;
           color: utility.$white;
           white-space: nowrap;
@@ -28,7 +34,7 @@
         & > h2 {
           width: 50%;
           margin: 55px auto 0 auto;
-          padding: 5px 42px 6px;
+          padding: 5px 41px 6px;
           font-size: 20px;
           color: utility.$green;
           background-color: utility.$white;
@@ -54,6 +60,95 @@
       width: 100%;
       height: auto;
       position: relative;
+    }
+  }
+}
+
+//レスポンシブTAB
+@media (min-width: 768px) and (max-width: 1200px) {
+  .p-keyvisual {
+    &__image {
+      & > img {
+        width: 80%;
+      }
+      &__inner {
+        width: 50%;
+        height: 80%;
+
+        & > img {
+          width: 45%;
+        }
+
+        &__text {
+          margin-top: 25px;
+          & > h1 {
+            font-size: 35px
+          }
+
+          & > h2 {
+            width: 60%;
+            margin-top: 25px;
+            font-size: 15px;
+            
+            & > span {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//レスポンシブSP
+@media (max-width: 767px) {
+  .p-keyvisual {
+    padding-top: 70px;
+    &__image{
+
+      &__pc {
+        display: none;
+      }
+
+      &__sp {
+        display: block!important;
+      }
+
+      &__inner {
+        top: 20%;
+        left: 60%;
+        width: 75%;
+
+        & > img {
+          width: 45%;
+          height: 45%;
+        }
+
+        &__text {
+          margin-top: 15px;
+          & > h1 {
+            font-size: 17px;
+            line-height: 22px;
+          }
+
+          & > h2 {
+            width: 70%;
+            margin-top: 18px;
+            font-size: 8px;
+            line-height: 11px;
+            padding: 4px 23px 3px 23px;
+
+            & > span {
+              font-size: 16px;
+              line-height: 23px;
+            }
+          }
+        }
+      }
+    }
+
+    &__second {
+      font-weight: utility.$regular;
     }
   }
 }

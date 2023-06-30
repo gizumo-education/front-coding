@@ -28,12 +28,30 @@
         <a class="c-blue-button l-header__buttons__button" href=""><img src="img/icon/list.png" alt="検索履歴">検索履歴</a>
       </div>
     </nav>
+
+    <!--トグルメニュー-->
+    <div class="l-header__toggle">
+      <input id="drawer_input" class="drawer_hidden" type="checkbox">
+      <label for="drawer_input" class="drawer_open">
+        <span></span>
+      </label>
+      <nav class="nav_content">
+        <ul class="nav_list">
+          <li><a href="">トップ</a></li>
+          <li><a href="">新着求人</a></li>
+          <li><a href="">4つの特徴</a></li>
+          <li><a href="">転職までの流れ</a></li>
+          <li><a href="">転職お役立ちコンテンツ</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="l-main">
     <div class="p-keyvisual">
       <div class="p-keyvisual__image">
-        <img src="img/picture/p-keyvisual.jpg" alt="医療事務求人を探すならギズジョブ">
+        <img class="p-keyvisual__image__pc" src="img/picture/p-keyvisual.jpg" alt="医療事務求人を探すならギズジョブ">
+        <img class = "p-keyvisual__image__sp" src="img/picture/p-keyvisual-sp.jpg" alt="医療事務求人を探すならギズジョブSP用">
         <div class="p-keyvisual__image__inner">
           <img src="img/icon/keyvisual.png" alt="検索サイトランキングNo1">
           <div class="p-keyvisual__image__inner__text">
@@ -100,7 +118,8 @@
         </div>
         <div class="p-news-images__group">
           <a class="p-news-images__image" href="">
-            <img src="img/picture/slide1.jpg" alt="求人画像１">
+            <img class="p-news-images__image__pc" src="img/picture/slide1.jpg" alt="求人画像１">
+            <img class="p-news-images__image__sp" src="img/picture/slide1-sp.jpg" alt="求人画像SP1">
             <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
             <dl>
               <div class="p-news-images__detail">
@@ -172,6 +191,7 @@
             </dl>
           </a>
         </div>
+
         <a class="p-news-images__button c-pink-button" href="">
           新着求人一覧をもっと見る
         </a>

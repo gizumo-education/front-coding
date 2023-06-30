@@ -1,5 +1,12 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+.c-blue-button {
+  border-radius:10px;
+  background-color: utility.$h-Button;
+  color: utility.$white;
+  text-align: center;
+}
+
 .c-pink-button {
   border-radius: 30px;
   border: 1px solid utility.$pink;
@@ -7,4 +14,10 @@
   background-color: utility.$pink;
   font-size: 18px;
   text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .c-pink-button {
+    font-size: 18px * 0.8;
+  }
 }

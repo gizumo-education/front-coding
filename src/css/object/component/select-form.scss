@@ -6,7 +6,6 @@
   border-radius: 10px;
   padding: 17px 0 17px 15px;
   line-height: 26px;
-  margin-left: 15px;
   border: 1px solid utility.$pink;
   appearance: none;
   -webkit-appearance: none;
@@ -20,6 +19,35 @@
     width: 300px;
     &:focus {
       outline: 2px solid utility.$pink;
+    }
+  }
+}
+
+//レスポンシブTAB
+@media (min-width: 768px) and (max-width: 1200px){
+  .c-select-form {
+    font-size: 18px * 0.7;
+    width: 160px;
+    height: 80%;
+    padding: 14px 0 14px 12px;
+
+    &.long {
+      width: 240px;
+    }
+  }
+}
+
+
+//レスポンシブSP
+@media (max-width: 768px) {
+  .c-select-form {
+    width: 100px;
+    padding: 6px 0 7px 8px;
+    font-size: 12px;
+    line-height: 17px;
+    
+    &.long {
+      width: 320px;
     }
   }
 }

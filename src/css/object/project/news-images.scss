@@ -18,16 +18,20 @@
     flex-wrap: nowrap;
     justify-content: center;
 
-    &> a {
+    & > a {
       transition: .3s;
     }
   }
 
   &__image {
-    margin-left: 25px;
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-top: 25px;
     &:first-child {
       margin-left: 0;
+    }
+
+    &__sp {
+      display: none;
     }
 
     & > img {
@@ -69,5 +73,82 @@
     margin: 60px auto 0 auto;
     font-weight: utility.$bold;
     transition: .3s;
+  }
+}
+
+//レスポンシブTAB
+@media (min-width: 768px) and (max-width: 1200px) {
+  .p-news-images {
+    &__image {
+      width: 220px;
+
+      & > p {
+        width: 220px;
+        font-size: 14px * 0.8;
+        line-height: 22px * 0.8;
+      }
+    }
+
+    &__detail {
+      font-size: 14px * 0.8;
+      & > dt {
+        font-size: 14px * 0.8;
+        width: 48px;
+        height: 21px * 0.8;
+      }
+    }
+
+    &__button {
+      width: 360px * 0.9;
+    }
+  }
+}
+
+//レスポンシブSP
+@media (max-width: 767px) {
+  .p-news-images {
+    text-align: center;
+    padding: 30px 0 60px 0;
+
+    &__title {
+      font-weight: utility.$bold;
+    }
+
+    &__group {
+      display: block;
+
+    }
+    &__image{
+
+      &:nth-child(n + 2) {
+        display: none;
+      }
+      &__pc {
+        display: none;
+      }
+      &__sp {
+        display: block;
+      }
+
+      & > p {
+        width: 100%;
+        text-align: start;
+        font-weight: utility.$bold;
+      }
+    }
+
+    &__detail {
+      margin-top: 12px;
+      font-weight: utility.$regular;
+      
+      & > dd {
+        margin-left: 21px;
+        line-height: 20px;
+      }
+    }
+
+    &__button {
+      margin-top: 45px;
+    }
   }
 }
