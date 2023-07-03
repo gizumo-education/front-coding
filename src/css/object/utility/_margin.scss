@@ -1,5 +1,8 @@
 @use '../../object/utility/utility.scss';
 //細かなmarginを使うスタイル。
+.u-margin-slide-menu {
+  margin-top: 0;
+}
 
 .u-margin-feature {
   margin-top: 26px;

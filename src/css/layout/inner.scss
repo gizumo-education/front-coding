@@ -1,7 +1,7 @@
 @use '../object/utility/utility.scss';
 // innerのスタイルを記述するファイル
 .l-inner {
-  height: 4150px;
+  height: auto;
   width: 100%;
   padding-top: 100px;
   @include utility.tab {
@@ -10,7 +10,7 @@
   }
   @include utility.sp {
     width: 100%;
-    height: 48.3rem;
+    height: auto;
     padding-top: 0.7rem;
   }
 }

@@ -5,11 +5,14 @@
   width: 100%;
   height: 300px;
   background-color: utility.$sky-blue;
+  margin-top: 200px;
   @include utility.tab {
     height: 3rem;
+    margin-top: 2rem;
   }
   @include utility.sp {
     height: 4.5rem;
+    margin-top: 1rem;
     padding-top: 0.38rem;
   }
   &-menu {
