@@ -201,6 +201,7 @@
     transform: translateX(100%);
     transition: .3s;
     &-link {
+      width: 100%;
       opacity: 1;
       color: utility.$white;
       font-size: 0.22rem;
