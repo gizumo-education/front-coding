@@ -35,9 +35,11 @@
     margin-top: 25px;
     @include utility.tab {
       justify-content: space-between;
+      width: 100%;
     }
     @include utility.sp {
       display: block;
+      width: 100%;
       flex-wrap: wrap;
       margin-top: 0.2rem;
     }
@@ -47,6 +49,7 @@
         width: 55%;
       }
       @include utility.sp {
+        width: 100%;
         justify-content: space-between;
         margin-left: 0;
         &:first-child {

@@ -62,6 +62,7 @@
           }
         }
         & figure {
+          margin: 0 auto;
           & img {
             border-radius: 20px;
             @include utility.sp {
@@ -151,8 +152,8 @@
       margin-right: .2rem;
     }
     @include utility.sp {
-      width: 3.72rem;
-      margin: 0;
+      width: 3.7rem;
+      margin-right: 0;
     }
   }
 }

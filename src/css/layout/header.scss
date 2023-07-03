@@ -12,7 +12,7 @@
   justify-content: right;
   align-items: center;
   @include utility.tab {
-    padding: .35rem;
+    padding: .25rem;
     font-size: .16rem;
   }
   @include utility.sp {
@@ -172,7 +172,7 @@
       }
     }
   }
-  .sp-menu {
+  &__sp-menu {
     width: 100%;
     height: 100%;
     padding: 57px 60px;
@@ -193,19 +193,19 @@
       color: utility.$white;
     }
   }
-  .show-menu {
-    right: 0;
+}
+.show-menu {
+  right: 0;
+}
+.is-active {
+  & span:nth-child(1) {
+    transform: translate(-60%, 150%) rotate(45deg);
   }
-  .is-active {
-    & span:nth-child(1) {
-      transform: translate(-60%, 150%) rotate(45deg);
-    }
-    & span:nth-child(2) {
-      opacity: 0;
-    }
-    & span:nth-child(3) {
-      transform: translate(-60%, -400%) rotate(-45deg);
-    }
+  & span:nth-child(2) {
+    opacity: 0;
+  }
+  & span:nth-child(3) {
+    transform: translate(-60%, -400%) rotate(-45deg);
   }
 }
 .scroll-prevent {

@@ -16,11 +16,11 @@ $('a[href^="#"]').click(function () {
 
 $('.l-header__hamburger').on('click', function(){
   $(this).toggleClass('is-active');
-  $('.sp-menu').toggleClass('show-menu');
+  $('.l-header__sp-menu').toggleClass('show-menu');
   $('body').toggleClass('scroll-prevent');
 });
 
-$('.sp-menu ul li a').click(function() {
+$('.l-header__sp-menu ul li a').click(function() {
   $('.l-header__hamburger').trigger('click');
 });
 
