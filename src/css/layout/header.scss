@@ -164,6 +164,7 @@
       left: 0;
       background-color: utility.$black;
       border-radius: 0.1rem;
+      transition: .3s;
       &:nth-child(1) {
         top: 0;
       }
@@ -175,6 +176,40 @@
         top: 100%;
         transform: translateY(-100%);
       }
+      &.active:nth-child(1) {
+        transform: rotate(45deg);
+        top: 50%;
+      }
+      &.active:nth-child(2) {
+        opacity: 0;
+      }
+      &.active:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 50%;
+      }
+    }
+  }
+  &-slide-menu {
+    background-color: utility.$black;
+    opacity: 0.8;
+    position: fixed;
+    width:100%;
+    height: auto;
+    top: 0.7rem;
+    left: 0;
+    padding: 0.57rem 0 2.35rem 0.6rem;
+    transform: translateX(100%);
+    transition: .3s;
+    &-link {
+      opacity: 1;
+      color: utility.$white;
+      font-size: 0.22rem;
+      line-height: 0.22rem;
+      font-weight: utility.$bold;
+      margin-top: 0.38rem;
+    }
+    &.active {
+      transform: translateX(0);
     }
   }
 }
