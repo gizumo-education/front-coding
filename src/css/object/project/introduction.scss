@@ -12,11 +12,13 @@
 
     &__group {
       margin-top: 40px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
 
       &__child {
         display: inline-flex;
         flex-direction: column;
-        margin-left: 15px;
 
         &:first-child {
           margin-left: 0;
@@ -51,6 +53,60 @@
           width: 60px;
           justify-content: center;
           align-items: center;
+        }
+      }
+
+      &__cilcle {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        align-content: center;
+        background-color: utility.$white;
+        opacity: .7;
+        transition: .3s;
+        
+        &.back {
+          position: absolute;
+          top: 70px;
+          left: 0;
+
+          &:hover {
+            opacity: .8;
+          }
+  
+          &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 30%;
+            left: 40%;
+            border: 1px solid;
+            border-color: transparent transparent utility.$black utility.$black;
+            transform: rotate(45deg);
+          }
+        }
+
+        &.go {
+          position: absolute;
+          top: 70px;
+          right: 0;
+
+          &:hover {
+            opacity: .8;
+          }
+  
+          &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 30%;
+            left: 30%;
+            border: 1px solid;
+            border-color: utility.$black utility.$black transparent transparent;
+            transform: rotate(45deg);
+          }
         }
       }
     }

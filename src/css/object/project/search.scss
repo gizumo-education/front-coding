@@ -17,11 +17,11 @@
     background-color: utility.$saxe;
     border-radius:10px;
 
-    & > h1 {
+    & > h2 {
       font-size: 25px;
       font-weight: utility.$bold;
     }
-    & > h2 {
+    & > h3 {
       font-size: 20px;
       margin-top: 25px;
     }
@@ -71,7 +71,6 @@
     &__input {
       display: inline-flex;
       align-items: center;
-      // position: relative;
       margin-left: 15px;
 
       & input {
