@@ -62,17 +62,13 @@
           }
         }
         & figure {
-          @include utility.sp {
-            width: 100%;
-          }
           & img {
-            border-radius: 10px;
+            border-radius: 20px;
             @include utility.sp {
               width: 100%;
             }
           }
           & figcaption {
-            width: 95%;
             margin-top: 8px;
             font-size: 16px;
             line-height: 1.5;
@@ -139,5 +135,78 @@
         padding: .2rem;
       }
     }
+  }
+}
+
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+  .slick-slide {
+    width: 280px;
+    margin-right: 20px;
+    @include utility.tab {
+      width: 2.65rem;
+      margin-right: .2rem;
+    }
+    @include utility.sp {
+      width: 3.72rem;
+      margin: 0;
+    }
+  }
+}
+.slick-arrow {
+  @include utility.inputInit;
+  position: absolute;
+  top: 30%;
+  width: 60px;
+  height: 60px;
+  background-color: utility.$translucentWhite;
+  border-radius: 50%;
+  z-index: 98;
+  @include utility.tab {
+    width: .6rem;
+    height: .6rem;
+  }
+    @include utility.sp {
+      width: .42rem;
+      height: .42rem;
+    }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 55%;
+    border-right: 1px solid utility.$black;
+    border-top: 1px solid utility.$black;
+    @include utility.tab {
+      width: .2rem;
+      height: .2rem;
+    }
+    @include utility.sp {
+      width: .1rem;
+      height: .1rem;
+    }
+  }
+}
+.slick-prev {
+  left: 0;
+  @include utility.sp {
+    top: 35%;
+  }
+  &::after {
+    transform: translate(-40%, -50%) rotate(-135deg);
+  }
+}
+.slick-next {
+  right: 0;
+  @include utility.sp {
+    top: 35%;
+  }
+  &::after {
+    transform: translate(-85%, -50%) rotate(45deg);
   }
 }

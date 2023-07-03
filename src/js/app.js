@@ -1,4 +1,5 @@
 import $ from "jquery";
+import 'slick-carousel';
 
 $(function() {
   console.log('環境構築完了');
@@ -23,3 +24,11 @@ $('.sp-menu ul li a').click(function() {
   $('.l-header__hamburger').trigger('click');
 });
 
+$('.p-recruit__inner__list').slick({
+  adaptiveHeight: true,
+  variableWidth: true,
+  prevArrow: '<button type=button class=slick-prev></button>',
+  nextArrow: '<button type=button class=slick-next></button>',
+  speed: 300,
+  slidesToShow: 1,
+});
