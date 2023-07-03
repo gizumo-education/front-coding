@@ -11,7 +11,7 @@ $(function() {
     event.preventDefault();
     var target =$(this).attr("href");
     $('body,html').animate({
-      scrollTop: $(target).offset().top - 70
+      scrollTop: $(target).offset().top - 90
     },
     'swing');
     $('body, .l-header-hamburger-line, .l-header-slide-menu').toggleClass('active');
