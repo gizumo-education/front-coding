@@ -11,7 +11,6 @@
 
     &__guide {
 
-      
       &__top {
         padding-top: 15px;
         font-size: 16px;
@@ -55,10 +54,16 @@
       display: inline-flex;
       flex-direction: column;
   
-      img {
+      &__img {
         width: 320px;
         height: 85px;
         margin-top: 15px;
+        opacity: 1;
+        transition: .3s;
+      
+        &:hover {
+          opacity: .8;
+        }
   
         &:first-child {
           margin-top: 0;
