@@ -98,6 +98,12 @@
           height: 0.85rem;
         }
       }
+
+      &__copyright {
+        height: 0.35rem;
+        font-size: 0.14rem;
+        line-height: 0.35rem;
+      }
     }
   }
 
@@ -113,8 +119,34 @@
       flex-wrap: wrap;
 
       &__link {
-        width: 100%;
+        width: 90%;
+
+        & > h1 {
+          font-size: 0.16rem;
+        }
+  
+        & > ul {
+          margin-top: 0.27rem;
+          & > li {
+            & > a {
+            font-size: 0.16rem;
+            line-height: 0.36rem;
+            }
+          }
+        }
       }
+
+      &__banner {
+        text-align: center;
+        width: 3.22rem;
+        height: 0.85rem;
+      }
+    }
+
+    &__copyright {
+      height: 0.35rem;
+      font-size: 0.14rem;
+      line-height: 0.35rem;
     }
   }
 }

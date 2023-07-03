@@ -26,13 +26,13 @@
 //レスポンシブTAB
 @media (min-width: 768px) and (max-width: 1199px){
   .c-select-form {
-    font-size: 0.18rem;
-    width: 2rem;
+    font-size: 0.14rem;
+    width: 1.6rem;
     padding: 0.17rem 0 0.17rem 0.15rem;
-    line-height: 0.26rem;
+    line-height: 0.24rem;
 
     &.long {
-      width: 3rem;
+      width: 2.6rem;
       height: 0.6rem
     }
   }
