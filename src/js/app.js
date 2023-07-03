@@ -8,7 +8,7 @@ $(function() {
   });
   $('a[href^="#"]').click(function(event) {
     event.preventDefault();
-    var target =$(this).attr("href");
+    const target =$(this).attr("href");
     $('body,html').animate({
       scrollTop: $(target).offset().top - 90
     },
