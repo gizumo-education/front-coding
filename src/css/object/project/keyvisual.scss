@@ -11,6 +11,10 @@
     // mix-blend-mode: soft-light;
     background-color: utility.$keyvisualBackground;
     
+    & > img {
+      width: 85%;
+    }
+
     &__sp {
       display: none;
     }
@@ -20,6 +24,10 @@
       top: 10%;
       left: 65%;
       transform: translate(-50%, 0);
+
+      & > img {
+        width: 50%;
+      }
 
       &__text {
         margin-top: 40px;
@@ -65,33 +73,33 @@
 }
 
 //レスポンシブTAB
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .p-keyvisual {
+    padding-top: 1rem;
+    
     &__image {
-      & > img {
-        width: 80%;
-      }
       &__inner {
-        width: 50%;
-        height: 80%;
-
         & > img {
           width: 45%;
         }
 
         &__text {
-          margin-top: 25px;
+          margin-top: 0.2rem;
+
           & > h1 {
-            font-size: 35px
+            font-size: 0.4rem;
+            line-height: 0.65rem;
           }
 
           & > h2 {
-            width: 60%;
-            margin-top: 25px;
-            font-size: 15px;
-            
+            margin: 0.3rem auto 0 auto;
+            padding: 0.05rem 0.41rem 0.06rem;
+            font-size: 0.2rem;
+            border: 0.01rem solid utility.$green;
+            border-radius: 0.1rem;
+
             & > span {
-              font-size: 30px;
+              font-size: 0.4rem;
             }
           }
         }
@@ -103,8 +111,12 @@
 //レスポンシブSP
 @media (max-width: 767px) {
   .p-keyvisual {
-    padding-top: 70px;
+    padding-top: 0.7rem;
     &__image{
+
+      & > img {
+        width: 100%;
+      }
 
       &__pc {
         display: none;
@@ -125,22 +137,22 @@
         }
 
         &__text {
-          margin-top: 15px;
+          margin-top: 0.15rem;
           & > h1 {
-            font-size: 17px;
-            line-height: 22px;
+            font-size: 0.17rem;
+            line-height: 0.22rem;
           }
 
           & > h2 {
             width: 70%;
-            margin-top: 18px;
-            font-size: 8px;
-            line-height: 11px;
-            padding: 4px 23px 3px 23px;
+            margin-top: 0.18rem;
+            font-size: 0.08rem;
+            line-height: 0.11rem;
+            padding: 0.04rem 0.23rem 0.03rem 0.23rem;
 
             & > span {
-              font-size: 16px;
-              line-height: 23px;
+              font-size: 0.16rem;
+              line-height: 0.23rem;
             }
           }
         }

@@ -18,13 +18,14 @@
   & > h2 {
     padding-top: 20px;
     font-size: 20px;
+    line-height: 28px;
   }
 
   &__form {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding-top: 26px;
+    margin-top: 26px;
     
     &__container {
       position: relative;
@@ -73,32 +74,51 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+//レスポンシブTAB
+@media (min-width: 768px) and (max-width: 1199px) {
   .p-search {
-    width: 80%;
-    padding: 32px;
+    margin-top: 0.6rem;
+    padding: 0.4rem;
+    //width: 85%;
 
     &__title {
-      font-size: 20px;
-
-      & > h2 {
-        font-size: 16px;
-      }
+      font-size: 0.25rem;
+    }
+    & > h2 {
+      font-size: 0.2rem;
+      padding-top: 0.2rem;
+      line-height: 0.28rem;
     }
 
     &__form {
+      margin-top: 0.26rem;
       &__container {
+        margin-left: 0.1rem;
 
         &::before {
           top: 50%;
+          right: 0.15rem;
+          border-top: 0.1rem solid utility.$pink;
+          border-left: 0.1rem solid transparent;
+          border-right: 0.1rem solid transparent;
+          border-bottom: 0.1rem solid transparent;
+        }
+
+        &__input {
+          margin-left: 0.15rem;
         }
 
         &__button {
           height: 80%;
-          width: 140px * 0.8;
+          width: 1.4rem;
+          margin-left: 0.15rem;
+
+          & > img {
+            padding: 0.15rem 0.04rem 0.15rem 0.14rem;
+          }
 
           & > p {
-            margin-top: 16px;
+            margin-top: 0.21rem;
           }
         }
       }
@@ -107,20 +127,20 @@
 }
 
 //レスポンシブSP用
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .p-search {
-    margin-top: 25px;
-    padding: 15px;
+    margin-top: 0.25rem;
+    padding: 0.15rem;
     width: 90%;
 
     &__title {
-      font-size: 22px;
+      font-size: 0.22rem;
     }
 
     & > h2 {
-      padding-top: 16px;
-      font-size: 14px;
-      line-height: 20px;
+      padding-top: 0.16rem;
+      font-size: 0.14rem;
+      line-height: 0.2rem;
     }
 
     &__form{
@@ -129,13 +149,13 @@
       &__container {
         &::before {
           left: 80%;
-          border-top: 7px solid utility.$pink;
-          border-left: 6.5px solid transparent;
-          border-right: 6.5px solid transparent;
+          border-top: 0.07rem solid utility.$pink;
+          border-left: 0.065rem solid transparent;
+          border-right: 0.065rem solid transparent;
         }
 
         &__input {
-          margin-top: 15px;
+          margin-top: 0.15rem;
           flex-wrap: wrap;
         }
 
@@ -145,11 +165,16 @@
         }
 
         &__button {
-          margin:19px auto;
-          width: 160px;
+          margin: 0.19rem auto;
+          width: 1.6rem;
+
+          & > img {
+            width: 20%;
+            padding: 0.11rem 0 0.11rem 0.13rem;
+          }
 
           & > p {
-            margin-left: 14px;
+            margin: 0.1rem 0 0.12rem 0.14rem;
           }
         }
       }

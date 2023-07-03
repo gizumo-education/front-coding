@@ -21,7 +21,7 @@
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 25px;
-    line-height: 36px;;
+    line-height: 36px;
     width: 100%;
     text-align: center;
     z-index: 2;
@@ -34,7 +34,7 @@
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 25px;
-    line-height: 36px;;
+    line-height: 36px;
     width: 100%;
     text-align: center;
     z-index: 2;
@@ -46,11 +46,13 @@
   .u-overlay {
 
     & > h1 {
-      font-size: 20px;
+      font-size: 0.25rem;
+      line-height: 0.36rem;
     }
 
     & > h2 {
-      font-size: 20px;
+      font-size: 0.25rem;
+      line-height: 0.36rem;
     }
   }
   

@@ -24,30 +24,31 @@
 }
 
 //レスポンシブTAB
-@media (min-width: 768px) and (max-width: 1200px){
+@media (min-width: 768px) and (max-width: 1199px){
   .c-select-form {
-    font-size: 18px * 0.7;
-    width: 160px;
-    height: 80%;
-    padding: 14px 0 14px 12px;
+    font-size: 0.18rem;
+    width: 2rem;
+    padding: 0.17rem 0 0.17rem 0.15rem;
+    line-height: 0.26rem;
 
     &.long {
-      width: 240px;
+      width: 3rem;
+      height: 0.6rem
     }
   }
 }
 
 
 //レスポンシブSP
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .c-select-form {
-    width: 100px;
-    padding: 6px 0 7px 8px;
-    font-size: 12px;
-    line-height: 17px;
+    width: 1rem;
+    padding: 0.06rem 0 0.07rem 0.08rem;
+    font-size: 0.12rem;
+    line-height: 0.17rem;
     
     &.long {
-      width: 320px;
+      width: 3.2rem;
     }
   }
 }

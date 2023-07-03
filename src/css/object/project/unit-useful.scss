@@ -77,63 +77,65 @@
 }
 
 //レスポンシブTAB
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .p-unit-useful {
     &__title {
-      font-size: 20px;
+      margin-top: 1.06rem;
+      font-size: 0.25rem;
     }
 
     &__content {
+      margin-top: 0.5rem;
       &__text {
-        width: 380px * 0.8;
-        height: 240px * 0.8;
+        width: 3.8rem;
+        height: 2.4rem;
+        margin-left: 0.2rem;
 
         & > img {
-          width: 380px * 0.8;
-          height: 240px * 0.8;
+          width: 3.8rem;
+          height: 2.4rem;
         }
 
         & > h2 {
-          font-size: 24px * 0.8;
+          font-size: 0.24rem;
         }
 
         & > p {
-          bottom: 25%;
-          font-size: 16px * 0.8;
-          line-height: 23px * 0.8;
+          font-size: 0.16rem;
+          line-height: 0.23rem;
         }
       }
     }
 
     &__button {
-      width: 420px * 0.8;
+      width: 4.2rem;
     }
   }
 }
 
 //レスポンシブSP
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .p-unit-useful{
 
     &__title {
-      margin-top: 61px;
+      margin-top: 0.6rem;
     }
 
     &__content {
-      margin-top: 30px;
+      margin-top: 0.3rem;
       text-align: center;
 
       &__text {
-        margin-top: 17px;
+        margin-top: 0.17rem;
         margin-left: 0;
 
         & > h2 {
-          font-size: 21px;
+          font-size: 0.21rem;
         }
 
         & > p {
-          font-size: 14px;
-          line-height: 17px;
+          font-size: 0.14rem;
+          line-height: 0.17rem;
           bottom: 25%;
         }
       }
@@ -141,8 +143,7 @@
 
     &__button {
       width: 90%;
-      margin-top: 35px;
-      margin-bottom: 35px;
+      margin: 0.35rem auto;
     }
   }
 }
