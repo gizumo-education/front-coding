@@ -4,7 +4,6 @@ import 'slick-carousel';
 $(function() {
   console.log('環境構築完了');
   $('.l-header-hamburger').click(function() {
-    console.log('クリックされたよ！')
     $('body, .l-header-hamburger-line, .l-header-slide-menu').toggleClass('active');
   });
   $('a[href^="#"]').click(function(event) {
