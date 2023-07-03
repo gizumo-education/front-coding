@@ -1,0 +1,8 @@
+@use '../../object/utility/utility.scss';
+//pc用の画像しかないものをspの画像と同じ比率にしたいだけのスタイル。
+
+.u-resize {
+  @include utility.sp {
+    object-fit: cover;
+  }
+}
