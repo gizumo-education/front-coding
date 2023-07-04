@@ -1,2 +1,73 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual {
+  padding-top: 100px;
+  
+  &__imgGroup {
+    position: relative;
+
+    
+    &__background {
+      height: 500px;
+      width: 100%;
+    }
+    
+    &__mainImg {
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      height: 500px;
+      width: auto;
+    }
+    
+    &__rank {
+      position: absolute;
+      left: 830px;
+      top: 75px;
+
+      &__grassImg {
+        height: 142px;
+        width: 45px;
+      }
+
+      &__textImg {
+        height: 161px;
+        width: 232px;
+        margin-left: 10px;
+      }
+    }
+
+    & > h1 {
+      position: absolute;
+      top: 265px;
+      left: 607px;
+      font-size: 50px;
+      color: utility.$white;
+    }
+
+    &__text {
+      position: absolute;
+      left: 810px;
+      bottom: 50px;
+      padding-bottom: 12px;
+      font-size: 20px;
+      color: utility.$green;
+      display: inline-flex;
+      align-items: flex-end;
+      justify-content: center;
+      background-color: utility.$white;
+      border: 1px solid utility.$green;
+      border-radius: 10px;
+      width: 390px;
+      height: 67px;
+      
+      & span {
+        font-size: 40px;
+        font-weight: utility.$bold;
+      }
+
+    }
+  }
+}

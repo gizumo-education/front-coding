@@ -1,0 +1,135 @@
+@use '../../object/utility/utility.scss';
+
+.p-introduction {
+  padding: 65px 0 65px 0;
+  background-color: utility.$skyblue;
+  
+  &__title {
+    font-size: 25px;
+    color: utility.$black;
+  }
+  
+  &__list {
+
+    &__group {
+      margin-top: 40px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      &__child {
+        display: inline-flex;
+        flex-direction: column;
+        opacity: 1;
+        transition: .3s;
+
+        &:hover {
+          opacity: .8;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      
+      &__caption {
+        width: 280px;
+        font-size: 16px;
+        margin-top: 10px;
+        line-height: 1.3;
+        word-break: break-all;
+        color: utility.$black;
+
+      }
+      &__detail {
+        margin-top: 7px;
+        color: utility.$black;
+
+        & > p {
+          font-size: 14px;
+          margin-top: 5px;
+  
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+
+        & span {
+          margin-right: 7px;
+          background-color: utility.$lightpink;
+          display: inline-flex;
+          height: 20px;
+          width: 60px;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      &__cilcle {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        align-content: center;
+        background-color: utility.$white;
+        opacity: .7;
+        transition: .3s;
+        
+        &.back {
+          position: absolute;
+          top: 70px;
+          left: 0;
+
+          &:hover {
+            opacity: .8;
+          }
+  
+          &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 30%;
+            left: 40%;
+            border: 1px solid;
+            border-color: transparent transparent utility.$black utility.$black;
+            transform: rotate(45deg);
+          }
+        }
+
+        &.go {
+          position: absolute;
+          top: 70px;
+          right: 0;
+
+          &:hover {
+            opacity: .8;
+          }
+  
+          &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 30%;
+            left: 30%;
+            border: 1px solid;
+            border-color: utility.$black utility.$black transparent transparent;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+
+    img {
+      height: 200px;
+      width: 280px;
+      border-radius: 10px;
+    }
+
+    &__link {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
