@@ -5,12 +5,12 @@ $(function() {
   console.log('環境構築完了');
 
   $('a[href^="#"]').click(function () {
-    event.preventDefault();
     const speed = 400;
     const href = $(this).attr("href");
     const target = $(href === "#" || href === "" ? "html" : href);
     const position = target.offset().top;
     $("body,html").animate({ scrollTop: position - 65 }, speed, "swing");
+    return;
   });
   
   $('.l-header__hamburger').on('click', function(){
