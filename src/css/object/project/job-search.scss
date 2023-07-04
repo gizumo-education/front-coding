@@ -6,20 +6,69 @@
   padding: 40px;
   border-radius: 10px;
   background: #DEEEF9;
+  @include utility.tab {
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.1rem;
+  }
+  @include utility.sp {
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+  }
+  & h2 {
+    @include utility.sp {
+      font-size: 0.22rem;
+    }
+  }
   &__text {
     margin-top: 20px;
     font-size: 20px;
+    @include utility.tab {
+      font-size: 0.2rem;
+    }
+    @include utility.sp {
+      margin-top: 0.2rem;
+      font-size: 0.14rem;
+    }
   }
   &__form {
     display: flex;
     margin-top: 25px;
+    @include utility.tab {
+      justify-content: space-between;
+      width: 100%;
+    }
+    @include utility.sp {
+      display: block;
+      width: 100%;
+      flex-wrap: wrap;
+      margin-top: 0.2rem;
+    }
     &__select {
       display: flex;
+      @include utility.tab {
+        width: 55%;
+      }
+      @include utility.sp {
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 0;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
       &__btn {
         margin-left: 16px;
         position: relative;
         &:first-child {
           margin-left: 0;
+        }
+        @include utility.tab {
+          margin-left: .16rem;
+          width: 33%;
+        }
+        @include utility.sp {
+          width: 35%;
+          margin-left: 0.05rem;
         }
         &::after {
           content: '';
@@ -30,105 +79,62 @@
           border-width: 10px;
           border-style: solid;
           border-color: transparent transparent transparent utility.$magenta;
+          @include utility.tab {
+            border-width: 0.1rem;
+          }
+          @include utility.sp {
+            border-width: 0.07rem;
+          }
         }
       }
     }
     &__input {
       margin-left: 16px;
-    }
-    & button {
-      width: 140px;
-      margin-left: 15px;
-      padding-top: 5px;
-      position: relative;
-      &::before {
-        content: '';
-        display: inline-block;
-        width: 1.5em;
-        height: 1.5em;
-        transform: translate(-10%, -5%);
-        background: url(../img/icon/search.png) no-repeat;
-        background-size: contain;
-        vertical-align: middle;
-      }
-    }
-  }
-}
-
-@include utility.tab {
-  .p-job-search {
-    margin-top: 5%;
-    padding: 3% 1%;
-    &__text {
-      font-size: 0.2rem;
-    }
-    &__form {
-      justify-content: space-between;
-      &__select {
-        width: 55%;
-        &__btn {
-          width: 33%;
-        }
-      }
-      &__input {
+      @include utility.tab {
         width: 26%;
         margin-left: 0;
       }
-      &__btn {
+      @include utility.sp {
+        margin-top: 0.15rem;
+        margin-left: 0;
+      }
+    }
+    &__btn {
+      @include utility.tab {
         width: 15%;
-        & button {
-          width: 100%;
-          margin-left: 0;
-          padding-top: 0;
-        }
-      }
-    }
-  }
-}
-
-@include utility.sp {
-  .p-job-search {
-    margin-top: 5%;
-    padding: 5%;
-    & h2 {
-      font-size: 0.22rem;
-    }
-    &__text {
-      margin-top: 5%;
-      font-size: 0.14rem;
-    }
-    &__form {
-      width: 100%;
-      display: block;
-      flex-wrap: wrap;
-      margin-top: 5%;
-      &__select {
-        justify-content: space-between;
-        margin-left: 0;
-        &:first-child {
-          margin-left: 0;
-        }
-        &__btn {
-          width: 35%;
-          margin-left: 2%;
-          &::after {
-            border-width: 0.7em;
-          }
-        }
-      }
-      &__input {
-        margin-top: 5%;
-        margin-left: 0;
       }
       & button {
-        width: 50%;
-        height: auto;
-        margin: 5% auto 0;
-        padding: 2%;
+        width: 140px;
+        margin-left: 15px;
+        position: relative;
+        @include utility.tab {
+          width: 100%;
+          margin-left: 0;
+        }
+        @include utility.sp {
+          width: 50%;
+          height: auto;
+          margin: .2rem auto 0;
+          padding: .05rem;
+        }
         &::before {
-          width: 1em;
-          height: 1em;
-          transform: translate(-90%, -10%);
+          content: '';
+          display: inline-block;
+          width: 3rem;
+          height: 3rem;
+          transform: translate(-10%, -5%);
+          background: url(../img/icon/search.png) no-repeat;
+          background-size: contain;
+          vertical-align: middle;
+          @include utility.tab {
+            width: .3rem;
+            height: .3rem;
+          }
+          @include utility.sp {
+            width: .2rem;
+            height: .2rem;
+            transform: translate(-90%, -10%);
+          }
         }
       }
     }

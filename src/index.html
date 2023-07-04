@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>基本コーディング</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="l-header">
@@ -25,8 +26,17 @@
       <span></span>
       <span></span>
     </div>
+    <nav class="l-header__sp-menu">
+      <ul>
+        <li><a href="#top">トップ</a></li>
+        <li><a href="#recruit">新着求人</a></li>
+        <li><a href="#point">4つの特徴</a></li>
+        <li><a href="#step">転職までの流れ</a></li>
+        <li><a href="#content">転職お役立ちコンテンツ</a></li>
+      </ul>
+    </nav>
   </header>
-  <main class="l-main">
+  <main class="l-main" id="top">
     <div class="p-keyvisual">
       <div class="p-keyvisual__inner">
         <img src="../src/img/picture/keyvisual_01.jpg" alt="" class="p-keyvisual__inner__key is-pc">
@@ -93,7 +103,7 @@
         </div>
       </form>
     </section>
-    <section class="p-recruit">
+    <section class="p-recruit" id="recruit">
       <div class="l-inner p-recruit__inner">
         <h2>新着求人</h2>
         <ul class="p-recruit__inner__list">
@@ -143,8 +153,6 @@
             </a>
           </li>
         </ul>
-        <div class="c-prev-btn"><a href=""></a></div>
-        <div class="c-next-btn"><a href=""></a></div>
         <a href="" class="p-recruit__inner__btn c-btn__pink">新着求人一覧をもっと見る</a>
       </div>
     </section>
@@ -152,7 +160,7 @@
       <h2 class="p-about__inner bold">ギズジョブなら理想の職場がきっと見つかる<br>
         ギズジョブは完全無料の求職者向け求人サービスです。</h2>
     </section>
-    <section class="l-inner p-point">
+    <section class="l-inner p-point" id="point">
       <h2 class="bold">ギズジョブの4つの特徴</h2>
       <ul class="p-point__list">
         <li>
@@ -173,7 +181,7 @@
         </li>
       </ul>
     </section>
-    <section class="l-inner p-step">
+    <section class="l-inner p-step" id="step">
       <h2 class="bold">転職までの流れ</h2>
       <ol class="p-step__list">
         <li>
@@ -202,7 +210,7 @@
         </li>
       </ol>
     </section>
-    <article class="l-inner p-content">
+    <article class="l-inner p-content" id="content">
       <h2 class="bold">転職お役立ちコンテンツ</h2>
       <ul class="p-content__list">
         <li>
@@ -297,3 +305,4 @@
   </footer>
 </body>
 </html>
+

@@ -9,6 +9,12 @@
     display: flex;
     justify-content: center;
     position: relative;
+    @include utility.tab {
+      width: 100%;
+    }
+    @include utility.sp {
+      width: 100%;
+    }
     &__img {
       height: 100%;
       position: absolute;
@@ -18,23 +24,56 @@
       justify-content: center;
       top: 0;
       left: 32%;
+      @include utility.sp {
+        justify-content: center;
+        width: 65%;
+        height: 100%;
+      }
       &__head {
         width: 100%;
         &__text {
           position: relative;
+          @include utility.tab {
+            width: 3rem;
+          }
+          @include utility.sp {
+            width: 1rem;
+          }
         }
         &__deco {
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-53%, -115%);
+          @include utility.tab {
+            width: 4rem;
+            transform: translate(-53%, -100%);
+          }
+          @include utility.sp {
+            width: 1.3rem;
+            transform: translate(-53%, -100%);
+          }
           & img:nth-child(2) {
             transform: translate(50%, -100%);
+            @include utility.tab {
+              width: 1.5rem;
+              transform: translate(30%, -100%);
+            }
+            @include utility.sp {
+              width: .5rem;
+              transform: translate(30%, -250%);
+            }
           }
         }
       }
       &__main-text {
         margin-top: 40px;
+        @include utility.tab {
+          margin-top: .4rem;
+        }
+        @include utility.sp {
+          margin-top: .15rem;
+        }
       }
       & p {
         margin-top: 55px;
@@ -44,83 +83,25 @@
         font-size: 20px;
         color: utility.$green;
         background-color: white;
+        @include utility.tab {
+          margin-top: .55rem;
+          padding: 1% 5%;
+          font-size: .2rem;
+        }
+        @include utility.sp {
+          margin-top: .17rem;
+          padding: .06rem .2rem .04rem;
+          font-size: .08rem;
+          border-width: 1px;
+          border-radius: 5px;
+        }
         & span {
           font-size: 40px;
           font-weight: bold;
-        }
-      }
-    }
-  }
-}
-
-@include utility.tab {
-  .p-keyvisual {
-    text-align: center;
-    &__inner {
-      width: 100%;
-      &__img {
-        &__head {
-          &__text {
-            width: 30em;
-          }
-          &__deco {
-            width: 40em;
-            transform: translate(-53%, -90%);
-          }
-        }
-        &__main-text {
-          margin-top: 3%;
-        }
-        & p {
-          margin-top: 3%;
-          padding: 1% 5%;
-          font-size: 0.2rem;
-          & span {
+          @include utility.tab {
             font-size: 0.4rem;
           }
-        }
-      }
-    }
-  }
-}
-
-@include utility.sp {
-  .p-keyvisual {
-    height: auto;
-    &__inner {
-      width: 100%;
-      &__key {
-        margin: 0 auto;
-        object-fit: cover;
-      }
-      &__img {
-          justify-content: center;
-          width: 65%;
-          height: 100%;
-          top: 5%;
-        &__head {
-          &__text {
-            width: 8em;
-          }
-          &__deco {
-            width: 12em;
-            transform: translate(-53%, -110%);
-            & img:nth-child(2) {
-              width: 4em;
-              transform: translate(30%, -300%);
-            }
-          }
-        }
-        &__main-text {
-          margin-top: 5%;
-        }
-        & p {
-          margin-top: 7%;
-          padding: 3% 5% 2%;
-          font-size: 0.08rem;
-          border-width: 1px;
-          border-radius: 5px;
-          & span {
+          @include utility.sp {
             font-size: 0.14rem;
           }
         }

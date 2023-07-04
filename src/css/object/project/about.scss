@@ -6,6 +6,12 @@
   background: url(../img/picture/about.jpg) center;
   background-size: cover;
   position: relative;
+  @include utility.tab {
+    padding: 1rem 0;
+  }
+  @include utility.sp {
+    padding: .15rem 0;
+  }
   &::before {
     @include utility.backgroundDark;
   }
@@ -14,23 +20,11 @@
     color: utility.$white;
     font-size: 25px;
     line-height: 2;
-  }
-}
-
-@include utility.tab {
-  .p-about {
-    padding: 5% 0;
-    &__inner {
-      font-size: 0.25rem;
+    @include utility.tab {
+      font-size: .25rem;
     }
-  }
-}
-
-@include utility.sp {
-  .p-about {
-    padding: 4% 0;
-    &__inner {
-      font-size: 0.14rem;
+    @include utility.sp {
+      font-size: .14rem;
       line-height: 1.6;
       font-weight: normal;
     }
