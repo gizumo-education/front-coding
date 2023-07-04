@@ -120,6 +120,7 @@
     padding: 0.3rem 0 0.6rem 0;
 
     &__title {
+      font-size: 0.25rem;
       font-weight: utility.$bold;
     }
 
@@ -142,6 +143,7 @@
 
       & > p {
         width: 100%;
+        font-size: 0.16rem;
         text-align: start;
         font-weight: utility.$bold;
       }
@@ -150,8 +152,13 @@
     &__detail {
       margin-top: 0.12rem;
       font-weight: utility.$regular;
+
+      & > dt {
+        font-size: 0.14rem;
+      }
       
       & > dd {
+        font-size: 0.14rem;
         margin-left: 0.21rem;
         line-height: 0.20rem;
       }

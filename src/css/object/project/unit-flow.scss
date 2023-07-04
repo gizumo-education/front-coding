@@ -145,6 +145,10 @@
   .p-unit-flow {
     margin-top: 0.6rem;
 
+    &__title {
+      font-size: 0.25rem;
+    }
+
     &__content {
       margin-top: 0.35rem;
       display: block;
