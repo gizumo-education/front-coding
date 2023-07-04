@@ -8,7 +8,7 @@
     
     img {
       height: 300px;
-      width: auto;
+      width: 100%;
       opacity: 0.6;
       display: block;
     }
@@ -20,17 +20,16 @@
       transform: translate(-50%,-50%);
       display: inline-flex;
       text-align: center;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+      line-height: 2;
       flex-direction: column;
+      font-weight: utility.$bold;
+      font-size: 25px;
+      color: utility.$white;
 
-      & > h2 {
-        font-weight: utility.$bold;
-        font-size: 25px;
-        color: utility.$white;
-        margin-top: 20px;
-
-        &:first-child {
-          margin-top: 0;
-        }
+      &:first-child {
+        margin-top: 0;
       }
     }
   }

@@ -33,6 +33,7 @@
   color: utility.$white;
   font-size: 18px;
   border-radius: 30px;
+  border: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -41,6 +42,7 @@
   
   &.search {
     width: 140px;
+    cursor: pointer;
   }
 
   &.introduction {

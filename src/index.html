@@ -41,8 +41,8 @@
       <div class="l-inner">
         <div class="p-search__list">
           <h2>お仕事検索</h2>
-          <h3>働きたい職種・地域・希望給与を入れて検索！</h3>
-          <div class="p-search__list__select">
+          <p>働きたい職種・地域・希望給与を入れて検索！</p>
+          <form class="p-search__list__select" action="#" method="POST">
             <div class="p-search__list__select__box">
               <select name="job" class="jobSelect">
                 <option value="医療事務" selected>医療事務</option>
@@ -80,9 +80,12 @@
               <input type="text" name="text" placeholder="キーワード・企業名・スキルなど">
             </div>
             <div class="p-search__list__select__button">
-              <a class="c-btn__pink search" href=""><img src="./img/icon/icon-search-white.png" alt="">検索する</a>
+              <button class="c-btn__pink search" type="submit">
+                <img src="./img/icon/icon-search-white.png" alt="">
+                検索する
+              </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -91,7 +94,7 @@
         <div class="p-introduction__list">
           <h2 class="p-introduction__title">新着求人</h2>
           <div class="p-introduction__list__group">
-            <div class="p-introduction__list__group__child">
+            <a class="p-introduction__list__group__child" href="">
               <img src="./img/picture/introduction-1.jpg" alt="">
               <div class="p-introduction__list__group__text">
                 <p class="p-introduction__list__group__caption">
@@ -103,8 +106,8 @@
                   <p><span>最寄駅</span>伊勢市駅 徒歩15分</p>
                 </div>
               </div>
-            </div>
-            <div class="p-introduction__list__group__child">
+            </a>
+            <a class="p-introduction__list__group__child" href="">
               <img src="./img/picture/introduction-2.jpg" alt="">
               <div class="p-introduction__list__group__text">
                 <p class="p-introduction__list__group__caption">
@@ -116,8 +119,8 @@
                   <p><span>最寄駅</span>伊勢市駅 徒歩15分</p>
                 </div>
               </div>
-            </div>
-            <div class="p-introduction__list__group__child">
+            </a>
+            <a class="p-introduction__list__group__child" href="">
               <img src="./img/picture/introduction-3.jpg" alt="">
               <div class="p-introduction__list__group__text">
                 <p class="p-introduction__list__group__caption">
@@ -129,8 +132,8 @@
                   <p><span>最寄駅</span>伊勢市駅 徒歩15分</p>
                 </div>
               </div>
-            </div>
-            <div class="p-introduction__list__group__child">
+            </a>
+            <a class="p-introduction__list__group__child" href="">
               <img src="./img/picture/introduction-4.jpg" alt="">
               <div class="p-introduction__list__group__text">
                 <p class="p-introduction__list__group__caption">
@@ -142,7 +145,7 @@
                   <p><span>最寄駅</span>伊勢市駅 徒歩15分</p>
                 </div>
               </div>
-            </div>
+            </a>
             <a class="p-introduction__list__group__cilcle back" href=""></a>
             <a class="p-introduction__list__group__cilcle go" href=""></a>
           </div>
@@ -155,10 +158,7 @@
     <section class="p-subvisual">
       <div class="p-subvisual__content">
         <img src="./img/picture/subvisual.jpg" alt="">
-        <div class="p-subvisual__content__text">
-          <h2>ギズジョブなら理想の職場がきっと見つかる</h2>
-          <h2>ギズジョブは完全無料の求職者向け求人サービスです。</h2>
-        </div>
+        <h2 class="p-subvisual__content__text">ギズジョブなら理想の職場がきっと見つかる<wbr>ギズジョブは完全無料の求職者向け求人サービスです。</h2>
       </div>
     </section>
     <section class="p-feature">
@@ -260,7 +260,7 @@
         <div class="p-support__list">
           <h2>転職お役立ちコンテンツ</h2>
           <div class="p-support__list__group">
-            <div class="p-support__list__group__child">
+            <a class="p-support__list__group__child" href="">
               <img src="./img/picture/img-resume.png" alt="">
               <div class="p-support__list__group__child__textGroup">
                 <h3 class="p-support__list__group__child__textGroup__title">転職マニュアル</h3>
@@ -268,8 +268,8 @@
                   転職活動の基礎知識、面接対策など<wbr>転職のコツをお教えします
                 </p>
               </div>
-            </div>
-            <div class="p-support__list__group__child">
+            </a>
+            <a class="p-support__list__group__child" href="">
               <img src="./img/picture/img-pc.jpg" alt="">
               <div class="p-support__list__group__child__textGroup">
                 <h3 class="p-support__list__group__child__textGroup__title">医療事務業界の豆知識</h3>
@@ -277,8 +277,8 @@
                   スキルアップ・労働環境、給与事情など<wbr>知って得する業界の豆知識を公開
                 </p>
               </div>
-            </div>
-            <div class="p-support__list__group__child">
+            </a>
+            <a class="p-support__list__group__child" href="">
               <img src="./img/picture/img-resume.png" alt="">
               <div class="p-support__list__group__child__textGroup">
                 <h3 class="p-support__list__group__child__textGroup__title">転職マニュアル</h3>
@@ -286,7 +286,7 @@
                   転職活動の基礎知識、面接対策など<wbr>転職のコツをお教えします
                 </p>
               </div>
-            </div>
+            </a>
           </div>
           <div class="p-support__list__link">
             <a class="c-btn__pink support" href="">医療事務コラムをもっと見る</a>
@@ -298,8 +298,8 @@
       <div class="l-inner">
         <div class="p-search__list">
           <h2>お仕事検索</h2>
-          <h3>働きたい職種・地域・希望給与を入れて検索！</h3>
-          <div class="p-search__list__select">
+          <p>働きたい職種・地域・希望給与を入れて検索！</p>
+          <form class="p-search__list__select" action="#" method="POST">
             <div class="p-search__list__select__box">
               <select name="job" class="jobSelect">
                 <option value="医療事務" selected>医療事務</option>
@@ -337,9 +337,12 @@
               <input type="text" name="text" placeholder="キーワード・企業名・スキルなど">
             </div>
             <div class="p-search__list__select__button">
-              <a class="c-btn__pink search" href=""><img src="./img/icon/icon-search-white.png" alt="">検索する</a>
+              <button class="c-btn__pink search" type="submit">
+                <img src="./img/icon/icon-search-white.png" alt="">
+                検索する
+              </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
