@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/_mixins.scss' as re;
 
 //転職フロー
 .p-unit-flow {
@@ -84,7 +85,7 @@
 }
 
 //レスポンシブTAB
-@media (min-width: 768px) and (max-width: 1199px) {
+@include re.tab {
   .p-unit-flow {
     margin-top: 1.05rem;
     &__title {
@@ -139,7 +140,7 @@
 }
 
 //レスポンシブSP
-@media (max-width: 767px) {
+@include re.sp {
   .p-unit-flow {
     margin-top: 0.6rem;
 

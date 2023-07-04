@@ -1,4 +1,6 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/_mixins.scss' as re;
+
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual {
   width: 100%;
@@ -73,7 +75,7 @@
 }
 
 //レスポンシブTAB
-@media (min-width: 768px) and (max-width: 1199px) {
+@include re.tab {
   .p-keyvisual {
     padding-top: 1rem;
     
@@ -110,7 +112,7 @@
 }
 
 //レスポンシブSP
-@media (max-width: 767px) {
+@include re.sp {
   .p-keyvisual {
     padding-top: 0.7rem;
     &__image{

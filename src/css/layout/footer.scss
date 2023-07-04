@@ -1,4 +1,6 @@
 @use '../object/utility/utility.scss';
+@use '../foundation/_mixins.scss' as re;
+
 // footerのスタイルを記述するファイル
 .l-footer {
   margin-top: 200px;
@@ -71,7 +73,7 @@
 }
 
 //レスポンシブTAB
-  @media (min-width: 768px) and (max-width: 1199px) {
+@include re.tab {
     .l-footer {
       margin-top: 2rem;
 
@@ -106,7 +108,7 @@
   }
 
 //レスポンシブSP
-@media (max-width: 767px) {
+@include re.sp {
   .l-footer {
     margin-top: 1rem;
 
@@ -143,6 +145,7 @@
       }
 
       &__banner {
+        margin-top: 0;
         text-align: center;
       }
     }

@@ -1,5 +1,6 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
+@use '../../foundation/_mixins.scss' as re;
 
 .u-overlay {
   &::before{
@@ -42,7 +43,7 @@
 }
 
 //レスポンシブTAB
-@media (min-width: 768px) and (max-width: 1199px) {
+@include re.tab {
   .u-overlay {
 
     & > h1 {
@@ -58,7 +59,7 @@
 
 
 //レスポンシブSP
-@media (max-width: 767px) {
+@include re.sp {
   .u-overlay {
 
     & > h1 {

@@ -1,4 +1,6 @@
 @use '../object/utility/utility.scss';
+@use '../foundation/_mixins.scss' as re;
+
 // headerのスタイルを記述するファイル
 .l-header {
   width: 100%;
@@ -78,7 +80,7 @@
 }
 
 //レスポンシブTAB
-@media (min-width: 768px) and (max-width: 1199px){
+@include re.tab {
   .l-header{
     height: 1rem;
     &__nav {
@@ -128,7 +130,7 @@
 }
 
 //レスポンシブSP
-@media (max-width: 767px) {
+@include re.sp {
   .l-header {
     height: 0.7rem;
     &__nav {
