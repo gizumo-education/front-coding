@@ -23,6 +23,10 @@ h2 {
   font-size: 25px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 @include base.tab {
   body {
     font-size: 0.1rem;
