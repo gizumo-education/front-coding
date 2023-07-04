@@ -29,7 +29,7 @@
         & > a {
           text-align: center;
           color: inherit;
-          line-height: 23px;
+          line-height: 1.5;
           font-size: 16px;
           transition: .3s;
         }
@@ -61,7 +61,7 @@
       width: 140px;
       margin: 25px 0px 25px 15px;
       padding: 15px 20px 15px 10px;
-      line-height: 20px;
+      line-height: 1.5;
       border: none;
 
       &:first-child{
@@ -87,7 +87,11 @@
         & > li {
           & > a {
             font-size: 0.016rem;
-            line-height: 0.23rem;
+
+            & > img {
+              width: 0.18rem;
+              height: 0.18rem;
+            }
           }
           
           &::after {
@@ -108,7 +112,6 @@
         width: 1.4rem;
         padding: 0.15rem 0 0.15rem 0;
         margin: 0.25rem 0 0.25rem 0.1rem;
-        line-height: 0.2rem;
 
         &:first-child{
           width: 1.6rem;
@@ -196,7 +199,6 @@
         margin-top: 0.38rem;
         & > a {
           font-size: 0.22rem;
-          line-height: 0.22rem;
           font-weight: utility.$bold;
           color: utility.$white;
         }

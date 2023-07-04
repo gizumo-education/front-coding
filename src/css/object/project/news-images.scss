@@ -19,6 +19,7 @@
     justify-content: center;
 
     & > a {
+      color: utility.$black;
       transition: .3s;
     }
   }
@@ -42,7 +43,7 @@
       width: 278px;
       margin-top: 8.08px;
       font-size: 16px;
-      line-height: 22px;
+      line-height: 1.4;
     }
   }
 
@@ -82,6 +83,10 @@
     margin-top: 0.6rem;
     padding: 0.64rem 0 0.67rem 0;
 
+    &__title {
+      font-size: 0.25rem;
+    }
+
     &__image {
       width: 2.2rem;
       margin-top: 0.25rem;
@@ -90,7 +95,7 @@
       & > p {
         width: 2.2rem;
         font-size: 0.14rem;
-        line-height: 0.22rem;
+        line-height: 1.4;
       }
     }
 
@@ -150,8 +155,13 @@
     }
 
     &__detail {
-      margin-top: 0.12rem;
+      line-height: 1.25;
+      margin-top: 0.05rem;
       font-weight: utility.$regular;
+
+      &:first-child {
+        margin-top: 0.12rem;
+      }
 
       & > dt {
         font-size: 0.14rem;
@@ -160,7 +170,6 @@
       & > dd {
         font-size: 0.14rem;
         margin-left: 0.21rem;
-        line-height: 0.20rem;
       }
     }
 

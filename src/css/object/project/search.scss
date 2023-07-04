@@ -18,7 +18,7 @@
   & > h2 {
     padding-top: 20px;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
   }
 
   &__form {
@@ -79,7 +79,6 @@
   .p-search {
     margin-top: 0.6rem;
     padding: 0.4rem;
-    width: 80%;
 
     &__title {
       font-size: 0.25rem;
@@ -87,7 +86,6 @@
     & > h2 {
       font-size: 0.2rem;
       padding-top: 0.2rem;
-      line-height: 0.28rem;
     }
 
     &__form {
@@ -114,11 +112,12 @@
           margin-left: 0.15rem;
 
           & > img {
-            padding: 0.15rem 0.04rem 0.15rem 0.14rem;
+            padding: 0.15rem 0 0.15rem 0.14rem;
           }
 
           & > p {
-            margin-top: 0.21rem;
+            margin-top: 0.15rem;
+            margin-left: 0.04rem;
           }
         }
       }
@@ -140,7 +139,7 @@
     & > h2 {
       padding-top: 0.16rem;
       font-size: 0.14rem;
-      line-height: 0.2rem;
+      line-height: 1.4;
     }
 
     &__form{
@@ -165,7 +164,7 @@
         }
 
         &__button {
-          margin: 0.19rem auto;
+          margin: 0.19rem auto 0 auto;
           width: 1.6rem;
 
           & > img {

@@ -39,7 +39,7 @@
         border-radius: 30px;
         color: utility.$white;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 1.25;
       }
 
       & > img {
@@ -52,7 +52,7 @@
         width: 80%;
         margin: 20px auto 0 auto;
         font-size: 24px;
-        line-height: 30px;
+        line-height: 1.25;
         font-weight: utility.$bold;
         display: grid;
         place-items: center;
@@ -63,7 +63,7 @@
         font-weight: utility.$regular;
         width: 80%;
         margin: 18px auto 0 auto;
-        line-height: 21px;
+        line-height: 1.5;
       }
 
       &::after {
@@ -106,7 +106,7 @@
           width: 0.5rem;
           height: 0.5rem;
           font-size: 0.14rem;
-          line-height: 0.2rem;
+          line-height: 1.4;
         }
 
         & > img {
@@ -117,7 +117,6 @@
         & > h2 {
           height: 0.6rem;
           font-size: 0.24rem;
-          line-height: 0.3rem;
 
           & > br {
             display: none;
@@ -127,7 +126,6 @@
         & > p {
           font-size: 0.14rem;
           margin: 0.18rem auto 0 auto;
-          line-height: 0.21rem;
         }
 
         &::after {
@@ -162,13 +160,18 @@
           height: 0.45rem;
           padding: 0.11rem 0.1rem;
           font-size: 0.1rem;
-          line-height: 0.12rem;
+          line-height: 1.2;
+        }
+
+        & > img {
+          width: 0.75rem;
+          height: 0.75rem;
         }
 
         & > h2 {
           width: 100%;
           font-size: 0.2rem;
-          line-height: 0.29rem;
+          line-height: 1.45;
 
           & > br {
             display: none;
