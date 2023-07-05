@@ -1,5 +1,6 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
+@use '../../foundation/_mixins.scss' as re;
 
 .u-wrapper {
   width: 80%;
@@ -9,4 +10,10 @@
 a:hover {
   opacity: 0.8;
   transition: .3s;
+}
+
+@include re.sp {
+  .u-wrapper {
+    width: 90%;
+  }
 }

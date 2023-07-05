@@ -1,8 +1,8 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/_mixins.scss' as re;
 
 //検索欄
 .p-search {
-  max-width: 80%;
   margin-top: 60px;
   padding: 40px;
   text-align: center;
@@ -12,23 +12,29 @@
   flex-direction: column;
 
   &__title {
-    font-weight: 700;
+    font-weight: utility.$bold;
     font-size: 25px;
   }
 
   & > h2 {
     padding-top: 20px;
     font-size: 20px;
+    line-height: 1.4;
   }
 
   &__form {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding-top: 26px;
+    margin-top: 26px;
     
     &__container {
       position: relative;
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
 
       &::before {
         position: absolute;
@@ -47,6 +53,7 @@
       
       &__input {
         display: flex;
+        margin-left: 15px;
       }
 
       &__button {
@@ -57,11 +64,123 @@
         transition: .3s;
         
         & > img {
-          padding: 15px 4px 15px 14px;
+          width: 30px;
+          height: 30px;
+          margin: 15px 4px 15px 14px;
         }
         
         & > p {
           margin-top: 21px;
+        }
+      }
+    }
+  }
+}
+
+//レスポンシブTAB
+@include re.tab {
+  .p-search {
+    margin-top: 0.6rem;
+    padding: 0.4rem;
+
+    &__title {
+      font-size: 0.25rem;
+    }
+    & > h2 {
+      font-size: 0.2rem;
+      padding-top: 0.2rem;
+    }
+
+    &__form {
+      margin-top: 0.26rem;
+      &__container {
+        margin-left: 0.1rem;
+
+        &::before {
+          top: 45%;
+          right: 0.1rem;
+          border-top: 0.1rem solid utility.$pink;
+          border-left: 0.1rem solid transparent;
+          border-right: 0.1rem solid transparent;
+          border-bottom: 0.1rem solid transparent;
+        }
+
+        &__input {
+          margin-left: 0.1rem;
+        }
+
+        &__button {
+          height: 80%;
+          width: 1.4rem;
+          margin-left: 0.15rem;
+
+          & > img {
+            width: 0.3rem;
+            height: 0.3rem;
+            margin: 0.1rem 0 0.1rem 0.14rem;
+          }
+
+          & > p {
+            margin-top: 0.15rem;
+            margin-left: 0.04rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+//レスポンシブSP用
+@include re.sp {
+  .p-search {
+    margin-top: 0.25rem;
+    padding: 0.15rem;
+    width: 90%;
+
+    &__title {
+      font-size: 0.22rem;
+    }
+
+    & > h2 {
+      padding-top: 0.16rem;
+      font-size: 0.14rem;
+      line-height: 1.4;
+    }
+
+    &__form{
+      flex-wrap: wrap;
+
+      &__container {
+        &::before {
+          left: 80%;
+          border-top: 0.07rem solid utility.$pink;
+          border-left: 0.065rem solid transparent;
+          border-right: 0.065rem solid transparent;
+        }
+
+        &__input {
+          margin-top: 0.15rem;
+          flex-wrap: wrap;
+        }
+
+        &__input {
+          justify-content: center;
+          margin-left: 0;
+        }
+
+        &__button {
+          margin: 0.19rem auto 0 auto;
+          width: 1.6rem;
+
+          & > img {
+            width: 0.18rem;
+            height: 0.18rem;
+            margin: 0.11rem 0 0.11rem 0.13rem;
+          }
+
+          & > p {
+            margin: 0.1rem auto;
+          }
         }
       }
     }

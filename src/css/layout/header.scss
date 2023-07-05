@@ -1,18 +1,24 @@
 @use '../object/utility/utility.scss';
+@use '../foundation/_mixins.scss' as re;
+
 // headerのスタイルを記述するファイル
 .l-header {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   background-color: utility.$white;
 
+  &__toggle {
+    display: none;
+  }
+
   &__nav {
     display: flex;
     justify-content: flex-end;
     margin: 0 auto;
-    max-width: 90%;
+    width: 90%;
 
     & > ul {
       margin: auto 0;
@@ -25,6 +31,7 @@
         & > a {
           text-align: center;
           color: inherit;
+          line-height: 1.5;
           font-size: 16px;
           transition: .3s;
         }
@@ -56,12 +63,8 @@
       width: 140px;
       margin: 25px 0px 25px 15px;
       padding: 15px 20px 15px 10px;
-      border-radius:10px;
-      background-color: utility.$h-Button;
-      color: utility.$white;
-      line-height: 20px;
+      line-height: 1.5;
       border: none;
-      text-align: center;
 
       &:first-child{
         width: 160px;
@@ -74,4 +77,138 @@
       }
     }
   }
-};
+}
+
+//レスポンシブTAB
+@include re.tab {
+  .l-header{
+    height: 1rem;
+    &__nav {
+      width: 90%;
+      & > ul {
+        & > li {
+          & > a {
+            font-size: 0.016rem;
+
+            & > img {
+              width: 0.18rem;
+              height: 0.18rem;
+            }
+          }
+          
+          &::after {
+            height: 0.016rem;
+            margin: 0 0.02rem;
+          }
+        }
+      }
+    }
+
+    &__buttons {
+      white-space: nowrap;
+      & > a {
+        font-size: 0.14rem;
+      }
+
+      &__button {
+        width: 1.4rem;
+        padding: 0.15rem 0 0.15rem 0;
+        margin: 0.25rem 0 0.25rem 0.1rem;
+
+        &:first-child{
+          width: 1.6rem;
+        }
+
+        & > img {
+          width: 0.18rem;
+          height: 0.18rem;
+          margin-right: 0.1rem;
+        }
+      }
+    }
+  }
+}
+
+//レスポンシブSP
+@include re.sp {
+  .l-header {
+    height: 0.7rem;
+    &__nav {
+      display: none;
+    }
+
+    &__toggle {
+      display: block;
+      background-color: utility.$white;
+      margin-top: 0.16rem;
+      margin-left: 3.35rem;
+    }
+    .drawer_hidden {
+      display: none;
+    }
+
+    .drawer_open {
+      display: flex;
+      height: 0.4rem;
+      width: 0.5rem;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 99;
+      cursor: pointer;
+    }
+
+    .drawer_open span,
+    .drawer_open span:before,
+    .drawer_open span:after {
+      content: '';
+      display: block;
+      height: 0.06rem;
+      width: 0.5rem;
+      border-radius: 0.03rem;
+      background: #333;
+      transition: 0.5s;
+      position: absolute;
+    }
+
+    .drawer_open span:before {
+      bottom: 0.16rem;
+    }
+    .drawer_open span:after {
+      top: 0.16rem;
+    }
+      
+
+    .nav_content {
+      display: none;
+      width: 100%;
+      height: 5.54rem;
+      position: fixed;
+      margin-top: 0.7rem;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      background-color: rgba(0, 0, 0, .7);
+      transition: .5s;
+    }
+
+    .nav_list {
+      list-style: none;
+      margin-top: 0.57rem;
+      margin-left: 0.6rem;
+
+      & > li {
+        margin-top: 0.38rem;
+        & > a {
+          font-size: 0.22rem;
+          font-weight: utility.$bold;
+          color: utility.$white;
+        }
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

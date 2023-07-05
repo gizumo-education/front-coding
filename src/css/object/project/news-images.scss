@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/_mixins.scss' as re;
 
 .p-news-images {
   margin-top: 60px;
@@ -18,16 +19,21 @@
     flex-wrap: nowrap;
     justify-content: center;
 
-    &> a {
+    & > a {
+      color: utility.$black;
       transition: .3s;
     }
   }
 
   &__image {
-    margin-left: 25px;
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-top: 25px;
     &:first-child {
       margin-left: 0;
+    }
+
+    &__sp {
+      display: none;
     }
 
     & > img {
@@ -38,7 +44,7 @@
       width: 278px;
       margin-top: 8.08px;
       font-size: 16px;
-      line-height: 22px;
+      line-height: 1.4;
     }
   }
 
@@ -69,5 +75,115 @@
     margin: 60px auto 0 auto;
     font-weight: utility.$bold;
     transition: .3s;
+  }
+}
+
+//レスポンシブTAB
+@include re.tab {
+  .p-news-images {
+    margin-top: 0.6rem;
+    padding: 0.64rem 0 0.67rem 0;
+
+    &__title {
+      font-size: 0.25rem;
+    }
+
+    &__image {
+      width: 2.2rem;
+      margin-top: 0.25rem;
+      margin-left: 0.2rem;
+
+      & > p {
+        width: 2.2rem;
+        font-size: 0.14rem;
+        line-height: 1.4;
+      }
+    }
+
+    &__detail {
+      margin-top: 0.04rem;
+
+      &:first-child {
+        margin-top: 0.07rem;
+      }
+
+      & > dt {
+        font-size: 0.14rem;
+        width: 0.6rem;
+        height: 0.21rem;
+      }
+
+      & > dd {
+        font-size: 0.14rem;
+      }
+    }
+
+    &__button {
+      width: 3.6rem;
+      padding: 0.17rem 0.7rem;
+    }
+  }
+}
+
+//レスポンシブSP
+@include re.sp {
+  .p-news-images {
+    text-align: center;
+    padding: 0.3rem 0 0.6rem 0;
+
+    &__title {
+      font-size: 0.25rem;
+      font-weight: utility.$bold;
+    }
+
+    &__group {
+      display: block;
+
+    }
+    &__image{
+
+      &:nth-child(n + 2) {
+        display: none;
+      }
+      &__pc {
+        display: none;
+      }
+      &__sp {
+        display: block;
+        margin: 0 auto;
+      }
+
+      & > p {
+        width: 100%;
+        font-size: 0.16rem;
+        text-align: start;
+        font-weight: utility.$bold;
+      }
+    }
+
+    &__detail {
+      line-height: 1.25;
+      margin-top: 0.05rem;
+      font-weight: utility.$regular;
+
+      &:first-child {
+        margin-top: 0.12rem;
+      }
+
+      & > dt {
+        font-size: 0.14rem;
+      }
+      
+      & > dd {
+        font-size: 0.14rem;
+        margin-left: 0.21rem;
+      }
+    }
+
+    &__button {
+      width: 3.6rem;
+      padding: 0.21rem 0.77rem;
+      margin-top: 0.44rem;
+    }
   }
 }

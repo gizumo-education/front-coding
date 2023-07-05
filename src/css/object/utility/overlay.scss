@@ -1,5 +1,6 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
+@use '../../foundation/_mixins.scss' as re;
 
 .u-overlay {
   &::before{
@@ -21,7 +22,7 @@
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 25px;
-    line-height: 36px;;
+    line-height: 1.44;
     width: 100%;
     text-align: center;
     z-index: 2;
@@ -34,9 +35,42 @@
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 25px;
-    line-height: 36px;;
+    line-height: 1.44;
     width: 100%;
     text-align: center;
     z-index: 2;
+  }
+}
+
+//レスポンシブTAB
+@include re.tab {
+  .u-overlay {
+
+    & > h1 {
+      font-size: 0.25rem;
+    }
+
+    & > h2 {
+      font-size: 0.25rem;
+    }
+  }
+  
+}
+
+
+//レスポンシブSP
+@include re.sp {
+  .u-overlay {
+
+    & > h1 {
+      top: 30%;
+      font-size: 0.14rem;
+      line-height: 1.4;
+    }
+
+    & > h2 {
+      font-size: 0.14rem;
+      line-height: 1.4;
+    }
   }
 }

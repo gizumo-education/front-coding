@@ -1,5 +1,13 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/_mixins.scss' as re;
 // 共通パーツであるボタンのスタイルを記述するファイル
+.c-blue-button {
+  border-radius:10px;
+  background-color: utility.$h-Button;
+  color: utility.$white;
+  text-align: center;
+}
+
 .c-pink-button {
   border-radius: 30px;
   border: 1px solid utility.$pink;
@@ -7,4 +15,20 @@
   background-color: utility.$pink;
   font-size: 18px;
   text-align: center;
+}
+
+//レスポンシブTAB
+@include re.tab {
+  .c-pink-button {
+    font-size: 0.18rem;
+  }
+}
+
+//レスポンシブSP
+@include re.sp {
+  .c-pink-button {
+    border-radius: 0.3rem;
+    border: 0.01rem solid utility.$pink;
+    font-size: 0.17rem;
+  }
 }
