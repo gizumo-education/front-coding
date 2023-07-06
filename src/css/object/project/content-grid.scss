@@ -1,0 +1,54 @@
+@use '../../object/utility/utility.scss';
+
+// grid
+$width: 570px;
+$height: 180px;
+$pink: #F7D2DB;
+$deeppink: #DE5579;
+
+
+.p-content__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  &__parts {
+    background-color: $pink;
+    width: $width;
+    height: $height;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 40px;
+
+    &:nth-child(2n + 1) {
+      margin-left: 0px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-top: 53px;
+    }
+
+    &__title {
+      color: $deeppink;
+      font-size: 24px;
+      font-family: Noto Sans JP;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    &__text {
+      color: #000;
+      text-align: center;
+      font-size: 14px;
+      font-family: Noto Sans JP;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 36px;
+    }
+  }
+}

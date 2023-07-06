@@ -1,2 +1,70 @@
 @use '../../object/utility/utility.scss';
-// ページ上部のキービジュアルに関するスタイル
+
+// キービジュアル
+$green: #2EB6AA;
+
+.p-key-visual {
+  background-image: url(../img/picture/p-main-visual.png);
+  width: 1200px;
+  height: 500px;
+  position: relative;
+}
+
+.p-key-visual__parts {
+  &__title {
+    position: absolute;
+    top: 265px;
+    right: 30px;
+  }
+
+  &__right {
+    position: absolute;
+    top: 74.95px;
+    left: 951.91px;
+  }
+
+  &__left {
+    position: absolute;
+    top: 74.95px;
+    left: 655px;
+  }
+
+  &__rank {
+    position: absolute;
+    top: 111.43px;
+    left: 710.73px;
+  }
+
+  &__notice {
+    position: absolute;
+    top: 85px;
+    left: 926px;
+  }
+
+  &__sub__text {
+    position: absolute;
+    top: 91px;
+    left: 712.6px;
+  }
+
+  &__sub__notice {
+    position: absolute;
+    top: 212px;
+    left: 821.82px;
+  }
+
+  &__main__block {
+    background-color: #fff;
+    width: 389px;
+    height: 66.7px;
+    border: 2.3px solid $green;
+    border-radius: 10px;
+    position: absolute;
+    top: 385px;
+    left: 635px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

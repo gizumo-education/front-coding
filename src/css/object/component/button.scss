@@ -1,2 +1,61 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+$header-btn-color: #92C5EA;
+
+
+.l-header {
+  &__nav-btn {
+    display: flex;
+
+    & li {
+      text-decoration: none;
+      font-size: 14px;
+      font-family: Noto Sans JP;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      background-color: $header-btn-color;
+      margin-top: 25px;
+      margin-left: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      text-align: center;
+      border-radius: 10px;
+      min-width: 140px;
+      min-height: 50px;
+
+      &:first-child {
+        min-width: 160px;
+        min-height: 50px;
+      }
+
+      p {
+        margin-left: 10px;
+        display: inline
+      }
+
+      & img {
+        display: inline
+      }
+
+      & a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.s-btn {
+  border-radius: 50px;
+  background-color: #DE5579;
+}
+
+.s-btn-text {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}

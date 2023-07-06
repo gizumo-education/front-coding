@@ -1,0 +1,39 @@
+@use '../../object/utility/utility.scss';
+
+// headerのスタイルを記述するファイル
+.p-header {
+  padding-right: 100px;
+  padding-bottom: 25px;
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 397px;
+    min-width: 608px;
+    min-height: 23px;
+
+  }
+
+  &__item {
+    list-style: none;
+    font-size: 16px;
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+    & img {
+      margin-top: 5.5px;
+    }
+
+    & a {
+      color: #000;
+    }
+  }
+}

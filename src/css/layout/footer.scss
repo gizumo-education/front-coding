@@ -1,2 +1,68 @@
 @use '../object/utility/utility.scss';
+
 // footerのスタイルを記述するファイル
+.l-background__footer {
+  background-color: #EFF6FC;
+  padding-top: 79px;
+  padding-bottom: 28px;
+}
+
+.l-footer {
+
+
+  & p {
+    color: #000;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__list {
+    display: block;
+    width: 160px;
+    height: 108px;
+    margin-left: 39px;
+    margin-top: 27px;
+
+    &:first-child {
+      margin-left: 0px;
+      width: 96px;
+    }
+
+    &__item {
+      color: #000;
+      font-family: Noto Sans JP;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px;
+    }
+  }
+
+  &__lists {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__ads {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    margin-left: 560px;
+
+  }
+
+  &__ad {
+    background-image: url(../img/picture/footer-ad-base.png);
+    width: 320px;
+    height: 85px;
+    text-align: right;
+    margin-top: 25px;
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+}
