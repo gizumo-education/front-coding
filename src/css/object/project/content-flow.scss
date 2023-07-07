@@ -1,9 +1,7 @@
 @use '../../object/utility/utility.scss';
+@import '../../foundation/variables.scss';
 
 //flow図
-$white: #FFF;
-$pink: #DE5579;
-
 .p-content__flow {
   display: flex;
 
@@ -46,22 +44,22 @@ $pink: #DE5579;
     }
 
     & h1 {
-      color: #000;
+      color: $black;
       text-align: center;
       font-size: 24px;
       font-family: Noto Sans JP;
       font-style: normal;
-      font-weight: 700;
+      font-weight: $bold;
       line-height: 30px;
       margin-top: 20px;
     }
 
     & p {
-      color: #000;
+      color: $black;
       font-size: 14px;
       font-family: Noto Sans JP;
       font-style: normal;
-      font-weight: 400;
+      font-weight: $regular;
       line-height: normal;
       width: 237px;
       height: 60px;
@@ -70,9 +68,9 @@ $pink: #DE5579;
 
     &:not(:last-child) {
       &::after {
-        content: url(../img/icon/content-next.svg);
+        content: url(../img/icon/content-next.png);
         position: absolute;
-        top: 180px;
+        top: 50%;
         left: 282px;
       }
     }

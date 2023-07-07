@@ -1,11 +1,7 @@
 @use '../../object/utility/utility.scss';
+@import '../../foundation/variables.scss';
 
 // お仕事検索
-$blue: #DEEEF9;
-$black: #000;
-$pink: #DE1E79;
-
-
 .p-search {
   padding-top: 60px;
   display: flex;
@@ -13,7 +9,7 @@ $pink: #DE1E79;
   padding-bottom: 60px;
 
   &__box {
-    background-color: $blue;
+    background-color: $light-blue;
     width: 1180px;
     height: 240px;
     border-radius: 10px;
@@ -25,7 +21,7 @@ $pink: #DE1E79;
       font-size: 25px;
       font-family: Noto Sans JP;
       font-style: normal;
-      font-weight: 700;
+      font-weight: $bold;
       line-height: 25px;
     }
 
@@ -35,7 +31,7 @@ $pink: #DE1E79;
       font-size: 20px;
       font-family: Noto Sans JP;
       font-style: normal;
-      font-weight: 400;
+      font-weight: $regular;
       line-height: normal;
       margin-top: 20px;
     }
@@ -59,10 +55,10 @@ $pink: #DE1E79;
         font-size: 18px;
         font-family: Noto Sans JP;
         font-style: normal;
-        font-weight: 400;
+        font-weight: $regular;
         line-height: normal;
         margin-left: 15px;
-        background-image: url(../img/icon/search-01.svg);
+        background-image: url(../img/icon/search-01.png);
         background-size: 20px 10px;
         background-repeat: no-repeat;
         background-position: center right 15px;
@@ -77,8 +73,7 @@ $pink: #DE1E79;
     & form {
       display: flex;
 
-
-      & #text {
+      & .text {
         width: 299px;
         height: 59px;
         border: 1px solid $pink;
@@ -87,17 +82,17 @@ $pink: #DE1E79;
         font-size: 18px;
         font-family: Noto Sans JP;
         font-style: normal;
-        font-weight: 400;
+        font-weight: $regular;
         line-height: normal;
         margin-left: 15px;
       }
 
-      & #submit {
+      & .submit {
         width: 140px;
         height: 60px;
-        color: #FFF;
+        color: $white;
         background-color: $pink;
-        background-image: url(../img/icon/search-02.svg);
+        background-image: url(../img/icon/search-02.png);
         background-repeat: no-repeat;
         background-position: center left 14px;
         display: block;
@@ -109,8 +104,15 @@ $pink: #DE1E79;
         font-size: 18px;
         font-family: Noto Sans JP;
         font-style: normal;
-        font-weight: 700;
+        font-weight: $bold;
         line-height: 18px;
+      }
+
+      & div {
+        &:hover {
+          opacity: $opacity;
+          transition: $transition;
+        }
       }
     }
   }

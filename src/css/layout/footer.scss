@@ -1,8 +1,9 @@
 @use '../object/utility/utility.scss';
+@import '../foundation/variables.scss';
 
 // footerのスタイルを記述するファイル
 .l-background__footer {
-  background-color: #EFF6FC;
+  background-color: $pale-blue;
   padding-top: 79px;
   padding-bottom: 28px;
 }
@@ -11,11 +12,11 @@
 
 
   & p {
-    color: #000;
+    color: $black;
     font-family: Noto Sans JP;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: $regular;
     line-height: normal;
   }
 
@@ -32,11 +33,11 @@
     }
 
     &__item {
-      color: #000;
+      color: $black;
       font-family: Noto Sans JP;
       font-size: 16px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: $regular;
       line-height: 36px;
     }
   }

@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@import'../../foundation/_variables.scss';
 
 // headerのスタイルを記述するファイル
 .p-header {
@@ -24,16 +25,22 @@
     font-size: 16px;
     font-family: Noto Sans JP;
     font-style: normal;
-    font-weight: 400;
+    font-weight: $regular;
     line-height: normal;
     text-decoration: none;
+
+    & a:hover {
+      opacity: $opacity;
+      transition: $transition;
+      cursor: pointer;
+    }
 
     & img {
       margin-top: 5.5px;
     }
 
     & a {
-      color: #000;
+      color: $black;
     }
   }
 }

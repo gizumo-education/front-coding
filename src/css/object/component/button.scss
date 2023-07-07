@@ -1,25 +1,22 @@
 @use '../../object/utility/utility.scss';
+@import '../../foundation/_variables.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
-$header-btn-color: #92C5EA;
-
-
 .l-header {
   &__nav-btn {
     display: flex;
 
-    & li {
+    &__parts {
       text-decoration: none;
       font-size: 14px;
       font-family: Noto Sans JP;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      background-color: $header-btn-color;
+      background-color: $blue;
       margin-top: 25px;
       margin-left: 15px;
       padding-top: 15px;
       padding-bottom: 15px;
-
       text-align: center;
       border-radius: 10px;
       min-width: 140px;
@@ -36,11 +33,28 @@ $header-btn-color: #92C5EA;
       }
 
       & img {
-        display: inline
+        display: inline;
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    & a {
+      color: $white;
+
+      &:hover {
+        opacity: .8;
+        transition: .3s;
       }
 
-      & a {
-        color: #fff;
+      & button {
+        padding: 0;
+        border: none;
+        outline: none;
+        font: inherit;
+        color: inherit;
+        background: none;
+        cursor: pointer;
       }
     }
   }
@@ -48,11 +62,11 @@ $header-btn-color: #92C5EA;
 
 .s-btn {
   border-radius: 50px;
-  background-color: #DE5579;
+  background-color: $pink;
 }
 
 .s-btn-text {
-  color: #FFFFFF;
+  color: $white;
   font-size: 18px;
   font-family: Noto Sans JP;
   font-style: normal;

@@ -1,11 +1,17 @@
 @use '../../object/utility/utility.scss';
-
+@import '../../foundation/variables';
 // ページ上部のキービジュアルに関するスタイル
+
 .p-content__contents {
   width: 380px;
   height: 240px;
   position: relative;
   margin-left: 20px;
+
+  & a:hover {
+    opacity: $opacity;
+    transition: $transition;
+  }
 
   & img {
     position: absolute;
@@ -26,21 +32,21 @@
     }
 
     & p:first-child {
-      color: #FFF;
+      color: $white;
       font-size: 24px;
       font-family: Noto Sans JP;
       font-style: normal;
-      font-weight: 700;
+      font-weight: $bold;
       line-height: 24px;
     }
 
     & p:nth-child(2) {
-      color: #FFF;
+      color: $white;
       text-align: center;
       font-size: 16px;
       font-family: Noto Sans JP;
       font-style: normal;
-      font-weight: 400;
+      font-weight: $regular;
       line-height: normal;
       width: 256px;
       height: 46px;

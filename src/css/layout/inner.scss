@@ -1,10 +1,7 @@
 @use '../object/utility/utility.scss';
+@import '../foundation/variables.scss';
 
 // innerのスタイルを記述するファイル
-$gray: #98B1BE;
-$white: #fff;
-$blue: #EFF6FC;
-
 .l-inner {
   width: 1200px;
   margin: 0 auto;
@@ -20,7 +17,7 @@ $blue: #EFF6FC;
   }
 
   &__news {
-    background-color: $blue;
+    background-color: $pale-blue;
     padding-bottom: 67px;
   }
 
@@ -39,7 +36,7 @@ $blue: #EFF6FC;
 .l-title {
 
   &__content {
-    color: #000;
+    color: $black;
     font-size: 25px;
     font-family: Noto Sans JP;
     font-style: normal;
@@ -66,6 +63,11 @@ $blue: #EFF6FC;
   &__btn-wrap {
     text-align: center;
 
+    & a :hover {
+      opacity: .8;
+      transition: .3s;
+    }
+
     &__btn {
       width: 360px;
       height: 60px;
@@ -74,9 +76,6 @@ $blue: #EFF6FC;
   }
 
 }
-
-
-
 
 // content
 .l-content {
@@ -91,6 +90,11 @@ $blue: #EFF6FC;
 
     &__btn-wrap {
       text-align: center;
+
+      & a:hover {
+        opacity: .8;
+        transition: .3s;
+      }
 
       &__btn {
         display: inline-block;

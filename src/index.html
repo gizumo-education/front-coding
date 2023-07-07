@@ -15,28 +15,47 @@
   <header class="l-header">
     <nav class="p-header__nav">
       <ul class="p-header__list">
-        <li class="p-header__item"><a href="">ギズジョブ医療事務とは｜</a></li>
+        <li class="p-header__item">
+          <a href="">ギズジョブ医療事務とは｜</a>
+        </li>
+        <li class="p-header__item">
+          <a href="">
+            <img src="../src/img/icon/nav-left-01.png" alt="アイコン">こだわり検索｜</a>
+        </li>
         <li class="p-header__item"><a href="">
-            <img src="../src/img/icon/nav-left-01.svg">こだわり検索｜</a></li>
-        <li class="p-header__item"><a href="">
-            <img src="../src/img/icon/nav-left-02.svg">ギズジョブ医療事務コラム</a></li>
+            <img src="../src/img/icon/nav-left-02.png" alt="アイコン">ギズジョブ医療事務コラム</a></li>
       </ul>
       <ul class="l-header__nav-btn">
-        <li><a href=""><img src="../src/img/icon/nav-btn-01.svg">
-            <p>
-              気になるリスト
-            </p>
-          </a></li>
-        <li><a href=""><img src="../src/img/icon/nav-btn-02.svg">
-            <p>
-              閲覧履歴
-            </p>
-          </a></li>
-        <li><a href=""><img src="../src/img/icon/nav-btn-03.svg">
-            <p>
-              検索履歴
-            </p>
-          </a></li>
+        <li>
+          <a href="">
+            <div class="l-header__nav-btn__parts">
+              <img src="../src/img/icon/nav-btn-01.png" alt="アイコン">
+              <p>
+                気になるリスト
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="l-header__nav-btn__parts">
+              <img src="../src/img/icon/nav-btn-02.png" alt="アイコン">
+              <p>
+                閲覧履歴
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="l-header__nav-btn__parts">
+              <img src="../src/img/icon/nav-btn-03.png" alt="アイコン">
+              <p>
+                検索履歴
+              </p>
+            </div>
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -47,31 +66,31 @@
       <div class="l-inner">
         <div class="p-key-visual">
           <div class="p-key-visual__parts__title">
-            <img src="../src/img/picture/key-visual-parts-title.png" alt="医療事務求人を探すならギズジョブ">
+            <img src="img/picture/key-visual-parts-title.png" alt="医療事務求人を探すならギズジョブ">
           </div>
           <div class="p-key-visual__parts__right">
-            <img src="../src/img/picture/keyvisual-parts-main-1.svg" alt=" 右枠">
+            <img src="img/picture/keyvisual-parts-main-01.png" alt=" 右枠">
           </div>
           <div class="p-key-visual__parts__left">
-            <img src="../src/img/picture/keyvisual-parts-main-2.svg" alt=" 左枠">
+            <img src="img/picture/keyvisual-parts-main-02.png" alt=" 左枠">
           </div>
 
           <div class="p-key-visual__parts__rank">
-            <img src="../src/img/picture/keyvisual-parts-main-rank.png" alt=" No.1">
+            <img src="img/picture/keyvisual-parts-main-rank.png" alt=" No.1">
           </div>
           <div class="p-key-visual__parts__notice">
-            <img src="../src/img/picture/keyvisual-parts-notice.png" alt=" 注記">
+            <img src="img/picture/keyvisual-parts-notice.png" alt=" 注記">
           </div>
           <div class="p-key-visual__parts__sub__text">
-            <img src="../src/img/picture/keyvisual-parts-sub-text.png" alt=" No.1text">
+            <img src="img/picture/keyvisual-parts-sub-text.png" alt=" No.1text">
           </div>
 
           <div class="p-key-visual__parts__sub__notice">
-            <img src="../src/img/picture/keyvisual-parts-sub-notice.png" alt=" ※株式会社●●社実績調査">
+            <img src="img/picture/keyvisual-parts-sub-notice.png" alt=" ※株式会社●●社実績調査">
           </div>
 
           <div class="p-key-visual__parts__main__block">
-            <img src="../src/img/picture/keyvisual-parts-main-btn.png" alt="">
+            <img src="img/picture/keyvisual-parts-main-btn.png" alt="">
           </div>
         </div>
       </div>
@@ -94,8 +113,8 @@
                 <option value="病院内SE" label="病院内SE">病院内SE </option>
               </select>
               <select name="area" size="1">
-                <option value="茨城県" label="茨城県" selected>茨城県</option>
-                <option value="神奈川県" label="神奈川県" selected>神奈川県</option>
+                <option value="茨城県" label="茨城県">茨城県</option>
+                <option value="神奈川県" label="神奈川県">神奈川県</option>
                 <option value="群馬県" label="群馬県">群馬県</option>
                 <option value="埼玉県" label="埼玉県">埼玉県</option>
                 <option value="千葉県" label="千葉県">千葉県</option>
@@ -112,8 +131,10 @@
                 <option value="月給23万〜" label="月給23万〜">月給23万〜</option>
               </select>
               <form method="get" action="#">
-                <input type="text" placeholder="キーワード・企業名・スキルなど" id="text">
-                <input type="submit" value="検索する" id="submit">
+                <input type="text" placeholder="キーワード・企業名・スキルなど" class="text">
+                <div>
+                  <input type="submit" value="検索する" class="submit">
+                </div>
               </form>
             </div>
           </div>
@@ -126,79 +147,79 @@
         <div class="l-news">
           <div class="l-news__box">
             <div class="l-news__box__title">
-              <img src="../src/img/picture/news-box-title.png" alt="新着求人">
+              <img src="img/picture/news-box-title.png" alt="新着求人">
             </div>
 
             <ul class="p-news__box__list">
               <li class="p-news__box__list__item">
-                <img src="../src/img/picture/news-box-item-01.jpg" alt="女性の写真1">
+                <img src="img/picture/news-box-item-01.jpg" alt="女性の写真1">
                 <p class="p-news__box__list__item__text">平日・夕方までの勤務!伊勢市の伊勢赤<br>十字病院で医療事務求人</p>
                 <table class="p-news__box__list__item__grid">
                   <tr>
                     <th>給与</th>
-                    <td><img src="../src/img/picture/news-box-item-gird-01.png" alt="給与"></td>
+                    <td><img src="img/picture/news-box-item-gird-01.png" alt="給与"></td>
                   </tr>
                   <tr>
                     <th>所在地</th>
-                    <td><img src="../src/img/picture/news-box-item-grid-02.png" alt="所在地"></td>
+                    <td><img src="img/picture/news-box-item-grid-02.png" alt="所在地"></td>
                   </tr>
                   <tr>
                     <th>最寄駅</th>
-                    <td><img src="../src/img/picture/news-box-item-grid-03.png" alt="最寄り駅"></td>
+                    <td><img src="img/picture/news-box-item-grid-03.png" alt="最寄り駅"></td>
                   </tr>
                 </table>
               </li>
               <li class="p-news__box__list__item">
-                <img src="../src/img/picture/news-box-item-02.jpg" alt="女性の写真2">
+                <img src="img/picture/news-box-item-02.jpg" alt="女性の写真2">
                 <p class="p-news__box__list__item__text">平日・夕方までの勤務!伊勢市の伊勢赤<br>十字病院で医療事務求人</p>
                 <table class="p-news__box__list__item__grid">
                   <tr>
                     <th>給与</th>
-                    <td><img src="../src/img/picture/news-box-item-gird-01.png" alt="給与"></td>
+                    <td><img src="img/picture/news-box-item-gird-01.png" alt="給与"></td>
                   </tr>
                   <tr>
                     <th>所在地</th>
-                    <td><img src="../src/img/picture/news-box-item-grid-02.png" alt=""></td>
+                    <td><img src="img/picture/news-box-item-grid-02.png" alt=""></td>
                   </tr>
                   <tr>
                     <th>最寄駅</th>
-                    <td><img src="../src/img/picture/news-box-item-grid-03.png" alt="最寄り駅"></td>
+                    <td><img src="img/picture/news-box-item-grid-03.png" alt="最寄り駅"></td>
                   </tr>
                 </table>
               </li>
               <li class="p-news__box__list__item">
-                <img src="../src/img/picture/news-box-item-03.jpg" alt="女性の写真3">
+                <img src="img/picture/news-box-item-03.jpg" alt="女性の写真3">
                 <p class="p-news__box__list__item__text">平日・夕方までの勤務!伊勢市の伊勢赤<br>十字病院で医療事務求人</p>
                 <table class="p-news__box__list__item__grid">
                   <tr>
                     <th>給与</th>
-                    <td><img src="../src/img/picture/news-box-item-gird-01.png" alt="給与"></td>
+                    <td><img src="img/picture/news-box-item-gird-01.png" alt="給与"></td>
                   </tr>
                   <tr>
                     <th>所在地</th>
-                    <td><img src="../src/img/picture/news-box-item-grid-02.png" alt=""></td>
+                    <td><img src="img/picture/news-box-item-grid-02.png" alt=""></td>
                   </tr>
                   <tr>
                     <th>最寄駅</th>
-                    <td><img src="../src/img/picture/news-box-item-grid-03.png" alt="最寄り駅"></td>
+                    <td><img src="img/picture/news-box-item-grid-03.png" alt="最寄り駅"></td>
                   </tr>
                 </table>
               </li>
               <li class="p-news__box__list__item">
-                <img src="../src/img/picture/news-box-item-04.jpg" alt="女性の写真4">
+                <img src="img/picture/news-box-item-04.jpg" alt="女性の写真4">
                 <p class="p-news__box__list__item__text">平日・夕方までの勤務!伊勢市の伊勢赤<br>十字病院で医療事務求人</p>
                 <table class="p-news__box__list__item__grid">
                   <tr>
                     <th>給与</th>
-                    <td><img src="../src/img/picture/news-box-item-gird-01.png" alt="月給"></td>
+                    <td><img src="img/picture/news-box-item-gird-01.png" alt="月給"></td>
                   </tr>
                   <tr>
                     <th>所在地</th>
-                    <td><img src="../src/img/picture/news-box-item-grid-02.png" alt="所在地"></td>
+                    <td><img src="img/picture/news-box-item-grid-02.png" alt="所在地"></td>
                   </tr>
                   <tr>
                     <th>最寄駅</th>
-                    <td><img src="../src/img/picture/news-box-item-grid-03.png" alt="最寄駅"></td>
+                    <td><img src="img/picture/news-box-item-grid-03.png" alt="最寄駅"></td>
                   </tr>
                 </table>
               </li>
@@ -206,11 +227,13 @@
           </div>
         </div>
         <div class="l-news__btn-wrap">
-          <div class="s-btn l-news__btn-wrap__btn">
-            <p class="s-btn-text l-content__contents__btn-wrap__btn__text">
-              新着求人一覧をもっと見る
-            </p>
-          </div>
+          <a href="">
+            <div class="s-btn l-news__btn-wrap__btn">
+              <p class="s-btn-text l-content__contents__btn-wrap__btn__text">
+                新着求人一覧をもっと見る
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -286,7 +309,7 @@
                 <img src="img/picture/content-flow-num-02.png" alt="step2">
               </div>
               <div class="p-content__flow__parts__illust">
-                <img src="img/picture/content-flow-illust-02.svg" alt="虫眼鏡のイラスト">
+                <img src="img/picture/content-flow-illust-02.png" alt="虫眼鏡のイラスト">
               </div>
               <h1>気になる企業の<br>
                 ピックアップ</h1>
@@ -299,7 +322,7 @@
                 <img src="img/picture/contente-flow-num-03.png" alt="step3">
               </div>
               <div class="p-content__flow__parts__illust">
-                <img src="img/picture/content-flow-illust-03.svg" alt="手紙のイラスト">
+                <img src="img/picture/content-flow-illust-03.png" alt="手紙のイラスト">
               </div>
 
               <h1>複数企業に応募</h1>
@@ -312,7 +335,7 @@
                 <img src="img/picture/content-flow-num-04.png" alt="step1">
               </div>
               <div class="p-content__flow__parts__illust">
-                <img src="img/picture/content-flow-illust-04.svg" alt="キラキラのイラスト">
+                <img src="img/picture/content-flow-illust-04.png" alt="キラキラのイラスト">
               </div>
 
               <h1>内定・転職！</h1>
@@ -330,40 +353,48 @@
 
           <div class="l-content__main">
             <div class="p-content__contents">
-              <img src="img/picture/content-contents-01.png" alt="ノートの画像">
-              <img src="img/picture/content-contents-overlay.png" alt="オーバーレイ">
-              <div class="p-content__contents__text">
-                <p>転職マニュアル</p>
-                <p>転職活動の基礎知識、面接対策など
-                  転職のコツをお教えします</p>
-              </div>
+              <a href="">
+                <img src="img/picture/content-contents-01.png" alt="ノートの画像">
+                <img src="img/picture/content-contents-overlay.png" alt="オーバーレイ">
+                <div class="p-content__contents__text">
+                  <p>転職マニュアル</p>
+                  <p>転職活動の基礎知識、面接対策など
+                    転職のコツをお教えします</p>
+                </div>
+              </a>
             </div>
             <div class="p-content__contents">
-              <img src="img/picture/content-contents-02.png" alt="PCの画像">
-              <img src="img/picture/content-contents-overlay.png" alt="オーバーレイ">
-              <div class="p-content__contents__text">
-                <p>医療事務業界の豆知識</p>
-                <p>スキルアップ・労働環境、給与事情など
-                  知って得する業界の豆知識を公開</p>
-              </div>
+              <a href="">
+                <img src="img/picture/content-contents-02.png" alt="PCの画像">
+                <img src="img/picture/content-contents-overlay.png" alt="オーバーレイ">
+                <div class="p-content__contents__text">
+                  <p>医療事務業界の豆知識</p>
+                  <p>スキルアップ・労働環境、給与事情など
+                    知って得する業界の豆知識を公開</p>
+                </div>
+              </a>
             </div>
 
             <div class="p-content__contents">
-              <img src="img/picture/content-contents-01.png" alt="ノートの画像">
-              <img src="img/picture/content-contents-overlay.png" alt="オーバーレイ">
-              <div class="p-content__contents__text">
-                <p>転職マニュアル</p>
-                <p>転職活動の基礎知識、面接対策など
-                  転職のコツをお教えします</p>
-              </div>
+              <a href="">
+                <img src="img/picture/content-contents-01.png" alt="ノートの画像">
+                <img src="img/picture/content-contents-overlay.png" alt="オーバーレイ">
+                <div class="p-content__contents__text">
+                  <p>転職マニュアル</p>
+                  <p>転職活動の基礎知識、面接対策など
+                    転職のコツをお教えします</p>
+                </div>
+              </a>
             </div>
           </div>
           <div class="l-content__contents__btn-wrap">
-            <div class="s-btn l-content__contents__btn-wrap__btn">
-              <p class="s-btn-text l-content__contents__btn-wrap__btn__text">
-                医療事務コラムをもっと見る
-              </p>
-            </div>
+            <a href="">
+              <div class="s-btn l-content__contents__btn-wrap__btn">
+                <p class="s-btn-text l-content__contents__btn-wrap__btn__text">
+                  医療事務コラムをもっと見る
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -386,8 +417,8 @@
                   <option value="病院内SE" label="病院内SE">病院内SE </option>
                 </select>
                 <select name="area" size="1">
-                  <option value="茨城県" label="茨城県" selected>茨城県</option>
-                  <option value="神奈川県" label="神奈川県" selected>神奈川県</option>
+                  <option value="茨城県" label="茨城県">茨城県</option>
+                  <option value="神奈川県" label="神奈川県">神奈川県</option>
                   <option value="群馬県" label="群馬県">群馬県</option>
                   <option value="埼玉県" label="埼玉県">埼玉県</option>
                   <option value="千葉県" label="千葉県">千葉県</option>
@@ -404,8 +435,12 @@
                   <option value="月給23万〜" label="月給23万〜">月給23万〜</option>
                 </select>
                 <form method="get" action="#" class="search-keyword">
-                  <input type="text" placeholder="キーワード・企業名・スキルなど" id="text">
-                  <input type="submit" value="検索する" id="submit">
+                  <input type="text" placeholder="キーワード・企業名・スキルなど" class="text">
+
+                  <div>
+                    <input type="submit" value="検索する" class="submit">
+                  </div>
+
                 </form>
               </div>
             </div>
@@ -449,6 +484,8 @@
           </div>
         </div>
       </div>
+    </div>
+
 
   </footer>
 
