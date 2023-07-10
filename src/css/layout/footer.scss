@@ -66,4 +66,17 @@
       margin-top: 0px;
     }
   }
+
+  &__bar {
+    background-color: $dark-gray;
+    text-align: center;
+    color: $black;
+    font-family: Noto Sans JP;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 14px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+  }
 }
