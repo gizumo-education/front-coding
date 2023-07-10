@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
 @import '../../foundation/_variables.scss';
+
 // 共通パーツであるボタンのスタイルを記述するファイル
 .l-header {
   &__nav-btn {
@@ -41,10 +42,10 @@
 
     & a {
       color: $white;
+      transition: $transition;
 
       &:hover {
-        opacity: .8;
-        transition: .3s;
+        opacity: $opacity;
       }
 
       & button {
@@ -60,9 +61,22 @@
   }
 }
 
+.s-btn-wrap {
+
+  & a {
+    transition: $transition;
+
+  }
+
+  & a:hover {
+    opacity: $opacity;
+  }
+}
+
 .s-btn {
   border-radius: 50px;
   background-color: $pink;
+
 }
 
 .s-btn-text {

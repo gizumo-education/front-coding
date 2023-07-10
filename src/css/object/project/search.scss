@@ -106,12 +106,14 @@
         font-style: normal;
         font-weight: $bold;
         line-height: 18px;
+        cursor: pointer;
       }
 
       & div {
+        transition: $transition;
+
         &:hover {
           opacity: $opacity;
-          transition: $transition;
         }
       }
     }

@@ -4,9 +4,10 @@
 //flow図
 .p-content__flow {
   display: flex;
+  justify-content: center;
 
   &__parts {
-    width: calc(25% - 66px/ 4);
+    width: 277px;
     background-color: $white;
     margin-left: 22px;
     border: 1px solid $pink;
@@ -16,6 +17,11 @@
     padding: 8.87px;
     position: relative;
 
+    &__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     &:first-child {
       margin-left: 0px;
@@ -43,7 +49,7 @@
       text-align: center;
     }
 
-    & h1 {
+    & h2 {
       color: $black;
       text-align: center;
       font-size: 24px;
@@ -52,6 +58,8 @@
       font-weight: $bold;
       line-height: 30px;
       margin-top: 20px;
+      position: absolute;
+      top: 178px;
     }
 
     & p {
@@ -63,15 +71,18 @@
       line-height: normal;
       width: 237px;
       height: 60px;
-      margin: 18px auto 0 auto;
+      position: absolute;
+      top: 270px;
+
     }
+
 
     &:not(:last-child) {
       &::after {
         content: url(../img/icon/content-next.png);
         position: absolute;
         top: 50%;
-        left: 282px;
+        left: 276px;
       }
     }
   }

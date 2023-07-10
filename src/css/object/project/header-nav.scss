@@ -28,10 +28,22 @@
     font-weight: $regular;
     line-height: normal;
     text-decoration: none;
+    margin-left: 15px;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    & span {
+      margin-left: 10px;
+    }
+
+    a {
+      transition: $transition;
+    }
 
     & a:hover {
       opacity: $opacity;
-      transition: $transition;
       cursor: pointer;
     }
 
@@ -42,5 +54,14 @@
     & a {
       color: $black;
     }
+  }
+}
+
+// TAB
+@media screen and (max-width: 1199px) {
+  .p-header__nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0.6%;
   }
 }

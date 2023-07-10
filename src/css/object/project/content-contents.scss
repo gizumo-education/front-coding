@@ -1,16 +1,16 @@
 @use '../../object/utility/utility.scss';
 @import '../../foundation/variables';
-// ページ上部のキービジュアルに関するスタイル
+// content
 
 .p-content__contents {
   width: 380px;
   height: 240px;
   position: relative;
   margin-left: 20px;
+  transition: $transition;
 
-  & a:hover {
+  &:hover {
     opacity: $opacity;
-    transition: $transition;
   }
 
   & img {
