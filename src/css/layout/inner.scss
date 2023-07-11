@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 
-.l-background {
+.l-inner-background {
   &__key {
     background-color: $gray;
   }
@@ -36,7 +36,7 @@
   }
 }
 
-.l-title {
+.l-inner-title {
 
   &__content {
     color: $black;
@@ -52,7 +52,7 @@
 }
 
 // news
-.l-news {
+.l-inner-news {
   &__box {
     padding-top: 64px;
     padding-bottom: 188px;
@@ -87,7 +87,7 @@
 }
 
 // content
-.l-content {
+.l-inner-content {
   &__main {
     display: flex;
     flex-wrap: nowrap;
