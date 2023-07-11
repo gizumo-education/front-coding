@@ -31,23 +31,22 @@
 
     <!--トグルメニュー-->
     <div class="l-header__toggle">
-      <input id="drawer_input" class="drawer_hidden" type="checkbox">
-      <label for="drawer_input" class="drawer_open">
+      <div for="drawer_input" class="drawer_open">
         <span></span>
-      </label>
+      </div>
       <nav class="nav_content">
         <ul class="nav_list">
-          <li><a href="">トップ</a></li>
-          <li><a href="">新着求人</a></li>
-          <li><a href="">4つの特徴</a></li>
-          <li><a href="">転職までの流れ</a></li>
-          <li><a href="">転職お役立ちコンテンツ</a></li>
+          <li><a href="#top">トップ</a></li>
+          <li><a href="#recruit">新着求人</a></li>
+          <li><a href="#feature">4つの特徴</a></li>
+          <li><a href="#flow">転職までの流れ</a></li>
+          <li><a href="#content">転職お役立ちコンテンツ</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="l-main">
+  <main class="l-main" id="top">
     <div class="p-keyvisual">
       <div class="p-keyvisual__image">
         <img class="p-keyvisual__image__pc" src="img/picture/p-keyvisual.jpg" alt="医療事務求人を探すならギズジョブ">
@@ -111,7 +110,7 @@
     </div>
 
     <!--新着求人-->
-    <div class="p-news-images">
+    <div class="p-news-images" id="recruit">
       <div class="u-wrapper">
         <div class="p-news-images__title">
           新着求人
@@ -209,7 +208,7 @@
     </div>
 
   <!--特徴欄-->
-  <div class="p-unit">
+  <div class="p-unit" id="feature">
     <h1 class="p-unit__title">
       ギズジョブの4つの特徴
     </h1>
@@ -250,7 +249,7 @@
   </div>
 
   <!--転職までの流れ-->
-  <div class="p-unit-flow">
+  <div class="p-unit-flow" id="flow">
     <div class="p-unit-flow__title">
       転職までの流れ
     </div>
@@ -310,7 +309,7 @@
   </div>
 
   <!--役立ちコンテンツ-->
-  <div class="p-unit-useful ">
+  <div class="p-unit-useful" id="content">
     <div class="p-unit-useful__title">
       転職お役立ちコンテンツ
     </div>

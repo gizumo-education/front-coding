@@ -20,7 +20,7 @@
     justify-content: center;
 
     & > a {
-      color: utility.$black;
+      margin-left: 20px;
       transition: .3s;
     }
   }
@@ -28,6 +28,7 @@
   &__image {
     margin-left: 20px;
     margin-top: 25px;
+    
     &:first-child {
       margin-left: 0;
     }
@@ -41,6 +42,7 @@
     }
     
     & > p {
+      color: utility.$black;
       width: 278px;
       margin-top: 8.08px;
       font-size: 16px;
@@ -53,6 +55,7 @@
     flex-direction: row;
     font-size: 14px;
     margin-top: 7px;
+    color: utility.$black;
 
     & > dt {
       width: 60px;
@@ -76,6 +79,34 @@
     font-weight: utility.$bold;
     transition: .3s;
   }
+
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-track {
+    display: flex;
+
+    .slick-slide {
+      width: 280px;
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      @include re.tab {
+        width: 2.2rem;
+        margin-left: 0.2rem;
+      }
+      @include re.sp {
+        width: 3.7rem;
+        margin-left: 0;
+      }
+      
+    }
+  }
+
 }
 
 //レスポンシブTAB
@@ -129,6 +160,7 @@
 @include re.sp {
   .p-news-images {
     text-align: center;
+    margin-top: 0.25rem;
     padding: 0.3rem 0 0.6rem 0;
 
     &__title {
@@ -146,10 +178,10 @@
         display: none;
       }
       &__pc {
-        display: none;
+        //display: none;
       }
       &__sp {
-        display: block;
+        //display: block;
         margin: 0 auto;
       }
 
