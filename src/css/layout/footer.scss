@@ -1,2 +1,118 @@
 @use '../object/utility/utility.scss';
+@import '../foundation/variables.scss';
+
 // footerのスタイルを記述するファイル
+.l-background__footer {
+  background-color: $pale-blue;
+  padding-top: 79px;
+  padding-bottom: 28px;
+  min-width: 1200px;
+}
+
+.l-footer {
+
+
+  & p {
+    color: $black;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: normal;
+    padding-left: 3%;
+  }
+
+  &__list {
+    display: block;
+    width: 160px;
+    height: 108px;
+    margin-left: 39px;
+    margin-top: 27px;
+
+    &:first-child {
+      margin-left: 0px;
+      width: 98px;
+    }
+
+    &__item {
+      color: $black;
+      font-family: Noto Sans JP;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: $regular;
+      line-height: 36px;
+
+
+
+      & a {
+        transition: $transition;
+        color: $black;
+
+        &:hover {
+          opacity: $opacity;
+        }
+      }
+    }
+  }
+
+  &__lists {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  &__ads {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    margin-left: 35%;
+
+    & a {
+      transition: $transition;
+
+      &:hover {
+        opacity: $opacity;
+      }
+    }
+  }
+
+  &__ad {
+    background-image: url(../img/picture/footer-ad-base.png);
+    width: 320px;
+    height: 85px;
+    text-align: right;
+
+    &__bottom {
+      background-image: url(../img/picture/footer-ad-base.png);
+      width: 320px;
+      height: 85px;
+      text-align: right;
+      margin-top: 25px;
+    }
+
+    &:first-child {
+      margin-top: 0px;
+    }
+
+    & a {
+      transition: $transition;
+
+    }
+  }
+
+  &__bar {
+    background-color: $dark-gray;
+    text-align: center;
+    color: $black;
+    font-family: Noto Sans JP;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 14px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    min-width: 1200px;
+  }
+}

@@ -1,0 +1,99 @@
+@use '../../object/utility/utility.scss';
+@import'../../foundation/_variables.scss';
+
+// headerのスタイルを記述するファイル
+.p-header {
+  padding-right: 100px;
+  padding-bottom: 25px;
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 397px;
+    min-width: 608px;
+    min-height: 23px;
+
+  }
+
+  &__item {
+    list-style: none;
+    font-size: 16px;
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 15px;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    & span {
+      margin-left: 15px;
+    }
+
+    a {
+      transition: $transition;
+    }
+
+    & a:hover {
+      opacity: $opacity;
+      cursor: pointer;
+    }
+
+    & img {
+      margin-top: 5.5px;
+    }
+
+    & a {
+      color: $black;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+  }
+}
+
+// TAB
+@media screen and (max-width: 1199px) {
+  .p-header__nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0.6%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-header {
+    &__list {
+      display: none;
+    }
+
+
+    &__hamburger {
+      display: block;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      appearance: none;
+      padding: 0px;
+      text-align: center;
+
+      & img {
+        width: 100px;
+        height: 76px;
+      }
+    }
+
+    &__nav-btn__item {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@use '../../object/utility/utility.scss';
+@import '../../foundation/variables.scss';
+
+// news
+.p-news {
+  &__box {
+    &__list {
+      display: flex;
+      justify-content: center;
+
+      &__item {
+        width: 280px;
+        height: 200px;
+        margin-top: 25px;
+        margin-left: 20px;
+
+        & img {
+          border-radius: 10px;
+        }
+
+        &:first-child {
+          margin-left: 0px;
+        }
+
+        & a {
+          transition: $transition;
+
+          &:hover {
+            opacity: $opacity;
+          }
+
+        }
+
+        &__text {
+          color: $black;
+          font-size: 16px;
+          font-family: Noto Sans JP;
+          font-style: normal;
+          font-weight: $regular;
+          line-height: 22px;
+          margin-top: 8px;
+        }
+
+        &__grid {
+          margin-top: 7px;
+          display: flex;
+
+          & th {
+            background-color: $light-pink;
+            width: 60px;
+            text-align: center;
+            color: $black;
+            font-size: 14px;
+            font-family: Noto Sans JP;
+            font-style: normal;
+            font-weight: $regular;
+            line-height: normal;
+            margin-top: 4px;
+            display: inline-block;
+          }
+
+          & td {
+            display: inline-block;
+            margin-left: 10px;
+
+            & p {
+              color: $black;
+              font-family: Noto Sans JP;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

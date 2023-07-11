@@ -1,0 +1,56 @@
+@use '../../object/utility/utility.scss';
+@import '../../foundation/variables';
+// content
+
+.p-content__contents {
+  width: 380px;
+  height: 240px;
+  position: relative;
+  margin-left: 20px;
+  transition: $transition;
+
+  &:hover {
+    opacity: $opacity;
+  }
+
+  & img {
+    position: absolute;
+  }
+
+  &:first-child {
+    margin-left: 0px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 71px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & p {
+      text-align: center;
+    }
+
+    & p:first-child {
+      color: $white;
+      font-size: 24px;
+      font-family: Noto Sans JP;
+      font-style: normal;
+      font-weight: $bold;
+      line-height: 24px;
+    }
+
+    & p:nth-child(2) {
+      color: $white;
+      text-align: center;
+      font-size: 16px;
+      font-family: Noto Sans JP;
+      font-style: normal;
+      font-weight: $regular;
+      line-height: normal;
+      width: 256px;
+      height: 46px;
+      margin-top: 44px;
+    }
+  }
+}

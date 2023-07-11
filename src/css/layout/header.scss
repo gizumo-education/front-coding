@@ -1,2 +1,23 @@
 @use '../object/utility/utility.scss';
+@import '../foundation/variables.scss';
+
 // headerのスタイルを記述するファイル
+.l-header {
+  position: sticky;
+  top: 0;
+  background-color: $white;
+  height: 100px;
+  z-index: 10000;
+  padding-right: 100px;
+  min-width: 1199px;
+}
+
+@media screen and (max-width: 1199px) {
+  .l-header {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+ 
+}
