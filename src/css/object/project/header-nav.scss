@@ -55,6 +55,10 @@
       color: $black;
     }
   }
+
+  &__hamburger {
+    display: none;
+  }
 }
 
 // TAB
@@ -63,5 +67,33 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 0.6%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-header {
+    &__list {
+      display: none;
+    }
+
+
+    &__hamburger {
+      display: block;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      appearance: none;
+      padding: 0px;
+      text-align: center;
+
+      & img {
+        width: 100px;
+        height: 76px;
+      }
+    }
+
+    &__nav-btn__item {
+      display: none;
+    }
   }
 }

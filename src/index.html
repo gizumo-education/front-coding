@@ -27,10 +27,9 @@
         <li class="p-header__item"><a href="">
             <img src="../src/img/icon/nav-left-02.png" alt="アイコン">ギズジョブ医療事務コラム</a>
         </li>
-
       </ul>
       <ul class="l-header__nav-btn">
-        <li>
+        <li class="p-header__nav-btn__item">
           <a href="">
             <div class="l-header__nav-btn__parts">
               <img src="../src/img/icon/nav-btn-01.png" alt="アイコン">
@@ -40,7 +39,7 @@
             </div>
           </a>
         </li>
-        <li>
+        <li class="p-header__nav-btn__item">
           <a href="">
             <div class="l-header__nav-btn__parts">
               <img src="../src/img/icon/nav-btn-02.png" alt="アイコン">
@@ -50,7 +49,7 @@
             </div>
           </a>
         </li>
-        <li>
+        <li class="p-header__nav-btn__item">
           <a href="">
             <div class="l-header__nav-btn__parts">
               <img src="../src/img/icon/nav-btn-03.png" alt="アイコン">
@@ -61,6 +60,10 @@
           </a>
         </li>
       </ul>
+
+      <button class="p-header__hamburger">
+        <img src="img/icon/nav-btn-hamberger.png" alt="ハンバーガーメニュー">
+      </button>
     </nav>
   </header>
   <!-- メイン -->
@@ -107,34 +110,35 @@
             <p class="p-search__box__title">お仕事検索</p>
             <p class="p-search__box__text">働きたい職種・地域・希望給与を入れて検索！</p>
             <div class="p-search__box__select">
-              <select name="job" size="1">
-                <option value="医療事務" label="医療事務" selected>医療事務</option>
-                <option value="調剤事務" label="調剤事務">調剤事務</option>
-                <option value="診療情報管理士" label="診療情報管理士">診療情報管理士</option>
-                <option value="歯科助手" label="歯科助手">歯科助手 </option>
-                <option value="歯科事務" label="歯科事務">歯科事務 </option>
-                <option value="看護補助・看護助手" label="看護補助・看護助手">調剤事務 </option>
-                <option value="病院内SE" label="病院内SE">病院内SE </option>
-              </select>
-              <select name="area" size="1">
-                <option value="茨城県" label="茨城県">茨城県</option>
-                <option value="神奈川県" label="神奈川県">神奈川県</option>
-                <option value="群馬県" label="群馬県">群馬県</option>
-                <option value="埼玉県" label="埼玉県">埼玉県</option>
-                <option value="千葉県" label="千葉県">千葉県</option>
-                <option value="東京都" label="東京都" selected>東京都</option>
-                <option value="栃木県" label="栃木県">栃木県</option>
-              </select>
-              <select name="Salary" size="1">
-                <option value="月給17万〜" label="月給17万〜">月給17万〜</option>
-                <option value="月給18万〜" label="月給18万〜">月給18万〜</option>
-                <option value="月給19万〜" label="月給19万〜">月給19万〜</option>
-                <option value="月給20万〜" label="月給20万〜" selected>月給20万〜</option>
-                <option value="月給21万〜" label="月給21万〜">月給21万〜</option>
-                <option value="月給22万〜" label="月給22万〜">月給22万〜</option>
-                <option value="月給23万〜" label="月給23万〜">月給23万〜</option>
-              </select>
               <form method="get" action="#">
+                <select name="job" size="1">
+                  <option value="医療事務" label="医療事務" selected>医療事務</option>
+                  <option value="調剤事務" label="調剤事務">調剤事務</option>
+                  <option value="診療情報管理士" label="診療情報管理士">診療情報管理士</option>
+                  <option value="歯科助手" label="歯科助手">歯科助手 </option>
+                  <option value="歯科事務" label="歯科事務">歯科事務 </option>
+                  <option value="看護補助・看護助手" label="看護補助・看護助手">調剤事務 </option>
+                  <option value="病院内SE" label="病院内SE">病院内SE </option>
+                </select>
+                <select name="area" size="1">
+                  <option value="茨城県" label="茨城県">茨城県</option>
+                  <option value="神奈川県" label="神奈川県">神奈川県</option>
+                  <option value="群馬県" label="群馬県">群馬県</option>
+                  <option value="埼玉県" label="埼玉県">埼玉県</option>
+                  <option value="千葉県" label="千葉県">千葉県</option>
+                  <option value="東京都" label="東京都" selected>東京都</option>
+                  <option value="栃木県" label="栃木県">栃木県</option>
+                </select>
+                <select name="Salary" size="1">
+                  <option value="月給17万〜" label="月給17万〜">月給17万〜</option>
+                  <option value="月給18万〜" label="月給18万〜">月給18万〜</option>
+                  <option value="月給19万〜" label="月給19万〜">月給19万〜</option>
+                  <option value="月給20万〜" label="月給20万〜" selected>月給20万〜</option>
+                  <option value="月給21万〜" label="月給21万〜">月給21万〜</option>
+                  <option value="月給22万〜" label="月給22万〜">月給22万〜</option>
+                  <option value="月給23万〜" label="月給23万〜">月給23万〜</option>
+                </select>
+
                 <input type="text" placeholder="キーワード・企業名・スキルなど" class="text">
                 <div>
                   <input type="submit" value="検索する" class="submit">
@@ -430,34 +434,34 @@
               <p class="p-search__box__title">お仕事検索</p>
               <p class="p-search__box__text">働きたい職種・地域・希望給与を入れて検索！</p>
               <div class="p-search__box__select">
-                <select name="job" size="1">
-                  <option value="医療事務" label="医療事務" selected>医療事務</option>
-                  <option value="調剤事務" label="調剤事務">調剤事務</option>
-                  <option value="診療情報管理士" label="診療情報管理士">診療情報管理士</option>
-                  <option value="歯科助手" label="歯科助手">歯科助手 </option>
-                  <option value="歯科事務" label="歯科事務">歯科事務 </option>
-                  <option value="看護補助・看護助手" label="看護補助・看護助手">調剤事務 </option>
-                  <option value="病院内SE" label="病院内SE">病院内SE </option>
-                </select>
-                <select name="area" size="1">
-                  <option value="茨城県" label="茨城県">茨城県</option>
-                  <option value="神奈川県" label="神奈川県">神奈川県</option>
-                  <option value="群馬県" label="群馬県">群馬県</option>
-                  <option value="埼玉県" label="埼玉県">埼玉県</option>
-                  <option value="千葉県" label="千葉県">千葉県</option>
-                  <option value="東京都" label="東京都" selected>東京都</option>
-                  <option value="栃木県" label="栃木県">栃木県</option>
-                </select>
-                <select name="Salary" size="1">
-                  <option value="月給17万〜" label="月給17万〜">月給17万〜</option>
-                  <option value="月給18万〜" label="月給18万〜">月給18万〜</option>
-                  <option value="月給19万〜" label="月給19万〜">月給19万〜</option>
-                  <option value="月給20万〜" label="月給20万〜" selected>月給20万〜</option>
-                  <option value="月給21万〜" label="月給21万〜">月給21万〜</option>
-                  <option value="月給22万〜" label="月給22万〜">月給22万〜</option>
-                  <option value="月給23万〜" label="月給23万〜">月給23万〜</option>
-                </select>
-                <form method="get" action="#" class="search-keyword">
+                <form method="get" action="#">
+                  <select name="job" size="1">
+                    <option value="医療事務" label="医療事務" selected>医療事務</option>
+                    <option value="調剤事務" label="調剤事務">調剤事務</option>
+                    <option value="診療情報管理士" label="診療情報管理士">診療情報管理士</option>
+                    <option value="歯科助手" label="歯科助手">歯科助手 </option>
+                    <option value="歯科事務" label="歯科事務">歯科事務 </option>
+                    <option value="看護補助・看護助手" label="看護補助・看護助手">調剤事務 </option>
+                    <option value="病院内SE" label="病院内SE">病院内SE </option>
+                  </select>
+                  <select name="area" size="1">
+                    <option value="茨城県" label="茨城県">茨城県</option>
+                    <option value="神奈川県" label="神奈川県">神奈川県</option>
+                    <option value="群馬県" label="群馬県">群馬県</option>
+                    <option value="埼玉県" label="埼玉県">埼玉県</option>
+                    <option value="千葉県" label="千葉県">千葉県</option>
+                    <option value="東京都" label="東京都" selected>東京都</option>
+                    <option value="栃木県" label="栃木県">栃木県</option>
+                  </select>
+                  <select name="Salary" size="1">
+                    <option value="月給17万〜" label="月給17万〜">月給17万〜</option>
+                    <option value="月給18万〜" label="月給18万〜">月給18万〜</option>
+                    <option value="月給19万〜" label="月給19万〜">月給19万〜</option>
+                    <option value="月給20万〜" label="月給20万〜" selected>月給20万〜</option>
+                    <option value="月給21万〜" label="月給21万〜">月給21万〜</option>
+                    <option value="月給22万〜" label="月給22万〜">月給22万〜</option>
+                    <option value="月給23万〜" label="月給23万〜">月給23万〜</option>
+                  </select>
                   <input type="text" placeholder="キーワード・企業名・スキルなど" class="text">
 
                   <div>

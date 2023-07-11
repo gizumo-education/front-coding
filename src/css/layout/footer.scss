@@ -19,6 +19,7 @@
     font-style: normal;
     font-weight: $regular;
     line-height: normal;
+    padding-left: 3%;
   }
 
   &__list {
@@ -30,7 +31,7 @@
 
     &:first-child {
       margin-left: 0px;
-      width: 96px;
+      width: 98px;
     }
 
     &__item {
@@ -40,6 +41,8 @@
       font-style: normal;
       font-weight: $regular;
       line-height: 36px;
+
+
 
       & a {
         transition: $transition;
@@ -56,13 +59,15 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
   &__ads {
     display: flex;
     flex-flow: column;
     align-items: flex-end;
-    margin-left: 560px;
+    margin-left: 35%;
 
   }
 
