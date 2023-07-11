@@ -69,6 +69,13 @@
     align-items: flex-end;
     margin-left: 35%;
 
+    & a {
+      transition: $transition;
+
+      &:hover {
+        opacity: $opacity;
+      }
+    }
   }
 
   &__ad {
@@ -76,7 +83,14 @@
     width: 320px;
     height: 85px;
     text-align: right;
-    margin-top: 25px;
+
+    &__bottom {
+      background-image: url(../img/picture/footer-ad-base.png);
+      width: 320px;
+      height: 85px;
+      text-align: right;
+      margin-top: 25px;
+    }
 
     &:first-child {
       margin-top: 0px;
@@ -85,9 +99,6 @@
     & a {
       transition: $transition;
 
-      &:hover {
-        opacity: $opacity;
-      }
     }
   }
 
