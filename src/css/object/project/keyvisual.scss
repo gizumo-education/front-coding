@@ -67,5 +67,22 @@ $white: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    & p {
+      color: $green;
+      font-family: Noto Sans JP;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: $regular;
+      line-height: normal;
+
+      & span {
+        font-family: Noto Sans JP;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: $bold;
+        line-height: normal;
+      }
+    }
   }
 }
