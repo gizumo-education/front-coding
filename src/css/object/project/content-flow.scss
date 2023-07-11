@@ -60,6 +60,13 @@
       margin-top: 20px;
       position: absolute;
       top: 178px;
+
+      &.one-line {
+        width: 168px;
+        height: 35px;
+        margin-top: 33px;
+
+      }
     }
 
     & p {
