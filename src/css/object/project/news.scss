@@ -38,6 +38,7 @@
           font-style: normal;
           font-weight: $regular;
           line-height: 22px;
+          margin-top: 8px;
         }
 
         &__grid {
@@ -61,6 +62,15 @@
           & td {
             display: inline-block;
             margin-left: 10px;
+
+            & p {
+              color: $black;
+              font-family: Noto Sans JP;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
           }
         }
       }
