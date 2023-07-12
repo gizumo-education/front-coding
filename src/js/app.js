@@ -18,9 +18,8 @@ $(function() {
     return;
   });
 
-let slidesToShowNum = 4;
-let item = $('.p-news-images__image').length;
-//console.log(item);
+const slidesToShowNum = 4;
+const item = $('.p-news-images__image').length;
 if (item <= slidesToShowNum) {
   for (let i = 0; i <= slidesToShowNum + 1 - item ; i++) {
     $('.p-news-images__image:nth-child('+ i + ')').clone().appendTo('.p-news-images__group');
@@ -28,8 +27,7 @@ if (item <= slidesToShowNum) {
 }
   $('.p-news-images__group').slick({
     autoplay: true,
-    //autoplaySpeed: 1000,
-    speed: 2000,
+    speed: 500,
     cssEase: "linear",
     slidesToShow: slidesToShowNum,
     swipe: false,
