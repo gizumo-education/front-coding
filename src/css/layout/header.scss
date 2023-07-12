@@ -177,38 +177,64 @@
     .drawer_open span:after {
       top: 0.16rem;
     }
+    
+    //Xに変更
+    .is-active {
+      .drawer_open {
+        & > span {
+          background: rgba(255, 255, 255, 0);
+        }
+
+        & > span:before {
+          bottom: 0;
+          transform: rotate(45deg);
+        }
+
+        & > span:after {
+          top: 0;
+          transform: rotate(-45deg);
+        }
+      }
+    }
       
 
     .nav_content {
-      display: none;
       width: 100%;
-      height: 5.54rem;
+      height: 100%;
       position: fixed;
       margin-top: 0.7rem;
+      padding-top: 0.57rem;
+      padding-left: 0.6rem;
       top: 0;
-      left: 0;
-      z-index: 99;
+      left: 100%;
+      z-index: 999;
       background-color: rgba(0, 0, 0, .7);
       transition: .5s;
     }
 
+
     .nav_list {
       list-style: none;
-      margin-top: 0.57rem;
-      margin-left: 0.6rem;
 
-      & > li {
+      & > a {
+        display: flex;
         margin-top: 0.38rem;
-        & > a {
-          font-size: 0.22rem;
-          font-weight: utility.$bold;
-          color: utility.$white;
-        }
+        font-size: 0.22rem;
+        font-weight: utility.$bold;
+        color: utility.$white;
 
         &:first-child {
           margin-top: 0;
         }
       }
     }
+
+    //トグル押されたとき
+    .is-open {
+      left: 0;
+    }
+  }
+  .no-scroll {
+    overflow: hidden;
   }
 }
