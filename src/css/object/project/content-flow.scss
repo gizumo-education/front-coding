@@ -7,6 +7,7 @@
   justify-content: center;
 
   &__parts {
+    display: block;
     width: 277px;
     background-color: $white;
     margin-left: 22px;
@@ -49,7 +50,7 @@
       text-align: center;
     }
 
-    & h3 {
+    & h2 {
       color: $black;
       text-align: center;
       font-size: 24px;
@@ -89,7 +90,7 @@
         content: url(../img/icon/content-next.png);
         position: absolute;
         top: 50%;
-        left: 276px;
+        left: 277px;
         transform: translateY(-50%);
       }
     }

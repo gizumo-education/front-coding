@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
 @import '../../foundation/variables.scss';
+
 // grid
 .p-content__grid {
   display: flex;
@@ -9,7 +10,7 @@
 
   &__parts {
     background-color: $pale-pink;
-    width: 570px;
+    width: 36%;
     height: 180px;
     text-align: center;
     padding: 40px;
