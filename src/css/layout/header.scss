@@ -203,6 +203,7 @@
       height: 5.54rem;
       position: fixed;
       margin-top: 0.7rem;
+      padding: 0.57rem 0.6rem;
       top: 0;
       left: 100%;
       z-index: 99;
@@ -213,16 +214,13 @@
 
     .nav_list {
       list-style: none;
-      margin-top: 0.57rem;
-      margin-left: 0.6rem;
 
-      & > li {
+      & > a {
+        display: flex;
         margin-top: 0.38rem;
-        & > a {
-          font-size: 0.22rem;
-          font-weight: utility.$bold;
-          color: utility.$white;
-        }
+        font-size: 0.22rem;
+        font-weight: utility.$bold;
+        color: utility.$white;
 
         &:first-child {
           margin-top: 0;

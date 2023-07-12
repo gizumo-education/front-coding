@@ -3,9 +3,9 @@
 
 .p-unit-useful {
   display: block;
+  margin-top: 106px;
 
   &__title {
-    margin-top: 106px;
     font-size: 25px;
     text-align: center;
     font-weight: utility.$bold;
@@ -81,8 +81,8 @@
 @include re.tab {
   .p-unit-useful {
     width: 90%;
+    margin-top: 1.06rem;
     &__title {
-      margin-top: 1.06rem;
       font-size: 0.25rem;
     }
 
@@ -124,10 +124,9 @@
 //レスポンシブSP
 @include re.sp {
   .p-unit-useful{
-
+    margin-top: 0.6rem;
     &__title {
       font-size: 0.25rem;
-      margin-top: 0.6rem;
     }
 
     &__content {

@@ -14,7 +14,7 @@ $(function() {
     const href = $(this).attr("href");
     const target = $(href === "#" || href === "" ? "html" : href);
     const position = target.offset().top;
-    $("body,html").animate({ scrollTop: position - 65});
+    $("body,html").animate({ scrollTop: position - 70});
     return;
   });
 
@@ -28,12 +28,13 @@ if (item <= slidesToShowNum) {
 }
   $('.p-news-images__group').slick({
     autoplay: true,
-    autoplaySpeed: 1000,
-    speed: 6000,
+    //autoplaySpeed: 1000,
+    speed: 2000,
     cssEase: "linear",
     slidesToShow: slidesToShowNum,
     swipe: false,
-    arrows: false,
+    arrows: true,
+    infinite: true,
     pauseOnFocus: false,
     pauseOnHover:false,
 
