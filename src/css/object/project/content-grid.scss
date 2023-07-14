@@ -10,8 +10,8 @@
 
   &__parts {
     background-color: $pale-pink;
-    width: 36%;
-    height: 180px;
+    width: 47%;
+    height: auto;
     text-align: center;
     padding: 40px;
     border-radius: 10px;
@@ -42,8 +42,56 @@
       font-family: Noto Sans JP;
       font-style: normal;
       font-weight: $regular;
-      line-height: normal;
-      margin-top: 36px;
+      line-height: 14px;
+      margin-top: 26px;
+      max-width: 447px;
+      height: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .p-content__grid {
+    &__parts {
+      padding: 0.4rem;
+      margin-top: 0.4rem;
+      margin-left: 0.4rem;
+
+      &:nth-child(-n + 2) {
+        margin-top: 0.53rem;
+      }
+
+      &__title {
+        font-size: 0.24rem;
+        line-height: 0.24rem;
+      }
+
+      &__text {
+        font-size: 0.14rem;
+        line-height: 0.16rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-content__grid {
+    &__parts {
+      width: 3.7rem;
+      height: auto;
+      padding: 0.4rem;
+      margin-top: 0.4rem;
+      margin-left: 0px;
+
+      &__title {
+        font-size: 0.2rem;
+      }
+
+      &__text {
+        font-size: 0.12rem;
+        margin-top: 0.3rem;
+        line-height: 0.12rem;
+      }
     }
   }
 }

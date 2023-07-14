@@ -15,7 +15,6 @@
     height: 357px;
     border-radius: 10px;
     margin-top: 60px;
-    padding: 8.87px;
     position: relative;
 
     &__text {
@@ -43,44 +42,49 @@
         top: 50%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
+        width: 42px;
+        height: 38px;
       }
     }
 
     &__illust {
-      text-align: center;
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
     }
 
-    & h2 {
+    & h3 {
       color: $black;
       text-align: center;
-      font-size: 24px;
+      font-size: 2.4rem;
       font-family: Noto Sans JP;
       font-style: normal;
       font-weight: $bold;
-      line-height: 30px;
-      margin-top: 20px;
+      line-height: 2.4rem;
+      margin-top: 2rem;
       position: absolute;
-      top: 178px;
+      top: 17.8rem;
+
 
       &.one-line {
-        width: 168px;
-        height: 35px;
-        margin-top: 33px;
-
+        width: 16.8rem;
+        height: 3.5rem;
+        margin-top: 3rem;
       }
     }
 
     & p {
+      display: inline-block;
       color: $black;
-      font-size: 14px;
+      font-size: 1.4rem;
       font-family: Noto Sans JP;
       font-style: normal;
       font-weight: $regular;
-      line-height: normal;
-      width: 237px;
+      line-height: 14px;
       height: 60px;
       position: absolute;
       top: 270px;
+      width: 85%;
 
     }
 
@@ -90,8 +94,143 @@
         content: url(../img/icon/content-next.png);
         position: absolute;
         top: 50%;
-        left: 277px;
+        left: 275px;
         transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .p-content__flow {
+    &__parts {
+      width: 2.7rem;
+      height: 3.57rem;
+      margin-top: 0.6rem;
+      margin-left: 0.2rem;
+
+
+      &__icon {
+        background-size: 0.6rem;
+        padding: 0.1rem, 0.09rem;
+        position: relative;
+        width: 0.6rem;
+        height: 0.6rem;
+
+        & img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateY(-50%) translateX(-50%);
+          width: 0.42rem;
+          height: auto;
+        }
+      }
+
+      &__illust {
+        width: 1rem;
+        height: 1rem;
+      }
+
+      & h3 {
+        font-size: 0.2rem;
+        top: 1.78rem;
+        line-height: 0.3rem;
+        margin-top: 0.2rem;
+
+        &.one-line {
+          width: 1.6rem;
+          height: 0.35rem;
+          margin-top: 0.3rem;
+        }
+      }
+
+      & p {
+        font-size: 0.09rem;
+        width: 1.8rem;
+        height: 0.6rem;
+        line-height: 0.2rem;
+        top: 2.6rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+
+
+      &:not(:last-child) {
+        &::after {
+          left: 1.95rem;
+          display: block;
+          transform: scale(0.5);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-content__flow {
+    flex-direction: column;
+
+    &__parts {
+      width: 2.77rem;
+      height: 2.9rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0.41rem;
+
+      &:first-child {
+        margin-left: auto;
+        margin-top: 0.35rem;
+      }
+
+      &__icon {
+        padding: 0.1rem 0.09rem;
+        background-size: 0.45rem;
+        width: 0.45rem;
+        height: 0.45rem;
+
+        & img {
+          width: 0.26rem;
+        }
+      }
+
+      &__illust {
+        width: 0.75rem;
+        height: 0.75rem;
+      }
+
+      & h3 {
+        display: block;
+        min-width: 2rem;
+        min-height: 0.3rem;
+        font-size: 0.2rem;
+        top: 1.5rem;
+        line-height: 0.2rem;
+        margin-top: 0.2rem;
+        white-space: nowrap;
+
+        &.one-line {
+          width: 1.4rem;
+          height: 0.29rem;
+          margin-top: 0.2rem;
+        }
+      }
+
+      & p {
+        font-size: 0.14rem;
+        width: 2.4rem;
+        height: 0.8rem;
+        line-height: 0.2rem;
+        top: 2.1rem;
+      }
+
+      &:not(:last-child) {
+        &::after {
+          transform: rotate(90deg) translateX(-50%);
+          top: 3rem;
+          left: 50%;
+        }
       }
     }
   }

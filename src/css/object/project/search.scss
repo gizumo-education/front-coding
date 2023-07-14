@@ -10,7 +10,6 @@
 
   &__box {
     background-color: $light-blue;
-    width: 98%;
     height: 240px;
     border-radius: 10px;
     text-align: center;
@@ -38,8 +37,12 @@
 
     &__select {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       margin-top: 26px;
+
+      &__box {
+        display: flex;
+      }
 
       & select {
         appearance: none;
@@ -72,9 +75,10 @@
 
     & form {
       display: flex;
+      width: 98%;
 
       & .text {
-        width: 299px;
+        width: 300px;
         height: 59px;
         border: 1px solid $pink;
         border-radius: 10px;
@@ -118,4 +122,132 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 1199px) {
+  .p-search {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .p-search__box {
+    padding: 0.4rem;
+    height: 2.4rem;
+
+    &__title {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
+
+    &__text {
+      font-size: 0.2rem;
+      margin-top: 0.2rem;
+    }
+
+    &__select {
+      margin-top: 0.26rem;
+
+      & select {
+        display: inline-block;
+        width: 2rem;
+        height: 0.6rem;
+        font-size: 0.18rem;
+        margin-left: 0.15rem;
+        padding-left: 0.15rem;
+        background-position: center right 0.15rem;
+        background-size: 0.2rem 0.1rem;
+        box-sizing: border-box;
+      }
+
+      & form {
+
+        & .text {
+          width: 3rem;
+          height: 0.59rem;
+          font-size: 0.18rem;
+          margin-left: 0.15rem;
+        }
+
+        & .submit {
+          width: 1.4rem;
+          height: 0.6rem;
+          font-size: 0.18rem;
+          margin-left: 0.15rem;
+          padding-left: 0.48rem;
+          padding-right: 0.2rem;
+          line-height: 0.18rem;
+          background-size: auto 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-search {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
+    &__box {
+      width: 100%;
+      padding: 0.15rem;
+      height: 2.4rem;
+
+      &__title {
+        font-size: 0.22rem;
+        line-height: 0.22rem;
+      }
+
+      &__text {
+        font-size: 0.14rem;
+        margin-top: 0.16rem;
+      }
+
+      &__select {
+        margin-top: 0.13rem;
+        display: flex;
+
+
+        & form {
+          display: flex;
+          flex-direction: column;
+
+          & .text {
+            width: 3.3rem;
+            height: 0.29rem;
+            font-size: 0.14rem;
+            margin-left: 0px;
+            border-radius: 0.05rem;
+            margin-top: 0.15rem;
+          }
+
+          & .submit {
+            width: 1.4rem;
+            height: 0.4rem;
+            font-size: 0.18rem;
+            margin-top: 0.2rem;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+
+        & select {
+          width: 1rem;
+          border-radius: 0.05rem;
+          padding-left: 0.08rem;
+          height: 0.3rem;
+          font-size: 0.12rem;
+          margin-left: 0.1rem;
+          background-position: center right 0.1rem;
+          background-size: 0.13rem 0.07rem;
+          flex: 1;
+        }
+
+        &__box {
+          display: flex;
+        }
+      }
+    }
+  }
+
 }

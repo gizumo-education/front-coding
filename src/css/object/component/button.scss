@@ -20,15 +20,10 @@
       padding-bottom: 15px;
       text-align: center;
       border-radius: 10px;
-      min-width: 140px;
-      min-height: 50px;
+      width: 160px;
+      height: 50px;
 
-      &:first-child {
-        min-width: 160px;
-        min-height: 50px;
-      }
-
-      p {
+      & p {
         margin-left: 10px;
         display: inline
       }
@@ -38,6 +33,10 @@
         width: 18px;
         height: 18px;
       }
+    }
+
+    & .first {
+      margin-left: 25px;
     }
 
     & a {
@@ -84,4 +83,45 @@
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
+}
+
+@media screen and (max-width: 1199px) {
+  .l-header {
+    &__nav-btn {
+      &__parts {
+        font-size: 0.14rem;
+        margin-top: 0.25rem;
+        margin-left: 0.15rem;
+        padding-top: 0.15rem;
+        padding-bottom: 0.15rem;
+        width: 1.6rem;
+        height: 0.5rem;
+        white-space: nowrap;
+
+        & p {
+          margin-left: 0.1rem;
+        }
+      }
+
+      & img {
+        width: 0.18rem;
+        height: auto;
+      }
+
+      & .first {
+        margin-left: 0.3rem;
+      }
+    }
+  }
+
+  .s-btn-text {
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .s-btn-wrap {
+    margin-top: 0.4rem;
+  }
 }

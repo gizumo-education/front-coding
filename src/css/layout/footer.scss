@@ -6,7 +6,7 @@
   background-color: $pale-blue;
   padding-top: 79px;
   padding-bottom: 28px;
-  min-width: 1200px;
+
 }
 
 .l-footer {
@@ -23,7 +23,6 @@
   }
 
   &__list {
-    display: block;
     width: 160px;
     height: 108px;
     margin-left: 39px;
@@ -41,6 +40,7 @@
       font-style: normal;
       font-weight: $regular;
       line-height: 36px;
+      white-space: nowrap;
 
 
 
@@ -71,6 +71,7 @@
 
     & a {
       transition: $transition;
+      width: 320px;
 
       &:hover {
         opacity: $opacity;
@@ -113,6 +114,75 @@
     line-height: 14px;
     padding-top: 11px;
     padding-bottom: 10px;
-    min-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .l-footer {
+    & p {
+      font-size: 0.16rem;
+    }
+
+    &__list {
+      margin-left: 0.39rem;
+      width: 1.6rem;
+
+      &:first-child {
+        width: 0.98rem;
+      }
+
+      &__item {
+        font-size: 0.16rem;
+      }
+    }
+
+
+    &__ads {
+      & a {
+        width: 3.2rem;
+      }
+    }
+
+    &__ad {
+      width: 3.2rem;
+      height: auto;
+
+      & img {
+        width: 1.8rem;
+        height: auto;
+      }
+
+      &__bottom {
+        width: 3.2rem;
+        height: auto;
+
+        & img {
+          width: 1.8rem;
+          height: auto;
+        }
+      }
+    }
+
+    &__bar {
+      font-size: 0.14rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .l-footer {
+    & p {
+      font-size: 0.16rem;
+    }
+
+    &__lists {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &__list {
+      margin-left: 0px;
+    }
   }
 }
