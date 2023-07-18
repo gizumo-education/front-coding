@@ -61,6 +61,10 @@
     justify-content: space-between;
     padding-left: 3%;
     padding-right: 3%;
+
+    &__list {
+      display: flex;
+    }
   }
 
   &__ads {
@@ -84,6 +88,7 @@
     width: 320px;
     height: 85px;
     text-align: right;
+    margin-top: 0px;
 
     &__bottom {
       background-image: url(../img/picture/footer-ad-base.png);
@@ -93,9 +98,6 @@
       margin-top: 25px;
     }
 
-    &:first-child {
-      margin-top: 0px;
-    }
 
     & a {
       transition: $transition;
@@ -179,10 +181,19 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+
+      &__list {
+        display: flex;
+      }
     }
 
     &__list {
-      margin-left: 0px;
+      margin-left: 0.4rem;
+    }
+
+
+    &__ad {
+      margin-top: 0.2rem;
     }
   }
 }
