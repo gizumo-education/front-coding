@@ -46,6 +46,14 @@
       margin-top: 26px;
       max-width: 447px;
       height: 60px;
+
+      & span {
+        display: inline-block;
+      }
+
+      & br {
+        display: none;
+      }
     }
   }
 }
@@ -69,6 +77,14 @@
       &__text {
         font-size: 0.14rem;
         line-height: 0.16rem;
+
+        & span {
+          display: inline-block;
+        }
+
+        & br {
+          display: none;
+        }
       }
     }
   }
