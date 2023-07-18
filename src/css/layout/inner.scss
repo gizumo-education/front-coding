@@ -188,13 +188,13 @@
     width: 92%;
   }
 
-  // .l-inner-title {
-  //   &__content {
-  //     font-size: 0.25rem;
-  //     line-height: 0.25rem;
-  //     margin-top: 1.06rem;
-  //   }
-  // }
+  .l-inner-title {
+    &__content {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+      margin-top: 0.55rem;
+    }
+  }
 
   .l-inner-background {
     &__key {
