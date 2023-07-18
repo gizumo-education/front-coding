@@ -1,5 +1,6 @@
 @use '../object/utility/utility.scss';
 @import '../foundation/variables.scss';
+@import '../foundation/_mixins.scss';
 
 // footerのスタイルを記述するファイル
 .l-background__footer {
@@ -119,7 +120,8 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+//tab
+@include tab {
   .l-footer {
     & p {
       font-size: 0.16rem;
@@ -171,7 +173,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@include sp {
   .l-footer {
     & p {
       font-size: 0.16rem;

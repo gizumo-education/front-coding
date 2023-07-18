@@ -1,8 +1,7 @@
 @use '../../object/utility/utility.scss';
 @import'../../foundation/_variables.scss';
+@import'../../foundation/_mixins.scss';
 // キービジュアル
-
-$white: #fff;
 
 .p-key-visual {
   background-image: url(../img/picture/p-main-visual.png);
@@ -100,7 +99,8 @@ $white: #fff;
   }
 }
 
-@media screen and (max-width: 1199px) {
+//tab
+@include tab {
   .p-key-visual {
     width: 10rem;
     height: 5rem;
@@ -174,7 +174,7 @@ $white: #fff;
   }
 }
 
-@media screen and (max-width: 767px) {
+@include sp {
   .p-key-visual {
     background-image: url(../img/picture/p-main-visual-s.png);
     background-repeat: no-repeat;

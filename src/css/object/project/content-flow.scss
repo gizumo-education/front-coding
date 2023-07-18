@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
-@import '../../foundation/variables.scss';
+@import '../../foundation/_variables.scss';
+@import '../../foundation/_mixins.scss';
 
 //flow図
 .p-content__flow {
@@ -103,7 +104,8 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+//tab
+@include tab {
   .p-content__flow {
     &__parts {
       width: 2.7rem;
@@ -172,7 +174,8 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+//sp
+@include sp {
   .p-content__flow {
     flex-direction: column;
 

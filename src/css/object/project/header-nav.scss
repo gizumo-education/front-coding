@@ -1,5 +1,7 @@
 @use '../../object/utility/utility.scss';
 @import'../../foundation/_variables.scss';
+@import'../../foundation/_mixins.scss';
+
 
 // headerのスタイルを記述するファイル
 .p-header {
@@ -66,7 +68,7 @@
 }
 
 // TAB
-@media screen and (max-width: 1199px) {
+@include tab {
   .p-header {
     &__nav {
       padding-right: 0.2rem;
@@ -99,8 +101,11 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@include sp {
   .p-header {
+    &__nav {
+      padding-right: 0px;
+    }
 
     &__list {
       display: none;

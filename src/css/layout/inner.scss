@@ -1,5 +1,6 @@
 @use '../object/utility/utility.scss';
 @import '../foundation/variables.scss';
+@import '../foundation/_mixins.scss';
 
 // innerのスタイルを記述するファイル
 .l-inner {
@@ -119,7 +120,8 @@
   margin-top: 90px;
 }
 
-@media screen and (max-width: 1199px) {
+//tab
+@include tab {
   .l-inner-title {
     &__content {
       font-size: 0.25rem;
@@ -183,7 +185,8 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+//sp
+@include sp {
   .l-inner {
     width: 92%;
   }

@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
 @import '../../foundation/variables.scss';
+@import '../../foundation/_mixins.scss';
 
 // お仕事検索
 .p-search {
@@ -124,7 +125,8 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+//tab
+@include tab {
   .p-search {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
@@ -183,7 +185,8 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+//sp
+@include sp {
   .p-search {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;

@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
 @import '../../foundation/_variables.scss';
+@import '../../foundation/_mixins.scss';
 
 // 共通パーツであるボタンのスタイルを記述するファイル
 .l-header {
@@ -85,7 +86,8 @@
   line-height: 18px;
 }
 
-@media screen and (max-width: 1199px) {
+//tab
+@include tab {
   .l-header {
     &__nav-btn {
       &__parts {
@@ -120,7 +122,8 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+//sp
+@include sp {
   .s-btn-wrap {
     margin-top: 0.4rem;
   }

@@ -1,5 +1,6 @@
 @use '../object/utility/utility.scss';
 @import '../foundation/variables.scss';
+@import '../foundation/_mixins.scss';
 
 // headerのスタイルを記述するファイル
 .l-header {
@@ -10,13 +11,15 @@
   z-index: 10000;
 }
 
-@media screen and (max-width: 1199px) {
+//tab
+@include tab {
   .l-header {
     height: 1rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+//sp
+@include sp {
   .l-header {
     height: 0.7rem;
   }

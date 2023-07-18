@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
-@import '../../foundation/variables';
+@import '../../foundation/variables.scss';
+@import '../../foundation/_mixins.scss';
 // content
 
 .p-content__contents {
@@ -55,7 +56,8 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+//tab
+@include tab {
   .p-content__contents {
     width: 3.8rem;
     height: 2.4rem;
@@ -79,7 +81,8 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+//sp
+@include sp {
   .p-content__contents {
     width: 3.7rem;
     height: 2.3rem;

@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
 @import '../../foundation/variables.scss';
+@import '../../foundation/_mixins.scss';
 
 // news
 .p-news {
@@ -79,7 +80,8 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+//tab
+@include tab {
   .p-news {
     &__box {
       &__list {
@@ -118,7 +120,8 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+//sp
+@include sp {
   .p-news {
     &__box {
       &__list {

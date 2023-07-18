@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
 @import '../../foundation/variables.scss';
+@import '../../foundation/_mixins.scss';
 
 // grid
 .p-content__grid {
@@ -58,7 +59,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@include tab {
   .p-content__grid {
     &__parts {
       padding: 0.4rem;
@@ -90,7 +91,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@include sp {
   .p-content__grid {
     &__parts {
       width: 3.7rem;
