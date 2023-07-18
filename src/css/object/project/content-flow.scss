@@ -184,6 +184,7 @@
       margin-top: 0.41rem;
       padding-top: 0.08rem;
       padding-left: 0.08rem;
+      padding-right: 0.08rem;
 
       &:first-child {
         margin-left: auto;
@@ -214,7 +215,10 @@
         top: 1.5rem;
         line-height: 0.2rem;
         margin-top: 0.2rem;
-        white-space: nowrap;
+
+        & br {
+          display: none;
+        }
 
         &.one-line {
           width: 1.4rem;
@@ -229,6 +233,7 @@
         height: 0.8rem;
         line-height: 0.2rem;
         top: 2.1rem;
+        margin-top: 0.1rem;
       }
 
       &:not(:last-child) {
