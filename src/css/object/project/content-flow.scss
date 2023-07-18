@@ -238,8 +238,9 @@
 
       &:not(:last-child) {
         &::after {
-          transform: rotate(90deg) translateX(-50%);
-          top: 3rem;
+          display: block;
+          transform: translateX(-50%) rotate(90deg);
+          top: 2.9rem;
           left: 50%;
         }
       }
