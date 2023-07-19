@@ -89,7 +89,6 @@
       position: absolute;
       top: 270px;
       width: 85%;
-
     }
 
 
@@ -153,6 +152,8 @@
           margin-top: 0.3rem;
         }
       }
+
+
 
       & p {
         font-size: 0.09rem;
@@ -230,9 +231,7 @@
         line-height: 0.2rem;
         margin-top: 0.2rem;
 
-        & br {
-          display: none;
-        }
+      
 
         &.one-line {
           width: 1.4rem;
@@ -246,8 +245,8 @@
         width: 2.4rem;
         height: 0.8rem;
         line-height: 0.2rem;
-        top: 2.1rem;
-        margin-top: 0.1rem;
+        top: 1.9rem;
+        margin-top: 0.2rem;
       }
 
       &:not(:last-child) {
