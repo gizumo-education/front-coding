@@ -27,6 +27,14 @@
       margin-top: 53px;
     }
 
+    &:nth-child(3) {
+      padding-left: 44px;
+      padding-right: 44px;
+
+      & p {}
+    }
+
+
     &__title {
       color: $pink;
       font-size: 24px;
@@ -45,7 +53,6 @@
       font-weight: $regular;
       line-height: 14px;
       margin-top: 26px;
-      max-width: 447px;
       height: 60px;
 
       & span {
@@ -96,7 +103,7 @@
     &__parts {
       width: 3.7rem;
       height: auto;
-      padding: 0.4rem;
+      padding: 0.4rem 0px 0px 0px;
       margin-top: 0.2rem;
       margin-left: 0px;
 
@@ -108,6 +115,18 @@
         margin-top: 0.2rem;
       }
 
+      &:nth-child(3) {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        padding-bottom: 0.3rem;
+      }
+
+      &:nth-child(4) {
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        padding-bottom: 0.3rem;
+      }
+
       &__title {
         font-size: 0.2rem;
         line-height: 0.2rem;
@@ -116,7 +135,22 @@
       &__text {
         font-size: 0.12rem;
         margin-top: 0.3rem;
-        line-height: 0.12rem;
+        line-height: 0.17rem;
+
+        & br {
+          display: inline-block;
+        }
+
+        & span {
+          &:nth-child(2) {
+            white-space: nowrap;
+          }
+
+          & br {
+            display: none;
+          }
+        }
+
       }
     }
   }
