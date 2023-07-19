@@ -41,10 +41,16 @@
 @include tab {
   .p-middle {
     & img {
-      background-size: cover;
+      background-size: auto 3rem;
+      height: 3rem;
     }
 
     &__textbox {
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
 
       &__text {
         font-size: 0.25rem;
