@@ -4,7 +4,7 @@
 
 // innerのスタイルを記述するファイル
 .l-inner {
-  width: 73%;
+  width: 1180px;
   margin: 0 auto;
 }
 
@@ -122,6 +122,10 @@
 
 //tab
 @include tab {
+  .l-inner {
+    width: 11.8rem;
+  }
+
   .l-inner-title {
     &__content {
       font-size: 0.25rem;

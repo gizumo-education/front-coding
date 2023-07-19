@@ -38,15 +38,16 @@
       background-repeat: no-repeat;
       position: relative;
 
-
-
-      & img {
+      &__title {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-        width: 42px;
-        height: 38px;
+        top: 12px;
+        left: 8px;
+        color: $white;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: $bold;
+        line-height: 20px;
       }
     }
 
@@ -123,13 +124,15 @@
         width: 0.6rem;
         height: 0.6rem;
 
-        & img {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translateY(-50%) translateX(-50%);
-          width: 0.42rem;
-          height: auto;
+        &__title {
+          top: 0.12rem;
+          left: 0.1rem;
+          color: $white;
+          text-align: center;
+          font-size: 0.16rem;
+          font-style: normal;
+          font-weight: $bold;
+          line-height: 0.2rem;
         }
       }
 
@@ -165,9 +168,10 @@
 
       &:not(:last-child) {
         &::after {
-          left: 1.95rem;
+          top: 50%;
+          left: 2.6rem;
           display: block;
-          transform: scale(0.5);
+          transform: scale(0.5) translateY(-50%);
         }
       }
     }
@@ -200,8 +204,15 @@
         width: 0.45rem;
         height: 0.45rem;
 
-        & img {
-          width: 0.26rem;
+        &__title {
+          top: 0.1rem;
+          left: 0.1rem;
+          color: $white;
+          text-align: center;
+          font-size: 0.1rem;
+          font-style: normal;
+          font-weight: $bold;
+          line-height: 0.13rem;
         }
       }
 

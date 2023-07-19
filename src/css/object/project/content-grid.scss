@@ -5,33 +5,27 @@
 // grid
 .p-content__grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 
 
   &__parts {
     background-color: $pale-pink;
-    width: 47%;
+    width: 570px;
     height: auto;
     text-align: center;
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border-radius: 10px;
     margin-top: 40px;
-    margin-left: 40px;
 
-    &:nth-child(2n + 1) {
-      margin-left: 0px;
+
+    &:nth-child(2n) {
+      margin-left: 40px;
     }
 
     &:nth-child(-n + 2) {
       margin-top: 53px;
-    }
-
-    &:nth-child(3) {
-      padding-left: 44px;
-      padding-right: 44px;
-
-      & p {}
     }
 
 
@@ -54,14 +48,6 @@
       line-height: 14px;
       margin-top: 26px;
       height: 60px;
-
-      & span {
-        display: inline-block;
-      }
-
-      & br {
-        display: none;
-      }
     }
   }
 }
@@ -69,9 +55,15 @@
 @include tab {
   .p-content__grid {
     &__parts {
-      padding: 0.4rem;
+      width: 5.7rem;
+      padding-top: 0.4rem;
+      padding-bottom: 0.4rem;
       margin-top: 0.4rem;
-      margin-left: 0.4rem;
+
+      &:nth-child(2n) {
+        margin-left: 0.4rem;
+      }
+
 
       &:nth-child(-n + 2) {
         margin-top: 0.53rem;
@@ -85,14 +77,6 @@
       &__text {
         font-size: 0.14rem;
         line-height: 0.16rem;
-
-        & span {
-          display: inline-block;
-        }
-
-        & br {
-          display: none;
-        }
       }
     }
   }
@@ -107,6 +91,10 @@
       margin-top: 0.2rem;
       margin-left: 0px;
 
+      &:nth-child(2n) {
+        margin-left: 0px;
+      }
+
       &:nth-child(1) {
         margin-top: 0.38rem;
       }
@@ -116,14 +104,10 @@
       }
 
       &:nth-child(3) {
-        padding-left: 0.4rem;
-        padding-right: 0.4rem;
         padding-bottom: 0.3rem;
       }
 
       &:nth-child(4) {
-        padding-left: 0.1rem;
-        padding-right: 0.1rem;
         padding-bottom: 0.3rem;
       }
 
@@ -136,21 +120,6 @@
         font-size: 0.12rem;
         margin-top: 0.3rem;
         line-height: 0.17rem;
-
-        & br {
-          display: inline-block;
-        }
-
-        & span {
-          &:nth-child(2) {
-            white-space: nowrap;
-          }
-
-          & br {
-            display: none;
-          }
-        }
-
       }
     }
   }
