@@ -11,7 +11,6 @@ $(function () {
     ham.toggleClass('active');
     nav.toggleClass('active');
     $("body").toggleClass("active");
-
   });
 
   //slick　カルーセル
