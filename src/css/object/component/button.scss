@@ -142,5 +142,9 @@
 @include sp {
   .s-btn-wrap {
     margin-top: 0.4rem;
+
+    & a {
+      width: 3.7rem;
+    }
   }
 }
