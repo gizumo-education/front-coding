@@ -31,7 +31,7 @@
       <ul class="l-header__nav-btn">
         <li class="p-header__nav-btn__item">
           <a href="">
-            <div class="l-header__nav-btn__parts">
+            <div class="l-header__nav-btn__parts first">
               <img src="../src/img/icon/nav-btn-01.png" alt="アイコン">
               <p>
                 気になるリスト
@@ -62,7 +62,9 @@
       </ul>
 
       <button class="p-header__hamburger">
-        <img src="img/icon/nav-btn-hamberger.png" alt="ハンバーガーメニュー">
+        <span class="p-header__hamburger__bar"></span>
+        <span class="p-header__hamburger__bar"></span>
+        <span class="p-header__hamburger__bar"></span>
       </button>
     </nav>
   </header>
@@ -96,6 +98,10 @@
             <img src="img/picture/keyvisual-parts-sub-notice.png" alt=" ※株式会社●●社実績調査">
           </div>
 
+          <div class="p-key-visual__parts__left-s">
+            <img src="img/picture/p-key-visual__parts__left-s.png" alt="">
+          </div>
+
           <div class="p-key-visual__parts__main__block">
             <p>
               現在の求人掲載数：<span>2,320</span>件
@@ -113,33 +119,36 @@
             <p class="p-search__box__text">働きたい職種・地域・希望給与を入れて検索！</p>
             <div class="p-search__box__select">
               <form method="get" action="#">
-                <select name="job" size="1">
-                  <option value="医療事務" label="医療事務" selected>医療事務</option>
-                  <option value="調剤事務" label="調剤事務">調剤事務</option>
-                  <option value="診療情報管理士" label="診療情報管理士">診療情報管理士</option>
-                  <option value="歯科助手" label="歯科助手">歯科助手 </option>
-                  <option value="歯科事務" label="歯科事務">歯科事務 </option>
-                  <option value="看護補助・看護助手" label="看護補助・看護助手">調剤事務 </option>
-                  <option value="病院内SE" label="病院内SE">病院内SE </option>
-                </select>
-                <select name="area" size="1">
-                  <option value="茨城県" label="茨城県">茨城県</option>
-                  <option value="神奈川県" label="神奈川県">神奈川県</option>
-                  <option value="群馬県" label="群馬県">群馬県</option>
-                  <option value="埼玉県" label="埼玉県">埼玉県</option>
-                  <option value="千葉県" label="千葉県">千葉県</option>
-                  <option value="東京都" label="東京都" selected>東京都</option>
-                  <option value="栃木県" label="栃木県">栃木県</option>
-                </select>
-                <select name="Salary" size="1">
-                  <option value="月給17万〜" label="月給17万〜">月給17万〜</option>
-                  <option value="月給18万〜" label="月給18万〜">月給18万〜</option>
-                  <option value="月給19万〜" label="月給19万〜">月給19万〜</option>
-                  <option value="月給20万〜" label="月給20万〜" selected>月給20万〜</option>
-                  <option value="月給21万〜" label="月給21万〜">月給21万〜</option>
-                  <option value="月給22万〜" label="月給22万〜">月給22万〜</option>
-                  <option value="月給23万〜" label="月給23万〜">月給23万〜</option>
-                </select>
+                <div class="p-search__box__select__box">
+
+                  <select name="job" size="1">
+                    <option value="医療事務" label="医療事務" selected>医療事務</option>
+                    <option value="調剤事務" label="調剤事務">調剤事務</option>
+                    <option value="診療情報管理士" label="診療情報管理士">診療情報管理士</option>
+                    <option value="歯科助手" label="歯科助手">歯科助手 </option>
+                    <option value="歯科事務" label="歯科事務">歯科事務 </option>
+                    <option value="看護補助・看護助手" label="看護補助・看護助手">調剤事務 </option>
+                    <option value="病院内SE" label="病院内SE">病院内SE </option>
+                  </select>
+                  <select name="area" size="1">
+                    <option value="茨城県" label="茨城県">茨城県</option>
+                    <option value="神奈川県" label="神奈川県">神奈川県</option>
+                    <option value="群馬県" label="群馬県">群馬県</option>
+                    <option value="埼玉県" label="埼玉県">埼玉県</option>
+                    <option value="千葉県" label="千葉県">千葉県</option>
+                    <option value="東京都" label="東京都" selected>東京都</option>
+                    <option value="栃木県" label="栃木県">栃木県</option>
+                  </select>
+                  <select name="Salary" size="1">
+                    <option value="月給17万〜" label="月給17万〜">月給17万〜</option>
+                    <option value="月給18万〜" label="月給18万〜">月給18万〜</option>
+                    <option value="月給19万〜" label="月給19万〜">月給19万〜</option>
+                    <option value="月給20万〜" label="月給20万〜" selected>月給20万〜</option>
+                    <option value="月給21万〜" label="月給21万〜">月給21万〜</option>
+                    <option value="月給22万〜" label="月給22万〜">月給22万〜</option>
+                    <option value="月給23万〜" label="月給23万〜">月給23万〜</option>
+                  </select>
+                </div>
 
                 <input type="text" placeholder="キーワード・企業名・スキルなど" class="text">
                 <div>
@@ -166,7 +175,7 @@
               <li class="p-news__box__list__item">
                 <a href="">
                   <img src="img/picture/news-box-item-01.jpg" alt="女性の写真1">
-                  <p class="p-news__box__list__item__text">平日・夕方までの勤務!伊勢市の伊勢赤<br>十字病院で医療事務求人</p>
+                  <p class="p-news__box__list__item__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
                   <table class="p-news__box__list__item__grid">
                     <tr>
                       <th>給与</th>
@@ -197,7 +206,7 @@
                 <a href="">
 
                   <img src="img/picture/news-box-item-02.jpg" alt="女性の写真2">
-                  <p class="p-news__box__list__item__text">平日・夕方までの勤務!伊勢市の伊勢赤<br>十字病院で医療事務求人</p>
+                  <p class="p-news__box__list__item__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
                   <table class="p-news__box__list__item__grid">
                     <tr>
                       <th>給与</th>
@@ -230,7 +239,7 @@
                 <a href="">
 
                   <img src="img/picture/news-box-item-03.jpg" alt="女性の写真3">
-                  <p class="p-news__box__list__item__text">平日・夕方までの勤務!伊勢市の伊勢赤<br>十字病院で医療事務求人</p>
+                  <p class="p-news__box__list__item__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
                   <table class="p-news__box__list__item__grid">
                     <tr>
                       <th>給与</th>
@@ -336,24 +345,31 @@
           <div class="p-content__grid">
             <div class="p-content__grid__parts">
               <h3 class="p-content__grid__parts__title">WEB上で応募完結</h3>
-              <p class="p-content__grid__parts__text">エントリーシートの記入を済ませれば、あとは気になる企業に応募して<br>
-                待つだけで面接アポまで完結！</p>
+              <p class="p-content__grid__parts__text">
+                エントリーシートの記入を済ませれば、<br class="is-sp">
+                あとは気になる企業に応募して<br class="is-pc">待つだけで面接アポまで完結！
+
+
+              </p>
             </div>
             <div class="p-content__grid__parts">
               <h3 class="p-content__grid__parts__title">安心・安全</h3>
-              <p class="p-content__grid__parts__text">掲載案件は基本的に当社グループ企業となるため、<br>
-                皆さまにより詳細にクリーンな職場情報をお届けいたします。</p>
+              <p class="p-content__grid__parts__text">掲載案件は基本的に当社グループ企業となるため、<br>皆さまにより詳細にクリーンな職場情報をお届けいたします。</p>
             </div>
             <div class="p-content__grid__parts">
               <h3 class="p-content__grid__parts__title">わかりやすい</h3>
-              <p class="p-content__grid__parts__text">当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br>
-                といったご自身にピッタリマッチした求人を見つけることができる！</p>
+              <p class="p-content__grid__parts__text">
+                当求人サイトは医療事務に特化しておりさらに<br class="is-sp">こだわり検索や地域から検索<br class="is-pc">といった<br
+                  class="is-sp">ご自身にピッタリマッチした求人を見つけることができる！
+              </p>
             </div>
-            <div class="p-content__grid__parts">
+            <div class=" p-content__grid__parts">
               <h3 class="p-content__grid__parts__title">完全無料</h3>
-              <p class="p-content__grid__parts__text">当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br>
-                運営されています。ですので求職者の方からは応募前はもちろん、<br>
-                内定後も費用は一切いただきません。</p>
+              <p class="p-content__grid__parts__text">
+
+                当サイトは求人元の企業やグループ会社からのスポンサー費用に<br class="is-sp">よって運営されています。ですので求職者の方からは<br class="is-sp">応募前はもちろん、<br
+                  class="is-pc">内定後も費用は一切いただきません。
+              </p>
             </div>
           </div>
         </div>
@@ -367,30 +383,33 @@
           <div class="p-content__flow">
             <div class="p-content__flow__parts">
               <div class="p-content__flow__parts__icon">
-                <img src="img/picture/content-flow-num-01.png" alt="step1">
+                <h4 class="p-content__flow__parts__icon__title">
+                  STEP<br>1
+                </h4>
               </div>
 
               <div class="p-content__flow__parts__illust">
                 <img src="img/picture/content-flow-illust-01.png" alt="メモ帳のイラスト">
               </div>
               <div class="p-content__flow__parts__text">
-                <h3>エントリーシートの<br>
-                  作成</h3>
+                <h3>エントリーシートの<br class="is-pc">作成</h3>
+                <p>ここにはテキストが入ります。ここに
+                  はテキストが入ります。ここにはテキ
+                  ストが入ります。こ</p>
               </div>
-              <p>ここにはテキストが入ります。ここに
-                はテキストが入ります。ここにはテキ
-                ストが入ります。こ</p>
             </div>
+
             <div class="p-content__flow__parts">
               <div class="p-content__flow__parts__icon">
-                <img src="img/picture/content-flow-num-02.png" alt="step2">
+                <h4 class="p-content__flow__parts__icon__title">
+                  STEP<br>2
+                </h4>
               </div>
               <div class="p-content__flow__parts__illust">
                 <img src="img/picture/content-flow-illust-02.png" alt="虫眼鏡のイラスト">
               </div>
               <div class="p-content__flow__parts__text">
-                <h3>気になる企業の<br>
-                  ピックアップ</h3>
+                <h3>気になる企業の<br class="is-pc">ピックアップ</h3>
                 <p>ここにはテキストが入ります。ここに
                   はテキストが入ります。ここにはテキ
                   ストが入ります。こ</p>
@@ -398,7 +417,9 @@
             </div>
             <div class="p-content__flow__parts">
               <div class="p-content__flow__parts__icon">
-                <img src="img/picture/contente-flow-num-03.png" alt="step3">
+                <h4 class="p-content__flow__parts__icon__title">
+                  STEP<br>3
+                </h4>
               </div>
               <div class="p-content__flow__parts__illust">
                 <img src="img/picture/content-flow-illust-03.png" alt="手紙のイラスト">
@@ -412,7 +433,9 @@
             </div>
             <div class="p-content__flow__parts">
               <div class="p-content__flow__parts__icon">
-                <img src="img/picture/content-flow-num-04.png" alt="step1">
+                <h4 class="p-content__flow__parts__icon__title">
+                  STEP<br>4
+                </h4>
               </div>
               <div class="p-content__flow__parts__illust">
                 <img src="img/picture/content-flow-illust-04.png" alt="キラキラのイラスト">
@@ -443,7 +466,7 @@
                     <p>転職マニュアル</p>
                   </h2>
 
-                  <p>転職活動の基礎知識、面接対策など
+                  <p>転職活動の基礎知識、面接対策など<br>
                     転職のコツをお教えします</p>
                 </div>
               </a>
@@ -456,8 +479,7 @@
                   <h2>
                     <p>医療事務業界の豆知識</p>
                   </h2>
-                  <p>スキルアップ・労働環境、給与事情など
-                    知って得する業界の豆知識を公開</p>
+                  <p>スキルアップ・労働環境、給与事情など<br class="is-sp"><br class="is-pc">知って得する業界の豆知識を公開</p>
                 </div>
               </a>
             </div>
@@ -470,8 +492,9 @@
                   <h2>
                     <p>転職マニュアル</p>
                   </h2>
-                  <p>転職活動の基礎知識、面接対策など
-                    転職のコツをお教えします</p>
+                  <p>転職活動の基礎知識、面接対策など<br class="is-sp">
+                    <br class="is-pc">転職のコツをお教えします
+                  </p>
                 </div>
               </a>
             </div>
@@ -499,33 +522,36 @@
               <p class="p-search__box__text">働きたい職種・地域・希望給与を入れて検索！</p>
               <div class="p-search__box__select">
                 <form method="get" action="#">
-                  <select name="job" size="1">
-                    <option value="医療事務" label="医療事務" selected>医療事務</option>
-                    <option value="調剤事務" label="調剤事務">調剤事務</option>
-                    <option value="診療情報管理士" label="診療情報管理士">診療情報管理士</option>
-                    <option value="歯科助手" label="歯科助手">歯科助手 </option>
-                    <option value="歯科事務" label="歯科事務">歯科事務 </option>
-                    <option value="看護補助・看護助手" label="看護補助・看護助手">調剤事務 </option>
-                    <option value="病院内SE" label="病院内SE">病院内SE </option>
-                  </select>
-                  <select name="area" size="1">
-                    <option value="茨城県" label="茨城県">茨城県</option>
-                    <option value="神奈川県" label="神奈川県">神奈川県</option>
-                    <option value="群馬県" label="群馬県">群馬県</option>
-                    <option value="埼玉県" label="埼玉県">埼玉県</option>
-                    <option value="千葉県" label="千葉県">千葉県</option>
-                    <option value="東京都" label="東京都" selected>東京都</option>
-                    <option value="栃木県" label="栃木県">栃木県</option>
-                  </select>
-                  <select name="Salary" size="1">
-                    <option value="月給17万〜" label="月給17万〜">月給17万〜</option>
-                    <option value="月給18万〜" label="月給18万〜">月給18万〜</option>
-                    <option value="月給19万〜" label="月給19万〜">月給19万〜</option>
-                    <option value="月給20万〜" label="月給20万〜" selected>月給20万〜</option>
-                    <option value="月給21万〜" label="月給21万〜">月給21万〜</option>
-                    <option value="月給22万〜" label="月給22万〜">月給22万〜</option>
-                    <option value="月給23万〜" label="月給23万〜">月給23万〜</option>
-                  </select>
+                  <div class="p-search__box__select__box">
+
+                    <select name="job" size="1">
+                      <option value="医療事務" label="医療事務" selected>医療事務</option>
+                      <option value="調剤事務" label="調剤事務">調剤事務</option>
+                      <option value="診療情報管理士" label="診療情報管理士">診療情報管理士</option>
+                      <option value="歯科助手" label="歯科助手">歯科助手 </option>
+                      <option value="歯科事務" label="歯科事務">歯科事務 </option>
+                      <option value="看護補助・看護助手" label="看護補助・看護助手">調剤事務 </option>
+                      <option value="病院内SE" label="病院内SE">病院内SE </option>
+                    </select>
+                    <select name="area" size="1">
+                      <option value="茨城県" label="茨城県">茨城県</option>
+                      <option value="神奈川県" label="神奈川県">神奈川県</option>
+                      <option value="群馬県" label="群馬県">群馬県</option>
+                      <option value="埼玉県" label="埼玉県">埼玉県</option>
+                      <option value="千葉県" label="千葉県">千葉県</option>
+                      <option value="東京都" label="東京都" selected>東京都</option>
+                      <option value="栃木県" label="栃木県">栃木県</option>
+                    </select>
+                    <select name="Salary" size="1">
+                      <option value="月給17万〜" label="月給17万〜">月給17万〜</option>
+                      <option value="月給18万〜" label="月給18万〜">月給18万〜</option>
+                      <option value="月給19万〜" label="月給19万〜">月給19万〜</option>
+                      <option value="月給20万〜" label="月給20万〜" selected>月給20万〜</option>
+                      <option value="月給21万〜" label="月給21万〜">月給21万〜</option>
+                      <option value="月給22万〜" label="月給22万〜">月給22万〜</option>
+                      <option value="月給23万〜" label="月給23万〜">月給23万〜</option>
+                    </select>
+                  </div>
                   <input type="text" placeholder="キーワード・企業名・スキルなど" class="text">
 
                   <div>
@@ -544,37 +570,41 @@
   <footer class="l-footer">
     <div class="l-background__footer">
       <div class="l-inner">
+
         <p>ギズジョブ医療事務TOP</p>
         <div class="l-footer__lists">
-          <ul class="l-footer__list">
-            <li class="l-footer__list__item">
-              <a href="">
-                利用ガイド
-              </a>
-            </li>
-            <li class="l-footer__list__item">
-              <a href="">
-                お問い合わせ
-              </a>
-            </li>
-            <li class="l-footer__list__item">
-              <a href="">
-                よくある質問
-              </a>
-            </li>
-          </ul>
-          <ul class="l-footer__list">
-            <li class="l-footer__list__item">
-              <a href="">
-                プライバシーポリシー
-              </a>
-            </li>
-            <li class="l-footer__list__item">
-              <a href="">
-                サイトマップ
-              </a>
-            </li>
-          </ul>
+          <div class="l-footer__lists__list">
+
+            <ul class="l-footer__list">
+              <li class="l-footer__list__item">
+                <a href="">
+                  利用ガイド
+                </a>
+              </li>
+              <li class="l-footer__list__item">
+                <a href="">
+                  お問い合わせ
+                </a>
+              </li>
+              <li class="l-footer__list__item">
+                <a href="">
+                  よくある質問
+                </a>
+              </li>
+            </ul>
+            <ul class="l-footer__list">
+              <li class="l-footer__list__item">
+                <a href="">
+                  プライバシーポリシー
+                </a>
+              </li>
+              <li class="l-footer__list__item">
+                <a href="">
+                  サイトマップ
+                </a>
+              </li>
+            </ul>
+          </div>
           <div class="l-footer__ads">
             <a href="">
               <div class="l-footer__ad">
@@ -589,6 +619,7 @@
           </div>
         </div>
       </div>
+
     </div>
     <div class="l-footer__bar">
       © 2022 Gizumo Inc.

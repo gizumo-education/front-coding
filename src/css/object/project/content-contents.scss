@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
-@import '../../foundation/variables';
+@import '../../foundation/variables.scss';
+@import '../../foundation/_mixins.scss';
 // content
 
 .p-content__contents {
@@ -38,6 +39,7 @@
       font-style: normal;
       font-weight: $bold;
       line-height: 24px;
+      white-space: nowrap;
     }
 
     & p:nth-child(2) {
@@ -47,10 +49,59 @@
       font-family: Noto Sans JP;
       font-style: normal;
       font-weight: $regular;
-      line-height: normal;
-      width: 256px;
-      height: 46px;
+      line-height: 20px;
+      width: 300px;
       margin-top: 44px;
+    }
+  }
+}
+
+//tab
+@include tab {
+  .p-content__contents {
+    width: 3.8rem;
+    height: 2.4rem;
+    margin-left: 0.2rem;
+
+    &__text {
+      top: 0.7rem;
+
+      & p:first-child {
+        font-size: 0.23rem;
+        line-height: 0.24rem;
+      }
+
+      & p:nth-child(2) {
+        font-size: 0.16rem;
+        width: 3rem;
+        height: 0.4rem;
+        margin-top: 0.2rem;
+      }
+    }
+  }
+}
+
+//sp
+@include sp {
+  .p-content__contents {
+    width: 3.7rem;
+    height: 2.3rem;
+    margin-left: auto;
+    margin-top: 0.17rem;
+
+    &__text {
+      top: 0.6rem;
+
+      & p:first-child {
+        font-size: 0.21rem;
+        line-height: 0.21rem;
+      }
+
+      & p:nth-child(2) {
+        font-size: 0.14rem;
+        height: 0.34rem;
+        margin-top: 0.6rem;
+      }
     }
   }
 }

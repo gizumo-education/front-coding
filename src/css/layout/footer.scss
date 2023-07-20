@@ -1,12 +1,13 @@
 @use '../object/utility/utility.scss';
 @import '../foundation/variables.scss';
+@import '../foundation/_mixins.scss';
 
 // footerのスタイルを記述するファイル
 .l-background__footer {
   background-color: $pale-blue;
   padding-top: 79px;
   padding-bottom: 28px;
-  min-width: 1200px;
+
 }
 
 .l-footer {
@@ -23,7 +24,6 @@
   }
 
   &__list {
-    display: block;
     width: 160px;
     height: 108px;
     margin-left: 39px;
@@ -41,6 +41,7 @@
       font-style: normal;
       font-weight: $regular;
       line-height: 36px;
+      white-space: nowrap;
 
 
 
@@ -61,16 +62,20 @@
     justify-content: space-between;
     padding-left: 3%;
     padding-right: 3%;
+
+    &__list {
+      display: flex;
+    }
   }
 
   &__ads {
     display: flex;
     flex-flow: column;
     align-items: flex-end;
-    margin-left: 35%;
 
     & a {
       transition: $transition;
+      width: 320px;
 
       &:hover {
         opacity: $opacity;
@@ -83,6 +88,7 @@
     width: 320px;
     height: 85px;
     text-align: right;
+    margin-top: 0px;
 
     &__bottom {
       background-image: url(../img/picture/footer-ad-base.png);
@@ -92,9 +98,6 @@
       margin-top: 25px;
     }
 
-    &:first-child {
-      margin-top: 0px;
-    }
 
     & a {
       transition: $transition;
@@ -113,6 +116,92 @@
     line-height: 14px;
     padding-top: 11px;
     padding-bottom: 10px;
-    min-width: 1200px;
+  }
+}
+
+//tab
+@include tab {
+  .l-footer {
+    & p {
+      font-size: 0.16rem;
+    }
+
+    &__list {
+      margin-left: 0.39rem;
+      width: 1.6rem;
+
+      &:first-child {
+        width: 0.98rem;
+      }
+
+      &__item {
+        font-size: 0.16rem;
+      }
+    }
+
+
+    &__ads {
+      & a {
+        width: 3.2rem;
+      }
+    }
+
+    &__ad {
+      width: 3.2rem;
+      height: auto;
+
+      & img {
+        width: 1.8rem;
+        height: auto;
+      }
+
+      &__bottom {
+        width: 3.2rem;
+        height: auto;
+
+        & img {
+          width: 1.8rem;
+          height: auto;
+        }
+      }
+    }
+
+    &__bar {
+      font-size: 0.14rem;
+    }
+  }
+}
+
+@include sp {
+  .l-footer {
+
+    & p {
+      padding-left: 0.5rem;
+      font-size: 0.16rem;
+    }
+
+    &__lists {
+      display: flex;
+      flex-direction: column;
+
+      &__list {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &__list {
+      margin-left: 0.4rem;
+    }
+
+    &__ads {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__ad {
+      margin-top: 0.2rem;
+    }
   }
 }

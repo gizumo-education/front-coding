@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
 @import '../../foundation/_variables.scss';
+@import '../../foundation/_mixins.scss';
 
 // 共通パーツであるボタンのスタイルを記述するファイル
 .l-header {
@@ -7,6 +8,7 @@
     display: flex;
 
     &__parts {
+      position: relative;
       text-decoration: none;
       font-size: 14px;
       font-family: Noto Sans JP;
@@ -16,27 +18,30 @@
       background-color: $blue;
       margin-top: 25px;
       margin-left: 15px;
-      padding-top: 15px;
-      padding-bottom: 15px;
       text-align: center;
       border-radius: 10px;
-      min-width: 140px;
-      min-height: 50px;
+      width: 160px;
+      height: 50px;
+      display: flex;
+      align-items: center;
 
-      &:first-child {
-        min-width: 160px;
-        min-height: 50px;
-      }
-
-      p {
-        margin-left: 10px;
-        display: inline
+      & p {
+        margin-left: 25px;
+        display: inline-block;
       }
 
       & img {
-        display: inline;
+        margin-left: 15px;
         width: 18px;
         height: 18px;
+      }
+    }
+
+    & .first {
+      margin-left: 25px;
+
+      & p {
+        margin-left: 10px;
       }
     }
 
@@ -62,6 +67,7 @@
 }
 
 .s-btn-wrap {
+  margin: 0 auto;
 
   & a {
     transition: $transition;
@@ -84,4 +90,61 @@
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
+}
+
+//tab
+@include tab {
+  .l-header {
+    &__nav-btn {
+      &__parts {
+        font-size: 0.14rem;
+        margin-top: 0.25rem;
+        margin-left: 0.15rem;
+        padding-top: 0.15rem;
+        padding-bottom: 0.15rem;
+        width: 1.6rem;
+        height: 0.5rem;
+        white-space: nowrap;
+
+        & p {
+          margin-left: 0.1rem;
+        }
+      }
+
+      & img {
+        vertical-align: middle;
+        width: 0.18rem;
+        height: auto;
+      }
+
+      & .first {
+        margin-left: 0.3rem;
+        padding-right: 0.2rem;
+
+        & p {
+          margin-left: 0.07rem;
+        }
+
+        & img {
+          margin-left: 0.1rem;
+        }
+      }
+    }
+  }
+
+  .s-btn-text {
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+  }
+}
+
+//sp
+@include sp {
+  .s-btn-wrap {
+    margin-top: 0.4rem;
+
+    & a {
+      width: 3.7rem;
+    }
+  }
 }
