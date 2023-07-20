@@ -2,12 +2,16 @@
 @import'../../foundation/_variables.scss';
 @import'../../foundation/_mixins.scss';
 
+//header動作時に背景を固定
+body.active {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
 
 // headerのスタイルを記述するファイル
 .p-header {
-
-
-
   &__nav {
     padding-bottom: 0.25rem;
     padding-right: 1rem;
@@ -136,6 +140,66 @@
 
     &__nav-btn__item {
       display: none;
+    }
+  }
+
+  .hamburger span {
+    width: 100%;
+    position: relative;
+    transition: ease .4s;
+    display: block;
+  }
+
+  .header__nav {
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 100%;
+    height: 5rem;
+    transform: translateX(100%);
+    background-color: rgba(0, 0, 0, .7);
+    transition: ease .4s;
+  }
+
+
+  .hamburger.active span:nth-child(1) {
+    top: 0.14rem;
+    transform: rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    top: -0.13rem;
+    transform: rotate(-45deg);
+  }
+
+  .header__nav.active {
+    transform: translateX(0);
+  }
+
+  .nav__items {
+    position: absolute;
+    top: 0.3rem;
+    left: 0.6rem;
+
+
+
+
+    &__item a {
+      color: $white;
+      font-family: Noto Sans JP;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: $bold;
+      line-height: 22px;
+      margin-top: 0.38rem;
+    }
+
+    &__item:first-child {
+      margin-top: 0px;
     }
   }
 }
