@@ -4,6 +4,7 @@
 @use './foundation/_reset.scss';
 @use './foundation/_base.scss';
 
+
 /*-------------------------------------------*/
 
 /*layout---------------------------------*/
@@ -29,3 +30,4 @@
 
 
 /*-------------------------------------------*/
+@import'./foundation/library/slick.scss';
