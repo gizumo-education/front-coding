@@ -12,7 +12,7 @@
 
 <body>
   <!-- header -->
-  <header class="l-header">
+  <header class="l-header" id="header">
     <nav class="p-header__nav">
       <ul class="p-header__list">
         <li class="p-header__item">
@@ -61,10 +61,13 @@
         </li>
       </ul>
 
-      <button class="p-header__hamburger hamburger active" id="js-hamburger">
-        <span class="p-header__hamburger__bar"></span>
-        <span class="p-header__hamburger__bar"></span>
-        <span class="p-header__hamburger__bar"></span>
+      <button class="p-header__hamburger hamburger" id="js-hamburger">
+        <div class="hamburger-detail">
+
+          <span class="p-header__hamburger__bar"></span>
+          <span class="p-header__hamburger__bar"></span>
+          <span class="p-header__hamburger__bar"></span>
+        </div>
 
 
         <nav class="header__nav nav" id="js-nav">
@@ -172,7 +175,7 @@
       </div>
     </div>
     <!-- 新着求人 -->
-    <div class="l-inner-background__news">
+    <div class="l-inner-background__news" id="new">
       <div class="l-inner">
         <div class="l-inner-news">
           <div class="l-inner-news__box">
@@ -344,7 +347,7 @@
     </div>
 
     <!--ギズジョブの４つの特徴 -->
-    <div class="l-inner-background__content">
+    <div class="l-inner-background__content" id="feat">
       <div class="l-inner">
         <div class="l-inner-title__content">
           <h2>
@@ -385,7 +388,7 @@
           </div>
         </div>
 
-        <div class="l-inner-title__content">
+        <div class="l-inner-title__content" id="flow">
           <h2>
             転職までの流れ
           </h2>
@@ -461,7 +464,7 @@
           </div>
         </div>
         <div class="l-inner-content">
-          <div class="l-inner-title__content">
+          <div class="l-inner-title__content" id="content">
             <h2>
               転職お役立ちコンテンツ
             </h2>
