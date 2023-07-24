@@ -6,13 +6,24 @@ $(function () {
   console.log('環境構築完了');
 
   //ハンバーガーメニュー
+  let prevScrollPosition = 0;
   const ham = $('#js-hamburger');
   const nav = $('#js-nav');
   ham.on('click', function () {
-    ham.toggleClass('active');
+    $(this).toggleClass('active');
     nav.toggleClass('active');
-    $("body").toggleClass("active");
+    $('body').toggleClass('active');
+
+    if (nav.hasClass('active')) {
+      prevScrollPosition = $(window).scrollTop();
+    }
+
+    if (!nav.hasClass('active')) {
+      $(window).scrollTop(prevScrollPosition);
+    }
   });
+
+
 
   const header = $('#header');
   $('a[href^="#"]').on('click', function () {
