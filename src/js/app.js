@@ -1,4 +1,6 @@
 import $ from "jquery";
+import 'slick-carousel';
+
 
 $(function () {
   console.log('環境構築完了');
@@ -22,4 +24,19 @@ $(function () {
     $("html, body").animate({ scrollTop: position }, speed, "swing");
   })
 
+
+  $('.slick').slick({
+    arrows: true,
+    adaptiveHeight: true,
+    variableWidth: true,
+
+    responsive: [
+      {
+        breakpoint: 788,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
 })
