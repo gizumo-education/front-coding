@@ -27,11 +27,11 @@ $(function () {
 
   const header = $('#header');
   $('a[href^="#"]').on('click', function () {
-    let href = $(this).attr("href");
+    const href = $(this).attr("href");
     const gap = header.outerHeight();
-    let target = $(href == "#" || href == "" ? 'html' : href);
-    let position = target.offset().top - gap;
-    var speed = 500;
+    const target = $(href ==="#" || href === "" ? 'html' : href);
+    const position = target.offset().top - gap;
+    const speed = 500;
     $("html, body").animate({ scrollTop: position }, speed, "swing");
   })
 
