@@ -29,6 +29,31 @@ export default {
   module: {
     rules: [
       {
+        test: /\.woff$/,
+        use: ['file-loader'],
+      },
+      {
+        test: /\.eot$/,
+        use: ['file-loader'],
+      },
+      {
+        test: /\.ttf$/,
+        use: ['file-loader'],
+      },
+      {
+        // node_module内のcss
+        test: /node_modules\/(.+)\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: { url: false },
+          },
+        ],
+      },
+      {
         test: /\.html$/,
         loader: 'html-loader'
       },

@@ -10,18 +10,20 @@
       justify-content: center;
 
       &__item {
-        width: 280px;
-        height: 200px;
         margin-top: 25px;
         margin-left: 20px;
 
-        & img {
-          border-radius: 10px;
-        }
-
-        &:first-child {
+        &.first-pic {
           margin-left: 0px;
         }
+
+        & img {
+          border-radius: 10px;
+          width: 280px;
+          height: 200px;
+        }
+
+
 
         & a {
           transition: $transition;
@@ -86,9 +88,18 @@
     &__box {
       &__list {
         &__item {
-          height: 2rem;
           margin-top: 0.25rem;
           margin-left: 0.2rem;
+
+          & img {
+            border-radius: 0.1rem;
+            width: 2.8rem;
+            height: 2rem;
+
+            &.first-pic {
+              margin-left: 0px;
+            }
+          }
 
           &__text {
             font-size: 0.16rem;
@@ -125,14 +136,14 @@
     &__box {
       &__list {
         &__item {
-          display: none;
+          overflow: hidden;
           text-align: left;
+          margin-left: 0px;
 
-
-          &:nth-of-type(1) {
-            display: block;
+          & img {
             width: 3.7rem;
-            height: 2rem;
+            height: 2.5rem;
+            border-radius: 0.1rem;
           }
 
           &__text {
@@ -158,5 +169,72 @@
         }
       }
     }
+  }
+}
+
+.slick-prev {
+  top: 35%;
+  left: 0px;
+  z-index: 1;
+}
+
+.slick-next {
+  top: 35%;
+  right: 22px;
+}
+
+.slick-arrow:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slick-next:before {
+  background-image: url(../img/icon/arrow.png);
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, .7);
+  background-position: 50%;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.slick-prev:before {
+  background-image: url(../img/icon/arrow-left.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: $white;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+@include tab {
+  .slick-prev {
+    top: 50%;
+    left: 0;
+    z-index: 1;
+  }
+
+  .slick-next {
+    top: 50%;
+    right: 0.25rem;
+  }
+}
+
+@include sp {
+  .slick-prev {
+    top: 55%;
+    left: 0;
+    z-index: 1;
+  }
+
+  .slick-next {
+    top: 55%;
+    right: 0.25rem;
   }
 }

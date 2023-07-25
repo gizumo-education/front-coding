@@ -220,7 +220,9 @@
   .l-inner-news {
     &__box {
       padding-top: 0.3rem;
+      padding-bottom: 0.45rem;
       text-align: center;
+      white-space: nowrap;
 
       &__title {
         display: inline-block;
