@@ -18,6 +18,13 @@
       font-size: 14px;
       & li {
         width: calc(100% / 4 - 20px);
+        transition: 0.3s;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      & img {
+        border-radius: 10px;
       }
       & figcaption {
         width: 95%;
