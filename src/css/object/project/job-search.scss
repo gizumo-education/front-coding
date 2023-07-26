@@ -1,0 +1,37 @@
+@use "../../object/utility/utility.scss";
+// ページ上部のキービジュアルに関するスタイル
+.p-job-search {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px;
+  border-radius: 10px;
+  background: #deeef9;
+  &__text {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  &__box {
+    display: flex;
+    margin-top: 25px;
+    &__select {
+      margin-left: 16px;
+      position: relative;
+      &:first-child {
+        margin-left: 0;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 60%;
+        left: 88%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent transparent utility.$magenta;
+      }
+    }
+    &__btn {
+      margin-left: 15px;
+    }
+  }
+}

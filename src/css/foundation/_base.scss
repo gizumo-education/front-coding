@@ -19,6 +19,10 @@ body {
   line-height: 1;
 }
 
+h2 {
+  font-size: 25px;
+}
+
 @include base.tab {
   body {
     font-size: 0.1rem;
@@ -39,7 +43,6 @@ body {
   }
 }
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -49,6 +52,10 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
 }
 
 .is-pc {
