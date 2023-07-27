@@ -48,7 +48,12 @@ img {
 
 a {
   display: inline-block;
+  color: #000000;
   text-decoration: none;
+  transition: .3s all;
+  &:hover {
+    opacity: .7;
+  }
 }
 
 .is-pc {
