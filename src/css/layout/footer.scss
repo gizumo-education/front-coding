@@ -19,7 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     @include utility.tab {
-      width: 100%;
+      width: 3.2rem;
     }
     @include utility.sp {
       width: 100%;
