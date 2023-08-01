@@ -21,14 +21,14 @@
       display: none!important;
     }
   }
-  &__lists {
+  &__items {
     display: flex;
     font-size: 16px;
     @include utility.tab {
       font-size: .16rem;
     }
   }
-  &__list {
+  &__item {
     padding: 0 16px;
     border-right: solid 1px utility.$black;
     @include utility.tab {
