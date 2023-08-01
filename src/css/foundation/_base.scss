@@ -48,7 +48,7 @@ img {
 
 a {
   display: inline-block;
-  color: #000000;
+  color: base.$black;
   text-decoration: none;
   transition: .3s all;
   &:hover {
