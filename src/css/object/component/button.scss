@@ -129,6 +129,15 @@
       height: 0.2rem;
     }
   }
+  @include utility.sp {
+    top: 48%;
+    width: 0.42rem;
+    height: 0.42rem;
+    &::after {
+      width: 0.1rem;
+      height: 0.1rem;
+    }
+  }
 }
 .c-next-btn {
   position: absolute;
@@ -160,6 +169,15 @@
     &::after {
       width: 0.2rem;
       height: 0.2rem;
+    }
+  }
+  @include utility.sp {
+    top: 48%;
+    width: 0.42rem;
+    height: 0.42rem;
+    &::after {
+      width: 0.1rem;
+      height: 0.1rem;
     }
   }
 }

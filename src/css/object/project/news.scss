@@ -95,7 +95,7 @@
   .p-news {
     margin-top: 0.25rem;
     &__inner {
-      padding: 0.3rem;
+      padding: 0.3rem 0 0.3rem 0;
       & h2 {
         text-align-last: center;
       }
@@ -106,6 +106,7 @@
           width: 95%;
           margin-top: 0.08rem;
           font-size: 0.16rem;
+          font-weight: utility.$bold;
         }
         & li {
           &:nth-child(1) {
