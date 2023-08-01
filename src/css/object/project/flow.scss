@@ -86,8 +86,9 @@
           font-size: 0.14rem;
         }
         &::after {
-          border-width: 0.2rem;
-          height: 0.4rem;
+          border-width: 0.1rem;
+          height: 0.2rem;
+          left: 104%;
         }
         & p img {
           width: 40%;
@@ -113,10 +114,11 @@
       & li {
         width: 73%;
         height: 2.9rem;
-        padding: 5%;
+        padding: 7%;
         margin-bottom: 0.42rem;
         & p:nth-of-type(2) {
-          height: 1rem;
+          height: 0.8rem;
+          margin-top: 0.3rem;
         }
         & p:nth-of-type(3) {
           height: 0.6rem;
@@ -136,8 +138,6 @@
           top: -5%;
           left: 50%;
           transform: translate(-50%, -50%) rotate(90deg);
-          border-width: 20px;
-          height: 40px;
         }
         &:first-child::after {
           content: none;
