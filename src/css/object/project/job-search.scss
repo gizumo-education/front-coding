@@ -35,3 +35,65 @@
     }
   }
 }
+
+@include utility.tab {
+  .p-job-search {
+    text-align: center;
+    margin-top: 6%;
+    padding: 0.4rem;
+    border-radius: 0.1rem;
+    &__text {
+      margin-top: 0.2rem;
+      font-size: 0.2rem;
+    }
+    &__box {
+      &__select {
+        margin-left: 0.16rem;
+        &::after {
+          border-width: 0.1rem;
+        }
+      }
+      &__btn {
+        margin-left: 0.15rem;
+        & img {
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+
+@include utility.sp {
+  .p-job-search {
+    text-align: center;
+    margin-top: 6%;
+    padding: 0.15rem;
+    border-radius: 0.1rem;
+    & h2 {
+      font-size: 0.25rem;
+    }
+    & p {
+      font-size: 0.14rem;
+    }
+    &__text {
+      margin-top: 0.16rem;
+    }
+    &__box {
+      flex-wrap: wrap;
+      margin-top: 0.13rem;
+      &__select {
+        margin-left: 0.16rem;
+        &::after {
+          border-width: 0.06rem;
+        }
+      }
+      &__btn {
+        margin: 0 auto;
+        & img {
+          width: 20%;
+          margin-right: 0.14rem;
+        }
+      }
+    }
+  }
+}
