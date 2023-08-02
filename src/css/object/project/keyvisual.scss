@@ -1,2 +1,119 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/_variables.scss' as var;
+@use '../../foundation/_mixins.scss' as m;
 // ページ上部のキービジュアルに関するスタイル
+
+/* 新着求人 */
+.p-newrequest {
+  height: 636px;
+  background-color: var.$blue;
+
+  &__title {
+    padding-top: 64px;
+    font-size: 25px;
+    font-weight: var.$regular;
+    color: var.$black;
+    @include m.tab {
+      text-align: center;
+      font-weight: var.$bold;
+    }
+  }
+
+  &__wrapper {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__contents {
+    margin-left: 20px;
+    font-size: 16px;
+    width: 280px;
+    
+    img {
+      width: 280px;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    p {
+      padding-top: 8px;
+      font-family: Noto Sans JP;
+      font-size: 16px;
+      font-weight: var.$regular;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: var.$black;
+    }
+      
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &__detail {
+      p {
+      display: inline;
+      padding-top: 8px;
+      font-family: Noto Sans JP;
+      font-size: 14px;
+      font-weight: var.$regular;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      }
+
+      ul {
+        float: left;
+      }
+
+      &__list-title {
+        width: 60px;
+        text-align: center;
+
+        li {
+          height: 21px;
+          background-color: var.$pink;
+          margin-top: 8px;
+        }
+      }
+
+      &__list-contents {
+        padding-left: 10px;
+
+        li {
+          height: 21px;
+          margin-top: 8px;
+
+          p {
+            font-family: inter;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ボタン */
+.p-button__area {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.p-button__red {
+  background-color: var.$red;
+  color: var.$white;
+  font-weight: var.$bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 360px;
+  height: 60px;
+  border-radius: 30px;
+  &:hover {
+    opacity: .8;
+    transition: .3s;
+  }
+}

@@ -6,7 +6,7 @@ $(function() {
 })
 
 $(function () {
-  $(".newrequest__wrapper").slick({
+  $(".p-newrequest__wrapper").slick({
     autoplay: true, //自動再生
     infinite: false, //スライドのループ有効化
     dots: true, //ドットのナビゲーションを表示
