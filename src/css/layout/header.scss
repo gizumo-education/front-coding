@@ -1,2 +1,84 @@
 @use '../object/utility/utility.scss';
 // headerのスタイルを記述するファイル
+
+.f-header{
+  position: fixed;
+  align-items: center;
+  height: 103px;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  background-color: #FFF;
+  &_main {
+    display: flex;
+    justify-content: center;
+    // height: 100%;
+    a {
+      text-decoration: none;
+    }
+
+    &__search-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 23px;
+      width: 600px;
+      padding-top: 53.5px;
+      li {
+        flex-grow: 1;
+        text-align: center;
+        border-left: solid 1px #000;
+        padding-left: 15px;
+      }
+      li:first-child {
+        border-left: none;
+      }
+      a {
+        color: #000;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 18.012px;
+          height: 18.01px;
+          vertical-align: middle;
+        }
+        p {
+          padding: 0;
+          text-align: left;
+        }
+      }
+    }
+    &__button {
+      display: flex;
+      padding-top: 25px;
+      img {
+        width: 20px;
+        height: 18px;
+        vertical-align: middle;
+      }
+      p {
+        color: #FFF;
+        font-size: 14px;
+        padding-left: 10px;
+      }
+      &__blue:first-child {
+        margin-left: 25px;
+      }
+      &__blue {
+        width: 160px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #92C5EA;
+        margin-left: 15px;
+        &__text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

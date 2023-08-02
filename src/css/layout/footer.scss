@@ -1,2 +1,58 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
+.f-footer{
+  background-color: #EFF6FC;
+  height: 265px;
+  margin-top: 200px;
+  &-inner {
+    width: 1180px;
+    margin: auto;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-list {
+    &-items {
+      display: flex;
+    }
+    &-contact {
+      margin-top: 20px;
+    }
+    &-contact:first-child {
+      margin-top: 35px;
+    }
+    &-map {
+      margin-top: 20px;
+      margin-left: 39px;
+    }
+    &-map:first-child {
+      margin-top: 35px;
+    }
+  }
+  &-image {
+    height: 85px;
+    width: 320px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: solid 1px #BDBDBD;
+    margin-top: 15px;
+    img {
+      height: 83px;
+    }
+  }
+  &-image:first-child {
+    margin-top: 55px;
+  }
+  &-text {
+    font-size: 14px;
+    height: 35px;
+    background-color: #D7D7D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+}
