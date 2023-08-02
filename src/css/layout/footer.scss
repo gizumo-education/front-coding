@@ -2,7 +2,7 @@
 // footerのスタイルを記述するファイル
 .f-footer{
   background-color: #EFF6FC;
-  height: 265px;
+  height: 280px;
   margin-top: 200px;
   &-inner {
     width: 1180px;
@@ -36,6 +36,7 @@
   }
   &-images {
     margin-top: 55px;
+    margin-bottom: 20px;
     a {
       display: block;
     }
@@ -53,10 +54,6 @@
       height: 83px;
     }
   }
-  // &-image:first-child {
-  //   margin-top: 55px;
-  // }
-
   &-text {
     font-size: 14px;
     height: 35px;
@@ -64,6 +61,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    // margin-top: 25px;
   }
 }

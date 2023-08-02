@@ -12,18 +12,19 @@
   background-color: #98B1BE;
   &__backimg {
     height: 500px;
-    // width: 1262px;
     z-index: -1;
     left: 0;
     right: 0;
     margin: auto;
     background-image: url(../img/picture/backimg.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   &__title {
     height: 65px;
-    padding-left: 432px;
+    padding-left: 480px;
     z-index: 2;
-
+    transform: scale(0.8);
   }
   &__publication-count {
     z-index: 2;
@@ -56,7 +57,7 @@
 }
 .p-keyvisual-primary-image__usefulWebsite {
   display: flex;
-  padding-left: 655px;
+  padding-left: 755px;
   padding-top: 75px;
   margin-bottom: 40px;
   &__no1 {
