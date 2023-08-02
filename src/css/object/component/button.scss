@@ -77,7 +77,21 @@
   border-left: 22px solid #DE5579; /* 右向きの矢印にするためにborder-leftを追加 */
 }
 
+// お役立ちコンテンツの共通部分
+.c-button-helpful-content {
+  width: 380px;
+  height: 240px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// 全部の<a>にアクションをつけた
+a {
+  cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
 a:hover {
-  opacity: .8;
-  transition: .3s;
+  opacity: 0.8;
 }

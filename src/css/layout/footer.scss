@@ -11,8 +11,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    a {
+      color: #000;
+    }
   }
   &-list {
+    margin-top: 79px;
     &-items {
       display: flex;
     }
@@ -30,6 +34,12 @@
       margin-top: 35px;
     }
   }
+  &-images {
+    margin-top: 55px;
+    a {
+      display: block;
+    }
+  }
   &-image {
     height: 85px;
     width: 320px;
@@ -43,9 +53,10 @@
       height: 83px;
     }
   }
-  &-image:first-child {
-    margin-top: 55px;
-  }
+  // &-image:first-child {
+  //   margin-top: 55px;
+  // }
+
   &-text {
     font-size: 14px;
     height: 35px;

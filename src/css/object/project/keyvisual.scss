@@ -12,7 +12,7 @@
   background-color: #98B1BE;
   &__backimg {
     height: 500px;
-    width: 1262px;
+    // width: 1262px;
     z-index: -1;
     left: 0;
     right: 0;
@@ -151,7 +151,7 @@
     width: 1180px;
   }
   &-title {
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 400;
     padding-top: 64px;
   }
@@ -173,6 +173,9 @@
   padding-top: 25px;
   &-image {
     margin-left: 20px;
+    a {
+      color: #000;
+    }
   }
   &-image:first-child {
     margin-left: 0;
@@ -180,6 +183,7 @@
   &-title {
     font-size: 16px;
     margin-top: 8px;
+    line-height: 23px;
   }
   &-textbox {
     font-size: 14px;
@@ -234,6 +238,7 @@
     display: flex;
     justify-content: center;
     padding-top: 110px;
+    font-weight: 700;
   }
   &-boxs {
     margin-top: 55px;
@@ -279,6 +284,7 @@
     display: flex;
     justify-content: center;
     padding-top: 110px;
+    font-weight: 700;
   }
   &-boxs {
     margin-top: 50px;
@@ -288,7 +294,7 @@
   &-box {
     margin-left: 22px;
     width: 278px;
-    height: 358px;
+    height: 360px;
     border: 2px solid #DE5579;
     border-radius: 10px;
     position: relative; /* .p-keyvisual-jobchange-timeline-box-numberが基準となるように相対位置を指定 */
@@ -325,17 +331,32 @@
       &-img {
         display: flex;
         justify-content: center;
+        position: absolute; /* 親要素に対して絶対位置を指定 */
+        top: 50px; /* 重ねる位置を調整（上端に配置する場合） */
+        left: 90px; /* 左右中央に配置 */
+      }
+      &-content {
+        margin-top: 100px;
       }
       &-title {
       font-size: 24px;
       font-weight: 700;
-      margin: 30px auto;
-      width: 210px;
+      margin: 30px auto 0;
+      width: 220px;
+      height: 70px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p{
+        text-align: center;
+      }
       }
       &-text {
         font-size: 14px;
         margin: auto;
         width: 240px;
+        margin-top: 20px;
       }
     }
   }
@@ -355,37 +376,30 @@
     display: flex;
     justify-content: center;
     padding-top: 110px;
+    font-weight: 700;
   }
   &-contents {
     display: flex;
     margin-top: 50px;
     justify-content: center;
+    // li {
+    //   margin-left: 20px;
+    // }
+    // li:first-child {
+    //   margin-left: 0px;
+    // }
+
   }
   &-content {
-    width: 380px;
-    height: 240px;
-    border-radius: 10px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/picture/helpful.img1.png);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 20px;
+    margin-right: 20px;
+
     &-manual {
-      width: 380px;
-      height: 240px;
-      border-radius: 10px;
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/picture/helpful.img2.png);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 20px;
-    }
-    &-manual:first-child {
-      margin-left: 0;
     }
     &-text {
       color: #FFF;
-      // padding-top: 70px;
       h3 {
         font-size: 24px;
         text-align: center;
