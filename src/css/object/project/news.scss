@@ -200,6 +200,7 @@
   left: 0;
   cursor: pointer;
   border-style: none;
+  opacity: 0.7;
   @include utility.sp {
     top: 45%;
   }
@@ -211,6 +212,7 @@
   right: 0;
   cursor: pointer;
   border-style: none;
+  opacity: 0.7;
   @include utility.sp {
     top: 45%;
   }
