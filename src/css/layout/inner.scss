@@ -5,8 +5,11 @@
 .inner {
   width: 1180px;
   margin: 0 auto;
+  @include m.tab {
+    width: 11.8rem;
+  }
   @include m.sp {
-    width: 370px;
+    width: 3.7rem;
     margin:0 auto;
   }
 }

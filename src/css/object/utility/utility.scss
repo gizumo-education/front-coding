@@ -7,9 +7,8 @@
 .slide-arrow {
   display: block;
   position: absolute;
-  top: 0;
+  top: 125px;
   bottom: 0;
-  margin: auto;
   padding: 0;
   width: 60px;
   height: 60px;
@@ -19,9 +18,15 @@
   color: transparent;
   z-index: 1;
   opacity: 0.7;
+  @include m.tab {
+    top: 1.25rem;
+    width: .6rem;
+    height: .6rem;
+  }
   @include m.sp {
     width: .42rem;
     height: .42rem;
+    top: 2.09rem;
   }
 }
 
@@ -43,6 +48,12 @@
   height: 21px;
   border-top: 1px solid var.$black;
   border-right: 1px solid var.$black;
+  @include m.tab {
+    width: .21rem;
+    height: .21rem;
+    border-top: .01rem solid var.$black;
+    border-right: .01rem solid var.$black;
+  }
   @include m.sp {
     width: .1rem;
     height: .1rem;
@@ -56,8 +67,11 @@
 .slick-next::after {
   right: 24px;
   transform: rotate(45deg);
+  @include m.tab {
+    right: .24rem;
+  }
   @include m.sp {
-    right: 0.21rem;
+    right: .175rem;
   }
 }
 
@@ -68,7 +82,10 @@
 .slick-prev::after {
   left: 24px;
   transform: rotate(-135deg);
+  @include m.tab {
+    left: .24rem;
+  }
   @include m.sp {
-    left: 0.175rem;
+    left: .175rem;
   }
 }

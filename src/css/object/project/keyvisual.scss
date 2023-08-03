@@ -7,17 +7,24 @@
 .p-newrequest {
   height: 636px;
   background-color: var.$blue;
+  @include m.tab {
+    height: 6.36rem;
+  }
 
   &__title {
     padding-top: 64px;
     font-size: 25px;
     font-weight: var.$regular;
     color: var.$black;
+    @include m.tab {
+      padding-top: .64rem;
+      font-size: .25rem;
+    }
     @include m.sp {
       text-align: center;
       font-weight: var.$bold;
-      font-size: 0.25rem;
-      padding-top: 0.3rem;
+      font-size: .25rem;
+      padding-top: .3rem;
     }
   }
 
@@ -26,8 +33,11 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    @include m.tab {
+      padding-top: .25rem;
+    }
     @include m.sp {
-      padding-top: 0.35rem;
+      padding-top: .35rem;
     }
 
     a {
@@ -43,14 +53,24 @@
     margin-right: 20px;
     font-size: 16px;
     width: 280px;
+    @include m.tab {
+      margin-right: .2rem;
+      font-size: .16rem;
+      width: 2.8rem;
+    }
     @include m.sp {
       width: 3.7rem;
     }
     
     img {
-      width: 100%;
+      width: 280px;
       height: 200px;
       border-radius: 10px;
+      @include m.tab {
+        width: 2.8rem;
+        height: 2rem;
+        border-radius: .1rem;
+      }
       @include m.sp {
         width: 3.7rem;
         height: 2.07rem;
@@ -66,9 +86,14 @@
       letter-spacing: 0em;
       text-align: left;
       color: var.$black;
+      @include m.tab {
+        padding-top: .08rem;
+        font-size: .16rem;
+        line-height: .22rem;
+      }
       @include m.sp {
         font-weight: var.$bold;
-        padding-top: 0.1rem;
+        padding-top: .1rem;
       }
     }
 
@@ -82,8 +107,13 @@
       line-height: 20px;
       letter-spacing: 0em;
       text-align: left;
+      @include m.tab {
+        padding-top: .08rem;
+        font-size: .14rem;
+        line-height: .2rem;
+      }
       @include m.sp {
-        padding-top: 0.12rem;
+        padding-top: .12rem;
       }
       }
 
@@ -94,23 +124,37 @@
       &__list-title {
         width: 60px;
         text-align: center;
+        @include m.tab {
+          width: .6rem;
+        }
 
         li {
           height: 21px;
           background-color: var.$pink;
           margin-top: 8px;
+          @include m.tab {
+            height: .21rem;
+            margin-top: .08rem;
+          }
         }
       }
 
       &__list-contents {
         padding-left: 10px;
+        @include m.tab {
+          padding-left: .1rem;
+        }
         @include m.sp {
-          padding-left: 0.21rem;
+          padding-left: .21rem;
         }
 
         li {
           height: 21px;
           margin-top: 8px;
+          @include m.tab {
+            height: .21rem;
+            margin-top: .08rem;
+          }
 
           p {
             font-family: inter;
@@ -126,8 +170,11 @@
   display: flex;
   justify-content: center;
   margin-top: 60px;
+  @include m.tab {
+    margin-top: .6rem;
+  }
   @include m.sp {
-    margin-top: 0.44rem;
+    margin-top: .44rem;
   }
 }
 
@@ -143,6 +190,12 @@
   height: 60px;
   border-radius: 30px;
   transition: opacity .3s ease-out;
+  @include m.tab {
+    font-size: .18rem;
+    width: 3.6rem;
+    height: .6rem;
+    border-radius: .3rem;
+  }
   @include m.sp {
     width: 3.7rem;
   }
