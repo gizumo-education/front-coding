@@ -23,6 +23,13 @@
     padding-top: 25px;
     display: flex;
     justify-content: center;
+
+    a {
+      &:hover {
+        opacity: .8;
+        transition: .3s;
+      }
+    }
   }
 
   &__contents {
@@ -45,6 +52,10 @@
       letter-spacing: 0em;
       text-align: left;
       color: var.$black;
+      @include m.tab {
+        font-weight: var.$bold;
+        padding-top: 10px;
+      }
     }
       
     &:first-child {
@@ -61,6 +72,9 @@
       line-height: 20px;
       letter-spacing: 0em;
       text-align: left;
+      @include m.tab {
+        padding-top: 12px;
+      }
       }
 
       ul {
@@ -80,6 +94,9 @@
 
       &__list-contents {
         padding-left: 10px;
+        @include m.tab {
+          padding-left: 21px;
+        }
 
         li {
           height: 21px;
