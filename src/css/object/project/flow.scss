@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss';
+@use "../../object/utility/utility.scss";
 // ページ上部のキービジュアルに関するスタイル
 .p-flow {
   text-align: center;
@@ -19,6 +19,7 @@
       }
       & p:nth-of-type(2) {
         height: 100px;
+        width: 100%;
       }
       & p:nth-of-type(3) {
         height: 60px;
@@ -33,7 +34,7 @@
         font-size: 14px;
       }
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         left: 108%;
@@ -60,6 +61,101 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+}
+
+@include utility.tab {
+  .p-flow {
+    &__list {
+      margin-top: 0.5rem;
+      & li {
+        width: 2.78rem;
+        height: 3.58rem;
+        padding: 0.6rem 0.2rem 0.4rem;
+        & p:nth-of-type(2) {
+          height: 1rem;
+        }
+        & p:nth-of-type(3) {
+          height: 0.6rem;
+          margin-top: 0.2rem;
+          font-size: 0.24rem;
+        }
+        & p:nth-of-type(4) {
+          margin-top: 0.18rem;
+          font-size: 0.14rem;
+        }
+        &::after {
+          border-width: 0.1rem;
+          height: 0.2rem;
+          left: 104%;
+        }
+        & p img {
+          width: 40%;
+        }
+      }
+      &__part {
+        top: 0.11rem;
+        left: 0.09rem;
+        width: 0.6rem;
+        height: 0.6rem;
+        font-size: 0.16rem;
+      }
+    }
+  }
+}
+
+@include utility.sp {
+  .p-flow {
+    &__list {
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+      justify-content: center;
+      & li {
+        width: 73%;
+        height: 2.9rem;
+        padding: 7%;
+        margin-bottom: 0.42rem;
+        & p:nth-of-type(2) {
+          height: 0.8rem;
+          margin-top: 0.3rem;
+        }
+        & p:nth-of-type(3) {
+          height: 0.6rem;
+          margin-top: 0rem;
+          font-size: 0.2rem;
+          white-space: nowrap;
+        }
+        & p:nth-of-type(4) {
+          font-size: 0.14rem;
+          margin-top: 0;
+          text-align: left;
+        }
+        & p img {
+          width: 35%;
+        }
+        &::after {
+          top: -5%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+        &:first-child::after {
+          content: none;
+        }
+        &:last-child::after {
+          content: "";
+        }
+      }
+      & :last-of-type {
+        margin-bottom: 0;
+      }
+      &__part {
+        top: 0.11rem;
+        left: 0.09rem;
+        width: 0.45rem;
+        height: 0.45rem;
+        font-size: 0.1rem;
+      }
     }
   }
 }

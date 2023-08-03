@@ -40,8 +40,32 @@
           >
         </li>
       </ul>
+      <div class="l-header__toggle">
+        <div class="l-header__toggle-box">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="l-header__nav-content">
+        <nav class="l-header__custom-nav">
+          <ul class="l-header__menu-list">
+            <li class="l-header__menu-item"><a href="#top">トップ</a></li>
+            <li class="l-header__menu-item"><a href="#news">新着求人</a></li>
+            <li class="l-header__menu-item">
+              <a href="#characteristic">４つの特徴</a>
+            </li>
+            <li class="l-header__menu-item">
+              <a href="#flow">転職までの流れ</a>
+            </li>
+            <li class="l-header__menu-item">
+              <a href="#content">転職お役立ちコンテンツ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main class="l-main">
+    <main class="l-main" id="top">
       <div class="p-keyvisual">
         <div class="p-keyvisual__inner">
           <img
@@ -138,7 +162,7 @@
           </button>
         </form>
       </section>
-      <section class="p-news">
+      <section class="p-news" id="news">
         <div class="l-inner p-news__inner">
           <h2>新着求人</h2>
           <ul class="p-news__inner__list">
@@ -195,8 +219,6 @@
               </a>
             </li>
           </ul>
-          <div class="c-prev-btn"><a href=""></a></div>
-          <div class="c-next-btn"><a href=""></a></div>
           <a href="" class="p-news__inner__btn c-btn__pink"
             >新着求人一覧をもっと見る</a
           >
@@ -209,12 +231,16 @@
         </h2>
       </section>
       <section class="l-inner p-characteristic">
-        <h2 class="l-bold">ギズジョブの4つの特徴</h2>
+        <h2 class="l-bold" id="characteristic">ギズジョブの4つの特徴</h2>
         <ul class="p-characteristic__list">
           <li>
             <p class="l-bold">WEB上で応募完結</p>
             <p>
-              エントリーシートの記入を済ませれば、あとは気になる企業に応募して<br />待つだけで面接アポまで完結！
+              エントリーシートの記入を済ませれば、<br
+                class="is-sp"
+              />あとは気になる企業に応募して<br
+                class="is-pc"
+              />待つだけで面接アポまで完結！
             </p>
           </li>
           <li>
@@ -226,18 +252,26 @@
           <li>
             <p class="l-bold">わかりやすい</p>
             <p>
-              当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br />といったご自身にピッタリマッチした求人を見つけることができる！
+              当求人サイトは医療事務に特化しておりさらに<br
+                class="is-sp"
+              />こだわり検索や地域から検索<br
+                class="is-pc"
+              />といったご自身にピッタリマッチした求人を見つけることができる！
             </p>
           </li>
           <li>
             <p class="l-bold">完全無料</p>
             <p>
-              当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br />運営されています。ですので求職者の方からは応募前はもちろん、<br />内定後も費用は一切いただきません。
+              当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br
+                class="is-pc"
+              />運営されています。ですので求職者の方からは応募前はもちろん、<br
+                class="is-pc"
+              />内定後も費用は一切いただきません。
             </p>
           </li>
         </ul>
       </section>
-      <section class="l-inner p-flow">
+      <section class="l-inner p-flow" id="flow">
         <h2 class="l-bold">転職までの流れ</h2>
         <ul class="p-flow__list">
           <li>
@@ -251,7 +285,7 @@
           <li>
             <p class="p-flow__list__part">STEP<br />2</p>
             <p><img src="img/icon/step2.png" alt="" /></p>
-            <p class="l-bold">気になる企業の<br />ピックアップ</p>
+            <p class="l-bold">気になる企業の<br class="is-pc" />ピックアップ</p>
             <p>
               ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ
             </p>
@@ -275,7 +309,7 @@
         </ul>
       </section>
       <article class="l-inner p-content">
-        <h2 class="l-bold">転職お役立ちコンテンツ</h2>
+        <h2 class="l-bold" id="content">転職お役立ちコンテンツ</h2>
         <ul class="p-content__list">
           <li>
             <a href="">

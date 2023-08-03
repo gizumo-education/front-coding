@@ -8,11 +8,40 @@
   position: relative;
   &::before {
     @include utility.backgroundDark;
+    border-radius: 0;
   }
   &__inner {
     position: relative;
     color: utility.$white;
     font-size: 25px;
     line-height: 2;
+  }
+}
+
+@include utility.tab {
+  .p-about {
+    padding: 1.03rem 0rem;
+    &::before {
+      border-radius: 0;
+    }
+    &__inner {
+      font-size: 0.25rem;
+    }
+  }
+}
+
+@include utility.sp {
+  .p-about {
+    padding:  0.1rem 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    &::before {
+      border-radius: 0;
+    }
+    &__inner {
+      font-size: 0.14rem;
+      font-weight: 300;
+    }
   }
 }
