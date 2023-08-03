@@ -4,14 +4,6 @@
 @use '../../foundation/_mixins.scss' as m;
 
 /* カルーセル */
-.slick-slide {
-  width: 280px !important;
-  margin-left: 20px;
-  &:first-child {
-    margin-left: 0;
-  }
-}
-
 .slide-arrow {
   display: block;
   position: absolute;
@@ -27,7 +19,7 @@
   color: transparent;
   z-index: 1;
   opacity: 0.7;
-  @include m.tab {
+  @include m.sp {
     width: .7rem;
     height: .7rem;
   }
@@ -51,7 +43,7 @@
   height: 21px;
   border-top: 1px solid var.$black;
   border-right: 1px solid var.$black;
-  @include m.tab {
+  @include m.sp {
     width: 47%;
     height: 47%;
   }

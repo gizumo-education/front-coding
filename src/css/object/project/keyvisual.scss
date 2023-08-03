@@ -13,7 +13,7 @@
     font-size: 25px;
     font-weight: var.$regular;
     color: var.$black;
-    @include m.tab {
+    @include m.sp {
       text-align: center;
       font-weight: var.$bold;
     }
@@ -23,8 +23,13 @@
     padding-top: 25px;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    @include m.sp {
+      padding-top: 9%;
+    }
 
     a {
+      transition: opacity .3s ease-out;
       &:hover {
         opacity: .8;
         transition: .3s;
@@ -33,14 +38,20 @@
   }
 
   &__contents {
-    margin-left: 20px;
+    margin-right: 20px;
     font-size: 16px;
     width: 280px;
+    @include m.sp {
+      width: 132.1%;
+    }
     
     img {
-      width: 280px;
+      width: 100%;
       height: 200px;
       border-radius: 10px;
+      @include m.sp {
+        width: 132.1%;
+      }
     }
 
     p {
@@ -52,14 +63,10 @@
       letter-spacing: 0em;
       text-align: left;
       color: var.$black;
-      @include m.tab {
+      @include m.sp {
         font-weight: var.$bold;
         padding-top: 10px;
       }
-    }
-      
-    &:first-child {
-      margin-left: 0;
     }
 
     &__detail {
@@ -72,7 +79,7 @@
       line-height: 20px;
       letter-spacing: 0em;
       text-align: left;
-      @include m.tab {
+      @include m.sp {
         padding-top: 12px;
       }
       }
@@ -94,7 +101,7 @@
 
       &__list-contents {
         padding-left: 10px;
-        @include m.tab {
+        @include m.sp {
           padding-left: 21px;
         }
 
@@ -129,8 +136,10 @@
   width: 360px;
   height: 60px;
   border-radius: 30px;
+  transition: opacity .3s ease-out;
   &:hover {
     opacity: .8;
     transition: .3s;
   }
 }
+

@@ -7,7 +7,8 @@ $(function() {
 
 $(function () {
   $(".p-newrequest__wrapper").slick({
-    autoplay: true, //自動再生
+    variableWidth: true,
+    autoplay: false, //自動再生
     infinite: false, //スライドのループ有効化
     dots: true, //ドットのナビゲーションを表示 削除予定
     slidesToShow: 4, //表示するスライドの数
@@ -15,7 +16,7 @@ $(function () {
     prevArrow: '<button class="slide-arrow slick-prev"></button>',
     nextArrow: '<button class="slide-arrow slick-next"></button>',
         responsive: [{
-      breakpoint: 1199, //ブレークポイントが768px
+      breakpoint: 767, //ブレークポイントが768px
       settings: {
         slidesToShow: 1, //表示するスライドの数
         slidesToScroll: 1, //スクロールで切り替わるスライドの数
