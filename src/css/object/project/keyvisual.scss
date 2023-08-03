@@ -62,7 +62,8 @@
       width: 3.7rem;
     }
     
-    img {
+    &__img-pc {
+      display: block !important;
       width: 280px;
       height: 200px;
       border-radius: 10px;
@@ -72,8 +73,17 @@
         border-radius: .1rem;
       }
       @include m.sp {
-        width: 3.7rem;
-        height: 2.07rem;
+        display: none !important;
+      }
+    }
+
+    &__img-sp {
+      display: none !important;
+      width: 370px;
+      height: 207px;
+      border-radius: 10px;
+      @include m.sp {
+        display: block !important;
       }
     }
 
