@@ -14,7 +14,7 @@
       font-size: .16rem;
     }
   }
-  &__links {
+  &__link-area {
     width: 320px;
     display: flex;
     flex-wrap: wrap;
@@ -24,29 +24,28 @@
     @include utility.sp {
       width: 100%;
     }
-    li {
-      width: 50%;
-      line-height: 36px;
+  }
+  &__link {
+    width: 50%;
+    line-height: 36px;
+    @include utility.tab {
+      line-height: .36rem;
+    }
+    @include utility.sp {
+      line-height: .36rem;
+    }
+    &:first-child {
+      width: 100%;
+      margin-bottom: 27px;
       @include utility.tab {
-        line-height: .36rem;
+        margin-bottom: .27rem;
       }
       @include utility.sp {
-        line-height: .36rem;
+        margin-bottom: .27rem;
       }
-      &:first-child {
-        width: 100%;
-        margin-bottom: 27px;
-        @include utility.tab {
-          margin-bottom: .27rem;
-        }
-        @include utility.sp {
-          margin-bottom: .27rem;
-        }
-      }
-
     }
   }
-  &__banner {
+  &__banner-area {
     width: 322px;
     @include utility.tab {
       width: 3.22rem;
@@ -55,25 +54,25 @@
       width: 100%;
       margin-top: 0.22rem;
     }
-    li {
-      margin-top: 15px;
-      @include utility.tab {
-        margin-top: .15rem;
-      }
+  }
+  &__banner {
+    margin-top: 15px;
+    @include utility.tab {
+      margin-top: .15rem;
+    }
+    @include utility.sp {
+      margin-top: .15rem;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+    a {
       @include utility.sp {
-        margin-top: .15rem;
+        display: block;
       }
-      &:first-child {
-        margin-top: 0;
-      }
-      a {
+      img {
         @include utility.sp {
-          display: block;
-        }
-        img {
-          @include utility.sp {
-            width: 100%;
-          }
+          width: 100%;
         }
       }
     }
