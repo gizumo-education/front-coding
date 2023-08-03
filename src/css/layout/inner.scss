@@ -1,2 +1,12 @@
 @use '../object/utility/utility.scss';
+@use '../foundation/_mixins.scss' as m;
 // innerのスタイルを記述するファイル
+
+.inner {
+  width: 1180px;
+  margin: 0 auto;
+  @include m.sp {
+    width: 370px;
+    margin:0 auto;
+  }
+}
