@@ -12,10 +12,11 @@ html {
 }
 
 body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
   font-weight: base.$regular;
   font-family: 'Noto Sans JP', sans-serif;
-  height: 100%;
-  position: relative;
   line-height: 1;
 }
 
