@@ -1,2 +1,108 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+// お仕事検索のボタンスタイル
+.c-button-select{
+  position: relative;
+  &-style-none {
+    appearance: none;
+    -webkit-appearance:none;
+    background: transparent;
+    outline: none;
+    resize: none;
+  }
+  &-area {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: solid 1px #DE1E79;
+    box-sizing: border-box;
+    padding-left: 15px; // 選択わくの中の文字のpadding
+    color: #000; // 表示された選択肢の文字の色
+    font-size: 18px;// 表示された選択肢の文字サイズ
+    background-color: #FFFFFF; // 選択わくの中のいろ
+    }
+  &-button {
+    background-color: #DE5579;
+    border-radius: 30px;
+    border: none;
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      span {
+        font-size: 18px;
+        color: #FFF;
+        font-weight: 700;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.c-button-select::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 25px;
+    width: 20px;
+    height: 10px;
+    background-color: #DE1E79;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+    pointer-events: none;
+}
+
+// 新着求人のtextのところ
+.c-button-newjob-textbox-red {
+  background-color: #FFCAD0;
+  height: 20px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//転職の流れの矢印
+.c-button-timeline-box-triangle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -24px; /* マイナスの値を設定して右にオフセット */
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 22px solid #DE5579; /* 右向きの矢印にするためにborder-leftを追加 */
+}
+
+// お役立ちコンテンツの共通部分
+.c-button-helpful-content {
+  width: 380px;
+  height: 240px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// 全部の<a>にアクションをつけた
+a {
+  cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+// buttonにもアクションつけた
+button {
+  cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+button:hover {
+  opacity: 0.8;
+}
