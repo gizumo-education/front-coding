@@ -16,6 +16,8 @@
     @include m.sp {
       text-align: center;
       font-weight: var.$bold;
+      font-size: 0.25rem;
+      padding-top: 0.3rem;
     }
   }
 
@@ -25,7 +27,7 @@
     justify-content: center;
     overflow: hidden;
     @include m.sp {
-      padding-top: 9%;
+      padding-top: 0.35rem;
     }
 
     a {
@@ -42,7 +44,7 @@
     font-size: 16px;
     width: 280px;
     @include m.sp {
-      width: 132.1%;
+      width: 3.7rem;
     }
     
     img {
@@ -50,7 +52,8 @@
       height: 200px;
       border-radius: 10px;
       @include m.sp {
-        width: 132.1%;
+        width: 3.7rem;
+        height: 2.07rem;
       }
     }
 
@@ -65,7 +68,7 @@
       color: var.$black;
       @include m.sp {
         font-weight: var.$bold;
-        padding-top: 10px;
+        padding-top: 0.1rem;
       }
     }
 
@@ -80,7 +83,7 @@
       letter-spacing: 0em;
       text-align: left;
       @include m.sp {
-        padding-top: 12px;
+        padding-top: 0.12rem;
       }
       }
 
@@ -102,7 +105,7 @@
       &__list-contents {
         padding-left: 10px;
         @include m.sp {
-          padding-left: 21px;
+          padding-left: 0.21rem;
         }
 
         li {
@@ -123,6 +126,9 @@
   display: flex;
   justify-content: center;
   margin-top: 60px;
+  @include m.sp {
+    margin-top: 0.44rem;
+  }
 }
 
 .p-button__red {
@@ -137,6 +143,9 @@
   height: 60px;
   border-radius: 30px;
   transition: opacity .3s ease-out;
+  @include m.sp {
+    width: 3.7rem;
+  }
   &:hover {
     opacity: .8;
     transition: .3s;
