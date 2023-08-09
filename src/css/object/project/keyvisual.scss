@@ -918,7 +918,6 @@
         height: 0.75rem;
       }
     }
-
     // ４つの特徴
     .p-keyvisual-job-features {
       &-inner {
@@ -940,6 +939,10 @@
         &-text {
           margin-top: 0.3rem;
           font-size: 0.12rem;
+          line-height: 0.17rem;
+        }
+        &-title {
+          font-size: 0.2rem;
         }
       }
       &-box:nth-child(-n+2) {
@@ -1008,6 +1011,7 @@
 
   // お役立ちコンテンツ
   .p-keyvisual-helpful {
+    margin-bottom: 0.35rem;
     &-inner {
       padding-top: 0.2rem;
       padding-bottom: 0;
