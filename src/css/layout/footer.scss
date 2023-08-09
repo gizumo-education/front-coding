@@ -1,18 +1,20 @@
 @use '../object/utility/utility.scss';
+@use '../foundation/variables' as var;
+
 // footerのスタイルを記述するファイル
 .f-footer{
-  background-color: #EFF6FC;
+  background-color: var.$azure;
   height: 280px;
   margin-top: 200px;
   &-inner {
-    width: 1180px;
+    width: 100%;
     margin: auto;
     font-size: 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     a {
-      color: #000;
+      color: var.$black;
     }
   }
   &-list {
@@ -44,11 +46,11 @@
   &-image {
     height: 85px;
     width: 320px;
-    background-color: #FFF;
+    background-color: var.$white;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border: solid 1px #BDBDBD;
+    border: solid 1px var.$silver;
     margin-top: 15px;
     img {
       height: 83px;
@@ -57,10 +59,96 @@
   &-text {
     font-size: 14px;
     height: 35px;
-    background-color: #D7D7D7;
+    background-color: var.$lightgrey;
     display: flex;
     justify-content: center;
     align-items: center;
-    // margin-top: 25px;
+  }
+}
+
+@include utility.tab {
+  .f-footer{
+    height: 2.8rem;
+    margin-top: 2rem;
+    &-inner {
+      font-size: 0.16rem;
+    }
+    &-list {
+      margin-top: 0.79rem;
+      &-contact {
+        margin-top: 0.2rem;
+      }
+      &-contact:first-child {
+        margin-top: 0.35rem;
+      }
+      &-map {
+        margin-top: 0.2rem;
+        margin-left: 0.39rem;
+      }
+      &-map:first-child {
+        margin-top: 0.35rem;
+      }
+    }
+    &-images {
+      margin-top: 0.55rem;
+      margin-bottom: 0.2rem;
+    }
+    &-image {
+      height: 0.85rem;
+      width: 3.2rem;
+      border: solid 0.01rem var.$silver;
+      margin-top: 0.15rem;
+      img {
+        height: 0.83rem;
+      }
+    }
+    &-text {
+      font-size: 0.14rem;
+      height: 0.35rem;
+    }
+  }
+}
+
+@include utility.sp {
+  .f-footer {
+    margin-top: 1rem;
+    height: 100%;
+    &-inner {
+      display: grid;
+      font-size: 0.16rem;
+    }
+    &-list {
+      margin-top: 0.38rem;
+      &-contact {
+        margin-top: 0.2rem;
+      }
+      // &-contact:first-child {
+      //   margin-top: rem;
+      // }
+      &-map {
+        margin-top: 0.2rem;
+        margin-left: 0.39rem;
+      }
+      &-map:first-child {
+        margin-top: 0.35rem;
+      }
+      &-images {
+        margin-top: 0.2rem;
+        margin-bottom: 0.4rem;
+      }
+      &-image {
+        width: 100%;
+        height: 0.85rem;
+        border: solid 0.01rem var.$silver;
+        margin-top: 0.15rem;
+        img {
+          height: 0.83rem;
+        }
+      }
+      &-text {
+        font-size: 0.14rem;
+        height: 0.35rem;
+      }
+    }
   }
 }

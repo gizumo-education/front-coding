@@ -1,4 +1,6 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/variables' as var;
+
 // ページ上部のキービジュアルに関するスタイル
 
 // メイン画像
@@ -9,7 +11,7 @@
   height: 500px;
   width: 100%;
   z-index: -2;
-  background-color: #98B1BE;
+  background-color: var.$grayishblue;
   &__backimg {
     height: 500px;
     z-index: -1;
@@ -22,42 +24,41 @@
   }
   &__title {
     height: 65px;
-    padding-left: 480px;
+    padding-left: 35%;
     z-index: 2;
     transform: scale(0.8);
   }
   &__publication-count {
     z-index: 2;
-
     height: 69px;
     width: 391px;
-    background-color: #FFF;
-    color: #2EB6AA;
+    background-color: var.$white;
+    color: var.$turquoise;
     font-size: 20px;
     border-radius: 10px;
-    border: solid 2px #2EB6AA;
+    border: solid 2px var.$turquoise;
     display: flex; /* 親要素をフレックスコンテナにする */
     justify-content: center; /* 子要素を水平方向（左右）に中央に配置 */
     align-items: center;
-    margin-left: 634.5px;
+    margin-left: 50%;
     margin-top: 54px;
     &__text {
       height: 58px;
       width: 308px;
-      font-weight: 400;
+      font-weight: var.$regular;
     }
     p {
       padding-top: 12px;
     }
     span {
       font-size: 40px;
-      font-weight: 700;
+      font-weight: var.$bold;
     }
   }
 }
 .p-keyvisual-primary-image__usefulWebsite {
   display: flex;
-  padding-left: 755px;
+  padding-left: 52%;
   padding-top: 75px;
   margin-bottom: 40px;
   &__no1 {
@@ -93,23 +94,21 @@
   width: auto;
   &__inner {
     width: 1180px;
-    // height: 240px;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #DEEEF9;
+    background-color: var.$ightblue;
     margin-top: 60px;
     border-radius: 10px;
     &__text {
       text-align: center;
       h2 {
         font-size: 25px;
-        // margin-top: 40px;
-        font-weight: 700;
+        font-weight: var.$bold;
       }
       p {
         font-size: 20px;
         margin-top: 20px;
-        font-weight: 400;
+        font-weight: var.$regular;
       }
     }
   }
@@ -117,6 +116,9 @@
 .p-keyvisual-selectbox {
   display: flex;
   margin-top: 26px;
+  &-select-areas {
+    display: flex;
+  }
   &-item {
     margin-left: 15px;
     &-button {
@@ -127,6 +129,12 @@
     &-input {
       width: 300px;
     }
+    button {
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+
   }
   &-item:first-child {
     margin-left: 40px;
@@ -145,9 +153,8 @@
 // 新着求人
 .p-keyvisual-newjob-news {
   margin-top: 60px;
-  // height: 636px;
   width: 100%;
-  background-color: #EFF6FC;
+  background-color: var.$azure;
   display: flex;
   justify-content: center;
   &-inner {
@@ -157,15 +164,13 @@
   }
   &-title {
     font-size: 25px;
-    font-weight: 400;
-    // padding-top: 64px;
+    font-weight: var.$regular;
   }
   &-button {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 60px;
-
     &-item {
     height: 60px;
     width: 360px;
@@ -178,11 +183,10 @@
 .p-keyvisual-newjob-images {
   display: flex;
   justify-content: center;
-  // padding-top: 25px;
   &-image {
     margin-left: 20px;
     a {
-      color: #000;
+      color: var.$black;
     }
   }
   &-image:first-child {
@@ -221,8 +225,8 @@
   }
   &-text {
     font-size: 25px;
-    font-weight: 700;
-    color: #FFF;
+    font-weight: var.$bold;
+    color: var.$white;
     p {
       text-align: center;
     }
@@ -246,8 +250,7 @@
     font-size: 25px;
     display: flex;
     justify-content: center;
-    // padding-top: 110px;
-    font-weight: 700;
+    font-weight: var.$bold;
   }
   &-boxs {
     margin-top: 55px;
@@ -256,9 +259,8 @@
     justify-content: center;
   }
   &-box {
-    // height: 180px;
     width: 570px;
-    background-color: #F7D2DB;
+    background-color: var.$dustypink;
     text-align: center;
     border-radius: 10px;
     margin-left: 40px;
@@ -267,9 +269,8 @@
     padding-bottom: 40px;
     &-title {
       font-size: 24px;
-      font-weight: 700;
-      color: #DE5579;
-      // padding-top: 40px;
+      font-weight: var.$bold;
+      color: var.$mediumpink;
     }
     &-text {
       margin-top: 36px;
@@ -296,8 +297,7 @@
     font-size: 25px;
     display: flex;
     justify-content: center;
-    // padding-top: 110px;
-    font-weight: 700;
+    font-weight: var.$bold;
   }
   &-boxs {
     margin-top: 50px;
@@ -308,11 +308,11 @@
     margin-left: 22px;
     width: 278px;
     height: 360px;
-    border: 2px solid #DE5579;
+    border: 2px solid var.$mediumpink;
     border-radius: 10px;
     position: relative; /* .p-keyvisual-jobchange-timeline-box-numberが基準となるように相対位置を指定 */
     &-number {
-      background-color: #DE5579;
+      background-color: var.$mediumpink;
       height: 60px;
       width: 60px;
       border-radius: 50%;
@@ -330,8 +330,8 @@
         align-items: center;
         p {
           font-size: 16px;
-          font-weight: 700;
-          color: #FFF;
+          font-weight: var.$bold;
+          color: var.$white;
           line-height: 1;
           text-align: center;
         }
@@ -352,11 +352,11 @@
       }
       &-title {
       font-size: 24px;
-      font-weight: 700;
+      font-weight: var.$bold;
       margin: 30px auto 0;
       width: 220px;
       height: 70px;
-      font-weight: 700;
+      font-weight: var.$bold;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -390,20 +390,12 @@
     font-size: 25px;
     display: flex;
     justify-content: center;
-    // padding-top: 110px;
-    font-weight: 700;
+    font-weight: var.$bold;
   }
   &-contents {
     display: flex;
     margin-top: 50px;
     justify-content: center;
-    // li {
-    //   margin-left: 20px;
-    // }
-    // li:first-child {
-    //   margin-left: 0px;
-    // }
-
   }
   &-content {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/picture/helpful.img1.png);
@@ -414,11 +406,11 @@
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/picture/helpful.img2.png);
     }
     &-text {
-      color: #FFF;
+      color: var.$white;
       h3 {
         font-size: 24px;
         text-align: center;
-        font-weight: 700;
+        font-weight: var.$bold;
       }
       p {
         margin-top: 44px;
@@ -433,10 +425,642 @@
     justify-content: center;
     align-items: center;
     margin-top: 80px;
-    // padding-bottom: 90px;
     &-item {
     height: 60px;
     width: 420px;
+    }
+  }
+}
+
+// レスポンシブ画面
+@include utility.tab {
+  // メイン画像
+  .p-keyvisual-primary-image__wrapper {
+    padding-top: 1.03rem;
+  }
+  .p-keyvisual-primary-image__inner {
+    height: 5rem;
+    &__backimg {
+      height: 5rem;
+      background-size: cover;
+    }
+    &__title {
+      height: 0.65rem;
+      padding-left: 35%;
+      z-index: 2;
+      transform: scale(0.8);
+    }
+    &__publication-count {
+      height: 0.69rem;
+      width: 3.91rem;
+      font-size: 0.2rem;
+      border-radius: 0.1rem;
+      margin-left: 50%;
+      margin-top: 2%;
+      &__text {
+        height: 0.58rem;
+        width: 3.08rem;
+      }
+      p {
+        padding-top: 0.12rem;
+      }
+      span {
+        font-size: 0.4rem;
+      }
+    }
+  }
+  .p-keyvisual-primary-image__usefulWebsite {
+    padding-top: 0.75rem;
+    margin-bottom: 0.4rem;
+    &__no1 {
+      margin: 0 0.1rem;
+      &-asterisk {
+        top: 0.15rem;
+        left: 2rem;
+      }
+      &-usefulwebsite{
+        top: 0.2rem;
+        left: 0.1rem;
+      }
+      &-no1img {
+        margin-top: 0.3rem;
+      }
+      &-result {
+        top: 1.35rem;
+        left: 1rem;
+      }
+    }
+  }
+    // お仕事検索
+  .p-keyvisual-job-search {
+    &__inner {
+      width: 11.80rem;
+      padding-top: 0.4rem;
+      padding-bottom: 0.4rem;
+      margin-top: 0.6rem;
+      border-radius: 0.1rem;
+      &__text {
+        h2 {
+          font-size: 0.25rem;
+        }
+        p {
+          font-size: 0.2rem;
+          margin-top: 0.2rem;
+        }
+      }
+    }
+  }
+  .p-keyvisual-selectbox {
+    margin-top: 0.26rem;
+    &-item {
+      margin-left: 0.15rem;
+      &-button {
+        width: 1.4rem;
+        height: 0.6rem;
+      }
+      &-input {
+        width: 3rem;
+      }
+    }
+    &-item:first-child {
+      margin-left: 40px;
+    }
+  }
+  .p-keyvisual-centered-content {
+    width: 1.4rem;
+    img {
+      width: 0.3rem;
+      height: 0.3rem;
+    }
+  }
+
+  // 新着求人
+  .p-keyvisual-newjob-news {
+    margin-top: 0.6rem;
+    &-inner {
+      width: 11.8rem;
+      padding-top: 0.64rem;
+      padding-bottom: 0.67rem;
+    }
+    &-title {
+      font-size: 0.25rem;
+    }
+    &-button {
+      margin-top: 0.6rem;
+
+      &-item {
+      height: 0.6rem;
+      width: 3.6rem;
+      }
+    }
+    &-description {
+      margin-top: 0.25rem;
+    }
+  }
+  .p-keyvisual-newjob-images {
+    &-image {
+      margin-left: 0.2rem;
+    }
+    &-title {
+      font-size: 0.16rem;
+      margin-top: 0.08rem;
+      line-height: 0.23rem;
+    }
+    &-textbox {
+      font-size: 0.14rem;
+      margin-top: 0.09rem;
+    }
+    &-text {
+      &-item {
+        margin-left: 0.1rem;
+      }
+    }
+  }
+    // インフォ
+  .p-keyvisual-info {
+    &-inner {
+    height: 3rem;
+    }
+    &-text {
+      font-size: 0.25rem;
+      &-item {
+        margin-top: 0.25rem;
+        p {
+          font-weight: var.$regular;
+        }
+      }
+    }
+  }
+    // ギズジョブの特徴
+  .p-keyvisual-job-features {
+    &-inner {
+      padding-top: 1.1rem;
+    }
+    &-title {
+      font-size: 0.25rem;
+    }
+    &-boxs {
+      margin-top: 0.55rem;
+    }
+    &-box {
+      width: 5.7rem;
+      border-radius: 0.1rem;
+      margin-left: 0.4rem;
+      margin-top: 0.4rem;
+      padding-top: 0.4rem;
+      padding-bottom: 0.4rem;
+      &-title {
+        font-size: 0.24rem;
+      }
+      &-text {
+        margin-top: 0.36rem;
+        font-size: 0.14rem;
+        line-height: 0.22rem;
+      }
+    }
+  }
+  // 転職までの流れ
+  .p-keyvisual-jobchange-timeline {
+    &-inner {
+      padding-top: 1.1rem;
+    }
+    &-title {
+      font-size: 0.25rem;
+    }
+    &-boxs {
+      margin-top: 0.5rem;
+    }
+    &-box {
+      margin-left: 0.22rem;
+      width: 2.78rem;
+      height: 3.6rem;
+      border: 0.02rem solid var.$mediumpink;
+      border-radius: 0.1rem;
+      &-number {
+        height: 0.6rem;
+        width: 0.6rem;
+        border-radius: 50%;
+        margin-top: 0.09rem;
+        margin-left: 0.09rem;
+        &-nm {
+          p {
+            font-size: 0.16rem;
+          }
+        }
+      }
+      &-item {
+        top: 0.6rem;
+        &-img {
+          top: 0.5rem;
+          left: 0.9rem;
+          height: 30%;
+        }
+        &-content {
+          margin-top: 1rem;
+        }
+        &-title {
+        font-size: 0.24rem;
+        margin: 0.3rem auto 0;
+        width: 2.2rem;
+        height: 0.7rem;
+        }
+        &-text {
+          font-size: 0.14rem;
+          width: 2.4rem;
+          margin-top: 0.2rem;
+          line-height: 0.2rem;
+        }
+      }
+    }
+  }
+  // 転職お役立ちコンテンツ
+  .p-keyvisual-helpful {
+    &-inner {
+      padding-top: 1.1rem;
+      padding-bottom: 0.9rem;
+    }
+    &-title {
+      font-size: 0.25rem;
+    }
+    &-contents {
+      margin-top: 0.5rem;
+    }
+    &-content {
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
+      &-text {
+        h3 {
+          font-size: 0.24rem;
+        }
+        p {
+          margin-top: 0.44rem;
+          font-size: 0.16rem;
+          line-height: 0.24rem;
+        }
+      }
+    }
+    &-button {
+      margin-top: 0.8rem;
+      &-item {
+      height: 0.6rem;
+      width: 4.2rem;
+      }
+    }
+  }
+}
+
+
+@include utility.sp {
+  // 最初の画像
+  .p-keyvisual-primary-image {
+    &__wrapper {
+      padding-top: 0.7rem;
+    }
+    &__usefulWebsite {
+      padding-left: 50%;
+      margin-bottom: 0.2rem;
+      &__no1 {
+        &-usefulwebsite {
+          display: none;
+        }
+        &-asterisk {
+          left: 1rem;
+          top: 0.01rem;
+          height: 0.03rem;
+        }
+        &-no1img {
+          height: 0.4rem;
+          margin-top: 0.1rem;
+        }
+        &-result {
+          height: 0.03rem;
+          top: 0.55rem;
+          left: 0.6rem;
+        }
+      }
+      &-passimg {
+        height: 0.6rem;
+      }
+    }
+    &__inner{
+      width: 100%;
+      height: 100%;
+      &__backimg {
+        height: 2.7rem;
+        width: 4rem;
+        background-size: cover;
+      }
+      &__publication-count {
+        height: 0.3rem;
+        width: 1.7rem;
+        margin-left: 40%;
+        margin-top: 0.1rem;
+        &__text {
+          display: grid;
+          place-items: center;
+          p {
+            font-size: 0.08rem;
+            padding-top: 0;
+          }
+          span {
+            font-size: 0.16rem;
+          }
+        }
+      }
+      &__title {
+        padding-left: 1rem;
+        height: 0.22rem;
+      }
+      &-passimg {
+        height: 0.6rem;
+      }
+    }
+  }
+  // お仕事検索
+  .p-keyvisual {
+    &-job-search {
+      padding: 0 3%;
+      &__inner {
+        margin-top: 0.25rem;
+        padding: 0.25rem;
+        width: 100%;
+        &__text {
+          h2 {
+            font-size: 0.22rem;
+          }
+          p {
+            font-size: 0.14rem;
+          }
+        }
+      }
+    }
+    &-centered-content {
+      width: 100%;
+      img {
+        height: 0.18rem;
+        width: 0.18rem;
+      }
+    }
+    &-selectbox {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-select-areas {
+      width: 100%;
+      justify-content: space-between;
+    }
+    &-item {
+      display: flex;
+      margin-left: 0;
+      &-input {
+        width: 100%;
+        margin-top: 0.15rem;
+      }
+      &-button {
+        margin-top: 0.2rem;
+        width: 1.6rem;
+        height: 0.4rem;
+      }
+    }
+    &-item:first-child {
+      margin: 0;
+    }
+  }
+}
+  // 新着求人
+  .p-keyvisual-newjob {
+    &-news {
+      margin-top: 0.25rem;
+      &-inner {
+        width: 100%;
+        padding-top: 0.3rem;
+      }
+      &-description {
+        margin-top: 0;
+      }
+      &-title {
+        font-weight: var.$bold;
+        font-size: 0.25rem;
+        text-align: center;
+      }
+      &-button {
+        margin-top: 0.44rem;
+      }
+    }
+    &-images {
+      padding: 0 3%;
+      &-textboxs {
+        width: 100%;
+        font-size: 0.14rem;
+      }
+      &-textbox {
+        margin-top: 0.04rem;
+      }
+      &-textbox:first-child {
+        margin-top: 0.11rem;
+      }
+      &-image {
+      margin-top: 0.35rem;
+      width: auto;
+      height: auto;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-image {
+          width: 100%;
+          height: auto;
+        }
+      }
+      }
+      &-title {
+        font-size: 0.16rem;
+        font-weight: var.$bold;
+        line-height: 0.23rem;
+        margin-top: 0.08rem;
+      }
+      &-text {
+        &-item {
+          margin-left: 4%;
+        }
+        p {
+          font-size: 0.14rem;
+        }
+      }
+    }
+    &-images-image:not(:first-child) {
+    display: none;
+    }
+    &-news-button-item {
+      width: 3.7rem;
+      height: 0.6rem;
+    }
+  }
+    // インフォ
+    .p-keyvisual-info {
+      &-inner {
+        background-size: cover;
+      }
+      &-text {
+        font-weight: var.$regular;
+        font-size: 0.14rem;
+        &-item {
+          margin-top: 0.07rem;
+        }
+      }
+      &-inner {
+        height: 0.75rem;
+      }
+    }
+    // ４つの特徴
+    .p-keyvisual-job-features {
+      &-inner {
+        padding-top: 0.55rem;
+      }
+      &-title {
+        font-size: 0.25rem;
+      }
+      &-boxs {
+        padding: 0 3%;
+        margin-top: 0.38rem;
+      }
+      &-box {
+        margin: 0;
+        margin-top: 0.2rem;
+        width: 100%;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        &-text {
+          margin-top: 0.3rem;
+          font-size: 0.12rem;
+          line-height: 0.17rem;
+        }
+        &-title {
+          font-size: 0.2rem;
+        }
+      }
+      &-box:nth-child(-n+2) {
+        margin-top: 0.2rem;
+      }
+      &-box:first-child {
+        margin-top: 0;
+      }
+    }
+
+
+    // 転職までの流れ
+  .p-keyvisual-jobchange-timeline {
+    &-inner {
+      padding-top: 0.6rem;
+    }
+    &-title {
+      font-size: 0.25rem;
+    }
+    &-boxs {
+      display: block;
+      margin-top: 0.35rem;
+    }
+    &-box {
+      margin: 0 auto 0.4rem;
+      height: 2.91rem;
+      width: 2.78rem;
+      &-number {
+        height: 0.45rem;
+        width: 0.45rem;
+        &-nm p{
+          font-size: 0.1rem;
+        }
+      }
+      &-item {
+        top: 0.6rem;
+        &-img {
+          height: 0.75rem;
+          width: 0.75rem;
+          top: 17%;
+          left: 35%;
+        }
+        &-title {
+          font-size: 0.2rem;
+          height: auto;
+          width: auto;
+          margin: auto;
+          h3 {
+            width: 100%;
+          }
+        }
+        &-text {
+          margin-top: 0.1rem;
+          font-size: 0.14rem;
+          width: 2.4rem;
+        }
+        &-content {
+        margin-top: 1rem;
+        }
+      }
+    }
+    &-box:first-child {
+      margin: 0 auto 0.4rem;
+    }
+  }
+
+  // お役立ちコンテンツ
+  .p-keyvisual-helpful {
+    margin-bottom: 0.35rem;
+    &-inner {
+      padding-top: 0.2rem;
+      padding-bottom: 0;
+    }
+    &-title {
+      font-size: 0.25rem;
+    }
+    &-contents {
+      display: block;
+      margin-top: 0.3rem;
+      a {
+        padding: 0;
+        display: block;
+        margin-bottom: 0.17rem;
+      }
+    }
+    &-content  {
+      margin: 0 auto;
+      width: 90%;
+      height: 2.4rem;
+      width: 3.7rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &-text  {
+        h3 {
+          font-size: 0.24rem;
+        }
+        p {
+          margin-top: 0.53rem;
+          font-size: 0.16rem;
+          line-height: 0.24rem;
+        }
+      }
+      &-manual {
+        margin: 0 auto;
+        width: 90%;
+        height: 2.4rem;
+        width: 3.7rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    &-button {
+      margin-top: 0.35rem;
+      &-item {
+        width: 3.7rem;
+        height: 0.6rem;
+      }
     }
   }
 }

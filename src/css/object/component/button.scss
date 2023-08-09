@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/variables' as var;
 // 共通パーツであるボタンのスタイルを記述するファイル
 
 // お仕事検索のボタンスタイル
@@ -15,15 +16,15 @@
     width: 200px;
     height: 60px;
     border-radius: 10px;
-    border: solid 1px #DE1E79;
+    border: solid 1px var.$deeppink;
     box-sizing: border-box;
     padding-left: 15px; // 選択わくの中の文字のpadding
-    color: #000; // 表示された選択肢の文字の色
+    color: var.$black; // 表示された選択肢の文字の色
     font-size: 18px;// 表示された選択肢の文字サイズ
-    background-color: #FFFFFF; // 選択わくの中のいろ
+    background-color: var.$white; // 選択わくの中のいろ
     }
   &-button {
-    background-color: #DE5579;
+    background-color: var.$mediumpink;
     border-radius: 30px;
     border: none;
     &-content {
@@ -33,8 +34,8 @@
       height: 100%;
       span {
         font-size: 18px;
-        color: #FFF;
-        font-weight: 700;
+        color: var.$white;
+        font-weight: var.$bold;
         display: inline-block;
         vertical-align: middle;
       }
@@ -49,7 +50,7 @@
   top: 25px;
     width: 20px;
     height: 10px;
-    background-color: #DE1E79;
+    background-color: var.$deeppink;
     clip-path: polygon(0 0, 100% 0, 50% 100%);
     content: '';
     pointer-events: none;
@@ -57,7 +58,7 @@
 
 // 新着求人のtextのところ
 .c-button-newjob-textbox-red {
-  background-color: #FFCAD0;
+  background-color: var.$lightpink;
   height: 20px;
   width: 60px;
   display: flex;
@@ -76,7 +77,7 @@
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 22px solid #DE5579; /* 右向きの矢印にするためにborder-leftを追加 */
+  border-left: 22px solid var.$mediumpink; /* 右向きの矢印にするためにborder-leftを追加 */
 }
 
 // お役立ちコンテンツの共通部分
@@ -88,7 +89,6 @@
   justify-content: center;
   align-items: center;
 }
-
 // 全部の<a>にアクションをつけた
 a {
   cursor: pointer;
@@ -98,11 +98,104 @@ a:hover {
   opacity: 0.8;
 }
 
-// buttonにもアクションつけた
-button {
-  cursor: pointer;
-	transition: all 0.3s ease 0s;
+@include utility.tab {
+  // お仕事検索のボタンスタイル
+  .c-button-select{
+    &-area {
+      width: 2rem;
+      height: 0.6rem;
+      border-radius: 0.1rem;
+      border: solid 0.01px var.$deeppink;
+      padding-left: 0.15rem; // 選択わくの中の文字のpadding
+      font-size: 0.18rem;// 表示された選択肢の文字サイズ
+      }
+    &-button {
+      border-radius: 0.3rem;
+      &-content {
+        span {
+          font-size: 0.18rem;
+        }
+      }
+    }
+  }
+  .c-button-select::after {
+    right: 0.15rem;
+    top: 0.25rem;
+      width: 0.2rem;
+      height: 0.1rem;
+  }
+
+  // 新着求人のtextのところ
+  .c-button-newjob-textbox-red {
+    height: 0.2rem;
+    width: 0.6rem;
+  }
+
+  //転職の流れの矢印
+  .c-button-timeline-box-triangle::after {
+    right: -0.24rem; /* マイナスの値を設定して右にオフセット */
+    border-top: 0.2rem solid transparent;
+    border-bottom: 0.2rem solid transparent;
+    border-left: 0.22rem solid var.$mediumpink; /* 右向きの矢印にするためにborder-leftを追加 */
+  }
+
+  // お役立ちコンテンツの共通部分
+  .c-button-helpful-content {
+    width: 3.8rem;
+    height: 2.4rem;
+    border-radius: 0.1rem;
+  }
 }
-button:hover {
-  opacity: 0.8;
+
+@include utility.sp {
+  .c-button-select {
+    &-area {
+      width: 1rem;
+      height: 0.3rem;
+      font-size: 0.12rem;
+      border-radius: 0.1rem;
+      border: solid 0.01px var.$deeppink;
+      padding-left: 0.08rem; // 選択わくの中の文字のpadding
+      &-input {
+        width: 100%;
+      }
+    }
+    &-button {
+      border-radius: 0.3rem;
+      &-content {
+        span {
+          font-size: 0.18rem;
+          margin-left: 0.15rem;
+        }
+      }
+    }
+  }
+  .c-button-select::after {
+    right: 0.08rem;
+    top: 0.11rem;
+      width: 0.13rem;
+      height: 0.07rem;
+  }
+  // 新着求人のtextのところ
+  .c-button-newjob-textbox-red {
+    height: 0.2rem;
+    width: 0.6rem;
+  }
+// お役立ちコンテンツのところ
+  .c-button-helpful-content {
+    width: auto;
+    height: auto;
+    border-radius: 0.1rem;
+
+  }
+  // 転職の流れの矢印
+  .c-button-timeline-box-triangle::after {
+    margin-top: 0.1rem;
+    top: 100%; /* 下向きの矢印を作るためにtopを100%に設定 */
+    left: 50%; /* 矢印を左側に配置 */
+    -webkit-transform: translateX(-50%); /* 中央に配置するための変換 */
+    border-left: 0.2rem solid transparent; /* 下向きの矢印を作るためにborder-leftを指定 */
+    border-right: 0.2rem solid transparent; /* 下向きの矢印を作るためにborder-rightを指定 */
+    border-top: 0.22rem solid var.$mediumpink; /* 下向きの矢印の色を指定 */
+  }
 }

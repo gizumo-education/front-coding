@@ -31,6 +31,11 @@
             <a href="" class="f-header_main__button__blue__text"><img src="img/icon/icon112.png" alt=""><p>検索履歴</p></a>
           </li>
         </ul>
+        <button class="f-header_main__menu">
+          <span class="f-header_main__menu-line"></span>
+          <span class="f-header_main__menu-line"></span>
+          <span class="f-header_main__menu-line"></span>
+        </button>
       </div>
   </header>
   <main>
@@ -66,40 +71,42 @@
           <p>働きたい職種・地域・希望給与を入れて検索！</p>
         </div>
         <form class="p-keyvisual-selectbox">
-          <div class="p-keyvisual-selectbox-item c-button-select">
-            <select class="c-button-select-area c-button-select-style-none" name="occupation" id="occupation">
-              <option selected>医療事務</option>
-              <option>調剤事務</option>
-              <option>診療情報管理士</option>
-              <option>歯科助手</option>
-              <option>歯科事務</option>
-              <option>看護補助・看護助手</option>
-              <option>病院内SE</option>
-            </select>
+          <div class="p-keyvisual-selectbox-select-areas">
+            <div class="p-keyvisual-selectbox-item c-button-select">
+              <select class="c-button-select-area c-button-select-style-none" name="occupation" id="occupation">
+                <option selected>医療事務</option>
+                <option>調剤事務</option>
+                <option>診療情報管理士</option>
+                <option>歯科助手</option>
+                <option>歯科事務</option>
+                <option>看護補助・看護助手</option>
+                <option>病院内SE</option>
+              </select>
+            </div>
+            <div class="p-keyvisual-selectbox-item c-button-select">
+              <select class="c-button-select-area c-button-select-style-none" name="work_location">
+                <option>茨城県</option>
+                <option>神奈川県</option>
+                <option>群馬県</option>
+                <option>埼玉県</option>
+                <option>千葉県</option>
+                <option selected>東京都</option>
+                <option>栃木県</option>
+              </select>
+            </div>
+            <div class="p-keyvisual-selectbox-item c-button-select">
+              <select class="c-button-select-area c-button-select-style-none" name="salary">
+                <option>月給17万〜</option>
+                <option>月給18万〜</option>
+                <option>月給19万〜</option>
+                <option selected>月給20万〜</option>
+                <option>月給21万〜</option>
+                <option>月給22万〜</option>
+                <option>月給23万〜</option>
+              </select>
+            </div>
           </div>
-          <div class="p-keyvisual-selectbox-item c-button-select">
-            <select class="c-button-select-area c-button-select-style-none" name="work_location">
-              <option>茨城県</option>
-              <option>神奈川県</option>
-              <option>群馬県</option>
-              <option>埼玉県</option>
-              <option>千葉県</option>
-              <option selected>東京都</option>
-              <option>栃木県</option>
-            </select>
-          </div>
-          <div class="p-keyvisual-selectbox-item c-button-select">
-            <select class="c-button-select-area c-button-select-style-none" name="salary">
-              <option>月給17万〜</option>
-              <option>月給18万〜</option>
-              <option>月給19万〜</option>
-              <option selected>月給20万〜</option>
-              <option>月給21万〜</option>
-              <option>月給22万〜</option>
-              <option>月給23万〜</option>
-            </select>
-          </div>
-          <div class="p-keyvisual-selectbox-item">
+          <div class="p-keyvisual-selectbox-item c-button-select-area-input">
             <input class="c-button-select-area p-keyvisual-selectbox-item-input" name="keyword" placeholder="キーワード・企業・スキルなど"></input>
           </div>
           <div class="p-keyvisual-selectbox-item">
@@ -121,24 +128,28 @@
           <ul class="p-keyvisual-newjob-images">
             <li class="p-keyvisual-newjob-images-image">
               <a href="">
-                <img src="img/picture/newjob1.png" alt="">
-                <p class="p-keyvisual-newjob-images-title">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
-                <div class="p-keyvisual-newjob-images-textbox">
-                  <div class="p-keyvisual-newjob-images-text">
-                    <p class="c-button-newjob-textbox-red">給与</p>
-                    <p class="p-keyvisual-newjob-images-text-item">月給 148,000円～</p>
-                  </div>
-                </div>
-                <div class="p-keyvisual-newjob-images-textbox">
-                  <div class="p-keyvisual-newjob-images-text">
-                    <p class="c-button-newjob-textbox-red">所在地</p>
-                    <p class="p-keyvisual-newjob-images-text-item">三重県伊勢市</p>
-                  </div>
-                </div>
-                <div class="p-keyvisual-newjob-images-textbox">
-                  <div class="p-keyvisual-newjob-images-text">
-                    <p class="c-button-newjob-textbox-red">最寄駅</p>
-                    <p class="p-keyvisual-newjob-images-text-item">伊勢市駅 徒歩15分</p>
+                <div class="p-keyvisual-newjob-images-image-items">
+                  <img src="img/picture/newjob1.png" alt="" class="p-keyvisual-newjob-images-image-items-image">
+                  <p class="p-keyvisual-newjob-images-title">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
+                  <div class="p-keyvisual-newjob-images-textboxs">
+                    <div class="p-keyvisual-newjob-images-textbox">
+                      <div class="p-keyvisual-newjob-images-text">
+                        <p class="c-button-newjob-textbox-red">給与</p>
+                        <p class="p-keyvisual-newjob-images-text-item">月給 148,000円～</p>
+                      </div>
+                    </div>
+                    <div class="p-keyvisual-newjob-images-textbox">
+                      <div class="p-keyvisual-newjob-images-text">
+                        <p class="c-button-newjob-textbox-red">所在地</p>
+                        <p class="p-keyvisual-newjob-images-text-item">三重県伊勢市</p>
+                      </div>
+                    </div>
+                    <div class="p-keyvisual-newjob-images-textbox">
+                      <div class="p-keyvisual-newjob-images-text">
+                        <p class="c-button-newjob-textbox-red">最寄駅</p>
+                        <p class="p-keyvisual-newjob-images-text-item">伊勢市駅 徒歩15分</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </a>
@@ -251,7 +262,7 @@
               WEB上で応募完結
             </h3>
             <p class="p-keyvisual-job-features-box-text">
-              エントリーシートの記入を済ませれば、あとは気になる企業に応募して<br>
+              エントリーシートの記入を済ませれば、<br class="is-sp">あとは気になる企業に応募して<br class="is-pc">
               待つだけで面接アポまで完結！
             </p>
           </div>
@@ -269,8 +280,8 @@
               わかりやすい
             </h3>
             <p class="p-keyvisual-job-features-box-text">
-              当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br>
-              といったご自身にピッタリマッチした求人を見つけることができる！
+              当求人サイトは医療事務に特化しており<br class="is-sp">さらにこだわり検索や地域から検索<br class="is-pc">
+              といったご自身に<br class="is-sp">ピッタリマッチした求人を見つけることができる！
             </p>
           </div>
           <div class="p-keyvisual-job-features-box">
@@ -278,8 +289,8 @@
               完全無料
             </h3>
             <p class="p-keyvisual-job-features-box-text">
-              当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br>
-              運営されています。ですので求職者の方からは応募前はもちろん、<br>
+              当サイトは求人元の企業やグループ会社からのスポンサー費用に<br class="is-sp">よって<br class="is-pc">
+              運営されています。ですので求職者の方からは<br class="is-sp">応募前はもちろん、<br class="is-pc">
               内定後も費用は一切いただきません。
             </p>
           </div>
@@ -304,10 +315,10 @@
             <div class="p-keyvisual-jobchange-timeline-box-item">
               <div class="p-keyvisual-jobchange-timeline-box-item-content">
                 <div class="p-keyvisual-jobchange-timeline-box-item-title">
-                  <h3>エントリーシートの<br>作成</h3>
+                  <h3>エントリーシートの作成</h3>
                 </div>
                 <div class="p-keyvisual-jobchange-timeline-box-item-text">
-                  <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ</p>
+                  <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
                 </div>
               </div>
             </div>
@@ -325,10 +336,10 @@
             <div class="p-keyvisual-jobchange-timeline-box-item">
               <div class="p-keyvisual-jobchange-timeline-box-item-content">
                 <div class="p-keyvisual-jobchange-timeline-box-item-title">
-                  <h3>気になる企業の <br>ピックアップ</h3>
+                  <h3>気になる企業のピックアップ</h3>
                 </div>
                 <div class="p-keyvisual-jobchange-timeline-box-item-text">
-                  <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ</p>
+                  <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
                 </div>
               </div>
             </div>
@@ -349,7 +360,7 @@
                   <h3>複数企業に応募</h3>
                 </div>
                 <div class="p-keyvisual-jobchange-timeline-box-item-text">
-                  <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ</p>
+                  <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
                 </div>
               </div>
             </div>
@@ -370,7 +381,7 @@
                   <h3>内定・転職！</h3>
                 </div>
                 <div class="p-keyvisual-jobchange-timeline-box-item-text">
-                  <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ</p>
+                  <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
                 </div>
               </div>
             </div>
@@ -427,40 +438,42 @@
           <p>働きたい職種・地域・希望給与を入れて検索！</p>
         </div>
         <form class="p-keyvisual-selectbox">
-          <div class="p-keyvisual-selectbox-item c-button-select">
-            <select class="c-button-select-area c-button-select-style-none" name="occupation" id="occupation">
-              <option selected>医療事務</option>
-              <option>調剤事務</option>
-              <option>診療情報管理士</option>
-              <option>歯科助手</option>
-              <option>歯科事務</option>
-              <option>看護補助・看護助手</option>
-              <option>病院内SE</option>
-            </select>
+          <div class="p-keyvisual-selectbox-select-areas">
+            <div class="p-keyvisual-selectbox-item c-button-select">
+              <select class="c-button-select-area c-button-select-style-none" name="occupation" id="occupation">
+                <option selected>医療事務</option>
+                <option>調剤事務</option>
+                <option>診療情報管理士</option>
+                <option>歯科助手</option>
+                <option>歯科事務</option>
+                <option>看護補助・看護助手</option>
+                <option>病院内SE</option>
+              </select>
+            </div>
+            <div class="p-keyvisual-selectbox-item c-button-select">
+              <select class="c-button-select-area c-button-select-style-none" name="work_location">
+                <option>茨城県</option>
+                <option>神奈川県</option>
+                <option>群馬県</option>
+                <option>埼玉県</option>
+                <option>千葉県</option>
+                <option selected>東京都</option>
+                <option>栃木県</option>
+              </select>
+            </div>
+            <div class="p-keyvisual-selectbox-item c-button-select">
+              <select class="c-button-select-area c-button-select-style-none" name="salary">
+                <option>月給17万〜</option>
+                <option>月給18万〜</option>
+                <option>月給19万〜</option>
+                <option selected>月給20万〜</option>
+                <option>月給21万〜</option>
+                <option>月給22万〜</option>
+                <option>月給23万〜</option>
+              </select>
+            </div>
           </div>
-          <div class="p-keyvisual-selectbox-item c-button-select">
-            <select class="c-button-select-area c-button-select-style-none" name="work_location">
-              <option>茨城県</option>
-              <option>神奈川県</option>
-              <option>群馬県</option>
-              <option>埼玉県</option>
-              <option>千葉県</option>
-              <option selected>東京都</option>
-              <option>栃木県</option>
-            </select>
-          </div>
-          <div class="p-keyvisual-selectbox-item c-button-select">
-            <select class="c-button-select-area c-button-select-style-none" name="salary">
-              <option>月給17万〜</option>
-              <option>月給18万〜</option>
-              <option>月給19万〜</option>
-              <option selected>月給20万〜</option>
-              <option>月給21万〜</option>
-              <option>月給22万〜</option>
-              <option>月給23万〜</option>
-            </select>
-          </div>
-          <div class="p-keyvisual-selectbox-item">
+          <div class="p-keyvisual-selectbox-item c-button-select-area-input">
             <input class="c-button-select-area p-keyvisual-selectbox-item-input" name="keyword" placeholder="キーワード・企業・スキルなど"></input>
           </div>
           <div class="p-keyvisual-selectbox-item">
@@ -474,6 +487,8 @@
         </form>
       </div>
     </div>
+
+
   </main>
   <footer class="f-footer">
     <div class="f-footer-inner">
