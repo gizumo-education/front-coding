@@ -26,6 +26,9 @@ $(document).ready(function() {
     event.preventDefault();
     var targetSection = $(this).attr("href"); // クリックされたリンクのhref属性を取得
     var targetOffset = $(targetSection).offset().top; // セクションの上端までの距離
+
+    targetOffset += -120;
+
     // メニューを閉じる
     $('#drawer_toggle').removeClass('open');
     $("#global_nav").removeClass("sp_open");

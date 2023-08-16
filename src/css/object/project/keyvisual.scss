@@ -181,6 +181,7 @@
   }
 }
 .p-keyvisual-newjob-images {
+  position: relative;
   display: flex;
   justify-content: center;
   &-image {
@@ -220,13 +221,12 @@
 }
 .slick-slide {
   width: 300px;
-  // padding-left: 0px;
   padding-right: 20px;
 }
 .slick-arrow {
   z-index: 2;
   position: absolute;
-  top: 1130px;
+  top: 70px;
   width: 60px;
   height: 60px;
   border: none;
@@ -235,10 +235,10 @@
   opacity: 0.5;
 }
 .slick-prev {
-  left: 21rem;
+  left: 0;
 }
 .slick-next {
-  right: 21rem;
+  right: 0;
 }
 .slick-next:before {
   content: '';
@@ -651,13 +651,12 @@
   }
   .slick-slide {
     width: 3rem;
-    // padding-left: 0rem;
     padding-right: 0.2rem;
   }
   .slick-arrow {
     z-index: 2;
     position: absolute;
-    top: 11.4rem;
+    top: 0.7rem;
     width: 0.6rem;
     height: 0.6rem;
     border: none;
@@ -666,7 +665,10 @@
     opacity: 0.5;
   }
   .slick-prev {
-    left: 0.1rem;
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
   }
   .slick-next:before {
     content: '';
@@ -694,9 +696,6 @@
     margin-top: -4px;
     transform: rotate(225deg);
 
-  }
-  .slick-next {
-    right: 0.1rem;
   }
 
     // インフォ
@@ -1044,7 +1043,7 @@
   .slick-arrow {
     z-index: 2;
     position: absolute;
-    top: 9.3rem;
+    top: 2.4rem;
     width: 0.42rem;
     height: 0.42rem;
     border: none;
@@ -1054,6 +1053,9 @@
   }
   .slick-prev {
     left: 0.2rem;
+  }
+  .slick-next {
+    right: 0.2rem;
   }
   .slick-next:before {
     content: '';
@@ -1082,9 +1084,7 @@
     transform: rotate(225deg);
 
   }
-  .slick-next {
-    right: 0.2rem;
-  }
+
     // インフォ
     .p-keyvisual-info {
       &-inner {
