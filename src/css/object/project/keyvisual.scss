@@ -211,6 +211,63 @@
     }
   }
 }
+.slick-list {
+  overflow: hidden;
+  width: 100%;
+}
+.slick-track {
+  display: flex;
+}
+.slick-slide {
+  width: 300px;
+  // padding-left: 0px;
+  padding-right: 20px;
+}
+.slick-arrow {
+  z-index: 2;
+  position: absolute;
+  top: 1130px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: var.$white;
+  opacity: 0.5;
+}
+.slick-prev {
+  left: 21rem;
+}
+.slick-next {
+  right: 21rem;
+}
+.slick-next:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-top: solid 1px var.$black;
+  border-right: solid 1px var.$black;
+  position: absolute;
+  top: 42%;
+  left: 15px;
+  margin-top: -4px;
+  transform: rotate(45deg);
+}
+ .slick-prev:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-top: solid 1px var.$black;
+  border-right: solid 1px var.$black;
+  position: absolute;
+  top: 42%;
+  left: 25px;
+  margin-top: -4px;
+  transform: rotate(225deg);
+
+}
+
 
 // インフォ
 .p-keyvisual-info {
@@ -432,6 +489,15 @@
   }
 }
 
+// @include utility.pc {
+//   .slick-prev {
+//     left: 2.2rem;
+//   }
+//   .slick-next {
+//     right: 2rem;
+//   }
+// }
+
 // レスポンシブ画面
 @include utility.tab {
   // メイン画像
@@ -576,6 +642,63 @@
       }
     }
   }
+  .slick-list {
+    overflow: hidden;
+    width: 100%;
+  }
+  .slick-track {
+    display: flex;
+  }
+  .slick-slide {
+    width: 3rem;
+    // padding-left: 0rem;
+    padding-right: 0.2rem;
+  }
+  .slick-arrow {
+    z-index: 2;
+    position: absolute;
+    top: 11.4rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var.$white;
+    opacity: 0.5;
+  }
+  .slick-prev {
+    left: 0.1rem;
+  }
+  .slick-next:before {
+    content: '';
+    width: 0.2rem;
+    height: 0.2rem;
+    border: 0;
+    border-top: solid 1px var.$black;
+    border-right: solid 1px var.$black;
+    position: absolute;
+    top: 42%;
+    left: 0.15rem;
+    margin-top: -4px;
+    transform: rotate(45deg);
+  }
+   .slick-prev:before {
+    content: '';
+    width: 0.2rem;
+    height: 0.2rem;
+    border: 0;
+    border-top: solid 1px var.$black;
+    border-right: solid 1px var.$black;
+    position: absolute;
+    top: 42%;
+    left: 0.25rem;
+    margin-top: -4px;
+    transform: rotate(225deg);
+
+  }
+  .slick-next {
+    right: 0.1rem;
+  }
+
     // インフォ
   .p-keyvisual-info {
     &-inner {
@@ -838,6 +961,8 @@
       }
       &-description {
         margin-top: 0;
+        display: flex;
+
       }
       &-title {
         font-weight: var.$bold;
@@ -849,7 +974,7 @@
       }
     }
     &-images {
-      padding: 0 3%;
+      // padding: 0 3%;
       &-textboxs {
         width: 100%;
         font-size: 0.14rem;
@@ -865,7 +990,7 @@
       width: auto;
       height: auto;
       a {
-        display: flex;
+        // display: flex;
         justify-content: center;
         align-items: center;
       }
@@ -895,13 +1020,70 @@
         }
       }
     }
-    &-images-image:not(:first-child) {
-    display: none;
-    }
+    // &-images-image:not(:first-child) {
+    // display: none;
+    // }
     &-news-button-item {
       width: 3.7rem;
       height: 0.6rem;
     }
+  }
+  .slick-list {
+    overflow: hidden;
+    width: 4rem;
+  }
+  .slick-track {
+    display: flex;
+
+  }
+  .slick-slide {
+    width: 3.9rem;
+    padding-left: 0.2rem;
+    padding-right: 0.1rem;
+  }
+  .slick-arrow {
+    z-index: 2;
+    position: absolute;
+    top: 9.3rem;
+    width: 0.42rem;
+    height: 0.42rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var.$white;
+    opacity: 0.5;
+  }
+  .slick-prev {
+    left: 0.2rem;
+  }
+  .slick-next:before {
+    content: '';
+    width: 0.12rem;
+    height: 0.12rem;
+    border: 0;
+    border-top: solid 1px var.$black;
+    border-right: solid 1px var.$black;
+    position: absolute;
+    top: 45%;
+    left: 0.13rem;
+    margin-top: -4px;
+    transform: rotate(45deg);
+  }
+   .slick-prev:before {
+    content: '';
+    width: 0.12rem;
+    height: 0.12rem;
+    border: 0;
+    border-top: solid 1px var.$black;
+    border-right: solid 1px var.$black;
+    position: absolute;
+    top: 45%;
+    left: 0.15rem;
+    margin-top: -4px;
+    transform: rotate(225deg);
+
+  }
+  .slick-next {
+    right: 0.2rem;
   }
     // インフォ
     .p-keyvisual-info {

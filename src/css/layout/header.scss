@@ -2,6 +2,9 @@
 @use '../foundation/variables' as var;
 // headerのスタイルを記述するファイル
 
+.no-scroll {
+  overflow: hidden;
+}
 .f-header{
   position: fixed;
   align-items: center;
@@ -77,22 +80,115 @@
       }
     }
     /* ハンバーガーメニュー */
-    &__menu {
+
+    // &__menu {
+    //   display: none;
+    //   position: relative;
+    //   width: 0.5rem;
+    //   background-color: var.$white;
+    //   border: none;
+    //   span {
+    //     background-color: var.$black;
+    //     height: 0.05rem;
+    //     border-radius: 0.5rem;
+    //     margin-top: 0.07rem;
+    //     display: block;
+    //     transition: ease .4s;
+    //   }
+    //   &span:first-child {
+    //     margin-top: 0;
+    //   }
+    // }
+  }
+}
+#drawer_toggle {
+  z-index: 200;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: var.$white;
+  border: none;
+}
+#drawer_toggle span {
+  position: absolute;
+  top: 19px;
+  left: 17px;
+  display: inline-block;
+  width: 0.3rem;
+  height: 0.03rem;
+  border-radius: 0.05rem;
+  // border-radius: 2px;
+  background-color: var.$black;
+  vertical-align: top;
+}
+#drawer_toggle span:nth-child(2) {
+  margin-top: 0.1rem;
+}
+#drawer_toggle span:last-child {
+  margin-top: 0.2rem;
+}
+#drawer_toggle.open span {
+  top: 0.29rem;
+  left: 0.14rem;
+  width: 0.35rem;
+  margin: 0;
+}
+#drawer_toggle.open span:first-child {
+  transform: rotate(45deg);
+}
+#drawer_toggle.open span:nth-child(2) {
+  display: none;
+}
+#drawer_toggle.open span:last-child {
+  transform: rotate(-45deg);
+}
+
+#global_nav.sp_open {
+  top: 0.7rem;
+  display: block;
+  position: fixed;
+  font-size: 0.22rem;
+  font-weight: var.$bold;
+  color: var.$white;
+  height: 5.54rem;
+  width: 100%;
+  background-color: var.$black;
+  opacity: 0.7;
+  display: block;
+  ul {
+    list-style: none;
+    height: 100%;
+  }
+  li {
+    margin-left: 0.6rem;
+    margin-top: 0.38rem;
+    opacity: 1;
+    a {
+      color: var.$white;
+    }
+  }
+  &li:first-child {
+    margin-top: 0.57rem;
+  }
+}
+
+// nav.sp_open {
+// right: 0;
+// }
+
+@include utility.pc {
+  .f-header {
+    &_main {
+      &__menu {
+        display: none;
+      }
+    }
+    nav {
       display: none;
-      position: relative;
-      width: 50px;
-      background-color: var.$white;
-      border: none;
-      &-line {
-        background-color: var.$black;
-        height: 5px;
-        border-radius: 50px;
-        margin-top: 7px;
-        display: block;
-      }
-      &-line:first-child {
-        margin-top: 0;
-      }
     }
   }
 }
@@ -145,14 +241,20 @@
         }
       }
     }
-    &_main__menu {
-      display: none;
-    }
+  }
+  #drawer_toggle {
+    display: none;
+  }
+  #global_nav {
+    display: none;
   }
 }
 @include utility.sp {
   .f-header {
     height: 0.7rem;
+    // nav {
+    //   display: none;
+    // }
     &_main {
       display: flex;
       justify-content: flex-end;
@@ -165,6 +267,59 @@
       &__menu {
         display: block;
       }
+      // &__nav {
+      //   top: 0.7rem;
+      //   display: block;
+      //   position: fixed;
+      //   font-size: 0.22rem;
+      //   font-weight: var.$bold;
+      //   color: var.$white;
+      //   height: 5.54rem;
+      //   width: 100%;
+      //   background-color: var.$black;
+      //   opacity: 0.7;
+      //   display: block;
+      //   ul {
+      //     list-style: none;
+      //     height: 100%;
+      //   }
+      //   li {
+      //     margin-left: 0.6rem;
+      //     margin-top: 0.38rem;
+      //     opacity: 1;
+      //     a {
+      //       color: var.$white;
+      //     }
+      //   }
+      //   &li:first-child {
+      //     margin-top: 0.57rem;
+      //   }
+      // }
+      // &__nav.active {
+      //   transform: translateX(0);
+      // }
+
+  a {
+    color: transparent;
+  }
+    }
+  }
+  .f-hamburger-menu {
+    &-open{
+      top: 30px;
+      left: 15px;
+      width: auto;
+      margin: 0;
+    }
+    &-open:first-child {
+      transform: rotate(45deg);
+    }
+    &-open:nth-child(2) {
+      display: none;
+    }
+    &-open:nth-child(3) {
+      transform: rotate(-45deg);
+      margin-top: 0;
     }
   }
 }

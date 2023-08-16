@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>基本コーディング</title>
+  <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
 </head>
 <body>
   <header class="f-header">
@@ -31,11 +33,21 @@
             <a href="" class="f-header_main__button__blue__text"><img src="img/icon/icon112.png" alt=""><p>検索履歴</p></a>
           </li>
         </ul>
-        <button class="f-header_main__menu">
-          <span class="f-header_main__menu-line"></span>
-          <span class="f-header_main__menu-line"></span>
-          <span class="f-header_main__menu-line"></span>
+        <button class="f-header_main__menu" id="drawer_toggle">
+          <!--  class="f-hamburger-menu-open"をつけたらばつになる -->
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
+        <nav id="global_nav">
+          <ul>
+            <li><a href="#">トップ</a></li>
+            <li><a href="#newjob">新着求人</a></li>
+            <li><a href="#features">４つの特徴</a></li>
+            <li><a href="#timeline">転職までの流れ</a></li>
+            <li><a href="#helpful">転職お役立ちコンテンツ</a></li>
+          </ul>
+        </nav>
       </div>
   </header>
   <main>
@@ -123,10 +135,10 @@
 
     <div class="p-keyvisual-newjob-news">
       <div class="p-keyvisual-newjob-news-inner">
-        <h2 class="p-keyvisual-newjob-news-title">新着求人</h2>
+        <h2 class="p-keyvisual-newjob-news-title" id="newjob">新着求人</h2>
         <div class="p-keyvisual-newjob-news-description">
-          <ul class="p-keyvisual-newjob-images">
-            <li class="p-keyvisual-newjob-images-image">
+          <div class="p-keyvisual-newjob-images single" id="slider">
+            <div class="p-keyvisual-newjob-images-image">
               <a href="">
                 <div class="p-keyvisual-newjob-images-image-items">
                   <img src="img/picture/newjob1.png" alt="" class="p-keyvisual-newjob-images-image-items-image">
@@ -153,8 +165,8 @@
                   </div>
                 </div>
               </a>
-            </li>
-            <li class="p-keyvisual-newjob-images-image">
+            </div>
+            <div class="p-keyvisual-newjob-images-image">
               <a href="">
                 <img src="img/picture/newjob2.png" alt="">
                 <p class="p-keyvisual-newjob-images-title">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
@@ -177,8 +189,8 @@
                   </div>
                 </div>
               </a>
-            </li>
-            <li class="p-keyvisual-newjob-images-image">
+            </div>
+            <div class="p-keyvisual-newjob-images-image">
               <a href="">
                 <img src="img/picture/newjob3.png" alt="">
                 <p class="p-keyvisual-newjob-images-title">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
@@ -201,8 +213,8 @@
                   </div>
                 </div>
               </a>
-            </li>
-            <li class="p-keyvisual-newjob-images-image">
+            </div>
+            <div class="p-keyvisual-newjob-images-image">
               <a href="">
                 <img src="img/picture/newjob4.png" alt="">
                 <p class="p-keyvisual-newjob-images-title">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
@@ -225,8 +237,8 @@
                   </div>
                 </div>
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
         <div class="p-keyvisual-newjob-news-button">
           <a class="c-button-select-button p-keyvisual-newjob-news-button-item" href="">
@@ -254,7 +266,7 @@
     <div class="p-keyvisual-job-features">
       <div class="p-keyvisual-job-features-inner">
         <div class="p-keyvisual-job-features-title">
-          <h2>ギズジョブの4つの特徴</h2>
+          <h2 id="features">ギズジョブの4つの特徴</h2>
         </div>
         <div class="p-keyvisual-job-features-boxs">
           <div class="p-keyvisual-job-features-box">
@@ -300,7 +312,7 @@
     <div class="p-keyvisual-jobchange-timeline">
       <div class="p-keyvisual-jobchange-timeline-inner">
         <div class="p-keyvisual-jobchange-timeline-title">
-          <h2>転職までの流れ</h2>
+          <h2 id="timeline">転職までの流れ</h2>
         </div>
         <div class="p-keyvisual-jobchange-timeline-boxs">
           <div class="p-keyvisual-jobchange-timeline-box c-button-timeline-box-triangle">
@@ -393,7 +405,7 @@
     <div class="p-keyvisual-helpful">
       <div class="p-keyvisual-helpful-inner">
         <div class="p-keyvisual-helpful-title">
-          <h2>転職お役立ちコンテンツ</h2>
+          <h2 id="helpful">転職お役立ちコンテンツ</h2>
         </div>
         <ul class="p-keyvisual-helpful-contents">
           <a href="">
