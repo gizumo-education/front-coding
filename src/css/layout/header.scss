@@ -9,7 +9,6 @@
   background-color: utility.$white;
 
   &-nav {
-    height: 50px;
     padding-right: 100px;
     display: flex;
     justify-content: flex-end;
@@ -73,7 +72,6 @@
 }
 
 .l-header-nav-right-list {
-  height: 50px;
   font-size: 14px;
   padding: 15px 0;
   font-family: Noto Sans JP;
@@ -81,17 +79,18 @@
   font-weight: utility.$regular;
   color: utility.$white;
   background-color: utility.$mistyGray;
+  transition: 0.3s;
 
   &-thumbnail {
-    width: 10%;
+    width: 11%;
     margin-right: 10px;
-    vertical-align: middle;
+    vertical-align: sub;
   }
 
   &-image {
     width: 16%;
     margin-right: 10px;
-    vertical-align: middle;
+    vertical-align: text-bottom;
   }
 
   &:hover {

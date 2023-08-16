@@ -74,54 +74,58 @@
     <section class="l-search wrapper">
       <h2>お仕事検索</h2>
       <p class="l-search-text">働きたい職種・地域・希望給与を入れて検索！</p>
-      <div class="l-search-box">
-        <div class="l-search-box-decoration">
-          <select class="l-search-box-decoration-select">
-            <option value="option1" selected>医療事務</option>
-            <option value="option2">調剤事務</option>
-            <option value="option3">診療情報管理士</option>
-            <option value="option1">歯科助手</option>
-            <option value="option2">歯科事務</option>
-            <option value="option1">看護補助・看護助手</option>
-            <option value="option2">病院内SE</option>
-          </select>
+      <form method="get">
+        <div class="l-search-box">
+          <div class="l-search-box-decoration">
+            <select class="l-search-box-decoration-select">
+              <option value="option1" selected>医療事務</option>
+              <option value="option2">調剤事務</option>
+              <option value="option3">診療情報管理士</option>
+              <option value="option1">歯科助手</option>
+              <option value="option2">歯科事務</option>
+              <option value="option1">看護補助・看護助手</option>
+              <option value="option2">病院内SE</option>
+            </select>
+          </div>
+          <div class="l-search-box-decoration">
+            <select class="l-search-box-decoration-select">
+              <option value="option1">茨城県</option>
+              <option value="option2">神奈川県</option>
+              <option value="option3">群馬県</option>
+              <option value="option1">埼玉県</option>
+              <option value="option2">千葉県</option>
+              <option value="option3" selected>東京都</option>
+              <option value="option1">栃木県</option>
+            </select>
+          </div>
+          <div class="l-search-box-decoration">
+            <select class="l-search-box-decoration-select">
+              <option value="option1">月給17万〜</option>
+              <option value="option2">月給18万〜</option>
+              <option value="option3">月給19万〜</option>
+              <option value="option2" selected>月給20万〜</option>
+              <option value="option3">月給21万〜</option>
+              <option value="option2">月給22万〜</option>
+              <option value="option3">月給23万〜</option>
+            </select>
+          </div>
+          <div class="l-navigation">
+            <div class="l-navigation-input">
+              <input type="text" placeholder="キーワード・企業名・スキルなど" required>
+            </div>
+            <div class="l-navigation-form">
+              <img src="../src/img/icon/button.png" alt="">
+              <button class="l-navigation-form-button">検索する</button>
+            </div>
+          </div>
         </div>
-        <div class="l-search-box-decoration">
-          <select class="l-search-box-decoration-select">
-            <option value="option1">茨城県</option>
-            <option value="option2">神奈川県</option>
-            <option value="option3">群馬県</option>
-            <option value="option1">埼玉県</option>
-            <option value="option2">千葉県</option>
-            <option value="option3" selected>東京都</option>
-            <option value="option1">栃木県</option>
-          </select>
-        </div>
-        <div class="l-search-box-decoration">
-          <select class="l-search-box-decoration-select">
-            <option value="option1">月給17万〜</option>
-            <option value="option2">月給18万〜</option>
-            <option value="option3">月給19万〜</option>
-            <option value="option2" selected>月給20万〜</option>
-            <option value="option3">月給21万〜</option>
-            <option value="option2">月給22万〜</option>
-            <option value="option3">月給23万〜</option>
-          </select>
-        </div>
-        <div class="l-input">
-          <input type="text" class="" placeholder="キーワード・企業名・スキルなど" required>
-        </div>
-        <form method="get" class="l-form">
-          <img src="../src/img/icon/button.png" alt="">
-          <button class="l-form-button">検索する</button>
-        </form>
-      </div>
+      </form>
     </section>
     <section class="l-job">
       <div class="l-job-new wrapper">
         <h2>新着求人</h2>
         <div class="l-job-new-group">
-          <div class="l-job-new-group-common">
+          <a class="l-job-new-group-common">
             <img class="l-job-new-group-common-img" src="../src/img/picture/slider-visual1.jpg" alt="">
             <h3 class="l-job-new-group-common-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h3>
             <ul class="l-job-new-group-common-unit">
@@ -129,8 +133,8 @@
               <li><span>所在地</span>三重県伊勢市</li>
               <li><span>最寄駅</span>伊勢市駅 徒歩15分</li>
             </ul>
-          </div>
-          <div class="l-job-new-group-common">
+          </a>
+          <a class="l-job-new-group-common">
             <img class="l-job-new-group-common-img" src="../src/img/picture/slider-visual2.jpg" alt="">
             <h3 class="l-job-new-group-common-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h3>
             <ul class="l-job-new-group-common-unit">
@@ -138,8 +142,8 @@
               <li><span>所在地</span>三重県伊勢市</li>
               <li><span>最寄駅</span>伊勢市駅 徒歩15分</li>
             </ul>
-          </div>
-          <div class="l-job-new-group-common">
+          </a>
+          <a class="l-job-new-group-common">
             <img class="l-job-new-group-common-img" src="../src/img/picture/slider-visual3.jpg" alt="">
             <h3 class="l-job-new-group-common-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h3>
             <ul class="l-job-new-group-common-unit">
@@ -147,8 +151,8 @@
               <li><span>所在地</span>三重県伊勢市</li>
               <li><span>最寄駅</span>伊勢市駅 徒歩15分</li>
             </ul>
-          </div>
-          <div class="l-job-new-group-common">
+          </a>
+          <a class="l-job-new-group-common">
             <img class="l-job-new-group-common-img" src="../src/img/picture/slider-visual4.jpg" alt="">
             <h3 class="l-job-new-group-common-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h3>
             <ul class="l-job-new-group-common-unit">
@@ -156,7 +160,7 @@
               <li><span>所在地</span>三重県伊勢市</li>
               <li><span>最寄駅</span>伊勢市駅 徒歩15分</li>
             </ul>
-          </div>
+          </a>
         </div>
         <div class="l-inforMation">
           <a class="l-inforMation-text" href="">新着求人一覧をもっと見る</a>
@@ -241,48 +245,52 @@
     <section class="l-search wrapper">
       <h2>お仕事検索</h2>
       <p class="l-search-text">働きたい職種・地域・希望給与を入れて検索！</p>
-      <div class="l-search-box">
-        <div class="l-search-box-decoration">
-          <select class="l-search-box-decoration-select">
-            <option value="option1" selected>医療事務</option>
-            <option value="option2">調剤事務</option>
-            <option value="option3">診療情報管理士</option>
-            <option value="option1">歯科助手</option>
-            <option value="option2">歯科事務</option>
-            <option value="option1">看護補助・看護助手</option>
-            <option value="option2">病院内SE</option>
-          </select>
+      <form method="get">
+        <div class="l-search-box">
+          <div class="l-search-box-decoration">
+            <select class="l-search-box-decoration-select">
+              <option value="option1" selected>医療事務</option>
+              <option value="option2">調剤事務</option>
+              <option value="option3">診療情報管理士</option>
+              <option value="option1">歯科助手</option>
+              <option value="option2">歯科事務</option>
+              <option value="option1">看護補助・看護助手</option>
+              <option value="option2">病院内SE</option>
+            </select>
+          </div>
+          <div class="l-search-box-decoration">
+            <select class="l-search-box-decoration-select">
+              <option value="option1">茨城県</option>
+              <option value="option2">神奈川県</option>
+              <option value="option3">群馬県</option>
+              <option value="option1">埼玉県</option>
+              <option value="option2">千葉県</option>
+              <option value="option3" selected>東京都</option>
+              <option value="option1">栃木県</option>
+            </select>
+          </div>
+          <div class="l-search-box-decoration">
+            <select class="l-search-box-decoration-select">
+              <option value="option1">月給17万〜</option>
+              <option value="option2">月給18万〜</option>
+              <option value="option3">月給19万〜</option>
+              <option value="option2" selected>月給20万〜</option>
+              <option value="option3">月給21万〜</option>
+              <option value="option2">月給22万〜</option>
+              <option value="option3">月給23万〜</option>
+            </select>
+          </div>
+          <div class="l-navigation">
+            <div class="l-navigation-input">
+              <input type="text" placeholder="キーワード・企業名・スキルなど" required>
+            </div>
+            <div class="l-navigation-form">
+              <img src="../src/img/icon/button.png" alt="">
+              <button class="l-navigation-form-button">検索する</button>
+            </div>
+          </div>
         </div>
-        <div class="l-search-box-decoration">
-          <select class="l-search-box-decoration-select">
-            <option value="option1">茨城県</option>
-            <option value="option2">神奈川県</option>
-            <option value="option3">群馬県</option>
-            <option value="option1">埼玉県</option>
-            <option value="option2">千葉県</option>
-            <option value="option3" selected>東京都</option>
-            <option value="option1">栃木県</option>
-          </select>
-        </div>
-        <div class="l-search-box-decoration">
-          <select class="l-search-box-decoration-select">
-            <option value="option1">月給17万〜</option>
-            <option value="option2">月給18万〜</option>
-            <option value="option3">月給19万〜</option>
-            <option value="option2" selected>月給20万〜</option>
-            <option value="option3">月給21万〜</option>
-            <option value="option2">月給22万〜</option>
-            <option value="option3">月給23万〜</option>
-          </select>
-        </div>
-        <div class="l-input">
-          <input type="text" class="" placeholder="キーワード・企業名・スキルなど" required>
-        </div>
-        <form method="get" class="l-form">
-          <img src="../src/img/icon/button.png" alt="">
-          <button class="l-form-button">検索する</button>
-        </form>
-      </div>
+      </form>
     </section>
   </main>
   <footer class="l-footer">

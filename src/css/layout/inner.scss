@@ -11,7 +11,7 @@
 
 .l-search {
   padding: 45px 40px;
-  margin-top: 150px;
+  margin-top: 60px;
   border-radius: 10px;
   text-align: center;
   background-color: utility.$blue;
@@ -77,34 +77,38 @@
   }
 }
 
-.l-input {
-  width: 300px;
-  margin-left: 15px;
+.l-navigation{
+  display: flex;
 
-  input[type="text"] {
-    width: 100%;
+  &-input {
+    width: 300px;
+    margin-left: 15px;
+  
+    input[type="text"] {
+      width: 100%;
+      height: 60px;
+      padding: 17px 15px;
+      border: 1px solid utility.$pink;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: normal;
+      font-family: Noto Sans JP;
+      line-height: normal;
+      color: utility.$gray;
+    }
+  }
+
+  &-form {
     height: 60px;
-    padding: 17px 15px;
-    border: 1px solid utility.$pink;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-    font-family: Noto Sans JP;
-    line-height: normal;
-    color: utility.$gray;
+    padding: 15px 20px 15px 14px;
+    margin-left: 15px;
+    border-radius: 100px;
+    display: flex;
+    background-color: utility.$pink;
+    cursor: pointer;
   }
 }
-
-.l-form {
-  height: 60px;
-  padding: 15px 20px 15px 14px;
-  margin-left: 15px;
-  border-radius: 100px;
-  display: flex;
-  background-color: utility.$pink;
-}
-
 
 .l-job {
   background-color: utility.$blue;
@@ -122,6 +126,8 @@
       &-common {
         width: calc(25% - 15px);
         border-radius: 10px;
+        transition: 0.3s;
+        cursor: pointer;
 
         &-img {
           border-radius: 10px;
@@ -157,6 +163,11 @@
             }
           }
         }
+
+        &:hover {
+          opacity: 0.8;
+          transition: 0.3s;
+        }
       }
     }
   }
@@ -176,6 +187,7 @@
     font-weight: 700;
     text-align: center;
     color: utility.$white;
+    transition: 0.3s;
 
     &:hover {
       opacity: 0.8;
@@ -353,6 +365,8 @@
     background-size: cover;
     position: relative;
     z-index: 1;
+    transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
       opacity: 0.8;
