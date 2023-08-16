@@ -1,2 +1,87 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
+.l-footer {
+  background-color: utility.$blue;
+  margin-top: 200px;
+
+  &-box {
+    padding: 55px 0 28px 0;
+    display: flex;
+    justify-content: space-between;
+
+    &-nav {
+      width: 295px;
+
+      &-title {
+        margin-top: 25px;
+        color: utility.$black;
+        font-family: Noto Sans JP;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &-flex {
+        display: flex;
+        justify-content: space-between;
+
+        &-ul {
+          width: 160px;
+          margin-top: 27px;
+          margin-left: 39px;
+
+          &:first-child {
+            width: 96px;
+            margin-left: 0;
+          }
+
+          >li {
+            >a {
+              color: utility.$black;
+              font-family: Noto Sans JP;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 36px;
+
+              &:hover {
+                opacity: 0.8;
+                transition: 0.3s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.l-imgs {
+  width: 320px;
+  text-align: end;
+  height: 85px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+
+  &-single {
+    margin-top: 15px;
+    background-color: utility.$white;
+  
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.l-Copyright {
+  padding: 10px 0;
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  color: utility.$black;
+  background-color: utility.$gray;
+}

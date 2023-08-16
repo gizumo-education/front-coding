@@ -1,2 +1,106 @@
 @use '../object/utility/utility.scss';
+@use '../foundation/variables.scss';
 // headerのスタイルを記述するファイル
+.l-header {
+  width: 100%;
+  padding: 25px 0;
+  position: fixed;
+  z-index: 1000;
+  background-color: utility.$white;
+
+  &-nav {
+    height: 50px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+
+      >li {
+        border-left: 1px solid utility.$black;
+        margin: 10px;
+
+        &:first-child {
+          border-left: none;
+        }
+      }
+    }
+
+    &-right {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      >li {
+        margin-left: 10px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.l-header-nav-list-lead {
+  font-size: 16px;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: utility.$regular;
+  line-height: normal;
+  color: utility.$black;
+
+  &-thumbnail {
+    width: 11%;
+    vertical-align: sub;
+  }
+
+  &-image {
+    width: 9%;
+    vertical-align: sub;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+}
+
+.l-header-nav-right-list {
+  height: 50px;
+  font-size: 14px;
+  padding: 15px 0;
+  font-family: Noto Sans JP;
+  border-radius: 10px;
+  font-weight: utility.$regular;
+  color: utility.$white;
+  background-color: utility.$mistyGray;
+
+  &-thumbnail {
+    width: 10%;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  &-image {
+    width: 16%;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+}
+
+.toggle,
+.hamburger {
+  display: none;
+}
