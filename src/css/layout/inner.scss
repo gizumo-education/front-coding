@@ -242,7 +242,7 @@
 
     &-box {
       width: calc(50% - 20px);
-      padding: 40px 61px;
+      padding: 40px 54px;
       margin-top: 40px;
       border-radius: 10px;
       background-color: utility.$peachpink;
@@ -339,6 +339,8 @@
       border: 20px solid transparent;
       border-left-color: utility.$red;
       left: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(5%, -50%);
     }
 
     &-box:last-child::before {
@@ -357,7 +359,7 @@
   justify-content: space-between;
 
   &-caption {
-    padding: 70px 60px 55px;
+    padding: 70px 50px 55px;
     width: calc((100% /3) - 20px);
     background-image: url(../img/picture/content-Visual1.jpg);
     background-repeat: no-repeat;
