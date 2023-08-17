@@ -1,2 +1,211 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
+.l-footer {
+  background-color: utility.$blue;
+  margin-top: 200px;
+
+  &-box {
+    padding: 55px 0 28px 0;
+    display: flex;
+    justify-content: space-between;
+
+    &-nav {
+      width: 295px;
+
+      &-title {
+        margin-top: 25px;
+        color: utility.$black;
+        font-family: Noto Sans JP;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &-flex {
+        display: flex;
+        justify-content: space-between;
+
+        &-ul {
+          width: 160px;
+          margin-top: 27px;
+          margin-left: 39px;
+
+          &:first-child {
+            width: 96px;
+            margin-left: 0;
+          }
+
+          >li {
+            >a {
+              color: utility.$black;
+              font-family: Noto Sans JP;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 36px;
+
+              &:hover {
+                opacity: 0.8;
+                transition: 0.3s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.l-imgs {
+  width: 320px;
+  text-align: end;
+  height: 85px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+
+  &-single {
+    margin-top: 15px;
+    background-color: utility.$white;
+  
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.l-Copyright {
+  padding: 10px 0;
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  color: utility.$black;
+  background-color: utility.$lightggray;
+}
+
+@include utility.tab {
+  .l-footer {
+    margin-top: 2rem;
+  
+    &-box {
+      padding: 0.55rem 0 0.28rem 0;
+  
+      &-nav {
+        width: 2.95rem;
+  
+        &-title {
+          margin-top: 0.25rem;
+          font-size: 0.16rem;
+        }
+  
+        &-flex {
+  
+          &-ul {
+            width: 1.6rem;
+            margin-top: 0.27rem;
+            margin-left: 0.39rem;
+  
+            &:first-child {
+              width: 0.96rem;
+            }
+  
+            >li {
+              >a {
+                font-size: 0.16rem;
+                line-height: 0.36rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .l-imgs {
+    width: 3.2rem;
+    height: 0.85rem;
+
+    &-single {
+      margin-top: 0.15rem;
+    
+      &:first-child {
+        margin-top: 0;
+      }
+      &-img {
+        width: 50%;
+      }
+    }
+  }
+  
+  .l-Copyright {
+    padding: 0.1rem 0;
+    font-size: 0.14rem;
+    line-height: 0.14rem;
+  }
+}
+
+@include utility.sp {
+  .l-footer {
+    margin-top: 1rem;
+  
+    &-box {
+      height: auto;
+      padding: 0.38rem 0.4rem;
+      display: block;
+  
+      &-nav {
+        width: 100%;
+  
+        &-title {
+          margin-top: 0;
+          font-size: 0.16rem;
+        }
+  
+        &-flex {
+  
+          &-ul {
+            width: 1.6rem;
+            margin-top: 0.27rem;
+            margin-left: 0.39rem;
+  
+            &:first-child {
+              width: 0.96rem;
+            }
+  
+            >li {
+              >a {
+                font-size: 0.16rem;
+                line-height: 0.36rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .l-imgs {
+    width: 100%;
+    height: auto;
+
+    &-single {
+      margin-top: 0.15rem;
+    
+      &:first-child {
+        margin-top: 0.15rem;
+      }
+      &-img {
+        width: 50%;
+      }
+    }
+  }
+  
+  .l-Copyright {
+    padding: 0.1rem 0;
+    font-size: 0.14rem;
+    line-height: 0.14rem;
+  }
+}

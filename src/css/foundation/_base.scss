@@ -39,6 +39,44 @@ body {
   }
 }
 
+// ここから追記
+.wrapper {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #000;
+  font-family: Noto Sans JP;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+
+@include base.tab  {
+  .wrapper {
+    width: calc(100% - 0.15rem);
+  }
+
+  h2 {
+    font-size: 0.22rem;
+    text-align: center;
+  }
+}
+
+@include base.sp {
+  .wrapper {
+    width: calc(100% - 0.15rem);
+  }
+
+  h2 {
+    font-size: 0.22rem;
+    text-align: center;
+  }
+}
+// ここから追記
 
 img {
   max-width: 100%;

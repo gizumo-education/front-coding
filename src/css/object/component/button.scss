@@ -1,2 +1,29 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+.l-navigation-form-button {
+  width: 80%;
+  border: none;
+  color: utility.$white;
+  background-color: utility.$pink;
+  font-family: Noto Sans JP;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  color: utility.$white;
+  cursor: pointer;
+}
+
+@include utility.tab {
+  .l-navigation-form-button {
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+  }
+}
+
+@include utility.sp {
+  .l-navigation-form-button {
+    line-height: 0;
+    font-size: 0.18rem;
+  }
+}
