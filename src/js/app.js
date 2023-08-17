@@ -1,39 +1,32 @@
 import $ from "jquery";
 import "slick-carousel";
 
-
-
 $(document).ready(function() {
+  // ハンバーガーメニューをクリックしたとき
   $("#drawer_toggle").click(function() {
     const isMenuOpen = $(this).hasClass("open");
-    // メニューの展開/閉じる状態を切り替える
+    // メニューの展開・閉じる状態の切り替え
     $(this).toggleClass("open");
     $("#global_nav").toggleClass("sp_open");
-    // ハンバーガーメニューを開いた時に背景を固定した
+    // ハンバーガーメニューを開いた時に背景を固定
     if ($(this).hasClass("open")) {
       $("body").addClass("no-scroll");
     } else {
       $("body").removeClass("no-scroll");
     }
-    // メニューを展開した状態でメニューアイテムをクリックした場合
-    if (isMenuOpen) {
-      $('#global_nav').removeClass('sp_open');
-      $("body").removeClass("no-scroll");
-    }
   });
-  // <li>をクリックした際のスクロール処理
+  // ＜li＞をクリックした際のスクロール処理
   $("#global_nav ul li a").on("click", function(event) {
     event.preventDefault();
-    const targetSection = $(this).attr("href"); // クリックされたリンクのhref属性を取得
-    const targetOffset = $(targetSection).offset().top; // セクションの上端までの距離
-    targetOffset += -120; // スクロールした時に上に１２０px足す
     // メニューを閉じる
     $('#drawer_toggle').removeClass('open');
     $("#global_nav").removeClass("sp_open");
     $("body").removeClass("no-scroll");
-    // 該当セクションにスムーススクロール
+    // クリックされたリンクのhref属性を取得
+    const targetSection = $(this).attr("href");
+    // スクロールした時に上から120px離す
     $("html, body").animate(
-      {scrollTop: targetOffset},
+      {scrollTop: $(targetSection).offset().top - 120},
       300
     );
   });
