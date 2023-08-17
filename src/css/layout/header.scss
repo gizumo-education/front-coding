@@ -159,10 +159,6 @@
   }
 }
 
-// nav.sp_open {
-// right: 0;
-// }
-
 @include utility.pc {
   .f-header {
     &_main {
@@ -235,9 +231,6 @@
 @include utility.sp {
   .f-header {
     height: 0.7rem;
-    // nav {
-    //   display: none;
-    // }
     &_main {
       display: flex;
       justify-content: flex-end;
@@ -250,37 +243,6 @@
       &__menu {
         display: block;
       }
-      // &__nav {
-      //   top: 0.7rem;
-      //   display: block;
-      //   position: fixed;
-      //   font-size: 0.22rem;
-      //   font-weight: var.$bold;
-      //   color: var.$white;
-      //   height: 5.54rem;
-      //   width: 100%;
-      //   background-color: var.$black;
-      //   opacity: 0.7;
-      //   display: block;
-      //   ul {
-      //     list-style: none;
-      //     height: 100%;
-      //   }
-      //   li {
-      //     margin-left: 0.6rem;
-      //     margin-top: 0.38rem;
-      //     opacity: 1;
-      //     a {
-      //       color: var.$white;
-      //     }
-      //   }
-      //   &li:first-child {
-      //     margin-top: 0.57rem;
-      //   }
-      // }
-      // &__nav.active {
-      //   transform: translateX(0);
-      // }
 
   a {
     color: transparent;

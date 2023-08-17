@@ -268,7 +268,6 @@
 
 }
 
-
 // インフォ
 .p-keyvisual-info {
   &-inner {
@@ -488,15 +487,6 @@
     }
   }
 }
-
-// @include utility.pc {
-//   .slick-prev {
-//     left: 2.2rem;
-//   }
-//   .slick-next {
-//     right: 2rem;
-//   }
-// }
 
 // レスポンシブ画面
 @include utility.tab {
@@ -831,7 +821,6 @@
   }
 }
 
-
 @include utility.sp {
   // 最初の画像
   .p-keyvisual-primary-image {
@@ -973,7 +962,6 @@
       }
     }
     &-images {
-      // padding: 0 3%;
       &-textboxs {
         width: 100%;
         font-size: 0.14rem;
@@ -989,7 +977,6 @@
       width: auto;
       height: auto;
       a {
-        // display: flex;
         justify-content: center;
         align-items: center;
       }
@@ -1019,9 +1006,6 @@
         }
       }
     }
-    // &-images-image:not(:first-child) {
-    // display: none;
-    // }
     &-news-button-item {
       width: 3.7rem;
       height: 0.6rem;
@@ -1082,7 +1066,6 @@
     left: 0.15rem;
     margin-top: -4px;
     transform: rotate(225deg);
-
   }
 
     // インフォ
@@ -1135,7 +1118,6 @@
         margin-top: 0;
       }
     }
-
 
     // 転職までの流れ
   .p-keyvisual-jobchange-timeline {
