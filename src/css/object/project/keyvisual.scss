@@ -1,2 +1,72 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+.p-visual {
+  background-color: #98B1BE;
+  height: 500px;
+
+  &-inner {
+    height: 100%;
+    background-image: url(../img/picture/background-Visual-1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+
+    &-box {
+    
+      &-image {
+        position: absolute;
+      }
+    }
+  }
+}
+
+.p-visual-inner-box li:nth-child(1) .p-visual-inner-box-image {
+  top: 19%;
+  right: 40%;
+}
+
+.p-visual-inner-box li:nth-child(2) .p-visual-inner-box-image {
+  width: 0.6%;
+  top: 23%;
+  right: 22.6%;
+}
+
+.p-visual-inner-box li:nth-child(3) .p-visual-inner-box-image {
+  width: 16%;
+  top: 25%;
+  right: 22.5%;
+}
+
+.p-visual-inner-box li:nth-child(4) .p-visual-inner-box-image {
+  width: 17.5%;
+  z-index: 10000;
+  top: 24.5%;
+  right: 21%;
+}
+
+.p-visual-inner-box li:nth-child(5) .p-visual-inner-box-image {
+  top: 19%;
+  right: 17%;
+}
+
+.p-visual-inner-box li:nth-child(6) .p-visual-inner-box-image {
+  width: 10%;
+  top: 47%;
+  right: 22%;
+}
+
+.p-visual-inner-box li:nth-child(7) .p-visual-inner-box-image {
+  width: 33%;
+  padding: 5px 41px;
+  border: 1px solid #2EB6AA;
+  right: 15%;
+  top: 75%;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.p-visual-inner-box li:nth-child(8) .p-visual-inner-box-image {
+  width: 60%;
+  top: 55%;
+  right: 1%;
+}
