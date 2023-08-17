@@ -5,7 +5,7 @@ import "slick-carousel";
 
 $(document).ready(function() {
   $("#drawer_toggle").click(function() {
-    var isMenuOpen = $(this).hasClass("open");
+    const isMenuOpen = $(this).hasClass("open");
     // メニューの展開/閉じる状態を切り替える
     $(this).toggleClass("open");
     $("#global_nav").toggleClass("sp_open");
@@ -24,8 +24,8 @@ $(document).ready(function() {
   // <li>をクリックした際のスクロール処理
   $("#global_nav ul li a").on("click", function(event) {
     event.preventDefault();
-    var targetSection = $(this).attr("href"); // クリックされたリンクのhref属性を取得
-    var targetOffset = $(targetSection).offset().top; // セクションの上端までの距離
+    const targetSection = $(this).attr("href"); // クリックされたリンクのhref属性を取得
+    const targetOffset = $(targetSection).offset().top; // セクションの上端までの距離
     targetOffset += -120; // スクロールした時に上に１２０px足す
     // メニューを閉じる
     $('#drawer_toggle').removeClass('open');
@@ -50,4 +50,4 @@ $(function(){
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
   });
-  });
+});
