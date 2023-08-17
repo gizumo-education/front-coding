@@ -181,6 +181,7 @@
   }
 }
 .p-keyvisual-newjob-images {
+  position: relative;
   display: flex;
   justify-content: center;
   &-image {
@@ -576,6 +577,7 @@
       }
     }
   }
+
     // インフォ
   .p-keyvisual-info {
     &-inner {
@@ -709,7 +711,6 @@
   }
 }
 
-
 @include utility.sp {
   // 最初の画像
   .p-keyvisual-primary-image {
@@ -838,6 +839,8 @@
       }
       &-description {
         margin-top: 0;
+        display: flex;
+
       }
       &-title {
         font-weight: var.$bold;
@@ -849,7 +852,6 @@
       }
     }
     &-images {
-      padding: 0 3%;
       &-textboxs {
         width: 100%;
         font-size: 0.14rem;
@@ -865,7 +867,6 @@
       width: auto;
       height: auto;
       a {
-        display: flex;
         justify-content: center;
         align-items: center;
       }
@@ -895,14 +896,12 @@
         }
       }
     }
-    &-images-image:not(:first-child) {
-    display: none;
-    }
     &-news-button-item {
       width: 3.7rem;
       height: 0.6rem;
     }
   }
+
     // インフォ
     .p-keyvisual-info {
       &-inner {
@@ -953,7 +952,6 @@
         margin-top: 0;
       }
     }
-
 
     // 転職までの流れ
   .p-keyvisual-jobchange-timeline {
