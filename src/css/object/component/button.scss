@@ -1,7 +1,7 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
-.l-navigation-form-button {
-  width: 80%;
+.c-button-form-button {
+  width: 100%;
   border: none;
   color: utility.$white;
   background-color: utility.$pink;
@@ -14,16 +14,51 @@
   cursor: pointer;
 }
 
+.c-button-form {
+  height: 60px;
+  padding: 15px 20px 15px 14px;
+  margin-left: 15px;
+  border-radius: 100px;
+  display: flex;
+  background-color: utility.$pink;
+  cursor: pointer;
+}
+
 @include utility.tab {
-  .l-navigation-form-button {
+  .c-button-form-button {
     font-size: 0.18rem;
     line-height: 0.18rem;
+  }
+
+  .c-button-form {
+    height: 0.6rem;
+    padding: 0.15rem 0.2rem 0.15rem 0.14rem;
+    margin-left: 0.15rem;
+    border-radius: 1rem;
+
+    &-img {
+      padding: 0.04rem;
+    }
   }
 }
 
 @include utility.sp {
-  .l-navigation-form-button {
-    line-height: 0;
+  .c-button-form-button {
+    padding: 0;
     font-size: 0.18rem;
   }
+
+  .c-button-form {
+    width: 1.8rem;
+    height: 0.5rem;
+    margin: 0 auto;
+    margin-top: 0.15rem;
+    padding: 0.11rem 0.43rem 0.12rem 0.13rem;
+    border-radius: 1rem;
+
+    &-img {
+      padding: 0.04rem 0.09rem 0.01rem;
+    }
+  }
 }
+

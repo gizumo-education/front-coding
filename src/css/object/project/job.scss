@@ -1,0 +1,160 @@
+@use '../utility/utility.scss';
+
+.p-job {
+  background-color: utility.$blue;
+  padding: 64px 0 67px 0;
+  margin-top: 60px;
+  position: relative;
+
+  &-new {
+
+    &-group {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+
+      &-common {
+        width: calc(25% - 15px);
+        border-radius: 10px;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &-img {
+          border-radius: 10px;
+        }
+
+        &-title {
+          margin-top: 8px;
+          font-family: Noto Sans JP;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+          color: utility.$black;
+        }
+
+        &-unit {
+          margin-top: 7px;
+
+          >li {
+            margin-top: 4px;
+            font-size: 14px;
+            font-weight: 400;
+            color: utility.$black;
+
+            >span {
+              width: 60px;
+              height: 21px;
+              padding-top: 3px;
+              margin-right: 10px;
+              display: inline-block;
+              text-align: center;
+              background-color: utility.$fill;
+            }
+          }
+        }
+
+        &:hover {
+          opacity: 0.8;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@include utility.tab {
+  .p-job {
+    padding: 0.64rem 0 0.67rem 0;
+    margin-top: 0.6rem;
+
+    &-new {
+
+      &-group {
+        margin-top: 0.25rem;
+
+        &-common {
+          width: calc(25% - 0.15rem);
+          border-radius: 0.1rem;
+
+          &-img {
+            border-radius: 0.1rem
+          }
+
+          &-title {
+            margin-top: 0.08rem;
+            font-family: Noto Sans JP;
+            font-size: 0.16rem;
+            line-height: 0.22rem;
+          }
+
+          &-unit {
+            margin-top: 0.07rem;
+
+            >li {
+              margin-top: 0.04rem;
+              font-size: 0.14rem;
+
+              >span {
+                width: 0.6rem;
+                height: 0.21rem;
+                margin-right: 0.1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include utility.sp {
+  .p-job {
+    padding: 0.3rem 0 0.67rem 0;
+    margin-top: 0.25rem;
+
+    &-new {
+
+      &-group {
+        margin-top: 0.25rem;
+
+        &-common {
+          width: 3.70rem;
+          margin: 0 auto;
+          border-radius: 0.1rem;
+
+          &-img {
+            border-radius: 0.1rem;
+            width: 100%;
+          }
+
+          &-title {
+            margin-top: 0.08rem;
+            font-size: 0.16rem;
+            line-height: 0.22rem;
+            font-weight: 700;
+          }
+
+          &-unit {
+            margin-top: 0.07rem;
+
+            >li {
+              margin-top: 0.04rem;
+              font-size: 0.14rem;
+
+              >span {
+                width: 0.6rem;
+                height: 0.21rem;
+                margin: 0 0.2rem 0 0;
+              }
+            }
+          }
+
+          &:nth-child(n+2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
