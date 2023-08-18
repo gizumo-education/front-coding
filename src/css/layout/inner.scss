@@ -724,6 +724,8 @@
         height: auto;
         padding: 0.05rem 0.05rem;
         font-size: 0.14rem;
+        border: 0.01rem solid utility.$pink;
+        border-radius: 0.05rem;
       }
     }
 
@@ -802,7 +804,7 @@
   }
 
   .l-gizujob {
-    padding: 0.16rem 0 0.16rem 0;
+    padding: 0.16rem 0;
 
     &-text {
       margin-top: 0.1rem;
@@ -816,15 +818,17 @@
   }
 
   .l-inline {
-    margin-top: 1.06rem;
+    margin-top: 0.6rem;
 
     &-category {
       display: block;
+      margin-top: 0.3rem;
 
       &-box {
-        width: 100%;
-        padding: 0.3rem 0.1rem;
-        margin-top: 0.4rem;
+        width: 97%;
+        margin: 0 auto;
+        padding: 0.3rem 0.2rem;
+        margin-top: 0.2rem;
         border-radius: 0.1rem;
 
         &-title {
@@ -835,11 +839,12 @@
         &-text {
           margin-top: 0.3rem;
           font-size: 0.12rem;
+          line-height: 0.16rem;
         }
       }
 
       &-box:nth-child(2) {
-        margin-top: 0.4rem;
+        margin-top: 0.2rem;
       }
     }
   }
@@ -854,7 +859,7 @@
         width: 3rem;
         margin: 0 auto;
         padding: 0.58rem 0.20rem 0.4rem 0.2rem;
-        margin-top: 0.5rem;
+        margin-top: 0.4rem;
         border: 0.02rem solid utility.$pink;
         border-radius: 0.2rem;
 
@@ -883,7 +888,7 @@
       &-box::before {
         content: "";
         position: absolute;
-        top: 112%;
+        top: 110%;
         left: 50%;
         border: 0.2rem solid transparent;
         border-top: 0.2rem solid #DE5579;
@@ -898,12 +903,12 @@
   }
 
   .c-content-box {
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
     display: block;
 
     &-caption {
       width: 100%;
-      padding: 0.7rem 0.6rem 0.55rem;
+      padding: 0.7rem 0.7rem;
       border-radius: 0.1rem;
       margin-top: 0.15rem;
 
