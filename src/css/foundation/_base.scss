@@ -19,27 +19,6 @@ body {
   line-height: 1;
 }
 
-@include base.tab {
-  body {
-    font-size: 0.1rem;
-  }
-  html {
-    font-size: calc(100vw / 12);
-    // 1200pxの画面幅で見たときにfont-sizeが100pxになるように計算
-  }
-}
-
-@include base.sp {
-  body {
-    font-size: 0.1rem;
-  }
-  html {
-    font-size: calc(100vw / 4);
-    // 400pxの画面幅で見たときにfont-sizeが100pxになるように計算
-  }
-}
-
-// ここから追記
 .wrapper {
   width: 1180px;
   margin: 0 auto;
@@ -54,29 +33,6 @@ h2 {
   line-height: 25px;
 }
 
-
-@include base.tab  {
-  .wrapper {
-    width: calc(100% - 0.15rem);
-  }
-
-  h2 {
-    font-size: 0.22rem;
-  }
-}
-
-@include base.sp {
-  .wrapper {
-    width: calc(100% - 0.15rem);
-  }
-
-  h2 {
-    font-size: 0.22rem;
-    text-align: center;
-  }
-}
-// ここから追記
-
 img {
   max-width: 100%;
   height: auto;
@@ -86,6 +42,181 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+}
+
+// スライダー
+.slider {
+  width:  100%;
+  position: relative;
+}
+.slick-list {
+ overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slider img {
+  width:100%;
+  height:auto;
+}
+
+/* 矢印 */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 30%;
+  cursor: pointer;
+  outline: none;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  z-index: 1000000000000;
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: "";
+  position: absolute;
+  transform: translate(-34%, -43%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: block;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 3%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  right: 3%;
+  transform: rotate(45deg);
+}
+
+.slick-slide {
+  width: 90%;
+}
+
+.slick-cloned {
+  width: 90%;
+}
+
+@include base.tab {
+  body {
+    font-size: 0.1rem;
+  }
+  html {
+    font-size: calc(100vw / 12);
+    // 1200pxの画面幅で見たときにfont-sizeが100pxになるように計算
+  }
+
+  .wrapper {
+    width: calc(100% - 0.15rem);
+  }
+
+  h2 {
+    font-size: 0.22rem;
+  }
+
+  // スライダー
+  /* 矢印 */
+  .slick-prev, 
+  .slick-next {
+    top: 29%;
+    border-top: 0.02rem solid #000;
+    border-right: 0.02rem solid #000;
+    height: 0.15rem;
+    width: 0.15rem;
+  }
+  
+  .slick-prev::before,
+  .slick-next::before {
+    content: "";
+    transform: translate(-30%, -43%);
+    height: 0.5rem;
+    width: 0.5rem;
+    display: block;
+  }
+  
+  .slick-prev {
+    left: 3.5%;
+    z-index: 1;
+  }
+  
+  .slick-next {
+    right: 3.5%;
+  }
+  
+  .slick-slide {
+    width: 90%;
+  }
+  
+  .slick-cloned {
+    width: 90%;
+  }
+}
+
+@include base.sp {
+  body {
+    font-size: 0.1rem;
+  }
+  html {
+    font-size: calc(100vw / 4);
+    // 400pxの画面幅で見たときにfont-sizeが100pxになるように計算
+  }
+
+  .wrapper {
+    width: calc(100% - 0.15rem);
+  }
+
+  h2 {
+  font-size: 0.22rem;
+  text-align: center;
+  }
+
+  .slick-prev, 
+  .slick-next {
+    top: 55%;
+    height: 0.15rem;
+    width: 0.15rem;
+  }
+  
+  .slick-prev::before,
+  .slick-next::before {
+    content: "";
+    transform: translate(-30%, -43%);
+    border-radius: 50%;
+    z-index: -1;
+    height: 0.5rem;
+    width: 0.5rem;
+    display: block;
+  }
+  
+  .slick-prev {
+    left: 8.8%;
+    z-index: 1;
+    transform: rotate(-135deg);
+  }
+  
+  .slick-next {
+    right: 8.8%;
+    transform: rotate(45deg);
+    z-index: 0;
+  }
+  
+  .slick-slide {
+    width: 90%;
+  }
+  
+  .slick-cloned {
+    width: 90%;
+  }
 }
 
 .is-pc {
