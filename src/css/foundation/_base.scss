@@ -1,4 +1,5 @@
 @use '../object/utility/utility' as base;
+@use "../foundation/variables";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 *,
@@ -23,6 +24,7 @@ body {
   body {
     font-size: 0.1rem;
   }
+
   html {
     font-size: calc(100vw / 12);
     // 1200pxの画面幅で見たときにfont-sizeが100pxになるように計算
@@ -33,6 +35,7 @@ body {
   body {
     font-size: 0.1rem;
   }
+
   html {
     font-size: calc(100vw / 4);
     // 400pxの画面幅で見たときにfont-sizeが100pxになるように計算
@@ -53,24 +56,74 @@ a {
 
 .is-pc {
   @include base.pc {
-    display: block!important;
+    display: block !important;
   }
+
   @include base.tab {
-    display: block!important;
+    display: block !important;
   }
+
   @include base.sp {
-    display: none!important;
+    display: none !important;
   }
 }
 
 .is-sp {
   @include base.pc {
-    display: none!important;
+    display: none !important;
   }
+
   @include base.tab {
-    display: none!important;
+    display: none !important;
   }
+
   @include base.sp {
-    display: block!important;
+    display: block !important;
+  }
+}
+
+
+//追加//
+main {
+  padding-top: 100px;
+}
+
+li {
+  list-style: none;
+}
+
+h3 {
+  color: variables.$black;
+  font-family: Noto Sans JP;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: variables.$bold;
+  line-height: 25px;
+  text-align: center;
+}
+
+h4 {
+  font-family: Noto Sans JP;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: variables.$bold;
+  line-height: 24px;
+  text-align: center;
+}
+
+h5 {
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: variables.$regular;
+  line-height: normal;
+}
+
+a {
+  opacity: 1;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.8;
   }
 }

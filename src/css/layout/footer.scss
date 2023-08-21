@@ -1,2 +1,61 @@
 @use '../object/utility/utility.scss';
+@use '..//foundation/_variables.scss';
 // footerのスタイルを記述するファイル
+
+.l-footer__flex__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-footer__image {
+  width: 320px;
+  height: 85px;
+  margin-top: 15px;
+  background-color: variables.$white;
+  text-align: end;
+  border: 1px solid variables.$footerImg;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &__border {
+    height: 83px;
+  }
+}
+
+.l-footer {
+  background-color: variables.$skyBlue;
+  padding: 55px 0 25px 0;
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+
+    &__box {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__area {
+    margin-left: 39px;
+  }
+
+  &__text {
+    color: #000;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: variables.$regular;
+
+    &__line {
+      margin-top: 20px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -1,2 +1,202 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
+@use "../../foundation/variables";
+
+.o-utility__gray {
+  background-color: variables.$liteGray;
+}
+
+.o-utility__inner {
+  margin: 0 auto;
+  width: 1180px;
+  max-width: 100%;
+}
+
+// お仕事検索//
+
+.o-utility__main__size {
+  padding: 60px 0;
+}
+
+.o-utility__main__size2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
+// header
+
+.o-keyvisual__flex__summary {
+  display: -webkit-box;
+}
+
+.o-keyvisual__flex__search {
+  display: -webkit-box;
+}
+
+.o-keyvisual__icon--position {
+  margin: 0 17px;
+}
+
+.o-keyvisual__header {
+
+  &__position1 {
+    position: absolute;
+    top: 15px;
+    right: 21px;
+    bottom: 15px;
+    left: 41px;
+  }
+
+  &__position2 {
+    position: absolute;
+    top: 15px;
+    right: 32px;
+    bottom: 15px;
+    left: 52px;
+  }
+
+  &__position3 {
+    position: absolute;
+    top: 15px;
+    right: 28px;
+    bottom: 15px;
+    left: 56px;
+  }
+}
+
+.o-utility__title__black {
+  color: variables.$filterBlack;
+  line-height: 25px;
+}
+
+//新着求人 job//
+.o-utility__job__category__position {
+  margin-top: 4px;
+}
+
+.o-utility__job__category__positions {
+  margin-top: 5px;
+}
+
+.o-utility__container__position__job {
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.o-utility__container__position__jobs {
+  margin-top: 25px;
+}
+
+//お仕事検索　select//
+.o-utility__inner__select__flame__position {
+  margin-left: 15px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.o-utility__select__position1,
+.o-utility__select__position2,
+.o-utility__select__position3,
+.o-utility__relative {
+  position: relative;
+}
+
+
+//転職までの流れ//
+.o-utility__triangle__1,
+.o-utility__triangle__2,
+.o-utility__triangle__3 {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  bottom: 25px;
+  left: 165px;
+}
+
+.o-utility__step__flame__flex,
+.o-utility__flex__flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.o-utility {
+  &__flow {
+    &__message {
+      margin-top: 18px;
+      padding: 0 18px;
+    }
+
+    &__text {
+      margin-top: 20px;
+    }
+  }
+
+  &__border__text {
+    padding: 58px 0 40.87px 0;
+
+    &__second {
+      margin-top: 31px;
+      padding: 0 18px;
+    }
+  }
+}
+
+//転職お役立ちコンテンツ//
+.o-utility__contents {
+  padding: 106.13px 0 50px 0;
+
+  &__position {
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.o-utility__img__filter {
+  filter: brightness(0.5);
+}
+
+//医療事務コラムもっと見る
+.o-utility__button__flame__column {
+  margin: 80px auto 150px auto;
+  line-height: 18px;
+}
+
+.o-utility__job {
+  margin: 60px auto 67px auto;
+}
+
+// ギブズ四つの特徴　ピンク
+
+.o-utility__headline {
+  flex-shrink: 0;
+  background-color: variables.$white;
+
+  &__box {
+    padding: 106px 0 53px 0;
+  }
+}
+
+.o-utility__appeal {
+  margin-left: 40px;
+
+  &__position {
+    margin-top: 40px;
+  }
+}
+
+.o-utility__flex {
+  display: flex;
+  justify-content: center;
+}
+
+// footer image
+.o-utility__footer__text__container {
+  margin-top: 27px;
+}

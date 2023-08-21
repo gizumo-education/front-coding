@@ -1,2 +1,306 @@
 @use '../object/utility/utility.scss';
+@use "../foundation/variables";
+
 // innerのスタイルを記述するファイル
+
+.l-inner__select__box {
+  margin-top: 26px;
+  display: flex;
+
+  .l-inner__select__flame {
+    padding: 17px 0 17px 15px;
+    border-radius: 10px;
+    appearance: none;
+    width: 200px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-left: 15px;
+    border: 1px solid variables.$pink;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid variables.$pink;
+    }
+  }
+
+  .l-inner__form__text {
+    color: variables.$selectGly;
+
+    &__flame {
+      padding: 17px 20px 17px 10px;
+      border-radius: 10px;
+      font-family: Noto Sans JP;
+      font-size: 18px;
+      font-weight: variables.$regular;
+      line-height: normal;
+      width: 300px;
+      height: 60px;
+      flex-shrink: 0;
+      background-color: variables.$white;
+      margin-left: 15px;
+      border: 1px solid variables.$pink;
+
+      &:focus {
+        outline: none;
+        border: 1px solid variables.$pink;
+      }
+    }
+  }
+}
+
+// お仕事検索
+
+.l-inner__title {
+  width: 1180px;
+  height: 240px;
+  flex-shrink: 0;
+  background-color: variables.$whiteBlu;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+
+  &__search {
+    font-family: Noto Sans JP;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: variables.$bold;
+
+    &--middle {
+      color: variables.$black;
+      font-size: 20px;
+      font-weight: variables.$regular;
+      line-height: normal;
+      margin-top: 20px;
+    }
+  }
+}
+
+.l-inner__select__triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid variables.$pink;
+}
+
+//求人一覧//
+.l-inner__job {
+  height: 636px;
+  padding: 64px 0 67px 0;
+  background-color: variables.$skyBlue;
+
+  &__title {
+    color: variables.$black;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: variables.$regular;
+    line-height: normal;
+    text-align: left;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__images {
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  &__text {
+    color: variables.$black;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-weight: variables.$regular;
+    line-height: 22px;
+    width: 278px;
+    height: 44px;
+  }
+
+  &__category {
+    color: variables.$black;
+    font-family: Noto Sans JP;
+    font-size: 14px;
+    font-weight: variables.$regular;
+    line-height: normal;
+    width: 114px;
+    height: 17px;
+    margin-left: 10px;
+  }
+
+  &__category__flame {
+    color: variables.$black;
+    font-family: Noto Sans JP;
+    font-size: 14px;
+    font-weight: variables.$regular;
+    text-align: center;
+    line-height: normal;
+    display: inline;
+    display: inline-block;
+    width: 60px;
+    height: 21px;
+    flex-shrink: 0;
+    background-color: variables.$lightPink;
+  }
+}
+
+//MTG IMAGE//
+.l-inner__mtg {
+  position: relative;
+
+  &__image {
+    width: 1600px;
+    height: 300px;
+  }
+
+  &__text--container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 625px;
+  }
+
+  &__text {
+    color: variables.$white;
+    font-family: Noto Sans JP;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: variables.$bold;
+    line-height: normal;
+  }
+}
+
+//四つの箱
+
+.l-inner__appeal {
+  background-color: variables.$peachPink;
+  width: 570px;
+  height: 180px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  padding: 40px 40px;
+  text-align: center;
+
+  &__text {
+    color: variables.$pink;
+    font-family: Noto Sans JP;
+    font-size: 24px;
+    font-weight: variables.$bold;
+    line-height: 24px;
+  }
+
+  &__feature {
+    color: variables.$filterBlack;
+    font-family: Noto Sans JP;
+    font-size: 14px;
+    font-weight: variables.$regular;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    height: 116px;
+    justify-content: center;
+  }
+}
+
+//転職までの流れ//
+.l-inner__flow {
+  padding: 105px 211.13px 51.13px 211.13px;
+
+  &__image {
+    width: 102.292px;
+    height: 99.996px;
+    flex-shrink: 0;
+  }
+
+  &__border {
+    display: flex;
+    width: 277.732px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    &__large {
+      position: relative;
+      border: 2.23px solid variables.$pink;
+      width: 277.732px;
+      height: 357.732px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      padding: 40px 0;
+    }
+  }
+}
+
+.l-inner__step__flame {
+  border-radius: 30px;
+  background-color: variables.$pink;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 8.87px;
+  right: 208.87px;
+  bottom: 208.87px;
+  left: 8.87px;
+
+  &__test {
+    color: variables.$white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: variables.$bold;
+    line-height: normal;
+  }
+}
+
+.l-triangle1 {
+  width: 0;
+  height: 0;
+  border-left: 20px solid variables.$pink;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+
+//転職お役立ちコンテンツ
+.l-inner__flex {
+  display: flex;
+  justify-content: center;
+}
+
+.l-inner__contents__img {
+  width: 380px;
+  height: 240px;
+  flex-shrink: 0;
+  position: absolute;
+}
+
+.l-inner__contents {
+  width: 380px;
+  height: 240px;
+  padding: 71px 0 55px 0;
+  position: relative;
+
+  &__title {
+    color: variables.$white;
+    line-height: 24px;
+  }
+
+  &__comment {
+    color: variables.$white;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: variables.$regular;
+    line-height: normal;
+    height: 46px;
+    margin-top: 44px;
+  }
+}

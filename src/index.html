@@ -1,12 +1,476 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>基本コーディング</title>
+  <meta name="description" content="ギズジョブは完全無料の求職者向け求人サービスです">
+  <meta name="keyword" content="ギズジョブ, ギズジョブ医療事務, 医療事務求人, 医療事務">
+  <title>医療事務求人を探すならギズジョブ</title>
+  <link rel="stylesheet" href="css/foundation/_reset.scss">
+  <link rel="stylesheet" href="css/style.scss">
 </head>
-<body>
 
+<body>
+  <header class="o-utility__gray">
+    <nav class="p-keyvisual__nav">
+      <div class="o-keyvisual__flex__summary">
+        <a class="c-button__header__font__black" href="">ギズジョブ医療事務とは</a>
+        <span class="c-button__header__icon--position o-keyvisual__icon--position">|</span>
+        <a class="c-button__header__font__black" href="">
+          <img src="img/icon/figma-header-icon-1.png" alt="">こだわり検索</a>
+        <span class="c-button__header__icon--position o-keyvisual__icon--position">|</span>
+        <a class="c-button__header__font__black" href="">
+          <img src="img/icon/figma-header-icon-2.png" alt="">ギズジョブ医療事務コラム</a>
+      </div>
+      <div class="o-keyvisual__flex__search">
+        <li>
+          <a class="l-header__frame" href="">
+            <img class="l-header__icon3" src="img/icon/figma-header-icon-3.png" alt="">
+            <p class="c-button__header__font__white o-keyvisual__header__position1">気になるリスト</p>
+          </a>
+        </li>
+        <ul>
+          <li>
+            <a class="l-header__frame__2" href="">
+              <img class="l-header__icon4" src="img/icon/figma-header-icon-4.png" alt="">
+              <p class="c-button__header__font__white o-keyvisual__header__position2">閲覧履歴</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a class="l-header__frame__2" href="">
+              <img class="l-header__icon5" src="img/icon/figma-header-icon-5.png" alt="">
+              <p class="c-button__header__font__white o-keyvisual__header__position3">検索履歴</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <main>
+        <div class="l-header__view o-utility__inner o-utility__relative">
+          <div class="l-header__view__text">
+            <div class="l-header__leaf o-utility__relative">
+              <img class="l-header__leaf__left" src="img/icon/figma_leaf_left.png" alt="">
+              <img class="l-header__leaf__right" src="img/icon/figma_leaf_right.png" alt="">
+              <img class="l-header__view__text__micro" src="img/icon/figma-header__※.png" alt="">
+              <img class="l-header__view__text__first" src="img/icon/figma-header__text.png" alt="">
+              <img class="l-header__view__text__big" src="img/icon/figma-header__no.1.png" alt="">
+            </div>
+            <p class="l-header__view__text__smaller">※株式会社●●社実績調査</p>
+            <p class="l-header__view__text__medium">医療事務求人を探すならギズジョブ</p>
+            <p class="l-header__view__text__small">現在の求人掲載数: <span class="l-header__view__text__number">2,320</span> 件
+            </p>
+          </div>
+        </div>
+      </main>
+    </section>
+  </header>
+
+  <!-- //お仕事検索// -->
+  <section>
+    <div class="o-utility__main__size2 o-utility__main__size">
+      <div class="l-inner__title">
+        <p class="l-inner__title__search o-utility__title__black">お仕事検索</p>
+        <p class="l-inner__title__search--middle">働きたい職種・地域・希望給与を入れて検索！</p>
+        <div class="l-inner__select__box">
+          <div class="o-utility__select__position1 o-utility__inner__select__flame__position">
+            <select class="l-inner__select__flame c-button__option__text">
+              <option class="c-button__option__text" value="all">医療事務</option>
+              <option class="c-button__option__text" value="">調剤事務</option>
+              <option class="c-button__option__text" value="">診療情報管理士</option>
+              <option class="c-button__option__text" value="">歯科助手</option>
+              <option class="c-button__option__text" value="">歯科事務</option>
+              <option class="c-button__option__text" value="">看護補助・看護助手</option>
+              <option class="c-button__option__text" value="">病院内SE</option>
+            </select>
+            <div class="l-inner__select__triangle o-utility__triangle__1">
+            </div>
+          </div>
+          <div class="o-utility__select__position2 o-utility__inner__select__flame__position">
+            <select class="l-inner__select__flame c-button__option__text">
+              <option class="c-button__option__text" value="all">東京都</option>
+              <option class="c-button__option__text" value="">茨城県</option>
+              <option class="c-button__option__text" value="">神奈川県</option>
+              <option class="c-button__option__text" value="">群馬県</option>
+              <option class="c-button__option__text" value="">埼玉県</option>
+              <option class="c-button__option__text" value="">千葉県</option>
+              <option class="c-button__option__text" value="">栃木県</option>
+            </select>
+            <div class="l-inner__select__triangle o-utility__triangle__2">
+            </div>
+          </div>
+          <div class="o-utility__select__position3 o-utility__inner__select__flame__position">
+            <select class="l-inner__select__flame c-button__option__text">
+              <option class="c-button__option__text" value="all">月給20万〜</option>
+              <option class="c-button__option__text" value="">月給17万〜</option>
+              <option class="c-button__option__text" value="">月給18万〜</option>
+              <option class="c-button__option__text" value="">月給19万〜</option>
+              <option class="c-button__option__text" value="">月給21万〜</option>
+              <option class="c-button__option__text" value="">月給22万〜</option>
+              <option class="c-button__option__text" value="">月給23万〜</option>
+            </select>
+            <div class="l-inner__select__triangle o-utility__triangle__3">
+            </div>
+          </div>
+          <input class="l-inner__form__text__flame" placeholder="キーワード・企業名・スキルなど" action=""></input>
+          <span>
+            <a class="c-button__search" href="">
+              <img class="c-button__search__position" src="img/icon/figma-select-search.png" alt="">
+              <p class="c-button__search__font">検索する</p>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 新着求人 -->
+  <section class="l-inner__job">
+    <div class=" o-utility__inner">
+      <h3 class="l-inner__job__title">新着求人</h3>
+      <div class="l-inner__job__container">
+        <ul>
+          <li>
+            <a class="o-utility__container__position__jobs" href="">
+              <img class="l-inner__job__images" src="img/picture/figma-jobs1.jpg" alt="">
+              <p class="l-inner__job__text">平日・夕方までの勤務!伊勢市の伊勢赤
+                十字病院で医療事務求人</p>
+              <div>
+                <div class="l-inner__job__category__flame">給与</div>
+                <span class="l-inner__job__category">月給 148,000円～</span><br>
+                <div class="l-inner__job__category__flame o-utility__job__category__position">所在地</div>
+                <span class="l-inner__job__category">三重県伊勢市</span><br>
+                <div class="l-inner__job__category__flame o-utility__job__category__positions">最寄駅</div>
+                <span class="l-inner__job__category">伊勢市駅 徒歩15分</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="o-utility__container__position__job">
+            <a href="">
+              <img class="l-inner__job__images" src="img/picture/figma-jobs2.jpg" alt="">
+              <p class="l-inner__job__text">平日・夕方までの勤務!伊勢市の伊勢赤
+                十字病院で医療事務求人</p>
+              <div>
+                <div class="l-inner__job__category__flame">給与</div>
+                <span class="l-inner__job__category">月給 148,000円～</span><br>
+                <div class="l-inner__job__category__flame o-utility__job__category__position">所在地</div>
+                <span class="l-inner__job__category">三重県伊勢市</span><br>
+                <div class="l-inner__job__category__flame o-utility__job__category__positions">最寄駅</div>
+                <span class="l-inner__job__category">伊勢市駅 徒歩15分</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="o-utility__container__position__job">
+            <a href="">
+              <img class="l-inner__job__images" src="img/picture/figma-jobs3.jpg" alt="">
+              <p class="l-inner__job__text">平日・夕方までの勤務!伊勢市の伊勢赤
+                十字病院で医療事務求人</p>
+              <div>
+                <div class="l-inner__job__category__flame">給与</div>
+                <span class="l-inner__job__category">月給 148,000円～</span><br>
+                <div class="l-inner__job__category__flame o-utility__job__category__position">所在地</div>
+                <span class="l-inner__job__category">三重県伊勢市</span><br>
+                <div class="l-inner__job__category__flame o-utility__job__category__positions">最寄駅</div>
+                <span class="l-inner__job__category">伊勢市駅 徒歩15分</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="o-utility__container__position__job">
+            <a href="">
+              <img class="l-inner__job__images" src="img/picture/figma-jobs4.jpg" alt="">
+              <p class="l-inner__job__text">平日・夕方までの勤務!伊勢市の伊勢赤
+                十字病院で医療事務求人</p>
+              <div>
+                <div class="l-inner__job__category__flame">給与</div>
+                <span class="l-inner__job__category">月給 148,000円～</span><br>
+                <div class="l-inner__job__category__flame o-utility__job__category__position">所在地</div>
+                <span class="l-inner__job__category">三重県伊勢市</span><br>
+                <div class="l-inner__job__category__flame o-utility__job__category__positions">最寄駅</div>
+                <span class="l-inner__job__category">伊勢市駅 徒歩15分</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="c-button__box">
+        <a class="c-button__box__back" href=""></a>
+        <a class="c-button__box__next" href=""></a>
+      </div>
+      <div>
+        <a class="c-button__flame o-utility__job" href="">新着求人一覧をもっと見る</a>
+      </div>
+  </section>
+
+  <section>
+    <div class="l-inner__mtg o-utility__inner">
+      <img class="l-inner__mtg__image o-utility__img__filter" src="img/picture/figma-mtg.png" alt="">
+      <div class="l-inner__mtg__text--container">
+        <p class="l-inner__mtg__text">ギズジョブなら理想の職場がきっと見つかる</p>
+        <p class="l-inner__mtg__text p-mtg__text">ギズジョブは完全無料の求職者向け求人サービスです。</p>
+      </div>
+    </div>
+  </section>
+  <!-- 四つの特徴　ピンク -->
+  <section>
+    <div class="o-utility__headline">
+      <h3 class="o-utility__headline__box">ギズジョブの4つの特徴</h3>
+      <div class="o-utility__flex">
+        <div>
+          <div class="l-inner__appeal">
+            <h4 class="l-inner__appeal__text">WEB上で応募完結</h4>
+            <p class="l-inner__appeal__feature">エントリーシートの記入を済ませれば、あとは気になる企業に応募して<br>
+              待つだけで面接アポまで完結！</p>
+          </div>
+          <div class="l-inner__appeal o-utility__appeal__position">
+            <h4 class="l-inner__appeal__text">わかりやすい</h4>
+            <p class="l-inner__appeal__feature">当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br>
+              といったご自身にピッタリマッチした求人を見つけることができる！</p>
+          </div>
+        </div>
+        <div class="o-utility__appeal">
+          <div class="l-inner__appeal">
+            <h4 class="l-inner__appeal__text">安心・安全</h4>
+            <p class="l-inner__appeal__feature">掲載案件は基本的に当社グループ企業となるため、<br>
+              皆さまにより詳細にクリーンな職場情報をお届けいたします。</p>
+          </div>
+          <div class="l-inner__appeal o-utility__appeal__position">
+            <h4 class="l-inner__appeal__text">完全無料</h4>
+            <p class="l-inner__appeal__feature">当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br>
+              運営されています。ですので求職者の方からは応募前はもちろん、<br>
+              内定後も費用は一切いただきません。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 転職までの流れ -->
+  <section>
+    <h3 class="l-inner__flow">転職までの流れ</h3>
+    <ul class="o-utility__flex__flow">
+      <li class="p-container__position__flow o-utility__flex__flow">
+        <div class="l-inner__flow__border__large o-utility__border__text">
+          <div class="l-inner__flow__border">
+            <div class="l-inner__step__flame o-utility__step__flame__flex">
+              <p class="l-inner__step__flame__test">STEP<br>1</p>
+            </div>
+            <img class="l-inner__flow__image" src="img/icon/figma-flow1.png" alt="">
+            <h4 class="o-utility__flow__text">エントリーシートの<br>
+              作成</h4>
+          </div>
+          <div>
+            <h5 class="o-utility__flow__message">ここにはテキストが入ります。ここに<br>
+              はテキストが入ります。ここにはテキ<br>
+              ストが入ります。こ</h5>
+          </div>
+        </div>
+        <span class="l-triangle1">
+        </span>
+      </li>
+      <li class="p-container__position__flow o-utility__flex__flow">
+        <div class="l-inner__flow__border__large  o-utility__border__text">
+          <div class="l-inner__flow__border">
+            <div class="l-inner__step__flame o-utility__step__flame__flex">
+              <p class="l-inner__step__flame__test">STEP<br>1</p>
+            </div>
+            <img class="l-inner__flow__image" src="img/icon/figma-flow2.png" alt="">
+            <h4 class="o-utility__flow__text">気になる企業の<br>
+              ピックアップ
+              作成</h4>
+          </div>
+          <div>
+            <h5 class="o-utility__flow__message">ここにはテキストが入ります。ここに<br>
+              はテキストが入ります。ここにはテキ<br>
+              ストが入ります。ここにはテキストが</h5>
+          </div>
+        </div>
+        <span class="l-triangle1">
+        </span>
+      </li>
+      <li class="p-container__position__flow o-utility__flex__flow">
+        <div class="l-inner__flow__border__large o-utility__border__text">
+          <div class="l-inner__flow__border">
+            <div class="l-inner__step__flame o-utility__step__flame__flex">
+              <p class="l-inner__step__flame__test">STEP<br>1</p>
+            </div>
+            <img class="l-inner__flow__image" src="img/icon/figma-flow3.png" alt="">
+            <h4 class="o-utility__flow__text o-utility__border__text__second">複数企業に応募</h4>
+          </div>
+          <div>
+            <h5 class="o-utility__border__text__second">ここにはテキストが入ります。ここに<br>
+              はテキストが入ります。ここにはテキ<br>
+              ストが入ります。ここにはテキストが</h5>
+          </div>
+        </div>
+        <span class="l-triangle1">
+        </span>
+      </li>
+      <li class="p-container__position__flow o-utility__flex__flow">
+        <div class="l-inner__flow__border__large o-utility__border__text">
+          <div class="l-inner__flow__border">
+            <div class="l-inner__step__flame o-utility__step__flame__flex">
+              <p class="l-inner__step__flame__test">STEP<br>1</p>
+            </div>
+            <img class="l-inner__flow__image" src="img/icon/figma-flow4.png" alt="">
+            <h4 class="o-utility__flow__text o-utility__border__text__second">内定・転職！</h4>
+          </div>
+          <div>
+            <h5 class="o-utility__border__text__second">ここにはテキストが入ります。ここに<br>
+              はテキストが入ります。ここにはテキ<br>
+              ストが入ります。ここにはテキストが</h5>
+          </div>
+        </div>
+        </span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 転職お役立ちコンテンツ -->
+  <section>
+    <h3 class="o-utility__contents">転職お役立ちコンテンツ</h3>
+    <div class="l-inner__flex">
+      <li class="o-utility__contents__position">
+        <img class="l-inner__contents__img o-utility__img__filter" src="img/picture/figma-contents1.3.png" alt="">
+        <div class="l-inner__contents">
+          <h4 class="l-inner__contents__title">転職マニュアル</h4>
+          <p class="l-inner__contents__comment">転職活動の基礎知識、面接対策など<br>
+            転職のコツをお教えします</p>
+        </div>
+      </li>
+      <li class="o-utility__contents__position">
+        <img class="l-inner__contents__img o-utility__img__filter" src="img/picture/figma-contents2.png" alt="">
+        <div class="l-inner__contents">
+          <h4 class="l-inner__contents__title">医療事務業界の豆知識</h4>
+          <p class="l-inner__contents__comment">スキルアップ・労働環境、給与事情など<br>
+            知って得する業界の豆知識を公開</p>
+        </div>
+      </li>
+      <li class="o-utility__contents__position">
+        <img class="l-inner__contents__img o-utility__img__filter" src="img/picture/figma-contents1.3.png" alt="">
+        <div class="l-inner__contents">
+          <h4 class="l-inner__contents__title">転職マニュアル</h4>
+          <p class="l-inner__contents__comment">転職活動の基礎知識、面接対策など<br>
+            転職のコツをお教えします</p>
+        </div>
+      </li>
+    </div>
+  </section>
+  <section>
+    <a class="o-utility__button__flame__column c-button__flame" href="">医療事務コラムをもっと見る</a>
+  </section>
+
+  <!-- //お仕事検索// -->
+  <section>
+    <div class="o-utility__main__size2">
+      <div class="l-inner__title">
+        <p class="l-inner__title__search o-utility__title__black">お仕事検索</p>
+        <p class="l-inner__title__search--middle">働きたい職種・地域・希望給与を入れて検索！</p>
+        <div class="l-inner__select__box">
+          <div class="o-utility__select__position1 o-utility__inner__select__flame__position">
+            <select class="l-inner__select__flame c-button__option__text">
+              <option class="c-button__option__text" value="all">医療事務</option>
+              <option class="c-button__option__text" value="">調剤事務</option>
+              <option class="c-button__option__text" value="">診療情報管理士</option>
+              <option class="c-button__option__text" value="">歯科助手</option>
+              <option class="c-button__option__text" value="">歯科事務</option>
+              <option class="c-button__option__text" value="">看護補助・看護助手</option>
+              <option class="c-button__option__text" value="">病院内SE</option>
+            </select>
+            <div class="l-inner__select__triangle o-utility__triangle__1">
+            </div>
+          </div>
+          <div class="o-utility__select__position2 o-utility__inner__select__flame__position">
+            <select class="l-inner__select__flame c-button__option__text">
+              <option class="c-button__option__text" value="all">東京都</option>
+              <option class="c-button__option__text" value="">茨城県</option>
+              <option class="c-button__option__text" value="">神奈川県</option>
+              <option class="c-button__option__text" value="">群馬県</option>
+              <option class="c-button__option__text" value="">埼玉県</option>
+              <option class="c-button__option__text" value="">千葉県</option>
+              <option class="c-button__option__text" value="">栃木県</option>
+            </select>
+            <div class="l-inner__select__triangle o-utility__triangle__2">
+            </div>
+          </div>
+          <div class="o-utility__select__position3 o-utility__inner__select__flame__position">
+            <select class="l-inner__select__flame c-button__option__text">
+              <option class="c-button__option__text" value="all">月給20万〜</option>
+              <option class="c-button__option__text" value="">月給17万〜</option>
+              <option class="c-button__option__text" value="">月給18万〜</option>
+              <option class="c-button__option__text" value="">月給19万〜</option>
+              <option class="c-button__option__text" value="">月給21万〜</option>
+              <option class="c-button__option__text" value="">月給22万〜</option>
+              <option class="c-button__option__text" value="">月給23万〜</option>
+            </select>
+            <div class="l-inner__select__triangle o-utility__triangle__3">
+            </div>
+          </div>
+          <input class="l-inner__form__text__flame" placeholder="キーワード・企業名・スキルなど" action=""></input>
+          <span>
+            <a class="c-button__search" href="">
+              <img class="c-button__search__position" src="img/icon/figma-select-search.png" alt="">
+              <p class="c-button__search__font">検索する</p>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <footer></footer> -->
+  <footer class="l-footer">
+    <div class="l-footer__flex__container o-utility__inner">
+      <div class="l-footer__flex">
+        <li class="l-footer__text">
+          <a class="l-footer__text" href="">ギズジョブ医療事務TOP</a>
+        </li>
+        <div class="l-footer__flex__box">
+          <div class="l-footer__flex__box">
+            <div>
+              <ul class="o-utility__footer__text__container">
+                <li class="l-footer__text__line">
+                  <a class="l-footer__text" href="">利用ガイド</a>
+                </li>
+                <li class="l-footer__text__line">
+                  <a class="l-footer__text" href="">お問い合わせ</a>
+                </li>
+                <li class="l-footer__text__line">
+                  <a class="l-footer__text" href="">よくある質問</a>
+                </li>
+              </ul>
+            </div>
+            <div class="o-utility__footer__text__container">
+              <ul class="l-footer__area">
+                <li class="l-footer__text__line">
+                  <a class="l-footer__text" href="">プライバシーポリシー</a>
+                </li>
+                <li class="l-footer__text__line">
+                  <a class="l-footer__text" href="">サイトマップ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <li class="l-footer__image">
+          <img class="l-footer__image__border" src="img/picture/figma-footer1.png" alt="">
+        </li>
+        <li class="l-footer__image">
+          <img class="l-footer__image__border" src="img/picture/figma-footer2.jpg" alt="">
+        </li>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
