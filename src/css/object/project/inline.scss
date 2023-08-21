@@ -1,0 +1,107 @@
+@use '../utility/utility.scss';
+
+.p-inline {
+  margin-top: 106px;
+  text-align: center;
+  color: utility.$white;
+
+  &-category {
+    margin-top: 53px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    &-box {
+      width: calc(50% - 20px);
+      padding: 40px;
+      margin-top: 40px;
+      border-radius: 10px;
+      background-color: utility.$peachpink;
+
+      &-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        color: utility.$pink;
+      }
+
+      &-text {
+        margin-top: 36px;
+        color: utility.$black;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        font-family: Noto Sans JP;
+        font-style: normal;
+        line-height: normal;
+      }
+    }
+
+    &-box:nth-child(-n+2) {
+      margin-top: 0;
+    }
+  }
+}
+
+@include utility.tab {
+  .p-inline {
+    margin-top: 1.06rem;
+
+    &-category {
+      margin-top: 0.53rem;
+
+      &-box {
+        width: calc(50% - 0.2rem);
+        padding: 0.4rem 0.45rem;
+        margin-top: 0.4rem;
+        border-radius: 0.1rem;
+
+        &-title {
+          font-size: 0.24rem;
+          line-height: 0.24rem;
+        }
+
+        &-text {
+          margin-top: 0.36rem;
+          font-size: 0.14rem;
+        }
+      }
+    }
+  }
+}
+
+@include utility.sp {
+  .p-inline {
+    margin-top: 0.55rem;
+
+    &-category {
+      display: block;
+      margin-top: 0.3rem;
+
+      &-box {
+        width: 97%;
+        margin: 0 auto;
+        padding: 0.3rem 0.12rem;
+        margin-top: 0.2rem;
+        border-radius: 0.1rem;
+
+        &-title {
+          font-size: 0.2rem;
+          line-height: 0.2rem;
+        }
+
+        &-text {
+          margin-top: 0.3rem;
+          font-size: 0.12rem;
+          line-height: 0.16rem;
+        }
+      }
+
+      &-box:nth-child(2) {
+        margin-top: 0.2rem;
+      }
+    }
+  }
+}

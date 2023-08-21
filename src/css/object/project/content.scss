@@ -1,0 +1,115 @@
+@use '../utility/utility.scss';
+
+.p-content-box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  &-caption {
+    padding: 70px 50px 55px;
+    width: calc((100% /3) - 20px);
+    background-image: url(../img/picture/content-Visual1.jpg);
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+      transition: 0.3s;
+      z-index: 100;
+    }
+
+    &-title {
+      color: utility.$white;
+      font-family: Noto Sans JP;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    &-text {
+      margin-top: 44px;
+      color: utility.$white;
+      text-align: center;
+      font-family: Noto Sans JP;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &-caption:nth-child(2n+2) {
+    background-image: url(../img/picture/content-Visual2.jpg);
+  }
+
+  &-caption::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: utility.$black;
+    opacity: 0.5;
+    display: block;
+    border-radius: 10px;
+    z-index: -1;
+  }
+}
+
+@include utility.tab {
+  .p-content-box {
+    margin-top: 0.5rem;
+
+    &-caption {
+      padding: 0.7rem 0.6rem 0.55rem;
+      width: calc((100% /3) - 0.2rem);
+      border-radius: 0.1rem;
+
+      &-title {
+        font-size: 0.24rem;
+        line-height: 0.24rem;
+      }
+
+      &-text {
+        margin-top: 0.44rem;
+        font-size: 0.16rem;
+      }
+    }
+  }
+}
+
+  @include utility.sp {
+    .p-content-box {
+      margin-top: 0.3rem;
+      display: block;
+  
+      &-caption {
+        width: 100%;
+        padding: 0.7rem 0.7rem;
+        border-radius: 0.1rem;
+        margin-top: 0.15rem;
+  
+        &-title {
+          font-size: 0.21rem;
+          line-height: 0.24rem;
+        }
+  
+        &-text {
+          margin-top: 0.44rem;
+          font-size: 0.14rem;
+          font-weight: 400;
+        }
+      }
+  
+      &-caption:first-child {
+        margin-top: 0;
+      }
+    }
+  }

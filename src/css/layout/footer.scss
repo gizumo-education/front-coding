@@ -85,3 +85,127 @@
   color: utility.$black;
   background-color: utility.$lightggray;
 }
+
+@include utility.tab {
+  .l-footer {
+    margin-top: 2rem;
+  
+    &-box {
+      padding: 0.55rem 0 0.28rem 0;
+  
+      &-nav {
+        width: 2.95rem;
+  
+        &-title {
+          margin-top: 0.25rem;
+          font-size: 0.16rem;
+        }
+  
+        &-flex {
+  
+          &-ul {
+            width: 1.6rem;
+            margin-top: 0.27rem;
+            margin-left: 0.39rem;
+  
+            &:first-child {
+              width: 0.96rem;
+            }
+  
+            >li {
+              >a {
+                font-size: 0.16rem;
+                line-height: 0.36rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .l-imgs {
+    width: 3.2rem;
+    height: 0.85rem;
+
+    &-single {
+      margin-top: 0.15rem;
+    
+      &:first-child {
+        margin-top: 0;
+      }
+      &-img {
+        width: 50%;
+      }
+    }
+  }
+  
+  .l-Copyright {
+    padding: 0.1rem 0;
+    font-size: 0.14rem;
+    line-height: 0.14rem;
+  }
+}
+
+@include utility.sp {
+  .l-footer {
+    margin-top: 1rem;
+  
+    &-box {
+      height: auto;
+      padding: 0.38rem 0.4rem;
+      display: block;
+  
+      &-nav {
+        width: 100%;
+  
+        &-title {
+          margin-top: 0;
+          font-size: 0.16rem;
+        }
+  
+        &-flex {
+  
+          &-ul {
+            width: 1.6rem;
+            margin-top: 0.27rem;
+            margin-left: 0.39rem;
+  
+            &:first-child {
+              width: 0.96rem;
+            }
+  
+            >li {
+              >a {
+                font-size: 0.15rem;
+                line-height: 0.36rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .l-imgs {
+    width: 100%;
+    height: auto;
+
+    &-single {
+      margin-top: 0.15rem;
+    
+      &:first-child {
+        margin-top: 0.15rem;
+      }
+      &-img {
+        width: 50%;
+      }
+    }
+  }
+  
+  .l-Copyright {
+    padding: 0.1rem 0;
+    font-size: 0.14rem;
+    line-height: 0.14rem;
+  }
+}
