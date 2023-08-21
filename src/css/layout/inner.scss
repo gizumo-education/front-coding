@@ -9,6 +9,10 @@
   padding-top: 100px;
 }
 
+.l-spbreak-line {
+  display: none;
+}
+
 @include utility.tab {
   .wrapper {
     width: calc(100% - 0.15rem);
@@ -26,5 +30,13 @@
 
   .l-main {
     padding-top: 0.7rem;
+  }
+
+  .l-pcbreak-line {
+    display: none;
+  }
+
+  .l-spbreak-line {
+    display: block;
   }
 }

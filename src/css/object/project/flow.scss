@@ -130,11 +130,11 @@
         transform: translate(5%, -50%);
       }
     }
+    .p-line-heit {
+      line-height: 0.6rem;
+    }
   }
 
-  .p-line-heit {
-    line-height: 0.6rem;
-  }
 }
 
 @include utility.sp {
