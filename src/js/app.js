@@ -24,7 +24,7 @@ $(".hamburger_menu_li a").on("click", function () {
 $(document).ready(function() {
   $('a[href^="#"]').on('click', function(event) {
     event.preventDefault();
-    var target = $(this.getAttribute('href'));
+    const target = $(this.getAttribute('href'));
     if (target.length) {
       const headerHeight = 100;
       const targetOffset = target.offset().top - headerHeight;
