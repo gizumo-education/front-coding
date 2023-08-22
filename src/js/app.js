@@ -26,8 +26,8 @@ $(document).ready(function() {
     event.preventDefault();
     var target = $(this.getAttribute('href'));
     if (target.length) {
-      var headerHeight = 100;
-      var targetOffset = target.offset().top - headerHeight;
+      const headerHeight = 100;
+      const targetOffset = target.offset().top - headerHeight;
       $('html, body').stop().animate({
         scrollTop: targetOffset
       }, 500);

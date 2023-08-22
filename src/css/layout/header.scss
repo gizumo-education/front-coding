@@ -202,7 +202,7 @@
 
    /* クリックされた後のハンバーガーのマーク */
    .toggle.show i:nth-child(1) {
-    transform: translateY(10px) rotate(-46deg);
+    transform: translateY(16px) rotate(-45deg);
   }
 
   .toggle.show i:nth-child(2) {
@@ -210,7 +210,7 @@
   }
 
   .toggle.show i:nth-child(3) {
-    transform: translateY(-20px) rotate(45deg);
+    transform: translateY(-15px) rotate(45deg);
   }
 
   /* クリックで表示されるメニュー：クリックされる前 */
@@ -231,12 +231,13 @@
   }
 
   .hamburger_menu_ul {
+    width: 100%;
     height: 85%;
     text-align: start;
   }
 
   .hamburger_menu_li a {
-    margin-top: 0.4rem;
+    padding: 0.2rem 0 0.2rem 0.6rem;
     color: utility.$white;
     text-decoration: none;
     font-size: 0.22rem;
@@ -247,7 +248,7 @@
   }
 
   .hamburger_menu_li:first-child a {
-    margin-top: 0;
+    width: 100%;
   }
 
   /* クリックで表示されるメニュー：クリックされた後 */
