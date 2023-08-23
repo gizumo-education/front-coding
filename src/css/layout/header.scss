@@ -1,2 +1,98 @@
 @use '../object/utility/utility.scss';
+@use '../foundation/_variables.scss' as var;
 // headerのスタイルを記述するファイル
+
+.l-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+  width: 1440px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var.$white;
+  z-index: 1000;
+
+  &__contents {
+    display: flex;
+    font-size: 16px;
+    width: 608px;
+
+    &__detail {
+      display: flex;
+      white-space: nowrap;
+      padding: 0 21px;
+      border-left: 1px solid;
+      &:first-child {
+        padding-left: 0;
+        border-left: none;
+      }
+      a {
+        color: var.$black;
+        transition: opacity .3s ease-out;
+        &:hover {
+          opacity: .8;
+          transition: .3s;
+        }
+      }
+    }
+  }
+  &__button-wrapper {
+    display: flex;
+    margin-right: 80px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    width: 160px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var.$button-blue;
+    color: var.$black;
+    transition: opacity .3s ease-out;
+    &:hover {
+      opacity: .8;
+      transition: .3s;
+    }
+    
+
+    &__blue {
+      width: 160px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      color: var.$white;
+      &__icon {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.icon-favorite {
+  width: 21px;
+  height: 21px;
+}
+
+.icon-browsing {
+  width: 18px;
+  height: 18px;
+}
+
+.icon-search {
+  width: 18px;
+  height: 18px;
+}
+
+.icon-book {
+  width: 21px;
+  height: 17px;
+}
