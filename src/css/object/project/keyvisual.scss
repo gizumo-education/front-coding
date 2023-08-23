@@ -9,13 +9,10 @@
   height: 500px;
   margin-top: 100px;
   background-color: var.$main-img-background;
+  text-align: center;
 
   &__key-visual {
     height: 500px;
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
-    left: 175px;
   }
 
   &__key-title {
@@ -153,6 +150,7 @@
         border-radius: 30px;
         color: var.$white;
         background-color: var.$red;
+        border: none;
         &__icon {
           width: 30px;
           height: 30px;
@@ -385,32 +383,36 @@
   position: relative;
   background-color: black;
   height: 300px;
+  text-align: center;
 
   &__img {
+    width: 100%;
     height: 300px;
     opacity: .5;
-    z-index: 100;
+    display: block;
   }
 
-  &__first-text {
+  &__textbox {
     position: absolute;
-    top: 104px;
-    left: 548px;
-    font-size: 25px;
-    font-weight: var.$bold;
-    color: var.$white;
-    z-index: 200;
-  }
+    top: 0;
+    left: 0;
+    width: 100%;
 
-  &__second-text {
-    position: absolute;
-    top: 161px;
-    left:487px;
-    align-items: center;
-    font-size: 25px;
-    font-weight: var.$bold;
-    color: var.$white;
-    z-index: 200;
+    &__first-text {
+      padding-top: 104px;
+      font-size: 25px;
+      font-weight: var.$bold;
+      color: var.$white;
+      line-height: 36px;
+    }
+  
+    &__second-text {
+      padding-top: 21px;
+      font-size: 25px;
+      font-weight: var.$bold;
+      color: var.$white;
+      line-height: 36px;
+    }
   }
 }
 
@@ -425,33 +427,39 @@
     text-align: center;
   }
 
-
-  &__containar {
-    width: 570px;
-    height: 180px;
-    background-color: var.$features-box;
-    border-radius: 16px;
+  &__wrapper {
+    height: 100%;
     margin-top: 53px;
-    margin-left: 40px;
-    float: left;
 
-    &.new-line {
-      margin-left: 0;
-    }
+    &__containar {
+      width: 570px;
+      height: 180px;
+      background-color: var.$features-box;
+      border-radius: 16px;
+      margin-left: 40px;
+      float: left;
+      &:nth-child(n+3) {
+        margin-top: 40px;
+      }
 
-    &__title {
-      padding-top: 40px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: var.$bold;
-      color: var.$red;
-    }
+      &.new-line {
+        margin-left: 0;
+      }
 
-    &__detail {
-      padding-top: 36px;
-      font-size: 14px;
-      text-align: center;
-      line-height: 20px;
+      &__title {
+        padding-top: 40px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: var.$bold;
+        color: var.$red;
+      }
+
+      &__detail {
+        padding-top: 36px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 20px;
+      }
     }
   }
 }
@@ -547,8 +555,9 @@
 
       &__triangle {
         position: absolute;
-        top: 160px;
-        left:278px;
+        top: 50%;
+        left:100%;
+        transform: translate(0, -50%);
         width: 0;
         height: 0;
         border-left: 20px solid var.$red;
