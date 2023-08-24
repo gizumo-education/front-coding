@@ -151,6 +151,9 @@
         color: var.$white;
         background-color: var.$red;
         border: none;
+        &:hover {
+          cursor: pointer;
+        }
         &__icon {
           width: 30px;
           height: 30px;
