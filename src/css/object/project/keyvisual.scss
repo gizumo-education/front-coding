@@ -5,56 +5,62 @@
 
 /* メインコンテンツ */
 .p-main-img {
-  position: relative;
   height: 500px;
   margin-top: 100px;
   background-color: var.$main-img-background;
   text-align: center;
 
-  &__key-visual {
+  &__wrapper {
+    position: relative;
     height: 500px;
-  }
+    width: 1262px;
+    margin: 0 auto;
 
-  &__key-title {
-    width: 342px;
-    height: 168px;
-    position: absolute;
-    top: 56px;
-    left: 830px;
-  }
+    &__key-visual {
+      height: 500px;
+    }
 
-  &__key-text {
-    width: 800px;
-    height: 65px;
-    position:absolute;
-    top: 265px;
-    left: 607px;
-  }
+    &__key-title {
+      width: 342px;
+      height: 168px;
+      position: absolute;
+      top: 56px;
+      left: 655px;
+    }
 
-  &__box {
-    position: absolute;
-    top: 384px;
-    left: 810px;
-    width: 391px;
-    height: 69px;
-    border-radius: 16px;
-    background-color: var.$white;
-    color: var.$green;
-    border: 2px solid var.$green;
+    &__key-text {
+      width: 800px;
+      height: 65px;
+      position:absolute;
+      top: 265px;
+      left: 432px;
+    }
 
-    &__text {
-      padding-top: 5px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
+    &__box {
+      position: absolute;
+      top: 384px;
+      left: 635px;
+      width: 391px;
+      height: 69px;
+      border-radius: 16px;
+      background-color: var.$white;
+      color: var.$green;
+      border: 2px solid var.$green;
 
-      &__small {
-        font-size: 20px;
-      }
+      &__text {
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
 
-      &__learge {
-        font-size: 40px;
-        font-weight: var.$bold;
+        &__small {
+          font-size: 20px;
+        }
+
+        &__learge {
+          font-size: 40px;
+          font-weight: var.$bold;
+        }
       }
     }
   }
@@ -122,10 +128,10 @@
       border-radius: 10px;
       border: 1px solid var.$border-red;
       margin-left: 15px;
-      color: var.$input-text;
+      font-size: 18px;
+      padding-left: 10px;
       &::placeholder {
-        padding-left: 10px;
-        font-size: 18px;
+        color: var.$input-text;
       }
     }
   

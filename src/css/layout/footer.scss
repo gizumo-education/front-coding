@@ -51,6 +51,16 @@
       width: 320px;
       padding-top: 55px;
 
+      a {
+        width: 320px;
+        height: 85px;
+        transition: opacity .3s ease-out;
+        &:hover {
+          opacity: .8;
+          transition: .3s;
+        }
+      }
+
       &__main {
         width: 320px;
         height: 85px;
@@ -60,6 +70,7 @@
         img {
           height: 83px;
           position: absolute;
+          top: 0;
           right: 0;
         }
       }
