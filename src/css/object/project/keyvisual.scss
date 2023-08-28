@@ -3,21 +3,74 @@
 @use '../../foundation/_mixins.scss' as m;
 // ページ上部のキービジュアルに関するスタイル
 
+
+  .p-menue {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 400px;
+    height: 554px;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1000;
+    p {
+      color: var.$white;
+      font-size: 22px;
+      font-weight: var.$bold;
+      padding: 38px 0 0 60px;
+      &:first-child {
+        padding-top: 57px;
+      }
+    }
+  }
 /* メインコンテンツ */
 .p-main-img {
   height: 500px;
   margin-top: 100px;
   background-color: var.$main-img-background;
   text-align: center;
+  @include m.tab {
+    margin-top: 1rem;
+    height: 5rem;
+  }
+  @include m.sp {
+    width: 4rem;
+    height: 2.7rem;
+    margin-top: .7rem;
+  }
 
   &__wrapper {
     position: relative;
     height: 500px;
     width: 1262px;
     margin: 0 auto;
+    @include m.tab {
+      height: 5rem;
+      width: auto;
+    }
+    @include m.sp {
+      width: 4rem;
+      height: 2.7rem;
+    }
 
-    &__key-visual {
-      height: 500px;
+    &__key-visual-pc {
+      height: auto;
+      @include m.tab {
+        height: 5rem;
+      }
+      @include m.sp {
+        display: none;
+        width: 4rem;
+        height: auto;
+      }
+    }
+
+    &__key-visual-sp {
+      display: none;
+      @include m.sp {
+        display: block;
+        height: 2.7rem;
+      }
     }
 
     &__key-title {
@@ -26,6 +79,18 @@
       position: absolute;
       top: 56px;
       left: 655px;
+      @include m.tab {
+        width: 3.42rem;
+        height: 1.68rem;
+        top: .56rem;
+        left: 6.55rem;
+      }
+      @include m.sp {
+        width: 1.5rem;
+        height: .73rem;
+        top: .61rem;
+        left: 2rem;
+      }
     }
 
     &__key-text {
@@ -33,7 +98,19 @@
       height: 65px;
       position:absolute;
       top: 265px;
-      left: 432px;
+      right: 30px;
+      @include m.tab {
+        width: 8rem;
+        height: .65rem;
+        top: 2.65rem;
+        right: .3rem;
+      }
+      @include m.sp {
+        top: 1.48rem;
+        left: 1.25rem;
+        width: 2.72rem;
+        height: .22rem;
+      }
     }
 
     &__box {
@@ -46,20 +123,50 @@
       background-color: var.$white;
       color: var.$green;
       border: 2px solid var.$green;
+      @include m.tab {
+        top: 3.84rem;
+        left: 6.35rem;
+        width: 3.91rem;
+        height: .69rem;
+        border-radius: .16rem;
+      }
+      @include m.sp {
+        top: 1.88rem;
+        left: 1.9rem;
+        width: 1.7rem;
+        height: .3rem;
+        border-radius: .08rem;
+        border: .01rem solid var.$green;
+      }
 
       &__text {
         padding-top: 5px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        @include m.tab {
+          padding-top: .05rem;
+        }
 
         &__small {
           font-size: 20px;
+          @include m.tab {
+            font-size: .2rem;
+          }
+          @include m.sp {
+            font-size: .08rem;
+          }
         }
 
         &__learge {
           font-size: 40px;
           font-weight: var.$bold;
+          @include m.tab {
+            font-size: .4rem;
+          }
+          @include m.sp {
+            font-size: .16rem;
+          }
         }
       }
     }
@@ -72,74 +179,186 @@
   border-radius: 10px;
   background-color: var.$job-search-blue;
   margin: 60px auto 0;
+  @include m.tab {
+    height: 2.4rem;
+    border-radius: .1rem;
+    margin: .6rem auto 0;
+  }
+  @include m.sp {
+    height: 2.4rem;
+    border-radius: .1rem;
+    margin: .25rem auto 0;
+  }
+
 
   &__title {
     padding-top: 40px;
     font-size: 25px;
     font-weight: var.$bold;
     text-align: center;
+    @include m.tab {
+      padding-top: .4rem;
+      font-size: .25rem;
+    }
+    @include m.sp {
+      padding-top: .15rem;
+      font-size: .22rem;
+    }
   }
 
   &__sub-title {
     padding-top: 20px;
     font-size: 20px;
     text-align: center;
+    @include m.tab {
+      padding-top: .2rem;
+      font-size: .2rem;
+    }
+    @include m.sp {
+      padding-top: .16rem;
+      font-size: .14rem;
+      line-height: .22rem;
+    }
   }
 
   &__contents {
     display: flex;
     justify-content: center;
     margin-top: 26px;
-
-    &__container {
-      position: relative;
-      margin-left: 15px;
-      &:first-child {
-        margin-left: 0;
-      }
-      &::before {
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-top: 10px solid var.$border-red;
-        content: "";
-        position: absolute;
-        right: 15px;
-        top: 25px;
-        width: 0;
+    @include m.tab {
+      margin-top: .26rem;
+    }
+    @include m.sp {
+      display: block;
+      margin-top: .13rem;
+    }
+    
+    &__pulldown {
+      display: flex;
+      @include m.sp {
+        justify-content: center;
+        width: 3.7rem;
+        height: .4rem;
       }
 
-      select {
-        width: 200px;
-        height: 60px;
-        border-radius: 10px;
-        border-color: var.$border-red;
-        font-size: 18px;
-        padding-left: 15px;
-        -webkit-appearance: none;
-        appearance: none;
-        &::-ms-expand {
-          display: none;
+      &__container {
+        position: relative;
+        margin-left: 15px;
+        @include m.tab {
+          margin-left: .15rem;
+        }
+        @include m.sp {
+          margin-left: .1rem;
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+        &::before {
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid var.$border-red;
+          content: "";
+          position: absolute;
+          right: 15px;
+          top: 25px;
+          width: 0;
+          @include m.tab {
+            border-left: .1rem solid transparent;
+            border-right: .1rem solid transparent;
+            border-top: .1rem solid var.$border-red;
+            right: .15rem;
+            top: .25rem;
+          }
+          @include m.sp {
+            border-left: .07rem solid transparent;
+            border-right: .07rem solid transparent;
+            border-top: .07rem solid var.$border-red;
+            right: .07rem;
+            top: .12rem;
+          }
+        }
+
+        select {
+          width: 200px;
+          height: 60px;
+          border-radius: 10px;
+          border-color: var.$border-red;
+          font-size: 18px;
+          padding-left: 15px;
+          -webkit-appearance: none;
+          appearance: none;
+          @include m.tab {
+            width: 2rem;
+            height: .6rem;
+            border-radius: .1rem;
+            font-size: .18rem;
+            padding-left: .15rem;
+          }
+          @include m.sp {
+            width: 1rem;
+            height: .3rem;
+            border-radius: .05rem;
+            font-size: .12rem;
+            padding-left: .08rem;
+          }
+          &::-ms-expand {
+            display: none;
+          }
         }
       }
     }
 
-    input {
-      width: 300px;
-      border-radius: 10px;
-      border: 1px solid var.$border-red;
-      margin-left: 15px;
-      font-size: 18px;
-      padding-left: 10px;
-      &::placeholder {
-        color: var.$input-text;
+    &__input {
+      @include m.sp {
+        text-align: center;
+      }
+
+      input {
+        width: 300px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid var.$border-red;
+        margin-left: 15px;
+        font-size: 18px;
+        padding-left: 10px;
+        @include m.tab {
+          width: 3rem;
+          height: .6rem;
+          border-radius: .1rem;
+          margin-left: .15rem;
+          font-size: .18rem;
+          padding-left: .1rem;
+        }
+        @include m.sp {
+          width: 3.2rem;
+          height: .3rem;
+          border-radius: .05rem;
+          margin-left: 0;
+          font-size: .14rem;
+          padding-left: .07rem;
+        }
+        &::placeholder {
+          color: var.$input-text;
+        }
       }
     }
-  
+
     &__button {
       width: 140px;
       height: 60px;
       margin-left: 15px;
       transition: opacity .3s ease-out;
+      @include m.tab {
+        width: 1.4rem;
+        height: .6rem;
+        margin-left: .15rem;
+      }
+      @include m.sp {
+        width: 1.6rem;
+        height: .4rem;
+        margin: .19rem auto 0;
+        text-align: center;
+      }
       &:hover {
         opacity: .8;
         transition: .3s;
@@ -157,6 +376,17 @@
         color: var.$white;
         background-color: var.$red;
         border: none;
+        @include m.tab {
+          width: 1.4rem;
+          height: .6rem;
+          font-size: .18rem;
+          border-radius: .3rem;
+        }
+        @include m.sp {
+          width: 1.6rem;
+          height: .4rem;
+          border-radius: .2rem;
+        }
         &:hover {
           cursor: pointer;
         }
@@ -164,6 +394,16 @@
           width: 30px;
           height: 30px;
           margin-right: 4px;
+          @include m.tab {
+            width: .3rem;
+            height: .3rem;
+            margin-right: .04rem;
+          }
+          @include m.sp {
+            width: .18rem;
+            height: .18rem;
+            margin-right: .14rem;
+          }
         }
       }
     }
@@ -172,6 +412,12 @@
 
 .page-bottom {
   margin-top: 150px;
+  @include m.tab {
+    margin-top: 1.5rem;
+  }
+  @include m.sp {
+    margin-top: .6rem;
+  }
 }
 
 /* 新着求人 */
@@ -181,6 +427,9 @@
   background-color: var.$blue;
   @include m.tab {
     height: 6.36rem;
+  }
+  @include m.sp {
+    height: 6rem;
   }
 
   &__title {
@@ -393,12 +642,24 @@
   background-color: black;
   height: 300px;
   text-align: center;
+  @include m.tab {
+    height: 3rem;
+  }
+  @include m.sp {
+    height: .75rem;
+  }
 
   &__img {
     width: 100%;
     height: 300px;
     opacity: .5;
     display: block;
+    @include m.tab {
+      height: 3rem;
+    }
+    @include m.sp {
+      height: .75rem;
+    }
   }
 
   &__textbox {
@@ -413,6 +674,17 @@
       font-weight: var.$bold;
       color: var.$white;
       line-height: 36px;
+      @include m.tab {
+        padding-top: 1.04rem;
+        font-size: .25rem;
+        line-height: .36rem;
+      }
+      @include m.sp {
+        padding-top: .16rem;
+        font-size: .14rem;
+        line-height: .2rem;
+        font-weight: var.$regular;
+      }
     }
   
     &__second-text {
@@ -421,6 +693,17 @@
       font-weight: var.$bold;
       color: var.$white;
       line-height: 36px;
+      @include m.tab {
+        padding-top: .21rem;
+        font-size: .25rem;
+        line-height: .36rem;
+      }
+      @include m.sp {
+        padding-top: .02rem;
+        font-size: .14rem;
+        line-height: .2rem;
+        font-weight: var.$regular;
+      }
     }
   }
 }
@@ -429,16 +712,33 @@
 .p-features {
   height: 478px;
   margin-top: 106px;
+  @include m.tab {
+    height: 4.78rem;
+    margin-top: 1.06rem;
+  }
+  @include m.sp {
+    height: 7.36rem;
+    margin-top: .55rem;
+  }
 
   &__title {
     font-size: 25px;
     font-weight: var.$bold;
     text-align: center;
+    @include m.tab {
+      font-size: .25rem;
+    }
   }
 
   &__wrapper {
     height: 100%;
     margin-top: 53px;
+    @include m.tab {
+      margin-top: .53rem;
+    }
+    @include m.sp {
+      margin-top: .38rem;
+    }
 
     &__containar {
       width: 570px;
@@ -447,12 +747,36 @@
       border-radius: 16px;
       margin-left: 40px;
       float: left;
+      @include m.tab {
+        width: 5.7rem;
+        height: 1.8rem;
+        border-radius: .16rem;
+        margin-left: .4rem;
+      }
+      @include m.sp {
+        width: 3.7rem;
+        height: auto;
+        margin-top: .21rem;
+        margin-left: 0;
+      }
       &:nth-child(n+3) {
         margin-top: 40px;
+        @include m.tab {
+          margin-top: .4rem;
+        }
+        @include m.sp {
+          margin-top: .21rem;
+        }
       }
 
       &.new-line {
         margin-left: 0;
+      }
+
+      &:first-child {
+        @include m.sp {
+          margin-top: 0;
+        }
       }
 
       &__title {
@@ -461,13 +785,41 @@
         font-size: 24px;
         font-weight: var.$bold;
         color: var.$red;
+        @include m.tab {
+          padding-top: .4rem;
+          font-size: .24rem;
+        }
+        @include m.sp {
+          padding-top: .3rem;
+          font-size: .2rem;
+        }
       }
 
-      &__detail {
+      &__detail-pc {
+        display: block !important;
         padding-top: 36px;
         font-size: 14px;
         text-align: center;
         line-height: 20px;
+        @include m.tab {
+          padding-top: .36rem;
+          font-size: .14rem;
+          line-height: .2rem;
+        }
+        @include m.sp {
+          display: none !important;
+        }
+      }
+
+      &__detail-sp {
+        display: none !important;
+        padding: .3rem 0;
+        font-size: .12rem;
+        text-align: center;
+        line-height: .17rem;
+        @include m.sp {
+          display: block !important;
+        }
       }
     }
   }
@@ -477,15 +829,34 @@
 .p-flow {
   height: 435px;
   margin-top: 105px;
+  @include m.tab {
+    height: 4.35rem;
+    margin-top: 1.05rem;
+  }
+  @include m.sp {
+    height: 13.5rem;
+    margin-top: .6rem;
+  }
 
   &__title {
     font-size: 25px;
     font-weight: var.$bold;
     text-align: center;
+    @include m.tab {
+      font-size: .25rem;
+    }
   }
 
   &__wrapper {
     margin-top: 50px;
+    @include m.tab {
+      margin-top: .5rem;
+    }
+    @include m.sp {
+      height: 12.91rem;
+      margin: .34rem .45rem 0;
+      text-align: center;
+    }
 
     &__contents {
       position: relative;
@@ -497,8 +868,24 @@
       border-color: var.$red;
       float: left;
       margin-left: 20px;
+      @include m.tab {
+        width: 2.8rem;
+        height: 3.6rem;
+        border-radius: .16rem;
+        margin-left: .2rem;
+      }
+      @include m.sp {
+        width: 2.8rem;
+        height: 2.93rem;
+        border-radius: .16rem;
+        margin-top: .39rem;
+        margin-left: 0;
+      }
       &:first-child {
         margin-left: 0;
+        @include m.sp {
+          margin-top: 0;
+        }
       }
 
       &__step {
@@ -509,6 +896,18 @@
         height: 60px;
         background-color: var.$red;
         border-radius: 30px;
+        @include m.tab {
+          top: .1rem;
+          left: .1rem;
+          width: .6rem;
+          height: .6rem;
+          border-radius: .3rem;
+        }
+        @include m.sp {
+          width: .45rem;
+          height: .45rem;
+          border-radius: .225rem;
+        }
 
         p {
           width: 60px;
@@ -519,6 +918,17 @@
           display: table-cell;
           text-align: center;
           vertical-align: middle;
+          @include m.tab {
+            width: .6rem;
+            height: .6rem;
+            font-size: .16rem;
+          }
+          @include m.sp {
+            width: .45rem;
+            height: .45rem;
+            font-size: .1rem;
+            line-height: .12rem;
+          }
         }
       }
 
@@ -527,29 +937,77 @@
         font-weight: var.$bold;
         line-height: 30px;
         margin: 0 auto;
+        @include m.tab {
+          font-size: .24rem;
+          line-height: .3rem;
+        }
+        @include m.sp {
+          font-size: .2rem;
+          line-height: .29rem;
+        }
 
         &.first {
           width: 216px;
           height: 60px;
           margin-bottom: 18px;
+          @include m.tab {
+            width: 2.16rem;
+            height: .6rem;
+            margin-bottom: .18rem;
+          }
+          @include m.sp {
+            width: 2.2rem;
+            height: .29rem;
+            margin-bottom: .1rem;
+          }
         }
 
         &.second {
           width: 168px;
           height: 60px;
           margin-bottom: 18px;
+          @include m.tab {
+            width: 1.68rem;
+            height: .6rem;
+            margin-bottom: .18rem;
+          }
+          @include m.sp {
+            width: 2.6rem;
+            height: .29rem;
+            margin-bottom: .1rem;
+          }
         }
 
         &.third {
           width: 168px;
           height: 35px;
           margin-bottom: 30px;
+          @include m.tab {
+            width: 1.68rem;
+            height: .35rem;
+            margin-bottom: .3rem;
+          }
+          @include m.sp {
+            width: 1.4rem;
+            height: .29rem;
+            margin-bottom: .1rem;
+          }
         }
 
         &.fourth {
           width: 144px;
           height: 35px;
           margin-bottom: 30px;
+          @include m.tab {
+            width: 1.44rem;
+            height: .35rem;
+            margin-bottom: .3rem;
+          }
+          @include m.sp {
+            width: 1.2rem;
+            height: .29rem;
+            margin-bottom: .1rem;
+          }
         }
       }
 
@@ -560,6 +1018,18 @@
         line-height: 20px;
         margin: 0 auto;
         text-align: left;
+        @include m.tab {
+          width: 2.37rem;
+          height: .6rem;
+          font-size: .14rem;
+          line-height: .2rem;
+        }
+        @include m.sp {
+          width: 2.4rem;
+          height: .8rem;
+          font-size: .14rem;
+          line-height: .2rem;
+        }
       }
 
       &__triangle {
@@ -572,6 +1042,21 @@
         border-left: 20px solid var.$red;
         border-top: 20px solid transparent;
         border-bottom: 20px solid transparent;
+        @include m.tab {
+          border-left: .2rem solid var.$red;
+          border-top: .2rem solid transparent;
+          border-bottom: .2rem solid transparent;
+        }
+        @include m.sp {
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%, 0);
+          border-left: .2rem solid transparent;
+          border-right: .2rem solid transparent;
+          border-top: .2rem solid var.$red;
+          border-bottom: none;
+          margin-top: .09rem;
+        }
       }
     }
   }
@@ -582,6 +1067,18 @@
   height: 100px;
   margin-top: 60px;
   margin-bottom: 20px;
+  @include m.tab {
+    width: 1.02rem;
+    height: 1rem;
+    margin-top: .6rem;
+    margin-bottom: .2rem;
+  }
+  @include m.sp {
+    width: .77rem;
+    height: .75rem;
+    margin-top: .55rem;
+    margin-bottom: .2rem;
+  }
 }
 
 .icon-pickup {
@@ -589,6 +1086,18 @@
   height: 80px;
   margin-top: 70px;
   margin-bottom: 30px;
+  @include m.tab {
+    width: .8rem;
+    height: .8rem;
+    margin-top: .7rem;
+    margin-bottom: .3rem;
+  }
+  @include m.sp {
+    width: .75rem;
+    height: .75rem;
+    margin-top: .55rem;
+    margin-bottom: .22rem;
+  }
 }
 
 .icon-application {
@@ -596,6 +1105,18 @@
   height: 100px;
   margin-top: 60px;
   margin-bottom: 33px;
+  @include m.tab {
+    width: 1.07rem;
+    height: 1rem;
+    margin-top: .6rem;
+    margin-bottom: .33rem;
+  }
+  @include m.sp {
+    width: .8rem;
+    height: .75rem;
+    margin-top: .55rem;
+    margin-bottom: .22rem;
+  }
 }
 
 .icon-star {
@@ -603,22 +1124,53 @@
   height: 110px;
   margin-top: 55px;
   margin-bottom: 28px;
+  @include m.tab {
+    width: 1.08rem;
+    height: 1.1rem;
+    margin-top: .55rem;
+    margin-bottom: .28rem;
+  }
+  @include m.sp {
+    width: .74rem;
+    height: .75rem;
+    margin-top: .55rem;
+    margin-bottom: .22rem;
+  }
 }
 
 /* お役立ちコンテンツ */
 .p-usefull-contents {
-  height: 445px;
+  height: 455px;
   margin-top: 105px;
   text-align: center;
+  @include m.tab {
+    height: 4.55rem;
+    margin-top: 1.05rem;
+  }
+  @include m.sp {
+    margin-top: .54rem;
+    height: 100%;
+  }
 
   &__title {
     font-size: 25px;
     font-weight: var.$bold;
+    @include m.tab {
+      font-size: .25rem;
+    }
   }
 
   &__wrapper {
     height: 240px;
     margin-top: 50px;
+    @include m.tab {
+      height: 2.4rem;
+      margin-top: .5rem;
+    }
+    @include m.sp {
+      height: 7.38rem;
+      margin-top: .3rem;
+    }
   }
 
   &__containar {
@@ -629,14 +1181,38 @@
     margin-left: 20px;
     background-color: var.$black;
     position: relative;
+    @include m.tab {
+      width: 3.8rem;
+      height: 2.4rem;
+      border-radius: .16rem;
+      margin-left: .2rem;
+    }
+    @include m.sp {
+      width: 3.7rem;
+      height: 2.35rem;
+      border-radius: .16rem;
+      margin-left: 0;
+      margin-top: .18rem;
+    }
     &:first-child {
       margin-left: 0;
+      @include m.sp {
+        margin-top: 0;
+      }
     }
 
     a {
       width: 380px;
       height: 240px;
       transition: opacity .3s ease-out;
+      @include m.tab {
+        width: 3.8rem;
+        height: 2.4rem;
+      }
+      @include m.sp {
+        width: 3.7rem;
+        height: 2.35rem;
+      }
       &:hover {
         opacity: .8;
         transition: .3s;
@@ -646,6 +1222,13 @@
     img {
       opacity: .5;
       border-radius: 16px;
+      @include m.tab {
+        border-radius: .16rem;
+      }
+      @include m.sp {
+        width: 3.7rem;
+        height: 2.35rem;
+      }
     }
 
     &__title {
@@ -657,6 +1240,14 @@
       font-size: 24px;
       font-weight: var.$bold;
       white-space: nowrap;
+      @include m.tab {
+        top: .71rem;
+        font-size: .24rem;
+      }
+      @include m.sp {
+        top: .6rem;
+        font-size: .21rem;
+      }
     }
 
     &__detail {
@@ -668,6 +1259,16 @@
       font-size: 16px;
       line-height: 21px;
       white-space: nowrap;
+      @include m.tab {
+        top: 1.4rem;
+        font-size: .16rem;
+        line-height: .21rem;
+      }
+      @include m.sp {
+        top: 1.34rem;
+        font-size: .14rem;
+        line-height: .2rem;
+      }
     }
   }
 
@@ -678,6 +1279,18 @@
     border-radius: 30px;
     background-color: var.$red;
     transition: opacity .3s ease-out;
+    @include m.tab {
+      width: 4.2rem;
+      height: .6rem;
+      margin: .8rem auto 0;
+      border-radius: .3rem;
+    }
+    @include m.sp {
+      width: 3.7rem;
+      height: .6rem;
+      border-radius: .3rem;
+      margin: .35rem auto 0;
+    }
     &:hover {
       opacity: .8;
       transition: .3s;
@@ -690,6 +1303,19 @@
       color: var.$white;
       font-size: 18px;
       font-weight: var.$bold;
+      vertical-align: middle;
+      @include m.tab {
+        width: 4.2rem;
+        height: .6rem;
+        padding-top: .21rem;
+        font-size: .18rem;
+      }
+      @include m.sp {
+        width: 3.7rem;
+        height: .6rem;
+        padding-top: .21rem;
+        font-size: .18rem;
+      }
     }
   }
 }
