@@ -36,3 +36,31 @@ $(function () {
     }
   });
 });
+
+$(function(){
+  var state = false;
+  var pos;
+  $(".l-header__hamburger").on("click", function() {
+    if (state == false) {
+      pos = $(window).scrollTop();
+      $("body").addClass("fixed").css({"top": -pos});
+      state = true;
+    } else {
+      $("body").removeClass("fixed").css({"top": 0});
+      window.scrollTo(0, pos);
+      state = false;
+    }
+  });
+});
+
+$(function(){
+  $('a[href^="#"]').on("click", function(){
+    var adjust = 0;
+    var speed = 400;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top + adjust - 70;
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
+  });
+});
