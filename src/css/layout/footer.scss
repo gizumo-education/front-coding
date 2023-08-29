@@ -1,23 +1,51 @@
 @use '../object/utility/utility.scss';
 @use '../foundation/_variables.scss' as var;
+@use '../foundation/_mixins.scss' as m;
 // footerのスタイルを記述するファイル
 
 .l-footer {
   height: 300px;
   margin-top: 200px;
   background-color: var.$blue;
+  @include m.tab {
+    height: 3rem;
+    margin-top: 2rem;
+  }
+  @include m.sp {
+    height: 4.78rem;
+    margin-top: 1rem;
+  }
 
   &__contents {
     height: 265px;
     display: flex;
     justify-content: space-between;
+    @include m.tab {
+      height: 2.65rem;
+    }
+    @include m.sp {
+      display: block;
+      height: 4.43rem;
+    }
 
     &__wrapper {
+      @include m.sp {
+        height:1.96rem;
+      }
       &__top {
         font-size: 16px;
         padding-top: 79px;
         color: var.$black;
         transition: opacity .3s ease-out;
+        @include m.tab {
+          font-size: .16rem;
+          padding-top: .79rem;
+        }
+        @include m.sp {
+          line-height: .23rem;
+          padding-top: .38rem;
+          padding-left: .35rem;
+        }
         &:hover {
           opacity: .8;
           transition: .3s;
@@ -29,8 +57,19 @@
           float: left;
           padding-top: 27px;
           margin-left: 39px;
+          @include m.tab {
+            padding-top: .27rem;
+            margin-left: .39rem;
+          }
+          @include m.sp {
+            padding-top: .27rem;
+            margin-left: .37rem;
+          }
           &:first-child {
             margin-left: 0;
+            @include m.sp {
+              margin-left: .4rem;
+            }
           }
         }
         
@@ -39,6 +78,14 @@
           line-height: 36px;
           color: var.$black;
           transition: opacity .3s ease-out;
+          @include m.tab {
+            font-size: .16rem;
+            line-height: .36rem;
+          }
+          @include m.sp {
+            font-size: .16rem;
+            line-height: .36rem;
+          }
           &:hover {
             opacity: .8;
             transition: .3s;
@@ -49,15 +96,38 @@
 
     &__image-list {
       width: 320px;
-      padding-top: 55px;
+      margin-top: 55px;
+      @include m.tab {
+        width: 3.2rem;
+        margin-top: .55rem;
+      }
+      @include m.sp {
+        width: 3.2rem;
+        margin: .21rem auto 0;
+
+      }
 
       a {
         width: 320px;
         height: 85px;
+        margin-top: 15px;
         transition: opacity .3s ease-out;
+        @include m.tab {
+          width: 3.2rem;
+          height: .85rem;
+          margin-top: .15rem;
+        }
+        @include m.sp {
+          width: 3.2rem;
+          height: .85rem;
+          margin-top: .15rem;
+        }
         &:hover {
           opacity: .8;
           transition: .3s;
+        }
+        &:first-child {
+          margin-top: 0;
         }
       }
 
@@ -67,19 +137,40 @@
         background-color: var.$white;
         border: 1px solid var.$border-gray;
         position: relative;
+        @include m.tab {
+          width: 3.2rem;
+          height: .85rem;
+        }
+        @include m.sp {
+          width: 3.2rem;
+          height: .85rem;
+        }
         img {
           height: 83px;
           position: absolute;
           top: 0;
           right: 0;
+          @include m.tab {
+            height: .83rem;
+          }
+          @include m.sp {
+            height: .83rem;
+          }
         }
       }
 
       &__sub {
         width: 320px;
         height: 85px;
-        margin-top: 15px;
         border: 1px solid var.$border-gray;
+        @include m.tab {
+          width: 3.2rem;
+          height: .85rem;
+        }
+        @include m.sp {
+          width: 3.2rem;
+          height: .85rem;
+        }
       }
     }
   }
@@ -89,5 +180,10 @@
     font-size: 14px;
     background-color: var.$gray;
     text-align: center;
+    @include m.tab {
+      height: .35rem;
+      padding-top: .11rem;
+      font-size: .14rem;
+    }
   }
 }

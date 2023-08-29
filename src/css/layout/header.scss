@@ -1,5 +1,6 @@
 @use '../object/utility/utility.scss';
 @use '../foundation/_variables.scss' as var;
+@use '../foundation/_mixins.scss' as m;
 // headerのスタイルを記述するファイル
 
 .l-header {
@@ -13,17 +14,37 @@
   left: 0;
   background-color: var.$white;
   z-index: 1000;
+  @include m.tab {
+    height: 1rem;
+  }
+  @include m.sp {
+    width: 4rem;
+    height: .7rem;
+  }
 
   &__contents {
     display: flex;
     font-size: 16px;
     width: 608px;
+    @include m.tab {
+      font-size: .16rem;
+      width: 6.08rem;
+    }
+    @include m.sp {
+      display: none;
+    }
 
     &__detail {
       display: flex;
       white-space: nowrap;
       padding: 0 21px;
       border-left: 1px solid;
+      @include m.tab {
+        padding: 0 .21rem;
+      }
+      @include m.sp {
+        display: none;
+      }
       &:first-child {
         padding-left: 0;
         border-left: none;
@@ -41,6 +62,12 @@
   &__button-wrapper {
     display: flex;
     margin-right: 80px;
+    @include m.tab {
+      margin-right: .8rem;
+    }
+    @include m.sp {
+      display: none;
+    }
     &:first-child {
       margin-left: 0;
     }
@@ -56,6 +83,15 @@
     background-color: var.$button-blue;
     color: var.$black;
     transition: opacity .3s ease-out;
+    @include m.tab {
+      margin-left: .15rem;
+      width: 1.6rem;
+      height: .5rem;
+      border-radius: .1rem;
+    }
+    @include m.sp {
+      display: none;
+    }
     &:hover {
       opacity: .8;
       transition: .3s;
@@ -70,8 +106,44 @@
       align-items: center;
       font-size: 14px;
       color: var.$white;
+      @include m.tab {
+        width: 1.6rem;
+        height: 0.5rem;
+        font-size: .14rem;
+      }
+      @include m.sp {
+        display: none;
+      }
       &__icon {
         margin-right: 10px;
+        @include m.tab {
+          margin-right: .1rem;
+        }
+      }
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    @include m.sp {
+      display: inline-block;
+      float: right;
+      margin-right: .15rem;
+      width: .5rem;
+      height: .38rem;
+    }
+
+
+    span {
+      margin-top: 10px;
+      height: 6px;
+      width: 50px;
+      background-color: var.$black;
+      border-radius: 3px;
+      display: inline-block;
+      box-sizing: border-box;
+      &:first-child {
+        margin-top: 0;
       }
     }
   }
@@ -80,19 +152,35 @@
 .icon-favorite {
   width: 21px;
   height: 21px;
+  @include m.tab {
+    width: 0.21rem;
+    height: 0.21rem;
+  }
 }
 
 .icon-browsing {
   width: 18px;
   height: 18px;
+  @include m.tab {
+    width: 0.18rem;
+    height: 0.18rem;
+  }
 }
 
 .icon-search {
   width: 18px;
   height: 18px;
+  @include m.tab {
+    width: 0.18rem;
+    height: 0.18rem;
+  }
 }
 
 .icon-book {
   width: 21px;
   height: 17px;
+  @include m.tab {
+    width: 0.21rem;
+    height: 0.17rem;
+  }
 }
