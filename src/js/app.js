@@ -24,3 +24,15 @@ $(function () {
     }]
   });
 });
+
+$(function () {
+  $(".l-header__hamburger").on("click", function() {
+    if($(".p-menue").hasClass('off')){
+      $(".p-menue").removeClass('off');
+      $(".p-menue").animate({'marginLeft':'400px'},300).addClass('on');
+    }else{
+      $(".p-menue").addClass('off');
+      $(".p-menue").animate({'marginLeft':'0px'},300);
+    }
+  });
+});
