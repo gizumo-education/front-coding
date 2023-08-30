@@ -7,10 +7,10 @@
 .p-menue {
   display: none;
   position: fixed;
-  top: 70px;
-  left: 400px;
-  width: 400px;
-  height: 554px;
+  top: .7rem;
+  left: 8rem;
+  width: 4rem;
+  height: 5.54rem;
   background-color: rgba(0, 0, 0, .7);
   z-index: 1000;
   @include m.sp {
@@ -18,9 +18,9 @@
   }
   p {
     color: var.$white;
-    font-size: 22px;
+    font-size: .22rem;
     font-weight: var.$bold;
-    padding: 38px 0 0 60px;
+    padding: .38rem 0 0 .6rem;
     &:first-child {
       padding-top: 57px;
     }
