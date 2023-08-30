@@ -24,3 +24,41 @@ $(function () {
     }]
   });
 });
+
+$(function () {
+  $(".l-header__hamburger").on("click", function() {
+    if($(".p-menue").hasClass('off')){
+      $(".p-menue").removeClass('off');
+      $(".p-menue").animate({'marginLeft':'-8rem'},300).addClass('on');
+    }else{
+      $(".p-menue").addClass('off');
+      $(".p-menue").animate({'marginLeft':'0px'},300);
+    }
+  });
+});
+
+$(function () {
+  $(".l-header__hamburger").on("click", function() {
+    $(this).toggleClass("active");
+    $(".p-menue").toggleClass("active");
+    $("body").toggleClass("active");
+  });
+});
+
+
+$(function(){
+  $('a[href^="#"]').on("click", function(){
+    const adjust = 0;
+    const speed = 400;
+    const href= $(this).attr("href");
+    const target = $(href === "#" || href === "" ? 'html' : href);
+    const position = target.offset().top + adjust - 70;
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    $(".p-menue").addClass('off');
+    $(".p-menue").animate({'marginLeft':'0px'},300);
+    $(".l-header__hamburger").toggleClass("active");
+    $(".p-menue").toggleClass("active");
+    $("body").toggleClass("active");
+    return false;
+  });
+});
