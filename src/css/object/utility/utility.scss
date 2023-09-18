@@ -4,6 +4,9 @@
 
 .o-utility__gray {
   background-color: variables.$liteGray;
+  background-image: url(/src/img/icon/figma-header-main-img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .o-utility__inner {
@@ -35,7 +38,7 @@
 }
 
 .o-keyvisual__icon--position {
-  margin: 0 17px;
+  margin: 0 13px;
 }
 
 .o-keyvisual__header {
