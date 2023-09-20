@@ -20,7 +20,7 @@
 
     &__black {
       color: #000;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 }
@@ -52,7 +52,7 @@
     right: 20px;
     bottom: 21;
     left: 48px;
-    color: #FFF;
+    color: variables.$white;
     font-family: Noto Sans JP;
     font-size: 18px;
     font-weight: variables.$bold;
