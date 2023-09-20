@@ -64,11 +64,6 @@
   text-align: center;
 
   &__search {
-    font-family: Noto Sans JP;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: variables.$bold;
-
     &--middle {
       color: variables.$black;
       font-size: 20px;
@@ -94,9 +89,7 @@
   background-color: variables.$skyBlue;
 
   &__title {
-    color: variables.$black;
     font-family: Inter;
-    font-size: 25px;
     font-weight: variables.$regular;
     line-height: normal;
     text-align: left;
