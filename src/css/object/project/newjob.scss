@@ -1,0 +1,59 @@
+@use "../../object/utility/utility.scss";
+//新着求人に関するスタイル指定
+.p-newjob {
+  margin-top: 60px;
+  background-color: utility.$blue;
+  &__inner {
+    padding: 64px 0 67px;
+    text-align: center;
+    position: relative;
+    & h2 {
+      text-align-last: left;
+      font-size: 2.5rem;
+    }
+    &__list {
+      display: flex;
+      text-align: left;
+      margin-top: 25px;
+      font-size: 1.4rem;
+      & li {
+        width: calc(100% / 4); //幅を4分割
+        margin-right: 20px;////child消し
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+
+      & img {
+        border-radius: 10px;
+      }
+      & figcaption {
+        width: 100%;
+        margin-top: 8.08px;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+      }
+      & p {
+        margin-top: 5px; //調整
+        &:first-child {
+          margin-top: 7px; //調整
+        }
+      }
+      & span {
+        background-color: utility.$light-purple;
+        display: inline-block;
+        text-align: center;
+        width: 60px;
+        line-height: 1.6;
+        margin-right: 10px;
+      }
+    }
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 60px auto 0; ////
+    }
+  }
+}

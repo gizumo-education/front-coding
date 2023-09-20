@@ -1,0 +1,40 @@
+@use "../../object/utility/utility.scss";
+//ギズジョブの特徴項目に関するスタイル指定
+.p-feature {
+  padding: 106px 0;
+  text-align: center;
+  & h2 {
+    font-weight: utility.$bold;
+    font-size: 2.5rem;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap; //規定の幅を超えたら折り返す
+    justify-content: space-between;
+    margin-top: 53px;
+    & li {
+      width: 570px;
+      height: 180px;
+      background-color: utility.$light-pink;
+      border-radius: 10px;
+      margin-top: 40px;
+      padding-top: 40px;
+      &:nth-child(-n + 2) {
+        margin-top: 0;
+      }
+    }
+    & h3 {
+      font-size: 2.4rem;
+      font-weight: utility.$bold;
+      color: utility.$magenta;
+    }
+    & li p {
+      font-size: 1.4rem;
+      line-height: 1.5;
+      margin-top: 36px;
+      &:last-child {
+        margin-top: 26px;
+      }
+    }
+  }
+}

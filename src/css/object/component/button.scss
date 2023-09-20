@@ -1,2 +1,59 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+.c-serch-btn {
+  width: 140px;
+  height: 60px;
+  color: utility.$white;
+  font-size: 18px;
+  font-weight: utility.$bold;
+  border: 1px solid utility.$magenta;
+  border-radius: 40px;
+  background-color: utility.$magenta;
+  transition: 0.3s;
+}
+.c-select-button {
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: utility.$white;
+  padding: 15px;
+  border: 1px solid utility.$magenta;
+  font-size: 18px;
+  appearance: none;
+}
+.c-input-area {
+  text-align: center;
+  width: 300px;
+  height: 60px;
+  background-color: utility.$white;
+  padding: 17px 20px 17px 10px;
+  border: 1px solid utility.$magenta;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-left: 16px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.c-newjob-btn {
+  width: 360px;
+  height: 60px;
+  color: utility.$white;
+  font-size: 18px;
+  font-weight: utility.$bold;
+  border: 1px solid utility.$magenta;
+  border-radius: 40px;
+  background-color: utility.$magenta;
+  transition: 0.3s;
+}
+.c-content-btn {
+  color: utility.$white;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: utility.$bold;
+  border: 1px solid utility.$magenta;
+  background: utility.$magenta;
+  flex-shrink: 0;
+  transition: 0.3s;
+}

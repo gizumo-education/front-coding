@@ -1,0 +1,43 @@
+@use "../../object/utility/utility.scss";
+// お仕事検索フォームに関するスタイル指定
+
+.p-jobsearch {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px;
+  border-radius: 10px;
+  background: #deeef9;
+  & h2 {
+    font-size: 2.5rem; //1rem=10px from base.scss
+    font-weight: 700;
+  }
+  &__text {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  &__formbox {
+    display: flex;
+    margin-top: 26px;
+    align-items: center;
+    &__select {
+      margin-left: 15px;
+      position: relative;
+      &:first-child {
+        margin-left: 0;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 60%;
+        left: 88%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent transparent utility.$magenta;
+      }
+    }
+    &__serch-btn {
+      margin-left: 15px;
+    }
+  }
+}
