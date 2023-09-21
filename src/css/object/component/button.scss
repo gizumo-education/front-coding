@@ -10,6 +10,10 @@
   border-radius: 40px;
   background-color: utility.$magenta;
   transition: 0.3s;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
 }
 .c-select-button {
   width: 200px;
@@ -46,6 +50,10 @@
   border-radius: 40px;
   background-color: utility.$magenta;
   transition: 0.3s;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
 }
 .c-content-btn {
   color: utility.$white;
@@ -54,6 +62,6 @@
   font-weight: utility.$bold;
   border: 1px solid utility.$magenta;
   background: utility.$magenta;
-  flex-shrink: 0;
+  // flex-shrink: 0;
   transition: 0.3s;
 }
