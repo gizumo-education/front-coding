@@ -18,6 +18,12 @@
     height: 240px;
     border-radius: 10px;
     position: relative;
+    &:hover {
+      opacity: .7;
+    }
+    .content-anker {
+      padding: 71px 0 55px 8px;
+    }
     &:nth-child(1) {
       background-image: url(../img/picture/content1.jpg);
       &::before {
@@ -64,7 +70,7 @@
       font-size: 2.4rem;
       font-weight: utility.$bold;
       color: utility.$white;
-      margin-top: 71px;
+      // margin-top: 71px;
       position: relative;//重ね順(親)
     }
     & p {
