@@ -1,0 +1,92 @@
+@use "../../object/utility/utility.scss";
+//お役立ちコンテンツに関するスタイル指定
+
+.p-content {
+  padding: 105px 0 80px;
+  text-align: center;
+  & h2 {
+    font-size: 2.5rem;
+    font-weight: utility.$bold;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  & li {
+    width: 380px;
+    height: 240px;
+    border-radius: 10px;
+    position: relative;
+    &:hover {
+      opacity: .7;
+    }
+    .content-anker {
+      padding: 71px 0 55px 8px;
+    }
+    &:nth-child(1) {
+      background-image: url(../img/picture/content1.jpg);
+      &::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;//重ね順(子)
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+      }
+    }
+    &:nth-child(2) {
+      background-image: url(../img/picture/content2.jpg);
+      &::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;//重ね順(子)
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+      }
+    }
+    &:nth-child(3) {
+      background-image: url(../img/picture/content3.jpg);
+      &::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;//重ね順(子)
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+      }
+    }
+    & h3 {
+      font-size: 2.4rem;
+      font-weight: utility.$bold;
+      color: utility.$white;
+      // margin-top: 71px;
+      position: relative;//重ね順(親)
+    }
+    & p {
+      position: relative;//重ね順(親)
+      margin-top: 45px;
+      font-size: 16px;
+      color: utility.$white;
+      line-height: 23px;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    height: 60px;
+    margin: 80px auto 0;
+  }
+}

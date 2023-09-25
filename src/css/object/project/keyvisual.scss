@@ -1,2 +1,73 @@
-@use '../../object/utility/utility.scss';
+@use "../../object/utility/utility.scss";
 // ページ上部のキービジュアルに関するスタイル
+.keyvisual {
+  // padding-top: 100px;
+  text-align: center;
+  background-color: #98b1be;
+  // width: 1600px;
+  // height: 500px;
+  // top: 100px;
+  &__inner {
+    width: 1260px;
+    margin: 0 auto;
+    position: relative;
+    & h1 {
+      z-index: 100;
+      position: absolute;
+      top: 55%;
+      left: 3%;
+      width: 800px;
+      height: 65px;
+    }
+    &__img {
+      float: left;
+      position: absolute;
+      &:nth-child(2) {
+        top: 21%;
+        left: 55.5%;
+      }
+      &:nth-child(3) {
+        top: 15%;
+        left: 50%;
+      }
+      &:nth-child(4) {
+        top: 15%;
+        left: 75%;
+      }
+      &:nth-child(5) {
+        top: 18%;
+        left: 72%;
+      }
+      &:nth-child(6) {
+        top: 19%;
+        left: 54.5%;
+      }
+      // &:nth-child(7) {
+      //   // width: 800px;
+      //   // height: 65px;
+      //   top: 55%;
+      //   left: 31%;
+      // }
+      &:nth-child(8) {
+        // width: 115px;
+        // height: 12px;
+        top: 43%;
+        left: 64%;
+      }
+      &:nth-child(9) {
+        padding: 10px 45px 15px;
+        border: 2px solid utility.$light-green;
+        border-radius: 10px;
+        font-size: 20px;
+        color: utility.$light-green;
+        background-color: white;
+        top: 76%;
+        left: 48%;
+      }
+      & span {
+        font-size: 40px;
+        font-weight: bold;
+      }
+    }
+  }
+}
