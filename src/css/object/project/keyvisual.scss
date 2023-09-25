@@ -42,7 +42,7 @@
         top: 19%;
         left: 54.5%;
       }
-      // &:nth-child(7) {
+      // &:nth-child(7) { //h1大見出しとして表示し直し
       //   // width: 800px;
       //   // height: 65px;
       //   top: 55%;
@@ -67,6 +67,122 @@
       & span {
         font-size: 40px;
         font-weight: bold;
+      }
+    }
+  }
+}
+@include utility.tab {
+  //mixin.scssからtab詳細を呼び込み
+  .keyvisual {
+    &__inner {
+      width: 100%;
+      position: relative;
+      & h1 {
+        width: 80%;
+        z-index: 100;
+        position: absolute;
+        // top: 55%;
+        // left: 3%;
+      }
+      &__img {
+        &:nth-child(1) {
+          width: 70%;
+          position: absolute;
+          left: 40%;
+        }
+        &:nth-child(2) {
+          width: 18.5%;
+          top: 20%;
+          left: 55%;
+        }
+        &:nth-child(3) {
+          width: 3.5%;
+        }
+        &:nth-child(4) {
+          width: 3.5%;
+        }
+        &:nth-child(6) {
+          width: 20%;
+        }
+        // &:nth-child(7) {
+        //   width: 20%;
+        // }
+        &:nth-child(8) {
+          width: 10%;
+        }
+        &:nth-child(9) {
+          font-size: 0.2rem; ///
+          & span {
+            font-size: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include utility.sp {
+  .keyvisual {
+    padding-top: 0.69rem;
+    height: auto;
+    &__inner {
+      width: 100%;
+      position: relative;
+      & h1 {
+        position: absolute;
+        width: 57%;
+        left: 13%;
+      }
+      &__backimg {
+        margin: 0 auto;
+        width: 4.7rem;
+        height: 2.7rem;
+        object-fit: cover;
+      }
+      &__img {
+        &:nth-child(2) {
+          width: 20%;
+          top: 25%;
+          left: 59%;
+        }
+        &:nth-child(3) {
+          width: 4.5%;
+          top: 20%;
+          left: 54%;
+        }
+        &:nth-child(4) {
+          width: 4.5%;
+          top: 20%;
+          left: 80%;
+        }
+        &:nth-child(5) {
+          top: 22%;
+          left: 78%;
+          width: 0.7%;
+        }
+        &:nth-child(6) {
+          display: none;
+        }
+        // &:nth-child(7) {
+        //   width: 57%;
+        //   left: 42%;
+        // }
+        &:nth-child(8) {
+          top: 43%;
+          left: 66%;
+          width: 10%;
+        }
+        &:nth-child(9) {
+          padding: 2%;
+          top: 70%;
+          left: 50%;
+          font-size: 0.08rem;
+          border-radius: 0.05rem;
+          border: 0.01rem solid;
+          & span {
+            font-size: 0.16rem;
+          }
+        }
       }
     }
   }

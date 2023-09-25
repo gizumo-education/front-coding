@@ -18,13 +18,14 @@
       font-size: 1.4rem;
       & li {
         width: calc(100% / 4); //幅を4分割
-        margin-right: 20px;////child消し
+        margin-right: 20px; ////child消し
         &:last-child {
           margin-right: 0;
         }
+        &:hover {
+          opacity: 0.8;
+        }
       }
-
-
       & img {
         border-radius: 10px;
       }
@@ -54,6 +55,96 @@
       justify-content: center;
       align-items: center;
       margin: 60px auto 0; ////
+    }
+  }
+}
+
+@include utility.tab {
+  .p-newjob {
+    &__inner {
+      padding: 0.64rem 0 0.67rem;
+      width: 90%;
+      & h2 {
+        font-size: 0.276rem;
+      }
+      &__list {
+        margin-top: 0.25rem;
+        font-size: 0.155rem;
+        .newjob__discription {
+          font-size: 0.165rem;
+          line-height: 0.2rem;
+        }
+        & p {
+          margin-top: 0.05rem;
+          &:first-of-type {
+            margin-top: 0.08rem;
+          }
+        }
+      }
+      &__btn {
+        margin: 0.6rem auto 0;
+        font-size: 0.2rem;
+      }
+    }
+  }
+}
+
+@include utility.sp {
+  .p-newjob {
+    &__inner {
+      padding: 0.3rem 0 0.6rem 0;
+      width: 92.5%;
+      & h2 {
+        text-align-last: center;
+        font-size: 0.25rem;
+      }
+      &__list {
+        margin-top: 0.25rem;
+        font-size: 0.14rem;
+
+        & img {
+          width: 100%;
+        }
+        .newjob__discription {
+          width: 95%;
+          // margin-top: 0.25rem;
+          font-size: 0.16rem;
+          line-height: 0.25rem;
+          font-weight: utility.$bold;
+        }
+        & li {
+          margin-right: 0;
+          border-radius: 0.1%;///角丸なんか白い...
+          &:nth-child(1) {
+            width: 100%;
+          }
+          &:nth-child(2) {
+            display: none;
+          }
+          &:nth-child(3) {
+            display: none;
+          }
+          &:nth-child(4) {
+            display: none;
+          }
+        }
+        & p {
+          margin-top: 0.05rem;
+          &:first-of-type {
+            margin-top: 0.08rem;
+          }
+        }
+        & span {
+          width: 0.6rem;
+          margin-right: 0.1rem;
+        }
+      }
+      &__btn {
+        width: 100%;
+        margin-top: 0.38rem;
+        font-size: 0.156rem;
+        height: 0.52rem;
+      }
     }
   }
 }

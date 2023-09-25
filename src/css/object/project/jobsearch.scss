@@ -1,6 +1,5 @@
 @use "../../object/utility/utility.scss";
 // お仕事検索フォームに関するスタイル指定
-
 .p-jobsearch {
   text-align: center;
   margin-top: 60px;
@@ -19,6 +18,9 @@
     display: flex;
     margin-top: 26px;
     align-items: center;
+    &__wrapp {
+      display: flex;
+    }
     &__select {
       margin-left: 15px;
       position: relative;
@@ -38,6 +40,78 @@
     }
     &__serch-btn {
       margin-left: 15px;
+    }
+  }
+}
+@include utility.tab {
+  .p-jobsearch {
+    text-align: center;
+    margin-top: 6%;
+    padding: 0.4rem;
+    border-radius: 0.1rem;
+    & h2 {
+      font-size: 0.25rem;
+    }
+    &__text {
+      margin-top: 0.2rem;
+      font-size: 0.2rem;
+    }
+    &__formbox {
+      &__wrapp {
+        display: flex;
+      }
+      &__select {
+        margin-left: 0.16rem;
+        &::after {
+          border-width: 0.1rem;
+        }
+      }
+      &__serch-btn {
+        margin-left: 0.15rem;
+        & img {
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+@include utility.sp {
+  .p-jobsearch {
+    text-align: center;
+    margin-top: 6%;
+    padding: 0.15rem;
+    border-radius: 0.1rem;
+    & h2 {
+      font-size: 0.189rem;
+    }
+    &__text {
+      margin-top: 0.16rem;
+      font-size: 0.12rem;
+    }
+    &__formbox {
+      flex-wrap: wrap;
+      margin-top: 0.13rem;
+      &__wrapp {
+        display: flex;
+      }
+      &__select {
+        margin-left: 0.1rem;
+        &::after {
+          border-width: 0.06rem;
+        }
+      }
+      &__serch-btn {
+        // margin-left: 0.15rem;
+        margin: 0 auto;
+        position: relative;
+        & img {
+          width: 11%;
+          margin-left: 0;
+          position: absolute;
+          top: 24.5%;
+          left: 8.5%;
+        }
+      }
     }
   }
 }
