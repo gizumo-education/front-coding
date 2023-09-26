@@ -115,6 +115,9 @@
           content: none;
         }
         //////////
+        & p img {
+          height: 1.0rem;
+        }
       }
       &__step {
         position: absolute;
@@ -185,6 +188,9 @@
           top: 110.5%;
           left: 50%;
           transform: translate(-50%, -50%) rotate(90deg);
+        }
+        &:last-child {
+          margin-bottom: 0;
         }
         &:last-child::after {
           content: none;

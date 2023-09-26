@@ -75,7 +75,7 @@
       margin-left: .25rem;
       font-size: .14rem;
     }
-  }
+  
   &__button {
     margin-left: 15px;
     @include utility.tab {
@@ -115,6 +115,7 @@
       }
     }
   }
+}
   &__sp-items {
     display: flex;
     justify-content: flex-end;
@@ -218,6 +219,7 @@
       margin-top: 0.3rem;
     }
     &__nav-content a:hover {
+      z-index: 900;
       opacity: 0.6;
     }
   }

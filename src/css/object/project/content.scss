@@ -146,7 +146,7 @@
 
   @include utility.sp {
     .p-content {
-      padding: 0.63rem 0 0.4rem 0;
+      padding: 0.6rem 0 0.4rem 0;
       
       &__list {
         flex-wrap: wrap;
@@ -160,13 +160,16 @@
           // padding: 0.71rem 0 0.55rem 0.08rem;
         }
         &:nth-child(1) {
-          background-size: contain;
+          background-size: cover;
+          background-repeat: no-repeat;
         }
         &:nth-child(2) {
-          background-size: contain;
+          background-size: cover;
+          background-repeat: no-repeat;
         }
         &:nth-child(3) {
-          background-size: contain;
+          background-size: cover;
+          background-repeat: no-repeat;
           margin-bottom: 0;
         }
         & h3 {
