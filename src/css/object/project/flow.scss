@@ -175,7 +175,7 @@
         width: 73%;
       }
       & li {
-        width: 100%;
+        width: 76%;
         // height: 0;
         padding: 0.1rem;
         margin-bottom: 0.4rem;
@@ -229,6 +229,7 @@
       &__text {
         font-size: 0.14rem;
         margin: 0 0.1rem 0.22rem;
+        text-align: left;
         &:nth-last-child(1) {
           margin-top: 0.18rem;
         }

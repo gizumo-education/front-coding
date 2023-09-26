@@ -11,10 +11,17 @@
       font-size: .16rem;
     }
     @include utility.sp {
-      padding: .38rem 0 .40rem;
+      padding: 0.38rem 0.4rem 0.4rem;
       font-size: .16rem;
       margin-top: 1.0rem;
     }
+    // is-flex {
+    //   @include utility.sp {
+        
+    //       width: 90%;
+        
+    //   }
+    // }
   }
   &__link-area {
     width: 320px;
