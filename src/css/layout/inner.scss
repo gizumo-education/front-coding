@@ -13,9 +13,9 @@
   &.is-flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
     @include utility.sp {
-      flex-direction: column;
+      flex-direction: column;//主軸の方向=縦
     }
   }
 }
