@@ -116,33 +116,34 @@
 }
 
 .o-utility__step__flame__flex,
-.o-utility__flex__flow {
+.u-box__content--flex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.o-utility {
-  &__flow {
-    &__message {
-      margin-top: 18px;
-      padding: 0 18px;
-    }
-
-    &__text {
-      margin-top: 20px;
-    }
+.u-content {
+  &--message {
+    margin-top: 18px;
+    padding: 0 18px;
   }
 
-  &__border__text {
-    padding: 58px 0 40.87px 0;
+  &--text {
+    margin-top: 20px;
+  }
 
-    &__second {
+  &__border {
+    &--second {
       margin-top: 31px;
       padding: 0 18px;
     }
+
+    &--text {
+      padding: 58px 0 40.87px 0;
+    }
   }
 }
+
 
 //転職お役立ちコンテンツ//
 .o-utility__contents {

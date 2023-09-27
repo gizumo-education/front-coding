@@ -204,36 +204,19 @@
 }
 
 //転職までの流れ//
-.l-inner__flow {
-  padding: 105px 211.13px 51.13px 211.13px;
-
-  &__image {
-    width: 102.292px;
-    height: 99.996px;
-    flex-shrink: 0;
-  }
-
-  &__border {
-    display: flex;
-    width: 277.732px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
-    &__large {
-      position: relative;
-      border: 2.23px solid variables.$pink;
-      width: 277.732px;
-      height: 357.732px;
-      flex-shrink: 0;
-      border-radius: 10px;
-      padding: 40px 0;
-    }
-  }
+.l-inner__content--description {
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: variables.$regular;
+  line-height: normal;
 }
 
-.l-inner__step__flame {
-  border-radius: 30px;
+.l-inner__content {
+  padding: 105px 211.13px 51.13px 211.13px;
+
+  &--flame {
+    border-radius: 30px;
   background-color: variables.$pink;
   width: 60px;
   height: 60px;
@@ -242,8 +225,9 @@
   right: 208.87px;
   bottom: 208.87px;
   left: 8.87px;
-
-  &__test {
+  }
+  
+  &--test {
     color: variables.$white;
     text-align: center;
     font-family: Inter;
@@ -251,7 +235,39 @@
     font-weight: variables.$bold;
     line-height: normal;
   }
+
+  &--img {
+    width: 102.292px;
+    height: 99.996px;
+    flex-shrink: 0;
+  }
+
+  &--title {
+    margin: 20px 30px 0 30px;
+  }
+
+  &--title2 {
+    margin: 33px 30px 0 30px;
+  }
+
+  &--item {
+    display: flex;
+    width: 277.732px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &--border {
+    position: relative;
+    border: 2.23px solid variables.$pink;
+    width: 277.732px;
+    height: 357.732px;
+    flex-shrink: 0;
+    border-radius: 10px;
+  }
 }
+
 
 .l-triangle1 {
   width: 0;
