@@ -1,18 +1,26 @@
-@use '../object/utility/utility.scss';
+@use "../object/utility/utility.scss";
 // footerのスタイルを記述するファイル
 .l-footer {
   &__area {
     padding: 55px 0 25px;
     font-size: 16px;
     background-color: utility.$bgLightBlue;
-    margin-top: 200px;/////
+    margin-top: 200px; /////
     @include utility.tab {
-      padding: .55rem 0 .25rem;
-      font-size: .16rem;
+      padding: 0.55rem 0 0.25rem;
+      font-size: 0.16rem;
     }
     @include utility.sp {
-      padding: .38rem 0 .40rem;
-      font-size: .16rem;
+      width: 4rem;
+      padding: 0.38rem 0.38rem 0.38rem;
+      font-size: 0.16rem;
+      margin-top: 1rem;
+    }
+    is-flex {
+      @include utility.sp {
+        width: 90%;
+        
+      }
     }
   }
   &__link-area {
@@ -23,26 +31,26 @@
       width: 3.2rem;
     }
     @include utility.sp {
-      width: 100%;
+      width: 3.22rem; //////
     }
   }
   &__link {
     width: 50%;
     line-height: 36px;
     @include utility.tab {
-      line-height: .36rem;
+      line-height: 0.36rem;
     }
     @include utility.sp {
-      line-height: .36rem;
+      line-height: 0.36rem;
     }
     &:first-child {
       width: 100%;
       margin-bottom: 27px;
       @include utility.tab {
-        margin-bottom: .27rem;
+        margin-bottom: 0.27rem;
       }
       @include utility.sp {
-        margin-bottom: .27rem;
+        margin-bottom: 0.27rem;
       }
     }
   }
@@ -52,17 +60,17 @@
       width: 3.22rem;
     }
     @include utility.sp {
-      width: 100%;
+      width: 3.22rem; //////
       margin-top: 0.22rem;
     }
   }
   &__banner {
     margin-top: 15px;
     @include utility.tab {
-      margin-top: .15rem;
+      margin-top: 0.15rem;
     }
     @include utility.sp {
-      margin-top: .15rem;
+      margin-top: 0.15rem;
     }
     &:first-child {
       margin-top: 0;
@@ -73,7 +81,7 @@
       }
       img {
         @include utility.sp {
-          width: 100%;
+          width: 3.22rem;
         }
       }
     }
@@ -84,12 +92,12 @@
     font-size: 14px;
     background-color: utility.$bgGray;
     @include utility.tab {
-      padding: .1rem 0;
-      font-size: .14rem;
+      padding: 0.1rem 0;
+      font-size: 0.14rem;
     }
     @include utility.sp {
-      padding: .1rem 0;
-      font-size: .14rem;
+      padding: 0.1rem 0;
+      font-size: 0.14rem;
     }
   }
 }

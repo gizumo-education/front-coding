@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>基本コーディング</title>
-    <link rel="stylesheet" href="./css/foundation/_base.scss" />
+    <!-- <link rel="stylesheet" href="./css/foundation/_base.scss" /> -->
   </head>
   <body>
     <header class="l-header">
@@ -22,22 +22,41 @@
               <a class="is-book" href="">ギズジョブ医療事務コラム</a>
             </li>
           </ul>
+        </nav>
           <ul class="l-header__buttons">
-            <li class="l-header__button is-heart">
+            <li class="l-header__buttons__button is-heart">
               <a href="">気になるリスト</a>
             </li>
-            <li class="l-header__button is-clock"><a href="">閲覧履歴</a></li>
-            <li class="l-header__button is-camera"><a href="">検索履歴</a></li>
+            <li class="l-header__buttons__button is-clock"><a href="">閲覧履歴</a></li>
+            <li class="l-header__buttons__button is-camera"><a href="">検索履歴</a></li>
           </ul>
         </div>
+
         <div class="l-header__sp-items">
-          <button class="l-header__hamburger">
+          <button class="l-header__hamburger" btype="button">
             <span></span>
             <span></span>
             <span></span>
           </button>
         </div>
-      </nav>
+        <div class="l-header__nav-content">
+          <nav class="l-header__custom-nav">
+            <ul class="l-header__menu-list">
+              <li class="l-header__menu-item"><a href="#top">トップ</a></li>
+              <li class="l-header__menu-item"><a href="#news">新着求人</a></li>
+              <li class="l-header__menu-item">
+                <a href="#characteristic">４つの特徴</a>
+              </li>
+              <li class="l-header__menu-item">
+                <a href="#flow">転職までの流れ</a>
+              </li>
+              <li class="l-header__menu-item">
+                <a href="#content">転職お役立ちコンテンツ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      
     </header>
 
     <main class="l-main">
@@ -97,48 +116,51 @@
           働きたい職場・地域・希望給与を入れて検索！
         </p>
         <form action="#" class="p-jobsearch__formbox">
-          <div class="p-jobsearch__formbox__select">
-            <select name="business" class="c-select-button">
-              <option value="" selected>医療事務</option>
-              <option value="">調剤事務</option>
-              <option value="">診療情報管理士</option>
-              <option value="">歯科助手</option>
-              <option value="">歯科事務</option>
-              <option value="">看護補助・看護助手</option>
-              <option value="">病院内SE</option>
-            </select>
+          <div class="p-jobsearch__formbox__wrapp">
+            <div class="p-jobsearch__formbox__select">
+              <select name="business" class="c-select-button">
+                <option value="" selected>医療事務</option>
+                <option value="">調剤事務</option>
+                <option value="">診療情報管理士</option>
+                <option value="">歯科助手</option>
+                <option value="">歯科事務</option>
+                <option value="">看護補助・看護助手</option>
+                <option value="">病院内SE</option>
+              </select>
+            </div>
+            <div class="p-jobsearch__formbox__select">
+              <select name="place" class="c-select-button">
+                <option value="">茨城県</option>
+                <option value="">神奈川県</option>
+                <option value="">群馬県</option>
+                <option value="">埼玉県</option>
+                <option value="">千葉県</option>
+                <option value="" selected>東京都</option>
+                <option value="">栃木県</option>
+              </select>
+            </div>
+            <div class="p-jobsearch__formbox__select">
+              <select name="salary" class="c-select-button">
+                <option value="">月給17万〜</option>
+                <option value="">月給18万〜</option>
+                <option value="">月給19万〜</option>
+                <option value="" selected>月給20万〜</option>
+                <option value="">月給21万〜</option>
+                <option value="">月給22万〜</option>
+                <option value="">月給23万〜</option>
+              </select>
+            </div>
           </div>
-          <div class="p-jobsearch__formbox__select">
-            <select name="place" class="c-select-button">
-              <option value="">茨城県</option>
-              <option value="">神奈川県</option>
-              <option value="">群馬県</option>
-              <option value="">埼玉県</option>
-              <option value="">千葉県</option>
-              <option value="" selected>東京都</option>
-              <option value="">栃木県</option>
-            </select>
-          </div>
-          <div class="p-jobsearch__formbox__select">
-            <select name="salary" class="c-select-button">
-              <option value="">月給17万〜</option>
-              <option value="">月給18万〜</option>
-              <option value="">月給19万〜</option>
-              <option value="" selected>月給20万〜</option>
-              <option value="">月給21万〜</option>
-              <option value="">月給22万〜</option>
-              <option value="">月給23万〜</option>
-            </select>
-          </div>
-          <input
-            type="text"
-            class="p-jobsearch__formbox__input c-input-area"
-            placeholder="キーワード・企業名・スキルなど"
-          />
-          <button class="p-jobsearch__formbox__serch-btn c-serch-btn">
-            <img src="img/icon/icon-search_white.png" alt="検索マーク" />
-            検索する
-          </button>
+            <input
+              type="text"
+              class="p-jobsearch__formbox__input c-input-area"
+              placeholder="キーワード・企業名・スキルなど"
+            />
+            <button class="p-jobsearch__formbox__serch-btn c-serch-btn">
+              <img src="img/icon/icon-search_white.png" alt="検索マーク" />
+              検索する
+            </button>
+          
         </form>
       </section>
       <section class="p-newjob" id="newjob">
@@ -148,7 +170,7 @@
             <li>
               <a href="">
                 <div>
-                  <img src="img/picture/newjob1.jpg" alt="" />
+                  <img src="img/picture/newjob1.png" alt="" />
                   <p class="newjob__discription">
                     平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
                   </p>
@@ -161,7 +183,7 @@
             <li>
               <a href="">
                 <div>
-                  <img src="img/picture/newjob2.jpg" alt="" />
+                  <img src="img/picture/newjob2.png" alt="" />
                   <p class="newjob__discription">
                     平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
                   </p>
@@ -174,7 +196,7 @@
             <li>
               <a href="">
                 <div>
-                  <img src="img/picture/newjob3.jpg" alt="" />
+                  <img src="img/picture/newjob3.png" alt="" />
                   <p class="newjob__discription">
                     平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
                   </p>
@@ -187,7 +209,7 @@
             <li>
               <a href="">
                 <div>
-                  <img src="img/picture/newjob4.jpg" alt="" />
+                  <img src="img/picture/newjob4.png" alt="" />
                   <p class="newjob__discription">
                     平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
                   </p>
@@ -214,27 +236,27 @@
           <li>
             <h3>WEB上で応募完結</h3>
             <p>
-              エントリーシートの記入を済ませれば、あとは気になる企業に応募して<br />待つだけで面接アポまで完結！
+              エントリーシートの記入を済ませれば、<br class="is-sp">あとは気になる企業に応募して待つだけで面接アポまで完結！
             </p>
           </li>
           <li>
             <h3>安心・安全</h3>
             <p>
-              掲載案件は基本的に当社グループ企業となるため、<br />
-              皆さまにより詳細にクリーンな職場情報をお届けいたします。
+              掲載案件は基本的に当社グループ企業となるため、
+              <br class="is-sp">皆さまにより詳細にクリーンな職場情報をお届けいたします。
             </p>
           </li>
           <li>
             <h3>わかりやすい</h3>
             <p>
-              当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br />といったご自身にピッタリマッチした求人を見つけることができる！
+              当求人サイトは医療事務に特化しておりさらに<br class="is-sp">こだわり検索や地域から検索といったご自身に<br class="is-sp">ピッタリマッチした求人を見つけることができる！
             </p>
           </li>
           <li>
             <h3>完全無料</h3>
             <p>
-              当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br />運営されています。ですので求職者の方からは応募前はもちろん、
-              <br />内定後も費用は一切いただきません。
+              当サイトは求人元の企業やグループ会社からのスポンサー費用に<br class="is-sp">よって運営されています。ですので求職者の方からは<br class="is-sp">応募前はもちろん、
+              内定後も費用は一切いただきません。
             </p>
           </li>
         </ul>

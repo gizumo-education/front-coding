@@ -24,3 +24,24 @@
     position: relative;
   }
 }
+
+@include utility.tab {
+  .p-about {
+    padding: 1.04rem 0;
+    &__inner {
+      font-size: 0.25rem;
+    }
+  }
+}
+@include utility.sp {
+  .p-about {
+    background-size: cover;//画像全体が収まる
+    background-repeat: no-repeat;
+    padding: 0.16rem 0;
+    &__inner {
+      font-size: 0.14rem;
+      font-weight: utility.$regular;
+      line-height: 0.2rem;
+    }
+  }
+}

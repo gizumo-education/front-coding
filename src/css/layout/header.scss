@@ -1,4 +1,5 @@
 @use '../object/utility/utility.scss';
+@use '../foundation/variables' as var;
 // headerのスタイルを記述するファイル
 
 .l-header {
@@ -8,11 +9,18 @@
   z-index: 100;///
   padding: 25px 100px 25px 0;
   background-color: utility.$white;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  &__custom-nav {
+    display: none;
+  }
+  
   @include utility.tab {
     padding: .25rem .5rem .25rem 0;
   }
   @include utility.sp {
-    padding: .16rem .15rem;
+    padding: .16rem 0 .15rem;
   }
   &__pc-items {
     display: flex;
@@ -67,7 +75,7 @@
       margin-left: .25rem;
       font-size: .14rem;
     }
-  }
+  
   &__button {
     margin-left: 15px;
     @include utility.tab {
@@ -107,6 +115,7 @@
       }
     }
   }
+}
   &__sp-items {
     display: flex;
     justify-content: flex-end;
@@ -118,8 +127,8 @@
     }
   }
   &__hamburger {
-    width: .5rem;
-    height: .38rem;
+    width: 0.5rem;
+    height: 0.38rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -133,6 +142,118 @@
       height: .06rem;
       background-color: utility.$black;
       border-radius: .03rem;
+    }
+  }
+}
+
+@include utility.sp {
+  .l-header {
+    padding: 4%;
+    width: 4rem;
+    &__nav {
+      display: none;
+    }
+    &__buttons {
+      display: none;
+    }
+    &__hamburger {
+      position: relative;
+      width: 0.5rem;
+      height: 0.38rem;
+      padding: 0.1rem;
+      cursor: pointer;
+      & span {
+        width: 100%;
+        height: 0.06rem;
+        border-radius: 0.1rem;
+        left: 0;
+        display: block;
+        background: #000;
+        position: absolute;
+        transition: transform 0.6s ease-in-out, top 0.5s ease, bottom 0.5s ease;
+        &:nth-of-type(1) {
+          top: 0;
+        }
+        &:nth-of-type(2) {
+          top: 50%;
+          transform: translatey(-50%);
+        }
+        &:nth-of-type(3) {
+          bottom: 0;
+        }
+      }
+    }
+    &__nav-content {
+      z-index: 900;
+      overflow: auto;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      color: #fff;
+      position: fixed;
+      display: none;
+      font-weight: utility.$bold;
+      font-size: 0.22rem;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      margin-top: 0.7rem;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+      &__custom-nav {
+        &__menu-list {
+          text-align: left;
+          margin-top: 0.3rem;
+        }
+      }
+    }
+    &__nav-content a {
+      display: block;
+      color: utility.$white;
+      text-decoration: none;
+      padding: 0.2rem 0;
+      transition: opacity 0.6s ease;
+      pointer-events: none;
+      padding-left: 0.6rem;
+    }
+    &__menu-list {
+      text-align: left;
+      margin-top: 0.3rem;
+    }
+    &__nav-content a:hover {
+      z-index: 900;
+      opacity: 0.6;
+    }
+  }
+  .is-open .l-header__hamburger > span {
+    background: utility.$black;
+
+    &:nth-child(1) {
+      top: 50%;
+      transform: rotate(45deg) translateY(-50%);
+    }
+
+    &:nth-child(2) {
+      width: 0;
+    }
+
+    &:nth-child(3) {
+      top: 50%;
+      left: 6%;
+      transform: rotate(-45deg) translateY(-50%);
+    }
+  }
+  .is-open {
+    overflow: hidden;
+
+    .l-header__nav-content {
+      z-index: 999;
+      visibility: visible;
+      opacity: 0.7;
+      display: none;
+
+      a {
+        pointer-events: auto;
+      }
     }
   }
 }
