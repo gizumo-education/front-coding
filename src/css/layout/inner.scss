@@ -16,6 +16,7 @@
     // align-items: center;
     @include utility.sp {
       flex-direction: column;//主軸の方向=縦
+      width: 3.22rem;
     }
   }
 }

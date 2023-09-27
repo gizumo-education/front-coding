@@ -19,6 +19,7 @@
     is-flex {
       @include utility.sp {
         width: 90%;
+        
       }
     }
   }
@@ -80,7 +81,7 @@
       }
       img {
         @include utility.sp {
-          width: 100%;
+          width: 3.22rem;
         }
       }
     }
