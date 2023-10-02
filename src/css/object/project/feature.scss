@@ -17,7 +17,6 @@
   }
   &__item {
     width: 570px;
-    height: 180px;
     background-color: utility.$featurePink;
     margin-top: 40px;
     border-radius: 10px;
@@ -35,11 +34,14 @@
       font-size: 24px;
       color: utility.$pink;
       font-weight: utility.$bold;
+      margin-top: 40px;
     }
     &__content {
       font-size: 14px;
       line-height: 20.27px;
       margin-top: 36px;
+      height: 60px;
+      margin-bottom: 30px;
     }
   }
 }

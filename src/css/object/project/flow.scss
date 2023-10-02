@@ -2,7 +2,6 @@
 
 .p-flow {
   &__area {
-    height: 435px;
     margin-top: 105px;
   }
   &__title {
@@ -15,7 +14,6 @@
   }
   &__contents {
     width: 280px;
-    height: 360px;
     border: 2.27px solid utility.$pink;
     border-radius: 10px;
     &__flex {
@@ -53,10 +51,11 @@
       align-items: center;
     }
     &__content {
-      padding-top: 18px;
+      margin-top: 18px;
       font-size: 14px;
       width: 237px;
       line-height: 20.27px;
+      margin-bottom: 42px;
     }
   }
   &__triangle {

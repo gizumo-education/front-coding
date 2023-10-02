@@ -3,7 +3,6 @@
 .p-form {
  &__area {
     margin: 60px auto;
-    height: 240px;
     background-color: utility.$formLightblue;
     text-align: center;
   }
@@ -20,6 +19,7 @@
     display: flex;
     margin-top: 26px;
     justify-content: center;
+    padding-bottom: 40px;
     &__area {
       position: relative;
       &::before {
