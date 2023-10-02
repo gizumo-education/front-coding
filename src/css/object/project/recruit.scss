@@ -1,0 +1,53 @@
+@use '../../object/utility/utility.scss';
+// 新着求人に関するスタイル
+
+.p-recruit {
+  background-color: utility.$bgLightBlue;
+  padding-bottom: 67px;
+  &__wrapper {
+    h2 {
+      padding-top: 64px;
+      font: {
+        size: 25px;
+        weight: utility.$regular;
+      }
+    }
+  }
+  &__contents {
+    margin-top: 40px;
+  }
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list {
+    width: 280px;
+    font: {
+      size: 16px;
+      weight: utility.$regular;
+    }
+    &__itemname {
+      margin-top: 10px;
+      line-height: 22px;
+    }
+    &__itemtext {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+    }
+    &__kinds {
+      width: 60px;
+      height: 21px;
+      text-align: center;
+      line-height: 20px;
+      background-color: utility.$list_kindsColor;
+    }
+    &__salary {
+      margin-left: 10px;
+    }
+  }
+  &__more {
+    margin-top: 60px;
+  }
+}

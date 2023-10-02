@@ -1,0 +1,74 @@
+@use '../../object/utility/utility.scss';
+// お仕事検索に関するスタイル
+
+.p-jobSearch02 {
+  margin-top: 150px;
+  height: 240px;
+  background-color: utility.$job_bgLightBlue;
+  text-align: center;
+  h2 {
+    padding-top: utility.$job_padding-top;
+    font: {
+      size: 25px;
+      weight: utility.$bold;
+    }
+  }
+  p {
+    padding-top: utility.$job_padding-top;
+    font: {
+      size: 20px;
+      weight: utility.$regular;
+    }
+  }
+  &__select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: utility.$job_padding-top;
+    &__box {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      &::after{
+        position: absolute;
+        right: 15px;
+        width: 20px;
+        height: 10px;
+        background-color: utility.$job_slColor;
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+        content: '';
+        pointer-events: none;
+      }
+      select {
+        appearance: none;
+        width: 199px;
+        height: 59px;
+        margin-left: 15px;
+        padding: 10px;
+        border: 1px solid utility.$job_slColor;
+        border-radius: utility.$bdRadius;
+        background-color: utility.$white;
+        font: {
+          size: 18px;
+          weight: utility.$regular;
+        }
+        cursor: pointer;
+      }
+    }
+    &__keyword {
+      .input-area {
+        width: 300px;
+        height: 60px;
+        margin-left: 10px;
+        padding-left: 10px;
+        border: 1px solid utility.$job_slColor;
+        border-radius: utility.$bdRadius;
+        background-color: utility.$white;
+        font: {
+          size: 18px;
+          weight: utility.$regular;
+        }
+      }
+    }
+  }
+}
