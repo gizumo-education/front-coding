@@ -7,13 +7,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
   }
   &__list {
     width: 380px;
-    height: 240px;
+    padding: 71px 0 55px 0;
     border-radius: utility.$bdRadius;
     text-align: center;
-    margin-top: 50px;
     color: utility.$white;
     background: {
       size: cover;
@@ -22,7 +22,6 @@
       image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/picture/useful01.jpg);
     }
     &__title {
-      margin-top: 71px;
       color: utility.$white;
       font: {
         size: 24px;

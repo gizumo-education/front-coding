@@ -3,22 +3,21 @@
 // お仕事検索に関するスタイル
 .p-jobSearch {
   border-radius: utility.$bdRadius;
-  height: 240px;
   background-color: utility.$job_bgLightBlue;
   text-align: center;
+  padding: 40px 0;
   margin: {
     top: 50px;
     bottom: 50px;
   }
   h2 {
-    padding-top: utility.$job_padding-top;
     font: {
       size: 25px;
       weight: utility.$bold;
     }
   }
   p {
-    padding-top: utility.$job_padding-top;
+    margin-top: utility.$job_margin-top;
     font: {
       size: 20px;
       weight: utility.$regular;
@@ -28,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: utility.$job_padding-top;
+    margin-top: utility.$job_margin-top;
     &__box {
       display: inline-flex;
       align-items: center;

@@ -4,10 +4,6 @@
   padding: 104px 0;
   text-align: center;
   color: utility.$white;
-  font: {
-    size: 25px;
-    weight: utility.$bold;
-  }
   background: {
     size: cover;
     repeat: no-repeat;
@@ -15,9 +11,10 @@
     image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/picture/heading.jpg);
   }
   &__detail {
-    margin-top: 21px;
-  }
-  :first-of-type {
-    margin-top: 0;
+    font: {
+      size: 25px;
+      weight: utility.$bold;
+    }
+    line-height: 42px;
   }
 }
