@@ -1,0 +1,45 @@
+@use '../../object/utility/utility.scss';
+
+.p-feature {
+  &__area {
+    height: 478px;
+    margin-top: 106px;
+  }
+  &__title {
+    @include utility.title;
+  }
+  &__item__area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 53px;
+  }
+  &__item {
+    width: 570px;
+    height: 180px;
+    background-color: utility.$featurePink;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:nth-child(odd) {
+      margin-right: 40px;
+    }
+    &:nth-child(-n+2) {
+      margin-top: 0;
+    }
+    &__title {
+      font-size: 24px;
+      color: utility.$pink;
+      font-weight: utility.$bold;
+    }
+    &__content {
+      font-size: 14px;
+      line-height: 20.27px;
+      margin-top: 36px;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@use '../../object/utility/utility.scss';
+
+.p-flow {
+  &__area {
+    height: 435px;
+    margin-top: 105px;
+  }
+  &__title {
+    @include utility.title;
+  }
+  &__contents__area {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+  &__contents {
+    width: 280px;
+    height: 360px;
+    border: 2.27px solid utility.$pink;
+    border-radius: 10px;
+    &__flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: -10px;
+      &>img {
+        height: 100px;
+      }
+    }
+    &__label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: utility.$pink;
+      color: utility.$white;
+      font-weight: utility.$bold;
+      font-size: 16px;
+      margin: 10px 0 0 10px;
+    }
+    &__title {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: utility.$bold;
+      text-align: center;
+      line-height: 30px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+    }
+    &__content {
+      padding-top: 18px;
+      font-size: 14px;
+      width: 237px;
+      line-height: 20.27px;
+    }
+  }
+  &__triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid utility.$pink;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+}

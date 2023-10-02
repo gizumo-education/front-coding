@@ -1,0 +1,51 @@
+@use '../../object/utility/utility.scss';
+
+.p-newRecruit {
+  &__area {
+    background-color: utility.$bgLightBlue;
+    padding: 60px 0 67px;
+  }
+  &__title{
+    font-size: 25px;
+  }
+  &__contents-area {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+  }
+  &__contents {
+    width: 280px;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &>img {
+      height: 200px;
+      border-radius: 10px;
+    }
+    &>p {
+      margin-top: 8.08px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    &__items {
+      display: flex;
+      align-items: center;
+      font-size:  14px;
+      margin-top: 6.92px;
+      &__title {
+        display: inline-block;
+        width: 60px;
+        height: 21px;
+        line-height: 21px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: utility.$lightPink;
+        margin-right: 10px;
+      }
+    }
+  }
+  &__btn {
+    margin-top: 59px;
+  }
+}

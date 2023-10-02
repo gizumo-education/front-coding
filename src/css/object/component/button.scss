@@ -1,2 +1,36 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-search {
+  width: 140px;
+  height: 60px;
+  background-color: utility.$pink;
+  color: utility.$white;
+  font-weight: utility.$bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 100px;
+
+  &::before {
+    content: '';
+    width: 29.98px;
+    height: 29.98px;
+    display: inline-block;
+    background: url(../img/icon/icon-search-white.png) no-repeat;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+}
+
+.c-more {
+  display: block;
+  width: 360px;
+  height: 60px;
+  background-color: utility.$pink;
+  color: utility.$white;
+  font-weight: utility.$bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 100px;
+  margin: 0 auto;
+}
