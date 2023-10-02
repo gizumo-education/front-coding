@@ -27,6 +27,9 @@
       size: 16px;
       weight: utility.$regular;
     }
+    img {
+      border-radius: utility.$bdRadius;
+    }
     &__itemname {
       margin-top: 10px;
       line-height: 22px;

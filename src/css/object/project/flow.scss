@@ -18,7 +18,7 @@
     width: 280px;
     height: 360px;
     border: solid 2.5px utility.$darkPink;
-    border-radius: 10px;
+    border-radius: utility.$bdRadius;
     &__test {
       height: 240px;
       display: flex;

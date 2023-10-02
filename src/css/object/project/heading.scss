@@ -1,8 +1,7 @@
 @use '../../object/utility/utility.scss';
 
 .p-heading {
-  height: 300px;
-  padding-top: 104px;
+  padding: 104px 0;
   text-align: center;
   color: utility.$white;
   font: {

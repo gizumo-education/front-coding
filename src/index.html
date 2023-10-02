@@ -52,7 +52,7 @@
     <section class="p-jobSearch l-inner">
       <h2>お仕事検索</h2>
       <p>働きたい職種・地域・希望給与を入れて検索！</p>
-      <div class="p-jobSearch__select">
+      <form class="p-jobSearch__select">
         <label class="p-jobSearch__select__box">
           <select>
               <option selected>医療事務</option>
@@ -89,77 +89,85 @@
         <div class="p-jobSearch__select__keyword">
           <input type="search" placeholder="キーワード・企業名・スキルなど" name="keyword" class="input-area" required>
         </div>
-        <div class="c-search_button"><a href="">検索する</a></div>
-      </div>
+        <div class="c-search_button"><button>検索する</button></div>
+      </form>
     </section>
     <section class="p-recruit">
       <div class="p-recruit__wrapper l-inner">
         <h2>新着求人</h2>
         <div class="p-recruit__contents">
           <ul class="p-recruit__lists">
-            <li class="p-recruit__list">
-              <p class="p-recruit__list__img"><img src="./img/picture/recruit01.jpg" alt=""></p>
-              <p class="p-recruit__list__itemname">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-              <div class="p-recruit__list__itemtext">
-                <p class="p-recruit__list__kinds">給与</p>
-                <p class="p-recruit__list__salary">月給 148,000〜</p>
-              </div>
-              <div class="p-recruit__list__itemtext">
-                <p class="p-recruit__list__kinds">所在地</p>
-                <p class="p-recruit__list__salary">三重県伊勢市</p>
-              </div>
-              <div class="p-recruit__list__itemtext">
-                <p class="p-recruit__list__kinds">最寄駅</p>
-                <p class="p-recruit__list__salary">伊勢市駅 徒歩15分</p>
-              </div>
+            <li>
+              <a class="p-recruit__list" href="">
+                <p class="p-recruit__list__img"><img src="./img/picture/recruit01.jpg" alt=""></p>
+                <p class="p-recruit__list__itemname">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+                <div class="p-recruit__list__itemtext">
+                  <p class="p-recruit__list__kinds">給与</p>
+                  <p class="p-recruit__list__salary">月給 148,000〜</p>
+                </div>
+                <div class="p-recruit__list__itemtext">
+                  <p class="p-recruit__list__kinds">所在地</p>
+                  <p class="p-recruit__list__salary">三重県伊勢市</p>
+                </div>
+                <div class="p-recruit__list__itemtext">
+                  <p class="p-recruit__list__kinds">最寄駅</p>
+                  <p class="p-recruit__list__salary">伊勢市駅 徒歩15分</p>
+                </div>
+              </a>
             </li>
-            <li class="p-recruit__list">
-              <p class="p-recruit__list__img"><img src="./img/picture/recruit02.jpg" alt=""></p>
-              <p class="p-recruit__list__itemname">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-              <div class="p-recruit__list__itemtext">
-                <p class="p-recruit__list__kinds">給与</p>
-                <p class="p-recruit__list__salary">月給 148,000〜</p>
-              </div>
-              <div class="p-recruit__list__itemtext">
-                <p class="p-recruit__list__kinds">所在地</p>
-                <p class="p-recruit__list__salary">三重県伊勢市</p>
-              </div>
-              <div class="p-recruit__list__itemtext">
-                <p class="p-recruit__list__kinds">最寄駅</p>
-                <p class="p-recruit__list__salary">伊勢市駅 徒歩15分</p>
-              </div>
+            <li>
+              <a class="p-recruit__list" href="">
+                <p class="p-recruit__list__img"><img src="./img/picture/recruit02.jpg" alt=""></p>
+                <p class="p-recruit__list__itemname">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+                <div class="p-recruit__list__itemtext">
+                  <p class="p-recruit__list__kinds">給与</p>
+                  <p class="p-recruit__list__salary">月給 148,000〜</p>
+                </div>
+                <div class="p-recruit__list__itemtext">
+                  <p class="p-recruit__list__kinds">所在地</p>
+                  <p class="p-recruit__list__salary">三重県伊勢市</p>
+                </div>
+                <div class="p-recruit__list__itemtext">
+                  <p class="p-recruit__list__kinds">最寄駅</p>
+                  <p class="p-recruit__list__salary">伊勢市駅 徒歩15分</p>
+                </div>
+              </a>
             </li>
-            <li class="p-recruit__list">
-              <p class="p-recruit__list__img"><img src="./img/picture/recruit03.jpg" alt=""></p>
-              <p class="p-recruit__list__itemname">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-              <div class="p-recruit__list__itemtext">
-                <p class="p-recruit__list__kinds">給与</p>
-                <p class="p-recruit__list__salary">月給 148,000〜</p>
-              </div>
-              <div class="p-recruit__list__itemtext">
-                <p class="p-recruit__list__kinds">所在地</p>
-                <p class="p-recruit__list__salary">三重県伊勢市</p>
-              </div>
-              <div class="p-recruit__list__itemtext">
-                <p class="p-recruit__list__kinds">最寄駅</p>
-                <p class="p-recruit__list__salary">伊勢市駅 徒歩15分</p>
-              </div>
+            <li>
+              <a class="p-recruit__list" href="">
+                <p class="p-recruit__list__img"><img src="./img/picture/recruit03.jpg" alt=""></p>
+                <p class="p-recruit__list__itemname">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+                <div class="p-recruit__list__itemtext">
+                  <p class="p-recruit__list__kinds">給与</p>
+                  <p class="p-recruit__list__salary">月給 148,000〜</p>
+                </div>
+                <div class="p-recruit__list__itemtext">
+                  <p class="p-recruit__list__kinds">所在地</p>
+                  <p class="p-recruit__list__salary">三重県伊勢市</p>
+                </div>
+                <div class="p-recruit__list__itemtext">
+                  <p class="p-recruit__list__kinds">最寄駅</p>
+                  <p class="p-recruit__list__salary">伊勢市駅 徒歩15分</p>
+                </div>
+              </a>
             </li>
-            <li class="p-recruit__list">
-              <p class="p-recruit__list__img"><img src="./img/picture/recruit04.jpg" alt=""></p>
-              <p class="p-recruit__list__itemname">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-              <div class="p-recruit__list__itemtext">
-                <p class="p-recruit__list__kinds">給与</p>
-                <p class="p-recruit__list__salary">月給 148,000〜</p>
-              </div>
-              <div class="p-recruit__list__itemtext">
-                <p class="p-recruit__list__kinds">所在地</p>
-                <p class="p-recruit__list__salary">三重県伊勢市</p>
-              </div>
-              <div class="p-recruit__list__itemtext">
-                <p class="p-recruit__list__kinds">最寄駅</p>
-                <p class="p-recruit__list__salary">伊勢市駅 徒歩15分</p>
-              </div>
+            <li>
+              <a class="p-recruit__list" href="">
+                <p class="p-recruit__list__img"><img src="./img/picture/recruit04.jpg" alt=""></p>
+                <p class="p-recruit__list__itemname">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+                <div class="p-recruit__list__itemtext">
+                  <p class="p-recruit__list__kinds">給与</p>
+                  <p class="p-recruit__list__salary">月給 148,000〜</p>
+                </div>
+                <div class="p-recruit__list__itemtext">
+                  <p class="p-recruit__list__kinds">所在地</p>
+                  <p class="p-recruit__list__salary">三重県伊勢市</p>
+                </div>
+                <div class="p-recruit__list__itemtext">
+                  <p class="p-recruit__list__kinds">最寄駅</p>
+                  <p class="p-recruit__list__salary">伊勢市駅 徒歩15分</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -236,28 +244,34 @@
     <section class="p-useful l-inner">
       <h2 class="c-title">転職お役立ちコンテンツ</h2>
       <ul class="p-useful__lists">
-        <li class="p-useful__list">
-          <p class="p-useful__list__title">転職マニュアル</p>
-          <p class="p-useful__list__detail">転職活動の基礎知識、面接対策など<br>転職のコツをお教えします</p>
+        <li>
+          <a class="p-useful__list" href="">
+            <p class="p-useful__list__title">転職マニュアル</p>
+            <p class="p-useful__list__detail">転職活動の基礎知識、面接対策など<br>転職のコツをお教えします</p>
+          </a>
         </li>
-        <li class="p-useful__list">
-          <p class="p-useful__list__title">転職マニュアル</p>
-          <p class="p-useful__list__detail">転職活動の基礎知識、面接対策など<br>転職のコツをお教えします</p>
+        <li>
+          <a class="p-useful__list" href="">
+            <p class="p-useful__list__title">医療事務協会の豆知識</p>
+            <p class="p-useful__list__detail">スキルアップ・労働環境、給与事情など<br>知って得する業界の豆知識を公開</p>
+          </a>
         </li>
-        <li class="p-useful__list">
-          <p class="p-useful__list__title">転職マニュアル</p>
-          <p class="p-useful__list__detail">転職活動の基礎知識、面接対策など<br>転職のコツをお教えします</p>
+        <li>
+          <a class="p-useful__list" href="">
+            <p class="p-useful__list__title">転職マニュアル</p>
+            <p class="p-useful__list__detail">転職活動の基礎知識、面接対策など<br>転職のコツをお教えします</p>
+          </a>
         </li>
       </ul>
       <div class="p-useful__more c-button">
         <a href="">医療事務コラムをもっとみる</a>
       </div>
     </section>
-    <section class="p-jobSearch02 l-inner">
+    <section id="u-margin" class="p-jobSearch l-inner">
       <h2>お仕事検索</h2>
       <p>働きたい職種・地域・希望給与を入れて検索！</p>
-      <div class="p-jobSearch02__select">
-        <label class="p-jobSearch02__select__box">
+      <div class="p-jobSearch__select">
+        <label class="p-jobSearch__select__box">
           <select>
               <option selected>医療事務</option>
               <option>調剤事務</option>
@@ -268,7 +282,7 @@
               <option>病院内SE</option>
           </select>
         </label>
-        <label class="p-jobSearch02__select__box">
+        <label class="p-jobSearch__select__box">
           <select>
               <option>茨城県</option>
               <option>神奈川件</option>
@@ -279,7 +293,7 @@
               <option>栃木県</option>
           </select>
         </label>
-        <label class="p-jobSearch02__select__box">
+        <label class="p-jobSearch__select__box">
           <select>
               <option>月給17万〜</option>
               <option>月給18万〜</option>
@@ -290,10 +304,10 @@
               <option>月給23万〜</option>
           </select>
         </label>
-        <div class="p-jobSearch02__select__keyword">
+        <div class="p-jobSearch__select__keyword">
           <input type="search" placeholder="キーワード・企業名・スキルなど" name="keyword" class="input-area">
         </div>
-        <div class="c-search_button"><a href="">検索する</a></div>
+        <div class="c-search_button"><button>検索する</button></div>
       </div>
     </section>
   </main>

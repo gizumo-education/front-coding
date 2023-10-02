@@ -11,7 +11,7 @@
   &__list {
     width: 380px;
     height: 240px;
-    border-radius: 10px;
+    border-radius: utility.$bdRadius;
     text-align: center;
     margin-top: 50px;
     color: utility.$white;
@@ -23,6 +23,7 @@
     }
     &__title {
       margin-top: 71px;
+      color: utility.$white;
       font: {
         size: 24px;
         weight: utility.$bold;
@@ -31,12 +32,15 @@
     &__detail {
       margin-top: 44px;
       line-height: 24px;
+      color: utility.$white;
       font: {
         size: 18px;
         weight: utility.$regular;
       }
     }
-    &:nth-child(2) {
+  }
+  li:nth-child(2) {
+    a {
       background: {
         size: cover;
         repeat: no-repeat;

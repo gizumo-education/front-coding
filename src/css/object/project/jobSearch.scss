@@ -1,14 +1,15 @@
 @use '../../object/utility/utility.scss';
+@import "../../object/utility/margin.scss";
 // お仕事検索に関するスタイル
-
 .p-jobSearch {
+  border-radius: utility.$bdRadius;
+  height: 240px;
+  background-color: utility.$job_bgLightBlue;
+  text-align: center;
   margin: {
     top: 50px;
     bottom: 50px;
   }
-  height: 240px;
-  background-color: utility.$job_bgLightBlue;
-  text-align: center;
   h2 {
     padding-top: utility.$job_padding-top;
     font: {
