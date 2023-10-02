@@ -1,0 +1,54 @@
+@use '../../object/utility/utility.scss';
+// 転職お役立ちコンテンツに関するスタイル
+
+.p-useful {
+  margin-top: utility.$con_mgt105;
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  &__list {
+    width: 380px;
+    padding: 71px 0 55px 0;
+    border-radius: utility.$bdRadius;
+    text-align: center;
+    color: utility.$white;
+    background: {
+      size: cover;
+      repeat: no-repeat;
+      position: center center;
+      image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/picture/useful01.jpg);
+    }
+    &__title {
+      color: utility.$white;
+      font: {
+        size: 24px;
+        weight: utility.$bold;
+      }
+    }
+    &__detail {
+      margin-top: 44px;
+      line-height: 24px;
+      color: utility.$white;
+      font: {
+        size: 18px;
+        weight: utility.$regular;
+      }
+    }
+  }
+  li:nth-child(2) {
+    a {
+      background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center center;
+        image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/picture/useful02.jpg);
+      }
+    }
+  }
+  &__more {
+    margin-top: 80px;
+  }
+}

@@ -1,11 +1,37 @@
 $white: #fff;
 $black: #000;
 $buttonBlue: #92C5EA;
+$darkPink: #DE5579;
 
 // 背景
+$bgDarkBlue: #98B1BE;
 $bgLightBlue: #EFF6FC;
 $bgGray: #D7D7D7;
+
+// お仕事検索背景
+$job_bgLightBlue: #DEEEF9;
+// お仕事検索余白
+$job_margin-top:30px;
+// セレクトボックスの色
+$job_slColor: #DE1E79;
+
+// 新着求人
+$list_kindsColor: #FFCAD0;
+
+// 特徴関連の変数
+//特徴リストの背景
+$ft_lightPink:#F7D2DB;
+// 特徴リストの余白
+$ft_mgt40: 40px;
+$ft_mgl40: 40px;
+
+// 枠線
+$leadLightblue: #2EB6AA;
+$bdRadius: 10px;
 
 // フォントの太さ
 $regular: 400;
 $bold: 700;
+
+// コンテンツの余白
+$con_mgt105: 105px;

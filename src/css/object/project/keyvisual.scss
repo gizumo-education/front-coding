@@ -1,2 +1,69 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+.p-keyvisual {
+  background-color: utility.$bgDarkBlue;
+  &__wrapper {
+    height: 500px;
+    background: {
+      size: cover;
+      repeat: no-repeat;
+      position: center center;
+      image: url(../img/picture/keyvisual.png);
+    }
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: {
+      top: 8.5%;
+      left: 33%;
+    }
+  }
+  &__copy {
+    text-align: center;
+    &__text {
+      color: utility.$white;
+    }
+    &__imgList {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: {
+        top: -40px;
+        bottom: -5px;
+      }
+      li {
+        margin-left: 10px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    &__subtext {
+      padding-left: 100px;
+    }
+  }
+  &__titleImg {
+    margin-top: 50px;
+  }
+  &__lead {
+    width: 391px;
+    height: 69px;
+    padding-top: 15px;
+    margin-top: 50px;
+    text-align: center;
+    color: utility.$leadLightblue;
+    background-color: utility.$white;
+    border: solid 3px utility.$leadLightblue;
+    border-radius: utility.$bdRadius;
+    font: {
+      size: 20px;
+      weight: utility.$regular;
+    }
+    span {
+      font: {
+        size: 40px;
+        weight: utility.$bold;
+      }
+    }
+  }
+}

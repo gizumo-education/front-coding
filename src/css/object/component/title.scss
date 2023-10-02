@@ -1,0 +1,10 @@
+@use '../../object/utility/utility.scss';
+// 共通パーツであるタイトルのスタイルを記述するファイル
+
+.c-title {
+  text-align: center;
+  font: {
+    size: 25px;
+    weight: utility.$bold;
+  }
+}

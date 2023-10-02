@@ -1,0 +1,44 @@
+@use '../../object/utility/utility.scss';
+// ギズジョブの4つの特徴に関するスタイル
+.p-features {
+  margin-top: utility.$con_mgt105;
+  &__lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 53px;
+  }
+  &__list {
+    width: 550px;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: utility.$bdRadius;
+    background-color: utility.$ft_lightPink;
+    &__title {
+      color: utility.$darkPink;
+      font: {
+        size: 24px;
+        weight: utility.$bold;
+      }
+    }
+    &__text {
+      text-align: center;
+      margin-top: 36px;
+      line-height: 20px;
+      font: {
+        size: 14px;
+        weight: utility.$regular;
+      }
+    }
+  }
+  :nth-child(3) {
+    margin-top: utility.$ft_mgt40;
+  }
+  :nth-child(4) {
+    margin-top: utility.$ft_mgl40;
+  }
+  li:nth-child(4) > p:nth-child(2)  {
+    margin-top: 26px;
+  }
+}

@@ -1,0 +1,20 @@
+@use '../../object/utility/utility.scss';
+
+.p-heading {
+  padding: 104px 0;
+  text-align: center;
+  color: utility.$white;
+  background: {
+    size: cover;
+    repeat: no-repeat;
+    position: center center;
+    image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/picture/heading.jpg);
+  }
+  &__detail {
+    font: {
+      size: 25px;
+      weight: utility.$bold;
+    }
+    line-height: 42px;
+  }
+}

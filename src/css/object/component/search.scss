@@ -1,0 +1,26 @@
+@use '../../object/utility/utility.scss';
+// 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-search_button {
+  margin-left: 15px;
+  button {
+    width: 140px;
+    transition: .3s all;
+    border-radius: 50px;
+    border: none;
+    padding: 15px 0 15px 35px;
+    color: utility.$white;
+    background-color: utility.$darkPink;
+    background-position: center left 15px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon/c-search_icon.png");
+    &:hover {
+      opacity: .7;
+    }
+    font: {
+      size: 18px;
+      weight: utility.$bold;
+    }
+    cursor: pointer;
+  }
+}

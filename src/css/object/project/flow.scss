@@ -1,0 +1,65 @@
+@use '../../object/utility/utility.scss';
+// 転職までの流れに関するスタイル
+
+.p-flow {
+  margin-top: utility.$con_mgt105;
+  &__lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  &__arrow {
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid utility.$darkPink;
+  }
+  &__list {
+    width: 280px;
+    height: 360px;
+    border: solid 2.5px utility.$darkPink;
+    border-radius: utility.$bdRadius;
+    &__test {
+      height: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__step {
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      color: utility.$white;
+      border-radius: 30px;
+      background-color: utility.$darkPink;
+      margin: 10px 0 0 10px;
+      line-height: 20px;
+      padding-top: 11px;
+      font: {
+        size: 16px;
+        weight: utility.$bold;
+      }
+    }
+    &__icon {
+      height: 100px;
+      margin-top: -10PX;
+    }
+    &__title {
+      text-align: center;
+      line-height: 30px;
+      font: {
+        size: 24px;
+        weight: utility.$bold;
+      }
+    }
+    &__text {
+      padding: 0 22px;
+      line-height: 20px;
+      font: {
+        size: 14px;
+        weight: utility.$regular;
+      }
+    }
+  }
+}
