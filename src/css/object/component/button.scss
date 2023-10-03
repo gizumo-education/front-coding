@@ -24,15 +24,14 @@
 }
 
 .c-more {
-  cursor: pointer;
-  display: block;
-  width: 360px;
-  height: 60px;
+  padding: 21px 93px;
   background-color: utility.$pink;
   color: utility.$white;
   font-weight: utility.$bold;
   font-size: 18px;
   border: none;
   border-radius: 100px;
+  width: 420px;
   margin: 0 auto;
+  display: block;
 }

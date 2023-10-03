@@ -1,9 +1,9 @@
 @use '../../object/utility/utility.scss';
 
 .p-newRecruit {
+  background-color: utility.$bgLightBlue;
+  padding: 64px 0 67px 0;
   &__area {
-    background-color: utility.$bgLightBlue;
-    padding: 60px 0 67px;
   }
   &__title{
     font-size: 25px;

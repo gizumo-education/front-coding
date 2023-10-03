@@ -7,15 +7,18 @@
   &__title {
     @include utility.title;
   }
-  &__contents__area {
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-  }
   &__contents {
     width: 280px;
     border: 2.27px solid utility.$pink;
     border-radius: 10px;
+    &__area {
+      display: flex;
+      margin-top: 50px;
+    }
+    &__wrap {
+      display: flex;
+      align-items: center;
+    }
     &__flex {
       display: flex;
       flex-direction: column;
@@ -41,12 +44,12 @@
       margin: 10px 0 0 10px;
     }
     &__title {
-      margin-top: 20px;
       font-size: 24px;
       font-weight: utility.$bold;
       text-align: center;
       line-height: 30px;
       height: 60px;
+      margin-top: 20px;
       display: flex;
       align-items: center;
     }
