@@ -4,15 +4,14 @@
 
 .o-utility__gray {
   background-color: variables.$liteGray;
-  background-image: url(/src/img/icon/figma-header-main-img.png);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
-.o-utility__inner {
+.u-inner {
+  &--width {
   margin: 0 auto;
   width: 1180px;
   max-width: 100%;
+}
 }
 
 // お仕事検索//
@@ -158,7 +157,7 @@
   }
 }
 
-.o-utility__img__filter {
+.u-img__filter {
   filter: brightness(0.5);
 }
 

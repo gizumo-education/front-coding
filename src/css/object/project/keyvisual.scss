@@ -3,6 +3,12 @@
 @use "../../foundation/variables";
 
 .o-keyvisual {
+  &--width1 {
+    margin: 0 auto;
+    width: 1262px;
+    max-width: 100%;
+    height: 500px;
+  }
 
   &__img--size {
     height: 18px;
@@ -71,9 +77,6 @@
   }
 
   &__view {
-    width: 1262px;
-    height: 500px;
-
     &__text {
       width: 100%;
       max-width: 1600px;

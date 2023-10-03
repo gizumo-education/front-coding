@@ -94,6 +94,8 @@
     font-weight: variables.$regular;
     line-height: normal;
     text-align: left;
+    width: 1180px;
+    margin: 0 auto;
   }
 
   &__container {
@@ -148,12 +150,12 @@
 .l-inner__mtg {
   position: relative;
 
-  &__image {
+  &--image {
     width: 1600px;
     height: 300px;
   }
 
-  &__text--container {
+  &--container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -161,7 +163,7 @@
     width: 625px;
   }
 
-  &__text {
+  &--text {
     color: variables.$white;
     font-family: Noto Sans JP;
     font-size: 25px;
