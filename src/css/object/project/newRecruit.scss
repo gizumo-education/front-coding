@@ -19,11 +19,11 @@
     &:last-child {
       margin-right: 0;
     }
-    &>img {
+    &>a>img {
       height: 200px;
       border-radius: 10px;
     }
-    &>p {
+    &>a>p {
       margin-top: 8.08px;
       font-size: 16px;
       line-height: 22px;
