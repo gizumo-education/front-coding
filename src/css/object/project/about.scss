@@ -1,6 +1,7 @@
 @use "../../object/utility/utility.scss";
 //ページ中央帯部分のコンテンツテーマに関するスタイル
 .p-about {
+  width: 1600px;
   background-image: url(../img/picture/about-background.jpg);
   background-size: cover;
   text-align: center;
@@ -27,9 +28,11 @@
 
 @include utility.tab {
   .p-about {
+    width: 16.00rem;
     padding: 1.04rem 0;
     &__inner {
       font-size: 0.25rem;
+      width: 100%;
     }
   }
 }
@@ -38,7 +41,9 @@
     background-size: cover;//画像全体が収まる
     background-repeat: no-repeat;
     padding: 0.16rem 0;
+    width: 4.0rem;
     &__inner {
+      width: 100%;
       font-size: 0.14rem;
       font-weight: utility.$regular;
       line-height: 0.2rem;

@@ -4,9 +4,9 @@
   // padding-top: 100px;
   text-align: center;
   background-color: #98b1be;
-  // width: 1600px;
-  // height: 500px;
-  // top: 100px;
+  width: 1600px;
+  height: 500px;
+  top: 100px;
   &__inner {
     width: 1260px;
     margin: 0 auto;
@@ -89,8 +89,10 @@
 @include utility.tab {
   //mixin.scssからtab詳細を呼び込み
   .keyvisual {
+    width: 16.00rem;
+    height: 5.00rem;
     &__inner {
-      width: 100%;
+      width: 12.62rem;
       position: relative;
       & h1 {
         width: 80%;
@@ -142,6 +144,7 @@
     // padding-top: 0.69rem;
     height: auto;
     width: 4.0rem;
+    margin-bottom: 0.25rem;
     &__inner {
       width: 100%;
       position: relative;

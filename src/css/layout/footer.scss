@@ -1,22 +1,38 @@
 @use "../object/utility/utility.scss";
 // footerのスタイルを記述するファイル
 .l-footer {
+  background-color: utility.$bgLightBlue;
+  margin-top: 200px;
+  width: 1600px;
+  @include utility.tab {
+    width: 16.00rem;
+    margin-top: 2.0rem;
+  }
+  @include utility.sp {
+    width: 4.0rem;
+    margin-top: 1.0rem;
+  }
   &__area {
     padding: 55px 0 25px;
     font-size: 16px;
-    background-color: utility.$bgLightBlue;
-    margin-top: 200px; /////
+    width: 1180px;////
+    margin: 0 auto;
     @include utility.tab {
       padding: 0.55rem 0 0.25rem;
       font-size: 0.16rem;
+      width: 11.8rem;
     }
     @include utility.sp {
       width: 4rem;
       padding: 0.38rem 0.38rem 0.38rem;
       font-size: 0.16rem;
-      margin-top: 1rem;
+      
     }
     is-flex {
+      @include utility.sp {
+        width: 73%;
+        
+      }
       @include utility.sp {
         width: 90%;
         
@@ -80,6 +96,9 @@
         display: block;
       }
       img {
+        @include utility.tab {
+          width: 3.2rem;
+        }
         @include utility.sp {
           width: 3.22rem;
         }

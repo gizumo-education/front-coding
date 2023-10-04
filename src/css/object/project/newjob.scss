@@ -2,17 +2,21 @@
 //新着求人に関するスタイル指定
 .p-newjob {
   margin-top: 60px;
+  width: 1600px;
   background-color: utility.$blue;
   &__inner {
     padding: 64px 0 67px;
+    
     text-align: center;
     position: relative;
+    width: 1180px;
     & h2 {
       text-align-last: left;
       font-size: 25px;
     }
     &__list {
       display: flex;
+      // height: 636px;
       text-align: left;
       margin-top: 25px;
       font-size: 1.4rem;
@@ -61,9 +65,11 @@
 
 @include utility.tab {
   .p-newjob {
+    width: 16.00rem;
+    margin-top: 0.6rem;
     &__inner {
       padding: 0.64rem 0 0.67rem;
-      width: 90%;
+      width: 11.80rem;
       & h2 {
         font-size: 0.276rem;
       }
@@ -73,6 +79,7 @@
         .newjob__discription {
           font-size: 0.165rem;
           line-height: 0.2rem;
+          
         }
         & p {
           margin-top: 0.05rem;
@@ -91,9 +98,12 @@
 
 @include utility.sp {
   .p-newjob {
+    width: 4.0rem;
     &__inner {
       padding: 0.3rem 0 0.6rem 0;
+      width: 3.7rem;
       // width: 90%;
+      
       & h2 {
         text-align-last: center;
         font-size: 0.25rem;
@@ -114,7 +124,7 @@
         }
         & li {
           margin-right: 0;
-          border-radius: 0.1%;///角丸なんか白い...
+          border-radius: 0.1%;
           &:nth-child(1) {
             width: 100%;
           }
@@ -148,3 +158,78 @@
     }
   }
 }
+
+//スライダーのスタイル指定
+.slick-list {
+  overflow: hidden;//スライダー内の要素がはみ出さないようにする
+}
+.slick-track {
+  display: flex;
+  .slick-slide {
+    width: 280px;
+    margin-right: 20px;
+    @include utility.tab {
+      width: 2.65rem;
+      margin-right: 0.2rem;
+    }
+    @include utility.sp {
+      width: 3.7rem;
+      margin-right: 0;
+    }
+  }
+}
+.slick-arrow {
+  position: absolute;
+  top: 30%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: 98;
+  @include utility.tab {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  @include utility.sp {
+    width: 0.42rem;
+    height: 0.42rem;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 55%;
+    border-right: 1px solid utility.$black;
+    border-top: 1px solid utility.$black;
+    @include utility.tab {
+      width: 0.2rem;
+      height: 0.2rem;
+    }
+    @include utility.sp {
+      width: 0.1rem;
+      height: 0.1rem;
+    }
+  }
+}
+.slick-prev {
+  left: 0;
+  border-style: none;
+  @include utility.sp {
+    top: 45%;
+  }
+  &::after {
+    transform: translate(-40%, -50%) rotate(-135deg);
+  }
+}
+.slick-next {
+  right: 0;
+  border-style: none;
+  @include utility.sp {
+    top: 45%;
+  }
+  &::after {
+    transform: translate(-85%, -50%) rotate(45deg);
+  }
+}
+

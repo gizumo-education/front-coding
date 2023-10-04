@@ -2,7 +2,7 @@
 //お役立ちコンテンツに関するスタイル指定
 
 .p-content {
-  padding: 105px 0 80px;
+  padding: 105px 0 90px;
   text-align: center;
   & h2 {
     font-size: 25px;
@@ -146,7 +146,7 @@
 
   @include utility.sp {
     .p-content {
-      padding: 0.6rem 0 0.4rem 0;
+      padding: 0.6rem 0 0.6rem 0;
       
       &__list {
         flex-wrap: wrap;
