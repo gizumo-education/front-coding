@@ -163,9 +163,9 @@
 .slick-list {
   overflow: hidden;//スライダー内の要素がはみ出さないようにする
 }
-.slick-track {
+.slick-track {//
   display: flex;
-  .slick-slide {
+  .slick-slide {//各スライドのサイズ指定
     width: 280px;
     margin-right: 20px;
     @include utility.tab {
@@ -178,7 +178,7 @@
     }
   }
 }
-.slick-arrow {
+.slick-arrow {//スライドボタン(丸)のスタイル指定
   position: absolute;
   top: 30%;
   width: 60px;
@@ -193,7 +193,7 @@
     width: 0.42rem;
     height: 0.42rem;
   }
-  &::after {
+  &::after {//.slick-arrow::after疑似要素_矢印部分のスタイル指定
     content: "";
     position: absolute;
     width: 20px;

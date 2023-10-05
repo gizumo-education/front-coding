@@ -8,6 +8,7 @@ $(function() {
 
 // slickの指定
 $(".p-newjob__inner__list").slick({//クラスをjQueryで選択し、それに対してSlickを初期化
+  infinite: true,//無限スライド
   adaptiveHeight: true,//各スライドの高さを調整するかの指定→trueで、各スライドの高さを合わせる
   variableWidth: true,//各スライドの幅を調整するかの指定→trueで、各スライドの幅を合わせる
   prevArrow: "<button type=button class=slick-prev></button>",//進むボタンのカスタム指定。html要素として指定されており、slick-prevクラスを持つボタンに対し、進むボタンが適応される。
@@ -15,7 +16,6 @@ $(".p-newjob__inner__list").slick({//クラスをjQueryで選択し、それに�
   speed: 500,//スライドトランジション(アニメーション)の速さ指定
   slidesToShow: 1,//1つずつズレる
 });
-
 
 //ハンバーガークリックしたらXになる
 $(".l-header__hamburger").on("click", function () {
@@ -39,8 +39,11 @@ $('a[href^="#"]').on("click", function () {// クリックイベント(a タグ�
   if (href.startsWith("#")) {
     // ページ内スクロールのための処理
 
-    // 対象要素を取得(=リンク先が ”#” または,余白部分の場合→ページ上部を対象とする)
-    const target = $(href === "#" || href === "" ? "html" : href);
+    
+    const target = $(href === "#" || href === "" ? "html" : href);// 対象要素を取得(=リンク先が ”#” または,余白部分の場合→ページ上部を対象とする)
 
+    const position = target.offset().top;//遷移先のメニューのタイトル上端の位置を取得
+    $('html').animate({ scrollTop: position - 68 }, 600);//
+    return;
   }
 });
