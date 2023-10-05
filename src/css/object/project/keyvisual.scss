@@ -3,66 +3,97 @@
 .p-keyvisual {
   background-color: utility.$bgDarkBlue;
   &__wrapper {
-    height: 500px;
+    display: flex;
+    justify-content: right;
+    padding: 56px 0 47px 0;
     background: {
       size: cover;
       repeat: no-repeat;
       position: center center;
       image: url(../img/picture/keyvisual.png);
     }
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding: {
-      top: 8.5%;
-      left: 33%;
+    @include utility.sp {
+        width: 100%;
     }
   }
   &__copy {
-    text-align: center;
-    &__text {
-      color: utility.$white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    @include utility.tab {
+      width: 60%;
     }
-    &__imgList {
+    @include utility.sp {
+      width: 65%;
+      margin-left: auto;
+    }
+    &__text {
+    @include utility.sp {
+      width: 40%;
+    }
+    }
+    &__imgLists {
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 0 10px;
       margin: {
         top: -40px;
         bottom: -5px;
       }
-      li {
-        margin-left: 10px;
-        &:first-child {
-          margin-left: 0;
+      @include utility.sp {
+        width: 65%;
+        margin: {
+          top: -0.1rem;
+          bottom: -0.1rem;
         }
       }
     }
+    &__list {
+      display: inline-block;
+    }
     &__subtext {
       padding-left: 100px;
+      @include utility.sp {
+        padding-left: 0.45rem;
+        width: 35%;
+      }
     }
-  }
-  &__titleImg {
-    margin-top: 50px;
-  }
-  &__lead {
-    width: 391px;
-    height: 69px;
-    padding-top: 15px;
-    margin-top: 50px;
-    text-align: center;
-    color: utility.$leadLightblue;
-    background-color: utility.$white;
-    border: solid 3px utility.$leadLightblue;
-    border-radius: utility.$bdRadius;
-    font: {
-      size: 20px;
-      weight: utility.$regular;
+    &__titleImg {
+      margin-top: 50px;
+      @include utility.sp {
+        margin-top: 0.25rem;
+      }
     }
-    span {
+    &__lead {
+      padding: 15px 41px;
+      margin-top: 50px;
+      text-align: center;
+      color: utility.$leadLightblue;
+      background-color: utility.$white;
+      border: solid 3px utility.$leadLightblue;
+      border-radius: utility.$bdRadius;
       font: {
-        size: 40px;
-        weight: utility.$bold;
+        size: 20px;
+        weight: utility.$regular;
+      }
+      span {
+        font: {
+          size: 40px;
+          weight: utility.$bold;
+        }
+      }
+      @include utility.sp {
+        padding: 0.07rem 0.23rem;
+        margin-top: 0.2rem;
+        font-size: 0.1rem;
+        border: solid 0.01rem utility.$leadLightblue;
+        span {
+          font: {
+            size: 0.2rem;
+          }
+        }
       }
     }
   }

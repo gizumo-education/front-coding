@@ -2,24 +2,46 @@
 // ギズジョブの4つの特徴に関するスタイル
 .p-features {
   margin-top: utility.$con_mgt105;
+  @include utility.tab {
+    margin-top: 1rem;
+   }
+  @include utility.sp {
+    margin-top: 0.5rem;
+  }
   &__lists {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(180px, auto);
+    gap: 40px;
     margin-top: 53px;
+    @include utility.sp {
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+    @include utility.sp {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0.2rem;
+    }
   }
   &__list {
-    width: 550px;
-    padding: 40px 0;
+    padding: 40px 20px;
     text-align: center;
     border-radius: utility.$bdRadius;
     background-color: utility.$ft_lightPink;
+    @include utility.sp {
+      padding: 0.4rem 0.2rem;
+    }
     &__title {
       color: utility.$darkPink;
       font: {
         size: 24px;
         weight: utility.$bold;
+      }
+      @include utility.sp {
+        font-size: 0.24rem;
       }
     }
     &__text {
@@ -30,15 +52,11 @@
         size: 14px;
         weight: utility.$regular;
       }
+      @include utility.sp {
+        margin-top: 0.36rem;
+        line-height: 0.2rem;
+        font-size: 0.14rem;
+      }
     }
-  }
-  :nth-child(3) {
-    margin-top: utility.$ft_mgt40;
-  }
-  :nth-child(4) {
-    margin-top: utility.$ft_mgl40;
-  }
-  li:nth-child(4) > p:nth-child(2)  {
-    margin-top: 26px;
   }
 }

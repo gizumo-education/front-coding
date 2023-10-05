@@ -3,11 +3,21 @@
 
 .p-useful {
   margin-top: utility.$con_mgt105;
+  @include utility.tab {
+    margin-top: 1rem;
+   }
   &__lists {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    @include utility.tab {
+      margin-top: 0.5rem;
+    }
+    @include utility.sp {
+      flex-direction: column;
+      margin-top: 0.3rem;
+    }
   }
   &__list {
     width: 380px;
@@ -27,6 +37,9 @@
         size: 24px;
         weight: utility.$bold;
       }
+      @include utility.tab {
+        font-size: 0.24rem;
+      }
     }
     &__detail {
       margin-top: 44px;
@@ -36,6 +49,15 @@
         size: 18px;
         weight: utility.$regular;
       }
+      @include utility.tab {
+        font-size: 0.18rem;
+      }
+    }
+    @include utility.tab {
+      width: 3.8rem;
+    }
+    @include utility.sp {
+      margin-top: 0.17rem;
     }
   }
   li:nth-child(2) {
@@ -50,5 +72,11 @@
   }
   &__more {
     margin-top: 80px;
+    @include utility.tab {
+      font-size: 0.5rem;
+    }
+    @include utility.sp {
+      margin-top: 0.5rem;
+    }
   }
 }
