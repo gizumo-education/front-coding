@@ -15,6 +15,7 @@
     justify-content: center;
     text-align: center;
     background-color: utility.$searchColor;
+    border-radius: 10px;
   }
 
   &__desc {
@@ -49,7 +50,9 @@
   &__select {
     position: relative;
     select {
-      padding: 17px 115px 17px 15px;
+      font-size: 18px;
+      padding: 15px 10px;
+      width: 200px;
       border: 1px solid utility.$pink;
       border-radius: 5px;
       appearance: none;
@@ -63,18 +66,17 @@
   &__input {
     input {
       width: 299px;
-      height: 51px;
       border: 1px solid utility.$pink;
       border-radius: 5px;
       outline: none;
       cursor: pointer;
       margin-right: 10px;
+      padding: 19px 10px 14px;
     }
 
     input::placeholder {
       font-size: 18px;
       font-weight: 400;
-      padding: 10px;
     }
   }
 
@@ -88,7 +90,7 @@
     display: flex;
     align-items: center;
     width: 130px;
-    height: 60px;
+    height: 55px;
     background-color: utility.$buttonPink;
     color: utility.$white;
     border-radius: 40px;
@@ -100,6 +102,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 18px;
+    border: none;
     img {
       margin-right: 5px;
     }
