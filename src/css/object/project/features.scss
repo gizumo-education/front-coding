@@ -14,9 +14,10 @@
     grid-auto-rows: minmax(180px, auto);
     gap: 40px;
     margin-top: 53px;
-    @include utility.sp {
+    @include utility.tab {
       gap: 0.4rem;
       margin-top: 0.5rem;
+      grid-auto-rows: minmax(1.8rem, auto);
     }
     @include utility.sp {
       display: flex;
@@ -24,6 +25,7 @@
       justify-content: space-around;
       align-items: center;
       gap: 0.2rem;
+      margin-top: 0.38rem;
     }
   }
   &__list {
@@ -31,8 +33,11 @@
     text-align: center;
     border-radius: utility.$bdRadius;
     background-color: utility.$ft_lightPink;
-    @include utility.sp {
+    @include utility.tab {
       padding: 0.4rem 0.2rem;
+    }
+    @include utility.sp {
+      padding: 0.3rem 0.2rem;
     }
     &__title {
       color: utility.$darkPink;
@@ -40,8 +45,11 @@
         size: 24px;
         weight: utility.$bold;
       }
-      @include utility.sp {
+      @include utility.tab {
         font-size: 0.24rem;
+      }
+      @include utility.sp {
+        font-size: 0.2rem;
       }
     }
     &__text {
@@ -52,10 +60,15 @@
         size: 14px;
         weight: utility.$regular;
       }
-      @include utility.sp {
+      @include utility.tab {
+        font-size: 0.14rem;
         margin-top: 0.36rem;
         line-height: 0.2rem;
-        font-size: 0.14rem;
+      }
+      @include utility.sp {
+        margin-top: 0.3rem;
+        line-height: 0.17rem;
+        font-size: 0.12rem;
       }
     }
   }

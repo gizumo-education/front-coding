@@ -6,9 +6,9 @@
   padding: 65px 0;
   @include utility.tab {
     padding: 0.65rem 0;
-   }
+  }
   @include utility.sp {
-    padding: 0.4rem 0;
+    padding: 0.3rem 0;
   }
   &__wrapper {
     h2 {
@@ -37,6 +37,9 @@
     @include utility.tab {
       margin-top: 0.4rem;
     }
+    @include utility.sp {
+      margin-top: 0.35rem;
+    }
   }
   &__lists {
     display: flex;
@@ -51,6 +54,10 @@
     }
     img {
       border-radius: utility.$bdRadius;
+    }
+    @include utility.tab {
+      font-size: 0.16rem;
+      margin-left: 0.1rem;
     }
     &__itemname {
       margin-top: 10px;
@@ -73,6 +80,9 @@
       @include utility.tab {
         margin-top: 0.08rem;
       }
+      @include utility.sp {
+        margin-top: 0.12rem;
+      }
     }
     &__kinds {
       width: 60px;
@@ -85,14 +95,16 @@
         height: 0.2rem;
         line-height: 0.2rem;
       }
+      @include utility.sp {
+        width: 0.6rem;
+        height: 0.2rem;
+        line-height: 0.2rem;
+      }
     }
     &__salary {
       margin-left: 10px;
     }
-    @include utility.tab {
-      font-size: 0.16rem;
-      margin-left: 0.1rem;
-    }
+
   }
   li:nth-child(n+2) {
     @include utility.sp {
@@ -103,6 +115,9 @@
     margin-top: 60px;
     @include utility.tab {
       margin-top: 0.6rem;
+    }
+    @include utility.sp {
+      margin-top: 0.45rem;
     }
   }
 }

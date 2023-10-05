@@ -27,7 +27,15 @@
       width: 1.4rem;
       padding: 0.16rem 0 0.16rem 0.35rem;
       font-size: 0.18rem;
+      border-radius: 0.5rem;
       background-size: 0.25rem;
+    }
+    @include utility.sp {
+      width: 1.6rem;
+      font-size: 0.18rem;
+      border-radius: 0.5rem;
+      padding: 0.11rem 0 0.11rem 0.14rem;
+      background-size: 0.17rem;
     }
   }
 }

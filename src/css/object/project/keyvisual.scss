@@ -29,9 +29,9 @@
       margin-left: auto;
     }
     &__text {
-    @include utility.sp {
-      width: 40%;
-    }
+      @include utility.sp {
+        width: 40%;
+      }
     }
     &__imgLists {
       display: flex;
@@ -84,15 +84,22 @@
           weight: utility.$bold;
         }
       }
+      @include utility.tab {
+        padding: 0.15rem 0.41rem;
+        margin-top: 0.5rem;
+        font-size: 0.2rem;
+        border: solid 0.03rem utility.$leadLightblue;
+        span {
+          font-size: 0.4rem;
+        }
+      }
       @include utility.sp {
         padding: 0.07rem 0.23rem;
         margin-top: 0.2rem;
-        font-size: 0.1rem;
+        font-size: 0.08rem;
         border: solid 0.01rem utility.$leadLightblue;
         span {
-          font: {
-            size: 0.2rem;
-          }
+          font-size: 0.16rem;
         }
       }
     }
