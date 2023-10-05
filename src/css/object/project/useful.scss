@@ -79,6 +79,14 @@
     }
     @include utility.sp {
       margin-top: 0.17rem;
+      li:first-child > a {
+        margin-top: 0;
+      }
+    }
+  }
+  li:first-child > a {
+    @include utility.sp {
+      margin-top: 0;
     }
   }
   li:nth-child(2) {
