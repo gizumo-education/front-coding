@@ -3,11 +3,24 @@
 
 .p-useful {
   margin-top: utility.$con_mgt105;
+  @include utility.tab {
+    margin-top: 1rem;
+  }
+  @include utility.sp {
+    margin-top: 0.6rem;
+  }
   &__lists {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    @include utility.tab {
+      margin-top: 0.5rem;
+    }
+    @include utility.sp {
+      flex-direction: column;
+      margin-top: 0.3rem;
+    }
   }
   &__list {
     width: 380px;
@@ -21,11 +34,25 @@
       position: center center;
       image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/picture/useful01.jpg);
     }
+    @include utility.tab {
+      width: 3.8rem;
+      padding: 0.71rem 0 0.55rem 0;
+    }
+    @include utility.sp {
+      width: 3.7rem;
+      padding: 0.6rem 0;
+    }
     &__title {
       color: utility.$white;
       font: {
         size: 24px;
         weight: utility.$bold;
+      }
+      @include utility.tab {
+        font-size: 0.24rem;
+      }
+      @include utility.sp {
+        font-size: 0.25rem;
       }
     }
     &__detail {
@@ -36,6 +63,30 @@
         size: 18px;
         weight: utility.$regular;
       }
+      @include utility.tab {
+        font-size: 0.18rem;
+        margin-top: 0.44rem;
+        line-height: 0.24rem;
+      }
+      @include utility.sp {
+        font-size: 0.14rem;
+        margin-top: 0.3rem;
+        line-height: 0.2rem;
+      }
+    }
+    @include utility.tab {
+      width: 3.8rem;
+    }
+    @include utility.sp {
+      margin-top: 0.17rem;
+      li:first-child > a {
+        margin-top: 0;
+      }
+    }
+  }
+  li:first-child > a {
+    @include utility.sp {
+      margin-top: 0;
     }
   }
   li:nth-child(2) {
@@ -50,5 +101,12 @@
   }
   &__more {
     margin-top: 80px;
+    @include utility.tab {
+      font-size: 0.5rem;
+      margin-top: 0.8rem;
+    }
+    @include utility.sp {
+      margin-top: 0.5rem;
+    }
   }
 }

@@ -2,7 +2,6 @@
 // 共通パーツであるボタンのスタイルを記述するファイル
 
 .c-search_button {
-  margin-left: 15px;
   button {
     width: 140px;
     transition: .3s all;
@@ -10,10 +9,12 @@
     border: none;
     padding: 15px 0 15px 35px;
     color: utility.$white;
-    background-color: utility.$darkPink;
-    background-position: center left 15px;
-    background-repeat: no-repeat;
-    background-image: url("../img/icon/c-search_icon.png");
+    background: {
+      color: utility.$darkPink;
+      position: center left 15px;
+      repeat: no-repeat;
+      image: url("../img/icon/c-search_icon.png");
+    };
     &:hover {
       opacity: .7;
     }
@@ -22,5 +23,19 @@
       weight: utility.$bold;
     }
     cursor: pointer;
+    @include utility.tab {
+      width: 1.4rem;
+      padding: 0.16rem 0 0.16rem 0.35rem;
+      font-size: 0.18rem;
+      border-radius: 0.5rem;
+      background-size: 0.25rem;
+    }
+    @include utility.sp {
+      width: 1.6rem;
+      font-size: 0.18rem;
+      border-radius: 0.5rem;
+      padding: 0.11rem 0 0.11rem 0.14rem;
+      background-size: 0.17rem;
+    }
   }
 }

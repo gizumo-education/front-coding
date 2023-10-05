@@ -2,32 +2,69 @@
 
 // お仕事検索に関するスタイル
 .p-jobSearch {
-  border-radius: utility.$bdRadius;
-  background-color: utility.$job_bgLightBlue;
-  text-align: center;
-  padding: 40px 0;
-  margin: {
-    top: 50px;
-    bottom: 50px;
+  margin: 50px 0;
+  @include utility.tab {
+    margin: 0.5rem 0;
   }
-  h2 {
-    font: {
-      size: 25px;
-      weight: utility.$bold;
+  &__inner {
+    border-radius: utility.$bdRadius;
+    background-color: utility.$job_bgLightBlue;
+    text-align: center;
+    padding: 40px 0;
+    h2 {
+      font: {
+        size: 25px;
+        weight: utility.$bold;
+      }
+      @include utility.tab {
+        font-size: 0.25rem;
+      }
+      @include utility.sp {
+        font-size: 0.22rem;
+      }
+    }
+    p {
+      margin-top: utility.$job_margin-top;
+      @include utility.tab {
+        margin-top: utility.$job_tab_mgt;
+        font-size: 0.2rem;
+      }
+      font: {
+        size: 20px;
+        weight: utility.$regular;
+      }
+      @include utility.tab {
+        font-size: 0.2rem;
+      }
+      @include utility.sp {
+        margin-top: utility.$job_sp_mgt;
+        font-size: 0.14rem;
+      }
+    }
+    @include utility.sp {
+      padding: 0.25rem 0;
     }
   }
-  p {
-    margin-top: utility.$job_margin-top;
-    font: {
-      size: 20px;
-      weight: utility.$regular;
-    }
+  @include utility.tab {
+    padding: 0.4rem 0;
+  }
+  @include utility.sp {
+    margin: 0.25rem 0;
   }
   &__select {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: utility.$job_margin-top;
+    gap: 0 15px;
+    @include utility.tab {
+      margin-top: utility.$job_tab_mgt;
+    }
+    @include utility.sp {
+      margin-top: utility.$job_sp_mgt;
+      flex-wrap: wrap;
+      gap: 0.15rem 0.1rem;
+    }
     &__box {
       display: inline-flex;
       align-items: center;
@@ -41,13 +78,21 @@
         clip-path: polygon(0 0, 100% 0, 50% 100%);
         content: '';
         pointer-events: none;
+        @include utility.tab {
+          width: 15%;
+        }
+        @include utility.sp {
+          width: 15%;
+          height: 20%;
+          right: 10%;
+        }
       }
       select {
         appearance: none;
         width: 199px;
         height: 59px;
-        margin-left: 15px;
         padding: 10px;
+        color: utility.$black;
         border: 1px solid utility.$job_slColor;
         border-radius: utility.$bdRadius;
         background-color: utility.$white;
@@ -56,13 +101,23 @@
           weight: utility.$regular;
         }
         cursor: pointer;
+        @include utility.tab {
+          width: 1.9rem;
+          height: 0.6rem;
+          font-size: 0.18rem;
+        }
+        @include utility.sp {
+          width: 1rem;
+          height: 0.3rem;
+          font-size: 0.12rem;
+          padding: 0 0 0 0.1rem;
+        }
       }
     }
     &__keyword {
       .input-area {
         width: 300px;
         height: 60px;
-        margin-left: 10px;
         padding-left: 10px;
         border: 1px solid utility.$job_slColor;
         border-radius: utility.$bdRadius;
@@ -70,6 +125,16 @@
         font: {
           size: 18px;
           weight: utility.$regular;
+        }
+        @include utility.tab {
+          width: 3rem;
+          height: 0.6rem;
+          font-size: 0.18rem;
+        }
+        @include utility.sp {
+          width: 3.2rem;
+          height: 0.35rem;
+          font-size: 0.14rem;
         }
       }
     }

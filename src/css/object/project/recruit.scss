@@ -3,7 +3,13 @@
 
 .p-recruit {
   background-color: utility.$bgLightBlue;
-  padding: 64px 0 67px 0;
+  padding: 65px 0;
+  @include utility.tab {
+    padding: 0.65rem 0;
+  }
+  @include utility.sp {
+    padding: 0.3rem 0;
+  }
   &__wrapper {
     h2 {
       font: {
@@ -11,17 +17,37 @@
         weight: utility.$regular;
       }
     }
+    @include utility.tab {
+      h2 {
+        font-size: 0.25rem;
+      }
+    }
+    @include utility.sp {
+      h2 {
+        text-align: center;
+        font: {
+          size: 0.25rem;
+          weight: utility.$bold;
+        }
+      }
+    }
   }
   &__contents {
     margin-top: 40px;
+    @include utility.tab {
+      margin-top: 0.4rem;
+    }
+    @include utility.sp {
+      margin-top: 0.35rem;
+    }
   }
   &__lists {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0 20px;
   }
   &__list {
-    width: 280px;
     font: {
       size: 16px;
       weight: utility.$regular;
@@ -29,14 +55,34 @@
     img {
       border-radius: utility.$bdRadius;
     }
+    @include utility.tab {
+      font-size: 0.16rem;
+      margin-left: 0.1rem;
+    }
     &__itemname {
       margin-top: 10px;
       line-height: 22px;
+      @include utility.tab {
+        margin-top: 0.1rem;
+        line-height: 0.22rem;
+      }
+      @include utility.sp {
+        font: {
+          size: 0.16rem;
+          weight: utility.$bold;
+        }
+      }
     }
     &__itemtext {
       display: flex;
       align-items: center;
       margin-top: 8px;
+      @include utility.tab {
+        margin-top: 0.08rem;
+      }
+      @include utility.sp {
+        margin-top: 0.12rem;
+      }
     }
     &__kinds {
       width: 60px;
@@ -44,12 +90,34 @@
       text-align: center;
       line-height: 20px;
       background-color: utility.$list_kindsColor;
+      @include utility.tab {
+        width: 0.6rem;
+        height: 0.2rem;
+        line-height: 0.2rem;
+      }
+      @include utility.sp {
+        width: 0.6rem;
+        height: 0.2rem;
+        line-height: 0.2rem;
+      }
     }
     &__salary {
       margin-left: 10px;
     }
+
+  }
+  li:nth-child(n+2) {
+    @include utility.sp {
+      display: none;
+    }
   }
   &__more {
     margin-top: 60px;
+    @include utility.tab {
+      margin-top: 0.6rem;
+    }
+    @include utility.sp {
+      margin-top: 0.45rem;
+    }
   }
 }

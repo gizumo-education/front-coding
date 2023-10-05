@@ -10,11 +10,28 @@
     position: center center;
     image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/picture/heading.jpg);
   }
+  @include utility.tab {
+    padding: 1rem 0;
+  }
+  @include utility.sp {
+    padding: 0.25rem 0;
+  }
   &__detail {
+    line-height: 42px;
     font: {
       size: 25px;
       weight: utility.$bold;
     }
-    line-height: 42px;
+    @include utility.tab {
+      line-height: 0.42rem;
+      font-size: 0.25rem;
+    }
+    @include utility.sp {
+      line-height: 0.25rem;
+      font: {
+        size: 0.15rem;
+        weight: utility.$regular;
+      }
+    }
   }
 }

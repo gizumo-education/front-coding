@@ -12,5 +12,14 @@
       size: 18px;
       weight: utility.$bold;
     }
+    @include utility.tab {
+      width: 3.6rem;
+      font-size: 0.18rem;
+    }
+    @include utility.sp {
+      width: 3.7rem;
+      padding: 0.21rem 0;
+      font-size: 0.18rem;
+    }
   }
 }
