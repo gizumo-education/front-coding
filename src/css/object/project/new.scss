@@ -1,0 +1,152 @@
+@use "../../object/utility/utility.scss";
+
+.p-new {
+  width: 100%;
+  padding: 100px;
+  background-color: utility.$newColor;
+
+  &__inner {
+    width: 1180px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: utility.$black;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__card-area {
+    position: relative;
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    margin-top: 25px;
+
+    & > li {
+      text-align: left;
+      margin-left: 10px;
+    }
+
+    & > li:first-child {
+      margin-left: 0;
+    }
+
+    img {
+      border-radius: 10px;
+    }
+
+    p {
+      color: utility.$black;
+      font-family: Noto Sans JP;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+    p {
+      width: 60px;
+      height: 21px;
+      text-align: center;
+      background-color: utility.$newPink;
+      margin-right: 10px;
+    }
+
+    span {
+      color: utility.$black;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &__see-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 60px;
+    background-color: utility.$buttonPink;
+    color: utility.$white;
+    border: none;
+    border-radius: 40px;
+    font-family: Noto Sans JP;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 80px auto 0;
+  }
+
+  &__prev-area {
+    position: absolute;
+    top: 100px;
+    left: 0;
+  }
+
+  &__next-area {
+    position: absolute;
+    top: 100px;
+    right: 0;
+  }
+
+  &__prev {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: utility.$white;
+    border-radius: 50%;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  &__prev::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 25px;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid utility.$black;
+    border-right: 1px solid utility.$black;
+    transform: rotate(135deg);
+  }
+
+  &__next {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: utility.$white;
+    border-radius: 50%;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  &__next::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: 25px;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid utility.$black;
+    border-right: 1px solid utility.$black;
+    transform: rotate(-45deg);
+  }
+}

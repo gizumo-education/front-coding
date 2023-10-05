@@ -1,0 +1,88 @@
+@use "../../object/utility/utility.scss";
+
+.p-jobchange {
+  width: 100%;
+  text-align: center;
+
+  &__inner {
+    width: 1180px;
+    height: 435px;
+    margin: 0 auto;
+  }
+
+  &__list-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  &__title {
+    color: utility.$black;
+    font-family: Noto Sans JP;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 100% */
+  }
+
+  &__list {
+    position: relative;
+    width: 280px;
+    height: 360px;
+    text-align: center;
+    border: 1px solid utility.$pink;
+    border-radius: 10px;
+    padding: 60px 20px 30px;
+
+    img {
+      height: 90px;
+    }
+
+    h3 {
+      color: utility.$black;
+      text-align: center;
+      font-family: Noto Sans JP;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px;
+      margin-top: 20px;
+    }
+
+    p {
+      color: utility.$black;
+      font-family: Noto Sans JP;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 20px;
+      text-align: left;
+    }
+  }
+
+  &__step-icon {
+    position: absolute;
+    width: 60px;
+    height: 60px !important;
+    background-color: utility.$stepPink;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    img {
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+      margin-top: 8px;
+    }
+  }
+
+  &__yajirusi {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 20px;
+    height: 35px !important;
+  }
+}
