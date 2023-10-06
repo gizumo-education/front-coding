@@ -55,7 +55,7 @@
   &__desc {
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    height: 28px;
 
     p {
       width: 60px;
@@ -72,6 +72,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      padding-top: 10px;
     }
   }
 
