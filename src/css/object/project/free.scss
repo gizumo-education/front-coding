@@ -40,13 +40,10 @@
       font-weight: 700;
       line-height: normal;
     }
-    h3 {
-      font-family: Noto Sans JP;
-      font-size: 25px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      margin-top: 20px;
-    }
+  }
+
+  &__mt {
+    display: block;
+    margin-top: 20px;
   }
 }
