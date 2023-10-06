@@ -165,12 +165,16 @@
 @include utility.sp {
   .p-flow {
     & h2 {
+      padding-top: 0.3rem;
       font-size: 0.25rem;
     }
     &__list {
       flex-wrap: wrap;
       justify-content: center;
       margin-top: 0.5rem;
+      &:last-child {
+        padding-bottom: 0.3rem;
+      }
       & ul {
         width: 73%;
       }
