@@ -46,7 +46,7 @@ $('a[href^="#"]').on("click", function () {// クリックイベント(a タグ�
     const target = $(href === "#" || href === "" ? "html" : href);// 対象要素を取得(=リンク先が ”#” または,余白部分の場合→ページ上部を対象とする)
 
     const position = target.offset().top;//遷移先のメニューのタイトル上端の位置を取得
-    $('html').animate({ scrollTop: position - 68 }, 600);//
+    $("html,body").animate({ scrollTop: position - 65 }, 600, "swing");//
     return;
   }
 });

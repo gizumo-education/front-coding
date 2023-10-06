@@ -186,9 +186,12 @@
   height: 60px;
   border-radius: 50%;
   z-index: 98;
+  cursor: pointer;//ボタンにホバーしたらポインターになる
+  opacity: 70%;///
   @include utility.tab {
     width: 0.6rem;
     height: 0.6rem;
+
   }
   @include utility.sp {
     width: 0.42rem;
