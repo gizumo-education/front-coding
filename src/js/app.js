@@ -6,16 +6,16 @@ $(function() {
   console.log('環境構築完了');
 });
 
-// slickの指定
-$(".p-newjob__inner__list").slick({//クラスをjQueryで選択し、それに対してSlickを初期化
-  infinite: true,//無限スライド
-  adaptiveHeight: true,//各スライドの高さを調整するかの指定→trueで、各スライドの高さを合わせる
-  variableWidth: true,//各スライドの幅を調整するかの指定→trueで、各スライドの幅を合わせる
-  prevArrow: "<button type=button class=slick-prev></button>",//進むボタンのカスタム指定。html要素として指定されており、slick-prevクラスを持つボタンに対し、進むボタンが適応される。
-  nextArrow: "<button type=button class=slick-next></button>",//戻るボタンのカスタム指定。html要素として指定されており、slick-nextクラスを持つボタンに対し、戻るボタンが適応される
-  speed: 500,//スライドトランジション(アニメーション)の速さ指定
-  slidesToShow: 1,//1つずつズレる
-});
+// // slickの指定
+// $(".p-newjob__inner__list").slick({//クラスをjQueryで選択し、それに対してSlickを初期化
+//   infinite: true,//無限スライド
+//   adaptiveHeight: true,//各スライドの高さを調整するかの指定→trueで、各スライドの高さを合わせる
+//   variableWidth: true,//各スライドの幅を調整するかの指定→trueで、各スライドの幅を合わせる
+//   prevArrow: "<button type=button class=slick-prev></button>",//進むボタンのカスタム指定。html要素として指定されており、slick-prevクラスを持つボタンに対し、進むボタンが適応される。
+//   nextArrow: "<button type=button class=slick-next></button>",//戻るボタンのカスタム指定。html要素として指定されており、slick-nextクラスを持つボタンに対し、戻るボタンが適応される
+//   speed: 500,//スライドトランジション(アニメーション)の速さ指定
+//   slidesToShow: 1,//1つずつズレる
+// });
 
 //ハンバーガークリックしたらXになる
 $(".l-header__hamburger").on("click", function () {

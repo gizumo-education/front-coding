@@ -4,11 +4,10 @@
   // padding-top: 100px;
   text-align: center;
   background-color: #98b1be;
-  width: 1600px;
   height: 500px;
   top: 100px;
+  // width: 100%;
   &__inner {
-    width: 1260px;
     margin: 0 auto;
     position: relative;
     // &__backimg {
@@ -27,6 +26,9 @@
       left: 3%;
       width: 800px;
       height: 65px;
+    }
+    &__backimg {
+      width: 1262px;
     }
     &__img {
       float: left;
@@ -67,7 +69,8 @@
         // width: 115px;
         // height: 12px;
         top: 43%;
-        left: 64%;filter: drop-shadow(0 0.8px 5px #666); //影
+        left: 64%;
+        filter: drop-shadow(0 0.8px 5px #666); //影
       }
       &:nth-child(9) {
         padding: 10px 45px 15px;
@@ -89,22 +92,26 @@
 @include utility.tab {
   //mixin.scssからtab詳細を呼び込み
   .keyvisual {
-    width: 16.00rem;
-    height: 5.00rem;
+    // width: 16.00rem;
+    width: 100%;
+    height: auto;
     &__inner {
-      width: 12.62rem;
+      width: 98%; ///
       position: relative;
       & h1 {
-        width: 80%;
+        width: 8rem;
         position: absolute;
         // top: 55%;
         // left: 3%;
         width: 8rem;
-      height: 0.65rem;
+        height: 0.65rem;
+      }
+      &__backimg {
+        width: 12.62rem;
       }
       &__img {
         &:nth-child(1) {
-          width: 70%;
+          width: 80%;
           position: absolute;
           left: 40%;
         }
@@ -143,8 +150,8 @@
   .keyvisual {
     // padding-top: 0.69rem;
     height: auto;
-    width: 4.0rem;
-    margin-bottom: 0.25rem ;
+    width: 4rem;
+    margin-bottom: 0.25rem;
     &__inner {
       width: 100%;
       position: relative;

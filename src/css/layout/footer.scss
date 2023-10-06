@@ -3,9 +3,9 @@
 .l-footer {
   background-color: utility.$bgLightBlue;
   margin-top: 200px;
-  width: 1600px;
+  width: 100%;
   @include utility.tab {
-    width: 16.00rem;
+    width: 100%;
     margin-top: 2.0rem;
   }
   @include utility.sp {
@@ -15,7 +15,7 @@
   &__area {
     padding: 55px 0 25px;
     font-size: 16px;
-    width: 1180px;////
+    width: 100%;////
     margin: 0 auto;
     @include utility.tab {
       padding: 0.55rem 0 0.25rem;

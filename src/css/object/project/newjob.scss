@@ -2,7 +2,8 @@
 //新着求人に関するスタイル指定
 .p-newjob {
   margin-top: 60px;
-  width: 1600px;
+  // width: 1600px;
+
   background-color: utility.$blue;
   &__inner {
     padding: 64px 0 67px;
@@ -65,7 +66,7 @@
 
 @include utility.tab {
   .p-newjob {
-    width: 16.00rem;
+    width: 100%;
     margin-top: 0.6rem;
     &__inner {
       padding: 0.64rem 0 0.67rem;

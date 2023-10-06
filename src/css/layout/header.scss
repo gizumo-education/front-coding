@@ -12,7 +12,7 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  width: 1600px;
+  width: 100%;
   &__custom-nav {
     display: none;
     @include utility.sp {
@@ -22,7 +22,8 @@
   
   @include utility.tab {
     padding: .25rem .5rem .25rem 0;
-    width: 16.00rem;
+    // width: 16.00rem;
+    width: 100%;
   }
   @include utility.sp {
     // padding: 0.16rem 0.15rem 0.15rem 0;
@@ -152,7 +153,7 @@
 }
 @include utility.tab {
   .l-header {
-    width: 16.00rem;
+    // width: 16.00rem;
   }
 }
 @include utility.sp {
