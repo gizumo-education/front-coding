@@ -1,0 +1,59 @@
+@use "../../object/utility/utility.scss";
+
+.p-feature {
+  width: 100%;
+  padding: 100px 0;
+
+  &__inner {
+    width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__list-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 50px;
+  }
+
+  &__title {
+    color: utility.$black;
+    font-family: Noto Sans JP;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  &__list {
+    width: 570px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: utility.$featureColor;
+    border-radius: 10px;
+    h3 {
+      color: utility.$stepPink;
+      font-family: Noto Sans JP;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+    }
+    p {
+      color: utility.$black;
+      text-align: center;
+      font-family: Noto Sans JP;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 20px;
+    }
+  }
+}
