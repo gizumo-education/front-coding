@@ -42,6 +42,7 @@
 @include utility.tab {
   .p-feature {
     padding: 1.06rem 0; //106px
+    width: 11.8rem;
     h2 {
       font-size: 0.25rem;
     }
@@ -79,7 +80,7 @@
 }
 @include utility.sp {
   .p-feature {
-    padding: 0.55rem 0;
+    padding: 0.28rem 0 0.3rem;
     &__list {
       margin-top: 0.38rem;
       flex-wrap: wrap;

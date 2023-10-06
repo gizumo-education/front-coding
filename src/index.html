@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>基本コーディング</title>
-    <!-- <link rel="stylesheet" href="./css/foundation/_base.scss" /> -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+    
   </head>
   <body>
     <header class="l-header">
@@ -33,7 +36,7 @@
         </div>
 
         <div class="l-header__sp-items">
-          <button class="l-header__hamburger" btype="button">
+          <button class="l-header__hamburger" type="button">
             <span></span>
             <span></span>
             <span></span>
@@ -45,7 +48,7 @@
               <li class="l-header__menu-item"><a href="#top">トップ</a></li>
               <li class="l-header__menu-item"><a href="#news">新着求人</a></li>
               <li class="l-header__menu-item">
-                <a href="#characteristic">４つの特徴</a>
+                <a href="#feature">４つの特徴</a>
               </li>
               <li class="l-header__menu-item">
                 <a href="#flow">転職までの流れ</a>
@@ -59,7 +62,7 @@
       
     </header>
 
-    <main class="l-main">
+    <main class="l-main" id="top">
       <div class="keyvisual">
         <div class="keyvisual__inner">
           <img
@@ -151,19 +154,18 @@
               </select>
             </div>
           </div>
-            <input
-              type="text"
-              class="p-jobsearch__formbox__input c-input-area"
-              placeholder="キーワード・企業名・スキルなど"
-            />
-            <button class="p-jobsearch__formbox__serch-btn c-serch-btn">
-              <img src="img/icon/icon-search_white.png" alt="検索マーク" />
-              検索する
-            </button>
-          
+          <input
+            type="text"
+            class="p-jobsearch__formbox__input c-input-area"
+            placeholder="キーワード・企業名・スキルなど"
+          />
+          <button class="p-jobsearch__formbox__serch-btn c-serch-btn">
+            <img src="img/icon/icon-search_white.png" alt="検索マーク" />
+            検索する
+          </button>
         </form>
       </section>
-      <section class="p-newjob" id="newjob">
+      <section class="p-newjob" id="news">
         <div class="p-newjob__inner l-inner">
           <h2>新着求人</h2>
           <ul class="p-newjob__inner__list">
@@ -236,27 +238,38 @@
           <li>
             <h3>WEB上で応募完結</h3>
             <p>
-              エントリーシートの記入を済ませれば、<br class="is-sp">あとは気になる企業に応募して待つだけで面接アポまで完結！
+              エントリーシートの記入を済ませれば、<br
+                class="is-sp"
+              />あとは気になる企業に応募して待つだけで面接アポまで完結！
             </p>
           </li>
           <li>
             <h3>安心・安全</h3>
             <p>
               掲載案件は基本的に当社グループ企業となるため、
-              <br class="is-sp">皆さまにより詳細にクリーンな職場情報をお届けいたします。
+              <br
+                class="is-sp"
+              />皆さまにより詳細にクリーンな職場情報をお届けいたします。
             </p>
           </li>
           <li>
             <h3>わかりやすい</h3>
             <p>
-              当求人サイトは医療事務に特化しておりさらに<br class="is-sp">こだわり検索や地域から検索といったご自身に<br class="is-sp">ピッタリマッチした求人を見つけることができる！
+              当求人サイトは医療事務に特化しておりさらに<br
+                class="is-sp"
+              />こだわり検索や地域から検索といったご自身に<br
+                class="is-sp"
+              />ピッタリマッチした求人を見つけることができる！
             </p>
           </li>
           <li>
             <h3>完全無料</h3>
             <p>
-              当サイトは求人元の企業やグループ会社からのスポンサー費用に<br class="is-sp">よって運営されています。ですので求職者の方からは<br class="is-sp">応募前はもちろん、
-              内定後も費用は一切いただきません。
+              当サイトは求人元の企業やグループ会社からのスポンサー費用に<br
+                class="is-sp"
+              />よって運営されています。ですので求職者の方からは<br
+                class="is-sp"
+              />応募前はもちろん、 内定後も費用は一切いただきません。
             </p>
           </li>
         </ul>
