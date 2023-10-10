@@ -5,9 +5,12 @@
   padding: 100px 0;
 
   &__inner {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     text-align: center;
+    @include utility.sp {
+      padding: 0.16rem 0.15rem !important;
+    }
   }
 
   &__list-area {
