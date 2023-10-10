@@ -1,0 +1,40 @@
+@use '../../object/utility/utility.scss';
+.p-summary {
+
+  &__wrapper {
+    text-align: center;
+    padding-top: 106px;
+  }
+
+  & h2 {
+    font-size: 25px;
+    font-weight: utility.$bold;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 56px;
+  }
+
+  &__item {
+    background-color: utility.$bgSummary;
+    border-radius: utility.$circle;
+    padding: 40px 60px;
+    width: 570px;
+
+    & h3 {
+      font-size: 24px;
+      font-weight: utility.$bold;
+      color: utility.$btnRed;
+    }
+    & p {
+      font-size: 14px;
+      font-weight: utility.$regular;
+      margin-top: 36px;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@use '../../object/utility/utility.scss';
+
+.p-flow {
+
+  &__wrapper {
+    
+    text-align: center;
+    padding-top: 106px;
+
+    & h2 {
+      font-size: 25px;
+      font-weight: utility.$bold;
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+  }
+
+  &__item {
+    text-align: center;
+    width: 280px;
+    height: 360px;
+    border: 2px solid utility.$btnRed;
+    border-radius: utility.$circle;
+
+
+    & img {
+      height: 100px;
+    }
+
+    & h3 {
+      font-size: 24px;
+      font-weight: utility.$bold;
+      margin-top: 20px;
+      line-height: 30px;
+    }
+
+    &__l {
+      font-size: 14px;
+      font-weight: utility.$regular;
+      margin-top: 18px;
+      line-height: 20px;
+    }
+
+    &__r {
+      font-size: 14px;
+      font-weight: utility.$regular;
+      margin-top: 42px;
+      line-height: 20px;
+    }
+
+  }
+
+  &__step {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: utility.$btnRed;
+    line-height: 19px;
+    top: 10px;
+    left: 10px;
+
+      & span {
+        position: absolute;
+        left:0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60px;
+        font-size: 16px;
+        font-weight: utility.$bold;
+        color: utility.$white;
+      }
+  }
+
+  &__triangle {
+    width: 20px;
+    height: 40px;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    background-color: utility.$btnRed;
+  }
+
+}

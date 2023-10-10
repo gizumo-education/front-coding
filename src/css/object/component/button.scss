@@ -1,2 +1,10 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+.button {
+  border-radius: utility.$btnCircle;
+  background-color: utility.$btnRed;
+  color: utility.$white;
+  font-weight: utility.$bold;
+  font-size: 18px;
+  padding: 17px 72px;
+}
