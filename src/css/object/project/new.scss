@@ -4,6 +4,9 @@
   width: 100%;
   padding: 100px;
   background-color: utility.$newColor;
+  @include utility.sp {
+    padding: 100px 20px !important;
+  }
 
   &__inner {
     max-width: 1180px;
@@ -27,6 +30,16 @@
   &__cards {
     display: flex;
     margin-top: 25px;
+    @include utility.sp {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+      & > li:nth-child(2),
+      & > li:nth-child(3),
+      & > li:nth-child(4) {
+        display: none;
+      }
+    }
 
     & > li {
       text-align: left;
@@ -38,7 +51,7 @@
     }
 
     img {
-      border-radius: 10px;
+      border-radius: 20px;
     }
 
     p {
@@ -152,3 +165,21 @@
     transform: rotate(-45deg);
   }
 }
+
+// @media screen and (max-width: 767px) {
+//   .p-new {
+//     padding: 100px 20px !important;
+//     &__inner {
+//       width: auto;
+//     }
+//     &__cards {
+//       display: flex;
+//       margin-top: 25px;
+//       & > li:nth-child(2),
+//       & > li:nth-child(3),
+//       & > li:nth-child(4) {
+//         display: none;
+//       }
+//     }
+//   }
+// }

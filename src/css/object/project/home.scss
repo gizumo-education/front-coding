@@ -5,38 +5,88 @@
   height: 500px;
   background-color: utility.$homeColor;
   position: relative;
+  @include utility.tab {
+    height: auto;
+  }
+  @include utility.sp {
+    height: auto;
+  }
 
   &__pic {
     max-width: 1264px;
     height: 500px;
     margin: 0 auto;
+    @include utility.tab {
+      width: auto;
+      height: auto;
+    }
+    @include utility.sp {
+      width: auto;
+      height: auto;
+    }
   }
 
   &__pc-home {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    @include utility.sp {
+      display: none;
+    }
   }
 
   &__sp-home {
     display: none;
+    @include utility.sp {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__keyvisual {
     max-width: 500px;
     position: absolute;
-    top: 70px;
+    bottom: 250px;
     right: 25%;
+    @include utility.tab {
+      right: 23%;
+      width: 30vw;
+    }
+    @include utility.sp {
+      right: 15%;
+      bottom: 150px;
+    }
+  }
+
+  &__pc-key {
+    @include utility.sp {
+      display: none;
+    }
   }
 
   &__sp-key {
     display: none;
+    @include utility.sp {
+      width: 40vw;
+      right: 15%;
+      display: block;
+    }
   }
 
   &__job-search {
     position: absolute;
     bottom: 180px;
     right: 13%;
+    @include utility.tab {
+      width: 55vw;
+    }
+    @include utility.sp {
+      width: 70vw;
+      bottom: 100px;
+      right: 0;
+    }
   }
 
   &__job-offer {
@@ -61,6 +111,21 @@
     span {
       font-size: 40px;
       font-weight: 700;
+    }
+    @include utility.tab {
+      width: 41vw;
+      right: 15%;
+    }
+    @include utility.sp {
+      width: 45vw;
+      height: auto;
+      padding: 5px 10px;
+      font-size: 8px;
+      right: 13%;
+      bottom: 45px;
+      span {
+        font-size: 16px;
+      }
     }
   }
 }

@@ -73,6 +73,9 @@
       cursor: pointer;
       background-color: utility.$white;
     }
+    // @include utility.sp {
+    //   padding: 0.16rem 0.15rem !important;
+    // }
   }
 
   &__input {
@@ -88,6 +91,9 @@
     input::placeholder {
       font-size: 18px;
       font-weight: 400;
+    }
+    @include utility.sp {
+      width: 100%;
     }
   }
 

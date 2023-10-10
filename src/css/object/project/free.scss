@@ -4,6 +4,9 @@
   position: relative;
   width: 100%;
   height: 300px;
+  @include utility.sp {
+    height: auto;
+  }
 
   &__inner {
     position: relative;
@@ -40,10 +43,19 @@
       font-weight: 700;
       line-height: normal;
     }
+    @include utility.sp {
+      span {
+        font-size: 0.08rem;
+        font-weight: 400;
+      }
+    }
   }
 
   &__mt {
     display: block;
     margin-top: 20px;
+    @include utility.sp {
+      margin-top: 0px !important;
+    }
   }
 }
