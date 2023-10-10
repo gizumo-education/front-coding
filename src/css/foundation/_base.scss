@@ -18,6 +18,7 @@ body {
   font-weight: base.$regular;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1;
+  overflow-x: hidden;
 }
 
 @include base.tab {

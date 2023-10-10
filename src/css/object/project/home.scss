@@ -62,3 +62,93 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .p-home {
+    width: 1264px !important;
+
+    &__pic {
+      width: auto;
+    }
+
+    &__pc-home {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__keyvisual {
+      width: 30vw;
+      position: absolute;
+      top: 70px;
+      right: 350px !important;
+    }
+
+    &__job-search {
+      width: 500px;
+      position: absolute;
+      bottom: 180px;
+      right: 15% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-home {
+    width: 100%;
+    height: auto;
+    background-color: utility.$homeColor;
+    position: relative;
+    &__pc-home {
+      display: none !important;
+    }
+
+    &__pic {
+      width: auto;
+      height: 240px;
+    }
+
+    &__sp-home {
+      display: block;
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    &__keyvisual {
+      top: 50px !important;
+      right: 70px !important;
+    }
+
+    &__job-search {
+      width: 272px;
+      bottom: 80px !important;
+      right: 45px !important;
+    }
+
+    &__pc-key {
+      display: none;
+    }
+
+    &__sp-key {
+      display: block;
+    }
+
+    &__job-offer {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      bottom: 30px !important;
+      right: 80px !important;
+      width: 170px !important;
+      height: 30px !important;
+      font-size: 0.05rem;
+      // width: 388px;
+      // height: 66px;
+      padding-bottom: 5px;
+      span {
+        font-size: 0.1rem !important;
+      }
+    }
+  }
+}

@@ -152,3 +152,21 @@
     transform: rotate(-45deg);
   }
 }
+
+@media screen and (max-width: 767px) {
+  .p-new {
+    padding: 100px 20px !important;
+    &__inner {
+      width: auto;
+    }
+    &__cards {
+      display: flex;
+      margin-top: 25px;
+      & > li:nth-child(2),
+      & > li:nth-child(3),
+      & > li:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+}
