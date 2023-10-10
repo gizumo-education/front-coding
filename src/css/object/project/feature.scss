@@ -19,6 +19,9 @@
     justify-content: space-between;
     gap: 40px;
     margin-top: 50px;
+    @include utility.sp {
+      justify-content: center;
+    }
   }
 
   &__title {
