@@ -1,25 +1,25 @@
 @use "../../object/utility/utility.scss";
 
 .p-new {
-  width: 100%;
-  padding: 100px;
+  padding: 100px 0;
   background-color: utility.$newColor;
-  @include utility.sp {
-    padding: 100px 20px !important;
-  }
 
   &__inner {
     max-width: 1180px;
     margin: 0 auto;
+    @include utility.sp {
+      padding: 0 10px;
+    }
+    @include utility.tab {
+      padding: 0 10px;
+    }
   }
 
   &__title {
     color: utility.$black;
     font-family: Inter;
     font-size: 25px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
   }
 
   &__card-area {
@@ -28,12 +28,12 @@
   }
 
   &__cards {
+    position: relative;
     display: flex;
     margin-top: 25px;
+    gap: 10px;
     @include utility.sp {
-      display: flex;
       justify-content: center;
-      margin-top: 25px;
       & > li:nth-child(2),
       & > li:nth-child(3),
       & > li:nth-child(4) {
@@ -43,7 +43,7 @@
 
     & > li {
       text-align: left;
-      margin-left: 10px;
+      border-radius: 20px;
     }
 
     & > li:first-child {
@@ -51,14 +51,13 @@
     }
 
     img {
-      border-radius: 20px;
+      border-radius: 10px;
     }
 
     p {
       color: utility.$black;
       font-family: Noto Sans JP;
       font-size: 16px;
-      font-style: normal;
       font-weight: 400;
       line-height: 22px;
       margin-top: 10px;
@@ -82,9 +81,7 @@
       color: utility.$black;
       font-family: Inter;
       font-size: 14px;
-      font-style: normal;
       font-weight: 400;
-      line-height: normal;
       padding-top: 10px;
     }
   }
@@ -101,10 +98,11 @@
     border-radius: 40px;
     font-family: Noto Sans JP;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     margin: 80px auto 0;
+    @include utility.sp {
+      width: 300px;
+    }
   }
 
   &__prev-area {
@@ -165,21 +163,3 @@
     transform: rotate(-45deg);
   }
 }
-
-// @media screen and (max-width: 767px) {
-//   .p-new {
-//     padding: 100px 20px !important;
-//     &__inner {
-//       width: auto;
-//     }
-//     &__cards {
-//       display: flex;
-//       margin-top: 25px;
-//       & > li:nth-child(2),
-//       & > li:nth-child(3),
-//       & > li:nth-child(4) {
-//         display: none;
-//       }
-//     }
-//   }
-// }
