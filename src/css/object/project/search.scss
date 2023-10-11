@@ -24,7 +24,7 @@
   }
   &__desc {
     & > h2 {
-      color: #000;
+      color: utility.$black;
       font-family: Noto Sans JP;
       font-size: 25px;
       font-weight: 700;
@@ -32,7 +32,7 @@
     }
     & > span {
       display: inline-block;
-      color: #000;
+      color: utility.$black;
       font-family: Noto Sans JP;
       font-size: 20px;
       font-weight: 400;
@@ -68,9 +68,10 @@
       padding: 0px 0px 0px 10px;
       border: 1px solid utility.$pink;
       outline: none;
+      background-color: utility.$white;
     }
     & > input::placeholder {
-      color: #a4a4a4;
+      color: utility.$textGray;
       font-family: Noto Sans JP;
       font-size: 18px;
       font-weight: 400;
@@ -104,7 +105,7 @@
       border-radius: 10px;
       padding: 0px 0px 0px 15px;
       border: 1px solid utility.$pink;
-      color: #000;
+      color: utility.$black;
       font-family: Noto Sans JP;
       font-size: 18px;
       font-weight: 400;
@@ -146,7 +147,7 @@
     border-radius: 30px;
     background-color: utility.$stepPink;
     border: none;
-    color: #fff;
+    color: utility.$white;
     font-family: Noto Sans JP;
     font-size: 18px;
     font-weight: 700;

@@ -73,7 +73,6 @@
     h3 {
       font-family: Noto Sans JP;
       font-size: 24px;
-      font-style: normal;
       font-weight: 700;
       line-height: 24px;
     }
@@ -82,9 +81,7 @@
       width: 256px;
       font-family: Noto Sans JP;
       font-size: 16px;
-      font-style: normal;
       font-weight: 400;
-      line-height: normal;
       margin-top: 50px;
     }
     @include utility.tab {
@@ -100,10 +97,9 @@
 
   &__button {
     display: inline-block;
-    color: #fff;
+    color: utility.$white;
     font-family: Noto Sans JP;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 18px;
     background-color: utility.$stepPink;
