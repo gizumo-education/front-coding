@@ -5,9 +5,12 @@
   padding: 100px 0;
 
   &__inner {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     text-align: center;
+    @include utility.sp {
+      padding: 0 10px;
+    }
   }
 
   &__list-area {
@@ -16,6 +19,12 @@
     justify-content: space-between;
     gap: 40px;
     margin-top: 50px;
+    @include utility.tab {
+      justify-content: center;
+    }
+    @include utility.sp {
+      justify-content: center;
+    }
   }
 
   &__title {
@@ -28,7 +37,7 @@
   }
 
   &__list {
-    width: 570px;
+    max-width: 570px;
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
@@ -58,19 +67,19 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .p-feature {
-    padding: 100px 10px;
-    &__inner {
-      width: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+// @media screen and (max-width: 767px) {
+//   .p-feature {
+//     padding: 100px 10px;
+//     &__inner {
+//       width: auto;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//     }
 
-    &__list-area {
-      display: flex;
-      justify-content: center;
-    }
-  }
-}
+//     &__list-area {
+//       display: flex;
+//       justify-content: center;
+//     }
+//   }
+// }

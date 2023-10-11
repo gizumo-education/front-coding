@@ -5,9 +5,12 @@
   padding: 100px;
 
   &__inner {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     text-align: center;
+    @include utility.sp {
+      margin: 0 10px;
+    }
   }
 
   &__title {
@@ -30,6 +33,13 @@
     position: relative;
     width: 380px;
     border-radius: 10px;
+    @include utility.tab {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
   }
 
   &__card::after {
@@ -68,6 +78,15 @@
       font-weight: 400;
       line-height: normal;
       margin-top: 50px;
+    }
+    @include utility.tab {
+      h3 {
+        font-size: 0.25rem;
+      }
+      span {
+        font-size: 0.5vw;
+        margin-top: 20px;
+      }
     }
   }
 

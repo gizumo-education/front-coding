@@ -40,8 +40,8 @@
     </header>
 
     <main class="l-main">
-      <ul class="p-home">
-        <li class="p-home__pic">
+      <div class="p-home">
+        <div class="p-home__pic">
           <img
             src="./img/picture/home/home.png"
             alt="home"
@@ -52,34 +52,37 @@
             alt="home"
             class="p-home__sp-home"
           />
-        </li>
 
-        <li class="p-home__keyvisual">
-          <img
-            src="./img/picture/home/keyvisual.png"
-            alt="keyvisual"
-            class="p-home__pc-key"
-          />
-          <img
-            src="./img/picture/home/sp-keyvisual.png"
-            alt="keyvisual"
-            class="p-home__sp-key"
-          />
-        </li>
+          <ul class="p-home__list-area">
+            <li class="p-home__keyvisual">
+              <img
+                src="./img/picture/home/keyvisual.png"
+                alt="keyvisual"
+                class="p-home__pc-key"
+              />
+              <img
+                src="./img/picture/home/sp-keyvisual.png"
+                alt="keyvisual"
+                class="p-home__sp-key"
+              />
+            </li>
 
-        <li class="p-home__job-search">
-          <h1>
-            <img
-              src="./img/picture/home/job-search.png"
-              alt="医療事務求人を探すならギズジョブ"
-            />
-          </h1>
-        </li>
+            <li>
+              <h1>
+                <img
+                  src="./img/picture/home/job-search.png"
+                  alt="医療事務求人を探すならギズジョブ"
+                  class="p-home__job-search"
+                />
+              </h1>
+            </li>
 
-        <li class="p-home__job-offer">
-          現在の求人掲載数：<span>2,320</span>件
-        </li>
-      </ul>
+            <li class="p-home__job-offer">
+              現在の求人掲載数：<span>2,320</span>件
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <div class="p-search">
         <div class="p-search__inner">
@@ -88,71 +91,64 @@
             <span> 働きたい職種・地域・希望給料を入れて検索！ </span>
           </div>
 
-          <form>
-            <ul class="p-search__select-area">
-              <li class="p-search__select">
-                <select>
-                  <option value="医療事務" selected>医療事務</option>
-                  <option value="調剤事務">調剤事務</option>
-                  <option value="診療情報管理士">診療情報管理士</option>
-                  <option value="歯科助手">歯科助手</option>
-                  <option value="歯科事務">歯科事務</option>
-                  <option value="看護補助・看護助手">看護補助・看護助手</option>
-                  <option value="病院内SE">病院内SE</option>
-                </select>
-                <img
-                  src="./img/picture/home/down-arrow.png"
-                  alt="down-arrow"
-                  class="p-search__down-arrow"
-                />
-              </li>
-              <li class="p-search__select">
-                <select>
-                  <option value="東京都" selected>東京都</option>
-                  <option value="茨城県">茨城県</option>
-                  <option value="神奈川県">神奈川県</option>
-                  <option value="群馬県">群馬県</option>
-                  <option value="埼玉県">埼玉県</option>
-                  <option value="千葉県">千葉県</option>
-                  <option value="栃木県">栃木県</option>
-                </select>
-                <img
-                  src="./img/picture/home/down-arrow.png"
-                  alt="down-arrow"
-                  class="p-search__down-arrow"
-                />
-              </li>
-              <li class="p-search__select">
-                <select>
-                  <option value="月給17万〜">月給17万〜</option>
-                  <option value="月給18万〜">月給18万〜</option>
-                  <option value="月給19万〜">月給19万〜</option>
-                  <option value="月給20万〜" selected>月給20万〜</option>
-                  <option value="月給21万〜">月給21万〜</option>
-                  <option value="月給22万〜">月給22万〜</option>
-                  <option value="月給23万〜">月給23万〜</option>
-                </select>
-                <img
-                  src="./img/picture/home/down-arrow.png"
-                  alt="down-arrow"
-                  class="p-search__down-arrow"
-                />
-              </li>
-              <li class="p-search__input">
-                <input
-                  type="text"
-                  class="keyword"
-                  placeholder="キーワード・企業名・スキルなど"
-                />
-              </li>
-              <button href="" class="p-search__button">
-                <img
-                  src="./img/picture/home/work-search.png"
-                  alt="search-icon"
-                />
-                検索する
-              </button>
-            </ul>
+          <form class="p-search__form-area">
+            <div class="p-search__select-area">
+              <select class="p-search__select">
+                <option value="医療事務" selected>医療事務</option>
+                <option value="調剤事務">調剤事務</option>
+                <option value="診療情報管理士">診療情報管理士</option>
+                <option value="歯科助手">歯科助手</option>
+                <option value="歯科事務">歯科事務</option>
+                <option value="看護補助・看護助手">看護補助・看護助手</option>
+                <option value="病院内SE">病院内SE</option>
+              </select>
+              <img
+                src="./img/picture/home/down-arrow.png"
+                alt="down-arrow"
+                class="p-search__down-arrow"
+              />
+            </div>
+            <div class="p-search__select-area">
+              <select class="p-search__select">
+                <option value="東京都" selected>東京都</option>
+                <option value="茨城県">茨城県</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="栃木県">栃木県</option>
+              </select>
+              <img
+                src="./img/picture/home/down-arrow.png"
+                alt="down-arrow"
+                class="p-search__down-arrow"
+              />
+            </div>
+            <div class="p-search__select-area">
+              <select class="p-search__select">
+                <option value="月給17万〜">月給17万〜</option>
+                <option value="月給18万〜">月給18万〜</option>
+                <option value="月給19万〜">月給19万〜</option>
+                <option value="月給20万〜" selected>月給20万〜</option>
+                <option value="月給21万〜">月給21万〜</option>
+                <option value="月給22万〜">月給22万〜</option>
+                <option value="月給23万〜">月給23万〜</option>
+              </select>
+              <img
+                src="./img/picture/home/down-arrow.png"
+                alt="down-arrow"
+                class="p-search__down-arrow"
+              />
+            </div>
+            <input
+              type="text"
+              class="p-search__input"
+              placeholder="キーワード・企業名・スキルなど"
+            />
+            <button href="" class="p-search__button">
+              <img src="./img/picture/home/work-search.png" alt="search-icon" />
+              検索する
+            </button>
           </form>
         </div>
       </div>
@@ -449,9 +445,9 @@
             <span> 働きたい職種・地域・希望給料を入れて検索！ </span>
           </div>
 
-          <ul class="p-search__select-area">
-            <li class="p-search__select">
-              <select>
+          <form class="p-search__form-area">
+            <div class="p-search__select-area">
+              <select class="p-search__select">
                 <option value="医療事務" selected>医療事務</option>
                 <option value="調剤事務">調剤事務</option>
                 <option value="診療情報管理士">診療情報管理士</option>
@@ -465,9 +461,9 @@
                 alt="down-arrow"
                 class="p-search__down-arrow"
               />
-            </li>
-            <li class="p-search__select">
-              <select>
+            </div>
+            <div class="p-search__select-area">
+              <select class="p-search__select">
                 <option value="東京都" selected>東京都</option>
                 <option value="茨城県">茨城県</option>
                 <option value="神奈川県">神奈川県</option>
@@ -481,9 +477,9 @@
                 alt="down-arrow"
                 class="p-search__down-arrow"
               />
-            </li>
-            <li class="p-search__select">
-              <select>
+            </div>
+            <div class="p-search__select-area">
+              <select class="p-search__select">
                 <option value="月給17万〜">月給17万〜</option>
                 <option value="月給18万〜">月給18万〜</option>
                 <option value="月給19万〜">月給19万〜</option>
@@ -497,19 +493,17 @@
                 alt="down-arrow"
                 class="p-search__down-arrow"
               />
-            </li>
-            <li class="p-search__input">
-              <input
-                type="text"
-                class="keyword"
-                placeholder="キーワード・企業名・スキルなど"
-              />
-            </li>
+            </div>
+            <input
+              type="text"
+              class="p-search__input"
+              placeholder="キーワード・企業名・スキルなど"
+            />
             <button href="" class="p-search__button">
-              <img src="./img/picture/home/work-search.png" alt="work-search" />
+              <img src="./img/picture/home/work-search.png" alt="search-icon" />
               検索する
             </button>
-          </ul>
+          </form>
         </div>
       </div>
     </main>
