@@ -2,7 +2,6 @@
 
 .p-feature {
   &__area {
-    height: 478px;
     margin-top: 106px;
   }
   &__title {
@@ -16,32 +15,36 @@
     margin-top: 53px;
   }
   &__item {
-    width: 570px;
-    background-color: utility.$featurePink;
-    margin-top: 40px;
-    border-radius: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    &:nth-child(odd) {
-      margin-right: 40px;
-    }
-    &:nth-child(-n+2) {
-      margin-top: 0;
-    }
+    padding: 40px 47px;
     &__title {
       font-size: 24px;
       color: utility.$pink;
       font-weight: utility.$bold;
-      margin-top: 40px;
     }
     &__content {
       font-size: 14px;
       line-height: 20.27px;
       margin-top: 36px;
       height: 60px;
-      margin-bottom: 30px;
+      width: 475px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__wrap {
+      background-color: utility.$featurePink;
+      margin-top: 40px;
+      border-radius: 10px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &:nth-child(odd) {
+        margin-right: 40px;
+      }
+      &:nth-child(-n+2) {
+        margin-top: 0;
+      }
     }
   }
 }

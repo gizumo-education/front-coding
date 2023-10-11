@@ -24,7 +24,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-top: -10px;
+      width: 237px;
+      margin: -10px auto 42px auto;
       &>img {
         height: 100px;
       }
@@ -56,9 +57,7 @@
     &__content {
       margin-top: 18px;
       font-size: 14px;
-      width: 237px;
       line-height: 20.27px;
-      margin-bottom: 42px;
     }
   }
   &__triangle {
