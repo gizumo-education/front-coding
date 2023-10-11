@@ -3,6 +3,14 @@
 .p-jobchange {
   width: 100%;
   text-align: center;
+  @include utility.sp {
+    &__list-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
 
   &__inner {
     max-width: 1180px;
@@ -10,6 +18,10 @@
     margin: 0 auto;
     @include utility.tab {
       padding: 0 10px;
+    }
+    @include utility.sp {
+      width: auto;
+      height: 1700px;
     }
   }
 
@@ -94,28 +106,26 @@
     right: -20px;
     width: 20px;
     height: 35px !important;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .p-jobchange {
-    &__inner {
-      width: auto;
-      height: 1700px;
-    }
-
-    &__list-area {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 40px;
-    }
-
-    &__yajirusi {
-      position: absolute;
+    @include utility.sp {
       bottom: -40px !important;
-      right: 47% !important;
+      right: 46% !important;
       transform: rotate(90deg);
     }
   }
 }
+
+// @media screen and (max-width: 767px) {
+//   .p-jobchange {
+//     &__inner {
+//       width: auto;
+//       height: 1700px;
+//     }
+
+//     &__list-area {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       gap: 40px;
+//     }
+//   }
+// }

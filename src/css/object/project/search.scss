@@ -1,182 +1,11 @@
 @use "../../object/utility/utility.scss";
 
-// .p-search {
-//   width: 100%;
-//   background-color: utility.$white;
-//   padding: 80px 0px;
-
-//   &__inner {
-//     width: 1180px;
-//     flex-shrink: 0;
-//     margin: 0 auto;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     text-align: center;
-//     background-color: utility.$searchColor;
-//     border-radius: 10px;
-//     padding: 40px;
-//   }
-
-//   &__desc {
-//     h2 {
-//       color: utility.$black;
-//       font-family: Noto Sans JP;
-//       font-size: 25px;
-//       font-style: normal;
-//       font-weight: 700;
-//       line-height: 25px; /* 100% */
-//     }
-
-//     span {
-//       display: inline-block;
-//       color: utility.$black;
-//       font-family: Noto Sans JP;
-//       font-size: 20px;
-//       font-style: normal;
-//       font-weight: 400;
-//       line-height: normal;
-//       margin-top: 20px;
-//     }
-//   }
-
-//   &__select-area {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     align-items: center;
-//     margin-top: 20px;
-//   }
-
-//   &__select {
-//     position: relative;
-//     select {
-//       font-size: 18px;
-//       padding: 15px 10px;
-//       width: 200px;
-//       border: 1px solid utility.$pink;
-//       border-radius: 5px;
-//       appearance: none;
-//       outline: none;
-//       cursor: pointer;
-//       margin-right: 10px;
-//       background-color: utility.$white;
-//     }
-//   }
-
-//   &__input {
-//     input {
-//       width: 299px;
-//       border: 1px solid utility.$pink;
-//       border-radius: 5px;
-//       outline: none;
-//       cursor: pointer;
-//       margin-right: 10px;
-//       padding: 19px 10px 14px;
-//     }
-
-//     input::placeholder {
-//       font-size: 18px;
-//       font-weight: 400;
-//     }
-//   }
-
-//   &__down-arrow {
-//     position: absolute;
-//     top: 20px;
-//     right: 20px;
-//   }
-
-//   &__button {
-//     display: flex;
-//     align-items: center;
-//     width: 130px;
-//     height: 55px;
-//     background-color: utility.$buttonPink;
-//     color: utility.$white;
-//     border-radius: 40px;
-//     justify-content: center;
-//     cursor: pointer;
-//     color: utility.$white;
-//     font-family: Noto Sans JP;
-//     font-size: 18px;
-//     font-style: normal;
-//     font-weight: 700;
-//     line-height: 18px;
-//     border: none;
-//     transition: 0.3s all;
-//     img {
-//       margin-right: 5px;
-//     }
-//   }
-
-//   &__button:hover {
-//     opacity: 0.7;
-//   }
-// }
-
-// @media screen and (max-width: 767px) {
-//   .p-search {
-//     padding: 80px 10px;
-//     &__inner {
-//       width: auto;
-//       padding: 40px 15px !important;
-//     }
-//     &__select-area {
-//       display: flex;
-//       flex-wrap: wrap;
-//       justify-content: center;
-//       align-items: center;
-//       margin-top: 20px;
-//       gap: 10px;
-//     }
-//     &__select {
-//       position: relative;
-//       width: 100px;
-//       select {
-//         font-size: 0.03rem;
-//         padding: 8px !important;
-//         width: 100px !important;
-//       }
-//     }
-//     &__input {
-//       input {
-//         width: 343px !important;
-//         border: 1px solid utility.$pink;
-//         border-radius: 5px;
-//         outline: none;
-//         cursor: pointer;
-//         margin-right: 0px !important;
-//         padding: 10px 10px 4px !important;
-//       }
-
-//       input::placeholder {
-//         font-size: 18px;
-//         font-weight: 400;
-//       }
-//     }
-//     &__down-arrow {
-//       width: 13px;
-//       position: absolute;
-//       top: 10px;
-//       right: 15px;
-//     }
-//     &__button {
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       font-size: 15px;
-//       height: 40px !important;
-//       img {
-//         width: 20px;
-//         margin-right: 20px;
-//       }
-//     }
-//   }
-// }
 .p-search {
   margin: 60px 0;
   @include utility.tab {
+    padding: 0 10px !important;
+  }
+  @include utility.sp {
     padding: 0 10px !important;
   }
   &__inner {
@@ -223,6 +52,7 @@
     justify-content: center;
     gap: 10px;
     margin-top: 26px;
+    align-items: center;
     @include utility.sp {
       flex-wrap: wrap;
       & > input {
@@ -237,6 +67,7 @@
       border-radius: 10px;
       padding: 0px 0px 0px 10px;
       border: 1px solid utility.$pink;
+      outline: none;
     }
     & > input::placeholder {
       color: #a4a4a4;
@@ -250,6 +81,16 @@
       }
       & > input::placeholder {
         font-size: 0.15rem;
+      }
+    }
+    @include utility.sp {
+      & > input {
+        width: 320px !important;
+        height: 30px !important;
+      }
+      & > input::placeholder {
+        font-size: 0.12rem;
+        margin-top: 5px;
       }
     }
   }
@@ -267,8 +108,9 @@
       font-family: Noto Sans JP;
       font-size: 18px;
       font-weight: 400;
+      outline: none;
       @include utility.sp {
-        width: 20vw !important;
+        width: 25vw !important;
         height: 30px !important;
         font-size: 0.07rem;
         border-radius: 5px;
@@ -309,6 +151,10 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
+    transition: 0.3s all;
+    &:hover {
+      opacity: 0.7;
+    }
     & > img {
       margin: 0 10px;
     }
@@ -318,6 +164,9 @@
       & > img {
         width: 2.5vw;
       }
+    }
+    @include utility.sp {
+      height: 50px !important;
     }
   }
 }

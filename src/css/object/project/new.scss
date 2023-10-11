@@ -7,6 +7,12 @@
   &__inner {
     max-width: 1180px;
     margin: 0 auto;
+    @include utility.sp {
+      padding: 0 10px;
+    }
+    @include utility.tab {
+      padding: 0 10px;
+    }
   }
 
   &__title {
@@ -22,9 +28,12 @@
   }
 
   &__cards {
+    position: relative;
     display: flex;
     margin-top: 25px;
+    gap: 10px;
     @include utility.sp {
+      justify-content: center;
       & > li:nth-child(2),
       & > li:nth-child(3),
       & > li:nth-child(4) {
@@ -34,7 +43,7 @@
 
     & > li {
       text-align: left;
-      margin-left: 10px;
+      border-radius: 20px;
     }
 
     & > li:first-child {
@@ -92,7 +101,7 @@
     font-weight: 700;
     margin: 80px auto 0;
     @include utility.sp {
-      width: auto;
+      width: 300px;
     }
   }
 
@@ -154,21 +163,3 @@
     transform: rotate(-45deg);
   }
 }
-
-// @media screen and (max-width: 767px) {
-//   .p-new {
-//     padding: 100px 20px !important;
-//     &__inner {
-//       width: auto;
-//     }
-//     &__cards {
-//       display: flex;
-//       margin-top: 25px;
-//       & > li:nth-child(2),
-//       & > li:nth-child(3),
-//       & > li:nth-child(4) {
-//         display: none;
-//       }
-//     }
-//   }
-// }
