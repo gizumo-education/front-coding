@@ -2,12 +2,11 @@
   .p-news {
     background-color: utility.$bgLightBlue;
     margin-top: 60px;
-
+    padding-top: 64px;
 
     &__header {
       font-size: 25px;
       font-weight: utility.$regular;
-      padding-top: 64px;
     }
 
     &__items {
