@@ -9,7 +9,7 @@
     margin: 0 auto;
     text-align: center;
     @include utility.sp {
-      padding: 0.16rem 0.15rem !important;
+      padding: 0 10px;
     }
   }
 
@@ -19,6 +19,9 @@
     justify-content: space-between;
     gap: 40px;
     margin-top: 50px;
+    @include utility.tab {
+      justify-content: center;
+    }
     @include utility.sp {
       justify-content: center;
     }
@@ -34,7 +37,7 @@
   }
 
   &__list {
-    width: 570px;
+    max-width: 570px;
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
