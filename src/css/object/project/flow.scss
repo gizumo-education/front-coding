@@ -20,7 +20,6 @@
   }
 
   &__item {
-    text-align: center;
     width: 280px;
     height: 360px;
     border: 2px solid utility.$btnRed;
@@ -43,6 +42,7 @@
       font-weight: utility.$regular;
       margin: 18px 20px 0;
       line-height: 20px;
+      text-align: left;
     }
 
     &__r {
@@ -50,6 +50,7 @@
       font-weight: utility.$regular;
       margin: 42px 20px 0;
       line-height: 20px;
+      text-align: left;
     }
 
   }

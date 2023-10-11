@@ -24,6 +24,11 @@
     background-image: url(../img/picture/pen.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+      & a {
+        display: block;
+        height: 240px;
+      }
   }
 
   &__item_c {
@@ -32,6 +37,11 @@
     background-image: url(../img/picture/pc.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+    & a {
+      display: block;
+      height: 240px;
+    }
   }
 
   &__inner {
