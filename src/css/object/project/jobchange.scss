@@ -3,13 +3,25 @@
 .p-jobchange {
   width: 100%;
   text-align: center;
+  @include utility.sp {
+    &__list-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
 
   &__inner {
     max-width: 1180px;
     height: 435px;
     margin: 0 auto;
+    @include utility.tab {
+      padding: 0 10px;
+    }
     @include utility.sp {
-      height: 1600px !important;
+      width: auto;
+      height: 1700px;
     }
   }
 
@@ -18,20 +30,14 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
-    @include utility.sp {
-      flex-direction: column;
-      justify-content: center;
-      gap: 40px;
-    }
   }
 
   &__title {
     color: utility.$black;
     font-family: Noto Sans JP;
     font-size: 25px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 25px; /* 100% */
+    line-height: 25px;
   }
 
   &__list {
@@ -42,6 +48,12 @@
     border: 1px solid utility.$pink;
     border-radius: 10px;
     padding: 60px 20px 30px;
+    @include utility.tab {
+      margin-left: 17px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
 
     img {
       height: 90px;
@@ -95,9 +107,9 @@
     width: 20px;
     height: 35px !important;
     @include utility.sp {
-      bottom: -40px;
+      bottom: -40px !important;
+      right: 46% !important;
       transform: rotate(90deg);
-      right: 47%;
     }
   }
 }
