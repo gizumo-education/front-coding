@@ -4,13 +4,16 @@
   width: 100%;
   padding: 100px;
   @include utility.sp {
-    padding: 100px 20px !important;
+    padding: 100px 10px !important;
   }
 
   &__inner {
     max-width: 1180px;
     margin: 0 auto;
     text-align: center;
+    @include utility.sp {
+      margin: 0 10px;
+    }
   }
 
   &__title {
@@ -25,22 +28,31 @@
   &__list-area {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
     @include utility.sp {
-      flex-wrap: wrap;
+      flex-direction: column;
       justify-content: center;
-      gap: 20px;
+      gap: 50px;
     }
   }
 
   &__list {
     position: relative;
+    max-width: 380px;
     border-radius: 10px;
+    @include utility.tab {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
   }
 
   &__card::after {
-    content: "";
     position: absolute;
+    content: "";
     top: 0;
     left: 0;
     width: 100%;
@@ -75,6 +87,15 @@
       line-height: normal;
       margin-top: 50px;
     }
+    @include utility.tab {
+      h3 {
+        font-size: 0.25rem;
+      }
+      span {
+        font-size: 0.5vw;
+        margin-top: 20px;
+      }
+    }
   }
 
   &__button {
@@ -90,7 +111,11 @@
     border-radius: 40px;
     margin-top: 100px;
     @include utility.sp {
-      padding: 21px 50px !important;
+      display: flex;
+      justify-content: center;
+      font-size: 0.2rem;
+      padding: 0.2rem 0.4rem !important;
+      border-radius: 40px;
     }
   }
 }
