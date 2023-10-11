@@ -59,6 +59,9 @@
       font-size: 0.16rem;
       margin-left: 0.1rem;
     }
+    @include utility.sp {
+      font-size: 0.14rem;
+    }
     &__itemname {
       margin-top: 10px;
       line-height: 22px;
@@ -67,6 +70,7 @@
         line-height: 0.22rem;
       }
       @include utility.sp {
+        line-height: 0.22rem;
         font: {
           size: 0.16rem;
           weight: utility.$bold;
@@ -120,4 +124,73 @@
       margin-top: 0.45rem;
     }
   }
+}
+
+
+.slick-list {
+  // width: 100%;
+}
+.slick-track {
+  display: flex;
+  // gap: 0 20px;
+}
+.slick-slide {
+  width: 100%;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  // border-top: 2px solid utility.$black;/*矢印の色*/
+  // border-right: 2px solid utility.$black;/*矢印の色*/
+  @include utility.sp {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+}
+
+.slick-prev {
+  color: #000;
+  z-index: 20;
+  left: 10px;
+}
+.slick-next {
+  z-index: 20;
+  right: 10px;
+  color: #000;
+}
+.slick-prev::before,
+.slick-next::before {
+  font-size: 60px;
+  opacity: .7;
+}
+
+// ↓PC表示にあるslickのbefore.afterに矢印もどきを記述してみましたがそもそもボタンではなかったので関係ないみたいでした。
+.slick-track:before {
+  background-color: #333;
+  bottom: 0;
+  height: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  width: 0;
+  border-bottom: 10px solid  #333;
+  border-left: 0;
+  border-right: 10px solid #fff;
+  border-top: 10px solid  #333;
+}
+.slick-track::after {
+  background-color: #333;
+  bottom: 0;
+  height: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  width: 0;
+  border-bottom: 10px solid  #333;
+  border-left: 0;
+  border-right: 10px solid #fff;
+  border-top: 10px solid  #333;
 }
