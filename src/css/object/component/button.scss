@@ -2,28 +2,25 @@
 // 共通パーツであるボタンのスタイルを記述するファイル
 
 .c-search {
-  cursor: pointer;
-  width: 140px;
-  height: 60px;
-  background-color: utility.$pink;
-  color: utility.$white;
-  font-weight: utility.$bold;
-  font-size: 18px;
   border: none;
-  border-radius: 100px;
   transition: .3s all;
+  padding: 0;
+  background-color: transparent;
   &:hover {
     opacity: .7;
   }
-
-  &::before {
-    content: '';
-    width: 29.98px;
-    height: 29.98px;
-    display: inline-block;
+  &>p {
     background: url(../img/icon/icon-search-white.png) no-repeat;
-    vertical-align: middle;
-    margin-right: 4px;
+    background-position: center left 14.02px;
+    background-size: 29.98px;
+    cursor: pointer;
+    padding: 21px 20px 21px 48px;
+    background-color: utility.$pink;
+    color: utility.$white;
+    font-weight: utility.$bold;
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 100px;
   }
 }
 
