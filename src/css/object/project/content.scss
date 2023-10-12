@@ -101,10 +101,13 @@
         width: 2.56rem;
         font-size: 0.16rem;
         margin-top: 0.5rem;
+        line-height: 1.4;
       }
     }
     @include utility.sp {
-      line-height: 1.4;
+      span {
+        line-height: 1.4;
+      }
     }
   }
 
