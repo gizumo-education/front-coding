@@ -1,0 +1,50 @@
+@use '../../object/utility/utility.scss';
+
+.p-helpful {
+  &__area {
+    margin-top: 105px;
+  }
+  &__title {
+    @include utility.title;
+  }
+  &__flex {
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+  }
+  &__contents {
+    width: 380px;
+    height: 240px;
+    margin-right: 20px;
+    border-radius: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:nth-child(1) {
+      background: url(../img/picture/helpful_photo1.jpg) no-repeat;
+      @include utility.overlay;
+    }
+    &:nth-child(2) {
+      background: url(../img/picture/helpful_photo2.jpg) no-repeat;
+      @include utility.overlay;
+    }
+    &:nth-child(3) {
+      background: url(../img/picture/helpful_photo3.jpg) no-repeat;
+      @include utility.overlay;
+    }
+    &__title {
+      font-size: 24px;
+      color: utility.$white;
+      font-weight: utility.$bold;
+    }
+    &__content {
+      font-size: 16px;
+      color: utility.$white;
+      margin-top: 45px;
+      line-height: 23.17px;
+    }
+  }
+  &__btn {
+    margin-top: 80px;
+  }
+}

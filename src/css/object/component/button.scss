@@ -1,2 +1,38 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-search {
+  border: none;
+  transition: .3s all;
+  padding: 0;
+  background-color: transparent;
+  &:hover {
+    opacity: .7;
+  }
+  &>p {
+    background: url(../img/icon/icon-search-white.png) no-repeat;
+    background-position: center left 14.02px;
+    background-size: 29.98px;
+    cursor: pointer;
+    padding: 21px 20px 21px 48px;
+    background-color: utility.$pink;
+    color: utility.$white;
+    font-weight: utility.$bold;
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 100px;
+  }
+}
+
+.c-more {
+  padding: 21px 93px;
+  background-color: utility.$pink;
+  color: utility.$white;
+  font-weight: utility.$bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 100px;
+  width: 420px;
+  margin: 0 auto;
+  display: block;
+}

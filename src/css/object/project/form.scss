@@ -1,0 +1,69 @@
+@use '../../object/utility/utility.scss';
+
+.p-form {
+ &__area {
+    margin: 60px auto;
+    padding: 40px 0;
+    background-color: utility.$formLightblue;
+    text-align: center;
+    border-radius: 10px;
+  }
+  &__title {
+    font-weight: utility.$bold;
+    font-size: 25px;
+  }
+  &__subtitle {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  &__select {
+    display: flex;
+    margin-top: 26px;
+    justify-content: center;
+    &__area {
+      position: relative;
+      &::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid utility.$linePink;
+        position: absolute;
+        top: 50%;
+        right: 29px;
+        transform: translateY(-50%);
+      }
+    }
+    &__pulldown {
+      width: 200px;
+      height: 60px;
+      border-radius: 10px;
+      border: 1px solid utility.$linePink;
+      margin-right: 15px;
+      padding-left: 14.5px;
+      font-size: 18px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      &::-ms-expand {
+        display: none;
+      }
+    }
+    &>input {
+      width: 300px;
+      height: 60px;
+      border-radius: 10px;
+      border: 1px solid utility.$linePink;
+      margin-right: 15px;
+      padding-left: 10px;
+      font-size: 18px;
+    }
+  }
+  &:nth-child(8) &__area {
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+}

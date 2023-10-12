@@ -1,0 +1,50 @@
+@use '../../object/utility/utility.scss';
+
+.p-feature {
+  &__area {
+    margin-top: 106px;
+  }
+  &__title {
+    @include utility.title;
+  }
+  &__item__area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 53px;
+  }
+  &__item {
+    padding: 40px 47px;
+    &__title {
+      font-size: 24px;
+      color: utility.$pink;
+      font-weight: utility.$bold;
+    }
+    &__content {
+      font-size: 14px;
+      line-height: 20.27px;
+      margin-top: 36px;
+      height: 60px;
+      width: 475px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__wrap {
+      background-color: utility.$featurePink;
+      margin-top: 40px;
+      border-radius: 10px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &:nth-child(odd) {
+        margin-right: 40px;
+      }
+      &:nth-child(-n+2) {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use '../../object/utility/utility.scss';
+
+.p-catchcopy {
+  &__area {
+    width: 100%;
+    background: url(../img/picture/bg_discussion.jpg) no-repeat;
+    @include utility.overlay;
+    padding: 103px 0 104px;
+    &>h2 {
+      font-size: 25px;
+      color: utility.$white;
+      font-weight: utility.$bold;
+      margin-top: 21px;
+      text-align: center;
+      line-height: 2.5;
+    }
+    &>h2:first-child {
+      margin-top: 0;
+    }
+  }
+}
