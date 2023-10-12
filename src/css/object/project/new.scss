@@ -1,22 +1,40 @@
 @use "../../object/utility/utility.scss";
 
 .p-new {
-  width: 100%;
-  padding: 100px;
+  padding: 100px 0;
   background-color: utility.$newColor;
+  @include utility.tab {
+    padding: 1rem 0;
+  }
+  @include utility.sp {
+    padding: 0.5rem 0 0.2rem;
+  }
 
   &__inner {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
+    @include utility.tab {
+      width: 11.8rem;
+    }
+    @include utility.sp {
+      width: 100%;
+      padding: 0 0.1rem;
+    }
   }
 
   &__title {
     color: utility.$black;
     font-family: Inter;
     font-size: 25px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    @include utility.tab {
+      font-size: 0.25rem;
+    }
+    @include utility.sp {
+      font-size: 0.25rem;
+      font-weight: 700;
+      text-align: center;
+    }
   }
 
   &__card-area {
@@ -25,12 +43,14 @@
   }
 
   &__cards {
+    position: relative;
     display: flex;
     margin-top: 25px;
+    gap: 10px;
 
     & > li {
       text-align: left;
-      margin-left: 10px;
+      border-radius: 20px;
     }
 
     & > li:first-child {
@@ -45,10 +65,28 @@
       color: utility.$black;
       font-family: Noto Sans JP;
       font-size: 16px;
-      font-style: normal;
       font-weight: 400;
       line-height: 22px;
       margin-top: 10px;
+    }
+    @include utility.tab {
+      margin-top: 0.25rem;
+      gap: 0.1rem;
+
+      p {
+        font-size: 0.16rem;
+        line-height: 0.22rem;
+        margin-top: 0.1rem;
+      }
+    }
+    @include utility.sp {
+      justify-content: center;
+      margin-top: 0.3rem;
+      & > li:nth-child(2),
+      & > li:nth-child(3),
+      & > li:nth-child(4) {
+        display: none;
+      }
     }
   }
 
@@ -69,10 +107,20 @@
       color: utility.$black;
       font-family: Inter;
       font-size: 14px;
-      font-style: normal;
       font-weight: 400;
-      line-height: normal;
       padding-top: 10px;
+    }
+    @include utility.tab {
+      height: 0.28rem;
+      p {
+        width: 0.6rem;
+        height: 0.21rem;
+        margin-right: 0.1rem;
+      }
+      span {
+        font-size: 0.14rem;
+        padding-top: 0.1rem;
+      }
     }
   }
 
@@ -88,47 +136,44 @@
     border-radius: 40px;
     font-family: Noto Sans JP;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    margin: 80px auto 0;
+    margin: 80px auto;
+    @include utility.tab {
+      width: 3.6rem;
+      height: 0.6rem;
+      font-size: 0.18rem;
+      margin: 0.8rem auto;
+    }
+    @include utility.sp {
+      width: auto;
+      height: auto;
+      padding: 0.2rem;
+      border-radius: 0.4rem;
+      margin: 0.5rem auto 0.4rem;
+    }
+  }
+
+  &__prev-area,
+  &__next-area {
+    position: absolute;
+    top: 100px;
+    @include utility.tab {
+      top: 1rem;
+    }
+    @include utility.sp {
+      top: 1.4rem;
+    }
   }
 
   &__prev-area {
-    position: absolute;
-    top: 100px;
     left: 0;
   }
 
   &__next-area {
-    position: absolute;
-    top: 100px;
     right: 0;
   }
 
-  &__prev {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background-color: utility.$white;
-    border-radius: 50%;
-    opacity: 0.7;
-    cursor: pointer;
-  }
-
-  &__prev::after {
-    content: "";
-    position: absolute;
-    top: 19px;
-    left: 25px;
-    display: flex;
-    width: 20px;
-    height: 20px;
-    border-bottom: 1px solid utility.$black;
-    border-right: 1px solid utility.$black;
-    transform: rotate(135deg);
-  }
-
+  &__prev,
   &__next {
     position: relative;
     width: 60px;
@@ -137,18 +182,57 @@
     border-radius: 50%;
     opacity: 0.7;
     cursor: pointer;
+    @include utility.tab {
+      width: 0.6rem;
+      height: 0.6rem;
+    }
+    @include utility.sp {
+      width: 0.55rem;
+      height: 0.55rem;
+    }
   }
 
+  &__prev::after,
   &__next::after {
     content: "";
     position: absolute;
     top: 19px;
-    right: 25px;
     display: flex;
     width: 20px;
     height: 20px;
     border-bottom: 1px solid utility.$black;
     border-right: 1px solid utility.$black;
+    @include utility.tab {
+      top: 0.19rem;
+      width: 0.2rem;
+      height: 0.2rem;
+    }
+    @include utility.sp {
+      top: 0.2rem;
+      width: 0.15rem;
+      height: 0.15rem;
+    }
+  }
+
+  &__prev::after {
+    left: 25px;
+    transform: rotate(135deg);
+    @include utility.tab {
+      left: 0.25rem;
+    }
+    @include utility.sp {
+      left: 0.24rem;
+    }
+  }
+
+  &__next::after {
+    right: 25px;
     transform: rotate(-45deg);
+    @include utility.tab {
+      right: 0.25rem;
+    }
+    @include utility.sp {
+      right: 0.24rem;
+    }
   }
 }

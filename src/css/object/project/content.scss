@@ -3,36 +3,64 @@
 .p-content {
   width: 100%;
   padding: 100px;
+  @include utility.tab {
+    padding: 1rem 0;
+  }
+  @include utility.sp {
+    padding: 0.5rem 0.1rem;
+  }
 
   &__inner {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     text-align: center;
+    @include utility.tab {
+      width: 11.8rem;
+    }
+    @include utility.sp {
+      width: 100%;
+    }
   }
 
   &__title {
     color: utility.$black;
     font-family: Noto Sans JP;
     font-size: 25px;
-    font-style: normal;
     font-weight: 700;
     line-height: 25px;
+    @include utility.tab {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
   }
 
   &__list-area {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
+    gap: 10px;
+    @include utility.tab {
+      margin-top: 0.5rem;
+    }
+    @include utility.sp {
+      flex-direction: column;
+      gap: 0.2rem;
+      margin-top: 0.3rem;
+    }
   }
 
   &__list {
     position: relative;
+    // width: 380px;
     border-radius: 10px;
+    @include utility.tab {
+      width: 3.8rem;
+    }
   }
-
   &__card::after {
-    content: "";
     position: absolute;
+    content: "";
     top: 0;
     left: 0;
     width: 100%;
@@ -53,7 +81,6 @@
     h3 {
       font-family: Noto Sans JP;
       font-size: 24px;
-      font-style: normal;
       font-weight: 700;
       line-height: 24px;
     }
@@ -62,24 +89,50 @@
       width: 256px;
       font-family: Noto Sans JP;
       font-size: 16px;
-      font-style: normal;
       font-weight: 400;
-      line-height: normal;
       margin-top: 50px;
+    }
+    @include utility.tab {
+      h3 {
+        font-size: 0.24rem;
+        line-height: 0.24rem;
+      }
+      span {
+        width: 2.56rem;
+        font-size: 0.16rem;
+        margin-top: 0.5rem;
+        line-height: 1.4;
+      }
+    }
+    @include utility.sp {
+      span {
+        line-height: 1.4;
+      }
     }
   }
 
   &__button {
     display: inline-block;
-    color: #fff;
+    color: utility.$white;
     font-family: Noto Sans JP;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 18px;
     background-color: utility.$stepPink;
     padding: 21px 93px;
     border-radius: 40px;
     margin-top: 100px;
+    @include utility.tab {
+      font-size: 0.18rem;
+      line-height: 0.18rem;
+      padding: 0.21rem 0.93rem;
+      margin-top: 1rem;
+    }
+    @include utility.sp {
+      padding: 0.2rem 0.8rem;
+      font-size: 0.147rem;
+      line-height: 0.18rem;
+      margin-top: 0.34rem;
+    }
   }
 }

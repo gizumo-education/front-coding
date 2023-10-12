@@ -1,57 +1,132 @@
 @use "../../object/utility/utility.scss";
 
 .p-home {
-  width: 100%;
-  height: 500px;
-  margin: 0 auto;
   background-color: utility.$homeColor;
-  position: relative;
-
   &__pic {
     width: 1264px;
-    height: 500px;
+    position: relative;
     margin: 0 auto;
-
-    & > img {
+    @include utility.tab {
+      width: 11.8rem;
+    }
+    @include utility.sp {
       width: 100%;
-      height: 100%;
     }
   }
-
   &__keyvisual {
-    position: absolute;
-    top: 70px;
-    right: 450px;
+    width: 341px;
+    margin-left: 200px;
+    @include utility.tab {
+      width: 3.41rem;
+      margin-left: 2rem;
+    }
+    @include utility.sp {
+      width: 70%;
+      margin-left: 0.3rem;
+    }
   }
-
-  &__job-search {
-    position: absolute;
-    bottom: 180px;
-    right: 230px;
+  @include utility.sp {
+    &__pc-home {
+      display: none;
+    }
   }
+  &__sp-home {
+    display: none;
+    @include utility.sp {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+  @include utility.sp {
+    &__pc-key {
+      display: none;
+    }
+  }
+  &__sp-key {
+    display: none;
+    @include utility.sp {
+      width: 5rem;
+      display: block;
+    }
+  }
+  &__list-area {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    text-align: center;
 
+    & > li {
+      margin-top: 30px;
+    }
+
+    & > li:first-child {
+      margin-top: 0;
+    }
+    @include utility.tab {
+      top: 0.6rem;
+      & > li {
+        margin-top: 0.3rem;
+      }
+    }
+    @include utility.sp {
+      width: 65%;
+      top: 17%;
+      & > li {
+        margin-top: 0.1rem;
+      }
+      & > li:last-child {
+        margin-top: 0.3rem;
+      }
+    }
+  }
   &__job-offer {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    bottom: 80px;
-    right: 450px;
+    width: 370px;
     color: utility.$homeGreen;
     font-family: Noto Sans JP;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    width: 388px;
-    height: 66px;
     background-color: utility.$white;
     border: 1px solid utility.$homeGreen;
     border-radius: 6px;
-    padding-bottom: 5px;
+    padding: 10px 0;
+    margin-left: 200px;
     span {
       font-size: 40px;
       font-weight: 700;
+    }
+    @include utility.tab {
+      width: 3.7rem;
+      font-size: 0.2rem;
+      margin-left: 2rem;
+      span {
+        font-size: 0.4rem;
+      }
+    }
+    @include utility.sp {
+      width: 70%;
+      margin-left: 0.4rem;
+      padding: 0.075rem 0 0.065rem;
+      font-size: 0.06rem;
+      span {
+        font-size: 0.16rem;
+      }
+    }
+  }
+  &__sp-job {
+    display: none;
+    @include utility.sp {
+      width: 5rem;
+      display: block;
+    }
+  }
+  &__job-search {
+    width: 800px;
+    @include utility.tab {
+      width: 7rem;
+    }
+    @include utility.sp {
+      display: none;
     }
   }
 }

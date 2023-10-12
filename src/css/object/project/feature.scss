@@ -3,11 +3,24 @@
 .p-feature {
   width: 100%;
   padding: 100px 0;
+  @include utility.tab {
+    padding: 1rem 0;
+  }
+  @include utility.sp {
+    padding: 0.65rem 0.1rem;
+  }
 
   &__inner {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     text-align: center;
+    @include utility.tab {
+      width: 11.8rem;
+    }
+    @include utility.sp {
+      width: auto;
+      margin: 0;
+    }
   }
 
   &__list-area {
@@ -16,19 +29,32 @@
     justify-content: space-between;
     gap: 40px;
     margin-top: 50px;
+    @include utility.tab {
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+    @include utility.sp {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.25rem;
+    }
   }
 
   &__title {
     color: utility.$black;
     font-family: Noto Sans JP;
     font-size: 25px;
-    font-style: normal;
     font-weight: 700;
     line-height: 25px;
+    @include utility.tab {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
   }
 
   &__list {
-    width: 570px;
+    max-width: 570px;
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
@@ -41,7 +67,6 @@
       color: utility.$stepPink;
       font-family: Noto Sans JP;
       font-size: 24px;
-      font-style: normal;
       font-weight: 700;
       line-height: 24px;
     }
@@ -50,10 +75,26 @@
       text-align: center;
       font-family: Noto Sans JP;
       font-size: 14px;
-      font-style: normal;
       font-weight: 400;
-      line-height: normal;
       margin-top: 20px;
+    }
+    @include utility.tab {
+      width: 5.7rem;
+      padding: 0.5rem 0.4rem;
+      h3 {
+        font-size: 0.24rem;
+        line-height: 0.24rem;
+      }
+      p {
+        font-size: 0.14rem;
+        margin-top: 0.2rem;
+        line-height: 1.4;
+      }
+    }
+    @include utility.sp {
+      p {
+        line-height: 1.4;
+      }
     }
   }
 }

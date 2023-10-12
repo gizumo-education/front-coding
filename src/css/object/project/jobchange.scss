@@ -5,9 +5,17 @@
   text-align: center;
 
   &__inner {
-    width: 1180px;
+    max-width: 1180px;
     height: 435px;
     margin: 0 auto;
+    @include utility.tab {
+      width: 11.8rem;
+      height: 4.35rem;
+    }
+    @include utility.sp {
+      width: auto;
+      height: auto;
+    }
   }
 
   &__list-area {
@@ -15,15 +23,25 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    @include utility.tab {
+      margin-top: 0.5rem;
+    }
+    @include utility.sp {
+      flex-direction: column;
+      gap: 0.3rem;
+    }
   }
 
   &__title {
     color: utility.$black;
     font-family: Noto Sans JP;
     font-size: 25px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 25px; /* 100% */
+    line-height: 25px;
+    @include utility.tab {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
   }
 
   &__list {
@@ -44,7 +62,6 @@
       text-align: center;
       font-family: Noto Sans JP;
       font-size: 24px;
-      font-style: normal;
       font-weight: 700;
       line-height: 30px;
       margin-top: 20px;
@@ -55,11 +72,48 @@
       color: utility.$black;
       font-family: Noto Sans JP;
       font-size: 14px;
-      font-style: normal;
       font-weight: 400;
-      line-height: normal;
       margin-top: 20px;
       text-align: left;
+    }
+    @include utility.tab {
+      width: 2.8rem;
+      height: 3.6rem;
+      padding: 0.6rem 0.2rem 0.3rem;
+
+      img {
+        height: 0.9rem;
+      }
+
+      h3 {
+        font-size: 0.24rem;
+        line-height: 0.3rem;
+        margin-top: 0.2rem;
+        height: 0.7rem;
+      }
+
+      p {
+        font-size: 0.14rem;
+        margin-top: 0.2rem;
+        line-height: 1.4;
+      }
+    }
+    @include utility.sp {
+      width: 3rem;
+      height: 2.9rem;
+      border: 0.02rem solid utility.$pink;
+      img {
+        height: 0.74rem;
+      }
+      h3 {
+        font-size: 0.19rem;
+        height: 0.3rem;
+      }
+      p {
+        font-size: 0.14rem;
+        margin-top: 0.27rem;
+        line-height: 1.4;
+      }
     }
   }
 
@@ -77,14 +131,35 @@
       object-fit: contain;
       margin-top: 8px;
     }
+    @include utility.tab {
+      width: 0.6rem;
+      height: 0.6rem !important;
+      top: 0.1rem;
+      left: 0.1rem;
+      img {
+        width: 0.45rem;
+        height: 0.45rem;
+        margin-top: 0.08rem;
+      }
+    }
   }
 
   &__yajirusi {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 50%;
+    transform: translateY(50%);
     right: -20px;
     width: 20px;
     height: 35px !important;
+    @include utility.tab {
+      right: -0.2rem;
+      width: 0.2rem;
+      height: 0.35rem !important;
+    }
+    @include utility.sp {
+      bottom: -0.34rem;
+      right: 46.5%;
+      transform: rotate(90deg);
+    }
   }
 }
