@@ -11,7 +11,7 @@
   }
 
   &__inner {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     text-align: center;
     @include utility.tab {
@@ -19,6 +19,7 @@
     }
     @include utility.sp {
       width: auto;
+      margin: 0;
     }
   }
 
@@ -87,6 +88,11 @@
       p {
         font-size: 0.14rem;
         margin-top: 0.2rem;
+      }
+    }
+    @include utility.sp {
+      p {
+        line-height: 1.4;
       }
     }
   }

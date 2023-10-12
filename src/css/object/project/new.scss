@@ -11,7 +11,7 @@
   }
 
   &__inner {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     @include utility.tab {
       width: 11.8rem;
@@ -145,6 +145,10 @@
       margin: 0.8rem auto;
     }
     @include utility.sp {
+      width: auto;
+      height: auto;
+      padding: 0.2rem;
+      border-radius: 0.4rem;
       margin: 0.5rem auto 0.4rem;
     }
   }
