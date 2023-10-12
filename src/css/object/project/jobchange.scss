@@ -3,25 +3,18 @@
 .p-jobchange {
   width: 100%;
   text-align: center;
-  @include utility.sp {
-    &__list-area {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 40px;
-    }
-  }
 
   &__inner {
-    max-width: 1180px;
+    width: 1180px;
     height: 435px;
     margin: 0 auto;
     @include utility.tab {
-      padding: 0 10px;
+      width: 11.8rem;
+      height: 4.35rem;
     }
     @include utility.sp {
       width: auto;
-      height: 1700px;
+      height: auto;
     }
   }
 
@@ -30,6 +23,13 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    @include utility.tab {
+      margin-top: 0.5rem;
+    }
+    @include utility.sp {
+      flex-direction: column;
+      gap: 0.3rem;
+    }
   }
 
   &__title {
@@ -38,6 +38,10 @@
     font-size: 25px;
     font-weight: 700;
     line-height: 25px;
+    @include utility.tab {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
   }
 
   &__list {
@@ -48,12 +52,6 @@
     border: 1px solid utility.$pink;
     border-radius: 10px;
     padding: 60px 20px 30px;
-    @include utility.tab {
-      margin-left: 17px;
-      &:first-child {
-        margin-left: 0;
-      }
-    }
 
     img {
       height: 90px;
@@ -78,6 +76,42 @@
       margin-top: 20px;
       text-align: left;
     }
+    @include utility.tab {
+      width: 2.8rem;
+      height: 3.6rem;
+      padding: 0.6rem 0.2rem 0.3rem;
+
+      img {
+        height: 0.9rem;
+      }
+
+      h3 {
+        font-size: 0.24rem;
+        line-height: 0.3rem;
+        margin-top: 0.2rem;
+        height: 0.7rem;
+      }
+
+      p {
+        font-size: 0.14rem;
+        margin-top: 0.2rem;
+      }
+    }
+    @include utility.sp {
+      width: 3rem;
+      height: 2.9rem;
+      border: 0.02rem solid utility.$pink;
+      img {
+        height: 0.74rem;
+      }
+      h3 {
+        height: 0.3rem;
+      }
+      p {
+        font-size: 0.14rem;
+        margin-top: 0.4rem;
+      }
+    }
   }
 
   &__step-icon {
@@ -94,6 +128,17 @@
       object-fit: contain;
       margin-top: 8px;
     }
+    @include utility.tab {
+      width: 0.6rem;
+      height: 0.6rem !important;
+      top: 0.1rem;
+      left: 0.1rem;
+      img {
+        width: 0.45rem;
+        height: 0.45rem;
+        margin-top: 0.08rem;
+      }
+    }
   }
 
   &__yajirusi {
@@ -103,9 +148,14 @@
     right: -20px;
     width: 20px;
     height: 35px !important;
+    @include utility.tab {
+      right: -0.2rem;
+      width: 0.2rem;
+      height: 0.35rem !important;
+    }
     @include utility.sp {
-      bottom: -40px !important;
-      right: 46% !important;
+      bottom: -0.34rem;
+      right: 46.5%;
       transform: rotate(90deg);
     }
   }

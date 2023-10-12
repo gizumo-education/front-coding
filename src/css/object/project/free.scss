@@ -31,17 +31,19 @@
     color: utility.$white;
     z-index: 10;
     text-align: center;
+    @include utility.sp {
+      width: 100%;
+    }
     span {
       font-family: Noto Sans JP;
       font-size: 25px;
-      font-style: normal;
       font-weight: 700;
-      line-height: normal;
       @include utility.tab {
-        font-size: 0.2rem;
+        font-size: 0.25rem;
       }
       @include utility.sp {
-        font-size: 0.01vw;
+        font-size: 0.13rem;
+        font-weight: 400;
       }
     }
   }
@@ -49,8 +51,11 @@
   &__mt {
     display: block;
     margin-top: 20px;
+    @include utility.tab {
+      margin-top: 0.2rem;
+    }
     @include utility.sp {
-      margin-top: 0px;
+      margin-top: 0.05rem;
     }
   }
 }

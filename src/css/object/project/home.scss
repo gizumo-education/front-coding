@@ -3,18 +3,30 @@
 .p-home {
   background-color: utility.$homeColor;
   &__pic {
-    max-width: 1264px;
+    width: 1264px;
     position: relative;
     margin: 0 auto;
     @include utility.tab {
-      width: 80vw;
+      width: 11.8rem;
+    }
+    @include utility.sp {
+      width: 100%;
+    }
+  }
+  &__keyvisual {
+    width: 341px;
+    margin-left: 200px;
+    @include utility.tab {
+      width: 3.41rem;
+      margin-left: 2rem;
+    }
+    @include utility.sp {
+      width: 70%;
+      margin-left: 0.3rem;
     }
   }
   @include utility.sp {
     &__pc-home {
-      display: none;
-    }
-    &__pc-key {
       display: none;
     }
   }
@@ -22,15 +34,20 @@
     display: none;
     @include utility.sp {
       width: 100%;
+      object-fit: cover;
       display: block;
+    }
+  }
+  @include utility.sp {
+    &__pc-key {
+      display: none;
     }
   }
   &__sp-key {
     display: none;
     @include utility.sp {
-      width: 35vw;
+      width: 500px;
       display: block;
-      margin-left: 50px;
     }
   }
   &__list-area {
@@ -38,13 +55,7 @@
     top: 50px;
     right: 0px;
     text-align: center;
-    @include utility.sp {
-      width: 60vw;
-      top: 20%;
-      & > li {
-        margin-top: 15px !important;
-      }
-    }
+
     & > li {
       margin-top: 30px;
     }
@@ -53,11 +64,19 @@
       margin-top: 0;
     }
     @include utility.tab {
-      width: 30vw;
-      top: 30px;
-      right: 30px;
+      top: 0.6rem;
       & > li {
-        margin-top: 10px;
+        margin-top: 0.3rem;
+      }
+    }
+    @include utility.sp {
+      width: 65%;
+      top: 17%;
+      & > li {
+        margin-top: 0.1rem;
+      }
+      & > li:last-child {
+        margin-top: 0.3rem;
       }
     }
   }
@@ -70,35 +89,44 @@
     background-color: utility.$white;
     border: 1px solid utility.$homeGreen;
     border-radius: 6px;
-    padding-bottom: 5px;
+    padding: 10px 0;
     margin-left: 200px;
     span {
       font-size: 40px;
       font-weight: 700;
     }
     @include utility.tab {
-      font-size: 0.1rem;
-      width: 25vw;
-      margin-left: 20px !important;
+      width: 3.7rem;
+      font-size: 0.2rem;
+      margin-left: 2rem;
       span {
         font-size: 0.4rem;
       }
     }
     @include utility.sp {
-      width: 47vw;
-      margin-left: 20px;
-      font-size: 0.07rem !important;
+      width: 70%;
+      margin-left: 0.4rem;
+      padding: 0.075rem 0 0.065rem;
+      font-size: 0.06rem;
       span {
-        font-size: 0.2rem !important;
+        font-size: 0.16rem;
       }
     }
   }
+  &__sp-job {
+    display: none;
+    @include utility.sp {
+      width: 5rem;
+      display: block;
+    }
+  }
   &__job-search {
+    width: 800px;
     @include utility.tab {
-      width: 80vw !important;
+      width: 7rem;
     }
     @include utility.sp {
-      max-width: 60vw !important;
+      display: none;
     }
   }
 }
