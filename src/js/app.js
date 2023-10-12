@@ -15,8 +15,6 @@ $(function() {
     } else {
       document.body.style.overflow = 'auto';
     }
-    console.log(hamMenu)
-    console.log(navMenu)
   })
 
   //スライダー表示処理
