@@ -59,6 +59,9 @@
       font-size: 0.16rem;
       margin-left: 0.1rem;
     }
+    @include utility.sp {
+      font-size: 0.14rem;
+    }
     &__itemname {
       margin-top: 10px;
       line-height: 22px;
@@ -67,6 +70,7 @@
         line-height: 0.22rem;
       }
       @include utility.sp {
+        line-height: 0.22rem;
         font: {
           size: 0.16rem;
           weight: utility.$bold;
@@ -121,3 +125,131 @@
     }
   }
 }
+
+.slick-track {
+  display: flex;
+  gap: 0 20px;
+  @include utility.tab {
+    gap: 0 0.2rem;
+  }
+  @include utility.sp {
+    gap: 0;
+  }
+}
+
+.slick-prev {
+  z-index: 20;
+  left: -14px;
+}
+.slick-next {
+  z-index: 20;
+  right: -14px;
+}
+
+.slick-prev::before {
+  content: "";
+  display: inline-block;
+  z-index: 2;
+  width: 25px;
+  height: 25px;
+  border-bottom: solid 1px utility.$black;
+  border-left: solid 1px utility.$black;
+  transform:rotate(45deg);
+  position: absolute;
+  bottom: 67px;
+  left: 63px;
+  @include utility.tab {
+    width: 0.25rem;
+    height: 0.25rem;
+    border-bottom: solid 0.01rem utility.$black;
+    border-left: solid 0.01rem utility.$black;
+    bottom: 0.67rem;
+    left: 0.63rem;
+  }
+  @include utility.sp {
+    width: 0.1rem;
+    height: 0.1rem;
+    border-bottom: solid 0.01rem utility.$black;
+    border-left: solid 0.01rem utility.$black;
+    top: 0.2rem;
+    left: 0.41rem;
+  }
+}
+.slick-prev::after {
+  content:"";
+  width: 60px;
+  height: 60px;
+  background:utility.$white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50px;
+  left: 38px;
+  opacity: .7;
+  @include utility.tab {
+    width: 0.6rem;
+    height: 0.6rem;
+    bottom: 0.5rem;
+    left: 0.38rem;
+  }
+  @include utility.sp {
+    width: 0.42rem;
+    height: 0.42rem;
+    top: 0.04rem;
+    left: 0.23rem;
+  }
+}
+
+.slick-next::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-top: solid 1px utility.$black;
+  border-right: solid 1px utility.$black;
+  transform:rotate(45deg);
+  position: absolute;
+  bottom: 67px;
+  right: 63px;
+  z-index: 2;
+  @include utility.tab {
+    width: 0.25rem;
+    height: 0.25rem;
+    border-top: solid 0.01rem utility.$black;
+    border-right: solid 0.01rem utility.$black;
+    bottom: 0.67rem;
+    right: 0.63rem;
+  }
+  @include utility.sp {
+    width: 0.1rem;
+    height: 0.1rem;
+    border-top: solid 0.01rem utility.$black;
+    border-right: solid 0.01rem utility.$black;
+    top: 0.2rem;
+    right: 0.41rem;
+  }
+}
+
+.slick-next::after {
+    content:"";
+    width: 60px;
+    height: 60px;
+    background:utility.$white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    right: 38px;
+    opacity: .7;
+    @include utility.tab {
+      width: 0.6rem;
+      height: 0.6rem;
+      bottom: 0.5rem;
+      right: 0.38rem;
+    }
+    @include utility.sp {
+      width: 0.42rem;
+      height: 0.42rem;
+      top: 0.04rem;
+      right: 0.23rem;
+    }
+}
+
