@@ -139,9 +139,11 @@
 
 .slick-prev {
   z-index: 20;
+  left: -14px;
 }
 .slick-next {
   z-index: 20;
+  right: -14px;
 }
 
 .slick-prev::before {
