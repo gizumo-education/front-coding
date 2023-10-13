@@ -48,3 +48,36 @@
     margin-top: 80px;
   }
 }
+
+@media screen and (width <=767px) {
+  .p-helpful {
+    &__area {
+      margin-top: 0.6rem;
+    }
+    &__flex {
+      flex-direction: column;
+      margin-top: 0.3055rem;
+    }
+    &__contents {
+      width: auto;
+      height: 2.349rem;
+      margin-top: 0.1755rem;
+      margin-right: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    &__title {
+      font-size: 0.21rem;
+      line-height: 0.21rem;
+    }
+    &__content {
+      font-size: 0.14rem;
+      margin-top: 0.53rem;
+      line-height: 0.2027rem;
+    }
+    &__btn {
+      margin-top: 0.3486rem;
+    }
+  }
+}

@@ -11,6 +11,7 @@
   align-items: center;
   padding-top: 74.95px;
   padding-bottom: 47px;
+
   &__area {
     display: flex;
     flex-direction: column;
@@ -19,23 +20,28 @@
     text-align: center;
     margin-right: 10%;
   }
+
   &__award {
     display: flex;
+
     &-wrap {
       display: flex;
       flex-direction: column;
       justify-content: center;
+
       &>img {
-        display: block;
         filter: drop-shadow(utility.$shadow);
       }
+
       &__text {
         width: 251px;
         margin-bottom: -9px;
       }
+
       &__num {
         width: 232px;
       }
+
       &__company {
         display: block;
         width: 115px;
@@ -45,18 +51,30 @@
         filter: drop-shadow(utility.$shadow);
       }
     }
+
     &::before {
-      content: url(../img/picture/fv_Kv_Leaf-left.png);
+      content: '';
+      background-image: url(../img/picture/fv_Kv_Leaf-left.png);
+      background-size: contain;
       filter: drop-shadow(utility.$shadow);
+      width: 44.9px;
+      height: 141.82px;
     }
+
     &::after {
-      content: url(../img/picture/fv_Kv_Leaf_right.png);
+      content: '';
+      background-image: url(../img/picture/fv_Kv_Leaf_right.png);
+      background-size: contain;
       filter: drop-shadow(utility.$shadow);
+      width: 44.9px;
+      height: 141.82px;
     }
   }
+
   &__text {
     margin-top: 40px;
   }
+
   &__recruit {
     display: flex;
     justify-content: center;
@@ -67,14 +85,78 @@
     border-radius: 10px;
     width: 391px;
     height: 65px;
+
     &>p {
       display: inline-block;
       color: utility.$green;
       font-size: 20px;
       vertical-align: middle;
+
       &>span {
         font-size: 40px;
         font-weight: utility.$bold;
+      }
+    }
+  }
+}
+
+@media screen and (width <=767px) {
+  .p-fv {
+    padding-top: 0.7016rem;
+    padding-bottom: 0.52rem;
+
+    &__area {
+      width: 2.72rem;
+      margin-right: 0.0332rem;
+    }
+
+    &__text {
+      margin-top: 0.1265rem;
+      width: 2.72rem;
+      height: 0.22rem;
+    }
+
+    &__award {
+      &-wrap {
+        justify-content: flex-end;
+        &__text {
+          display: none;
+        }
+
+        &__num {
+          width: 1rem;
+        }
+
+        &__company {
+          width: 0.35rem;
+          margin-top: 0.15rem;
+          margin-bottom: -0.0282rem;
+        }
+      }
+
+      &::before {
+        width: 0.1967rem;
+        height: 0.6201rem;
+      }
+      &::after {
+        width: 0.1967rem;
+        height: 0.6201rem;
+      }
+    }
+
+    &__recruit {
+      margin-top: 0.1835rem;
+      width: 1.70rem;
+      height: 0.3rem;
+
+      &>p {
+        font-size: 0.08rem;
+        line-height: 0.1158rem;
+
+        &>span {
+          font-size: 0.16rem;
+          line-height: 0.2317rem;
+        }
       }
     }
   }

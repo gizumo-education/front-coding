@@ -19,3 +19,16 @@
     }
   }
 }
+
+@media screen and (width <=767px) {
+  .p-catchcopy {
+    &__area {
+      padding: 0.1618rem 0 0.1646rem 0;
+      &>h2 {
+        font-size: 0.14rem;
+        line-height: 0.21rem;
+        font-weight: 400;
+      }
+    }
+  }
+}

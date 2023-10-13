@@ -68,3 +68,56 @@
     border-bottom: 20px solid transparent;
   }
 }
+
+@media screen and (width <=767px) {
+  .p-flow {
+    &__area {
+      margin-top: 0.6rem;
+    }
+    &__title {
+      @include utility.title;
+    }
+    &__contents {
+      &__area {
+        flex-direction: column;
+        margin-top: 0.34rem;
+      }
+      &__wrap {
+        flex-direction: column;
+      }
+      &__flex {
+        margin: 0 auto 0.22rem auto;
+        width: 2.6rem;
+        &>img {
+          height: 0.75rem;
+        }
+      }
+      &__label {
+        width: 0.45rem;
+        height: 0.45rem;
+        font-size: 0.1rem;
+        line-height: 0.121rem;
+        margin: 0.1rem 0 0 0.1rem;
+      }
+      &__title {
+        font-size: 0.2rem;
+        line-height: 0.29rem;
+        margin-top: 0.22rem;
+        height: auto;
+      }
+      &__content {
+        margin-top: 0.1rem;
+        font-size: 0.14rem;
+        line-height: 0.2027rem;
+        width: 2.4rem;
+      }
+    }
+    &__triangle {
+      border-left: 20px solid transparent;
+      border-top: 20px solid utility.$pink;
+      border-right: 20px solid transparent;
+      margin-bottom: -0.1rem;
+      margin-top: 0.1rem;
+    }
+  }
+}

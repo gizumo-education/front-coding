@@ -1,0 +1,17 @@
+@use '../object/utility/utility.scss';
+
+.l-br-pc {
+  display: block;
+}
+.l-br-sp {
+  display: none;
+}
+
+@media screen and (width <=767px) {
+  .l-br-pc {
+    display: none;
+  }
+  .l-br-sp {
+    display: block;
+  }
+}

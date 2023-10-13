@@ -36,3 +36,21 @@
   margin: 0 auto;
   display: block;
 }
+
+@media screen and (width <=767px) {
+  .c-search {
+    margin-top: 0.19rem;
+    &>p {
+      display: inline-block;
+      padding: 0.1rem 0.43rem 0.12rem 0.45rem;
+      background-size: 0.1798rem;
+    }
+  }
+  .c-more {
+    width: auto;
+    line-height: 0.18rem;
+    padding: 0.21rem 0;
+    font-size: 0.18rem;
+    text-align: center;
+  }
+}

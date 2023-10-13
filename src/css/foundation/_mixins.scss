@@ -44,3 +44,11 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (width <=767px) {
+  @mixin title {
+    font-size: 0.25rem;
+    font-weight: variables.$bold;
+    text-align: center;
+  }
+}

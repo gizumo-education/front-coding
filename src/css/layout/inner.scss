@@ -19,3 +19,19 @@
     }
   }
 }
+
+@media screen and (width <=767px) {
+  .l-sp__inner {
+    width: 3.7rem;
+    margin: 0 auto;
+    flex-direction: column;
+    &.is-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include utility.sp {
+        flex-direction: column;
+      }
+    }
+  }
+}

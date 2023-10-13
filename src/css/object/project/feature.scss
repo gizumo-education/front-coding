@@ -48,3 +48,43 @@
     }
   }
 }
+
+@media screen and (width <=767px) {
+  .p-feature {
+    &__title {
+      @include utility.title;
+    }
+    &__area {
+      margin-top: 0.55rem;
+    }
+    &__item__area {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-top: 0.38rem;
+    }
+    &__item {
+      &__title {
+        font-size: 0.2rem;
+      }
+      padding: 0.3rem 0.1074rem 0.3rem 0.1026rem;
+      &__content {
+        width: 3.49rem;
+        font-size: 0.12rem;
+        line-height: 0.1738rem;
+        margin-top: 0.3rem;
+      }
+      &__wrap {
+        margin-top: 0.21rem;
+        &:nth-child(odd) {
+          margin-right: 0;
+        }
+        &:nth-child(-n+2) {
+          margin-top: 0.21rem;
+        }
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
