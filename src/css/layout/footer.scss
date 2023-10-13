@@ -2,12 +2,6 @@
 @use '..//foundation/_variables.scss';
 // footerのスタイルを記述するファイル
 
-.l-footer__flex__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .l-footer__image {
   width: 320px;
   height: 85px;
@@ -20,7 +14,7 @@
     margin-top: 0;
   }
 
-  &__border {
+  &--border {
     height: 83px;
   }
 }
@@ -29,28 +23,35 @@
   background-color: variables.$skyBlue;
   padding: 55px 0 25px 0;
 
-  &__flex {
+  &__container {
     display: flex;
-    flex-direction: column;
-
-    &__box {
+    justify-content: space-between;
+    align-items: center;
+    
+    &--flex {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
     }
   }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
 
   &__area {
     margin-left: 39px;
   }
 
   &__text {
-    color: #000;
+    color: variables.$filterBlack;
     font-family: Noto Sans JP;
     font-size: 16px;
     font-style: normal;
     font-weight: variables.$regular;
 
-    &__line {
+    &--line {
       margin-top: 20px;
 
       &:first-child {

@@ -4,13 +4,13 @@
 
 
 
-.c-button__header {
+.c-header {
   &__font {
     font-family: Noto Sans JP;
     font-weight: variables.$regular;
     line-height: normal;
 
-    &__white {
+    &--white {
       color: variables.$white;
       font-size: 14px;
       display: flex;
@@ -18,15 +18,15 @@
       justify-content: center;
     }
 
-    &__black {
-      color: #000;
+    &--black {
+      color: variables.$filterBlack;
       font-size: 16px;
     }
   }
 }
 
-.c-button__option__text {
-  color: #000;
+.c-option__text {
+  color: variables.$filterBlack;
   font-family: Noto Sans JP;
   font-size: 18px;
   font-weight: variables.$regular;
@@ -36,7 +36,7 @@
   flex-shrink: 0;
 }
 
-.c-button__search {
+.c-search {
   position: relative;
   margin-left: 15px;
 
@@ -91,12 +91,12 @@
   width: 1180px;
   margin: 0 auto;
 
-  &__back {
+  &--back {
     width: 60px;
     height: 60px;
     background-color: variables.$white;
     flex-shrink: 0;
-    fill: black;
+    fill: variables.$filterBlack;
     opacity: 0.699999988079071;
     border-radius: 30px;
     border: none;
@@ -113,13 +113,13 @@
       width: 20px;
       height: 20px;
       flex-shrink: 0;
-      border-top: 0.707px solid #000;
-      border-right: 0.707px solid #000;
+      border-top: 0.707px solid variables.$filterBlack;
+      border-right: 0.707px solid variables.$filterBlack;
       transform: rotate(225deg);
     }
   }
 
-  &__next {
+  &--next {
     width: 60px;
     height: 60px;
     background-color: variables.$white;
@@ -141,8 +141,8 @@
       width: 20px;
       height: 20px;
       flex-shrink: 0;
-      border-top: 0.707px solid #000;
-      border-right: 0.707px solid #000;
+      border-top: 0.707px solid variables.$filterBlack;
+      border-right: 0.707px solid variables.$filterBlack;
       transform: rotate(45deg);
     }
   }

@@ -3,11 +3,42 @@
 
 // innerのスタイルを記述するファイル
 
-.l-inner__select__box {
-  margin-top: 26px;
-  display: flex;
+// header
+.l-inner__header {
 
-  .l-inner__select__flame {
+  &--position1 {
+    position: absolute;
+    top: 15px;
+    right: 21px;
+    bottom: 15px;
+    left: 41px;
+  }
+
+  &--position2 {
+    position: absolute;
+    top: 15px;
+    right: 32px;
+    bottom: 15px;
+    left: 52px;
+  }
+
+  &--position3 {
+    position: absolute;
+    top: 15px;
+    right: 28px;
+    bottom: 15px;
+    left: 56px;
+  }
+}
+
+.l-inner__select {
+
+  &--box {
+    margin-top: 26px;
+    display: flex;
+  }
+
+  &--flame {
     padding: 17px 0 17px 15px;
     border-radius: 10px;
     appearance: none;
@@ -26,31 +57,32 @@
       border: 1px solid variables.$pink;
     }
   }
+}
 
-  .l-inner__form__text {
-    color: variables.$selectGly;
+.l-inner__form {
+  color: variables.$selectGly;
 
-    &__flame {
-      padding: 17px 20px 17px 10px;
-      border-radius: 10px;
-      font-family: Noto Sans JP;
-      font-size: 18px;
-      font-weight: variables.$regular;
-      line-height: normal;
-      width: 300px;
-      height: 60px;
-      flex-shrink: 0;
-      background-color: variables.$white;
-      margin-left: 15px;
+  &--flame {
+    padding: 17px 20px 17px 10px;
+    border-radius: 10px;
+    font-family: Noto Sans JP;
+    font-size: 18px;
+    font-weight: variables.$regular;
+    line-height: normal;
+    width: 300px;
+    height: 60px;
+    flex-shrink: 0;
+    background-color: variables.$white;
+    margin-left: 15px;
+    border: 1px solid variables.$pink;
+
+    &:focus {
+      outline: none;
       border: 1px solid variables.$pink;
-
-      &:focus {
-        outline: none;
-        border: 1px solid variables.$pink;
-      }
     }
   }
 }
+
 
 // お仕事検索
 
@@ -64,7 +96,6 @@
   text-align: center;
   margin: 0 auto;
 
-  &__search {
     &--middle {
       color: variables.$black;
       font-size: 20px;
@@ -73,9 +104,9 @@
       margin-top: 20px;
     }
   }
-}
 
-.l-inner__select__triangle {
+
+.l-inner__select--triangle {
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
@@ -89,7 +120,7 @@
   padding: 64px 0 67px 0;
   background-color: variables.$skyBlue;
 
-  &__title {
+  &--title {
     font-family: Inter;
     font-weight: variables.$regular;
     line-height: normal;
@@ -98,12 +129,13 @@
     margin: 0 auto;
   }
 
-  &__container {
+  &--container {
     display: flex;
     justify-content: center;
+    margin-top: 25px;
   }
 
-  &__images {
+  l-inner__job--images &--images {
     width: 280px;
     height: 200px;
     border-radius: 10px;
@@ -141,6 +173,7 @@
     display: inline-block;
     width: 60px;
     height: 21px;
+    margin-top: 6px;
     flex-shrink: 0;
     background-color: variables.$lightPink;
   }
@@ -184,7 +217,7 @@
   padding: 40px 40px;
   text-align: center;
 
-  &__text {
+  &--text {
     color: variables.$pink;
     font-family: Noto Sans JP;
     font-size: 24px;
@@ -192,7 +225,7 @@
     line-height: 24px;
   }
 
-  &__feature {
+  &--content {
     color: variables.$filterBlack;
     font-family: Noto Sans JP;
     font-size: 14px;
@@ -219,16 +252,16 @@
 
   &--flame {
     border-radius: 30px;
-  background-color: variables.$pink;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: 8.87px;
-  right: 208.87px;
-  bottom: 208.87px;
-  left: 8.87px;
+    background-color: variables.$pink;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 8.87px;
+    right: 208.87px;
+    bottom: 208.87px;
+    left: 8.87px;
   }
-  
+
   &--test {
     color: variables.$white;
     text-align: center;
@@ -286,25 +319,18 @@
   justify-content: center;
 }
 
-.l-inner__contents__img {
-  width: 380px;
-  height: 240px;
-  flex-shrink: 0;
-  position: absolute;
-}
-
 .l-inner__contents {
   width: 380px;
   height: 240px;
   padding: 71px 0 55px 0;
   position: relative;
 
-  &__title {
+  &--title {
     color: variables.$white;
     line-height: 24px;
   }
 
-  &__comment {
+  &--comment {
     color: variables.$white;
     text-align: center;
     font-family: Noto Sans JP;
@@ -312,7 +338,15 @@
     font-style: normal;
     font-weight: variables.$regular;
     line-height: normal;
+
     height: 46px;
     margin-top: 44px;
+  }
+
+  &--img {
+    width: 380px;
+    height: 240px;
+    flex-shrink: 0;
+    position: absolute;
   }
 }

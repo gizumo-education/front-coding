@@ -2,20 +2,38 @@
 // ページ上部のキービジュアルに関するスタイル
 @use "../../foundation/variables";
 
-.o-keyvisual {
-  &--width1 {
+.p-keyvisual {
+  &__leaf {
+    height: 142px;
+    position: relative;
+
+    &--left {
+      width: 44.905px;
+      height: 141.822px;
+      flex-shrink: 0;
+    }
+
+    &--right {
+      width: 44.905px;
+      height: 141.822px;
+      flex-shrink: 0;
+      margin-left: 250px;
+    }
+  }
+  
+  &__width1 {
     margin: 0 auto;
     width: 1262px;
     max-width: 100%;
     height: 500px;
   }
 
-  &__img--size {
+  &__img {
     height: 18px;
     width: 18px;
   }
 
-  &__button--flex {
+  &__button {
     display: flex;
   }
 
@@ -65,7 +83,7 @@
       margin-left: 25px;
     }
 
-    &__2 {
+    &--2 {
       width: 140px;
       height: 50px;
       background-color: variables.$lightBlue;
@@ -76,149 +94,111 @@
     }
   }
 
-  &__view {
-    &__text {
-      width: 100%;
-      max-width: 1600px;
-      height: 500px;
-      margin-left: auto;
+  &__text {
+    width: 100%;
+    max-width: 1600px;
+    height: 500px;
+    margin-left: auto;
 
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      text-align: center;
-      padding: 56.49px 30px 48.15px 432px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 56.49px 30px 48.15px 432px;
 
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-51%);
+
+    &--micro {
+      color: variables.$white;
+      font-family: Shippori Mincho;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: variables.$bold;
+      line-height: normal;
       position: absolute;
-      top: 100px;
+      top: 10px;
+      right: 60px;
+    }
+
+    &--first {
+      font-family: Shippori Mincho;
+      font-size: 16px;
+      font-weight: variables.$bold;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: center;
+      position: absolute;
+      top: 15%;
+      right: 35px;
+    }
+
+    &--big {
+      color: variables.$white;
+      font-family: Shippori Mincho;
+      font-size: 111.413px;
+      font-style: normal;
+      font-weight: variables.$bold;
+      line-height: normal;
+      background-repeat: repeat, repeat;
+      background-position: top left, bottom right;
+      background-size: auto, cover;
+      position: absolute;
+      top: 50%;
       left: 50%;
-      transform: translateX(-51%);
-
-      &__micro {
-        color: variables.$white;
-        font-family: Shippori Mincho;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: variables.$bold;
-        line-height: normal;
-        position: absolute;
-        top: 10px;
-        right: 60px;
-      }
-
-      &__first {
-        font-family: Shippori Mincho;
-        font-size: 16px;
-        font-weight: variables.$bold;
-        line-height: 23px;
-        letter-spacing: 0em;
-        text-align: center;
-        position: absolute;
-        top: 15%;
-        right: 35px;
-      }
-
-      &__big {
-        color: variables.$white;
-        font-family: Shippori Mincho;
-        font-size: 111.413px;
-        font-style: normal;
-        font-weight: variables.$bold;
-        line-height: normal;
-        background-repeat: repeat, repeat;
-        background-position: top left, bottom right;
-        background-size: auto, cover;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      &__smaller {
-        color: variables.$white;
-        font-family: Inter;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: variables.$regular;
-        line-height: normal;
-        margin-left: 110px;
-      }
-
-      &__medium {
-        color: variables.$white;
-        text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
-        font-family: DM Sans;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: variables.$bold;
-        line-height: normal;
-        margin-top: 40px;
-        width: 800px;
-      }
-
-      &__small {
-        color: #2EB6AA;
-        font-family: Noto Sans JP;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: variables.$regular;
-        line-height: normal;
-        width: 391px;
-        height: 69px;
-        flex-shrink: 0;
-        background-color: variables.$white;
-        border: 2.3px solid #2EB6AA;
-        border-radius: 10px;
-        margin-top: 50px;
-        margin-right: auto;
-        margin-left: auto;
-      }
-
-      &__small {
-        color: #2EB6AA;
-        font-family: Noto Sans JP;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: variables.$regular;
-        line-height: normal;
-        width: 391px;
-        height: 69px;
-        flex-shrink: 0;
-        background-color: variables.$white;
-        border: 2.3px solid #2EB6AA;
-        border-radius: 10px;
-        margin-top: 50px;
-        margin-right: auto;
-        margin-left: auto;
-      }
-
-      &__number {
-        color: #2EB6AA;
-        font-family: Noto Sans JP;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: variables.$bold;
-        line-height: normal;
-      }
-    }
-  }
-
-  &__leaf {
-    height: 142px;
-    position: relative;
-
-    &__left {
-      width: 44.905px;
-      height: 141.822px;
-      flex-shrink: 0;
+      transform: translate(-50%, -50%);
     }
 
-    &__right {
-      width: 44.905px;
-      height: 141.822px;
+    &--smaller {
+      color: variables.$white;
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: variables.$regular;
+      line-height: normal;
+      margin-left: 110px;
+    }
+
+    &--medium {
+      color: variables.$white;
+      text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
+      font-family: DM Sans;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: variables.$bold;
+      line-height: normal;
+      margin-top: 40px;
+      width: 800px;
+    }
+
+    &--small {
+      color: variables.$yellowGreen;
+      font-family: Noto Sans JP;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: variables.$regular;
+      line-height: normal;
+      width: 391px;
+      height: 69px;
       flex-shrink: 0;
-      margin-left: 250px;
+      background-color: variables.$white;
+      border: 2.3px solid variables.$yellowGreen;
+      border-radius: 10px;
+      margin-top: 50px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &--number {
+      color: variables.$yellowGreen;
+      font-family: Noto Sans JP;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: variables.$bold;
+      line-height: normal;
     }
   }
 }
