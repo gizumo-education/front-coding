@@ -23,20 +23,10 @@
 @media screen and (width <=1199px) {
   .p-catchcopy {
     &__area {
-      width: 100%;
-      background: url(../img/picture/bg_discussion.jpg) no-repeat;
-      @include utility.overlay;
       padding: 1.03rem 0 1.04rem;
       &>h2 {
         font-size: 0.25rem;
-        color: utility.$white;
-        font-weight: utility.$bold;
         margin-top: 0.21rem;
-        text-align: center;
-        line-height: 2.5;
-      }
-      &>h2:first-child {
-        margin-top: 0;
       }
     }
   }

@@ -54,42 +54,19 @@
     &__area {
       margin-top: 1.05rem;
     }
-    &__title {
-      @include utility.title;
-    }
     &__flex {
       margin-top: 0.5rem;
-      display: flex;
-      text-align: center;
     }
     &__contents {
       width: 3.8rem;
       height: 2.4rem;
       margin-right: 0.2rem;
       border-radius: 0.1rem;
-      &:last-child {
-        margin-right: 0;
-      }
-      &:nth-child(1) {
-        background: url(../img/picture/helpful_photo1.jpg) no-repeat;
-        @include utility.overlay;
-      }
-      &:nth-child(2) {
-        background: url(../img/picture/helpful_photo2.jpg) no-repeat;
-        @include utility.overlay;
-      }
-      &:nth-child(3) {
-        background: url(../img/picture/helpful_photo3.jpg) no-repeat;
-        @include utility.overlay;
-      }
       &__title {
         font-size: 0.24rem;
-        color: utility.$white;
-        font-weight: utility.$bold;
       }
       &__content {
         font-size: 0.16rem;
-        color: utility.$white;
         margin-top: 0.45rem;
         line-height: 0.2317rem;
       }
