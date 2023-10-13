@@ -100,6 +100,107 @@
   }
 }
 
+@media screen and (width <=1199px) {
+  .p-fv {
+    background-image: url(../img/picture/fv_Img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0.7495rem;
+    padding-bottom: 0.47rem;
+
+    &__area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      text-align: center;
+      margin-right: 10%;
+    }
+
+    &__award {
+      display: flex;
+
+      &-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &>img {
+          filter: drop-shadow(utility.$shadow);
+        }
+
+        &__text {
+          width: 2.51rem;
+          margin-bottom: -0.09rem;
+        }
+
+        &__num {
+          width: 2.32rem;
+        }
+
+        &__company {
+          display: block;
+          width: 1.15rem;
+          margin-right: 0.15rem;
+          margin-left: auto;
+          margin-top: 0.2rem;
+          filter: drop-shadow(utility.$shadow);
+        }
+      }
+
+      &::before {
+        content: '';
+        background-image: url(../img/picture/fv_Kv_Leaf-left.png);
+        background-size: contain;
+        filter: drop-shadow(utility.$shadow);
+        width: 0.449rem;
+        height: 1.4182rem;
+      }
+
+      &::after {
+        content: '';
+        background-image: url(../img/picture/fv_Kv_Leaf_right.png);
+        background-size: contain;
+        filter: drop-shadow(utility.$shadow);
+        width: 0.449rem;
+        height: 1.4182rem;
+      }
+    }
+
+    &__text {
+      margin-top: 0.4rem;
+    }
+
+    &__recruit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0.54rem;
+      background-color: utility.$white;
+      border: 0.023rem solid utility.$green;
+      border-radius: 0.1rem;
+      width: 3.91rem;
+      height: 0.65rem;
+
+      &>p {
+        display: inline-block;
+        color: utility.$green;
+        font-size: 0.2rem;
+        vertical-align: middle;
+
+        &>span {
+          font-size: 0.4rem;
+          font-weight: utility.$bold;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (width <=767px) {
   .p-fv {
     padding-top: 0.7016rem;
