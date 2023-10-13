@@ -12,6 +12,7 @@
     border-radius: 10px;
     &__area {
       display: flex;
+      justify-content: center;
       margin-top: 50px;
     }
     &__wrap {
@@ -24,7 +25,7 @@
       align-items: center;
       justify-content: center;
       width: 237px;
-      margin: -10px auto 42px auto;
+      margin: -10px 10px 42px 10px;
       &>img {
         height: 100px;
       }
@@ -94,7 +95,7 @@
         align-items: center;
         justify-content: center;
         width: 2.37rem;
-        margin: -0.1rem auto 0.42rem auto;
+        margin: -0.1rem 0.1rem 0.42rem 0.1rem;
         &>img {
           height: 1rem;
         }
