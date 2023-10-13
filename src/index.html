@@ -29,7 +29,7 @@
             <li class="l-header__button is-camera"><a href="">検索履歴</a></li>
           </ul>
         </div>
-        <div class="l-header__sp-items">
+        <div class="l-header__sp-items" id="hamburger-btn">
           <button class="l-header__hamburger">
             <span></span>
             <span></span>
@@ -37,10 +37,31 @@
           </button>
         </div>
       </nav>
+      <div class="l-header__sp-menu" id="hamburger-menu">
+        <ul class="l-header__menu-area">
+          <li class="l-header__menu">
+            <a class="anchorLink" href="#home">トップ</a>
+          </li>
+          <li class="l-header__menu">
+            <a class="anchorLink" href="#new-title"> 新着求人 </a>
+          </li>
+          <li class="l-header__menu">
+            <a class="anchorLink" href="#feature-title">4つの特徴</a>
+          </li>
+          <li class="l-header__menu">
+            <a class="anchorLink" href="#jobchange-title">転職までの流れ</a>
+          </li>
+          <li class="l-header__menu">
+            <a class="anchorLink" href="#content-title"
+              >転職お役立ちコンテンツ</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="l-main">
-      <div class="p-home">
+      <div class="p-home" id="home">
         <div class="p-home__pic">
           <img
             src="./img/picture/home/home.png"
@@ -160,7 +181,7 @@
 
       <div class="p-new">
         <div class="p-new__inner">
-          <h2 class="p-new__title">新着求人</h2>
+          <h2 class="p-new__title" id="new-title">新着求人</h2>
           <div class="p-new__card-area">
             <ul class="p-new__cards">
               <li>
@@ -243,12 +264,92 @@
                   </div>
                 </a>
               </li>
-              <div class="p-new__prev-area">
-                <a href="" class="p-new__prev"></a>
+              <li>
+                <a href="">
+                  <img src="./img/picture/home/new-image.jpeg" alt="new1" />
+                  <p>
+                    平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人
+                  </p>
+                  <div class="p-new__desc">
+                    <p>給与</p>
+                    <span>月給148,000円〜</span>
+                  </div>
+                  <div class="p-new__desc">
+                    <p>所在地</p>
+                    <span>三重県伊勢市</span>
+                  </div>
+                  <div class="p-new__desc">
+                    <p>最寄駅</p>
+                    <span>伊勢市駅　徒歩15分</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./img/picture/home/new-image2.jpeg" alt="new2" />
+                  <p>
+                    平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人
+                  </p>
+                  <div class="p-new__desc">
+                    <p>給与</p>
+                    <span>月給148,000円〜</span>
+                  </div>
+                  <div class="p-new__desc">
+                    <p>所在地</p>
+                    <span>三重県伊勢市</span>
+                  </div>
+                  <div class="p-new__desc">
+                    <p>最寄駅</p>
+                    <span>伊勢市駅　徒歩15分</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./img/picture/home/new-image3.jpeg" alt="new3" />
+                  <p>
+                    平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人
+                  </p>
+                  <div class="p-new__desc">
+                    <p>給与</p>
+                    <span>月給148,000円〜</span>
+                  </div>
+                  <div class="p-new__desc">
+                    <p>所在地</p>
+                    <span>三重県伊勢市</span>
+                  </div>
+                  <div class="p-new__desc">
+                    <p>最寄駅</p>
+                    <span>伊勢市駅　徒歩15分</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./img/picture/home/new-image4.jpeg" alt="new4" />
+                  <p>
+                    平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人
+                  </p>
+                  <div class="p-new__desc">
+                    <p>給与</p>
+                    <span>月給148,000円〜</span>
+                  </div>
+                  <div class="p-new__desc">
+                    <p>所在地</p>
+                    <span>三重県伊勢市</span>
+                  </div>
+                  <div class="p-new__desc">
+                    <p>最寄駅</p>
+                    <span>伊勢市駅　徒歩15分</span>
+                  </div>
+                </a>
+              </li>
+              <!-- <div class="p-new__prev-area">
+                <div class="p-new__prev"></div>
               </div>
               <div class="p-new__next-area">
-                <a href="" class="p-new__next"></a>
-              </div>
+                <div class="p-new__next"></div>
+              </div> -->
             </ul>
 
             <a href="" class="p-new__see-more">新着求人一覧をもっと見る</a>
@@ -270,7 +371,9 @@
 
       <div class="p-feature">
         <div class="p-feature__inner">
-          <h2 class="p-feature__title">ギズジョブの4つの特徴</h2>
+          <h2 class="p-feature__title" id="feature-title">
+            ギズジョブの4つの特徴
+          </h2>
 
           <ul class="p-feature__list-area">
             <li class="p-feature__list">
@@ -308,7 +411,9 @@
 
       <div class="p-jobchange">
         <div class="p-jobchange__inner">
-          <h2 class="p-jobchange__title">転職までの流れ</h2>
+          <h2 class="p-jobchange__title" id="jobchange-title">
+            転職までの流れ
+          </h2>
 
           <ul class="p-jobchange__list-area">
             <li class="p-jobchange__list">
@@ -395,7 +500,9 @@
 
       <div class="p-content">
         <div class="p-content__inner">
-          <h2 class="p-content__title">転職お役立ちコンテントツ</h2>
+          <h2 class="p-content__title" id="content-title">
+            転職お役立ちコンテントツ
+          </h2>
 
           <ul class="p-content__list-area">
             <li class="p-content__list">
@@ -542,7 +649,6 @@
       </div>
       <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
     </footer>
-
     <script src="./js/app.js"></script>
   </body>
 </html>
