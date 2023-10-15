@@ -66,18 +66,15 @@
 }
 
 //お仕事検索　select//
-.u-select__flame--position {
+.u-select__position1,
+.u-select__position2,
+.u-select__position3 {
+  position: relative;
   margin-left: 15px;
 
   &:first-child {
     margin-left: 0;
   }
-}
-
-.u-select__position1,
-.u-select__position2,
-.u-select__position3 {
-  position: relative;
 }
 
 //転職までの流れ//

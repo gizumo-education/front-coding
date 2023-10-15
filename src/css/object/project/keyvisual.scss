@@ -20,7 +20,7 @@
       margin-left: 250px;
     }
   }
-  
+
   &__width1 {
     margin: 0 auto;
     width: 1262px;
@@ -114,18 +114,14 @@
 
     &--micro {
       color: variables.$white;
-      font-family: Shippori Mincho;
       font-size: 10px;
-      font-style: normal;
       font-weight: variables.$bold;
-      line-height: normal;
       position: absolute;
       top: 10px;
       right: 60px;
     }
 
     &--first {
-      font-family: Shippori Mincho;
       font-size: 16px;
       font-weight: variables.$bold;
       line-height: 23px;
@@ -138,11 +134,8 @@
 
     &--big {
       color: variables.$white;
-      font-family: Shippori Mincho;
       font-size: 111.413px;
-      font-style: normal;
       font-weight: variables.$bold;
-      line-height: normal;
       background-repeat: repeat, repeat;
       background-position: top left, bottom right;
       background-size: auto, cover;
@@ -156,7 +149,6 @@
       color: variables.$white;
       font-family: Inter;
       font-size: 10px;
-      font-style: normal;
       font-weight: variables.$regular;
       line-height: normal;
       margin-left: 110px;
@@ -167,7 +159,6 @@
       text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
       font-family: DM Sans;
       font-size: 50px;
-      font-style: normal;
       font-weight: variables.$bold;
       line-height: normal;
       margin-top: 40px;
@@ -176,11 +167,8 @@
 
     &--small {
       color: variables.$yellowGreen;
-      font-family: Noto Sans JP;
       font-size: 20px;
-      font-style: normal;
       font-weight: variables.$regular;
-      line-height: normal;
       width: 391px;
       height: 69px;
       flex-shrink: 0;
