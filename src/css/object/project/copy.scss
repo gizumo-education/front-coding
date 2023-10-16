@@ -4,7 +4,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
-
+  @include utility.tab{
+    height: 3rem;
+  }
+  @include utility.sp{
+    height: 0.75rem;
+  }
     &__bg {
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
@@ -17,11 +22,24 @@
       color: utility.$white;
       font-weight: utility.$bold;
       font-size: 25px;
+      @include utility.tab{
+        font-size: 0.25rem;
+      }
+      @include utility.sp{
+        font-size: 0.14rem;
+        font-weight: utility.$regular;
+      }
     }
 
     &__first {
       text-align: center;
       line-height: 60px;
+      @include utility.tab{
+        line-height: 0.6rem;
+      }
+      @include utility.sp{
+        line-height: 0.2rem;
+      }
     }
 
 }

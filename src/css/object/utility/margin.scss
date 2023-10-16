@@ -1,4 +1,8 @@
-
+@use '../../object/utility/utility.scss';
 .u-margin {
 padding-top: 90px;
+@include utility.sp{
+padding-top: 0.35rem;
 }
+}
+

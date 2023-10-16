@@ -4,11 +4,20 @@
   &__wrapper {
     text-align: center;
     padding-top: 106px;
+    @include utility.tab{
+      padding-top: 1.06rem;
+    }
+    @include utility.sp{
+      padding-top: 0.55rem;
+    }
   }
 
   & h2 {
     font-size: 25px;
     font-weight: utility.$bold;
+    @include utility.tab{
+      font-size: 0.25rem;
+    }
   }
 
   &__list {
@@ -17,24 +26,67 @@
     justify-content: space-around;
     gap: 40px;
     margin-top: 56px;
+    @include utility.tab{
+      gap: 0.4rem;
+      margin-top: 0.56rem;
+    }
+    @include utility.sp{
+      gap: 0.2rem;
+      margin-top: 0.38rem;
+    }
   }
 
   &__item {
     background-color: utility.$bgSummary;
     border-radius: utility.$circle;
-    padding: 40px;
+    padding:40px 0;
     width: 570px;
+    @include utility.tab{
+      padding:0.4rem 0;
+      width: 5.7rem;
+    }
 
     & h3 {
       font-size: 24px;
       font-weight: utility.$bold;
       color: utility.$btnRed;
+      @include utility.tab{
+        font-size: 0.24rem;
+      }
+      @include utility.sp{
+        font-size: 0.2rem;
+      }
     }
     & p {
       font-size: 14px;
       font-weight: utility.$regular;
       margin-top: 36px;
       line-height: 20px;
+      padding: 0 10px;
+      @include utility.tab{
+        font-size: 0.14rem;
+        margin-top: 0.36rem;
+        line-height: 0.2rem;
+        padding: 0 0.2rem;
+      }
+      @include utility.sp{
+        font-size: 0.12rem;
+        line-height: 0.17rem;
+        margin-top: 0.3rem;
+      }
+    }
+  }
+
+  &__pc {
+    @include utility.sp{
+      display: none;
+    }
+  }
+
+  &__sp {
+    display: none;
+    @include utility.sp{
+      display: block;
     }
   }
 }
