@@ -192,6 +192,10 @@
     top: 130px;
     left: 2px;
     z-index: 1;
+    @include utility.tab {
+      top: 1.3rem;
+      left: 0.02rem;
+    }
     @include utility.sp {
       top: 1.4rem;
       left: 0;
@@ -200,6 +204,10 @@
   &__next {
     top: 130px;
     right: 5px;
+    @include utility.tab {
+      top: 1.3rem;
+      right: 0.06rem;
+    }
     @include utility.sp {
       top: 1.4rem;
       right: 0;
