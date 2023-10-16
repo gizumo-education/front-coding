@@ -190,7 +190,7 @@
   }
   &__prev {
     top: 130px;
-    left: 0;
+    left: 3px;
     z-index: 1;
     @include utility.sp {
       top: 1.3rem;
@@ -198,7 +198,7 @@
   }
   &__next {
     top: 130px;
-    right: 0;
+    right: 6px;
     @include utility.sp {
       top: 1.2rem;
     }
@@ -251,10 +251,8 @@
 
 .slick-track {
   display: flex;
-  justify-content: space-between !important;
-  @include utility.sp {
-    gap: 0 !important;
-  }
+  justify-content: space-between;
+  gap: 10px;
 }
 @include utility.sp {
   .slick-slide {
