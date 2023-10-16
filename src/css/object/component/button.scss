@@ -7,4 +7,12 @@
   font-weight: utility.$bold;
   font-size: 18px;
   padding: 17px 72px;
+  @include utility.tab{
+    font-size: 0.18rem;
+    padding: 0.17rem 0.72rem;
+  }
+  @include utility.sp{
+    font-size: 0.18rem;
+    padding: 0.17rem 0.3rem;
+  }
 }

@@ -3,13 +3,41 @@
 
 .p-keyvisual {
   background-color: utility.$bgColor;
-
+  @include utility.sp{
+    background-color: transparent;
+  }
     &__wrapper {
-      height: 500px;
-      background-image: url(../img/picture/keyvisual_main.png);
+      min-height: 500px;
+      background-image: url(../img/picture/keyvisual_main.png) ;
+      background-size: cover;
       text-align: center;
       padding-top: 90px;
       padding-left: 400px;
+      max-width: 100%;
+      @include utility.tab{
+        min-height: 5rem;
+        padding-top: 0.9rem;
+        padding-left: 4rem;
+        background-position: top;
+      }
+      @include utility.sp{
+        min-height: 2.7rem;
+        background-position: center;
+        padding: 1.2rem 0 0 0.83rem;
+        width: 100%;
+      }
+    }
+
+    &__img_1 > img {
+      width: 250px;
+      height: 15px;
+      @include utility.tab{
+        width: 2.5rem;
+        height: 0.15rem;
+      }
+      @include utility.sp{
+      display: none;
+      }
     }
 
 
@@ -19,16 +47,72 @@
       justify-content: center;
       gap:10px;
       margin-top: -40px;
+      @include utility.tab{
+        gap: 0.1rem;
+        margin-top: -0.4rem;
+      }
+
+        &__feather > img {
+          width: 45px;
+          height: 140px;
+          @include utility.tab{
+            width: 0.45rem;
+            height: 1.4rem;
+          }
+          @include utility.sp{
+            width: 0.2rem;
+            height: 0.62rem;
+          }
+        }
+
+        &__main > img {
+          width: 200px;
+          height: 90px;
+          @include utility.tab{
+            width: 2rem;
+            height: 0.9rem;
+          }
+          @include utility.sp{
+            width: 0.8rem;
+            height: 0.5rem;
+          }
+        }
     }
 
     &__img_2 {
       margin-top: -10px;
       margin-left: 100px;
+      @include utility.tab{
+        margin-top: -0.1rem;
+        margin-left: 1rem;
+      }
+      @include utility.sp{
+        margin-top: -0.1rem;
+        margin-left: 0.2rem;
+      }
+
+        & > img {
+          width: 110px;
+          height: 10px;
+          @include utility.tab{
+            width: 1.1rem;
+            height: 0.1rem;
+          }
+          @include utility.sp{
+            width: 0.35rem;
+            height: 0.04rem;
+          }
+        }
     }
 
     &__img_3 {
       margin-top: 60px;
-      margin-left:45px;
+      @include utility.tab{
+      margin-top: 0.6rem;
+      }
+      @include utility.sp{
+        margin-top: 0.12rem;
+      }
     }
 
     &__text {
@@ -41,11 +125,30 @@
       border-radius: utility.$circle;
       padding: 10px 40px;
       margin-top: 54px;
-      margin-left: 50PX;
+      margin-left: 50px;
+      @include utility.tab{
+        font-size: 0.2rem;
+        padding: 0.1rem 0.4rem;
+        margin-top: 0.54rem;
+        margin-left: 0.5rem;
+      }
+      @include utility.sp{
+        font-size: 0.08rem;
+        padding: 0.05rem 0.2rem;
+        margin-top: 0.18rem;
+      }
 
       &__number{
         font-weight: utility.$bold;
         font-size: 40px;
+        @include utility.tab{
+          font-size: 0.4rem;
+        }
+        @include utility.sp{
+          font-size: 0.16rem;
+        }
       }
     }
 }
+
+
