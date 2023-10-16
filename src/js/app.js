@@ -4,7 +4,7 @@ import "slick-carousel";
 $(function () {
   console.log("環境構築完了");
   $('a[href^="#"]').on("click", function () {
-    const adjust = 180;
+    const adjust = 150;
     const speed = 500;
     const href = $(this).attr("href");
     const target = $(href === "#" || href === "" ? "html" : href);
