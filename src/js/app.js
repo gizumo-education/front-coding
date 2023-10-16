@@ -4,11 +4,11 @@ import "slick-carousel";
 $(function () {
   console.log("環境構築完了");
   $('a[href^="#"]').on("click", function () {
-    const adjust = 80;
+    const adjust = 180;
     const speed = 500;
     const href = $(this).attr("href");
     const target = $(href === "#" || href === "" ? "html" : href);
-    const position = target.offset().top + adjust;
+    const position = target.offset().top - adjust;
     $("html, body").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
