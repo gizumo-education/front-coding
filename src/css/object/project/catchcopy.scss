@@ -6,6 +6,12 @@
     background: url(../img/picture/bg_discussion.jpg) no-repeat;
     @include utility.overlay;
     padding: 103px 0 104px;
+    @include utility.tab {
+      padding: 1.03rem 0 1.04rem;
+    }
+    @include utility.sp {
+      padding: 0.1618rem 0 0.1646rem 0;
+    }
     &>h2 {
       font-size: 25px;
       color: utility.$white;
@@ -13,34 +19,18 @@
       margin-top: 21px;
       text-align: center;
       line-height: 2.5;
-    }
-    &>h2:first-child {
-      margin-top: 0;
-    }
-  }
-}
-
-@media screen and (width <=1199px) {
-  .p-catchcopy {
-    &__area {
-      padding: 1.03rem 0 1.04rem;
-      &>h2 {
+      @include utility.tab {
         font-size: 0.25rem;
         margin-top: 0.21rem;
       }
-    }
-  }
-}
-
-@media screen and (width <=767px) {
-  .p-catchcopy {
-    &__area {
-      padding: 0.1618rem 0 0.1646rem 0;
-      &>h2 {
+      @include utility.sp {
         font-size: 0.14rem;
         line-height: 0.21rem;
         font-weight: 400;
       }
+    }
+    &>h2:first-child {
+      margin-top: 0;
     }
   }
 }

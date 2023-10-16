@@ -3,23 +3,43 @@
 .p-feature {
   &__area {
     margin-top: 106px;
-  }
-  &__title {
-    @include utility.title;
+    @include utility.tab{
+      margin-top: 1.06rem;
+    }
+    @include utility.sp {
+      margin-top: 0.55rem;
+    }
   }
   &__item__area {
-    display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     margin-top: 53px;
+    @include utility.tab{
+      margin-top: 0.53rem;
+    }
+    @include utility.sp {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-top: 0.38rem;
+    }
   }
   &__item {
     padding: 40px 47px;
+    @include utility.tab{
+      padding: 0.4rem 0.47rem;
+    }
+    @include utility.sp {
+      padding: 0.3rem 0.1074rem 0.3rem 0.1026rem;
+    }
     &__title {
       font-size: 24px;
       color: utility.$pink;
       font-weight: utility.$bold;
+      @include utility.tab{
+        font-size: 0.24rem;
+      }
+      @include utility.sp {
+        font-size: 0.2rem;
+        }
     }
     &__content {
       font-size: 14px;
@@ -30,6 +50,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @include utility.sp {
+        width: 3.49rem;
+        font-size: 0.12rem;
+        line-height: 0.1738rem;
+        margin-top: 0.3rem;
+      }
+      @include utility.tab{
+        font-size: 0.14rem;
+        line-height: 0.2027rem;
+        margin-top: 0.36rem;
+        height: 0.6rem;
+        width: 4.75rem;
+      }
     }
     &__wrap {
       background-color: utility.$featurePink;
@@ -39,80 +72,24 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      &:nth-child(odd) {
-        margin-right: 40px;
-      }
-      &:nth-child(-n+2) {
-        margin-top: 0;
-      }
-    }
-  }
-}
-
-@media screen and (width <=1199px) {
-  .p-feature {
-    &__area {
-      margin-top: 1.06rem;
-    }
-    &__item__area {
-      margin-top: 0.53rem;
-    }
-    &__item {
-      padding: 0.4rem 0.47rem;
-      &__title {
-        font-size: 0.24rem;
-      }
-      &__content {
-        font-size: 0.14rem;
-        line-height: 0.2027rem;
-        margin-top: 0.36rem;
-        height: 0.6rem;
-        width: 4.75rem;
-      }
-      &__wrap {
+      @include utility.tab{
         margin-top: 0.4rem;
         border-radius: 0.1rem;
-        &:nth-child(odd) {
+      }
+      @include utility.sp {
+        margin-top: 0.21rem;
+      }
+      &:nth-child(odd) {
+        margin-right: 40px;
+        @include utility.tab{
           margin-right: 0.4rem;
         }
-      }
-    }
-  }
-}
-
-@media screen and (width <=767px) {
-  .p-feature {
-    &__title {
-      @include utility.title;
-    }
-    &__area {
-      margin-top: 0.55rem;
-    }
-    &__item__area {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      margin-top: 0.38rem;
-    }
-    &__item {
-      &__title {
-        font-size: 0.2rem;
-      }
-      padding: 0.3rem 0.1074rem 0.3rem 0.1026rem;
-      &__content {
-        width: 3.49rem;
-        font-size: 0.12rem;
-        line-height: 0.1738rem;
-        margin-top: 0.3rem;
-      }
-      &__wrap {
-        margin-top: 0.21rem;
-        &:nth-child(odd) {
+        @include utility.sp {
           margin-right: 0;
         }
-        &:nth-child(-n+2) {
-          margin-top: 0.21rem;
-        }
-        &:first-child {
+      }
+      &:first-child {
+        @include utility.sp {
           margin-top: 0;
         }
       }

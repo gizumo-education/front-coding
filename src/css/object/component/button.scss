@@ -17,6 +17,21 @@
   font-size: 18px;
   line-height: 18px;
   border-radius: 100px;
+  @include utility.tab {
+    background-position: center left 0.1402rem;
+    background-size: 0.2998rem;
+    padding: 0.21rem 0.2rem 0.21rem 0.48rem;
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    border-radius: 10rem;
+  }
+  @include utility.sp {
+    margin-top: 0.19rem;
+    display: inline-block;
+    padding: 0.1rem 0.43rem 0.12rem 0.45rem;
+    background-size: 0.1798rem;
+    margin: 0.19rem auto 0 auto;
+  }
   &:hover {
     opacity: .7;
   }
@@ -33,35 +48,13 @@
   width: 420px;
   margin: 0 auto;
   display: block;
-}
-
-@media screen and (width <=1199px) {
-  .c-search {
-    background-position: center left 0.1402rem;
-    background-size: 0.2998rem;
-    padding: 0.21rem 0.2rem 0.21rem 0.48rem;
-    font-size: 0.18rem;
-    line-height: 0.18rem;
-    border-radius: 10rem;
-  }
-
-  .c-more {
+  @include utility.tab {
     padding: 0.21rem 0.93rem;
     font-size: 0.18rem;
     border-radius: 1rem;
     width: 4.2rem;
   }
-}
-
-@media screen and (width <=767px) {
-  .c-search {
-    margin-top: 0.19rem;
-    display: inline-block;
-    padding: 0.1rem 0.43rem 0.12rem 0.45rem;
-    background-size: 0.1798rem;
-    margin: 0.19rem auto 0 auto;
-  }
-  .c-more {
+  @include utility.sp {
     width: auto;
     line-height: 0.18rem;
     padding: 0.21rem 0;

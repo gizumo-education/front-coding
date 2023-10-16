@@ -3,34 +3,102 @@
 .p-newRecruit {
   background-color: utility.$bgLightBlue;
   padding: 64px 0 67px 0;
-  &__title{
-    font-size: 25px;
+  @include utility.tab {
+    padding: 0.64rem 0 0.67rem 0;
+  }
+  @include utility.sp {
+    padding: 0.3rem 0 0.6rem 0;
+  }
+  &__title {
+    @include utility.pc {
+      font-weight: utility.$regular;
+      text-align: left;
+    }
+    @include utility.tab {
+      font-weight: utility.$regular;
+      text-align: left;
+    }
   }
   &__contents-area {
     display: flex;
     margin-top: 25px;
     justify-content: center;
+    @include utility.tab {
+      margin-top: 0.25rem;
+    }
+    @include utility.sp {
+      margin-top: 0.35rem;
+      flex-direction: column;
+    }
   }
   &__contents {
     width: 280px;
     margin-right: 20px;
+    @include utility.tab {
+      width: 2.8rem;
+      margin-right: 0.2rem;
+    }
+    @include utility.sp {
+      width: 3.7rem;
+      margin-right: 0;
+    }
     &:last-child {
       margin-right: 0;
+    }
+    &:not(:first-child) {
+      @include utility.sp {
+        display: none;
+      }
     }
     &>a>img {
       height: 200px;
       border-radius: 10px;
+      @include utility.tab {
+        height: 2rem;
+        border-radius: 0.1rem;
+      }
+      @include utility.sp {
+        width: 3.70rem;
+        height: 2.08rem;
+        border-radius: 0.15rem;
+        object-fit: cover;
+        object-position: 0 0;
+      }
     }
     &>a>p {
       margin-top: 8.08px;
       font-size: 16px;
       line-height: 22px;
+      @include utility.tab {
+        margin-top: 0.0808rem;
+        font-size: 0.16rem;
+        line-height: 0.22rem;
+      }
+      @include utility.sp {
+        font-weight: utility.$bold;
+        margin-top: 0.108rem;
+        font-size: 0.16rem;
+        line-height: 0.22rem;
+      }
     }
     &__items {
       display: flex;
       align-items: center;
       font-size:  14px;
       margin-top: 6.92px;
+      @include utility.tab {
+        font-size:  0.14rem;
+        margin-top: 0.0692rem;
+      }
+      @include utility.sp {
+        line-height: 0.2rem;
+        margin-top: 0.04rem;
+      }
+      &:first-child{
+        @include utility.sp {
+          margin-top: 0.692rem;
+        }
+      }
       &__title {
         display: inline-block;
         width: 60px;
@@ -40,87 +108,39 @@
         vertical-align: middle;
         background-color: utility.$lightPink;
         margin-right: 10px;
+        font-size: 14px;
+        @include utility.tab {
+          width: 0.6rem;
+          height: 0.21rem;
+          line-height: 0.21rem;
+          margin-right: 0.1rem;
+          font-size: 0.14rem;
+        }
+        @include utility.sp {
+          width: 0.6rem;
+          height: 0.21rem;
+          line-height: 0.21rem;
+          margin-right: 0.216rem;
+          font-size: 0.14rem;
+        }
+      }
+      &__item {
+        font-weight: 14px;
+        @include utility.tab {
+          font-size: 0.14rem;
+        }
+        @include utility.sp {
+          font-size: 0.14rem;
+        }
       }
     }
   }
   &__btn {
     margin-top: 59px;
-  }
-}
-
-@media screen and (width <=1199px) {
-  .p-newRecruit {
-    padding: 0.64rem 0 0.67rem 0;
-    &__title{
-      font-size: 0.25rem;
-    }
-    &__contents-area {
-      margin-top: 0.25rem;
-    }
-    &__contents {
-      width: 2.8rem;
-      margin-right: 0.2rem;
-      &>a>img {
-        height: 2rem;
-        border-radius: 0.1rem;
-      }
-      &>a>p {
-        margin-top: 0.0808rem;
-        font-size: 0.16rem;
-        line-height: 0.22rem;
-      }
-      &__items {
-        font-size:  0.14rem;
-        margin-top: 0.0692rem;
-        &__title {
-          width: 0.6rem;
-          height: 0.21rem;
-          line-height: 0.21rem;
-          margin-right: 0.1rem;
-        }
-      }
-    }
-    &__btn {
+    @include utility.tab {
       margin-top: 0.59rem;
     }
-  }
-}
-
-@media screen and (width <=767px) {
-  .p-newRecruit {
-    padding: 0.3rem 0 0.6rem 0;
-    &__title {
-      @include utility.title;
-    }
-    &__contents-area {
-      flex-direction: column;
-    }
-    &__contents {
-      width: 3.7rem;
-      margin-right: 0;
-      &:not(:first-child) {
-        display: none;
-      }
-      &>a>img {
-        width: 3.70rem;
-        height: 2.08rem;
-        border-radius: 0.15rem;
-        object-fit: cover;
-        object-position: 0 0;
-      }
-      &>a>p {
-        font-weight: utility.$bold;
-        margin-top: 0.108rem;
-      }
-      &__items {
-        line-height: 0.2rem;
-        margin-top: 0.04rem;
-        &:first-child {
-          margin-top: 0.1192rem;
-        }
-      }
-    }
-    &__btn {
+    @include utility.sp {
       margin-top: 0.44rem;
     }
   }

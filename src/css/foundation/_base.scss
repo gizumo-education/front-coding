@@ -59,10 +59,10 @@ a {
 
 .is-pc {
   @include base.pc {
-    display: block!important;
+    display: inline-block!important;
   }
   @include base.tab {
-    display: block!important;
+    display: inline-block!important;
   }
   @include base.sp {
     display: none!important;
@@ -77,6 +77,24 @@ a {
     display: none!important;
   }
   @include base.sp {
-    display: block!important;
+    display: inline-block!important;
+  }
+}
+
+.title {
+  @include base.pc {
+    font-size: 25px;
+    text-align: center;
+    font-weight: base.$bold;
+  }
+  @include base.tab {
+    font-weight: base.$bold;
+    text-align: center;
+    font-size: 0.25rem;
+  }
+  @include base.sp {
+    font-weight: base.$bold;
+    text-align: center;
+    font-size: 0.25rem;
   }
 }

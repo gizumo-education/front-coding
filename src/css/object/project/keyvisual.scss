@@ -11,6 +11,14 @@
   align-items: center;
   padding-top: 74.95px;
   padding-bottom: 47px;
+  @include utility.tab {
+    padding-top: 0.7495rem;
+    padding-bottom: 0.47rem;
+  }
+  @include utility.sp {
+    padding-top: 0.7016rem;
+    padding-bottom: 0.52rem;
+  }
   &__area {
     display: flex;
     flex-direction: column;
@@ -18,9 +26,16 @@
     width: 50%;
     text-align: center;
     margin-right: 10%;
+    @include utility.sp {
+      width: 2.72rem;
+      margin-right: 0.0332rem;
+    }
   }
   &__award {
     display: flex;
+    @include utility.sp {
+      justify-content: flex-end;
+    }
     &-wrap {
       display: flex;
       flex-direction: column;
@@ -31,9 +46,22 @@
       &__text {
         width: 251px;
         margin-bottom: -9px;
+        @include utility.tab {
+          width: 2.51rem;
+          margin-bottom: -0.09rem;
+        }
+        @include utility.sp {
+          display: none;
+        }
       }
       &__num {
         width: 232px;
+        @include utility.tab {
+          width: 2.32rem;
+        }
+        @include utility.sp {
+          width: 1rem;
+        }
       }
       &__company {
         display: block;
@@ -42,6 +70,16 @@
         margin-left: auto;
         margin-top: 20px;
         filter: drop-shadow(utility.$shadow);
+        @include utility.tab {
+          width: 1.15rem;
+          margin-right: 0.15rem;
+          margin-top: 0.2rem;
+        }
+        @include utility.sp {
+          width: 0.35rem;
+          margin-top: 0.15rem;
+          margin-bottom: -0.0282rem;
+        }
       }
     }
     &::before {
@@ -51,6 +89,14 @@
       filter: drop-shadow(utility.$shadow);
       width: 44.9px;
       height: 141.82px;
+      @include utility.tab {
+        width: 0.449rem;
+        height: 1.4182rem;
+      }
+      @include utility.sp {
+        width: 0.1967rem;
+        height: 0.6201rem;
+      }
     }
     &::after {
       content: '';
@@ -59,10 +105,26 @@
       filter: drop-shadow(utility.$shadow);
       width: 44.9px;
       height: 141.82px;
+      @include utility.tab {
+        width: 0.449rem;
+        height: 1.4182rem;
+      }
+      @include utility.sp {
+        width: 0.1967rem;
+        height: 0.6201rem;
+      }
     }
   }
   &__text {
     margin-top: 40px;
+    @include utility.tab {
+      margin-top: 0.4rem;
+    }
+    @include utility.sp {
+      margin-top: 0.1265rem;
+      width: 2.72rem;
+      height: 0.22rem;
+    }
   }
   &__recruit {
     display: flex;
@@ -74,116 +136,38 @@
     border-radius: 10px;
     width: 391px;
     height: 65px;
-    &>p {
-      display: inline-block;
-      color: utility.$green;
-      font-size: 20px;
-      vertical-align: middle;
-      &>span {
-        font-size: 40px;
-        font-weight: utility.$bold;
-      }
-    }
-  }
-}
-
-@media screen and (width <=1199px) {
-  .p-fv {
-    padding-top: 0.7495rem;
-    padding-bottom: 0.47rem;
-    &__area {
-      width: 50%;
-      margin-right: 10%;
-    }
-    &__award {
-      &-wrap {
-        &__text {
-          width: 2.51rem;
-          margin-bottom: -0.09rem;
-        }
-        &__num {
-          width: 2.32rem;
-        }
-        &__company {
-          width: 1.15rem;
-          margin-right: 0.15rem;
-          margin-top: 0.2rem;
-        }
-      }
-      &::before {
-        width: 0.449rem;
-        height: 1.4182rem;
-      }
-      &::after {
-        width: 0.449rem;
-        height: 1.4182rem;
-      }
-    }
-    &__text {
-      margin-top: 0.4rem;
-    }
-    &__recruit {
+    @include utility.tab {
       margin-top: 0.54rem;
       border: 0.023rem solid utility.$green;
       border-radius: 0.1rem;
       width: 3.91rem;
       height: 0.65rem;
-      &>p {
-        font-size: 0.2rem;
-        &>span {
-          font-size: 0.4rem;
-        }
-      }
     }
-  }
-}
-
-@media screen and (width <=767px) {
-  .p-fv {
-    padding-top: 0.7016rem;
-    padding-bottom: 0.52rem;
-    &__area {
-      width: 2.72rem;
-      margin-right: 0.0332rem;
-    }
-    &__text {
-      margin-top: 0.1265rem;
-      width: 2.72rem;
-      height: 0.22rem;
-    }
-    &__award {
-      &-wrap {
-        justify-content: flex-end;
-        &__text {
-          display: none;
-        }
-        &__num {
-          width: 1rem;
-        }
-        &__company {
-          width: 0.35rem;
-          margin-top: 0.15rem;
-          margin-bottom: -0.0282rem;
-        }
-      }
-      &::before {
-        width: 0.1967rem;
-        height: 0.6201rem;
-      }
-      &::after {
-        width: 0.1967rem;
-        height: 0.6201rem;
-      }
-    }
-    &__recruit {
+    @include utility.sp {
       margin-top: 0.1835rem;
       width: 1.70rem;
       height: 0.3rem;
       border: 0.01rem solid utility.$green;
-      &>p {
+    }
+    &>p {
+      display: inline-block;
+      color: utility.$green;
+      font-size: 20px;
+      vertical-align: middle;
+      @include utility.tab {
+        font-size: 0.2rem;
+      }
+      @include utility.sp {
         font-size: 0.08rem;
         line-height: 0.1158rem;
-        &>span {
+      }
+      &>span {
+        font-size: 40px;
+        font-weight: utility.$bold;
+        @include utility.tab {
+          font-size: 0.4rem;
+        }
+        @include utility.sp {
           font-size: 0.16rem;
           line-height: 0.2317rem;
         }
