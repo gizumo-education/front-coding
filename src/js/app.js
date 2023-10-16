@@ -13,16 +13,26 @@ $(function () {
   });
   const menuBtn = $("#hamburger-btn");
   const spMenu = $("#hamburger-menu");
+  const isClose = $(".hamburger-close");
+  const isNone = $(".hamburger-none");
   const html = $("html");
   const body = $("body");
   const anchorLink = $(".anchorLink");
+
   menuBtn.on("click", function () {
+    menuBtn.toggleClass("open");
     spMenu.toggleClass("active");
+    isClose.toggleClass("is-close");
+    isNone.toggleClass("is-none");
     html.toggleClass("active");
     body.toggleClass("active");
   });
+
   anchorLink.on("click", function () {
     spMenu.removeClass("active");
+    menuBtn.removeClass("open");
+    isClose.removeClass("is-close");
+    isNone.removeClass("is-none");
     html.removeClass("active");
     body.removeClass("active");
   });
