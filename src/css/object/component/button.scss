@@ -26,6 +26,8 @@
     border-radius: 10rem;
   }
   @include utility.sp {
+    font-size: 0.18rem;
+    line-height: 0.18rem;
     margin-top: 0.19rem;
     display: inline-block;
     padding: 0.1rem 0.43rem 0.12rem 0.45rem;
