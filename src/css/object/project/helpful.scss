@@ -24,6 +24,7 @@
     height: 240px;
     margin-right: 20px;
     border-radius: 10px;
+    text-align: center;
     @include utility.tab {
       width: 3.8rem;
       height: 2.4rem;
