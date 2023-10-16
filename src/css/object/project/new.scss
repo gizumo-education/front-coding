@@ -83,8 +83,8 @@
     }
     @include utility.sp {
       margin: 0 auto;
-      max-width: 3.5rem;
-      width: 90%;
+      max-width: 3.62rem;
+      width: 100%;
     }
   }
 
@@ -248,6 +248,9 @@
 .slick-track {
   display: flex;
   gap: 10px !important;
+  @include utility.sp {
+    gap: 0.05rem !important;
+  }
 }
 @include utility.sp {
   .slick-slide {
