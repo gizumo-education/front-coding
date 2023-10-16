@@ -17,7 +17,7 @@
       width: 11.8rem;
     }
     @include utility.sp {
-      width: 100%;
+      width: 4rem;
       padding: 0 0.1rem;
     }
   }
@@ -39,7 +39,6 @@
 
   &__card-area {
     position: relative;
-    text-align: center;
     overflow: hidden;
     @include utility.sp {
       margin-top: 0.5rem;
@@ -48,7 +47,7 @@
 
   &__cards {
     margin-top: 25px;
-    gap: 10px;
+    // gap: 10px;
 
     & > li {
       text-align: left;
@@ -83,8 +82,7 @@
     }
     @include utility.sp {
       margin: 0 auto;
-      max-width: 3.62rem;
-      width: 100%;
+      // width: 3.62rem !important;
     }
   }
 
@@ -194,10 +192,16 @@
     top: 130px;
     left: 0;
     z-index: 1;
+    @include utility.sp {
+      top: 1.3rem;
+    }
   }
   &__next {
     top: 130px;
     right: 0;
+    @include utility.sp {
+      top: 1.2rem;
+    }
   }
 
   &__prev::after,
@@ -247,14 +251,15 @@
 
 .slick-track {
   display: flex;
-  gap: 10px !important;
+  justify-content: space-between !important;
   @include utility.sp {
-    gap: 0.05rem !important;
+    gap: 0 !important;
   }
 }
 @include utility.sp {
   .slick-slide {
-    width: 100% !important;
+    width: auto !important;
+    margin: 0 auto;
   }
   .slick-list {
     width: 100% !important;
