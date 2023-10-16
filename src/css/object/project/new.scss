@@ -194,6 +194,7 @@
     z-index: 1;
     @include utility.sp {
       top: 1.3rem;
+      left: 0;
     }
   }
   &__next {
@@ -201,6 +202,7 @@
     right: 6px;
     @include utility.sp {
       top: 1.2rem;
+      right: 0;
     }
   }
 
@@ -253,6 +255,9 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  @include utility.sp {
+    gap: 0;
+  }
 }
 @include utility.sp {
   .slick-slide {
