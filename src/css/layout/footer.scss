@@ -2,6 +2,9 @@
 // footerのスタイルを記述するファイル
 .l-footer {
   padding-top: 200px;
+  @include utility.tab{
+  padding-top: 2rem;
+  }
   @include utility.sp{
     padding-top: 1rem;
   }

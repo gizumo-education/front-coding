@@ -43,16 +43,16 @@
       }
 
       & img {
-        width: 280px;
-        height: 200px;
+        aspect-ratio: 7/5;
         border-radius: utility.$circle;
         @include utility.tab{
           width: 2.8rem;
           height: 2rem;
         }
         @include utility.sp{
-          width: 3.7rem;
-          height: 2rem;
+          aspect-ratio: 37/20;
+          object-fit: cover;
+          object-position: 0 0;
         }
         }
     }
