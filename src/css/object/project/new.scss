@@ -194,7 +194,7 @@
     z-index: 1;
     @include utility.tab {
       top: 1.3rem;
-      left: 0.04rem;
+      left: 0.025rem;
     }
     @include utility.sp {
       top: 1.4rem;
@@ -206,7 +206,7 @@
     right: 5px;
     @include utility.tab {
       top: 1.3rem;
-      right: 0.03rem;
+      right: 0.05rem;
     }
     @include utility.sp {
       top: 1.4rem;
