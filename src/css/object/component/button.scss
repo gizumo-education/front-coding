@@ -6,21 +6,36 @@
   transition: .3s all;
   padding: 0;
   background-color: transparent;
+  background: url(../img/icon/icon-search-white.png) no-repeat;
+  background-position: center left 14.02px;
+  background-size: 29.98px;
+  cursor: pointer;
+  padding: 21px 20px 21px 48px;
+  background-color: utility.$pink;
+  color: utility.$white;
+  font-weight: utility.$bold;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 100px;
+  @include utility.tab {
+    background-position: center left 0.1402rem;
+    background-size: 0.2998rem;
+    padding: 0.21rem 0.2rem 0.21rem 0.48rem;
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    border-radius: 10rem;
+  }
+  @include utility.sp {
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    margin-top: 0.19rem;
+    display: inline-block;
+    padding: 0.1rem 0.43rem 0.12rem 0.45rem;
+    background-size: 0.1798rem;
+    margin: 0.19rem auto 0 auto;
+  }
   &:hover {
     opacity: .7;
-  }
-  &>p {
-    background: url(../img/icon/icon-search-white.png) no-repeat;
-    background-position: center left 14.02px;
-    background-size: 29.98px;
-    cursor: pointer;
-    padding: 21px 20px 21px 48px;
-    background-color: utility.$pink;
-    color: utility.$white;
-    font-weight: utility.$bold;
-    font-size: 18px;
-    line-height: 18px;
-    border-radius: 100px;
   }
 }
 
@@ -35,4 +50,17 @@
   width: 420px;
   margin: 0 auto;
   display: block;
+  @include utility.tab {
+    padding: 0.21rem 0.93rem;
+    font-size: 0.18rem;
+    border-radius: 1rem;
+    width: 4.2rem;
+  }
+  @include utility.sp {
+    width: auto;
+    line-height: 0.18rem;
+    padding: 0.21rem 0;
+    font-size: 0.18rem;
+    text-align: center;
+  }
 }

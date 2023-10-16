@@ -1,27 +1,69 @@
 @use '../../object/utility/utility.scss';
 
 .p-form {
+  &__title{
+    @include utility.sp {
+      font-size: 0.22rem;
+    }
+  }
  &__area {
     margin: 60px auto;
     padding: 40px 0;
     background-color: utility.$formLightblue;
     text-align: center;
     border-radius: 10px;
-  }
-  &__title {
-    font-weight: utility.$bold;
-    font-size: 25px;
+    @include utility.tab {
+      margin: 0.6rem auto;
+      padding: 0.4rem 0;
+      border-radius: 0.1rem;
+    }
+    @include utility.sp {
+      margin: 0.25rem auto;
+      padding: 0.15rem 0 0.2rem 0;
+    }
   }
   &__subtitle {
     font-size: 20px;
     margin-top: 20px;
+    @include utility.tab {
+      font-size: 0.2rem;
+      margin-top: 0.2rem;
+    }
+    @include utility.sp {
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+      margin-top: 0.16rem;
+    }
   }
   &__select {
     display: flex;
     margin-top: 26px;
     justify-content: center;
+    @include utility.tab {
+      margin-top: 0.26rem;
+     }
+     @include utility.sp {
+      flex-direction: column;
+      margin-top: 0.13rem;
+    }
+    &__areas {
+      display: flex;
+      @include utility.sp {
+        justify-content: center;
+      }
+    }
     &__area {
       position: relative;
+      margin-right: 15px;
+      @include utility.tab {
+        margin-right: 0.15rem;
+      }
+      @include utility.sp {
+        margin-right: 0.1rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
       &::before {
         content: '';
         width: 0;
@@ -31,8 +73,19 @@
         border-top: 10px solid utility.$linePink;
         position: absolute;
         top: 50%;
-        right: 29px;
+        right: 15px;
         transform: translateY(-50%);
+        @include utility.tab {
+          border-left: 0.1rem solid transparent;
+          border-right: 0.1rem solid transparent;
+          border-top: 0.1rem solid utility.$linePink;
+        }
+        @include utility.sp {
+          border-left: 0.07rem solid transparent;
+          border-right: 0.07rem solid transparent;
+          border-top: 0.07rem solid utility.$linePink;
+          right: 0.07rem;
+        }
       }
     }
     &__pulldown {
@@ -40,30 +93,75 @@
       height: 60px;
       border-radius: 10px;
       border: 1px solid utility.$linePink;
-      margin-right: 15px;
       padding-left: 14.5px;
       font-size: 18px;
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
       cursor: pointer;
+      background-color: utility.$white;
+      color: utility.$black;
+      @include utility.tab {
+        width: 2rem;
+        height: 0.6rem;
+        border-radius: 0.1rem;
+        border: 0.01rem solid utility.$linePink;
+        padding-left: 0.145rem;
+        font-size: 0.18rem;
+      }
+      @include utility.sp {
+        width: 1rem;
+        height: 0.3rem;
+        font-size: 0.12rem;
+        padding-left: 0.08rem;
+        border-radius: 0.05rem;
+      }
       &::-ms-expand {
         display: none;
       }
     }
-    &>input {
-      width: 300px;
-      height: 60px;
-      border-radius: 10px;
-      border: 1px solid utility.$linePink;
-      margin-right: 15px;
-      padding-left: 10px;
-      font-size: 18px;
+    &__input{
+      @include utility.sp {
+        margin-top: 0.15rem;
+      }
+      &>input {
+        width: 300px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid utility.$linePink;
+        margin-right: 15px;
+        padding-left: 10px;
+        font-size: 18px;
+        @include utility.tab {
+          width: 3rem;
+          height: 0.6rem;
+          border-radius: 0.1rem;
+          border: 0.01rem solid utility.$linePink;
+          margin-right: 0.15rem;
+          padding-left: 0.1rem;
+          font-size: 0.18rem;
+        }
+        @include utility.sp {
+          width: 3.2rem;
+          height: 0.3rem;
+          border-radius: 0.05rem;
+          margin-right: 0;
+          font-size: 0.14rem;
+        }
+      }
     }
   }
   &:nth-child(8) &__area {
     margin: 0 auto;
     margin-top: 150px;
     margin-bottom: 200px;
+    @include utility.tab {
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    @include utility.sp {
+      margin-top: 0.6rem;
+      margin-bottom: 1rem;
+    }
   }
 }
