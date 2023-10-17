@@ -44,6 +44,8 @@
   flex-shrink: 0;
   background-color: variables.$pink;
   border-radius: 30px;
+  border: none;
+  outline: none;
 
   &__font {
     position: absolute;
