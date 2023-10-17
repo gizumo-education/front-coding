@@ -2,7 +2,6 @@ import $ from "jquery";
 import "slick-carousel";
 
 $(function () {
-  console.log("環境構築完了");
   $('a[href^="#"]').on("click", function () {
     const adjust = 100;
     const speed = 500;
