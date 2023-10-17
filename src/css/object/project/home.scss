@@ -2,6 +2,13 @@
 
 .p-home {
   background-color: utility.$homeColor;
+  margin-top: 94px;
+  @include utility.tab {
+    margin-top: 0;
+  }
+  @include utility.sp {
+    margin-top: 0;
+  }
   &__pic {
     width: 1264px;
     position: relative;

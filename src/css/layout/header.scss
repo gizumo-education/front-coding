@@ -2,7 +2,8 @@
 // headerのスタイルを記述するファイル
 
 .l-header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   padding: 25px 100px 25px 0;
@@ -127,12 +128,69 @@
     appearance: none;
     border: none;
     background-color: transparent;
+    cursor: pointer;
     span {
       display: inline-block;
       width: 100%;
       height: 0.06rem;
       background-color: utility.$black;
       border-radius: 0.03rem;
+      transition: 0.3s all;
+    }
+    span:nth-child(2).is-none {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    span:nth-child(1).is-close {
+      transform: rotate(-50deg) translate(-0.1rem, 0.13rem);
+    }
+    span:nth-child(3).is-close {
+      transform: rotate(50deg) translate(-0.1rem, -0.13rem);
     }
   }
+
+  &__sp-menu {
+    position: fixed;
+    top: 0.7rem;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 0.7rem);
+    background-color: utility.$transBlack;
+    visibility: hidden;
+    transition: 0.3s all;
+    z-index: 100;
+    opacity: 0;
+    @include utility.pc {
+      display: none;
+    }
+    @include utility.tab {
+      display: none;
+    }
+  }
+  &__menu-area {
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  &__menu {
+    margin-top: 0.4rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    a {
+      color: utility.$white;
+      font-family: Noto Sans JP;
+      font-size: 0.22rem;
+      font-weight: 700;
+      line-height: 22px;
+      opacity: 1;
+    }
+  }
+}
+
+.active {
+  visibility: visible;
+  right: 0;
+  opacity: 1;
 }
