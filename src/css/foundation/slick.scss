@@ -1,4 +1,4 @@
-@use '../object/utility/utility' as slick;
+@use '../object/utility/utility';
 
 .slick-slider {
     position: relative;
@@ -14,10 +14,10 @@
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
-    @include slick.tab {
+    @include utility.tab {
         width: 11.8rem;
     }
-    @include slick.sp {
+    @include utility.sp {
         width: 3.7rem;
     }
 }
@@ -38,10 +38,10 @@
 }
 
 .draggable {
-    @include slick.tab {
+    @include utility.tab {
         width: 11.8rem;
     }
-    @include slick.sp {
+    @include utility.sp {
         width: 3.7rem;
     }
 }
@@ -114,7 +114,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-color: slick.$white;
+    background-color: utility.$white;
     border-radius: 50%;
     opacity: 0.7;
     border: none;
@@ -122,11 +122,11 @@
     position: absolute;
     z-index: 1;
     top: 20%;
-    @include slick.tab {
+    @include utility.tab {
         width: 0.6rem;
         height: 0.6rem;
     }
-    @include slick.sp {
+    @include utility.sp {
         width: 0.42rem;
         height: 0.42rem;
         top: calc(50% - .21rem);
@@ -137,24 +137,24 @@
         bottom: calc(50% - 11px);
         width: 22px;
         height: 22px;
-        border-top: 0.71px solid slick.$black;
-        border-right: 0.71px solid slick.$black;
+        border-top: 0.71px solid utility.$black;
+        border-right: 0.71px solid utility.$black;
         transform: rotate(45deg);
-        @include slick.tab {
+        @include utility.tab {
             left: calc(50% - 0.165rem);
             bottom: calc(50% - 0.11rem);
             width: 0.22rem;
             height: 0.22rem;
-            border-right: 0.0071rem solid slick.$black;
-            border-top: 0.0071rem solid slick.$black;
+            border-right: 0.0071rem solid utility.$black;
+            border-top: 0.0071rem solid utility.$black;
         }
-        @include slick.sp {
+        @include utility.sp {
             left: calc(50% - 0.1125rem);
             bottom: calc(50% - 0.075rem);
             width: 0.15rem;
             height: 0.15rem;
-            border-right: 0.0071rem solid slick.$black;
-            border-top: 0.0071rem solid slick.$black;
+            border-right: 0.0071rem solid utility.$black;
+            border-top: 0.0071rem solid utility.$black;
         }
     }
     &-left {
@@ -163,24 +163,24 @@
         bottom: calc(50% - 11px);
         width: 22px;
         height: 22px;
-        border-left: 0.71px solid slick.$black;
-        border-top: 0.71px solid slick.$black;
+        border-left: 0.71px solid utility.$black;
+        border-top: 0.71px solid utility.$black;
         transform: rotate(-45deg);
-        @include slick.tab {
+        @include utility.tab {
             left: calc(50% - 0.055rem);
             bottom: calc(50% - 0.11rem);
             width: 0.22rem;
             height: 0.22rem;
-            border-left: 0.0071rem solid slick.$black;
-            border-top: 0.0071rem solid slick.$black;
+            border-left: 0.0071rem solid utility.$black;
+            border-top: 0.0071rem solid utility.$black;
         }
-        @include slick.sp {
+        @include utility.sp {
             left: calc(50% - 0.0375rem);
             bottom: calc(50% - 0.075rem);
             width: 0.15rem;
             height: 0.15rem;
-            border-left: 0.0071rem solid slick.$black;
-            border-top: 0.0071rem solid slick.$black;
+            border-left: 0.0071rem solid utility.$black;
+            border-top: 0.0071rem solid utility.$black;
         }
     }
 }
