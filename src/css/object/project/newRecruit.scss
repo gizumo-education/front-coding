@@ -22,7 +22,7 @@
   &__contents-area {
     display: flex;
     margin-top: 25px;
-    justify-content: center;
+    justify-content: space-between;
     @include utility.tab {
       margin-top: 0.25rem;
     }
@@ -42,19 +42,11 @@
       width: 3.7rem;
       margin-right: 0;
     }
-    &:last-child {
-      margin-right: 0;
-    }
-    &:not(:first-child) {
-      @include utility.sp {
-        display: none;
-      }
-    }
     &>a>img {
-      height: 200px;
+      width: 280px;
       border-radius: 10px;
       @include utility.tab {
-        height: 2rem;
+        width: 2.8rem;
         border-radius: 0.1rem;
       }
       @include utility.sp {
@@ -66,15 +58,18 @@
       }
     }
     &>a>p {
+      width: 280px;
       margin-top: 8.08px;
       font-size: 16px;
       line-height: 22px;
       @include utility.tab {
+        width: 2.8rem;
         margin-top: 0.0808rem;
         font-size: 0.16rem;
         line-height: 0.22rem;
       }
       @include utility.sp {
+        width: 3.7rem;
         font-weight: utility.$bold;
         margin-top: 0.108rem;
         font-size: 0.16rem;
@@ -94,9 +89,9 @@
         line-height: 0.2rem;
         margin-top: 0.04rem;
       }
-      &:first-child{
+      &:first-of-type {
         @include utility.sp {
-          margin-top: 0.692rem;
+          margin-top: 0.1192rem;
         }
       }
       &__title {

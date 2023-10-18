@@ -9,6 +9,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -33,6 +34,9 @@ body {
 @include base.sp {
   body {
     font-size: 0.1rem;
+    &.no-scroll {
+      overflow: hidden;
+    }
   }
   html {
     font-size: calc(100vw / 4);
@@ -93,6 +97,8 @@ a {
     font-size: 0.25rem;
   }
   @include base.sp {
+    padding-top: 1rem;
+    margin-top: -1rem;
     font-weight: base.$bold;
     text-align: center;
     font-size: 0.25rem;
