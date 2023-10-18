@@ -34,7 +34,7 @@ body {
 @include base.sp {
   body {
     font-size: 0.1rem;
-    &.menu-open {
+    &.no-scroll {
       overflow: hidden;
     }
   }
