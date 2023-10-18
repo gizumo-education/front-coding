@@ -161,7 +161,7 @@
   }
 
   &__sp-nav {
-    padding: .57rem 0 0 0.6025rem;
+    padding: .57rem 0 0 0;
     right: -4rem;
     top: .7rem;
     transition: ease .7s;
@@ -179,6 +179,8 @@
       margin-top: 0;
     }
     &>a {
+      width: 100%;
+      padding-left: 0.6025rem;
       color: utility.$white;
       font-weight: utility.$bold;
       font-size: 0.22rem;

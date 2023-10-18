@@ -22,8 +22,11 @@ $('.slider').slick({
   ]
 });
 
-$('.js-hamburger').on('click', function () {
+function menuOpen() {
   $('.l-header__sp-nav').toggleClass('menu-open')
   $('.l-header__hamburger__btn').toggleClass('is-active')
   $('#top').toggleClass('no-scroll')
-})
+}
+
+$('.js-hamburger').on('click', menuOpen)
+$('.js-link').on('click', menuOpen)
