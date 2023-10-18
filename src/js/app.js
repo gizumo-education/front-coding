@@ -25,4 +25,5 @@ $('.slider').slick({
 $('.js-hamburger').on('click', function () {
   $('.l-header__sp-nav').toggleClass('is-active')
   $('.l-header__hamburger__btn').toggleClass('is-active')
+  $('#top').toggleClass('menu-open')
 })
