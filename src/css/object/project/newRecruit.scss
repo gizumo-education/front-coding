@@ -89,9 +89,9 @@
         line-height: 0.2rem;
         margin-top: 0.04rem;
       }
-      &:first-child{
+      &:first-of-type {
         @include utility.sp {
-          margin-top: 0.692rem;
+          margin-top: 0.1192rem;
         }
       }
       &__title {

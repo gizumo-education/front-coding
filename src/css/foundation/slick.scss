@@ -129,7 +129,7 @@
     @include slick.sp {
         width: 0.42rem;
         height: 0.42rem;
-        top: 25%;
+        top: calc(50% - .21rem);
     }
     &-right {
         position: absolute;
