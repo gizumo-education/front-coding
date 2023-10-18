@@ -147,9 +147,10 @@
 .u-headline {
   flex-shrink: 0;
   background-color: variables.$white;
+  padding-top: 106px;
 
   &__box {
-    padding: 106px 0 53px 0;
+    padding-bottom: 53px;
 
     &--flex {
       display: flex;
