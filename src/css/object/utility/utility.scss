@@ -27,6 +27,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 200px;
+  padding-top: 150px;
 }
 
 // header
@@ -85,13 +86,6 @@
   left: 165px;
 }
 
-.u-step__flame--flex,
-.u-box__content--flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .u-content {
   &--message {
     margin-top: 18px;
@@ -117,7 +111,7 @@
 
 //転職お役立ちコンテンツ//
 .u-contents {
-  padding: 106.13px 0 50px 0;
+  padding-top: 106.13px;
 
   &__position {
     margin-left: 20px;
@@ -134,12 +128,13 @@
 
 //医療事務コラムもっと見る
 .u-button__flame--column {
-  margin: 80px auto 150px auto;
   line-height: 18px;
+  padding-top: 80px;
 }
 
 .u-job {
-  margin: 60px auto 67px auto;
+  // margin: 60px auto 67px auto;
+  padding-top: 60px;
 }
 
 // ギブズ四つの特徴　ピンク
@@ -149,15 +144,13 @@
   background-color: variables.$white;
   padding-top: 106px;
 
-  &__box {
-    padding-bottom: 53px;
-
-    &--flex {
+  &__box--flex {
       display: flex;
       justify-content: center;
+      padding-top: 53px;
     }
   }
-}
+
 
 .u-appeal {
   margin-left: 40px;

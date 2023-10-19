@@ -195,8 +195,8 @@
         <a class="c-button__box--back" href=""></a>
         <a class="c-button__box--next" href=""></a>
       </div>
-      <div>
-        <a class="c-button__flame u-job" href="">新着求人一覧をもっと見る</a>
+      <div class="u-job">
+        <a class="c-button__flame" href="">新着求人一覧をもっと見る</a>
       </div>
   </section>
 
@@ -212,7 +212,7 @@
   <!-- 四つの特徴　ピンク -->
   <section>
     <div class="u-headline">
-      <h2 class="u-headline__box">ギズジョブの4つの特徴</h2>
+      <h2 >ギズジョブの4つの特徴</h2>
       <div class="u-headline__box--flex">
         <div>
           <div class="l-inner__appeal">
@@ -244,9 +244,10 @@
   </section>
   <!-- 転職までの流れ -->
   <section>
-    <h2 class="l-inner__content">転職までの流れ</h2>
-    <ul class="u-box__content--flex">
-      <li class="u-box__content--flex">
+    <div  class="u-box__content">
+    <h2>転職までの流れ</h2>
+    <ul class="l-inner__content u-box__content--padding">
+      <li class="l-inner__content">
         <div class="l-inner__content--border u-content__border--text">
           <div class="l-inner__content--item">
             <div class="l-inner__content--flame u-step__flame--flex">
@@ -265,7 +266,7 @@
         <span class="l-triangle1">
         </span>
       </li>
-      <li class="u-box__content--flex">
+      <li class="l-inner__content">
         <div class="l-inner__content--border  u-content__border--text">
           <div class="l-inner__content--item">
             <div class="l-inner__content--flame u-step__flame--flex">
@@ -285,7 +286,7 @@
         <span class="l-triangle1">
         </span>
       </li>
-      <li class="u-box__content--flex">
+      <li class="l-inner__content">
         <div class="l-inner__content--border  u-content__border--text">
           <div class="l-inner__content--item">
             <div class="l-inner__content--flame u-step__flame--flex">
@@ -303,10 +304,10 @@
         <span class="l-triangle1">
         </span>
       </li>
-      <li class="u-box__content--flex">
+      <li class="l-inner__content">
         <div class="l-inner__content--border u-content__border--text">
           <div class="l-inner__content--item">
-            <div class="l-inner__content--flame u-step__flame--flex">
+            <div class="l-inner__content--flame">
               <p class="l-inner__content--test">STEP<br>4</p>
             </div>
             <img class="l-inner__content--img" src="img/icon/figma-flow4.png" alt="">
@@ -321,11 +322,13 @@
         </span>
       </li>
     </ul>
+  </div>
   </section>
 
   <!-- 転職お役立ちコンテンツ -->
   <section>
-    <h2 class="u-contents">転職お役立ちコンテンツ</h2>
+    <div class="u-contents">
+    <h2>転職お役立ちコンテンツ</h2>
     <ul class="l-inner__flex">
       <li class="u-contents__position">
         <img class="l-inner__contents--img u-img__filter" src="img/picture/figma-contents1.3.png" alt="">
@@ -352,9 +355,12 @@
         </div>
       </li>
     </ul>
+  </div>
   </section>
   <section>
-    <a class="u-button__flame--column c-button__flame" href="">医療事務コラムをもっと見る</a>
+    <div class="u-button__flame--column">
+    <a class="c-button__flame" href="">医療事務コラムをもっと見る</a>
+  </div>
   </section>
 
   <!-- //お仕事検索// -->
@@ -456,6 +462,9 @@
       </ul>
     </div>
   </footer>
+  <div class="l-footer__copy">
+    <p class="l-footer__copy--text">&copy; 2022 Gizumo Inc.</p>
+  </div>
 </body>
 
 </html>
