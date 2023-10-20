@@ -8,11 +8,6 @@ const ham = $('#js-hamburger');
 const nav = $('#js-nav');
 const link = $('.l-header__link');
 const body = $('body');
-const top = $('#top');
-const news = $('#news');
-const summary = $('#summary');
-const flow = $('#flow');
-const content = $('#content')
 
 ham.on('click', function () {
   ham.toggleClass('active');
@@ -45,10 +40,12 @@ $(".slick").slick({
 
 $('a[href^="#"]').click(function () {
   const speed = 600;
+  const height = $("#js-header").height();
   let href = $(this).attr("href");
   let target = $(href == "#" || href == "" ? "html" : href);
-  let position = target.offset().top;
-  $("body,html").animate({ scrollTop: position -20 }, speed, "swing");
+  let position = target.offset().top - height ;
+  $("body,html").animate({ scrollTop: position
+  }, speed, "swing");
   return false;
 });
 
