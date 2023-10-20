@@ -43,33 +43,12 @@ $(".slick").slick({
   ],
 });
 
-top.on('click', function () {
-  $('body,html').animate({
-      scrollTop: 0}, 500);
-  return false;
-});
-
-news.on('click', function () {
-  $('body,html').animate({
-      scrollTop: 550}, 500);
-  return false;
-});
-
-summary.on('click', function () {
-  $('body,html').animate({
-      scrollTop: 1000}, 500);
-  return false;
-});
-
-flow.on('click', function () {
-  $('body,html').animate({
-      scrollTop: 1900}, 500);
-  return false;
-});
-
-content.on('click', function () {
-  $('body,html').animate({
-      scrollTop: 3400}, 500);
+$('a[href^="#"]').click(function () {
+  const speed = 600;
+  let href = $(this).attr("href");
+  let target = $(href == "#" || href == "" ? "html" : href);
+  let position = target.offset().top;
+  $("body,html").animate({ scrollTop: position -20 }, speed, "swing");
   return false;
 });
 
