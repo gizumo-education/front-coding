@@ -18,6 +18,9 @@ body {
   font-weight: base.$regular;
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 1;
+  &.active {
+    overflow: hidden;
+  }
 }
 
 @include base.tab {
@@ -80,3 +83,4 @@ a {
     display: block!important;
   }
 }
+
