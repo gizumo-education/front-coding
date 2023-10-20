@@ -3,33 +3,6 @@
 
 // innerのスタイルを記述するファイル
 
-// header
-.l-inner__header {
-
-  &--position1 {
-    position: absolute;
-    top: 15px;
-    right: 21px;
-    bottom: 15px;
-    left: 41px;
-  }
-
-  &--position2 {
-    position: absolute;
-    top: 15px;
-    right: 32px;
-    bottom: 15px;
-    left: 52px;
-  }
-
-  &--position3 {
-    position: absolute;
-    top: 15px;
-    right: 28px;
-    bottom: 15px;
-    left: 56px;
-  }
-}
 
 .l-inner__select {
 

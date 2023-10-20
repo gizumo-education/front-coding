@@ -3,28 +3,6 @@
 // 共通パーツであるボタンのスタイルを記述するファイル
 
 
-
-.c-header {
-  &__font {
-    font-family: Noto Sans JP;
-    font-weight: variables.$regular;
-    line-height: normal;
-
-    &--white {
-      color: variables.$white;
-      font-size: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    &--black {
-      color: variables.$filterBlack;
-      font-size: 16px;
-    }
-  }
-}
-
 .c-option__text {
   color: variables.$filterBlack;
   font-family: Noto Sans JP;

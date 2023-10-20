@@ -2,7 +2,7 @@
 @use "../foundation/variables";
 // headerのスタイルを記述するファイル
 
-.l-header__nav  {
+.l-header {
   padding: 25px 50px;
   display: flex;
   justify-content: flex-end;
@@ -13,4 +13,126 @@
   left: 0;
   z-index: 1000;
   background-color: variables.$white;
+
+  &__flex {
+    display: -webkit-box;
+  }
+
+  &__search {
+    display: -webkit-box;
+  }
+
+  &__icon {
+    margin: 0 13px;
+    font-size: 16px;
+  }
+
+  &__font {
+    font-family: Noto Sans JP;
+    font-weight: variables.$regular;
+    line-height: normal;
+
+    &--white {
+      color: variables.$white;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--black {
+      color: variables.$filterBlack;
+      font-size: 16px;
+    }
+  }
+
+  &__img {
+    height: 18px;
+    width: 18px;
+  }
+
+  &__button {
+    display: flex;
+  }
+
+  &__icon3 {
+    position: absolute;
+    top: 16px;
+    right: 129.04px;
+    bottom: 16px;
+    left: 10px;
+    width: 20.965px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  &__icon4 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    top: 16px;
+    right: 98px;
+    bottom: 16px;
+    left: 24px;
+  }
+
+  &__icon5 {
+    position: absolute;
+    top: 17px;
+    right: 94px;
+    bottom: 17px;
+    left: 30px;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+  &__frame {
+    background-color: variables.$lightBlue;
+    position: relative;
+    border-radius: 10px;
+    width: 160px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-left: 15px;
+
+    &:first-child {
+      margin-left: 25px;
+    }
+
+    &--2 {
+      width: 140px;
+      height: 50px;
+      background-color: variables.$lightBlue;
+      position: relative;
+      border-radius: 10px;
+      flex-shrink: 0;
+      margin-left: 15px;
+    }
+  }
+
+  &__position1 {
+    position: absolute;
+    top: 15px;
+    right: 21px;
+    bottom: 15px;
+    left: 41px;
+  }
+
+  &__position2 {
+    position: absolute;
+    top: 15px;
+    right: 32px;
+    bottom: 15px;
+    left: 52px;
+  }
+
+  &__position3 {
+    position: absolute;
+    top: 15px;
+    right: 28px;
+    bottom: 15px;
+    left: 56px;
+  }
 }

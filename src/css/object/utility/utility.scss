@@ -4,6 +4,7 @@
 
 .u-gray {
   background-color: variables.$liteGray;
+  width: 100%;
 }
 
 .u-view__relative {
@@ -32,18 +33,6 @@
 
 // header
 
-.u-summary__flex {
-  display: -webkit-box;
-
-  &__search {
-    display: -webkit-box;
-  }
-}
-
-.u-icon__position {
-  margin: 0 13px;
-  font-size: 16px;
-}
 
 //新着求人 job//
 .o-utility__job__category__position {
