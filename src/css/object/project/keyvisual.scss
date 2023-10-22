@@ -28,7 +28,15 @@
     height: 500px;
   }
 
+  &__gray {
+    background-color: variables.$liteGray;
+    width: 100%;
+  }
   
+  &__relative {
+    position: relative;
+    height: 500px;
+  }
 
   &__text {
     width: 100%;
@@ -126,3 +134,5 @@
     }
   }
 }
+
+

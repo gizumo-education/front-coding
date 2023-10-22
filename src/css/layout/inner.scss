@@ -86,11 +86,18 @@
   border-top: 10px solid variables.$pink;
 }
 
-//求人一覧//
-.l-inner__job {
-  height: 636px;
-  padding-top: 64px;
-  background-color: variables.$skyBlue;
+//新着求人//
+.l-inner{
+  &__width {
+    margin: 0 auto;
+    width: 1180px;
+    max-width: 100%;
+  }
+
+  &__job {
+    height: 636px;
+    padding-top: 64px;
+    background-color: variables.$skyBlue;
 
   &--title {
     font-family: Inter;
@@ -111,7 +118,7 @@
     border-radius: 10px;
   }
 
-  &__text {
+  &--text {
     color: variables.$black;
     font-size: 16px;
     font-weight: variables.$regular;
@@ -120,7 +127,7 @@
     height: 44px;
   }
 
-  &__category {
+  &--category {
     color: variables.$black;
     font-size: 14px;
     font-weight: variables.$regular;
@@ -130,7 +137,7 @@
     margin-left: 10px;
   }
 
-  &__category__flame {
+  &--flame {
     color: variables.$black;
     font-size: 14px;
     font-weight: variables.$regular;
@@ -140,10 +147,10 @@
     display: inline-block;
     width: 60px;
     height: 21px;
-    margin-top: 6px;
     flex-shrink: 0;
     background-color: variables.$lightPink;
   }
+}
 }
 
 //MTG IMAGE//

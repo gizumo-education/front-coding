@@ -2,21 +2,6 @@
 @forward '../../foundation/_mixins.scss';
 @use "../../foundation/variables";
 
-.u-gray {
-  background-color: variables.$liteGray;
-  width: 100%;
-}
-
-.u-view__relative {
-  position: relative;
-  height: 500px;
-}
-
-.u-inner__width {
-  margin: 0 auto;
-  width: 1180px;
-  max-width: 100%;
-}
 
 // お仕事検索//
 
@@ -31,21 +16,24 @@
   padding-top: 150px;
 }
 
-// header
-
-
 //新着求人 job//
-.o-utility__job__category__position {
-  margin-top: 4px;
-}
+.u-job__category {
+  &__position1 {
+    margin-top: 7px;
+  }
 
-.o-utility__job__category__positions {
-  margin-top: 5px;
+  &__position2 {
+    margin-top: 4px;
+  }
+
+  &__position3 {
+    margin-top: 5px;
+  }
 }
 
 .u-container__position--job {
   margin-left: 20px;
-    
+
   &:first-child {
     margin-left: 0;
   }
@@ -134,11 +122,11 @@
   padding-top: 106px;
 
   &__box--flex {
-      display: flex;
-      justify-content: center;
-      padding-top: 53px;
-    }
+    display: flex;
+    justify-content: center;
+    padding-top: 53px;
   }
+}
 
 
 .u-appeal {
