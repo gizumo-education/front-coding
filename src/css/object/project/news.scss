@@ -35,10 +35,9 @@
     }
 
     &__list {
-
       &:nth-child(n+2) {
         @include utility.sp{
-          display: none;
+          display: none !important;
         }
       }
 
@@ -124,4 +123,87 @@
       }
     }
 
+  }
+
+  .slick {
+    width: 100%;
+  }
+
+  
+  .slide-arrow {
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: utility.$white;
+    border-radius: 50%;
+    opacity: .8;
+    border: none;
+    @include utility.sp{
+      width: 0.42rem;
+      height: 0.42rem;
+      top: 45%;
+    }
+  }
+  
+  .slide-prev {
+    &::before{
+      content: "";
+      width: 25px;
+      height: 25px;
+      border-right: 1px solid utility.$black;
+      border-top: 1px solid utility.$black;
+      display: inline-block;
+      transform: rotate(225deg);
+      position: relative;
+      left: 5px;
+      @include utility.sp{
+        width: 0.1rem;
+        height: 0.1rem;
+        left: 1px;
+      };
+    }
+  }
+  
+  .slide-next {
+    right: 0;
+    &::after{
+      content: "";
+      width: 25px;
+      height: 25px;
+      border-right: 1px solid utility.$black;
+      border-top: 1px solid utility.$black;
+      display: inline-block;
+      transform: rotate(45deg);
+      position: relative;
+      left: -5px;
+      @include utility.sp{
+        width: 0.1rem;
+        height: 0.1rem;
+        left: -2px;
+      };
+    }
+  }
+
+  button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    padding: 0;
+  }
+
+  .news-margin {
+    margin-left: 20px;
+    @include utility.sp{
+      margin-left: 0;
+    }
+  }
+
+  .slick-active[data-slick-index="0"] {
+    & .news-margin {
+      margin-left: 0;
+    }
   }
