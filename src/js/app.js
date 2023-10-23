@@ -40,14 +40,12 @@ $(".slick").slick({
 
 $('a[href^="#"]').click(function () {
   const speed = 600;
-  const height = $("#js-header").height();
-  let href = $(this).attr("href");
-  let target = $(href == "#" || href == "" ? "html" : href);
-  let position = target.offset().top - height ;
+  const height = $("#js-header").innerHeight();
+  const href = $(this).attr("href");
+  const target = $(href === "#" || href === "" ? "html" : href);
+  const position = target.offset().top - height ;
   $("body,html").animate({ scrollTop: position
   }, speed, "swing");
   return false;
 });
-
-
 })
