@@ -87,7 +87,7 @@
 }
 
 //新着求人//
-.l-inner{
+.l-inner {
   &__width {
     margin: 0 auto;
     width: 1180px;
@@ -99,58 +99,58 @@
     padding-top: 64px;
     background-color: variables.$skyBlue;
 
-  &--title {
-    font-family: Inter;
-    font-weight: variables.$regular;
-    line-height: normal;
-    text-align: left;
-    width: 1180px;
-    margin: 0 auto;
-  }
+    &--title {
+      font-family: Inter;
+      font-weight: variables.$regular;
+      line-height: normal;
+      text-align: left;
+      width: 1180px;
+      margin: 0 auto;
+    }
 
-  &--container {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-  }
+    &--container {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+    }
 
-  &--images {
-    border-radius: 10px;
-  }
+    &--images {
+      border-radius: 10px;
+    }
 
-  &--text {
-    color: variables.$black;
-    font-size: 16px;
-    font-weight: variables.$regular;
-    line-height: 22px;
-    width: 278px;
-    height: 44px;
-  }
+    &--text {
+      color: variables.$black;
+      font-size: 16px;
+      font-weight: variables.$regular;
+      line-height: 22px;
+      width: 278px;
+      height: 44px;
+    }
 
-  &--category {
-    color: variables.$black;
-    font-size: 14px;
-    font-weight: variables.$regular;
-    line-height: normal;
-    width: 114px;
-    height: 17px;
-    margin-left: 10px;
-  }
+    &--category {
+      color: variables.$black;
+      font-size: 14px;
+      font-weight: variables.$regular;
+      line-height: normal;
+      width: 114px;
+      height: 17px;
+      margin-left: 10px;
+    }
 
-  &--flame {
-    color: variables.$black;
-    font-size: 14px;
-    font-weight: variables.$regular;
-    text-align: center;
-    line-height: normal;
-    display: inline;
-    display: inline-block;
-    width: 60px;
-    height: 21px;
-    flex-shrink: 0;
-    background-color: variables.$lightPink;
+    &--flame {
+      color: variables.$black;
+      font-size: 14px;
+      font-weight: variables.$regular;
+      text-align: center;
+      line-height: normal;
+      display: inline;
+      display: inline-block;
+      width: 60px;
+      height: 21px;
+      flex-shrink: 0;
+      background-color: variables.$lightPink;
+    }
   }
-}
 }
 
 //MTG IMAGE//
@@ -247,48 +247,48 @@
     align-items: center;
     justify-content: center;
   }
-    
 
-    &--test {
-      color: variables.$white;
-      text-align: center;
-      font-family: Inter;
-      font-size: 16px;
-      font-weight: variables.$bold;
-      line-height: normal;
-    }
 
-    &--img {
-      width: 102.292px;
-      height: 99.996px;
-      flex-shrink: 0;
-    }
-
-    &--title {
-      margin: 20px 30px 0 30px;
-    }
-
-    &--title2 {
-      margin: 33px 30px 0 30px;
-    }
-
-    &--item {
-      display: flex;
-      width: 277.732px;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-    }
-
-    &--border {
-      position: relative;
-      border: 2.23px solid variables.$pink;
-      width: 277.732px;
-      height: 357.732px;
-      flex-shrink: 0;
-      border-radius: 10px;
-    }
+  &--test {
+    color: variables.$white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: variables.$bold;
+    line-height: normal;
   }
+
+  &--img {
+    width: 102.292px;
+    height: 99.996px;
+    flex-shrink: 0;
+  }
+
+  &--title {
+    margin: 20px 30px 0 30px;
+  }
+
+  &--title2 {
+    margin: 33px 30px 0 30px;
+  }
+
+  &--item {
+    display: flex;
+    width: 277.732px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &--border {
+    position: relative;
+    border: 2.23px solid variables.$pink;
+    width: 277.732px;
+    height: 357.732px;
+    flex-shrink: 0;
+    border-radius: 10px;
+  }
+}
 
 
 

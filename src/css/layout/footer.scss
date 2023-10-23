@@ -30,7 +30,7 @@
     margin: 0 auto;
     width: 1180px;
     max-width: 100%;
-    
+
     &--flex {
       display: flex;
       flex-direction: column;
@@ -63,12 +63,12 @@
 }
 
 .l-footer__copy {
-    background-color: #D7D7D7;
-flex-shrink: 0;
-padding: 11px 0 10px 0;
+  background-color: variables.$copy;
+  flex-shrink: 0;
+  padding: 11px 0 10px 0;
 
-&--text {
-  text-align: center;
-font-size: 14px;
-}
+  &--text {
+    text-align: center;
+    font-size: 14px;
+  }
 }
