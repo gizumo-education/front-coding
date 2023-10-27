@@ -1,2 +1,127 @@
 @use '../../object/utility/utility.scss';
+@use "../../foundation/variables";
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+
+.c-option__text {
+  color: variables.$filterBlack;
+  font-family: Noto Sans JP;
+  font-size: 18px;
+  font-weight: variables.$regular;
+  width: 200px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.c-search {
+  position: relative;
+  margin-left: 15px;
+
+  width: 140px;
+  height: 60px;
+  flex-shrink: 0;
+  background-color: variables.$pink;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+
+  &__font {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    bottom: 21;
+    left: 48px;
+    color: variables.$white;
+    font-size: 18px;
+    font-weight: variables.$bold;
+    line-height: 18px;
+  }
+
+  &__position {
+    position: absolute;
+    top: 15.02px;
+    right: 96px;
+    bottom: 15px;
+    left: 14.02px;
+  }
+}
+
+.c-button__flame {
+  width: 360px;
+  height: 60px;
+  border-radius: 30px;
+  flex-shrink: 0;
+  background-color: variables.$pink;
+  border: none;
+  color: variables.$white;
+  font-size: 18px;
+  font-weight: variables.$bold;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.c-button__box {
+  position: relative;
+  bottom: 250px;
+  width: 1180px;
+  margin: 0 auto;
+
+  &--back {
+    width: 60px;
+    height: 60px;
+    background-color: variables.$white;
+    flex-shrink: 0;
+    fill: variables.$filterBlack;
+    opacity: 0.699999988079071;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+    float: left;
+
+    &::before {
+      content: "";
+      margin: auto;
+      position: absolute;
+      top: 30px;
+      bottom: 30px;
+      left: 25px;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      border-top: 0.707px solid variables.$filterBlack;
+      border-right: 0.707px solid variables.$filterBlack;
+      transform: rotate(225deg);
+    }
+  }
+
+  &--next {
+    width: 60px;
+    height: 60px;
+    background-color: variables.$white;
+    flex-shrink: 0;
+    fill: black;
+    opacity: 0.699999988079071;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+    float: right;
+
+    &::before {
+      content: "";
+      margin: auto;
+      position: absolute;
+      top: 30px;
+      bottom: 30px;
+      right: 25px;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      border-top: 0.707px solid variables.$filterBlack;
+      border-right: 0.707px solid variables.$filterBlack;
+      transform: rotate(45deg);
+    }
+  }
+}
