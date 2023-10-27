@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/_mixins.scss';
 
 .p-recruit {
   display: block;
@@ -139,5 +140,174 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+@include mixins.tab() {
+  .p-recruit {
+    height: fit-content;
+    &__box {
+      width: 180px;
+      height: 260px;
+      &__circle {
+        width: 40px;
+        height: 40px;
+        margin: 5px 0 0 5px;
+        &-icon {
+          width: 30px;
+          height: 30px;
+          font-size: 10px;
+          line-height: 13px;
+          margin: 0;
+          padding: 7px 1px 0 1px;
+        }
+      }
+      &__es {
+        width: 70px;
+        height: auto;
+        top: 40px;
+        right: 50px;
+      }
+      &__glass {
+        width: 55px;
+        height: auto;
+        top: 50px;
+        left: 60px;
+      }
+      &__emails {
+        width: 80px;
+        height: auto;
+        top: 50px;
+        left: 50px;
+      }
+      &__shiny {
+        width: 80px;
+        height: auto;
+        top: 40px;
+        left: 50px;
+      }
+    }
+    &__text__box {
+      margin-top: 80px;
+      &__sub-title {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &__content {
+        width: 160px;
+        font-size: 11px;
+        line-height: 14px;
+        margin-top: 15px;
+        &-2 {
+          width: 160px;
+          font-size: 11px;
+          line-height: 14px;
+          margin-top: 27px;
+        }
+      }
+      &-2 {
+        margin-top: 90px;
+      }
+    }
+    &__gap {
+      width: 10px;
+      height: 260px;
+    }
+    &__triangle {
+      border-left: 10px solid #DE5579;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+    }
+  }
+}
+
+@include mixins.sp() {
+  .p-recruit {
+    height: fit-content;
+    display: grid;
+    justify-content: center;
+    margin-top: 60px;
+    &__wrap {
+      display: block;
+      margin-top: 34px;
+    }
+    &__box {
+      height: 293px;
+      width: 280px;
+      &__circle {
+        width: 45px;
+        height: 45px;
+        margin: 10px 0 0 10px;
+        &-icon {
+          width: 26px;
+          height: 24px;
+          font-size: 10px;
+          line-height: 12.1px;
+          padding: 0;
+          margin: 11px 9px;
+        }
+      }
+      &__es {
+        width: 76.72px;
+        height: 75px;
+        top: 50px;
+        right: 90px;
+      }
+      &__glass {
+        width: 74.95px;
+        height: 74.95px;
+        top: 53.89px;
+        left: 101.89px;
+      }
+      &__emails {
+        width: 80.12px;
+        height: 75px;
+        top: 58px;
+        left: 99px;
+      }
+      &__shiny {
+        width: 73.57px;
+        height: 75px;
+        top: 53px;
+        left: 90px;
+      }
+    }
+    &__text__box {
+      margin-top: 107px;
+      &-2 {
+        margin-top: 107px;
+      }
+      &__sub-title {
+        font-size: 20px;
+        line-height: 28.96px;
+        &-sp {
+          display: none;
+        }
+      }
+      &__content {
+        margin-top: 10px;
+        width: 240px;
+        font-size: 14px;
+        line-height: 20px;
+        &-2 {
+          margin-top: 10px;
+          width: 240px;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+    &__gap {
+      width: 100%;
+      height: 40px;
+    }
+    &__triangle {
+      border-left: 20px solid transparent;
+      border-top: 20px solid #DE5579;
+      border-right: 20px solid transparent;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
 @use '../component/button.scss';
+@use '../../foundation/_mixins.scss';
 
 .p-form {
   width: 100%;
@@ -110,5 +111,109 @@
     border-radius: 10px;
     padding: 17px 0 17px 15px;
     position: relative;
+  }
+}
+
+@include mixins.tab() {
+  .p-form {
+    &__box {
+      width: 740px;
+    }
+    &__select {
+      margin: 0;
+      justify-content: center;
+      &__style {
+        margin-left: 10px;
+      }
+      &__area {
+        &-search {
+          width: 190px;
+          font-size: 12px;
+          line-height: 24px;
+          padding: 12px 5px;
+          margin-left: 10px;
+        }
+        &-btn {
+          width: 120px;
+          font-size: 16px;
+          background-position: 12px 18px;
+          background-size: 24px;
+          margin-left: 10px;
+        }
+      }
+    }
+    &-input {
+      width: 122px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+@include mixins.sp() {
+  .p-form {
+    &:last-child {
+      margin-top: 60px;
+      margin-bottom: 100px;
+    }
+    &__box {
+      width: 370px;
+      height: auto;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 22px;
+      margin-top: 15px;
+      &-sub {
+        font-size: 14px;
+        line-height: 20.27px;
+        margin-top: 16px;
+        margin-bottom: 13px;
+      }
+    }
+    &-input {
+      width: 100px;
+      height: 30px;
+      font-size: 12px;
+      line-height: 17.38px;
+      padding: 6px 0 7px 8px;
+      border-radius: 5px;
+    }
+    &__select {
+      margin: 0 25px 20px 25px;
+      &__style {
+        margin-left: 10px;
+        &::after {
+          top: 13px;
+          right: 8px;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          border-top:7px solid #DE1E79;
+          border-bottom: 7px solid transparent;
+        }
+      }
+      &__box {
+        flex-flow: wrap;
+      }
+      &__area {
+        display: block;
+        &-search {
+          width: 320px;
+          height: 30px;
+          font-size: 14px;
+          line-height: 20.27px;
+          margin-top: 15px;
+          margin-left: 0;
+        }
+        &-btn {
+          width: 160px;
+          height: 40px;
+          background-size: 17.98px 17.97px;
+          background-position: 16px;
+          margin-top: 19px;
+          margin-left: 0;
+        }
+      }
+    }
   }
 }

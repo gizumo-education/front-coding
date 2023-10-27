@@ -110,3 +110,107 @@
 .p-slider-btn:hover {
   opacity: 0.8;
 }
+
+.slider__pic-1 {
+  background-image: url(../img/picture/recruit-pic1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__pic-2 {
+  background-image: url(../img/picture/recruit-pic2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__pic-3 {
+  background-image: url(../img/picture/recruit-pic3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__pic-4 {
+  background-image: url(../img/picture/recruit-pic4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .p-slider {
+    height: initial;
+  }
+  .p-slider__wrap {
+    width: 758px;
+    height: initial;
+  }
+  .p-slider__wrap__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .p-slider__box {
+    margin-left: 10px;
+    width: 180px;
+  }
+  .p-slider__box-pic {
+    width: 180px;
+    height: 140px;
+  }
+  .p-slider__box-content {
+    width: 180px;
+    height: 36px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .p-slider__describe-content {
+    width: 50px;
+    height: 18px;
+    font-size: 8px;
+    line-height: 18px;
+  }
+  .p-slider__describe-text {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .p-slider {
+    height: 600px;
+    margin-top: 25px;
+  }
+  .p-slider__wrap {
+    margin-top: 30px;
+  }
+  .p-slider__wrap__title {
+    font-family: "Noto Sans JP";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .p-slider__box {
+    width: initial;
+  }
+  .p-slider__box-pic {
+    width: 370px;
+    height: 208px;
+  }
+  .p-slider__box-content {
+    width: 358px;
+    height: fit-content;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 7.92px;
+  }
+  .p-slider__box:nth-child(n+2) {
+    display: none;
+  }
+  .p-slider__describe {
+    margin-top: 4px;
+  }
+  .p-slider__describe:first-child {
+    margin-top: 11.92px;
+  }
+  .p-slider-btn {
+    width: 370px;
+    margin: 44px 0 60px 0;
+  }
+}

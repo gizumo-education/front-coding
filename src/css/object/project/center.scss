@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/_mixins.scss';
 
 .p-center {
   display: block;
@@ -40,6 +41,46 @@
       z-index: 300px;
       &-main {
         margin-bottom: 21px;
+      }
+    }
+  }
+}
+
+@include mixins.tab() {
+  .p-center {
+    height: 200px;
+    &-pic {
+      height: 200px;
+    }
+    &__box {
+      &__bg {
+        height: 200px;
+      }
+      &__text {
+        top: 54px;
+      }
+    }
+  }
+}
+
+@include mixins.sp() {
+  .p-center {
+    height: 75px;
+    &-pic {
+      height: 75px;
+    }
+    &__box {
+      &__bg {
+        height: 75px;
+      }
+      &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20.27px;
+        top: 16.18px;
+        &-main {
+          margin-bottom: 2.36px;
+        }
       }
     }
   }

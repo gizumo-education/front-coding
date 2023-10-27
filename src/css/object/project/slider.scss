@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
 @use '../component/button.scss';
+@use '../../foundation/_mixins.scss';
 
 .p-slider {
   width: 100%;
@@ -102,6 +103,115 @@
     transition: all 0.3s;
     &:hover {
       opacity: 0.8;
+    }
+  }
+}
+
+.slider__pic {
+  &-1 {
+    background-image: url(../img/picture/recruit-pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-2 {
+    background-image: url(../img/picture/recruit-pic2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-3 {
+    background-image: url(../img/picture/recruit-pic3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-4 {
+    background-image: url(../img/picture/recruit-pic4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@include mixins.tab() {
+  .p-slider {
+    height: initial;
+    &__wrap {
+      width: 758px;
+      height: initial;
+      &__title {
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+    &__box {
+      margin-left: 10px;
+      width: 180px;
+      &-pic {
+        width: 180px;
+        height: 140px;
+      }
+      &-content {
+        width: 180px;
+        height: 36px;
+        font-size: 10px;
+        line-height: 18px;
+      }
+    }
+    &__describe {
+      &-content {
+        width: 50px;
+        height: 18px;
+        font-size: 8px;
+        line-height: 18px;
+      }
+      &-text {
+        font-size: 8px;
+      }
+    }
+  }
+}
+
+@include mixins.sp() {
+  .p-slider {
+    height: 600px;
+    margin-top: 25px;
+    &__wrap {
+      margin-top: 30px;
+      &__title {
+        font-family: 'Noto Sans JP';
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: center;
+        margin-bottom: 35px;
+      }
+    }
+    &__box {
+      width: initial;
+      &-pic {
+        width: 370px;
+        height: 208px;
+      }
+      &-content {
+        width: 358px;
+        height: fit-content;
+        font-family: 'Noto Sans JP';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        margin-bottom: 7.92px;
+      }
+      &:nth-child(n+2) {
+        display: none;
+      }
+    }
+    &__describe {
+      margin-top: 4px;
+      &:first-child {
+        margin-top: 11.92px;
+      }
+    }
+    &-btn {
+      width: 370px;
+      margin: 44px 0 60px 0;
     }
   }
 }

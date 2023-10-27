@@ -1,5 +1,6 @@
 @use '../../object/utility/utility.scss';
 @use '../component/button.scss';
+@use '../../foundation/_mixins.scss';
 
 .p-recruit-contents {
   display: block;
@@ -17,6 +18,26 @@
     line-height: 25px;
     margin-top: 105px;
     text-align: center;
+  }
+  &__pic {
+    &-manual {
+      display: block;
+      width: 380px;
+      height: 240px;
+      border-radius: 10px;
+      background-image: url(../img/picture/manual.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &-trivia {
+      display: block;
+      width: 380px;
+      height: 240px;
+      border-radius: 10px;
+      background-image: url(../img/picture/trivia.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
   &__box {
     margin-top: 50px;
@@ -77,6 +98,90 @@
     transition: all 0.3s;
     &:hover {
       opacity: 0.8;
+    }
+  }
+}
+@include mixins.tab() {
+  .p-recruit-contents {
+    &__box {
+      margin-left: 10px;
+    }
+    &__pic {
+      &-manual {
+        width: 240px;
+        height: 160px;
+      }
+      &-trivia {
+        width: 240px;
+        height: 160px;
+      }
+    }
+    &__black {
+      width: 240px;
+      height: 160px;
+    }
+    &__sub {
+      width: 240px;
+      font-size: 18px;
+      line-height: 18px;
+      top: 51px;
+    }
+    &__describe {
+      width: 240px;
+      font-size: 12px;
+      line-height: 19px;
+      top: 89px;
+    }
+  }
+}
+
+@include mixins.sp() {
+  .p-recruit-contents {
+    &__wrap {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      text-align: center
+    }
+    &__title {
+      margin-top: 60px;
+    }
+    &__box {
+      margin-top: 17.55px;
+      margin-left: 0;
+      &:first-child {
+        margin-top: 30.55px;
+      }
+    }
+    &__pic {
+      &-manual {
+        width: 370px;
+        height: 234.9px;
+      }
+      &-trivia {
+        width: 370px;
+        height: 234.9px;
+      }
+    }
+    &__black {
+      width: 370px;
+      height: 234.9px;
+    }
+    &__sub {
+      width: 370px;
+      font-size: 24px;
+      line-height: 24px;
+      top: 60.45px;
+    }
+    &__describe {
+      width: 370px;
+      font-size: 16px;
+      line-height: 23px;
+      top: 134.45px;
+    }
+    &-btn {
+      width: 370px;
+      margin-top: 34.86px;
     }
   }
 }
