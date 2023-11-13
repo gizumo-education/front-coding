@@ -8,6 +8,7 @@
   background-color: utility.$bgPink;
   border-radius: 30px;
   line-height:60px;
+  cursor: pointer;
   @include utility.tab {
     font-size: 0.18rem;
     border-radius: 0.3rem;
