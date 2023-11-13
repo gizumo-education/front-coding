@@ -186,12 +186,16 @@
         margin-left: 0.15rem;
         padding: 0 0.2rem 0 0.48rem;
         background-position: left 0.1rem center;
+        background-size: 0.3rem;
       }
       @include utility.sp {
         line-height:0.4rem;
         width: 1.6rem;
         height: 0.4rem;
         margin: 0.19rem 0.8rem 0;
+        padding: 0 0.44rem;
+        background-position: left 0.1rem center;
+        background-size: 0.18rem;
       }
     }
   }
@@ -236,7 +240,8 @@
       @include utility.sp {
         margin: 0 auto;
       }
-      &_img{
+      &_pcimg{
+        display: block;
         width: 280px;
         height: 200px;
         border-radius: 10px;
@@ -246,19 +251,32 @@
           border-radius: 0.1rem;
         }
         @include utility.sp {
+          display: none;
+        }
+      }
+      &_spimg{
+        display: none;
+        @include utility.sp {
+          display: block;
           width: 3.7rem;
           height: 2.08rem;
+          border-radius: 0.1rem;
         }
       }
       &_title{
         font-size: 16px;
         margin-top: 8px;
         line-height: 22px;
+        width: 280px;
         @include utility.tab {
           width: 2.8rem;
           font-size: 0.16rem;
           margin-top: 0.08rem;
           line-height: 0.22rem;
+        }
+        @include utility.sp {
+          width: 100%;
+          font-weight: utility.$bold;
         }
       }
       &_wrap{
@@ -480,6 +498,7 @@
       margin-top: 0.5rem;
     }
     @include utility.sp {
+      width: 2.8rem;
       height: 12.9rem;
       margin-left: 0.45rem;
     }
