@@ -10,13 +10,13 @@
   line-height:60px;
   cursor: pointer;
   @include utility.tab {
-    font-size: 0.18rem;
-    border-radius: 0.3rem;
-    line-height: 0.6rem;
+    font-size: .18rem;
+    border-radius: .3rem;
+    line-height: .6rem;
   }
   @include utility.sp {
-    font-size: 0.18rem;
-    border-radius: 0.3rem;
-    line-height: 0.6rem;
+    font-size: .18rem;
+    border-radius: .3rem;
+    line-height: .6rem;
   }
 }
