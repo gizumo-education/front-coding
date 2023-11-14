@@ -329,12 +329,14 @@
     text-align: center;
     &_area{
       margin-top: 60px;
-      width: 360px;
-      height: 60px;
+      padding: 0 72px;
       @include utility.tab {
         margin-top: 0.6rem;
-        width: 3.6rem;
-        height: 0.6rem;
+        padding: 0 0.72rem;
+      }
+      @include utility.sp {
+        margin-top: 0.44rem;
+        padding: 0 0.77rem;
       }
     }
   }
