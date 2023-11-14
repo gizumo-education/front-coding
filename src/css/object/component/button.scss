@@ -7,6 +7,16 @@
   color: utility.$white;
   background-color: utility.$bgPink;
   border-radius: 30px;
-  height:60px;
   line-height:60px;
+  cursor: pointer;
+  @include utility.tab {
+    font-size: .18rem;
+    border-radius: .3rem;
+    line-height: .6rem;
+  }
+  @include utility.sp {
+    font-size: .18rem;
+    border-radius: .3rem;
+    line-height: .6rem;
+  }
 }
