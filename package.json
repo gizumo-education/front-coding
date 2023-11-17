@@ -34,7 +34,9 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.1",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1"
   },
   "browserslist": [
     "ie >= 11",
