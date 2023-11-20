@@ -126,8 +126,7 @@
       height: 100vh;
       transform: translateX(100%);
       background-color: utility.$bgBlack;
-      opacity: .7;
-      transition: ease .4s;
+      opacity: 0;
       &__items {
         padding: .57rem 0 0;
         &__item {
@@ -188,6 +187,7 @@
 
 .l-header__sp-items__nav.active {
   transform: translateX(0);
+  opacity: .7;
 }
 
 body.active{
@@ -196,5 +196,10 @@ body.active{
 
 .l-scrollArea {
   transform: translateY(-.7rem);
+  position: absolute;
   opacity: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
