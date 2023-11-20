@@ -639,6 +639,7 @@
   }
   @include utility.sp {
     height: 13.7rem;
+    margin-top: .6rem;
   }
   &_title{
     font-weight: utility.$bold;
@@ -793,6 +794,7 @@
     height: 4.55rem;
   }
   @include utility.sp{
+    margin-top: .6rem;
     height: 9.1rem;
   }
   &_title{

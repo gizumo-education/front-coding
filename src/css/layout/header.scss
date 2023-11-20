@@ -129,7 +129,7 @@
       opacity: .7;
       transition: ease .4s;
       &__items {
-        padding: .57rem .6rem 0;
+        padding: .57rem 0 0;
         &__item {
           margin-top: .38rem;
           &:first-child {
@@ -137,8 +137,13 @@
           }
           font-size: .22rem;
         }
-        &__text {
-          color: utility.$white;
+        &__textarea {
+          width: 100%;
+          &_text {
+            color: utility.$white;
+            font-weight: utility.$bold;
+            transform: translateX(.6rem);
+          }
         }
       }
     }
@@ -187,4 +192,9 @@
 
 body.active{
   overflow: hidden;
+}
+
+.l-scrollArea {
+  transform: translateY(-.7rem);
+  opacity: 0;
 }
