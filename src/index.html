@@ -5,8 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>医療事務求人を探すならギズジョブ</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
-<body>
+<body id="js-noScroll">
   <header class="l-header">
     <nav class="l-header__nav">
       <div class="l-header__pc-items">
@@ -22,7 +23,46 @@
         </ul>
       </div>
       <div class="l-header__sp-items">
-        <button class="l-header__hamburger">
+        <nav class="l-header__sp-items__nav" id="js-nav">
+          <ul class="l-header__sp-items__nav__items" id="js-removeMenu">
+            <li class="l-header__sp-items__nav__items__item">
+              <a class="l-header__sp-items__nav__items__textarea" href="#top">
+                <p class="l-header__sp-items__nav__items__textarea_text">
+                  トップ
+                </p>
+              </a>
+            </li>
+            <li class="l-header__sp-items__nav__items__item">
+              <a class="l-header__sp-items__nav__items__textarea" href="#news">
+                <p class="l-header__sp-items__nav__items__textarea_text">
+                  新着求人
+                </p>
+              </a>
+            </li>
+            <li class="l-header__sp-items__nav__items__item">
+              <a class="l-header__sp-items__nav__items__textarea" href="#featureList">
+                <p class="l-header__sp-items__nav__items__textarea_text">
+                  4つの特徴
+                </p>
+              </a>
+            </li>
+            <li class="l-header__sp-items__nav__items__item">
+              <a class="l-header__sp-items__nav__items__textarea" href="#jobChangeFlow">
+                <p class="l-header__sp-items__nav__items__textarea_text">
+                  転職までの流れ
+                </p>
+              </a>
+            </li>
+            <li class="l-header__sp-items__nav__items__item">
+              <a class="l-header__sp-items__nav__items__textarea" href="#article">
+                <p class="l-header__sp-items__nav__items__textarea_text">
+                  転職お役立ちコンテンツ
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="l-header__hamburger" id="js-hamburger">
           <span></span>
           <span></span>
           <span></span>
@@ -32,6 +72,7 @@
   </header>
 
   <main>
+    <p id="top" class="l-scrollArea">top</p>
     <div>
       <img src="./img/picture/keyvisual.jpg" alt="トップ画像" class="p-pcKeyVisual">
       <img src="./img/picture/spKeyvisual.jpg" alt="トップ画像" class="p-spKeyVisual">
@@ -75,86 +116,173 @@
         </div>
       </div>
     </nav>
+    <p id="news" class="l-scrollArea">news</p>
     <article>
       <div class="p-news">
         <h2 class="p-news_newRecruitment l-inner">新着求人</h2>
         <div class="p-news_list l-inner">
-          <a class="p-news_list_content">
-            <img src="./img/picture/womenImg1.jpg" alt="求人1" class="p-news_list_content_pcimg">
-            <img src="./img/picture/spWomenImg1.jpg" alt="求人1" class="p-news_list_content_spimg">
-            <p class="p-news_list_content_title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-            <div class="p-news_list_content_wrap">
-              <div class="p-news_list_content_wrap_detail">
-                <p class="p-news_list_content_wrap_detail_title">給与</p>
-                <p class="p-news_list_content_wrap_detail_text">月給 148,000円～</p>
-              </div>
-              <div class="p-news_list_content_wrap_detail">
-                <p class="p-news_list_content_wrap_detail_title">所在地</p>
-                <p class="p-news_list_content_wrap_detail_text">三重県伊勢市</p>
-              </div>
-              <div class="p-news_list_content_wrap_detail">
-                <p class="p-news_list_content_wrap_detail_title">最寄駅</p>
-                <p class="p-news_list_content_wrap_detail_text">伊勢市駅徒歩15分</p>
-              </div>
+          <div class="p-news_list_scrollBtn">
+            <div class="p-news_list_scrollBtn_left">
+              <img class="p-news_list_scrollBtn_left_area" src="./img/icon/icon-leftArrow.png" alt="">
             </div>
-          </a>
-          <a class="p-news_list_content">
-            <img src="./img/picture/womenImg2.jpg" alt="求人2" class="p-news_list_content_pcimg">
-            <img src="./img/picture/spWomenImg1.jpg" alt="求人1" class="p-news_list_content_spimg">
-            <p class="p-news_list_content_title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-            <div class="p-news_list_content_wrap">
-              <div class="p-news_list_content_wrap_detail">
-                <p class="p-news_list_content_wrap_detail_title">給与</p>
-                <p class="p-news_list_content_wrap_detail_text">月給 148,000円～</p>
-              </div>
-              <div class="p-news_list_content_wrap_detail">
-                <p class="p-news_list_content_wrap_detail_title">所在地</p>
-                <p class="p-news_list_content_wrap_detail_text">三重県伊勢市</p>
-              </div>
-              <div class="p-news_list_content_wrap_detail">
-                <p class="p-news_list_content_wrap_detail_title">最寄駅</p>
-                <p class="p-news_list_content_wrap_detail_text">伊勢市駅徒歩15分</p>
-              </div>
+            <div class="p-news_list_scrollBtn_right">
+              <img class="p-news_list_scrollBtn_right_area" src="./img/icon/icon-rightArrow.png" alt="">
             </div>
-          </a>
-          <a class="p-news_list_content">
-            <img src="./img/picture/womenImg3.jpg" alt="求人3" class="p-news_list_content_pcimg">
-            <img src="./img/picture/spWomenImg1.jpg" alt="求人1" class="p-news_list_content_spimg">
-            <p class="p-news_list_content_title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-            <div class="p-news_list_content_wrap">
-              <div class="p-news_list_content_wrap_detail">
-                <p class="p-news_list_content_wrap_detail_title">給与</p>
-                <p class="p-news_list_content_wrap_detail_text">月給 148,000円～</p>
+          </div>
+          <div id="js-slider">
+            <a class="p-news_list_content">
+              <img src="./img/picture/womenImg1.jpg" alt="求人1" class="p-news_list_content_pcimg">
+              <img src="./img/picture/spWomenImg1.jpg" alt="求人1" class="p-news_list_content_spimg">
+              <p class="p-news_list_content_title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news_list_content_wrap">
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">給与</p>
+                  <p class="p-news_list_content_wrap_detail_text">月給 148,000円～</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">所在地</p>
+                  <p class="p-news_list_content_wrap_detail_text">三重県伊勢市</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">最寄駅</p>
+                  <p class="p-news_list_content_wrap_detail_text">伊勢市駅徒歩15分</p>
+                </div>
               </div>
-              <div class="p-news_list_content_wrap_detail">
-                <p class="p-news_list_content_wrap_detail_title">所在地</p>
-                <p class="p-news_list_content_wrap_detail_text">三重県伊勢市</p>
+            </a>
+            <a class="p-news_list_content">
+              <img src="./img/picture/womenImg2.jpg" alt="求人2" class="p-news_list_content_pcimg">
+              <img src="./img/picture/spWomenImg1.jpg" alt="求人1" class="p-news_list_content_spimg">
+              <p class="p-news_list_content_title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news_list_content_wrap">
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">給与</p>
+                  <p class="p-news_list_content_wrap_detail_text">月給 148,000円～</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">所在地</p>
+                  <p class="p-news_list_content_wrap_detail_text">三重県伊勢市</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">最寄駅</p>
+                  <p class="p-news_list_content_wrap_detail_text">伊勢市駅徒歩15分</p>
+                </div>
               </div>
-              <div class="p-news_list_content_wrap_detail">
-                <p class="p-news_list_content_wrap_detail_title">最寄駅</p>
-                <p class="p-news_list_content_wrap_detail_text">伊勢市駅徒歩15分</p>
+            </a>
+            <a class="p-news_list_content">
+              <img src="./img/picture/womenImg3.jpg" alt="求人3" class="p-news_list_content_pcimg">
+              <img src="./img/picture/spWomenImg1.jpg" alt="求人1" class="p-news_list_content_spimg">
+              <p class="p-news_list_content_title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news_list_content_wrap">
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">給与</p>
+                  <p class="p-news_list_content_wrap_detail_text">月給 148,000円～</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">所在地</p>
+                  <p class="p-news_list_content_wrap_detail_text">三重県伊勢市</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">最寄駅</p>
+                  <p class="p-news_list_content_wrap_detail_text">伊勢市駅徒歩15分</p>
+                </div>
               </div>
-            </div>
-          </a>
-          <a class="p-news_list_content">
-            <img src="./img/picture/womenImg4.jpg" alt="求人4" class="p-news_list_content_pcimg">
-            <img src="./img/picture/spWomenImg1.jpg" alt="求人1" class="p-news_list_content_spimg">
-            <p class="p-news_list_content_title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-            <div class="p-news_list_content_wrap">
-              <div class="p-news_list_content_wrap_detail">
-                <p class="p-news_list_content_wrap_detail_title">給与</p>
-                <p class="p-news_list_content_wrap_detail_text">月給 148,000円～</p>
+            </a>
+            <a class="p-news_list_content">
+              <img src="./img/picture/womenImg4.jpg" alt="求人4" class="p-news_list_content_pcimg">
+              <img src="./img/picture/spWomenImg1.jpg" alt="求人1" class="p-news_list_content_spimg">
+              <p class="p-news_list_content_title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news_list_content_wrap">
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">給与</p>
+                  <p class="p-news_list_content_wrap_detail_text">月給 148,000円～</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">所在地</p>
+                  <p class="p-news_list_content_wrap_detail_text">三重県伊勢市</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">最寄駅</p>
+                  <p class="p-news_list_content_wrap_detail_text">伊勢市駅徒歩15分</p>
+                </div>
               </div>
-              <div class="p-news_list_content_wrap_detail">
-                <p class="p-news_list_content_wrap_detail_title">所在地</p>
-                <p class="p-news_list_content_wrap_detail_text">三重県伊勢市</p>
+            </a>
+            <a class="p-news_list_content">
+              <img src="./img/picture/womenImg1.jpg" alt="求人1" class="p-news_list_content_pcimg">
+              <img src="./img/picture/spWomenImg1.jpg" alt="求人1" class="p-news_list_content_spimg">
+              <p class="p-news_list_content_title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news_list_content_wrap">
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">給与</p>
+                  <p class="p-news_list_content_wrap_detail_text">月給 148,000円～</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">所在地</p>
+                  <p class="p-news_list_content_wrap_detail_text">三重県伊勢市</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">最寄駅</p>
+                  <p class="p-news_list_content_wrap_detail_text">伊勢市駅徒歩15分</p>
+                </div>
               </div>
-              <div class="p-news_list_content_wrap_detail">
-                <p class="p-news_list_content_wrap_detail_title">最寄駅</p>
-                <p class="p-news_list_content_wrap_detail_text">伊勢市駅徒歩15分</p>
+            </a>
+            <a class="p-news_list_content">
+              <img src="./img/picture/womenImg2.jpg" alt="求人2" class="p-news_list_content_pcimg">
+              <img src="./img/picture/spWomenImg1.jpg" alt="求人1" class="p-news_list_content_spimg">
+              <p class="p-news_list_content_title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news_list_content_wrap">
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">給与</p>
+                  <p class="p-news_list_content_wrap_detail_text">月給 148,000円～</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">所在地</p>
+                  <p class="p-news_list_content_wrap_detail_text">三重県伊勢市</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">最寄駅</p>
+                  <p class="p-news_list_content_wrap_detail_text">伊勢市駅徒歩15分</p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+            <a class="p-news_list_content">
+              <img src="./img/picture/womenImg3.jpg" alt="求人3" class="p-news_list_content_pcimg">
+              <img src="./img/picture/spWomenImg1.jpg" alt="求人1" class="p-news_list_content_spimg">
+              <p class="p-news_list_content_title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news_list_content_wrap">
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">給与</p>
+                  <p class="p-news_list_content_wrap_detail_text">月給 148,000円～</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">所在地</p>
+                  <p class="p-news_list_content_wrap_detail_text">三重県伊勢市</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">最寄駅</p>
+                  <p class="p-news_list_content_wrap_detail_text">伊勢市駅徒歩15分</p>
+                </div>
+              </div>
+            </a>
+            <a class="p-news_list_content">
+              <img src="./img/picture/womenImg4.jpg" alt="求人4" class="p-news_list_content_pcimg">
+              <img src="./img/picture/spWomenImg1.jpg" alt="求人1" class="p-news_list_content_spimg">
+              <p class="p-news_list_content_title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-news_list_content_wrap">
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">給与</p>
+                  <p class="p-news_list_content_wrap_detail_text">月給 148,000円～</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">所在地</p>
+                  <p class="p-news_list_content_wrap_detail_text">三重県伊勢市</p>
+                </div>
+                <div class="p-news_list_content_wrap_detail">
+                  <p class="p-news_list_content_wrap_detail_title">最寄駅</p>
+                  <p class="p-news_list_content_wrap_detail_text">伊勢市駅徒歩15分</p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
         <div class="p-news_button l-inner">
           <a href="" class="p-news_button_area c-button">新着求人一覧をもっと見る</a>
@@ -165,6 +293,7 @@
       <img src="./img/picture/explanation.jpg" alt="ギズジョブのここがすごい" class="p-explanation_img">
       <p class="p-explanation_text">ギズジョブなら理想の職場がきっと見つかる<br>ギズジョブは完全無料の求職者向け求人サービスです。</p>
     </div>
+    <p id="featureList" class="l-scrollArea">featureList</p>
     <section>
       <div class="p-featureList l-inner">
         <h1 class="p-featureList_title">ギズジョブの4つの特徴</h1>
@@ -172,7 +301,7 @@
           <div class="p-featureList_features_feature">
             <h2 class="p-featureList_features_feature_title">WEB上で応募完結</h2>
             <div class="p-featureList_features_feature_textArea">
-              <p class="p-featureList_features_feature_textArea_text">エントリーシートの記入を済ませれば、<br class="p-pcAndTabBrNone">あとは気になる企業に応募して<br class="p-spBrNone">待つだけで面接アポまで完結！</p>
+              <p class="p-featureList_features_feature_textArea_text">エントリーシートの記入を済ませれば、<br class="c-pcAndTabBrNone">あとは気になる企業に応募して<br class="c-spBrNone">待つだけで面接アポまで完結！</p>
             </div>
           </div>
           <div class="p-featureList_features_feature">
@@ -184,18 +313,19 @@
           <div class="p-featureList_features_feature">
             <h4 class="p-featureList_features_feature_title">わかりやすい</h4>
             <div class="p-featureList_features_feature_textArea">
-              <p class="p-featureList_features_feature_textArea_text">当求人サイトは医療事務に特化しておりさらに<br class="p-pcAndTabBrNone">こだわり検索や地域から検索<br class="p-spBrNone">といったご自身に<br class="p-pcAndTabBrNone">ピッタリマッチした求人を見つけることができる！</p>
+              <p class="p-featureList_features_feature_textArea_text">当求人サイトは医療事務に特化しておりさらに<br class="c-pcAndTabBrNone">こだわり検索や地域から検索<br class="c-spBrNone">といったご自身に<br class="c-pcAndTabBrNone">ピッタリマッチした求人を見つけることができる！</p>
             </div>
           </div>
           <div class="p-featureList_features_feature">
             <h5 class="p-featureList_features_feature_title">完全無料</h5>
             <div class="p-featureList_features_feature_textArea">
-              <p class="p-featureList_features_feature_textArea_text">当サイトは求人元の企業やグループ会社からのスポンサー費用に<br class="p-pcAndTabBrNone">よって<br class="p-spBrNone">運営されています。ですので求職者の方からは<br class="p-pcAndTabBrNone">応募前はもちろん、<br class="p-spBrNone">内定後も費用は一切いただきません。</p>
+              <p class="p-featureList_features_feature_textArea_text">当サイトは求人元の企業やグループ会社からのスポンサー費用に<br class="c-pcAndTabBrNone">よって<br class="c-spBrNone">運営されています。ですので求職者の方からは<br class="c-pcAndTabBrNone">応募前はもちろん、<br class="c-spBrNone">内定後も費用は一切いただきません。</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <p id="jobChangeFlow" class="l-scrollArea">jobChangeFlow</p>
     <section>
       <div class="p-jobChangeFlow l-inner">
         <h1 class="p-jobChangeFlow_title">転職までの流れ</h1>
@@ -206,9 +336,9 @@
               <img class="p-jobChangeFlow_lists_list_img_area" src="./img/icon/icon-paper.png" alt="">
             </div>
             <div class="p-jobChangeFlow_lists_list_title">
-              <h1 class="p-jobChangeFlow_lists_list_title_area">エントリーシートの<br class="p-spBrNone">作成</h1>
+              <h1 class="p-jobChangeFlow_lists_list_title_area">エントリーシートの<br class="c-spBrNone">作成</h1>
             </div>
-            <p class="p-jobChangeFlow_lists_list_text">ここにはテキストが入ります。ここにはテキストが入ります。<br class="p-pcAndTabBrNone">ここにはテキストが入ります。<br class="p-pcAndTabBrNone">ここにはテキストが</p>
+            <p class="p-jobChangeFlow_lists_list_text">ここにはテキストが入ります。ここにはテキストが入ります。<br class="c-pcAndTabBrNone">ここにはテキストが入ります。<br class="c-pcAndTabBrNone">ここにはテキストが</p>
           </li>
           <li class="p-jobChangeFlow_lists_list">
             <img src="./img/icon/icon-triangle.png" alt="三角形">
@@ -219,9 +349,9 @@
               <img class="p-jobChangeFlow_lists_list_img_area" src="./img/icon/icon-glass.png" alt="">
             </div>
             <div class="p-jobChangeFlow_lists_list_title">
-              <h1 class="p-jobChangeFlow_lists_list_title_area">気になる企業の<br class="p-spBrNone">ピックアップ</h1>
+              <h1 class="p-jobChangeFlow_lists_list_title_area">気になる企業の<br class="c-spBrNone">ピックアップ</h1>
             </div>
-            <p class="p-jobChangeFlow_lists_list_text">ここにはテキストが入ります。ここにはテキストが入ります。<br class="p-pcAndTabBrNone">ここにはテキストが入ります。<br class="p-pcAndTabBrNone">ここにはテキストが</p>
+            <p class="p-jobChangeFlow_lists_list_text">ここにはテキストが入ります。ここにはテキストが入ります。<br class="c-pcAndTabBrNone">ここにはテキストが入ります。<br class="c-pcAndTabBrNone">ここにはテキストが</p>
           </li>
           <li class="p-jobChangeFlow_lists_list">
             <img src="./img/icon/icon-triangle.png" alt="三角形">
@@ -234,7 +364,7 @@
             <div class="p-jobChangeFlow_lists_list_title">
               <h1 class="p-jobChangeFlow_lists_list_title_area">複数企業に応募</h1>
             </div>
-            <p class="p-jobChangeFlow_lists_list_text">ここにはテキストが入ります。ここにはテキストが入ります。<br class="p-pcAndTabBrNone">ここにはテキストが入ります。<br class="p-pcAndTabBrNone">ここにはテキストが</p>
+            <p class="p-jobChangeFlow_lists_list_text">ここにはテキストが入ります。ここにはテキストが入ります。<br class="c-pcAndTabBrNone">ここにはテキストが入ります。<br class="c-pcAndTabBrNone">ここにはテキストが</p>
           </li>
           <li class="p-jobChangeFlow_lists_list">
             <img src="./img/icon/icon-triangle.png" alt="三角形">
@@ -247,11 +377,12 @@
             <div class="p-jobChangeFlow_lists_list_title">
               <h1 class="p-jobChangeFlow_lists_list_title_area">内定・転職！</h1>
             </div>
-            <p class="p-jobChangeFlow_lists_list_text">ここにはテキストが入ります。ここにはテキストが入ります。<br class="p-pcAndTabBrNone">ここにはテキストが入ります。<br class="p-pcAndTabBrNone">ここにはテキストが</p>
+            <p class="p-jobChangeFlow_lists_list_text">ここにはテキストが入ります。ここにはテキストが入ります。<br class="c-pcAndTabBrNone">ここにはテキストが入ります。<br class="c-pcAndTabBrNone">ここにはテキストが</p>
           </li>
         </ul>
       </div>
     </section>
+    <p id="article" class="l-scrollArea">article</p>
     <article>
       <div class="p-article">
         <div class="p-article_title">

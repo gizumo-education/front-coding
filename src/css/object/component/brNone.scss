@@ -1,0 +1,32 @@
+@use '../../object/utility/utility.scss';
+
+.c-pcBrNone{
+  display: block;
+  @include utility.pc {
+    display: none;
+  }
+}
+
+.c-tabBrNone{
+  display: block;
+  @include utility.tab {
+    display: none;
+  }
+}
+
+.c-spBrNone{
+  display: block;
+  @include utility.sp {
+    display: none;
+  }
+}
+
+.c-pcAndTabBrNone{
+  display: block;
+  @include utility.pc {
+    display: none;
+  }
+  @include utility.tab {
+    display: none;
+  }
+}
