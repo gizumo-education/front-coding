@@ -127,6 +127,7 @@
       transform: translateX(100%);
       background-color: utility.$bgBlack;
       opacity: 0;
+      transition: ease .4s;
       &__items {
         padding: .57rem 0 0;
         &__item {
@@ -179,8 +180,8 @@
 .l-header__hamburger.active span:nth-child(2) {
   opacity: 0;
   transition: ease .1s;
-
 }
+
 .l-header__hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translateX(.055rem) translateY(-.035rem);
 }
@@ -190,16 +191,8 @@
   opacity: .7;
 }
 
-body.active{
-  overflow: hidden;
-}
-
 .l-scrollArea {
   transform: translateY(-.7rem);
   position: absolute;
   opacity: 0;
-}
-
-html {
-  scroll-behavior: smooth;
 }

@@ -80,3 +80,11 @@ a {
     display: block!important;
   }
 }
+
+body.active{
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}

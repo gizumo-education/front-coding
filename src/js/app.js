@@ -13,6 +13,10 @@ $(function() {
       $('#js-noScroll').removeClass('active')
     })
   })
+  $("#js-nav").css({display:'none'});
+  setTimeout(function() {
+    $("#js-nav").css({display:'block'});
+  }, 400);
   $('#js-slider').slick({
     autoplay: true,
     speed: 700,

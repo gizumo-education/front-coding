@@ -1,0 +1,127 @@
+@use '../../object/utility/utility.scss';
+
+.p-article{
+  text-align: center;
+  margin-top: 105px;
+  height: 455px;
+  @include utility.tab {
+    margin-top: 1.05rem;
+    height: 4.55rem;
+  }
+  @include utility.sp{
+    margin-top: .6rem;
+    height: 9.1rem;
+  }
+  &_title{
+    font-weight: utility.$bold;
+    font-size: 25px;
+    @include utility.tab {
+      font-size: .25rem;
+    }
+  }
+  &_lists{
+    margin-top: 50px;
+    height: 240px;
+    @include utility.tab {
+      margin-top: .5rem;
+      height: 2.4rem;
+    }
+    @include utility.sp {
+      margin-top: .35rem;
+      height: 7.447rem;
+    }
+    &_list{
+      width: 380px;
+      background-color: utility.$bgBlack;
+      position: relative;
+      z-index: 1;
+      border-radius: 10px;
+      float: left;
+      @include utility.pc {
+        margin-left: 20px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      @include utility.tab {
+        width: 3.8rem;
+        border-radius: .1rem;
+        margin-left: .2rem;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      @include utility.sp {
+        width: 3.7rem;
+        height: 2.35rem;
+        margin-top: .17rem;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      &_img{
+        opacity: .5;
+        @include utility.tab {
+          height: 2.4rem;
+        }
+        @include utility.sp {
+          height: 2.35rem;
+        }
+      }
+      &_onText{
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        line-height: 23px;
+        @include utility.tab {
+          line-height: .23rem;
+        }
+        &_title{
+          font-weight: utility.$bold;
+          font-size: 24px;
+          color: utility.$white;
+          @include utility.tab {
+            font-size: .24rem;
+          }
+          @include utility.sp {
+            font-size: .21rem;
+          }
+        }
+        &_text{
+          color: utility.$white;
+          font-size: 16px;
+          margin-top: 44px;
+          @include utility.tab {
+            font-size: .16rem;
+            margin-top: .44rem;
+          }
+          @include utility.sp {
+            font-size: .14rem;
+            margin-top: .53rem;
+          }
+        }
+      }
+    }
+  }
+  &_button{
+    margin-top: 80px;
+    @include utility.tab {
+      margin-top: .8rem;
+    }
+    @include utility.sp {
+      margin-top: .35rem;
+    }
+    &_padding{
+    padding: 0 93px;
+    @include utility.tab {
+      padding: 0 .93rem;
+    }
+    @include utility.sp {
+      padding: 0 .68rem;
+    }
+    }
+  }
+}
