@@ -340,3 +340,18 @@
     position: absolute;
   }
 }
+
+// tb
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tb{
+    display: none !important;
+}
+
+}
+
+// sp
+@media screen and (max-width: 767px) {
+  .sp{
+    display: none !important;
+}
+}
