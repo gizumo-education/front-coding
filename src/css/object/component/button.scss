@@ -307,7 +307,7 @@ height: 17.974px;
 }
 
 .c-button__flame {
-  width: 360px;
+  width: 370px;
   height: 60px;
   border-radius: 30px;
   flex-shrink: 0;
@@ -320,18 +320,22 @@ height: 17.974px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 
 .c-button__box {
   position: relative;
-  bottom: 250px;
-  width: 1180px;
-  margin: 0 auto;
+  bottom: 190px;
+  width: 370px;
+  // margin: 0 auto;
+  display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: space-between;
 
   &--back {
-    width: 60px;
-    height: 60px;
+    width: 42px;
+    height: 42px;
     background-color: variables.$white;
     flex-shrink: 0;
     fill: variables.$filterBlack;
@@ -339,17 +343,16 @@ height: 17.974px;
     border-radius: 30px;
     border: none;
     position: relative;
-    float: left;
+    // float: left;
 
     &::before {
       content: "";
       margin: auto;
       position: absolute;
-      top: 30px;
-      bottom: 30px;
-      left: 25px;
-      width: 20px;
-      height: 20px;
+      top: 25px;
+      left: 18px;
+      width: 14px;
+      height: 14px;
       flex-shrink: 0;
       border-top: 0.707px solid variables.$filterBlack;
       border-right: 0.707px solid variables.$filterBlack;
@@ -358,8 +361,8 @@ height: 17.974px;
   }
 
   &--next {
-    width: 60px;
-    height: 60px;
+    width: 42px;
+    height: 42px;
     background-color: variables.$white;
     flex-shrink: 0;
     fill: black;
@@ -367,17 +370,18 @@ height: 17.974px;
     border-radius: 30px;
     border: none;
     position: relative;
-    float: right;
+    margin-left: 274px;
+    // float: right;
 
     &::before {
       content: "";
       margin: auto;
       position: absolute;
       top: 30px;
-      bottom: 30px;
-      right: 25px;
-      width: 20px;
-      height: 20px;
+      // bottom: 30px;
+      right: 17px;
+      width: 14px;
+      height: 14px;
       flex-shrink: 0;
       border-top: 0.707px solid variables.$filterBlack;
       border-right: 0.707px solid variables.$filterBlack;
