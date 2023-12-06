@@ -110,8 +110,7 @@
 }
 
 .u-job {
-  // margin: 60px auto 67px auto;
-  padding: 60px 0 15px 0 15px;
+  padding: 60px 0 15px 0;
 }
 
 // ギブズ四つの特徴　ピンク
@@ -123,18 +122,14 @@
 
   &__box--flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-top: 53px;
   }
 }
 
-
-.u-appeal {
-  margin-left: 40px;
-
-  &--position {
-    margin-top: 40px;
-  }
+.u-appeal__PcLine {
+  display: none;
 }
 
 .u-footer__container--text {
@@ -143,149 +138,159 @@
 
 // tb
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tb{
+  .tb {
     display: none !important;
-}
+  }
 
 }
 
 // sp
 @media screen and (max-width: 767px) {
-  .sp{
+  .sp {
     display: none !important;
-}
-// お仕事検索//
-
-.u-main__size {
-  padding: 60px 0;
-}
-
-.u-main__size2 {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 200px;
-  padding-top: 150px;
-}
-
-//新着求人 job//
-.u-job__category {
-  &__position1 {
-    margin-top: 11.92px;
   }
 
-  &__position2 {
-    margin-top: 4px;
+  // お仕事検索//
+
+  .u-main__size {
+    padding: 60px 0;
   }
 
-  &__position3 {
-    margin-top: 5px;
-  }
-}
-
-.u-container__position--job {
-  margin-left: 20px;
-
-  &:first-child {
-    margin-left: 0;
-  }
-}
-
-
-//お仕事検索　select//
-.u-select__position1,
-.u-select__position2,
-.u-select__position3 {
-  position: relative;
-  margin-left: 10px;
-
-  &:first-child {
-    margin-left: 0;
-  }
-}
-
-.u-triangle1,
-.u-triangle2,
-.u-triangle3 {
-  position: absolute;
-  top: 12.5px;
-  left: 80px;
-}
-
-.u-content {
-  &--message {
-    margin-top: 18px;
-    padding: 0 18px;
+  .u-main__size2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+    padding-top: 150px;
   }
 
-  &--text {
-    margin-top: 20px;
-  }
+  //新着求人 job//
+  .u-job {
+    padding: 0;
 
-  &__border {
-    &--second {
-      margin-top: 31px;
-      padding: 0 18px;
-    }
+    &__category {
+      &__position1 {
+        margin-top: 11.92px;
+      }
 
-    &--text {
-      padding: 58px 0 40.87px 0;
+      &__position2 {
+        margin-top: 4px;
+      }
+
+      &__position3 {
+        margin-top: 5px;
+      }
     }
   }
-}
 
-
-//転職お役立ちコンテンツ//
-.u-contents {
-  padding-top: 106.13px;
-
-  &__position {
+  .u-container__position--job {
     margin-left: 20px;
 
     &:first-child {
       margin-left: 0;
     }
   }
-}
 
-.u-img__filter {
-  filter: brightness(0.5);
-}
 
-//医療事務コラムもっと見る
-.u-button__flame--column {
-  line-height: 18px;
-  padding-top: 80px;
-}
+  //お仕事検索　select//
+  .u-select__position1,
+  .u-select__position2,
+  .u-select__position3 {
+    position: relative;
+    margin-left: 10px;
 
-.u-job {
-  // padding-top: 44.84px;
-}
-
-// ギブズ四つの特徴　ピンク
-
-.u-headline {
-  flex-shrink: 0;
-  background-color: variables.$white;
-  padding-top: 106px;
-
-  &__box--flex {
-    display: flex;
-    justify-content: center;
-    padding-top: 53px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
-}
 
-
-.u-appeal {
-  margin-left: 40px;
-
-  &--position {
-    margin-top: 40px;
+  .u-triangle1,
+  .u-triangle2,
+  .u-triangle3 {
+    position: absolute;
+    top: 12.5px;
+    left: 80px;
   }
-}
 
-.u-footer__container--text {
-  margin-top: 27px;
-}
+  .u-content {
+    &--message {
+      margin-top: 18px;
+      padding: 0 18px;
+    }
+
+    &--text {
+      margin-top: 20px;
+    }
+
+    &__border {
+      &--second {
+        margin-top: 31px;
+        padding: 0 18px;
+      }
+
+      &--text {
+        padding: 58px 0 40.87px 0;
+      }
+    }
+  }
+
+
+  //転職お役立ちコンテンツ//
+  .u-contents {
+    padding-top: 106.13px;
+
+    &__position {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .u-img__filter {
+    filter: brightness(0.5);
+  }
+
+  //医療事務コラムもっと見る
+  .u-button__flame--column {
+    line-height: 18px;
+    padding-top: 80px;
+  }
+
+  // ギブズ四つの特徴　ピンク
+
+  .u-headline {
+    flex-shrink: 0;
+    background-color: variables.$white;
+    padding-top: 55px;
+
+    &__box--flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 38px;
+    }
+  }
+
+
+  .u-appeal {
+    margin-left: 0;
+
+    &--position {
+      margin-top: 0;
+    }
+
+    &__SpLine {
+display: none;
+    }
+
+    &__PcLine {
+      display: block;
+    }
+  }
+
+  .u-footer__container--text {
+    margin-top: 27px;
+  }
 
 }

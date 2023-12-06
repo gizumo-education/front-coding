@@ -194,6 +194,16 @@
   border-radius: 10px;
   padding: 40px 40px;
   text-align: center;
+  margin-left: 40px;
+  margin-top: 40px;
+
+  &:nth-child(-n+2) {
+    margin-top: 0;
+  }
+
+  &:nth-child(2n+1) {
+    margin-left: 0;
+  }
 
   &--text {
     color: variables.$pink;
@@ -208,9 +218,9 @@
     font-weight: variables.$regular;
     line-height: normal;
     display: flex;
-    align-items: center;
-    height: 116px;
+    flex-direction: column;
     justify-content: center;
+    height: 116px;
   }
 }
 
@@ -478,9 +488,6 @@
 
       &--images {
         display: none;
-        // border-radius: 10px;
-        // width: 370px;
-        // height: 208px;
       }
 
       &--SpImages {
@@ -559,29 +566,40 @@
 
   .l-inner__appeal {
     background-color: variables.$peachPink;
-    width: 570px;
-    height: 180px;
+    width: 370px;
+    height: 161px;
     flex-shrink: 0;
     border-radius: 10px;
-    padding: 40px 40px;
+    padding: 30px 0;
     text-align: center;
+    margin-top: 21px;
+    margin-left: 0;
+
+    &:nth-child(-n+2) {
+      margin-top: 21px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
 
     &--text {
       color: variables.$pink;
-      font-size: 24px;
-      font-weight: variables.$bold;
-      line-height: 24px;
+      font-size: 20px;
+      font-weight: variables.$regular;
+      line-height: 20px;
     }
 
     &--content {
-      color: variables.$filterBlack;
-      font-size: 14px;
-      font-weight: variables.$regular;
+      display: block;
+      color: #000;
+      font-size: 12px;
+      font-weight: 400;
       line-height: normal;
-      display: flex;
-      align-items: center;
-      height: 116px;
-      justify-content: center;
+      height: 94px;
+display: flex;
+justify-content: center;
     }
   }
 
