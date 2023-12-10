@@ -184,16 +184,12 @@
     }
 
     &__width1 {
-      margin: 0 auto;
       width: 400px;
-      max-width: 100%;
       height: 270px;
     }
 
     &__gray {
-      width: 100%;
       display: block;
-      background-color: transparent;
     }
 
     &__relative {
@@ -201,21 +197,9 @@
     }
 
     &__text {
-      max-width: 767px;
+      max-width: 400px;
       height: 270px;
-      margin-left: auto;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      text-align: center;
       padding: 61.64px 3px 52px 124.64px;
-
-      position: absolute;
-      top: 100px;
-      left: 50%;
-      transform: translateX(-51%);
 
       &--micro {
         color: variables.$white;
