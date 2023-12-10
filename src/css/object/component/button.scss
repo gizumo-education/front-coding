@@ -302,36 +302,19 @@
 
     width: 17.975px;
 height: 17.974px;
-// flex-shrink: 0;
   }
 }
 
 .c-button__flame {
   width: 370px;
-  height: 60px;
-  border-radius: 30px;
-  flex-shrink: 0;
-  background-color: variables.$pink;
-  border: none;
-  color: variables.$white;
   font-size: 18px;
-  font-weight: variables.$bold;
-  line-height: normal;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  // margin: 0 auto;
 }
 
 .c-button__box {
   position: relative;
   bottom: 190px;
   width: 370px;
-  // margin: 0 auto;
   display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // justify-content: space-between;
 
   &--back {
     width: 42px;
