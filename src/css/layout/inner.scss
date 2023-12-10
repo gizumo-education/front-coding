@@ -565,13 +565,10 @@
   //四つの箱
 
   .l-inner__appeal {
-    background-color: variables.$peachPink;
+    // display: block;
     width: 370px;
     height: 161px;
-    flex-shrink: 0;
-    border-radius: 10px;
     padding: 30px 0;
-    text-align: center;
     margin-top: 21px;
     margin-left: 0;
 
@@ -604,16 +601,9 @@ justify-content: center;
   }
 
   //転職までの流れ//
-  .l-inner__content--description {
-    font-family: Noto Sans JP;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: variables.$regular;
-    line-height: normal;
-  }
 
   .u-box__content {
-    padding-top: 105px;
+    padding-top: 60px;
 
     &--padding {
       padding-top: 51.13px;
@@ -621,78 +611,44 @@ justify-content: center;
   }
 
   .l-inner__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 
 
     &--flame {
-      border-radius: 30px;
-      background-color: variables.$pink;
-      width: 60px;
-      height: 60px;
-      position: absolute;
-      top: 8.87px;
-      right: 208.87px;
-      bottom: 208.87px;
-      left: 8.87px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 45px;
+      height: 45px;
     }
 
 
     &--test {
-      color: variables.$white;
-      text-align: center;
-      font-family: Inter;
-      font-size: 16px;
-      font-weight: variables.$bold;
-      line-height: normal;
+      font-size: 10px;
     }
 
     &--img {
-      width: 102.292px;
-      height: 99.996px;
-      flex-shrink: 0;
+      width: 76.718px;
+      height: 74.999px;
     }
 
     &--title {
-      margin: 20px 30px 0 30px;
+      margin: 22px 0 0 0;
+      line-height: normal;
     }
 
     &--title2 {
-      margin: 33px 30px 0 30px;
-    }
-
-    &--item {
-      display: flex;
-      width: 277.732px;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
+      margin-top: 22px;
     }
 
     &--border {
-      position: relative;
-      border: 2.23px solid variables.$pink;
-      width: 277.732px;
-      height: 357.732px;
-      flex-shrink: 0;
-      border-radius: 10px;
+      height: 290.732px;
     }
   }
 
-
-
-
   .l-triangle1 {
-    width: 0;
-    height: 0;
-    border-left: 20px solid variables.$pink;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #DE5579;
+    border-bottom: 0;
+    margin: 10px 0;
   }
 
 
@@ -700,6 +656,7 @@ justify-content: center;
   .l-inner__flex {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     padding-top: 50px;
   }
 

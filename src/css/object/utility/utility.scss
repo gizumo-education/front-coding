@@ -132,6 +132,10 @@
   display: none;
 }
 
+.u-appeal__SpText {
+  visibility: hidden;
+}
+
 .u-footer__container--text {
   margin-top: 27px;
 }
@@ -190,6 +194,10 @@
     }
   }
 
+  //お仕事検索//
+  .u-inner__SpText {
+    font-size: 22px;
+  }
 
   //お仕事検索　select//
   .u-select__position1,
@@ -213,8 +221,7 @@
 
   .u-content {
     &--message {
-      margin-top: 18px;
-      padding: 0 18px;
+      margin-top: 10px;
     }
 
     &--text {
@@ -228,7 +235,7 @@
       }
 
       &--text {
-        padding: 58px 0 40.87px 0;
+        padding: 53.8px 0 0 0;
       }
     }
   }
@@ -281,11 +288,15 @@
     }
 
     &__SpLine {
-display: none;
+      display: none;
     }
 
     &__PcLine {
       display: block;
+    }
+
+    &__SpText {
+      visibility: visible;
     }
   }
 

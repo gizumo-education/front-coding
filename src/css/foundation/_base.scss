@@ -141,26 +141,19 @@ li {
   list-style: none;
 }
 
-h2 {
-  color: variables.$black;
-font-family: Noto Sans JP;
-font-size: 22px;
-font-style: normal;
-font-weight: 700;
-line-height: 22px;
-text-align: center;
-
-// color: #
+// h2 {
+//   color: variables.$black;
 // font-family: Noto Sans JP;
-font-size: 22px;
+// font-size: 22px;
 // font-style: normal;
 // font-weight: 700;
-// line-height: 22px; /* 100% */
-}
+// line-height: 22px;
+// text-align: center;
+// }
 
 h3 {
   font-family: Noto Sans JP;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: variables.$bold;
   line-height: 24px;
