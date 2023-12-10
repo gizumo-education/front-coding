@@ -243,13 +243,14 @@
 
   //転職お役立ちコンテンツ//
   .u-contents {
-    padding-top: 106.13px;
+    padding-top: 61px;
 
     &__position {
-      margin-left: 20px;
+      margin-left: 0;
+      margin-top: 17.55px;
 
       &:first-child {
-        margin-left: 0;
+        margin-top: 0;
       }
     }
   }
