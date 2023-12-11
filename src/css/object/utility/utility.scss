@@ -12,7 +12,6 @@
 .u-main__size2 {
   display: flex;
   justify-content: center;
-  padding-bottom: 200px;
   padding-top: 150px;
 }
 
@@ -135,8 +134,12 @@
   visibility: hidden;
 }
 
-.u-footer__container--text {
-  margin-top: 27px;
+.u-footer {
+  padding-top: 200px;
+
+  &__container--text {
+    margin-top: 27px;
+  }
 }
 
 // tb
@@ -296,8 +299,7 @@
     }
   }
 
-  .u-footer__container--text {
-    margin-top: 27px;
+  .u-footer {
+    padding-top: 100px;
   }
-
 }

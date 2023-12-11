@@ -75,15 +75,31 @@
 
 // tb
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tb{
+  .tb {
     display: none !important;
-}
+  }
 
 }
 
 // sp
 @media screen and (max-width: 767px) {
-  .sp{
+  .sp {
     display: none !important;
-}
+  }
+
+  .l-footer__image {
+    margin-top: 15px;
+
+    &:first-child {
+      margin-top: 22px;
+    }
+  }
+
+  .l-footer {
+    padding: 38px 0 40px 0;
+
+    &__container {
+      flex-direction: column;
+    }
+  }
 }
