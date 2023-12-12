@@ -159,7 +159,7 @@
   // お仕事検索//
 
   .u-main__size {
-    padding: 60px 0;
+    padding: 25px 0;
   }
 
   .u-main__size2 {
@@ -202,18 +202,12 @@
   .u-select__position1,
   .u-select__position2,
   .u-select__position3 {
-    position: relative;
     margin-left: 10px;
-
-    &:first-child {
-      margin-left: 0;
-    }
   }
 
   .u-triangle1,
   .u-triangle2,
   .u-triangle3 {
-    position: absolute;
     top: 12.5px;
     left: 80px;
   }
