@@ -302,7 +302,6 @@
   }
 
   .c-button__box {
-    position: relative;
     bottom: 190px;
     width: 370px;
     display: flex;
@@ -310,55 +309,25 @@
     &--back {
       width: 42px;
       height: 42px;
-      background-color: variables.$white;
-      flex-shrink: 0;
-      fill: variables.$filterBlack;
-      opacity: 0.699999988079071;
-      border-radius: 30px;
-      border: none;
-      position: relative;
-      // float: left;
 
       &::before {
-        content: "";
-        margin: auto;
-        position: absolute;
         top: 25px;
         left: 18px;
         width: 14px;
         height: 14px;
-        flex-shrink: 0;
-        border-top: 0.707px solid variables.$filterBlack;
-        border-right: 0.707px solid variables.$filterBlack;
-        transform: rotate(225deg);
       }
     }
 
     &--next {
       width: 42px;
       height: 42px;
-      background-color: variables.$white;
-      flex-shrink: 0;
-      fill: black;
-      opacity: 0.699999988079071;
-      border-radius: 30px;
-      border: none;
-      position: relative;
       margin-left: 274px;
-      // float: right;
 
       &::before {
-        content: "";
-        margin: auto;
-        position: absolute;
         top: 30px;
         right: 17px;
         width: 14px;
         height: 14px;
-        flex-shrink: 0;
-        border-top: 0.707px solid variables.$filterBlack;
-        border-right: 0.707px solid variables.$filterBlack;
-        transform: rotate(45deg);
       }
     }
   }
