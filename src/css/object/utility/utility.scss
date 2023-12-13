@@ -240,14 +240,9 @@
   // ギブズ四つの特徴　ピンク
 
   .u-headline {
-    flex-shrink: 0;
-    background-color: variables.$white;
     padding-top: 55px;
 
     &__box--flex {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
       padding-top: 38px;
     }
   }

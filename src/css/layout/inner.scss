@@ -529,21 +529,14 @@
 
 
     &--text {
-      color: variables.$pink;
       font-size: 20px;
       font-weight: variables.$regular;
       line-height: 20px;
     }
 
     &--content {
-      display: block;
-      color: #000;
       font-size: 12px;
-      font-weight: 400;
-      line-height: normal;
       height: 94px;
-      display: flex;
-      justify-content: center;
     }
   }
 
