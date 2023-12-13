@@ -6,7 +6,6 @@
 
 // お仕事検索
 .l-inner__select {
-
   &--box {
     margin-top: 26px;
     display: flex;
@@ -118,9 +117,6 @@
 
     &--SpImages {
       display: none;
-      // border-radius: 10px;
-      // width: 370px;
-      // height: 208px;
     }
 
     &--text {
@@ -246,7 +242,6 @@
   align-items: center;
   justify-content: center;
 
-
   &--flame {
     border-radius: 30px;
     background-color: variables.$pink;
@@ -262,7 +257,6 @@
     align-items: center;
     justify-content: center;
   }
-
 
   &--test {
     color: variables.$white;
@@ -304,9 +298,6 @@
     border-radius: 10px;
   }
 }
-
-
-
 
 .l-triangle1 {
   width: 0;
@@ -370,7 +361,6 @@
 
   // お仕事検索
   .l-inner__select {
-
     &--box {
       margin-top: 13px;
       flex-wrap: wrap;
@@ -386,10 +376,6 @@
       flex-shrink: 0;
       margin-left: 15px;
       border: 1px solid variables.$pink;
-
-      &:first-child {
-        // margin-left: 0;
-      }
 
       &:focus {
         outline: none;
@@ -453,11 +439,9 @@
         font-size: 25px;
         font-weight: variables.$bold;
         line-height: 25px;
-        /* 100% */
       }
 
       &--container {
-        // display: flex;
         justify-content: flex-start;
         margin-top: 35px;
         overflow-x: scroll;
@@ -603,7 +587,6 @@
     width: 370px;
     height: 234.905px;
     padding: 60px 0 60px 0;
-    position: relative;
 
     &--title {
       line-height: 21px;
@@ -615,6 +598,9 @@
       font-size: 14px;
       margin-top: 53px;
     }
-  }
 
+    &--img {
+      width: 370px;
+    }
+  }
 }
