@@ -1,2 +1,49 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
+@use '../../foundation/_variables.scss';
+
+
+.c-form-m60 {
+    margin: 6rem auto;
+}
+
+.c-form-mb200 {
+  margin: 0 auto 20rem;
+}
+
+.p-process__item__subtitle-mb18 {
+  margin-bottom: 1.8rem;
+}
+
+.p-process__item__subtitle-mb30 {
+  margin-bottom: 3rem;
+}
+
+.p-process__item__icon-step1 {
+  padding: 6rem 6.3rem 2rem 8.7rem;
+}
+
+.p-process__item__icon-step2 {
+  padding: 7rem 8.2rem 3rem 8.5rem;
+}
+
+.p-process__item__icon-step3 {
+  padding: 6rem 7rem 3.3rem 7.9rem;
+}
+
+
+.p-process__item__icon-step4 {
+  padding: 5.4rem 7.9rem 2.8rem 6.9rem;
+}
+
+.p-news__items__text-title {
+  font-size: 2.4rem;
+  font-weight: variables.$bold;
+  margin-bottom: 4.4rem;
+}
+
+.p-news__items__text-about {
+  white-space: nowrap;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+}

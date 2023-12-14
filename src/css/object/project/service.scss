@@ -1,0 +1,48 @@
+@use '../../foundation/variables';
+
+.p-service {
+  text-align: center;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: variables.$bold;
+    margin-top: 10.6rem;
+    margin-bottom: 5.3rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    background-color: variables.$servicePink;
+    border-radius: 1rem;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+    margin-right: 4rem;
+    width: 57rem;
+    height: 18rem;
+
+    &__title {
+      color: variables.$buttonPink;
+      font-size: 2.4rem;
+      font-weight: variables.$bold;
+      margin-bottom: 3.6rem;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-child(3n),
+    &:nth-child(4n) {
+      margin-bottom: 0;
+    }
+  }
+}

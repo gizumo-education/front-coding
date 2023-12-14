@@ -1,2 +1,16 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/variables.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button {
+  background-color: variables.$buttonPink;
+  color: variables.$white;
+  font-size: 18px;
+  font-weight: variables.$bold;
+  padding: 1.7rem 7.2rem;
+  border-radius: 50px;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3;
+  }
+}
