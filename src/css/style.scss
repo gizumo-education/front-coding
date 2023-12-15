@@ -9,13 +9,11 @@
 @use './layout/footer.scss';
 @use './layout/header.scss';
 @use './layout/inner.scss';
-
 /*-------------------------------------------*/
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
 @use './object/component/form.scss';
-
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
@@ -25,6 +23,9 @@
 @use './object/project/service.scss';
 @use './object/project/process.scss';
 @use './object/project/news.scss';
+/*-------------------------------------------*/
 
-
+/*utility---------------------------------*/
+@use './object/utility/font.scss';
+@use './object/utility/margin.scss';
 /*-------------------------------------------*/

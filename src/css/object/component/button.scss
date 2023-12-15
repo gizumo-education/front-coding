@@ -7,8 +7,10 @@
   color: variables.$white;
   font-size: 18px;
   font-weight: variables.$bold;
-  padding: 1.7rem 7.2rem;
+  height: 6rem;
+  padding: 0 7.2rem;
   border-radius: 50px;
+  line-height: 6rem;
   &:hover {
     opacity: 0.8;
     transition: 0.3;

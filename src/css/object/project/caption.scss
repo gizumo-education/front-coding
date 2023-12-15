@@ -1,16 +1,16 @@
 @use '../../foundation/variables';
 
 .p-caption {
-  height: 30rem;
   background-image: url(../img/picture/caption_img.jpg);
   background-size: cover;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 30rem;
   &::before {
-    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     right: 0;
     bottom: 0;
@@ -19,13 +19,12 @@
   }
 
   &__text {
-    font-size: 2.5rem;
-    line-height: 3.6rem;
-    color: variables.$white;
+    position: absolute;
     text-align: center;
     font-weight: variables.$bold;
-    position: absolute;
-
+    color: variables.$white;
+    font-size: 2.5rem;
+    line-height: 3.6rem;
 
     &__inner {
       padding-bottom: 2rem;
