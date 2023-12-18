@@ -2,16 +2,13 @@
 
 .p-process {
   text-align: center;
-
-  &__title {
-    margin-top: 10.6rem;
-    margin-bottom: 5.3rem;
-  }
+  margin-top: 10.6rem;
 
   &__items {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5.3rem;
   }
 
   &__item {
@@ -19,7 +16,6 @@
     border: solid 0.2rem variables.$buttonPink;
     border-radius: 1rem;
     width: 28rem;
-    height: 36rem;
     padding: 2rem 2.1rem 4.2rem 2.2rem;
     
     &__number {
