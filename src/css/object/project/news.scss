@@ -52,5 +52,11 @@
     &:first-child {
       margin-left: 0;
     }
+
+    &:hover {
+      opacity: .8;
+      transition: .3s;
+      cursor: pointer;
+    }
   }
 }
