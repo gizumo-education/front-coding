@@ -13,8 +13,19 @@
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/form.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/carousel.scss';
+@use './object/project/caption.scss';
+@use './object/project/service.scss';
+@use './object/project/process.scss';
+@use './object/project/news.scss';
+/*-------------------------------------------*/
+
+/*utility---------------------------------*/
+@use './object/utility/font.scss';
+@use './object/utility/margin.scss';
 /*-------------------------------------------*/

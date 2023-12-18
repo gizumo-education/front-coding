@@ -1,0 +1,74 @@
+@use '../../foundation/variables';
+
+.p-carousel {
+  background-color: variables.$bgLightBlue;
+  text-align: center;
+  padding-bottom: 6.7rem;
+  padding-top: 6.4rem;
+  margin-top: 6rem;
+
+  &__btn {
+    width: 36rem;
+    margin-top: 6rem;
+  }
+
+  &__title {
+    text-align: left;
+    font-size: 2.5rem;
+
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+
+  &__img {
+    border-radius: 1rem;
+  }
+
+  &__contents {
+    width: 28rem;
+    margin-left: 2rem;
+
+    &__text {
+      text-align: left;
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      margin-top: 0.8rem;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.4rem;
+      margin-top: 0.6rem;
+    }
+
+    &__title {
+      text-align: center;
+      background-color: variables.$carouselPink;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      width: 6rem;
+      margin-top: 0.5rem;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &__item {
+      text-align: left;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      height: 1.7rem;
+      margin-left: 1rem;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

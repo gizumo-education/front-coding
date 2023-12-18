@@ -1,2 +1,52 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/variables';
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual {
+  background-color: variables.$keyBlue;
+
+  &__area {
+  position: relative;
+  margin: 0 auto;
+  width: 126rem;
+  }
+
+  &__img {
+    height: 50rem;
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 27.5rem;
+    left: 65.5rem;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 17rem;
+    left: 43.2rem;
+  }
+
+  &__news {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: space-around;
+    color: variables.$keyGreen;
+    background-color: variables.$white;
+    border: solid 0.2rem variables.$keyGreen;
+    font-size: 2rem;
+    border-radius: 1rem;
+    width: 39.1rem;
+    height: 6.9rem;
+    bottom: 4.7rem;
+    left: 63.4rem;
+
+    &__span {
+      font-weight: variables.$bold;
+      font-size: 4rem;
+    }
+  }
+}

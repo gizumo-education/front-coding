@@ -1,0 +1,96 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/variables';
+
+
+.c-form {
+  background-color: variables.$formBlue;
+  text-align: center;
+  border-radius: 1rem;
+  width: 118rem;
+  
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.6rem;
+  }
+
+  &__title {
+    font-weight: variables.$bold;
+    font-size: 2.5rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  &__select {
+    position: relative;
+    margin-left: 1.5rem;
+
+    &__item {
+      appearance: none;
+      border: solid 0.1rem variables.$formPink;
+      font-size: 1.8rem;
+      border-radius: 10px;
+      width: 20rem;
+      height: 6rem;
+      padding-left: 1.5rem;
+    }
+
+    &::before {
+      position: absolute;
+      pointer-events: none;
+      border-style: solid;
+      border-color: variables.$formPink transparent transparent transparent;
+      border-width: 10px 10px 0 10px;
+      width: 0;
+      height: 0;
+      top: 50%;
+      right: 3rem;
+      transform: translateY(-50%);
+      content: "";
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__input {
+    border: solid 0.1rem variables.$formPink;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    width: 30rem;
+    height: 6rem;
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    background-color: variables.$buttonPink;
+    color: variables.$white;
+    font-weight: variables.$bold;
+    font-size: 1.8rem;
+    width: 14rem;
+    height: 6rem;
+    border-radius: 5rem;
+    margin-left: 1.5rem;
+    
+
+    &__icon {
+      margin-right: 0.4rem;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+}

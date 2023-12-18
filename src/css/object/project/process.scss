@@ -1,0 +1,55 @@
+@use '../../foundation/variables';
+
+.p-process {
+  text-align: center;
+  margin-top: 10.6rem;
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.3rem;
+  }
+
+  &__item {
+    position: relative;
+    border: solid 0.2rem variables.$buttonPink;
+    border-radius: 1rem;
+    width: 28rem;
+    padding: 2rem 2.1rem 4.2rem 2.2rem;
+    
+    &__number {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: variables.$bold;
+      color: variables.$white;
+      background-color: variables.$buttonPink;
+      font-size: 16px;
+      border-radius: 5rem;
+      width: 6rem;
+      height: 6rem;
+      top: 1rem;
+      left: 1rem;
+    }
+
+    &__icon {
+      text-align: center;
+    }
+
+    &__subtitle {
+      font-weight: variables.$bold;
+      line-height: 3rem;
+      font-size: 2.4rem;
+    }
+
+    &__text {
+      overflow-wrap: break-word;
+      line-height: 2rem;
+      font-size: 1.4rem;
+      width: 23.7rem;
+    }
+  }
+}

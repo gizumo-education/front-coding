@@ -1,0 +1,39 @@
+@use '../../foundation/variables';
+
+.p-caption {
+  background-image: url(../img/picture/caption_img.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  &::before {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+  }
+
+  &__text {
+    position: absolute;
+    text-align: center;
+    font-weight: variables.$bold;
+    color: variables.$white;
+    font-size: 2.5rem;
+    line-height: 3.6rem;
+
+    &__inner {
+      margin-top: 2rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+

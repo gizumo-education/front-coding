@@ -1,0 +1,62 @@
+@use '../../foundation/variables';
+
+.p-news {
+  text-align: center;
+  margin-top: 10.5rem;
+
+  &__btn {
+    margin-top: 8rem;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+
+    &__text {
+      position: absolute;
+      color: variables.$white;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin-left: 1rem;
+
+    &__title {
+      font-size: 2.4rem;
+      font-weight: variables.$bold;
+    }
+
+    &__about {
+      white-space: nowrap;
+      font-size: 1.6rem;
+      line-height: 2.3rem;
+      margin-top: 4.4rem;
+    }
+
+    &::before {
+      position: absolute;
+      border-radius: 1rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: ' ';
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      opacity: .8;
+      transition: .3s;
+      cursor: pointer;
+    }
+  }
+}
