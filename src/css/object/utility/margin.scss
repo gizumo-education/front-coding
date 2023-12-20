@@ -5,6 +5,9 @@ padding-bottom: 20rem;
 @include utility.tab {
   padding-bottom: 2rem;
 }
+@include utility.tab {
+  padding-bottom: 1rem;
+}
 }
 
 .u-form {
@@ -17,6 +20,11 @@ padding-bottom: 20rem;
       padding-top: .4rem;
       padding-bottom: .4rem;
     }
+    @include utility.sp {
+      margin: .25rem auto 0;
+      padding-top: .15rem;
+      padding-bottom: .2rem;
+    }
   }
 
   &-mb200 {
@@ -25,9 +33,14 @@ padding-bottom: 20rem;
     padding-bottom: 4rem;
     margin-top: 15rem;
     @include utility.tab {
+      padding-top: .15rem;
+      padding-bottom: .2rem;
+      margin-top: 1.5rem;
+    }
+      @include utility.sp {
       padding-top: .4rem;
       padding-bottom: .4rem;
-      margin-top: 1.5rem;
+      margin-top: .6rem;
     }
   }
 }
