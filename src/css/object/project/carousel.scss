@@ -1,4 +1,5 @@
 @use '../../foundation/variables';
+@use '../../object/utility/utility.scss';
 
 .p-carousel {
   background-color: variables.$bgLightBlue;
@@ -10,12 +11,18 @@
   &__btn {
     width: 36rem;
     margin-top: 6rem;
+    @include utility.tab {
+      width: 3.6rem;
+      margin-top: .6rem;
+    }
   }
 
   &__title {
     text-align: left;
     font-size: 2.5rem;
-
+    @include utility.tab {
+      font-size: .25rem;
+    }
   }
 
   &__main {
@@ -23,10 +30,16 @@
     align-items: center;
     justify-content: center;
     margin-top: 2.5rem;
+    @include utility.tab {
+      margin-top: .25rem;
+    }
   }
 
   &__img {
     border-radius: 1rem;
+    @include utility.tab {
+      border-radius: .1rem;
+    }
   }
 
   &__contents {
@@ -38,6 +51,11 @@
       font-size: 1.6rem;
       line-height: 2.2rem;
       margin-top: 0.8rem;
+      @include utility.tab {
+        font-size: .16rem;
+        line-height: .22rem;
+        margin-top: .08rem;
+      }
     }
 
     &__list {
@@ -45,6 +63,10 @@
       flex-wrap: wrap;
       font-size: 1.4rem;
       margin-top: 0.6rem;
+      @include utility.tab {
+        font-size: .14rem;
+        margin-top: .06rem;
+      }
     }
 
     &__title {
@@ -57,6 +79,12 @@
       &:first-child {
         margin-top: 0;
       }
+      @include utility.tab {
+        font-size: .14rem;
+        line-height: .2rem;
+        width: .6rem;
+        margin-top: .05rem;
+      }
     }
 
     &__item {
@@ -65,10 +93,25 @@
       line-height: 2rem;
       height: 1.7rem;
       margin-left: 1rem;
+      @include utility.tab {
+        font-size: .14rem;
+        line-height: .2rem;
+        height: .17rem;
+        margin-left: .1rem;
+      }
     }
 
     &:first-child {
       margin-left: 0;
     }
+    @include utility.tab {
+      width: 2.8rem;
+      margin-left: .2rem;
+    }
+  }
+  @include utility.tab {
+    padding-bottom: .67rem;
+    padding-top: .64rem;
+    margin-top: .6rem;
   }
 }

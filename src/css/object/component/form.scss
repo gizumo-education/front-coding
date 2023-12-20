@@ -14,16 +14,26 @@
     justify-content: center;
     align-items: center;
     margin-top: 2.6rem;
+    @include utility.tab {
+      margin-top: .26rem;
+    }
   }
 
   &__title {
     font-weight: variables.$bold;
     font-size: 2.5rem;
+    @include utility.tab {
+      font-size: .25rem;
+    }
   }
 
   &__text {
     font-size: 2rem;
     margin-top: 2rem;
+    @include utility.tab {
+      font-size: .2rem;
+      margin-top: .2rem;
+    }
   }
 
   &__select {
@@ -38,6 +48,14 @@
       width: 20rem;
       height: 6rem;
       padding-left: 1.5rem;
+      @include utility.tab {
+        border: solid .01rem variables.$formPink;
+        font-size: .18rem;
+        border-radius: .1px;
+        width: 2rem;
+        height: .6rem;
+        padding-left: .15rem;
+      }
     }
 
     &::before {
@@ -52,9 +70,16 @@
       right: 3rem;
       transform: translateY(-50%);
       content: "";
+      @include utility.tab {
+        border-width: .01rem .01rem 0 .01rem;
+        right: .3rem;
+      }
     }
     &:first-child {
       margin-left: 0;
+    }
+    @include utility.tab {
+      margin-left: .15rem;
     }
   }
 
@@ -66,6 +91,15 @@
     height: 6rem;
     margin-left: 1.5rem;
     padding-left: 1rem;
+    @include utility.tab {
+      border: solid .01rem variables.$formPink;
+      border-radius: .1rem;
+      font-size: .18rem;
+      width: 3rem;
+      height: .6rem;
+      margin-left: .15rem;
+      padding-left: .1rem;
+    }
   }
 
   &__btn {
@@ -85,6 +119,11 @@
 
     &__icon {
       margin-right: 0.4rem;
+
+      @include utility.tab {
+        margin-right: .04rem;
+        max-width: .3rem;
+      }
     }
 
     &:hover {
@@ -92,5 +131,17 @@
       transition: 0.3s;
       cursor: pointer;
     }
+    @include utility.tab {
+      font-size: .18rem;
+      width: 1.4rem;
+      height: .6rem;
+      border-radius: .5rem;
+      margin-left: .15rem;
+    }
+  }
+  @include utility.tab {
+    border-radius: .1rem;
+    width: 11.8rem;
   }
 }
+

@@ -5,15 +5,22 @@
 .c-button {
   background-color: variables.$buttonPink;
   color: variables.$white;
-  font-size: 18px;
   font-weight: variables.$bold;
+  font-size: 1.8rem;
   height: 6rem;
   padding: 0 7.2rem;
-  border-radius: 50px;
+  border-radius: 5rem;
   line-height: 6rem;
   &:hover {
     opacity: 0.8;
     transition: 0.3;
     cursor: pointer;
+  }
+  @include utility.tab {
+    font-size: .18rem;
+    height: .6rem;
+    padding: 0 .72rem;
+    border-radius: .5rem;
+    line-height: .6rem;
   }
 }

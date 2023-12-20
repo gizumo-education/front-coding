@@ -1,4 +1,5 @@
 @use '../../foundation/variables';
+@use '../../object/utility/utility.scss';
 
 .p-process {
   text-align: center;
@@ -9,6 +10,9 @@
     justify-content: center;
     align-items: center;
     margin-top: 5.3rem;
+    @include utility.tab {
+      margin-top: .53rem;
+    }
   }
 
   &__item {
@@ -16,7 +20,7 @@
     border: solid 0.2rem variables.$buttonPink;
     border-radius: 1rem;
     width: 28rem;
-    padding: 2rem 2.1rem 4.2rem 2.2rem;
+    padding: 2rem 2rem 4.2rem 2rem;
     
     &__number {
       position: absolute;
@@ -27,12 +31,20 @@
       font-weight: variables.$bold;
       color: variables.$white;
       background-color: variables.$buttonPink;
-      font-size: 16px;
+      font-size: 1.6rem;
       border-radius: 5rem;
       width: 6rem;
       height: 6rem;
       top: 1rem;
       left: 1rem;
+      @include utility.tab {
+        font-size: .16rem;
+        border-radius: .5rem;
+        width: .6rem;
+        height: .6rem;
+        top: .1rem;
+        left: .1rem;
+      }
     }
 
     &__icon {
@@ -43,6 +55,19 @@
       font-weight: variables.$bold;
       line-height: 3rem;
       font-size: 2.4rem;
+      @include utility.tab {
+        line-height: .3rem;
+        font-size: .24rem;
+      }
+    }
+
+    &__triangle {
+      width: 2rem;
+      height: 4rem;
+      @include utility.tab {
+        width: .2rem;
+        height: .4rem;
+      }
     }
 
     &__text {
@@ -50,6 +75,20 @@
       line-height: 2rem;
       font-size: 1.4rem;
       width: 23.7rem;
+      @include utility.tab {
+        line-height: .2rem;
+        font-size: .14rem;
+        width: 2.37rem;
+      }
     }
+    @include utility.tab {
+      border: solid .02rem variables.$buttonPink;
+      border-radius: .1rem;
+      width: 2.8rem;
+      padding: .2rem .2rem .42rem .2rem;
+    }
+  }
+  @include utility.tab {
+    margin-top: 1.06rem;
   }
 }
