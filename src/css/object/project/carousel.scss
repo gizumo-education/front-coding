@@ -11,6 +11,7 @@
   &__btn {
     width: 36rem;
     margin-top: 6rem;
+
     @include utility.tab {
       width: 3.6rem;
       margin-top: .6rem;
@@ -20,8 +21,15 @@
   &__title {
     text-align: left;
     font-size: 2.5rem;
+
     @include utility.tab {
       font-size: .25rem;
+    }
+
+    @include utility.sp {
+      text-align: center;
+      font-size: .25rem;
+      font-weight: variables.$bold;
     }
   }
 
@@ -30,15 +38,27 @@
     align-items: center;
     justify-content: center;
     margin-top: 2.5rem;
+
     @include utility.tab {
       margin-top: .25rem;
+    }
+
+    @include utility.sp {
+      flex-direction: column;
+      margin-top: .35rem;
     }
   }
 
   &__img {
     border-radius: 1rem;
+
     @include utility.tab {
       border-radius: .1rem;
+    }
+
+    @include utility.sp {
+      border-radius: .1rem;
+      width: 3.7rem;
     }
   }
 
@@ -51,10 +71,18 @@
       font-size: 1.6rem;
       line-height: 2.2rem;
       margin-top: 0.8rem;
+
       @include utility.tab {
         font-size: .16rem;
         line-height: .22rem;
         margin-top: .08rem;
+      }
+
+      @include utility.sp {
+        font-weight: variables.$bold;
+        font-size: .16rem;
+        line-height: .22rem;
+        margin-top: .1rem;
       }
     }
 
@@ -63,7 +91,13 @@
       flex-wrap: wrap;
       font-size: 1.4rem;
       margin-top: 0.6rem;
+
       @include utility.tab {
+        font-size: .14rem;
+        margin-top: .06rem;
+      }
+
+      @include utility.sp {
         font-size: .14rem;
         margin-top: .06rem;
       }
@@ -76,10 +110,19 @@
       line-height: 2rem;
       width: 6rem;
       margin-top: 0.5rem;
+
       &:first-child {
         margin-top: 0;
       }
+
       @include utility.tab {
+        font-size: .14rem;
+        line-height: .2rem;
+        width: .6rem;
+        margin-top: .05rem;
+      }
+
+      @include utility.sp {
         font-size: .14rem;
         line-height: .2rem;
         width: .6rem;
@@ -93,7 +136,15 @@
       line-height: 2rem;
       height: 1.7rem;
       margin-left: 1rem;
+
       @include utility.tab {
+        font-size: .14rem;
+        line-height: .2rem;
+        height: .17rem;
+        margin-left: .1rem;
+      }
+
+      @include utility.sp {
         font-size: .14rem;
         line-height: .2rem;
         height: .17rem;
@@ -104,14 +155,22 @@
     &:first-child {
       margin-left: 0;
     }
+
     @include utility.tab {
       width: 2.8rem;
       margin-left: .2rem;
     }
+
+    @include utility.sp {
+      width: 3.7rem;
+      margin-left: 0;
+    }
   }
-  @include utility.tab {
-    padding-bottom: .67rem;
-    padding-top: .64rem;
-    margin-top: .6rem;
+
+  @include utility.sp {
+    padding-bottom: 6.7rem;
+    padding-top: .3rem;
+    margin-top: .25rem;
   }
+
 }

@@ -23,4 +23,11 @@
     border-radius: .5rem;
     line-height: .6rem;
   }
+  @include utility.sp {
+    font-size: .18rem;
+    height: .6rem;
+    padding: 0 .72rem;
+    border-radius: .5rem;
+    line-height: .6rem;
+  }
 }
