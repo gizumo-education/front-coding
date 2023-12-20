@@ -12,6 +12,9 @@
   @include utility.tab {
     max-width: 12.6rem;
   }
+  @include utility.sp {
+    max-width: 4rem;
+  }
   }
 
   &__img__area {
@@ -24,6 +27,22 @@
     @include utility.tab {
       height: 5rem;
     }
+    @include utility.sp {
+      height: 2.7rem;
+    }
+
+    &__pc {
+      display: block;
+      @include utility.sp {
+        display: none;
+      }
+    }
+    &__sp {
+      display: none;
+      @include utility.sp {
+        display: block;
+      }
+    }
   }
 
   &__icon {
@@ -35,6 +54,11 @@
       left: 6.55rem;
       max-width: 3.42rem;
     }
+    @include utility.sp {
+      bottom: 1.35rem;
+      left: 2rem;
+      max-width: 1.49rem;
+    }
   }
 
   &__title {
@@ -45,6 +69,11 @@
       bottom: 1.7rem;
       left: 4.32rem;
       max-width: 8rem;
+    }
+    @include utility.sp {
+      bottom: 1rem;
+      left: 1.24rem;
+      max-width: 2.72rem;
     }
   }
 
@@ -71,6 +100,9 @@
       @include utility.tab {
         font-size: .4rem;
       }
+      @include utility.sp {
+        font-size: .16rem;
+      }
     }
     @include utility.tab {
       border: solid .02rem variables.$keyGreen;
@@ -80,6 +112,13 @@
       max-height: .69rem;
       bottom: .47rem;
       left: 6.34rem;
+    }
+    @include utility.sp {
+      font-size: .08rem;
+      max-width: 1.7rem;
+      max-height: .3rem;
+      bottom: .52rem;
+      left: 1.89rem;
     }
   }
 }
