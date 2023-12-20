@@ -36,14 +36,25 @@
       @include utility.tab {
         margin-top: .2rem;
       }
+      @include utility.sp {
+        margin-top: .02rem;
+      }
     }
     @include utility.tab {
       font-size: .25rem;
       line-height: .36rem;
     }
+    @include utility.sp {
+      font-weight: variables.$regular;
+      font-size: .14rem;
+      line-height: .2rem;
+    }
   }
   @include utility.tab {
     height: 3rem;
+  }
+  @include utility.sp {
+    height: .75rem;
   }
 }
 

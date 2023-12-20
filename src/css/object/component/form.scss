@@ -51,12 +51,8 @@
     position: relative;
     margin-left: 1.5rem;
 
-    &__sp {
-      @include utility.sp {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    &__common {
+      display: flex;
     }
 
     &__item {

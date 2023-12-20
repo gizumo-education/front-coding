@@ -16,6 +16,12 @@
       width: 3.6rem;
       margin-top: .6rem;
     }
+    @include utility.sp {
+      width: 3.6rem;
+      margin-top: .44rem;
+    }
+
+
   }
 
   &__title {
@@ -164,11 +170,22 @@
     @include utility.sp {
       width: 3.7rem;
       margin-left: 0;
+      margin-top: .25rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
     }
   }
 
+  @include utility.tab {
+    padding-bottom: .67rem;
+    padding-top: .64rem;
+    margin-top: .6rem;
+  }
+
   @include utility.sp {
-    padding-bottom: 6.7rem;
+    padding-bottom: .6rem;
     padding-top: .3rem;
     margin-top: .25rem;
   }
