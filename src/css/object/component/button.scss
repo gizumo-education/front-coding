@@ -8,26 +8,30 @@
   font-weight: variables.$bold;
   font-size: 1.8rem;
   height: 6rem;
-  padding: 0 7.2rem;
+  padding: 2.1rem 7.2rem;
   border-radius: 5rem;
-  line-height: 6rem;
+  line-height: 1.8rem;
+
   &:hover {
     opacity: 0.8;
     transition: 0.3;
     cursor: pointer;
   }
+
   @include utility.tab {
     font-size: .18rem;
     height: .6rem;
-    padding: 0 .72rem;
+    padding: .21rem .72rem;
     border-radius: .5rem;
-    line-height: .6rem;
+    line-height: .18rem;
   }
+
   @include utility.sp {
     font-size: .18rem;
     height: .6rem;
-    padding: 0 .72rem;
+    width: 3.7rem;
+    padding: .21rem 0;
     border-radius: .5rem;
-    line-height: .6rem;
+    line-height: .18rem;
   }
 }

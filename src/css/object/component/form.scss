@@ -7,16 +7,18 @@
   text-align: center;
   border-radius: 1rem;
   width: 118rem;
-  
+
 
   &__items {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2.6rem;
+
     @include utility.tab {
       margin-top: .26rem;
     }
+
     @include utility.sp {
       display: block;
       margin-top: .1rem;
@@ -26,9 +28,11 @@
   &__title {
     font-weight: variables.$bold;
     font-size: 2.5rem;
+
     @include utility.tab {
       font-size: .25rem;
     }
+
     @include utility.sp {
       font-size: .22rem;
     }
@@ -37,10 +41,12 @@
   &__text {
     font-size: 2rem;
     margin-top: 2rem;
+
     @include utility.tab {
       font-size: .2rem;
       margin-top: .2rem;
     }
+
     @include utility.sp {
       font-size: .14rem;
       margin-top: .16rem;
@@ -63,6 +69,7 @@
       width: 20rem;
       height: 6rem;
       padding-left: 1.5rem;
+
       @include utility.tab {
         border: solid .01rem variables.$formPink;
         font-size: .18rem;
@@ -71,6 +78,7 @@
         height: .6rem;
         padding-left: .15rem;
       }
+
       @include utility.sp {
         border: solid .01rem variables.$formPink;
         font-size: .12rem;
@@ -93,21 +101,26 @@
       right: 3rem;
       transform: translateY(-50%);
       content: "";
+
       @include utility.tab {
         border-width: .1rem .1rem 0 .1rem;
         right: .2rem;
       }
+
       @include utility.sp {
         border-width: .07rem .07rem 0 .07rem;
         right: .1rem;
       }
     }
+
     &:first-child {
       margin-left: 0;
     }
+
     @include utility.tab {
       margin-left: .15rem;
     }
+
     @include utility.sp {
       margin-left: .1rem;
     }
@@ -121,6 +134,7 @@
     height: 6rem;
     margin-left: 1.5rem;
     padding-left: 1rem;
+
     @include utility.tab {
       border: solid .01rem variables.$formPink;
       border-radius: .1rem;
@@ -130,6 +144,7 @@
       margin-left: .15rem;
       padding-left: .1rem;
     }
+
     @include utility.sp {
       border: solid .01rem variables.$formPink;
       border-radius: .05rem;
@@ -146,7 +161,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:none;
+    border: none;
     background-color: variables.$buttonPink;
     color: variables.$white;
     font-weight: variables.$bold;
@@ -155,7 +170,7 @@
     height: 6rem;
     border-radius: 5rem;
     margin-left: 1.5rem;
-    
+
 
     &__icon {
       margin-right: 0.4rem;
@@ -164,6 +179,7 @@
         margin-right: .04rem;
         max-width: .3rem;
       }
+
       @include utility.sp {
         margin-right: .14rem;
         max-width: .18rem;
@@ -171,10 +187,11 @@
     }
 
     &:hover {
+      cursor: pointer;
       opacity: 0.8;
       transition: 0.3s;
-      cursor: pointer;
     }
+
     @include utility.tab {
       font-size: .18rem;
       width: 1.4rem;
@@ -182,23 +199,23 @@
       border-radius: .5rem;
       margin-left: .15rem;
     }
+
     @include utility.sp {
       font-size: .18rem;
       width: 1.6rem;
       height: .4rem;
       border-radius: .5rem;
-      margin-top: .19rem;
-      margin-left: auto;
-      margin-right: auto;
+      margin: .19rem auto 0 auto;
     }
   }
+
   @include utility.tab {
     border-radius: .1rem;
     width: 11.8rem;
   }
+
   @include utility.sp {
     border-radius: .1rem;
     width: 3.7rem;
   }
 }
-
