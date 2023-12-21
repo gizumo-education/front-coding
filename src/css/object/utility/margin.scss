@@ -33,13 +33,13 @@ padding-bottom: 20rem;
     padding-bottom: 4rem;
     margin-top: 15rem;
     @include utility.tab {
-      padding-top: .15rem;
-      padding-bottom: .2rem;
+      padding-top: .4rem;
+      padding-bottom: .4rem;
       margin-top: 1.5rem;
     }
       @include utility.sp {
-      padding-top: .4rem;
-      padding-bottom: .4rem;
+      padding-top: .15rem;
+      padding-bottom: .2rem;
       margin-top: .6rem;
     }
   }
