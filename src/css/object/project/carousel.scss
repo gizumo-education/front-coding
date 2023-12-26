@@ -8,6 +8,7 @@
   padding-top: 6.4rem;
   margin-top: 6rem;
 
+
   &__btn {
     width: 36rem;
     margin-top: 6rem;
@@ -43,150 +44,251 @@
     align-items: center;
     justify-content: center;
     margin-top: 2.5rem;
+    position: relative;
 
-    @include utility.tab {
-      margin-top: .25rem;
-    }
-
-    @include utility.sp {
-      flex-direction: column;
-      margin-top: .35rem;
-    }
-  }
-
-  &__img {
-    border-radius: 1rem;
-
-    @include utility.tab {
-      border-radius: .1rem;
-    }
-
-    @include utility.sp {
-      border-radius: .1rem;
-      width: 3.7rem;
-    }
-  }
-
-  &__contents {
-    width: 28rem;
-    margin-left: 2rem;
-
-    &__text {
-      text-align: left;
-      font-size: 1.6rem;
-      line-height: 2.2rem;
-      margin-top: 0.8rem;
-
-      @include utility.tab {
-        font-size: .16rem;
-        line-height: .22rem;
-        margin-top: .08rem;
-      }
-
-      @include utility.sp {
-        font-weight: variables.$bold;
-        font-size: .16rem;
-        line-height: .22rem;
-        margin-top: .1rem;
-      }
-    }
-
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 1.4rem;
-      margin-top: 0.6rem;
-
-      @include utility.tab {
-        font-size: .14rem;
-        margin-top: .06rem;
-      }
-
-      @include utility.sp {
-        font-size: .14rem;
-        margin-top: .06rem;
-      }
-    }
-
-    &__title {
-      text-align: center;
-      background-color: variables.$carouselPink;
-      font-size: 1.4rem;
-      line-height: 2rem;
+    & .slick-arrow {
       width: 6rem;
-      margin-top: 0.5rem;
-
-      &:first-child {
-        margin-top: 0;
-      }
+      height: 6rem;
+      border-radius: 50%;
+      background-color: utility.$white;
+      opacity: 0.7;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      font-size: 0;
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      transform: translateY(-50%);
 
       @include utility.tab {
-        font-size: .14rem;
-        line-height: .2rem;
         width: .6rem;
-        margin-top: .05rem;
+        height: .6rem;
       }
 
       @include utility.sp {
-        font-size: .14rem;
-        line-height: .2rem;
-        width: .6rem;
-        margin-top: .05rem;
+        width: .42rem;
+        height: .42rem;
       }
     }
 
-    &__item {
-      text-align: left;
-      font-size: 1.4rem;
-      line-height: 2rem;
-      height: 1.7rem;
-      margin-left: 1rem;
+    & .slick-arrow::before {
+      content: '';
+      display: block;
+      width: 2.2rem;
+      height: 2.2rem;
+      border: .1rem solid utility.$black;
+      border-width: .1rem .1rem 0 0;
+      position: absolute;
+      top: 2rem;
+      left: 1.5rem;
+      transform: rotate(45deg);
 
       @include utility.tab {
-        font-size: .14rem;
-        line-height: .2rem;
-        height: .17rem;
-        margin-left: .1rem;
+        width: .22rem;
+        height: .22rem;
+        border: .01rem solid utility.$black;
+        border-width: .01rem .01rem 0 0;
+        top: .2rem;
+        left: .15rem;
       }
 
       @include utility.sp {
-        font-size: .14rem;
-        line-height: .2rem;
-        height: .17rem;
-        margin-left: .1rem;
+        width: .10rem;
+        height: .10rem;
+        border: .01rem solid utility.$black;
+        border-width: .01rem .01rem 0 0;
+        top: .17rem;
+        left: .14rem;
       }
     }
 
-    &:first-child {
-      margin-left: 0;
+    & .slick-next {
+      right: .65rem;
+
+      @include utility.tab {
+        right: 0.04rem;
+      }
+
+      @include utility.sp {
+        right: 0.001rem;
+      }
     }
 
-    @include utility.tab {
-      width: 2.8rem;
-      margin-left: .2rem;
-    }
+    & .slick-prev {
+      left: 6.5px;
 
-    @include utility.sp {
-      width: 3.7rem;
-      margin-left: 0;
-      margin-top: .25rem;
+      @include utility.tab {
+        left: 0.08rem;
+      }
 
-      &:first-child {
-        margin-top: 0;
+      @include utility.sp {
+        left: 0.001rem;
+      }
+
+    &::before {
+      border-width: 0 0 .1rem .1rem;
+      left: 2.2rem;
+
+      @include utility.tab {
+        border-width: 0 0 .01rem .01rem;
+        left: .22rem;
+      }
+
+      @include utility.sp {
+        border-width: 0 0 .01rem .01rem;
+        left: .17rem;
       }
     }
   }
 
   @include utility.tab {
-    padding-bottom: .67rem;
-    padding-top: .64rem;
-    margin-top: .6rem;
+    margin-top: .25rem;
   }
 
   @include utility.sp {
-    padding-bottom: .6rem;
-    padding-top: .3rem;
-    margin-top: .25rem;
+    margin-top: .35rem;
   }
+}
+
+&__img {
+  border-radius: 1rem;
+  width: 28rem;
+
+  @include utility.tab {
+    border-radius: .1rem;
+    max-width: 2.8rem;
+  }
+
+  @include utility.sp {
+    border-radius: .1rem;
+    width: 3.7rem;
+  }
+}
+
+&__contents {
+  width: 28rem;
+  margin-left: 2rem;
+
+  &__text {
+    text-align: left;
+    width: 27.8rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-top: 0.8rem;
+
+    @include utility.tab {
+      width: 2.78rem;
+      font-size: .16rem;
+      line-height: .22rem;
+      margin-top: .08rem;
+    }
+
+    @include utility.sp {
+      font-weight: variables.$bold;
+      width: 3.58rem;
+      font-size: .16rem;
+      line-height: .22rem;
+      margin-top: .1rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    margin-top: 0.6rem;
+
+    @include utility.tab {
+      font-size: .14rem;
+      margin-top: .06rem;
+    }
+
+    @include utility.sp {
+      font-size: .14rem;
+      margin-top: .06rem;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    background-color: variables.$carouselPink;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 6rem;
+    margin-top: 0.5rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    @include utility.tab {
+      font-size: .14rem;
+      line-height: .2rem;
+      width: .6rem;
+      margin-top: .05rem;
+    }
+
+    @include utility.sp {
+      font-size: .14rem;
+      line-height: .2rem;
+      width: .6rem;
+      margin-top: .05rem;
+    }
+  }
+
+  &__item {
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    height: 1.7rem;
+    margin-left: 1rem;
+
+    @include utility.tab {
+      font-size: .14rem;
+      line-height: .2rem;
+      height: .17rem;
+      margin-left: .1rem;
+    }
+
+    @include utility.sp {
+      font-size: .14rem;
+      line-height: .2rem;
+      height: .17rem;
+      margin-left: .1rem;
+    }
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @include utility.tab {
+    width: 2.8rem;
+    margin-left: .2rem;
+  }
+
+  @include utility.sp {
+    width: 3.7rem;
+    margin-left: 0;
+    margin-top: .25rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+@include utility.tab {
+  padding-bottom: .67rem;
+  padding-top: .64rem;
+  margin-top: .6rem;
+}
+
+@include utility.sp {
+  padding-bottom: .6rem;
+  padding-top: .3rem;
+  margin-top: .25rem;
+}
 
 }
