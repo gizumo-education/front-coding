@@ -14,7 +14,7 @@ $('#c-slider').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 767,
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

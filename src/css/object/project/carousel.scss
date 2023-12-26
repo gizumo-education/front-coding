@@ -43,23 +43,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2.5rem;
     position: relative;
+    margin-top: 2.5rem;
+
 
     & .slick-arrow {
-      width: 6rem;
-      height: 6rem;
-      border-radius: 50%;
-      background-color: utility.$white;
-      opacity: 0.7;
       cursor: pointer;
       border: none;
       outline: none;
-      font-size: 0;
       position: absolute;
+      background-color: utility.$white;
+      transform: translateY(-50%);
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      opacity: 0.7;
+      font-size: 0;
       top: 50%;
       z-index: 1;
-      transform: translateY(-50%);
 
       @include utility.tab {
         width: .6rem;
@@ -75,29 +76,29 @@
     & .slick-arrow::before {
       content: '';
       display: block;
-      width: 2.2rem;
-      height: 2.2rem;
+      position: absolute;
       border: .1rem solid utility.$black;
       border-width: .1rem .1rem 0 0;
-      position: absolute;
+      transform: rotate(45deg);
+      width: 2.2rem;
+      height: 2.2rem;
       top: 2rem;
       left: 1.5rem;
-      transform: rotate(45deg);
 
       @include utility.tab {
-        width: .22rem;
-        height: .22rem;
         border: .01rem solid utility.$black;
         border-width: .01rem .01rem 0 0;
+        width: .22rem;
+        height: .22rem;
         top: .2rem;
         left: .15rem;
       }
 
       @include utility.sp {
-        width: .10rem;
-        height: .10rem;
         border: .01rem solid utility.$black;
         border-width: .01rem .01rem 0 0;
+        width: .10rem;
+        height: .10rem;
         top: .17rem;
         left: .14rem;
       }
@@ -126,169 +127,169 @@
         left: 0.001rem;
       }
 
-    &::before {
-      border-width: 0 0 .1rem .1rem;
-      left: 2.2rem;
+      &::before {
+        border-width: 0 0 .1rem .1rem;
+        left: 2.2rem;
+
+        @include utility.tab {
+          border-width: 0 0 .01rem .01rem;
+          left: .22rem;
+        }
+
+        @include utility.sp {
+          border-width: 0 0 .01rem .01rem;
+          left: .17rem;
+        }
+      }
+    }
+
+    @include utility.tab {
+      margin-top: .25rem;
+    }
+
+    @include utility.sp {
+      margin-top: .35rem;
+    }
+  }
+
+  &__img {
+    border-radius: 1rem;
+    width: 28rem;
+
+    @include utility.tab {
+      border-radius: .1rem;
+      max-width: 2.8rem;
+    }
+
+    @include utility.sp {
+      border-radius: .1rem;
+      width: 3.7rem;
+    }
+  }
+
+  &__contents {
+    width: 28rem;
+    margin-left: 2rem;
+
+    &__text {
+      text-align: left;
+      width: 27.8rem;
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      margin-top: 0.8rem;
 
       @include utility.tab {
-        border-width: 0 0 .01rem .01rem;
-        left: .22rem;
+        width: 2.78rem;
+        font-size: .16rem;
+        line-height: .22rem;
+        margin-top: .08rem;
       }
 
       @include utility.sp {
-        border-width: 0 0 .01rem .01rem;
-        left: .17rem;
+        font-weight: variables.$bold;
+        width: 3.58rem;
+        font-size: .16rem;
+        line-height: .22rem;
+        margin-top: .1rem;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.4rem;
+      margin-top: 0.6rem;
+
+      @include utility.tab {
+        font-size: .14rem;
+        margin-top: .06rem;
+      }
+
+      @include utility.sp {
+        font-size: .14rem;
+        margin-top: .06rem;
+      }
+    }
+
+    &__title {
+      text-align: center;
+      background-color: variables.$carouselPink;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      width: 6rem;
+      margin-top: 0.5rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      @include utility.tab {
+        font-size: .14rem;
+        line-height: .2rem;
+        width: .6rem;
+        margin-top: .05rem;
+      }
+
+      @include utility.sp {
+        font-size: .14rem;
+        line-height: .2rem;
+        width: .6rem;
+        margin-top: .05rem;
+      }
+    }
+
+    &__item {
+      text-align: left;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      height: 1.7rem;
+      margin-left: 1rem;
+
+      @include utility.tab {
+        font-size: .14rem;
+        line-height: .2rem;
+        height: .17rem;
+        margin-left: .1rem;
+      }
+
+      @include utility.sp {
+        font-size: .14rem;
+        line-height: .2rem;
+        height: .17rem;
+        margin-left: .1rem;
+      }
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    @include utility.tab {
+      width: 2.8rem;
+      margin-left: .2rem;
+    }
+
+    @include utility.sp {
+      width: 3.7rem;
+      margin-left: 0;
+      margin-top: .25rem;
+
+      &:first-child {
+        margin-top: 0;
       }
     }
   }
 
   @include utility.tab {
+    padding-bottom: .67rem;
+    padding-top: .64rem;
+    margin-top: .6rem;
+  }
+
+  @include utility.sp {
+    padding-bottom: .6rem;
+    padding-top: .3rem;
     margin-top: .25rem;
   }
-
-  @include utility.sp {
-    margin-top: .35rem;
-  }
-}
-
-&__img {
-  border-radius: 1rem;
-  width: 28rem;
-
-  @include utility.tab {
-    border-radius: .1rem;
-    max-width: 2.8rem;
-  }
-
-  @include utility.sp {
-    border-radius: .1rem;
-    width: 3.7rem;
-  }
-}
-
-&__contents {
-  width: 28rem;
-  margin-left: 2rem;
-
-  &__text {
-    text-align: left;
-    width: 27.8rem;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-    margin-top: 0.8rem;
-
-    @include utility.tab {
-      width: 2.78rem;
-      font-size: .16rem;
-      line-height: .22rem;
-      margin-top: .08rem;
-    }
-
-    @include utility.sp {
-      font-weight: variables.$bold;
-      width: 3.58rem;
-      font-size: .16rem;
-      line-height: .22rem;
-      margin-top: .1rem;
-    }
-  }
-
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.4rem;
-    margin-top: 0.6rem;
-
-    @include utility.tab {
-      font-size: .14rem;
-      margin-top: .06rem;
-    }
-
-    @include utility.sp {
-      font-size: .14rem;
-      margin-top: .06rem;
-    }
-  }
-
-  &__title {
-    text-align: center;
-    background-color: variables.$carouselPink;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    width: 6rem;
-    margin-top: 0.5rem;
-
-    &:first-child {
-      margin-top: 0;
-    }
-
-    @include utility.tab {
-      font-size: .14rem;
-      line-height: .2rem;
-      width: .6rem;
-      margin-top: .05rem;
-    }
-
-    @include utility.sp {
-      font-size: .14rem;
-      line-height: .2rem;
-      width: .6rem;
-      margin-top: .05rem;
-    }
-  }
-
-  &__item {
-    text-align: left;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    height: 1.7rem;
-    margin-left: 1rem;
-
-    @include utility.tab {
-      font-size: .14rem;
-      line-height: .2rem;
-      height: .17rem;
-      margin-left: .1rem;
-    }
-
-    @include utility.sp {
-      font-size: .14rem;
-      line-height: .2rem;
-      height: .17rem;
-      margin-left: .1rem;
-    }
-  }
-
-  &:first-child {
-    margin-left: 0;
-  }
-
-  @include utility.tab {
-    width: 2.8rem;
-    margin-left: .2rem;
-  }
-
-  @include utility.sp {
-    width: 3.7rem;
-    margin-left: 0;
-    margin-top: .25rem;
-
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-}
-
-@include utility.tab {
-  padding-bottom: .67rem;
-  padding-top: .64rem;
-  margin-top: .6rem;
-}
-
-@include utility.sp {
-  padding-bottom: .6rem;
-  padding-top: .3rem;
-  margin-top: .25rem;
-}
 
 }
