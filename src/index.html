@@ -33,10 +33,12 @@
     </nav>
   </header>
 
-
   <div class="p-keyvisual">
     <div class="p-keyvisual__area">
-      <img class="p-keyvisual__img" src="../src/img/picture/keyvisual_img.png" alt="">
+      <div class="p-keyvisual__img__area">
+      <img class="p-keyvisual__img p-keyvisual__img__pc" src="../src/img/picture/keyvisual_img_pc.png" alt="">
+      <img class="p-keyvisual__img p-keyvisual__img__sp" src="../src/img/picture/keyvisual_img_sp.jpg" alt="">
+    </div>
       <img class="p-keyvisual__icon" src="../src/img/icon/keyvisual_icon.png" alt="2021年 使って良かった転職サイトナンバーワン">
       <h1><img class="p-keyvisual__title" src="../src/img/icon/keyvisual_text.png" alt="医療事務求人を探すならギズジョブ"></h1>
       <p class="p-keyvisual__news">現在の求人掲載数：
@@ -51,6 +53,7 @@
         <h2 class="c-form__title">お仕事検索</h2>
         <p class="c-form__text">働きたい職種・地域・希望給与を入れて検索！</p>
         <form class="c-form__items">
+          <div class="c-form__select__common">
           <div class="c-form__select">
             <select class="c-form__select__item" size="1">
               <option value="" selected>医療事務</option>
@@ -86,6 +89,7 @@
               <option value="">月給23万〜</option>
             </select>
           </div>
+        </div>
 
           <input class="c-form__input" type="text" placeholder="キーワード・企業名・スキルなど">
 
@@ -178,6 +182,7 @@
             </a>
           </li>
         </ul>
+
         <a class="c-button p-carousel__btn" href="#">新着求人一覧をもっと見る</a>
       </div>
     </section>
@@ -196,30 +201,25 @@
       <div class="p-service__items">
         <div class="p-service__item">
           <h2 class="p-service__item__title">WEB上で応募完結</h2>
-          <p class="p-service__item__text">エントリーシートの記入を済ませれば、あとは気になる企業に応募して<br>
-            待つだけで面接アポまで完結！</p>
+          <p class="p-service__item__text">エントリーシートの記入を済ませれば、あとは気になる企業に応募して待つだけで面接アポまで完結！</p>
         </div>
         <div class="p-service__item">
           <h2 class="p-service__item__title">W安心・安全</h2>
-          <p class="p-service__item__text">掲載案件は基本的に当社グループ企業となるため、<br>
-            皆さまにより詳細にクリーンな職場情報をお届けいたします。</p>
+          <p class="p-service__item__text">掲載案件は基本的に当社グループ企業となるため、皆さまにより詳細にクリーンな職場情報をお届けいたします。</p>
         </div>
         <div class="p-service__item">
           <h2 class="p-service__item__title">わかりやすい</h2>
-          <p class="p-service__item__text">当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br>といったご自身にピッタリマッチした求人を見つけることができる！</p>
+          <p class="p-service__item__text">当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索といったご自身にピッタリマッチした求人を見つけることができる！</p>
         </div>
         <div class="p-service__item">
           <h2 class="p-service__item__title">完全無料</h2>
-          <p class="p-service__item__text">当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br>
-            運営されています。ですので求職者の方からは応募前はもちろん、<br>
-            内定後も費用は一切いただきません。</p>
+          <p class="p-service__item__text">当サイトは求人元の企業やグループ会社からのスポンサー費用によって運営されています。ですので求職者の方からは応募前はもちろん内定後も費用は一切いただきません。</p>
         </div>
       </div>
     </section>
 
     <section class="p-process">
       <div class="l-inner">
-
         <h2 class="u-title">転職までの流れ</h2>
         <div class="p-process__items">
 
@@ -227,27 +227,27 @@
             <p class="p-process__item__number">STEP<br>1</p>
             <img class="p-process__item__icon u-process-step1 u-process-mt40"
               src="../src/img/icon/process_step1_img.png" alt="">
-            <h2 class="p-process__item__subtitle u-process-mt20">エントリーシートの<br>作成</h2>
+            <h2 class="p-process__item__subtitle u-process-step1-mt20">エントリーシートの作成</h2>
             <p class="p-process__item__text u-process-mt18">ここにはテキストが入ります。ここに
               はテキストが入ります。ここにはテキ
               ストが入ります。こ</p>
           </div>
-          <img src="../src/img/icon/triangle.png" alt="">
+          <img class="p-process__item__triangle" src="../src/img/icon/triangle.png" alt="">
 
           <div class="p-process__item">
             <p class="p-process__item__number">STEP<br>2</p>
-            <img class="p-process__item__icon u-process-step2 u-process-mt40"
+            <img class="p-process__item__icon u-process-step2 u-process-mt40 "
               src="../src/img/icon/process_step2_img.png" alt="">
-            <h2 class="p-process__item__subtitle u-process-mt30">気になる企業の<br>ピックアップ</h2>
+            <h2 class="p-process__item__subtitle u-process-mt30">気になる企業のピックアップ</h2>
             <p class="p-process__item__text u-process-mt18">ここにはテキストが入ります。ここに
               はテキストが入ります。ここにはテキ
               ストが入ります。ここにはテキストが</p>
           </div>
 
-          <img src="../src/img/icon/triangle.png" alt="">
+          <img class="p-process__item__triangle" src="../src/img/icon/triangle.png" alt="">
           <div class="p-process__item">
             <p class="p-process__item__number">STEP<br>3</p>
-            <img class="p-process__item__icon u-process-step3 u-process-mt40"
+            <img class="p-process__item__icon u-process-step3 u-process-mt40 "
               src="../src/img/icon/process_step3_img.png" alt="">
             <h2 class="p-process__item__subtitle u-process-mt33">複数企業に応募</h2>
             <p class="p-process__item__text u-process-mt30">ここにはテキストが入ります。ここに
@@ -255,10 +255,10 @@
               ストが入ります。ここにはテキストが</p>
           </div>
 
-          <img src="../src/img/icon/triangle.png" alt="">
+          <img class="p-process__item__triangle" src="../src/img/icon/triangle.png" alt="">
           <div class="p-process__item">
             <p class="p-process__item__number">STEP<br>4</p>
-            <img class="p-process__item__icon u-process-step4 u-process-mt40"
+            <img class="p-process__item__icon u-process-step4 u-process-mt40 "
               src="../src/img/icon/process_step4_img.png" alt="">
             <h2 class="p-process__item__subtitle u-process-mt28">内定・転職！</h2>
             <p class="p-process__item__text u-process-mt28">ここにはテキストが入ります。ここに
@@ -277,7 +277,8 @@
 
           <div class="p-news__item">
             <a href="#">
-              <img src="../src/img/picture/news_img02.jpg" alt="マニュアルimg">
+              <img class="p-news__item__img__pc" src="../src/img/picture/news_img01_pc.jpg" alt="マニュアルimg">
+              <img class="p-news__item__img__sp" src="../src/img/picture/news_img01_sp.jpg" alt="マニュアルimg">
               <div class="p-news__items__text">
                 <h2 class="p-news__item__title">転職マニュアル</h2>
                 <p class="p-news__item__about">転職活動の基礎知識、面接対策など<br>
@@ -288,7 +289,8 @@
 
           <div class="p-news__item">
             <a href="#">
-              <img src="../src/img/picture/news_img02.jpg" alt="マニュアルimg">
+              <img class="p-news__item__img__pc" src="../src/img/picture/news_img02_pc.jpg" alt="マニュアルimg">
+              <img class="p-news__item__img__sp" src="../src/img/picture/news_img02_sp.jpg" alt="マニュアルimg">
               <div class="p-news__items__text">
                 <h2 class="p-news__item__title">医療事務業界の豆知識</h2>
                 <p class="p-news__item__about">スキルアップ・労働環境、給与事情など<br>
@@ -299,7 +301,8 @@
 
           <div class="p-news__item">
             <a href="#">
-              <img src="../src/img/picture/news_img01.jpg" alt="マニュアルimg">
+              <img class="p-news__item__img__pc" src="../src/img/picture/news_img01_pc.jpg" alt="マニュアルimg">
+              <img class="p-news__item__img__sp" src="../src/img/picture/news_img01_sp.jpg" alt="マニュアルimg">
               <div class="p-news__items__text">
                 <h2 class="p-news__item__title">転職マニュアル</h2>
                 <p class="p-news__item__about">転職活動の基礎知識、面接対策など<br>
@@ -307,62 +310,63 @@
               </div>
             </a>
           </div>
-
         </div>
         <a class="c-button p-news__btn" href="#">医療事務コラムをもっと見る</a>
-      </div>
+        </div>
     </section>
 
     <section class="c-form u-form-mb200">
-      <div class=".l-inner">
-        <h2 class="c-form__title">お仕事検索</h2>
-        <p class="c-form__text">働きたい職種・地域・希望給与を入れて検索！</p>
-        <form class="c-form__items">
-          <div class="c-form__select">
-            <select class="c-form__select__item" size="1">
-              <option value="" selected>医療事務</option>
-              <option value="">調剤事務</option>
-              <option value="">診療情報管理士</option>
-              <option value="">歯科助手</option>
-              <option value="">歯科事務</option>
-              <option value="">看護補助・看護助手</option>
-              <option value="">病院内SE</option>
-            </select>
+        <div class="l-inner">
+          <h2 class="c-form__title">お仕事検索</h2>
+          <p class="c-form__text">働きたい職種・地域・希望給与を入れて検索！</p>
+          <form class="c-form__items">
+            <div class="c-form__select__common">
+            <div class="c-form__select">
+              <select class="c-form__select__item" size="1">
+                <option value="" selected>医療事務</option>
+                <option value="">調剤事務</option>
+                <option value="">診療情報管理士</option>
+                <option value="">歯科助手</option>
+                <option value="">歯科事務</option>
+                <option value="">看護補助・看護助手</option>
+                <option value="">病院内SE</option>
+              </select>
+            </div>
+  
+            <div class="c-form__select">
+              <select class="c-form__select__item" size="1">
+                <option value="">茨城県</option>
+                <option value="">神奈川県</option>
+                <option value="">群馬県</option>
+                <option value="">埼玉県</option>
+                <option value="">千葉県</option>
+                <option value="" selected>東京都</option>
+                <option value="">栃木県</option>
+              </select>
+            </div>
+  
+            <div class="c-form__select">
+              <select class="c-form__select__item" size="1">
+                <option value="">月給17万〜</option>
+                <option value="">月給18万〜</option>
+                <option value="">月給19万〜</option>
+                <option value="" selected>月給20万〜</option>
+                <option value="">月給21万〜</option>
+                <option value="">月給22万〜</option>
+                <option value="">月給23万〜</option>
+              </select>
+            </div>
           </div>
-
-          <div class="c-form__select">
-            <select class="c-form__select__item" size="1">
-              <option value="">茨城県</option>
-              <option value="">神奈川県</option>
-              <option value="">群馬県</option>
-              <option value="">埼玉県</option>
-              <option value="">千葉県</option>
-              <option value="" selected>東京都</option>
-              <option value="">栃木県</option>
-            </select>
-          </div>
-
-          <div class="c-form__select">
-            <select class="c-form__select__item" size="1">
-              <option value="">月給17万〜</option>
-              <option value="">月給18万〜</option>
-              <option value="">月給19万〜</option>
-              <option value="" selected>月給20万〜</option>
-              <option value="">月給21万〜</option>
-              <option value="">月給22万〜</option>
-              <option value="">月給23万〜</option>
-            </select>
-          </div>
-
-          <input class="c-form__input" type="text" placeholder="キーワード・企業名・スキルなど">
-
-          <button class="c-form__btn" type="submit">
-            <img class="c-form__btn__icon" src="../src/img/icon/select_icon.png" alt="">
-            検索する
-          </button>
-        </form>
-      </div>
-    </section>
+  
+            <input class="c-form__input" type="text" placeholder="キーワード・企業名・スキルなど">
+  
+            <button class="c-form__btn" type="submit">
+              <img class="c-form__btn__icon" src="../src/img/icon/select_icon.png" alt="">
+              検索する
+            </button>
+          </form>
+        </div>
+      </section>
   </main>
 
 

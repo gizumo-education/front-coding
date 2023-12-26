@@ -1,4 +1,5 @@
 @use '../../foundation/variables';
+@use '../../object/utility/utility.scss';
 
 .p-service {
   text-align: center;
@@ -10,6 +11,14 @@
     justify-content: center;
     align-items: center;
     margin-top: 5.3rem;
+
+    @include utility.tab {
+      margin-top: .53rem;
+    }
+
+    @include utility.sp {
+      margin-top: .38rem;
+    }
   }
 
   &__item {
@@ -18,28 +27,86 @@
     margin-left: 4rem;
     width: 57rem;
     height: 18rem;
+    padding: 0 6rem;
 
     &__title {
       color: variables.$buttonPink;
       font-weight: variables.$bold;
       font-size: 2.4rem;
       margin-top: 4rem;
+
+      @include utility.tab {
+        font-size: .24rem;
+        margin-top: .4rem;
+      }
+
+      @include utility.sp {
+        font-size: .2rem;
+        margin-top: .3rem;
+      }
     }
 
     &__text {
+      overflow-wrap: normal;
       font-size: 1.4rem;
       line-height: 2rem;
       margin-top: 3.6rem;
+
+      @include utility.tab {
+        font-size: .14rem;
+        line-height: .2rem;
+        margin-top: .36rem;
+      }
+
+      @include utility.sp {
+        font-size: .12rem;
+        line-height: .17rem;
+        margin-top: .3rem;
+      }
     }
 
 
     &:nth-child(3n),
     &:nth-child(4n) {
       margin-top: 4rem;
+
+      @include utility.tab {
+        margin-top: .4rem;
+      }
+
+      @include utility.sp {
+        margin-top: .21rem;
+      }
     }
+
     &:first-child,
     &:nth-child(3n) {
       margin-left: 0;
     }
+
+    @include utility.tab {
+      border-radius: .1rem;
+      margin-left: .4rem;
+      padding: 0 .6rem;
+      width: 5.7rem;
+      height: 1.8rem;
+    }
+
+    @include utility.sp {
+      border-radius: .1rem;
+      width: 3.7rem;
+      height: 1.44rem;
+      margin-left: 0;
+      margin-top: .21rem;
+      padding: 0 .17rem;
+    }
+  }
+
+  @include utility.tab {
+    margin-top: 1.06rem;
+  }
+
+  @include utility.sp {
+    margin-top: .55rem;
   }
 }

@@ -1,14 +1,24 @@
 @use '../../foundation/variables';
+@use '../../object/utility/utility.scss';
 
 .p-process {
   text-align: center;
-  margin-top: 10.6rem;
+  margin-top: 10.5rem;
 
   &__items {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5.3rem;
+    margin-top: 5rem;
+
+    @include utility.tab {
+      margin-top: .5rem;
+    }
+
+    @include utility.sp {
+      flex-direction: column;
+      margin-top: .34rem;
+    }
   }
 
   &__item {
@@ -16,8 +26,8 @@
     border: solid 0.2rem variables.$buttonPink;
     border-radius: 1rem;
     width: 28rem;
-    padding: 2rem 2.1rem 4.2rem 2.2rem;
-    
+    padding: 2rem 2rem 4.2rem 2rem;
+
     &__number {
       position: absolute;
       display: flex;
@@ -27,12 +37,31 @@
       font-weight: variables.$bold;
       color: variables.$white;
       background-color: variables.$buttonPink;
-      font-size: 16px;
+      font-size: 1.6rem;
       border-radius: 5rem;
       width: 6rem;
       height: 6rem;
       top: 1rem;
       left: 1rem;
+
+      @include utility.tab {
+        font-size: .16rem;
+        border-radius: .5rem;
+        width: .6rem;
+        height: .6rem;
+        top: .1rem;
+        left: .1rem;
+      }
+
+      @include utility.sp {
+        line-height: .12rem;
+        font-size: .1rem;
+        border-radius: 5rem;
+        width: .45rem;
+        height: .45rem;
+        top: .1rem;
+        left: .1rem;
+      }
     }
 
     &__icon {
@@ -43,6 +72,33 @@
       font-weight: variables.$bold;
       line-height: 3rem;
       font-size: 2.4rem;
+
+      @include utility.tab {
+        line-height: .3rem;
+        font-size: .24rem;
+      }
+
+      @include utility.sp {
+        line-height: .28rem;
+        font-size: .2rem;
+        margin-top: .2rem;
+      }
+    }
+
+    &__triangle {
+      width: 2rem;
+      height: 4rem;
+
+      @include utility.tab {
+        width: .2rem;
+        height: .4rem;
+      }
+
+      @include utility.sp {
+        width: .2rem;
+        height: .4rem;
+        transform: rotate(90deg);
+      }
     }
 
     &__text {
@@ -50,6 +106,42 @@
       line-height: 2rem;
       font-size: 1.4rem;
       width: 23.7rem;
+
+      @include utility.tab {
+        line-height: .2rem;
+        font-size: .14rem;
+        width: 2.37rem;
+      }
+
+      @include utility.sp {
+        text-align: left;
+        line-height: .2rem;
+        font-size: .14rem;
+        width: 2.4rem;
+        margin: .1rem auto 0;
+      }
     }
+
+    @include utility.tab {
+      border: solid .02rem variables.$buttonPink;
+      border-radius: .1rem;
+      width: 2.8rem;
+      padding: .2rem .2rem .42rem .2rem;
+    }
+
+    @include utility.sp {
+      border: solid .02rem variables.$buttonPink;
+      border-radius: .1rem;
+      padding: .55rem .1rem .22rem .1rem;
+      width: 2.8rem;
+    }
+  }
+
+  @include utility.tab {
+    margin-top: 1.05rem;
+  }
+
+  @include utility.sp {
+    margin-top: .6rem;
   }
 }

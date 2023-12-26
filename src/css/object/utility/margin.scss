@@ -1,5 +1,13 @@
+@use '../utility/utility.scss';
+
 .u-main-pb200 {
 padding-bottom: 20rem;
+@include utility.tab {
+  padding-bottom: 2rem;
+}
+@include utility.sp {
+  padding-bottom: 1rem;
+}
 }
 
 .u-form {
@@ -7,6 +15,16 @@ padding-bottom: 20rem;
     margin: 6rem auto 0;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    @include utility.tab {
+      margin: .6rem auto 0;
+      padding-top: .4rem;
+      padding-bottom: .4rem;
+    }
+    @include utility.sp {
+      margin: .25rem auto 0;
+      padding-top: .15rem;
+      padding-bottom: .2rem;
+    }
   }
 
   &-mb200 {
@@ -14,6 +32,16 @@ padding-bottom: 20rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
     margin-top: 15rem;
+    @include utility.tab {
+      padding-top: .4rem;
+      padding-bottom: .4rem;
+      margin-top: 1.5rem;
+    }
+      @include utility.sp {
+      padding-top: .15rem;
+      padding-bottom: .2rem;
+      margin-top: .6rem;
+    }
   }
 }
 
@@ -22,39 +50,109 @@ padding-bottom: 20rem;
 .u-process {
   &-mt18 {
     margin-top: 1.8rem;
+    @include utility.tab {
+      margin-top: .18rem;
+    }
+    @include utility.sp {
+      margin-top: .1rem;
+    }
   }
 
-  &-mt20 {
-    margin-top: 2rem;
-  }
 
   &-mt28 {
     margin-top: 2.8rem;
+    @include utility.tab {
+      margin-top: .28rem;
+    }
+    @include utility.sp {
+      margin-top: .22rem;
+    }
   }
 
   &-mt30 {
     margin-top: 3rem;
+    @include utility.tab {
+      margin-top: .3rem;
+    }
+    @include utility.sp {
+      margin-top: .22rem;
+    }
   }
 
   &-mt33 {
     margin-top: 3.3rem;
+    @include utility.tab {
+      margin-top: .33rem;
+    }
+    @include utility.sp {
+      margin-top: .22rem;
+    }
   }
 
   &-mt40 {
     margin-top: 4rem;
+    @include utility.tab {
+      margin-top: .4rem;
+    }
+    @include utility.sp {
+      margin-top: 0;
+    }
   }
 
   
   &-step1 {
     padding: 0 6.3rem 0 8.7rem;
+    @include utility.tab {
+      padding: 0 .63rem 0 .87rem;
+    }
+    @include utility.sp {
+      width: .75rem;
+      height: .76rem;
+      padding: 0;
+    }
+    &-mt20 {
+      margin-top: 2rem;
+      @include utility.tab {
+        margin-top: .2rem;
+      }
+      @include utility.sp {
+        margin-top: .22rem;
+      }
+    }
   }
+
   &-step2 {
     padding: 0 8.2rem 0 8.5rem;
+    @include utility.tab {
+      padding: 0 .82rem 0 .85rem;
+    }
+    @include utility.sp {
+      padding: 0;
+      width: .75rem;
+      height: .75rem;
+    }
   }
   &-step3 {
     padding: 0 7rem 0 7.9rem;
+    @include utility.tab {
+      padding: 0 .7rem 0 .79rem;
+    }
+    @include utility.sp {
+      padding: 0;
+      width: .75rem;
+      height: .80rem;
+    }
   }
   &-step4 {
     padding: 0 7.9rem 0 6.9rem;
+
+    @include utility.tab {
+      padding: 0 .79rem 0 .69rem;
+    }
+    @include utility.sp {
+      width: .73rem;
+      height: .75rem;
+      padding: 0;
+    }
   }
 }

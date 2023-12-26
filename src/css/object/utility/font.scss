@@ -1,6 +1,13 @@
 @use '../../foundation/_variables.scss';
+@use '../utility/utility.scss';
 
 .u-title {
   font-weight: variables.$bold;
   font-size: 2.5rem;
+  @include utility.tab {
+    font-size: .25rem;
+  }
+  @include utility.sp {
+    font-size: .25rem;
+  }
 }

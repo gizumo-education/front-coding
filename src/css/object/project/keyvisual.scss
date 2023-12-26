@@ -9,22 +9,72 @@
   position: relative;
   margin: 0 auto;
   width: 126rem;
+  @include utility.tab {
+    max-width: 12.6rem;
+  }
+  @include utility.sp {
+    max-width: 4rem;
+  }
+  }
+
+  &__img__area {
+    text-align: center;
   }
 
   &__img {
-    height: 50rem;
+    height: 500px;
+    width: 100%;
+    @include utility.tab {
+      height: 5rem;
+    }
+    @include utility.sp {
+      height: 2.7rem;
+    }
+
+    &__pc {
+      display: block;
+      @include utility.sp {
+        display: none;
+      }
+    }
+    &__sp {
+      display: none;
+      @include utility.sp {
+        display: block;
+      }
+    }
   }
 
   &__icon {
     position: absolute;
-    bottom: 27.5rem;
-    left: 65.5rem;
+    bottom: 275px;
+    left: 655px;
+    @include utility.tab {
+      bottom: 2.75rem;
+      left: 6.55rem;
+      max-width: 3.42rem;
+    }
+    @include utility.sp {
+      bottom: 1.35rem;
+      left: 2rem;
+      max-width: 1.49rem;
+    }
   }
 
   &__title {
     position: absolute;
-    bottom: 17rem;
-    left: 43.2rem;
+    bottom: 170px;
+    left: 432px;
+    @include utility.tab {
+      bottom: 1.7rem;
+      left: 4.32rem;
+      max-width: 8rem;
+    }
+    @include utility.sp {
+      bottom: 1rem;
+      left: 1.24rem;
+      max-width: 2.72rem;
+    }
   }
 
   &__news {
@@ -36,17 +86,39 @@
     align-content: space-around;
     color: variables.$keyGreen;
     background-color: variables.$white;
-    border: solid 0.2rem variables.$keyGreen;
-    font-size: 2rem;
-    border-radius: 1rem;
-    width: 39.1rem;
-    height: 6.9rem;
-    bottom: 4.7rem;
-    left: 63.4rem;
+    border: solid 2px variables.$keyGreen;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 391px;
+    height: 69px;
+    bottom: 47px;
+    left: 634px;
 
     &__span {
       font-weight: variables.$bold;
-      font-size: 4rem;
+      font-size: 40px;
+      @include utility.tab {
+        font-size: .4rem;
+      }
+      @include utility.sp {
+        font-size: .16rem;
+      }
+    }
+    @include utility.tab {
+      border: solid .02rem variables.$keyGreen;
+      font-size: .2rem;
+      border-radius: .1rem;
+      max-width: 3.91rem;
+      max-height: .69rem;
+      bottom: .47rem;
+      left: 6.34rem;
+    }
+    @include utility.sp {
+      font-size: .08rem;
+      max-width: 1.7rem;
+      max-height: .3rem;
+      bottom: .52rem;
+      left: 1.89rem;
     }
   }
 }
