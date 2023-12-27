@@ -3,42 +3,30 @@ import 'slick-carousel';
 
 
 $(function () {
-  console.log('環境構築完了');
-})
-
-
-
-// カルーセル
-$('#c-slider').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+  $('#c-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
       }
-    },
-  ]
-});
+    ]
+  });
 
-
-
-// ハンバーガーメニュー
-$(function () {
   $('.l-header__hamburger').click(function () {
     $('.l-header__hamburger, .l-header__menu').toggleClass('active');
   });
-});
 
-
-
-// スムーススクロール
-$('#page-link a[href*="#"]').click(function () {
-  var elmHash = $(this).attr('href');
-  var pos = $(elmHash).offset().top;
-  $('body,html').animate({ scrollTop: pos }, 500);
-  $('.l-header__hamburger, .l-header__menu').toggleClass('active');
-  return false;
-});
+  $('#page-link a[href*="#"]').click(function () {
+    const elmHash = $(this).attr('href');
+    const headerHeight = $('.l-header').outerHeight();
+    $('html, body').animate({
+      scrollTop: $(elmHash).offset().top - headerHeight
+    }, 500);
+    $('.l-header__hamburger, .l-header__menu').toggleClass('active');
+  });
+})
