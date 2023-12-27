@@ -12,6 +12,8 @@ $(function () {
 $('#c-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
+  prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+  nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
   responsive: [
     {
       breakpoint: 768,
@@ -39,7 +41,6 @@ $('#page-link a[href*="#"]').click(function () {
   var elmHash = $(this).attr('href');
   var pos = $(elmHash).offset().top;
   $('body,html').animate({ scrollTop: pos }, 500);
-  $('.l-header__menu').toggleClass('active');
+  $('.l-header__hamburger, .l-header__menu').toggleClass('active');
   return false;
 });
-

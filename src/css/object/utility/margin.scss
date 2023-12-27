@@ -1,5 +1,16 @@
 @use '../utility/utility.scss';
 
+.u-scroll__top {
+  @include utility.sp {
+    margin-top: .7rem;
+    padding-top: .7rem;
+    }
+}
+
+.u-scroll {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
 .u-main-pb200 {
 padding-bottom: 20rem;
 @include utility.tab {
