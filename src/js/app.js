@@ -13,13 +13,20 @@ $(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
         }
-      }
+      },
     ]
   });
 
   $('.l-header__hamburger').click(function () {
     $('.l-header__hamburger, .l-header__menu').toggleClass('active');
   });
+
+  $(".l-header__hamburger").click(function () {
+    $("body").css({ height: "100%", overflow: "hidden" });
+});
+$(".l-header__menu").click(function () {
+  $("body").css({ height: "auto", overflow: "scroll" });
+})
 
   $('#page-link a[href*="#"]').click(function () {
     const elmHash = $(this).attr('href');
@@ -29,4 +36,7 @@ $(function () {
     }, 500);
     $('.l-header__hamburger, .l-header__menu').toggleClass('active');
   });
-})
+});
+
+
+
