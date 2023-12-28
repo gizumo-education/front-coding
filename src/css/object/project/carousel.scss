@@ -8,6 +8,7 @@
   padding-top: 6.4rem;
   margin-top: 6rem;
 
+
   &__btn {
     width: 36rem;
     margin-top: 6rem;
@@ -42,23 +43,122 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     margin-top: 2.5rem;
+
+
+    & .slick-arrow {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      position: absolute;
+      background-color: utility.$white;
+      transform: translateY(-50%);
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      opacity: 0.7;
+      font-size: 0;
+      top: 50%;
+      z-index: 1;
+
+      @include utility.tab {
+        width: .6rem;
+        height: .6rem;
+      }
+
+      @include utility.sp {
+        width: .42rem;
+        height: .42rem;
+      }
+    }
+
+    & .slick-arrow::before {
+      content: '';
+      display: block;
+      position: absolute;
+      border: .1rem solid utility.$black;
+      border-width: .1rem .1rem 0 0;
+      transform: rotate(45deg);
+      width: 2.2rem;
+      height: 2.2rem;
+      top: 2rem;
+      left: 1.5rem;
+
+      @include utility.tab {
+        border: .01rem solid utility.$black;
+        border-width: .01rem .01rem 0 0;
+        width: .22rem;
+        height: .22rem;
+        top: .2rem;
+        left: .15rem;
+      }
+
+      @include utility.sp {
+        border: .01rem solid utility.$black;
+        border-width: .01rem .01rem 0 0;
+        width: .10rem;
+        height: .10rem;
+        top: .17rem;
+        left: .14rem;
+      }
+    }
+
+    & .slick-next {
+      right: .65rem;
+
+      @include utility.tab {
+        right: 0.04rem;
+      }
+
+      @include utility.sp {
+        right: 0.001rem;
+      }
+    }
+
+    & .slick-prev {
+      left: 6.5px;
+
+      @include utility.tab {
+        left: 0.08rem;
+      }
+
+      @include utility.sp {
+        left: 0.001rem;
+      }
+
+      &::before {
+        border-width: 0 0 .1rem .1rem;
+        left: 2.2rem;
+
+        @include utility.tab {
+          border-width: 0 0 .01rem .01rem;
+          left: .22rem;
+        }
+
+        @include utility.sp {
+          border-width: 0 0 .01rem .01rem;
+          left: .17rem;
+        }
+      }
+    }
 
     @include utility.tab {
       margin-top: .25rem;
     }
 
     @include utility.sp {
-      flex-direction: column;
       margin-top: .35rem;
     }
   }
 
   &__img {
     border-radius: 1rem;
+    width: 28rem;
 
     @include utility.tab {
       border-radius: .1rem;
+      max-width: 2.8rem;
     }
 
     @include utility.sp {
@@ -73,11 +173,13 @@
 
     &__text {
       text-align: left;
+      width: 27.8rem;
       font-size: 1.6rem;
       line-height: 2.2rem;
       margin-top: 0.8rem;
 
       @include utility.tab {
+        width: 2.78rem;
         font-size: .16rem;
         line-height: .22rem;
         margin-top: .08rem;
@@ -85,6 +187,7 @@
 
       @include utility.sp {
         font-weight: variables.$bold;
+        width: 3.58rem;
         font-size: .16rem;
         line-height: .22rem;
         margin-top: .1rem;
