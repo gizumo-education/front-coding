@@ -1,18 +1,97 @@
 @use '../../object/utility/utility.scss';
 
 .p-nextwork {
-  h2 {
-    background-color: ;
+  margin-top: 60px;
+  background-color: utility.$bgLightBlue;
+  padding-bottom: 67px;
+
+  &__headline {
     color: utility.$black;
     font-family: Noto Sans JP;
     font-size: 25px;
     font-style: normal;
     font-weight: utility.$regular;
     line-height: normal;
+    padding-top: 64px;
   }
 
   &__container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    &__card {
+      width: 280px;
+      flex-shrink: 0;
+
+      &__img {
+        width: 280px;
+        border-radius: 10px;
+      }
+
+      &__const {
+        margin-top: 8px;
+        color: utility.$black;
+        font-family: Noto Sans JP;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: utility.$regular;
+        line-height: 22px;
+      }
+
+      &__detail {
+        margin-top: 3px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &__category {
+          background-color: utility.$cardSkin;
+          margin-top: 4px;
+          margin-right: 10px;
+          width: 60px;
+          height: 21px;
+          text-align: center;
+          color: utility.$black;
+          font-family: Noto Sans JP;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: utility.$regular;
+          line-height: normal;
+        }
+
+        &__text {
+          margin-top: 4px;
+          width: 210px;
+          height: 21px;
+          color: utility.$black;
+          font-family: Noto Sans JP;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: utility.$regular;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  &__more {
+    margin: 60px auto 0 auto;
+    width: 360px;
+    height: 60px;
+    background-color: utility.$articlePink;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    &__link {
+      color: utility.$white;
+      font-family: Noto Sans JP;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: utility.$bold;
+      line-height: normal;
+    }
   }
 }
