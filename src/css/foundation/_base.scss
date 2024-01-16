@@ -90,13 +90,10 @@ a {
 
 select {
   border: none;
-  outline: none;
 }
 
 input {
   border: none;
-  /* アウトライン（フォーカス時のハイライト）を削除 */
-  outline: none;
 
   /* パディングとマージンをリセット */
   padding: 0;
