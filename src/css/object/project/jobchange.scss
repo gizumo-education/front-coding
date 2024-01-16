@@ -83,8 +83,9 @@
       &::after {
         display: block;
         position: absolute;
-        top: 158px;
-        left: 275px;
+        top: 50%;
+        left: 100%;
+        transform: translate(0%, -50%);
         content: "";
         width: 20px;
         height: 40px;
@@ -157,8 +158,9 @@
       &::after {
         display: block;
         position: absolute;
-        top: 158px;
-        left: 275px;
+        top: 50%;
+        left: 100%;
+        transform: translate(0%, -50%);
         content: "";
         width: 20px;
         /* 画像の幅に合わせて設定 */
@@ -235,8 +237,9 @@
       &::after {
         display: block;
         position: absolute;
-        top: 158px;
-        left: 275px;
+        top: 50%;
+        left: 100%;
+        transform: translate(0%, -50%);
         content: "";
         width: 20px;
         /* 画像の幅に合わせて設定 */
