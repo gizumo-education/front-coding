@@ -7,50 +7,171 @@
   <title>基本コーディング</title>
 </head>
 <body>
-  <header class="l-header">
-    <nav class="l-header__nav">
-      <div class="l-header__pc-items">
-        <ul class="l-header__items">
-          <li class="l-header__item"><a href="">ギズジョブ医療事務とは</a></li>
-          <li class="l-header__item"><a class="is-search" href="">こだわり検索</a></li>
-          <li class="l-header__item"><a class="is-book" href="">ギズジョブ医療事務コラム</a></li>
-        </ul>
-        <ul class="l-header__buttons">
-          <li class="l-header__button is-heart"><a href="">気になるリスト</a></li>
-          <li class="l-header__button is-clock"><a href="">閲覧履歴</a></li>
-          <li class="l-header__button is-camera"><a href="">検索履歴</a></li>
-        </ul>
-      </div>
-      <div class="l-header__sp-items">
-        <button class="l-header__hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </nav>
-  </header>
+  <div >
+    <header class="l-header l-inner">
+      <nav class="l-header__nav">
+        <div class="l-header__pc-items">
+          <ul class="l-header__items">
+            <li class="l-header__item"><a href="">ギズジョブ医療事務とは</a></li>
+            <li class="l-header__item"><a class="is-search" href="">こだわり検索</a></li>
+            <li class="l-header__item"><a class="is-book" href="">ギズジョブ医療事務コラム</a></li>
+          </ul>
+          <ul class="l-header__buttons">
+            <li class="l-header__button is-heart"><a href="">気になるリスト</a></li>
+            <li class="l-header__button is-clock"><a href="">閲覧履歴</a></li>
+            <li class="l-header__button is-camera"><a href="">検索履歴</a></li>
+          </ul>
+        </div>
+        <div class="l-header__sp-items">
+          <button class="l-header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-  <main></main>
-
-  <footer class="l-footer">
-    <div class="l-footer__area">
-      <div class="l-inner is-flex">
-        <ul class="l-footer__link-area">
-          <li class="l-footer__link"><a href="">ギズジョブ医療事務TOP</a></li>
-          <li class="l-footer__link"><a href="">利用ガイド</a></li>
-          <li class="l-footer__link"><a href="">プライバシーポリシー</a></li>
-          <li class="l-footer__link"><a href="">お問い合わせ</a></li>
-          <li class="l-footer__link"><a href="">サイトマップ</a></li>
-          <li class="l-footer__link"><a href="">よくある質問</a></li>
-        </ul>
-        <ul class="l-footer__banner-area">
-          <li class="l-footer__banner"><a href=""><img src="./img/picture/footer-banner01.jpg" alt="親子バナー"></a></li>
-          <li class="l-footer__banner"><a href=""><img src="./img/picture/footer-banner02.jpg" alt="介護士バナー"></a></li>
-        </ul>
+    <main class="main">
+      <!-- キービジュアル -->
+      <div class="keyvisual_box">
+        <div class="keyvisual_inner">
+          <img src="img/picture/keyvisual_pc.png" alt="keyvisual" class="keyvisual_photo">
+            <img src="img/icon/パス 66.png" alt="keyvisual" class="keyvisual_pass1">
+            <p class="keyvisual_font1">2021年 使って良かった転職サイト</p>
+            <p class="keyvisual_font2">no.1</p>
+            <p class="keyvisual_font3">※株式会社●●社実績調査</p>
+            <img src="img/icon/パス 67.png" alt="keyvisual" class="keyvisual_pass2">
+            <p class="keyvisual_font4">医療事務求人を探すならギズジョブ</p>
+            <img src="img/icon/" alt="">
+            <p class="keyvisual_font5">現在の求人掲載数:     件</p>
+            <p class="keyvisual_font6">2,320</p>
+        </div>
       </div>
-    </div>
-    <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
-  </footer>
-</body>
+
+<!-- お仕事検索 -->
+      <div class="form_box">
+        <div class="form_box_inner">
+          <p class="form_font1">お仕事検索</p>
+          <p class="form_font">働きたい職種・地域・希望給与を入れて検索！</p>
+          <ul class=" clearfix">
+            <li class="">
+              <a href>
+                <img src="img/icon/長方形 128.png" class="form_icon">
+                <p class="form_font3">医療事務</p>
+              </a>
+            </li>
+            <li class="">
+              <a href>
+                <img src="img/icon/長方形 128.png" class="form_icon">
+                <p class="form_font3">東京都</p>
+              </a>
+            </li>
+            <li class="">
+              <a href>
+                <img src="img/icon/長方形 128.png" class="form_icon">
+                <p class="form_font3">17万円～</p>
+              </a>
+            </li>
+            <li class="">
+              <a href>
+                <img src="img/icon/Vector.png" class="form_icon">
+                <p class="form_font3">キーワード・企業名・スキルなど</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+<!-- 新着求人 -->
+      <div class="news_box">
+        <div class="news_box_inner">
+          <p class="news_font1">新着求人</p>
+          <ul class="recruit_allphoto clearfix">
+            <li class="recruit_photo">
+              <a href>
+                <img src="img/picture/recruit01.jpg" class="recruitpic">
+                <p class="news_font2">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+                <!-- <div class="news_detail clearfix"> -->
+                  <p class="news_font3">給与</p>
+                  <p class="news_font4">月給 148,000円～</p>
+                  <p class="news_font3">所在地</p>
+                  <p class="news_font4">三重県伊勢市</p>
+                  <p class="news_font3">最寄駅</p>
+                  <p class="news_font4">伊勢市駅 徒歩15分</p>
+                <!-- </div> -->
+              </a>
+            </li>
+            <li class="recruit_photo">
+              <a href>
+                <img src="img/picture/recruit02.jpg" class="recruitpic">
+                <p class="news_font2">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              </a>
+            </li>
+            <li class="recruit_photo">
+              <a href>
+                <img src="img/picture/recruit03.jpg" class="recruitpic">
+                <p class="news_font2">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              </a>
+            </li>
+            <li class="recruit_photo">
+              <a href>
+                <img src="img/picture/recruit04.jpg" class="recruitpic">
+                <p class="news_font2">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+<!-- ギズジョブ -->
+      <div class="gizjob_box">
+        <div class="gizjob">
+          <img src="img/picture/長方形 49.png" alt="square" class="gizjob_photo">
+          <img src="img/picture/長方形 124.png" alt="filter" class="filter">
+          <p class="group_1_phont_1">ギズジョブなら理想の職場がきっと見つかる</p>
+          <p class="group_1_phont_2">ギズジョブは完全無料の求職者向け求人サービスです。</p>
+
+        </div>
+      </div>
+
+<!-- 4つの特徴 -->
+      <div class="features">
+        <p class="features_photo">ギズジョブの4つの特徴</p>
+        <div></div>
+      </div>
+
+<!-- 転職までの流れ -->
+      <div class="group_3"></div>
+
+<!-- 転職お役立ちコンテンツ -->
+      <div class="group_4"></div>
+
+<!-- お仕事検索 -->
+      <div class="form_box"></div>
+
+    </main>
+
+    <footer class="l-footer">
+      <div class="l-footer__area">
+        <div class="l-inner is-flex">
+          <ul class="l-footer__link-area">
+            <li class="l-footer__link"><a href="">ギズジョブ医療事務TOP</a></li>
+            <li class="l-footer__link"><a href="">利用ガイド</a></li>
+            <li class="l-footer__link"><a href="">プライバシーポリシー</a></li>
+            <li class="l-footer__link"><a href="">お問い合わせ</a></li>
+            <li class="l-footer__link"><a href="">サイトマップ</a></li>
+            <li class="l-footer__link"><a href="">よくある質問</a></li>
+          </ul>
+          <ul class="l-footer__banner-area">
+            <li class="l-footer__banner"><a href=""><img src="./img/picture/footer-banner01.jpg" alt="親子バナー"></a></li>
+            <li class="l-footer__banner"><a href=""><img src="./img/picture/footer-banner02.jpg" alt="介護士バナー"></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
+    </footer>
+  </body>
+  </div>
 </html>
