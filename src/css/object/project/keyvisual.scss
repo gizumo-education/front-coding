@@ -1,2 +1,59 @@
 @use '../../object/utility/utility.scss';
+
 // ページ上部のキービジュアルに関するスタイル
+.p-keyvisual {
+  background-color: utility.$bgKeyVisual;
+
+  &__container {
+    width: 1262px;
+    height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    &__no1 {
+      position: absolute;
+      width: 342px;
+      z-index: 15;
+      top: 56px;
+      left: 655px;
+    }
+
+    &__textbox {
+      position: absolute;
+      z-index: 16;
+      top: 265px;
+      left: 432px;
+      text-align: center;
+
+      &__headline {
+        color: utility.$white;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: DM Sans;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: utility.$bold;
+        line-height: normal;
+      }
+
+      &__text {
+        color: utility.$keyGreen;
+        font-family: Noto Sans JP;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: utility.$regular;
+        line-height: normal;
+        background-color: utility.$white;
+        width: 391px;
+        margin: 55px auto 0 auto;
+        border-radius: 10px;
+        border: 2px solid utility.$keyGreen;
+
+        span {
+          font-size: 40px;
+          font-weight: utility.$bold;
+        }
+      }
+    }
+  }
+}
