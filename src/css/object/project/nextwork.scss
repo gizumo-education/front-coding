@@ -77,22 +77,18 @@
   }
 
   &__more {
+    display: block;
     margin: 60px auto 0 auto;
     width: 360px;
     height: 60px;
     background-color: utility.$gizPink;
     border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__link {
-      color: utility.$white;
-      font-family: Noto Sans JP;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: utility.$bold;
-      line-height: normal;
-    }
+    text-align: center;
+    color: utility.$white;
+    font-family: Noto Sans JP;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: utility.$bold;
+    line-height: 60px;
   }
 }
