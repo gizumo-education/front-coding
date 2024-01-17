@@ -14,7 +14,6 @@
   font-style: normal;
   font-weight: utility.$regular;
   line-height: normal;
-  margin-right: 15px;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -23,9 +22,7 @@
   background-size: 20px 10px;
   background-position: right 15px center;
 
-  &:nth-child(3) {
-    margin-right: 15.5px;
-  }
+
 
 
   &__value {
