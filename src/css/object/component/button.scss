@@ -18,4 +18,8 @@
   background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: left 15px center;
+
+  &:hover {
+    opacity: .7;
+  }
 }
