@@ -92,3 +92,56 @@
     line-height: 60px;
   }
 }
+
+@include utility.sp {
+  .p-nextwork {
+    margin-top: 0.25rem;
+    padding-bottom: 0.6rem;
+    overflow: hidden;
+
+    &__headline {
+      text-align: center;
+      padding-top: 0.3rem;
+      font-size: 0.25rem;
+      font-weight: utility.$bold;
+    }
+
+    &__container {
+      width: 3.7rem;
+
+      &__card {
+        width: 3.7rem;
+        margin-right: 0.15rem;
+
+        &__img {
+          width: 3.7rem;
+        }
+
+        &__const {
+          font-size: 0.16rem;
+          font-weight: utility.$bold;
+          margin-top: 0.1em;
+        }
+
+        &__detail {
+          &__category {
+            margin-right: 0.21rem;
+            width: 0.6rem;
+            height: 0.21rem;
+            font-size: 0.14rem;
+          }
+
+          &__text {
+            width: 2.89rem;
+            font-size: 0.14rem
+          }
+        }
+      }
+    }
+
+    &__more {
+      width: 3.7rem;
+      margin-top: 0.45rem;
+    }
+  }
+}
