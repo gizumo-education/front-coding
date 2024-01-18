@@ -42,3 +42,20 @@
     }
   }
 }
+
+@include utility.sp {
+  .p-secondvisual {
+    &__textbox {
+      p {
+        font-size: 0.14rem;
+        font-weight: utility.$regular;
+
+      }
+
+      &__under {
+        margin-top: 0.02rem;
+      }
+    }
+
+  }
+}
