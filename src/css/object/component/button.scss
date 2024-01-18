@@ -25,3 +25,18 @@
     opacity: .7;
   }
 }
+
+@include utility.sp {
+  .c-button {
+    margin: 0.2rem auto 0 auto;
+    width: 1.6rem;
+    height: 0.4rem;
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    border-radius: 0.2rem;
+    background-size: 0.18rem 0.18rem;
+    background-position: left 0.13rem center;
+    text-align: center;
+    padding: 0.1rem 0.43rem 0.12rem 0.45rem;
+  }
+}

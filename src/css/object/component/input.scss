@@ -3,8 +3,8 @@
 // inputタグ（text）のスタイルを記述するファイル
 
 .c-input {
-  width: 299px;
-  height: 59px;
+  width: 300px;
+  height: 60px;
   flex-shrink: 0;
   border-radius: 10px;
   border: 1px solid utility.$gizPink;
@@ -18,5 +18,14 @@
 
   .c-input::placeholder {
     color: utility.$placeGlay;
+  }
+}
+
+@include utility.sp {
+  .c-input {
+    width: 3.2rem;
+    height: 0.3rem;
+    font-size: 0.14rem;
+    margin-top: 0.13rem;
   }
 }
