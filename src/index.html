@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>基本コーディング</title>
 </head>
+
 <body>
   <header class="l-header">
     <nav class="l-header__nav">
@@ -31,7 +33,251 @@
     </nav>
   </header>
 
-  <main></main>
+  <main>
+    <div class="p-keyvisual">
+      <div class="p-keyvisual__container">
+        <img class="p-keyvisual__container__img" src="img/icon/keyvisual.png" alt="">
+        <div class="p-keyvisual__container__contentsbox">
+          <img class="p-keyvisual__container__contentsbox__no1" src="img/icon/no1.png" alt="">
+          <img class="p-keyvisual__container__contentsbox__headline" src="img/icon/keyvisual-headline.png" alt="">
+          <p class="p-keyvisual__container__contentsbox__text">現在の求人掲載数：<span>2,320</span>件</p>
+        </div>
+      </div>
+    </div>
+
+    <article class="l-inner p-searcharticle">
+      <h2 class="p-searcharticle__headline">お仕事検索</h2>
+      <p class="p-searcharticle__text">働きたい職種・地域・希望給与を入れて検索！</p>
+      <form class="p-searcharticle__container">
+        <select name="work" class="c-selectbox">
+          <option class="c-selectbox__value" value="work1" selected>医療事務</option>
+          <option class="c-selectbox__value" value="work2">調剤事務</option>
+          <option class="c-selectbox__value" value="work3">診療情報管理士</option>
+          <option class="c-selectbox__value" value="work4">歯科助手</option>
+          <option class="c-selectbox__value" value="work5">歯科事務</option>
+          <option class="c-selectbox__value" value="work6">看護補助・看護助手</option>
+          <option class="c-selectbox__value" value="work7">病院内SE</option>
+        </select>
+        <select name="area" class="c-selectbox">
+          <option class="c-selectbox__value" value="area1">茨城県</option>
+          <option class="c-selectbox__value" value="area2">神奈川県</option>
+          <option class="c-selectbox__value" value="area3">群馬県</option>
+          <option class="c-selectbox__value" value="area4">埼玉県</option>
+          <option class="c-selectbox__value" value="area5">千葉県</option>
+          <option class="c-selectbox__value" value="area6" selected>東京都</option>
+          <option class="c-selectbox__value" value="area7">栃木県</option>
+        </select>
+        <select name="salary" class="c-selectbox">
+          <option class="c-selectbox__value" value="salary1">月給17万〜</option>
+          <option class="c-selectbox__value" value="salary2">月給18万〜</option>
+          <option class="c-selectbox__value" value="salary3">月給19万〜</option>
+          <option class="c-selectbox__value" value="salary4" selected>月給20万〜</option>
+          <option class="c-selectbox__value" value="salary5">月給21万〜</option>
+          <option class="c-selectbox__value" value="salary6">月給22万〜</option>
+          <option class="c-selectbox__value" value="salary7">月給23万〜</option>
+        </select>
+        <input class="p-searcharticle__input c-input" type="text" name="text" placeholder='キーワード・企業名・スキルなど'>
+        <button class="c-button">検索する</button>
+      </form>
+    </article>
+
+    <div class="p-nextwork">
+      <div class="l-inner">
+        <h2 class="p-nextwork__headline">新着求人</h2>
+        <div class="p-nextwork__container">
+          <a href="#" class="p-nextwork__container__card">
+            <img src="./img/picture/recrout-img1.jpg" alt="" class="p-nextwork__container__card__img">
+            <p class="p-nextwork__container__card__const">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+            <div class="p-nextwork__container__card__detail">
+              <p class="p-nextwork__container__card__detail__category">給与</p>
+              <p class="p-nextwork__container__card__detail__text">月給 148,000円～</p>
+              <p class="p-nextwork__container__card__detail__category">所在地</p>
+              <p class="p-nextwork__container__card__detail__text">三重県伊勢市</p>
+              <p class="p-nextwork__container__card__detail__category">最寄駅</p>
+              <p class="p-nextwork__container__card__detail__text">伊勢市駅 徒歩15分</p>
+            </div>
+          </a>
+          <a href="#" class="p-nextwork__container__card">
+            <img src="./img/picture/recrout-img2.jpg" alt="" class="p-nextwork__container__card__img">
+            <p class="p-nextwork__container__card__const">平日・夕方までの勤務!伊勢市の伊勢赤
+              十字病院で医療事務求人</p>
+            <div class="p-nextwork__container__card__detail">
+              <p class="p-nextwork__container__card__detail__category">給与</p>
+              <p class="p-nextwork__container__card__detail__text">月給 148,000円～</p>
+              <p class="p-nextwork__container__card__detail__category">所在地</p>
+              <p class="p-nextwork__container__card__detail__text">三重県伊勢市</p>
+              <p class="p-nextwork__container__card__detail__category">最寄駅</p>
+              <p class="p-nextwork__container__card__detail__text">伊勢市駅 徒歩15分</p>
+            </div>
+          </a>
+          <a href="#" class="p-nextwork__container__card">
+            <img src="./img/picture/recrout-img3.jpg" alt="" class="p-nextwork__container__card__img">
+            <p class="p-nextwork__container__card__const">平日・夕方までの勤務!伊勢市の伊勢赤
+              十字病院で医療事務求人</p>
+            <div class="p-nextwork__container__card__detail">
+              <p class="p-nextwork__container__card__detail__category">給与</p>
+              <p class="p-nextwork__container__card__detail__text">月給 148,000円～</p>
+              <p class="p-nextwork__container__card__detail__category">所在地</p>
+              <p class="p-nextwork__container__card__detail__text">三重県伊勢市</p>
+              <p class="p-nextwork__container__card__detail__category">最寄駅</p>
+              <p class="p-nextwork__container__card__detail__text">伊勢市駅 徒歩15分</p>
+            </div>
+          </a>
+          <a href="#" class="p-nextwork__container__card">
+            <img src="./img/picture/recrout-img4.jpg" alt="" class="p-nextwork__container__card__img">
+            <p class="p-nextwork__container__card__const">平日・夕方までの勤務!伊勢市の伊勢赤
+              十字病院で医療事務求人</p>
+            <div class="p-nextwork__container__card__detail">
+              <p class="p-nextwork__container__card__detail__category">給与</p>
+              <p class="p-nextwork__container__card__detail__text">月給 148,000円～</p>
+              <p class="p-nextwork__container__card__detail__category">所在地</p>
+              <p class="p-nextwork__container__card__detail__text">三重県伊勢市</p>
+              <p class="p-nextwork__container__card__detail__category">最寄駅</p>
+              <p class="p-nextwork__container__card__detail__text">伊勢市駅 徒歩15分</p>
+            </div>
+          </a>
+        </div>
+        <a href="#" class="p-nextwork__more">新着求人一覧をもっと見る</a>
+      </div>
+    </div>
+
+    <div class="p-secondvisual">
+      <img class="p-secondvisual__img" src="./img/picture/gizjob-banner.jpg" alt="">
+      <img class="p-secondvisual__cover" src="./img/icon/cover-secondvisual.png" alt="">
+      <div class="l-inner p-secondvisual__textbox">
+        <p>ギズジョブなら理想の職場がきっと見つかる</p>
+        <p class="l-inner p-secondvisual__textbox__under">ギズジョブは完全無料の求職者向け求人サービスです<span>。</span></p>
+      </div>
+    </div>
+
+
+    <div class="l-inner p-gizjob">
+      <h2 class="p-gizjob__headline">ギズジョブの4つの特徴</h2>
+      <div class="p-gizjob__container">
+        <div class="p-gizjob__container__card">
+          <p class="p-gizjob__container__card__top">WEB上で応募完結</p>
+          <p class="p-gizjob__container__card__text">エントリーシートの記入を済ませれば、あとは気になる企業に応募して待つだけで面接アポまで完結！</p>
+        </div>
+        <div class="p-gizjob__container__card">
+          <p class="p-gizjob__container__card__top">安心・安全</p>
+          <p class="p-gizjob__container__card__text__2">掲載案件は基本的に当社グループ企業となるため、<br>皆さまにより詳細にクリーンな職場情報をお届けいたします。</p>
+        </div>
+        <div class="p-gizjob__container__card">
+          <p class="p-gizjob__container__card__top">わかりやすい</p>
+          <p class="p-gizjob__container__card__text__3">
+            当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索といったご自身にピッタリマッチした求人を見つけることができる！
+          </p>
+        </div>
+        <div class="p-gizjob__container__card">
+          <p class="p-gizjob__container__card__top">完全無料</p>
+          <p class="p-gizjob__container__card__text">
+            当サイトは求人元の企業やグループ会社からのスポンサー費用によって運営されています。ですので求職者の方からは応募前はもちろん、<br>内定後も費用は一切いただきません。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-inner p-jobchange">
+      <h2 class="p-jobchange__headline">転職までの流れ</h2>
+      <div class="p-jobchange__container">
+        <div class="p-jobchange__container__card1">
+          <div class="p-jobchange__container__card1__step">
+            <p class="p-jobchange__container__card1__step__1">STEP<br>1</p>
+          </div>
+          <img src="./img/icon/icon-memo.png" alt="">
+          <p class="p-jobchange__container__card1__head">エントリーシートの作成</p>
+          <p class="p-jobchange__container__card1__text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ</p>
+        </div>
+        <div class="p-jobchange__container__card2">
+          <div class="p-jobchange__container__card2__step">
+            <p class="p-jobchange__container__card2__step__2">STEP<br>2</p>
+          </div>
+          <img src="./img/icon/icon-bigserch.png" alt="">
+          <p class="p-jobchange__container__card2__head">気になる企業のピックアップ</p>
+          <p class="p-jobchange__container__card2__text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
+        </div>
+        <div class="p-jobchange__container__card3">
+          <div class="p-jobchange__container__card3__step">
+            <p class="p-jobchange__container__card3__step__3">STEP<br>3</p>
+          </div>
+          <img src="./img/icon/icon-mail.png" alt="">
+          <p class="p-jobchange__container__card3__head">複数企業に応募</p>
+          <p class="p-jobchange__container__card3__text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
+        </div>
+        <div class="p-jobchange__container__card4">
+          <div class="p-jobchange__container__card4__step">
+            <p class="p-jobchange__container__card4__step__4">STEP<br>4</p>
+          </div>
+          <img src="./img/icon/icon-star.png" alt="">
+          <p class="p-jobchange__container__card4__head">内定・転職！</p>
+          <p class="p-jobchange__container__card4__text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-inner p-jobcontents">
+      <h2 class="p-jobcontents__headline">転職お役立ちコンテンツ</h2>
+      <div class="p-jobcontents__container">
+        <a href="#" class="p-jobcontents__container__card">
+          <img src="./img/picture/change-manual.jpg" alt="">
+          <div class="p-jobcontents__container__card__content">
+            <p>転職マニュアル</p>
+            <p>転職活動の基礎知識、面接対策など<br>転職のコツをお教えします</p>
+          </div>
+        </a>
+        <a href="#" class="p-jobcontents__container__card">
+          <img src="./img/picture/md-notepc.jpg" alt="">
+          <div class="p-jobcontents__container__card__content">
+            <p>医療事務業界の豆知識</p>
+            <p>スキルアップ・労働環境、給与事情など<br>知って得する業界の豆知識を公開</p>
+          </div>
+        </a>
+        <a href="#" class="p-jobcontents__container__card">
+          <img src="./img/picture/change-manual.jpg" alt="">
+          <div class="p-jobcontents__container__card__content">
+            <p>転職マニュアル</p>
+            <p>転職活動の基礎知識、面接対策など<br>転職のコツをお教えします</p>
+          </div>
+        </a>
+      </div>
+      <a href="#" class="p-jobcontents__more">医療事務コラムをもっと見る</a>
+    </div>
+
+    <article class="l-inner p-searcharticle">
+      <h2 class="p-searcharticle__headline">お仕事検索</h2>
+      <p class="p-searcharticle__text">働きたい職種・地域・希望給与を入れて検索！</p>
+      <form class="p-searcharticle__container">
+        <select name="work" class="c-selectbox">
+          <option class="c-selectbox__value" value="work1" selected>医療事務</option>
+          <option class="c-selectbox__value" value="work2">調剤事務</option>
+          <option class="c-selectbox__value" value="work3">診療情報管理士</option>
+          <option class="c-selectbox__value" value="work4">歯科助手</option>
+          <option class="c-selectbox__value" value="work5">歯科事務</option>
+          <option class="c-selectbox__value" value="work6">看護補助・看護助手</option>
+          <option class="c-selectbox__value" value="work7">病院内SE</option>
+        </select>
+        <select name="area" class="c-selectbox">
+          <option class="c-selectbox__value" value="area1">茨城県</option>
+          <option class="c-selectbox__value" value="area2">神奈川県</option>
+          <option class="c-selectbox__value" value="area3">群馬県</option>
+          <option class="c-selectbox__value" value="area4">埼玉県</option>
+          <option class="c-selectbox__value" value="area5">千葉県</option>
+          <option class="c-selectbox__value" value="area6" selected>東京都</option>
+          <option class="c-selectbox__value" value="area7">栃木県</option>
+        </select>
+        <select name="salary" class="c-selectbox">
+          <option class="c-selectbox__value" value="salary1">月給17万〜</option>
+          <option class="c-selectbox__value" value="salary2">月給18万〜</option>
+          <option class="c-selectbox__value" value="salary3">月給19万〜</option>
+          <option class="c-selectbox__value" value="salary4" selected>月給20万〜</option>
+          <option class="c-selectbox__value" value="salary5">月給21万〜</option>
+          <option class="c-selectbox__value" value="salary6">月給22万〜</option>
+          <option class="c-selectbox__value" value="salary7">月給23万〜</option>
+        </select>
+        <input class="p-searcharticle__input c-input" type="text" name="text" placeholder='キーワード・企業名・スキルなど'>
+        <button class="c-button">検索する</button>
+      </form>
+    </article>
+  </main>
 
   <footer class="l-footer">
     <div class="l-footer__area">
@@ -53,4 +299,5 @@
     <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
   </footer>
 </body>
+
 </html>

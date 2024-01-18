@@ -1,0 +1,22 @@
+@use '../../object/utility/utility.scss';
+
+// inputタグ（text）のスタイルを記述するファイル
+
+.c-input {
+  width: 299px;
+  height: 59px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid utility.$gizPink;
+  color: utility.$black;
+  font-family: Noto Sans JP;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: utility.$regular;
+  line-height: normal;
+  padding-left: 9.5px;
+
+  .c-input::placeholder {
+    color: utility.$placeGlay;
+  }
+}

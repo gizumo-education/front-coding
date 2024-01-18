@@ -1,0 +1,36 @@
+@use '../../object/utility/utility.scss';
+
+// 共通パーツであるボタンのスタイルを記述するファイル
+.c-selectbox {
+  width: 200px;
+  height: 60px;
+  padding-left: 15px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid utility.$borderPink;
+  color: utility.$black;
+  font-family: Noto Sans JP;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: utility.$regular;
+  line-height: normal;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('../img/icon/icon-select.png');
+  background-repeat: no-repeat;
+  background-size: 20px 10px;
+  background-position: right 15px center;
+
+
+
+
+  &__value {
+    color: utility.$black;
+    font-family: Noto Sans JP;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: utility.$regular;
+    line-height: normal;
+  }
+}

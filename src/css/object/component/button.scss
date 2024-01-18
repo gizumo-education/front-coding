@@ -1,2 +1,27 @@
 @use '../../object/utility/utility.scss';
+
 // 共通パーツであるボタンのスタイルを記述するファイル
+.c-button {
+  width: 140px;
+  height: 60px;
+  padding-left: 45px;
+  flex-shrink: 0;
+  color: utility.$white;
+  background-color: utility.$gizPink;
+  border-radius: 30px;
+  font-family: Noto Sans JP;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: utility.$bold;
+  line-height: 18px;
+  background-image: url('../img/icon/icon-wserch.png');
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: left 15px center;
+  transition: .3s all;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+  }
+}

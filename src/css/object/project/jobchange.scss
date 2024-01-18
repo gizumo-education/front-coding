@@ -1,0 +1,320 @@
+@use '../../object/utility/utility.scss';
+
+//転職までの流れの調整
+.p-jobchange {
+  &__headline {
+    margin-top: 105px;
+    color: utility.$black;
+    font-family: Noto Sans JP;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: utility.$bold;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &__container {
+    margin-top: 51px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    &__card1 {
+      width: 277px;
+      height: 357px;
+      border: 2px solid utility.$gizPink;
+      border-radius: 10px;
+      position: relative;
+
+      &__step {
+        display: table;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: utility.$gizPink;
+        text-align: center;
+
+        &__1 {
+          display: table-cell;
+          color: utility.$white;
+          text-align: center;
+          vertical-align: middle;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: utility.$bold;
+          line-height: normal;
+
+        }
+      }
+
+      img {
+        position: absolute;
+        top: 58px;
+        left: 96px;
+        width: 102px;
+      }
+
+      &__head {
+        margin: 178px auto 0 auto;
+        width: 216px;
+        color: utility.$black;
+        font-family: Noto Sans JP;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: utility.$bold;
+        line-height: 30px;
+
+      }
+
+      &__text {
+        width: 237px;
+        margin: 18px auto 0 auto;
+        color: utility.$black;
+        font-family: Noto Sans JP;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: utility.$regular;
+        line-height: normal;
+        text-align: left;
+      }
+
+      &::after {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(0%, -50%);
+        content: "";
+        width: 20px;
+        height: 40px;
+        background-image: url(../img/icon/icon-sr.png);
+        background-size: contain;
+      }
+    }
+
+    &__card2 {
+      width: 277px;
+      border: 2px solid utility.$gizPink;
+      border-radius: 10px;
+      position: relative;
+
+      &__step {
+        display: table;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: utility.$gizPink;
+        text-align: center;
+
+        &__2 {
+          display: table-cell;
+          color: utility.$white;
+          text-align: center;
+          vertical-align: middle;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: utility.$bold;
+          line-height: normal;
+
+        }
+      }
+
+      img {
+        position: absolute;
+        top: 68px;
+        left: 93px;
+        width: 79px;
+      }
+
+      &__head {
+        margin: 178px auto 0 auto;
+        width: 168px;
+        color: utility.$black;
+        font-family: Noto Sans JP;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: utility.$bold;
+        line-height: 30px;
+
+      }
+
+      &__text {
+        width: 237px;
+        margin: 18px auto 0 auto;
+        color: utility.$black;
+        font-family: Noto Sans JP;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: utility.$regular;
+        line-height: normal;
+        text-align: left;
+      }
+
+      &::after {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(0%, -50%);
+        content: "";
+        width: 20px;
+        /* 画像の幅に合わせて設定 */
+        height: 40px;
+        /* 画像の高さに合わせて設定 */
+        background-image: url(../img/icon/icon-sr.png);
+        background-size: contain;
+      }
+    }
+
+    &__card3 {
+      width: 277px;
+      border: 2px solid utility.$gizPink;
+      border-radius: 10px;
+      position: relative;
+
+      &__step {
+        display: table;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: utility.$gizPink;
+        text-align: center;
+
+        &__3 {
+          display: table-cell;
+          color: utility.$white;
+          text-align: center;
+          vertical-align: middle;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: utility.$bold;
+          line-height: normal;
+
+        }
+      }
+
+      img {
+        position: absolute;
+        top: 58px;
+        left: 88px;
+        width: 106px;
+        height: 100px
+      }
+
+      &__head {
+        margin: 191px auto 0 auto;
+        width: 168px;
+        ;
+        color: utility.$black;
+        font-family: Noto Sans JP;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: utility.$bold;
+        line-height: 35px;
+
+      }
+
+      &__text {
+        width: 237px;
+        margin: 30px auto 0 auto;
+        color: utility.$black;
+        font-family: Noto Sans JP;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: utility.$regular;
+        line-height: normal;
+        text-align: left;
+      }
+
+      &::after {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(0%, -50%);
+        content: "";
+        width: 20px;
+        /* 画像の幅に合わせて設定 */
+        height: 40px;
+        /* 画像の高さに合わせて設定 */
+        background-image: url(../img/icon/icon-sr.png);
+        background-size: contain;
+      }
+    }
+
+    &__card4 {
+      width: 277px;
+      border: 2px solid utility.$gizPink;
+      border-radius: 10px;
+      position: relative;
+
+      &__step {
+        display: table;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: utility.$gizPink;
+        text-align: center;
+
+        &__4 {
+          display: table-cell;
+          color: utility.$white;
+          text-align: center;
+          vertical-align: middle;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: utility.$bold;
+          line-height: normal;
+
+        }
+      }
+
+      img {
+        position: absolute;
+        top: 53px;
+        left: 78px;
+        width: 107px;
+      }
+
+      &__head {
+        margin: 191px auto 0 auto;
+        width: 144px;
+        color: utility.$black;
+        font-family: Noto Sans JP;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: utility.$bold;
+        line-height: 35px;
+
+      }
+
+      &__text {
+        width: 237px;
+        margin: 30px auto 0 auto;
+        color: utility.$black;
+        font-family: Noto Sans JP;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: utility.$regular;
+        line-height: normal;
+        text-align: left;
+      }
+    }
+  }
+}
