@@ -80,6 +80,10 @@
         font-weight: utility.$regular;
         line-height: normal;
         text-align: left;
+
+        span {
+          display: none;
+        }
       }
 
       &::after {
@@ -156,6 +160,10 @@
         font-weight: utility.$regular;
         line-height: normal;
         text-align: left;
+
+        span {
+          display: none;
+        }
       }
 
       &::after {
@@ -236,6 +244,10 @@
         font-weight: utility.$regular;
         line-height: normal;
         text-align: left;
+
+        span {
+          display: none;
+        }
       }
 
       &::after {
@@ -314,6 +326,209 @@
         font-weight: utility.$regular;
         line-height: normal;
         text-align: left;
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include utility.sp {
+  .p-jobchange {
+    &__headline {
+      margin-top: 0.6rem;
+    }
+
+    &__container {
+      flex-direction: column;
+      align-items: center;
+
+      &__card1 {
+        width: 2.8rem;
+        height: 2.93rem;
+
+        &__step {
+          width: 0.45rem;
+          height: 0.45rem;
+          border-radius: 0.225rem;
+
+          &__1 {
+            font-size: 0.1rem;
+          }
+        }
+
+        img {
+          width: 0.76rem;
+          top: 0.53rem;
+          left: 1rem;
+        }
+
+        &__head {
+          width: 100%;
+          line-height: normal;
+          margin-top: 1.5rem;
+          font-size: 0.2rem;
+        }
+
+        &__text {
+          width: 2.4rem;
+          margin-top: 0.1rem;
+
+          span {
+            display: block;
+            line-height: 0;
+
+            &:last-child {
+              display: inline-block;
+            }
+          }
+        }
+
+        &::after {
+          width: 0.2rem;
+          height: 0.4rem;
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%, 0%) rotate(90deg);
+        }
+      }
+
+      &__card2 {
+        width: 2.8rem;
+        height: 2.93rem;
+        margin-top: 0.4rem;
+
+        &__step {
+          width: 0.45rem;
+          height: 0.45rem;
+          border-radius: 0.225rem;
+
+          &__2 {
+            font-size: 0.1rem;
+          }
+        }
+
+        img {
+          width: 0.75rem;
+          height: 0.75rem;
+          top: 0.54rem;
+          left: 1.02rem;
+        }
+
+        &__head {
+          width: 100%;
+          font-size: 0.2rem;
+          line-height: normal;
+          margin-top: 1.5rem;
+        }
+
+        &__text {
+          width: 2.4rem;
+          margin-top: 0.1rem;
+
+          span {
+            display: block;
+            line-height: 0;
+          }
+        }
+
+        &::after {
+          width: 0.2rem;
+          height: 0.4rem;
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%, 0%) rotate(90deg);
+        }
+      }
+
+      &__card3 {
+        width: 2.8rem;
+        height: 2.93rem;
+        margin-top: 0.4rem;
+
+        &__step {
+          width: 0.45rem;
+          height: 0.45rem;
+          border-radius: 0.225rem;
+
+          &__3 {
+            font-size: 0.1rem;
+          }
+        }
+
+        img {
+          width: 0.8rem;
+          height: 0.75rem;
+          top: 0.54rem;
+          left: 0.99rem;
+        }
+
+        &__head {
+          width: 100%;
+          margin-top: 1.5rem;
+          font-size: 0.2rem;
+          line-height: normal;
+        }
+
+        &__text {
+          width: 2.4rem;
+          margin-top: 0.1rem;
+
+          span {
+            display: block;
+            line-height: 0;
+          }
+        }
+
+        &::after {
+          width: 0.2rem;
+          height: 0.4rem;
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%, 0%) rotate(90deg);
+        }
+      }
+
+      &__card4 {
+        width: 2.8rem;
+        height: 2.93rem;
+        margin-top: 0.4rem;
+
+        &__step {
+          width: 0.45rem;
+          height: 0.45rem;
+          border-radius: 0.225rem;
+
+          &__4 {
+            font-size: 0.1rem;
+          }
+        }
+
+        img {
+          width: 0.73rem;
+          height: 0.75rem;
+          top: 0.54rem;
+          left: 1.02rem;
+        }
+
+        &__head {
+          width: 100%;
+          margin-top: 1.5rem;
+          font-size: 0.2rem;
+          line-height: normal;
+        }
+
+        &__text {
+          width: 2.4rem;
+          margin-top: 0.1rem;
+
+          span {
+            display: block;
+            line-height: 0;
+          }
+        }
       }
     }
   }
