@@ -111,6 +111,10 @@
   .p-gizjob {
     padding-top: 0.55rem;
 
+    &__headline {
+      font-size: 0.25rem;
+    }
+
     &__container {
       &__card {
         width: 3.7rem;
