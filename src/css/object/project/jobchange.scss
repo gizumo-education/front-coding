@@ -19,7 +19,7 @@
     justify-content: space-between;
     text-align: center;
 
-    &__card1 {
+    &__entrycard {
       width: 277px;
       height: 357px;
       border: 2px solid utility.$gizPink;
@@ -36,6 +36,7 @@
         border-radius: 30px;
         background-color: utility.$gizPink;
         text-align: center;
+        z-index: 10;
 
         &__1 {
           display: table-cell;
@@ -51,39 +52,47 @@
         }
       }
 
-      img {
+      &__box {
         position: absolute;
-        top: 58px;
-        left: 96px;
-        width: 102px;
-      }
+        top: 0px;
+        left: 0px;
+        z-index: 20;
+        width: 100%;
 
-      &__head {
-        margin: 178px auto 0 auto;
-        width: 216px;
-        color: utility.$black;
-        font-family: Noto Sans JP;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: utility.$bold;
-        line-height: 30px;
-
-      }
-
-      &__text {
-        width: 237px;
-        margin: 18px auto 0 auto;
-        color: utility.$black;
-        font-family: Noto Sans JP;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: utility.$regular;
-        line-height: normal;
-        text-align: left;
-
-        span {
-          display: none;
+        img {
+          width: 102px;
+          margin-top: 59px;
         }
+
+        &__head {
+          margin: 20px auto 0 auto;
+          width: 216px;
+          color: utility.$black;
+          font-family: Noto Sans JP;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: utility.$bold;
+          line-height: 30px;
+
+        }
+
+        &__text {
+          width: 237px;
+          margin: 18px auto 0 auto;
+          color: utility.$black;
+          font-family: Noto Sans JP;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: utility.$regular;
+          line-height: normal;
+          text-align: left;
+
+          span {
+            display: none;
+          }
+        }
+
+
       }
 
       &::after {
@@ -100,7 +109,7 @@
       }
     }
 
-    &__card2 {
+    &__favoritecard {
       width: 277px;
       border: 2px solid utility.$gizPink;
       border-radius: 10px;
@@ -131,38 +140,44 @@
         }
       }
 
-      img {
+      &__box {
         position: absolute;
-        top: 68px;
-        left: 93px;
-        width: 79px;
-      }
+        top: 0px;
+        left: 0px;
+        z-index: 20;
+        width: 100%;
 
-      &__head {
-        margin: 178px auto 0 auto;
-        width: 168px;
-        color: utility.$black;
-        font-family: Noto Sans JP;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: utility.$bold;
-        line-height: 30px;
+        img {
+          width: 79px;
+          margin-top: 69px;
+        }
 
-      }
+        &__head {
+          margin: 30px auto 0 auto;
+          width: 168px;
+          color: utility.$black;
+          font-family: Noto Sans JP;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: utility.$bold;
+          line-height: 30px;
 
-      &__text {
-        width: 237px;
-        margin: 18px auto 0 auto;
-        color: utility.$black;
-        font-family: Noto Sans JP;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: utility.$regular;
-        line-height: normal;
-        text-align: left;
+        }
 
-        span {
-          display: none;
+        &__text {
+          width: 237px;
+          margin: 18px auto 0 auto;
+          color: utility.$black;
+          font-family: Noto Sans JP;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: utility.$regular;
+          line-height: normal;
+          text-align: left;
+
+          span {
+            display: none;
+          }
         }
       }
 
@@ -182,7 +197,7 @@
       }
     }
 
-    &__card3 {
+    &__morecard {
       width: 277px;
       border: 2px solid utility.$gizPink;
       border-radius: 10px;
@@ -213,40 +228,46 @@
         }
       }
 
-      img {
+      &__box {
         position: absolute;
-        top: 58px;
-        left: 88px;
-        width: 106px;
-        height: 100px
-      }
+        top: 0px;
+        left: 0px;
+        z-index: 20;
+        width: 100%;
 
-      &__head {
-        margin: 191px auto 0 auto;
-        width: 168px;
-        ;
-        color: utility.$black;
-        font-family: Noto Sans JP;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: utility.$bold;
-        line-height: 35px;
+        img {
+          width: 106px;
+          height: 100px;
+          margin-top: 58px;
+        }
 
-      }
+        &__head {
+          margin: 33px auto 0 auto;
+          width: 168px;
+          ;
+          color: utility.$black;
+          font-family: Noto Sans JP;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: utility.$bold;
+          line-height: 35px;
 
-      &__text {
-        width: 237px;
-        margin: 30px auto 0 auto;
-        color: utility.$black;
-        font-family: Noto Sans JP;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: utility.$regular;
-        line-height: normal;
-        text-align: left;
+        }
 
-        span {
-          display: none;
+        &__text {
+          width: 237px;
+          margin: 30px auto 0 auto;
+          color: utility.$black;
+          font-family: Noto Sans JP;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: utility.$regular;
+          line-height: normal;
+          text-align: left;
+
+          span {
+            display: none;
+          }
         }
       }
 
@@ -266,7 +287,7 @@
       }
     }
 
-    &__card4 {
+    &__changecard {
       width: 277px;
       border: 2px solid utility.$gizPink;
       border-radius: 10px;
@@ -297,38 +318,44 @@
         }
       }
 
-      img {
+      &__box {
         position: absolute;
-        top: 53px;
-        left: 78px;
-        width: 107px;
-      }
+        top: 0px;
+        left: 0px;
+        z-index: 20;
+        width: 100%;
 
-      &__head {
-        margin: 191px auto 0 auto;
-        width: 144px;
-        color: utility.$black;
-        font-family: Noto Sans JP;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: utility.$bold;
-        line-height: 35px;
+        img {
+          margin-top: 53px;
+          width: 107px;
+        }
 
-      }
+        &__head {
+          margin: 28px auto 0 auto;
+          width: 144px;
+          color: utility.$black;
+          font-family: Noto Sans JP;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: utility.$bold;
+          line-height: 35px;
 
-      &__text {
-        width: 237px;
-        margin: 30px auto 0 auto;
-        color: utility.$black;
-        font-family: Noto Sans JP;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: utility.$regular;
-        line-height: normal;
-        text-align: left;
+        }
 
-        span {
-          display: none;
+        &__text {
+          width: 237px;
+          margin: 30px auto 0 auto;
+          color: utility.$black;
+          font-family: Noto Sans JP;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: utility.$regular;
+          line-height: normal;
+          text-align: left;
+
+          span {
+            display: none;
+          }
         }
       }
     }
@@ -346,7 +373,7 @@
       flex-direction: column;
       align-items: center;
 
-      &__card1 {
+      &__entrycard {
         width: 2.8rem;
         height: 2.93rem;
 
@@ -360,30 +387,31 @@
           }
         }
 
-        img {
-          width: 0.76rem;
-          top: 0.53rem;
-          left: 1rem;
-        }
+        &__box {
+          img {
+            width: 0.76rem;
+            margin-top: 0.54rem;
+          }
 
-        &__head {
-          width: 100%;
-          line-height: normal;
-          margin-top: 1.5rem;
-          font-size: 0.2rem;
-        }
+          &__head {
+            width: 100%;
+            line-height: normal;
+            margin-top: 0.2rem;
+            font-size: 0.2rem;
+          }
 
-        &__text {
-          width: 2.4rem;
-          margin-top: 0.1rem;
-          font-size: 0.14rem;
+          &__text {
+            width: 2.4rem;
+            margin-top: 0.1rem;
+            font-size: 0.14rem;
 
-          span {
-            display: block;
-            line-height: 0;
+            span {
+              display: block;
+              line-height: 0;
 
-            &:last-child {
-              display: inline-block;
+              &:last-child {
+                display: inline-block;
+              }
             }
           }
         }
@@ -397,7 +425,7 @@
         }
       }
 
-      &__card2 {
+      &__favoritecard {
         width: 2.8rem;
         height: 2.93rem;
         margin-top: 0.4rem;
@@ -412,28 +440,29 @@
           }
         }
 
-        img {
-          width: 0.75rem;
-          height: 0.75rem;
-          top: 0.54rem;
-          left: 1.02rem;
-        }
+        &__box {
+          img {
+            width: 0.75rem;
+            height: 0.75rem;
+            margin-top: 0.54rem;
+          }
 
-        &__head {
-          width: 100%;
-          font-size: 0.2rem;
-          line-height: normal;
-          margin-top: 1.5rem;
-        }
+          &__head {
+            width: 100%;
+            font-size: 0.2rem;
+            line-height: normal;
+            margin-top: 0.22rem;
+          }
 
-        &__text {
-          width: 2.4rem;
-          margin-top: 0.1rem;
-          font-size: 0.14rem;
+          &__text {
+            width: 2.4rem;
+            margin-top: 0.1rem;
+            font-size: 0.14rem;
 
-          span {
-            display: block;
-            line-height: 0;
+            span {
+              display: block;
+              line-height: 0;
+            }
           }
         }
 
@@ -446,7 +475,7 @@
         }
       }
 
-      &__card3 {
+      &__morecard {
         width: 2.8rem;
         height: 2.93rem;
         margin-top: 0.4rem;
@@ -461,30 +490,32 @@
           }
         }
 
-        img {
-          width: 0.8rem;
-          height: 0.75rem;
-          top: 0.54rem;
-          left: 0.99rem;
-        }
+        &__box {
+          img {
+            width: 0.8rem;
+            height: 0.75rem;
+            margin-top: 0.54rem;
+          }
 
-        &__head {
-          width: 100%;
-          margin-top: 1.5rem;
-          font-size: 0.2rem;
-          line-height: normal;
-        }
+          &__head {
+            width: 100%;
+            margin-top: 0.22rem;
+            font-size: 0.2rem;
+            line-height: normal;
+          }
 
-        &__text {
-          width: 2.4rem;
-          margin-top: 0.1rem;
-          font-size: 0.14rem;
+          &__text {
+            width: 2.4rem;
+            margin-top: 0.1rem;
+            font-size: 0.14rem;
 
-          span {
-            display: block;
-            line-height: 0;
+            span {
+              display: block;
+              line-height: 0;
+            }
           }
         }
+
 
         &::after {
           width: 0.2rem;
@@ -495,7 +526,7 @@
         }
       }
 
-      &__card4 {
+      &__changecard {
         width: 2.8rem;
         height: 2.93rem;
         margin-top: 0.4rem;
@@ -510,28 +541,29 @@
           }
         }
 
-        img {
-          width: 0.73rem;
-          height: 0.75rem;
-          top: 0.54rem;
-          left: 1.02rem;
-        }
+        &__box {
+          img {
+            width: 0.73rem;
+            height: 0.75rem;
+            margin-top: 0.54rem;
+          }
 
-        &__head {
-          width: 100%;
-          margin-top: 1.5rem;
-          font-size: 0.2rem;
-          line-height: normal;
-        }
+          &__head {
+            width: 100%;
+            margin-top: 0.22rem;
+            font-size: 0.2rem;
+            line-height: normal;
+          }
 
-        &__text {
-          width: 2.4rem;
-          margin-top: 0.1rem;
-          font-size: 0.14rem;
+          &__text {
+            width: 2.4rem;
+            margin-top: 0.1rem;
+            font-size: 0.14rem;
 
-          span {
-            display: block;
-            line-height: 0;
+            span {
+              display: block;
+              line-height: 0;
+            }
           }
         }
       }
