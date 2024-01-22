@@ -4,17 +4,10 @@
 
 .p-secondvisual {
   position: relative;
-
-  &__cover {
-    position: absolute;
-    content: '';
-    display: block;
-    background-color: utility.$black;
-    top: 0;
-    left: 0;
-    z-index: 50;
-    opacity: 0.5;
-  }
+  width: 100%;
+  background-image: url('../img/picture/gizjob-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__textbox {
     position: absolute;
