@@ -21,6 +21,7 @@
   background-repeat: no-repeat;
   background-size: 20px 10px;
   background-position: right 15px center;
+  background-color: #fff;
 
 
 
@@ -32,5 +33,21 @@
     font-style: normal;
     font-weight: utility.$regular;
     line-height: normal;
+  }
+}
+
+@include utility.sp {
+  .c-selectbox {
+    width: 1rem;
+    height: 0.3rem;
+    padding-left: 0.08rem;
+    border-radius: 0.05rem;
+    font-size: 0.12rem;
+    background-size: 0.13rem 0.07rem;
+    background-position: right 0.07rem center;
+
+    &__value {
+      font-size: 0.12rem;
+    }
   }
 }

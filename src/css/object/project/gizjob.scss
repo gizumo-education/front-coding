@@ -54,6 +54,10 @@
         line-height: normal;
         width: 447px;
 
+        span {
+          display: none;
+        }
+
         &__2 {
           margin: 36px auto 0 auto;
           color: utility.$black;
@@ -76,6 +80,109 @@
           font-weight: utility.$regular;
           line-height: normal;
           width: 475px;
+        }
+
+        &__4 {
+          margin: 36px auto 0 auto;
+          color: utility.$black;
+          text-align: center;
+          font-family: Noto Sans JP;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: utility.$regular;
+          line-height: normal;
+          width: 447px;
+
+          &__pcbr {
+            display: block;
+            height: 0;
+          }
+
+          &__spbr {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include utility.sp {
+  .p-gizjob {
+    padding-top: 0.55rem;
+
+    &__headline {
+      font-size: 0.25rem;
+    }
+
+    &__container {
+      &__card {
+        width: 3.7rem;
+        height: 1.44rem;
+        margin-top: 0.21rem;
+
+        &:first-child {
+          margin-top: 0.38rem;
+        }
+
+        &:nth-child(3) {
+          height: 1.61rem;
+        }
+
+        &:nth-child(4) {
+          height: 1.61rem;
+        }
+
+        &:nth-child(n+3) {
+          margin-top: 0.21rem;
+        }
+
+        &__top {
+          font-size: 0.2rem;
+          margin-top: 0.3rem;
+        }
+
+        &__text {
+          width: 3.36rem;
+          font-size: 0.12rem;
+          line-height: 0.17rem;
+          margin-top: 0.3rem;
+
+          span {
+            display: block;
+            line-height: 0;
+          }
+
+          &__2 {
+            width: 3.36rem;
+            font-size: 0.12rem;
+            line-height: 0.17rem;
+            margin-top: 0.3rem;
+          }
+
+          &__3 {
+            width: 3.36rem;
+            font-size: 0.12rem;
+            line-height: 0.17rem;
+            margin-top: 0.3rem;
+          }
+
+          &__4 {
+            width: 3.49rem;
+            font-size: 0.12rem;
+            line-height: 0.17rem;
+            margin: 0.3rem auto 0 auto;
+            text-align: center;
+
+            &__pcbr {
+              display: none;
+            }
+
+            &__spbr {
+              display: block;
+              height: 0;
+            }
+          }
         }
       }
     }

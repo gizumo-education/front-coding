@@ -11,6 +11,14 @@
     left: 50%;
     transform: translate(-50%);
 
+    &__img {
+      display: block;
+    }
+
+    &__spimg {
+      display: none;
+    }
+
     &__contentsbox {
       position: absolute;
       z-index: 16;
@@ -43,6 +51,53 @@
         span {
           font-size: 40px;
           font-weight: utility.$bold;
+        }
+      }
+    }
+  }
+}
+
+@include utility.sp {
+  .p-keyvisual {
+    width: 4rem;
+    height: 2.7rem;
+    overflow: hidden;
+
+    &__container {
+      width: 4rem;
+      height: 2.7rem;
+
+      &__img {
+        display: none;
+      }
+
+      &__spimg {
+        display: block;
+      }
+
+      &__contentsbox {
+        top: 0.7rem;
+        left: 1.2rem;
+
+        &__no1 {
+          width: 1.5rem;
+        }
+
+        &__headline {
+          margin-top: 0.1rem;
+          width: 2.7rem;
+        }
+
+        &__text {
+          font-size: 0.08rem;
+          width: 1.7rem;
+          margin: 0.2rem auto 0 auto;
+          border-radius: 0.05rem;
+          border: 0.01rem solid utility.$keyGreen;
+
+          span {
+            font-size: 0.16rem;
+          }
         }
       }
     }

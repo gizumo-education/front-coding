@@ -4,6 +4,10 @@
 .l-footer {
   margin-top: 200px;
 
+  @include utility.sp {
+    margin-top: 1rem;
+  }
+
   &__area {
     padding: 55px 0 25px;
     font-size: 16px;

@@ -35,3 +35,30 @@
   }
 
 }
+
+@include utility.sp {
+  .p-searcharticle {
+    width: 3.7rem;
+    margin-top: 0.25rem;
+    padding: 0.15rem 0 0.2rem 0;
+
+    &:last-child {
+      margin-top: 0.6rem;
+    }
+
+    &__headline {
+      font-size: 0.22rem;
+    }
+
+    &__text {
+      font-size: 0.14rem;
+      margin-top: 0.16rem;
+    }
+
+    &__container {
+      width: 3.2rem;
+      flex-wrap: wrap;
+      margin-top: 0.13rem;
+    }
+  }
+}
