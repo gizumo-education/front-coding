@@ -18,11 +18,12 @@
 
   &__container {
     margin-top: 25px;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    position: relative;
 
     &__card {
-      width: 280px;
+      // width: 280px;
       flex-shrink: 0;
 
       &__img {
@@ -31,6 +32,7 @@
       }
 
       &__const {
+        width: 280px;
         margin-top: 8px;
         color: utility.$black;
         font-family: Noto Sans JP;
@@ -41,6 +43,7 @@
       }
 
       &__detail {
+        width: 280px;
         margin-top: 3px;
         display: flex;
         justify-content: center;
@@ -93,6 +96,56 @@
   }
 }
 
+.slick-prev:before {
+  content: '';
+  background-image: url(../img/icon/arrow-left.png);
+  background-repeat: no-repeat;
+  background-size: 15px 30px;
+  background-position: 20px 15px;
+  display: block;
+  width: 60px;
+  height: 60px;
+
+}
+
+.slick-prev {
+  top: 95px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  z-index: 500;
+  background-color: utility.$white;
+  opacity: 0.7;
+}
+
+.slick-next:before {
+  content: '';
+  background-image: url(../img/icon/arrow-right.png);
+  background-repeat: no-repeat;
+  background-size: 15px 30px;
+  background-position: 25px 15px;
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.slick-next {
+  top: 95px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  z-index: 500;
+  background-color: utility.$white;
+  opacity: 0.7;
+}
+
+.slick-slide {
+  width: 280px;
+  margin-right: 20px;
+}
+
 @include utility.sp {
   .p-nextwork {
     margin-top: 0.25rem;
@@ -118,12 +171,16 @@
         }
 
         &__const {
+          width: 3.7rem;
           font-size: 0.16rem;
           font-weight: utility.$bold;
           margin-top: 0.1em;
         }
 
         &__detail {
+          width: 3.7rem;
+          justify-content: flex-start;
+
           &__category {
             margin-right: 0.21rem;
             width: 0.6rem;
@@ -132,7 +189,7 @@
           }
 
           &__text {
-            width: 2.89rem;
+            width: 2.5rem;
             font-size: 0.14rem
           }
         }
@@ -147,5 +204,39 @@
       line-height: 0.6rem;
       border-radius: 0.3rem;
     }
+  }
+
+  .slick-slide {
+    width: 3.7rem;
+  }
+
+  .slick-prev:before {
+    background-size: 0.07rem 0.14rem;
+    background-position: 0.18rem 0.14rem;
+    width: 0.42rem;
+    height: 0.42rem;
+  }
+
+  .slick-prev {
+    top: 1.92rem;
+    left: 0;
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 0.21rem;
+  }
+
+  .slick-next:before {
+    background-size: 0.07rem 0.14rem;
+    background-position: 0.17rem 0.14rem;
+    width: 0.42rem;
+    height: 0.42rem;
+  }
+
+  .slick-next {
+    top: 1.92rem;
+    right: 0px;
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 0.21rem;
   }
 }
