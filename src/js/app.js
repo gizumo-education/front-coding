@@ -19,3 +19,13 @@ $(function () {
     ],
   });
 });
+
+const ham = document.querySelector(".l-header__hamburger");
+const nav = document.querySelector(".l-header__sp-nav");
+const body = document.querySelector("body");
+
+ham.addEventListener("click", function () {
+  body.classList.toggle("active");
+  nav.classList.toggle("active");
+  ham.classList.toggle("active");
+});

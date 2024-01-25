@@ -145,6 +145,44 @@
     }
   }
 
+  &__sp-nav {
+    position: fixed;
+    top: 0.7rem;
+    left: 0;
+    width: 4rem;
+    height: 5.54rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateX(100vw);
+    transition: all .3s linear;
+
+    &.active {
+      transform: translateX(0);
+      display: block;
+    }
+
+    ul {
+      margin-top: 0.19rem;
+      margin-left: 0.59rem;
+
+      li a {
+        color: #FFF;
+        font-family: "Noto Sans JP";
+        font-size: 0.22rem;
+        font-style: normal;
+        font-weight: utility.$bold;
+        line-height: 0.22rem;
+        margin-top: 0.38rem;
+      }
+    }
+
+    @include utility.pc {
+      display: none !important;
+    }
+
+  }
+
+
+
   &__hamburger {
     width: .5rem;
     height: .38rem;
@@ -162,6 +200,31 @@
       height: .06rem;
       background-color: utility.$black;
       border-radius: .03rem;
+      transition: all .3s linear;
+
     }
+
+    &.active {
+      span {
+
+        &:nth-child(1) {
+          transform: translateY(0.164rem) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:nth-child(3) {
+          transform: translateY(-0.156rem) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+body {
+  &.active {
+    overflow: hidden;
   }
 }

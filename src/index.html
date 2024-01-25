@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>基本コーディング</title>
-
   <!----- ここから、CDN---------->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
@@ -28,6 +27,15 @@
         </ul>
       </div>
       <div class="l-header__sp-items">
+        <nav class="l-header__sp-nav">
+          <ul>
+            <li><a href="#">トップ</a></li>
+            <li><a href="#next">新着求人</a></li>
+            <li><a href="#gizjob">4つの特徴</a></li>
+            <li><a href="#jobchange">転職までの流れ</a></li>
+            <li><a href="#contents">転職お役立ちコンテンツ</a></li>
+          </ul>
+        </nav>
         <button class="l-header__hamburger">
           <span></span>
           <span></span>
@@ -86,7 +94,7 @@
       </form>
     </article>
 
-    <div class="p-nextwork">
+    <div id="next" class="p-nextwork">
       <div class="l-inner">
         <h2 class="p-nextwork__headline">新着求人</h2>
         <div class="p-nextwork__container slide-items">
@@ -223,7 +231,7 @@
     </div>
 
 
-    <div class="l-inner p-gizjob">
+    <div id="gizjob" class="l-inner p-gizjob">
       <h2 class="p-gizjob__headline">ギズジョブの4つの特徴</h2>
       <div class="p-gizjob__container">
         <div class="p-gizjob__container__card">
@@ -250,7 +258,7 @@
       </div>
     </div>
 
-    <div class="l-inner p-jobchange">
+    <div id="jobchange" class="l-inner p-jobchange">
       <h2 class="p-jobchange__headline">転職までの流れ</h2>
       <div class="p-jobchange__container">
         <div class="p-jobchange__container__entrycard">
@@ -300,7 +308,7 @@
       </div>
     </div>
 
-    <div class="l-inner p-jobcontents">
+    <div id="contents" class="l-inner p-jobcontents">
       <h2 class="p-jobcontents__headline">転職お役立ちコンテンツ</h2>
       <div class="p-jobcontents__container">
         <a href="#" class="p-jobcontents__container__card">
