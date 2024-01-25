@@ -150,7 +150,7 @@
     top: 0.7rem;
     left: 0;
     width: 4rem;
-    height: 5.54rem;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     transform: translateX(100vw);
     transition: all .3s linear;
@@ -172,6 +172,7 @@
         font-weight: utility.$bold;
         line-height: 0.22rem;
         margin-top: 0.38rem;
+        width: 100%;
       }
     }
 

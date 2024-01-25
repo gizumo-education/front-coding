@@ -29,3 +29,13 @@ ham.addEventListener("click", function () {
   nav.classList.toggle("active");
   ham.classList.toggle("active");
 });
+
+const links = document.querySelectorAll(".l-header__sp-nav__link");
+
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    body.classList.toggle("active");
+    nav.classList.toggle("active");
+    ham.classList.toggle("active");
+  });
+});
