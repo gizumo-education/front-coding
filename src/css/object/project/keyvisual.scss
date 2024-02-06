@@ -1,2 +1,54 @@
 @use '../../object/utility/utility.scss';
+
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual {
+  background-color: utility.$bgPrimaryBlue;
+  height: 500px;
+
+  &__inner {
+    position: relative;
+    margin: 0 auto;
+    width: 1262px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 56.49px;
+    left: 655px;
+  }
+
+  &__title {
+    position: absolute;
+    top: 265px;
+    left: 432px;
+    font-size: 50px;
+    font-weight: utility.$bold;
+    color: utility.$white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__num {
+    position: absolute;
+    top: 385.15px;
+    left: 635.65px;
+    width: 391px;
+    height: 69px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: space-around;
+    font-size: 20px;
+    color: utility.$green;
+    background-color: utility.$white;
+    border: 2.3px solid utility.$green;
+    border-radius: 10px;
+
+    &__span {
+      font-size: 40px;
+      font-weight: utility.$bold;
+    }
+  }
+
+}
