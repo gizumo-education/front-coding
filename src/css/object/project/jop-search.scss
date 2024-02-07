@@ -1,0 +1,5 @@
+@use '../../object/utility/utility.scss';
+
+.p-inner {
+  max-width: utility.$maxWidth;
+}
