@@ -1,0 +1,17 @@
+@use '../../object/utility/utility.scss';
+
+.c-form-box {
+  width: 200px;
+  height: 60px;
+  border: 1px solid utility.$deepPink;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 16.5px;
+
+  // フォームデフォルトデザインのreset
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  resize: none;
+}
