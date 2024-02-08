@@ -42,44 +42,44 @@
   &__inner {
     margin-top: 106px;
     text-align: center;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: utility.$bold;
+  }
+
+  &__point {
+    margin-top: 53px;
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+
+      &__item {
+        width: 570px;
+        height: 180px;
+        padding-top: 40px;
+        background-color: utility.$bgPink;
+        border-radius: 10px;
+      }
+    }
 
     &__title {
-      font-size: 25px;
+      color: utility.$primaryPink;
+      font-size: 24px;
       font-weight: utility.$bold;
     }
 
-    &__point {
-      margin-top: 53px;
-
-      &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
-
-        &>li {
-          width: 570px;
-          height: 180px;
-          padding-top: 40px;
-          background-color: utility.$bgPink;
-          border-radius: 10px;
-        }
-
-        &__title {
-          color: utility.$primaryPink;
-          font-size: 24px;
-          font-weight: utility.$bold;
-        }
-
-        &__text {
-          height: 116px;
-          font-size: 14px;
-          line-height: 2rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      }
+    &__text {
+      height: 116px;
+      font-size: 14px;
+      line-height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
