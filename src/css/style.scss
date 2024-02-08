@@ -13,9 +13,11 @@
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/c-h2.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
 @use './object/project/job-search.scss';
+@use './object/project/new-jobs.scss';
 /*-------------------------------------------*/
