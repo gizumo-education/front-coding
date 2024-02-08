@@ -1,0 +1,105 @@
+@use '../../object/utility/utility.scss';
+// 転職までの流れに関するスタイル
+
+.p-flow {
+  width: 100%;
+  margin-top: 105px;
+  text-align: center;
+
+  &__title {
+    font-size: 25px;
+    font-weight: utility.$bold;
+  }
+
+  &__inner {
+    width: 1180px;
+    margin: 0 auto;
+  }
+
+  &__items {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+
+    &__item {
+      width: 280px;
+      height: 360px;
+      border: 2px solid utility.$primaryPink;
+      border-radius: 10px;
+      position: relative;
+
+      &__step {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: utility.$primaryPink;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        &__num {
+          height: 60px;
+          font-size: 16px;
+          line-height: 2rem;
+          font-weight: utility.$bold;
+          color: utility.$white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      &__detail {
+
+        &.is-step1,
+        &.is-step3 {
+          padding-top: 60px;
+        }
+
+        &.is-step2 {
+          padding-top: 70px;
+        }
+
+        &.is-step4 {
+          padding-top: 54px;
+        }
+
+        &__title {
+          font-size: 24px;
+          line-height: 3rem;
+          font-weight: utility.$bold;
+
+          &.is-step1-title {
+            margin-top: 20px;
+          }
+
+          &.is-step2-title {
+            margin-top: 30px;
+          }
+
+          &.is-step3-title {
+            margin-top: 33px;
+            height: 35px;
+          }
+
+          &.is-step4-title {
+            margin-top: 28px;
+            height: 35px;
+          }
+        }
+
+        &__text {
+          width: 237px;
+          margin: 18px auto 0;
+          font-size: 14px;
+          line-height: 2rem;
+          text-align: left;
+
+          &.is-step-text {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
