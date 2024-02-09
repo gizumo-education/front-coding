@@ -1,0 +1,15 @@
+@use '../../object/utility/utility.scss';
+
+.p-copy {
+  display: flex;
+  align-items: center;
+  background:  url(../img/picture/copy-bg.jpg) no-repeat center / cover rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+  height: 300px;
+
+  &__h2 {
+    text-align: center;
+    line-height: 2.4;
+    color: utility.$white;
+  }
+}
