@@ -54,7 +54,7 @@
     &__num {
       height: 60px;
       font-size: 16px;
-      line-height: 2rem;
+      line-height: 1.4;
       font-weight: utility.$bold;
       color: utility.$white;
       display: flex;
@@ -80,7 +80,7 @@
 
     &__title {
       font-size: 24px;
-      line-height: 3rem;
+      line-height: 1.25;
       font-weight: utility.$bold;
 
       &.is-step1-title {
@@ -106,7 +106,7 @@
       width: 237px;
       margin: 18px auto 0;
       font-size: 14px;
-      line-height: 2rem;
+      line-height: 1.45;
       text-align: left;
 
       &.is-step-text {
