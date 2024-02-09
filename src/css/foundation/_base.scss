@@ -24,6 +24,7 @@ body {
   body {
     font-size: 0.1rem;
   }
+
   html {
     font-size: calc(100vw / 12);
     // 1200pxの画面幅で見たときにfont-sizeが100pxになるように計算
@@ -34,6 +35,7 @@ body {
   body {
     font-size: 0.1rem;
   }
+
   html {
     font-size: calc(100vw / 4);
     // 400pxの画面幅で見たときにfont-sizeが100pxになるように計算
@@ -52,31 +54,36 @@ a {
   color: base.$black;
   text-decoration: none;
   transition: .3s all;
+
   &:hover {
-    opacity: .7;
+    opacity: .8;
   }
 }
 
 .is-pc {
   @include base.pc {
-    display: block!important;
+    display: block !important;
   }
+
   @include base.tab {
-    display: block!important;
+    display: block !important;
   }
+
   @include base.sp {
-    display: none!important;
+    display: none !important;
   }
 }
 
 .is-sp {
   @include base.pc {
-    display: none!important;
+    display: none !important;
   }
+
   @include base.tab {
-    display: none!important;
+    display: none !important;
   }
+
   @include base.sp {
-    display: block!important;
+    display: block !important;
   }
 }

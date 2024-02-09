@@ -1,0 +1,74 @@
+@use '../../object/utility/utility.scss';
+// 新着求人に関するスタイル
+
+.p-recruit {
+  width: 100%;
+  background-color: utility.$bgLightBlue;
+  margin-top: 60px;
+
+  &__inner {
+    width: 1180px;
+    height: 636px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    padding-top: 64px;
+    font-size: 25px;
+  }
+
+  &__items {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+
+    &__item {
+
+      &>img {
+        border-radius: 10px;
+      }
+
+      &__text {
+        margin-top: 9px;
+        font-size: 16px;
+      }
+
+      &__desc {
+        margin-top: 7px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4px;
+
+        &>dt {
+          width: 60px;
+          height: 21px;
+          background-color: utility.$bgPink;
+          text-align: center;
+          line-height: 21px;
+        }
+
+        &>dd {
+          margin-left: 10px;
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  &__btn-box {
+    text-align: center;
+    margin-top: 60px;
+
+    &__button {
+      width: 360px;
+      height: 60px;
+
+      &>p {
+        font-weight: utility.$bold;
+        line-height: 60px;
+      }
+    }
+  }
+}

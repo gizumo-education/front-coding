@@ -1,0 +1,82 @@
+@use '../../object/utility/utility.scss';
+// お仕事検索に関するスタイル
+
+.p-search {
+  width: 1180px;
+  height: 240px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: utility.$bgSecondaryBlue;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  
+  &.first {
+    margin-top: 60px;
+  }
+
+  &.second {
+    margin-top: 150px;
+  }
+
+  &__title {
+    font-weight: utility.$bold;
+    font-size: 25px;
+    padding-top: 40px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 26px;
+
+    &__box {
+      position: relative;
+      margin-left: 15px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        pointer-events: none;
+        border-top: 10px solid utility.$primaryPink;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 0;
+      }
+
+      &__input {
+        display: flex;
+      }
+
+      &__button {
+        width: 140px;
+        height: 60px;
+        margin-left: 15px;
+        display: flex;
+
+        &>img {
+          padding: 15px 4px 15px 14px;
+        }
+
+        &>p {
+          margin-top: 21px;
+        }
+      }
+    }
+  }
+}
