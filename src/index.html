@@ -51,14 +51,14 @@
       </div>
     </section>
 
-    <section class="p-jop-search">
+    <section class="c-jop-search p-jop-search-wrapper__01">
       <div class="l-inner">
-        <div class="p-jop-search__box">
+        <div class="c-jop-search__box">
           <h2 class="c-h2">お仕事検索</h2>
-          <p class="p-jop-search__box__supplement">働きたい職種・地域・希望給与を入れて検索！</p>
-          <ul class="p-jop-search__box__form">
-            <li class="p-jop-search__box__form__select">
-              <select class="c-form-box" name="">
+          <p class="c-jop-search__box__supplement">働きたい職種・地域・希望給与を入れて検索！</p>
+          <ul class="c-jop-search__box__form">
+            <li class="c-jop-search__box__form__select">
+              <select class="c-form-box" name="業種">
                 <option value="医療事務" selected>医療事務</option>
                 <option value="調剤事務">調剤事務</option>
                 <option value="診療情報管理士">診療情報管理士</option>
@@ -68,8 +68,8 @@
                 <option value="病院内SE">病院内SE</option>
               </select>
             </li>
-            <li class="p-jop-search__box__form__select">
-              <select class="c-form-box" name="">
+            <li class="c-jop-search__box__form__select">
+              <select class="c-form-box" name="都道府県">
                 <option value="茨城県">茨城県</option>
                 <option value="神奈川県">神奈川県</option>
                 <option value="群馬県">群馬県</option>
@@ -79,8 +79,8 @@
                 <option value="栃木県">栃木県</option>
               </select>
             </li>
-            <li class="p-jop-search__box__form__select">
-              <select class="c-form-box" name="">
+            <li class="c-jop-search__box__form__select">
+              <select class="c-form-box" name="給料">
                 <option value="月給17万〜" selected>月給17万〜</option>
                 <option value="月給18万〜">月給18万〜</option>
                 <option value="月給19万〜">月給19万〜</option>
@@ -90,12 +90,12 @@
                 <option value="月給23万〜">月給23万〜</option>
               </select>
             </li>
-            <li class="p-jop-search__box__form__area">
-              <input class="c-form-box p-jop-search__box__form__area__input-box" type="text" name="search-keyword"
+            <li class="c-jop-search__box__form__area">
+              <input class="c-form-box c-jop-search__box__form__area__input-box" type="text" name="search-keyword"
                 required placeholder="キーワード・企業名・スキルなど" />
             </li>
             <li>
-              <a href="" class="p-jop-search__box__form__search-button">検索する</a>
+              <a href="" class="c-jop-search__box__form__search-button">検索する</a>
             </li>
           </ul>
         </div>
@@ -163,84 +163,148 @@
       </div>
     </section>
 
-    <section class="p-feature">
+    <article class="p-service-introduction">
       <div class="l-inner">
-        <h2 class="c-h2">ギズジョブの4つの特徴</h2>
-        <ul class="p-feature__box">
-          <li class="p-feature__box__element">
-            <h3 class="p-feature__box__element__h3">WEB上で応募完結</h3>
-            <p>エントリーシートの記入を済ませれば、あとは気になる企業に応募して<br>待つだけで面接アポまで完結！</p>
-          </li>
-          <li class="p-feature__box__element">
-            <h3 class="p-feature__box__element__h3">安心・安全</h3>
-            <p>掲載案件は基本的に当社グループ企業となるため、<br>
-              皆さまにより詳細にクリーンな職場情報をお届けいたします。</p>
-          </li>
-          <li class="p-feature__box__element">
-            <h3 class="p-feature__box__element__h3">わかりやすい</h3>
-            <p>当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br>
-              といったご自身にピッタリマッチした求人を見つけることができる！</p>
-          </li>
-          <li class="p-feature__box__element">
-            <h3 class="p-feature__box__element__h3">完全無料</h3>
-            <p>当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br>
-              運営されています。ですので求職者の方からは応募前はもちろん、<br>
-              内定後も費用は一切いただきません。</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+        <section class="p-feature">
+          <div class="l-inner">
+            <h2 class="c-h2">ギズジョブの4つの特徴</h2>
+            <ul class="p-feature__box">
+              <li class="p-feature__box__element">
+                <h3 class="p-feature__box__element__h3">WEB上で応募完結</h3>
+                <p>エントリーシートの記入を済ませれば、あとは気になる企業に応募して<br>待つだけで面接アポまで完結！</p>
+              </li>
+              <li class="p-feature__box__element">
+                <h3 class="p-feature__box__element__h3">安心・安全</h3>
+                <p>掲載案件は基本的に当社グループ企業となるため、<br>
+                  皆さまにより詳細にクリーンな職場情報をお届けいたします。</p>
+              </li>
+              <li class="p-feature__box__element">
+                <h3 class="p-feature__box__element__h3">わかりやすい</h3>
+                <p>当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br>
+                  といったご自身にピッタリマッチした求人を見つけることができる！</p>
+              </li>
+              <li class="p-feature__box__element">
+                <h3 class="p-feature__box__element__h3">完全無料</h3>
+                <p>当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br>
+                  運営されています。ですので求職者の方からは応募前はもちろん、<br>
+                  内定後も費用は一切いただきません。</p>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-    <section class="p-job-change-flow">
-      <div class="l-inner">
-        <h2 class="c-h2">転職までの流れ</h2>
-        <ul class="p-job-change-flow__wrapper">
-          <li class="p-job-change-flow__wrapper__box">
-            <img class="p-job-change-flow__wrapper__box__img" src="./img/picture/p-job-change-flow_img01.png" alt="転職までの流れ STEP1">
-            <h3 class="p-job-change-flow__wrapper__box__h3 is-h3-two-row">エントリーシートの<br>作成</h3>
-            <p class="p-job-change-flow__wrapper__box__p is-h3-two-row">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ</p>
-          </li>
-          <li class="p-job-change-flow__wrapper__box">
-            <img class="p-job-change-flow__wrapper__box__img" src="./img/picture/p-job-change-flow_img02.png" alt="転職までの流れ STEP2">
-            <h3 class="p-job-change-flow__wrapper__box__h3 is-h3-two-row">気になる企業の<br>ピックアップ</h3>
-            <p class="p-job-change-flow__wrapper__box__p is-h3-two-row">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
-          </li>
-          <li class="p-job-change-flow__wrapper__box">
-            <img class="p-job-change-flow__wrapper__box__img" src="./img/picture/p-job-change-flow_img03.png" alt="転職までの流れ STEP3">
-            <h3 class="p-job-change-flow__wrapper__box__h3">複数企業に応募</h3>
-            <p class="p-job-change-flow__wrapper__box__p">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
-          </li>
-          <li class="p-job-change-flow__wrapper__box">
-            <img class="p-job-change-flow__wrapper__box__img" src="./img/picture/p-job-change-flow_img04.png" alt="転職までの流れ STEP4">
-            <h3 class="p-job-change-flow__wrapper__box__h3">内定・転職！</h3>
-            <p class="p-job-change-flow__wrapper__box__p">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+        <section class="p-job-change-flow">
+          <div class="l-inner">
+            <h2 class="c-h2">転職までの流れ</h2>
+            <ul class="p-job-change-flow__wrapper">
+              <li class="p-job-change-flow__wrapper__box">
+                <img class="p-job-change-flow__wrapper__box__img" src="./img/picture/p-job-change-flow_img01.png"
+                  alt="転職までの流れ STEP1">
+                <h3 class="p-job-change-flow__wrapper__box__h3 is-h3-two-row">エントリーシートの<br>作成</h3>
+                <p class="p-job-change-flow__wrapper__box__p is-h3-two-row">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ
+                </p>
+              </li>
+              <li class="p-job-change-flow__wrapper__box">
+                <img class="p-job-change-flow__wrapper__box__img" src="./img/picture/p-job-change-flow_img02.png"
+                  alt="転職までの流れ STEP2">
+                <h3 class="p-job-change-flow__wrapper__box__h3 is-h3-two-row">気になる企業の<br>ピックアップ</h3>
+                <p class="p-job-change-flow__wrapper__box__p is-h3-two-row">
+                  ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
+              </li>
+              <li class="p-job-change-flow__wrapper__box">
+                <img class="p-job-change-flow__wrapper__box__img" src="./img/picture/p-job-change-flow_img03.png"
+                  alt="転職までの流れ STEP3">
+                <h3 class="p-job-change-flow__wrapper__box__h3">複数企業に応募</h3>
+                <p class="p-job-change-flow__wrapper__box__p">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
+              </li>
+              <li class="p-job-change-flow__wrapper__box">
+                <img class="p-job-change-flow__wrapper__box__img" src="./img/picture/p-job-change-flow_img04.png"
+                  alt="転職までの流れ STEP4">
+                <h3 class="p-job-change-flow__wrapper__box__h3">内定・転職！</h3>
+                <p class="p-job-change-flow__wrapper__box__p">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-    <section class="p-useful-content">
-      <div class="l-inner">
-        <h2 class="c-h2">転職お役立ちコンテンツ</h2>
-        <ul class="p-useful-content__wrapper">
-          <li class="p-useful-content__wrapper__img-box">
-            <h3 class="p-useful-content__wrapper__img-box__h3">転職マニュアル</h3>
-            <p class="p-useful-content__wrapper__img-box__p">転職活動の基礎知識、面接対策など転職のコツをお教えします</p>
-          </li>
-          <li class="p-useful-content__wrapper__img-box">
-            <h3 class="p-useful-content__wrapper__img-box__h3">医療事務業界の豆知識</h3>
-            <p class="p-useful-content__wrapper__img-box__p">スキルアップ・労働環境、給与事情など知って得する業界の豆知識を公開</p>
-          </li>
-          <li class="p-useful-content__wrapper__img-box">
-            <h3 class="p-useful-content__wrapper__img-box__h3">転職マニュアル</h3>
-            <p class="p-useful-content__wrapper__img-box__p">転職活動の基礎知識、面接対策など転職のコツをお教えします</p>
-          </li>
-        </ul>
-        <div class="c-button__text-align-center p-useful-content__button-wrapper">
-          <a href="" class="c-button">医療事務コラムをもっと見る</a>
-        </div>
+        <section class="p-useful-content">
+          <div class="l-inner">
+            <h2 class="c-h2">転職お役立ちコンテンツ</h2>
+            <ul class="p-useful-content__wrapper">
+              <li class="p-useful-content__wrapper__img-box">
+                <h3 class="p-useful-content__wrapper__img-box__h3">転職マニュアル</h3>
+                <p class="p-useful-content__wrapper__img-box__p">転職活動の基礎知識、面接対策など転職のコツをお教えします</p>
+              </li>
+              <li class="p-useful-content__wrapper__img-box">
+                <h3 class="p-useful-content__wrapper__img-box__h3">医療事務業界の豆知識</h3>
+                <p class="p-useful-content__wrapper__img-box__p">スキルアップ・労働環境、給与事情など知って得する業界の豆知識を公開</p>
+              </li>
+              <li class="p-useful-content__wrapper__img-box">
+                <h3 class="p-useful-content__wrapper__img-box__h3">転職マニュアル</h3>
+                <p class="p-useful-content__wrapper__img-box__p">転職活動の基礎知識、面接対策など転職のコツをお教えします</p>
+              </li>
+            </ul>
+            <div class="c-button__text-align-center p-useful-content__button-wrapper">
+              <a href="" class="c-button">医療事務コラムをもっと見る</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="c-jop-search p-jop-search-wrapper__02">
+          <div class="l-inner">
+            <div class="c-jop-search__box">
+              <h2 class="c-h2">お仕事検索</h2>
+              <p class="c-jop-search__box__supplement">働きたい職種・地域・希望給与を入れて検索！</p>
+              <ul class="c-jop-search__box__form">
+                <li class="c-jop-search__box__form__select">
+                  <select class="c-form-box" name="業種">
+                    <option value="医療事務" selected>医療事務</option>
+                    <option value="調剤事務">調剤事務</option>
+                    <option value="診療情報管理士">診療情報管理士</option>
+                    <option value="歯科助手">歯科助手</option>
+                    <option value="歯科事務">歯科事務</option>
+                    <option value="看護補助・看護助手">看護補助・看護助手</option>
+                    <option value="病院内SE">病院内SE</option>
+                  </select>
+                </li>
+                <li class="c-jop-search__box__form__select">
+                  <select class="c-form-box" name="都道府県">
+                    <option value="茨城県">茨城県</option>
+                    <option value="神奈川県">神奈川県</option>
+                    <option value="群馬県">群馬県</option>
+                    <option value="埼玉県">埼玉県</option>
+                    <option value="千葉県">千葉県</option>
+                    <option value="東京都" selected>東京都</option>
+                    <option value="栃木県">栃木県</option>
+                  </select>
+                </li>
+                <li class="c-jop-search__box__form__select">
+                  <select class="c-form-box" name="給料">
+                    <option value="月給17万〜" selected>月給17万〜</option>
+                    <option value="月給18万〜">月給18万〜</option>
+                    <option value="月給19万〜">月給19万〜</option>
+                    <option value="月給20万〜">月給20万〜</option>
+                    <option value="月給21万〜">月給21万〜</option>
+                    <option value="月給22万〜">月給22万〜</option>
+                    <option value="月給23万〜">月給23万〜</option>
+                  </select>
+                </li>
+                <li class="c-jop-search__box__form__area">
+                  <input class="c-form-box c-jop-search__box__form__area__input-box" type="text" name="search-keyword"
+                    required placeholder="キーワード・企業名・スキルなど" />
+                </li>
+                <li>
+                  <a href="" class="c-jop-search__box__form__search-button">検索する</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+
+    </article>
+
+
 
   </main>
 
