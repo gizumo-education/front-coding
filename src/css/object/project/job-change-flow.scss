@@ -1,0 +1,79 @@
+@use '../../object/utility/utility.scss';
+
+.p-job-change-flow {
+  margin-top: 105px;
+
+  &__wrapper {
+    margin-top: 51px;
+    display: flex;
+    justify-content: space-between;
+
+    &__box {
+      position: relative;
+      width: 280px;
+      height: 360px;
+      border: 2px solid utility.$pink;
+      border-radius: 10px;
+      padding: 60px 10px 42px;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: top 10px left 10px;
+
+      &:nth-of-type(1) {
+        background-image: url(../img/picture/job-change-flow_step01.png);
+      }
+
+      &:nth-of-type(2) {
+        background-image: url(../img/picture/job-change-flow_step02.png);
+      }
+
+      &:nth-of-type(3) {
+        background-image: url(../img/picture/job-change-flow_step03.png);
+      }
+
+      &:nth-of-type(4) {
+        background-image: url(../img/picture/job-change-flow_step04.png);
+
+        &::after {
+          border: none;
+        }
+      }
+      
+      &::after {
+        position: absolute;
+        right: -20px;
+        top: 45%;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid utility.$pink;
+        border-right: 0;
+      }
+
+      &__h3 {
+        font-size: 24px;
+        font-weight: utility.$bold;
+        margin-top: 25px;
+        line-height: 1.3;
+
+        &.is-h3-two-row {
+          margin-top: 10px;
+        }
+      }
+
+      &__p {
+        font-size: 14px;
+        text-align-last: left;
+        line-height: 1.4;
+        margin-top: 31px;
+
+        &.is-h3-two-row {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
