@@ -6,6 +6,10 @@
   background-color: utility.$bgLightBlue;
   margin-top: 60px;
 
+  @include utility.sp {
+    margin-top: .25rem;
+  }
+
   &__inner {
     width: 1180px;
     height: 636px;
