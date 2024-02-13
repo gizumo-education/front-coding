@@ -1,0 +1,33 @@
+@use '../../object/utility/utility.scss';
+
+.p-feature {
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 53px;
+
+    &__element {
+      background-color: utility.$lightPinkBox;
+      padding: 40px 47px;
+      width: 570px;
+      border-radius: 5px;
+      text-align: center;
+
+      &__h3 {
+        color: utility.$pink;
+        font-size: 24px;
+        font-weight: utility.$bold;
+      }
+
+      & > p {
+        margin-top: 36px;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+
+  }
+}

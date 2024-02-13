@@ -1,0 +1,48 @@
+@use '../../object/utility/utility.scss';
+
+.p-useful-content {
+  margin-top: 105px;
+
+  &__wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    &__img-box {
+      width: 380px;
+      height: 240px;
+      border-radius: 10px;
+      padding: 71px 42px 55px;
+      text-align: center;
+      color: utility.$white;
+      background-color: utility.$bgBlackCover;
+      background-blend-mode: darken;
+
+      &:nth-last-of-type(1) {
+        background-image: url(../img/picture/p-job-useful-content_img01.jpg);
+      }
+
+      &:nth-last-of-type(2) {
+        background-image: url(../img/picture/p-job-useful-content_img02.jpg);
+      }
+
+      &:nth-last-of-type(3) {
+        background-image: url(../img/picture/p-job-useful-content_img01.jpg);
+      }
+
+      &__h3 {
+        font-size: 24px;
+      }
+
+      &__p {
+        font-size: 16px;
+        margin-top: 44px;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &__button-wrapper {
+    margin-top: 80px;
+  }
+}
