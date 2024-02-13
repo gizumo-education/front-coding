@@ -6,6 +6,10 @@
   padding-top: 105px;
   text-align: center;
 
+  @include utility.sp {
+    padding-top: .6rem;
+  }
+
   &__title {
     font-size: 25px;
     font-weight: utility.$bold;
@@ -14,6 +18,10 @@
   &__inner {
     width: 1180px;
     margin: 0 auto;
+
+    @include utility.sp {
+      width: 100%;
+    }
   }
 
   &__items {
@@ -21,8 +29,21 @@
     display: flex;
     gap: 20px;
 
+    @include utility.sp {
+      padding-top: .3rem;
+      flex-direction: column;
+      gap: .17rem;
+    }
+
     &__item {
       position: relative;
+
+      &>img {
+        @include utility.sp {
+          width: 3.7rem;
+          height: 2.34rem;
+        }
+      }
     }
   }
 
@@ -39,16 +60,31 @@
     color: utility.$white;
     background-color: rgba(0, 0, 0, 0.5);
 
+    @include utility.sp {
+      width: 3.7rem;
+      height: 2.34rem;
+    }
+
     &__title {
       font-size: 24px;
       font-weight: utility.$bold;
       padding-top: 71px;
+
+      @include utility.sp {
+        font-size: .21rem;
+        padding-top: .6rem;
+      }
     }
 
     &__text {
       font-size: 16px;
       margin-top: 45px;
       line-height: 1.45;
+
+      @include utility.sp {
+        font-size: .14rem;
+        margin-top: .53rem;
+      }
     }
   }
 
@@ -56,9 +92,17 @@
     margin-top: 80px;
     text-align: center;
 
+    @include utility.sp {
+      margin-top: .34rem;
+    }
+
     &__button {
       width: 420px;
       height: 60px;
+
+      @include utility.sp {
+        width: 3.7rem;
+      }
 
       &>p {
         font-weight: utility.$bold;
