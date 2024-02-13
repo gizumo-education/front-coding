@@ -8,24 +8,104 @@
     padding: 40px;
     text-align: center;
 
-    &__h2 {
-      font-size: 25px;
-      font-weight: utility.$bold;
+    @include utility.sp {
+      padding: .15rem .25rem;
     }
 
     &__supplement {
       margin-top: 20px;
       font-size: 20px;
+
+      @include utility.sp {
+        font-size: .14rem;
+      }
     }
 
     &__form {
-      margin-top: 26px;
       display: flex;
       justify-content: space-between;
+      margin-top: 26px;
 
-      &>li {
-        &>.is-form-element {
-          width: 200px;
+      @include utility.sp {
+        flex-wrap: wrap;
+        gap: 0.15rem;
+        margin-top: .2rem;
+      }
+
+      &__select-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        width: 100%;
+
+        @include utility.sp {
+          flex-wrap: wrap;
+          gap: initial;
+        }
+
+        &__li {
+          position: relative;
+
+          @include utility.sp {
+            width: 31%;
+          }
+
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 45%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-top: 10px solid utility.$deepPink;
+            border-bottom: 0;
+
+            @include utility.sp {
+              right: 0.05rem;
+              border-right: 7px solid transparent;
+              border-left: 7px solid transparent;
+              border-top: 7px solid utility.$deepPink;
+            }
+          }
+
+          &__select {
+            border: 1px solid utility.$deepPink;
+            border-radius: 10px;
+            font-size: 18px;
+            padding: 16.5px;
+            width: 200px;
+            height: 60px;
+
+            // フォームデフォルトデザインのreset
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            outline: none;
+            resize: none;
+
+            @include utility.sp {
+              font-size: .12rem;
+              padding: .06rem .08rem;
+              width: 100%;
+              height: auto;
+              border-radius: .05rem;
+            }
+          }
+
+        }
+      }
+
+      &__input-box {
+        @include utility.sp {
+          width: 100%;
+        }
+
+        &__input {
+          width: 300px;
           height: 60px;
           border: 1px solid utility.$deepPink;
           border-radius: 10px;
@@ -38,47 +118,46 @@
           appearance: none;
           outline: none;
           resize: none;
-        }
 
-        &>.input-box {
-          width: 300px;
-          padding-left: 10px;
-          padding-right: 10px;
-        }
-      }
-
-      &__select {
-        position: relative;
-
-        &::after {
-          content: '';
-          display: inline-block;
-          position: absolute;
-          right: 10px;
-          top: 45%;
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-right: 10px solid transparent;
-          border-left: 10px solid transparent;
-          border-top: 10px solid utility.$deepPink;
-          border-bottom: 0;
+          @include utility.sp {
+            width: 100%;
+            font-size: .12rem;
+            padding: .06rem .08rem;
+            width: 100%;
+            height: auto;
+            border-radius: .05rem;
+          }
         }
       }
 
-      &__search-button {
-        background-color: utility.$pink;
-        background-image: url('../img/icon/icon-search-white.png');
-        background-repeat: no-repeat;
-        background-position: center left 15px;
-        background-size: 30px;
-        padding-left: 48px;
-        padding-right: 20px;
-        color: utility.$white;
-        height: 60px;
-        line-height: 60px;
-        font-size: 18px;
-        border-radius: 1000px;
+      &__search-button-box {
+        @include utility.sp {
+          width: 100%;
+        }
+
+        &__search-button {
+          background-color: utility.$pink;
+          background-image: url('../img/icon/icon-search-white.png');
+          background-repeat: no-repeat;
+          background-position: center left 15px;
+          background-size: 30px;
+          padding-left: 48px;
+          padding-right: 20px;
+          color: utility.$white;
+          height: 60px;
+          line-height: 60px;
+          font-size: 18px;
+          border-radius: 1000px;
+
+          @include utility.sp {
+            padding-left: .4rem;
+            padding-right: .2rem;
+            font-size: .12rem;
+            height: .3rem;
+            line-height: .3rem;
+            background-size: .15rem;
+          }
+        }
       }
     }
   }

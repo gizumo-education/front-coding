@@ -1,4 +1,10 @@
+@use '../../object/utility/utility.scss';
+
 .p-service-introduction {
   padding-top: 105px;
   padding-bottom: 200px;
+  @include utility.sp {
+    padding-top: .6rem;
+    padding-bottom: 1rem;
+  }
 }

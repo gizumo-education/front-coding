@@ -8,6 +8,10 @@
     justify-content: space-between;
     gap: 40px;
     margin-top: 53px;
+    @include utility.sp {
+      gap: .2rem;
+      margin-top: .38rem;
+    }
 
     &__element {
       background-color: utility.$lightPinkBox;
@@ -15,6 +19,9 @@
       width: 570px;
       border-radius: 5px;
       text-align: center;
+      @include utility.sp {
+        padding: .3rem 0;
+      }
 
       &__h3 {
         color: utility.$pink;
@@ -26,6 +33,9 @@
         margin-top: 36px;
         font-size: 14px;
         line-height: 1.5;
+        @include utility.sp {
+          font-size: .12rem;
+        }
       }
     }
 
