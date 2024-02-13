@@ -6,6 +6,10 @@
   padding-top: 105px;
   text-align: center;
 
+  @include utility.sp {
+    padding-top: .6rem;
+  }
+
   &__title {
     font-size: 25px;
     font-weight: utility.$bold;
@@ -14,6 +18,10 @@
   &__inner {
     width: 1180px;
     margin: 0 auto;
+
+    @include utility.sp {
+      width: 100%;
+    }
   }
 
   &__items {
@@ -21,12 +29,28 @@
     display: flex;
     align-items: center;
 
+    @include utility.sp {
+      padding-top: .34rem;
+      flex-direction: column;
+    }
+
     &__item {
       width: 280px;
       height: 360px;
       border: 2px solid utility.$primaryPink;
       border-radius: 10px;
       position: relative;
+
+      @include utility.sp {
+        height: 2.93rem;
+        margin-top: .1rem;
+      }
+
+      &:first-child {
+        @include utility.sp {
+          margin-top: 0;
+        }
+      }
     }
 
     &__right-arrow {
@@ -38,6 +62,14 @@
         border-right: 0;
         border-bottom: 20px solid transparent;
         border-left: 20px solid utility.$primaryPink;
+
+        @include utility.sp {
+          margin-top: .1rem;
+          border-top: 20px solid utility.$primaryPink;
+          border-right: 20px solid transparent;
+          border-bottom: 0;
+          border-left: 20px solid transparent;
+        }
       }
     }
   }
@@ -51,6 +83,11 @@
     top: 10px;
     left: 10px;
 
+    @include utility.sp {
+      width: .45rem;
+      height: .45rem;
+    }
+
     &__num {
       height: 60px;
       font-size: 16px;
@@ -60,22 +97,46 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @include utility.sp {
+        height: .45rem;
+        font-size: .1rem;
+        line-height: 1.2;
+      }
     }
   }
 
   &__detail {
 
+    &>img {
+      @include utility.sp {
+        width: 28%;
+      }
+
+    }
     &.is-step1,
     &.is-step3 {
       padding-top: 60px;
+
+      @include utility.sp {
+        padding-top: .55rem;
+      }
     }
 
     &.is-step2 {
       padding-top: 70px;
+
+      @include utility.sp {
+        padding-top: .55rem;
+      }
     }
 
     &.is-step4 {
       padding-top: 54px;
+
+      @include utility.sp {
+        padding-top: .55rem;
+      }
     }
 
     &__title {
@@ -83,22 +144,50 @@
       line-height: 1.25;
       font-weight: utility.$bold;
 
+      &__pc {
+        @include utility.sp {
+          display: none;
+        }
+      }
+
+      @include utility.sp {
+        font-size: .2rem;
+      }
+
       &.is-step1-title {
         margin-top: 20px;
+
+        @include utility.sp {
+          margin-top: .22rem;
+        }
       }
 
       &.is-step2-title {
         margin-top: 30px;
+
+        @include utility.sp {
+          margin-top: .22rem;
+        }
       }
 
       &.is-step3-title {
         margin-top: 33px;
         height: 35px;
+
+        @include utility.sp {
+          margin-top: .22rem;
+          height: .29rem;
+        }
       }
 
       &.is-step4-title {
         margin-top: 28px;
         height: 35px;
+
+        @include utility.sp {
+          margin-top: .22rem;
+          height: .29rem;
+        }
       }
     }
 
@@ -109,8 +198,25 @@
       line-height: 1.45;
       text-align: left;
 
+      @include utility.sp {
+        width: 2.4rem;
+        margin: .1rem auto 0;
+      }
+
+      &__sp {
+        display: none;
+
+        @include utility.sp {
+          display: block;
+        }
+      }
+
       &.is-step-text {
         margin-top: 30px;
+
+        @include utility.sp {
+          margin-top: .1rem;
+        }
       }
     }
   }
