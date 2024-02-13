@@ -68,6 +68,10 @@
       position: relative;
       margin-left: 15px;
 
+      @include utility.sp {
+        margin-left: .1rem;
+      }
+
       &:first-of-type {
         margin-left: 0;
       }
@@ -99,7 +103,7 @@
 
         @include utility.sp {
           margin-top: 0.15rem;
-          flex-wrap: wrap;
+          flex-direction: column;
           justify-content: center;
         }
       }

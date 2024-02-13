@@ -23,11 +23,12 @@
   }
 
   &.text {
-    width: 299px;
+    width: 300px;
     margin-left: 15px;
 
     @include utility.sp {
-      max-width: 3.2rem;
+      max-width: 100%;
+      width: 3.2rem;
       margin-left: 0;
     }
   }
