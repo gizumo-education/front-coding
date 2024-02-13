@@ -22,6 +22,9 @@
       margin-top: 26px;
       display: flex;
       justify-content: space-between;
+      @include utility.sp {
+        flex-wrap: wrap;
+      }
 
       &>li {
         &>.is-form-element {
@@ -44,6 +47,9 @@
           width: 300px;
           padding-left: 10px;
           padding-right: 10px;
+          @include utility.sp {
+            width: 100%;
+          }
         }
       }
 

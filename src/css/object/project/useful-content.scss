@@ -7,6 +7,9 @@
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    @include utility.sp {
+      flex-wrap: wrap;
+    }
 
     &__img-box {
       width: 380px;
@@ -17,6 +20,9 @@
       color: utility.$white;
       background-color: utility.$bgBlackCover;
       background-blend-mode: darken;
+      @include utility.sp {
+        width: 100%;
+      }
 
       &:nth-last-of-type(1) {
         background-image: url(../img/picture/p-job-useful-content_img01.jpg);
