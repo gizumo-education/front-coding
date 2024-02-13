@@ -5,49 +5,104 @@
   background-color: utility.$bgPrimaryBlue;
   height: 500px;
 
+  @include utility.sp {
+    background-color: transparent;
+    height: 2.7rem;
+  }
+
   &__inner {
     position: relative;
     margin: 0 auto;
     width: 1262px;
-  }
 
-  &__icon {
-    position: absolute;
-    top: 56.49px;
-    left: 655px;
-  }
-
-  &__title {
-    position: absolute;
-    top: 265px;
-    left: 432px;
-    font-size: 50px;
-    font-weight: utility.$bold;
-    color: utility.$white;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  &__num {
-    position: absolute;
-    top: 385.15px;
-    left: 635.65px;
-    width: 391px;
-    height: 69px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    align-content: space-around;
-    font-size: 20px;
-    color: utility.$green;
-    background-color: utility.$white;
-    border: 2.3px solid utility.$green;
-    border-radius: 10px;
-
-    &__span {
-      font-size: 40px;
-      font-weight: utility.$bold;
+    @include utility.sp {
+      width: 100%;
     }
   }
 
+  &__container {
+
+    &__sp-img {
+      display: none;
+    }
+
+    @include utility.sp {
+      &__img {
+        display: none;
+      }
+
+      &__sp-img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 51%;
+    left: 37%;
+    transform: translate(-5%, -50%);
+    text-align: center;
+
+    @include utility.sp {
+      width: 68%;
+      left: 35%;
+    }
+
+    &__icon {
+      max-width: 342px;
+
+      @include utility.sp {
+        max-width: 1.49rem;
+      }
+    }
+
+    &__title {
+      width: 800px;
+      margin-top: 40px;
+      font-size: 50px;
+      font-weight: utility.$bold;
+      color: utility.$white;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      @include utility.sp {
+        max-width: 2.72rem;
+        margin-top: .12rem;
+        font-size: .17rem;
+      }
+    }
+
+    &__num {
+      max-width: 391px;
+      height: 69px;
+      margin: 54px auto 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+      align-content: space-around;
+      font-size: 20px;
+      color: utility.$green;
+      background-color: utility.$white;
+      border: 2.3px solid utility.$green;
+      border-radius: 10px;
+
+      @include utility.sp {
+        max-width: 1.7rem;
+        height: .3rem;
+        font-size: .08rem;
+        margin-top: .18rem;
+      }
+
+      &__span {
+        font-size: 40px;
+        font-weight: utility.$bold;
+
+        @include utility.sp {
+          font-size: .16rem;
+        }
+      }
+    }
+  }
 }
