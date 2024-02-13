@@ -2,13 +2,18 @@
 
 .p-useful-content {
   margin-top: 105px;
+  @include utility.sp {
+    margin-top: .6rem;
+  }
 
   &__wrapper {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
     @include utility.sp {
+      margin-top: .3rem;
       flex-wrap: wrap;
+      gap: .17rem;
     }
 
     &__img-box {
@@ -21,6 +26,7 @@
       background-color: utility.$bgBlackCover;
       background-blend-mode: darken;
       @include utility.sp {
+        padding: .6rem 0;
         width: 100%;
       }
 
@@ -38,17 +44,26 @@
 
       &__h3 {
         font-size: 24px;
+        @include utility.sp {
+          font-size: .21rem;
+        }
       }
 
       &__p {
         font-size: 16px;
         margin-top: 44px;
         line-height: 1.5;
+        @include utility.sp {
+          font-size: .14rem;
+        }
       }
     }
   }
 
   &__button-wrapper {
     margin-top: 80px;
+    @include utility.sp {
+      margin-top: .35rem;
+    }
   }
 }

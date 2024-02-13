@@ -8,6 +8,9 @@
   font-size: 18px;
   color: utility.$white;
   font-weight: bold;
+  @include utility.sp {
+    padding: .21rem .68rem;
+  }
 
   &__text-align-center {
     text-align: center;

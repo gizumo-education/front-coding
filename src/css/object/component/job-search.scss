@@ -25,6 +25,7 @@
       display: flex;
       justify-content: space-between;
       margin-top: 26px;
+      gap: 15px;
 
       @include utility.sp {
         flex-wrap: wrap;
@@ -35,7 +36,6 @@
       &__select-box {
         display: flex;
         justify-content: space-between;
-        gap: 15px;
         width: 100%;
 
         @include utility.sp {
@@ -146,6 +146,7 @@
           color: utility.$white;
           height: 60px;
           line-height: 60px;
+          width: 140px;
           font-size: 18px;
           border-radius: 1000px;
 

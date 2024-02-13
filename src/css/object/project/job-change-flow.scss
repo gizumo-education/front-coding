@@ -7,8 +7,12 @@
     margin-top: 51px;
     display: flex;
     justify-content: space-between;
+
     @include utility.sp {
       flex-wrap: wrap;
+      width: 85%;
+      margin: .34rem auto 0;
+      gap: .4rem;
     }
 
     &__box {
@@ -45,7 +49,7 @@
           border: none;
         }
       }
-      
+
       &::after {
         position: absolute;
         right: -20px;
@@ -58,6 +62,16 @@
         border-bottom: 20px solid transparent;
         border-left: 20px solid utility.$pink;
         border-right: 0;
+
+        @include utility.sp {
+          top: initial;
+          right: 45%;
+          bottom: -.35rem;
+          border-right: 20px solid transparent;
+          border-left: 20px solid transparent;
+          border-top: 20px solid utility.$pink;
+          border-bottom: 0;
+        }
       }
 
       &__h3 {
