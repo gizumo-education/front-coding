@@ -5,6 +5,10 @@
   background-color: utility.$bgPrimaryBlue;
   height: 500px;
 
+  @include utility.tab {
+    height: auto;
+  }
+
   @include utility.sp {
     background-color: transparent;
     height: 2.7rem;

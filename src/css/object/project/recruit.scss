@@ -12,12 +12,12 @@
 
   &__inner {
     width: 1180px;
-    height: 636px;
     margin: 0 auto;
+    padding-bottom: 67px;
 
     @include utility.sp {
       width: 100%;
-      height: 6rem;
+      padding-bottom: .6rem;
     }
   }
 
@@ -27,6 +27,7 @@
 
     @include utility.sp {
       padding-top: .3rem;
+      font-size: .25rem;
       font-weight: utility.$bold;
       text-align: center;
     }
@@ -39,12 +40,14 @@
 
     @include utility.sp {
       margin-top: .35rem;
+      display: block;
+      gap: 0;
     }
-    
-    &__item {
 
+    &__item {
       @include utility.sp {
-        padding: 0 .15rem 0 .15rem;
+        max-width: 3.7rem;
+        margin: 0 auto;
       }
 
       &.is-hide {
@@ -63,10 +66,12 @@
 
       &__sp-img {
         display: none;
-        
+
         @include utility.sp {
           display: block;
+          // margin: 0 auto;
           border-radius: 10px;
+          width: 100%;
         }
       }
 
@@ -76,6 +81,7 @@
 
         @include utility.sp {
           margin-top: .1rem;
+          font-size: .16rem;
           line-height: .22rem;
           font-weight: utility.$bold;
         }
@@ -95,10 +101,11 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        gap: 4px;
+        gap: 4px 0;
 
         @include utility.sp {
           margin-top: .12rem;
+          font-size: .14rem;
         }
 
         &>dt {
@@ -107,6 +114,10 @@
           background-color: utility.$bgPink;
           text-align: center;
           line-height: 21px;
+
+          @include utility.sp {
+            width: .6rem;
+          }
         }
 
         &>dd {
@@ -138,8 +149,13 @@
       }
 
       &>p {
+        font-size: 18px;
         font-weight: utility.$bold;
         line-height: 60px;
+
+        @include utility.sp {
+          font-size: .18rem;
+        }
       }
     }
   }

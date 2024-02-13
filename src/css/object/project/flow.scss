@@ -6,6 +6,10 @@
   padding-top: 105px;
   text-align: center;
 
+  @include utility.tab {
+    padding-top: 1.05rem;
+  }
+
   @include utility.sp {
     padding-top: .6rem;
   }
@@ -13,6 +17,10 @@
   &__title {
     font-size: 25px;
     font-weight: utility.$bold;
+
+    @include utility.sp {
+      font-size: .25rem;
+    }
   }
 
   &__inner {
@@ -30,19 +38,21 @@
     align-items: center;
 
     @include utility.sp {
-      padding-top: .34rem;
+      padding: .34rem .6rem;
       flex-direction: column;
     }
 
     &__item {
-      width: 280px;
-      height: 360px;
+      // width: 280px;
+      // height: 360px;
       border: 2px solid utility.$primaryPink;
       border-radius: 10px;
       position: relative;
 
       @include utility.sp {
-        height: 2.93rem;
+        // max-width: 3.2rem;
+        // max-height: 2.93rem;
+        width: 100%;
         margin-top: .1rem;
       }
 
@@ -65,10 +75,10 @@
 
         @include utility.sp {
           margin-top: .1rem;
-          border-top: 20px solid utility.$primaryPink;
-          border-right: 20px solid transparent;
+          border-top: .2rem solid utility.$primaryPink;
+          border-right: .2rem solid transparent;
           border-bottom: 0;
-          border-left: 20px solid transparent;
+          border-left: .2rem solid transparent;
         }
       }
     }
@@ -84,8 +94,8 @@
     left: 10px;
 
     @include utility.sp {
-      width: .45rem;
-      height: .45rem;
+      max-width: .45rem;
+      max-height: .45rem;
     }
 
     &__num {
@@ -99,14 +109,21 @@
       align-items: center;
 
       @include utility.sp {
-        height: .45rem;
+        max-height: .45rem;
         font-size: .1rem;
-        line-height: 1.2;
+        line-height: .12rem;
       }
     }
   }
 
   &__detail {
+    width: 278px;
+    padding-bottom: 42px;
+
+    @include utility.sp {
+      width: 2.8rem;
+      padding-bottom: .22rem;
+    }
 
     &>img {
       @include utility.sp {
@@ -152,6 +169,7 @@
 
       @include utility.sp {
         font-size: .2rem;
+        line-height: .28rem;
       }
 
       &.is-step1-title {
@@ -192,14 +210,17 @@
     }
 
     &__text {
-      width: 237px;
+      // width: 237px;
+      max-width: 90%;
       margin: 18px auto 0;
       font-size: 14px;
       line-height: 1.45;
       text-align: left;
 
       @include utility.sp {
-        width: 2.4rem;
+        // max-width: 2.4rem;
+        max-width: 90%;
+        font-size: .14rem;
         margin: .1rem auto 0;
       }
 

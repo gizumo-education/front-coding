@@ -3,7 +3,7 @@
 
 .p-search {
   width: 1180px;
-  height: 240px;
+  // height: 240px;
   margin: 0 auto;
   text-align: center;
   background-color: utility.$bgSecondaryBlue;
@@ -57,11 +57,13 @@
     justify-content: center;
     flex-direction: row;
     margin-top: 26px;
+    padding-bottom: 40px;
 
     @include utility.sp {
       flex-wrap: wrap;
       // gap: .1rem;
       margin-top: .13rem;
+      padding-bottom: .2rem;
     }
 
     &__box {
@@ -135,6 +137,7 @@
 
           @include utility.sp {
             margin-top: .1rem;
+            font-size: .18rem;
           }
         }
       }
