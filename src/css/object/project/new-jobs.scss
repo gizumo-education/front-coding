@@ -4,18 +4,33 @@
   padding-top: 64px;
   padding-bottom: 67px;
   background-color: utility.$bgLightBlue;
+  @include utility.sp {
+    padding-top: .3rem;
+  }
 
   &__h2 {
     font-size: 25px;
+    @include utility.sp {
+      text-align: center;
+      font-weight: utility.$bold;
+    }
   }
 
   &__box {
     display: flex;
     justify-content: space-between;
+    gap: 25px;
+    margin-top: 25px;
+    @include utility.sp {
+      flex-wrap: wrap;
+      margin-top: .35rem;
+    }
 
     &__job {
       width: 280px;
-      margin-top: 25px;
+      @include utility.sp {
+        width: 100%;
+      }
 
       &__img {
         border-radius: 10px;
@@ -25,12 +40,19 @@
         font-size: 16px;
         line-height: 22px;
         margin-top: 8px;
+        @include utility.sp {
+          font-weight: utility.$bold;
+        }
       }
 
       &__detail {
         font-size: 14px;
         line-height: 20px;
         margin-top: 7px;
+
+        @include utility.sp {
+          margin-top: .12rem;
+        }
 
         &>li {
           margin-top: 4px;

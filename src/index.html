@@ -58,47 +58,49 @@
         <div class="c-jop-search__box">
           <h2 class="c-h2">お仕事検索</h2>
           <p class="c-jop-search__box__supplement">働きたい職種・地域・希望給与を入れて検索！</p>
-          <ul class="c-jop-search__box__form">
-            <li class="c-jop-search__box__form__select">
-              <select class="is-form-element" name="業種">
-                <option value="医療事務" selected>医療事務</option>
-                <option value="調剤事務">調剤事務</option>
-                <option value="診療情報管理士">診療情報管理士</option>
-                <option value="歯科助手">歯科助手</option>
-                <option value="歯科事務">歯科事務</option>
-                <option value="看護補助・看護助手">看護補助・看護助手</option>
-                <option value="病院内SE">病院内SE</option>
-              </select>
-            </li>
-            <li class="c-jop-search__box__form__select">
-              <select class="is-form-element" name="都道府県">
-                <option value="茨城県">茨城県</option>
-                <option value="神奈川県">神奈川県</option>
-                <option value="群馬県">群馬県</option>
-                <option value="埼玉県">埼玉県</option>
-                <option value="千葉県">千葉県</option>
-                <option value="東京都" selected>東京都</option>
-                <option value="栃木県">栃木県</option>
-              </select>
-            </li>
-            <li class="c-jop-search__box__form__select">
-              <select class="is-form-element" name="給料">
-                <option value="月給17万〜">月給17万〜</option>
-                <option value="月給18万〜">月給18万〜</option>
-                <option value="月給19万〜">月給19万〜</option>
-                <option value="月給20万〜" selected>月給20万〜</option>
-                <option value="月給21万〜">月給21万〜</option>
-                <option value="月給22万〜">月給22万〜</option>
-                <option value="月給23万〜">月給23万〜</option>
-              </select>
-            </li>
-            <li class="c-jop-search__box__form__area">
-              <input class="is-form-element input-box" type="text" name="search-keyword" required placeholder="キーワード・企業名・スキルなど" >
-            </li>
-            <li>
-              <a href="" class="c-jop-search__box__form__search-button">検索する</a>
-            </li>
-          </ul>
+          <div class="c-jop-search__box__form">
+            <ul class="c-jop-search__box__form__select-box">
+              <li class="c-jop-search__box__form__select-box__li">
+                <select class="c-jop-search__box__form__select-box__li__select" name="業種">
+                  <option value="医療事務" selected>医療事務</option>
+                  <option value="調剤事務">調剤事務</option>
+                  <option value="診療情報管理士">診療情報管理士</option>
+                  <option value="歯科助手">歯科助手</option>
+                  <option value="歯科事務">歯科事務</option>
+                  <option value="看護補助・看護助手">看護補助・看護助手</option>
+                  <option value="病院内SE">病院内SE</option>
+                </select>
+              </li>
+              <li class="c-jop-search__box__form__select-box__li">
+                <select class="c-jop-search__box__form__select-box__li__select" name="都道府県">
+                  <option value="茨城県">茨城県</option>
+                  <option value="神奈川県">神奈川県</option>
+                  <option value="群馬県">群馬県</option>
+                  <option value="埼玉県">埼玉県</option>
+                  <option value="千葉県">千葉県</option>
+                  <option value="東京都" selected>東京都</option>
+                  <option value="栃木県">栃木県</option>
+                </select>
+              </li>
+              <li class="c-jop-search__box__form__select-box__li">
+                <select class="c-jop-search__box__form__select-box__li__select" name="給料">
+                  <option value="月給17万〜">月給17万〜</option>
+                  <option value="月給18万〜">月給18万〜</option>
+                  <option value="月給19万〜">月給19万〜</option>
+                  <option value="月給20万〜" selected>月給20万〜</option>
+                  <option value="月給21万〜">月給21万〜</option>
+                  <option value="月給22万〜">月給22万〜</option>
+                  <option value="月給23万〜">月給23万〜</option>
+                </select>
+              </li>
+            </ul>
+            <div class="c-jop-search__box__form__input-box">
+              <input class="c-jop-search__box__form__input-box__input is-form-element" type="text" name="search-keyword" required placeholder="キーワード・企業名・スキルなど" >
+            </div>
+            <div class="c-jop-search__box__form__search-button-box">
+              <a href="" class="c-jop-search__box__form__search-button-box__search-button">検索する</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -172,7 +174,7 @@
             <ul class="p-feature__box">
               <li class="p-feature__box__element">
                 <h3 class="p-feature__box__element__h3">WEB上で応募完結</h3>
-                <p>エントリーシートの記入を済ませれば、あとは気になる企業に応募して<br>待つだけで面接アポまで完結！</p>
+                <p>エントリーシートの記入を済ませれば、<br class="is-sp">あとは気になる企業に応募して<br class="is-pc">待つだけで面接アポまで完結！</p>
               </li>
               <li class="p-feature__box__element">
                 <h3 class="p-feature__box__element__h3">安心・安全</h3>
@@ -181,13 +183,13 @@
               </li>
               <li class="p-feature__box__element">
                 <h3 class="p-feature__box__element__h3">わかりやすい</h3>
-                <p>当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br>
-                  といったご自身にピッタリマッチした求人を見つけることができる！</p>
+                <p>当求人サイトは医療事務に特化しておりさらに<br class="is-sp">こだわり検索や地域から検索<br class="is-pc">
+                  といったご自身に<br class="is-sp">ピッタリマッチした求人を見つけることができる！</p>
               </li>
               <li class="p-feature__box__element">
                 <h3 class="p-feature__box__element__h3">完全無料</h3>
-                <p>当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br>
-                  運営されています。ですので求職者の方からは応募前はもちろん、<br>
+                <p>当サイトは求人元の企業やグループ会社からのスポンサー費用に<br class="is-sp">よって<br class="is-pc">
+                  運営されています。ですので求職者の方からは<br class="is-sp">応募前はもちろん、<br class="is-pc">
                   内定後も費用は一切いただきません。</p>
               </li>
             </ul>
@@ -251,51 +253,54 @@
           </div>
         </section>
 
-        <section class="c-jop-search p-jop-search-wrapper__02">
+        <section class="c-jop-search p-jop-search-wrapper__01">
           <div class="l-inner">
             <div class="c-jop-search__box">
               <h2 class="c-h2">お仕事検索</h2>
               <p class="c-jop-search__box__supplement">働きたい職種・地域・希望給与を入れて検索！</p>
-              <ul class="c-jop-search__box__form">
-                <li class="c-jop-search__box__form__select">
-                  <select class="is-form-element" name="業種">
-                    <option value="医療事務" selected>医療事務</option>
-                    <option value="調剤事務">調剤事務</option>
-                    <option value="診療情報管理士">診療情報管理士</option>
-                    <option value="歯科助手">歯科助手</option>
-                    <option value="歯科事務">歯科事務</option>
-                    <option value="看護補助・看護助手">看護補助・看護助手</option>
-                    <option value="病院内SE">病院内SE</option>
-                  </select>
-                </li>
-                <li class="c-jop-search__box__form__select">
-                  <select class="is-form-element" name="都道府県">
-                    <option value="茨城県">茨城県</option>
-                    <option value="神奈川県">神奈川県</option>
-                    <option value="群馬県">群馬県</option>
-                    <option value="埼玉県">埼玉県</option>
-                    <option value="千葉県">千葉県</option>
-                    <option value="東京都" selected>東京都</option>
-                    <option value="栃木県">栃木県</option>
-                  </select>
-                </li>
-                <li class="c-jop-search__box__form__select">
-                  <select class="is-form-element">月給17万〜</option>
-                    <option value="月給18万〜">月給18万〜</option>
-                    <option value="月給19万〜">月給19万〜</option>
-                    <option value="月給20万〜" selected>月給20万〜</option>
-                    <option value="月給21万〜">月給21万〜</option>
-                    <option value="月給22万〜">月給22万〜</option>
-                    <option value="月給23万〜">月給23万〜</option>
-                  </select>
-                </li>
-                <li class="c-jop-search__box__form__area">
-                  <input class="is-form-element input-box" type="text" name="search-keyword" required placeholder="キーワード・企業名・スキルなど" >
-                </li>
-                <li>
-                  <a href="" class="c-jop-search__box__form__search-button">検索する</a>
-                </li>
-              </ul>
+              <div class="c-jop-search__box__form">
+                <ul class="c-jop-search__box__form__select-box">
+                  <li class="c-jop-search__box__form__select-box__li">
+                    <select class="c-jop-search__box__form__select-box__li__select" name="業種">
+                      <option value="医療事務" selected>医療事務</option>
+                      <option value="調剤事務">調剤事務</option>
+                      <option value="診療情報管理士">診療情報管理士</option>
+                      <option value="歯科助手">歯科助手</option>
+                      <option value="歯科事務">歯科事務</option>
+                      <option value="看護補助・看護助手">看護補助・看護助手</option>
+                      <option value="病院内SE">病院内SE</option>
+                    </select>
+                  </li>
+                  <li class="c-jop-search__box__form__select-box__li">
+                    <select class="c-jop-search__box__form__select-box__li__select" name="都道府県">
+                      <option value="茨城県">茨城県</option>
+                      <option value="神奈川県">神奈川県</option>
+                      <option value="群馬県">群馬県</option>
+                      <option value="埼玉県">埼玉県</option>
+                      <option value="千葉県">千葉県</option>
+                      <option value="東京都" selected>東京都</option>
+                      <option value="栃木県">栃木県</option>
+                    </select>
+                  </li>
+                  <li class="c-jop-search__box__form__select-box__li">
+                    <select class="c-jop-search__box__form__select-box__li__select" name="給料">
+                      <option value="月給17万〜">月給17万〜</option>
+                      <option value="月給18万〜">月給18万〜</option>
+                      <option value="月給19万〜">月給19万〜</option>
+                      <option value="月給20万〜" selected>月給20万〜</option>
+                      <option value="月給21万〜">月給21万〜</option>
+                      <option value="月給22万〜">月給22万〜</option>
+                      <option value="月給23万〜">月給23万〜</option>
+                    </select>
+                  </li>
+                </ul>
+                <div class="c-jop-search__box__form__input-box">
+                  <input class="c-jop-search__box__form__input-box__input is-form-element" type="text" name="search-keyword" required placeholder="キーワード・企業名・スキルなど" >
+                </div>
+                <div class="c-jop-search__box__form__search-button-box">
+                  <a href="" class="c-jop-search__box__form__search-button-box__search-button">検索する</a>
+                </div>
+              </div>
             </div>
           </div>
         </section>

@@ -4,4 +4,8 @@
   font-size: 25px;
   font-weight: utility.$bold;
   text-align: center;
+
+  @include utility.sp {
+    font-size: 0.22rem;
+  }
 }
