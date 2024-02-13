@@ -10,11 +10,22 @@
     width: 1180px;
     height: 636px;
     margin: 0 auto;
+
+    @include utility.sp {
+      width: 100%;
+      height: 6rem;
+    }
   }
 
   &__title {
     padding-top: 64px;
     font-size: 25px;
+
+    @include utility.sp {
+      padding-top: .3rem;
+      font-weight: utility.$bold;
+      text-align: center;
+    }
   }
 
   &__items {
@@ -22,15 +33,52 @@
     display: flex;
     gap: 20px;
 
+    @include utility.sp {
+      margin-top: .35rem;
+    }
+    
     &__item {
 
-      &>img {
+      @include utility.sp {
+        padding: 0 .15rem 0 .15rem;
+      }
+
+      &.is-hide {
+        @include utility.sp {
+          display: none;
+        }
+      }
+
+      &__img {
+        border-radius: 10px;
+
+        @include utility.sp {
+          display: none;
+        }
+      }
+
+      &__sp-img {
+        display: block;
         border-radius: 10px;
       }
 
       &__text {
         margin-top: 9px;
         font-size: 16px;
+
+        @include utility.sp {
+          margin-top: .1rem;
+          line-height: .22rem;
+          font-weight: utility.$bold;
+        }
+
+        &__sp {
+          display: none;
+
+          @include utility.sp {
+            display: block;
+          }
+        }
       }
 
       &__desc {
@@ -40,6 +88,10 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 4px;
+
+        @include utility.sp {
+          margin-top: .12rem;
+        }
 
         &>dt {
           width: 60px;
@@ -52,6 +104,10 @@
         &>dd {
           margin-left: 10px;
           width: 70%;
+
+          @include utility.sp {
+            margin-left: .21rem;
+          }
         }
       }
     }
@@ -61,9 +117,17 @@
     text-align: center;
     margin-top: 60px;
 
+    @include utility.sp {
+      margin-top: .44rem;
+    }
+
     &__button {
       width: 360px;
       height: 60px;
+
+      @include utility.sp {
+        width: 3.7rem;
+      }
 
       &>p {
         font-weight: utility.$bold;
