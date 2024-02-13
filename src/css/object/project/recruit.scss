@@ -62,8 +62,12 @@
       }
 
       &__sp-img {
-        display: block;
-        border-radius: 10px;
+        display: none;
+        
+        @include utility.sp {
+          display: block;
+          border-radius: 10px;
+        }
       }
 
       &__text {
