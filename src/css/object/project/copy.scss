@@ -6,6 +6,9 @@
   background:  url(../img/picture/p-copy-bg.jpg) no-repeat center / cover utility.$bgBlackCover;
   background-blend-mode: darken;
   height: 300px;
+  @include utility.tab {
+    height: 3rem;
+  }
   @include utility.sp {
     height: .75rem;
   }

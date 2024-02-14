@@ -1,10 +1,26 @@
+@use '../../object/utility/utility.scss';
+
 .p-job-search-wrapper {
   &__01 {
     padding-top: 60px;
     padding-bottom: 60px;
+    @include utility.tab {
+      padding-top: .6rem;
+      padding-bottom: .6rem;
+    }
+    @include utility.sp {
+      padding-top: .25rem;
+      padding-bottom: .25rem;
+    }
   }
 
   &__02 {
     margin-top: 150px;
+    @include utility.tab {
+      margin-top: 1.5rem;
+    }
+    @include utility.sp {
+      margin-top: .6rem;
+    }
   }
 }

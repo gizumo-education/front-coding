@@ -8,6 +8,10 @@
     padding: 40px;
     text-align: center;
 
+    @include utility.tab {
+      padding: .4rem;
+    }
+
     @include utility.sp {
       padding: .15rem .25rem;
     }
@@ -27,9 +31,13 @@
       margin-top: 26px;
       gap: 15px;
 
+      @include utility.tab {
+        gap: .15rem;
+      }
+
       @include utility.sp {
         flex-wrap: wrap;
-        gap: 0.15rem;
+        gap: .15rem;
         margin-top: .2rem;
       }
 
@@ -37,6 +45,11 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+        @include utility.tab {
+          gap: .15rem;
+          width: initial;
+        }
 
         @include utility.sp {
           flex-wrap: wrap;
@@ -63,12 +76,17 @@
             border-left: 10px solid transparent;
             border-top: 10px solid utility.$deepPink;
             border-bottom: 0;
-
+            @include utility.tab {
+              right: .1rem;
+              border-right: .1rem solid transparent;
+              border-left: .1rem solid transparent;
+              border-top: .1rem solid utility.$deepPink;
+            }
             @include utility.sp {
-              right: 0.05rem;
-              border-right: 7px solid transparent;
-              border-left: 7px solid transparent;
-              border-top: 7px solid utility.$deepPink;
+              right: .05rem;
+              border-right: .07rem solid transparent;
+              border-left: .07rem solid transparent;
+              border-top: .07rem solid utility.$deepPink;
             }
           }
 
@@ -87,6 +105,13 @@
             outline: none;
             resize: none;
 
+            @include utility.tab {
+              width: 1.8rem;
+              height: .6rem;
+              font-size: .18rem;
+              padding: .165rem;
+            }
+
             @include utility.sp {
               font-size: .12rem;
               padding: .06rem .08rem;
@@ -95,7 +120,6 @@
               border-radius: .05rem;
             }
           }
-
         }
       }
 
@@ -119,11 +143,17 @@
           outline: none;
           resize: none;
 
+          @include utility.tab {
+            width: 3rem;
+            height: .6rem;
+            font-size: .18rem;
+            padding: .165rem;
+          }
+
           @include utility.sp {
             width: 100%;
             font-size: .12rem;
             padding: .06rem .08rem;
-            width: 100%;
             height: auto;
             border-radius: .05rem;
           }
@@ -146,14 +176,24 @@
           color: utility.$white;
           height: 60px;
           line-height: 60px;
-          width: 140px;
+          min-width: 140px;
           font-size: 18px;
           border-radius: 1000px;
+
+          @include utility.tab {
+            width: .14rem;
+            height: .6rem;
+            font-size: .18rem;
+            padding-left: .48rem;
+            padding-right: .2rem;
+            line-height: .6rem;
+            background-size: .3rem;
+          }
 
           @include utility.sp {
             padding-left: .4rem;
             padding-right: .2rem;
-            font-size: .12rem;
+            font-size: .18rem;
             height: .3rem;
             line-height: .3rem;
             background-size: .15rem;

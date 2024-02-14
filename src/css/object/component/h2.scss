@@ -5,7 +5,10 @@
   font-weight: utility.$bold;
   text-align: center;
 
+  @include utility.tab {
+    font-size: .25rem;
+  }
   @include utility.sp {
-    font-size: 0.22rem;
+    font-size: .22rem;
   }
 }

@@ -10,7 +10,11 @@
 
   &__h2 {
     font-size: 25px;
+    @include utility.tab {
+      font-size: .25rem;
+    }
     @include utility.sp {
+      font-size: .25rem;
       text-align: center;
       font-weight: utility.$bold;
     }
@@ -21,6 +25,10 @@
     justify-content: space-between;
     gap: 25px;
     margin-top: 25px;
+    @include utility.tab {
+      margin-top: .25rem;
+      gap: .25rem;
+    }
     @include utility.sp {
       flex-wrap: wrap;
       margin-top: .35rem;
@@ -30,6 +38,7 @@
       width: 280px;
       @include utility.sp {
         width: 100%;
+        text-align: center;
       }
 
       &__img {
@@ -40,8 +49,16 @@
         font-size: 16px;
         line-height: 22px;
         margin-top: 8px;
+        @include utility.tab {
+          font-size: .16rem;
+          line-height: .22rem;
+          margin-top: .08rem;
+        }
         @include utility.sp {
+          font-size: .16rem;
           font-weight: utility.$bold;
+          text-align: left;
+          line-height: .22rem;
         }
       }
 
@@ -49,9 +66,16 @@
         font-size: 14px;
         line-height: 20px;
         margin-top: 7px;
-
+        @include utility.tab {
+          font-size: .14rem;
+          line-height: .2rem;
+          margin-top: .07rem;
+        }
         @include utility.sp {
           margin-top: .12rem;
+          text-align: left;
+          font-size: .14rem;
+          line-height: .2rem;
         }
 
         &>li {
@@ -68,6 +92,16 @@
             background-color: utility.$lightPinkTh;
             text-align: center;
             margin-right: 10px;
+            @include utility.tab {
+              width: .6rem;
+              height: .2rem;
+              margin-right: .1rem;
+            }
+            @include utility.sp {
+              width: .6rem;
+              height: .2rem;
+              margin-right: .1rem;
+            }
           }
         }
       }
@@ -76,6 +110,12 @@
 
   &__button-wrapper {
     margin-top: 60px;
+    @include utility.tab {
+      margin-top: .6rem;
+    }
+    @include utility.sp {
+      margin-top: .44rem;
+    }
   }
 
 }

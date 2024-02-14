@@ -8,8 +8,13 @@
   font-size: 18px;
   color: utility.$white;
   font-weight: bold;
+  @include utility.tab {
+    padding: .21rem .72rem;
+    font-size: .18rem;
+  }
   @include utility.sp {
     padding: .21rem .68rem;
+    font-size: .18rem;
   }
 
   &__text-align-center {

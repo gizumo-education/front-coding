@@ -3,6 +3,10 @@
 .p-service-introduction {
   padding-top: 105px;
   padding-bottom: 200px;
+  @include utility.tab {
+    padding-top: 1.05rem;
+    padding-bottom: 2rem;
+  }
   @include utility.sp {
     padding-top: .6rem;
     padding-bottom: 1rem;

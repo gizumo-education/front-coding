@@ -9,6 +9,12 @@
   background-position: center;
   text-align: right;
   height: 500px;
+  @include utility.tab {
+    height: 5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-size: cover;
+  }
   @include utility.sp {
     background-image: url(../img/picture/sp-p-keyvisual-bg.jpg);
     background-size: cover;
@@ -32,6 +38,9 @@
 
       &:nth-child(2) {
         margin-top: 40px;
+        @include utility.tab {
+          margin-top: .4rem;
+        }
         @include utility.sp {
           margin-top: 0.12rem;
         }
@@ -39,6 +48,9 @@
 
       &:nth-child(3) {
         margin-top: 60px;
+        @include utility.tab {
+          margin-top: .6rem;
+        }
         @include utility.sp {
           margin-top: 0.2rem;
         }
@@ -46,12 +58,18 @@
 
       &__no1 {
         margin: 0 auto;
+        @include utility.tab {
+          width: 3rem;
+        }
         @include utility.sp {
           width: 1.5rem;
         }
       }
 
       &__h1 {
+        @include utility.tab {
+          width: 7rem;
+        }
         @include utility.sp {
           width: 2.72rem;
         }
@@ -65,19 +83,26 @@
         font-size: 20px;
         color: utility.$lightGreen;
         padding: 10px 30px;
+        @include utility.tab {
+          font-size: .2rem;
+          padding: .1rem .3rem;
+        }
         @include utility.sp {
           width: 2rem;
-          font-size: 0.1rem;
-          padding: 0.05rem 0.2rem;
+          font-size: .1rem;
+          padding: .05rem .2rem;
           border: 1px solid utility.$lightGreen;
-          border-radius: 0.05rem;
+          border-radius: .05rem;
         }
 
         &--big-text {
           font-size: 40px;
           font-weight: utility.$bold;
+          @include utility.tab {
+            font-size: .4rem;
+          }
           @include utility.sp {
-            font-size: 0.2rem;
+            font-size: .2rem;
           }
         }
       }
