@@ -6,6 +6,10 @@
   background-color: utility.$bgLightBlue;
   margin-top: 60px;
 
+  @include utility.tab {
+    margin-top: .6rem;
+  }
+
   @include utility.sp {
     margin-top: .25rem;
   }
@@ -14,6 +18,11 @@
     width: 1180px;
     margin: 0 auto;
     padding-bottom: 67px;
+
+    @include utility.tab {
+      width: 11.8rem;
+      padding-bottom: .67rem;
+    }
 
     @include utility.sp {
       width: 100%;
@@ -24,6 +33,11 @@
   &__title {
     padding-top: 64px;
     font-size: 25px;
+
+    @include utility.tab {
+      padding-top: .64rem;
+      font-size: .25rem;
+    }
 
     @include utility.sp {
       padding-top: .3rem;
@@ -37,6 +51,11 @@
     margin-top: 25px;
     display: flex;
     gap: 20px;
+
+    @include utility.tab {
+      margin-top: .25rem;
+      gap: .2rem;
+    }
 
     @include utility.sp {
       margin-top: .35rem;
@@ -59,6 +78,10 @@
       &__img {
         border-radius: 10px;
 
+        @include utility.tab {
+          border-radius: .1rem;
+        }
+
         @include utility.sp {
           display: none;
         }
@@ -78,6 +101,11 @@
       &__text {
         margin-top: 9px;
         font-size: 16px;
+
+        @include utility.tab {
+          margin-top: .09rem;
+          font-size: .16rem;
+        }
 
         @include utility.sp {
           margin-top: .1rem;
@@ -103,6 +131,12 @@
         flex-wrap: wrap;
         gap: 4px 0;
 
+        @include utility.tab {
+          margin-top: .07rem;
+          font-size: .14rem;
+          gap: .04rem 0;
+        }
+
         @include utility.sp {
           margin-top: .12rem;
           font-size: .14rem;
@@ -115,6 +149,12 @@
           text-align: center;
           line-height: 21px;
 
+          @include utility.tab {
+            width: .6rem;
+            height: .21rem;
+            line-height: .21rem;
+          }
+
           @include utility.sp {
             width: .6rem;
           }
@@ -123,6 +163,10 @@
         &>dd {
           margin-left: 10px;
           width: 70%;
+
+          @include utility.tab {
+            margin-left: .1rem;
+          }
 
           @include utility.sp {
             margin-left: .21rem;
@@ -136,6 +180,10 @@
     text-align: center;
     margin-top: 60px;
 
+    @include utility.tab {
+      margin-top: .6rem;
+    }
+
     @include utility.sp {
       margin-top: .44rem;
     }
@@ -143,6 +191,11 @@
     &__button {
       width: 360px;
       height: 60px;
+
+      @include utility.tab {
+        width: 3.6rem;
+        height: .6rem;
+      }
 
       @include utility.sp {
         width: 3.7rem;
@@ -152,6 +205,11 @@
         font-size: 18px;
         font-weight: utility.$bold;
         line-height: 60px;
+
+        @include utility.tab {
+          font-size: .18rem;
+          line-height: .6rem;
+        }
 
         @include utility.sp {
           font-size: .18rem;

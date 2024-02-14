@@ -4,6 +4,10 @@
 .l-footer {
   margin-top: 200px;
 
+  @include utility.tab {
+    margin-top: 2rem;
+  }
+
   @include utility.sp {
     margin-top: 1rem;
   }

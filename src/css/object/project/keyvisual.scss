@@ -3,21 +3,21 @@
 
 .p-keyvisual {
   background-color: utility.$bgPrimaryBlue;
-  height: 500px;
-
-  @include utility.tab {
-    height: auto;
-  }
+  // height: auto;
 
   @include utility.sp {
     background-color: transparent;
-    height: 2.7rem;
+    // height: 2.7rem;
   }
 
   &__inner {
     position: relative;
     margin: 0 auto;
     width: 1262px;
+
+    @include utility.tab {
+      width: 12.62rem;
+    }
 
     @include utility.sp {
       width: 100%;
@@ -57,6 +57,10 @@
     &__icon {
       max-width: 342px;
 
+      @include utility.tab {
+        max-width: 3.42rem;
+      }
+
       @include utility.sp {
         max-width: 1.49rem;
       }
@@ -68,7 +72,14 @@
       font-size: 50px;
       font-weight: utility.$bold;
       color: utility.$white;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+      @include utility.tab {
+        width: 8rem;
+        margin-top: .4rem;
+        font-size: .5rem;
+        text-shadow: 0 .04rem .04rem rgba(0, 0, 0, 0.25);
+      }
 
       @include utility.sp {
         max-width: 2.72rem;
@@ -92,6 +103,15 @@
       border: 2.3px solid utility.$green;
       border-radius: 10px;
 
+      @include utility.tab {
+        max-width: 3.91rem;
+        height: .69rem;
+        margin: .54rem auto 0;
+        font-size: .2rem;
+        border: .023rem solid utility.$green;
+        border-radius: .1rem;
+      }
+
       @include utility.sp {
         max-width: 1.7rem;
         height: .3rem;
@@ -102,6 +122,10 @@
       &__span {
         font-size: 40px;
         font-weight: utility.$bold;
+
+        @include utility.tab {
+          font-size: .4rem;
+        }
 
         @include utility.sp {
           font-size: .16rem;

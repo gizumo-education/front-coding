@@ -18,6 +18,10 @@
     font-size: 25px;
     font-weight: utility.$bold;
 
+    @include utility.tab {
+      font-size: .25rem;
+    }
+
     @include utility.sp {
       font-size: .25rem;
     }
@@ -26,6 +30,10 @@
   &__inner {
     width: 1180px;
     margin: 0 auto;
+
+    @include utility.tab {
+      width: 11.8rem;
+    }
 
     @include utility.sp {
       width: 100%;
@@ -36,6 +44,10 @@
     padding-top: 50px;
     display: flex;
     align-items: center;
+
+    @include utility.tab {
+      padding-top: .5rem;
+    }
 
     @include utility.sp {
       padding: .34rem .6rem;
@@ -48,6 +60,11 @@
       border: 2px solid utility.$primaryPink;
       border-radius: 10px;
       position: relative;
+
+      @include utility.tab {
+        border: .02rem solid utility.$primaryPink;
+        border-radius: .1rem;
+      }
 
       @include utility.sp {
         // max-width: 3.2rem;
@@ -73,6 +90,12 @@
         border-bottom: 20px solid transparent;
         border-left: 20px solid utility.$primaryPink;
 
+        @include utility.tab {
+          border-top: .2rem solid transparent;
+          border-bottom: .2rem solid transparent;
+          border-left: .2rem solid utility.$primaryPink;
+        }
+
         @include utility.sp {
           margin-top: .1rem;
           border-top: .2rem solid utility.$primaryPink;
@@ -93,6 +116,13 @@
     top: 10px;
     left: 10px;
 
+    @include utility.tab {
+      width: .6rem;
+      height: .6rem;
+      top: .1rem;
+      left: .1rem
+    }
+
     @include utility.sp {
       max-width: .45rem;
       max-height: .45rem;
@@ -108,6 +138,11 @@
       justify-content: center;
       align-items: center;
 
+      @include utility.tab {
+        height: .6rem;
+        font-size: .16rem;
+      }
+
       @include utility.sp {
         max-height: .45rem;
         font-size: .1rem;
@@ -119,6 +154,11 @@
   &__detail {
     width: 278px;
     padding-bottom: 42px;
+
+    @include utility.tab {
+      width: 2.78rem;
+      padding-bottom: .42rem;
+    }
 
     @include utility.sp {
       width: 2.8rem;
@@ -135,6 +175,10 @@
     &.is-step3 {
       padding-top: 60px;
 
+      @include utility.tab {
+        padding-top: .6rem;
+      }
+
       @include utility.sp {
         padding-top: .55rem;
       }
@@ -143,6 +187,10 @@
     &.is-step2 {
       padding-top: 70px;
 
+      @include utility.tab {
+        padding-top: .7rem;
+      }
+
       @include utility.sp {
         padding-top: .55rem;
       }
@@ -150,6 +198,10 @@
 
     &.is-step4 {
       padding-top: 54px;
+
+      @include utility.tab {
+        padding-top: .54rem;
+      }
 
       @include utility.sp {
         padding-top: .55rem;
@@ -160,6 +212,10 @@
       font-size: 24px;
       line-height: 1.25;
       font-weight: utility.$bold;
+
+      @include utility.tab {
+        font-size: .24rem;
+      }
 
       &__pc {
         @include utility.sp {
@@ -175,6 +231,10 @@
       &.is-step1-title {
         margin-top: 20px;
 
+        @include utility.tab {
+          margin-top: .2rem;
+        }
+
         @include utility.sp {
           margin-top: .22rem;
         }
@@ -182,6 +242,10 @@
 
       &.is-step2-title {
         margin-top: 30px;
+
+        @include utility.tab {
+          margin-top: .3rem;
+        }
 
         @include utility.sp {
           margin-top: .22rem;
@@ -192,6 +256,11 @@
         margin-top: 33px;
         height: 35px;
 
+        @include utility.tab {
+          margin-top: .33rem;
+          height: .35rem;
+        }
+
         @include utility.sp {
           margin-top: .22rem;
           height: .29rem;
@@ -201,6 +270,11 @@
       &.is-step4-title {
         margin-top: 28px;
         height: 35px;
+
+        @include utility.tab {
+          margin-top: .28rem;
+          height: .35rem;
+        }
 
         @include utility.sp {
           margin-top: .22rem;
@@ -216,6 +290,11 @@
       font-size: 14px;
       line-height: 1.45;
       text-align: left;
+
+      @include utility.tab {
+        margin: .18rem auto 0;
+        font-size: .14rem;
+      }
 
       @include utility.sp {
         // max-width: 2.4rem;
@@ -234,6 +313,10 @@
 
       &.is-step-text {
         margin-top: 30px;
+
+        @include utility.tab {
+          margin-top: .3rem;
+        }
 
         @include utility.sp {
           margin-top: .1rem;
