@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="l-header">
+  <header class="l-header" id="top">
     <nav class="l-header__nav">
       <div class="l-header__pc-items">
         <ul class="l-header__items">
@@ -33,18 +33,42 @@
         </button>
       </div> <!-- l-header__sp-items -->
     </nav>
+    <nav class="l-header__sp-nav">
+      <div class="l-header__sp-nav__menu">
+        <ul class="l-header__sp-nav__items">
+          <li class="l-header__sp-nav__items__item">
+            <a href="#top" class="l-header__sp-nav__link">トップ</a>
+          </li>
+          <li class="l-header__sp-nav__items__item">
+            <a href="#recruit" class="l-header__sp-nav__link">新着求人</a>
+          </li>
+          <li class="l-header__sp-nav__items__item">
+            <a href="#service" class="l-header__sp-nav__link">4つの特徴</a>
+          </li>
+          <li class="l-header__sp-nav__items__item">
+            <a href="#flow" class="l-header__sp-nav__link">転職までの流れ</a>
+          </li>
+          <li class="l-header__sp-nav__items__item">
+            <a href="#column" class="l-header__sp-nav__link">転職お役立ちコンテンツ</a>
+          </li>
+        </ul>
+      </div> <!-- l-header__sp-nav__menu -->
+    </nav> <!-- l-header__sp-nav -->
   </header>
 
   <div class="p-keyvisual">
     <div class="p-keyvisual__inner">
-      <div class="p-keyvisual__img__area">
-        <img class="p-keyvisual__img" src="./img/picture/keyvisual.png" alt="メインイメージ">
-      </div> <!-- p-keyvisual__area -->
-      <img class="p-keyvisual__icon" src="./img/icon/keyvisual-text.png" alt="2021年 使って良かった転職サイトno.1">
-      <h1 class="p-keyvisual__title">医療事務求人を探すならギズジョブ</h1>
-      <p class="p-keyvisual__num">
-        現在の求人掲載数：<span class="p-keyvisual__num__span">2,300</span>件
-      </p>
+      <div class="p-keyvisual__container">
+        <img class="p-keyvisual__container__img" src="./img/picture/keyvisual.png" alt="メインイメージ">
+        <img class="p-keyvisual__container__sp-img" src="./img/picture/keyvisual-sp.jpg" alt="メインイメージ">
+      </div> <!-- p-keyvisual__container -->
+      <div class="p-keyvisual__text-box">
+        <img class="p-keyvisual__text-box__icon" src="./img/icon/keyvisual-text.png" alt="2021年 使って良かった転職サイトno.1">
+        <h1 class="p-keyvisual__text-box__title">医療事務求人を探すならギズジョブ</h1>
+        <p class="p-keyvisual__text-box__num">
+          現在の求人掲載数：<span class="p-keyvisual__text-box__num__span">2,300</span>件
+        </p>
+      </div>
     </div> <!-- p-keyvisual__inner -->
   </div> <!-- p-keyvisual -->
 
@@ -99,13 +123,27 @@
     </section> <!-- p-search -->
 
     <!-- 新着求人 -->
-    <section class="p-recruit">
+    <section class="p-recruit" id="recruit">
       <div class="p-recruit__inner">
         <h2 class="p-recruit__title">新着求人</h2>
         <ul class="p-recruit__items">
           <li class="p-recruit__items__item">
-            <img src="./img/picture/carousel-img01.jpg" alt="新着求人1">
-            <p class="p-recruit__items__item__text">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
+            <img class="p-recruit__items__item__img" src="./img/picture/carousel-img01.jpg" alt="新着求人1">
+            <img class="p-recruit__items__item__sp-img" src="./img/picture/carousel-sp-img01.jpg" alt="新着求人1" >
+            <p class="p-recruit__items__item__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で <br class="p-recruit__items__item__text__sp">医療事務求人</p>
+            <dl class="p-recruit__items__item__desc">
+              <dt>給与</dt> 
+              <dd>月給 148,000円～</dd>
+              <dt>所在地</dt>
+              <dd>三重県伊勢市</dd>
+              <dt>最寄駅</dt>
+              <dd>伊勢市駅 徒歩15分</dd>
+            </dl>
+          </li>
+          <li class="p-recruit__items__item is-hide">
+            <img class="p-recruit__items__item__img" src="./img/picture/carousel-img02.jpg" alt="新着求人2">
+            <img class="p-recruit__items__item__sp-img" src="./img/picture/carousel-sp-img01.jpg" alt="新着求人2" >
+            <p class="p-recruit__items__item__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で <br class="p-recruit__items__item__text__sp">医療事務求人</p>
             <dl class="p-recruit__items__item__desc">
               <dt>給与</dt>
               <dd>月給 148,000円～</dd>
@@ -115,9 +153,10 @@
               <dd>伊勢市駅 徒歩15分</dd>
             </dl>
           </li>
-          <li class="p-recruit__items__item">
-            <img src="./img/picture/carousel-img02.jpg" alt="新着求人2">
-            <p class="p-recruit__items__item__text">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
+          <li class="p-recruit__items__item  is-hide">
+            <img class="p-recruit__items__item__img" src="./img/picture/carousel-img03.jpg" alt="新着求人3">
+            <img class="p-recruit__items__item__sp-img" src="./img/picture/carousel-sp-img01.jpg" alt="新着求人3" >
+            <p class="p-recruit__items__item__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で <br class="p-recruit__items__item__text__sp">医療事務求人</p>
             <dl class="p-recruit__items__item__desc">
               <dt>給与</dt>
               <dd>月給 148,000円～</dd>
@@ -127,21 +166,10 @@
               <dd>伊勢市駅 徒歩15分</dd>
             </dl>
           </li>
-          <li class="p-recruit__items__item">
-            <img src="./img/picture/carousel-img03.jpg" alt="新着求人3">
-            <p class="p-recruit__items__item__text">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
-            <dl class="p-recruit__items__item__desc">
-              <dt>給与</dt>
-              <dd>月給 148,000円～</dd>
-              <dt>所在地</dt>
-              <dd>三重県伊勢市</dd>
-              <dt>最寄駅</dt>
-              <dd>伊勢市駅 徒歩15分</dd>
-            </dl>
-          </li>
-          <li class="p-recruit__items__item">
-            <img src="./img/picture/carousel-img04.jpg" alt="新着求人4">
-            <p class="p-recruit__items__item__text">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
+          <li class="p-recruit__items__item  is-hide">
+            <img class="p-recruit__items__item__img" src="./img/picture/carousel-img04.jpg" alt="新着求人4">
+            <img class="p-recruit__items__item__sp-img" src="./img/picture/carousel-sp-img01.jpg" alt="新着求人4" >
+            <p class="p-recruit__items__item__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で <br class="p-recruit__items__item__text__sp">医療事務求人</p>
             <dl class="p-recruit__items__item__desc">
               <dt>給与</dt>
               <dd>月給 148,000円～</dd>
@@ -162,7 +190,7 @@
     </section> <!-- p-recruit -->
 
     <!-- サービス -->
-    <section class="p-service">
+    <section class="p-service" id="service">
       <div class="p-service__thumb">
         <img src="./img/picture/thumb.jpg" alt="サムネイル">
         <p class="p-service__thumb__text">
@@ -176,7 +204,7 @@
           <ul class="p-service__point__items">
             <li class="p-service__point__items__item">
               <h3 class="p-service__point__title">WEB上で応募完結</h3>
-              <p class="p-service__point__text">エントリーシートの記入を済ませれば、あとは気になる企業に応募して<br>
+              <p class="p-service__point__text">エントリーシートの記入を済ませれば、<br class="p-service__point__text__sp">あとは気になる企業に応募して<br class="p-service__point__text__pc">
                 待つだけで面接アポまで完結！
               </p>
             </li>
@@ -189,14 +217,14 @@
             <li class="p-service__point__items__item">
               <h3 class="p-service__point__title">わかりやすい</h3>
               <p class="p-service__point__text">
-                当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br>
-                といったご自身にピッタリマッチした求人を見つけることができる！
+                当求人サイトは医療事務に特化しておりさらに<br class="p-service__point__text__sp">こだわり検索や地域から検索<br class="p-service__point__text__pc">
+                といったご自身に<br class="p-service__point__text__sp">ピッタリマッチした求人を見つけることができる！
               </p>
             </li>
             <li class="p-service__point__items__item">
               <h3 class="p-service__point__title">完全無料</h3>
-              <p class="p-service__point__text">当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br>
-                運営されています。ですので求職者の方からは応募前はもちろん、<br>
+              <p class="p-service__point__text">当サイトは求人元の企業やグループ会社からのスポンサー費用に<br class="p-service__point__text__sp">よって<br class="p-service__point__text__pc">
+                運営されています。ですので求職者の方からは<br class="p-service__point__text__sp">応募前はもちろん、<br class="p-service__point__text__pc">
                 内定後も費用は一切いただきません。
               </p>
             </li>
@@ -206,7 +234,7 @@
     </section> <!-- p-service -->
 
     <!-- 転職までの流れ -->
-    <section class="p-flow">
+    <section class="p-flow" id="flow">
       <h2 class="p-flow__title">転職までの流れ</h2>
       <div class="p-flow__inner">
         <ul class="p-flow__items">
@@ -216,8 +244,8 @@
             </div> <!-- p-flow__step -->
             <div class="p-flow__detail is-step1">
               <img src="./img/icon/icon-flow01.png" alt="step1">
-              <h3 class="p-flow__detail__title is-step1-title">エントリーシートの<br>作成</h3>
-              <p class="p-flow__detail__text">ここにはテキストが入ります。ここに はテキストが入ります。ここにはテキ ストが入ります。こ</p>
+              <h3 class="p-flow__detail__title is-step1-title">エントリーシートの<br class="p-flow__detail__title__pc">作成</h3>
+              <p class="p-flow__detail__text">ここにはテキストが入ります。ここにはテキストが入ります。 <br class="p-flow__detail__text__sp">ここにはテキストが入ります。<br class="p-flow__detail__text__sp">こ</p>
             </div> <!-- p-flow__detail -->
           </li>
           <li class="p-flow__items__right-arrow">
@@ -229,8 +257,8 @@
             </div> <!-- p-flow__step -->
             <div class="p-flow__detail is-step2">
               <img src="./img/icon/icon-flow02.png" alt="step2">
-              <h3 class="p-flow__detail__title is-step2-title">気になる企業の<br>ピックアップ</h3>
-              <p class="p-flow__detail__text">ここにはテキストが入ります。ここに はテキストが入ります。ここにはテキ ストが入ります。ここにはテキストが</p>
+              <h3 class="p-flow__detail__title is-step2-title">気になる企業の<br class="p-flow__detail__title__pc">ピックアップ</h3>
+              <p class="p-flow__detail__text">ここにはテキストが入ります。ここにはテキストが入ります。<br class="p-flow__detail__text__sp">ここにはテキストが入ります。<br class="p-flow__detail__text__sp">ここにはテキストが</p>
             </div> <!-- p-flow__detail -->
           </li>
           <li class="p-flow__items__right-arrow">
@@ -243,8 +271,8 @@
             <div class="p-flow__detail is-step3">
               <img src="./img/icon/icon-flow03.png" alt="step3">
               <h3 class="p-flow__detail__title is-step3-title">複数企業に応募</h3>
-              <p class="p-flow__detail__text is-step-text">ここにはテキストが入ります。ここに はテキストが入ります。ここにはテキ
-                ストが入ります。ここにはテキストが</p>
+              <p class="p-flow__detail__text is-step-text">ここにはテキストが入ります。ここにはテキストが入ります。<br class="p-flow__detail__text__sp">ここにはテキ
+                ストが入ります。<br class="p-flow__detail__text__sp">ここにはテキストが</p>
             </div> <!-- p-flow__detail -->
           </li>
           <li class="p-flow__items__right-arrow">
@@ -257,8 +285,8 @@
             <div class="p-flow__detail is-step4">
               <img src="./img/icon/icon-flow04.png" alt="step4">
               <h3 class="p-flow__detail__title is-step4-title">内定・転職！</h3>
-              <p class="p-flow__detail__text is-step-text">ここにはテキストが入ります。ここに はテキストが入ります。ここにはテキ
-                ストが入ります。ここにはテキストが</p>
+              <p class="p-flow__detail__text is-step-text">ここにはテキストが入ります。ここにはテキストが入ります。<br class="p-flow__detail__text__sp">ここにはテキ
+                ストが入ります。<br class="p-flow__detail__text__sp">ここにはテキストが</p>
             </div> <!-- p-flow__detail -->
           </li>
         </ul>
@@ -266,7 +294,7 @@
     </section> <!-- p-flow -->
 
     <!-- コラム -->
-    <section class="p-column">
+    <section class="p-column" id="column">
       <h2 class="p-column__title">転職お役立ちコンテンツ</h2>
       <div class="p-column__inner">
         <ul class="p-column__items">

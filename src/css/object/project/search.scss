@@ -3,31 +3,76 @@
 
 .p-search {
   width: 1180px;
-  height: 240px;
+  // height: 240px;
   margin: 0 auto;
   text-align: center;
   background-color: utility.$bgSecondaryBlue;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+
+  @include utility.tab {
+    width: 11.8rem;
+    border-radius: .1rem;
+  }
+
+  @include utility.sp {
+    max-width: 3.7rem;
+  }
   
   &.first {
     margin-top: 60px;
+
+    @include utility.tab {
+      margin-top: .6rem;
+    }
+
+    @include utility.sp {
+      margin-top: .25rem;
+    }
   }
 
   &.second {
     margin-top: 150px;
+
+    @include utility.tab {
+      margin-top: 1.5rem;
+    }
+
+    @include utility.sp {
+      margin-top: .6rem;
+    }
   }
 
   &__title {
     font-weight: utility.$bold;
     font-size: 25px;
     padding-top: 40px;
+
+    @include utility.tab {
+      font-size: .25rem;
+      padding-top: .4rem;
+    }
+
+    @include utility.sp {
+      font-size: .22rem;
+      padding-top: .15rem;
+    }
   }
 
   &__text {
     margin-top: 20px;
     font-size: 20px;
+
+    @include utility.tab {
+      margin-top: .2rem;
+      font-size: .2rem;
+    }
+
+    @include utility.sp {
+      margin-top: .16rem;
+      font-size: .14rem;
+    }
   }
 
   &__form {
@@ -35,10 +80,31 @@
     justify-content: center;
     flex-direction: row;
     margin-top: 26px;
+    padding-bottom: 40px;
+
+    @include utility.tab {
+      margin-top: .26rem;
+      padding-bottom: .4rem;
+    }
+
+    @include utility.sp {
+      flex-wrap: wrap;
+      // gap: .1rem;
+      margin-top: .13rem;
+      padding-bottom: .2rem;
+    }
 
     &__box {
       position: relative;
       margin-left: 15px;
+
+      @include utility.tab {
+        margin-left: .15rem;
+      }
+
+      @include utility.sp {
+        margin-left: .1rem;
+      }
 
       &:first-of-type {
         margin-left: 0;
@@ -57,10 +123,30 @@
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
         border-bottom: 0;
+
+        @include utility.tab {
+          right: .15rem;
+          border-top: .1rem solid utility.$primaryPink;
+          border-right: .1rem solid transparent;
+          border-left: .1rem solid transparent;
+        }
+
+        @include utility.sp {
+          left: 80%;
+          border-top: 0.07rem solid utility.$primaryPink;
+          border-left: 0.065rem solid transparent;
+          border-right: 0.065rem solid transparent;
+        }
       }
 
       &__input {
         display: flex;
+
+        @include utility.sp {
+          margin-top: 0.15rem;
+          flex-direction: column;
+          justify-content: center;
+        }
       }
 
       &__button {
@@ -69,12 +155,43 @@
         margin-left: 15px;
         display: flex;
 
+        @include utility.tab {
+          width: 1.4rem;
+          height: .6rem;
+          margin-left: .15rem;
+        }
+
+        @include utility.sp {
+          width: 1.6rem;
+          height: .4rem;
+          margin: 0.19rem auto 0;
+        }
+
         &>img {
-          padding: 15px 4px 15px 14px;
+          margin: 15px 4px;
+
+          @include utility.tab {
+            margin: .15rem .04rem
+          }
+
+          @include utility.sp {
+            width: 0.18rem;
+            height: 0.18rem;
+            margin: .11rem .14rem .11rem .13rem;
+          }
         }
 
         &>p {
           margin-top: 21px;
+
+          @include utility.tab {
+            margin-top: .21rem;
+          }
+
+          @include utility.sp {
+            margin-top: .1rem;
+            font-size: .18rem;
+          }
         }
       }
     }

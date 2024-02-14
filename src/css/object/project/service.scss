@@ -10,6 +10,7 @@
 
     &>img {
       width: 100%;
+
     }
 
     &__text {
@@ -28,9 +29,26 @@
       flex-direction: column;
       justify-content: center;
 
+      @include utility.tab {
+        font-size: .25rem;
+      }
+
+      @include utility.sp {
+        font-size: .14rem;
+        font-weight: utility.$regular;
+      }
+
       &>span {
         display: block;
         margin-top: 21px;
+
+        @include utility.tab {
+          margin-top: .21rem;
+        }
+
+        @include utility.sp {
+          margin-top: .02rem;
+        }
 
         &:first-child {
           margin-top: 0;
@@ -44,15 +62,37 @@
     margin: 0 auto;
     padding-top: 106px;
     text-align: center;
+
+    @include utility.tab {
+      width: 11.8rem;
+      padding-top: 1.06rem;
+    }
+
+    @include utility.sp {
+      width: 100%;
+      padding-top: .55rem;
+    }
   }
 
   &__title {
     font-size: 25px;
     font-weight: utility.$bold;
+
+    @include utility.tab {
+      font-size: .25rem;
+    }
+
+    @include utility.sp {
+      font-size: .25rem;
+    }
   }
 
   &__point {
     margin-top: 53px;
+
+    @include utility.tab {
+      margin-top: .53rem;
+    }
 
     &__items {
       display: flex;
@@ -60,12 +100,34 @@
       justify-content: center;
       gap: 40px;
 
+      @include utility.tab {
+        gap: .4rem;
+      }
+
+      @include utility.sp {
+        flex-direction: column;
+        align-items: center;
+        gap: .21rem;
+      }
+
       &__item {
         width: 570px;
-        height: 180px;
+        // height: 180px;
         padding-top: 40px;
         background-color: utility.$bgPink;
         border-radius: 10px;
+
+        @include utility.tab {
+          width: 5.7rem;
+          padding-top: .4rem;
+          border-radius: .1rem;
+        }
+
+        @include utility.sp {
+          max-width: 3.7rem;
+          max-height: 1.44rem;
+          padding-top: .3rem;
+        }
       }
     }
 
@@ -73,15 +135,50 @@
       color: utility.$primaryPink;
       font-size: 24px;
       font-weight: utility.$bold;
+
+      @include utility.tab {
+        font-size: .24rem;
+      }
+
+      @include utility.sp {
+        font-size: .2rem;
+      }
     }
 
     &__text {
       height: 116px;
       font-size: 14px;
-      line-height: 2rem;
+      line-height: 1.4;
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @include utility.tab {
+        height: 1.16rem;
+        font-size: .14rem;
+      }
+
+      &__pc {
+        display: block;
+
+        @include utility.sp {
+          display: none;
+          font-size: .14rem;
+        }
+      }
+
+      &__sp {
+        display: none;
+
+        @include utility.sp {
+          display: block;
+        }
+      }
+
+      @include utility.sp {
+        height: .94rem;
+        font-size: .12rem;
+      }
     }
   }
 }

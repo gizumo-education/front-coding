@@ -4,6 +4,14 @@
 .l-footer {
   margin-top: 200px;
 
+  @include utility.tab {
+    margin-top: 2rem;
+  }
+
+  @include utility.sp {
+    margin-top: 1rem;
+  }
+
   &__area {
     padding: 55px 0 25px;
     font-size: 16px;

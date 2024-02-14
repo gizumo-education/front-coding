@@ -8,4 +8,16 @@
   background-color: utility.$primaryPink;
   font-size: 18px;
   text-align: center;
+
+  @include utility.tab {
+    border-radius: .3rem;
+    border: .01rem solid utility.$primaryPink;
+    font-size: .18rem;
+  }
+
+  @include utility.sp {
+    border-radius: .3rem;
+    border: .01rem solid utility.$primaryPink;
+    font-size: .18rem;
+  }
 }

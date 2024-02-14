@@ -6,15 +6,45 @@
   background-color: utility.$bgLightBlue;
   margin-top: 60px;
 
+  @include utility.tab {
+    margin-top: .6rem;
+  }
+
+  @include utility.sp {
+    margin-top: .25rem;
+  }
+
   &__inner {
     width: 1180px;
-    height: 636px;
     margin: 0 auto;
+    padding-bottom: 67px;
+
+    @include utility.tab {
+      width: 11.8rem;
+      padding-bottom: .67rem;
+    }
+
+    @include utility.sp {
+      width: 100%;
+      padding-bottom: .6rem;
+    }
   }
 
   &__title {
     padding-top: 64px;
     font-size: 25px;
+
+    @include utility.tab {
+      padding-top: .64rem;
+      font-size: .25rem;
+    }
+
+    @include utility.sp {
+      padding-top: .3rem;
+      font-size: .25rem;
+      font-weight: utility.$bold;
+      text-align: center;
+    }
   }
 
   &__items {
@@ -22,15 +52,75 @@
     display: flex;
     gap: 20px;
 
-    &__item {
+    @include utility.tab {
+      margin-top: .25rem;
+      gap: .2rem;
+    }
 
-      &>img {
+    @include utility.sp {
+      margin-top: .35rem;
+      display: block;
+      gap: 0;
+    }
+
+    &__item {
+      @include utility.sp {
+        max-width: 3.7rem;
+        margin: 0 auto;
+      }
+
+      &.is-hide {
+        @include utility.sp {
+          display: none;
+        }
+      }
+
+      &__img {
         border-radius: 10px;
+
+        @include utility.tab {
+          border-radius: .1rem;
+        }
+
+        @include utility.sp {
+          display: none;
+        }
+      }
+
+      &__sp-img {
+        display: none;
+
+        @include utility.sp {
+          display: block;
+          // margin: 0 auto;
+          border-radius: 10px;
+          width: 100%;
+        }
       }
 
       &__text {
         margin-top: 9px;
         font-size: 16px;
+
+        @include utility.tab {
+          margin-top: .09rem;
+          font-size: .16rem;
+        }
+
+        @include utility.sp {
+          margin-top: .1rem;
+          font-size: .16rem;
+          line-height: .22rem;
+          font-weight: utility.$bold;
+        }
+
+        &__sp {
+          display: none;
+
+          @include utility.sp {
+            display: block;
+          }
+        }
       }
 
       &__desc {
@@ -39,7 +129,18 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        gap: 4px;
+        gap: 4px 0;
+
+        @include utility.tab {
+          margin-top: .07rem;
+          font-size: .14rem;
+          gap: .04rem 0;
+        }
+
+        @include utility.sp {
+          margin-top: .12rem;
+          font-size: .14rem;
+        }
 
         &>dt {
           width: 60px;
@@ -47,11 +148,29 @@
           background-color: utility.$bgPink;
           text-align: center;
           line-height: 21px;
+
+          @include utility.tab {
+            width: .6rem;
+            height: .21rem;
+            line-height: .21rem;
+          }
+
+          @include utility.sp {
+            width: .6rem;
+          }
         }
 
         &>dd {
           margin-left: 10px;
           width: 70%;
+
+          @include utility.tab {
+            margin-left: .1rem;
+          }
+
+          @include utility.sp {
+            margin-left: .21rem;
+          }
         }
       }
     }
@@ -61,13 +180,40 @@
     text-align: center;
     margin-top: 60px;
 
+    @include utility.tab {
+      margin-top: .6rem;
+    }
+
+    @include utility.sp {
+      margin-top: .44rem;
+    }
+
     &__button {
       width: 360px;
       height: 60px;
 
+      @include utility.tab {
+        width: 3.6rem;
+        height: .6rem;
+      }
+
+      @include utility.sp {
+        width: 3.7rem;
+      }
+
       &>p {
+        font-size: 18px;
         font-weight: utility.$bold;
         line-height: 60px;
+
+        @include utility.tab {
+          font-size: .18rem;
+          line-height: .6rem;
+        }
+
+        @include utility.sp {
+          font-size: .18rem;
+        }
       }
     }
   }
