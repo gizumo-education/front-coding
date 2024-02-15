@@ -1,5 +1,20 @@
 import $ from "jquery";
 
-$(function() {
-  console.log('環境構築完了');
-})
+// ハンバーガーメニュー
+$(function () {
+  const ham = document.querySelector('.l-header__hamburger');
+  const nav = document.querySelector('.l-header__sp-nav');
+
+  ham.addEventListener('click', function () {
+    ham.classList.toggle('active');
+    nav.classList.toggle('active');
+    console.log('aaa')
+
+    if ($('body').css('overflow') === 'hidden') {
+      $('body').css({ overflow: '' });
+    } else {
+      $('body').css({ overflow: 'hidden' });
+    }
+
+  });
+});
