@@ -9,7 +9,6 @@ $(function () {
     headerNav.toggleClass('active');
 
     if ($("body").css("overflow") === "hidden") {
-      console.log('second')
       $("body").css({ overflow: "" });
     } else {
       $("body").css({ overflow: "hidden" });
