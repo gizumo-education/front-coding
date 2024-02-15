@@ -6,10 +6,21 @@
   background:  url(../img/picture/p-copy-bg.jpg) no-repeat center / cover utility.$bgBlackCover;
   background-blend-mode: darken;
   height: 300px;
+  @include utility.tab {
+    height: 3rem;
+  }
+  @include utility.sp {
+    height: .75rem;
+  }
 
   &__h2 {
     text-align: center;
     line-height: 2.4;
     color: utility.$white;
+    @include utility.sp {
+      font-size: .14rem;
+      line-height: 1.5;
+      font-weight: utility.$regular;
+    }
   }
 }

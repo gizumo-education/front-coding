@@ -2,21 +2,45 @@
 
 .p-useful-content {
   margin-top: 105px;
+  @include utility.tab {
+    margin-top: 1.05rem;
+  }
+  @include utility.sp {
+    margin-top: .6rem;
+  }
 
   &__wrapper {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    @include utility.tab {
+      margin-top: .5rem;
+    }
+    @include utility.sp {
+      margin-top: .3rem;
+      flex-wrap: wrap;
+      gap: .17rem;
+    }
 
     &__img-box {
       width: 380px;
-      height: 240px;
+      min-height: 240px;
       border-radius: 10px;
       padding: 71px 42px 55px;
       text-align: center;
       color: utility.$white;
       background-color: utility.$bgBlackCover;
       background-blend-mode: darken;
+      background-repeat: no-repeat;background-size: cover;
+      @include utility.tab {
+        width: 3.8rem;
+        min-height: 2.4rem;
+        padding: .71rem .42rem .55rem;
+      }
+      @include utility.sp {
+        padding: .6rem 0;
+        width: 100%;
+      }
 
       &:nth-last-of-type(1) {
         background-image: url(../img/picture/p-job-useful-content_img01.jpg);
@@ -32,17 +56,36 @@
 
       &__h3 {
         font-size: 24px;
+        @include utility.tab {
+          font-size: .24rem;
+        }
+        @include utility.sp {
+          font-size: .21rem;
+        }
       }
 
       &__p {
         font-size: 16px;
         margin-top: 44px;
         line-height: 1.5;
+        @include utility.tab {
+          font-size: .16rem;
+          margin-top: .44rem;
+        }
+        @include utility.sp {
+          font-size: .14rem;
+        }
       }
     }
   }
 
   &__button-wrapper {
     margin-top: 80px;
+    @include utility.tab {
+      margin-top: .8rem;
+    }
+    @include utility.sp {
+      margin-top: .35rem;
+    }
   }
 }
