@@ -8,10 +8,15 @@ $(function () {
     headerHamburger.toggleClass('active');
     headerNav.toggleClass('active');
 
-    if ($("body").css("overflow") === "hidden") {
-      $("body").css({ overflow: "" });
+    if ($('body').css('overflow') === 'hidden') {
+      $('body').css({ overflow: '' });
     } else {
-      $("body").css({ overflow: "hidden" });
+      $('body').css({ overflow: 'hidden' });
     }
   });
+})
+
+// カルーセル
+$(function () {
+  $('.slick-carousel').slick();
 })
