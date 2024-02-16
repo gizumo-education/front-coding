@@ -35,9 +35,9 @@ $(function () {
   const height = $(".l-header").height();
   $('a[href^="#"]').on('click', function () {
     const speed = 600;
-    let href = $(this).attr("href");
-    let target = $(href == "#" || href == "" ? "html" : href);
-    let position = target.offset().top - height;
+    const href = $(this).attr("href");
+    const target = $(href == "#" || href == "" ? "html" : href);
+    const position = target.offset().top - height;
     $("body,html").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
