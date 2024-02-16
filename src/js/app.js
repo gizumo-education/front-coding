@@ -5,6 +5,8 @@ import 'slick-carousel';
 $(function () {
   const headerHamburger = $('#js-hamburger');
   const headerNav = $('#js-sp-nav');
+  const headerNavLink = $('.l-header__sp-nav__items__item a');
+
   headerHamburger.on('click', function () {
     headerHamburger.toggleClass('active');
     headerNav.toggleClass('active');
@@ -15,16 +17,41 @@ $(function () {
       $('body').css({ overflow: 'hidden' });
     }
   });
-})
 
-// カルーセル
+  headerNavLink.on('click', function () {
+    console.log("first")
+    headerHamburger.toggleClass('active');
+    headerNav.toggleClass('active');
+
+    if ($('body').css('overflow') === 'hidden') {
+      $('body').css({ overflow: '' });
+    } else {
+      $('body').css({ overflow: 'hidden' });
+    }
+  });
+});
+
+// ページ内スクロール
+$(function () {
+  const height = $(".l-header").height();
+  $('a[href^="#"]').on('click', function () {
+    const speed = 600;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? "html" : href);
+    let position = target.offset().top - height;
+    $("body,html").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
+});
+
+// slick カルーセル
 $(function () {
   $('.slick-carousel').slick({
     swipeToSlide: true,
     infinite: true,
     speed: 300,
     slidesToShow: 4,
-    responsive:[{
+    responsive: [{
       breakpoint: 767,
       settings: {
         slidesToShow: 1,
