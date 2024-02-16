@@ -19,7 +19,6 @@ $(function () {
   });
 
   headerNavLink.on('click', function () {
-    console.log("first")
     headerHamburger.toggleClass('active');
     headerNav.toggleClass('active');
 
