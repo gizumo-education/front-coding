@@ -8,6 +8,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>医療事務求人を探すならギズジョブ</title>
+  <!--↓slick↓-->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+  <!--↑slick↑-->
 </head>
 
 <body>
@@ -26,11 +30,22 @@
         </ul>
       </div>
       <div class="l-header__sp-items">
-        <button class="l-header__hamburger">
+        <button class="l-header__hamburger" id="js-hamburger">
           <span></span>
           <span></span>
           <span></span>
         </button>
+
+        <div class="l-header__sp-nav" id="js-sp-nav">
+          <ul class="l-header__sp-nav__items">
+            <li class="l-header__sp-nav__items__item"><a href="#">トップ</a></li>
+            <li class="l-header__sp-nav__items__item"><a href="#new-jobs">新着求人</a></li>
+            <li class="l-header__sp-nav__items__item"><a href="#feature">4つの特徴</a></li>
+            <li class="l-header__sp-nav__items__item"><a href="#job-change-flow">転職までの流れ</a></li>
+            <li class="l-header__sp-nav__items__item"><a href="#useful-content">転職お役立ちコンテンツ</a></li>
+          </ul>
+        </div>
+
       </div>
     </nav>
   </header>
@@ -40,8 +55,10 @@
       <div class="p-keyvisual__inner">
         <div class="p-keyvisual__content-box">
           <div class="p-keyvisual__content-box__element">
-            <img class="p-keyvisual__content-box__element__no1 is-pc" src="./img/picture/p-keyvisual-content.png" alt="no.1">
-            <img class="p-keyvisual__content-box__element__no1 is-sp" src="./img/picture/sp-p-keyvisual-content.png" alt="no.1">
+            <img class="p-keyvisual__content-box__element__no1 is-pc" src="./img/picture/p-keyvisual-content.png"
+              alt="no.1">
+            <img class="p-keyvisual__content-box__element__no1 is-sp" src="./img/picture/sp-p-keyvisual-content.png"
+              alt="no.1">
           </div>
           <div class="p-keyvisual__content-box__element"><img class="p-keyvisual__content-box__element__h1"
               src="./img/picture/p-keyvisual-h1.png" alt="医療事務求人を探すならギズジョブ"></div>
@@ -95,7 +112,8 @@
               </li>
             </ul>
             <div class="c-job-search__box__form__input-box">
-              <input class="c-job-search__box__form__input-box__input is-form-element" type="text" name="search-keyword" required placeholder="キーワード・企業名・スキルなど" >
+              <input class="c-job-search__box__form__input-box__input is-form-element" type="text" name="search-keyword"
+                required placeholder="キーワード・企業名・スキルなど">
             </div>
             <div class="c-job-search__box__form__search-button-box">
               <a href="" class="c-job-search__box__form__search-button-box__search-button">検索する</a>
@@ -105,10 +123,10 @@
       </div>
     </section>
 
-    <section class="p-new-jobs">
+    <section class="p-new-jobs" id="new-jobs">
       <div class="l-inner">
         <h2 class="p-new-jobs__h2">新着求人</h2>
-        <ul class="p-new-jobs__box">
+        <ul class="p-new-jobs__box slick-carousel">
           <li class="p-new-jobs__box__job">
             <a href="#">
               <img class="p-new-jobs__box__job__img" src="./img/picture/p-new-jobs_img01.jpg" alt="新着求人01">
@@ -157,6 +175,18 @@
               </ul>
             </a>
           </li>
+          <li class="p-new-jobs__box__job">
+            <a href="#">
+              <img class="p-new-jobs__box__job__img" src="./img/picture/p-new-jobs_img04.jpg" alt="新着求人04">
+              <p class="p-new-jobs__box__job__p">平日・夕方までの勤務!伊勢市の伊勢赤
+                十字病院で医療事務求人</p>
+              <ul class="p-new-jobs__box__job__detail">
+                <li><span>給与</span>月給 148,000円～</li>
+                <li><span>所在地</span>三重県伊勢市</li>
+                <li><span>最寄駅</span>伊勢市駅 徒歩15分</li>
+              </ul>
+            </a>
+          </li>
         </ul>
 
         <div class="c-button__text-align-center p-new-jobs__button-wrapper">
@@ -176,7 +206,7 @@
 
     <div class="p-service-introduction">
       <div class="l-inner">
-        <section class="p-feature">
+        <section class="p-feature" id="feature">
           <div class="l-inner">
             <h2 class="c-h2">ギズジョブの4つの特徴</h2>
             <ul class="p-feature__box">
@@ -204,7 +234,7 @@
           </div>
         </section>
 
-        <section class="p-job-change-flow">
+        <section class="p-job-change-flow" id="job-change-flow">
           <div class="l-inner">
             <h2 class="c-h2">転職までの流れ</h2>
             <ul class="p-job-change-flow__wrapper">
@@ -238,7 +268,7 @@
           </div>
         </section>
 
-        <section class="p-useful-content">
+        <section class="p-useful-content" id="useful-content">
           <div class="l-inner">
             <h2 class="c-h2">転職お役立ちコンテンツ</h2>
             <ul class="p-useful-content__wrapper">
@@ -303,7 +333,8 @@
                   </li>
                 </ul>
                 <div class="c-job-search__box__form__input-box">
-                  <input class="c-job-search__box__form__input-box__input is-form-element" type="text" name="search-keyword" required placeholder="キーワード・企業名・スキルなど" >
+                  <input class="c-job-search__box__form__input-box__input is-form-element" type="text"
+                    name="search-keyword" required placeholder="キーワード・企業名・スキルなど">
                 </div>
                 <div class="c-job-search__box__form__search-button-box">
                   <a href="" class="c-job-search__box__form__search-button-box__search-button">検索する</a>
@@ -313,11 +344,7 @@
           </div>
         </section>
       </div>
-
     </div>
-
-
-
   </main>
 
   <footer class="l-footer">

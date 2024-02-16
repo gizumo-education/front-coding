@@ -1,12 +1,12 @@
 @use '../../object/utility/utility.scss';
 
 .p-useful-content {
-  margin-top: 105px;
+  padding-top: 105px;
   @include utility.tab {
-    margin-top: 1.05rem;
+    padding-top: 1.05rem;
   }
   @include utility.sp {
-    margin-top: .6rem;
+    padding-top: .6rem;
   }
 
   &__wrapper {

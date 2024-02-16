@@ -1,6 +1,13 @@
 @use '../../object/utility/utility.scss';
 
 .p-feature {
+  padding-top: 105px;
+  @include utility.tab {
+    padding-top: 1.05rem;
+  }
+  @include utility.sp {
+    padding-top: .6rem;
+  }
 
   &__box {
     display: flex;
