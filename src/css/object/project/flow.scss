@@ -69,7 +69,7 @@
       @include utility.sp {
         // max-width: 3.2rem;
         // max-height: 2.93rem;
-        width: 100%;
+        // width: 100%;
         margin-top: .1rem;
       }
 
@@ -124,8 +124,8 @@
     }
 
     @include utility.sp {
-      max-width: .45rem;
-      max-height: .45rem;
+      width: .45rem;
+      height: .45rem;
     }
 
     &__num {
@@ -144,7 +144,7 @@
       }
 
       @include utility.sp {
-        max-height: .45rem;
+        height: .45rem;
         font-size: .1rem;
         line-height: .12rem;
       }

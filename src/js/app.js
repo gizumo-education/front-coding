@@ -1,4 +1,5 @@
 import $ from "jquery";
+import 'slick-carousel';
 
 // ハンバーガーメニュー
 $(function () {
@@ -8,13 +9,29 @@ $(function () {
   ham.addEventListener('click', function () {
     ham.classList.toggle('active');
     nav.classList.toggle('active');
-    console.log('aaa')
 
     if ($('body').css('overflow') === 'hidden') {
       $('body').css({ overflow: '' });
     } else {
       $('body').css({ overflow: 'hidden' });
     }
+  });
+});
 
+// カルーセル
+$(function () {
+  $('.slick-carousel').slick({
+    swipeToSlide: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        },
+      }
+    ],
   });
 });
