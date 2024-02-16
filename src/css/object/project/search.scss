@@ -169,15 +169,18 @@
 
         &>img {
           margin: 15px 4px;
+          padding-left: 14px;
 
           @include utility.tab {
-            margin: .15rem .04rem
+            margin: .15rem .04rem;
+            padding-left: .14rem;
           }
 
           @include utility.sp {
             width: 0.18rem;
             height: 0.18rem;
             margin: .11rem .14rem .11rem .13rem;
+            padding-left: 0;
           }
         }
 
