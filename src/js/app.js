@@ -1,4 +1,5 @@
 import $ from "jquery";
+import 'slick-carousel';
 
 // ハンバーガーメニュー
 $(function () {
@@ -18,5 +19,16 @@ $(function () {
 
 // カルーセル
 $(function () {
-  $('.slick-carousel').slick();
+  $('.slick-carousel').slick({
+    swipeToSlide: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    responsive:[{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+      }
+    }]
+  });
 })
