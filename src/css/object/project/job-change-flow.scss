@@ -1,0 +1,150 @@
+@use '../../object/utility/utility.scss';
+
+.p-job-change-flow {
+  padding-top: 105px;
+
+  @include utility.tab {
+    padding-top: 1.05rem;
+  }
+
+  @include utility.sp {
+    padding-top: .6rem;
+  }
+
+  &__wrapper {
+    margin-top: 51px;
+    display: flex;
+    justify-content: space-between;
+
+    @include utility.tab {
+      margin-top: .5rem;
+    }
+
+    @include utility.sp {
+      flex-wrap: wrap;
+      width: 85%;
+      margin: .34rem auto 0;
+      gap: .4rem;
+    }
+
+    &__box {
+      position: relative;
+      width: 280px;
+      height: 360px;
+      border: 2px solid utility.$pink;
+      border-radius: 10px;
+      padding: 60px 10px 42px;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: top 10px left 10px;
+
+      @include utility.tab {
+        width: 2.8rem;
+        height: 3.6rem;
+        padding: .6rem .1rem .42rem;
+        background-position: top .1rem left .1rem;
+        background-size: .6rem;
+      }
+
+      @include utility.sp {
+        width: 100%;
+      }
+
+      &:nth-of-type(1) {
+        background-image: url(../img/picture/p-job-change-flow_step01.png);
+      }
+
+      &:nth-of-type(2) {
+        background-image: url(../img/picture/p-job-change-flow_step02.png);
+      }
+
+      &:nth-of-type(3) {
+        background-image: url(../img/picture/p-job-change-flow_step03.png);
+      }
+
+      &:nth-of-type(4) {
+        background-image: url(../img/picture/p-job-change-flow_step04.png);
+
+        &::after {
+          border: none;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        right: -20px;
+        top: 45%;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid utility.$pink;
+        border-right: 0;
+
+        @include utility.tab {
+          right: -.2rem;
+          border-top: .2rem solid transparent;
+          border-bottom: .2rem solid transparent;
+          border-left: .2rem solid utility.$pink;
+        }
+
+        @include utility.sp {
+          top: initial;
+          right: 45%;
+          bottom: -.35rem;
+          border-right: .2rem solid transparent;
+          border-left: .2rem solid transparent;
+          border-top: .2rem solid utility.$pink;
+          border-bottom: 0;
+        }
+      }
+
+      &__h3 {
+        font-size: 24px;
+        font-weight: utility.$bold;
+        margin-top: 25px;
+        line-height: 1.3;
+        @include utility.tab {
+          font-size: .24rem;
+          margin-top: .25rem;
+        }
+        @include utility.sp {
+          font-size: .2rem;
+          margin-top: .22rem;
+        }
+
+        &.is-h3-two-row {
+          margin-top: 10px;
+        }
+      }
+
+      &__p {
+        font-size: 14px;
+        text-align-last: left;
+        line-height: 1.4;
+        margin-top: 31px;
+
+        @include utility.tab {
+          font-size: .14rem;
+          margin-top: .31rem;
+        }
+        @include utility.sp {
+          font-size: .14rem;
+          margin-top: .1rem;
+        }
+
+        &.is-h3-two-row {
+          margin-top: 15px;
+        }
+      }
+
+      &__img {
+        @include utility.tab {
+          width: 1.1rem;
+        }
+      }
+    }
+  }
+}

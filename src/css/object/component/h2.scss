@@ -1,0 +1,14 @@
+@use '../../object/utility/utility.scss';
+
+.c-h2 {
+  font-size: 25px;
+  font-weight: utility.$bold;
+  text-align: center;
+
+  @include utility.tab {
+    font-size: .25rem;
+  }
+  @include utility.sp {
+    font-size: .22rem;
+  }
+}

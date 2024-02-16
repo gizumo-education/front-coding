@@ -1,0 +1,72 @@
+@use '../../object/utility/utility.scss';
+
+.p-feature {
+  padding-top: 105px;
+  @include utility.tab {
+    padding-top: 1.05rem;
+  }
+  @include utility.sp {
+    padding-top: .6rem;
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 53px;
+    @include utility.tab {
+      gap: .4rem;
+      margin-top: .53rem;
+    }
+    @include utility.sp {
+      gap: .2rem;
+      margin-top: .38rem;
+      justify-content: center;
+    }
+
+    &__element {
+      background-color: utility.$lightPinkBox;
+      padding: 40px 47px;
+      width: 570px;
+      border-radius: 5px;
+      text-align: center;
+      @include utility.tab {
+        border-radius: .05rem;
+        width: 5.7rem;
+        padding: .4rem .47rem;
+      }
+      @include utility.sp {
+        border-radius: .1rem;
+        padding: .3rem 0;
+      }
+
+      &__h3 {
+        color: utility.$pink;
+        font-size: 24px;
+        font-weight: utility.$bold;
+        @include utility.tab {
+          font-size: .24rem;
+        }
+        @include utility.sp {
+          font-size: .2rem;
+        }
+      }
+
+      & > p {
+        margin-top: 36px;
+        font-size: 14px;
+        line-height: 1.5;
+        @include utility.tab {
+          margin-top: .36rem;
+          font-size: .14rem;
+        }
+        @include utility.sp {
+          margin-top: .3rem;
+          font-size: .12rem;
+        }
+      }
+    }
+
+  }
+}

@@ -13,8 +13,17 @@
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/h2.scss';
+@use './object/component/job-search.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/new-jobs.scss';
+@use './object/project/copy.scss';
+@use './object/project/feature.scss';
+@use './object/project/job-change-flow.scss';
+@use './object/project/useful-content.scss';
+@use './object/project/service-introduction.scss';
+@use './object/project/job-search-wrapper.scss';
 /*-------------------------------------------*/

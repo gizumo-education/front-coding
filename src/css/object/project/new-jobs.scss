@@ -1,0 +1,213 @@
+@use '../../object/utility/utility.scss';
+
+.p-new-jobs {
+  padding-top: 64px;
+  padding-bottom: 67px;
+  background-color: utility.$bgLightBlue;
+
+  @include utility.sp {
+    padding-top: .3rem;
+  }
+
+  &__h2 {
+    font-size: 25px;
+
+    @include utility.tab {
+      font-size: .25rem;
+    }
+
+    @include utility.sp {
+      font-size: .25rem;
+      text-align: center;
+      font-weight: utility.$bold;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 25px;
+
+    @include utility.tab {
+      margin-top: .25rem;
+      gap: .25rem;
+    }
+
+    @include utility.sp {
+      flex-wrap: wrap;
+      margin-top: .35rem;
+    }
+
+    &__job {
+      width: 280px;
+      padding-right: 20px;
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+
+      @include utility.sp {
+        width: 100%;
+        text-align: center;
+      }
+
+      &__img {
+        border-radius: 10px;
+      }
+
+      &__p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 8px;
+
+        @include utility.tab {
+          font-size: .16rem;
+          line-height: .22rem;
+          margin-top: .08rem;
+        }
+
+        @include utility.sp {
+          font-size: .16rem;
+          font-weight: utility.$bold;
+          text-align: left;
+          line-height: .22rem;
+        }
+      }
+
+      &__detail {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 7px;
+
+        @include utility.tab {
+          font-size: .14rem;
+          line-height: .2rem;
+          margin-top: .07rem;
+        }
+
+        @include utility.sp {
+          margin-top: .12rem;
+          text-align: left;
+          font-size: .14rem;
+          line-height: .2rem;
+        }
+
+        &>li {
+          margin-top: 4px;
+
+          &:first-of-type {
+            margin-top: 0px;
+          }
+
+          &>span {
+            display: inline-block;
+            width: 60px;
+            height: 20px;
+            background-color: utility.$lightPinkTh;
+            text-align: center;
+            margin-right: 10px;
+
+            @include utility.tab {
+              width: .6rem;
+              height: .2rem;
+              margin-right: .1rem;
+            }
+
+            @include utility.sp {
+              width: .6rem;
+              height: .2rem;
+              margin-right: .1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__button-wrapper {
+    margin-top: 60px;
+
+    @include utility.tab {
+      margin-top: .6rem;
+    }
+
+    @include utility.sp {
+      margin-top: .44rem;
+    }
+  }
+
+}
+
+// slick設定
+
+.slick-slide {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.slick-next,
+.slick-prev {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: utility.$white;
+  opacity: .7;
+
+  @include utility.tab {
+    width: .42rem;
+    height: .42rem;
+  }
+
+  @include utility.sp {
+    width: .42rem;
+    height: .42rem;
+  }
+
+  &:hover {
+    background-color: utility.$white;
+    opacity: .9;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-top: 1px solid utility.$black;
+    border-right: 1px solid utility.$black;
+
+    @include utility.tab {
+      width: .1rem;
+      height: .1rem;
+    }
+
+    @include utility.sp {
+      width: .1rem;
+      height: .1rem;
+    }
+  }
+}
+
+.slick-next {
+  right: 10px;
+
+  &::before {
+    right: 45%;
+    transform: rotate(45deg);
+  }
+}
+
+.slick-prev {
+  left: 10px;
+  z-index: 998;
+
+  &::before {
+    left: 45%;
+    transform: rotate(-135deg);
+  }
+}

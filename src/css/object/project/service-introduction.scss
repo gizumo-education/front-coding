@@ -1,0 +1,11 @@
+@use '../../object/utility/utility.scss';
+
+.p-service-introduction {
+  padding-bottom: 200px;
+  @include utility.tab {
+    padding-bottom: 2rem;
+  }
+  @include utility.sp {
+    padding-bottom: 1rem;
+  }
+}
