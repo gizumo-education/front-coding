@@ -221,14 +221,6 @@
   line-height: normal;
 }
 
-.u-box__content {
-  padding-top: 105px;
-
-  &--padding {
-    padding-top: 51.13px;
-  }
-}
-
 .l-inner__content {
   display: flex;
   align-items: center;
@@ -468,14 +460,6 @@
     font-size: 1.4em;
   }
 
-  .u-box__content {
-    padding-top: 10.5em;
-
-    &--padding {
-      padding-top: 5.113em;
-    }
-  }
-
   .l-inner__content {
 
     &--flame {
@@ -530,7 +514,6 @@
     padding: 7.1em 0 5.5em 0;
 
     &--title {
-      filter: none;
       width: 100%;
       font-size: 2.4em;
     }
@@ -541,8 +524,6 @@
     }
 
     &--img {
-      flex-shrink: 0;
-      position: absolute;
       width: 32%;
       height: 24em;
     }
@@ -709,24 +690,13 @@
   }
 
   //転職までの流れ//
-
-  .u-box__content {
-    padding-top: 60px;
-
-    &--padding {
-      padding-top: 51.13px;
-    }
-  }
-
   .l-inner__content {
     flex-direction: column;
-
 
     &--flame {
       width: 45px;
       height: 45px;
     }
-
 
     &--test {
       font-size: 10px;
@@ -761,30 +731,32 @@
 
 
   //転職お役立ちコンテンツ
-  .l-inner__flex {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-  }
-
-  .l-inner__contents {
-    width: 370px;
-    height: 234.905px;
-    padding: 60px 0 60px 0;
-
-    &--title {
-      line-height: 21px;
-      font-size: 21px;
+  .l-inner {
+    &__flex {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
     }
 
-    &--comment {
-
-      font-size: 14px;
-      margin-top: 53px;
-    }
-
-    &--img {
+    &__contents {
       width: 370px;
+      height: 234.905px;
+      padding: 60px 0 60px 0;
+
+      &--title {
+        line-height: 21px;
+        font-size: 21px;
+      }
+
+      &--comment {
+
+        font-size: 14px;
+        margin-top: 53px;
+      }
+
+      &--img {
+        width: 370px;
+      }
     }
   }
 }
