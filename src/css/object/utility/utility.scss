@@ -4,150 +4,222 @@
 
 
 // お仕事検索//
-
-.u-main__size {
-  padding: 60px 0;
-}
-
-.u-main__size2 {
-  display: flex;
-  justify-content: center;
-  padding-top: 150px;
-}
-
-//新着求人 job//
-.u-job__category {
-  &__position1 {
-    margin-top: 7px;
+  .u-main__size {
+    padding: 60px 0;
   }
 
-  &__position2 {
-    margin-top: 4px;
+  .u-main__size2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
   }
 
-  &__position3 {
-    margin-top: 5px;
-  }
-}
-
-.u-container__position--job {
-  margin-left: 20px;
-
-  &:first-child {
-    margin-left: 0;
-  }
-}
-
-
-//お仕事検索　select//
-.u-select__position1,
-.u-select__position2,
-.u-select__position3 {
-  position: relative;
-  margin-left: 15px;
-
-  &:first-child {
-    margin-left: 0;
-  }
-}
-
-//転職までの流れ//
-.u-triangle1,
-.u-triangle2,
-.u-triangle3 {
-  position: absolute;
-  top: 25px;
-  right: 15px;
-  bottom: 25px;
-  left: 165px;
-}
-
-.u-content {
-  &--message {
-    margin-top: 18px;
-    padding: 0 18px;
-  }
-
-  &--text {
-    margin-top: 20px;
-  }
-
-  &__border {
-    &--second {
-      margin-top: 31px;
-      padding: 0 18px;
+  //新着求人 job//
+  .u-job__category {
+    &__position1 {
+      margin-top: 7px;
     }
 
-    &--text {
-      padding: 58px 0 40.87px 0;
+    &__position2 {
+      margin-top: 4px;
+    }
+
+    &__position3 {
+      margin-top: 5px;
     }
   }
-}
 
-
-//転職お役立ちコンテンツ//
-.u-contents {
-  padding-top: 106.13px;
-
-  &__position {
+  .u-container__position--job {
     margin-left: 20px;
 
     &:first-child {
       margin-left: 0;
     }
   }
-}
 
-.u-img__filter {
-  filter: brightness(0.5);
-}
 
-//医療事務コラムもっと見る
-.u-button__flame--column {
-  padding-top: 80px;
-}
+  //お仕事検索　select//
+  .u-select__position1,
+  .u-select__position2,
+  .u-select__position3 {
+    position: relative;
+    margin-left: 15px;
 
-.u-job {
-  padding: 60px 0 15px 0;
-}
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 
-// ギブズ四つの特徴　ピンク
+  //転職までの流れ//
+  .u-triangle1,
+  .u-triangle2,
+  .u-triangle3 {
+    position: absolute;
+    top: 25px;
+    right: 4%;
+    bottom: 25px;
+  }
 
-.u-headline {
-  flex-shrink: 0;
-  background-color: variables.$white;
-  padding-top: 106px;
+  .u-content {
+    &--message {
+      margin-top: 18px;
+      padding: 0 18px;
+    }
 
-  &__box--flex {
+    &--text {
+      margin-top: 20px;
+    }
+
+    &__border {
+      &--second {
+        margin-top: 31px;
+        padding: 0 18px;
+      }
+
+      &--text {
+        padding: 58px 0 40.87px 0;
+      }
+    }
+  }
+
+
+  //転職お役立ちコンテンツ//
+  .u-contents {
+    padding-top: 106.13px;
+
+    &__position {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .u-img__filter {
+    filter: brightness(0.5);
+  }
+
+  //医療事務コラムもっと見る
+  .u-button__flame--column {
+    padding-top: 80px;
+  }
+
+  .u-job {
+    padding: 60px 0 67px 0;
+  }
+
+  // ギブズ四つの特徴　ピンク
+
+  .u-headline {
+    flex-shrink: 0;
+    background-color: variables.$white;
+    padding-top: 106px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 53px;
+    flex-direction: column;
+    align-items: center;
+
+    &__box--flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding-top: 53px;
+      width: 100%;
+      max-width: 1200px;
+    }
   }
-}
 
-.u-appeal__PcLine {
-  display: none;
-}
+  // .u-container__position--job {
+  //   margin-left: 2em;
+  //   }
 
-.u-appeal__SpText {
-  visibility: hidden;
-}
-
-.u-footer {
-  padding-top: 200px;
-
-  &__container--text {
-    margin-top: 27px;
+  .u-appeal__PcLine {
+    display: none;
   }
-}
+
+  .u-appeal__SpText {
+    visibility: hidden;
+  }
+
+  .u-footer {
+    padding-top: 200px;
+
+    &__container--text {
+      margin-top: 27px;
+    }
+  }
 
 // tb
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .tb {
     display: none !important;
   }
+// お仕事検索
+  .u-select__position1,
+  .u-select__position2,
+  .u-select__position3 {
+    width: 100%;
+  }
 
+  .u-triangle1,
+  .u-triangle2,
+  .u-triangle3 {
+    top: 2.5em;
+  }
+
+  // 新着求人一覧をもっと見る
+  .u-job {
+    padding: 6em 0 6.7em 0;
+}
+
+// 医療事務コラムをもっと見る
+.u-button__flame--column {
+  padding-top: 8em;
+}
+
+  // ギブズ四つの特徴　ピンク
+  .u-headline {
+    padding-top: 10.6em;
+
+    &__box--flex {
+      padding-top: 5.3em;
+      gap: 4em;
+    }
+  }
+
+// お仕事検索
+.u-main__size2 {
+  padding-top: 15em;
+}
+
+
+//転職お役立ちコンテンツ//
+.u-contents {
+  padding-top: 10.613em;
+}
+
+.u-content--message {
+  margin-top: 1.3em;
+  padding: 0 1.2em;
+}
+
+.u-content__border--text {
+  padding: 5.8em 0 4.087em 0;
+}
+
+  .u-contents__position {
+    width: 38em;
+    margin-left: 2em;
+}
+
+.u-footer {
+  padding-top: 20em;
+
+  &__container--text {
+    margin-top: 2.7em;
+  }
+}
 }
 
 // sp
@@ -244,8 +316,10 @@
 
     &__box--flex {
       padding-top: 38px;
+      gap: 21px;
     }
   }
+
 
 
   .u-appeal {
