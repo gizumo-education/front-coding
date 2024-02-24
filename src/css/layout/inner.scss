@@ -38,7 +38,7 @@
     color: variables.$selectGly;
 
     &--flame {
-      padding: 17px 20px 17px 10px;
+      padding-left: 10px;
       border-radius: 10px;
       font-family: Noto Sans JP;
       font-size: 18px;
@@ -340,8 +340,7 @@
 
   .l-inner__select {
     &--box {
-      margin-top: 26px;
-      display: flex;
+      margin-top: 2.6em;
     }
 
     &--flame {
@@ -368,15 +367,17 @@
     color: variables.$selectGly;
 
     &--flame {
-      width: 17em;
+      width: 16.67em;
       height: 3.45em;
       font-size: 1.8em;
+      padding-left: 0.55em;
     }
   }
 
   .l-inner__title {
     width: 118em;
     height: auto;
+    padding: 4em;
 
     &--middle {
       font-size: 2em;
