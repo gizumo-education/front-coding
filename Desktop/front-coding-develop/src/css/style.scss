@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*foundation---------------------------------*/
+@use './foundation/_reset.scss';
+@use './foundation/_base.scss';
+/*-------------------------------------------*/
+
+/*layout---------------------------------*/
+@use './layout/footer.scss';
+@use './layout/header.scss';
+@use './layout/inner.scss';
+/*-------------------------------------------*/
+
+/*component---------------------------------*/
+@use './object/component/button.scss';
+/*-------------------------------------------*/
+
+/*project---------------------------------*/
+@use './object/project/keyvisual.scss';
+@use './object/project/checkwork.scss';
+@use './object/project/newspage.scss';
+@use './object/project/centertitle.scss';
+@use './object/project/fourthtitle.scss';
+@use './object/project/recruitmentstory.scss';
+@use './object/project/contents.scss';
+/*-------------------------------------------*/

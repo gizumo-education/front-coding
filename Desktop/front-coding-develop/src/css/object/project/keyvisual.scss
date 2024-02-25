@@ -1,0 +1,45 @@
+@use '../../object/utility/utility.scss';
+// ページ上部のキービジュアルに関するスタイル
+
+.keyvisual {
+  width: 1600px;
+  height: 500px;
+
+  &-main {
+    position: relative;
+  }
+
+  &-title {
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-top: 30px;
+    text-shadow: 0 4px #000000;
+  }
+
+  &-photo {
+    position: absolute;
+    text-align: center;
+    right: 20px;
+    top: 150px;
+  }
+
+  &-score {
+    width: 391px;
+    height: 69px;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    color: #2EB6AA;
+    border-radius: 10px;
+    border-color: #2EB6AA;
+    border-width: 2.27px;
+    border-style: solid;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+.score-big {
+  font-size: 40px;
+}
