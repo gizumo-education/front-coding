@@ -1,0 +1,21 @@
+@use '../object/utility/utility.scss';
+// innerのスタイルを記述するファイル
+.l-inner {
+  width: 1180px;
+  margin: 0 auto;
+  @include utility.tab {
+    width: 11.8rem;
+  }
+  @include utility.sp {
+    width: 3.2rem;
+    flex-direction: column;
+  }
+  &.is-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include utility.sp {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+@use '../../object/utility/utility.scss';
+
+.news-page {
+  width: 1600px;
+  height: 636px;
+  background-color: #EFF6FC;
+  margin-top: 40px;
+
+  & > .news-page-title {
+    width: 1180px;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+
+  & > .total-recruitment {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 1180px;
+    justify-content: space-between;
+
+    & > .recruitment {
+      position: relative;
+      width: 280px;
+
+      & > .recruitment-infomation {
+        font-size: 15px;
+        margin-top: 10px;
+      }
+
+      & > .money {
+        display: flex;
+
+        & > .main-money {
+          font-size: 15px;
+          padding: 5px;
+          margin-top: 10px;
+          background-color: #ffcad0;
+          width: 60px;
+          text-align: center;
+        }
+
+        & > .sub-money {
+          font-size: 15px;
+          margin-top: 10px;
+          padding: 5px;
+        }
+      }
+
+      & > .place {
+        display: flex;
+
+        & > .main-money {
+          font-size: 15px;
+          padding: 5px;
+          margin-top: 10px;
+          background-color: #ffcad0;
+          width: 60px;
+          text-align: center;
+        }
+
+        & > .sub-money {
+          font-size: 15px;
+          margin-top: 10px;
+          padding: 5px;
+        }
+      }
+
+      & > .station {
+        display: flex;
+
+        & > .main-money {
+          font-size: 15px;
+          padding: 5px;
+          margin-top: 10px;
+          background-color: #ffcad0;
+          width: 60px;
+          text-align: center;
+        }
+
+        & > .sub-money {
+          font-size: 15px;
+          margin-top: 10px;
+          padding: 5px;
+        }
+      }
+
+      & > .scloll-button {
+        width: 60px;
+        height: 60px;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+        border-radius: 30px;
+        position: absolute;
+        left: 0%;
+        top: 30%;
+
+        & > .scloll-size {
+          margin-top: 15px;
+          margin-left: 15px;
+        }
+      }
+
+      & > .scloll-button-second {
+        width: 60px;
+        height: 60px;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+        border-radius: 30px;
+        position: absolute;
+        left: 78%;
+        top: 30%;
+        text-align: center;
+
+        & > .scloll-size {
+          margin-top: 15px;
+          margin-left: 15px;
+        }
+
+        & > .scloll-size-second {
+          transform: scale(-1, 1);
+        }
+      }
+      
+    }
+
+    & > .photo-recruitment-first {
+      height: 200px;
+      border-radius: 10px;
+    }
+  }
+
+}
