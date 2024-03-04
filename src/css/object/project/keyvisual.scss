@@ -91,12 +91,6 @@
     }
 
     &--medium {
-      color: variables.$white;
-      text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
-      font-family: DM Sans;
-      font-size: 50px;
-      font-weight: variables.$bold;
-      line-height: normal;
       margin-top: 40px;
       max-width: 800px;
     }
@@ -139,8 +133,8 @@
     }
 
     &__text--medium {
-      font-size: 5em;
-      margin-top: 0.8em;
+      width: 80em;
+      margin-top: 4em;
     }
 
     &__leaf {
