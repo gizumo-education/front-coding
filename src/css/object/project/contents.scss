@@ -1,0 +1,84 @@
+@use '../../object/utility/utility.scss';
+
+.contents {
+  width: 1180px;
+  height: 455px;
+  margin: 0 auto;
+
+  &-title {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  & > .three-contents {
+    display: flex;
+    margin-top: 50px;
+
+    & > .manual {
+      width: 380px;
+      height: 240px;
+      background-image: url("../img/picture/グループ 88.png");
+
+      & > .manual-backcolor {
+        padding-top: 55px;
+        width: 380px;
+        height: 240px;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        border-radius: 10px;
+
+        & > .contents-text {
+          font-size: 24px;
+          color: #FFFFFF;
+          text-align: center;
+          word-break: auto-phrase;
+        }
+
+        & > .contents-sub-text {
+          margin: 0 auto;
+          margin-top: 50px;
+          width: 288px;
+          height: 46px;
+          font-size: 16px;
+          color: #FFFFFF;
+          text-align: center;
+          word-break: auto-phrase;
+        }
+      }
+    }
+
+    & > .knowledge {
+      margin-left: 20px;
+      width: 380px;
+      height: 240px;
+      background-image: url("../img/picture/グループ 89.png");
+
+      & > .manual-backcolor {
+        padding-top: 55px;
+        width: 380px;
+        height: 240px;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        border-radius: 10px;
+
+        & > .contents-text {
+          font-size: 24px;
+          color: #FFFFFF;
+          text-align: center;
+          word-break: auto-phrase;
+        }
+
+        & > .contents-sub-text {
+          margin: 0 auto;
+          margin-top: 50px;
+          width: 288px;
+          height: 46px;
+          font-size: 16px;
+          color: #FFFFFF;
+          text-align: center;
+          word-break: auto-phrase;
+        }
+      }
+
+    }
+  }
+}
