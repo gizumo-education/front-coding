@@ -6,6 +6,14 @@
   background-color: variables.$skyBlue;
   padding: 55px 0 25px 0;
 
+  @include utility.tab {
+    padding: 5.5em 0 2.5em 0;
+  }
+
+  @include utility.sp {
+    padding: 38px 0 40px 0;
+  }
+
   &__image {
     width: 320px;
     height: 85px;
@@ -14,12 +22,34 @@
     text-align: end;
     border: 1px solid variables.$footerImg;
 
+    @include utility.tab {
+      width: 32em;
+      height: 8.5em;
+      margin-top: 1.5em;
+    }
+
+    @include utility.sp {
+      margin-top: 15px;
+    }
+
     &:first-child {
       margin-top: 0;
+
+      @include utility.tab {}
+
+      @include utility.sp {
+        margin-top: 22px;
+      }
     }
 
     &--border {
       height: 83px;
+
+      @include utility.tab {
+        height: 8.2em;
+      }
+
+      @include utility.sp {}
     }
   }
 
@@ -31,20 +61,42 @@
     width: 1180px;
     max-width: 100%;
 
+    @include utility.tab {
+      width: 118em;
+    }
+
+    @include utility.sp {
+      flex-direction: column;
+    }
+
     &--flex {
       display: flex;
       flex-direction: column;
+
+      @include utility.tab {}
+
+      @include utility.sp {}
     }
   }
 
   &__box {
     display: flex;
     justify-content: space-between;
+
+    @include utility.tab {}
+
+    @include utility.sp {}
   }
 
 
   &__area {
     margin-left: 39px;
+
+    @include utility.tab {
+      margin-left: 3.9em;
+    }
+
+    @include utility.sp {}
   }
 
   &__text {
@@ -52,11 +104,27 @@
     font-size: 16px;
     font-weight: variables.$regular;
 
+    @include utility.tab {
+      font-size: 1.6em;
+    }
+
+    @include utility.sp {}
+
     &--line {
       margin-top: 20px;
 
+      @include utility.tab {
+        margin-top: 2em;
+      }
+
+      @include utility.sp {}
+
       &:first-child {
         margin-top: 0;
+
+        @include utility.tab {}
+
+        @include utility.sp {}
       }
     }
   }
@@ -66,78 +134,21 @@
     flex-shrink: 0;
     padding: 11px 0 10px 0;
 
+    @include utility.tab {
+      padding: 1.1em 0 1em 0;
+    }
+
+    @include utility.sp {}
+
     &--text {
       text-align: center;
       font-size: 14px;
-    }
-  }
-}
 
-// tb
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tb {
-    display: none !important;
-  }
-
-  .l-footer {
-    padding: 5.5em 0 2.5em 0;
-
-    &__image {
-      width: 32em;
-      height: 8.5em;
-      margin-top: 1.5em;
-
-      &--border {
-        height: 8.2em;
-      }
-    }
-
-    &__area {
-      margin-left: 3.9em;
-    }
-
-    &__text {
-      font-size: 1.6em;
-
-      &--line {
-        margin-top: 2em;
-      }
-    }
-
-    &__container {
-      width: 118em;
-    }
-
-    &__copy {
-      padding: 1.1em 0 1em 0;
-
-      &--text {
+      @include utility.tab {
         font-size: 1.4em;
       }
-    }
-  }
-}
 
-
-// sp
-@media screen and (max-width: 767px) {
-  .sp {
-    display: none !important;
-  }
-
-  .l-footer {
-    padding: 38px 0 40px 0;
-
-    &__container {
-      flex-direction: column;
-    }
-
-    &__image {
-      margin-top: 15px;
-
-      &:first-child {
-        margin-top: 22px;
-      }
+      @include utility.sp {}
     }
   }
 }

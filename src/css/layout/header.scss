@@ -4,6 +4,12 @@
 
 .p-keyvisual__relativeSp {
   display: block !important;
+
+  @include utility.tab {
+    display: block !important;
+  }
+
+  @include utility.sp {}
 }
 
 .l-header {
@@ -18,21 +24,90 @@
   z-index: 1000;
   background-color: variables.$white;
 
+  @include utility.tab {
+    padding: 2.5em 5em;
+  }
+
+  @include utility.sp {
+    width: 100%;
+    height: 70px;
+    padding: 0;
+  }
+
   &__wrapper {
     display: none;
+
+    @include utility.tab {
+      display: none;
+    }
+
+    @include utility.sp {}
   }
 
   &__flex {
     display: -webkit-box;
+
+    @include utility.tab {}
+
+    @include utility.sp {
+      display: none;
+    }
   }
 
   &__search {
     display: -webkit-box;
+
+    @include utility.tab {}
+
+    @include utility.sp {
+      display: none;
+    }
+  }
+
+  &__box {
+    @include utility.sp {
+      padding: 16px 15px;
+      width: 400px;
+      height: 70px;
+      position: fixed;
+    }
+  }
+
+  &__wrapper {
+    @include utility.sp {
+      display: block;
+      float: right;
+      width: 50px;
+      height: 38px;
+      border: none;
+      background-color: variables.$white;
+      padding-inline: 0;
+    }
+  }
+
+  &__boxs {
+    @include utility.sp {
+      display: block;
+      height: 6px;
+      background-color: variables.$black;
+      margin-top: 9px;
+      border-radius: 30px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   &__icon {
     margin: 0 13px;
     font-size: 16px;
+
+    @include utility.tab {
+      font-size: 1.6em;
+    }
+
+    @include utility.sp {}
   }
 
   &__font {
@@ -43,6 +118,13 @@
       font-family: Noto Sans JP;
       font-weight: variables.$regular;
       line-height: normal;
+
+      @include utility.tab {
+        font-size: 1.4em;
+        margin-left: 0.7143em;
+      }
+
+      @include utility.sp {}
     }
 
     &--black {
@@ -51,16 +133,33 @@
       font-family: Noto Sans JP;
       font-weight: variables.$regular;
       line-height: normal;
+
+      @include utility.tab {
+        font-size: 1.6em;
+      }
+
+      @include utility.sp {}
     }
   }
 
   &__img {
     height: 18px;
     width: 18px;
+
+    @include utility.tab {
+      height: 1.1em;
+      width: 1.1em;
+    }
+
+    @include utility.sp {}
   }
 
   &__button {
     display: flex;
+
+    @include utility.tab {}
+
+    @include utility.sp {}
   }
 
   &__icon3 {
@@ -68,18 +167,39 @@
     width: 20.965px;
     height: 18px;
     flex-shrink: 0;
+
+    @include utility.tab {
+      height: 1.8em;
+      width: 2.0965em
+    }
+
+    @include utility.sp {}
   }
 
   &__icon4 {
     width: 18px;
     height: 18px;
     flex-shrink: 0;
+
+    @include utility.tab {
+      width: 1.8em;
+      height: 1.8em;
+    }
+
+    @include utility.sp {}
   }
 
   &__icon5 {
     width: 16px;
     height: 16px;
     flex-shrink: 0;
+
+    @include utility.tab {
+      width: 1.6em;
+      height: 1.6em;
+    }
+
+    @include utility.sp {}
   }
 
   &__frame {
@@ -93,6 +213,14 @@
     align-items: center;
     justify-content: center;
 
+    @include utility.tab {
+      width: 16em;
+      height: 5em;
+      margin-left: 2.5em;
+    }
+
+    @include utility.sp {}
+
     &--2 {
       width: 140px;
       height: 50px;
@@ -103,123 +231,14 @@
       align-items: center;
       justify-content: center;
       margin-left: 15px;
-    }
-  }
-}
 
-// tb
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tb {
-    display: none !important;
-  }
-
-  .p-keyvisual__relativeSp {
-    display: block !important;
-  }
-
-  .l-header {
-    padding: 2.5em 5em;
-
-    &__wrapper {
-      display: none;
-    }
-
-    &__icon {
-      font-size: 1.6em;
-    }
-
-    &__font {
-      &--white {
-        font-size: 1.4em;
-        margin-left: 0.7143em;
-      }
-
-      &--black {
-        font-size: 1.6em;
-      }
-    }
-
-    &__img {
-      height: 1.1em;
-      width: 1.1em;
-    }
-
-    &__icon3 {
-      height: 1.8em;
-      width: 2.0965em
-    }
-
-    &__icon4 {
-      width: 1.8em;
-      height: 1.8em;
-    }
-
-    &__icon5 {
-      width: 1.6em;
-      height: 1.6em;
-    }
-
-    &__frame {
-      width: 16em;
-      height: 5em;
-      margin-left: 2.5em;
-
-      &--2 {
+      @include utility.tab {
         width: 14em;
         height: 5em;
         margin-left: 1.5em;
       }
-    }
-  }
-}
 
-// sp
-@media screen and (max-width: 767px) {
-  .sp {
-    display: none !important;
-  }
-
-  .l-header {
-    width: 100%;
-    height: 70px;
-    padding: 0;
-
-    &__flex {
-      display: none;
-    }
-
-    &__search {
-      display: none;
-    }
-
-    &__box {
-      padding: 16px 15px;
-      width: 400px;
-      height: 70px;
-      position: fixed;
-    }
-
-    &__wrapper {
-      display: block;
-      float: right;
-      width: 50px;
-      height: 38px;
-      border: none;
-      background-color: variables.$white;
-      padding-inline: 0;
-
-    }
-
-    &__boxs {
-      display: block;
-      height: 6px;
-      background-color: variables.$black;
-      margin-top: 9px;
-      border-radius: 30px;
-
-      &:first-child {
-        margin-top: 0;
-      }
+      @include utility.sp {}
     }
   }
 }

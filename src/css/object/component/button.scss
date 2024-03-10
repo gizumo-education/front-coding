@@ -2,205 +2,68 @@
 @use "../../foundation/variables";
 // 共通パーツであるボタンのスタイルを記述するファイル
 
-  .c-option__text {
-    color: variables.$filterBlack;
-    font-family: Noto Sans JP;
-    font-size: 18px;
-    font-weight: variables.$regular;
-    width: 200px;
-    height: 60px;
-    flex-shrink: 0;
-  }
+.c-option__text {
+  color: variables.$filterBlack;
+  font-family: Noto Sans JP;
+  font-size: 18px;
+  font-weight: variables.$regular;
+  width: 200px;
+  height: 60px;
+  flex-shrink: 0;
 
-  .c-search {
-    position: relative;
-    margin-left: 15px;
-    width: 140px;
-    flex-shrink: 0;
-    background-color: variables.$pink;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px 0 14px;
-
-    &__font {
-      color: variables.$white;
-      font-size: 18px;
-      font-weight: variables.$bold;
-      line-height: 18px;
-    }
-  }
-
-  .c-button__flame {
-    width: 360px;
-    height: 60px;
-    border-radius: 30px;
-    flex-shrink: 0;
-    background-color: variables.$pink;
-    border: none;
-    color: variables.$white;
-    font-size: 18px;
-    font-weight: variables.$bold;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  }
-
-  .c-button__box {
-    position: relative;
-    bottom: 250px;
-    width: 1180px;
-    margin: 0 auto;
-
-    &--back {
-      width: 60px;
-      height: 60px;
-      background-color: variables.$white;
-      flex-shrink: 0;
-      fill: variables.$filterBlack;
-      opacity: 0.699999988079071;
-      border-radius: 30px;
-      border: none;
-      position: relative;
-      float: left;
-
-      &::before {
-        content: "";
-        margin: auto;
-        position: absolute;
-        top: 30px;
-        bottom: 30px;
-        left: 25px;
-        width: 20px;
-        height: 20px;
-        flex-shrink: 0;
-        border-top: 0.707px solid variables.$filterBlack;
-        border-right: 0.707px solid variables.$filterBlack;
-        transform: rotate(225deg);
-      }
-    }
-
-    &--next {
-      width: 60px;
-      height: 60px;
-      background-color: variables.$white;
-      flex-shrink: 0;
-      fill: black;
-      opacity: 0.699999988079071;
-      border-radius: 30px;
-      border: none;
-      position: relative;
-      float: right;
-
-      &::before {
-        content: "";
-        margin: auto;
-        position: absolute;
-        top: 30px;
-        bottom: 30px;
-        right: 25px;
-        width: 20px;
-        height: 20px;
-        flex-shrink: 0;
-        border-top: 0.707px solid variables.$filterBlack;
-        border-right: 0.707px solid variables.$filterBlack;
-        transform: rotate(45deg);
-      }
-    }
-  }
-
-
-// tb
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tb {
-    display: none !important;
-  }
-
-  .c-option__text {
+  @include utility.tab {
     font-size: 1.8em;
     width: 100%;
     height: 3.333em;
   }
 
-  .c-search {
-    width: 10.5em;
-    margin-left: 1.125em;
-
-    &__font {
-      font-size: 1.35em;
-    }
-
-    &__position {
-      width: 2.25em;
-      height: 2.25em;
-    }
-  }
-
-  .c-button__flame {
-    width: 20em;
-    height: 3.3337em;
-    font-size: 1.8em;
-  }
-
-  .c-button__box {
-    width: 118em;
-    bottom: 26em;
-
-    &--back {
-      width: 6em;
-      height: 6em;
-
-      &::before {
-        top: 3em;
-        bottom: 3em;
-        left: 2.5em;
-        width: 2em;
-        height: 2em;
-      }
-    }
-
-    &--next {
-      width: 6em;
-      height: 6em;
-
-      &::before {
-        top: 3em;
-        bottom: 3em;
-        right: 2.5em;
-        width: 2em;
-        height: 2em;
-      }
-    }
-  }
-}
-
-// sp
-@media screen and (max-width: 767px) {
-  .sp {
-    display: none !important;
-  }
-
-  .c-option__text {
+  @include utility.sp {
     background-color: variables.$white;
     font-size: 12px;
     width: 100px;
     height: 30px;
   }
+}
 
-  .c-search {
+.c-search {
+  position: relative;
+  margin-left: 15px;
+  width: 140px;
+  flex-shrink: 0;
+  background-color: variables.$pink;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 14px;
+
+  @include utility.tab {
+    width: 10.5em;
+    margin-left: 1.125em;
+  }
+
+  @include utility.sp {
     margin: 0 auto;
     margin-top: 16px;
     width: 160px;
     height: 40px;
     display: flex;
     justify-content: center;
+  }
 
-    &__font {
+  &__font {
+    color: variables.$white;
+    font-size: 18px;
+    font-weight: variables.$bold;
+    line-height: 18px;
+
+    @include utility.tab {
+      font-size: 1.35em;
+    }
+
+    @include utility.sp {
       top: 11px;
       color: variables.$white;
       font-size: 18px;
@@ -209,48 +72,174 @@
     }
 
     &__position {
-      position: absolute;
-      top: 11px;
-      right: 129px;
-      bottom: 11px;
-      left: 13px;
-      width: 17.975px;
-      height: 17.974px;
+      @include utility.tab {
+        width: 2.25em;
+        height: 2.25em;
+
+        @include utility.sp {
+          position: absolute;
+          top: 11px;
+          right: 129px;
+          bottom: 11px;
+          left: 13px;
+          width: 17.975px;
+          height: 17.974px;
+        }
+      }
     }
   }
+}
 
-  .c-button__flame {
+.c-button__flame {
+  width: 360px;
+  height: 60px;
+  border-radius: 30px;
+  flex-shrink: 0;
+  background-color: variables.$pink;
+  border: none;
+  color: variables.$white;
+  font-size: 18px;
+  font-weight: variables.$bold;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  @include utility.tab {
+    width: 20em;
+    height: 3.3337em;
+    font-size: 1.8em;
+  }
+
+  @include utility.sp {
     width: 370px;
     font-size: 18px;
   }
+}
 
-  .c-button__box {
+.c-button__box {
+  position: relative;
+  bottom: 250px;
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @include utility.tab {
+    width: 118em;
+    bottom: 26em;
+  }
+
+  @include utility.sp {
+    padding: 0 15px;
     bottom: 190px;
-    width: 370px;
-    display: flex;
+    width: 400px;
+  }
 
-    &--back {
+  &--back {
+    width: 60px;
+    height: 60px;
+    background-color: variables.$white;
+    flex-shrink: 0;
+    fill: variables.$filterBlack;
+    opacity: 0.699999988079071;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+    float: left;
+
+    @include utility.tab {
+      width: 6em;
+      height: 6em;
+    }
+
+    @include utility.sp {
       width: 42px;
       height: 42px;
+    }
 
-      &::before {
+    &::before {
+      content: "";
+      margin: auto;
+      position: absolute;
+      top: 30px;
+      bottom: 30px;
+      left: 25px;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      border-top: 0.707px solid variables.$filterBlack;
+      border-right: 0.707px solid variables.$filterBlack;
+      transform: rotate(225deg);
+
+      @include utility.tab {
+        width: 14px;
+        height: 14px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 7px;
+      }
+
+      @include utility.sp {
         top: 25px;
         left: 18px;
         width: 14px;
         height: 14px;
       }
     }
+  }
 
-    &--next {
+  &--next {
+    width: 60px;
+    height: 60px;
+    background-color: variables.$white;
+    flex-shrink: 0;
+    opacity: 0.699999988079071;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+
+    @include utility.tab {
+      width: 6em;
+      height: 6em;
+    }
+
+    @include utility.sp {
       width: 42px;
       height: 42px;
-      margin-left: 274px;
+    }
 
-      &::before {
-        top: 30px;
-        right: 17px;
+    &::before {
+      content: "";
+      margin: auto;
+      position: absolute;
+      top: 30px;
+      bottom: 30px;
+      right: 25px;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      border-top: 0.707px solid variables.$filterBlack;
+      border-right: 0.707px solid variables.$filterBlack;
+      transform: rotate(45deg);
+
+      @include utility.tab {
+        top: 3em;
+        bottom: 3em;
+        right: 2.5em;
+        width: 2em;
+        height: 2em;
+      }
+
+      @include utility.sp {
         width: 14px;
         height: 14px;
+        top: 0;
+        right: 7px;
+        bottom: 0;
+        left: 0;
       }
     }
   }

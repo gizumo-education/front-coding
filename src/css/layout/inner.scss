@@ -2,10 +2,6 @@
 @use "../foundation/variables";
 
 // innerのスタイルを記述するファイル
-.l-inner__content--back {
-  padding: 0 41px;
-}
-
 // お仕事検索
 .l-inner {
 
@@ -19,12 +15,34 @@
     text-align: center;
     margin: 0 auto;
 
+    @include utility.tab {
+      width: 118em;
+      height: auto;
+      padding: 4em;
+    }
+
+    @include utility.sp {
+      width: 370px;
+      height: 240px;
+      padding: 15px 25px 20px 25px;
+    }
+
     &--middle {
       color: variables.$black;
       font-size: 20px;
       font-weight: variables.$regular;
       line-height: normal;
       margin-top: 20px;
+
+      @include utility.tab {
+        font-size: 2em;
+        margin-top: 1em;
+      }
+
+      @include utility.sp {
+        font-size: 14px;
+        margin-top: 16px;
+      }
     }
   }
 
@@ -32,6 +50,15 @@
     &--box {
       margin-top: 26px;
       display: flex;
+
+      @include utility.tab {
+        margin-top: 2.6em;
+      }
+
+      @include utility.sp {
+        margin-top: 13px;
+        flex-wrap: wrap;
+      }
     }
 
     &--flame {
@@ -44,19 +71,59 @@
       margin-left: 15px;
       border: 1px solid variables.$pink;
 
+      @include utility.tab {
+        padding: 0 0 0 0.833em;
+      }
+
+      @include utility.sp {
+        display: block;
+        padding: 6px 0 7px 8px;
+        border-radius: 10px;
+        appearance: none;
+        width: 200px;
+        height: 60px;
+        flex-shrink: 0;
+        margin-left: 15px;
+        border: 1px solid variables.$pink;
+      }
+
       &:first-child {
         margin-left: 0;
+
+        @include utility.tab {
+          margin-left: 0;
+        }
+
+        @include utility.sp {}
       }
 
       &:focus {
         outline: none;
         border: 1px solid variables.$pink;
+
+        @include utility.tab {
+          outline: none;
+          border: 1px solid variables.$pink;
+        }
+
+        @include utility.sp {
+          outline: none;
+          border: 1px solid variables.$pink;
+        }
       }
     }
   }
 
   &__form {
     color: variables.$selectGly;
+
+    @include utility.tab {
+      color: variables.$selectGly;
+    }
+
+    @include utility.sp {
+      color: variables.$selectGly;
+    }
 
     &--flame {
       padding-left: 10px;
@@ -71,9 +138,31 @@
       margin-left: 15px;
       border: 1px solid variables.$pink;
 
+      @include utility.tab {
+        width: 16.67em;
+        height: 3.45em;
+        font-size: 1.8em;
+        padding-left: 0.55em;
+      }
+
+      @include utility.sp {
+        font-size: 14px;
+        width: 319px;
+        height: 29px;
+        margin-left: 0;
+        margin-top: 15.5px;
+      }
+
       &:focus {
         outline: none;
         border: 1px solid variables.$pink;
+
+        @include utility.tab {}
+
+        @include utility.sp {
+          outline: none;
+          border: 1px solid variables.$pink;
+        }
       }
     }
   }
@@ -85,6 +174,18 @@
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid variables.$pink;
+
+  @include utility.tab {
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-top: 1em solid #DE5579;
+  }
+
+  @include utility.sp {
+    border-left: 6.5px solid transparent;
+    border-right: 6.5px solid transparent;
+    border-top: 7px solid variables.$pink;
+  }
 }
 
 //新着求人//
@@ -93,11 +194,30 @@
     margin: 0 auto;
     width: 1180px;
     max-width: 100%;
+
+    @include utility.tab {
+      width: 118em;
+    }
+
+    @include utility.sp {
+      width: 400px;
+    }
   }
 
   &__job {
     padding-top: 64px;
     background-color: variables.$skyBlue;
+
+    @include utility.tab {
+      padding-top: 6.4em;
+    }
+
+    @include utility.sp {
+      margin: 0 auto;
+      height: 600px;
+      width: 400px;
+      padding-top: 30px;
+    }
 
     &--title {
       font-family: Inter;
@@ -105,20 +225,61 @@
       line-height: normal;
       text-align: left;
       margin: 0 auto;
+
+      @include utility.tab {}
+
+      @include utility.sp {
+        font-family: Noto Sans JP;
+        width: 400px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: variables.$bold;
+        line-height: 25px;
+      }
     }
 
     &--container {
       display: flex;
       justify-content: center;
       margin-top: 25px;
+
+      @include utility.tab {
+        margin-top: 2.5em;
+      }
+
+      @include utility.sp {
+        margin-top: 35px;
+        padding: 0 15px;
+        overflow: hidden;
+        justify-content: flex-start;
+      }
     }
 
     &--images {
       border-radius: 10px;
+
+      @include utility.tab {
+        width: 100%;
+      }
+
+      @include utility.sp {
+        display: none;
+      }
     }
 
     &--SpImages {
       display: none;
+
+      @include utility.tab {
+        display: none;
+      }
+
+      @include utility.sp {
+        display: block;
+        border-radius: 10px;
+        max-width: 370px;
+        height: 208px;
+      }
     }
 
     &--text {
@@ -128,6 +289,20 @@
       line-height: 22px;
       width: 278px;
       height: 44px;
+
+      @include utility.tab {
+        width: 100%;
+        height: auto;
+        font-size: 1.6em;
+        line-height: 1.4em;
+      }
+
+      @include utility.sp {
+        font-weight: variables.$bold;
+        width: 358px;
+        height: 44px;
+        margin-top: 10.08px;
+      }
     }
 
     &--category {
@@ -138,6 +313,15 @@
       width: 114px;
       height: 17px;
       margin-left: 10px;
+
+      @include utility.tab {
+        font-size: 1.4em;
+        margin-left: 0.7143em;
+      }
+
+      @include utility.sp {
+        margin-left: 21.06px;
+      }
     }
 
     &--flame {
@@ -152,6 +336,14 @@
       height: 21px;
       flex-shrink: 0;
       background-color: variables.$lightPink;
+
+      @include utility.tab {
+        font-size: 1.4em;
+        width: 4.286em;
+        height: 1.5em;
+      }
+
+      @include utility.sp {}
     }
   }
 }
@@ -160,10 +352,44 @@
 .l-inner__mtg {
   position: relative;
 
+  @include utility.tab {}
+
+  @include utility.sp {
+    margin: 0 auto;
+    width: 400px;
+  }
+
   &--image {
     width: 100%;
     height: 300px;
+
+    @include utility.tab {
+      height: 30em;
+    }
+
+    @include utility.sp {
+      height: 75px;
+    }
   }
+
+  &--text {
+    color: variables.$white;
+    font-size: 25px;
+    font-weight: variables.$bold;
+    line-height: normal;
+
+    @include utility.tab {
+      font-size: 2.5em;
+    }
+
+    @include utility.sp {
+      font-size: 14px;
+      width: 349px;
+      margin: 0 auto;
+      font-weight: variables.$regular;
+    }
+  }
+
 
   &--container {
     position: absolute;
@@ -172,13 +398,12 @@
     transform: translate(-50%, -50%);
     width: 625px;
     text-align: center;
-  }
 
-  &--text {
-    color: variables.$white;
-    font-size: 25px;
-    font-weight: variables.$bold;
-    line-height: normal;
+    @include utility.tab {}
+
+    @include utility.sp {
+      width: 400px;
+    }
   }
 }
 
@@ -193,11 +418,36 @@
   padding: 40px 40px;
   text-align: center;
 
+  @include utility.tab {
+    width: 47%;
+    height: 18em;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @include utility.sp {
+    width: 370px;
+    height: 161px;
+    padding: 30px 0;
+  }
+
   &--text {
     color: variables.$pink;
     font-size: 24px;
     font-weight: variables.$bold;
     line-height: 24px;
+
+    @include utility.tab {
+      font-size: 2.4em;
+    }
+
+    @include utility.sp {
+      font-size: 20px;
+      font-weight: variables.$bold;
+      line-height: 20px;
+    }
   }
 
   &--content {
@@ -209,6 +459,16 @@
     flex-direction: column;
     justify-content: center;
     height: 116px;
+
+    @include utility.tab {
+      font-size: 1.3em;
+      height: auto;
+    }
+
+    @include utility.sp {
+      font-size: 12px;
+      height: 94px;
+    }
   }
 }
 
@@ -219,12 +479,24 @@
   font-style: normal;
   font-weight: variables.$regular;
   line-height: normal;
+
+  @include utility.tab {
+    font-size: 1.4em;
+  }
+
+  @include utility.sp {}
 }
 
 .l-inner__content {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include utility.tab {}
+
+  @include utility.sp {
+    flex-direction: column;
+  }
 
   &--flame {
     border-radius: 30px;
@@ -236,10 +508,19 @@
     right: 208.87px;
     bottom: 208.87px;
     left: 8.87px;
-
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include utility.tab {
+      width: 6em;
+      height: 6em;
+    }
+
+    @include utility.sp {
+      width: 45px;
+      height: 45px;
+    }
   }
 
   &--test {
@@ -249,20 +530,57 @@
     font-size: 16px;
     font-weight: variables.$bold;
     line-height: normal;
+
+    @include utility.tab {
+      font-size: 1.6em;
+    }
+
+    @include utility.sp {
+      font-size: 10px;
+    }
   }
 
   &--img {
     width: 102.292px;
     height: 99.996px;
     flex-shrink: 0;
+
+    @include utility.tab {
+      width: 10.2292em;
+      height: 9.9996em;
+    }
+
+    @include utility.sp {
+      width: 76.718px;
+      height: 74.999px;
+    }
   }
 
   &--title {
     margin: 20px 30px 0 30px;
+
+    @include utility.tab {
+      margin: 0.8em 0 0 0;
+      font-size: 2.3em;
+    }
+
+    @include utility.sp {
+      margin: 22px 0 0 0;
+      line-height: normal;
+    }
   }
 
   &--title2 {
     margin: 33px 30px 0 30px;
+
+    @include utility.tab {
+      margin: 1.4em 0 0 0;
+      font-size: 2.4em;
+    }
+
+    @include utility.sp {
+      margin-top: 22px;
+    }
   }
 
   &--item {
@@ -271,6 +589,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
+    @include utility.tab {
+      width: 27.7732em;
+    }
+
+    @include utility.sp {}
   }
 
   &--border {
@@ -280,6 +604,15 @@
     height: 357.732px;
     flex-shrink: 0;
     border-radius: 10px;
+
+    @include utility.tab {
+      width: 27.7732em;
+      height: 35.7732em;
+    }
+
+    @include utility.sp {
+      height: 290.732px;
+    }
   }
 }
 
@@ -289,6 +622,20 @@
   border-left: 20px solid variables.$pink;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
+
+  @include utility.tab {
+    border-left: 2em solid #DE5579;
+    border-top: 2em solid transparent;
+    border-bottom: 2em solid transparent;
+  }
+
+  @include utility.sp {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #DE5579;
+    border-bottom: 0;
+    margin: 10px 0;
+  }
 }
 
 
@@ -297,6 +644,16 @@
   display: flex;
   justify-content: center;
   padding-top: 50px;
+
+  @include utility.tab {
+    padding-top: 5em;
+  }
+
+  @include utility.sp {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
 }
 
 .l-inner__contents {
@@ -308,9 +665,31 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @include utility.tab {
+    width: 38em;
+    height: 24em;
+    padding: 7.1em 0 5.5em 0;
+  }
+
+  @include utility.sp {
+    width: 370px;
+    height: 234.905px;
+    padding: 60px 0 60px 0;
+  }
+
   &--title {
     color: variables.$white;
     line-height: 24px;
+
+    @include utility.tab {
+      width: 100%;
+      font-size: 2.4em;
+    }
+
+    @include utility.sp {
+      line-height: 21px;
+      font-size: 21px;
+    }
   }
 
   &--comment {
@@ -321,442 +700,29 @@
     font-style: normal;
     font-weight: variables.$regular;
     line-height: normal;
+
+    @include utility.tab {
+      width: 100%;
+      font-size: 1.6em;
+    }
+
+    @include utility.sp {
+      font-size: 14px;
+      margin-top: 53px;
+    }
   }
 
   &--img {
     flex-shrink: 0;
     position: absolute;
-  }
-}
 
-// tb
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-
-  .l-inner {
-    &__select {
-      &--box {
-        margin-top: 2.6em;
-      }
-
-      &--flame {
-        padding: 0 0 0 0.833em;
-
-        &:first-child {
-          margin-left: 0;
-        }
-
-        &:focus {
-          outline: none;
-          border: 1px solid variables.$pink;
-        }
-      }
-
-      &--triangle {
-        border-left: 1em solid transparent;
-        border-right: 1em solid transparent;
-        border-top: 1em solid #DE5579;
-      }
-    }
-
-    &__form {
-      color: variables.$selectGly;
-
-      &--flame {
-        width: 16.67em;
-        height: 3.45em;
-        font-size: 1.8em;
-        padding-left: 0.55em;
-      }
-    }
-
-    &__title {
-      width: 118em;
-      height: auto;
-      padding: 4em;
-
-      &--middle {
-        font-size: 2em;
-        margin-top: 1em;
-      }
-    }
-  }
-
-  //新着求人//
-  .l-inner {
-    &__width {
-      width: 118em;
-    }
-
-    &__job {
-      padding-top: 6.4em;
-
-      &--container {
-        margin-top: 2.5em;
-      }
-
-      &--images {
-        width: 100%;
-      }
-
-      &--SpImages {
-        display: none;
-      }
-
-      &--text {
-        width: 100%;
-        height: auto;
-        font-size: 1.6em;
-        line-height: 1.4em;
-      }
-
-      &--category {
-        font-size: 1.4em;
-        margin-left: 0.7143em;
-      }
-
-      &--flame {
-        font-size: 1.4em;
-        width: 4.286em;
-        height: 1.5em;
-      }
-    }
-  }
-
-  //MTG IMAGE//
-  .l-inner__mtg {
-
-    &--image {
-      height: 30em;
-    }
-
-    &--text {
-      font-size: 2.5em;
-    }
-  }
-
-  //四つの箱
-
-  .l-inner__appeal {
-    width: 47%;
-    height: 18em;
-    padding: 4em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    &--text {
-      font-size: 2.4em;
-    }
-
-    &--content {
-      font-size: 1.3em;
-      font-weight: variables.$regular;
-      height: auto;
-    }
-  }
-
-  //転職までの流れ//
-  .l-inner__content--description {
-    font-size: 1.4em;
-  }
-
-  .l-inner__content {
-
-    &--flame {
-      width: 6em;
-      height: 6em;
-    }
-
-    &--test {
-      font-size: 1.6em;
-    }
-
-    &--img {
-      width: 10.2292em;
-      height: 9.9996em;
-    }
-
-    &--title {
-      margin: 0.8em 0 0 0;
-      font-size: 2.3em;
-    }
-
-    &--title2 {
-      margin: 1.4em 0 0 0;
-      font-size: 2.4em;
-    }
-
-    &--item {
-      width: 27.7732em;
-    }
-
-    &--border {
-      width: 27.7732em;
-      height: 35.7732em;
-    }
-  }
-
-  .l-triangle1 {
-    border-left: 2em solid #DE5579;
-    border-top: 2em solid transparent;
-    border-bottom: 2em solid transparent;
-  }
-
-
-  //転職お役立ちコンテンツ
-  .l-inner__flex {
-    padding-top: 5em;
-  }
-
-  .l-inner__contents {
-    width: 38em;
-    height: 24em;
-    padding: 7.1em 0 5.5em 0;
-
-    &--title {
-      width: 100%;
-      font-size: 2.4em;
-    }
-
-    &--comment {
-      width: 100%;
-      font-size: 1.6em;
-    }
-
-    &--img {
+    @include utility.tab {
       width: 32%;
       height: 24em;
     }
-  }
-}
 
-// sp
-@media screen and (max-width: 767px) {
-  .sp {
-    display: none !important;
-  }
-
-  // お仕事検索
-  .l-inner__select {
-    &--box {
-      margin-top: 13px;
-      flex-wrap: wrap;
-    }
-
-    &--flame {
-      display: block;
-      padding: 6px 0 7px 8px;
-      border-radius: 10px;
-      appearance: none;
-      width: 200px;
-      height: 60px;
-      flex-shrink: 0;
-      margin-left: 15px;
-      border: 1px solid variables.$pink;
-
-      &:focus {
-        outline: none;
-        border: 1px solid variables.$pink;
-      }
-    }
-  }
-
-  .l-inner__form {
-    color: variables.$selectGly;
-
-    &--flame {
-      font-size: 14px;
-      width: 319px;
-      height: 29px;
-      margin-left: 0;
-      margin-top: 15.5px;
-
-      &:focus {
-        outline: none;
-        border: 1px solid variables.$pink;
-      }
-    }
-  }
-
-  .l-inner__title {
-    width: 370px;
-    height: 240px;
-    padding: 15px 25px 20px 25px;
-
-    &--middle {
-      font-size: 14px;
-      margin-top: 16px;
-    }
-  }
-
-  .l-inner__select--triangle {
-    width: 0;
-    height: 0;
-    border-left: 6.5px solid transparent;
-    border-right: 6.5px solid transparent;
-    border-top: 7px solid variables.$pink;
-  }
-
-  //新着求人//
-  .l-inner {
-    &__width {
-      width: 400px;
-    }
-
-    &__job {
-      margin: 0 auto;
-      height: 600px;
-      width: 400px;
-      padding-top: 30px;
-
-      &--title {
-        font-family: Noto Sans JP;
-        width: 400px;
-        text-align: center;
-        font-size: 25px;
-        font-weight: variables.$bold;
-        line-height: 25px;
-      }
-
-      &--container {
-        justify-content: flex-start;
-        margin-top: 35px;
-        overflow-x: scroll;
-        padding: 0 15px;
-      }
-
-      &--images {
-        display: none;
-      }
-
-      &--SpImages {
-        display: block;
-        border-radius: 10px;
-        width: 370px;
-        height: 208px;
-      }
-
-      &--text {
-        font-weight: variables.$bold;
-        width: 358px;
-        height: 44px;
-        margin-top: 10.08px;
-      }
-
-      &--category {
-        margin-left: 21.06px;
-      }
-    }
-  }
-
-  //MTG IMAGE//
-  .l-inner__mtg {
-    margin: 0 auto;
-    width: 400px;
-
-    &--image {
-      height: 75px;
-    }
-
-    &--container {
-      width: 400px;
-    }
-
-    &--text {
-      font-size: 14px;
-      width: 349px;
-      margin: 0 auto;
-      font-weight: variables.$regular;
-    }
-  }
-
-  //四つの箱
-
-  .l-inner__appeal {
-    width: 370px;
-    height: 161px;
-    padding: 30px 0;
-
-    &--text {
-      font-size: 20px;
-      font-weight: variables.$regular;
-      line-height: 20px;
-    }
-
-    &--content {
-      font-size: 12px;
-      height: 94px;
-    }
-  }
-
-  //転職までの流れ//
-  .l-inner__content {
-    flex-direction: column;
-
-    &--flame {
-      width: 45px;
-      height: 45px;
-    }
-
-    &--test {
-      font-size: 10px;
-    }
-
-    &--img {
-      width: 76.718px;
-      height: 74.999px;
-    }
-
-    &--title {
-      margin: 22px 0 0 0;
-      line-height: normal;
-    }
-
-    &--title2 {
-      margin-top: 22px;
-    }
-
-    &--border {
-      height: 290.732px;
-    }
-  }
-
-  .l-triangle1 {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #DE5579;
-    border-bottom: 0;
-    margin: 10px 0;
-  }
-
-
-  //転職お役立ちコンテンツ
-  .l-inner {
-    &__flex {
-      flex-direction: column;
-      align-items: center;
-      padding-top: 30px;
-    }
-
-    &__contents {
+    @include utility.sp {
       width: 370px;
-      height: 234.905px;
-      padding: 60px 0 60px 0;
-
-      &--title {
-        line-height: 21px;
-        font-size: 21px;
-      }
-
-      &--comment {
-
-        font-size: 14px;
-        margin-top: 53px;
-      }
-
-      &--img {
-        width: 370px;
-      }
     }
   }
 }

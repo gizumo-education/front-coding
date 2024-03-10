@@ -5,16 +5,49 @@
 .p-keyvisual {
   &__SPrelative {
     display: none;
+
+    @include utility.tab {
+      display: none;
+    }
+
+    @include utility.sp {
+      display: block;
+      position: relative;
+      width: 400px;
+      height: 270px;
+    }
   }
 
   &__leaf {
     height: 142px;
     position: relative;
 
+    @include utility.tab {
+      height: 14.2em;
+    }
+
+    @include utility.sp {
+      height: 62.024px;
+      position: relative;
+      width: 149.54px;
+      display: flex;
+    }
+
     &--left {
       width: 44.905px;
       height: 141.822px;
       flex-shrink: 0;
+
+      @include utility.tab {
+        width: 4.4905em;
+        height: 14.1822em;
+      }
+
+      @include utility.sp {
+        width: 20px;
+        height: 62.024px;
+        flex-shrink: 0;
+      }
     }
 
     &--right {
@@ -22,6 +55,19 @@
       height: 141.822px;
       flex-shrink: 0;
       margin-left: 250px;
+
+      @include utility.tab {
+        width: 4.4905em;
+        height: 14.1822em;
+        margin-left: 25em;
+      }
+
+      @include utility.sp {
+        width: 20px;
+        height: 62.024px;
+        flex-shrink: 0;
+        margin-left: 110px;
+      }
     }
   }
 
@@ -31,33 +77,66 @@
     max-width: 100%;
     height: 500px;
     position: relative;
+
+    @include utility.tab {
+      height: 50em;
+    }
+
+    @include utility.sp {
+      max-width: 400px;
+      height: 270px;
+      position: relative;
+    }
   }
 
   &__gray {
     background-color: variables.$liteGray;
     width: 100%;
+
+    @include utility.sp {
+      display: block;
+    }
   }
 
   &__relative {
     position: relative;
     height: 500px;
+
+    @include utility.tab {
+      height: 50em;
+    }
+
+    @include utility.sp {
+      display: none;
+    }
   }
 
   &__text {
     width: 67%;
     height: 500px;
     margin-left: auto;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
     position: absolute;
     top: 0;
     left: 67%;
     transform: translateX(-51%);
+
+    @include utility.tab {
+      height: 50em;
+    }
+
+    @include utility.sp {
+      max-width: 400px;
+      width: auto;
+      height: 270px;
+      left: 263px;
+      flex-direction: column;
+      top: 0;
+    }
 
     &--micro {
       color: variables.$white;
@@ -66,12 +145,37 @@
       position: absolute;
       top: 10px;
       right: 60px;
+
+      @include utility.tab {
+        top: 1em;
+        right: 6em;
+      }
+
+      @include utility.sp {
+        color: variables.$white;
+        font-weight: variables.$bold;
+        position: absolute;
+        width: 3px;
+        height: 4px;
+        top: 5px;
+        right: 25px;
+      }
     }
 
     &--first {
       position: absolute;
       top: 15%;
       right: 35px;
+
+      @include utility.tab {
+        top: 15%;
+        right: 3.5em;
+        width: 24.7em;
+      }
+
+      @include utility.sp {
+        display: none;
+      }
     }
 
     &--big {
@@ -79,6 +183,23 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      @include utility.tab {
+        width: 22.1em;
+        height: 8.6em;
+      }
+
+      @include utility.sp {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: variables.$white;
+        font-size: 48px;
+        font-weight: variables.$bold;
+        line-height: normal;
+        width: 100px;
+        height: 40px;
+      }
     }
 
     &--smaller {
@@ -88,11 +209,40 @@
       font-weight: variables.$regular;
       line-height: normal;
       margin-left: 110px;
+
+      @include utility.tab {
+        font-size: 1em;
+        margin-left: 11em;
+      }
+
+      @include utility.sp {
+        color: variables.$white;
+        font-family: Inter;
+        font-size: 3px;
+        font-weight: variables.$regular;
+        line-height: normal;
+        margin-left: 50px;
+      }
     }
 
     &--medium {
       margin-top: 40px;
       max-width: 800px;
+
+      @include utility.tab {
+        width: 80em;
+        margin-top: 4em;
+      }
+
+      @include utility.sp {
+        color: variables.$white;
+        font-family: DM Sans;
+        font-size: 17px;
+        font-weight: variables.$bold;
+        margin-top: 16px;
+        width: 272px;
+        text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
+      }
     }
 
     &--small {
@@ -108,200 +258,15 @@
       margin-top: 50px;
       margin-right: auto;
       margin-left: auto;
-    }
 
-    &--number {
-      color: variables.$yellowGreen;
-      font-family: Noto Sans JP;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: variables.$bold;
-      line-height: normal;
-    }
-  }
-}
-
-// tb
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tb {
-    display: none !important;
-  }
-
-  .p-keyvisual {
-    &__SPrelative {
-      display: none;
-    }
-
-    &__text--medium {
-      width: 80em;
-      margin-top: 4em;
-    }
-
-    &__leaf {
-      height: 14.2em;
-
-      &--left {
-        width: 4.4905em;
-        height: 14.1822em;
-      }
-
-      &--right {
-        width: 4.4905em;
-        height: 14.1822em;
-        margin-left: 25em;
-      }
-    }
-
-    &__width1 {
-      height: 50em;
-    }
-
-    &__relative {
-      height: 50em;
-    }
-
-    &__text {
-      height: 50em;
-
-      &--micro {
-        top: 1em;
-        right: 6em;
-      }
-
-      &--first {
-        top: 15%;
-        right: 3.5em;
-        width: 24.7em;
-      }
-
-      &--big {
-        width: 22.1em;
-        height: 8.6em
-      }
-
-      &--smaller {
-        font-size: 1em;
-        margin-left: 11em;
-      }
-
-      &--small {
+      @include utility.tab {
         font-size: 2em;
         width: 19.55em;
         height: 3.45em;
-        margin-top: 2.5em
+        margin-top: 2.5em;
       }
 
-      &--number {
-        font-size: 2em;
-      }
-    }
-  }
-
-}
-
-// sp
-@media screen and (max-width: 767px) {
-  .sp {
-    display: none !important;
-  }
-
-  .p-keyvisual {
-
-    &__SPrelative {
-      display: block;
-      position: relative;
-      width: 400px;
-      height: 270px;
-    }
-
-    &__leaf {
-      height: 62.024px;
-      position: relative;
-      width: 149.54px;
-      display: flex;
-
-      &--left {
-        width: 20px;
-        height: 62.024px;
-        flex-shrink: 0;
-      }
-
-      &--right {
-        width: 20px;
-        height: 62.024px;
-        flex-shrink: 0;
-        margin-left: 110px;
-      }
-    }
-
-    &__width1 {
-      max-width: 400px;
-      height: 270px;
-      position: relative;
-    }
-
-    &__gray {
-      display: block;
-    }
-
-    &__relative {
-      display: none;
-    }
-
-    &__text {
-      max-width: 400px;
-      width: auto;
-      height: 270px;
-      left: 263px;
-      flex-direction: column;
-      top: 0;
-
-      &--micro {
-        color: variables.$white;
-        font-weight: variables.$bold;
-        position: absolute;
-        width: 3px;
-        height: 4px;
-        top: 5px;
-        right: 25px;
-      }
-
-      &--first {
-        display: none;
-      }
-
-      &--big {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: variables.$white;
-        font-size: 48px;
-        font-weight: variables.$bold;
-        line-height: normal;
-        width: 100px;
-        height: 40px;
-      }
-
-      &--smaller {
-        color: variables.$white;
-        font-family: Inter;
-        font-size: 3px;
-        font-weight: variables.$regular;
-        line-height: normal;
-        margin-left: 50px;
-      }
-
-      &--medium {
-        color: variables.$white;
-        font-family: DM Sans;
-        font-size: 17px;
-        font-weight: variables.$bold;
-        margin-top: 16px;
-        width: 272px;
-        text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
-      }
-
-      &--small {
+      @include utility.sp {
         color: variables.$yellowGreen;
         font-size: 8px;
         font-weight: variables.$regular;
@@ -315,8 +280,21 @@
         margin-right: auto;
         margin-left: auto;
       }
+    }
 
-      &--number {
+    &--number {
+      color: variables.$yellowGreen;
+      font-family: Noto Sans JP;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: variables.$bold;
+      line-height: normal;
+
+      @include utility.tab {
+        font-size: 2em;
+      }
+
+      @include utility.sp {
         color: variables.$yellowGreen;
         font-family: Noto Sans JP;
         font-size: 16px;

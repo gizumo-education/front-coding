@@ -1,27 +1,51 @@
-@forward '../../foundation/_variables.scss';
-@forward '../../foundation/_mixins.scss';
 @use "../../foundation/variables";
+@forward '../../foundation/_variables.scss';
+@import '../../foundation/_mixins.scss';
 
 
 // お仕事検索//
 .u-main__size {
   padding: 60px 0;
+
+  @include tab {
+    padding: 6em 0;
+  }
+
+  @include sp {
+    padding: 25px 0;
+  }
 }
 
 .u-main__size2 {
   display: flex;
   justify-content: center;
   padding-top: 150px;
+
+  @include tab {
+    padding-top: 15em;
+  }
+
+  @include sp {
+    padding-top: 60px;
+  }
 }
 
 //新着求人 job//
 .u-job__category {
   &__position1 {
     margin-top: 7px;
+
+    @include sp {
+      padding: 0;
+    }
   }
 
   &__position2 {
     margin-top: 4px;
+
+    @include sp {
+      margin-top: 11.92px;
+    }
   }
 
   &__position3 {
@@ -31,6 +55,10 @@
 
 .u-container__position--job {
   margin-left: 20px;
+
+  @include tab {
+    margin-left: 2em;
+  }
 
   &:first-child {
     margin-left: 0;
@@ -44,6 +72,15 @@
 .u-select__position3 {
   position: relative;
   margin-left: 15px;
+
+  @include tab {
+    width: 100%;
+    margin-left: 1.5em;
+  }
+
+  @include sp {
+    margin-left: 10px;
+  }
 
   &:first-child {
     margin-left: 0;
@@ -67,26 +104,61 @@
   top: 25px;
   right: 4%;
   bottom: 25px;
+
+  @include tab {
+    top: 2.5em;
+  }
+
+  @include sp {
+    top: 12.5px;
+    left: 80px;
+  }
 }
 
 .u-content {
   &--message {
     margin-top: 18px;
     padding: 0 18px;
+
+    @include tab {
+      margin-top: 1.3em;
+      padding: 0 1.2em;
+    }
+
+    @include sp {
+      margin-top: 10px;
+    }
   }
 
   &--text {
     margin-top: 20px;
+
+    @include sp {
+      margin-top: 20px;
+    }
   }
 
   &__border {
     &--second {
       margin-top: 31px;
       padding: 0 18px;
+
+      @include sp {
+        margin-top: 31px;
+        padding: 0 18px;
+      }
     }
 
     &--text {
       padding: 58px 0 40.87px 0;
+
+      @include tab {
+        padding: 5.8em 0 4.087em 0;
+      }
+
+      @include sp {
+        padding: 53.8px 0 0 0;
+      }
     }
   }
 }
@@ -95,11 +167,33 @@
 .u-contents {
   padding-top: 106.13px;
 
+  @include tab {
+    padding-top: 10.613em;
+  }
+
+  @include sp {
+    padding-top: 61px;
+  }
+
   &__position {
     margin-left: 20px;
 
+    @include tab {
+      width: 38em;
+      margin-left: 2em;
+    }
+
+    @include sp {
+      margin-left: 0;
+      margin-top: 17.55px;
+    }
+
     &:first-child {
       margin-left: 0;
+
+      @include sp {
+        margin-top: 0;
+      }
     }
   }
 }
@@ -111,10 +205,26 @@
 //医療事務コラムもっと見る
 .u-button__flame--column {
   padding-top: 80px;
+
+  @include tab {
+    padding-top: 8em;
+  }
+
+  @include sp {
+    padding-top: 34.86px;
+  }
 }
 
 .u-job {
   padding: 60px 0 67px 0;
+
+  @include tab {
+    padding: 6em 0 6.7em 0;
+  }
+
+  @include sp {
+    padding: 0 0 0 0;
+  }
 }
 
 // ギブズ四つの特徴　ピンク
@@ -127,6 +237,14 @@
   flex-direction: column;
   align-items: center;
 
+  @include tab {
+    padding-top: 10.6em;
+  }
+
+  @include sp {
+    padding-top: 55px;
+  }
+
   &__box--flex {
     display: flex;
     flex-wrap: wrap;
@@ -135,211 +253,29 @@
     padding-top: 53px;
     width: 100%;
     max-width: 1200px;
-  }
-}
 
-.u-appeal__PcLine {
-  display: none;
-}
-
-.u-appeal__SpText {
-  visibility: hidden;
-}
-
-.u-footer {
-  padding-top: 200px;
-
-  &__container--text {
-    margin-top: 27px;
-  }
-}
-
-// tb
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tb {
-    display: none !important;
-  }
-
-  // お仕事検索
-
-  .u-main__size {
-    padding: 6em 0;
-  }
-
-  .u-select__position1,
-  .u-select__position2,
-  .u-select__position3 {
-    width: 100%;
-    margin-left: 1.5em;
-  }
-
-  .u-triangle1,
-  .u-triangle2,
-  .u-triangle3 {
-    top: 2.5em;
-  }
-
-  // 新着求人
-  .u-container__position--job {
-    margin-left: 2em;
-  }
-
-  // 新着求人一覧をもっと見る
-  .u-job {
-    padding: 6em 0 6.7em 0;
-  }
-
-  // 医療事務コラムをもっと見る
-  .u-button__flame--column {
-    padding-top: 8em;
-  }
-
-  // ギブズ四つの特徴　ピンク
-  .u-headline {
-    padding-top: 10.6em;
-
-    &__box--flex {
+    @include tab {
       padding-top: 5.3em;
       gap: 4em;
     }
-  }
 
-  // お仕事検索
-  .u-main__size2 {
-    padding-top: 15em;
-  }
-
-
-  //転職お役立ちコンテンツ//
-  .u-contents {
-    padding-top: 10.613em;
-  }
-
-  .u-content--message {
-    margin-top: 1.3em;
-    padding: 0 1.2em;
-  }
-
-  .u-content__border--text {
-    padding: 5.8em 0 4.087em 0;
-  }
-
-  .u-contents__position {
-    width: 38em;
-    margin-left: 2em;
-  }
-
-  .u-footer {
-    padding-top: 20em;
-
-    &__container--text {
-      margin-top: 2.7em;
-    }
-  }
-}
-
-// sp
-@media screen and (max-width: 767px) {
-  .sp {
-    display: none !important;
-  }
-
-  // お仕事検索//
-
-  .u-main__size {
-    padding: 25px 0;
-  }
-
-  .u-main__size2 {
-    padding-top: 60px;
-  }
-
-  //新着求人 job//
-  .u-job {
-    padding: 0;
-
-    &__category {
-      &__position1 {
-        margin-top: 11.92px;
-      }
-    }
-  }
-
-  //お仕事検索//
-  .u-inner__SpText {
-    font-size: 22px;
-  }
-
-  //お仕事検索　select//
-  .u-select__position1,
-  .u-select__position2,
-  .u-select__position3 {
-    margin-left: 10px;
-  }
-
-  .u-triangle1,
-  .u-triangle2,
-  .u-triangle3 {
-    top: 12.5px;
-    left: 80px;
-  }
-
-  .u-content {
-    &--message {
-      margin-top: 10px;
-    }
-
-    &--text {
-      margin-top: 20px;
-    }
-
-    &__border {
-      &--second {
-        margin-top: 31px;
-        padding: 0 18px;
-      }
-
-      &--text {
-        padding: 53.8px 0 0 0;
-      }
-    }
-  }
-
-
-  //転職お役立ちコンテンツ//
-  .u-contents {
-    padding-top: 61px;
-
-    &__position {
-      margin-left: 0;
-      margin-top: 17.55px;
-
-      &:first-child {
-        margin-top: 0;
-      }
-    }
-  }
-
-  //医療事務コラムもっと見る
-  .u-button__flame--column {
-    padding-top: 34.86px;
-  }
-
-  // ギブズ四つの特徴　ピンク
-  .u-headline {
-    padding-top: 55px;
-
-    &__box--flex {
+    @include sp {
       padding-top: 38px;
       gap: 21px;
     }
   }
+}
 
-  .u-appeal {
+.u-appeal {
+  @include sp {
     margin-left: 0;
 
     &--position {
       margin-top: 0;
+    }
+
+    &__PcLine {
+      display: none;
     }
 
     &__SpLine {
@@ -347,6 +283,7 @@
     }
 
     &__PcLine {
+
       display: block;
     }
 
@@ -354,17 +291,49 @@
       visibility: visible;
     }
   }
+}
 
-  .u-footer {
+.u-appeal__SpText {
+  @include tab {
+    visibility: hidden;
+  }
+
+  @include sp {
+    visibility: visible;
+  }
+}
+
+.u-footer {
+  padding-top: 200px;
+
+  @include tab {
+    padding-top: 20em;
+  }
+
+  @include sp {
     padding-top: 100px;
   }
 
-  // 転職までの流れ
-  .u-box__content {
-    padding-top: 60px;
+  &__container--text {
+    margin-top: 27px;
 
-    &--padding {
-      padding-top: 35px;
+    @include tab {
+      margin-top: 2.7em;
     }
   }
+
+  @include sp {
+    .u-box__content {
+      padding-top: 60px;
+
+      &--padding {
+        padding-top: 35px;
+      }
+    }
+  }
+}
+
+//お仕事検索//
+.u-inner__SpText {
+  font-size: 22px;
 }
