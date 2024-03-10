@@ -267,6 +267,10 @@
 }
 
 .u-appeal {
+  &__PcLine {
+    display: none;
+  }
+
   @include sp {
     margin-left: 0;
 
@@ -274,16 +278,11 @@
       margin-top: 0;
     }
 
-    &__PcLine {
-      display: none;
-    }
-
     &__SpLine {
       display: none;
     }
 
     &__PcLine {
-
       display: block;
     }
 
@@ -296,10 +295,6 @@
 .u-appeal__SpText {
   @include tab {
     visibility: hidden;
-  }
-
-  @include sp {
-    visibility: visible;
   }
 }
 

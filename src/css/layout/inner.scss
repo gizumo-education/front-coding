@@ -225,9 +225,7 @@
       line-height: normal;
       text-align: left;
       margin: 0 auto;
-
-      @include utility.tab {}
-
+      
       @include utility.sp {
         font-family: Noto Sans JP;
         width: 400px;
@@ -342,8 +340,6 @@
         width: 4.286em;
         height: 1.5em;
       }
-
-      @include utility.sp {}
     }
   }
 }
