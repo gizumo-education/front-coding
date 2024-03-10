@@ -92,8 +92,16 @@
 .u-box__content {
   padding-top: 10.5em;
 
+  @include sp {
+    padding-top: 60px;
+  }
+
   &--padding {
     padding-top: 5.113em;
+
+    @include sp {
+      padding-top: 35px;
+    }
   }
 }
 
@@ -314,16 +322,6 @@
 
     @include tab {
       margin-top: 2.7em;
-    }
-  }
-
-  @include sp {
-    .u-box__content {
-      padding-top: 60px;
-
-      &--padding {
-        padding-top: 35px;
-      }
     }
   }
 }
