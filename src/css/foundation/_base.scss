@@ -1,4 +1,5 @@
 @use '../object/utility/utility' as base;
+@use '../object/utility/utility.scss';
 @use "../foundation/variables";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
@@ -86,6 +87,14 @@ a {
 //追加//
 main {
   padding-top: 100px;
+
+  @include utility.tab {
+    padding-top: 10em;
+  }
+
+  @include utility.sp {
+    padding-top: 70px;
+  }
 }
 
 li {
@@ -94,12 +103,18 @@ li {
 
 h2 {
   color: variables.$black;
-font-family: Noto Sans JP;
-font-size: 25px;
-font-style: normal;
-font-weight: 700;
-line-height: 25px;
-text-align: center;
+  font-family: Noto Sans JP;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+
+  @include utility.tab {
+    h2 {
+      font-size: 2.5em;
+    }
+  }
 }
 
 h3 {
@@ -109,6 +124,10 @@ h3 {
   font-weight: variables.$bold;
   line-height: 24px;
   text-align: center;
+
+  @include utility.sp {
+    font-size: 20px;
+  }
 }
 
 a {

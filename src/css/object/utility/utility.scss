@@ -1,29 +1,51 @@
-@forward '../../foundation/_variables.scss';
-@forward '../../foundation/_mixins.scss';
 @use "../../foundation/variables";
+@forward '../../foundation/_variables.scss';
+@import '../../foundation/_mixins.scss';
 
 
 // お仕事検索//
-
 .u-main__size {
   padding: 60px 0;
+
+  @include tab {
+    padding: 6em 0;
+  }
+
+  @include sp {
+    padding: 25px 0;
+  }
 }
 
 .u-main__size2 {
   display: flex;
   justify-content: center;
-  padding-bottom: 200px;
   padding-top: 150px;
+
+  @include tab {
+    padding-top: 15em;
+  }
+
+  @include sp {
+    padding-top: 60px;
+  }
 }
 
 //新着求人 job//
 .u-job__category {
   &__position1 {
     margin-top: 7px;
+
+    @include sp {
+      padding: 0;
+    }
   }
 
   &__position2 {
     margin-top: 4px;
+
+    @include sp {
+      margin-top: 11.92px;
+    }
   }
 
   &__position3 {
@@ -33,6 +55,10 @@
 
 .u-container__position--job {
   margin-left: 20px;
+
+  @include tab {
+    margin-left: 2em;
+  }
 
   &:first-child {
     margin-left: 0;
@@ -47,54 +73,135 @@
   position: relative;
   margin-left: 15px;
 
+  @include tab {
+    width: 100%;
+    margin-left: 1.5em;
+  }
+
+  @include sp {
+    margin-left: 10px;
+  }
+
   &:first-child {
     margin-left: 0;
   }
 }
 
 //転職までの流れ//
+
+.u-box__content {
+  padding-top: 10.5em;
+
+  @include sp {
+    padding-top: 60px;
+  }
+
+  &--padding {
+    padding-top: 5.113em;
+
+    @include sp {
+      padding-top: 35px;
+    }
+  }
+}
+
 .u-triangle1,
 .u-triangle2,
 .u-triangle3 {
   position: absolute;
   top: 25px;
-  right: 15px;
+  right: 4%;
   bottom: 25px;
-  left: 165px;
+
+  @include tab {
+    top: 2.5em;
+  }
+
+  @include sp {
+    top: 12.5px;
+    left: 80px;
+  }
 }
 
 .u-content {
   &--message {
     margin-top: 18px;
     padding: 0 18px;
+
+    @include tab {
+      margin-top: 1.3em;
+      padding: 0 1.2em;
+    }
+
+    @include sp {
+      margin-top: 10px;
+    }
   }
 
   &--text {
     margin-top: 20px;
+
+    @include sp {
+      margin-top: 20px;
+    }
   }
 
   &__border {
     &--second {
       margin-top: 31px;
       padding: 0 18px;
+
+      @include sp {
+        margin-top: 31px;
+        padding: 0 18px;
+      }
     }
 
     &--text {
       padding: 58px 0 40.87px 0;
+
+      @include tab {
+        padding: 5.8em 0 4.087em 0;
+      }
+
+      @include sp {
+        padding: 53.8px 0 0 0;
+      }
     }
   }
 }
-
 
 //転職お役立ちコンテンツ//
 .u-contents {
   padding-top: 106.13px;
 
+  @include tab {
+    padding-top: 10.613em;
+  }
+
+  @include sp {
+    padding-top: 61px;
+  }
+
   &__position {
     margin-left: 20px;
 
+    @include tab {
+      width: 38em;
+      margin-left: 2em;
+    }
+
+    @include sp {
+      margin-left: 0;
+      margin-top: 17.55px;
+    }
+
     &:first-child {
       margin-left: 0;
+
+      @include sp {
+        margin-top: 0;
+      }
     }
   }
 }
@@ -105,13 +212,27 @@
 
 //医療事務コラムもっと見る
 .u-button__flame--column {
-  line-height: 18px;
   padding-top: 80px;
+
+  @include tab {
+    padding-top: 8em;
+  }
+
+  @include sp {
+    padding-top: 34.86px;
+  }
 }
 
 .u-job {
-  // margin: 60px auto 67px auto;
-  padding-top: 60px;
+  padding: 60px 0 67px 0;
+
+  @include tab {
+    padding: 6em 0 6.7em 0;
+  }
+
+  @include sp {
+    padding: 0 0 0 0;
+  }
 }
 
 // ギブズ四つの特徴　ピンク
@@ -120,23 +241,92 @@
   flex-shrink: 0;
   background-color: variables.$white;
   padding-top: 106px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tab {
+    padding-top: 10.6em;
+  }
+
+  @include sp {
+    padding-top: 55px;
+  }
 
   &__box--flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 40px;
     padding-top: 53px;
+    width: 100%;
+    max-width: 1200px;
+
+    @include tab {
+      padding-top: 5.3em;
+      gap: 4em;
+    }
+
+    @include sp {
+      padding-top: 38px;
+      gap: 21px;
+    }
   }
 }
-
 
 .u-appeal {
-  margin-left: 40px;
+  &__PcLine {
+    display: none;
+  }
 
-  &--position {
-    margin-top: 40px;
+  @include sp {
+    margin-left: 0;
+
+    &--position {
+      margin-top: 0;
+    }
+
+    &__SpLine {
+      display: none;
+    }
+
+    &__PcLine {
+      display: block;
+    }
+
+    &__SpText {
+      visibility: visible;
+    }
   }
 }
 
-.u-footer__container--text {
-  margin-top: 27px;
+.u-appeal__SpText {
+  @include tab {
+    visibility: hidden;
+  }
+}
+
+.u-footer {
+  padding-top: 200px;
+
+  @include tab {
+    padding-top: 20em;
+  }
+
+  @include sp {
+    padding-top: 100px;
+  }
+
+  &__container--text {
+    margin-top: 27px;
+
+    @include tab {
+      margin-top: 2.7em;
+    }
+  }
+}
+
+//お仕事検索//
+.u-inner__SpText {
+  font-size: 22px;
 }

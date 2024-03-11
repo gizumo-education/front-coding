@@ -2,7 +2,6 @@
 @use "../../foundation/variables";
 // 共通パーツであるボタンのスタイルを記述するファイル
 
-
 .c-option__text {
   color: variables.$filterBlack;
   font-family: Noto Sans JP;
@@ -11,38 +10,83 @@
   width: 200px;
   height: 60px;
   flex-shrink: 0;
+
+  @include utility.tab {
+    font-size: 1.8em;
+    width: 100%;
+    height: 3.333em;
+  }
+
+  @include utility.sp {
+    background-color: variables.$white;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+  }
 }
 
 .c-search {
   position: relative;
   margin-left: 15px;
-
   width: 140px;
-  height: 60px;
   flex-shrink: 0;
   background-color: variables.$pink;
   border-radius: 30px;
   border: none;
   outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 14px;
+
+  @include utility.tab {
+    width: 10.5em;
+    margin-left: 1.125em;
+  }
+
+  @include utility.sp {
+    margin: 0 auto;
+    margin-top: 16px;
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+  }
 
   &__font {
-    position: absolute;
-    top: 21px;
-    right: 20px;
-    bottom: 21;
-    left: 48px;
     color: variables.$white;
     font-size: 18px;
     font-weight: variables.$bold;
     line-height: 18px;
-  }
 
-  &__position {
-    position: absolute;
-    top: 15.02px;
-    right: 96px;
-    bottom: 15px;
-    left: 14.02px;
+    @include utility.tab {
+      font-size: 1.35em;
+    }
+
+    @include utility.sp {
+      top: 11px;
+      color: variables.$white;
+      font-size: 18px;
+      font-weight: variables.$bold;
+      width: 72px;
+    }
+
+    &__position {
+      @include utility.tab {
+        width: 2.25em;
+        height: 2.25em;
+
+        @include utility.sp {
+          position: absolute;
+          top: 11px;
+          right: 129px;
+          bottom: 11px;
+          left: 13px;
+          width: 17.975px;
+          height: 17.974px;
+        }
+      }
+    }
   }
 }
 
@@ -61,6 +105,17 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+
+  @include utility.tab {
+    width: 20em;
+    height: 3.3337em;
+    font-size: 1.8em;
+  }
+
+  @include utility.sp {
+    width: 370px;
+    font-size: 18px;
+  }
 }
 
 .c-button__box {
@@ -68,6 +123,19 @@
   bottom: 250px;
   width: 1180px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @include utility.tab {
+    width: 118em;
+    bottom: 26em;
+  }
+
+  @include utility.sp {
+    padding: 0 15px;
+    bottom: 190px;
+    width: 400px;
+  }
 
   &--back {
     width: 60px;
@@ -80,6 +148,16 @@
     border: none;
     position: relative;
     float: left;
+
+    @include utility.tab {
+      width: 6em;
+      height: 6em;
+    }
+
+    @include utility.sp {
+      width: 42px;
+      height: 42px;
+    }
 
     &::before {
       content: "";
@@ -94,6 +172,22 @@
       border-top: 0.707px solid variables.$filterBlack;
       border-right: 0.707px solid variables.$filterBlack;
       transform: rotate(225deg);
+
+      @include utility.tab {
+        width: 14px;
+        height: 14px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 7px;
+      }
+
+      @include utility.sp {
+        top: 25px;
+        left: 18px;
+        width: 14px;
+        height: 14px;
+      }
     }
   }
 
@@ -102,12 +196,20 @@
     height: 60px;
     background-color: variables.$white;
     flex-shrink: 0;
-    fill: black;
     opacity: 0.699999988079071;
     border-radius: 30px;
     border: none;
     position: relative;
-    float: right;
+
+    @include utility.tab {
+      width: 6em;
+      height: 6em;
+    }
+
+    @include utility.sp {
+      width: 42px;
+      height: 42px;
+    }
 
     &::before {
       content: "";
@@ -122,6 +224,23 @@
       border-top: 0.707px solid variables.$filterBlack;
       border-right: 0.707px solid variables.$filterBlack;
       transform: rotate(45deg);
+
+      @include utility.tab {
+        top: 3em;
+        bottom: 3em;
+        right: 2.5em;
+        width: 2em;
+        height: 2em;
+      }
+
+      @include utility.sp {
+        width: 14px;
+        height: 14px;
+        top: 0;
+        right: 7px;
+        bottom: 0;
+        left: 0;
+      }
     }
   }
 }
