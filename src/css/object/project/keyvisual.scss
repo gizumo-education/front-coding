@@ -4,6 +4,7 @@
 .keyvisual {
   width: 1600px;
   height: 500px;
+  margin: 0 auto;
 
   &-main {
     position: relative;
@@ -19,7 +20,7 @@
   &-photo {
     position: absolute;
     text-align: center;
-    right: 20px;
+    margin-left: 600px;
     top: 150px;
   }
 
