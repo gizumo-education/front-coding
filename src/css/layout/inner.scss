@@ -20,21 +20,27 @@
     }
   }
 };
-.main{
-  padding-top: 100px;
-};
-// ---キービジュアル---
-.keyvisual_inner {
-  position: relative;
-  width: 100%;
-  display: flex;
+
+.inner {
+  padding: 0px 210px 0px;
 };
 
+.main{
+  // padding-top: 100px;
+};
+
+// ---キービジュアル---
 .keyvisual_box {
   width: 100%;
   height: 500px;
   flex-shrink: 0;
   background-color: #98B1BE;
+};
+
+.keyvisual_inner {
+  position: relative;
+  width: 100%;
+  display: flex;
 };
 
 .keyvisual_photo {
@@ -45,17 +51,19 @@
   margin-left: 175px;
 };
 
-// .keyvisual_pass1 {
-//   position: absolute;
-//   margin-top: 74.96px;
-// };
+.keyvisual_pass1 {
+  position: absolute;
+  margin-top: 74.96px;
+  margin-left: 830px;
+};
 
-// .keyvisual_pass2 {
-//   position: absolute;
-//   margin-top: 74.96px;
-// };
+.keyvisual_pass2 {
+  position: absolute;
+  margin-top: 74.96px;
+  margin-left: 1126.91px;
+};
 
-.keyvisual_font1 {
+.keyvisual_bestsite {
   color: #FFF;
   font-family: Shippori Mincho;
   font-size: 16px;
@@ -67,7 +75,7 @@
   margin-left: 887.6px;
 };
 
-.keyvisual_font2 {
+.keyvisual_no1 {
   color: #FFF;
   font-family: Shippori Mincho;
   font-size: 111.413px;
@@ -79,7 +87,7 @@
   margin-left: 885.73px;
 };
 
-.keyvisual_font3 {
+.keyvisual_sarch {
   color: #FFF;
   font-family: Inter;
   font-size: 10px;
@@ -87,9 +95,11 @@
   font-weight: 400;
   line-height: normal;
   position: absolute;
+  margin-top: 213px;
+  margin-left: 996.82px;
 };
 
-.keyvisual_font4 {
+.keyvisual_title {
   color: #FFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: DM Sans;
@@ -102,13 +112,22 @@
   margin-left: 607px;
 };
 
-.keyvisual_font5 {
+.publish_box {
+  margin-top: 384px;
+  margin-left: 809.5px;
+  position: absolute;
+};
+
+.keyvisual_publish {
   color: #2EB6AA;
   font-family: Noto Sans JP;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  position: absolute;
+  margin-top: 389px;
+  margin-left: 851px;
 };
 
 .keyvisual_font6 {
@@ -118,61 +137,100 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  position: absolute;
 };
+
+
+
 
 
 // <!-- お仕事検索 -->
 
 .form_box {
-  margin: 0 auto;
-  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
 };
 
 .form_box_inner {
   width: 1180px;
   height: 240px;
-  flex-shrink: 0;
-  margin-left: 210px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  background-color: #DEEEF9;;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #DEEEF9;
 };
 
-.form_font {
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+};
+
+.form_subtitle {
   color: #000;
   font-family: Noto Sans JP;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-top: 40px;
-text-align: center
+  padding-top: 20px;
+  text-align: center;
 };
 
-.form_font1 {
+.form_title {
   color: #000;
   font-family: Noto Sans JP;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
   line-height: 25px;
-  padding-top: 20px;
   text-align: center
+};
+
+.form_button_box {
+  margin-top: 20px;
+};
+
+.form_button {
+  float: left;
+  margin-left: 15px;
+};
+
+.form_icon {
+};
+
+.select_icon {
 };
 
 .form_font3 {
   color: #000;
-  font-family: Noto Sans JP;
   font-size: 18px;
-  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+};
+
+.form_font4 {
+  color: #A4A4A4;
+  font-size: 18px;
   font-weight: 400;
   line-height: normal;
 };
 
-.form_icon {
-  height: 60px;
-  flex-shrink: 0;
+.form_search {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px; /* 100% */
 };
+
+.search_icon {
+  height: 30px;
+};
+
+.search_box {
+  height: 60px;
+};
+
 
 
 
@@ -192,7 +250,6 @@ text-align: center
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-left: 210px;
 };
 
 .news_font2 {
@@ -223,20 +280,15 @@ text-align: center
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  position: absolute;
 };
 
-.news_detail {
-  display: flex;
-}
-
-.clearfix:after {
-  display: block;
-  content: "";
-  clear: both;
+.recrut_back {
+  position: relative;
 };
 
 .recruit_allphoto {
-  margin-top: 20px;
+  margin-top: 25px;
 };
 .recruit_photo {
   margin-left: 20px;
@@ -244,7 +296,7 @@ text-align: center
 };
 
 .recruit_photo:first-child {
-  margin-left: 210px;
+  margin-left: 0px;
 };
 
 // <!-- ギズジョブ -->
@@ -293,20 +345,91 @@ text-align: center
   margin-left: 487px;
 };
 
+
+
 // <!-- 4つの特徴 -->
-.features {
-position: relative;
+.features_box {
+  padding-top: 106px;
+  padding-bottom: 105px;
 };
 
-.features_photo {
+.features {
+  float: left;
+  margin-left: 40px;
+  margin-top: 40px;
+  position:relative;
+};
+
+.features_font {
+  position: absolute;
+  font-family: Noto Sans JP;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #DE5579;
+  margin-top: 40px;
+};
+
+.features_detail {
+  position: absolute;
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 100px;
+};
+
+.features_title {
   color: #000;
   font-family: Noto Sans JP;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
   line-height: 25px; /* 100% */
-  position: absolute;
-  margin-top: 2002px;
+  text-align: center;
 };
+
+.features:nth-child(2n+1) {
+  margin-left: 0px;
+};
+
 // <!-- 転職までの流れ -->
+.flow_box {
+  padding-bottom: 106.13px;
+};
+
+.flow {
+  float: left;
+  margin-top: 51.13px;
+  margin-left: 22.27px;
+};
+
+.flow:first-child {
+  margin-left: 0px;
+};
+
+.flow_title {
+  color: #000;
+  font-family: "Noto Sans JP";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 100% */
+  text-align: center;
+};
+
+
+
 // <!-- 転職お役立ちコンテンツ -->
+.information_title {
+  color: #000;
+  font-family: "Noto Sans JP";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 100% */
+  text-align: center;
+};
