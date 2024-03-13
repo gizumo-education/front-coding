@@ -2,7 +2,6 @@
 // ページ上部のキービジュアルに関するスタイル
 
 .keyvisual {
-  width: 1600px;
   height: 500px;
   margin: 0 auto;
 
@@ -11,10 +10,7 @@
   }
 
   &-title {
-    font-size: 50px;
-    color: #FFFFFF;
     margin-top: 30px;
-    text-shadow: 0 4px #000000;
   }
 
   &-photo {
@@ -35,7 +31,7 @@
     border-width: 2.27px;
     border-style: solid;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
     padding-top: 10px;
   }

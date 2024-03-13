@@ -3,11 +3,12 @@
 .gizjob-fourthtitle {
   margin: 0 auto;
   margin-top: 50px;
-  width: 1180px;
+  width: 1200px;
   height: 478px;
 
   & > .main-strong-title {
     font-size: 25px;
+    font-weight: 700;
     text-align: center;
   }
 
@@ -64,9 +65,9 @@
         word-break: auto-phrase;
       }
     }
+  }
 
-    &aaa {
-      margin-left: 15px;
-    }
+  & > .aaa {
+    margin-left: 20px;
   }
 }
