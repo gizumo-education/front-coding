@@ -1,18 +1,22 @@
 @use '../../object/utility/utility.scss';
 
-.gizjob-fourthtitle {
+.p-gizjob__fourthtitle {
   margin: 0 auto;
   margin-top: 50px;
   width: 1200px;
   height: 478px;
 
-  & > .main-strong-title {
-    font-size: 25px;
+  & ul:nth-of-type(2n) {
+    margin-left: 20px;
+  }
+
+  & > .p-main__strong__title {
+    font-size: 24px;
     font-weight: 700;
     text-align: center;
   }
 
-  & > .gizjob-box {
+  & > .p-gizjob__box {
     display: inline-table;
     width: 580px;
     height: 180px;
@@ -20,54 +24,25 @@
     border-radius: 10px;
     margin-top: 30px;
 
-    & > .strong-point {
-      font-size: 25px;
+    & > .p-strong__point {
+      font-size: 24px;
+      font-weight: 700;
       color: #de5579;
       text-align: center;
       margin-top: 40px;
     }
 
-    & > .sub-strong-point {
+    & > .p-sub__strong__point {
       color: #000000;
       font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 30px;
 
-      &-first {
-        width: 447px;
-        height: 40px;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 30px;
-      }
-
-      &-second {
-        width: 390px;
-        height: 40px;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 30px;
-        word-break: keep-all;
-      }
-
-      &-third {
-        width: 475px;
-        height: 40px;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 30px;
-      }
-
-      &-forth {
-        width: 447px;
-        height: 60px;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 30px;
-        word-break: auto-phrase;
+      & > .p-text__in__the__middle {
+        margin-top: 10px;
       }
     }
-  }
-
-  & > .aaa {
-    margin-left: 20px;
   }
 }

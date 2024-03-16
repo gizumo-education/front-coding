@@ -1,40 +1,41 @@
 @use '../../object/utility/utility.scss';
 
-.contents {
+.p-contents {
   width: 1180px;
   height: 455px;
   margin: 0 auto;
 
-  &-title {
+  &__title {
     font-size: 25px;
+    font-weight: 700;
     text-align: center;
     margin-top: 50px;
   }
 
-  & > .three-contents {
+  & > .p-three__contents {
     display: flex;
     margin-top: 50px;
 
-    & > .manual {
+    & > .p-manual {
       width: 380px;
       height: 240px;
-      background-image: url("../img/picture/contents-履歴書.png");
+      background-image: url("../img/picture/contents-paper.png");
 
-      & > .manual-backcolor {
+      & > .p-manual__backcolor {
         padding-top: 55px;
         width: 380px;
         height: 240px;
         background-color: rgba($color: #000000, $alpha: 0.7);
         border-radius: 10px;
 
-        & > .contents-text {
+        & > .p-contents__text {
           font-size: 24px;
           color: #FFFFFF;
           text-align: center;
           word-break: auto-phrase;
         }
 
-        & > .contents-sub-text {
+        & > .p-contents__sub__text {
           margin: 0 auto;
           margin-top: 50px;
           width: 288px;
@@ -43,31 +44,35 @@
           color: #FFFFFF;
           text-align: center;
           word-break: auto-phrase;
+
+          & > .p-text__in__the__middle {
+            margin-top: 20px;
+          }
         }
       }
     }
 
-    & > .knowledge {
+    & > .p-knowledge {
       margin-left: 20px;
       width: 380px;
       height: 240px;
       background-image: url("../img/picture/contents-PC.png");
 
-      & > .manual-backcolor {
+      & > .p-manual__backcolor {
         padding-top: 55px;
         width: 380px;
         height: 240px;
         background-color: rgba($color: #000000, $alpha: 0.7);
         border-radius: 10px;
 
-        & > .contents-text {
+        & > .p-contents__text {
           font-size: 24px;
           color: #FFFFFF;
           text-align: center;
           word-break: auto-phrase;
         }
 
-        & > .contents-sub-text {
+        & > .p-contents__sub__text {
           margin: 0 auto;
           margin-top: 50px;
           width: 288px;
@@ -76,31 +81,35 @@
           color: #FFFFFF;
           text-align: center;
           word-break: auto-phrase;
+
+          & > .p-text__in__the__middle {
+            margin-top: 20px;
+          }
         }
       }
     }
 
-    & > .manual-second {
+    & > .p-manual__second {
       margin-left: 20px;
       width: 380px;
       height: 240px;
-      background-image: url("../img/picture/contents-履歴書.png");
+      background-image: url("../img/picture/contents-paper.png");
 
-      & > .manual-backcolor {
+      & > .p-manual__backcolor {
         padding-top: 55px;
         width: 380px;
         height: 240px;
         background-color: rgba($color: #000000, $alpha: 0.7);
         border-radius: 10px;
 
-        & > .contents-text {
+        & > .p-contents__text {
           font-size: 24px;
           color: #FFFFFF;
           text-align: center;
           word-break: auto-phrase;
         }
 
-        & > .contents-sub-text {
+        & > .p-contents__sub__text {
           margin: 0 auto;
           margin-top: 50px;
           width: 288px;
@@ -109,6 +118,10 @@
           color: #FFFFFF;
           text-align: center;
           word-break: auto-phrase;
+
+          & > .p-text__in__the__middle {
+            margin-top: 20px;
+          }
         }
       }
     }

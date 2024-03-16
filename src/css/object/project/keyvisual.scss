@@ -1,26 +1,22 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
 
-.keyvisual {
-  height: 500px;
-  margin: 0 auto;
+.p-keyvisual {
+  position: relative;
 
-  &-main {
-    position: relative;
+  & > .p-nurse__photo {
+    display: block;
+    margin: 0 auto;
   }
 
-  &-title {
-    margin-top: 30px;
-  }
-
-  &-photo {
+  &__photo {
     position: absolute;
     text-align: center;
-    margin-left: 600px;
-    top: 150px;
+    margin-left: 40%;
+    top: 10%;
   }
 
-  &-score {
+  &__score {
     width: 391px;
     height: 69px;
     background-color: #FFFFFF;
@@ -37,6 +33,6 @@
   }
 }
 
-.score-big {
+.p-score__big {
   font-size: 40px;
 }

@@ -2,7 +2,7 @@
 // 共通パーツであるボタンのスタイルを記述するファイル
 
 //検索ボタン
-.surth-button {
+.p-surth__button {
   padding: 20px;
   padding-left: 40px;
   width: 140px;
@@ -20,12 +20,12 @@
 
 //新着求人一覧をもっと見る&医療事務コラムをもっと見るのボタン
 
-.recruitment-width {
+.p-recruitment__width {
   width: 1180px;
   margin: 0 auto;
   text-align: center;
 
-  & > .recruitment-button {
+  & > .p-recruitment__button {
     width: 360px;
     height: 60px;
     margin: 0 auto;
