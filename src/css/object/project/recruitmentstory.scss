@@ -1,0 +1,97 @@
+@use '../../object/utility/utility.scss';
+
+.p-recruitment__story {
+  width: 1180px;
+  height: 435px;
+  margin: 0 auto;
+
+  & > .p-story__title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  & > .p-recruitment__group {
+    margin-top: 50px;
+
+    & > .p-setting__recruitment {
+      display: table-cell;
+
+      & > .p-pink__arrow {
+        width: 20px;
+        height: 40px;
+        float: right;
+        margin-top: 140px;
+      }
+
+      & > .p-recruitment__group__one {
+        display: table-cell;
+        width: 280px;
+        height: 360px;
+        border-width: 2.27px;
+        border-style: solid;
+        border-color: #de5579;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 50px;
+
+        & > .p-picture {
+          height: 100px;
+
+          & > .p-paper__picture {
+            display: block;
+            margin: auto;
+          }
+        }
+
+        & > .p-step__one {  
+          font-size: 16px;
+          width: 60px;
+          height: 60px;
+          background-color: #de5579;
+          color: #FFFFFF;
+          border-radius: 30px;
+          text-align: center;
+          word-break: auto-phrase;
+
+          & > .p-step__one__text {
+            margin: 0 auto;
+            line-break: anywhere;
+            width: 42px;
+            height: 38px;
+            padding-top: 15px;
+          }
+        }
+
+        & > .p-group__text {
+          display: table;
+          margin: 0 auto;
+
+          & > .p-title__setting {
+            word-break: auto-phrase;
+          }
+
+          & > .p-entry__title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 20px;
+            height: 60px;
+            text-align: center;
+            word-break: auto-phrase;
+          }
+
+          & > .p-entry__sub__title {
+            font-size: 14px;
+            font-weight: 400;
+            width: 237px;
+            height: 60px;
+            margin-top: 10px;
+          }
+        }
+      }
+
+    }
+  }
+}

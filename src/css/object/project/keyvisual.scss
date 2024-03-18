@@ -1,2 +1,38 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual {
+  position: relative;
+
+  & > .p-nurse__photo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__photo {
+    position: absolute;
+    text-align: center;
+    margin-left: 40%;
+    top: 10%;
+  }
+
+  &__score {
+    width: 391px;
+    height: 69px;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    color: #2EB6AA;
+    border-radius: 10px;
+    border-color: #2EB6AA;
+    border-width: 2.27px;
+    border-style: solid;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+.p-score__big {
+  font-size: 40px;
+}

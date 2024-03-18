@@ -1,0 +1,48 @@
+@use '../../object/utility/utility.scss';
+
+.p-gizjob__fourthtitle {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 1200px;
+  height: 478px;
+
+  & ul:nth-of-type(2n) {
+    margin-left: 20px;
+  }
+
+  & > .p-main__strong__title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  & > .p-gizjob__box {
+    display: inline-table;
+    width: 580px;
+    height: 180px;
+    background-color: #f7d2db;
+    border-radius: 10px;
+    margin-top: 30px;
+
+    & > .p-strong__point {
+      font-size: 24px;
+      font-weight: 700;
+      color: #de5579;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    & > .p-sub__strong__point {
+      color: #000000;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 30px;
+
+      & > .p-text__in__the__middle {
+        margin-top: 10px;
+      }
+    }
+  }
+}
