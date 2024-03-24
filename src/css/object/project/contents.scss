@@ -1,126 +1,250 @@
 @use '../../object/utility/utility.scss';
 
-.p-contents {
-  width: 1180px;
-  height: 455px;
-  margin: 0 auto;
-
-  &__title {
-    font-size: 25px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 50px;
+@media screen and (min-width: 768px) {
+  .p-contents {
+    width: 1180px;
+    height: 455px;
+    margin: 0 auto;
+  
+    &__title {
+      font-size: 25px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 50px;
+    }
+  
+    & > .p-three__contents {
+      display: flex;
+      margin-top: 50px;
+  
+      & > .p-manual {
+        width: 380px;
+        height: 240px;
+        background-image: url("../img/picture/contents-paper.png");
+  
+        & > .p-manual__backcolor {
+          padding-top: 55px;
+          width: 380px;
+          height: 240px;
+          background-color: rgba($color: #000000, $alpha: 0.7);
+          border-radius: 10px;
+  
+          & > .p-contents__text {
+            font-size: 24px;
+            color: #FFFFFF;
+            text-align: center;
+            word-break: auto-phrase;
+          }
+  
+          & > .p-contents__sub__text {
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 288px;
+            height: 46px;
+            font-size: 16px;
+            color: #FFFFFF;
+            text-align: center;
+            word-break: auto-phrase;
+  
+            & > .p-text__in__the__middle {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+  
+      & > .p-knowledge {
+        margin-left: 20px;
+        width: 380px;
+        height: 240px;
+        background-image: url("../img/picture/contents-PC.png");
+  
+        & > .p-manual__backcolor {
+          padding-top: 55px;
+          width: 380px;
+          height: 240px;
+          background-color: rgba($color: #000000, $alpha: 0.7);
+          border-radius: 10px;
+  
+          & > .p-contents__text {
+            font-size: 24px;
+            color: #FFFFFF;
+            text-align: center;
+            word-break: auto-phrase;
+          }
+  
+          & > .p-contents__sub__text {
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 288px;
+            height: 46px;
+            font-size: 16px;
+            color: #FFFFFF;
+            text-align: center;
+            word-break: auto-phrase;
+  
+            & > .p-text__in__the__middle {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+  
+      & > .p-manual__second {
+        margin-left: 20px;
+        width: 380px;
+        height: 240px;
+        background-image: url("../img/picture/contents-paper.png");
+  
+        & > .p-manual__backcolor {
+          padding-top: 55px;
+          width: 380px;
+          height: 240px;
+          background-color: rgba($color: #000000, $alpha: 0.7);
+          border-radius: 10px;
+  
+          & > .p-contents__text {
+            font-size: 24px;
+            color: #FFFFFF;
+            text-align: center;
+            word-break: auto-phrase;
+          }
+  
+          & > .p-contents__sub__text {
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 288px;
+            height: 46px;
+            font-size: 16px;
+            color: #FFFFFF;
+            text-align: center;
+            word-break: auto-phrase;
+  
+            & > .p-text__in__the__middle {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
   }
+}
 
-  & > .p-three__contents {
-    display: flex;
-    margin-top: 50px;
-
-    & > .p-manual {
-      width: 380px;
-      height: 240px;
-      background-image: url("../img/picture/contents-paper.png");
-
-      & > .p-manual__backcolor {
-        padding-top: 55px;
-        width: 380px;
-        height: 240px;
-        background-color: rgba($color: #000000, $alpha: 0.7);
-        border-radius: 10px;
-
-        & > .p-contents__text {
-          font-size: 24px;
-          color: #FFFFFF;
-          text-align: center;
-          word-break: auto-phrase;
-        }
-
-        & > .p-contents__sub__text {
-          margin: 0 auto;
-          margin-top: 50px;
-          width: 288px;
-          height: 46px;
-          font-size: 16px;
-          color: #FFFFFF;
-          text-align: center;
-          word-break: auto-phrase;
-
-          & > .p-text__in__the__middle {
-            margin-top: 20px;
+@media screen and (max-width: 767px){
+  .p-contents {
+    width: 100%;
+  
+    &__title {
+      font-size: 25px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 50px;
+    }
+  
+    & > .p-three__contents {
+      //display: flex;
+      margin-top: 50px;
+  
+      & > .p-manual {
+        margin: 0 auto;
+        width: 79%;
+        background-image: url("../img/picture/contents-paper.png");
+  
+        & > .p-manual__backcolor {
+          padding-top: 15%;
+          width: 100%;
+          //height: 90%;
+          background-color: rgba($color: #000000, $alpha: 0.7);
+          border-radius: 0.07rem;
+  
+          & > .p-contents__text {
+            font-size: 0.3rem;
+            color: #FFFFFF;
+            text-align: center;
+            word-break: auto-phrase;
+          }
+  
+          & > .p-contents__sub__text {
+            margin: 0 auto;
+            margin-top: 15%;
+            padding-bottom: 15%;
+            font-size: 0.15rem;
+            color: #FFFFFF;
+            text-align: center;
+            word-break: auto-phrase;
+  
+            & > .p-text__in__the__middle {
+              margin-top: 3%;
+            }
           }
         }
       }
-    }
-
-    & > .p-knowledge {
-      margin-left: 20px;
-      width: 380px;
-      height: 240px;
-      background-image: url("../img/picture/contents-PC.png");
-
-      & > .p-manual__backcolor {
-        padding-top: 55px;
-        width: 380px;
-        height: 240px;
-        background-color: rgba($color: #000000, $alpha: 0.7);
-        border-radius: 10px;
-
-        & > .p-contents__text {
-          font-size: 24px;
-          color: #FFFFFF;
-          text-align: center;
-          word-break: auto-phrase;
-        }
-
-        & > .p-contents__sub__text {
-          margin: 0 auto;
-          margin-top: 50px;
-          width: 288px;
-          height: 46px;
-          font-size: 16px;
-          color: #FFFFFF;
-          text-align: center;
-          word-break: auto-phrase;
-
-          & > .p-text__in__the__middle {
-            margin-top: 20px;
+  
+      & > .p-knowledge {
+        margin: 0 auto;
+        width: 79%;
+        margin-top: 15%;
+        background-image: url("../img/picture/contents-PC.png");
+  
+        & > .p-manual__backcolor {
+          padding-top: 15%;
+          width: 100%;
+          background-color: rgba($color: #000000, $alpha: 0.7);
+          border-radius: 0.07rem;
+  
+          & > .p-contents__text {
+            font-size: 0.3rem;
+            color: #FFFFFF;
+            text-align: center;
+            word-break: auto-phrase;
+          }
+  
+          & > .p-contents__sub__text {
+            margin: 0 auto;
+            margin-top: 15%;
+            padding-bottom: 15%;
+            font-size: 0.15rem;
+            color: #FFFFFF;
+            text-align: center;
+            word-break: auto-phrase;
+  
+            & > .p-text__in__the__middle {
+              margin-top: 3%;
+            }
           }
         }
       }
-    }
-
-    & > .p-manual__second {
-      margin-left: 20px;
-      width: 380px;
-      height: 240px;
-      background-image: url("../img/picture/contents-paper.png");
-
-      & > .p-manual__backcolor {
-        padding-top: 55px;
-        width: 380px;
-        height: 240px;
-        background-color: rgba($color: #000000, $alpha: 0.7);
-        border-radius: 10px;
-
-        & > .p-contents__text {
-          font-size: 24px;
-          color: #FFFFFF;
-          text-align: center;
-          word-break: auto-phrase;
-        }
-
-        & > .p-contents__sub__text {
-          margin: 0 auto;
-          margin-top: 50px;
-          width: 288px;
-          height: 46px;
-          font-size: 16px;
-          color: #FFFFFF;
-          text-align: center;
-          word-break: auto-phrase;
-
-          & > .p-text__in__the__middle {
-            margin-top: 20px;
+  
+      & > .p-manual__second {
+        margin: 0 auto;
+        width: 79%;
+        margin-top: 15%;
+        background-image: url("../img/picture/contents-paper.png");
+  
+        & > .p-manual__backcolor {
+          padding-top: 15%;
+          background-color: rgba($color: #000000, $alpha: 0.7);
+          border-radius: 0.07rem;
+  
+          & > .p-contents__text {
+            font-size: 0.3rem;
+            color: #FFFFFF;
+            text-align: center;
+            word-break: auto-phrase;
+          }
+  
+          & > .p-contents__sub__text {
+            margin: 0 auto;
+            margin-top: 15%;
+            padding-bottom: 15%;
+            font-size: 0.15rem;
+            color: #FFFFFF;
+            text-align: center;
+            word-break: auto-phrase;
+  
+            & > .p-text__in__the__middle {
+              margin-top: 3%;
+            }
           }
         }
       }

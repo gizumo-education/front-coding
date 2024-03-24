@@ -1,42 +1,87 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
 
-//検索ボタン
-.p-surth__button {
-  padding: 20px;
-  padding-left: 40px;
-  width: 140px;
-  height: 60px;
-  font-size: 20px;
-  background-color: palevioletred;
-  color: utility.$white;
-  border-radius: 30px;
-  background-image: url("../img/icon/checkwork-検索ボタン.png");
-  background-repeat: no-repeat;
-  background-position: left 10px center;
-  transition: 0,3s;
+@media screen and (min-width: 768px){
+
+  //検索ボタン
+  .p-surth__button {
+    padding: 20px;
+    padding-left: 40px;
+    width: 140px;
+    height: 60px;
+    font-size: 20px;
+    background-color: palevioletred;
+    color: utility.$white;
+    border-radius: 30px;
+    background-image: url("../img/icon/checkwork-検索ボタン.png");
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    transition: 0,3s;
+    margin-left: 10px;
+  }
+
+
+  //新着求人一覧をもっと見る&医療事務コラムをもっと見るのボタン
+
+  .p-recruitment__width {
+    width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+
+    & > .p-recruitment__button {
+      width: 360px;
+      height: 60px;
+      margin: 0 auto;
+      margin-top: 40px;
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      padding: 20px;
+      background-color: #de5579;
+      border-radius: 30px;
+      text-align: center;
+      transition: 0.3s;
+    }
+  }
 }
 
+@media screen and (max-width: 767px){
+    //検索ボタン
+  .p-surth__button {
+    padding: 3%;
+    padding-left: 6%;
+    width: 1.5rem;
+    height: 0.43rem;
+    font-size: 0.17rem;
+    background-color: palevioletred;
+    color: utility.$white;
+    border-radius: 0.2rem;
+    background-image: url("../img/icon/checkwork-検索ボタン.png");
+    background-repeat: no-repeat;
+    background-position: left 8% center;
+    transition: 0,3s;
+    margin-top: 3%;
+  }
 
-//新着求人一覧をもっと見る&医療事務コラムをもっと見るのボタン
+  //新着求人一覧をもっと見る&医療事務コラムをもっと見るのボタン
 
-.p-recruitment__width {
-  width: 1180px;
-  margin: 0 auto;
-  text-align: center;
-
-  & > .p-recruitment__button {
-    width: 360px;
-    height: 60px;
-    margin: 0 auto;
-    margin-top: 40px;
-    font-size: 18px;
-    font-weight: 700;
-    color: white;
-    padding: 20px;
-    background-color: #de5579;
-    border-radius: 30px;
+  .p-recruitment__width {
     text-align: center;
-    transition: 0.3s;
+    padding: 0 3% 0 3%;
+
+    & > .p-recruitment__button {
+      width: 90%;
+      height: 30%;
+      margin: 0 auto;
+      margin: 10% 0 10% 0; 
+      font-size: 0.2rem;
+      font-weight: 700;
+      color: white;
+      padding: 5%;
+      background-color: #de5579;
+      border-radius: 0.5rem;
+      text-align: center;
+      transition: 0.3s;
+    }
   }
 }

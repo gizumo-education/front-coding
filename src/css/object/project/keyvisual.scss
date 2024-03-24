@@ -1,38 +1,97 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
 
-.p-keyvisual {
-  position: relative;
+@media screen and (min-width: 768px) {
+  .p-keyvisual {
+    position: relative;
+  
+      & > .p-nurse__photo {
+        display: block;
+        margin: 0 auto;
+      }
 
-  & > .p-nurse__photo {
-    display: block;
-    margin: 0 auto;
+      & > .p-responsive__nurse__photo {
+        display: none;
+      }
+  
+    &__photo {
+      position: absolute;
+      text-align: center;
+      margin-left: 40%;
+      top: 10%;
+    }
+  
+    &__score {
+      width: 391px;
+      height: 69px;
+      background-color: #FFFFFF;
+      font-size: 20px;
+      color: #2EB6AA;
+      border-radius: 10px;
+      border-color: #2EB6AA;
+      border-width: 2.27px;
+      border-style: solid;
+      margin: 0 auto;
+      margin-top: 20px;
+      text-align: center;
+      padding-top: 10px;
+    }
   }
-
-  &__photo {
-    position: absolute;
-    text-align: center;
-    margin-left: 40%;
-    top: 10%;
-  }
-
-  &__score {
-    width: 391px;
-    height: 69px;
-    background-color: #FFFFFF;
-    font-size: 20px;
-    color: #2EB6AA;
-    border-radius: 10px;
-    border-color: #2EB6AA;
-    border-width: 2.27px;
-    border-style: solid;
-    margin: 0 auto;
-    margin-top: 20px;
-    text-align: center;
-    padding-top: 10px;
+  
+  .p-score__big {
+    font-size: 40px;
   }
 }
 
-.p-score__big {
-  font-size: 40px;
+@media screen and (max-width: 767px){
+  .p-keyvisual {
+    position: relative;
+
+    & > .p-responsive__nurse__photo {
+      display: block;
+      width: 100%;
+    } 
+
+    & > .p-nurse__photo {
+      display: none;
+    }
+
+    &__photo {
+      position: absolute;
+      text-align: center;
+      margin-left: 30%;
+      top: 30%;
+
+      & > .p-number__photo {
+        width: 60%;
+
+      }
+    }
+
+    &__main {
+      & > .p-keyvisual__title {
+        width: 80%;
+        
+      }
+    }
+
+    &__score {
+      width: 50%;
+      background-color: #FFFFFF;
+      font-size: 90%;
+      color: #2EB6AA;
+      border-radius: 0.07rem;
+      border-color: #2EB6AA;
+      border-width: 0.01rem;
+      border-style: solid;
+      margin: 0 auto;
+      margin-top: 3%;
+      text-align: center;
+      padding: 2%;
+    }
+
+    .p-score__big {
+      font-size: 180%;
+    }
+  }
 }
