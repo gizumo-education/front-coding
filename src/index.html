@@ -34,6 +34,7 @@
   <main class="main">
     <div class="p-keyvisual">
       <img src="./img/picture/keyvisual-nurse-photo.jpg" alt="" class="p-nurse__photo">
+      <img src="./img/responsive/responsive-nurse-photo.jpg" alt="" class="p-responsive__nurse__photo">
       <div class="p-keyvisual__photo">
         <img src="./img/icon/keyvisual-orikon-No.1.jpg" alt="" class="p-number__photo">
         <div class="p-keyvisual__main">
@@ -48,35 +49,39 @@
         <li class="p-sub__title">働きたい職種・地域・希望給与を入れて検索</li>
       </ul>
       <div class="p-total__select__box">
-        <select name="p-selectbox__first" id="0" class="p-selectbox__first">
-          <option value="">医療事務</option>
-          <option value="">調剤事務</option>
-          <option value="">診察情報管理士</option>
-          <option value="">歯科助手</option>
-          <option value="">歯科事務</option>
-          <option value="">看護補助・看護助手</option>
-          <option value="">病院内SE</option>
-        </select>
-        <select name="p-selectbox__second" id="1" class="p-selectbox__second">
-          <option value="">東京都</option>
-          <option value="">茨城県</option>
-          <option value="">神奈川県</option>
-          <option value="">群馬県</option>
-          <option value="">埼玉県</option>
-          <option value="">千葉県</option>
-          <option value="">栃木県</option>
-        </select>
-        <select name="p-selectbox__third" id="2" class="p-selectbox__third">
-          <option value="">月給20万〜</option>
-          <option value="">月給17万〜</option>
-          <option value="">月給18万〜</option>
-          <option value="">月給19万〜</option>
-          <option value="">月給21万〜</option>
-          <option value="">月給22万〜</option>
-          <option value="">月給23万〜</option>
-        </select>
-        <input type="text" placeholder="キーワード・企業名・スキルなど" class="p-selectbox__fourth">
-        <a href="" class="p-surth__button">検索する</a>
+        <div class="p-responsive__set__select__box">
+          <select name="p-selectbox__first" id="0" class="p-selectbox__first">
+            <option value="">医療事務</option>
+            <option value="">調剤事務</option>
+            <option value="">診察情報管理士</option>
+            <option value="">歯科助手</option>
+            <option value="">歯科事務</option>
+            <option value="">看護補助・看護助手</option>
+            <option value="">病院内SE</option>
+          </select>
+          <select name="p-selectbox__second" id="1" class="p-selectbox__second">
+            <option value="">東京都</option>
+            <option value="">茨城県</option>
+            <option value="">神奈川県</option>
+            <option value="">群馬県</option>
+            <option value="">埼玉県</option>
+            <option value="">千葉県</option>
+            <option value="">栃木県</option>
+          </select>
+          <select name="p-selectbox__third" id="2" class="p-selectbox__third">
+            <option value="">月給20万〜</option>
+            <option value="">月給17万〜</option>
+            <option value="">月給18万〜</option>
+            <option value="">月給19万〜</option>
+            <option value="">月給21万〜</option>
+            <option value="">月給22万〜</option>
+            <option value="">月給23万〜</option>
+          </select>
+        </div>
+        <div class="p-one__point__selectbox">
+          <input type="text" placeholder="キーワード・企業名・スキルなど" class="p-selectbox__fourth">
+          <a href="" class="p-surth__button">検索する</a>
+        </div>
       </div>
     </div>
     <div class="p-news__page">
@@ -99,6 +104,9 @@
           </ul>
           <div class="p-scloll__button">
             <img src="./img/icon/news-page-arrow.png" alt="" class="p-scloll__size">
+          </div>
+          <div class="p-responsive__scloll__button">
+            <img src="./img/icon/news-page-arrow.png" alt="" class="p-scloll__size__second">
           </div>
         </div>
         <div class="p-recruitment p-photo__margin">
@@ -188,51 +196,52 @@
       <div class="p-story__title">転職までの流れ</div>
       <div class="p-recruitment__group">
         <div class="p-setting__recruitment">
-          <div class="p-pink__arrow"><img src="./img/icon/icon-pink-arrow.png" alt=""></div>
+          <div class="p-pink__arrow p-responsive__arrow"><img src="./img/icon/icon-pink-arrow.png" alt=""></div>
           <div class="p-recruitment__group__one">
-              <div class="p-step__one">
-                <div class="p-step__one__text">STEP1</div>
-              </div>
-              <div class="p-picture">
-                <img src="./img/icon/recruitment-story-entry-sheet.png" alt="" class="p-paper__picture">
-              </div>
-              <ul class="p-group__text">
-                <li class="p-entry__title">エントリーシートの作成</li>
-                <li class="p-entry__sub__title">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</li>
-              </ul>
+            <div class="p-step__one">
+              <div class="p-step__one__text">STEP1</div>
+            </div>
+            <div class="p-picture">
+              <img src="./img/icon/recruitment-story-entry-sheet.png" alt="" class="p-paper__picture">
+            </div>
+            <ul class="p-group__text">
+              <li class="p-entry__title">エントリーシートの作成</li>
+              <li class="p-entry__sub__title">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</li>
+            </ul>
           </div>
         </div>
         <div class="p-setting__recruitment">
           <div class="p-pink__arrow"><img src="./img/icon/icon-pink-arrow.png" alt=""></div>
           <div class="p-recruitment__group__one">
-              <div class="p-step__one">
-                <div class="p-step__one__text">STEP2</div>
-              </div>
-              <div class="p-picture">
-                <img src="./img/icon/recruitment-story-magnifying-glass.png" alt="" class="p-paper__picture">
-              </div>
-              <ul class="p-group__text">
-                <li class="p-entry__title">気になる企業のピックアップ</li>
-                <li class="p-entry__sub__title">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</li>
-              </ul>
+            <div class="p-step__one">
+              <div class="p-step__one__text">STEP2</div>
+            </div>
+            <div class="p-picture">
+              <img src="./img/icon/recruitment-story-magnifying-glass.png" alt="" class="p-paper__picture">
+            </div>
+            <ul class="p-group__text">
+              <li class="p-entry__title">気になる企業のピックアップ</li>
+              <li class="p-entry__sub__title">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</li>
+            </ul>
           </div>
         </div>
         <div class="p-setting__recruitment">
           <div class="p-pink__arrow"><img src="./img/icon/icon-pink-arrow.png" alt=""></div>
           <div class="p-recruitment__group__one">
-              <div class="p-step__one">
-                <div class="p-step__one__text">STEP3</div>
-              </div>
-              <div class="p-picture">
-                <img src="./img/icon/recruitment-story-mail.png" alt="" class="p-paper__picture">
-              </div>
-              <ul class="p-group__text">
-                <li class="p-entry__title">複数企業に応募</li>
-                <li class="p-entry__sub__title">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</li>
-              </ul>
+            <div class="p-step__one">
+              <div class="p-step__one__text">STEP3</div>
+            </div>
+            <div class="p-picture">
+              <img src="./img/icon/recruitment-story-mail.png" alt="" class="p-paper__picture">
+            </div>
+            <ul class="p-group__text">
+              <li class="p-entry__title">複数企業に応募</li>
+              <li class="p-entry__sub__title">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</li>
+            </ul>
           </div>
         </div>
         <div class="p-setting__recruitment">
+          <div class="p-responsive__pink__arrow"><img src="./img/icon/icon-pink-arrow.png" alt=""></div>
           <div class="p-recruitment__group__one">
               <div class="p-step__one">
                 <div class="p-step__one__text">STEP4</div>
@@ -280,35 +289,39 @@
         <li class="p-sub__title">働きたい職種・地域・希望給与を入れて検索</li>
       </ul>
       <div class="p-total__select__box">
-        <select name="p-selectbox__first" id="3" class="p-selectbox__first">
-          <option value="">医療事務</option>
-          <option value="">調剤事務</option>
-          <option value="">診察情報管理士</option>
-          <option value="">歯科助手</option>
-          <option value="">歯科事務</option>
-          <option value="">看護補助・看護助手</option>
-          <option value="">病院内SE</option>
-        </select>
-        <select name="p-selectbox__second" id="4" class="p-selectbox__second">
-          <option value="">東京都</option>
-          <option value="">茨城県</option>
-          <option value="">神奈川県</option>
-          <option value="">群馬県</option>
-          <option value="">埼玉県</option>
-          <option value="">千葉県</option>
-          <option value="">栃木県</option>
-        </select>
-        <select name="p-selectbox__third" id="5" class="p-selectbox__third">
-          <option value="">月給20万〜</option>
-          <option value="">月給17万〜</option>
-          <option value="">月給18万〜</option>
-          <option value="">月給19万〜</option>
-          <option value="">月給21万〜</option>
-          <option value="">月給22万〜</option>
-          <option value="">月給23万〜</option>
-        </select>
-        <input type="text" placeholder="キーワード・企業名・スキルなど" class="p-selectbox__fourth">
-        <a href="" class="p-surth__button">検索する</a>
+        <div class="p-responsive__set__select__box">
+          <select name="p-selectbox__first" id="3" class="p-selectbox__first">
+            <option value="">医療事務</option>
+            <option value="">調剤事務</option>
+            <option value="">診察情報管理士</option>
+            <option value="">歯科助手</option>
+            <option value="">歯科事務</option>
+            <option value="">看護補助・看護助手</option>
+            <option value="">病院内SE</option>
+          </select>
+          <select name="p-selectbox__second" id="4" class="p-selectbox__second">
+            <option value="">東京都</option>
+            <option value="">茨城県</option>
+            <option value="">神奈川県</option>
+            <option value="">群馬県</option>
+            <option value="">埼玉県</option>
+            <option value="">千葉県</option>
+            <option value="">栃木県</option>
+          </select>
+          <select name="p-selectbox__third" id="5" class="p-selectbox__third">
+            <option value="">月給20万〜</option>
+            <option value="">月給17万〜</option>
+            <option value="">月給18万〜</option>
+            <option value="">月給19万〜</option>
+            <option value="">月給21万〜</option>
+            <option value="">月給22万〜</option>
+            <option value="">月給23万〜</option>
+          </select>
+        </div>
+        <div class="p-one__point__selectbox">
+          <input type="text" placeholder="キーワード・企業名・スキルなど" class="p-selectbox__fourth">
+          <a href="" class="p-surth__button">検索する</a>
+        </div>
       </div>
     </div>
   </main>
