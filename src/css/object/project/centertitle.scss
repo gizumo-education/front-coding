@@ -1,63 +1,59 @@
 @use '../../object/utility/utility.scss';
 
-@media screen and (min-width: 768px){
-  .p-center__title {
-    font-size: 25px;
-    font-weight: 700;
-    background-image: url("../img/picture/center-title-officework.png");
-    margin: 0 auto;
-  
-    & > .p-center__back__color {
-      background-color: #000000;
-      opacity: 0.7;
-  
-      & > .p-total__center__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        height: 300px;
-  
-        & > .p-center__text {
-          font-size: 20px;
-          color: #FFFFFF;
-        }
-  
-        & li:nth-child(2) {
-          margin-top: 20px;
-        }
-      }
-    }
-  } 
-}
-
-@media screen and (max-width: 767px) {
-  .p-center__title {
+.p-center__title {
+  font-size: 25px;
+  font-weight: 700;
+  background-image: url("../img/picture/center-title-officework.png");
+  margin: 0 auto;
+  margin-top: 30px;
+  @include utility.sp {
     width: 100%;
-    margin-top: 10%;
-    font-size: 0.2rem;
+    font-size: 0.14rem;
     font-weight: 400;
     background-image: url("../img/picture/center-title-officework.png");
     background-size: 100%;
     object-fit: contain;
-  
-    & > .p-center__back__color {
-      background-color: #000000;
-      opacity: 0.7;
-  
-      & > .p-total__center__text {
+  }
+
+  & > .p-center__back__color {
+    background-color: #000000;
+    opacity: 0.7;
+
+    & > .p-total__center__text {
+      @include utility.pc {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         padding: 5% 0 5% 0;
-  
-        & > .p-center__text {
-          font-size: 0.12rem;
-          color: #FFFFFF;
+      }
+      @include utility.tab {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5% 0 5% 0;
+      }
+      @include utility.sp {
+        text-align: center;
+        padding: 5% 0 5% 0;
+      }
+
+      & > .p-center__text {
+        font-size: 20px;
+        color: #FFFFFF;
+        @include utility.sp {
+          font-size: 0.14rem;
         }
-  
-        & li:nth-child(2) {
+      }
+
+      & li:nth-child(2) {
+        @include utility.pc {
+          margin-top: 20px;
+        }
+        @include utility.tab {
+          margin-top: 0.12rem;
+        }
+        @include utility.sp {
           margin-top: 0.12rem;
         }
       }

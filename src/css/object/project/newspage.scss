@@ -1,275 +1,230 @@
 @use '../../object/utility/utility.scss';
 
-@media screen and (min-width: 768px){
-  .p-news__page {
-    height: 636px;
-    background-color: #EFF6FC;
-    margin-top: 40px;
-    margin: 0 auto;
-  
-    & > .p-news__page__title {
-      width: 1180px;
-      margin: 0 auto;
+.p-news__page {
+  background-color: #EFF6FC;
+  margin-top: 40px;
+  margin: 0 auto;
+  @include utility.sp {
+    width: 100%;
+  }
+
+  & > .p-news__page__title {
+    @include utility.pc {
+      margin-left: 130px;
       font-size: 25px;
       font-weight: 400;
       margin-top: 40px;
       padding-top: 40px;
     }
-  
-    & > .p-total__recruitment {
+    @include utility.tab {
+      margin-left: 5%;
+      font-size: 0.3rem;
+      font-weight: 400;
+      margin-top: 40px;
+      padding-top: 40px;
+    }
+    @include utility.sp {
+      text-align: center;
+      font-size: 0.3rem;
+      font-weight: 700;
+      margin-top: 15%;
+      padding-top: 10%;
+    }
+  }
+
+  & > .p-total__recruitment {
+    @include utility.pc {
       display: flex;
       margin: 0 auto;
       margin-top: 40px;
       width: 1180px;
       justify-content: space-between;
-  
-      & > .p-recruitment {
-        position: relative;
-        width: 280px;
-  
-        & img {
-          border-radius: 10px;
-        }
-  
-        & > .p-recruitment__infomation {
-          font-size: 14px;
-          font-weight: 400;
-          margin-top: 10px;
-        }
-  
-        & > .p-money {
-          display: flex;
-  
-          & > .p-main__money {
-            font-size: 14px;
-            font-weight: 400;
-            padding: 5px;
-            margin-top: 10px;
-            background-color: #ffcad0;
-            width: 60px;
-            text-align: center;
-          }
-  
-          & > .p-sub__money {
-            font-size: 14px;
-            font-weight: 400;
-            margin-top: 10px;
-            padding: 5px;
-          }
-        }
-  
-        & > .p-place {
-          display: flex;
-  
-          & > .p-main__money {
-            font-size: 15px;
-            padding: 5px;
-            margin-top: 10px;
-            background-color: #ffcad0;
-            width: 60px;
-            text-align: center;
-          }
-  
-          & > .p-sub__money {
-            font-size: 15px;
-            margin-top: 10px;
-            padding: 5px;
-          }
-        }
-  
-        & > .p-station {
-          display: flex;
-  
-          & > .p-main__money {
-            font-size: 15px;
-            padding: 5px;
-            margin-top: 10px;
-            background-color: #ffcad0;
-            width: 60px;
-            text-align: center;
-          }
-  
-          & > .p-sub__money {
-            font-size: 15px;
-            margin-top: 10px;
-            padding: 5px;
-          }
-        }
-  
-        & > .p-scloll__button {
-          width: 60px;
-          height: 60px;
-          background-color: rgba($color: #FFFFFF, $alpha: 0.5);
-          border-radius: 30px;
-          position: absolute;
-          left: 0%;
-          top: 30%;
-        
-          & > .p-scloll__size {
-            margin-top: 15px;
-            margin-left: 15px;
-          }
-        }
-        
-        & > .p-scloll__button__second {
-          width: 60px;
-          height: 60px;
-          background-color: rgba($color: #FFFFFF, $alpha: 0.5);
-          border-radius: 30px;
-          position: absolute;
-          left: 78%;
-          top: 30%;
-          text-align: center;
-        
-          & > .p-scloll__size__second {
-            transform: scale(-1, 1);
-            margin-top: 15px;
-            margin-left: 15px;
-          }
-        }
-        
-      }
     }
-  
-  }
-}
-
-@media screen and (max-width: 767px){
-  .p-news__page {
-    width: 100%;
-    background-color: #EFF6FC;
-
-    & > .p-news__page__title {
-      font-size: 0.3rem;
-      font-weight: 700;
-      margin-top: 15%;
-      padding-top: 10%;
-      text-align: center;
+    @include utility.tab {
+      display: flex;
+      margin: 0 auto;
+      width: 90%;
+      margin-top: 2%;
     }
-
-    & > .p-total__recruitment {
+    @include utility.sp {
       width: 95%;
       margin: 0 auto;
       margin-top: 10%;
+    }
 
-      & > .p-photo__margin {
+    & > .p-photo__margin {
+      @include utility.tab {
+        margin-left: 1%;
+      }
+      @include utility.sp {
         display: none;
       }
-  
-      & > .p-recruitment {
-        position: relative;
+    }
+
+    & > .p-recruitment {
+      position: relative;
+      width: 280px;
+      @include utility.sp {
         margin: 0 auto;
         width: 100%;
-  
-        & img {
+      }
+
+      & img {
+        border-radius: 10px;
+        @include utility.sp {
           width: 100%;
           border-radius: 0.2rem;
         }
-  
-        & > .p-recruitment__infomation {
+      }
+
+      & > .p-recruitment__infomation {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px;
+        @include utility.sp {
           font-size: 0.22rem;
           font-weight: 700;
           margin-top: 3%;
         }
-  
-        & > .p-money {
-          display: flex;
-  
-          & > .p-main__money {
-            font-size: 0.13rem;
-            font-weight: 400;
-            padding: 1%;
-            margin-top: 3%;
-            background-color: #ffcad0;
-            width: 14%;
-            text-align: center;
-          }
-  
-          & > .p-sub__money {
-            font-size: 0.13rem;
-            font-weight: 400;
-            margin-top: 3%;
-            padding: 1%;
-          }
+      }
+
+      & > .p-money {
+        display: flex;
+
+        & > .p-main__money {
+          font-size: 14px;
+          font-weight: 400;
+          padding: 5px;
+          margin-top: 10px;
+          background-color: #ffcad0;
+          width: 60px;
+          text-align: center;
         }
-  
-        & > .p-place {
-          display: flex;
-  
-          & > .p-main__money {
-            font-size: 0.13rem;
-            font-weight: 400;
-            padding: 1%;
-            margin-top: 3%;
-            background-color: #ffcad0;
-            width: 14%;
-            text-align: center;
-          }
-  
-          & > .p-sub__money {
-            font-size: 0.13rem;
-            font-weight: 400;
-            margin-top: 3%;
-            padding: 1%;
-          }
+
+        & > .p-sub__money {
+          font-size: 14px;
+          font-weight: 400;
+          margin-top: 10px;
+          padding: 5px;
         }
-  
-        & > .p-station {
-          display: flex;
-  
-          & > .p-main__money {
-            font-size: 0.13rem;
-            font-weight: 400;
-            padding: 1%;
-            margin-top: 3%;
-            background-color: #ffcad0;
-            width: 14%;
-            text-align: center;
-          }
-  
-          & > .p-sub__money {
-            font-size: 0.13rem;
-            font-weight: 400;
-            margin-top: 3%;
-            padding: 1%;
-          }
+      }
+
+      & > .p-place {
+        display: flex;
+
+        & > .p-main__money {
+          font-size: 15px;
+          padding: 5px;
+          margin-top: 10px;
+          background-color: #ffcad0;
+          width: 60px;
+          text-align: center;
         }
-  
-        & > .p-scloll__button {
+
+        & > .p-sub__money {
+          font-size: 15px;
+          margin-top: 10px;
+          padding: 5px;
+        }
+      }
+
+      & > .p-station {
+        display: flex;
+
+        & > .p-main__money {
+          font-size: 15px;
+          padding: 5px;
+          margin-top: 10px;
+          background-color: #ffcad0;
+          width: 60px;
+          text-align: center;
+        }
+
+        & > .p-sub__money {
+          font-size: 15px;
+          margin-top: 10px;
+          padding: 5px;
+        }
+      }
+
+      & > .p-scloll__button {
+        width: 60px;
+        height: 60px;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+        border-radius: 30px;
+        position: absolute;
+        left: 0%;
+        top: 30%;
+        @include utility.sp {
           width: 0.6rem;
           height: 0.6rem;
-          background-color: rgba($color: #FFFFFF, $alpha: 0.5);
           border-radius: 0.3rem;
-          position: absolute;
           left: 0%;
-          top: 50%;
-        
-          & > .p-scloll__size {
+          top: 53%;
+        }
+      
+        & > .p-scloll__size {
+          margin-top: 15px;
+          margin-left: 15px;
+          @include utility.sp {
             width: 30%;
             margin-top: 0.15rem;
             margin-left: 0.17rem;
           }
         }
-        
-        & > .p-responsive__scloll__button {
+      }
+      
+      & > .p-scloll__button__second {
+        width: 60px;
+        height: 60px;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+        border-radius: 30px;
+        position: absolute;
+        left: 78%;
+        top: 30%;
+        text-align: center;
+      
+        & > .p-scloll__size__second {
+          transform: scale(-1, 1);
+          margin-top: 15px;
+          margin-left: 15px;
+          @include utility.sp {
+            transform: scale(-1, 1);
+            width: 30%;
+            margin-top: 0.15rem;
+            margin-left: 0.17rem;
+          }
+        }
+      }
+
+      & > .p-responsive__scloll__button {
+        @include utility.sp {
           width: 0.6rem;
           height: 0.6rem;
           background-color: rgba($color: #FFFFFF, $alpha: 0.5);
           border-radius: 0.3rem;
           position: absolute;
           right: 0%;
-          top: 50%;
+          top: 53%;
           text-align: center;
-        
-          & > .p-scloll__size__second {
+        }
+
+        & > .p-scloll__size__second {
+          @include utility.pc {
+            display: none;
+          }
+          @include utility.tab {
+            display: none;
+          }
+          @include utility.sp {
             transform: scale(-1, 1);
             width: 30%;
             margin-top: 0.15rem;
-            margin-left: 0.17rem;
+            margin-left: 0.15rem;
           }
         }
-        
       }
+      
     }
   }
 }

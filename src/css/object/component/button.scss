@@ -1,75 +1,57 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
 
-@media screen and (min-width: 768px){
-
-  //検索ボタン
-  .p-surth__button {
-    padding: 20px;
-    padding-left: 40px;
-    width: 140px;
-    height: 60px;
-    font-size: 20px;
-    background-color: palevioletred;
-    color: utility.$white;
-    border-radius: 30px;
-    background-image: url("../img/icon/checkwork-検索ボタン.png");
-    background-repeat: no-repeat;
-    background-position: left 10px center;
-    transition: 0,3s;
-    margin-left: 10px;
-  }
-
-
-  //新着求人一覧をもっと見る&医療事務コラムをもっと見るのボタン
-
-  .p-recruitment__width {
-    width: 1180px;
-    margin: 0 auto;
-    text-align: center;
-
-    & > .p-recruitment__button {
-      width: 360px;
-      height: 60px;
-      margin: 0 auto;
-      margin-top: 40px;
-      font-size: 18px;
-      font-weight: 700;
-      color: white;
-      padding: 20px;
-      background-color: #de5579;
-      border-radius: 30px;
-      text-align: center;
-      transition: 0.3s;
-    }
-  }
-}
-
-@media screen and (max-width: 767px){
-    //検索ボタン
-  .p-surth__button {
-    padding: 3%;
-    padding-left: 6%;
+//検索ボタン
+.p-surth__button {
+  padding: 20px;
+  padding-left: 40px;
+  width: 140px;
+  height: 60px;
+  font-size: 18px;
+  background-color: palevioletred;
+  color: utility.$white;
+  border-radius: 30px;
+  background-image: url("../img/icon/checkwork-検索ボタン.png");
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  transition: 0,3s;
+  margin-left: 10px;
+  @include utility.sp {
+    padding-top: 3%;
+    padding-left: 10%;
     width: 1.5rem;
     height: 0.43rem;
     font-size: 0.17rem;
-    background-color: palevioletred;
-    color: utility.$white;
     border-radius: 0.2rem;
-    background-image: url("../img/icon/checkwork-検索ボタン.png");
-    background-repeat: no-repeat;
-    background-position: left 8% center;
-    transition: 0,3s;
+    background-size: 15%;
     margin-top: 3%;
   }
+}
 
-  //新着求人一覧をもっと見る&医療事務コラムをもっと見るのボタン
 
-  .p-recruitment__width {
-    text-align: center;
+//新着求人一覧をもっと見る&医療事務コラムをもっと見るのボタン
+
+.p-recruitment__width {
+  margin: 0 auto;
+  text-align: center;
+  @include utility.sp {
     padding: 0 3% 0 3%;
+  }
 
-    & > .p-recruitment__button {
+  & > .p-recruitment__button {
+    width: 360px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    padding: 20px;
+    background-color: #de5579;
+    border-radius: 30px;
+    text-align: center;
+    transition: 0.3s;
+    @include utility.sp {
       width: 90%;
       height: 30%;
       margin: 0 auto;
@@ -78,10 +60,7 @@
       font-weight: 700;
       color: white;
       padding: 5%;
-      background-color: #de5579;
       border-radius: 0.5rem;
-      text-align: center;
-      transition: 0.3s;
     }
   }
 }
