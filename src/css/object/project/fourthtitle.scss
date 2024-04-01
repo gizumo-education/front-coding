@@ -77,13 +77,11 @@
       text-align: center;
       margin: 0 auto;
       margin-top: 30px;
+      line-height: 20.24px;
       @include utility.sp {
-        font-size: 0.14rem;
+        font-size: 0.12rem;
         padding: 0 2% 7% 2%;
-      }
-
-      & > .p-text__in__the__middle {
-        margin-top: 10px;
+        line-height: 0.17rem;
       }
     }
   }

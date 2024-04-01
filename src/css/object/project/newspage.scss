@@ -80,11 +80,13 @@
       & > .p-recruitment__infomation {
         font-size: 14px;
         font-weight: 400;
+        line-height: 22px;
         margin-top: 10px;
         @include utility.sp {
-          font-size: 0.22rem;
+          font-size: 0.16rem;
           font-weight: 700;
           margin-top: 3%;
+          line-height: 0.22rem;
         }
       }
 
