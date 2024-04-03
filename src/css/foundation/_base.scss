@@ -33,6 +33,7 @@ body {
 @include base.sp {
   body {
     font-size: 0.1rem;
+    box-sizing: border-box;
   }
   html {
     font-size: calc(100vw / 4);

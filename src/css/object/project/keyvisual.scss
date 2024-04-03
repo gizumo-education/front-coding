@@ -3,6 +3,9 @@
 
 .p-keyvisual {
   position: relative;
+  @include utility.sp {
+    width: 100%;
+  }
 
     & > .p-nurse__photo {
       display: block;

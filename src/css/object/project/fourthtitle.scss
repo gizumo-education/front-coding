@@ -1,87 +1,93 @@
 @use '../../object/utility/utility.scss';
 
-.p-gizjob__fourthtitle {
-  @include utility.pc {
-    margin-top: 50px;
-    text-align: center;
-  }
-  @include utility.tab {
-    margin: 0 auto;
-    margin-top: 50px;
-    width: 90%;
-  }
+.p-responsive__gizjob__fourthtitle {
   @include utility.sp {
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 10%;
+    width: 100%;
   }
 
-  & ul:nth-of-type(2n) {
+  & > .p-gizjob__fourthtitle {
     @include utility.pc {
-      margin-left: 20px;
-    }
-    @include utility.tab {
-      margin-left: 20px;
-    }
-  }
-
-  & > .p-main__strong__title {
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    @include utility.sp {
-      font-size: 24px;
-    }
-  }
-
-  & > .p-gizjob__box {
-    @include utility.pc {
-      display: inline-table;
-      width: 580px;
-      height: 180px;
-      background-color: #f7d2db;
-      border-radius: 10px;
-      margin-top: 30px;
-    }
-    @include utility.tab {
-      display: inline-table;
-      width: 48%;
-      height: 2.6rem;
-      margin-top: 5%;
-      border-radius: 0.2rem;
-      background-color: #f7d2db;
-    }
-    @include utility.sp {
-      background-color: #f7d2db;
-      word-break: auto-phrase;
-      border-radius: 0.07rem;
-      margin-top: -5%;
-    }
-
-    & > .p-strong__point {
-      font-size: 24px;
-      font-weight: 700;
-      color: #de5579;
+      margin-top: 50px;
       text-align: center;
-      margin-top: 40px;
-      @include utility.sp {
-        padding-top: 5%;
-        font-size: 0.2rem;
+    }
+    @include utility.tab {
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 90%;
+    }
+    @include utility.sp {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 10%;
+    }
+  
+    & ul:nth-of-type(2n) {
+      @include utility.pc {
+        margin-left: 20px;
+      }
+      @include utility.tab {
+        margin-left: 20px;
       }
     }
-
-    & > .p-sub__strong__point {
-      color: #000000;
-      font-size: 14px;
-      font-weight: 400;
+  
+    & > .p-main__strong__title {
+      font-size: 24px;
+      font-weight: 700;
       text-align: center;
-      margin: 0 auto;
-      margin-top: 30px;
-      line-height: 20.24px;
       @include utility.sp {
-        font-size: 0.12rem;
-        padding: 0 2% 7% 2%;
-        line-height: 0.17rem;
+        font-size: 24px;
+      }
+    }
+  
+    & > .p-gizjob__box {
+      @include utility.pc {
+        display: inline-table;
+        width: 580px;
+        height: 180px;
+        background-color: #f7d2db;
+        border-radius: 10px;
+        margin-top: 30px;
+      }
+      @include utility.tab {
+        display: inline-table;
+        width: 48%;
+        height: 2.6rem;
+        margin-top: 5%;
+        border-radius: 0.2rem;
+        background-color: #f7d2db;
+      }
+      @include utility.sp {
+        background-color: #f7d2db;
+        word-break: auto-phrase;
+        border-radius: 0.07rem;
+        margin-top: -5%;
+      }
+  
+      & > .p-strong__point {
+        font-size: 24px;
+        font-weight: 700;
+        color: #de5579;
+        text-align: center;
+        margin-top: 40px;
+        @include utility.sp {
+          padding-top: 5%;
+          font-size: 0.2rem;
+        }
+      }
+  
+      & > .p-sub__strong__point {
+        color: #000000;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 30px;
+        line-height: 20.24px;
+        @include utility.sp {
+          font-size: 0.12rem;
+          padding: 0 2% 7% 2%;
+          line-height: 0.17rem;
+        }
       }
     }
   }
