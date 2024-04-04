@@ -29,13 +29,13 @@
     margin-left: 40%;
     top: 10%;
     @include utility.sp {
-      margin-left: 30%;
-      top: 30%;
+      margin-left: 1.2rem;
+      top: 0.5rem;
     }
 
     & > .p-number__photo {
       @include utility.sp {
-        width: 60%;
+        width: 2.5rem;
       }
     }
   }

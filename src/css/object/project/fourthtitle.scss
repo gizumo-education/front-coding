@@ -31,11 +31,11 @@
     }
   
     & > .p-main__strong__title {
-      font-size: 24px;
+      font-size: 25px;
       font-weight: 700;
       text-align: center;
       @include utility.sp {
-        font-size: 24px;
+        font-size: 0.25rem;
       }
     }
   

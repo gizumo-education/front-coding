@@ -1,201 +1,203 @@
 @use '../../object/utility/utility.scss';
 
-.p-responsive__contents {
+.p-contents {
+  @include utility.pc {
+    width: 1180px;
+    height: 455px;
+    margin: 0 auto;
+  }
   @include utility.sp {
     width: 100%;
   }
-  & > .p-contents {
-    @include utility.pc {
-      width: 1180px;
-      height: 455px;
-      margin: 0 auto;
-    }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
     @include utility.sp {
-      width: 90%;
-    }
-  
-    &__title {
-      font-size: 25px;
-      font-weight: 700;
       text-align: center;
-      margin-top: 50px;
-      @include utility.sp {
-        text-align: center;
-        margin: 20% 0 10% 0; 
-      }
+      margin: 20% 0 10% 0; 
     }
-  
-    & > .p-three__contents {
+  }
+
+  & > .p-three__contents {
+    @include utility.pc {
+      display: flex;
+      margin-top: 50px;
+    }
+    @include utility.tab {
+      display: flex;
+      margin-top: 50px;
+    }
+
+    & > .p-manual {
       @include utility.pc {
-        display: flex;
-        margin-top: 50px;
+        width: 380px;
+        height: 240px;
+        background-image: url("../img/picture/contents-paper.png");
       }
       @include utility.tab {
-        display: flex;
-        margin-top: 50px;
+        background-image: url("../img/picture/contents-paper.png");
       }
-  
-      & > .p-manual {
-        @include utility.pc {
-          width: 380px;
-          height: 240px;
-          background-image: url("../img/picture/contents-paper.png");
-        }
-        @include utility.tab {
-          background-image: url("../img/picture/contents-paper.png");
-        }
+      @include utility.sp {
+        margin: 0 auto;
+        width: 90%;
+        border-radius: 0.07rem;
+        background-size: 100%;
+        background-image: url("../img/picture/contents-paper.png");
+      }
+
+      & > .p-manual__backcolor {
+        padding-top: 55px;
+        width: 380px;
+        height: 240px;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        border-radius: 10px;
+
         @include utility.sp {
+          width: 100%;
+          background-color: rgba($color: #000000, $alpha: 0.7);
+        }
+
+        & > .p-contents__text {
+          font-size: 24px;
+          color: #FFFFFF;
+          text-align: center;
+          word-break: auto-phrase;
+
+          @include utility.sp {
+            font-size: 0.21rem;
+          }
+        }
+
+        & > .p-contents__sub__text {
           margin: 0 auto;
-          width: 90%;
+          margin-top: 50px;
+          width: 288px;
+          height: 46px;
+          line-height: 20.27px;
+          font-size: 16px;
+          color: #FFFFFF;
+          text-align: center;
+          word-break: auto-phrase;
+
+          @include utility.sp {
+            font-size: 0.14rem;
+          }
+        }
+      }
+    }
+
+    & > .p-knowledge {
+      @include utility.pc {
+        margin-left: 20px;
+        width: 380px;
+        height: 240px;
+        background-image: url("../img/picture/contents-PC.png");
+      }
+      @include utility.tab {
+        margin-left: 1%;
+        background-image: url("../img/picture/contents-PC.png");
+      }
+      @include utility.sp {
+        margin: 0 auto;
+        margin-top: 10%;
+        border-radius: 0.07rem;
+        background-image: url("../img/picture/contents-PC.png");
+        background-size: 100%;
+        width: 90%;
+      }
+
+      & > .p-manual__backcolor {
+        padding-top: 55px;
+        width: 380px;
+        height: 240px;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        border-radius: 10px;
+
+        @include utility.sp {
+          width: 100%;
+          background-color: rgba($color: #000000, $alpha: 0.7);
+        }
+
+        & > .p-contents__text {
+          font-size: 24px;
+          color: #FFFFFF;
+          text-align: center;
+          word-break: auto-phrase;
+        }
+
+        & > .p-contents__sub__text {
+          margin: 0 auto;
+          margin-top: 50px;
+          width: 288px;
+          height: 46px;
+          line-height: 20.27px;
+          font-size: 16px;
+          color: #FFFFFF;
+          text-align: center;
+          word-break: auto-phrase;
+
+          @include utility.sp {
+            font-size: 0.14rem;
+          }
+        }
+      }
+    }
+
+    & > .p-manual__second {
+      @include utility.pc {
+        margin-left: 20px;
+        width: 380px;
+        height: 240px;
+        background-image: url("../img/picture/contents-paper.png");
+      }
+      @include utility.tab {
+        margin-left: 1%;
+        background-image: url("../img/picture/contents-paper.png");
+      }
+      @include utility.sp {
+        margin: 0 auto;
+        margin-top: 10%;
+        width: 90%;
+        background-image: url("../img/picture/contents-paper.png");
+        background-size: 100%;
+      }
+
+      & > .p-manual__backcolor {
+        padding-top: 55px;
+        width: 380px;
+        height: 240px;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        border-radius: 10px;
+
+        @include utility.sp {
+          width: 100%;
           border-radius: 0.07rem;
-          background-size: 100%;
-          background-image: url("../img/picture/contents-paper.png");
-        }
-  
-        & > .p-manual__backcolor {
-          padding-top: 55px;
-          width: 380px;
-          height: 240px;
           background-color: rgba($color: #000000, $alpha: 0.7);
-          border-radius: 10px;
-  
-          @include utility.sp {
-            width: 100%;
-            background-color: rgba($color: #000000, $alpha: 0.7);
-          }
-  
-          & > .p-contents__text {
-            font-size: 24px;
-            color: #FFFFFF;
-            text-align: center;
-            word-break: auto-phrase;
-          }
-  
-          & > .p-contents__sub__text {
-            margin: 0 auto;
-            margin-top: 50px;
-            width: 288px;
-            height: 46px;
-            font-size: 16px;
-            color: #FFFFFF;
-            text-align: center;
-            word-break: auto-phrase;
-  
-            & > .p-text__in__the__middle {
-              margin-top: 20px;
-            }
-          }
         }
-      }
-  
-      & > .p-knowledge {
-        @include utility.pc {
-          margin-left: 20px;
-          width: 380px;
-          height: 240px;
-          background-image: url("../img/picture/contents-PC.png");
+
+        & > .p-contents__text {
+          font-size: 24px;
+          color: #FFFFFF;
+          text-align: center;
+          word-break: auto-phrase;
         }
-        @include utility.tab {
-          margin-left: 1%;
-          background-image: url("../img/picture/contents-PC.png");
-        }
-        @include utility.sp {
+
+        & > .p-contents__sub__text {
           margin: 0 auto;
-          margin-top: 10%;
-          border-radius: 0.07rem;
-          background-image: url("../img/picture/contents-PC.png");
-          background-size: 100%;
-          width: 90%;
-        }
-  
-        & > .p-manual__backcolor {
-          padding-top: 55px;
-          width: 380px;
-          height: 240px;
-          background-color: rgba($color: #000000, $alpha: 0.7);
-          border-radius: 10px;
-  
+          margin-top: 50px;
+          width: 288px;
+          height: 46px;
+          line-height: 20.27px;
+          font-size: 16px;
+          color: #FFFFFF;
+          text-align: center;
+          word-break: auto-phrase;
+
           @include utility.sp {
-            width: 100%;
-            background-color: rgba($color: #000000, $alpha: 0.7);
-          }
-  
-          & > .p-contents__text {
-            font-size: 24px;
-            color: #FFFFFF;
-            text-align: center;
-            word-break: auto-phrase;
-          }
-  
-          & > .p-contents__sub__text {
-            margin: 0 auto;
-            margin-top: 50px;
-            width: 288px;
-            height: 46px;
-            font-size: 16px;
-            color: #FFFFFF;
-            text-align: center;
-            word-break: auto-phrase;
-  
-            & > .p-text__in__the__middle {
-              margin-top: 20px;
-            }
-          }
-        }
-      }
-  
-      & > .p-manual__second {
-        @include utility.pc {
-          margin-left: 20px;
-          width: 380px;
-          height: 240px;
-          background-image: url("../img/picture/contents-paper.png");
-        }
-        @include utility.tab {
-          margin-left: 1%;
-          background-image: url("../img/picture/contents-paper.png");
-        }
-        @include utility.sp {
-          margin: 0 auto;
-          margin-top: 10%;
-          width: 90%;
-          background-image: url("../img/picture/contents-paper.png");
-          background-size: 100%;
-        }
-  
-        & > .p-manual__backcolor {
-          padding-top: 55px;
-          width: 380px;
-          height: 240px;
-          background-color: rgba($color: #000000, $alpha: 0.7);
-          border-radius: 10px;
-  
-          @include utility.sp {
-            width: 100%;
-            border-radius: 0.07rem;
-            background-color: rgba($color: #000000, $alpha: 0.7);
-          }
-  
-          & > .p-contents__text {
-            font-size: 24px;
-            color: #FFFFFF;
-            text-align: center;
-            word-break: auto-phrase;
-          }
-  
-          & > .p-contents__sub__text {
-            margin: 0 auto;
-            margin-top: 50px;
-            width: 288px;
-            height: 46px;
-            font-size: 16px;
-            color: #FFFFFF;
-            text-align: center;
-            word-break: auto-phrase;
-  
-            & > .p-text__in__the__middle {
-              margin-top: 20px;
-            }
+            font-size: 0.14rem;
           }
         }
       }
