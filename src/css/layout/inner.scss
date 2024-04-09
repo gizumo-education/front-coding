@@ -36,6 +36,11 @@
   height: 500px;
   flex-shrink: 0;
   background-color: utility.$bgDarkBlue;
+  flex-shrink: 0;
+  @include utility.sp {
+    width: 400px;
+    height: 270px;
+  };
 };
 
 .keyvisual_inner {
@@ -44,11 +49,17 @@
   display: flex;
 };
 
-.keyvisual_photo {
+.keyvisual_photo_pc {
   position: absolute;
   width: 1262px;
   height: 500px;
   flex-shrink: 0;
+  @include utility.sp {
+    object-fit: cover;
+    width: 400px;
+    height: 270px;
+    aspect-ratio: 4 / 2.7;
+  };
 };
 
 // @media only screen and (max-width: 767px) {
@@ -56,23 +67,53 @@
 //   .keyvisual_photo_sp { display: block !important; }
 // };
 
-// .keyvisual_wrapper {
-//   text-align: center;
-// };
-
-// .keyvisual_pass {
-//   display: flex;
-//   margin-top: 56.49px;
-//   position: absolute;
-// };
-
-.keyvisual_pass img:last-child {
-  margin-left: 252px;
+.keyvisual_wrapper {
+  position: absolute;
+  display: flex;;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 432px;
+  @include utility.sp {
+    margin-left: 124px;
+  };
 };
 
-// .keyvisual_title {
-//   position: absolute;
-// };
+.ranking {
+  display: flex;
+  align-items: center;
+  @include base.sp {
+    margin-top: 70px;
+  };
+};
+
+.parentheses {
+  @include base.sp {
+    height: 62px;
+  };
+};
+
+.no1 {
+  @include base.sp {
+    width: 100px;
+  };
+};
+
+.bestsite {
+  margin-top: 91px;
+  @include base.sp {
+    display: none;
+  };
+};
+
+
+
+.keyvisual_title {
+  margin-top: 40px;
+  @include base.sp {
+    width: 272px;
+    margin-top: 12.65px;
+  };
+};
 
 // .keyvisual_title {
 //   color: utility.$white;
@@ -101,6 +142,20 @@
   border-radius: 10px;
   border: 2.3px solid utility.$Green;
   text-align: center;
+  @include base.sp {
+    margin-top: 188px;
+    width: 170px;
+    height: 30px;
+    font-size: 8px;
+  };
+};
+
+.keyvisual_publish span {
+  font-size: 40px ;
+  font-weight: 700;
+  @include base.sp {
+    font-size: 16px ;
+  };
 };
 
 .keyvisual_font6 {
@@ -111,6 +166,9 @@
   font-weight: utility.$bold;
   line-height: normal;
   position: absolute;
+  @include base.sp {
+
+  };
 };
 
 
@@ -120,8 +178,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   @include base.sp {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 15px 25px 15px;
   };
 };
 
@@ -135,6 +192,7 @@
     width: 370px;
     padding-top: 15px;
     padding-bottom: 20px;
+    text-align: center;
   };
 };
 
@@ -156,6 +214,7 @@
     width: 110px;
     height: 22px;
     font-size: 22px;
+    margin: 0 auto;
   };
 };
 
@@ -170,8 +229,6 @@
   text-align: center;
   @include base.sp {
     font-size: 14px;
-    font-weight: 40px;
-    line-height: 20.27px;
     padding-top: 16px;
   };
 };
@@ -198,7 +255,6 @@
   @include base.sp {
     width: 100px;
     height: 30px;
-    margin-left: 10px;
     font-size: 12px;
     padding: 6px 0px 7px 8px;
     line-height: 17.38px;
@@ -207,6 +263,13 @@
 
 .select_button:first-child {
   margin-left: 25px;
+    @include base.sp {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    padding: 6px 0px 7px 8px;
+    line-height: 17.38px;
+  };
 };
 
 .search_form {
@@ -222,9 +285,10 @@
     margin-top: 15px;
     width: 320px;
     height: 30px;
-    margin-left: 25px;
+    margin-left: 0px;
   };
 };
+
 
 .search_button {
   margin-left: 15px;
@@ -238,21 +302,22 @@
   color: utility.$white;
   border: none;
   @include base.sp {
-    margin-top: 19px;
     width: 160px;
     height: 40px;
     font-family: Noto Sans JP;
+    margin-left: 0px;
+    margin-top: 19px;
   };
 };
 
 
 // .triangle {
-//   //   width: 0;
-//   //   height: 0;
-//   //   border-right: 50px solid transparent;
-//   //   border-left: 50px solid transparent;
-//   //   border-top: 50px solid utility.$borderPink;
-//   // };
+//     width: 0;
+//     height: 0;
+//     border-right: 50px solid transparent;
+//     border-left: 50px solid transparent;
+//     border-top: 50px solid utility.$borderPink;
+//   };
 
 
 
@@ -442,16 +507,21 @@
   background-color: utility.$lightPink;
   padding-top: 40px;
   margin-top: 40px;
-  margin-left: 40px;
   float: left;
   border-radius: 10px;
   @include base.sp {
     padding-top: 30px;
     margin-top: 21px;
-    margin-left: 0px;
     float: none;
     width: 370px;
     height: 144px;
+  };
+};
+
+.features:nth-child(2n) {
+  margin-left: 40px;
+  @include base.sp {
+    margin-left: 0px;
   };
 };
 
@@ -474,8 +544,10 @@
   line-height: 20px;
   text-align: center;
   margin-top: 30px;
+  width: 447px;
   @include base.sp {
     font-size: 12px;
+    width: 349px;
   };
 };
 
@@ -487,12 +559,10 @@
   font-weight: utility.$bold;
   line-height: 25px; /* 100% */
   text-align: center;
+  @include base.sp {
+    margin-bottom: 17px;
+  };
 };
-
-.features:nth-child(2n+1) {
-  margin-left: 0px;
-};
-
 
 
 // <!-- 転職までの流れ -->
@@ -508,8 +578,11 @@
   align-items: center;
   @include base.sp {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   };
 };
+
 
 .flow {
   float: left;
@@ -518,6 +591,10 @@
   height: 360px;
   border: 2.27px solid utility.$pink;
   border-radius: 10px;
+  @include base.sp {
+    margin-top: 39px;
+    height: 293px;
+  };
 };
 
 
@@ -539,6 +616,11 @@
   font-family: Inter;
   font-size: 16px;
   font-weight: utility.$bold;
+  @include base.sp {
+    width: 45px;
+    height: 45px;
+    font-size: 10px;
+  };
 };
 
 .flow_title {
@@ -556,6 +638,12 @@
   height: 100px;
   margin-top: 60px;
   margin-left: 27px;
+  @include base.sp {
+    width: 75px;
+    height: 75px;
+    margin-top: 55px;
+    margin-left: 45px;
+  };
 };
 
 .flow_font {
@@ -570,6 +658,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  @include base.sp {
+    font-size: 20px;
+    margin-top: 22px;
+    height: 10px;
+  };
 };
 
 .flow_text {
@@ -579,12 +672,18 @@
   line-height: 20.27px;
   margin-top: 18px;
   padding: 0px 22px 0px 22px;
+  @include base.sp {
+    padding: 0px 20px 0px 20px;
+  };
 };
 
 
 // <!-- 転職お役立ちコンテンツ -->
 .all_information {
   display: flex;
+  @include base.sp {
+    flex-direction: column;
+  };
 };
 
 .information_button {
@@ -621,6 +720,10 @@
 .information {
   margin-top: 50px;
   margin-left: 20px;
+  @include base.sp {
+    margin-top: 17.5px;
+    margin-left: 0px;
+  };
 };
 
 .information:first-child {
@@ -672,7 +775,10 @@
 
 
 
-/*スマホサイズ*/
+/*スマホサイズだけ*/
 @include base.sp {
+  .arrow img {
+    display: none;
+  };
 
 };
