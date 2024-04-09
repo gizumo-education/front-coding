@@ -26,16 +26,16 @@
     border-radius: 13px;
     position: relative;
 
-    &:nth-child(n+2):after {
+    &:nth-child(-n+3):after {
       content: "";
       position: absolute;
-      top: calc(50% - 10px);
-      right: calc(100% - 8px);
-      border-right: 20px solid transparent;
-      border-left: 20px solid transparent;
-      border-top: 20px solid var.$blightPink;
-      border-bottom: 0;
-      transform: rotate(-90deg);
+      top: 50%;
+      left: 100%;
+      border-top: 16px solid var.$buttonPink;
+      border-right: 16px solid var.$buttonPink;
+      border-bottom: 16px solid transparent;
+      border-left: 16px solid transparent;
+      transform: translate(-50%, -50%) rotate(45deg);
     }
   }
 
