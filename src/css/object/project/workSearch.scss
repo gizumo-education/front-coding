@@ -1,0 +1,124 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/variables' as var;
+
+.p-workSearch {
+  width: 1180px;
+  height: 360px;
+  padding: 60px 0;
+  margin: 0 auto;
+
+  &__inner {
+    height: 240px;
+    padding: 40px;
+    background-color: var.$bgSkyBlue;
+    border-radius: 10px;
+    text-align: center;
+
+    & > h3 {
+      font-size: 25px;
+      font-family: "Noto Sans JP";
+      font-weight: var.$bold;
+      line-height: 25px;
+    }
+
+    & > p {
+      margin: 20px;
+      font-size: 20px;
+      font-family: "Noto Sans JP";
+      font-weight: var.$regular;
+      line-height: 29px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    gap: 15px;
+    height: 60px;
+  }
+
+  & select {
+    width: 200px;
+    height: 60px;
+    padding: 15px;
+    font-family: "Noto Sans JP";
+    font-size: 18px;
+    line-height: 26px;
+    color: var.$black;
+    appearance: none;
+    outline: none;
+    background-color: var.$white;
+    border: 1px solid var.$blightPink;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  &__select {
+    width: 200px;
+    height: 60px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 26px;
+      right: 12px;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-top: 10px solid var.$blightPink;
+      border-bottom: 0;
+      pointer-events: none;
+    }
+  }
+
+  &__input {
+    width: 300px;
+    height: 60px;
+
+    & > input {
+      width: 300px;
+      height: 60px;
+      padding-left: 10px;
+      color: var.$black;
+      font-size: 18px;
+      font-family: "Noto Sans JP";
+      font-weight: var.$regular;
+      line-height: 26px;
+      border: 1px solid var.$blightPink;
+      border-radius: 10px;
+
+      &::placeholder {
+        color: var.$gray;
+      }
+    }
+  }
+
+  &__button {
+    width: 140px;
+    transition: .3s;
+
+    &:hover {
+      opacity: .8;
+      cursor: pointer;
+    }
+  }
+
+  &__link {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > p {
+      margin-left: 5px;
+      font-size: 18px;
+      font-weight: var.$bold;
+      font-family: "Note Sans JP";
+      line-height: 18px;
+      color: var.$white;
+    }
+  }
+
+  &__second {
+    margin: 90px auto 140px;
+  }
+}

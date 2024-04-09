@@ -1,0 +1,104 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/variables' as var;
+
+.p-jobChangeFlow {
+  height: 540px;
+  padding-top: 105px;
+  text-align: center;
+
+  & h3 {
+    font-size: 25px;
+    font-family: "Note Sans JP";
+    font-weight: var.$bold;
+    line-height: 25px;
+  }
+
+  &__steps {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  &__step {
+    width: 280px;
+    height: 360px;
+    border: 2px solid var.$buttonPink;
+    border-radius: 13px;
+    position: relative;
+
+    &:nth-child(n+2):after {
+      content: "";
+      position: absolute;
+      top: 170px;
+      right: 268px;
+      border-right: 20px solid transparent;
+      border-left: 20px solid transparent;
+      border-top: 20px solid var.$blightPink;
+      border-bottom: 0;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__stepNumber {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    padding-top: 13px;
+    background-color: var.$buttonPink;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: var.$bold;
+    line-height: 19px;
+    color: var.$white;
+  }
+
+  &__stepImg1 {
+    position: absolute;
+    top: 60px;
+    left: 95px;
+  }
+  
+  &__stepImg2 {
+    position: absolute;
+    top: 70px;
+    left: 95px;
+  }
+
+  &__stepImg3 {
+    position: absolute;
+    top: 65px;
+    left: 85px;
+  }
+
+  &__stepImg4 {
+    position: absolute;
+    top: 60px;
+    left: 75px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 180px;
+  }
+
+  &__title {
+    height: 60px;
+    font-size: 24px;
+    font-family: "Note Sans JP";
+    font-weight: var.$bold;
+    line-height: 30px;
+  }
+
+  &__line {
+    line-height: 60px;
+  }
+
+  &__detail {
+    margin: 18px 20px 0;
+    font-size: 14px;
+    font-family: "Note Sans JP";
+    font-weight: var.$regular;
+    line-height: 20px;
+  }
+}
