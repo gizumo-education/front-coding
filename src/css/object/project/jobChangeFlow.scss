@@ -29,8 +29,8 @@
     &:nth-child(n+2):after {
       content: "";
       position: absolute;
-      top: 170px;
-      right: 268px;
+      top: calc(50% - 10px);
+      right: calc(100% - 8px);
       border-right: 20px solid transparent;
       border-left: 20px solid transparent;
       border-top: 20px solid var.$blightPink;
