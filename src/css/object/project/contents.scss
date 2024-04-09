@@ -1,11 +1,10 @@
 @use '../../object/utility/utility.scss';
 
 .p-contents {
-  @include utility.pc {
-    width: 1180px;
-    height: 455px;
-    margin: 0 auto;
-  }
+  width: 1180px;
+  height: 455px;
+  margin: 0 auto;
+
   @include utility.sp {
     width: 100%;
   }
@@ -14,10 +13,10 @@
     font-size: 25px;
     font-weight: 700;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 105px;
     @include utility.sp {
       text-align: center;
-      margin: 20% 0 10% 0; 
+      margin: 0.7rem 0 10% 0; 
     }
   }
 
@@ -42,22 +41,27 @@
       }
       @include utility.sp {
         margin: 0 auto;
-        width: 90%;
+        width: 95%;
         border-radius: 0.07rem;
         background-size: 100%;
         background-image: url("../img/picture/contents-paper.png");
       }
 
       & > .p-manual__backcolor {
-        padding-top: 55px;
         width: 380px;
         height: 240px;
         background-color: rgba($color: #000000, $alpha: 0.7);
         border-radius: 10px;
+        padding-top: 70px;
+
+        @include utility.tab {
+          padding-top: 0.7rem;
+        }
 
         @include utility.sp {
           width: 100%;
           background-color: rgba($color: #000000, $alpha: 0.7);
+          padding-top: 15%;
         }
 
         & > .p-contents__text {
@@ -102,22 +106,27 @@
       }
       @include utility.sp {
         margin: 0 auto;
-        margin-top: 10%;
+        margin-top: 3%;
         border-radius: 0.07rem;
         background-image: url("../img/picture/contents-PC.png");
         background-size: 100%;
-        width: 90%;
+        width: 95%;
       }
 
       & > .p-manual__backcolor {
-        padding-top: 55px;
         width: 380px;
         height: 240px;
         background-color: rgba($color: #000000, $alpha: 0.7);
         border-radius: 10px;
+        padding-top: 70px;
+
+        @include utility.tab {
+          padding-top: 0.7rem;
+        }
 
         @include utility.sp {
           width: 100%;
+          padding-top: 15%;
           background-color: rgba($color: #000000, $alpha: 0.7);
         }
 
@@ -159,21 +168,26 @@
       }
       @include utility.sp {
         margin: 0 auto;
-        margin-top: 10%;
-        width: 90%;
+        margin-top: 5%;
+        width: 95%;
         background-image: url("../img/picture/contents-paper.png");
         background-size: 100%;
       }
 
       & > .p-manual__backcolor {
-        padding-top: 55px;
         width: 380px;
         height: 240px;
         background-color: rgba($color: #000000, $alpha: 0.7);
         border-radius: 10px;
+        padding-top: 70px;
+
+        @include utility.tab {
+          padding-top: 0.7rem;
+        }
 
         @include utility.sp {
           width: 100%;
+          padding-top: 15%;
           border-radius: 0.07rem;
           background-color: rgba($color: #000000, $alpha: 0.7);
         }

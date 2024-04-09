@@ -1,13 +1,16 @@
 @use '../../object/utility/utility.scss';
 
 .p-center__title {
+  height: 300px;
   font-size: 25px;
   font-weight: 700;
   background-image: url("../img/picture/center-title-officework.png");
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 60px;
+
   @include utility.sp {
     width: 100%;
+    margin-top: 0.16rem;
     font-size: 0.14rem;
     font-weight: 400;
     background-image: url("../img/picture/center-title-officework.png");
@@ -18,20 +21,19 @@
   & > .p-center__back__color {
     background-color: #000000;
     opacity: 0.7;
+    height: 300px;
 
     & > .p-total__center__text {
-      @include utility.pc {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 5% 0 5% 0;
-      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding-top: 115px;
+
       @include utility.tab {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 5% 0 5% 0;
       }
       @include utility.sp {
         text-align: center;
@@ -39,7 +41,7 @@
       }
 
       & > .p-center__text {
-        font-size: 20px;
+        font-size: 25px;
         color: #FFFFFF;
         @include utility.sp {
           font-size: 0.14rem;
@@ -51,7 +53,7 @@
           margin-top: 20px;
         }
         @include utility.tab {
-          margin-top: 0.12rem;
+          margin-top: 0.2rem;
         }
         @include utility.sp {
           margin-top: 0.12rem;
