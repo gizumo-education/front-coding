@@ -1,2 +1,12 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual {
+  background-image: url('/img/picture/keyvisual_pc.png');
+  background-color: utility.$bgDarkBlue;
+  background-repeat: no-repeat;
+
+  &__box {
+
+  }
+}
