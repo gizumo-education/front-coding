@@ -2,11 +2,10 @@
 @use '../../foundation/variables' as var;
 
 .p-jobChangeFlow {
-  height: 540px;
-  padding-top: 105px;
+  margin-top: 105px;
   text-align: center;
 
-  & h3 {
+  & h2 {
     font-size: 25px;
     font-family: "Note Sans JP";
     font-weight: var.$bold;

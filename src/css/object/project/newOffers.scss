@@ -2,7 +2,7 @@
 @use '../../foundation/variables' as var;
 
 .p-newOffers {
-  height: 636px;
+  margin-top: 60px;
   padding: 64px 0;
   background-color: var.$bgLightBlue;
 
@@ -10,7 +10,7 @@
     position: relative;
   }
 
-  & h3 {
+  & h2 {
     font-size: 25px;
     font-family: "Inter";
     font-weight: var.$regular;
@@ -84,7 +84,6 @@
 
   &__article {
     width: 280px;
-    height: 329px;
 
     & img {
       border-radius: 10px;
@@ -92,35 +91,40 @@
 
     & p {
       display: block;
-      margin: 10px 0 3px 0;
+      margin-top: 10px;
       font-size: 16px;
       font-family: "Noto Sans JP";
       font-weight: var.$regular;
       line-height: 22px; 
     }
 
-     & th {
-      display: block;
-      width: 60px;
-      height: 21px;
-      margin: 4px 10px 0 0;
-      background-color: var.$lightPink;
-      text-align: center;
-      font-size: 14px;
-      font-family: "Noto Sans JP";
-      font-weight: var.$regular;
-      line-height: 20px;
-     }
+    & table {
+      margin-top: 4px;
+    }
 
-     & td {
-      font-size: 14px;
-      font-family: "Inter";
-      font-weight: var.$regular;
-      line-height: 17px;
-     }
+    & th {
+    display: block;
+    width: 60px;
+    height: 21px;
+    margin: 4px 10px 0 0;
+    background-color: var.$lightPink;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Noto Sans JP";
+    font-weight: var.$regular;
+    line-height: 20px;
+    }
+
+    & td {
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: var.$regular;
+    line-height: 17px;
+    }
   }
 
   &__button {
+    display: block;
     margin: 59px auto 0;
     width: 360px;
     transition: .3s;

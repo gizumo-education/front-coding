@@ -2,19 +2,19 @@
 @use '../../foundation/variables' as var;
 
 .p-workSearch {
-  width: 1180px;
-  height: 360px;
-  padding: 60px 0;
-  margin: 0 auto;
+  width: 100%;
+
+  &__first {
+    margin-top: 60px;
+  }
 
   &__inner {
-    height: 240px;
     padding: 40px;
     background-color: var.$bgSkyBlue;
     border-radius: 10px;
     text-align: center;
 
-    & > h3 {
+    & > h2 {
       font-size: 25px;
       font-family: "Noto Sans JP";
       font-weight: var.$bold;
@@ -22,7 +22,7 @@
     }
 
     & > p {
-      margin: 20px;
+      margin-top: 20px;
       font-size: 20px;
       font-family: "Noto Sans JP";
       font-weight: var.$regular;
@@ -31,30 +31,12 @@
   }
 
   &__form {
+    margin-top: 20px;
     display: flex;
     gap: 15px;
-    height: 60px;
   }
 
-  & select {
-    width: 200px;
-    height: 60px;
-    padding: 15px;
-    font-family: "Noto Sans JP";
-    font-size: 18px;
-    line-height: 26px;
-    color: var.$black;
-    appearance: none;
-    outline: none;
-    background-color: var.$white;
-    border: 1px solid var.$blightPink;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-  &__select {
-    width: 200px;
-    height: 60px;
+  &__selectArrow {
     position: relative;
 
     &::after {
@@ -70,43 +52,48 @@
     }
   }
 
+  &__select {
+    width: 200px;
+    padding: 15px;
+    font-family: "Noto Sans JP";
+    font-size: 18px;
+    line-height: 26px;
+    color: var.$black;
+    appearance: none;
+    outline: none;
+    background-color: var.$white;
+    border: 1px solid var.$blightPink;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
   &__input {
     width: 300px;
-    height: 60px;
+    padding: 10px;
+    color: var.$black;
+    font-size: 18px;
+    font-family: "Noto Sans JP";
+    font-weight: var.$regular;
+    line-height: 26px;
+    border: 1px solid var.$blightPink;
+    border-radius: 10px;
 
-    & > input {
-      width: 300px;
-      height: 60px;
-      padding-left: 10px;
-      color: var.$black;
-      font-size: 18px;
-      font-family: "Noto Sans JP";
-      font-weight: var.$regular;
-      line-height: 26px;
-      border: 1px solid var.$blightPink;
-      border-radius: 10px;
-
-      &::placeholder {
-        color: var.$gray;
-      }
+    &::placeholder {
+      color: var.$gray;
     }
   }
 
   &__button {
     width: 140px;
     transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       opacity: .8;
       cursor: pointer;
     }
-  }
-
-  &__link {
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     & > p {
       margin-left: 5px;

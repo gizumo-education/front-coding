@@ -2,11 +2,10 @@
 @use '../../foundation/variables' as var;
 
 .p-features {
-  height: 584px;
-  padding-top: 106px;
+  margin-top: 106px;
   text-align: center;
 
-  & h3 {
+  & h2 {
     font-size: 25px;
     font-family: "Note Sans JP";
     font-weight: var.$bold;
@@ -22,12 +21,11 @@
 
   &__feature {
     width: 570px;
-    height: 180px;
     padding: 40px;
     background-color: var.$featureBox;
     border-radius: 10px;
 
-    & > h4 {
+    & > h3 {
       font-size: 24px;
       font-family: "Note Sans JP";
       font-weight: var.$bold;

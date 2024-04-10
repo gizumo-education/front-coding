@@ -2,11 +2,10 @@
 @use '../../foundation/variables' as var;
 
 .p-usefulContents {
-  height: 560px;
-  padding-top: 105px;
+  margin-top: 105px;
   text-align: center;
 
-  & h3 {
+  & h2 {
     font-size: 25px;
     font-family: "Note Sans JP";
     font-weight: var.$bold;
@@ -21,11 +20,10 @@
 
   &__content {
     width: 380px;
-    height: 240px;
     padding: 70px 40px 55px;
     border-radius: 10px;
 
-    & h4 {
+    & h3 {
       font-size: 24px;
       font-family: "Noto Sans JP";
       font-weight: var.$bold;
