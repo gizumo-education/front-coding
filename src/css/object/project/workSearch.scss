@@ -1,0 +1,111 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/variables' as var;
+
+.p-workSearch {
+  width: 100%;
+
+  &__first {
+    margin-top: 60px;
+  }
+
+  &__inner {
+    padding: 40px;
+    background-color: var.$bgSkyBlue;
+    border-radius: 10px;
+    text-align: center;
+
+    & > h2 {
+      font-size: 25px;
+      font-family: "Noto Sans JP";
+      font-weight: var.$bold;
+      line-height: 25px;
+    }
+
+    & > p {
+      margin-top: 20px;
+      font-size: 20px;
+      font-family: "Noto Sans JP";
+      font-weight: var.$regular;
+      line-height: 29px;
+    }
+  }
+
+  &__form {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+  }
+
+  &__selectArrow {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 26px;
+      right: 12px;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-top: 10px solid var.$blightPink;
+      border-bottom: 0;
+      pointer-events: none;
+    }
+  }
+
+  &__select {
+    width: 200px;
+    padding: 15px;
+    font-family: "Noto Sans JP";
+    font-size: 18px;
+    line-height: 26px;
+    color: var.$black;
+    appearance: none;
+    outline: none;
+    background-color: var.$white;
+    border: 1px solid var.$blightPink;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  &__input {
+    width: 300px;
+    padding: 10px;
+    color: var.$black;
+    font-size: 18px;
+    font-family: "Noto Sans JP";
+    font-weight: var.$regular;
+    line-height: 26px;
+    border: 1px solid var.$blightPink;
+    border-radius: 10px;
+
+    &::placeholder {
+      color: var.$gray;
+    }
+  }
+
+  &__button {
+    width: 140px;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      opacity: .8;
+      cursor: pointer;
+    }
+
+    & > p {
+      margin-left: 5px;
+      font-size: 18px;
+      font-weight: var.$bold;
+      font-family: "Note Sans JP";
+      line-height: 18px;
+      color: var.$white;
+    }
+  }
+
+  &__second {
+    margin: 90px auto 140px;
+  }
+}

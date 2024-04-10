@@ -1,0 +1,146 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/variables' as var;
+
+.p-newOffers {
+  margin-top: 60px;
+  padding: 64px 0;
+  background-color: var.$bgLightBlue;
+
+  &__inner {
+    position: relative;
+  }
+
+  & h2 {
+    font-size: 25px;
+    font-family: "Inter";
+    font-weight: var.$regular;
+    line-height: 30px;
+  }
+
+  &__preButton {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: var.$white;
+    border-radius: 30px;
+    opacity: .7;
+    position: absolute;
+    top: 125px;
+    transition: .3s;
+
+    &::after {
+      content: '';
+      width: 21px;
+      height: 21px;
+      position: absolute;
+      border-top: 1px solid var.$black;
+      border-left: 1px solid var.$black;
+      transform: rotate(-45deg);
+      top: 20px;
+      left: 25px;
+    }
+
+    &:hover {
+      opacity: .9;
+      cursor: pointer;
+    }
+  }
+
+  &__postButton {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: var.$white;
+    border-radius: 30px;
+    opacity: .7;
+    position: absolute;
+    top: 125px;
+    right: 0;
+    transition: .3s;
+
+    &::after {
+      content: '';
+      width: 21px;
+      height: 21px;
+      position: absolute;
+      border-top: 1px solid var.$black;
+      border-right: 1px solid var.$black;
+      transform: rotate(45deg);
+      top: 20px;
+      left: 15px;
+    }
+
+    &:hover {
+      opacity: .9;
+      cursor: pointer;
+    }
+  }
+
+  &__articles {
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+  }
+
+  &__article {
+    width: 280px;
+
+    & img {
+      border-radius: 10px;
+    }
+
+    & p {
+      display: block;
+      margin-top: 10px;
+      font-size: 16px;
+      font-family: "Noto Sans JP";
+      font-weight: var.$regular;
+      line-height: 22px; 
+    }
+
+    & table {
+      margin-top: 4px;
+    }
+
+    & th {
+    display: block;
+    width: 60px;
+    height: 21px;
+    margin: 4px 10px 0 0;
+    background-color: var.$lightPink;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Noto Sans JP";
+    font-weight: var.$regular;
+    line-height: 20px;
+    }
+
+    & td {
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: var.$regular;
+    line-height: 17px;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 59px auto 0;
+    width: 360px;
+    transition: .3s;
+    text-align: center;
+
+    &:hover {
+      opacity: .8;
+      cursor: pointer;
+    }
+
+    & p {
+      font-size: 18px;
+      font-family: "Noto Sans JP";
+      font-weight: var.$bold;
+      line-height: 60px;
+      color: var.$white;
+    }
+  }
+}

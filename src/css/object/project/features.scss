@@ -1,0 +1,45 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/variables' as var;
+
+.p-features {
+  margin-top: 106px;
+  text-align: center;
+
+  & h2 {
+    font-size: 25px;
+    font-family: "Note Sans JP";
+    font-weight: var.$bold;
+    line-height: 25px;
+  }
+
+  &__features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 53px;
+    gap: 40px;
+  }
+
+  &__feature {
+    width: 570px;
+    padding: 40px;
+    background-color: var.$featureBox;
+    border-radius: 10px;
+
+    & > h3 {
+      font-size: 24px;
+      font-family: "Note Sans JP";
+      font-weight: var.$bold;
+      line-height: 24px;
+      color: var.$blightPink;
+    }
+
+    & > p {
+      margin-top: 36px;
+      font-size: 14px;
+      font-family: "Note Sans JP";
+      font-weight: var.$regular;
+      line-height: 20px;
+      color: var.$black;
+    }
+  }
+}

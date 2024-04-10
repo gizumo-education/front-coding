@@ -1,2 +1,9 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/variables' as var;
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button {
+  height: 60px;
+  background-color: var.$buttonPink;
+  border-radius: 30px;
+}

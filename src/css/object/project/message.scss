@@ -1,0 +1,22 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/variables' as var;
+
+.p-message {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../img/picture/message-back.jpg);
+
+  &__text {
+    text-align: center;
+    margin: auto;
+
+    & p {
+      font-size: 25px;
+      font-family: "Noto Sans JP";
+      font-weight: var.$bold;
+      line-height: 36px;
+      color: var.$white;
+    }
+  }
+}
