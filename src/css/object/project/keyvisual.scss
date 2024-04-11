@@ -7,6 +7,14 @@
   height: 500px;
   background-color: var.$bgKeyvisual;
 
+  @include utility.tab {
+    height: 5rem;
+  }
+
+  @include utility.sp {
+    height: 2.7rem;
+  }
+
   &__image {
     width: 1262px;
     height: 100%;
@@ -16,33 +24,90 @@
     background-size: 92%;
     background-position: right -115px;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 1262px) {
+      width: 100vw;
+    }
+
+    @include utility.tab {
+      width: 12rem;
+      padding-top: .5rem;
+      background-size: 12rem;
+      background-position: right -1.15rem;
+    }
+
+    @include utility.sp {
+      width: 4rem;
+      padding-top: .61rem;
+      background-size: 4.8rem;
+      background-position: right;
+    }
   }
 
   &__imageInner {
     width: 800px;
     height: 100%;
-    margin-left: 450px;
+    margin-left: 432px;
     display: flex;
     flex-flow: column;
     align-items: center;
+
+    @media screen and (max-width: 1262px) {
+      margin-left: calc(100vw * 370 / 1200);
+    }
+
+    @include utility.tab {
+      width: 8rem;
+      margin-left: 3.70rem;
+    }
+
+    @include utility.sp {
+      width: 2.72rem;
+      margin-left: 1.24rem;
+    }
   }
 
   &__mark {
     width: 342px;
     height: 180px;
     background-image: url(../img/icon/icon-keyvisual-mark.png);
+
+    @include utility.tab {
+      width: 3.42rem;
+      height: 1.8rem;
+      background-size: 3.41rem;
+    }
+
+    @include utility.sp {
+      width: 1.5rem;
+      height: .74rem;
+      background-size: 1.5rem;  
+    }
   }
 
   &__title {
     width: 800px;
     height: 65px;
     margin-top: 30px;
-    font-size: 50px;
-    font-family: "Noto Sans JP";
-    font-weight: var.$bold;
-    line-height: 65px;
+    @include utility.font(50px, "Note Sans JP", var.$bold, 65px);
     color: var.$white;
     text-shadow: 0 4px 4px rgb(0, 0, 0, .25);
+
+    @include utility.tab {
+      width: 8rem;
+      height: .65rem;
+      margin-top: .3rem;
+      @include utility.font(.5rem, "Note Sans JP", var.$bold, .65rem);
+      text-shadow: 0 .04rem .04rem rgb(0, 0, 0, .25);
+    }
+
+    @include utility.sp {
+      width: 2.72rem;
+      height: .22rem;
+      margin-top: .12rem;
+      @include utility.font(.17rem, "Note Sans JP", var.$bold, .22rem);
+      text-shadow: 0 .04rem .04rem rgb(0, 0, 0, .25);
+    }
   }
 
   &__textBox {
@@ -52,6 +117,20 @@
     background-color: var.$white;
     border: 2px solid var.$lightGreen;
     border-radius: 15px;
+
+    @include utility.tab {
+      width: 3.91rem;
+      height: .69rem;
+      margin-top: .5rem;
+      border-radius: .15rem;
+    }
+
+    @include utility.sp {
+      width: 1.7rem;
+      height: .3rem;
+      margin-top: .18rem;
+      border-radius: .05rem;
+    }
   }
 
   &__textInner {
@@ -59,17 +138,34 @@
     height: 58px;
     margin: auto;
     padding-top: 2px;
-    font-size: 20px;
-    font-family: "Noto Sans JP";
-    font-weight: var.$regular;
-    line-height: 29px;
+    @include utility.font(20px, "Noto Sans JP", var.$regular, 29px);
     color: var.$lightGreen;
     text-align: center;
 
+    @include utility.tab {
+      width: 3.08rem;
+      height: .58rem;
+      padding-top: .02rem;
+      @include utility.font(.2rem, "Noto Sans JP", var.$regular, .29rem);
+    }
+
+    @include utility.sp {
+      width: 1.23rem;
+      height: .23rem;
+      padding-top: .04rem;
+      @include utility.font(.08rem, "Noto Sans JP", var.$regular, .11rem);
+    }
+
     & span {
-      font-size: 40px;
-      font-weight: var.$bold;
-      line-height: 58px;
+      @include utility.font(40px, "Noto Sans JP", var.$bold, 58px);
+
+      @include utility.tab {
+        @include utility.font(.4rem, "Noto Sans JP", var.$bold, .58rem);
+      }
+
+      @include utility.sp {
+        @include utility.font(.16rem, "Noto Sans JP", var.$bold, .23rem);
+      }
     }
   }
 }

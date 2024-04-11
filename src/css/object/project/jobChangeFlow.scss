@@ -5,17 +5,42 @@
   margin-top: 105px;
   text-align: center;
 
+  @include utility.tab {
+    margin-top: 1.05rem;
+  }
+
+  @include utility.sp {
+    margin-top: .6rem;
+  }
+
   & h2 {
-    font-size: 25px;
-    font-family: "Note Sans JP";
-    font-weight: var.$bold;
-    line-height: 25px;
+    @include utility.font(25px, "Noto Sans JP", var.$bold, 25px);
+
+    @include utility.tab {
+      @include utility.font(.25rem, "Noto Sans JP", var.$bold, .25rem);
+    }
+
+    @include utility.sp {
+      @include utility.font(.25rem, "Noto Sans JP", var.$bold, .25rem);
+    }
   }
 
   &__steps {
     display: flex;
     gap: 20px;
     margin-top: 50px;
+
+    @include utility.tab {
+      gap: .2rem;
+      margin-top: .5rem;
+    }
+
+    @include utility.sp {
+      flex-flow: column;
+      align-items: center;
+      gap: .39rem;
+      margin-top: .34rem;
+    }
   }
 
   &__step {
@@ -24,6 +49,30 @@
     border: 2px solid var.$buttonPink;
     border-radius: 13px;
     position: relative;
+
+    @include utility.tab {
+      width: 2.8rem;
+      height: 3.6rem;
+      border-radius: .13rem;
+    }
+
+    @include utility.sp {
+      width: 2.8rem;
+      height: 2.93rem;
+      border-radius: .13rem;
+    }
+
+    & img {
+      @include utility.tab {
+        width: 1rem;
+        height: 1rem;
+      }
+
+      @include utility.sp {
+        width: .75rem;
+        height: .75rem;
+      }
+    }
 
     &:nth-child(-n+3):after {
       content: "";
@@ -35,6 +84,23 @@
       border-bottom: 16px solid transparent;
       border-left: 16px solid transparent;
       transform: translate(-50%, -50%) rotate(45deg);
+
+      @include utility.tab {
+        border-top: .16rem solid var.$buttonPink;
+        border-right: .16rem solid var.$buttonPink;
+        border-bottom: .16rem solid transparent;
+        border-left: .16rem solid transparent;
+      }
+
+      @include utility.sp {
+        top: calc(100% + .1rem);
+        left: 50%;
+        border-top: .16rem solid var.$buttonPink;
+        border-right: .16rem solid var.$buttonPink;
+        border-bottom: .16rem solid transparent;
+        border-left: .16rem solid transparent;
+        transform: translate(-50%, -50%) rotate(135deg);
+      }
     }
   }
 
@@ -45,59 +111,150 @@
     padding-top: 13px;
     background-color: var.$buttonPink;
     border-radius: 30px;
-    font-size: 16px;
-    font-family: "Inter";
-    font-weight: var.$bold;
-    line-height: 19px;
+    @include utility.font(16px, "Inter", var.$bold, 19px);
     color: var.$white;
+
+    @include utility.tab {
+      width: .6rem;
+      height: .6rem;
+      margin: .1rem;
+      padding-top: .13rem;
+      border-radius: .3rem;
+      @include utility.font(.16rem, "Inter", var.$bold, .19rem);
+    }
+
+    @include utility.sp {
+      width: .45rem;
+      height: .45rem;
+      margin: .1rem;
+      padding-top: .13rem;
+      border-radius: .225rem;
+      @include utility.font(.1rem, "Inter", var.$bold, .12rem);
+    }
   }
 
   &__stepImg1 {
     position: absolute;
     top: 60px;
     left: 95px;
+
+    @include utility.tab {
+      top: .6rem;
+      left: .95rem;
+    }
+
+    @include utility.sp {
+      top: .55rem;
+      left: 1rem;
+    }
   }
   
   &__stepImg2 {
     position: absolute;
     top: 70px;
     left: 95px;
+
+    @include utility.tab {
+      top: .7rem;
+      left: .95rem;
+    }
+
+    @include utility.sp {
+      top: .55rem;
+      left: 1rem;
+    }
   }
 
   &__stepImg3 {
     position: absolute;
     top: 65px;
     left: 85px;
+
+    @include utility.tab {
+      top: .65rem;
+      left: .85rem;
+    }
+
+    @include utility.sp {
+      top: .55rem;
+      left: 1rem;
+    }
   }
 
   &__stepImg4 {
     position: absolute;
     top: 60px;
     left: 75px;
+
+    @include utility.tab {
+      top: .6rem;
+      left: .75rem;
+    }
+
+    @include utility.sp {
+      top: .55rem;
+      left: 1rem;
+    }
   }
 
   &__text {
     position: absolute;
     top: 180px;
+
+    @include utility.tab {
+      top: 1.8rem;
+    }
+
+    @include utility.sp {
+      top: 1.52rem;
+    }
   }
 
   &__title {
     height: 60px;
-    font-size: 24px;
-    font-family: "Note Sans JP";
-    font-weight: var.$bold;
-    line-height: 30px;
+    @include utility.font(24px, "Noto Sans JP", var.$bold, 30px);
+
+    @include utility.tab {
+      height: .6rem;
+      @include utility.font(.24rem, "Noto Sans JP", var.$bold, .3rem);
+    }
+
+    @include utility.sp {
+      height: .29rem;
+      @include utility.font(.20rem, "Noto Sans JP", var.$bold, .29rem);
+    }
+
+    & br {
+      @include utility.sp {
+        display: none;
+      }
+    }
   }
 
   &__line {
     line-height: 60px;
+
+    @include utility.tab {
+      line-height: .6rem;
+    }
+
+    @include utility.sp {
+      line-height: .29rem;
+    }
   }
 
   &__detail {
     margin: 18px 20px 0;
-    font-size: 14px;
-    font-family: "Note Sans JP";
-    font-weight: var.$regular;
-    line-height: 20px;
+    @include utility.font(14px, "Noto Sans JP", var.$regular, 20px);
+
+    @include utility.tab {
+      margin: .18rem .2rem 0;
+      @include utility.font(.12rem, "Noto Sans JP", var.$regular, .2rem);
+    }
+
+    @include utility.sp {
+      margin: .1rem .2rem .31rem;
+      @include utility.font(.14rem, "Noto Sans JP", var.$regular, .2rem);
+    }
   }
 }
