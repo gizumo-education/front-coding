@@ -107,6 +107,10 @@
           line-height: 0.17rem;
           word-break: break-all;
         }
+
+        & span {
+          display: block;
+        }
       }
     }
   }
