@@ -137,11 +137,29 @@
     }
   }
 
+  &__line--1.open {
+    @include utility.sp {
+      transform: rotate(30deg);
+    }
+  }
+
+  &__line--2.open {
+    @include utility.sp {
+      transform: rotate(30deg);
+    }
+  }
+
+  &__line--3.open {
+    @include utility.sp {
+      transform: rotate(30deg);
+    }
+  }
+
   &__spMenu {
     display: none;
     
     @include utility.sp {
-      display: none!important;
+      // display: none!important;
       display: block;
       width: 100%;
       height: 5.54rem;
@@ -149,7 +167,8 @@
       padding: .57rem .6rem;
       position: fixed;
       top: .7rem;
-      left: 0;
+      right: -100%;
+      overflow-y: auto;
     }
   
     & li {
@@ -168,6 +187,12 @@
       @include utility.sp {
         @include utility.font(.22rem, "Noto Sans JP", var.$bold, .22rem);
         color: var.$white
+      }
+    }
+
+    &.open {
+      @include utility.sp {
+        right: 0;
       }
     }
   }

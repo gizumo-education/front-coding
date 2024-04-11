@@ -244,6 +244,7 @@
   }
 
   &__detail {
+    text-align: left;
     margin: 18px 20px 0;
     @include utility.font(14px, "Noto Sans JP", var.$regular, 20px);
 

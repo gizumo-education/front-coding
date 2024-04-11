@@ -171,6 +171,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
 
     @include utility.tab {
       width: 1.4rem;
