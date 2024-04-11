@@ -1,0 +1,12 @@
+@use "../foundation/variables" as var;
+
+.p-contents {
+
+  &__title{
+    font-weight: var.$bold;
+  }
+
+  &__list{
+    display: flex;
+  }
+}

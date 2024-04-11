@@ -1,0 +1,77 @@
+@use "../foundation/variables" as var;
+
+.p-changejob {
+  width: 1180px;
+  height: 435px;
+  margin-top: 105px;
+
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: var.$bold;
+  }
+
+  &__list {
+    display: flex;
+    
+    &__step {
+      width: 60px;
+      height: 60px;
+      background-color: var.$pink;
+      border-radius: 100px;
+      
+      &__center{        
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        color: var.$white;
+        font-size: 15px; 
+      }
+    }
+    
+    &__subtitle{
+      font-size: 20px;
+      font-weight: var.$bold;
+      
+    }
+    
+    & li {
+      border-radius: 20px;
+      width: 280px;
+      height: 360px; 
+      border: 2.27px solid var.$pink;
+      box-sizing: border-box; 
+      padding: 20px; 
+      text-align: center; 
+    }
+    &__triangle {
+      position: relative;
+      &::after {
+        margin: auto;
+        content: "";
+        display: block;
+        color: var.$pink;
+        width: 20px;
+        height: 40px;
+        border-style: solid;
+        border-color: transparent;
+        border-width: 0.375em 0.64952em;
+        border-left-color: currentColor;
+        border-right: 0;
+      }
+    
+  }
+    
+
+    & img {
+      width: 102.29px;
+      height: 100px;
+    }
+
+
+    & span {
+      font-size: 15px;
+    }
+  }
+}
