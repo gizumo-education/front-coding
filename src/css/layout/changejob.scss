@@ -3,28 +3,32 @@
 .p-changejob {
   width: 1180px;
   height: 435px;
-  margin-top: 105px;
+  margin: 105px auto 60px auto;
 
   &__title {
+    margin-top: 60px;
     text-align: center;
     font-size: 24px;
     font-weight: var.$bold;
+    margin: 0 auto;
   }
 
   &__list {
     display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
     
     &__step {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 60px;
       height: 60px;
       background-color: var.$pink;
       border-radius: 100px;
       
-      &__center{        
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
+      &__center{   
         color: var.$white;
         font-size: 15px; 
       }
@@ -33,10 +37,15 @@
     &__subtitle{
       font-size: 20px;
       font-weight: var.$bold;
-      
     }
     
     & li {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 20px; 
+      justify-content: center;
+      align-items: center;
       border-radius: 20px;
       width: 280px;
       height: 360px; 
@@ -44,26 +53,27 @@
       box-sizing: border-box; 
       padding: 20px; 
       text-align: center; 
-    }
-    &__triangle {
-      position: relative;
-      &::after {
-        margin: auto;
-        content: "";
-        display: block;
-        color: var.$pink;
-        width: 20px;
-        height: 40px;
-        border-style: solid;
-        border-color: transparent;
-        border-width: 0.375em 0.64952em;
-        border-left-color: currentColor;
-        border-right: 0;
-      }
-    
-  }
-    
+      margin: 0 auto;
 
+      &::after {
+        top: 45%;
+        left: 100%;
+        position: absolute;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid var.$pink;
+        content: "";
+        display: inline-block;  
+      }
+      &:last-child::after{
+        display: none; 
+      }
+    }
+
+  
+
+    
+  
     & img {
       width: 102.29px;
       height: 100px;
@@ -72,6 +82,18 @@
 
     & span {
       font-size: 15px;
+    }
+    &__more{
+      display: block;
+      width: 360px;
+      height: 60px;
+      border-radius: 30px;
+      background-color: var.$pink;
+      font-size: 15px;
+      font-weight: var.$bold;
+      border: none;
+      color: var.$white;
+      margin: 60px auto 67px auto;
     }
   }
 }

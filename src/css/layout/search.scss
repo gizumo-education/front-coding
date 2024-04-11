@@ -1,9 +1,9 @@
-@import '/object/utility/utility.css';
+@use "../foundation/variables" as var;
 
 .p-search{
   width: 1180px;
   height: 240px;
-  background-color: #DEEEF9;
+  background-color: var.$bgWhite;
   margin: 40px 210px;
   margin-left: auto;
   margin-right: auto; 
@@ -26,7 +26,7 @@
         top: 50%;
         left: 80%;
         transform: translate(-50%, -50%);
-        border-top: 10px solid #DE1E79;
+        border-top: 10px solid var.$pink;
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
 
@@ -36,7 +36,7 @@
   
   &__searchjob{
     display: block;
-    font-weight: bold;
+    font-weight: var.$bold;
     font-size: 25px;
     margin-bottom: 20px;
   }
@@ -48,7 +48,7 @@
   &__pulldown{
     width: 200px;
     height: 60px;
-    border: 1px solid #DE1E79;
+    border: 1px solid var.$pink;
     border-radius: 10px;
     font-size: 17px;
     font-weight: 200;
@@ -62,7 +62,7 @@
   &__input{
     width: 300px;
     height: 60px;
-    border: 1px solid #DE1E79;
+    border: 1px solid var.$pink;
     border-radius: 10px;
     padding-left: 10px;
     font-size: 17px;
@@ -73,11 +73,11 @@
     width: 140px;
     height: 60px;
     border-radius: 30px;
-    background-color: #DE1E79;
+    background-color: var.$pink;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: var.$bold;
     border:none;
-    color: #fff;
+    color: var.$white;
   }
 
   &__img{

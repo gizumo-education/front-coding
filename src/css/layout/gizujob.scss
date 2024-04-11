@@ -1,3 +1,5 @@
+@use "../foundation/variables" as var;
+
 .p-gizujob {
   position: relative;
   display: inline-block;
@@ -24,12 +26,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;  
+    color: var.$white;  
     text-align: center;
     z-index: 3; 
     margin-bottom: 103px;
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bold;
+    font-weight: var.$bold;
   }
 
   br {

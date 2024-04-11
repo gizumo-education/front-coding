@@ -1,7 +1,8 @@
-@import '/object/utility/utility.css';
+@use "../foundation/variables" as var;
+
 
 .p-keyvisual {
-  background-color: #98B1BE; 
+  background-color: var.$bgBlue; 
   background-image: url("../img/picture/top.png");
   background-size: 1262px auto; 
   background-position: center; 
@@ -23,7 +24,7 @@
   }
 
   &__toptext {
-    color: #FFFFFF;
+    color: var.$white;
     width: 800px;
     height: 65px;
     top: 265px;
@@ -35,8 +36,8 @@
   &__topjob {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 20px;
-    color: #2EB6AA;
-    background-color: #FFFFFF;
+    color: var.$borderBulue;
+    background-color: var.$white;
     width: 391px;
     height: 69px;
     top: 370px;
@@ -44,12 +45,12 @@
     position: absolute;
     line-height: 28.96px;
     text-align: center;
-    border: 2.3px solid #2EB6AA;
+    border: 2.3px solid var.$borderBulue;
     border-radius: 15px;
     
     &__highlight{
       font-size: 40px;
-      font-weight: bold;
+      font-weight: var.$bold;
       line-height: 57.92px;
       }
   }
