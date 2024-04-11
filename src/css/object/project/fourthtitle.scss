@@ -39,6 +39,7 @@
       @include utility.sp {
         font-size: 0.25rem;
         margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
       }
     }
   
@@ -70,13 +71,17 @@
         font-weight: 700;
         color: #de5579;
         text-align: center;
-        margin-top: 40px;
+        @include utility.pc {
+          margin-top: 40px;
+        }
+
         @include utility.tab {
           margin-top: 0.4rem;
         }
+
         @include utility.sp {
           padding-top: 7%;
-          margin-top: 0.4rem;
+          margin-top: 0.2rem;
           font-size: 0.2rem;
         }
       }
@@ -98,7 +103,7 @@
         word-break: auto-phrase;
         @include utility.sp {
           font-size: 0.12rem;
-          padding: 0 2% 7% 2%;
+          padding: 0 2% 10% 2%;
           line-height: 0.17rem;
           word-break: break-all;
         }
