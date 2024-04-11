@@ -1,0 +1,109 @@
+@use '/src/css/foundation/variables' as var;
+@use '/src/css/layout/inner.scss';
+@use '/src/css/object/component/button.scss';
+
+.p-search {
+  &__wrap {
+    margin-top: 60px;
+    background-color: var.$serch_bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  & h2 {
+    font-family: 'Noto sans JP',sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  &__subtitle {
+    font-family: 'Noto sans JP',sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+
+  &__selectboxes,
+  &__inputbox {
+    position: relative;
+    margin-left: 15px;
+    margin-top: 26px;
+  }
+
+  &__selectboxes:first-child {
+    margin-left: 0;
+  }
+
+  &__selectboxes::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid var.$selectbox;
+    pointer-events: none;
+  }
+
+  &__selectbox,
+  &__inputbox {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2.3px solid var.$selectbox;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 17px 15px;
+    font-size: 18px;
+    font-family: 'Noto sans JP',sans-serif;
+
+    &__wrap {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__inputbox {
+    width: 300px;
+
+    &::placeholder {
+      color: var.$gray;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    background-color: var.$button;
+    width: 140px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 0 0 14px;
+    margin: 26px 0 0 15px;
+
+    &__text {
+      color: var.$white;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 700;
+      font-family: 'Noto sans JP',sans-serif;
+    }
+  }
+  &__second {
+    margin-top: 150px;
+    margin-bottom: 200px;
+    }
+  }

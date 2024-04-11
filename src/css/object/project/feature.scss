@@ -1,0 +1,58 @@
+@use '/src/css/foundation/variables' as var;
+@use '/src/css/layout/inner.scss';
+@use '/src/css/object/component/button.scss';
+
+.p-feature {
+  &__wrap {
+    text-align: center;
+    margin-top: 105px;
+
+    & h4 {
+      font-family: 'Noto sans JP', sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+  }
+
+  &__contents {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 53px;
+  }
+
+  &__content {
+    color: var.$black;
+    background-color: var.$featureBG;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 10px;
+    width: 570px;
+    height: 180px;
+    text-align: center;
+    padding: 40px 62px;
+
+
+    &:nth-child(-n+2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-left: 0;
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+      color: var.$pink;
+    }
+
+    &__text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-top: 26px;
+    }
+  }
+}

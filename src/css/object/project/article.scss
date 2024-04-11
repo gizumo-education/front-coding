@@ -1,0 +1,85 @@
+@use '/src/css/foundation/variables' as var;
+@use '/src/css/layout/inner.scss';
+@use '/src/css/object/component/button.scss';
+
+.p-article {
+
+  &__wrap {
+    margin-top: 105px;
+    text-align: center;
+  }
+
+  & h6 {
+    font-family: 'Noto sans JP',sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &__contents {
+    display: flex;
+    margin-top: 50px;
+
+
+    &--1,
+    &--2 {
+      height: 240px;
+      width: 380px;
+      padding: 71px 64px 55px 60px;
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: overlay;
+      background-size: cover;
+      margin-left: 20px;
+      border-radius: 10px;
+    }
+
+    &--1 {
+      background-image: url('../img/picture/article_1.jpg');
+
+    }
+    &--2 {
+      background-image: url('../img/picture/article_2.jpg');
+    }
+
+    & h3 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+      color: var.$white;
+    }
+
+    & p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23px;
+      color: var.$white;
+      margin-top: 44px;
+    }
+  }
+
+  &__btn {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    background-color: var.$button;
+    width: 360px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 0 0 14px;
+    margin: 26px 0 0 15px;
+    justify-content: center;
+
+    &__text {
+      color: var.$white;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 700;
+    }
+  }
+}
