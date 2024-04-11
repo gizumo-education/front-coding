@@ -12,7 +12,7 @@
   }
 
   @include utility.tab {
-    height: 4.7rem;
+    height: 3.5rem;
   }
 
   @include utility.sp {
@@ -34,7 +34,7 @@
     }
 
     @include utility.tab {
-      height: 4.7rem;
+      height: 100%;
     }
 
     & > .p-total__center__text {
@@ -42,12 +42,16 @@
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      padding-top: 115px;
+
+      @include utility.pc {
+        padding-top: 115px;
+      }
 
       @include utility.tab {
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding-top: 1.2rem;
       }
       @include utility.sp {
         text-align: center;

@@ -103,13 +103,15 @@
         word-break: auto-phrase;
         @include utility.sp {
           font-size: 0.12rem;
-          padding: 0 2% 10% 2%;
+          padding: 0% 0% 10% 0%;
           line-height: 0.17rem;
           word-break: break-all;
         }
 
-        & span {
-          display: block;
+        & > span {
+          @include utility.sp {
+            display: block;
+          }
         }
       }
     }
