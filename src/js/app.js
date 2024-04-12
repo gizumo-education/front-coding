@@ -1,17 +1,28 @@
 import Swiper from 'swiper/bundle';
+import 'swiper/css';
 
-const swiper = new Swiper(".p-newOffers__inner",{
+const swiper = new Swiper(".swiper",{
   loop: true,
   centeredSlides: false,
-  slidesPerView: 4,
+  slidesPerView: 1,
   slidesPerGroup: 1,
-  speed: 600,
+  speed: 400,
   effect: 'slide',
   direction: 'horizontal',
+  spaceBetween: 0,
   navigation: {
     nextEl: ".p-newOffers__postButton",
     prevEl: ".p-newOffers__preButton",
   },
+  breakpoints: {
+    768: {
+      spaceBetween: window.innerWidth / 80,
+      slidesPerView: 4,
+    },
+    1200: {
+      spaceBetween: 20,
+    }
+  }
 });
 
 window.onload = function () {

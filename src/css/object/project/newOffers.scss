@@ -44,7 +44,7 @@
     position: absolute;
     top: 125px;
     transition: .3s;
-    z-index: 1;
+    z-index: 2;
 
     @include utility.tab {
       width: .6rem;
@@ -103,7 +103,7 @@
     top: 125px;
     right: 0;
     transition: .3s;
-    z-index: 1;
+    z-index: 2;
 
     @include utility.tab {
       width: .6rem;
@@ -155,11 +155,9 @@
   .swiper-wrapper {
     display: flex;
     margin-top: 25px;
-    gap: 20px;
 
     @include utility.tab {
       margin-top: .25rem;
-      gap: .2rem;
     }
 
     @include utility.sp {
@@ -260,12 +258,6 @@
     @include utility.sp {
       @include utility.font(.14rem, "Noto Sans JP", var.$regular, .2rem);
     }
-    }
-  }
-
-  &__spNotShow {
-    @include utility.sp {
-      display: none;
     }
   }
 
