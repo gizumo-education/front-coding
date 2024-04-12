@@ -134,24 +134,26 @@
       height: .06rem;
       background-color: utility.$black;
       border-radius: .03rem;
+      transition: all 0.3s;
     }
   }
 
   &__line--1.open {
     @include utility.sp {
-      transform: rotate(30deg);
+      transform: translateY(.16rem) rotate(45deg);
     }
   }
 
   &__line--2.open {
     @include utility.sp {
-      transform: rotate(30deg);
+      opacity: 0;
+      transform: rotate(180deg);
     }
   }
 
   &__line--3.open {
     @include utility.sp {
-      transform: rotate(30deg);
+      transform: translateY(-.16rem) rotate(-45deg);
     }
   }
 
@@ -159,7 +161,6 @@
     display: none;
     
     @include utility.sp {
-      // display: none!important;
       display: block;
       width: 100%;
       height: 5.54rem;
@@ -169,6 +170,7 @@
       top: .7rem;
       right: -100%;
       overflow-y: auto;
+      transition: all 0.3s;
     }
   
     & li {
