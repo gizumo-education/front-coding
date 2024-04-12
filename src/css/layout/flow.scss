@@ -1,0 +1,80 @@
+@use "../foundation/variables" as var;
+
+.p-flow {
+  text-align: center;
+  margin-top: 105px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  h1 {
+    font-size: 25px;
+    font-weight: var.$bold;
+  }
+  ul {
+    margin-top: 51px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+    justify-content: center;
+    grid-gap: 20px;
+  }
+  &__box {
+    position: relative;
+    height: 360px;
+    text-align: center;
+    position: relative;
+    border: 2.27px solid var.$pink;
+    border-radius: 13px;
+    &::after {
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: 100.1%;
+      top: 50%;
+      border-left: 20px solid var.$pink;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      content: "";
+    }
+    &:first-child::after {
+      display: none;
+    }
+    &__step {
+      position: absolute;
+      display: grid;
+      place-items: center;
+      width: 60px;
+      height: 60px;
+      background-color: var.$pink;
+      text-align: left;
+      font-size: 16px;
+      font-weight: var.$bold;
+      text-align: center;
+      color: var.$white;
+      border-radius: 26em;
+      line-height: 19px;
+      margin: 10px;
+    }
+    img {
+      margin-top: 60px;
+      width: 102.29px;
+      height: 100px;
+    }
+    h2 {
+      display: grid;
+      place-items: center;
+      width: 216px;
+      height: 60px;
+      line-height: 30px;
+      font-size: 24px;
+      margin: 20px auto 0 auto;
+      font-weight: var.$bold;
+    }
+    p {
+      display: block;
+      width: 237px;
+      height: 60px;
+      line-height: 20px;
+      margin: 18px auto 0 auto;
+      text-align: left;
+      font-size: 14px;
+    }
+  }
+}

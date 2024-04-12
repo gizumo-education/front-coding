@@ -1,0 +1,39 @@
+@use "../foundation/variables" as var;
+
+.p-features {
+  width: 1180px;
+  height: 478px;
+  margin: 106px auto 0 auto;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  &__title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: var.$bold;
+  }
+  &__flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 570px);
+    height: 400px;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 53px;
+    &__box {
+      background-color: var.$blockPink;
+      text-align: center;
+      h1 {
+        font-size: 24px;
+        font-weight: var.$bold;
+        display: block;
+        margin-top: 40px;
+        color: var.$pink;
+      }
+      p {
+        font-size: 14px;
+        display: block;
+        margin: 36px auto 0 auto;
+        width: 400px;
+        overflow-wrap: break-word;
+      }
+    }
+  }
+}

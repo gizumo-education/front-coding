@@ -1,0 +1,52 @@
+@use "../foundation/variables" as var;
+
+.p-main {
+  position: relative;
+  background-color: var.$navy;
+  background-image: url(../img/picture/woman.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: content-box;
+  height: 500px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+  &__img {
+    position: absolute;
+    left: 830px;
+    top: 56px;
+  }
+
+  &__text {
+    position: absolute;
+    color: var.$white;
+    font-size: 50px;
+    font-weight: bold;
+    left: 670px;
+    top: 265px;
+    text-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+  }
+
+  &__offer {
+    width: 391px;
+    height: 69px;
+    position: absolute;
+    background-color: var.$white;
+    text-align: center;
+    left: 851px;
+    top: 389px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.3px solid var.$emeraldGreen;
+    border-radius: 11px;
+    &__text {
+      color: var.$emeraldGreen;
+      font-size: 20px;
+      &__num {
+        color: var.$emeraldGreen;
+        font-size: 40px;
+        font-weight: var.$bold;
+      }
+    }
+  }
+}

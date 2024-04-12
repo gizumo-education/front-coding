@@ -1,0 +1,52 @@
+@use "../foundation/variables" as var;
+
+.p-useful {
+  text-align: center;
+  margin-top: 105px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  h1 {
+    font-size: 25px;
+    font-weight: var.$bold;
+  }
+  ul {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 380px);
+    justify-content: center;
+    grid-gap: 20px;
+  }
+  li {
+    height: 240px;
+    border-radius: 20px;
+  }
+  &__manual {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/picture/manual.jpg);
+  }
+  &__knowledge {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/picture/knowledge.jpg);
+  }
+  h2 {
+    color: var.$white;
+    font-size: 24px;
+    font-weight: var.$bold;
+    margin-top: 71px;
+  }
+  p {
+    color: var.$white;
+    font-size: 16px;
+    display: block;
+    margin: 44px auto 0 auto;
+    width: 256px;
+  }
+  &__submit {
+    margin-top: 80px;
+    width: 420px;
+    height: 60px;
+    &:hover {
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+  }
+}

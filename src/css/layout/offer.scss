@@ -1,0 +1,121 @@
+@use "../foundation/variables" as var;
+
+.p-offer {
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  height: 636px;
+  background-color: var.$bgLightBlue;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  &__container {
+    width: 1180px;
+    align-items: center;
+    margin: 0 auto;
+    ul {
+      margin-top: 25px;
+      display: flex;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    li {
+      width: 280px;
+      margin-left: 20px;
+      position: relative;
+    }
+    &__btn_left {
+      content: "";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      background-color: var.$white;
+      opacity: 0.7;
+      border-radius: 50%;
+      margin-top: 70px;
+      &:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        transform: rotate(-45deg);
+        width: 20px;
+        height: 20px;
+        border-top: 2px solid var.$black;
+        border-left: 2px solid var.$black;
+      }
+    }
+    &__btn_right {
+      content: "";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      background-color: var.$white;
+      opacity: 0.7;
+      border-radius: 50%;
+      margin-top: 70px;
+      left: 78.2%;
+      &:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 35%;
+        left: 28%;
+        transform: rotate(135deg);
+        width: 20px;
+        height: 20px;
+        border-top: 2px solid var.$black;
+        border-left: 2px solid var.$black;
+      }
+    }
+
+    &__text {
+      font-size: 25px;
+      padding-top: 64px;
+      display: block;
+    }
+    &__img {
+      height: 200px;
+      border-radius: 9px;
+      display: block;
+    }
+    &__explain {
+      font-size: 16px;
+      overflow-wrap: break-word;
+      padding-top: 8px;
+    }
+    &__flex {
+      display: flex;
+      height: 21px;
+      font-size: 14px;
+      padding-top: 8px;
+      &__title {
+        display: grid;
+        place-items: center;
+        background-color: var.$lightPink;
+        width: 60px;
+      }
+      &__text {
+        display: grid;
+        place-items: center;
+        margin-left: 10px;
+      }
+    }
+    &__submit {
+      width: 360px;
+      height: 60px;
+      display: block;
+      margin: 60px auto 0 auto;
+      &:hover {
+        opacity: 0.8;
+        transition: 0.3s;
+      }
+    }
+  }
+}
