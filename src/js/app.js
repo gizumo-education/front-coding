@@ -1,6 +1,4 @@
-// import { Swiper } from "./library/swiper-bundle.min";
-
-const swiper = new Swiper(".swiper", {});
+const swiper = new Swiper(".swiper",{});
 
 window.onload = function () {
   const hamburger = document.getElementById('hamburger');
