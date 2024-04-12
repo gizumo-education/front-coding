@@ -1,7 +1,25 @@
+@use "../foundation/variables" as var;
 .p-content {
-  background-image: url(../img/picture/background.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/picture/humans.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 300px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+  h1 {
+    position: absolute;
+    color: var.$white;
+    font-size: 25px;
+    font-weight: var.$bold;
+  }
+  br {
+    display: block;
+    content: "";
+    margin-top: 21px;
+  }
 }
