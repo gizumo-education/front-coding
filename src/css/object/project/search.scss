@@ -12,6 +12,10 @@
     flex-direction: column;
     padding: 40px;
     border-radius: 10px;
+
+    &--second {
+      margin-top: 150px;
+      }
   }
 
   & h2 {
@@ -34,7 +38,6 @@
   &__inputbox {
     position: relative;
     margin-left: 15px;
-    margin-top: 26px;
   }
 
   &__selectboxes:first-child {
@@ -67,6 +70,7 @@
     &__wrap {
       display: flex;
       flex-direction: row;
+      margin-top: 26px;
     }
   }
 
@@ -91,8 +95,10 @@
     width: 140px;
     height: 60px;
     border-radius: 30px;
-    padding: 0 0 0 14px;
-    margin: 26px 0 0 15px;
+    padding-left: 14px;
+    margin-left: 15px;
+    border: none;
+
 
     &__text {
       color: var.$white;
@@ -102,8 +108,5 @@
       font-family: 'Noto sans JP',sans-serif;
     }
   }
-  &__second {
-    margin-top: 150px;
-    margin-bottom: 200px;
-    }
+  
   }

@@ -9,7 +9,7 @@
     text-align: center;
   }
 
-  & h6 {
+  & h2 {
     font-family: 'Noto sans JP',sans-serif;
     font-size: 25px;
     font-weight: 700;
@@ -26,7 +26,7 @@
     &--2 {
       height: 240px;
       width: 380px;
-      padding: 71px 64px 55px 60px;
+      padding-top: 71px;
       background-color: rgba(0, 0, 0, 0.5);
       background-blend-mode: overlay;
       background-size: cover;

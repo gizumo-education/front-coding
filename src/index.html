@@ -53,7 +53,7 @@
         <h2>お仕事検索</h2>
         <p class="p-search__subtitle">働きたい職種・地域・希望給与を入れて検索！</p>
         <div class="p-search__selectbox__wrap">
-          <div class="p-search__selectboxes">
+          <form class="p-search__selectboxes">
             <select name="job" id="" class="p-search__selectbox">
               <option value="1" selected>医療事務</option>
               <option value="2">調剤事務</option>
@@ -63,9 +63,9 @@
               <option value="6">看護補助・看護助手</option>
               <option value="7">病院内SE</option>
             </select>
-          </div>
+          </form>
 
-          <div class="p-search__selectboxes">
+          <form class="p-search__selectboxes">
             <select name="prefecture" id="" class="p-search__selectbox">
               <option value="1">茨城県</option>
               <option value="2">神奈川県</option>
@@ -75,9 +75,9 @@
               <option value="6" selected>東京都</option>
               <option value="7">栃木県</option>
             </select>
-          </div>
+          </form>
 
-          <div class="p-search__selectboxes">
+          <form class="p-search__selectboxes">
             <select name="salary" id="" class="p-search__selectbox">
               <option value="1">月給17万〜</option>
               <option value="2">月給18万〜</option>
@@ -87,20 +87,21 @@
               <option value="6">月給22万〜</option>
               <option value="7">月給23万〜</option>
             </select>
-          </div>
+          </form>
+
           <input type="text" placeholder="キーワード・企業名・スキルなど" class="p-search__inputbox">
-          <a href="#" class="p-search__button">
+          <button class="p-search__button">
             <img src="./img/icon/sarch_icon.png" alt="">
             <span class="p-search__button__text">検索する</span>
-          </a>
+          </button>
         </div>
       </div>
     </div>
     <!--新着求人-->
     <div class="p-recruit">
-      <div>
-        <h3 class="l-inner">新着求人</h3>
-        <ul class="p-recruit__wrap l-inner">
+      <div class="l-inner">
+        <h2>新着求人</h2>
+        <ul class="p-recruit__wrap">
           <li>
             <img src="./img/picture/recruie_1.jpg" alt="">
             <div class="p-recruit__arrow p-recruit__arrow--first">
@@ -229,7 +230,7 @@
     <!--特徴-->
     <div class="p-feature">
       <div class="p-feature__wrap l-inner">
-        <h4>ギズジョブの４つの特徴</h4>
+        <h2>ギズジョブの４つの特徴</h2>
         <div class="p-feature__contents">
           <div class="p-feature__content">
             <p class="p-feature__content__title">WEB上で応募完結</p>
@@ -262,7 +263,7 @@
     <!--流れ-->
     <div class="p-flow">
       <div class="p-flow__wrap l-inner">
-        <h5>転職までの流れ</h5>
+        <h2>転職までの流れ</h2>
         <ul class="p-flow__contents">
           <li class="p-flow__content">
             <div class="p-flow__nmb">
@@ -275,8 +276,8 @@
               <p class="p-flow__content__title">エントリーシートの<br>作成</p>
               <p class="p-flow__content__text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ</p>
             </div>
+            <div class="p-flow__triangle p-flow__triangle--1"></div>
           </li>
-          <div class="p-flow__triangle p-flow__triangle--1"></div>
 
 
           <li class="p-flow__content">
@@ -290,8 +291,9 @@
               <p class="p-flow__content__title">気になる企業の<br>ピックアップ</p>
               <p class="p-flow__content__text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
             </div>
+            <div class="p-flow__triangle p-flow__triangle--2"></div>
+
           </li>
-          <div class="p-flow__triangle p-flow__triangle--2"></div>
 
 
 
@@ -307,8 +309,9 @@
               <p class="p-flow__content__text p-flow__content__text--b">
                 ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
             </div>
+            <div class="p-flow__triangle p-flow__triangle--3"></div>
+
           </li>
-          <div class="p-flow__triangle p-flow__triangle--3"></div>
 
 
           <li class="p-flow__content">
@@ -331,23 +334,23 @@
     <!--お役立ちコンテンツ-->
     <div class="p-article">
       <div class="p-article__wrap l-inner">
-        <h6>転職お役立ちコンテンツ</h6>
+        <h2>転職お役立ちコンテンツ</h2>
         <div class="p-article__contents">
           <div class="p-article__contents--1">
             <h3>転職マニュアル</h3>
-            <p>転職活動の基礎知識、面接対策など
+            <p>転職活動の基礎知識、面接対策など<br>
               転職のコツをお教えします</p>
           </div>
 
           <div class="p-article__contents--2">
             <h3>医療事務業界の豆知識</h3>
-            <p>スキルアップ・労働環境、給与事情など
+            <p>スキルアップ・労働環境、給与事情など<br>
               知って得する業界の豆知識を公開</p>
           </div>
 
           <div class="p-article__contents--1">
             <h3>転職マニュアル</h3>
-            <p>転職活動の基礎知識、面接対策など
+            <p>転職活動の基礎知識、面接対策など<br>
               転職のコツをお教えします</p>
           </div>
         </div>
@@ -359,11 +362,11 @@
       </div>
     </div>
     <!--お仕事検索-->
-    <div class="p-search__second">
-      <div class="l-inner p-search__wrap">
-        <p class="p-search__title">お仕事検索</p>
+    <div class="p-search">
+      <div class="l-inner p-search__wrap p-search__wrap--second">
+        <h2>お仕事検索</h2>
         <p class="p-search__subtitle">働きたい職種・地域・希望給与を入れて検索！</p>
-        <div class="p-search__selectbox__wrap">
+        <form class="p-search__selectbox__wrap">
           <div class="p-search__selectboxes">
             <select name="job" id="" class="p-search__selectbox">
               <option value="1" selected>医療事務</option>
@@ -400,11 +403,11 @@
             </select>
           </div>
           <input type="text" placeholder="キーワード・企業名・スキルなど" class="p-search__inputbox">
-          <a href="#" class="p-search__button">
+          <button class="p-search__button">
             <img src="./img/icon/sarch_icon.png" alt="">
             <span class="p-search__button__text">検索する</span>
-          </a>
-        </div>
+          </button>
+        </form>
       </div>
     </div>
   </main>
