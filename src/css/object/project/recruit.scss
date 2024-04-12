@@ -1,0 +1,148 @@
+@use '/src/css/foundation/variables' as var;
+@use '/src/css/layout/inner.scss';
+@use '/src/css/object/component/button.scss';
+
+.p-recruit {
+  background-color: var.$recruitBG;
+  margin-top: 60px;
+  padding: 64px 0 84px 0;
+
+  & h2 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30.2px;
+    font-family: 'Noto sans JP', sans-serif;
+  }
+
+  &__wrap {
+    display: flex;
+    position: relative;
+    margin-top: 25px;
+
+    & p {
+      font-family: 'Noto sans JP', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-top: 8px;
+    }
+
+    & img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    & li {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+
+  &__table {
+    font-family: 'Noto sans JP', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 6px;
+
+    & tr {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+
+      &:nth-child(3n+1) {
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    & th {
+      display: block;
+      line-height: 20.2px;
+      background-color: var.$recruit_pink;
+      text-align: center;
+      width: 60px;
+      height: 21px;
+    }
+
+    & td {
+      display: block;
+      margin-left: 10px;
+      line-height: 16.9px;
+    }
+  }
+
+
+  &__btn {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    background-color: var.$button;
+    width: 360px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 0 0 14px;
+    justify-content: center;
+
+    &__text {
+      color: var.$white;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 700;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: var.$white;
+    opacity: 70%;
+    border-radius: 30px;
+    top: 70px;
+    right: 0;
+
+    &--first {
+      left: 0px;
+    }
+
+    &__btn {
+      position: relative;
+      display: inline-block;
+      padding-left: 20px;
+      border: none;
+      background: transparent;
+      position: absolute;
+
+
+      &:before {
+        content: '';
+        width: 21px;
+        height: 21px;
+        border: 0;
+        border-top: solid 0.71px var.$black;
+        border-right: solid 0.71px var.$black;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        bottom: 0;
+        margin: auto;
+      }
+
+      &--first::before {
+        transform: rotate(-135deg);
+        left: 25px;
+      }
+    }
+  }
+}

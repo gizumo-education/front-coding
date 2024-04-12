@@ -1,0 +1,128 @@
+@use '/src/css/foundation/variables' as var;
+@use '/src/css/layout/inner.scss';
+@use '/src/css/object/component/button.scss';
+
+.p-flow {
+  &__triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid var.$pink;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%); 
+  }
+
+  &__wrap {
+    margin-top: 105px;
+    position: relative;
+  }
+
+  & h2 {
+    font-family: 'Noto sans JP', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &__contents {
+    margin-top: 50px;
+    display: flex;
+  }
+
+  &__content {
+    position: relative;
+    width: 280px;
+    height: 360px;
+    border: 2.27px solid var.$pink;
+    border-radius: 10px;
+    margin-left: 20px;
+
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &__texts {
+      margin-left: 20px;
+      width: 237px;
+      position: absolute;
+      top: 180px;
+
+      &--b {
+        top: 193px;
+      }
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      font-family: sans-serif;
+    }
+
+    &__text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-top: 18px;
+
+      &--b {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__nmb {
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    background-color: var.$button;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    justify-content: center;
+
+    &__text {
+      color: var.$white;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 700;
+    }
+  }
+
+  &__img {
+    position: absolute;
+
+    &--1 {
+      top: 60px;
+      left: 98px;
+    }
+
+    &--2 {
+      top: 70px;
+      left: 95px;
+    }
+
+    &--3 {
+      top: 60px;
+      left: 90px;
+    }
+
+    &--4 {
+      top: 55px;
+      left: 70px;
+    }
+  }
+
+}

@@ -1,0 +1,30 @@
+@use '/src/css/foundation/variables' as var;
+@use '/src/css/layout/inner.scss';
+@use '/src/css/object/component/button.scss';
+
+.p-ads {
+  background-color: var.$black;
+
+  &__wrap {
+    height: 300px;
+    background-image: url('../img/picture/ads_bg.jpg');
+    padding: 104px 0;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
+
+    & p {
+      font-family: 'Noto sans JP',sans-serif;
+      font-size: 25px;
+      color: var.$white;
+      font-weight: 700;
+      line-height: 36px;
+      text-align: center;
+      margin-top: 20px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
