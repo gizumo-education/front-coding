@@ -29,10 +29,16 @@ window.onload = function () {
   const hamburger = document.getElementById('hamburger');
   const hamburgerLine = hamburger.querySelectorAll('span');
   const spMenu = document.getElementById('spMenu');
+  const overlay = document.getElementById('overlay');
 
   hamburger.addEventListener('click', function () {
     spMenu.classList.toggle('open');
     hamburgerLine.forEach((line) => line.classList.toggle('open'));
+    if (overlay.style.visibility === "hidden") {
+      overlay.style.visibility = "visible";
+    } else {
+      overlay.style.visibility = "hidden";
+    }
 
     var body = document.body;
     var bodyStyle = window.getComputedStyle(body);
@@ -45,6 +51,8 @@ window.onload = function () {
     }
   });
 
+
+
   const headerHeight = document.querySelector('header').offsetHeight;
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -56,6 +64,7 @@ window.onload = function () {
       const hamburger = document.getElementById('hamburger');
       const hamburgerLine = hamburger.querySelectorAll('span');
       const spMenu = document.getElementById('spMenu');
+      const overlay = document.getElementById('overlay');
       var body = document.body;
       var bodyStyle = window.getComputedStyle(body);
       window.scrollTo({
@@ -64,6 +73,7 @@ window.onload = function () {
       });
       spMenu.classList.toggle('open');
       hamburgerLine.forEach((line) => line.classList.toggle('open'));
+      overlay.style.visibility = "hidden";
       if (bodyStyle.overflow === "hidden") {
         body.style.height = "";
         body.style.overflow = "";
@@ -73,4 +83,17 @@ window.onload = function () {
       }
     });
   });
+
+  overlay.addEventListener('click', function() {
+    spMenu.classList.toggle('open');
+    hamburgerLine.forEach((line) => line.classList.toggle('open'));
+    overlay.style.visibility = "hidden";
+    if (bodyStyle.overflow === "hidden") {
+      body.style.height = "";
+      body.style.overflow = "";
+    } else {
+      body.style.height = "100%";
+      body.style.overflow = "hidden";
+    }
+  })
 };

@@ -2,6 +2,16 @@
 @use '../../foundation/variables' as var;
 // ページ上部のキービジュアルに関するスタイル
 
+.overlay {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: #00f;
+  opacity: 0;
+  position: fixed;
+  top: 100px;
+  z-index: 9;
+}
+
 .p-keyvisual {
   width: 100%;
   height: 500px;
