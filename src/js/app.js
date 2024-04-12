@@ -1,4 +1,18 @@
-const swiper = new Swiper(".swiper",{});
+import Swiper from 'swiper/bundle';
+
+const swiper = new Swiper(".p-newOffers__inner",{
+  loop: true,
+  centeredSlides: false,
+  slidesPerView: 4,
+  slidesPerGroup: 1,
+  speed: 600,
+  effect: 'slide',
+  direction: 'horizontal',
+  navigation: {
+    nextEl: ".p-newOffers__postButton",
+    prevEl: ".p-newOffers__preButton",
+  },
+});
 
 window.onload = function () {
   const hamburger = document.getElementById('hamburger');
