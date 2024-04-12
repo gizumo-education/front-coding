@@ -79,6 +79,8 @@
     font-weight: var.$bold;
     border:none;
     color: var.$white;
+    transition: 0.3s;
+    opacity: 1;
 
     &:hover {
       cursor: pointer;

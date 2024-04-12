@@ -3,7 +3,7 @@
 .p-contents {
   &__title {
     font-weight: var.$bold;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     margin-top: 105px;
     margin-bottom: 50px;
@@ -61,6 +61,25 @@
         font-size: 15px;
         font-weight: var.$regular;
       }
+  }
+}
+&__more{
+  display: block;
+  width: 360px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: var.$pink;
+  font-size: 18px;
+  font-weight: var.$bold;
+  border: none;
+  color: var.$white;
+  margin: 60px auto 67px auto;
+  transition: 0.3s;
+  opacity: 1;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
   }
 }
 }

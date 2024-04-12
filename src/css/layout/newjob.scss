@@ -17,6 +17,7 @@
     display: inline-block;
     font-size: 25px;
     margin-top: 64px; 
+    margin-bottom: 24px;
 
   }
 
@@ -129,11 +130,13 @@
     height: 60px;
     border-radius: 30px;
     background-color: var.$pink;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: var.$bold;
     border: none;
     color: var.$white;
     margin: 60px auto 67px auto;
+    transition: 0.3s;
+    opacity: 1;
 
     &:hover {
       cursor: pointer;
