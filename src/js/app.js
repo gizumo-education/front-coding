@@ -88,6 +88,8 @@ window.onload = function () {
     spMenu.classList.toggle('open');
     hamburgerLine.forEach((line) => line.classList.toggle('open'));
     overlay.style.visibility = "hidden";
+    var body = document.body;
+    var bodyStyle = window.getComputedStyle(body);
     if (bodyStyle.overflow === "hidden") {
       body.style.height = "";
       body.style.overflow = "";
