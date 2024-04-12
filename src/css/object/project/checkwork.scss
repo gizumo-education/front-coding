@@ -4,87 +4,514 @@
   z-index: 1;
 }
 
-.p-checkwork {
-  background-color: #deeef9;
-  margin: 0 auto;
-  margin-top: 40px;
-  width: 1180px;
-  height: 240px;
-  border-radius: 15px;
-  padding: 0 40px 0 40px;
+.p-responsive__checkwork {
+  @include utility.sp {
+    width: 100%;
+  }
 
-  & > .p-text__title {
-
-    text-align: center;
-    font-size: 20px;
-
-    & > .p-main__title {
-      font-size: 25px;
-      font-weight: 700;
-      padding: 20px;
+  //画面上部
+  & > .p-checkwork {
+    background-color: #deeef9;
+    margin: 0 auto;
+    width: 1180px;
+    height: 240px;
+    border-radius: 15px;
+    padding: 0 40px 0 40px;
+    @include utility.pc {
+      margin-top: 66px;
     }
-
-    & > .p-sub__title {
+    @include utility.tab {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 5%;
+    }
+    @include utility.sp {
+      width: 3.7rem;
+      height: 2.4rem;
+      margin-top: 0.3rem;
+      border-radius: 0.07rem;
+      box-sizing: border-box;
+      padding: 0 0.2rem 0 0.2rem;
+    }
+  
+    & > .p-text__title {
+  
+      text-align: center;
       font-size: 20px;
-      font-weight: 400;
+  
+      & > .p-main__title {
+        font-size: 25px;
+        font-weight: 700;
+        padding-top: 44px;
+        @include utility.sp {
+          font-size: 0.22rem;
+          padding: 3%;
+        }
+      }
+  
+      & > .p-sub__title {
+        @include utility.pc {
+          font-size: 20px;
+          font-weight: 400;
+          padding-top: 21px;
+        }
+        @include utility.tab {
+          margin-top: 0.21rem;
+        }
+        @include utility.sp {
+          font-size: 0.14rem;
+          margin-top: 0.1rem;
+        }
+      }
+    }
+  
+    & > .p-total__select__box {
+      @include utility.pc {
+        display: flex;
+        margin-top: 30px;
+      }
+      @include utility.tab {
+        display: flex;
+        margin-top: 3%;
+        justify-content: center;
+      }
+      @include utility.sp {
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+      }
+  
+      & > .p-responsive__set__select__box {
+        @include utility.tab {
+          display: flex;
+        }
+        @include utility.sp {
+          display: flex;
+          justify-content: center;
+          margin-top: 0.15rem;
+        }
+  
+        & > .p-selectbox__first {
+          @include utility.pc {
+            border-radius: 10px;
+            width: 200px;
+            height: 60px;
+            font-size: 18px;
+            font-weight: 400;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            padding: 10px;
+          }
+          @include utility.tab {
+            border-radius: 0.07rem;
+            width: 2rem;
+            font-size: 0.18rem;
+            font-weight: 400;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            background-position: right 5% center;
+            padding: 3%;
+          }
+          @include utility.sp {
+            border-radius: 0.07rem;
+            width: 1.0rem;
+            height: 0.3rem;
+            font-size: 0.12rem;
+            background-position: right 4% center;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            padding-left: 0.05rem;
+          }
+        }
+    
+        & > .p-selectbox__second {
+          @include utility.pc {
+            padding: 10px;
+            border-radius: 10px;
+            width: 200px;
+            height: 60px;
+            font-size: 18px;
+            font-weight: 400;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            margin-left: 10px;
+          }
+          @include utility.tab {
+            border-radius: 0.07rem;
+            width: 2rem;
+            font-size: 0.18rem;
+            font-weight: 400;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            background-position: right 5% center;
+            padding: 3%;
+            margin-left: 5%;
+          }
+          @include utility.sp {
+            border-radius: 0.07rem;
+            width: 1.0rem;
+            height: 0.3rem;
+            font-size: 0.12rem;
+            background-position: right 4% center;
+            padding-left: 0.05rem;
+            margin-left: 3%;
+            appearance: none;
+            border-color:palevioletred;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+          }
+        }
+    
+        & > .p-selectbox__third {
+          @include utility.pc {
+            padding: 10px;
+            border-radius: 10px;
+            width: 200px;
+            height: 60px;
+            font-size: 18px;
+            font-weight: 400;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            margin-left: 10px;
+          }
+          @include utility.tab {
+            border-radius: 0.07rem;
+            width: 2rem;
+            font-size: 0.18rem;
+            font-weight: 400;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            background-position: right 5% center;
+            padding: 3%;
+            margin-left: 5%;
+          }
+          @include utility.sp {
+            border-radius: 0.07rem;
+            width: 1.0rem;
+            height: 0.3rem;
+            font-size: 0.12rem;
+            background-position: right 4% center;
+            padding-left: 0.05rem;
+            margin-left: 3%;
+            border-color:palevioletred;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            appearance: none;
+          }
+        }
+      }
+  
+      & > .p-one__point__selectbox {
+        @include utility.tab {
+          display: flex;
+        }
+        @include utility.sp {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 5%;
+        }
+        & > .p-selectbox__fourth {
+          @include utility.pc {
+            padding: 10px;
+            border-radius: 10px;
+            width: 300px;
+            height: 60px;
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 20px;
+            border: palevioletred solid;
+          }
+          @include utility.tab {
+            border-radius: 0.07rem;
+            width: 3.5rem;
+            font-size: 0.18rem;
+            font-weight: 400;
+            border: palevioletred solid;
+            margin-left: 5%;
+          }
+          @include utility.sp {
+            border-radius: 0.07rem;
+            width: 3.2rem;
+            height: 0.3rem;
+            font-size: 0.14rem;
+            font-weight: 400;
+            border: palevioletred solid;
+            padding: 0.1rem;
+          }
+        }
+      }
     }
   }
 
-  & > .p-total__select__box {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-
-    & > .p-selectbox__first {
-      border-radius: 10px;
-      width: 200px;
-      height: 60px;
-      font-size: 18px;
-      font-weight: 400;
-      border-color:palevioletred;
-      appearance: none;
-      background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
-      background-repeat: no-repeat;
-      background-position: right 10px center;
-      padding: 10px;
+  //画面下部
+  & > .p-checkwork__second {
+    background-color: #deeef9;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 1180px;
+    height: 240px;
+    border-radius: 15px;
+    padding: 0 40px 0 40px;
+    @include utility.pc {
+      margin-top: 155px;
+      margin-bottom: 100px;
     }
-
-    & > .p-selectbox__second {
-      padding: 10px;
-      border-radius: 10px;
-      width: 200px;
-      height: 60px;
-      font-size: 18px;
-      font-weight: 400;
-      border-color:palevioletred;
-      appearance: none;
-      background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
-      background-repeat: no-repeat;
-      background-position: right 10px center;
+    @include utility.tab {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 5%;
+      margin-bottom: 1rem;
     }
-
-    & > .p-selectbox__third {
-      padding: 10px;
-      border-radius: 10px;
-      width: 200px;
-      height: 60px;
-      font-size: 18px;
-      font-weight: 400;
-      border-color:palevioletred;
-      appearance: none;
-      background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
-      background-repeat: no-repeat;
-      background-position: right 10px center;
+    @include utility.sp {
+      width: 3.7rem;
+      height: 2.4rem;
+      margin-top: 5.1rem;
+      margin-bottom: 1rem;
+      border-radius: 0.07rem;
+      box-sizing: border-box;
+      padding: 0 0.2rem 0 0.2rem;
     }
-
-    & > .p-selectbox__fourth {
-      padding: 20px;
-      border-radius: 10px;
-      width: 300px;
-      height: 60px;
-      font-size: 18px;
-      font-weight: 400;
-      border-color:palevioletred;
+  
+    & > .p-text__title__second {
+  
+      text-align: center;
+      font-size: 20px;
+  
+      & > .p-main__title__second {
+        font-size: 25px;
+        font-weight: 700;
+        padding-top: 44px;
+        @include utility.sp {
+          font-size: 0.22rem;
+          padding: 3%;
+        }
+      }
+  
+      & > .p-sub__title__second {
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 21px;
+        @include utility.tab {
+          padding-top: 0.21rem;
+        }
+        @include utility.sp {
+          padding-top: 3%;
+          font-size: 0.14rem;
+        }
+      }
+    }
+  
+    & > .p-total__select__box__second {
+      @include utility.pc {
+        display: flex;
+        margin-top: 30px;
+      }
+      @include utility.tab {
+        display: flex;
+        margin-top: 3%;
+        justify-content: center;
+      }
+      @include utility.sp {
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 5%;
+        text-align: center;
+      }
+  
+      & > .p-responsive__set__select__box__second {
+        @include utility.tab {
+          display: flex;
+        }
+        @include utility.sp {
+          display: flex;
+          justify-content: center;
+        }
+  
+        & > .p-selectbox__first__second {
+          @include utility.pc {
+            border-radius: 10px;
+            width: 200px;
+            height: 60px;
+            font-size: 18px;
+            font-weight: 400;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            padding: 10px;
+          }
+          @include utility.tab {
+            border-radius: 0.07rem;
+            width: 2rem;
+            font-size: 0.18rem;
+            font-weight: 400;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            background-position: right 5% center;
+            padding: 3%;
+          }
+          @include utility.sp {
+            border-radius: 0.07rem;
+            width: 1rem;
+            height: 0.3rem;
+            font-size: 0.12rem;
+            background-position: right 4% center;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            padding-left: 0.05rem;
+          }
+        }
+    
+        & > .p-selectbox__second__second {
+          @include utility.pc {
+            padding: 10px;
+            border-radius: 10px;
+            width: 200px;
+            height: 60px;
+            font-size: 18px;
+            font-weight: 400;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            margin-left: 10px;
+          }
+          @include utility.tab {
+            border-radius: 0.07rem;
+            width: 2rem;
+            font-size: 0.18rem;
+            font-weight: 400;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            background-position: right 5% center;
+            padding: 3%;
+            margin-left: 5%;
+          }
+          @include utility.sp {
+            border-radius: 0.07rem;
+            width: 1rem;
+            height: 0.3rem;
+            font-size: 0.12rem;
+            background-position: right 4% center;
+            padding-left: 0.05rem;
+            margin-left: 3%;
+            appearance: none;
+            border-color:palevioletred;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+          }
+        }
+    
+        & > .p-selectbox__third__second {
+          @include utility.pc {
+            padding: 10px;
+            border-radius: 10px;
+            width: 200px;
+            height: 60px;
+            font-size: 18px;
+            font-weight: 400;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            margin-left: 10px;
+          }
+          @include utility.tab {
+            border-radius: 0.07rem;
+            width: 2rem;
+            font-size: 0.18rem;
+            font-weight: 400;
+            border-color:palevioletred;
+            appearance: none;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            background-position: right 5% center;
+            padding: 3%;
+            margin-left: 5%;
+          }
+          @include utility.sp {
+            border-radius: 0.07rem;
+            width: 1rem;
+            height: 0.3rem;
+            font-size: 0.12rem;
+            background-position: right 4% center;
+            padding-left: 0.05rem;
+            margin-left: 3%;
+            border-color:palevioletred;
+            background-image: url("../img/icon/checkwork-セレクトボックス矢印.png");
+            background-repeat: no-repeat;
+            appearance: none;
+          }
+        }
+      }
+  
+      & > .p-one__point__selectbox__second {
+        @include utility.tab {
+          display: flex;
+        }
+        @include utility.sp {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 5%;
+        }
+        & > .p-selectbox__fourth__second {
+          @include utility.pc {
+            padding: 10px;
+            border-radius: 10px;
+            width: 300px;
+            height: 60px;
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 20px;
+            border: palevioletred solid;
+          }
+          @include utility.tab {
+            border-radius: 0.07rem;
+            width: 3.5rem;
+            font-size: 0.18rem;
+            font-weight: 400;
+            border: palevioletred solid;
+            margin-left: 5%;
+          }
+          @include utility.sp {
+            border-radius: 0.07rem;
+            width: 3.2rem;
+            height: 0.3rem;
+            font-size: 0.14rem;
+            font-weight: 400;
+            border: palevioletred solid;
+            padding: 0.1rem;
+          }
+        }
+      }
     }
   }
 }

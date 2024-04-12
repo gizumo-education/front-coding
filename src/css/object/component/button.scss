@@ -7,7 +7,7 @@
   padding-left: 40px;
   width: 140px;
   height: 60px;
-  font-size: 20px;
+  font-size: 18px;
   background-color: palevioletred;
   color: utility.$white;
   border-radius: 30px;
@@ -15,21 +15,34 @@
   background-repeat: no-repeat;
   background-position: left 10px center;
   transition: 0,3s;
+  margin-left: 10px;
+  @include utility.tab {
+    margin-left: 0.1rem;
+  }
+  @include utility.sp {
+    padding-top: 3%;
+    padding-left: 10%;
+    width: 1.6rem;
+    height: 0.43rem;
+    font-size: 0.17rem;
+    border-radius: 0.2rem;
+    background-size: 15%;
+    margin-top: 5%;
+  }
 }
 
 
 //新着求人一覧をもっと見る&医療事務コラムをもっと見るのボタン
 
 .p-recruitment__width {
-  width: 1180px;
   margin: 0 auto;
   text-align: center;
 
   & > .p-recruitment__button {
-    width: 360px;
+    width: 365px;
     height: 60px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 35px;
     font-size: 18px;
     font-weight: 700;
     color: white;
@@ -38,5 +51,42 @@
     border-radius: 30px;
     text-align: center;
     transition: 0.3s;
+    @include utility.sp {
+      width: 90%;
+      height: 30%;
+      margin: 0 auto;
+      margin: 10% 0 10% 0; 
+      font-size: 0.2rem;
+      font-weight: 700;
+      color: white;
+      padding: 5%;
+      border-radius: 0.5rem;
+    }
+  }
+
+  & > .p-recruitment__button__second {
+    width: 420px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 80px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    padding: 20px;
+    background-color: #de5579;
+    border-radius: 30px;
+    text-align: center;
+    transition: 0.3s;
+    @include utility.sp {
+      width: 90%;
+      height: 30%;
+      margin: 0 auto;
+      margin: 5% 0 10% 0; 
+      font-size: 0.2rem;
+      font-weight: 700;
+      color: white;
+      padding: 5%;
+      border-radius: 0.5rem;
+    }
   }
 }
