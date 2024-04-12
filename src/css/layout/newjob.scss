@@ -4,20 +4,39 @@
   width: 100%;
   height: 636px;
   background-color: var.$bgLightBlue;
-  margin-bottom: 67px; 
+
+  &__inner{
+    display: grid;
+    width: 1080px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
 
   &__jobtext {
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
     font-size: 25px;
-    padding-top: 124px;
-    margin-left: 210px;
+    margin-top: 64px; 
+
   }
 
   &__joblist {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    li {
+      margin: 10px;
+      position: relative; 
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
 
     &__jobdetail {
       width: 280px;
@@ -27,15 +46,57 @@
       }
     }
 
-    li {
-      margin: 10px;
-    }
-
     &__jobcontent {
       display: flex;
       flex-wrap: wrap;
       font-size: 16px;
       margin-top: 8.08px;
+    }
+
+    &__leftbutton {
+      width: 60px;
+      height: 60px;
+      background-color: var.$white;
+      border-radius: 50px;
+      opacity: 0.5;
+      position: absolute;
+      top: 30%;
+      left: 0px; 
+      transform: translateY(-50%);
+      border-style: none;
+
+      &::after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-top: solid 0.7px var.$black;
+        border-right: solid 0.7px var.$black;
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(-135deg);
+      }
+    }
+  
+    &__rightbutton {
+      width: 60px;
+      height: 60px;
+      background-color: var.$white;
+      border-radius: 50px;
+      opacity: 0.5;
+      position: absolute;
+      top: 30%;
+      right: 0px;
+      transform: translateY(-50%);
+      border-style: none;
+
+      &::after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-top: solid 0.7px var.$black;
+        border-right: solid 0.7px var.$black;
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
     }
 
     &__jobdetail dl {
@@ -73,5 +134,9 @@
     border: none;
     color: var.$white;
     margin: 60px auto 67px auto;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

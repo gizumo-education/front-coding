@@ -1,9 +1,10 @@
 @use "../foundation/variables" as var;
 
 .p-gizujob {
+  display: block;
   position: relative;
-  display: inline-block;
-
+  background-size: 100%;
+  
   &::before {
     content: "";
     position: absolute;
@@ -18,6 +19,9 @@
   &__gizujobimg {
     display: block;
     z-index: 2;
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
   }
 
   &__gizujobtext {

@@ -43,7 +43,7 @@
       position: relative;
       display: inline-block;
       vertical-align: top;
-      margin: 0 20px; 
+      margin: 0 10px; 
       justify-content: center;
       align-items: center;
       border-radius: 20px;
@@ -53,11 +53,10 @@
       box-sizing: border-box; 
       padding: 20px; 
       text-align: center; 
-      margin: 0 auto;
 
       &::after {
         top: 45%;
-        left: 100%;
+        left: 100.5%;
         position: absolute;
         border-top: 20px solid transparent;
         border-bottom: 20px solid transparent;
@@ -70,10 +69,6 @@
       }
     }
 
-  
-
-    
-  
     & img {
       width: 102.29px;
       height: 100px;
@@ -94,6 +89,9 @@
       border: none;
       color: var.$white;
       margin: 60px auto 67px auto;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
