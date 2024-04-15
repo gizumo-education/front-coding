@@ -31,6 +31,15 @@ window.onload = function () {
   const hamburgerLine = hamburger.querySelectorAll('span');
   const spMenu = document.getElementById('spMenu');
   const overlay = document.getElementById('overlay');
+  function bodyHiddenSwitch(body, bodyStyle) {
+    if (bodyStyle.overflow === "hidden") {
+      body.style.height = "";
+      body.style.overflow = "";
+    } else {
+      body.style.height = "100%";
+      body.style.overflow = "hidden";
+    }
+  }
 
   hamburger.addEventListener('click', function () {
     spMenu.classList.toggle('open');
@@ -41,15 +50,9 @@ window.onload = function () {
       overlay.style.visibility = "hidden";
     }
 
-    var body = document.body;
-    var bodyStyle = window.getComputedStyle(body);
-    if (bodyStyle.overflow === "hidden") {
-      body.style.height = "";
-      body.style.overflow = "";
-    } else {
-      body.style.height = "100%";
-      body.style.overflow = "hidden";
-    }
+    let body = document.body;
+    let bodyStyle = window.getComputedStyle(body);
+    bodyHiddenSwitch(body, bodyStyle);
   });
 
 
@@ -66,8 +69,8 @@ window.onload = function () {
       const hamburgerLine = hamburger.querySelectorAll('span');
       const spMenu = document.getElementById('spMenu');
       const overlay = document.getElementById('overlay');
-      var body = document.body;
-      var bodyStyle = window.getComputedStyle(body);
+      let body = document.body;
+      let bodyStyle = window.getComputedStyle(body);
       window.scrollTo({
         top: targetPosition,
         behavior: 'smooth'
@@ -75,13 +78,7 @@ window.onload = function () {
       spMenu.classList.toggle('open');
       hamburgerLine.forEach((line) => line.classList.toggle('open'));
       overlay.style.visibility = "hidden";
-      if (bodyStyle.overflow === "hidden") {
-        body.style.height = "";
-        body.style.overflow = "";
-      } else {
-        body.style.height = "100%";
-        body.style.overflow = "hidden";
-      }
+      bodyHiddenSwitch(body, bodyStyle);
     });
   });
 
@@ -89,14 +86,8 @@ window.onload = function () {
     spMenu.classList.toggle('open');
     hamburgerLine.forEach((line) => line.classList.toggle('open'));
     overlay.style.visibility = "hidden";
-    var body = document.body;
-    var bodyStyle = window.getComputedStyle(body);
-    if (bodyStyle.overflow === "hidden") {
-      body.style.height = "";
-      body.style.overflow = "";
-    } else {
-      body.style.height = "100%";
-      body.style.overflow = "hidden";
-    }
+    let body = document.body;
+    let bodyStyle = window.getComputedStyle(body);
+    bodyHiddenSwitch(body, bodyStyle);
   })
 };
