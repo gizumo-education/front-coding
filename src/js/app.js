@@ -30,7 +30,6 @@ window.onload = function () {
   const hamburger = document.getElementById('hamburger');
   const hamburgerLine = hamburger.querySelectorAll('span');
   const spMenu = document.getElementById('spMenu');
-  const overlay = document.getElementById('overlay');
   function bodyHiddenSwitch(body, bodyStyle) {
     if (bodyStyle.overflow === "hidden") {
       body.style.height = "";
@@ -44,11 +43,6 @@ window.onload = function () {
   hamburger.addEventListener('click', function () {
     spMenu.classList.toggle('open');
     hamburgerLine.forEach((line) => line.classList.toggle('open'));
-    if (overlay.style.visibility === "hidden") {
-      overlay.style.visibility = "visible";
-    } else {
-      overlay.style.visibility = "hidden";
-    }
 
     let body = document.body;
     let bodyStyle = window.getComputedStyle(body);
@@ -68,7 +62,6 @@ window.onload = function () {
       const hamburger = document.getElementById('hamburger');
       const hamburgerLine = hamburger.querySelectorAll('span');
       const spMenu = document.getElementById('spMenu');
-      const overlay = document.getElementById('overlay');
       let body = document.body;
       let bodyStyle = window.getComputedStyle(body);
       window.scrollTo({
@@ -77,17 +70,7 @@ window.onload = function () {
       });
       spMenu.classList.toggle('open');
       hamburgerLine.forEach((line) => line.classList.toggle('open'));
-      overlay.style.visibility = "hidden";
       bodyHiddenSwitch(body, bodyStyle);
     });
   });
-
-  overlay.addEventListener('click', function() {
-    spMenu.classList.toggle('open');
-    hamburgerLine.forEach((line) => line.classList.toggle('open'));
-    overlay.style.visibility = "hidden";
-    let body = document.body;
-    let bodyStyle = window.getComputedStyle(body);
-    bodyHiddenSwitch(body, bodyStyle);
-  })
 };
