@@ -24,11 +24,20 @@
         </ul>
       </div>
       <div class="l-header__sp-items">
-        <button class="l-header__hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+        <button id="hamburger" class="l-header__hamburger">
+          <span class="l-header__line--1"></span>
+          <span class="l-header__line--2"></span>
+          <span class="l-header__line--3"></span>
         </button>
+        <div id="spMenu" class="l-header__spMenu">
+          <ul class="l-header__spMenuList">
+            <li><a href="">トップ</a></li>
+            <li><a href="">新着求人</a></li>
+            <li><a href="">4つの特徴</a></li>
+            <li><a href="">転職までの流れ</a></li>
+            <li><a href="">転職お役立ちコンテンツ</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -49,7 +58,7 @@
       <div class="p-workSearch__inner l-inner">
         <h2>お仕事検索</h2>
         <p>働きたい職種・地域・希望給与を入れて検索！</p>
-        <div class="p-workSearch__form">
+        <form class="p-workSearch__form">
           <div class="p-workSearch__selectArrow">
             <select class="p-workSearch__select" name="workSearchCategory">
               <option value="医療事務" selected>医療事務</option>
@@ -84,19 +93,19 @@
             </select>
           </div>
           <input class="p-workSearch__input" type="text" placeholder="キーワード・企業名・スキルなど">
-          <a class="p-workSearch__link p-workSearch__button c-button" href="">
+          <button class="p-workSearch__link p-workSearch__button c-button" href="">
             <img src="../src/img/icon/icon-lens.png" alt=""><p>検索する</p>
-          </a>
-        </div>
+          </button>
+        </form>
       </div>
     </div>
     <div class="p-newOffers">
-      <div class="p-newOffers__inner l-inner">
+      <div class="p-newOffers__inner l-inner splide splide__track">
         <h2>新着求人</h2>
         <button class="p-newOffers__preButton"></button>
         <button class="p-newOffers__postButton"></button>
-        <ul class="p-newOffers__articles">
-          <li class="p-newOffers__article">
+        <ul class="p-newOffers__articles splide__list">
+          <li class="p-newOffers__article splide__slide">
             <img src="../src/img/picture/new-offers-1.jpg" alt="">
             <p>平日・夕方までの勤務!伊勢市の伊勢赤
               十字病院で医療事務求人</p>
@@ -117,7 +126,7 @@
               </tbody>
             </table>
           </li>
-          <li class="p-newOffers__article">
+          <li class="p-newOffers__article p-newOffers__spNotShow splide__slide">
             <img src="../src/img/picture/new-offers-2.jpg" alt="">
             <p>平日・夕方までの勤務!伊勢市の伊勢赤
               十字病院で医療事務求人</p>
@@ -138,7 +147,7 @@
               </tbody>
             </table>
           </li>
-          <li class="p-newOffers__article">
+          <li class="p-newOffers__article p-newOffers__spNotShow splide__slide">
             <img src="../src/img/picture/new-offers-3.jpg" alt="">
             <p>平日・夕方までの勤務!伊勢市の伊勢赤
               十字病院で医療事務求人</p>
@@ -159,7 +168,7 @@
               </tbody>
             </table>
           </li>
-          <li class="p-newOffers__article">
+          <li class="p-newOffers__article p-newOffers__spNotShow splide__slide">
             <img src="../src/img/picture/new-offers-4.jpg" alt="">
             <p>平日・夕方までの勤務!伊勢市の伊勢赤
               十字病院で医療事務求人</p>
@@ -188,7 +197,7 @@
     </div>
     <div class="p-message">
       <div class="p-message__text">
-        <p>ギズジョブなら理想の職場がきっと見つかる<br><br>ギズジョブは完全無料の求職者向け求人サービスです。</p>
+        <p>ギズジョブなら理想の職場がきっと見つかる<br class="p-message__firstBr"><br>ギズジョブは完全無料の求職者向け求人サービスです。</p>
       </div>
     </div>
     <div class="p-features">
@@ -197,7 +206,7 @@
         <ul class="p-features__features">
           <li class="p-features__feature">
             <h3>WEB上で応募完結</h3>
-            <p>エントリーシートの記入を済ませれば、あとは気になる企業に応募して<br>待つだけで面接アポまで完結！</p>
+            <p>エントリーシートの記入を済ませれば、<br class="p-features__spBr">あとは気になる企業に応募して<br class="p-features__pcBr">待つだけで面接アポまで完結！</p>
           </li>
           <li class="p-features__feature">
             <h3>安心・安全</h3>
@@ -205,11 +214,11 @@
           </li>
           <li class="p-features__feature">
             <h3>わかりやすい</h3>
-            <p>当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br>といったご自身にピッタリマッチした求人を見つけることができる！</p>
+            <p>当求人サイトは医療事務に特化しておりさらに<br class="p-features__spBr">こだわり検索や地域から検索<br class="p-features__pcBr">といったご自身に<br class="p-features__spBr">ピッタリマッチした求人を見つけることができる！</p>
           </li>
           <li class="p-features__feature">
             <h3>完全無料</h3>
-            <p>当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br>運営されています。ですので求職者の方からは応募前はもちろん、<br>内定後も費用は一切いただきません。</p>
+            <p>当サイトは求人元の企業やグループ会社からのスポンサー費用に<br class="p-features__spBr">よって<br class="p-features__pcBr">運営されています。ですので求職者の方からは<br class="p-features__spBr">応募前はもちろん、<br class="p-features__pcBr">内定後も費用は一切いただきません。</p>
           </li>
         </ul>
       </div>
@@ -226,7 +235,7 @@
                 <h4>エントリーシートの<br>作成</h4>
               </div>
               <div class="p-jobChangeFlow__detail">
-                <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
+                <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここには<br>テキストが</p>
               </div>
             </div>
           </li>
@@ -295,7 +304,7 @@
       <div class="p-workSearch__inner l-inner">
         <h2>お仕事検索</h2>
         <p>働きたい職種・地域・希望給与を入れて検索！</p>
-        <div class="p-workSearch__form">
+        <form class="p-workSearch__form">
           <div class="p-workSearch__selectArrow">
             <select class="p-workSearch__select" name="workSearchCategory">
               <option value="医療事務" selected>医療事務</option>
@@ -330,10 +339,10 @@
             </select>
           </div>
           <input class="p-workSearch__input" type="text" placeholder="キーワード・企業名・スキルなど">
-          <a class="p-workSearch__link p-workSearch__button c-button" href="">
+          <button class="p-workSearch__link p-workSearch__button c-button" href="">
             <img src="../src/img/icon/icon-lens.png" alt=""><p>検索する</p>
-          </a>
-        </div>
+          </button>
+        </form>
       </div>
     </div>
   </main>
@@ -357,5 +366,6 @@
     </div>
     <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
   </footer>
+  <!-- <script src="../src/js/library/splide.min.js"></script>・ -->
 </body>
 </html>

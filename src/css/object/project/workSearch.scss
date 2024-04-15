@@ -6,6 +6,14 @@
 
   &__first {
     margin-top: 60px;
+
+    @include utility.tab {
+      margin-top: .6rem;
+    }
+
+    @include utility.sp {
+      margin-top: .25rem;
+    }
   }
 
   &__inner {
@@ -14,19 +22,41 @@
     border-radius: 10px;
     text-align: center;
 
+    @include utility.tab {
+      padding: .4rem;
+      border-radius: .1rem;
+    }
+
+    @include utility.sp {
+      padding: .15rem;
+      border-radius: .1rem;
+    }
+
     & > h2 {
-      font-size: 25px;
-      font-family: "Noto Sans JP";
-      font-weight: var.$bold;
-      line-height: 25px;
+      @include utility.font(25px, "Noto Sans JP", var.$bold, 25px);
+
+      @include utility.tab {
+        @include utility.font(.25rem, "Noto Sans JP", var.$bold, .25rem);
+      }
+
+      @include utility.sp {
+        @include utility.font(.22rem, "Noto Sans JP", var.$bold, .22rem);
+      }
     }
 
     & > p {
       margin-top: 20px;
-      font-size: 20px;
-      font-family: "Noto Sans JP";
-      font-weight: var.$regular;
-      line-height: 29px;
+      @include utility.font(20px, "Noto Sans JP", var.$regular, 29px);
+
+      @include utility.tab {
+        margin-top: .2rem;
+        @include utility.font(.2rem, "Noto Sans JP", var.$regular, .29rem);
+      }
+
+      @include utility.sp {
+        margin-top: .16rem;
+        @include utility.font(.14rem, "Noto Sans JP", var.$regular, .2rem);
+      }
     }
   }
 
@@ -34,6 +64,18 @@
     margin-top: 20px;
     display: flex;
     gap: 15px;
+
+    @include utility.tab {
+      margin-top: .2rem;
+      gap: .15rem;
+    }
+
+    @include utility.sp {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: .13rem;
+      gap: .1rem;
+    }
   }
 
   &__selectArrow {
@@ -49,15 +91,29 @@
       border-top: 10px solid var.$blightPink;
       border-bottom: 0;
       pointer-events: none;
+
+      @include utility.tab {
+        top: .26rem;
+        right: .12rem;
+        border-right: .1rem solid transparent;
+        border-left: .1rem solid transparent;
+        border-top: .1rem solid var.$blightPink;
+      }
+
+      @include utility.sp {
+        top: .13rem;
+        right: .06rem;
+        border-right: .07rem solid transparent;
+        border-left: .07rem solid transparent;
+        border-top: .07rem solid var.$blightPink;
+      }
     }
   }
 
   &__select {
     width: 200px;
     padding: 15px;
-    font-family: "Noto Sans JP";
-    font-size: 18px;
-    line-height: 26px;
+    @include utility.font(18px, "Noto Sans JP", var.$regular, 26px);
     color: var.$black;
     appearance: none;
     outline: none;
@@ -65,18 +121,44 @@
     border: 1px solid var.$blightPink;
     border-radius: 10px;
     cursor: pointer;
+
+    @include utility.tab {
+      width: 2rem;
+      padding: .15rem;
+      @include utility.font(.18rem, "Noto Sans JP", var.$regular, .26rem);
+      border-radius: .1rem;
+    }
+
+    @include utility.sp {
+      width: 1rem;
+      padding: .06rem 0 .07rem .08rem;
+      @include utility.font(.12rem, "Noto Sans JP", var.$regular, .17rem);
+      border-radius: .05rem;
+    }
   }
 
   &__input {
     width: 300px;
     padding: 10px;
     color: var.$black;
-    font-size: 18px;
-    font-family: "Noto Sans JP";
-    font-weight: var.$regular;
-    line-height: 26px;
+    @include utility.font(18px, "Noto Sans JP", var.$regular, 26px);
     border: 1px solid var.$blightPink;
     border-radius: 10px;
+
+    @include utility.tab {
+      width: 3rem;
+      padding: .1rem;
+      @include utility.font(.18rem, "Noto Sans JP", var.$regular, .26rem);
+      border-radius: .1rem;
+    }
+
+    @include utility.sp {
+      width: 3.2rem;
+      margin-top: .05rem;
+      padding: .05rem;
+      @include utility.font(.14rem, "Noto Sans JP", var.$regular, .20rem);
+      border-radius: .05rem;
+    }
 
     &::placeholder {
       color: var.$gray;
@@ -89,23 +171,62 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+
+    @include utility.tab {
+      width: 1.4rem;
+    }
+
+    @include utility.sp {
+      margin-top: .09rem;
+      width: 1.6rem;
+      height: .4rem;
+      border-radius: .2rem;
+    }
 
     &:hover {
       opacity: .8;
       cursor: pointer;
     }
 
+    & img {
+      @include utility.tab {
+        width: .3rem;
+        height: .3rem;
+      }
+
+      @include utility.sp {
+        width: .18rem;
+        height: .18rem;
+      }
+    }
+
     & > p {
       margin-left: 5px;
-      font-size: 18px;
-      font-weight: var.$bold;
-      font-family: "Note Sans JP";
-      line-height: 18px;
+      @include utility.font(18px, "Noto Sans JP", var.$bold, 18px);
       color: var.$white;
+
+      @include utility.tab {
+        margin-left: .05rem;
+        @include utility.font(.18rem, "Noto Sans JP", var.$bold, .18rem);
+      }
+
+      @include utility.sp {
+        margin-left: .14rem;
+        @include utility.font(.18rem, "Noto Sans JP", var.$bold, .18rem);
+      }
     }
   }
 
   &__second {
     margin: 90px auto 140px;
+
+    @include utility.tab {
+      margin: .9rem auto 1.4rem;
+    }
+
+    @include utility.sp {
+      margin: .6rem auto 1rem;
+    }
   }
 }

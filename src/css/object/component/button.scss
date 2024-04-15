@@ -6,4 +6,9 @@
   height: 60px;
   background-color: var.$buttonPink;
   border-radius: 30px;
+
+  @include utility.tab {
+    height: .6rem;
+    border-radius: .3rem;
+  }
 }

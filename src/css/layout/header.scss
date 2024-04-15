@@ -1,4 +1,5 @@
 @use '../object/utility/utility.scss';
+@use '../foundation/variables' as var;
 // headerのスタイルを記述するファイル
 
 .l-header {
@@ -133,6 +134,66 @@
       height: .06rem;
       background-color: utility.$black;
       border-radius: .03rem;
+    }
+  }
+
+  &__line--1.open {
+    @include utility.sp {
+      transform: rotate(30deg);
+    }
+  }
+
+  &__line--2.open {
+    @include utility.sp {
+      transform: rotate(30deg);
+    }
+  }
+
+  &__line--3.open {
+    @include utility.sp {
+      transform: rotate(30deg);
+    }
+  }
+
+  &__spMenu {
+    display: none;
+    
+    @include utility.sp {
+      // display: none!important;
+      display: block;
+      width: 100%;
+      height: 5.54rem;
+      background-color: rgba(0, 0, 0, .7);
+      padding: .57rem .6rem;
+      position: fixed;
+      top: .7rem;
+      right: -100%;
+      overflow-y: auto;
+    }
+  
+    & li {
+      @include utility.sp {
+        margin-top: .38rem;
+      }
+    }
+  
+    &:first-child {
+      @include utility.sp {
+        margin-top: 0;
+      }
+    }
+  
+    & a {
+      @include utility.sp {
+        @include utility.font(.22rem, "Noto Sans JP", var.$bold, .22rem);
+        color: var.$white
+      }
+    }
+
+    &.open {
+      @include utility.sp {
+        right: 0;
+      }
     }
   }
 }

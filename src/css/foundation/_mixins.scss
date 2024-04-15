@@ -24,3 +24,10 @@
     clear: both;
   }
 }
+
+@mixin font($fontSize, $fontFamily, $fontWeight, $lineHeight) {
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}

@@ -5,11 +5,24 @@
   margin-top: 106px;
   text-align: center;
 
+  @include utility.tab {
+    margin-top: 1.06rem;
+  }
+
+  @include utility.sp {
+    margin-top: .55rem;
+  }
+
   & h2 {
-    font-size: 25px;
-    font-family: "Note Sans JP";
-    font-weight: var.$bold;
-    line-height: 25px;
+    @include utility.font(25px, "Noto Sans JP", var.$bold, 25px);
+
+    @include utility.tab {
+      @include utility.font(.25rem, "Noto Sans JP", var.$bold, .25rem);
+    }
+
+    @include utility.sp {
+      @include utility.font(.25rem, "Noto Sans JP", var.$bold, .25rem);
+    }
   }
 
   &__features {
@@ -17,6 +30,16 @@
     flex-wrap: wrap;
     margin-top: 53px;
     gap: 40px;
+
+    @include utility.tab {
+      margin-top: .53rem;
+      gap: .4rem;
+    }
+
+    @include utility.sp {
+      margin-top: .38rem;
+      gap: .21rem;
+    }
   }
 
   &__feature {
@@ -25,21 +48,59 @@
     background-color: var.$featureBox;
     border-radius: 10px;
 
+    @include utility.tab {
+      width: 5.7rem;
+      padding: .4rem;
+      border-radius: .1rem;
+    }
+
+    @include utility.sp {
+      width: 100%;
+      padding: .3rem .11rem;
+      border-radius: .1rem;
+    }
+
     & > h3 {
-      font-size: 24px;
-      font-family: "Note Sans JP";
-      font-weight: var.$bold;
-      line-height: 24px;
-      color: var.$blightPink;
+      @include utility.font(24px, "Noto Sans JP", var.$bold, 24px);
+      color: var.$buttonPink;
+
+      @include utility.tab {
+        @include utility.font(.24rem, "Noto Sans JP", var.$bold, .24rem);
+      }
+
+      @include utility.sp {
+        @include utility.font(.2rem, "Noto Sans JP", var.$bold, .2rem);
+      }
     }
 
     & > p {
       margin-top: 36px;
-      font-size: 14px;
-      font-family: "Note Sans JP";
-      font-weight: var.$regular;
-      line-height: 20px;
+      @include utility.font(14px, "Noto Sans JP", var.$regular, 20px);
       color: var.$black;
+
+      @include utility.tab {
+        margin-top: .36rem;
+        @include utility.font(.14rem, "Noto Sans JP", var.$regular, .2rem);
+      }
+
+      @include utility.sp {
+        margin-top: .3rem;
+        @include utility.font(.12rem, "Noto Sans JP", var.$regular, .17rem);
+      }
+    }
+  }
+  
+  &__pcBr {
+    @include utility.sp {
+      display: none;
+    }
+  }
+
+  &__spBr {
+    display: none;
+
+    @include utility.sp {
+      display: block;
     }
   }
 }
