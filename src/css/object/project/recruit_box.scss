@@ -1,0 +1,143 @@
+@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility' as base;
+
+.p-recruit_box {
+  width: 1600px;
+  height: 636px;
+  flex-shrink: 0;
+  background-color: utility.$bgLightBlue;;
+  padding-top: 64px;
+  padding-bottom: 70px;
+  @include base.sp {
+    height: 6rem;
+    width: 4rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.6rem;
+  };
+
+  &_title {
+    color: utility.$black;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: utility.$regular;
+    line-height: normal;
+    @include base.sp {
+      font-weight: 700;
+      font-size: 0.25rem;
+    };
+  };
+};
+
+
+.recruit_font2 {
+  color: utility.$black;
+  font-family: Noto Sans JP;
+  font-size: 16px;
+  font-weight: utility.$regular;
+  line-height: 22px;
+  margin-top: 8.08px;
+  margin-bottom: 6.92px;
+  width: 280px;
+  @include base.sp {
+    font-size: 0.16rem;
+    line-height: 0.22rem;
+    margin-top: 0.1rem;
+    width: 3.58rem;
+    font-weight: 700;
+  };
+};
+
+.recruit_font4 {
+  color: utility.$black;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: utility.$regular;
+  line-height: normal;
+  margin-left: 10px;
+  @include base.sp {
+    font-size: 0.14rem;
+    margin-left: 0.21rem;
+  };
+};
+
+.recrut_back {
+  position: relative;
+};
+
+.recruit_allphoto {
+  margin-top: 25px;
+  @include base.sp {
+
+  };
+};
+
+.recruitpic {
+  @include base.sp {
+    // display: none;
+    width: 3.7rem;
+    border-radius: 0.1rem 0rem 0rem 0rem;
+  };
+};
+
+.recruit_photo {
+  margin-left: 20px;
+  float: left;
+  @include base.sp {
+    // display: none;
+  };
+};
+
+.recruit_photo:first-child {
+  margin-left: 0px;
+  @include base.sp {
+    // display: none;
+  };
+};
+
+.pink_back a {
+  width: 60px;
+  height: 21px;
+  background: utility.$bgPink;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 4px;
+  @include base.sp {
+    width: 0.6rem;
+    height: 0.21rem;
+    font-size: 0.14rem;
+    font-family: Noto Sans JP;
+    line-height: 0.2rem;
+    margin: 0.04rem;
+  };
+};
+
+.recruit_detail {
+  display: flex;
+};
+
+.recruit_button {
+  font-family: Noto Sans JP;
+  font-size: 18px;
+  font-weight: utility.$bold;
+  color: utility.$white;
+  background-color: utility.$pink;
+  width: 360px;
+  height: 60px;
+  border-radius: 50px;
+  margin-top: 59px;
+  border: none;
+  @include base.sp {
+    width: 3.7rem;
+    font-size: 0.18rem;
+    font-weight: 700;
+    height: 0.6rem;
+    margin-top: 0.44rem;
+    border-radius: 0.5rem;
+  };
+};
+
+.recruit_button_wrapper {
+  text-align: center;
+};

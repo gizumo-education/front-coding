@@ -1,12 +1,79 @@
 @use '../../object/utility/utility.scss';
+@use '../../object/utility/utility' as base;
 // ページ上部のキービジュアルに関するスタイル
 
 .p-keyvisual {
-  background-image: url('/img/picture/keyvisual_pc.png');
+  background-image: url('../img/picture/keyvisual_pc.png');
   background-color: utility.$bgDarkBlue;
   background-repeat: no-repeat;
+  background-position: 175px;
+  width: 1600px;
+  height: 500px;
+  position: relative;
+  @include base.sp {
+    background-image: url('../img/picture/keyvisual_sp.png');
+    background-size: 4rem;
+    background-position: 0rem;
+    width: 4rem;
+    height: 2.7rem;
+  };
+  &_box-content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 56px;
+    margin-left: 607px;
+    @include base.sp {
+      margin-top: 0.61rem;
+      margin-left: 1.24rem;
+      width: auto
+    };
+  };
+  &_publish {
+    color: utility.$Green;
+    font-family: Noto Sans JP;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: utility.$regular;
+    line-height: normal;
+    margin-top: 54px;
+    background-color: utility.$white;
+    width: 391px;
+    height: 69px;
+    border-radius: 10px;
+    border: 2.3px solid utility.$Green;
+    text-align: center;
+    @include base.sp {
+      width: 1.7rem;
+      height: 0.3rem;
+      font-size: 0.08rem;
+    };
+  };
+  &_publish span {
+    font-size: 40px ;
+    font-weight: 700;
+    @include base.sp {
+      font-size: 0.16rem;
+    };
+  };
+  &_title {
+    margin-top: 40px;
+  };
+};
 
-  &__box {
-
-  }
-}
+.brackets {
+  position: absolute;
+  margin-left: 830px;
+  margin-top: 56.49px;
+  @include base.sp {
+    margin-top: 0.61rem;
+    margin-left: 2rem;
+  };
+};
+.brackets img:last-child {
+  margin-left: 252px;
+  @include base.sp {
+margin-left: 1.1rem;
+  };
+};

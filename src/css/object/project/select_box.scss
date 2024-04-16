@@ -1,0 +1,144 @@
+@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility' as base;
+
+.p-select_box {
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include base.sp {
+    width: 4rem;
+    padding: 0.25rem 0.15rem 0.25rem 0.15rem;
+  };
+  &_inner {
+    background-color: utility.$bgBlue;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include base.sp {
+      width: 3.7rem;
+      padding-top: 0.15rem;
+      padding-bottom: 0.2rem;
+      text-align: center;
+      height: 2.4rem;
+
+    };
+  };
+  &_title {
+    color: utility.$black;
+    font-family: Noto Sans JP;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: utility.$bold;
+    line-height: 25px;;
+    text-align: center;
+    @include base.sp {
+      width: 1.10rem;
+      height: 0.22rem;
+      font-size: 0.22rem;
+      margin: 0 auto;
+    };
+  };
+  
+  &_subtitle {
+    color: utility.$black;
+    font-family: Noto Sans JP;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: utility.$regular;
+    line-height: normal;
+    padding-top: 20px;
+    text-align: center;
+    @include base.sp {
+      font-size: 0.14rem;
+      padding-top: 0.16rem;
+    };
+  };
+  
+  &_button {
+    margin-top: 20px;
+    margin-left: 40px;
+    @include base.sp {
+      margin-top: 0.13rem;
+      margin-left: 0;
+    };
+  };
+};
+
+  .p-select_button {
+    float: left;
+    margin-left: 15px;
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    font-family: Noto Sans JP;
+    font-size: 18px;
+    border: 1px solid utility.$borderPink;
+    padding: 17px 0px 17px 15px;
+    appearance: none;
+    // -webkit-appearance: none;
+    @include base.sp {
+      width: 1rem;
+      height: 0.3rem;
+      font-size: 0.12rem;
+      padding: 0.06rem 0rem 0.07rem 0.08rem;
+      line-height: 0.1738rem;
+    };
+    &:first-child {
+      margin-left: 0.25rem;
+    };
+};
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+};
+
+.p-search_form {
+  width: 300px;
+  height: 60px;
+  font-family: Noto Sans JP;
+  font-size: 18px;
+  border: 1px solid utility.$borderPink;
+  padding: 17px 20px 17px 10px;
+  border-radius: 10px;
+  margin-left: 15px;
+  @include base.sp {
+    margin-top: 0.15rem;
+    width: 3.2rem;
+    height: 0.3rem;
+    margin-left: 0rem;
+    font-size: 0.14rem;
+  };
+};
+
+
+.p-search_button {
+  margin-left: 15px;
+  border-radius: 50px;
+  width: 140px;
+  height: 60px;
+  background-color: utility.$pink;
+  font-family: Noto Sans JP;
+  font-size: 18px;
+  font-weight: utility.$bold;
+  color: utility.$white;
+  border: none;
+  @include base.sp {
+    width: 1.6rem;
+    height: 0.4rem;
+    font-family: Noto Sans JP;
+    margin-left: 0rem;
+    margin-top: 0.19rem;
+    font-size: 0.18rem;
+  };
+  &.glass {
+    input{
+      background-image: url('../img/icon/パス 18.png');
+    };
+  };
+};
+
+
+
+
+

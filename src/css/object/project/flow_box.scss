@@ -1,0 +1,157 @@
+@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility' as base;
+
+.p-flow_box {
+  padding-bottom: 106.13px;
+  @include base.sp {
+    padding-bottom: 0.6rem;
+  };
+};
+
+.flow_title {
+  color: utility.$black;
+  font-family: "Noto Sans JP";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: utility.$bold;
+  line-height: 25px; /* 100% */
+  text-align: center;
+  @include base.sp {
+    font-size: 0.25rem;
+  };
+};
+
+.all_flow {
+  display: flex;
+  align-items: center;
+  @include base.sp {
+    display: flex;
+    flex-direction: column;
+  };
+};
+
+.flow {
+  position: relative;
+  margin-top: 50px;
+  width: 280px;
+  height: 360px;
+  border: 2.27px solid utility.$pink;
+  border-radius: 10px;
+  @include base.sp {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    height: 2.9rem;
+    width: 2.7rem;
+
+  };
+};
+
+@include base.sp {
+  .flow::after {
+    background-image: url('../img/icon/down_arrow.png')
+  };
+};
+
+
+.flow:first-child {
+  margin-left: 0;
+  @include base.sp {
+    margin-top: 0.34rem;
+  };
+};
+
+.circle {
+  position: absolute;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  background-color: utility.$pink;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: utility.$bold;
+  @include base.sp {
+    width: 0.45rem;
+    height: 0.45rem;
+    font-size: 0.1rem;
+  };
+};
+
+.step {
+  color: utility.$white;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.36px;
+  margin-top: 11px;
+  @include base.sp {
+    font-size: 0.1rem;
+    margin-top: 0.15rem;
+  };
+};
+
+
+.flow_pic {
+  width: 102.29px;
+  height: 100px;
+  margin-top: 60px;
+  @include base.sp {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-top: 0.55rem;
+  };
+};
+
+.flow_font {
+  font-family: Noto Sans JP;
+  font-size: 24px;
+  font-weight: utility.$bold;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 20px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @include base.sp {
+    font-size: 0.2rem;
+    margin-top: 0.22rem;
+    height: 0.1rem;
+  };
+};
+
+.flow_text {
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-weight: utility.$regular;
+  line-height: 20.27px;
+  margin-top: 18px;
+  padding: 0px 22px 0px 22px;
+  @include base.sp {
+    padding: 0rem 0.2rem 0rem 0.2rem;
+    font-size: 0.14rem;
+    line-height: 0.2rem;
+    margin-top: 0.1rem;
+  };
+};
+
+.flow_detail {
+  text-align: center;
+
+};
+.down_arrow {
+  display: none;
+  @include base.sp {
+    display: block;
+  };
+};
+
+@include base.sp {
+  .right_arrow img {
+    display: none;
+  };
+
+};
+
