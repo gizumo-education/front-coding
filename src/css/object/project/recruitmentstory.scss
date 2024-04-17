@@ -196,3 +196,14 @@
     }
   }
 }
+
+.slider {
+  width: 10rem;
+  height: 5rem;
+  //display: flex;
+
+  & > img {
+    width: 20px;
+    object-fit: cover;
+  }
+}

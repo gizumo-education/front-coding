@@ -6,5 +6,5 @@ $(function() {
 })
 
 $(function () {
-  $('.slick01').slick();
+  $('.slider').slick();
 });
