@@ -10,7 +10,8 @@
   }
 
   @include utility.sp {
-    margin-top: .55rem;
+    margin-top: 0;
+    padding-top: .55rem;
   }
 
   & h2 {

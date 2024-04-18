@@ -3,7 +3,7 @@
 // headerのスタイルを記述するファイル
 
 .l-header {
-  z-index: 1;
+  z-index: 10;
   position: sticky;
   top: 0;
   left: 0;
@@ -134,24 +134,26 @@
       height: .06rem;
       background-color: utility.$black;
       border-radius: .03rem;
+      transition: all 0.3s;
     }
   }
 
   &__line--1.open {
     @include utility.sp {
-      transform: rotate(30deg);
+      transform: translateY(.16rem) rotate(45deg);
     }
   }
 
   &__line--2.open {
     @include utility.sp {
-      transform: rotate(30deg);
+      opacity: 0;
+      transform: rotate(180deg);
     }
   }
 
   &__line--3.open {
     @include utility.sp {
-      transform: rotate(30deg);
+      transform: translateY(-.16rem) rotate(-45deg);
     }
   }
 
@@ -159,16 +161,17 @@
     display: none;
     
     @include utility.sp {
-      // display: none!important;
       display: block;
       width: 100%;
-      height: 5.54rem;
+      height: 100%;
       background-color: rgba(0, 0, 0, .7);
       padding: .57rem .6rem;
       position: fixed;
       top: .7rem;
       right: -100%;
       overflow-y: auto;
+      transition: all 0.3s;
+      z-index: 100;
     }
   
     & li {

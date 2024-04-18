@@ -1,6 +1,7 @@
 @use '../../object/utility/utility.scss';
 @use '../../foundation/variables' as var;
 
+
 .p-newOffers {
   margin-top: 60px;
   padding: 64px 0;
@@ -43,6 +44,7 @@
     position: absolute;
     top: 125px;
     transition: .3s;
+    z-index: 2;
 
     @include utility.tab {
       width: .6rem;
@@ -101,6 +103,7 @@
     top: 125px;
     right: 0;
     transition: .3s;
+    z-index: 2;
 
     @include utility.tab {
       width: .6rem;
@@ -148,14 +151,13 @@
     }
   }
 
-  &__articles {
+  &__articles,
+  .swiper-wrapper {
     display: flex;
     margin-top: 25px;
-    gap: 20px;
 
     @include utility.tab {
       margin-top: .25rem;
-      gap: .2rem;
     }
 
     @include utility.sp {
@@ -165,8 +167,9 @@
     }
   }
 
-  &__article {
-    width: 280px;
+  &__article, 
+  .swiper-slide {
+    width: 100%;
 
     @include utility.tab {
       width: 2.8rem;
@@ -255,12 +258,6 @@
     @include utility.sp {
       @include utility.font(.14rem, "Noto Sans JP", var.$regular, .2rem);
     }
-    }
-  }
-
-  &__spNotShow {
-    @include utility.sp {
-      display: none;
     }
   }
 
