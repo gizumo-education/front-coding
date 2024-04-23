@@ -17,7 +17,8 @@
     width: 4rem;
     height: 2.7rem;
   };
-  &_box-content {
+
+  &_box {
     position: absolute;
     display: flex;
     align-items: center;
@@ -28,6 +29,18 @@
       margin-top: 0.61rem;
       margin-left: 1.24rem;
       width: auto
+    };
+  };
+  &_no1 {
+    height: 141px;
+    @include base.sp {
+      height: 0.73rem;
+    };
+  };
+  &_title {
+    margin-top: 40px;
+    @include base.sp {
+      margin-top: 0.12rem;
     };
   };
   &_publish {
@@ -48,6 +61,9 @@
       width: 1.7rem;
       height: 0.3rem;
       font-size: 0.08rem;
+      margin-top: 0.18rem;
+      border: 0.01rem solid utility.$Green;
+      font-family: Noto Sans JP;
     };
   };
   &_publish span {
@@ -57,23 +73,5 @@
       font-size: 0.16rem;
     };
   };
-  &_title {
-    margin-top: 40px;
-  };
 };
 
-.brackets {
-  position: absolute;
-  margin-left: 830px;
-  margin-top: 56.49px;
-  @include base.sp {
-    margin-top: 0.61rem;
-    margin-left: 2rem;
-  };
-};
-.brackets img:last-child {
-  margin-left: 252px;
-  @include base.sp {
-margin-left: 1.1rem;
-  };
-};

@@ -5,6 +5,7 @@
   padding-top: 150px;
   padding-bottom: 200px;
   @include base.sp {
-    padding: 0.6rem 0.15rem 1rem 0.15rem;
+    padding-top: 0.6rem;
+    padding-bottom: 1rem;
   };
 };

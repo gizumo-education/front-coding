@@ -13,6 +13,7 @@
     background-color: utility.$bgBlue;
     padding-top: 40px;
     padding-bottom: 40px;
+    border-radius: 10px;
     @include base.sp {
       width: 3.7rem;
       padding-top: 0.15rem;
@@ -63,28 +64,29 @@
   };
 };
 
-  .p-select_button {
-    float: left;
-    margin-left: 15px;
-    border-radius: 10px;
-    width: 200px;
-    height: 60px;
-    font-family: Noto Sans JP;
-    font-size: 18px;
-    border: 1px solid utility.$borderPink;
-    padding: 17px 0px 17px 15px;
-    appearance: none;
-    // -webkit-appearance: none;
-    @include base.sp {
-      width: 1rem;
-      height: 0.3rem;
-      font-size: 0.12rem;
-      padding: 0.06rem 0rem 0.07rem 0.08rem;
-      line-height: 0.1738rem;
-    };
-    &:first-child {
-      margin-left: 0.25rem;
-    };
+.p-select_button {
+  float: left;
+  margin-left: 15px;
+  border-radius: 10px;
+  width: 200px;
+  height: 60px;
+  font-family: Noto Sans JP;
+  font-size: 18px;
+  border: 1px solid utility.$borderPink;
+  padding: 17px 0px 17px 15px;
+  appearance: none;
+  // -webkit-appearance: none;
+  @include base.sp {
+    width: 1rem;
+    height: 0.3rem;
+    margin-left: 0.1rem;
+    font-size: 0.12rem;
+    padding: 0.06rem 0rem 0.07rem 0.08rem;
+    line-height: 0.1738rem;
+  };
+  &:first-child {
+    margin-left: 0.25rem;
+  };
 };
 
 .clearfix:after {

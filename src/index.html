@@ -21,31 +21,41 @@
           <li class="l-header__button is-camera"><a href="">検索履歴</a></li>
         </ul>
       </div>
+
       <div class="l-header__sp-items">
-        <button class="l-header__hamburger">
+        <button class="l-header__hamburger" id="hamburger_btn">
           <span></span>
           <span></span>
           <span></span>
         </button>
+        <nav class="l-header__hamburger_nav" id="hamburger_nav">
+          <ul class="l-header__hamburger_menu" id="hamburger_menu">
+            <li><a href="">トップ</a></li>
+            <li><a href="">新着求人</a></li>
+            <li><a href="">4つの特徴</a></li>
+            <li><a href="">転職までの流れ</a></li>
+            <li><a href="">転職お役立ちコンテンツ</a></li>
+          </ul>
+        </nav>
       </div>
+
+
     </nav>
   </header>
 
   <main>
     <!-- キービジュアル -->
-    <section class="p-keyvisual">
+    <section class="p-keyvisual" id="keyvisual">
       <div class="p-keyvisual_box">
-        <div class="p-keyvisual_box-content">
-          <img src="img/picture/keyvisual.png">
-          <img src="img/icon/keyvisual_title.png" class="p-keyvisual_title" >
-          <p class="p-keyvisual_publish">現在の求人掲載数：<span>2,320</span>件</p>
-
-        </div>
+        <img src="img/picture/keyvisual.png" class="p-keyvisual_no1">
+        <img src="img/icon/keyvisual_title.png" class="p-keyvisual_title" >
+        <p class="p-keyvisual_publish">現在の求人掲載数：<span>2,320</span>件</p>
+      </div>
       </div>
     </section>
 
     <!-- お仕事検索 -->
-    <section class="p-select_box l-inner">
+    <section class="p-select_box l-inner" id="select_box">
       <div class="p-select_box_inner ">
         <p class="p-select_box_title">お仕事検索</p>
         <p class="p-select_box_subtitle">働きたい職種・地域・希望給与を入れて検索！</p>
@@ -66,7 +76,7 @@
               <option value="群馬県">群馬県</option>
               <option value="埼玉県">埼玉県</option>
               <option value="千葉県">千葉県</option>
-              <option value="東京都">東京都</option>
+              <option value="東京都" selected>東京都</option>
               <option value="栃木県">栃木県</option>
             </select>
             <select class="p-select_button">
@@ -83,21 +93,20 @@
               <img src="img/icon/パス 18.png" alt="">
               検索する
             </button>
-
-            
           </form>
         </div>
       </div>
     </section>
 
     <!-- 新着求人 -->
-    <section class="p-recruit_box">
+    <section class="p-recruit_box" id="recruit_box">
       <div class="p-recruit_box_inner l-inner">
         <p class="p-recruit_box_title">新着求人</p>
         <ul class="recruit_allphoto clearfix">
-          <li class="recruit_photo">
+          <li>
             <a href>
-              <img src="img/picture/recruit01.jpg" class="recruitpic">
+              <img src="img/picture/recruit01.jpg" class="p-recruit_box_pcimg">
+              <img src="img/picture/recruit01_sp.png" class="p-recruit_box_spimg">
             </a>
             <p class="recruit_font2">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
             <div class="recruit_detail">
@@ -119,9 +128,9 @@
               </p>
             </div>
           </li>
-          <li class="recruit_photo">
+          <!-- <li>
             <a href>
-              <img src="img/picture/recruit02.jpg" class="recruitpic">
+              <img src="img/picture/recruit02.jpg">
             </a>
             <p class="recruit_font2">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
             <div class="recruit_detail">
@@ -143,9 +152,9 @@
               </p>
             </div>
           </li>
-          <li class="recruit_photo">
+          <li>
             <a href>
-              <img src="img/picture/recruit03.jpg" class="recruitpic">
+              <img src="img/picture/recruit03.jpg">
             </a>
             <p class="recruit_font2">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
             <div class="recruit_detail">
@@ -167,7 +176,7 @@
               </p>
             </div>
           </li>
-          <li class="recruit_photo">
+          <li>
             <a href>
               <img src="img/picture/recruit04.jpg" class="recruitpic">
             </a>
@@ -190,163 +199,149 @@
                 <p class="recruit_font4">伊勢市駅 徒歩15分</p>
               </p>
             </div>
-          </li>
+          </li> -->
         </ul>
         <div class="recruit_button_wrapper">
-          <button class="recruit_button" type="submit">
-            新着求人一覧をもっと見る
-          </button>
-        </div>
+        <button class="recruit_button" type="submit">
+          新着求人一覧をもっと見る
+        </button>
+      </div>
     </section>
 
     <!-- ギズジョブ -->
-    <article class="p-gizjob l-inner">
-      <div class="p-gizjob_pic">
-        <img src="img/picture/長方形 124.png" alt="filter" class="filter">
-        <img src="img/picture/長方形 49.png" alt="square" class="gizjob_photo">
-      </div>
-      <div class="gizjob_text">
+    <article class="p-gizjob" id="gizjob">
+      <img src="img/picture/長方形 49.png">
+      <img src="img/picture/長方形 124.png">
+      <div class="p-gizjob_text">
         <p>ギズジョブなら理想の職場がきっと見つかる</p>
         <p>ギズジョブは完全無料の求職者向け求人サービスです。</p>
       </div>
     </article>
 
     <!-- 4つの特徴 -->
-    <article class="p-features_box l-inner">
-      <div class="features_box_inner">
-        <h2 class="features_title">ギズジョブの4つの特徴</h2>
-      </div>
-      <ul class="all_features clearfix">
-        <li class="features">
-          <p class="features_font">WEB上で応募完結</p>
-          <p class="features_detail">エントリーシートの記入を済ませれば、あとは気になる企業に応募して待つだけで面接アポまで完結！</p>
+    <article class="p-features l-inner" id="features">
+      <h2 class="p-features_title">ギズジョブの4つの特徴</h2>
+      <ul class="p-features_detail clearfix">
+        <li>
+          <p class="p-features_font">WEB上で応募完結</p>
+          <p class="p-features_text">エントリーシートの記入を済ませれば、あとは気になる企業に応募して待つだけで面接アポまで完結！</p>
         </li>
-        <li class="features">
-          <p class="features_font">安心・安全</p>
-          <p class="features_detail">掲載案件は基本的に当社グループ企業となるため、皆さまにより詳細にクリーンな職場情報をお届けいたします。</p>
+        <li>
+          <p class="p-features_font">安心・安全</p>
+          <p class="p-features_text">掲載案件は基本的に当社グループ企業となるため、皆さまにより詳細にクリーンな職場情報をお届けいたします。</p>
         </li>
-        <li class="features">
-          <p class="features_font">わかりやすい</p>
-          <p class="features_detail">当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索といったご自身にピッタリマッチした求人を見つけることができる！</p>
+        <li>
+          <p class="p-features_font">わかりやすい</p>
+          <p class="p-features_text">当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索といったご自身にピッタリマッチした求人を見つけることができる！</p>
         </li>
-        <li class="features">
-          <p class="features_font">完全無料</p>
-          <p class="features_detail">当サイトは求人元の企業やグループ会社からのスポンサー費用によって運営されています。ですので求職者の方からは応募前はもちろん、内定後も費用は一切いただきません。</p>
+        <li>
+          <p class="p-features_font">完全無料</p>
+          <p class="p-features_text">当サイトは求人元の企業やグループ会社からのスポンサー費用によって運営されています。ですので求職者の方からは応募前はもちろん、内定後も費用は一切いただきません。</p>
         </li>
       </ul>
     </article>
 
     <!-- 転職までの流れ -->
-    <article class="p-flow_box l-inner">
-      <div class="flow_box_inner">
-        <h2 class="flow_title">転職までの流れ</h2>
-      </div>
-      <ul class="all_flow clearfix">
-        <li class="flow">
-          <div class="circle">
-            <p class="step">STEP<br>1</p>
+    <article class="p-flow l-inner" id="flow">
+      <h2 class="p-flow_title">転職までの流れ</h2>
+      <ul class="p-flow_block clearfix">
+        <li>
+          <div class="p-flow_circle">
+            <p>STEP<br>1</p>
           </div>
-          <div class="flow_detail">
-            <img src="img/icon/flow_1.png" class="flow_pic">
-            <p class="flow_font">エントリーシートの作成</p>
-            <p class="flow_text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ</p>
+          <div class="p-flow_detail">
+            <img src="img/icon/flow_1.png">
+            <p class="p-flow_font">エントリーシートの作成</p>
+            <p class="p-flow_text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ</p>
           </div>
         </li>
-        <div class="right_arrow">
+        <div class="p-flow_rt_arrow">
           <img src="img/icon/right_arrow.png">
         </div>
-        <div class="down_arrow">
+        <div class="p-flow_dn_arrow">
           <img src="img/icon/down_arrow.png">
         </div>
-        <li class="flow">
-          <div class="circle">
-            <p class="step">STEP<br>2</p>
+        <li>
+          <div class="p-flow_circle">
+            <p>STEP<br>2</p>
           </div>
-          <div class="flow_detail">
-            <img src="img/icon/flow_2.png" class="flow_pic">
-            <p class="flow_font">気になる企業のピックアップ</p>
-            <p class="flow_text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
+          <div class="p-flow_detail">
+            <img src="img/icon/flow_2.png">
+            <p class="p-flow_font">気になる企業のピックアップ</p>
+            <p class="p-flow_text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
           </div>
         </li>
-        <div class="right_arrow">
+        <div class="p-flow_rt_arrow">
           <img src="img/icon/right_arrow.png">
         </div>
-        <div class="down_arrow">
+        <div class="p-flow_dn_arrow">
           <img src="img/icon/down_arrow.png">
         </div>
-        <li class="flow">
-          <div class="circle">
-            <p class="step">STEP<br>3</p>
+        <li>
+          <div class="p-flow_circle">
+            <p>STEP<br>3</p>
           </div>
-          <div class="flow_detail">
-            <img src="img/icon/flow_3.png" class="flow_pic">
-            <p class="flow_font">複数企業に応募</p>
-            <p class="flow_text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
+          <div class="p-flow_detail">
+            <img src="img/icon/flow_3.png">
+            <p class="p-flow_font">複数企業に応募</p>
+            <p class="p-flow_text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
           </div>
         </li>
-        <div class="right_arrow">
+        <div class="p-flow_rt_arrow">
           <img src="img/icon/right_arrow.png">
         </div>
-        <div class="down_arrow">
+        <div class="p-flow_dn_arrow">
           <img src="img/icon/down_arrow.png">
         </div>
-        <li class="flow">
-          <div class="circle">
-            <p class="step">STEP<br>4</p>
+        <li>
+          <div class="p-flow_circle">
+            <p>STEP<br>4</p>
           </div>
-          <div class="flow_detail">
-            <img src="img/icon/flow_4.png" class="flow_pic">
-            <p class="flow_font">内定・転職！</p>
-            <p class="flow_text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
+          <div class="p-flow_detail">
+            <img src="img/icon/flow_4.png">
+            <p class="p-flow_font">内定・転職！</p>
+            <p class="p-flow_text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
           </div>
         </li>
       </ul>
     </article>
 
     <!-- 転職お役立ちコンテンツ -->
-    <article class="p-information_box l-inner">
-      <div class="information_box_inner">
-        <h2 class="information_title">転職お役立ちコンテンツ</h2>
-      </div>
-      <ul class="p-all_information clearfix">
+    <article class="p-information l-inner" id="information">
+      <h2 class="p-information_title">転職お役立ちコンテンツ</h2>
+      <ul class="p-information_box clearfix">
         <li>
           <img src="img/picture/contents_1.png">
           <img src="img/picture/contants_cover.png">
-          <div class="information_text">
+          <div class="p-information_text">
             <p>転職マニュアル</p>
-            <p class="information_detail">転職活動の基礎知識 面接対策など 転職のコツをお教えします</p>
+            <p class="p-information_detail">転職活動の基礎知識面接対策など<br>転職のコツをお教えします</p>
           </div>
         </li>
-
         <li>
           <img src="img/picture/contents_2.png">
           <img src="img/picture/contants_cover.png">
-          <div class="information_text">
+          <div class="p-information_text">
             <p>医療事務業界の豆知識</p>
-            <p class="information_detail">スキルアップ 労働環境 給与事情など 知って得する業界の豆知識を公開</p>
+            <p class="p-information_detail">スキルアップ労働環境 給与事情など<br>知って得する業界の豆知識を公開</p>
           </div>
         </li>
-
         <li>
           <img src="img/picture/contents_3.png">
           <img src="img/picture/contants_cover.png">
-          <div class="information_text">
+          <div class="p-information_text">
             <p>転職マニュアル</p>
-            <p class="information_detail">転職活動の基礎知識 面接対策など 転職のコツをお教えします</p>
+            <p class="p-information_detail">転職活動の基礎知識面接対策など<br>転職のコツをお教えします</p>
           </div>
         </li>
-
-
       </ul>
-      <div class="information_button_wrapper">
-        <button class="information_button" type="submit">
-          医療事務コラムをもっと見る
-        </button>
-      </div>
+      <button class="p-information_button" type="submit">
+        医療事務コラムをもっと見る
+      </button>
     </article>
 
     <!-- お仕事検索 -->
-    <section class="p-second_select_box l-inner">
+    <section class="p-second_select_box l-inner" id="second_select_box">
       <div class="p-select_box_inner">
         <p class="p-select_box_title">お仕事検索</p>
         <p class="p-select_box_subtitle">働きたい職種・地域・希望給与を入れて検索！</p>
@@ -367,7 +362,7 @@
               <option value="群馬県">群馬県</option>
               <option value="埼玉県">埼玉県</option>
               <option value="千葉県">千葉県</option>
-              <option value="東京都">東京都</option>
+              <option value="東京都" selected>東京都</option>
               <option value="栃木県">栃木県</option>
             </select>
             <select class="p-select_button">
@@ -409,5 +404,11 @@
     </div>
     <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    $('hamburger_menu a').click(function () {
+      console.log('ok!');
+    });
+  </script>
+  
 </body>
 </html>

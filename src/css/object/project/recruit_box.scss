@@ -25,6 +25,7 @@
     @include base.sp {
       font-weight: 700;
       font-size: 0.25rem;
+      text-align: center;
     };
   };
 };
@@ -38,12 +39,9 @@
   line-height: 22px;
   margin-top: 8.08px;
   margin-bottom: 6.92px;
-  width: 280px;
   @include base.sp {
-    font-size: 0.16rem;
     line-height: 0.22rem;
     margin-top: 0.1rem;
-    width: 3.58rem;
     font-weight: 700;
   };
 };
@@ -67,33 +65,27 @@
 
 .recruit_allphoto {
   margin-top: 25px;
-  @include base.sp {
-
+    & li {
+      margin-left: 20px;
+      float: left;
+      width: 280px;
+      @include base.sp {
+        margin-left: 0;
+        float: none;
+        width: 3.7rem;
+      };
+      &:first-child {
+        margin-left: 0px;
+      };
+      & img {
+        @include base.sp {
+          // display: none;
+          border-radius: 0.1rem 0rem 0rem 0rem;
+        };
+      };
   };
 };
 
-.recruitpic {
-  @include base.sp {
-    // display: none;
-    width: 3.7rem;
-    border-radius: 0.1rem 0rem 0rem 0rem;
-  };
-};
-
-.recruit_photo {
-  margin-left: 20px;
-  float: left;
-  @include base.sp {
-    // display: none;
-  };
-};
-
-.recruit_photo:first-child {
-  margin-left: 0px;
-  @include base.sp {
-    // display: none;
-  };
-};
 
 .pink_back a {
   width: 60px;
@@ -140,4 +132,21 @@
 
 .recruit_button_wrapper {
   text-align: center;
+  & button {
+
+  };
+};
+
+.p-recruit_box_pcimg {
+  display: block;
+  @include base.sp {
+  display: none;
+  };
+};
+
+.p-recruit_box_spimg {
+  display: none;
+  @include base.sp {
+    display: block;
+  };
 };

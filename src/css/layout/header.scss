@@ -132,6 +132,16 @@
       height: .06rem;
       background-color: utility.$black;
       border-radius: .03rem;
-    }
-  }
-}
+    };
+  };
+};
+
+.l-header__hamburger_menu a {
+  color: black;
+  width: 100%;
+  display: block;
+  font-size: 0.22rem;
+  margin-top: 0.38rem;
+};
+
+
