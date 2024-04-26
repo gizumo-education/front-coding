@@ -1,91 +1,119 @@
 @use '../../object/utility/utility.scss';
 @use '../../object/utility/utility' as base;
 
-.p-recruit_box {
-  width: 1600px;
-  height: 636px;
-  flex-shrink: 0;
-  background-color: utility.$bgLightBlue;;
-  padding-top: 64px;
-  padding-bottom: 70px;
-  @include base.sp {
-    height: 6rem;
-    width: 4rem;
-    padding-top: 0.3rem;
-    padding-bottom: 0.6rem;
-  };
-
-  &_title {
-    color: utility.$black;
-    font-family: Inter;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: utility.$regular;
-    line-height: normal;
+.p-recruit {
+  &_box {
+    width: 1600px;
+    height: 636px;
+    flex-shrink: 0;
+    background-color: utility.$bgLightBlue;;
+    padding-top: 64px;
+    padding-bottom: 70px;
     @include base.sp {
-      font-weight: 700;
-      font-size: 0.25rem;
-      text-align: center;
+      height: 6rem;
+      width: 4rem;
+      padding-top: 0.3rem;
+      padding-bottom: 0.6rem;
+    };
+    &_title {
+      color: utility.$black;
+      font-family: Inter;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: utility.$regular;
+      line-height: normal;
+      @include base.sp {
+        font-weight: 700;
+        font-size: 0.25rem;
+        text-align: center;
+      };
     };
   };
 };
 
-
-.recruit_font2 {
-  color: utility.$black;
-  font-family: Noto Sans JP;
-  font-size: 16px;
-  font-weight: utility.$regular;
-  line-height: 22px;
-  margin-top: 8.08px;
-  margin-bottom: 6.92px;
-  @include base.sp {
-    line-height: 0.22rem;
-    margin-top: 0.1rem;
-    font-weight: 700;
+.recruit {
+  &_font2 {
+    color: utility.$black;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-weight: utility.$regular;
+    line-height: 22px;
+    margin-top: 8.08px;
+    margin-bottom: 6.92px;
+    @include base.sp {
+      line-height: 0.22rem;
+      margin-top: 0.1rem;
+      font-weight: 700;
+    };
+  };
+  &_font4 {
+    color: utility.$black;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: utility.$regular;
+    line-height: normal;
+    margin-left: 10px;
+    @include base.sp {
+      font-size: 0.14rem;
+      margin-left: 0.21rem;
+    };
+  };
+  &_button {
+    font-family: Noto Sans JP;
+    font-size: 18px;
+    font-weight: utility.$bold;
+    color: utility.$white;
+    background-color: utility.$pink;
+    width: 360px;
+    height: 60px;
+    border-radius: 50px;
+    margin-top: 59px;
+    border: none;
+    @include base.sp {
+      width: 3.7rem;
+      font-size: 0.18rem;
+      font-weight: 700;
+      height: 0.6rem;
+      margin-top: 0.44rem;
+      border-radius: 0.5rem;
+    };
+    &_wrapper {
+      text-align: center;
+    };
+  };
+  &_detail {
+    display: flex;
   };
 };
-
-.recruit_font4 {
-  color: utility.$black;
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: utility.$regular;
-  line-height: normal;
-  margin-left: 10px;
-  @include base.sp {
-    font-size: 0.14rem;
-    margin-left: 0.21rem;
-  };
-};
-
-.recrut_back {
-  position: relative;
-};
-
 .recruit_allphoto {
   margin-top: 25px;
-    & li {
-      margin-left: 20px;
-      float: left;
-      width: 280px;
+  & li {
+    margin-left: 20px;
+    float: left;
+    width: 280px;
+    @include base.sp {
+      margin-left: 0;
+      float: none;
+      width: 3.7rem;
+    };
+    &:first-child {
+      margin-left: 0px;
+    };
+    & img {
       @include base.sp {
-        margin-left: 0;
-        float: none;
-        width: 3.7rem;
+        // display: none;
+        border-radius: 0.1rem 0rem 0rem 0rem;
       };
-      &:first-child {
-        margin-left: 0px;
-      };
-      & img {
-        @include base.sp {
-          // display: none;
-          border-radius: 0.1rem 0rem 0rem 0rem;
-        };
-      };
+    };
   };
+  & img {
+    display: block;
+    @include base.sp {
+    width: 3.7rem;
+    height: 2.08rem;
+    };
+  }
 };
-
 
 .pink_back a {
   width: 60px;
@@ -102,51 +130,5 @@
     font-family: Noto Sans JP;
     line-height: 0.2rem;
     margin: 0.04rem;
-  };
-};
-
-.recruit_detail {
-  display: flex;
-};
-
-.recruit_button {
-  font-family: Noto Sans JP;
-  font-size: 18px;
-  font-weight: utility.$bold;
-  color: utility.$white;
-  background-color: utility.$pink;
-  width: 360px;
-  height: 60px;
-  border-radius: 50px;
-  margin-top: 59px;
-  border: none;
-  @include base.sp {
-    width: 3.7rem;
-    font-size: 0.18rem;
-    font-weight: 700;
-    height: 0.6rem;
-    margin-top: 0.44rem;
-    border-radius: 0.5rem;
-  };
-};
-
-.recruit_button_wrapper {
-  text-align: center;
-  & button {
-
-  };
-};
-
-.p-recruit_box_pcimg {
-  display: block;
-  @include base.sp {
-  display: none;
-  };
-};
-
-.p-recruit_box_spimg {
-  display: none;
-  @include base.sp {
-    display: block;
   };
 };

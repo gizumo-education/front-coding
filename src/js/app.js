@@ -1,14 +1,14 @@
 import $ from "jquery";
 
 $(function() {
-  console.log('環境構築完了');
-})
 
-const btn = document.querySelector('#hamburger_btn');
-const nav = document.querySelector('#hamburger_nav');
+});
 
-// btn.addEventListener('click', function () {
-//   console.log('ok!');
-// });
+document.querySelector('.l-header__hamburger').addEventListener('click', function(){
+  this.classList.toggle('active');
+  document.querySelector('.l-header__hamburger_menu').classList.toggle('active');
+});
+
+
 
 

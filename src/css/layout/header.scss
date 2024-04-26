@@ -132,16 +132,57 @@
       height: .06rem;
       background-color: utility.$black;
       border-radius: .03rem;
+      transition: .3s;
     };
   };
 };
 
-.l-header__hamburger_menu a {
-  color: black;
+
+.l-header__hamburger_menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: utility.$black;
+  height: 554px;
+  opacity: 70%;
+  transform: translateX(100%);
+  overflow-x: hidden;
+  transition: .3s;
+  z-index: 999;
+};
+
+.l-header__hamburger_menu li {
   width: 100%;
   display: block;
-  font-size: 0.22rem;
-  margin-top: 0.38rem;
+  font-size: 22px;
+  margin-top: 38px;
+  margin-left: 60.25px;
+  font-weight: 700;
+  color: utility.$white;
 };
+
+.l-header__hamburger_menu li:first-child{
+  margin-top: 57px;
+};
+
+.l-header__hamburger_menu.active{
+  transform: translateX(0);
+};
+
+.l-header__hamburger.active span:first-of-type{
+  top: 50%;
+  transform: rotate(45deg);
+}
+.l-header__hamburger.active span:nth-of-type(2){
+  opacity: 0;/* 透明にする */
+}
+.l-header__hamburger.active span:last-of-type{
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+
+
 
 

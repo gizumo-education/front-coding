@@ -28,15 +28,13 @@
           <span></span>
           <span></span>
         </button>
-        <nav class="l-header__hamburger_nav" id="hamburger_nav">
-          <ul class="l-header__hamburger_menu" id="hamburger_menu">
-            <li><a href="">トップ</a></li>
-            <li><a href="">新着求人</a></li>
-            <li><a href="">4つの特徴</a></li>
-            <li><a href="">転職までの流れ</a></li>
-            <li><a href="">転職お役立ちコンテンツ</a></li>
-          </ul>
-        </nav>
+        <ul class="l-header__hamburger_menu" id="hamburger_menu">
+          <li>トップ</li>
+          <li>新着求人</li>
+          <li>4つの特徴</li>
+          <li>転職までの流れ</li>
+          <li>転職お役立ちコンテンツ</li>
+        </ul>
       </div>
 
 
@@ -102,11 +100,10 @@
     <section class="p-recruit_box" id="recruit_box">
       <div class="p-recruit_box_inner l-inner">
         <p class="p-recruit_box_title">新着求人</p>
-        <ul class="recruit_allphoto clearfix">
+        <ul class="recruit_allphoto clearfix swiper">
           <li>
             <a href>
               <img src="img/picture/recruit01.jpg" class="p-recruit_box_pcimg">
-              <img src="img/picture/recruit01_sp.png" class="p-recruit_box_spimg">
             </a>
             <p class="recruit_font2">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
             <div class="recruit_detail">
@@ -128,7 +125,7 @@
               </p>
             </div>
           </li>
-          <!-- <li>
+          <li>
             <a href>
               <img src="img/picture/recruit02.jpg">
             </a>
@@ -199,7 +196,7 @@
                 <p class="recruit_font4">伊勢市駅 徒歩15分</p>
               </p>
             </div>
-          </li> -->
+          </li>
         </ul>
         <div class="recruit_button_wrapper">
         <button class="recruit_button" type="submit">
@@ -405,9 +402,6 @@
     <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js">
-    $('hamburger_menu a').click(function () {
-      console.log('ok!');
-    });
   </script>
   
 </body>

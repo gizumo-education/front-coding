@@ -49,12 +49,13 @@
     margin-top: 71px;
     color: utility.$white;
     text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    width: max-content;
     @include base.sp {
       font-size: 0.21rem;
       margin-top: 0.6rem;
-      left: 50%;
-      transform: translate(-50%);
-      width: max-content;
+
     };
   };
   &_detail {
