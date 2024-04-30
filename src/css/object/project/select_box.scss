@@ -75,7 +75,6 @@
   border: 1px solid utility.$borderPink;
   padding: 17px 0px 17px 15px;
   appearance: none;
-  // -webkit-appearance: none;
   @include base.sp {
     width: 1rem;
     height: 0.3rem;
@@ -88,6 +87,7 @@
     margin-left: 0.25rem;
   };
 };
+
 
 .clearfix:after {
   display: block;
@@ -128,17 +128,25 @@
   @include base.sp {
     width: 1.6rem;
     height: 0.4rem;
-    font-family: Noto Sans JP;
     margin-left: 0rem;
     margin-top: 0.19rem;
     font-size: 0.18rem;
   };
+  img {
+      @include base.sp {
+        width: 0.18rem;
+        height: 0.18rem;
+      };
+  }
   &.glass {
     input{
       background-image: url('../img/icon/パス 18.png');
     };
   };
 };
+
+
+
 
 
 
