@@ -196,28 +196,3 @@
     }
   }
 }
-
-.slider {
-  width: 15rem;
-  height: 5rem;
-  display: flex;
-
-  & > img {
-    display: flex;
-    width: 30px;
-    object-fit: cover;
-    overflow: hidden;
-  }
-}
-
-.slick-list {
-  width: 100%;
-
-  & > .slick-track {
-    transform: translate3d(100px);
-  }
-}
-
-.slick-cloned {
-  display: none;
-}

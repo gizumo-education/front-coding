@@ -6,5 +6,9 @@ $(function() {
 })
 
 $(function () {
-  $('.slider').slick();
+  $('.slick-recruitment').slick({
+    prevArrow: '<img src="./img/icon/news-page-arrow.png"></img>',
+    nextArrow: '<img src="./img/icon/news-page-arrow.png"></img>',
+    slidesToShow: '4',
+  });
 });
