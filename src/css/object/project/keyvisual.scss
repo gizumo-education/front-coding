@@ -8,14 +8,14 @@
   height: 500px;
   position: relative;
 
-  &__image {
+  &__contents {
     background: url("../img/picture/keyvisual-image-web.jpg") no-repeat center center;
     width: 100%;
     height: 100%;
     position: relative;
   }
 
-  &__top-rated {
+  &__image {
     background: url("../img/icon/keyvisual-icon-web.png") no-repeat;
     width: 341.81px;
     height: 168.51px;
@@ -38,26 +38,24 @@
     border-radius: 10px;
     background: var.$white;
     width: 391px;
-    height: 69px;
     top: 380px;
-    left: 809.5px;
+    left: 50%;
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
   }
 
   &__text {
     color: var.$brightTeal;
     font-size: 20px;
     line-height: 28.96px;
+    padding: 5px 0;
+  }
 
-    span {
-      font: {
-        size: 40px;
-        weight: var.$bold;
-      }
-      line-height: 57.92px;
+  &__text-bold {
+    font: {
+      size: 40px;
+      weight: var.$bold;
     }
+    line-height: 57.92px;
   }
 }
