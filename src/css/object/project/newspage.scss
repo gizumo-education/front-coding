@@ -1,24 +1,114 @@
 @use '../../object/utility/utility.scss';
 
+.p-total__recruitment {
+  @include utility.tab {
+    width: 50%;
+  }
+}
 
-ul {
-  display: flex;
+.p-recruitment {
+  width: 400px;
 
-  & > .p-main__money {
-    font-size: 14px;
-    font-weight: 400;
-    padding: 5px;
-    margin-top: 10px;
-    background-color: #ffcad0;
-    width: 60px;
-    text-align: center;
+  & img {
+    border-radius: 10px;
+  }
+}
+
+// .slick-arrow {
+//   position: relative;
+// }
+
+.p-scloll__button {
+  width: 60px;
+  height: 60px;
+  background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+  border-radius: 30px;
+  position: absolute;
+  left: 70%;
+  top: 30%;
+  @include utility.sp {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    left: 0;
+    top: 1.5rem;
   }
 
-  & > .p-sub__money {
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 10px;
-    padding: 5px;
+  & > .p-scloll__size {
+    margin-top: 15px;
+    margin-left: 15px;
+    @include utility.sp {
+      width: 30%;
+      height: 0.21rem;
+      margin-top: 0.15rem;
+      margin-left: 0.17rem;
+    }
+  }
+}
+
+div {
+
+  & > .p-money {
+    display: flex;
+
+    & > .p-main__money {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 5px;
+      margin-top: 10px;
+      background-color: #ffcad0;
+      width: 60px;
+      text-align: center;
+    }
+  
+    & > .p-sub__money {
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 10px;
+      padding: 5px;
+    }
+  }
+
+  & > .p-place {
+    display: flex;
+
+    & > .p-main__money {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 5px;
+      margin-top: 10px;
+      background-color: #ffcad0;
+      width: 60px;
+      text-align: center;
+    }
+  
+    & > .p-sub__money {
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 10px;
+      padding: 5px;
+    }
+  }
+
+  & > .p-station {
+    display: flex;
+
+    & > .p-main__money {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 5px;
+      margin-top: 10px;
+      background-color: #ffcad0;
+      width: 60px;
+      text-align: center;
+    }
+  
+    & > .p-sub__money {
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 10px;
+      padding: 5px;
+    }
   }
 }
 
@@ -76,15 +166,38 @@ div {
   
     & > .p-total__recruitment {
 
-      & > .slick-arrow {
-        height: 50px;
+      & > .p-scloll__size {
+        z-index: 1;
+        position: relative;
+        height: 55px;
+        width: 170px;
+        padding: 10px 12px 10px 12px;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+        border-radius: 30px;
+        top: 80px;
+        left: 60px;
+
+      }
+
+      & > .p-scloll__size__second {
+        z-index: 1;
+        position: relative;
+        height: 55px;
+        width: 170px;
+        padding: 10px 12px 10px 12px;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+        border-radius: 30px;
+        top: 80px;
+        right: 75px;
+        transform: scale(-1, 1);
+
       }
 
       @include utility.pc {
         display: flex;
         margin: 0 auto;
         margin-top: 30px;
-        width: 1180px;
+        width: 1360px;
         justify-content: space-between;
       }
       @include utility.tab {
@@ -104,12 +217,16 @@ div {
         & > .slick-track {
 
           & > .slick-slide {
-            margin-left: 20px;
+            margin-right: 15px;
 
             & > .p-recruitment {
+              
+              ul {
+                display: flex;
+              }
 
               & > .p-money {
-                display: flex;
+                //display: flex;
   
                 & > .p-main__money {
                   font-size: 14px;
