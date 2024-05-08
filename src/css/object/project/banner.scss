@@ -1,0 +1,41 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/_variables.scss' as var;
+// お仕事検索に関するスタイル
+
+.p-banner {
+  background: var.$black;
+  width: 100%;
+
+  &__image {
+    position: relative;
+    width: 100%;
+    padding: 150px 0;
+    background: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("../img/picture/banner-image-web.jpg") no-repeat center center;
+      opacity: 0.5;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: var.$white;
+    line-height: 60px;
+    font: {
+      size: 25px;
+      weight: 700;
+    }
+  }
+}
