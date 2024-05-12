@@ -1,0 +1,117 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/_variables.scss' as var;
+
+
+.p-post {
+  text-align: center;
+  padding-top: 126px;
+
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  &__boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 53px;
+  }
+
+  &__box {
+    background: var.$black;
+    border-radius: 10px;
+  }
+
+  &__box-image-1 {
+    position: relative;
+    background: transparent;
+    width: 380px;
+    padding:120px 0;
+    border-radius: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("../img/picture/post-image-1.jpg") no-repeat center center;
+      opacity: 0.5;
+    }
+  }
+
+  &__box-image-2 {
+    position: relative;
+    background: transparent;
+    width: 380px;
+    padding:120px 0;
+    border-radius: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("../img/picture/post-image-2.jpg") no-repeat center center;
+      border-radius: 10px;
+      opacity: 0.5;
+    }
+  }
+
+  &__box-title {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    font: {
+      size: 24px;
+      weight: var.$bold;
+    }
+    line-height: 24px;
+    color: var.$white;
+  }
+
+  &__box-description {
+    position: absolute;
+    top: 139px;
+    text-align: center;
+    width: 100%;
+    font: {
+      size: 16px;
+      weight: var.$regular;
+    }
+    line-height: 23.17px;
+    color: var.$white;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+  }
+
+  &__button-load-more {
+    background: var.$softPink;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    width: 420px;
+    height: 60px;
+    font: {
+      size: 18px;
+      weight: var.$bold;
+    }
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var.$white;
+  }
+}

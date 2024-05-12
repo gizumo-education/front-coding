@@ -1,0 +1,189 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/_variables.scss' as var;
+
+.p-flow {
+  text-align: center;
+  padding-top: 126px;
+
+  &__title {
+    font: {
+      size: 25px;
+      weight: var.$bold;
+    }
+    line-height: 25px;
+  }
+
+  &__lists {
+    display: flex;
+    align-items: center;
+    padding-top: 53px;
+  }
+
+  &__step {
+    position: relative;
+    border: 2px solid var.$softPink;
+    border-radius: 15px;
+    width: 280px;
+    height: 360px;
+    padding: 180px 0 42px;
+  }
+
+  &__step1-icon {
+    position: absolute;
+    background: url("../img/icon/flow-icon-step1.png");
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__step1-image {
+    position: absolute;
+    background: url("../img/icon/flow-icon-sheet.png");
+    top: 60px;
+    left: 98px;
+    width: 100px;
+    height: 100px;
+  }
+
+  &__step1-title {
+    font: {
+      size: 24px;
+      weight: var.$bold;
+    }
+    line-height: 30px;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  &__step1-description {
+    font: {
+      size: 14px;
+      weight: var.$regular;
+    }
+    line-height: 20.27px;
+    text-align: left;
+    padding: 20px 15px 0;
+  }
+
+  &__step2-icon {
+    position: absolute;
+    background: url("../img/icon/flow-icon-step2.png");
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__step2-image {
+    position: absolute;
+    background: url("../img/icon/flow-icon-search.png");
+    top: 70px;
+    left: 95px;
+    width: 80px;
+    height: 80px;
+  }
+
+  &__step2-title {
+    font: {
+      size: 24px;
+      weight: var.$bold;
+    }
+    line-height: 30px;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  &__step2-description {
+    font: {
+      size: 14px;
+      weight: var.$regular;
+    }
+    line-height: 20.27px;
+    text-align: left;
+    padding: 20px 15px 0;
+  }
+
+  &__step3-icon {
+    position: absolute;
+    background: url("../img/icon/flow-icon-step3.png");
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__step3-image {
+    position: absolute;
+    background: url("../img/icon/flow-icon-mail.png");
+    top: 60px;
+    left: 90px;
+    width: 107px;
+    height: 100px;
+  }
+
+  &__step3-title {
+    font: {
+      size: 24px;
+      weight: var.$bold;
+    }
+    line-height: 30px;
+    text-align: center;
+    padding: 10px 30px 0;
+  }
+
+  &__step3-description {
+    font: {
+      size: 14px;
+      weight: var.$regular;
+    }
+    line-height: 20.27px;
+    text-align: left;
+    padding: 40px 15px 0;
+  }
+
+  &__step4-icon {
+    position: absolute;
+    background: url("../img/icon/flow-icon-step4.png");
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__step4-image {
+    position: absolute;
+    background: url("../img/icon/flow-icon-sparkle.png");
+    top: 55px;
+    left: 80px;
+    width: 108px;
+    height: 110px;
+  }
+
+  &__step4-title {
+    font: {
+      size: 24px;
+      weight: var.$bold;
+    }
+    line-height: 30px;
+    text-align: center;
+    padding: 10px 30px 0;
+  }
+
+  &__step4-description {
+    font: {
+      size: 14px;
+      weight: var.$regular;
+    }
+    line-height: 20.27px;
+    text-align: left;
+    padding: 40px 15px 0;
+  }
+
+  &__next-icon {
+    background: url("../img/icon/flow-icon-right.png");
+    width: 20px;
+    height: 40px;
+  }
+
+}
