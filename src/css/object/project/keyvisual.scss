@@ -1,4 +1,4 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as uti;
 @use '/src/css/foundation/variables' as var;
 // ページ上部のキービジュアルに関するスタイル
 
@@ -14,6 +14,17 @@
     background-position: center;
     background-size: cover;
     padding: 56px 30px 53px 0;
+
+    @include uti.tab {
+      width: 12rem;
+      padding: 0.56rem 0.3rem 0.53rem 0;
+    }
+
+    @include uti.sp {
+      width: 4rem;
+      height: 2.7rem;
+      padding: 0.61rem 0.03rem 0.52rem 0;
+    }
   }
 
   &__contents {
@@ -26,6 +37,15 @@
   &__img {
     width: 341px;
     height: 168px;
+
+    @include uti.tab {
+      width: 3.41rem;
+      height: 1.68rem;
+    }
+    @include uti.sp {
+      width: 1.5rem;
+      height: 0.7rem;
+    }
   }
 
   & h1 {
@@ -37,6 +57,16 @@
     margin-top: 40px;
     text-shadow: 0 4px 4px rgba(var.$shadow, 0.25);
     display: inline-block;
+
+    @include uti.tab {
+      font-size: 0.5rem;
+      line-height: 0.651rem;
+      margin-top: 0.4rem;
+    }
+    @include uti.sp {
+      font-size: 0.17rem;
+      line-height: 0.22rem;
+    }
   }
 
   &__texts {
@@ -46,23 +76,59 @@
     background-color: var.$white;
     text-align: center;
     padding: 5px 40px 6px;
-    color: var.$green;;
+    color: var.$green;
     border-radius: 10px;
     border: 2.3px solid var.$green;
-    font-family: 'Noto sans JP',sans-serif;
+    font-family: 'Noto sans JP', sans-serif;
+
+    @include uti.tab {
+      width: 3.91rem;
+      height: 0.69rem;
+      margin-top: 0.54rem;
+      padding: 0.05rem 0.4rem 0.06rem;
+    }
+
+    @include uti.sp {
+      width: 1.7rem;
+      height: 0.3rem;
+      margin-top: 0.18rem;
+      padding: 0.04rem 0.23rem 0.03rem 0.23rem;
+      border-radius: .05rem;
+      border: .015rem solid var.$green;
+    }
+
   }
 
   &__text {
     font-size: 20px;
     font-weight: var.$regular;
-    font-family: 'Noto sans JP',sans-serif;
+    font-family: 'Noto sans JP', sans-serif;
     line-height: 28.96px;
 
+    @include uti.tab {
+      font-size: 0.2rem;
+      line-height: 0.28rem;
+    }
+    @include uti.sp {
+      font-size: 0.08rem;
+      line-height: 0.11rem;
+    }
+
+
     &--large {
-      font-family: 'Noto sans JP',sans-serif;
+      font-family: 'Noto sans JP', sans-serif;
       font-size: 40px;
       font-weight: var.$bold;
       line-height: 57.92px;
+
+      @include uti.tab {
+        font-size: 0.4rem;
+        line-height: 0.5792rem;
+      }
+      @include uti.sp {
+        font-size: 0.16rem;
+        line-height: 0.23rem;
+      }
     }
   }
 

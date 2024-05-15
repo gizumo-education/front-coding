@@ -135,4 +135,36 @@
       border-radius: .03rem;
     }
   }
+
+  &__nav{
+    &__inner {
+      display: none;
+      @include utility.sp {
+        display: none;//frex
+        position: absolute;
+        z-index: 200;
+        width: 100%;
+        height: 5.5rem;
+        background-color: rgba(0,0,0,0.7);;
+        left: 0;
+        padding-top: .57rem;
+        padding-left: .59rem;
+      }
+    }
+    &__item {
+      margin-top: .38rem;
+      
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &__link {
+      color: utility.$white;
+      font-size: .22rem;
+      font-weight: 700;
+      line-height: .22rem;
+    }
+  }
+
 }

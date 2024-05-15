@@ -1,23 +1,46 @@
 @use '/src/css/foundation/variables' as var;
-@use '/src/css/layout/inner.scss';
 @use '/src/css/object/component/button.scss';
+@use '../../object/utility/utility.scss' as uti;
+
 
 .p-flow {
+  &__br {
+    display: none;
+  }
+  
   &__triangle {
-    width: 0;
-    height: 0;
-    border-left: 20px solid var.$pink;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
+    width: 20px;
+    height: 40px;
+    background-color: var.$pink;
     position: absolute;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
     top: 50%;
     left: 100%;
     transform: translateY(-50%); 
+    @include uti.tab {
+      width: .2rem;
+      height: .4rem;  
+    }
+    @include uti.sp {
+      top: 100%;
+      left: 50%;
+      width: .4rem;
+      height: .2rem; 
+      clip-path: polygon(0 0, 100% 0, 50% 100%); 
+      transform: translate(-50%,0);
+      margin-top: .09rem;
+    }
   }
 
   &__wrap {
     margin-top: 105px;
     position: relative;
+    @include uti.tab {
+    margin-top: 1.05rem;
+    }
+    @include uti.sp {
+      margin-top: 0.6rem;
+    }
   }
 
   & h2 {
@@ -26,11 +49,27 @@
     font-weight: 700;
     line-height: 25px;
     text-align: center;
+    @include uti.tab {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+      }
+    @include uti.sp {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+      }
   }
 
   &__contents {
     margin-top: 50px;
     display: flex;
+    @include uti.tab {
+    margin-top: 0.5rem;
+    }
+    @include uti.sp {
+      margin-top: 0.34rem;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__content {
@@ -40,20 +79,46 @@
     border: 2.27px solid var.$pink;
     border-radius: 10px;
     margin-left: 20px;
-
+      @include uti.tab {
+      width: 2.8rem;
+      height: 3.6rem;
+      border: 0.02rem solid var.$pink;
+      margin-left: 0.2rem;
+      }
+      @include uti.sp {
+        width: 2.8rem;
+        height: 2.93rem;
+        margin-left: 0;
+        margin-top: .39rem;
+      }
 
     &:first-child {
       margin-left: 0;
+      margin-top: 0;
     }
 
     &__texts {
-      margin-left: 20px;
-      width: 237px;
       position: absolute;
       top: 180px;
+      @include uti.tab {
+        margin-left: 0.2rem;
+        width: 2.37rem;
+        top: 1.8rem;
+      }
+
+      @include uti.sp {
+       top: 1.52rem;
+       margin: 0 auto;
+      }
 
       &--b {
         top: 193px;
+        @include uti.tab {
+          top: 1.93rem;
+        }
+        @include uti.sp {
+          top: 1.52rem;
+         }
       }
     }
 
@@ -63,16 +128,45 @@
       font-weight: 700;
       line-height: 30px;
       font-family: sans-serif;
+      @include uti.tab {
+        font-size: 0.24rem;
+        line-height: 0.3rem;
+      }
+      @include uti.sp {
+        font-size: 0.2rem;
+        line-height: 0.28rem;
+
+      }
     }
 
     &__text {
+      margin-left: 20px;
       font-size: 14px;
       font-weight: 400;
       line-height: 20px;
       margin-top: 18px;
+      
+      @include uti.tab {
+        font-size: 0.14rem;
+        line-height: 0.2rem;
+        margin-top: 0.18rem;
+        margin-left: 0;
+      }
+      @include uti.sp {
+        font-size: 0.14rem;
+        line-height: 0.2rem;
+        margin: 0.1rem .2rem 0;
+      }
+      
 
       &--b {
         margin-top: 30px;
+        @include uti.tab {
+          margin-top: 0.3rem;
+        }
+        @include uti.sp {
+          margin-top: 0.1rem;
+        }
       }
     }
   }
@@ -82,6 +176,10 @@
     display: flex;
     margin-top: 10px;
     margin-left: 10px;
+    @include uti.tab {
+      margin-top: 0.1rem;
+      margin-left: 0.1rem;
+    }
   }
 
   &__number {
@@ -92,36 +190,92 @@
     height: 60px;
     border-radius: 30px;
     justify-content: center;
+    @include uti.tab {
+      width: 0.6rem;
+      height: 0.6rem;
+    }
+    @include uti.sp {
+      width: 0.4rem;
+      height: 0.4rem;
+    }
 
     &__text {
       color: var.$white;
       font-size: 16px;
       line-height: 19px;
       font-weight: 700;
+      @include uti.tab {
+        font-size: 0.16rem;
+        line-height: 0.19rem;
+      }
+      @include uti.sp {
+        font-size: 0.1rem;
+        line-height: 0.12rem;
+      }
     }
   }
 
   &__img {
     position: absolute;
+    @include uti.tab {
+      width: 1rem;
+      height: 1rem;
+    }
+    @include uti.sp {
+      width: 0.7rem;
+      height: 0.7rem;
+    }
 
     &--1 {
       top: 60px;
       left: 98px;
+      @include uti.tab {
+        top: 0.6rem;
+        left: 0.98rem;
+      }
+      @include uti.sp {
+        top: 0.55rem;
+        left: 1rem;
+      }
     }
 
     &--2 {
       top: 70px;
       left: 95px;
+      @include uti.tab {
+        top: 0.6rem;
+        left: 0.95rem;
+      }
+      @include uti.sp {
+        top: 0.55rem;
+        left:   1rem;
+      }
     }
 
     &--3 {
       top: 60px;
       left: 90px;
+      @include uti.tab {
+        top: 0.6rem;
+        left: 0.9rem;
+      }
+      @include uti.sp {
+        top: 0.55rem;
+        left: 0.99rem;
+      }
     }
 
     &--4 {
       top: 55px;
       left: 70px;
+      @include uti.tab {
+        top: 0.55rem;
+        left: 0.8rem;
+      }
+      @include uti.sp {
+        top: 0.55rem;
+        left: 1rem;
+      }
     }
   }
 

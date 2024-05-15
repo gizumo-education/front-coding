@@ -1,6 +1,7 @@
 @use '/src/css/foundation/variables' as var;
-@use '/src/css/layout/inner.scss';
 @use '/src/css/object/component/button.scss';
+@use '../../object/utility/utility.scss' as uti;
+
 
 .p-search {
   &__wrap {
@@ -12,9 +13,26 @@
     flex-direction: column;
     padding: 40px;
     border-radius: 10px;
+    @include uti.tab {
+      margin-top: 0.6rem;
+      padding: 0.4rem;
+    }
+    @include uti.sp {
+      margin-top: 0.25rem;
+      padding: 0.15rem 0.25rem 0.2rem 0.25rem;
+      width: 3.7rem;
+      flex-wrap: wrap;
+    }
+
 
     &--second {
       margin-top: 150px;
+      @include uti.tab {
+        margin-top: 1.5rem;
+      }
+      @include uti.sp {
+        margin-top: 0.6rem;
+      }
       }
   }
 
@@ -23,6 +41,14 @@
     font-weight: 700;
     font-size: 25px;
     line-height: 25px;
+    @include uti.tab {
+      font-size: 0.25rem;
+      line-height: 0.25rem;
+    }
+    @include uti.sp {
+      font-size: 0.22rem;
+      line-height: 0.22rem;
+    }
   }
 
   &__subtitle {
@@ -31,6 +57,16 @@
     font-size: 20px;
     line-height: 28px;
     font-weight: 400;
+    @include uti.tab {
+      margin-top: 0.2rem;
+      font-size: 0.2rem;
+      line-height: 0.28rem;
+    }
+    @include uti.sp {
+      margin-top: 0.16rem;
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+    }
   }
 
 
@@ -38,8 +74,16 @@
   &__inputbox {
     position: relative;
     margin-left: 15px;
+    @include uti.tab {
+      margin-left: 0.15rem;
+    }
   }
 
+  &__selectboxes {
+    @include uti.sp {
+      margin-left: 0.1rem;
+    }
+  }
   &__selectboxes:first-child {
     margin-left: 0;
   }
@@ -53,33 +97,89 @@
     border-left: 10px solid transparent;
     border-top: 10px solid var.$selectbox;
     pointer-events: none;
+    @include uti.tab {
+      top: 0.25rem;
+      right: 0.15rem;
+      border-right: .1rem solid transparent;
+      border-left: .1rem solid transparent;
+      border-top: .1rem solid var.$selectbox;
+    }
+    @include uti.sp {
+      top: .125rem;
+      right: .07rem;
+      border-right: .07rem solid transparent;
+      border-left: .07rem solid transparent;
+      border-top: .07rem solid var.$selectbox;
+    }
   }
-
+  
   &__selectbox,
   &__inputbox {
     width: 200px;
     height: 60px;
     border-radius: 10px;
+    padding-left: 15px;
     border: 2.3px solid var.$selectbox;
     -webkit-appearance: none;
     appearance: none;
-    padding: 17px 15px;
     font-size: 18px;
     font-family: 'Noto sans JP',sans-serif;
+    @include uti.tab {
+      border: 0.023rem solid var.$selectbox;
+      width: 2rem;
+      height: 0.6rem;
+      font-size: 0.18rem;
+      border-radius: 0.1rem;
+      padding-left: .15rem;
+    }
+    @include uti.sp {
+      width: 1rem;
+      height: 0.3rem;
+      border: 0.01rem solid var.$selectbox;
+      font-size: 0.12rem;
+      border-radius: 5px;
+      padding-left: .08rem;
+    }
 
+    
     &__wrap {
       display: flex;
       flex-direction: row;
       margin-top: 26px;
+      @include uti.tab {
+        margin-top: 0.26rem;
+      }
+      @include uti.sp {
+        flex-direction: column;
+        align-items: center;
+        margin-top: .13rem;
+      }
     }
+
+    &__flex {
+      display: flex;
+      @include uti.sp {
+        display: flex;
+      }
+    }
+    
   }
 
   &__inputbox {
     width: 300px;
+    padding-left: 10px;
+    @include uti.tab {
+      width: 3rem;
+    }
 
     &::placeholder {
       color: var.$gray;
     }
+    @include uti.sp {
+      width: 3.2rem;
+      margin: 0;
+      margin-top: .15rem;
+    } 
   }
 
   &__buttons {
@@ -98,6 +198,38 @@
     padding-left: 14px;
     margin-left: 15px;
     border: none;
+    @include uti.tab {
+      width: 1.4rem;
+      height: 0.6rem;
+      padding-left: 0.14rem;
+      margin-left: 0.15rem;
+      border-radius: .3rem;
+    }
+
+    @include uti.sp {
+      width: 1.6rem;
+      height: 0.4rem;
+      margin-left: 0;
+      margin-top: .15rem;
+      border-radius: .3rem;
+
+    }
+
+    &__img {
+      width: 29px;
+      height: 29px;
+
+      @include uti.tab {
+        width: .29rem;
+        height: .29rem;
+      }
+
+      @include uti.sp {
+        width: .17rem;
+        height: .17rem;
+      }
+  
+    }
 
 
     &__text {
@@ -106,6 +238,18 @@
       line-height: 18px;
       font-weight: 700;
       font-family: 'Noto sans JP',sans-serif;
+      margin-left: 4px;
+      @include uti.tab {
+        margin-left: .04rem;
+        font-size: 0.18rem;
+        line-height: 0.18rem;
+      }
+      @include uti.sp {
+        font-size: 0.18rem;
+        font-weight: 0;
+        margin-left: .14rem;
+      }
+  
     }
   }
   

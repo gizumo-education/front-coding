@@ -1,6 +1,7 @@
 @use '/src/css/foundation/variables' as var;
-@use '/src/css/layout/inner.scss';
 @use '/src/css/object/component/button.scss';
+@use '../../object/utility/utility.scss' as uti;
+
 
 .p-ads {
   background-color: var.$black;
@@ -12,6 +13,14 @@
     background-color: rgba(0,0,0,0.5);
     background-blend-mode: overlay;
     background-size: cover;
+    @include uti.tab {
+      height: 3rem;
+      padding: 1.04rem 0;
+    }
+    @include uti.sp {
+      height: .75rem;
+      padding: .16rem 0;
+    }
 
     & p {
       font-family: 'Noto sans JP',sans-serif;
@@ -21,6 +30,18 @@
       line-height: 36px;
       text-align: center;
       margin-top: 20px;
+      @include uti.tab {
+        font-size: 0.25rem;
+        line-height:0.36rem;
+        margin-top: 0.2rem;
+      }
+
+      @include uti.sp {
+        font-size: .14rem;
+        line-height:0.2rem;
+        font-weight: 400;
+        margin: .02rem;
+      }
 
       &:first-child {
         margin-top: 0;
