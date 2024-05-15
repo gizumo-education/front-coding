@@ -52,6 +52,7 @@
       flex-wrap: wrap;
       font-size: 16px;
       margin-top: 8.08px;
+      line-height: 22px;
     }
 
     &__leftbutton {
@@ -73,7 +74,7 @@
         border-top: solid 0.7px var.$black;
         border-right: solid 0.7px var.$black;
         position: absolute;
-        transform: translate(-50%, -50%) rotate(-135deg);
+        transform: translate(-30%, -50%) rotate(-135deg);
       }
     }
   
@@ -96,7 +97,7 @@
         border-top: solid 0.7px var.$black;
         border-right: solid 0.7px var.$black;
         position: absolute;
-        transform: translate(-50%, -50%) rotate(45deg);
+        transform: translate(-70%, -50%) rotate(45deg);
       }
     }
 
@@ -121,7 +122,9 @@
   }
 
   dd { 
-    max-width: 130px;
+    max-width: 130px; 
+    display: grid;
+    place-items: center;
   }
 
   &__more {
