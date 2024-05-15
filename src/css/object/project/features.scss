@@ -8,7 +8,7 @@
   &__title {
     font: {
       size: 25px;
-      font-weight: var.$bold;
+      weight: var.$bold;
     }
     line-height: 25px;
   }
@@ -21,7 +21,7 @@
     row-gap: 20px;
     justify-content: center;
     align-items: stretch;
-    padding-top: 53px;
+    margin-top: 53px;
     width: 100%;
   }
 
@@ -29,7 +29,8 @@
     background: var.$pink;
     width: 100%;
     border-radius: 10px;
-    min-height: 0;
+    padding: 33px 0;
+    text-align: center;
   }
 
   &__box-title {
@@ -39,7 +40,6 @@
       weight: var.$bold;
     }
     line-height: 24px;
-    padding-top: 40px;
   }
 
   &__box-description {
@@ -47,8 +47,7 @@
       size: 14px;
       weight: var.$regular;
     }
-    line-height: 20.27px;
-    text-align: center;
-    padding: 40px 40px;
+    line-height: 20px;
+    margin-top: 30px;
   }
 }

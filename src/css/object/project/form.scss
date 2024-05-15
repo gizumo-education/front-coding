@@ -30,14 +30,14 @@
     }
   }
 
-  &__lists {
+  &__items {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 26px;
   }
 
-  &__list {
+  &__item {
     position: relative;
   }
 
