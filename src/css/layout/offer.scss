@@ -9,11 +9,16 @@
   h1 {
     font-size: 25px;
     padding-top: 64px;
-    display: block;
+  }
+  ul {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(4, 280px);
   }
   li {
     margin-top: 25px;
-    width: 280px;
   }
   &__box {
     h2 {
