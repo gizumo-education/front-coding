@@ -1,5 +1,5 @@
 @use "../foundation/variables" as var;
-
+@use '../object/utility/utility.scss';
 
 .p-keyvisual {
   background-color: var.$bgBlue; 
@@ -51,6 +51,11 @@
       line-height: 57.92px;
       }
   }
+}
 
-
+@include utility.sp {
+  .p-keyvisual{
+   background-color: none;
+   width: 400px;
+  }
 }

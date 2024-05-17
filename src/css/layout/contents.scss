@@ -60,12 +60,13 @@
       span{
         font-size: 15px;
         font-weight: var.$regular;
+        line-height: 23.17px;
       }
   }
 }
 &__more{
   display: block;
-  width: 360px;
+  width: 420px;
   height: 60px;
   border-radius: 30px;
   background-color: var.$pink;

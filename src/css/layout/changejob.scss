@@ -1,5 +1,6 @@
 @use "../foundation/variables" as var;
 
+
 .p-changejob {
   width: 1180px;
   height: 435px;
@@ -17,7 +18,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 100px;
     
     &__step {
       display: flex;
@@ -28,6 +29,8 @@
       background-color: var.$pink;
       border-radius: 100px;
       line-height: 20.27px;
+      margin: 10px;
+
       &__center{   
         color: var.$white;
         font-size: 15px; 
@@ -41,6 +44,8 @@
       font-weight: var.$bold;
       width: 216px;
       height: 60px;
+      margin: 20px auto 0;
+      line-height: 30px;
     }
     
     & li {
@@ -55,12 +60,11 @@
       height: 360px; 
       border: 2.27px solid var.$pink;
       box-sizing: border-box; 
-      padding: 20px; 
       text-align: center; 
 
       &::after {
         top: 45%;
-        left: 100.5%;
+        left: 100.8%;
         position: absolute;
         border-top: 20px solid transparent;
         border-bottom: 20px solid transparent;
@@ -74,6 +78,7 @@
     }
 
     & img {
+      
       width: 102.29px;
       height: 100px;
     }
@@ -85,6 +90,8 @@
       display: inline-block;
       font-size: 14px;
       text-align: left;
+      margin-top: 18px;
+      line-height: 20.27px;
     }
     &__more{
       display: block;
