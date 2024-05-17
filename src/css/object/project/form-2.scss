@@ -1,19 +1,17 @@
 @use '../../object/utility/utility.scss';
 @use '../../foundation/_variables.scss' as var;
-// お仕事検索に関するスタイル
 
-.p-form {
-  padding: 60px 0;
+.p-form-2 {
+  padding: 150px 0 200px;
 
   &__contents {
     background: var.$lightBlue;
     border-radius: 10px;
     padding: 40px 20px;
+    text-align: center;
   }
 
   &__title {
-    text-align: center;
-    line-height: 25px;
     font: {
       size: 25px;
       weight: var.$bold;
@@ -21,7 +19,6 @@
   }
 
   &__description {
-    text-align: center;
     line-height: 28.96px;
     margin-top: 20px;
     font: {
@@ -30,14 +27,14 @@
     }
   }
 
-  &__lists {
+  &__items {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 26px;
   }
 
-  &__list {
+  &__item {
     position: relative;
   }
 

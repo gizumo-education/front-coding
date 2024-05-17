@@ -1,0 +1,51 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/_variables.scss' as var;
+
+.p-features {
+  text-align: center;
+  padding-top: 126px;
+
+  &__title {
+    font: {
+      size: 25px;
+      weight: var.$bold;
+    }
+    line-height: 25px;
+  }
+
+  &__boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 53px;
+    width: 100%;
+  }
+
+  &__box {
+    background: var.$pink;
+    border-radius: 10px;
+    padding: 33px 0;
+  }
+
+  &__box-title {
+    color: var.$softPink;
+    font: {
+      size: 24px;
+      weight: var.$bold;
+    }
+    line-height: 24px;
+  }
+
+  &__box-description {
+    font: {
+      size: 14px;
+      weight: var.$regular;
+    }
+    line-height: 20px;
+    margin-top: 30px;
+  }
+}

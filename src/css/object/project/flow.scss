@@ -1,0 +1,135 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/_variables.scss' as var;
+
+.p-flow {
+  text-align: center;
+  padding-top: 126px;
+
+  &__title {
+    font: {
+      size: 25px;
+      weight: var.$bold;
+    }
+    line-height: 25px;
+  }
+
+  &__lists {
+    display: flex;
+    align-items: center;
+    margin-top: 53px;
+  }
+
+  &__step {
+    position: relative;
+    border: 2px solid var.$softPink;
+    border-radius: 15px;
+    width: 280px;
+    padding: 180px 15px 42px;
+    text-align: center;
+  }
+
+  &__step1-title,
+  &__step2-title,
+  &__step3-title,
+  &__step4-title {
+    font: {
+      size: 24px;
+      weight: var.$bold;
+    }
+    line-height: 30px;
+  }
+
+  &__step3-title,
+  &__step4-title {
+    padding: 15px 0;
+  }
+
+  &__step-description {
+    font: {
+      size: 14px;
+      weight: var.$regular;
+    }
+    line-height: 20px;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  &__step1-icon {
+    position: absolute;
+    background: url("../img/icon/flow-icon-step1.png");
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__step1-image {
+    position: absolute;
+    background: url("../img/icon/flow-icon-sheet.png");
+    top: 60px;
+    left: 98px;
+    width: 100px;
+    height: 100px;
+  }
+
+  &__step2-icon {
+    position: absolute;
+    background: url("../img/icon/flow-icon-step2.png");
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__step2-image {
+    position: absolute;
+    background: url("../img/icon/flow-icon-search.png");
+    top: 70px;
+    left: 95px;
+    width: 80px;
+    height: 80px;
+  }
+
+  &__step3-icon {
+    position: absolute;
+    background: url("../img/icon/flow-icon-step3.png");
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__step3-image {
+    position: absolute;
+    background: url("../img/icon/flow-icon-mail.png");
+    top: 60px;
+    left: 90px;
+    width: 107px;
+    height: 100px;
+  }
+
+  &__step4-icon {
+    position: absolute;
+    background: url("../img/icon/flow-icon-step4.png");
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__step4-image {
+    position: absolute;
+    background: url("../img/icon/flow-icon-sparkle.png");
+    top: 55px;
+    left: 80px;
+    width: 108px;
+    height: 110px;
+  }
+
+  &__next-icon {
+    background: url("../img/icon/flow-icon-right.png");
+    width: 20px;
+    height: 40px;
+  }
+
+}

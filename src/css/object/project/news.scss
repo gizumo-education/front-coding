@@ -78,7 +78,7 @@ $images: (
     line-height: 21px;
     font: {
       size: 14px;
-      weight: 400;
+      weight: var.$regular;
     }
   }
 
@@ -118,7 +118,7 @@ $images: (
     height: 60px;
     font: {
       size: 18px;
-      weight: 700;
+      weight: var.$bold;
     }
     display: flex;
     align-items: center;
