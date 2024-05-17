@@ -1,10 +1,11 @@
 @use "../foundation/variables" as var;
+@use "../foundation/mixins" as uti;
 
 .p-gizujob {
   display: block;
   position: relative;
   background-size: 100%;
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -36,11 +37,20 @@
     margin-bottom: 103px;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: var.$bold;
+
+    @include uti.tab {
+      font-size: 0.20rem;
+      margin-bottom: 1.03rem;
+    }
   }
 
   br {
     display: block;
     margin: 21px;
     content: "";
+
+    @include uti.tab {
+      margin: 0.21rem;
+    }
   }
 }

@@ -1,5 +1,6 @@
 @use "../foundation/variables" as var;
 @use "../object/component/button.scss" as but;
+@use "../foundation/mixins" as uti;
 
 .p-search{
   width: 1180px;
@@ -11,10 +12,22 @@
   border-radius: 15px;
   text-align: center;
   padding: 60px;
-  
+
+  @include uti.tab{
+    width: 11.8rem;
+    height: 2.4rem;
+    margin: 0.4rem auto;
+    border-radius: 0.15rem;
+    padding: 0.6rem;
+  }
+
   &__flex{
     display: flex;
     margin-top: 26px;
+
+    @include uti.tab{
+      margin-top: 0.26rem;
+    }
 
     &__triangle{
       position: relative;
@@ -31,6 +44,11 @@
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
 
+        @include uti.tab{
+          width: 0.2rem;
+          height: 0.1rem;
+
+        }
       }
     }
   }
@@ -40,10 +58,19 @@
     font-weight: var.$bold;
     font-size: 25px;
     margin-bottom: 20px;
+
+    @include uti.tab{
+      font-size: 0.25rem;
+      margin-bottom: 0.2rem;
+    }
   }
 
   &__selectjob{
     font-size: 20px;
+
+    @include uti.tab{
+      font-size: 0.2rem;
+    }
   }
   
   &__pulldown{
@@ -57,6 +84,14 @@
     appearance: none;
     margin-right: 15px;
 
+    @include uti.tab{
+      width: 2rem;
+      height: 0.6rem;
+      border-radius: 0.1rem;
+      font-size: 0.17rem;
+      padding-left: 0.15rem;
+      margin-right: 0.15rem;
+    }
   }
 
 
@@ -68,6 +103,15 @@
     padding-left: 10px;
     font-size: 17px;
     margin-right: 15px;
+
+    @include uti.tab{
+      width: 3rem;
+      height: 0.6rem;
+      border-radius: 0.1rem;
+      padding-left: 0.17rem;
+      font-size: 0.17rem;
+      margin-right: 0.15rem;
+    }
   }
 
   &__button{
@@ -82,6 +126,14 @@
     transition: 0.3s;
     opacity: 1;
 
+    @include uti.tab{
+      width: 1.4rem;
+      height: 0.6rem;
+      border-radius: 0.3rem;
+      font-size: 0.17rem;
+
+    }
+
     &:hover {
       cursor: pointer;
       opacity: 0.8;
@@ -93,6 +145,13 @@
     width: 29.98px; 
     height: 29.98px;
     margin-right: 3px;
+
+    @include uti.tab{
+      width: 0.2998rem;
+      height: 0.2998rem;
+      margin-right: 0.03rem; 
+
+    }
   }
 
   

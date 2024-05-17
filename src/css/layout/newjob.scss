@@ -1,15 +1,24 @@
 @use "../foundation/variables" as var;
+@use "../foundation/mixins" as uti;
 
 .p-newjob {
   width: 100%;
   height: 636px;
   background-color: var.$bgLightBlue;
 
+  @include uti.tab{
+    height: 6.36rem;
+  }
+
   &__inner{
     display: grid;
     width: 1080px;
     margin: 0 auto;
     justify-content: center;
+
+    @include uti.tab{
+      width: 10.8rem;
+    }
   }
   
 
@@ -19,6 +28,11 @@
     margin-top: 64px; 
     margin-bottom: 24px;
 
+    @include uti.tab{
+      font-size: 0.25rem;
+      margin-top: 0.64rem;
+      margin-bottom: 0.2rem;
+    }
   }
 
   &__joblist {
@@ -29,6 +43,10 @@
     li {
       margin: 10px;
       position: relative; 
+
+    @include uti.tab{
+      margin: 0.1rem;
+    }
 
       &:first-child {
         margin-left: 0;
@@ -42,6 +60,9 @@
     &__jobdetail {
       width: 280px;
 
+      @include uti.tab{
+        width: 2.8rem;
+      }
       &__flex {
         display: flex;
       }
@@ -53,6 +74,12 @@
       font-size: 16px;
       margin-top: 8.08px;
       line-height: 22px;
+
+      @include uti.tab{
+        font-size: 0.16rem;
+        margin-top: 0.08rem;
+        line-height: 0.22rem;
+      }
     }
 
     &__leftbutton {
@@ -67,6 +94,12 @@
       transform: translateY(-50%);
       border-style: none;
 
+      @include uti.tab{
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 0.5rem;
+      }
+
       &::after {
         content: '';
         width: 20px;
@@ -75,6 +108,11 @@
         border-right: solid 0.7px var.$black;
         position: absolute;
         transform: translate(-30%, -50%) rotate(-135deg);
+
+        @include uti.tab{
+          width: 0.2rem;
+          height: 0.2rem;
+        }
       }
     }
   
@@ -90,6 +128,12 @@
       transform: translateY(-50%);
       border-style: none;
 
+      @include uti.tab{
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 0.5rem;
+      }
+
       &::after {
         content: '';
         width: 20px;
@@ -98,11 +142,20 @@
         border-right: solid 0.7px var.$black;
         position: absolute;
         transform: translate(-70%, -50%) rotate(45deg);
+
+        @include uti.tab{
+          width: 0.2rem;
+          height: 0.2rem;
+        }
       }
     }
 
     &__jobdetail dl {
       margin: 10px;
+
+      @include uti.tab{
+        margin: 0.1rem;
+      }
     }
   }
 
@@ -111,6 +164,11 @@
     display: inline-block;
     margin: 7px 10px 4px 0;
     font-size: 14px;
+
+    @include uti.tab{
+      margin: 0.07rem 0.1rem 0.04rem 0;
+      font-size: 0.14rem;
+    }
   }
 
   dt {
@@ -119,12 +177,22 @@
     height: 21px;
     line-height: 21px;
     text-align: center;
+
+    @include uti.tab{
+      width: 0.6rem;
+      height: 0.21rem;
+      line-height: 0.21rem;
+    }
   }
 
   dd { 
     max-width: 130px; 
     display: grid;
     place-items: center;
+
+    @include uti.tab{
+      max-width: 1.3rem;
+    }
   }
 
   &__more {
@@ -140,6 +208,14 @@
     margin: 60px auto 67px auto;
     transition: 0.3s;
     opacity: 1;
+
+    @include uti.tab{
+      width: 3.6rem;
+      height: 0.6rem;
+      border-radius: 0.3rem;
+      font-size: 0.18rem;
+      margin: 0.6rem auto 0.67rem auto;
+    }
 
     &:hover {
       cursor: pointer;

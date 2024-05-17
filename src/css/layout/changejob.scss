@@ -1,10 +1,16 @@
 @use "../foundation/variables" as var;
-
+@use "../foundation/mixins" as uti;
 
 .p-changejob {
   width: 1180px;
   height: 435px;
   margin: 105px auto 60px auto;
+
+  @include uti.tab {
+    width: 11.80rem;
+    height: 4.35rem;
+    margin: 1.05rem auto 0.60rem auto;
+  }
 
   &__title {
     margin-top: 60px;
@@ -12,6 +18,12 @@
     font-size: 25px;
     font-weight: var.$bold;
     margin: 0 auto;
+
+    @include uti.tab {
+      margin-top: 0.60rem;
+      font-size: 0.25rem;
+      margin: 0 auto;
+    }
   }
 
   &__list {
@@ -19,7 +31,11 @@
     justify-content: center;
     text-align: center;
     padding-top: 100px;
-    
+
+    @include uti.tab {
+      padding-top: 1.00rem;
+    }
+
     &__step {
       display: flex;
       justify-content: center;
@@ -31,13 +47,25 @@
       line-height: 20.27px;
       margin: 10px;
 
-      &__center{   
+      @include uti.tab {
+        width: 0.60rem;
+        height: 0.60rem;
+        border-radius: 1.00rem;
+        line-height: 0.20rem;
+        margin: 0.10rem;
+      }
+
+      &__center {
         color: var.$white;
-        font-size: 15px; 
+        font-size: 15px;
+
+        @include uti.tab {
+          font-size: 0.15rem;
+        }
       }
     }
-    
-    &__subtitle{
+
+    &__subtitle {
       display: grid;
       place-items: center;
       font-size: 20px;
@@ -46,21 +74,38 @@
       height: 60px;
       margin: 20px auto 0;
       line-height: 30px;
+
+      @include uti.tab {
+        font-size: 0.20rem;
+        width: 2.16rem;
+        height: 0.60rem;
+        margin: 0.20rem auto 0;
+        line-height: 0.30rem;
+      }
     }
-    
+
     & li {
       position: relative;
       display: inline-block;
       vertical-align: top;
-      margin: 0 10px; 
+      margin: 0 10px;
       justify-content: center;
       align-items: center;
       border-radius: 20px;
       width: 280px;
-      height: 360px; 
+      height: 360px;
       border: 2.27px solid var.$pink;
-      box-sizing: border-box; 
-      text-align: center; 
+      box-sizing: border-box;
+      text-align: center;
+
+      @include uti.tab {
+        margin: 0 0.10rem;
+        border-radius: 0.20rem;
+        width: 2.80rem;
+        height: 3.60rem;
+        border: 0.027rem solid var.$pink;
+        
+      }
 
       &::after {
         top: 45%;
@@ -70,19 +115,28 @@
         border-bottom: 20px solid transparent;
         border-left: 20px solid var.$pink;
         content: "";
-        display: inline-block;  
+        display: inline-block;
+
+        @include uti.tab {
+          border-top: 0.20rem solid transparent;
+          border-bottom: 0.20rem solid transparent;
+          border-left: 0.20rem solid var.$pink;
+        }
       }
-      &:last-child::after{
-        display: none; 
+      &:last-child::after {
+        display: none;
       }
     }
 
     & img {
-      
       width: 102.29px;
       height: 100px;
-    }
 
+      @include uti.tab {
+        width: 1.02rem;
+        height: 1.00rem;
+      }
+    }
 
     & span {
       height: 60px;
@@ -92,8 +146,17 @@
       text-align: left;
       margin-top: 18px;
       line-height: 20.27px;
+
+      @include uti.tab {
+        height: 0.60rem;
+        width: 2.37rem;
+        font-size: 0.14rem;
+        margin-top: 0.18rem;
+        line-height: 0.20rem;
+      }
     }
-    &__more{
+
+    &__more {
       display: block;
       width: 360px;
       height: 60px;
@@ -106,6 +169,15 @@
       margin: 60px auto 67px auto;
       transition: 0.3s;
       opacity: 1;
+
+      @include uti.tab {
+        width: 3.60rem;
+        height: 0.60rem;
+        border-radius: 0.30rem;
+        font-size: 0.25rem;
+        margin: 0.60rem auto 0.67rem auto;
+      }
+
       &:hover {
         cursor: pointer;
       }
