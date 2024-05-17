@@ -1,0 +1,127 @@
+@use '../../object/utility/utility.scss';
+
+.p-newinfo {
+  padding: 70px 0;
+  background-color: utility.$bgLightBlue;
+  position: relative;
+
+  &__title {
+    font-size: 25px;
+    font-weight: utility.$regular;
+    margin-right: 1090px;
+    @include utility.tab {
+      margin-right: 15rem;
+    }
+  }
+
+  &__detail {
+    display: inline-block;
+    padding-top: 30px;
+    width: 280px;
+    margin-left: 20px;
+    text-align: left;
+    position:relative;
+    @include utility.tab {
+      width: 4rem;
+    }
+  }
+
+  & :first-of-type {
+    margin-left: 0;
+  }
+
+  &__description {
+    padding: 10px 0 8px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: utility.$regular;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: utility.$regular;
+    width: 60px;
+    height: 21px;
+    background-color: utility.$bgPink;
+    margin-top: 5px;
+  }
+
+  & tr:first-child td {
+    margin-top: 0;
+  }
+
+  &__value {
+    padding-left: 8px;
+  }
+
+  &__back-button {
+    position: absolute;
+    border-radius: 30px;
+    border: none;
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    background-color: utility.$white;
+    opacity: 0.6;
+
+    &::before {
+      content: "";
+      margin: auto;
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      width: 20px;
+      height: 20px;
+      border-top: 1px solid utility.$black;
+      border-right: 1px solid utility.$black;
+      transform: rotate(225deg);
+    }
+  }
+
+  &__next-button {
+    position: absolute;
+    border-radius: 30px;
+    border: none;
+    width: 60px;
+    height: 60px;
+    right: 0px;
+    top: 100px;
+    background-color: utility.$white;
+    opacity: 0.6;
+
+    &::before {
+      content: "";
+      margin: auto;
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      width: 20px;
+      height: 20px;
+      border-top: 1px solid utility.$black;
+      border-right: 1px solid utility.$black;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__more-wrapper {
+    justify-content: center;
+    display: flex;
+  }
+
+  &__more-button {
+    font-size: 18px;
+    font-weight: utility.$bold;
+    background-color: utility.$pink;
+    width: 360px;
+    height: 60px;
+    border-radius: 30px;
+    color: utility.$white;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
