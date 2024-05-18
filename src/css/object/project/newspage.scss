@@ -1,23 +1,5 @@
 @use '../../object/utility/utility.scss';
 
-.p-total__recruitment {
-  @include utility.tab {
-    width: 50%;
-  }
-}
-
-.p-recruitment {
-  width: 400px;
-
-  & img {
-    border-radius: 10px;
-  }
-}
-
-// .slick-arrow {
-//   position: relative;
-// }
-
 .p-scloll__button {
   width: 60px;
   height: 60px;
@@ -165,6 +147,9 @@ div {
     }
   
     & > .p-total__recruitment {
+      @include utility.tab {
+        width: 50%;
+      }
 
       & > .p-scloll__size {
         z-index: 1;
@@ -176,6 +161,13 @@ div {
         border-radius: 30px;
         top: 80px;
         left: 60px;
+
+        @include utility.sp {
+          height: 0.6rem;
+          width: 0.6rem;
+          top: 2.5rem;
+          left: 0.1rem;
+        }
 
       }
 
@@ -191,6 +183,13 @@ div {
         right: 75px;
         transform: scale(-1, 1);
 
+        @include utility.sp {
+          height: 0.6rem;
+          width: 0.6rem;
+          top: -2.2rem;
+          right: -3.0rem;
+        }
+
       }
 
       @include utility.pc {
@@ -203,13 +202,14 @@ div {
       @include utility.tab {
         display: flex;
         margin: 0 auto;
-        width: 90%;
+        width: 17.5rem;
         margin-top: 2%;
       }
       @include utility.sp {
-        width: 95%;
+        width: 3.8rem;
+        height: 4.5rem;
         margin: 0 auto;
-        margin-top: 10%;
+        margin-left: .2rem;
       }
 
       & > .slick-list {
@@ -219,14 +219,17 @@ div {
           & > .slick-slide {
             margin-right: 15px;
 
+            img {
+              border-radius: 15px;
+            }
+
+            @include utility.tab {
+              margin-right: 0.2rem;
+            }
+
             & > .p-recruitment {
-              
-              ul {
-                display: flex;
-              }
 
               & > .p-money {
-                //display: flex;
   
                 & > .p-main__money {
                   font-size: 14px;
@@ -255,6 +258,7 @@ div {
                 font-weight: 400;
                 line-height: 22px;
                 margin-top: 10px;
+
                 @include utility.sp {
                   font-size: 0.16rem;
                   font-weight: 700;
@@ -286,7 +290,7 @@ div {
           width: 100%;
         }
   
-        & img {
+        img {
           border-radius: 10px;
           @include utility.sp {
             width: 100%;
@@ -295,19 +299,6 @@ div {
             object-fit: cover;
           }
         }
-  
-        // & > .p-recruitment__infomation {
-        //   font-size: 14px;
-        //   font-weight: 400;
-        //   line-height: 22px;
-        //   margin-top: 10px;
-        //   @include utility.sp {
-        //     font-size: 0.16rem;
-        //     font-weight: 700;
-        //     margin-top: 2%;
-        //     line-height: 0.22rem;
-        //   }
-        // }
 
         & > .slick-slide {
           & > .p-money {
@@ -335,32 +326,7 @@ div {
             }
           }
         }
-  
-        // & > .p-money {
-        //   display: flex;
-  
-        //   & > .p-main__money {
-        //     font-size: 14px;
-        //     font-weight: 400;
-        //     padding: 5px;
-        //     margin-top: 10px;
-        //     background-color: #ffcad0;
-        //     width: 60px;
-        //     text-align: center;
-        //   }
-  
-        //   & > .p-sub__money {
-        //     font-size: 14px;
-        //     font-weight: 400;
-        //     margin-top: 10px;
-        //     padding: 5px;
 
-        //     @include utility.sp {
-        //       margin-left: 0.2rem;
-        //     }
-        //   }
-        // }
-  
         & > .p-place {
           display: flex;
   
@@ -499,7 +465,6 @@ div {
             }
           }
         }
-        
       }
     }
   }
