@@ -36,8 +36,8 @@ $(function() {
 
 $(function () {
   $('.slick-recruitment').slick({
-    prevArrow: '<img src="./img/icon/news-page-arrow.png" alt="スクロールボタン左矢印" class="p-scloll__size"></img>',
-    nextArrow: '<img src="./img/icon/news-page-arrow.png" alt="スクロールボタン左矢印" class="p-scloll__size__second"></img>',
+    prevArrow: '<div class="p-scloll__size"><div class="p-arrow"><</div></div>',
+    nextArrow: '<div class="p-scloll__size__second"><div class="p-second__arrow"><</div></div>',
     slidesToShow: '4',
     responsive: [
       {
