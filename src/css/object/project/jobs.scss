@@ -1,0 +1,46 @@
+@use "../../object/utility/utility.scss";
+@use "../../foundation/_variables.scss" as var;
+
+.p-jobs {
+  background-color: var.$lightblue;
+  width: 1600px;
+  height: 636px;
+  margin: 60px auto 0;
+
+  &__title {
+    padding-top: 40px;
+    margin-left: 210px;
+    font-size: 25px;
+  }
+
+  &__lists {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 15px;
+    &__image1 {
+      background-image: url("../img/picture/jobs-image1.png");
+      width: 280px;
+      height: 200px;
+      background-size: contain;
+    }
+    &__image2 {
+      background-image: url("../img/picture/jobs-image2.png");
+      width: 280px;
+      height: 200px;
+      background-size: contain;
+    }
+    &__image3 {
+      background-image: url("../img/picture/jobs-image3.png");
+      width: 280px;
+      height: 200px;
+      background-size: contain;
+    }
+    &__image4 {
+      background-image: url("../img/picture/jobs-image4.png");
+      width: 280px;
+      height: 200px;
+      background-size: contain;
+    }
+  }
+}
