@@ -1,0 +1,11 @@
+@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility' as base;
+
+.p-second_select_box {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  @include base.sp {
+    padding-top: 0.6rem;
+    padding-bottom: 1rem;
+  };
+};

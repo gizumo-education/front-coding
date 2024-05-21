@@ -1,0 +1,91 @@
+@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility' as base;
+
+.p-features {
+  padding-top: 106px;
+  padding-bottom: 105px;
+  @include base.sp {
+    padding-top: 0.55rem;
+    padding-bottom: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  };
+  &_title {
+    color: utility.$black;
+    font-family: Noto Sans JP;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: utility.$bold;
+    line-height: 25px; /* 100% */
+    text-align: center;
+    @include base.sp {
+      margin-bottom: 0.17rem;
+      font-size: 0.25rem;
+    };
+  };
+  &_detail {
+    margin-top: 53px;
+    @include base.sp {
+      margin-top: 0;
+    };
+    & li {
+      width: 570px;
+      height: 180px;
+      background-color: utility.$lightPink;
+      padding-top: 40px;
+      float: left;
+      border-radius: 10px;
+      @include base.sp {
+        height: 100%;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        margin-top: 0.21rem;
+        float: none;
+        width: 3.7rem;
+        &:first-child{
+          margin-top: 0.38rem;
+        };
+      };
+      &:nth-child(2n) {
+        margin-left: 40px;
+        @include base.sp {
+          margin-left: 0rem;
+        };
+      };
+      &:nth-child(n+3) {
+        margin-top: 40px;
+        @include base.sp {
+          margin-top: 0.21rem;
+        };
+      }
+    };
+  };
+  &_text {
+    font-family: Noto Sans JP;
+    font-size: 14px;
+    font-weight: utility.$regular;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 475px;
+    @include base.sp {
+      margin-top: 0.3rem;
+      font-size: 0.12rem;
+      width: 3.3rem;
+      line-height: 0.17rem;
+    };
+  };
+  &_font {
+    font-family: Noto Sans JP;
+    font-size: 24px;
+    font-weight: utility.$bold;
+    line-height: 24px;
+    color: utility.$pink;
+    text-align: center;
+    @include base.sp {
+      font-size: 0.2rem;
+    };
+  };
+};

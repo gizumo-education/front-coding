@@ -2,7 +2,7 @@
 // headerのスタイルを記述するファイル
 
 .l-header {
-  position: sticky;
+  // position: sticky;
   top: 0;
   left: 0;
   padding: 25px 100px 25px 0;
@@ -132,6 +132,49 @@
       height: .06rem;
       background-color: utility.$black;
       border-radius: .03rem;
-    }
-  }
+      transition: .3s;
+    };
+  };
+};
+
+
+.l-header__hamburger_menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: utility.$black;
+  height: 554px;
+  opacity: 70%;
+  transform: translateX(100%);
+  transition: .3s;
+  z-index: 999;
+};
+
+.l-header__hamburger_menu a {
+  width: 100%;
+  display: block;
+  font-size: 22px;
+  margin-top: 38px;
+  margin-left: 60.25px;
+  font-weight: 700;
+  color: utility.$white;
+};
+
+.l-header__hamburger.active {
+  display: flex;
+};
+
+.l-header__hamburger_menu.active{
+  transform: translateX(0);
+};
+
+.l-header__hamburger.active span:first-of-type{
+  transform: translateY(260%) rotate(45deg);
+}
+.l-header__hamburger.active span:nth-of-type(2){
+  opacity: 0;
+}
+.l-header__hamburger.active span:last-of-type{
+  transform: translateY(-260%) rotate(-45deg);
 }

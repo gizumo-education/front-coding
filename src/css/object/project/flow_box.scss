@@ -1,0 +1,132 @@
+@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility' as base;
+
+.p-flow {
+  padding-bottom: 106.13px;
+  @include base.sp {
+    padding-bottom: 0.6rem;
+  };
+  &_title {
+    color: utility.$black;
+    font-family: "Noto Sans JP";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: utility.$bold;
+    line-height: 25px; /* 100% */
+    text-align: center;
+    @include base.sp {
+      font-size: 0.25rem;
+    };
+  };
+  &_block {
+    display: flex;
+    align-items: center;
+    @include base.sp {
+      display: flex;
+      flex-direction: column;
+    };
+    & li {
+      position: relative;
+      margin-top: 50px;
+      width: 280px;
+      height: 360px;
+      border: 2.27px solid utility.$pink;
+      border-radius: 10px;
+      @include base.sp {
+        margin-top: 0.1rem;
+        margin-bottom: 0.1rem;
+        height: 2.9rem;
+        width: 2.8rem;
+        &:first-child{
+          margin-top: 0.32rem;
+        };
+      };
+      & img {
+        width: 102.29px;
+        height: 100px;
+        margin-top: 60px;
+        @include base.sp {
+          width: 0.75rem;
+          height: 0.75rem;
+          margin-top: 0.55rem;
+        };
+      };
+    };
+  };
+  &_circle {
+    position: absolute;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    background-color: utility.$pink;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: utility.$bold;
+    @include base.sp {
+      width: 0.45rem;
+      height: 0.45rem;
+      font-size: 0.1rem;
+    };
+    & p {
+      color: utility.$white;
+      text-align: center;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.36px;
+      margin-top: 11px;
+      @include base.sp {
+        font-size: 0.1rem;
+        line-height: 0.12rem;
+      };
+    };
+  };
+  &_detail {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  };
+  &_font {
+    font-family: Noto Sans JP;
+    font-size: 24px;
+    font-weight: utility.$bold;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @include base.sp {
+      font-size: 0.2rem;
+      margin-top: 0.22rem;
+      height: 0.1rem;
+    };
+  };
+  &_text {
+    font-family: Noto Sans JP;
+    font-size: 14px;
+    font-weight: utility.$regular;
+    line-height: 20.27px;
+    margin-top: 18px;
+    width: 237px;
+    @include base.sp {
+      width: 2.4rem;
+    };
+  };
+  &_dn_arrow {
+    display: none;
+    @include base.sp {
+      display: block;
+    };
+  };
+  &_rt_arrow{
+    display: block;
+  @include base.sp {
+      display: none;
+    };
+  };
+};
