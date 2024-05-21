@@ -3,9 +3,9 @@
 .p-secondvisual {
   background: url(../img/picture/work-background.jpg) no-repeat center;
   background-size: cover;
-  width: 100%;
   height: 300px;
   position: relative;
+  text-align: center;
 
   &::before {
     content: "";

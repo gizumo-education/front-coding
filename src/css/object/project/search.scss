@@ -1,17 +1,18 @@
 @use '../../object/utility/utility.scss';
 
 .p-search {
-  padding: 60px 0px;
+  padding: 65px 0px;
+  text-align: center;
+  color: utility.$black;
   @include utility.sp {
     padding: .25rem .15rem;
   }
 
   &__area {
-    margin: auto;
+    margin: 0 auto;
     padding: 40px 0;
     background-color: utility.$bgSkyBlue;
     width: 1180px;
-    height: 240px;
     border-radius: 10px;
 
     @include utility.sp {
@@ -33,15 +34,15 @@
   &__description {
     font-size: 20px;
     font-weight: utility.$regular;
-    padding-top: 30px;
+    margin-top: 25px;
     @include utility.sp {
-      padding-top: .2rem;
+      margin-top: .2rem;
       font-size: .14rem;
     }
   }
 
   &__form {
-    padding-top: 30px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
   }
