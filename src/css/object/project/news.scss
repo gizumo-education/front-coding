@@ -2,13 +2,6 @@
 @use '../../foundation/_variables.scss' as var;
 // 新着求人に関するスタイル
 
-$images: (
-  "image-1": "../img/icon/news-image-1-web.png",
-  "image-2": "../img/icon/news-image-2-web.png",
-  "image-3": "../img/icon/news-image-3-web.png",
-  "image-4": "../img/icon/news-image-4-web.png"
-);
-
 .p-news {
   background: var.$bgLightBlue;
   width: 100%;
@@ -125,4 +118,8 @@ $images: (
     justify-content: center;
     color: var.$white;
   }
+}
+
+.swiper-container {
+  overflow: hidden;
 }
