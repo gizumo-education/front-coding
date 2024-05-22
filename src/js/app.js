@@ -36,8 +36,8 @@ $(function() {
 
 $(function () {
   $('.slick-recruitment').slick({
-    prevArrow: '<div class="p-scloll__size"><div class="p-arrow"><</div></div>',
-    nextArrow: '<div class="p-scloll__size__second"><div class="p-second__arrow"><</div></div>',
+    prevArrow: '<div class="p-scroll__area__first"><span class="p-chevron__round__left"></span></div>',
+    nextArrow: '<div class="p-scroll__area__second"><span class="p-chevron__round__right"></span></div>',
     slidesToShow: '4',
     responsive: [
       {

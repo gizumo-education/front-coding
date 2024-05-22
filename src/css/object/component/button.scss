@@ -90,3 +90,166 @@
     }
   }
 }
+
+//スクロールボタンのくの字
+//左矢印
+.p-scroll__area__first {
+  z-index: 1;
+  position: relative;
+  background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+  @include utility.pc {
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    top: 85px;
+    left: 70px;
+  }
+  @include utility.tab {
+    width: 5rem;
+    height: 1rem;
+    border-radius: .5rem;
+    top: 1rem;
+    left: 1.2rem;
+  }
+  @include utility.sp {
+    width: .6rem;
+    height: .6rem;
+    border-radius: .3rem;
+    top: 2.4rem;
+    left: .1rem;
+  }
+
+  & > .p-chevron__round__left {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    @include utility.pc {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      top: 15px;
+      left: 10px;
+      transform: translateX(25%) rotate(-135deg);
+    }
+    @include utility.tab {
+      position: relative;
+      width: .3rem;
+      height: .3rem;
+      top: .3rem;
+      left: .3rem;
+      transform: translateX(25%) rotate(-135deg);
+    }
+    @include utility.sp {
+      position: relative;
+      width: .23rem;
+      height: .23rem;
+      top: .15rem;
+      left: .15rem;
+      transform: translateX(25%) rotate(-135deg);
+    }
+  }
+}
+
+.p-chevron__round__left::before, .p-chevron__round__left::after {
+  content: '';
+  position: absolute;
+  background: currentColor;
+  border-radius: 0.1em;
+}
+
+.p-chevron__round__left::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.1em;
+}
+
+.p-chevron__round__left::after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0.1em;
+}
+
+//右矢印
+
+.p-scroll__area__second {
+  z-index: 1;
+  position: relative;
+  background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+
+  @include utility.pc {
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    top: 80px;
+    right: 80px;
+  }
+  @include utility.tab {
+    width: 5rem;
+    height: 1rem;
+    border-radius: .5rem;
+    top: 1rem;
+    right: 1.3rem;
+  }
+  @include utility.sp {
+    width: .6rem;
+    height: .6rem;
+    border-radius: .3rem;
+    top: -2.3rem;
+    left: 3rem;
+  }
+
+  & > .p-chevron__round__right {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    @include utility.pc {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      transform: translateX(-25%) rotate(45deg);
+      left: 20px;
+      top: 15px;
+    }
+    @include utility.tab {
+      position: relative;
+      width: .3rem;
+      height: .3rem;
+      transform: translateX(-25%) rotate(45deg);
+      left: .3rem;
+      top: .3rem;
+    }
+    @include utility.sp {
+      position: relative;
+      width: .23rem;
+      height: .23rem;
+      transform: translateX(-25%) rotate(45deg);
+      left: .2rem;
+      top: .17rem;
+    }
+  }
+}
+
+.p-chevron__round__right::before, .p-chevron__round__right::after {
+  content: '';
+  position: absolute;
+  background: currentColor;
+  border-radius: 0.1em;
+}
+
+.p-chevron__round__right::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.1em;
+}
+
+.p-chevron__round__right::after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0.1em;
+}
