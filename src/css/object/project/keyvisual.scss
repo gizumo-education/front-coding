@@ -3,30 +3,24 @@
 
 .p-keyvisual {
   background-color: utility.$bgGrayBlue;
-  height: 500px;
-
-  &__picture {
-    position: relative;
-    width: fit-content;
-    margin: 0 auto;
-  }
-  // @include utility.sp {
-  //   height: 2.5rem;
-  //   background: url(../img/picture/keyvisual-sp.jpg) no-repeat;
-  // }
+  background-image: url(../img/picture/keyvisual.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50rem;
+  display: flex;
+  padding: 5.2rem;
+  justify-content: flex-end;
 
   &__inner {
-    padding: 30px 0;
-    position: absolute;
     text-align: center;
-    top: 30px;
-    left: 435px;
+    width: fit-content;
+    margin-right: 14.5rem;
 
     & img {
-      margin-top: 35px;
+      margin-top: 4rem;
 
       &:first-child {
-        margin-top: 0px;
+        margin-top: 0;
       }
     }
   
@@ -36,18 +30,18 @@
   }
 
   &__status {
-    margin-top: 50px;
-    font-size: 20px;
+    margin-top: 5rem;
+    font-size: 2rem;
     font-weight: utility.$regular;
     color: utility.$green;
     background-color: utility.$white;
-    padding: 12px 40px;
+    padding: 1.2rem 4rem;
     display: inline-block;
-    border: 2.3px solid;
-    border-radius: 10px;
+    border: .23rem solid;
+    border-radius: 1rem;
     
       span {
-        font-size: 40px;
+        font-size: 4rem;
         font-weight: utility.$bold;
       }
   }

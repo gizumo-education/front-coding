@@ -1,13 +1,13 @@
 @use '../../object/utility/utility.scss';
 
 .p-newinfo {
-  padding: 60px 0;
+  padding: 6rem 0;
   background-color: utility.$bgLightBlue;
   position: relative;
   color: utility.$black;
 
   &__title {
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: utility.$regular;
     @include utility.tab {
       margin-right: 15rem;
@@ -15,15 +15,15 @@
   }
 
   &__list {
-    margin-top: 30px;
+    margin-top: 3rem;
     display: flex;
-    column-gap: 20px;
+    column-gap: 2rem;
     justify-content: center;
   }
 
   &__detail {
     display: grid;
-    width: 280px;
+    width: 28rem;
     text-align: left;
     position:relative;
     @include utility.tab {
@@ -32,30 +32,34 @@
   }
 
   &__description {
-    padding: 10px 0 8px;
-    font-size: 16px;
-    line-height: 22px;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
     font-weight: utility.$regular;
   }
 
   &__item {
-    margin-top: 5px;
+    margin-top: .5rem;
     display: flex;
     align-items: center;
 
-    & > span {
-      font-size: 14px;
+    &:first-of-type {
+      margin-top: .8rem;
+    }
+
+    & dt {
+      font-size: 1.4rem;
       font-weight: utility.$regular;
       background-color: utility.$bgPink;
       color: utility.$black;
-      width: 60px;
-      padding: 3px 0;
+      width: 6rem;
+      padding: .3rem 0;
       display: flex;
       justify-content: center;
     }
 
-    & > img {
-      margin-left: 10px;
+    & dd {
+      margin-left: 1rem;
     }
 
     &:first-child {
@@ -65,11 +69,11 @@
 
   &__back-button {
     position: absolute;
-    border-radius: 30px;
+    border-radius: 3rem;
     border: none;
-    width: 60px;
-    height: 60px;
-    top: 70px;
+    width: 6rem;
+    height: 6rem;
+    top: 7rem;
     background-color: utility.$white;
     opacity: 0.7;
 
@@ -77,24 +81,24 @@
       content: "";
       margin: auto;
       position: absolute;
-      top: 20px;
-      right: 15px;
-      width: 20px;
-      height: 20px;
-      border-top: 1px solid utility.$black;
-      border-right: 1px solid utility.$black;
+      top: 2rem;
+      right: 1.5rem;
+      width: 2rem;
+      height: 2rem;
+      border-top: .1rem solid utility.$black;
+      border-right: .1rem solid utility.$black;
       transform: rotate(225deg);
     }
   }
 
   &__next-button {
     position: absolute;
-    border-radius: 30px;
+    border-radius: 3rem;
     border: none;
-    width: 60px;
-    height: 60px;
-    right: 0px;
-    top: 70px;
+    width: 6rem;
+    height: 6rem;
+    right: 0;
+    top: 7rem;
     background-color: utility.$white;
     opacity: 0.7;
 
@@ -102,32 +106,18 @@
       content: "";
       margin: auto;
       position: absolute;
-      top: 20px;
-      right: 24px;
-      width: 20px;
-      height: 20px;
-      border-top: 1px solid utility.$black;
-      border-right: 1px solid utility.$black;
+      top: 2rem;
+      right: 2.4rem;
+      width: 2rem;
+      height: 2rem;
+      border-top: .1rem solid utility.$black;
+      border-right: .1rem solid utility.$black;
       transform: rotate(45deg);
     }
   }
 
   &__more-wrapper {
-    justify-content: center;
-    display: flex;
-  }
-
-  &__more-button {
-    font-size: 18px;
-    font-weight: utility.$bold;
-    background-color: utility.$pink;
-    width: 360px;
-    height: 60px;
-    border-radius: 30px;
-    color: utility.$white;
-    margin-top: 60px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    text-align: center;
+    margin-top: 6rem;
   }
 }
