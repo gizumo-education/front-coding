@@ -1,0 +1,46 @@
+@use '../../object/utility/utility.scss';
+
+.p-features {
+  padding: 11rem;
+  text-align: center;
+  color: utility.$black;
+
+  &__wrapper {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  &__area {
+    width: 57rem;
+    height: 18rem;
+    padding: 4rem;
+    background-color: utility.$bgLightPink;
+    border-radius: 1rem;
+    &:last-child {
+      & p {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: utility.$bold;
+  }
+
+  &__keyword {
+    font-size: 2.4rem;
+    font-weight: utility.$bold;
+    color: utility.$pink;
+  }
+
+  & p {
+    font-size: 1.4rem;
+    font-weight: utility.$regular;
+    margin-top: 3.5rem;
+    line-height: 2rem;
+  }
+}

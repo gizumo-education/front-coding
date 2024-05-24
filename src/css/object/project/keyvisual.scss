@@ -1,2 +1,47 @@
 @use '../../object/utility/utility.scss';
-// ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual {
+  background-color: utility.$bgGrayBlue;
+  background-image: url(../img/picture/keyvisual.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50rem;
+  display: flex;
+  padding: 5.2rem;
+  justify-content: flex-end;
+
+  &__inner {
+    text-align: center;
+    width: fit-content;
+    margin-right: 14.5rem;
+
+    & img {
+      margin-top: 4rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+
+  &__status {
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: utility.$regular;
+    color: utility.$green;
+    background-color: utility.$white;
+    padding: 1.2rem 4rem;
+    display: inline-block;
+    border: .23rem solid;
+    border-radius: 1rem;
+    
+      span {
+        font-size: 4rem;
+        font-weight: utility.$bold;
+      }
+  }
+}

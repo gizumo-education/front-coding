@@ -1,0 +1,91 @@
+@use '../../object/utility/utility.scss';
+
+.p-search {
+  padding: 6.5rem 0px;
+  text-align: center;
+  color: utility.$black;
+  @include utility.sp {
+    padding: .25rem .15rem;
+  }
+
+  &__area {
+    padding: 4rem 0;
+    background-color: utility.$bgSkyBlue;
+    border-radius: 1rem;
+
+    @include utility.sp {
+      margin: 0;
+      padding-top: .2rem;
+      width: 3.5rem;
+      height: 24rem;
+    }
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: utility.$bold;
+    @include utility.sp {
+      font-size: .22rem;
+    }
+  }
+
+  &__description {
+    font-size: 2rem;
+    font-weight: utility.$regular;
+    margin-top: 2.5rem;
+    @include utility.sp {
+      margin-top: .2rem;
+      font-size: .14rem;
+    }
+  }
+
+  &__form {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__select {
+    font-size: 1.8rem;
+    font-weight: utility.$regular;
+    width: 20rem;
+    height: 6rem;
+    padding-left: 1.5rem;
+    margin-left: 1.5rem;
+    border: .1rem solid utility.$pink;
+    border-radius: 1rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../img/icon/select-point.png);
+    background-position: right 1.5rem center;
+    background-repeat: no-repeat;
+    background-color: utility.$white;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__keyword {
+    font-size: 1.8rem;
+    font-weight: utility.$regular;
+    width: 30rem;
+    height: 6rem;
+    padding-left: 1rem;
+    margin-left: 1.5rem;
+    border: .1rem solid utility.$pink;
+    border-radius: 1rem;
+  }
+
+  &__button {
+    color: utility.$white;
+    width: 14rem;
+    height: 6rem;
+    font-weight: utility.$bold;
+    font-size: 1.8rem;
+    background-color: utility.$pink;
+    border: 0;
+    margin-left: 1.5rem;
+    border-radius: 3rem;
+  }
+}
