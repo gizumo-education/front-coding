@@ -9,9 +9,8 @@
   &__image {
     position: relative;
     width: 100%;
-    padding: 150px 0;
+    height: 300px;
     background: transparent;
-
     &::before {
       content: "";
       position: absolute;
@@ -21,6 +20,12 @@
       bottom: 0;
       background: url("../img/picture/banner-image-web.jpg") no-repeat center center;
       opacity: 0.5;
+    }
+    @include utility.tab {
+      height: 3rem;
+    }
+    @include utility.sp {
+      height: .75rem;
     }
   }
 
@@ -36,6 +41,17 @@
     font: {
       size: 25px;
       weight: 700;
+    }
+    @include utility.tab {
+      line-height: .60rem;
+      font-size: .25rem;
+    }
+    @include utility.sp {
+      line-height: .25rem;
+      font: {
+        size: .14rem;
+        weight: 400;
+      }
     }
   }
 }

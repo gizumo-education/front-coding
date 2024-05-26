@@ -4,6 +4,12 @@
 .p-features {
   text-align: center;
   padding-top: 126px;
+  @include utility.tab {
+    padding-top: 1.26rem;
+  }
+  @include utility.sp {
+    padding-top: .68rem;
+  }
 
   &__title {
     font: {
@@ -11,6 +17,10 @@
       weight: var.$bold;
     }
     line-height: 25px;
+    @include utility.tab {
+      font-size: .25rem;
+      line-height: .25rem;
+    }
   }
 
   &__boxes {
@@ -23,12 +33,25 @@
     align-items: stretch;
     margin-top: 53px;
     width: 100%;
+    @include utility.tab {
+      column-gap: .40rem;
+      row-gap: .20rem;
+      margin-top: .53rem;
+    }
+    @include utility.sp {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   &__box {
     background: var.$pink;
     border-radius: 10px;
     padding: 33px 0;
+    @include utility.tab {
+      padding: .33rem 0;
+    }
   }
 
   &__box-title {
@@ -38,6 +61,10 @@
       weight: var.$bold;
     }
     line-height: 24px;
+    @include utility.tab {
+      font-size: .24rem;
+      line-height: .24rem;
+    }
   }
 
   &__box-description {
@@ -47,5 +74,27 @@
     }
     line-height: 20px;
     margin-top: 30px;
+    @include utility.tab {
+      font-size: .14rem;
+      line-height: .20em;
+      margin-top: .30rem;
+    }
+    @include utility.sp {
+      font-size: .12rem;
+    }
+  }
+
+  &__hidden-sp {
+    display: inline;
+    @include utility.sp {
+      display: none;
+    }
+  }
+
+  &__hidden-pc {
+    display: none;
+    @include utility.sp {
+      display: inline;
+    }
   }
 }
