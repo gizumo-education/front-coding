@@ -42,49 +42,25 @@
         display: flex;
         margin: 0 auto;
         margin-top: 30px;
-        width: 1180px;
+        width: 1360px;
         justify-content: space-between;
       }
       @include utility.tab {
         display: flex;
         margin: 0 auto;
-        width: 90%;
+        width: 17.5rem;
         margin-top: 2%;
       }
       @include utility.sp {
-        width: 95%;
+        width: 3.8rem;
+        height: 4.5rem;
         margin: 0 auto;
-        margin-top: 10%;
+        margin-left: .2rem;
       }
-  
-      & > .p-photo__margin {
-        @include utility.tab {
-          margin-left: 1%;
-        }
-        @include utility.sp {
-          display: none;
-        }
-      }
-  
+
       & > .p-recruitment {
-        position: relative;
-        width: 280px;
-        @include utility.sp {
-          margin: 0 auto;
-          width: 100%;
-        }
-  
-        & img {
-          border-radius: 10px;
-          @include utility.sp {
-            width: 100%;
-            height: 2.08rem;
-            border-radius: 0.2rem;
-            object-fit: cover;
-          }
-        }
-  
-        & > .p-recruitment__infomation {
+
+        & > .p-recruitment__information {
           font-size: 14px;
           font-weight: 400;
           line-height: 22px;
@@ -96,171 +72,6 @@
             line-height: 0.22rem;
           }
         }
-  
-        & > .p-money {
-          display: flex;
-  
-          & > .p-main__money {
-            font-size: 14px;
-            font-weight: 400;
-            padding: 5px;
-            margin-top: 10px;
-            background-color: #ffcad0;
-            width: 60px;
-            text-align: center;
-          }
-  
-          & > .p-sub__money {
-            font-size: 14px;
-            font-weight: 400;
-            margin-top: 10px;
-            padding: 5px;
-
-            @include utility.sp {
-              margin-left: 0.2rem;
-            }
-          }
-        }
-  
-        & > .p-place {
-          display: flex;
-  
-          & > .p-main__money {
-            font-size: 15px;
-            padding: 5px;
-            margin-top: 10px;
-            background-color: #ffcad0;
-            width: 60px;
-            text-align: center;
-
-            @include utility.sp {
-              margin-top: 0.02rem;
-            }
-          }
-  
-          & > .p-sub__money {
-            font-size: 15px;
-            padding: 5px;
-
-            @include utility.tab {
-              margin-top: 0.1rem;
-            }
-
-            @include utility.sp {
-              margin-left: 0.2rem;
-            }
-          }
-        }
-  
-        & > .p-station {
-          display: flex;
-  
-          & > .p-main__money {
-            font-size: 15px;
-            padding: 5px;
-            margin-top: 10px;
-            background-color: #ffcad0;
-            width: 60px;
-            text-align: center;
-
-            @include utility.sp {
-              margin-top: 0.03rem;
-            }
-          }
-  
-          & > .p-sub__money {
-            font-size: 15px;
-            padding: 5px;
-
-            @include utility.tab {
-              margin-top: 0.1rem;
-            }
-
-            @include utility.sp {
-              margin-left: 0.2rem;
-            }
-          }
-        }
-  
-        & > .p-scloll__button {
-          width: 60px;
-          height: 60px;
-          background-color: rgba($color: #FFFFFF, $alpha: 0.5);
-          border-radius: 30px;
-          position: absolute;
-          left: 0%;
-          top: 30%;
-          @include utility.sp {
-            width: 0.5rem;
-            height: 0.5rem;
-            border-radius: 0.3rem;
-            left: 0;
-            top: 1.5rem;
-          }
-        
-          & > .p-scloll__size {
-            margin-top: 15px;
-            margin-left: 15px;
-            @include utility.sp {
-              width: 30%;
-              height: 0.21rem;
-              margin-top: 0.15rem;
-              margin-left: 0.17rem;
-            }
-          }
-        }
-        
-        & > .p-scloll__button__second {
-          width: 60px;
-          height: 60px;
-          background-color: rgba($color: #FFFFFF, $alpha: 0.5);
-          border-radius: 30px;
-          position: absolute;
-          left: 78%;
-          top: 30%;
-          text-align: center;
-        
-          & > .p-scloll__size__second {
-            transform: scale(-1, 1);
-            margin-top: 15px;
-            margin-left: 15px;
-            @include utility.sp {
-              transform: scale(-1, 1);
-              width: 30%;
-              margin-top: 0.15rem;
-              margin-left: 0.17rem;
-            }
-          }
-        }
-  
-        & > .p-responsive__scloll__button {
-          @include utility.sp {
-            width: 0.5rem;
-            height: 0.5rem;
-            background-color: rgba($color: #FFFFFF, $alpha: 0.5);
-            border-radius: 0.3rem;
-            position: absolute;
-            right: 0;
-            top: 1.5rem;
-            text-align: center;
-          }
-  
-          & > .p-scloll__size__second {
-            @include utility.pc {
-              display: none;
-            }
-            @include utility.tab {
-              display: none;
-            }
-            @include utility.sp {
-              transform: scale(-1, 1);
-              width: 30%;
-              height: 0.21rem;
-              margin-top: 0.15rem;
-            }
-          }
-        }
-        
       }
     }
   }

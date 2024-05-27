@@ -1,0 +1,59 @@
+@use '../../object/utility/utility.scss';
+
+ .slick-list {
+
+  & > .slick-track {
+
+    & > .slick-slide {
+      margin-right: 15px;
+
+      div {
+        & > .p-recruitment {
+
+          & > .p-recruitment__information {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-top: 10px;
+            @include utility.sp {
+              font-size: 0.16rem;
+              font-weight: 700;
+              margin-top: 2%;
+              line-height: 0.22rem;
+            }
+          }
+
+          & > .p-pink__box {
+            display: flex;
+          
+            & > .p-main__money {
+              font-size: 14px;
+              font-weight: 400;
+              padding: 5px;
+              margin-top: 10px;
+              background-color: #ffcad0;
+              width: 60px;
+              text-align: center;
+            }
+          
+            & > .p-sub__money {
+              font-size: 14px;
+              font-weight: 400;
+              margin-top: 10px;
+              padding: 5px;
+            }
+          }
+
+        }
+      }
+
+      img {
+        border-radius: 15px;
+      }
+
+      @include utility.tab {
+        margin-right: 0.2rem;
+      }
+    }
+  }
+}

@@ -31,6 +31,16 @@
     </nav>
   </header>
 
+  <nav class="header-nav">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#">トップ</a></li>
+      <li class="nav-item"><a href="#1">新着求人</a></li>
+      <li class="nav-item"><a href="#2">4つの特徴</a></li>
+      <li class="nav-item"><a href="#3">転職までの流れ</a></li>
+      <li class="nav-item"><a href="#4">転職お役立ちコンテンツ</a></li>
+    </ul>
+  </nav>
+
   <main class="main">
     <div class="p-keyvisual">
       <img src="./img/picture/keyvisual-nurse-photo.jpg" alt="女性ナースメイン写真" class="p-nurse__photo">
@@ -45,10 +55,10 @@
     </div>
     <div class="p-responsive__checkwork">
       <div class="p-checkwork">
-        <ul class="p-text__title">
-          <li class="p-main__title">お仕事検索</li>
-          <li class="p-sub__title">働きたい職種・地域・希望給与を入れて検索</li>
-        </ul>
+        <div class="p-text__title">
+          <div class="p-main__title">お仕事検索</div>
+          <div class="p-sub__title">働きたい職種・地域・希望給与を入れて検索</div>
+        </div>
         <div class="p-total__select__box">
           <div class="p-responsive__set__select__box">
             <select name="p-selectbox__first" class="p-selectbox__first">
@@ -86,82 +96,137 @@
         </div>
       </div>
     </div>
-    <div class="p-responsive__news__page">
+    <div class="p-responsive__news__page" id="1">
       <div class="p-news__page">
         <div class="p-news__page__title">新着求人</div>
-        <div class="p-total__recruitment">
+        <div class="p-total__recruitment slick-recruitment">
           <div class="p-recruitment">
             <img src="./img/picture/news-page-recruitment-photo①.jpg" alt="ナース①" class="">
-            <div class="p-recruitment__infomation">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</div>
-            <ul class="p-money">
+            <div class="p-recruitment__information">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</div>
+            <ul class="p-pink__box">
               <li class="p-main__money">給与</li>
               <li class="p-sub__money">月給 14,8000円〜</li>
             </ul>
-            <ul class="p-place">
+            <ul class="p-pink__box">
               <li class="p-main__money">所在地</li>
               <li class="p-sub__money">三重県伊勢市</li>
             </ul>
-            <ul class="p-station">
+            <ul class="p-pink__box">
               <li class="p-main__money">最寄駅</li>
               <li class="p-sub__money">伊勢市駅 徒歩15分</li>
             </ul>
-            <div class="p-scloll__button">
-              <img src="./img/icon/news-page-arrow.png" alt="スクロールボタン左矢印" class="p-scloll__size">
-            </div>
-            <div class="p-responsive__scloll__button">
-              <img src="./img/icon/news-page-arrow.png" alt="レスポンシブ用スクロールボタン左矢印" class="p-scloll__size__second">
-            </div>
           </div>
-          <div class="p-recruitment p-photo__margin">
+          <div class="p-recruitment">
             <img src="./img/picture/news-page-recruitment-photo②.jpg" alt="ナース②" class="">
-            <div class="p-recruitment__infomation">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</div>
-            <ul class="p-money">
+            <div class="p-recruitment__information">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</div>
+            <ul class="p-pink__box">
               <li class="p-main__money">給与</li>
               <li class="p-sub__money">月給 14,8000円〜</li>
             </ul>
-            <ul class="p-place">
+            <ul class="p-pink__box">
               <li class="p-main__money">所在地</li>
               <li class="p-sub__money">三重県伊勢市</li>
             </ul>
-            <ul class="p-station">
+            <ul class="p-pink__box">
               <li class="p-main__money">最寄駅</li>
               <li class="p-sub__money">伊勢市駅 徒歩15分</li>
             </ul>
           </div>
-          <div class="p-recruitment p-photo__margin">
+          <div class="p-recruitment">
             <img src="./img/picture/news-page-recruitment-photo③.jpg" alt="ナース③" class="">
-            <div class="p-recruitment__infomation">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</div>
-            <ul class="p-money">
+            <div class="p-recruitment__information">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</div>
+            <ul class="p-pink__box">
               <li class="p-main__money">給与</li>
               <li class="p-sub__money">月給 14,8000円〜</li>
             </ul>
-            <ul class="p-place">
+            <ul class="p-pink__box">
               <li class="p-main__money">所在地</li>
               <li class="p-sub__money">三重県伊勢市</li>
             </ul>
-            <ul class="p-station">
+            <ul class="p-pink__box">
               <li class="p-main__money">最寄駅</li>
               <li class="p-sub__money">伊勢市駅 徒歩15分</li>
             </ul>
           </div>
-          <div class="p-recruitment p-photo__margin">
+          <div class="p-recruitment">
             <img src="./img/picture/news-page-recruitment-photo④.jpg" alt="ナース④" class="">
-            <div class="p-recruitment__infomation">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</div>
-            <ul class="p-money">
+            <div class="p-recruitment__information">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</div>
+            <ul class="p-pink__box">
               <li class="p-main__money">給与</li>
               <li class="p-sub__money">月給 14,8000円〜</li>
             </ul>
-            <ul class="p-place">
+            <ul class="p-pink__box">
               <li class="p-main__money">所在地</li>
               <li class="p-sub__money">三重県伊勢市</li>
             </ul>
-            <ul class="p-station">
+            <ul class="p-pink__box">
               <li class="p-main__money">最寄駅</li>
               <li class="p-sub__money">伊勢市駅 徒歩15分</li>
             </ul>
-            <div class="p-scloll__button__second">
-              <img src="./img/icon/news-page-arrow.png" alt="スクロールボタン右矢印" class="p-scloll__size__second">
-            </div>
+          </div>
+          <div class="p-recruitment">
+            <img src="./img/picture/news-page-recruitment-photo①.jpg" alt="ナース①" class="">
+            <div class="p-recruitment__information">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</div>
+            <ul class="p-pink__box">
+              <li class="p-main__money">給与</li>
+              <li class="p-sub__money">月給 14,8000円〜</li>
+            </ul>
+            <ul class="p-pink__box">
+              <li class="p-main__money">所在地</li>
+              <li class="p-sub__money">三重県伊勢市</li>
+            </ul>
+            <ul class="p-pink__box">
+              <li class="p-main__money">最寄駅</li>
+              <li class="p-sub__money">伊勢市駅 徒歩15分</li>
+            </ul>
+          </div>
+          <div class="p-recruitment">
+            <img src="./img/picture/news-page-recruitment-photo②.jpg" alt="ナース②" class="">
+            <div class="p-recruitment__information">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</div>
+            <ul class="p-pink__box">
+              <li class="p-main__money">給与</li>
+              <li class="p-sub__money">月給 14,8000円〜</li>
+            </ul>
+            <ul class="p-pink__box">
+              <li class="p-main__money">所在地</li>
+              <li class="p-sub__money">三重県伊勢市</li>
+            </ul>
+            <ul class="p-pink__box">
+              <li class="p-main__money">最寄駅</li>
+              <li class="p-sub__money">伊勢市駅 徒歩15分</li>
+            </ul>
+          </div>
+          <div class="p-recruitment">
+            <img src="./img/picture/news-page-recruitment-photo③.jpg" alt="ナース③" class="">
+            <div class="p-recruitment__information">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</div>
+            <ul class="p-pink__box">
+              <li class="p-main__money">給与</li>
+              <li class="p-sub__money">月給 14,8000円〜</li>
+            </ul>
+            <ul class="p-pink__box">
+              <li class="p-main__money">所在地</li>
+              <li class="p-sub__money">三重県伊勢市</li>
+            </ul>
+            <ul class="p-pink__box">
+              <li class="p-main__money">最寄駅</li>
+              <li class="p-sub__money">伊勢市駅 徒歩15分</li>
+            </ul>
+          </div>
+          <div class="p-recruitment">
+            <img src="./img/picture/news-page-recruitment-photo④.jpg" alt="ナース④" class="">
+            <div class="p-recruitment__information">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</div>
+            <ul class="p-pink__box">
+              <li class="p-main__money">給与</li>
+              <li class="p-sub__money">月給 14,8000円〜</li>
+            </ul>
+            <ul class="p-pink__box">
+              <li class="p-main__money">所在地</li>
+              <li class="p-sub__money">三重県伊勢市</li>
+            </ul>
+            <ul class="p-pink__box">
+              <li class="p-main__money">最寄駅</li>
+              <li class="p-sub__money">伊勢市駅 徒歩15分</li>
+            </ul>
           </div>
         </div>
         <div class="p-recruitment__width">
@@ -177,7 +242,7 @@
         </ul>
       </div>
     </div>
-    <div class="p-responsive__gizjob__fourthtitle">
+    <div class="p-responsive__gizjob__fourthtitle" id="2">
       <div class="p-gizjob__fourthtitle">
         <div class="p-main__strong__title">ギズジョブ4つの特徴</div>
         <ul class="p-gizjob__box">
@@ -198,7 +263,7 @@
         </ul>
       </div>
     </div>
-    <div class="p-responsive__recruitment__story">
+    <div class="p-responsive__recruitment__story" id="3">
       <div class="p-recruitment__story">
         <div class="p-story__title">転職までの流れ</div>
         <div class="p-recruitment__group">
@@ -265,7 +330,7 @@
         </div>
       </div>
     </div>
-    <div class="p-contents">
+    <div class="p-contents" id="4">
       <div class="p-contents__title">転職お役立ちコンテンツ</div>
       <div class="p-three__contents">
         <div class="p-manual">
@@ -293,10 +358,10 @@
     </div>
     <div class="p-responsive__checkwork">
       <div class="p-checkwork__second">
-        <ul class="p-text__title__second">
-          <li class="p-main__title__second">お仕事検索</li>
-          <li class="p-sub__title__second">働きたい職種・地域・希望給与を入れて検索</li>
-        </ul>
+        <div class="p-text__title__second">
+          <div class="p-main__title__second">お仕事検索</div>
+          <div class="p-sub__title__second">働きたい職種・地域・希望給与を入れて検索</div>
+        </div>
         <div class="p-total__select__box__second">
           <div class="p-responsive__set__select__box__second">
             <select name="p-selectbox__first" class="p-selectbox__first__second">
@@ -335,7 +400,6 @@
       </div>
     </div>
   </main>
-
   <footer class="l-footer">
     <div class="l-footer__area">
       <div class="l-inner is-flex">
