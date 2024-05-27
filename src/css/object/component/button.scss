@@ -93,23 +93,28 @@
 
 //スクロールボタンのくの字
 //左矢印
-.p-scroll__area__first {
+.slick-prev {
   z-index: 1;
   position: relative;
   background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: none;
+
   @include utility.pc {
-    width: 300px;
+    width: 265px;
     height: 60px;
     border-radius: 30px;
     top: 85px;
     left: 70px;
   }
   @include utility.tab {
-    width: 5rem;
+    width: 4.5rem;
     height: 1rem;
     border-radius: .5rem;
     top: 1rem;
-    left: 1.2rem;
+    left: 1.0rem;
   }
   @include utility.sp {
     width: .6rem;
@@ -119,79 +124,94 @@
     left: .1rem;
   }
 
-  & > .p-chevron__round__left {
-    display: inline-block;
-    vertical-align: middle;
-    color: #333;
-    line-height: 1;
-    @include utility.pc {
-      position: relative;
-      width: 30px;
-      height: 30px;
-      top: 15px;
-      left: 10px;
-      transform: translateX(25%) rotate(-135deg);
-    }
-    @include utility.tab {
-      position: relative;
-      width: .3rem;
-      height: .3rem;
-      top: .3rem;
-      left: .3rem;
-      transform: translateX(25%) rotate(-135deg);
-    }
-    @include utility.sp {
-      position: relative;
-      width: .23rem;
-      height: .23rem;
-      top: .15rem;
-      left: .15rem;
-      transform: translateX(25%) rotate(-135deg);
-    }
-  }
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  transform: translateX(25%) rotate(-135deg);
 }
 
-.p-chevron__round__left::before, .p-chevron__round__left::after {
+.slick-prev::before, .slick-prev::after {
   content: '';
   position: absolute;
   background: currentColor;
   border-radius: 0.1em;
 }
 
-.p-chevron__round__left::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 0.1em;
+.slick-prev::before {
+  @include utility.pc {
+    top: 17px;
+    left: 15px;
+    right: 20px;
+    height: 0.01rem;
+  }
+  @include utility.tab {
+    top: .22rem;
+    left: .3rem;
+    right: .2rem;
+    height: 0.1em;
+  }
+  @include utility.sp {
+    top: .22rem;
+    left: .19rem;
+    right: .2rem;
+    height: 0.01rem;
+  }
 }
 
-.p-chevron__round__left::after {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 0.1em;
+.slick-prev::after {
+  @include utility.pc {
+    top: 17px;
+    right: 20px;
+    bottom: 15px;
+    width: 0.01rem;
+  }
+  @include utility.tab {
+    top: .23rem;
+    right: .19rem;
+    bottom: .2rem;
+    width: 0.1em;
+  }
+  @include utility.sp {
+    top: .22rem;
+    right: .19rem;
+    bottom: .15rem;
+    width: 0.01rem;
+  }
 }
 
 //右矢印
 
-.p-scroll__area__second {
+.slick-next {
   z-index: 1;
   position: relative;
   background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: none;
+
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  transform: translateX(-25%) rotate(45deg);
 
   @include utility.pc {
-    width: 300px;
+    width: 265px;
     height: 60px;
     border-radius: 30px;
     top: 80px;
     right: 80px;
   }
   @include utility.tab {
-    width: 5rem;
+    width: 4.5rem;
     height: 1rem;
     border-radius: .5rem;
     top: 1rem;
-    right: 1.3rem;
+    right: 1.1rem;
   }
   @include utility.sp {
     width: .6rem;
@@ -200,56 +220,53 @@
     top: -2.3rem;
     left: 3rem;
   }
-
-  & > .p-chevron__round__right {
-    display: inline-block;
-    vertical-align: middle;
-    color: #333;
-    line-height: 1;
-    @include utility.pc {
-      position: relative;
-      width: 30px;
-      height: 30px;
-      transform: translateX(-25%) rotate(45deg);
-      left: 20px;
-      top: 15px;
-    }
-    @include utility.tab {
-      position: relative;
-      width: .3rem;
-      height: .3rem;
-      transform: translateX(-25%) rotate(45deg);
-      left: .3rem;
-      top: .3rem;
-    }
-    @include utility.sp {
-      position: relative;
-      width: .23rem;
-      height: .23rem;
-      transform: translateX(-25%) rotate(45deg);
-      left: .2rem;
-      top: .17rem;
-    }
-  }
 }
 
-.p-chevron__round__right::before, .p-chevron__round__right::after {
+.slick-next::before, .slick-next::after {
   content: '';
   position: absolute;
   background: currentColor;
   border-radius: 0.1em;
 }
 
-.p-chevron__round__right::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 0.1em;
+.slick-next::before {
+  @include utility.pc {
+    top: 17px;
+    left: 15px;
+    right: 20px;
+    height: 0.01rem;
+  }
+  @include utility.tab {
+    top: .22rem;
+    left: .3rem;
+    right: .2rem;
+    height: 0.1em;
+  }
+  @include utility.sp {
+    top: .22rem;
+    left: .19rem;
+    right: .2rem;
+    height: 0.1em;
+  }
 }
 
-.p-chevron__round__right::after {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 0.1em;
+.slick-next::after {
+  @include utility.pc {
+    top: 17px;
+    right: 20px;
+    bottom: 15px;
+    width: 0.01rem;
+  }
+  @include utility.tab {
+    top: .23rem;
+    right: .19rem;
+    bottom: .2rem;
+    width: 0.1em;
+  }
+  @include utility.sp {
+    top: .22rem;
+    right: .19rem;
+    bottom: .15rem;
+    width: 0.1em;
+  }
 }
