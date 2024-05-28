@@ -1,0 +1,96 @@
+@use '../../object/utility/utility.scss';
+
+.p-flow {
+  text-align: center;
+  
+  &__title {
+    font-size: 2.5rem;
+    font-weight: utility.$bold;
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 5rem;
+    position: relative;
+  }
+
+  &__step {
+    width: 28rem;
+    padding: 17.6rem 1.7rem 4rem 1.7rem;
+    border: .3rem solid utility.$pink;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    background-repeat: no-repeat;
+    line-height: 2rem;
+    position: relative;
+    text-align: center;
+
+    &__next-point {
+      position: absolute;
+      border-top:solid 2rem transparent;
+      border-bottom:solid 2rem transparent;
+      border-left:solid 2rem utility.$pink;
+      border-right:solid 2rem transparent;
+      left: 27.7rem;
+      top: 15.5rem;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    & img {
+      position: absolute;
+      left: .8rem;
+      top: .8rem;
+    }
+
+    & h3 {
+      font-size: 2.4rem;
+      font-weight: utility.$bold;
+      line-height: 3rem;
+    }
+
+    & p {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    &.is-sheet {
+      background-image: url(../img/icon/icon-sheet.png);
+      background-position: 9.5rem 5.5rem;
+    }
+
+    &.is-glass {
+      background-image: url(../img/icon/icon-glass.png);
+      background-position: 9.2rem 6.5rem;
+    }
+
+    &.is-mail {
+      background-image: url(../img/icon/icon-mail.png);
+      background-position: 8.7rem 5.8rem;
+
+      & h3 {
+        margin-top: 1.6rem;
+      }
+
+      & p {
+        margin-top: 3.3rem;
+      }
+    }
+
+    &.is-shine {
+      background-image: url(../img/icon/icon-shine.png);
+      background-position: 7.8rem 5rem;
+
+      & h3 {
+        margin-top: 1.6rem;
+      }
+
+      & p {
+        margin-top: 3.3rem;
+      }
+    }
+  }
+}

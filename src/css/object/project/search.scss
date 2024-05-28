@@ -1,11 +1,15 @@
 @use '../../object/utility/utility.scss';
 
 .p-search {
-  padding: 6.5rem 0px;
+  padding: 6.5rem 0;
   text-align: center;
   color: utility.$black;
   @include utility.sp {
     padding: .25rem .15rem;
+  }
+
+  &.is-end {
+    padding: 6.5rem 0 20rem;
   }
 
   &__area {
