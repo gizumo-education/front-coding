@@ -4,6 +4,12 @@
 .p-flow {
   text-align: center;
   padding-top: 126px;
+  @include utility.tab {
+    padding-top: 1.26rem;
+  }
+  @include utility.sp {
+    padding-top: .78rem;
+  }
 
   &__title {
     font: {
@@ -11,12 +17,23 @@
       weight: var.$bold;
     }
     line-height: 25px;
+    @include utility.tab {
+      font-size: .25rem;
+      line-height: .25rem;
+    }
   }
 
   &__lists {
     display: flex;
     align-items: center;
     margin-top: 53px;
+    @include utility.tab {
+      margin-top: .53rem;
+    }
+    @include utility.sp {
+      margin-top: .53rem;
+      flex-direction: column
+    }
   }
 
   &__step {
@@ -26,6 +43,14 @@
     width: 280px;
     padding: 180px 15px 42px;
     text-align: center;
+    @include utility.tab {
+      width: 2.8rem;
+      padding: 1.8rem .15rem .42rem;
+    }
+    @include utility.sp {
+      width: 2.8rem;
+      padding: 1.4rem 0 .32rem;
+    }
   }
 
   &__step1-title,
@@ -37,11 +62,39 @@
       weight: var.$bold;
     }
     line-height: 30px;
+    @include utility.tab {
+      font-size: .24rem;
+      line-height: .30rem;
+    }
+    @include utility.sp {
+      font-size: .20rem;
+      line-height: .30rem;
+    }
   }
 
   &__step3-title,
   &__step4-title {
     padding: 15px 0;
+    @include utility.tab {
+      padding: .15rem 0;
+    }
+    @include utility.sp {
+      padding: 0;
+    }
+  }
+
+  &__hidden-sp {
+    display: inline;
+    @include utility.sp {
+      display: none;
+    }
+  }
+
+  &__hidden-pc {
+    display: none;
+    @include utility.sp {
+      display: inline;
+    }
   }
 
   &__step-description {
@@ -52,84 +105,157 @@
     line-height: 20px;
     text-align: left;
     margin-top: 20px;
+    @include utility.tab {
+      font-size: .14rem;
+      line-height: .20rem;
+      margin-top: .20rem;
+    }
+    @include utility.sp {
+      margin: .10rem .15rem 0;
+    }
   }
 
-  &__step1-icon {
+  &__step1-icon,
+  &__step2-icon,
+  &__step3-icon,
+  &__step4-icon {
     position: absolute;
-    background: url("../img/icon/flow-icon-step1.png");
     top: 10px;
     left: 10px;
     width: 60px;
     height: 60px;
+    @include utility.tab {
+      top: .1rem;
+      left: .1rem;
+      width: .60rem;
+      height: .60rem;
+    }
+    @include utility.sp {
+      top: .1rem;
+      left: .1rem;
+      width: .45rem;
+      height: .45rem;
+    }
+  }
+
+  &__step1-icon {
+    background: url("../img/icon/flow-icon-step1.png");
+    background-size: contain;
   }
 
   &__step1-image {
     position: absolute;
-    background: url("../img/icon/flow-icon-sheet.png");
+    background: url("../img/icon/flow-icon-sheet.png") no-repeat;
+    background-size: contain;
     top: 60px;
     left: 98px;
     width: 100px;
     height: 100px;
+    @include utility.tab {
+      top: .60rem;
+      left: 1rem;
+      width: 1rem;
+      height: 1rem;
+    }
+    @include utility.sp {
+      top: .50rem;
+      left: 1rem;
+      width: .76rem;
+      height: .75rem;
+    }
   }
 
   &__step2-icon {
-    position: absolute;
     background: url("../img/icon/flow-icon-step2.png");
-    top: 10px;
-    left: 10px;
-    width: 60px;
-    height: 60px;
+    background-size: contain;
   }
 
   &__step2-image {
     position: absolute;
-    background: url("../img/icon/flow-icon-search.png");
+    background: url("../img/icon/flow-icon-search.png") no-repeat;
+    background-size: contain;
     top: 70px;
     left: 95px;
     width: 80px;
     height: 80px;
+    @include utility.tab {
+      top: .70rem;
+      left: .95rem;
+      width: .75rem;
+      height: .75rem;
+    }
+    @include utility.sp {
+      top: .50rem;
+      left: 1rem;
+      width: .76rem;
+      height: .75rem;
+    }
   }
 
   &__step3-icon {
-    position: absolute;
     background: url("../img/icon/flow-icon-step3.png");
-    top: 10px;
-    left: 10px;
-    width: 60px;
-    height: 60px;
+    background-size: contain;
   }
 
   &__step3-image {
     position: absolute;
     background: url("../img/icon/flow-icon-mail.png");
+    background-size: contain;
     top: 60px;
     left: 90px;
     width: 107px;
     height: 100px;
+    @include utility.tab {
+      top: .60rem;
+      left: .90rem;
+      width: 1.07rem;
+      height: 1rem;
+    }
+    @include utility.sp {
+      top: .50rem;
+      left: 1rem;
+      width: .80rem;
+      height: .75rem;
+    }
   }
 
   &__step4-icon {
-    position: absolute;
     background: url("../img/icon/flow-icon-step4.png");
-    top: 10px;
-    left: 10px;
-    width: 60px;
-    height: 60px;
+    background-size: contain;
   }
 
   &__step4-image {
     position: absolute;
     background: url("../img/icon/flow-icon-sparkle.png");
+    background-size: contain;
     top: 55px;
     left: 80px;
     width: 108px;
     height: 110px;
+    @include utility.tab {
+      top: .55rem;
+      left: .80rem;
+      width: 1.08rem;
+      height: 1.10rem;
+    }
+    @include utility.sp {
+      top: .50rem;
+      left: 1rem;
+      width: .73rem;
+      height: .75rem;
+    }
   }
 
   &__next-icon {
-    background: url("../img/icon/flow-icon-right.png");
-    width: 20px;
-    height: 40px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid utility.$hotPink;
+    margin: 10px 0;
+    @include utility.tab {
+      margin: .10rem 0;
+    }
+    @include utility.sp {
+      margin: .10rem 0;
+    }
   }
-
 }
