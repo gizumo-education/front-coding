@@ -2,7 +2,7 @@
 @use '../../foundation/_variables.scss' as var;
 // お仕事検索に関するスタイル
 
-.p-form-1 {
+.p-form1 {
   padding: 60px 0;
   @include utility.tab {
     padding: .6rem 0;
@@ -135,7 +135,7 @@
       font-size: .12rem;
       line-height: .3rem;
       padding-left: .05rem;
-      border-radius: 5px;
+      border-radius: .05rem;
     }
   }
 
@@ -167,7 +167,7 @@
       width: 100%;
       height: .3rem;
       padding-left: .1rem;
-      border-radius: 5px;
+      border-radius: .05rem;
     }
   }
 

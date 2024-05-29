@@ -41,14 +41,14 @@
     @include utility.sp {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: .20rem;
     }
   }
 
   &__box {
     background: var.$pink;
     border-radius: 10px;
-    padding: 33px 0;
+    padding: 35px 0;
     @include utility.tab {
       padding: .33rem 0;
     }
@@ -64,6 +64,9 @@
     @include utility.tab {
       font-size: .24rem;
       line-height: .24rem;
+    }
+    @include utility.sp {
+      font-size: .20rem;
     }
   }
 

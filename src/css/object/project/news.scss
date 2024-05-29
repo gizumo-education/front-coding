@@ -9,6 +9,10 @@
   @include utility.tab {
     padding: .64rem 0;
   }
+  @include utility.sp {
+    padding: .32rem 0 .64rem;
+    overflow: hidden;
+  }
 
   &__title {
     background: url("../img/icon/news-title-web.png") no-repeat;
@@ -37,9 +41,10 @@
     }
   }
 
-  &__image-1 {
-    background: url("../img/picture/news-image-1-web.jpg") no-repeat;
-    background-size: contain;
+  &__image-1,
+  &__image-2,
+  &__image-3,
+  &__image-4 {
     width: 280px;
     height: 200px;
     @include utility.tab {
@@ -52,37 +57,27 @@
     }
   }
 
+  &__image-1 {
+    background: url("../img/picture/news-image-1-web.jpg") no-repeat;
+    background-size: contain;
+    @include utility.sp {
+      background: url("../img/picture/news-image-1-sp.jpg") no-repeat;
+    }
+  }
+
   &__image-2 {
     background: url("../img/picture/news-image-2-web.jpg") no-repeat;
     background-size: contain;
-    width: 280px;
-    height: 200px;
-    @include utility.tab {
-      width: 2.8rem;
-      height: 2rem;
-    }
   }
 
   &__image-3 {
     background: url("../img/picture/news-image-3-web.jpg") no-repeat;
     background-size: contain;
-    width: 280px;
-    height: 200px;
-    @include utility.tab {
-      width: 2.8rem;
-      height: 2rem;
-    }
   }
 
   &__image-4 {
     background: url("../img/picture/news-image-4-web.jpg") no-repeat;
     background-size: contain;
-    width: 280px;
-    height: 200px;
-    @include utility.tab {
-      width: 2.8rem;
-      height: 2rem;
-    }
   }
 
   &__news-title {
@@ -99,7 +94,7 @@
     }
   }
 
-  &__news-lists li {
+  &__news-list {
     display: flex;
     margin-top: 5px;
     @include utility.tab {
@@ -204,7 +199,7 @@
       height: .60rem;
       font-size: .18rem;
     }
-    @include utility.tab {
+    @include utility.sp {
       width: 3.7rem;
       height: .60rem;
       font-size: .18rem;
