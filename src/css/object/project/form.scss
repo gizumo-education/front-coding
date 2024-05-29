@@ -7,17 +7,17 @@
   margin: 60px auto 0;
   border-radius: 10px;
   background-color: var.$lightblue;
+  padding-top: 40px;
 
   &__title {
     text-align: center;
-    padding-top: 40px;
     font-size: 25px;
     font-weight: var.$bold;
   }
 
   &__text {
     text-align: center;
-    padding-top: 45px;
+    margin-top: 20px;
     font-size: 20px;
   }
 
@@ -36,18 +36,20 @@
     background-color: var.$white;
   }
 
-  a {
-    width: 140px;
-    height: 60px;
-    border-radius: 50px;
-    background: var.$lightPink;
-  }
-
-  p {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 20px;
-    color: var.$white;
-    font-weight: var.$bold;
+  &__search {
+    &-link {
+      color: var.$white;
+      &__wrapper {
+        display: flex;
+        background-color: var.$lightPink;
+        border-radius: 50px;
+        width: 140px;
+        height: 60px;
+        font-size: 18px;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+      }
+    }
   }
 }
