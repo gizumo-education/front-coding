@@ -1,17 +1,29 @@
-@use "../../object/utility/utility.scss";
+@use "../../object/utility/utility.scss" as base;
 @use "../../foundation/_variables.scss" as var;
 
 .p-keyvisual {
   width: 100%;
   height: 500px;
   background-color: var.$blueGray;
+  @include base.sp {
+    height: 2.7rem;
+  }
 
   &__image {
-    background-image: url("../img/picture/keyvisual-image.png");
-    width: 1262px;
+    @include base.pc {
+      background-image: url("../img/picture/keyvisual-image.png");
+    }
+    width: 100%;
     height: 500px;
     margin: 0 auto;
     position: relative;
+
+    @include base.sp {
+      background-image: url("../img/picture/keyvisual-image-sp.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 2.7rem;
+    }
   }
 
   &__texts {
@@ -22,14 +34,16 @@
     position: absolute;
 
     &__rank {
-      background-image: url("../img/picture/keyvisual-rank.png");
       width: 341.81px;
       height: 168.51px;
       margin: 20px auto 0;
+      @include base.sp {
+        width: 1.4954rem;
+        height: 0.6202rem;
+      }
     }
 
     &__title {
-      background-image: url("../img/picture/keyvisual-title.png");
       width: 800px;
       height: 65px;
       margin: 20px auto 0;
