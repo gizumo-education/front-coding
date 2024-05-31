@@ -1,12 +1,18 @@
-@use "../../object/utility/utility.scss";
+@use "../../object/utility/utility.scss" as base;
 @use "../../foundation/_variables.scss" as var;
 
 .p-banner {
   background-color: var.$black;
   &__image {
-    background-image: url("../img/picture/banner.png");
     width: 100%;
     height: 300px;
+    @include base.pc {
+      background-image: url("../img/picture/banner.png");
+    }
+    @include base.sp {
+      background-image: url("../img/picture/banner-sp.png");
+      height: 0.75rem;
+    }
   }
 
   &__blur {
@@ -24,5 +30,11 @@
     font-weight: var.$bold;
     line-height: 60px;
     color: var.$white;
+
+    @include base.sp {
+      font-size: 0.14rem;
+      line-height: 0.2027rem;
+      font-weight: var.$regular;
+    }
   }
 }

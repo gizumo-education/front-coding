@@ -9,15 +9,26 @@
   padding-top: 64px;
   padding-bottom: 67px;
 
+  @include base.sp {
+    margin-top: 0.25rem;
+    padding: 0.3rem 0;
+    padding-bottom: 0.6rem;
+  }
+
   &__title {
     font-size: 25px;
+
+    @include base.sp {
+      text-align: center;
+      font-weight: var.$bold;
+    }
   }
 
   &__items {
     display: flex;
     justify-content: center;
     padding-top: 40px;
-    gap: 20px;
+    gap: 20px;    
   }
 
   &__item {
@@ -59,6 +70,10 @@
     display: flex;
     justify-content: center;
     margin-top: 59px;
+
+    @include base.sp {
+      margin-top: 0.44rem;
+    }
   }
 
   &__button-more {
