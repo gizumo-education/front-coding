@@ -2,6 +2,7 @@
 
 .p-flow {
   text-align: center;
+  padding: 5.6rem 0;
   
   &__title {
     font-size: 2.5rem;
@@ -16,7 +17,7 @@
 
   &__step {
     width: 28rem;
-    padding: 17.6rem 1.7rem 4rem 1.7rem;
+    padding: 17.8rem 1.7rem 4rem 1.7rem;
     border: .3rem solid utility.$pink;
     border-radius: 1rem;
     margin-left: 2rem;
