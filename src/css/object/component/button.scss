@@ -4,7 +4,11 @@
   font-size: 1.8rem;
   font-weight: utility.$bold;
   background-color: utility.$pink;
-  padding: 2.2rem 7rem;
+  padding: 2.1rem 7.2rem;
   border-radius: 4rem;
   color: utility.$white;
+
+  &.is-wide {
+    padding: 2.1rem 9.3rem;
+  }
 }

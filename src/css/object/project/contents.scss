@@ -1,0 +1,47 @@
+@use '../../object/utility/utility.scss';
+
+.p-contents {
+  text-align: center;
+  padding: 5rem 0 8.4rem;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: utility.$bold;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+
+  &__detail {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/picture/resume.jpg);
+    background-repeat: no-repeat;
+    padding: 7rem 0 5rem;
+    width: 38rem;
+    border-radius: 1rem;
+    line-height: 2.5rem;
+
+    &:nth-child(2) {
+      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/picture/pc.jpg);
+    }
+
+    & p {
+      color: utility.$white;
+      font-size: 1.6rem;
+      font-weight: utility.$regular;
+      margin-top: 4.5rem;
+    }
+  }
+
+  &__description {
+    font-size: 2.4rem;
+    font-weight: utility.$bold;
+    color: utility.$white;
+  }
+
+  &__more-wrapper {
+    margin-top: 8rem;
+  }
+}
