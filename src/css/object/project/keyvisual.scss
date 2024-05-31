@@ -1,2 +1,55 @@
-@use '../../object/utility/utility.scss';
-// ページ上部のキービジュアルに関するスタイル
+@use "../../object/utility/utility.scss";
+@use "../../foundation/_variables.scss" as var;
+
+.p-keyvisual {
+  width: 100%;
+  height: 500px;
+  background-color: var.$blueGray;
+
+  &__image {
+    background-image: url("../img/picture/keyvisual-image.png");
+    width: 1262px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__texts {
+    width: 70%;
+    right: 0;
+    padding: 50px 0;
+    text-align: center;
+    position: absolute;
+
+    &__rank {
+      background-image: url("../img/picture/keyvisual-rank.png");
+      width: 341.81px;
+      height: 168.51px;
+      margin: 20px auto 0;
+    }
+
+    &__title {
+      background-image: url("../img/picture/keyvisual-title.png");
+      width: 800px;
+      height: 65px;
+      margin: 20px auto 0;
+    }
+
+    &__box {
+      width: 391px;
+      line-height: 28.96px;
+      margin: 65px auto 0;
+      border-radius: 10px;
+      padding: 14px 0;
+      font-size: 20px;
+      border: solid 2px var.$green;
+      background-color: var.$white;
+      color: var.$green;
+
+      & > span {
+        font-size: 40px;
+        font-weight: var.$bold;
+      }
+    }
+  }
+}

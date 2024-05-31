@@ -1,56 +1,229 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>基本コーディング</title>
-</head>
-<body>
-  <header class="l-header">
-    <nav class="l-header__nav">
-      <div class="l-header__pc-items">
-        <ul class="l-header__items">
-          <li class="l-header__item"><a href="">ギズジョブ医療事務とは</a></li>
-          <li class="l-header__item"><a class="is-search" href="">こだわり検索</a></li>
-          <li class="l-header__item"><a class="is-book" href="">ギズジョブ医療事務コラム</a></li>
-        </ul>
-        <ul class="l-header__buttons">
-          <li class="l-header__button is-heart"><a href="">気になるリスト</a></li>
-          <li class="l-header__button is-clock"><a href="">閲覧履歴</a></li>
-          <li class="l-header__button is-camera"><a href="">検索履歴</a></li>
-        </ul>
-      </div>
-      <div class="l-header__sp-items">
-        <button class="l-header__hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>基本コーディング</title>
+  </head>
+  <body>
+    <header class="l-header">
+      <nav class="l-header__nav">
+        <div class="l-header__pc-items">
+          <ul class="l-header__items">
+            <li class="l-header__item">
+              <a href="">ギズジョブ医療事務とは</a>
+            </li>
+            <li class="l-header__item">
+              <a class="is-search" href="">こだわり検索</a>
+            </li>
+            <li class="l-header__item">
+              <a class="is-book" href="">ギズジョブ医療事務コラム</a>
+            </li>
+          </ul>
+          <ul class="l-header__buttons">
+            <li class="l-header__button is-heart">
+              <a href="">気になるリスト</a>
+            </li>
+            <li class="l-header__button is-clock"><a href="">閲覧履歴</a></li>
+            <li class="l-header__button is-camera"><a href="">検索履歴</a></li>
+          </ul>
+        </div>
+        <div class="l-header__sp-items">
+          <button class="l-header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-  <main></main>
+    <main>
+      <section class="p-keyvisual">
+        <div class="p-keyvisual__image">
+          <div class="p-keyvisual__texts">
+            <div class="p-keyvisual__texts__rank"></div>
+            <div class="p-keyvisual__texts__title"></div>
+            <p class="p-keyvisual__texts__box">
+              現在の求人掲載数：<span>2,320</span>件
+            </p>
+          </div>
+        </div>
+      </section>
+      <form class="p-form">
+        <p class="p-form__title">お仕事検索</p>
+        <p class="p-form__text">働きたい職種・地域・希望給与を入れて検索！</p>
+        <div class="p-form__items">
+          <div class="p-form__select-box">
+            <select name="jobType" id="jobType" class="p-form__select">
+              <option value="" selected>医療事務</option>
+              <option value="">調剤事務</option>
+              <option value="">診療情報管理士</option>
+              <option value="">歯科助手</option>
+              <option value="">歯科事務</option>
+              <option value="">看護補助・看護助手</option>
+              <option value="">病院内SE</option>
+            </select>
+          </div>
+          <div class="p-form__select-box">
+            <select name="region" id="region" class="p-form__select">
+              <option value="">茨城県</option>
+              <option value="">神奈川県</option>
+              <option value="">群馬県</option>
+              <option value="">埼玉県</option>
+              <option value="">千葉県</option>
+              <option value="" selected>東京都</option>
+              <option value="">栃木県</option>
+            </select>
+          </div>
+          <div class="p-form__select-box">
+            <select name="salary" id="salary" class="p-form__select">
+              <option value="">月給17万円〜</option>
+              <option value="">月給18万円〜</option>
+              <option value="">月給19万円〜</option>
+              <option value="" selected>月給20万円〜</option>
+              <option value="">月給21万円〜</option>
+              <option value="">月給22万円〜</option>
+              <option value="">月給23万円〜</option>
+            </select>
+          </div>
+          <div class="p-form__search-link__wrapper">
+            <img src="./img/icon/icon-search.png" alt="検索アイコン" />
+            <a class="p-form__search-link" href="">検索する</a>
+          </div>
+        </div>
+      </form>
+      <section class="p-jobs">
+        <div class="l-inner">
+          <p class="p-jobs__title">新着求人</p>
+          <ul class="p-jobs__items">
+            <li class="p-jobs__item">
+              <img src="./img/picture/jobs-image1.png" alt="新着求人の画像1" class="p-jobs__item__img" />
+              <div>
+                <p class="p-jobs__item__title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+                <dl class="p-jobs__item__dl">
+                  <div class="p-jobs__item__dl__detail">
+                    <dt>給与</dt>
+                    <dd>月給 148,000円～</dd>
+                  </div>
+                  <div class="p-jobs__item__dl__detail">
+                    <dt>所在地</dt>
+                    <dd>三重県伊勢市</dd>
+                  </div>
+                  <div class="p-jobs__item__dl__detail">
+                    <dt>最寄駅</dt>
+                    <dd>伊勢市駅 徒歩15分</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="p-jobs__item">
+              <img src="./img/picture/jobs-image2.png" alt="新着求人の画像1" class="p-jobs__item__img" />
+              <div>
+                <p class="p-jobs__item__title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+                <dl class="p-jobs__item__dl">
+                  <div class="p-jobs__item__dl__detail">
+                    <dt>給与</dt>
+                    <dd>月給 148,000円～</dd>
+                  </div>
+                  <div class="p-jobs__item__dl__detail">
+                    <dt>所在地</dt>
+                    <dd>三重県伊勢市</dd>
+                  </div>
+                  <div class="p-jobs__item__dl__detail">
+                    <dt>最寄駅</dt>
+                    <dd>伊勢市駅 徒歩15分</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="p-jobs__item">
+              <img src="./img/picture/jobs-image3.png" alt="新着求人の画像1" class="p-jobs__item__img" />
+              <div>
+                <p class="p-jobs__item__title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+                <dl class="p-jobs__item__dl">
+                  <div class="p-jobs__item__dl__detail">
+                    <dt>給与</dt>
+                    <dd>月給 148,000円～</dd>
+                  </div>
+                  <div class="p-jobs__item__dl__detail">
+                    <dt>所在地</dt>
+                    <dd>三重県伊勢市</dd>
+                  </div>
+                  <div class="p-jobs__item__dl__detail">
+                    <dt>最寄駅</dt>
+                    <dd>伊勢市駅 徒歩15分</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="p-jobs__item">
+              <img src="./img/picture/jobs-image4.png" alt="新着求人の画像1" class="p-jobs__item__img" />
+              <div>
+                <p class="p-jobs__item__title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+                <dl class="p-jobs__item__dl">
+                  <div class="p-jobs__item__dl__detail">
+                    <dt>給与</dt>
+                    <dd>月給 148,000円～</dd>
+                  </div>
+                  <div class="p-jobs__item__dl__detail">
+                    <dt>所在地</dt>
+                    <dd>三重県伊勢市</dd>
+                  </div>
+                  <div class="p-jobs__item__dl__detail">
+                    <dt>最寄駅</dt>
+                    <dd>伊勢市駅 徒歩15分</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+          </ul>
+          <div class="p-jobs__button">
+            <a href="" class="p-jobs__button-more">新着求人一覧をもっと見る</a>
+          </div>
+        </div>
+      </section>
+      <section class="p-banner">
+        <div class="p-banner__image">
+          <div class="p-banner__blur">
+            <div class="p-banner__text">
+              <p>ギズジョブなら理想の職場がきっと見つかる</p>
+              <p>ギズジョブは完全無料の求職者向け求人サービスです。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <footer class="l-footer">
-    <div class="l-footer__area">
-      <div class="l-inner is-flex">
-        <ul class="l-footer__link-area">
-          <li class="l-footer__link"><a href="">ギズジョブ医療事務TOP</a></li>
-          <li class="l-footer__link"><a href="">利用ガイド</a></li>
-          <li class="l-footer__link"><a href="">プライバシーポリシー</a></li>
-          <li class="l-footer__link"><a href="">お問い合わせ</a></li>
-          <li class="l-footer__link"><a href="">サイトマップ</a></li>
-          <li class="l-footer__link"><a href="">よくある質問</a></li>
-        </ul>
-        <ul class="l-footer__banner-area">
-          <li class="l-footer__banner"><a href=""><img src="./img/picture/footer-banner01.jpg" alt="親子バナー"></a></li>
-          <li class="l-footer__banner"><a href=""><img src="./img/picture/footer-banner02.jpg" alt="介護士バナー"></a></li>
-        </ul>
+    <footer class="l-footer">
+      <div class="l-footer__area">
+        <div class="l-inner is-flex">
+          <ul class="l-footer__link-area">
+            <li class="l-footer__link"><a href="">ギズジョブ医療事務TOP</a></li>
+            <li class="l-footer__link"><a href="">利用ガイド</a></li>
+            <li class="l-footer__link"><a href="">プライバシーポリシー</a></li>
+            <li class="l-footer__link"><a href="">お問い合わせ</a></li>
+            <li class="l-footer__link"><a href="">サイトマップ</a></li>
+            <li class="l-footer__link"><a href="">よくある質問</a></li>
+          </ul>
+          <ul class="l-footer__banner-area">
+            <li class="l-footer__banner">
+              <a href=""
+                ><img src="./img/picture/footer-banner01.jpg" alt="親子バナー"
+              /></a>
+            </li>
+            <li class="l-footer__banner">
+              <a href=""
+                ><img
+                  src="./img/picture/footer-banner02.jpg"
+                  alt="介護士バナー"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
-  </footer>
-</body>
+      <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
+    </footer>
+  </body>
 </html>

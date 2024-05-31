@@ -1,20 +1,23 @@
 @charset "UTF-8";
 
 /*foundation---------------------------------*/
-@use './foundation/_reset.scss';
-@use './foundation/_base.scss';
+@use "./foundation/_reset.scss";
+@use "./foundation/_base.scss";
 /*-------------------------------------------*/
 
 /*layout---------------------------------*/
-@use './layout/footer.scss';
-@use './layout/header.scss';
-@use './layout/inner.scss';
+@use "./layout/footer.scss";
+@use "./layout/header.scss";
+@use "./layout/inner.scss";
 /*-------------------------------------------*/
 
 /*component---------------------------------*/
-@use './object/component/button.scss';
+@use "./object/component/button.scss";
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
-@use './object/project/keyvisual.scss';
+@use "./object/project/keyvisual.scss";
+@use "./object/project/form.scss";
+@use "./object/project/jobs.scss";
+@use "./object/project/banner.scss";
 /*-------------------------------------------*/
