@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ギズジョブは完全無料の求職者向け求人サービスです">
   <meta name="keywords" content="ギズジョブ, ギズジョブ医療事務, 医療事務求人, 医療事務">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>医療事務求人を探すならギズジョブ</title>
 </head>
 <body>
@@ -31,11 +32,18 @@
         </button>
       </div>
     </nav>
+    <ul class="l-header__menu">
+      <li class="l-header__menu-item"><a class="l-header__menu-item-text" href="#top">トップ</a></li>
+      <li class="l-header__menu-item"><a class="l-header__menu-item-text" href="#news">新着求人</a></li>
+      <li class="l-header__menu-item"><a class="l-header__menu-item-text" href="#features">４つの特徴</a></li>
+      <li class="l-header__menu-item"><a class="l-header__menu-item-text" href="#flow">転職までの流れ</a></li>
+      <li class="l-header__menu-item"><a class="l-header__menu-item-text" href="#post">転職お役立ちコンテンツ</a></li>
+    </ul>
   </header>
 
   <main>
     <!-- キービジュアル -->
-    <section class="p-keyvisual">
+    <section class="p-keyvisual" id="top">
       <div class="l-inner p-keyvisual__contents">
         <div class="p-keyvisual__image"></div>
         <div class="p-keyvisual__title"></div>
@@ -103,86 +111,122 @@
     </section>
 
     <!-- 新着求人 -->
-    <section class="p-news">
+    <section class="p-news" id="news">
       <div class="l-inner">
         <div class="p-news__title"></div>
-        <ul class="p-news__lists">
-          <li class="p-news__list">
-            <div class="p-news__image-1"></div>
-            <div class="p-news__news-title"><h3>平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</h3></div>
-            <ul>
-              <li class="p-news__news-list">
-                <div class="p-news__list-lavel"><p>給与</p></div>
-                <div class="p-news__list-amount-salary"></div>
-              </li>
-              <li class="p-news__news-list">
-                <div class="p-news__list-lavel"><p>所在地</p></div>
-                <div class="p-news__list-amount-place"></div>
-              </li>
-              <li class="p-news__news-list">
-                <div class="p-news__list-lavel"><p>最寄駅</p></div>
-                <div class="p-news__list-amount-station"></div>
-              </li>
-            </ul>
-          </li>
-          <li class="p-news__list">
-            <div class="p-news__image-2"></div>
-            <div class="p-news__news-title"><p>平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p></div>
-            <ul>
-              <li class="p-news__news-list">
-                <div class="p-news__list-lavel"><p>給与</p></div>
-                <div class="p-news__list-amount-salary"></div>
-              </li>
-              <li class="p-news__news-list">
-                <div class="p-news__list-lavel"><p>所在地</p></div>
-                <div class="p-news__list-amount-place"></div>
-              </li>
-              <li class="p-news__news-list">
-                <div class="p-news__list-lavel"><p>最寄駅</p></div>
-                <div class="p-news__list-amount-station"></div>
-              </li>
-            </ul>
-          </li>
-          <li class="p-news__list">
-            <div class="p-news__image-3"></div>
-            <div class="p-news__news-title"><p>平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p></div>
-            <ul>
-              <li class="p-news__news-list">
-                <div class="p-news__list-lavel"><p>給与</p></div>
-                <div class="p-news__list-amount-salary"></div>
-              </li>
-              <li class="p-news__news-list">
-                <div class="p-news__list-lavel"><p>所在地</p></div>
-                <div class="p-news__list-amount-place"></div>
-              </li>
-              <li class="p-news__news-list">
-                <div class="p-news__list-lavel"><p>最寄駅</p></div>
-                <div class="p-news__list-amount-station"></div>
-              </li>
-            </ul>
-          </li>
-          <li class="p-news__list">
-            <div class="p-news__image-4"></div>
-            <div class="p-news__news-title"><p>平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p></div>
-            <ul>
-              <li class="p-news__news-list">
-                <div class="p-news__list-lavel"><p>給与</p></div>
-                <div class="p-news__list-amount-salary"></div>
-              </li>
-              <li class="p-news__news-list">
-                <div class="p-news__list-lavel"><p>所在地</p></div>
-                <div class="p-news__list-amount-place"></div>
-              </li>
-              <li class="p-news__news-list">
-                <div class="p-news__list-lavel"><p>最寄駅</p></div>
-                <div class="p-news__list-amount-station"></div>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div class="p-news__button">
-          <a href="" class="p-news__button-load-more">新着求人一覧をもっと見る</a>
+        <div class="swiper">
+          <ul class="p-news__lists swiper-wrapper">
+            <li class="p-news__list swiper-slide">
+              <div class="p-news__image-1"></div>
+              <div class="p-news__news-title">
+                <h3>平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で<br class="p-news__hidden-pc">医療事務求人</h3>
+              </div>
+              <ul>
+                <li class="p-news__news-list">
+                  <div class="p-news__list-lavel">
+                    <p>給与</p>
+                  </div>
+                  <div class="p-news__list-amount-salary"></div>
+                </li>
+                <li class="p-news__news-list">
+                  <div class="p-news__list-lavel">
+                    <p>所在地</p>
+                  </div>
+                  <div class="p-news__list-amount-place"></div>
+                </li>
+                <li class="p-news__news-list">
+                  <div class="p-news__list-lavel">
+                    <p>最寄駅</p>
+                  </div>
+                  <div class="p-news__list-amount-station"></div>
+                </li>
+              </ul>
+            </li>
+            <li class="p-news__list swiper-slide">
+              <div class="p-news__image-2"></div>
+              <div class="p-news__news-title">
+                <p>平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で<br class="p-news__hidden-pc">医療事務求人</p>
+              </div>
+              <ul>
+                <li class="p-news__news-list">
+                  <div class="p-news__list-lavel">
+                    <p>給与</p>
+                  </div>
+                  <div class="p-news__list-amount-salary"></div>
+                </li>
+                <li class="p-news__news-list">
+                  <div class="p-news__list-lavel">
+                    <p>所在地</p>
+                  </div>
+                  <div class="p-news__list-amount-place"></div>
+                </li>
+                <li class="p-news__news-list">
+                  <div class="p-news__list-lavel">
+                    <p>最寄駅</p>
+                  </div>
+                  <div class="p-news__list-amount-station"></div>
+                </li>
+              </ul>
+            </li>
+            <li class="p-news__list swiper-slide">
+              <div class="p-news__image-3"></div>
+              <div class="p-news__news-title">
+                <p>平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で<br class="p-news__hidden-pc">医療事務求人</p>
+              </div>
+              <ul>
+                <li class="p-news__news-list">
+                  <div class="p-news__list-lavel">
+                    <p>給与</p>
+                  </div>
+                  <div class="p-news__list-amount-salary"></div>
+                </li>
+                <li class="p-news__news-list">
+                  <div class="p-news__list-lavel">
+                    <p>所在地</p>
+                  </div>
+                  <div class="p-news__list-amount-place"></div>
+                </li>
+                <li class="p-news__news-list">
+                  <div class="p-news__list-lavel">
+                    <p>最寄駅</p>
+                  </div>
+                  <div class="p-news__list-amount-station"></div>
+                </li>
+              </ul>
+            </li>
+            <li class="p-news__list swiper-slide">
+              <div class="p-news__image-4"></div>
+              <div class="p-news__news-title">
+                <p>平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で<br class="p-news__hidden-pc">医療事務求人</p>
+              </div>
+              <ul>
+                <li class="p-news__news-list">
+                  <div class="p-news__list-lavel">
+                    <p>給与</p>
+                  </div>
+                  <div class="p-news__list-amount-salary"></div>
+                </li>
+                <li class="p-news__news-list">
+                  <div class="p-news__list-lavel">
+                    <p>所在地</p>
+                  </div>
+                  <div class="p-news__list-amount-place"></div>
+                </li>
+                <li class="p-news__news-list">
+                  <div class="p-news__list-lavel">
+                    <p>最寄駅</p>
+                  </div>
+                  <div class="p-news__list-amount-station"></div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
+      <div class="p-news__button">
+        <a href="" class="p-news__button-load-more">新着求人一覧をもっと見る</a>
+      </div>
       </div>
     </section>
 
@@ -197,7 +241,7 @@
     </section>
 
     <!-- 特徴 -->
-    <section class="l-inner p-features">
+    <section class="l-inner p-features" id="features">
       <h2 class="p-features__title">ギズジョブの4つの特徴</h2>
       <ul class="p-features__boxes">
         <li class="p-features__box">
@@ -220,7 +264,7 @@
     </section>
 
     <!-- フロー -->
-    <section class="l-inner p-flow">
+    <section class="l-inner p-flow" id="flow">
       <h2 class="p-flow__title">転職までの流れ</h2>
       <ul class="p-flow__lists">
         <li class="p-flow__list">
@@ -262,7 +306,7 @@
     </section>
 
     <!-- お役立ちコンテンツ -->
-    <section class="l-inner p-post">
+    <section class="l-inner p-post" id="post">
       <h2 class="p-post__title">転職お役立ちコンテンツ</h2>
       <ul class="p-post__boxes">
         <li class="p-post__box-1">
@@ -361,5 +405,6 @@
     </div>
     <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
   </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>

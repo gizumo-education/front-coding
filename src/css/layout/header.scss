@@ -135,4 +135,42 @@
       border-radius: .03rem;
     }
   }
+
+  &__menu {
+    display: none;
+    @include utility.sp {
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      padding: .5rem 0 .5rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      top: .7rem;
+      right: -100%;
+      transition: right 0.3s ease-in-out;
+    }
+  }
+
+  &__menu-item {
+    @include utility.sp {
+      margin-top: .4rem;
+      font-size: .22rem;
+      font-weight: 700;
+      line-height: .22rem;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    &-text {
+      @include utility.sp {
+        display: block;
+        color: utility.$white;
+        padding-left: .6rem;
+      }
+    }
+  }
+}
+
+.is-open {
+  right: 0;
 }
