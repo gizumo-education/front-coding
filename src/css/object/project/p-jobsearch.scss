@@ -1,0 +1,74 @@
+@use '../../object/utility/utility.scss';
+
+.p-jobsearch {
+  Width:1300px;
+  Height:250px;
+  border-radius: 10px 10px 10px 10px;
+  border: solid 3px #DEEEF9;
+  background-color: #DEEEF9;
+  margin:auto;
+  text-align: center;
+  line-height:40px;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.p-jobsearch span {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.example{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.select-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.box_wrapper {
+  position: relative;
+}
+
+.box_wrapper::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 12px;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-top: 12px solid #DE1E79;
+  border-bottom: 0;
+  pointer-events: none;
+}
+
+
+.select {
+  width: 200px;
+  height: 60px;
+  border: 2px solid #DE1E79;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  font-size: 20px;
+  margin-left: 20px;
+  padding-left: 10px;
+  outline: none;
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+
+.select-null {
+  width: 320px;
+  height: 60px;
+  border: 2px solid #DE1E79;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  font-size: 20px;
+  margin-left: 20px;
+}

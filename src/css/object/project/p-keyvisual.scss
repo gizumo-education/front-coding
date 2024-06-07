@@ -1,0 +1,37 @@
+@use '../../object/utility/utility.scss';
+// ページ上部のキービジュアルに関するスタイル
+.p-keyvisual {
+  background-color: #98B1BE;
+  background-image: url(/img/picture/keyvisual-banner.png);
+  background-repeat: no-repeat;
+  height: 500px;
+  padding: 60px 0px 0px 170px;
+  flex-direction: column;
+  margin-bottom: 60px;
+  background-position: 180px;
+}
+
+.p-keyvisual-text {
+  width: 341.81px;
+  height: 168.51px;
+  margin-left: 650px;
+}
+
+.p-keyvisual-title {
+  width: 800px;
+  height: 65px;
+  margin-top: 40px;
+  margin-left: 450px;
+}
+
+.box {
+  width:391px;
+  height: 60px;
+  border-radius: 10px 10px 10px 10px;
+  border: solid 3px #2EB6AA;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 45px;
+  margin-left: 650px;
+}

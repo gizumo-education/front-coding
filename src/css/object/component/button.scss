@@ -1,2 +1,23 @@
 @use '../../object/utility/utility.scss';
-// 共通パーツであるボタンのスタイルを記述するファイル
+.form-button {
+  background-color: #DE5579;
+  width: 140px;
+  height: 60px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #FFFFFF;
+  border-radius: 50px;
+  border: none;
+}
+
+.listings-button {
+  background-color: #DE5579;
+  width: 360px;
+  height: 60px;
+  color: #FFFFFF;
+  border-radius: 50px;
+  border: none;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+}

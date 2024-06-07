@@ -1,0 +1,51 @@
+@use '../../object/utility/utility.scss';
+
+.p-joblistings {
+  margin-top: 60px;
+  width: 1600px;
+  height: 800px;
+  background-color:#DEEEF9 ;
+}
+
+.new-listings {
+  font-size: 30px;
+  padding-top: 120px;
+  padding-left: 270px;
+}
+
+.imgs {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.job-openings {
+  padding-top: 30px;
+  padding-left: 200px;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+
+.title-option {
+  display: flex;
+  margin-left: 320px;
+  margin-right: 120px;
+}
+
+
+.list {
+ font-size: 20px;
+ display: flex;
+ float: left;
+}
+
+.list td {
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.list th {
+  padding: 0.3em;
+  display: block;
+  background: #FFCAD0;
+}
