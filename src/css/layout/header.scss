@@ -1,4 +1,5 @@
 @use "../object/utility/utility.scss";
+@use "../foundation/_variables.scss" as var;
 // headerのスタイルを記述するファイル
 
 .l-header {
@@ -135,4 +136,30 @@
       border-radius: 0.03rem;
     }
   }
+
+  &__menu {
+    display: none;
+    @include utility.sp {
+      display: block;
+      width: 100%;
+      height: 554px;
+      padding-top: 0.57rem;
+      padding-left: 0.6rem;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__menu-item  {
+    margin-top: 0.4rem;
+    font-size: 0.22rem;
+    font-weight: var.$bold;
+
+    &-text {
+      @include utility.sp {
+        color: var.$white;
+      }
+    }
+  }
+
+  
 }

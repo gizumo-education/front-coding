@@ -98,6 +98,43 @@
     height: 42px;
     border-style: none;
     opacity: 70%;
-    margin-top: 120px;
+    background-color: #fff;
+    z-index: 99;
+    border-radius: 50%;
+
+    &::before {
+      display: none;
+    }
+  
+
+    &.slick-next {
+      right: 0;
+      top: 275px;
+
+      &::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid #000;
+        border-top: 1px solid #000;
+        display: inline-block;
+        transform: rotate(45deg);
+      }
+    }
+
+    &.slick-prev {
+      left: 0;
+      top: 275px;
+
+      &::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid #000;
+        border-top: 1px solid #000;
+        display: inline-block;
+        transform: rotate(-135deg);
+      }
+    }
   }
 }
