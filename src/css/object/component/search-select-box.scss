@@ -1,0 +1,36 @@
+@use "../../object/utility/utility.scss";
+
+.c-search-select-box {
+  position: relative;
+  margin-left: 15px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+  &::after {
+    position: absolute;
+    border-top: 10px solid utility.$borderPink;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: "";
+    right: 15px;
+    top: 25px;
+  }
+
+  & > select {
+    cursor: pointer;
+    width: 200px;
+
+    font-size: 18px;
+    font-weight: utility.$regular;
+    line-height: 26.06px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 1px utility.$borderPink;
+  }
+}

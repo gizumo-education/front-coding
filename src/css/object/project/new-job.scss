@@ -1,0 +1,25 @@
+@use "../../object/utility/utility.scss";
+
+.p-new-job {
+  background-color: utility.$bgLightBlue;
+
+  &__content {
+    padding: 64px 0;
+  }
+
+  &__lists {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__button {
+    width: 360px;
+    padding: 17px 72px;
+
+  }
+  .button-wrapper {
+    margin-top: 60px;
+    text-align: center;
+  }
+}

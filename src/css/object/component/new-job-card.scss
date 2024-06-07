@@ -1,0 +1,44 @@
+@use "../../object/utility/utility.scss";
+
+.c-new-job-card {
+    &__img {
+      width: 280px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    &__title {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: utility.$regular;
+      line-height: 22px;
+    }
+
+    &__table {
+      margin-top: 7px;
+      border-collapse: collapse;
+
+      tr {
+        padding: 1em;
+        border-spacing: 5px 0;
+        & > th {
+          border-bottom: 4px solid utility.$bgLightBlue;
+
+          text-align: center;
+          margin-right: 10px;
+          padding: 0 9px;
+          background-color: utility.$bgLightPink;
+          font-size: 14px;
+          font-weight: utility.$regular;
+          line-height: 20.27px;
+        }
+        & > td {
+          border-bottom: 4px solid utility.$bgLightBlue;
+          padding-left: 10px;
+          font-size: 14px;
+          font-weight: utility.$regular;
+        }
+      }
+    }
+
+}
