@@ -17,7 +17,7 @@
 
   &__content {
     padding: 104px 0;
-    p {
+    & > p {
       position: relative;
       text-align: center;
       color: utility.$white;
@@ -29,7 +29,7 @@
         margin-top: 21px;
       }
 
-      &span {
+      & > span {
         font-weight: utility.$regular;
       }
     }

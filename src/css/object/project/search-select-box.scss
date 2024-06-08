@@ -1,12 +1,9 @@
 @use "../../object/utility/utility.scss";
 
-.c-search-select-box {
+.p-job-search__select-box {
   position: relative;
-  margin-left: 15px;
+  flex: 1;
 
-  &:first-child {
-    margin-left: 0;
-  }
   &::after {
     position: absolute;
     border-top: 10px solid utility.$borderPink;
@@ -19,7 +16,7 @@
 
   & > select {
     cursor: pointer;
-    width: 200px;
+    width: 100%;
 
     font-size: 18px;
     font-weight: utility.$regular;

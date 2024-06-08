@@ -27,6 +27,7 @@
   &__form {
     margin-top: 26px;
     display: flex;
+    gap: 15px;
   }
 
   &__input {
@@ -34,7 +35,6 @@
     padding: 15px;
     border-radius: 10px;
     border: solid 1px utility.$borderPink;
-    margin-left: 15px;
 
     font-size: 18px;
     font-weight: utility.$regular;
@@ -44,18 +44,18 @@
   &__button {
     cursor: pointer;
 
+    width: 140px;
     padding: 15px 15px 15px 48px;
     border: none;
-    margin-left: 15px;
 
     background-image: url(../img/icon/icon-search-white.png);
     background-position: center left 14px;
     background-repeat: no-repeat;
     background-size: 30px;
 
-    ransition: .3s all;
+    transition: 0.3s all;
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
     }
   }
 }

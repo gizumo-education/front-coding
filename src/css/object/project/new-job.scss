@@ -14,12 +14,9 @@
   }
 
   &__button {
+    display: block;
     width: 360px;
     padding: 17px 72px;
-
-  }
-  .button-wrapper {
-    margin-top: 60px;
-    text-align: center;
+    margin: 60px auto 0 auto;
   }
 }
