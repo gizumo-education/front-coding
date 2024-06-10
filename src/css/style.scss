@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
 /*foundation---------------------------------*/
 @use './foundation/_reset.scss';
@@ -17,4 +17,10 @@
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/job-search.scss';
+@use './object/project/new-job.scss';
+@use './object/project/search-select-box.scss';
+@use './object/project/about.scss';
+@use './object/project/new-job-card.scss';
+
 /*-------------------------------------------*/

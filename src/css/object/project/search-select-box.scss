@@ -1,0 +1,33 @@
+@use "../../object/utility/utility.scss";
+
+.p-job-search__select-box {
+  position: relative;
+  flex: 1;
+
+  &::after {
+    position: absolute;
+    border-top: 10px solid utility.$borderPink;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: "";
+    right: 15px;
+    top: 25px;
+  }
+
+  & > select {
+    cursor: pointer;
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: utility.$regular;
+    line-height: 26.06px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 1px utility.$borderPink;
+  }
+}
