@@ -1,0 +1,8 @@
+@use "../../object/utility/utility.scss";
+
+.c-section-title {
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: utility.$bold;
+  text-align: center;
+}
