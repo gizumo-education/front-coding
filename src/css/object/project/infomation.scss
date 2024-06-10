@@ -17,20 +17,23 @@
     overflow: hidden;
 
     &:nth-child(odd) {
-      background: url(../img/picture/resume.jpg) no-repeat center / cover;
+      background-image: url(../img/picture/resume.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
 
     &:nth-child(even) {
-      background: url(../img/picture/PC.jpg) no-repeat center / cover;
+      background-image: url(../img/picture/PC.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
 
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      inset: 0;
       background-color: rgba(0, 0, 0, 1);
       opacity: .5;
     }
