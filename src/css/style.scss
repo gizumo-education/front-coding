@@ -13,6 +13,7 @@
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/section-title.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
@@ -22,5 +23,13 @@
 @use './object/project/search-select-box.scss';
 @use './object/project/about.scss';
 @use './object/project/new-job-card.scss';
+@use './object/project/features.scss';
+@use './object/project/infomation.scss';
+@use './object/project/services.scss';
+
+/*-------------------------------------------*/
+
+/*utility---------------------------------*/
+@use './object/utility/margin.scss';
 
 /*-------------------------------------------*/

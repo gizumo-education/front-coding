@@ -1,0 +1,44 @@
+@use "../../object/utility/utility.scss";
+
+.p-features {
+  margin-top: 105px;
+
+  &__title {
+    font-size: 25px;
+    font-weight: utility.$bold;
+    text-align: center;
+  }
+
+  &__content {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: auto auto;
+  }
+
+  &__list {
+    padding: 40px 0px;
+    background-color: utility.$bgMidPink;
+    border-radius: 10px;
+
+    &-title {
+      color: utility.$pink;
+      font-size: 24px;
+      font-weight: utility.$bold;
+      text-align: center;
+    }
+
+    &-text {
+      margin-top: 36px;
+      font-size: 14px;
+      font-weight: utility.$regular;
+      text-align: center;
+      line-height: 20.27px;
+    }
+
+    &:last-child {
+      .p-features__list-text {
+        margin-top: 26px;
+      }
+    }
+  }
+}

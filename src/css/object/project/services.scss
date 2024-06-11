@@ -1,0 +1,73 @@
+@use "../../object/utility/utility.scss";
+
+.p-service {
+  margin-top: 105px;
+
+  &__content {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__list {
+    width: 280px;
+    padding: 60px 19px 40px;
+
+    border: 2.268px solid utility.$pink;
+    border-radius: 10px;
+    position: relative;
+
+    &:not(:last-child) {
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+        content: "";
+        border-top: 20px solid transparent;
+        border-left: 20px solid utility.$pink;
+        border-bottom: 20px solid transparent;
+      }
+    }
+
+    &-no {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 60px;
+      height: 60px;
+      background-color: utility.$pink;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-icon {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-title {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: utility.$bold;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    &-text {
+      margin-top: 18px;
+
+      font-size: 14px;
+      line-height: 20.27px;
+    }
+  }
+}

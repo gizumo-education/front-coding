@@ -1,0 +1,64 @@
+@use "../../object/utility/utility.scss";
+
+.p-infomation {
+  margin-top: 105px;
+
+  &__content {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    width: 33%;
+    padding: 70px 0 55px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:nth-child(odd) {
+      background-image: url(../img/picture/resume.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &:nth-child(even) {
+      background-image: url(../img/picture/PC.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 1);
+      opacity: .5;
+    }
+
+    &-title {
+      position: relative;
+      font-size: 24px;
+      font-weight: utility.$bold;
+      color: utility.$white;
+    }
+    &-text {
+      position: relative;
+      margin-top: 44px;
+      font-size: 16px;
+      line-height: 23.17px;
+      color: utility.$white;
+
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 420px;
+    padding: 21px 93px;
+    margin: 80px auto 0;
+  }
+}
