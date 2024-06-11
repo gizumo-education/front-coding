@@ -1,6 +1,7 @@
 @use "../../object/utility/utility.scss";
 
 .p-service {
+  margin-top: 105px;
 
   &__content {
     display: flex;
@@ -11,7 +12,7 @@
     width: 280px;
     padding: 60px 19px 40px;
 
-    border: 2.268px solid utility.$Pink;
+    border: 2.268px solid utility.$pink;
     border-radius: 10px;
     position: relative;
 
@@ -23,7 +24,7 @@
         transform: translateY(-50%);
         content: "";
         border-top: 20px solid transparent;
-        border-left: 20px solid utility.$Pink;
+        border-left: 20px solid utility.$pink;
         border-bottom: 20px solid transparent;
       }
     }
@@ -34,7 +35,7 @@
       left: 10px;
       width: 60px;
       height: 60px;
-      background-color: utility.$Pink;
+      background-color: utility.$pink;
       border-radius: 50%;
 
       display: flex;

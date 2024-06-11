@@ -1,6 +1,7 @@
 @use "../../object/utility/utility.scss";
 
 .p-new-job {
+  margin-top: 60px;
   background-color: utility.$bgLightBlue;
 
   &__content {

@@ -9,7 +9,6 @@
 @use './layout/footer.scss';
 @use './layout/header.scss';
 @use './layout/inner.scss';
-@use './layout/margin.scss';
 /*-------------------------------------------*/
 
 /*component---------------------------------*/
@@ -27,5 +26,10 @@
 @use './object/project/features.scss';
 @use './object/project/infomation.scss';
 @use './object/project/services.scss';
+
+/*-------------------------------------------*/
+
+/*utility---------------------------------*/
+@use './object/utility/margin.scss';
 
 /*-------------------------------------------*/

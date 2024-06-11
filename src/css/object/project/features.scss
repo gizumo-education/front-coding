@@ -1,6 +1,7 @@
 @use "../../object/utility/utility.scss";
 
 .p-features {
+  margin-top: 105px;
 
   &__title {
     font-size: 25px;
@@ -20,8 +21,7 @@
     border-radius: 10px;
 
     &-title {
-      background-color: red($color: #000000);
-      color: utility.$Pink;
+      color: utility.$pink;
       font-size: 24px;
       font-weight: utility.$bold;
       text-align: center;
