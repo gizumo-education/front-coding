@@ -13,10 +13,22 @@
     background-image: url(../img/picture/keyvisual.png);
     background-repeat: no-repeat;
     background-size: cover;
-
     height: 500px;
-
     position: relative;
+
+    @include utility.tab {
+      background-image: url(../img/picture/keyvisual-TAB-SP.png);
+      background-size: contain;
+      background-position: center center;
+      height: 5rem;
+    }
+
+    @include utility.sp {
+      background-image: url(../img/picture/keyvisual-TAB-SP.png);
+      background-size: contain;
+      background-position: center center;
+      height: 2.7rem;
+    }
   }
 
   &__content {
@@ -25,14 +37,52 @@
     top: 50%;
     right: 30px;
     transform: translateY(-50%);
+
+    @include utility.sp {
+      right: 0.03rem;
+    }
+  }
+
+  &__works {
+    img {
+      @include utility.tab {
+        height: 1.68rem;
+      }
+      @include utility.sp {
+        height: 0.73rem;
+      }
+    }
   }
 
   &__title {
     margin-top: 40px;
+
+    @include utility.tab {
+      margin-top: 0.4rem;
+    }
+    @include utility.sp {
+      margin-top: 0.12rem;
+    }
+
+    img {
+      @include utility.tab {
+        height: 0.65rem;
+      }
+      @include utility.sp {
+        height: 0.2rem;
+      }
+    }
   }
 
   &__text {
     margin-top: 54px;
+
+    @include utility.tab {
+      margin-top: 0.54rem;
+    }
+    @include utility.sp {
+      margin-top: 0.18rem;
+    }
 
     & > p {
       display: inline-block;
@@ -46,6 +96,19 @@
 
       border: solid 3px utility.$textBlue;
       border-radius: 10px;
+
+      @include utility.tab {
+        font-size: 0.2rem;
+        line-height: 0.28rem;
+        padding: 0.03rem 0.42rem;
+        border: solid 0.03rem utility.$textBlue;
+      }
+      @include utility.sp {
+        font-size: 0.08rem;
+        line-height: 0.11rem;
+        padding: 0.03rem 0.23rem;
+        border: solid 0.01rem utility.$textBlue;
+      }
     }
 
     & span {
@@ -53,6 +116,15 @@
       font-weight: utility.$bold;
       line-height: 57.92px;
       text-align: left;
+
+      @include utility.tab {
+        font-size: 0.4rem;
+        line-height: 0.57rem;
+      }
+      @include utility.sp {
+        font-size: 0.16rem;
+        line-height: 0.23rem;
+      }
     }
   }
 }

@@ -3,10 +3,23 @@
 .p-infomation {
   margin-top: 105px;
 
+  @include utility.tab {
+    margin-top: 1.05rem;
+  }
+  @include utility.sp {
+    margin-top: 0.6rem;
+  }
+
   &__content {
-    margin-top: 50px;
     display: flex;
     gap: 20px;
+
+    @include utility.tab {
+      gap: 0.2rem;
+    }
+    @include utility.sp {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -16,6 +29,14 @@
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+
+    @include utility.tab {
+      padding: 0.7rem 0 0.55rem;
+    }
+    @include utility.sp {
+      width: 100%;
+      padding: 0.6rem 0;
+    }
 
     &:nth-child(odd) {
       background-image: url(../img/picture/resume.jpg);
@@ -36,7 +57,7 @@
       position: absolute;
       inset: 0;
       background-color: rgba(0, 0, 0, 1);
-      opacity: .5;
+      opacity: 0.5;
     }
 
     &-title {
@@ -44,6 +65,13 @@
       font-size: 24px;
       font-weight: utility.$bold;
       color: utility.$white;
+
+      @include utility.tab {
+        font-size: 0.24rem;
+      }
+      @include utility.sp {
+        font-size: 0.21rem;
+      }
     }
     &-text {
       position: relative;
@@ -52,6 +80,16 @@
       line-height: 23.17px;
       color: utility.$white;
 
+      @include utility.tab {
+        margin-top: 0.44rem;
+        font-size: 0.16rem;
+        line-height: 0.23rem;
+      }
+      @include utility.sp {
+        margin-top: 0.53rem;
+        font-size: 0.14rem;
+        line-height: 0.2rem;
+      }
     }
   }
 
@@ -60,5 +98,16 @@
     width: 420px;
     padding: 21px 93px;
     margin: 80px auto 0;
+
+    @include utility.tab {
+      width: 4.2rem;
+      padding: 0.21rem 0.93rem;
+      margin: 0.8rem auto 0;
+    }
+    @include utility.sp {
+      width: 3.7rem;
+      padding: 0.21rem 0.68rem;
+      margin: 0.34rem auto 0;
+    }
   }
 }

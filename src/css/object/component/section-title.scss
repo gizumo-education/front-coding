@@ -5,4 +5,8 @@
   font-size: 25px;
   font-weight: utility.$bold;
   text-align: center;
+
+  @include utility.sp {
+    margin-bottom: 0.34rem;
+  }
 }
