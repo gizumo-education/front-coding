@@ -1,0 +1,22 @@
+@use "./utility.scss";
+
+.u-pc-tab__br {
+  display: block;
+  @include utility.tab {
+    display: block;
+  }
+  @include utility.sp {
+    display: none;
+  }
+
+}
+
+.u-sp__br {
+  display: none;
+  @include utility.tab {
+    display: none;
+  }
+  @include utility.sp {
+    display: block;
+  }
+}

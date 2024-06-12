@@ -16,6 +16,14 @@
 
   &__content {
     padding: 104px 0;
+
+    @include utility.tab {
+      padding: 1.04rem 0;
+    }
+    @include utility.sp {
+      padding: .16rem .25rem;
+    }
+
     & > p {
       position: relative;
       text-align: center;
@@ -24,8 +32,21 @@
       font-weight: utility.$bold;
       line-height: 36.2px;
 
+      @include utility.tab {
+        font-size: .25rem;
+        line-height: .36rem;
+      }
+      @include utility.sp {
+        font-size: .14rem;
+        line-height: .2rem;
+        font-weight: utility.$regular;
+      }
+
       &:last-child {
         margin-top: 21px;
+        @include utility.sp {
+          margin-top: .03rem;
+        }
       }
 
       & > span {
