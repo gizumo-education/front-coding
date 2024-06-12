@@ -150,14 +150,14 @@
 
       @include utility.tab {
         margin-top: 0.18rem;
-        font-size: .14rem;
-        line-height: .2rem;
+        font-size: 0.14rem;
+        line-height: 0.2rem;
       }
       @include utility.sp {
         margin-top: 0.1rem;
-        font-size: .14rem;
-        line-height: .2rem;
-        padding: 0 .2rem;
+        font-size: 0.14rem;
+        line-height: 0.2rem;
+        padding: 0 0.2rem;
       }
     }
   }

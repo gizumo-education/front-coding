@@ -93,7 +93,7 @@
 
       font-size: 0.18rem;
       line-height: 0.26rem;
-      border-radius: .1rem;
+      border-radius: 0.1rem;
     }
     @include utility.sp {
       margin-top: 0.15rem;
@@ -103,8 +103,8 @@
 
       padding: 0.05rem 0.07rem;
       font-size: 0.14rem;
-      line-height: .2rem;
-      border-radius: .05rem;
+      line-height: 0.2rem;
+      border-radius: 0.05rem;
     }
   }
 
@@ -131,9 +131,9 @@
       width: 1.6rem;
       grid-column: 1 / 4;
       background-size: 0.17rem;
-      font-size: .18rem;
-      line-height: .18rem;
-          }
+      font-size: 0.18rem;
+      line-height: 0.18rem;
+    }
 
     &:hover {
       opacity: 0.8;
