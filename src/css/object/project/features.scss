@@ -5,12 +5,30 @@
   text-align: center;
   color: utility.$black;
 
+  @include utility.tab {
+    padding: .9rem 0 .3rem;
+  }
+
+  @include utility.sp {
+    padding: .55rem 0 .3rem;
+  }
+
   &__wrapper {
     margin-top: 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 4rem;
+
+    @include utility.tab {
+      margin-top: 0.54rem;
+      gap: 0.36rem;
+    }
+
+    @include utility.sp {
+      margin-top: .4rem;
+      gap: .2rem;
+    }
   }
 
   &__area {
@@ -19,9 +37,36 @@
     padding: 4rem;
     background-color: utility.$bgLightPink;
     border-radius: 1rem;
+
+    @include utility.tab {
+      width: 5.2rem;
+      height: 1.6rem;
+      padding: 0.36rem;
+      border-radius: .12rem;
+    }
+
+    @include utility.sp {
+      width: 3.7rem;
+      height: 1.44rem;
+      padding: 0.3rem 0.1rem;
+      border-radius: .12rem;
+    }
+
+    &:nth-child(3), &:last-child {
+      height: 1.61rem;
+    }
+
     &:last-child {
       & p {
         margin-top: 2.5rem;
+
+        @include utility.tab {
+          margin-top: .21rem;
+        }
+
+        @include utility.sp {
+          margin-top: .3rem;
+        }
       }
     }
   }
@@ -29,12 +74,28 @@
   &__title {
     font-size: 2.5rem;
     font-weight: utility.$bold;
+
+    @include utility.tab {
+      font-size: .24rem;
+    }
+
+    @include utility.sp {
+      font-size: .25rem;
+    }
   }
 
   &__keyword {
     font-size: 2.4rem;
     font-weight: utility.$bold;
     color: utility.$pink;
+
+    @include utility.tab {
+      font-size: .21rem;
+    }
+
+    @include utility.sp {
+      font-size: .2rem;
+    }
   }
 
   & p {
@@ -42,5 +103,17 @@
     font-weight: utility.$regular;
     margin-top: 3.5rem;
     line-height: 2rem;
+
+    @include utility.tab {
+      font-size: .132rem;
+      line-height: .18rem;
+      margin-top: .3rem;
+    }
+
+    @include utility.sp {
+      font-size: .12rem;
+      line-height: .17rem;
+      margin-top: .3rem;
+    }
   }
 }

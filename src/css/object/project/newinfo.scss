@@ -6,11 +6,26 @@
   position: relative;
   color: utility.$black;
 
+  @include utility.tab {
+    padding: .75rem 0 .69rem;
+  }
+
+  @include utility.sp {
+    padding: .3rem 0rem .6rem;
+  }
+
   &__title {
     font-size: 2.5rem;
     font-weight: utility.$regular;
+
     @include utility.tab {
-      margin-right: 15rem;
+      font-size: .24rem;
+    }
+
+    @include utility.sp {
+      font-size: .25rem;
+      font-weight: utility.$bold;
+      text-align: center;
     }
   }
 
@@ -19,6 +34,17 @@
     display: flex;
     column-gap: 2rem;
     justify-content: center;
+
+    @include utility.tab {
+      column-gap: .21rem;
+      margin-top: .3rem;
+    }
+
+    @include utility.sp {
+      margin-top: .37rem;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__detail {
@@ -26,8 +52,31 @@
     width: 28rem;
     text-align: left;
     position:relative;
+
     @include utility.tab {
-      width: 4rem;
+      & img {
+        width: 100%;
+      }
+    }
+
+    @include utility.sp {
+      width: 3.7rem;
+    }
+  }
+
+  .is-pc {
+    @include utility.sp {
+      display: none;
+    }
+  }
+
+  .is-sp {
+    display: none;
+    @include utility.sp {
+      display: block;
+      & img {
+        width: 100%;
+      }
     }
   }
 
@@ -36,6 +85,19 @@
     font-size: 1.6rem;
     line-height: 2.2rem;
     font-weight: utility.$regular;
+
+    @include utility.tab {
+      font-size: .144rem;
+      line-height: .21rem;
+      margin-top: .12rem;
+    }
+
+    @include utility.sp {
+      font-size: .16rem;
+      line-height: .22rem;
+      margin-top: .1rem;
+      font-weight: utility.$bold;
+    }
   }
 
   &__item {
@@ -43,8 +105,24 @@
     display: flex;
     align-items: center;
 
+    @include utility.tab {
+      margin-top: .03rem;
+    }
+
+    @include utility.sp {
+      margin-top: .05rem;
+    }
+
     &:first-of-type {
       margin-top: .8rem;
+
+      @include utility.tab {
+        margin-top: .09rem;
+      }
+
+      @include utility.sp {
+        margin-top: .1rem;
+      }
     }
 
     & dt {
@@ -56,10 +134,37 @@
       padding: .3rem 0;
       display: flex;
       justify-content: center;
+
+      @include utility.tab {
+        font-size: .12rem;
+        width: .54rem;
+        padding: .04rem 0;
+      }
+
+      @include utility.sp {
+        font-size: .14rem;
+        width: .6rem;
+        padding: .04rem 0;
+      }
     }
 
     & dd {
       margin-left: 1rem;
+
+      @include utility.tab {
+        margin-left: .09rem;
+        & img {
+          width: 80%;
+        }
+      }
+
+      @include utility.sp {
+        margin-left: .2rem;
+        font-size: .14rem;
+        & img {
+          display: none;
+        }
+      }
     }
 
     &:first-child {
@@ -77,6 +182,18 @@
     background-color: utility.$white;
     opacity: 0.7;
 
+    @include utility.tab {
+      width: .6rem;
+      height: .6rem;
+      top: .6rem;
+    }
+
+    @include utility.sp {
+      width: .42rem;
+      height: .42rem;
+      top: 1.58rem;
+    }
+
     &::before {
       content: "";
       margin: auto;
@@ -88,6 +205,24 @@
       border-top: .1rem solid utility.$black;
       border-right: .1rem solid utility.$black;
       transform: rotate(225deg);
+
+      @include utility.tab {
+        top: .195rem;
+        right: .15rem;
+        width: .214rem;
+        height: .214rem;
+        border-top: .009rem solid utility.$black;
+        border-right: .009rem solid utility.$black;
+      }
+
+      @include utility.sp {
+        top: .17rem;
+        right: .13rem;
+        width: .1rem;
+        height: .1rem;
+        border-top: .01rem solid utility.$black;
+        border-right: .01rem solid utility.$black;
+      }
     }
   }
 
@@ -102,6 +237,18 @@
     background-color: utility.$white;
     opacity: 0.7;
 
+    @include utility.tab {
+      width: .6rem;
+      height: .6rem;
+      top: .6rem;
+    }
+
+    @include utility.sp {
+      width: .42rem;
+      height: .42rem;
+      top: 1.58rem;
+    }
+
     &::before {
       content: "";
       margin: auto;
@@ -113,11 +260,37 @@
       border-top: .1rem solid utility.$black;
       border-right: .1rem solid utility.$black;
       transform: rotate(45deg);
+
+      @include utility.tab {
+        top: .195rem;
+        right: .24rem;
+        width: .214rem;
+        height: .214rem;
+        border-top: .009rem solid utility.$black;
+        border-right: .009rem solid utility.$black;
+      }
+
+      @include utility.sp {
+        top: .17rem;
+        right: .19rem;
+        width: .1rem;
+        height: .1rem;
+        border-top: .01rem solid utility.$black;
+        border-right: .01rem solid utility.$black;
+      }
     }
   }
 
   &__more-wrapper {
     text-align: center;
     margin-top: 6rem;
+
+    @include utility.tab {
+      margin-top: .54rem;
+    }
+
+    @include utility.sp {
+      margin-top: .42rem;
+    }
   }
 }

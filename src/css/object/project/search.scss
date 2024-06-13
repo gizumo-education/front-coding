@@ -4,12 +4,25 @@
   padding: 6.5rem 0;
   text-align: center;
   color: utility.$black;
+
+  @include utility.tab {
+    padding: .6rem 0;
+  }
+
   @include utility.sp {
-    padding: .25rem .15rem;
+    padding: .25rem 0;
   }
 
   &.is-end {
     padding: 6.5rem 0 20rem;
+
+    @include utility.tab {
+      padding: .6rem 0 1.8rem;
+    }
+
+    @include utility.sp {
+      padding: .3rem 0 1rem;
+    }
   }
 
   &__area {
@@ -17,17 +30,28 @@
     background-color: utility.$bgSkyBlue;
     border-radius: 1rem;
 
+    @include utility.tab {
+      margin: 0 auto;
+      padding: .42rem 0;
+      border-radius: .15rem;
+    }
+
     @include utility.sp {
-      margin: 0;
-      padding-top: .2rem;
-      width: 3.5rem;
-      height: 24rem;
+      margin: 0 auto;
+      padding: .16rem 0 .18rem;
+      width: 3.7rem;
+      border-radius: .1rem;
     }
   }
 
   &__title {
     font-size: 2.5rem;
     font-weight: utility.$bold;
+
+    @include utility.tab {
+      font-size: .225rem;
+    }
+
     @include utility.sp {
       font-size: .22rem;
     }
@@ -37,8 +61,14 @@
     font-size: 2rem;
     font-weight: utility.$regular;
     margin-top: 2.5rem;
+
+    @include utility.tab {
+      font-size: .18rem;
+      margin-top: .24rem;
+    }
+
     @include utility.sp {
-      margin-top: .2rem;
+      margin-top: .18rem;
       font-size: .14rem;
     }
   }
@@ -47,6 +77,15 @@
     margin-top: 3rem;
     display: flex;
     justify-content: center;
+
+    @include utility.tab {
+      margin-top: .24rem;
+    }
+
+    @include utility.sp {
+      margin-top: .15rem;
+      display: block;
+    }
   }
 
   &__select {
@@ -65,6 +104,30 @@
     background-repeat: no-repeat;
     background-color: utility.$white;
 
+    @include utility.tab {
+      font-size: .165rem;
+      height: .57rem;
+      width: 1.83rem;
+      border-radius: .09rem;
+      padding-left: .12rem;
+      margin-left: .135rem;
+      border: .015rem solid utility.$pink;
+      background-size: 11%;
+      background-position: right .135rem center;
+    }
+
+    @include utility.sp {
+      font-size: .12rem;
+      height: .3rem;
+      width: 1rem;
+      border-radius: .05rem;
+      padding-left: .08rem;
+      margin-left: .08rem;
+      border: .01rem solid utility.$pink;
+      background-size: 14%;
+      background-position: right .08rem center;
+    }
+
     &:first-child {
       margin-left: 0;
     }
@@ -79,6 +142,27 @@
     margin-left: 1.5rem;
     border: .1rem solid utility.$pink;
     border-radius: 1rem;
+
+    @include utility.tab {
+      font-size: .165rem;
+      width: 2.76rem;
+      height: .57rem;
+      border-radius: .09rem;
+      padding-left: .09rem;
+      margin-left: .135rem;
+      border: .015rem solid utility.$pink;
+    }
+
+    @include utility.sp {
+      font-size: .14rem;
+      width: 3.2rem;
+      height: .3rem;
+      border-radius: .05rem;
+      padding-left: .06rem;
+      margin-left: 0;
+      margin-top: .15rem;
+      border: .01rem solid utility.$pink;
+    }
   }
 
   &__button {
@@ -91,5 +175,33 @@
     border: 0;
     margin-left: 1.5rem;
     border-radius: 3rem;
+
+    @include utility.tab {
+      font-size: .16rem;
+      width: 1.25rem;
+      height: .57rem;
+      border-radius: .3rem;
+      margin-left: .135rem;
+
+      & img {
+        width: 25%;
+      }
+    }
+
+    @include utility.sp {
+      font-size: .18rem;
+      width: 1.6rem;
+      height: .4rem;
+      position: relative;
+      margin-top: .2rem;
+      margin-left: 0;
+
+      & img {
+        position: absolute;
+        top: .1rem;
+        left: .12rem;
+        width: 12%;
+      }
+    }
   }
 }

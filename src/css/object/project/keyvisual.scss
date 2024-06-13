@@ -10,21 +10,68 @@
   padding: 5.2rem;
   justify-content: flex-end;
 
+  @include utility.tab {
+    padding: 0rem;
+    background-size: contain;
+    height: 4.5rem;
+    padding: .6rem;
+  }
+
+  @include utility.sp {
+    height: 2.7rem;
+    padding: .6rem .01rem;
+    background-image: url(../img/picture/keyvisual-sp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
   &__inner {
     text-align: center;
     width: fit-content;
     margin-right: 14.5rem;
 
-    & img {
+    @include utility.tab {
+      margin-right: .05rem;
+    }
+
+    @include utility.sp {
+      margin-right: 0rem;
+    }
+
+    &__pc {
       margin-top: 4rem;
 
       &:first-child {
         margin-top: 0;
       }
+
+      @include utility.tab {
+        width: 7.2rem;
+        margin-top: .3rem;
+
+        &:first-child {
+          width: 3rem;
+        }
+      }
+      @include utility.sp {
+        display: none;
+      }
     }
-  
-    &:first-child{
-      margin-top: 0;
+
+    &__sp {
+      display: none;
+
+      @include utility.sp {
+        display: block;
+        width: 2.77rem;
+        margin-top: 0;
+
+        &:nth-child(2) {
+          width: 1.49rem;
+          margin-left: .78rem;
+        }
+      }
     }
   }
 
@@ -38,10 +85,35 @@
     display: inline-block;
     border: .23rem solid;
     border-radius: 1rem;
+
+    @include utility.tab {
+      font-size: .18rem;
+      padding: .12rem .36rem;
+      border: .024rem solid;
+      border-radius: .12rem;
+      margin-top: .48rem;
+    }
+
+    @include utility.sp {
+      font-size: .08rem;
+      padding: .07rem .22rem;
+      border: .015rem solid;
+      border-radius: .05rem;
+      margin-top: .03rem;
+      margin-left: .27rem;
+    }
     
       span {
         font-size: 4rem;
         font-weight: utility.$bold;
+
+        @include utility.tab {
+          font-size: .36rem;
+        }
+
+        @include utility.sp {
+          font-size: .16rem;
+        }
       }
   }
 }
