@@ -5,7 +5,7 @@
   margin: 0 auto;
 
   @include utility.tab {
-    width: 10.8rem;
+    width: 8.9rem;
   }
 
   @include utility.sp {
@@ -21,6 +21,5 @@
       flex-direction: column;
       width: 3.2rem;
     }
-
   }
 }

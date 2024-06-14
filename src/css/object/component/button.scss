@@ -9,8 +9,8 @@
   color: utility.$white;
 
   @include utility.tab {
-    font-size: .168rem;
-    padding: .21rem .69rem;
+    font-size: .135rem;
+    padding: .155rem .55rem;
   }
 
   @include utility.sp {
@@ -22,7 +22,7 @@
     padding: 2.1rem 9.3rem;
 
     @include utility.tab {
-      padding: .21rem .78rem;
+      padding: .155rem .7rem;
     }
     @include utility.sp {
       padding: .21rem .7rem;

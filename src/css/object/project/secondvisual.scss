@@ -8,7 +8,7 @@
   text-align: center;
 
   @include utility.tab {
-    height: 2.91rem;
+    height: 2.25rem;
   }
 
   @include utility.sp {
@@ -37,7 +37,7 @@
     -webkit-transform: translate(-50%, -50%);
 
     @include utility.tab {
-      font-size: .24rem;
+      font-size: .19rem;
     }
 
     @include utility.sp {
@@ -52,7 +52,7 @@
       margin-top: 3rem;
 
       @include utility.tab {
-        margin-top: .33rem;
+        margin-top: .25rem;
       }
 
       @include utility.sp {

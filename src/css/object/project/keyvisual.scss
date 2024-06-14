@@ -13,8 +13,8 @@
   @include utility.tab {
     padding: 0rem;
     background-size: contain;
-    height: 4.5rem;
-    padding: .6rem;
+    height: 3.7rem;
+    padding: .4rem;
   }
 
   @include utility.sp {
@@ -32,7 +32,7 @@
     margin-right: 14.5rem;
 
     @include utility.tab {
-      margin-right: .05rem;
+      margin-right: 1.1rem;
     }
 
     @include utility.sp {
@@ -47,11 +47,11 @@
       }
 
       @include utility.tab {
-        width: 7.2rem;
-        margin-top: .3rem;
+        width: 6rem;
+        margin-top: .26rem;
 
         &:first-child {
-          width: 3rem;
+          width: 2.6rem;
         }
       }
       @include utility.sp {
@@ -87,11 +87,11 @@
     border-radius: 1rem;
 
     @include utility.tab {
-      font-size: .18rem;
-      padding: .12rem .36rem;
+      font-size: .15rem;
+      padding: .09rem .3rem;
       border: .024rem solid;
-      border-radius: .12rem;
-      margin-top: .48rem;
+      border-radius: .08rem;
+      margin-top: .4rem;
     }
 
     @include utility.sp {
@@ -108,7 +108,7 @@
         font-weight: utility.$bold;
 
         @include utility.tab {
-          font-size: .36rem;
+          font-size: .3rem;
         }
 
         @include utility.sp {

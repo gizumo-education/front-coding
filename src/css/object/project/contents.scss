@@ -5,7 +5,7 @@
   padding: 5rem 0 8.4rem;
 
   @include utility.tab {
-    padding: .25rem 0 .6rem;
+    padding: .2rem 0 .3rem;
   }
 
   @include utility.sp {
@@ -17,7 +17,7 @@
     font-weight: utility.$bold;
 
     @include utility.tab {
-      font-size: .24rem;
+      font-size: .19rem;
     }
 
     @include utility.sp {
@@ -31,8 +31,8 @@
     margin-top: 5rem;
 
     @include utility.tab {
-      gap: .21rem;
-      margin-top: .45rem;
+      gap: .15rem;
+      margin-top: .35rem;
     }
 
     @include utility.sp {
@@ -53,9 +53,9 @@
 
     @include utility.tab {
       background-size: contain;
-      border-radius: .12rem;
-      padding: .36rem 0 .45rem;
-      line-height: .9rem;
+      border-radius: .1rem;
+      padding: .3rem 0 .4rem;
+      line-height: .7rem;
     }
 
     @include utility.sp {
@@ -77,9 +77,9 @@
       margin-top: 4.5rem;
 
       @include utility.tab {
-        font-size: .144rem;
-        margin-top: .024rem;
-        line-height: .24rem;
+        font-size: .12rem;
+        margin-top: .05rem;
+        line-height: .18rem;
       }
 
       @include utility.sp {
@@ -96,7 +96,7 @@
     color: utility.$white;
 
     @include utility.tab {
-      font-size: .225rem;
+      font-size: .18rem;
     }
 
     @include utility.sp {

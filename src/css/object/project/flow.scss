@@ -5,7 +5,7 @@
   padding: 5.6rem 0;
 
   @include utility.tab {
-    padding: .69rem 0;
+    padding: .6rem 0;
   }
 
   @include utility.sp {
@@ -17,7 +17,7 @@
     font-weight: utility.$bold;
 
     @include utility.tab {
-      font-size: .24rem;
+      font-size: .19rem;
     }
 
     @include utility.sp {
@@ -31,7 +31,7 @@
     position: relative;
 
     @include utility.tab {
-      margin-top: .45rem;
+      margin-top: .35rem;
     }
 
     @include utility.sp {
@@ -53,10 +53,10 @@
     text-align: center;
 
     @include utility.tab {
-      padding: 1.65rem .15rem .3rem .15rem;
-      margin-left: .21rem;
-      border: .03rem solid utility.$pink;
-      border-radius: .14rem;
+      padding: 1.35rem .15rem .28rem .15rem;
+      margin-left: .15rem;
+      border: .01rem solid utility.$pink;
+      border-radius: .1rem;
       line-height: .21rem;
     }
 
@@ -97,12 +97,12 @@
       top: 15.5rem;
 
       @include utility.tab {
-        border-top:solid .24rem transparent;
-        border-bottom:solid .24rem transparent;
-        border-left:solid .24rem utility.$pink;
-        border-right:solid .24rem transparent;
-        left: 2.49rem;
-        top: 1.44rem;
+        border-top:solid .18rem transparent;
+        border-bottom:solid .18rem transparent;
+        border-left:solid .18rem utility.$pink;
+        border-right:solid .18rem transparent;
+        left: 2.09rem;
+        top: 1.18rem;
       }
 
       @include utility.sp {
@@ -127,7 +127,7 @@
       @include utility.tab {
         left: .07rem;
         top: .07rem;
-        width: .54rem;
+        width: .45rem;
       }
 
       @include utility.sp {
@@ -143,8 +143,8 @@
       line-height: 3rem;
 
       @include utility.tab {
-        font-size: .21rem;
-        line-height: .26rem;
+        font-size: .18rem;
+        line-height: .22rem;
       }
 
       @include utility.sp {
@@ -159,8 +159,9 @@
       text-align: left;
 
       @include utility.tab {
-        font-size: .124rem;
-        margin-top: .17rem;
+        font-size: .105rem;
+        margin-top: .15rem;
+        line-height: .15rem;
       }
 
       @include utility.sp {
@@ -174,8 +175,8 @@
       background-position: 9.5rem 5.5rem;
 
       @include utility.tab {
-        background-position: .84rem .51rem;
-        background-size: .94rem;
+        background-position: .73rem .43rem;
+        background-size: .78rem;
       }
 
       @include utility.sp {
@@ -189,8 +190,8 @@
       background-position: 9.2rem 6.5rem;
 
       @include utility.tab {
-        background-position: .84rem .63rem;
-        background-size: .75rem;
+        background-position: .7rem .52rem;
+        background-size: .6rem;
       }
 
       @include utility.sp {
@@ -204,8 +205,8 @@
       background-position: 8.7rem 5.8rem;
 
       @include utility.tab {
-        background-position: .78rem .55rem;
-        background-size: 1rem;
+        background-position: .66rem .45rem;
+        background-size: .8rem;
       }
 
       @include utility.sp {
@@ -216,7 +217,7 @@
       & h3 {
         margin-top: 1.6rem;
         @include utility.tab {
-          margin-top: .15rem;
+          margin-top: .13rem;
         }
         @include utility.sp {
           margin-top: 0;
@@ -226,7 +227,7 @@
       & p {
         margin-top: 3.3rem;
         @include utility.tab {
-          margin-top: .28rem;
+          margin-top: .25rem;
         }
         @include utility.sp {
           margin-top: .1rem;
@@ -239,8 +240,8 @@
       background-position: 7.8rem 5rem;
 
       @include utility.tab {
-        background-position: .72rem .45rem;
-        background-size: 1.02rem;
+        background-position: .58rem .4rem;
+        background-size: .8rem;
       }
 
       @include utility.sp {
@@ -251,7 +252,7 @@
       & h3 {
         margin-top: 1.6rem;
         @include utility.tab {
-          margin-top: .15rem;
+          margin-top: .13rem;
         }
         @include utility.sp {
           margin-top: 0;
@@ -261,7 +262,7 @@
       & p {
         margin-top: 3.3rem;
         @include utility.tab {
-          margin-top: .28rem;
+          margin-top: .25rem;
         }
         @include utility.sp {
           margin-top: .05rem;

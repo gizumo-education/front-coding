@@ -6,7 +6,7 @@
   color: utility.$black;
 
   @include utility.tab {
-    padding: .6rem 0;
+    padding: .45rem 0;
   }
 
   @include utility.sp {
@@ -17,7 +17,7 @@
     padding: 6.5rem 0 20rem;
 
     @include utility.tab {
-      padding: .6rem 0 1.8rem;
+      padding: .8rem 0 1.5rem;
     }
 
     @include utility.sp {
@@ -32,7 +32,7 @@
 
     @include utility.tab {
       margin: 0 auto;
-      padding: .42rem 0;
+      padding: .3rem 0;
       border-radius: .15rem;
     }
 
@@ -49,7 +49,7 @@
     font-weight: utility.$bold;
 
     @include utility.tab {
-      font-size: .225rem;
+      font-size: .19rem;
     }
 
     @include utility.sp {
@@ -63,8 +63,8 @@
     margin-top: 2.5rem;
 
     @include utility.tab {
-      font-size: .18rem;
-      margin-top: .24rem;
+      font-size: .15rem;
+      margin-top: .2rem;
     }
 
     @include utility.sp {
@@ -105,15 +105,15 @@
     background-color: utility.$white;
 
     @include utility.tab {
-      font-size: .165rem;
-      height: .57rem;
-      width: 1.83rem;
-      border-radius: .09rem;
-      padding-left: .12rem;
-      margin-left: .135rem;
-      border: .015rem solid utility.$pink;
+      font-size: .14rem;
+      height: .45rem;
+      width: 1.5rem;
+      border-radius: .06rem;
+      padding-left: .115rem;
+      margin-left: .12rem;
+      border: .01rem solid utility.$pink;
       background-size: 11%;
-      background-position: right .135rem center;
+      background-position: right .1rem center;
     }
 
     @include utility.sp {
@@ -144,13 +144,13 @@
     border-radius: 1rem;
 
     @include utility.tab {
-      font-size: .165rem;
-      width: 2.76rem;
-      height: .57rem;
-      border-radius: .09rem;
+      font-size: .13rem;
+      width: 2.25rem;
+      height: .45rem;
+      border-radius: .06rem;
       padding-left: .09rem;
-      margin-left: .135rem;
-      border: .015rem solid utility.$pink;
+      margin-left: .12rem;
+      border: .01rem solid utility.$pink;
     }
 
     @include utility.sp {
@@ -177,11 +177,11 @@
     border-radius: 3rem;
 
     @include utility.tab {
-      font-size: .16rem;
-      width: 1.25rem;
-      height: .57rem;
+      font-size: .13rem;
+      width: 1.05rem;
+      height: .45rem;
       border-radius: .3rem;
-      margin-left: .135rem;
+      margin-left: .12rem;
 
       & img {
         width: 25%;
