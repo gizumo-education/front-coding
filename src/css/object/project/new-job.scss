@@ -42,7 +42,7 @@
       margin-top: 0.35rem;
     }
 
-    .slide-arrow {
+    .slick-arrow {
       position: absolute;
       content: "";
       top: 25%;
@@ -65,11 +65,12 @@
       }
     }
 
-    .prev-arrow {
+    .slick-prev {
       z-index: 1;
+      left: 0;
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         width: 15px;
         height: 15px;
         top: 50%;
@@ -79,11 +80,11 @@
         transform: translate(-25%, -50%) rotate(-45deg);
       }
     }
-    .next-arrow {
+    .slick-next {
       right: 0;
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         width: 15px;
         height: 15px;
         top: 50%;

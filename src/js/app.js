@@ -36,8 +36,6 @@ $(function () {
       slidesToShow: 4,
       slidesToScroll: 1,
       arrows: true,
-      prevArrow: '<div class="slide-arrow prev-arrow"></div>',
-      nextArrow: '<div class="slide-arrow next-arrow"></div>',
       responsive: [
         {
           breakpoint: 1199,
