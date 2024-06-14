@@ -8,7 +8,24 @@
   border-radius: 4rem;
   color: utility.$white;
 
+  @include utility.tab {
+    font-size: .135rem;
+    padding: .155rem .55rem;
+  }
+
+  @include utility.sp {
+    font-size: .18rem;
+    padding: .21rem .75rem;
+  }
+
   &.is-wide {
     padding: 2.1rem 9.3rem;
+
+    @include utility.tab {
+      padding: .155rem .7rem;
+    }
+    @include utility.sp {
+      padding: .21rem .7rem;
+    }
   }
 }

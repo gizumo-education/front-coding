@@ -7,6 +7,14 @@
   position: relative;
   text-align: center;
 
+  @include utility.tab {
+    height: 2.25rem;
+  }
+
+  @include utility.sp {
+    height: .75rem;
+  }
+
   &::before {
     content: "";
     background-color: rgba(0, 0, 0, 0.5);
@@ -28,15 +36,32 @@
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 
+    @include utility.tab {
+      font-size: .19rem;
+    }
+
+    @include utility.sp {
+      font-size: .14rem;
+      font-weight: utility.$regular;
+      left: 0;
+      transform: translate(8%, -50%);
+      -webkit-transform: translate(8%, -50%);
+    }
+
     & > p {
       margin-top: 3rem;
+
+      @include utility.tab {
+        margin-top: .25rem;
+      }
+
+      @include utility.sp {
+        margin-top: .07rem;
+      }
 
       &:first-child {
         margin-top: 0;
       }
-    }
-    @include utility.tab {
-      width: 10rem;
     }
   }
 }

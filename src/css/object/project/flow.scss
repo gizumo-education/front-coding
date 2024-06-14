@@ -3,16 +3,42 @@
 .p-flow {
   text-align: center;
   padding: 5.6rem 0;
+
+  @include utility.tab {
+    padding: .6rem 0;
+  }
+
+  @include utility.sp {
+    padding: .3rem 0;
+  }
   
   &__title {
     font-size: 2.5rem;
     font-weight: utility.$bold;
+
+    @include utility.tab {
+      font-size: .19rem;
+    }
+
+    @include utility.sp {
+      font-size: .25rem;
+    }
   }
 
   &__list {
     display: flex;
     margin-top: 5rem;
     position: relative;
+
+    @include utility.tab {
+      margin-top: .35rem;
+    }
+
+    @include utility.sp {
+      margin-top: .35rem;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__step {
@@ -26,6 +52,41 @@
     position: relative;
     text-align: center;
 
+    @include utility.tab {
+      padding: 1.35rem .15rem .28rem .15rem;
+      margin-left: .15rem;
+      border: .01rem solid utility.$pink;
+      border-radius: .1rem;
+      line-height: .21rem;
+    }
+
+    @include utility.sp {
+      width: 2.8rem;
+      padding: 1.52rem .15rem .18rem .15rem;
+      margin-left: 0;
+      margin-top: .4rem;
+      border: .03rem solid utility.$pink;
+      border-radius: .14rem;
+      line-height: .21rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:nth-child(2) {
+        padding: 1.75rem .15rem .17rem .15rem;
+        & h3 {
+          position: absolute;
+          top: 1.5rem;
+          left: .08rem;
+        }
+      }
+
+      &:last-child {
+        padding: 1.45rem .15rem .25rem .15rem;
+      }
+    }
+
     &__next-point {
       position: absolute;
       border-top:solid 2rem transparent;
@@ -34,6 +95,24 @@
       border-right:solid 2rem transparent;
       left: 27.7rem;
       top: 15.5rem;
+
+      @include utility.tab {
+        border-top:solid .18rem transparent;
+        border-bottom:solid .18rem transparent;
+        border-left:solid .18rem utility.$pink;
+        border-right:solid .18rem transparent;
+        left: 2.09rem;
+        top: 1.18rem;
+      }
+
+      @include utility.sp {
+        border-top:solid .2rem utility.$pink;
+        border-bottom:solid .2rem transparent;
+        border-left:solid .2rem transparent;
+        border-right:solid .2rem transparent;
+        left: 1.15rem;
+        top: 3rem;
+      }
     }
 
     &:first-child {
@@ -44,40 +123,115 @@
       position: absolute;
       left: .8rem;
       top: .8rem;
+
+      @include utility.tab {
+        left: .07rem;
+        top: .07rem;
+        width: .45rem;
+      }
+
+      @include utility.sp {
+        left: .08rem;
+        top: .08rem;
+        width: .45rem;
+      }
     }
 
     & h3 {
       font-size: 2.4rem;
       font-weight: utility.$bold;
       line-height: 3rem;
+
+      @include utility.tab {
+        font-size: .18rem;
+        line-height: .22rem;
+      }
+
+      @include utility.sp {
+        font-size: .2rem;
+        line-height: .26rem;
+      }
     }
 
     & p {
       font-size: 1.4rem;
       margin-top: 2rem;
       text-align: left;
+
+      @include utility.tab {
+        font-size: .105rem;
+        margin-top: .15rem;
+        line-height: .15rem;
+      }
+
+      @include utility.sp {
+        font-size: .14rem;
+        margin-top: .1rem;
+      }
     }
 
     &.is-sheet {
       background-image: url(../img/icon/icon-sheet.png);
       background-position: 9.5rem 5.5rem;
+
+      @include utility.tab {
+        background-position: .73rem .43rem;
+        background-size: .78rem;
+      }
+
+      @include utility.sp {
+        background-position: 1rem .52rem;
+        background-size: .78rem;
+      }
     }
 
     &.is-glass {
       background-image: url(../img/icon/icon-glass.png);
       background-position: 9.2rem 6.5rem;
+
+      @include utility.tab {
+        background-position: .7rem .52rem;
+        background-size: .6rem;
+      }
+
+      @include utility.sp {
+        background-position: 1rem .52rem;
+        background-size: .75rem;
+      }
     }
 
     &.is-mail {
       background-image: url(../img/icon/icon-mail.png);
       background-position: 8.7rem 5.8rem;
 
+      @include utility.tab {
+        background-position: .66rem .45rem;
+        background-size: .8rem;
+      }
+
+      @include utility.sp {
+        background-position: 1rem .52rem;
+        background-size: .8rem;
+      }
+
       & h3 {
         margin-top: 1.6rem;
+        @include utility.tab {
+          margin-top: .13rem;
+        }
+        @include utility.sp {
+          margin-top: 0;
+        }
       }
 
       & p {
         margin-top: 3.3rem;
+        @include utility.tab {
+          margin-top: .25rem;
+        }
+        @include utility.sp {
+          margin-top: .1rem;
+        }
       }
     }
 
@@ -85,12 +239,34 @@
       background-image: url(../img/icon/icon-shine.png);
       background-position: 7.8rem 5rem;
 
+      @include utility.tab {
+        background-position: .58rem .4rem;
+        background-size: .8rem;
+      }
+
+      @include utility.sp {
+        background-position: 1rem .5rem;
+        background-size: .76rem;
+      }
+
       & h3 {
         margin-top: 1.6rem;
+        @include utility.tab {
+          margin-top: .13rem;
+        }
+        @include utility.sp {
+          margin-top: 0;
+        }
       }
 
       & p {
         margin-top: 3.3rem;
+        @include utility.tab {
+          margin-top: .25rem;
+        }
+        @include utility.sp {
+          margin-top: .05rem;
+        }
       }
     }
   }
