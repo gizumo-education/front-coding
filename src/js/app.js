@@ -2,7 +2,6 @@ import $ from "jquery";
 import "slick-carousel";
 
 $(function () {
-  console.log("環境構築完了");
 
   const toggleMenu = function () {
     $(".l-header__menu").toggleClass("is-open");
@@ -17,10 +16,10 @@ $(function () {
   $('a[href^="#"]').on("click", function () {
     toggleMenu();
 
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? "html" : href);
-    var position = target.offset().top - $(".l-header").outerHeight();
-    var speed = 500;
+    const href = $(this).attr("href");
+    const target = $(href == "#" || href == "" ? "html" : href);
+    const position = target.offset().top - $(".l-header").outerHeight();
+    const speed = 500;
     $("html, body").animate(
       {
         scrollTop: position,
@@ -37,8 +36,8 @@ $(function () {
       slidesToShow: 4,
       slidesToScroll: 1,
       arrows: true,
-      prevArrow: '<div class="slide-arrow prev-arrow"></div>',
-      nextArrow: '<div class="slide-arrow next-arrow"></div>',
+      // prevArrow: '<div class="slide-arrow prev-arrow"></div>',
+      // nextArrow: '<div class="slide-arrow next-arrow"></div>',
       responsive: [
         {
           breakpoint: 1199,
