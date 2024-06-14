@@ -2,16 +2,24 @@
 
 .p-new-job__card {
   &-img {
-    width: 280px;
-    border-radius: 10px;
-    overflow: hidden;
+    & > img {
+      width: 280px;
+      border-radius: 10px;
+      overflow: hidden;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: top;
+      object-position: top;
 
-    @include utility.tab {
-      width: 2.8rem;
-    }
-    @include utility.sp {
-      width: 3.7rem;
-      height: 2.08rem;
+      @include utility.tab {
+        width: 2.8rem;
+        border-radius: 0.1rem;
+      }
+      @include utility.sp {
+        width: 3.7rem;
+        height: 2.08rem;
+        border-radius: 0.1rem;
+      }
     }
   }
 
@@ -41,10 +49,12 @@
     gap: 4px 10px;
 
     @include utility.tab {
-      margin-top: 0.7rem;
+      grid-template-columns: 0.6rem 1fr;
+      margin-top: 0.07rem;
       gap: 0.04rem 0.1rem;
     }
     @include utility.sp {
+      grid-template-columns: 0.6rem 1fr;
       margin-top: 0.11rem;
       gap: 0.04rem 0.21rem;
     }
@@ -72,6 +82,10 @@
       line-height: 20.27px;
 
       @include utility.tab {
+        font-size: 0.14rem;
+        line-height: 0.2rem;
+      }
+      @include utility.sp {
         font-size: 0.14rem;
         line-height: 0.2rem;
       }
