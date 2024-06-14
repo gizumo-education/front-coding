@@ -32,20 +32,25 @@
   margin-right: 120px;
 }
 
-
 .list {
- font-size: 20px;
- display: flex;
- float: left;
+  font-size: 15px;
+  padding-top: 10px;
+ }
+
+.list dl {
+  width: 100%;
 }
 
-.list td {
-  padding-left: 10px;
-  padding-top: 20px;
-}
-
-.list th {
-  padding: 0.3em;
-  display: block;
+.list dt {
+  padding-top: 2px;
   background: #FFCAD0;
+  float:left;
+  text-align: center;
+  height: 21px;
+  width: 60px;
+}
+
+
+.list dd {
+  padding: 0.3em;
 }
