@@ -41,7 +41,9 @@
       display: none;
     }
 
-    @include utility.sp {}
+    @include utility.sp {
+      position: relative;
+    }
   }
 
   &__flex {
@@ -241,4 +243,23 @@
       @include utility.sp {}
     }
   }
+  
+.l-header__close span:nth-of-type(1){
+  position: absolute;
+  transform: rotate(45deg);
+  width: 100%;
+  margin-top: 0;
+  top: 16px;
+  }
+  .l-header__close span:nth-of-type(2){
+  opacity: 0;
+  margin-top: 0;
+  }
+  .l-header__close span:nth-of-type(3){
+  position: absolute;
+  margin-top: 0;
+  transform: rotate(-45deg);
+  width: 100%;
+  top: 16px;
+  }	
 }
