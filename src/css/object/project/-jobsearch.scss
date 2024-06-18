@@ -1,21 +1,22 @@
 @use '../../object/utility/utility.scss';
 
 .p-jobsearch {
-  Width:1300px;
-  Height:250px;
+  Width:1181px;
+  Height:239px;
   border-radius: 10px 10px 10px 10px;
   border: solid 3px #DEEEF9;
   background-color: #DEEEF9;
   margin:auto;
   text-align: center;
-  line-height:40px;
-  padding: 50px;
+  line-height:44px;
+  padding: 31px;
   font-size: 20px;
 }
 
 h2 {
   font-weight:bold;
-  font-size: 35px;
+  font-size: 25px;
+  padding-bottom: 1px;
 }
 
 .example{
@@ -27,7 +28,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 19px;
 }
 
 .box_wrapper {
@@ -37,7 +38,7 @@ h2 {
 .box_wrapper::after {
   content: "";
   position: absolute;
-  top: 22px;
+  top: 24px;
   right: 12px;
   border-right: 12px solid transparent;
   border-left: 12px solid transparent;
@@ -54,8 +55,8 @@ h2 {
   border-radius: 10px;
   background-color: #FFFFFF;
   font-size: 20px;
-  margin-left: 20px;
-  padding-left: 10px;
+  margin-left: 12px;
+  padding: 7px 0 2px 12px;
   outline: none;
   position: relative;
   -webkit-appearance: none;
@@ -64,12 +65,14 @@ h2 {
 
 
 .select-null {
-  width: 320px;
-  height: 60px;
+  width: 305px;
+  height: 59px;
   border: 2px solid #DE1E79;
   border-radius: 10px;
   background-color: #FFFFFF;
-  font-size: 20px;
-  margin-left: 20px;
+  font-size: 18px;
+  margin-left: 6px;
   outline: none;
+  text-align: center;
+  padding-right: 9px;
 }
