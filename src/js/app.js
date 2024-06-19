@@ -15,7 +15,7 @@ $(function () {
   // ハンバーガーメニューのクリックイベント
   $(".l-header__wrapper").click(function () {
     $(".l-header__wrapper").toggleClass("is-active");
-    $("#nav").toggleClass("is-active");
+    $(".l-header__nav").toggleClass("is-active");
   });
 });
 
