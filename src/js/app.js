@@ -39,3 +39,24 @@ $(document).ready(function () {
       slidesToScroll: 1
   });
 });
+
+//SPメニューを押下で該当セクションンにスムーススクロール
+function linkscroll(target) {
+  $('html, body').animate({ scrollTop: $(target).offset().top }, 800, 'swing');
+}
+
+$('#link__id1').on(function () {
+  linkscroll('#target__id1');
+});
+$('#link__id2').on(function () {
+  linkscroll('#target__id2');
+});
+$('#link__id3').on(function () {
+  linkscroll('#target__id3');
+});
+$('#link__id4').on(function () {
+  linkscroll('#target__id4');
+});
+$('#link__id5').on(function () {
+  linkscroll('#target__id5');
+});
