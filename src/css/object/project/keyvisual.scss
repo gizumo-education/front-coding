@@ -99,9 +99,15 @@
     &--name{
         font-size: 25px;
         text-align: left;
+        margin-left: 13%;
+    }
+    &--inner {
+        width: 1600px;
+        margin: 0 auto;
     }
     &__list {
         display: flex;
+        justify-content: center;
         gap: 20px;
         position: relative;
         &__box {
