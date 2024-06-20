@@ -1,0 +1,14 @@
+@use '../../object/utility/utility.scss';
+// 共通パーツであるボタンのスタイルを記述するファイル
+
+.select {
+    padding: 17px 15px;
+    border-radius: 10px;
+    border: 1px solid utility.$deepPink;
+    width: 200px;
+    appearance: none;
+    background-image: url("./../img/icon/パス 15.png");
+    background-repeat: no-repeat;
+    background-size: 24px auto;
+    background-position: right 12px center;
+}

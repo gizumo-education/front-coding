@@ -49,35 +49,100 @@
     <div class="searchJob">
       <p class="searchJob--title">お仕事検索</p>
       <p class="searchJob--subTitle">働きたい職種・地域・希望給与を入れて検索！</p>
-      <select name="job" class="searchJob--selectJob">
-        <option value="">医療事務</option>
-        <option value="">調剤事務</option>
-        <option value="">診療情報管理士</option>
-        <option value="">歯科助手</option>
-        <option value="">歯科事務</option>
-        <option value="">看護補助・看護助手</option>
-        <option value="">病院内SE</option>
-      </select>
-      <select name="prefecture" class="searchJob--selectPrefecture">
-        <option value="">茨城県</option>
-        <option value="">神奈川県</option>
-        <option value="">群馬県</option>
-        <option value="">埼玉県</option>
-        <option value="">千葉県</option>
-        <option value="">東京都</option>
-        <option value="">栃木県</option>
-      </select>
-      <select name="salary" class="searchJob--selectSalary">
-        <option value="">月給17万〜</option>
-        <option value="">月給18万〜</option>
-        <option value="">月給19万〜</option>
-        <option value="">月給20万〜</option>
-        <option value="">月給21万〜</option>
-        <option value="">月給22万〜</option>
-        <option value="">月給23万〜</option>
-      </select>
-      <div class="searchJob__box">
-      <button class="button"><img src="./img/icon/Frontend Basic Coding.png">検索する</button>
+      <div class="searchJob__selectArea">
+        <select name="job" class="select searchJob__selectarea--selectJob">
+          <option value="">医療事務</option>
+          <option value="">調剤事務</option>
+          <option value="">診療情報管理士</option>
+          <option value="">歯科助手</option>
+          <option value="">歯科事務</option>
+          <option value="">看護補助・看護助手</option>
+          <option value="">病院内SE</option>
+        </select>
+        <select name="prefecture" class="select searchJob__selectarea--selectPrefecture">
+          <option value="">茨城県</option>
+          <option value="">神奈川県</option>
+          <option value="">群馬県</option>
+          <option value="">埼玉県</option>
+          <option value="">千葉県</option>
+          <option value="">東京都</option>
+          <option value="">栃木県</option>
+        </select>
+        <select name="salary" class="select searchJob__selectarea--selectSalary">
+          <option value="">月給17万〜</option>
+          <option value="">月給18万〜</option>
+          <option value="">月給19万〜</option>
+          <option value="">月給20万〜</option>
+          <option value="">月給21万〜</option>
+          <option value="">月給22万〜</option>
+          <option value="">月給23万〜</option>
+        </select>
+        <input type="text" placeholder="キーワード・企業名・スキルなど" class="searchJob--text">
+        <div class="searchJob--box">
+          <button class="button"><img src="./img/icon/Frontend Basic Coding.png">検索する</button>
+        </div>
+      </div>
+    </div>
+    <div class="recruit">
+      <p class="recruit--name">新着求人</p>
+      <div class="recruit__list">
+        <div class="recruit__list__box">
+          <div class="recruit__list__box--scroll prev"></div>
+          <div class="recruit__list__box--scroll recruit__list__box--scroll--next"></div>
+          <img src="./img/picture/Frontend Basic Coding Group 10.jpg" alt="" class="recruit__list__box--image">
+          <p class="recruit__list__box--text">平日・夕方までの勤務!伊勢市の伊勢赤<br>十字病院で医療事務求人</p>
+          <dl class="recruit__list__box__table">
+            <dd class="recruit__list__box__table--dd">給与</dd>
+            <dt class="recruit__list__box__table--dt">月給 148,000円～</dt>
+            <dd class="recruit__list__box__table--dd">所在地</dd>
+            <dt class="recruit__list__box__table--dt">三重県伊勢市</dt>
+            <dd class="recruit__list__box__table--dd">最寄駅</dd>
+            <dt class="recruit__list__box__table--dt">伊勢市駅 徒歩15分</dt>
+          </dl>
+        </div>
+        <div class="recruit__list__box">
+          <img src="./img/picture/Frontend Basic Coding Group 12.jpg" alt="" class="recruit__list__box--image">
+          <p class="recruit__list__box--text">平日・夕方までの勤務!伊勢市の伊勢赤<br>十字病院で医療事務求人</p>
+          <dl class="recruit__list__box__table">
+            <dd class="recruit__list__box__table--dd">給与</dd>
+            <dt class="recruit__list__box__table--dt">月給 148,000円～</dt>
+            <dd class="recruit__list__box__table--dd">所在地</dd>
+            <dt class="recruit__list__box__table--dt">三重県伊勢市</dt>
+            <dd class="recruit__list__box__table--dd">最寄駅</dd>
+            <dt class="recruit__list__box__table--dt">伊勢市駅 徒歩15分</dt>
+          </dl>
+        </div>
+        <div class="recruit__list__box">
+          <img src="./img/picture/Frontend Basic Coding Group 14.jpg" alt="" class="recruit__list__box--image">
+          <p class="recruit__list__box--text">平日・夕方までの勤務!伊勢市の伊勢赤<br>十字病院で医療事務求人</p>
+          <dl class="recruit__list__box__table">
+            <dd class="recruit__list__box__table--dd">給与</dd>
+            <dt class="recruit__list__box__table--dt">月給 148,000円～</dt>
+            <dd class="recruit__list__box__table--dd">所在地</dd>
+            <dt class="recruit__list__box__table--dt">三重県伊勢市</dt>
+            <dd class="recruit__list__box__table--dd">最寄駅</dd>
+            <dt class="recruit__list__box__table--dt">伊勢市駅 徒歩15分</dt>
+          </dl>
+        </div>
+        <div class="recruit__list__box">
+          <img src="./img/picture/Frontend Basic Coding Group 16.jpg" alt="" class="recruit__list__box--image">
+          <p class="recruit__list__box--text">平日・夕方までの勤務!伊勢市の伊勢赤<br>十字病院で医療事務求人</p>
+          <dl class="recruit__list__box__table">
+            <dd class="recruit__list__box__table--dd">給与</dd>
+            <dt class="recruit__list__box__table--dt">月給 148,000円～</dt>
+            <dd class="recruit__list__box__table--dd">所在地</dd>
+            <dt class="recruit__list__box__table--dt">三重県伊勢市</dt>
+            <dd class="recruit__list__box__table--dd">最寄駅</dd>
+            <dt class="recruit__list__box__table--dt">伊勢市駅 徒歩15分</dt>
+          </dl>
+        </div>
+      </div>
+      <button class="button recruit--button">新着求人一覧をもっと見る</button>
+    </div>
+    <div class="subTitle">
+      <div class="subTitle__box">
+        <p class="subTitle__box--text">ギズジョブなら理想の職場がきっと見つかる</p>
+        <p class="subTitle__box--text">ギズジョブは完全無料の求職者向け求人サービスです。</p>
       </div>
     </div>
   </main>
