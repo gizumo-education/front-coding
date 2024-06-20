@@ -24,4 +24,18 @@ $(document).ready(function () {
   $('.l-header__wrapper').click(function () {
     $('body').toggleClass('l-header__overflow');
   });
+
+//スライドショー
+  $(document).ready(function () {
+    $(".l-inner__job--container").slick({});
+  });
+});
+
+//スライドショー
+$(document).ready(function () {
+  $('.l-inner__job--container').slick({
+    infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1
+  });
 });

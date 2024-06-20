@@ -2,23 +2,6 @@
 @use "../foundation/variables";
 // headerのスタイルを記述するファイル
 
-.l-header__nav {
-  display: none;
-  display: block;
-  position: fixed;
-  top: 70px;
-  right: -100vw;
-  bottom: 0;
-  width: 100vw;
-  padding: 57px 0 0 60.25px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  transition: all .5s;
-  z-index: 20;
-  opacity: 0;
-}
-
 .p-keyvisual__relativeSp {
   display: block !important;
 
@@ -61,6 +44,23 @@
     @include utility.sp {
       position: relative;
     }
+  }
+
+  &__nav {
+    display: none;
+    display: block;
+    position: fixed;
+    top: 70px;
+    right: -100vw;
+    bottom: 0;
+    width: 100vw;
+    padding: 57px 0 0 60.25px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all .5s;
+    z-index: 20;
+    opacity: 0;
   }
 
   &__open {
