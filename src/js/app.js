@@ -1,4 +1,5 @@
-import $ from "jquery";
+const $ = require('jquery');
+require('slick-carousel');
 
 $(function () {
   console.log('環境構築完了');
@@ -27,16 +28,23 @@ $(document).ready(function () {
 
 //スライドショー
   $(document).ready(function () {
-    $(".l-inner__job--container").slick({});
+    console.log('成功');
+    $(".u-container__position--job").slick({
+      arrows: true
+    });
   });
 });
 
 //スライドショー
-$(document).ready(function () {
+$(function () {
+  console.log('成功２');
   $('.l-inner__job--container').slick({
     infinite: true,
       slidesToShow: 4,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: '<div class="slide-arrow prev-arrow"></div>',
+      nextArrow: '<div class="slide-arrow next-arrow"></div>'
   });
 });
 
