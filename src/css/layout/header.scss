@@ -117,6 +117,39 @@
       display: none!important;
     }
   }
+
+  &__sp-nav {
+    position: fixed;
+    z-index: 1000;
+    right: -120%;
+    top: .7rem;
+    transition: all .5s;
+    
+    &.active {
+      right: 0;
+      width: 100%;
+    }
+  }
+
+  &__nav-items {
+    padding: .58rem .6rem 2.34rem;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    & li {
+      margin-top: .38rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      & a {
+        font-size: .22rem;
+        color: utility.$white;
+        font-weight: utility.$bold;
+      }
+    }
+  }
+
   &__hamburger {
     width: .5rem;
     height: .38rem;
@@ -133,6 +166,26 @@
       height: .06rem;
       background-color: utility.$black;
       border-radius: .03rem;
+    }
+
+    &.active {
+      transform: translateX(0);
+
+      & span:nth-child(1) {
+        top: .17rem;
+        transform: rotate(45deg);
+        position: absolute;
+      }
+
+      & span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      & span:nth-child(3) {
+        top: .17rem;
+        transform: rotate(-45deg);
+        position: absolute;
+      }
     }
   }
 }
