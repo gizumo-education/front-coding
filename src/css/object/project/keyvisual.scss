@@ -215,3 +215,35 @@
         }
     }
 }
+
+.feature {
+    margin: auto;
+    text-align: center;
+    &--title {
+        font-size: 25px;
+        font-weight: utility.$bold;
+        margin-top: 100px;
+    }
+    &__box {
+        display: grid;
+        font-size: 14px;
+        gap: 20px;
+        grid-template-columns: 570px 570px;
+        grid-template-rows: 170px 170px;
+        justify-content: center;
+        margin-top: 50px;
+        &__area {
+            padding: 40px 61px;
+            background-color: utility.$boxPink;
+            border-radius: 10px;
+        }
+        &--title {
+            font-size: 24px;
+            font-weight: utility.$bold;
+            color: utility.$deepPink;
+        }
+        &--detail {
+            margin-top: 36px;
+        }
+    }
+}
