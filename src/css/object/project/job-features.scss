@@ -1,0 +1,25 @@
+@use '../../object/utility/utility.scss';
+
+.p-features {
+  width: 1600px;
+  height: 800px;
+  background-color: #FFFFFF;
+}
+
+.features-title {
+  font-size: 25px;
+  padding-top: 108px;
+  margin-left: 669px;
+  font-weight: bold;
+}
+
+.features {
+  background-color: #F7D2DB;
+}
+
+.features-box {
+  border-radius: 40px;
+  width: 570;
+  height: 180px;
+  
+}
