@@ -4,6 +4,12 @@
   margin-top: 60px;
   height: 637px;
   background-color:#DEEEF9 ;
+  
+  &__new-listings {
+    font-size: 25px;
+    padding-top: 67px;
+    padding-left: 210px;
+  }
 }
 
 .job-inner {
@@ -11,11 +17,6 @@
   margin: 0 auto;
 }
 
-.new-listings {
-  font-size: 25px;
-  padding-top: 67px;
-  padding-left: 210px;
-}
 
 .imgs {
   padding: 11px 1px 9px 0;
