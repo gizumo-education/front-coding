@@ -33,10 +33,10 @@
 
   <main>
     <div class="p-keyvisual">
-      <p class="p-keyvisual-text"><img src="./img/picture/keyvisual-text.png" alt="見出しバナー"></p>
-      <p class="p-keyvisual-title"><img src="./img/picture/keyvisual-title.png" alt="医療求人バナー"></p>
-      <div class="box">
-        <p>現在の求人掲載数：<span class="number">2,320</span>件</p>
+      <p class="p-keyvisual__keyvisual-text"><img src="./img/picture/keyvisual-text.png" alt="見出しバナー"></p>
+      <p class="p-keyvisual__keyvisual-title"><img src="./img/picture/keyvisual-title.png" alt="医療求人バナー"></p>
+      <div class="p-keyvisual__box">
+        <p>現在の求人掲載数：<span class="p-keyvisual__number">2,320</span>件</p>
       </div>
     </div>
     
@@ -45,9 +45,9 @@
         <h2>お仕事検索</h2>
         <p>働きたい職種・地域・希望給与を入れて検索！</p>
       </hgroup>
-      <div class="select-box">
-        <div class="box_wrapper">
-          <select name="job"  id="select" class="select">
+      <div class="p-jobsearch__select-box">
+        <div class="p-jobsearch__box_wrapper">
+          <select name="job"  id="select" class="p-jobsearch__select">
             <option value="job1" selected>医療事務</option>
             <option value="job2">調剤事務</option>
             <option value="job3">診療情報管理士</option>
@@ -57,8 +57,8 @@
             <option value="job7">病院内SE</option>
           </select>
         </div>
-        <div class="box_wrapper">
-          <select name = "district"  id="select" class="select">
+        <div class="p-jobsearch__box_wrapper">
+          <select name = "district"  id="select" class="p-jobsearch__select">
             <option value="district1">茨城県</option>
             <option value="district2">神奈川県</option>
             <option value="district3">群馬県</option>
@@ -68,9 +68,9 @@
             <option value="district7">栃木県</option>
           </select>
         </div>
-        <div class="box_wrapper">
-          <form class="fome-box">
-          <select name="salary"  id="select" class="select">
+        <div class="p-jobsearch__box_wrapper">
+          <form class="p-jobsearch__fome-box">
+          <select name="salary"  id="select" class="p-jobsearch__select">
             <option value="salary1" selected>月給17万〜</option>
             <option value="salary2">月給18万〜</option>
             <option value="salary3">月給19万〜</option>
@@ -80,19 +80,19 @@
             <option value="salary">月給23万〜</option>
           </select>
         </div>
-        <input type="text" placeholder="キーワード・企業名・スキルなど" id="select-null" class="select-null">
+        <input type="text" placeholder="キーワード・企業名・スキルなど" id="select-null" class="p-jobsearch__select-null">
           <button class="form-button"><img src="./img/picture/glass.png">検索する</button>
         </form>
       </div>
     </div>
     <div class="p-joblistings">
-      <p class="new-listings">新着求人</p>
-       <div class="job-openings">
-        <div class="imgs">
-          <div class="job-inner">
+      <p class="p-joblistings__new-listings">新着求人</p>
+       <div class="p-joblistings__job-openings">
+        <div class="p-joblistings__imgs">
+          <div class="p-joblistings__job-inner">
             <img src="./img/picture/main-banner1.jpg" alt="事務バーナー">
-            <p class="listings-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-          <div class="list">
+            <p class="p-joblistings__listings-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+          <div class="p-joblistings__list">
             <dl>
               <dt>給与</dt>
               <dd>月給 148,000円～</dd>
@@ -108,11 +108,11 @@
           </div>
          </div>
         </div>
-        <div class="imgs">
-          <div class="job-inner">
+        <div class="p-joblistings__imgs">
+          <div class="p-joblistings__job-inner">
             <img src="./img/picture/main-banner2.jpg" alt="会話バナー"></p>
-            <p class="listings-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-          <div class="list">
+            <p class="p-joblistings__listings-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+          <div class="p-joblistings__list">
             <dl>
               <dt>給与</dt>
               <dd>月給 148,000円～</dd>
@@ -127,11 +127,11 @@
           </div>
          </div>
         </div>
-        <div class="imgs">
-          <div class="job-inner">
+        <div class="p-joblistings__imgs">
+          <div class="p-joblistings__job-inner">
             <img src="./img/picture/main-banner3.jpg" alt="立ち絵バナー"></p>
-            <p class="listings-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-          <div class="list">
+            <p class="p-joblistings__listings-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+          <div class="p-joblistings__list">
             <dl>
               <dt>給与</dt>
               <dd>月給 148,000円～</dd>
@@ -147,11 +147,11 @@
           </div>
          </div>
         </div>
-        <div class="imgs">
-          <div class="job-inner">
+        <div class="p-joblistings__imgs">
+          <div class="p-joblistings__job-inner">
           <img src="./img/picture/main-banner4.jpg" alt="受付バナー"></p>
-          <p class="listings-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-          <div class="list">
+          <p class="p-joblistings__listings-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+          <div class="p-joblistings__list">
             <dl>
               <dt>給与</dt>
               <dd>月給 148,000円～</dd>
@@ -173,9 +173,9 @@
       </button>
     </div>
     <div class="p-meeting">
-      <div class="meeting-imge">
+      <div class="p-meeting__meeting-imge">
       </div>
-      <div class="meeting-title">
+      <div class="p-meeting__meeting-title">
         <p>ギズジョブなら理想の職場がきっと見つかる<br>ギズジョブは完全無料の求職者向けの求人サービスです。</p>
        </div>
     </div>
