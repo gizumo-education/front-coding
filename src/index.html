@@ -40,37 +40,38 @@
     </header>
 
     <main>
-      <div class="top l-inne">
-        <div class="top--inner">
-          <div class="top--topImage"></div>
-          <div class="top__area">
-            <div class="top__area--imageNo1">
-              <img
-                src="./img/picture/keyvisual.png"
-                alt=""
-                class="top-area-img"
-              />
-            </div>
-            <div class="top__area--title">
-              <img src="./img/picture/医療事務求人ソラジョブ.png" alt="" />
-            </div>
-            <div class="top__area__textBox">
-              <p class="top__area__textBox-text">
-                現在の求人掲載数:<span class="top__area__textBox-number"
-                  >2,320</span
-                >件
-              </p>
-            </div>
+      <div class="top">
+        <div class="top--topImage"></div>
+        <div class="top__area">
+          <div class="top__area--imageNo1">
+            <img
+              src="./img/picture/keyvisual.png"
+              alt=""
+              class="top-area-img"
+            />
+          </div>
+          <div class="top__area--title">
+            <img src="./img/picture/医療事務求人ソラジョブ.png" alt="" />
+          </div>
+          <div class="top__area__textBox">
+            <p class="top__area__textBox-text">
+              現在の求人掲載数:<span class="top__area__textBox-number"
+                >2,320</span
+              >件
+            </p>
           </div>
         </div>
       </div>
-      <div class="searchJob l-inne">
+      <div class="searchJob l-inner">
         <p class="searchJob--title">お仕事検索</p>
         <p class="searchJob--subTitle">
           働きたい職種・地域・希望給与を入れて検索！
         </p>
         <div class="searchJob__selectArea">
-          <select name="job" class="select searchJob__selectarea--selectJob">
+          <select
+            name="job"
+            class="select searchJob__selectarea--selectJob searchJob__selectArea--sp1"
+          >
             <option value="">医療事務</option>
             <option value="">調剤事務</option>
             <option value="">診療情報管理士</option>
@@ -81,7 +82,7 @@
           </select>
           <select
             name="prefecture"
-            class="select searchJob__selectarea--selectPrefecture"
+            class="select searchJob__selectarea--selectPrefecture searchJob__selectArea--sp1"
           >
             <option value="">茨城県</option>
             <option value="">神奈川県</option>
@@ -93,7 +94,7 @@
           </select>
           <select
             name="salary"
-            class="select searchJob__selectarea--selectSalary"
+            class="select searchJob__selectarea--selectSalary searchJob__selectArea--sp1"
           >
             <option value="">月給17万〜</option>
             <option value="">月給18万〜</option>
@@ -106,9 +107,9 @@
           <input
             type="text"
             placeholder="キーワード・企業名・スキルなど"
-            class="searchJob--text"
+            class="searchJob--text searchJob__selectArea--sp2"
           />
-          <div class="searchJob--box">
+          <div class="searchJob--box searchJob__selectArea--sp3">
             <button class="button">
               <img src="./img/icon/icon-check.png" alt="" />検索する
             </button>
@@ -116,14 +117,12 @@
         </div>
       </div>
       <div class="recruit">
-        <div class="recruit--inner">
+        <div class="l-inner inner-padding">
           <p class="recruit--name">新着求人</p>
           <div class="recruit__list">
             <div class="recruit__list__box">
-              <div class="recruit__list__box--scroll prev"></div>
-              <div
-                class="recruit__list__box--scroll recruit__list__box--scroll--next"
-              ></div>
+              <div class="recruit__list__box--scroll--prev"></div>
+              <div class="recruit__list__box--scroll--next"></div>
               <img
                 src="./img/picture/recruitImage1.jpg"
                 alt=""
@@ -211,7 +210,8 @@
           </p>
         </div>
       </div>
-      <div class="feature">
+
+      <!-- <div class="feature">
         <p class="feature--title">ギズジョブの4つの特徴</p>
         <div class="feature__box">
           <div class="feature__box__area">
@@ -243,33 +243,52 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
 
-
-
-
-
-      <div class="flow">
-        <p class="flow--title">ギズジョブの4つの特徴</p>
-        <div class="flow__area">
-          <div class="flow__area--box">
-            <p>エントリーシートの作成</p>
-            <p>ここにはテキストが入ります。ここに
-              はテキストが入ります。ここにはテキ
-              ストが入ります。</p>
-            <img src="" alt="">
+      <!-- <div class="flow">
+        <div class="l-inner">
+          <p class="flow--title">ギズジョブの4つの特徴</p>
+          <div class="flow__box">
+            <div class="flow__box__area">
+              <img src="" alt="" />
+              <p>エントリーシートの作成</p>
+              <p>
+                ここにはテキストが入ります。ここに
+                はテキストが入ります。ここにはテキ ストが入ります。
+              </p>
+              <img src="./img/icon/icon-arrow.png" alt="" />
+            </div>
+            <div class="flow__box__area">
+              <img src="" alt="" />
+              <p>エントリーシートの作成</p>
+              <p>
+                ここにはテキストが入ります。ここに
+                はテキストが入ります。ここにはテキ ストが入ります。
+              </p>
+              <img src="./img/icon/icon-arrow.png" alt="" />
+            </div>
+            <div class="flow__box__area">
+              <img src="" alt="" />
+              <p>エントリーシートの作成</p>
+              <p>
+                ここにはテキストが入ります。ここに
+                はテキストが入ります。ここにはテキ ストが入ります。
+              </p>
+              <img src="./img/icon/icon-arrow.png" alt="" />
+            </div>
+            <div class="flow__box__area">
+              <img src="" alt="" />
+              <p>エントリーシートの作成</p>
+              <p>
+                ここにはテキストが入ります。ここに
+                はテキストが入ります。ここにはテキ ストが入ります。
+              </p>
+              <img src="./img/icon/icon-arrow.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-    </main>
+    </main> -->
     <footer class="l-footer">
       <div class="l-footer__area">
         <div class="l-inner is-flex">

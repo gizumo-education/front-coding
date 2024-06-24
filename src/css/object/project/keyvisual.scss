@@ -7,29 +7,36 @@
 .top {
     position:relative;
     background-color: utility.$bgImageGray;
-    &--inner {
-        width: 1600px;
-        margin: 0 auto;
-    }
     &--topImage {
         background-image:url("./../img/picture/mainImage.png");
         background-size: contain;
         background-repeat: no-repeat;
         height: 500px;
         background-position: center center;
+        @include utility.tab {
+            background-image:url("./../img/picture/mainImage.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 500px;
+        }
+        @include utility.sp {
+            background-image:url("./../img/picture/sp-mainImage.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 3.0rem;
+        }
     }
-
     &__area {
         margin: auto;
         text-align: center;
         position:absolute;
         top: 85px;
-        left: 38%;
-        &--imageNo1 {
-
-        }
+        right: 0.15rem;
         &--title {
             margin-top: 20px;
+            @include utility.sp {
+                width: 2.7rem;
+            }
         }
         &__textBox {
             text-align: center;
@@ -41,9 +48,15 @@
             line-height: 50px;
             width: 400px;
             margin: 50px auto 0;
+            @include utility.sp {
+                margin: 0.15rem;
+            }
             &-text {
                 color: utility.$lightgreen;
                 font-family: utility.$bold;
+                @include utility.sp {
+
+                }
             }
             &-number {
                 font-size: 40px;
@@ -59,6 +72,11 @@
     background-color: utility.$whiteBlue;
     border-radius: 10px;
     width: 1180px;
+    @include utility.sp {
+        margin: 0.2rem 0.1rem;
+        width: auto;
+        border-radius: 1%;
+    }
 
     &--title {
         font-size: 25px;
@@ -80,7 +98,12 @@
         justify-content: center;
         margin-top: 26px;
         align-items: center;
-        height: 60px;
+        @include utility.sp {
+            display: grid;
+            gap: 0.1rem;
+            grid-template-columns: repeat(3, 1rem);
+            grid-template-rows: repeat(3, 0.3rem);
+        }
     }
 
     &--text {
@@ -88,23 +111,38 @@
         text-align: center;
         font-size: 18px;
         border: 1px solid utility.$deepPink;
-        width: 300px;
         height: 51px;
+        @include utility.sp {
+            display: grid;
+            gap: 0.2rem;
+            grid-template-columns: repeat(3, 1rem);
+            grid-template-rows: repeat(3, 0.3rem);
+                grid-column: 1 / 3;
+                grid-row: 2;
+                width: 3.4rem;
+                text-align: left;
+            &--sp3 {
+                grid-column: 2 / 3;
+                grid-row: 3;
+                width: 3rem;
+            }
+        }
+    }
+    &--box {
+        @include utility.sp {
+            grid-column: 2 / 3;
+            grid-row: 3;
+        }
     }
 }
 
 .recruit {
     background-color: utility.$bgLightBlue;
     text-align: center;
-    padding: 64px 210px;
     &--name{
         font-size: 25px;
         text-align: left;
-        margin-left: 13%;
-    }
-    &--inner {
-        width: 1600px;
-        margin: 0 auto;
+        margin-top: 15px;
     }
     &__list {
         display: flex;
@@ -115,7 +153,7 @@
             display: flex;
             gap: 10px;
             flex-direction: column;
-            &--scroll {
+            &--scroll--prev {
                 background-color: utility.$white;
                 text-align: center;
                 width: 60px;
@@ -137,15 +175,29 @@
                     border-left: 1px solid utility.$black;
                     transform: rotate(-45deg);
                 }
-                &--next {
-                    right: 0;
-                    z-index: 100;
-                    &::before {
-                        left: 15px;
-                        border-left: none;
-                        border-right: 1px solid utility.$black;
-                        transform: rotate(45deg);
-                    }
+            }
+            &--scroll--next {
+                background-color: utility.$white;
+                text-align: center;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                opacity: 0.7;
+                position: absolute;
+                top: 25%;
+                right: 0;
+                &::before {
+                    content: "";
+                    margin: auto;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 15px;
+                    width: 20px;
+                    height: 20px;
+                    border-top: 1px solid utility.$black;
+                    border-right: 1px solid utility.$black;
+                    transform: rotate(45deg);
                 }
             }
             &--image {
@@ -183,7 +235,7 @@
 
 .subTitle {
     background-image:url("./../img/picture/backgroundImage.png");
-    background-size: 100%;
+    background-size: contain;
     width: 100%;
     height: 300px;
     background-repeat: no-repeat;
@@ -193,10 +245,7 @@
     &::before {
         content: '';
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        inset: 0;
         background-color: utility.$black;
         opacity: 0.5;
     }
@@ -244,6 +293,29 @@
         }
         &--detail {
             margin-top: 36px;
+        }
+    }
+}
+
+.flow {
+    margin: auto;
+    text-align: center;
+    &--title {
+        font-size: 25px;
+        font-weight: utility.$bold;
+        margin-top: 100px;
+    }
+    &__box {
+        display: grid;
+        font-size: 14px;
+        gap: 20px;
+        grid-template-columns: 570px 570px;
+        grid-template-rows: 170px 170px;
+        justify-content: center;
+        margin-top: 50px;
+        border-radius: 15px;
+        &__area {
+            border: 3px solid pink;
         }
     }
 }
