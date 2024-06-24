@@ -225,7 +225,7 @@
       line-height: normal;
       text-align: left;
       margin: 0 auto;
-      
+
       @include utility.sp {
         font-family: Noto Sans JP;
         width: 400px;
@@ -343,6 +343,29 @@
     }
   }
 }
+
+// slick
+.l-inner__width ul li img {
+  width: 100%;
+}
+
+.slick-slide {
+  margin-left: 20px;
+
+  &:first-child {
+    margin-left: 0;
+
+    @include utility.tab {}
+
+    @include utility.sp {
+      margin-left: 0;
+    }
+  }
+}
+
+// .slick-slide.slick-active {
+//   width: 275px !important;
+// }
 
 //MTG IMAGE//
 .l-inner__mtg {

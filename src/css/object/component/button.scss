@@ -119,128 +119,338 @@
 }
 
 .c-button__box {
+  // position: relative;
+  // bottom: 250px;
+  // width: 1180px;
+  // margin: 0 auto;
+  // display: flex;
+  // justify-content: space-between;
+
+  // @include utility.tab {
+  //   width: 118em;
+  //   bottom: 26em;
+  // }
+
+  // @include utility.sp {
+  //   padding: 0 15px;
+  //   bottom: 190px;
+  //   width: 400px;
+  // }
+}
+
+// .slick-prev {
+//     width: 60px;
+//     height: 60px;
+//     background-color: variables.$white;
+//     flex-shrink: 0;
+//     fill: variables.$filterBlack;
+//     opacity: 0.699999988079071;
+//     border-radius: 30px;
+//     border: none;
+//     position: relative;
+//     float: left;
+
+// @include utility.tab {
+//   width: 6em;
+//   height: 6em;
+// }
+
+// @include utility.sp {
+//   width: 42px;
+//   height: 42px;
+// }
+
+//     &::before {
+//       content: "";
+//       margin: auto;
+//       position: absolute;
+//       top: 30px;
+//       bottom: 30px;
+//       left: 25px;
+//       width: 20px;
+//       height: 20px;
+//       flex-shrink: 0;
+//       border-top: 0.707px solid variables.$filterBlack;
+//       border-right: 0.707px solid variables.$filterBlack;
+//       transform: rotate(225deg);
+
+//       @include utility.tab {
+//         width: 14px;
+//         height: 14px;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//         left: 7px;
+//       }
+
+//       @include utility.sp {
+//         top: 25px;
+//         left: 18px;
+//         width: 14px;
+//         height: 14px;
+//       }
+//     }
+//   }
+
+//   .slick-next {
+//     width: 60px;
+//     height: 60px;
+//     background-color: variables.$white;
+//     flex-shrink: 0;
+//     opacity: 0.699999988079071;
+//     border-radius: 30px;
+//     border: none;
+//     position: relative;
+
+//     @include utility.tab {
+//       width: 6em;
+//       height: 6em;
+//     }
+
+//     @include utility.sp {
+//       width: 42px;
+//       height: 42px;
+//     }
+
+//     &::before {
+//       content: "";
+//       margin: auto;
+//       position: absolute;
+//       top: 30px;
+//       bottom: 30px;
+//       right: 25px;
+//       width: 20px;
+//       height: 20px;
+//       flex-shrink: 0;
+//       border-top: 0.707px solid variables.$filterBlack;
+//       border-right: 0.707px solid variables.$filterBlack;
+//       transform: rotate(45deg);
+
+//       @include utility.tab {
+//         top: 3em;
+//         bottom: 3em;
+//         right: 2.5em;
+//         width: 2em;
+//         height: 2em;
+//       }
+
+//       @include utility.sp {
+//         width: 14px;
+//         height: 14px;
+//         top: 0;
+//         right: 7px;
+//         bottom: 0;
+//         left: 0;
+//       }
+//     }
+//   }
+
+
+/* 自作のアローにする */
+
+.slick-arrow {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: all .3s ease;
+  cursor: pointer;
   position: relative;
-  bottom: 250px;
-  width: 1180px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+
+  background-color: variables.$white;
+  flex-shrink: 0;
+  fill: variables.$filterBlack;
+  opacity: 0.699999988079071;
+  transform: rotate(180deg);
 
   @include utility.tab {
-    width: 118em;
-    bottom: 26em;
+    width: 6em;
+    height: 6em;
   }
 
   @include utility.sp {
-    padding: 0 15px;
-    bottom: 190px;
-    width: 400px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.slick-next {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: all .3s ease;
+  cursor: pointer;
+  position: relative;
+
+  background-color: variables.$white;
+  flex-shrink: 0;
+  fill: variables.$filterBlack;
+  opacity: 0.699999988079071;
+  margin-right: 0;
+  right: 0px;
+
+
+  @include utility.tab {
+    width: 6em;
+    height: 6em;
   }
 
-  &--back {
-    width: 60px;
-    height: 60px;
-    background-color: variables.$white;
+  @include utility.sp {
+    width: 42px;
+    height: 42px;
+  }
+
+  &:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
     flex-shrink: 0;
-    fill: variables.$filterBlack;
-    opacity: 0.699999988079071;
-    border-radius: 30px;
-    border: none;
-    position: relative;
-    float: left;
+    border-top: 0.707px solid variables.$filterBlack;
+    border-right: 0.707px solid variables.$filterBlack;
+    transform: rotate(225deg);
 
     @include utility.tab {
-      width: 6em;
-      height: 6em;
+      top: 3em;
+      bottom: 3em;
+      right: 2.5em;
+      width: 2em;
+      height: 2em;
     }
 
     @include utility.sp {
-      width: 42px;
-      height: 42px;
-    }
-
-    &::before {
-      content: "";
-      margin: auto;
-      position: absolute;
-      top: 30px;
-      bottom: 30px;
-      left: 25px;
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
-      border-top: 0.707px solid variables.$filterBlack;
-      border-right: 0.707px solid variables.$filterBlack;
-      transform: rotate(225deg);
-
-      @include utility.tab {
-        width: 14px;
-        height: 14px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 7px;
-      }
-
-      @include utility.sp {
-        top: 25px;
-        left: 18px;
-        width: 14px;
-        height: 14px;
-      }
+      width: 14px;
+      height: 14px;
+      top: 0;
+      right: -7px;
+      bottom: 0;
+      left: 0;
     }
   }
+}
 
-  &--next {
-    width: 60px;
-    height: 60px;
-    background-color: variables.$white;
+
+.slick-slide img.l-inner__job--SpImages {
+  display: none;
+
+  @include utility.tab {
+    display: none;
+  }
+
+  @include utility.sp {
+    display: block;
+    border-radius: 10px;
+    max-width: 370px;
+    height: 208px;
+  }
+}
+
+.slick-slide img.l-inner__job--images {
+  border-radius: 10px;
+
+  @include utility.tab {
+    width: 100%;
+  }
+
+  @include utility.sp {
+    display: none;
+  }
+}
+
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 25%;
+  -ms-transform: translate(0, -50%);
+  border: none;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+
+  @include utility.tab {}
+
+  @include utility.sp {
+    top: 45%;
+    right: 15px;
+  }
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  background: variables.$white;
+  opacity: 0.8;
+}
+
+.slick-prev {
+  left: 0px;
+  z-index: 1;
+
+  &:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
     flex-shrink: 0;
-    opacity: 0.699999988079071;
-    border-radius: 30px;
-    border: none;
-    position: relative;
+    border-top: 0.707px solid variables.$filterBlack;
+    border-right: 0.707px solid variables.$filterBlack;
+    transform: rotate(45deg);
 
     @include utility.tab {
-      width: 6em;
-      height: 6em;
+      top: 3em;
+      bottom: 3em;
+      right: 2.5em;
+      width: 2em;
+      height: 2em;
     }
 
     @include utility.sp {
-      width: 42px;
-      height: 42px;
+      width: 14px;
+      height: 14px;
+      top: 0;
+      right: 7px;
+      bottom: 0;
+      left: 0;
     }
+  }
+}
 
-    &::before {
-      content: "";
-      margin: auto;
-      position: absolute;
-      top: 30px;
-      bottom: 30px;
-      right: 25px;
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
-      border-top: 0.707px solid variables.$filterBlack;
-      border-right: 0.707px solid variables.$filterBlack;
-      transform: rotate(45deg);
+.slick-prev {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 25%;
+  -ms-transform: translate(0, -50%);
+  border: none;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.3s;
 
-      @include utility.tab {
-        top: 3em;
-        bottom: 3em;
-        right: 2.5em;
-        width: 2em;
-        height: 2em;
-      }
+  @include utility.tab {}
 
-      @include utility.sp {
-        width: 14px;
-        height: 14px;
-        top: 0;
-        right: 7px;
-        bottom: 0;
-        left: 0;
-      }
-    }
+  @include utility.sp {
+    top: 45%;
+    left: 15px;
   }
 }
