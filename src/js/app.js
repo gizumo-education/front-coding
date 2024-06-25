@@ -6,20 +6,26 @@ $(function() {
     $('.l-header__hamburger').toggleClass('active');
     $('.l-header__sp-nav').toggleClass('active');
 
-    if ($("body").css("overflow") === "hidden") {
-      $("body").css({ height: "", overflow: "" });
+    if ($('body').css('overflow') === 'hidden') {
+      $('body').css({ height: '', overflow: '' });
     } else {
-      $("body").css({ height: "100%", overflow: "hidden" });
+      $('body').css({ height: '100%', overflow: 'hidden' });
     }
   });
 
   $('a[href^="#"]').click(function () {
-    var speed = 400;
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $('body,html').animate({ scrollTop: position }, speed, 'swing');
+    const href = $(this).attr('href');
+    const target = $(href == '#' || href == '' ? 'html' : href);
+    const position = target.offset().top;
+    $('body,html').animate({ scrollTop: position - 80 }, 400, 'swing');
   });
+
+    $('.l-header__nav-items li a').click(function () {
+      $('.l-header__hamburger').toggleClass('active');
+      $('.l-header__sp-nav').removeClass('active');
+      $('body').css({ height: '', overflow: '' });
+    });
+
 
   $('.p-newinfo__list').slick({
     slidesToShow: 4,

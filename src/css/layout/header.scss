@@ -123,17 +123,19 @@
     z-index: 1000;
     right: -120%;
     top: .7rem;
-    transition: all .5s;
     
     &.active {
       right: 0;
       width: 100%;
+      transition: all .5s;
     }
   }
 
   &__nav-items {
-    padding: .58rem .6rem 2.34rem;
+    padding: .58rem .6rem;
     background-color: rgba(0, 0, 0, 0.7);
+    height: 100dvh;
+
 
     & li {
       margin-top: .38rem;
