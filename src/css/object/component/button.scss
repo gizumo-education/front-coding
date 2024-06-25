@@ -10,5 +10,9 @@ font-size: 18px;
 color: utility.$white;
 background-color: utility.$deepPink;
 border-radius: 50px;
+margin: 0 auto;
 cursor: pointer;
+@include utility.sp {
+    width: 1.7rem;
+}
 }
