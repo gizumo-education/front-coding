@@ -5,7 +5,7 @@
   background-image: url("../img/picture/keyvisual-banner.png");
   background-repeat: no-repeat;
   height: 483px;
-  padding: 59px 0px 0px 179px;
+  padding: 59px 0px 0px 0px;
   margin-top: 22px;
   flex-direction: column;
   margin-bottom: 75px;
@@ -14,14 +14,14 @@
 
   &__keyvisual-text {
     height: 168.51px;
-    margin-left: 652px;
+    margin-left: 827px;
   }
 
   &__keyvisual-title {
     width: 800px;
     height: 65px;
     margin-top: 40px;
-    margin-left: 430px;
+    margin-left: 612px;
   }
 
   &__box {
@@ -33,7 +33,7 @@
     text-align: center;
     padding: 10px;
     margin-top: 54px;
-    margin-left: 634px;
+    margin-left: 815px;
     font-size: 20px;
     color: #2EB6AA;
   }
