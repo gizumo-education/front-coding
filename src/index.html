@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <title>基本コーディング</title>
 </head>
 <body>
@@ -27,12 +30,21 @@
           <span></span>
           <span></span>
         </button>
+        <nav class="l-header__sp-nav">
+          <ul class="l-header__nav-items">
+            <li><a href="#keyvisual">トップ</a></li>
+            <li><a href="#newinfo">新着求人</a></li>
+            <li><a href="#features">4つの特徴</a></li>
+            <li><a href="#flow">転職までの流れ</a></li>
+            <li><a href="#contents">転職お役立ちコンテンツ</a></li>
+          </ul>
+        </nav>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="p-keyvisual">
+    <section class="p-keyvisual" id="keyvisual">
       <div class="p-keyvisual__inner">
         <img class="p-keyvisual__inner__pc" src="./img/picture/keyvisual-subtitle.png" alt="実績">
         <img class="p-keyvisual__inner__sp" src="./img/picture/keyvisual-subtitle-sp.png" alt="実績SP表示">
@@ -83,7 +95,7 @@
         </form>
       </div>
     </section>
-    <section class="p-newinfo">
+    <section class="p-newinfo" id="newinfo">
       <div class="l-inner">
         <h2 class="p-newinfo__title">新着求人</h2>
         <div class="p-newinfo__list">
@@ -112,57 +124,81 @@
                 <p class="is-sp">伊勢市駅 徒歩15分</p>
               </dd>
             </dl>
-            <button class="p-newinfo__back-button"></button>
-            <button class="p-newinfo__next-button is-sp"></button>
           </div>
-          <div class="p-newinfo__detail is-pc">
+          <div class="p-newinfo__detail">
             <a href=""><img src="./img/picture/info02.jpg" alt="求人写真"></a>
             <h3 class="p-newinfo__description">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h3>
             <dl class="p-newinfo__item">
               <dt>給与</dt>
-              <dd><img src="./img/icon/salary.png" alt="月給"></dd>
+              <dd>
+                <img src="./img/icon/salary.png" alt="月給">
+                <p class="is-sp">月給 148,000円～</p>
+              </dd>
             </dl>
             <dl class="p-newinfo__item">
               <dt>所在地</dt>
-              <dd><img src="./img/icon/place.png" alt="所在地"></dd>
+              <dd>
+                <img src="./img/icon/place.png" alt="所在地">
+                <p class="is-sp">三重県伊勢市</p>
+              </dd>
             </dl>
             <dl class="p-newinfo__item">
               <dt>最寄駅</dt>
-              <dd><img src="./img/icon/station.png" alt="最寄駅"></dd>
+              <dd>
+                <img src="./img/icon/station.png" alt="最寄駅">
+                <p class="is-sp">伊勢市駅 徒歩15分</p>
+              </dd>
             </dl>
           </div>
-          <div class="p-newinfo__detail is-pc">
+          <div class="p-newinfo__detail">
             <a href=""><img src="./img/picture/info03.jpg" alt="求人写真"></a>
             <h3 class="p-newinfo__description">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h3>
             <dl class="p-newinfo__item">
               <dt>給与</dt>
-              <dd><img src="./img/icon/salary.png" alt="月給"></dd>
+              <dd>
+                <img src="./img/icon/salary.png" alt="月給">
+                <p class="is-sp">月給 148,000円～</p>
+              </dd>
             </dl>
             <dl class="p-newinfo__item">
               <dt>所在地</dt>
-              <dd><img src="./img/icon/place.png" alt="所在地"></dd>
+              <dd>
+                <img src="./img/icon/place.png" alt="所在地">
+                <p class="is-sp">三重県伊勢市</p>
+              </dd>
             </dl>
             <dl class="p-newinfo__item">
               <dt>最寄駅</dt>
-              <dd><img src="./img/icon/station.png" alt="最寄駅"></dd>
+              <dd>
+                <img src="./img/icon/station.png" alt="最寄駅">
+                <p class="is-sp">伊勢市駅 徒歩15分</p>
+              </dd>
             </dl>
           </div>
-          <div class="p-newinfo__detail is-pc">
+          <div class="p-newinfo__detail">
             <a href=""><img src="./img/picture/info04.jpg" alt="求人写真"></a>
             <h3 class="p-newinfo__description">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h3>
             <dl class="p-newinfo__item">
               <dt>給与</dt>
-              <dd><img src="./img/icon/salary.png" alt="月給"></dd>
+              <dd>
+                <img src="./img/icon/salary.png" alt="月給">
+                <p class="is-sp">月給 148,000円～</p>
+              </dd>
             </dl>
             <dl class="p-newinfo__item">
               <dt>所在地</dt>
-              <dd><img src="./img/icon/place.png" alt="所在地"></dd>
+              <dd>
+                <img src="./img/icon/place.png" alt="所在地">
+                <p class="is-sp">三重県伊勢市</p>
+              </dd>
             </dl>
             <dl class="p-newinfo__item">
               <dt>最寄駅</dt>
-              <dd><img src="./img/icon/station.png" alt="最寄駅"></dd>
+              <dd>
+                <img src="./img/icon/station.png" alt="最寄駅">
+                <p class="is-sp">伊勢市駅 徒歩15分</p>
+              </dd>
             </dl>
-            <button class="p-newinfo__next-button is-pc"></button>
           </div>
         </div>
         <div class="p-newinfo__more-wrapper">
@@ -176,7 +212,7 @@
         <p>ギズジョブは完全無料の求職者向け求人サービスです。</p>
       </div>
     </div>
-    <section class="p-features">
+    <section class="p-features" id="features">
       <div class="l-inner">
         <h2 class="p-features__title">ギズジョブの4つの特徴</h2>
         <div class="p-features__wrapper">
@@ -202,7 +238,7 @@
         </div>
       </div>
     </section>
-    <section class="p-flow">
+    <section class="p-flow" id="flow">
       <div class="l-inner">
         <h2 class="p-flow__title">転職までの流れ</h2>
         <div class="p-flow__list">
@@ -242,7 +278,7 @@
         </div>
       </div>
     </section>
-    <section class="p-contents">
+    <section class="p-contents" id="contents">
       <div class="l-inner">
         <h2 class="p-contents__title">転職お役立ちコンテンツ</h2>
         <div class="p-contents__wrapper">
