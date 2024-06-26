@@ -347,49 +347,6 @@
   width: 100%;
 }
 
-.slick-slide .slick-active {
-  width: 280px !important; /* !importantを使用して優先度を上げる */
-}
-
-// .slick-slide {
-//   margin-left: 20px;
-// }
-// .slick-slide:first-child {
-//   margin-left: 0;
-// }
-// .slick-slide:last-child {
-//   margin-left: 0;
-// }
-// .slick-slide:last-child {
-//   display: none;
-// }
-
-// .slick-slide {
-//   margin-left: 20px;
-// }
-// .slick-slide:nth-child(4n + 1) {
-//   margin-left: 0;
-// }
-
-  // &:last-child {
-  //   margin-left: 0;
-  // }
-
-  // @include utility.sp {
-  //   margin-left: 0;
-  // }
-
-  // &:first-child {
-  //   margin-left: 0;
-
-    // @include utility.tab {}
-  // }
-// }
-
-// .slick-slide.slick-active {
-//   width: 275px !important;
-// }
-
 //MTG IMAGE//
 .l-inner__mtg {
   position: relative;
