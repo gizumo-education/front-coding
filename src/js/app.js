@@ -1,3 +1,4 @@
+
 const $ = require('jquery');
 require('slick-carousel');
 
@@ -29,6 +30,10 @@ $(function () {
 });
 
 //SPメニューを押下で該当セクションンにスムーススクロール
+import smoothscroll from "smoothscroll-polyfill";
+
+smoothscroll.polyfill();
+
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
@@ -37,9 +42,9 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     const adjust = 70;
     const offsetTop = window.pageYOffset + target.getBoundingClientRect().top - adjust;
 
-    window.scrollTo({
+    window.scroll({
       top: offsetTop,
-      behavior: 'smooth'
+      behavior: 'smooth',
     })
 
     if (document.getElementById('l-header__wrapper').classList.contains('l-header__close')) {
@@ -56,91 +61,27 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-//スライドショー
-// $(function () {
-//   console.log('成功２');
-//   $('.l-inner__job--container').slick({
-//     infinite: true,
-//       slidesToShow: 4,
-//       slidesToScroll: 1,
-//       arrows: true,
-//       appendArrows: $('.c-button__box'),
-//       prevArrow: '<div class="slide-arrow prev-arrow"></div>',
-//       nextArrow: '<div class="slide-arrow next-arrow"></div>'
-//   });
-// });
-
-
-//スライドショー
-//   $(document).ready(function () {
-//     console.log('成功');
-//     $(".u-container__position--job").slick({
-//       arrows: true
-//     });
-
 // スライドショー
-$('.l-inner__job--container').not('slick-initialized').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  infinite: true,
-  responsive: [{
-    breakpoint: 1199,
-    settings: {
-      slidesToShow: 4,
-      slidesToScroll: 1,
+$('.l-inner__job--container').
+  filter(function () { return !$(this).hasClass('slick-initialized'); }).slick({
+
+    infinite: true,
+    slidesToShow: 4,
+    respondTo: 'slider',
+    slidesToScroll: 1,
+
+    responsive: [{
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      },
     },
-  },
-  {
-    breakpoint: 767,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+      },
     },
-  },
-  ]
-});
-
-// $(function() {
-//   $('body *').removeAttr('style');
-// });
-
-// $('body *').removeAttr('width');
-// 		$('body *').removeAttr('height');
-// $(".slick-slide .slick-current .slick-active").removeAttr("width");
-// slick-slide slick-current slick-active
-
-// $(function() {
-//   let element = document.querySelector('div.slick-slide.slick-active');
-//   element.style.width = null;
-// });
-
-// $(function() {
-// element.style.width = '280px';
-//     let element = document.querySelector('div.slick-slide.slick-active');
-//     element.style.removeProperty('width');
-// });
-
-$(function () {
-  // let element = document.querySelector('div.slick-slide.slick-active');
-  // element.style.width = '280px'; // 幅を280pxに設定
-  // element.style.removeProperty('width'); // 幅のプロパティを削除
-});
-// $(function() {
-//   let element = document.querySelector('div.slick-active');
-//   element.style.width = '280px'; // 幅を280pxに設定
-// element.style.removeProperty('width'); // 幅のプロパティを削除
-// });
-
-$(function () {
-  let elements = document.querySelectorAll('div.slick-slide.slick-active');
-  elements.forEach(function (element) {
-    element.style.width = '280px';
+    ]
   });
-});
-// $(function() {
-//   let elements = document.querySelectorAll('div.slick-slide.slick-current.slick-active');
-//   elements.forEach(function(elements) {
-//     elements.style.width = '400px';
-//   });
-// });
-// });

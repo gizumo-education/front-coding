@@ -88,7 +88,7 @@
     height: 554px;
     display: flex;
     flex-direction: column;
-    gap: 38px;
+    // gap: 38px;
   }
 
   &__list {
@@ -98,6 +98,7 @@
     font-weight: 700;
     line-height: 22px;
     color: variables.$white;
+    width: 100vw;
   }
 
   &__overflow {
@@ -329,4 +330,8 @@
   right: 0;
   opacity: 1;
   background: rgba(0, 0, 0, 0.7);
+}
+
+.l-header__menu li:not(:first-of-type) .l-header__list {
+  margin-top: 38px;
 }
