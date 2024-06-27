@@ -85,3 +85,11 @@ $('.l-inner__job--container').
     },
     ]
   });
+
+  // メンターさんに質問
+  $(function () {
+    let elements = document.querySelectorAll('div.slick-slide.slick-active');
+    elements.forEach(function (element) {
+    element.style.width = '280px';
+    });
+    });

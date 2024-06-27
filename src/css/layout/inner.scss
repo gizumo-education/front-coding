@@ -347,6 +347,14 @@
   width: 100%;
 }
 
+.slick-slide {
+  margin-left: 20px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
 //MTG IMAGE//
 .l-inner__mtg {
   position: relative;
