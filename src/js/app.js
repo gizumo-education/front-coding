@@ -86,10 +86,10 @@ $('.l-inner__job--container').
     ]
   });
 
-  // メンターさんに質問
+  // PC_新着求人のwidth
   $(function () {
-    let elements = document.querySelectorAll('div.slick-slide.slick-active');
-    elements.forEach(function (element) {
-    element.style.width = '280px';
+    let elementsWidth = document.querySelectorAll('div.slick-slide.slick-current.slick-active');
+    elementsWidth.forEach(function (element) {
+    element.style.width = '300px';
     });
     });

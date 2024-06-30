@@ -53,19 +53,6 @@
   }
 }
 
-.u-container__position--job {
-  margin-left: 20px;
-
-  @include tab {
-    margin-left: 2em;
-  }
-
-  &:first-child {
-    margin-left: 0;
-  }
-}
-
-
 //お仕事検索　select//
 .u-select__position1,
 .u-select__position2,

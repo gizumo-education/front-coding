@@ -136,7 +136,7 @@
   transform: rotate(180deg);
 
   @include utility.tab {
-    width: 5%;
+    width: 4.5%;
     height: 17%;
   }
 
@@ -164,7 +164,8 @@
 
 
   @include utility.tab {
-    width: 5%;
+    right: 0.15rem;
+    width: 4.5%;
     height: 17%;
   }
 
@@ -193,11 +194,10 @@
     transform: rotate(225deg);
 
     @include utility.tab {
-      top: 1em;
-      bottom: 1em;
-      right: 0.4em;
-      width: 1em;
-      height: 1em;
+      top: 0.17rem;
+      right: 0.1rem;
+      width: 0.2rem;
+      height: 0.2rem;
     }
 
     @include utility.sp {
@@ -231,7 +231,7 @@
   border-radius: 10px;
 
   @include utility.tab {
-    width: 100%;
+    max-width: 3rem;
   }
 
   @include utility.sp {
@@ -244,13 +244,16 @@
   line-height: 0;
   position: absolute;
   top: 25%;
+  right:15px;
   -ms-transform: translate(0, -50%);
   border: none;
   outline: none;
   opacity: 0.7;
   transition: opacity 0.3s;
 
-  @include utility.tab {}
+  @include utility.tab {
+    right: 0.15rem
+  }
 
   @include utility.sp {
     top: 45%;
@@ -290,11 +293,10 @@
     transform: rotate(45deg);
 
     @include utility.tab {
-      top: 1em;
-      bottom: 1em;
-      left: 0.4em;
-      width: 1em;
-      height: 1em;
+      top: 0.17rem;
+      left: 0.1rem;
+      width: 0.2rem;
+      height: 0.2rem;
     }
 
     @include utility.sp {
@@ -313,6 +315,7 @@
   line-height: 0;
   position: absolute;
   top: 25%;
+  // left: 10px;
   -ms-transform: translate(0, -50%);
   border: none;
   outline: none;
