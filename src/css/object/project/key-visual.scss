@@ -14,26 +14,24 @@
 
   &__keyvisual-text {
     height: 168.51px;
-    margin-left: 827px;
+    margin-left: 404px;
   }
 
   &__keyvisual-title {
     width: 800px;
     height: 65px;
     margin-top: 40px;
-    margin-left: 612px;
+    margin-left: 400px;
   }
 
   &__box {
     width:384px;
-    height: 65px;
     border-radius: 10px 10px 10px 10px;
     border: solid 3px #2EB6AA;
     background-color: #FFFFFF;
-    text-align: center;
     padding: 10px;
     margin-top: 54px;
-    margin-left: 815px;
+    margin-left: 600px;
     font-size: 20px;
     color: #2EB6AA;
   }
@@ -42,6 +40,10 @@
     font-size: 39px;
     color: #2EB6AA;
     font-weight: bold;
+  }
+
+  &__titles {
+    text-align: center;
   }
 
 }
