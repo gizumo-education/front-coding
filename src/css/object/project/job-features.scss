@@ -3,17 +3,14 @@
 .p-features {
   height: 800px;
   background-color: #FFFFFF;
-}
 
-.features-title {
+  &__features-title {
   font-size: 25px;
   padding-top: 108px;
   text-align: center;
   font-weight: bold;
-}
-
-
-.fome-box{
+  }
+  &__fome-box{
   border-radius: 40px;
   width: 570px;
   height: 180px;
@@ -21,4 +18,11 @@
   padding:2em;
   border-radius:30px;
   background-color: #F7D2DB;
+  }
+ 
+  &__box-text{
+    text-align: center;
+    
+  }
+
 }
