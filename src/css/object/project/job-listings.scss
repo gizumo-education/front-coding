@@ -8,7 +8,6 @@
   &__new-listings {
     font-size: 25px;
     padding-top: 67px;
-    padding-left: 210px;
   }
   
   &__imgs {
@@ -20,13 +19,9 @@
     justify-content: center;
     display: flex;
     margin-bottom: 43px;
+    gap: 17px;
   }
 
-  &__title-option {
-    display: flex;
-    margin-left: 320px;
-    margin-right: 120px;
-  }
 
   &__listings-title {
     margin-top: 11px;
