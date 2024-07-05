@@ -1,0 +1,25 @@
+@use '../../object/utility/utility.scss';
+
+.p-meeting {
+  position: relative;
+  background: #000000;
+
+  &__meeting-imge {
+    filter: brightness(50%);
+    background-image: url("../img/picture/meeting.png");
+    height: 300px;
+  }
+
+  &__meeting-title {
+    position: absolute;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 2.4;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+}
+
