@@ -1,0 +1,58 @@
+@use '../../object/utility/utility.scss';
+
+.p-jobchange {
+  height: 530px;
+
+ &__flow {
+  display: flex;
+  justify-content: space-between;
+ }
+  
+  &__job-flow {
+   width: 280px;
+   height: 360px;
+   border: solid 2.27px #DE5579;
+   border-radius: 10px;
+   margin-top: 48px;
+   text-align: center;
+   position: relative;
+  }
+
+  &__job-flow::after {
+   content: "";
+   margin: auto;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 276px; /* 要素の左からの距離 */
+   width: 0;
+   height: 20px;
+   border-top: 20px solid transparent;
+   border-bottom: 20px solid transparent;
+   border-left: 21px solid #DE5579;
+  }
+
+  &__job-flow:nth-child(n+4)::after {
+    display: none;
+  }
+
+  &__step {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   display: flex;
+   align-items:center;
+   justify-content:center;
+   background-color: #DE5579;
+   font-weight: bold;
+   font-size: 16px;
+   color: #FFFFFF;
+   text-align: center;
+  }
+
+  &__intext {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+}
+
