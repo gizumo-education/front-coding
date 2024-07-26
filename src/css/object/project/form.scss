@@ -12,15 +12,8 @@
   &__flex {
     display: flex;
     justify-content: center;
+    gap: 15px;
     margin-top: 26px;
-
-    & > div {
-      margin-left: 15px;
-
-      &:first-child {
-        margin-left: 0px;
-      }
-    }
   }
 
   &__title {
@@ -81,7 +74,6 @@
   &__search {
     display: flex;
     justify-content: center;
-    margin-left: 15px;
     width: 140px;
     height: 60px;
     background-color: utility.$bgPink;

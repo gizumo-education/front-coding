@@ -2,12 +2,11 @@
 
 .p-news {
   background-color: utility.$bgLightBlue;
-  margin: 60px auto 0;
+  margin-top: 60px;
   height: 636px;
 
   &__title {
     padding-top: 64px;
-    padding-left: 210px;
     font-size: 25px;
     font-family: Inter;
     height: 30px;
@@ -17,16 +16,11 @@
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    gap: 20px;
   }
 
   &__recruit {
     width: 280px;
-    margin-left: 20px;
-    
-
-    &:first-child {
-      margin-left: 0px;
-    }
 
     &__nurse {
       height: 200px;

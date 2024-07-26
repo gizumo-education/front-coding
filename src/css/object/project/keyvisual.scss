@@ -1,11 +1,9 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual {
-  &__area {
-    background-color: utility.$bgDarkBlue;
-    height: auto;
-    text-align: center;
-  }
+  background-color: utility.$bgDarkBlue;
+  height: auto;
+  text-align: center;
 
   &__picture {
     position: relative;
