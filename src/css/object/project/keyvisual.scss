@@ -1,2 +1,79 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+.p-keyvisual {
+  &__area {
+    background-color: utility.$bgDarkBlue;
+    height: auto;
+    text-align: center;
+  }
+
+  &__picture {
+    position: relative;
+    width: 1262px;
+    height: 500px;
+  }
+
+  &__leaf {
+    &__left {
+    position: absolute;
+    top: 174.96px;
+    left: 830px;
+    }
+    
+    &__right {
+    position: absolute;
+    top: 174.96px;
+    left: 1126.91px;
+    }
+  }
+
+  &__symble {
+    position: absolute;
+    top: 185px;
+    left: 1101.82px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 191px;
+    left: 887.6px;
+  }
+
+  &__rank {
+    position: absolute;
+    top: 202px;
+    left: 885.73px;
+  }
+
+  &__instruction {
+    position: absolute;
+    top: 313px;
+    left: 996.82px;
+  }
+
+  &__title {
+    position: absolute;
+    top: 365px;
+    left: 607px;
+  }
+
+
+  &__count {
+    color: utility.$green;
+    position: absolute;
+    top: 484px;
+    width: 391px;
+    height: 69px;
+    background-color: utility.$white;
+    border: 2.3px solid utility.$green;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 634.5px;
+    line-height: 69px;
+
+    & > span {
+      font-weight: utility.$bold;
+      font-size: 40px;
+    }
+  }
+}
