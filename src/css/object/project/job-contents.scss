@@ -1,15 +1,15 @@
 @use '../../object/utility/utility.scss';
 
 .p-jobcontents {
-  height: 450px;
- 
+  height: 462px;
+  text-align: center;
+  
 
  &__main-contents {
-  margin-top: 47px;
+  margin: 49px 0 81px 0;
   position: relative;
   display: flex;
   gap: 15px;
-  margin-bottom: 70px;
  }
 
  &__manual {
