@@ -10,7 +10,7 @@
     display: grid;
     gap: 35px;
     grid-template-columns: 1fr 1fr;
-    margin-top: 52px;
+    margin-top: 60px;
   }
 
   &__title {
@@ -18,12 +18,11 @@
     color: #DE5579;
     text-align: center;
     font-weight: bold;
-    margin-top: 42px;
   }
 
   &__fome-box {
   width: 570px;
-  height: 180px;
+  padding: 40px 0;
   border-radius:10px;
   background-color: #F7D2DB;
   }
@@ -32,7 +31,7 @@
     font-size: 14px;
     text-align: center;
     line-height: 1.5;
-    margin-top: 35px;
+    margin-top: 34px;
   }
 
 
