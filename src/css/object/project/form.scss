@@ -1,7 +1,7 @@
 @use '../../object/utility/utility.scss';
 
 .p-form {
-  margin-top: 60px;
+  padding: 60px 0 60px;
 
   & > div {
     background-color: utility.$bgBlue;

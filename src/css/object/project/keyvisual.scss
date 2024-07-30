@@ -2,7 +2,7 @@
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual {
   background-color: utility.$bgDarkBlue;
-  height: auto;
+  height: 500px;
   text-align: center;
 
   &__picture {
@@ -11,42 +11,10 @@
     height: 500px;
   }
 
-  &__leaf {
-    &__left {
-    position: absolute;
-    top: 174.96px;
-    left: 830px;
-    }
-    
-    &__right {
-    position: absolute;
-    top: 174.96px;
-    left: 1126.91px;
-    }
-  }
-
-  &__symble {
-    position: absolute;
-    top: 185px;
-    left: 1101.82px;
-  }
-
-  &__text {
-    position: absolute;
-    top: 191px;
-    left: 887.6px;
-  }
-
   &__rank {
     position: absolute;
-    top: 202px;
-    left: 885.73px;
-  }
-
-  &__instruction {
-    position: absolute;
-    top: 313px;
-    left: 996.82px;
+    top: 156.49px;
+    left: 830px;
   }
 
   &__title {
@@ -57,8 +25,8 @@
 
 
   &__count {
-    color: utility.$green;
     position: absolute;
+    color: utility.$green;
     top: 484px;
     left: 809.5px;
     width: 391px;

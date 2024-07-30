@@ -2,7 +2,6 @@
 
 .p-news {
   background-color: utility.$bgLightBlue;
-  margin-top: 60px;
   height: 636px;
 
   &__title {
@@ -57,20 +56,7 @@
     }
   }
 
-  &__button {
-    width: 360px;
-    height: 60px;
-    margin-top: 50px;
-    background-color: utility.$bgPink;
+  &__button__area {
     text-align: center;
-    font-weight: utility.$bold;
-    color: utility.$white;
-    font-size: 18px;
-    line-height: 60px;
-    border-radius: 9999px;
-
-    &__wapper {
-      text-align: center;
-    }
   }
 }
