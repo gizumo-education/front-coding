@@ -1,0 +1,60 @@
+@use '../../object/utility/utility.scss';
+
+.p-news {
+  background-color: utility.$bgLightBlue;
+  padding: 64px 0 67px;
+
+  &__title {
+    font-size: 25px;
+    font-family: Inter;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  &__recruit {
+    width: 280px;
+
+    &__nurse {
+      height: 200px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &__flex {
+      display: flex;
+      margin-top: 4px;
+
+      &:first-child {
+        margin-top: 0px;
+      }
+    }
+
+    &__box {
+      width: 60px;
+      height: 21px;
+      background-color: utility.$bgLightpink;
+      font-size: 14px;
+      text-align: center;
+      padding: 3px 0;
+    }
+
+    &__detail {
+      font-family: Inter;
+      font-size: 14px;
+      margin-left: 10px;
+      padding: 3px 0;
+    }
+  }
+
+  &__button__area {
+    text-align: center;
+  }
+}
