@@ -3,32 +3,30 @@
 .p-keyvisual {
   background-color: utility.$bgDarkBlue;
   height: 500px;
-  text-align: center;
+  width: auto;
 
   &__picture {
-    position: relative;
-    width: 1262px;
+    background-image: url("../img/picture/keyvisual-picture.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
     height: 500px;
+    width: 1262px;
+    background-position: center;
+    margin: 0 auto;
+    padding: 56.49px 30px 0 432px;
+    text-align: center;
   }
 
-  &__rank {
-    position: absolute;
-    top: 156.49px;
-    left: 830px;
-  }
 
   &__title {
-    position: absolute;
-    top: 365px;
-    left: 607px;
+    margin-top: 40px;
   }
 
 
   &__count {
-    position: absolute;
+    margin: 54px auto 0;
+    position: relative;
     color: utility.$green;
-    top: 484px;
-    left: 809.5px;
     width: 391px;
     height: 69px;
     background-color: utility.$white;
@@ -36,6 +34,7 @@
     border-radius: 10px;
     font-size: 20px;
     line-height: 69px;
+    text-align: center;
 
     & > span {
       font-weight: utility.$bold;

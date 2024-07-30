@@ -2,19 +2,17 @@
 
 .p-news {
   background-color: utility.$bgLightBlue;
-  height: 636px;
+  padding: 64px 0 67px;
 
   &__title {
-    padding-top: 64px;
     font-size: 25px;
     font-family: Inter;
-    height: 30px;
   }
 
   &__flex {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    margin-top: 50px;
     gap: 20px;
   }
 
