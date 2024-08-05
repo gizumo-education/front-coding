@@ -3,6 +3,10 @@
 .p-form {
   padding: 60px 0 60px;
 
+  &.is-second {
+    padding: 150px 0 200px
+  }
+
   & > div {
     background-color: utility.$bgBlue;
     height: 240px;
@@ -53,7 +57,7 @@
       border: 1px solid utility.$pink;
       border-radius: 10px;
       background-color: utility.$white;
-      color: #000000;
+      color: utility.$black;
       font-size: 18px;
       cursor: pointer;
     }

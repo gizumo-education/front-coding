@@ -2,4 +2,54 @@
 
 .p-contents {
   padding-top: 105px;
+
+  &__title {
+    font-weight: utility.$bold;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  &__flex {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__block {
+    position: relative;
+    background-color: utility.$black;
+    width: 380px;
+    height: 240px;
+    border-radius: 10px;
+  }
+
+  &__picture {
+    opacity: 50%;
+    border-radius: 10px;
+  }
+
+  &__message {
+    color: utility.$white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: utility.$bold;
+    font-size: 24px;
+  }
+
+  &__detail {
+    margin-top: 44px;
+    font-size: 16px;
+  }
+
+  &__button__area {
+    text-align: center;
+    margin-top: 80px;
+  }
 }
