@@ -20,6 +20,7 @@
     height: 180px;
     width: 570px;
     background-color: utility.$bgPalepink;
+    border-radius: 10px;
   }
 
   &__text {
@@ -31,8 +32,18 @@
   }
 
   &__detail {
-    font-size: 14px;
-    margin-top: 36px;
-    text-align: center;
+    height: 116px;
+    position: relative;
+
+    &__text {
+      position: absolute;
+      font-size: 14px;
+      line-height: 20.27px;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      width:100%;
+      text-align: center;
+    }
   }
 }

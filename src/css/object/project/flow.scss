@@ -11,28 +11,28 @@
 
   &__flex {
     display: flex;
+    align-items: center;
     margin-top: 50px;
   }
 
   &__block {
+    padding: 7.73px 0 42px;
     width: 280px;
-    height: 360px;
     border: 2.27px solid utility.$bgPink;
     border-radius: 10px;
   }
 
   &__image {
-    height: 160px;
-    margin: auto;
+    height: 172.27px;
     position: relative;
   }
 
   &__circle {
-    padding: 7.73px 0 0 7.73px;
+    margin-left: 7.73px;
   }
 
   &__icon {
-    margin-top: 20px;
+    margin-top: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -40,22 +40,44 @@
   }
 
   &__text {
-    margin-top: 20px;
     height: 60px;
-    font-weight: utility.$bold;
-    font-size: 24px;
-    text-align: center;
+    position: relative;
+
+    &__description {
+      position: absolute;
+      width: 216px;
+      font-weight: utility.$bold;
+      font-size: 24px;
+      line-height: 30px;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      text-align: center;
+    }
   }
 
   &__detail {
-    margin: 18px auto;
-    width: 237px;
-    font-size: 14px;
+    margin-top: 14.1px;
+    height: 60px;
+    position: relative;
+
+    &__text {
+      width: 237px;
+      position: absolute;
+      font-size: 14px;
+      line-height: 20.27px;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+    }
   }
 
   &__triangle {
+    width: 20px;
     height: 40px;
-    margin: auto 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid utility.$bgPink;
   }
 }
 
