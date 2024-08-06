@@ -7,9 +7,9 @@
     padding: 150px 0 200px
   }
 
-  & > div {
+  &__area {
+    padding: 40px 0;
     background-color: utility.$bgBlue;
-    height: 240px;
     border-radius: 10px;
   }
 
@@ -22,7 +22,6 @@
 
   &__title {
     font-weight: utility.$bold;
-    padding-top: 40px;
     font-size: 25px;
     text-align: center;
   }
