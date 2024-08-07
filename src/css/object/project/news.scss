@@ -7,12 +7,13 @@
   &__title {
     font-size: 25px;
     font-family: Inter;
+    line-height: 30.26px;
   }
 
   &__flex {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 25px;
     gap: 20px;
   }
 
@@ -24,6 +25,7 @@
     }
 
     &__text {
+      margin-top: 8.08px;
       font-size: 16px;
       line-height: 22px;
     }
@@ -32,8 +34,8 @@
       display: flex;
       margin-top: 4px;
 
-      &:first-child {
-        margin-top: 0px;
+      &.is-salary {
+        margin-top: 6.92px;
       }
     }
 
@@ -56,5 +58,6 @@
 
   &__button__area {
     text-align: center;
+    margin-top: 59px;
   }
 }
