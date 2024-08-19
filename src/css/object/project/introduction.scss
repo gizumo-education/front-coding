@@ -1,29 +1,40 @@
 @use '../../object/utility/utility.scss';
 
 .p-introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background-color: utility.$black;
-  text-align: center;
 
   &__picture {
+    height: 300px;
     opacity: 50%;
+    @include utility.sp {
+      height: .75rem;
+    }
   }
 
   &__text {
     & > span {
       font-weight: utility.$regular;
     }
+    &:last-child {
+      margin-top: .02rem;
+    }
   }
 
-  &__messege {
+  &__message {
     color: utility.$white;
     font-weight: utility.$bold;
     font-size: 25px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     line-height: 60px;
     text-align: center;
+    @include utility.sp {
+      font-weight: utility.$regular;
+      font-size: .14rem;
+      line-height: .2027rem;
+    }
   }
 }

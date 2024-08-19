@@ -10,4 +10,7 @@
   font-size: 18px;
   line-height: 60px;
   border-radius: 9999px;
+  @include utility.sp {
+    width: 3.7rem;
+  }
 }
