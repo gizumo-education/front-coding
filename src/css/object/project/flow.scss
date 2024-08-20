@@ -2,6 +2,9 @@
 
 .p-flow {
   padding-top: 105px;
+  @include utility.sp {
+  padding-top: 60px;
+}
 
   &__title {
     font-weight: utility.$bold;
@@ -9,26 +12,50 @@
     text-align: center;
   }
 
-  &__flex {
+  &__area {
     display: flex;
     align-items: center;
     margin-top: 50px;
+    @include utility.sp {
+      display: grid;
+      justify-items: center;
+      margin-top: .34rem;
+    }
   }
 
   &__block {
-    padding: 7.73px 0 42px;
+    padding: 7.73px 0 39.37px;
     width: 280px;
     border: 2.27px solid utility.$bgPink;
     border-radius: 10px;
+    @include utility.sp {
+      margin-top: .1rem;
+      padding: .0773rem 0 .1873rem;
+
+      &:first-child {
+        margin-top: 0rem;
+      }
+
+      &.is-star {
+        padding: .0773rem 0 .2873rem;
+      }
+    }
   }
 
   &__image {
     height: 172.27px;
     position: relative;
+    @include utility.sp {
+      height: 1.4427rem;
+    }
   }
 
   &__circle {
     margin-left: 7.73px;
+    @include utility.sp {
+      width: .45rem;
+      height: .45rem;
+    }
   }
 
   &__icon {
@@ -37,50 +64,115 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    &.is-note {
+      width: 102.29px;
+      height: 100px;
+      @include utility.sp {
+        width: .7672rem;
+        height: .75rem;
+      }
+    }
+
+    &.is-glass {
+      width: 79.95px;
+      height: 79.95px;
+      @include utility.sp {
+        width: .7495rem;
+        height: .7495rem;
+      }
+    }
+
+    &.is-mail {
+      width: 106.76px;
+      height: 100px;
+      @include utility.sp {
+        width: .8012rem;
+        height: .75rem;
+      }
+    }
+
+    &.is-star {
+      width: 107.97px;
+      height: 110.13px;
+      @include utility.sp {
+        width: .7357rem;
+        height: .75rem;
+        margin-top: .12rem;
+      }
+    }
   }
 
   &__text {
     height: 60px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include utility.sp {
+      height: .29rem;
+      
+      &.is-star {
+        height: .2rem;
+      }
+    }
+
+    &__return {
+      @include utility.sp {
+        display: none;
+      }
+    }
 
     &__description {
-      position: absolute;
-      width: 216px;
       font-weight: utility.$bold;
       font-size: 24px;
       line-height: 30px;
-      top:50%;
-      left:50%;
-      transform:translate(-50%,-50%);
       text-align: center;
+      @include utility.sp {
+        font-size: .2rem;
+        line-height: .2rem;
+      }
     }
   }
 
   &__detail {
-    margin-top: 14.1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17.5px;
     height: 60px;
-    position: relative;
+    @include utility.sp {
+      height: .8rem;
+      margin-top: .1rem;
+    }
 
     &__text {
-      width: 237px;
-      position: absolute;
+      width: 90%;
+      max-width: 237px;
       font-size: 14px;
-      line-height: 20.27px;
-      top:50%;
-      left:50%;
-      transform:translate(-50%,-50%);
+      line-height: 20px;
+      @include utility.sp {
+        max-width: 2.4rem;
+      }
+    }
+
+    &__return__sp {
+      display: none;
+      @include utility.sp {
+        display: block;
+      }
     }
   }
 
   &__triangle {
     width: 20px;
     height: 40px;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid utility.$bgPink;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    background-color: utility.$bgPink;
+    @include utility.sp {
+      width: .4rem;
+      height: .2rem;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      margin-top: .09rem;
+    }
   }
-}
-
-.is-button__contents {
-  width: 420px;
 }

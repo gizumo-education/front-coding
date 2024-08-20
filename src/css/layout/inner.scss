@@ -18,4 +18,10 @@
       flex-direction: column;
     }
   }
+  &.is-main {
+    @include utility.sp {
+      width: 3.7rem;
+      flex-direction: column;
+    }
+  }
 }
