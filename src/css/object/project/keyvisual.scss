@@ -12,15 +12,15 @@
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    background-image: url("../img/picture/keyvisual-picture-pc.jpg");
-    background-size: auto;
-    background-repeat: no-repeat;
     height: 500px;
     width: 100%;
     max-width: 1200px;
-    background-position: center;
     margin: 0 auto;
     padding-top: 56.49px;
+    background-image: url("../img/picture/keyvisual-picture-pc.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     @include utility.sp {
       height: 2.7rem;

@@ -17,9 +17,13 @@
     }
   }
 
-  &__flex {
+  &__swiper {
+    position: relative;
+    width: 100%;
+  }
+
+  &__wrapper {
     display: flex;
-    justify-content: center;
     margin-top: 25px;
     gap: 20px;
     @include utility.sp {
@@ -32,10 +36,6 @@
     width: 280px;
     @include utility.sp {
       width: 100%;
-      display: none;
-      &:first-child {
-        display: block;
-      }
     }
 
     &__nurse {
@@ -43,6 +43,8 @@
       @include utility.sp {
         width: 100%;
         height: 2.08rem;
+        object-fit: cover;
+        border-radius: .1rem;
       }
     }
 
@@ -77,17 +79,17 @@
     &__box {
       width: 60px;
       height: 21px;
+      padding: 3px 0;
       background-color: utility.$bgLightpink;
       font-size: 14px;
       text-align: center;
-      padding: 3px 0;
     }
 
     &__detail {
-      font-family: Inter;
-      font-size: 14px;
       margin-left: 10px;
       padding: 3px 0;
+      font-family: Inter;
+      font-size: 14px;
       @include utility.sp {
         margin-left: .2106rem;
         font-family: 'Noto Sans JP', sans-serif;
@@ -95,9 +97,97 @@
     }
   }
 
+  .slick-prev {
+    z-index: 5;
+    left: -14px;
+  }
+  .slick-next {
+    z-index: 5;
+    right: -14px;
+  }
+  
+  .slick-prev::before {
+    content: "";
+    display: inline-block;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    border-bottom: solid 1px utility.$black;
+    border-left: solid 1px utility.$black;
+    transform:rotate(45deg);
+    position: absolute;
+    bottom: 64px;
+    left: 42px;
+    @include utility.sp {
+      width: 0.1rem;
+      height: 0.1rem;
+      border-bottom: solid 0.01rem utility.$black;
+      border-left: solid 0.01rem utility.$black;
+      top: 0.1rem;
+      left: 0.35rem;
+    }
+  }
+  .slick-prev::after {
+    content:"";
+    width: 60px;
+    height: 60px;
+    background:utility.$white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 47px;
+    left: 17px;
+    opacity: .7;
+    @include utility.sp {
+      width: 0.42rem;
+      height: 0.42rem;
+      top: -0.07rem;
+      left: 0.15rem;
+    }
+  }
+  
+  .slick-next::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-top: solid 1px utility.$black;
+    border-right: solid 1px utility.$black;
+    transform:rotate(45deg);
+    position: absolute;
+    bottom: 64px;
+    right: 40px;
+    z-index: 2;
+    @include utility.sp {
+      width: 0.1rem;
+      height: 0.1rem;
+      border-top: solid 0.01rem utility.$black;
+      border-right: solid 0.01rem utility.$black;
+      top: 0.1rem;
+      right: 0.35rem;
+    }
+  }
+  
+  .slick-next::after {
+      content:"";
+      width: 60px;
+      height: 60px;
+      background:utility.$white;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 47px;
+      right: 17px;
+      opacity: .7;
+      @include utility.sp {
+        width: 0.42rem;
+        height: 0.42rem;
+        top: -0.07rem;
+        right: 0.15rem;
+      }
+  }
+
   &__button__area {
-    text-align: center;
     margin-top: 59px;
+    text-align: center;
     @include utility.sp {
       margin-top: .44rem;
     }

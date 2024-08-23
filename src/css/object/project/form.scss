@@ -15,8 +15,8 @@
 
   &__area {
     padding: 40px;
-    background-color: utility.$bgBlue;
     border-radius: 10px;
+    background-color: utility.$bgBlue;
     @include utility.sp {
       padding: .15rem .25rem .2rem;
     }
@@ -70,10 +70,10 @@
       right: 15px;
       width: 20px;
       height: 10px;
-      background-color: utility.$pink;
       clip-path: polygon(0 0, 100% 0, 50% 100%);
-      content: '';
+      background-color: utility.$pink;
       pointer-events: none;
+      content: '';
       @include utility.sp {
         right: .08rem;
         width: .13rem;
@@ -82,7 +82,6 @@
     }
 
     & > select {
-      appearance: none;
       width: 100%;
       height: 60px;
       padding: .4em .8em .4em .8em;
@@ -91,6 +90,7 @@
       background-color: utility.$white;
       color: utility.$black;
       font-size: 18px;
+      appearance: none;
       cursor: pointer;
       @include utility.sp {
         width: 1rem;

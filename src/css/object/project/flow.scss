@@ -3,7 +3,7 @@
 .p-flow {
   padding-top: 105px;
   @include utility.sp {
-  padding-top: 60px;
+  padding-top: .6rem;
 }
 
   &__title {

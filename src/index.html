@@ -7,6 +7,8 @@
   <title>医療事務求人を探すならギズジョブ</title>
   <meta name="description" content="ギズジョブは完全無料の求職者向け求人サービスです">
   <meta name="keyword" content="ギズジョブ, ギズジョブ医療事務, 医療事務求人, 医療事務">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
   <header class="l-header">
@@ -30,6 +32,13 @@
           <span></span>
         </button>
       </div>
+      <nav class="l-header__nav-menu">
+        <a href="#">トップ</a>
+        <a href="#p-news">新着求人</a>
+        <a href="#p-feature">4つの特徴</a>
+        <a href="#p-flow">転職までの流れ</a>
+        <a href="#p-contents">転職お役立ちコンテンツ</a>
+      </nav>
     </nav>
   </header>
 
@@ -93,75 +102,76 @@
       </div>
     </section>
 
-    <section class="p-news">
+    <section class="p-news" id="p-news">
       <div class="l-inner is-main">
         <h3 class="p-news__title">新着求人</h3>
-        <div class="p-news__flex">
-          <div class="p-news__recruit">
-            <img class="p-news__recruit__nurse is-pc" src="./img/picture/news-nurse01-pc.jpg" alt="看護師1">
-            <img class="p-news__recruit__nurse is-sp" src="./img/picture/news-nurse01-sp.jpg" alt="看護師1">
-            <p class="p-news__recruit__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-            <dl class="p-news__recruit__flex is-salary">
-              <dt class="p-news__recruit__box">給与</dt>
-              <dd class="p-news__recruit__detail">月給 148,000円～</dd>
-            </dl>
-            <dl class="p-news__recruit__flex">
-              <dt class="p-news__recruit__box">所在地</dt>
-              <dd class="p-news__recruit__detail">三重県伊勢市</dd>
-            </dl>
-            <dl class="p-news__recruit__flex is-station">
-              <dt class="p-news__recruit__box">最寄駅</dt>
-              <dd class="p-news__recruit__detail">伊勢市駅 徒歩15分</dd>
-            </dl>
-          </div>
-          <div class="p-news__recruit">
-            <img class="p-news__recruit__nurse is-pc" src="./img/picture/news-nurse02-pc.jpg" alt="看護師2">
-            <p class="p-news__recruit__text">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
-            <dl class="p-news__recruit__flex is-salary">
-              <dt class="p-news__recruit__box">給与</dt>
-              <dd class="p-news__recruit__detail">月給 148,000円～</dd>
-            </dl>
-            <dl class="p-news__recruit__flex">
-              <dt class="p-news__recruit__box">所在地</dt>
-              <dd class="p-news__recruit__detail">三重県伊勢市</dd>
-            </dl>
-            <dl class="p-news__recruit__flex is-station">
-              <dt class="p-news__recruit__box">最寄駅</dt>
-              <dd class="p-news__recruit__detail">伊勢市駅 徒歩15分</dd>
-            </dl>
-          </div>
-          <div class="p-news__recruit">
-            <img class="p-news__recruit__nurse is-pc" src="./img/picture/news-nurse03-pc.jpg" alt="看護師3">
-            <p class="p-news__recruit__text">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
-            <dl class="p-news__recruit__flex is-salary">
-              <dt class="p-news__recruit__box">給与</dt>
-              <dd class="p-news__recruit__detail">月給 148,000円～</dd>
-            </dl>
-            <dl class="p-news__recruit__flex">
-              <dt class="p-news__recruit__box">所在地</dt>
-              <dd class="p-news__recruit__detail">三重県伊勢市</dd>
-            </dl>
-            <dl class="p-news__recruit__flex is-station">
-              <dt class="p-news__recruit__box">最寄駅</dt>
-              <dd class="p-news__recruit__detail">伊勢市駅 徒歩15分</dd>
-            </dl>
-          </div>
-          <div class="p-news__recruit">
-            <img class="p-news__recruit__nurse is-pc" src="./img/picture/news-nurse04-pc.jpg" alt="看護師4">
-            <p class="p-news__recruit__text">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
-            <dl class="p-news__recruit__flex is-salary">
-              <dt class="p-news__recruit__box">給与</dt>
-              <dd class="p-news__recruit__detail">月給 148,000円～</dd>
-            </dl>
-            <dl class="p-news__recruit__flex">
-              <dt class="p-news__recruit__box">所在地</dt>
-              <dd class="p-news__recruit__detail is-station">三重県伊勢市</dd>
-            </dl>
-            <dl class="p-news__recruit__flex">
-              <dt class="p-news__recruit__box">最寄駅</dt>
-              <dd class="p-news__recruit__detail">伊勢市駅 徒歩15分</dd>
-            </dl>
-          </div>
+        <div class="p-news__swiper">
+          <ul class="p-news__wrapper" id="p-news__wrapper">
+            <li class="p-news__recruit">
+              <img class="p-news__recruit__nurse" src="./img/picture/news-nurse01-pc.jpg" alt="看護師1">
+              <p class="p-news__recruit__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <dl class="p-news__recruit__flex is-salary">
+                <dt class="p-news__recruit__box">給与</dt>
+                <dd class="p-news__recruit__detail">月給 148,000円～</dd>
+              </dl>
+              <dl class="p-news__recruit__flex">
+                <dt class="p-news__recruit__box">所在地</dt>
+                <dd class="p-news__recruit__detail">三重県伊勢市</dd>
+              </dl>
+              <dl class="p-news__recruit__flex is-station">
+                <dt class="p-news__recruit__box">最寄駅</dt>
+                <dd class="p-news__recruit__detail">伊勢市駅 徒歩15分</dd>
+              </dl>
+            </li>
+            <li class="p-news__recruit">
+              <img class="p-news__recruit__nurse" src="./img/picture/news-nurse02-pc.jpg" alt="看護師2">
+              <p class="p-news__recruit__text">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
+              <dl class="p-news__recruit__flex is-salary">
+                <dt class="p-news__recruit__box">給与</dt>
+                <dd class="p-news__recruit__detail">月給 148,000円～</dd>
+              </dl>
+              <dl class="p-news__recruit__flex">
+                <dt class="p-news__recruit__box">所在地</dt>
+                <dd class="p-news__recruit__detail">三重県伊勢市</dd>
+              </dl>
+              <dl class="p-news__recruit__flex is-station">
+                <dt class="p-news__recruit__box">最寄駅</dt>
+                <dd class="p-news__recruit__detail">伊勢市駅 徒歩15分</dd>
+              </dl>
+            </li>
+            <li class="p-news__recruit">
+              <img class="p-news__recruit__nurse" src="./img/picture/news-nurse03-pc.jpg" alt="看護師3">
+              <p class="p-news__recruit__text">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
+              <dl class="p-news__recruit__flex is-salary">
+                <dt class="p-news__recruit__box">給与</dt>
+                <dd class="p-news__recruit__detail">月給 148,000円～</dd>
+              </dl>
+              <dl class="p-news__recruit__flex">
+                <dt class="p-news__recruit__box">所在地</dt>
+                <dd class="p-news__recruit__detail">三重県伊勢市</dd>
+              </dl>
+              <dl class="p-news__recruit__flex is-station">
+                <dt class="p-news__recruit__box">最寄駅</dt>
+                <dd class="p-news__recruit__detail">伊勢市駅 徒歩15分</dd>
+              </dl>
+            </li>
+            <li class="p-news__recruit">
+              <img class="p-news__recruit__nurse" src="./img/picture/news-nurse04-pc.jpg" alt="看護師4">
+              <p class="p-news__recruit__text">平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人</p>
+              <dl class="p-news__recruit__flex is-salary">
+                <dt class="p-news__recruit__box">給与</dt>
+                <dd class="p-news__recruit__detail">月給 148,000円～</dd>
+              </dl>
+              <dl class="p-news__recruit__flex">
+                <dt class="p-news__recruit__box">所在地</dt>
+                <dd class="p-news__recruit__detail is-station">三重県伊勢市</dd>
+              </dl>
+              <dl class="p-news__recruit__flex">
+                <dt class="p-news__recruit__box">最寄駅</dt>
+                <dd class="p-news__recruit__detail">伊勢市駅 徒歩15分</dd>
+              </dl>
+            </li>
+          </ul>
         </div>
         <div class="p-news__button__area">
           <a class="c-button" href="">新着求人一覧をもっと見る</a>
@@ -169,15 +179,15 @@
       </div>
     </section>
 
-    <section class="p-introduction">
+    <div class="p-introduction">
       <img class="p-introduction__picture" src="./img/picture/introduction-picture.jpg" alt="紹介文">
       <div class="p-introduction__message">
-        <h3 class="p-introduction__text">ギズジョブなら理想の職場がきっと見つかる</h3>
-        <h3 class="p-introduction__text">ギズジョブは完全無料の求職者向け求人サービスです<span>。</span></h3>
+        <p class="p-introduction__text">ギズジョブなら理想の職場がきっと見つかる</p>
+        <p class="p-introduction__text">ギズジョブは完全無料の求職者向け求人サービスです<span>。</span></p>
       </div>
-    </section>
+    </div>
 
-    <section class="p-feature">
+    <section class="p-feature" id="p-feature">
       <div class="l-inner is-main">
         <h2 class="p-feature__title">ギズジョブの4つの特徴</h2>
         <div class="p-feature__grid">
@@ -209,7 +219,7 @@
       </div>
     </section>
 
-    <section class="p-flow">
+    <section class="p-flow" id="p-flow">
       <div class="l-inner">
         <h2 class="p-flow__title">転職までの流れ</h2>
         <div class="p-flow__area">
@@ -272,7 +282,7 @@
       </div>
     </section>
 
-    <section class="p-contents">
+    <section class="p-contents" id="p-contents">
       <div class="l-inner is-main">
         <h2 class="p-contents__title">転職お役立ちコンテンツ</h2>
         <div class="p-contents__area">

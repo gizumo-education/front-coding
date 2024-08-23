@@ -63,9 +63,9 @@
 
   &__message {
     position: absolute;
+    padding-top: 71px;
     color: utility.$white;
     text-align: center;
-    padding-top: 71px;
     @include utility.sp {
       padding-top: .6045rem;
     }
@@ -100,8 +100,8 @@
   }
 
   &__button__area {
-    text-align: center;
     margin-top: 80px;
+    text-align: center;
     @include utility.sp {
       margin-top: .3486rem;
     }
