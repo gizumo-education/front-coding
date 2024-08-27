@@ -115,7 +115,7 @@
     height: 25px;
     border-bottom: solid 1px utility.$black;
     border-left: solid 1px utility.$black;
-    transform:rotate(45deg);
+    transform: rotate(45deg);
     position: absolute;
     bottom: 64px;
     left: 42px;
@@ -129,10 +129,10 @@
     }
   }
   .slick-prev::after {
-    content:"";
+    content: "";
     width: 60px;
     height: 60px;
-    background:utility.$white;
+    background: utility.$white;
     border-radius: 50%;
     position: absolute;
     bottom: 47px;
@@ -153,7 +153,7 @@
     height: 25px;
     border-top: solid 1px utility.$black;
     border-right: solid 1px utility.$black;
-    transform:rotate(45deg);
+    transform: rotate(45deg);
     position: absolute;
     bottom: 64px;
     right: 40px;
@@ -169,10 +169,10 @@
   }
   
   .slick-next::after {
-      content:"";
+      content: "";
       width: 60px;
       height: 60px;
-      background:utility.$white;
+      background: utility.$white;
       border-radius: 50%;
       position: absolute;
       bottom: 47px;

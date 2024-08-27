@@ -127,7 +127,7 @@
     appearance: none;
     border: none;
     background-color: transparent;
-    &__active {
+    &.active {
       span:first-child {
         transform: translate(0, 0.1rem) rotate(-45deg);
         transition: 0.3s;
@@ -164,7 +164,7 @@
     opacity: 70%;
     transition: all 0.6s;
 
-    &__active {
+    &.active {
       right: 0;
     }
 
