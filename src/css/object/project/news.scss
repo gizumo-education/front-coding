@@ -54,6 +54,7 @@
       font-size: 16px;
       line-height: 22px;
       @include utility.sp {
+        width: 100%;
         margin-top: .1008rem;
         font-weight: utility.$bold;
       }
@@ -184,6 +185,16 @@
         top: -.07rem;
         right: .15rem;
       }
+  }
+
+  .slick-track {
+    display: flex;
+    gap: 20px;
+    left: -39px;
+    @include utility.sp {
+      gap: 0;
+      left: 0;
+    }
   }
 
   &__button__area {
