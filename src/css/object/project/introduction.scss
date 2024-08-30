@@ -25,10 +25,10 @@
   }
 
   &__message {
+    position: absolute;
     color: utility.$white;
     font-weight: utility.$bold;
     font-size: 25px;
-    position: absolute;
     line-height: 60px;
     text-align: center;
     @include utility.sp {

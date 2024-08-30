@@ -13,14 +13,14 @@
   }
 
   &__grid {
-    margin-top: 53px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    margin-top: 53px;
     @include utility.sp {
-      margin-top: .38rem;
       grid-template-columns: 1fr;
       gap: .21rem;
+      margin-top: .38rem;
     }
   }
 
@@ -34,9 +34,9 @@
   }
 
   &__text {
+    color: utility.$bgPink;
     font-weight: utility.$bold;
     font-size: 24px;
-    color: utility.$bgPink;
     text-align: center;
     @include utility.sp {
       font-size: .2rem;
@@ -44,10 +44,10 @@
   }
 
   &__detail {
-    height: 116px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 116px;
     text-align: center;
     @include utility.sp {
       height: auto;
