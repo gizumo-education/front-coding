@@ -41,7 +41,7 @@
     &__nurse {
       height: 200px;
       @include utility.sp {
-        width: 100%;
+        width: 370px;
         height: 2.08rem;
         object-fit: cover;
         border-radius: .1rem;
@@ -54,7 +54,7 @@
       font-size: 16px;
       line-height: 22px;
       @include utility.sp {
-        width: 100%;
+        width: 3.7rem;
         margin-top: .1008rem;
         font-weight: utility.$bold;
       }
