@@ -30,6 +30,7 @@ $(function() {
   //無限スライダー
   $('#p-news__wrapper').slick({
     autoplay: false,
+    variableWidth: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
