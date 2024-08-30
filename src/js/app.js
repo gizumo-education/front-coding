@@ -24,7 +24,7 @@ $(function() {
     $("body,html").animate({ scrollTop: position - 60 }, speed, "swing");
     $('.l-header__hamburger').removeClass('active');
     $('.l-header__nav-menu').removeClass('active');
-    document.body.style.overflow = 'auto';
+    $('body').css({ overflow: 'auto' });
   });
 
   //無限スライダー

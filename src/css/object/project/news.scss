@@ -120,12 +120,12 @@
     bottom: 64px;
     left: 42px;
     @include utility.sp {
-      width: 0.1rem;
-      height: 0.1rem;
-      border-bottom: solid 0.01rem utility.$black;
-      border-left: solid 0.01rem utility.$black;
-      top: 0.1rem;
-      left: 0.35rem;
+      width: .1rem;
+      height: .1rem;
+      border-bottom: solid .01rem utility.$black;
+      border-left: solid .01rem utility.$black;
+      top: .1rem;
+      left: .35rem;
     }
   }
   .slick-prev::after {
@@ -139,10 +139,10 @@
     left: 17px;
     opacity: .7;
     @include utility.sp {
-      width: 0.42rem;
-      height: 0.42rem;
-      top: -0.07rem;
-      left: 0.15rem;
+      width: .42rem;
+      height: .42rem;
+      top: -.07rem;
+      left: .15rem;
     }
   }
   
@@ -159,12 +159,12 @@
     right: 40px;
     z-index: 2;
     @include utility.sp {
-      width: 0.1rem;
-      height: 0.1rem;
-      border-top: solid 0.01rem utility.$black;
-      border-right: solid 0.01rem utility.$black;
-      top: 0.1rem;
-      right: 0.35rem;
+      width: .1rem;
+      height: .1rem;
+      border-top: solid .01rem utility.$black;
+      border-right: solid .01rem utility.$black;
+      top: .1rem;
+      right: .35rem;
     }
   }
   
@@ -179,10 +179,10 @@
       right: 17px;
       opacity: .7;
       @include utility.sp {
-        width: 0.42rem;
-        height: 0.42rem;
-        top: -0.07rem;
-        right: 0.15rem;
+        width: .42rem;
+        height: .42rem;
+        top: -.07rem;
+        right: .15rem;
       }
   }
 
