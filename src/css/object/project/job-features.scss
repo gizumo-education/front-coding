@@ -5,12 +5,20 @@
   background-color: #FFFFFF;
   margin-top: 98px;
   text-align: center;
+  @include utility.sp {
+    width: 2.5rem;
+    height: 10rem;
+  }
 
   &__flex-box {
     display: grid;
     gap: 35px;
     grid-template-columns: 1fr 1fr;
     margin-top: 60px;
+    @include utility.sp {
+      display: flex;
+      flex-flow: column;
+    }
   }
 
   &__title {
@@ -25,13 +33,23 @@
   padding: 40px 0;
   border-radius:10px;
   background-color: #F7D2DB;
+  @include utility.tab {
+    width: 5.5rem;
   }
+  @include utility.sp {
+    width: 3.9rem;
+  }
+ }
 
   &__features-text {
     font-size: 14px;
     text-align: center;
     line-height: 1.5;
     margin-top: 36px;
+    @include utility.sp {
+      width: 3.6rem;
+      font-size: 0.11rem;
+    }
   }
 
   &__features-texts {

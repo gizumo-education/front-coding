@@ -1,4 +1,5 @@
 // 共通のパーツを作成
+
 @mixin pc {
   @media screen and (min-width: 1200px) {
     @content;

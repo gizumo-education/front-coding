@@ -3,4 +3,7 @@
 .job-check {
   height: 450px;
   margin-top: 140px;
+  @include utility.sp {
+    width: 3rem;
+  }
 }

@@ -3,6 +3,10 @@
 .p-jobchange {
   height: 548px;
   text-align: center;
+  @include utility.sp {
+    height: 18rem;
+    width: 1rem;
+  }
 
  &__flow {
   display: flex;
@@ -12,6 +16,14 @@
   display: grid;
   grid-template-columns: repeat(4,280px);
   gap: 20px;
+  @include utility.tab {
+    display: flex;
+   }
+  @include utility.sp {
+    display: flex;
+    flex-flow: column;
+    gap: 0.6rem;
+  }
  }
   
   &__job-flow {
@@ -27,11 +39,17 @@
    grid-row: span 3;
    display: grid;
    grid-template-columns: subgrid;
-  }
+ }
 
   &__flow-imgs {
     margin-top: 55px;
     height: 102px;
+    @include utility.tab {
+      width: 1rem;
+      margin-top: 1rem;
+      height: 1rem;
+      margin-left: 0.6rem;
+     }
   }
 
   &__job-flow::after {
@@ -40,12 +58,27 @@
    position: absolute;
    top: 0;
    bottom: 0;
-   left: 276px; /* 要素の左からの距離 */
+   left: 276px;
    width: 0;
    height: 20px;
    border-top: 20px solid transparent;
    border-bottom: 20px solid transparent;
    border-left: 21px solid #DE5579;
+   @include utility.tab {
+    left: 2.7rem;
+   }
+   @include utility.sp {
+   display: inline-block;
+   color: #DE5579;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-color: transparent;
+   border-width: 0.3rem 0.2rem;
+   border-top-color: currentColor;
+   top: 4rem;
+   left: 1.1rem;
+   }
   }
 
   &__job-flow:nth-child(n+4)::after {
@@ -75,13 +108,25 @@
     text-align: left;
   }
 
+  &__flow-title {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1px;
+    @include utility.tab {
+      font-size: 0.23rem;
+     }
+  }
+
   &__flow-titles {
     font-weight: bold;
     font-size: 25px;
     text-align: center;
     margin-top: 1px;
     line-height: 1.2;
+    @include utility.tab {
+      font-size: 0.23rem;
+     }
   }
-
 }
 
