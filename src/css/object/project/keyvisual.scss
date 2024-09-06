@@ -41,10 +41,9 @@
   }
 
   &__keyvisual-title {
-    width: 800px;
     height: 65px;
     margin-top: 20px;
-    margin-left: 398px;
+    margin-left: 380px;
     background-image: url("../img/picture/keyvisual-title.png");
     background-repeat: no-repeat;
     @include utility.tab {
@@ -55,6 +54,7 @@
       margin-left: 0.8rem;
       display: block;
       margin-top: 0.1rem;
+      width: 3rem;
     }
   }
   
