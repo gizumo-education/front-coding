@@ -29,8 +29,9 @@
       width: 10rem;
      }
      @include utility.sp {
-      font-size: 0.12rem;
+      font-size: 0.13rem;
       width: 4rem;
+      font-weight: 400;
     }
   }
 }
