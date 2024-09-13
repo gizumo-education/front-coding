@@ -3,13 +3,22 @@
 .p-jobcontents {
   height: 462px;
   text-align: center;
-  
+  @include utility.sp {
+    height: 8.92rem;
+    width: 3.5rem;
+  }
 
  &__main-contents {
   margin: 49px 0 81px 0;
   position: relative;
   display: flex;
   gap: 15px;
+  @include utility.sp {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 0.1rem;
+    margin: 0.35rem 0 0.3rem 0;
+  }
  }
 
  &__manual {
@@ -25,6 +34,12 @@
   width: 380px;
   height: 240px;
   filter: brightness(50%);
+  @include utility.tab {
+    width: 4rem;
+   }
+   @include utility.sp {
+    width: 3.69rem;
+  }
  }
 
  &__contents-title {
@@ -36,6 +51,15 @@
   transform: translate(-50%,-50%);
   text-align: center;
   line-height: 1.5;
+  @include utility.tab {
+    width: 3rem;
+    font-size: 0.18rem;
+   }
+   @include utility.sp {
+    top: 1.2rem;
+    left: 1.7rem;
+    width: 3rem;
+  }
  }
 
  &__medical-image {
@@ -43,6 +67,12 @@
   width: 380px;
   height: 240px;
   filter: brightness(50%);
+  @include utility.tab {
+    width: 5rem;
+   }
+   @include utility.sp {
+    width: 3.69rem;
+  }
  }
 
  &__medical-text {
@@ -53,6 +83,9 @@
   font-weight: bold;
   text-align: center;
   margin-bottom: 40px;
+  @include utility.sp {
+    width: 3.6rem;
+  }
  }
 
  &__contents-medical {
@@ -64,6 +97,13 @@
   color: #FFFFFF;
   font-size: 16px;
   position: absolute;
+  @include utility.tab {
+    font-size: 0.22rem;
+   }
+   @include utility.sp {
+    top: 3.5rem;
+    left: 1.5rem;
+  }
  }
 
 
@@ -76,6 +116,15 @@
   color: #FFFFFF;
   font-size: 16px;
   position: absolute;
+  @include utility.tab {
+    font-size: 0.2rem;
+    width: 4rem;
+   }
+   @include utility.sp {
+    top: 6.3rem;
+    left: 0.8rem;
+    width: 3rem;
+  }
  }
 
  &__chenge-manual {

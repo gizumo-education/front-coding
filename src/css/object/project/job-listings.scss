@@ -1,18 +1,34 @@
 @use '../../object/utility/utility.scss';
 
+
 .p-joblistings {
   margin-top: 60px;
   height: 637px;
   background-color: #DEEEF9 ;
+  @include utility.sp {
+    margin-top: 0.1rem;
+    height: 6.1rem;
+  }
+  
   
   &__new-listings {
     font-size: 25px;
     padding-top: 67px;
+    @include utility.sp {
+      text-align: center;
+      font-weight: bold;
+      padding-top: 0.3rem;
+    }
   }
-  
+
+
   &__imgs {
     padding: 11px 1px 9px 0;
+    @include utility.sp {
+      padding-top: 0.24rem;
+    }
   }
+
 
   &__job-openings {
     padding-top: 18px;
@@ -28,12 +44,21 @@
     line-height: 1.3;
     font-size: 16px;
     margin-left: 6px;
+    @include utility.sp {
+      font-weight: bold;
+      margin-top: 0.15rem;
+      margin-left: 0.01rem;
+    }
   }
 
   &__list {
     font-size: 15px;
     padding-top: 7px;
     margin-left: 12px;
+    @include utility.sp {
+      margin-left: 0.1rem;
+    }
+
   }
 
   &__list dl {
@@ -54,9 +79,7 @@
     padding-left: 61px;
     padding-top: 5px;
   }
+
 }
-
-
-
 
 

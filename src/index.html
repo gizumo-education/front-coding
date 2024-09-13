@@ -35,8 +35,8 @@
     <div class="p-keyvisual">
       <div class="l-inner">
         <div class="p-keyvisual__titles">
-          <p class="p-keyvisual__keyvisual-text"><img src="./img/picture/keyvisual-text.png" alt="見出しバナー"></p>
-          <p class="p-keyvisual__keyvisual-title"><img src="./img/picture/keyvisual-title.png" alt="医療求人バナー"></p>
+          <p class="p-keyvisual__keyvisual-text"></p>
+          <p class="p-keyvisual__keyvisual-title"></p>
            <div class="p-keyvisual__box">
              <p>現在の求人掲載数：<span class="p-keyvisual__number">2,320</span>件</p>
           </div>
@@ -86,7 +86,7 @@
           </form>
         </div>
         <input type="text" placeholder="キーワード・企業名・スキルなど" class="p-jobsearch__select-null">
-        <button class="form-button"><img src="./img/picture/glass.png" alt="虫眼鏡バナー">検索する</button>
+        <button class="form-button"><img src="./img/picture/glass.png" alt="虫眼鏡バナー" style="position: absolute;left: 0.1rem;top: 50%;width: 0.2rem;transform: translateY(-50%);">検索する</button>
        </div>
      </div>
 
@@ -96,7 +96,8 @@
         <div class="p-joblistings__job-openings">
           <div class="p-joblistings__imgs">
           <div class="p-joblistings__job-inner">
-            <img src="./img/picture/main-banner1.jpg" alt="事務バーナー">
+            <img class="is-pc" src="./img/picture/main-banner1.jpg" alt="事務バーナー">
+            <img class="is-sp" src="./img/picture/main-sp.png" alt="レスポンシブのバナー">
             <p class="p-joblistings__listings-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
             <div class="p-joblistings__list">
               <dl>
@@ -113,8 +114,11 @@
               </dl>
             </div>
            </div>
+           <button class="listings-button">
+            新着求人一覧をもっと見る
+          </button>
           </div>
-          <div class="p-joblistings__imgs">
+          <!-- <div class="p-joblistings__imgs">
             <div class="p-joblistings__job-inner">
               <img src="./img/picture/main-banner2.jpg" alt="会話バナー">
               <p class="p-joblistings__listings-title">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
@@ -171,13 +175,10 @@
                 <dt>最寄駅</dt>
                 <dd>伊勢市駅 徒歩15分</dd>
               </dl>
-            </div>
+            </div> -->
           </div>
          </div>
         </div>
-        <button class="listings-button">
-          新着求人一覧をもっと見る
-        </button>
       </div>
      </div>
     
@@ -220,13 +221,13 @@
             <div class="p-jobchange__job-flow">
               <div class="p-jobchange__step"><p>STEP<br>1</p></div>
               <div class="p-jobchange__flow-imgs"><img src="./img/picture/flow-banner1.png" alt="テキストシートバナー"></div>
-              <h2 class="p-jobchange__flow-titles">エントリーシートの<br>作成</h2>
+              <h2 class="p-jobchange__flow-titles">エントリーシートの作成</h2>
               <p class="p-jobchange__intext">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ</p>
             </div>
             <div class="p-jobchange__job-flow">
               <div class="p-jobchange__step"><p>STEP<br>2</p></div>
               <div class="p-jobchange__flow-imgs"><img src="./img/picture/flow-banner2.png" alt="ピックアップバナー"></div>
-               <h2 class="p-jobchange__flow-titles">気になる企業の<br>ピックアップ</h2>
+               <h2 class="p-jobchange__flow-titles">気になる企業のピックアップ</h2>
                <p class="p-jobchange__intext">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが</p>
            </div>
            <div class="p-jobchange__job-flow">
@@ -277,9 +278,9 @@
     <div class="job-check">
       <div class="l-inner">
        <div class="p-jobsearch">
-        <hgroup>
+        <hgroup style="line-height: 2;">
           <h2>お仕事検索</h2>
-          <p>働きたい職種・地域・希望給与を入れて検索！</p>
+          <p style="font-size: 0.14rem;">働きたい職種・地域・希望給与を入れて検索！</p>
         </hgroup>
         <div class="p-jobsearch__select-box">
           <div class="p-jobsearch__box_wrapper">
@@ -318,7 +319,7 @@
             </form>
           </div>
           <input type="text" placeholder="キーワード・企業名・スキルなど" class="p-jobsearch__select-null">
-          <button class="form-button"><img src="./img/picture/glass.png" alt="虫眼鏡バナー">検索する</button>
+          <button class="form-button"><img src="./img/picture/glass.png" alt="虫眼鏡バナー"style="position: absolute;left: 0.1rem;top: 50%;width: 0.2rem;transform: translateY(-50%);">検索する</button>
          </div>
        </div>
       </div>

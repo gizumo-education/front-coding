@@ -5,12 +5,23 @@
   background-color: #FFFFFF;
   margin-top: 98px;
   text-align: center;
+  @include utility.sp {
+    width: 3.5rem;
+    height: 8rem;
+    margin-top: 0.55rem;
+  }
 
   &__flex-box {
     display: grid;
     gap: 35px;
     grid-template-columns: 1fr 1fr;
     margin-top: 60px;
+    @include utility.sp {
+      display: flex;
+      flex-flow: column;
+      margin-top: 0.32rem;
+      gap: 0.22rem;
+    }
   }
 
   &__title {
@@ -18,6 +29,9 @@
     color: #DE5579;
     text-align: center;
     font-weight: bold;
+    @include utility.sp {
+      font-size: 0.24rem;
+    }
   }
 
   &__fome-box {
@@ -25,13 +39,25 @@
   padding: 40px 0;
   border-radius:10px;
   background-color: #F7D2DB;
+  @include utility.tab {
+    width: 5.5rem;
   }
+  @include utility.sp {
+    width: 3.7rem;
+    height: 1.5rem;
+    padding: 0.3rem 0;
+  }
+ }
 
   &__features-text {
     font-size: 14px;
     text-align: center;
     line-height: 1.5;
     margin-top: 36px;
+    @include utility.sp {
+      width: 3.6rem;
+      font-size: 0.11rem;
+    }
   }
 
   &__features-texts {
@@ -39,6 +65,11 @@
     text-align: center;
     line-height: 1.4;
     margin-top: 31px;
+    @include utility.sp {
+      width: 3.6rem;
+      font-size: 0.11rem;
+      margin-top: 0.3rem;
+    }
   }
 }
 

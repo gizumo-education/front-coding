@@ -1,28 +1,63 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+
 .p-keyvisual {
   background-color: #98B1BE;
   background-image: url("../img/picture/keyvisual-banner.png");
   background-repeat: no-repeat;
   height: 467px;
   padding: 59px 0px 0px 0px;
-  margin-top: 22px;
   flex-direction: column;
   margin-bottom: 75px;
   background-position: 50%;
   width: 100%;
+  @include utility.tab {
+    width: 12rem;
+    margin-top: 1rem;
+  }
+  @include utility.sp {
+    background-image: url("../img/picture/key-sp.png");
+    background-repeat: no-repeat;
+    height: 2.7rem;
+    margin-bottom: 0.24rem;
+  }
+
 
   &__keyvisual-text {
-    height: 149.51px;
-    margin-left: 404px;
+    height: 172.51px;
+    margin-left: 616px;
+    background-image: url("../img/picture/keyvisual-text.png");
+    background-repeat: no-repeat;
+    @include utility.tab {
+      width: 10rem;
+      margin-left: 5rem;
+    }
+    @include utility.sp {
+      margin-left: 1.5rem;
+      height: .8rem;
+      background-image: url("../img/picture/text-sp.png");
+      background-repeat: no-repeat;
+    }
   }
 
   &__keyvisual-title {
-    width: 800px;
     height: 65px;
-    margin-top: 40px;
-    margin-left: 398px;
+    margin-top: 20px;
+    margin-left: 380px;
+    background-image: url("../img/picture/keyvisual-title.png");
+    background-repeat: no-repeat;
+    @include utility.tab {
+      margin-left: 0.1rem;
+    }
+    @include utility.sp {
+      background-image: url("../img/picture/key-title.png");
+      margin-left: 0.8rem;
+      display: block;
+      margin-top: 0.1rem;
+      width: 3rem;
+    }
   }
+  
 
   &__box {
     width:384px;
@@ -34,20 +69,35 @@
     margin-left: 600px;
     font-size: 20px;
     color: #2EB6AA;
+    @include utility.tab {
+      margin-left: 5.5rem;
+    }
+    @include utility.sp {
+      margin-left: .3rem;
+      width: 1.75rem;
+      position: absolute;
+      top: 2rem;
+      left: 1.5rem;
+      height: 0.35rem;
+      font-size: 0.09rem;
+    }
   }
 
   &__number {
     font-size: 39px;
     color: #2EB6AA;
     font-weight: bold;
+    @include utility.sp {
+      font-size: 0.15rem;
+    }
   }
 
   &__titles {
     text-align: center;
+    @include utility.sp {
+      display: flex;
+      flex-flow: column;
+    }
   }
 
 }
-
-
-
-

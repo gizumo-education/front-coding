@@ -8,6 +8,12 @@
   border-radius: 50px;
   border: none;
   font-weight: bold;
+  @include utility.sp {
+    width: 1.6rem;
+    margin: 0.1rem auto;
+    height: 0.4rem;
+    position: relative;
+  }
 }
 
 .listings-button {
@@ -22,6 +28,10 @@
   margin: 0 auto;
   padding-top: 8px;
   font-weight: bold;
+  @include utility.sp {
+    width: 3.6rem;
+    margin-top: 0.45rem;
+  }
 }
 
 .column-button {
@@ -35,4 +45,7 @@
   display: block;
   margin: 0 auto;
   font-weight: bold;
+  @include utility.sp {
+    width: 3.6rem;
+  }
 }
