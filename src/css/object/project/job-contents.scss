@@ -5,6 +5,7 @@
   text-align: center;
   @include utility.sp {
     height: 9rem;
+    width: 3.5rem;
   }
 
  &__main-contents {
@@ -16,6 +17,7 @@
     display: flex;
     flex-flow: column;
     margin-bottom: 0.1rem;
+    margin: 0.35rem 0 0.3rem 0;
   }
  }
 
@@ -36,7 +38,7 @@
     width: 4rem;
    }
    @include utility.sp {
-    width: 3.5rem;
+    width: 3.69rem;
   }
  }
 
@@ -69,7 +71,7 @@
     width: 5rem;
    }
    @include utility.sp {
-    width: 3.5rem;
+    width: 3.69rem;
   }
  }
 

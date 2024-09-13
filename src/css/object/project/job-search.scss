@@ -16,9 +16,9 @@
   }
   @include utility.sp {
     width: 3.6rem;
-    font-size: .15rem;
+    font-size: 0.14rem;
     height: 2.5rem;
-    padding: 0.01rem;
+    padding: 0 0.15rem;
   }
 
   &__select-box {
@@ -102,4 +102,7 @@
 h2 {
   font-weight: bold;
   font-size: 25px;
+  @include utility.sp {
+    font-size: 0.23rem;
+  }
 }

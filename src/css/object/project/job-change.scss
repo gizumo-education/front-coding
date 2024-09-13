@@ -58,6 +58,7 @@
       margin-top: 0.55rem;
       width: 0.7rem;
       margin-left: 0.9rem;
+      height: 0.78rem;
     }
   }
 
@@ -121,6 +122,12 @@
     font-size: 14px;
     line-height: 1.5;
     text-align: left;
+    @include utility.sp {
+      height: 0.85rem;
+      text-align: left;
+      line-height: 0.25rem;
+      font-size: 0.14rem;
+    }
   }
 
   &__flow-title {
@@ -146,7 +153,7 @@
       font-size: 0.23rem;
      }
      @include utility.sp {
-      font-size: 0.23rem;
+      font-size: 0.18rem;
       }
   }
 }

@@ -10,8 +10,9 @@
   font-weight: bold;
   @include utility.sp {
     width: 1.6rem;
-    margin-left: 0.8rem;
+    margin: 0.1rem auto;
     height: 0.4rem;
+    position: relative;
   }
 }
 
