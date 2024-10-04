@@ -24,8 +24,6 @@ $(function() {
     
     if($(this).hasClass('active')) {
       $('html').toggleClass('no-scroll');
-    } else {
-      $('html').removeClass('no-scroll');
     }
   })
 })
