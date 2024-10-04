@@ -157,25 +157,25 @@
   }
 
   &__hamburger.active {
-    span:first-of-type{
+    span:first-of-type {
       top: 50%;
       transform: rotate(45deg);
     }
   }
   
   &__hamburger.active {
-    span:nth-of-type(2){
+    span:nth-of-type(2) {
       opacity: 0;
-   }
+    }
   }
   &__hamburger.active {
-    span:last-of-type{
+    span:last-of-type {
       top: 50%;
       transform: rotate(-45deg);
     }
   }
-  &__slide-menu.active{
-    transform: translateX(0); 
+  &__slide-menu.active {
+    transform: translateX(0);
   }
   .body {
     height: 100%;
