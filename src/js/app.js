@@ -22,6 +22,12 @@ $(function() {
   })
   $('.l-header__hamburger').on("click",function(){
     $('.l-header__hamburger, .l-header__slide-menu').toggleClass('active');
-  });
+    
+    if($(this).hasClass('active')) {
+      $('html').css('overflow', 'hidden');
+    } else {
+      $('html').removeAttr('style');
+    }
+  })
 })
 
