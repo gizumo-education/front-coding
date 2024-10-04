@@ -1,5 +1,8 @@
 @use '../object/utility/utility.scss';
 // headerのスタイルを記述するファイル
+.no-scroll {
+  overflow: hidden;
+}
 
 .l-header {
   position: sticky;

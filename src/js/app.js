@@ -1,7 +1,6 @@
 import $ from "jquery";
 import "slick-carousel"
 
-
 $(function() {
   $('.p-joblistings__job-openings').slick({
     infinite: true,
@@ -12,11 +11,11 @@ $(function() {
     responsive: [
       {
         breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-      }
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        }
       }
     ]
   })
@@ -24,9 +23,9 @@ $(function() {
     $('.l-header__hamburger, .l-header__slide-menu').toggleClass('active');
     
     if($(this).hasClass('active')) {
-      $('html').css('overflow', 'hidden');
+      $('html').toggleClass('no-scroll');
     } else {
-      $('html').removeAttr('style');
+      $('html').removeClass('no-scroll');
     }
   })
 })
