@@ -1,5 +1,5 @@
 import $ from "jquery";
-import 'slick-carousel'
+import "slick-carousel"
 
 
 $(function() {
