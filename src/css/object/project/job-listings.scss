@@ -80,6 +80,82 @@
     padding-top: 5px;
   }
 
+  .prev-arrow {
+   position: relative;
+   padding-left:25px;
+  }
+
+  .prev-arrow::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 95px;
+    left: 64px;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: rotate(320deg);
+    @include utility.sp {
+      left: 0.25rem;
+      top: 1rem;
+    }
+  }
+
+  .prev-arrow::after {
+    content:"";
+    width:60px;
+    height: 60px;
+    background:#FFF;
+    border-radius: 50%;
+    position: absolute;
+    top:78px;
+    left:41px;
+    z-index: 1;
+    @include utility.sp {
+      top:0.8rem;
+    left: 0.01rem;
+    }
+  }
+
+  .next-arrow {
+   position: relative;
+   padding-left:25px;
+  }
+  .next-arrow::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 81px;
+    right: 150px;
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(45deg);
+    @include utility.sp {
+      right: 0.3rem;
+      top: 1rem;
+    }
+  }
+
+  .next-arrow::after {
+    content:"";
+    width:60px;
+    height: 60px;
+    background:#FFF;
+    border-radius: 50%;
+    position: absolute;
+    top:65px;
+    right: 125px;
+    z-index: 1;
+    @include utility.sp {
+      top: 0.8rem;
+      right: 0.1rem;
+    }
+  }
 }
 
 
