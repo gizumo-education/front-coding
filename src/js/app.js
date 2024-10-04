@@ -20,28 +20,8 @@ $(function() {
       }
     ]
   })
-  $(function(){
-    $('.l-header__hamburger').on("click",function(){
-      $('.l-header__hamburger, .l-header__slide-menu').toggleClass('active');
-    });
+  $('.l-header__hamburger').on("click",function(){
+    $('.l-header__hamburger, .l-header__slide-menu').toggleClass('active');
   });
 })
 
-$(function () {
-  $(".l-header__hamburger").on("click",function () {
-    if ($("body").css("overflow") === "hidden") {
-
-      $("body").css({ height: "", overflow: "" });
-   
-    } else {
-      $("body").css({ height: "100%", overflow: "hidden" });
-
-    }
-  });
-});
-
-$(function() {
-  $('#"l-header__nav').on('click', function(event) {
-    $('#nav-input').prop('checked', false);
-  });
-});
