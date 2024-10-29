@@ -24,3 +24,15 @@
     clear: both;
   }
 }
+
+@mixin input($bgColor, $borderColor) {
+  height: 60px;
+  background-color: $bgColor;
+  border: 1px solid $borderColor;
+  border-radius: 10px;
+  appearance: none;
+  outline: none;
+  font-family: Noto Sans JP;
+  font-size: 18px;
+  padding-left: 15px;
+}

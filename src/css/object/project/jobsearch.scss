@@ -1,0 +1,69 @@
+@use '../../object/utility/utility.scss' as u;
+// @use 'src\css\foundation\_variables.scss';
+// @use 'src\css\foundation\_mixins.scss';
+// お仕事検索に関するスタイル
+.p-jobsearch {
+  background-color: u.$white;
+  padding: 60px 210px;
+
+  &__form {
+    width: 1180px;
+    height: 240px;
+    background-color: u.$formBlue;
+    border-radius: 10px;
+    text-align: center;
+
+    &__title {
+      font-family: Noto Sans JP;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 25px;
+      padding-top: 40px;
+    }
+
+    &__text {
+      font-family: Noto Sans JP;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28.96px;
+      margin-top: 20px;
+    }
+
+    &__ul {
+      display: flex;
+      gap: 15px;
+      margin-top: 25px;
+      margin-left: 40px;
+    }
+
+    &__select-box {
+      width: 200px;
+      @include u.input(u.$white, u.$selectBoxPink);
+    }
+
+    &__input-text {
+      width: 300px;
+      @include u.input(u.$white, u.$selectBoxPink);
+    }
+
+    &__button {
+      width: 142px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      a {
+        padding: 20px 20px 20px 50px;
+        color: u.$white;
+        background-position: center left 20px;
+        background-repeat: no-repeat;
+        background-size: 30px;
+      }
+      &.is-search {
+        a {
+          background-image: url("../img/icon/icon-search-white.png");
+        }
+      }
+    }
+  }
+}
