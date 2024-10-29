@@ -1,0 +1,69 @@
+@use '../../object/utility/utility.scss' as u;
+// 新着求人に関するスタイル
+
+.p-newjobs {
+  width: 1600px;
+  height: 636px;
+  background-color: u.$bgLightBlue;
+  padding: 64px 210px 67px 210px;
+
+  &__inner {
+
+    &__jobs {
+      display: flex;
+      gap: 20px;
+      
+      &__job {
+        margin-top: 25px;
+  
+        &__text {
+          margin-top: 8px;
+          font-family: Noto Sans JP;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: left;
+        }
+  
+        &__info {
+          margin-top: 7px;
+  
+          &__ul {
+            display: flex;
+            margin-top: 5px;
+            align-items: center;
+  
+            &__li-text {
+              display: block;
+              width: 60px;
+              height: 21px;
+              background-color: u.$textBgPink;
+              font-family: Noto Sans JP;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20.27px;
+              text-align: center;
+            }
+  
+            &__li-img {
+              width: 114px;
+              height: 17px;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+    
+    &__button {
+      width: 360px;
+      margin: 0 auto;
+      margin-top: 60px;
+      padding: 21px 72px;
+  
+      a {
+        color: u.$white;
+      }
+    }
+  }
+}
