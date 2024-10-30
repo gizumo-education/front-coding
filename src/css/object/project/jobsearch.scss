@@ -1,6 +1,4 @@
 @use '../../object/utility/utility.scss' as u;
-// @use 'src\css\foundation\_variables.scss';
-// @use 'src\css\foundation\_mixins.scss';
 // お仕事検索に関するスタイル
 .p-jobsearch {
   background-color: u.$white;
@@ -34,12 +32,29 @@
       gap: 15px;
       margin-top: 25px;
       margin-left: 40px;
+
+      &__li {
+        position: relative;
+
+        &__select-box {
+          width: 200px;
+          @include u.input(u.$white, u.$selectBoxPink);
+        }
+        &::after {
+          content: "";
+          display: inline-block;
+  
+          background-color: u.$selectBoxPink;
+          height: calc(20px / 2);
+          width: 20px;
+          clip-path: polygon(0 0, 100% 0, 50% 100%);
+          position: absolute;
+          top: 25px;
+          right: 15px;
+        }
+      }
     }
 
-    &__select-box {
-      width: 200px;
-      @include u.input(u.$white, u.$selectBoxPink);
-    }
 
     &__input-text {
       width: 300px;
