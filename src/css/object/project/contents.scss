@@ -1,0 +1,32 @@
+@use '../../object/utility/utility.scss' as u;
+// @use 'src\css\foundation\_variables.scss';
+// @use 'src\css\foundation\_mixins.scss';
+// 画像に関するスタイル
+
+.p-contents {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    filter: brightness(50%);
+  }
+
+  &__text01 {
+    position: absolute;
+    top: 104px;
+    font-family: Noto Sans JP;
+    font-size: 25px;
+    font-weight: 700;
+    color: u.$white;
+  }
+
+  &__text02 {
+    position: absolute;
+    top: 161px;
+    font-family: Noto Sans JP;
+    font-size: 25px;
+    font-weight: 700;
+    color: u.$white;
+  }
+}
