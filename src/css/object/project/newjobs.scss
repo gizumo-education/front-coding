@@ -21,7 +21,7 @@
     
           &__text {
             margin-top: 8px;
-            font-family: Noto Sans JP;
+            font-family: u.$regularFont;
             font-size: 16px;
             font-weight: 400;
             line-height: 22px;
@@ -41,7 +41,7 @@
                 width: 60px;
                 height: 21px;
                 background-color: u.$textBgPink;
-                font-family: Noto Sans JP;
+                font-family: u.$regularFont;
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 20.27px;

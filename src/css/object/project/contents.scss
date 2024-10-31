@@ -15,7 +15,7 @@
   &__text01 {
     position: absolute;
     top: 104px;
-    font-family: Noto Sans JP;
+    font-family: u.$regularFont;
     font-size: 25px;
     font-weight: 700;
     color: u.$white;
@@ -24,7 +24,7 @@
   &__text02 {
     position: absolute;
     top: 161px;
-    font-family: Noto Sans JP;
+    font-family: u.$regularFont;
     font-size: 25px;
     font-weight: 700;
     color: u.$white;

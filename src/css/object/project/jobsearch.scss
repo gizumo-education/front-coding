@@ -12,7 +12,7 @@
     text-align: center;
 
     &__title {
-      font-family: Noto Sans JP;
+      font-family: u.$regularFont;
       font-size: 25px;
       font-weight: 700;
       line-height: 25px;
@@ -20,7 +20,7 @@
     }
 
     &__text {
-      font-family: Noto Sans JP;
+      font-family: u.$regularFont;
       font-size: 20px;
       font-weight: 400;
       line-height: 28.96px;

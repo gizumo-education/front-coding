@@ -39,13 +39,13 @@
     border: 2.3px solid u.$textGreen;
     border-radius: 10px;
     color: u.$textGreen;
-    font-family: Noto Sans JP;
+    font-family: u.$regularFont;
     font-size: 20px;
     font-weight: 400;
     line-height: 28.96px;
 
     &__span {
-      font-family: Noto Sans JP;
+      font-family: u.$regularFont;
       font-size: 40px;
       font-weight: 700;
       line-height: 57.92px;
