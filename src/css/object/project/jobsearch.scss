@@ -2,7 +2,7 @@
 // お仕事検索に関するスタイル
 .p-jobsearch {
   background-color: u.$white;
-  padding: 60px 210px;
+  margin: 60px 210px;
 
   &__form {
     width: 1180px;
@@ -10,13 +10,13 @@
     background-color: u.$formBlue;
     border-radius: 10px;
     text-align: center;
+    padding: 40px;
 
     &__title {
       font-family: u.$regularFont;
       font-size: 25px;
       font-weight: u.$bold;
       line-height: 25px;
-      padding-top: 40px;
     }
 
     &__text {
@@ -31,7 +31,7 @@
       display: flex;
       gap: 15px;
       margin-top: 25px;
-      margin-left: 40px;
+      justify-content: center;
 
       &__li {
         position: relative;
@@ -62,21 +62,22 @@
     }
 
     &__button {
-      width: 142px;
+      width: 140px;
 
       &:first-child {
         margin-left: 0;
       }
       a {
-        padding: 20px 20px 20px 50px;
+        padding: 20px 20px 20px 48px;
         color: u.$white;
-        background-position: center left 20px;
+        font-size: 18px;
+        background-position: center left 14px;
         background-repeat: no-repeat;
         background-size: 30px;
       }
       &.is-search {
         a {
-          background-image: url("../img/icon/icon-search-white.png");
+          background-image: url("../img/icon/icon-search-white.png"); 
         }
       }
     }
