@@ -64,21 +64,14 @@
     &__button {
       width: 140px;
 
-      &:first-child {
-        margin-left: 0;
-      }
-      a {
+      &__link {
         padding: 20px 20px 20px 48px;
         color: u.$white;
         font-size: 18px;
         background-position: center left 14px;
         background-repeat: no-repeat;
         background-size: 30px;
-      }
-      &.is-search {
-        a {
-          background-image: url("../img/icon/icon-search-white.png"); 
-        }
+        background-image: url("../img/icon/icon-search-white.png");
       }
     }
   }
