@@ -41,13 +41,13 @@
     color: u.$textGreen;
     font-family: u.$regularFont;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: u.$regular;
     line-height: 28.96px;
 
     &__span {
       font-family: u.$regularFont;
       font-size: 40px;
-      font-weight: 700;
+      font-weight: u.$bold;
       line-height: 57.92px;
     }
   }

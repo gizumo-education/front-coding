@@ -14,7 +14,7 @@
     &__title {
       font-family: u.$regularFont;
       font-size: 25px;
-      font-weight: 700;
+      font-weight: u.$bold;
       line-height: 25px;
       padding-top: 40px;
     }
@@ -22,7 +22,7 @@
     &__text {
       font-family: u.$regularFont;
       font-size: 20px;
-      font-weight: 400;
+      font-weight: u.$regular;
       line-height: 28.96px;
       margin-top: 20px;
     }

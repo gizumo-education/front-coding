@@ -17,7 +17,7 @@
     top: 104px;
     font-family: u.$regularFont;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: u.$bold;
     color: u.$white;
   }
 
@@ -26,7 +26,7 @@
     top: 161px;
     font-family: u.$regularFont;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: u.$bold;
     color: u.$white;
   }
 }
