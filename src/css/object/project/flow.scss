@@ -72,6 +72,17 @@
       text-align: left;
       margin-top: 10px;
     }
+    &:not(:last-child)::after {
+      content: "";
+      background-color: u.$buttonPink;
+      width: calc(42px / 2);
+      height: 40px;
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 278px;
+    }
   }
 }
 
