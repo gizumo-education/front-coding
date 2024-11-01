@@ -1,0 +1,80 @@
+@use '../../object/utility/utility.scss' as u;
+
+.p-flow {
+  margin-top: 105px;
+  text-align: center;
+  font-family: u.$regularFont;
+
+  &__title {
+    font-size: 25px;
+    font-weight: u.$bold;
+  }
+
+  &__contents-wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  &__contents {
+    position: relative;
+    width: 280px;
+    height: 360px;
+    border: 2.27px solid u.$buttonPink;
+    border-radius: 10px;
+    padding: 55px 21px 42px 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    &__circle {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 60px;
+      height: 60px;
+      background-color: u.$buttonPink;
+      border-radius: 50%;
+      color: u.$white;
+      font-size: 16px;
+      font-weight: u.$bold;
+      line-height: 19.36px;
+      overflow-wrap: break-word;
+      padding: 11px 9px;
+    }
+
+    &__img {
+      height: 108px;
+      width: 110px;
+      display: flex;
+      align-items: center;
+      margin: auto 0;
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: u.$bold;
+      line-height: 30px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      margin: auto 0;
+    }
+
+    &__text {
+      width: 237px;
+      height: 60px;
+      font-size: 14px;
+      font-weight: u.$regular;
+      line-height: 20.27px;
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
+}
+
+.icon {
+  margin: auto;
+}
