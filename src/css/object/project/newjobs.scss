@@ -7,93 +7,91 @@
   background-color: u.$bgLightBlue;
   padding: 64px 210px 67px 210px;
 
-  &__jobs-wrapper {
+  &__wrapper {
     position: relative;
+  }
 
-    &__jobs {
-      display: flex;
-      gap: 20px;
+  &__list {
+    display: flex;
+    gap: 20px;
 
-      &__job {
-        margin-top: 25px;
+    &__li {
+      margin-top: 25px;
 
-        &__text {
-          margin-top: 8px;
-          font-family: u.$regularFont;
-          font-size: 16px;
-          font-weight: u.$regular;
-          line-height: 22px;
-          text-align: left;
-        }
+      &__text {
+        margin-top: 8px;
+        font-family: u.$regularFont;
+        font-size: 16px;
+        font-weight: u.$regular;
+        line-height: 22px;
+        text-align: left;
+      }
 
-        &__info {
-          margin-top: 7px;
+      &__info {
+        margin-top: 7px;
 
-          &__ul {
-            display: flex;
-            margin-top: 5px;
-            align-items: center;
-
-            
-          }
+        &__item {
+          display: flex;
+          margin-top: 5px;
+          align-items: center;
         }
       }
     }
-    
-    .p-newjobs-title {
-      display: block;
-      width: 60px;
-      height: 21px;
-      background-color: u.$textBgPink;
-      font-family: u.$regularFont;
-      font-size: 14px;
-      font-weight: u.$regular;
-      line-height: 20.27px;
-      text-align: center;
-    }
-    
-    .p-newjobs-text {
-      margin-left: 10px;
-    }
-    
-    &__arrow--button__left {
+  }
+  
+  .p-newjobs-title {
+    display: block;
+    width: 60px;
+    height: 21px;
+    background-color: u.$textBgPink;
+    font-family: u.$regularFont;
+    font-size: 14px;
+    font-weight: u.$regular;
+    line-height: 20.27px;
+    text-align: center;
+  }
+  
+  .p-newjobs-text {
+    margin-left: 10px;
+  }
+  
+  &__arrow--button__left {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+
+    &::before {
+      content: "";
+      margin: auto;
       position: absolute;
-      top: 100px;
-      left: 0px;
-
-      &::before {
-        content: "";
-        margin: auto;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 24px;
-        width: 20px;
-        height: 20px;
-        border-top: 0.7px solid u.$black;
-        border-right: 0.7px solid u.$black;
-        transform: rotate(225deg);
-      }
+      top: 0;
+      bottom: 0;
+      left: 24px;
+      width: 20px;
+      height: 20px;
+      border-top: 0.7px solid u.$black;
+      border-right: 0.7px solid u.$black;
+      transform: rotate(225deg);
     }
+  }
 
-    &__arrow--button__right {
+  &__arrow--button__right {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+
+    &::before {
+      content: "";
+      margin: auto;
       position: absolute;
-      top: 100px;
-      right: 0px;
-
-      &::before {
-        content: "";
-        margin: auto;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 24px;
-        width: 20px;
-        height: 20px;
-        border-top: 0.7px solid u.$black;
-        border-right: 0.7px solid u.$black;
-        transform: rotate(45deg);
-      }
+      top: 0;
+      bottom: 0;
+      right: 24px;
+      width: 20px;
+      height: 20px;
+      border-top: 0.7px solid u.$black;
+      border-right: 0.7px solid u.$black;
+      transform: rotate(45deg);
     }
   }
 
@@ -104,7 +102,7 @@
     margin-top: 60px;
     padding: 21px 72px;
 
-    a {
+    &__link {
       color: u.$white;
     }
   }
