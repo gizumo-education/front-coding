@@ -1,0 +1,41 @@
+@use '../../object/utility/utility.scss' as u;
+
+.p-features {
+  margin-top: 106px;
+  text-align: center;
+  font-family: u.$regularFont;
+
+  &__title {
+    font-size: 25px;
+    font-weight: u.$bold;
+  }
+
+  &__ul {
+    margin-top: 53px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+
+    &__li {
+      background-color: u.$bgPink;
+      border-radius: 10px;
+      width: 570px;
+      height: 180px;
+      padding: 40px 47px;
+
+      &__heading {
+        font-size: 24px;
+        color: u.$buttonPink;
+        font-weight: u.$bold;
+      }
+
+      &__text {
+        font-size: 14px;
+        font-weight: u.$regular;
+        line-height: 20.27px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
