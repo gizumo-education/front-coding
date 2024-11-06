@@ -1,7 +1,6 @@
 @use '../foundation/_variables.scss';
 
 .l-main { 
-  height: 500px;
 
   &__keyvisual{
     position: relative;
@@ -9,8 +8,6 @@
     justify-content: center;
     background-color: variables.$bgNepal;
     height: 500px;
-    //height: auto;
-    //background-image: url("../img/picture/keyvisual-picture.jpg");
     &__picture{
       text-align: center;
       height: auto;
@@ -20,21 +17,10 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        right: 1%;
-        top: 10%;
+        left: 607px;
+        top: 56px;
         gap: 40px;
 
-        &__no1{
-          //position: absolute;
-          //right: 20%;
-          //top: 20%;
-        }
-        &__sentence{
-          //position: absolute;
-          font-size: 50px;
-          color: variables.$white;
-          font-family: DM Sans;
-        }
         &__introduce{
             border: 2px solid variables.$lightSeaGreen;
             background-color: variables.$white;
@@ -47,19 +33,267 @@
             font-size: 20px;
             &__number{
               font-weight: variables.$bold;
-              font-size: 30px;
+              font-size: 40px;
             }
         }
     }
   }
+
   &__form{
-    height: 120px;
+    display: flex;
+    margin: 60px auto;
+    align-items: center;
+    justify-content: center;
 
     &__box{
-      
-      &__occupation{
-        height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 240px;
+      background-color: variables.$bgLavender;
+
+      &__sentences{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        & h1{
+          font-size: 25px;
+          font-weight: variables.$bold;
+        }
+        & p{
+          margin-top: 20px;
+          font-size: 20px;
+          font-weight: variables.$regular;
+        }
+
       }
+      &__selects{
+        margin-top: 25px;
+        display: flex;
+        gap: 15px;
+
+        &__selectBoxes{
+            position: relative;
+
+            &__select{
+              width: 200px;
+              height: 60px;
+              border: 1px solid variables.$deepCerise;
+              border-radius: 10px;
+              font-size: 18px;
+              font-weight: variables.$regular;
+              appearance: none;
+              padding-left: 15px;
+            }
+            &::after{
+              content: url(../../../img/icon/icon-down.png);
+              position: absolute;
+              right: 15px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+        }
+
+        &__input{
+          width: 300px;
+          height: 60px;
+          border: 1px solid variables.$deepCerise;
+          border-radius: 10px;
+          font-size: 18px;
+        }
+        &__button{
+            border: 1px solid variables.$cranberry;
+            border-radius: 30px;
+            width: 140px;
+            height: 60px;
+            background-color: variables.$cranberry;
+            font-size: 18px;
+            font-weight: variables.$bold;
+            color: variables.$white;
+            &:hover{
+                opacity: .8;
+                transition: .3s;
+            }
+        }
+      }
+    }
+  }
+  &__news{
+    height: 640px;
+    background-color: variables.$bgLightBlue;
+    &__contents{
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      padding-top: 64px;
+
+      &__btnLeft{
+        position: absolute;
+        top: 200px;
+        background-color: variables.$white;
+        opacity: 0.8;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 0;
+        &::after{
+          content: "";
+          position: absolute;
+          top: 20px;
+          left: 25px;
+          width: 20px;
+          height: 20px;
+          border-top: 1px solid variables.$black;
+          border-left: 1px solid variables.$black;
+          transform: rotate(-45deg);
+        }
+      }
+      &__btnRight{
+        position: absolute;
+        top: 200px;
+        right: 0%;
+        background-color: variables.$white;
+        opacity: 0.8;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 0;
+        &::after{
+          content: "";
+          position: absolute;
+          top: 20px;
+          right: 25px;
+          width: 20px;
+          height: 20px;
+          border-top: 1px solid variables.$black;
+          border-right: 1px solid variables.$black;
+          transform: rotate(45deg);
+        }
+      }
+
+      & h1{
+        font-weight: variables.$regular;
+        font-size: 25px;
+      }
+
+      &__offers{
+        display: flex;
+        margin-top: 25px;
+        gap: 20px;
+
+        &__offer{
+
+            &__sentence{
+              & p{
+                font-weight: variables.$regular;
+                font-size: 16px;
+                line-height: 22px;
+                margin-top: 8px;
+              }
+
+            }
+            &__info{
+                
+                &__salery{
+                    
+                    &__blocks{
+                      display: flex;
+                      font-weight: variables.$regular;
+                      font-size: 14px;
+                      margin-top: 6px;
+                      &__title{
+                        width: 60px;
+                        height: 20px;
+                        line-height: 20px;
+                        text-align: center;
+                        background-color: variables.$pink;
+                      }
+                      &__description{
+                        margin-left: 10px;
+                        line-height: 24px;
+                      }
+                    }
+
+                }
+                &__city{
+                  &__blocks{
+                    display: flex;
+                    font-weight: variables.$regular;
+                    font-size: 14px;
+                    &__title{
+                      width: 60px;
+                      height: 20px;
+                      line-height: 20px;
+                      text-align: center;
+                      background-color: variables.$pink;
+                    }
+                    &__description{
+                      margin-left: 10px;
+                      line-height: 24px;
+                    }
+                  }
+
+                }
+                &__station{
+                  &__blocks{
+                    display: flex;
+                    font-weight: variables.$regular;
+                    font-size: 14px;
+
+                    &__title{
+                      width: 60px;
+                      height: 20px;
+                      line-height: 20px;
+                      text-align: center;
+                      background-color: variables.$pink;
+                    }
+                    &__description{
+                      margin-left: 10px;
+                      line-height: 24px;
+                    }
+                  }
+
+                }
+            }
+        }
+      }
+      &__btn{
+        display: flex;
+        justify-content: center;
+
+        &__button{
+          margin-top: 60px;
+          border: 1px solid variables.$cranberry;
+          border-radius: 30px;
+          width: 360px;
+          height: 60px;
+          background-color: variables.$cranberry;
+          font-size: 18px;
+          font-weight: variables.$bold;
+          color: variables.$white;
+          &:hover{
+              opacity: .8;
+              transition: .3s;
+          }
+        }
+      }
+    }
+  }
+  &__group1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url(../../../img/picture/group1-peoples.jpg);
+    &__sentence{
+      text-align: center;
+      line-height: 50px;
+      font-size: 25px;
+      font-weight: variables.$bold;
+      color: variables.$white;
     }
   }
 }

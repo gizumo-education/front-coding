@@ -35,27 +35,246 @@
 
   <main class="l-main">
     <div class="l-main__keyvisual">
-      <!-- <img class="l-main__keyvisual__picture" src="./img/picture/keyvisual-picture.jpg" alt="keyvisual-picture" width="1262px" height="500px"> -->
-      <img class="l-main__keyvisual__picture" src="./img/picture/keyvisual-picture.jpg" alt="keyvisual-picture">
+      <img class="l-main__keyvisual__picture" src="./img/picture/keyvisual-picture.png" alt="keyvisual-picture">
       <div class="l-main__keyvisual__visuals">
         <img class="l-main__keyvisual__visuals__no1" src="./img/picture/keyvisual-no1.png" alt="no1">
-        <img class="l-main__keyvisual__visuals__sentence" src="./img/picture/keyvisual-sentence.png" alt="no1">
+        <img class="l-main__keyvisual__visuals__sentence" src="./img/picture/keyvisual-sentence.png" alt="sentence">
         <P class="l-main__keyvisual__visuals__introduce">現在の求人件数：<span class="l-main__keyvisual__visuals__introduce__number">2,320</span>件</P>
       </div>
     </div>
     <div class="l-main__form">
-      <div class="l-main__form__box">
-        <h1>お仕事検索</h1>
-        <p>働きたい職種・地域・希望給与を入れて検索！</p>
-        <select name="Occupation" class="l-main__form__box__occupation">
-          <option value="医療事務">医療事務</option>
-          <option value="調剤事務">調剤事務</option>
-          <option value="診療情報管理士">診療情報管理士</option>
-          <option value="歯科助手">歯科助手</option>
-          <option value="歯科事務">歯科事務</option>
-          <option value="看護補助・看護助手">看護補助・看護助手</option>
-          <option value="病院内SE">病院内SE</option>
-        </select>
+      <div class="l-main__form__box l-inner">
+        <div class="l-main__form__box__sentences">
+          <h1>お仕事検索</h1>
+          <p>働きたい職種・地域・希望給与を入れて検索！</p>
+        </div>
+        <div class="l-main__form__box__selects">
+          <div class="l-main__form__box__selects__selectBoxes">
+            <select name="Occupation" class="l-main__form__box__selects__selectBoxes__select">
+              <option value="医療事務" selected>医療事務</option>
+              <option value="調剤事務">調剤事務</option>
+              <option value="診療情報管理士">診療情報管理士</option>
+              <option value="歯科助手">歯科助手</option>
+              <option value="歯科事務">歯科事務</option>
+              <option value="看護補助・看護助手">看護補助・看護助手</option>
+              <option value="病院内SE">病院内SE</option>
+            </select>
+          </div>
+          <div class="l-main__form__box__selects__selectBoxes">
+            <select name="cities" class="l-main__form__box__selects__selectBoxes__select">
+              <option value="茨城県">茨城県</option>
+              <option value="神奈川県">神奈川県</option>
+              <option value="群馬県">群馬県</option>
+              <option value="埼玉県">埼玉県</option>
+              <option value="千葉県">千葉県</option>
+              <option value="東京都" selected>東京都</option>
+              <option value="栃木県">栃木県</option>
+            </select>
+          </div>
+          <div class="l-main__form__box__selects__selectBoxes">
+            <select name="salary" class="l-main__form__box__selects__selectBoxes__select">
+              <option value="月給17万〜">月給17万〜</option>
+              <option value="月給18万〜">月給18万〜</option>
+              <option value="月給19万〜">月給19万〜</option>
+              <option value="月給20万〜" selected>月給20万〜</option>
+              <option value="月給21万〜">月給21万〜</option>
+              <option value="月給22万〜">月給22万〜</option>
+              <option value="月給23万〜">月給23万〜</option>
+            </select>
+          </div>
+          <input class="l-main__form__box__selects__input" placeholder="キーワード・企業名・スキルなど">
+          <div>
+            <button class="l-main__form__box__selects__button">
+              <img src="./img/icon/icon-search-white.png" alt="">
+              検索する
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="l-main__news">
+      <div class="l-main__news__contents l-inner">
+        <h1>新着求人</h1>
+        <div>
+          <button class="l-main__news__contents__btnLeft">
+            <!-- <button class="l-main__news__contents__btnLeft__icon"></button> -->
+          </button>
+        </div>
+        <div>          
+          <button class="l-main__news__contents__btnRight">
+            <!-- <button class="l-main__news__contents__btnRight__icon"></button> -->
+          </button>
+        </div>
+        <ul class="l-main__news__contents__offers">
+          <li class="l-main__news__contents__offers__offer">
+            <div class="l-main__news__contents__offers__offer__image">
+              <img src="./img/picture/news-people3.jpg" alt="">
+            </div>
+            <div class="l-main__news__contents__offers__offer__sentence">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+            </div>
+            <div class="l-main__news__contents__offers__offer__info">
+              <div class="l-main__news__contents__offers__offer__info__salery">
+                <div class="l-main__news__contents__offers__offer__info__salery__blocks">
+                  <p class="l-main__news__contents__offers__offer__info__salery__blocks__title">
+                    給与
+                  </p>
+                  <p class="l-main__news__contents__offers__offer__info__salery__blocks__description">
+                    月給148000~
+                  </p>
+                </div>
+              </div>
+              <div class="l-main__news__contents__offers__offer__info__city">
+                <div class="l-main__news__contents__offers__offer__info__city__blocks">
+                  <p class="l-main__news__contents__offers__offer__info__city__blocks__title">
+                    所在地
+                  </p>
+                  <p class="l-main__news__contents__offers__offer__info__city__blocks__description">
+                    三重県伊勢市
+                  </p>
+                </div>
+              </div>
+              <div class="l-main__news__contents__offers__offer__info__station">
+                <div class="l-main__news__contents__offers__offer__info__station__blocks">
+                  <p class="l-main__news__contents__offers__offer__info__station__blocks__title">
+                    最寄駅
+                  </p>
+                  <p class="l-main__news__contents__offers__offer__info__station__blocks__description">
+                    伊勢市駅 徒歩15分
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-main__news__contents__offers__offer">
+            <div class="l-main__news__contents__offers__offer__image">
+              <img src="./img/picture/news-people4.jpg" alt="">
+            </div>
+            <div class="l-main__news__contents__offers__offer__sentence">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+            </div>
+            <div class="l-main__news__contents__offers__offer__info">
+              <div class="l-main__news__contents__offers__offer__info__salery">
+                <div class="l-main__news__contents__offers__offer__info__salery__blocks">
+                  <p class="l-main__news__contents__offers__offer__info__salery__blocks__title">
+                    給与
+                  </p>
+                  <p class="l-main__news__contents__offers__offer__info__salery__blocks__description">
+                    月給148000~
+                  </p>
+                </div>
+              </div>
+              <div class="l-main__news__contents__offers__offer__info__city">
+                <div class="l-main__news__contents__offers__offer__info__city__blocks">
+                  <p class="l-main__news__contents__offers__offer__info__city__blocks__title">
+                    所在地
+                  </p>
+                  <p class="l-main__news__contents__offers__offer__info__city__blocks__description">
+                    三重県伊勢市
+                  </p>
+                </div>
+              </div>
+              <div class="l-main__news__contents__offers__offer__info__station">
+                <div class="l-main__news__contents__offers__offer__info__station__blocks">
+                  <p class="l-main__news__contents__offers__offer__info__station__blocks__title">
+                    最寄駅
+                  </p>
+                  <p class="l-main__news__contents__offers__offer__info__station__blocks__description">
+                    伊勢市駅 徒歩15分
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-main__news__contents__offers__offer">
+            <div class="l-main__news__contents__offers__offer__image">
+              <img src="./img/picture/news-people1.jpg" alt="">
+            </div>
+            <div class="l-main__news__contents__offers__offer__sentence">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+            </div>
+            <div class="l-main__news__contents__offers__offer__info">
+              <div class="l-main__news__contents__offers__offer__info__salery">
+                <div class="l-main__news__contents__offers__offer__info__salery__blocks">
+                  <p class="l-main__news__contents__offers__offer__info__salery__blocks__title">
+                    給与
+                  </p>
+                  <p class="l-main__news__contents__offers__offer__info__salery__blocks__description">
+                    月給148000~
+                  </p>
+                </div>
+              </div>
+              <div class="l-main__news__contents__offers__offer__info__city">
+                <div class="l-main__news__contents__offers__offer__info__city__blocks">
+                  <p class="l-main__news__contents__offers__offer__info__city__blocks__title">
+                    所在地
+                  </p>
+                  <p class="l-main__news__contents__offers__offer__info__city__blocks__description">
+                    三重県伊勢市
+                  </p>
+                </div>
+              </div>
+              <div class="l-main__news__contents__offers__offer__info__station">
+                <div class="l-main__news__contents__offers__offer__info__station__blocks">
+                  <p class="l-main__news__contents__offers__offer__info__station__blocks__title">
+                    最寄駅
+                  </p>
+                  <p class="l-main__news__contents__offers__offer__info__station__blocks__description">
+                    伊勢市駅 徒歩15分
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-main__news__contents__offers__offer">
+            <div class="l-main__news__contents__offers__offer__image">
+              <img src="./img/picture/news-people2.jpg" alt="">
+            </div>
+            <div class="l-main__news__contents__offers__offer__sentence">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+            </div>
+            <div class="l-main__news__contents__offers__offer__info">
+              <div class="l-main__news__contents__offers__offer__info__salery">
+                <div class="l-main__news__contents__offers__offer__info__salery__blocks">
+                  <p class="l-main__news__contents__offers__offer__info__salery__blocks__title">
+                    給与
+                  </p>
+                  <p class="l-main__news__contents__offers__offer__info__salery__blocks__description">
+                    月給148000~
+                  </p>
+                </div>
+              </div>
+              <div class="l-main__news__contents__offers__offer__info__city">
+                <div class="l-main__news__contents__offers__offer__info__city__blocks">
+                  <p class="l-main__news__contents__offers__offer__info__city__blocks__title">
+                    所在地
+                  </p>
+                  <p class="l-main__news__contents__offers__offer__info__city__blocks__description">
+                    三重県伊勢市
+                  </p>
+                </div>
+              </div>
+              <div class="l-main__news__contents__offers__offer__info__station">
+                <div class="l-main__news__contents__offers__offer__info__station__blocks">
+                  <p class="l-main__news__contents__offers__offer__info__station__blocks__title">
+                    最寄駅
+                  </p>
+                  <p class="l-main__news__contents__offers__offer__info__station__blocks__description">
+                    伊勢市駅 徒歩15分
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="l-main__news__contents__btn">
+          <button class="l-main__news__contents__btn__button">新着求人一覧をもっと見る</button>
+        </div>
+      </div>
+    </div>
+    <div class="l-main__group1">
+      <div class="l-main__group1__sentence">
+        <p>ギズジョブなら理想の職場がきっと見つかる<br>ギズジョブは完全無料の求職者向け求人サービスです</p>
       </div>
     </div>
   </main>
