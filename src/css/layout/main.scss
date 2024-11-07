@@ -52,6 +52,7 @@
       align-items: center;
       height: 240px;
       background-color: variables.$bgLavender;
+      border-radius: 10px;
 
       &__sentences{
         display: flex;
@@ -116,6 +117,7 @@
             &:hover{
                 opacity: .8;
                 transition: .3s;
+                cursor : pointer;
             }
         }
       }
@@ -185,6 +187,11 @@
         gap: 20px;
 
         &__offer{
+
+            &__image{
+              border: 0;
+              border-radius: 10px;
+            }
 
             &__sentence{
               & p{
@@ -277,6 +284,7 @@
           &:hover{
               opacity: .8;
               transition: .3s;
+              cursor : pointer;
           }
         }
       }
