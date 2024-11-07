@@ -4,10 +4,16 @@
   margin-top: 106px;
   text-align: center;
   font-family: u.$regularFont;
+  @include u.sp {
+    margin-top: 0.55rem;
+  }
 
   &__title {
     font-size: 25px;
     font-weight: u.$bold;
+    @include u.sp {
+      font-size: 0.25rem;
+    }
   }
 
   &__ul {
@@ -16,6 +22,10 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    @include u.sp {
+      flex-direction: column;
+      align-items: center;
+    }
 
     &__li {
       background-color: u.$bgPink;
@@ -23,11 +33,19 @@
       width: 570px;
       height: 180px;
       padding: 40px 47px;
+      @include u.sp {
+        width: 3.7rem;
+        height: 1.44rem;
+        padding: 0.3rem 0.10rem;
+      }
 
       &__heading {
         font-size: 24px;
         color: u.$buttonPink;
         font-weight: u.$bold;
+        @include u.sp {
+          font-size: 0.2rem;
+        }
       }
 
       &__text {
@@ -39,6 +57,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include u.sp {
+          font-size: 0.12rem;
+          line-height: 0.17rem;
+          margin-top: 0.30rem;
+          height: 0.51rem;
+        }
       }
     }
   }
