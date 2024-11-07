@@ -1,18 +1,29 @@
 @use '../../object/utility/utility.scss' as u;
+
 // お仕事検索に関するスタイル
 .p-jobsearch {
+  width: 100%;
   text-align: center;
   font-family: u.$regularFont;
   display: flex;
   justify-content: center;
-  
+
   &__top {
     margin: 60px 0;
+
+    @include u.sp {
+      margin: 0.25rem 0.15rem;
+    }
   }
 
   &__bottom {
     margin-top: 150px;
     margin-bottom: 200px;
+
+    @include u.sp {
+      margin-top: 0.6rem;
+      margin-bottom: 1rem;
+    }
   }
 
   &__form {
@@ -22,56 +33,105 @@
     border-radius: 10px;
     padding: 40px;
 
+    @include u.sp {
+      width: 3.7rem;
+      padding: .15rem .25rem .20rem .25rem;
+    }
+
     &__title {
       font-size: 25px;
       font-weight: u.$bold;
       line-height: 25px;
+
+      @include u.sp {
+        font-size: .22rem;
+      }
     }
 
     &__text {
-
       font-size: 20px;
       font-weight: u.$regular;
       line-height: 28.96px;
       margin-top: 20px;
+
+      @include u.sp {
+        font-size: .14rem;
+        margin-top: 0.16rem;
+      }
     }
 
-    &__ul {
+    &__item {
       display: flex;
       gap: 15px;
       margin-top: 25px;
       justify-content: center;
+      align-items: center;
 
-      &__li {
-        position: relative;
+      @include u.sp {
+        flex-direction: column;
+        margin-top: 0.13rem;
+      }
 
-        &__select-box {
-          width: 200px;
-          @include u.input(u.$white, u.$selectBoxPink);
-        }
-        &::after {
-          content: "";
-          display: inline-block;
+      &__ul {
+        display: flex;
+        gap: 15px;
+
+        &__li {
+          position: relative;
   
-          background-color: u.$selectBoxPink;
-          height: calc(20px / 2);
-          width: 20px;
-          clip-path: polygon(0 0, 100% 0, 50% 100%);
-          position: absolute;
-          top: 25px;
-          right: 15px;
+          &__select-box {
+            width: 200px;
+            @include u.input(u.$white, u.$selectBoxPink);
+
+            @include u.sp {
+              width: 1rem;
+              height: 0.3rem;
+              font-size: .12rem;
+            }
+          }
+  
+          &::after {
+            content: "";
+            display: inline-block;
+            background-color: u.$selectBoxPink;
+            height: calc(20px / 2);
+            width: 20px;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+            position: absolute;
+            top: 25px;
+            left: 165px;
+
+            @include u.sp {
+              height: calc(0.13rem / 2);
+              width: 0.13rem;
+              top: 0.125rem;
+              left: 0.8rem;
+            }
+          }
         }
       }
+
     }
 
 
     &__input-text {
       width: 300px;
       @include u.input(u.$white, u.$selectBoxPink);
+
+      @include u.sp {
+        width: 3.2rem;
+        height: 0.3rem;
+        font-size: 0.14rem;
+      }
     }
 
     &__button {
       width: 140px;
+
+      @include u.sp {
+        width: 1.6rem;
+        height: 0.4rem;
+      }
 
       &__link {
         padding: 20px 20px 20px 48px;
@@ -81,6 +141,11 @@
         background-repeat: no-repeat;
         background-size: 30px;
         background-image: url("../img/icon/icon-search-white.png");
+
+        @include u.sp {
+          padding: 0.1rem 0.43rem 0.12rem 0.45rem;
+          background-size: 0.1798rem;
+        }
       }
     }
   }
