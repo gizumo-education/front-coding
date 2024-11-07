@@ -1,12 +1,17 @@
 @use '../../object/utility/utility.scss' as u;
-// @use 'src\css\foundation\_variables.scss';
-// @use 'src\css\foundation\_mixins.scss';
 // 画像に関するスタイル
 
 .p-contents {
   position: relative;
   display: flex;
   justify-content: center;
+  font-family: u.$regularFont;
+  width: 100%;
+  height: 300px;
+  @include u.sp {
+    width: 4.0rem;
+    height: 0.75rem;
+  }
 
   &__img {
     filter: brightness(50%);
@@ -15,18 +20,26 @@
   &__text01 {
     position: absolute;
     top: 110px;
-    font-family: u.$regularFont;
     font-size: 25px;
     font-weight: u.$bold;
     color: u.$white;
+    @include u.sp {
+      top: 0.16rem;
+      font-size: 0.14rem;
+      font-weight: u.$regular;
+    }
   }
 
   &__text02 {
     position: absolute;
     top: 168px;
-    font-family: u.$regularFont;
     font-size: 25px;
     font-weight: u.$bold;
     color: u.$white;
+    @include u.sp {
+      top: 0.38rem;
+      font-size: 0.14rem;
+      font-weight: u.$regular;
+    }
   }
 }
