@@ -2,10 +2,39 @@
 // 新着求人に関するスタイル
 
 .p-newjobs {
-  width: 1600px;
-  height: 636px;
+  width: 100%;
   background-color: u.$bgLightBlue;
   padding: 64px 210px 67px 210px;
+  font-family: u.$regularFont;
+
+  @include u.sp {
+    padding: 0.30rem 0.15rem 0.60rem 0.15rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__inner {
+    width: 1180px;
+
+    @include u.sp {
+      width: 3.7rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: u.$regular;
+    text-align: left;
+
+    @include u.sp {
+      font-size: 0.25rem;
+      font-weight: u.$bold;
+      text-align: center;
+    }
+  }
 
   &__wrapper {
     position: relative;
@@ -18,6 +47,33 @@
     &__li {
       margin-top: 31px;
 
+      @include u.sp {
+        margin-top: 0.35rem;
+
+        &:not(:first-child) {
+          display: none;
+        }
+      }
+
+      &__img {
+        width: 280px;
+        height: 200px;
+
+        @include u.sp {
+          display: none;
+        }
+      }
+      
+      &__img-sp {
+        display: none;
+        
+        @include u.sp {
+          display: block;
+          width: 3.7rem;
+          height: 2.08rem;
+        }
+      }
+
       &__text {
         margin-top: 8px;
         font-family: u.$regularFont;
@@ -25,6 +81,13 @@
         font-weight: u.$regular;
         line-height: 22px;
         text-align: left;
+
+        @include u.sp {
+          font-size: 0.16rem;
+          font-weight: u.$bold;
+          line-height: 0.22rem;
+          text-align: left;
+        }
       }
 
       &__info {
@@ -38,7 +101,7 @@
       }
     }
   }
-  
+
   .p-newjobs-title {
     display: block;
     width: 60px;
@@ -50,15 +113,18 @@
     line-height: 20.27px;
     text-align: center;
   }
-  
+
   .p-newjobs-text {
     margin-left: 10px;
   }
-  
+
   &__arrow--button__left {
     position: absolute;
     top: 100px;
     left: 0px;
+    @include u.sp {
+      top: 1.57rem;
+    }
 
     &::before {
       content: "";
@@ -79,6 +145,9 @@
     position: absolute;
     top: 100px;
     right: 0px;
+    @include u.sp {
+      top: 1.57rem;
+    }
 
     &::before {
       content: "";
@@ -98,9 +167,12 @@
 
   &__button {
     width: 360px;
-    margin: 0 auto;
-    margin-top: 58px;
+    margin: 58px auto 0 auto;
     padding: 21px 72px;
+
+    @include u.sp {
+      margin: 0.44rem auto 0 auto;
+    }
 
     &__link {
       color: u.$white;
