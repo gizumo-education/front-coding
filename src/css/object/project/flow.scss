@@ -4,10 +4,16 @@
   margin-top: 105px;
   text-align: center;
   font-family: u.$regularFont;
+  @include u.sp {
+    margin-top: 0.6rem;
+  }
 
   &__title {
     font-size: 25px;
     font-weight: u.$bold;
+    @include u.sp {
+      font-size: 0.25rem;
+    }
   }
 
   &__contents-wrapper {
@@ -15,6 +21,11 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    @include u.sp {
+      margin-top: 0.35rem;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   
   &__contents {
@@ -28,6 +39,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    @include u.sp {
+      width: 2.8rem;
+      height: 2.93rem;
+      padding: 0.55rem 0.2rem 0.31rem 0.2rem;
+    }
     
     &__circle {
       position: absolute;
@@ -43,6 +59,13 @@
       line-height: 19.36px;
       overflow-wrap: break-word;
       padding: 11px 9px;
+      @include u.sp {
+        width: 0.45rem;
+        height: 0.45rem;
+        font-size: 0.1rem;
+        padding: 0.11rem 0.09rem;
+        line-height: 0.12rem;
+      }
     }
 
     &__img {
@@ -82,6 +105,14 @@
       top: 50%;
       transform: translateY(-50%);
       left: 278px;
+      @include u.sp {
+        width: 0.4rem;
+        height: calc(0.4rem / 2);
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+        top: 2.9rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 }
