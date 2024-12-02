@@ -1,0 +1,39 @@
+@use '../../object/utility/utility.scss';
+
+.p-content {
+  position: relative;
+
+  &__text {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+    &__inner {
+      color: utility.$white;
+      font-size: 25px;
+      font-weight: utility.$bold;
+      line-height: 36.2px;
+
+
+      &:nth-child(n+2) {
+        padding-top: 21px;
+      }
+    }
+  }
+
+  &__img {
+    width: 1600px;
+    margin: auto;
+
+
+
+    &__inner {
+      filter: brightness(50%);
+    }
+
+  }
+}

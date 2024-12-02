@@ -1,0 +1,145 @@
+@use '../../object/utility/utility.scss';
+
+.p-slider {
+  background-color: utility.$bgLightBlue;
+
+  .arrow__r {
+    position: relative;
+    display: inline-block;
+    padding-left: 22px;
+  }
+
+  .arrow__r:before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    background: utility.$white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .arrow__r:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-top: solid 2px utility.$black;
+    border-right: solid 2px utility.$black;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: 8px;
+    bottom: 0;
+    margin: auto;
+  }
+
+  &__box {
+    width: 1180px;
+    margin: auto;
+    padding: 64px 0 67px;
+
+    &__title {
+      font-size: 25px;
+      font-weight: utility.$regular;
+    }
+
+    &__slide {
+      position: relative;
+
+      &__arrow__r {
+        position: absolute;
+        top: 100px;
+        right: 0px;
+
+        &:before {
+          content: '';
+          width: 20px;
+          height: 20px;
+          border-top: solid 0.7px utility.$black;
+          border-right: solid 0.7px utility.$black;
+          transform: rotate(45deg);
+          position: absolute;
+          top: 0;
+          right: 24px;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+
+      &__arrow__l {
+        position: absolute;
+        top: 100px;
+        left: 0px;
+
+        &:before {
+          content: '';
+          width: 20px;
+          height: 20px;
+          border-top: solid 0.7px utility.$black;
+          border-right: solid 0.7px utility.$black;
+          transform: rotate(225deg);
+          position: absolute;
+          top: 0;
+          left: 24px;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+
+      &__contents {
+        padding-top: 30px;
+        display: flex;
+
+
+
+
+        &__block {
+          width: 280px;
+
+          &:nth-child(n+2) {
+            margin-left: 20px;
+          }
+
+          &__text {
+            padding-top: 8px;
+            font-size: 16px;
+            font-weight: utility.$regular;
+            line-height: 22px;
+          }
+
+          &__list {
+            padding-top: 7px;
+
+            &__inner {
+              font-size: 14px;
+
+              &:nth-child(n+2) {
+                margin-top: 5px;
+              }
+
+              &__area {
+                display: inline-block;
+                width: 60px;
+                text-align: center;
+                background-color: utility.$pink_02;
+                line-height: 20.27px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__btn {
+      width: 360px;
+      margin: 59px auto 0;
+      padding: 17px 0;
+      text-align: center;
+    }
+  }
+}

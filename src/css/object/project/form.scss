@@ -1,0 +1,78 @@
+@use '../../object/utility/utility.scss';
+
+.p-form {
+  width: 1180px;
+  height: 240px;
+  margin: 60px auto;
+  padding-top: 42px;
+  text-align: center;
+  background-color: utility.$bgLightBlue_02;
+
+  &__title {
+    font-size: 25px;
+    font-weight: utility.$bold;
+  }
+
+  &__text {
+    font-size: 20px;
+    padding-top: 26px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    select {
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url("../img/icon/icon-arrow.png");
+      background-repeat: no-repeat;
+      background-size: 24px auto;
+      /* 画像のサイズ（幅 高さ）*/
+      background-position: right 12px center;
+      /* 画像の位置 */
+    }
+
+    &__index {
+      width: 200px;
+      height: 60px;
+      padding-left: 15px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: 1px solid utility.$pink;
+
+      &:nth-child(n+2) {
+        margin-left: 15px;
+      }
+    }
+
+    &__input {
+      width: 300px;
+      padding: 17px 0 17px 10px;
+    }
+
+    &__button {
+      width: 140px;
+      margin-left: 15px;
+    }
+
+    a[class^="is-"] {
+      width: 100%;
+      height: 60px;
+      padding: 20px 0 20px 20px;
+      background-position: left 12% top 50%;
+      background-repeat: no-repeat;
+      background-size: 30px;
+
+      @include utility.tab {
+        padding-left: .2rem;
+        background-size: .16rem;
+      }
+
+      &.is-search {
+        background-image: url("../img/icon/icon-search_02.png");
+      }
+    }
+  }
+}
