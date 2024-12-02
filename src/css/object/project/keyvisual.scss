@@ -3,20 +3,17 @@
 
 .p-keyvisual {
   background: utility.$bgmain;
-  position: relative;
   height: 500px;
 
   &__box {
     display: flex;
     flex-flow: column;
     align-items: center;
-    position: absolute;
-    top: 63px;
-    right: 200px;
+    margin-left: 395px;
+    padding-top: 60px;
 
     &__phrase {
       margin-top: 40px;
-      // padding: 40px 0 54px 0;
     }
 
     &__inner {
