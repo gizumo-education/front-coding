@@ -7,6 +7,8 @@
   padding-top: 42px;
   text-align: center;
   background-color: utility.$bgLightBlue_02;
+  border-radius: 10px;
+
 
   &__title {
     font-size: 25px;
@@ -15,7 +17,7 @@
 
   &__text {
     font-size: 20px;
-    padding-top: 26px;
+    margin-top: 26px;
   }
 
   &__block {
@@ -29,9 +31,7 @@
       background-image: url("../img/icon/icon-arrow.png");
       background-repeat: no-repeat;
       background-size: 24px auto;
-      /* 画像のサイズ（幅 高さ）*/
       background-position: right 12px center;
-      /* 画像の位置 */
     }
 
     &__index {
