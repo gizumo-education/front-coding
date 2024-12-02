@@ -1,2 +1,20 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as ut;
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button {
+  height: 60px;
+  background-color: ut.$pink02;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: ut.$bold;
+  font-family: ut.$fontFamily;
+}
+
+.c-carousel-button {
+  width: 60px;
+  height: 60px;
+  background-color: ut.$white02;
+  opacity: 0.7;
+  border: none;
+  border-radius: 50%;
+}

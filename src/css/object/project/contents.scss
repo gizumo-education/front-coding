@@ -1,0 +1,37 @@
+@use '../../object/utility/utility.scss' as ut;
+// ページ下部のビジュアルに関するスタイル
+.p-contents {
+  height: 300px;
+  width: 1600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__img-dark{
+    background-color: black;
+  }
+
+  &__img {
+    display: block;
+    opacity: 50%;
+  }
+
+  &__font-area {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  &__font {
+    font-weight: ut.$bold;
+    font-size: 25px;
+    color: ut.$white02;
+    text-align: center;
+  }
+
+  &__font:nth-child(2) {
+    margin-top: 29px;
+  }
+
+}
