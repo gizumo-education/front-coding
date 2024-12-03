@@ -24,7 +24,7 @@
   
     &__font02 {
       font-size: 20px;
-      padding-top: 20px;
+      margin-top: 20px;
       white-space: nowrap;
       font-weight: ut.$regular;
       line-height: 29px;
@@ -69,12 +69,20 @@
 
       &__link {
         color: ut.$white02;
-        padding: 20px 20px 20px 48px;
+        padding: 16px 20px 20px 48px;
         background-repeat: no-repeat;
         font-size: 18px;
         background-position: center left 14px;
         background-size: 30px;
         background-image: url("../img/icon/icon-search02.png");
+        border: 0 solid ut.$white02;
+        height: 60px;
+        background-color: ut.$pink02;
+        border-radius: 30px;
+        font-size: 18px;
+        font-weight: ut.$bold;
+        font-family: ut.$fontFamily;
+        cursor:pointer
       }
     }
   }

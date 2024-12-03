@@ -2,7 +2,6 @@
 // ページの「新着求人」に関するスタイル
 .p-newjobs {
   height: 636px;
-  width: 1600px;
   background-color: ut.$bgLightBlue ;
   padding: 64px 210px 64px 210px;
 
@@ -16,6 +15,10 @@
 
     &__li {
       margin-top: 25px;
+
+      &__img {
+        border-radius: 10px;
+      }
 
       &__text {
         font-size: 16px;
@@ -96,13 +99,16 @@
 
   &__button {
     padding: 21px 72px;
-    margin: 0 auto;
-    margin-top: 60px;
     width: 360px;
 
-    &__link {
-      color: ut.$white02;
-    }
+  &__link {
+    color: ut.$white02;
+    margin: 0 auto;
+    width: 360px;
+    display: block;
+    margin-top: 60px;
+  }
+
   }
 
 }
