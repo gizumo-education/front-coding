@@ -3,40 +3,6 @@
 .p-slider {
   background-color: utility.$bgLightBlue;
 
-  .arrow__r {
-    position: relative;
-    display: inline-block;
-    padding-left: 22px;
-  }
-
-  .arrow__r:before {
-    content: '';
-    width: 60px;
-    height: 60px;
-    background: utility.$white;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-  }
-
-  .arrow__r:after {
-    content: '';
-    width: 30px;
-    height: 30px;
-    border: 0;
-    border-top: solid 2px utility.$black;
-    border-right: solid 2px utility.$black;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 0;
-    left: 8px;
-    bottom: 0;
-    margin: auto;
-  }
-
   &__box {
     width: 1180px;
     margin: auto;
@@ -50,7 +16,7 @@
     &__slide {
       position: relative;
 
-      &__arrow__r {
+      &__arrow__right {
         position: absolute;
         top: 100px;
         right: 0px;
@@ -70,7 +36,7 @@
         }
       }
 
-      &__arrow__l {
+      &__arrow__left {
         position: absolute;
         top: 100px;
         left: 0px;
