@@ -1,36 +1,41 @@
 @use '../../object/utility/utility.scss' as ut;
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual {
-  height: 500px;
   background-color: ut.$gray;
-  position: relative;
-  text-align: center;
-  justify-content: center;
-  display: flex;
+  // height: 500px;
+  // position: relative;
+  // text-align: center;
+  // justify-content: center;
+  // display: flex;
+
+  &__backgroundimg {
+    background-image: url("../img/picture/keyvisual-img.png");
+    background-repeat: no-repeat;
+    padding-top: 56.49px;
+    padding-bottom: 47px;
+    margin-left: 175px;
+    margin-right: 163px;
+    // width: 1262px;
+    // background-size: auto;
+  }
 
   &__position {
-    position:absolute;
+    margin: 0 0.2rem 0 auto;
+    display: flex;
+    flex-direction:column;
+    width: fit-content;
   }
 
-  &__img01 {
-    width: 1262px;
-    object-fit: cover;
-    background-image: url("../img/picture/keyvisual-img.png");
-    background-size: auto;
-  }
   &__img02 {
     width: 341.81px;
     height: 168.51px;
-    margin-top: 56.49px;
-    margin-left: 655px;
-    margin-right: 428.19px;
+    margin: 0 auto;
   }
   &__img03 {
     width: 800px;
     height: 65px;
+    margin: 0 auto;
     margin-top: 40px;
-    margin-left: 432px;
-    margin-right: 193px;
   }
 
   &__jobs {
@@ -40,7 +45,7 @@
     border: solid 2.3px ut.$green;
     border-radius: 10px;
     display: table;
-    margin-left: 634.5px;
+    margin: 0 auto;
     margin-top: 54px;
   }
 
