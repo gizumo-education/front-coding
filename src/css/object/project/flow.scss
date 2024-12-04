@@ -1,0 +1,81 @@
+@use '../../object/utility/utility.scss';
+
+.p-flow {
+  width: 1180px;
+  margin: 105px auto 0;
+
+  &__icon {
+    height: 110px;
+  }
+
+  &__box {
+    margin-top: 51px;
+    display: flex;
+    justify-content: space-between;
+
+    &__list {
+      width: 280px;
+      height: 360px;
+      border: 2.27px solid utility.$pink;
+      border-radius: 10px;
+      position: relative;
+      display: inline-block;
+
+      &:nth-child(n+2):after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 0 20px 20px;
+        border-color: transparent transparent transparent utility.$pink;
+        position: absolute;
+        top: 0;
+        left: -22px;
+        bottom: 0;
+        margin: auto;
+      }
+
+        &__num {
+          display: flex;
+          width: 60px;
+          height: 60px;
+          margin: 10px 0 0 10px;
+          border-radius: 50px;
+          font-size: 16px;
+          font-weight: utility.$bold;
+          color: utility.$white;
+          background-color: utility.$pink;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+      &__inner {
+        text-align: center;
+        margin-top: -9px;
+        padding: 0 15px;
+
+        &__title {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 60px;
+          margin-top: 5px;
+          font-size: 24px;
+          font-weight: utility.$bold;
+          line-height: 30px;
+        }
+
+        &__text {
+          margin-top: 18px;
+          font-size: 14px;
+          font-weight: utility.$regular;
+          font-family: Noto Sans JP;
+          line-height: 20.27px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

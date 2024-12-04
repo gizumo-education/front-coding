@@ -1,19 +1,11 @@
 @use '../../object/utility/utility.scss';
 
 .p-form {
-  width: 1180px;
   height: 240px;
-  margin: 60px auto;
   padding-top: 42px;
   text-align: center;
   background-color: utility.$bgLightBlue_02;
   border-radius: 10px;
-
-
-  &__title {
-    font-size: 25px;
-    font-weight: utility.$bold;
-  }
 
   &__text {
     font-size: 20px;
