@@ -2,11 +2,6 @@
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual {
   background-color: ut.$gray;
-  // height: 500px;
-  // position: relative;
-  // text-align: center;
-  // justify-content: center;
-  // display: flex;
 
   &__backgroundimg {
     background-image: url("../img/picture/keyvisual-img.png");
@@ -15,8 +10,6 @@
     padding-bottom: 47px;
     margin-left: 175px;
     margin-right: 163px;
-    // width: 1262px;
-    // background-size: auto;
   }
 
   &__position {
