@@ -1,2 +1,47 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual {
+  background: utility.$bgmain;
+  height: 500px;
+
+  &__box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-left: 395px;
+    padding-top: 60px;
+
+    &__phrase {
+      margin-top: 40px;
+    }
+
+    &__inner {
+      width: 391px;
+      height: 69px;
+      line-height: 70px;
+      font-size: 20px;
+      margin-top: 54px;
+      background-color: utility.$white;
+      border-radius: 10px;
+      border: 2.3px solid utility.$green;
+      text-align: center;
+      color: utility.$green;
+
+      &__text {
+
+        &__bold {
+          font-size: 40px;
+          font-weight: utility.$bold;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 1262px;
+    height: 500px;
+    margin: auto;
+    background-image: url('../img/picture/main/main-img.png');
+  }
+}
