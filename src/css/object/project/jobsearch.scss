@@ -1,0 +1,89 @@
+@use '../../object/utility/utility.scss' as ut;
+// ページの「お仕事検索」に関するスタイル
+.p-jobsearch {
+  font-family: ut.$fontFamily;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+
+  &__Padding {
+    padding: 60px;
+  }
+  &__contents {
+    background-color: ut.$blue;
+    width: 1180px;
+    height: 240px;
+    padding-top: 40px;
+    border-radius: 10px;
+  
+    &__font01 {
+      font-size: 25px;
+      font-weight: ut.$bold;
+      line-height: 25px;
+    }
+  
+    &__font02 {
+      font-size: 20px;
+      margin-top: 20px;
+      white-space: nowrap;
+      font-weight: ut.$regular;
+      line-height: 29px;
+    }
+  
+    &__labelPadding {
+      display: flex;
+      margin-top: 26px;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    &__labelposition {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        right: 15px;
+
+        background-color: ut.$pink01;
+        height: calc(20px / 2);
+        display: inline-block;
+        width: 20px;
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+      }
+    }
+  
+    &__label {
+      width: 200px;
+      @include ut.input(ut.$pink01, ut.$white);
+    }
+  
+
+    &__form-input {
+      width: 299px;
+      @include ut.input(ut.$pink01, ut.$white);
+    }
+  
+    &__form-button {
+      width: 140px;
+
+      &__link {
+        color: ut.$white02;
+        padding: 16px 20px 20px 48px;
+        background-repeat: no-repeat;
+        font-size: 18px;
+        background-position: center left 14px;
+        background-size: 30px;
+        background-image: url("../img/icon/icon-search02.png");
+        border: 0 solid ut.$white02;
+        height: 60px;
+        background-color: ut.$pink02;
+        border-radius: 30px;
+        font-size: 18px;
+        font-weight: ut.$bold;
+        font-family: ut.$fontFamily;
+        cursor:pointer
+      }
+    }
+  }
+}

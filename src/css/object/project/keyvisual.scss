@@ -1,2 +1,56 @@
-@use '../../object/utility/utility.scss';
+@use '../../object/utility/utility.scss' as ut;
 // ページ上部のキービジュアルに関するスタイル
+.p-keyvisual {
+  background-color: ut.$gray;
+
+  &__backgroundimg {
+    background-image: url("../img/picture/keyvisual-img.png");
+    background-repeat: no-repeat;
+    padding-top: 56.49px;
+    padding-bottom: 47px;
+    margin-left: 175px;
+    margin-right: 163px;
+  }
+
+  &__position {
+    margin: 0 0.2rem 0 auto;
+    display: flex;
+    flex-direction:column;
+    width: fit-content;
+  }
+
+  &__img02 {
+    width: 341.81px;
+    height: 168.51px;
+    margin: 0 auto;
+  }
+  &__img03 {
+    width: 800px;
+    height: 65px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  &__jobs {
+    height: 69px;
+    width: 391px;
+    background-color: ut.$white02;
+    border: solid 2.3px ut.$green;
+    border-radius: 10px;
+    display: table;
+    margin: 0 auto;
+    margin-top: 54px;
+  }
+
+  &__jobs-information {
+    font-size: 20px;
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+    color: ut.$green;
+    span {
+      font-weight: bold;
+      font-size: 40px;
+    }
+  }
+}

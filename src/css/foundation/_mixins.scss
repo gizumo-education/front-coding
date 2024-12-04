@@ -23,4 +23,17 @@
     display: block;
     clear: both;
   }
+
+}
+
+@mixin input($bColor, $bgColor) {
+  font-family: Noto Sans JP;
+  height: 60px;
+  background-color: $bgColor;
+  border: 1px solid $bColor;
+  border-radius:10px;
+  font-size: 18px;
+  padding-left: 15px;
+  appearance: none;
+  outline: none;
 }

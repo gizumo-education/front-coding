@@ -1,0 +1,114 @@
+@use '../../object/utility/utility.scss' as ut;
+// ページの「新着求人」に関するスタイル
+.p-newjobs {
+  height: 636px;
+  background-color: ut.$bgLightBlue ;
+  padding: 64px 210px 64px 210px;
+
+  &__relative {
+    position: relative;
+  }
+
+  &__list {
+    display: flex;
+    gap:20px;
+
+    &__li {
+      margin-top: 25px;
+
+      &__img {
+        border-radius: 10px;
+      }
+
+      &__text {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 8px;
+        font-family: ut.$fontFamily;
+        font-weight: ut.$regular;
+        text-align: left;
+      }
+
+      &__salary {
+        margin-top: 7px;
+
+        &__parts {
+          display: flex;
+          margin-top: 5px;
+          align-items: center;
+
+          &__title {
+            background-color: ut.$pink03;
+            width: 60px;
+            height: 21px;
+            font-size: 14px;
+            display: block;
+            font-family: ut.$fontFamily;
+            line-height: 20.27px;
+            text-align: center;
+            font-weight: ut.$regular;
+          }
+
+          &__text {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &__carousel-button_left {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+  }
+
+  &__carousel-button_left::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 24px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    border-top: 0.7px solid ut.$black;
+    border-right: 0.7px solid ut.$black;
+    transform: rotate(225deg);
+  }
+
+  &__carousel-button_right {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+  }
+
+  &__carousel-button_right::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    right: 24px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    border-top: 0.7px solid ut.$black;
+    border-right: 0.7px solid ut.$black;
+    transform: rotate(45deg);
+  }
+
+  &__button {
+    padding: 21px 72px;
+    width: 360px;
+
+  &__link {
+    color: ut.$white02;
+    margin: 0 auto;
+    width: 360px;
+    display: block;
+    margin-top: 60px;
+  }
+
+  }
+
+}

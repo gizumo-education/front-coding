@@ -1,0 +1,32 @@
+@use '../../object/utility/utility.scss' as ut;
+// ページ下部のビジュアルに関するスタイル
+.p-contents {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/picture/contents-img.png");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+
+  &__font-area {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  &__font {
+    font-weight: ut.$bold;
+    font-size: 25px;
+    color: ut.$white02;
+    text-align: center;
+  }
+
+  &__font:nth-child(2) {
+    margin-top: 29px;
+  }
+
+}
