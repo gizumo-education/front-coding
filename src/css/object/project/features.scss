@@ -12,10 +12,10 @@
 
     &__list {
       width: 570px;
-      height: 180px;
       border-radius: 10px;
       background-color: utility.$bgpink;
       text-align: center;
+      padding-bottom: 40px;
 
       &:nth-child(n+3) {
         margin-top: 20px;
