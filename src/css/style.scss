@@ -20,4 +20,12 @@
 @use './object/project/form.scss';
 @use './object/project/slider.scss';
 @use './object/project/content.scss';
+@use './object/project/features.scss';
+@use './object/project/flow.scss';
+@use './object/project/useful.scss';
+/*-------------------------------------------*/
+
+/*utility---------------------------------*/
+@use './object/utility/margin.scss';
+@use './object/utility/h2.scss';
 /*-------------------------------------------*/
