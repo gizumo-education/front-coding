@@ -1,0 +1,55 @@
+@use '../../object/utility/utility.scss' as ut;
+// ページ後半の「ギズジョブの4つの特徴」に関するスタイル
+.p-features {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-family: Noto Sans JP;
+
+  &__padding {
+    padding: 160px 210px 160px 210px;
+  }
+
+  &__contents {
+    width: 1180px;
+    height: 478px;
+
+    &__title {
+      font-size: 25px;
+      height: 25px;
+      font-weight: ut.$bold;
+      line-height: 25px;
+    }
+
+    &__detailpadding {
+      margin-top: 53px;
+      display: flex;
+      flex-wrap: wrap;
+      gap:40px
+    }
+
+    &__detail {
+      background-color: ut.$pink04;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      width: 570px;
+      height: 180px;
+      border-radius: 10px;
+      &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        color: ut.$pink02;
+      }
+
+      &__text {
+        font-size: 14px;
+        margin:36px 61px 0 61px;
+        font-weight: 400;
+      }
+    }
+
+  }
+}
+
+

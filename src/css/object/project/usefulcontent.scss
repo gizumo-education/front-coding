@@ -1,0 +1,116 @@
+@use '../../object/utility/utility.scss' as ut;
+// ページ後半の「転職お役立ちコンテンツ」に関するスタイル
+.p-usefulcontent {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-family: Noto Sans JP;
+
+  &__padding {
+    padding: 0 210px 90px 210px;
+  }
+
+  &__contents {
+    width: 1180px;
+    height: 455px;
+
+    &__title {
+      font-size: 25px;
+      height: 25px;
+      font-weight: ut.$bold;
+    }
+
+    &__detailpadding {
+      margin-top: 53px;
+      display: flex;
+      gap:20px
+    }
+
+    &__detail {
+      margin-top: 53px;
+
+      &__img01 {
+        border-radius: 10px;
+        width: 380px;
+        height: 240px;
+        background-image: url("../img/picture/usefulcontent-img01.png");
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: overlay;
+        position: relative;
+      }
+
+      &__img02 {
+        border-radius: 10px;
+        width: 380px;
+        height: 240px;
+        background-image: url("../img/picture/usefulcontent-img02.png");
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: overlay;
+        position: relative;
+      }
+
+      &__img03 {
+        border-radius: 10px;
+        width: 380px;
+        height: 240px;
+        background-image: url("../img/picture/usefulcontent-img03.png");
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: overlay;
+        position: relative;
+      }
+
+      &__img-fontarea {
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+      &__img-font01 {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: ut.$bold;
+        color: ut.$white02;
+      }
+
+      &__img-font02 {
+        width: 256px;
+        height: 46px;
+        margin-top: 44px;
+        font-size: 16px;
+        line-height: 23.17px;
+        color: ut.$white02;
+      }
+
+      &__img-font03 {
+        width: 288px;
+        height: 46px;
+        margin-top: 44px;
+        font-size: 16px;
+        line-height: 23.17px;
+        color: ut.$white02;
+      }
+    }
+
+    &__button {
+      padding: 21px 72px;
+      width: 360px;
+      white-space: nowrap;
+  
+      &__link {
+        color: ut.$white02;
+        margin: 0 auto;
+        width: 360px;
+        display: block;
+        margin-top: 60px;
+      }
+    }
+  }
+
+
+
+
+}

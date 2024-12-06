@@ -6,7 +6,7 @@
   justify-content: center;
   display: flex;
 
-  &__Padding {
+  &__padding {
     padding: 60px;
   }
   &__contents {
@@ -85,5 +85,9 @@
         cursor:pointer
       }
     }
+  }
+
+  &__marginbottom {
+    margin-bottom: 160px;
   }
 }
