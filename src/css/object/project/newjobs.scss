@@ -5,6 +5,11 @@
   background-color: ut.$bgLightBlue ;
   padding: 64px 210px 64px 210px;
 
+  &__title {
+    line-height: 30.26px;
+    font-size: 25px;
+  }
+
   &__relative {
     position: relative;
   }
@@ -51,6 +56,8 @@
 
           &__text {
             margin-left: 10px;
+            font-size: 14px;
+            line-height: 16.94px;
           }
         }
       }
