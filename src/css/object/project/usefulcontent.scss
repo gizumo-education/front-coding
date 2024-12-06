@@ -7,7 +7,7 @@
   font-family: Noto Sans JP;
 
   &__padding {
-    padding: 0 210px 90px 210px;
+    padding-bottom: 90px;
   }
 
   &__contents {
@@ -21,7 +21,6 @@
     }
 
     &__detailpadding {
-      margin-top: 53px;
       display: flex;
       gap:20px
     }
@@ -64,7 +63,7 @@
 
       &__img-fontarea {
         position:absolute;
-        top: 50%;
+        top: 54%;
         left: 50%;
         transform: translate(-50%,-50%);
       }
@@ -97,20 +96,15 @@
 
     &__button {
       padding: 21px 72px;
-      width: 360px;
       white-space: nowrap;
   
       &__link {
         color: ut.$white02;
         margin: 0 auto;
-        width: 360px;
+        width: 420px;
         display: block;
-        margin-top: 60px;
+        margin-top: 80px;
       }
     }
   }
-
-
-
-
 }
