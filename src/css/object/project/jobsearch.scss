@@ -5,10 +5,8 @@
   text-align: center;
   justify-content: center;
   display: flex;
+  padding: 60px;
 
-  &__padding {
-    padding: 60px;
-  }
   &__contents {
     background-color: ut.$blue;
     width: 1180px;
@@ -30,7 +28,7 @@
       line-height: 29px;
     }
   
-    &__labelPadding {
+    &__labelflex {
       display: flex;
       margin-top: 26px;
       justify-content: center;

@@ -1,14 +1,11 @@
 @use '../../object/utility/utility.scss' as ut;
 // ページ後半の「転職までの流れ」に関するスタイル
-.p-processo {
+.p-process {
   text-align: center;
   justify-content: center;
   display: flex;
   font-family: Noto Sans JP;
-
-  &__padding {
-    padding-bottom: 105px;
-  }
+  padding-bottom: 105px;
 
   &__contents {
     width: 1180px;
@@ -20,7 +17,7 @@
       font-weight: ut.$bold;
     }
 
-    &__detailpadding {
+    &__detailflex {
       margin-top: 53px;
       display: flex;
       gap:20px

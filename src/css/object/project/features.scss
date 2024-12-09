@@ -5,11 +5,7 @@
   justify-content: center;
   display: flex;
   font-family: Noto Sans JP;
-
-  &__padding {
-    padding: 106px 0;
-
-  }
+  padding: 106px 0;
 
   &__contents {
     width: 1180px;
@@ -22,7 +18,7 @@
       line-height: 25px;
     }
 
-    &__detailpadding {
+    &__detailflex {
       margin-top: 53px;
       display: flex;
       flex-wrap: wrap;
