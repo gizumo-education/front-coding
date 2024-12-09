@@ -18,3 +18,12 @@
   border: none;
   opacity: 0.7;
 }
+
+// sp
+@include utility.sp {
+  
+  .c-slideButton {
+    width: .42rem;
+    height: .42rem;
+  }
+}

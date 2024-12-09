@@ -3,6 +3,10 @@
 .p-slider {
   background-color: utility.$bgLightBlue;
 
+  .sp-only {
+    display: none;
+  }
+
   &__box {
     width: 1180px;
     margin: auto;
@@ -109,6 +113,86 @@
       margin-top: 59px;
       padding: 17px 0;
       text-align: center;
+    }
+  }
+
+  /* SP */
+  @include utility.sp {
+
+    .pc-only {
+      display: none;
+    }
+
+    .sp-only {
+      display: block;
+    }
+
+    &__page {
+      display: none;
+    }
+
+    &__box {
+      width: 3.7rem;
+      padding: .29rem 0 .6rem;
+
+    }
+
+    &__arrow__right {
+      top: 1.57rem;
+
+      &:before {
+        width: .1rem;
+        height: .1rem;
+        right: .19rem;
+      }
+    }
+
+    &__arrow__left {
+      top: 1.57rem;
+
+      &:before {
+        width: .1rem;
+        height: .1rem;
+        left: .19rem;
+      }
+    }
+
+    &__contents {
+      margin-top: .35rem;
+      display: block;
+
+      &__block {
+        width: 3.7rem;
+
+        &:nth-child(n+2) {
+          margin-left: 0rem;
+        }
+
+        &__text {
+          margin-top: .1rem;
+          font-weight: utility.$bold;
+        }
+
+        &__list {
+          margin-top: .11rem;
+
+          &__inner {
+            &__area {
+              margin-right: .21rem;
+            }
+          }
+        }
+      }
+    }
+
+    &__btn {
+      width: 3.7rem;
+
+      &__inner {
+        width: 3.7rem;
+        margin-top: .49rem;
+        padding: .21rem 0;
+      }
     }
   }
 }

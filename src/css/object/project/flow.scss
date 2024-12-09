@@ -4,6 +4,10 @@
   width: 1180px;
   margin: 105px auto 0;
 
+  .sp-only {
+    display: none;
+  }
+
   &__icon {
     height: 110px;
   }
@@ -15,11 +19,11 @@
 
     &__list {
       width: 280px;
-      height: 360px;
       border: 2.27px solid utility.$pink;
       border-radius: 10px;
       position: relative;
       display: inline-block;
+      padding-bottom: 42px;
 
       &:nth-child(n+2):after {
         content: '';
@@ -35,21 +39,20 @@
         margin: auto;
       }
 
-        &__num {
-          display: flex;
-          width: 60px;
-          height: 60px;
-          margin: 10px 0 0 10px;
-          border-radius: 50px;
-          font-size: 16px;
-          font-weight: utility.$bold;
-          color: utility.$white;
-          background-color: utility.$pink;
-          text-align: center;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+      &__num {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        margin: 10px 0 0 10px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: utility.$bold;
+        color: utility.$white;
+        background-color: utility.$pink;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
 
       &__inner {
         text-align: center;
@@ -71,9 +74,80 @@
           margin-top: 18px;
           font-size: 14px;
           font-weight: utility.$regular;
-          font-family: Noto Sans JP;
           line-height: 20.27px;
           text-align: left;
+        }
+      }
+    }
+  }
+
+  /* SP */
+  @include utility.sp {
+
+    width: 2.8rem;
+    margin: 0.6rem auto 0;
+
+    .pc-only {
+      display: none;
+    }
+  
+    .sp-only {
+      display: block;
+    }
+
+    &__icon {
+      height: 0.6rem;
+    }
+
+    &__box {
+      margin-top: 0.3rem;
+      display: block;
+
+      &__list {
+        width: 2.8rem;
+        margin: auto;
+        padding-bottom: 0.35rem;
+        border-radius: .13rem;
+        display: block;
+
+        &:nth-child(n+2) {
+          margin-top: 0.34rem;
+        }
+
+        &:nth-child(n+2):after {
+          border-right: 0.2rem solid transparent;
+          border-left: 0.2rem solid transparent;
+          border-top: 0.2rem solid utility.$pink;
+          border-bottom: 0;
+
+          top: -3.42rem;
+          left: 0;
+          right: 0;
+        }
+
+        &__num {
+          width: .45rem;
+          height: .45rem;
+          margin: .07rem 0 0 .07rem;
+          font-size: .1rem;
+          font-weight: utility.$regular;
+        }
+
+        &__inner {
+          margin-top: 0;
+          padding: 0;
+
+          &__title {
+            height: .29rem;
+            margin-top: .36rem;
+            font-size: .2rem;
+            line-height: .28rem;
+          }
+
+          &__text {
+            margin-top: .1rem;
+            padding: 0 .2rem;
+          }
         }
       }
     }

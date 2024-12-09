@@ -12,7 +12,6 @@
     &__list {
       &:nth-child(n+2) {
         margin-left: 20px;
-        z-index: 1000;
       }
 
       &__subtitle {
@@ -28,7 +27,6 @@
         line-height: 23.17px;
         font-weight: utility.$regular;
         color: utility.$white;
-        font-family: Noto Sans JP;
       }
     }
   }
@@ -42,27 +40,73 @@
 
   &__img_01 {
     background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/picture/useful/useful_img01.png');
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/picture/useful/useful_img01.png');
   }
 
   &__img_02 {
     background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/picture/useful/useful_img02.png');
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/picture/useful/useful_img02.png');
   }
 
   &__img_03 {
     background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/picture/useful/useful_img03.png');
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/picture/useful/useful_img03.png');
   }
 
   &__btn {
     width: 420px;
-      margin: 80px auto 0;
-    
+    margin: 80px auto 0;
+
     &__inner {
       width: 420px;
       padding: 21px 0;
       text-align: center;
+    }
+  }
+
+  /* SP */
+  @include utility.sp {
+
+    width: 3.7rem;
+    margin: .6rem auto 0;
+
+    &__box {
+      display: block;
+      margin-top: .3rem;
+
+      &__list {
+        &:nth-child(n+2) {
+          margin-left: 0;
+          margin-top: .175rem;
+        }
+
+        &__subtitle {
+          margin-top: 0;
+          padding-top: .62rem;
+          font-size: .21rem;
+        }
+
+        &__text {
+          margin-top: .51rem;
+          font-size: .14rem;
+          line-height: .2rem;
+        }
+      }
+    }
+
+    &__img_01, &__img_02, &__img_03 {
+      width: 3.7rem;
+      padding-bottom: .6rem;
+    }
+
+    &__btn {
+      width: 3.7rem;
+      margin: .34rem auto 0;
+
+      &__inner {
+        width: 3.7rem;
+        padding: .21rem 0;
+      }
     }
   }
 }

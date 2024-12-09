@@ -3,7 +3,6 @@
 
 .p-keyvisual {
   background: utility.$bgmain;
-  height: 500px;
 
   &__box {
     display: flex;
@@ -40,8 +39,51 @@
 
   &__img {
     width: 1262px;
-    height: 500px;
     margin: auto;
     background-image: url('../img/picture/main/main-img.png');
+    padding-bottom: 47px;
+  }
+
+  /* SP */
+  @include utility.sp {
+
+    &__box {
+      margin-left: 1.52rem;
+      padding-top: .63rem;
+
+      &__logo {
+        width: 1.5rem;
+      }
+
+      &__phrase {
+        width: 2.72rem;
+        margin-top: .12rem;
+      }
+
+      &__inner {
+        width: 1.70rem;
+        height: .30rem;
+        line-height: .28rem;
+        font-size: .08rem;
+        margin-top: .2rem;
+        border-radius: .05rem;
+        border: .01rem solid utility.$green;
+        font-weight: utility.$regular;
+
+        &__text {
+
+          &__bold {
+            font-size: .16rem;
+            font-weight: utility.$bold;
+          }
+        }
+      }
+    }
+
+    &__img {
+      width: 4rem;
+      background-image: url('../img/picture/main/main-img_sp.png');
+      padding-bottom: .52rem;
+    }
   }
 }

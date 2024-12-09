@@ -1,3 +1,5 @@
+@use './utility.scss';
+
 .u-margin__01 {
   width: 1180px;
   margin: 60px auto;
@@ -6,4 +8,17 @@
 .u-margin__02 {
   width: 1180px;
   margin: 150px auto 0;
+}
+
+@include utility.sp {
+
+  .u-margin__01 {
+    width: 3.7rem;
+    margin: .25rem auto;
+  }
+  
+  .u-margin__02 {
+    width: 3.7rem;
+    margin: .6rem auto 0;
+  }
 }

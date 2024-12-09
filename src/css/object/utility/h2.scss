@@ -5,3 +5,12 @@
   font-weight: utility.$bold;
   text-align: center;
 }
+
+@include utility.sp {
+
+  .u-h2__sp {
+    font-size: .25rem;
+    font-weight: utility.$bold;
+    text-align: center;
+  }
+}

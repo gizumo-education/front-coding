@@ -37,4 +37,37 @@
       }
     }
   }
+
+  /* SP */
+  @include utility.sp {
+
+    width: 3.7rem;
+    margin: .55rem auto 0;
+
+    &__box {
+      display: block;
+      margin-top: .4rem;
+
+      &__list {
+        width: 3.7rem;
+        padding-bottom: .3rem;
+
+        &:nth-child(n+2) {
+          margin-top: .21rem;
+        }
+
+        &__subtitle {
+          padding-top: .3rem;
+          font-size: .2rem;
+        }
+
+        &__text {
+          width: 3.4rem;
+          margin: .3rem auto 0;
+          font-size: .12rem;
+          line-height: .16rem;
+        }
+      }
+    }
+  }
 }
