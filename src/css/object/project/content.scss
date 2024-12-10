@@ -25,6 +25,27 @@
     }
   }
 
+
+  /* TAB */
+  @include utility.tab {
+
+    padding-bottom: 1.03rem;
+
+    &__text {
+      padding-top: 1.14rem;
+
+      &__inner {
+        font-size: .25rem;
+        line-height: .362rem;
+
+        &:nth-child(n+2) {
+          margin-top: .21rem;
+        }
+      }
+    }
+  }
+
+  
   /* SP */
   @include utility.sp {
     padding-bottom: .16rem;

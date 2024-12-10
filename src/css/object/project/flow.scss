@@ -81,6 +81,63 @@
     }
   }
 
+
+  /* TAB */
+  @include utility.tab {
+    
+    width: 11.8rem;
+    margin: 1.05rem auto 0;
+
+    &__icon {
+      width: 1rem;
+      height: 1.1rem;
+      margin: auto;
+    }
+
+    &__box {
+      margin-top: .51rem;
+
+      &__list {
+        width: 2.8rem;
+        border: .0227rem solid utility.$pink;
+        border-radius: .1rem;
+        padding-bottom: .42rem;
+
+        &:nth-child(n+2):after {
+          border-width: .2rem 0 .2rem .2rem;
+          left: -0.22rem;
+        }
+
+        &__num {
+          width: .6rem;
+          height: .6rem;
+          margin: .1rem 0 0 .1rem;
+          border-radius: .5rem;
+          font-size: .16rem;
+        }
+
+        &__inner {
+          margin-top: -0.09rem;
+          padding: 0 .15rem;
+
+          &__title {
+            height: .6rem;
+            margin-top: .05rem;
+            font-size: .24rem;
+            line-height: .3rem;
+          }
+
+          &__text {
+            margin-top: .18rem;
+            font-size: .14rem;
+            line-height: .2027rem;
+          }
+        }
+      }
+    }
+  }
+
+
   /* SP */
   @include utility.sp {
 
@@ -90,7 +147,7 @@
     .pc-only {
       display: none;
     }
-  
+
     .sp-only {
       display: block;
     }

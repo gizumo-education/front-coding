@@ -19,9 +19,23 @@
   opacity: 0.7;
 }
 
-// sp
-@include utility.sp {
+  /* TAB */
+@include utility.tab {
+
+  .c-pinkButton {
+    font-size: .18rem;
+    border-radius: .3rem;
+  }
   
+  .c-slideButton {
+    width: .6rem;
+    height: .6rem;
+  }
+}
+
+/* SP */
+@include utility.sp {
+
   .c-slideButton {
     width: .42rem;
     height: .42rem;

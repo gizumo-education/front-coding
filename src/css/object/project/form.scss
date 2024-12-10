@@ -56,16 +56,64 @@
       background-repeat: no-repeat;
       background-size: 30px;
 
-      @include utility.tab {
-        padding-left: .2rem;
-        background-size: .16rem;
-      }
-
       &.is-search {
         background-image: url("../img/icon/icon-search_02.png");
       }
     }
   }
+  
+
+  /* TAB */
+  @include utility.tab {
+
+    padding: .42rem 0 .4rem;
+    border-radius: .1rem;
+
+    &__text {
+      font-size: .3rem;
+      margin-top: .26rem;
+    }
+
+    &__block {
+      margin-top: .3rem;
+
+      select {
+        background-size: .24rem auto;
+        background-position: right .12rem center;
+      }
+
+      &__index {
+        width: 2rem;
+        height: .6rem;
+        padding-left: .15rem;
+        font-size: .18rem;
+        border-radius: .1rem;
+        border: .01rem solid utility.$pink;
+
+        &:nth-child(n+2) {
+          margin-left: .15rem;
+        }
+      }
+
+      &__input {
+        width: 3rem;
+        padding: .17rem 0 .17rem .1rem;
+      }
+
+      &__button {
+        width: 1.4rem;
+        margin-left: .15rem;
+      }
+
+      a[class^="is-"] {
+        height: .6rem;
+        padding: .2rem 0 .2rem .2rem;
+        background-position: left 12% top 50%;
+        background-size: .3rem;
+      }
+    }
+  }
+
 
   /* SP */
   @include utility.sp {

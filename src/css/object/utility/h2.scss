@@ -6,6 +6,17 @@
   text-align: center;
 }
 
+
+/* TAB */
+@include utility.tab {
+
+  .u-h2 {
+    font-size: .25rem;
+  }
+}
+
+
+/* SP */
 @include utility.sp {
 
   .u-h2__sp {

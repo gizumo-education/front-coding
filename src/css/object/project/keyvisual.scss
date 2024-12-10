@@ -38,11 +38,49 @@
   }
 
   &__img {
-    width: 1262px;
-    margin: auto;
     background-image: url('../img/picture/main/main-img.png');
-    padding-bottom: 47px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 44px;
   }
+
+
+  /* TAB */
+  @include utility.tab {
+
+    &__box {
+      margin-left: 3.95rem;
+      padding-top: .6rem;
+  
+      &__phrase {
+        margin-top: .4rem;
+      }
+  
+      &__inner {
+        width: 3.91rem;
+        height: .69rem;
+        line-height: .7rem;
+        font-size: .2rem;
+        margin-top: .54rem;
+        border-radius: .1rem;
+        border: .023rem solid utility.$green;
+  
+        &__text {
+  
+          &__bold {
+            font-size: .4rem;
+          }
+        }
+      }
+    }
+  
+    &__img {
+      padding-bottom: .44rem;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
 
   /* SP */
   @include utility.sp {
@@ -81,8 +119,10 @@
     }
 
     &__img {
-      width: 4rem;
+      
       background-image: url('../img/picture/main/main-img_sp.png');
+      background-position: center;
+      background-size: cover;
       padding-bottom: .52rem;
     }
   }

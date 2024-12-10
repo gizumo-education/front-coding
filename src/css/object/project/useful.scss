@@ -64,6 +64,52 @@
     }
   }
 
+
+    /* TAB */
+    @include utility.tab {
+      
+      width: 11.8rem;
+      margin: 1.05rem auto 0;
+    
+      &__box {
+        margin-top: .5rem;
+    
+        &__list {
+          &:nth-child(n+2) {
+            margin-left: .2rem;
+          }
+    
+          &__subtitle {
+            margin-top: .71rem;
+            font-size: .24rem;
+          }
+    
+          &__text {
+            margin-top: .44rem;
+            font-size: .16rem;
+            line-height: .2317rem;
+          }
+        }
+      }
+    
+      &__img_01, &__img_02, &__img_03 {
+        width: 3.8rem;
+        border-radius: .1rem;
+        padding-bottom: .55rem;
+      }
+    
+      &__btn {
+        width: 4.2rem;
+        margin: .8rem auto 0;
+    
+        &__inner {
+          width: 4.2rem;
+          padding: .21rem 0;
+        }
+      }
+    }
+
+    
   /* SP */
   @include utility.sp {
 
@@ -96,6 +142,8 @@
 
     &__img_01, &__img_02, &__img_03 {
       width: 3.7rem;
+      background-position: center;
+      background-size: cover;
       padding-bottom: .6rem;
     }
 

@@ -25,7 +25,7 @@
   &__arrow__right {
     position: absolute;
     top: 70px;
-    right: 0px;
+    right: 0;
 
     &:before {
       content: '';
@@ -45,7 +45,7 @@
   &__arrow__left {
     position: absolute;
     top: 70px;
-    left: 0px;
+    left: 0;
 
     &:before {
       content: '';
@@ -115,6 +115,92 @@
       text-align: center;
     }
   }
+
+  
+    /* TAB */
+    @include utility.tab {
+    
+      &__box {
+        width: 11.8rem;
+        padding: .64rem 0 .67rem;
+      }
+    
+      &__title {
+        font-size: .25rem;
+      }
+    
+      &__arrow__right {
+        top: .7rem;
+    
+        &:before {
+          width: .2rem;
+          height: .2rem;
+          border-top: solid .007rem utility.$black;
+          border-right: solid .007rem utility.$black;
+          right: .24rem;
+        }
+      }
+    
+      &__arrow__left {
+        position: absolute;
+        top: .7rem;
+    
+        &:before {
+          width: .2rem;
+          height: .2rem;
+          border-top: solid .007rem utility.$black;
+          border-right: solid .007rem utility.$black;
+          left: .24rem;
+        }
+      }
+    
+      &__contents {
+        margin-top: .3rem;
+    
+        &__block {
+          width: 2.8rem;
+    
+          &:nth-child(n+2) {
+            margin-left: .2rem;
+          }
+    
+          &__text {
+            margin-top: .08rem;
+            font-size: .16rem;
+            line-height: .22rem;
+          }
+    
+          &__list {
+            margin-top: .07rem;
+    
+            &__inner {
+              font-size: .14rem;
+    
+              &:nth-child(n+2) {
+                margin-top: .05rem;
+              }
+    
+              &__area {
+                width: .6rem;
+                line-height: .2027rem;
+                margin-right: .1rem;
+              }
+            }
+          }
+        }
+      }
+    
+      &__btn {
+        width: 3.6rem;
+    
+        &__inner {
+          width: 3.6rem;
+          margin-top: .59rem;
+          padding: .17rem 0;
+        }
+      }
+    }
+
 
   /* SP */
   @include utility.sp {

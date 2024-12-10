@@ -38,6 +38,41 @@
     }
   }
 
+
+  /* TAB */
+  @include utility.tab {
+
+    width: 11.8rem;
+    margin: 1.06rem auto 0;
+  
+    &__box {
+      margin-top: .53rem;
+  
+      &__list {
+        width: 5.7rem;
+        border-radius: .1rem;
+        padding-bottom: .4rem;
+  
+        &:nth-child(n+3) {
+          margin-top: .2rem;
+        }
+  
+        &__subtitle {
+          padding-top: .4rem;
+          font-size: .24rem;
+        }
+  
+        &__text {
+          width: 4.47rem;
+          margin: .36rem auto 0;
+          font-size: .14rem;
+          line-height: .2027rem;
+        }
+      }
+    }
+  }
+
+  
   /* SP */
   @include utility.sp {
 

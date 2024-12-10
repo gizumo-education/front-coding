@@ -10,6 +10,21 @@
   margin: 150px auto 0;
 }
 
+  /* TAB */
+  @include utility.tab {
+
+    .u-margin__01 {
+      width: 11.8rem;
+      margin: .6rem auto;
+    }
+    
+    .u-margin__02 {
+      width: 11.8rem;
+      margin: 1.5rem auto 0;
+    }
+  }
+
+    /* SP */
 @include utility.sp {
 
   .u-margin__01 {
