@@ -9,9 +9,8 @@
 
   &__contents {
     background-color: ut.$blue;
-    width: 1180px;
-    height: 240px;
     padding-top: 40px;
+    padding-bottom: 40px;
     border-radius: 10px;
   
     &__font01 {
@@ -28,14 +27,14 @@
       line-height: 29px;
     }
   
-    &__labelflex {
+    &__list {
       display: flex;
       margin-top: 26px;
       justify-content: center;
       gap: 15px;
     }
 
-    &__labelposition {
+    &__item {
       position: relative;
       &::after {
         content: "";
