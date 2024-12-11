@@ -248,7 +248,11 @@
       display: block;
 
       &__block {
-        width: 3.7rem;
+        width: 100%;
+        
+        img {
+          width: 100%;
+        }
 
         &:nth-child(n+2) {
           margin-left: 0rem;
