@@ -1,0 +1,91 @@
+@use '../../object/utility/utility.scss' as ut;
+// ページ後半の「転職お役立ちコンテンツ」に関するスタイル
+.p-usefulcontent {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-family: Noto Sans JP;
+  padding-bottom: 90px;
+
+  &__title {
+    font-size: 25px;
+    height: 25px;
+    font-weight: ut.$bold;
+  }
+
+  &__contents {
+    display: flex;
+    gap:20px;
+    margin-top: 53px;
+  }
+
+  &__content {
+
+    &__img {
+      border-radius: 10px;
+      width: 380px;
+      padding-top: 240px;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: overlay;
+      position: relative;
+
+      &.img01 {
+        background-image: url("../img/picture/usefulcontent-img01.png");
+      }
+
+      &.img02 {
+        background-image: url("../img/picture/usefulcontent-img02.png");
+      }
+
+      &.img03 {
+        background-image: url("../img/picture/usefulcontent-img03.png");
+      }
+    }
+
+    &__img-fontarea {
+      position:absolute;
+      top: 54%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    &__img-font01 {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: ut.$bold;
+      color: ut.$white02;
+    }
+
+    &__img-font02 {
+      width: 256px;
+      height: 46px;
+      margin-top: 44px;
+      font-size: 16px;
+      line-height: 23.17px;
+      color: ut.$white02;
+    }
+
+    &__img-font03 {
+      width: 288px;
+      height: 46px;
+      margin-top: 44px;
+      font-size: 16px;
+      line-height: 23.17px;
+      color: ut.$white02;
+    }
+  }
+
+  &__button {
+    padding: 21px 72px;
+    white-space: nowrap;
+
+    &__link {
+      color: ut.$white02;
+      margin: 0 auto;
+      width: 420px;
+      display: block;
+      margin-top: 80px;
+    }
+  }
+}
