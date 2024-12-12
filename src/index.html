@@ -9,6 +9,9 @@
   <meta name="keywords" content="ギズジョブ, ギズジョブ医療事務, 医療事務求人, 医療事務">
   <title>医療事務求人を探すならギズジョブ</title>
 
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./css/commmon.css" />
 </head>
 
 <body>
@@ -42,10 +45,10 @@
     <div class="p-keyvisual">
       <div class="p-keyvisual__img">
         <div class="p-keyvisual__box">
-          <h1><img class="p-keyvisual__box__logo" src="./img/picture/main/main-logo.png" alt="2021年使って良かった転職サイトno.1"
-              ></h1>
-          <h1><img class="p-keyvisual__box__phrase" src="./img/picture/main/main-catchphrase.png" alt="医療事務求人を探すならギズジョブ"
-              ></h1>
+          <h1><img class="p-keyvisual__box__logo" src="./img/picture/main/main-logo.png" alt="2021年使って良かった転職サイトno.1">
+          </h1>
+          <h1><img class="p-keyvisual__box__phrase" src="./img/picture/main/main-catchphrase.png"
+              alt="医療事務求人を探すならギズジョブ"></h1>
           <div class="p-keyvisual__box__inner">
             <p class="p-keyvisual__box__inner__text">現在の求人掲載数：<span
                 class="p-keyvisual__box__inner__text__bold">2,320</span>件</p>
@@ -97,14 +100,31 @@
     </div>
 
 
+    <ul class="slick01">
+      <li><img alt="画像1" src="./img/picture/slider/slider_img01.png" /></li>
+      <li><img alt="画像2" src="./img/picture/slider/slider_img01.png" /></li>
+      <li><img alt="画像3" src="./img/picture/slider/slider_img01.png" /></li>
+    </ul>
+
     <div class="p-slider">
       <div class="p-slider__box">
         <h2 class="p-slider__title u-h2__sp">新着求人</h2>
         <div class="p-slider__slide">
-          <button class="p-slider__arrow__right c-slideButton"></button>
-          <button class="p-slider__arrow__left c-slideButton"></button>
-          <ul class="p-slider__contents">
-            <li class="p-slider__contents__block">
+
+
+          <button class="p-slider__arrow__right c-slideButton slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button>
+          <button class="p-slider__arrow__left c-slideButton slick-next slick-arrow" aria-label="Next" type="button">Next</button>
+
+
+          <!-- <button class="p-slider__arrow__right c-slideButton"></button> -->
+          <!-- <button class="p-slider__arrow__left c-slideButton"></button> -->
+          <ul class="p-slider__contents slick-slider">
+
+            <li class="p-slider__contents__block " data-slick-index="1" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
+
+
+              <!-- <li class="p-slider__contents__block"> -->
+
               <img class="pc-only" src="./img/picture/slider/slider_img01.png" alt="">
               <img class="sp-only" src="./img/picture/slider/slider_img01_sp.png" alt="">
               <div class="p-slider__contents__block__text">
@@ -121,53 +141,58 @@
                 </ul>
               </div>
             </li>
-            <li class="p-slider__contents__block p-slider__page">
-              <img src="./img/picture/slider/slider_img02.png" alt="">
-              <div class="p-slider__contents__block__text">
-                <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-              </div>
-              <div class="p-slider__contents__block__list">
-                <ul>
-                  <li class="p-slider__contents__block__list__inner"><span
-                      class="p-slider__contents__block__list__inner__area">給与</span>月給 148,000円～</li>
-                  <li class="p-slider__contents__block__list__inner"><span
-                      class="p-slider__contents__block__list__inner__area">所在地</span>三重県伊勢市</li>
-                  <li class="p-slider__contents__block__list__inner"><span
-                      class="p-slider__contents__block__list__inner__area">最寄駅</span>伊勢市駅 徒歩15分</li>
-                </ul>
-              </div>
+
+            <li class="p-slider__contents__block p-slider__page" data-slick-index="2" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
+            <!-- <li class="p-slider__contents__block p-slider__page"> -->
+            <img src="./img/picture/slider/slider_img02.png" alt="">
+            <div class="p-slider__contents__block__text">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+            </div>
+            <div class="p-slider__contents__block__list">
+              <ul>
+                <li class="p-slider__contents__block__list__inner"><span
+                    class="p-slider__contents__block__list__inner__area">給与</span>月給 148,000円～</li>
+                <li class="p-slider__contents__block__list__inner"><span
+                    class="p-slider__contents__block__list__inner__area">所在地</span>三重県伊勢市</li>
+                <li class="p-slider__contents__block__list__inner"><span
+                    class="p-slider__contents__block__list__inner__area">最寄駅</span>伊勢市駅 徒歩15分</li>
+              </ul>
+            </div>
             </li>
-            <li class="p-slider__contents__block p-slider__page">
-              <img src="./img/picture/slider/slider_img03.png" alt="">
-              <div class="p-slider__contents__block__text">
-                <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-              </div>
-              <div class="p-slider__contents__block__list">
-                <ul>
-                  <li class="p-slider__contents__block__list__inner"><span
-                      class="p-slider__contents__block__list__inner__area">給与</span>月給 148,000円～</li>
-                  <li class="p-slider__contents__block__list__inner"><span
-                      class="p-slider__contents__block__list__inner__area">所在地</span>三重県伊勢市</li>
-                  <li class="p-slider__contents__block__list__inner"><span
-                      class="p-slider__contents__block__list__inner__area">最寄駅</span>伊勢市駅 徒歩15分</li>
-                </ul>
-              </div>
+
+            <li class="p-slider__contents__block p-slider__page" data-slick-index="1" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
+            <!-- <li class="p-slider__contents__block p-slider__page"> -->
+            <img src="./img/picture/slider/slider_img03.png" alt="">
+            <div class="p-slider__contents__block__text">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+            </div>
+            <div class="p-slider__contents__block__list">
+              <ul>
+                <li class="p-slider__contents__block__list__inner"><span
+                    class="p-slider__contents__block__list__inner__area">給与</span>月給 148,000円～</li>
+                <li class="p-slider__contents__block__list__inner"><span
+                    class="p-slider__contents__block__list__inner__area">所在地</span>三重県伊勢市</li>
+                <li class="p-slider__contents__block__list__inner"><span
+                    class="p-slider__contents__block__list__inner__area">最寄駅</span>伊勢市駅 徒歩15分</li>
+              </ul>
+            </div>
             </li>
-            <li class="p-slider__contents__block p-slider__page">
-              <img src="./img/picture/slider/slider_img04.png" alt="">
-              <div class="p-slider__contents__block__text">
-                <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-              </div>
-              <div class="p-slider__contents__block__list">
-                <ul>
-                  <li class="p-slider__contents__block__list__inner"><span
-                      class="p-slider__contents__block__list__inner__area">給与</span>月給 148,000円～</li>
-                  <li class="p-slider__contents__block__list__inner"><span
-                      class="p-slider__contents__block__list__inner__area">所在地</span>三重県伊勢市</li>
-                  <li class="p-slider__contents__block__list__inner"><span
-                      class="p-slider__contents__block__list__inner__area">最寄駅</span>伊勢市駅 徒歩15分</li>
-                </ul>
-              </div>
+            <li class="p-slider__contents__block p-slider__page" data-slick-index="1" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
+            <!-- <li class="p-slider__contents__block p-slider__page"> -->
+            <img src="./img/picture/slider/slider_img04.png" alt="">
+            <div class="p-slider__contents__block__text">
+              <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+            </div>
+            <div class="p-slider__contents__block__list">
+              <ul>
+                <li class="p-slider__contents__block__list__inner"><span
+                    class="p-slider__contents__block__list__inner__area">給与</span>月給 148,000円～</li>
+                <li class="p-slider__contents__block__list__inner"><span
+                    class="p-slider__contents__block__list__inner__area">所在地</span>三重県伊勢市</li>
+                <li class="p-slider__contents__block__list__inner"><span
+                    class="p-slider__contents__block__list__inner__area">最寄駅</span>伊勢市駅 徒歩15分</li>
+              </ul>
+            </div>
             </li>
           </ul>
         </div>
@@ -334,6 +359,10 @@
     </div>
     <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
   </footer>
+
+  <!-- JS -->
+  <script type="text/javascript" src="./js/slick.min.js"></script>
+  <script type="text/javascript" src="./js/common.js"></script>
 </body>
 
 </html>
