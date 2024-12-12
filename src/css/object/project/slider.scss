@@ -8,8 +8,6 @@
   }
 
   &__box {
-    width: 1180px;
-    margin: auto;
     padding: 64px 0 67px;
   }
 
@@ -121,7 +119,6 @@
     @include utility.tab {
     
       &__box {
-        width: 11.8rem;
         padding: .64rem 0 .67rem;
       }
     
@@ -204,6 +201,7 @@
 
   /* SP */
   @include utility.sp {
+      width: 3.7rem;
 
     .pc-only {
       display: none;
@@ -218,7 +216,6 @@
     }
 
     &__box {
-      width: 3.7rem;
       padding: .29rem 0 .6rem;
 
     }

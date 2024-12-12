@@ -1,8 +1,7 @@
 @use '../../object/utility/utility.scss';
 
 .p-flow {
-  width: 1180px;
-  margin: 105px auto 0;
+  margin-top: 105px;
 
   .sp-only {
     display: none;
@@ -84,9 +83,8 @@
 
   /* TAB */
   @include utility.tab {
-    
-    width: 11.8rem;
-    margin: 1.05rem auto 0;
+
+    margin-top: 1.05rem;
 
     &__icon {
       width: 1rem;
@@ -142,7 +140,7 @@
   @include utility.sp {
 
     width: 2.8rem;
-    margin: 0.6rem auto 0;
+    margin-top: 0.6rem;
 
     .pc-only {
       display: none;

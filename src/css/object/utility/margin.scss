@@ -1,26 +1,22 @@
 @use './utility.scss';
 
 .u-margin__01 {
-  width: 1180px;
-  margin: 60px auto;
+  margin-top: 60px;
 }
 
 .u-margin__02 {
-  width: 1180px;
-  margin: 150px auto 0;
+  margin-top: 150px;
 }
 
   /* TAB */
   @include utility.tab {
 
     .u-margin__01 {
-      width: 11.8rem;
-      margin: .6rem auto;
+      margin-top: .6rem;
     }
     
     .u-margin__02 {
-      width: 11.8rem;
-      margin: 1.5rem auto 0;
+      margin-top: 1.5rem;
     }
   }
 
@@ -29,11 +25,11 @@
 
   .u-margin__01 {
     width: 3.7rem;
-    margin: .25rem auto;
+    margin-top: .25rem;
   }
   
   .u-margin__02 {
     width: 3.7rem;
-    margin: .6rem auto 0;
+    margin-top: .6rem;
   }
 }
