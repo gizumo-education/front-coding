@@ -1,0 +1,98 @@
+@use '../../object/utility/utility.scss';
+
+.p-form {
+  margin: 60px auto;
+  text-align: center;
+
+  &__inner {
+    padding: 40px;
+    display: inline-block;
+    background-color: utility.$lightBlue;
+    border-radius: 10px;
+
+    h2 {
+      font-size: 25px;
+      font-weight: utility.$bold;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    form {
+      margin-top: 26.5px;
+      display: flex;
+      gap: 15px;
+
+      .selectbox__wrapper {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          border-right: 12px solid transparent;
+          border-left: 12px solid transparent;
+          border-top: 12px solid utility.$formPink;
+          border-bottom: 0;
+          top: 25px;
+          right: 15px;
+          pointer-events: none;
+        }
+
+        select {
+          -webkit-appearance: none;
+          appearance: none;
+          border: 1px solid utility.$formPink;
+          border-radius: 10px;
+          background-color: utility.$white;
+          padding: 17px 15px;
+          width: 200px;
+          height: 60px;
+  
+          &::-ms-expand {
+            display: none;
+          }
+
+          option {
+            font-size: 18px;
+          }
+        }
+      }
+
+      input {
+        border: 1px solid utility.$formPink;
+        border-radius: 10px;
+        width: 300px;
+        height: 60px;
+        font-size: 18px;
+        padding-left: 10px;
+      }
+      
+    }
+  }
+
+  &__button {
+    font-size: 18px;
+    a {
+      border-radius: 30px;
+      padding: 21px 20px 21px 48px;
+      color: utility.$white;
+      background-color: utility.$formButtonPink;
+      background-position: center left 15px;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      @include utility.tab {
+        border-radius: .1rem;
+        padding: .15rem .20rem .15rem .14rem;
+        background-position: center left .2rem;
+        background-size: .30rem;
+      }
+    }
+    &.is-search--white {
+      a {
+        background-image: url("../img/icon/icon-search_white.png");
+      }
+    }
+  }
+}
