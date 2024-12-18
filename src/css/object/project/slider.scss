@@ -1,6 +1,7 @@
 @use '../../object/utility/utility.scss';
 
 .p-slider {
+  margin-top: 60px;
   background-color: utility.$bgLightBlue;
 
   .sp-only {
@@ -117,6 +118,7 @@
   
     /* TAB */
     @include utility.tab {
+      margin-top: .6rem;
     
       &__box {
         padding: .64rem 0 .67rem;
@@ -201,7 +203,8 @@
 
   /* SP */
   @include utility.sp {
-      width: 3.7rem;
+    margin-top: .25rem;
+
 
     .pc-only {
       display: none;
@@ -216,6 +219,7 @@
     }
 
     &__box {
+      width: 3.7rem;
       padding: .29rem 0 .6rem;
 
     }
