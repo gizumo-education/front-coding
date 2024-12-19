@@ -20,7 +20,7 @@
       right: 30px;
       top: 57px;
 
-      .no-1, .keyvisualTitle {
+      .no-1, .p-keyvisual__title {
         margin-top: 40px;
 
         &:first-child {
@@ -28,7 +28,7 @@
         }
       }
 
-      .info {
+      .p-keyvisual__info {
         margin-top: 54px;
         background-color: utility.$white;
         color: utility.$infoGreen;
