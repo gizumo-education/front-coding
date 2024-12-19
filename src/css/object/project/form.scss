@@ -17,11 +17,11 @@
 
     p {
       font-size: 20px;
-      margin-top: 20px;
+      margin-top: 25px;
     }
 
     form {
-      margin-top: 26.5px;
+      margin-top: 26px;
       display: flex;
       gap: 15px;
 
@@ -46,29 +46,30 @@
           border: 1px solid utility.$formPink;
           border-radius: 10px;
           background-color: utility.$white;
-          padding: 17px 15px;
+          padding: 31px 15px;
           width: 200px;
           height: 60px;
+          font-size: 18px;
   
           &::-ms-expand {
             display: none;
           }
-
-          option {
-            font-size: 18px;
-          }
         }
       }
 
-      input {
-        border: 1px solid utility.$formPink;
-        border-radius: 10px;
-        width: 300px;
-        height: 60px;
-        font-size: 18px;
-        padding-left: 10px;
+      .is-center {
+        display: flex;
+        align-items: center;
+
+        input {
+          border: 1px solid utility.$formPink;
+          border-radius: 10px;
+          width: 300px;
+          height: 60px;
+          font-size: 18px;
+          padding-left: 10px;
+        }
       }
-      
     }
   }
 
