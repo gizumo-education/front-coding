@@ -1,0 +1,28 @@
+@use '../../object/utility/utility.scss';
+
+.p-message {
+  
+  &__img {
+    background-image: url(../img/picture/sample05.jpg);
+    background-color: rgba(utility.$black, 0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
+  }
+
+  &__text {
+    padding-top: 104px;
+    padding-bottom: 103px;
+
+    .text {
+      text-align: center;
+      font-size: 25px;
+      font-weight: utility.$bold;
+      color: utility.$white;
+      margin-top: 41px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

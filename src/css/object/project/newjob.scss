@@ -1,0 +1,130 @@
+@use '../../object/utility/utility.scss';
+
+.p-newjob {
+  background-color: #EFF6FC;
+  
+  &__inner {
+    padding-top: 64px;
+    padding-bottom: 67px;
+
+    .newjob__title {
+      font-size: 25px;
+      font-weight: utility.$regular;
+    }
+  }
+
+  &__contents {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+
+    &__text {
+      font-size: 16px;
+      font-weight: utility.$regular;
+      line-height: 22px;
+      margin-top: 12px;
+    }
+
+    .newjob__table {
+      font-size: 14px;
+      margin-top: 8px;
+
+      tr {
+        font-weight: utility.$regular;
+        display: inline-block;
+        padding-bottom: 4px;
+        display: flex;
+
+        th {
+          background-color: utility.$tableHeader;
+          width: 60px;
+          height: 21px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        td {
+          padding: 2px 0 2px 10px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-top: 54px;
+    font-weight: utility.$bold;
+    font-size: 18px;
+
+    &__link {
+      color: utility.$white;
+      background-color: utility.$formButtonPink;
+      padding: 22px 72px;
+      border-radius: 30px;
+    }
+  }
+
+  .is-relative {
+    position: relative;
+
+    .left {
+      content: '';
+      position: absolute;
+      background-color: utility.$white;
+      opacity: 70%;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      top: -120px;
+      bottom: 0;
+      margin: auto;
+      border: none;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 35%;
+        left: 43%;
+        transform: rotate(-135deg);
+        width: 20px;
+        height: 20px;
+        border-style: solid;
+        border-color: utility.$black utility.$black transparent transparent;
+      }
+    }
+
+    .right {
+      content: '';
+      position: absolute;
+      background-color: utility.$white;
+      opacity: 70%;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      top: -120px;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border: none;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 35%;
+        left: 30%;
+        transform: rotate(45deg);
+        width: 20px;
+        height: 20px;
+        border-style: solid;
+        border-color: utility.$black utility.$black transparent transparent;
+      }
+    }
+
+    
+  }
+
+}
