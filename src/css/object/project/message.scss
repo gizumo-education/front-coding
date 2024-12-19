@@ -1,11 +1,12 @@
 @use '../../object/utility/utility.scss';
 
-.p-contents {
+.p-message {
   
   &__img {
     background-image: url(../img/picture/sample05.jpg);
     background-color: rgba(utility.$black, 0.5);
     background-blend-mode: overlay;
+    background-size: cover;
   }
 
   &__text {
