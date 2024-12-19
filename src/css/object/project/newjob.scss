@@ -22,17 +22,17 @@
       font-size: 16px;
       font-weight: utility.$regular;
       line-height: 22px;
-      padding-top: 12px;
-      padding-bottom: 8px;
+      margin-top: 12px;
     }
 
     .newjob__table {
       font-size: 14px;
+      margin-top: 8px;
 
       tr {
         font-weight: utility.$regular;
         display: inline-block;
-        margin-bottom: 4px;
+        padding-bottom: 4px;
         display: flex;
 
         th {
@@ -56,7 +56,7 @@
     display: inline-block;
     display: flex;
     justify-content: center;
-    padding-top: 54px;
+    margin-top: 54px;
     font-weight: utility.$bold;
     font-size: 18px;
 
