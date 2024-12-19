@@ -38,10 +38,10 @@
     <section class="p-keyvisual">
       <div class="p-keyvisual__img">
         <div class="p-keyvisual__img__text">
-          <div><img src="./img/picture/keyvisual-text01.png" alt="2021年 使って良かった転職サイトno.1"></div>
-          <h1><img src="./img/picture/keyvisual-text02.png" alt="医療事務求人を探すならギズジョブ"></h1>
+          <img class="no-1" src="./img/picture/keyvisual-text01.png" alt="2021年 使って良かった転職サイトno.1">
+          <h1 class="keyvisualTitle"><img src="./img/picture/keyvisual-text02.png" alt="医療事務求人を探すならギズジョブ"></h1>
           <div class="info">
-            <p>現在の求人掲載数：<strong>2,320</strong>件</p>
+            <p class="info__text">現在の求人掲載数：<strong>2,320</strong>件</p>
           </div>
         </div>
       </div>
@@ -50,11 +50,11 @@
     <!-- お仕事検索 -->
     <section class="p-form">
       <div class="p-form__inner">
-        <h2>お仕事検索</h2>
-        <p>働きたい職種・地域・希望給与を入れて検索！</p>
-        <form>
+        <h2 class="form__title">お仕事検索</h2>
+        <p class="form__text">働きたい職種・地域・希望給与を入れて検索！</p>
+        <form class="form">
           <div class="selectbox__wrapper">
-            <select name="職種">
+            <select class="selectbox" name="職種">
               <option value="医療事務" selected>医療事務</option>
               <option value="調剤事務">調剤事務</option>
               <option value="診療情報管理士">診療情報管理士</option>
@@ -65,7 +65,7 @@
             </select>
           </div>
           <div class="selectbox__wrapper">
-            <select name="地域">
+            <select class="selectbox" name="地域">
               <option value="茨城県">茨城県</option>
               <option value="神奈川県">神奈川県</option>
               <option value="群馬県">群馬県</option>
@@ -76,7 +76,7 @@
             </select>
           </div>
           <div class="selectbox__wrapper">
-            <select name="希望給与">
+            <select class="selectbox" name="希望給与">
               <option value="月給17万〜">月給17万〜</option>
               <option value="月給18万〜">月給18万〜</option>
               <option value="月給19万〜">月給19万〜</option>
@@ -86,8 +86,8 @@
               <option value="月給23万〜">月給23万〜</option>
             </select>
           </div>
-          <div class="is-center"><input type="text" placeholder="キーワード・企業名・スキルなど"></div>
-          <div class="p-form__button is-search--white"><a href="">検索する</a></div>
+          <div class="is-center"><input class="inputField" type="text" placeholder="キーワード・企業名・スキルなど"></div>
+          <a class="p-form__button is-search--white" href="">検索する</a>
         </form>
       </div>
     </section>
@@ -95,7 +95,7 @@
     <!-- 新着求人 -->
     <section class="p-newjob">
       <div class="p-newjob__inner l-inner">
-        <h2>新着求人</h2>
+        <h2 class="newjob__title">新着求人</h2>
         <div class="is-relative">
           <ul class="p-newjob__contents">
             <li>
@@ -103,7 +103,7 @@
                 <img src="./img/picture/sample01.png" alt="求人写真01">
               </div>
               <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-              <table>
+              <table class="newjob__table">
                 <tr>
                   <th>給与</th>
                   <td>月給 148,000円〜</td>
@@ -123,7 +123,7 @@
                 <img src="./img/picture/sample02.png" alt="求人写真02">
               </div>
               <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-              <table>
+              <table class="newjob__table">
                 <tr>
                   <th>給与</th>
                   <td>月給 148,000円〜</td>
@@ -143,7 +143,7 @@
                 <img src="./img/picture/sample03.png" alt="求人写真03">
               </div>
               <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-              <table>
+              <table class="newjob__table">
                 <tr>
                   <th>給与</th>
                   <td>月給 148,000円〜</td>
@@ -163,7 +163,7 @@
                 <img src="./img/picture/sample04.png" alt="求人写真04">
               </div>
               <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
-              <table>
+              <table class="newjob__table">
                 <tr>
                   <th>給与</th>
                   <td>月給 148,000円〜</td>
@@ -182,7 +182,7 @@
           <button class="left"></button>
           <button class="right"></button>
         </div>
-        <div class="p-newjob__button"><a href="">新着求人一覧をもっと見る</a></div>
+        <div class="p-newjob__button"><a class="p-newjob__button__link" href="">新着求人一覧をもっと見る</a></div>
       </div>
     </section>
 
@@ -190,8 +190,8 @@
     <div class="p-message">
       <div class="p-message__img">
         <div class="p-message__text">
-          <p>ギズジョブなら理想の職場がきっと見つかる</p>
-          <p>ギズジョブは完全無料の求職者向け求人サービスです。</p>
+          <p class="text">ギズジョブなら理想の職場がきっと見つかる</p>
+          <p class="text">ギズジョブは完全無料の求職者向け求人サービスです。</p>
         </div>
       </div>
     </div>

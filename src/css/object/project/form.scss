@@ -10,17 +10,17 @@
     background-color: utility.$lightBlue;
     border-radius: 10px;
 
-    h2 {
+    .form__title {
       font-size: 25px;
       font-weight: utility.$bold;
     }
 
-    p {
+    .form__text {
       font-size: 20px;
       margin-top: 25px;
     }
 
-    form {
+    .form {
       margin-top: 26px;
       display: flex;
       gap: 15px;
@@ -40,7 +40,7 @@
           pointer-events: none;
         }
 
-        select {
+        .selectbox {
           -webkit-appearance: none;
           appearance: none;
           border: 1px solid utility.$formPink;
@@ -61,7 +61,7 @@
         display: flex;
         align-items: center;
 
-        input {
+        .inputField {
           border: 1px solid utility.$formPink;
           border-radius: 10px;
           width: 300px;
@@ -74,26 +74,23 @@
   }
 
   &__button {
+    display: block;
     font-size: 18px;
-    a {
-      border-radius: 30px;
-      padding: 21px 20px 21px 48px;
-      color: utility.$white;
-      background-color: utility.$formButtonPink;
-      background-position: center left 15px;
-      background-repeat: no-repeat;
-      background-size: 30px;
-      @include utility.tab {
-        border-radius: .1rem;
-        padding: .15rem .20rem .15rem .14rem;
-        background-position: center left .2rem;
-        background-size: .30rem;
-      }
+    border-radius: 30px;
+    padding: 21px 20px 21px 48px;
+    color: utility.$white;
+    background-color: utility.$formButtonPink;
+    background-position: center left 15px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    @include utility.tab {
+      border-radius: .1rem;
+      padding: .15rem .20rem .15rem .14rem;
+      background-position: center left .2rem;
+      background-size: .30rem;
     }
-    &.is-search--white {
-      a {
-        background-image: url("../img/icon/icon-search_white.png");
-      }
-    }
+  }
+  .is-search--white {
+    background-image: url("../img/icon/icon-search_white.png");
   }
 }
