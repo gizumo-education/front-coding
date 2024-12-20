@@ -1,0 +1,48 @@
+@use '../../object/utility/utility.scss';
+
+.p-contents {
+  padding-top: 106px;
+  padding-bottom: 106px;
+  
+  &__title {
+    font-size: 25px;
+    font-weight: utility.$bold;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+    margin-top: 53px;
+
+    &__item {
+      width: 570px;
+      height: 180px;
+      background-color: utility.$contentsLightPink;
+      padding: 40px 47px 40px 47px;
+      border-radius: 10px;
+
+      &:last-child {
+        padding-bottom: 30px;
+         & .item__text {
+          margin-top: 25px;
+         }
+      }
+
+      .item__title {
+        font-size: 24px;
+        font-weight: utility.$bold;
+        color: utility.$contentsTitlePink;
+      }
+
+      .item__text {
+        font-size: 14px;
+        font-weight: utility.$regular;
+        line-height: 20px;
+        margin-top: 36px;
+      }
+    }
+  }
+}
