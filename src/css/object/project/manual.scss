@@ -1,0 +1,74 @@
+@use '../../object/utility/utility.scss';
+
+.p-manual {
+  margin-top: 105px;
+
+  &__title {
+    font-size: 25px;
+    font-weight: utility.$bold;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+
+    &__item {
+      text-align: center;
+
+      .p-manual__img__paper {
+        background-image: url(../img/picture/sample06.jpg);
+        background-color: rgba(utility.$black, 0.5);
+        background-blend-mode: overlay;
+        background-size: cover;
+        width: 380px;
+        height: 240px;
+        border-radius: 10px;
+        padding-top: 71px;
+        padding-bottom: 55px;
+      }
+
+      .p-manual__img__pc {
+        background-image: url(../img/picture/sample07.jpg);
+        background-color: rgba(utility.$black, 0.5);
+        background-blend-mode: overlay;
+        background-size: cover;
+        width: 380px;
+        height: 240px;
+        border-radius: 10px;
+        padding-top: 71px;
+        padding-bottom: 55px;
+      }
+
+      .p-manual__list__title {
+        color: utility.$white;
+        font-size: 24px;
+        font-weight: utility.$bold;
+      }
+
+      .p-manual__text {
+        color: utility.$white;
+        font-size: 16px;
+        font-weight: utility.$regular;
+        margin-top: 45px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  &__button {
+    margin: 80px auto 0;
+    display: inline-block;
+    width: 420px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: utility.$white;
+    background-color: utility.$manualPink;
+    font-size: 18px;
+    font-weight: utility.$bold;
+    border-radius: 30px;
+  }
+}

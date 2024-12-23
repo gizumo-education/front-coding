@@ -1,6 +1,8 @@
 @use '../object/utility/utility.scss';
 // footerのスタイルを記述するファイル
 .l-footer {
+  margin-top: 140px;
+
   &__area {
     padding: 55px 0 25px;
     font-size: 16px;
