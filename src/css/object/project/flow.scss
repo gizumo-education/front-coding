@@ -1,0 +1,122 @@
+@use '../../object/utility/utility.scss';
+
+.p-flow {
+
+  &__title {
+    font-size: 25px;
+    font-weight: utility.$bold;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 21px;
+    margin-top: 50px;
+
+    &__item {
+      width: 278px;
+      height: 358px;
+      border: 2px solid utility.$flowPink;
+      border-radius: 10px;
+      padding-bottom: 42px;
+      position: relative;
+
+      &__inner {
+        &::after {
+          position: absolute;
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 20px 0 20px 20px;
+          border-color: transparent transparent transparent utility.$flowPink;
+          top: 0;
+          right: -21px;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+
+      &:nth-child(1) {
+        .flow__title {
+          margin-top: 20px;
+        }
+        .flow__text {
+          margin: 18px auto;
+        }
+      }
+      &:nth-child(2) {
+        .flow__title {
+          margin-top: 30px;
+        }
+        .flow__text {
+          margin: 18px auto;
+        }
+      }
+      &:nth-child(3) {
+        .flow__title {
+          margin-top: 38px;
+        }
+        .flow__text {
+          margin: 30px auto;
+        }
+      }
+      &:nth-child(4) {
+        .flow__title {
+          margin-top: 28px;
+        }
+        .flow__text {
+          margin: 30px auto;
+        }
+      }
+
+      .flow__step {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: utility.$bold;
+        color: utility.$white;
+        background-color: utility.$flowPink;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+
+      .flow__icon {
+        display: block;
+        margin: 0 auto;
+      }
+      .is-note {
+        margin-top: -10px;
+      }
+      .is-search {
+        margin-top: -1px;
+      }
+      .is-mail {
+        margin-top: -15px;
+      }
+      .is-star {
+        margin-top: -15px;
+      }
+
+      .flow__title {
+        font-size: 24px;
+        font-weight: utility.$bold;
+        text-align: center;
+        line-height: 30px;
+      }
+
+      .flow__text {
+        width: 237px;
+        font-size: 14px;
+        font-weight: utility.$regular;
+        line-height: 20px;
+      }
+
+    }
+  }
+}
