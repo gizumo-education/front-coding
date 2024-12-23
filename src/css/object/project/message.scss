@@ -9,11 +9,11 @@
     background-size: cover;
   }
 
-  &__text {
+  &__box {
     padding-top: 104px;
     padding-bottom: 103px;
 
-    .text {
+    &__text {
       text-align: center;
       font-size: 25px;
       font-weight: utility.$bold;
