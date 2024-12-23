@@ -1,8 +1,7 @@
 @use '../../object/utility/utility.scss';
 
 .p-contents {
-  padding-top: 106px;
-  padding-bottom: 106px;
+  padding: 106px 0;
   
   &__title {
     font-size: 25px;
