@@ -12,13 +12,12 @@
     display: flex;
     gap: 21px;
     margin-top: 50px;
+    position: relative;
 
     &__item {
-      width: 278px;
-      height: 358px;
+      padding: 55px 19px 42px 19px;
       border: 2px solid utility.$flowPink;
       border-radius: 10px;
-      padding-bottom: 42px;
       position: relative;
 
       &:not(:last-child)::after {
@@ -30,42 +29,9 @@
         border-width: 20px 0 20px 20px;
         border-color: transparent transparent transparent utility.$flowPink;
         top: 0;
-        right: -21px;
+        right: -20px;
         bottom: 0;
         margin: auto;
-      }
-
-      &:nth-child(1) {
-        .p-flow__title {
-          margin-top: 20px;
-        }
-        .p-flow__text {
-          margin: 18px auto;
-        }
-      }
-      &:nth-child(2) {
-        .p-flow__title {
-          margin-top: 30px;
-        }
-        .p-flow__text {
-          margin: 18px auto;
-        }
-      }
-      &:nth-child(3) {
-        .p-flow__title {
-          margin-top: 38px;
-        }
-        .p-flow__text {
-          margin: 30px auto;
-        }
-      }
-      &:nth-child(4) {
-        .p-flow__title {
-          margin-top: 28px;
-        }
-        .p-flow__text {
-          margin: 30px auto;
-        }
       }
 
       .p-flow__step {
@@ -80,25 +46,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 10px;
-        margin-left: 10px;
+        top: 10px;
+        left: 10px;
+        position: absolute;
       }
 
       .p-flow__icon {
-        display: block;
-        margin: 0 auto;
-      }
-      .is-note {
-        margin-top: -10px;
-      }
-      .is-search {
-        margin-top: -1px;
-      }
-      .is-mail {
-        margin-top: -15px;
-      }
-      .is-star {
-        margin-top: -15px;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .p-flow__title {
@@ -106,6 +63,11 @@
         font-weight: utility.$bold;
         text-align: center;
         line-height: 30px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
       }
 
       .p-flow__text {
@@ -113,6 +75,7 @@
         font-size: 14px;
         font-weight: utility.$regular;
         line-height: 20px;
+        margin-top: 20px;
       }
 
     }
