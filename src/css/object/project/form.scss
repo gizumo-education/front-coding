@@ -4,6 +4,10 @@
   margin: 60px auto;
   text-align: center;
 
+  &:last-child {
+    margin-top: 150px;
+  }
+
   &__inner {
     padding: 40px;
     display: inline-block;
