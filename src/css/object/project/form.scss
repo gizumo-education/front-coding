@@ -3,9 +3,15 @@
 .p-form {
   margin: 60px auto;
   text-align: center;
+  @include utility.tab {
+    margin: .6rem auto;
+  }
 
   &:last-child {
     margin-top: 150px;
+    @include utility.tab {
+      margin-top: 1.5rem;
+    }
   }
 
   &__inner {
@@ -13,21 +19,37 @@
     display: inline-block;
     background-color: utility.$lightBlue;
     border-radius: 10px;
+    @include utility.tab {
+      padding: .4rem;
+      border-radius: .1rem;
+    }
 
     .p-form__title {
       font-size: 25px;
       font-weight: utility.$bold;
+      @include utility.tab {
+        font-size: .25rem;
+      }
     }
 
     .p-form__text {
       font-size: 20px;
       margin-top: 25px;
+      @include utility.tab {
+        font-size: .2rem;
+        margin-top: .25rem;
+      }
     }
 
     .p-form__form {
       margin-top: 26px;
       display: flex;
       gap: 15px;
+      @include utility.tab {
+        justify-content: center;
+        align-items: center;
+        margin-top: .26rem;
+      }
 
       .p-form__selectbox__wrapper {
         position: relative;
@@ -42,6 +64,13 @@
           top: 25px;
           right: 15px;
           pointer-events: none;
+          @include utility.tab {
+            border-right: .12rem solid transparent;
+            border-left: .12rem solid transparent;
+            border-top: .12rem solid utility.$formPink;
+            top: .25rem;
+            right: .15rem;
+          }
         }
 
         .p-form__selectbox {
@@ -54,6 +83,13 @@
           width: 200px;
           height: 60px;
           font-size: 18px;
+          @include utility.tab {
+            border-radius: .1rem;
+            padding: .15rem;
+            width: 1.9rem;
+            height: .6rem;
+            font-size: .18rem;
+          }
   
           &::-ms-expand {
             display: none;
@@ -72,6 +108,13 @@
           height: 60px;
           font-size: 18px;
           padding-left: 10px;
+          @include utility.tab {
+            border-radius: .1rem;
+            width: 3rem;
+            height: .6rem;
+            font-size: .18rem;
+            padding-left: .1rem;
+          }
         }
       }
     }
@@ -80,19 +123,21 @@
   &__button {
     display: inline;
     font-size: 18px;
+    font-weight: utility.$bold;
     border: none;
     border-radius: 30px;
-    padding: 0px 17px 0px 52px;
+    padding: 0 20px 0 48px;
     color: utility.$white;
     background-color: utility.$formButtonPink;
     background-position: center left 15px;
     background-repeat: no-repeat;
     background-size: 30px;
     @include utility.tab {
-      border-radius: .1rem;
-      padding: .15rem .20rem .15rem .14rem;
-      background-position: center left .2rem;
-      background-size: .30rem;
+      font-size: .18rem;
+      border-radius: .3rem;
+      padding: .15rem .2rem .15rem .48rem;
+      background-position: center left .15rem;
+      background-size: .3rem;
     }
   }
   .is-search--white {

@@ -17,11 +17,14 @@
       text-align: center;
       display: inline-block;
       position: absolute;
-      right: 30px;
-      top: 57px;
+      right: 2.5%;
+      top: 11.4%;
 
       .p-keyvisual__no-1, .p-keyvisual__title {
         margin-top: 40px;
+        @include utility.tab {
+          margin-top: .4rem;
+        }
 
         &:first-child {
           margin-top: 0;
@@ -38,13 +41,26 @@
         border-radius: 10px;
         display: inline-block;
         line-height: 70px;
+        @include utility.tab {
+          margin-top: .54rem;
+          width: 3.9rem;
+          height: .7rem;
+          border-radius: .1rem;
+          line-height: .7rem;
+        }
 
         &__text {
           font-size: 20px;
+          @include utility.tab {
+            font-size: .2rem;
+          }
 
           strong {
             font-size: 40px;
             font-weight: utility.$bold;
+            @include utility.tab {
+              font-size: .4rem;
+            }
           }
         }
       }

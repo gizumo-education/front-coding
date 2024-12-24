@@ -6,6 +6,9 @@
     font-size: 25px;
     font-weight: utility.$bold;
     text-align: center;
+    @include utility.tab {
+      font-size: .25rem;   
+    }
   }
 
   &__list {
@@ -13,12 +16,20 @@
     gap: 21px;
     margin-top: 50px;
     position: relative;
+    @include utility.tab {
+      gap: .21rem;
+      margin-top: .5rem;   
+    }
 
     &__item {
       padding: 55px 19px 42px 19px;
       border: 2px solid utility.$flowPink;
       border-radius: 10px;
       position: relative;
+      @include utility.tab {
+        padding: .55rem .19rem .42rem .19rem;
+        border-radius: .1rem; 
+      }
 
       &:not(:last-child)::after {
         position: absolute;
@@ -32,6 +43,10 @@
         right: -20px;
         bottom: 0;
         margin: auto;
+        @include utility.tab {
+          border-width: .2rem 0 .2rem .2rem;
+          right: -.2rem;
+        }
       }
 
       .p-flow__step {
@@ -49,6 +64,13 @@
         top: 10px;
         left: 10px;
         position: absolute;
+        @include utility.tab {
+          width: .6rem;
+          height: .6rem;
+          font-size: .16rem;
+          top: .1rem;
+          left: .1rem;
+        }
       }
 
       .p-flow__icon {
@@ -56,6 +78,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include utility.tab {
+          height: 1.1rem;
+        }
       }
 
       .p-flow__title {
@@ -68,6 +93,12 @@
         align-items: center;
         justify-content: center;
         margin-top: 15px;
+        @include utility.tab {
+          font-size: .24rem;
+          line-height: .3rem;
+          height: .6rem;
+          margin-top: .15rem;
+        }
       }
 
       .p-flow__text {
@@ -76,6 +107,12 @@
         font-weight: utility.$regular;
         line-height: 20px;
         margin-top: 20px;
+        @include utility.tab {
+          width: 2.37rem;
+          font-size: .14rem;
+          line-height: .2rem;
+          margin-top: .2rem;
+        }
       }
 
     }

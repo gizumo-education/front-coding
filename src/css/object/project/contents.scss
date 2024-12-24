@@ -2,11 +2,17 @@
 
 .p-contents {
   padding: 106px 0;
+  @include utility.tab {
+    padding: 1.06rem 0;
+  }
   
   &__title {
     font-size: 25px;
     font-weight: utility.$bold;
     text-align: center;
+    @include utility.tab {
+      font-size: .25rem;
+    }
   }
 
   &__list {
@@ -15,6 +21,10 @@
     gap: 40px;
     text-align: center;
     margin-top: 53px;
+    @include utility.tab {
+      gap: .4rem;
+      margin-top: .53rem;
+    }
 
     &__item {
       width: 570px;
@@ -22,11 +32,23 @@
       background-color: utility.$contentsLightPink;
       padding: 40px 47px 40px 47px;
       border-radius: 10px;
+      @include utility.tab {
+        width: 5.7rem;
+        height: 1.8rem;
+        padding: .4rem .47rem .4rem .47rem;
+      }
 
       &:last-child {
         padding-bottom: 30px;
+        @include utility.tab {
+          padding-bottom: .3rem;
+        }
+
          & .item__text {
           margin-top: 25px;
+          @include utility.tab {
+            margin-top: .25rem;
+          }
          }
       }
 
@@ -34,6 +56,9 @@
         font-size: 24px;
         font-weight: utility.$bold;
         color: utility.$contentsTitlePink;
+        @include utility.tab {
+          font-size: .24rem;
+        }
       }
 
       .p-contents__item__text {
@@ -41,6 +66,11 @@
         font-weight: utility.$regular;
         line-height: 20px;
         margin-top: 36px;
+        @include utility.tab {
+          font-size: .14rem;
+          line-height: .2rem;
+          margin-top: .36rem;
+        }
       }
     }
   }

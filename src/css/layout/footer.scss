@@ -2,6 +2,9 @@
 // footerのスタイルを記述するファイル
 .l-footer {
   margin-top: 140px;
+  @include utility.tab {
+    margin-top: 1.4rem;     
+  }
 
   &__area {
     padding: 55px 0 25px;
