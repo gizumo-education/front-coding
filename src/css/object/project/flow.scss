@@ -9,6 +9,9 @@
     @include utility.tab {
       font-size: .25rem;   
     }
+    @include utility.sp {
+      font-size: .25rem;
+    }
   }
 
   &__list {
@@ -20,6 +23,12 @@
       gap: .21rem;
       margin-top: .5rem;   
     }
+    @include utility.sp {
+      flex-wrap: wrap;
+      gap: .4rem;
+      margin-top: .3rem;
+      padding-left: .2rem;
+    }
 
     &__item {
       padding: 55px 19px 42px 19px;
@@ -29,6 +38,18 @@
       @include utility.tab {
         padding: .55rem .19rem .42rem .19rem;
         border-radius: .1rem; 
+      }
+      @include utility.sp {
+        padding: .55rem .19rem .42rem .19rem;
+        border-radius: .1rem;
+      }
+
+      &:nth-child(2) {
+        @include utility.sp {
+          padding-bottom: .35rem;
+          padding-left: .11rem;
+          padding-right: .09rem;
+        }
       }
 
       &:not(:last-child)::after {
@@ -46,6 +67,22 @@
         @include utility.tab {
           border-width: .2rem 0 .2rem .2rem;
           right: -.2rem;
+        }
+        @include utility.sp {
+          content: none;
+        }
+      }
+
+      &:not(:last-child)::before {
+        @include utility.sp {
+          position: absolute;
+          content: '';
+          top: 103%;
+          left: 50%;
+          transform: translateX(-50%);
+          border-top: .2rem solid utility.$flowPink;
+          border-right: .2rem solid transparent;
+          border-left: .2rem solid transparent;
         }
       }
 
@@ -71,6 +108,13 @@
           top: .1rem;
           left: .1rem;
         }
+        @include utility.sp {
+          width: .45rem;
+          height: .45rem;
+          font-size: .1rem;
+          top: .1rem;
+          left: .1rem;
+        }
       }
 
       .p-flow__icon {
@@ -80,6 +124,11 @@
         align-items: center;
         @include utility.tab {
           height: 1.1rem;
+        }
+        @include utility.sp {
+          width: .76rem;
+          height: 0.8rem;
+          margin-left: 0.8rem;
         }
       }
 
@@ -99,6 +148,18 @@
           height: .6rem;
           margin-top: .15rem;
         }
+        @include utility.sp {
+          font-size: .2rem;
+          line-height: .28rem;
+          height: .28rem;
+          margin-top: .2rem;
+        }
+
+        br {
+          @include utility.sp {
+            display: none;
+          }
+        }
       }
 
       .p-flow__text {
@@ -113,6 +174,13 @@
           line-height: .2rem;
           margin-top: .2rem;
         }
+        @include utility.sp {
+          width: 2.37rem;   
+          font-size: .14rem;
+          line-height: .2rem;
+          margin-top: .1rem;
+        }
+
       }
 
     }

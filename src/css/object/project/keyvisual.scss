@@ -4,14 +4,31 @@
 // キービジュアル
 .p-keyvisual{
   background-color: utility.$bgGrayBlue;
+  padding-left: 175px;
+  padding-right: 163px;
+  @include utility.tab {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include utility.sp {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   &__img {
     background-image: url(../img/picture/keyvisual.png);
-    width: 1262px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 500px;
-    margin: 0 auto;
     position: relative;
     z-index: 1;
+    @include utility.tab {
+      height: 5rem;
+    }
+    @include utility.sp {
+      height: 2.7rem;
+    }
 
     &__text {
       text-align: center;
@@ -19,15 +36,33 @@
       position: absolute;
       right: 2.5%;
       top: 11.4%;
+      @include utility.sp {
+        right: 0;
+        top: 20%;
+        justify-content: center;
+      }
 
       .p-keyvisual__no-1, .p-keyvisual__title {
         margin-top: 40px;
         @include utility.tab {
+          width: 3.4rem;
+          height: auto;
           margin-top: .4rem;
+        }
+        @include utility.sp {
+          width: 1.5rem;
+          height: auto;
+          margin-top: .2rem;
         }
 
         &:first-child {
           margin-top: 0;
+        }
+      }
+
+      .p-keyvisual__title {
+        @include utility.sp {
+          width: 2.72rem;
         }
       }
 
@@ -48,11 +83,21 @@
           border-radius: .1rem;
           line-height: .7rem;
         }
+        @include utility.sp {
+          margin-top: .2rem;
+          width: 1.7rem;
+          height: .3rem;
+          border-radius: .06rem;
+          line-height: .25rem;
+        }
 
         &__text {
           font-size: 20px;
           @include utility.tab {
             font-size: .2rem;
+          }
+          @include utility.sp {
+            font-size: .08rem;
           }
 
           strong {
@@ -60,6 +105,9 @@
             font-weight: utility.$bold;
             @include utility.tab {
               font-size: .4rem;
+            }
+            @include utility.sp {
+              font-size: .16rem;
             }
           }
         }

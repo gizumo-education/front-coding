@@ -5,6 +5,11 @@
   @include utility.tab {
     margin-top: 1.05rem;     
   }
+  @include utility.sp {
+    width: 4rem;
+    padding-left: .15rem;
+    margin-top: 0.45rem;
+  }
 
   &__title {
     font-size: 25px;
@@ -12,6 +17,9 @@
     text-align: center;
     @include utility.tab {
       font-size: .25rem;   
+    }
+    @include utility.sp {
+      font-size: .25rem;
     }
   }
 
@@ -22,6 +30,11 @@
     @include utility.tab {
       gap: .2rem;
       margin-top: .5rem;   
+    }
+    @include utility.sp {
+      flex-wrap: wrap;
+      gap: .17rem;
+      margin-top: .3rem;
     }
 
     &__item {
@@ -44,6 +57,12 @@
           padding-top: .71rem;
           padding-bottom: .55rem;
         }
+        @include utility.sp {
+          width: 3.7rem;
+          height: 2.35rem;
+          border-radius: .1rem;
+          padding: .6rem 0;
+        }
       }
 
       .p-manual__img__pc {
@@ -57,11 +76,17 @@
         padding-top: 71px;
         padding-bottom: 55px;
         @include utility.tab {
-          width: 3.8rem;
-          height: 2.4rem;
+          width: 3.7rem;
+          height: 2.35rem;
           border-radius: .1rem;
           padding-top: .71rem;
           padding-bottom: .55rem;
+        }
+        @include utility.sp {
+          width: 3.7rem;
+          height: 2.35rem;
+          border-radius: .1rem;
+          padding: .6rem 0;
         }
       }
 
@@ -70,6 +95,9 @@
         font-size: 24px;
         font-weight: utility.$bold;
         @include utility.tab {
+          font-size: .24rem;
+        }
+        @include utility.sp {
           font-size: .24rem;
         }
       }
@@ -84,6 +112,11 @@
           font-size: .16rem;
           margin-top: .45rem;
           line-height: .24rem;
+        }
+        @include utility.sp {
+          font-size: .16rem;
+          margin-top: .53rem;
+          line-height: .2rem;
         }
       }
     }
@@ -108,6 +141,14 @@
       height: .6rem;
       font-size: .18rem;
       border-radius: .3rem;  
+    }
+    @include utility.sp {
+      margin-top: .35rem;
+      width: 3.7rem;
+      height: .6rem;
+      font-size: .18rem;
+      border-radius: .3rem;
+      margin-left: 0;
     }
   }
 }

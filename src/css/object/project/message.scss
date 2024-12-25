@@ -16,6 +16,10 @@
       padding-top: 1.04rem;
       padding-bottom: 1.03rem;   
     }
+    @include utility.sp {
+      padding: .16rem .24rem .19rem .26rem;
+    }
+    
 
     &__text {
       text-align: center;
@@ -26,6 +30,11 @@
       @include utility.tab {
         font-size: .25rem;
         margin-top: .41rem; 
+      }
+      @include utility.sp {
+        font-size: .14rem;
+        font-weight: utility.$regular;
+        margin-top: .1rem;
       }
 
       &:first-child {
