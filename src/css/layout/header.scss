@@ -135,4 +135,12 @@
       border-radius: .03rem;
     }
   }
+
+  &__nav-sp {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
 }

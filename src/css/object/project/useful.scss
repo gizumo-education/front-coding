@@ -1,8 +1,7 @@
 @use '../../object/utility/utility.scss';
 
 .p-useful {
-  width: 1180px;
-  margin: 105px auto 0;
+  margin-top: 105px;
 
   &__box {
     display: flex;
@@ -68,8 +67,7 @@
     /* TAB */
     @include utility.tab {
       
-      width: 11.8rem;
-      margin: 1.05rem auto 0;
+      margin-top: 1.05rem;
     
       &__box {
         margin-top: .5rem;
@@ -114,7 +112,7 @@
   @include utility.sp {
 
     width: 3.7rem;
-    margin: .6rem auto 0;
+    margin-top: .6rem;
 
     &__box {
       display: block;
