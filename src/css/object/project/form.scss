@@ -103,11 +103,11 @@
             right: .15rem;
           }
           @include utility.sp {
-            border-right: .08rem solid transparent;
-            border-left: .08rem solid transparent;
-            border-top: .08rem solid utility.$formPink;
-            top: .16rem;
-            right: .08rem;
+            border-right: .07rem solid transparent;
+            border-left: .07rem solid transparent;
+            border-top: .07rem solid utility.$formPink;
+            top: .12rem;
+            right: .07rem;
           }
         }
 
