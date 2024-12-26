@@ -52,6 +52,12 @@
       @include utility.sp {
         display: block;
       }
+
+      .sample01 {
+        @include utility.sp {
+          width: 100%;
+        }
+      }
     }
 
     &__text {
