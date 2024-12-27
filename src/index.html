@@ -8,6 +8,12 @@
   <meta name="keywords" content="ギズジョブ, ギズジョブ医療事務, 医療事務求人, 医療事務">
   <meta name="description" content="ギズジョブは完全無料の求職者向け求人サービスです">
   <title>医療事務求人を探すならギズジョブ</title>
+  <title>基本コーディング</title>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body>
@@ -103,13 +109,13 @@
       <div class="p-newjob__inner l-inner">
         <h2 class="p-newjob__title">新着求人</h2>
         <div class="is-relative">
-          <ul class="p-newjob__contents">
-            <li>
+          <ul class="p-newjob__contents slick">
+            <li class="p-newjob__contents__item">
               <div class="is-sp-none">
                 <img src="./img/picture/sample01.png" width="280" height="200" alt="求人写真01">
               </div>
               <div class="is-sp-block">
-                <img class="sample01" src="./img/picture/sample01-sp.png" width="280" height="200" alt="求人写真01-sp">
+                <img class="sample" src="./img/picture/sample01-sp.png" width="280" height="200" alt="求人写真01-sp">
               </div>
               <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
               <table class="p-newjob__table">
@@ -127,9 +133,12 @@
                 </tr>
               </table>
             </li>
-            <li class="is-none">
-              <div>
-                <img src="./img/picture/sample02.png" width="280" height="200" alt="求人写真02">
+            <li class="p-newjob__contents__item">
+              <div class="is-sp-none">
+                <img class="sample" src="./img/picture/sample02.png" width="280" height="200" alt="求人写真02">
+              </div>
+              <div class="is-sp-block">
+                <img class="sample" src="./img/picture/sample01-sp.png" width="280" height="200" alt="求人写真01-sp">
               </div>
               <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
               <table class="p-newjob__table">
@@ -147,9 +156,12 @@
                 </tr>
               </table>
             </li>
-            <li class="is-none">
-              <div>
-                <img src="./img/picture/sample03.png" width="280" height="200" alt="求人写真03">
+            <li class="p-newjob__contents__item">
+              <div class="is-sp-none">
+                <img class="sample" src="./img/picture/sample03.png" width="280" height="200" alt="求人写真03">
+              </div>
+              <div class="is-sp-block">
+                <img class="sample" src="./img/picture/sample01-sp.png" width="280" height="200" alt="求人写真01-sp">
               </div>
               <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
               <table class="p-newjob__table">
@@ -167,9 +179,35 @@
                 </tr>
               </table>
             </li>
-            <li class="is-none">
-              <div>
-                <img src="./img/picture/sample04.png" width="280" height="200" alt="求人写真04">
+            <li class="p-newjob__contents__item">
+              <div class="is-sp-none">
+                <img class="sample" src="./img/picture/sample04.png" width="280" height="200" alt="求人写真04">
+              </div>
+              <div class="is-sp-block">
+                <img class="sample" src="./img/picture/sample01-sp.png" width="280" height="200" alt="求人写真01-sp">
+              </div>
+              <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <table class="p-newjob__table">
+                <tr>
+                  <th>給与</th>
+                  <td>月給 148,000円〜</td>
+                </tr>
+                <tr>
+                  <th>所在地</th>
+                  <td>三重県伊勢市</td>
+                </tr>
+                <tr>
+                  <th>最寄駅</th>
+                  <td>伊勢市駅 徒歩15分</td>
+                </tr>
+              </table>
+            </li>
+            <li class="p-newjob__contents__item">
+              <div class="is-sp-none">
+                <img class="sample" src="./img/picture/sample04.png" width="280" height="200" alt="求人写真04">
+              </div>
+              <div class="is-sp-block">
+                <img class="sample" src="./img/picture/sample01-sp.png" width="280" height="200" alt="求人写真01-sp">
               </div>
               <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
               <table class="p-newjob__table">
@@ -188,8 +226,7 @@
               </table>
             </li>
           </ul>
-          <button class="left"></button>
-          <button class="right"></button>
+          <div class="arrow_box"></div>
         </div>
         <div class="p-newjob__button"><a class="p-newjob__button__link" href="">新着求人一覧をもっと見る</a></div>
       </div>
@@ -360,6 +397,8 @@
     </div>
     <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
   </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
