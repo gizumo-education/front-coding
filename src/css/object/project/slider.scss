@@ -77,12 +77,12 @@
     margin-top: 30px;
     display: flex;
 
+    .slick-slide {
+      margin-right: 20px;
+    }
+
     &__block {
       width: 280px!important;
-
-      &:nth-child(n+2) {
-        margin-left: 0;
-      }
 
       &__text {
         margin-top: 8px;
@@ -114,9 +114,7 @@
     }
   }
 
-  .slick-slide {
-    width: 295px!important;
-  }
+
 
   &__btn {
     width: 360px;
@@ -142,40 +140,47 @@
       font-size: .25rem;
     }
 
-    &__arrow__right {
-      top: .7rem;
 
+    .arrow_box {
+      margin: .2rem 0 0;
+    }
+
+    .prev-arrow,
+    .next-arrow {
+      width: .6rem;
+      height: .6rem;
+      top: 1rem;
+    }
+  
+    .next-arrow {
       &:before {
-        width: .2rem;
-        height: .2rem;
-        border-top: solid .007rem utility.$black;
-        border-right: solid .007rem utility.$black;
         right: .24rem;
       }
     }
-
-    &__arrow__left {
-      position: absolute;
-      top: .7rem;
-
+  
+    .prev-arrow {
       &:before {
-        width: .2rem;
-        height: .2rem;
-        border-top: solid .007rem utility.$black;
-        border-right: solid .007rem utility.$black;
         left: .24rem;
       }
+    }
+  
+    .prev-arrow::before,
+    .next-arrow::before {
+      width: .2rem;
+      height: .2rem;
+      border-top: solid .007rem utility.$black;
+      border-right: solid .007rem utility.$black;
     }
 
     &__contents {
       margin-top: .3rem;
 
+      .slick-slide {
+        margin-right: .2rem;
+      }
+
       &__block {
         width: 2.8rem!important;
-
-        &:nth-child(n+2) {
-          margin-left: .2rem;
-        }
 
         &__text {
           margin-top: .08rem;
@@ -203,10 +208,6 @@
       }
     }
 
-    .slick-slide {
-      width: 2.95rem!important;
-    }
-
     &__btn {
       width: 3.6rem;
 
@@ -221,7 +222,8 @@
 
   /* SP */
   @include utility.sp {
-    margin-top: .25rem;
+    margin-top: .95rem;
+    padding-top: -.95rem;
 
     .pc-only {
       display: none;
@@ -241,28 +243,45 @@
 
     }
 
-    &__arrow__right {
-      top: 1.57rem;
 
+    .arrow_box {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 20px 0 0;
+      position: relative;
+      z-index: 100;
+    }
+  
+    .prev-arrow,
+    .next-arrow {
+      width: .42rem;
+      height: .42rem;
+      top: 1.73rem;
+    }
+  
+    .next-arrow {
       &:before {
-        width: .1rem;
-        height: .1rem;
         right: .19rem;
       }
     }
-
-    &__arrow__left {
-      top: 1.57rem;
-
+  
+    .prev-arrow {
+  
       &:before {
-        width: .1rem;
-        height: .1rem;
         left: .19rem;
       }
     }
+  
+    .prev-arrow::before,
+    .next-arrow::before {
+      content: '';
+      width: .13rem;
+      height: .13rem;
+    }
 
     &__contents {
-      margin-top: .35rem;
+      margin-top: .16rem;
       display: block;
 
       &__block {

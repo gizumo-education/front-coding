@@ -17,42 +17,43 @@
 
 <body>
   <header class="l-header">
-    <nav class="l-header__nav">
-      <div class="l-header__pc-items">
-        <ul class="l-header__items">
-          <li class="l-header__item"><a href="">ギズジョブ医療事務とは</a></li>
-          <li class="l-header__item"><a class="is-search" href="">こだわり検索</a></li>
-          <li class="l-header__item"><a class="is-book" href="">ギズジョブ医療事務コラム</a></li>
+    <div class="l-header__fixed">
+      <nav class="l-header__nav">
+        <div class="l-header__pc-items">
+          <ul class="l-header__items">
+            <li class="l-header__item"><a href="">ギズジョブ医療事務とは</a></li>
+            <li class="l-header__item"><a class="is-search" href="">こだわり検索</a></li>
+            <li class="l-header__item"><a class="is-book" href="">ギズジョブ医療事務コラム</a></li>
+          </ul>
+          <ul class="l-header__buttons">
+            <li class="l-header__button is-heart"><a href="">気になるリスト</a></li>
+            <li class="l-header__button is-clock"><a href="">閲覧履歴</a></li>
+            <li class="l-header__button is-camera"><a href="">検索履歴</a></li>
+          </ul>
+        </div>
+        <div class="l-header__sp-items">
+          <button class="l-header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+      <nav class="l-header__nav-sp ">
+        <ul class="l-header__nav-sp__items">
+          <li class="l-header__nav-sp__item"><a href="#top">トップ</a></li>
+          <li class="l-header__nav-sp__item"><a href="#slider">新着求人</a></li>
+          <li class="l-header__nav-sp__item"><a href="#features">4つの特徴</a></li>
+          <li class="l-header__nav-sp__item"><a href="#flow">転職までの流れ</a></li>
+          <li class="l-header__nav-sp__item"><a href="#useful">転職お役立ちコンテンツ</a></li>
         </ul>
-        <ul class="l-header__buttons">
-          <li class="l-header__button is-heart"><a href="">気になるリスト</a></li>
-          <li class="l-header__button is-clock"><a href="">閲覧履歴</a></li>
-          <li class="l-header__button is-camera"><a href="">検索履歴</a></li>
-        </ul>
-      </div>
-      <div class="l-header__sp-items">
-        <button class="l-header__hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </nav>
-    <nav class="l-header__nav-sp">
-      <ul class="l-header__nav-sp__items">
-        <li class="l-header__nav-sp__item"><a href="">メニュー</a></li>
-        <li class="l-header__nav-sp__item"><a href="">メニュー</a></li>
-        <li class="l-header__nav-sp__item"><a href="">メニュー</a></li>
-        <li class="l-header__nav-sp__item"><a href="">メニュー</a></li>
-        <li class="l-header__nav-sp__item"><a href="">メニュー</a></li>
-      </ul>
-    </nav>
+      </nav>
+    </div>
   </header>
-
 
   <main>
 
-    <div class="p-keyvisual">
+    <div class="p-keyvisual" id="top">
       <div class="p-keyvisual__img">
         <div class="p-keyvisual__box">
           <h1><img class="p-keyvisual__box__logo" src="./img/picture/main/main-logo.png" alt="2021年使って良かった転職サイトno.1">
@@ -110,21 +111,16 @@
     </div>
 
 
-    <div class="p-slider ">
+    <div class="p-slider" id="slider">
       <div class="p-slider__box l-inner">
         <h2 class="p-slider__title u-h2__sp">新着求人</h2>
         <div class="p-slider__slide">
 
           <div class="arrow_box"></div>
 
-
-          <!-- <button class="p-slider__arrow__right c-slideButton"></button> -->
-          <!-- <button class="p-slider__arrow__left c-slideButton"></button> -->
           <ul class="p-slider__contents slick-slider">
 
-
             <li class="p-slider__contents__block">
-
               <img class="pc-only" src="./img/picture/slider/slider_img01.png" alt="">
               <img class="sp-only" src="./img/picture/slider/slider_img01_sp.png" alt="">
               <div class="p-slider__contents__block__text">
@@ -228,7 +224,7 @@
     </div>
 
 
-    <div class="p-features l-inner">
+    <div class="p-features l-inner" id="features">
       <h2 class="u-h2">ギズジョブの4つの特徴</h2>
       <ul class="p-features__box">
         <li class="p-features__box__list">
@@ -252,7 +248,7 @@
     </div>
 
 
-    <div class="p-flow l-inner">
+    <div class="p-flow l-inner" id="flow">
       <h2 class="u-h2">転職までの流れ</h2>
       <ul class="p-flow__box">
         <li class="p-flow__box__list">
@@ -296,7 +292,7 @@
     </div>
 
 
-    <div class="p-useful l-inner">
+    <div class="p-useful l-inner" id="useful">
       <h2 class="u-h2">転職お役立ちコンテンツ</h2>
       <ul class="p-useful__box">
         <li class="p-useful__box__list p-useful__img_01">
@@ -380,7 +376,8 @@
   </footer>
 
   <!-- JS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    async></script>
 </body>
 
 </html>
