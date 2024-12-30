@@ -11,8 +11,8 @@
   background-color: var.$jobBackGround;
   border-radius: 10px;
 
-  h2 {
-    @include mix.h2();
+  h1 {
+    @include mix.h1();
     margin-bottom: 20px;
     font-weight: var.$bold;
   }
@@ -21,7 +21,7 @@
     font-size: 2.0rem;
   }
 
-  form {
+  ul {
     display: flex;
     align-items: center;
     margin-top: 25px;
@@ -51,12 +51,12 @@
       width: 140px;
 
       a {
-        display: flex;
-        align-items: center;
         color: var.$white;
       }
 
       .p-search__icon-position {
+        display: flex;
+        align-items: center;
         margin-right: 5px;
 
         img {

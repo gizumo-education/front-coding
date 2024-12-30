@@ -4,31 +4,38 @@
 @use '../../foundation/mixins' as mix;
 
 .p-jobslist__oll-list {
-  margin-bottom: 30px;
+  width: 100%;
+  margin: 0 auto;
+  background: #EFF6FC;
 
   ul {
-    background: var.$bgLightBlue;
+    display: flex;
+    gap: 20px;
     margin: 0 auto;
-    padding: 30px 50px 67px 50px;
     width: 100%;
     text-align: center;
   }
 
   .p-jobslist__grid {
     display: inline-grid;
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px 50px 67px 50px;
+    background: #EFF6FC;
+    /* transform: translate(9%, 0%); */
   }
 
 
-  h2 {
-    @include mix.h2();
+  h1 {
+    @include mix.h1();
     text-align: left;
     margin-bottom: 25px;
   }
 
   .p-jobslist__content {
     position: relative;
-    display: inline-flex;
-    gap: 20px;
+    width: fit-content;
+    margin: 0px auto;
 
     .p-jobslist__position-img {
       position: relative;
@@ -102,6 +109,7 @@
     transform: translate(0%, -50%);
     opacity: 0.7;
   }
+
   .p-jobslist__arrow-right::after {
     content: "";
     width: 20px;
@@ -116,6 +124,7 @@
     bottom: 0;
     margin: auto;
   }
+
   button {
     @include mix.button(var.$buttonBackGround, var.$white);
     font-size: 1.8rem;
