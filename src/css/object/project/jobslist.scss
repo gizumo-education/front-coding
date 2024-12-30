@@ -1,0 +1,75 @@
+@use '../../object/utility/utility.scss';
+
+@use '../../foundation/variables' as var;
+@use '../../foundation/mixins' as mix;
+
+.p-jobslist__oll-list {
+  margin-bottom: 30px;
+
+  ul {
+    background: var.$bgLightBlue;
+    margin: 0 auto;
+    padding: 30px 50px 67px 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .p-jobslist__grid {
+    display: inline-grid;
+  }
+
+  h2 {
+    @include mix.h2();
+    text-align: left;
+    margin-bottom: 25px;
+  }
+
+  .p-jobslist__content {
+    display: inline-flex;
+    gap: 20px;
+
+    .p-jobslist__position-img {
+      display: block;
+
+      img {
+        height: 200px;
+        width: auto;
+        object-fit: cover;
+      }
+    }
+
+    .p-jobslist__text {
+      margin-top: 8.08px;
+      width: 278px;
+    }
+
+    p {
+      margin-bottom: 4px;
+      display: flex;
+      font-size: 1.4rem;
+      line-height: 20px;
+      text-align: left;
+
+      span {
+        margin-right: 10px;
+        text-align: center;
+        display: block;
+        width: 60px;
+        background-color: var.$label;
+      }
+    }
+  }
+
+  button {
+    @include mix.button(var.$buttonBackGround, var.$white);
+    font-size: 1.8rem;
+    font-weight: var.$bold;
+    margin: 60px auto 0;
+    height: 60px;
+    width: 360px;
+
+    a {
+      color: var.$white;
+    }
+  }
+}

@@ -1,2 +1,44 @@
 @use '../../object/utility/utility.scss';
+
+@use '../../foundation/variables' as var;
+
 // ページ上部のキービジュアルに関するスタイル
+.p-keyvisual__top-photo {
+  background-image: url('../img/picture/top-photo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var.$bgTop;
+  height: 500px;
+  width: 100%;
+
+  ul {
+    width: fit-content;
+    text-align: right;
+    padding-top: 74px;
+    margin: 0px 193px 0 auto;
+
+
+    li:nth-child(1) {
+      margin: 0 auto 40px;
+      margin-bottom: 40px;
+      width: fit-content;
+    }
+    
+    li:nth-child(3) {
+      color: var.$textNumber;
+      background-color: var.$white;
+      font-size: 2rem;
+      text-align: center;
+      margin: 54px auto 0;
+      padding: 15px 41.5px;
+      width: fit-content;
+      border-radius: 15px;
+      border: 2.3px solid var.$textNumber;
+    }
+
+    span {
+      font-size: 4.0rem;
+      font-weight: var.$bold;
+    }
+  }
+}

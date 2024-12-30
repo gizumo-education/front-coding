@@ -1,0 +1,99 @@
+@use '../../object/utility/utility.scss';
+
+@use '../../foundation/variables' as var;
+@use '../../foundation/mixins' as mix;
+
+.p-search__job {
+  text-align: center;
+  margin: 60px auto;
+  padding: 40px;
+  width: fit-content;
+  background-color: var.$jobBackGround;
+  border-radius: 10px;
+
+  h2 {
+    @include mix.h2();
+    margin-bottom: 20px;
+    font-weight: var.$bold;
+  }
+
+  p {
+    font-size: 2.0rem;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+    li {
+      list-style: none;
+      margin-right: 15px;
+    }
+
+    li:nth-child(5) {
+      margin-right: 0;
+    }
+
+    input {
+      height: 60px;
+      width: 300px;
+      border-radius: 10px;
+      border: 1px solid;
+      border-color: var.$formColor;
+    }
+
+    button {
+      @include mix.button(var.$buttonBackGround, var.$white);
+      padding-left: 15px;
+      font-size: 1.8rem;
+      height: 60px;
+      width: 140px;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: var.$white;
+      }
+
+      .p-search__icon-position {
+        margin-right: 5px;
+
+        img {
+          height: 30px;
+          width: 30px;
+          object-fit: cover;
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+  }
+
+  .p-search__select-arrow {
+    position: relative;
+  }
+
+  .p-search__select-arrow::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid var.$formColor;
+    border-bottom: 0;
+  }
+
+  select {
+    width: 200px;
+    appearance: none;
+    padding: 17px 15px 17px 15px;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    border-color: var.$formColor;
+
+    option {
+      font-size: 1.8rem;
+    }
+  }
+}
