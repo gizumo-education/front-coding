@@ -27,9 +27,8 @@
 
 
   h1 {
-    @include mix.h1();
+    @include mix.h1(var.$bold, 25px);
     text-align: left;
-    margin-bottom: 25px;
   }
 
   .p-jobslist__content {
