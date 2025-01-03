@@ -1,0 +1,112 @@
+@use '../../object/utility/utility.scss';
+
+@use '../../foundation/variables' as var;
+@use '../../foundation/mixins' as mix;
+
+.p-features__career-change-model {
+  margin: 105px auto;
+  text-align: center;
+
+  h1 {
+    @include mix.h1(var.$bold, 50px);
+  }
+
+  ul {
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 21.13px;
+
+    li {
+      position: relative;
+      height: 360px;
+      width: 280px;
+      display: block;
+      padding: 60px 0 40px;
+      border: 2.27px solid var.$listColor;
+      border-radius: 10px;
+    }
+
+    li:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 268px;
+      border-right: 20px solid transparent;
+      border-left: 20px solid transparent;
+      border-top: 20px solid var.$listColor;
+      border-bottom: 0;
+      transform: rotate(270deg);
+
+    }
+
+    li:nth-child(4):after {
+      display: none;
+    }
+
+    .p-features__number {
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      background-color: var.$listColor;
+
+      p {
+        font-size: 16px;
+        line-height: 19.36px;
+        color: var.$white;
+        transform: translate(0%, 11px);
+      }
+    }
+
+  }
+
+  .p-features__icon-text {
+
+    img {
+      height: 100px;
+      width: auto;
+    }
+  }
+
+  .p-features__icon-search {
+
+    img {
+      height: 79.95px;
+      width: auto;
+    }
+  }
+
+  .p-features__icon-mail {
+
+    img {
+      height: 100px;
+      width: auto;
+    }
+  }
+
+  .p-features__icon-sparkling {
+
+    img {
+      height: 100px;
+      width: auto;
+    }
+  }
+
+
+  h3 {
+    @include mix.h3(var.$bold, 36px);
+    margin: 20px auto 18px;
+  }
+
+  .p-features__text {
+    line-height: 20.27px;
+    width: fit-content;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
