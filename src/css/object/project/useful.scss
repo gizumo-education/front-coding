@@ -1,0 +1,98 @@
+@use '../../object/utility/utility.scss';
+
+@use '../../foundation/variables' as var;
+@use '../../foundation/mixins' as mix;
+
+
+.p-useful__useful-content {
+  margin: 105px auto 0;
+  text-align: center;
+
+  h1 {
+    @include mix.h1(var.$bold, 50px);
+  }
+
+  ul {
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 21.13px;
+  }
+
+  .p-useful__center-text {
+    margin-top: 71px;
+  }
+
+  p {
+    line-height: 23.17px;
+    width: fit-content;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  button {
+    @include mix.button(var.$buttonBackGround, var.$white);
+    font-size: 1.8rem;
+    font-weight: var.$bold;
+    margin: 60px auto 0;
+    height: 60px;
+    width: 360px;
+
+    a {
+      color: var.$white;
+    }
+  }
+
+
+
+  .p-useful__resume {
+    position: relative;
+    height: 240px;
+    width: 380px;
+    overflow: hidden;
+    color: var.$white;
+
+    .p-useful__background {
+      background-image: url('../img/picture/resume.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: brightness(0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 240px;
+      width: 380px;
+      z-index: -1;
+    }
+
+    h3 {
+      @include mix.h3(var.$bold, 44px);
+    }
+  }
+
+  .p-useful__trivia {
+    position: relative;
+    height: 240px;
+    width: 380px;
+    overflow: hidden;
+    color: var.$white;
+
+    .p-useful__background {
+      background-image: url('../img/picture/pc.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: brightness(0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 240px;
+      width: 380px;
+      z-index: -1;
+    }
+
+    h3 {
+      @include mix.h3(var.$bold, 45px);
+    }
+  }
+
+}
