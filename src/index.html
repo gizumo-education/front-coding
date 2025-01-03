@@ -19,6 +19,7 @@
 <body>
   <header class="l-header">
     <nav class="l-header__nav">
+      <!-- PC/TAB メニュー -->
       <div class="l-header__pc-items">
         <ul class="l-header__items">
           <li class="l-header__item"><a href="">ギズジョブ医療事務とは</a></li>
@@ -31,6 +32,8 @@
           <li class="l-header__button is-camera"><a href="">検索履歴</a></li>
         </ul>
       </div>
+
+      <!-- SP ハンバーガーメニュー -->
       <div class="l-header__sp-items">
         <button class="l-header__hamburger">
           <span></span>
@@ -38,6 +41,29 @@
           <span></span>
         </button>
       </div>
+      <!-- ナビのメニュー -->
+      <nav class="p-header__nav p-nav" id="js-nav">
+        <div class="p-nav__inner">
+          <ul class="p-nav__list">
+            <li class="p-nav__item">
+              <a href="#" class="p-nav__link">トップ</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#newjob" class="p-nav__link">新着求人</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#contents" class="p-nav__link">4つの特徴</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#flow" class="p-nav__link">転職までの流れ</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#manual" class="p-nav__link">転職お役立ちコンテンツ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
     </nav>
   </header>
 
@@ -105,7 +131,7 @@
     </section>
 
     <!-- 新着求人 -->
-    <section class="p-newjob">
+    <section class="p-newjob" id="newjob">
       <div class="p-newjob__inner l-inner">
         <h2 class="p-newjob__title">新着求人</h2>
         <div class="is-relative">
@@ -243,7 +269,7 @@
     </div>
 
     <!-- ギズジョブの4つの特徴 -->
-    <section class="p-contents l-inner">
+    <section class="p-contents l-inner" id="contents">
       <h2 class="p-contents__title">ギズジョブの4つの特徴</h2>
       <ul class="p-contents__list">
         <li class="p-contents__list__item">
@@ -268,7 +294,7 @@
     </section>
 
     <!-- 転職までの流れ -->
-    <section class="p-flow l-inner">
+    <section class="p-flow l-inner" id="flow">
       <h2 class="p-flow__title">転職までの流れ</h2>
       <ul class="p-flow__list">
         <li class="p-flow__list__item">
@@ -299,7 +325,7 @@
     </section>
 
     <!-- 転職お役立ちコンテンツ -->
-    <section class="p-manual l-inner">
+    <section class="p-manual l-inner" id="manual">
       <h2 class="p-manual__title">転職お役立ちコンテンツ</h2>
       <ul class="p-manual__list">
         <li class="p-manual__list__item">

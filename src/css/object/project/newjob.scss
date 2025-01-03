@@ -206,7 +206,7 @@
       top: -120px;
       bottom: 0;
       margin: auto;
-      z-index: 1000;
+      z-index: 5;
       @include utility.tab {
         width: .6rem;
         height: .6rem;
