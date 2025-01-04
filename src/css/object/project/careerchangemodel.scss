@@ -3,7 +3,7 @@
 @use '../../foundation/variables' as var;
 @use '../../foundation/mixins' as mix;
 
-.p-features__career-change-model {
+.p-careerchangemodel__flow {
   margin: 105px auto;
   text-align: center;
 
@@ -40,11 +40,15 @@
 
     }
 
+    li:nth-child(2) {
+      padding: 70.02px 0px 42px;
+    }
+
     li:nth-child(4):after {
       display: none;
     }
 
-    .p-features__number {
+    .p-careerchangemodel__number {
       display: block;
       position: absolute;
       top: 10px;
@@ -64,7 +68,7 @@
 
   }
 
-  .p-features__icon-text {
+  .p-careerchangemodel__icon-text {
 
     img {
       height: 100px;
@@ -72,7 +76,7 @@
     }
   }
 
-  .p-features__icon-search {
+  .p-careerchangemodel__icon-search {
 
     img {
       height: 79.95px;
@@ -80,7 +84,7 @@
     }
   }
 
-  .p-features__icon-mail {
+  .p-careerchangemodel__icon-mail {
 
     img {
       height: 100px;
@@ -88,7 +92,7 @@
     }
   }
 
-  .p-features__icon-sparkling {
+  .p-careerchangemodel__icon-sparkling {
 
     img {
       height: 100px;
@@ -100,9 +104,10 @@
   h3 {
     @include mix.h3(var.$bold, 36px);
     margin: 20px auto 18px;
+    line-height: 32px;
   }
 
-  .p-features__text {
+  .p-careerchangemodel__text {
     line-height: 20.27px;
     width: fit-content;
     font-size: 14px;
