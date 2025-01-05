@@ -33,7 +33,7 @@
 
   button {
     @include mix.button(var.$buttonBackGround, var.$white);
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: var.$bold;
     margin: 80px auto 0;
     height: 60px;
