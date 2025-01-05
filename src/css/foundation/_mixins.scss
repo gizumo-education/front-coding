@@ -32,6 +32,7 @@
   border-style: none;
 }
 
+<<<<<<< HEAD
 @mixin h1($Weight, $Bottom) {
   font-size: 2.5rem;
   font-weight: $Weight;
@@ -42,4 +43,8 @@
   font-size: 2.4rem;
   font-weight: $Weight;
   margin-bottom: $Bottom;
+=======
+@mixin h1 {
+  font-size: 25px;
+>>>>>>> feature/GIZFE-2135
 }
