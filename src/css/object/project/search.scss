@@ -18,7 +18,7 @@
   }
 
   p {
-    font-size: 2.0rem;
+    font-size: 20px;
   }
 
   ul {
@@ -46,7 +46,7 @@
     button {
       @include mix.button(var.$buttonBackGround, var.$white);
       padding-left: 15px;
-      font-size: 1.8rem;
+      font-size: 18px;
       height: 60px;
       width: 140px;
 
@@ -88,12 +88,12 @@
     width: 200px;
     appearance: none;
     padding: 17px 15px 17px 15px;
-    font-size: 1.8rem;
+    font-size: 18px;
     border-radius: 10px;
     border-color: var.$formColor;
 
     option {
-      font-size: 1.8rem;
+      font-size: 18px;
     }
   }
 }
