@@ -36,8 +36,10 @@
     }
 
     input {
+      font-size: 18px;
       height: 60px;
       width: 300px;
+      padding-left: 10px;
       border-radius: 10px;
       border: 1px solid;
       border-color: var.$formColor;

@@ -25,7 +25,6 @@
     /* transform: translate(9%, 0%); */
   }
 
-
   h1 {
     @include mix.h1();
     text-align: left;
@@ -50,6 +49,15 @@
     .p-jobslist__text {
       margin-top: 8.08px;
       width: 278px;
+
+      p:nth-child(4) {
+        margin-bottom: 0;
+      }
+    }
+
+    h4 {
+      @include mix.h4;
+      margin-bottom: 6.92px;
     }
 
     p {
@@ -68,6 +76,8 @@
       }
     }
   }
+
+
 
   .p-jobslist__arrow-left {
     content: "";

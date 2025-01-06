@@ -35,3 +35,9 @@
 @mixin h1 {
   font-size: 25px;
 }
+
+@mixin h4 {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}
