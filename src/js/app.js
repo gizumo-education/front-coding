@@ -11,9 +11,9 @@ $(function() {
     swipeToSlide: false,
     accessibility: true,
     appendArrows: $('.is-relative'),
-    preconstrow: '<div class="prev-arrow"></div>',
+    prevArrow: '<div class="prev-arrow"></div>',
     nextArrow: '<div class="next-arrow"></div>',
-    constiableWidth: true,
+    variableWidth: true,
   });
   
   // ハンバーガーメニュー
