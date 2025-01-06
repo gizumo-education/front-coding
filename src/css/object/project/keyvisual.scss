@@ -11,19 +11,40 @@
   height: 500px;
   width: 100%;
 
+  @include utility.sp {
+    height: 2.7rem;
+    background-size: cover;
+  }
+
   ul {
     width: fit-content;
     text-align: right;
-    padding-top: 74px;
+    padding-top: 61.64px;
     margin: 0px 193px 0 auto;
 
+    @include utility.sp {
+      margin: 0 .0332rem 0 auto;
+      padding-top: 0.74rem;
+    }
 
     li:nth-child(1) {
       margin: 0 auto 40px;
-      margin-bottom: 40px;
       width: fit-content;
+
+      @include utility.sp {
+        margin: 0 auto .1265rem;
+        width: 149.54px;
+        height: 73.36px;
+      }
     }
-    
+
+    li:nth-child(2) {
+      @include utility.sp {
+        width: 2.72rem;
+      }
+
+    }
+
     li:nth-child(3) {
       color: var.$textNumber;
       background-color: var.$white;
@@ -34,11 +55,23 @@
       width: fit-content;
       border-radius: 15px;
       border: 2.3px solid var.$textNumber;
+
+      @include utility.sp {
+        height: 30px;
+        font-size: 0.08rem;
+        margin: .1835rem auto 0;
+        padding: 0.04rem 0.2323rem 0.03rem 0.2377rem;
+        border-radius: 5px;
+      }
     }
 
     span {
       font-size: 40px;
       font-weight: var.$bold;
+
+      @include utility.sp {
+        font-size: 0.16rem;
+      }
     }
   }
 }

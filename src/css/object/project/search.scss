@@ -11,12 +11,26 @@
   background-color: var.$jobBackGround;
   border-radius: 10px;
 
+  @include utility.sp {
+    padding: .15rem .25rem .2rem;
+    margin: .25rem .15rem;
+    width: auto;
+  }
+
   h1 {
     @include mix.h1(var.$bold, 20px);
+
+    @include utility.sp {
+      font-size: .22rem;
+    }
   }
 
   p {
     font-size: 20px;
+
+    @include utility.sp {
+      font-size: .14rem;
+    }
   }
 
   ul {
@@ -24,13 +38,48 @@
     align-items: center;
     margin-top: 25px;
 
+    @include utility.sp {
+      display: inline-block;
+      margin-top: .13rem;
+    }
+
+    .p-search__block-select-sp {
+      display: flex;
+    }
+
+    .p-search__block-form-sp {
+      display: flex;
+
+      @include utility.sp {
+        display: block;
+        margin-top: .155rem;
+      }
+
+      li:nth-child(1) {
+        @include utility.sp {
+          margin-right: 0;
+        }
+      }
+
+      li:nth-child(2) {
+        margin-top: .19rem;
+        margin-right: 0;
+      }
+    }
+
     li {
       list-style: none;
       margin-right: 15px;
+
+      @include utility.sp {
+        margin-right: .105rem;
+      }
     }
 
-    li:nth-child(5) {
-      margin-right: 0;
+    li:nth-child(3) {
+      @include utility.sp {
+        margin-right: 0;
+      }
     }
 
     input {
@@ -39,6 +88,13 @@
       border-radius: 10px;
       border: 1px solid;
       border-color: var.$formColor;
+
+      @include utility.sp {
+        height: .3rem;
+        width: 3.2rem;
+        border-radius: .05rem;
+        padding-left: .07rem;
+      }
     }
 
     button {
@@ -48,8 +104,21 @@
       height: 60px;
       width: 140px;
 
+      @include utility.sp {
+        padding-left: .1301rem;
+        height: .4rem;
+        width: 1.6rem;
+      }
+
       a {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
         color: var.$white;
+
+        @include utility.sp {
+          gap: .1402rem;
+        }
       }
 
       .p-search__icon-position {
@@ -62,6 +131,11 @@
           width: 30px;
           object-fit: cover;
           filter: brightness(0) invert(1);
+
+          @include utility.sp {
+            height: .1797rem;
+            width: .1798rem;
+          }
         }
       }
     }
@@ -80,6 +154,14 @@
     border-left: 10px solid transparent;
     border-top: 10px solid var.$formColor;
     border-bottom: 0;
+
+    @include utility.sp {
+      top: 12.5px;
+      right: .065rem;
+      border-right: .07rem solid transparent;
+      border-left: .07rem solid transparent;
+      border-top: .07rem solid var.$formColor;
+    }
   }
 
   select {
@@ -89,6 +171,14 @@
     font-size: 18px;
     border-radius: 10px;
     border-color: var.$formColor;
+
+    @include utility.sp {
+      display: block;
+      width: 1rem;
+      padding: .06rem .08rem .07rem .08rem;
+      font-size: .12rem;
+      border-radius: .05rem;
+    }
 
     option {
       font-size: 18px;

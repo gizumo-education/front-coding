@@ -9,11 +9,30 @@
   background: #EFF6FC;
 
   ul {
+    position: relative;
     display: flex;
     gap: 20px;
     margin: 0 auto;
     width: 100%;
     text-align: center;
+
+    li:nth-child(3) {
+      @include utility.sp {
+        display: none;
+      }
+    }
+
+    li:nth-child(4) {
+      @include utility.sp {
+        display: none;
+      }
+    }
+
+    li:nth-child(5) {
+      @include utility.sp {
+        display: none;
+      }
+    }
   }
 
   .p-jobslist__grid {
@@ -23,16 +42,22 @@
     padding: 30px 50px 67px 50px;
     background: #EFF6FC;
     /* transform: translate(9%, 0%); */
-  }
 
+    @include utility.sp {
+      padding: 0.3rem 0.15rem .6rem;
+    }
+  }
 
   h1 {
     @include mix.h1(var.$bold, 25px);
     text-align: left;
+
+    @include utility.sp {
+      text-align: center;
+    }
   }
 
   .p-jobslist__content {
-    position: relative;
     width: fit-content;
     margin: 0px auto;
 
@@ -43,12 +68,32 @@
         height: 200px;
         width: auto;
         object-fit: cover;
+
+        @include utility.sp {
+          height: 2.08rem;
+          width: 3.7rem;
+          border-radius: .10rem;
+        }
       }
     }
 
     .p-jobslist__text {
       margin-top: 8.08px;
       width: 278px;
+      @include utility.sp{
+        width: auto;
+      }
+      
+    }
+
+    h4 {
+      font-size: 16px;
+      text-align: left;
+      margin-bottom: 6.92px;
+
+      @include utility.sp {
+        font-weight: var.$bold;
+      }
     }
 
     p {
@@ -71,13 +116,20 @@
   .p-jobslist__arrow-left {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 70px;
     background-color: #fff;
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(0%, 0%);
     opacity: 0.7;
+    z-index: 10;
+
+    @include utility.sp {
+      top: 157px;
+      height: 42px;
+      width: 42px;
+    }
   }
 
   .p-jobslist__arrow-left::before {
@@ -93,20 +145,30 @@
     left: 20px;
     bottom: 0;
     margin: auto;
+
+    @include utility.sp {
+      height: .07rem;
+      width: .07rem;
+    }
   }
 
   .p-jobslist__arrow-right {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 70px;
     right: 0;
     background-color: #fff;
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    -webkit-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
+    transform: translate(0%, 0%);
     opacity: 0.7;
+
+    @include utility.sp {
+      top: 1.57rem;
+      height: .42rem;
+      width: .42rem;
+    }
   }
 
   .p-jobslist__arrow-right::after {
@@ -122,6 +184,11 @@
     left: 20px;
     bottom: 0;
     margin: auto;
+
+    @include utility.sp {
+      height: .07rem;
+      width: .07rem;
+    }
   }
 
   button {
@@ -131,6 +198,12 @@
     margin: 60px auto 0;
     height: 60px;
     width: 360px;
+
+    @include utility.sp {
+      display: block;
+      width: 3.7rem;
+      margin: .44rem auto 0;
+    }
 
     a {
       color: var.$white;

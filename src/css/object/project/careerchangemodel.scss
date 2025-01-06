@@ -7,8 +7,16 @@
   margin: 105px auto;
   text-align: center;
 
+  @include utility.sp {
+    margin: .6rem auto 0;
+  }
+
   h1 {
     @include mix.h1(var.$bold, 50px);
+
+    @include utility.sp {
+      margin-bottom: .34rem;
+    }
   }
 
   ul {
@@ -16,6 +24,10 @@
     justify-content: center;
     margin: 0 auto;
     gap: 21.13px;
+
+    @include utility.sp {
+      display: inline-block;
+    }
 
     li {
       position: relative;
@@ -25,6 +37,13 @@
       padding: 60px 0 40px;
       border: 2.27px solid var.$listColor;
       border-radius: 10px;
+
+      @include utility.sp {
+        width: 2.8rem;
+        height: 2.93rem;
+        padding: .55rem 0 .22rem;
+        margin-bottom: .4113rem;
+      }
     }
 
     li:after {
@@ -38,10 +57,31 @@
       border-bottom: 0;
       transform: rotate(270deg);
 
+      @include utility.sp {
+        top: 103%;
+        left: 120px;
+        transform: rotate(360deg);
+      }
     }
 
     li:nth-child(2) {
       padding: 70.02px 0px 42px;
+
+      @include utility.sp {
+        padding: .5503rem 0 .2087rem;
+      }
+
+      h3 {
+        @include utility.sp {
+          margin: 22px auto 10px;
+        }
+      }
+    }
+
+    li:nth-child(4) {
+      @include utility.sp {
+        margin-bottom: 0px;
+      }
     }
 
     li:nth-child(4):after {
@@ -73,6 +113,11 @@
     img {
       height: 100px;
       width: auto;
+
+      @include utility.sp {
+        width: .7672rem;
+        height: .75rem;
+      }
     }
   }
 
@@ -81,6 +126,11 @@
     img {
       height: 79.95px;
       width: auto;
+
+      @include utility.sp {
+        width: .7495rem;
+        height: .7495rem;
+      }
     }
   }
 
@@ -89,6 +139,11 @@
     img {
       height: 100px;
       width: auto;
+
+      @include utility.sp {
+        width: .8012rem;
+        height: .75rem;
+      }
     }
   }
 
@@ -97,22 +152,44 @@
     img {
       height: 100px;
       width: auto;
+
+      @include utility.sp {
+        width: .7357rem;
+        height: .75rem;
+      }
     }
   }
-
 
   h3 {
     @include mix.h3(var.$bold, 36px);
     margin: 20px auto 18px;
     line-height: 32px;
+
+    @include utility.sp {
+      font-size: .20rem;
+    }
+
+    br {
+      @include utility.sp {
+        @include mix.br;
+      }
+    }
   }
 
-  li:nth-child(3) h3{
+  li:nth-child(3) h3 {
     margin: 20px auto 38px;
+
+    @include utility.sp {
+      margin: .1rem auto .1rem;
+    }
   }
 
-  li:nth-child(4) h3{
+  li:nth-child(4) h3 {
     margin: 20px auto 38px;
+
+    @include utility.sp {
+      margin: .22rem auto .1rem;
+    }
   }
 
   .p-careerchangemodel__text {

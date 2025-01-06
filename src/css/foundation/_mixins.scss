@@ -43,3 +43,9 @@
   font-weight: $Weight;
   margin-bottom: $Bottom;
 }
+
+/* 改行処理
+------------------------------- */
+@mixin br{
+    display: none;
+  }

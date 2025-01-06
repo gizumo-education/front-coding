@@ -9,6 +9,10 @@
   margin: 105px auto 0;
   text-align: center;
 
+  @include utility.sp {
+    margin: .60rem auto 0;
+  }
+
   h1 {
     @include mix.h1(var.$bold, 50px);
   }
@@ -18,6 +22,18 @@
     justify-content: center;
     margin: 0 auto;
     gap: 21.13px;
+
+    @include utility.sp {
+      display: inline-block;
+    }
+
+    li {
+      margin-bottom: .18rem;
+    }
+
+    li:nth-child(3) {
+      margin-bottom: 0;
+    }
   }
 
   .p-useful__center-text {
@@ -39,6 +55,11 @@
     height: 60px;
     width: 420px;
 
+    @include utility.sp {
+      margin: 34.86px auto 0;
+      width: 3.7rem;
+    }
+
     a {
       color: var.$white;
     }
@@ -51,6 +72,11 @@
     overflow: hidden;
     color: var.$white;
 
+    @include utility.sp {
+      width: 3.70rem;
+      height: 2.34rem;
+    }
+
     .p-useful__background {
       background-image: url('../img/picture/resume.png');
       background-repeat: no-repeat;
@@ -62,6 +88,13 @@
       height: 240px;
       width: 380px;
       z-index: -1;
+
+      @include utility.sp {
+        background-size: cover;
+        width: 3.7rem;
+        height: 2.34rem;
+        max-width: 100%;
+      }
     }
 
     h3 {
@@ -76,6 +109,11 @@
     overflow: hidden;
     color: var.$white;
 
+    @include utility.sp {
+      width: 3.70rem;
+      height: 2.34rem;
+    }
+
     .p-useful__background {
       background-image: url('../img/picture/pc.png');
       background-repeat: no-repeat;
@@ -87,6 +125,13 @@
       height: 240px;
       width: 380px;
       z-index: -1;
+
+      @include utility.sp {
+        background-size: cover;
+        width: 3.7rem;
+        height: 2.34rem;
+        max-width: 100%;
+      }
     }
 
     h3 {
