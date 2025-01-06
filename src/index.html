@@ -8,11 +8,14 @@
   <meta name="keywords" content="ギズジョブ, ギズジョブ医療事務, 医療事務求人, 医療事務">
   <meta name="description" content="ギズジョブは完全無料の求職者向け求人サービスです">
   <title>医療事務求人を探すならギズジョブ</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 </head>
 
 <body>
   <header class="l-header">
     <nav class="l-header__nav">
+      <!-- PC/TAB メニュー -->
       <div class="l-header__pc-items">
         <ul class="l-header__items">
           <li class="l-header__item"><a href="">ギズジョブ医療事務とは</a></li>
@@ -25,6 +28,8 @@
           <li class="l-header__button is-camera"><a href="">検索履歴</a></li>
         </ul>
       </div>
+
+      <!-- SP ハンバーガーメニュー -->
       <div class="l-header__sp-items">
         <button class="l-header__hamburger">
           <span></span>
@@ -32,6 +37,29 @@
           <span></span>
         </button>
       </div>
+      <!-- ナビのメニュー -->
+      <nav class="p-header__nav p-nav" id="js-nav">
+        <div class="p-nav__inner">
+          <ul class="p-nav__list">
+            <li class="p-nav__item">
+              <a href="#" class="p-nav__link">トップ</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#newjob" class="p-nav__link">新着求人</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#contents" class="p-nav__link">4つの特徴</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#flow" class="p-nav__link">転職までの流れ</a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#manual" class="p-nav__link">転職お役立ちコンテンツ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
     </nav>
   </header>
 
@@ -99,17 +127,17 @@
     </section>
 
     <!-- 新着求人 -->
-    <section class="p-newjob">
+    <section class="p-newjob" id="newjob">
       <div class="p-newjob__inner l-inner">
         <h2 class="p-newjob__title">新着求人</h2>
         <div class="is-relative">
-          <ul class="p-newjob__contents">
-            <li>
+          <ul class="p-newjob__contents slick">
+            <li class="p-newjob__contents__item">
               <div class="is-sp-none">
                 <img src="./img/picture/sample01.png" width="280" height="200" alt="求人写真01">
               </div>
               <div class="is-sp-block">
-                <img class="sample01" src="./img/picture/sample01-sp.png" width="280" height="200" alt="求人写真01-sp">
+                <img class="sample" src="./img/picture/sample01-sp.png" width="280" height="200" alt="求人写真01-sp">
               </div>
               <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
               <table class="p-newjob__table">
@@ -127,9 +155,12 @@
                 </tr>
               </table>
             </li>
-            <li class="is-none">
-              <div>
-                <img src="./img/picture/sample02.png" width="280" height="200" alt="求人写真02">
+            <li class="p-newjob__contents__item">
+              <div class="is-sp-none">
+                <img class="sample" src="./img/picture/sample02.png" width="280" height="200" alt="求人写真02">
+              </div>
+              <div class="is-sp-block">
+                <img class="sample" src="./img/picture/sample01-sp.png" width="280" height="200" alt="求人写真01-sp">
               </div>
               <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
               <table class="p-newjob__table">
@@ -147,9 +178,12 @@
                 </tr>
               </table>
             </li>
-            <li class="is-none">
-              <div>
-                <img src="./img/picture/sample03.png" width="280" height="200" alt="求人写真03">
+            <li class="p-newjob__contents__item">
+              <div class="is-sp-none">
+                <img class="sample" src="./img/picture/sample03.png" width="280" height="200" alt="求人写真03">
+              </div>
+              <div class="is-sp-block">
+                <img class="sample" src="./img/picture/sample01-sp.png" width="280" height="200" alt="求人写真01-sp">
               </div>
               <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
               <table class="p-newjob__table">
@@ -167,9 +201,35 @@
                 </tr>
               </table>
             </li>
-            <li class="is-none">
-              <div>
-                <img src="./img/picture/sample04.png" width="280" height="200" alt="求人写真04">
+            <li class="p-newjob__contents__item">
+              <div class="is-sp-none">
+                <img class="sample" src="./img/picture/sample04.png" width="280" height="200" alt="求人写真04">
+              </div>
+              <div class="is-sp-block">
+                <img class="sample" src="./img/picture/sample01-sp.png" width="280" height="200" alt="求人写真01-sp">
+              </div>
+              <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <table class="p-newjob__table">
+                <tr>
+                  <th>給与</th>
+                  <td>月給 148,000円〜</td>
+                </tr>
+                <tr>
+                  <th>所在地</th>
+                  <td>三重県伊勢市</td>
+                </tr>
+                <tr>
+                  <th>最寄駅</th>
+                  <td>伊勢市駅 徒歩15分</td>
+                </tr>
+              </table>
+            </li>
+            <li class="p-newjob__contents__item">
+              <div class="is-sp-none">
+                <img class="sample" src="./img/picture/sample04.png" width="280" height="200" alt="求人写真04">
+              </div>
+              <div class="is-sp-block">
+                <img class="sample" src="./img/picture/sample01-sp.png" width="280" height="200" alt="求人写真01-sp">
               </div>
               <p class="p-newjob__contents__text">平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
               <table class="p-newjob__table">
@@ -188,8 +248,7 @@
               </table>
             </li>
           </ul>
-          <button class="left"></button>
-          <button class="right"></button>
+          <div class="arrow_box"></div>
         </div>
         <div class="p-newjob__button"><a class="p-newjob__button__link" href="">新着求人一覧をもっと見る</a></div>
       </div>
@@ -206,7 +265,7 @@
     </div>
 
     <!-- ギズジョブの4つの特徴 -->
-    <section class="p-contents l-inner">
+    <section class="p-contents l-inner" id="contents">
       <h2 class="p-contents__title">ギズジョブの4つの特徴</h2>
       <ul class="p-contents__list">
         <li class="p-contents__list__item">
@@ -231,7 +290,7 @@
     </section>
 
     <!-- 転職までの流れ -->
-    <section class="p-flow l-inner">
+    <section class="p-flow l-inner" id="flow">
       <h2 class="p-flow__title">転職までの流れ</h2>
       <ul class="p-flow__list">
         <li class="p-flow__list__item">
@@ -262,7 +321,7 @@
     </section>
 
     <!-- 転職お役立ちコンテンツ -->
-    <section class="p-manual l-inner">
+    <section class="p-manual l-inner" id="manual">
       <h2 class="p-manual__title">転職お役立ちコンテンツ</h2>
       <ul class="p-manual__list">
         <li class="p-manual__list__item">
@@ -360,6 +419,7 @@
     </div>
     <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
   </footer>
+
 </body>
 
 </html>

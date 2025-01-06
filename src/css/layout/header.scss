@@ -107,6 +107,8 @@
       }
     }
   }
+
+  // SP ハンバーガーメニュー
   &__sp-items {
     display: flex;
     justify-content: flex-end;
@@ -127,12 +129,66 @@
     appearance: none;
     border: none;
     background-color: transparent;
+    z-index: 100;
     span {
       display: inline-block;
-      width: 100%;
+      width: .5rem;
       height: .06rem;
       background-color: utility.$black;
       border-radius: .03rem;
+      transition: .6s;
     }
+
+    &.is-active span:nth-of-type(1) {
+      position: absolute;
+      top: .35rem;
+      transform: rotate(225deg);
+    }
+    &.is-active span:nth-of-type(2) {
+      opacity: 0;
+    }
+    &.is-active span:nth-of-type(3) {
+      position: absolute;
+      top: .35rem;
+      transform: rotate(-225deg);
+    }
+  }
+
+  .p-header__nav {
+    margin-top: .7rem;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: utility.$black;
+    opacity: 0;
+    transition: 0.6s;
+    &.is-active {
+      position: fixed;
+      top: 0;
+      right: 0;
+      opacity: .7;
+      transition: 0.6s;
+    }
+
+    .p-nav__list {
+      padding-top: .57rem;
+      padding-left: .6rem;
+
+      .p-nav__link {
+        color: utility.$white;
+        opacity: 1;
+        font-size: .22rem;
+        font-weight: utility.$bold;
+        margin-top: .38rem;
+      }
+      .p-nav__item:first-child {
+        .p-nav__link {
+          margin-top: 0;
+        }
+      }
+    }
+
   }
 }
