@@ -2,6 +2,12 @@
 // footerのスタイルを記述するファイル
 .l-footer {
   margin-top: 140px;
+  @include utility.tab {
+    margin-top: 1.4rem;     
+  }
+  @include utility.sp {
+    margin-top: 0.8rem;
+  }
 
   &__area {
     padding: 55px 0 25px;
@@ -12,7 +18,7 @@
       font-size: .16rem;
     }
     @include utility.sp {
-      padding: .38rem 0 .40rem;
+      padding: .3rem 0 .40rem;
       font-size: .16rem;
     }
   }
@@ -34,7 +40,7 @@
       line-height: .36rem;
     }
     @include utility.sp {
-      line-height: .36rem;
+      line-height: .33rem;
     }
     &:first-child {
       width: 100%;

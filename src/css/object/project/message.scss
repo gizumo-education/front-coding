@@ -12,6 +12,14 @@
   &__box {
     padding-top: 104px;
     padding-bottom: 103px;
+    @include utility.tab {
+      padding-top: 1.04rem;
+      padding-bottom: 1.03rem;   
+    }
+    @include utility.sp {
+      padding: .16rem .24rem .19rem .26rem;
+    }
+    
 
     &__text {
       text-align: center;
@@ -19,6 +27,15 @@
       font-weight: utility.$bold;
       color: utility.$white;
       margin-top: 41px;
+      @include utility.tab {
+        font-size: .25rem;
+        margin-top: .41rem; 
+      }
+      @include utility.sp {
+        font-size: .14rem;
+        font-weight: utility.$regular;
+        margin-top: .1rem;
+      }
 
       &:first-child {
         margin-top: 0;

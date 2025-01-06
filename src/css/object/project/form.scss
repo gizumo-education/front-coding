@@ -3,31 +3,89 @@
 .p-form {
   margin: 60px auto;
   text-align: center;
-
+  @include utility.tab {
+    margin: .6rem auto;
+  }
+  @include utility.sp {
+    margin: .25rem 0;
+  }
+  
   &:last-child {
     margin-top: 150px;
+    @include utility.tab {
+      margin-top: 1.5rem;
+    }
+    @include utility.sp {
+      margin-top: .6rem;
+    }
   }
-
+  
   &__inner {
     padding: 40px;
     display: inline-block;
     background-color: utility.$lightBlue;
     border-radius: 10px;
+    @include utility.tab {
+      padding: .4rem;
+      border-radius: .1rem;
+    }
+    @include utility.sp {
+      padding: .15rem;
+      border-radius: .1rem;
+      width: 3.7rem;
+    }
 
     .p-form__title {
       font-size: 25px;
       font-weight: utility.$bold;
+      @include utility.tab {
+        font-size: .25rem;
+      }
+      @include utility.sp {
+        font-size: .22rem;
+      }
     }
 
     .p-form__text {
       font-size: 20px;
       margin-top: 25px;
+      @include utility.tab {
+        font-size: .2rem;
+        margin-top: .25rem;
+      }
+      @include utility.sp {
+        font-size: .14rem;
+        margin-top: .16rem;
+      }
     }
 
     .p-form__form {
       margin-top: 26px;
       display: flex;
       gap: 15px;
+      @include utility.tab {
+        justify-content: center;
+        align-items: center;
+        margin-top: .26rem;
+        gap: .15rem;
+      }
+      @include utility.sp {
+        margin-top: .2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .05rem;
+      }
+
+      .sp {
+        display: flex;
+        gap: 15px;
+        @include utility.tab {
+          gap: .15rem;
+        }
+        @include utility.sp {
+          gap: .1rem;
+        }
+      }
 
       .p-form__selectbox__wrapper {
         position: relative;
@@ -42,6 +100,20 @@
           top: 25px;
           right: 15px;
           pointer-events: none;
+          @include utility.tab {
+            border-right: .12rem solid transparent;
+            border-left: .12rem solid transparent;
+            border-top: .12rem solid utility.$formPink;
+            top: .25rem;
+            right: .15rem;
+          }
+          @include utility.sp {
+            border-right: .07rem solid transparent;
+            border-left: .07rem solid transparent;
+            border-top: .07rem solid utility.$formPink;
+            top: .12rem;
+            right: .07rem;
+          }
         }
 
         .p-form__selectbox {
@@ -54,6 +126,20 @@
           width: 200px;
           height: 60px;
           font-size: 18px;
+          @include utility.tab {
+            border-radius: .1rem;
+            padding: .15rem;
+            width: 1.9rem;
+            height: .6rem;
+            font-size: .18rem;
+          }
+          @include utility.sp {
+            border-radius: .05rem;
+            padding: .07rem;
+            width: 1rem;
+            height: .3rem;
+            font-size: .12rem;
+          }
   
           &::-ms-expand {
             display: none;
@@ -72,27 +158,55 @@
           height: 60px;
           font-size: 18px;
           padding-left: 10px;
+          @include utility.tab {
+            border-radius: .1rem;
+            width: 3rem;
+            height: .6rem;
+            font-size: .18rem;
+            padding-left: .1rem;
+          }
+          @include utility.sp {
+            border-radius: .05rem;
+            width: 3.2rem;
+            height: .3rem;
+            font-size: .14rem;
+            padding-left: .07rem;
+            margin-top: .1rem;
+          }
         }
       }
     }
   }
 
   &__button {
+    width: 140px;
     display: inline;
     font-size: 18px;
+    font-weight: utility.$bold;
     border: none;
     border-radius: 30px;
-    padding: 0px 17px 0px 52px;
+    padding: 0 20px 0 48px;
     color: utility.$white;
     background-color: utility.$formButtonPink;
     background-position: center left 15px;
     background-repeat: no-repeat;
     background-size: 30px;
     @include utility.tab {
-      border-radius: .1rem;
-      padding: .15rem .20rem .15rem .14rem;
-      background-position: center left .2rem;
-      background-size: .30rem;
+      width: 1.4rem;
+      font-size: .18rem; 
+      border-radius: .3rem;
+      padding: .15rem .2rem .15rem .48rem;
+      background-position: center left .15rem;
+      background-size: .3rem;
+    }
+    @include utility.sp {
+      width: 1.6rem;
+      font-size: .18rem;
+      border-radius: .3rem;
+      padding: .05rem .43rem .05rem .45rem;
+      background-position: center left .13rem;
+      background-size: .18rem;
+      margin-top: .13rem;
     }
   }
   .is-search--white {

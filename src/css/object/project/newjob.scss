@@ -6,10 +6,26 @@
   &__inner {
     padding-top: 64px;
     padding-bottom: 67px;
+    @include utility.tab {
+     padding-top: .64rem;
+     padding-bottom: .67rem;   
+    }
+    @include utility.sp {
+      width: 4rem;
+      padding: .3rem .15rem .6rem .15rem;
+     }
 
     .p-newjob__title {
       font-size: 25px;
       font-weight: utility.$regular;
+      @include utility.tab {
+       font-size: .25rem; 
+      }
+      @include utility.sp {
+        font-size: .25rem;
+        font-weight: utility.$bold;
+        text-align: center;
+       }
     }
   }
 
@@ -17,23 +33,74 @@
     margin-top: 25px;
     display: flex;
     gap: 20px;
+    @include utility.tab {
+     margin-top: .25rem;
+     gap: .2rem;   
+    }
+    @include utility.sp {
+      margin-top: .35rem;
+      gap: 0;
+     }
+
+    .is-sp-none {
+      @include utility.sp {
+        display: none;
+      }
+    }
+    .is-sp-block {
+      display: none;
+      @include utility.sp {
+        display: block;
+      }
+
+      .sample01 {
+        @include utility.sp {
+          width: 100%;
+        }
+      }
+    }
 
     &__text {
       font-size: 16px;
       font-weight: utility.$regular;
       line-height: 22px;
       margin-top: 12px;
+      @include utility.tab {
+       font-size: .16rem;
+       line-height: .22rem;
+       margin-top: .12rem; 
+      }
+      @include utility.sp {
+        font-size: .16rem;
+        font-weight: utility.$bold;
+        line-height: .22rem;
+        margin-top: .12rem;
+       }
     }
 
     .p-newjob__table {
       font-size: 14px;
       margin-top: 8px;
+      @include utility.tab {
+       font-size: .14rem;
+       margin-top: .08rem; 
+      }
+      @include utility.sp {
+        font-size: .14rem;
+        margin-top: .12rem; 
+       }
 
       tr {
         font-weight: utility.$regular;
         display: inline-block;
         padding-bottom: 4px;
         display: flex;
+        @include utility.tab {
+          padding-bottom: .04rem;
+        }
+        @include utility.sp {
+          padding-bottom: .04rem;
+        }
 
         th {
           background-color: utility.$tableHeader;
@@ -42,12 +109,32 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          @include utility.tab {
+            width: .6rem;
+            height: .21rem;
+          }
+          @include utility.sp {
+            width: .6rem; 
+            height: .21rem;
+          }
         }
 
         td {
           padding: 2px 0 2px 10px;
           display: inline-block;
+          @include utility.tab {
+            padding: .02rem 0 .02rem .1rem;
+          }
+          @include utility.sp {
+            padding: .02rem 0 .02rem .2rem;
+          }
         }
+      }
+    }
+
+    .is-none {
+      @include utility.sp {
+        display: none;
       }
     }
   }
@@ -59,12 +146,28 @@
     margin-top: 54px;
     font-weight: utility.$bold;
     font-size: 18px;
+    @include utility.tab {
+      margin-top: .54rem;
+      font-size: .18rem;   
+    }
+    @include utility.sp {
+      margin-top: .4rem;
+      font-size: .18rem;   
+    }
 
     &__link {
       color: utility.$white;
       background-color: utility.$formButtonPink;
       padding: 22px 72px;
       border-radius: 30px;
+      @include utility.tab {
+        padding: .22rem .72rem;
+        border-radius: .3rem; 
+      }
+      @include utility.sp {
+        padding: .21rem .77rem;
+        border-radius: .3rem; 
+      }
     }
   }
 
@@ -83,6 +186,16 @@
       bottom: 0;
       margin: auto;
       border: none;
+      @include utility.tab {
+        width: .6rem;
+        height: .6rem;
+        top: -1.2rem; 
+      }
+      @include utility.sp {
+        width: .4rem;
+        height: .4rem;
+        top: 0.1rem;
+      }
 
       &::after {
         content: '';
@@ -94,6 +207,14 @@
         height: 20px;
         border-style: solid;
         border-color: utility.$black utility.$black transparent transparent;
+        @include utility.tab {
+          width: .2rem;
+          height: .2rem;
+        }
+        @include utility.sp {
+          width: .1rem;
+          height: .1rem;
+        }
       }
     }
 
@@ -110,6 +231,16 @@
       bottom: 0;
       margin: auto;
       border: none;
+      @include utility.tab {
+        width: .6rem;
+        height: .6rem;
+        top: -1.2rem;
+      }
+      @include utility.sp {
+        width: .4rem;
+        height: .4rem;
+        top: 0.1rem;
+      }
 
       &::after {
         content: '';
@@ -121,10 +252,16 @@
         height: 20px;
         border-style: solid;
         border-color: utility.$black utility.$black transparent transparent;
+        @include utility.tab {
+          width: .2rem;
+          height: .2rem;
+        }
+        @include utility.sp {
+          width: .1rem;
+          height: .1rem;
+        }
       }
     }
-
-    
   }
 
 }

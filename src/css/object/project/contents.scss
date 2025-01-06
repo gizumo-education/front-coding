@@ -2,11 +2,24 @@
 
 .p-contents {
   padding: 106px 0;
+  @include utility.tab {
+    padding: 1.06rem 0;
+  }
+  @include utility.sp {
+    width: 4rem;
+    padding: 0.55rem .15rem 0.6rem .15rem;
+  }
   
   &__title {
     font-size: 25px;
     font-weight: utility.$bold;
     text-align: center;
+    @include utility.tab {
+      font-size: .25rem;
+    }
+    @include utility.sp {
+      font-size: .25rem;
+    }
   }
 
   &__list {
@@ -15,18 +28,55 @@
     gap: 40px;
     text-align: center;
     margin-top: 53px;
+    @include utility.tab {
+      gap: .4rem;
+      margin-top: .53rem;
+    }
+    @include utility.sp {
+      gap: .2rem;
+      margin-top: .4rem;
+    }
 
     &__item {
       width: 570px;
       height: 180px;
       background-color: utility.$contentsLightPink;
-      padding: 40px 47px 40px 47px;
+      padding: 40px 47px;
       border-radius: 10px;
+      @include utility.tab {
+        width: 5.7rem;
+        height: 1.8rem;
+        padding: .4rem .47rem;
+      }
+      @include utility.sp {
+        width: 5.7rem;
+        height: 1.44rem;
+        padding: .3rem .15rem 0rem .15rem;
+      }
+
+      &:nth-child(3) {
+        @include utility.sp {
+          height: 1.6rem;
+        }
+      }
 
       &:last-child {
         padding-bottom: 30px;
+        @include utility.tab {
+          padding-bottom: .3rem;
+        }
+        @include utility.sp {
+          padding-bottom: 1.3rem;
+        }
+
          & .item__text {
           margin-top: 25px;
+          @include utility.tab {
+            margin-top: .25rem;
+          }
+          @include utility.sp {
+            margin-top: .25rem;
+          }
          }
       }
 
@@ -34,6 +84,12 @@
         font-size: 24px;
         font-weight: utility.$bold;
         color: utility.$contentsTitlePink;
+        @include utility.tab {
+          font-size: .24rem;
+        }
+        @include utility.sp {
+          font-size: .2rem;
+        }
       }
 
       .p-contents__item__text {
@@ -41,6 +97,22 @@
         font-weight: utility.$regular;
         line-height: 20px;
         margin-top: 36px;
+        @include utility.tab {
+          font-size: .14rem;
+          line-height: .2rem;
+          margin-top: .36rem;
+        }
+        @include utility.sp {
+          font-size: .12rem;
+          line-height: .17rem;
+          margin-top: .3rem;
+        }
+
+        br {
+          @include utility.sp {
+            display: none;
+          }
+        }
       }
     }
   }
