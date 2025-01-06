@@ -1,8 +1,5 @@
 import $ from "jquery";
 import 'slick-carousel';
-
-$(function () {
-  console.log('環境構築完了');
   
   // スライダー
   window.addEventListener('load', () => {
@@ -49,4 +46,3 @@ $(function () {
       return false;
     });
   });
-})
