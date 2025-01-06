@@ -1,7 +1,7 @@
 import $ from "jquery";
 import 'slick-carousel';
   
-window.addEventListener('load', () => {
+$(function() {
 
   // スライダー
   $('.slick').slick({
@@ -11,9 +11,9 @@ window.addEventListener('load', () => {
     swipeToSlide: false,
     accessibility: true,
     appendArrows: $('.is-relative'),
-    prevArrow: '<div class="prev-arrow"></div>',
+    preconstrow: '<div class="prev-arrow"></div>',
     nextArrow: '<div class="next-arrow"></div>',
-    variableWidth: true,
+    constiableWidth: true,
   });
   
   // ハンバーガーメニュー
@@ -38,11 +38,11 @@ window.addEventListener('load', () => {
   
   // ページ内リンク
   $('.p-nav__list a[href^="#"]').click(function () {
-    var adjust = 80;
-    var speed = 400;
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top - adjust;
+    const topHeight = 80;
+    const speed = 400;
+    const href = $(this).attr("href");
+    const target = $(href == "#" || href == "" ? 'html' : href);
+    const position = target.offset().top - topHeight;
     $('body,html').animate({ scrollTop: position }, speed, 'swing');
     return false;
   });
