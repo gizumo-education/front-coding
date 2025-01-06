@@ -17,27 +17,27 @@ $(function() {
   });
   
   // ハンバーガーメニュー
-  const hamburger = document.querySelector('.l-header__hamburger');
-  const headNav = document.querySelector('#js-nav');
-  const body = document.querySelector('body');
+  const hamburger = $('.l-header__hamburger');
+  const headNav = $('#js-nav');
+  const body = $('body');
   
-  hamburger.addEventListener('click', () => {
-    body.classList.toggle('active');
-    if (hamburger.classList.contains("is-active")) {
-      hamburger.classList.remove('is-active');
-      headNav.classList.remove('is-active')
+  hamburger.on('click', function() {
+    body.toggleClass('active');
+    if (hamburger.hasClass("is-active")) {
+      hamburger.removeClass('is-active');
+      headNav.removeClass('is-active')
     } else {
-      hamburger.classList.add('is-active');
-      headNav.classList.add('is-active');
+      hamburger.addClass('is-active');
+      headNav.addClass('is-active');
     }
   });
-  headNav.addEventListener('click', () => {
-    hamburger.classList.remove('is-active');
-    headNav.classList.remove('is-active')
+  headNav.on('click', function() {
+    hamburger.removeClass('is-active');
+    headNav.removeClass('is-active')
   });
   
   // ページ内リンク
-  $('.p-nav__list a[href^="#"]').click(function () {
+  $('.p-nav__list a[href^="#"]').on('click', function () {
     const topHeight = 80;
     const speed = 400;
     const href = $(this).attr("href");
