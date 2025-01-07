@@ -11,20 +11,20 @@
   height: 500px;
   width: 100%;
 
-  ul {
+  .p-keyvisual__ul {
     width: fit-content;
     text-align: right;
     padding-top: 74px;
     margin: 0px 193px 0 auto;
 
 
-    li:nth-child(1) {
+    .p-keyvisual__li:nth-child(1) {
       margin: 0 auto 40px;
       margin-bottom: 40px;
       width: fit-content;
     }
     
-    li:nth-child(3) {
+    .p-keyvisual__li:nth-child(3) {
       color: var.$textNumber;
       background-color: var.$white;
       font-size: 20px;
