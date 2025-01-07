@@ -16,7 +16,7 @@
     background-size: cover;
   }
 
-  ul {
+  .p-keyvisual__ul {
     width: fit-content;
     text-align: right;
     padding-top: 61.64px;
@@ -27,7 +27,7 @@
       padding-top: 0.74rem;
     }
 
-    li:nth-child(1) {
+    .p-keyvisual__li:nth-child(1) {
       margin: 0 auto 40px;
       width: fit-content;
 
@@ -45,7 +45,7 @@
 
     }
 
-    li:nth-child(3) {
+    .p-keyvisual__li:nth-child(3) {
       color: var.$textNumber;
       background-color: var.$white;
       font-size: 20px;

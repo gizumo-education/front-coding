@@ -11,8 +11,8 @@
     margin: .6rem auto 0;
   }
 
-  h1 {
-    @include mix.h1(var.$bold, 50px);
+  h2 {
+    @include mix.h2(var.$bold, 50px);
 
     @include utility.sp {
       margin-bottom: .34rem;

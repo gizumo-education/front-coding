@@ -6,9 +6,9 @@
 .p-jobslist__oll-list {
   width: 100%;
   margin: 0 auto;
-  background: #EFF6FC;
+  background: var.$bgLightBlue;
 
-  ul {
+  .p-jobslist__ul {
     position: relative;
     display: flex;
     gap: 20px;
@@ -16,22 +16,26 @@
     width: 100%;
     text-align: center;
 
-    li:nth-child(3) {
-      @include utility.sp {
-        display: none;
-      }
+    .p-searchbotton__block-select-sp {
+      display: flex;
     }
+  }
 
-    li:nth-child(4) {
-      @include utility.sp {
-        display: none;
-      }
+  .p-jobslist__li:nth-child(2) {
+    @include utility.sp {
+      display: none;
     }
+  }
 
-    li:nth-child(5) {
-      @include utility.sp {
-        display: none;
-      }
+  .p-jobslist__li:nth-child(3) {
+    @include utility.sp {
+      display: none;
+    }
+  }
+
+  .p-jobslist__li:nth-child(4) {
+    @include utility.sp {
+      display: none;
     }
   }
 
@@ -41,15 +45,10 @@
     width: 100%;
     padding: 30px 50px 67px 50px;
     background: #EFF6FC;
-    /* transform: translate(9%, 0%); */
-
-    @include utility.sp {
-      padding: 0.3rem 0.15rem .6rem;
-    }
   }
 
-  h1 {
-    @include mix.h1(var.$bold, 25px);
+  h2 {
+    @include mix.h2(var.$bold, 25px);
     text-align: left;
 
     @include utility.sp {
@@ -80,19 +79,9 @@
     .p-jobslist__text {
       margin-top: 8.08px;
       width: 278px;
-      @include utility.sp{
-        width: auto;
-      }
       
-    }
-
-    h4 {
-      font-size: 16px;
-      text-align: left;
-      margin-bottom: 6.92px;
-
       @include utility.sp {
-        font-weight: var.$bold;
+        margin-top: .1008rem;
       }
     }
 
@@ -116,7 +105,7 @@
   .p-jobslist__arrow-left {
     content: "";
     position: absolute;
-    top: 70px;
+    top: 50%;
     background-color: #fff;
     height: 60px;
     width: 60px;
@@ -137,19 +126,14 @@
     width: 20px;
     height: 20px;
     border: 0;
-    border-top: solid 0.71px #333;
-    border-left: solid 0.71px #333;
-    transform: rotate(-45deg);
+    border-top: solid 0.71px var.$black;
+    border-left: solid 0.71px var.$black;
+    transform: translate(50%, 50%) rotate(-45deg);
     position: absolute;
-    top: 0;
-    left: 20px;
+    top: 10px;
+    left: 15px;
     bottom: 0;
     margin: auto;
-
-    @include utility.sp {
-      height: .07rem;
-      width: .07rem;
-    }
   }
 
   .p-jobslist__arrow-right {
@@ -157,7 +141,7 @@
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: #fff;
+    background-color: var.$white;
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -172,41 +156,31 @@
   }
 
   .p-jobslist__arrow-right::after {
+
     content: "";
     width: 20px;
     height: 20px;
     border: 0;
-    border-top: solid 0.71px #333;
-    border-left: solid 0.71px #333;
-    transform: rotate(135deg);
+    border-top: solid 0.71px var.$black;
+    border-left: solid 0.71px var.$black;
+    transform: translate(50%, 50%) rotate(135deg);
     position: absolute;
-    top: 0;
-    left: 20px;
+    top: 10px;
+    left: 5px;
     bottom: 0;
     margin: auto;
-
-    @include utility.sp {
-      height: .07rem;
-      width: .07rem;
-    }
   }
 
-  button {
+  .p-jobslist__button-link {
     @include mix.button(var.$buttonBackGround, var.$white);
+    display: grid;
+    text-align: center;
+    align-items: center;
     font-size: 18px;
     font-weight: var.$bold;
     margin: 60px auto 0;
     height: 60px;
     width: 360px;
-
-    @include utility.sp {
-      display: block;
-      width: 3.7rem;
-      margin: .44rem auto 0;
-    }
-
-    a {
-      color: var.$white;
-    }
   }
+
 }

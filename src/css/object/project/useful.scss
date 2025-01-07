@@ -13,8 +13,12 @@
     margin: .60rem auto 0;
   }
 
-  h1 {
-    @include mix.h1(var.$bold, 50px);
+  @include utility.sp {
+    margin: .60rem auto 0;
+  }
+
+  h2 {
+    @include mix.h2(var.$bold, 50px);
   }
 
   ul {
