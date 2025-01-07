@@ -97,6 +97,7 @@
       border-color: var.$formColor;
 
       @include utility.sp {
+        font-size: .14rem;
         height: .3rem;
         width: 3.2rem;
         border-radius: .05rem;
