@@ -37,23 +37,23 @@
 
   <main>
     <section class="p-keyvisual__top-photo">
-      <ul>
-        <li>
-          <img src="../src/img/picture/keyvisual-message.png" alt="2021年使ってよかった転職サイトNO.1">
+      <ul class="p-keyvisual__ul">
+        <li class="p-keyvisual__li">
+          <img src="./img/picture/keyvisual-message.png" alt="2021年使ってよかった転職サイトNO.1">
         </li>
-        <li>
-          <h1><img src="../src/img/picture/top-message.png" alt="医療事務求人を探すならギズショップ"></h1>
+        <li class="p-keyvisual__li">
+          <h1><img src="./img/picture/top-message.png" alt="医療事務求人を探すならギズショップ"></h1>
         </li>
-        <li>現在の求人掲載数：<span>2,320</span>件</li>
+        <li class="p-keyvisual__li">現在の求人掲載数：<span>2,320</span>件</li>
       </ul>
     </section>
 
     <section class="p-search__job">
-      <h1>お仕事検索</h1>
+      <h2>お仕事検索</h2>
       <p>働きたい職種・地域・希望給与を入れて検索！</p>
-      <form action="">
-        <ul>
-          <li>
+      <form>
+        <ul class="p-search__ul">
+          <li class="p-search__li">
             <div class="p-search__select-arrow">
               <select name="p-search__name">
                 <option value="医療事務">医療事務</option>
@@ -66,9 +66,9 @@
               </select>
             </div>
           </li>
-          <li>
+          <li class="p-search__li">
             <div class="p-search__select-arrow">
-              <select name="p-search__area" value="東京都">
+              <select name="p-search__area">
                 <option value="茨城県">茨城県</option>
                 <option value="神奈川県">神奈川県</option>
                 <option value="群馬県">群馬県</option>
@@ -80,7 +80,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="p-search__li">
             <div class="p-search__select-arrow">
               <select name="p-search__salary">
                 <option value="月給17万〜">月給17万〜</option>
@@ -93,18 +93,16 @@
               </select>
             </div>
           </li>
-          <li>
+          <li class="p-search__li">
             <input type="text" placeholder="キーワード・企業・スキルなど">
           </li>
-          <li>
-            <button>
+          <li class="p-search__li">
+            <a href="" class="p-search__button">
               <span class="p-search__icon-position">
-                <a href="">
-                  <img src="../src/img/icon/icon-search.png" alt="">
-                  検索する
-                </a>
+                <img src="./img/icon/icon-search.png" alt="">
+                検索する
               </span>
-            </button>
+            </a>
           </li>
         </ul>
       </form>
@@ -113,12 +111,12 @@
     <section class="p-jobslist__oll-list">
       <div class="p-jobslist__grid">
         <div class="p-jobslist__content">
-          <h1>新着求人</h1>
-          <ul>
-            <li>
+          <h2>新着求人</h2>
+          <ul class="p-jobslist__ul">
+            <li class="p-jobslist__li">
               <div class="p-jobslist__position-img">
                 <span class="p-jobslist__arrow-left"></span>
-                <img src="../src/img/picture/woman01.png" alt="">
+                <img src="./img/picture/woman01.png" alt="">
               </div>
               <div class="p-jobslist__text">
                 <h4>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h4>
@@ -127,9 +125,9 @@
                 <p><span>最寄り駅</span>伊勢市駅 徒歩15分</p>
               </div>
             </li>
-            <li>
+            <li class="p-jobslist__li">
               <div class="p-jobslist__position-img">
-                <img src="../src/img/picture/woman02.png" alt="">
+                <img src="./img/picture/woman02.png" alt="">
               </div>
               <div class="p-jobslist__text">
                 <h4>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h4>
@@ -138,9 +136,9 @@
                 <p><span>最寄り駅</span>伊勢市駅 徒歩15分</p>
               </div>
             </li>
-            <li>
+            <li class="p-jobslist__li">
               <div class="p-jobslist__position-img">
-                <img src="../src/img/picture/woman03.png" alt="">
+                <img src="./img/picture/woman03.png" alt="">
               </div>
               <div class="p-jobslist__text">
                 <h4>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h4>
@@ -149,10 +147,10 @@
                 <p><span>最寄り駅</span>伊勢市駅 徒歩15分</p>
               </div>
             </li>
-            <li>
+            <li class="p-jobslist__li">
               <div class="p-jobslist__position-img">
                 <span class="p-jobslist__arrow-right"></span>
-                <img src="../src/img/picture/woman04.png" alt="">
+                <img src="./img/picture/woman04.png" alt="">
               </div>
               <div class="p-jobslist__text">
                 <h4>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h4>
@@ -163,18 +161,17 @@
             </li>
           </ul>
         </div>
-        <button><a href="">新着求人一覧をもっと見る</a></button>
+        <a href="" class="p-jobslist__button-link">新着求人一覧をもっと見る</a>
       </div>
-
     </section>
 
     <section class="p-message__center-banner">
       <span class="p-message__background"></span>
-      <h2>ギズジョブなら理想の職場がきっと見つかる<br>ギズジョブは完全無料の求職者向け求人サービスです。</h2>
+      <p>ギズジョブなら理想の職場がきっと見つかる<br>ギズジョブは完全無料の求職者向け求人サービスです。</p>
     </section>
 
     <section class="p-features__four-message">
-      <h1>ギズジョブの4つの特徴</h1>
+      <h2>ギズジョブの4つの特徴</h2>
       <ul>
         <li>
           <h3>WEB上で応募完結</h3>
@@ -196,7 +193,7 @@
     </section>
 
     <section class="p-careerchangemodel__flow">
-      <h1>転職までの流れ</h1>
+      <h2>転職までの流れ</h2>
       <ul>
         <li>
           <div class="p-careerchangemodel__number">
@@ -242,7 +239,7 @@
     </section>
 
     <section class="p-useful__useful-content">
-      <h1>転職お役立ちコンテンツ</h1>
+      <h2>転職お役立ちコンテンツ</h2>
       <ul>
         <li>
           <div class="p-useful__resume">
@@ -278,7 +275,7 @@
     </section>
 
     <section class="p-searchbotton__job">
-      <h1>お仕事検索</h1>
+      <h2>お仕事検索</h2>
       <p>働きたい職種・地域・希望給与を入れて検索！</p>
       <form action="">
         <ul>

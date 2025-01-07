@@ -8,8 +8,8 @@
   margin-top: 106px;
   text-align: center;
 
-  h1 {
-    @include mix.h1(var.$bold, 53px);
+  h2 {
+    @include mix.h2(var.$bold, 53px);
   }
 
   ul {

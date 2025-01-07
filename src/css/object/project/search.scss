@@ -11,20 +11,20 @@
   background-color: var.$jobBackGround;
   border-radius: 10px;
 
-  h1 {
-    @include mix.h1(var.$bold, 20px);
+  h2 {
+    @include mix.h2(var.$bold,20px);
   }
 
   p {
     font-size: 20px;
   }
 
-  ul {
+  .p-search__ul {
     display: flex;
     align-items: center;
     margin-top: 25px;
 
-    li {
+    .p-search__li {
       list-style: none;
       margin-right: 15px;
     }
@@ -43,21 +43,18 @@
       border-color: var.$formColor;
     }
 
-    button {
+    .p-search__button {
       @include mix.button(var.$buttonBackGround, var.$white);
       padding-left: 15px;
       font-size: 18px;
       height: 60px;
       width: 140px;
 
-      a {
-        color: var.$white;
-      }
-
       .p-search__icon-position {
         display: flex;
         align-items: center;
-        margin-right: 5px;
+        gap: 4px;
+        transform: translate(0%, 50%);
 
         img {
           height: 30px;
