@@ -24,3 +24,20 @@
     clear: both;
   }
 }
+
+@mixin button($bgColor, $Color) {
+  background-color: $bgColor;
+  color: $Color;
+  border-radius: 30px;
+  border-style: none;
+}
+
+@mixin h2 {
+  font-size: 25px;
+}
+
+@mixin h4 {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}
