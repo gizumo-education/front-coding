@@ -11,13 +11,13 @@
     @include mix.h2(var.$bold, 50px);
   }
 
-  ul {
+  .p-careerchangemodel__ul {
     display: inline-flex;
     justify-content: center;
     margin: 0 auto;
     gap: 21.13px;
 
-    li {
+    .p-careerchangemodel__li {
       position: relative;
       height: 360px;
       width: 280px;
@@ -107,11 +107,11 @@
     line-height: 32px;
   }
 
-  li:nth-child(3) h3{
+  li:nth-child(3) h3 {
     margin: 20px auto 38px;
   }
 
-  li:nth-child(4) h3{
+  li:nth-child(4) h3 {
     margin: 20px auto 38px;
   }
 

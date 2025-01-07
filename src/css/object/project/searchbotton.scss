@@ -5,26 +5,26 @@
 
 .p-searchbotton__job {
   text-align: center;
-  margin: 150px auto 200px;
+  margin: 60px auto;
   padding: 40px;
   width: fit-content;
   background-color: var.$jobBackGround;
   border-radius: 10px;
 
   h2 {
-    @include mix.h2(var.$bold, 20px);
+    @include mix.h2(var.$bold,20px);
   }
 
   p {
     font-size: 20px;
   }
 
-  ul {
+  .p-searchbotton__ul {
     display: flex;
     align-items: center;
     margin-top: 25px;
 
-    li {
+    .p-searchbotton__li {
       list-style: none;
       margin-right: 15px;
     }
@@ -35,29 +35,26 @@
 
     input {
       font-size: 18px;
-      padding-left: 10px;
       height: 60px;
       width: 300px;
+      padding-left: 10px;
       border-radius: 10px;
       border: 1px solid;
       border-color: var.$formColor;
     }
 
-    button {
+    .p-searchbotton__button {
       @include mix.button(var.$buttonBackGround, var.$white);
       padding-left: 15px;
       font-size: 18px;
       height: 60px;
       width: 140px;
 
-      a {
-        color: var.$white;
-      }
-
       .p-searchbotton__icon-position {
         display: flex;
         align-items: center;
-        margin-right: 5px;
+        gap: 4px;
+        transform: translate(0%, 50%);
 
         img {
           height: 30px;
@@ -82,12 +79,13 @@
     border-left: 10px solid transparent;
     border-top: 10px solid var.$formColor;
     border-bottom: 0;
+    pointer-events: none;
   }
 
   select {
     width: 200px;
     appearance: none;
-    padding: 17px 15px 17px 15px;
+    padding: 17px 15px;
     font-size: 18px;
     border-radius: 10px;
     border-color: var.$formColor;

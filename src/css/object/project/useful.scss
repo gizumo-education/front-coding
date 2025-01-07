@@ -13,7 +13,7 @@
     @include mix.h2(var.$bold, 50px);
   }
 
-  ul {
+  .p-useful__ul {
     display: inline-flex;
     justify-content: center;
     margin: 0 auto;
@@ -31,17 +31,15 @@
     margin: 0 auto;
   }
 
-  button {
+  .p-useful__button-link {
     @include mix.button(var.$buttonBackGround, var.$white);
+    display: grid;
+    align-items: center;
     font-size: 18px;
     font-weight: var.$bold;
     margin: 80px auto 0;
     height: 60px;
     width: 420px;
-
-    a {
-      color: var.$white;
-    }
   }
 
   .p-useful__resume {
