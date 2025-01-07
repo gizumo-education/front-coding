@@ -20,7 +20,7 @@
     }
   }
 
-  ul {
+  .p-features__ul {
     display: grid;
     gap: 40px 40px;
     grid-template-columns: 1fr 1fr;
@@ -31,7 +31,7 @@
       display: block;
     }
 
-    li {
+    .p-features__li {
       height: 180px;
       width: 570px;
       padding: 40px;
@@ -91,7 +91,8 @@
       }
     }
 
-    li:nth-child(4) {
+    .p-features__li:nth-child(4) {
+      padding: 40px 40px 30px;
       @include utility.sp {
         margin-bottom: 0;
         padding: 0.3rem .1026rem 0.3rem 0.1026rem;

@@ -33,7 +33,7 @@
     }
   }
 
-  ul {
+  .p-searchbotton__ul {
     display: flex;
     align-items: center;
     margin-top: 25px;
@@ -43,27 +43,24 @@
       margin-top: .13rem;
     }
 
+    .p-searchbotton__block-select-sp {
+      display: inline-flex;
+
+      @include utility.sp {
+        margin-bottom: .1rem;
+      }
+    }
+
     .p-searchbotton__block-form-sp {
       display: flex;
 
       @include utility.sp {
-        display: block;
-        margin-top: .155rem;
-      }
-
-      li:nth-child(1) {
-        @include utility.sp {
-          margin-right: 0;
-        }
-      }
-
-      li:nth-child(2) {
-        margin-top: .19rem;
-        margin-right: 0;
+        display: grid;
+        gap: .19rem;
       }
     }
 
-    li {
+    .p-searchbotton__li {
       list-style: none;
       margin-right: 15px;
 
@@ -72,7 +69,19 @@
       }
     }
 
-    li:nth-child(3) {
+    .p-searchbotton__li:nth-child(3) {
+      @include utility.sp {
+        margin-right: 0;
+      }
+    }
+
+    .p-searchbotton__li:nth-child(4) {
+      @include utility.sp {
+        margin-right: 0;
+      }
+    }
+
+    .p-searchbotton__margin-none {
       @include utility.sp {
         margin-right: 0;
       }
@@ -80,9 +89,9 @@
 
     input {
       font-size: 18px;
-      padding-left: 10px;
       height: 60px;
       width: 300px;
+      padding-left: 10px;
       border-radius: 10px;
       border: 1px solid;
       border-color: var.$formColor;
@@ -95,7 +104,7 @@
       }
     }
 
-    button {
+    .p-searchbotton__button {
       @include mix.button(var.$buttonBackGround, var.$white);
       padding-left: 15px;
       font-size: 18px;
@@ -103,26 +112,16 @@
       width: 140px;
 
       @include utility.sp {
-        padding-left: .1301rem;
+        font-size: .18rem;
         height: .4rem;
         width: 1.6rem;
-      }
-
-      a {
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
-        color: var.$white;
-
-        @include utility.sp {
-          gap: .1402rem;
-        }
       }
 
       .p-searchbotton__icon-position {
         display: flex;
         align-items: center;
-        margin-right: 5px;
+        gap: 4px;
+        transform: translate(0%, 50%);
 
         img {
           height: 30px;
@@ -154,18 +153,18 @@
     border-bottom: 0;
 
     @include utility.sp {
-      top: 12.5px;
-      right: .065rem;
-      border-right: .07rem solid transparent;
-      border-left: .07rem solid transparent;
-      border-top: .07rem solid var.$formColor;
+      top: .125rem;
+      right: .105rem;
+      border-right: 7px solid transparent;
+      border-left: 7px solid transparent;
+      border-top: 7px solid var.$formColor;
     }
   }
 
   select {
     width: 200px;
     appearance: none;
-    padding: 17px 15px 17px 15px;
+    padding: 17px 15px;
     font-size: 18px;
     border-radius: 10px;
     border-color: var.$formColor;
@@ -182,4 +181,5 @@
       font-size: 18px;
     }
   }
+
 }

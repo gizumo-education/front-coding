@@ -27,6 +27,7 @@
 
   p {
     font-size: 20px;
+
     @include utility.sp {
       font-size: .14rem;
     }
@@ -43,11 +44,13 @@
     }
 
     .p-search__block-select-sp {
+      display: inline-flex;
+
       @include utility.sp {
-        display: inline-flex;
         margin-bottom: .1rem;
       }
     }
+
     .p-search__block-form-sp {
       display: flex;
 
@@ -73,6 +76,12 @@
     }
 
     .p-search__li:nth-child(4) {
+      @include utility.sp {
+        margin-right: 0;
+      }
+    }
+
+    .p-search__margin-none {
       @include utility.sp {
         margin-right: 0;
       }
@@ -172,5 +181,4 @@
       font-size: 18px;
     }
   }
-
 }
