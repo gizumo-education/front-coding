@@ -124,6 +124,10 @@
         gap: 4px;
         transform: translate(0%, 50%);
 
+        @include utility.sp {
+          gap: .14rem;
+        }
+
         img {
           height: 30px;
           width: 30px;
