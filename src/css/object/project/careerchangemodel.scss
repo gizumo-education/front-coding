@@ -31,12 +31,12 @@
       content: "";
       position: absolute;
       top: 50%;
-      left: 268px;
-      border-right: 20px solid transparent;
-      border-left: 20px solid transparent;
-      border-top: 20px solid var.$listColor;
-      border-bottom: 0;
-      transform: translate(0%, 50%) rotate(270deg);
+      left: 278px;
+      background-color: var.$listColor;
+      height: 40px;
+      width: 20px;
+      clip-path: polygon(0 0, 0 100%, 100% 50%);
+      transform: translate(0%, -50%);
     }
 
     li:nth-child(2) {
