@@ -9,60 +9,30 @@
   background: var.$bgLightBlue;
 
   .p-jobslist__ul {
-    position: relative;
     display: flex;
     gap: 20px;
     margin: 0 auto;
     width: 100%;
     text-align: center;
-
-    .p-searchbotton__block-select-sp {
-      display: flex;
-    }
-  }
-
-  .p-jobslist__li:nth-child(2) {
-    @include utility.sp {
-      display: none;
-    }
-  }
-
-  .p-jobslist__li:nth-child(3) {
-    @include utility.sp {
-      display: none;
-    }
-  }
-
-  .p-jobslist__li:nth-child(4) {
-    @include utility.sp {
-      display: none;
-    }
   }
 
   .p-jobslist__grid {
     display: inline-grid;
     margin: 0 auto;
     width: 100%;
-    padding: 30px 50px 67px 50px;
-    background: #EFF6FC;
+    padding: 30px 50px 67px;
+    background: var.$bgLightBlue;
   }
 
   h2 {
     @include mix.h2(var.$bold, 25px);
     text-align: left;
-
-    @include utility.sp {
-      text-align: center;
-    }
   }
 
   .p-jobslist__content {
+    position: relative;
     width: fit-content;
     margin: 0px auto;
-
-    @include utility.sp {
-      margin: 0px auto .44rem;
-    }
 
     .p-jobslist__position-img {
       position: relative;
@@ -71,12 +41,6 @@
         height: 200px;
         width: auto;
         object-fit: cover;
-
-        @include utility.sp {
-          height: 2.08rem;
-          width: 3.7rem;
-          border-radius: .10rem;
-        }
       }
     }
 
@@ -84,19 +48,14 @@
       margin-top: 8.08px;
       width: 278px;
 
-      @include utility.sp {
-        margin-top: .1008rem;
+      p:nth-child(4) {
+        margin-bottom: 0;
       }
-      
     }
 
     h4 {
       @include mix.h4;
-
-      @include utility.sp {
-        font-weight: var.$bold;
-        margin-bottom: .1192rem;
-      }
+      margin-bottom: 6.92px;
     }
 
     p {
@@ -120,19 +79,13 @@
     content: "";
     position: absolute;
     top: 50%;
-    background-color: #fff;
+    background-color: var.$white;
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    transform: translate(0%, 0%);
+    transform: translate(0%, -50%);
     opacity: 0.7;
-    z-index: 10;
-
-    @include utility.sp {
-      top: 1.57rem;
-      height: .42rem;
-      width: .42rem;
-    }
+    z-index: 100;
   }
 
   .p-jobslist__arrow-left::before {
@@ -142,65 +95,41 @@
     border: 0;
     border-top: solid 0.71px var.$black;
     border-left: solid 0.71px var.$black;
-    transform: translate(50%, 50%) rotate(-45deg);
+    transform: translate(50%,50%) rotate(-45deg);
     position: absolute;
     top: 10px;
     left: 15px;
     bottom: 0;
-
-
-    @include utility.sp {
-      width: 15px;
-      height: 15px;
-      transform: translate(0%, 0%) rotate(-45deg);
-      top: 0px;
-      left: 15px;
-      bottom: 0;
-      margin: auto;
-    }
   }
 
   .p-jobslist__arrow-right {
     content: "";
     position: absolute;
-    top: 70px;
+    top: 50%;
     right: 0;
     background-color: var.$white;
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
     opacity: 0.7;
-
-    @include utility.sp {
-      top: 1.57rem;
-      height: .42rem;
-      width: .42rem;
-    }
+    z-index: 100;
   }
 
   .p-jobslist__arrow-right::after {
+
     content: "";
     width: 20px;
     height: 20px;
     border: 0;
     border-top: solid 0.71px var.$black;
     border-left: solid 0.71px var.$black;
-    transform: translate(50%, 50%) rotate(135deg);
+    transform: translate(50%,50%) rotate(135deg);
     position: absolute;
     top: 10px;
     left: 5px;
     bottom: 0;
-
-    @include utility.sp {
-      width: 15px;
-      height: 15px;
-      transform: translate(0%, 0%) rotate(135deg);
-      top: 0px;
-      left: 10px;
-      bottom: 0;
-      margin: auto;
-    }
   }
 
   .p-jobslist__button-link {
@@ -213,7 +142,5 @@
     margin: 60px auto 0;
     height: 60px;
     width: 360px;
-    margin: auto;
   }
-
 }
