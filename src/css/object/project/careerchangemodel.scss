@@ -1,0 +1,124 @@
+@use '../../object/utility/utility.scss';
+
+@use '../../foundation/variables' as var;
+@use '../../foundation/mixins' as mix;
+
+.p-careerchangemodel__flow {
+  margin: 105px auto;
+  text-align: center;
+
+  h2 {
+    @include mix.h2(var.$bold, 50px);
+  }
+
+  .p-careerchangemodel__ul {
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 21.13px;
+
+    .p-careerchangemodel__li {
+      position: relative;
+      height: 360px;
+      width: 280px;
+      display: block;
+      padding: 60px 0 40px;
+      border: 2.27px solid var.$listColor;
+      border-radius: 10px;
+    }
+
+    li:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 278px;
+      background-color: var.$listColor;
+      height: 40px;
+      width: 20px;
+      clip-path: polygon(0 0, 0 100%, 100% 50%);
+      transform: translate(0%, -50%);
+    }
+
+    li:nth-child(2) {
+      padding: 70.02px 0px 42px;
+    }
+
+    li:nth-child(4):after {
+      display: none;
+    }
+
+    .p-careerchangemodel__number {
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      background-color: var.$listColor;
+
+      p {
+        font-size: 16px;
+        line-height: 19.36px;
+        color: var.$white;
+        transform: translate(0%, 11px);
+      }
+    }
+
+  }
+
+  .p-careerchangemodel__icon-text {
+
+    img {
+      height: 100px;
+      width: auto;
+    }
+  }
+
+  .p-careerchangemodel__icon-search {
+
+    img {
+      height: 79.95px;
+      width: auto;
+    }
+  }
+
+  .p-careerchangemodel__icon-mail {
+
+    img {
+      height: 100px;
+      width: auto;
+    }
+  }
+
+  .p-careerchangemodel__icon-sparkling {
+
+    img {
+      height: 100px;
+      width: auto;
+    }
+  }
+
+
+  h3 {
+    @include mix.h3(var.$bold, 36px);
+    margin: 20px auto 18px;
+    line-height: 32px;
+  }
+
+  li:nth-child(3) h3 {
+    margin: 20px auto 38px;
+  }
+
+  li:nth-child(4) h3 {
+    margin: 20px auto 38px;
+  }
+
+  .p-careerchangemodel__text {
+    line-height: 20.27px;
+    width: fit-content;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: left;
+  }
+}

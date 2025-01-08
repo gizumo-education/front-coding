@@ -32,8 +32,22 @@
   border-style: none;
 }
 
-@mixin h2 {
+@mixin h2 ($Weight, $Bottom){
   font-size: 25px;
+  font-weight: $Weight;
+  margin-bottom: $Bottom;
+}
+
+@mixin h3($Weight, $Bottom) {
+  font-size: 24px;
+  font-weight: $Weight;
+  margin-bottom: $Bottom;
+}
+
+@mixin h4 {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
 }
 
 @mixin h4 {

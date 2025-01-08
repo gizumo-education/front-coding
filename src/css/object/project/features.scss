@@ -1,0 +1,46 @@
+@use '../../object/utility/utility.scss';
+
+@use '../../foundation/variables' as var;
+@use '../../foundation/mixins' as mix;
+
+
+.p-features__four-message {
+  margin-top: 106px;
+  text-align: center;
+
+  h2 {
+    @include mix.h2(var.$bold, 53px);
+  }
+
+  .p-features__ul {
+    display: grid;
+    gap: 40px 40px;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    margin: 0 auto;
+
+    .p-features__li {
+      height: 180px;
+      width: 570px;
+      padding: 40px;
+      border-radius: 10px;
+      background-color: var.$featuresColor;
+
+      h3 {
+        @include mix.h3(var.$bold, 36px);
+        color: var.$subTitle;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 20.27px;
+        margin: 0 auto;
+        width: auto;
+      }
+    }
+
+    .p-features__li:nth-child(4) {
+      padding: 40px 40px 30px;
+    }
+  }
+}

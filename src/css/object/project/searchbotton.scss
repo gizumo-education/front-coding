@@ -3,7 +3,7 @@
 @use '../../foundation/variables' as var;
 @use '../../foundation/mixins' as mix;
 
-.p-search__job {
+.p-searchbotton__job {
   text-align: center;
   margin: 60px auto;
   padding: 40px;
@@ -19,12 +19,12 @@
     font-size: 20px;
   }
 
-  .p-search__ul {
+  .p-searchbotton__ul {
     display: flex;
     align-items: center;
     margin-top: 25px;
 
-    .p-search__li {
+    .p-searchbotton__li {
       list-style: none;
       margin-right: 15px;
     }
@@ -43,7 +43,7 @@
       border-color: var.$formColor;
     }
 
-    .p-search__button {
+    .p-searchbotton__button {
       @include mix.button(var.$buttonBackGround, var.$white);
       display: flex;
       padding-left: 15px;
@@ -51,7 +51,7 @@
       height: 60px;
       width: 140px;
 
-      .p-search__icon-position {
+      .p-searchbotton__icon-position {
         display: flex;
         align-items: center;
         gap: 4px;
@@ -67,11 +67,11 @@
     }
   }
 
-  .p-search__select-arrow {
+  .p-searchbotton__select-arrow {
     position: relative;
   }
 
-  .p-search__select-arrow::after {
+  .p-searchbotton__select-arrow::after {
     content: "";
     position: absolute;
     top: 25px;
