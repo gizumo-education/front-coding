@@ -168,7 +168,7 @@
   }
 }
 
-.p-header__nav2 {
+.p-header__nav-sp {
   display: flex;
   z-index: 10;
   position: absolute;
@@ -186,7 +186,7 @@
 }
 
 @include utility.sp {
-  .p-header__nav2 {
+  .p-header__nav-sp {
     position: fixed;
     height: 100%;
     opacity: initial;
@@ -194,13 +194,7 @@
   }
 }
 
-// @media screen and (min-width:768px) {
-//   .p-header__hamburger2 {
-//     display: none;
-//   }
-// }
-
-.p-header__nav2.is-active {
+.p-header__nav-sp.is-active {
   position: fixed;
   top: 0;
   right: 0;
@@ -222,7 +216,7 @@
   }
 }
 
-.p-nav__list2 {
+.p-nav__list-sp {
   display: block;
   width: 100%;
   padding-right: 20px;
@@ -237,12 +231,12 @@
   }
 }
 
-.p-nav__item2 {
+.p-nav__item-sp {
   position: relative;
   width: 100%;
 }
 
-.p-nav__link2 {
+.p-nav__link-sp {
   display: block;
   width: 100%;
   height: 100%;
