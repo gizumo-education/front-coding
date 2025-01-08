@@ -45,6 +45,7 @@
 
     .p-search__button {
       @include mix.button(var.$buttonBackGround, var.$white);
+      display: flex;
       padding-left: 15px;
       font-size: 18px;
       height: 60px;
