@@ -50,17 +50,16 @@
       content: "";
       position: absolute;
       top: 50%;
-      left: 268px;
-      border-right: 20px solid transparent;
-      border-left: 20px solid transparent;
-      border-top: 20px solid var.$listColor;
-      border-bottom: 0;
-      transform: rotate(270deg);
-
+      left: 278px;
+      background-color: var.$listColor;
+      height: 40px;
+      width: 20px;
+      clip-path: polygon(0 0, 0 100%, 100% 50%);
+      transform: translate(0%, -50%);
       @include utility.sp {
-        top: 103%;
-        left: 120px;
-        transform: rotate(360deg);
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0%) rotate(450deg);
       }
     }
 

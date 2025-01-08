@@ -106,8 +106,6 @@
       line-height: 20px;
       text-align: left;
 
-
-
       span {
         margin-right: 10px;
         text-align: center;
@@ -121,7 +119,7 @@
   .p-jobslist__arrow-left {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 70px;
     background-color: #fff;
     height: 60px;
     width: 60px;
@@ -154,11 +152,7 @@
     @include utility.sp {
       width: 15px;
       height: 15px;
-      transform: translate(0%, 0%) rotate(-45deg);
-      top: 0px;
-      left: 15px;
-      bottom: 0;
-      margin: auto;
+      transform: translate(0%, 10%) rotate(-45deg);
     }
   }
 
@@ -197,11 +191,7 @@
     @include utility.sp {
       width: 15px;
       height: 15px;
-      transform: translate(0%, 0%) rotate(135deg);
-      top: 0px;
-      left: 10px;
-      bottom: 0;
-      margin: auto;
+      transform: translate(0%, 10%) rotate(135deg);
     }
   }
 
@@ -215,7 +205,6 @@
     margin: 60px auto 0;
     height: 60px;
     width: 360px;
-    margin: auto;
   }
 
 }
