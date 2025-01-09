@@ -42,6 +42,23 @@
       margin: 0 auto;
       padding: .3rem 0 .67rem;
     }
+    @include utility.sp {
+
+    }
+  }
+
+  .p-jobslist__grid {
+    display: inline-grid;
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px 50px 67px;
+    background: var.$bgLightBlue;
+
+    @include utility.sp {
+      max-width: 4rem;
+      margin: 0 auto;
+      padding: .3rem .15rem .6rem;
+    }
   }
 
   h2 {
