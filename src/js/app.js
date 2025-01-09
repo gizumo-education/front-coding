@@ -6,7 +6,7 @@ $(function () {
 
   $('.slick').slick({
     arrows: true,              //次へ/前へ矢印を有効にする
-    slidesToShow: 4,           //一度に表示するスライドの数
+    slidesToShow: 3,           //一度に表示するスライドの数
     infinite: true,            //無限ループ
     swipeToSlide: false,       //slidesToScrollに関係なくスワイプしてスライドする
     accessibility: true,       //タブと矢印キーによるナビゲーションを有効にします。
