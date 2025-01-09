@@ -1,68 +1,39 @@
 import $ from "jquery";
-// import $ from "slick-carousel";
+import 'slick-carousel';
+
 
 $(function () {
-  console.log('環境構築完了');
-})
 
-//ハンバーガーメニュー処理
-const hamburger = document.querySelector('.l-header__hamburger');
-const headNav = document.querySelector('#js-nav');
-
-hamburger.addEventListener('click', () => {
-  if (hamburger.classList.contains("is-active")) {
-    hamburger.classList.remove('is-active');
-    headNav.classList.remove('is-active')
-
-  } else {
-    hamburger.classList.add('is-active');
-    headNav.classList.add('is-active')
-  }
-
-  headNav.addEventListener('click', () => {
-    hamburger.classList.remove('is-active');
-    headNav.classList.remove('is-active')
+  $('.slick').slick({
+    arrows: true,              //次へ/前へ矢印を有効にする
+    slidesToShow: 4,           //一度に表示するスライドの数
+    infinite: true,            //無限ループ
+    swipeToSlide: false,       //slidesToScrollに関係なくスワイプしてスライドする
+    accessibility: true,       //タブと矢印キーによるナビゲーションを有効にします。
+    appendArrows: $('.test'),  //ナビゲーション矢印が添付される場所を変更する
+    // slidesToScroll: 1,
+    prevArrow: '<div class="p-jobslist__arrow-left"></div>',  // カスタム左矢印
+    nextArrow: '<div class="p-jobslist__arrow-right"></div>', // カスタム右矢印
+    variableWidth: true,
   });
-});
 
+  //ハンバーガーメニュー処理
+  const hamburger = document.querySelector('.l-header__hamburger');
+  const headNav = document.querySelector('#js-nav');
 
+  hamburger.addEventListener('click', () => {
+    if (hamburger.classList.contains("is-active")) {
+      hamburger.classList.remove('is-active');
+      headNav.classList.remove('is-active')
 
-
-$(function () {
-  $('.select').change(function () {
-    if ($(this).val() === 'all') {
-      showItems(); //全リスト表示
-      return;
+    } else {
+      hamburger.classList.add('is-active');
+      headNav.classList.add('is-active')
     }
-    filterCategory($(this).val()); //フィルタリング
+
+    headNav.addEventListener('click', () => {
+      hamburger.classList.remove('is-active');
+      headNav.classList.remove('is-active')
+    });
   });
 });
-
-// const left = document.querySelector('.p-jobslist__arrow-left');
-// const right = document.querySelector('.p-jobslist__arrow-right');
-
-// $(".p-jobslist__content").slick(function () {
-//   if ($(".p-jobslist__arrow-left").click {
-//     infinite: true,
-
-//     })else if ($(".p-jobslist__arrow-right").click{
-
-// })
-
-// })
-
-
-// $(document).ready(function () {
-//   // Slickスライダーの初期化
-//   $(".p-jobslist__ul").slick({
-//     infinite: true,           // 無限ループ
-//     slidesToShow: 1,          // 一度に表示するスライド数
-//     slidesToScroll: 1,        // 一度にスクロールするスライド数
-//     arrows: true,             // カスタム矢印を使用
-//     prevArrow: $(".p-jobslist__arrow-left"), // 左矢印
-//     nextArrow: $(".p-jobslist__arrow-right"), // 右矢印
-//     fade: true,               // フェードエフェクト
-//     speed: 500,               // アニメーション速度（ミリ秒）
-//     autoplay: false,          // 自動再生を無効化
-//   });
-// });
