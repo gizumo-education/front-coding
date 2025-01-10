@@ -3,7 +3,7 @@
 @use '../../foundation/variables' as var;
 
 // ページ上部のキービジュアルに関するスタイル
-.p-keyvisual__top-photo {
+.p-keyvisual {
   background-image: url('../img/picture/top-photo.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -57,7 +57,6 @@
       border: 2.3px solid var.$textNumber;
 
       @include utility.sp {
-        height: 30px;
         font-size: 0.08rem;
         margin: .1835rem auto 0;
         padding: 0.04rem 0.2323rem 0.03rem 0.2377rem;

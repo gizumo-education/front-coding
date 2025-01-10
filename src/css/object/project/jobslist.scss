@@ -3,7 +3,7 @@
 @use '../../foundation/variables' as var;
 @use '../../foundation/mixins' as mix;
 
-.p-jobslist__oll-list {
+.p-jobslist {
   width: 100%;
   margin: 0 auto;
   background: var.$bgLightBlue;
@@ -87,7 +87,7 @@
 
     .p-jobslist__text {
       margin-top: 8.08px;
-      width: 278px;
+      width: 370px;
 
       @include utility.sp {
         margin-top: .1008rem;

@@ -4,7 +4,7 @@
 @use '../../foundation/mixins' as mix;
 
 
-.p-useful__useful-content {
+.p-useful {
   display: grid;
   margin: 105px auto 0;
   text-align: center;
@@ -41,7 +41,13 @@
   }
 
   .p-useful__center-text {
-    margin-top: 71px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: max-content;
+    transform: translate(-50%, -50%);
+
+    @include utility.sp {}
   }
 
   p {
@@ -102,6 +108,10 @@
 
     h3 {
       @include mix.h3(var.$bold, 44px);
+
+      @include utility.sp {
+        margin-bottom: 53px;
+      }
     }
   }
 
@@ -139,6 +149,10 @@
 
     h3 {
       @include mix.h3(var.$bold, 45px);
+
+      @include utility.sp {
+        margin-bottom: 52px;
+      }
     }
   }
 

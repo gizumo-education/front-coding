@@ -3,7 +3,7 @@
 @use '../../foundation/variables' as var;
 @use '../../foundation/mixins' as mix;
 
-.p-search__job {
+.p-search {
   text-align: center;
   margin: 60px auto;
   padding: 40px;
@@ -161,13 +161,15 @@
     border-left: 10px solid transparent;
     border-top: 10px solid var.$formColor;
     border-bottom: 0;
+    pointer-events: none;
 
     @include utility.sp {
-      top: .125rem;
-      right: .105rem;
+      top: 50%;
+      right: .07rem;
       border-right: 7px solid transparent;
       border-left: 7px solid transparent;
       border-top: 7px solid var.$formColor;
+      transform: translate(0%, -50%);
     }
   }
 
