@@ -59,6 +59,7 @@
     background: var.$bgLightBlue;
 
     @include utility.sp {
+      display: block;
       max-width: 4rem;
       margin: 0 auto;
       padding: .3rem .15rem .6rem;
@@ -83,7 +84,7 @@
 
     @include utility.sp {
       max-width: 3.70rem;
-      margin: 0 auto;
+      margin: 0 auto .44rem;
     }
 
     .p-jobslist__position-img {
@@ -231,5 +232,9 @@
     margin: 60px auto 0;
     height: 60px;
     width: 360px;
+
+    @include utility.sp {
+      margin: 0 auto 0;
+    }
   }
 }
