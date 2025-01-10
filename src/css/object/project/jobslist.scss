@@ -45,8 +45,10 @@
     width: 100%;
     padding: 30px 50px 67px 50px;
     background: #EFF6FC;
+
     @include utility.sp {
-      padding: .30rem .15rem .6rem;
+      padding: 0;
+      margin: .3rem auto .6rem;
     }
   }
 
@@ -90,7 +92,7 @@
       @include utility.sp {
         margin-top: .1008rem;
       }
-      
+
     }
 
     h4 {
@@ -208,6 +210,10 @@
     margin: 60px auto 0;
     height: 60px;
     width: 360px;
+
+    @include utility.sp {
+      margin: 0 auto 0;
+    }
   }
 
 }
