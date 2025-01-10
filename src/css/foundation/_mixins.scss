@@ -32,7 +32,7 @@
   border-style: none;
 }
 
-@mixin h2 ($Weight, $Bottom){
+@mixin h2 ($Weight, $Bottom) {
   font-size: 25px;
   font-weight: $Weight;
   margin-bottom: $Bottom;
@@ -50,8 +50,8 @@
   text-align: left;
 }
 
-@mixin h4 {
-  font-size: 16px;
-  line-height: 22px;
-  text-align: left;
+/* 改行処理
+------------------------------- */
+@mixin br {
+  display: none;
 }

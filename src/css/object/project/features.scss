@@ -4,12 +4,21 @@
 @use '../../foundation/mixins' as mix;
 
 
-.p-features__four-message {
-  margin-top: 106px;
+.p-features {
+  width: fit-content;
+  margin: 106px auto 0;
   text-align: center;
+
+  @include utility.sp {
+    margin-top: .55rem;
+  }
 
   h2 {
     @include mix.h2(var.$bold, 53px);
+
+    @include utility.sp {
+      margin-bottom: .38rem;
+    }
   }
 
   .p-features__ul {
@@ -19,16 +28,32 @@
     width: fit-content;
     margin: 0 auto;
 
+    @include utility.sp {
+      display: block;
+    }
+
     .p-features__li {
       height: 180px;
-      width: 570px;
+      width: auto;
       padding: 40px;
       border-radius: 10px;
       background-color: var.$featuresColor;
 
+      @include utility.sp {
+        height: 1.44rem;
+        width: 3.7rem;
+        margin-bottom: .21rem;
+        padding: .3rem .17rem .3rem .17rem;
+      }
+
       h3 {
         @include mix.h3(var.$bold, 36px);
         color: var.$subTitle;
+
+        @include utility.sp {
+          font-size: .2rem;
+          margin-bottom: .3rem;
+        }
       }
 
       p {
@@ -36,11 +61,45 @@
         line-height: 20.27px;
         margin: 0 auto;
         width: auto;
+        line-height: 20.27px;
+
+        @include utility.sp {
+          font-size: .12rem;
+          line-height: .17rem;
+        }
+      }
+
+    }
+
+    .p-features__br-none {
+      @include mix.br;
+
+      @include utility.sp {
+        display: block;
+      }
+    }
+
+    .p-features__br {
+      display: block;
+
+      @include utility.sp {
+        @include mix.br;
+      }
+    }
+
+    li:nth-child(3) {
+      @include utility.sp {
+        height: 1.61rem;
       }
     }
 
     .p-features__li:nth-child(4) {
       padding: 40px 40px 30px;
+      @include utility.sp {
+        margin-bottom: 0;
+        padding: 0.3rem .1026rem 0.3rem 0.1026rem;
+        height: 1.61rem;
+      }
     }
   }
 }
