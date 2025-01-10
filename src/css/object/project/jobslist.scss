@@ -4,8 +4,7 @@
 @use '../../foundation/mixins' as mix;
 
 .p-jobslist {
-  max-width: 1600px;
-  width: 100%;
+  width: auto;
   margin: 0 auto;
   background: var.$bgLightBlue;
 
@@ -23,6 +22,12 @@
     @include utility.sp {
       width:100%;
     }
+  }
+  .p-jobslist__li{
+    width: 278px;
+  }
+  .p-jobslist__li{
+    width: 278px;
   }
 
   .p-jobslist__li {
@@ -52,11 +57,11 @@
   }
 
   .p-jobslist__grid {
-    display: inline-grid;
+    display: block;
     margin: 0 auto;
     width: 100%;
-    padding: 30px 50px 67px;
-    background: var.$bgLightBlue;
+    padding: 30px 0px 67px;
+    background: #EFF6FC;
 
     @include utility.sp {
       display: block;
