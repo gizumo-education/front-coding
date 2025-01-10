@@ -10,7 +10,7 @@ $(function () {
     infinite: true,            //無限ループ
     swipeToSlide: false,       //slidesToScrollに関係なくスワイプしてスライドする
     accessibility: true,       //タブと矢印キーによるナビゲーションを有効にします。
-    appendArrows: $('.test'),  //ナビゲーション矢印が添付される場所を変更する
+    appendArrows: $('.p-jobslist__ul'),  //ナビゲーション矢印が添付される場所を変更する
     // slidesToScroll: 1,
     prevArrow: '<div class="p-jobslist__arrow-left"></div>',  // カスタム左矢印
     nextArrow: '<div class="p-jobslist__arrow-right"></div>', // カスタム右矢印

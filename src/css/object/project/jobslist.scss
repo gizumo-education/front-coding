@@ -17,8 +17,12 @@
     position: relative;
     display: flex;
     margin: 0 auto;
-    width: 100%;
+    width:1200px;
     text-align: center;
+
+    @include utility.sp {
+      width:100%;
+    }
   }
 
   .p-jobslist__li {
@@ -141,7 +145,7 @@
       height: 60px;
       width: 60px;
       border-radius: 50%;
-      transform: translate(0%, 0%);
+      transform: translate(15%, 0%);
       opacity: 0.7;
       z-index: 100;
 
@@ -149,6 +153,7 @@
         top: 1.57rem;
         height: .42rem;
         width: .42rem;
+        transform: translate(0%, 0%);
       }
     }
 
@@ -183,7 +188,7 @@
       height: 60px;
       width: 60px;
       border-radius: 50%;
-      transform: translate(0%, 0%);
+      transform: translate(-15%, 0%);
       opacity: 0.7;
       z-index: 100;
 
@@ -191,6 +196,7 @@
         top: 1.57rem;
         height: .42rem;
         width: .42rem;
+        transform: translate(0%, 0%);
       }
     }
 
