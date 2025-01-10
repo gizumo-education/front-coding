@@ -5,7 +5,8 @@
 
 
 .p-features {
-  margin-top: 106px;
+  width: fit-content;
+  margin: 106px auto 0;
   text-align: center;
 
   @include utility.sp {
@@ -33,7 +34,7 @@
 
     .p-features__li {
       height: 180px;
-      width: 570px;
+      width: auto;
       padding: 40px;
       border-radius: 10px;
       background-color: var.$featuresColor;
