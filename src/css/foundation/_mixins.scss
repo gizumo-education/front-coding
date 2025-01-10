@@ -32,7 +32,7 @@
   border-style: none;
 }
 
-@mixin h2 ($Weight, $Bottom){
+@mixin h2 ($Weight, $Bottom) {
   font-size: 25px;
   font-weight: $Weight;
   margin-bottom: $Bottom;
@@ -52,6 +52,6 @@
 
 /* 改行処理
 ------------------------------- */
-@mixin br{
-    display: none;
-  }
+@mixin br {
+  display: none;
+}

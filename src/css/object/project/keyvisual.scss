@@ -3,7 +3,7 @@
 @use '../../foundation/variables' as var;
 
 // ページ上部のキービジュアルに関するスタイル
-.p-keyvisual__top-photo {
+.p-keyvisual {
   background-image: url('../img/picture/top-photo.png');
   background-repeat: no-repeat;
   background-position: center;
