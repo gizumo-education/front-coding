@@ -22,6 +22,9 @@
   }
   .p-jobslist__li{
     width: 278px;
+    @include utility.sp {
+      width: auto;
+    }
   }
 
   .p-jobslist__li:nth-child(2) {
@@ -50,7 +53,10 @@
     background: var.$bgLightBlue;
 
     @include utility.sp {
-      padding: .3rem 0 .6rem;
+      width: 100%;
+      text-align: center;
+      padding: 0.3rem 0 0.6rem;
+      margin: 0 auto;
     }
   }
 
@@ -68,6 +74,7 @@
     margin: 0px auto;
 
     @include utility.sp {
+      text-align: center;
       margin: 0px auto .44rem;
     }
 
@@ -94,11 +101,15 @@
       @include utility.sp {
         margin-top: .1008rem;
       }
-
+      p:nth-child(4){
+        margin-bottom: 0;
+      }
     }
+
 
     h4 {
       @include mix.h4;
+      margin-bottom: 7px;
 
       @include utility.sp {
         font-weight: var.$bold;
@@ -157,9 +168,11 @@
 
 
     @include utility.sp {
+      top: 20px;
+      left: 25px;
       width: 15px;
       height: 15px;
-      transform: translate(0%, 10%) rotate(-45deg);
+      transform: translate(-50%, -50%) rotate(-45deg);
     }
   }
 
@@ -196,9 +209,11 @@
     bottom: 0;
 
     @include utility.sp {
+      top: 20px;
+      left: 20px;
       width: 15px;
       height: 15px;
-      transform: translate(0%, 10%) rotate(135deg);
+      transform: translate(-50%, -50%) rotate(135deg);
     }
   }
 
@@ -215,6 +230,7 @@
 
     @include utility.sp {
       margin: 0 auto 0;
+      width: 370px;
     }
   }
 
