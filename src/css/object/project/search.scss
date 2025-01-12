@@ -12,6 +12,7 @@
   border-radius: 10px;
 
   @include utility.sp {
+    width: min-content;
     padding: .15rem .25rem .2rem;
     margin: .25rem auto;
   }
@@ -50,35 +51,15 @@
       }
     }
 
-    .p-search__block-form-sp {
-      display: flex;
-
-      @include utility.sp {
-        display: grid;
-        gap: .19rem;
-      }
-      .p-search__li:nth-child(1) {
-        @include utility.sp {
-          margin-right: 0;
-        }
-      }
-      .p-search__li:nth-child(2) {
-        @include utility.sp {
-          margin:0 auto;
-          width: fit-content;
-        }
-      }
-
-
-    }
-
     .p-search__li {
       list-style: none;
       margin-right: 15px;
 
       @include utility.sp {
+        float: left;
         margin-right: .105rem;
       }
+
     }
 
     .p-search__li:nth-child(3) {
@@ -86,6 +67,21 @@
         margin-right: 0;
       }
     }
+
+    .p-search__li:nth-child(4) {
+      @include utility.sp {
+        margin: .155rem 0 .19rem 0;
+      }
+    }
+
+    .p-search__li:nth-child(5) {
+      @include utility.sp {
+        float: none;
+        display: inline-block;
+        margin: 0 auto;
+      }
+    }
+
 
     input {
       font-size: 18px;
@@ -183,7 +179,7 @@
 
     @include utility.sp {
       display: block;
-      width: 1rem;
+      width: .99rem;
       padding: .06rem .08rem .07rem .08rem;
       font-size: .12rem;
       border-radius: .05rem;
