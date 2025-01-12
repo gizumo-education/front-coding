@@ -128,6 +128,11 @@
       margin-top: 8.08px;
       width: 278px;
 
+      @include utility.sp {
+        margin-top: .1008rem;
+        width: 3.7rem;
+      }
+
       p:nth-child(4) {
         margin-bottom: 0;
         width: auto;
@@ -137,6 +142,10 @@
     h4 {
       @include mix.h4;
       margin-bottom: 6.92px;
+
+      @include utility.sp {
+        font-weight: var.$bold;
+      }
     }
 
     p {
