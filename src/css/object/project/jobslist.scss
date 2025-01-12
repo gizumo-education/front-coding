@@ -24,11 +24,6 @@
     }
   }
 
-  // .p-jobslist__li{
-  //   width: 278px;
-  //   @include utility.sp {
-  //     width: auto;
-  //   }
   .p-jobslist__button-link {
     @include mix.button(var.$buttonBackGround, var.$white);
     display: grid;
@@ -159,8 +154,6 @@
         background-color: var.$label;
       }
     }
-
-
   }
 }
 
