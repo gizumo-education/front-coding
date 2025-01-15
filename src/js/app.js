@@ -20,20 +20,32 @@ $(function () {
   //ハンバーガーメニュー処理
   const hamburger = document.querySelector('.l-header__hamburger');
   const headNav = document.querySelector('#js-nav');
+  var body = document.body;
 
   hamburger.addEventListener('click', () => {
+    // body.toggleClass('active');
     if (hamburger.classList.contains("is-active")) {
       hamburger.classList.remove('is-active');
       headNav.classList.remove('is-active')
-
     } else {
+      body.classList.add('scroll');
       hamburger.classList.add('is-active');
       headNav.classList.add('is-active')
     }
+  });
+  headNav.addEventListener('click', () => {
+    body.classList.remove('scroll');
+    hamburger.classList.remove('is-active');
+    headNav.classList.remove('is-active')
+  });
 
-    headNav.addEventListener('click', () => {
-      hamburger.classList.remove('is-active');
-      headNav.classList.remove('is-active')
-    });
+  $('.p-nav__list-sp a[href^="#"]').on('click', function () {
+    const topHeight = 80;
+    const speed = 400;
+    const href = $(this).attr("href");
+    const target = $(href == "#" || href == "" ? 'html' : href);
+    const position = target.offset().top - topHeight;
+    $('body,html').animate({ scrollTop: position }, speed, 'swing');
+    return false;
   });
 });
