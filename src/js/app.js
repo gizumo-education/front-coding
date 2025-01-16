@@ -28,15 +28,15 @@ $(function () {
       hamburger.classList.remove('is-active');
       headNav.classList.remove('is-active')
     } else {
-      document.body.classList.add('scroll');
+      document.body.classList.add('scroll'); //これがないとnavメニューがある状態でもスクロールができてしまう
       hamburger.classList.add('is-active');
-      headNav.classList.add('is-active')
+      headNav.classList.add('is-active') //navメニューがでなくなる
     }
   });
   headNav.addEventListener('click', () => {
-    document.body.classList.remove('scroll');
+    document.body.classList.remove('scroll'); //これなしだとハンバーガーメニューを閉じスクロールが出来なくなる。
     hamburger.classList.remove('is-active');
-    headNav.classList.remove('is-active')
+    headNav.classList.remove('is-active') //navメニューが閉じなくなる
   });
 
   $('.p-nav__list-sp a[href^="#"]').on('click', function () {
@@ -46,8 +46,5 @@ $(function () {
     const target = $(href == "#" || href == "" ? 'html' : href);
     const position = target.offset().top - topHeight;
     $('body,html').animate({ scrollTop: position }, speed, 'swing');
-    hamburger.trigger('click');
-    return false;
   });
-
 });
