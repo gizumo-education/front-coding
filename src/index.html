@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" style="scroll-behavior: smooth">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>医療事務求人を探すならギズジョブ</title>
   <meta name="description" content="ギズジョブは完全無料の求職者向け求人サービスです">
   <meta name="keywords" content="ギズジョブ, ギズジョブ医療事務, 医療事務求人, 医療事務">
+  <title>医療事務求人を探すならギズジョブ</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 </head>
 
 <body>
@@ -25,16 +28,30 @@
           <li class="l-header__button is-camera"><a href="">検索履歴</a></li>
         </ul>
       </div>
-      <div class="l-header__sp-items">
-        <button class="l-header__hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+    </nav>
+    <div class="l-header__sp-items">
+      <button class="l-header__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="p-header__nav-sp p-nav" id="js-nav">
+      <div class="p-nav__inner-sp">
+        <ul class="p-nav__list-sp">
+          <li class="p-nav__item-sp">
+            <a href="#" class="p-nav__link-sp">トップ</a>
+          </li>
+          <li class="p-nav__item-sp">
+            <a href="#newjob" class="p-nav__link-sp">新着求人</a>
+          </li>
+          <li class="p-nav__item-sp"><a href="#features" class="p-nav__link-sp">4つの特徴</a></li>
+          <li class="p-nav__item-sp"><a href="#career-change" class="p-nav__link-sp">転職までの流れ</a></li>
+          <li class="p-nav__item-sp"><a href="#content" class="p-nav__link-sp">転職お役立ちコンテンツ</a></li>
+        </ul>
       </div>
     </nav>
   </header>
-
   <main>
     <section class="p-keyvisual">
       <ul class="p-keyvisual__ul">
@@ -53,127 +70,124 @@
       <p>働きたい職種・地域・希望給与を入れて検索！</p>
       <form>
         <ul class="p-search__ul">
-          <div class="p-search__block-select-sp">
-            <li class="p-search__li">
-              <div class="p-search__select-arrow">
-                <select name="p-search__name">
-                  <option value="医療事務">医療事務</option>
-                  <option value="調剤事務">調剤事務</option>
-                  <option value="診療情報管理士">診療情報管理士</option>
-                  <option value="歯科助手">歯科助手</option>
-                  <option value="歯科事務">歯科事務</option>
-                  <option value="看護補助・看護助手">看護補助・看護助手</option>
-                  <option value="病院内SE">病院内SE</option>
-                </select>
-              </div>
-            </li>
-            <li class="p-search__li">
-              <div class="p-search__select-arrow">
-                <select name="p-search__area">
-                  <option value="茨城県">茨城県</option>
-                  <option value="神奈川県">神奈川県</option>
-                  <option value="群馬県">群馬県</option>
-                  <option value="埼玉県">埼玉県</option>
-                  <option value="千葉県">千葉県</option>
-                  <option value="東京都" selected>東京都</option>
-                  <option value="栃木県">栃木県</option>
-                </select>
-              </div>
-            </li>
-            <li class="p-search__li">
-              <div class="p-search__select-arrow">
-                <select name="p-search__salary">
-                  <option value="月給17万〜">月給17万〜</option>
-                  <option value="月給18万〜"> 月給18万〜</option>
-                  <option value="月給19万〜">月給19万〜</option>
-                  <option value="月給20万〜" selected>月給20万〜</option>
-                  <option value="月給21万〜">月給21万〜</option>
-                  <option value="月給22万〜">月給22万〜</option>
-                  <option value="月給23万〜">月給23万〜</option>
-                </select>
-              </div>
-            </li>
-          </div>
-          <div class="p-search__block-form-sp">
-            <li class="p-search__li">
-              <input type="text" placeholder="キーワード・企業・スキルなど">
-            </li>
-            <li class="p-search__li">
-              <button href="" class="p-search__button">
-                <span class="p-search__icon-position">
-                  <img src="./img/icon/icon-search.png" alt="">
-                  検索する
-                </span>
-              </button>
-            </li>
-          </div>
+          <li class="p-search__li">
+            <div class="p-search__select-arrow">
+              <select name="p-search__name">
+                <option value="医療事務">医療事務</option>
+                <option value="調剤事務">調剤事務</option>
+                <option value="診療情報管理士">診療情報管理士</option>
+                <option value="歯科助手">歯科助手</option>
+                <option value="歯科事務">歯科事務</option>
+                <option value="看護補助・看護助手">看護補助・看護助手</option>
+                <option value="病院内SE">病院内SE</option>
+              </select>
+            </div>
+          </li>
+          <li class="p-search__li">
+            <div class="p-search__select-arrow">
+              <select name="p-search__area">
+                <option value="茨城県">茨城県</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="東京都" selected>東京都</option>
+                <option value="栃木県">栃木県</option>
+              </select>
+            </div>
+          </li>
+          <li class="p-search__li">
+            <div class="p-search__select-arrow">
+              <select name="p-search__salary">
+                <option value="月給17万〜">月給17万〜</option>
+                <option value="月給18万〜"> 月給18万〜</option>
+                <option value="月給19万〜">月給19万〜</option>
+                <option value="月給20万〜" selected>月給20万〜</option>
+                <option value="月給21万〜">月給21万〜</option>
+                <option value="月給22万〜">月給22万〜</option>
+                <option value="月給23万〜">月給23万〜</option>
+              </select>
+            </div>
+          </li>
+          <li class="p-search__li">
+            <input type="text" placeholder="キーワード・企業・スキルなど">
+          </li>
+          <li class="p-search__li">
+            <button class="p-search__button">
+              <span class="p-search__icon-position">
+                <img src="./img/icon/icon-search.png" alt="">
+                検索する
+              </span>
+            </button>
+          </li>
         </ul>
       </form>
     </section>
 
     <section class="p-jobslist">
-      <div class="p-jobslist__grid">
+      <div class="p-jobslist__grid" >
         <div class="p-jobslist__content">
-          <h2>新着求人</h2>
-          <ul class="p-jobslist__ul">
-            <li class="p-jobslist__li">
-              <div class="p-jobslist__position-img">
-                <span class="p-jobslist__arrow-left"></span>
-                <img src="./img/picture/woman01.png" alt="">
-              </div>
-              <div class="p-jobslist__text">
-                <h4>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h4>
-                <p><span>給与</span>月給 148,000円～</p>
-                <p><span>所在地</span>三重県伊勢市</p>
-                <p><span>最寄り駅</span>伊勢市駅 徒歩15分</p>
-              </div>
-            </li>
-            <li class="p-jobslist__li">
-              <div class="p-jobslist__position-img">
-                <img src="./img/picture/woman02.png" alt="">
-              </div>
-              <div class="p-jobslist__text">
-                <h4>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h4>
-                <p><span>給与</span>月給 148,000円～</p>
-                <p><span>所在地</span>三重県伊勢市</p>
-                <p><span>最寄り駅</span>伊勢市駅 徒歩15分</p>
-              </div>
-            </li>
-            <li class="p-jobslist__li">
-              <div class="p-jobslist__position-img">
-                <img src="./img/picture/woman03.png" alt="">
-              </div>
-              <div class="p-jobslist__text">
-                <h4>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h4>
-                <p><span>給与</span>月給 148,000円～</p>
-                <p><span>所在地</span>三重県伊勢市</p>
-                <p><span>最寄り駅</span>伊勢市駅 徒歩15分</p>
-              </div>
-            </li>
-            <li class="p-jobslist__li">
-              <div class="p-jobslist__position-img">
-                <img src="./img/picture/woman04.png" alt="">
-              </div>
-              <div class="p-jobslist__text">
-                <h4>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h4>
-                <p><span>給与</span>月給 148,000円～</p>
-                <p><span>所在地</span>三重県伊勢市</p>
-                <p><span>最寄り駅</span>伊勢市駅 徒歩15分</p>
-              </div>
-            </li>
-            <span class="p-jobslist__arrow-right"></span>
-          </ul>
+          <h2 id="newjob">新着求人</h2>
+          <div class="test">
+            <ul class="p-jobslist__ul slick">
+
+              <li class="p-jobslist__li">
+                <div class="p-jobslist__position-img">
+                  <img src="./img/picture/woman01.png" alt="">
+                </div>
+                <div class="p-jobslist__text">
+                  <h4>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h4>
+                  <p><span>給与</span>月給 148,000円～</p>
+                  <p><span>所在地</span>三重県伊勢市</p>
+                  <p><span>最寄り駅</span>伊勢市駅 徒歩15分</p>
+                </div>
+              </li>
+              <li class="p-jobslist__li">
+                <div class="p-jobslist__position-img">
+                  <img src="./img/picture/woman02.png" alt="">
+                </div>
+                <div class="p-jobslist__text">
+                  <h4>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h4>
+                  <p><span>給与</span>月給 148,000円～</p>
+                  <p><span>所在地</span>三重県伊勢市</p>
+                  <p><span>最寄り駅</span>伊勢市駅 徒歩15分</p>
+                </div>
+              </li>
+              <li class="p-jobslist__li">
+                <div class="p-jobslist__position-img">
+                  <img src="./img/picture/woman03.png" alt="">
+                </div>
+                <div class="p-jobslist__text">
+                  <h4>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h4>
+                  <p><span>給与</span>月給 148,000円～</p>
+                  <p><span>所在地</span>三重県伊勢市</p>
+                  <p><span>最寄り駅</span>伊勢市駅 徒歩15分</p>
+                </div>
+              </li>
+              <li class="p-jobslist__li">
+                <div class="p-jobslist__position-img">
+                  <img src="./img/picture/woman04.png" alt="">
+                </div>
+                <div class="p-jobslist__text">
+                  <h4>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h4>
+                  <p><span>給与</span>月給 148,000円～</p>
+                  <p><span>所在地</span>三重県伊勢市</p>
+                  <p><span>最寄り駅</span>伊勢市駅 徒歩15分</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <a href="" class="p-jobslist__button-link">新着求人一覧をもっと見る</a>
+        <a class="p-jobslist__button-link">新着求人一覧をもっと見る</a>
       </div>
     </section>
 
     <section class="p-message">
       <span class="p-message__background"></span>
-      <p>ギズジョブなら理想の職場がきっと見つかる<br>ギズジョブは完全無料の求職者向け求人サービスです。</p>
+      <h2 class="p-message__text">ギズジョブなら理想の職場がきっと見つかる<br>ギズジョブは完全無料の求職者向け求人サービスです。</h2>
     </section>
 
-    <section class="p-features">
+    <section id="features" class="p-features">
       <h2>ギズジョブの4つの特徴</h2>
       <ul class="p-features__ul">
         <li class="p-features__li">
@@ -198,7 +212,7 @@
       </ul>
     </section>
 
-    <section class="p-careerchangemodel">
+    <section id="career-change" class="p-careerchangemodel">
       <h2>転職までの流れ</h2>
       <ul class="p-careerchangemodel__ul">
         <li class="p-careerchangemodel__li">
@@ -244,7 +258,7 @@
       </ul>
     </section>
 
-    <section class="p-useful">
+    <section id="content" class="p-useful">
       <h2>転職お役立ちコンテンツ</h2>
       <ul class="p-useful__ul">
         <li class="p-useful__li">
@@ -277,7 +291,7 @@
           </div>
         </li>
       </ul>
-      <a href="" class="p-useful__button-link">医療事務コラムをもっと見る</a>
+      <a class="p-useful__button-link">医療事務コラムをもっと見る</a>
     </section>
 
     <section class="p-searchbotton">
@@ -285,60 +299,56 @@
       <p>働きたい職種・地域・希望給与を入れて検索！</p>
       <form>
         <ul class="p-searchbotton__ul">
-          <div class="p-searchbotton__block-select-sp">
-            <li class="p-searchbotton__li">
-              <div class="p-searchbotton__select-arrow">
-                <select name="p-searchbotton__name">
-                  <option value="医療事務">医療事務</option>
-                  <option value="調剤事務">調剤事務</option>
-                  <option value="診療情報管理士">診療情報管理士</option>
-                  <option value="歯科助手">歯科助手</option>
-                  <option value="歯科事務">歯科事務</option>
-                  <option value="看護補助・看護助手">看護補助・看護助手</option>
-                  <option value="病院内SE">病院内SE</option>
-                </select>
-              </div>
-            </li>
-            <li class="p-searchbotton__li">
-              <div class="p-searchbotton__select-arrow">
-                <select name="p-searchbotton__area">
-                  <option value="茨城県">茨城県</option>
-                  <option value="神奈川県">神奈川県</option>
-                  <option value="群馬県">群馬県</option>
-                  <option value="埼玉県">埼玉県</option>
-                  <option value="千葉県">千葉県</option>
-                  <option value="東京都" selected>東京都</option>
-                  <option value="栃木県">栃木県</option>
-                </select>
-              </div>
-            </li>
-            <li class="p-searchbotton__li">
-              <div class="p-searchbotton__select-arrow">
-                <select name="p-searchbotton__salary">
-                  <option value="月給17万〜">月給17万〜</option>
-                  <option value="月給18万〜"> 月給18万〜</option>
-                  <option value="月給19万〜">月給19万〜</option>
-                  <option value="月給20万〜" selected>月給20万〜</option>
-                  <option value="月給21万〜">月給21万〜</option>
-                  <option value="月給22万〜">月給22万〜</option>
-                  <option value="月給23万〜">月給23万〜</option>
-                </select>
-              </div>
-            </li>
-          </div>
-          <div class="p-searchbotton__block-form-sp">
-            <li class="p-searchbotton__li">
-              <input type="text" placeholder="キーワード・企業・スキルなど">
-            </li>
-            <li class="p-searchbotton__li">
-              <button href="" class="p-searchbotton__button">
-                <span class="p-searchbotton__icon-position">
-                  <img src="./img/icon/icon-search.png" alt="">
-                  検索する
-                </span>
-              </button>
-            </li>
-          </div>
+          <li class="p-searchbotton__li">
+            <div class="p-searchbotton__select-arrow">
+              <select name="p-searchbotton__name">
+                <option value="医療事務">医療事務</option>
+                <option value="調剤事務">調剤事務</option>
+                <option value="診療情報管理士">診療情報管理士</option>
+                <option value="歯科助手">歯科助手</option>
+                <option value="歯科事務">歯科事務</option>
+                <option value="看護補助・看護助手">看護補助・看護助手</option>
+                <option value="病院内SE">病院内SE</option>
+              </select>
+            </div>
+          </li>
+          <li class="p-searchbotton__li">
+            <div class="p-searchbotton__select-arrow">
+              <select name="p-searchbotton__area">
+                <option value="茨城県">茨城県</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="東京都" selected>東京都</option>
+                <option value="栃木県">栃木県</option>
+              </select>
+            </div>
+          </li>
+          <li class="p-searchbotton__li">
+            <div class="p-searchbotton__select-arrow">
+              <select name="p-searchbotton__salary">
+                <option value="月給17万〜">月給17万〜</option>
+                <option value="月給18万〜"> 月給18万〜</option>
+                <option value="月給19万〜">月給19万〜</option>
+                <option value="月給20万〜" selected>月給20万〜</option>
+                <option value="月給21万〜">月給21万〜</option>
+                <option value="月給22万〜">月給22万〜</option>
+                <option value="月給23万〜">月給23万〜</option>
+              </select>
+            </div>
+          </li>
+          <li class="p-searchbotton__li">
+            <input type="text" placeholder="キーワード・企業・スキルなど">
+          </li>
+          <li class="p-searchbotton__li">
+            <button class="p-searchbotton__button">
+              <span class="p-searchbotton__icon-position">
+                <img src="./img/icon/icon-search.png" alt="">
+                検索する
+              </span>
+            </button>
+          </li>
         </ul>
       </form>
     </section>

@@ -30,9 +30,8 @@
     }
   }
 
-  p {
-    font-size: 25px;
-    font-weight: var.$bold;
+  .p-message__text {
+    @include mix.h2(var.$bold, 0px);
     text-align: center;
     line-height: 46px;
     position: absolute;
