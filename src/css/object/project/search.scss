@@ -1,7 +1,7 @@
 @use '../../object/utility/utility.scss';
 @use '../component/button.scss';
 
-.q-main__search {
+.p-main__search {
   width: 1180px;
   height: 240px;
   background-color: utility.$bgSearch;
@@ -36,24 +36,26 @@
         gap: 15px;
         
         &__inner{
-          position: relative;
-        
-          &::after{
-            @include button.selectBoxAfter()
-          }
 
           & > select {
-            @include button.selectBox( 200px, 60px )
+            width: 200px;
+            height: 60px;
+            border-color: utility.$boxPink;
           }
         }
 
         & > input {
-          @include button.searchInput( 300px );
+          width: 300px;
+          border-color: utility.$boxPink;
         }
       }
 
       & > a {
-        @include button.btnPink( 140px, 60px );
+        width: 140px;
+        height: 60px;
+        color: utility.$white;
+        background-color: utility.$buttonPink;
+        gap: 4px;
       }
     }
   }

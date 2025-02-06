@@ -1,7 +1,7 @@
 @use '../../object/utility/utility.scss';
 @use '../../object/component/button.scss';
 
-.q-main__recruit {
+.p-main__recruit {
   width: 100%;
   height: 636px;
   background-color: utility.$bgRecruit;
@@ -82,7 +82,10 @@
     }
 
     & > a {
-      @include button.btnPink( 360px, 60px );
+      width: 360px;
+      height: 60px;
+      color: utility.$white;
+      background-color: utility.$buttonPink;
       font-weight: utility.$bold;
       margin-top: 59px;
       position: absolute;

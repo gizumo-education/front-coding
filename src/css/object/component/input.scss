@@ -1,0 +1,9 @@
+@use '../../object/utility/utility.scss';
+
+.c-input {
+  font-size: 18px;
+  font-weight: utility.$regular;
+  padding-left: 10px;
+  border-radius: 15px;
+  border: solid 1px;
+}

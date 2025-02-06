@@ -1,0 +1,27 @@
+@use '../../object/utility/utility.scss';
+
+
+.c-selectAfter{
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    border-top: 10px solid utility.$boxPink;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    pointer-events: none;
+  }
+
+  &__select {
+    border-radius: 15px;
+    border: solid 1px;
+    font-size: 18px;
+    font-weight: utility.$regular;
+    padding-left: 15px;
+    appearance: none;
+  }
+}

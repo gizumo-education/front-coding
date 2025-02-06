@@ -1,54 +1,18 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
 
-@mixin btnPink( $width, $height ) {
-        display: flex;
-        box-sizing: border-box;
-        font-size: 18px;
-        font-weight: utility.$regular;
-        color: utility.$white;
-        background-color: utility.$buttonPink;
-        width: $width;
-        height: $height;
-        border-radius: 30px;
-        gap: 4px;
-        justify-content: center;
-        align-items: center;
+.c-button {
+  display: flex;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: utility.$regular;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
 
-        &:hover {
-        opacity: .8; 
-        transition: .3s;
+  &:hover {
+    opacity: .8; 
+    transition: .3s;
   }
 }
 
-@mixin selectBox ( $width, $height ) {
-  width: $width;
-  height: $height;
-  border-radius: 15px;
-  border: solid 1px utility.$boxPink;
-  font-size: 18px;
-  font-weight: utility.$regular;
-  padding-left: 15px;
-  appearance: none;
-}
-
-@mixin selectBoxAfter () {
-  content: "";
-  position: absolute;
-  top: 25px;
-  right: 15px;
-  border-top: 10px solid utility.$boxPink;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid transparent;
-  pointer-events: none;
-}
-
-@mixin searchInput ( $width ) {
-  width: $width;
-  font-size: 18px;
-  font-weight: utility.$regular;
-  padding-left: 10px;
-  border-radius: 15px;
-  border: solid 1px utility.$boxPink;
-}
