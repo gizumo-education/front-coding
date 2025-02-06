@@ -15,13 +15,13 @@
     border-left: 10px solid transparent;
     pointer-events: none;
   }
+}
 
-  &__select {
-    border-radius: 15px;
-    border: solid 1px;
-    font-size: 18px;
-    font-weight: utility.$regular;
-    padding-left: 15px;
-    appearance: none;
-  }
+.c-select {
+  border-radius: 15px;
+  border: solid 1px;
+  font-size: 18px;
+  font-weight: utility.$regular;
+  padding-left: 15px;
+  appearance: none;
 }
