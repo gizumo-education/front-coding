@@ -35,14 +35,11 @@
         display: flex;
         gap: 15px;
         
-        &__inner{
-
-          & > select {
+        &__inner > select {
             width: 200px;
             height: 60px;
             border-color: utility.$boxPink;
           }
-        }
 
         & > input {
           width: 300px;
