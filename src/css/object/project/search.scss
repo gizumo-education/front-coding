@@ -1,0 +1,59 @@
+@use '../../object/utility/utility.scss';
+@use '../component/button.scss';
+
+.p-main__search {
+  width: 1180px;
+  height: 240px;
+  background-color: utility.$bgSearch;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__container {
+    text-align: center;
+    padding-top: 40px;
+
+    & > h2 {
+      font-size: 25px;
+      font-weight: utility.$bold;
+    }
+
+    & > p {
+      font-size: 20px;
+      font-weight: utility.$regular;
+      margin-top: 20px;
+    }
+    
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-top: 26px;
+      
+      &__select{
+        display: flex;
+        gap: 15px;
+        
+        &__inner > select {
+            width: 200px;
+            height: 60px;
+            border-color: utility.$boxPink;
+          }
+
+        & > input {
+          width: 300px;
+          border-color: utility.$boxPink;
+        }
+      }
+
+      & > a {
+        width: 140px;
+        height: 60px;
+        color: utility.$white;
+        background-color: utility.$buttonPink;
+        gap: 4px;
+      }
+    }
+  }
+}

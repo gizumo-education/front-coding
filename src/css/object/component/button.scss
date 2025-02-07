@@ -1,2 +1,18 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button {
+  display: flex;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: utility.$regular;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    opacity: .8; 
+    transition: .3s;
+  }
+}
+
