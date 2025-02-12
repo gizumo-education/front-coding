@@ -111,3 +111,10 @@
     }
   }
 }
+
+.p-main__searchMrgin {
+  margin-bottom: 200px;
+  @include utility.sp {
+    margin-bottom: 1rem;
+  }
+}
