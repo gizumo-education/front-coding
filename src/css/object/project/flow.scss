@@ -2,6 +2,11 @@
 
 .p-main__flow {
   margin-top: 105px;
+  @include utility.sp {
+    width: 2.8rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   & > h1 {
     font-size: 25px;
@@ -15,7 +20,10 @@
     align-items: center;
     margin-top: 50px;
     gap: 20px;
-
+    @include utility.sp {
+      display: block;
+    }
+    
     &__inner {
       width: 280px;
       height: 360px;
@@ -24,6 +32,10 @@
       border-radius: 15px;
       position: relative;
       background-color: utility.$white;
+      @include utility.sp {
+        height: 2.9rem;
+        margin-bottom: 0.4rem;
+      }
 
       &:not(:last-child)::after {
         content: "";
@@ -36,6 +48,12 @@
         border-bottom: 20px solid transparent;
         border-left: 24px solid utility.$pink;
         z-index: -10;
+        @include utility.sp {
+          top: 103%;
+          left: 47%;
+          transform: translate(0%, -70%);
+          transform: rotate(90deg);
+        }
       }
 
       &__step {
@@ -53,6 +71,11 @@
         border-radius: 30px;
         line-height: 1.2em;
         background-color: utility.$pink;
+        @include utility.sp {
+          width: 0.45rem;
+          height: 0.45rem;
+          font-size: 0.1rem;
+        }
       }
 
       &__img {
@@ -67,10 +90,17 @@
         font-size: 24px;
         font-weight: utility.$bold;
         line-height: 30px;
+        @include utility.sp {
+          margin-top: 0.2rem;
+          font-size: 20px;
+        }
       }
       
       &__mt {
         margin-top: 30px!important;
+        @include utility.sp {
+          margin-top: 0.2rem!important;
+        }
       }
 
       &__text {
@@ -82,6 +112,9 @@
         position: absolute;
         bottom: 42px;
         left: 21px;
+        @include utility.sp {
+          bottom: 22px;
+        }
       }
     }
   }
