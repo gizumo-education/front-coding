@@ -14,14 +14,27 @@
     border-bottom: 10px solid transparent;
     border-left: 10px solid transparent;
     pointer-events: none;
+
+    @include utility.sp {
+      top: 0.12rem;
+      right: 0.05rem;
+      border-top: 7px solid utility.$boxPink;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-left: 6px solid transparent;
+    }
   }
 }
 
 .c-select {
-  border-radius: 15px;
+  border-radius: 8px;
   border: solid 1px;
   font-size: 18px;
   font-weight: utility.$regular;
   padding-left: 15px;
   appearance: none;
+  @include utility.sp {
+    font-size: 0.12rem;
+    padding-left: 0.05rem;
+  }
 }

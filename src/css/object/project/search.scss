@@ -7,20 +7,34 @@
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
+  @include utility.sp {
+    width: 3.7rem;
+    height: 2.4rem;
+  }
 
   &__container {
     text-align: center;
     padding-top: 40px;
+    @include utility.sp {
+      padding-top: 0.15rem;
+    }
 
     & > h2 {
       font-size: 25px;
       font-weight: utility.$bold;
+      @include utility.sp {
+        font-size: 0.22rem;
+      }
     }
 
     & > p {
       font-size: 20px;
       font-weight: utility.$regular;
       margin-top: 20px;
+      @include utility.sp {
+        margin-top: 0.16rem;
+        font-size: 0.14rem;
+      }
     }
     
     &__wrapper {
@@ -29,20 +43,43 @@
       align-items: center;
       gap: 15px;
       margin-top: 26px;
+      @include utility.sp {
+        margin-top: 0.13rem;
+        display: block;
+      }
       
       &__select{
         display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 15px;
+        @include utility.sp {
+          gap: 0.1rem;
+        }
         
         &__inner > select {
             width: 200px;
             height: 60px;
             border-color: utility.$boxPink;
+            @include utility.sp {
+              width: 1rem;
+              height: 0.3rem;
+            }
           }
-
-        & > input {
-          width: 300px;
-          border-color: utility.$boxPink;
+        }
+      
+      & > input {
+        font-size: 18px;
+        width: 300px;
+        height: 60px;
+        border-color: utility.$boxPink;
+        @include utility.sp {
+          width: 3.2rem;
+          height: 0.3rem;
+          font-size: 0.14rem;
+          margin-top: 0.15rem;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
 
@@ -52,11 +89,25 @@
         color: utility.$white;
         background-color: utility.$buttonPink;
         gap: 4px;
+
+        & > img {
+          width: 30px;
+          height: 30px;
+          @include utility.sp {
+            width: 0.18rem;
+            height: 0.18rem;
+          }
+        } 
+
+        @include utility.sp {
+          margin-top: 0.19rem;
+          margin-left: auto;
+          margin-right: auto;
+          width: 1.6rem;
+          height: 0.4rem;
+          gap: 0.15rem;
+        }
       }
     }
   }
-}
-
-.p-main__searchMrgin{
-  margin-bottom: 200px;
 }

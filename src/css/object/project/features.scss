@@ -1,5 +1,8 @@
+@use '../../object/utility/utility.scss';
+
 .p-main__features{
   margin-top: 106px;
+  
   & > h1 {
     font-size: 25px;
     font-weight: bold;
