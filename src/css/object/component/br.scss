@@ -1,0 +1,16 @@
+@use '../../object/utility/utility.scss';
+
+.c-sp {
+  display: none;
+
+  @include utility.sp {
+    display: block;
+  }
+}
+
+.c-pc {
+  display: block;
+  @include utility.sp {
+    display: none;
+  }
+}
