@@ -6,9 +6,22 @@
   background-color: utility.$bgBlue;
   background-position: center;
   background-size: contain;
-  width: 100%;
+  width: 1600px;
   height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  @include utility.sp {
+    position: relative;
+    width: 400px;
+    height: 270px;
+  }
   
+  & > img {
+    @include utility.sp {
+      left: 50%;
+    }
+  }
+
   &__inner {
     display:flex;
     flex-flow: column;
@@ -16,12 +29,28 @@
     text-align: center;
     margin-left: 607px;
 
+
     &__textImg:first-child {
       margin-top: 56px;
+      @include utility.sp {
+        display: block;
+        margin-top: 0;
+        width: 1.5rem;
+        position: absolute;
+        top: 0.6rem;
+        left: 2rem;
+      }
     }
 
     &__textImg:nth-child(2) {
       margin-top: 40px;
+      @include utility.sp {
+        width: 2.7rem;
+        margin-top: 0;
+        position: absolute;
+        top: 1.47rem;
+        left: 1.24rem;
+      }
     }
 
     &__text {
@@ -30,20 +59,35 @@
       width: 391px;
       height: 69px;
       border: solid 2.3px utility.$green;
-      border-radius: 15px;
+      border-radius: 10px;
       margin-top: 54px;
       margin-left: auto;
       margin-right: auto;
-
+      @include utility.sp {
+        width: 1.7rem;
+        height: 0.3rem;
+        border-width: 0.01rem;
+        margin-top: 0;
+        position: absolute;
+        top: 1.8rem;
+        left: 1.9rem;
+      }
 
       & > h1 {
         padding-top: 10px;
         font-size: 20px;
         font-weight: utility.$regular;
+        @include utility.sp {
+          padding-top: 0.04rem;
+          font-size: 0.08rem;
+        }
 
         & span {
           font-size: 40px;
           font-weight: utility.$bold;
+          @include utility.sp {
+            font-size: 0.16rem;
+          }
         }
       }
     }

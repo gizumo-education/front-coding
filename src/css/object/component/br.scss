@@ -2,7 +2,6 @@
 
 .c-sp {
   display: none;
-
   @include utility.sp {
     display: block;
   }
