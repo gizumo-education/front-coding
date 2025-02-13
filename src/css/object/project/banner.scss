@@ -12,7 +12,8 @@
   margin-left: auto;
   margin-right: auto;
   @include utility.sp {
-    height: 1rem;
+    width: 4.0rem;
+    height: 0.75rem;
   }
 
   &__container {
@@ -32,8 +33,8 @@
       font-weight: utility.$bold;
       color: utility.$white;
       padding: 5px 0;
-
       @include utility.sp {
+        width: 400px;
         font-size: 0.14rem;
         font-weight: utility.$regular;
       }
