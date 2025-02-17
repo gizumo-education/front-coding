@@ -8,6 +8,9 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
+  @include utility.tab {
+    width: 95%;
+  }
   @include utility.sp {
     width: 3.7rem;
     height: 2.4rem;

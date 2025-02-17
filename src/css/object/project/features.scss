@@ -18,6 +18,9 @@
     gap: 40px;
     justify-content: center;
     padding-top: 53px;
+    @include utility.tab {
+      grid-template-columns: 8rem 8rem;
+    }
     @include utility.sp {
       display: block;
       padding-top: 0.3rem;
@@ -58,6 +61,7 @@
         line-height: 16.8px;
         word-break: break-word;
         @include utility.sp {
+          line-height: 0.16rem;
           font-size: 0.12rem;
           padding-top: 0.3rem;
           padding-bottom: 0.3rem;

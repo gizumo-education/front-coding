@@ -2,6 +2,11 @@
 
 .p-main__flow {
   margin-top: 105px;
+  @include utility.tab {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @include utility.sp {
     width: 2.8rem;
     margin-left: auto;
@@ -33,7 +38,9 @@
       position: relative;
       background-color: utility.$white;
       @include utility.sp {
-        height: 2.9rem;
+        width: 2.8rem;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 0.4rem;
       }
 
@@ -97,7 +104,7 @@
       }
       
       &__mt {
-        margin-top: 30px!important;
+        margin-top: 45px!important;
         @include utility.sp {
           margin-top: 0.2rem!important;
         }
@@ -109,12 +116,7 @@
         height: 60px;
         line-height: 17px;
         font-size: 14px;
-        position: absolute;
-        bottom: 42px;
-        left: 21px;
-        @include utility.sp {
-          bottom: 22px;
-        }
+        margin: 30px auto;
       }
     }
   }
