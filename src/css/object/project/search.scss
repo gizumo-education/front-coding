@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@use '../component/button.scss';
 
 .p-main__search {
   width: 1180px;
@@ -56,8 +57,4 @@
       }
     }
   }
-}
-
-.p-main__searchMrgin{
-  margin-bottom: 200px;
 }
