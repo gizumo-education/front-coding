@@ -1,40 +1,38 @@
 @use '../../object/utility/utility.scss';
 .p-main__banner {
-  background-image: url(../img/picture/banner.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 1600px;
-  height: 300px;
-  background-color: rgba(utility.$black, 0.5);
-  background-blend-mode: overlay;
-  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
+  @include utility.tab {
+    height: 3.4rem;
+  }
   @include utility.sp {
     width: 4.0rem;
     height: 0.75rem;
   }
 
   &__container {
-    display: grid;
-    position: absolute;
-    row-gap: 20px;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    @include utility.sp {
-      row-gap: 0.0rem;
+    background-color: utility.$black;
+    position: relative;
+
+    & > img {
+      opacity: 0.5;
     }
     
-    & > p {
+    &__text {
+      text-align: center;
+      line-height: 30px;
       font-size: 25px;
       font-weight: utility.$bold;
       color: utility.$white;
-      padding: 5px 0;
+      width: 100%;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
       @include utility.sp {
-        width: 4rem;
         font-size: 0.14rem;
         font-weight: utility.$regular;
       }
