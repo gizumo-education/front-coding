@@ -100,7 +100,11 @@
       padding-top: 25px;
 
       
-      &__inner{
+      &__inner {
+
+        &__img > img {
+          border-radius: 15px;
+        }
 
         & > h2 {
           font-size: 16px;
