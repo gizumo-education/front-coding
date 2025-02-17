@@ -3,7 +3,7 @@
 .p-main__flow {
   margin-top: 105px;
   
-  & > h1 {
+  &__heading {
     font-size: 25px;
     font-weight: utility.$bold;
     text-align: center;
@@ -62,7 +62,7 @@
         margin-top: 60px;
       }
 
-      & > h2 {
+      &__h2 {
         margin-top: 20px;
         font-size: 24px;
         font-weight: utility.$bold;

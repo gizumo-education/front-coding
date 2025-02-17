@@ -1,6 +1,7 @@
 .p-main__features{
   margin-top: 106px;
-  & > h1 {
+  
+  &__heading {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -12,17 +13,20 @@
     gap: 40px;
     justify-content: center;
     padding-top: 53px;
+
     &__wrapper {
       background-color: #F7D2DB;
       text-align: center;
       border-radius: 15px;
-      & > h2 {
+
+      &__h2 {
         font-size: 24px;
         font-weight: bold;
         padding-top: 40px;
         color: #DE5579;
       }
-      & > p {
+      
+      &__p {
         font-size: 14px;
         padding-top: 36px;
         line-height: 16.8px;

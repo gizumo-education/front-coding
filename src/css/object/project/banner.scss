@@ -5,11 +5,11 @@
   &__container {
     position: relative;
 
-    & > img {
+    &__img {
       opacity: 0.5;
     }
     
-    &__text {
+    &__texts {
       text-align: center;
       line-height: 50px;
       font-size: 25px;

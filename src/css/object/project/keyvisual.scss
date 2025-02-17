@@ -36,12 +36,12 @@
       margin-right: auto;
 
 
-      & > h1 {
+      &__current {
         padding-top: 10px;
         font-size: 20px;
         font-weight: utility.$regular;
 
-        & span {
+        &__span {
           font-size: 40px;
           font-weight: utility.$bold;
         }

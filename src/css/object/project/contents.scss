@@ -2,7 +2,7 @@
 
 .p-main__contents { 
 
-  & > h1 {
+  &__heading {
     margin-top: 105px;
     font-size: 25px;
     font-weight: utility.$bold;
@@ -43,12 +43,12 @@
           transform: translate(-50%,-50%);
           color: utility.$white;
   
-          & > h2 {
+          &__h2 {
             font-size: 24px;
             font-weight: utility.$bold;
           }
           
-          & > p {
+          &__p {
             font-size: 16px;
             margin-top: 45px;
             line-height: 1.5em;
