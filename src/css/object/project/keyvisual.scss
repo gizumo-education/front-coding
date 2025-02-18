@@ -16,13 +16,16 @@
     text-align: center;
     margin-left: 607px;
 
-    &__textImg:first-child {
+    &__textImages {
+
+    &__textImage:first-child {
       margin-top: 56px;
     }
 
-    &__textImg:nth-child(2) {
+    &__textImage:nth-child(2) {
       margin-top: 40px;
     }
+  }
 
     &__text {
       color: utility.$green;
@@ -36,12 +39,12 @@
       margin-right: auto;
 
 
-      & > h1 {
+      &__current {
         padding-top: 10px;
         font-size: 20px;
         font-weight: utility.$regular;
 
-        & span {
+        &__span {
           font-size: 40px;
           font-weight: utility.$bold;
         }

@@ -5,6 +5,7 @@
   width: 1180px;
   height: 240px;
   background-color: utility.$bgSearch;
+  border-radius: 10px;
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
@@ -13,12 +14,12 @@
     text-align: center;
     padding-top: 40px;
 
-    & > h2 {
+    &__heading {
       font-size: 25px;
       font-weight: utility.$bold;
     }
 
-    & > p {
+    &__lead {
       font-size: 20px;
       font-weight: utility.$regular;
       margin-top: 20px;
@@ -35,24 +36,36 @@
         display: flex;
         gap: 15px;
         
-        &__inner > select {
+        &__inner { 
+        
+          &__detail {
             width: 200px;
             height: 60px;
             border-color: utility.$boxPink;
           }
-
-        & > input {
+        }
+        
+        &__input {
           width: 300px;
           border-color: utility.$boxPink;
         }
       }
 
-      & > a {
+      &__button {
+        gap: 4px;
         width: 140px;
         height: 60px;
         color: utility.$white;
         background-color: utility.$buttonPink;
-        gap: 4px;
+        background-repeat: no-repeat;
+        
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background-image: url("../img/icon/icon-lens-white.png");
+        }
       }
     }
   }
