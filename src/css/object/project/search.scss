@@ -52,11 +52,20 @@
       }
 
       &__button {
+        gap: 4px;
         width: 140px;
         height: 60px;
         color: utility.$white;
         background-color: utility.$buttonPink;
-        gap: 4px;
+        background-repeat: no-repeat;
+        
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background-image: url("../img/icon/icon-lens-white.png");
+        }
       }
     }
   }
