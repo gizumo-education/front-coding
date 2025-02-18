@@ -16,13 +16,16 @@
     text-align: center;
     margin-left: 607px;
 
-    &__textImg:first-child {
+    &__textImages {
+
+    &__textImage:first-child {
       margin-top: 56px;
     }
 
-    &__textImg:nth-child(2) {
+    &__textImage:nth-child(2) {
       margin-top: 40px;
     }
+  }
 
     &__text {
       color: utility.$green;
