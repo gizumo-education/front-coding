@@ -1,0 +1,47 @@
+@use '../../object/utility/utility.scss';
+
+.c-arrowBox {
+  display: flex;
+  position: relative;
+  margin-top: 25px;
+}
+
+.c-prevArrow,
+.c-nextArrow {
+  cursor: pointer;
+  position:relative;
+}
+
+.c-prevArrow {
+    transform: rotate(180deg);
+}
+
+.c-prevArrow::before {
+    position:absolute;
+    content: "";
+    width:20px;
+    height:20px;
+    border-right: 0.7px solid utility.$black;
+    border-top: 0.7px solid utility.$black;
+    top:110px;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    transform:rotate(45deg);
+}
+
+.c-nextArrow::before {
+    position:absolute;
+    content: "";
+    width:20px;
+    height:20px;
+    border-right: 0.7px solid utility.$black;
+    border-top: 0.7px solid utility.$black;
+    top:-110px;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    transform:rotate(45deg);
+}
