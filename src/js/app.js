@@ -5,11 +5,10 @@ $(function() {
   console.log('環境構築完了');
 })
 
-  $('.p-main__recruit__container__wrapper').slick({
+  $('.c-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    appendArrows: $('.c-arrowBox'),
-    prevArrow: '<div class="c-slideArrow c-prevArrow"></div>',
-    nextArrow: '<div class="c-slideArrow c-nextArrow"></div>',
+    prevArrow: '<button class="c-prev-arrow"></button>',
+    nextArrow: '<button class="c-next-arrow"></button>',
   });
