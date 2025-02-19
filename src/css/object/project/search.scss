@@ -60,9 +60,19 @@
         align-items: center;
         gap: 15px;
         @include utility.sp {
-          gap: 0.1rem;
+          display: block;
         }
-        
+
+        &__selectBox {
+          margin-left: auto;
+          margin-right: auto;
+          display: flex;
+          @include utility.sp {
+            width: 3.2rem;
+            gap: 10px;
+          }
+        }
+
         &__inner { 
         
           &__detail {
@@ -99,6 +109,15 @@
         background-color: utility.$buttonPink;
         gap: 4px;
         background-repeat: no-repeat;
+        @include utility.sp {
+          font-size: 0.18rem;
+          margin-top: 0.19rem;
+          margin-left: auto;
+          margin-right: auto;
+          width: 1.7rem;
+          height: 0.4rem;
+          gap: 0.15rem;
+        }
         
         &:before {
           content: "";
@@ -106,15 +125,12 @@
           width: 30px;
           height: 30px;
           background-image: url("../img/icon/icon-lens-white.png");
-        }
-        
-        @include utility.sp {
-          margin-top: 0.19rem;
-          margin-left: auto;
-          margin-right: auto;
-          width: 1.6rem;
-          height: 0.4rem;
-          gap: 0.15rem;
+          background-repeat: no-repeat;
+          position: relative;
+          @include utility.sp {
+            height: 50%;
+            background-size: contain;
+          }
         }
       }
     }
