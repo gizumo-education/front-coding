@@ -17,6 +17,7 @@
     width: 1280px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 20px;
     position: relative;
     @include utility.tab {
       width: 95%;
@@ -30,7 +31,6 @@
       font-weight: utility.$regular;
       margin-left: 20px;
       @include utility.sp {
-        width: 4rem;
         font-weight: utility.$bold;
         text-align: center;
       }
