@@ -128,6 +128,7 @@
       margin-left: auto;
       margin-right: auto;
       @include utility.sp {
+        margin-top: 0.5rem;
         width: 3rem;
       }
     }
