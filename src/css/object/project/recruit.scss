@@ -3,35 +3,56 @@
 
 .p-main__recruit {
   width: 100%;
-  height: 636px;
   background-color: utility.$bgRecruit;
   margin-top: 60px;
   padding-top: 60px;
-
+  padding-bottom: 60px;
+  @include utility.sp {
+    margin-top: 0.3rem;
+  }
   
   &__container {
     width: 1180px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    @include utility.tab {
+      width: 90%;
+    }
+    @include utility.sp {
+      width: 90%;
+    }
     
     &__heading {
       font-size: 25px;
       font-weight: utility.$regular;
+      @include utility.sp {
+        font-weight: utility.$bold;
+        text-align: center;
+      }
     }
     
-    &__arowWrap {
+    &__arrowWrap {
       width: 100%;
-      height: 100%;
+      height: 250px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: absolute;
-      top: -40px;
+      @include utility.sp {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 2.7rem;
+        top: 1.5rem;
+      }
 
       &__arrowLeft{
         position: relative;
+        @include utility.sp {
+          left: 2%;
+        }
 
         &::before{
           content: "";
@@ -43,6 +64,10 @@
           top: 50%;
           left: 50%;
           transform: translate(-30%, -50%)rotate(-45deg);
+          @include utility.sp {
+            width: 0.12rem;
+            height: 0.12rem;
+          }
         }
 
         &__arrowBtn {
@@ -52,6 +77,10 @@
           border-radius: 50%;
           transition: .2s;
           border: none;
+          @include utility.sp {
+            width: 0.42rem;
+            height: 0.42rem;
+          }
         }
       }
 
@@ -68,6 +97,10 @@
           top: 50%;
           left: 50%;
           transform: translate(-70%, -50%)rotate(135deg);
+          @include utility.sp {
+            width: 0.12rem;
+            height: 0.12rem;
+          }
         }
         
         &__arrowBtn{
@@ -77,6 +110,10 @@
           border-radius: 50%;
           transition: .2s;
           border: none;
+          @include utility.sp {
+            width: 0.42rem;
+            height: 0.42rem;
+          }
         }
       }
     }
@@ -87,10 +124,13 @@
       color: utility.$white;
       background-color: utility.$buttonPink;
       font-weight: utility.$bold;
-      margin-top: 59px;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      margin-top: 67px;
+      margin-left: auto;
+      margin-right: auto;
+      @include utility.sp {
+        margin-top: 0.5rem;
+        width: 3rem;
+      }
     }
 
     &__wrapper {
@@ -98,7 +138,10 @@
       justify-content: center;
       gap: 20px;
       padding-top: 25px;
-
+      @include utility.sp {
+        width: fit-content;
+        justify-content: center;
+      }
       
       &__inner {
 
@@ -113,10 +156,18 @@
           font-weight: utility.$regular;
           line-height: 22px;
           margin-top: 8px;
+          @include utility.sp {
+            font-weight: utility.$bold;
+            font-size: 0.15rem;
+            line-height: 1.2;
+          }
         }
         
         &__about {
           margin-top: 3px;
+          @include utility.sp {
+            margin-top: 0.1rem;
+          }
 
           &__li{
             list-style: none;
