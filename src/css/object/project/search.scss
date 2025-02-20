@@ -16,6 +16,7 @@
   @include utility.sp {
     width: 3.7rem;
     height: 2.4rem;
+    margin-top: 0.3rem;
   }
 
   &__container {
@@ -63,16 +64,7 @@
           display: block;
         }
 
-        &__selectBox {
-          margin-left: auto;
-          margin-right: auto;
-          display: flex;
-          @include utility.sp {
-            width: 3.2rem;
-            gap: 10px;
-          }
-        }
-
+        
         &__inner { 
         
           &__detail {
@@ -100,7 +92,7 @@
           }
         }
       }
-
+      
       &__button {
         gap: 4px;
         width: 140px;
@@ -116,7 +108,7 @@
           margin-right: auto;
           width: 1.7rem;
           height: 0.4rem;
-          gap: 0.15rem;
+          gap: 0;
         }
         
         &:before {
@@ -133,6 +125,16 @@
           }
         }
       }
+    }
+  }
+  &__selectBox {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 15px;
+    @include utility.sp {
+      width: 3.2rem;
+      gap: 10px;
     }
   }
 }
