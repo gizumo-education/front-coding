@@ -1,0 +1,16 @@
+
+.c-hamMenu {
+  position: fixed;
+  top: -100%; 
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fafad2;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: top 0.3s ease;
+}
+
+.c-hamMenu.open {
+  top: 0; 
+}

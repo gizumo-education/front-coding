@@ -16,4 +16,9 @@ $(function() {
     prevArrow: '<button class="c-prev-arrow"></button>',
     nextArrow: '<button class="c-next-arrow"></button>',
   });
+
+  $('.l-header__sp-items').click(function() {
+  $('.c-hamMenu').toggleClass('open');
+  $(this).toggleClass('active');
+  });
 })
