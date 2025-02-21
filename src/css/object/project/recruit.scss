@@ -16,7 +16,6 @@
     width: 1280px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 20px;
     position: relative;
     @include utility.tab {
       width: 90%;
@@ -32,92 +31,6 @@
       @include utility.sp {
         font-weight: utility.$bold;
         text-align: center;
-      }
-    }
-    
-    &__arrowWrap {
-      width: 100%;
-      height: 250px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: absolute;
-      @include utility.sp {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        gap: 2.7rem;
-        top: 1.5rem;
-      }
-
-      &__arrowLeft{
-        position: relative;
-        @include utility.sp {
-          left: 2%;
-        }
-
-        &::before{
-          content: "";
-          width: 20px;
-          height: 20px;
-          border-top: 1px solid utility.$black;
-          border-left: 1px solid utility.$black;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-30%, -50%)rotate(-45deg);
-          @include utility.sp {
-            width: 0.12rem;
-            height: 0.12rem;
-          }
-        }
-
-        &__arrowBtn {
-          width: 60px;
-          height: 60px;
-          background-color: rgba(utility.$white, 0.7);
-          border-radius: 50%;
-          transition: .2s;
-          border: none;
-          @include utility.sp {
-            width: 0.42rem;
-            height: 0.42rem;
-          }
-        }
-      }
-
-      &__arrowRight{
-        position: relative;
-
-        &::before {
-          content: "";
-          width: 20px;
-          height: 20px;
-          border-top: 1px solid utility.$black;
-          border-left: 1px solid utility.$black;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-70%, -50%)rotate(135deg);
-          @include utility.sp {
-            width: 0.12rem;
-            height: 0.12rem;
-          }
-        }
-        
-        &__arrowBtn{
-          width: 60px;
-          height: 60px;
-          background-color: rgba(utility.$white, 0.7);
-          border-radius: 50%;
-          transition: .2s;
-          border: none;
-          @include utility.sp {
-            width: 0.42rem;
-            height: 0.42rem;
-          }
-        }
       }
     }
 
