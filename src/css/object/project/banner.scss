@@ -1,29 +1,17 @@
 @use '../../object/utility/utility.scss';
 .p-main__banner {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  @include utility.tab {
-    height: 3.4rem;
-  }
-  @include utility.sp {
-    width: 4.0rem;
-    height: 0.75rem;
-  }
+  background-color: utility.$black;
 
   &__container {
-    background-color: utility.$black;
     position: relative;
 
-    & > img {
+    &__img {
       opacity: 0.5;
     }
     
-    &__text {
+    &__texts {
       text-align: center;
-      line-height: 30px;
+      line-height: 50px;
       font-size: 25px;
       font-weight: utility.$bold;
       color: utility.$white;
@@ -35,6 +23,7 @@
       @include utility.sp {
         font-size: 0.14rem;
         font-weight: utility.$regular;
+        line-height: 0.2rem;
       }
     }
   }

@@ -7,7 +7,7 @@
     margin-right: auto;
   }
 
-  & > h1 {
+  &__heading {
     margin-top: 105px;
     font-size: 25px;
     font-weight: utility.$bold;
@@ -79,20 +79,20 @@
             width: 3.7rem;
           }
   
-          & > h2 {
+          &__h2 {
             font-size: 24px;
             font-weight: utility.$bold;
             @include utility.sp {
-              font-size: 0.21rem;
+              font-size: 0.2rem;
             }
           }
           
-          & > p {
+          &__p {
             font-size: 16px;
             margin-top: 45px;
             line-height: 1.5em;
             @include utility.sp {
-              font-size: 0.14rem;
+              font-size: 0.15rem;
             }
           }
         }
