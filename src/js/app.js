@@ -1,5 +1,45 @@
 import $ from "jquery";
+import "slick-carousel";
 
 $(function() {
-  console.log('環境構築完了');
+
+  $('.c-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+      }
+    }],
+    prevArrow: '<button class="c-prev-arrow"></button>',
+    nextArrow: '<button class="c-next-arrow"></button>',
+  });
+
+  $('.l-header__hamburger').click(function() {
+    $('.l-header__hamburger').toggleClass('active');
+    $('.c-hamMenu').toggleClass('open');
+
+    if ($("body").css("overflow") === "hidden") {
+      $("body").css({ height: "", overflow: "" });
+    } else {
+      $("body").css({ height: "100%", overflow: "hidden" });
+    }
+  });
+
+  $('.c-hamMenu__text').click(function() {
+    $('.l-header__hamburger').removeClass('active');
+    $('.c-hamMenu').removeClass('open');
+  
+    if ($("body").css("overflow") === "hidden") {
+      $("body").css({ height: "", overflow: "" });
+    } else {
+      $("body").css({ height: "100%", overflow: "hidden" });
+    }
+
+    const adjust = $( 'header' ).outerHeight();
+    const id = $(this).attr('href');
+    const position = $(id).offset().top;
+    $('html, body').animate({'scrollTop': position-adjust }, 500);
+  });
 })

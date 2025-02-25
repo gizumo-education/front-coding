@@ -8,6 +8,8 @@
   <meta name="description" content="ギズジョブは完全無料の求職者向け求人サービスです">
   <meta name="keyword" content="ギズジョブ, ギズジョブ医療事務, 医療事務求人, 医療事務">
   <title>医療事務求人を探すならギズジョブ</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 </head>
 
 <body>
@@ -32,11 +34,18 @@
           <span></span>
         </button>
       </div>
+      <ul class="c-hamMenu c-sp">
+        <li class="c-hamMenu__li"><a class="c-hamMenu__text" href="#keyVisual">トップ</a></li>
+        <li class="c-hamMenu__li"><a class="c-hamMenu__text" href="#recruit">新着求人</a></li>
+        <li class="c-hamMenu__li"><a class="c-hamMenu__text" href="#features">4つの特徴</a></li>
+        <li class="c-hamMenu__li"><a class="c-hamMenu__text" href="#flow">転職までの流れ</a></li>
+        <li class="c-hamMenu__li"><a class="c-hamMenu__text" href="#contents">転職お役立ちコンテンツ</a></li>
+      </ul>
     </nav>
   </header>
 
   <main class="p-main">
-    <section class="p-main__keyVisual">
+    <section class="p-main__keyVisual" id="keyVisual">
       <img src="img/picture/key-visual-sp.png" alt="" class="p-main__keyVisual__img c-sp">
       <div class="p-main__keyVisual__inner">
         <h1 class="p-main__keyVisual__inner__textImages">
@@ -103,19 +112,107 @@
       </div>
     </section>
 
-    <section class="p-main__recruit">
+    <section class="p-main__recruit" id="recruit">
       <div class="p-main__recruit__container">
         <h2 class="p-main__recruit__container__heading">新着求人</h2>
-        <div class="p-main__recruit__container__arrowWrap">
-          <div class="p-main__recruit__container__arrowWrap__arrowLeft">
-            <button class="p-main__recruit__container__arrowWrap__arrowLeft__arrowBtn" type="button"></button>
-          </div>
-          <div class="p-main__recruit__container__arrowWrap__arrowRight">
-            <button class="p-main__recruit__container__arrowWrap__arrowRight__arrowBtn" type="button"></button>
-          </div>
-        </div>
-        <div class="p-main__recruit__container__wrapper">
+        <div class="p-main__recruit__container__wrapper c-slider">
           <div class="p-main__recruit__container__wrapper__inner">
+            <div class="p-main__recruit__container__wrapper__inner__img">
+              <img class="p-main__recruit__container__wrapper__inner__img__detail"
+                src="img/picture/recruit-officework.jpg" alt="" width="560" height="400">
+            </div>
+            <h3 class="p-main__recruit__container__wrapper__inner__title">
+              平日・夕方までの勤務!伊勢市の伊勢赤<br class="c-pc">
+              十字病院で<br class="c-sp">医療事務求人
+            </h3>
+            <ul class="p-main__recruit__container__wrapper__inner__about">
+              <li class="p-main__recruit__container__wrapper__inner__about__li">
+                <h3 class="p-main__recruit__container__wrapper__inner__about__li__h3">給与</h3>
+                <p class="p-main__recruit__container__wrapper__inner__about__li__p">月給 148,000円～</p>
+              </li>
+              <li class="p-main__recruit__container__wrapper__inner__about__li">
+                <h3 class="p-main__recruit__container__wrapper__inner__about__li__h3">所在地</h3>
+                <p class="p-main__recruit__container__wrapper__inner__about__li__p">三重県伊勢市</p>
+              </li>
+              <li class="p-main__recruit__container__wrapper__inner__about__li">
+                <h3 class="p-main__recruit__container__wrapper__inner__about__li__h3">最寄り駅</h3>
+                <p class="p-main__recruit__container__wrapper__inner__about__li__p">伊勢市駅 徒歩15分</p>
+              </li>
+            </ul>
+          </div>
+          <div class="p-main__recruit__container__wrapper__inner c-pc">
+            <div class="p-main__recruit__container__wrapper__inner__img">
+              <img class="p-main__recruit__container__wrapper__inner__img__detail" src="img/picture/recruit-nurse.jpg"
+                alt="" width="560" height="400">
+            </div>
+            <h3 class="p-main__recruit__container__wrapper__inner__title">
+              平日・夕方までの勤務!伊勢市の伊勢赤<br class="c-pc">
+              十字病院で<br class="c-sp">医療事務求人
+            </h3>
+            <ul class="p-main__recruit__container__wrapper__inner__about">
+              <li class="p-main__recruit__container__wrapper__inner__about__li">
+                <h3 class="p-main__recruit__container__wrapper__inner__about__li__h3">給与</h3>
+                <p class="p-main__recruit__container__wrapper__inner__about__li__p">月給 148,000円～</p>
+              </li>
+              <li class="p-main__recruit__container__wrapper__inner__about__li">
+                <h3 class="p-main__recruit__container__wrapper__inner__about__li__h3">所在地</h3>
+                <p class="p-main__recruit__container__wrapper__inner__about__li__p">三重県伊勢市</p>
+              </li>
+              <li class="p-main__recruit__container__wrapper__inner__about__li">
+                <h3 class="p-main__recruit__container__wrapper__inner__about__li__h3">最寄り駅</h3>
+                <p class="p-main__recruit__container__wrapper__inner__about__li__p">伊勢市駅 徒歩15分</p>
+              </li>
+            </ul>
+          </div>
+          <div class="p-main__recruit__container__wrapper__inner c-pc">
+            <div class="p-main__recruit__container__wrapper__inner__img">
+              <img class="p-main__recruit__container__wrapper__inner__img__detail" src="img/picture/recruit-doctor.jpg"
+                alt="" width="560" height="400">
+            </div>
+            <h3 class="p-main__recruit__container__wrapper__inner__title">
+              平日・夕方までの勤務!伊勢市の伊勢赤<br class="c-pc">
+              十字病院で<br class="c-sp">医療事務求人
+            </h3>
+            <ul class="p-main__recruit__container__wrapper__inner__about">
+              <li class="p-main__recruit__container__wrapper__inner__about__li">
+                <h3 class="p-main__recruit__container__wrapper__inner__about__li__h3">給与</h3>
+                <p class="p-main__recruit__container__wrapper__inner__about__li__p">月給 148,000円～</p>
+              </li>
+              <li class="p-main__recruit__container__wrapper__inner__about__li">
+                <h3 class="p-main__recruit__container__wrapper__inner__about__li__h3">所在地</h3>
+                <p class="p-main__recruit__container__wrapper__inner__about__li__p">三重県伊勢市</p>
+              </li>
+              <li class="p-main__recruit__container__wrapper__inner__about__li">
+                <h3 class="p-main__recruit__container__wrapper__inner__about__li__h3">最寄り駅</h3>
+                <p class="p-main__recruit__container__wrapper__inner__about__li__p">伊勢市駅 徒歩15分</p>
+              </li>
+            </ul>
+          </div>
+          <div class="p-main__recruit__container__wrapper__inner c-pc">
+            <div class="p-main__recruit__container__wrapper__inner__img">
+              <img class="p-main__recruit__container__wrapper__inner__img__detail"
+                src="img/picture/recruit-reception.jpg" alt="" width="560" height="400">
+            </div>
+            <h3 class="p-main__recruit__container__wrapper__inner__title">
+              平日・夕方までの勤務!伊勢市の伊勢赤<br class="c-pc">
+              十字病院で<br class="c-sp">医療事務求人
+            </h3>
+            <ul class="p-main__recruit__container__wrapper__inner__about">
+              <li class="p-main__recruit__container__wrapper__inner__about__li">
+                <h3 class="p-main__recruit__container__wrapper__inner__about__li__h3">給与</h3>
+                <p class="p-main__recruit__container__wrapper__inner__about__li__p">月給 148,000円～</p>
+              </li>
+              <li class="p-main__recruit__container__wrapper__inner__about__li">
+                <h3 class="p-main__recruit__container__wrapper__inner__about__li__h3">所在地</h3>
+                <p class="p-main__recruit__container__wrapper__inner__about__li__p">三重県伊勢市</p>
+              </li>
+              <li class="p-main__recruit__container__wrapper__inner__about__li">
+                <h3 class="p-main__recruit__container__wrapper__inner__about__li__h3">最寄り駅</h3>
+                <p class="p-main__recruit__container__wrapper__inner__about__li__p">伊勢市駅 徒歩15分</p>
+              </li>
+            </ul>
+          </div>
+          <div class="p-main__recruit__container__wrapper__inner c-pc">
             <div class="p-main__recruit__container__wrapper__inner__img">
               <img class="p-main__recruit__container__wrapper__inner__img__detail"
                 src="img/picture/recruit-officework.jpg" alt="" width="560" height="400">
@@ -216,6 +313,7 @@
       </div>
     </section>
 
+
     <section class="p-main__banner">
       <div class="p-main__banner__container">
         <img class="p-main__banner__container__img" src="img/picture/banner.jpg" alt="" width="3200" height="600">
@@ -226,7 +324,7 @@
       </div>
     </section>
 
-    <section class="p-main__features">
+    <section class="p-main__features" id="features">
       <h2 class="p-main__features__heading">ギズジョブの4つの特徴</h2>
       <div class="p-main__features__container">
         <div class="p-main__features__container__wrapper">
@@ -256,7 +354,7 @@
       </div>
     </section>
 
-    <section class="p-main__flow">
+    <section class="p-main__flow" id="flow">
       <h2 class="p-main__flow__heading">転職までの流れ<h2>
           <div class="p-main__flow__container">
             <div class="p-main__flow__container__inner">
@@ -294,7 +392,7 @@
           </div>
     </section>
 
-    <section class="p-main__contents">
+    <section class="p-main__contents" id="contents">
       <h2 class="p-main__contents__heading">転職お役立ちコンテンツ</h2>
       <div class="p-main__contents__container">
         <div class="p-main__contents__container__inner">
