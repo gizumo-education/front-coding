@@ -1,6 +1,11 @@
 @use '../../object/utility/utility.scss';
 .p-main__banner {
+  display: block;
   background-color: utility.$black;
+  @include utility.sp {
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   &__container {
     position: relative;
