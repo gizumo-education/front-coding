@@ -17,8 +17,14 @@ $(function() {
     nextArrow: '<button class="c-next-arrow"></button>',
   });
 
-  $('.l-header__sp-items').click(function() {
+  $('.l-header__hamburger').click(function() {
+    $('.l-header__hamburger').toggleClass('active');
   $('.c-hamMenu').toggleClass('open');
-  $(this).toggleClass('active');
+
+  if ($("body").css("overflow") === "hidden") {
+    $("body").css({ height: "", overflow: "" });
+  } else {
+    $("body").css({ height: "100%", overflow: "hidden" });
+  }
   });
 })
