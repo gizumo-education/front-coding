@@ -29,5 +29,6 @@ $(function() {
 
   $('.c-hamMenu__text').click(function() {
     $('.c-hamMenu').removeClass('open');
+    $('.l-header__hamburger').removeClass('active');
   });
 })
