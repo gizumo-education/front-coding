@@ -36,5 +36,10 @@ $(function() {
     } else {
       $("body").css({ height: "100%", overflow: "hidden" });
     }
+
+    var adjust = $( 'header' ).outerHeight();
+    var id = $(this).attr('href');
+    var position = $(id).offset().top;
+    $('html, body').animate({'scrollTop': position-adjust }, 500);
   });
 })
