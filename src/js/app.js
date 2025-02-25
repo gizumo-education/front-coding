@@ -17,7 +17,7 @@ $(function() {
   });
 
   $('.l-header__hamburger').click(function() {
-    $('.l-header__hamburger').toggleClass('active');
+  $('.l-header__hamburger').toggleClass('active');
   $('.c-hamMenu').toggleClass('open');
 
   if ($("body").css("overflow") === "hidden") {
@@ -25,5 +25,9 @@ $(function() {
   } else {
     $("body").css({ height: "100%", overflow: "hidden" });
   }
+  });
+
+  $('.c-hamMenu__text').click(function() {
+    $('.c-hamMenu').removeClass('open');
   });
 })
