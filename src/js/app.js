@@ -17,18 +17,24 @@ $(function() {
   });
 
   $('.l-header__hamburger').click(function() {
-  $('.l-header__hamburger').toggleClass('active');
-  $('.c-hamMenu').toggleClass('open');
+    $('.l-header__hamburger').toggleClass('active');
+    $('.c-hamMenu').toggleClass('open');
 
-  if ($("body").css("overflow") === "hidden") {
-    $("body").css({ height: "", overflow: "" });
-  } else {
-    $("body").css({ height: "100%", overflow: "hidden" });
-  }
+    if ($("body").css("overflow") === "hidden") {
+      $("body").css({ height: "", overflow: "" });
+    } else {
+      $("body").css({ height: "100%", overflow: "hidden" });
+    }
   });
 
   $('.c-hamMenu__text').click(function() {
-    $('.c-hamMenu').removeClass('open');
     $('.l-header__hamburger').removeClass('active');
+    $('.c-hamMenu').removeClass('open');
+  
+    if ($("body").css("overflow") === "hidden") {
+      $("body").css({ height: "", overflow: "" });
+    } else {
+      $("body").css({ height: "100%", overflow: "hidden" });
+    }
   });
 })
