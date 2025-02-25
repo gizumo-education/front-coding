@@ -1,16 +1,33 @@
+@use '../../object/utility/utility.scss';
 
 .c-hamMenu {
   position: fixed;
-  top: -100%; 
-  right: 0;
+  top: calc(0.32rem + 0.38rem) ;
+  right: -100%;
   width: 100%;
   height: 100vh;
-  background-color: #fafad2;
+  background-color: rgba(utility.$black, 0.7);
   padding: 20px;
   box-sizing: border-box;
-  transition: top 0.3s ease;
+  transition: right 0.3s ease;
+  &__text {
+    padding-left: 10%;
+    font-size: 22px;
+    color: utility.$white;
+  }
+
+  &__li:first-child {
+    margin-top: 30px;
+  }
+
+  &__li:not(:first-child) {
+    margin-top: 30px;
+  }
+  &.open {
+    right: 0; 
+  }
+
 }
 
-.c-hamMenu.open {
-  top: 0; 
-}
+
+
