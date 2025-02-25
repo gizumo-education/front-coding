@@ -37,9 +37,9 @@ $(function() {
       $("body").css({ height: "100%", overflow: "hidden" });
     }
 
-    var adjust = $( 'header' ).outerHeight();
-    var id = $(this).attr('href');
-    var position = $(id).offset().top;
+    const adjust = $( 'header' ).outerHeight();
+    const id = $(this).attr('href');
+    const position = $(id).offset().top;
     $('html, body').animate({'scrollTop': position-adjust }, 500);
   });
 })
