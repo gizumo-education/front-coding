@@ -1,2 +1,67 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/variables' as var;
+@use '../../foundation/mixins' as mix;
 // ページ上部のキービジュアルに関するスタイル
+#key {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-key__backColor {
+  background-color: var.$keyColor;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-key {
+  max-width: 1262px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background-image: url("../img/picture/main_girl.png");
+  background-size: cover;
+  
+
+  &__text {
+    gap: 40px;
+    margin-left: 32%;
+    @include mix.display(column);
+
+    &__contents {
+      @include mix.display(column);
+      gap: 40px;
+    }
+  }
+
+  &__count {
+    width: 100%;
+    max-width: 391px;
+    height: 69px;
+    text-align: center;
+    background-color: var.$white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var.$keyTextColor;
+    border-radius: 15px;
+
+    p {
+      font-size: 20px;
+      font-weight: var.$regular;
+      color: var.$keyTextColor;
+      margin-top: 10px;
+    }
+
+    span {
+      font-size: 40px;
+      font-weight: var.$bold;
+    }
+  }
+}
+

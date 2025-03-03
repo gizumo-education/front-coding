@@ -1,0 +1,109 @@
+@use '../../foundation/variables' as var;
+@use '../../foundation/mixins' as mix;
+
+.p-recruit {
+  width: 100%;
+  background-color: var.$bgLightBlue;
+  @include mix.display(column);
+
+  p {
+    width: 100px;
+    font-size: 25px;
+    font-weight: var.$regular;
+  }
+
+  &__container {
+    @include mix.display(row);
+    gap: 20px;
+  }
+
+  &__box {
+    height: 636px;
+    @include mix.display(column);
+    gap: 25px;
+
+    &--new {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+    }
+  }
+
+  &__contents {
+    width: 100%;
+    max-width: 280px;
+    @include mix.display(column);
+    gap: 8px;
+
+    p {
+      font-size: 16px;
+      width: 278px;
+    }
+
+    &--text {
+      font-size: 16px;
+      width: 278px;
+      line-height: 1.5;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      max-width: 280px;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 4px;
+
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      box-sizing: border-box;
+      justify-content: center;
+      gap: 10px;
+      height: 21px;
+
+      p {
+        display: flex;
+        box-sizing: border-box;
+        font-size: 14px;
+        align-items: center;
+      }
+
+      p:nth-child(1) {
+        max-width: 60px;
+        background-color: var.$recruitTableColor;
+        @include mix.display(row);
+      }
+    }
+  }
+
+  &__more {
+    width: 100%;
+    max-width: 360px;
+    background-color: var.$searchColor;
+    border-radius: 30px;
+    height: 60px;
+    margin-top: 40px;
+    @include mix.display(row);
+    
+
+    &:hover {
+      @include mix.hover();
+    }
+
+    p {
+      width: 100%;
+      font-size: 18px;
+      font-weight: var.$bold;
+      text-align: center;
+      color: var.$white;
+    }
+  }
+}
