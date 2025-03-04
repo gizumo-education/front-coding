@@ -25,12 +25,12 @@
     flex-direction: column;
     gap: 20px;
 
-    p:nth-child(1) {
+    h2 {
       font-size: 25px;
       font-weight: var.$bold;
     }
 
-    p:nth-child(2) {
+    p {
       font-size: 20px;
       margin:0 0 10px 0;
       font-weight: var.$regular;
@@ -41,28 +41,7 @@
     @include mix.display(row);
     gap: 10px;
     position: relative;
-
-    a {
-      max-width: 140px;
-      width: 100%;
-      height: 60px;
-      font-size: 18px;
-      font-weight: var.$bold;
-      background-color: var.$searchColor;
-      color: var.$white;
-      border-radius: 30px;
-      gap: 1px;
-      @include mix.display(row);
-
-      a:hover {
-        @include mix.hover();
-      }
-      
-      img {
-        width: 100%;
-        max-width: 29.98px;
-      }
-    }
+    
     input {
       width: 100%;
       max-width: 300px;
@@ -72,6 +51,26 @@
       border: 1px solid var.$searchColor;
     }
   }
+
+  &--btn {
+    max-width: 140px;
+      width: 100%;
+      height: 60px;
+      font-size: 18px;
+      font-weight: var.$bold;
+      background-color: var.$searchColor;
+      color: var.$white;
+      border-radius: 30px;
+      gap: 1px;
+      @include mix.display(row);
+      border: none;
+
+      img {
+        width: 100%;
+        max-width: 29.98px;
+      }
+  }
+
 
   &__select {
     position: relative;
@@ -86,7 +85,7 @@
       border-top: 12px solid var.$searchColor;
       border-bottom: 0;
       cursor: pointer;
-      pointer-events: auto;
+      pointer-events: none;
     }
 
     &__child {
@@ -99,4 +98,4 @@
       border: 1px solid var.$searchColor;
     }
   }
-}
+  }
