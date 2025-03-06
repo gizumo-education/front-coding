@@ -1,0 +1,52 @@
+@use '../../foundation/variables' as var;
+@use '../../foundation/mixins' as mix;
+
+.p-feature {
+  width: 100%;
+  max-width: 1600px;
+  @include mix.display(column);
+  margin-top: 106px;
+
+  &__container {
+    @include mix.display(column);
+    width: 100%;
+    max-width: 1180px;
+    height: 478px;
+    gap: 53px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: var.$bold;
+    }
+
+    &__all {
+      @include mix.display(row);
+      flex-wrap: wrap;
+      gap: 40px;
+      width: 100%;
+
+      &__contents {
+        width: 100%;
+        max-width: 570px;
+        height: 180px;
+        @include mix.display(column);
+        background-color: var.$flowColor;
+        gap: 36px;
+        border-radius: 10px;
+      }
+    }
+
+    &__contents--title {
+      font-size: 24px;
+      font-weight: var.$bold;
+      color: var.$flowFontColor;
+    }
+
+    &__contents--text {
+      font-size: 14px;
+      font-weight: var.$regular;
+      line-height: 1.5;
+      text-align: center;
+    }
+  }
+}

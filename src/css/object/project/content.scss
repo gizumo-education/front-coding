@@ -1,0 +1,82 @@
+@use '../../foundation/variables' as var;
+@use '../../foundation/mixins' as mix;
+
+.p-content {
+  width: 100%;
+  max-width: 1600px;
+  @include mix.display(row);
+  margin-top: 106px;
+
+  &__container {
+    @include mix.display(column);
+    gap: 50px;
+
+    h2 {
+      font-size: 25px;
+      font-weight: var.$bold;
+    }
+
+    &__contents {
+      @include mix.display(row);
+      gap: 20px;
+
+      &--box {
+        width: 100%;
+        max-width: 380px;
+        display: inline-block;
+        position: relative;
+        background-color: var.$black;
+        border-radius: 10px;
+
+        h3 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -200%);
+          font-size: 25px;
+          font-weight: var.$bold;
+          color: var.$white;
+          text-align: center;
+          line-height: auto;
+          max-width: 380px;
+          width: 100%;
+        }
+
+        p {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,50%);
+          font-size: 16px;
+          font-weight: var.$regular;
+          text-align: center;
+          color: var.$white;
+          line-height: 1.5;
+        }
+      }
+
+      &--img {
+        width: 100%;
+        max-width: 380px;
+        width: 100%;
+        opacity: 0.5;
+        display: block;
+      }
+
+
+      a {
+        width: 420px;
+        height: 60px;
+        @include mix.display(row);
+        font-size: 18px;
+        font-weight: var.$bold;
+        background-color: var.$flowFontColor;
+        color: var.$white;
+        border-radius: 50px;
+        margin-top: 30px;
+        margin-bottom: 80px;
+      }
+    }
+  }
+}

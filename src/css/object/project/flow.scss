@@ -1,0 +1,118 @@
+@use '../../foundation/variables' as var;
+@use '../../foundation/mixins' as mix;
+
+.p-flow {
+  margin-top: 105px;
+  width: 100%;
+  max-width: 1600px;
+  @include mix.display(row);
+
+  &__container {
+    @include mix.display(column);
+    width: 100%;
+    max-width: 1180px;
+    height: 435px;
+    gap: 60px;
+
+    h2 {
+      font-size: 25px;
+      font-weight: var.$bold;
+    }
+
+    &__all {
+      @include mix.display(row);
+      gap: 20px;
+
+      &__contents {
+        // @include mix.display(column);
+        width: 280px;
+        height: 360px;
+        // gap: 20px;
+        border: 2.27px solid var.$flowFontColor;
+        // justify-content: flex-start;
+        border-radius: 15px;
+        position: relative;
+      }
+
+      &__contents:not(:last-child)::after {
+        width: 100%;
+        max-width: 20px;
+        content: "";
+        position: absolute;
+        top: 45%;
+        right: -8%;
+        border-top: 20px solid transparent;
+        border-left: 20px solid var.$flowFontColor;
+        border-bottom: 20px solid transparent;
+      }
+    }
+  }
+
+  &__contents__img {
+    width: 100%;
+    // @include mix.display(row);
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    // padding: 10px 0 0 10px;
+    margin: 10px 0 0 10px;
+  }
+
+  &__contents__title {
+    width: 280px;
+    // @include mix.display(column);
+    // gap: 20px;
+    // flex-wrap: wrap;
+    text-align: center;
+
+    h3 {
+      // position: absolute;
+      font-size: 24px;
+      font-weight: var.$bold;
+      // height: 60px;
+      text-align: center;
+      // margin-top: 20px;
+    }
+
+    &--one {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    &--two {
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    &--three {
+      width: 100%;
+      margin-top: 35px;
+    }
+
+    &--four {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    p {
+      // position: absolute;
+      width: 100%;
+      max-width: 237px;
+      text-align: left;
+      font-size: 14px;
+      font-weight: var.$regular;
+      line-height: 1.5;
+      margin-left: 20px;
+      // text-wrap: 237px;
+    }
+
+    &__text--one {
+      // width: 237px;
+      margin-top: 18px;
+    }
+
+    &__text--two {
+      // width: 100%;
+      margin-top: 30px;
+    }
+  }
+}
