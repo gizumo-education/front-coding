@@ -24,27 +24,22 @@
         width: 380px;
         height: 240px;
         border-radius: 10px;
-        background-color: var.$black;
-        position: relative;
-
+        background-image: url("../img/picture/content__manual.jpg");
+        
         &--img {
+          background-color: rgb(0, 0, 0, 0.5);
           width: 380px;
           height: 240px;
-          opacity: .5;
           border-radius: 10px;
-          background-image: url("../img/picture/content__manual.jpg");
         }
 
         &--text {
           width: 100%;
-          position: absolute;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -70%);
+          padding: 8px 0 0 10px;
 
           h3 {
             font-size: 25px;
@@ -70,26 +65,21 @@
         width: 380px;
         height: 240px;
         border-radius: 10px;
-        background-color: var.$black;
-        position: relative;
-
+        border-radius: 10px;background-image: url("../img/picture/content_trivia.jpg");
+        
         &--img {
           width: 380px;
           height: 240px;
-          opacity: .5;
-          border-radius: 10px;background-image: url("../img/picture/content_trivia.jpg");
+          background-color: rgb(0, 0, 0, 0.5);
         }
 
         &--text {
           width: 100%;
-          position: absolute;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -70%);
+          padding: 8px 0 0 10px;
 
           h3 {
             font-size: 25px;
