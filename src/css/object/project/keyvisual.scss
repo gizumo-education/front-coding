@@ -1,2 +1,27 @@
 @use '../../object/utility/utility.scss';
+
 // ページ上部のキービジュアルに関するスタイル
+.p-No1_icon{
+  margin-left: 830px;
+}
+.p-top_woman__img{
+  width: 1600px;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+.p-top_title{
+  margin-left: 607px;
+}
+
+.p-top_jobOpenings{
+  color: utility.$cyan;
+  font-size: 20px;
+  background-color: utility.$white;
+  width: 391px;
+  height: 69px;
+  margin-left: 809.5px;
+  border: solid 2.3px utility.$cyan;
+  text-align: center;
+}
+
