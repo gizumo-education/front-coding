@@ -68,9 +68,10 @@
         border-radius: 10px;background-image: url("../img/picture/content_trivia.jpg");
         
         &--img {
-          width: 380px;
-          height: 240px;
+          width: 100%;
+          height: 100%;
           background-color: rgb(0, 0, 0, 0.5);
+          border-radius: 10px;
         }
 
         &--text {
