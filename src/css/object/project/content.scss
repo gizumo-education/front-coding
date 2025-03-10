@@ -1,0 +1,119 @@
+@use '../../foundation/variables' as var;
+@use '../../foundation/mixins' as mix;
+
+.p-content {
+  width: 100%;
+  max-width: 1600px;
+  @include mix.display(row);
+  margin-top: 106px;
+
+  &__container {
+    @include mix.display(column);
+    gap: 50px;
+
+    h2 {
+      font-size: 25px;
+      font-weight: var.$bold;
+    }
+
+    &__contents {
+      @include mix.display(row);
+      gap: 20px;
+
+      &__box {
+        width: 380px;
+        height: 240px;
+        border-radius: 10px;
+        background-image: url("../img/picture/content__manual.jpg");
+        
+        &--img {
+          background-color: rgb(0, 0, 0, 0.5);
+          width: 380px;
+          height: 240px;
+          border-radius: 10px;
+        }
+
+        &--text {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 0 0 10px;
+
+          h3 {
+            font-size: 25px;
+            font-weight: var.$bold;
+            color: var.$white;
+            text-align: center;
+            line-height: auto;
+            padding: 80px 0 20px 0;
+          }
+
+          p {
+            width: 100%;
+            font-size: 16px;
+            font-weight: var.$regular;
+            text-align: center;
+            color: var.$white;
+            line-height: 1.5;
+          }
+        }
+      }
+
+      &__trivia {
+        width: 380px;
+        height: 240px;
+        border-radius: 10px;
+        border-radius: 10px;background-image: url("../img/picture/content_trivia.jpg");
+        
+        &--img {
+          width: 100%;
+          height: 100%;
+          background-color: rgb(0, 0, 0, 0.5);
+          border-radius: 10px;
+        }
+
+        &--text {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 0 0 10px;
+
+          h3 {
+            font-size: 25px;
+            font-weight: var.$bold;
+            color: var.$white;
+            text-align: center;
+            line-height: auto;
+            padding: 80px 0 20px 0;
+          }
+
+          p {
+            width: 100%;
+            font-size: 16px;
+            font-weight: var.$regular;
+            text-align: center;
+            color: var.$white;
+            line-height: 1.5;
+          }
+        }
+      }
+
+      a {
+        width: 420px;
+        height: 60px;
+        @include mix.display(row);
+        font-size: 18px;
+        font-weight: var.$bold;
+        background-color: var.$flowFontColor;
+        color: var.$white;
+        border-radius: 50px;
+        margin-top: 30px;
+        margin-bottom: 80px;
+      }
+    }
+  }
+}
