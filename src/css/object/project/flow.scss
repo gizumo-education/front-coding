@@ -11,7 +11,7 @@
     @include mix.display(column);
     width: 100%;
     max-width: 1180px;
-    height: 435px;
+    // height: 435px;
     gap: 60px;
 
     h2 {
@@ -36,8 +36,9 @@
         max-width: 20px;
         content: "";
         position: absolute;
-        top: 45%;
-        right: -8%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        right: -12%;
         border-top: 20px solid transparent;
         border-left: 20px solid var.$flowFontColor;
         border-bottom: 20px solid transparent;
