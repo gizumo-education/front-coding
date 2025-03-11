@@ -108,11 +108,42 @@
         @include mix.display(row);
         font-size: 18px;
         font-weight: var.$bold;
-        background-color: var.$flowFontColor;
+        background-color: var.$searchColor;
         color: var.$white;
         border-radius: 50px;
         margin-top: 30px;
         margin-bottom: 80px;
+      }
+
+      &:hover {
+        @include mix.hover();
+      }
+    }
+  }
+}
+
+@include mix.sp {
+  .p-content {
+    width: 100%;
+    max-width: 767px;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    &__container {
+      &__contents {
+        @include mix.display(column);
+        width: 100%;
+        max-width: 370px;
+
+        h2 {
+          font-size: 21px;
+        }
+
+        a {
+          margin-bottom: 0;
+          margin-top: 0;
+          width: 100%;
+        }
       }
     }
   }

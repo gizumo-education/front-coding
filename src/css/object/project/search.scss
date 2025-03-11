@@ -98,4 +98,83 @@
       border: 1px solid var.$searchColor;
     }
   }
+}
+
+@include mix.sp {
+  .p-search {
+    width: 100%;
+    @include mix.display(row);
+
+    &__box {
+      max-width: 370px;
+      width: 100%;
+      @include mix.display(column);
+    }
+
+    &__text {
+      @include mix.display(column);
+      width: 100%;
+      max-width: 370px;
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    &__text--wrapper {
+      width: 100%;
+      @include mix.display(row);
+      flex-wrap: wrap;
+      gap: 10px;
+
+      input {
+        width: 100%;
+        max-width: 320px;
+        height: 30px;
+      }
+
+      button {
+        width: 100%;
+        max-width: 160px;
+        height: 40px;
+      }
+    }
+
+    &__select {
+      option {
+        font-size: 12px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 12px;
+        right: 5px;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        border-top: 7px solid var.$searchColor;
+        border-bottom: 0;
+        cursor: pointer;
+        pointer-events: none;
+      }
+    }
+
+    &__select__child {
+      width: 100px;
+      height: 30px;
+      padding-left: 10px;
+    }
+
+    &--btn {
+
+      img {
+        width: 18px;
+        margin-right: 5px;
+      }
+    }
   }
+}

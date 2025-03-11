@@ -5,13 +5,13 @@
   width: 100%;
   max-width: 1600px;
   @include mix.display(column);
+  margin: 0 auto;
   margin-top: 106px;
 
   &__container {
     @include mix.display(column);
     width: 100%;
     max-width: 1180px;
-    height: 478px;
     gap: 53px;
 
     h2 {
@@ -47,6 +47,54 @@
       font-weight: var.$regular;
       line-height: 1.5;
       text-align: center;
+    }
+
+    &__contents--pc {
+      display: none;
+    }
+  }
+}
+
+@include mix.sp {
+  .p-feature {
+    width: 100%;
+    max-width: 767px;
+    margin-top: 0;
+
+    &__container {
+      h2 {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        margin-top: 55px;
+      }
+
+      &__all {
+        @include mix.display(column);
+        width: 100%;
+        max-width: 370px;
+        gap: 20px;
+      }
+
+
+      &__contents {
+        width: 100%;
+
+        &--title {
+          font-size: 20px;
+        }
+
+        &--text {
+          display: none;
+        }
+
+        &--pc {
+          display: block;
+          font-size: 12px;
+          text-align: center;
+          line-height: 1.5;
+        }
+      }
     }
   }
 }
