@@ -122,18 +122,23 @@
   }
 }
 
+@include mix.tab {
+  .p-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 @include mix.sp {
   .p-content {
     width: 100%;
-    max-width: 767px;
     margin: 0 auto;
     margin-top: 60px;
 
     &__container {
       &__contents {
         @include mix.display(column);
-        width: 100%;
-        max-width: 370px;
+        width: 90%;
 
         h2 {
           font-size: 21px;
@@ -143,6 +148,23 @@
           margin-bottom: 0;
           margin-top: 0;
           width: 100%;
+        }
+
+        &__box {
+          width: 370px;
+          background-size: cover;
+
+          &--img {
+            width: 100%;
+          }
+        }
+
+        &__trivia {
+          width: 370px;
+
+          &--img {
+            width: 100%;
+          }
         }
       }
     }

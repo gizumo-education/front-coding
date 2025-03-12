@@ -21,6 +21,7 @@
   height: 500px;
   background-image: url("../img/picture/main_girl.png");
   background-size: cover;
+  box-sizing: border-box;
   }
 
   .p-keyvisual__text {
@@ -61,6 +62,13 @@
   }
 }
 
+@include mix.tab {
+  .p-keyvisual {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 
 @include mix.sp {
   .p-keyvisual {
@@ -71,10 +79,11 @@
       background-image: url("../img/picture/keyvisual_pc_main.png");
       background-size: cover;
       height: 270px;
+      width: 100%;
     }
 
     &__text {
-      margin-left: 32%;
+      margin-left: 30%;
       @include mix.display(column);
       gap: 20px;
   

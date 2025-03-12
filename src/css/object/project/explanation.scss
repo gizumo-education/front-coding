@@ -24,6 +24,13 @@
   }
 }
 
+@include mix.tab {
+  .p-explanation {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 @include mix.sp {
   .p-explanation {
     width: 100%;

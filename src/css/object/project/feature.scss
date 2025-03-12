@@ -55,10 +55,18 @@
   }
 }
 
-@include mix.sp {
+@include mix.tab {
   .p-feature {
     width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@include mix.sp {
+  .p-feature {
+    width: 90%;
     max-width: 767px;
+    margin: 0 auto;
     margin-top: 0;
 
     &__container {

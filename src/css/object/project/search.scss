@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    box-sizing: border-box;
   }
 
   &__text {
@@ -100,14 +101,22 @@
   }
 }
 
-@include mix.sp {
+@include mix.tab {
   .p-search {
     width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@include mix.sp {
+  .p-search {
+    width: 90%;
     @include mix.display(row);
+    max-width: 370px;
+    margin: 0 auto;
+
 
     &__box {
-      max-width: 370px;
-      width: 100%;
       @include mix.display(column);
     }
 

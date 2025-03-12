@@ -116,15 +116,21 @@
   }
 }
 
+@include mix.tab {
+  .p-flow {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 @include mix.sp {
   .p-flow {
     margin: 0 auto;
     width: 100%;
-    max-width: 767px;
-    margin-top: 60px;
-
+    
     &__container {
       gap: 34px;
+      margin-top: 60px;
 
       &__all {
         @include mix.display(column);
