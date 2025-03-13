@@ -1,0 +1,86 @@
+@use '../../object/utility/utility.scss';
+
+.c-container {
+  text-align: center;
+}
+
+.c-job {
+  width: 1180px;
+  height: 240px;
+  background-color: utility.$bgCyan;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  &__title {
+    font-weight: utility.$bold;
+    font-size: 25px;
+    margin-top: 45px;
+  }
+
+  &__text {
+    font-weight: utility.$regular;
+    font-size: 20px;
+    margin-top: 45px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  & select {
+    border-radius: 10px;
+    border: solid 1px utility.$pink;
+    width: 200px;
+    height: 60px;
+    appearance: none;
+    font-weight: utility.$regular;
+    font-size: 18px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 10px;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      background-color: utility.$pink;
+      pointer-events: none;
+    }
+  }
+
+  & input {
+    border-radius: 10px;
+    border: solid 1px utility.$pink;
+    width: 300px;
+    height: 60px;
+    appearance: none;
+    font-size: 18px;
+    font-weight: utility.$regular;
+  }
+
+  & button {
+    width: 140px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: utility.$bgPink;
+    color: utility.$white;
+    font-weight: utility.$bold;
+    font-size: 18px;
+    background-image: url('../img/icon/icon-white-search.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    display: grid;
+    place-items: center;
+    display: block;
+    text-align: right;
+  }
+}

@@ -1,2 +1,18 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+.button {
+  width: 140px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: utility.$bgPink;
+  color: utility.$white;
+  font-weight: utility.$bold;
+  font-size: 18px;
+  background-image: url('../img/icon/icon-white-search.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
