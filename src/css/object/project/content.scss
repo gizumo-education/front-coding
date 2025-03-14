@@ -138,7 +138,8 @@
     &__container {
       &__contents {
         @include mix.display(column);
-        width: 90%;
+        width: 100%;
+        padding: 0 15px;
 
         h2 {
           font-size: 21px;
