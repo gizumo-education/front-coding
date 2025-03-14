@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>基本コーディング</title>
 </head>
+
 <body>
   <header class="l-header">
     <nav class="l-header__nav">
@@ -31,9 +33,50 @@
     </nav>
   </header>
 
-  <main></main>
+  <main class="l-main">
+    <img class="main" src="./img/picture/keyvisual.png" alt="メインビジュアル">
+    <img class="l-main__h1--no1" src="./img/text/keyvisual.png">
+    <img class="l-main__h1--text" src="./img/text/keyvisual-text.png">
+    <div>
+      <h2 class="l-main__h2">現在の求人掲載数 ： <span>2,320</span>件</h2>
+    </div>
+  </main>
+  <search class="l-search">
+    <div class="l-search__area">
+      <h2 class="l-search__area--h2">お仕事検索</h2>
+      <p class="l-search__area--p">働きたい職種・地域・希望給与を入れて検索！</p>
+      <div class="l-search__area--container">
+        <div class="l-search__area--container--select-wrapper">
+          <select class="l-search__area--container--select-wrapper-select">
+            <option>医療事務</option>
+          </select>
+        </div>
+        <div class="l-search__area--container--select-wrapper">
+          <select class="l-search__area--container--select-wrapper-select">
+            <option>東京都</option>
+          </select>
+        </div>
 
-  <footer class="l-footer">
+        <div class="l-search__area--container--select-wrapper">
+          <select class="l-search__area--container--select-wrapper-select">
+            <option>月給17万</option>
+          </select>
+        </div>
+
+        <input class="l-search__input" type="text" placeholder="キーワード・企業名・スキルなど"></input>
+        <button class="l-search__common-button">
+          <img src="./img/icon/icon-search-white.png">
+          検索する
+        </button>
+      </div>
+    </div>
+  </search>
+  <recruit>
+
+  </recruit>
+  <job-photo></job-photo>
+
+  <footer class=" l-footer">
     <div class="l-footer__area">
       <div class="l-inner is-flex">
         <ul class="l-footer__link-area">
@@ -46,11 +89,13 @@
         </ul>
         <ul class="l-footer__banner-area">
           <li class="l-footer__banner"><a href=""><img src="./img/picture/footer-banner01.jpg" alt="親子バナー"></a></li>
-          <li class="l-footer__banner"><a href=""><img src="./img/picture/footer-banner02.jpg" alt="介護士バナー"></a></li>
+          <li class="l-footer__banner"><a href=""><img src="./img/picture/footer-banner02.jpg" alt="介護士バナー"></a>
+          </li>
         </ul>
       </div>
     </div>
     <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
   </footer>
 </body>
+
 </html>
