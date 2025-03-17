@@ -17,4 +17,9 @@ font-size: 18px;
 text-align: center;
 cursor: pointer;
 gap: 6px;
+transition: all 0.3s;
+
+  &:hover{
+  opacity: 0.8;
+  }
 }

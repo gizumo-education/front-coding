@@ -9,8 +9,9 @@ border: 1px solid #DE1E79;
 font-family: 'Noto Sans JP';
 font-weight: 400;
 font-size: 18px;
+cursor: pointer;
 
-  @media(max-width: 1200px){
-   font-size: 14px;
+@media(max-width: 1200px){
+font-size: 14px;
 }
 }

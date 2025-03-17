@@ -39,4 +39,9 @@ font-weight: 700;
 font-size: 18px;
 text-align: center;
 cursor: pointer;
+transition: 0.3s;
+
+  &:hover {
+  opacity: 0.8;
+  }
 }
