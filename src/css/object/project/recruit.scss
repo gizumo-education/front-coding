@@ -4,6 +4,8 @@
 display: block;
 text-align: left;
 width: 100%;
+height: auto;
+padding-bottom: 67px;
 background-color: #EFF6FC;
 
   &__area{
@@ -21,8 +23,8 @@ background-color: #EFF6FC;
     }
 
     &__image{
-    width: 100%;
-    height: auto;
+    width: 280px;
+    height: 200px;
     }
 
     &__wrapper{
@@ -117,7 +119,6 @@ background-color: #EFF6FC;
       }
     &__btn-wrapper{
     margin-top: 61px;
-    margin-bottom: 67px;
     display: flex;
     justify-content: center;
     }
