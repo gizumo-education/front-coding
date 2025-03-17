@@ -21,6 +21,7 @@
   height: 500px;
   background-image: url("../img/picture/main_girl.png");
   background-size: cover;
+  box-sizing: border-box;
   }
 
   .p-keyvisual__text {
@@ -36,8 +37,6 @@
     img {
       width: 100%;
     }
-
-  
 }
 
 .p-keyvisual__count {
@@ -60,5 +59,71 @@
   span {
     font-size: 40px;
     font-weight: var.$bold;
+  }
+}
+
+@include mix.tab {
+  .p-keyvisual {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+@include mix.sp {
+  .p-keyvisual {
+    width: 100%;
+    margin: 0 auto;
+
+    &__all {
+      background-image: url("../img/picture/keyvisual_pc_main.png");
+      background-size: cover;
+      height: 270px;
+      width: 100%;
+    }
+
+    &__text {
+      margin-left: 30%;
+      @include mix.display(column);
+      gap: 20px;
+  
+      &__contents {
+        @include mix.display(column);
+        gap: 20px;
+
+        img {
+          width: 149px;
+        }
+
+        h1:nth-child(2) {
+          img {
+            width: 272px;
+          }
+        }
+      }
+    }
+
+    &__count {
+      width: 100%;
+      max-width: 170px;
+      height: 30px;
+      text-align: center;
+      background-color: var.$white;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid var.$keyTextColor;
+      border-radius: 10px;
+      font-size: 8px;
+      font-weight: var.$regular;
+      color: var.$keyTextColor;
+      margin-top: 5px;
+      padding-top: 5px;
+    
+      span {
+        font-size: 16px;
+        font-weight: var.$bold;
+      }
+    }
   }
 }
