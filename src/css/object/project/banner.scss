@@ -1,0 +1,34 @@
+.p-banner{
+display: block;
+position: relative;
+overflow-x: hidden;
+width: 100%;
+
+  &__text{
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  color: #FFFFFF;
+  font-family: 'Noto Sans JP';
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 2.4;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  &__image{
+  width: 100%;
+  height: auto;
+  background-color: black;
+
+    &__img{
+    width: 100%;
+    max-width: 100%;
+    opacity: 0.6;
+    }
+  }
+}
