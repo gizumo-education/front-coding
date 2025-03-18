@@ -21,9 +21,9 @@ position: relative;
   &__contents{
   position: absolute;
   top: 45%;
-  left: 60%;
+  left: 64%;
   transform: translate(-50%, -50%);
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 4%;
