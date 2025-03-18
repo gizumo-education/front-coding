@@ -3,6 +3,9 @@
 @use '../../foundation/mixins' as mix;
 // ページ上部のキービジュアルに関するスタイル
 
+#keyvisual {
+  scroll-margin-top: 70px;
+}
 
 .p-keyvisual {
   background-color: var.$keyColor;

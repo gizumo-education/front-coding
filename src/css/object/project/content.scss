@@ -1,6 +1,11 @@
 @use '../../foundation/variables' as var;
 @use '../../foundation/mixins' as mix;
 
+
+#content {
+  scroll-margin-top: 80px;
+}
+
 .p-content {
   width: 100%;
   max-width: 1600px;
