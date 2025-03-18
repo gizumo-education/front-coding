@@ -13,7 +13,7 @@ margin: 0 auto;
     margin: 0 auto;
 
     &--img{
-    width: 100%;
+    width: auto;
     height: auto;
     }
   }
@@ -40,7 +40,6 @@ margin: 0 auto;
     flex-direction: column;
     align-items: center;
     width: 80%;
-    max-width: 800px;
     height: auto;
     }
   }
@@ -55,15 +54,16 @@ margin: 0 auto;
   &__title{
   display: block;
   margin-bottom: 2%;
-  width: 342px;
-  height: 168px;
+  width: auto;
+  height: auto;
   max-width: 100%;
+
   }
 
   &__title2{
   display: block;
-  width: 800px;
-  height: 65px;
+  width: auto;
+  height: auto;
   max-width: 100%;
   }
 

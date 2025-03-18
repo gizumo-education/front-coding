@@ -22,11 +22,6 @@ background-color: #EFF6FC;
     padding-bottom: 25px;
     }
 
-    &__image{
-    width: 280px;
-    height: 200px;
-    }
-
     &__wrapper{
     display: flex;
     position: relative;
@@ -86,6 +81,11 @@ background-color: #EFF6FC;
       display: block;
       width: 280px;
 
+
+      &-image{
+      width: auto;
+      height: auto;
+      }
 
       &-text{
       font-family: 'Noto Sans JP';
