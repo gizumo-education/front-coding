@@ -1,68 +1,53 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual{
-position: relative;
 background-color: #98B1BE;
 width: 100%;
 margin: 0 auto;
+position: relative;
 
 
-  &__photo-wrapper{
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-
-    &--img{
-    width: auto;
-    height: auto;
-    }
+  &__img{
+  background-image: url(../img/picture/main.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1262px;
+  height: 500px;
+  margin: 0 auto;
   }
 
-  &__content-wrapper{
+
+  &__contents{
   position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  max-width: 1600px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-    &__content{
-    margin-top: 14px;
-    margin-left: 12%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-  }
-
-  &__heading{
+  top: 45%;
+  left: 60%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 4%;
   }
 
+  &__heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
   &__title{
-  display: block;
   margin-bottom: 2%;
   width: auto;
+  max-width: 341.81px;
   height: auto;
-  max-width: 100%;
 
   }
 
   &__title2{
-  display: block;
   width: auto;
+  max-width: 800px;
   height: auto;
-  max-width: 100%;
   }
 
   &__text {
