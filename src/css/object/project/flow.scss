@@ -24,8 +24,12 @@
 
     &__arrow{
     position: relative;
-    width: 20px;
-    height: 40px;
+    width: 1.25vw;
+    min-width: 12px;
+    max-width: 20px;
+    height: 2.5vw;
+    min-height: 20px;
+    max-height: 40px;
     flex-shrink: 0;
     margin: 0;
 
@@ -34,7 +38,7 @@
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 20px 0 20px 20px;
+      border-width: 1.25vw 0 1.25vw 1.25vw;
       border-color: transparent transparent transparent #DE1E79;
       position: absolute;
       top: 50%;
@@ -68,14 +72,13 @@
       }
 
       &-icon{
-      width: auto;
       height: auto;
       box-sizing: border-box;
 
-        &.icon-1 { margin-top: 60px;}
-        &.icon-2 { margin-top: 70px;}
-        &.icon-3 { margin-top: 60px;}
-        &.icon-4 { margin-top: 56px;}
+        &.icon-1 { width: 36.79%; max-width: 103px; margin-top: 21.43%;}
+        &.icon-2 { width: 28.57%; max-width: 80px; margin-top: 25%;}
+        &.icon-3 { width: 38.57%; max-width: 108px; margin-top: 21.43%;}
+        &.icon-4 { width: 38.93%; max-width: 109px; margin-top: 20%;}
       }
 
       &-title{
@@ -84,7 +87,6 @@
       font-size: 24px;
       line-height: 1.4;
       padding: 20px 32px 0 32px;
-      width: 100%;
       box-sizing: border-box;
       }
 
@@ -94,7 +96,6 @@
       font-size: 14px;
       line-height: 1.4;
       text-align: left;
-      width: 100%;
       height: auto;
       padding: 18px 20px 42px 20px;
       box-sizing: border-box;
