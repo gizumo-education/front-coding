@@ -13,6 +13,7 @@
   margin-top: 106px;
 
   &__container {
+    width: 100%;
     @include mix.display(column);
     gap: 50px;
 
@@ -22,24 +23,28 @@
     }
 
     &__contents {
+      width: 100%;
       @include mix.display(row);
       gap: 20px;
 
       &__box {
-        width: 380px;
+        width: 100%;
+        max-width: 380px;
         height: 240px;
         border-radius: 10px;
         background-image: url("../img/picture/content__manual.jpg");
         
         &--img {
           background-color: rgb(0, 0, 0, 0.5);
-          width: 380px;
+          width: 100%;
+          max-width: 380px;
           height: 240px;
           border-radius: 10px;
         }
 
         &--text {
           width: 100%;
+          max-width: 380px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -139,12 +144,12 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 60px;
-
+    
     &__container {
       &__contents {
         @include mix.display(column);
         width: 100%;
-        padding: 0 15px;
+        padding: 0 5px;
 
         h2 {
           font-size: 21px;
@@ -155,9 +160,10 @@
           margin-top: 0;
           width: 100%;
         }
-
+        
         &__box {
-          width: 370px;
+          width: 100%;
+          max-width: 370px;
           background-size: cover;
 
           &--img {
@@ -166,7 +172,8 @@
         }
 
         &__trivia {
-          width: 370px;
+          width: 100%;
+          max-width: 370px;
 
           &--img {
             width: 100%;

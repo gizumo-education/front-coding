@@ -7,13 +7,14 @@
   background-color: rgba(0, 0, 0, .7);
   position: fixed;
   text-align: left;
-  padding: 60px;
+  padding: 60px 0 0 60px ;
   top: 0.7rem;
   right: -100%;
   transition: right 0.7s;
 
   &--list {
-
+    width: 100%;
+    max-width: 370px;
     a {
       color: var.$white;
       font-size: 22px;

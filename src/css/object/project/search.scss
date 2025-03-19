@@ -76,7 +76,7 @@
 
   &__select {
     position: relative;
-
+    
     &::after {
       content: "";
       position: absolute;
@@ -98,6 +98,7 @@
       appearance: none;
       padding-left: 15px;
       border: 1px solid var.$searchColor;
+      background-color: var.$white;
     }
   }
 }
@@ -111,10 +112,11 @@
 
 @include mix.sp {
   .p-search {
-    width: 90%;
+    width: 100%;
     @include mix.display(row);
     max-width: 370px;
     margin: 0 auto;
+    padding: 0 5px;
 
 
     &__box {
