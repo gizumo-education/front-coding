@@ -33,15 +33,9 @@
     margin-top: 20px;
   }
 
-  & select {
-    border-radius: 10px;
-    border: solid 1px utility.$pink;
-    width: 200px;
-    height: 60px;
-    appearance: none;
-    font-weight: utility.$regular;
-    font-size: 18px;
+  &__select {
     position: relative;
+    display: inline-block;
 
     &::after {
       content: "";
@@ -54,7 +48,19 @@
       clip-path: polygon(0 0, 100% 0, 50% 100%);
       background-color: utility.$pink;
       pointer-events: none;
+      appearance: none;
     }
+  }
+
+  & select {
+    border-radius: 10px;
+    border: solid 1px utility.$pink;
+    width: 200px;
+    height: 60px;
+    appearance: none;
+    font-weight: utility.$regular;
+    font-size: 18px;
+    padding-right: 40px;
   }
 
   & input {
