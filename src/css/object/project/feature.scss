@@ -1,0 +1,49 @@
+.p-feature{
+
+
+  &__area{
+    margin: 0 auto;
+    margin-top: 106px;
+    text-align: center;
+
+    &__heading{
+    font-family: 'Noto Sans JP';
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 52px;
+    }
+
+
+    &__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    gap: 40px;
+
+    }
+  }
+
+  &__box{
+  width: 100%;
+  height: auto;;
+  font-family: 'Noto Sans JP';
+  padding: 40px 62px;
+  border: none;
+  border-radius: 10px;
+  background-color: #F7D2DB;
+  }
+
+  &__heading{
+  font-weight: 700;
+  font-size: 24px;
+  color: #DE5579;
+  margin-bottom: 36px;
+  }
+
+  &__text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  }
+
+}
