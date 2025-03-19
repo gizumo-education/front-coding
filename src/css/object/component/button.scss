@@ -1,2 +1,30 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.p-search__common-button{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 140px;
+height: 60px;
+border-radius: 30px;
+border: none;
+color: #fff;
+background-color: #DE5579;
+font-family: 'Noto Sans JP';
+font-weight: 700;
+font-size: 18px;
+text-align: center;
+cursor: pointer;
+gap: 6px;
+transition: all 0.3s;
+
+  &:hover{
+  opacity: 0.8;
+  }
+}
+
+.p-search__icon{
+width: auto;
+height: auto;
+}

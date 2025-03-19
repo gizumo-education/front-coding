@@ -24,3 +24,29 @@
     clear: both;
   }
 }
+
+@mixin more-button($width) {
+width: $width;
+display: block;
+margin: 0 auto;
+height: 60px;
+border-radius: 30px;
+border: none;
+color: #fff;
+background-color: #DE5579;
+font-family: 'Noto Sans JP';
+font-weight: 700;
+font-size: 18px;
+text-align: center;
+cursor: pointer;
+transition: 0.3s;
+text-decoration: none;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+  &:hover {
+  opacity: 0.8;
+  }
+}
