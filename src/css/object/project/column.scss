@@ -1,0 +1,15 @@
+.p-column{
+
+  &__area{
+  height: auto;
+  margin: 0 auto;
+  margin-top: 106px;
+  text-align: center;
+
+    &__heading{
+    font-family: 'Noto Sans JP';
+    font-weight: 700;
+    font-size: 25px;
+    }
+  }
+}
