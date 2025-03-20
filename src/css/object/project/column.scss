@@ -28,11 +28,12 @@
     width: 32.3%;
     max-width: 32.3%;
     aspect-ratio: 1.6 / 1;
+    max-height: 240px;
     background-image: url(../img/picture/column.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 71px 10px 55px 10px;
+    padding: 60px 10px 20px 10px;
 
       &:nth-child(2){
       background-image: url(../img/picture/column2.png);
@@ -52,9 +53,9 @@
 
       &-title{
       display: block;
-      width: 63.15%;
+      width: 85.71%;
       height: 72px;
-      line-height: 1.5;
+      line-height: 1.2;
       margin: 0 auto;
       position: relative;
       z-index: 1;
@@ -69,13 +70,13 @@
       width: 67.37%;
       height: 72px;
       margin: 0 auto;
-      margin-top: 18.33%;
+      margin-top: 4px;
       position: relative;
       z-index: 10;
       font-family: 'Noto Sans JP';
       font-weight: 400;
       font-size: 16px;
-      line-height: 1.5;
+      line-height: 1.2;
       color: #FFFFFF;
 
         &:nth-child(2){
