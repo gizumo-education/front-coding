@@ -15,9 +15,7 @@ overflow-x: hidden;
 
 @include utility.sp{
 background-image: url(../img/picture/main_sp.png);
-width: 100%;
-height: 400px;
-margin-top: 25.28px;
+height: 270px;
 }
 
   &__contents{
@@ -29,8 +27,12 @@ margin-top: 25.28px;
   max-width: 100%;
   box-sizing: border-box;
 
+  @media screen and (max-width: 767px) and (min-width: 515px){
+  margin-top: 25px !important;
+  }
+
   @include utility.sp{
-  margin-top: 3.75rem ;
+  margin-top: 61px;
   }
 }
 
@@ -53,7 +55,9 @@ margin-top: 25.28px;
 
     @include utility.sp{
     display: block;
-    min-width: 55.15%;
+    width: 1.5rem;
+    min-width: 149px;
+    height: auto;
     }
     }
 
@@ -69,74 +73,12 @@ margin-top: 25.28px;
   margin-top: 40px;
 
   @include utility.sp{
-  max-width: 17rem !important;
-  margin-top: 12px !important;
+  width: 2.72rem ;
+  min-width: 272px;
+  margin-top: 12px ;
   }
   }
 
-  &__text {
-  color:#2EB6AA;
-  background-color: #fff;
-  text-align: center;
-  padding: 5px 41px;
-  border-radius: 10px;
-  border: #2EB6AA solid 2.3px;
-  width: 391px;
-  height: 69px;
-  font-family: 'Noto Sans JP';
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 100%;
-  white-space: nowrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 54px;
-  margin-bottom: 4%;
-
-  @include utility.sp{
-  width: 170px;
-  height: 30px;
-  }
-
-    span{
-    font-weight: 700;
-    font-size: 40px;
-    }
-}
-
-
-  &__contents{
-  margin-top: 56px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70%;
-  max-width: 100%;
-  box-sizing: border-box;
-  }
-
-  &__heading{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-  }
-
-  &__title{
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  }
-
-  &__title2{
-  width: 100%;
-  max-width: 803px;
-  height: auto;
-  margin-top: 40px;
-  }
 
   &__text {
   color:#2EB6AA;
@@ -162,9 +104,11 @@ margin-top: 25.28px;
   @include utility.sp{
   width: 170px;
   height: 30px;
+  min-width: 30px;
   font-size: 8px;
   margin-top: 18px;
-  padding: 4px 23px;
+  border-radius: 5px;
+  border: #2EB6AA solid 1px;
   }
 
     span{

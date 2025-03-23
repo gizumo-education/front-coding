@@ -37,6 +37,7 @@ padding-bottom: 60px;
     justify-content: space-between;
     gap: 20px;
     width: 100%;
+    min-height: 300px;
     overflow-x: auto;
     @include utility.sp{
     flex-direction: column;
@@ -109,7 +110,6 @@ padding-bottom: 60px;
       display: none;
       }
       }
-
 
       &-image{
       width: auto;

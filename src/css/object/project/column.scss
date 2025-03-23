@@ -1,3 +1,4 @@
+@use "../../object/utility/utility.scss";
 @import "../../foundation/mixins.scss";
 
 .p-column{
@@ -20,6 +21,12 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+
+    @include utility.sp{
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 10px;
+    }
     }
 
 
@@ -34,6 +41,12 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 60px 10px 20px 10px;
+
+    @include utility.sp{
+    width: 100%;
+    max-width: 100%;
+    height: 234.9px;
+    }
 
       &:nth-child(2){
       background-image: url(../img/picture/column2.png);
@@ -63,6 +76,10 @@
       font-weight: 700;
       font-size: 24px;
       color: #FFFFFF;
+
+      @include utility.sp{
+      font-size: 21px;
+      }
       }
 
       &-text{
@@ -78,6 +95,9 @@
       font-size: 16px;
       line-height: 1.2;
       color: #FFFFFF;
+      @include utility.sp{
+      font-size: 14px;
+      }
 
         &:nth-child(2){
         width: 75.79%;
@@ -93,6 +113,10 @@
     }
     .more-button{
     @include more-button(420px);
+
+    @include utility.sp{
+    @include more-button(370px);
+    }
     }
 }
 }

@@ -33,6 +33,12 @@ transition: all 0.3s;
 width: auto;
 height: auto;
 
+@include utility.tab{
+  width: 20px;
+  height: auto;
+  }
+
+
 @include utility.sp{
 width: 18px;
 height: auto;

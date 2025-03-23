@@ -1,16 +1,24 @@
-.p-feature{
+@use "../../object/utility/utility.scss";
 
+.p-feature{
 
   &__area{
     margin: 0 auto;
     margin-top: 106px;
     text-align: center;
+    @include utility.sp{
+    margin-top: 55px;
+    }
+
 
     &__heading{
     font-family: 'Noto Sans JP';
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 52px;
+    @include utility.sp{
+    margin-bottom: 38px;
+    }
     }
 
 
@@ -20,6 +28,10 @@
     grid-row: 1fr 1fr;
     gap: 40px;
 
+    @include utility.sp{
+    grid-template-columns: 1fr;
+    gap: 21px;
+    }
     }
   }
 
@@ -31,6 +43,10 @@
   border: none;
   border-radius: 10px;
   background-color: #F7D2DB;
+
+  @include utility.sp{
+  padding: 30px 17px;
+  }
   }
 
   &__heading{
@@ -38,12 +54,31 @@
   font-size: 24px;
   color: #DE5579;
   margin-bottom: 36px;
+
+  @include utility.sp{
+  font-size: 20px;
+  margin-bottom: 30px;
+  }
+
   }
 
   &__text{
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
+  @include utility.sp{
+  font-size: 12px;
+  line-height: 17px;
+  }
+
+
+    &__br{
+    display: none;
+    @include utility.sp{
+    display: block;
+    }
+    }
+
   }
 
 }
