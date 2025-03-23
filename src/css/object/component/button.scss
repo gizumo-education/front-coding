@@ -22,9 +22,19 @@ transition: all 0.3s;
   &:hover{
   opacity: 0.8;
   }
+
+  @include utility.sp{
+  width: 160px;
+  height: 40px;
+  }
 }
 
 .p-search__icon{
 width: auto;
 height: auto;
+
+@include utility.sp{
+width: 18px;
+height: auto;
+}
 }

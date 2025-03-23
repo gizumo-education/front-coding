@@ -1,4 +1,6 @@
+@use '../../object/utility/utility.scss';
 @import "../../foundation/mixins.scss";
+
 
 .p-recruit{
 display: block;
@@ -7,6 +9,11 @@ height: auto;
 padding-top: 64px;
 padding-bottom: 67px;
 background-color: #EFF6FC;
+
+@include utility.sp{
+padding-top: 30px;
+padding-bottom: 60px;
+}
 
   &__area{
   height: auto;
@@ -17,6 +24,11 @@ background-color: #EFF6FC;
     font-weight: 400;
     font-size: 25px;
     padding-bottom: 25px;
+
+    @include utility.sp{
+    font-weight: 700;
+    text-align: center;
+    }
     }
 
     &__wrapper{
@@ -26,6 +38,12 @@ background-color: #EFF6FC;
     gap: 20px;
     width: 100%;
     overflow-x: auto;
+    @include utility.sp{
+    flex-direction: column;
+    margin: 0 auto;
+
+
+    }
 
       &-arrow{
       position: absolute;
@@ -41,6 +59,11 @@ background-color: #EFF6FC;
       display: flex;
       justify-content: center;
       align-items: center;
+      @include utility.sp{
+      width: 42px;
+      height: 42px;
+      top: 54%;
+      }
 
         &::before{
         content: "";
@@ -52,6 +75,10 @@ background-color: #EFF6FC;
         border-top: 1px solid rgba(0, 0, 0, 0.8);
         border-right: 1px solid rgba(0, 0, 0, 0.8);
         transform: translate(-75%, -50%) rotate(45deg);
+        @include utility.sp{
+        width: 10px;
+        height: 10px;
+        }
         }
 
         &.left{
@@ -77,19 +104,43 @@ background-color: #EFF6FC;
     &__contents{
       display: block;
 
+      &__sp-hide{
+      @include utility.sp{
+      display: none;
+      }
+      }
+
 
       &-image{
       width: auto;
       height: auto;
+
+      &-sp{
+      display: none;
+      @include utility.sp{
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      }
+      }
+
+      @include utility.sp{
+      display: none;
+      }
       }
 
       &-text{
       font-family: 'Noto Sans JP';
       font-weight: 400;
-      font-size: 15px;
+      font-size: 16px;
       margin-top: 8px;
       margin-bottom: 6px;
       line-height: 1.5;
+      @include utility.sp{
+      font-weight: 700;
+      line-height: 22px;
+      }
       }
 
       &-detail{
@@ -117,9 +168,15 @@ background-color: #EFF6FC;
     margin-top: 61px;
     display: flex;
     justify-content: center;
+    @include utility.sp{
+    margin-top: 44px;
+    }
     }
     .more-button{
     @include more-button(360px);
+    @include utility.sp{
+    @include more-button(370px);
+    }
     }
   }
 }

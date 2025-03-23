@@ -1,3 +1,5 @@
+@use '../../object/utility/utility.scss';
+
 .p-search{
 display: block;
 margin: 0 auto;
@@ -10,12 +12,22 @@ width: 100%;
   border-radius: 10px;
   text-align: center;
 
+  @include utility.sp{
+  padding: 15px 25px;
+  flex-wrap: wrap;
+  }
+
 
     &__heading{
     font-family: 'Noto Sans JP';
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 20px;
+
+    @include utility.sp{
+    font-size: 22px;
+    margin-bottom: 16px;
+    }
     }
 
     &__text{
@@ -23,6 +35,11 @@ width: 100%;
     font-weight: 400;
     font-size: 20px;
     margin-bottom: 20px;
+
+    @include utility.sp{
+    font-size: 14px;
+    margin-bottom: 13px;
+    }
     }
 
     &__container{
@@ -31,6 +48,17 @@ width: 100%;
     justify-content: center;
     gap: 1%;
     padding: 0 2%;
+    @include utility.sp{
+    flex-direction: column;
+    align-items: center;
+    }
+
+    &__wrapper{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    }
 
       &__select-wrapper{
       position: relative;
@@ -39,6 +67,11 @@ width: 100%;
       width: 100%;
       max-width: 200px;
 
+      @include utility.sp{
+      width: 100px;
+      height: 30px;
+
+      }
 
         &-select{
         flex-shrink: 1;
@@ -56,6 +89,16 @@ width: 100%;
         appearance: none;
         overflow: hidden;
         box-sizing: border-box;
+
+        @include utility.sp{
+        width: 100%;
+        min-width: 62px;
+        height: 30px;
+        padding: 6px ;
+        font-size: 12px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        }
         }
 
         &::after{
@@ -69,6 +112,12 @@ width: 100%;
         top: 24px;
         right: 15px;
         margin: auto;
+
+        @include utility.sp{
+        border-width: 7px 7px 0;
+        top: 12px;
+        right: 10px;
+        }
         }
       }
     }

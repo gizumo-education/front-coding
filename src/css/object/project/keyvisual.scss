@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual{
 background-image: url(../img/picture/main.png);
@@ -11,6 +12,98 @@ margin: 0 auto;
 display: flex;
 text-align: right;
 overflow-x: hidden;
+
+@include utility.sp{
+background-image: url(../img/picture/main_sp.png);
+width: 100%;
+height: 400px;
+margin-top: 25.28px;
+}
+
+  &__contents{
+  margin-top: 56px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  @include utility.sp{
+  margin-top: 3.75rem ;
+  }
+}
+
+  &__heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  }
+
+  &__title{
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+
+    &__sp{
+    display: none;
+
+    @include utility.sp{
+    display: block;
+    min-width: 55.15%;
+    }
+    }
+
+  @include utility.sp{
+  display: none;
+  }
+  }
+
+  &__title2{
+  width: 100%;
+  max-width: 803px;
+  height: auto;
+  margin-top: 40px;
+
+  @include utility.sp{
+  max-width: 17rem !important;
+  margin-top: 12px !important;
+  }
+  }
+
+  &__text {
+  color:#2EB6AA;
+  background-color: #fff;
+  text-align: center;
+  padding: 5px 41px;
+  border-radius: 10px;
+  border: #2EB6AA solid 2.3px;
+  width: 391px;
+  height: 69px;
+  font-family: 'Noto Sans JP';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 54px;
+  margin-bottom: 4%;
+
+  @include utility.sp{
+  width: 170px;
+  height: 30px;
+  }
+
+    span{
+    font-weight: 700;
+    font-size: 40px;
+    }
+}
 
 
   &__contents{
@@ -36,7 +129,6 @@ overflow-x: hidden;
   width: 100%;
   max-width: 350px;
   height: auto;
-
   }
 
   &__title2{
@@ -65,10 +157,22 @@ overflow-x: hidden;
   align-items: center;
   margin-top: 54px;
   margin-bottom: 4%;
+  box-sizing: border-box;
+
+  @include utility.sp{
+  width: 170px;
+  height: 30px;
+  font-size: 8px;
+  margin-top: 18px;
+  padding: 4px 23px;
+  }
 
     span{
     font-weight: 700;
     font-size: 40px;
+    @include utility.sp{
+    font-size: 16px;
+    }
     }
 }
 }
