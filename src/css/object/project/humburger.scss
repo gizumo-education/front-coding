@@ -1,0 +1,31 @@
+.p-nav{
+position: fixed;
+top: 0;
+right: -780px;
+width: 400px;
+height: 554px;
+background-color: rgba(0, 0, 0, 0.7);
+z-index: 1000;
+
+// jsの時に使用
+// &--is-active{
+// right: 0;
+// }
+
+  &__list{
+  color: #FFFFFF;
+  padding-top: 57px;
+  padding-left: 60px;
+  }
+
+  &__item{
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 38px;
+
+    &__link{
+    color: #FFFFFF;
+    text-decoration: none;
+    }
+  }
+}
