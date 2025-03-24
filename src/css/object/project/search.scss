@@ -15,14 +15,13 @@ width: 100%;
     font-family: 'Noto Sans JP';
     font-weight: 700;
     font-size: 25px;
-    margin-bottom: 20px;
     }
 
     &__text{
     font-family: 'Noto sans JP';
     font-weight: 400;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     }
 
     &__container{
@@ -31,6 +30,7 @@ width: 100%;
     justify-content: center;
     gap: 1%;
     padding: 0 2%;
+    margin-top: 20px;
 
       &__select-wrapper{
       position: relative;
