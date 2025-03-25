@@ -50,6 +50,10 @@ height: 270px;
   max-width: 350px;
   height: auto;
 
+  @include utility.tab{
+  width: 60%;
+  }
+
     &__sp{
     display: none;
 
@@ -72,10 +76,20 @@ height: 270px;
   height: auto;
   margin-top: 40px;
 
+  @include utility.tab{
+  width: 70%;
+  }
+
   @include utility.sp{
   width: 2.72rem ;
   min-width: 272px;
   margin-top: 12px ;
+  }
+  }
+
+  .title-2-wrap{
+  @include utility.tab{
+  text-align: center;
   }
   }
 
@@ -101,6 +115,12 @@ height: 270px;
   margin-bottom: 4%;
   box-sizing: border-box;
 
+  @include utility.tab{
+  width: 270px;
+  height: 50px;
+  font-size: 1.4em;
+  }
+
   @include utility.sp{
   width: 170px;
   height: 30px;
@@ -118,6 +138,11 @@ height: 270px;
     span{
     font-weight: 700;
     font-size: 40px;
+
+    @include utility.tab{
+    font-size: 2.6em;
+    }
+
     @include utility.sp{
     font-size: 0.16rem;
     }

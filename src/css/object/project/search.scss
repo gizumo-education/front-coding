@@ -23,8 +23,12 @@ width: 100%;
     font-weight: 700;
     font-size: 25px;
 
+    @include utility.tab{
+    font-size: 2.6em;
+    }
+
     @include utility.sp{
-    font-size: 22px;
+    font-size: 2.2em;
     margin-bottom: 16px;
     }
     }
@@ -34,6 +38,10 @@ width: 100%;
     font-weight: 400;
     font-size: 20px;
     margin-top: 20px;
+
+    @include utility.tab{
+    font-size: 1.8em;
+    }
 
     @include utility.sp{
     font-size: 14px;
@@ -48,6 +56,9 @@ width: 100%;
     gap: 1%;
     padding: 0 2%;
     margin-top: 26px;
+
+
+
     @include utility.sp{
     flex-direction: column;
     align-items: center;
@@ -59,8 +70,10 @@ width: 100%;
     display: flex;
     gap: 10px;
     margin-bottom: 15px;
+
     @include utility.tab{
-    max-width: 380px;
+    max-width: 400px;
+    gap: 6px;
     }
     }
     margin-top: 20px;
@@ -95,6 +108,14 @@ width: 100%;
         overflow: hidden;
         box-sizing: border-box;
 
+        @include utility.tab{
+        width: 100%;
+        min-width: 126px;
+        height: 50px;
+        font-size: 1.6em;
+        padding: 10px 35px 10px 10px;
+        }
+
         @include utility.sp{
         width: 100%;
         min-width: 62px;
@@ -117,6 +138,10 @@ width: 100%;
         top: 24px;
         right: 15px;
         margin: auto;
+
+        @include utility.tab{
+        top: 20px;
+        }
 
         @include utility.sp{
         border-width: 7px 7px 0;
