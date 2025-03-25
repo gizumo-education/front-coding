@@ -69,6 +69,55 @@
   .p-keyvisual {
     width: 100%;
     margin: 0 auto;
+
+    &__all {
+      width: 100%;
+      max-width: 768px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      background-image: url("../img/picture/main_girl.png");
+      background-size: cover;
+      box-sizing: border-box;
+      object-fit: cover;
+    }
+
+    &__text {
+      gap: 3em;
+
+      &__contents {
+        width: 50%;
+        text-align: center;
+
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  .p-keyvisual__count {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    text-align: center;
+    background-color: var.$white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var.$keyTextColor;
+    border-radius: 15px;
+    font-size: 2em;
+    font-weight: var.$regular;
+    color: var.$keyTextColor;
+    margin-top: 0;
+    padding-top: 0;
+  
+    span {
+      font-size: 2.5em;
+      font-weight: var.$bold;
+    }
   }
 }
 

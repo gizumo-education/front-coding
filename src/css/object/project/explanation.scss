@@ -5,6 +5,7 @@
   width: 100%;
   max-width: 1600px;
   height: 300px;
+  margin: 0 auto;
   background-image: url("../img/picture/meeting.jpg");
   
   &__img {
@@ -24,12 +25,6 @@
   }
 }
 
-@include mix.tab {
-  .p-explanation {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
 
 @include mix.sp {
   .p-explanation {

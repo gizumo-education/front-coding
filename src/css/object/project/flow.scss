@@ -6,6 +6,7 @@
 }
 
 .p-flow {
+  margin: 0 auto;
   margin-top: 105px;
   width: 100%;
   max-width: 1600px;
@@ -14,7 +15,6 @@
   &__container {
     @include mix.display(column);
     width: 100%;
-    max-width: 1180px;
     gap: 60px;
 
     h2 {
@@ -27,8 +27,8 @@
       gap: 20px;
 
       &__contents {
-        width: 280px;
-        height: 360px;
+        width: 80%;
+        height: 100%;
         border: 2.27px solid var.$flowFontColor;
         border-radius: 15px;
         position: relative;
@@ -107,7 +107,8 @@
       font-size: 14px;
       font-weight: var.$regular;
       line-height: 1.5;
-      margin-left: 20px;
+      margin: 0 auto;
+      margin-top: 10px;
     }
 
     &__text--one {
@@ -124,6 +125,106 @@
   .p-flow {
     width: 100%;
     margin: 0 auto;
+    margin-top: 106px;
+    
+    &__container {
+      height: 360px;
+      width: 100%;
+      max-width: 1024px;
+
+      &__all {
+        width: 100%;
+        gap: 2em;
+
+        &__contents {
+          width: 100%;
+          max-width: 280px;
+        }
+      }
+    }
+
+    &__contents__title {
+      width: 100%;
+
+      h3 {
+        font-size: 2.4em;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        
+      }
+
+      p {
+        font-size: 2em;
+        padding: 0.5em;
+        margin: 0 auto;
+      }
+      
+      img {
+        width: 40%;
+      }
+
+      &--one {
+        width: 80%;
+        font-size: 2em;
+        margin: 0 auto;
+      }
+
+      &--two {
+        width: 80%;
+        margin-top: 0;
+        font-size: 2em;
+      }
+
+      &--three {
+        width: 80%;
+        margin-top: 0;
+        font-size: 2em;
+      }
+
+      &--four {
+        width: 80%;
+        margin-top: 0;
+        font-size: 2em;
+      }
+
+      &__text--one {
+        margin-top: 0;
+      }
+
+      &__text--one {
+        margin-top: 0;
+      }
+  
+      &__text--two {
+        margin-top: 0;
+      }
+    }
+
+    &__container__all__contents:not(:last-child)::after {
+      max-width: 20px;
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translate(-65%, -50%);
+      right: -18%;
+      border-top: 12px solid transparent;
+      border-left: 12px solid var.$flowFontColor;
+      border-bottom: 12px solid transparent;
+    }
+
+    &__contents__img {
+      width: 6em;
+      height: 6em;
+
+      p {
+        font-size: 2em;
+        padding-top: 0.5em;
+      }
+    }
+
+    
   }
 }
 
@@ -201,3 +302,7 @@
   }
   }
 }
+
+// * {
+//   outline: 1px solid red;
+// }
