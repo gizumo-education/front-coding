@@ -157,7 +157,7 @@
 
       p {
         font-size: 2em;
-        padding: 0.5em;
+        padding: 1em;
         margin: 0 auto;
       }
       
@@ -191,6 +191,7 @@
 
       &__text--one {
         margin-top: 0;
+        padding-bottom: 2px;
       }
 
       &__text--one {
@@ -200,6 +201,7 @@
       &__text--two {
         margin-top: 0;
       }
+
     }
 
     &__container__all__contents:not(:last-child)::after {
@@ -223,9 +225,8 @@
         padding-top: 0.5em;
       }
     }
-
-    
   }
+
 }
 
 @include mix.sp {
