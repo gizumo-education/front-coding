@@ -17,12 +17,12 @@
     font-size: 25px;
     margin-bottom: 52px;
     @include utility.sp{
-    margin-bottom: 38px;
     }
     }
 
 
     &__container{
+    margin-top: 53px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row: 1fr 1fr;
