@@ -40,7 +40,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 60px 10px 20px 10px;
+    border-radius: 10px;
 
     @include utility.sp{
     width: 100%;
@@ -66,10 +66,9 @@
 
       &-title{
       display: block;
-      width: 85.71%;
-      height: 72px;
       line-height: 1.2;
       margin: 0 auto;
+      margin-top: 18.68%;
       position: relative;
       z-index: 1;
       font-family: 'Noto Sans JP';
@@ -84,24 +83,15 @@
 
       &-text{
       display: block;
-      width: 67.37%;
-      height: 72px;
       margin: 0 auto;
-      margin-top: 4px;
+      margin-top: 11.84%;
       position: relative;
       z-index: 10;
       font-family: 'Noto Sans JP';
       font-weight: 400;
       font-size: 16px;
-      line-height: 1.2;
+      line-height: 1.5;
       color: #FFFFFF;
-      @include utility.sp{
-      font-size: 14px;
-      }
-
-        &:nth-child(2){
-        width: 75.79%;
-        }
       }
 
     }
