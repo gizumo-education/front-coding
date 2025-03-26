@@ -1,0 +1,147 @@
+@use '../../foundation/variables' as var;
+@use '../../foundation/mixins' as mix;
+
+.slick-slide {
+  margin: 0 10px;
+}
+
+
+.c-prev-arrow {
+  width: 60px;
+  height: 60px;
+  background-color: var.$white;
+  position: absolute;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  left: 3.8%;
+  z-index: 10;
+  border-radius: 50%;
+  opacity: .5;
+
+  &::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 0;
+    border-bottom: solid 1px var.$black;
+    border-left: solid 1px var.$black;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: 40%;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+
+
+.c-next-arrow {
+  width: 60px;
+  height: 60px;
+  background-color: var.$white;
+  position: absolute;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  left: 96%;
+  z-index: 10px;
+  border-radius: 50%;
+  opacity: .5;
+
+  &::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 0;
+    border-top: solid 1px var.$black;
+    border-right: solid 1px var.$black;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: 35%;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@include mix.tab {
+  .c-prev-arrow {
+    background-color: var.$white;
+    position: absolute;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    left: 5.2%;
+    z-index: 10;
+    border-radius: 50%;
+    opacity: .5;
+
+    &::before {
+      content: '';
+      width: 15px;
+      height: 15px;
+      border: 0;
+      border-bottom: solid 1px var.$black;
+      border-left: solid 1px var.$black;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0;
+      left: 40%;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  .c-next-arrow {
+    width: 60px;
+    height: 60px;
+    background-color: var.$white;
+    position: absolute;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    left: 94.8%;
+    z-index: 10px;
+    border-radius: 50%;
+    opacity: .5;
+  
+    &::before {
+      content: '';
+      width: 15px;
+      height: 15px;
+      border: 0;
+      border-top: solid 1px var.$black;
+      border-right: solid 1px var.$black;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0;
+      left: 35%;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  .slick-track {
+    width: 100%;
+  }
+}
+
+
+@include mix.sp {
+  .c-prev-arrow {
+    width: 42px;
+    height: 42px;
+    top: 50%;
+    left: 9.8%;
+  }
+
+
+  .c-next-arrow {
+    width: 42px;
+    height: 42px;
+    top: 50%;
+    left: 90.8%;
+  }
+}

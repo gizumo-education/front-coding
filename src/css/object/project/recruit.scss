@@ -1,49 +1,53 @@
 @use '../../foundation/variables' as var;
 @use '../../foundation/mixins' as mix;
 
+#recruit {
+  scroll-margin-top: 55px;
+  background-color: var.$searchBackColor;
+}
+
 .p-recruit {
   width: 100%;
-  background-color: var.$bgLightBlue;
-  @include mix.display(column);
+  max-width: 1180px;
+  margin: 0 auto;
 
-  h2 {
-    margin-top: 64px;
-    width: 100px;
-    font-size: 25px;
-    font-weight: var.$regular;
+  &__box {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 64px 0;
+
+    &--new {
+      width: 100%;
+      h2 {
+        font-size: 25px;
+        font-weight: var.$regular;
+        margin-left: 10%;
+      }
+    }
   }
 
   &__container {
-    @include mix.display(row);
-    gap: 20px;
-  }
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 
-  &__box {
-    @include mix.display(column);
-    gap: 25px;
-
-    &--new {
-      display: flex;
-      align-items: flex-start;
-      width: 100%;
+    &__slick {
+      padding: 10px 0;
     }
   }
 
   &__contents {
     width: 100%;
-    max-width: 280px;
-    @include mix.display(column);
-    gap: 8px;
+    border-radius: 10px;
+    max-width: 370px;
 
     h3 {
       font-size: 16px;
+      font-weight: var.$regular;
       line-height: 1.5;
-    }
-
-    p {
-      font-size: 16px;
-      width: 278px;
-      line-height: 1.5;
+      margin-bottom: 8px;
     }
 
     img {
@@ -74,6 +78,7 @@
       gap: 10px;
       height: 21px;
       box-sizing: border-box;
+      width: 100%;
 
       p {
         display: flex;
@@ -84,7 +89,7 @@
       }
 
       p:nth-child(1) {
-        max-width: 60px;
+        width: 60px;
         background-color: var.$recruitTableColor;
         @include mix.display(row);
       }
@@ -97,6 +102,7 @@
     background-color: var.$searchColor;
     border-radius: 30px;
     height: 60px;
+    margin: 0 auto;
     margin-top: 40px;
     @include mix.display(row);
     cursor: pointer;
@@ -121,15 +127,27 @@
   .p-recruit {
     width: 100%;
     margin: 0 auto;
+    max-width: 768px;
+
+    &__container {
+      width: 100%;
+    }
+
+    &__contents {
+      width: 80%;
+    }
   }
 }
-
 
 @include mix.sp {
   .p-recruit {
     width: 100%;
-    @include mix.display(row);
+    max-width: 370px;
     margin: 0 auto;
+
+    &__container {
+      width: 100%;
+    }
 
     &__contents {
       width: 100%;
@@ -144,6 +162,12 @@
         width: 100%;
         max-width: 370px;
       }
+
+      h3 {
+        font-size: 16px;
+        font-weight: var.$bold;
+        margin-bottom: 10px;
+      }
     }
 
     &__contents:not(:first-child) {
@@ -151,32 +175,34 @@
     }
 
     &__box {
-      width: 90%;
+      width: 100%;
       max-width: 370px;
-      @include mix.display(column);
+      padding: 0 5px;
+      padding-top: 30px;
+      padding-bottom: 60px;
 
 
       &--new {
-        width: 100%;
-        @include mix.display(row);
+        width: 90%;
+        text-align: center;
+        margin-bottom: 30px;
 
         h2 {
           font-size: 25px;
           font-weight: var.$bold;
-          margin-top: 30px;
         }
       }
     }
 
     &__container {
       width: 100%;
-      @include mix.display(column);
+      max-width: 350px;
     }
 
 
     &__more {
-      margin-bottom: 60px;
       margin-top: 10px;
+      margin-bottom: 0;
       width: 100%;
       max-width: 370px;
     }
