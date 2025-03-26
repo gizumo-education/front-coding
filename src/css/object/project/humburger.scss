@@ -28,3 +28,8 @@ z-index: 1000;
 .is-active{
 right: 0;
 }
+
+.fixed{
+overflow: hidden;
+background-attachment: fixed;
+}

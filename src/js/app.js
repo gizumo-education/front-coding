@@ -6,6 +6,7 @@ $(function () {
     $("#span1").toggleClass("span1");
     $("#span2").toggleClass("span2");
     $("#span3").toggleClass("span3");
+    $("#body").toggleClass("fixed");
   });
   $(".p-nav__item__link").on("click", function () {
     $("#nav").removeClass("is-active");
