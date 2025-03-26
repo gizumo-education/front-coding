@@ -29,7 +29,6 @@ width: 100%;
 
     @include utility.sp{
     font-size: 2.2em;
-    margin-bottom: 16px;
     }
     }
 
@@ -45,7 +44,7 @@ width: 100%;
 
     @include utility.sp{
     font-size: 14px;
-    margin-bottom: 13px;
+    margin-top: 16px;
     }
     }
 
@@ -69,7 +68,6 @@ width: 100%;
     max-width: 630px;
     display: flex;
     gap: 10px;
-    margin-bottom: 15px;
 
     @include utility.tab{
     max-width: 400px;
@@ -88,7 +86,6 @@ width: 100%;
       @include utility.sp{
       width: 100px;
       height: 30px;
-
       }
 
         &-select{
