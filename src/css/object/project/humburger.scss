@@ -1,16 +1,11 @@
 .p-nav{
 position: fixed;
-top: 0;
+top: 0.16rem + 0.16rem + 0.38rem;
 right: -780px;
 width: 400px;
 height: 554px;
 background-color: rgba(0, 0, 0, 0.7);
 z-index: 1000;
-
-// jsの時に使用
-// &--is-active{
-// right: 0;
-// }
 
   &__list{
   color: #FFFFFF;
@@ -28,4 +23,8 @@ z-index: 1000;
     text-decoration: none;
     }
   }
+}
+
+.is-active{
+right: 0;
 }
