@@ -16,6 +16,7 @@ overflow-x: hidden;
 @include utility.sp{
 background-image: url(../img/picture/main_sp.png);
 height: 270px;
+background-size: cover;
 }
 
   &__contents{
@@ -28,7 +29,7 @@ height: 270px;
   box-sizing: border-box;
 
   @media screen and (max-width: 767px) and (min-width: 515px){
-  margin-top: 24px !important;
+  margin-top: 28px !important;
   }
 
   @include utility.sp{
@@ -62,6 +63,10 @@ height: 270px;
     width: 1.5rem;
     min-width: 149px;
     height: auto;
+
+    @media screen and (max-width: 767px) and (min-width: 515px){
+    width:1.1rem !important;
+    }
     }
     }
 
