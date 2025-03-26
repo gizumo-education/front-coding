@@ -13,6 +13,10 @@
     font-family: 'Noto Sans JP';
     font-weight: 700;
     font-size: 25px;
+
+    @include utility.tab{
+    font-size: 3em;
+    }
     }
 
 
@@ -82,7 +86,7 @@
       color: #FFFFFF;
 
       @include utility.tab{
-      font-size: 0.25rem;
+      font-size: 2em;
       }
 
       @include utility.sp{
@@ -107,7 +111,7 @@
       color: #FFFFFF;
 
       @include utility.tab{
-      font-size: 0.18rem;
+      font-size: 1.8em;
       }
       }
 

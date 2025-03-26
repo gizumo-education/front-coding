@@ -25,6 +25,10 @@ padding-bottom: 60px;
     font-size: 25px;
     padding-bottom: 25px;
 
+    @include utility.tab{
+    font-size: 2.6em;
+    }
+
     @include utility.sp{
     font-weight: 700;
     text-align: center;

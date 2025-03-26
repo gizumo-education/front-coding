@@ -16,7 +16,9 @@
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 52px;
-    @include utility.sp{
+
+    @include utility.tab{
+    font-size: 3em;
     }
     }
 
@@ -37,7 +39,7 @@
 
   &__box{
   width: 100%;
-  height: auto;;
+  height: auto;
   font-family: 'Noto Sans JP';
   padding: 40px 62px;
   border: none;
@@ -54,6 +56,10 @@
   font-size: 24px;
   color: #DE5579;
   margin-bottom: 36px;
+
+  @include utility.tab{
+  font-size: 2.6em;
+  }
 
   @include utility.sp{
   font-size: 2em;
