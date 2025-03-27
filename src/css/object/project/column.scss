@@ -1,3 +1,4 @@
+@use "../../object/utility/utility.scss";
 @import "../../foundation/mixins.scss";
 
 .p-column{
@@ -12,6 +13,10 @@
     font-family: 'Noto Sans JP';
     font-weight: 700;
     font-size: 25px;
+
+    @include utility.tab{
+    font-size: 3em;
+    }
     }
 
 
@@ -20,6 +25,12 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+
+    @include utility.sp{
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 10px;
+    }
     }
 
 
@@ -34,6 +45,17 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
+
+    @include utility.sp{
+    width: 100%;
+    max-width: 100%;
+    height: 234.9px;
+
+    @media screen and (max-width: 767px) and (min-width: 450px){
+    width: 370px;
+    height: 240px;
+    }
+    }
 
       &:nth-child(2){
       background-image: url(../img/picture/column2.png);
@@ -62,6 +84,18 @@
       font-weight: 700;
       font-size: 24px;
       color: #FFFFFF;
+
+      @include utility.tab{
+      font-size: 2em;
+      }
+
+      @include utility.sp{
+      font-size: 2em;
+
+      @media screen and (max-width: 767px) and (min-width: 450px){
+      font-size: 1.4em;
+      }
+      }
       }
 
       &-text{
@@ -75,6 +109,10 @@
       font-size: 16px;
       line-height: 1.5;
       color: #FFFFFF;
+
+      @include utility.tab{
+      font-size: 1.8em;
+      }
       }
 
     }
@@ -86,6 +124,10 @@
     }
     .more-button{
     @include more-button(420px);
+
+    @include utility.sp{
+    @include more-button(370px);
+    }
     }
 }
 }

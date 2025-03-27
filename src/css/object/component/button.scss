@@ -6,6 +6,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 width: 140px;
+min-width: 130px;
 height: 60px;
 border-radius: 30px;
 border: none;
@@ -22,9 +23,31 @@ transition: all 0.3s;
   &:hover{
   opacity: 0.8;
   }
+
+  @include utility.tab{
+  width: 130px;
+  height: 50px;
+  font-size: 2.2em;
+  }
+
+  @include utility.sp{
+  width: 160px;
+  height: 40px;
+  }
 }
 
 .p-search__icon{
 width: auto;
 height: auto;
+
+@include utility.tab{
+  width: 20px;
+  height: auto;
+  }
+
+
+@include utility.sp{
+width: 18px;
+height: auto;
+}
 }

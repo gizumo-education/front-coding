@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+
 // ページ上部のキービジュアルに関するスタイル
 .p-keyvisual{
 background-image: url(../img/picture/main.png);
@@ -12,6 +13,11 @@ display: flex;
 text-align: right;
 overflow-x: hidden;
 
+@include utility.sp{
+background-image: url(../img/picture/main_sp.png);
+height: 270px;
+background-size: cover;
+}
 
   &__contents{
   margin-top: 56px;
@@ -21,7 +27,15 @@ overflow-x: hidden;
   width: 70%;
   max-width: 100%;
   box-sizing: border-box;
+
+  @media screen and (max-width: 767px) and (min-width: 515px){
+  margin-top: 28px !important;
   }
+
+  @include utility.sp{
+  margin-top: 61px;
+  }
+}
 
   &__heading{
   display: flex;
@@ -37,6 +51,28 @@ overflow-x: hidden;
   max-width: 350px;
   height: auto;
 
+  @include utility.tab{
+  width: 65%;
+  }
+
+    &__sp{
+    display: none;
+
+    @include utility.sp{
+    display: block;
+    width: 1.5rem;
+    min-width: 149px;
+    height: auto;
+
+    @media screen and (max-width: 767px) and (min-width: 515px){
+    width:1.1rem !important;
+    }
+    }
+    }
+
+  @include utility.sp{
+  display: none;
+  }
   }
 
   &__title2{
@@ -44,7 +80,23 @@ overflow-x: hidden;
   max-width: 803px;
   height: auto;
   margin-top: 40px;
+
+  @include utility.tab{
+  width: 80%;
   }
+
+  @include utility.sp{
+  width: 2.72rem ;
+  margin-top: 12px ;
+  }
+  }
+
+  .title-2-wrap{
+  @include utility.tab{
+  text-align: center;
+  }
+  }
+
 
   &__text {
   color:#2EB6AA;
@@ -65,10 +117,43 @@ overflow-x: hidden;
   align-items: center;
   margin-top: 54px;
   margin-bottom: 4%;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1000px) and (min-width: 768px){
+  font-size: 14px !important;
+  }
+
+  @include utility.tab{
+  width: 270px;
+  height: 50px;
+  font-size: 1.4em;
+  }
+
+  @include utility.sp{
+  width: 170px;
+  height: 30px;
+  min-width: 30px;
+  font-size: 0.08rem;
+  margin-top: 18px;
+  border-radius: 5px;
+  border: #2EB6AA solid 1px;
+
+  @media screen and (max-width: 767px) and (min-width: 515px){
+  width: auto;
+  }
+  }
 
     span{
     font-weight: 700;
     font-size: 40px;
+
+    @include utility.tab{
+    font-size: 2.4em;
+    }
+
+    @include utility.sp{
+    font-size: 0.16rem;
+    }
     }
 }
 }

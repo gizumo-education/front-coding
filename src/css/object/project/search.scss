@@ -1,20 +1,38 @@
+@use '../../object/utility/utility.scss';
+
 .p-search{
 display: block;
 margin: 0 auto;
 width: 100%;
 
   &__area{
-  margin: 60px 0;
+  margin-top: 60px;
   padding: 40px 0;
   background-color: #DEEEF9;
   border-radius: 10px;
   text-align: center;
+
+  @include utility.sp{
+  padding: 15px 25px;
+  flex-wrap: wrap;
+  }
 
 
     &__heading{
     font-family: 'Noto Sans JP';
     font-weight: 700;
     font-size: 25px;
+    @media screen and (max-width: 767px) and (min-width: 400px){
+    font-size: 1.8em !important;
+    }
+
+    @include utility.tab{
+    font-size: 2.8em;
+    }
+
+    @include utility.sp{
+    font-size: 2.2em;
+    }
     }
 
     &__text{
@@ -22,6 +40,15 @@ width: 100%;
     font-weight: 400;
     font-size: 20px;
     margin-top: 20px;
+
+    @include utility.tab{
+    font-size: 2.0em;
+    }
+
+    @include utility.sp{
+    font-size: 14px;
+    margin-top: 16px;
+    }
     }
 
     &__container{
@@ -30,6 +57,26 @@ width: 100%;
     justify-content: center;
     gap: 1%;
     padding: 0 2%;
+    margin-top: 26px;
+
+
+
+    @include utility.sp{
+    flex-direction: column;
+    align-items: center;
+    }
+
+    &__wrapper{
+    width: 100%;
+    max-width: 630px;
+    display: flex;
+    gap: 10px;
+
+    @include utility.tab{
+    max-width: 400px;
+    gap: 6px;
+    }
+    }
     margin-top: 20px;
 
       &__select-wrapper{
@@ -39,6 +86,10 @@ width: 100%;
       width: 100%;
       max-width: 200px;
 
+      @include utility.sp{
+      width: 100px;
+      height: 30px;
+      }
 
         &-select{
         flex-shrink: 1;
@@ -56,6 +107,24 @@ width: 100%;
         appearance: none;
         overflow: hidden;
         box-sizing: border-box;
+
+        @include utility.tab{
+        width: 100%;
+        min-width: 126px;
+        height: 50px;
+        font-size: 1.6em;
+        padding: 10px 35px 10px 10px;
+        }
+
+        @include utility.sp{
+        width: 100%;
+        min-width: 62px;
+        height: 30px;
+        padding: 6px ;
+        font-size: 12px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        }
         }
 
         &::after{
@@ -69,6 +138,16 @@ width: 100%;
         top: 24px;
         right: 15px;
         margin: auto;
+
+        @include utility.tab{
+        top: 20px;
+        }
+
+        @include utility.sp{
+        border-width: 7px 7px 0;
+        top: 12px;
+        right: 10px;
+        }
         }
       }
     }
@@ -79,5 +158,9 @@ width: 100%;
 
   &__area{
   margin: 150px 0 200px 0;
+  @include utility.sp{
+  margin: 60px 0 100px 0;
+  }
+
   }
 }

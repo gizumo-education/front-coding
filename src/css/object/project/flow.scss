@@ -1,3 +1,5 @@
+@use '../../object/utility/utility.scss';
+
 .p-flow{
 
   &__area{
@@ -5,21 +7,38 @@
   margin: 0 auto;
   margin-top: 106px;
   text-align: center;
+  @include utility.sp{
+  margin-top: 60px;
+  }
+
 
     &__heading{
     font-family: 'Noto Sans JP';
     font-weight: 700;
     font-size: 25px;
+
+    @include utility.tab{
+    font-size: 3em;
+    }
     }
 
 
     &__contents-wrap{
     width: 100%;
-    height: 360px;
+    aspect-ratio: 59 /18; //1180:360を約分した比率
+    height: auto;;
     margin-top: 52px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2px;
+
+    @include utility.sp{
+    flex-direction: column;
+    margin-top: 34px;
+    height: auto;
+    gap: 10px;
+    }
     }
 
     &__arrow{
@@ -27,7 +46,7 @@
     width: 1.25vw;
     min-width: 12px;
     max-width: 20px;
-    height: 2.5vw;
+    height: 2.5vh;
     min-height: 20px;
     max-height: 40px;
     flex-shrink: 0;
@@ -38,19 +57,24 @@
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 1.25vw 0 1.25vw 1.25vw;
+      border-width: 20px 0 20px 20px;
       border-color: transparent transparent transparent #DE1E79;
       position: absolute;
       top: 50%;
       right: 50%;
       transform: translate(50%, -50%);
       margin: auto;
+
+      @include utility.sp{
+      border-width: 20px 20px 0px 20px;
+      border-color: #DE1E79 transparent transparent transparent;
+      }
       }
     }
 
     &__contents{
-    width: 94.92%;
     max-width: 280px;
+    width: auto;
     height: 100%;
     padding-bottom: 42px;
     flex-grow: 1;
@@ -63,6 +87,14 @@
     border-radius: 10px;
     box-sizing: border-box;
 
+    @include utility.tab{
+    height: 100%;
+    }
+
+    @include utility.sp{
+    height: 293px;
+    }
+
       &-step{
       position: absolute;
       top: 10px;
@@ -70,31 +102,62 @@
       width: 21.43%;
       max-width: 60px;
       height: auto;
+      @include utility.sp{
+      width: 16%;
+      height: auto;
+      }
       }
 
       &-icon{
       height: auto;
       box-sizing: border-box;
 
-        &.icon-1 { width: 36.79%; max-width: 103px; margin-top: 21.43%;}
-        &.icon-2 { width: 28.57%; max-width: 80px; margin-top: 25%;}
-        &.icon-3 { width: 38.57%; max-width: 108px; margin-top: 21.43%;}
-        &.icon-4 { width: 38.93%; max-width: 109px; margin-top: 20%;}
+        &.icon-1 { width: 36.79%; margin-top: 20%;}
+        &.icon-2 { width: 28.57%; margin-top: 22%;}
+        &.icon-3 { width: 38.57%; margin-top: 22%;}
+        &.icon-4 { width: 38.93%; margin-top: 20%;}
+
+      @include utility.sp{
+        &.icon-1 { width: 76.72px; margin-top: 55px;}
+        &.icon-2 { width: 74.95px; margin-top: 55px;}
+        &.icon-3 { width: 80.12px; margin-top: 55px;}
+        &.icon-4 { width: 73.57px; margin-top: 55px;}
+      }
       }
 
       &-title{
       font-family: 'Noto Sans JP';
       font-weight: 700;
       font-size: 24px;
-      line-height: 30px;
-      margin-top: 20px;
+      line-height: 1.2;
       box-sizing: border-box;
+      margin-top: 24px;
+        &.title-1{margin-top: 20px;}
+        &.title-3{padding-bottom: 4px;}
+        &.title-4{padding-bottom: 4px;}
 
-        &.title-3{ padding-top: 6px;}
+      @media screen and (max-width: 1470px) and (min-width: 1199px){
+      font-size: 18px;
+      }
+
+      @include utility.tab{
+      margin-top: 18px;
+      font-size: 0.2rem;
+      }
+
+        &-br{
+        @include utility.sp{
+        display: none;
+        }
+        }
+
+      @include utility.sp{
+      font-size: 20px;
+      }
       }
 
       &-text{
-      margin-top: auto;
+      margin-top: 18px;
       font-family: 'Noto Sans JP';
       font-weight: 400;
       font-size: 14px;
@@ -103,6 +166,16 @@
       height: auto;
       padding: 0 20px;
       box-sizing: border-box;
+        &.text-3{margin-top: 14px;}
+        &.text-4{margin-top: 14px;}
+
+      @media screen and (max-width: 1470px) and (min-width: 1199px){
+      font-size: 12px;
+      }
+
+      @include utility.tab{
+      font-size: 0.14rem;
+      }
       }
     }
 

@@ -30,19 +30,33 @@
           <span></span>
           <span></span>
         </button>
+
+        <nav class="p-nav" id="nav">
+          <ul class="p-nav__list">
+            <li class="p-nav__item"><a class="p-nav__item__link" href="#link-top">トップ</a></li>
+            <li class="p-nav__item"><a class="p-nav__item__link" href="#link-recruit">新着求人</a></li>
+            <li class="p-nav__item"><a class="p-nav__item__link" href="#link-feature">4つの特徴</a></li>
+            <li class="p-nav__item"><a class="p-nav__item__link" href="#link-flow">転職までの流れ</a></li>
+            <li class="p-nav__item"><a class="p-nav__item__link" href="#link-column">転職お役立ちコンテンツ</a></li>
+          </ul>
+        </nav>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="p-keyvisual">
+    <section class="p-keyvisual" id="link-top">
       <div class="l-inner">
         <div class="p-keyvisual__contents">
           <h1 class="p-keyvisual__heading">
             <img class="p-keyvisual__title" src="./img/text/keyvisual.png" width="350" height="176"
-              alt="使ってよかった転職サイトno.1">
-            <img class="p-keyvisual__title2" src="./img/text/keyvisual-text.png" width="803" height="57"
-              alt="医療事務求人を探すならギズジョブ">
+              alt="2021年使ってよかった転職サイトno1">
+            <img class="p-keyvisual__title__sp" src="./img/text/keyvisual_sp.png" width="158" height="82"
+              alt="2021年使ってよかった転職サイトno1">
+            <div class="title-2-wrap">
+              <img class="p-keyvisual__title2" src="./img/text/keyvisual-text.png" width="803" height="57"
+                alt="医療事務求人を探すならギズジョブ">
+            </div>
           </h1>
           <p class="p-keyvisual__text">現在の求人掲載数 ： <span>2,320</span>件</p>
         </div>
@@ -56,37 +70,39 @@
           <p class="p-search__area__text">働きたい職種・地域・希望給与を入れて検索！</p>
           <form>
             <div class="p-search__area__container">
-              <div class="p-search__area__container__select-wrapper">
-                <select class="p-search__area__container__select-wrapper-select">
-                  <option>医療事務</option>
-                  <option>調理事務</option>
-                  <option>診療情報管理士</option>
-                  <option>歯科助手</option>
-                  <option>歯科事務</option>
-                  <option>看護補助・看護助手</option>
-                  <option>病院内SE</option>
-                </select>
-              </div>
-              <div class="p-search__area__container__select-wrapper">
-                <select class="p-search__area__container__select-wrapper-select">
-                  <option>東京都</option>
-                  <option>神奈川県</option>
-                  <option>群馬県</option>
-                  <option>埼玉県</option>
-                  <option>千葉県</option>
-                  <option>栃木県</option>
-                </select>
-              </div>
-              <div class="p-search__area__container__select-wrapper">
-                <select class="p-search__area__container__select-wrapper-select">
-                  <option>月給20万〜</option>
-                  <option>月給17万〜</option>
-                  <option>月給18万~</option>
-                  <option>月給19万~</option>
-                  <option>月給21万~</option>
-                  <option>月給22万~</option>
-                  <option>月給23万~</option>
-                </select>
+              <div class="p-search__area__container__wrapper">
+                <div class=" p-search__area__container__select-wrapper">
+                  <select class="p-search__area__container__select-wrapper-select">
+                    <option>医療事務</option>
+                    <option>調理事務</option>
+                    <option>診療情報管理士</option>
+                    <option>歯科助手</option>
+                    <option>歯科事務</option>
+                    <option>看護補助・看護助手</option>
+                    <option>病院内SE</option>
+                  </select>
+                </div>
+                <div class="p-search__area__container__select-wrapper">
+                  <select class="p-search__area__container__select-wrapper-select">
+                    <option>東京都</option>
+                    <option>神奈川県</option>
+                    <option>群馬県</option>
+                    <option>埼玉県</option>
+                    <option>千葉県</option>
+                    <option>栃木県</option>
+                  </select>
+                </div>
+                <div class="p-search__area__container__select-wrapper">
+                  <select class="p-search__area__container__select-wrapper-select">
+                    <option>月給20万〜</option>
+                    <option>月給17万〜</option>
+                    <option>月給18万~</option>
+                    <option>月給19万~</option>
+                    <option>月給21万~</option>
+                    <option>月給22万~</option>
+                    <option>月給23万~</option>
+                  </select>
+                </div>
               </div>
               <input class="p-search__input" type="text" placeholder="キーワード・企業名・スキルなど">
               <button class="p-search__common-button">
@@ -99,7 +115,7 @@
       </div>
     </section>
 
-    <section class="p-recruit">
+    <section class="p-recruit" id="link-recruit">
       <div class="l-inner">
         <div class="p-recruit__area">
           <h2 class="p-recruit__area__heading">新着求人</h2>
@@ -107,6 +123,8 @@
             <button class="p-recruit__area__wrapper-arrow left"></button>
             <button class="p-recruit__area__wrapper-arrow right"></button>
             <div class="p-recruit__area__contents">
+              <img class="p-recruit__area__contents-image-sp" src="./img/picture/recruit_sp.png" width="370"
+                height="208" alt="">
               <img class="p-recruit__area__contents-image" src="./img/picture/recruit1.jpg" width="280" height="200"
                 alt="">
               <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
@@ -125,7 +143,7 @@
                 </div>
               </dl>
             </div>
-            <div class="p-recruit__area__contents">
+            <div class="p-recruit__area__contents p-recruit__area__contents__sp-hide">
               <img class="p-recruit__area__contents-image" src="./img/picture/recruit2.jpg" width="280" height="200"
                 alt="">
               <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
@@ -144,7 +162,7 @@
                 </div>
               </dl>
             </div>
-            <div class="p-recruit__area__contents">
+            <div class="p-recruit__area__contents p-recruit__area__contents__sp-hide">
               <img class="p-recruit__area__contents-image" src="./img/picture/recruit3.jpg" width="280" height="200"
                 alt="">
               <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
@@ -163,7 +181,7 @@
                 </div>
               </dl>
             </div>
-            <div class="p-recruit__area__contents">
+            <div class="p-recruit__area__contents p-recruit__area__contents__sp-hide">
               <img class="p-recruit__area__contents-image" src="./img/picture/recruit4.jpg" width="280" height="200"
                 alt="">
               <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
@@ -197,18 +215,20 @@
     </section>
   </main>
 
-  <section class="p-feature">
+  <section class="p-feature" id="link-feature">
     <div class="l-inner">
       <div class="p-feature__area">
         <h2 class="p-feature__area__heading">ギズジョブの4つの特徴</h2>
         <div class="p-feature__area__container">
           <div class="p-feature__box">
             <h3 class="p-feature__heading">WEB上で応募完結</h3>
-            <p class="p-feature__text">掲載案件は基本的に当社グループ企業となるため、皆様にはより詳細にクリーンな職場情報をお届けいたします。</p>
+            <p class="p-feature__text">エントリーシートの記入を済ませれば、<br class="p-feature__text__br">あとは気になる企業に応募して待つだけで面接アポまで完結！
+            </p>
           </div>
           <div class="p-feature__box">
             <h3 class="p-feature__heading">安心・安全</h3>
-            <p class="p-feature__text">エントリーシートの記入を済ませれば、あとは気になる企業に応募して待つだけで面接アポまで完結！</p>
+            <p class="p-feature__text">掲載案件は基本的に当社グループ企業となるため、皆様にはより詳細にクリーンな職場情報をお届けいたします。
+            </p>
           </div>
           <div class="p-feature__box">
             <h3 class="p-feature__heading">わかりやすい</h3>
@@ -224,7 +244,7 @@
     </div>
   </section>
 
-  <section class="p-flow">
+  <section class="p-flow" id="link-flow">
     <div class="l-inner">
       <div class="p-flow__area">
         <h2 class="p-flow__area__heading">転職までの流れ</h2>
@@ -233,7 +253,7 @@
             <img class="p-flow__area__contents-step" src="./img/text/step1.png" width="60" height="60" alt="step1">
             <img class="p-flow__area__contents-icon icon-1" src="./img/icon/flow1-memo.png" width="103" height="100"
               alt="">
-            <p class="p-flow__area__contents-title">エントリーシートの<br>作成</p>
+            <p class="p-flow__area__contents-title title-1">エントリーシートの<br class="p-flow__area__contents-title-br">作成</p>
             <p class="p-flow__area__contents-text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここには</p>
           </div>
           <div class="p-flow__area__arrow"></div>
@@ -241,7 +261,7 @@
             <img class="p-flow__area__contents-step" src="./img/text/step2.png" width="60" height="60" alt="step2">
             <img class="p-flow__area__contents-icon icon-2" src="./img/icon/flow2-search.png" width="80" height="80"
               alt="">
-            <p class="p-flow__area__contents-title">気になる企業の<br>ピックアップ</p>
+            <p class="p-flow__area__contents-title">気になる企業の<br class="p-flow__area__contents-title-br">ピックアップ</p>
             <p class="p-flow__area__contents-text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここには</p>
           </div>
           <div class="p-flow__area__arrow"></div>
@@ -250,22 +270,22 @@
             <img class="p-flow__area__contents-icon icon-3" src="./img/icon/flow3-message.png" width="108" height="100"
               alt="">
             <p class="p-flow__area__contents-title title-3">複数企業に応募</p>
-            <p class="p-flow__area__contents-text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここには</p>
+            <p class="p-flow__area__contents-text text-3">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここには</p>
           </div>
           <div class="p-flow__area__arrow"></div>
           <div class="p-flow__area__contents">
             <img class="p-flow__area__contents-step" src="./img/text/step4.png" width="60" height="60" alt="step4">
             <img class="p-flow__area__contents-icon icon-4" src="./img/icon/flow4-sparkling.png" width="109"
               height="111" alt="">
-            <p class="p-flow__area__contents-title">内定・転職！</p>
-            <p class="p-flow__area__contents-text">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここには</p>
+            <p class="p-flow__area__contents-title title-4">内定・転職！</p>
+            <p class="p-flow__area__contents-text text-4">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここには</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="p-column">
+  <section class="p-column" id="link-column">
     <div class="l-inner">
       <div class="p-column__area">
         <h2 class="p-column__area__heading">転職お役立ちコンテンツ</h2>
@@ -290,44 +310,46 @@
     </div>
   </section>
 
-  <section class="p-search p-search-2">
+  <section class="p-search">
     <div class="l-inner">
-      <div class="p-search__area p-search-2__area">
+      <div class="p-search__area">
         <h2 class="p-search__area__heading">お仕事検索</h2>
         <p class="p-search__area__text">働きたい職種・地域・希望給与を入れて検索！</p>
         <form>
           <div class="p-search__area__container">
-            <div class="p-search__area__container__select-wrapper">
-              <select class="p-search__area__container__select-wrapper-select">
-                <option>医療事務</option>
-                <option>調理事務</option>
-                <option>診療情報管理士</option>
-                <option>歯科助手</option>
-                <option>歯科事務</option>
-                <option>看護補助・看護助手</option>
-                <option>病院内SE</option>
-              </select>
-            </div>
-            <div class="p-search__area__container__select-wrapper">
-              <select class="p-search__area__container__select-wrapper-select">
-                <option>東京都</option>
-                <option>神奈川県</option>
-                <option>群馬県</option>
-                <option>埼玉県</option>
-                <option>千葉県</option>
-                <option>栃木県</option>
-              </select>
-            </div>
-            <div class="p-search__area__container__select-wrapper">
-              <select class="p-search__area__container__select-wrapper-select">
-                <option>月給20万〜</option>
-                <option>月給17万〜</option>
-                <option>月給18万~</option>
-                <option>月給19万~</option>
-                <option>月給21万~</option>
-                <option>月給22万~</option>
-                <option>月給23万~</option>
-              </select>
+            <div class="p-search__area__container__wrapper">
+              <div class=" p-search__area__container__select-wrapper">
+                <select class="p-search__area__container__select-wrapper-select">
+                  <option>医療事務</option>
+                  <option>調理事務</option>
+                  <option>診療情報管理士</option>
+                  <option>歯科助手</option>
+                  <option>歯科事務</option>
+                  <option>看護補助・看護助手</option>
+                  <option>病院内SE</option>
+                </select>
+              </div>
+              <div class="p-search__area__container__select-wrapper">
+                <select class="p-search__area__container__select-wrapper-select">
+                  <option>東京都</option>
+                  <option>神奈川県</option>
+                  <option>群馬県</option>
+                  <option>埼玉県</option>
+                  <option>千葉県</option>
+                  <option>栃木県</option>
+                </select>
+              </div>
+              <div class="p-search__area__container__select-wrapper">
+                <select class="p-search__area__container__select-wrapper-select">
+                  <option>月給20万〜</option>
+                  <option>月給17万〜</option>
+                  <option>月給18万~</option>
+                  <option>月給19万~</option>
+                  <option>月給21万~</option>
+                  <option>月給22万~</option>
+                  <option>月給23万~</option>
+                </select>
+              </div>
             </div>
             <input class="p-search__input" type="text" placeholder="キーワード・企業名・スキルなど">
             <button class="p-search__common-button">
@@ -360,6 +382,15 @@
     </div>
     <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
   </footer>
+
+  <script src="./js/app.js"></script>
+  <script>
+    $(function () {
+      $('#nav').click(function () {
+        $(this).addClass('is-active');
+      });
+    });
+  </script>
 </body>
 
 </html>
