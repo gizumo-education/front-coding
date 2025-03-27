@@ -42,9 +42,13 @@ height: 75px;
   left: 50%;
   transform: translate(-50%, -50%);
 
+  @include utility.tab{
+  font-size: 2.6em;
+  }
+
   @include utility.sp{
-  font-wight: 400;
-  font-size: 1em;
+  font-weight: 400;
+  font-size: 1.4em;
   line-height: 1.6;
   }
 

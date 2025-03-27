@@ -25,8 +25,9 @@ transition: all 0.3s;
   }
 
   @include utility.tab{
-  width: 140px;
-  height: 60px;
+  width: 130px;
+  height: 50px;
+  font-size: 2.2em;
   }
 
   @include utility.sp{

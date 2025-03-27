@@ -7,6 +7,10 @@ height: 554px;
 background-color: rgba(0, 0, 0, 0.7);
 z-index: 1000;
 
+.is-active{
+right: 0;
+}
+
   &__list{
   color: #FFFFFF;
   padding-top: 57px;

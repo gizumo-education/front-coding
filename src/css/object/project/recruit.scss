@@ -6,6 +6,7 @@
 display: block;
 width: 100%;
 height: auto;
+margin-top: 60px;
 padding-top: 64px;
 padding-bottom: 67px;
 background-color: #EFF6FC;
@@ -25,6 +26,10 @@ padding-bottom: 60px;
     font-size: 25px;
     padding-bottom: 25px;
 
+    @include utility.tab{
+    font-size: 2.6em;
+    }
+
     @include utility.sp{
     font-weight: 700;
     text-align: center;
@@ -39,6 +44,7 @@ padding-bottom: 60px;
     width: 100%;
     min-height: 300px;
     overflow-x: auto;
+
     @include utility.sp{
     flex-direction: column;
     margin: 0 auto;
@@ -141,6 +147,10 @@ padding-bottom: 60px;
       margin-bottom: 6px;
       line-height: 1.5;
 
+      @include utility.tab{
+      font-size: 2em;
+      }
+
       @include utility.sp{
       font-weight: 700;
       line-height: 22px;
@@ -155,6 +165,9 @@ padding-bottom: 60px;
           font-family: 'Noto Sans JP';
           font-weight: 400;
           font-size: 14px;
+          @include utility.tab{
+          font-size: 1.8em;
+          }
 
             dt{
             background-color: #FFCAD0;

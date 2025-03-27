@@ -6,7 +6,7 @@ margin: 0 auto;
 width: 100%;
 
   &__area{
-  margin: 60px 0;
+  margin-top: 60px;
   padding: 40px 0;
   background-color: #DEEEF9;
   border-radius: 10px;
@@ -22,10 +22,16 @@ width: 100%;
     font-family: 'Noto Sans JP';
     font-weight: 700;
     font-size: 25px;
+    @media screen and (max-width: 767px) and (min-width: 400px){
+    font-size: 1.8em !important;
+    }
+
+    @include utility.tab{
+    font-size: 2.8em;
+    }
 
     @include utility.sp{
-    font-size: 22px;
-    margin-bottom: 16px;
+    font-size: 2.2em;
     }
     }
 
@@ -35,9 +41,13 @@ width: 100%;
     font-size: 20px;
     margin-top: 20px;
 
+    @include utility.tab{
+    font-size: 2.0em;
+    }
+
     @include utility.sp{
     font-size: 14px;
-    margin-bottom: 13px;
+    margin-top: 16px;
     }
     }
 
@@ -48,6 +58,9 @@ width: 100%;
     gap: 1%;
     padding: 0 2%;
     margin-top: 26px;
+
+
+
     @include utility.sp{
     flex-direction: column;
     align-items: center;
@@ -58,9 +71,10 @@ width: 100%;
     max-width: 630px;
     display: flex;
     gap: 10px;
-    margin-bottom: 15px;
+
     @include utility.tab{
-    max-width: 380px;
+    max-width: 400px;
+    gap: 6px;
     }
     }
     margin-top: 20px;
@@ -75,7 +89,6 @@ width: 100%;
       @include utility.sp{
       width: 100px;
       height: 30px;
-
       }
 
         &-select{
@@ -94,6 +107,14 @@ width: 100%;
         appearance: none;
         overflow: hidden;
         box-sizing: border-box;
+
+        @include utility.tab{
+        width: 100%;
+        min-width: 126px;
+        height: 50px;
+        font-size: 1.6em;
+        padding: 10px 35px 10px 10px;
+        }
 
         @include utility.sp{
         width: 100%;
@@ -117,6 +138,10 @@ width: 100%;
         top: 24px;
         right: 15px;
         margin: auto;
+
+        @include utility.tab{
+        top: 20px;
+        }
 
         @include utility.sp{
         border-width: 7px 7px 0;

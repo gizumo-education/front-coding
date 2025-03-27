@@ -2,7 +2,6 @@
 
 .p-search__input{
 flex: 1.5;
-min-width: 200px;
 max-width: 350px;
 height: 60px;
 padding: 17px 10px 20px;
@@ -17,6 +16,11 @@ cursor: pointer;
 font-size: 14px;
 }
 
+@include utility.tab{
+font-size: 1.4em;
+height: 50px;
+}
+
 @include utility.sp{
 width: 100%;
 max-width: 100%;
@@ -25,5 +29,6 @@ padding: 5px 5px 5px 7px;
 font-size: 14px;
 border-radius: 5px;
 margin-bottom: 19px;
+margin-top: 15px;
 }
 }
