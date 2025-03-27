@@ -37,13 +37,12 @@ padding-bottom: 60px;
     }
 
     &__wrapper{
-    display: flex;
+    // display: flex;
     position: relative;
-    justify-content: space-between;
-    gap: 20px;
+    // justify-content: space-between;
     width: 100%;
     min-height: 300px;
-    overflow-x: auto;
+    overflow: hidden;
 
     @include utility.sp{
     flex-direction: column;
@@ -113,11 +112,6 @@ padding-bottom: 60px;
     &__contents{
       display: block;
 
-      &__sp-hide{
-      @include utility.sp{
-      display: none !important;
-      }
-      }
 
       &-image{
       width: auto;
@@ -196,4 +190,11 @@ padding-bottom: 60px;
     }
     }
   }
+}
+.slick-slider{
+padding: 0 10px;
+box-sizing: border-box;
+}
+.slick-list{
+padding: 0 -10px;
 }

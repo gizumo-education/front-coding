@@ -21,15 +21,14 @@ $(function () {
 
   // //スライダー
   $(".slick").slick({
-    // slide: ".p-recruit__area__contents",
     infinite: true,
     arrows: true,
-    // appendArrows: $(".p-recruit__area__wrapper"),
+    appendArrows: $(".p-recruit__area__wrapper"),
     prevArrow: '<div class="p-recruit__area__wrapper-arrow left"></div>',
     nextArrow: '<div class="p-recruit__area__wrapper-arrow right"></div>',
     slidesToShow: 4,
     slidesToScroll: 1,
     swipeToSlide: true,
-    // variableWidth: true,
+    variableWidth: true,
   });
 });
