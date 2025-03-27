@@ -84,6 +84,7 @@ padding-bottom: 60px;
 
         &.left{
         left: 2px;
+        z-index: 1000;
 
           &::before{
           transform: translate(-25%, -50%) rotate(-135deg);
@@ -92,6 +93,7 @@ padding-bottom: 60px;
 
         &.right{
         right: 2px;
+        z-index: 1000;
         }
 
       }
@@ -107,7 +109,7 @@ padding-bottom: 60px;
 
       &__sp-hide{
       @include utility.sp{
-      display: none;
+      display: none !important;
       }
       }
 
@@ -116,7 +118,7 @@ padding-bottom: 60px;
       height: auto;
 
       &-sp{
-      display: none;
+      display: none !important;
       @include utility.sp{
       display: block;
       width: 100%;
@@ -134,10 +136,11 @@ padding-bottom: 60px;
       &-text{
       font-family: 'Noto Sans JP';
       font-weight: 400;
-      font-size: 16px;
+      font-size: 1.6em;
       margin-top: 8px;
       margin-bottom: 6px;
       line-height: 1.5;
+
       @include utility.sp{
       font-weight: 700;
       line-height: 22px;

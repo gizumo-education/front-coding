@@ -1,5 +1,8 @@
 import $ from "jquery";
+import "slick-carousel";
+import "slick-carousel/slick/slick.css";
 
+//ハンバーガーメニュー
 $(function () {
   $("#hamburger").on("click", function () {
     $("#nav").toggleClass("is-active");
@@ -14,5 +17,19 @@ $(function () {
     $("#span2").removeClass("span2");
     $("#span3").removeClass("span3");
     $("#body").removeClass("fixed");
+  });
+
+  // //スライダー
+  $(".slick").slick({
+    // slide: ".p-recruit__area__contents",
+    infinite: true,
+    arrows: true,
+    // appendArrows: $(".p-recruit__area__wrapper"),
+    prevArrow: '<div class="p-recruit__area__wrapper-arrow left"></div>',
+    nextArrow: '<div class="p-recruit__area__wrapper-arrow right"></div>',
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    // variableWidth: true,
   });
 });
