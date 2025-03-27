@@ -2,7 +2,6 @@ import $ from "jquery";
 import "slick-carousel";
 import "slick-carousel/slick/slick.css";
 
-<<<<<<< HEAD
 //ハンバーガーメニュー
 $(function () {
   $("#hamburger").on("click", function () {
@@ -33,8 +32,4 @@ $(function () {
     swipeToSlide: true,
     // variableWidth: true,
   });
-=======
-$(function () {
-  console.log("環境構築完了");
->>>>>>> develop_tachibana_natsuki
 });
