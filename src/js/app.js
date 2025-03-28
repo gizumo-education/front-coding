@@ -20,35 +20,39 @@ $(function () {
   });
 
   // //スライダー
-  $(".slick").slick({
-    infinite: true,
-    arrows: true,
-    appendArrows: $(".p-recruit__area__wrapper"),
-    prevArrow: '<div class="p-recruit__area__wrapper-arrow left"></div>',
-    nextArrow: '<div class="p-recruit__area__wrapper-arrow right"></div>',
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    swipeToSlide: true,
-    variableWidth: false,
-    adaptiveHeight: true,
-    centerMode: false,
+  $(".slick")
+    .on("init", function (event, slick) {
+      $(".slick-slide > div").addClass("slick-slide-class");
+    })
+    .slick({
+      infinite: true,
+      arrows: true,
+      appendArrows: $(".p-recruit__area__wrapper"),
+      prevArrow: '<div class="p-recruit__area__wrapper-arrow left"></div>',
+      nextArrow: '<div class="p-recruit__area__wrapper-arrow right"></div>',
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      swipeToSlide: true,
+      variableWidth: false,
+      adaptiveHeight: true,
+      centerMode: false,
 
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
         },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          variableWidth: false,
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: false,
+          },
         },
-      },
-    ],
-  });
+      ],
+    });
 });

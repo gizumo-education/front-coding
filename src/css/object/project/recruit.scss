@@ -67,7 +67,7 @@ padding-bottom: 60px;
       @include utility.sp{
       width: 42px;
       height: 42px;
-      top: 54%;
+      top: 48%;
       }
 
         &::before{
@@ -89,6 +89,9 @@ padding-bottom: 60px;
         &.left{
         left: 2px;
         z-index: 1000;
+          @include utility.sp{
+          left: 2px;
+          }
 
           &::before{
           transform: translate(-25%, -50%) rotate(-135deg);
@@ -98,6 +101,9 @@ padding-bottom: 60px;
         &.right{
         right: 2px;
         z-index: 1000;
+          @include utility.sp{
+          right: 2px;
+          }
         }
 
       }
@@ -115,12 +121,13 @@ padding-bottom: 60px;
 
       @include utility.sp{
       width: 90% !important;
+      margin: 0 !important;
       }
 
       &-image{
       width: 100% !important;
       height: auto !important;
-      // max-width: 280px;
+      margin: 0 auto !important;
       object-fit: cover;
 
       &-sp{
@@ -216,14 +223,13 @@ margin: 0 auto;
   }
 
   @include utility.sp{
-  width: 400px !important;
+  width: 90vw !important;
   }
 }
 
 .slick-track{
 display: flex !important;
 justify-content: center !important;
-margin: 0 auto;
 }
 
 
@@ -247,7 +253,13 @@ margin: 0 auto !important;
   }
 
   @include utility.sp{
-  width: 90% !important;
+  width: 100% !important;
   margin: 0 auto !important;
   }
+}
+
+.slick-slide-class{
+display: flex;
+width: fit-content !important;
+justify-content: center;
 }
