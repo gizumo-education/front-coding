@@ -30,6 +30,7 @@ $(function () {
     slidesToScroll: 1,
     swipeToSlide: true,
     variableWidth: false,
+    adaptiveHeight: true,
     centerMode: false,
 
     responsive: [
@@ -38,7 +39,6 @@ $(function () {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          variableWidth: false,
         },
       },
       {
