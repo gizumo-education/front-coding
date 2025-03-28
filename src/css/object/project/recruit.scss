@@ -17,8 +17,10 @@ padding-bottom: 60px;
 }
 
   &__area{
+  width: 100%;
   height: auto;
   margin: 0 auto;
+  overflow: hidden;
 
     &__heading{
     font-family: 'Noto Sans JP';
@@ -37,10 +39,7 @@ padding-bottom: 60px;
     }
 
     &__wrapper{
-    // display: flex;
     position: relative;
-    // justify-content: space-between;
-    width: 100%;
     min-height: 300px;
     overflow: hidden;
 
@@ -110,12 +109,14 @@ padding-bottom: 60px;
     }
 
     &__contents{
+      width: 100%;
       display: block;
 
-
       &-image{
-      width: auto;
-      height: auto;
+      width: 100% !important;
+      height: auto !important;
+      max-width: 280px;
+      object-fit: cover;
 
       &-sp{
       display: none !important;
@@ -134,6 +135,11 @@ padding-bottom: 60px;
       }
 
       &-text{
+
+        &-wrapper{
+        width: 100%;
+        max-width: 280px;
+        }
       font-family: 'Noto Sans JP';
       font-weight: 400;
       font-size: 1.6em;
@@ -146,7 +152,7 @@ padding-bottom: 60px;
       }
 
       @include utility.sp{
-      font-weight: 700;
+      font-size: 1.6em;
       line-height: 22px;
       }
       }
@@ -191,10 +197,37 @@ padding-bottom: 60px;
     }
   }
 }
-.slick-slider{
+
+.slick{
+width: 100%;
+max-width: 100%;
+margin: 0 auto;
+
+  @include utility.tab {
+    width: 95%;
+  }
+  @include utility.sp {
+    width: 95%;
+    flex-direction: column;
+  }
+}
+
+.slick-track{
+display: flex !important;
+justify-content: center !important;
+margin: 0 auto;
+}
+
+
+.slick-list{
+overflow: hidden;
+margin: 0 -10px;
+}
+
+.slick-slide{
+display: flex;
+width: calc((100% - 60px) / 4);
 padding: 0 10px;
 box-sizing: border-box;
-}
-.slick-list{
-padding: 0 -10px;
+justify-content: center;
 }

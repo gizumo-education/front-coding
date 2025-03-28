@@ -1,14 +1,14 @@
 @use '../object/utility/utility.scss';
 // innerのスタイルを記述するファイル
 .l-inner {
-  width: 73.75%;
-  max-width: 1180px;
+  width: 73.75% !important;
+  max-width: 1180px !important;
   margin: 0 auto;
   @include utility.tab {
-    width: 95%;
+    width: 95% !important;
   }
   @include utility.sp {
-    width: 95%;
+    width: 95% !important;
     flex-direction: column;
   }
   &.is-flex {
