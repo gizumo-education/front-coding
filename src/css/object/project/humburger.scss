@@ -3,9 +3,9 @@ position: fixed;
 top: 0.16rem + 0.16rem + 0.38rem;
 right: -780px;
 width: 400px;
-height: 554px;
+height: 100%;
 background-color: rgba(0, 0, 0, 0.7);
-z-index: 1000;
+z-index: 10000;
 
 .is-active{
 right: 0;

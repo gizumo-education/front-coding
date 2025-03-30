@@ -88,7 +88,7 @@ padding-bottom: 60px;
 
         &.left{
         left: 2px;
-        z-index: 1000;
+        z-index: 10;
           @include utility.sp{
           left: 2px;
           }
@@ -100,7 +100,7 @@ padding-bottom: 60px;
 
         &.right{
         right: 2px;
-        z-index: 1000;
+        z-index: 10;
           @include utility.sp{
           right: 2px;
           }

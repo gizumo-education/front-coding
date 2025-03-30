@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 //ハンバーガーメニュー
 $(function () {
   $("#hamburger").on("click", function () {
+    var speed = 300;
     $("#nav").toggleClass("is-active");
     $("#span1").toggleClass("span1");
     $("#span2").toggleClass("span2");
