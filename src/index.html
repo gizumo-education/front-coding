@@ -8,7 +8,7 @@
   <title>基本コーディング</title>
 </head>
 
-<body>
+<body id="body">
   <header class="l-header">
     <nav class="l-header__nav">
 
@@ -25,10 +25,10 @@
         </ul>
       </div>
       <div class="l-header__sp-items">
-        <button class="l-header__hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="l-header__hamburger" id="hamburger">
+          <span id="span1"></span>
+          <span id="span2"></span>
+          <span id="span3"></span>
         </button>
 
         <nav class="p-nav" id="nav">
@@ -119,15 +119,15 @@
       <div class="l-inner">
         <div class="p-recruit__area">
           <h2 class="p-recruit__area__heading">新着求人</h2>
-          <div class="p-recruit__area__wrapper">
-            <button class="p-recruit__area__wrapper-arrow left"></button>
-            <button class="p-recruit__area__wrapper-arrow right"></button>
+          <div class="p-recruit__area__wrapper slick">
             <div class="p-recruit__area__contents">
               <img class="p-recruit__area__contents-image-sp" src="./img/picture/recruit_sp.png" width="370"
-                height="208" alt="">
+                height="208" alt="" id="sp-img">
               <img class="p-recruit__area__contents-image" src="./img/picture/recruit1.jpg" width="280" height="200"
                 alt="">
-              <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-recruit__area__contents-text-wrapper">
+                <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
+              </div>
               <dl class="p-recruit__area__contents-detail">
                 <div class="p-recruit__area__contents-detail-item">
                   <dt>給与</dt>
@@ -143,10 +143,14 @@
                 </div>
               </dl>
             </div>
-            <div class="p-recruit__area__contents p-recruit__area__contents__sp-hide">
+            <div class="p-recruit__area__contents">
+              <img class="p-recruit__area__contents-image-sp" src="./img/picture/recruit_sp.png" width="370"
+                height="208" alt="" id="sp-img">
               <img class="p-recruit__area__contents-image" src="./img/picture/recruit2.jpg" width="280" height="200"
                 alt="">
-              <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-recruit__area__contents-text-wrapper">
+                <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
+              </div>
               <dl class="p-recruit__area__contents-detail">
                 <div class="p-recruit__area__contents-detail-item">
                   <dt>給与</dt>
@@ -162,10 +166,14 @@
                 </div>
               </dl>
             </div>
-            <div class="p-recruit__area__contents p-recruit__area__contents__sp-hide">
+            <div class="p-recruit__area__contents">
+              <img class="p-recruit__area__contents-image-sp" src="./img/picture/recruit_sp.png" width="370"
+                height="208" alt="" id="sp-img">
               <img class="p-recruit__area__contents-image" src="./img/picture/recruit3.jpg" width="280" height="200"
                 alt="">
-              <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-recruit__area__contents-text-wrapper">
+                <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
+              </div>
               <dl class="p-recruit__area__contents-detail">
                 <div class="p-recruit__area__contents-detail-item">
                   <dt>給与</dt>
@@ -181,10 +189,60 @@
                 </div>
               </dl>
             </div>
-            <div class="p-recruit__area__contents p-recruit__area__contents__sp-hide">
+            <div class="p-recruit__area__contents">
+              <img class="p-recruit__area__contents-image-sp" src="./img/picture/recruit_sp.png" width="370"
+                height="208" alt="" id="sp-img">
               <img class="p-recruit__area__contents-image" src="./img/picture/recruit4.jpg" width="280" height="200"
                 alt="">
-              <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
+              <div class="p-recruit__area__contents-text-wrapper">
+                <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
+              </div>
+              <dl class="p-recruit__area__contents-detail">
+                <div class="p-recruit__area__contents-detail-item">
+                  <dt>給与</dt>
+                  <dd>月給 148,000円〜</dd>
+                </div>
+                <div class="p-recruit__area__contents-detail-item">
+                  <dt>所在地</dt>
+                  <dd>三重県伊勢市</dd>
+                </div>
+                <div class="p-recruit__area__contents-detail-item">
+                  <dt>最寄駅</dt>
+                  <dd>伊勢市駅徒歩15分</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="p-recruit__area__contents">
+              <img class="p-recruit__area__contents-image-sp" src="./img/picture/recruit_sp.png" width="370"
+                height="208" alt="" id="sp-img">
+              <img class="p-recruit__area__contents-image" src="./img/picture/recruit4.jpg" width="280" height="200"
+                alt="">
+              <div class="p-recruit__area__contents-text-wrapper">
+                <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
+              </div>
+              <dl class="p-recruit__area__contents-detail">
+                <div class="p-recruit__area__contents-detail-item">
+                  <dt>給与</dt>
+                  <dd>月給 148,000円〜</dd>
+                </div>
+                <div class="p-recruit__area__contents-detail-item">
+                  <dt>所在地</dt>
+                  <dd>三重県伊勢市</dd>
+                </div>
+                <div class="p-recruit__area__contents-detail-item">
+                  <dt>最寄駅</dt>
+                  <dd>伊勢市駅徒歩15分</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="p-recruit__area__contents">
+              <img class="p-recruit__area__contents-image-sp" src="./img/picture/recruit_sp.png" width="370"
+                height="208" alt="" id="sp-img">
+              <img class="p-recruit__area__contents-image" src="./img/picture/recruit4.jpg" width="280" height="200"
+                alt="">
+              <div class="p-recruit__area__contents-text-wrapper">
+                <p class="p-recruit__area__contents-text">平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人</p>
+              </div>
               <dl class="p-recruit__area__contents-detail">
                 <div class="p-recruit__area__contents-detail-item">
                   <dt>給与</dt>
@@ -383,14 +441,9 @@
     <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
   </footer>
 
-  <script src="./js/app.js"></script>
-  <script>
-    $(function () {
-      $('#nav').click(function () {
-        $(this).addClass('is-active');
-      });
-    });
-  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
 </body>
 
 </html>

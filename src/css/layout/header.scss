@@ -136,3 +136,16 @@ z-index: 1000;
     }
   }
 }
+
+
+
+.span2{
+opacity: 0;
+}
+.span1{
+transform:translateY(260%) rotate(45deg);
+}
+
+.span3{
+transform: translateY(-260%) rotate(-45deg);
+}

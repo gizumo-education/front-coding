@@ -1,11 +1,11 @@
 .p-nav{
 position: fixed;
-top: 0;
+top: 0.16rem + 0.16rem + 0.38rem;
 right: -780px;
 width: 400px;
-height: 554px;
+height: 100%;
 background-color: rgba(0, 0, 0, 0.7);
-z-index: 1000;
+z-index: 10000;
 
 .is-active{
 right: 0;
@@ -27,4 +27,13 @@ right: 0;
     text-decoration: none;
     }
   }
+}
+
+.is-active{
+right: 0;
+}
+
+.fixed{
+overflow: hidden;
+background-attachment: fixed;
 }
