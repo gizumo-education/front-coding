@@ -25,7 +25,6 @@ $(function () {
     const headerHeight = $(".l-header").outerHeight();
     const speed = 500;
     let href = $(this).attr("href");
-    console.log(href);
     let target = $(href == "#" || href == "" ? "html" : href);
     let position = target.offset().top - headerHeight;
 
