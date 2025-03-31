@@ -24,9 +24,9 @@ $(function () {
     e.preventDefault();
     const headerHeight = $(".l-header").outerHeight();
     const speed = 500;
-    let href = $(this).attr("href");
-    let target = $(href == "#" || href == "" ? "html" : href);
-    let position = target.offset().top - headerHeight;
+    const href = $(this).attr("href");
+    const target = $(href == "#" || href == "" ? "html" : href);
+    const position = target.offset().top - headerHeight;
 
     $("html, body").animate({ scrollTop: position }, speed, "swing");
     return false;
