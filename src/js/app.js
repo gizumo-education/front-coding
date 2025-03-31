@@ -19,6 +19,20 @@ $(function () {
     $("#body").removeClass("fixed");
   });
 
+  // //スムーススクロール
+  $("a[href^='#']").on("click", function (e) {
+    e.preventDefault();
+    const headerHeight = $(".l-header").outerHeight();
+    const speed = 500;
+    let href = $(this).attr("href");
+    console.log(href);
+    let target = $(href == "#" || href == "" ? "html" : href);
+    let position = target.offset().top - headerHeight;
+
+    $("html, body").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
+
   // //スライダー
   $(".slick")
     .on("init", function (event, slick) {
