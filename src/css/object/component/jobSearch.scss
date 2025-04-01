@@ -1,0 +1,77 @@
+@use '../../object/utility/utility.scss';
+
+.c-jobSearch {
+  background: #DEEEF9;
+  width: 1180px;
+  height: 240px;
+  top: 660px;
+  left: 210px;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 60px;
+  
+
+  &__title {
+    font-family: Noto Sans JP;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    padding-top: 40px;
+  }
+
+  &__subtitle {
+    font-family: Noto Sans JP;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 20px;
+  }
+
+  &__fieldContainer {
+    display: inline-block;
+  }
+  
+
+  &__selectContainer {
+    display: inline-block;
+    position: relative;
+
+    &::before{
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      content: '';
+      width: 20px;
+      height: 10px;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      background-color: #DE1E79;
+      pointer-events: none;
+    }
+
+    & > select {
+      font-family: Noto Sans JP;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      width: 200px;
+      height: 60px;
+      top: 817px;
+      left: 265px;
+      margin-top: 25px;
+      margin-left: 10px;
+      padding-left: 15px;
+      border: 1px solid #DE1E79;
+      border-radius: 10px;
+      appearance: none;
+    }
+  }
+ 
+  
+
+
+}
