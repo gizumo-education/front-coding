@@ -3,29 +3,28 @@
 .p-openings {
   background-color: utility.$bgLightBlue;
   position: relative;
+  padding-top: 64px;
 
   &__text {
     font-size: 25px;
     font-weight: utility.$regular;
-    padding-top: 64px;
-    margin-left: 210px;
     width: 100px;
+    margin-left: 120px;
   }
 }
 
 .p-openings__wrapper {
   display: flex;
+  justify-content: center;
 }
 
 .p-openings__container {
   width: 280px;
   margin-top: 25px;
   margin-left: 20px;
-
-  &:first-child {
-    margin-left: 210px;
+  &:first-child{
+  margin-left: 0px;
   }
-
   & img {
     border-radius: 10px;
     margin-bottom: 8.08px;
@@ -67,10 +66,10 @@
   margin-top: 70px;
 
 
-  &__back{
-    &::before{
-      width: 30px;
-      height: 30px;
+  &__back {
+    &::before {
+      width: 20px;
+      height: 20px;
       content: "";
       display: block;
       border-top: 0.71px solid utility.$black;
@@ -79,11 +78,13 @@
       position: absolute;
     }
   }
-  &__next{
+
+  &__next {
     margin-left: 220px;
-    &::before{
-      width: 30px;
-      height: 30px;
+
+    &::before {
+      width: 20px;
+      height: 20px;
       content: "";
       display: block;
       border-top: 0.71px solid utility.$black;
