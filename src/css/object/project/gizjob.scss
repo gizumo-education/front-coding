@@ -1,0 +1,29 @@
+@use '../../object/utility/utility.scss';
+
+.p-giz {
+  background-image: url(../img/picture/group-img.jpg);
+  background-repeat: no-repeat;
+  width: 1600px;
+  height: 300px;
+
+  &__wrapper {
+    background-color: rgba(0, 0, 0, .5);
+    width: 1600px;
+    height: 300px;
+    display: table;
+  }
+
+  & p {
+    font-weight: utility.$bold;
+    font-size: 25px;
+    color: utility.$white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__spacer {
+    display: block;
+    height: 21px;
+  }
+}
