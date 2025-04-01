@@ -6,19 +6,24 @@
   background-image: url("../img/picture/top-woman-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1262px 500px;
-  width: 100%;
   height: 500px;
-
-  &__No1__icon {
-    margin-left: 830px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 175px;
+  padding-right: 163px;
+  &__wrapper {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 56.49px;
   }
-
-  &__title {
-    margin-left: 607px;
+  &__title{
     margin-top: 40px;
   }
+
 
   &__jobOpenings {
     color: utility.$cyan;
@@ -26,20 +31,23 @@
     background-color: utility.$white;
     width: 391px;
     height: 69px;
-    margin-left: 809.5px;
     border: solid 2.3px utility.$cyan;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 59px;
+    margin-top: 54px;
 
     &__textContainer {
-      display: table;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &__text {
         display: table-cell;
         vertical-align: middle;
+        text-align: center;
         width: 100%;
       }
     }
