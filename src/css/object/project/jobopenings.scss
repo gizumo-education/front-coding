@@ -4,6 +4,7 @@
   background-color: utility.$bgLightBlue;
   position: relative;
   padding-top: 64px;
+  padding-bottom: 67px;
 
   &__text {
     font-size: 25px;
@@ -44,11 +45,12 @@
 
   & span {
     width: 60px;
-    height: 21px;
     line-height: 21px;
     vertical-align: middle;
     display: inline-block;
     text-align: center;
+    background-color: utility.$bgLightPink;
+    margin-right: 10px;
   }
 }
 
