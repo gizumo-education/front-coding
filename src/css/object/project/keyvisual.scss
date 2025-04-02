@@ -2,18 +2,21 @@
 
 // ページ上部のキービジュアルに関するスタイル
 .p-top {
-  background-color: utility.$gray;
-  background-image: url("../img/picture/top-woman-img.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   padding-left: 175px;
-  padding-right: 100px;
+  padding-right: 163px;
+  background-color: utility.$gray;
 
   &__wrapper {
+    background-image: url("../img/picture/top-woman-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__block {
     width: auto;
     height: 100%;
     display: flex;
