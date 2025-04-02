@@ -13,8 +13,11 @@
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/jobsearch.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/jobopenings.scss';
+@use './object/project/gizjob.scss';
 /*-------------------------------------------*/

@@ -1,0 +1,78 @@
+@use '../../object/utility/utility.scss';
+
+.c-container {
+  text-align: center;
+}
+
+.c-job {
+  width: 1180px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: utility.$bgCyan;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  &__title {
+    font-weight: utility.$bold;
+    font-size: 25px;
+  }
+
+  &__text {
+    font-weight: utility.$regular;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  &__select {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 10px;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      background-color: utility.$pink;
+      pointer-events: none;
+      appearance: none;
+    }
+  }
+
+  & select {
+    border-radius: 10px;
+    border: solid 1px utility.$pink;
+    width: 200px;
+    height: 60px;
+    appearance: none;
+    font-weight: utility.$regular;
+    font-size: 18px;
+    padding-right: 40px;
+    padding-left: 15px;
+
+  }
+
+  & input {
+    border-radius: 10px;
+    border: solid 1px utility.$pink;
+    width: 300px;
+    height: 60px;
+    appearance: none;
+    font-size: 18px;
+    font-weight: utility.$regular;
+  }
+
+}

@@ -3,6 +3,7 @@
 
 .l-header {
   position: sticky;
+  z-index: 10;
   top: 0;
   left: 0;
   padding: 25px 100px 25px 0;
@@ -134,4 +135,7 @@
       border-radius: .03rem;
     }
   }
+}
+main{
+z-index: 5;
 }

@@ -1,2 +1,37 @@
 @use '../../object/utility/utility.scss';
+
 // 共通パーツであるボタンのスタイルを記述するファイル
+.c-button {
+  border-radius: 30px;
+  border: none;
+  background-color: utility.$bgPink;
+  color: utility.$white;
+  font-weight: utility.$bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+
+  &__openings {
+    padding-top: 15.02px;
+    padding-bottom: 15px;
+    width: 140px;
+    padding-right: 20px;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__more {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    line-height: 26px;
+    width: 360px;
+    margin-top: 61px;
+    display: flex;
+    justify-content: center;
+  }
+}

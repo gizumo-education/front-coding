@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>基本コーディング</title>
 </head>
+
 <body>
   <header class="l-header">
     <nav class="l-header__nav">
@@ -31,7 +33,122 @@
     </nav>
   </header>
 
-  <main></main>
+  <main>
+    <!-- トップ画面 -->
+    <div class="p-top">
+      <div class="p-top__wrapper">
+        <div class="p-top__block">
+          <img src="./img/icon/icon-No.1.png" alt="2021年使って良かった転職サイトNo.1" class="p-top__No1__icon">
+          <img src="./img/icon/icon-gizjob-title.png" alt="医療事務求人を探すならギズジョブ" class="p-top__title">
+          <div class="p-top__jobOpenings">
+            <div class="p-_top__textContainer">
+              <p class="p-top__text">
+                現在の求人掲載数 : <span style="font-size: 40px; font-weight: 700;">2,320</span>件
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- お仕事検索 -->
+    <div class="c-container">
+      <div class="c-job ">
+        <h2 class="c-job__title">お仕事検索</h2>
+        <p class="c-job__text">働きたい職種・地域・希望給与を入れて検索！</p>
+        <form class="c-job__wrapper">
+          <div class="c-job__select">
+            <select name="job-openings" id="job-openings-select" class="c-job__select__pull">
+              <option value="">医療事務</option>
+              <option value="">調剤事務</option>
+              <option value="">診療情報管理士</option>
+              <option value="">歯科助手</option>
+              <option value="">歯科事務</option>
+              <option value="">看護補助・看護助手</option>
+              <option value="">病院内SE</option>
+            </select>
+          </div>
+          <div class="c-job__select">
+            <select name="places" id="places-select" class="c-job__select__pull">
+              <option value="">東京都</option>
+              <option value="">茨城県</option>
+              <option value="">神奈川県</option>
+              <option value="">群馬県</option>
+              <option value="">埼玉県</option>
+              <option value="">千葉県</option>
+              <option value="">栃木県</option>
+            </select>
+          </div>
+          <div class="c-job__select">
+            <select name="salary" id="salary-select" class="c-job__select__pull">
+              <option value="">月給20万〜</option>
+              <option value="">月給17万〜</option>
+              <option value="">月給18万〜</option>
+              <option value="">月給19万〜</option>
+              <option value="">月給21万〜</option>
+              <option value="">月給22万〜</option>
+              <option value="">月給23万〜</option>
+            </select>
+          </div>
+          <input type="text" name="keyword" placeholder="キーワード・企業名・スキルなど" class="c-job__input">
+          <button class="c-button c-button__openings"><img src="./img/icon/icon-white-search.png" alt="">検索する</button>
+        </form>
+      </div>
+    </div>
+    <!-- 新着求人 -->
+    <div class="p-openings">
+      <h2 class="p-openings__text">新着求人</h2>
+      <div class="p-openings__wrapper">
+        <div class="p-openings__container">
+          <button class="p-job__white__button p-job__white__button__back"></button>
+          <img src="./img/picture/woman-img1.jpg" alt="制服女性" class="p-openings__img">
+          <h3>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h3>
+          <ul class="p-openings__list">
+            <li><span>給与</span>月給 148,000円～</li>
+            <li><span>所在地</span>三重県伊勢市</li>
+            <li><span>最寄駅</span>伊勢市駅 徒歩15分</li>
+          </ul>
+        </div>
+        <div class="p-openings__container">
+          <img src="./img/picture/woman-img2.jpg" alt="ナース服女性" class="p-openings__img">
+          <h3>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h3>
+          <ul class="p-openings__list">
+            <li><span>給与</span>月給 148,000円～</li>
+            <li><span>所在地</span>三重県伊勢市</li>
+            <li><span>最寄駅</span>伊勢市駅 徒歩15分</li>
+          </ul>
+        </div>
+        <div class="p-openings__container">
+          <img src="./img/picture/woman-img3.jpg" alt="白衣女性" class="p-openings__img">
+          <h3>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h3>
+          <ul class="p-openings__list">
+            <li><span>給与</span>月給 148,000円～</li>
+            <li><span>所在地</span>三重県伊勢市</li>
+            <li><span>最寄駅</span>伊勢市駅 徒歩15分</li>
+          </ul>
+        </div>
+        <div class="p-openings__container">
+          <button class="p-job__white__button p-job__white__button__next"></button>
+          <img src="./img/picture/woman-img4.jpg" alt="白いナース服女性" class="p-openings__img">
+          <h3>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</h3>
+          <ul class="p-openings__list">
+            <li><span>給与</span>月給 148,000円～</li>
+            <li><span>所在地</span>三重県伊勢市</li>
+            <li><span>最寄駅</span>伊勢市駅 徒歩15分</li>
+          </ul>
+        </div>
+      </div>
+      <div class="c-button__wrapper">
+        <a href="" class="c-button c-button__more">新着求人一覧をもっと見る</a>
+      </div>
+    </div>
+    <!-- ギズジョブ紹介 -->
+    <div class="p-giz">
+      <div class="p-giz__wrapper">
+        <p>ギズジョブなら理想の職場がきっと見つかる
+          <br>ギズジョブは完全無料の求職者向け求人サービスです。</p>
+      </div>
+    </div>
+  </main>
 
   <footer class="l-footer">
     <div class="l-footer__area">
@@ -53,4 +170,5 @@
     <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
   </footer>
 </body>
+
 </html>
