@@ -20,10 +20,6 @@
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-  }
-
-  &__spacer {
-    display: block;
-    height: 21px;
+    line-height: calc(1em + 21px);
   }
 }
