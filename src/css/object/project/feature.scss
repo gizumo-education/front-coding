@@ -1,0 +1,51 @@
+@use '../../object/utility/utility.scss';
+
+.p-feature {
+  &__title {
+    font-weight: utility.$bold;
+    font-size: 25px;
+    margin-top: 106px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__container {
+    background-color: utility.$bgPalePink;
+    width: 570px;
+    height: 180px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 53px;
+
+
+    &:nth-child(n+3) {
+      margin-top: 40px;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 40px;
+    }
+  }
+
+  &__sub_title {
+    font-size: 24px;
+    font-weight: utility.$bold;
+    color: utility.$bgPink;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: utility.$regular;
+    font-size: 14px;
+    margin-top: 36px;
+    text-align: center;
+    padding-left: 62px;
+    padding-right: 61px;
+  }
+}
