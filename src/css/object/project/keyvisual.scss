@@ -8,19 +8,17 @@
   &__bigWoman {
     background-image: url(../img/picture/main-img.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
-    height: 500px;
   }
 
   &-children {
     position: relative;
     display: flex;
     flex-direction: column; 
-    flex-wrap: wrap;
     align-items: center;
     padding-top: 60px;
     margin-left: 432px;
+    // width: 800px;
   }
 
   &-children > p {
