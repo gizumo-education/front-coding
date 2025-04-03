@@ -1,0 +1,64 @@
+@use '../../object/utility/utility.scss';
+
+.p-manual {
+  &__title {
+    font-weight: utility.$bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 105px;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  &__container {
+
+    &:nth-child(n+2) {
+      margin-left: 20px;
+    }
+  }
+
+  &__block {
+    background-color: rgba(0, 0, 0, .5);
+    width: 380px;
+    height: 100%;
+    padding-top: 71px;
+    padding-bottom: 55px;
+    border-radius: 10px;
+  }
+
+  &__bg {
+    background-repeat: no-repeat;
+    width: 380px;
+    height: 240px;
+
+
+    &__1 {
+      background-image: url(../img/picture/resume-img.jpg);
+    }
+
+    &__2 {
+      background-image: url(../img/picture/pc-img.jpg);
+    }
+  }
+
+  &__sub_title {
+    font-weight: utility.$bold;
+    color: utility.$white;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: utility.$regular;
+    font-size: 16px;
+    color: utility.$white;
+    margin-top: 45px;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+}

@@ -1,0 +1,50 @@
+@use '../../object/utility/utility.scss';
+
+.p-feature {
+  margin-top: 106px;
+
+  &__title {
+    font-weight: utility.$bold;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 53px;
+  }
+
+  &__container {
+    background-color: utility.$bgPalePink;
+    width: 570px;
+    border-radius: 10px;
+    border: none;
+    padding: 40px 61px 40px 62px;
+
+
+    &:nth-child(n+3) {
+      margin-top: 40px;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 40px;
+    }
+  }
+
+  &__sub_title {
+    font-size: 24px;
+    font-weight: utility.$bold;
+    color: utility.$bgPink;
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: utility.$regular;
+    font-size: 14px;
+    margin-top: 36px;
+    text-align: center;
+    line-height: 1.3;
+  }
+}

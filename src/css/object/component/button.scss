@@ -31,7 +31,14 @@
     line-height: 26px;
     width: 360px;
     margin-top: 61px;
-    display: flex;
+    justify-content: center;
+  }
+
+  &__medical {
+    margin-top: 80px;
+    width: 420px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     justify-content: center;
   }
 }
