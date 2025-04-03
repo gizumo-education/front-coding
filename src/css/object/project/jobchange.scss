@@ -14,6 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
   }
 
   &__container {
@@ -21,9 +22,9 @@
     height: 360px;
     border: utility.$bgPink 2.27px solid;
     border-radius: 2.27px;
-    margin-top: 50px;
     border-radius: 10px;
     position: relative;
+    padding-top: 10px;
 
     &:nth-child(-n+3)::after {
       content: "";
@@ -49,7 +50,6 @@
     border: none;
     width: 60px;
     height: 60px;
-    margin-top: 10px;
     margin-left: 10px;
     position: relative;
     display: flex;
@@ -86,9 +86,8 @@
     font-weight: utility.$regular;
     font-size: 14px;
     margin-top: 18px;
-    margin-left: 22px;
+    margin-left: 20px;
     line-height: 1.3;
     width: 237px;
-    height: 60px;
   }
 }

@@ -21,9 +21,7 @@
     width: 570px;
     border-radius: 10px;
     border: none;
-    padding-left: 62px;
-    padding-right: 61px;
-    padding-bottom: 40px;
+    padding: 40px 61px 40px 62px;
 
 
     &:nth-child(n+3) {
@@ -39,7 +37,6 @@
     font-size: 24px;
     font-weight: utility.$bold;
     color: utility.$bgPink;
-    padding-top: 40px;
     text-align: center;
   }
 
