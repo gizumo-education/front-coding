@@ -1,7 +1,8 @@
-@use '../../object/utility/utility.scss';
+@use '../utility/utility.scss';
+@use '../../foundation/variables';
 
 .c-jobSearch {
-  background: #DEEEF9;
+  background: variables.$jobSearchBgBlue;
   width: 1180px;
   height: 240px;
   top: 660px;
@@ -11,11 +12,12 @@
   align-items: center;
   margin: auto;
   margin-top: 60px;
+  margin-bottom: 60px;
   
 
   &__title {
     font-family: Noto Sans JP;
-    font-weight: 700;
+    font-weight: variables.$bold;
     font-size: 25px;
     line-height: 25px;
     letter-spacing: 0%;
@@ -24,7 +26,7 @@
 
   &__subtitle {
     font-family: Noto Sans JP;
-  font-weight: 400;
+  font-weight: variables.$regular;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0%;
@@ -33,6 +35,43 @@
 
   &__fieldContainer {
     display: inline-block;
+
+    & > input{
+      font-size: 18px;
+      color: variables.$inputBgGray;
+      width: 300px;
+      height: 60px;
+      position: relative;
+      left: 6 px;
+      top: -4px;
+      margin-top: 25px;
+      margin-left: 10px;
+      padding-left: 15px;
+      border: 1px solid variables.$inputBorderPink;
+      border-radius: 10px;
+    }
+  }
+
+  .c-search__button {
+    width: 140px;
+    height: 60px;
+    left: 1210px;
+    border: none;
+    border-radius: 30px;
+    margin-left: 15px;
+    background-color: variables.$searchButtonBgPink;
+    color: variables.$white;
+    font-family: Noto Sans JP;
+    font-weight: variables.$bold;
+    font-size: 18px;
+    letter-spacing: 0%;
+
+
+    & > .whiteMushimegane {
+      position: relative;
+      left: -10px;
+    }
+
   }
   
 
@@ -48,13 +87,13 @@
       width: 20px;
       height: 10px;
       clip-path: polygon(0 0, 100% 0, 50% 100%);
-      background-color: #DE1E79;
+      background-color: variables.$inputBorderPink;
       pointer-events: none;
     }
 
     & > select {
       font-family: Noto Sans JP;
-      font-weight: 400;
+      font-weight: variables.$regular;
       font-size: 18px;
       line-height: 100%;
       letter-spacing: 0%;
@@ -65,13 +104,9 @@
       margin-top: 25px;
       margin-left: 10px;
       padding-left: 15px;
-      border: 1px solid #DE1E79;
+      border: 1px solid variables.$inputBorderPink;
       border-radius: 10px;
       appearance: none;
+      }
     }
   }
- 
-  
-
-
-}

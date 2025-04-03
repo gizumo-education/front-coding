@@ -1,0 +1,95 @@
+@use '../utility/utility.scss';
+@use '../../foundation/variables';
+
+.p-newJob__container {
+  font-size: 16px;
+  font-weight: variables.$regular;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  background-color: variables.$bgLightBlue;
+  padding: 72px;
+
+  & > &__inner > img {
+    width: 100px;
+    margin: 64px 1290px 25px 210px;
+    padding:17px, 72px, 17px, 72px;
+  }
+}
+
+
+.p-newJob__imgWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > button {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: variables.$white;
+    border: 1px solid variables.$white;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+  &__button1 {
+    left: 80px;
+
+    & > span {
+      position: absolute;
+      top: 30px;
+      right: 25px;
+      width: 20px;
+      height: 20px;
+      border-right: 1px solid;
+      border-bottom: 1px solid;
+      transform: translate(50%, -50%) rotate(-225deg);
+    }
+  }
+
+  &__button2 {
+    right: 60px;
+
+    & > span {
+      position: absolute;
+      top: 30px;
+      left: 25px;
+      width: 20px;
+      height: 20px;
+      border-right: 1px solid;
+      border-bottom: 1px solid;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+
+  &__separatedImg {
+    width: 280px;
+    height: 200px;
+    top: 1079px;
+    left: 210px;
+    border-radius: 10px;
+    background-color: variables.$bgLightBlue;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 100;
+
+    & > ul > li {
+      display: flex;
+      width: auto;
+      margin-top: 4px;
+      &:first-child {
+        margin-top: 8px;
+      }
+    }
+    
+
+    & > ul > li >  span {
+      background-color: variables.$fontBgLightPink;
+      width: 60px;
+      font-size: 14px;
+      text-align: center;
+      padding: 16px, 1px;
+      margin-right: 10px;
+    }
+  }
+}
