@@ -1,10 +1,11 @@
 @use '../../object/utility/utility.scss';
 
 .p-feature {
+  margin-top: 106px;
+
   &__title {
     font-weight: utility.$bold;
     font-size: 25px;
-    margin-top: 106px;
     text-align: center;
   }
 
@@ -12,15 +13,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 53px;
   }
 
   &__container {
     background-color: utility.$bgPalePink;
     width: 570px;
-    height: 180px;
     border-radius: 10px;
     border: none;
-    margin-top: 53px;
+    padding-left: 62px;
+    padding-right: 61px;
+    padding-bottom: 40px;
 
 
     &:nth-child(n+3) {
@@ -45,8 +48,6 @@
     font-size: 14px;
     margin-top: 36px;
     text-align: center;
-    padding-left: 62px;
-    padding-right: 61px;
     line-height: 1.3;
   }
 }
