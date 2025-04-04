@@ -1,0 +1,23 @@
+@use '../utility/utility.scss';
+@use '../../foundation/variables';
+
+.p-pc-hands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  &__imgWrapper {
+    filter: brightness(50%);
+    }
+
+  &__pWrapper {
+    position: absolute;
+    font-family: Noto Sans JP;
+    font-weight: variables.$bold;
+    font-size: 25px;
+    color: variables.$white;
+    text-align: center;
+    line-height:2.5;
+  }
+}

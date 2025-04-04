@@ -1,2 +1,20 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/variables';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-pink__button {
+  text-align: center;
+  margin-top: 60px;
+
+  & > a {
+    padding-top: 17px;
+    padding-bottom: 17px; 
+    width: 360px;
+    color: variables.$white;
+    background-color: variables.$searchButtonBgPink;
+    border: none;
+    border-radius: 50px;
+    font-weight: variables.$bold;
+    font-size: 18px;
+  }
+}

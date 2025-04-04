@@ -1,2 +1,54 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/variables';
 // ページ上部のキービジュアルに関するスタイル
+
+.p-main__img {
+  background-color: variables.$keyvisuBgBlue;
+ 
+  &__bigWoman {
+    background-image: url(../img/picture/main-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &-children {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 60px;
+    width: fit-content;
+    margin-left: auto;
+    padding-bottom: 53px;
+  }
+
+  &-children > p {
+    padding-top: 5px;
+    padding-left: 41px;
+    margin-top: 54px;
+    width: 392px;
+    height: 60px;
+    font-family: Noto Sans JP;
+    font-size: 20px;
+    font-weight: variables.$regular;
+    color: variables.$keyvisuFontGreen;
+    background: variables.$white;
+    border: 2.3px solid variables.$keyvisuFontGreen;
+    border-radius: 10px;
+  }
+
+  &__gizjobWord {
+    margin-top: 40px;
+  }
+}
+
+.p-main__img__no1 {
+  width: 340px;
+  height: 168px;
+}
+
+
+.p-main__img__gizjobWord {
+  width: 800px;
+  height: 65px;
+}

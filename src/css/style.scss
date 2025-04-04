@@ -3,6 +3,7 @@
 /*foundation---------------------------------*/
 @use './foundation/_reset.scss';
 @use './foundation/_base.scss';
+@use'./foundation/variables';
 /*-------------------------------------------*/
 
 /*layout---------------------------------*/
@@ -13,8 +14,11 @@
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/jobSearch.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/newJob.scss';
+@use './object/project/pc_hands.scss';
 /*-------------------------------------------*/
