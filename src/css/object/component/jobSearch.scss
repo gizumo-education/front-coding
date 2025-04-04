@@ -2,9 +2,10 @@
 @use '../../foundation/variables';
 
 .c-jobSearch {
+  padding-top: 40px;
+  padding-bottom: 40px;
   background: variables.$jobSearchBgBlue;
   width: 1180px;
-  height: 240px;
   border-radius: 10px;
   text-align: center;
   align-items: center;
@@ -19,7 +20,6 @@
     font-size: 25px;
     line-height: 25px;
     letter-spacing: 0%;
-    padding-top: 40px;
   }
 
   &__subtitle {
@@ -41,7 +41,6 @@
       height: 60px;
       position: relative;
       left: 6 px;
-      top: -4px;
       margin-top: 25px;
       margin-left: 10px;
       padding-left: 15px;
@@ -53,6 +52,8 @@
   .c-search__button {
     width: 140px;
     height: 60px;
+    position: relative;
+    top: 4px;
     border: none;
     border-radius: 30px;
     margin-left: 15px;
