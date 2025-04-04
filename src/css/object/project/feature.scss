@@ -1,0 +1,68 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/variables';
+
+.p-feature {
+  text-align: center;
+  margin-top: 106px;
+}
+.p-feature > h2 {
+  font-weight: variables.$bold;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0%;
+}
+
+.p-feature__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 53px;
+}
+
+.p-feature__wrapper__box {
+    background-color: #F7D2DB;
+    width: 570px;
+    text-align: center;
+    border-radius: 10px;
+
+    &:first-child {
+      padding: 40px 60px;
+    }
+
+    &:nth-child(2) {
+      padding: 40px 90px;
+    }
+
+    &:nth-child(3) {
+      padding: 40px 48px;
+    }
+
+    &:nth-child(4) {
+      padding: 40px 60px 30px 60px;
+    }
+
+    & > h3 {
+    font-weight: variables.$bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: variables.$searchButtonBgPink;
+    }
+
+    & > p {
+    font-weight: variables.$regular;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0%;
+
+    &:first-child, &:nth-child(2), &:nth-child(3) {
+      margin-top: 36px;
+    }
+
+    &:nth-child(4) {
+      margin-top: 26px;
+    }
+
+    }
+}
