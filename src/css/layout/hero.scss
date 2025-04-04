@@ -1,0 +1,13 @@
+@use '../object/utility/utility.scss';
+
+.l-hero {
+  height: 50rem;
+  background-image: url('../img/picture/hero-desctop.jpg');;
+  background-size: cover; 
+  background-position: center; 
+  @include utility.sp {
+    height: 2.7rem;
+    background-image: url('../img/picture/hero-mobile.jpg');
+  }
+}
+
