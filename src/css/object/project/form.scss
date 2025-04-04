@@ -1,0 +1,55 @@
+@use '../../object/utility/utility.scss';
+
+.p-form {
+  max-width: 118rem;
+  background-color: utility.$lightBlue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 4rem;
+  margin: 6rem 21rem;
+  &__title {
+    font-size: 2.5rem;
+    font-weight: utility.$bold;
+    margin-bottom: 2rem;
+  }
+  &__desc {
+    font-size: 2rem;
+    margin-bottom: 2.6rem;
+  }
+  &__group {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  &__selects {
+    display: flex;
+    border-radius: .5rem;
+  }
+  &__select {
+    width: 20rem;
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+    padding: 1.7rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid utility.$pink;
+    appearance: none;
+    background: url('../img/icon/arrow.png') no-repeat right 1.5rem center;
+    background-color: utility.$white;
+    background-size: 2rem 1rem;
+  }
+  &__input { 
+    width: 30rem;
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+    padding: 1.7rem 1.5rem;
+    border-radius: 0.1rem;
+    border: 1px solid utility.$pink2;
+  }
+  &__submit {
+    padding: 1.5rem;
+  }
+
+}
