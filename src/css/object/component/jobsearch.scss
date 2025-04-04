@@ -85,20 +85,39 @@
 // スマホ
 @media screen and (max-width: 767px) {
 
-  .c-container{
-  text-align: left;
+  .c-container {
+    text-align: center;
   }
+
   .c-job {
+    margin-top: 0.25rem;
     padding: 0.15rem 0.2rem 0.2rem 0.2rem;
     width: 3.7rem;
+
+    &__title {
+      font-size: 0.22rem;
+    }
+
+    &__text {
+      font-size: 0.14rem;
+    }
 
     &__wrapper {
       flex-direction: column;
       align-items: center;
     }
 
+    &__block {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     &__select {
       width: 1rem;
+
+      &:nth-child(n+2) {
+        margin-left: 0.105rem;
+      }
 
       &__pull {
         background-color: utility.$white;
@@ -109,8 +128,9 @@
         padding-left: 0.08rem;
         padding-right: 0.07rem;
       }
-      &::after{
-      right: 0.07rem;
+
+      &::after {
+        right: 0.07rem;
       }
     }
 

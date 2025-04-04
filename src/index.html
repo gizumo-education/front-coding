@@ -52,48 +52,50 @@
     </div>
     <!-- お仕事検索 -->
     <div class="c-container">
-      <div class="c-job ">
+      <div class="c-job">
         <h2 class="c-job__title">お仕事検索</h2>
         <p class="c-job__text">働きたい職種・地域・希望給与を入れて検索！</p>
         <form class="c-job__wrapper">
-          <div class="c-job__select">
-            <select name="job-openings" class="c-job__select__pull">
-              <option value="">医療事務</option>
-              <option value="">調剤事務</option>
-              <option value="">診療情報管理士</option>
-              <option value="">歯科助手</option>
-              <option value="">歯科事務</option>
-              <option value="">看護補助・看護助手</option>
-              <option value="">病院内SE</option>
-            </select>
+          <div class="c-job__block">
+            <div class="c-job__select">
+              <select name="job-openings" class="c-job__select__pull">
+                <option value="">医療事務</option>
+                <option value="">調剤事務</option>
+                <option value="">診療情報管理士</option>
+                <option value="">歯科助手</option>
+                <option value="">歯科事務</option>
+                <option value="">看護補助・看護助手</option>
+                <option value="">病院内SE</option>
+              </select>
+            </div>
+            <div class="c-job__select">
+              <select name="places" class="c-job__select__pull">
+                <option value="">東京都</option>
+                <option value="">茨城県</option>
+                <option value="">神奈川県</option>
+                <option value="">群馬県</option>
+                <option value="">埼玉県</option>
+                <option value="">千葉県</option>
+                <option value="">栃木県</option>
+              </select>
+            </div>
+            <div class="c-job__select">
+              <select name="salary" class="c-job__select__pull">
+                <option value="">月給20万〜</option>
+                <option value="">月給17万〜</option>
+                <option value="">月給18万〜</option>
+                <option value="">月給19万〜</option>
+                <option value="">月給21万〜</option>
+                <option value="">月給22万〜</option>
+                <option value="">月給23万〜</option>
+              </select>
+            </div>
           </div>
-          <div class="c-job__select">
-            <select name="places" class="c-job__select__pull">
-              <option value="">東京都</option>
-              <option value="">茨城県</option>
-              <option value="">神奈川県</option>
-              <option value="">群馬県</option>
-              <option value="">埼玉県</option>
-              <option value="">千葉県</option>
-              <option value="">栃木県</option>
-            </select>
-          </div>
-          <div class="c-job__select">
-            <select name="salary" class="c-job__select__pull">
-              <option value="">月給20万〜</option>
-              <option value="">月給17万〜</option>
-              <option value="">月給18万〜</option>
-              <option value="">月給19万〜</option>
-              <option value="">月給21万〜</option>
-              <option value="">月給22万〜</option>
-              <option value="">月給23万〜</option>
-            </select>
-          </div>
-          <input type="text" name="keyword" placeholder=" キーワード・企業名・スキルなど" class="c-job__input">
-          <button class="c-button c-button__openings"><img src="./img/icon/icon-white-search.png" alt="">検索する</button>
-        </form>
+            <input type="text" name="keyword" placeholder=" キーワード・企業名・スキルなど" class="c-job__input">
+            <button class="c-button c-button__openings"><img src="./img/icon/icon-white-search.png" alt="">検索する</button>
+          </form>
+        </div>
       </div>
-    </div>
     <!-- 新着求人 -->
     <div class="p-openings">
       <h2 class="p-openings__text">新着求人</h2>
