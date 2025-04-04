@@ -57,4 +57,38 @@
       }
     }
   }
+
+  &__number {
+    font-size: 40px;
+    font-weight: utility.$bold;
+  }
+}
+
+//スマホ
+@media screen and (max-width: 767px) {
+  .p-top {
+    padding: 0;
+
+    &__wrapper {
+      background-image: url(../img/picture/sp-top-woman.jpg);
+      width: 4rem;
+    }
+
+    &__block {
+      height: auto;
+    }
+
+    &__No1__icon {
+      width: 1.49rem;
+    }
+
+    &__title {
+      margin-top: 0.12rem;
+      width: 2.72rem;
+    }
+
+    &__jobOpenings {
+      width: 1.7rem;
+    }
+  }
 }

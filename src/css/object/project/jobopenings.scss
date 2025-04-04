@@ -96,3 +96,15 @@
     }
   }
 }
+
+//スマホ
+@media screen and (max-width: 767px) {
+  .p-openings{
+    width: 4rem;
+  &__container{
+  &:nth-child(n+2){
+  display: none;
+  }
+  }
+  }
+}

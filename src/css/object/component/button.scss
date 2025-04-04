@@ -42,3 +42,19 @@
     justify-content: center;
   }
 }
+
+
+@media screen and (max-width:767px) {
+  .c-button {
+    &__openings {
+      padding: 10px 43px 12px 13px;
+      width: 160px;
+    }
+    &__more{
+    width: 3.7rem;
+    }
+    &__wrapper{
+      justify-content: left;
+    }
+  }
+}

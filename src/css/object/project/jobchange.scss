@@ -91,3 +91,15 @@
     width: 237px;
   }
 }
+
+// スマホ
+@media screen and (max-width: 767px) {
+  .p-change{
+    &__title{
+    text-align: left;
+    }
+  &__wrapper{
+  flex-direction: column;
+  }
+  }
+}

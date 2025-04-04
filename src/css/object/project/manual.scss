@@ -60,5 +60,17 @@
     text-align: center;
     line-height: 1.3;
   }
+}
 
+// スマホ
+@media screen and (max-width: 767px) {
+  .p-manual {
+    &__title {
+      text-align: left;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
 }
