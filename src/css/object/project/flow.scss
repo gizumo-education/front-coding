@@ -14,7 +14,6 @@
 
   &__wrapper {
     display: flex;
-    align-items: center;
     margin-top: 50px;
 
     &__each {
@@ -127,6 +126,7 @@
       & > p {
         margin-top: 18px;
         font-size: 14px;
+        text-align: left;
       }
 
       & > h3 {
