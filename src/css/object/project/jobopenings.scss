@@ -20,6 +20,13 @@
     position: relative;
   }
 
+  &__subtitle {
+    font-size: 16px;
+    font-weight: utility.$regular;
+    line-height: 22px;
+  }
+
+
   &__container {
     width: 280px;
     margin-top: 25px;
@@ -32,12 +39,6 @@
     & img {
       border-radius: 10px;
       margin-bottom: 8.08px;
-    }
-
-    & h3 {
-      font-size: 16px;
-      font-weight: utility.$regular;
-      line-height: 22px;
     }
 
     & li {
@@ -104,7 +105,6 @@
 //スマホ
 @include utility.sp {
   .p-openings {
-    width: 4rem;
     padding-top: 0.3rem;
     padding-bottom: 0.6rem;
 
@@ -112,7 +112,6 @@
       font-weight: utility.$bold;
       font-size: 0.25rem;
       text-align: center;
-      width: 100%;
       margin: auto;
     }
 
@@ -127,15 +126,12 @@
     }
 
     &__img {
-      width: 3.7rem;
-      height: 2.08rem;
       display: block;
     }
 
     &__white__button {
-      width: 0.42rem;
       height: 0.42rem;
-      transform: translateY(320%);
+      transform: translateY(350%);
 
       &::before {
         width: 0.14rem;
@@ -143,12 +139,17 @@
       }
 
       &__back {
-        left: 0.35rem;
+        left: 0.4rem;
       }
 
       &__next {
-        right: 0.35rem;
+        right: 0.4rem;
       }
+    }
+
+    &__sub_title {
+      font-weight: utility.$bold;
+      font-size: 0.16rem;
     }
   }
 }
