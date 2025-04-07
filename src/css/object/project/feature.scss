@@ -66,3 +66,21 @@
 
     }
 }
+
+@include utility.tab {
+  .p-feature > h2 {
+    font-size: 0.25rem;
+  }
+
+  .p-feature__wrapper__box {
+    width: 5rem;
+
+    & > h3 {
+      font-size: 0.24rem;
+    }
+
+    & > p {
+      font-size: 0.14rem;
+    }
+  }
+}

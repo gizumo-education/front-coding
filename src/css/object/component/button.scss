@@ -22,3 +22,10 @@
     margin-top: 80px;
   }
 }
+
+@include utility.tab {
+  .c-pink__button > a {
+    font-size: 0.18rem;
+    width: 3.6rem;
+  }
+}

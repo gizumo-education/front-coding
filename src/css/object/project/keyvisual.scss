@@ -52,3 +52,25 @@
   width: 800px;
   height: 65px;
 }
+
+@include utility.tab {
+  .p-main__img__bigWoman {
+    width: 100%;
+  }
+
+  .p-main__img-children > img:first-child {
+    width: 4rem;
+    height: 2rem;
+  }
+
+  .p-main__img-children > img:nth-child(2) {
+    width: 8rem;
+    height: 0.7rem;
+  }
+
+  .p-main__img-children > p {
+    font-size: 0.2rem;
+    width: 4.8rem;
+    padding-top: 0.05rem 0.41rem 0.05rem 0.41rem;
+  }
+}

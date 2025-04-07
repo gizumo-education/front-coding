@@ -4,7 +4,6 @@
 .p-newJob__container {
   font-size: 16px;
   font-weight: variables.$regular;
-  font-size: 16px;
   line-height: 22px;
   letter-spacing: 0%;
   background-color: variables.$bgLightBlue;
@@ -24,46 +23,8 @@
 .p-newJob__imgWrapper {
   margin-top: 25px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
-  & > button {
-    padding: 0;
-    position: relative;
-    top: 64px;
-    width: 120px;
-    height: 60px;
-    background-color: variables.$white;
-    border: 1px solid variables.$white;
-    border-radius: 50%;
-    opacity: 0.5;
-  }
-  &__button1 {
-
-    & > span {
-      position: absolute;
-      top: 30px;
-      right: 26px;
-      width: 22px;
-      height: 22px;
-      border-right: 1px solid;
-      border-bottom: 1px solid;
-      transform: translate(50%, -50%) rotate(-225deg);
-    }
-  }
-
-  &__button2 {
-
-    & > span {
-      position: absolute;
-      top: 30px;
-      left: 26px;
-      width: 22px;
-      height: 22px;
-      border-right: 1px solid;
-      border-bottom: 1px solid;
-      transform: translate(-50%, -50%) rotate(-45deg);
-    }
-  }
 
   &__separatedImg {
     justify-content: space-between;
@@ -72,6 +33,48 @@
     margin-left: 20px;
     font-size: 16px;
     font-weight: 100;
+    position: relative;
+    width: 280px;
+
+    & > button {
+      padding: 0;
+      position: absolute;
+      top: 70px;
+      width: 60px;
+      height: 60px;
+      background-color: variables.$white;
+      border: 1px solid variables.$white;
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+
+    &__button1 > span {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 22px;
+      height: 22px;
+      border-right: 1px solid;
+      border-bottom: 1px solid;
+      transform: translate(-50%, -50%) rotate(135deg);
+    }
+
+    &__button2 {
+      right: 0;
+
+      & > span {
+        position: absolute;
+        top: 30px;
+        left: 26px;
+        width: 22px;
+        height: 22px;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+
+
 
     & > img {
       border-radius: 10px;
@@ -88,6 +91,7 @@
     & > ul > li {
       display: flex;
       margin-top: 4px;
+      align-items: center;
 
       &:first-child {
         margin-top: 8px;
@@ -101,6 +105,55 @@
       text-align: center;
       padding: 16px, 1px;
       margin-right: 10px;
+    }
+  }
+}
+
+
+@include utility.tab {
+  .p-newJob__container__inner > h2 {
+    font-size: 0.25rem;
+    margin-left: 0.8rem;
+  }
+
+  .p-newJob__imgWrapper {
+    justify-content: space-between;
+    margin: 25px auto 0 auto;
+    width: 8rem;
+    display: flex;
+
+    &__separatedImg {
+      font-size: 0.16rem;
+
+      & > button {
+        top: 0.6rem;
+        width: 0.6rem;
+        height: 0.6rem;
+      }
+
+      &__button1 > span {
+        top: 0.3rem;
+        left: 0.3rem;
+        width: 0.22rem;
+        height: 0.22rem;
+        transform: translate(-50%, -50%) rotate(135deg);
+      }
+
+      &__button2 > span {
+        top: 0.3rem;
+        left: 0.26rem;
+        width: 0.22rem;
+        height: 0.22rem;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+
+      & > ul > li {
+        font-size: 0.14rem;
+
+        & > span {
+          font-size: 0.14rem;
+        }
+      }
     }
   }
 }

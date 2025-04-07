@@ -74,3 +74,17 @@
     }
   }
 }
+
+@include utility.tab {
+  .p-helpfulContents > h2 {
+    font-size: 0.25rem;
+  }
+
+  .p-helpfulContents__wrapper__each > h3 {
+    font-size: 0.24rem;
+  }
+
+  .p-helpfulContents__wrapper__each > p {
+    font-size: 0.16rem;
+  }
+}
