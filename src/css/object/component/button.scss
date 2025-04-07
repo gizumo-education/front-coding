@@ -47,8 +47,8 @@
 @include utility.sp {
   .c-button {
     &__openings {
-      padding: 0.1rem 0.43rem 0.12rem 0.13rem;
-      width: 1.6rem;
+      padding: 0.1rem 0.42rem 0.12rem 0.13rem;
+      width: fit-content;
     }
 
     &__more {

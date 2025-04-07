@@ -27,12 +27,11 @@
 
 @include utility.sp {
   .p-giz {
-    width: 4rem;
     height: 0.75rem;
     background-size: contain;
+    width: 100vw;
 
     &__wrapper {
-      width: 4rem;
       height: 0.75rem;
       padding: 0;
     }
