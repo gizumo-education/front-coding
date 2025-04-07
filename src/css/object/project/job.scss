@@ -7,10 +7,11 @@
   flex-direction: column;
   align-items: center;
   &__title {
+    text-align: left;
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
   }
-  &__contents {
+  &__new-job {
     position: relative;
     display: flex;
     gap: 2rem;
