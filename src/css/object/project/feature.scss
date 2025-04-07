@@ -52,6 +52,8 @@
 @media screen and (max-width: 767px) {
   .p-feature {
     padding-top: 0.55rem;
+    padding-right: 0.15rem;
+    padding-left: 0.15rem;
 
     &__title {
       text-align: center;
@@ -63,16 +65,12 @@
     }
 
     &__container {
-      margin: auto;
       width: 3.7rem;
       padding: 0.3rem 0.17rem;
 
       &:nth-child(n+2) {
         margin-top: 0.21rem;
-      }
-
-      &:nth-child(2n) {
-        margin-left: 0.15rem;
+        margin-left: 0;
       }
     }
   }
