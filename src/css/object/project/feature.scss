@@ -1,7 +1,7 @@
 @use '../../object/utility/utility.scss';
 
 .p-feature {
-  margin-top: 106px;
+  padding-top: 106px;
 
   &__title {
     font-weight: utility.$bold;
@@ -51,18 +51,29 @@
 
 @media screen and (max-width: 767px) {
   .p-feature {
+    padding-top: 0.55rem;
+
     &__title {
-      text-align: left;
+      text-align: center;
     }
 
     &__wrapper {
       flex-direction: column;
+      margin-top: 0.38rem;
     }
 
     &__container {
-      margin: 0rem;
+      margin: auto;
       width: 3.7rem;
       padding: 0.3rem 0.17rem;
+
+      &:nth-child(n+2) {
+        margin-top: 0.21rem;
+      }
+
+      &:nth-child(2n) {
+        margin-left: 0.15rem;
+      }
     }
   }
 }
