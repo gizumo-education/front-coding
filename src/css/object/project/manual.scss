@@ -65,12 +65,31 @@
 // スマホ
 @media screen and (max-width: 767px) {
   .p-manual {
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
     &__title {
-      text-align: left;
+      text-align: center;
     }
 
     &__wrapper {
       flex-direction: column;
+    }
+
+    &__container {
+      width: 3.7rem;
+      height: 2.349rem;
+
+      &:nth-child(n+2) {
+        margin-top: 0.1755rem;
+        margin-left: 0;
+      }
+    }
+    &__sub_title{
+    font-size: 0.21rem;
+    }
+
+    &__text{
+    margin-top: 0.52rem;
     }
   }
 }
