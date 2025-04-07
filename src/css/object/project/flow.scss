@@ -172,3 +172,12 @@
   }
 }
 
+@include utility.sp {
+  .p-flow__wrapper {
+    flex-direction: column;
+
+    &__each {
+      
+    }
+  }
+}

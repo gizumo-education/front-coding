@@ -157,3 +157,18 @@
     }
   }
 }
+
+@include utility.sp {
+  .p-newJob__imgWrapper {
+    width: auto;
+
+    &__separatedImg {
+      display: none;
+
+      &:first-of-type {
+       display: block;
+      }
+    }
+  }
+
+}

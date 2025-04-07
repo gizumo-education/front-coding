@@ -84,3 +84,9 @@
     }
   }
 }
+
+@include utility.sp {
+  .p-feature__wrapper__box {
+    width: auto;
+  }
+}

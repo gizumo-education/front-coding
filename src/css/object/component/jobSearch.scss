@@ -156,3 +156,9 @@
   }
 
 }
+
+@include utility.sp {
+  .c-jobSearch {
+    width: auto;
+  }
+}

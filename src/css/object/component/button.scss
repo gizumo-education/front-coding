@@ -29,3 +29,9 @@
     width: 3.6rem;
   }
 }
+
+@include utility.sp {
+  .c-pink__button > a {
+    width: auto;
+  }
+}

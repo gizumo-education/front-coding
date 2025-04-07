@@ -74,3 +74,9 @@
     padding-top: 0.05rem 0.41rem 0.05rem 0.41rem;
   }
 }
+
+@include utility.sp {
+  .p-main__img__bigWoman {
+    background-image: url(../img/picture/main-img-sp.png);
+  }
+}
