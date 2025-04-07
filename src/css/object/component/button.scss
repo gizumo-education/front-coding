@@ -44,19 +44,21 @@
 }
 
 
-@media screen and (max-width:767px) {
+@include utility.sp {
   .c-button {
     &__openings {
       padding: 0.1rem 0.43rem 0.12rem 0.13rem;
       width: 1.6rem;
     }
-    &__more{
-    width: 3.7rem;
-    margin-top: 0.44rem;
+
+    &__more {
+      width: 3.7rem;
+      margin-top: 0.44rem;
     }
-    &__medical{
-    width: 3.7rem;
-    margin-top: 0.349rem;
+
+    &__medical {
+      width: 3.7rem;
+      margin-top: 0.349rem;
     }
   }
 }

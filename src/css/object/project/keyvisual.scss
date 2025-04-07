@@ -65,9 +65,11 @@
 }
 
 //スマホ
-@media screen and (max-width: 767px) {
+@include utility.sp {
   .p-top {
     padding: 0;
+    width: fit-content;
+    margin: auto;
 
     &__wrapper {
       background-image: url(../img/picture/sp-top-woman.jpg);
@@ -100,11 +102,13 @@
       height: auto;
       border: 0.01rem solid;
     }
-    &__text{
+
+    &__text {
       font-size: 0.08rem;
     }
-    &__number{
-    font-size: 0.16rem;
+
+    &__number {
+      font-size: 0.16rem;
     }
   }
 
