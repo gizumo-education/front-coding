@@ -57,11 +57,16 @@
 
     &__title {
       text-align: center;
+      font-size: 0.2rem;
     }
 
     &__wrapper {
       flex-direction: column;
       margin-top: 0.38rem;
+    }
+
+    &__is__sp{
+    display: none;
     }
 
     &__container {
