@@ -27,7 +27,9 @@
       position: absolute;
       top: 1rem;
       left: 1rem;
-      padding: 1rem;
+      padding: 1.5rem 1rem;
+      width: 6rem;
+      height: 6rem;
       background-color: utility.$pink;
       color: utility.$white;
       font-size: 1.6rem;
@@ -57,5 +59,12 @@
       line-height: 1.5;
     }
   }
-
+  &__arrow {
+    position: absolute;
+    right: -3.2rem;
+    top: 50%;
+    width: 2rem;
+    height: 4rem;
+    transform: translate(-50%, -50%);
+  }
 }
