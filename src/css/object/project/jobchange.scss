@@ -118,9 +118,9 @@
       }
 
       &:nth-child(-n+3)::after {
-        left: 50%;
-        top: 100%;
-        transform: rotate(90deg);
+        left: 45%;
+        top: 103%;
+        transform: rotate(90deg) translateX(-50%);
 
       }
     }
@@ -146,7 +146,7 @@
 
     &__text {
       margin-top: 0.1rem;
-      text-align: center;
+      text-align: left;
       height: 0.8rem;
     }
   }
