@@ -1,0 +1,40 @@
+@use '../../object/utility/utility.scss';
+
+.p-hero {
+  position: relative;
+  height: 50rem;
+  background-image: url('../img/picture/hero-desctop.jpg');
+  background-size: cover; 
+  background-position: center; 
+  &__contents {
+    position: absolute;
+    top: 5.6rem;
+    right: 19.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__icon {
+    width: 34rem;
+    height: 17rem;
+    margin-bottom: 4rem;
+  }
+  &__title {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+  &__desc {
+    color: utility.$green;
+    font-size: 2rem;
+    padding: 0.5rem 4rem;
+    background-color: utility.$white;
+    border: 0.2rem solid utility.$green;
+    border-radius: 1rem;
+  }
+  &__count {
+    color: utility.$green;
+    font-size: 4rem;
+  }
+}
+
