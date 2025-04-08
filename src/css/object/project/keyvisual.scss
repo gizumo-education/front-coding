@@ -86,6 +86,7 @@
     .p-main__img__bigWoman {
       background-image: url(../img/picture/main-img-sp.jpg);
       width: 100%;
+      background-size: cover;
     }
 
     .p-main__img__no1 {
@@ -98,7 +99,7 @@
       height: 0.22rem;
       margin-top: 0.12rem;
     }
-
+    
     .p-main__img-children > p {
       width: 1.7rem;
       height: 0.3rem;
