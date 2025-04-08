@@ -187,6 +187,10 @@
     &__separatedImg {
       display: none;
 
+      & > p {
+        margin-top: 0.1rem;
+      }
+
 
       &:first-of-type {
        display: block;

@@ -201,6 +201,10 @@
         margin-top: 0.22rem;
       }
 
+      & > p {
+        line-height: 1.4;
+      }
+
       &::after {
         top: 105%;
         left: 1.2rem;
