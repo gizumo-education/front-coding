@@ -14,7 +14,7 @@
     display: table;
   }
 
-  & p {
+  &__text {
     font-weight: utility.$bold;
     font-size: 25px;
     color: utility.$white;
@@ -22,5 +22,24 @@
     display: table-cell;
     vertical-align: middle;
     line-height: calc(1em + 21px);
+  }
+}
+
+@include utility.sp {
+  .p-giz {
+    height: 0.75rem;
+    background-size: contain;
+    width: 100vw;
+
+    &__wrapper {
+      height: 0.75rem;
+      padding: 0;
+    }
+
+    &__text {
+      font-size: 0.14rem;
+      font-weight: utility.$regular;
+      line-height: 20px;
+    }
   }
 }
