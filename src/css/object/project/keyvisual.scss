@@ -35,6 +35,11 @@
     background: variables.$white;
     border: 2.3px solid variables.$keyvisuFontGreen;
     border-radius: 10px;
+
+    & > span {
+      font-size: 40px; 
+      font-weight: bold;
+    }
   }
 
   &__gizjobWord {
@@ -72,11 +77,38 @@
     font-size: 0.2rem;
     width: 4.8rem;
     padding-top: 0.05rem 0.41rem 0.05rem 0.41rem;
+
+   
   }
 }
 
 @include utility.sp {
-  .p-main__img__bigWoman {
-    background-image: url(../img/picture/main-img-sp.png);
+    .p-main__img__bigWoman {
+      background-image: url(../img/picture/main-img-sp.jpg);
+      width: 100%;
+    }
+
+    .p-main__img__no1 {
+      width: 1.5rem;
+      height: 0.8rem;
+    }
+
+    .p-main__img__gizjobWord {
+      width: 2.7rem;
+      height: 0.26rem;
+      margin-top: 0.12rem;
+    }
+
+    .p-main__img-children > p {
+      width: 1.7rem;
+      height: 0.3rem;
+      font-size: 0.08rem;
+      padding: 0.04rem 0.2rem 0.03rem 0.2rem;
+      margin-top: 0.18rem;
+  
+      & > span {
+        font-size: 0.16rem;
+        font-weight: variables.$bold;
+      }
+    }
   }
-}

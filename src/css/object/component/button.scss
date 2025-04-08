@@ -31,7 +31,19 @@
 }
 
 @include utility.sp {
-  .c-pink__button > a {
+  .c-pink__button {
+    font-size: 0.18rem;
     width: auto;
+
+    & > a {
+      width: 3.6rem;
+    }
+    
+
+    &__underHelpfulContents {
+      margin-top: 0.34rem;
+    }
   }
+
+
 }

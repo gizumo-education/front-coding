@@ -131,6 +131,10 @@
         height: 0.6rem;
       }
 
+      & > __buttonForSp {
+        display: none;
+      }
+
       &__button1 > span {
         top: 0.3rem;
         left: 0.3rem;
@@ -159,16 +163,80 @@
 }
 
 @include utility.sp {
+  .p-newJob__container {
+    margin-top: 0.25rem;
+    padding-top: 0.3rem;
+
+    &__inner {
+      margin: 0 auto;
+      width: auto;
+    }
+
+    & > &__inner > h2 {
+      font-size: 0.25rem;
+      font-weight: variables.$bold;
+      margin: 0 auto;
+    }
+  }
+  
   .p-newJob__imgWrapper {
-    width: auto;
+    margin: 0 auto;
+    width: 3.7rem;
+    margin-top: 0.35rem;
 
     &__separatedImg {
       display: none;
 
+
       &:first-of-type {
        display: block;
+       margin: 0 auto;
+       width: auto;
+
+       & > p {
+        font-size: 0.16rem;
+        font-weight: variables.$bold;
+       }
+      }
+
+      & > img {
+        width: 3.7rem;
+      }
+
+      & > &__button1 {
+        width: 0.46rem;
+        height: 0.46rem;
+        opacity: 0.7;
+        top: 2rem;
+
+        & > span {
+          position: absolute;
+          top: 0.24rem;
+          left: 0.24rem;
+          width: 0.14rem;
+          height: 0.14rem;
+        }
+      }
+
+      & > &__buttonForSp {
+        display: block;
+        width: 0.46rem;
+        height: 0.46rem;
+        opacity: 0.7;
+        right: 0;
+        top: 2rem; 
+
+        & > span {
+          position: absolute;
+          top: 0.24rem;
+          left: 0.2rem;
+          width: 0.14rem;
+          height: 0.14rem;
+          border-right: 1px solid;
+          border-bottom: 1px solid;
+          transform: translate(-50%, -50%) rotate(-45deg);
+        }
       }
     }
   }
-
 }

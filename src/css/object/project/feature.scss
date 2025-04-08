@@ -86,7 +86,42 @@
 }
 
 @include utility.sp {
-  .p-feature__wrapper__box {
-    width: auto;
+
+  .p-feature {
+    margin-top: 0.55rem;
+
+    &__wrapper {
+      margin-top: 0.33rem;
+    }
+
+    &__wrapper__box {
+      width: auto;
+
+      &:first-child {
+        padding: 0.3rem 0.17rem;
+      }
+
+      &:nth-child(2) {
+        padding: 0.3rem 0.18rem;
+      }
+
+      &:nth-child(3) {
+        padding: 0.3rem 0.4rem;
+      }
+
+      &:nth-child(4) {
+        padding: 0.3rem 0.1rem;
+      }
+
+      & > h3 {
+        font-size: 0.2rem;
+      }
+
+      & > p:first-child, p:nth-child(2), p:nth-child(3), p:nth-child(4) {
+        margin-top: 0.28rem;
+        font-size:0.12rem;
+      }
+    }
   }
+ 
 }

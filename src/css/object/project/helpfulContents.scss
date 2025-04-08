@@ -88,3 +88,33 @@
     font-size: 0.16rem;
   }
 }
+
+@include utility.sp {
+  .p-helpfulContents {
+    margin-top: 0.6rem;
+
+    &__wrapper {
+      flex-direction: column;
+      width: 3.6rem;
+      margin-top: 0;
+  
+      &__each {
+        width: auto;
+        margin-top: 0.3rem;
+        margin-left: 0;
+        padding-top: 0.6rem;
+
+        & > h3 {
+          font-size: 0.21rem;
+        }
+
+        & > p {
+          font-size: 0.14rem;
+          margin-top: 0.53rem;
+        }
+      }
+    }
+   
+  }
+ 
+}
