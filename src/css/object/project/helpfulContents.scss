@@ -66,6 +66,7 @@
     &__each:nth-child(3) {
       background-image: url(../img/picture/p-helpfulContents-paper.jpg);
       background-repeat: no-repeat;
+      background-size: cover;
     }
 
     &__each:nth-child(2) {
@@ -78,6 +79,10 @@
 @include utility.tab {
   .p-helpfulContents > h2 {
     font-size: 0.25rem;
+  }
+
+  .p-helpfulContents__wrapper__each {
+    width: auto;
   }
 
   .p-helpfulContents__wrapper__each > h3 {
