@@ -57,12 +57,15 @@
 
     &__title {
       text-align: center;
-      font-size: 0.2rem;
     }
 
     &__wrapper {
       flex-direction: column;
       margin-top: 0.38rem;
+    }
+
+    &__sub_title{
+      font-size: 0.2rem;
     }
 
     &__is__sp{
