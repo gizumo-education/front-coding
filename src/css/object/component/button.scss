@@ -46,6 +46,9 @@
 
 @include utility.sp {
   .c-button {
+    & img{
+    height: 0.18rem;
+    }
     &__openings {
       padding: 0.1rem 0.42rem 0.12rem 0.13rem;
       width: fit-content;
