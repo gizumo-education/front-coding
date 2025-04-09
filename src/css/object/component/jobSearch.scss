@@ -9,7 +9,6 @@
   border-radius: 10px;
   text-align: center;
   align-items: center;
-  // margin: auto;
   margin-top: 60px;
   margin-bottom: 60px;
 
@@ -58,6 +57,7 @@
     height: 60px;
     position: relative;
     top: 4px;
+    padding-left: 46px;
     border: none;
     border-radius: 30px;
     margin-left: 15px;
@@ -70,8 +70,8 @@
 
 
     &>.whiteMushimegane {
-      position: relative;
-      left: -10px;
+      position: absolute;
+      left: 10px;
     }
 
   }
@@ -106,6 +106,110 @@
       border: 1px solid variables.$inputBorderPink;
       border-radius: 10px;
       appearance: none;
+    }
+  }
+}
+
+@include utility.tab {
+  .c-jobSearch {
+    width: 10rem;
+
+    &__title {
+      font-size: 0.25rem;
+    }
+
+    &__subtitle {
+      font-size: 0.2rem;
+    }
+
+    &__fieldContainer > input {
+      width: 2rem;
+      height: 0.5rem;
+      font-size: 0.18rem;
+    }
+
+    &__selectContainer > select {
+      width: 1.5rem;
+      height: 0.5rem;
+      font-size: 0.18rem;
+    }
+
+    &__selectContainer::before {
+      width: 0.2rem;
+      height: 0.1rem;
+      top: 65%;
+      right: 0.15rem;
+    }
+
+    .c-search__button {
+      width: 1.5rem ;
+      height: 0.5rem ;
+      font-size: 0.2rem ;
+      padding-left : 0.46rem;
+      top: 0.01rem ;
+  
+      & > .whiteMushimegane {
+        width: 0.3rem;
+        height: 0.3rem;
+      }
+    }
+  }
+}
+
+@include utility.sp {
+  .c-jobSearch {
+    width: 3.7rem;
+    height: 2.4rem;
+    padding-top: 0.15rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0;
+
+    &__title {
+      font-size: 0.22rem;
+    }
+
+    &__subtitle {
+      font-size: 0.14rem;
+      margin-top: 0.16rem;
+    }
+
+    &__selectContainer::before {
+      width: 0.13rem;
+      height: 0.07rem;
+      top: 0.24rem;
+      right: 0.1rem;
+    }
+
+    &__selectContainer > select {
+      width: 1rem;
+      height: 0.3rem;
+      margin-top: 0.13rem;
+      border-radius: 0.05rem;
+      font-size: 0.12rem;
+      padding: 0.06rem 0.24rem 0.07rem 0.08rem;
+    }
+
+    &__fieldContainer > input {
+      font-size: 0.14rem;
+      width: 3.2rem;
+      height: 0.3rem;
+      border-radius: 0.05rem;
+      margin-top: 0.15rem;
+    }
+
+    .c-search__button {
+      width: 1.6rem;
+      height: 0.4rem;
+      font-size: 0.18rem;
+      margin-top: 0.19rem;
+      padding-left: 0.14rem;
+
+    
+      & > .whiteMushimegane {
+        width: 0.2rem;
+        height: 0.2rem;
+        top: 0.1rem;
+      }
     }
   }
 }

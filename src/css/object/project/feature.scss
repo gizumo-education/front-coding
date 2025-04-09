@@ -66,3 +66,65 @@
 
     }
 }
+
+@include utility.tab {
+  .p-feature > h2 {
+    font-size: 0.25rem;
+  }
+
+  .p-feature__wrapper__box {
+    width: 5rem;
+
+    & > h3 {
+      font-size: 0.24rem;
+    }
+
+    & > p {
+      font-size: 0.14rem;
+    }
+  }
+}
+
+@include utility.sp {
+
+  .p-feature {
+    margin-top: 0.55rem;
+
+    &__wrapper {
+      margin-top: 0.33rem;
+      width: 100%;
+      gap: 0.2rem;
+    }
+
+    &__wrapper__box {
+      width: 3.7rem;
+      
+      &:first-child {
+        padding: 0.3rem 0.17rem;
+      }
+
+      &:nth-child(2) {
+        padding: 0.3rem 0.18rem;
+      }
+
+      &:nth-child(3) {
+        padding: 0.3rem 0.4rem;
+      }
+
+      &:nth-child(4) {
+        padding: 0.3rem 0.1rem;
+      }
+
+      & > h3 {
+        font-size: 0.2rem;
+      }
+
+      & > p:first-child, p:nth-child(2), p:nth-child(3), p:nth-child(4) {
+        margin-top: 0.28rem;
+        font-size:0.12rem;
+        line-height: 1.4;
+      }
+    }
+  }
+ 
+}

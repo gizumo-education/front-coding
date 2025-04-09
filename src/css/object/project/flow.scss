@@ -132,10 +132,98 @@
       & > h3 {
         font-weight: variables.$bold;
         font-size: 24px;
-        line-height: 30px;
         letter-spacing: 0%;
       }
     }
   }
 }
 
+@include utility.tab {
+
+.p-flow > h2 {
+  font-size: 0.25rem;
+}
+  .p-flow__wrapper__each {
+    width: 2.8rem;
+    height: 3.6rem;
+    padding: 0.6rem 0.21rem 0.42rem 0.21rem;
+
+    & > img {
+      width: 1rem;
+    }
+
+    & > h3 {
+      font-size: 0.24rem;
+    }
+
+    & > p {
+      font-size:0.14rem;
+    }
+
+    &:first-child:before, &:nth-child(2):before, &:nth-child(3):before, &:nth-child(4):before {
+      font-size: 0.16rem;
+      width: 0.6rem;
+      height: 0.6rem;
+      top: 0.1rem;
+      left: 0.1rem;
+      padding: 0.1rem;
+    }
+  }
+}
+
+@include utility.sp {
+  .p-flow {
+    margin-top: 0.6rem;
+  }
+  .p-flow__wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.34rem;
+
+    &__each {
+      width: 2.8rem;
+      height: 2.7rem;
+      justify-content: center;
+      padding: 0.55rem 0.07rem 0.22rem 0.07rem;
+      margin-top: 0.4rem;
+      margin-left: 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      & > img {
+        width: 0.7rem;
+      }
+
+      & > h3 {
+        font-size: 0.2rem;
+        margin-top: 0.22rem;
+      }
+
+      & > p {
+        line-height: 1.4;
+      }
+
+      &::after {
+        top: 105%;
+        left: 1.2rem;
+        content: '';
+        width: 0.4rem;
+        height: 0.2rem;
+        clip-path: polygon(0 0, 50% 100%, 100% 0);
+        background-color: variables.$searchButtonBgPink;
+        pointer-events: none;
+      }
+
+      &:first-child:before, &:nth-child(2):before, &:nth-child(3):before, &:nth-child(4):before {
+        font-size: 0.1rem;
+        padding: 10px;
+        width: 0.48rem;
+        height: 0.48rem;
+      }
+
+
+    }
+  }
+}
