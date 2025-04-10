@@ -8,11 +8,16 @@
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
+  @include utility.tab {
+    width: 40rem;
+    height: 27rem;
+  }
   @include utility.sp {
     width: 4rem;
     height: 2.7rem;
     background-size: 4rem 2.7rem;
     background-image: url('../img/picture/hero-mobile.jpg');
+    
   }
   &__contents {
     position: absolute;
@@ -22,6 +27,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    @include utility.tab {
+      top: 6.16rem;
+      right: 0.3rem;
+    }
     @include utility.sp {
       top: 0.616rem;
       right: 0.03rem;
@@ -31,6 +40,11 @@
     width: 34rem;
     height: 17rem;
     margin-bottom: 4rem;
+    @include utility.tab {
+      width: 15rem;
+      height: 7.3rem;
+      margin-bottom: 1.2rem;
+    }
     @include utility.sp {
       width: 1.5rem;
       height: 0.73rem;
@@ -41,6 +55,11 @@
     width: 80rem;
     height: 6.5rem;
     margin-bottom: 5rem;
+    @include utility.tab {
+      width: 26rem;
+      height: 2.2rem;
+      margin-bottom: 1.8rem;
+    }
     @include utility.sp {
       width: 2.6rem;
       height: 0.22rem;
@@ -58,6 +77,14 @@
     background-color: utility.$white;
     border: 0.2rem solid utility.$green;
     border-radius: 1rem;
+    @include utility.tab {
+      width: 17rem;
+      height: 3rem;
+      font-size: 0.8rem;
+      padding: 0.4rem 2.3rem;
+      border: 0.1rem solid utility.$green;
+      border-radius: 0.5rem;
+    }
     @include utility.sp {
       width: 1.7rem;
       height: 0.3rem;
@@ -71,6 +98,9 @@
     color: utility.$green;
     font-size: 4rem;
     font-weight: utility.$bold;
+    @include utility.tab {
+      font-size: 1rem;
+    }
     @include utility.sp {
       font-size: 0.1rem;
     }
