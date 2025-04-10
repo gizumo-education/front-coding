@@ -14,6 +14,10 @@
     font-size: 2.5rem;
     line-height: 1.7;
     font-weight: utility.$bold;
+    @include utility.tab {
+      font-size: 1.4rem;
+      font-weight: utility.$regular;
+    }
     @include utility.sp {
       font-size: 0.14rem;
       font-weight: utility.$regular;
@@ -23,6 +27,9 @@
     height: 30rem;
     width: 100%;
     filter: brightness(50%);
+    @include utility.tab {
+      height: 7.5rem;
+    }
     @include utility.sp {
       height: 0.75rem;
     }
