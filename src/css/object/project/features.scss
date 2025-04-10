@@ -6,6 +6,9 @@
   align-items: center;
   text-align: center;
   margin: 10.5rem auto;
+  @include utility.tab {
+    margin: 5.5rem auto 6rem;
+  }
   @include utility.sp {
     margin: 0.55rem auto 0.6rem;
   }
@@ -13,6 +16,10 @@
     font-size: 2.5rem;
     font-weight: utility.$bold;
     margin-bottom: 5.3rem;
+    @include utility.tab {
+      font-size: 2.5rem;
+      margin-bottom: 3.8rem;
+    }
     @include utility.sp {
       font-size: 0.25rem;
       margin-bottom: 0.38rem;
@@ -22,6 +29,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
+    @include utility.tab {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
     @include utility.sp {
       grid-template-columns: 1fr;
       gap: 0.2rem;
@@ -33,6 +44,12 @@
     border-radius: 1rem;
     width: 57rem;
     height: 18rem;
+    @include utility.tab {
+      padding: 3rem 1rem;
+      border-radius: 1rem;
+      width: 37rem;
+      height: auto;
+    }
     @include utility.sp {
       padding: 0.3rem 0.1rem;
       border-radius: 0.1rem;
@@ -44,6 +61,10 @@
       font-weight: utility.$bold;
       color: utility.$pink;
       margin-bottom: 2.6rem;
+      @include utility.tab {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+      }
       @include utility.sp {
         font-size: 0.2rem;
         margin-bottom: 0.3rem;
@@ -52,6 +73,9 @@
     &-desc {
       font-size: 1.4rem;
       line-height: 1.5;
+      @include utility.tab {
+        font-size: 1.2rem;
+      }
       @include utility.sp {
         font-size: 0.12rem;
       }
