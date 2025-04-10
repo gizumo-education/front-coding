@@ -2,10 +2,18 @@
 
 .p-hero {
   position: relative;
+  width: 100%;
   height: 50rem;
   background-image: url('../img/picture/hero-desctop.jpg');
   background-size: cover; 
   background-position: center; 
+  background-repeat: no-repeat;
+  @include utility.sp {
+    width: 4rem;
+    height: 2.7rem;
+    background-size: 4rem 2.7rem;
+    background-image: url('../img/picture/hero-mobile.jpg');
+  }
   &__contents {
     position: absolute;
     top: 5.6rem;
@@ -14,27 +22,58 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    @include utility.sp {
+      top: 0.616rem;
+      right: 0.03rem;
+    }
   }
   &__icon {
     width: 34rem;
     height: 17rem;
     margin-bottom: 4rem;
+    @include utility.sp {
+      width: 1.5rem;
+      height: 0.73rem;
+      margin-bottom: 0.12rem;
+    }
   }
   &__title {
-    font-size: 5rem;
+    width: 80rem;
+    height: 6.5rem;
     margin-bottom: 5rem;
+    @include utility.sp {
+      width: 2.6rem;
+      height: 0.22rem;
+      margin-bottom: 0.18rem;
+    }
   }
   &__desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     color: utility.$green;
     font-size: 2rem;
     padding: 0.5rem 4rem;
     background-color: utility.$white;
     border: 0.2rem solid utility.$green;
     border-radius: 1rem;
+    @include utility.sp {
+      width: 1.7rem;
+      height: 0.3rem;
+      font-size: 0.08rem;
+      padding: 0.04rem 0.23rem;
+      border: 0.01rem solid utility.$green;
+      border-radius: 0.05rem;
+    }
   }
   &__count {
     color: utility.$green;
     font-size: 4rem;
+    font-weight: utility.$bold;
+    @include utility.sp {
+      font-size: 0.1rem;
+    }
   }
 }
 
