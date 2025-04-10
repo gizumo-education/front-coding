@@ -12,10 +12,11 @@
       height: 3rem;
   }
   @include utility.tab {
+    border-radius: 4.68rem;
+    font-size: 0.28rem;
     &__img {
-      width: 1.8rem;
-      height: 1.8rem;
-      margin-right: 1.5rem;
+      width: 0.46rem;
+      height: 0.46rem;
     }
   }
   @include utility.sp {
