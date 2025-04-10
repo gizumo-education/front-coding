@@ -10,19 +10,37 @@
   border-radius: 1rem;
   padding: 4rem;
   margin: 6rem auto;
+  @include utility.sp {
+    width: 3.7rem;
+    height: 2.4rem;
+    padding: 0.15rem 0.25rem 0.2rem;
+    margin: 0.25rem auto;
+    border-radius: 0.1rem;
+  }
   &__title {
     font-size: 2.5rem;
     font-weight: utility.$bold;
     margin-bottom: 2rem;
+    @include utility.sp {
+    font-size: 0.22rem;
+    margin-bottom: 0.14rem;
+  }
   }
   &__desc {
     font-size: 2rem;
     margin-bottom: 2.6rem;
+    @include utility.sp {
+      font-size: 0.14rem;
+      margin-bottom: 0.13rem;
+    }
   }
   &__group {
     display: flex;
     text-align: center;
     align-items: center;
+    @include utility.sp {
+      flex-direction: column;
+    }
   }
   &__selects {
     display: flex;
@@ -39,6 +57,19 @@
     background: url('../img/icon/arrow.png') no-repeat right 1.5rem center;
     background-color: utility.$white;
     background-size: 2rem 1rem;
+    @include utility.sp {
+      width: 1rem;
+      font-size: 0.12rem;
+      margin-right: 0.1rem;
+      padding: 0.06rem 0.08rem;
+      border: 0.01px solid utility.$pink;
+      border-radius: 0.05rem;
+      background-position: right 0.07rem center;
+      background-size: 0.13rem 0.07rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
   &__input { 
     width: 30rem;
@@ -47,10 +78,27 @@
     padding: 1.7rem 1.5rem;
     border-radius: 1rem;
     border: 1px solid utility.$pink2;
+    @include utility.sp {
+      width: 3.2rem;
+      font-size: 0.12rem;
+      margin: 0.15rem 0 0.19rem;
+      padding: 0.06rem 0.08rem;
+      border: 0.01px solid utility.$pink;
+      border-radius: 0.05rem;
+    }
   }
   &__submit {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
     padding: 1.5rem;
     font-weight: utility.$bold;
+    @include utility.sp {
+      width: 1.6rem;
+      padding: 0.11rem 0.13rem;
+      font-size: 0.18rem;
+    }
   }
   &.form2 {
     margin-bottom: 20rem;

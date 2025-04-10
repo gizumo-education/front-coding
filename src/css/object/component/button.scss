@@ -11,4 +11,11 @@
       width: 3rem;
       height: 3rem;
   }
+  @include utility.sp {
+    &__img {
+      width: 0.18rem;
+      height: 0.18rem;
+      margin-right: 0.15rem;
+  }
+  }
 }
