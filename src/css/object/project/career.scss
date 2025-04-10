@@ -1,0 +1,52 @@
+@use '../../object/utility/utility.scss';
+
+.p-career {
+  margin: 10.5rem auto;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: utility.$bold;
+    margin-bottom: 5rem;
+  }
+  &__contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 8rem;
+  }
+  &__item {
+    position: relative;
+    width: 38rem;
+    height: 24rem;
+    &-img {
+      position: absolute;
+      border-radius: 2rem;
+      filter: brightness(50%);
+    }
+    &-text-contents {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      color: utility.$white;
+    }
+    &-title {
+      font-size: 2.4rem;
+      margin-bottom: 4.4rem;
+    }
+    &-desc {
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+  }
+  &__button {
+    padding: 2.1rem 9.3rem;
+    width: 42rem;
+    margin: 0 auto;
+  }
+}
