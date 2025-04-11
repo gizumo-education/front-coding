@@ -4,6 +4,9 @@
   margin: 10.5rem auto;
   display: flex;
   flex-direction: column;
+  @include utility.tab {
+    margin: 1.64rem auto;
+  }
   @include utility.sp {
     margin: 0.6rem auto;
   }
@@ -12,6 +15,10 @@
     font-size: 2.5rem;
     font-weight: utility.$bold;
     margin-bottom: 5rem;
+    @include utility.tab {
+      font-size: 0.39rem;
+      margin-bottom: 0.78rem;
+    }
     @include utility.sp {
       font-size: 0.25rem;
       margin-bottom: 0.3rem;
@@ -23,6 +30,10 @@
     justify-content: center;
     gap: 2rem;
     margin-bottom: 8rem;
+    @include utility.tab {
+      gap: 0.3rem;
+      margin-bottom: 1.25rem;
+    }
     @include utility.sp {
       flex-direction: column;
       gap: 0.17rem;
@@ -33,14 +44,22 @@
     position: relative;
     width: 38rem;
     height: 24rem;
+    @include utility.tab {
+      width: 5.93rem;
+      height: 3.75rem;
+    }
     @include utility.sp {
       width: 3.7rem;
       height: 2.34rem;
     }
     &-img {
+      width: 100%;
       position: absolute;
       border-radius: 2rem;
       filter: brightness(50%);
+      @include utility.tab {
+        border-radius: 0.3rem;
+      }
       @include utility.sp {
         border-radius: 0.1rem;
       }
@@ -57,6 +76,10 @@
     &-title {
       font-size: 2.4rem;
       margin-bottom: 4.4rem;
+      @include utility.tab {
+        font-size: 0.37rem;
+        margin-bottom: 0.68rem;
+      }
       @include utility.sp {
         font-size: 0.21rem;
         margin-bottom: 0.53rem;
@@ -65,6 +88,9 @@
     &-desc {
       font-size: 1.6rem;
       line-height: 1.5;
+      @include utility.tab {
+        font-size: 0.25rem;
+      }
       @include utility.sp {
         font-size: 0.14rem;
       }
@@ -75,6 +101,10 @@
     width: 42rem;
     margin: 0 auto;
     text-align: center;
+    @include utility.tab {
+      padding: 0.32rem 1.45rem;
+      width: 6.56rem;
+    }
     @include utility.sp {
       font-size: 0.14rem;
       padding: 0.21rem 0.68rem;
