@@ -15,7 +15,7 @@
     line-height: 1.7;
     font-weight: utility.$bold;
     @include utility.tab {
-      font-size: 0.4rem;
+      font-size: 0.25rem;
     }
     @include utility.sp {
       font-size: 0.14rem;
@@ -27,7 +27,7 @@
     width: 100%;
     filter: brightness(50%);
     @include utility.tab {
-      height: 4.68rem;
+      height: 2.99rem;
     }
     @include utility.sp {
       height: 0.75rem;
