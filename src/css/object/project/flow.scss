@@ -1,7 +1,10 @@
 @use '../../object/utility/utility.scss';
 
-.p-flow {
+.p-flow { 
   margin: 10.5rem auto;
+  @include utility.tab {
+    margin: 1.64rem auto;
+  }
   @include utility.sp {
     margin: 0.6rem auto;
   }
@@ -10,6 +13,10 @@
     font-weight: utility.$bold;
     text-align: center;
     margin-bottom: 5rem;
+    @include utility.tab {
+      font-size: 0.39rem;
+      margin-bottom: 0.78rem;
+    }
     @include utility.sp {
       font-size: 0.25rem;
       margin-bottom: 0.34rem;
@@ -19,6 +26,9 @@
     display: flex;
     justify-content: center;
     gap: 2.1rem;
+    @include utility.tab {
+      gap: 0.32rem;
+    }
     @include utility.sp {
       flex-direction: column;
       gap: 0.4rem;
@@ -34,6 +44,12 @@
     height: 36rem;
     border-radius: 2rem;
     border: 2px solid utility.$pink;
+    @include utility.tab {
+      padding: 0.93rem 0.3rem 0.65rem;
+      width: 4.3rem;
+      height: 5.6rem;
+      border-radius: 0.3rem;
+    }
     @include utility.sp {
       padding: 0.55rem 0.08rem 0.3rem;
       border-radius: 0.2rem;
@@ -55,6 +71,14 @@
       line-height: 1.1;
       border-radius: 50%;
       text-align: center;
+      @include utility.tab {
+        top: 0.15rem;
+        left: 0.15rem;
+        padding: 0.23rem 0.15rem;
+        width: 0.93rem;
+        height: 0.93rem;
+        font-size: 0.25rem;
+      }
       @include utility.sp {
         top: 0.1rem;
         left: 0.1rem;
@@ -74,6 +98,9 @@
       font-weight: utility.$bold;
       text-align: center;
       line-height: 1.2;
+      @include utility.tab {
+        font-size: 0.37rem;
+      }
       @include utility.sp {
         font-size: 0.2rem;
       }
@@ -81,6 +108,9 @@
     &-desc {
       font-size: 1.4rem;
       line-height: 1.1;
+      @include utility.tab {
+        font-size: 0.28rem;
+      }
       @include utility.sp {
         font-size: 0.14rem;
       }
@@ -88,6 +118,9 @@
     &.item1 {
       & .p-flow__item-title {
         margin: 2rem 0 1.8rem;
+        @include utility.tab {
+          margin: 0.3rem 0 0.28rem;
+        }
         @include utility.sp {
           font-size: 0.2rem;
           margin: 0.22rem 0 0.1rem;
@@ -97,6 +130,9 @@
     &.item2 {
       & .p-flow__item-title {
         margin: 3.3rem 0 1.8rem;
+        @include utility.tab {
+          margin: 0.5rem 0 0.28rem;
+        }
         @include utility.sp {
           font-size: 0.2rem;
           margin: 0.22rem 0 0.1rem;
@@ -106,6 +142,9 @@
     &.item3 {
       & .p-flow__item-title {
         margin: 3rem 0 3rem;
+        @include utility.tab {
+          margin: 0.46rem 0 0.46rem;
+        }
         @include utility.sp {
           font-size: 0.2rem;
           margin: 0.22rem 0 0.1rem;
@@ -115,6 +154,9 @@
     &.item4 {
       & .p-flow__item-title {
         margin: 2.8rem 0 3rem;
+        @include utility.tab {
+          margin: 0.43rem 0 0.46rem;
+        }
         @include utility.sp {
           font-size: 0.2rem;
           margin: 0.22rem 0 0.1rem;
@@ -129,6 +171,11 @@
     width: 2rem;
     height: 4rem;
     transform: translate(-50%, -50%);
+    @include utility.tab {
+      right: -0.5rem;
+      width: 0.3rem;
+      height: 0.6rem;
+    }
     @include utility.sp {
       top: 100%;
       left: 50%;
