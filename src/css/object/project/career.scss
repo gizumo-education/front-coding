@@ -5,7 +5,8 @@
   display: flex;
   flex-direction: column;
   @include utility.tab {
-    margin: 1.64rem auto;
+    width: 11.8rem;
+    margin: 1.05rem auto;
   }
   @include utility.sp {
     margin: 0.6rem auto;
@@ -16,8 +17,8 @@
     font-weight: utility.$bold;
     margin-bottom: 5rem;
     @include utility.tab {
-      font-size: 0.39rem;
-      margin-bottom: 0.78rem;
+      font-size: 0.24rem;
+      margin-bottom: 0.5rem;
     }
     @include utility.sp {
       font-size: 0.25rem;
@@ -31,8 +32,8 @@
     gap: 2rem;
     margin-bottom: 8rem;
     @include utility.tab {
-      gap: 0.3rem;
-      margin-bottom: 1.25rem;
+      gap: 0.19rem;
+      margin-bottom: 0.8rem;
     }
     @include utility.sp {
       flex-direction: column;
@@ -45,8 +46,8 @@
     width: 38rem;
     height: 24rem;
     @include utility.tab {
-      width: 5.93rem;
-      height: 3.75rem;
+      width: 3.79rem;
+      height: 2.4rem;
     }
     @include utility.sp {
       width: 3.7rem;
@@ -58,7 +59,7 @@
       border-radius: 2rem;
       filter: brightness(50%);
       @include utility.tab {
-        border-radius: 0.3rem;
+        border-radius: 0.2rem;
       }
       @include utility.sp {
         border-radius: 0.1rem;
@@ -77,8 +78,8 @@
       font-size: 2.4rem;
       margin-bottom: 4.4rem;
       @include utility.tab {
-        font-size: 0.37rem;
-        margin-bottom: 0.68rem;
+        font-size: 0.23rem;
+        margin-bottom: 0.43rem;
       }
       @include utility.sp {
         font-size: 0.21rem;
@@ -89,7 +90,7 @@
       font-size: 1.6rem;
       line-height: 1.5;
       @include utility.tab {
-        font-size: 0.25rem;
+        font-size: 0.16rem;
       }
       @include utility.sp {
         font-size: 0.14rem;
@@ -102,8 +103,8 @@
     margin: 0 auto;
     text-align: center;
     @include utility.tab {
-      padding: 0.32rem 1.45rem;
-      width: 6.56rem;
+      padding: 0.2rem 0.92rem;
+      width: 4.19rem;
     }
     @include utility.sp {
       font-size: 0.14rem;
