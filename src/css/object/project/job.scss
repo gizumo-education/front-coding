@@ -60,7 +60,9 @@
   &__img {
     border-radius: 1rem;
     width: 28rem;
-    height: 20rem;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
     margin-bottom: 0.8rem;
     @include utility.tab {
       border-radius: 0.09rem;
