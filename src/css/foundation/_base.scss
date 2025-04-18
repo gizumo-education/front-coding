@@ -1,0 +1,82 @@
+@use '../object/utility/utility' as base;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  font-weight: base.$regular;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1;
+}
+
+@include base.tab {
+  body {
+    font-size: 0.1rem;
+  }
+  html {
+    font-size: calc(100vw / 12);
+    // 1200pxの画面幅で見たときにfont-sizeが100pxになるように計算
+  }
+}
+
+@include base.sp {
+  body {
+    font-size: 0.1rem;
+  }
+  html {
+    font-size: calc(100vw / 4);
+    // 400pxの画面幅で見たときにfont-sizeが100pxになるように計算
+  }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  display: inline-block;
+  color: base.$black;
+  text-decoration: none;
+  transition: .3s all;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.is-pc {
+  @include base.pc {
+    display: block!important;
+  }
+  @include base.tab {
+    display: block!important;
+  }
+  @include base.sp {
+    display: none!important;
+  }
+}
+
+.is-sp {
+  @include base.pc {
+    display: none!important;
+  }
+  @include base.tab {
+    display: none!important;
+  }
+  @include base.sp {
+    display: block!important;
+  }
+}
