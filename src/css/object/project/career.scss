@@ -4,11 +4,26 @@
   margin: 10.5rem auto;
   display: flex;
   flex-direction: column;
+  @include utility.tab {
+    width: 11.8rem;
+    margin: 1.05rem auto;
+  }
+  @include utility.sp {
+    margin: 0.6rem auto;
+  }
   &__title {
     text-align: center;
     font-size: 2.5rem;
     font-weight: utility.$bold;
     margin-bottom: 5rem;
+    @include utility.tab {
+      font-size: 0.24rem;
+      margin-bottom: 0.5rem;
+    }
+    @include utility.sp {
+      font-size: 0.25rem;
+      margin-bottom: 0.3rem;
+    }
   }
   &__contents {
     display: flex;
@@ -16,15 +31,39 @@
     justify-content: center;
     gap: 2rem;
     margin-bottom: 8rem;
+    @include utility.tab {
+      gap: 0.19rem;
+      margin-bottom: 0.8rem;
+    }
+    @include utility.sp {
+      flex-direction: column;
+      gap: 0.17rem;
+      margin: 0 auto 0.6rem;
+    }
   }
   &__item {
     position: relative;
     width: 38rem;
     height: 24rem;
+    @include utility.tab {
+      width: 3.79rem;
+      height: 2.4rem;
+    }
+    @include utility.sp {
+      width: 3.7rem;
+      height: 2.34rem;
+    }
     &-img {
+      width: 100%;
       position: absolute;
       border-radius: 2rem;
       filter: brightness(50%);
+      @include utility.tab {
+        border-radius: 0.2rem;
+      }
+      @include utility.sp {
+        border-radius: 0.1rem;
+      }
     }
     &-text-contents {
       position: absolute;
@@ -38,15 +77,39 @@
     &-title {
       font-size: 2.4rem;
       margin-bottom: 4.4rem;
+      @include utility.tab {
+        font-size: 0.23rem;
+        margin-bottom: 0.43rem;
+      }
+      @include utility.sp {
+        font-size: 0.21rem;
+        margin-bottom: 0.53rem;
+      }
     }
     &-desc {
       font-size: 1.6rem;
       line-height: 1.5;
+      @include utility.tab {
+        font-size: 0.16rem;
+      }
+      @include utility.sp {
+        font-size: 0.14rem;
+      }
     }
   }
   &__button {
     padding: 2.1rem 9.3rem;
     width: 42rem;
     margin: 0 auto;
+    text-align: center;
+    @include utility.tab {
+      padding: 0.2rem 0.92rem;
+      width: 4.19rem;
+    }
+    @include utility.sp {
+      font-size: 0.18rem;
+      padding: 0.21rem 0.68rem;
+      width: 3.7rem;
+    }
   }
 }

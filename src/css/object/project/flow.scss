@@ -1,17 +1,40 @@
 @use '../../object/utility/utility.scss';
 
-.p-flow {
+.p-flow { 
   margin: 10.5rem auto;
+  @include utility.tab {
+    margin: 1.04rem auto;
+  }
+  @include utility.sp {
+    margin: 0.6rem auto;
+  }
   &__title {
     font-size: 2.5rem;
     font-weight: utility.$bold;
     text-align: center;
     margin-bottom: 5rem;
+    @include utility.tab {
+      font-size: 0.24rem;
+      margin-bottom: 0.5rem;
+    }
+    @include utility.sp {
+      font-size: 0.25rem;
+      margin-bottom: 0.34rem;
+    }
   }
   &__contents {
     display: flex;
     justify-content: center;
     gap: 2.1rem;
+    @include utility.tab {
+      width: 11.8rem;
+      gap: 0.2rem;
+      margin: 0 auto;
+    }
+    @include utility.sp {
+      flex-direction: column;
+      gap: 0.4rem;
+    }
   }
   &__item {
     position: relative;
@@ -23,6 +46,19 @@
     height: 36rem;
     border-radius: 2rem;
     border: 2px solid utility.$pink;
+    @include utility.tab {
+      padding: 0.59rem 0.19rem 0.4rem;
+      width: 2.75rem;
+      height: 3.5rem;
+      border-radius: 0.19rem;
+    }
+    @include utility.sp {
+      padding: 0.55rem 0.08rem 0.3rem;
+      border-radius: 0.2rem;
+      width: 2.8rem;
+      height: 2.93rem;
+      margin: 0 auto;
+    }
     &-step {
       position: absolute;
       top: 1rem;
@@ -33,8 +69,30 @@
       background-color: utility.$pink;
       color: utility.$white;
       font-size: 1.6rem;
+      font-weight: utility.$bold;
+      line-height: 1.1;
       border-radius: 50%;
       text-align: center;
+      @include utility.tab {
+        top: 0.09rem;
+        left: 0.09rem;
+        padding: 0.14rem 0.09rem;
+        width: 0.6rem;
+        height: 0.6rem;
+        font-size: 0.16rem;
+      }
+      @include utility.sp {
+        top: 0.1rem;
+        left: 0.1rem;
+        padding: 0.13rem 0.1rem;
+        width: 0.45rem;
+        height: 0.45rem;
+        font-size: 0.1rem;
+      }
+    }
+    &-img {
+      width: 0.64rem;
+      height: 0.64rem;
     }
     &-text-contents {
       height: 100%;
@@ -46,30 +104,70 @@
       font-weight: utility.$bold;
       text-align: center;
       line-height: 1.2;
-      // margin: auto;
+      @include utility.tab {
+        font-size: 0.23rem;
+        width: 85%;
+      }
+      @include utility.sp {
+        font-size: 0.2rem;
+      }
     }
     &-desc {
       font-size: 1.4rem;
-      line-height: 1.2;
+      line-height: 1.1;
+      @include utility.tab {
+        font-size: 0.17rem;
+      }
+      @include utility.sp {
+        font-size: 0.14rem;
+      }
     }
     &.item1 {
       & .p-flow__item-title {
         margin: 2rem 0 1.8rem;
+        @include utility.tab {
+          margin: 0.2rem auto 0.17rem;
+        }
+        @include utility.sp {
+          font-size: 0.2rem;
+          margin: 0.22rem 0 0.1rem;
+        }
       }
     }
     &.item2 {
       & .p-flow__item-title {
         margin: 3.3rem 0 1.8rem;
+        @include utility.tab {
+          margin: 0.2rem auto 0.17rem;
+        }
+        @include utility.sp {
+          font-size: 0.2rem;
+          margin: 0.22rem 0 0.1rem;
+        }
       }
     }
     &.item3 {
       & .p-flow__item-title {
         margin: 3rem 0 3rem;
+        @include utility.tab {
+          margin: 0.29rem auto 0.29rem;
+        }
+        @include utility.sp {
+          font-size: 0.2rem;
+          margin: 0.22rem 0 0.1rem;
+        }
       }
     }
     &.item4 {
       & .p-flow__item-title {
         margin: 2.8rem 0 3rem;
+        @include utility.tab {
+          margin: 0.27rem auto 0.29rem;
+        }
+        @include utility.sp {
+          font-size: 0.2rem;
+          margin: 0.22rem 0 0.1rem;
+        }
       }
     }
   }
@@ -80,5 +178,17 @@
     width: 2rem;
     height: 4rem;
     transform: translate(-50%, -50%);
+    @include utility.tab {
+      right: -0.32rem;
+      width: 0.19rem;
+      height: 0.38rem;
+    }
+    @include utility.sp {
+      top: 100%;
+      left: 50%;
+      transform: rotate(90deg);
+      width: 0.2rem;
+      height: 0.4rem;
+    }
   }
 }
