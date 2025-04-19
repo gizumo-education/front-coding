@@ -9,8 +9,6 @@
 
 html {
   font-size: 10px;
-  overflow-x: hidden;
-
 }
 
 body {
@@ -20,12 +18,13 @@ body {
   font-weight: base.$regular;
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 1;
-  overflow-x: hidden;
-
-  &.is-fixed {
-  overflow: hidden;
-  height: 100%;
-}
+    @include base.sp {
+    overflow-x: hidden;
+    &.is-fixed {
+      overflow: hidden;
+      height: 100%;
+    }
+  }
 }
 
 @include base.tab {

@@ -43,15 +43,13 @@
     @include utility.sp {
       margin-bottom: 0.44rem;
       & .slick-list {
-      max-width: 4rem;
-    }
-    & .slick-track {
-      display: flex !important;
-      justify-content: center !important;
-    }
-    & .slick-slide {
-      width: 3.7rem !important;
-    }
+        max-width: 4rem;
+      }
+      & .slick-track {
+        display: flex !important;
+        justify-content: center !important;
+      }
+
     }
   }
   &__item {
@@ -66,6 +64,9 @@
     }
     @include utility.sp {
       margin: 0 auto;
+      &.slick-slide {
+        width: 3.7rem !important;
+      }
     }
   }
   &__img {
