@@ -27,12 +27,10 @@ $(window).on('load', function() {
   });
 
   $(document).on('click', '.p-job__arrow.left', function () {
-    console.log($slider.slick('getSlick'));
     $slider.slick('slickPrev');
   });
 
   $(document).on('click', '.p-job__arrow.right', function () {
-    console.log($slider.slick('getSlick'));
     $slider.slick('slickNext');
   });
 
