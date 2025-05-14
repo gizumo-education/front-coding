@@ -5,6 +5,11 @@
   border-radius: 30px;
   border: none;
   cursor: pointer;
+  transition: .3s all;
+
+  &:hover {
+    opacity: .7;
+  }
 
   &__inner {
     display: flex;
