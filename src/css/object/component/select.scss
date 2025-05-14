@@ -1,0 +1,30 @@
+@use '../../object/utility/utility.scss';
+
+.c-select {
+  appearance: none;
+  background-color: utility.$white;
+  border: 1px solid utility.$borderRed;
+  border-radius: 10px;
+  padding: 17px 15px;
+  width: 200px;
+  height: 60px;
+  
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: utility.$borderRed transparent transparent transparent;
+      border-width: 10px 10px 0px 10px;
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+
+}

@@ -1,2 +1,26 @@
 @use '../../object/utility/utility.scss';
-// 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-button {
+  background-color: utility.$buttonRed;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  &__icon {
+    filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: utility.$bold;
+    color: utility.$white;
+  }
+}

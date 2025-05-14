@@ -1,0 +1,34 @@
+@use '../../object/utility/utility.scss';
+
+.p-job-search {
+  padding-top: 60px;
+
+  &__inner {
+    max-width: 1180px;
+    width: 100%;
+    background-color: utility.$bgBlue;
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__form {
+    margin-top: 26px;
+  }
+
+  &__form-item {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  &__button {
+    width: 140px;
+    height: 60px;
+  }
+}

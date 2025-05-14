@@ -13,8 +13,13 @@
 
 /*component---------------------------------*/
 @use './object/component/button.scss';
+@use './object/component/select.scss';
+@use './object/component/input.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
 @use './object/project/keyvisual.scss';
+@use './object/project/job-search.scss';
+@use './object/project/job-list.scss';
+@use './object/project/mid-visual.scss';
 /*-------------------------------------------*/
