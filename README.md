@@ -1,43 +1,36 @@
-# コーディング研修
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## 開発環境
+## Getting Started
 
-![node version](https://img.shields.io/badge/node-16.17.0-48C628.svg?style=flat-square) ![npm version](https://img.shields.io/badge/npm-v6.14.17-2D7DBE.svg?style=flat-square)
+First, run the development server:
 
-## プロジェクトのセットアップ
-依存モジュールのインストール
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
-npm install
-```
-## 立ち上げ（開発時）
-```
-npm run start
-```
-## 立ち上げ（ビルド時）
-```
-npm run build
-```
-## ディレクトリ
-```
-.
-├── README.md
-├── src
-│    ├── index.html
-│    ├── img
-│    ├── js
-│    └── css
-├── .babelrc
-├── .git
-├── .gitignore
-├── package-lock.json
-├── package.json
-└── webpack.config.mjs
-```
-|ディレクトリもしくはファイル名|説明|
-|---|---|
-|src|ビルド前のソースコードを格納しているディレクトリ|
-|.babelrc|[babel](https://babeljs.io/docs/en/babel-preset-env)が実行するトランスパイルの設定ファイル|
-|.gitignore|git管理しないファイル/ディレクトリを記載するファイル|
-|package-lock.json|package.jsonの情報をもとに自動生成されるファイル<br>開発者間が同一の依存関係をインストールするために必要|
-|package.json|npmでインストールした[パッケージ情報や開発時に使用するnpm scriptsを管理しているファイル](https://docs.npmjs.com/cli/v6/configuring-npm/package-json)|
-|webpack.config.mjs|webpackの開発・本番ビルドに使用する共通の設定ファイル|
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
