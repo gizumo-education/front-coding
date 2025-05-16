@@ -6,6 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "lint:html": "markuplint '**/*.jsx'",
     "lint:js": "eslint --fix '**/*.@(js|jsx)' --no-warn-ignored",
     "lint:css": "stylelint --fix 'src/**/*.@(css)'",
     "format": "prettier --ignore-path .prettierignore --write ."
@@ -18,11 +19,14 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
+    "@markuplint/jsx-parser": "^4.7.19",
+    "@markuplint/react-spec": "^4.5.19",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "globals": "^16.1.0",
+    "markuplint": "^4.12.0",
     "prettier": "^3.5.3",
     "stylelint": "^16.19.1",
     "stylelint-config-recess-order": "^6.0.0",
