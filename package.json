@@ -18,5 +18,8 @@
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
     "eslint-config-next": "15.3.2"
+  },
+  "volta": {
+    "node": "22.14.0"
   }
 }
