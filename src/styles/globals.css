@@ -21,7 +21,7 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   font-family:
-    var(--font-zen-kaku-gothic-new), '游ゴシック体', YuGothic, '游ゴシック',
+    var(--font-noto-sans-jp), '游ゴシック体', YuGothic, '游ゴシック',
     'Yu Gothic', 'メイリオ', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
