@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# front-coding
 
-## Getting Started
+## 各種バージョン
 
-First, run the development server:
+![node version](https://img.shields.io/badge/node-22.14.0-48C628.svg?style=flat-square) ![npm version](https://img.shields.io/badge/npm-10.9.2-2D7DBE.svg?style=flat-square) ![volta version](https://img.shields.io/badge/volta-1.0.8~-EDCF3A.svg?style=flat-square)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📝 要件
+
+- [Volta](https://volta.sh/)がインストールされていること
+
+## ⚙️ 環境構築
+
+1. リポジトリをクローン
+
+```sh
+git clone https://github.com/gizumo-education/front-coding.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 対象のディレクトリに移動
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```sh
+cd front-coding
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. 依存モジュールをインストール
 
-## Learn More
+```sh
+npm i
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. 開発サーバー立ち上げ
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 ディレクトリ構成
 
-## Deploy on Vercel
+```
+.
+├── out
+├── public
+└── src
+    ├── app
+    ├── components
+    ├── libs
+    └── styles
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| ディレクトリ名 | 説明                       |
+| -------------- | -------------------------- |
+| out            | 本番ビルド後のソースコード |
+| public         | 画像を管理                 |
+| app            | Next.js App Router         |
+| components     | 汎用コンポーネントを管理   |
+| styles         | グローバルなCSSを管理      |
+
+## 🧞 コマンド
+
+コマンドはプロジェクトルートで実行してください
+
+| Command          | Action                                   |
+| :--------------- | :--------------------------------------- |
+| `npm install`    | 依存モジュールをインストール             |
+| `npm run dev`    | `localhost:3000`で開発サーバーを立ち上げ |
+| `npm run build`  | `out/`にビルドファイルを生成             |
+| `npm run lint:*` | 各種Lint実行                             |
+| `npm run format` | Prettierによるフォーマット               |
