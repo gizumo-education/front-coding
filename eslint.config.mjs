@@ -1,7 +1,7 @@
 import { dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { FlatCompat } from '@eslint/eslintrc'
-import { defineConfig } from "eslint/config";
+import { defineConfig } from 'eslint/config'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import eslint from '@eslint/js'
 import jsxA11y from 'eslint-plugin-jsx-a11y'
@@ -46,10 +46,7 @@ const eslintConfig = defineConfig([
       'react/jsx-props-no-spreading': 'off',
       'react/button-has-type': 'off',
       'react/require-default-props': 'off',
-      'react/jsx-filename-extension': [
-        'error',
-        { extensions: ['.jsx'] },
-      ],
+      'react/jsx-filename-extension': ['error', { extensions: ['.jsx'] }],
       'react/function-component-definition': [
         2,
         {
