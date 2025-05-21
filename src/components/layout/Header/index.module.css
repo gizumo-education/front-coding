@@ -1,0 +1,227 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.6rem 1.5rem;
+  background-color: var(--color-white);
+}
+
+.list,
+.button-list {
+  display: none;
+}
+
+.button {
+  position: relative;
+  display: block;
+  width: 5rem;
+  height: 3.8rem;
+  border-radius: 50%;
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: 0.6rem;
+  background-color: var(--color-black);
+  border-radius: 0.6rem;
+}
+
+.line:nth-child(1) {
+  top: 0%;
+}
+
+.line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line:nth-child(3) {
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+@media (768px <=width) {
+  .header {
+    padding: 1.4rem 2.8rem 1.2rem 0;
+  }
+
+  .nav {
+    display: flex;
+    column-gap: 2.3rem;
+    align-items: center;
+  }
+
+  .list {
+    display: flex;
+    height: fit-content;
+    font-size: 1.2rem;
+  }
+
+  .list-link {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+  }
+
+  .list-link.medical {
+    padding-right: 1rem;
+  }
+
+  .list-link.search {
+    padding-inline: 1rem;
+    border-inline: 1px solid var(--color-black);
+  }
+
+  .list-link.book {
+    padding-left: 1rem;
+  }
+
+  .list-link::before,
+  .button-link::before {
+    display: block;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .search::before {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-image: url('/icon/search.svg');
+  }
+
+  .book::before {
+    width: 1.6rem;
+    height: 1.2rem;
+    background-image: url('/icon/book.svg');
+  }
+
+  .button-list {
+    display: flex;
+    column-gap: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .button-link {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    color: var(--color-white);
+    background-color: var(--color-light-blue);
+    border-radius: 8px;
+  }
+
+  .heart::before {
+    width: 1.1rem;
+    height: 0.9rem;
+    background-image: url('/icon/heart.svg');
+  }
+
+  .clock::before {
+    width: 1rem;
+    height: 1rem;
+    background-image: url('/icon/clock.svg');
+  }
+
+  .history::before {
+    width: 1rem;
+    height: 1rem;
+    background-image: url('/icon/history.svg');
+  }
+
+  .button {
+    display: none;
+  }
+}
+
+@media (1024px <=width) {
+  .header {
+    padding: 1.87rem 7.5rem 1.87rem 0;
+  }
+
+  .nav {
+    column-gap: 1.87rem;
+  }
+
+  .list-link.medical {
+    padding-right: 1.6rem;
+  }
+
+  .list-link.search {
+    padding-inline: 1.6rem;
+  }
+
+  .list-link.book {
+    padding-left: 1.6rem;
+  }
+
+  .button-list {
+    column-gap: 1.12rem;
+  }
+
+  .button-link {
+    column-gap: 0.75rem;
+    padding: 1.2rem 1.8rem;
+  }
+}
+
+@media (1440px <=width) {
+  .header {
+    padding: 2.25rem 9rem 2.25rem 0;
+  }
+
+  .nav {
+    column-gap: 2.25rem;
+  }
+
+  .list {
+    font-size: 1.44rem;
+  }
+
+  .list-link.medical {
+    padding-right: 2rem;
+  }
+
+  .list-link.search {
+    padding-inline: 2rem;
+  }
+
+  .list-link.book {
+    padding-left: 2rem;
+  }
+
+  .search::before {
+    width: 1.44rem;
+    height: 1.44rem;
+  }
+
+  .book::before {
+    width: 1.8rem;
+    height: 1.4rem;
+  }
+
+  .button-list {
+    column-gap: 1.35rem;
+    font-size: 1.24rem;
+  }
+
+  .button-link {
+    column-gap: 0.9rem;
+    padding: 1.44rem 2rem;
+  }
+
+  .heart::before {
+    width: 1.44rem;
+    height: 1.2rem;
+  }
+
+  .clock::before,
+  .history::before {
+    width: 1.24rem;
+    height: 1.24rem;
+  }
+}
