@@ -15,6 +15,7 @@
 @use './object/component/button.scss';
 @use './object/component/select.scss';
 @use './object/component/input.scss';
+@use './object/component/title.scss';
 /*-------------------------------------------*/
 
 /*project---------------------------------*/
@@ -22,4 +23,7 @@
 @use './object/project/job-search.scss';
 @use './object/project/job-list.scss';
 @use './object/project/mid-visual.scss';
+@use './object/project/feature.scss';
+@use './object/project/flow.scss';
+@use './object/project/tip-contents.scss';
 /*-------------------------------------------*/

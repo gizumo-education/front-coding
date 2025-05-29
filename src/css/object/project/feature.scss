@@ -1,0 +1,41 @@
+@use '../../object/utility/utility.scss';
+
+.p-feature {
+  padding-top: 106px;
+
+  &__cards {
+      padding-top: 53px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin: 0 auto;
+  }
+
+  &__card {
+    width: 570px;
+    height: 180px;
+    background-color: utility.$bdCardPink;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 40px;
+
+    &__title {
+      font-size: 24px;
+      font-weight: utility.$bold;
+      color: utility.$red;
+    }
+    
+    &__text {
+      margin-top: 36px;
+      font-size: 14px;
+      line-height: 20px;
+
+      &--3lines {
+        margin-top: 26px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}

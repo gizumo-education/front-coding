@@ -5,9 +5,10 @@
   width: 100vw;
   background-color: utility.$bgLightBlue;
   height: 636px;
+  padding: 64px 67px 0;
 
   &__inner {
-    padding: 64px 210px 67px 210px;
+    margin: 0 auto;
   }
 
   &__title {
@@ -17,6 +18,7 @@
   &__items {
     margin-top: 25px;
     display: flex;
+    justify-content: center;
     gap: 20px;
   }
 

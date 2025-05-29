@@ -1,0 +1,76 @@
+@use '../../object/utility/utility.scss';
+
+.p-flow {
+  padding-top: 105px;
+
+  &__items {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__item {
+    border: 2.27px solid utility.$red;
+    border-radius: 10px;
+    padding: 60px 20px 0 20px;
+    width: 280px;
+    height: 360px;
+    text-align: center;
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: '';
+      width: 0;
+      height: 0;
+      top: 50%;
+      left: calc(100% + 1.75px);
+      position: absolute;
+      transform: translateY(-50%);
+      border-style: solid;
+      border-color: transparent transparent transparent utility.$red;
+      border-width: 20px 0px 20px 20px;
+    }
+
+    &__number {
+      width: 60px;
+      height: 60px;
+      background-color: utility.$red;
+      border-radius: 50%;
+      font-size: 16px;
+      color: utility.$white;
+      line-height: 19px;
+      font-weight: utility.$bold;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__icon {
+      width: 100px;
+      height: 100px;
+    }
+
+    &__title {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: utility.$bold;
+      line-height: 30px;
+      width: 216px;
+      height: 60px;
+      margin: 20px auto 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__text {
+      margin-top: 18px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: left;
+    }
+  }
+}
