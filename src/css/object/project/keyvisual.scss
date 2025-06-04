@@ -1,2 +1,66 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+
+.p-keyvisual {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  background-color: #98B1BE;
+
+  &__img {
+    max-width: 100%;
+    display: block;
+    margin:  0 auto;
+  }
+
+  &__box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-25%);
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__content {
+
+      }
+
+      .is-noimg {
+        display: block;
+        width: 342.5px;
+        height: 168px;
+
+      }
+
+      .is-textimg {
+        display: block;
+        width: 800px;
+        height: 65px;
+        margin-top: 35px;
+
+      }
+
+      .is-data {
+        padding: 10px 40px;
+        margin-top: 60px;
+        color: #2EB6AA;
+        font-size: 20px;
+        background-color: #fff;
+        border: solid 1px #2EB6AA;
+        border-radius: 10px;
+      }
+      .big {
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.test {
+
+  
+}

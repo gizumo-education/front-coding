@@ -1,0 +1,123 @@
+.p-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  background-color: #DEEEF9;
+
+  &__title {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+
+  &__text {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  &__search {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    &__list {
+      padding-left: 10px;
+
+      &__occupation {
+        appearance: none;
+        width: 200px;
+        height: 60px;
+        padding-left: 10px;
+        font-size: 18px;
+        border: solid 1px #DE1E79;
+        border-radius: 10px;
+      }
+
+      &__occupation:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: #DE1E79;
+        border-width: 3px;
+      }
+
+      &__area {
+        appearance: none;
+        width: 200px;
+        height: 60px;
+        padding-left: 10px;
+        font-size: 18px;
+        border: solid 1px #DE1E79;
+        border-radius: 10px;
+      }
+
+      &__area:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: #DE1E79;
+        border-width: 3px;
+      }
+
+
+      &__salary {
+        appearance: none;
+        width: 200px;
+        height: 60px;
+        padding-left: 10px;
+        font-size: 18px;
+        border: solid 1px #DE1E79;
+        border-radius: 10px;
+      }
+
+      &__salary:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: #DE1E79;
+        border-width: 3px;
+      }
+
+      &__word {
+        width: 300px;
+        height: 60px;
+        padding-left: 10px;
+        font-size: 18px;
+        border: solid 1px #DE1E79;
+        border-radius: 10px;
+      }
+
+      &__word:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: #DE1E79;
+        border-width: 3px;
+      }
+
+
+      &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        height: 60px;
+        border-width: 0;
+        border-radius: 30px;
+        background-color: #DE5579;
+
+
+        &__img {
+          display: block;
+          width: 29.98px;
+          height: 29.98px;
+        }
+
+        &__text {
+          margin-left: 1px;
+          color: #fff;
+          font-size: 18px;
+        }
+      }
+    }
+    &__list:first-child {
+      padding-left: 0;
+    }
+  }
+}

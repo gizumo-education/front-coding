@@ -1,0 +1,31 @@
+.p-banner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+    
+  &__img {
+    width: 100%;
+    display: block;
+    filter: brightness(50%);
+  }
+
+  &__box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      font-size: 25px;
+      color: #fff;
+      
+      &__fast {
+        margin-bottom: 20px;
+      }
+
+    }
+  }
+}
