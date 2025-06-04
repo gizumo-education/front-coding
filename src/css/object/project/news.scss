@@ -1,10 +1,11 @@
 .p-news {
-  margin-top: 40px;
+  margin-top: 60px;
   background-color: #EFF6FC;
 
   &__box {
     padding-top: 50px;
     padding-bottom: 50px;
+    position: relative;
 
     &__title {
       font-size: 25px;
@@ -52,19 +53,30 @@
       }
     }
 
-    &__left {
-      width: 60px;
-      height: 60px;
-      border-width: 0;
-      border-radius: 30px;
+    &__button {
 
-    }
+      &__left {
+        width: 60px;
+        height: 60px;
+        border-width: 0;
+        border-radius: 30px;
+        position: absolute;
+        transform: translateY(150%);
+        background-color: rgba(255, 255, 255, 0.7);
 
-    &__right {
-      width: 60px;
-      height: 60px;
-      border-width: 0;
-      border-radius: 30px;
+      }
+
+      &__right {
+        width: 60px;
+        height: 60px;
+        border-width: 0;
+        border-radius: 30px;
+        position: absolute;
+        right: 0%;
+        transform: translateY(150%);
+        background-color: rgba(255, 255, 255, 0.7);
+
+      }
 
     }
 
@@ -73,6 +85,7 @@
       width: 360px;
       height: 60px;
       margin: 40px auto 0 auto;
+      border-width: 0;
       border-radius: 30px;
       font-size: 18px;
       color: #fff;

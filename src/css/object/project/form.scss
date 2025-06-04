@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 60px;
   background-color: #DEEEF9;
 
   &__title {
@@ -22,6 +22,7 @@
 
     &__list {
       padding-left: 10px;
+      position: relative;
 
       &__occupation {
         appearance: none;
@@ -119,5 +120,23 @@
     &__list:first-child {
       padding-left: 0;
     }
+    .is-arrow {
+      position: relative;
+    }
+    
+    .is-arrow::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      right: 12px;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-top: 10px solid #DE1E79;
+      border-bottom: 0;
+    }
+  }
+  select {
+    -webkit-appearance: none;
+    appearance: none;
   }
 }

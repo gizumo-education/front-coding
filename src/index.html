@@ -33,12 +33,14 @@
 
   <main>
     <section class="p-keyvisual">
-      <img class="p-keyvisual__img" src="./img/picture/keyvisual-pc.jpg" alt="">
       <div class="p-keyvisual__box">
         <div class="p-keyvisual__box__text">
-          <img class="p-keyvisual__box__text__content is-noimg" src="./img/icon//keyvisual-no1.png" alt="">
-          <img class="p-keyvisual__box__text__content is-textimg" src="./img/icon//keyvisual-text1.png" alt="">
+          <img class="p-keyvisual__box__text__img is-noimg" src="./img/icon//keyvisual-no1.png" alt="">
+          <img class="p-keyvisual__box__text__img is-textimg" src="./img/icon//keyvisual-text1.png" alt="">
           <p class="p-keyvisual__box__text__content is-data">現在の求人掲載数：<span class="big">2,320</span>件</p>
+        </div>
+        <div class="p-keyvisual__box__img">
+          <img class="p-keyvisual__box__img__jpg" src="./img/picture/keyvisual-pc.jpg" alt="">
         </div>
       </div>
     </section>
@@ -46,7 +48,7 @@
       <p class="p-form__title">お仕事検索</p>
       <p class="p-form__text">働きたい職種・地域・希望給与を入れて検索</p>
       <ul class="p-form__search">
-        <li class="p-form__search__list">
+        <li class="p-form__search__list is-arrow">
           <select class="p-form__search__list__occupation">
               <option value="医療事務" selected>医療事務</option>
               <option value="調剤事務">調剤事務</option>
@@ -57,7 +59,7 @@
               <option value="病院内SE">病院内SE</option>
           </select>
         </li>
-        <li class="p-form__search__list">
+        <li class="p-form__search__list is-arrow">
           <select class="p-form__search__list__area">
               <option value="茨城県">茨城県</option>
               <option value="神奈川県">神奈川県</option>
@@ -68,7 +70,7 @@
               <option value="栃木県">栃木県</option>
           </select>
         </li>
-        <li class="p-form__search__list">
+        <li class="p-form__search__list is-arrow">
           <select class="p-form__search__list__salary">
               <option value="月給17万～">月給17万～</option>
               <option value="月給18万～">月給18万～</option>
@@ -83,7 +85,7 @@
           <input class="p-form__search__list__word" type="text" placeholder="キーワード・企業名・スキルなど">
         </li>
         <li class="p-form__search__list">
-          <button class="p-form__search__list__button">
+          <button class="p-form__search__list__button" href="">
             <img class="p-form__search__list__button__img" src="./img/icon/icon-search-white.png">
             <p class="p-form__search__list__button__text">検索する</p>
           </button>
@@ -93,6 +95,14 @@
     <section class="p-news">
       <div class="p-news__box l-inner">
         <p class="p-news__box__title">新着求人</p>
+        <div class="p-news__box__button l-inner">
+          <button class="p-news__box__button__left" href="">
+            <img class="" src="./img/icon/icon-arrow-l.png">
+          </button>
+          <button class="p-news__box__button__right" href="">
+            <img class="" src="./img/icon/icon-arrow-r.png">
+          </button>
+        </div>
         <ul class="p-news__box__content">
           <li class="p-news__box__content__list">
             <img src="./img/picture/kyuujin01.jpg">
@@ -143,12 +153,6 @@
             </ul>
           </li>
         </ul>
-        <button class="p-news__box__left" href="">
-          <img class="" src="./img/icon/icon-arrow-l.png">
-        </button>
-        <button class="p-news__box__right" href="">
-          <img class="" src="./img/icon/icon-arrow-r.png">
-        </button>
         <button class="p-news__box__more">新着求人一覧をもっと見る</button>
       </div>
     </section>
