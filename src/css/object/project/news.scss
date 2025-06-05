@@ -17,6 +17,10 @@
       &__list {
         margin-left: 20px;
 
+        .p-img {
+          border-radius: 10px;
+        }
+
         .p-text {
           margin: 10px 0;
           font-size: 16px;
@@ -51,6 +55,11 @@
       &__list:first-child {
         margin-left: 0;
       }
+
+      .is-news__item:hover {
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+      }
     }
 
     &__button {
@@ -84,12 +93,18 @@
       display: block;
       width: 360px;
       height: 60px;
+      line-height: 60px;
       margin: 40px auto 0 auto;
       border-width: 0;
       border-radius: 30px;
       font-size: 18px;
       color: #fff;
       background-color: #DE5579;
+      text-align: center;
+    }
+
+    &__more:hover {
+      background-color: #e2839c;
     }
   }
 }

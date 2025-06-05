@@ -116,6 +116,11 @@
           font-size: 18px;
         }
       }
+
+      &__button:hover {
+        background-color: #e2839c;
+        border-radius: 30px;
+      }
     }
     &__list:first-child {
       padding-left: 0;
