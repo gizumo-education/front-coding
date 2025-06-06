@@ -1,2 +1,59 @@
 @use '../../object/utility/utility.scss';
 // ページ上部のキービジュアルに関するスタイル
+.p-keyvisual {
+  width: 100%;
+  height: 500px;
+  background-image: url('../img/picture/keyvisual.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &__inner {
+    text-align: center;
+    position: absolute;
+    top: 47px;
+    left: 38%;
+    z-index: 10; 
+  }
+
+
+  &__badge {
+    width: 341.81px;
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: utility.$bold;
+    text-shadow: utility.$textShadow;  
+    margin-top: 40px;
+    color: utility.$white;
+  }
+
+  &__text-box {
+    font-size: 20px;
+    font-weight: utility.$bold;
+    color: utility.$white;
+  }
+
+  &__job-count__box {
+    width: 391px;
+    margin: 59px auto 0 auto; 
+    background-color: utility.$white;
+    border: 2.3px solid utility.$green;
+    border-radius: 10px;
+
+    &__text {
+      font-size: 20px;
+      line-height: 58px;
+      text-align: center;
+      color: utility.$green;
+
+      & span {
+        font-size: 40px;
+        font-weight: utility.$bold;
+        color: utility.$green;
+      }  
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@use '../../object/utility/utility.scss';
+
+.p-job-list {
+  margin-top: 60px;
+  width: 100vw;
+  background-color: utility.$bgLightBlue;
+  height: 636px;
+
+  &__inner {
+    padding: 64px 210px 67px 210px;
+  }
+
+  &__title {
+    font-size: 25px;
+  }
+
+  &__items {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__card {
+    position: relative;
+    width: 280px; 
+    // 「<」ボタンのスタイル
+    &:first-child::before {
+      content: '';
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: utility.$bgTranparentWhite;
+      position: absolute;
+      top: 70px;
+      left: 0;
+    }
+
+    &:first-child::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-top: solid 0.71px utility.$black;
+      border-left: solid 0.71px utility.$black;
+      position: absolute;
+      top: calc(60px / 2 + 70px);
+      left: calc(60px / 2);
+      transform: translate(25%, -50%);
+      rotate: -45deg;
+    }
+
+    // 「>」ボタンのスタイル
+    &:last-child::before {
+      content: '';
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: utility.$bgTranparentWhite;
+      position: absolute;
+      top: 70px;
+      right: 0;
+    }
+
+    &:last-child::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-top: solid 0.71px utility.$black;
+      border-right: solid 0.71px utility.$black;
+      position: absolute;
+      top: calc((60px / 4) + 70px);
+      right: calc(60px / 2);
+      transform: translateX(25%);
+      rotate: 45deg;
+    }
+
+    &__image {
+      width: 100%;
+      border-radius: 10px;
+    }
+    &__title {
+      margin-top: 8px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__card-info {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+
+    &__title {
+      background-color: utility.$bgPink;
+      text-align: center;
+      width: 60px;
+      height: 20px;
+      line-height: 20px;
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 360px;
+    height: 60px;
+    padding: 17px 0;
+    margin: 0 auto;
+  }
+
+  &__button-container {
+    margin-top: 60px;
+  }
+}
