@@ -2,19 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
 
   &__title {
     font-size: 25px;
     font-weight: 700;
+    text-align: center;
   }
   &__list {
     display: flex;
+    margin-top: 55px;
 
     &__content {
     margin-left: 20px;
 
       &__link {
         position: relative;
+        display: flex;
         align-items: center;
       
         &__box {
@@ -34,6 +38,7 @@
             font-size: 16px;
             text-align: center;
             color: #fff;
+            margin-top: 40px;
           }
         }
         &__img {
@@ -54,6 +59,7 @@
     height: 60px;
     background-color: #DE5579;
     border-radius: 30px;
+    margin-top: 80px;
 
     display: flex;
     justify-content: center;
