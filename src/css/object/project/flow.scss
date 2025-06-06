@@ -1,0 +1,80 @@
+.p-flow{
+
+  &__title {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    &__content{
+      position: relative;
+      border: 2px solid #DE5579;
+      border-radius: 12px;
+      width: 280px;
+      height: 360px;
+
+      &__circle {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        background-color: #DE5579;
+        border-radius: 30px;
+        top: 2%;
+        left: 2%;
+
+        &__step {
+          font-size: 16px;
+          text-align: center;
+          color: #fff;
+          
+        }
+      }
+      &__package {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 360px;
+
+        &__box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &__icon {
+            max-width: 100%;
+          }
+          &__sub {
+            font-size: 24px;
+            margin-top: 30px;
+            text-align: center;
+            font-weight: 700;
+          }
+          &__text {
+            font-size: 14px;
+            margin-top: 30px;
+            width: 237px;
+          }
+        }
+      }
+    }
+    &__arrow {
+      &__box {
+        width: 0;
+        height: 0;
+        border-left: 20px solid #DE5579;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+      }
+    }
+  }
+}
