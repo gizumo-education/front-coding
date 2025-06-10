@@ -7,6 +7,10 @@
   cursor: pointer;
   transition: .3s all;
 
+  @include utility.tab {
+    border-radius: .3rem;
+  }
+
   &:hover {
     opacity: .7;
   }
@@ -16,6 +20,10 @@
     align-items: center;
     justify-content: center;
     gap: 4px;
+
+    @include utility.tab {
+      gap: 0.04rem;
+    }
   }
 
   &__icon {
@@ -27,5 +35,10 @@
     line-height: 22px;
     font-weight: utility.$bold;
     color: utility.$white;
+
+    @include utility.tab {
+      font-size: 0.18rem;
+      line-height: 0.22rem;
+    }
   }
 }

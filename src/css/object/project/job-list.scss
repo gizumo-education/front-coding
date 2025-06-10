@@ -5,7 +5,13 @@
   width: 100vw;
   background-color: utility.$bgLightBlue;
   height: 636px;
-  padding: 64px 67px 0;
+  padding-top: 64px;
+
+  @include utility.tab {
+    margin-top: .6rem;
+    height: 6.36rem;
+    padding-top: .64rem;
+  }
 
   &__inner {
     margin: 0 auto;
@@ -13,6 +19,10 @@
 
   &__title {
     font-size: 25px;
+
+    @include utility.tab {
+      font-size: .25rem;
+    }
   }
 
   &__items {
@@ -20,11 +30,20 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+
+    @include utility.tab {
+      margin-top: .25rem;
+      gap: .2rem;
+    }
   }
 
   &__card {
     position: relative;
-    width: 280px; 
+    width: 280px;
+
+    @include utility.tab {
+      width: 2.8rem;
+    }
     // 「<」ボタンのスタイル
     &:first-child::before {
       content: '';
@@ -35,6 +54,12 @@
       position: absolute;
       top: 70px;
       left: 0;
+
+      @include utility.tab {
+        width: .6rem;
+        height: .6rem;
+        top: .7rem;
+      }
     }
 
     &:first-child::after {
@@ -48,6 +73,15 @@
       left: calc(60px / 2);
       transform: translate(25%, -50%);
       rotate: -45deg;
+
+      @include utility.tab {
+        width: .2rem;
+        height: .2rem;
+        border-top: solid .0071rem utility.$black;
+        border-left: solid .0071rem utility.$black;
+        top: calc(.6rem / 2 + .7rem);
+        left: calc(.6rem / 2);
+      }
     }
 
     // 「>」ボタンのスタイル
@@ -60,6 +94,12 @@
       position: absolute;
       top: 70px;
       right: 0;
+
+      @include utility.tab {
+        width: .6rem;
+        height: .6rem;
+        top: .7rem;
+      }
     }
 
     &:last-child::after {
@@ -73,6 +113,15 @@
       right: calc(60px / 2);
       transform: translateX(25%);
       rotate: 45deg;
+
+      @include utility.tab {
+        width: .2rem;
+        height: .2rem;
+        border-top: solid .0071rem utility.$black;
+        border-right: solid .0071rem utility.$black;
+        top: calc((.6rem / 4) + .7rem);
+        right: calc(.6rem / 2);
+      }
     }
 
     &__image {
@@ -83,6 +132,12 @@
       margin-top: 8px;
       font-size: 16px;
       line-height: 22px;
+
+      @include utility.tab {
+        margin-top: .08rem;
+        font-size: .16rem;
+        line-height: .22rem;
+      }
     }
   }
 
@@ -93,12 +148,24 @@
     gap: 4px;
     font-size: 14px;
 
+    @include utility.tab {
+      margin-top: .07rem;
+      gap: .04rem;
+      font-size: .14rem;
+    }
+
     &__title {
       background-color: utility.$bgPink;
       text-align: center;
       width: 60px;
       height: 20px;
       line-height: 20px;
+
+      @include utility.tab {
+        width: .6rem;
+        height: .2rem;
+        line-height: .2rem;
+      }
     }
   }
 
@@ -108,9 +175,19 @@
     height: 60px;
     padding: 17px 0;
     margin: 0 auto;
+
+    @include utility.tab {
+      width: 3.6rem;
+      height: .6rem;
+      padding: .17rem 0;
+    }
   }
 
   &__button-container {
     margin-top: 60px;
+
+    @include utility.tab {
+      margin-top: .6rem;
+    }
   }
 }

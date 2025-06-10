@@ -9,6 +9,16 @@
   width: 200px;
   height: 60px;
   font-size: 18px;
+
+  @include utility.tab {
+    border: .01rem solid utility.$borderRed;
+    border-radius: .1rem;
+    padding: .17rem .15rem;
+    width: 2rem;
+    height: .6rem;
+    font-size: .18rem;
+
+  }
   
   &__wrapper {
     position: relative;
@@ -25,6 +35,10 @@
       right: 15px;
       transform: translateY(-50%);
       pointer-events: none;
+
+      @include utility.tab {
+        right: 0.15rem;
+      }
     }
   }
 }

@@ -3,11 +3,20 @@
 .p-tip-contents {
   padding-top: 105px;
 
+  @include utility.tab {
+    padding-top: 1.05rem;
+  }
+
   &__items {
     margin-top: 50px;
     display: flex;
     justify-content: center;
     gap: 20px;
+
+    @include utility.tab {
+      margin-top: .5rem;
+      gap: .2rem;
+    }
   }
 
   &__item {
@@ -15,6 +24,12 @@
     height: 240px;
     border-radius: 10px;
     background-size: cover;
+
+    @include utility.tab {
+      width: 3.8rem;
+      height: 2.4rem;
+      border-radius: .1rem;
+    }
 
     &--manual {
       background-image: url('../img/picture/background_contents_manual.jpg');
@@ -28,6 +43,10 @@
       padding-top: 71px;
       text-align: center;
       color: utility.$white;
+
+      @include utility.tab {
+        padding-top: .71rem;
+      }
     }
 
     &__link {
@@ -40,18 +59,31 @@
     &__title {
       font-size: 24px;
       font-weight: utility.$bold;
+
+      @include utility.tab {
+        font-size: .24rem;
+      }
     }
 
     &__text {
       margin-top: 44px;
       font-size: 16px;
       line-height: 1.5;
+
+      @include utility.tab {
+        margin-top: .44rem;
+        font-size: .16rem;
+      }
     }
   }
 
   &__button-container {
     margin-top: 80px;
     text-align: center;
+
+    @include utility.tab {
+      margin-top: .8rem;
+    }
   }
 
   &__button {
@@ -60,5 +92,11 @@
     height: 60px;
     padding: 17px;
     text-align: center;
+
+    @include utility.tab {
+      width: 4.2rem;
+      height: .6rem;
+      padding: .17rem;
+    }
   }
 }

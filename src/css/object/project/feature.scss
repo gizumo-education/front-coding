@@ -10,6 +10,11 @@
       justify-content: center;
       gap: 40px;
       margin: 0 auto;
+
+      @include utility.tab {
+        padding-top: .53rem;
+        gap: .4rem;
+      }
   }
 
   &__card {
@@ -20,10 +25,21 @@
     text-align: center;
     padding-top: 40px;
 
+    @include utility.tab {
+      width: 5.7rem;
+      height: 1.8rem;
+      border-radius: .1rem;
+      padding-top: .4rem;
+    }
+
     &__title {
       font-size: 24px;
       font-weight: utility.$bold;
       color: utility.$red;
+
+      @include utility.tab {
+        font-size: .24rem;
+      }
     }
     
     &__text {
@@ -31,10 +47,22 @@
       font-size: 14px;
       line-height: 20px;
 
+      @include utility.tab {
+        margin-top: .36rem;
+        font-size: .14rem;
+        line-height: .2rem;
+      }
+
       &--3lines {
         margin-top: 26px;
         font-size: 14px;
         line-height: 20px;
+
+        @include utility.tab {
+          margin-top: .26rem;
+          font-size: .14rem;
+          line-height: .2rem;
+        }
       }
     }
   }

@@ -7,6 +7,10 @@
   width: 100vw;
   height: 300px;
 
+  @include utility.tab {
+    height: 3rem;
+  }
+
   &__layer {
     width: 100%;
     height: 100%;
@@ -27,8 +31,17 @@
     line-height: 36px;
     color: utility.$white;
 
+    @include utility.tab {
+      font-size: .25rem;
+      line-height: .36rem;
+    }
+
     &:not(:first-child) {
       margin-top: 21px;
+      
+      @include utility.tab {
+        margin-top: .21rem;
+      }
     }
   }
 }

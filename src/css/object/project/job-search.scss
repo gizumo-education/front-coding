@@ -9,12 +9,22 @@
     background-color: utility.$bgBlue;
     padding: 40px;
     border-radius: 10px;
+
+    @include utility.tab {
+      min-width: 11.8rem;
+      padding: .4rem;
+      border-radius: .1rem;
+    }
   }
 
   &__title {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
+
+    @include utility.tab {
+      font-size: .25rem;
+    }
   }
 
   &__text {
@@ -22,25 +32,47 @@
     text-align: center;
     line-height: 29px;
     margin-top: 20px;
+
+    @include utility.tab {
+      font-size: .2rem;
+      line-height: .29rem;
+      margin-top: .2rem;
+    }
   }
 
   &__form {
     margin-top: 26px;
+
+    @include utility.tab {
+      margin-top: .26rem;
+    }
   }
 
   &__form-item {
     display: flex;
     justify-content: center;
     gap: 15px;
+
+    @include utility.tab {
+      gap: .15rem;
+    }
   }
 
   &__button {
     width: 140px;
     height: 60px;
+
+    width: 1.4rem;
+    height: .6rem;
   }
 }
 
 .p-job-search-2 {
   padding-top: 150px;
   padding-bottom: 200px;
+
+  @include utility.tab {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
 }
