@@ -17,4 +17,12 @@
     height: .6rem;
     font-size: .18rem;
   }
+  @include utility.sp {
+    border: .01rem solid utility.$borderRed;
+    border-radius: .05rem;
+    padding: .05rem .07rem;
+    width: 3.2rem;
+    height: .3rem;
+    font-size: .14rem;
+  }
 }

@@ -3,6 +3,13 @@
 .p-job-search {
   padding-top: 60px;
 
+  @include utility.tab {
+    padding-top: .6rem;
+  }
+  @include utility.sp {
+    padding-top: .25rem;
+  }
+
   &__inner {
     max-width: 1180px;
     width: 100%;
@@ -15,15 +22,15 @@
       padding: .4rem;
       border-radius: .1rem;
     }
+    @include utility.sp {
+      width: 100%;
+      padding: .15rem;
+    }
   }
 
   &__title {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-
-    @include utility.tab {
-      font-size: .25rem;
+    @include utility.sp {
+      font-size: .22rem;
     }
   }
 
@@ -38,6 +45,10 @@
       line-height: .29rem;
       margin-top: .2rem;
     }
+    @include utility.sp {
+      font-size: .14rem;
+      line-height: .2rem;
+    }
   }
 
   &__form {
@@ -45,6 +56,9 @@
 
     @include utility.tab {
       margin-top: .26rem;
+    }
+    @include utility.sp {
+      margin-top: .13rem;
     }
   }
 
@@ -56,14 +70,24 @@
     @include utility.tab {
       gap: .15rem;
     }
+    @include utility.sp {
+      flex-wrap: wrap;
+      gap: .1rem;
+    }
   }
 
   &__button {
     width: 140px;
     height: 60px;
 
-    width: 1.4rem;
-    height: .6rem;
+    @include utility.tab {
+      width: 1.4rem;
+      height: .6rem;
+    }
+    @include utility.sp {
+      width: 1.6rem;
+      height: .4rem;
+    }
   }
 }
 
@@ -74,5 +98,9 @@
   @include utility.tab {
     padding-top: 1.5rem;
     padding-bottom: 2rem;
+  }
+  @include utility.sp {
+    padding-top: .6rem;
+    padding-bottom: 1rem;
   }
 }

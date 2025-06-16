@@ -12,6 +12,11 @@
     height: 6.36rem;
     padding-top: .64rem;
   }
+  @include utility.sp {
+    margin-top: .25rem;
+    height: 6rem;
+    padding-top: .3rem;
+  }
 
   &__inner {
     margin: 0 auto;
@@ -23,8 +28,18 @@
     @include utility.tab {
       font-size: .25rem;
     }
+    @include utility.sp {
+      font-size: .22rem;
+      font-weight: utility.$bold;
+      text-align: center;
+    }
   }
 
+  &__content {
+    &__container {
+      position: relative;
+    }
+  }
   &__items {
     margin-top: 25px;
     display: flex;
@@ -35,6 +50,16 @@
       margin-top: .25rem;
       gap: .2rem;
     }
+    @include utility.sp {
+      width: 100%;
+      margin-top: .35rem;
+      overflow-x: auto;
+      gap: 0;
+    }
+
+    &__container {
+      position: relative;
+    }
   }
 
   &__card {
@@ -44,83 +69,14 @@
     @include utility.tab {
       width: 2.8rem;
     }
-    // 「<」ボタンのスタイル
-    &:first-child::before {
-      content: '';
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background-color: utility.$bgTranparentWhite;
-      position: absolute;
-      top: 70px;
-      left: 0;
+    @include utility.sp {
+      width: 100%
+    };
 
-      @include utility.tab {
-        width: .6rem;
-        height: .6rem;
-        top: .7rem;
-      }
-    }
-
-    &:first-child::after {
-      content: '';
-      width: 20px;
-      height: 20px;
-      border-top: solid 0.71px utility.$black;
-      border-left: solid 0.71px utility.$black;
-      position: absolute;
-      top: calc(60px / 2 + 70px);
-      left: calc(60px / 2);
-      transform: translate(25%, -50%);
-      rotate: -45deg;
-
-      @include utility.tab {
-        width: .2rem;
-        height: .2rem;
-        border-top: solid .0071rem utility.$black;
-        border-left: solid .0071rem utility.$black;
-        top: calc(.6rem / 2 + .7rem);
-        left: calc(.6rem / 2);
-      }
-    }
-
-    // 「>」ボタンのスタイル
-    &:last-child::before {
-      content: '';
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background-color: utility.$bgTranparentWhite;
-      position: absolute;
-      top: 70px;
-      right: 0;
-
-      @include utility.tab {
-        width: .6rem;
-        height: .6rem;
-        top: .7rem;
-      }
-    }
-
-    &:last-child::after {
-      content: '';
-      width: 20px;
-      height: 20px;
-      border-top: solid 0.71px utility.$black;
-      border-right: solid 0.71px utility.$black;
-      position: absolute;
-      top: calc((60px / 4) + 70px);
-      right: calc(60px / 2);
-      transform: translateX(25%);
-      rotate: 45deg;
-
-      @include utility.tab {
-        width: .2rem;
-        height: .2rem;
-        border-top: solid .0071rem utility.$black;
-        border-right: solid .0071rem utility.$black;
-        top: calc((.6rem / 4) + .7rem);
-        right: calc(.6rem / 2);
+    // TODO:カルーセル実装時にスタイル修正
+    &:not(:first-child) {
+      @include utility.sp {
+        display: none;
       }
     }
 
@@ -138,6 +94,12 @@
         font-size: .16rem;
         line-height: .22rem;
       }
+      @include utility.sp {
+        margin-top: .1rem;
+        font-size: .16rem;
+        font-weight: utility.$bold;
+        line-height: .22rem;
+      }
     }
   }
 
@@ -153,6 +115,11 @@
       gap: .04rem;
       font-size: .14rem;
     }
+    @include utility.sp {
+      margin-top: .1rem;
+      gap: .06rem;
+      font-size: .14rem;
+    }
 
     &__title {
       background-color: utility.$bgPink;
@@ -164,6 +131,11 @@
       @include utility.tab {
         width: .6rem;
         height: .2rem;
+        line-height: .2rem;
+      }
+      @include utility.sp {
+        width: .6rem;
+        height: .21rem;
         line-height: .2rem;
       }
     }
@@ -181,13 +153,160 @@
       height: .6rem;
       padding: .17rem 0;
     }
+    @include utility.sp {
+      width: 100%;
+      height: .6rem;
+      padding: .21rem 0;
+    }
+
+    &-container {
+      margin-top: 60px;
+
+      @include utility.tab {
+        margin-top: .6rem;
+      }
+      @include utility.sp {
+        margin-top: .44rem;
+      }
+    }
   }
 
-  &__button-container {
-    margin-top: 60px;
+  &__back-button {
+    &__pc {
+      width: 60px;
+      height: 60px;
+      background-color: utility.$bgTranparentWhite;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      z-index: 10;
 
-    @include utility.tab {
-      margin-top: .6rem;
+      @include utility.tab {
+        width: 0.6rem;
+        height: 0.6rem;
+        top: 0.7rem;
+      }
+      @include utility.sp {
+        width: 0.42rem;
+        height: 0.42rem;
+        top: 1.57rem;
+      }
+
+      &__icon {
+        width: 15px;
+        height: 30px;
+
+        @include utility.tab {
+          width: 0.15rem;
+          height: 0.3rem;
+        }
+        @include utility.sp {
+          width: 0.07rem;
+          height: 0.14rem;
+        }
+      }
+    }
+  }
+
+  &__forward-button {
+    &__pc {
+      width: 60px;
+      height: 60px;
+      background-color: utility.$bgTranparentWhite;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 70px;
+      right: 0;
+
+      @include utility.tab {
+        width: 0.6rem;
+        height: 0.6rem;
+        top: 0.7rem;
+      }
+      @include utility.sp {
+        width: 0.42rem;
+        height: 0.42rem;
+        top: 1.57rem;
+      }
+
+      &__icon {
+        width: 15px;
+        height: 30px;
+
+        @include utility.tab {
+          width: 0.15rem;
+          height: 0.3rem; 
+        }
+        @include utility.sp {
+          width: 0.07rem;
+          height: 0.14rem;
+        }
+      }
+    }
+  }
+
+  &-sp {
+    &__card {
+      @include utility.sp {
+        width: 100%
+      };
+
+      &__image {
+        width: 100%;
+        border-radius: 10px;
+      }
+      &__title {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 22px;
+
+        @include utility.tab {
+          margin-top: .08rem;
+          font-size: .16rem;
+          line-height: .22rem;
+        }
+        @include utility.sp {
+          margin-top: .1rem;
+          font-size: .16rem;
+          font-weight: utility.$bold;
+          line-height: .22rem;
+        }
+      }
+    }
+
+    &__card-info {
+      @include utility.sp {
+        display: flex;
+        margin-top: .05rem;
+        gap: .2106rem;
+        font-size: .14rem;
+      }
+      &:first-child {
+        @include utility.sp {
+          margin-top: .12rem;
+        }
+      }
+
+      &__title {
+        background-color: utility.$bgPink;
+        text-align: center;
+        width: 60px;
+        height: 20px;
+        line-height: 20px;
+
+        @include utility.sp {
+          width: .6rem;
+          height: .21rem;
+          line-height: .2rem;
+        }
+      }
     }
   }
 }

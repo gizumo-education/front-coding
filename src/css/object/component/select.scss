@@ -17,9 +17,16 @@
     width: 2rem;
     height: .6rem;
     font-size: .18rem;
-
   }
-  
+  @include utility.sp {
+    border: .01rem solid utility.$borderRed;
+    border-radius: .05rem;
+    width: 1rem;
+    height: .3rem;
+    padding: .06rem .08rem;
+    font-size: .12rem;
+  }
+
   &__wrapper {
     position: relative;
     z-index: 1;
@@ -37,6 +44,11 @@
       pointer-events: none;
 
       @include utility.tab {
+        border-width: .1rem .1rem 0 .1rem;
+        right: 0.15rem;
+      }
+      @include utility.sp {
+        border-width: .07rem .065rem 0 .065rem;
         right: 0.15rem;
       }
     }

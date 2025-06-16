@@ -10,6 +10,10 @@
   @include utility.tab {
     height: 3rem;
   }
+  @include utility.sp {
+    height: .75rem;
+    background-position: bottom;
+  }
 
   &__layer {
     width: 100%;
@@ -35,12 +39,20 @@
       font-size: .25rem;
       line-height: .36rem;
     }
+    @include utility.sp {
+      font-weight: utility.$regular;
+      font-size: .14rem;
+      line-height: .2rem;
+    }
 
     &:not(:first-child) {
       margin-top: 21px;
       
       @include utility.tab {
         margin-top: .21rem;
+      }
+      @include utility.sp {
+        margin-top: .023rem;
       }
     }
   }

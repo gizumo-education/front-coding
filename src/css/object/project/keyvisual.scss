@@ -12,6 +12,10 @@
   @include utility.tab {
     height: 5rem;
   }
+  @include utility.sp {
+    background-image: url('../img/picture/keyvisual_sp.jpg');
+    height: 2.7rem;
+  }
 
   &__inner {
     text-align: center;
@@ -32,6 +36,9 @@
     @include utility.tab {
       width: 3.4181rem;
     }
+    @include utility.sp {
+      width: 1.4954rem;
+    }
   }
 
   &__title {
@@ -41,6 +48,12 @@
     @include utility.tab {
       width: 8rem;
       margin-top: .4rem;
+    }
+    @include utility.sp {
+      display: block;
+      margin: 0 auto;
+      width: 2.72rem;
+      margin-top: 0.1265rem;
     }
   }
 
@@ -57,6 +70,12 @@
       border: .023rem solid utility.$green;
       border-radius: .1rem;
     }
+    @include utility.sp {
+      width: 1.7rem;
+      margin: .1835rem auto 0 auto;
+      border: .001rem solid utility.$green;
+      border-radius: .05rem;
+    }
 
     &__text {
       font-size: 20px;
@@ -68,6 +87,10 @@
         font-size: .2rem;
         line-height: .58rem;
       }
+      @include utility.sp {
+        font-size: .08rem;
+        line-height: .23rem;
+      }
 
       & span {
         font-size: 40px;
@@ -76,6 +99,9 @@
 
         @include utility.tab {
           font-size: .4rem;
+        }
+        @include utility.sp {
+          font-size: .16rem;
         }
       }  
     }

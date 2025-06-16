@@ -3,6 +3,13 @@
 .p-feature {
   padding-top: 106px;
 
+  @include utility.tab {
+    padding-top: 1.06rem;
+  }
+  @include utility.sp {
+    padding-top: .55rem;
+  }
+
   &__cards {
       padding-top: 53px;
       display: flex;
@@ -14,6 +21,12 @@
       @include utility.tab {
         padding-top: .53rem;
         gap: .4rem;
+      }
+      @include utility.sp {
+        padding-top: .38rem;
+        flex-direction: column;
+        align-items: center;
+        gap: .21rem;
       }
   }
 
@@ -31,6 +44,13 @@
       border-radius: .1rem;
       padding-top: .4rem;
     }
+    @include utility.sp {
+      width: 100%;
+      height: auto;
+      border-radius: .1rem;
+      padding-top: .3rem;
+      padding-bottom: .3rem;
+    }
 
     &__title {
       font-size: 24px;
@@ -39,6 +59,9 @@
 
       @include utility.tab {
         font-size: .24rem;
+      }
+      @include utility.sp {
+        font-size: .2rem;
       }
     }
     
@@ -52,6 +75,11 @@
         font-size: .14rem;
         line-height: .2rem;
       }
+      @include utility.sp {
+        margin-top: .3rem;
+        font-size: .12rem;
+        line-height: .17rem;
+      }
 
       &--3lines {
         margin-top: 26px;
@@ -62,6 +90,11 @@
           margin-top: .26rem;
           font-size: .14rem;
           line-height: .2rem;
+        }
+        @include utility.sp {
+          margin-top: .3rem;
+          font-size: .12rem;
+          line-height: .17rem;
         }
       }
     }
