@@ -6,6 +6,21 @@
 	padding: 64px 0 67px;
 	background-color: utility.$bgLightBlue;
 
+	&__btn-parent {
+		position: relative;
+	}
+
+	&__btn-child-left {
+		position: absolute;
+		top: 70px;
+		left: 0px;
+	}
+	&__btn-child-right {
+		position: absolute;
+		top: 70px;
+		right: 0px;
+	}
+
 	&__contents {
 		max-width: 1180px;
 		margin: 0 auto;
@@ -20,7 +35,7 @@
 		margin-top: 25px;
 
 		&--item {
-			max-width: 278px;
+			max-width: 280px;
 
 			&-img {
 				border-radius: 10px;
