@@ -68,17 +68,15 @@
 		background-color: utility.$darkPink;
 		border: 0px;
 		border-radius: 30px;
+		font-size: 18px;
+		font-weight: utility.$bold;
+		margin-left: 4px;
+		color: utility.$white;
 
 		&--img {
 			width: 30px;
 			height: 30px;
-			margin-left: 14px;
-		}
-		&--text {
-			font-size: 18px;
-			font-weight: utility.$bold;
-			margin-left: 4px;
-			color: utility.$white;
+			margin: 0 4px 0 14px;
 		}
 	}
 }
