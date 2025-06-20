@@ -3,8 +3,7 @@
 // 新着求人に関するスタイル
 
 .p-newRecruiment {
-	padding-top: 64px;
-
+	padding: 64px 0 67px;
 	background-color: utility.$bgLightBlue;
 
 	&__contents {
@@ -52,5 +51,11 @@
 				}
 			}
 		}
+	}
+
+	&__btn {
+		padding: 17px 72px;
+		display: block;
+		margin: 59px auto 0;
 	}
 }

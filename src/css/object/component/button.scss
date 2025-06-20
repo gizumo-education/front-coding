@@ -1,2 +1,13 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-btn {
+	color: utility.$white;
+	font-size: 18px;
+	font-weight: utility.$bold;
+	background-color: utility.$darkPink;
+	height: 60px;
+	text-align: center;
+	border: 0px;
+	border-radius: 30px;
+}
