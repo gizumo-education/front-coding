@@ -1,2 +1,69 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.c-btn {
+	color: utility.$white;
+	font-size: 18px;
+	font-weight: utility.$bold;
+	background-color: utility.$darkPink;
+	height: 60px;
+	text-align: center;
+	border: 0px;
+	border-radius: 30px;
+}
+
+.c-carousel-btn-left {
+	display: inline-block;
+	color: utility.$black;
+	text-decoration: none;
+	background-color: rgba(utility.$white, 0.7);
+	border: 0px;
+	border-radius: 50px;
+	position: relative;
+	height: 60px;
+	width: 60px;
+
+	&::before {
+		content: '';
+		width: 20px;
+		height: 20px;
+		display: block;
+		border-top: solid 0.7px;
+		border-right: solid 0.7px;
+		transform: rotate(225deg);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: -7.5px;
+		margin: auto;
+	}
+}
+
+.c-carousel-btn-right {
+	display: inline-block;
+	color: utility.$black;
+	text-decoration: none;
+	background-color: rgba(utility.$white, 0.7);
+	border: 0px;
+	border-radius: 50px;
+	position: relative;
+	height: 60px;
+	width: 60px;
+
+	&::before {
+		content: '';
+		width: 20px;
+		height: 20px;
+		display: block;
+		border-top: solid 0.7px;
+		border-right: solid 0.7px;
+		transform: rotate(45deg);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: -7.5px;
+		right: 0;
+		margin: auto;
+	}
+}

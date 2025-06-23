@@ -1,2 +1,49 @@
 @use '../../object/utility/utility.scss';
+
 // ページ上部のキービジュアルに関するスタイル
+
+.p-top {
+	height: 500px;
+	background-color: utility.$bgDeepGray;
+	position: relative;
+
+	&__back {
+		height: 500px;
+		width: 1262px;
+		background-image: url('../img/picture/top.jpg');
+		margin: 0 auto;
+	}
+
+	&__rank {
+		position: absolute;
+		top: 62.5px;
+		left: 830px;
+	}
+
+	&__theme {
+		position: absolute;
+		top: 271px;
+		left: 607px;
+	}
+
+	&__text {
+		position: absolute;
+		top: 391px;
+		left: 810.65px;
+		color: utility.$green;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 400;
+		background-color: utility.$white;
+		width: 391px;
+		height: 58px;
+		padding: 5.5px 0;
+		border: 2.3px solid;
+		border-radius: 10px;
+
+		&--number {
+			font-size: 40px;
+			font-weight: utility.$bold;
+		}
+	}
+}
