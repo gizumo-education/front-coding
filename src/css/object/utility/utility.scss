@@ -1,6 +1,14 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
 
+// お仕事検索フォーム 間隔調整
+.u-search-first {
+	margin: 60px auto;
+}
+.u-search-second {
+	margin: 0 auto 200px;
+}
+
 // ギズジョブの4つの特徴 説明文高さ調整
 .u-fourFeatures__item--list-desc-2lines {
 	margin-top: 36px;

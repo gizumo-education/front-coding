@@ -46,7 +46,7 @@
 				</div>
 			</div>
 
-			<section class="p-search">
+			<section class="p-search u-search-first">
 				<h2 class="p-search__title">お仕事検索</h2>
 				<p class="p-search__desc">働きたい職種・地域・希望給与を入れて検索！</p>
 				<div class="p-search__form">
@@ -345,6 +345,58 @@
 					</li>
 				</ul>
 				<button class="p-usefulContent__btn c-btn">医療事務コラムをもっと見る</button>
+			</section>
+
+			<section class="p-search u-search-second">
+				<h2 class="p-search__title">お仕事検索</h2>
+				<p class="p-search__desc">働きたい職種・地域・希望給与を入れて検索！</p>
+				<div class="p-search__form">
+					<div class="p-search__pullDown">
+						<select class="p-search__pullDown--body" name="job" id="job">
+							<option value="medicalAffairs">医療事務</option>
+							<option value="DispensingAffairs">調剤事務</option>
+							<option value="MedicalInformationManager">診療情報管理士</option>
+							<option value="dentalAssistant">歯科助手</option>
+							<option value="DentalAffairs">歯科事務</option>
+							<option value="NursingAssistant">看護補助・看護助手</option>
+							<option value="InHospitalSE">病院内SE</option>
+						</select>
+					</div>
+					<div class="p-search__pullDown">
+						<select class="p-search__pullDown--body" name="area" id="area">
+							<option value="Tokyo">東京都</option>
+							<option value="Ibaraki">茨城県</option>
+							<option value="Kanagawa">神奈川県</option>
+							<option value="Gunma">群馬県</option>
+							<option value="Saitama">埼玉県</option>
+							<option value="Chiba">千葉県</option>
+							<option value="Tochigi">栃木県</option>
+						</select>
+					</div>
+					<div class="p-search__pullDown">
+						<select class="p-search__pullDown--body" name="salary" id="salary">
+							<option value="200,000">月給20万〜</option>
+							<option value="170,000">月給17万〜</option>
+							<option value="180,000">月給18万〜</option>
+							<option value="190,000">月給19万〜</option>
+							<option value="210,000">月給21万〜</option>
+							<option value="220,000">月給22万〜</option>
+							<option value="230,000">月給23万〜</option>
+						</select>
+					</div>
+					<form class="p-search__inputForm">
+						<input
+							class="p-search__inputForm--input"
+							type="text"
+							name="keyword"
+							placeholder="キーワード・企業名・スキルなど"
+						/>
+					</form>
+					<button class="p-search__button">
+						<img class="p-search__button--img" src="img/icon/icon-search-white.png" alt="虫眼鏡" />
+						検索する
+					</button>
+				</div>
 			</section>
 		</main>
 
