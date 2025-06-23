@@ -15,11 +15,41 @@
 	left: 10px;
 }
 .u-step02 {
-	left: 308px;
+	left: 310px;
 }
 .u-step03 {
-	left: 606px;
+	left: 610px;
 }
 .u-step04 {
-	left: 904px;
+	left: 910px;
+}
+
+// アイコンと見出しの間の間隔
+.u-changeJobsFlow__item--list-title-2lines {
+	margin-top: 20px;
+}
+.u-changeJobsFlow__item--list-title-1lines {
+	margin-top: 36px;
+}
+
+// 見出しと説明文の間の間隔
+.u-changeJobsFlow__item--list-desc-2lines {
+	margin-top: 18px;
+}
+.u-changeJobsFlow__item--list-desc-1lines {
+	margin-top: 30px;
+}
+
+// フローの三角
+.u-triangle-left {
+	position: absolute;
+	left: 280px;
+}
+.u-triangle-center {
+	position: absolute;
+	left: 580px;
+}
+.u-triangle-right {
+	position: absolute;
+	left: 880px;
 }
