@@ -1,0 +1,71 @@
+@use '../../object/utility/utility.scss';
+
+// 転職までの流れの4つの特徴に関するスタイル
+
+.p-changeJobsFlow {
+	padding-top: 105px;
+	max-width: 1180px;
+	margin: 0 auto;
+
+	&__title {
+		font-size: 25px;
+		font-weight: utility.$bold;
+		text-align: center;
+	}
+
+	&__item {
+		margin-top: 50px;
+		display: flex;
+		gap: 10px;
+		position: relative;
+
+		&--list {
+			border: 2.3px solid utility.$darkPink;
+			border-radius: 10px;
+			padding: 58.8px 21px 42px 22px;
+			text-align: center;
+			width: 278px;
+			height: 358px;
+
+			&-step {
+				font-size: 16px;
+				font-weight: utility.$bold;
+				text-align: center;
+				color: utility.$white;
+				background-color: utility.$darkPink;
+				width: 60px;
+				height: 60px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 30px;
+				position: absolute;
+				top: 10px;
+				// left: 10px;
+			}
+
+			&-title {
+				font-size: 24px;
+				font-weight: utility.$bold;
+				line-height: 30px;
+			}
+
+			&-desc {
+				font-size: 14px;
+				text-align: left;
+				// height: 60px;
+				// line-height: 100%;
+			}
+
+			&-triangle::before {
+				content: '';
+				position: absolute;
+				top: 160px;
+				box-sizing: border-box;
+				border-top: 20px solid transparent;
+				border-bottom: 20px solid transparent;
+				border-left: 20px solid utility.$darkPink;
+			}
+		}
+	}
+}

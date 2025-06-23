@@ -1,2 +1,22 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
+
+// 転職までの流れ
+//step位置調整
+.u-step01 {
+	left: 10px;
+}
+.u-step02 {
+	left: 308px;
+}
+.u-step03 {
+	left: 606px;
+}
+.u-step04 {
+	left: 904px;
+}
+
+// 矢印の位置調整
+// .u-triangle-left {
+// 	left: -27px;
+// }
