@@ -1,6 +1,14 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
 
+// ギズジョブの4つの特徴 説明文高さ調整
+.u-fourFeatures__item--list-desc-2lines {
+	margin-top: 36px;
+}
+.u-fourFeatures__item--list-desc-3lines {
+	margin-top: 26px;
+}
+
 // 転職までの流れ
 //step位置調整
 .u-step01 {
@@ -15,8 +23,3 @@
 .u-step04 {
 	left: 904px;
 }
-
-// 矢印の位置調整
-// .u-triangle-left {
-// 	left: -27px;
-// }
