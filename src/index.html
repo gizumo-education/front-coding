@@ -24,17 +24,24 @@
         </ul>
       </div>
       <div class="l-header__sp-items">
-        <button class="l-header__hamburger">
+        <button class="l-header__hamburger" id="hamburger-menu">
           <span></span>
           <span></span>
           <span></span>
         </button>
+        <ul class="l-header__sp-menu__items is-sp off">
+          <li class="l-header__sp-menu__item" data-menu="top" id="hamburger-menu-link">トップ</li>
+          <li class="l-header__sp-menu__item" data-menu="new-job-list" id="hamburger-menu-link">新着求人</li>
+          <li class="l-header__sp-menu__item" data-menu="features" id="hamburger-menu-link">4つの特徴</li>
+          <li class="l-header__sp-menu__item" data-menu="flow" id="hamburger-menu-link">転職までの流れ</li>
+          <li class="l-header__sp-menu__item" data-menu="content" id="hamburger-menu-link">転職お役立ちコンテンツ</li>
+        </ul>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="p-keyvisual">
+    <section class="p-keyvisual" id="top">
       <div class="p-keyvisual__inner">
         <img src="./img/picture/keyvisual_badge.png" alt="2021年使って良かった転職サイト No.1" class="p-keyvisual__badge">
         <img src="./img/icon/keyvisual_title.png" alt="key visual" class="p-keyvisual__title">
@@ -102,7 +109,7 @@
         </div>
       </div>
     </section>
-    <section class="p-job-list">
+    <section class="p-job-list" id="new-job-list">
       <div class="l-inner">
         <h2 class="c-title">
           新着求人
@@ -208,7 +215,7 @@
         <p class="p-mid-banner__text">ギズジョブは完全無料の求職者向け求人サービスです。</p>
       </div>
     </section>
-    <section class="l-inner p-feature">
+    <section class="l-inner p-feature" id="features"">
       <h2 class="c-title">
         ギズジョブの4つの特徴
       </h2>
@@ -258,7 +265,7 @@
         </li>
       </ul>
     </section>
-    <section class="p-flow">
+    <section class="p-flow" id="flow">
       <h2 class="c-title">
         転職までの流れ
       </h2>
@@ -305,7 +312,7 @@
           </li>
         </ul>
     </section>
-    <section class="p-tip-contents">
+    <section class="p-tip-contents" id="content">
       <h2 class="c-title">
         転職お役立ちコンテンツ
       </h2>
