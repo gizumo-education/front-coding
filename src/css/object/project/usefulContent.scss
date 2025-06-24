@@ -1,0 +1,63 @@
+@use '../../object/utility/utility.scss';
+
+// 転職お役立ちコンテンツに関するスタイル
+
+.p-useful-content {
+	max-width: 1180px;
+	padding: 105px 0 150px;
+	margin: 0 auto;
+	text-align: center;
+
+	&__title {
+		font-size: 25px;
+		font-weight: utility.$bold;
+	}
+	&__item {
+		display: flex;
+		margin-top: 50px;
+		gap: 20px;
+
+		&-list {
+			width: 380px;
+			height: 240px;
+			position: relative;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				border-radius: 10px;
+				background-color: rgba(utility.$black, 0.5);
+			}
+
+			&-text {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				height: 100%;
+
+				&-title {
+					font-size: 24px;
+					font-weight: utility.$bold;
+					color: utility.$white;
+					position: relative;
+				}
+
+				&-desc {
+					margin-top: 44px;
+					font-size: 16px;
+					line-height: 23px;
+					color: utility.$white;
+					position: relative;
+				}
+			}
+		}
+	}
+	&__btn {
+		margin-top: 80px;
+		width: 420px;
+	}
+}

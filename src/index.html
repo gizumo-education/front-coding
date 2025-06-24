@@ -46,23 +46,23 @@
 				</div>
 			</div>
 
-			<section class="p-search">
+			<section class="p-search u-search-first">
 				<h2 class="p-search__title">お仕事検索</h2>
 				<p class="p-search__desc">働きたい職種・地域・希望給与を入れて検索！</p>
 				<div class="p-search__form">
-					<div class="p-search__pullDown">
-						<select class="p-search__pullDown--body" name="job" id="job">
-							<option value="medicalAffairs">医療事務</option>
-							<option value="DispensingAffairs">調剤事務</option>
-							<option value="MedicalInformationManager">診療情報管理士</option>
-							<option value="dentalAssistant">歯科助手</option>
-							<option value="DentalAffairs">歯科事務</option>
-							<option value="NursingAssistant">看護補助・看護助手</option>
-							<option value="InHospitalSE">病院内SE</option>
+					<div class="p-search__pull-down">
+						<select class="p-search__pull-down--body" name="job">
+							<option value="medical-affairs">医療事務</option>
+							<option value="dispensing-affairs">調剤事務</option>
+							<option value="medical-information-manager">診療情報管理士</option>
+							<option value="dental-assistant">歯科助手</option>
+							<option value="dental-affairs">歯科事務</option>
+							<option value="nursing-assistant">看護補助・看護助手</option>
+							<option value="inHospital-SE">病院内SE</option>
 						</select>
 					</div>
-					<div class="p-search__pullDown">
-						<select class="p-search__pullDown--body" name="area" id="area">
+					<div class="p-search__pull-down">
+						<select class="p-search__pull-down--body" name="area">
 							<option value="Tokyo">東京都</option>
 							<option value="Ibaraki">茨城県</option>
 							<option value="Kanagawa">神奈川県</option>
@@ -72,8 +72,8 @@
 							<option value="Tochigi">栃木県</option>
 						</select>
 					</div>
-					<div class="p-search__pullDown">
-						<select class="p-search__pullDown--body" name="salary" id="salary">
+					<div class="p-search__pull-down">
+						<select class="p-search__pull-down--body" name="salary">
 							<option value="200,000">月給20万〜</option>
 							<option value="170,000">月給17万〜</option>
 							<option value="180,000">月給18万〜</option>
@@ -83,9 +83,9 @@
 							<option value="230,000">月給23万〜</option>
 						</select>
 					</div>
-					<form class="p-search__inputForm">
+					<form class="p-search__input-form">
 						<input
-							class="p-search__inputForm--input"
+							class="p-search__input-form--input"
 							type="text"
 							name="keyword"
 							placeholder="キーワード・企業名・スキルなど"
@@ -98,128 +98,322 @@
 				</div>
 			</section>
 
-			<section class="p-newRecruiment">
-				<div class="p-newRecruiment__contents">
-					<h2 class="p-newRecruiment__title">新着求人</h2>
-					<div class="p-newRecruiment__btn-parent">
-						<button class="p-newRecruiment__btn-child-left c-carousel-btn-left"></button>
+			<section class="p-new-recruitment">
+				<div class="p-new-recruitment__contents">
+					<h2 class="p-new-recruitment__title">新着求人</h2>
+					<div class="p-new-recruitment__btn-parent">
+						<button class="p-new-recruitment__btn-child-left c-carousel-btn-left"></button>
 
-						<ul class="p-newRecruiment__list">
-							<li class="p-newRecruiment__list--item">
+						<ul class="p-new-recruitment__list">
+							<li class="p-new-recruitment__list--item">
 								<img
-									class="p-newRecruiment__list--item-img"
-									src="img/picture/newRecruiment01.jpg"
+									class="p-new-recruitment__list--item-img"
+									src="img/picture/newrecruitment01.jpg"
 									alt="新着求人01"
 								/>
-								<p class="p-newRecruiment__list--item-desc">
+								<p class="p-new-recruitment__list--item-desc">
 									平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
 								</p>
 
-								<div class="p-newRecruiment__list--item-detail-frame">
-									<div class="p-newRecruiment__list--item-detail">
-										<p class="p-newRecruiment__list--item-detail-about">給与</p>
-										<p class="p-newRecruiment__list--item-detail-value">月給 148,000円～</p>
+								<div class="p-new-recruitment__list--item-detail-frame">
+									<div class="p-new-recruitment__list--item-detail">
+										<p class="p-new-recruitment__list--item-detail-about">給与</p>
+										<p class="p-new-recruitment__list--item-detail-value">月給 148,000円～</p>
 									</div>
-									<div class="p-newRecruiment__list--item-detail">
-										<p class="p-newRecruiment__list--item-detail-about">所在地</p>
-										<p class="p-newRecruiment__list--item-detail-value">三重県伊勢市</p>
+									<div class="p-new-recruitment__list--item-detail">
+										<p class="p-new-recruitment__list--item-detail-about">所在地</p>
+										<p class="p-new-recruitment__list--item-detail-value">三重県伊勢市</p>
 									</div>
-									<div class="p-newRecruiment__list--item-detail">
-										<p class="p-newRecruiment__list--item-detail-about">最寄駅</p>
-										<p class="p-newRecruiment__list--item-detail-value">伊勢市駅 徒歩15分</p>
+									<div class="p-new-recruitment__list--item-detail">
+										<p class="p-new-recruitment__list--item-detail-about">最寄駅</p>
+										<p class="p-new-recruitment__list--item-detail-value">伊勢市駅 徒歩15分</p>
 									</div>
 								</div>
 							</li>
-							<li class="p-newRecruiment__list--item">
+							<li class="p-new-recruitment__list--item">
 								<img
-									class="p-newRecruiment__list--item-img"
-									src="img/picture/newRecruiment02.jpg"
+									class="p-new-recruitment__list--item-img"
+									src="img/picture/newrecruitment02.jpg"
 									alt="新着求人02"
 								/>
-								<p class="p-newRecruiment__list--item-desc">
+								<p class="p-new-recruitment__list--item-desc">
 									平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
 								</p>
 
-								<div class="p-newRecruiment__list--item-detail-frame">
-									<div class="p-newRecruiment__list--item-detail">
-										<p class="p-newRecruiment__list--item-detail-about">給与</p>
-										<p class="p-newRecruiment__list--item-detail-value">月給 148,000円～</p>
+								<div class="p-new-recruitment__list--item-detail-frame">
+									<div class="p-new-recruitment__list--item-detail">
+										<p class="p-new-recruitment__list--item-detail-about">給与</p>
+										<p class="p-new-recruitment__list--item-detail-value">月給 148,000円～</p>
 									</div>
-									<div class="p-newRecruiment__list--item-detail">
-										<p class="p-newRecruiment__list--item-detail-about">所在地</p>
-										<p class="p-newRecruiment__list--item-detail-value">三重県伊勢市</p>
+									<div class="p-new-recruitment__list--item-detail">
+										<p class="p-new-recruitment__list--item-detail-about">所在地</p>
+										<p class="p-new-recruitment__list--item-detail-value">三重県伊勢市</p>
 									</div>
-									<div class="p-newRecruiment__list--item-detail">
-										<p class="p-newRecruiment__list--item-detail-about">最寄駅</p>
-										<p class="p-newRecruiment__list--item-detail-value">伊勢市駅 徒歩15分</p>
+									<div class="p-new-recruitment__list--item-detail">
+										<p class="p-new-recruitment__list--item-detail-about">最寄駅</p>
+										<p class="p-new-recruitment__list--item-detail-value">伊勢市駅 徒歩15分</p>
 									</div>
 								</div>
 							</li>
 
-							<li class="p-newRecruiment__list--item">
+							<li class="p-new-recruitment__list--item">
 								<img
-									class="p-newRecruiment__list--item-img"
-									src="img/picture/newRecruiment03.jpg"
+									class="p-new-recruitment__list--item-img"
+									src="img/picture/newrecruitment03.jpg"
 									alt="新着求人03"
 								/>
-								<p class="p-newRecruiment__list--item-desc">
+								<p class="p-new-recruitment__list--item-desc">
 									平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
 								</p>
 
-								<div class="p-newRecruiment__list--item-detail-frame">
-									<div class="p-newRecruiment__list--item-detail">
-										<p class="p-newRecruiment__list--item-detail-about">給与</p>
-										<p class="p-newRecruiment__list--item-detail-value">月給 148,000円～</p>
+								<div class="p-new-recruitment__list--item-detail-frame">
+									<div class="p-new-recruitment__list--item-detail">
+										<p class="p-new-recruitment__list--item-detail-about">給与</p>
+										<p class="p-new-recruitment__list--item-detail-value">月給 148,000円～</p>
 									</div>
-									<div class="p-newRecruiment__list--item-detail">
-										<p class="p-newRecruiment__list--item-detail-about">所在地</p>
-										<p class="p-newRecruiment__list--item-detail-value">三重県伊勢市</p>
+									<div class="p-new-recruitment__list--item-detail">
+										<p class="p-new-recruitment__list--item-detail-about">所在地</p>
+										<p class="p-new-recruitment__list--item-detail-value">三重県伊勢市</p>
 									</div>
-									<div class="p-newRecruiment__list--item-detail">
-										<p class="p-newRecruiment__list--item-detail-about">最寄駅</p>
-										<p class="p-newRecruiment__list--item-detail-value">伊勢市駅 徒歩15分</p>
+									<div class="p-new-recruitment__list--item-detail">
+										<p class="p-new-recruitment__list--item-detail-about">最寄駅</p>
+										<p class="p-new-recruitment__list--item-detail-value">伊勢市駅 徒歩15分</p>
 									</div>
 								</div>
 							</li>
 
-							<li class="p-newRecruiment__list--item">
+							<li class="p-new-recruitment__list--item">
 								<img
-									class="p-newRecruiment__list--item-img"
-									src="img/picture/newRecruiment04.jpg"
+									class="p-new-recruitment__list--item-img"
+									src="img/picture/newrecruitment04.jpg"
 									alt="新着求人04"
 								/>
-								<p class="p-newRecruiment__list--item-desc">
+								<p class="p-new-recruitment__list--item-desc">
 									平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
 								</p>
 
-								<div class="p-newRecruiment__list--item-detail-frame">
-									<div class="p-newRecruiment__list--item-detail">
-										<p class="p-newRecruiment__list--item-detail-about">給与</p>
-										<p class="p-newRecruiment__list--item-detail-value">月給 148,000円～</p>
+								<div class="p-new-recruitment__list--item-detail-frame">
+									<div class="p-new-recruitment__list--item-detail">
+										<p class="p-new-recruitment__list--item-detail-about">給与</p>
+										<p class="p-new-recruitment__list--item-detail-value">月給 148,000円～</p>
 									</div>
-									<div class="p-newRecruiment__list--item-detail">
-										<p class="p-newRecruiment__list--item-detail-about">所在地</p>
-										<p class="p-newRecruiment__list--item-detail-value">三重県伊勢市</p>
+									<div class="p-new-recruitment__list--item-detail">
+										<p class="p-new-recruitment__list--item-detail-about">所在地</p>
+										<p class="p-new-recruitment__list--item-detail-value">三重県伊勢市</p>
 									</div>
-									<div class="p-newRecruiment__list--item-detail">
-										<p class="p-newRecruiment__list--item-detail-about">最寄駅</p>
-										<p class="p-newRecruiment__list--item-detail-value">伊勢市駅 徒歩15分</p>
+									<div class="p-new-recruitment__list--item-detail">
+										<p class="p-new-recruitment__list--item-detail-about">最寄駅</p>
+										<p class="p-new-recruitment__list--item-detail-value">伊勢市駅 徒歩15分</p>
 									</div>
 								</div>
 							</li>
 						</ul>
-						<button class="p-newRecruiment__btn-child-right c-carousel-btn-right"></button>
+						<button class="p-new-recruitment__btn-child-right c-carousel-btn-right"></button>
 					</div>
-					<button class="p-newRecruiment__btn c-btn">新着求人一覧をもっと見る</button>
+					<button class="p-new-recruitment__btn c-btn">新着求人一覧をもっと見る</button>
 				</div>
 			</section>
 
-			<div class="p-middleCatch">
-				<p class="p-middleCatch__comment">
+			<div class="p-middle-catch">
+				<p class="p-middle-catch__comment">
 					ギズジョブなら理想の職場がきっと見つかる<br />
 					ギズジョブは完全無料の求職者向け求人サービスです。
 				</p>
 			</div>
+
+			<section class="p-four-features">
+				<h2 class="p-four-features__title">ギズジョブの4つの特徴</h2>
+				<ul class="p-four-features__item">
+					<li class="p-four-features__item--list">
+						<h3 class="p-four-features__item--list-title">WEB上で応募完結</h3>
+						<p class="p-four-features__item--list-desc u-four-features__item--list-desc-2lines">
+							エントリーシートの記入を済ませれば、あとは気になる企業に応募して<br />待つだけで面接アポまで完結！
+						</p>
+					</li>
+					<li class="p-four-features__item--list">
+						<h3 class="p-four-features__item--list-title">安心・安全</h3>
+						<p class="p-four-features__item--list-desc u-four-features__item--list-desc-2lines">
+							掲載案件は基本的に当社グループ企業となるため、<br />皆さまにより詳細にクリーンな職場情報をお届けいたします。
+						</p>
+					</li>
+					<li class="p-four-features__item--list">
+						<h3 class="p-four-features__item--list-title">わかりやすい</h3>
+						<p class="p-four-features__item--list-desc u-four-features__item--list-desc-2lines">
+							当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br />といったご自身にピッタリマッチした求人を見つけることができる！
+						</p>
+					</li>
+					<li class="p-four-features__item--list">
+						<h3 class="p-four-features__item--list-title">完全無料</h3>
+						<p class="p-four-features__item--list-desc u-four-features__item--list-desc-3lines">
+							当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br />運営されています。ですので求職者の方からは応募前はもちろん、<br />内定後も費用は一切いただきません。
+						</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="p-change-jobs-flow">
+				<h2 class="p-change-jobs-flow__title">転職までの流れ</h2>
+				<ul class="p-change-jobs-flow__item">
+					<li class="p-change-jobs-flow__item--list">
+						<div class="p-change-jobs-flow__item--list-step">STEP<br />1</div>
+						<img
+							class="p-change-jobs-flow__item--list-icon"
+							src="img/icon/change-jobs-flow01.png"
+							alt="エントリーシート"
+						/>
+						<p
+							class="p-change-jobs-flow__item--list-title u-change-jobs-flow__item--list-title-2lines"
+						>
+							エントリーシートの作成
+						</p>
+						<p
+							class="p-change-jobs-flow__item--list-desc u-change-jobs-flow__item--list-desc-2lines"
+						>
+							ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ
+						</p>
+					</li>
+					<li class="p-change-jobs-flow__item--list-triangle u-triangle-left"></li>
+					<li class="p-change-jobs-flow__item--list">
+						<div class="p-change-jobs-flow__item--list-step">STEP<br />2</div>
+						<img
+							class="p-change-jobs-flow__item--list-icon"
+							src="img/icon/change-jobs-flow02.png"
+							alt="虫眼鏡"
+						/>
+						<p
+							class="p-change-jobs-flow__item--list-title u-change-jobs-flow__item--list-title-2lines"
+						>
+							気になる企業の<br />ピックアップ
+						</p>
+						<p
+							class="p-change-jobs-flow__item--list-desc u-change-jobs-flow__item--list-desc-2lines"
+						>
+							ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキ
+						</p>
+					</li>
+					<li class="p-change-jobs-flow__item--list-triangle u-triangle-center"></li>
+					<li class="p-change-jobs-flow__item--list">
+						<div class="p-change-jobs-flow__item--list-step">STEP<br />3</div>
+						<img
+							class="p-change-jobs-flow__item--list-icon"
+							src="img/icon/change-jobs-flow03.png"
+							alt="メール"
+						/>
+						<p
+							class="p-change-jobs-flow__item--list-title u-change-jobs-flow__item--list-title-1lines"
+						>
+							複数企業に応募
+						</p>
+						<p
+							class="p-change-jobs-flow__item--list-desc u-change-jobs-flow__item--list-desc-1lines"
+						>
+							ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキ
+						</p>
+					</li>
+					<li class="p-change-jobs-flow__item--list-triangle u-triangle-right"></li>
+					<li class="p-change-jobs-flow__item--list">
+						<div class="p-change-jobs-flow__item--list-step">STEP<br />4</div>
+						<img
+							class="p-change-jobs-flow__item--list-icon"
+							src="img/icon/change-jobs-flow04.png"
+							alt="キラキラ"
+						/>
+						<p
+							class="p-change-jobs-flow__item--list-title u-change-jobs-flow__item--list-title-1lines"
+						>
+							内定・転職！
+						</p>
+						<p
+							class="p-change-jobs-flow__item--list-desc u-change-jobs-flow__item--list-desc-1lines"
+						>
+							ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキ
+						</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="p-useful-content">
+				<h2 class="p-useful-content__title">転職お役立ちコンテンツ</h2>
+				<ul class="p-useful-content__item">
+					<li class="p-useful-content__item-list u-useful-content__item-list-official-papers">
+						<div class="p-useful-content__item-list-text">
+							<p class="p-useful-content__item-list-text-title">転職マニュアル</p>
+							<p class="p-useful-content__item-list-text-desc">
+								転職活動の基礎知識、面接対策など<br />転職のコツをお教えします
+							</p>
+						</div>
+					</li>
+					<li class="p-useful-content__item-list u-useful-content__item-list-PC">
+						<div class="p-useful-content__item-list-text">
+							<p class="p-useful-content__item-list-text-title">医療事務業界の豆知識</p>
+							<p class="p-useful-content__item-list-text-desc">
+								スキルアップ・労働環境、給与事情など<br />知って得する業界の豆知識を公開
+							</p>
+						</div>
+					</li>
+					<li class="p-useful-content__item-list u-useful-content__item-list-official-papers">
+						<div class="p-useful-content__item-list-text">
+							<p class="p-useful-content__item-list-text-title">転職マニュアル</p>
+							<p class="p-useful-content__item-list-text-desc">
+								転職活動の基礎知識、面接対策など<br />転職のコツをお教えします
+							</p>
+						</div>
+					</li>
+				</ul>
+				<button class="p-useful-content__btn c-btn">医療事務コラムをもっと見る</button>
+			</section>
+
+			<section class="p-search u-search-second">
+				<h2 class="p-search__title">お仕事検索</h2>
+				<p class="p-search__desc">働きたい職種・地域・希望給与を入れて検索！</p>
+				<div class="p-search__form">
+					<div class="p-search__pull-down">
+						<select class="p-search__pull-down--body" name="job">
+							<option value="medical-affairs">医療事務</option>
+							<option value="dispensing-affairs">調剤事務</option>
+							<option value="medical-information-manager">診療情報管理士</option>
+							<option value="dental-assistant">歯科助手</option>
+							<option value="dental-affairs">歯科事務</option>
+							<option value="nursing-assistant">看護補助・看護助手</option>
+							<option value="inHospital-SE">病院内SE</option>
+						</select>
+					</div>
+					<div class="p-search__pull-down">
+						<select class="p-search__pull-down--body" name="area">
+							<option value="Tokyo">東京都</option>
+							<option value="Ibaraki">茨城県</option>
+							<option value="Kanagawa">神奈川県</option>
+							<option value="Gunma">群馬県</option>
+							<option value="Saitama">埼玉県</option>
+							<option value="Chiba">千葉県</option>
+							<option value="Tochigi">栃木県</option>
+						</select>
+					</div>
+					<div class="p-search__pull-down">
+						<select class="p-search__pull-down--body" name="salary">
+							<option value="200,000">月給20万〜</option>
+							<option value="170,000">月給17万〜</option>
+							<option value="180,000">月給18万〜</option>
+							<option value="190,000">月給19万〜</option>
+							<option value="210,000">月給21万〜</option>
+							<option value="220,000">月給22万〜</option>
+							<option value="230,000">月給23万〜</option>
+						</select>
+					</div>
+					<form class="p-search__input-form">
+						<input
+							class="p-search__input-form--input"
+							type="text"
+							name="keyword"
+							placeholder="キーワード・企業名・スキルなど"
+						/>
+					</form>
+					<button class="p-search__button">
+						<img class="p-search__button--img" src="img/icon/icon-search-white.png" alt="虫眼鏡" />
+						検索する
+					</button>
+				</div>
+			</section>
 		</main>
 
 		<footer class="l-footer">
