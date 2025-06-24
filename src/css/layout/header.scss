@@ -139,7 +139,8 @@
     &.active {
       span {
         &:nth-child(1) {
-          transform: translateY(15px) rotate(-45deg);
+          transform: rotate(45deg);
+          transform-origin: left top;
           transition: all .5s ease-in-out;
         }
         &:nth-child(2) {
@@ -147,7 +148,8 @@
           transition: all .5s ease-in-out;
         }
         &:nth-child(3) {
-          transform: translateY(-15px) rotate(45deg);
+          transform: rotate(-45deg);
+          transform-origin: left bottom;
           transition: all .5s ease-in-out;
         }
       }
