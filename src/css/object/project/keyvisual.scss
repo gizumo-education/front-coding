@@ -1,4 +1,5 @@
 @use '../../object/utility/utility.scss';
+@use '../../foundation/_mixins.scss';
 
 // ページ上部のキービジュアルに関するスタイル
 
@@ -7,23 +8,60 @@
 	background-color: utility.$bgDeepGray;
 	position: relative;
 
+	@include utility.tab {
+		height: 5rem;
+	}
+
+	// @include utility.sp {
+	// 	height: 27rem;
+	// }
+
 	&__back {
 		height: 500px;
-		width: 1262px;
+		width: 100%;
+		max-width: 1262px;
 		background-image: url('../img/picture/top.jpg');
+		background-repeat: no-repeat;
 		margin: 0 auto;
+
+		@include utility.tab {
+			height: 5rem;
+			max-width: 12.62rem;
+		}
+
+		// @include utility.sp {
+		// 	height: 27rem;
+		// }
 	}
 
 	&__rank {
 		position: absolute;
 		top: 62.5px;
 		left: 830px;
+
+		@include utility.tab {
+			top: 0.625rem;
+			left: 8.3rem;
+		}
+
+		// @include utility.sp {
+		// 	height: 0.73rem;
+		// }
 	}
 
 	&__theme {
 		position: absolute;
 		top: 271px;
 		left: 607px;
+
+		@include utility.tab {
+			top: 2.71rem;
+			left: 6.07rem;
+		}
+
+		// @include utility.sp {
+		// 	height: 0.22rem;
+		// }
 	}
 
 	&__text {
@@ -41,9 +79,22 @@
 		border: 2.3px solid;
 		border-radius: 10px;
 
+		@include utility.tab {
+			top: 3.91rem;
+			left: 8.1065rem;
+			font-size: 0.2rem;
+			width: 3.91rem;
+			height: 0.58rem;
+			padding: 0.055rem 0;
+		}
+
 		&--number {
 			font-size: 40px;
 			font-weight: utility.$bold;
+
+			@include utility.tab {
+				font-size: 0.4rem;
+			}
 		}
 	}
 }
