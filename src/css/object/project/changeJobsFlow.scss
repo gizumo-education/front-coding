@@ -2,7 +2,7 @@
 
 // 転職までの流れの4つの特徴に関するスタイル
 
-.p-changeJobsFlow {
+.p-change-jobs-flow {
 	padding-top: 105px;
 	max-width: 1180px;
 	margin: 0 auto;
@@ -26,6 +26,7 @@
 			text-align: center;
 			width: 280px;
 			height: 358px;
+			position: relative;
 
 			&-step {
 				font-size: 16px;
@@ -41,6 +42,8 @@
 				border-radius: 30px;
 				position: absolute;
 				top: 10px;
+				left: 10px;
+				line-height: 19px;
 			}
 
 			&-icon {
