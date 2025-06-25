@@ -6,17 +6,28 @@
 	padding-top: 106px;
 	max-width: 1180px;
 	margin: 0 auto;
+	@include utility.tab {
+		padding-top: 1.06rem;
+		max-width: 11.8rem;
+	}
 
 	&__title {
 		font-size: 25px;
 		font-weight: utility.$bold;
 		text-align: center;
+		@include utility.tab {
+			font-size: 0.25rem;
+		}
 	}
 	&__item {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		margin-top: 53px;
 		gap: 40px;
+		@include utility.tab {
+			margin-top: 0.53rem;
+		}
 
 		&--list {
 			padding-top: 40px;
@@ -25,16 +36,27 @@
 			background-color: utility.$bgPastelPink;
 			border-radius: 10px;
 			text-align: center;
+			@include utility.tab {
+				padding-top: 0.4rem;
+				width: 5.7rem;
+				height: 1.8rem;
+			}
 
 			&-title {
 				font-size: 24px;
 				font-weight: utility.$bold;
 				color: utility.$darkPink;
+				@include utility.tab {
+					font-size: 0.24rem;
+				}
 			}
 
 			&-desc {
 				font-size: 14px;
 				line-height: 20px;
+				@include utility.tab {
+					font-size: 0.14rem;
+				}
 			}
 		}
 	}

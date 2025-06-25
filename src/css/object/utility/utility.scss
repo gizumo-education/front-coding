@@ -1,51 +1,85 @@
 @forward '../../foundation/_variables.scss';
 @forward '../../foundation/_mixins.scss';
+@use '../../foundation/_mixins.scss' as mixins;
 
 // お仕事検索フォーム 間隔調整
 .u-search-first {
 	margin: 60px auto;
+	@include mixins.tab {
+		margin: 0.6rem auto;
+	}
 }
 .u-search-second {
 	margin: 0 auto 200px;
+	@include mixins.tab {
+		margin: 0 auto 2rem;
+	}
 }
 
 // ギズジョブの4つの特徴 説明文高さ調整
 .u-four-features__item--list-desc-2lines {
 	margin-top: 36px;
+	@include mixins.tab {
+		margin-top: 0.36rem;
+	}
 }
 .u-four-features__item--list-desc-3lines {
 	margin-top: 26px;
+	@include mixins.tab {
+		margin-top: 0.26rem;
+	}
 }
 
 // 転職までの流れ
 // アイコンと見出しの間の間隔
 .u-change-jobs-flow__item--list-title-2lines {
 	margin-top: 20px;
+	@include mixins.tab {
+		margin-top: 0.2rem;
+	}
 }
 .u-change-jobs-flow__item--list-title-1lines {
 	margin-top: 36px;
+	@include mixins.tab {
+		margin-top: 0.36rem;
+	}
 }
 
 // 見出しと説明文の間の間隔
 .u-change-jobs-flow__item--list-desc-2lines {
 	margin-top: 18px;
+	@include mixins.tab {
+		margin-top: 0.18rem;
+	}
 }
 .u-change-jobs-flow__item--list-desc-1lines {
 	margin-top: 30px;
+	@include mixins.tab {
+		margin-top: 0.3rem;
+	}
 }
 
 // フローの三角
 .u-triangle-left {
 	position: absolute;
 	left: 280px;
+	@include mixins.tab {
+		left: 2.8rem;
+	}
 }
 .u-triangle-center {
 	position: absolute;
 	left: 580px;
+	@include mixins.tab {
+		left: 5.8rem;
+	}
 }
 .u-triangle-right {
 	position: absolute;
 	left: 880px;
+	@include mixins.tab {
+		left: 8.8rem;
+	}
 }
 
 // お役立ちコンテンツ 画像

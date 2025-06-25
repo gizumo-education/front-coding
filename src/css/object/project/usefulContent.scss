@@ -7,20 +7,34 @@
 	padding: 105px 0 150px;
 	margin: 0 auto;
 	text-align: center;
+	@include utility.tab {
+		max-width: 11.8rem;
+		padding: 1.05rem 0 1.5rem;
+	}
 
 	&__title {
 		font-size: 25px;
 		font-weight: utility.$bold;
+		@include utility.tab {
+			font-size: 0.25rem;
+		}
 	}
 	&__item {
 		display: flex;
 		margin-top: 50px;
 		gap: 20px;
+		@include utility.tab {
+			margin-top: 0.5rem;
+		}
 
 		&-list {
 			width: 380px;
 			height: 240px;
 			position: relative;
+			@include utility.tab {
+				width: 3.8rem;
+				height: 2.4rem;
+			}
 
 			&::before {
 				content: '';
@@ -44,6 +58,9 @@
 					font-weight: utility.$bold;
 					color: utility.$white;
 					position: relative;
+					@include utility.tab {
+						font-size: 0.24rem;
+					}
 				}
 
 				&-desc {
@@ -52,6 +69,11 @@
 					line-height: 23px;
 					color: utility.$white;
 					position: relative;
+					@include utility.tab {
+						margin-top: 0.44rem;
+						font-size: 0.16rem;
+						line-height: 0.23rem;
+					}
 				}
 			}
 		}
@@ -59,5 +81,9 @@
 	&__btn {
 		margin-top: 80px;
 		width: 420px;
+		@include utility.tab {
+			margin-top: 0.8rem;
+			width: 4.2rem;
+		}
 	}
 }
