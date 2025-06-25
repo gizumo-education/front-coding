@@ -1,17 +1,19 @@
+@use 'sass:list';
+@use 'sass:map';
 @use '@/styles/functions' as *;
 @use '@/styles/variables' as *;
 
 @mixin media($breakpoint) {
   @if $breakpoint == 'md' {
-    @media (#{map-get($breakpoints, 'md')}px <= width) {
+    @media (#{map.get($breakpoints, 'md')}px <= width) {
       @content;
     }
   } @else if $breakpoint == 'lg' {
-    @media (#{map-get($breakpoints, 'lg')}px <= width) {
+    @media (#{map.get($breakpoints, 'lg')}px <= width) {
       @content;
     }
   } @else if $breakpoint == 'xl' {
-    @media (#{map-get($breakpoints, 'xl')}px <= width) {
+    @media (#{map.get($breakpoints, 'xl')}px <= width) {
       @content;
     }
   } @else {
@@ -26,17 +28,21 @@
   $rem-list-md: ();
   $rem-list-lg: ();
   $rem-list-xl: ();
+
   @each $v in $value {
-    $rem-list-md: append($rem-list-md, rem-md($v));
-    $rem-list-lg: append($rem-list-lg, rem-lg($v));
-    $rem-list-xl: append($rem-list-xl, rem-xl($v));
+    $rem-list-md: list.append($rem-list-md, rem-md($v));
+    $rem-list-lg: list.append($rem-list-lg, rem-lg($v));
+    $rem-list-xl: list.append($rem-list-xl, rem-xl($v));
   }
+
   @include media('md') {
     #{$property}: $rem-list-md;
   }
+
   @include media('lg') {
     #{$property}: $rem-list-lg;
   }
+
   @include media('xl') {
     #{$property}: $rem-list-xl;
   }

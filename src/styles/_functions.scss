@@ -1,25 +1,26 @@
+@use 'sass:map';
 @use '@/styles/variables' as *;
 
 @function rem-sm($px) {
   @return calc(
-    map-get($breakpoints, 'sm') / #{$design-sp-width} * #{$px} * 0.1rem
+    map.get($breakpoints, 'sm') / #{$design-sp-width} * #{$px} * 0.1rem
   );
 }
 
 @function rem-md($px) {
   @return calc(
-    map-get($breakpoints, 'md') / #{$design-pc-width} * #{$px} * 0.1rem
+    map.get($breakpoints, 'md') / #{$design-pc-width} * #{$px} * 0.1rem
   );
 }
 
 @function rem-lg($px) {
   @return calc(
-    map-get($breakpoints, 'lg') / #{$design-pc-width} * #{$px} * 0.1rem
+    map.get($breakpoints, 'lg') / #{$design-pc-width} * #{$px} * 0.1rem
   );
 }
 
 @function rem-xl($px) {
   @return calc(
-    map-get($breakpoints, 'xl') / #{$design-pc-width} * #{$px} * 0.1rem
+    map.get($breakpoints, 'xl') / #{$design-pc-width} * #{$px} * 0.1rem
   );
 }

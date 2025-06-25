@@ -7,8 +7,8 @@
   display: flex;
   justify-content: flex-end;
   padding: rem-sm(16) rem-sm(15);
-  @include px-to-responsive-rem(padding, 25, 100, 25, 0);
   background-color: #{$color-white};
+  @include px-to-responsive-rem(padding, 25, 100, 25, 0);
 }
 
 .list,
@@ -25,6 +25,9 @@
   width: rem-sm(50);
   height: rem-sm(38);
   border-radius: 50%;
+  @include media('md') {
+    display: none;
+  }
 }
 
 .line {
@@ -62,8 +65,8 @@
 
 .list-link {
   display: flex;
-  @include px-to-responsive-rem(column-gap, 6);
   align-items: center;
+  @include px-to-responsive-rem(column-gap, 6);
 }
 
 .list-link.medical {
@@ -112,15 +115,15 @@
 }
 
 .search::before {
+  background-image: url('/icon/search.svg');
   @include px-to-responsive-rem(width, 18);
   @include px-to-responsive-rem(height, 18);
-  background-image: url('/icon/search.svg');
 }
 
 .book::before {
+  background-image: url('/icon/book.svg');
   @include px-to-responsive-rem(width, 21.3);
   @include px-to-responsive-rem(height, 17);
-  background-image: url('/icon/book.svg');
 }
 
 .button-list {
@@ -131,34 +134,28 @@
 .button-link {
   display: flex;
   align-items: center;
-  @include px-to-responsive-rem(column-gap, 5);
-  @include px-to-responsive-rem(padding, 16, 20);
   height: 100%;
   color: #{$color-white};
   background-color: #{$color-light-blue};
   border-radius: 6px;
+  @include px-to-responsive-rem(column-gap, 5);
+  @include px-to-responsive-rem(padding, 16, 20);
 }
 
 .heart::before {
+  background-image: url('/icon/heart.svg');
   @include px-to-responsive-rem(width, 21);
   @include px-to-responsive-rem(height, 18);
-  background-image: url('/icon/heart.svg');
 }
 
 .clock::before {
+  background-image: url('/icon/clock.svg');
   @include px-to-responsive-rem(width, 18);
   @include px-to-responsive-rem(height, 18);
-  background-image: url('/icon/clock.svg');
 }
 
 .history::before {
+  background-image: url('/icon/history.svg');
   @include px-to-responsive-rem(width, 16);
   @include px-to-responsive-rem(height, 16);
-  background-image: url('/icon/history.svg');
-}
-
-.button {
-  @include media('md') {
-    display: none;
-  }
 }

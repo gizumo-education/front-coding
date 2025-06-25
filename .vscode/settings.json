@@ -13,5 +13,5 @@
   "path-intellisense.autoTriggerNextSuggestion": true,
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.absolutePathToWorkspace": true,
-  "stylelint.validate": ["css"]
+  "stylelint.validate": ["scss"]
 }

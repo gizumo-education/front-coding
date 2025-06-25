@@ -3,9 +3,19 @@
     "stylelint-order",
     "stylelint-declaration-block-no-ignored-properties"
   ],
-  "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recess-order"
+  ],
   "rules": {
-    "order/order": ["custom-properties", "declarations"],
+    "order/order": [
+      "custom-properties",
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "include"
+      }
+    ],
     "plugin/declaration-block-no-ignored-properties": true,
     "number-max-precision": 5,
     "selector-class-pattern": [
@@ -32,20 +42,22 @@
     "media-feature-name-value-allowed-list": {
       "width": ["768px", "1024px", "1440px"]
     },
-    "media-feature-name-allowed-list": ["width", "hover", "any-hover"],
+    "media-feature-name-allowed-list": ["width", "hover", "any-hover", "px"],
     "media-feature-name-unit-allowed-list": {
       "width": ["px"]
     },
     "selector-max-id": 0,
     "selector-max-type": 0,
-    "color-no-hex": true
+    "color-no-hex": true,
+    "at-rule-empty-line-before": null,
+    "declaration-empty-line-before": null
   },
   "overrides": [
     {
-      "files": ["src/**/*.{css}"]
+      "files": ["src/**/*.{scss}"]
     },
     {
-      "files": ["src/styles/globals.css"],
+      "files": ["src/styles/_globals.scss"],
       "rules": {
         "selector-max-type": null,
         "declaration-property-unit-allowed-list": {
@@ -54,21 +66,15 @@
       }
     },
     {
-      "files": ["src/app/terms/index.module.css"],
-      "rules": {
-        "selector-max-type": null
-      }
-    },
-    {
-      "files": ["src/styles/variables.css"],
+      "files": ["src/styles/_variables.scss"],
       "rules": {
         "color-no-hex": null
       }
     },
     {
-      "files": ["src/styles/a11y.css"],
+      "files": ["src/styles/_mixins.scss"],
       "rules": {
-        "declaration-no-important": null
+        "media-feature-name-no-unknown": null
       }
     }
   ]
