@@ -1,0 +1,14 @@
+// INFO: Design width and breakpoints
+$design-pc-width: 1600;
+$design-sp-width: 400;
+$breakpoints: (
+  'xl': 1440,
+  'lg': 1024,
+  'md': 768,
+  'sm': 375,
+);
+
+// INFO: Color variables
+$color-white: #fff;
+$color-black: #000;
+$color-light-blue: #92c5ea;

@@ -1,6 +1,5 @@
 import 'the-new-css-reset/css/reset.css'
-import '@/styles/globals.css'
-import '@/styles/variables.css'
+import '@/styles/style.scss'
 
 import { notoSansJP } from '@/libs/fonts'
 
