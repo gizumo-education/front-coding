@@ -12,6 +12,9 @@
 	@include utility.tab {
 		height: 3rem;
 	}
+	@include utility.sp {
+		height: 0.75rem;
+	}
 
 	&::before {
 		content: '';
@@ -33,6 +36,11 @@
 		@include utility.tab {
 			font-size: 0.25rem;
 			line-height: 0.57rem;
+		}
+		@include utility.sp {
+			font-size: 0.14rem;
+			font-weight: utility.$regular;
+			line-height: 0.21rem;
 		}
 	}
 }

@@ -6,68 +6,94 @@
 .p-top {
 	height: 500px;
 	background-color: utility.$bgDeepGray;
-	position: relative;
 
 	@include utility.tab {
 		height: 5rem;
 	}
 
-	// @include utility.sp {
-	// 	height: 27rem;
-	// }
+	@include utility.sp {
+		height: 2.7rem;
+	}
+
+	&__container {
+		position: relative;
+		margin: 0 auto;
+		background-image: url('../img/picture/top.jpg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 1262px;
+		height: 100%;
+		@include utility.tab {
+			width: 12.62rem;
+		}
+		@include utility.sp {
+			background-image: url('../img/picture/top-sp.jpg');
+			width: 100%;
+			background-size: cover;
+		}
+	}
 
 	&__back {
 		height: 500px;
 		width: 100%;
 		max-width: 1262px;
-		background-image: url('../img/picture/top.jpg');
-		background-repeat: no-repeat;
+		background-position: center top;
 		margin: 0 auto;
 
 		@include utility.tab {
 			height: 5rem;
 			max-width: 12.62rem;
 		}
-
-		// @include utility.sp {
-		// 	height: 27rem;
-		// }
 	}
 
 	&__rank {
 		position: absolute;
 		top: 62.5px;
-		left: 830px;
+		left: 655px;
+		height: 168.5px;
+		width: 342.8px;
 
 		@include utility.tab {
 			top: 0.625rem;
-			left: 8.3rem;
+			left: 6.5rem;
+			height: 1.685rem;
+			width: 3.418rem;
 		}
 
-		// @include utility.sp {
-		// 	height: 0.73rem;
-		// }
+		@include utility.sp {
+			top: 0.6164rem;
+			left: 2rem;
+			height: 0.7336rem;
+			width: 1.4954rem;
+		}
 	}
 
 	&__theme {
 		position: absolute;
 		top: 271px;
-		left: 607px;
+		left: 432px;
+		height: 55px;
+		width: 800px;
 
 		@include utility.tab {
 			top: 2.71rem;
-			left: 6.07rem;
+			left: 4.32rem;
+			height: 0.55rem;
+			width: 8rem;
 		}
 
-		// @include utility.sp {
-		// 	height: 0.22rem;
-		// }
+		@include utility.sp {
+			top: 1.4765rem;
+			left: 1.2468rem;
+			height: 0.22rem;
+			width: 2.72rem;
+		}
 	}
 
 	&__text {
 		position: absolute;
 		top: 391px;
-		left: 810.65px;
+		left: 634.5px;
 		color: utility.$green;
 		text-align: center;
 		font-size: 20px;
@@ -81,11 +107,18 @@
 
 		@include utility.tab {
 			top: 3.91rem;
-			left: 8.1065rem;
+			left: 6.345rem;
 			font-size: 0.2rem;
 			width: 3.91rem;
 			height: 0.58rem;
 			padding: 0.055rem 0;
+		}
+		@include utility.sp {
+			top: 1.88rem;
+			left: 1.8977rem;
+			font-size: 0.08rem;
+			width: 1.7rem;
+			height: 0.3rem;
 		}
 
 		&--number {
@@ -94,6 +127,9 @@
 
 			@include utility.tab {
 				font-size: 0.4rem;
+			}
+			@include utility.sp {
+				font-size: 0.16rem;
 			}
 		}
 	}

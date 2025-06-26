@@ -28,6 +28,9 @@
 		@include utility.tab {
 			margin-top: 0.5rem;
 		}
+		@include utility.sp {
+			flex-direction: column;
+		}
 
 		&--list {
 			border: 2.3px solid utility.$darkPink;
@@ -41,6 +44,23 @@
 				padding: 0.6rem 0.21rem 0.42rem 0.22rem;
 				width: 2.8rem;
 				height: 3.58rem;
+			}
+
+			&:not(:last-child):before {
+				content: '';
+				position: absolute;
+				top: 160px;
+				left: 100%;
+				box-sizing: border-box;
+				border-top: 20px solid transparent;
+				border-bottom: 20px solid transparent;
+				border-left: 20px solid utility.$darkPink;
+				@include utility.tab {
+					top: 1.6rem;
+					border-top: 0.2rem solid transparent;
+					border-bottom: 0.2rem solid transparent;
+					border-left: 0.2rem solid utility.$darkPink;
+				}
 			}
 
 			&-step {

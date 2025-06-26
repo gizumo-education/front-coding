@@ -8,11 +8,24 @@
 	@include mixins.tab {
 		margin: 0.6rem auto;
 	}
+	@include mixins.sp {
+		margin: 0.25rem auto;
+	}
 }
 .u-search-second {
 	margin: 0 auto 200px;
 	@include mixins.tab {
 		margin: 0 auto 2rem;
+	}
+	@include mixins.sp {
+		margin: 0.6rem auto 1rem;
+	}
+}
+
+// SPのとき 新着求人2～4番目非表示
+.u-new-recruitment__list--none {
+	@include mixins.sp {
+		display: none;
 	}
 }
 

@@ -11,6 +11,10 @@
 		max-width: 11.8rem;
 		padding: 1.05rem 0 1.5rem;
 	}
+	@include utility.sp {
+		max-width: 11.8rem;
+		padding: 1.05rem 0 0;
+	}
 
 	&__title {
 		font-size: 25px;
@@ -26,6 +30,9 @@
 		@include utility.tab {
 			margin-top: 0.5rem;
 		}
+		@include utility.sp {
+			flex-direction: column;
+		}
 
 		&-list {
 			width: 380px;
@@ -34,6 +41,7 @@
 			@include utility.tab {
 				width: 3.8rem;
 				height: 2.4rem;
+				border-radius: 10px;
 			}
 
 			&::before {
