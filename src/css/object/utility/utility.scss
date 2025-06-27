@@ -56,6 +56,9 @@
 	@include mixins.tab {
 		margin-top: 0.36rem;
 	}
+	@include mixins.sp {
+		margin-top: 0.22rem;
+	}
 }
 
 // 見出しと説明文の間の間隔
