@@ -12,8 +12,8 @@
 		padding: 1.05rem 0 1.5rem;
 	}
 	@include utility.sp {
-		max-width: 11.8rem;
-		padding: 1.05rem 0 0;
+		max-width: 92.5%;
+		padding: 0.6rem 0 0;
 	}
 
 	&__title {
@@ -25,12 +25,14 @@
 	}
 	&__item {
 		display: flex;
+		align-items: center;
 		margin-top: 50px;
 		gap: 20px;
 		@include utility.tab {
 			margin-top: 0.5rem;
 		}
 		@include utility.sp {
+			margin-top: 0.305rem;
 			flex-direction: column;
 		}
 
@@ -41,6 +43,11 @@
 			@include utility.tab {
 				width: 3.8rem;
 				height: 2.4rem;
+				border-radius: 10px;
+			}
+			@include utility.sp {
+				width: 3.7rem;
+				height: 2.34rem;
 				border-radius: 10px;
 			}
 
@@ -92,6 +99,10 @@
 		@include utility.tab {
 			margin-top: 0.8rem;
 			width: 4.2rem;
+		}
+		@include utility.sp {
+			margin-top: 0.8rem;
+			width: 100%;
 		}
 	}
 }

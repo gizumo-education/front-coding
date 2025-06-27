@@ -11,7 +11,6 @@
 	}
 	@include utility.sp {
 		padding: 0.3rem 0 0.6rem;
-		// max-width: 92.5%;
 	}
 
 	&__btn-parent {
@@ -26,6 +25,9 @@
 		@include utility.tab {
 			top: 0.7rem;
 		}
+		@include utility.sp {
+			top: 1.57rem;
+		}
 	}
 	&__btn-child-right {
 		position: absolute;
@@ -35,6 +37,9 @@
 		@include utility.tab {
 			top: 0.7rem;
 		}
+		@include utility.sp {
+			top: 1.57rem;
+		}
 	}
 
 	&__contents {
@@ -43,6 +48,9 @@
 
 		@include utility.tab {
 			max-width: 11.8rem;
+		}
+		@include utility.sp {
+			max-width: 92.5%;
 		}
 	}
 
@@ -80,6 +88,10 @@
 
 			&-img {
 				border-radius: 10px;
+				@include utility.sp {
+					max-width: 3.7rem;
+					height: 2.08rem;
+				}
 			}
 
 			&-desc {
@@ -150,7 +162,9 @@
 			margin: 0.59rem auto 0;
 		}
 		@include utility.sp {
+			padding: 0.17rem 0;
 			margin: 0.44rem auto 0;
+			width: 100%;
 		}
 	}
 }

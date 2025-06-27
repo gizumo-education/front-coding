@@ -72,29 +72,6 @@
 	}
 }
 
-// フローの三角
-.u-triangle-left {
-	position: absolute;
-	left: 280px;
-	@include mixins.tab {
-		left: 2.8rem;
-	}
-}
-.u-triangle-center {
-	position: absolute;
-	left: 580px;
-	@include mixins.tab {
-		left: 5.8rem;
-	}
-}
-.u-triangle-right {
-	position: absolute;
-	left: 880px;
-	@include mixins.tab {
-		left: 8.8rem;
-	}
-}
-
 // お役立ちコンテンツ 画像
 .u-useful-content__item-list-official-papers {
 	background-image: url('../img/picture/usefulContent01.jpg');

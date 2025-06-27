@@ -62,7 +62,7 @@
 
 		@include utility.sp {
 			top: 0.6164rem;
-			left: 2rem;
+			left: 50%;
 			height: 0.7336rem;
 			width: 1.4954rem;
 		}
@@ -72,20 +72,17 @@
 		position: absolute;
 		top: 271px;
 		left: 432px;
-		height: 55px;
 		width: 800px;
 
 		@include utility.tab {
 			top: 2.71rem;
 			left: 4.32rem;
-			height: 0.55rem;
 			width: 8rem;
 		}
 
 		@include utility.sp {
 			top: 1.4765rem;
-			left: 1.2468rem;
-			height: 0.22rem;
+			left: 31.17%;
 			width: 2.72rem;
 		}
 	}
@@ -115,7 +112,7 @@
 		}
 		@include utility.sp {
 			top: 1.88rem;
-			left: 1.8977rem;
+			left: 47.44%;
 			font-size: 0.08rem;
 			width: 1.7rem;
 			height: 0.3rem;
