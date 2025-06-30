@@ -1,12 +1,10 @@
 // INFO: Design width and breakpoints
 $design-pc-width: 1600;
 $design-sp-width: 400;
-$breakpoints: (
-  'xl': 1440,
-  'lg': 1024,
-  'md': 768,
-  'sm': 375,
-);
+$inner-pc-max-width: 1180;
+$inner-sp-max-width: 370;
+$site-max-width: 2000;
+$breakpoint-pc: 768;
 
 // INFO: Color variables
 $color-white: #fff;

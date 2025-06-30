@@ -34,13 +34,13 @@
     "declaration-no-important": true,
     "declaration-property-unit-allowed-list": {
       "font-size": ["rem", "em", "vw"],
-      "line-height": ["rem"],
+      "line-height": [""],
       "padding": ["rem", "lh"],
       "margin": ["rem"],
       "gap": ["rem"]
     },
     "media-feature-name-value-allowed-list": {
-      "width": ["768px", "1024px", "1440px"]
+      "width": ["768px"]
     },
     "media-feature-name-allowed-list": ["width", "hover", "any-hover", "px"],
     "media-feature-name-unit-allowed-list": {
@@ -61,7 +61,7 @@
       "rules": {
         "selector-max-type": null,
         "declaration-property-unit-allowed-list": {
-          "font-size": ["rem", "em", "vw", "px"]
+          "font-size": ["rem", "em", "vw", "px", "%"]
         }
       }
     },
