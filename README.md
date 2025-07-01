@@ -68,7 +68,7 @@ npm run dev
 
 | Command          | Action                                   |
 | :--------------- | :--------------------------------------- |
-| `npm install`    | 依存モジュールをインストール             |
+| `npm ci`         | 依存モジュールをインストール             |
 | `npm run dev`    | `localhost:3000`で開発サーバーを立ち上げ |
 | `npm run build`  | `out/`にビルドファイルを生成             |
 | `npm run lint:*` | 各種Lint実行                             |
