@@ -9,7 +9,8 @@
     "lint:html": "markuplint '**/*.jsx'",
     "lint:js": "eslint --fix '**/*.@(js|jsx)' --no-warn-ignored",
     "lint:css": "stylelint --fix 'src/**/*.@(scss)'",
-    "format": "prettier --ignore-path .prettierignore --write ."
+    "format": "prettier --ignore-path .prettierignore --write .",
+    "lefthook": "lefthook install"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -27,6 +28,7 @@
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "globals": "^16.1.0",
+    "lefthook": "^1.11.14",
     "markuplint": "^4.12.0",
     "prettier": "^3.5.3",
     "sass": "^1.89.2",

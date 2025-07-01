@@ -1,0 +1,19 @@
+pre-commit:
+  parallel: true
+  commands:
+    markuplint:
+      glob: '**/*.{jsx}'
+      run: npm markuplint "{staged_files}"
+    eslint:
+      glob: '**/*.{js,jsx}'
+      run: npm eslint --fix --no-warn-ignored "{staged_files}"
+      stage_fixed: true
+    stylelint:
+      glob: '**/*.{scss}'
+      run: npm stylelint --fix "{staged_files}"
+      stage_fixed: true
+    prettier:
+      glob: '**/*'
+      exclude: '**/*.{svg}'
+      run: npm prettier --ignore-path .prettierignore --write "{staged_files}"
+      stage_fixed: true
