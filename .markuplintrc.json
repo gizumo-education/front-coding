@@ -1,0 +1,25 @@
+{
+  "specs": {
+    "\\.jsx?$": "@markuplint/react-spec"
+  },
+  "parser": {
+    "\\.jsx?$": "@markuplint/jsx-parser"
+  },
+  "extends": ["markuplint:recommended-react"],
+  "nodeRules": [
+    {
+      "selector": "video",
+      "rules": {
+        "required-element": false
+      }
+    }
+  ],
+  "rules": {
+    "no-hard-code-id": false,
+    "use-list": {
+      "options": {
+        "prevElement": false
+      }
+    }
+  }
+}

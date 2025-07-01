@@ -1,43 +1,75 @@
-# コーディング研修
+# front-coding
 
-## 開発環境
+## 各種バージョン
 
-![node version](https://img.shields.io/badge/node-16.17.0-48C628.svg?style=flat-square) ![npm version](https://img.shields.io/badge/npm-v6.14.17-2D7DBE.svg?style=flat-square)
+![node version](https://img.shields.io/badge/node-22.14.0-48C628.svg?style=flat-square) ![npm version](https://img.shields.io/badge/npm-10.9.2-2D7DBE.svg?style=flat-square) ![volta version](https://img.shields.io/badge/volta-1.0.8~-EDCF3A.svg?style=flat-square)
 
-## プロジェクトのセットアップ
-依存モジュールのインストール
+## 📝 要件
+
+- [Volta](https://volta.sh/)がインストールされていること
+
+## ⚙️ 環境構築
+
+1. リポジトリをクローン
+
+```sh
+git clone https://github.com/gizumo-education/front-coding.git
 ```
-npm install
+
+2. 対象のディレクトリに移動
+
+```sh
+cd front-coding
 ```
-## 立ち上げ（開発時）
+
+3. 依存モジュールをインストール
+
+```sh
+npm ci
 ```
-npm run start
+
+4. Git Hookを有効化
+
+```sh
+npm run lefthook
 ```
-## 立ち上げ（ビルド時）
+
+5. 開発サーバー立ち上げ
+
+```sh
+npm run dev
 ```
-npm run build
-```
-## ディレクトリ
+
+## 🚀 ディレクトリ構成
+
 ```
 .
-├── README.md
-├── src
-│    ├── index.html
-│    ├── img
-│    ├── js
-│    └── css
-├── .babelrc
-├── .git
-├── .gitignore
-├── package-lock.json
-├── package.json
-└── webpack.config.mjs
+├── out
+├── public
+└── src
+    ├── app
+    ├── components
+    ├── libs
+    └── styles
+
 ```
-|ディレクトリもしくはファイル名|説明|
-|---|---|
-|src|ビルド前のソースコードを格納しているディレクトリ|
-|.babelrc|[babel](https://babeljs.io/docs/en/babel-preset-env)が実行するトランスパイルの設定ファイル|
-|.gitignore|git管理しないファイル/ディレクトリを記載するファイル|
-|package-lock.json|package.jsonの情報をもとに自動生成されるファイル<br>開発者間が同一の依存関係をインストールするために必要|
-|package.json|npmでインストールした[パッケージ情報や開発時に使用するnpm scriptsを管理しているファイル](https://docs.npmjs.com/cli/v6/configuring-npm/package-json)|
-|webpack.config.mjs|webpackの開発・本番ビルドに使用する共通の設定ファイル|
+
+| ディレクトリ名 | 説明                       |
+| -------------- | -------------------------- |
+| out            | 本番ビルド後のソースコード |
+| public         | 画像を管理                 |
+| app            | Next.js App Router         |
+| components     | 汎用コンポーネントを管理   |
+| styles         | グローバルなCSSを管理      |
+
+## 🧞 コマンド
+
+コマンドはプロジェクトルートで実行してください
+
+| Command          | Action                                   |
+| :--------------- | :--------------------------------------- |
+| `npm install`    | 依存モジュールをインストール             |
+| `npm run dev`    | `localhost:3000`で開発サーバーを立ち上げ |
+| `npm run build`  | `out/`にビルドファイルを生成             |
+| `npm run lint:*` | 各種Lint実行                             |
+| `npm run format` | Prettierによるフォーマット               |

@@ -1,0 +1,33 @@
+@use 'sass:math';
+@use 'sass:list';
+@use '@/styles/variables' as *;
+
+@function pc-vw($px-value) {
+  @return math.div($px-value, $design-pc-width) * 100vw;
+}
+
+@function sp-vw($px-value) {
+  @return math.div($px-value, $design-sp-width) * 100vw;
+}
+
+@function rem($px-values...) {
+  $base-font-size: 16;
+  $rem-values: ();
+
+  @each $px-value in $px-values {
+    @if not math.is-unitless($px-value) {
+      @error "rem()関数には単位なしの数値を指定してください。指定された値: #{$px-value}";
+    }
+
+    $rem-values: list.append(
+      $rem-values,
+      math.div($px-value, $base-font-size) * 1rem
+    );
+  }
+
+  @if list.length($rem-values) == 1 {
+    @return list.nth($rem-values, 1);
+  }
+
+  @return $rem-values;
+}

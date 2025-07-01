@@ -1,0 +1,13 @@
+/public
+/.next
+/out
+*.sh
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.avif
+*.ico
+*.txt
+.gitkeep
