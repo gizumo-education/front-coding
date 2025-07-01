@@ -25,10 +25,16 @@ cd front-coding
 3. 依存モジュールをインストール
 
 ```sh
-npm i
+npm ci
 ```
 
-4. 開発サーバー立ち上げ
+4. Git Hookを有効化
+
+```sh
+npm run lefthook
+```
+
+5. 開発サーバー立ち上げ
 
 ```sh
 npm run dev
