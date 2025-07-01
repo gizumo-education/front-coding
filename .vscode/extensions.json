@@ -5,6 +5,7 @@
     "stylelint.vscode-stylelint",
     "christian-kohler.path-intellisense",
     "ionutvmi.path-autocomplete",
-    "yusukehirao.vscode-markuplint"
+    "yusukehirao.vscode-markuplint",
+    "editorconfig.editorconfig"
   ]
 }
