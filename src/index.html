@@ -26,17 +26,38 @@
 					</ul>
 				</div>
 				<div class="l-header__sp-items">
-					<button class="l-header__hamburger">
-						<span></span>
-						<span></span>
-						<span></span>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="#top" class="l-header__sp-items-list-title-first">トップ</a>
+							</li>
+							<li>
+								<a href="#new-recruitment" class="l-header__sp-items-list-title">新着求人</a>
+							</li>
+							<li>
+								<a href="#four-features" class="l-header__sp-items-list-title">4つの特徴</a>
+							</li>
+							<li>
+								<a href="#change-jobs-flow" class="l-header__sp-items-list-title">転職までの流れ</a>
+							</li>
+							<li>
+								<a href="#useful-content" class="l-header__sp-items-list-title"
+									>転職お役立ちコンテンツ</a
+								>
+							</li>
+						</ul>
+					</nav>
+					<button class="l-header__hamburger" id="hamburger">
+						<span id="line1"></span>
+						<span id="line2"></span>
+						<span id="line3"></span>
 					</button>
 				</div>
 			</nav>
 		</header>
 
 		<main class="l-main">
-			<div class="p-top">
+			<div class="p-top" id="top">
 				<div class="p-top__container">
 					<div class="p-top__back">
 						<img class="p-top__rank is-pc" src="img/icon/top-no.1.png" alt="ナンバー1" />
@@ -104,14 +125,16 @@
 				</form>
 			</section>
 
-			<section class="p-new-recruitment">
+			<section class="p-new-recruitment" id="new-recruitment">
 				<div class="p-new-recruitment__contents">
 					<h2 class="p-new-recruitment__title">新着求人</h2>
 					<div class="p-new-recruitment__btn-parent">
-						<button class="p-new-recruitment__btn-child-left c-carousel-btn-left"></button>
-
-						<ul class="p-new-recruitment__list">
-							<li class="p-new-recruitment__list--item">
+						<button
+							class="p-new-recruitment__btn-child-left c-carousel-btn-left slick-prev-custom arrow arrow--left"
+							id="arrow-left"
+						></button>
+						<div class="p-new-recruitment__list multiple-items keen-slider">
+							<div class="p-new-recruitment__list--item keen-slider__slide">
 								<img
 									class="p-new-recruitment__list--item-img is-pc"
 									src="img/picture/newrecruitment01.jpg"
@@ -140,8 +163,8 @@
 										<p class="p-new-recruitment__list--item-detail-value">伊勢市駅 徒歩15分</p>
 									</div>
 								</div>
-							</li>
-							<li class="p-new-recruitment__list--item u-new-recruitment__list--none">
+							</div>
+							<div class="p-new-recruitment__list--item keen-slider__slide">
 								<img
 									class="p-new-recruitment__list--item-img"
 									src="img/picture/newrecruitment02.jpg"
@@ -165,9 +188,8 @@
 										<p class="p-new-recruitment__list--item-detail-value">伊勢市駅 徒歩15分</p>
 									</div>
 								</div>
-							</li>
-
-							<li class="p-new-recruitment__list--item u-new-recruitment__list--none">
+							</div>
+							<div class="p-new-recruitment__list--item keen-slider__slide">
 								<img
 									class="p-new-recruitment__list--item-img"
 									src="img/picture/newrecruitment03.jpg"
@@ -191,9 +213,8 @@
 										<p class="p-new-recruitment__list--item-detail-value">伊勢市駅 徒歩15分</p>
 									</div>
 								</div>
-							</li>
-
-							<li class="p-new-recruitment__list--item u-new-recruitment__list--none">
+							</div>
+							<div class="p-new-recruitment__list--item keen-slider__slide">
 								<img
 									class="p-new-recruitment__list--item-img"
 									src="img/picture/newrecruitment04.jpg"
@@ -217,9 +238,12 @@
 										<p class="p-new-recruitment__list--item-detail-value">伊勢市駅 徒歩15分</p>
 									</div>
 								</div>
-							</li>
-						</ul>
-						<button class="p-new-recruitment__btn-child-right c-carousel-btn-right"></button>
+							</div>
+						</div>
+						<button
+							class="p-new-recruitment__btn-child-right c-carousel-btn-right slick-next-custom arrow arrow--right"
+							id="arrow-right"
+						></button>
 					</div>
 					<button class="p-new-recruitment__btn c-btn">新着求人一覧をもっと見る</button>
 				</div>
@@ -232,7 +256,7 @@
 				</p>
 			</div>
 
-			<section class="p-four-features">
+			<section class="p-four-features" id="four-features">
 				<h2 class="p-four-features__title">ギズジョブの4つの特徴</h2>
 				<ul class="p-four-features__item">
 					<li class="p-four-features__item--list">
@@ -272,7 +296,7 @@
 				</ul>
 			</section>
 
-			<section class="p-change-jobs-flow">
+			<section class="p-change-jobs-flow" id="change-jobs-flow">
 				<h2 class="p-change-jobs-flow__title">転職までの流れ</h2>
 				<ul class="p-change-jobs-flow__item">
 					<li class="p-change-jobs-flow__item--list">
@@ -358,7 +382,7 @@
 				</ul>
 			</section>
 
-			<section class="p-useful-content">
+			<section class="p-useful-content" id="useful-content">
 				<h2 class="p-useful-content__title">転職お役立ちコンテンツ</h2>
 				<ul class="p-useful-content__item">
 					<li class="p-useful-content__item-list u-useful-content__item-list-official-papers">
@@ -467,5 +491,12 @@
 			</div>
 			<p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
 		</footer>
+
+		<!-- jQuery本体 -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+		<!-- slick本体 -->
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<!-- あなたの外部JSファイル -->
+		<script src="js/app.js"></script>
 	</body>
 </html>

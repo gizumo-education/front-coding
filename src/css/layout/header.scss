@@ -116,6 +116,19 @@
 		@include utility.tab {
 			display: none !important;
 		}
+
+		&-list-title {
+			color: utility.$white;
+			font-size: 22px;
+			font-weight: utility.$bold;
+			margin: 36px 0 0 60.25px;
+			&-first {
+				color: utility.$white;
+				font-size: 22px;
+				font-weight: utility.$bold;
+				margin: 57px 0 0 60.25px;
+			}
+		}
 	}
 	&__hamburger {
 		width: 0.5rem;
@@ -135,4 +148,35 @@
 			border-radius: 0.03rem;
 		}
 	}
+}
+
+#nav {
+	position: absolute;
+	height: 554px;
+	width: 100%;
+	right: -100%;
+	top: 0.7rem;
+	background-color: rgba(utility.$black, 0.7);
+	transition: 0.7s;
+}
+
+#nav ul li {
+	list-style-type: none;
+}
+
+.in {
+	transform: translateX(-100%);
+}
+.line_1 {
+	transform: translateY(0.165rem) rotate(-45deg);
+	top: 0;
+	transition: 1s;
+}
+.line_2 {
+	opacity: 0;
+}
+.line_3 {
+	transform: translateY(-0.165rem) rotate(45deg);
+	bottom: 0;
+	transition: 1s;
 }
