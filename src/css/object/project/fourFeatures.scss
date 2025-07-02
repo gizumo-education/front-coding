@@ -6,17 +6,38 @@
 	padding-top: 106px;
 	max-width: 1180px;
 	margin: 0 auto;
+	@include utility.tab {
+		padding-top: 1.06rem;
+		max-width: 11.8rem;
+	}
+	@include utility.sp {
+		padding-top: 0.55rem;
+		max-width: 92.5rem;
+	}
 
 	&__title {
 		font-size: 25px;
 		font-weight: utility.$bold;
 		text-align: center;
+		@include utility.tab {
+			font-size: 0.25rem;
+		}
 	}
 	&__item {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		margin-top: 53px;
 		gap: 40px;
+		@include utility.tab {
+			margin-top: 0.53rem;
+		}
+		@include utility.sp {
+			margin-top: 0.38rem;
+			flex-direction: column;
+			align-items: center;
+			gap: 0.21rem;
+		}
 
 		&--list {
 			padding-top: 40px;
@@ -25,16 +46,40 @@
 			background-color: utility.$bgPastelPink;
 			border-radius: 10px;
 			text-align: center;
+			@include utility.tab {
+				padding-top: 0.4rem;
+				width: 5.7rem;
+				height: 1.8rem;
+			}
+			@include utility.sp {
+				padding: 0.3rem 0;
+				width: 3.7rem;
+				height: auto;
+			}
 
 			&-title {
 				font-size: 24px;
 				font-weight: utility.$bold;
 				color: utility.$darkPink;
+				@include utility.tab {
+					font-size: 0.24rem;
+				}
+				@include utility.sp {
+					font-size: 0.2rem;
+				}
 			}
 
 			&-desc {
 				font-size: 14px;
 				line-height: 20px;
+				@include utility.tab {
+					font-size: 0.14rem;
+				}
+				@include utility.sp {
+					font-size: 0.12rem;
+					line-height: 0.17rem;
+					margin-top: 0.3rem;
+				}
 			}
 		}
 	}
