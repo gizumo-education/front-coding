@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import 'slick-carousel';
 import 'keen-slider/keen-slider.min.css';
 import KeenSlider from 'keen-slider';
 
