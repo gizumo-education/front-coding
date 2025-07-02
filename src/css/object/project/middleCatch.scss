@@ -9,6 +9,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	@include utility.tab {
+		height: 3rem;
+	}
+	@include utility.sp {
+		height: 0.75rem;
+	}
 
 	&::before {
 		content: '';
@@ -27,5 +33,14 @@
 		line-height: 57px;
 		text-align: center;
 		z-index: 10;
+		@include utility.tab {
+			font-size: 0.25rem;
+			line-height: 0.57rem;
+		}
+		@include utility.sp {
+			font-size: 0.14rem;
+			font-weight: utility.$regular;
+			line-height: 0.21rem;
+		}
 	}
 }

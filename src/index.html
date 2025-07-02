@@ -37,65 +37,71 @@
 
 		<main class="l-main">
 			<div class="p-top">
-				<div class="p-top__back">
-					<img class="p-top__rank" src="img/icon/top-no.1.png" alt="ナンバー1" />
-					<img class="p-top__theme" src="img/icon/top-theme.png" alt="ギズジョブ" />
-					<p class="p-top__text">
-						現在の求人掲載数：<span class="p-top__text--number">2,320</span>件
-					</p>
+				<div class="p-top__container">
+					<div class="p-top__back">
+						<img class="p-top__rank is-pc" src="img/icon/top-no.1.png" alt="ナンバー1" />
+						<img class="p-top__rank is-sp" src="img/icon/top-no.1-sp.png" alt="ナンバー1" />
+						<img class="p-top__theme is-pc" src="img/icon/top-theme.png" alt="ギズジョブ" />
+						<img class="p-top__theme is-sp" src="img/icon/top-theme-sp✕1.png" alt="ギズジョブ" />
+						<p class="p-top__text">
+							現在の求人掲載数：<span class="p-top__text--number">2,320</span>件
+						</p>
+					</div>
 				</div>
 			</div>
 
 			<section class="p-search u-search-first">
 				<h2 class="p-search__title">お仕事検索</h2>
 				<p class="p-search__desc">働きたい職種・地域・希望給与を入れて検索！</p>
-				<div class="p-search__form">
-					<div class="p-search__pull-down">
-						<select class="p-search__pull-down--body" name="job">
-							<option value="medical-affairs">医療事務</option>
-							<option value="dispensing-affairs">調剤事務</option>
-							<option value="medical-information-manager">診療情報管理士</option>
-							<option value="dental-assistant">歯科助手</option>
-							<option value="dental-affairs">歯科事務</option>
-							<option value="nursing-assistant">看護補助・看護助手</option>
-							<option value="inHospital-SE">病院内SE</option>
-						</select>
+				<form class="p-search__form">
+					<div class="p-search__pull-down__container">
+						<div class="p-search__pull-down">
+							<select class="p-search__pull-down--body" name="job">
+								<option value="medical-affairs">医療事務</option>
+								<option value="dispensing-affairs">調剤事務</option>
+								<option value="medical-information-manager">診療情報管理士</option>
+								<option value="dental-assistant">歯科助手</option>
+								<option value="dental-affairs">歯科事務</option>
+								<option value="nursing-assistant">看護補助・看護助手</option>
+								<option value="inHospital-SE">病院内SE</option>
+							</select>
+						</div>
+						<div class="p-search__pull-down">
+							<select class="p-search__pull-down--body" name="area">
+								<option value="Tokyo">東京都</option>
+								<option value="Ibaraki">茨城県</option>
+								<option value="Kanagawa">神奈川県</option>
+								<option value="Gunma">群馬県</option>
+								<option value="Saitama">埼玉県</option>
+								<option value="Chiba">千葉県</option>
+								<option value="Tochigi">栃木県</option>
+							</select>
+						</div>
+						<div class="p-search__pull-down">
+							<select class="p-search__pull-down--body" name="salary">
+								<option value="200,000">月給20万〜</option>
+								<option value="170,000">月給17万〜</option>
+								<option value="180,000">月給18万〜</option>
+								<option value="190,000">月給19万〜</option>
+								<option value="210,000">月給21万〜</option>
+								<option value="220,000">月給22万〜</option>
+								<option value="230,000">月給23万〜</option>
+							</select>
+						</div>
 					</div>
-					<div class="p-search__pull-down">
-						<select class="p-search__pull-down--body" name="area">
-							<option value="Tokyo">東京都</option>
-							<option value="Ibaraki">茨城県</option>
-							<option value="Kanagawa">神奈川県</option>
-							<option value="Gunma">群馬県</option>
-							<option value="Saitama">埼玉県</option>
-							<option value="Chiba">千葉県</option>
-							<option value="Tochigi">栃木県</option>
-						</select>
-					</div>
-					<div class="p-search__pull-down">
-						<select class="p-search__pull-down--body" name="salary">
-							<option value="200,000">月給20万〜</option>
-							<option value="170,000">月給17万〜</option>
-							<option value="180,000">月給18万〜</option>
-							<option value="190,000">月給19万〜</option>
-							<option value="210,000">月給21万〜</option>
-							<option value="220,000">月給22万〜</option>
-							<option value="230,000">月給23万〜</option>
-						</select>
-					</div>
-					<form class="p-search__input-form">
+					<div class="p-search__input-form">
 						<input
 							class="p-search__input-form--input"
 							type="text"
 							name="keyword"
 							placeholder="キーワード・企業名・スキルなど"
 						/>
-					</form>
-					<button class="p-search__button">
+					</div>
+					<button class="p-search__button" type="submit">
 						<img class="p-search__button--img" src="img/icon/icon-search-white.png" alt="虫眼鏡" />
 						検索する
 					</button>
-				</div>
+				</form>
 			</section>
 
 			<section class="p-new-recruitment">
@@ -107,8 +113,13 @@
 						<ul class="p-new-recruitment__list">
 							<li class="p-new-recruitment__list--item">
 								<img
-									class="p-new-recruitment__list--item-img"
+									class="p-new-recruitment__list--item-img is-pc"
 									src="img/picture/newrecruitment01.jpg"
+									alt="新着求人01"
+								/>
+								<img
+									class="p-new-recruitment__list--item-img is-sp"
+									src="img/picture/newrecruitment01-sp.jpg"
 									alt="新着求人01"
 								/>
 								<p class="p-new-recruitment__list--item-desc">
@@ -130,7 +141,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="p-new-recruitment__list--item">
+							<li class="p-new-recruitment__list--item is-pc">
 								<img
 									class="p-new-recruitment__list--item-img"
 									src="img/picture/newrecruitment02.jpg"
@@ -156,7 +167,7 @@
 								</div>
 							</li>
 
-							<li class="p-new-recruitment__list--item">
+							<li class="p-new-recruitment__list--item is-pc">
 								<img
 									class="p-new-recruitment__list--item-img"
 									src="img/picture/newrecruitment03.jpg"
@@ -182,7 +193,7 @@
 								</div>
 							</li>
 
-							<li class="p-new-recruitment__list--item">
+							<li class="p-new-recruitment__list--item is-pc">
 								<img
 									class="p-new-recruitment__list--item-img"
 									src="img/picture/newrecruitment04.jpg"
@@ -227,7 +238,9 @@
 					<li class="p-four-features__item--list">
 						<h3 class="p-four-features__item--list-title">WEB上で応募完結</h3>
 						<p class="p-four-features__item--list-desc u-four-features__item--list-desc-2lines">
-							エントリーシートの記入を済ませれば、あとは気になる企業に応募して<br />待つだけで面接アポまで完結！
+							エントリーシートの記入を済ませれば、<br
+								class="is-sp"
+							/>あとは気になる企業に応募して<br class="is-pc" />待つだけで面接アポまで完結！
 						</p>
 					</li>
 					<li class="p-four-features__item--list">
@@ -239,13 +252,21 @@
 					<li class="p-four-features__item--list">
 						<h3 class="p-four-features__item--list-title">わかりやすい</h3>
 						<p class="p-four-features__item--list-desc u-four-features__item--list-desc-2lines">
-							当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索<br />といったご自身にピッタリマッチした求人を見つけることができる！
+							当求人サイトは医療事務に特化しておりさらに<br
+								class="is-sp"
+							/>こだわり検索や地域から検索<br class="is-pc" />といったご自身に<br
+								class="is-sp"
+							/>ピッタリマッチした求人を見つけることができる！
 						</p>
 					</li>
 					<li class="p-four-features__item--list">
 						<h3 class="p-four-features__item--list-title">完全無料</h3>
 						<p class="p-four-features__item--list-desc u-four-features__item--list-desc-3lines">
-							当サイトは求人元の企業やグループ会社からのスポンサー費用によって<br />運営されています。ですので求職者の方からは応募前はもちろん、<br />内定後も費用は一切いただきません。
+							当サイトは求人元の企業やグループ会社からのスポンサー費用に<br
+								class="is-sp"
+							/>よって<br class="is-pc" />運営されています。ですので求職者の方からは<br
+								class="is-sp"
+							/>応募前はもちろん、<br class="is-pc" />内定後も費用は一切いただきません。
 						</p>
 					</li>
 				</ul>
@@ -269,10 +290,11 @@
 						<p
 							class="p-change-jobs-flow__item--list-desc u-change-jobs-flow__item--list-desc-2lines"
 						>
-							ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ
+							ここにはテキストが入ります。ここにはテキストが入ります。<br
+								class="is-sp"
+							/>ここにはテキストが入ります。<br class="is-sp" />こ
 						</p>
 					</li>
-					<li class="p-change-jobs-flow__item--list-triangle u-triangle-left"></li>
 					<li class="p-change-jobs-flow__item--list">
 						<div class="p-change-jobs-flow__item--list-step">STEP<br />2</div>
 						<img
@@ -283,15 +305,16 @@
 						<p
 							class="p-change-jobs-flow__item--list-title u-change-jobs-flow__item--list-title-2lines"
 						>
-							気になる企業の<br />ピックアップ
+							気になる企業の<br class="is-pc" />ピックアップ
 						</p>
 						<p
 							class="p-change-jobs-flow__item--list-desc u-change-jobs-flow__item--list-desc-2lines"
 						>
-							ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキ
+							ここにはテキストが入ります。ここにはテキストが入ります。<br
+								class="is-sp"
+							/>ここにはテキストが入ります。<br class="is-sp" />ここにはテキ
 						</p>
 					</li>
-					<li class="p-change-jobs-flow__item--list-triangle u-triangle-center"></li>
 					<li class="p-change-jobs-flow__item--list">
 						<div class="p-change-jobs-flow__item--list-step">STEP<br />3</div>
 						<img
@@ -307,10 +330,11 @@
 						<p
 							class="p-change-jobs-flow__item--list-desc u-change-jobs-flow__item--list-desc-1lines"
 						>
-							ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキ
+							ここにはテキストが入ります。ここにはテキストが入ります。<br
+								class="is-sp"
+							/>ここにはテキストが入ります。<br class="is-sp" />ここにはテキ
 						</p>
 					</li>
-					<li class="p-change-jobs-flow__item--list-triangle u-triangle-right"></li>
 					<li class="p-change-jobs-flow__item--list">
 						<div class="p-change-jobs-flow__item--list-step">STEP<br />4</div>
 						<img
@@ -326,7 +350,9 @@
 						<p
 							class="p-change-jobs-flow__item--list-desc u-change-jobs-flow__item--list-desc-1lines"
 						>
-							ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキ
+							ここにはテキストが入ります。ここにはテキストが入ります。<br
+								class="is-sp"
+							/>ここにはテキストが入ります。<br class="is-sp" />ここにはテキ
 						</p>
 					</li>
 				</ul>
@@ -366,53 +392,55 @@
 			<section class="p-search u-search-second">
 				<h2 class="p-search__title">お仕事検索</h2>
 				<p class="p-search__desc">働きたい職種・地域・希望給与を入れて検索！</p>
-				<div class="p-search__form">
-					<div class="p-search__pull-down">
-						<select class="p-search__pull-down--body" name="job">
-							<option value="medical-affairs">医療事務</option>
-							<option value="dispensing-affairs">調剤事務</option>
-							<option value="medical-information-manager">診療情報管理士</option>
-							<option value="dental-assistant">歯科助手</option>
-							<option value="dental-affairs">歯科事務</option>
-							<option value="nursing-assistant">看護補助・看護助手</option>
-							<option value="inHospital-SE">病院内SE</option>
-						</select>
+				<form class="p-search__form">
+					<div class="p-search__pull-down__container">
+						<div class="p-search__pull-down">
+							<select class="p-search__pull-down--body" name="job">
+								<option value="medical-affairs">医療事務</option>
+								<option value="dispensing-affairs">調剤事務</option>
+								<option value="medical-information-manager">診療情報管理士</option>
+								<option value="dental-assistant">歯科助手</option>
+								<option value="dental-affairs">歯科事務</option>
+								<option value="nursing-assistant">看護補助・看護助手</option>
+								<option value="inHospital-SE">病院内SE</option>
+							</select>
+						</div>
+						<div class="p-search__pull-down">
+							<select class="p-search__pull-down--body" name="area">
+								<option value="Tokyo">東京都</option>
+								<option value="Ibaraki">茨城県</option>
+								<option value="Kanagawa">神奈川県</option>
+								<option value="Gunma">群馬県</option>
+								<option value="Saitama">埼玉県</option>
+								<option value="Chiba">千葉県</option>
+								<option value="Tochigi">栃木県</option>
+							</select>
+						</div>
+						<div class="p-search__pull-down">
+							<select class="p-search__pull-down--body" name="salary">
+								<option value="200,000">月給20万〜</option>
+								<option value="170,000">月給17万〜</option>
+								<option value="180,000">月給18万〜</option>
+								<option value="190,000">月給19万〜</option>
+								<option value="210,000">月給21万〜</option>
+								<option value="220,000">月給22万〜</option>
+								<option value="230,000">月給23万〜</option>
+							</select>
+						</div>
 					</div>
-					<div class="p-search__pull-down">
-						<select class="p-search__pull-down--body" name="area">
-							<option value="Tokyo">東京都</option>
-							<option value="Ibaraki">茨城県</option>
-							<option value="Kanagawa">神奈川県</option>
-							<option value="Gunma">群馬県</option>
-							<option value="Saitama">埼玉県</option>
-							<option value="Chiba">千葉県</option>
-							<option value="Tochigi">栃木県</option>
-						</select>
-					</div>
-					<div class="p-search__pull-down">
-						<select class="p-search__pull-down--body" name="salary">
-							<option value="200,000">月給20万〜</option>
-							<option value="170,000">月給17万〜</option>
-							<option value="180,000">月給18万〜</option>
-							<option value="190,000">月給19万〜</option>
-							<option value="210,000">月給21万〜</option>
-							<option value="220,000">月給22万〜</option>
-							<option value="230,000">月給23万〜</option>
-						</select>
-					</div>
-					<form class="p-search__input-form">
+					<div class="p-search__input-form">
 						<input
 							class="p-search__input-form--input"
 							type="text"
 							name="keyword"
 							placeholder="キーワード・企業名・スキルなど"
 						/>
-					</form>
-					<button class="p-search__button">
+					</div>
+					<button class="p-search__button" type="submit">
 						<img class="p-search__button--img" src="img/icon/icon-search-white.png" alt="虫眼鏡" />
 						検索する
 					</button>
-				</div>
+				</form>
 			</section>
 		</main>
 

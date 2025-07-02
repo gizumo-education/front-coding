@@ -7,20 +7,53 @@
 	padding: 105px 0 150px;
 	margin: 0 auto;
 	text-align: center;
+	@include utility.tab {
+		max-width: 11.8rem;
+		padding: 1.05rem 0 1.5rem;
+	}
+	@include utility.sp {
+		max-width: 92.5%;
+		padding: 0.6rem 0 0;
+	}
 
 	&__title {
 		font-size: 25px;
 		font-weight: utility.$bold;
+		@include utility.tab {
+			font-size: 0.25rem;
+		}
+		@include utility.sp {
+			font-size: 0.25rem;
+		}
 	}
 	&__item {
 		display: flex;
+		align-items: center;
 		margin-top: 50px;
 		gap: 20px;
+		@include utility.tab {
+			margin-top: 0.5rem;
+		}
+		@include utility.sp {
+			margin-top: 0.305rem;
+			flex-direction: column;
+			gap: 0.1755rem;
+		}
 
 		&-list {
 			width: 380px;
 			height: 240px;
 			position: relative;
+			@include utility.tab {
+				width: 3.8rem;
+				height: 2.4rem;
+				border-radius: 10px;
+			}
+			@include utility.sp {
+				width: 3.7rem;
+				height: 2.34rem;
+				border-radius: 10px;
+			}
 
 			&::before {
 				content: '';
@@ -44,6 +77,12 @@
 					font-weight: utility.$bold;
 					color: utility.$white;
 					position: relative;
+					@include utility.tab {
+						font-size: 0.24rem;
+					}
+					@include utility.sp {
+						font-size: 0.21rem;
+					}
 				}
 
 				&-desc {
@@ -52,6 +91,15 @@
 					line-height: 23px;
 					color: utility.$white;
 					position: relative;
+					@include utility.tab {
+						margin-top: 0.44rem;
+						font-size: 0.16rem;
+						line-height: 0.23rem;
+					}
+					@include utility.sp {
+						margin-top: 0.53rem;
+						font-size: 0.14rem;
+					}
 				}
 			}
 		}
@@ -59,5 +107,13 @@
 	&__btn {
 		margin-top: 80px;
 		width: 420px;
+		@include utility.tab {
+			margin-top: 0.8rem;
+			width: 4.2rem;
+		}
+		@include utility.sp {
+			margin-top: 0.3486rem;
+			width: 100%;
+		}
 	}
 }

@@ -22,6 +22,14 @@
 	position: relative;
 	height: 60px;
 	width: 60px;
+	@include utility.tab {
+		height: 0.6rem;
+		width: 0.6rem;
+	}
+	@include utility.sp {
+		height: 0.42rem;
+		width: 0.42rem;
+	}
 
 	&::before {
 		content: '';
@@ -37,6 +45,16 @@
 		left: 0;
 		right: -7.5px;
 		margin: auto;
+		@include utility.tab {
+			width: 0.2rem;
+			height: 0.2rem;
+			right: -0.075rem;
+		}
+		@include utility.sp {
+			width: 0.1rem;
+			height: 0.1rem;
+			right: -0.035rem;
+		}
 	}
 }
 
@@ -50,6 +68,14 @@
 	position: relative;
 	height: 60px;
 	width: 60px;
+	@include utility.tab {
+		height: 0.6rem;
+		width: 0.6rem;
+	}
+	@include utility.sp {
+		height: 0.42rem;
+		width: 0.42rem;
+	}
 
 	&::before {
 		content: '';
@@ -65,5 +91,15 @@
 		left: -7.5px;
 		right: 0;
 		margin: auto;
+		@include utility.tab {
+			width: 0.2rem;
+			height: 0.2rem;
+			left: -0.075rem;
+		}
+		@include utility.sp {
+			height: 0.1rem;
+			width: 0.1rem;
+			left: -0.035rem;
+		}
 	}
 }

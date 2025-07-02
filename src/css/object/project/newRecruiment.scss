@@ -6,6 +6,13 @@
 	padding: 64px 0 67px;
 	background-color: utility.$bgLightBlue;
 
+	@include utility.tab {
+		padding: 0.64rem 0 0.67rem;
+	}
+	@include utility.sp {
+		padding: 0.3rem 0 0.6rem;
+	}
+
 	&__btn-parent {
 		position: relative;
 	}
@@ -14,37 +21,97 @@
 		position: absolute;
 		top: 70px;
 		left: 0px;
+
+		@include utility.tab {
+			top: 0.7rem;
+		}
+		@include utility.sp {
+			top: 1.57rem;
+		}
 	}
 	&__btn-child-right {
 		position: absolute;
 		top: 70px;
 		right: 0px;
+
+		@include utility.tab {
+			top: 0.7rem;
+		}
+		@include utility.sp {
+			top: 1.57rem;
+		}
 	}
 
 	&__contents {
 		max-width: 1180px;
 		margin: 0 auto;
+
+		@include utility.tab {
+			max-width: 11.8rem;
+		}
+		@include utility.sp {
+			max-width: 92.5%;
+		}
 	}
 
 	&__title {
 		font-size: 25px;
+		@include utility.tab {
+			font-size: 0.25rem;
+		}
+		@include utility.sp {
+			text-align: center;
+			font-weight: utility.$bold;
+		}
 	}
 	&__list {
 		display: flex;
 		gap: 20px;
 		margin-top: 25px;
 
+		@include utility.tab {
+			gap: 0.2rem;
+			margin-top: 0.25rem;
+		}
+		@include utility.sp {
+			justify-content: center;
+			margin-top: 0.35rem;
+		}
+
 		&--item {
 			max-width: 280px;
+			@include utility.tab {
+				max-width: 2.8rem;
+			}
+			@include utility.sp {
+				max-width: 3.7rem;
+			}
 
 			&-img {
 				border-radius: 10px;
+				@include utility.tab {
+					border-radius: 10rem;
+				}
+				@include utility.sp {
+					max-width: 3.7rem;
+					height: 2.08rem;
+				}
 			}
 
 			&-desc {
 				font-size: 16px;
 				line-height: 22px;
 				margin-top: 8.8px;
+				@include utility.tab {
+					font-size: 0.16rem;
+					line-height: 0.22rem;
+					margin-top: 0.088rem;
+				}
+				@include utility.sp {
+					font-weight: utility.$bold;
+					line-height: 0.22rem;
+					margin-top: 0.1rem;
+				}
 			}
 			&-detail {
 				font-size: 14px;
@@ -53,8 +120,24 @@
 				gap: 10px;
 				margin-top: 4px;
 
+				@include utility.tab {
+					font-size: 0.14rem;
+					gap: 0.1rem;
+					margin-top: 0.04rem;
+				}
+				@include utility.sp {
+					margin-top: 0.04rem;
+					gap: 0.21rem;
+				}
+
 				&-frame {
 					margin-top: 3px;
+					@include utility.tab {
+						margin-top: 0.03rem;
+					}
+					@include utility.sp {
+						margin-top: 0.12rem;
+					}
 				}
 
 				&-about {
@@ -63,6 +146,17 @@
 					line-height: 21px;
 					width: 60px;
 					height: 21px;
+
+					@include utility.tab {
+						line-height: 0.21rem;
+						width: 0.6rem;
+						height: 0.21rem;
+					}
+					@include utility.sp {
+						line-height: 0.21rem;
+						width: 0.6rem;
+						height: 0.21rem;
+					}
 				}
 			}
 		}
@@ -72,5 +166,14 @@
 		padding: 17px 72px;
 		display: block;
 		margin: 59px auto 0;
+		@include utility.tab {
+			padding: 0.17rem 0.72rem;
+			margin: 0.59rem auto 0;
+		}
+		@include utility.sp {
+			padding: 0.17rem 0;
+			margin: 0.44rem auto 0;
+			width: 100%;
+		}
 	}
 }
