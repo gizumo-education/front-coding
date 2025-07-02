@@ -89,6 +89,9 @@
 
 			&-img {
 				border-radius: 10px;
+				@include utility.tab {
+					border-radius: 10rem;
+				}
 				@include utility.sp {
 					max-width: 3.7rem;
 					height: 2.08rem;
@@ -145,6 +148,11 @@
 					height: 21px;
 
 					@include utility.tab {
+						line-height: 0.21rem;
+						width: 0.6rem;
+						height: 0.21rem;
+					}
+					@include utility.sp {
 						line-height: 0.21rem;
 						width: 0.6rem;
 						height: 0.21rem;

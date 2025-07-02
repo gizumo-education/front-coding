@@ -22,6 +22,9 @@
 		@include utility.tab {
 			font-size: 0.25rem;
 		}
+		@include utility.sp {
+			font-size: 0.2rem;
+		}
 	}
 
 	&__item {
@@ -151,22 +154,6 @@
 				@include utility.sp {
 					margin-top: 0.1rem;
 					padding: 0rem 0.2rem 0rem;
-				}
-			}
-
-			&-triangle::before {
-				content: '';
-				position: absolute;
-				top: 160px;
-				box-sizing: border-box;
-				border-top: 20px solid transparent;
-				border-bottom: 20px solid transparent;
-				border-left: 20px solid utility.$darkPink;
-				@include utility.tab {
-					top: 1.6rem;
-					border-top: 0.2rem solid transparent;
-					border-bottom: 0.2rem solid transparent;
-					border-left: 0.2rem solid utility.$darkPink;
 				}
 			}
 		}

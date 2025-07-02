@@ -22,6 +22,9 @@
 		@include utility.tab {
 			font-size: 0.25rem;
 		}
+		@include utility.sp {
+			font-size: 0.25rem;
+		}
 	}
 	&__item {
 		display: flex;
