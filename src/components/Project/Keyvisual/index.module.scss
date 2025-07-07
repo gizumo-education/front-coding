@@ -1,0 +1,67 @@
+@use '@/styles' as *;
+
+.keyvisual {
+  max-width: 1600px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: rgb(152 177 190);
+  background-image: url('/img/picture/main-keyvisual woman.jpg');
+  background-repeat: no-repeat;
+  background-position: 175px top;
+  background-size: 1262px 500px;
+}
+
+.keyvisual-inner {
+  position: relative;
+  z-index: 2;
+  align-items: center;
+  width: 1600px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.no1 {
+  position: absolute;
+  left: 830px;
+  width: 341.81px;
+  height: 168.51px;
+  margin-top: 56.49px;
+}
+
+.catch {
+  position: absolute;
+  top: 265px;
+  left: 607px;
+  z-index: 4;
+  width: 800px;
+  height: 65px;
+}
+
+.job-box {
+  position: absolute;
+  top: 384px;
+  left: 809.5px;
+  width: 391px;
+  height: 69px;
+
+  .job-count {
+    position: absolute;
+    top: 5px;
+    left: 41.5px;
+    width: 308px;
+    font-size: 1.25rem;
+    font-weight: 400px;
+    line-height: 1.45;
+    color: rgb(46 182 170);
+    text-align: center;
+
+    .highlight {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700px;
+      font-weight: bold;
+      color: rgb(46 182 170);
+    }
+  }
+}
