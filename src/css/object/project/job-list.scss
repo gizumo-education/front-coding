@@ -44,17 +44,14 @@
     margin-top: 25px;
     display: flex;
     justify-content: center;
-    gap: 20px;
 
     @include utility.tab {
       margin-top: .25rem;
-      gap: .2rem;
     }
     @include utility.sp {
       width: 100%;
       margin-top: .35rem;
       overflow-x: auto;
-      gap: 0;
     }
 
     &__container {
@@ -72,13 +69,6 @@
     @include utility.sp {
       width: 100%
     };
-
-    // TODO:カルーセル実装時にスタイル修正
-    &:not(:first-child) {
-      @include utility.sp {
-        display: none;
-      }
-    }
 
     &__image {
       width: 100%;
@@ -172,48 +162,45 @@
   }
 
   &__back-button {
-    &__pc {
-      width: 60px;
-      height: 60px;
-      background-color: utility.$bgTranparentWhite;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      z-index: 10;
+    width: 60px;
+    height: 60px;
+    background-color: utility.$bgTranparentWhite;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 10;
+
+    @include utility.tab {
+      width: 0.6rem;
+      height: 0.6rem;
+      top: 0.7rem;
+    }
+    @include utility.sp {
+      width: 0.42rem;
+      height: 0.42rem;
+      top: 1.57rem;
+    }
+
+    &__icon {
+      width: 15px;
+      height: 30px;
 
       @include utility.tab {
-        width: 0.6rem;
-        height: 0.6rem;
-        top: 0.7rem;
+        width: 0.15rem;
+        height: 0.3rem;
       }
       @include utility.sp {
-        width: 0.42rem;
-        height: 0.42rem;
-        top: 1.57rem;
-      }
-
-      &__icon {
-        width: 15px;
-        height: 30px;
-
-        @include utility.tab {
-          width: 0.15rem;
-          height: 0.3rem;
-        }
-        @include utility.sp {
-          width: 0.07rem;
-          height: 0.14rem;
-        }
+        width: 0.07rem;
+        height: 0.14rem;
       }
     }
   }
 
   &__forward-button {
-    &__pc {
       width: 60px;
       height: 60px;
       background-color: utility.$bgTranparentWhite;
@@ -224,6 +211,7 @@
       position: absolute;
       top: 70px;
       right: 0;
+      z-index: 10;
 
       @include utility.tab {
         width: 0.6rem;
@@ -249,7 +237,6 @@
           height: 0.14rem;
         }
       }
-    }
   }
 
   &-sp {
