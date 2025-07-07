@@ -1,0 +1,41 @@
+.group1-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100rem;
+  height: 18.75rem;
+  background-image: url('/img/picture/main-group1.jpg');
+  background-position: center;
+  background-size: cover;
+  opacity: 1.5;
+}
+
+.group1-overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.group1-inner {
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.group1-main-text {
+  margin-bottom: 1.3125rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.5625rem;
+  font-style: bold;
+  font-weight: 700;
+}
+
+.group1-sub-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.5625rem;
+  font-style: bold;
+  font-weight: 700;
+}
