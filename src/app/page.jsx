@@ -2,7 +2,8 @@ import { Header } from '@/components/layout'
 import { Keyvisual } from '@/components/Project/Keyvisual'
 import { Form } from '@/components/Project/Form'
 import { News } from '@/components/Project/news'
-import { Group1 } from '@/components/Project/Group1'
+import { MainVisial } from '@/components/Project/MainVisial'
+import { Features } from '@/components/Project/features'
 
 const Top = () => {
   return (
@@ -12,7 +13,8 @@ const Top = () => {
         <Keyvisual />
         <Form />
         <News />
-        <Group1 />
+        <MainVisial />
+        <Features />
       </main>
       <footer></footer>
     </>
