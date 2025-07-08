@@ -1,4 +1,4 @@
-.group1-section {
+.mainvisial-section {
   position: relative;
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@
   opacity: 1.5;
 }
 
-.group1-overlay {
+.mainvisial-overlay {
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -19,13 +19,13 @@
   background-color: rgb(0 0 0 / 50%);
 }
 
-.group1-inner {
+.mainvisial-inner {
   z-index: 2;
   color: white;
   text-align: center;
 }
 
-.group1-main-text {
+.mainvisial-main-text {
   margin-bottom: 1.3125rem;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 1.5625rem;
@@ -33,7 +33,7 @@
   font-weight: 700;
 }
 
-.group1-sub-text {
+.mainvisial-sub-text {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 1.5625rem;
   font-style: bold;
