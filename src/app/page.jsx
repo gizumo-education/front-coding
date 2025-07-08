@@ -4,8 +4,6 @@ const Top = () => {
   return (
     <>
       <Header />
-      <main></main>
-      <footer></footer>
     </>
   )
 }
