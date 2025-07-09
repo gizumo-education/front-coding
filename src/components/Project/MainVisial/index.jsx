@@ -5,7 +5,7 @@ export const MainVisial = () => {
     <div className={styles['mainvisial-section']}>
       <div className={styles['mainvisial-overlay']}></div>
       <div className={styles['mainvisial-inner']}>
-        <p className={styles['mainvisialgroup1-main-text']}>
+        <p className={styles['mainvisial-main-text']}>
           ギズジョブなら理想の職場がきっと見つかる
         </p>
         <p className={styles['mainvisial-sub-text']}>
