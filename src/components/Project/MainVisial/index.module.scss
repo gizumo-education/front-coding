@@ -1,3 +1,6 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
 .mainvisial-section {
   position: relative;
   display: flex;
@@ -21,21 +24,21 @@
 
 .mainvisial-inner {
   z-index: 2;
-  color: white;
+  color: #{$color-white};
   text-align: center;
 }
 
 .mainvisial-main-text {
   margin-bottom: 1.31rem;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 1.56rem;
+  font-size: clamp(rem(11), pc-vw(25), rem(25));
   font-style: bold;
   font-weight: 700;
 }
 
 .mainvisial-sub-text {
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 1.56rem;
+  font-size: clamp(rem(11), pc-vw(25), rem(25));
   font-style: bold;
   font-weight: 700;
 }
