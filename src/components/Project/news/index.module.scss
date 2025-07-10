@@ -9,17 +9,15 @@
 .news-inner {
   position: relative;
   box-sizing: border-box;
+  width: 73.75rem;
   height: 39.75rem;
-  padding: 0 2.5rem;
   margin: 0 auto;
 }
 
 .text-title {
   width: 6.25rem;
   height: 1.88rem;
-  margin: 0 auto;
   margin-bottom: 1.56rem;
-  margin-left: 10.63rem;
   font-family: Inter, sans-serif;
   font-size: clamp(rem(11), pc-vw(25), rem(25));
   font-weight: 400;
@@ -102,11 +100,13 @@
   }
 
   &.left {
-    left: 10.94rem;
+    left: 1.88rem;
+    transform: translate(-50%, -50%);
   }
 
   &.right {
-    right: 10.94rem;
+    right: 1.88rem;
+    transform: translate(50%, -50%);
   }
 }
 
