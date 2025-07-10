@@ -1,4 +1,5 @@
 @use '@/styles' as *;
+@use '@/styles/functions' as *;
 
 .keyvisual {
   max-width: 100%;
@@ -14,7 +15,6 @@
 
 .keyvisual-inner {
   position: relative;
-  z-index: 2;
   align-items: center;
   width: 100%;
   max-width: 100rem;
@@ -35,7 +35,6 @@
   position: absolute;
   top: 16.56rem;
   left: 37.94rem;
-  z-index: 4;
   width: 50rem;
   height: 4.063rem;
 }
@@ -52,7 +51,7 @@
     top: 0.313rem;
     left: 2.59rem;
     width: 19.25rem;
-    font-size: 1.25rem;
+    font-size: clamp(rem(11), pc-vw(20), rem(20));
     font-weight: 400;
     line-height: 1.45;
     color: rgb(46 182 170);
@@ -60,7 +59,7 @@
 
     .highlight {
       font-family: 'Noto Sans JP', sans-serif;
-      font-size: 2.5rem;
+      font-size: clamp(rem(11), pc-vw(40), rem(40));
       font-weight: 700;
       font-weight: bold;
       color: rgb(46 182 170);
