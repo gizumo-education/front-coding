@@ -53,11 +53,11 @@
   .form-select {
     width: 12.5rem;
     height: 3.75rem;
-    padding: 1.3rem 0.94rem;
+    padding: 0 0.93rem 0.94rem;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: clamp(rem(11), pc-vw(18), rem(18));
     font-weight: 400;
-
+    line-height: 3.4;
     background-color: #{$color-white};
     border: 1px solid rgb(222 30 121);
     border-radius: 0.63rem;
