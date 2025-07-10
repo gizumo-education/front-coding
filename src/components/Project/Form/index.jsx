@@ -15,12 +15,13 @@ export const Form = () => {
                 <option value='' hidden>
                   医療事務
                 </option>
-                <option value='1'>調剤事務</option>
-                <option value='2'>診療情報管理士</option>
-                <option value='3'>歯科助手</option>
-                <option value='4'>歯科事務</option>
-                <option value='5'>看護補助・看護助手</option>
-                <option value='6'>病院内SE</option>
+                <option value='1'>医療事務</option>
+                <option value='2'>調剤事務</option>
+                <option value='3'>診療情報管理士</option>
+                <option value='4'>歯科助手</option>
+                <option value='5'>歯科事務</option>
+                <option value='6'>看護補助・看護助手</option>
+                <option value='7'>病院内SE</option>
               </select>
               <div className={styles['triangle']}></div>
             </div>
@@ -34,14 +35,15 @@ export const Form = () => {
                 <option value='3'>群馬県</option>
                 <option value='4'>埼玉県</option>
                 <option value='5'>千葉県</option>
-                <option value='6'>栃木県</option>
+                <option value='6'>東京都</option>
+                <option value='7'>栃木県</option>
               </select>
               <div className={styles['triangle']}></div>
             </div>
             <div className={styles['select-wrapper']}>
               <select className={styles['form-select']} required>
                 <option value='' hidden>
-                  月給17万〜
+                  月給20万〜
                 </option>
                 <option value='1'>月給17万〜</option>
                 <option value='2'>月給18万〜</option>
@@ -49,6 +51,7 @@ export const Form = () => {
                 <option value='4'>月給20万〜</option>
                 <option value='5'>月給21万〜</option>
                 <option value='6'>月給22万〜</option>
+                <option value='7'>月給23万〜</option>
               </select>
               <div className={styles['triangle']}></div>
             </div>
