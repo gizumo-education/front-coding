@@ -41,14 +41,14 @@ export const Form = () => {
             <div className={styles['select-wrapper']}>
               <select className={styles['form-select']} required>
                 <option value='' hidden>
-                  月給20万〜
+                  月給17万〜
                 </option>
                 <option value='1'>月給17万〜</option>
                 <option value='2'>月給18万〜</option>
                 <option value='3'>月給19万〜</option>
-                <option value='4'>月給21万〜</option>
-                <option value='5'>月給22万〜</option>
-                <option value='6'>月給23万〜</option>
+                <option value='4'>月給20万〜</option>
+                <option value='5'>月給21万〜</option>
+                <option value='6'>月給22万〜</option>
               </select>
               <div className={styles['triangle']}></div>
             </div>

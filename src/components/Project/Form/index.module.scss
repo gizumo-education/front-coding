@@ -1,7 +1,8 @@
 @use '@/styles' as *;
+@use '@/styles/functions' as *;
 
 .form {
-  background-color: $color-white;
+  background-color: #{$color-white};
 }
 
 .form-inner {
@@ -22,7 +23,7 @@
   justify-content: center;
   padding-top: 2.5rem;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 1.56rem;
+  font-size: clamp(rem(11), pc-vw(25), rem(25));
   font-style: bold;
   font-weight: 700;
 }
@@ -32,7 +33,7 @@
   justify-content: center;
   padding-top: 1.25rem;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 1.26rem;
+  font-size: clamp(rem(11), pc-vw(20), rem(20));
   font-weight: 400;
 }
 
@@ -54,10 +55,10 @@
     height: 3.75rem;
     padding: 1.063rem;
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.13rem;
+    font-size: clamp(rem(11), pc-vw(18), rem(18));
     font-weight: 400;
     appearance: none;
-    background-color: rgb(255 255 255);
+    background-color: #{$color-white};
     border: 1px solid rgb(222 30 121);
     border-radius: 0.63rem;
   }
@@ -80,10 +81,10 @@
   height: 3.75rem;
   padding: 0 0.75rem;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 1.13rem;
+  font-size: clamp(rem(11), pc-vw(18), rem(18));
   font-weight: 400;
   color: rgb(164 164 164);
-  background-color: rgb(255 255 255);
+  background-color: #{$color-white};
   border: 1px solid rgb(222 30 121);
   border-radius: 0.63rem;
 }
@@ -96,9 +97,9 @@
   width: 8.75rem;
   height: 3.75rem;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 1.125rem;
+  font-size: clamp(rem(11), pc-vw(18), rem(18));
   font-weight: 700;
-  color: $color-white;
+  color: #{$color-white};
   background-color: rgb(222 85 121);
   border: none;
   border-radius: 1.88rem;
