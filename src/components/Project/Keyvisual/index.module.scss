@@ -1,0 +1,68 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.keyvisual {
+  max-width: 100%;
+  height: pc-vw(500);
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: rgb(152 177 190);
+  background-image: url('/img/picture/main-keyvisual woman.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: pc-vw(1262) pc-vw(500);
+}
+
+.keyvisual-inner {
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: pc-vw(1600);
+  height: pc-vw(500);
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.no1 {
+  position: absolute;
+  left: pc-vw(830);
+  width: pc-vw(341.81);
+  height: pc-vw(168.51);
+  margin-top: pc-vw(56.48);
+}
+
+.catch {
+  position: absolute;
+  top: pc-vw(265);
+  left: pc-vw(607);
+  width: pc-vw(800);
+  height: pc-vw(65);
+}
+
+.job-box {
+  position: absolute;
+  top: pc-vw(384);
+  left: pc-vw(809.5);
+  width: pc-vw(391);
+  height: pc-vw(69);
+
+  .job-count {
+    position: absolute;
+    top: pc-vw(5);
+    left: pc-vw(41);
+    width: pc-vw(308);
+    font-size: clamp(rem(11), pc-vw(20), rem(20));
+    font-weight: 400;
+    line-height: 1.45;
+    color: rgb(46 182 170);
+    text-align: center;
+
+    .highlight {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: clamp(rem(11), pc-vw(40), rem(40));
+      font-weight: 700;
+      font-weight: bold;
+      color: rgb(46 182 170);
+    }
+  }
+}
