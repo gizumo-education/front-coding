@@ -80,22 +80,24 @@
 
   &::after {
     position: absolute;
-    top: 50%;
-    left: 50%;
     width: pc-vw(20);
     height: pc-vw(20);
     content: '';
     border-width: pc-vw(11.36);
     border-top: pc-vw(2) solid #{$color-black};
     border-right: pc-vw(2) solid #{$color-black};
-    opacity: 1;
+    transform: translate(-50%, -50%) rotate(45deg);
   }
 
   &.left::after {
+    top: 50%;
+    left: 55%;
     transform: translate(-50%, -50%) rotate(-135deg);
   }
 
   &.right::after {
+    top: 50%;
+    right: 25%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
 
