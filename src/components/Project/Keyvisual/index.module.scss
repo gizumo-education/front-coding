@@ -3,54 +3,54 @@
 
 .keyvisual {
   max-width: 100%;
-  height: 31.25rem;
+  height: pc-vw(500);
   margin: 0 auto;
   overflow: hidden;
   background-color: rgb(152 177 190);
   background-image: url('/img/picture/main-keyvisual woman.jpg');
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 78.87rem 31.25rem;
+  background-size: pc-vw(1262) pc-vw(500);
 }
 
 .keyvisual-inner {
   position: relative;
   align-items: center;
   width: 100%;
-  max-width: 100rem;
-  height: 31.25rem;
+  max-width: pc-vw(1600);
+  height: pc-vw(500);
   margin: 0 auto;
   overflow-x: hidden;
 }
 
 .no1 {
   position: absolute;
-  left: 52.88rem;
-  width: 21.36rem;
-  height: 10.53rem;
-  margin-top: 3.53rem;
+  left: pc-vw(830);
+  width: pc-vw(341.81);
+  height: pc-vw(168.51);
+  margin-top: pc-vw(56.48);
 }
 
 .catch {
   position: absolute;
-  top: 16.56rem;
-  left: 37.94rem;
-  width: 50rem;
-  height: 4.063rem;
+  top: pc-vw(265);
+  left: pc-vw(607);
+  width: pc-vw(800);
+  height: pc-vw(65);
 }
 
 .job-box {
   position: absolute;
-  top: 24rem;
-  left: 50.59rem;
-  width: 24.44rem;
-  height: 4.31rem;
+  top: pc-vw(384);
+  left: pc-vw(809.5);
+  width: pc-vw(391);
+  height: pc-vw(69);
 
   .job-count {
     position: absolute;
-    top: 0.313rem;
-    left: 2.59rem;
-    width: 19.25rem;
+    top: pc-vw(5);
+    left: pc-vw(41);
+    width: pc-vw(308);
     font-size: clamp(rem(11), pc-vw(20), rem(20));
     font-weight: 400;
     line-height: 1.45;
