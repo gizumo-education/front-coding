@@ -1,0 +1,119 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.helpful-inner {
+  width: pc-vw(1180);
+  height: pc-vw(475);
+  margin: 0 auto;
+  margin-top: pc-vw(105);
+}
+
+.helpful-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: pc-vw(50);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(rem(11), pc-vw(25), rem(25));
+  font-style: bold;
+  font-weight: 700;
+  line-height: pc-vw(25);
+}
+
+.card-list {
+  display: flex;
+  gap: pc-vw(20);
+  justify-content: center;
+  width: pc-vw(1180);
+  height: pc-vw(240);
+}
+
+.card-title {
+  margin-top: pc-vw(71.04);
+  margin-bottom: pc-vw(44);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(rem(11), pc-vw(24), rem(24));
+  font-style: bold;
+  font-weight: 700;
+  color: #{$color-white};
+}
+
+.card-text {
+  padding: 0 pc-vw(60) 0 pc-vw(64);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(rem(11), pc-vw(16), rem(16));
+  font-style: regular;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #{$color-white};
+}
+
+.card {
+  position: relative;
+  align-items: flex-end;
+  width: pc-vw(380);
+  height: pc-vw(240);
+  overflow: hidden;
+  background-color: rgb(0 0 0 / 50%);
+  background-position: center;
+  background-size: cover;
+  border-radius: pc-vw(12);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgb(0 0 0 / 50%);
+  }
+
+  .card-content {
+    position: absolute;
+    z-index: 2;
+    justify-content: center;
+    width: pc-vw(380);
+    height: pc-vw(240);
+    text-align: center;
+  }
+
+  &--manual {
+    background-image: url('/img/picture/main-HelpfulContents-contents1.jpg');
+  }
+
+  &--industry {
+    background-image: url('/img/picture/main-HelpfulContents-contents2.jpg');
+
+    .card-text {
+      padding: 0 pc-vw(42.2) 0 pc-vw(49.8);
+      line-height: 1.5;
+    }
+  }
+
+  &--manual-2 {
+    background-image: url('/img/picture/main-HelpfulContents-contents1.jpg');
+  }
+}
+
+.more-button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: pc-vw(61);
+  margin-top: pc-vw(40);
+  text-align: center;
+}
+
+.more-button {
+  width: pc-vw(420);
+  height: pc-vw(60);
+  padding: pc-vw(16) pc-vw(40);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: pc-vw(18);
+  font-size: clamp(rem(11), pc-vw(18), rem(18));
+  font-weight: 700;
+  color: #{$color-white};
+  background-color: rgb(223 85 121);
+  border: none;
+  border-radius: pc-vw(30);
+}
