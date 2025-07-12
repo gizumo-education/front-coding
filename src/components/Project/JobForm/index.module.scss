@@ -1,0 +1,112 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.job-form {
+  background-color: #{$color-white};
+}
+
+.jobform-inner {
+  height: pc-vw(300);
+  margin-top: pc-vw(150);
+}
+
+.jobform-text {
+  width: pc-vw(1180);
+  height: pc-vw(240);
+  margin: 0 auto;
+  background-color: rgb(222 238 249);
+  border-radius: pc-vw(10);
+}
+
+.jobform-title {
+  display: flex;
+  justify-content: center;
+  padding-top: pc-vw(40);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(rem(11), pc-vw(25), rem(25));
+  font-style: bold;
+  font-weight: 700;
+}
+
+.jobform-description {
+  display: flex;
+  justify-content: center;
+  padding-top: pc-vw(20);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(rem(11), pc-vw(20), rem(20));
+  font-weight: 400;
+}
+
+.select-box {
+  display: flex;
+  gap: pc-vw(16);
+  align-items: center;
+  justify-content: center;
+  width: pc-vw(1100);
+  padding-top: pc-vw(26);
+  margin: 0 auto;
+}
+
+.select-wrapper {
+  position: relative;
+
+  .jobform-select {
+    width: pc-vw(200);
+    height: pc-vw(60);
+    padding: 0 pc-vw(15) pc-vw(15);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(rem(11), pc-vw(18), rem(18));
+    font-weight: 400;
+    line-height: 3.4;
+    background-color: #{$color-white};
+    border: 1px solid rgb(222 30 121);
+    border-radius: pc-vw(10);
+  }
+
+  .triangle {
+    position: absolute;
+    top: 50%;
+    right: pc-vw(12);
+    border-style: solid;
+    border-top: pc-vw(10) solid rgb(222 30 121);
+    border-right: pc-vw(10) solid transparent;
+    border-bottom: 0;
+    border-left: pc-vw(10) solid transparent;
+    transform: translateY(-50%);
+  }
+}
+
+.keyword-input {
+  width: pc-vw(300);
+  min-width: pc-vw(240);
+  height: pc-vw(60);
+  padding: 0 pc-vw(12);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(rem(11), pc-vw(18), rem(18));
+  font-weight: 400;
+  color: rgb(164 164 164);
+  background-color: #{$color-white};
+  border: 1px solid rgb(222 30 121);
+  border-radius: pc-vw(10);
+}
+
+.search-button {
+  display: flex;
+  gap: pc-vw(6.08);
+  align-items: center;
+  justify-content: center;
+  width: pc-vw(140);
+  height: pc-vw(60);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(rem(11), pc-vw(18), rem(18));
+  font-weight: 700;
+  color: #{$color-white};
+  background-color: rgb(222 85 121);
+  border: none;
+  border-radius: pc-vw(30);
+
+  .search-icon {
+    width: pc-vw(20);
+    height: pc-vw(20);
+  }
+}
