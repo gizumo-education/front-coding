@@ -7,7 +7,10 @@ export const FlowSteps = () => {
         <h2 className={styles['flow-title']}>転職までの流れ</h2>
         <div className={styles['step-container']}>
           <div className={styles['step-card']}>
-            <span className={styles['step-badge']}>STEP 1</span>
+            <span className={styles['step-badge']}>
+              STEP
+              <br />1
+            </span>
             <img
               src='./img/icon/FlowStep-entry-icon.png'
               alt='エントリーアイコン'
@@ -22,7 +25,10 @@ export const FlowSteps = () => {
           </div>
           <div className={styles.triangle}></div>
           <div className={styles['step-card']}>
-            <span className={styles['step-badge']}>STEP 2</span>
+            <span className={styles['step-badge']}>
+              STEP
+              <br />2
+            </span>
             <img
               src='./img/icon/FlowStep-path-icon.png'
               alt='検索アイコン'
@@ -41,7 +47,10 @@ export const FlowSteps = () => {
           </div>
           <div className={styles.triangle}></div>
           <div className={styles['step-card']}>
-            <span className={styles['step-badge']}>STEP 3</span>
+            <span className={styles['step-badge']}>
+              STEP
+              <br />3
+            </span>
             <img
               src='./img/icon/FlowStep-mail-icon.png'
               alt='メールアイコン'
@@ -58,7 +67,10 @@ export const FlowSteps = () => {
           </div>
           <div className={styles.triangle}></div>
           <div className={styles['step-card']}>
-            <span className={styles['step-badge']}>STEP 4</span>
+            <span className={styles['step-badge']}>
+              STEP
+              <br />4
+            </span>
             <img
               src='./img/icon/FlowStep-star-icon.png'
               alt='転職アイコン'
