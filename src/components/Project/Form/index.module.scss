@@ -84,10 +84,14 @@
   font-family: 'Noto Sans JP', sans-serif;
   font-size: clamp(rem(11), pc-vw(18), rem(18));
   font-weight: 400;
-  color: rgb(164 164 164);
+  color: $color-black;
   background-color: #{$color-white};
   border: 1px solid rgb(222 30 121);
   border-radius: pc-vw(10);
+}
+
+.keyword-input::placeholder {
+  color: rgb(164 164 164);
 }
 
 .search-button {
