@@ -38,9 +38,7 @@
   width: 0;
   height: 0;
   margin: 0 auto;
-  border-style: solid;
   border-top: pc-vw(20) solid transparent;
-  border-right: 0;
   border-bottom: pc-vw(20) solid transparent;
   border-left: pc-vw(20) solid rgb(229 92 135);
 }
@@ -69,7 +67,6 @@
   justify-content: center;
   width: pc-vw(102.29);
   height: pc-vw(100);
-  margin: 0 auto;
   margin: pc-vw(60) pc-vw(80) pc-vw(20) pc-vw(97.71);
 }
 
@@ -78,7 +75,6 @@
   justify-content: center;
   width: pc-vw(79.95);
   height: pc-vw(79.95);
-  margin: 0 auto;
   margin: pc-vw(70.02) pc-vw(105.03) pc-vw(30.03) pc-vw(95.02);
 }
 
@@ -87,7 +83,6 @@
   justify-content: center;
   width: pc-vw(106.76);
   height: pc-vw(100);
-  margin: 0 auto;
   margin: pc-vw(60) pc-vw(83.38) pc-vw(33) pc-vw(89.86);
 }
 
@@ -96,7 +91,6 @@
   justify-content: center;
   width: pc-vw(107.97);
   height: pc-vw(113.13);
-  margin: 0 auto;
   margin: pc-vw(54.87) pc-vw(92.46) pc-vw(28) pc-vw(79.75);
 }
 
@@ -108,7 +102,6 @@
   font-size: clamp(rem(11), pc-vw(24), rem(24));
   font-style: bold;
   font-weight: 700;
-  line-height: pc-vw(30);
   text-align: center;
   overflow-wrap: break-word;
 
