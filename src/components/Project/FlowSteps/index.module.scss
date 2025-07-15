@@ -49,16 +49,17 @@
   position: absolute;
   top: pc-vw(10);
   left: pc-vw(10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: pc-vw(60);
   height: pc-vw(60);
-  padding-top: pc-vw(11);
   font-family: Inter, sans-serif;
-  font-size: clamp(rem(11), pc-vw(16), rem(16));
+  font-size: clamp(rem(8), pc-vw(16), rem(16));
   font-style: bold;
   font-weight: 700;
   line-height: 1.2;
   color: #{$color-white};
-  text-align: center;
   background-color: rgb(229 92 135);
   border-radius: 50%;
 }
