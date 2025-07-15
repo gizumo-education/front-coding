@@ -1,0 +1,131 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.flow-inner {
+  width: pc-vw(1180);
+  height: pc-vw(537);
+  padding-top: pc-vw(105);
+  margin: 0 auto;
+  text-align: center;
+  background-color: #{$color-white};
+}
+
+.flow-title {
+  margin-bottom: pc-vw(48);
+  font-size: clamp(rem(11), pc-vw(24), rem(24));
+  font-weight: bold;
+  color: #{$color-black};
+}
+
+.step-container {
+  display: flex;
+  justify-content: center;
+}
+
+.step-card {
+  position: relative;
+  box-sizing: border-box;
+  width: pc-vw(280);
+  height: pc-vw(360);
+  text-align: center;
+  background-color: #{$color-white};
+  border: pc-vw(2) solid rgb(229 92 135);
+  border-radius: pc-vw(12);
+}
+
+.triangle {
+  align-self: center;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-top: pc-vw(20) solid transparent;
+  border-bottom: pc-vw(20) solid transparent;
+  border-left: pc-vw(20) solid rgb(229 92 135);
+}
+
+.step-badge {
+  position: absolute;
+  top: pc-vw(10);
+  left: pc-vw(10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: pc-vw(60);
+  height: pc-vw(60);
+  font-family: Inter, sans-serif;
+  font-size: clamp(rem(8), pc-vw(16), rem(16));
+  font-style: bold;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #{$color-white};
+  background-color: rgb(229 92 135);
+  border-radius: 50%;
+}
+
+.entry-icon {
+  align-items: center;
+  justify-content: center;
+  width: pc-vw(102.29);
+  height: pc-vw(100);
+  margin: pc-vw(60) pc-vw(80) pc-vw(20) pc-vw(97.71);
+}
+
+.path-icon {
+  align-items: center;
+  justify-content: center;
+  width: pc-vw(79.95);
+  height: pc-vw(79.95);
+  margin: pc-vw(70.02) pc-vw(105.03) pc-vw(30.03) pc-vw(95.02);
+}
+
+.mail-icon {
+  align-items: center;
+  justify-content: center;
+  width: pc-vw(106.76);
+  height: pc-vw(100);
+  margin: pc-vw(60) pc-vw(83.38) pc-vw(33) pc-vw(89.86);
+}
+
+.star-icon {
+  align-items: center;
+  justify-content: center;
+  width: pc-vw(107.97);
+  height: pc-vw(113.13);
+  margin: pc-vw(54.87) pc-vw(92.46) pc-vw(28) pc-vw(79.75);
+}
+
+.step-title {
+  padding: 0 pc-vw(30);
+  margin-top: pc-vw(10);
+  margin-bottom: pc-vw(12);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(rem(11), pc-vw(24), rem(24));
+  font-style: bold;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  overflow-wrap: break-word;
+
+  &--pickup {
+    padding: 0 pc-vw(49);
+  }
+}
+
+.step-desc {
+  padding: 0 pc-vw(20);
+  margin-top: pc-vw(10);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(rem(6), pc-vw(14), rem(14));
+  font-style: regular;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+
+  &--text {
+    padding-top: 15px;
+  }
+
+  &--text2 {
+    padding-top: 15px;
+  }
+}

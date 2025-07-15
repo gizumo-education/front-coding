@@ -1,16 +1,16 @@
 @use '@/styles' as *;
 @use '@/styles/functions' as *;
 
-.form {
+.job-form {
   background-color: #{$color-white};
 }
 
-.form-inner {
+.jobform-inner {
   height: pc-vw(300);
-  margin-top: pc-vw(60);
+  margin-top: pc-vw(150);
 }
 
-.form-text {
+.jobform-text {
   width: pc-vw(1180);
   height: pc-vw(240);
   margin: 0 auto;
@@ -18,7 +18,7 @@
   border-radius: pc-vw(10);
 }
 
-.form-title {
+.jobform-title {
   display: flex;
   justify-content: center;
   padding-top: pc-vw(40);
@@ -28,7 +28,7 @@
   font-weight: 700;
 }
 
-.form-description {
+.jobform-description {
   display: flex;
   justify-content: center;
   padding-top: pc-vw(20);
@@ -50,7 +50,7 @@
 .select-wrapper {
   position: relative;
 
-  .form-select {
+  .jobform-select {
     width: pc-vw(200);
     height: pc-vw(60);
     padding: 0 pc-vw(15) pc-vw(15);
