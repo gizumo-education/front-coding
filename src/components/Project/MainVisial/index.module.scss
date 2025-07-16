@@ -42,3 +42,18 @@
   font-style: bold;
   font-weight: 700;
 }
+
+@media (width <= 768px) {
+  .mainvisial-main-text {
+    gap: sp-vw(2.36);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(rem(11), sp-vw(14), rem(14));
+    font-weight: 400;
+  }
+
+  .mainvisial-sub-text {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(rem(11), sp-vw(14), rem(14));
+    font-weight: 400;
+  }
+}
