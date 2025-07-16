@@ -51,15 +51,17 @@
   position: relative;
 
   .jobform-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: pc-vw(200);
     height: pc-vw(60);
-    padding: 0 pc-vw(15) pc-vw(15);
     font-family: 'Noto Sans JP', sans-serif;
     font-size: clamp(rem(11), pc-vw(18), rem(18));
     font-weight: 400;
     line-height: 3.4;
     background-color: #{$color-white};
-    border: 1px solid rgb(222 30 121);
+    border: 1px solid $color-pink;
     border-radius: pc-vw(10);
   }
 
@@ -68,7 +70,7 @@
     top: 50%;
     right: pc-vw(12);
     border-style: solid;
-    border-top: pc-vw(10) solid rgb(222 30 121);
+    border-top: pc-vw(10) solid $color-pink;
     border-right: pc-vw(10) solid transparent;
     border-bottom: 0;
     border-left: pc-vw(10) solid transparent;
@@ -86,7 +88,7 @@
   font-weight: 400;
   color: $color-black;
   background-color: #{$color-white};
-  border: 1px solid rgb(222 30 121);
+  border: 1px solid $color-pink;
   border-radius: pc-vw(10);
 }
 
@@ -105,12 +107,118 @@
   font-size: clamp(rem(11), pc-vw(18), rem(18));
   font-weight: 700;
   color: #{$color-white};
-  background-color: rgb(222 85 121);
+  background-color: $color-pink-light;
   border: none;
   border-radius: pc-vw(30);
 
   .search-icon {
     width: pc-vw(20);
     height: pc-vw(20);
+  }
+}
+
+@media (width <= 768px) {
+  .jobform-inner {
+    height: sp-vw(240);
+    margin-bottom: sp-vw(100);
+  }
+
+  .jobform-text {
+    width: sp-vw(370);
+    height: sp-vw(240);
+    margin-top: sp-vw(25);
+    margin-bottom: sp-vw(25);
+    border-radius: sp-vw(10);
+  }
+
+  .jobform-title {
+    display: flex;
+    justify-content: center;
+    padding-top: sp-vw(15);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(rem(11), sp-vw(22), rem(22));
+    font-style: bold;
+    font-weight: 700;
+  }
+
+  .jobform-description {
+    display: flex;
+    justify-content: center;
+    padding-top: sp-vw(16);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(rem(11), sp-vw(14), rem(14));
+    font-weight: 400;
+  }
+
+  .select-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: sp-vw(10);
+    align-items: center;
+    justify-content: center;
+    width: sp-vw(320);
+    padding-top: sp-vw(13);
+    margin: 0 auto;
+  }
+
+  .select-wrapper {
+    position: relative;
+
+    .jobform-select {
+      width: sp-vw(100);
+      height: sp-vw(30);
+      padding: 0 sp-vw(8);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: clamp(rem(11), sp-vw(12), rem(12));
+      font-weight: 400;
+      line-height: 2.3;
+      background-color: #{$color-white};
+      border: 1px solid $color-pink;
+      border-radius: sp-vw(5);
+    }
+
+    .triangle {
+      position: absolute;
+      top: 50%;
+      right: sp-vw(5);
+      border-style: solid;
+      border-top: sp-vw(7) solid $color-pink;
+      border-right: sp-vw(7) solid transparent;
+      border-left: sp-vw(7) solid transparent;
+    }
+  }
+
+  .keyword-input {
+    width: sp-vw(320);
+    height: sp-vw(30);
+    padding: 0 pc-vw(12);
+    margin-top: sp-vw(10);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(rem(11), sp-vw(14), rem(14));
+    font-weight: 400;
+    color: rgb(164 164 164);
+    background-color: #{$color-white};
+    border: 1px solid $color-pink;
+    border-radius: sp-vw(5);
+  }
+
+  .search-button {
+    gap: sp-vw(15);
+    justify-content: flex-start;
+    width: sp-vw(164);
+    height: sp-vw(40);
+    padding-left: sp-vw(13.01);
+    margin-top: sp-vw(10);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(rem(11), sp-vw(18), rem(18));
+    font-weight: 700;
+    color: #{$color-white};
+    background-color: $color-pink-light;
+    border-radius: sp-vw(30);
+
+    .search-icon {
+      width: sp-vw(17.98);
+      height: sp-vw(17.97);
+    }
   }
 }
