@@ -54,7 +54,7 @@
     font-size: clamp(rem(11), pc-vw(20), rem(20));
     font-weight: 400;
     line-height: 1.45;
-    color: rgb(46 182 170);
+    color: $color-accent;
     text-align: center;
 
     .highlight {
@@ -62,7 +62,60 @@
       font-size: clamp(rem(11), pc-vw(40), rem(40));
       font-weight: 700;
       font-weight: bold;
-      color: rgb(46 182 170);
+      color: $color-accent;
+    }
+  }
+}
+
+@media (width <= 768px) {
+  .keyvisual {
+    max-width: 100%;
+    height: sp-vw(270);
+    background-image: url('/img/picture/main-keyvisual-woman-sp.jpg');
+    background-size: sp-vw(400) sp-vw(270);
+  }
+
+  .keyvisual-inner {
+    width: sp-vw(400);
+    height: sp-vw(270);
+  }
+
+  .no1 {
+    left: sp-vw(200);
+    width: sp-vw(149.54);
+    height: sp-vw(79.36);
+    margin-top: sp-vw(61.64);
+  }
+
+  .catch {
+    top: sp-vw(147.65);
+    left: sp-vw(125);
+    width: sp-vw(272);
+    height: sp-vw(22);
+  }
+
+  .job-box {
+    top: sp-vw(188);
+    left: sp-vw(190);
+    width: sp-vw(170);
+    height: sp-vw(30);
+
+    .job-count {
+      left: sp-vw(23.23);
+      width: sp-vw(123);
+      margin-top: sp-vw(3);
+      font-size: clamp(rem(8), sp-vw(8), rem(12));
+      font-weight: 400;
+      color: $color-accent;
+      text-align: center;
+
+      .highlight {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: clamp(rem(11), sp-vw(16), rem(16));
+        font-weight: 700;
+        font-weight: bold;
+        color: $color-accent;
+      }
     }
   }
 }
