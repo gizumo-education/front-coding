@@ -196,10 +196,14 @@
     font-family: 'Noto Sans JP', sans-serif;
     font-size: clamp(rem(11), sp-vw(14), rem(14));
     font-weight: 400;
-    color: rgb(164 164 164);
+    color: $color-black;
     background-color: #{$color-white};
     border: 1px solid $color-pink;
     border-radius: sp-vw(5);
+  }
+
+  .keyword-input::placeholder {
+    color: $color-gray;
   }
 
   .search-button {
