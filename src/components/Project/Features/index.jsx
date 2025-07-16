@@ -11,9 +11,9 @@ export const Features = () => {
           <div className={styles['features-card']}>
             <h2 className={styles['text-title']}>WEB上で応募完結</h2>
             <p className={styles['text-subtitle']}>
-              エントリーシートの記入を済ませれば、あとは気になる企業に応募して
-              <br />
-              待つだけで面接アポまで完結！
+              エントリーシートの記入を済ませれば、
+              <br className={styles['sp-text']} />
+              あとは気になる企業に応募して待つだけで面接アポまで完結！
             </p>
           </div>
           <div className={styles['features-card']}>
@@ -27,9 +27,11 @@ export const Features = () => {
           <div className={styles['features-card']}>
             <h2 className={styles['text-title']}>わかりやすい</h2>
             <p className={styles['text-subtitle']}>
-              当求人サイトは医療事務に特化しておりさらにこだわり検索や地域から検索
-              <br />
-              といったご自身にピッタリマッチした求人を見つけることができる！
+              当求人サイトは医療事務に特化しておりさらに
+              <br className={styles['sp-text']} />
+              こだわり検索や地域から検索といったご自身に
+              <br className={styles['sp-text']} />
+              ピッタリマッチした求人を見つけることができる！
             </p>
           </div>
           <div className={styles['features-card']}>
@@ -37,11 +39,11 @@ export const Features = () => {
             <p
               className={`${styles['text-subtitle']} ${styles['text-subtitle--free']}`}
             >
-              当サイトは求人元の企業やグループ会社からのスポンサー費用によって
-              <br />
-              運営されています。ですので求職者の方からは応募前はもちろん、
-              <br />
-              内定後も費用は一切いただきません。
+              当サイトは求人元の企業やグループ会社からのスポンサー費用に
+              <br className={styles['sp-text']} />
+              よって運営されています。ですので求職者の方からは
+              <br className={styles['sp-text']} />
+              応募前はもちろん、内定後も費用は一切いただきません。
             </p>
           </div>
         </div>
