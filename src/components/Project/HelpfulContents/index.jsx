@@ -18,8 +18,7 @@ export const HelpfulContents = () => {
             <div className={styles['card-content']}>
               <h3 className={styles['card-title']}>医療事務業界の豆知識</h3>
               <p className={styles['card-text']}>
-                スキルアップ・労働環境、給与事情など
-                知って得する業界の豆知識を公開
+                スキルアップ・労働環境、給与事情など知って得する業界の豆知識を公開
               </p>
             </div>
           </div>

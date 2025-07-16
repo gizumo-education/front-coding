@@ -113,7 +113,74 @@
   font-size: clamp(rem(11), pc-vw(18), rem(18));
   font-weight: 700;
   color: #{$color-white};
-  background-color: rgb(223 85 121);
+  background-color: $color-pink-light;
   border: none;
   border-radius: pc-vw(30);
+}
+
+@media (width <= 768px) {
+  .helpful-inner {
+    width: sp-vw(370);
+    height: sp-vw(889);
+    padding-inline: sp-vw(16);
+    margin: 0 auto;
+    margin-top: sp-vw(60);
+  }
+
+  .helpful-title {
+    margin-top: sp-vw(60);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(rem(11), sp-vw(25), rem(25));
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: sp-vw(20);
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: sp-vw(30.55);
+  }
+
+  .card-title {
+    margin-top: sp-vw(60.45);
+    margin-bottom: sp-vw(53);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(rem(11), sp-vw(21), rem(21));
+    font-weight: 700;
+  }
+
+  .card-text {
+    padding: 0 sp-vw(73);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(rem(11), sp-vw(14), rem(14));
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .card {
+    width: sp-vw(370);
+    height: sp-vw(234.9);
+    border-radius: sp-vw(10);
+
+    .card-content {
+      width: 100%;
+      height: 100%;
+    }
+
+    &--industry .card-text {
+      padding: 0 sp-vw(59);
+    }
+  }
+
+  .more-button {
+    width: sp-vw(370);
+    height: sp-vw(60);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(rem(11), sp-vw(18), rem(18));
+    border-radius: sp-vw(30);
+  }
 }
