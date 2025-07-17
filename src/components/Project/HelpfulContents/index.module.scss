@@ -2,61 +2,70 @@
 @use '@/styles/functions' as *;
 
 .helpful-inner {
-  width: pc-vw(1180);
-  height: pc-vw(475);
+  width: sp-vw(370);
+  height: sp-vw(960);
+  padding-inline: sp-vw(16);
   margin: 0 auto;
-  margin-top: pc-vw(105);
+  margin-top: sp-vw(60);
+  @include media-pc {
+    width: pc-vw(1180);
+    height: pc-vw(475);
+    padding-inline: 0;
+    margin-top: pc-vw(105);
+  }
 }
 
 .helpful-title {
   display: flex;
   justify-content: center;
-  margin-bottom: pc-vw(50);
+  margin-top: sp-vw(60);
+  margin-bottom: sp-vw(0);
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: clamp(rem(11), pc-vw(25), rem(25));
-  font-style: bold;
+  font-size: clamp(rem(11), sp-vw(25), rem(25));
   font-weight: 700;
-  line-height: pc-vw(25);
+  line-height: 1.2;
+  @include media-pc {
+    margin-top: 0;
+    margin-bottom: pc-vw(50);
+    font-size: clamp(rem(11), pc-vw(25), rem(25));
+    line-height: pc-vw(25);
+  }
 }
 
 .card-list {
   display: flex;
-  gap: pc-vw(20);
-  justify-content: center;
-  width: pc-vw(1180);
-  height: pc-vw(240);
-}
-
-.card-title {
-  margin-top: pc-vw(71.04);
-  margin-bottom: pc-vw(44);
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: clamp(rem(11), pc-vw(24), rem(24));
-  font-style: bold;
-  font-weight: 700;
-  color: #{$color-white};
-}
-
-.card-text {
-  padding: 0 pc-vw(60) 0 pc-vw(64);
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: clamp(rem(11), pc-vw(16), rem(16));
-  font-style: regular;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #{$color-white};
+  flex-direction: column;
+  gap: sp-vw(20);
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: sp-vw(30.55);
+  @include media-pc {
+    flex-direction: row;
+    gap: pc-vw(20);
+    justify-content: center;
+    width: pc-vw(1180);
+    height: pc-vw(240);
+    margin-top: 0;
+  }
 }
 
 .card {
   position: relative;
   align-items: flex-end;
-  width: pc-vw(380);
-  height: pc-vw(240);
+  width: sp-vw(370);
+  height: sp-vw(234.9);
   overflow: hidden;
   background-color: rgb(0 0 0 / 50%);
   background-position: center;
   background-size: cover;
-  border-radius: pc-vw(12);
+  border-radius: sp-vw(10);
+
+  @include media-pc {
+    width: pc-vw(380);
+    height: pc-vw(240);
+    border-radius: pc-vw(12);
+  }
 
   &::before {
     position: absolute;
@@ -73,12 +82,35 @@
     position: absolute;
     z-index: 2;
     justify-content: center;
-    width: pc-vw(380);
-    height: pc-vw(240);
+    width: 100%;
+    height: 100%;
+
+    @include media-pc {
+      width: pc-vw(380);
+      height: pc-vw(240);
+      text-align: center;
+    }
+  }
+
+  .card-text {
+    padding: 0 sp-vw(73);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(rem(7), sp-vw(14), rem(18));
+    font-weight: 400;
+    line-height: 1.5;
+    color: #{$color-white};
     text-align: center;
+    @include media-pc {
+      padding: 0 pc-vw(60) 0 pc-vw(64);
+      font-size: clamp(rem(7), pc-vw(16), rem(16));
+    }
   }
 
   &--manual {
+    background-image: url('/img/picture/main-HelpfulContents-contents1.jpg');
+  }
+
+  &--manual-2 {
     background-image: url('/img/picture/main-HelpfulContents-contents1.jpg');
   }
 
@@ -86,34 +118,59 @@
     background-image: url('/img/picture/main-HelpfulContents-contents2.jpg');
 
     .card-text {
-      padding: 0 pc-vw(42.2) 0 pc-vw(49.8);
+      padding: 0 sp-vw(59);
       line-height: 1.5;
+
+      @include media-pc {
+        padding: 0 pc-vw(42.2) 0 pc-vw(49.8);
+      }
     }
   }
+}
 
-  &--manual-2 {
-    background-image: url('/img/picture/main-HelpfulContents-contents1.jpg');
+.card-title {
+  display: flex;
+  justify-content: center;
+  margin-top: sp-vw(60.45);
+  margin-bottom: sp-vw(53);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(rem(11), sp-vw(21), rem(21));
+  font-weight: 700;
+  color: #{$color-white};
+  @include media-pc {
+    margin-top: pc-vw(71.04);
+    margin-bottom: pc-vw(44);
+    font-size: clamp(rem(11), pc-vw(24), rem(24));
   }
 }
 
 .more-button-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: pc-vw(61);
-  margin-top: pc-vw(40);
+  padding-top: 0;
+  margin-top: sp-vw(34.68);
   text-align: center;
+  @include media-pc {
+    padding-top: pc-vw(80);
+    margin-top: 0;
+  }
 }
 
 .more-button {
-  width: pc-vw(420);
-  height: pc-vw(60);
-  padding: pc-vw(16) pc-vw(40);
+  width: sp-vw(370);
+  height: sp-vw(60);
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: pc-vw(18);
-  font-size: clamp(rem(11), pc-vw(18), rem(18));
+  font-size: clamp(rem(11), sp-vw(18), rem(18));
   font-weight: 700;
   color: #{$color-white};
-  background-color: rgb(223 85 121);
+  background-color: $color-pink-light;
   border: none;
-  border-radius: pc-vw(30);
+  border-radius: sp-vw(30);
+  @include media-pc {
+    width: pc-vw(420);
+    height: pc-vw(60);
+    padding: pc-vw(16) pc-vw(40);
+    font-size: clamp(rem(9), pc-vw(18), rem(18));
+    border-radius: pc-vw(30);
+  }
 }

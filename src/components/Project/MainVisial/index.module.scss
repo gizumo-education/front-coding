@@ -29,16 +29,25 @@
 }
 
 .mainvisial-main-text {
-  margin-bottom: pc-vw(21);
+  margin-bottom: sp-vw(2.36);
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: clamp(rem(11), pc-vw(25), rem(25));
+  font-size: clamp(rem(11), sp-vw(14), rem(20));
   font-style: bold;
-  font-weight: 700;
+  font-weight: 400;
+  @include media-pc {
+    margin-bottom: pc-vw(21);
+    font-size: clamp(rem(11), pc-vw(25), rem(25));
+    font-weight: 700;
+  }
 }
 
 .mainvisial-sub-text {
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: clamp(rem(11), pc-vw(25), rem(25));
+  font-size: clamp(rem(11), sp-vw(14), rem(20));
   font-style: bold;
-  font-weight: 700;
+  font-weight: 400;
+  @include media-pc {
+    font-size: clamp(rem(11), pc-vw(25), rem(25));
+    font-weight: 700;
+  }
 }

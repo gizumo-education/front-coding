@@ -2,130 +2,210 @@
 @use '@/styles/functions' as *;
 
 .flow-inner {
-  width: pc-vw(1180);
-  height: pc-vw(537);
-  padding-top: pc-vw(105);
+  width: sp-vw(280);
+  height: sp-vw(1475);
+  padding-top: sp-vw(60);
   margin: 0 auto;
+  margin-bottom: sp-vw(60);
   text-align: center;
   background-color: #{$color-white};
+  @include media-pc {
+    width: pc-vw(1180);
+    height: pc-vw(547);
+    padding-top: pc-vw(105);
+    margin-bottom: 0;
+  }
 }
 
 .flow-title {
-  margin-bottom: pc-vw(48);
-  font-size: clamp(rem(11), pc-vw(24), rem(24));
-  font-weight: bold;
+  margin-bottom: sp-vw(30);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(rem(11), sp-vw(25), rem(25));
+  font-weight: 700;
+  line-height: 1.5;
   color: #{$color-black};
+  text-align: center;
+  @include media-pc {
+    margin-bottom: pc-vw(48);
+    font-size: clamp(rem(11), pc-vw(24), rem(24));
+  }
 }
 
 .step-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  @include media-pc {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .step-card {
   position: relative;
   box-sizing: border-box;
-  width: pc-vw(280);
-  height: pc-vw(360);
+  width: sp-vw(280);
+  height: sp-vw(293);
   text-align: center;
   background-color: #{$color-white};
-  border: pc-vw(2) solid rgb(229 92 135);
-  border-radius: pc-vw(12);
+  border: sp-vw(2.27) solid $color-pink-light;
+  border-radius: sp-vw(10);
+  @include media-pc {
+    width: pc-vw(280);
+    height: pc-vw(360);
+    border: pc-vw(2) solid $color-pink-light;
+    border-radius: pc-vw(12);
+  }
 }
 
 .triangle {
-  align-self: center;
-  width: 0;
-  height: 0;
-  margin: 0 auto;
-  border-top: pc-vw(20) solid transparent;
-  border-bottom: pc-vw(20) solid transparent;
-  border-left: pc-vw(20) solid rgb(229 92 135);
+  border-style: solid;
+  border-top: sp-vw(20) solid $color-pink-light;
+  border-right: sp-vw(20) solid transparent;
+  border-bottom: 0;
+  border-left: sp-vw(20) solid transparent;
+  @include media-pc {
+    align-self: center;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-top: pc-vw(20) solid transparent;
+    border-right: none;
+    border-bottom: pc-vw(20) solid transparent;
+    border-left: pc-vw(20) solid $color-pink-light;
+  }
 }
 
 .step-badge {
   position: absolute;
-  top: pc-vw(10);
-  left: pc-vw(10);
+  top: sp-vw(10);
+  left: sp-vw(10);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: pc-vw(60);
-  height: pc-vw(60);
+  width: sp-vw(45);
+  height: sp-vw(45);
   font-family: Inter, sans-serif;
-  font-size: clamp(rem(8), pc-vw(16), rem(16));
-  font-style: bold;
+  font-size: clamp(rem(9), sp-vw(10), rem(10));
   font-weight: 700;
   line-height: 1.2;
   color: #{$color-white};
-  background-color: rgb(229 92 135);
+  background-color: $color-pink-light;
   border-radius: 50%;
+  @include media-pc {
+    top: pc-vw(10);
+    left: pc-vw(10);
+    width: pc-vw(60);
+    height: pc-vw(60);
+    font-size: clamp(rem(8), pc-vw(16), rem(16));
+  }
 }
 
 .entry-icon {
   align-items: center;
   justify-content: center;
-  width: pc-vw(102.29);
-  height: pc-vw(100);
-  margin: pc-vw(60) pc-vw(80) pc-vw(20) pc-vw(97.71);
+  width: sp-vw(76.72);
+  height: sp-vw(75);
+  margin: sp-vw(55) sp-vw(102.43) sp-vw(22) sp-vw(100.86);
+  @include media-pc {
+    width: pc-vw(102.29);
+    height: pc-vw(100);
+    margin: pc-vw(60) pc-vw(80) pc-vw(20) pc-vw(97.71);
+  }
 }
 
 .path-icon {
   align-items: center;
   justify-content: center;
-  width: pc-vw(79.95);
-  height: pc-vw(79.95);
-  margin: pc-vw(70.02) pc-vw(105.03) pc-vw(30.03) pc-vw(95.02);
+  width: sp-vw(74.95);
+  height: sp-vw(74.95);
+  margin: sp-vw(55.03) sp-vw(102.03) sp-vw(22.03) sp-vw(103.02);
+  @include media-pc {
+    width: pc-vw(79.95);
+    height: pc-vw(79.95);
+    margin: pc-vw(70.02) pc-vw(105.03) pc-vw(30.03) pc-vw(95.02);
+  }
 }
 
 .mail-icon {
   align-items: center;
   justify-content: center;
-  width: pc-vw(106.76);
-  height: pc-vw(100);
-  margin: pc-vw(60) pc-vw(83.38) pc-vw(33) pc-vw(89.86);
+  width: sp-vw(82.12);
+  height: sp-vw(75);
+  margin: sp-vw(55) sp-vw(99.96) sp-vw(22) sp-vw(99.92);
+  @include media-pc {
+    width: pc-vw(106.76);
+    height: pc-vw(100);
+    margin: pc-vw(60) pc-vw(83.38) pc-vw(33) pc-vw(89.86);
+  }
 }
 
 .star-icon {
   align-items: center;
   justify-content: center;
-  width: pc-vw(107.97);
-  height: pc-vw(113.13);
-  margin: pc-vw(54.87) pc-vw(92.46) pc-vw(28) pc-vw(79.75);
+  width: sp-vw(73.57);
+  height: sp-vw(75);
+  margin: sp-vw(55) sp-vw(103.23) sp-vw(22) sp-vw(103.2);
+  @include media-pc {
+    width: pc-vw(107.97);
+    height: pc-vw(113.13);
+    margin: pc-vw(54.87) pc-vw(92.46) pc-vw(28) pc-vw(79.75);
+  }
 }
 
 .step-title {
-  padding: 0 pc-vw(30);
-  margin-top: pc-vw(10);
-  margin-bottom: pc-vw(12);
+  margin-bottom: sp-vw(10);
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: clamp(rem(11), pc-vw(24), rem(24));
-  font-style: bold;
+  font-size: clamp(rem(11), sp-vw(20), rem(20));
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.2;
   text-align: center;
   overflow-wrap: break-word;
 
-  &--pickup {
-    padding: 0 pc-vw(49);
+  @include media-pc {
+    padding: 0 pc-vw(20);
+    margin-top: pc-vw(10);
+    margin-bottom: pc-vw(12);
+    font-size: clamp(rem(11), pc-vw(24), rem(24));
+    line-height: 1.25;
+
+    &--pickup {
+      padding: 0 sp-vw(10);
+      @include media-pc {
+        padding: 0 pc-vw(49);
+      }
+    }
   }
 }
 
 .step-desc {
-  padding: 0 pc-vw(20);
-  margin-top: pc-vw(10);
+  width: sp-vw(240);
+  margin: 0 auto;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: clamp(rem(6), pc-vw(14), rem(14));
-  font-style: regular;
+  font-size: clamp(rem(11), sp-vw(14), rem(14));
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
-
-  &--text {
-    padding-top: 15px;
+  @include media-pc {
+    width: auto;
+    padding: 0 pc-vw(20);
+    margin-top: pc-vw(10);
+    font-size: clamp(rem(6), pc-vw(14), rem(14));
   }
 
+  &--text,
   &--text2 {
-    padding-top: 15px;
+    padding-top: sp-vw(8);
+    @include media-pc {
+      padding-top: pc-vw(8);
+    }
+  }
+}
+
+.sp-text {
+  display: flex;
+  @include media-pc {
+    display: inline;
   }
 }

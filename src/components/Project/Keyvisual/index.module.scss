@@ -3,66 +3,99 @@
 
 .keyvisual {
   max-width: 100%;
-  height: pc-vw(500);
+  height: sp-vw(270);
   margin: 0 auto;
   overflow: hidden;
-  background-color: rgb(152 177 190);
-  background-image: url('/img/picture/main-keyvisual woman.jpg');
+  background-image: url('/img/picture/main-keyvisual-woman-sp.jpg');
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: pc-vw(1262) pc-vw(500);
+  background-size: sp-vw(400) sp-vw(270);
+  @include media-pc {
+    height: pc-vw(500);
+    background-color: $color-gray-light;
+    background-image: url('/img/picture/main-keyvisual woman.jpg');
+    background-size: pc-vw(1262) pc-vw(500);
+  }
 }
 
 .keyvisual-inner {
   position: relative;
   align-items: center;
   width: 100%;
-  max-width: pc-vw(1600);
-  height: pc-vw(500);
+  width: sp-vw(400);
+  height: sp-vw(270);
   margin: 0 auto;
   overflow-x: hidden;
+  @include media-pc {
+    height: pc-vw(500);
+  }
 }
 
 .no1 {
   position: absolute;
-  left: pc-vw(830);
-  width: pc-vw(341.81);
-  height: pc-vw(168.51);
-  margin-top: pc-vw(56.48);
+  left: sp-vw(200);
+  width: sp-vw(149.54);
+  height: sp-vw(79.36);
+  margin-top: sp-vw(61.64);
+  @include media-pc {
+    left: pc-vw(830);
+    width: pc-vw(341.81);
+    height: pc-vw(168.51);
+    margin-top: pc-vw(56.48);
+  }
 }
 
 .catch {
   position: absolute;
-  top: pc-vw(265);
-  left: pc-vw(607);
-  width: pc-vw(800);
-  height: pc-vw(65);
+  top: sp-vw(147.65);
+  left: sp-vw(125);
+  width: sp-vw(272);
+  height: sp-vw(22);
+  @include media-pc {
+    top: pc-vw(265);
+    left: pc-vw(607);
+    width: pc-vw(800);
+    height: pc-vw(65);
+  }
 }
 
 .job-box {
-  position: absolute;
-  top: pc-vw(384);
-  left: pc-vw(809.5);
-  width: pc-vw(391);
-  height: pc-vw(69);
+  position: relative;
+  top: sp-vw(188);
+  left: sp-vw(190);
+  width: sp-vw(170);
+  height: sp-vw(30);
+  @include media-pc {
+    top: pc-vw(389);
+    left: pc-vw(809.5);
+    width: pc-vw(391);
+    height: pc-vw(69);
+  }
 
   .job-count {
     position: absolute;
-    top: pc-vw(5);
-    left: pc-vw(41);
-    width: pc-vw(308);
-    font-size: clamp(rem(11), pc-vw(20), rem(20));
+    bottom: pc-vw(5);
+    width: sp-vw(170);
+    margin-top: sp-vw(4);
+    font-size: clamp(rem(7), sp-vw(8), rem(20));
     font-weight: 400;
     line-height: 1.45;
-    color: rgb(46 182 170);
+    color: $color-accent;
     text-align: center;
+    @include media-pc {
+      width: pc-vw(391);
+      font-size: clamp(rem(8), pc-vw(20), rem(20));
+    }
 
     .highlight {
       font-family: 'Noto Sans JP', sans-serif;
-      font-size: clamp(rem(11), pc-vw(40), rem(40));
+      font-size: clamp(rem(11), sp-vw(16), rem(40));
       font-weight: 700;
       font-weight: bold;
-      color: rgb(46 182 170);
+      color: $color-accent;
+      @include media-pc {
+        font-size: clamp(rem(11), pc-vw(40), rem(40));
+      }
     }
   }
 }
