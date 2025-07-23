@@ -76,6 +76,9 @@
   position: relative;
 
   .form-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: sp-vw(100);
     height: sp-vw(32);
     padding: 0 sp-vw(8);
