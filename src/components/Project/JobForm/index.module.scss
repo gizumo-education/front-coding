@@ -77,6 +77,9 @@
   position: relative;
 
   .jobform-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: sp-vw(100);
     height: sp-vw(32);
     padding: 0 sp-vw(8);
@@ -90,6 +93,7 @@
     @include media-pc {
       width: pc-vw(200);
       height: pc-vw(60);
+      padding: 0 pc-vw(15);
       font-size: clamp(rem(11), pc-vw(18), rem(18));
       border-radius: pc-vw(10);
     }

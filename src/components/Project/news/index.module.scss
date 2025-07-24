@@ -13,12 +13,12 @@
 .news-inner {
   position: relative;
   box-sizing: border-box;
-  width: 100%;
+  width: sp-vw(370);
   height: sp-vw(600);
+  margin: 0 auto;
   @include media-pc {
     width: pc-vw(1180);
     height: pc-vw(636);
-    margin: 0 auto;
   }
 }
 
@@ -48,33 +48,36 @@
   display: flex;
   gap: pc-vw(20);
   justify-content: center;
-  width: 100%;
 }
 
-.woman1,
 .woman2,
 .woman3,
 .woman4 {
-  width: pc-vw(280);
-  height: pc-vw(200);
+  width: sp-vw(370);
+  height: sp-vw(208);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
-  border-radius: pc-vw(0.63);
+  border-radius: sp-vw(10);
+  @include media-pc {
+    width: pc-vw(280);
+    height: pc-vw(200);
+    border-radius: pc-vw(0.63);
+  }
 }
 
 .woman1 {
   width: sp-vw(370);
   height: sp-vw(208);
   background-image: url('/img/picture/main-news-woman1-sp.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: sp-vw(10);
   @include media-pc {
     width: pc-vw(280);
     height: pc-vw(200);
     background-image: url('/img/picture/main-news woman1.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     border-radius: pc-vw(0.63);
   }
 }
@@ -94,6 +97,7 @@
 .slide-button {
   position: absolute;
   top: sp-vw(157);
+  z-index: 10;
   width: sp-vw(42);
   height: sp-vw(3);
   cursor: pointer;
@@ -132,12 +136,12 @@
   }
 
   &.left {
-    left: sp-vw(36);
+    left: sp-vw(21);
     transform: translate(-50%, -50%);
   }
 
   &.right {
-    right: sp-vw(36);
+    right: sp-vw(21);
     transform: translate(50%, -50%);
   }
 
@@ -171,30 +175,26 @@
     }
 
     &.left {
-      left: pc-vw(31);
+      left: pc-vw(30);
     }
 
     &.right {
-      right: pc-vw(31);
+      right: pc-vw(45);
     }
   }
 }
 
 .card-item {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: sp-vw(8);
   align-items: flex-start;
 
   &:has(.woman1) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: sp-vw(330);
-    margin: 0 auto;
+    width: 100%;
   }
+
   @include media-pc {
-    display: flex;
     gap: pc-vw(8);
     width: pc-vw(280);
   }
@@ -224,7 +224,7 @@
   flex-direction: column;
   gap: sp-vw(4);
   align-items: flex-start;
-  width: sp-vw(370);
+  width: 100%;
   margin-top: sp-vw(11.92);
   @include media-pc {
     gap: pc-vw(4);
