@@ -4,7 +4,6 @@
 .news-section {
   padding-top: sp-vw(30);
   margin-top: sp-vw(25);
-  overflow-x: hidden;
   background-color: $color-blue-lightest;
   @include media-pc {
     padding-top: pc-vw(64);
