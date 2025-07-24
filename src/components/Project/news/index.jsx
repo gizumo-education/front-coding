@@ -44,7 +44,7 @@ export const News = () => {
           <div
             className={`${styles['slide-button']} ${styles['left']}`}
             ref={prevRef}
-          ></div>
+          />
           <Swiper
             modules={[Navigation]}
             loop={true}
@@ -89,7 +89,7 @@ export const News = () => {
           <div
             className={`${styles['slide-button']} ${styles['right']}`}
             ref={nextRef}
-          ></div>
+          />
         </div>
 
         <div className={styles['more-button-wrapper']}>
