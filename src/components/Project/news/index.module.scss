@@ -14,11 +14,9 @@
 .news-inner {
   position: relative;
   box-sizing: border-box;
-  width: 100%;
-  max-width: sp-vw(370);
+  width: sp-vw(370);
   height: sp-vw(600);
   margin: 0 auto;
-  overflow-x: hidden;
   @include media-pc {
     width: pc-vw(1180);
     height: pc-vw(636);
@@ -51,7 +49,6 @@
   display: flex;
   gap: pc-vw(20);
   justify-content: center;
-  overflow-x: hidden;
 }
 
 .woman2,
@@ -59,7 +56,6 @@
 .woman4 {
   width: sp-vw(370);
   height: sp-vw(208);
-  aspect-ratio: 370 / 208;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;

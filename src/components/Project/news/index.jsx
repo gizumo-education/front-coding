@@ -15,7 +15,7 @@ export const News = () => {
   const breakSetting = {
     0: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 15,
     },
     768: {
       slidesPerView: 4,
