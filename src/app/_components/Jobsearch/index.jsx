@@ -12,26 +12,26 @@ export const Jobsearch = () => {
             height='20'
             className={styles['work-title']}
           />
-          <p className={styles['work-caption']}>
+          <section className={styles['work-caption']}>
             働きたい職種・地域・希望給与を入れて検索！
-          </p>
+          </section>
           <section className={styles['select-fields']}>
-            <section className={styles['select-field']}>
+            <nav className={styles['select-field']}>
               医療事務
-              <section className={styles['triangle']}></section>
-            </section>
-            <section className={styles['select-field']}>
+              <mark className={styles['triangle']}></mark>
+            </nav>
+            <nav className={styles['select-field']}>
               東京都
-              <section className={styles['triangle']}></section>
-            </section>
-            <section className={styles['select-field']}>
+              <mark className={styles['triangle']}></mark>
+            </nav>
+            <nav className={styles['select-field']}>
               月給17万～
-              <section className={styles['triangle']}></section>
-            </section>
+              <mark className={styles['triangle']}></mark>
+            </nav>
           </section>
-          <section className={styles['input-field']}>
+          <nav className={styles['input-field']}>
             キーワード・企業名・スキルなど
-          </section>
+          </nav>
           <section className={styles['search-button']}>
             <img
               src='/images/虫眼鏡.png'
