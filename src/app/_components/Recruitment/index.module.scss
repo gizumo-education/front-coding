@@ -1,0 +1,78 @@
+@use '@/styles' as *;
+
+.main {
+  width: $design-sp-width;
+}
+
+.inner {
+  width: $inner-sp-max-width;
+  margin: 0 auto;
+}
+
+.work-flame {
+  width: sp-vw(370);
+  height: 15rem;
+  margin: 1.5rem 0;
+  background-color: $color-sky-blue;
+  border-radius: 5%;
+}
+
+.work-title {
+  justify-content: center;
+  width: sp-vw(110);
+  height: 1.3rem;
+  margin-top: 0.9rem;
+  margin-left: 8.1rem;
+  object-fit: contain;
+}
+
+.work-caption {
+  width: sp-vw(294);
+  height: 1.25rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: sp-vw(14);
+  white-space: nowrap;
+}
+
+.select-fields {
+  display: flex;
+  gap: 10;
+  width: sp-vw(370);
+  margin: 0 auto;
+  margin: 0.93rem 0;
+}
+
+.select-field {
+  display: flex;
+  align-items: center;
+  width: 6.25rem;
+  height: 1.87rem;
+  padding-left: 0.18rem;
+  font-size: sp-vw(12);
+  font-weight: 400;
+  background-color: $color-white;
+  border: 1px solid;
+  border-color: $color-pink;
+  border-radius: 5px;
+}
+
+.select-field:first-child {
+  margin-left: 1.5rem;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  width: sp-vw(320);
+  height: 1.87rem;
+  padding-left: 0.18rem;
+  margin: 0 auto;
+  font-size: sp-vw(14);
+  font-weight: 400;
+  color: $color-gray;
+  background-color: $color-white;
+  border: 1px solid;
+  border-color: $color-pink;
+  border-radius: 5px;
+}
