@@ -1,0 +1,108 @@
+@use '@/styles' as *;
+
+.main {
+  width: $design-sp-width;
+}
+
+.inner {
+  width: $inner-sp-max-width;
+  margin: 0 auto;
+}
+
+.work-flame {
+  width: sp-vw(370);
+  height: 15rem;
+  margin: 1.5rem 0;
+  background-color: $color-sky-blue;
+  border-radius: 5%;
+}
+
+.work-title {
+  justify-content: center;
+  width: sp-vw(110);
+  height: 1.3rem;
+  margin-top: 0.9rem;
+  margin-left: 8.1rem;
+  object-fit: contain;
+}
+
+.work-caption {
+  width: sp-vw(294);
+  height: 1.25rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: sp-vw(14);
+  white-space: nowrap;
+}
+
+.select-fields {
+  display: flex;
+  gap: 10;
+  width: sp-vw(370);
+  margin: 0 auto;
+  margin: 0.93rem 0;
+}
+
+.select-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 6.25rem;
+  height: 1.87rem;
+  padding: 0 0.2rem;
+  font-size: sp-vw(12);
+  font-weight: 400;
+  background-color: $color-white;
+  border: 1px solid;
+  border-color: $color-pink;
+  border-radius: 5px;
+}
+
+.select-field:first-child {
+  margin-left: 1.5rem;
+}
+
+.triangle {
+  width: sp-vw(13);
+  height: 0.43rem;
+  background-color: $color-pink;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  width: sp-vw(320);
+  height: 1.87rem;
+  padding-left: 0.18rem;
+  margin: 0 auto;
+  font-size: sp-vw(14);
+  font-weight: 400;
+  color: $color-gray;
+  background-color: $color-white;
+  border: 1px solid;
+  border-color: $color-pink;
+  border-radius: 5px;
+}
+
+.search-button {
+  display: flex;
+  gap: 15;
+  align-items: center;
+  width: sp-vw(160);
+  height: 2.5rem;
+  padding-left: 1rem;
+  margin: 0 auto;
+  margin-top: 0.93rem;
+  font-size: sp-vw(18);
+  font-style: bold;
+  font-weight: 700;
+  color: $color-white;
+  background-color: $color-peach;
+  border-radius: 50px;
+}
+
+.find-glass {
+  width: 1rem;
+  height: 1rem;
+}
