@@ -76,3 +76,25 @@
   border-color: $color-pink;
   border-radius: 5px;
 }
+
+.search-button {
+  display: flex;
+  gap: 15;
+  align-items: center;
+  width: sp-vw(160);
+  height: 2.5rem;
+  padding-left: 1rem;
+  margin: 0 auto;
+  margin-top: 0.93rem;
+  font-size: sp-vw(18);
+  font-style: bold;
+  font-weight: 700;
+  color: $color-white;
+  background-color: $color-peach;
+  border-radius: 50px;
+}
+
+.find-glass {
+  width: 1rem;
+  height: 1rem;
+}

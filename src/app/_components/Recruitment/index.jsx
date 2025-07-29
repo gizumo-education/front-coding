@@ -23,6 +23,16 @@ export const Recruitment = () => {
           <section className={styles['input-field']}>
             キーワード・企業名・スキルなど
           </section>
+          <section className={styles['search-button']}>
+            <img
+              src='/images/虫眼鏡.png'
+              alt='虫眼鏡'
+              className={styles['find-glass']}
+              width='16'
+              height='16'
+            />
+            検索する
+          </section>
         </section>
       </section>
     </main>
