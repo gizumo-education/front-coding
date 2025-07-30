@@ -16,9 +16,11 @@ export const Jobsearch = () => {
             働きたい職種・地域・希望給与を入れて検索！
           </section>
           <section className={styles['select-fields']}>
-            <select className={styles['select-field']}>
-              <option value='医療事務'>医療事務</option>
-            </select>
+            <div>
+              <select className={styles['select-field']}>
+                <option value='医療事務'>医療事務</option>
+              </select>
+            </div>
             <select className={styles['select-field']}>
               <option value='東京都'>東京都</option>
             </select>

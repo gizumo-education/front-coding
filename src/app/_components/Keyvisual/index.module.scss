@@ -12,23 +12,23 @@
 .key-visual-container {
   top: 4.3rem;
   display: relative;
-  width: 25rem;
-  height: 16.8rem;
+  width: sp-vw(400);
+  height: rem(270);
   background-color: $color-blue;
 }
 
 .key-visual {
   position: absolute;
-  top: 4.3rem;
-  width: 25rem;
-  height: 16.8rem;
-  object-fit: contain;
+  top: 4.4rem;
+  width: sp-vw(400);
+  height: rem(270);
+  object-fit: cover;
 }
 
 .no1-icon {
   position: absolute;
   width: sp-vw(150);
-  height: 4.5rem;
+  height: rem(73);
   margin-top: 4.5rem;
   margin-left: 12.5rem;
 }
@@ -39,7 +39,7 @@
   left: 7.8rem;
   display: block;
   width: sp-vw(272);
-  height: 1.37rem;
+  height: rem(22);
 }
 
 .kyu-jin-container {
@@ -51,7 +51,7 @@
   top: 16.1rem;
   left: 11.8rem;
   width: sp-vw(170);
-  height: 1.8rem;
+  height: rem(30);
 }
 
 .kyu-jin-suu {
@@ -59,6 +59,6 @@
   top: 16.3rem;
   left: 13.3rem;
   width: sp-vw(123);
-  height: 1.4rem;
+  height: rem(23);
   object-fit: contain;
 }
