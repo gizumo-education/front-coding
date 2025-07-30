@@ -1,0 +1,10 @@
+@use '@/styles' as *;
+
+.main {
+  width: $design-sp-width;
+}
+
+.main-visual {
+  width: $design-sp-width;
+  height: rem(75);
+}

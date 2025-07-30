@@ -19,15 +19,12 @@ export const Jobsearch = () => {
             <select className={styles['select-field']}>
               <option value='医療事務'>医療事務</option>
             </select>
-            <mark className={styles['triangle']}></mark>
             <select className={styles['select-field']}>
               <option value='東京都'>東京都</option>
             </select>
-            <mark className={styles['triangle']}></mark>
             <select className={styles['select-field']}>
               <option value='月給17万～'>月給17万～</option>
             </select>
-            <mark className={styles['triangle']}></mark>
           </section>
           <input
             className={styles['input-field']}
