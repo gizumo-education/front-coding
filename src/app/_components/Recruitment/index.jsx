@@ -5,14 +5,10 @@ export const Recruitment = () => {
     <main className={styles['main']}>
       <section className={styles['recruit']}>
         <section className={styles['inner']}>
-          <img
-            src='/images/新着求人.png'
-            alt='新着求人'
-            width='100'
-            height='25'
-            className={styles['recruit-title']}
-          />
           <article>
+            <div className={styles['recruit-title']}>
+              <h1>新着求人</h1>
+            </div>
             <img
               src='/images/新着求人画像.png'
               alt='新着求人画像'
