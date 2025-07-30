@@ -16,23 +16,24 @@ export const Jobsearch = () => {
             働きたい職種・地域・希望給与を入れて検索！
           </section>
           <section className={styles['select-fields']}>
-            <nav className={styles['select-field']}>
-              医療事務
-              <mark className={styles['triangle']}></mark>
-            </nav>
-            <nav className={styles['select-field']}>
-              東京都
-              <mark className={styles['triangle']}></mark>
-            </nav>
-            <nav className={styles['select-field']}>
-              月給17万～
-              <mark className={styles['triangle']}></mark>
-            </nav>
+            <select className={styles['select-field']}>
+              <option value='医療事務'>医療事務</option>
+            </select>
+            <mark className={styles['triangle']}></mark>
+            <select className={styles['select-field']}>
+              <option value='東京都'>東京都</option>
+            </select>
+            <mark className={styles['triangle']}></mark>
+            <select className={styles['select-field']}>
+              <option value='月給17万～'>月給17万～</option>
+            </select>
+            <mark className={styles['triangle']}></mark>
           </section>
-          <nav className={styles['input-field']}>
-            キーワード・企業名・スキルなど
-          </nav>
-          <section className={styles['search-button']}>
+          <input
+            className={styles['input-field']}
+            placeholder='キーワード・企業名・スキルなど'
+          />
+          <button className={styles['search-button']}>
             <img
               src='/images/虫眼鏡.png'
               alt='虫眼鏡'
@@ -41,7 +42,7 @@ export const Jobsearch = () => {
               height='16'
             />
             検索する
-          </section>
+          </button>
         </section>
       </section>
     </main>
