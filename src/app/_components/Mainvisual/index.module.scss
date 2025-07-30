@@ -5,6 +5,28 @@
 }
 
 .main-visual {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: $design-sp-width;
   height: rem(75);
+  background-image: url('/images/メインビジュアル.png');
+}
+
+.main-visual-bg {
+  z-index: 2;
+  width: $design-sp-width;
+  height: rem(75);
+  background-color: $color-black;
+  opacity: 0.5;
+}
+
+.main-visual-pra {
+  position: absolute;
+  z-index: 3;
+  font-size: sp-vw(14);
+  color: $color-white;
+  text-align: center;
 }
