@@ -20,21 +20,37 @@ export const Recruitment = () => {
               height='208'
               className={styles['recruit-img']}
             />
+            <div className={styles['recruit-nav-container']}>
+              <nav className={styles['recruit-nav']}>
+                <div className={styles['recruit-nav-arrow']}></div>
+              </nav>
+              <nav className={styles['recruit-nav']}>
+                <div className={styles['recruit-nav-arrow-2']}></div>
+              </nav>
+            </div>
+
             <h1 className={styles['recruit-caption']}>
               平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人
             </h1>
+
             <section>
-              <ul>
-                <li>給与</li>
-                <li>所在地</li>
-                <li>最寄り駅</li>
-              </ul>
-              <ul>
-                <li>月給148,000円~</li>
-                <li>三重県伊勢市</li>
-                <li>伊勢市駅 徒歩15分</li>
-              </ul>
-              <button>新着求人一覧をもっと見る</button>
+              <div className={styles['recruit-info']}>
+                <ul>
+                  <li className={styles['info-title']}>給与</li>
+                  <li className={styles['info-title']}>所在地</li>
+                  <li className={styles['info-title']}>最寄駅</li>
+                </ul>
+              </div>
+              <div className={styles['recruit-info']}>
+                <ul>
+                  <li className={styles['info-detail']}>月給148,000円~</li>
+                  <li className={styles['info-detail']}>三重県伊勢市</li>
+                  <li className={styles['info-detail']}>伊勢市駅 徒歩15分</li>
+                </ul>
+              </div>
+              <button className={styles['recruit-button']}>
+                新着求人一覧をもっと見る
+              </button>
             </section>
           </article>
         </section>
