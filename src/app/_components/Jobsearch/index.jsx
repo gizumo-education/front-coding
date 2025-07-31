@@ -35,6 +35,12 @@ export const Jobsearch = () => {
             <div className={styles['select-field-container']}>
               <select className={styles['select-field']}>
                 <option value='月給17万～'>月給17万～</option>
+                <option value='月給18万～'>月給18万～</option>
+                <option value='月給19万～'>月給19万～</option>
+                <option value='月給20万～'>月給20万～</option>
+                <option value='月給21万～'>月給21万～</option>
+                <option value='月給22万～'>月給22万～</option>
+                <option value='月給23万～'>月給23万～</option>
               </select>
             </div>
           </section>
