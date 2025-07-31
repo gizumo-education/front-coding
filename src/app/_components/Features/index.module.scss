@@ -20,7 +20,6 @@
 
 .feature-container {
   position: relative;
-  display: block;
   width: sp-vw(370);
   height: sp-vw(144);
   padding: clamp(rem(25), sp-vw(30), rem(35)) 0;
@@ -28,20 +27,29 @@
   margin-bottom: clamp(rem(15), sp-vw(21), rem(26));
   background-color: $color-pink-feature-container;
   border-radius: rem(10);
+
+  &:nth-child(4) {
+    height: sp-vw(161);
+  }
+
+  &:nth-child(5) {
+    height: sp-vw(161);
+  }
 }
 
-.feature-1-title {
+.feature-title {
   position: absolute;
-  width: sp-vw(165);
+  width: sp-vw(370);
   height: sp-vw(20);
-  margin-left: clamp(rem(100), sp-vw(102), rem(110));
   font-size: clamp(rem(15), sp-vw(20), rem(25));
   font-weight: bold;
   color: $color-pink-feature-title;
+  text-align: center;
 }
 
-.feature-1-p {
+.feature-p {
   position: absolute;
+  display: block;
   width: sp-vw(336);
   height: sp-vw(34);
   margin-top: clamp(rem(45), sp-vw(50), rem(55));
