@@ -1,0 +1,65 @@
+@use '@/styles' as *;
+
+.main {
+  width: $design-sp-width;
+  margin: 0 auto;
+}
+
+.inner {
+  width: $inner-sp-max-width;
+  margin: 0 auto;
+}
+
+.job-changes-title {
+  width: $inner-sp-max-width;
+  margin-top: clamp(rem(40), sp-vw(60), rem(80));
+  margin-bottom: clamp(rem(30), sp-vw(35), rem(65));
+  font-size: clamp(rem(16), sp-vw(25), rem(32));
+  font-weight: bold;
+  text-align: center;
+}
+
+.job-change-container {
+  position: relative;
+  width: sp-vw(370);
+  height: sp-vw(235);
+  padding: clamp(rem(25), sp-vw(60), rem(35)) 0;
+  margin: 0 auto;
+  margin-bottom: clamp(rem(16), sp-vw(21), rem(30));
+  background-color: $color-black;
+  background-image: url('/image/jobchenge.png');
+  border-radius: rem(10);
+
+  &:nth-child(3) {
+    background-image: url('/image/Trivia.png');
+  }
+}
+
+.job-change-container-cover {
+  width: sp-vw(370);
+  height: sp-vw(235);
+  background-color: $color-black;
+  opacity: 0.5;
+}
+
+.job-change-title {
+  position: absolute;
+  width: sp-vw(370);
+  height: sp-vw(20);
+  font-size: clamp(rem(15), sp-vw(20), rem(25));
+  font-weight: bold;
+  color: $color-white;
+  text-align: center;
+}
+
+.job-change-p {
+  position: absolute;
+  display: block;
+  width: sp-vw(252);
+  height: sp-vw(40);
+  margin-top: clamp(rem(40), sp-vw(74), rem(90));
+  font-size: clamp(rem(10), sp-vw(14), rem(24));
+  line-height: rem(17);
+  color: $color-white;
+  text-align: center;
+}
