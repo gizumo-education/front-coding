@@ -4,12 +4,15 @@ export const Contents = () => {
   return (
     <main className={styles['main']}>
       <section className={styles['inner']}>
-        <h1 className={styles['job-change-title']}>転職お役立ちコンテンツ</h1>
+        <h1 className={styles['job-changes-title']}>転職お役立ちコンテンツ</h1>
+
         <div className={styles['job-change-container']}>
-          <h2 className={styles['job-change-title']}>転職マニュアル</h2>
-          <p className={styles['job-change-p']}>
-            転職活動の基礎知識、面接対策など転職活動のコツをお教えします
-          </p>
+          <div className={styles['job-change-title']}>
+            <h2>転職マニュアル</h2>
+          </div>
+          <div className={styles['job-change-p']}>
+            <p>転職活動の基礎知識、面接対策など転職活動のコツをお教えします</p>
+          </div>
         </div>
         <div className={styles['job-change-container']}>
           <div className={styles['job-change-container-cover']}>

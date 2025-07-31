@@ -26,24 +26,29 @@
   padding: clamp(rem(25), sp-vw(60), rem(35)) 0;
   margin: 0 auto;
   margin-bottom: clamp(rem(16), sp-vw(21), rem(30));
-  background-color: $color-black;
-  background-image: url('/image/jobchenge.png');
+  background-image: url('/image/jobchange.png');
   border-radius: rem(10);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: sp-vw(370);
+    height: sp-vw(235);
+    content: '';
+    background-color: $color-black;
+    border-radius: rem(10);
+    opacity: 0.5;
+  }
 
   &:nth-child(3) {
     background-image: url('/image/Trivia.png');
   }
 }
 
-.job-change-container-cover {
-  width: sp-vw(370);
-  height: sp-vw(235);
-  background-color: $color-black;
-  opacity: 0.5;
-}
-
 .job-change-title {
-  position: absolute;
+  position: relative;
+  z-index: 2;
   width: sp-vw(370);
   height: sp-vw(20);
   font-size: clamp(rem(15), sp-vw(20), rem(25));
@@ -53,11 +58,11 @@
 }
 
 .job-change-p {
-  position: absolute;
-  display: block;
+  position: relative;
+  z-index: 2;
   width: sp-vw(252);
   height: sp-vw(40);
-  margin-top: clamp(rem(40), sp-vw(74), rem(90));
+  margin: clamp(rem(40), sp-vw(74), rem(90)) auto 0;
   font-size: clamp(rem(10), sp-vw(14), rem(24));
   line-height: rem(17);
   color: $color-white;
