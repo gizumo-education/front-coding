@@ -12,7 +12,9 @@ export const Jobsearch = () => {
           <section className={styles['select-fields']}>
             <div className={styles['select-field-container']}>
               <select className={styles['select-field']} name='job'>
-                <option value='医療事務'>医療事務</option>
+                <option value='医療事務' selected>
+                  医療事務
+                </option>
                 <option value='調剤事務'>調剤事務</option>
                 <option value='診療情報管理士'>診療情報管理士</option>
                 <option value='歯科助手'>歯科助手</option>
@@ -24,12 +26,14 @@ export const Jobsearch = () => {
             <div className={styles['select-field-container']}>
               <select className={styles['select-field']}>
                 <option value='東京都'>茨城県</option>
-                <option value='東京都'>神奈川県</option>
-                <option value='東京都'>群馬県</option>
-                <option value='東京都'>埼玉県</option>
-                <option value='東京都'>千葉県</option>
-                <option value='東京都'>東京都</option>
-                <option value='東京都'>栃木県</option>
+                <option value='神奈川県'>神奈川県</option>
+                <option value='群馬県'>群馬県</option>
+                <option value='埼玉県'>埼玉県</option>
+                <option value='千葉県'>千葉県</option>
+                <option value='東京都' selected>
+                  東京都
+                </option>
+                <option value='栃木県'>栃木県</option>
               </select>
             </div>
             <div className={styles['select-field-container']}>
@@ -37,7 +41,9 @@ export const Jobsearch = () => {
                 <option value='月給17万～'>月給17万～</option>
                 <option value='月給18万～'>月給18万～</option>
                 <option value='月給19万～'>月給19万～</option>
-                <option value='月給20万～'>月給20万～</option>
+                <option value='月給20万～' selected>
+                  月給20万～
+                </option>
                 <option value='月給21万～'>月給21万～</option>
                 <option value='月給22万～'>月給22万～</option>
                 <option value='月給23万～'>月給23万～</option>
