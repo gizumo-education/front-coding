@@ -16,14 +16,13 @@
 }
 
 .recruit-title {
-  display: flex;
   width: sp-vw(370);
   height: sp-vw(25);
   padding-top: rem(30);
   margin-bottom: rem(35);
-  margin-left: rem(135);
   font-size: rem(22);
   font-weight: bold;
+  text-align: center;
 }
 
 .recruit-img {

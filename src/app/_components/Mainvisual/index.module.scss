@@ -17,7 +17,7 @@
 
 .main-visual-bg {
   z-index: 2;
-  width: $design-sp-width;
+  width: 100vw;
   height: rem(75);
   background-color: $color-black;
   opacity: 0.5;
@@ -26,6 +26,7 @@
 .main-visual-pra {
   position: absolute;
   z-index: 3;
+  width: 100vw;
   font-size: sp-vw(14);
   color: $color-white;
   text-align: center;

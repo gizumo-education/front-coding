@@ -19,13 +19,12 @@
 }
 
 .work-title {
-  justify-content: center;
-  width: sp-vw(110);
-  height: rem(22);
+  width: sp-vw(370);
+  height: sp-vw(22);
   margin-top: 0.9rem;
-  margin-left: 8.1rem;
   font-size: rem(22);
   font-weight: bold;
+  text-align: center;
 }
 
 .work-caption {
