@@ -11,29 +11,29 @@
 
 .recruit {
   width: 100vw;
-  height: 37.5rem;
+  height: sp-vw(600);
   background-color: $color-blue-recruit;
 }
 
 .recruit-title {
   width: sp-vw(370);
   height: sp-vw(25);
-  padding-top: rem(30);
-  margin-bottom: rem(35);
-  font-size: rem(22);
+  padding-top: sp-vw(30);
+  margin-bottom: sp-vw(35);
+  font-size: sp-vw(22);
   font-weight: bold;
   text-align: center;
 }
 
 .recruit-img {
   width: sp-vw(370);
-  height: 13rem;
+  height: sp-vw(208);
   margin-top: rem(35);
 }
 
 .recruit-nav-container {
   position: absolute;
-  top: rem(877);
+  top: sp-vw(877);
   display: flex;
   justify-content: space-between;
   width: $inner-sp-max-width;
@@ -44,23 +44,23 @@
   align-items: center;
   justify-content: center;
   width: sp-vw(42);
-  height: 2.62rem;
+  height: sp-vw(42);
   background-color: $color-white;
   border-radius: 50%;
   opacity: 0.7;
 }
 
 .recruit-nav-arrow {
-  width: rem(7);
-  height: rem(7);
+  width: sp-vw(7);
+  height: sp-vw(7);
   border-top: 1px solid $color-black;
   border-right: 1px solid $color-black;
   transform: rotate(-135deg);
 }
 
 .recruit-nav-arrow-2 {
-  width: rem(7);
-  height: rem(7);
+  width: sp-vw(7);
+  height: sp-vw(7);
   border-top: 1px solid $color-black;
   border-right: 1px solid $color-black;
   transform: rotate(45deg);

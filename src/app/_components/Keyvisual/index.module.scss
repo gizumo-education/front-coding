@@ -13,7 +13,7 @@
   top: 4.3rem;
   display: relative;
   width: sp-vw(400);
-  height: rem(270);
+  height: sp-vw(270);
   background-color: $color-blue;
 }
 
@@ -21,25 +21,25 @@
   position: absolute;
   top: 4.4rem;
   width: sp-vw(400);
-  height: rem(270);
+  height: sp-vw(270);
   object-fit: cover;
 }
 
 .no1-icon {
   position: absolute;
   width: sp-vw(150);
-  height: rem(73);
+  height: sp-vw(73);
   margin-top: 4.5rem;
   margin-left: 12.5rem;
 }
 
 .key-visual-title {
   position: absolute;
-  top: 13.6rem;
-  left: 7.8rem;
+  top: sp-vw(217);
+  left: sp-vw(124);
   display: block;
   width: sp-vw(272);
-  height: rem(22);
+  height: sp-vw(22);
 }
 
 .kyu-jin-container {
@@ -48,17 +48,17 @@
 
 .kyu-jin-flame {
   position: absolute;
-  top: 16.1rem;
-  left: 11.8rem;
+  top: sp-vw(258);
+  left: sp-vw(188);
   width: sp-vw(170);
-  height: rem(30);
+  height: sp-vw(30);
 }
 
 .kyu-jin-suu {
   position: absolute;
-  top: 16.3rem;
-  left: 13.3rem;
+  top: sp-vw(256);
+  left: sp-vw(208);
   width: sp-vw(123);
-  height: rem(23);
+  height: sp-vw(23);
   object-fit: contain;
 }
