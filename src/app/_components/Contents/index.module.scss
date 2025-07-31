@@ -10,7 +10,7 @@
   margin: 0 auto;
 }
 
-.job-changes-title {
+.job-changes-contents {
   width: $inner-sp-max-width;
   margin-top: clamp(rem(40), sp-vw(60), rem(80));
   margin-bottom: clamp(rem(30), sp-vw(35), rem(65));
@@ -46,7 +46,7 @@
   }
 }
 
-.job-change-title {
+.content-title {
   position: relative;
   z-index: 2;
   width: sp-vw(370);
@@ -57,7 +57,7 @@
   text-align: center;
 }
 
-.job-change-p {
+.content-text {
   position: relative;
   z-index: 2;
   width: sp-vw(252);
@@ -67,4 +67,20 @@
   line-height: rem(17);
   color: $color-white;
   text-align: center;
+}
+
+.column-button {
+  width: rem(370);
+  height: rem(60);
+  padding: 0.75rem 0;
+  font-size: sp-vw(18);
+  font-weight: bold;
+  color: $color-white;
+  text-align: center;
+  background-color: $color-dot-pink;
+  border-radius: rem(50);
+}
+
+.column-button:hover {
+  opacity: 0.7;
 }
