@@ -12,10 +12,11 @@
 
 .features-title {
   width: $inner-sp-max-width;
-  margin: clamp(rem(1300), sp-vw(1360), rem(1400)) 0
-    clamp(rem(30), sp-vw(35), rem(40)) clamp(rem(50), sp-vw(69), rem(75));
-  font-size: clamp(rem(21), sp-vw(25), rem(30));
+  margin-top: clamp(rem(1300), sp-vw(1360), rem(1400));
+  margin-bottom: clamp(rem(30), sp-vw(35), rem(65));
+  font-size: clamp(rem(16), sp-vw(25), rem(32));
   font-weight: bold;
+  text-align: center;
 }
 
 .feature-container {
@@ -24,7 +25,7 @@
   height: sp-vw(144);
   padding: clamp(rem(25), sp-vw(30), rem(35)) 0;
   margin: 0 auto;
-  margin-bottom: clamp(rem(15), sp-vw(21), rem(26));
+  margin-bottom: clamp(rem(16), sp-vw(21), rem(30));
   background-color: $color-pink-feature-container;
   border-radius: rem(10);
 
@@ -43,7 +44,7 @@
   height: sp-vw(20);
   font-size: clamp(rem(15), sp-vw(20), rem(25));
   font-weight: bold;
-  color: $color-pink-feature-title;
+  color: $color-dot-pink;
   text-align: center;
 }
 
@@ -52,7 +53,7 @@
   display: block;
   width: sp-vw(336);
   height: sp-vw(34);
-  margin-top: clamp(rem(45), sp-vw(50), rem(55));
+  margin-top: clamp(rem(40), sp-vw(50), rem(65));
   margin-left: clamp(rem(12), sp-vw(17), rem(22));
   font-size: clamp(rem(10), sp-vw(12), rem(15));
   line-height: rem(17);
