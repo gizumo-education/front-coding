@@ -78,10 +78,6 @@
   }
 }
 
-// .select-field:first-child {
-//   margin-left: 1.5rem;
-// }
-
 .input-field {
   display: flex;
   align-items: center;
@@ -116,6 +112,10 @@
   color: $color-white;
   background-color: $color-peach;
   border-radius: 50px;
+}
+
+.search-button:hover {
+  opacity: 0.7;
 }
 
 .find-glass {

@@ -18,7 +18,7 @@
 .recruit-title {
   display: flex;
   width: sp-vw(370);
-  height: rem(25);
+  height: sp-vw(25);
   padding-top: rem(30);
   margin-bottom: rem(35);
   margin-left: rem(135);
@@ -119,4 +119,8 @@
   text-align: center;
   background-color: $color-peach;
   border-radius: rem(50);
+}
+
+.recruit-button:hover {
+  opacity: 0.7;
 }
