@@ -14,7 +14,7 @@ export const Jobsearch = () => {
               <select
                 className={styles['select-field']}
                 name='job'
-                value='医療事務'
+                defaultValue='医療事務'
               >
                 <option value='医療事務'>医療事務</option>
                 <option value='調剤事務'>調剤事務</option>
@@ -26,7 +26,7 @@ export const Jobsearch = () => {
               </select>
             </div>
             <div className={styles['select-field-container']}>
-              <select className={styles['select-field']} value='東京都'>
+              <select className={styles['select-field']} defaultValue='東京都'>
                 <option value='茨城県'>茨城県</option>
                 <option value='神奈川県'>神奈川県</option>
                 <option value='群馬県'>群馬県</option>
@@ -37,7 +37,10 @@ export const Jobsearch = () => {
               </select>
             </div>
             <div className={styles['select-field-container']}>
-              <select className={styles['select-field']} value='月給20万～'>
+              <select
+                className={styles['select-field']}
+                defaultValue='月給20万～'
+              >
                 <option value='月給17万～'>月給17万～</option>
                 <option value='月給18万～'>月給18万～</option>
                 <option value='月給19万～'>月給19万～</option>
