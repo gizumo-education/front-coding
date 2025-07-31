@@ -12,9 +12,7 @@ export const Jobsearch = () => {
           <section className={styles['select-fields']}>
             <div className={styles['select-field-container']}>
               <select className={styles['select-field']} name='job'>
-                <option value='医療事務' selected>
-                  医療事務
-                </option>
+                <option value='医療事務'>医療事務</option>
                 <option value='調剤事務'>調剤事務</option>
                 <option value='診療情報管理士'>診療情報管理士</option>
                 <option value='歯科助手'>歯科助手</option>

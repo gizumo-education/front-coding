@@ -69,6 +69,7 @@
       z-index: 50;
       width: rem(0);
       height: rem(0);
+      pointer-events: none;
       content: '';
       border-top: rem(8) solid $color-pink;
       border-right: rem(5) solid transparent;
