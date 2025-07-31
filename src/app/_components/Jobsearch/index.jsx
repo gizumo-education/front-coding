@@ -23,7 +23,13 @@ export const Jobsearch = () => {
             </div>
             <div className={styles['select-field-container']}>
               <select className={styles['select-field']}>
+                <option value='東京都'>茨城県</option>
+                <option value='東京都'>神奈川県</option>
+                <option value='東京都'>群馬県</option>
+                <option value='東京都'>埼玉県</option>
+                <option value='東京都'>千葉県</option>
                 <option value='東京都'>東京都</option>
+                <option value='東京都'>栃木県</option>
               </select>
             </div>
             <div className={styles['select-field-container']}>
