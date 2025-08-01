@@ -4,30 +4,31 @@ export const Keyvisual = () => {
   return (
     <main className={styles['main']}>
       <section className={styles['key-visual-container']}>
-        <div className={styles['key-visual']}>
+        <div>
           <img
-            src='/images/キービジュアルSP.png'
+            src='/image/pcキービジュアル.png'
             alt='キービジュアル女性画像'
             width='400'
             height='270'
+            className={styles['key-visual']}
           />
         </div>
         <section className={styles['inner']}>
-          <img
-            src='/images/使ってよかったサイト.png'
-            alt='使ってよかった転職サイト'
-            width='150'
-            height='73'
-            className={styles['no1-icon']}
-          />
-          <img
-            src='/images/医療事務求人を探すならソラジョブ.png'
-            alt='医療事務求人'
-            width='272'
-            height='22'
-            className={styles['key-visual-title']}
-          />
-          <section className={styles['kyu-jin-container']}>
+          <div className={styles['key-visual-items']}>
+            <img
+              src='/images/使ってよかったサイト.png'
+              alt='使ってよかった転職サイト'
+              width='150'
+              height='73'
+              className={styles['no1-icon']}
+            />
+            <img
+              src='/images/医療事務求人を探すならソラジョブ.png'
+              alt='医療事務求人'
+              width='272'
+              height='22'
+              className={styles['key-visual-title']}
+            />
             <div className={styles['kyu-jin-flame']}>
               <div className={styles['kyu-jin-suu-container']}>
                 <span className={styles['kyu-jin-suu']}>
@@ -37,7 +38,7 @@ export const Keyvisual = () => {
                 <span className={styles['kyu-jin-suu']}>件</span>
               </div>
             </div>
-          </section>
+          </div>
         </section>
       </section>
     </main>
