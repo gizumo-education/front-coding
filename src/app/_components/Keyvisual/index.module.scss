@@ -1,0 +1,65 @@
+@use '@/styles' as *;
+
+.main {
+  width: $design-sp-width;
+}
+
+.inner {
+  width: $inner-sp-max-width;
+  margin: 0 auto;
+}
+
+.key-visual-container {
+  top: 4.3rem;
+  display: relative;
+  width: clamp(rem(370), sp-vw(400), rem(440));
+  height: clamp(rem(200), sp-vw(270), rem(330));
+  background-color: $color-blue;
+}
+
+.key-visual {
+  position: absolute;
+  top: 4.4rem;
+  width: sp-vw(400);
+  height: sp-vw(270);
+  object-fit: cover;
+}
+
+.no1-icon {
+  position: absolute;
+  width: clamp(rem(100), sp-vw(150), rem(180));
+  height: clamp(rem(60), sp-vw(73), rem(80));
+  margin-top: clamp(rem(60), sp-vw(72), rem(80));
+  margin-left: clamp(rem(160), sp-vw(200), rem(250));
+}
+
+.key-visual-title {
+  position: absolute;
+  top: sp-vw(217);
+  left: sp-vw(124);
+  display: block;
+  width: clamp(rem(250), sp-vw(272), rem(300));
+  height: clamp(rem(18), sp-vw(22), rem(25));
+}
+
+.kyu-jin-container {
+  display: block;
+}
+
+.kyu-jin-flame {
+  position: absolute;
+  top: sp-vw(258);
+  left: sp-vw(188);
+  width: clamp(rem(100), sp-vw(170), rem(220));
+  height: clamp(rem(22), sp-vw(30), rem(40));
+}
+
+.kyu-jin-suu {
+  position: absolute;
+  top: sp-vw(256);
+  left: sp-vw(208);
+  width: clamp(rem(100), sp-vw(123), rem(160));
+  height: clamp(rem(18), sp-vw(23), rem(35));
+  margin-top: clamp(rem(4), sp-vw(8), rem(20));
+  object-fit: contain;
+}

@@ -1,0 +1,125 @@
+@use '@/styles' as *;
+
+.main {
+  width: $design-sp-width;
+}
+
+.inner {
+  width: $inner-sp-max-width;
+  margin: 0 auto;
+}
+
+.recruit {
+  width: 100vw;
+  height: sp-vw(600);
+  background-color: $color-blue-recruit;
+}
+
+.recruit-title {
+  width: sp-vw(370);
+  height: sp-vw(25);
+  padding-top: sp-vw(30);
+  margin-bottom: sp-vw(35);
+  font-size: sp-vw(22);
+  font-weight: bold;
+  text-align: center;
+}
+
+.recruit-img {
+  width: sp-vw(370);
+  height: sp-vw(208);
+  margin-top: rem(35);
+}
+
+.recruit-nav-container {
+  position: absolute;
+  top: sp-vw(877);
+  display: flex;
+  justify-content: space-between;
+  width: $inner-sp-max-width;
+}
+
+.recruit-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(42);
+  height: sp-vw(42);
+  background-color: $color-white;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.recruit-nav-arrow {
+  width: sp-vw(7);
+  height: sp-vw(7);
+  border-top: 1px solid $color-black;
+  border-right: 1px solid $color-black;
+  transform: rotate(-135deg);
+}
+
+.recruit-nav-arrow-2 {
+  width: sp-vw(7);
+  height: sp-vw(7);
+  border-top: 1px solid $color-black;
+  border-right: 1px solid $color-black;
+  transform: rotate(45deg);
+}
+
+.recruit-caption {
+  margin-top: 0.62rem;
+  margin-bottom: 0.75rem;
+  font-size: sp-vw(16);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.recruit-info {
+  display: inline-block;
+  margin-bottom: 2.8rem;
+}
+
+.info-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(60);
+  height: 1.31rem;
+  margin-top: 0.25rem;
+  font-size: sp-vw(14);
+  text-decoration: none;
+  background-color: $color-pink-recruit;
+}
+
+.info-title:first-child {
+  margin-top: 0;
+}
+
+.info-detail {
+  width: sp-vw(120);
+  height: 1.31rem;
+  margin-top: 0.25rem;
+  margin-left: 1.31rem;
+  font-size: sp-vw(14);
+  text-decoration: none;
+}
+
+.info-detail:first-child {
+  margin-top: 0;
+}
+
+.recruit-button {
+  width: rem(370);
+  height: rem(60);
+  padding: 0.75rem 0;
+  font-size: sp-vw(18);
+  font-weight: bold;
+  color: $color-white;
+  text-align: center;
+  background-color: $color-peach;
+  border-radius: rem(50);
+}
+
+.recruit-button:hover {
+  opacity: 0.7;
+}
