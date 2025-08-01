@@ -6,7 +6,7 @@ export const Flow = () => {
       <section className={styles['inner']}>
         <h1 className={styles['flow-title']}>転職までの流れ</h1>
         <div className={styles['flame']}>
-          <div className={styles['step-1']}>STEP1</div>
+          <div className={styles['step']}>STEP{'\n'}1</div>
           <img
             src='/icon/skill-seat.png'
             alt='スキルシート'
@@ -22,7 +22,7 @@ export const Flow = () => {
         </div>
         <div className={styles['flow-allow']}></div>
         <div className={styles['flame']}>
-          <div className={styles['step-1']}>STEP1</div>
+          <div className={styles['step']}>STEP{'\n'}2</div>
           <img
             src='/icon/magnifying-glass.png'
             alt='虫眼鏡'
@@ -38,7 +38,7 @@ export const Flow = () => {
         </div>
         <div className={styles['flow-allow']}></div>
         <div className={styles['flame']}>
-          <div className={styles['step-1']}>STEP1</div>
+          <div className={styles['step']}>STEP{'\n'}3</div>
           <img
             src='/icon/apply.png'
             alt='メールアイコン'
@@ -54,7 +54,7 @@ export const Flow = () => {
         </div>
         <div className={styles['flow-allow']}></div>
         <div className={styles['flame']}>
-          <div className={styles['step-1']}>STEP1</div>
+          <div className={styles['step']}>STEP{'\n'}4</div>
           <img
             src='/icon/job-offer.png'
             alt='キラキラ'

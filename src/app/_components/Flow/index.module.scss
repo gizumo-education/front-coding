@@ -31,16 +31,19 @@
   margin-top: rem(35);
 }
 
-.step-1 {
+.step {
+  display: flex;
   align-items: center;
+  justify-content: center;
   width: sp-vw(45);
   height: sp-vw(45);
   margin-top: clamp(rem(5), sp-vw(10), rem(15));
   margin-left: clamp(rem(5), sp-vw(10), rem(15));
   font-size: clamp(rem(5), sp-vw(10), rem(15));
-  line-height: sp-vw(45);
+  line-height: 1.5;
   color: $color-white;
   text-align: center;
+  white-space: pre-line;
   background-color: $color-peach;
   border-radius: 50%;
 }

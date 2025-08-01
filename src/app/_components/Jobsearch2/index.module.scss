@@ -11,8 +11,9 @@
 
 .work-flame {
   width: sp-vw(370);
-  height: rem(240);
-  padding-top: rem(5);
+  height: sp-vw(240);
+  padding-top: sp-vw(5);
+  margin: 0 auto;
   margin-bottom: sp-vw(100);
   background-color: $color-sky-blue;
   border-radius: 5%;
@@ -22,14 +23,14 @@
   width: sp-vw(370);
   height: sp-vw(22);
   margin-top: 0.9rem;
-  font-size: rem(22);
+  font-size: sp-vw(22);
   font-weight: bold;
   text-align: center;
 }
 
 .work-caption {
   width: sp-vw(294);
-  height: rem(20);
+  height: sp-vw(20);
   margin: 0 auto;
   margin-top: 1rem;
   font-size: sp-vw(14);
@@ -49,7 +50,7 @@
   display: flex;
   align-items: center;
   width: sp-vw(100);
-  height: rem(30);
+  height: sp-vw(30);
   padding: 0 0.2rem;
   font-size: sp-vw(12);
   font-weight: 400;
@@ -82,7 +83,7 @@
   display: flex;
   align-items: center;
   width: sp-vw(320);
-  height: rem(30);
+  height: sp-vw(30);
   margin: 0 auto;
   font-size: sp-vw(14);
   font-weight: 400;
@@ -102,7 +103,7 @@
   gap: 15;
   align-items: center;
   width: sp-vw(160);
-  height: rem(40);
+  height: sp-vw(40);
   padding-left: 1rem;
   margin: 0 auto;
   margin-top: 0.93rem;
