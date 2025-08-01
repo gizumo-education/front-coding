@@ -12,8 +12,8 @@
 .key-visual-container {
   top: 4.3rem;
   display: relative;
-  width: sp-vw(400);
-  height: sp-vw(270);
+  width: clamp(rem(370), sp-vw(400), rem(440));
+  height: clamp(rem(200), sp-vw(270), rem(330));
   background-color: $color-blue;
 }
 
@@ -27,10 +27,10 @@
 
 .no1-icon {
   position: absolute;
-  width: sp-vw(150);
-  height: sp-vw(73);
-  margin-top: 4.5rem;
-  margin-left: 12.5rem;
+  width: clamp(rem(100), sp-vw(150), rem(180));
+  height: clamp(rem(60), sp-vw(73), rem(80));
+  margin-top: clamp(rem(60), sp-vw(72), rem(80));
+  margin-left: clamp(rem(160), sp-vw(200), rem(250));
 }
 
 .key-visual-title {
@@ -38,8 +38,8 @@
   top: sp-vw(217);
   left: sp-vw(124);
   display: block;
-  width: sp-vw(272);
-  height: sp-vw(22);
+  width: clamp(rem(250), sp-vw(272), rem(300));
+  height: clamp(rem(18), sp-vw(22), rem(25));
 }
 
 .kyu-jin-container {
@@ -50,16 +50,16 @@
   position: absolute;
   top: sp-vw(258);
   left: sp-vw(188);
-  width: sp-vw(170);
-  height: sp-vw(30);
+  width: clamp(rem(100), sp-vw(170), rem(220));
+  height: clamp(rem(22), sp-vw(30), rem(40));
 }
 
 .kyu-jin-suu {
   position: absolute;
   top: sp-vw(256);
   left: sp-vw(208);
-  width: sp-vw(123);
-  height: sp-vw(23);
-  margin-top: sp-vw(8);
+  width: clamp(rem(100), sp-vw(123), rem(160));
+  height: clamp(rem(18), sp-vw(23), rem(35));
+  margin-top: clamp(rem(4), sp-vw(8), rem(20));
   object-fit: contain;
 }
