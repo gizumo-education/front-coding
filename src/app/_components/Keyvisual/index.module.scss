@@ -2,19 +2,29 @@
 
 .main {
   width: $design-sp-width;
+  @include media-pc {
+    width: $design-pc-width;
+  }
 }
 
 .inner {
   width: $inner-sp-max-width;
   margin: 0 auto;
+  @include media-pc {
+    width: $inner-pc-max-width;
+  }
 }
 
 .key-visual-container {
+  position: relative;
   top: 4.3rem;
-  display: relative;
   width: clamp(rem(370), sp-vw(400), rem(440));
   height: clamp(rem(200), sp-vw(270), rem(330));
   background-color: $color-blue;
+  @include media-pc {
+    width: 100vw;
+    height: clamp(rem(450), pc-vw(500), rem(550));
+  }
 }
 
 .key-visual {
@@ -23,6 +33,15 @@
   width: sp-vw(400);
   height: sp-vw(270);
   object-fit: cover;
+
+  // background-image: url('/image/pcキービジュアル.png');
+
+  @include media-pc {
+    width: clamp(rem(1200), pc-vw(1262), rem(1300));
+    height: clamp(rem(450), pc-vw(500), rem(550));
+    margin: 0 auto;
+    object-position: center top;
+  }
 }
 
 .no1-icon {
@@ -31,6 +50,12 @@
   height: clamp(rem(60), sp-vw(73), rem(80));
   margin-top: clamp(rem(60), sp-vw(72), rem(80));
   margin-left: clamp(rem(160), sp-vw(200), rem(250));
+  @include media-pc {
+    width: clamp(rem(300), pc-vw(341), rem(380));
+    height: clamp(rem(120), pc-vw(168), rem(200));
+    margin-top: clamp(rem(120), pc-vw(156), rem(200));
+    margin-left: clamp(rem(120), pc-vw(830), rem(200));
+  }
 }
 
 .key-visual-title {
@@ -40,6 +65,12 @@
   display: block;
   width: clamp(rem(250), sp-vw(272), rem(300));
   height: clamp(rem(18), sp-vw(22), rem(25));
+  @include media-pc {
+    top: clamp(rem(300), pc-vw(365), rem(400));
+    left: clamp(rem(580), pc-vw(607), rem(650));
+    width: clamp(rem(750), pc-vw(800), rem(880));
+    height: clamp(rem(55), pc-vw(65), rem(75));
+  }
 }
 
 .kyu-jin-container {
@@ -52,6 +83,12 @@
   left: sp-vw(188);
   width: clamp(rem(100), sp-vw(170), rem(220));
   height: clamp(rem(22), sp-vw(30), rem(40));
+  @include media-pc {
+    top: clamp(rem(400), pc-vw(484), rem(500));
+    left: clamp(rem(760), pc-vw(809), rem(860));
+    width: clamp(rem(300), pc-vw(391), rem(440));
+    height: clamp(rem(55), pc-vw(69), rem(75));
+  }
 }
 
 .kyu-jin-suu {
@@ -62,4 +99,10 @@
   height: clamp(rem(18), sp-vw(23), rem(35));
   margin-top: clamp(rem(4), sp-vw(8), rem(20));
   object-fit: contain;
+  @include media-pc {
+    top: clamp(rem(400), pc-vw(489), rem(500));
+    left: clamp(rem(760), pc-vw(851), rem(860));
+    width: clamp(rem(280), pc-vw(308), rem(380));
+    height: clamp(rem(40), pc-vw(58), rem(75));
+  }
 }

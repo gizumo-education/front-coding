@@ -11,11 +11,11 @@ import { Mainvisual } from './_components/Mainvisual'
 const Top = () => {
   return (
     <>
+      <Header />
       <Keyvisual />
       <Jobsearch />
       <Recruitment />
       <Mainvisual />
-      <Header />
       <Features />
       <Flow />
       <Contents />

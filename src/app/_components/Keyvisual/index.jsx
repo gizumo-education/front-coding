@@ -4,13 +4,14 @@ export const Keyvisual = () => {
   return (
     <main className={styles['main']}>
       <section className={styles['key-visual-container']}>
-        <img
-          src='/images/キービジュアルSP.png'
-          alt='キービジュアル女性画像'
-          width='400'
-          height='270'
-          className={styles['key-visual']}
-        />
+        <div className={styles['key-visual']}>
+          <img
+            src='/image/pcキービジュアル.png'
+            alt='キービジュアル女性画像'
+            width='400'
+            height='270'
+          />
+        </div>
         <section className={styles['inner']}>
           <img
             src='/images/使ってよかったサイト.png'
