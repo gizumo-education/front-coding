@@ -35,13 +35,11 @@ export const Keyvisual = () => {
               height='30'
               className={styles['kyu-jin-flame']}
             />
-            <img
-              src='/images/現在の求人掲載数.png'
-              alt='掲載数'
-              width='123'
-              height='23'
-              className={styles['kyu-jin-suu']}
-            />
+            <div className={styles['kyu-jin-suu-container']}>
+              <span className={styles['kyu-jin-suu']}>現在の求人掲載数：</span>
+              <span className={styles['kyu-jin-suu']}>2,320</span>
+              <span className={styles['kyu-jin-suu']}>件</span>
+            </div>
           </section>
         </section>
       </section>
