@@ -6,7 +6,7 @@ export const Keyvisual = () => {
       <section className={styles['key-visual-container']}>
         <div className={styles['key-visual']}>
           <img
-            src='/image/pcキービジュアル.png'
+            src='/images/キービジュアルSP.png'
             alt='キービジュアル女性画像'
             width='400'
             height='270'
@@ -28,17 +28,14 @@ export const Keyvisual = () => {
             className={styles['key-visual-title']}
           />
           <section className={styles['kyu-jin-container']}>
-            <img
-              src='/images/求人掲載数枠.png'
-              alt='求人掲載の枠'
-              width='170'
-              height='30'
-              className={styles['kyu-jin-flame']}
-            />
-            <div className={styles['kyu-jin-suu-container']}>
-              <span className={styles['kyu-jin-suu']}>現在の求人掲載数：</span>
-              <span className={styles['kyu-jin-suu']}>2,320</span>
-              <span className={styles['kyu-jin-suu']}>件</span>
+            <div className={styles['kyu-jin-flame']}>
+              <div className={styles['kyu-jin-suu-container']}>
+                <span className={styles['kyu-jin-suu']}>
+                  現在の求人掲載数：
+                </span>
+                <span className={styles['kyu-jin-suu']}>2,320</span>
+                <span className={styles['kyu-jin-suu']}>件</span>
+              </div>
             </div>
           </section>
         </section>

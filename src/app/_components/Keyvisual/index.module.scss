@@ -17,9 +17,8 @@
 
 .key-visual-container {
   position: relative;
-  top: 4.3rem;
-  width: clamp(rem(370), sp-vw(400), rem(440));
-  height: clamp(rem(200), sp-vw(270), rem(330));
+  width: sp-vw(400);
+  height: sp-vw(270);
   background-color: $color-blue;
   @include media-pc {
     width: 100vw;
@@ -29,27 +28,27 @@
 
 .key-visual {
   position: absolute;
-  top: 4.4rem;
   width: sp-vw(400);
   height: sp-vw(270);
-  object-fit: cover;
 
-  // background-image: url('/image/pcキービジュアル.png');
+  // object-fit: contain;
 
   @include media-pc {
-    width: clamp(rem(1200), pc-vw(1262), rem(1300));
-    height: clamp(rem(450), pc-vw(500), rem(550));
+    width: pc-vw(1262);
+    height: pc-vw(500);
     margin: 0 auto;
+    object-fit: contain;
     object-position: center top;
+    background-image: url('/image/pcキービジュアル.png');
   }
 }
 
 .no1-icon {
   position: absolute;
-  width: clamp(rem(100), sp-vw(150), rem(180));
-  height: clamp(rem(60), sp-vw(73), rem(80));
-  margin-top: clamp(rem(60), sp-vw(72), rem(80));
-  margin-left: clamp(rem(160), sp-vw(200), rem(250));
+  width: sp-vw(150);
+  height: sp-vw(73);
+  margin-top: sp-vw(60);
+  margin-left: sp-vw(200);
   @include media-pc {
     width: clamp(rem(300), pc-vw(341), rem(380));
     height: clamp(rem(120), pc-vw(168), rem(200));
@@ -60,11 +59,11 @@
 
 .key-visual-title {
   position: absolute;
-  top: sp-vw(217);
+  top: sp-vw(140);
   left: sp-vw(124);
   display: block;
-  width: clamp(rem(250), sp-vw(272), rem(300));
-  height: clamp(rem(18), sp-vw(22), rem(25));
+  width: sp-vw(272);
+  height: sp-vw(22);
   @include media-pc {
     top: clamp(rem(300), pc-vw(365), rem(400));
     left: clamp(rem(580), pc-vw(607), rem(650));
@@ -82,11 +81,13 @@
   top: sp-vw(180);
   left: sp-vw(188);
   display: flex;
+  justify-content: center;
   width: clamp(rem(100), sp-vw(170), rem(220));
   height: clamp(rem(22), sp-vw(30), rem(40));
+  background-color: $color-white;
+  border: rem(1) solid $color-light-green;
+  border-radius: 10px;
   @include media-pc {
-    top: clamp(rem(400), pc-vw(484), rem(500));
-    left: clamp(rem(760), pc-vw(809), rem(860));
     width: clamp(rem(300), pc-vw(391), rem(440));
     height: clamp(rem(55), pc-vw(69), rem(75));
   }
@@ -94,35 +95,37 @@
 
 .kyu-jin-suu-container {
   position: relative;
-  top: sp-vw(150);
-  left: sp-vw(208);
+
   display: flex;
   justify-content: center;
-  width: sp-vw(123);
-  height: sp-vw(23);
+  width: pc-vw(123);
+  height: pc-vw(23);
+  @include media-pc {
+    width: clamp(rem(280), pc-vw(308), rem(380));
+    height: clamp(rem(40), pc-vw(58), rem(75));
+  }
 }
 
 .kyu-jin-suu {
-  top: sp-vw(150);
-  left: sp-vw(208);
   display: flex;
   align-items: end;
   width: clamp(rem(100), sp-vw(123), rem(160));
   height: clamp(rem(18), sp-vw(23), rem(35));
-  margin-top: clamp(rem(4), sp-vw(8), rem(20));
+  font-size: sp-vw(8);
+  color: $color-light-green;
+  white-space: nowrap;
   object-fit: contain;
   @include media-pc {
-    top: clamp(rem(400), pc-vw(489), rem(500));
-    left: clamp(rem(760), pc-vw(851), rem(860));
+    position: absolute;
     width: clamp(rem(280), pc-vw(308), rem(380));
     height: clamp(rem(40), pc-vw(58), rem(75));
     font-size: sp-vw(8);
     color: $color-light-green;
     white-space: nowrap;
+  }
 
-    &:nth-child(2) {
-      font-size: sp-vw(16);
-      font-weight: bold;
-    }
+  &:nth-child(2) {
+    font-size: sp-vw(16);
+    font-weight: bold;
   }
 }
