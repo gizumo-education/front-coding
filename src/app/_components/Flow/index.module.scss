@@ -3,11 +3,17 @@
 .main {
   width: $design-sp-width;
   margin: 0 auto;
+  @include media-pc {
+    width: $design-pc-width;
+  }
 }
 
 .inner {
   width: $inner-sp-max-width;
   margin: 0 auto;
+  @include media-pc {
+    width: $inner-pc-max-width;
+  }
 }
 
 .flow-title {
@@ -16,6 +22,9 @@
   font-size: clamp(rem(16), sp-vw(25), rem(32));
   font-weight: bold;
   text-align: center;
+  @include media-pc {
+    width: $inner-pc-max-width;
+  }
 }
 
 .flame {

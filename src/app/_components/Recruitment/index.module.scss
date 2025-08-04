@@ -103,7 +103,8 @@
   justify-content: space-between;
   width: $inner-sp-max-width;
   @include media-pc {
-    width: $inner-pc-max-width;
+    top: pc-vw(1530);
+    width: pc-vw(1180);
   }
 }
 
