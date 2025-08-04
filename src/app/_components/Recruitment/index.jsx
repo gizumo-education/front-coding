@@ -5,7 +5,7 @@ export const Recruitment = () => {
     <main className={styles['main']}>
       <section className={styles['recruit']}>
         <section className={styles['inner']}>
-          <article>
+          <article className={styles['article']}>
             <div className={styles['recruit-title']}>
               <h1>新着求人</h1>
             </div>

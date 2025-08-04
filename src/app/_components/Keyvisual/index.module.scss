@@ -23,7 +23,7 @@
   background-color: $color-blue;
   @include media-pc {
     width: $design-pc-width;
-    height: clamp(rem(450), pc-vw(500), rem(550));
+    height: pc-vw(500);
   }
 }
 
@@ -34,10 +34,9 @@
   object-fit: cover;
 
   @include media-pc {
-    width: $inner-pc-max-width;
-    height: 100vw;
+    width: $design-pc-width;
+    height: pc-vw(500);
     margin: 0 auto;
-    margin-left: pc-vw(175);
     object-fit: contain;
   }
 }
