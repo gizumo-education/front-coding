@@ -23,6 +23,7 @@
   @include media-pc {
     width: $design-pc-width;
     height: pc-vw(636);
+    padding-bottom: pc-vw(64);
   }
 }
 
@@ -76,6 +77,7 @@
   @include media-pc {
     width: pc-vw(100);
     height: pc-vw(30);
+    padding-top: pc-vw(64);
     margin-bottom: pc-vw(63);
     font-size: pc-vw(25);
     font-weight: normal;
@@ -222,6 +224,8 @@
   @include media-pc {
     width: pc-vw(360);
     height: pc-vw(60);
+
+    // padding-bottom: pc-vw(67);
     margin-left: pc-vw(410);
     font-size: pc-vw(18);
   }
