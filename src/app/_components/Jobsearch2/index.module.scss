@@ -51,7 +51,7 @@
   align-items: center;
   width: sp-vw(100);
   height: sp-vw(30);
-  padding: 0 0.2rem;
+  padding: 0 sp-vw(4);
   font-size: sp-vw(12);
   font-weight: 400;
   background-color: $color-white;
@@ -84,6 +84,7 @@
   align-items: center;
   width: sp-vw(320);
   height: sp-vw(30);
+  padding: 0 sp-vw(4);
   margin: 0 auto;
   font-size: sp-vw(14);
   font-weight: 400;
