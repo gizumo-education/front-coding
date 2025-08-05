@@ -84,6 +84,8 @@
   @include media-pc {
     gap: pc-vw(15);
     width: pc-vw(603);
+    margin-right: pc-vw(15);
+    margin-left: 0;
   }
 }
 
@@ -146,7 +148,6 @@
   border-color: $color-pink;
   border-radius: 5px;
   @include media-pc {
-    // display: inline-block;
     width: pc-vw(300);
     height: pc-vw(60);
     margin: clamp(rem(12), pc-vw(14.8), rem(16))
@@ -179,7 +180,6 @@
     width: pc-vw(140);
     height: pc-vw(60);
     margin: 0;
-    margin-top: clamp(rem(14), pc-vw(14.8), rem(16));
     font-size: pc-vw(18);
   }
 }

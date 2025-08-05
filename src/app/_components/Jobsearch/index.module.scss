@@ -80,6 +80,8 @@
   @include media-pc {
     gap: pc-vw(15);
     width: pc-vw(603);
+    margin-right: pc-vw(15);
+    margin-left: 0;
   }
 }
 
