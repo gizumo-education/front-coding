@@ -69,6 +69,7 @@
 .select-fields-item {
   @include media-pc {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: $inner-pc-max-width;
   }
@@ -145,7 +146,7 @@
   border-color: $color-pink;
   border-radius: 5px;
   @include media-pc {
-    display: inline-block;
+    // display: inline-block;
     width: pc-vw(300);
     height: pc-vw(60);
     margin: clamp(rem(12), pc-vw(14.8), rem(16))
