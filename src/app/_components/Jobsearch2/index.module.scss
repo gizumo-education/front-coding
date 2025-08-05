@@ -2,8 +2,10 @@
 
 .main {
   width: $design-sp-width;
+  margin: 0 auto;
   @include media-pc {
     width: $design-pc-width;
+    margin: 0 auto;
   }
 }
 
@@ -77,6 +79,7 @@
   gap: sp-vw(10);
   width: sp-vw(370);
   margin: clamp(rem(12), sp-vw(14.8), rem(16)) 0;
+  margin-left: sp-vw(25);
   @include media-pc {
     gap: pc-vw(15);
     width: pc-vw(603);
@@ -114,9 +117,9 @@
       height: sp-vw(0);
       pointer-events: none;
       content: '';
-      border-top: pc-vw(8) solid $color-pink;
-      border-right: pc-vw(5) solid transparent;
-      border-left: pc-vw(5) solid transparent;
+      border-top: sp-vw(8) solid $color-pink;
+      border-right: sp-vw(5) solid transparent;
+      border-left: sp-vw(5) solid transparent;
       transform: translateY(-50%);
       @include media-pc {
         border-top: pc-vw(16) solid $color-pink;
@@ -132,6 +135,7 @@
   align-items: center;
   width: sp-vw(320);
   height: sp-vw(30);
+  padding: 0 clamp(rem(2), sp-vw(3.2), rem(4));
   margin: 0 auto;
   font-size: sp-vw(14);
   font-weight: 400;

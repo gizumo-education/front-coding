@@ -17,9 +17,11 @@
 }
 
 .job-changes {
-  display: flex;
-  gap: 15;
-  justify-content: center;
+  @include media-pc {
+    display: flex;
+    gap: 15;
+    justify-content: center;
+  }
 }
 
 .job-changes-contents {
@@ -45,7 +47,9 @@
   margin: 0 auto;
   margin-bottom: clamp(rem(16), sp-vw(21), rem(30));
   background-image: url('/image/jobchange.png');
-  border-radius: rem(10);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: sp-vw(5);
   @include media-pc {
     width: pc-vw(380);
     height: pc-vw(240);
@@ -61,7 +65,7 @@
     height: sp-vw(235);
     content: '';
     background-color: $color-black;
-    border-radius: rem(10);
+    border-radius: sp-vw(5);
     opacity: 0.5;
     @include media-pc {
       width: pc-vw(380);
@@ -69,7 +73,7 @@
     }
   }
 
-  &:nth-child(3) {
+  &:nth-child(2) {
     background-image: url('/image/Trivia.png');
   }
 
@@ -113,8 +117,10 @@
 }
 
 .column-button-container {
-  width: $inner-pc-max-width;
-  text-align: center;
+  @include media-pc {
+    width: $inner-pc-max-width;
+    text-align: center;
+  }
 }
 
 .column-button {

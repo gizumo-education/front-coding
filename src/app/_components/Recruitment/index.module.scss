@@ -88,7 +88,7 @@
     height: pc-vw(30);
     padding-top: pc-vw(64);
     margin-bottom: pc-vw(63);
-    margin-left: pc-vw(250);
+    margin-left: pc-vw(150);
     font-size: pc-vw(25);
     font-weight: normal;
     text-align: left;
@@ -113,9 +113,9 @@
   justify-content: space-between;
   width: $inner-sp-max-width;
   @include media-pc {
-    top: pc-vw(1320);
+    top: pc-vw(1180);
     width: pc-vw(1180);
-    margin-left: pc-vw(245);
+    margin-left: pc-vw(145);
   }
 }
 
@@ -224,6 +224,8 @@
 }
 
 .recruit-button-container {
+  display: flex;
+  justify-content: center;
   width: $inner-pc-max-width;
 }
 
@@ -240,8 +242,9 @@
   @include media-pc {
     width: pc-vw(360);
     height: pc-vw(60);
-    margin-left: pc-vw(650);
     font-size: pc-vw(18);
+
+    // margin-left: pc-vw(620);
   }
 }
 
