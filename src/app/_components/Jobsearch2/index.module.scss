@@ -1,0 +1,126 @@
+@use '@/styles' as *;
+
+.main {
+  width: $design-sp-width;
+}
+
+.inner {
+  width: $inner-sp-max-width;
+  margin: 0 auto;
+}
+
+.work-flame {
+  width: sp-vw(370);
+  height: sp-vw(240);
+  padding-top: sp-vw(5);
+  margin: 0 auto;
+  margin-bottom: sp-vw(100);
+  background-color: $color-sky-blue;
+  border-radius: 5%;
+}
+
+.work-title {
+  width: sp-vw(370);
+  height: sp-vw(22);
+  margin-top: 0.9rem;
+  font-size: sp-vw(22);
+  font-weight: bold;
+  text-align: center;
+}
+
+.work-caption {
+  width: sp-vw(294);
+  height: sp-vw(20);
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: sp-vw(14);
+  white-space: nowrap;
+}
+
+.select-fields {
+  display: flex;
+  gap: rem(10);
+  justify-content: center;
+  width: sp-vw(370);
+  margin: 0.93rem 0;
+}
+
+.select-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: sp-vw(100);
+  height: sp-vw(30);
+  padding: 0 sp-vw(4);
+  font-size: sp-vw(12);
+  font-weight: 400;
+  background-color: $color-white;
+  border: 1px solid;
+  border-color: $color-pink;
+  border-radius: 5px;
+
+  &-container {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      z-index: 50;
+      width: rem(0);
+      height: rem(0);
+      pointer-events: none;
+      content: '';
+      border-top: rem(8) solid $color-pink;
+      border-right: rem(5) solid transparent;
+      border-left: rem(5) solid transparent;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  width: sp-vw(320);
+  height: sp-vw(30);
+  padding: 0 sp-vw(4);
+  margin: 0 auto;
+  font-size: sp-vw(14);
+  font-weight: 400;
+  color: $color-black;
+  background-color: $color-white;
+  border: 1px solid;
+  border-color: $color-pink;
+  border-radius: 5px;
+}
+
+.input-field::placeholder {
+  color: $color-gray;
+}
+
+.search-button {
+  display: flex;
+  gap: 15;
+  align-items: center;
+  width: sp-vw(160);
+  height: sp-vw(40);
+  padding-left: 1rem;
+  margin: 0 auto;
+  margin-top: 0.93rem;
+  font-size: sp-vw(18);
+  font-style: bold;
+  font-weight: 700;
+  color: $color-white;
+  background-color: $color-peach;
+  border-radius: 50px;
+}
+
+.search-button:hover {
+  opacity: 0.7;
+}
+
+.find-glass {
+  width: 1rem;
+  height: 1rem;
+}
