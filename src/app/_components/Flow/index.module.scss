@@ -1,0 +1,81 @@
+@use '@/styles' as *;
+
+.main {
+  width: $design-sp-width;
+  margin: 0 auto;
+}
+
+.inner {
+  width: $inner-sp-max-width;
+  margin: 0 auto;
+}
+
+.flow-title {
+  width: $inner-sp-max-width;
+  margin-top: clamp(rem(30), sp-vw(60), rem(90));
+  font-size: clamp(rem(16), sp-vw(25), rem(32));
+  font-weight: bold;
+  text-align: center;
+}
+
+.flame {
+  width: sp-vw(280);
+  height: sp-vw(293);
+  margin: 0 auto;
+  text-align: center;
+  border: 2.27px solid $color-peach;
+  border-radius: rem(10);
+}
+
+.flame:nth-child(2) {
+  margin-top: rem(35);
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(45);
+  height: sp-vw(45);
+  margin-top: clamp(rem(5), sp-vw(10), rem(15));
+  margin-left: clamp(rem(5), sp-vw(10), rem(15));
+  font-size: clamp(rem(5), sp-vw(10), rem(15));
+  line-height: 1.5;
+  color: $color-white;
+  text-align: center;
+  white-space: pre-line;
+  background-color: $color-peach;
+  border-radius: 50%;
+}
+
+.entry-img {
+  width: sp-vw(76);
+  height: sp-vw(75);
+  margin-bottom: clamp(rem(20), sp-vw(22), rem(25));
+}
+
+.entry-title {
+  margin-bottom: clamp(rem(5), sp-vw(10), rem(15));
+  font-size: clamp(rem(16), sp-vw(20), rem(24));
+  font-weight: bold;
+}
+
+.text {
+  width: sp-vw(240);
+  height: sp-vw(80);
+  margin: 0 auto;
+}
+
+.flow-allow {
+  width: 0;
+  height: 0;
+  margin-top: clamp(rem(5), sp-vw(10), rem(15));
+  margin-bottom: clamp(rem(5), sp-vw(10), rem(15));
+  margin-left: rem(165);
+  text-align: center;
+  border-style: solid;
+  border-top: 20px solid $color-peach;
+  border-right: 20px solid transparent;
+  border-bottom: 0;
+  border-left: 20px solid transparent;
+}
