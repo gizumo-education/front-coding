@@ -27,6 +27,8 @@
   margin: 0 auto;
   margin-bottom: clamp(rem(16), sp-vw(21), rem(30));
   background-image: url('/image/jobchange.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: rem(10);
 
   &::before {
