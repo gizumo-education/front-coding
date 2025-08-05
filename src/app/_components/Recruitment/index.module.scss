@@ -224,9 +224,11 @@
 }
 
 .recruit-button-container {
-  display: flex;
-  justify-content: center;
-  width: $inner-pc-max-width;
+  @include media-pc {
+    display: flex;
+    justify-content: center;
+    width: $inner-pc-max-width;
+  }
 }
 
 .recruit-button {
