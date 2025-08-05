@@ -138,6 +138,8 @@
   @include media-pc {
     width: pc-vw(420);
     height: pc-vw(60);
+    margin-top: pc-vw(120);
+    margin-bottom: pc-vw(150);
     font-size: pc-vw(18);
   }
 }

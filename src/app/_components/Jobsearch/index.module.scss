@@ -122,6 +122,7 @@
       border-left: pc-vw(5) solid transparent;
       transform: translateY(-50%);
       @include media-pc {
+        right: pc-vw(10);
         border-top: pc-vw(16) solid $color-pink;
         border-right: pc-vw(10) solid transparent;
         border-left: pc-vw(10) solid transparent;
@@ -148,7 +149,7 @@
     display: inline-block;
     width: pc-vw(300);
     height: pc-vw(60);
-    margin: clamp(rem(12), sp-vw(14.8), rem(16))
+    margin: clamp(rem(12), pc-vw(14.8), rem(16))
       clamp(rem(32), pc-vw(15), rem(50));
     font-size: pc-vw(18);
   }
