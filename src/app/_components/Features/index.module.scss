@@ -1,0 +1,61 @@
+@use '@/styles' as *;
+
+.main {
+  width: $design-sp-width;
+  margin: 0 auto;
+}
+
+.inner {
+  width: $inner-sp-max-width;
+  margin: 0 auto;
+}
+
+.features-title {
+  width: $inner-sp-max-width;
+  margin-top: clamp(rem(1300), sp-vw(1360), rem(1400));
+  margin-bottom: clamp(rem(30), sp-vw(35), rem(65));
+  font-size: clamp(rem(16), sp-vw(25), rem(32));
+  font-weight: bold;
+  text-align: center;
+}
+
+.feature-container {
+  position: relative;
+  width: sp-vw(370);
+  height: sp-vw(144);
+  padding: clamp(rem(25), sp-vw(30), rem(35)) 0;
+  margin: 0 auto;
+  margin-bottom: clamp(rem(16), sp-vw(21), rem(30));
+  background-color: $color-pink-feature-container;
+  border-radius: rem(10);
+
+  &:nth-child(4) {
+    height: sp-vw(161);
+  }
+
+  &:nth-child(5) {
+    height: sp-vw(161);
+  }
+}
+
+.feature-title {
+  position: absolute;
+  width: sp-vw(370);
+  height: sp-vw(20);
+  font-size: clamp(rem(15), sp-vw(20), rem(25));
+  font-weight: bold;
+  color: $color-peach;
+  text-align: center;
+}
+
+.feature-p {
+  position: absolute;
+  display: block;
+  width: sp-vw(336);
+  height: sp-vw(34);
+  margin-top: clamp(rem(40), sp-vw(50), rem(65));
+  margin-left: clamp(rem(12), sp-vw(17), rem(22));
+  font-size: clamp(rem(10), sp-vw(12), rem(15));
+  line-height: rem(17);
+  text-align: center;
+}
