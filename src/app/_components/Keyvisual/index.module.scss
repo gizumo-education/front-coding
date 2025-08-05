@@ -48,7 +48,7 @@
   height: sp-vw(250);
   margin-left: sp-vw(110);
   @include media-pc {
-    margin-left: pc-vw(300);
+    margin-left: pc-vw(400);
   }
 }
 
@@ -60,7 +60,7 @@
   @include media-pc {
     width: pc-vw(341);
     height: pc-vw(168);
-    margin-top: pc-vw(100);
+    margin-top: pc-vw(60);
   }
 }
 
@@ -71,7 +71,7 @@
   width: sp-vw(272);
   height: sp-vw(22);
   @include media-pc {
-    top: pc-vw(315);
+    top: pc-vw(270);
     width: pc-vw(800);
     height: pc-vw(65);
   }
@@ -88,7 +88,7 @@
   border: rem(1) solid $color-light-green;
   border-radius: 10px;
   @include media-pc {
-    top: pc-vw(414);
+    top: pc-vw(380);
     width: pc-vw(391);
     height: pc-vw(69);
   }

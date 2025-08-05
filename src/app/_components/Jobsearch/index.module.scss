@@ -29,6 +29,7 @@
     height: pc-vw(240);
     padding-top: clamp(rem(20), pc-vw(40), rem(55));
     margin: clamp(rem(50), pc-vw(60), rem(70)) 0;
+    border-radius: pc-vw(5);
   }
 }
 
@@ -80,7 +81,7 @@
   @include media-pc {
     gap: pc-vw(15);
     width: pc-vw(603);
-    margin-right: pc-vw(15);
+    margin-right: pc-vw(5);
     margin-left: 0;
   }
 }

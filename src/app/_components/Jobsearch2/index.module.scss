@@ -84,8 +84,8 @@
   @include media-pc {
     gap: pc-vw(15);
     width: pc-vw(603);
-    margin-right: pc-vw(15);
-    margin-left: 0;
+    margin-right: pc-vw(5);
+    margin-left: pc-vw(5);
   }
 }
 
@@ -118,6 +118,7 @@
       z-index: 50;
       width: sp-vw(0);
       height: sp-vw(0);
+
       pointer-events: none;
       content: '';
       border-top: sp-vw(8) solid $color-pink;
@@ -125,9 +126,9 @@
       border-left: sp-vw(5) solid transparent;
       transform: translateY(-50%);
       @include media-pc {
-        border-top: pc-vw(16) solid $color-pink;
-        border-right: pc-vw(10) solid transparent;
-        border-left: pc-vw(10) solid transparent;
+        border-top: pc-vw(12) solid $color-pink;
+        border-right: pc-vw(12) solid transparent;
+        border-left: pc-vw(12) solid transparent;
       }
     }
   }
@@ -151,7 +152,7 @@
     width: pc-vw(300);
     height: pc-vw(60);
     margin: clamp(rem(12), pc-vw(14.8), rem(16))
-      clamp(rem(32), pc-vw(15), rem(50));
+      clamp(rem(32), pc-vw(40), rem(50));
     font-size: pc-vw(18);
   }
 }
