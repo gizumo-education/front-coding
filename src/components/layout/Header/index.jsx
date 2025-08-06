@@ -1,7 +1,14 @@
+'use client'
+
+import { useState } from 'react'
+
 import clsx from 'clsx'
 import styles from './index.module.scss'
 
 export const Header = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  const toggleMenu = () => setIsOpen((prev) => !prev)
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -39,11 +46,30 @@ export const Header = () => {
             </a>
           </li>
         </ul>
-        <button className={styles.button}>
-          <span className={styles.line} />
-          <span className={styles.line} />
-          <span className={styles.line} />
+        <button className={styles.button} onClick={toggleMenu}>
+          <span className={clsx(styles.line, isOpen ? styles.open : '')} />
+          <span className={clsx(styles.line, isOpen ? styles.open : '')} />
+          <span className={clsx(styles.line, isOpen ? styles.open : '')} />
         </button>
+        <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
+          <ul>
+            <li className={styles['link']}>
+              <a href='/'>トップ</a>
+            </li>
+            <li className={styles['link']}>
+              <a href='/'>新着求人</a>
+            </li>
+            <li className={styles['link']}>
+              <a href='/'>4つの特徴</a>
+            </li>
+            <li className={styles['link']}>
+              <a href='/'>転職までの流れ</a>
+            </li>
+            <li className={styles['link']}>
+              <a href='/'>転職お役立ちコンテンツ</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   )
