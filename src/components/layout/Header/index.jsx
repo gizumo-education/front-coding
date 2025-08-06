@@ -1,11 +1,18 @@
 'use client'
 
+import { useRef } from 'react'
 import { useState } from 'react'
 
 import clsx from 'clsx'
 import styles from './index.module.scss'
 
 export const Header = () => {
+  const section1Ref = useRef(null)
+  const section2Ref = useRef(null)
+  const section3Ref = useRef(null)
+  const section4Ref = useRef(null)
+  const section5Ref = useRef(null)
+
   const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => setIsOpen((prev) => !prev)
 
@@ -54,19 +61,54 @@ export const Header = () => {
         <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
           <ul>
             <li className={styles['link']}>
-              <a href='/'>トップ</a>
+              <a
+                href='/'
+                onClick={() =>
+                  section1Ref.current?.scrollIntoView({ behavior: 'smooth' })
+                }
+              >
+                トップ
+              </a>
             </li>
             <li className={styles['link']}>
-              <a href='/'>新着求人</a>
+              <a
+                href='/'
+                onClick={() =>
+                  section2Ref.current?.scrollIntoView({ behavior: 'smooth' })
+                }
+              >
+                新着求人
+              </a>
             </li>
             <li className={styles['link']}>
-              <a href='/'>4つの特徴</a>
+              <a
+                href='/'
+                onClick={() =>
+                  section3Ref.current?.scrollIntoView({ behavior: 'smooth' })
+                }
+              >
+                4つの特徴
+              </a>
             </li>
             <li className={styles['link']}>
-              <a href='/'>転職までの流れ</a>
+              <a
+                href='/'
+                onClick={() =>
+                  section4Ref.current?.scrollIntoView({ behavior: 'smooth' })
+                }
+              >
+                転職までの流れ
+              </a>
             </li>
             <li className={styles['link']}>
-              <a href='/'>転職お役立ちコンテンツ</a>
+              <a
+                href='/'
+                onClick={() =>
+                  section5Ref.current?.scrollIntoView({ behavior: 'smooth' })
+                }
+              >
+                転職お役立ちコンテンツ
+              </a>
             </li>
           </ul>
         </div>
