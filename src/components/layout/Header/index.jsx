@@ -13,6 +13,12 @@ export const Header = () => {
   const section4Ref = useRef(null)
   const section5Ref = useRef(null)
 
+  const scrollToSection = (elementRef) => {
+    elementRef.current?.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
+
   const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => setIsOpen((prev) => !prev)
 
@@ -63,9 +69,10 @@ export const Header = () => {
             <li className={styles['link']}>
               <a
                 href='/'
-                onClick={() =>
-                  section1Ref.current?.scrollIntoView({ behavior: 'smooth' })
-                }
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(section1Ref)
+                }}
               >
                 トップ
               </a>
@@ -73,9 +80,10 @@ export const Header = () => {
             <li className={styles['link']}>
               <a
                 href='/'
-                onClick={() =>
-                  section2Ref.current?.scrollIntoView({ behavior: 'smooth' })
-                }
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(section2Ref)
+                }}
               >
                 新着求人
               </a>
@@ -83,9 +91,10 @@ export const Header = () => {
             <li className={styles['link']}>
               <a
                 href='/'
-                onClick={() =>
-                  section3Ref.current?.scrollIntoView({ behavior: 'smooth' })
-                }
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(section3Ref)
+                }}
               >
                 4つの特徴
               </a>
@@ -93,9 +102,10 @@ export const Header = () => {
             <li className={styles['link']}>
               <a
                 href='/'
-                onClick={() =>
-                  section4Ref.current?.scrollIntoView({ behavior: 'smooth' })
-                }
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(section4Ref)
+                }}
               >
                 転職までの流れ
               </a>
@@ -103,9 +113,10 @@ export const Header = () => {
             <li className={styles['link']}>
               <a
                 href='/'
-                onClick={() =>
-                  section5Ref.current?.scrollIntoView({ behavior: 'smooth' })
-                }
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(section5Ref)
+                }}
               >
                 転職お役立ちコンテンツ
               </a>

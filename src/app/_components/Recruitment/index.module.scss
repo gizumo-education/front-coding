@@ -99,6 +99,7 @@
   width: sp-vw(370);
   height: sp-vw(208);
   margin-top: sp-vw(35);
+  object-fit: cover;
   @include media-pc {
     width: pc-vw(280);
     height: pc-vw(200);

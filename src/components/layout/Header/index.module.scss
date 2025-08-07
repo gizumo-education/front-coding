@@ -43,8 +43,7 @@
 }
 
 .line.open:nth-child(1) {
-  left: sp-vw(5);
-  transform: rotate(45deg) translateY(sp-vw(5));
+  transform: rotate(45deg) translateY(sp-vw(10));
   transform-origin: top left;
 }
 
@@ -53,8 +52,7 @@
 }
 
 .line.open:nth-child(3) {
-  left: sp-vw(5);
-  transform: rotate(-45deg) translateY(sp-vw(-5));
+  transform: rotate(-45deg) translateY(sp-vw(-10));
   transform-origin: bottom left;
 }
 
@@ -77,12 +75,15 @@
   top: sp-vw(70);
   right: -500;
   z-index: 150;
-  width: sp-vw(400);
+  width: sp-vw(420);
   height: sp-vw(554);
   padding: 2rem 1rem;
   background: $color-black;
   opacity: 0.7;
   transition: right 0.3s ease;
+  @include media-pc {
+    display: none;
+  }
 
   &.open {
     right: 0;

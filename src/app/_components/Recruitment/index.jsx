@@ -51,11 +51,8 @@ export const Recruitment = () => {
                   caption: '伊勢赤十字病院で医療事務求人 4',
                 },
               ].map((job, index) => (
-                <SwiperSlide
-                  key={index}
-                  className={styles['recruit-container']}
-                >
-                  <ul>
+                <SwiperSlide key={index}>
+                  <ul className={styles['recruit-container']}>
                     <li className={styles['recruit-content']}>
                       <img
                         src={job.img}
