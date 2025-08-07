@@ -51,12 +51,15 @@ export const Recruitment = () => {
                   caption: '伊勢赤十字病院で医療事務求人 4',
                 },
               ].map((job, index) => (
-                <SwiperSlide key={index}>
-                  <ul className={styles['recruit-container']}>
+                <SwiperSlide
+                  key={index}
+                  className={styles['recruit-container']}
+                >
+                  <ul>
                     <li className={styles['recruit-content']}>
                       <img
-                        src='/images/新着求人画像.png'
-                        alt='新着求人画像'
+                        src={job.img}
+                        alt={job.caption}
                         width='370'
                         height='208'
                         className={styles['recruit-img']}
@@ -89,8 +92,8 @@ export const Recruitment = () => {
                     </li>
                     <li className={styles['recruit-content']}>
                       <img
-                        src='/images/新着求人女性2.jpg'
-                        alt='新着求人画像2'
+                        src={job.img}
+                        alt={job.caption}
                         width='370'
                         height='208'
                         className={styles['recruit-img']}
@@ -123,8 +126,8 @@ export const Recruitment = () => {
                     </li>
                     <li className={styles['recruit-content']}>
                       <img
-                        src='/images/新着求人画像3.jpg'
-                        alt='新着求人画像3'
+                        src={job.img}
+                        alt={job.caption}
                         width='370'
                         height='208'
                         className={styles['recruit-img']}
@@ -157,8 +160,8 @@ export const Recruitment = () => {
                     </li>
                     <li className={styles['recruit-content']}>
                       <img
-                        src='/images/新着求人画像4.jpg'
-                        alt='新着求人画像4'
+                        src={job.img}
+                        alt={job.caption}
                         width='370'
                         height='208'
                         className={styles['recruit-img']}
@@ -193,6 +196,7 @@ export const Recruitment = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+
             <div className={styles['recruit-button-container']}>
               <button className={styles['recruit-button']}>
                 新着求人一覧をもっと見る
