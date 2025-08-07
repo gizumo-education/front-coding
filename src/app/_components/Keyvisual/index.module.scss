@@ -48,7 +48,8 @@
   height: sp-vw(250);
   margin-left: sp-vw(110);
   @include media-pc {
-    margin-left: pc-vw(400);
+    width: $inner-sp-max-width;
+    margin-left: pc-vw(700);
   }
 }
 

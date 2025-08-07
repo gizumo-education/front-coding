@@ -18,7 +18,7 @@
 
 .article {
   @include media-pc {
-    width: $design-pc-width;
+    width: $inner-pc-max-width;
   }
 }
 
@@ -114,8 +114,8 @@
   width: $inner-sp-max-width;
   @include media-pc {
     top: pc-vw(1180);
+    justify-content: space-between;
     width: pc-vw(1180);
-    margin-left: pc-vw(170);
   }
 }
 
