@@ -30,7 +30,7 @@ const Top = () => {
           section5Ref,
         }}
       />
-      <div ref={section1Ref} style={{ scrollMarginTop: '70em' }}>
+      <div ref={section1Ref} style={{ scrollMarginTop: '6em' }}>
         <Keyvisual />
       </div>
       <Jobsearch />
