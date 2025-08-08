@@ -1,7 +1,7 @@
 'use client'
 
 // import { useRef } from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import clsx from 'clsx'
 import styles from './index.module.scss'
@@ -19,6 +19,15 @@ export const Header = ({ sectionRefs }) => {
   }
 
   const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+  }, [isOpen])
+
   const toggleMenu = () => setIsOpen((prev) => !prev)
   const closeMenu = () => setIsOpen(false)
 
