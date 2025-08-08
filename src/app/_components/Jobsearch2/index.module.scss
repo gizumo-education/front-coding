@@ -152,7 +152,7 @@
     width: pc-vw(300);
     height: pc-vw(60);
     margin: clamp(rem(12), pc-vw(14.8), rem(16))
-      clamp(rem(32), pc-vw(40), rem(50));
+      clamp(rem(32), pc-vw(15), rem(50));
     font-size: pc-vw(18);
   }
 }

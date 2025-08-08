@@ -1,21 +1,20 @@
 'use client'
 
-import { useRef } from 'react'
+// import { useRef } from 'react'
 import { useState } from 'react'
 
 import clsx from 'clsx'
 import styles from './index.module.scss'
 
-export const Header = () => {
-  const section1Ref = useRef(null)
-  const section2Ref = useRef(null)
-  const section3Ref = useRef(null)
-  const section4Ref = useRef(null)
-  const section5Ref = useRef(null)
+export const Header = ({ sectionRefs }) => {
+  const { section1Ref, section2Ref, section3Ref, section4Ref, section5Ref } =
+    sectionRefs
 
   const scrollToSection = (elementRef) => {
-    elementRef.current?.scrollIntoView({
+    elementRef?.current?.scrollIntoView({
+      top: elementRef?.current?.offsetTop,
       behavior: 'smooth',
+      block: 'start',
     })
   }
 
