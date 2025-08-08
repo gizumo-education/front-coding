@@ -20,6 +20,7 @@ export const Header = ({ sectionRefs }) => {
 
   const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => setIsOpen((prev) => !prev)
+  const closeMenu = () => setIsOpen(false)
 
   return (
     <header className={styles.header}>
@@ -71,6 +72,7 @@ export const Header = ({ sectionRefs }) => {
                 onClick={(e) => {
                   e.preventDefault()
                   scrollToSection(section1Ref)
+                  closeMenu()
                 }}
               >
                 トップ
@@ -82,6 +84,7 @@ export const Header = ({ sectionRefs }) => {
                 onClick={(e) => {
                   e.preventDefault()
                   scrollToSection(section2Ref)
+                  closeMenu()
                 }}
               >
                 新着求人
@@ -93,6 +96,7 @@ export const Header = ({ sectionRefs }) => {
                 onClick={(e) => {
                   e.preventDefault()
                   scrollToSection(section3Ref)
+                  closeMenu()
                 }}
               >
                 4つの特徴
@@ -104,6 +108,7 @@ export const Header = ({ sectionRefs }) => {
                 onClick={(e) => {
                   e.preventDefault()
                   scrollToSection(section4Ref)
+                  closeMenu()
                 }}
               >
                 転職までの流れ
@@ -115,6 +120,7 @@ export const Header = ({ sectionRefs }) => {
                 onClick={(e) => {
                   e.preventDefault()
                   scrollToSection(section5Ref)
+                  closeMenu()
                 }}
               >
                 転職お役立ちコンテンツ

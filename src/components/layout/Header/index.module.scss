@@ -53,6 +53,7 @@
 
 .line.open:nth-child(3) {
   transform: rotate(-45deg) translateY(sp-vw(-10));
+
   transform-origin: bottom left;
 }
 
