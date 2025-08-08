@@ -43,7 +43,8 @@
 }
 
 .line.open:nth-child(1) {
-  transform: rotate(45deg) translateY(sp-vw(10));
+  margin-left: sp-vw(10);
+  transform: rotate(45deg) translateY(1vw);
   transform-origin: top left;
 }
 
@@ -52,8 +53,8 @@
 }
 
 .line.open:nth-child(3) {
-  transform: rotate(-45deg) translateY(sp-vw(-10));
-
+  margin-left: sp-vw(10);
+  transform: rotate(-45deg) translateY(-1vw);
   transform-origin: bottom left;
 }
 
