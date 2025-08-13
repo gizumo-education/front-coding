@@ -255,10 +255,49 @@
   opacity: 0.7;
 }
 
-.swiper-button-prev {
+.prev {
+  width: sp-vw(42);
+  height: sp-vw(42);
   color: $color-black;
+  background-color: $color-white;
+  border-radius: 50%;
+  opacity: 0.7;
+  @include media-pc {
+    top: 25%;
+    left: calc(50% - 670px);
+    width: pc-vw(60);
+    height: pc-vw(60);
+    font-size: pc-vw(14);
+  }
 }
 
-.swiper-button-next {
+.next {
+  width: sp-vw(42);
+  height: sp-vw(42);
   color: $color-black;
+  background-color: $color-white;
+  border-radius: 50%;
+  opacity: 0.7;
+  @include media-pc {
+    top: 25%;
+    right: calc(50% - 250px);
+    width: pc-vw(60);
+    height: pc-vw(60);
+  }
 }
+
+.prev::after,
+.next::after {
+  font-size: sp-vw(14);
+  @include media-pc {
+    font-size: pc-vw(14);
+  }
+}
+
+// .pagination {
+//   position: absolute;
+//   bottom: 20px; /* 下からの距離 */
+//   left: 0;
+//   width: 100%;
+//   text-align: center;
+// }

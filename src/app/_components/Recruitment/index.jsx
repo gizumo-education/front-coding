@@ -2,9 +2,9 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
+import 'swiper/scss'
+import 'swiper/scss/navigation'
+import 'swiper/scss/pagination'
 
 import styles from './index.module.scss'
 
@@ -34,7 +34,10 @@ export const Recruitment = () => {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
               }}
-              pagination={{ clickable: true }}
+              pagination={{
+                // el: '.custom-pagination',
+                clickable: true,
+              }}
               loop
             >
               {[
@@ -196,8 +199,9 @@ export const Recruitment = () => {
                   </ul>
                 </SwiperSlide>
               ))}
-              <div className={styles['swiper-button-next']}></div>
-              <div className={styles['swiper-button-prev']}></div>
+              <div className={`swiper-button-prev ${styles.prev}`}></div>
+              <div className={`swiper-button-next ${styles.next}`}></div>
+              {/* <div className={`custom-pagination ${styles.pagination}`}></div> */}
             </Swiper>
 
             <div className={styles['recruit-button-container']}>
