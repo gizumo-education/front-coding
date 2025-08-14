@@ -17,15 +17,6 @@ export const Recruitment = () => {
             <div className={styles['recruit-title']}>
               <h1>新着求人</h1>
             </div>
-            {/* <div className={styles['recruit-nav-container']}>
-              <nav className={styles['recruit-nav']}>
-                <div className={styles['recruit-nav-arrow']}></div>
-              </nav>
-              <nav className={styles['recruit-nav']}>
-                <div className={styles['recruit-nav-arrow-2']}></div>
-              </nav>
-            </div> */}
-
             <Swiper
               modules={[Navigation, Pagination]}
               spaceBetween={20}
@@ -35,7 +26,6 @@ export const Recruitment = () => {
                 prevEl: '.swiper-button-prev',
               }}
               pagination={{
-                // el: '.custom-pagination',
                 clickable: true,
               }}
               loop
@@ -201,7 +191,6 @@ export const Recruitment = () => {
               ))}
               <div className={`swiper-button-prev ${styles.prev}`}></div>
               <div className={`swiper-button-next ${styles.next}`}></div>
-              {/* <div className={`custom-pagination ${styles.pagination}`}></div> */}
             </Swiper>
 
             <div className={styles['recruit-button-container']}>
