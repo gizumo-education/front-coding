@@ -2,82 +2,131 @@
 
 .main {
   width: $design-sp-width;
+  @include media-pc {
+    width: $design-pc-width;
+  }
 }
 
 .inner {
   width: $inner-sp-max-width;
   margin: 0 auto;
+  @include media-pc {
+    width: $inner-pc-max-width;
+    margin: 0 auto;
+  }
 }
 
 .key-visual-container {
-  top: 4.3rem;
-  display: relative;
-  width: clamp(rem(370), sp-vw(400), rem(440));
-  height: clamp(rem(200), sp-vw(270), rem(330));
+  position: relative;
+  width: sp-vw(400);
+  height: sp-vw(270);
   background-color: $color-blue;
+  @include media-pc {
+    width: $design-pc-width;
+    height: pc-vw(500);
+  }
 }
 
 .key-visual {
   position: absolute;
-  top: 4.4rem;
   width: sp-vw(400);
   height: sp-vw(270);
   object-fit: cover;
+
+  @include media-pc {
+    width: $design-pc-width;
+    height: pc-vw(500);
+    margin: 0 auto;
+    object-fit: contain;
+  }
+}
+
+.key-visual-items {
+  display: flex;
+  justify-content: center;
+  width: sp-vw(272);
+  height: sp-vw(250);
+  margin-left: sp-vw(110);
+  @include media-pc {
+    width: $inner-sp-max-width;
+    margin-left: pc-vw(610);
+  }
 }
 
 .no1-icon {
   position: absolute;
-  width: clamp(rem(100), sp-vw(150), rem(180));
-  height: clamp(rem(60), sp-vw(73), rem(80));
-  margin-top: clamp(rem(60), sp-vw(72), rem(80));
-  margin-left: clamp(rem(160), sp-vw(200), rem(250));
+  width: sp-vw(150);
+  height: sp-vw(73);
+  margin-top: sp-vw(60);
+  @include media-pc {
+    width: pc-vw(341);
+    height: pc-vw(168);
+    margin-top: pc-vw(60);
+  }
 }
 
 .key-visual-title {
   position: absolute;
-  top: sp-vw(217);
-  left: sp-vw(124);
+  top: sp-vw(140);
   display: block;
-  width: clamp(rem(250), sp-vw(272), rem(300));
-  height: clamp(rem(18), sp-vw(22), rem(25));
-}
-
-.kyu-jin-container {
-  display: block;
+  width: sp-vw(272);
+  height: sp-vw(22);
+  @include media-pc {
+    top: pc-vw(270);
+    width: pc-vw(800);
+    height: pc-vw(65);
+  }
 }
 
 .kyu-jin-flame {
   position: relative;
   top: sp-vw(180);
-  left: sp-vw(188);
   display: flex;
+  justify-content: center;
   width: clamp(rem(100), sp-vw(170), rem(220));
   height: clamp(rem(22), sp-vw(30), rem(40));
+  background-color: $color-white;
+  border: rem(1) solid $color-light-green;
+  border-radius: 10px;
+  @include media-pc {
+    top: pc-vw(380);
+    width: pc-vw(391);
+    height: pc-vw(69);
+  }
 }
 
 .kyu-jin-suu-container {
   position: relative;
-  top: sp-vw(150);
-  left: sp-vw(208);
   display: flex;
   justify-content: center;
-  width: sp-vw(123);
-  height: sp-vw(23);
+  width: pc-vw(123);
+  height: pc-vw(23);
+  @include media-pc {
+    width: pc-vw(308);
+    height: pc-vw(58);
+  }
 }
 
 .kyu-jin-suu {
-  top: sp-vw(150);
-  left: sp-vw(208);
   display: flex;
   align-items: end;
-  width: clamp(rem(100), sp-vw(123), rem(160));
-  height: clamp(rem(18), sp-vw(23), rem(35));
+  width: sp-vw(123);
+  height: sp-vw(23);
   font-size: sp-vw(8);
   color: $color-light-green;
   white-space: nowrap;
+  @include media-pc {
+    width: pc-vw(308);
+    height: pc-vw(58);
+    font-size: pc-vw(20);
+    color: $color-light-green;
+  }
 
   &:nth-child(2) {
     font-size: sp-vw(16);
     font-weight: bold;
+    @include media-pc {
+      font-size: pc-vw(40);
+    }
   }
 }

@@ -2,62 +2,108 @@
 
 .main {
   width: $design-sp-width;
+  margin: 0 auto;
+  @include media-pc {
+    width: $design-pc-width;
+    margin: 0 auto;
+  }
 }
 
 .inner {
   width: $inner-sp-max-width;
   margin: 0 auto;
+  @include media-pc {
+    width: $inner-pc-max-width;
+    margin: 0 auto;
+  }
 }
 
 .work-flame {
   width: sp-vw(370);
   height: sp-vw(240);
-  padding-top: sp-vw(5);
-  margin: 0 auto;
-  margin-bottom: sp-vw(100);
+  padding-top: clamp(rem(2.5), sp-vw(5), rem(7.5));
+  margin: clamp(rem(20), sp-vw(24), rem(30)) 0;
   background-color: $color-sky-blue;
-  border-radius: 5%;
+  border-radius: sp-vw(5);
+
+  @include media-pc {
+    width: $inner-pc-max-width;
+    height: pc-vw(240);
+    padding-top: clamp(rem(20), pc-vw(40), rem(55));
+    margin: 0;
+    margin-top: clamp(rem(50), pc-vw(150), rem(70)) 0;
+  }
 }
 
 .work-title {
   width: sp-vw(370);
   height: sp-vw(22);
-  margin-top: 0.9rem;
+  margin-top: sp-vw(14);
   font-size: sp-vw(22);
   font-weight: bold;
   text-align: center;
+  @include media-pc {
+    width: $inner-pc-max-width;
+    height: pc-vw(25);
+    margin-top: 0;
+    font-size: pc-vw(25);
+    font-weight: bold;
+  }
 }
 
 .work-caption {
   width: sp-vw(294);
   height: sp-vw(20);
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: sp-vw(16);
   font-size: sp-vw(14);
   white-space: nowrap;
+  @include media-pc {
+    width: pc-vw(420);
+    height: pc-vw(29);
+    margin-top: pc-vw(20);
+    font-size: pc-vw(20);
+  }
+}
+
+.select-fields-item {
+  @include media-pc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $inner-pc-max-width;
+  }
 }
 
 .select-fields {
   display: flex;
-  gap: rem(10);
-  justify-content: center;
-  width: sp-vw(370);
-  margin: 0.93rem 0;
+  gap: sp-vw(10);
+  margin: clamp(rem(12), sp-vw(14.8), rem(16)) 0;
+  margin-left: sp-vw(25);
+  @include media-pc {
+    gap: pc-vw(15);
+    width: pc-vw(630);
+    margin-right: pc-vw(5);
+    margin-left: pc-vw(5);
+  }
 }
 
 .select-field {
-  position: relative;
-  display: flex;
   align-items: center;
   width: sp-vw(100);
   height: sp-vw(30);
-  padding: 0 sp-vw(4);
+  padding: 0 clamp(rem(2), sp-vw(3.2), rem(4));
   font-size: sp-vw(12);
   font-weight: 400;
   background-color: $color-white;
   border: 1px solid;
   border-color: $color-pink;
   border-radius: 5px;
+  @include media-pc {
+    width: pc-vw(200);
+    height: pc-vw(60);
+    font-size: pc-vw(20);
+  }
 
   &-container {
     position: relative;
@@ -65,16 +111,22 @@
     &::before {
       position: absolute;
       top: 50%;
-      right: 10px;
+      right: sp-vw(10);
       z-index: 50;
-      width: rem(0);
-      height: rem(0);
+      width: sp-vw(0);
+      height: sp-vw(0);
+
       pointer-events: none;
       content: '';
-      border-top: rem(8) solid $color-pink;
-      border-right: rem(5) solid transparent;
-      border-left: rem(5) solid transparent;
+      border-top: sp-vw(8) solid $color-pink;
+      border-right: sp-vw(5) solid transparent;
+      border-left: sp-vw(5) solid transparent;
       transform: translateY(-50%);
+      @include media-pc {
+        border-top: pc-vw(12) solid $color-pink;
+        border-right: pc-vw(12) solid transparent;
+        border-left: pc-vw(12) solid transparent;
+      }
     }
   }
 }
@@ -84,7 +136,7 @@
   align-items: center;
   width: sp-vw(320);
   height: sp-vw(30);
-  padding: 0 sp-vw(4);
+  padding: 0 clamp(rem(2), sp-vw(3.2), rem(4));
   margin: 0 auto;
   font-size: sp-vw(14);
   font-weight: 400;
@@ -93,6 +145,13 @@
   border: 1px solid;
   border-color: $color-pink;
   border-radius: 5px;
+  @include media-pc {
+    width: pc-vw(300);
+    height: pc-vw(60);
+    margin: clamp(rem(12), pc-vw(14.8), rem(16))
+      clamp(rem(10), pc-vw(15), rem(18));
+    font-size: pc-vw(18);
+  }
 }
 
 .input-field::placeholder {
@@ -105,15 +164,22 @@
   align-items: center;
   width: sp-vw(160);
   height: sp-vw(40);
-  padding-left: 1rem;
+  padding: 0 sp-vw(1);
   margin: 0 auto;
-  margin-top: 0.93rem;
+  margin-top: clamp(rem(14), sp-vw(14.8), rem(16));
   font-size: sp-vw(18);
   font-style: bold;
   font-weight: 700;
   color: $color-white;
   background-color: $color-peach;
   border-radius: 50px;
+  @include media-pc {
+    gap: 5;
+    width: pc-vw(140);
+    height: pc-vw(60);
+    margin: 0;
+    font-size: pc-vw(18);
+  }
 }
 
 .search-button:hover {
@@ -121,6 +187,12 @@
 }
 
 .find-glass {
-  width: 1rem;
-  height: 1rem;
+  width: sp-vw(16);
+  height: sp-vw(16);
+  margin-left: sp-vw(16);
+  @include media-pc {
+    width: pc-vw(16);
+    height: pc-vw(16);
+    margin-left: pc-vw(16);
+  }
 }

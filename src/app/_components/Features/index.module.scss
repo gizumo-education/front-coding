@@ -3,23 +3,45 @@
 .main {
   width: $design-sp-width;
   margin: 0 auto;
+  @include media-pc {
+    width: $design-pc-width;
+    margin: 0 auto;
+  }
 }
 
 .inner {
   width: $inner-sp-max-width;
   margin: 0 auto;
+  @include media-pc {
+    width: $inner-pc-max-width;
+    margin: 0 auto;
+  }
 }
 
-.features-title {
+.features-container {
+  @include media-pc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: $inner-pc-max-width;
+    height: pc-vw(400);
+  }
+}
+
+.title {
   width: $inner-sp-max-width;
   margin-top: clamp(rem(30), sp-vw(60), rem(80));
   margin-bottom: clamp(rem(30), sp-vw(35), rem(65));
   font-size: clamp(rem(16), sp-vw(25), rem(32));
   font-weight: bold;
   text-align: center;
+  @include media-pc {
+    width: $inner-pc-max-width;
+    text-align: center;
+  }
 }
 
-.feature-container {
+.feature {
   position: relative;
   width: sp-vw(370);
   height: sp-vw(144);
@@ -28,13 +50,37 @@
   margin-bottom: clamp(rem(16), sp-vw(21), rem(30));
   background-color: $color-pink-feature-container;
   border-radius: rem(10);
+  @include media-pc {
+    width: pc-vw(570);
+    height: pc-vw(180);
+    padding: pc-vw(40) 0;
+    margin-bottom: pc-vw(45);
+    margin-left: pc-vw(20);
+  }
+
+  &:nth-child(1) {
+    @include media-pc {
+      margin-right: pc-vw(20);
+      margin-left: 0;
+    }
+  }
+
+  &:nth-child(3) {
+    height: sp-vw(161);
+    @include media-pc {
+      width: pc-vw(570);
+      height: pc-vw(180);
+      margin-right: pc-vw(20);
+      margin-left: 0;
+    }
+  }
 
   &:nth-child(4) {
     height: sp-vw(161);
-  }
-
-  &:nth-child(5) {
-    height: sp-vw(161);
+    @include media-pc {
+      width: pc-vw(570);
+      height: pc-vw(180);
+    }
   }
 }
 
@@ -46,6 +92,12 @@
   font-weight: bold;
   color: $color-peach;
   text-align: center;
+  @include media-pc {
+    width: pc-vw(570);
+    height: pc-vw(80);
+    font-size: pc-vw(24);
+    text-align: center;
+  }
 }
 
 .feature-p {
@@ -58,4 +110,12 @@
   font-size: clamp(rem(10), sp-vw(12), rem(15));
   line-height: rem(17);
   text-align: center;
+  @include media-pc {
+    width: pc-vw(447);
+    height: pc-vw(40);
+    margin: pc-vw(60);
+    font-size: pc-vw(12);
+    line-height: 1.5;
+    text-align: center;
+  }
 }

@@ -3,19 +3,37 @@
 .main {
   width: $design-sp-width;
   margin: 0 auto;
+  @include media-pc {
+    width: $design-pc-width;
+  }
 }
 
 .inner {
   width: $inner-sp-max-width;
   margin: 0 auto;
+  @include media-pc {
+    width: $inner-pc-max-width;
+  }
 }
 
 .flow-title {
   width: $inner-sp-max-width;
   margin-top: clamp(rem(30), sp-vw(60), rem(90));
+  margin-bottom: sp-vw(45);
   font-size: clamp(rem(16), sp-vw(25), rem(32));
   font-weight: bold;
   text-align: center;
+  @include media-pc {
+    width: $inner-pc-max-width;
+    margin-bottom: pc-vw(50);
+  }
+}
+
+.flames {
+  @include media-pc {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .flame {
@@ -24,11 +42,19 @@
   margin: 0 auto;
   text-align: center;
   border: 2.27px solid $color-peach;
-  border-radius: rem(10);
+  border-radius: sp-vw(5);
+  @include media-pc {
+    width: pc-vw(280);
+    height: pc-vw(360);
+    margin: 0;
+  }
 }
 
 .flame:nth-child(2) {
   margin-top: rem(35);
+  @include media-pc {
+    margin-top: 0;
+  }
 }
 
 .step {
@@ -46,24 +72,42 @@
   white-space: pre-line;
   background-color: $color-peach;
   border-radius: 50%;
+  @include media-pc {
+    width: pc-vw(60);
+    height: pc-vw(60);
+    font-size: clamp(rem(12), pc-vw(16), rem(32));
+    line-height: 1;
+  }
 }
 
 .entry-img {
   width: sp-vw(76);
   height: sp-vw(75);
   margin-bottom: clamp(rem(20), sp-vw(22), rem(25));
+  @include media-pc {
+    width: pc-vw(102);
+    height: pc-vw(100);
+  }
 }
 
 .entry-title {
   margin-bottom: clamp(rem(5), sp-vw(10), rem(15));
   font-size: clamp(rem(16), sp-vw(20), rem(24));
   font-weight: bold;
+  @include media-pc {
+    font-size: clamp(rem(16), pc-vw(24), rem(32));
+  }
 }
 
 .text {
   width: sp-vw(240);
   height: sp-vw(80);
   margin: 0 auto;
+  @include media-pc {
+    width: pc-vw(237);
+    height: pc-vw(160);
+    font-size: pc-vw(14);
+  }
 }
 
 .flow-allow {
@@ -71,11 +115,17 @@
   height: 0;
   margin-top: clamp(rem(5), sp-vw(10), rem(15));
   margin-bottom: clamp(rem(5), sp-vw(10), rem(15));
-  margin-left: rem(165);
+  margin-left: sp-vw(165);
   text-align: center;
   border-style: solid;
   border-top: 20px solid $color-peach;
   border-right: 20px solid transparent;
   border-bottom: 0;
   border-left: 20px solid transparent;
+  @include media-pc {
+    margin-top: clamp(rem(100), pc-vw(160), rem(200));
+    margin-bottom: 0;
+    margin-left: 0;
+    transform: rotate(-90deg);
+  }
 }

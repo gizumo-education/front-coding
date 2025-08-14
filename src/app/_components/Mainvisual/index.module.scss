@@ -2,6 +2,9 @@
 
 .main {
   width: $design-sp-width;
+  @include media-pc {
+    width: $design-pc-width;
+  }
 }
 
 .main-visual {
@@ -11,16 +14,26 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: rem(75);
+  height: sp-vw(75);
   background-image: url('/images/メインビジュアル.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include media-pc {
+    width: $design-pc-width;
+    height: pc-vw(300);
+  }
 }
 
 .main-visual-bg {
   z-index: 2;
-  width: 100vw;
+  width: $design-pc-width;
   height: rem(75);
   background-color: $color-black;
   opacity: 0.5;
+  @include media-pc {
+    width: $design-pc-width;
+    height: pc-vw(300);
+  }
 }
 
 .main-visual-pra {
@@ -30,4 +43,9 @@
   font-size: sp-vw(14);
   color: $color-white;
   text-align: center;
+  @include media-pc {
+    font-size: pc-vw(25);
+    font-weight: bold;
+    line-height: 2;
+  }
 }
