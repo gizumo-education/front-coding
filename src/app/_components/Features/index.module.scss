@@ -22,8 +22,6 @@
   @include media-pc {
     display: flex;
     flex-wrap: wrap;
-
-    // justify-content: center;
     width: $inner-pc-max-width;
     height: pc-vw(400);
   }
