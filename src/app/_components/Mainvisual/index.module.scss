@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: $design-sp-width;
   height: sp-vw(75);
   background-image: url('/images/メインビジュアル.png');
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
 .main-visual-bg {
   z-index: 2;
   width: $design-sp-width;
-  height: rem(75);
+  height: sp-vw(75);
   background-color: $color-black;
   opacity: 0.5;
   @include media-pc {
@@ -39,11 +39,12 @@
 .main-visual-pra {
   position: absolute;
   z-index: 3;
-  width: 100vw;
+  width: $design-sp-width;
   font-size: sp-vw(14);
   color: $color-white;
   text-align: center;
   @include media-pc {
+    width: $design-pc-width;
     font-size: pc-vw(25);
     font-weight: bold;
     line-height: 2;
