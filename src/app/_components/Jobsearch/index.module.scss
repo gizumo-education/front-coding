@@ -79,7 +79,7 @@
   margin-left: sp-vw(25);
   @include media-pc {
     gap: pc-vw(15);
-    width: pc-vw(603);
+    width: pc-vw(630);
     margin-right: pc-vw(5);
     margin-left: pc-vw(5);
   }
@@ -143,7 +143,6 @@
   border-color: $color-pink;
   border-radius: 5px;
   @include media-pc {
-    display: inline-block;
     width: pc-vw(300);
     height: pc-vw(60);
     margin: clamp(rem(12), pc-vw(14.8), rem(16))

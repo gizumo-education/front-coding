@@ -78,20 +78,17 @@
 .select-fields {
   display: flex;
   gap: sp-vw(10);
-  width: sp-vw(370);
   margin: clamp(rem(12), sp-vw(14.8), rem(16)) 0;
   margin-left: sp-vw(25);
   @include media-pc {
     gap: pc-vw(15);
-    width: pc-vw(603);
+    width: pc-vw(630);
     margin-right: pc-vw(5);
     margin-left: pc-vw(5);
   }
 }
 
 .select-field {
-  position: relative;
-  display: flex;
   align-items: center;
   width: sp-vw(100);
   height: sp-vw(30);
@@ -152,7 +149,7 @@
     width: pc-vw(300);
     height: pc-vw(60);
     margin: clamp(rem(12), pc-vw(14.8), rem(16))
-      clamp(rem(32), pc-vw(40), rem(50));
+      clamp(rem(10), pc-vw(15), rem(18));
     font-size: pc-vw(18);
   }
 }
