@@ -36,7 +36,7 @@ export const Recruitment = () => {
                   caption: '伊勢赤十字病院で医療事務求人',
                 },
                 {
-                  img: '/images/新着求人女性2.jpg',
+                  img: '/images/新着求人画像2.jpg',
                   caption: '伊勢赤十字病院で医療事務求人 2',
                 },
                 {

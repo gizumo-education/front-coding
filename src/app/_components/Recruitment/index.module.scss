@@ -37,7 +37,8 @@
 .recruit-container {
   @include media-pc {
     display: flex;
-    justify-content: center;
+
+    // justify-content: center;
     width: $inner-pc-max-width;
   }
 }
