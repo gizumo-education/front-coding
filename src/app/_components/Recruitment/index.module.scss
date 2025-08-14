@@ -99,10 +99,12 @@
   width: sp-vw(370);
   height: sp-vw(208);
   margin-top: sp-vw(35);
+  border-radius: sp-vw(10);
   @include media-pc {
     width: pc-vw(280);
     height: pc-vw(200);
     margin-top: 0;
+    border-radius: pc-vw(10);
   }
 }
 
@@ -245,8 +247,6 @@
     width: pc-vw(360);
     height: pc-vw(60);
     font-size: pc-vw(18);
-
-    // margin-left: pc-vw(620);
   }
 }
 
