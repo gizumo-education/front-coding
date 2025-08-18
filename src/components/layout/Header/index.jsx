@@ -1,7 +1,34 @@
+'use client'
+import { useState, useEffect } from 'react'
+
 import clsx from 'clsx'
 import styles from './index.module.scss'
 
-export const Header = () => {
+export const Header = ({ sectionRefs }) => {
+  const { section1Ref, section2Ref, section3Ref, section4Ref, section5Ref } =
+    sectionRefs
+
+  const scrollToSection = (elementRef) => {
+    elementRef?.current?.scrollIntoView({
+      top: elementRef?.current?.offsetTop,
+      behavior: 'smooth',
+      block: 'start',
+    })
+  }
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+  }, [isOpen])
+
+  const toggleMenu = () => setIsOpen((prev) => !prev)
+  const closeMenu = () => setIsOpen(false)
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -39,11 +66,75 @@ export const Header = () => {
             </a>
           </li>
         </ul>
-        <button className={styles.button}>
-          <span className={styles.line} />
-          <span className={styles.line} />
-          <span className={styles.line} />
+        <button className={styles.button} onClick={toggleMenu}>
+          <span className={clsx(styles.line, isOpen ? styles.open : '')} />
+          <span className={clsx(styles.line, isOpen ? styles.open : '')} />
+          <span className={clsx(styles.line, isOpen ? styles.open : '')} />
         </button>
+        <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
+          <ul>
+            <li className={styles['link']}>
+              <a
+                href='/'
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(section1Ref)
+                  closeMenu()
+                }}
+              >
+                トップ
+              </a>
+            </li>
+            <li className={styles['link']}>
+              <a
+                href='/'
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(section2Ref)
+                  closeMenu()
+                }}
+              >
+                新着求人
+              </a>
+            </li>
+            <li className={styles['link']}>
+              <a
+                href='/'
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(section3Ref)
+                  closeMenu()
+                }}
+              >
+                4つの特徴
+              </a>
+            </li>
+            <li className={styles['link']}>
+              <a
+                href='/'
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(section4Ref)
+                  closeMenu()
+                }}
+              >
+                転職までの流れ
+              </a>
+            </li>
+            <li className={styles['link']}>
+              <a
+                href='/'
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(section5Ref)
+                  closeMenu()
+                }}
+              >
+                転職お役立ちコンテンツ
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   )

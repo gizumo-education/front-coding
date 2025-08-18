@@ -115,7 +115,6 @@
       z-index: 50;
       width: sp-vw(0);
       height: sp-vw(0);
-
       pointer-events: none;
       content: '';
       border-top: sp-vw(8) solid $color-pink;
@@ -123,9 +122,10 @@
       border-left: sp-vw(5) solid transparent;
       transform: translateY(-50%);
       @include media-pc {
-        border-top: pc-vw(12) solid $color-pink;
-        border-right: pc-vw(12) solid transparent;
-        border-left: pc-vw(12) solid transparent;
+        right: pc-vw(10);
+        border-top: pc-vw(16) solid $color-pink;
+        border-right: pc-vw(10) solid transparent;
+        border-left: pc-vw(10) solid transparent;
       }
     }
   }

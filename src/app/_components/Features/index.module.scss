@@ -22,7 +22,6 @@
   @include media-pc {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     width: $inner-pc-max-width;
     height: pc-vw(400);
   }
@@ -114,6 +113,7 @@
     width: pc-vw(447);
     height: pc-vw(40);
     margin: pc-vw(60);
+    margin-bottom: 0;
     font-size: pc-vw(12);
     line-height: 1.5;
     text-align: center;

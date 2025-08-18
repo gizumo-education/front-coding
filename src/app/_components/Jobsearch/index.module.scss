@@ -74,7 +74,6 @@
 .select-fields {
   display: flex;
   gap: sp-vw(10);
-  width: sp-vw(370);
   margin: clamp(rem(12), sp-vw(14.8), rem(16)) 0;
   margin-left: sp-vw(25);
   @include media-pc {

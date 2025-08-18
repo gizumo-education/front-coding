@@ -37,7 +37,6 @@
 .recruit-container {
   @include media-pc {
     display: flex;
-    justify-content: center;
     width: $inner-pc-max-width;
   }
 }
@@ -88,7 +87,6 @@
     height: pc-vw(30);
     padding-top: pc-vw(64);
     margin-bottom: pc-vw(63);
-    margin-left: pc-vw(150);
     font-size: pc-vw(25);
     font-weight: normal;
     text-align: left;
@@ -99,64 +97,13 @@
   width: sp-vw(370);
   height: sp-vw(208);
   margin-top: sp-vw(35);
+  object-fit: cover;
   border-radius: sp-vw(10);
   @include media-pc {
     width: pc-vw(280);
     height: pc-vw(200);
     margin-top: 0;
     border-radius: pc-vw(10);
-  }
-}
-
-.recruit-nav-container {
-  position: absolute;
-  top: sp-vw(877);
-  display: flex;
-  justify-content: space-between;
-  width: $inner-sp-max-width;
-  @include media-pc {
-    top: pc-vw(1180);
-    justify-content: space-between;
-    width: pc-vw(1180);
-  }
-}
-
-.recruit-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: sp-vw(42);
-  height: sp-vw(42);
-  background-color: $color-white;
-  border-radius: 50%;
-  opacity: 0.7;
-  @include media-pc {
-    width: pc-vw(60);
-    height: pc-vw(60);
-  }
-}
-
-.recruit-nav-arrow {
-  width: sp-vw(7);
-  height: sp-vw(7);
-  border-top: 1px solid $color-black;
-  border-right: 1px solid $color-black;
-  transform: rotate(-135deg);
-  @include media-pc {
-    width: pc-vw(14);
-    height: pc-vw(14);
-  }
-}
-
-.recruit-nav-arrow-2 {
-  width: sp-vw(7);
-  height: sp-vw(7);
-  border-top: 1px solid $color-black;
-  border-right: 1px solid $color-black;
-  transform: rotate(45deg);
-  @include media-pc {
-    width: pc-vw(14);
-    height: pc-vw(14);
   }
 }
 
@@ -252,4 +199,45 @@
 
 .recruit-button:hover {
   opacity: 0.7;
+}
+
+.prev {
+  left: calc(50% - 185px);
+  width: sp-vw(42);
+  height: sp-vw(42);
+  color: $color-black;
+  background-color: $color-white;
+  border-radius: 50%;
+  opacity: 0.7;
+  @include media-pc {
+    top: 25%;
+    left: calc(50% - 590px);
+    width: pc-vw(60);
+    height: pc-vw(60);
+    font-size: pc-vw(14);
+  }
+}
+
+.next {
+  right: calc(50% - 185px);
+  width: sp-vw(42);
+  height: sp-vw(42);
+  color: $color-black;
+  background-color: $color-white;
+  border-radius: 50%;
+  opacity: 0.7;
+  @include media-pc {
+    top: 25%;
+    right: calc(50% - 590px);
+    width: pc-vw(60);
+    height: pc-vw(60);
+  }
+}
+
+.prev::after,
+.next::after {
+  font-size: sp-vw(14);
+  @include media-pc {
+    font-size: pc-vw(14);
+  }
 }
