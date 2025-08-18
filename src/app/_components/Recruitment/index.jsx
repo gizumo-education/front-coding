@@ -25,9 +25,6 @@ export const Recruitment = () => {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
               }}
-              pagination={{
-                clickable: true,
-              }}
               loop
             >
               {[
