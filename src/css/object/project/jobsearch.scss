@@ -1,0 +1,66 @@
+@use '../../object/utility/utility.scss';
+@use '../component/select.scss';
+@use '../component/button.scss';
+
+.l-main__select {
+  padding: 60px 210px;
+}
+  
+.l-main__select-area {
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background-color: #DEEEF9;
+  padding-top: 40px ;
+  height: 240px;
+  width: 1180px;
+  border-radius: 10px;
+
+  &-text {
+    text-align: center;
+
+    h1 {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 20px;
+      padding-top: 20px ;
+
+    }
+  }
+
+  &-form {
+    padding-top: 25px ;
+
+    input {
+      border-color: #DE5579;
+      border-radius: 10px;
+      border-style: 1px;
+      padding: 10px;
+      height: 60px;
+      width: 300px;
+      font-size: 18px;
+    }
+  
+    a {
+      padding: 21px 20px 21px 48px;
+      width: 140px;
+      font-size: 18px;
+      font-weight: bold;
+      @include button.c-btn();
+      background-position: center left 20px;
+      background-repeat: no-repeat;
+      background-size: 30px;
+    }
+    &.is-job-search {
+      a {
+        background-image: url("/src/img/icon/icon-search-fff.png");
+      }
+    }
+  }
+
+}

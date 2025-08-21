@@ -1,0 +1,37 @@
+@use '../../object/utility/utility.scss';
+
+
+.l-main__select-area-form {
+  display: flex;
+  gap: 15px;
+
+}
+
+.select-box {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 15px;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-top: 10px solid #DE5579;
+      border-bottom: 0;
+      pointer-events: none;
+    }
+
+    & > select {
+      -webkit-appearance: none;
+      appearance: none;
+      border-color: #DE5579;
+      border-radius: 10px;
+      border-style: 1px;
+      padding: 10px;
+      height: 60px;
+      width: 200px;
+      font-size: 18px;
+
+    }
+  }

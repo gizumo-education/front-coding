@@ -1,2 +1,17 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+@mixin c-btn() {
+  background-color: #DE5579;
+  border: none;
+  border-radius: 30px;
+  height: 60px;
+  // padding: 17px 0;
+  color: #fff;
+
+  &:hover {
+    opacity: .8;
+    transition: .3s;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,32 @@
+@use '../../object/utility/utility.scss';
+@use '../component/button.scss';
+@use '../component/recruit-item.scss';
+
+.l-main__new-recruit {
+  background-color: #EFF6FC;
+  height: 636px;
+
+  // &-title {
+  //   display: block;
+  //   padding: 64px 0 0 210px;
+  //   margin-bottom: 25px;
+    &-title {
+      display: block;
+      font-size: 25px;
+      padding: 64px 0 0 210px;
+      margin-bottom: 25px;
+
+    }
+// }
+  &-list {
+    display: flex;
+    width: 1180px;
+    // margin-right: auto;
+    margin-left: 210px;
+    gap: 20px;
+
+
+  }
+
+
+}

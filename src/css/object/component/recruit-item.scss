@@ -1,0 +1,43 @@
+@use '../../object/utility/utility.scss';
+@use '../component/button.scss';
+
+.l-main__new-recruit-item {
+
+  img {
+    border-radius: 10px;
+  }
+  .recruit-info-text {
+    font-size: 16px;
+    display: inline-block;
+    width: 280px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+  }
+
+  .c-recruit__info {
+    font-size: 14px;
+
+    tr {
+      display: block;
+      margin-bottom: 4px;
+
+      th {
+          display: inline-box;
+          background-color: #FFCAD0;
+          align-content:center ;
+          width: 60px;
+          height: 21px;
+      }
+
+      td {
+          display: inline-flexbox;
+          align-content:center ;
+          padding-left: 10px;
+
+      }
+
+
+    }
+
+  }
+}
