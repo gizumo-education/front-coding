@@ -16,7 +16,7 @@ export const inter = Inter({
 
 export const shipporiMincho = Shippori_Mincho({
   weight: ['400', '700'],
-  subsets: ['japanese'],
+  subsets: ['latin'],
   variable: '--font-shippori-mincho',
   display: 'swap',
 })
