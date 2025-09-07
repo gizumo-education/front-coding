@@ -1,0 +1,37 @@
+@use '@/styles' as *;
+
+.section {
+  width: $design-pc-width;
+  height: pc-vw(300);
+  background-image: url('/images/visual.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &-inner {
+    height: pc-vw(300);
+    background-image: url('/images/visual-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &-container {
+    padding-top: pc-vw(109);
+    text-align: center;
+  }
+
+  &-sub-container {
+    padding-top: pc-vw(33);
+  }
+
+  &-text {
+    font-size: clamp(rem(20), pc-vw(25), rem(29));
+    font-style: bold;
+    font-weight: 700;
+    color: $color-white;
+  }
+
+  &-text:nth-child(2) {
+    font-style: normal;
+    font-weight: 400;
+  }
+}
