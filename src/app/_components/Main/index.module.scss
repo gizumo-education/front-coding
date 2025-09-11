@@ -7,12 +7,11 @@
   background-image: url('/images/visual.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   &-inner {
     height: pc-vw(300);
-    background-image: url('/images/visual-background.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: rgb(0 0 0 / 50%);
   }
 
   &-container {
