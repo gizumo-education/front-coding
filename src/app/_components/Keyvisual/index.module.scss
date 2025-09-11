@@ -2,11 +2,11 @@
 
 .main {
   width: $design-pc-width;
+  margin: 0 auto;
   background-color: $color-blue;
 
   &-inner {
     height: pc-vw(500);
-    margin: 0 auto;
     overflow: hidden;
     background-image: url('/images/keyvisual.jpg');
     background-repeat: no-repeat;

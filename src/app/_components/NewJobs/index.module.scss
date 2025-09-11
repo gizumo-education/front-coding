@@ -3,6 +3,7 @@
 .news {
   width: $design-pc-width;
   height: pc-vw(636);
+  margin: 0 auto;
   background-color: $color-light-sky-blue;
 
   &-inner {
