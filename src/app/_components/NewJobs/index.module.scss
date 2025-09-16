@@ -1,7 +1,7 @@
 @use '@/styles' as *;
 
 .news {
-  width: $design-pc-width;
+  width: 100%;
   height: pc-vw(636);
   margin: 0 auto;
   background-color: $color-light-sky-blue;

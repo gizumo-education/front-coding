@@ -1,7 +1,7 @@
 @use '@/styles' as *;
 
 .section {
-  width: $design-pc-width;
+  width: 100%;
   height: pc-vw(300);
   margin: 0 auto;
   background-image: url('/images/visual.png');
