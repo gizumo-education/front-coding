@@ -20,7 +20,6 @@ export const Jobsearch = () => {
                 <option value='6'>看護補助・看護助手</option>
                 <option value='7'>病院内SE</option>
               </select>
-              <div className={styles['dropdown']}></div>
             </div>
             <div className={styles['select-wrapper']}>
               <select className={styles['select-form']} defaultValue='6'>
@@ -32,7 +31,6 @@ export const Jobsearch = () => {
                 <option value='6'>東京都</option>
                 <option value='7'>栃木県</option>
               </select>
-              <div className={styles['dropdown']}></div>
             </div>
             <div className={styles['select-wrapper']}>
               <select className={styles['select-form']} defaultValue='1'>
@@ -44,7 +42,6 @@ export const Jobsearch = () => {
                 <option value='6'>月給22万〜</option>
                 <option value='7'>月給23万〜</option>
               </select>
-              <div className={styles['dropdown']}></div>
             </div>
             <div className={styles['input']}>
               <input
