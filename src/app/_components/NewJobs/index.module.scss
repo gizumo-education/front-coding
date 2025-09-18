@@ -1,0 +1,144 @@
+@use '@/styles' as *;
+
+.news {
+  width: 100%;
+  height: pc-vw(636);
+  margin: 0 auto;
+  background-color: $color-light-sky-blue;
+
+  &-inner {
+    position: relative;
+    padding-top: pc-vw(67);
+    margin: 0 pc-vw(210);
+  }
+}
+
+.text-title {
+  width: pc-vw(100);
+  height: pc-vw(30);
+  margin-bottom: pc-vw(22);
+  font-family: Inter, sans-serif;
+  font-size: clamp(rem(20), pc-vw(25), rem(29));
+  font-weight: 400;
+}
+
+.job-list {
+  position: relative;
+  display: flex;
+  gap: pc-vw(20);
+  justify-content: center;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: pc-vw(100);
+  width: pc-vw(60);
+  height: pc-vw(60);
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    width: pc-vw(60);
+    height: pc-vw(60);
+    content: '';
+    background-color: $color-white;
+    border-radius: 50%;
+    opacity: 0.7;
+  }
+
+  &::after {
+    position: absolute;
+    width: pc-vw(20);
+    height: pc-vw(20);
+    content: '';
+    border-width: pc-vw(11.36);
+    border-top: 0.71 solid $color-black;
+    border-right: 0.71 solid $color-black;
+  }
+}
+
+.left::after {
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.right::after {
+  top: 50%;
+  right: 25%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.left {
+  left: pc-vw(29.6);
+  transform: translate(-50%, -50%);
+}
+
+.right {
+  right: pc-vw(29.6);
+  transform: translate(50%, -50%);
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  gap: pc-vw(8);
+  align-items: flex-start;
+  width: pc-vw(280);
+}
+
+.subtext-title {
+  width: pc-vw(278);
+  height: pc-vw(44);
+  margin-right: pc-vw(30);
+  font-size: clamp(rem(11), pc-vw(16), rem(20));
+  font-weight: 400;
+  line-height: 1.38;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: pc-vw(4);
+  width: pc-vw(280);
+
+  &-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &-label {
+    width: pc-vw(60);
+    height: pc-vw(21);
+    font-size: clamp(rem(9), pc-vw(14), rem(18));
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: $color-light-pink;
+  }
+
+  &-text {
+    margin-left: pc-vw(10);
+    font-family: Inter, sans-serif;
+    font-size: clamp(rem(9), pc-vw(14), rem(18));
+    font-weight: 400;
+  }
+}
+
+.button-wrapper {
+  padding-top: pc-vw(60);
+  text-align: center;
+}
+
+.button {
+  width: pc-vw(360);
+  height: pc-vw(60);
+  padding: pc-vw(16) pc-vw(40);
+  font-size: clamp(rem(13), pc-vw(18), rem(22));
+  font-weight: 700;
+  color: $color-white;
+  cursor: pointer;
+  background-color: $color-peach;
+  border-radius: pc-vw(30);
+}

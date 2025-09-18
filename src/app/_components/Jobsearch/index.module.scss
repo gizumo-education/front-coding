@@ -1,0 +1,105 @@
+@use '@/styles' as *;
+
+.form {
+  margin: pc-vw(60) pc-vw(210);
+
+  &-container {
+    width: pc-vw(1180);
+    height: pc-vw(240);
+    margin: 0 auto;
+    background-color: $color-sky-blue;
+    border-radius: pc-vw(10);
+  }
+
+  &-title {
+    display: flex;
+    justify-content: center;
+    padding-top: pc-vw(40);
+    font-size: clamp(rem(20), pc-vw(25), rem(29));
+    font-weight: 700;
+  }
+
+  &-description {
+    display: flex;
+    justify-content: center;
+    margin-top: pc-vw(24);
+    font-size: clamp(rem(15), pc-vw(20), rem(24));
+    font-weight: 400;
+  }
+}
+
+.select {
+  display: flex;
+  gap: pc-vw(16);
+  align-items: center;
+  justify-content: center;
+  width: pc-vw(1100);
+  padding-top: pc-vw(31);
+  margin: 0 auto;
+
+  &-wrapper {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: pc-vw(15);
+      content: '';
+      border-style: solid;
+      border-top: pc-vw(10) solid $color-pink;
+      border-right: pc-vw(10) solid transparent;
+      border-bottom: 0;
+      border-left: pc-vw(10) solid transparent;
+      transform: translateY(-50%);
+    }
+  }
+
+  &-form {
+    width: pc-vw(200);
+    height: pc-vw(60);
+    padding: 0 pc-vw(15) pc-vw(15);
+    font-size: clamp(rem(13), pc-vw(18), rem(22));
+    font-weight: 400;
+    line-height: 3.4;
+    background-color: $color-white;
+    border: 1px solid $color-pink;
+    border-radius: pc-vw(10);
+  }
+}
+
+.input-text {
+  width: pc-vw(300);
+  min-width: pc-vw(240);
+  height: pc-vw(60);
+  padding: 0 pc-vw(8);
+  font-size: clamp(rem(13), pc-vw(18), rem(22));
+  font-weight: 400;
+  color: $color-black;
+  background-color: $color-white;
+  border: 1px solid $color-pink;
+  border-radius: pc-vw(10);
+
+  &::placeholder {
+    color: $color-gray;
+  }
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: pc-vw(140);
+  height: pc-vw(60);
+  font-size: clamp(rem(13), pc-vw(18), rem(22));
+  font-weight: 700;
+  color: $color-white;
+  background-color: $color-pink;
+  border-radius: pc-vw(30);
+}
+
+.search-icon {
+  position: relative;
+  right: pc-vw(6);
+  width: pc-vw(29.98);
+  height: pc-vw(29.98);
+}
