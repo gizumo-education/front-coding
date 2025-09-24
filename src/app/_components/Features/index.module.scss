@@ -1,0 +1,64 @@
+@use '@/styles' as *;
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: pc-vw(106) pc-vw(210) 0;
+
+  &-inner {
+    width: pc-vw($inner-pc-max-width);
+    height: pc-vw(478);
+    
+  }
+
+  &-text {
+    margin-bottom: pc-vw(53);
+    font-size: clamp(rem(20), pc-vw(25), rem(29));
+    font-style: bold;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: pc-vw(40);
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-box {
+    width: pc-vw(570);
+    height: pc-vw(180);
+    background-color: $color-light-peach;
+    border-radius: pc-vw(10);
+  }
+
+  &-subbox {
+    margin-top: pc-vw(40);
+  }
+
+  &-subtitle {
+    font-size: clamp(rem(12), pc-vw(24), rem(29));
+    font-style: bold;
+    font-weight: 700;
+    color: $color-peach;
+    text-align: center;
+  }
+
+  &-description {
+    margin: pc-vw(36) 0 pc-vw(40);
+    font-size: clamp(rem(6), pc-vw(14), rem(19));
+    font-weight: 400;
+    line-height: 1.45;
+    text-align: center;
+  }
+}
+
+.section-box:nth-child(4) {
+  .section-description {
+    margin: pc-vw(26) 0 pc-vw(30);
+  }
+}
