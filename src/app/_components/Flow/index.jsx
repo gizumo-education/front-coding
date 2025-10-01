@@ -29,11 +29,7 @@ export const Flow = () => {
               作成
             </h2>
             <p className={styles['section-description']}>
-              ここにはテキストが入ります。ここに
-              <br />
-              はテキストが入ります。ここにはテキ
-              <br />
-              ストが入ります。こ
+              ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ
             </p>
           </div>
           <div className={styles['section-arrow']}></div>
@@ -57,11 +53,7 @@ export const Flow = () => {
               ピックアップ
             </h2>
             <p className={styles['section-description']}>
-              ここにはテキストが入ります。ここに
-              <br />
-              はテキストが入ります。ここにはテキ
-              <br />
-              ストが入ります。ここにはテキストが
+              ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが
             </p>
           </div>
           <div className={styles['section-arrow']}></div>
@@ -81,11 +73,7 @@ export const Flow = () => {
             />
             <h2 className={styles['section-subtitle']}>複数企業に応募</h2>
             <p className={styles['section-description']}>
-              ここにはテキストが入ります。ここに
-              <br />
-              はテキストが入ります。ここにはテキ
-              <br />
-              ストが入ります。ここにはテキストが
+              ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが
             </p>
           </div>
           <div className={styles['section-arrow']}></div>
@@ -105,11 +93,7 @@ export const Flow = () => {
             />
             <h2 className={styles['section-subtitle']}>内定・転職！</h2>
             <p className={styles['section-description']}>
-              ここにはテキストが入ります。ここに
-              <br />
-              はテキストが入ります。ここにはテキ
-              <br />
-              ストが入ります。ここにはテキストが
+              ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが
             </p>
           </div>
         </div>

@@ -93,6 +93,8 @@
   }
 
   &-description {
+    width: pc-vw(237);
+    height: pc-vw(60);
     margin: pc-vw(19) pc-vw(19) pc-vw(42);
     font-size: clamp(rem(8), pc-vw(14), rem(19));
     font-weight: 400;
