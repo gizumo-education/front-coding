@@ -48,6 +48,9 @@
   }
 
   &-step {
+    width: pc-vw(42);
+    height: pc-vw(38);
+    margin: pc-vw(11) pc-vw(9);
     font-family: Inter, sans-serif;
     font-size: clamp(rem(11), pc-vw(16), rem(20));
     font-style: bold;
