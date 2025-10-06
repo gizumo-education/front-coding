@@ -9,9 +9,7 @@
   padding: sp-vw(16) sp-vw(15);
   background-color: #{$color-white};
   @include media-pc {
-    padding: clamp(rem(14), pc-vw(25), rem(31.25))
-      clamp(rem(40), pc-vw(100), rem(125)) clamp(rem(14), pc-vw(25), rem(31.25))
-      0;
+    padding: pc-vw(25) pc-vw(100) pc-vw(25) 0;
   }
 }
 
@@ -60,14 +58,14 @@
   display: flex;
   align-items: center;
   @include media-pc {
-    column-gap: clamp(rem(10), pc-vw(25), rem(31.25));
+    column-gap: pc-vw(25);
   }
 }
 
 .list {
   height: fit-content;
   @include media-pc {
-    font-size: clamp(rem(11), pc-vw(16), rem(20));
+    font-size: pc-vw(16);
   }
 }
 
@@ -75,26 +73,26 @@
   display: flex;
   align-items: center;
   @include media-pc {
-    column-gap: clamp(rem(2.6), pc-vw(6), rem(7.5));
+    column-gap: pc-vw(6);
   }
 }
 
 .list-link.medical {
   @include media-pc {
-    padding-right: clamp(rem(8.6), pc-vw(18), rem(22.5));
+    padding-right: pc-vw(18);
   }
 }
 
 .list-link.search {
   border-inline: 1px solid #{$color-black};
   @include media-pc {
-    padding-inline: clamp(rem(8.6), pc-vw(18), rem(22.5));
+    padding-inline: pc-vw(18);
   }
 }
 
 .list-link.book {
   @include media-pc {
-    padding-left: clamp(rem(8.6), pc-vw(18), rem(22.5));
+    padding-left: pc-vw(18);
   }
 }
 
@@ -108,24 +106,24 @@
 
 .search::before {
   @include media-pc {
-    width: clamp(rem(10), pc-vw(18), rem(22));
-    height: clamp(rem(10), pc-vw(18), rem(22));
+    width: pc-vw(18);
+    height: pc-vw(18);
     background-image: url('/icon/search.svg');
   }
 }
 
 .book::before {
   @include media-pc {
-    width: clamp(rem(13), pc-vw(21.3), rem(26.7));
-    height: clamp(rem(10), pc-vw(17), rem(22));
+    width: pc-vw(21.3);
+    height: pc-vw(17);
     background-image: url('/icon/book.svg');
   }
 }
 
 .button-list {
   @include media-pc {
-    column-gap: clamp(rem(7), pc-vw(15), rem(18.75));
-    font-size: clamp(rem(10), pc-vw(14), rem(17.5));
+    column-gap: pc-vw(15);
+    font-size: pc-vw(14);
   }
 }
 
@@ -137,32 +135,31 @@
   background-color: #{$color-light-blue};
   border-radius: 6px;
   @include media-pc {
-    column-gap: clamp(rem(4.6), pc-vw(10), rem(12.5));
-    padding: clamp(rem(8), pc-vw(16), rem(20))
-      clamp(rem(10), pc-vw(20), rem(25));
+    column-gap: pc-vw(10);
+    padding: pc-vw(16) pc-vw(20);
   }
 }
 
 .heart::before {
   @include media-pc {
-    width: clamp(rem(12.6), pc-vw(21), rem(25));
-    height: clamp(rem(10.6), pc-vw(18), rem(22));
+    width: pc-vw(21);
+    height: pc-vw(18);
     background-image: url('/icon/heart.svg');
   }
 }
 
 .clock::before {
   @include media-pc {
-    width: clamp(rem(10), pc-vw(18), rem(22));
-    height: clamp(rem(10), pc-vw(18), rem(22));
+    width: pc-vw(18);
+    height: pc-vw(18);
     background-image: url('/icon/clock.svg');
   }
 }
 
 .history::before {
   @include media-pc {
-    width: clamp(rem(10), pc-vw(16), rem(22));
-    height: clamp(rem(10), pc-vw(16), rem(22));
+    width: pc-vw(16);
+    height: pc-vw(16);
     background-image: url('/icon/history.svg');
   }
 }

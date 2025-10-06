@@ -3,7 +3,9 @@
 @use '@/styles/variables' as *;
 
 @function pc-vw($px-value) {
-  @return math.div($px-value, $design-pc-width) * 100vw;
+  $vw-value: math.div($px-value, $design-pc-width) * 100vw;
+  $max-value: math.div($px-value, $design-pc-width) * $site-max-width * 1px;
+  @return min($max-value, $vw-value);
 }
 
 @function sp-vw($px-value) {
