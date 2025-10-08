@@ -16,6 +16,12 @@
         "name": "include"
       }
     ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ],
     "plugin/declaration-block-no-ignored-properties": true,
     "number-max-precision": 5,
     "selector-class-pattern": [
