@@ -1,0 +1,19 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.search-button {
+  display: inline-flex;
+  gap: sp-vw(6);
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(150);
+  height: auto;
+  padding: sp-vw(8) sp-vw(33) sp-vw(10) sp-vw(15);
+  font-size: clamp(rem(17), pc-vw(20), rem(25));
+  font-weight: 700;
+  color: #{$color-white};
+  text-align: center;
+  cursor: pointer;
+  background-color: #{$color-pink};
+  border-radius: sp-vw(50);
+}
