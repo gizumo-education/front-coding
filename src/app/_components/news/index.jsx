@@ -19,7 +19,7 @@ const jobs = [
     salaryDetail: '月給 148,000円～',
     placeLabel: '所在地',
     placeDetail: '三重県伊勢市',
-    stationLabel: '最寄り駅',
+    stationLabel: '最寄駅',
     stationDetail: '伊勢市駅 徒歩15分',
   },
   {
@@ -32,7 +32,7 @@ const jobs = [
     salaryDetail: '月給 148,000円～',
     placeLabel: '所在地',
     placeDetail: '三重県伊勢市',
-    stationLabel: '最寄り駅',
+    stationLabel: '最寄駅',
     stationDetail: '伊勢市駅 徒歩15分',
   },
   {
@@ -45,7 +45,7 @@ const jobs = [
     salaryDetail: '月給 148,000円～',
     placeLabel: '所在地',
     placeDetail: '三重県伊勢市',
-    stationLabel: '最寄り駅',
+    stationLabel: '最寄駅',
     stationDetail: '伊勢市駅 徒歩15分',
   },
   {
