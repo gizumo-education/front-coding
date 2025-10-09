@@ -1,9 +1,15 @@
 import styles from './index.module.scss'
+import PropTypes from 'prop-types'
 
-export const MoreButton = () => {
+export const MoreButton = ({ text, href = '/' }) => {
   return (
-    <a href='/' className={styles['more-button']}>
-      <span>新着求人一覧をもっと見る</span>
+    <a href={href} className={styles['more-button']}>
+      <span>{text}</span>
     </a>
   )
+}
+
+MoreButton.propTypes = {
+  text: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
 }

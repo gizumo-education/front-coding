@@ -105,7 +105,7 @@ export const News = () => {
         ))}
       </Swiper>
       <div className={styles['news-button']}>
-        <MoreButton />
+        <MoreButton text='新着求人一覧をもっと見る' href='/' />
       </div>
     </section>
   )
