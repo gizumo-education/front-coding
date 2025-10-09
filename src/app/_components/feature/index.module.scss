@@ -1,0 +1,36 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.feature {
+  padding: sp-vw(55) sp-vw(15) sp-vw(0);
+  text-align: center;
+  background-color: #{$color-white};
+}
+
+.feature-title {
+  font-size: sp-vw(25);
+  font-weight: 700;
+}
+
+.feature-wrapper {
+  margin-top: sp-vw(38);
+}
+
+.feature-box {
+  padding: sp-vw(30) sp-vw(10);
+  margin-top: sp-vw(21);
+  background-color: rgb(247 210 219);
+  border-radius: sp-vw(10);
+}
+
+.feature-box-title {
+  font-size: sp-vw(20);
+  font-weight: 700;
+  color: #{$color-pink};
+}
+
+.feature-box-description {
+  margin-top: sp-vw(30);
+  font-size: sp-vw(12);
+  line-height: 1.7;
+}
