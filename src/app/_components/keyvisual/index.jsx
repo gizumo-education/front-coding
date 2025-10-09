@@ -6,7 +6,7 @@ export const Keyvisual = () => {
       <div className={styles['keyvisual-container']}>
         <img
           src='/keyvisual/keyvisual-sp.png'
-          alt='キービジュアル'
+          alt=''
           width={800}
           height={540}
         />
