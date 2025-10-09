@@ -26,7 +26,7 @@
   top: sp-vw(188);
   right: sp-vw(40);
   padding: sp-vw(6) sp-vw(23);
-  font-size: clamp(rem(5), sp-vw(8), rem(20));
+  font-size: sp-vw(8);
   color: rgb(46 182 170);
   background-color: #{$color-white};
   border: 1px solid rgb(46 182 170);
@@ -34,6 +34,6 @@
 }
 
 .keyvisual-stats-number {
-  font-size: clamp(rem(11), sp-vw(16), rem(30));
+  font-size: sp-vw(18);
   font-weight: 700;
 }
