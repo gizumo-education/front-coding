@@ -3,7 +3,6 @@ import styles from './index.module.scss'
 export const MainVisual = () => {
   return (
     <section className={styles['mainvisual']}>
-      <div className={styles['mainvisual-overlay']}></div>
       <div className={styles['mainvisual-textbox']}>
         <h1 className={styles['mainvisual-text']}>
           ギズジョブなら理想の職場がきっと見つかる
