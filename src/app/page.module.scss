@@ -1,0 +1,10 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.form-top-section {
+  margin: sp-vw(25) sp-vw(0);
+}
+
+.form-bottom-section {
+  margin: sp-vw(60) sp-vw(0) sp-vw(100);
+}
