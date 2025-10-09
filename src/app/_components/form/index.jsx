@@ -113,7 +113,7 @@ export const Form = () => {
               />
             </div>
             <div className={styles['search-button-wrapper']}>
-              <SearchButton type='submit' />
+              <SearchButton type='submit' text='検索する' />
             </div>
           </form>
         </div>
