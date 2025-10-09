@@ -17,13 +17,13 @@
 }
 
 .form-text {
-  font-size: clamp(rem(22), pc-vw(24), rem(25));
+  font-size: sp-vw(22);
   font-weight: 700;
 }
 
 .form-description {
   margin-top: sp-vw(16);
-  font-size: clamp(rem(14), pc-vw(20), rem(20));
+  font-size: sp-vw(14);
 }
 
 .select-container {
@@ -47,7 +47,7 @@
 
   .form-select-inner {
     width: 100%;
-    font-size: clamp(rem(12), pc-vw(14), rem(20));
+    font-size: sp-vw(12);
   }
 }
 
@@ -72,7 +72,7 @@
 
 .form-input-field {
   width: 100%;
-  font-size: clamp(rem(12), pc-vw(14), rem(20));
+  font-size: sp-vw(14);
   color: rgb(164 164 164);
 }
 

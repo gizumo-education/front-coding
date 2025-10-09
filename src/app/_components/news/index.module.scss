@@ -7,7 +7,7 @@
 }
 
 .news-title {
-  font-size: clamp(rem(22), pc-vw(24), rem(25));
+  font-size: sp-vw(22);
   font-weight: 700;
   text-align: center;
 }
@@ -57,7 +57,7 @@
 
 .job-title {
   margin-top: sp-vw(10);
-  font-size: clamp(rem(16), pc-vw(18), rem(25));
+  font-size: sp-vw(16);
   font-weight: 700;
   line-height: sp-vw(22);
 }
@@ -78,14 +78,14 @@
   justify-content: center;
   width: sp-vw(68);
   height: sp-vw(21);
-  font-size: clamp(rem(14), pc-vw(16), rem(20));
+  font-size: sp-vw(14);
   background-color: rgb(255 202 208);
 }
 
 .text {
   display: flex;
   align-items: center;
-  font-size: clamp(rem(14), pc-vw(16), rem(20));
+  font-size: sp-vw(14);
 }
 
 .news-button {
