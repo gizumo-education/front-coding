@@ -1,0 +1,32 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.mainvisual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: sp-vw(16) 0;
+  background-image: url('/mainvisual/mainvisual.png');
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    content: '';
+    background-color: rgb(0 0 0 / 50%);
+  }
+}
+
+.mainvisual-textbox {
+  z-index: 2;
+  color: #{$color-white};
+  text-align: center;
+}
+
+.mainvisual-text {
+  font-size: sp-vw(14);
+  line-height: 1.5;
+}

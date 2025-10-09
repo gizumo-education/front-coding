@@ -1,0 +1,39 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.keyvisual-container {
+  position: relative;
+  width: sp-vw(400);
+  height: sp-vw(270);
+}
+
+.keyvisual-title {
+  position: absolute;
+  top: sp-vw(61);
+  right: sp-vw(45);
+  width: sp-vw(160);
+}
+
+.keyvisual-subtitle {
+  position: absolute;
+  top: sp-vw(148);
+  right: sp-vw(3.3);
+  width: sp-vw(272);
+}
+
+.keyvisual-stats {
+  position: absolute;
+  top: sp-vw(188);
+  right: sp-vw(40);
+  padding: sp-vw(6) sp-vw(23);
+  font-size: sp-vw(8);
+  color: rgb(46 182 170);
+  background-color: #{$color-white};
+  border: 1px solid rgb(46 182 170);
+  border-radius: sp-vw(6);
+}
+
+.keyvisual-stats-number {
+  font-size: sp-vw(18);
+  font-weight: 700;
+}
