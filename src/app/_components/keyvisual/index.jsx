@@ -7,21 +7,21 @@ export const Keyvisual = () => {
         <img
           src='/keyvisual/keyvisual-sp.png'
           alt='キービジュアル'
-          width={400}
-          height={270}
+          width={800}
+          height={540}
         />
         <img
           src='/keyvisual/keyvisual-title.png'
-          alt='キービジュアル タイトル'
-          width={150}
-          height={73}
+          alt='No.1'
+          width={316}
+          height={162}
           className={styles['keyvisual-title']}
         />
         <img
           src='/keyvisual/keyvisual-subtitle.png'
-          alt='キービジュアル サブタイトル'
-          width={272}
-          height={22}
+          alt='医療事務求人を探すならギズジョブ'
+          width={556}
+          height={54}
           className={styles['keyvisual-subtitle']}
         />
         <p className={styles['keyvisual-stats']}>
