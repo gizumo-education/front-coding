@@ -51,6 +51,17 @@
   }
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
 .form-input {
   padding: sp-vw(6) sp-vw(7) sp-vw(7) sp-vw(8);
   margin-top: sp-vw(15);
