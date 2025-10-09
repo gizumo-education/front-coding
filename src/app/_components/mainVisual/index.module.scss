@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: sp-vw(75);
+  padding: sp-vw(16) 0;
   background-image: url('/mainvisual/mainvisual.png');
   background-position: center;
   background-size: cover;
@@ -28,5 +28,5 @@
 
 .mainvisual-text {
   font-size: clamp(rem(14), pc-vw(16), rem(20));
-  line-height: sp-vw(22);
+  line-height: 1.5;
 }
