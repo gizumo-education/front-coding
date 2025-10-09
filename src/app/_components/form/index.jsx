@@ -47,7 +47,12 @@ export const Form = () => {
                 <label htmlFor='job-place' className={styles['sr-only']}>
                   地域を選択
                 </label>
-                <select name='place' id='job-place' aria-label='地域を選択'>
+                <select
+                  className={styles['form-select-inner']}
+                  name='place'
+                  id='job-place'
+                  aria-label='地域を選択'
+                >
                   <option value='' hidden>
                     東京都
                   </option>
@@ -67,7 +72,7 @@ export const Form = () => {
                 </svg>
               </div>
               <div className={styles['form-select']}>
-                <label htmlFor='job-place' className={styles['sr-only']}>
+                <label htmlFor='job-salary' className={styles['sr-only']}>
                   希望給与を選択
                 </label>
                 <select
