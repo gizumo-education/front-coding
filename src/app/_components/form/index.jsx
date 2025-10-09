@@ -28,13 +28,13 @@ export const Form = () => {
                   <option value='' disabled hidden>
                     医療事務
                   </option>
-                  <option value='1'>医療事務</option>
-                  <option value='2'>調剤事務</option>
-                  <option value='3'>診療情報管理士</option>
-                  <option value='4'>歯科助手</option>
-                  <option value='5'>歯科事務</option>
-                  <option value='6'>看護補助・看護助手</option>
-                  <option value='7'>病院内SE</option>
+                  <option value='医療事務'>医療事務</option>
+                  <option value='調剤事務'>調剤事務</option>
+                  <option value='診療情報管理士'>診療情報管理士</option>
+                  <option value='歯科助手'>歯科助手</option>
+                  <option value='歯科事務'>歯科事務</option>
+                  <option value='看護補助・看護助手'>看護補助・看護助手</option>
+                  <option value='病院内SE'>病院内SE</option>
                 </select>
                 <svg width={13} height={8} viewBox='0 0 13 8' fill='none'>
                   <path
@@ -56,13 +56,13 @@ export const Form = () => {
                   <option value='' hidden>
                     東京都
                   </option>
-                  <option value='1'>茨城県</option>
-                  <option value='2'>神奈川県</option>
-                  <option value='3'>群馬県</option>
-                  <option value='4'>埼玉県</option>
-                  <option value='5'>千葉県</option>
-                  <option value='6'>東京都</option>
-                  <option value='7'>栃木県</option>
+                  <option value='茨城県'>茨城県</option>
+                  <option value='神奈川県'>神奈川県</option>
+                  <option value='群馬県'>群馬県</option>
+                  <option value='埼玉県'>埼玉県</option>
+                  <option value='千葉県'>千葉県</option>
+                  <option value='東京都'>東京都</option>
+                  <option value='栃木県'>栃木県</option>
                 </select>
                 <svg width={13} height={8} viewBox='0 0 13 8' fill='none'>
                   <path
@@ -84,13 +84,13 @@ export const Form = () => {
                   <option value='' hidden>
                     月給20万〜
                   </option>
-                  <option value='1'>月給17万〜</option>
-                  <option value='2'>月給18万〜</option>
-                  <option value='3'>月給19万〜</option>
-                  <option value='4'>月給20万〜</option>
-                  <option value='5'>月給21万〜</option>
-                  <option value='6'>月給22万〜</option>
-                  <option value='7'>月給23万〜</option>
+                  <option value='月給17万〜'>月給17万〜</option>
+                  <option value='月給18万〜'>月給18万〜</option>
+                  <option value='月給19万〜'>月給19万〜</option>
+                  <option value='月給20万〜'>月給20万〜</option>
+                  <option value='月給21万〜'>月給21万〜</option>
+                  <option value='月給22万〜'>月給22万〜</option>
+                  <option value='月給23万〜'>月給23万〜</option>
                 </select>
                 <svg width={13} height={8} viewBox='0 0 13 8' fill='none'>
                   <path
