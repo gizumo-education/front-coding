@@ -3,8 +3,8 @@ import styles from './index.module.scss'
 
 export const Form = ({ className = '' }) => {
   return (
-    <section>
-      <div className={`${styles['form']} ${className}`}>
+    <section className={styles['inner']}>
+      <div className={`${className}`}>
         <div className={styles['form-container']}>
           <div className={styles['form-textbox']}>
             <p className={styles['form-text']}>お仕事検索</p>

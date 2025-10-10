@@ -1,9 +1,10 @@
 @use '@/styles' as *;
 @use '@/styles/functions' as *;
+@use 'sass:math';
 
-.form {
-  padding: sp-vw(0) sp-vw(15);
-  background-color: #{$color-white};
+.inner {
+  max-width: math.div(100vw, $design-sp-width) * $inner-sp-max-width;
+  margin-inline: auto;
 }
 
 .form-container {

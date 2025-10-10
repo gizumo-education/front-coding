@@ -1,8 +1,16 @@
 @use '@/styles' as *;
 @use '@/styles/functions' as *;
+@use 'sass:math';
 
-.flow {
-  padding: sp-vw(60) sp-vw(60) sp-vw(0);
+// .flow {
+//   padding: sp-vw(60) sp-vw(60) sp-vw(0);
+//   text-align: center;
+//   background-color: #{$color-white};
+// }
+
+.inner {
+  max-width: math.div(100vw, $design-sp-width) * $inner-sp-max-width;
+  margin-inline: auto;
   text-align: center;
   background-color: #{$color-white};
 }

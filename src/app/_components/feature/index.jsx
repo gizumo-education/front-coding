@@ -1,8 +1,8 @@
 import styles from './index.module.scss'
 
-export const Feature = () => {
+export const Feature = ({ className = '' }) => {
   return (
-    <section className={styles['feature']}>
+    <section className={`${styles['inner']} ${className}`}>
       <h2 className={styles['feature-title']}>ギズジョブの4つの特徴</h2>
       <div className={styles['feature-wrapper']}>
         <div className={styles['feature-box']}>

@@ -18,9 +18,9 @@ const Top = () => {
         <Form className={styles['form-top-section']} />
         <News />
         <MainVisual />
-        <Feature />
-        <Flow />
-        <Info />
+        <Feature className={styles['feature-section']} />
+        <Flow className={styles['flow-section']} />
+        <Info className={styles['info-section']} />
         <Form className={styles['form-bottom-section']} />
       </main>
     </>
