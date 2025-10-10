@@ -1,8 +1,9 @@
 import styles from './index.module.scss'
+import clsx from 'clsx'
 
 export const Flow = ({ className = '' }) => {
   return (
-    <section className={`${styles['inner']} ${className}`}>
+    <section className={clsx('inner', styles['flow'], className)}>
       <h2 className={styles['flow-title']}>転職までの流れ</h2>
       <div className={styles['flow-wrapper']}>
         <div className={styles['flow-box']}>

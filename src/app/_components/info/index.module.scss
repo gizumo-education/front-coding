@@ -2,11 +2,8 @@
 @use '@/styles/functions' as *;
 @use 'sass:math';
 
-.inner {
-  max-width: math.div(100vw, $design-sp-width) * $inner-sp-max-width;
-  margin-inline: auto;
+.info {
   text-align: center;
-  background-color: #{$color-white};
 }
 
 .info-title {
