@@ -1,0 +1,67 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+@use 'sass:math';
+
+.info {
+  text-align: center;
+}
+
+.info-title {
+  font-size: sp-vw(25);
+  font-weight: 700;
+}
+
+.info-contents {
+  margin-top: sp-vw(30);
+}
+
+.info-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: sp-vw(60) sp-vw(0);
+  margin-top: sp-vw(17);
+  overflow: hidden;
+  background-image: url('/info/info-img1.png');
+  background-size: cover;
+  border-radius: sp-vw(10);
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    content: '';
+    background-color: rgb(0 0 0 / 50%);
+    border-radius: inherit;
+  }
+}
+
+.info-content:nth-child(2) {
+  background-image: url('/info/info-img2.png');
+}
+
+.info-content-text {
+  position: relative;
+  z-index: 2;
+  color: #{$color-white};
+}
+
+.info-content-title {
+  font-size: sp-vw(21);
+  font-weight: 700;
+}
+
+.info-content-description {
+  margin-top: sp-vw(53);
+  font-size: sp-vw(14);
+  line-height: 1.5;
+}
+
+.info-button {
+  margin-top: sp-vw(34);
+}
+
+.info-button-size {
+  font-size: sp-vw(17);
+}

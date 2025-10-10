@@ -1,0 +1,22 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.form-top-section {
+  margin: sp-vw(25) sp-vw(0);
+}
+
+.feature-section {
+  margin-top: sp-vw(55);
+}
+
+.flow-section {
+  margin-top: sp-vw(60);
+}
+
+.info-section {
+  margin-top: sp-vw(60);
+}
+
+.form-bottom-section {
+  margin: sp-vw(60) sp-vw(0) sp-vw(100);
+}
