@@ -5,3 +5,9 @@
     @content;
   }
 }
+
+@mixin media-sp {
+  @media (width <= #{$breakpoint-pc}px) {
+    @content;
+  }
+}
