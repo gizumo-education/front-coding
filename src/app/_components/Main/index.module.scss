@@ -9,6 +9,10 @@
   background-position: center;
   background-size: cover;
 
+  @include media-sp {
+    height: sp-vw(75);
+  }
+
   &-inner {
     height: pc-vw(300);
     background-color: rgb(0 0 0 / 50%);
@@ -17,10 +21,18 @@
   &-container {
     padding-top: pc-vw(109);
     text-align: center;
+
+    @include media-sp {
+      padding-top: sp-vw(17);
+    }
   }
 
   &-sub-container {
     padding-top: pc-vw(33);
+
+    @include media-sp {
+      padding-top: sp-vw(7);
+    }
   }
 
   &-text {
@@ -28,6 +40,12 @@
     font-style: bold;
     font-weight: 700;
     color: $color-white;
+
+    @include media-sp {
+      font-size: clamp(rem(9), sp-vw(14), rem(18));
+      font-style: normal;
+      font-weight: 400;
+    }
   }
 
   &-text:nth-child(2) {
