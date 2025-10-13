@@ -7,10 +7,19 @@
   justify-content: center;
   margin: pc-vw(106) pc-vw(210) 0;
 
+  @include media-sp {
+    margin: 0 auto;
+  }
+
   &-inner {
     width: pc-vw($inner-pc-max-width);
     height: pc-vw(478);
-    
+
+    @include media-sp {
+      width: sp-vw($design-sp-width);
+      height: sp-vw(736);
+      margin-top: sp-vw(55);
+    }
   }
 
   &-text {
@@ -19,6 +28,11 @@
     font-style: bold;
     font-weight: 700;
     text-align: center;
+
+    @include media-sp {
+      margin-bottom: sp-vw(38);
+      font-size: clamp(rem(20), sp-vw(25), rem(29));
+    }
   }
 
   &-container {
@@ -27,6 +41,10 @@
     gap: pc-vw(40);
     align-items: center;
     justify-content: center;
+
+    @include media-sp {
+      gap: sp-vw(21);
+    }
   }
 
   &-box {
@@ -34,10 +52,27 @@
     height: pc-vw(180);
     background-color: $color-light-peach;
     border-radius: pc-vw(10);
+
+    @include media-sp {
+      width: sp-vw(370);
+      height: sp-vw(144);
+      border-radius: sp-vw(10);
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      @include media-sp {
+        height: sp-vw(161);
+      }
+    }
   }
 
   &-subbox {
     margin-top: pc-vw(40);
+
+    @include media-sp {
+      margin-top: sp-vw(30);
+    }
   }
 
   &-subtitle {
@@ -46,6 +81,10 @@
     font-weight: 700;
     color: $color-peach;
     text-align: center;
+
+    @include media-sp {
+      font-size: clamp(rem(12), sp-vw(20), rem(24));
+    }
   }
 
   &-description {
@@ -54,11 +93,34 @@
     font-weight: 400;
     line-height: 1.45;
     text-align: center;
+
+    @include media-sp {
+      margin-top: sp-vw(30);
+      font-size: clamp(rem(7), sp-vw(12), rem(16));
+    }
   }
 }
 
 .section-box:nth-child(4) {
   .section-description {
     margin: pc-vw(26) 0 pc-vw(30);
+
+    @include media-sp {
+      margin-top: sp-vw(30);
+    }
+  }
+}
+
+.pc-br {
+  display: block;
+  @include media-sp {
+    display: none;
+  }
+}
+
+.sp-br {
+  display: none;
+  @include media-sp {
+    display: block;
   }
 }
