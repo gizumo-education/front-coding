@@ -59,7 +59,7 @@ export const Jobsearch = () => {
                   width='29'
                   height='29'
                 />
-                検索する
+                <span className={styles['search-text']}>検索する</span>
               </button>
             </div>
           </div>
