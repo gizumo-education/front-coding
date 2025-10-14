@@ -16,4 +16,21 @@
   cursor: pointer;
   background-color: #{$color-pink};
   border-radius: sp-vw(50);
+
+  @include media-pc {
+    gap: pc-vw(4);
+    width: pc-vw(140);
+    padding: pc-vw(15) pc-vw(14);
+    font-size: pc-vw(18);
+  }
+}
+
+.button-icon {
+  width: sp-vw(18);
+  height: sp-vw(18);
+
+  @include media-pc {
+    width: pc-vw(30);
+    height: pc-vw(30);
+  }
 }
