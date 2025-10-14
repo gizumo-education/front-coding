@@ -11,7 +11,8 @@ import { MoreButton } from '@/components/MoreButton'
 const jobs = [
   {
     id: 1,
-    img: '/news/job1-sp.png',
+    imgSp: '/news/job1-sp.png',
+    imgPc: '/news/job1-pc.png',
     width: 740,
     height: 416,
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
@@ -24,7 +25,8 @@ const jobs = [
   },
   {
     id: 2,
-    img: '/news/job1-sp.png',
+    imgSp: '/news/job1-sp.png',
+    imgPc: '/news/job2-pc.png',
     width: 740,
     height: 416,
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
@@ -37,7 +39,8 @@ const jobs = [
   },
   {
     id: 3,
-    img: '/news/job1-sp.png',
+    imgSp: '/news/job1-sp.png',
+    imgPc: '/news/job3-pc.png',
     width: 740,
     height: 416,
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
@@ -50,7 +53,8 @@ const jobs = [
   },
   {
     id: 4,
-    img: '/news/job1-sp.png',
+    imgSp: '/news/job1-sp.png',
+    imgPc: '/news/job4-pc.jpg',
     width: 740,
     height: 416,
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
@@ -66,46 +70,57 @@ const jobs = [
 export const News = () => {
   return (
     <section className={styles['news']}>
-      <h2 className={styles['news-title']}>新着求人</h2>
+      <div className='inner'>
+        <h2 className={styles['news-title']}>新着求人</h2>
 
-      <Swiper
-        modules={[Navigation]}
-        navigation
-        spaceBetween={20}
-        slidesPerView={1}
-        className={styles['news-swiper']}
-      >
-        {jobs.map((job) => (
-          <SwiperSlide key={job.id}>
-            <div className={styles['job-card']}>
-              <img
-                src={job.img}
-                alt={job.title}
-                className={styles['job-image']}
-                width={job.width}
-                height={job.height}
-              />
-              <h3 className={styles['job-title']}>{job.title}</h3>
-              <div className={styles['job-details']}>
-                <div className={styles['detail-item']}>
-                  <p className={styles['label']}>{job.salaryLabel}</p>
-                  <p className={styles['text']}>{job.salaryDetail}</p>
-                </div>
-                <div className={styles['detail-item']}>
-                  <p className={styles['label']}>{job.placeLabel}</p>
-                  <p className={styles['text']}>{job.placeDetail}</p>
-                </div>
-                <div className={styles['detail-item']}>
-                  <p className={styles['label']}>{job.stationLabel}</p>
-                  <p className={styles['text']}>{job.stationDetail}</p>
+        <Swiper
+          modules={[Navigation]}
+          navigation={true}
+          loop={true}
+          spaceBetween={20}
+          slidesPerView={1}
+          breakpoints={{
+            768: {
+              slidesPerView: 4,
+            },
+          }}
+          className={styles['news-swiper']}
+        >
+          {jobs.map((job) => (
+            <SwiperSlide key={job.id}>
+              <div className={styles['job-card']}>
+                <picture>
+                  <source srcSet={job.imgSp} media='(max-width: 767px)' />
+                  <img
+                    src={job.imgPc}
+                    alt={job.title}
+                    width={job.width}
+                    height={job.height}
+                  />
+                </picture>
+
+                <h3 className={styles['job-title']}>{job.title}</h3>
+                <div className={styles['job-details']}>
+                  <div className={styles['detail-item']}>
+                    <p className={styles['label']}>{job.salaryLabel}</p>
+                    <p className={styles['text']}>{job.salaryDetail}</p>
+                  </div>
+                  <div className={styles['detail-item']}>
+                    <p className={styles['label']}>{job.placeLabel}</p>
+                    <p className={styles['text']}>{job.placeDetail}</p>
+                  </div>
+                  <div className={styles['detail-item']}>
+                    <p className={styles['label']}>{job.stationLabel}</p>
+                    <p className={styles['text']}>{job.stationDetail}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <div className={styles['news-button']}>
-        <MoreButton text='新着求人一覧をもっと見る' href='/' />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className={styles['news-button']}>
+          <MoreButton text='新着求人一覧をもっと見る' href='/' />
+        </div>
       </div>
     </section>
   )

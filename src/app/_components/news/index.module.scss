@@ -4,17 +4,27 @@
 .news {
   padding: sp-vw(30) sp-vw(0) sp-vw(60);
   background-color: rgb(234 246 252);
+
+  @include media-pc {
+    padding: pc-vw(64) pc-vw(0) pc-vw(67);
+  }
 }
 
 .news-title {
   font-size: sp-vw(22);
   font-weight: 700;
   text-align: center;
+
+  @include media-pc {
+    font-size: pc-vw(25);
+    font-weight: 400;
+    text-align: left;
+  }
 }
 
 .news-swiper {
   position: relative;
-  width: sp-vw(370);
+  overflow: hidden;
 
   :global(.swiper-button-prev),
   :global(.swiper-button-next) {
@@ -32,27 +42,45 @@
     left: 0;
   }
 
-  :global(.swiper-button-disabled) {
-    pointer-events: auto;
-    opacity: 1;
+  @include media-pc {
+    :global(.swiper-button-prev),
+    :global(.swiper-button-next) {
+      top: pc-vw(125);
+      display: flex;
+      width: pc-vw(60);
+      height: pc-vw(60);
+
+      &:hover {
+        background: rgb(255 255 255 / 50%);
+      }
+    }
+
+    // :global(.swiper-button-disabled.swiper-button-prev),
+    // :global(.swiper-button-disabled.swiper-button-next) {
+    //   display: block;
+    // }
   }
 
   :global(.swiper-button-prev svg),
   :global(.swiper-button-next svg) {
     width: sp-vw(7);
     height: sp-vw(14);
-    color: rgb(0 0 0);
+    color: #{$color-black};
     fill: rgb(0 0 0);
-  }
 
-  :global(.swiper-button-prev):hover,
-  :global(.swiper-button-next):hover {
-    background: rgb(255 255 255 / 90%);
+    @include media-pc {
+      width: pc-vw(15);
+      height: pc-vw(30);
+    }
   }
 }
 
 .job-card {
   margin-top: sp-vw(35);
+
+  @include media-pc {
+    margin-top: pc-vw(25);
+  }
 }
 
 .job-title {
@@ -60,16 +88,32 @@
   font-size: sp-vw(16);
   font-weight: 700;
   line-height: sp-vw(22);
+
+  @include media-pc {
+    margin-top: pc-vw(8);
+    font-size: pc-vw(16);
+    font-weight: 400;
+    line-height: pc-vw(22);
+  }
 }
 
 .job-details {
   margin-top: sp-vw(11);
+
+  @include media-pc {
+    margin-top: pc-vw(7);
+  }
 }
 
 .detail-item {
   display: flex;
   gap: sp-vw(21);
   margin-top: sp-vw(4);
+
+  @include media-pc {
+    gap: pc-vw(10);
+    margin-top: pc-vw(4);
+  }
 }
 
 .label {
@@ -80,15 +124,29 @@
   height: sp-vw(21);
   font-size: sp-vw(14);
   background-color: rgb(255 202 208);
+
+  @include media-pc {
+    width: pc-vw(60);
+    height: pc-vw(21);
+    font-size: pc-vw(14);
+  }
 }
 
 .text {
   display: flex;
   align-items: center;
   font-size: sp-vw(14);
+
+  @include media-pc {
+    font-size: pc-vw(14);
+  }
 }
 
 .news-button {
   margin-top: sp-vw(44);
   text-align: center;
+
+  @include media-pc {
+    margin-top: pc-vw(59);
+  }
 }
