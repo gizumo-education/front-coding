@@ -5,6 +5,11 @@
   position: relative;
   width: sp-vw(400);
   height: sp-vw(270);
+
+  @include media-pc {
+    width: pc-vw(1600);
+    height: pc-vw(500);
+  }
 }
 
 .keyvisual-title {
@@ -12,6 +17,12 @@
   top: sp-vw(61);
   right: sp-vw(45);
   width: sp-vw(160);
+
+  @include media-pc {
+    top: pc-vw(56);
+    right: pc-vw(428);
+    width: pc-vw(341);
+  }
 }
 
 .keyvisual-subtitle {
@@ -19,6 +30,12 @@
   top: sp-vw(148);
   right: sp-vw(3.3);
   width: sp-vw(272);
+
+  @include media-pc {
+    top: pc-vw(265);
+    right: pc-vw(193);
+    width: pc-vw(800);
+  }
 }
 
 .keyvisual-stats {
@@ -31,9 +48,22 @@
   background-color: #{$color-white};
   border: 1px solid rgb(46 182 170);
   border-radius: sp-vw(6);
+
+  @include media-pc {
+    top: pc-vw(384);
+    right: pc-vw(400);
+    padding: pc-vw(11) pc-vw(41) pc-vw(12);
+    font-size: pc-vw(20);
+    border: 2px solid rgb(46 182 170);
+    border-radius: pc-vw(10);
+  }
 }
 
 .keyvisual-stats-number {
   font-size: sp-vw(18);
   font-weight: 700;
+
+  @include media-pc {
+    font-size: pc-vw(40);
+  }
 }
