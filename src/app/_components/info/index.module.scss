@@ -9,10 +9,20 @@
 .info-title {
   font-size: sp-vw(25);
   font-weight: 700;
+
+  @include media-pc {
+    font-size: pc-vw(25);
+  }
 }
 
 .info-contents {
   margin-top: sp-vw(30);
+
+  @include media-pc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: pc-vw(50);
+  }
 }
 
 .info-content {
@@ -26,6 +36,12 @@
   background-image: url('/info/info-img1.png');
   background-size: cover;
   border-radius: sp-vw(10);
+
+  @include media-pc {
+    padding: pc-vw(71) pc-vw(54) pc-vw(54);
+    margin-top: pc-vw(0);
+    border-radius: pc-vw(10);
+  }
 
   &::before {
     position: absolute;
@@ -50,18 +66,35 @@
 .info-content-title {
   font-size: sp-vw(21);
   font-weight: 700;
+
+  @include media-pc {
+    font-size: pc-vw(24);
+  }
 }
 
 .info-content-description {
   margin-top: sp-vw(53);
   font-size: sp-vw(14);
   line-height: 1.5;
+
+  @include media-pc {
+    margin-top: pc-vw(44);
+    font-size: pc-vw(16);
+  }
 }
 
 .info-button {
   margin-top: sp-vw(34);
+
+  @include media-pc {
+    margin-top: pc-vw(80);
+  }
 }
 
 .info-button-size {
   font-size: sp-vw(17);
+
+  @include media-pc {
+    font-size: pc-vw(18);
+  }
 }
