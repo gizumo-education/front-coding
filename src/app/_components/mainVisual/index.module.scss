@@ -11,6 +11,11 @@
   background-position: center;
   background-size: cover;
 
+  @include media-pc {
+    padding: pc-vw(104) 0;
+    background-image: url('/mainvisual/mainvisual-pc.png');
+  }
+
   &::before {
     position: absolute;
     inset: 0;
@@ -29,4 +34,9 @@
 .mainvisual-text {
   font-size: sp-vw(14);
   line-height: 1.5;
+
+  @include media-pc {
+    font-size: pc-vw(25);
+    line-height: 2;
+  }
 }
