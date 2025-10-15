@@ -54,7 +54,7 @@ const jobs = [
   {
     id: 4,
     imgSp: '/news/job1-sp.png',
-    imgPc: '/news/job4-pc.jpg',
+    imgPc: '/news/job4-pc.png',
     width: 740,
     height: 416,
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
