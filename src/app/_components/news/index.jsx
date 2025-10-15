@@ -68,6 +68,9 @@ const jobs = [
 ]
 
 export const News = () => {
+  // 無限ループ用にスライドを複製↓
+  const jobsForLoop = [...jobs, ...jobs]
+
   return (
     <section className={styles['news']}>
       <div className='inner'>
@@ -86,8 +89,8 @@ export const News = () => {
           }}
           className={styles['news-swiper']}
         >
-          {jobs.map((job) => (
-            <SwiperSlide key={job.id}>
+          {jobsForLoop.map((job, index) => (
+            <SwiperSlide key={index}>
               <div className={styles['job-card']}>
                 <picture>
                   <source srcSet={job.imgSp} media='(max-width: 767px)' />
