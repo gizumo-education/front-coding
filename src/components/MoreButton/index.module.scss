@@ -14,4 +14,10 @@
   cursor: pointer;
   background-color: #{$color-pink};
   border-radius: sp-vw(50);
+
+  @include media-pc {
+    width: pc-vw(420);
+    padding: pc-vw(21) pc-vw(93);
+    font-size: pc-vw(18);
+  }
 }

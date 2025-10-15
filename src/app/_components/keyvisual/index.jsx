@@ -4,26 +4,44 @@ export const Keyvisual = () => {
   return (
     <section>
       <div className={styles['keyvisual-container']}>
-        <img
-          src='/keyvisual/keyvisual-sp.png'
-          alt=''
-          width={800}
-          height={540}
-        />
-        <img
-          src='/keyvisual/keyvisual-title.png'
-          alt='No.1'
-          width={316}
-          height={162}
-          className={styles['keyvisual-title']}
-        />
-        <img
-          src='/keyvisual/keyvisual-subtitle.png'
-          alt='医療事務求人を探すならギズジョブ'
-          width={556}
-          height={54}
-          className={styles['keyvisual-subtitle']}
-        />
+        <picture>
+          <source
+            media='(max-width: 767px)'
+            srcSet='/keyvisual/keyvisual-sp.png'
+          />
+          <img
+            src='/keyvisual/keyvisual-pc.png'
+            alt=''
+            width={3200}
+            height={1000}
+          />
+        </picture>
+        <picture>
+          <source
+            media='(max-width: 767px)'
+            srcSet='/keyvisual/keyvisual-title.png'
+          />
+          <img
+            src='/keyvisual/keyvisual-title-pc.png'
+            alt='No1'
+            width={700}
+            height={352}
+            className={styles['keyvisual-title']}
+          />
+        </picture>
+        <picture>
+          <source
+            media='(max-width: 767px)'
+            srcSet='/keyvisual/keyvisual-subtitle.png'
+          />
+          <img
+            src='/keyvisual/keyvisual-subtitle-pc.png'
+            alt='医療事務求人を探すならギズジョブ'
+            width={700}
+            height={352}
+            className={styles['keyvisual-subtitle']}
+          />
+        </picture>
         <p className={styles['keyvisual-stats']}>
           現在の求人掲載数：
           <span className={styles['keyvisual-stats-number']}>2,320</span>件

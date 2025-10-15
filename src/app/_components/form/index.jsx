@@ -36,7 +36,13 @@ export const Form = ({ className = '' }) => {
                   <option value='看護補助・看護助手'>看護補助・看護助手</option>
                   <option value='病院内SE'>病院内SE</option>
                 </select>
-                <svg width={13} height={8} viewBox='0 0 13 8' fill='none'>
+                <svg
+                  className={styles['form-triangle']}
+                  width={13}
+                  height={8}
+                  viewBox='0 0 13 8'
+                  fill='none'
+                >
                   <path
                     d='M6.49512 7.5L-0.00488281 0.5H12.9951L6.49512 7.5Z'
                     fill='#DE1E79'
@@ -64,7 +70,13 @@ export const Form = ({ className = '' }) => {
                   <option value='東京都'>東京都</option>
                   <option value='栃木県'>栃木県</option>
                 </select>
-                <svg width={13} height={8} viewBox='0 0 13 8' fill='none'>
+                <svg
+                  className={styles['form-triangle']}
+                  width={13}
+                  height={8}
+                  viewBox='0 0 13 8'
+                  fill='none'
+                >
                   <path
                     d='M6.49512 7.5L-0.00488281 0.5H12.9951L6.49512 7.5Z'
                     fill='#DE1E79'
@@ -92,7 +104,13 @@ export const Form = ({ className = '' }) => {
                   <option value='月給22万〜'>月給22万〜</option>
                   <option value='月給23万〜'>月給23万〜</option>
                 </select>
-                <svg width={13} height={8} viewBox='0 0 13 8' fill='none'>
+                <svg
+                  className={styles['form-triangle']}
+                  width={13}
+                  height={8}
+                  viewBox='0 0 13 8'
+                  fill='none'
+                >
                   <path
                     d='M6.49512 7.5L-0.00488281 0.5H12.9951L6.49512 7.5Z'
                     fill='#DE1E79'
