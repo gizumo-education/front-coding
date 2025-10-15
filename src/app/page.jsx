@@ -1,3 +1,6 @@
+'use client'
+
+import { useRef } from 'react'
 import { Header } from '@/components/layout'
 import { Keyvisual } from './_components/keyvisual'
 import { Form } from './_components/form'
@@ -10,17 +13,37 @@ import { Info } from './_components/info'
 import styles from './page.module.scss'
 
 const Top = () => {
+  const headerRef = useRef(null)
+
   return (
     <>
-      <Header />
-      <main>
-        <Keyvisual />
+      <Header headerRef={headerRef} />
+
+      <main className={styles['main']}>
+        <section id='top'>
+          <Keyvisual />
+        </section>
+
         <Form className={styles['form-top-section']} />
-        <News />
+
+        <section id='news'>
+          <News />
+        </section>
+
         <MainVisual />
-        <Feature className={styles['feature-section']} />
-        <Flow className={styles['flow-section']} />
-        <Info className={styles['info-section']} />
+
+        <section id='feature'>
+          <Feature className={styles['feature-section']} />
+        </section>
+
+        <section id='flow'>
+          <Flow className={styles['flow-section']} />
+        </section>
+
+        <section id='info'>
+          <Info className={styles['info-section']} />
+        </section>
+
         <Form className={styles['form-bottom-section']} />
       </main>
     </>

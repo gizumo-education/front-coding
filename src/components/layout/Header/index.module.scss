@@ -1,11 +1,12 @@
 @use '@/styles' as *;
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
   display: flex;
   justify-content: flex-end;
+  width: 100%;
   padding: sp-vw(16) sp-vw(15);
   background-color: #{$color-white};
   @include media-pc {
@@ -38,6 +39,11 @@
   height: sp-vw(6);
   background-color: #{$color-black};
   border-radius: 6px;
+
+  transition:
+    transform 0.3s ease,
+    top 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .line:nth-child(1) {
@@ -52,6 +58,20 @@
 .line:nth-child(3) {
   top: 100%;
   transform: translateY(-100%);
+}
+
+.button.open .line:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.button.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.button.open .line:nth-child(3) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 .nav {
@@ -162,4 +182,34 @@
     height: pc-vw(16);
     background-image: url('/icon/history.svg');
   }
+}
+
+.sp-menu {
+  position: absolute;
+  top: 100%; // ヘッダーの下
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(38);
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  padding: sp-vw(57) sp-vw(98) sp-vw(235) sp-vw(60);
+  background-color: rgb(0 0 0 / 50%);
+  transition: right 0.3s ease;
+
+  &.open {
+    right: 0;
+  }
+
+  @include media-pc {
+    display: none;
+  }
+}
+
+.sp-menu-item {
+  width: 100%;
+  font-size: sp-vw(22);
+  font-weight: 700;
+  color: #{$color-white};
 }
