@@ -3,12 +3,22 @@
 .form {
   margin: pc-vw(60) pc-vw(210);
 
+  @include media-sp {
+    margin: sp-vw(25) sp-vw(15);
+  }
+
   &-container {
     width: pc-vw(1180);
     height: pc-vw(240);
     margin: 0 auto;
     background-color: $color-sky-blue;
     border-radius: pc-vw(10);
+
+    @include media-sp {
+      width: sp-vw(370);
+      height: sp-vw(240);
+      border-radius: sp-vw(10);
+    }
   }
 
   &-title {
@@ -17,6 +27,11 @@
     padding-top: pc-vw(40);
     font-size: clamp(rem(20), pc-vw(25), rem(29));
     font-weight: 700;
+
+    @include media-sp {
+      padding-top: sp-vw(15);
+      font-size: clamp(rem(17), sp-vw(22), rem(26));
+    }
   }
 
   &-description {
@@ -25,6 +40,11 @@
     margin-top: pc-vw(24);
     font-size: clamp(rem(15), pc-vw(20), rem(24));
     font-weight: 400;
+
+    @include media-sp {
+      margin-top: sp-vw(19);
+      font-size: clamp(rem(9), sp-vw(14), rem(18));
+    }
   }
 }
 
@@ -36,6 +56,13 @@
   width: pc-vw(1100);
   padding-top: pc-vw(31);
   margin: 0 auto;
+
+  @include media-sp {
+    flex-wrap: wrap;
+    gap: sp-vw(10);
+    width: sp-vw(320);
+    padding-top: sp-vw(16);
+  }
 
   &-wrapper {
     position: relative;
@@ -51,6 +78,14 @@
       border-bottom: 0;
       border-left: pc-vw(10) solid transparent;
       transform: translateY(-50%);
+
+      @include media-sp {
+        right: sp-vw(7);
+        border-top: sp-vw(6) solid $color-pink;
+        border-right: sp-vw(6) solid transparent;
+        border-bottom: 0;
+        border-left: sp-vw(6) solid transparent;
+      }
     }
   }
 
@@ -64,6 +99,15 @@
     background-color: $color-white;
     border: 1px solid $color-pink;
     border-radius: pc-vw(10);
+
+    @include media-sp {
+      width: sp-vw(100);
+      height: sp-vw(30);
+      padding: 0 sp-vw(7);
+      font-size: clamp(rem(7), sp-vw(12), rem(16));
+      line-height: 2.4;
+      border-radius: sp-vw(5);
+    }
   }
 }
 
@@ -78,6 +122,15 @@
   background-color: $color-white;
   border: 1px solid $color-pink;
   border-radius: pc-vw(10);
+
+  @include media-sp {
+    width: sp-vw(320);
+    height: sp-vw(30);
+    padding-left: sp-vw(6);
+    margin-top: sp-vw(5);
+    font-size: clamp(rem(9), sp-vw(14), rem(18));
+    border-radius: sp-vw(5);
+  }
 
   &::placeholder {
     color: $color-gray;
@@ -95,6 +148,14 @@
   color: $color-white;
   background-color: $color-pink;
   border-radius: pc-vw(30);
+
+  @include media-sp {
+    width: sp-vw(160);
+    height: sp-vw(40);
+    margin-top: sp-vw(9);
+    font-size: clamp(rem(13), sp-vw(18), rem(22));
+    border-radius: sp-vw(30);
+  }
 }
 
 .search-icon {
@@ -102,4 +163,10 @@
   right: pc-vw(6);
   width: pc-vw(29.98);
   height: pc-vw(29.98);
+
+  @include media-sp {
+    right: sp-vw(22);
+    width: sp-vw(18);
+    height: sp-vw(18);
+  }
 }

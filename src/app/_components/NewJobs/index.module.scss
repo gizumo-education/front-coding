@@ -6,10 +6,19 @@
   margin: 0 auto;
   background-color: $color-light-sky-blue;
 
+  @include media-sp {
+    height: sp-vw(600);
+  }
+
   &-inner {
     position: relative;
     padding-top: pc-vw(67);
     margin: 0 pc-vw(210);
+
+    @include media-sp {
+      padding-top: sp-vw(30);
+      margin: 0 sp-vw(15);
+    }
   }
 }
 
@@ -20,6 +29,16 @@
   font-family: Inter, sans-serif;
   font-size: clamp(rem(20), pc-vw(25), rem(29));
   font-weight: 400;
+
+  @include media-sp {
+    display: block;
+    width: sp-vw(100);
+    height: sp-vw(25);
+    margin: 0 auto sp-vw(35);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(rem(20), sp-vw(25), rem(29));
+    font-weight: 700;
+  }
 }
 
 .job-list {
@@ -37,6 +56,13 @@
   height: pc-vw(60);
   cursor: pointer;
 
+  @include media-sp {
+    top: sp-vw(178);
+    width: sp-vw(42);
+    height: sp-vw(42);
+    transform: translateY(-50%);
+  }
+
   &::before {
     position: absolute;
     width: pc-vw(60);
@@ -45,6 +71,12 @@
     background-color: $color-white;
     border-radius: 50%;
     opacity: 0.7;
+
+    @include media-sp {
+      width: sp-vw(42);
+      height: sp-vw(42);
+      transform: translateX(pc-vw(-55));
+    }
   }
 
   &::after {
@@ -55,6 +87,11 @@
     border-width: pc-vw(11.36);
     border-top: 0.71 solid $color-black;
     border-right: 0.71 solid $color-black;
+
+    @include media-sp {
+      width: sp-vw(10);
+      height: sp-vw(10);
+    }
   }
 }
 
@@ -62,17 +99,31 @@
   top: 50%;
   left: 55%;
   transform: translate(-50%, -50%) rotate(-135deg);
+
+  @include media-sp {
+    top: sp-vw(22);
+    left: sp-vw(10);
+  }
 }
 
 .right::after {
   top: 50%;
   right: 25%;
   transform: translate(-50%, -50%) rotate(45deg);
+
+  @include media-sp {
+    top: sp-vw(22);
+    right: sp-vw(27);
+  }
 }
 
 .left {
   left: pc-vw(29.6);
   transform: translate(-50%, -50%);
+
+  @include media-sp {
+    left: sp-vw(36);
+  }
 }
 
 .right {
@@ -86,6 +137,16 @@
   gap: pc-vw(8);
   align-items: flex-start;
   width: pc-vw(280);
+
+  @include media-sp {
+    width: sp-vw(370);
+  }
+
+  &:not(:nth-child(2)) {
+    @include media-sp {
+      display: none;
+    }
+  }
 }
 
 .subtext-title {
@@ -95,6 +156,16 @@
   font-size: clamp(rem(11), pc-vw(16), rem(20));
   font-weight: 400;
   line-height: 1.38;
+
+  @include media-sp {
+    width: sp-vw(358);
+    height: sp-vw(44);
+    padding-top: sp-vw(8);
+    font-size: clamp(rem(11), sp-vw(16), rem(20));
+    font-style: bold;
+    font-weight: 700;
+    line-height: 1.38;
+  }
 }
 
 .card {
@@ -102,6 +173,12 @@
   flex-direction: column;
   gap: pc-vw(4);
   width: pc-vw(280);
+
+  @include media-sp {
+    gap: sp-vw(4);
+    width: sp-vw(280);
+    padding-top: sp-vw(16);
+  }
 
   &-list {
     display: flex;
@@ -116,6 +193,13 @@
     line-height: 1.5;
     text-align: center;
     background-color: $color-light-pink;
+
+    @include media-sp {
+      width: sp-vw(60);
+      height: sp-vw(21);
+      padding-top: pc-vw(6);
+      font-size: clamp(rem(9), sp-vw(14), rem(18));
+    }
   }
 
   &-text {
@@ -123,12 +207,21 @@
     font-family: Inter, sans-serif;
     font-size: clamp(rem(9), pc-vw(14), rem(18));
     font-weight: 400;
+
+    @include media-sp {
+      margin-left: sp-vw(21);
+      font-size: clamp(rem(9), sp-vw(14), rem(18));
+    }
   }
 }
 
 .button-wrapper {
   padding-top: pc-vw(60);
   text-align: center;
+
+  @include media-sp {
+    padding-top: sp-vw(44);
+  }
 }
 
 .button {
@@ -141,4 +234,13 @@
   cursor: pointer;
   background-color: $color-peach;
   border-radius: pc-vw(30);
+
+  @include media-sp {
+    width: sp-vw(370);
+    height: sp-vw(60);
+    font-size: clamp(rem(13), sp-vw(18), rem(22));
+    font-style: bold;
+    font-weight: 700;
+    border-radius: sp-vw(30);
+  }
 }

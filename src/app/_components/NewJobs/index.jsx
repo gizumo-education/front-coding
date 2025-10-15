@@ -11,15 +11,21 @@ export const NewJobs = () => {
           <div className={`${styles['slide']} ${styles['left']}`}></div>
 
           <div className={styles['card-item']}>
-            <img
-              src='/images/woman1.png'
-              alt='woman1'
-              width='280'
-              height='200'
-              className={styles['woman-image']}
-            />
+            <picture>
+              <source
+                media='(max-width: 768px)'
+                srcSet='/sp_images/woman1-sp.png'
+              />
+              <img
+                src='/images/woman1.png'
+                alt='woman1'
+                width='280'
+                height='200'
+                className={styles['woman-image']}
+              />
+            </picture>
             <span className={styles['subtext-title']}>
-              平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人
+              平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
             </span>
             <dl className={styles['card']}>
               <div className={styles['card-list']}>

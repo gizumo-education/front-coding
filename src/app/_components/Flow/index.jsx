@@ -25,11 +25,14 @@ export const Flow = () => {
             />
             <h2 className={styles['section-subtitle']}>
               エントリーシートの
-              <br />
+              <br className={styles['br-pc']} />
               作成
             </h2>
             <p className={styles['section-description']}>
-              ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。こ
+              ここにはテキストが入ります。ここにはテキストが入ります。
+              <br className={styles['br-sp']} />
+              ここにはテキストが入ります。
+              <br className={styles['br-sp']} />こ
             </p>
           </div>
           <div className={styles['section-arrow']}></div>
@@ -49,11 +52,15 @@ export const Flow = () => {
             />
             <h2 className={styles['section-subtitle']}>
               気になる企業の
-              <br />
+              <br className={styles['br-pc']} />
               ピックアップ
             </h2>
             <p className={styles['section-description']}>
-              ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが
+              ここにはテキストが入ります。ここにはテキストが入ります。
+              <br className={styles['br-sp']} />
+              ここにはテキストが入ります。
+              <br className={styles['br-sp']} />
+              ここにはテキストが
             </p>
           </div>
           <div className={styles['section-arrow']}></div>
@@ -73,7 +80,11 @@ export const Flow = () => {
             />
             <h2 className={styles['section-subtitle']}>複数企業に応募</h2>
             <p className={styles['section-description']}>
-              ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが
+              ここにはテキストが入ります。ここにはテキストが入ります。
+              <br className={styles['br-sp']} />
+              ここにはテキストが入ります。
+              <br className={styles['br-sp']} />
+              ここにはテキストが
             </p>
           </div>
           <div className={styles['section-arrow']}></div>
@@ -93,7 +104,11 @@ export const Flow = () => {
             />
             <h2 className={styles['section-subtitle']}>内定・転職！</h2>
             <p className={styles['section-description']}>
-              ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが
+              ここにはテキストが入ります。ここにはテキストが入ります。
+              <br className={styles['br-sp']} />
+              ここにはテキストが入ります。
+              <br className={styles['br-sp']} />
+              ここにはテキストが
             </p>
           </div>
         </div>
