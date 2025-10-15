@@ -13,21 +13,8 @@
   font-weight: 700;
   color: #{$color-white};
   text-align: center;
-  cursor: pointer;
   background-color: #{$color-pink};
   border-radius: sp-vw(50);
-  transition: opacity 0.3s;
-
-  &:focus-visible {
-    outline: -webkit-focus-ring-color auto 1px;
-    outline-offset: 1px;
-  }
-
-  @media (any-hover: hover) {
-    &:hover {
-      opacity: 0.7;
-    }
-  }
 
   @include media-pc {
     gap: pc-vw(4);
