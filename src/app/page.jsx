@@ -1,6 +1,5 @@
 'use client'
 
-import { useRef } from 'react'
 import { Header } from '@/components/layout'
 import { Keyvisual } from './_components/keyvisual'
 import { Form } from './_components/form'
@@ -13,11 +12,9 @@ import { Info } from './_components/info'
 import styles from './page.module.scss'
 
 const Top = () => {
-  const headerRef = useRef(null)
-
   return (
     <>
-      <Header headerRef={headerRef} />
+      <Header />
 
       <main className={styles['main']}>
         <Keyvisual id='top' />

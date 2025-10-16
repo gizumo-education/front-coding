@@ -1,11 +1,12 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import clsx from 'clsx'
 import styles from './index.module.scss'
 
-export const Header = ({ headerRef }) => {
+export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const headerRef = useRef(null)
 
   const toggleMenu = () => setIsOpen((prev) => !prev)
 
@@ -20,7 +21,7 @@ export const Header = ({ headerRef }) => {
   useEffect(() => {
     if (!headerRef.current) return
 
-    const buttons = document.querySelectorAll('[data-scroll]')
+    const buttons = headerRef.current.querySelectorAll('[data-scroll]')
 
     // クリック時のスクロール処理
     const handleClick = (e) => {
