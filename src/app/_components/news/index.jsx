@@ -67,12 +67,12 @@ const jobs = [
   },
 ]
 
-export const News = () => {
+export const News = ({ id }) => {
   // 無限ループ用にスライドを複製↓
   const jobsForLoop = [...jobs, ...jobs]
 
   return (
-    <section className={styles['news']}>
+    <section id={id} className={styles['news']}>
       <div className='inner'>
         <h2 className={styles['news-title']}>新着求人</h2>
 

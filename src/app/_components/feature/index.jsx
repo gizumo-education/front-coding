@@ -1,9 +1,9 @@
 import styles from './index.module.scss'
 import clsx from 'clsx'
 
-export const Feature = ({ className = '' }) => {
+export const Feature = ({ id, className = '' }) => {
   return (
-    <section className={clsx('inner', styles['feature'], className)}>
+    <section id={id} className={clsx('inner', styles['feature'], className)}>
       <h2 className={styles['feature-title']}>ギズジョブの4つの特徴</h2>
       <div className={styles['feature-wrapper']}>
         <div className={styles['feature-box']}>

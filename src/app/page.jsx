@@ -20,29 +20,19 @@ const Top = () => {
       <Header headerRef={headerRef} />
 
       <main className={styles['main']}>
-        <section id='top'>
-          <Keyvisual />
-        </section>
+        <Keyvisual id='top' />
 
         <Form className={styles['form-top-section']} />
 
-        <section id='news'>
-          <News />
-        </section>
+        <News id='news' />
 
         <MainVisual />
 
-        <section id='feature'>
-          <Feature className={styles['feature-section']} />
-        </section>
+        <Feature id='feature' className={styles['feature-section']} />
 
-        <section id='flow'>
-          <Flow className={styles['flow-section']} />
-        </section>
+        <Flow id='flow' className={styles['flow-section']} />
 
-        <section id='info'>
-          <Info className={styles['info-section']} />
-        </section>
+        <Info id='info' className={styles['info-section']} />
 
         <Form className={styles['form-bottom-section']} />
       </main>
