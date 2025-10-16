@@ -1,6 +1,14 @@
 @use '@/styles' as *;
 @use '@/styles/functions' as *;
 
+.main {
+  padding-top: sp-vw(70);
+
+  @include media-pc {
+    padding-top: pc-vw(100);
+  }
+}
+
 .form-top-section {
   margin: sp-vw(25) sp-vw(0);
 

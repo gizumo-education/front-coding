@@ -1,8 +1,8 @@
 import styles from './index.module.scss'
 
-export const Keyvisual = () => {
+export const Keyvisual = ({ id }) => {
   return (
-    <section>
+    <section id={id}>
       <div className={styles['keyvisual-container']}>
         <picture>
           <source

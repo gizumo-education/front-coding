@@ -2,9 +2,9 @@ import styles from './index.module.scss'
 import { MoreButton } from '@/components/MoreButton'
 import clsx from 'clsx'
 
-export const Info = ({ className = '' }) => {
+export const Info = ({ id, className = '' }) => {
   return (
-    <section className={clsx('inner', styles['info'], className)}>
+    <section id={id} className={clsx('inner', styles['info'], className)}>
       <h2 className={styles['info-title']}>転職お役立ちコンテンツ</h2>
       <div className={styles['info-contents']}>
         <div className={styles['info-content']}>

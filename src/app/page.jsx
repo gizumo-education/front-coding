@@ -1,3 +1,5 @@
+'use client'
+
 import { Header } from '@/components/layout'
 import { Keyvisual } from './_components/keyvisual'
 import { Form } from './_components/form'
@@ -13,14 +15,22 @@ const Top = () => {
   return (
     <>
       <Header />
-      <main>
-        <Keyvisual />
+
+      <main className={styles['main']}>
+        <Keyvisual id='top' />
+
         <Form className={styles['form-top-section']} />
-        <News />
+
+        <News id='news' />
+
         <MainVisual />
-        <Feature className={styles['feature-section']} />
-        <Flow className={styles['flow-section']} />
-        <Info className={styles['info-section']} />
+
+        <Feature id='feature' className={styles['feature-section']} />
+
+        <Flow id='flow' className={styles['flow-section']} />
+
+        <Info id='info' className={styles['info-section']} />
+
         <Form className={styles['form-bottom-section']} />
       </main>
     </>
