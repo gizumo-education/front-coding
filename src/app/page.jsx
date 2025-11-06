@@ -1,9 +1,11 @@
-import { Header } from '@/components/layout'
+import { Header } from '@/components/layout/Header'
+import { Keyvisual } from '@/components/layout/Keyvisual'
 
 const Top = () => {
   return (
     <>
       <Header />
+      <Keyvisual />
     </>
   )
 }
