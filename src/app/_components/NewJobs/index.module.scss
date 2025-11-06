@@ -1,13 +1,15 @@
 @use '@/styles' as *;
 
 .news {
-  width: 100%;
+  width: pc-vw(1600);
   height: pc-vw(636);
   margin: 0 auto;
   background-color: $color-light-sky-blue;
 
   @include media-sp {
+    width: sp-vw(400);
     height: sp-vw(600);
+    scroll-margin-top: sp-vw(70);
   }
 
   &-inner {
@@ -119,6 +121,7 @@
 
 .left {
   left: pc-vw(29.6);
+  z-index: 99;
   transform: translate(-50%, -50%);
 
   @include media-sp {
@@ -127,7 +130,8 @@
 }
 
 .right {
-  right: pc-vw(29.6);
+  right: pc-vw(45);
+  z-index: 99;
   transform: translate(50%, -50%);
 }
 
@@ -140,12 +144,6 @@
 
   @include media-sp {
     width: sp-vw(370);
-  }
-
-  &:not(:nth-child(2)) {
-    @include media-sp {
-      display: none;
-    }
   }
 }
 
@@ -242,5 +240,15 @@
     font-style: bold;
     font-weight: 700;
     border-radius: sp-vw(30);
+  }
+}
+
+.woman-image {
+  width: pc-vw(280);
+  height: pc-vw(200);
+
+  @include media-sp {
+    width: sp-vw(370);
+    height: sp-vw(208); 
   }
 }
