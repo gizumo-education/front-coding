@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './index.module.scss'
 
-export const Flow = () => {
+export const Flow = ({id}) => {
   return (
-    <section className={styles['section']}>
+    <section id={id} className={styles['section']}>
       <div className={styles['section-inner']}>
         <div className={styles['section-title']}>
           <h1 className={styles['section-text']}>転職までの流れ</h1>

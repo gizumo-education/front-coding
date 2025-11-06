@@ -9,6 +9,7 @@
 
   @include media-sp {
     margin: 0 auto;
+    scroll-margin-top: sp-vw(70);
   }
 
   &-inner {
@@ -18,7 +19,7 @@
     @include media-sp {
       width: sp-vw($design-sp-width);
       height: sp-vw(736);
-      margin-top: sp-vw(55);
+      margin: to;p: sp-vw(55);
     }
   }
 

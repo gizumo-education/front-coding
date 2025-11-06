@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './index.module.scss'
 
-export const Features = () => {
+export const Features = ({ id }) => {
   return (
-    <section className={styles['section']}>
+    <section id={id} className={styles['section']}>
       <div className={styles['section-inner']}>
         <div className={styles['section-title']}>
           <h1 className={styles['section-text']}>ギズジョブの4つの特徴</h1>
