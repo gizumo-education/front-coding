@@ -12,6 +12,7 @@
 html,
 body {
   max-width: 100vw;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -69,6 +70,12 @@ button:focus-visible {
 .inner {
   max-width: math.div(100vw, $design-sp-width) * $inner-sp-max-width;
   margin-inline: auto;
+}
+
+.no-scroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 @media (768px <=width) {
