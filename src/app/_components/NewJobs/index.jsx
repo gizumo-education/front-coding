@@ -5,121 +5,53 @@ import 'swiper/css/navigation'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 
-export const NewJobs = ({id }) => {
-  const jobLists = [
-    <div className={styles['card-item']} key={1}>
-      <picture>
-        <source media='(max-width: 768px)' srcSet='/sp_images/woman1-sp.png' />
-        <img
-          src='/images/woman1.png'
-          alt='woman1'
-          width='280'
-          height='200'
-          className={styles['woman-image']}
-        />
-      </picture>
-      <span className={styles['subtext-title']}>
-        平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
-      </span>
-      <dl className={styles['card']}>
-        <div className={styles['card-list']}>
-          <dt className={styles['card-label']}>給与</dt>
-          <dd className={styles['card-text']}>月給 148,000円〜</dd>
-        </div>
-        <div className={styles['card-list']}>
-          <dt className={styles['card-label']}>所在地</dt>
-          <dd className={styles['card-text']}>三重県伊勢市</dd>
-        </div>
-        <div className={styles['card-list']}>
-          <dt className={styles['card-label']}>最寄駅</dt>
-          <dd className={styles['card-text']}>伊勢市駅 徒歩15分</dd>
-        </div>
-      </dl>
-    </div>,
+export const NewJobs = ({ id }) => {
+  const jobs = [
+    {
+      imgPc: '/images/woman1.png',
+      imgSp: '/sp_images/woman1-sp.png',
 
-    <div className={styles['card-item']} key={2}>
-      <img
-        className={styles['woman-image']}
-        src='/images/woman2.png'
-        alt='woman2'
-        width='280'
-        height='200'
-      />
-      <span className={styles['subtext-title']}>
-        平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人
-      </span>
-      <dl className={styles['card']}>
-        <div className={styles['card-list']}>
-          <dt className={styles['card-label']}>給与</dt>
-          <dd className={styles['card-text']}>月給 148,000円〜</dd>
-        </div>
-        <div className={styles['card-list']}>
-          <dt className={styles['card-label']}>所在地</dt>
-          <dd className={styles['card-text']}>三重県伊勢市</dd>
-        </div>
-        <div className={styles['card-list']}>
-          <dt className={styles['card-label']}>最寄駅</dt>
-          <dd className={styles['card-text']}>伊勢市駅 徒歩15分</dd>
-        </div>
-      </dl>
-    </div>,
-
-    <div className={styles['card-item']} key={3}>
-      <img
-        className={styles['woman-image']}
-        src='/images/woman3.png'
-        alt='woman3'
-        width='280'
-        height='200'
-      />
-      <span className={styles['subtext-title']}>
-        平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人
-      </span>
-      <dl className={styles['card']}>
-        <div className={styles['card-list']}>
-          <dt className={styles['card-label']}>給与</dt>
-          <dd className={styles['card-text']}>月給 148,000円〜</dd>
-        </div>
-        <div className={styles['card-list']}>
-          <dt className={styles['card-label']}>所在地</dt>
-          <dd className={styles['card-text']}>三重県伊勢市</dd>
-        </div>
-        <div className={styles['card-list']}>
-          <dt className={styles['card-label']}>最寄駅</dt>
-          <dd className={styles['card-text']}>伊勢市駅 徒歩15分</dd>
-        </div>
-      </dl>
-    </div>,
-
-    <div className={styles['card-item']} key={4}>
-      <img
-        className={styles['woman-image']}
-        src='/images/woman4.png'
-        alt='woman4'
-        width='280'
-        height='200'
-      />
-      <span className={styles['subtext-title']}>
-        平日・夕方までの勤務!伊勢市の伊勢赤 十字病院で医療事務求人
-      </span>
-      <dl className={styles['card']}>
-        <div className={styles['card-list']}>
-          <dt className={styles['card-label']}>給与</dt>
-          <dd className={styles['card-text']}>月給 148,000円〜</dd>
-        </div>
-        <div className={styles['card-list']}>
-          <dt className={styles['card-label']}>所在地</dt>
-          <dd className={styles['card-text']}>三重県伊勢市</dd>
-        </div>
-        <div className={styles['card-list']}>
-          <dt className={styles['card-label']}>最寄駅</dt>
-          <dd className={styles['card-text']}>伊勢市駅 徒歩15分</dd>
-        </div>
-      </dl>
-    </div>,
+      title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+      salaryLabel: '給与',
+      salaryDetail: '月給 148,000円～',
+      placeLabel: '所在地',
+      placeDetail: '三重県伊勢市',
+      stationLabel: '最寄駅',
+      stationDetail: '伊勢市駅 徒歩15分',
+    },
+    {
+      imgPc: '/images/woman2.png',
+      title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+      salaryLabel: '給与',
+      salaryDetail: '月給 148,000円～',
+      placeLabel: '所在地',
+      placeDetail: '三重県伊勢市',
+      stationLabel: '最寄駅',
+      stationDetail: '伊勢市駅 徒歩15分',
+    },
+    {
+      imgPc: '/images/woman3.png',
+      title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+      salaryLabel: '給与',
+      salaryDetail: '月給 148,000円～',
+      placeLabel: '所在地',
+      placeDetail: '三重県伊勢市',
+      stationLabel: '最寄駅',
+      stationDetail: '伊勢市駅 徒歩15分',
+    },
+    {
+      imgPc: '/images/woman4.png',
+      title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+      salaryLabel: '給与',
+      salaryDetail: '月給 148,000円～',
+      placeLabel: '所在地',
+      placeDetail: '三重県伊勢市',
+      stationLabel: '最寄駅',
+      stationDetail: '伊勢市駅 徒歩15分',
+    },
   ]
 
-  const jobListsLoop = [...jobLists, ...jobLists]
+  const jobListsLoop = [...jobs, ...jobs]
 
   return (
     <section id={id} className={styles['news']}>
@@ -145,7 +77,43 @@ export const NewJobs = ({id }) => {
             }}
           >
             {jobListsLoop.map((job, i) => (
-              <SwiperSlide key={i}>{job}</SwiperSlide>
+              <SwiperSlide key={i}>
+                <div className={styles['card-item']}>
+                  <picture>
+                    <source media='(max-width: 768px)' srcSet={job.imgSp} />
+                    <img
+                      src={job.imgPc}
+                      alt='woman'
+                      width='280'
+                      height='200'
+                      className={styles['woman-image']}
+                    />
+                  </picture>
+                  <span className={styles['subtext-title']}>{job.title}</span>
+                  <dl className={styles['card']}>
+                    <div className={styles['card-list']}>
+                      <dt className={styles['card-label']}>
+                        {job.salaryLabel}
+                      </dt>
+                      <dd className={styles['card-text']}>
+                        {job.salaryDetail}
+                      </dd>
+                    </div>
+                    <div className={styles['card-list']}>
+                      <dt className={styles['card-label']}>{job.placeLabel}</dt>
+                      <dd className={styles['card-text']}>{job.placeDetail}</dd>
+                    </div>
+                    <div className={styles['card-list']}>
+                      <dt className={styles['card-label']}>
+                        {job.stationLabel}
+                      </dt>
+                      <dd className={styles['card-text']}>
+                        {job.stationDetail}
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </SwiperSlide>
             ))}
           </Swiper>
           <div
