@@ -6,19 +6,22 @@ import { Main } from './_components/Main'
 import { Features } from './_components/Features'
 import { Flow } from './_components/Flow'
 import { Contents } from './_components/Contents'
+import styles from './page.module.scss'
 
 const Top = () => {
   return (
     <>
       <Header />
-      <Keyvisual />
-      <Jobsearch />
-      <NewJobs />
-      <Main />
-      <Features />
-      <Flow />
-      <Contents />
-      <Jobsearch />
+      <div id='top-section' className={styles['scroll-margin']}>
+        <Keyvisual />
+        <Jobsearch />
+        <NewJobs id='new-jobs' />
+        <Main />
+        <Features id='features' />
+        <Flow id='flow' />
+        <Contents id='contents' />
+        <Jobsearch />
+      </div>
     </>
   )
 }

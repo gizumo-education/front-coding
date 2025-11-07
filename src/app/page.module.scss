@@ -1,0 +1,7 @@
+@use '@/styles' as *;
+
+.scroll-margin {
+  @include media-sp {
+    scroll-margin-top: sp-vw(70);
+  }
+}
