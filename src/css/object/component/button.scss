@@ -8,10 +8,38 @@
   height: 60px;
   // padding: 17px 0;
   color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+
 
   &:hover {
     opacity: .8;
     transition: .3s;
     cursor: pointer;
+  }
+}
+
+@mixin c-arrow($trans-x: -15%,$trans-y: 0%, $rotate-deg: 45deg) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+  opacity: 70%;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    background-position: center;
+    content: "";
+    width: 21px;
+    height: 21px;
+    transform: translate($trans-x,$trans-y) rotate($rotate-deg);
+    border-top: 0.71px solid #000;
+    border-right: 0.71px solid #000;
   }
 }
