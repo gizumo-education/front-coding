@@ -34,63 +34,63 @@
   </header>
 
   <main>
-    <div class="keyvisual-wrap">
-      <picture>
-        <source srcset="img/picture/keyvisual.jpg" media="(max-width: 767px)" />
-        <img src="img/picture/keyvisual.jpg" width="1600" height="500" alt="キービジュアル" />
-      </picture>
-      <div><img src="img/picture/keyvisual_icon.png" alt="キービジュアルアイコン" width="350" height="176"></div>
-      <h1><img src="img/picture/keyvisual_title.png" alt="キービジュアルタイトル" width="803" height="65"></h1>
-      <div class="keyvisual_count">
-        <p>現在の求人掲載数：2,320件</p>
+    <section class="keyvisual">
+      <div class="keyvisual-icon-cover">
+        <img src="img/picture/keyvisual_icon.png" class="keyvisual-icon" alt="キービジュアルアイコン" width="350" height="176">
       </div>
-    </div>
-    <section>
-      <h2>お仕事検索</h2>
-      <p>働きたい職種・地域・希望給与を入れて検索！</p>
-      <div class="form">
-        <div class="form-select-wrap">
-          <select name="form-select" class="form-select">
-            <option value="jp1" selected>医療事務</option>
-            <option value="jp2">調剤事務</option>
-            <option value="jp3">診療情報管理士</option>
-            <option value="jp4">歯科助手</option>
-            <option value="jp5">歯科事務/option>
-            <option value="jp6">看護補助・看護助手</option>
-            <option value="jp7">病院内SE</option>
-          </select>
-          <select name="form-select" class="form-select">
-            <option value="pre1">茨城県</option>
-            <option value="pre2">神奈川県</option>
-            <option value="pre3">群馬県</option>
-            <option value="pre4">埼玉県</option>
-            <option value="pre5">千葉県</option>
-            <option value="pre6" selected>東京都</option>
-            <option value="pre7">栃木県</option>
-          </select>
-          <select name="form-select" class="form-select">
-            <option value="income1">月給17万〜</option>
-            <option value="income2">月給18万〜</option>
-            <option value="income3">月給19万〜</option>
-            <option value="income4" selected>月給20万〜</option>
-            <option value="income5">月給21万〜</option>
-            <option value="income6">月給22万〜</option>
-            <option value="income7">月給23万〜</option>
-          </select>
-        </div>
-        <form class="form-search-wrap" action="#" method="get">
-          <input type="text" placeholder="キーワード・企業名・スキルなど">
-          <button>
-            <img src="img/icon/icon-search.png" alt="検索アイコン" width="20" height="19">
-            検索
-          </button>
-        </form>
+      <h1 class="keyvisual-h1"><img src="img/picture/keyvisual_title.png" class="keyvisual-title" alt="キービジュアルタイトル"
+          width="803" height="65">
+      </h1>
+      <div class="keyvisual-text-cover">
+        <p class="keyvisual-text">現在の求人掲載数：<span class="keyvisual-count">2,320件</span></p>
       </div>
     </section>
-    <section>
-      <div class="new-recruit-box-wrap">
-        <h2>新着求人</h2>
-        <div class="new-recruit-box">
+    <section class="form m-inner">
+      <div class="form-wrap">
+        <h2>お仕事検索</h2>
+        <p>働きたい職種・地域・希望給与を入れて検索！</p>
+        <div class="form-content">
+          <div class="form-select-wrap">
+            <select name="form-select" class="form-select form-box">
+              <option value="jp1" selected>医療事務</option>
+              <option value="jp2">調剤事務</option>
+              <option value="jp3">診療情報管理士</option>
+              <option value="jp4">歯科助手</option>
+              <option value="jp5">歯科事務/option>
+              <option value="jp6">看護補助・看護助手</option>
+              <option value="jp7">病院内SE</option>
+            </select>
+            <select name="form-select" class="form-select form-box">
+              <option value="pre1">茨城県</option>
+              <option value="pre2">神奈川県</option>
+              <option value="pre3">群馬県</option>
+              <option value="pre4">埼玉県</option>
+              <option value="pre5">千葉県</option>
+              <option value="pre6" selected>東京都</option>
+              <option value="pre7">栃木県</option>
+            </select>
+            <select name="form-select" class="form-select form-box">
+              <option value="income1">月給17万〜</option>
+              <option value="income2">月給18万〜</option>
+              <option value="income3">月給19万〜</option>
+              <option value="income4" selected>月給20万〜</option>
+              <option value="income5">月給21万〜</option>
+              <option value="income6">月給22万〜</option>
+              <option value="income7">月給23万〜</option>
+            </select>
+          </div>
+          <form class="form-search" action="#" method="get">
+            <input class="form-box" type="text" placeholder="キーワード・企業名・スキルなど">
+            <button class="form-search-button"><span class="form-search-button-icon"></span>検索する</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-recruit-box-wrap">
+      <h2>新着求人</h2>
+      <ul>
+        <li class="new-recruit-box">
           <img src="img/picture/new_recruite1.jpg" alt="新着求人１" width="280" height="200">
           <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
           <ul>
@@ -103,8 +103,8 @@
             <li>三重県伊勢市</li>
             <li>伊勢市駅 徒歩15分</li>
           </ul>
-        </div>
-        <div>
+        </li>
+        <li>
           <img src="img/picture/new_recruite2.jpg" alt="新着求人２" width="280" height="200">
           <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
           <ul>
@@ -117,8 +117,8 @@
             <li>三重県伊勢市</li>
             <li>伊勢市駅 徒歩15分</li>
           </ul>
-        </div>
-        <div>
+        </li>
+        <li>
           <img src="img/picture/new_recruite3.jpg" alt="新着求人３" width="280" height="200">
           <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
           <ul>
@@ -131,8 +131,8 @@
             <li>三重県伊勢市</li>
             <li>伊勢市駅 徒歩15分</li>
           </ul>
-        </div>
-        <div>
+        </li>
+        <li>
           <img src="img/picture/new_recruite4.jpg" alt="新着求人４" width="280" height="200">
           <p>平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人</p>
           <ul>
@@ -145,10 +145,11 @@
             <li>三重県伊勢市</li>
             <li>伊勢市駅 徒歩15分</li>
           </ul>
-        </div>
-      </div>
+        </li>
+      </ul>
       <p><a href="#">新着求人一覧をもっと見る</a></p>
     </section>
+
     <section>
       <div class="about-top">
         <p>ギズジョブなら理想の職場がきっと見つかる</p>
@@ -163,8 +164,7 @@
         </div>
         <div class="about-box">
           <h3>安心・安全</h3>
-          <p>掲載案件は基本的に当社グループ企業となるため、
-            皆さまにより詳細にクリーンな職場情報をお届けいたします。 </p>
+          <p>掲載案件は基本的に当社グループ企業となるため、皆さまにより詳細にクリーンな職場情報をお届けいたします。 </p>
         </div>
         <div class="about-box">
           <h3>わかりやすい</h3>
@@ -179,6 +179,7 @@
         </div>
       </div>
     </section>
+
     <section>
       <h2>転職までの流れ</h2>
       <div class="flow-box-wrap">
@@ -211,7 +212,7 @@
             <p>3</p>
           </div>
         </div>
-        <img src="img/picture/rigt_arrow.jpg"  class="right-arrow" alt="右矢印" width="20" height="40">
+        <img src="img/picture/rigt_arrow.jpg" class="right-arrow" alt="右矢印" width="20" height="40">
         <div class="flow-box">
           <img src="img/picture/flow4.jpg" alt="虫眼鏡" width="108" height="111">
           <h3>内定・転職！</h3>
@@ -223,6 +224,7 @@
         </div>
       </div>
     </section>
+
     <section>
       <div class="topics-wrap">
         <h2>転職お役立ちコンテンツ</h2>
