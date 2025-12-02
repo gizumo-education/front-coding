@@ -1,0 +1,23 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.more-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(370);
+  height: auto;
+  padding: sp-vw(21) sp-vw(70);
+  font-size: sp-vw(18);
+  font-weight: 700;
+  color: #{$color-white};
+  cursor: pointer;
+  background-color: #{$color-pink-pink};
+  border-radius: sp-vw(50);
+
+  @include media-pc {
+    width: pc-vw(420);
+    padding: pc-vw(21) pc-vw(93);
+    font-size: pc-vw(18);
+  }
+}

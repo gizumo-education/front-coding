@@ -1,0 +1,141 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+@use 'sass:math';
+
+.form-container {
+  padding: sp-vw(15) sp-vw(25) sp-vw(20);
+  background-color: #{$color-white-blue};
+  border-radius: sp-vw(7);
+
+  @include media-pc {
+    padding: pc-vw(40);
+    border-radius: pc-vw(7);
+  }
+}
+
+.form-textbox {
+  text-align: center;
+}
+
+.form-text {
+  font-size: sp-vw(22);
+  font-weight: 700;
+
+  @include media-pc {
+    font-size: pc-vw(25);
+  }
+}
+
+.form-description {
+  margin-top: sp-vw(16);
+  font-size: sp-vw(14);
+
+  @include media-pc {
+    margin-top: pc-vw(20);
+    font-size: pc-vw(20);
+  }
+}
+
+.select-container {
+  margin-top: sp-vw(13);
+
+  @include media-pc {
+    display: flex;
+    margin-top: pc-vw(26);
+  }
+}
+
+.select-wrapper {
+  display: flex;
+  gap: sp-vw(10);
+
+  .form-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: sp-vw(100);
+    padding: sp-vw(6) sp-vw(7) sp-vw(7) sp-vw(8);
+    background-color: #{$color-white};
+    border: 1px solid #{$color-pink};
+    border-radius: sp-vw(4);
+  }
+
+  .form-select-inner {
+    width: 100%;
+    font-size: sp-vw(12);
+  }
+
+  @include media-pc {
+    gap: pc-vw(15);
+
+    .form-select {
+      width: pc-vw(200);
+      height: pc-vw(60);
+      padding: pc-vw(17) pc-vw(25) pc-vw(17) pc-vw(15);
+      border-radius: pc-vw(10);
+    }
+
+    .form-select-inner {
+      font-size: pc-vw(18);
+    }
+  }
+}
+
+.form-triangle {
+  width: sp-vw(13);
+  height: sp-vw(7);
+
+  @include media-pc {
+    width: pc-vw(20);
+    height: pc-vw(10);
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+.form-input {
+  padding: sp-vw(6) sp-vw(7) sp-vw(7) sp-vw(8);
+  margin-top: sp-vw(15);
+  background-color: #{$color-white};
+  border: 1px solid #{$color-pink};
+  border-radius: sp-vw(4);
+
+  @include media-pc {
+    width: pc-vw(300);
+    height: pc-vw(60);
+    padding: pc-vw(17) pc-vw(10);
+    margin: pc-vw(0) pc-vw(0) pc-vw(0) pc-vw(15);
+    border-radius: pc-vw(10);
+  }
+}
+
+.form-input-field {
+  width: 100%;
+  font-size: sp-vw(14);
+  color: #{$color-gray};
+
+  @include media-pc {
+    display: flex;
+    align-items: center;
+    font-size: pc-vw(18);
+  }
+}
+
+.search-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: sp-vw(19);
+
+  @include media-pc {
+    margin: pc-vw(0) pc-vw(0) pc-vw(0) pc-vw(15);
+  }
+}

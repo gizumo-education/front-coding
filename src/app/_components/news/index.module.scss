@@ -1,0 +1,172 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.news {
+  padding: sp-vw(30) sp-vw(0) sp-vw(60);
+  background-color: #{$color-white-blue};
+
+  @include media-pc {
+    padding: pc-vw(64) pc-vw(0) pc-vw(67);
+  }
+}
+
+.news-title {
+  font-size: sp-vw(22);
+  font-weight: 700;
+  text-align: center;
+
+  @include media-pc {
+    font-size: pc-vw(25);
+    font-weight: 400;
+    text-align: left;
+  }
+}
+
+.news-container {
+  position: relative;
+  margin-top: sp-vw(35);
+
+  @include media-pc {
+    margin-top: pc-vw(25);
+  }
+
+  .nav-button-prev,
+  .nav-button-next {
+    position: absolute;
+    top: sp-vw(210);
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: sp-vw(42);
+    height: sp-vw(42);
+    pointer-events: none;
+    cursor: default;
+    background: #{$color-white-opacity-70};
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  .nav-button-prev {
+    left: 0;
+  }
+
+  @include media-pc {
+    .nav-button-prev,
+    .nav-button-next {
+      top: pc-vw(125);
+      width: pc-vw(60);
+      height: pc-vw(60);
+
+      &:hover {
+        background: #{$color-white-opacity-50};
+      }
+    }
+  }
+
+  .nav-icon {
+    width: sp-vw(7);
+    height: sp-vw(14);
+    color: #{$color-black};
+    fill: #{$color-black};
+
+    @include media-pc {
+      width: pc-vw(15);
+      height: pc-vw(30);
+    }
+  }
+
+  .nav-button-prev .nav-icon {
+    transform: rotate(180deg);
+  }
+}
+
+.news-grid {
+  @include media-pc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: pc-vw(20);
+  }
+}
+
+.job-card {
+  @include media-pc {
+    margin-top: 0;
+  }
+}
+
+.job-card-hidden-mobile {
+  display: none;
+
+  @include media-pc {
+    display: block;
+  }
+}
+
+.job-title {
+  margin-top: sp-vw(10);
+  font-size: sp-vw(16);
+  font-weight: 700;
+  line-height: sp-vw(22);
+
+  @include media-pc {
+    margin-top: pc-vw(8);
+    font-size: pc-vw(16);
+    font-weight: 400;
+    line-height: pc-vw(22);
+  }
+}
+
+.job-details {
+  margin-top: sp-vw(11);
+
+  @include media-pc {
+    margin-top: pc-vw(7);
+  }
+}
+
+.detail-item {
+  display: flex;
+  gap: sp-vw(21);
+  margin-top: sp-vw(4);
+
+  @include media-pc {
+    gap: pc-vw(10);
+    margin-top: pc-vw(4);
+  }
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(68);
+  height: sp-vw(21);
+  font-size: sp-vw(14);
+  background-color: #{$color-light-pink};
+
+  @include media-pc {
+    width: pc-vw(60);
+    height: pc-vw(21);
+    font-size: pc-vw(14);
+  }
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  font-size: sp-vw(14);
+
+  @include media-pc {
+    font-size: pc-vw(14);
+  }
+}
+
+.news-button {
+  margin-top: sp-vw(44);
+  text-align: center;
+
+  @include media-pc {
+    margin-top: pc-vw(59);
+  }
+}
