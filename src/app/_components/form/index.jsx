@@ -3,11 +3,11 @@ import styles from './index.module.scss'
 
 export const Form = ({ className = '' }) => {
   return (
-    <section className={'inner'}>
+    <section className='inner'>
       <div className={className}>
         <div className={styles['form-container']}>
           <div className={styles['form-textbox']}>
-            <p className={styles['form-text']}>お仕事検索</p>
+            <h2 className={styles['form-text']}>お仕事検索</h2>
             <p className={styles['form-description']}>
               働きたい職種・地域・希望給与を入れて検索！
             </p>
@@ -28,19 +28,21 @@ export const Form = ({ className = '' }) => {
                   <option value='' hidden>
                     医療事務
                   </option>
+                  <option value='医療事務'>医療事務</option>
+                  <option value='調剤事務'>調剤事務</option>
+                  <option value='診療情報管理士'>診療情報管理士</option>
+                  <option value='歯科助手'>歯科助手</option>
+                  <option value='歯科事務'>歯科事務</option>
+                  <option value='看護補助・看護助手'>看護補助・看護助手</option>
+                  <option value='病院内SE'>病院内SE</option>
                 </select>
-                <svg
+                <img
                   className={styles['form-triangle']}
+                  src='/form/triangle.svg'
+                  alt=''
                   width={13}
                   height={8}
-                  viewBox='0 0 13 8'
-                  fill='none'
-                >
-                  <path
-                    d='M6.49512 7.5L-0.00488281 0.5H12.9951L6.49512 7.5Z'
-                    fill='#de1e79'
-                  />
-                </svg>
+                />
               </div>
               <div className={styles['form-select']}>
                 <label htmlFor='job-place' className={styles['sr-only']}>
@@ -55,19 +57,21 @@ export const Form = ({ className = '' }) => {
                   <option value='' hidden>
                     東京都
                   </option>
+                  <option value='	茨城県'> 茨城県</option>
+                  <option value='神奈川県'>神奈川県</option>
+                  <option value='群馬県'>群馬県</option>
+                  <option value='埼玉県'>埼玉県</option>
+                  <option value='千葉県'>千葉県</option>
+                  <option value='東京都'>東京都</option>
+                  <option value='栃木県'>栃木県</option>
                 </select>
-                <svg
+                <img
                   className={styles['form-triangle']}
+                  src='/form/triangle.svg'
+                  alt=''
                   width={13}
                   height={8}
-                  viewBox='0 0 13 8'
-                  fill='none'
-                >
-                  <path
-                    d='M6.49512 7.5L-0.00488281 0.5H12.9951L6.49512 7.5Z'
-                    fill='#de1e79'
-                  />
-                </svg>
+                />
               </div>
               <div className={styles['form-select']}>
                 <label htmlFor='job-salary' className={styles['sr-only']}>
@@ -82,19 +86,21 @@ export const Form = ({ className = '' }) => {
                   <option value='' hidden>
                     月給20万〜
                   </option>
+                  <option value='月給17万〜'>月給17万〜</option>
+                  <option value='月給18万〜'>月給18万〜</option>
+                  <option value='月給19万〜'>月給19万〜</option>
+                  <option value='月給20万〜'>月給20万〜</option>
+                  <option value='月給21万〜'>月給21万〜</option>
+                  <option value='月給22万〜'>月給22万〜</option>
+                  <option value='月給23万〜'>月給23万〜</option>
                 </select>
-                <svg
+                <img
                   className={styles['form-triangle']}
+                  src='/form/triangle.svg'
+                  alt=''
                   width={13}
                   height={8}
-                  viewBox='0 0 13 8'
-                  fill='none'
-                >
-                  <path
-                    d='M6.49512 7.5L-0.00488281 0.5H12.9951L6.49512 7.5Z'
-                    fill='#de1e79'
-                  />
-                </svg>
+                />
               </div>
             </div>
             <div className={styles['form-input']}>

@@ -9,8 +9,6 @@ const jobs = [
     id: 1,
     imgSp: '/news/work1.png',
     imgPc: '/news/work1.png',
-    width: 740,
-    height: 416,
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
     salaryLabel: '月給',
     salaryDetail: '月給 148,000円～',
@@ -23,8 +21,6 @@ const jobs = [
     id: 2,
     imgSp: '/news/work2.png',
     imgPc: '/news/work2.png',
-    width: 740,
-    height: 416,
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
     salaryLabel: '月給',
     salaryDetail: '月給 148,000円～',
@@ -37,8 +33,6 @@ const jobs = [
     id: 3,
     imgSp: '/news/work3.png',
     imgPc: '/news/work3.png',
-    width: 740,
-    height: 416,
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
     salaryLabel: '月給',
     salaryDetail: '月給 148,000円～',
@@ -51,8 +45,6 @@ const jobs = [
     id: 4,
     imgSp: '/news/work4.png',
     imgPc: '/news/work4.png',
-    width: 740,
-    height: 416,
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
     salaryLabel: '月給',
     salaryDetail: '月給 148,000円～',
@@ -80,13 +72,13 @@ export const News = ({ id }) => {
                   <source srcSet={job.imgSp} media='(max-width: 767px)' />
                   <img
                     src={job.imgPc}
-                    alt={job.title}
+                    alt={''}
                     width={job.width}
                     height={job.height}
                   />
                 </picture>
 
-                <h3 className={styles['job-title']}>{job.title}</h3>
+                <h2 className={styles['job-title']}>{job.title}</h2>
                 <div className={styles['job-details']}>
                   <div className={styles['detail-item']}>
                     <p className={styles['label']}>{job.salaryLabel}</p>
@@ -118,7 +110,7 @@ export const News = ({ id }) => {
         </div>
 
         <div className={styles['news-button']}>
-          <MoreButton text='新着求人一覧をもっと見る' href='/' />
+          <MoreButton href='/'>新着求人一覧をもっと見る</MoreButton>
         </div>
       </div>
     </section>

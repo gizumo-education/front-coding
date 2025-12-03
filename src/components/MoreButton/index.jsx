@@ -1,16 +1,16 @@
 import styles from './index.module.scss'
 import PropTypes from 'prop-types'
 
-export const MoreButton = ({ text, href = '/', className = '' }) => {
+export const MoreButton = ({ children, href = '/', className = '' }) => {
   return (
     <a href={href} className={styles['more-button']}>
-      <span className={className}>{text}</span>
+      <span className={className}>{children}</span>
     </a>
   )
 }
 
 MoreButton.propTypes = {
-  text: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   href: PropTypes.string.isRequired,
   className: PropTypes.string,
 }

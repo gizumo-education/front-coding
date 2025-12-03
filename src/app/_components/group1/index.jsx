@@ -4,11 +4,11 @@ export const Group1 = () => {
   return (
     <section className={styles['group1']}>
       <div className={styles['group1-textbox']}>
-        <h1 className={styles['group1-text']}>
+        <p className={styles['group1-text']}>
           ギズジョブなら理想の職場がきっと見つかる
           <br />
           ギズジョブは完全無料の求職者向け求人サービスです。
-        </h1>
+        </p>
       </div>
     </section>
   )

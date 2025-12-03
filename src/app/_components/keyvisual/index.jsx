@@ -24,7 +24,7 @@ export const KeyVisual = ({ id }) => {
           />
           <img
             src='/keyvisual/keyvisual-title-pc.png'
-            alt='No1'
+            alt=''
             width={700}
             height={352}
             className={styles['keyvisual-title']}
@@ -38,17 +38,17 @@ export const KeyVisual = ({ id }) => {
           />
           <img
             src='/keyvisual/keyvisual-subtitle-pc.png'
-            alt='医療事務求人を探すならギズジョブ'
+            alt=''
             width={700}
             height={352}
             className={styles['keyvisual-subtitle']}
           />
         </picture>
 
-        <p className={styles['keyvisual-stats']}>
+        <h1 className={styles['keyvisual-stats']}>
           現在の求人掲載数：
           <span className={styles['keyvisual-stats-number']}>2,320</span>件
-        </p>
+        </h1>
       </div>
     </section>
   )
