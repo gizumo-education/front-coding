@@ -45,10 +45,10 @@ export const KeyVisual = ({ id }) => {
           />
         </picture>
 
-        <h1 className={styles['keyvisual-stats']}>
+        <p className={styles['keyvisual-stats']}>
           現在の求人掲載数：
           <span className={styles['keyvisual-stats-number']}>2,320</span>件
-        </h1>
+        </p>
       </div>
     </section>
   )
