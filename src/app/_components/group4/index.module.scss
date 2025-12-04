@@ -1,0 +1,102 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+@use 'sass:math';
+
+.group4 {
+  text-align: center;
+}
+
+.group4-title {
+  font-size: sp-vw(25);
+  font-weight: 700;
+
+  @include media-pc {
+    font-size: pc-vw(25);
+  }
+}
+
+.group4-contents {
+  margin-top: sp-vw(30);
+
+  @include media-pc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: pc-vw(50);
+  }
+}
+
+.group4-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 380 / 240;
+  padding: sp-vw(70) sp-vw(0);
+  margin-top: sp-vw(17);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: sp-vw(10);
+
+  @include media-pc {
+    flex: 1;
+    aspect-ratio: 380 / 240;
+    padding: pc-vw(71) pc-vw(0) pc-vw(54);
+    margin-top: pc-vw(0);
+    margin-right: pc-vw(20);
+    border-radius: pc-vw(10);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    content: '';
+    background-color: rgb(0 0 0 / 50%);
+    border-radius: inherit;
+  }
+}
+
+.group4-img-content {
+  position: center;
+  z-index: 2;
+  width: 100%;
+  color: #{$color-white};
+  text-align: center;
+}
+
+.group4-img-content-title {
+  font-size: sp-vw(21);
+  font-weight: 700;
+
+  @include media-pc {
+    font-size: pc-vw(24);
+  }
+}
+
+.group4-img-content-description {
+  padding: auto;
+  margin-top: sp-vw(53);
+  font-size: sp-vw(14);
+  font-weight: 400;
+  line-height: 1.5;
+
+  @include media-pc {
+    margin-top: pc-vw(44);
+    font-size: pc-vw(16);
+  }
+}
+
+.group4-button {
+  margin-top: sp-vw(44);
+  text-align: center;
+
+  @include media-pc {
+    margin-top: pc-vw(59);
+  }
+}
