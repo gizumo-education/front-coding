@@ -71,10 +71,11 @@ export const News = ({ id }) => {
                 <picture>
                   <source srcSet={job.imgSp} media='(max-width: 767px)' />
                   <img
+                    className={styles['job-image']}
                     src={job.imgPc}
                     alt={''}
-                    width={job.width}
-                    height={job.height}
+                    width={280}
+                    height={200}
                   />
                 </picture>
 

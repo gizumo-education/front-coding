@@ -1,7 +1,14 @@
+'use client'
+
+import { useState } from 'react'
 import { SearchButton } from '@/components/SearchButton'
 import styles from './index.module.scss'
 
 export const Form = ({ className = '' }) => {
+  const [job, setJob] = useState('医療事務')
+  const [place, setPlace] = useState('東京都')
+  const [salary, setSalary] = useState('月給20万〜')
+
   return (
     <section className='inner'>
       <div className={className}>
@@ -19,15 +26,15 @@ export const Form = ({ className = '' }) => {
                 <label htmlFor='job-name' className={styles['sr-only']}>
                   職種を選択
                 </label>
+                <span className={styles['form-select-text']}>{job}</span>
                 <select
                   className={styles['form-select-inner']}
                   name='job'
                   id='job-name'
                   aria-label='職種を選択'
+                  value={job}
+                  onChange={(e) => setJob(e.target.value)}
                 >
-                  <option value='' hidden>
-                    医療事務
-                  </option>
                   <option value='医療事務'>医療事務</option>
                   <option value='調剤事務'>調剤事務</option>
                   <option value='診療情報管理士'>診療情報管理士</option>
@@ -48,16 +55,16 @@ export const Form = ({ className = '' }) => {
                 <label htmlFor='job-place' className={styles['sr-only']}>
                   地域を選択
                 </label>
+                <span className={styles['form-select-text']}>{place}</span>
                 <select
                   className={styles['form-select-inner']}
                   name='place'
                   id='job-place'
                   aria-label='地域を選択'
+                  value={place}
+                  onChange={(e) => setPlace(e.target.value)}
                 >
-                  <option value='' hidden>
-                    東京都
-                  </option>
-                  <option value='	茨城県'> 茨城県</option>
+                  <option value='茨城県'>茨城県</option>
                   <option value='神奈川県'>神奈川県</option>
                   <option value='群馬県'>群馬県</option>
                   <option value='埼玉県'>埼玉県</option>
@@ -77,15 +84,15 @@ export const Form = ({ className = '' }) => {
                 <label htmlFor='job-salary' className={styles['sr-only']}>
                   希望給与を選択
                 </label>
+                <span className={styles['form-select-text']}>{salary}</span>
                 <select
                   className={styles['form-select-inner']}
                   name='salary'
                   id='job-salary'
                   aria-label='希望給与を選択'
+                  value={salary}
+                  onChange={(e) => setSalary(e.target.value)}
                 >
-                  <option value='' hidden>
-                    月給20万〜
-                  </option>
                   <option value='月給17万〜'>月給17万〜</option>
                   <option value='月給18万〜'>月給18万〜</option>
                   <option value='月給19万〜'>月給19万〜</option>

@@ -33,7 +33,7 @@
   .nav-button-prev,
   .nav-button-next {
     position: absolute;
-    top: sp-vw(210);
+    top: sp-vw(190);
     right: 0;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
   @include media-pc {
     .nav-button-prev,
     .nav-button-next {
-      top: pc-vw(125);
+      top: pc-vw(70);
       width: pc-vw(60);
       height: pc-vw(60);
 
@@ -92,6 +92,17 @@
 .job-card {
   @include media-pc {
     margin-top: 0;
+  }
+}
+
+.job-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+  @include media-pc {
+    width: pc-vw(280);
+    height: auto;
   }
 }
 
