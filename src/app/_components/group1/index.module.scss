@@ -1,0 +1,43 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.group1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: sp-vw(16) 0;
+  background-image: url('/group1/group1-sp.png');
+  background-position: center;
+  background-size: cover;
+
+  @include media-pc {
+    padding: pc-vw(104) 0;
+    background-image: url('/group1/group1-pc.png');
+  }
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    content: '';
+    background-color: #{$color-black-opacity-50};
+  }
+}
+
+.group1-textbox {
+  z-index: 2;
+  color: #{$color-white};
+  text-align: center;
+}
+
+.group1-text {
+  font-size: sp-vw(14);
+  line-height: 1.5;
+
+  @include media-pc {
+    font-size: pc-vw(25);
+    font-weight: 700;
+    line-height: 2;
+  }
+}

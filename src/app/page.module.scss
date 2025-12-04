@@ -1,0 +1,10 @@
+@use '@/styles' as *;
+@use '@/styles/functions' as *;
+
+.form-top-section {
+  margin: sp-vw(25) sp-vw(0);
+
+  @include media-pc {
+    margin: pc-vw(60) pc-vw(0);
+  }
+}
