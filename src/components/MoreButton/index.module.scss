@@ -7,7 +7,7 @@
   justify-content: center;
   width: sp-vw(370);
   height: auto;
-  padding: sp-vw(21) sp-vw(70);
+  padding: sp-vw(20);
   font-size: sp-vw(18);
   font-weight: 700;
   color: #{$color-white};
@@ -17,7 +17,7 @@
 
   @include media-pc {
     width: pc-vw(420);
-    padding: pc-vw(21) pc-vw(93);
+    padding: pc-vw(20);
     font-size: pc-vw(18);
   }
 }
