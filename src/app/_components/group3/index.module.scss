@@ -108,15 +108,13 @@
 }
 
 .group3-box-description {
-  padding: sp-vw(0) sp-vw(19);
-  margin-top: sp-vw(15);
+  margin: sp-vw(15) sp-vw(20) sp-vw(0);
   font-size: sp-vw(14);
   line-height: 1.5;
   text-align: left;
 
   @include media-pc {
-    padding: pc-vw(0) pc-vw(22);
-    margin-top: pc-vw(18);
+    margin: pc-vw(20) pc-vw(20) pc-vw(0);
     font-size: pc-vw(14);
   }
 }
