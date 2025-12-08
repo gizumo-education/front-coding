@@ -57,6 +57,17 @@
       "files": ["src/**/*.{scss}"]
     },
     {
+      "files": ["**/*.module.{scss,css}"],
+      "rules": {
+        "selector-pseudo-class-no-unknown": [
+          true,
+          {
+            "ignorePseudoClasses": ["global", "local"]
+          }
+        ]
+      }
+    },
+    {
       "files": ["src/styles/_globals.scss"],
       "rules": {
         "selector-max-type": null,

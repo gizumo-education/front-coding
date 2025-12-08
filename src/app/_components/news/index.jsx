@@ -1,14 +1,17 @@
 'use client'
 
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
 import styles from './index.module.scss'
 
 import { MoreButton } from '@/components/MoreButton'
 
-const jobs = [
+const news = [
   {
     id: 1,
-    imgSp: '/news/work1.png',
-    imgPc: '/news/work1.png',
+    img: '/news/work1.png',
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
     salaryLabel: '月給',
     salaryDetail: '月給 148,000円～',
@@ -19,8 +22,7 @@ const jobs = [
   },
   {
     id: 2,
-    imgSp: '/news/work2.png',
-    imgPc: '/news/work2.png',
+    img: '/news/work2.png',
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
     salaryLabel: '月給',
     salaryDetail: '月給 148,000円～',
@@ -31,8 +33,7 @@ const jobs = [
   },
   {
     id: 3,
-    imgSp: '/news/work3.png',
-    imgPc: '/news/work3.png',
+    img: '/news/work3.png',
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
     salaryLabel: '月給',
     salaryDetail: '月給 148,000円～',
@@ -43,8 +44,7 @@ const jobs = [
   },
   {
     id: 4,
-    imgSp: '/news/work4.png',
-    imgPc: '/news/work4.png',
+    img: '/news/work4.png',
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
     salaryLabel: '月給',
     salaryDetail: '月給 148,000円～',
@@ -56,27 +56,31 @@ const jobs = [
 ]
 
 export const News = ({ id }) => {
+  const newsLoop = [...news, ...news]
+
   return (
     <section id={id} className={styles['news']}>
       <div className='inner'>
         <h2 className={styles['news-title']}>新着求人</h2>
 
-        <div className={styles['news-container']}>
-          <div className={styles['news-grid']}>
-            {jobs.map((job) => (
-              <div
-                key={job.id}
-                className={`${styles['job-card']} ${job.id !== 1 ? styles['job-card-hidden-mobile'] : ''}`}
-              >
+        <Swiper
+          modules={[Navigation]}
+          navigation={true}
+          loop={true}
+          spaceBetween={20}
+          slidesPerView={1}
+          breakpoints={{
+            768: {
+              slidesPerView: 4,
+            },
+          }}
+          className={styles['news-swiper']}
+        >
+          {newsLoop.map((job, index) => (
+            <SwiperSlide key={index}>
+              <div className={styles['job-card']}>
                 <picture>
-                  <source srcSet={job.imgSp} media='(max-width: 767px)' />
-                  <img
-                    className={styles['job-image']}
-                    src={job.imgPc}
-                    alt={''}
-                    width={280}
-                    height={200}
-                  />
+                  <img src={job.img} alt='' width={280} height={200} />
                 </picture>
 
                 <h2 className={styles['job-title']}>{job.title}</h2>
@@ -95,21 +99,9 @@ export const News = ({ id }) => {
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
-
-          <div className={styles['nav-button-prev']}>
-            <svg className={styles['nav-icon']} viewBox='0 0 27 44'>
-              <path d='M27,22L27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22L27,22z' />
-            </svg>
-          </div>
-          <div className={styles['nav-button-next']}>
-            <svg className={styles['nav-icon']} viewBox='0 0 27 44'>
-              <path d='M27,22L27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22L27,22z' />
-            </svg>
-          </div>
-        </div>
-
+            </SwiperSlide>
+          ))}
+        </Swiper>
         <div className={styles['news-button']}>
           <MoreButton href='/'>新着求人一覧をもっと見る</MoreButton>
         </div>
