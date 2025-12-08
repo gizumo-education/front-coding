@@ -6,57 +6,51 @@
   background-color: #{$color-white-blue};
 
   @include media-pc {
-    padding: pc-vw(64) pc-vw(0) pc-vw(67);
+    padding: pc-vw(70) pc-vw(0);
   }
 }
 
 .news-title {
+  margin-bottom: sp-vw(30);
   font-size: sp-vw(22);
   font-weight: 700;
   text-align: center;
 
   @include media-pc {
+    margin-bottom: pc-vw(30);
     font-size: pc-vw(25);
     font-weight: 400;
     text-align: left;
   }
 }
 
-.news-container {
+.news-swiper {
   position: relative;
-  margin-top: sp-vw(35);
+  overflow: hidden;
 
-  @include media-pc {
-    margin-top: pc-vw(25);
-  }
-
-  .nav-button-prev,
-  .nav-button-next {
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
     position: absolute;
-    top: sp-vw(190);
+    top: sp-vw(200);
     right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: sp-vw(42);
-    height: sp-vw(42);
-    pointer-events: none;
-    cursor: default;
+    width: sp-vw(50);
+    height: sp-vw(50);
     background: #{$color-white-opacity-70};
     border-radius: 50%;
     transition: all 0.3s ease;
   }
 
-  .nav-button-prev {
+  :global(.swiper-button-prev) {
     left: 0;
   }
 
   @include media-pc {
-    .nav-button-prev,
-    .nav-button-next {
-      top: pc-vw(70);
-      width: pc-vw(60);
-      height: pc-vw(60);
+    :global(.swiper-button-prev),
+    :global(.swiper-button-next) {
+      top: pc-vw(100);
+      display: flex;
+      width: pc-vw(50);
+      height: pc-vw(50);
 
       &:hover {
         background: #{$color-white-opacity-50};
@@ -64,53 +58,25 @@
     }
   }
 
-  .nav-icon {
-    width: sp-vw(7);
-    height: sp-vw(14);
+  :global(.swiper-button-prev svg),
+  :global(.swiper-button-next svg) {
+    width: sp-vw(20);
+    height: sp-vw(20);
     color: #{$color-black};
     fill: #{$color-black};
 
     @include media-pc {
-      width: pc-vw(15);
-      height: pc-vw(30);
+      width: pc-vw(20);
+      height: pc-vw(20);
     }
-  }
-
-  .nav-button-prev .nav-icon {
-    transform: rotate(180deg);
-  }
-}
-
-.news-grid {
-  @include media-pc {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: pc-vw(20);
   }
 }
 
 .job-card {
-  @include media-pc {
-    margin-top: 0;
-  }
-}
-
-.job-image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  margin-top: sp-vw(0);
 
   @include media-pc {
-    width: pc-vw(280);
-    height: auto;
-  }
-}
-
-.job-card-hidden-mobile {
-  display: none;
-
-  @include media-pc {
-    display: block;
+    margin-top: pc-vw(0);
   }
 }
 
@@ -118,13 +84,13 @@
   margin-top: sp-vw(10);
   font-size: sp-vw(16);
   font-weight: 700;
-  line-height: sp-vw(22);
+  line-height: sp-vw(20);
 
   @include media-pc {
-    margin-top: pc-vw(8);
+    margin-top: pc-vw(10);
     font-size: pc-vw(16);
     font-weight: 400;
-    line-height: pc-vw(22);
+    line-height: pc-vw(20);
   }
 }
 
