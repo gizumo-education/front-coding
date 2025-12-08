@@ -16,26 +16,29 @@
 }
 
 .group2-wrapper {
-  margin-top: sp-vw(38);
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(20);
+  margin-top: sp-vw(40);
 
   @include media-pc {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
     gap: pc-vw(40);
-    margin-top: pc-vw(53);
+    margin-top: pc-vw(40);
   }
 }
 
 .group2-box-container {
+  height: sp-vw(170);
   padding: sp-vw(30) sp-vw(10);
-  margin-top: sp-vw(21);
   background-color: #{$color-light-light-pink};
   border-radius: sp-vw(10);
 
   @include media-pc {
-    flex: 1 1 calc(50% - #{pc-vw(20)});
-    padding: pc-vw(40) pc-vw(47);
-    margin-top: 0;
+    height: pc-vw(200);
+    padding: pc-vw(40);
     border-radius: pc-vw(10);
   }
 }
@@ -70,7 +73,7 @@
   line-height: 1.7;
 
   @include media-pc {
-    margin-top: pc-vw(36);
+    margin-top: pc-vw(30);
     font-size: pc-vw(14);
   }
 }
