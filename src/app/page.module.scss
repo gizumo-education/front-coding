@@ -1,6 +1,10 @@
 @use '@/styles' as *;
 @use '@/styles/functions' as *;
 
+.main {
+  overflow-x: hidden;
+}
+
 .form-top-section {
   margin: sp-vw(25) sp-vw(0);
 
