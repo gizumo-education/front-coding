@@ -1,0 +1,76 @@
+@use '../../object/utility/utility.scss';
+@use '../../object/component/button.scss';
+
+.l-main__column {
+  height: 455px;
+  width: 1180px;
+  margin:0 auto;
+  margin-top: 105px;
+  
+  &-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .c-main__column-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin-top: 40px;
+    height: 240px;
+
+    .c-main__column-part {
+      height: 240px;
+      width: 380px;
+      align-items: center;
+      justify-items: center;
+      border-radius: 10px;
+
+      &-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        margin-top: 71px;
+      }
+
+      &-text {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 45px;
+        line-height: 130%;
+        color: #fff;
+
+      }
+
+    }
+    .is_manual-1 {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/picture/column_1.jpg");
+      background-size:cover;
+    }
+    .is_tips {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../img/picture/column_2.jpg");
+        background-size:cover;
+    }
+    .is_manual-2 {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/picture/column_1.jpg");
+      background-size:cover;
+    }
+
+  }
+
+  .l-main__column-button {
+    @include button.c-btn();
+    display: block;
+    width: 420px;
+    margin: 80px auto 0 auto;
+    color: #fff;
+
+  }
+
+}

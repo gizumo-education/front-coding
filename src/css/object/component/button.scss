@@ -3,10 +3,11 @@
 
 @mixin c-btn() {
   background-color: #DE5579;
+  text-align: center;
   border: none;
   border-radius: 30px;
   height: 60px;
-  // padding: 17px 0;
+  line-height: 60px;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
