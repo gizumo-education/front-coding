@@ -45,9 +45,10 @@
       padding: 0 sp-vw(28) 0 sp-vw(8);
       font-size: sp-vw(12);
       font-weight: 400;
+      text-align: left;
       background-image: url('/icon/パス 16.svg');
       background-repeat: no-repeat;
-      background-position: right 1rem center;
+      background-position: right 0.5rem center;
       background-size: sp-vw(12);
       @include form-box(100);
     }
@@ -60,7 +61,6 @@
     }
 
     &_input {
-      padding-top: sp-vw(5);
       padding-left: sp-vw(10);
       text-align: left;
       @include form-box(320);

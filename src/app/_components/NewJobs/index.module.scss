@@ -47,7 +47,7 @@
 .img {
   flex-shrink: 0;
   width: 100%;
-  height: sp-vw(208);
+  height: auto;
   border-radius: 15px;
 }
 
@@ -75,7 +75,7 @@
 .prev,
 .next {
   position: absolute;
-  top: sp-vw(240);
+  top: sp-vw(300);
   z-index: 10;
   width: sp-vw(40);
   height: sp-vw(40);
