@@ -1,0 +1,110 @@
+@use '@/styles' as *;
+
+.newjobs {
+  position: absolute;
+  top: sp-vw(630);
+  width: 100%;
+  padding-top: sp-vw(30);
+  padding-bottom: sp-vw(30);
+  padding-left: sp-vw(15);
+  background-color: $color-bg-light-blue;
+
+  &_title {
+    font-size: sp-vw(25);
+    font-weight: 700;
+    line-height: sp-vw(25);
+    text-align: center;
+  }
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(15);
+  width: sp-vw(370);
+  margin-top: sp-vw(30);
+}
+
+.h2 {
+  font-size: sp-vw(16);
+  font-weight: 700;
+  line-height: sp-vw(22);
+}
+
+.img {
+  flex-shrink: 0;
+  width: 100%;
+  height: sp-vw(208);
+  border-radius: 15px;
+}
+
+.row {
+  display: flex;
+  gap: sp-vw(21);
+  align-items: center;
+  margin-bottom: sp-vw(6);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(60);
+  height: sp-vw(21);
+  font-size: sp-vw(14);
+  background-color: $color-salmon;
+
+  &_detail {
+    font-size: sp-vw(14);
+  }
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: sp-vw(240);
+  z-index: 10;
+  width: sp-vw(40);
+  height: sp-vw(40);
+  background: url('/icon/楕円形 8.svg') center / contain no-repeat;
+  background-color: transparent;
+}
+
+.prev {
+  left: sp-vw(15);
+
+  &_mark {
+    left: sp-vw(33);
+    display: block;
+    width: sp-vw(7);
+    height: sp-vw(14);
+    margin: auto;
+    background: url('/icon/パス 71.svg') center / contain no-repeat;
+  }
+}
+
+.next {
+  right: sp-vw(15);
+
+  &_mark {
+    display: block;
+    width: sp-vw(7);
+    height: sp-vw(14);
+    margin: auto;
+    background: url('/icon/パス 69.svg') center / contain no-repeat;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(370);
+  height: sp-vw(60);
+  margin-top: sp-vw(44);
+  font-size: sp-vw(18);
+  font-weight: 700;
+  color: $color-white;
+  background-color: $color-rose;
+  border-radius: sp-vw(50);
+}

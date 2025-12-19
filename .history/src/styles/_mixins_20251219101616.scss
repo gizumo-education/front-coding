@@ -1,0 +1,28 @@
+@use '@/styles/variables' as *;
+
+@mixin media-pc {
+  @media (#{$breakpoint-pc}px <= width) {
+    @content;
+  }
+}
+
+@mixin form-box($width) {
+  width: sp-vw($width);
+  height: sp-vw(30);
+  background-color: $color-white;
+  border: sp-vw(1) solid $color-pink;
+  border-radius: 10px;
+}
+
+@mixin btn-pink($width, $height) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw($width);
+  height: sp-vw($height);
+  font-size: sp-vw(18);
+  font-weight: 700;
+  color: $color-white;
+  background-color: $color-rose;
+  border-radius: sp-vw(50);
+}

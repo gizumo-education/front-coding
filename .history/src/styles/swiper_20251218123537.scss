@@ -1,0 +1,13 @@
+/* swiper.scss */
+.swiper {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  /* 何も書かない */
+  display: flex;
+}
+
+.swiper-slide {
+  width: auto; /* ← 重要 */
+}

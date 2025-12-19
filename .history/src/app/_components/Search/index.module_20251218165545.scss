@@ -1,0 +1,115 @@
+@use '@/styles' as *;
+
+@mixin form-box($width) {
+  width: sp-vw($width);
+  height: sp-vw(30);
+  background-color: $color-white;
+  border: sp-vw(1) solid $color-pink;
+  border-radius: 10px;
+}
+
+.search {
+  position: absolute;
+  top: sp-vw(365);
+  left: sp-vw(15);
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(15);
+  align-items: center;
+  width: sp-vw(370);
+  height: sp-vw(240);
+  padding: sp-vw(15);
+  text-align: center;
+  background-color: $color-light-sky-blue;
+  border-radius: 15px;
+
+  &_title {
+    width: sp-vw(110);
+    height: sp-vw(22);
+    font-size: sp-vw(22);
+    font-weight: 700;
+  }
+
+  &_text {
+    width: sp-vw(294);
+    height: sp-vw(20);
+    font-size: sp-vw(14);
+    font-weight: 400;
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    gap: sp-vw(15);
+
+    &_selects {
+      display: flex;
+      gap: sp-vw(15);
+      justify-content: center;
+    }
+
+    &_select {
+      align-items: center;
+      padding: 0 sp-vw(28) 0 sp-vw(8);
+      font-size: sp-vw(12);
+      font-weight: 400;
+      background-image: url('/icon/パス 16.svg');
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: sp-vw(12);
+      @include form-box(100);
+    }
+
+    &_inputs {
+      display: flex;
+      flex-direction: column;
+      gap: sp-vw(15);
+      align-items: center;
+    }
+
+    &_input {
+      padding-top: sp-vw(5);
+      padding-left: sp-vw(10);
+      text-align: left;
+      letter-spacing: 0%;
+      @include form-box(320);
+    }
+
+    &_input::placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: sp-vw(14);
+      font-weight: 400;
+      color: $color-gray;
+    }
+
+    &_button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: sp-vw(160);
+      height: sp-vw(40);
+      font-size: sp-vw(18);
+      font-style: bold;
+      font-weight: 700;
+      line-height: sp-vw(18);
+      color: $color-white;
+      letter-spacing: 0%;
+      background-color: $color-rose;
+      border-radius: sp-vw(50);
+    }
+
+    &_button::before {
+      display: inline-block;
+      width: sp-vw(16);
+      height: sp-vw(16);
+      margin-right: sp-vw(14);
+      content: '';
+      background-image: url('/icon/パス 18.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}

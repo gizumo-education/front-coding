@@ -1,0 +1,30 @@
+.swiper {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+}
+
+.swiper-slide {
+  /* slidesPerView を数値指定しているので width は不要 */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+}
+
+.swiper-pagination-bullet {
+  background: #999;
+}
+
+.swiper-pagination-bullet-active {
+  background: #333;
+}

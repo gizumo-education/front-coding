@@ -1,0 +1,7 @@
+@use '@/styles/variables' as *;
+
+@mixin media-pc {
+  @media (#{$breakpoint-pc}px <= width) {
+    @content;
+  }
+}

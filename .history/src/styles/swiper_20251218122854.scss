@@ -1,0 +1,14 @@
+.swiper {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  gap: sp-vw(12);
+  margin-top: sp-vw(35);
+  overflow-x: auto;
+}
+
+.swiper-slide {
+  flex: 0 0 sp-vw(370);
+}

@@ -1,0 +1,11 @@
+.swiper {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  /* Swiperに完全に任せる */
+}
+
+.swiper-slide {
+  width: auto; /* ← 重要：Swiperがinlineで制御 */
+}

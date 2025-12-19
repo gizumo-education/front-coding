@@ -1,0 +1,58 @@
+@use '@/styles' as *;
+
+@use '@/styles' as *;
+
+.newjobs {
+  padding-left: sp-vw(15);
+  margin-top: sp-vw(40);
+  background-color: $color-bg-light-blue;
+}
+
+.title {
+  font-size: sp-vw(25);
+  font-weight: 700;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(12);
+  width: sp-vw(370);
+}
+
+.img {
+  width: 100%;
+  height: sp-vw(208);
+  border-radius: 15px;
+}
+
+.h2 {
+  font-size: sp-vw(16);
+  font-weight: 700;
+}
+
+.row {
+  display: flex;
+  gap: sp-vw(12);
+}
+
+.item {
+  width: sp-vw(60);
+  text-align: center;
+  background-color: $color-salmon;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(370);
+  height: sp-vw(60);
+  margin-top: sp-vw(44);
+  font-size: sp-vw(18);
+  font-weight: 700;
+  color: $color-white;
+  background-color: $color-rose;
+  border-radius: sp-vw(50);
+}
