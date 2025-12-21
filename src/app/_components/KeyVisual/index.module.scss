@@ -1,33 +1,33 @@
 @use '@/styles' as *;
 
-.keyvisual {
-  position: relative;
-  top: sp-vw(70);
+.section {
   width: 100%;
-  height: sp-vw(270);
+  background: url('/images/keyvisual.png') no-repeat center / cover;
+}
+
+.keyvisual {
+  &_flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: sp-vw(61) 0 sp-vw(52);
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: sp-vw(15);
+    align-items: center;
+    width: sp-vw(272);
+  }
 
   &_icon {
-    position: absolute;
-    top: sp-vw(132);
-    left: sp-vw(200);
     width: sp-vw(149);
     height: sp-vw(73);
   }
 
-  &_text {
-    position: absolute;
-    top: sp-vw(217);
-    left: sp-vw(124);
-    width: sp-vw(272);
-    height: sp-vw(22);
-  }
-
   &_box {
-    position: absolute;
-    top: sp-vw(258);
-    left: sp-vw(189);
     width: sp-vw(170);
-    height: sp-vw(30);
     text-align: center;
     background-color: $color-white;
     border: sp-vw(1) solid $color-turquoise;

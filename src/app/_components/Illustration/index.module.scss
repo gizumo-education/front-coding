@@ -1,28 +1,20 @@
 @use '@/styles' as *;
 
 .img {
-  position: absolute;
-  top: sp-vw(1268);
   width: 100%;
-  height: sp-vw(75);
+  background: url('/images/between_img.jpg') no-repeat center / cover;
 
   &_overlay {
-    position: absolute;
-    top: sp-vw(1268);
-    left: 0;
     width: 100%;
-    height: sp-vw(75);
     background-color: $color-overlay;
   }
-}
 
-.text {
-  position: absolute;
-  top: sp-vw(1285);
-  left: sp-vw(26);
-  font-size: sp-vw(14);
-  font-weight: 400;
-  line-height: 1.5;
-  color: $color-white;
-  text-align: center;
+  &_text {
+    padding: sp-vw(16) sp-vw(24) sp-vw(16) sp-vw(26);
+    font-size: sp-vw(14);
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-white;
+    text-align: center;
+  }
 }

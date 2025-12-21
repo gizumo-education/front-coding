@@ -13,14 +13,17 @@
   border-radius: sp-vw(50);
 }
 
+.color {
+  background-color: $color-bg-light-blue;
+}
+
 .newjobs {
-  position: absolute;
-  top: sp-vw(630);
+  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding-top: sp-vw(30);
-  padding-bottom: sp-vw(30);
-  padding-left: sp-vw(15);
-  background-color: $color-bg-light-blue;
+  padding-bottom: sp-vw(60);
 
   &_title {
     font-size: sp-vw(25);
@@ -30,15 +33,20 @@
   }
 }
 
+.swiperwrap {
+  width: sp-vw(370);
+  margin: 0 auto;
+}
+
 .slide {
   display: flex;
   flex-direction: column;
   gap: sp-vw(15);
-  width: sp-vw(370);
+  width: 100%;
   margin-top: sp-vw(30);
 }
 
-.h2 {
+.h3 {
   font-size: sp-vw(16);
   font-weight: 700;
   line-height: sp-vw(22);
@@ -46,8 +54,10 @@
 
 .img {
   flex-shrink: 0;
-  width: 100%;
-  height: auto;
+
+  // width: 100%;
+
+  // height: sp-vw(208);
   border-radius: 15px;
 }
 
@@ -75,35 +85,35 @@
 .prev,
 .next {
   position: absolute;
-  top: sp-vw(300);
+  top: sp-vw(247);
   z-index: 10;
   width: sp-vw(40);
   height: sp-vw(40);
-  background: url('/icon/楕円形 8.svg') center / contain no-repeat;
+  background: url('/icon/circle.svg') center / contain no-repeat;
   background-color: transparent;
 }
 
 .prev {
-  left: sp-vw(15);
+  left: sp-vw(0);
 
   &_mark {
     display: block;
     width: sp-vw(7);
     height: sp-vw(14);
     margin: auto;
-    background: url('/icon/パス 71.svg') center / contain no-repeat;
+    background: url('/icon/left_icon.svg') center / contain no-repeat;
   }
 }
 
 .next {
-  right: sp-vw(15);
+  right: sp-vw(0);
 
   &_mark {
     display: block;
     width: sp-vw(7);
     height: sp-vw(14);
     margin: auto;
-    background: url('/icon/パス 69.svg') center / contain no-repeat;
+    background: url('/icon/right_icon.svg') center / contain no-repeat;
   }
 }
 

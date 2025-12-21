@@ -1,30 +1,24 @@
 @use '@/styles' as *;
 
 .search {
-  position: absolute;
-  top: sp-vw(365);
-  left: sp-vw(15);
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: sp-vw(15);
-  align-items: center;
   width: sp-vw(370);
-  height: sp-vw(240);
   padding: sp-vw(15);
+  margin: sp-vw(25) auto;
+
   text-align: center;
   background-color: $color-light-sky-blue;
   border-radius: 15px;
 
   &_title {
-    width: sp-vw(110);
-    height: sp-vw(22);
     font-size: sp-vw(22);
     font-weight: 700;
   }
 
   &_text {
-    width: sp-vw(294);
-    height: sp-vw(20);
     font-size: sp-vw(14);
     font-weight: 400;
   }
@@ -42,11 +36,11 @@
 
     &_select {
       align-items: center;
-      padding: 0 sp-vw(28) 0 sp-vw(8);
+      padding-left: sp-vw(8);
       font-size: sp-vw(12);
       font-weight: 400;
       text-align: left;
-      background-image: url('/icon/パス 16.svg');
+      background-image: url('/icon/pull_down.svg');
       background-repeat: no-repeat;
       background-position: right 0.5rem center;
       background-size: sp-vw(12);
@@ -88,7 +82,7 @@
       height: sp-vw(16);
       margin-right: sp-vw(14);
       content: '';
-      background-image: url('/icon/パス 18.svg');
+      background-image: url('/icon/search_icon.svg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;

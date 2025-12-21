@@ -4,7 +4,7 @@ export const Search = () => {
   return (
     <section>
       <div className={styles.search}>
-        <h1 className={styles.search_title}>お仕事検索</h1>
+        <h2 className={styles.search_title}>お仕事検索</h2>
         <p className={styles.search_text}>
           働きたい職種・地域・希望給与を入れて検索！
         </p>

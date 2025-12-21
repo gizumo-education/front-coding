@@ -1,12 +1,11 @@
 @use '@/styles' as *;
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 9999;
   display: flex;
   justify-content: flex-end;
-  width: 100%;
   padding: sp-vw(16) sp-vw(15);
   background-color: #{$color-white};
   @include media-pc {
