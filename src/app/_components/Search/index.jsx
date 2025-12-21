@@ -2,7 +2,7 @@ import styles from './index.module.scss'
 
 export const Search = () => {
   return (
-    <section>
+    <section className={'inner'}>
       <div className={styles.search}>
         <h2 className={styles.search_title}>お仕事検索</h2>
         <p className={styles.search_text}>
