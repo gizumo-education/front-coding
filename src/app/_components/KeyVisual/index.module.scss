@@ -1,0 +1,50 @@
+@use '@/styles' as *;
+
+.section {
+  width: 100%;
+  background: url('/images/keyvisual.png') no-repeat center / cover;
+}
+
+.keyvisual {
+  &_flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: sp-vw(61) 0 sp-vw(52);
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: sp-vw(15);
+    align-items: center;
+    width: sp-vw(272);
+  }
+
+  &_icon {
+    width: sp-vw(149);
+    height: sp-vw(73);
+  }
+
+  &_box {
+    width: sp-vw(170);
+    text-align: center;
+    background-color: $color-white;
+    border: sp-vw(1) solid $color-turquoise;
+    border-radius: sp-vw(5);
+  }
+}
+
+.jobs {
+  padding-top: sp-vw(10);
+  font-size: sp-vw(8);
+  font-weight: 400;
+  line-height: 1.8;
+  color: $color-turquoise;
+  letter-spacing: 0%;
+
+  &_number {
+    font-size: sp-vw(16);
+    font-weight: 700;
+  }
+}

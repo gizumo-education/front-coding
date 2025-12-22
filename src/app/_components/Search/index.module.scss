@@ -1,0 +1,90 @@
+@use '@/styles' as *;
+
+.search {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(15);
+  padding: sp-vw(15);
+  margin: sp-vw(25) auto;
+
+  text-align: center;
+  background-color: $color-light-sky-blue;
+  border-radius: 15px;
+
+  &_title {
+    font-size: sp-vw(22);
+    font-weight: 700;
+  }
+
+  &_text {
+    font-size: sp-vw(14);
+    font-weight: 400;
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    gap: sp-vw(15);
+
+    &_selects {
+      display: flex;
+      gap: sp-vw(15);
+      justify-content: center;
+    }
+
+    &_select {
+      align-items: center;
+      padding-left: sp-vw(8);
+      font-size: sp-vw(12);
+      font-weight: 400;
+      text-align: left;
+      background-image: url('/icon/pull_down.svg');
+      background-repeat: no-repeat;
+      background-position: right 0.5rem center;
+      background-size: sp-vw(12);
+      @include form-box(100);
+    }
+
+    &_inputs {
+      display: flex;
+      flex-direction: column;
+      gap: sp-vw(15);
+      align-items: center;
+    }
+
+    &_input {
+      padding-left: sp-vw(10);
+      text-align: left;
+      @include form-box(320);
+    }
+
+    &_input::placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: sp-vw(14);
+      font-weight: 400;
+      color: $color-gray;
+    }
+
+    &_button {
+      width: sp-vw(160);
+      height: sp-vw(40);
+      line-height: sp-vw(18);
+      @include btn-pink(160, 40);
+    }
+
+    &_button::before {
+      display: inline-block;
+      width: sp-vw(16);
+      height: sp-vw(16);
+      margin-right: sp-vw(14);
+      content: '';
+      background-image: url('/icon/search_icon.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}
