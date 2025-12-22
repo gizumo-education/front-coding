@@ -1,0 +1,15 @@
+@use '@/styles' as *;
+
+.background-section {
+  padding-top: sp-vw(15);
+  padding-bottom: sp-vw(15);
+  font-size: sp-vw(14);
+  font-weight: 400;
+  line-height: 1.5;
+  color: #{$color-white};
+  text-align: center;
+  background:
+    linear-gradient(#{$color-overlay}), url('/images/background_small.jpg');
+  background-position: center;
+  background-size: cover;
+}
