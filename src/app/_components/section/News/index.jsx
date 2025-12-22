@@ -45,59 +45,62 @@ const jobs = [
 export const News = () => {
   return (
     <section className={styles.square}>
-      <div className={styles.box}>
-        <h1 className={styles.title}>新着求人</h1>
+      <div className={'inner'}>
+        <div className={styles.news}>
+          <h1 className={styles.news_title}>新着求人</h1>
 
-        <Swiper
-          modules={[Navigation, Pagination]}
-          spaceBetween={12}
-          slidesPerView={1}
-          loop={true}
-          navigation={{
-            prevEl: `.${styles.prev}`,
-            nextEl: `.${styles.next}`,
-          }}
-          pagination={false}
-        >
-          {jobs.map((job) => (
-            <SwiperSlide key={job.id}>
-              <article className={styles.container}>
-                <img
-                  src={job.image}
-                  alt='求人画像'
-                  className={styles.image}
-                  width={370}
-                  height={208}
-                />
+          <div className={styles.news_box}>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={12}
+              slidesPerView={1}
+              loop={true}
+              navigation={{
+                prevEl: `.${styles.prev}`,
+                nextEl: `.${styles.next}`,
+              }}
+              pagination={false}
+            >
+              {jobs.map((job) => (
+                <SwiperSlide key={job.id}>
+                  <article className={styles.container}>
+                    <img
+                      src={job.image}
+                      alt='求人画像'
+                      className={styles.image}
+                      width={370}
+                      height={208}
+                    />
 
-                <h2 className={styles.h2}>{job.title}</h2>
-                <div className={styles.content}>
-                  <p className={styles.item}>
-                    <span className={styles.span}>給与</span>
-                    {job.pay}
-                  </p>
-                  <p className={styles.item}>
-                    <span className={styles.span}>所在地</span>
-                    {job.place}
-                  </p>
-                  <p className={styles.item}>
-                    <span className={styles.span}>最寄駅</span>
-                    {job.station}
-                  </p>
-                </div>
-              </article>
-            </SwiperSlide>
-          ))}
-
+                    <h2 className={styles.h2}>{job.title}</h2>
+                    <div className={styles.content}>
+                      <p className={styles.item}>
+                        <span className={styles.span}>給与</span>
+                        {job.pay}
+                      </p>
+                      <p className={styles.item}>
+                        <span className={styles.span}>所在地</span>
+                        {job.place}
+                      </p>
+                      <p className={styles.item}>
+                        <span className={styles.span}>最寄駅</span>
+                        {job.station}
+                      </p>
+                    </div>
+                  </article>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
           <button className={styles.prev}>
             <i className={styles.prev_pass}></i>
           </button>
           <button className={styles.next}>
             <i className={styles.next_pass}></i>
           </button>
-        </Swiper>
 
-        <button className={styles.button}>新着求人一覧をもっと見る</button>
+          <button className={styles.button}>新着求人一覧をもっと見る</button>
+        </div>
       </div>
     </section>
   )

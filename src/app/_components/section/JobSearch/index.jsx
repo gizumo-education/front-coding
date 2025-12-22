@@ -47,7 +47,7 @@ export const JobSearch = () => {
         className={styles.form}
       />
 
-      <button className={clsx(styles.button, styles.search)}>検索する</button>
+      <button className={styles.button}>検索する</button>
     </section>
   )
 }

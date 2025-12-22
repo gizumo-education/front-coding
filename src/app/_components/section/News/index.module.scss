@@ -1,31 +1,37 @@
 @use '@/styles' as *;
 
 .square {
-  position: relative;
   width: 100%;
-  height: sp-vw(600);
   margin-top: sp-vw(20);
-}
-
-.box {
-  position: absolute;
-  width: 100%;
-  padding-top: sp-vw(30);
-  padding-bottom: sp-vw(60);
-  text-align: center;
   background-color: #{$color-soft-blue};
 }
 
-.title {
-  font-size: sp-vw(25);
-  font-weight: 700;
+.news {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: sp-vw(30);
+  padding-bottom: sp-vw(60);
+  margin: 0 auto;
+  text-align: center;
+  background-color: #{$color-soft-blue};
+
+  &_title {
+    font-size: sp-vw(25);
+    font-weight: 700;
+  }
+
+  &_box {
+    width: sp-vw(370);
+  }
 }
 
 .container {
   display: flex;
   flex-direction: column;
   gap: sp-vw(10);
-  width: sp-vw(370);
+  width: 100%;
   margin: 0 auto;
   margin-top: sp-vw(30);
 }
@@ -72,7 +78,7 @@
 .prev,
 .next {
   position: absolute;
-  top: sp-vw(187);
+  top: sp-vw(247);
   z-index: 2;
   width: sp-vw(40);
   height: sp-vw(40);
@@ -92,11 +98,11 @@
 }
 
 .prev {
-  left: sp-vw(15);
+  left: sp-vw(0);
 }
 
 .next {
-  right: sp-vw(15);
+  right: sp-vw(0);
 
   &_pass {
     background-image: url('/images/pass_right.png');

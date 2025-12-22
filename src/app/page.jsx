@@ -11,10 +11,12 @@ const Top = () => {
   return (
     <>
       <Header />
-      <KeyVisual />
-      <JobSearch />
-      <News />
-      <Background />
+      <main>
+        <KeyVisual />
+        <JobSearch />
+        <News />
+        <Background />
+      </main>
     </>
   )
 }

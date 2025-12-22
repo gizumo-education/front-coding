@@ -3,40 +3,45 @@
 .section {
   width: 100%;
   height: sp-vw(270);
+  background-image: url('/images/mainvisual.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .box {
-  position: relative;
-  width: 100%;
-  height: sp-vw(270);
-  background-image:
-    url('/images/gizjob_text.png'), url('/images/keyvisual.png'),
-    url('/images/mainvisual.png');
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position:
-    bottom sp-vw(100) right sp-vw(3),
-    top sp-vw(61) right sp-vw(50),
-    center;
-  background-size:
-    sp-vw(272) sp-vw(22),
-    sp-vw(150) sp-vw(73),
-    cover;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
 
-.text {
-  position: absolute;
-  top: sp-vw(188);
-  right: sp-vw(40);
-  padding: sp-vw(4) sp-vw(23) sp-vw(3);
-  font-size: sp-vw(8);
-  font-weight: 400;
-  color: #{$color-light-green};
-  background-color: #{$color-white};
-  border: 1px solid #{$color-light-green};
-  border-radius: 6px;
-}
+  &_key_img {
+    display: block;
+    width: sp-vw(149);
+    margin-top: sp-vw(61);
+    margin-right: sp-vw(45);
+  }
 
-.span {
-  font-size: sp-vw(16);
-  font-weight: 700;
+  &_text_img {
+    width: sp-vw(272);
+    margin-top: sp-vw(12);
+    margin-right: sp-vw(-15);
+  }
+
+  &_text {
+    padding: sp-vw(5) sp-vw(24) sp-vw(4);
+    margin-top: sp-vw(18);
+    margin-right: sp-vw(25);
+    font-size: sp-vw(8);
+    font-weight: 400;
+    color: #{$color-light-green};
+    background-color: #{$color-white};
+    border: 1px solid #{$color-light-green};
+    border-radius: 6px;
+
+    &_span {
+      font-size: sp-vw(16);
+      font-weight: 700;
+    }
+  }
 }
