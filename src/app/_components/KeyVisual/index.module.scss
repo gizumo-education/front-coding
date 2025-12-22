@@ -1,8 +1,10 @@
 @use '@/styles' as *;
 
-.section {
-  width: 100%;
-  background: url('/images/keyvisual.png') no-repeat center / cover;
+.sp {
+  &_backimg {
+    width: 100%;
+    background: url('/images/keyvisual_sp.png') no-repeat center / cover;
+  }
 }
 
 .keyvisual {
@@ -46,5 +48,73 @@
   &_number {
     font-size: sp-vw(16);
     font-weight: 700;
+  }
+}
+
+@media (768px <=width) {
+  .pc {
+    &_backcolor {
+      width: 100%;
+      background-color: $color-turquoise-gray;
+    }
+  }
+
+  .sp {
+    &_backimg {
+      background-image: none;
+    }
+  }
+
+  .section {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background: url('/images/keyvisual_pc.png') no-repeat center / auto 100%;
+  }
+
+  .keyvisual {
+    &_flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &_content {
+      gap: pc-vw(40);
+      width: pc-vw(800);
+      padding-top: pc-vw(56);
+      padding-bottom: pc-vw(47);
+    }
+
+    &_icon {
+      width: pc-vw(341);
+      height: pc-vw(168);
+    }
+
+    &_text {
+      width: pc-vw(800);
+      height: pc-vw(65);
+    }
+
+    &_box {
+      width: pc-vw(391);
+      text-align: center;
+      background-color: $color-white;
+      border: pc-vw(1) solid $color-turquoise;
+      border-radius: pc-vw(5);
+    }
+  }
+
+  .jobs {
+    padding-top: pc-vw(5);
+    font-size: pc-vw(20);
+    line-height: 1.8;
+
+    &_number {
+      font-size: pc-vw(40);
+      font-weight: 700;
+    }
   }
 }

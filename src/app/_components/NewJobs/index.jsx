@@ -11,28 +11,56 @@ import 'swiper/css/pagination'
 const jobs = [
   {
     id: 1,
-    src: '/images/zimu_sp.jpg',
+    src: '/images/zimu.jpg',
     salary: '月給 148,000円～',
     area: '三重県伊勢市',
     station: '伊勢市駅 徒歩15分',
   },
   {
     id: 2,
-    src: '/images/zimu_sp.jpg',
+    src: '/images/nurse.jpg',
     salary: '月給 148,000円～',
     area: '三重県伊勢市',
     station: '伊勢市駅 徒歩15分',
   },
   {
     id: 3,
-    src: '/images/zimu_sp.jpg',
+    src: '/images/doctor.jpg',
     salary: '月給 148,000円～',
     area: '三重県伊勢市',
     station: '伊勢市駅 徒歩15分',
   },
   {
     id: 4,
-    src: '/images/zimu_sp.jpg',
+    src: '/images/helper.jpg',
+    salary: '月給 148,000円～',
+    area: '三重県伊勢市',
+    station: '伊勢市駅 徒歩15分',
+  },
+  {
+    id: 5,
+    src: '/images/zimu.jpg',
+    salary: '月給 148,000円～',
+    area: '三重県伊勢市',
+    station: '伊勢市駅 徒歩15分',
+  },
+  {
+    id: 6,
+    src: '/images/nurse.jpg',
+    salary: '月給 148,000円～',
+    area: '三重県伊勢市',
+    station: '伊勢市駅 徒歩15分',
+  },
+  {
+    id: 7,
+    src: '/images/doctor.jpg',
+    salary: '月給 148,000円～',
+    area: '三重県伊勢市',
+    station: '伊勢市駅 徒歩15分',
+  },
+  {
+    id: 8,
+    src: '/images/helper.jpg',
     salary: '月給 148,000円～',
     area: '三重県伊勢市',
     station: '伊勢市駅 徒歩15分',
@@ -50,6 +78,11 @@ export const NewJobs = () => {
             <Swiper
               modules={[Navigation, Pagination]}
               slidesPerView={1}
+              breakpoints={{
+                768: {
+                  slidesPerView: 4,
+                },
+              }}
               spaceBetween={12}
               loop={true}
               navigation={{

@@ -1,13 +1,11 @@
 @use '@/styles' as *;
 
 .search {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: sp-vw(15);
   padding: sp-vw(15);
   margin: sp-vw(25) auto;
-
   text-align: center;
   background-color: $color-light-sky-blue;
   border-radius: 15px;
@@ -43,7 +41,7 @@
       background-repeat: no-repeat;
       background-position: right 0.5rem center;
       background-size: sp-vw(12);
-      @include form-box(100);
+      @include form-box-sp(100);
     }
 
     &_inputs {
@@ -55,14 +53,12 @@
 
     &_input {
       padding-left: sp-vw(10);
+      line-height: sp-vw(30);
       text-align: left;
-      @include form-box(320);
+      @include form-box-sp(320);
     }
 
     &_input::placeholder {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       font-size: sp-vw(14);
       font-weight: 400;
       color: $color-gray;
@@ -72,7 +68,7 @@
       width: sp-vw(160);
       height: sp-vw(40);
       line-height: sp-vw(18);
-      @include btn-pink(160, 40);
+      @include btn-pink-sp(160, 40);
     }
 
     &_button::before {
@@ -85,6 +81,81 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
+    }
+  }
+}
+
+@media (768px <=width) {
+  .search {
+    gap: pc-vw(20);
+    padding: pc-vw(40);
+    margin: pc-vw(60) auto;
+    border-radius: 10px;
+
+    &_title {
+      font-size: pc-vw(25);
+    }
+
+    &_text {
+      font-size: pc-vw(20);
+      font-weight: 400;
+    }
+
+    &_form {
+      flex-direction: row;
+      gap: pc-vw(15);
+
+      &_selects {
+        display: flex;
+        gap: pc-vw(15);
+        justify-content: center;
+      }
+
+      &_select {
+        padding-left: pc-vw(10);
+        font-size: pc-vw(18);
+        background-position: right 0.5rem center;
+        background-size: pc-vw(18);
+        @include form-box-pc(200);
+      }
+
+      &_inputs {
+        display: flex;
+        flex-direction: row;
+        gap: pc-vw(15);
+        align-items: center;
+      }
+
+      &_input {
+        padding-left: pc-vw(10);
+        text-align: left;
+        @include form-box-pc(300);
+      }
+
+      &_input::placeholder {
+        font-size: pc-vw(18);
+        font-weight: 400;
+        color: $color-gray;
+      }
+
+      &_button {
+        width: sp-vw(160);
+        height: sp-vw(40);
+        line-height: sp-vw(18);
+        @include btn-pink-pc(140, 60);
+      }
+
+      &_button::before {
+        display: inline-block;
+        width: pc-vw(30);
+        height: pc-vw(30);
+        margin-right: pc-vw(4);
+        content: '';
+        background-image: url('/icon/search_icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
     }
   }
 }

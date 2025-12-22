@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import styles from './index.module.scss'
 
 export const Search = () => {
@@ -9,7 +10,10 @@ export const Search = () => {
           働きたい職種・地域・希望給与を入れて検索！
         </p>
 
-        <form role='search' className={styles.search_form}>
+        <form
+          role='search'
+          className={clsx(styles.search_form, styles.search_pcform)}
+        >
           <div className={styles.search_form_selects}>
             <select name='job' className={styles.search_form_select}>
               <option value='medical'>医療事務</option>
