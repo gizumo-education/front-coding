@@ -68,7 +68,7 @@
 .prev,
 .next {
   position: absolute;
-  top: 0;
+  top: sp-vw(247);
   z-index: 10;
   width: sp-vw(40);
   height: sp-vw(40);

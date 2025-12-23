@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 import styles from './index.module.scss'
+import { Hamburger } from '@/components/Hamburger/index.jsx'
 
 export const Header = () => {
   return (
@@ -39,12 +40,8 @@ export const Header = () => {
             </a>
           </li>
         </ul>
-        <button className={styles.button}>
-          <span className={styles.line} />
-          <span className={styles.line} />
-          <span className={styles.line} />
-        </button>
       </nav>
+      <Hamburger />
     </header>
   )
 }
