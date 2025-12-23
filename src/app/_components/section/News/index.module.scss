@@ -110,6 +110,9 @@
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: sp-vw(370);
   height: sp-vw(60);
   margin-top: sp-vw(44);

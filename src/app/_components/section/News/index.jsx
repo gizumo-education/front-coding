@@ -47,7 +47,7 @@ export const News = () => {
     <section className={styles.square}>
       <div className={'inner'}>
         <div className={styles.news}>
-          <h1 className={styles.news_title}>新着求人</h1>
+          <h2 className={styles.news_title}>新着求人</h2>
 
           <div className={styles.news_box}>
             <Swiper
@@ -72,7 +72,7 @@ export const News = () => {
                       height={208}
                     />
 
-                    <h2 className={styles.h2}>{job.title}</h2>
+                    <h3 className={styles.h2}>{job.title}</h3>
                     <div className={styles.content}>
                       <p className={styles.item}>
                         <span className={styles.span}>給与</span>
@@ -99,7 +99,9 @@ export const News = () => {
             <i className={styles.next_pass}></i>
           </button>
 
-          <button className={styles.button}>新着求人一覧をもっと見る</button>
+          <a href='/' className={styles.button}>
+            新着求人一覧をもっと見る
+          </a>
         </div>
       </div>
     </section>

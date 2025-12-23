@@ -4,7 +4,7 @@ import styles from './index.module.scss'
 export const JobSearch = () => {
   return (
     <section className={styles.box}>
-      <h1 className={styles.title}>お仕事検索</h1>
+      <h2 className={styles.title}>お仕事検索</h2>
       <p className={clsx(styles.text)}>
         働きたい職種・地域・希望給与を入れて検索!
       </p>
@@ -41,13 +41,16 @@ export const JobSearch = () => {
         </select>
       </div>
 
-      <input
-        type='text'
-        placeholder='キーワード・企業名・スキルなど'
-        className={styles.form}
-      />
-
-      <button className={styles.button}>検索する</button>
+      <form>
+        <input
+          type='text'
+          placeholder='キーワード・企業名・スキルなど'
+          className={styles.form}
+        />
+        <button type='submit' className={styles.button}>
+          検索する
+        </button>
+      </form>
     </section>
   )
 }
