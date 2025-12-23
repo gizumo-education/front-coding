@@ -13,11 +13,20 @@
   text-align: center;
   background-color: #{$color-light-skyblue};
   border-radius: 6px;
+  @include media-pc {
+    width: pc-vw(1180);
+    height: pc-vw(240);
+    padding: pc-vw(40);
+    margin-top: pc-vw(60);
+  }
 }
 
 .title {
   font-size: sp-vw(22);
   font-weight: 700;
+  @include media-pc {
+    font-size: pc-vw(25);
+  }
 }
 
 .text {
@@ -25,12 +34,28 @@
   font-size: sp-vw(14);
   font-weight: 400;
   text-align: center;
+  @include media-pc {
+    margin-top: pc-vw(20);
+    font-size: pc-vw(20);
+  }
+}
+
+.container {
+  @include media-pc {
+    display: flex;
+  }
 }
 
 .select {
   display: flex;
   gap: sp-vw(10);
+  padding-left: sp-vw(25);
   margin-top: sp-vw(19);
+  @include media-pc {
+    gap: pc-vw(15);
+    padding-left: 0;
+    margin-top: pc-vw(26);
+  }
 
   &_box {
     width: sp-vw(100);
@@ -46,6 +71,23 @@
     background-size: sp-vw(13) sp-vw(7);
     border: 1px solid #{$color-pink};
     border-radius: 6px;
+    @include media-pc {
+      width: pc-vw(200);
+      height: pc-vw(60);
+      padding-left: pc-vw(15);
+      font-size: pc-vw(18);
+      line-height: pc-vw(60);
+      background-size: pc-vw(20) pc-vw(10);
+    }
+  }
+}
+
+.form-box {
+  @include media-pc {
+    display: flex;
+    gap: pc-vw(15);
+    margin-top: pc-vw(26);
+    margin-left: pc-vw(15);
   }
 }
 
@@ -59,11 +101,22 @@
   background-color: #{$color-white};
   border: 1px solid #{$color-pink};
   border-radius: 6px;
+  @include media-pc {
+    width: pc-vw(300);
+    height: pc-vw(60);
+    padding-top: pc-vw(17);
+    padding-bottom: pc-vw(17);
+    margin-top: pc-vw(0);
+    font-size: pc-vw(18);
+  }
 }
 
 .form::placeholder {
   padding-left: sp-vw(7);
   color: #{$color-gray};
+  @include media-pc {
+    padding-left: pc-vw(10);
+  }
 }
 
 .button {
@@ -79,4 +132,14 @@
   background-position: sp-vw(13) 50%;
   background-size: sp-vw(17.9) sp-vw(17.9);
   border-radius: 50px;
+  @include media-pc {
+    width: pc-vw(140);
+    height: pc-vw(60);
+    padding-left: pc-vw(20);
+    margin-top: pc-vw(0);
+    font-size: pc-vw(18);
+    line-height: pc-vw(60);
+    background-position: pc-vw(14) 50%;
+    background-size: pc-vw(29) pc-vw(29);
+  }
 }

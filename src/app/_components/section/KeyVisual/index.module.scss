@@ -7,6 +7,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @include media-pc {
+    height: pc-vw(500);
+    background-color: #{$color-navy};
+    background-image: url('/images/mainvisual_pc.jpg');
+    background-position: 50% 33%;
+    background-size: pc-vw(1180) auto;
+  }
 }
 
 .box {
@@ -20,12 +27,22 @@
     width: sp-vw(149);
     margin-top: sp-vw(61);
     margin-right: sp-vw(45);
+    @include media-pc {
+      width: pc-vw(341);
+      margin-top: pc-vw(63);
+      margin-right: pc-vw(265);
+    }
   }
 
   &_text_img {
     width: sp-vw(272);
     margin-top: sp-vw(12);
     margin-right: sp-vw(-15);
+    @include media-pc {
+      width: pc-vw(800);
+      margin-top: pc-vw(30);
+      margin-right: pc-vw(30);
+    }
   }
 
   &_text {
@@ -38,10 +55,19 @@
     background-color: #{$color-white};
     border: 1px solid #{$color-light-green};
     border-radius: 6px;
+    @include media-pc {
+      padding: pc-vw(13) pc-vw(41);
+      margin-top: pc-vw(54);
+      margin-right: pc-vw(236);
+      font-size: pc-vw(20);
+    }
 
     &_span {
       font-size: sp-vw(16);
       font-weight: 700;
+      @include media-pc {
+        font-size: pc-vw(40);
+      }
     }
   }
 }

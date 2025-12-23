@@ -12,4 +12,10 @@
     linear-gradient(#{$color-overlay}), url('/images/background_small.jpg');
   background-position: center;
   background-size: cover;
+  @include media-pc {
+    padding-top: pc-vw(104);
+    padding-bottom: pc-vw(103);
+    font-size: pc-vw(25);
+    background-position: 50% 75%;
+  }
 }

@@ -40,6 +40,38 @@ const jobs = [
     place: '三重県伊勢市',
     station: '伊勢市駅 徒歩15分',
   },
+  {
+    id: 5,
+    title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+    image: '/images/job1.jpg',
+    pay: '月給 148,000円～',
+    place: '三重県伊勢市',
+    station: '伊勢市駅 徒歩15分',
+  },
+  {
+    id: 6,
+    title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+    image: '/images/job2.jpg',
+    pay: '月給 148,000円～',
+    place: '三重県伊勢市',
+    station: '伊勢市駅 徒歩15分',
+  },
+  {
+    id: 7,
+    title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+    image: '/images/job3.jpg',
+    pay: '月給 148,000円～',
+    place: '三重県伊勢市',
+    station: '伊勢市駅 徒歩15分',
+  },
+  {
+    id: 8,
+    title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+    image: '/images/job4.jpg',
+    pay: '月給 148,000円～',
+    place: '三重県伊勢市',
+    station: '伊勢市駅 徒歩15分',
+  },
 ]
 
 export const News = () => {
@@ -58,6 +90,12 @@ export const News = () => {
               navigation={{
                 prevEl: `.${styles.prev}`,
                 nextEl: `.${styles.next}`,
+              }}
+              breakpoints={{
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                },
               }}
               pagination={false}
             >
