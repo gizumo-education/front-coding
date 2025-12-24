@@ -3,7 +3,7 @@ import styles from './index.module.scss'
 
 export const KyeVisual = () => {
   return (
-    <section className={clsx(styles.pc_backcolor, styles.sp_backimg)} id='/'>
+    <section className={clsx(styles.pc_backcolor, styles.sp_backimg)}>
       <div className={'inner'}>
         <div className={styles.keyvisual_flex}>
           <div className={styles.section}>

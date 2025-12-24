@@ -37,9 +37,7 @@ export const Hamburger = () => {
       <nav className={clsx(styles.hamburger_nav, { [styles.active]: isOpen })}>
         <ul className={clsx(styles.nav_items)}>
           <li className={clsx(styles.nav_items_item, styles.nav_items_item1)}>
-            <a href='/' onClick={(e) => handleScroll(e, '/')}>
-              トップ
-            </a>
+            <a href='/'>トップ</a>
           </li>
           <li className={clsx(styles.nav_items_item, styles.nav_items_item2)}>
             <a href='#newjobs' onClick={(e) => handleScroll(e, 'newjobs')}>
