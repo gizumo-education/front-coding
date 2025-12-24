@@ -1,0 +1,124 @@
+@use '@/styles' as *;
+
+.square {
+  width: 100%;
+  margin-top: sp-vw(20);
+  background-color: #{$color-soft-blue};
+}
+
+.news {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: sp-vw(30);
+  padding-bottom: sp-vw(60);
+  margin: 0 auto;
+  text-align: center;
+  background-color: #{$color-soft-blue};
+
+  &_title {
+    font-size: sp-vw(25);
+    font-weight: 700;
+  }
+
+  &_box {
+    width: sp-vw(370);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(10);
+  width: 100%;
+  margin: 0 auto;
+  margin-top: sp-vw(30);
+}
+
+.image {
+  display: block;
+  flex-shrink: 0;
+  width: 100%;
+  height: sp-vw(208);
+  object-fit: cover;
+  object-position: top;
+  border-radius: 15px;
+}
+
+.h2 {
+  font-size: sp-vw(16);
+  font-weight: 700;
+  line-height: sp-vw(22);
+  text-align: left;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(6);
+}
+
+.item {
+  font-size: sp-vw(14);
+  font-weight: 400;
+  text-align: left;
+}
+
+.span {
+  display: inline-block;
+  width: sp-vw(60);
+  height: sp-vw(21);
+  margin-right: sp-vw(20);
+  line-height: sp-vw(21);
+  text-align: center;
+  background-color: #{$color-soft-pink};
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: sp-vw(247);
+  z-index: 2;
+  width: sp-vw(40);
+  height: sp-vw(40);
+  background: url('/images/circle.png') center / contain no-repeat;
+  background-color: transparent;
+
+  &_pass {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url('/images/pass_left.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: sp-vw(7) sp-vw(14);
+  }
+}
+
+.prev {
+  left: sp-vw(0);
+}
+
+.next {
+  right: sp-vw(0);
+
+  &_pass {
+    background-image: url('/images/pass_right.png');
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(370);
+  height: sp-vw(60);
+  margin-top: sp-vw(44);
+  font-size: sp-vw(18);
+  font-weight: 700;
+  color: #{$color-white};
+  background-color: #{$color-light-pink};
+  border-radius: 50;
+}
