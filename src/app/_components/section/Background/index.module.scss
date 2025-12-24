@@ -12,4 +12,13 @@
     linear-gradient(#{$color-overlay}), url('/images/background_small.jpg');
   background-position: 50% 70%;
   background-size: cover;
+  @include media-pc {
+    display: flex;
+    align-items: center;
+    height: pc-vw(300);
+    font-size: pc-vw(25);
+    font-weight: 700;
+    line-height: 2;
+    background-position: 50% 73%;
+  }
 }
