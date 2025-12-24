@@ -1,6 +1,6 @@
 @use '@/styles' as *;
 
-.background-section {
+.background {
   padding-top: sp-vw(15);
   padding-bottom: sp-vw(15);
   font-size: sp-vw(14);
@@ -13,9 +13,12 @@
   background-position: center;
   background-size: cover;
   @include media-pc {
-    padding-top: pc-vw(104);
-    padding-bottom: pc-vw(103);
+    display: flex;
+    align-items: center;
+    height: pc-vw(300);
     font-size: pc-vw(25);
-    background-position: 50% 75%;
+    font-weight: 700;
+    line-height: 2;
+    background-position: 50% 73%;
   }
 }
