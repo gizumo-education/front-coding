@@ -1,4 +1,3 @@
-import clsx from 'clsx'
 import styles from './index.module.scss'
 
 export const Search = () => {
@@ -10,10 +9,7 @@ export const Search = () => {
           働きたい職種・地域・希望給与を入れて検索！
         </p>
 
-        <form
-          role='search'
-          className={clsx(styles.search_form, styles.search_pcform)}
-        >
+        <form role='search' className={styles.search_form}>
           <div className={styles.search_form_selects}>
             <select name='job' className={styles.search_form_select}>
               <option value='medical'>医療事務</option>
@@ -52,11 +48,10 @@ export const Search = () => {
               placeholder='キーワード・企業名・スキルなど'
               className={styles.search_form_input}
             />
-            <a href='/'>
-              <button type='submit' className={styles.search_form_button}>
-                検索する
-              </button>
-            </a>
+
+            <button type='submit' className={styles.search_form_button}>
+              検索する
+            </button>
           </div>
         </form>
       </div>
