@@ -28,9 +28,7 @@
     margin-top: sp-vw(61);
     margin-right: sp-vw(45);
     @include media-pc {
-      width: pc-vw(341);
-      margin-top: pc-vw(63);
-      margin-right: pc-vw(265);
+      display: none;
     }
   }
 
@@ -39,9 +37,7 @@
     margin-top: sp-vw(12);
     margin-right: sp-vw(-15);
     @include media-pc {
-      width: pc-vw(800);
-      margin-top: pc-vw(30);
-      margin-right: pc-vw(30);
+      display: none;
     }
   }
 
@@ -69,5 +65,21 @@
         font-size: pc-vw(40);
       }
     }
+  }
+}
+
+.pc-key {
+  @include media-pc {
+    width: pc-vw(341);
+    margin-top: pc-vw(63);
+    margin-right: pc-vw(265);
+  }
+}
+
+.pc-text {
+  @include media-pc {
+    width: pc-vw(800);
+    margin-top: pc-vw(30);
+    margin-right: pc-vw(30);
   }
 }

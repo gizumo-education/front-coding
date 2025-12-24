@@ -19,6 +19,21 @@ export const KeyVisual = () => {
             alt='医療事務求人を探すならギズジョブ'
             className={styles['box_text_img']}
           ></img>
+
+          <img
+            src='/images/keyvisual_pc.png'
+            width={341}
+            height={168}
+            alt='No.1'
+            className={styles['pc-key']}
+          ></img>
+          <img
+            src='/images/医療事務求人を探すならソラジョブ.png'
+            width={800}
+            height={65}
+            alt='医療事務求人を探すならソラジョブ'
+            className={styles['pc-text']}
+          ></img>
           <div className={styles['box_text']}>
             <span>
               現在の求人掲載数:
