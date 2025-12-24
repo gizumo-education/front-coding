@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import styles from './index.module.scss'
 
-export const Header = () => {
+export const Header = ({ isOpen, onToggleMenu }) => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -39,7 +39,11 @@ export const Header = () => {
             </a>
           </li>
         </ul>
-        <button className={styles.button}>
+        <button
+          className={styles.button}
+          aria-expanded={isOpen}
+          onClick={onToggleMenu}
+        >
           <span className={styles.line} />
           <span className={styles.line} />
           <span className={styles.line} />
