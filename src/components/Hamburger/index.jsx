@@ -58,7 +58,7 @@ export const Hamburger = () => {
         </ul>
       </nav>
       <button
-        className={styles.button}
+        className={`${styles.button} ${isOpen ? styles.isactive : ''}`}
         onClick={handleOpenClick}
         aria-expanded={isOpen}
         aria-controls='hamburger-nav'

@@ -7,7 +7,7 @@
     right: 0;
     left: 0;
     width: 100%;
-    height: sp-vw(554);
+    height: 100vh;
     background-color: $color-overlay-hamburger;
     transform: translateX(100%);
     transition: ease 0.4s;
@@ -57,6 +57,10 @@
   height: sp-vw(6);
   background-color: #{$color-black};
   border-radius: 6px;
+  transform-origin: center;
+  transition:
+    transform 0.4s ease,
+    opacity 0.3s ease;
 }
 
 .line:nth-child(1) {
@@ -71,4 +75,21 @@
 .line:nth-child(3) {
   top: 100%;
   transform: translateY(-100%);
+}
+
+.isactive {
+  .line:nth-child(1) {
+    top: 5%;
+    transform: translateY(sp-vw(17)) rotate(45deg);
+  }
+
+  .line:nth-child(2) {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  .line:nth-child(3) {
+    top: 95%;
+    transform: translateY(sp-vw(-17)) rotate(-45deg);
+  }
 }
