@@ -21,39 +21,6 @@
   }
 }
 
-.button {
-  position: relative;
-  display: block;
-  width: sp-vw(50);
-  height: sp-vw(38);
-  border-radius: 50%;
-  @include media-pc {
-    display: none;
-  }
-}
-
-.line {
-  position: absolute;
-  width: 100%;
-  height: sp-vw(6);
-  background-color: #{$color-black};
-  border-radius: 6px;
-}
-
-.line:nth-child(1) {
-  top: 0%;
-}
-
-.line:nth-child(2) {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.line:nth-child(3) {
-  top: 100%;
-  transform: translateY(-100%);
-}
-
 .nav {
   display: flex;
   align-items: center;
