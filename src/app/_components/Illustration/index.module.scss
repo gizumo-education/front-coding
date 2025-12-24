@@ -2,19 +2,46 @@
 
 .img {
   width: 100%;
-  background: url('/images/between_img.jpg') no-repeat center / cover;
+  background: url('/images/between_img_sp.jpg') no-repeat center / cover;
 
   &_overlay {
     width: 100%;
+    padding: sp-vw(16) 0;
     background-color: $color-overlay;
   }
 
   &_text {
-    padding: sp-vw(16) 0;
     font-size: sp-vw(14);
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.2;
     color: $color-white;
     text-align: center;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(2);
+}
+
+@media (768px <=width) {
+  .img {
+    background-image: url('/images/between_img_pc.jpg');
+    background-size: 100% contain;
+
+    &_overlay {
+      width: 100%;
+      background-color: $color-overlay;
+    }
+
+    &_text {
+      font-size: pc-vw(25);
+      font-weight: 700;
+    }
+  }
+
+  .flex {
+    gap: pc-vw(21);
   }
 }

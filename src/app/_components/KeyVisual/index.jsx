@@ -1,11 +1,12 @@
+import clsx from 'clsx'
 import styles from './index.module.scss'
 
 export const KyeVisual = () => {
   return (
-    <section>
-      <div className={styles.section}>
-        <div className={'inner'}>
-          <div className={styles.keyvisual_flex}>
+    <section className={clsx(styles.pc_backcolor, styles.sp_backimg)}>
+      <div className={'inner'}>
+        <div className={styles.keyvisual_flex}>
+          <div className={styles.section}>
             <div className={styles.keyvisual_content}>
               <img
                 src='/icon/keyvisual.svg'
@@ -19,6 +20,7 @@ export const KyeVisual = () => {
                 alt='医療事務求人を探すならギズジョブ'
                 width='278'
                 height='27'
+                className={styles.keyvisual_text}
               />
               <div className={styles.keyvisual_box}>
                 <span className={styles.jobs}>
