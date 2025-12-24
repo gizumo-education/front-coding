@@ -52,10 +52,11 @@ export const Search = () => {
               placeholder='キーワード・企業名・スキルなど'
               className={styles.search_form_input}
             />
-
-            <button type='submit' className={styles.search_form_button}>
-              検索する
-            </button>
+            <a href='/'>
+              <button type='submit' className={styles.search_form_button}>
+                検索する
+              </button>
+            </a>
           </div>
         </form>
       </div>
