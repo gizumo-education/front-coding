@@ -69,7 +69,7 @@ const jobs = [
 
 export const NewJobs = () => {
   return (
-    <section className={styles.color}>
+    <section className={styles.color} id='newjobs'>
       <div className={'inner'}>
         <div className={styles.newjobs}>
           <h2 className={styles.newjobs_title}>新着情報</h2>

@@ -3,6 +3,7 @@
 .sp {
   &_backimg {
     width: 100%;
+    scroll-margin-top: sp-vw(70);
     background: url('/images/keyvisual_sp.png') no-repeat center / cover;
   }
 }
