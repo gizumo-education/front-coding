@@ -76,7 +76,7 @@ const jobs = [
 
 export const News = () => {
   return (
-    <section className={styles.square}>
+    <section className={styles.square} id='news'>
       <div className={'inner'}>
         <div className={styles.news}>
           <h2 className={styles.news_title}>新着求人</h2>

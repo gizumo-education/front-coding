@@ -3,6 +3,7 @@
 .section {
   width: 100%;
   height: sp-vw(270);
+  scroll-margin-block-start: sp-vw(70);
   background-image: url('/images/mainvisual.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -69,7 +70,9 @@
 }
 
 .pc-key {
+  display: none;
   @include media-pc {
+    display: block;
     width: pc-vw(341);
     margin-top: pc-vw(63);
     margin-right: pc-vw(265);
@@ -77,7 +80,9 @@
 }
 
 .pc-text {
+  display: none;
   @include media-pc {
+    display: block;
     width: pc-vw(800);
     margin-top: pc-vw(30);
     margin-right: pc-vw(30);

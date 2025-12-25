@@ -1,0 +1,75 @@
+@use '@/styles' as *;
+
+.menu {
+  position: fixed;
+  top: sp-vw(70);
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: sp-vw(57);
+  padding-left: sp-vw(60);
+  font-size: sp-vw(22);
+  font-weight: 700;
+  color: #{$color-white};
+  background-color: #{$color-dark-overlay};
+  transform: translateX(100%);
+  transition: 0.3s ease;
+
+  &_ul {
+    display: flex;
+    flex-direction: column;
+    gap: sp-vw(38);
+  }
+}
+
+.is-open {
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.button {
+  position: relative;
+  display: block;
+  width: sp-vw(50);
+  height: sp-vw(38);
+  border-radius: 50%;
+  transition: 0.3s ease;
+  @include media-pc {
+    display: none;
+  }
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: sp-vw(6);
+  background-color: #{$color-black};
+  border-radius: 6px;
+  transition: all 0.15s linear;
+}
+
+.line:nth-child(1) {
+  top: 0%;
+}
+
+.line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line:nth-child(3) {
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+.cross .line:nth-child(1) {
+  transform: translateY(sp-vw(17)) rotate(-45deg);
+}
+
+.cross .line:nth-child(2) {
+  opacity: 0;
+}
+
+.cross .line:nth-child(3) {
+  transform: translateY(sp-vw(-21)) rotate(45deg);
+}
