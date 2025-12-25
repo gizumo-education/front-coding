@@ -30,7 +30,7 @@ export const Menu = () => {
 
   return (
     <section>
-      <nav className={clsx(styles.menu, isOpen ? styles['is-open'] : '')}>
+      <nav className={clsx(styles.menu, isOpen && styles['is-open'])}>
         <ul className={styles.menu_ul}>
           <li>
             <a href='/' onClick={(e) => handleScroll(e, 'top')}>
@@ -54,7 +54,7 @@ export const Menu = () => {
         </ul>
       </nav>
       <button
-        className={clsx(styles.button, isOpen ? styles.cross : '')}
+        className={clsx(styles.button, isOpen && styles.cross)}
         onClick={handleClick}
         aria-expanded={isOpen}
       >
