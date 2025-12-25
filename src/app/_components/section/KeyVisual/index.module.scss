@@ -3,6 +3,7 @@
 .section {
   width: 100%;
   height: sp-vw(270);
+  scroll-margin-block-start: sp-vw(70);
   background-image: url('/images/mainvisual.png');
   background-repeat: no-repeat;
   background-position: center;

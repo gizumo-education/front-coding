@@ -5,13 +5,13 @@
   top: sp-vw(70);
   right: 0;
   width: 100%;
-  height: sp-vw(554);
+  height: 100%;
   padding-top: sp-vw(57);
   padding-left: sp-vw(60);
   font-size: sp-vw(22);
   font-weight: 700;
   color: #{$color-white};
-  background-color: #{$color-overlay};
+  background-color: #{$color-dark-overlay};
   transform: translateX(100%);
   transition: 0.3s ease;
 
@@ -33,6 +33,7 @@
   width: sp-vw(50);
   height: sp-vw(38);
   border-radius: 50%;
+  transition: 0.3s ease;
   @include media-pc {
     display: none;
   }
@@ -44,6 +45,7 @@
   height: sp-vw(6);
   background-color: #{$color-black};
   border-radius: 6px;
+  transition: all 0.15s linear;
 }
 
 .line:nth-child(1) {
@@ -58,4 +60,16 @@
 .line:nth-child(3) {
   top: 100%;
   transform: translateY(-100%);
+}
+
+.cross .line:nth-child(1) {
+  transform: translateY(25px) rotate(-45deg);
+}
+
+.cross .line:nth-child(2) {
+  opacity: 0;
+}
+
+.cross .line:nth-child(3) {
+  transform: translateY(-25px) rotate(45deg);
 }

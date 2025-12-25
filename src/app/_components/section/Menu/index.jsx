@@ -54,7 +54,7 @@ export const Menu = () => {
         </ul>
       </nav>
       <button
-        className={clsx(styles.button)}
+        className={clsx(styles.button, isOpen ? styles.cross : '')}
         onClick={handleClick}
         aria-expanded={isOpen}
       >
