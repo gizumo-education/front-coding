@@ -132,6 +132,8 @@
   background-position: sp-vw(13) 50%;
   background-size: sp-vw(17.9) sp-vw(17.9);
   border-radius: 50px;
+  opacity: 1;
+  transition: opacity 0.3s;
   @include media-pc {
     width: pc-vw(140);
     height: pc-vw(60);
@@ -142,4 +144,8 @@
     background-position: pc-vw(14) 50%;
     background-size: pc-vw(29) pc-vw(29);
   }
+}
+
+.button:hover {
+  opacity: 0.6;
 }

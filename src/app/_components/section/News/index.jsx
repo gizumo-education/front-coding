@@ -76,7 +76,7 @@ const jobs = [
 
 export const News = () => {
   return (
-    <section className={styles.square}>
+    <section className={styles.square} id='news'>
       <div className={'inner'}>
         <div className={styles.news}>
           <h2 className={styles.news_title}>新着求人</h2>
@@ -104,10 +104,10 @@ export const News = () => {
                   <article className={styles.container}>
                     <img
                       src={job.image}
-                      alt='求人画像'
+                      alt=''
                       className={styles.image}
-                      width={370}
-                      height={208}
+                      width={740}
+                      height={416}
                     />
 
                     <h3 className={styles.h2}>{job.title}</h3>

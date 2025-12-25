@@ -138,6 +138,7 @@
     background-position: center;
     background-size: sp-vw(7) sp-vw(14);
     @include media-pc {
+      background-image: url('/images/pass_pc_left.png');
       background-size: pc-vw(15) pc-vw(30);
     }
   }
@@ -151,7 +152,7 @@
   right: sp-vw(0);
 
   &_pass {
-    background-image: url('/images/pass_right.png');
+    background-image: url('/images/pass_pc_right.png');
   }
 }
 
