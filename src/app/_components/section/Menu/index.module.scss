@@ -63,7 +63,7 @@
 }
 
 .cross .line:nth-child(1) {
-  transform: translateY(sp-vw(18)) rotate(-45deg);
+  transform: translateY(sp-vw(17)) rotate(-45deg);
 }
 
 .cross .line:nth-child(2) {
@@ -71,5 +71,5 @@
 }
 
 .cross .line:nth-child(3) {
-  transform: translateY(sp-vw(-20)) rotate(45deg);
+  transform: translateY(sp-vw(-21)) rotate(45deg);
 }
