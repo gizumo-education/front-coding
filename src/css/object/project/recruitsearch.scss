@@ -1,0 +1,57 @@
+@use '../../object/utility/utility.scss';
+@use '../component/button.scss';
+@use '../component/recruit-item.scss';
+
+.l-main__new-recruit {
+  background-color: #EFF6FC;
+  height: 636px;
+  place-items: center;
+  padding-top: 64px;
+  margin:0 auto;
+  
+  &-area {
+    margin: 0 auto;
+
+    .l-main__new-recruit-title {
+      font-size: 25px;
+      height: 30px;
+    }
+    .l-main__new-recruit-list {
+      position: relative;
+      display: flex;
+      width: 1180px;
+      margin-top: 25px;
+      gap: 20px;
+
+      .c-select__button {
+        position: absolute;
+        display: flex;
+        height: 60px;
+        width: 60px;
+        z-index: 10;
+
+        &.is-right {
+          right: 0px;
+          top: 20%;
+        }
+        &.is-left {
+          left: 0px;
+          top :20%;
+        }
+      }
+      .c-select__button__arrow_right {
+        @include button.c-arrow();
+      }
+      .c-select__button__arrow_left {
+        @include button.c-arrow($trans-x: 15%, $rotate-deg: -135deg);
+      }
+    }
+
+    .c-button {
+      @include button.c-btn();
+      display: block;
+      width: 360px;
+      margin: 60px auto 0 auto;
+    }
+  }
+}
