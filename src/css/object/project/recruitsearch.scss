@@ -6,29 +6,26 @@
   background-color: #EFF6FC;
   height: 636px;
   place-items: center;
-  padding: 64px 210px 0 210px;
+  padding-top: 64px;
+  margin:0 auto;
   
   &-area {
     margin: 0 auto;
 
     .l-main__new-recruit-title {
-    // display: block;
       font-size: 25px;
       height: 30px;
     }
-// }
     .l-main__new-recruit-list {
       position: relative;
       display: flex;
       width: 1180px;
-      // margin-right: auto;
       margin-top: 25px;
       gap: 20px;
 
       .c-select__button {
         position: absolute;
         display: flex;
-        // top: 50%;
         height: 60px;
         width: 60px;
         z-index: 10;

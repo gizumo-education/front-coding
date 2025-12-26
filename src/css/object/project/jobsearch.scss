@@ -3,7 +3,10 @@
 @use '../component/button.scss';
 
 .l-main__select {
-  padding: 60px 210px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+
 }
   
 .l-main__select-area {
@@ -47,7 +50,7 @@
       font-size: 18px;
     }
   
-    a[class^="is-"] {
+    button {
       padding: 21px 20px 21px 48px;
       width: 140px;
       @include button.c-btn();
@@ -60,10 +63,6 @@
         background-position: center left 14.02px;
         background-repeat: no-repeat;
         background-size: 29.98px 29.98px;
-        // @include utility.tab {
-        //   padding-left: .2rem;
-        //   background-size: .16rem;
-        // }
         background-image: url("../img/icon/icon-search-fff.png");
       }
     }
