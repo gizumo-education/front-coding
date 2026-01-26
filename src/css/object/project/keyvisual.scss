@@ -6,6 +6,11 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
+  @include utility.sp {
+    width: 400px;
+    height: 270px;
+
+  }
 
   .c-main__key-visual {
     display: block;
@@ -29,12 +34,25 @@
     transform: translate(-50%, -50%);
     top: 83%;
     left: 63.5%;
+
+    @include utility.sp {
+      height: 30px;
+      width: 170px;
+      border: solid 1px;
+      border-radius: 5px;
+      font-size: 8px;
+      top: 75%;
+      left: 65%;
+    }
   }
 
   .c-main__key-visual-text span {
     font-style: bold;
     font-weight: 700;
     font-size: 40px;
+    @include utility.sp {
+      font-size: 16px;
+    }
   }
 
   .c-main__key-visual-logo {
@@ -43,7 +61,13 @@
     transform: translate(-50%, -50%);
     top: 28%;
     left: 63.5%;
-    margin-bottom: 54px;
+    // margin-bottom: 54px;
+    @include utility.sp {
+      width: 149.54px;
+      height: 73.36px;
+      top: 40%;
+      left: 65%;
+    }
   }
   .c-main__key-visual-title {
     display: block;
@@ -52,6 +76,12 @@
     top: 59%;
     left: 63.5%;
     margin-bottom: 54px;
+    @include utility.sp {
+      width: 272px;
+      height: 22px;
+      top: 60%;
+      left: 65%;
+    }
   }
 }
 
@@ -60,6 +90,10 @@
   position:relative;
   width: 100%;
   margin: 0 auto;
+  @include utility.sp {
+    width: 400px;
+    height: 75px;
+  }
 
   .c-main__banner-picture {
     width: 100%;
@@ -94,5 +128,14 @@
     font-weight: bold;
     text-align: center;
     line-height: 200%;
+    @include utility.sp {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 170%;
+      white-space: nowrap;
+
+
+
+    }
   }
 }

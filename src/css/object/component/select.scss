@@ -5,6 +5,9 @@
   display: flex;
   gap: 15px;
 
+  @include utility.sp {
+    gap: 15px 10px;
+  }
 }
 
 .select-box {
@@ -20,18 +23,35 @@
     border-top: 10px solid #DE5579;
     border-bottom: 0;
     pointer-events: none;
+    
+    @include utility.sp {
+      top: 12px;
+      right: 8px;
+      border-right: 7px solid transparent;
+      border-left: 7px solid transparent;
+      border-top: 7px solid #DE5579;
+
+
+    }
   }
 
   & > select {
     -webkit-appearance: none;
     appearance: none;
     border-color: #DE5579;
-    border-radius: 10px;
+    border-radius: 5px;
     border-style: 1px;
     padding: 10px;
     height: 60px;
     width: 200px;
     font-size: 18px;
 
+    @include utility.sp {
+      height: 30px;
+      width: 100px;
+      font-size: 12px;
+      padding: 6px 8px;
+
+    }
   }
   }

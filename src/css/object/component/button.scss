@@ -4,6 +4,7 @@
 @mixin c-btn() {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #DE5579;
   text-align: center;
   border: none;

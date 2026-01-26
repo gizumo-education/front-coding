@@ -66,11 +66,8 @@
 
   .l-main__column-button {
     @include button.c-btn();
-    display: block;
     width: 420px;
     margin: 80px auto 0 auto;
-    color: #fff;
-
   }
 
 }
