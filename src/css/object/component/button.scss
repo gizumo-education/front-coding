@@ -34,6 +34,11 @@
   opacity: 70%;
   position: relative;
 
+  @include utility.sp {
+    height: 42px;
+    width: 42px;
+  }
+
   &::before {
     display: block;
     position: absolute;
@@ -44,5 +49,10 @@
     transform: translate($trans-x,$trans-y) rotate($rotate-deg);
     border-top: 0.71px solid #000;
     border-right: 0.71px solid #000;
+
+    @include utility.sp {
+      width: 9.8px;
+      height: 9.8px;
+    }
   }
 }

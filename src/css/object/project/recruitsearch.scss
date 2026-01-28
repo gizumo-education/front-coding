@@ -4,39 +4,73 @@
 
 .l-main__new-recruit {
   background-color: #EFF6FC;
-  height: 636px;
   place-items: center;
-  padding-top: 64px;
-  margin:0 auto;
+  margin: 64px auto 0;
+  height: 636px;
+
+
+  @include utility.sp {
+    margin-top: 25px;
+    height: 600px;
+    width: 400px;
+  }
   
   &-area {
     margin: 0 auto;
+    padding-top: 64px;
+
+    @include utility.sp {
+      padding-top: 30px;
+
+    }
 
     .l-main__new-recruit-title {
       font-size: 25px;
       height: 30px;
+
+      @include utility.sp {
+        height: 25px;
+        text-align: center;
+        font-weight: bold;
+      }
     }
     .l-main__new-recruit-list {
       position: relative;
       display: flex;
+      height: 337px;
       width: 1180px;
       margin-top: 25px;
       gap: 20px;
 
+      @include utility.sp {
+        height: 346px;
+        width: 400px;
+        margin-top: 35px;
+        gap: 0;
+      }
+
       .c-select__button {
         position: absolute;
         display: flex;
-        height: 60px;
-        width: 60px;
         z-index: 10;
+        top: 20%;
 
         &.is-right {
           right: 0px;
-          top: 20%;
         }
         &.is-left {
           left: 0px;
-          top :20%;
+        }
+
+        @include utility.sp {
+          top: 45%;
+
+          &.is-right {
+            right: 15px;
+          }
+          &.is-left {
+            left: 15px;
+          }
         }
       }
       .c-select__button__arrow_right {
@@ -52,6 +86,10 @@
       display: block;
       width: 360px;
       margin: 60px auto 0 auto;
+
+      @include utility.sp {
+        margin-top: 44px;
+      }
     }
   }
 }

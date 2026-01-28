@@ -1,10 +1,14 @@
 @use '../../object/utility/utility.scss';
 @use '../component/button.scss';
 
-.l-main__new-recruit-list {
-  height: 337px;
+// .l-main__new-recruit-list {
+//   height: 337px;
 
-}
+//   @include utility.sp {
+//     height: 346px;
+//     width: 400px;
+//   }
+// }
 
 .l-main__new-recruit-item {
   img {
@@ -17,6 +21,22 @@
     margin-bottom: 7px;
     margin-top: 8px;
     line-height: 22px;
+
+    @include utility.sp {
+      width: 358px;
+    }
+  }
+
+  @include utility.sp {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
+@include utility.sp {
+  .l-main__new-recruit-item ~ .l-main__new-recruit-item {
+    display: none;
   }
 }
 
@@ -30,14 +50,14 @@
     th {
       display: inline-box;
       background-color: #FFCAD0;
-      align-content:center ;
+      align-content: center;
       width: 60px;
       height: 21px;
     }
 
     td {
       display: inline-flexbox;
-      align-content:center ;
+      align-content: center;
       padding-left: 10px;
     }
   }
