@@ -39,27 +39,33 @@ export const JobSearch = () => {
       </p>
       <form>
         <div className={styles['search-options']}>
-          <select className={styles['option']} aria-label='職種'>
-            {jobs.map((job) => (
-              <option key={job.value} value={job.value}>
-                {job.label}
-              </option>
-            ))}
-          </select>
-          <select className={styles['option']} aria-label='地域'>
-            {areas.map((area) => (
-              <option key={area.value} value={area.value}>
-                {area.label}
-              </option>
-            ))}
-          </select>
-          <select className={styles['option']} aria-label='給与'>
-            {salaries.map((salary) => (
-              <option key={salary.value} value={salary.value}>
-                {salary.label}
-              </option>
-            ))}
-          </select>
+          <div className={styles['select-wrapper']}>
+            <select className={styles['option']} aria-label='職種'>
+              {jobs.map((job) => (
+                <option key={job.value} value={job.value}>
+                  {job.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className={styles['select-wrapper']}>
+            <select className={styles['option']} aria-label='地域'>
+              {areas.map((area) => (
+                <option key={area.value} value={area.value}>
+                  {area.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className={styles['select-wrapper']}>
+            <select className={styles['option']} aria-label='給与'>
+              {salaries.map((salary) => (
+                <option key={salary.value} value={salary.value}>
+                  {salary.label}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
         <input
           type='text'
@@ -68,7 +74,7 @@ export const JobSearch = () => {
         />
         <button type='submit' className={styles['search-button']}>
           <img
-            src='/icon/search.svg'
+            src='/icon/search-white.svg'
             alt='検索アイコン"'
             width='10'
             height='10'

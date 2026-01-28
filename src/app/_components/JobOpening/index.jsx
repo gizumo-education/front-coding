@@ -4,14 +4,14 @@ import styles from './index.module.scss'
 import { Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-// import 'swiper/css';
-// import 'swiper/css/navigation';
+import 'swiper/css'
+import 'swiper/css/navigation'
 
 export const JobOpening = () => {
   const jobOpnenings = [
     {
       id: 1,
-      img: '/JobOpening/JobOpening-img01.png',
+      img: '/JobOpening/JobOpening-img01.jpg',
       alt: '求人画像',
       title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
       salary: '月給 148,000円～',
@@ -20,7 +20,7 @@ export const JobOpening = () => {
     },
     {
       id: 2,
-      img: '/JobOpening/JobOpening-img02.png',
+      img: '/JobOpening/JobOpening-img02.jpg',
       alt: '求人画像',
       title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
       salary: '月給 148,000円～',
@@ -29,7 +29,7 @@ export const JobOpening = () => {
     },
     {
       id: 3,
-      img: '/JobOpening/JobOpening-img03.png',
+      img: '/JobOpening/JobOpening-img03.jpg',
       alt: '求人画像',
       title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
       salary: '月給 148,000円～',
@@ -38,7 +38,7 @@ export const JobOpening = () => {
     },
     {
       id: 4,
-      img: '/JobOpening/JobOpening-img04.png',
+      img: '/JobOpening/JobOpening-img04.jpg',
       alt: '求人画像',
       title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
       salary: '月給 148,000円～',
@@ -50,10 +50,24 @@ export const JobOpening = () => {
     <div className={styles['jobopening-container']}>
       <h2 className={styles['jobopening-title']}>新着求人</h2>
       <div className={styles['jobopening-content']}>
+        <button className={`custom-prev ${styles['custom-prev']}`}>
+          <img
+            src='/icon/path.svg'
+            alt='next'
+            width='10'
+            height='10'
+            className={styles['custom-prev-svg']}
+          />
+        </button>
         <Swiper
           modules={[Navigation]}
+          navigation={{
+            nextEl: '.custom-next',
+            prevEl: '.custom-prev',
+          }}
           spaceBetween={30}
           slidesPerView={1}
+          loop={true}
           breakpoints={{
             768: {
               slidesPerView: 4,
@@ -65,8 +79,8 @@ export const JobOpening = () => {
               <img
                 src={jobOpnening.img}
                 alt={jobOpnening.alt}
-                width='200'
-                height='200'
+                width='740'
+                height='416'
                 className={styles['jobopening-img']}
               />
               <h3 className={styles['jobopening-heading']}>
@@ -87,6 +101,15 @@ export const JobOpening = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <button className={`custom-next ${styles['custom-next']}`}>
+          <img
+            src='/icon/path.svg'
+            alt='next'
+            width='10'
+            height='10'
+            className={styles['custom-next-svg']}
+          />
+        </button>
         <button className={styles['detail-button']}>
           新着求人一覧をもっと見る
         </button>
