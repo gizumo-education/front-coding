@@ -7,24 +7,24 @@ export const Hero = () => {
         <source srcSet='/Hero/hero-sp.png' media='(max-width: 575px)' />
         <img
           src='/Hero/hero-pc.png'
-          width='1200'
-          height='600'
-          alt='メイン画像'
+          width='3200'
+          height='1000'
+          alt=''
           className={styles['hero-img']}
         />
       </picture>
       <img
         src='/Hero/hero-logo.png'
         alt='no.1'
-        width='1200'
-        height='600'
+        width='340'
+        height='140'
         className={styles['hero-logo']}
       />
       <img
         src='/Hero/hero-title.png'
         alt='医療事務求人を探すならギズジョブ'
-        width='1200'
-        height='600'
+        width='800'
+        height='65'
         className={styles['hero-title']}
       />
       <div className={styles['job-info']}>
