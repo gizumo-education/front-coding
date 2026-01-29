@@ -75,7 +75,7 @@ export const JobSearch = () => {
         <button type='submit' className={styles['search-button']}>
           <img
             src='/icon/search-white.svg'
-            alt='検索アイコン"'
+            alt=''
             width='10'
             height='10'
             className={styles['search-icon']}
