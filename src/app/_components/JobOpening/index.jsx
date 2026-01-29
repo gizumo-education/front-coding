@@ -86,13 +86,6 @@ export const JobOpening = () => {
                   className={styles['jobopening-img']}
                 />
               </div>
-              <img
-                src={jobOpnening.img}
-                alt={jobOpnening.alt}
-                width='1000'
-                height='685'
-                className={styles['jobopening-img']}
-              />
               <h3 className={styles['jobopening-heading']}>
                 {jobOpnening.title}
               </h3>
