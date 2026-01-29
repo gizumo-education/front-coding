@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <div className={styles['hero-content']}>
       <picture>
-        <source srcSet='/Hero/hero-sp.png' media='(max-width: 768px)' />
+        <source srcSet='/Hero/hero-sp.png' media='(max-width: 767px)' />
         <img
           src='/Hero/hero-pc.png'
           width='1600'
