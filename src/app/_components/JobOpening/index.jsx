@@ -12,7 +12,7 @@ export const JobOpening = () => {
     {
       id: 1,
       img: '/JobOpening/JobOpening-img01.jpg',
-      alt: '求人画像',
+      alt: '',
       title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
       salary: '月給 148,000円～',
       adress: '三重県伊勢市',
@@ -21,7 +21,7 @@ export const JobOpening = () => {
     {
       id: 2,
       img: '/JobOpening/JobOpening-img02.jpg',
-      alt: '求人画像',
+      alt: '',
       title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
       salary: '月給 148,000円～',
       adress: '三重県伊勢市',
@@ -30,7 +30,7 @@ export const JobOpening = () => {
     {
       id: 3,
       img: '/JobOpening/JobOpening-img03.jpg',
-      alt: '求人画像',
+      alt: '',
       title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
       salary: '月給 148,000円～',
       adress: '三重県伊勢市',
@@ -39,7 +39,7 @@ export const JobOpening = () => {
     {
       id: 4,
       img: '/JobOpening/JobOpening-img04.jpg',
-      alt: '求人画像',
+      alt: '',
       title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
       salary: '月給 148,000円～',
       adress: '三重県伊勢市',
@@ -86,6 +86,13 @@ export const JobOpening = () => {
                   className={styles['jobopening-img']}
                 />
               </div>
+              <img
+                src={jobOpnening.img}
+                alt={jobOpnening.alt}
+                width='1000'
+                height='685'
+                className={styles['jobopening-img']}
+              />
               <h3 className={styles['jobopening-heading']}>
                 {jobOpnening.title}
               </h3>
@@ -113,9 +120,9 @@ export const JobOpening = () => {
             className={styles['custom-next-svg']}
           />
         </button>
-        <button className={styles['detail-button']}>
+        <a href='/' className={styles['detail-button']}>
           新着求人一覧をもっと見る
-        </button>
+        </a>
       </div>
     </div>
   )
