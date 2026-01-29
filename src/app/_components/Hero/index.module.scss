@@ -1,0 +1,40 @@
+@use '@/styles' as *;
+
+.hero-img {
+  position: relative;
+  margin-bottom: sp-vw(25);
+}
+
+.hero-logo {
+  position: absolute;
+  top: sp-vw(130);
+  left: sp-vw(200);
+  width: sp-vw(150);
+}
+
+.hero-title {
+  position: absolute;
+  top: sp-vw(215);
+  left: sp-vw(120);
+  width: sp-vw(272);
+}
+
+.job-info {
+  position: absolute;
+  top: sp-vw(250);
+  left: sp-vw(180);
+  width: sp-vw(170);
+  padding: sp-vw(5);
+  font-size: sp-vw(8);
+  font-weight: 400;
+  color: #{$color-green};
+  text-align: center;
+  background-color: #{$color-white};
+  border: 1px solid #{$color-green};
+  border-radius: 5px;
+}
+
+.job-count {
+  font-size: sp-vw(16);
+  font-weight: 700;
+}
