@@ -4,11 +4,11 @@ export const Hero = () => {
   return (
     <div className={styles['hero-content']}>
       <picture>
-        <source srcSet='/Hero/hero-sp.png' media='(max-width: 575px)' />
+        <source srcSet='/Hero/hero-sp.png' media='(max-width: 768px)' />
         <img
           src='/Hero/hero-pc.png'
-          width='3200'
-          height='1000'
+          width='1600'
+          height='500'
           alt=''
           className={styles['hero-img']}
         />
@@ -16,15 +16,15 @@ export const Hero = () => {
       <img
         src='/Hero/hero-logo.png'
         alt='no.1'
-        width='340'
-        height='140'
+        width='316'
+        height='162'
         className={styles['hero-logo']}
       />
       <img
         src='/Hero/hero-title.png'
         alt='医療事務求人を探すならギズジョブ'
-        width='800'
-        height='65'
+        width='556'
+        height='54'
         className={styles['hero-title']}
       />
       <div className={styles['job-info']}>
