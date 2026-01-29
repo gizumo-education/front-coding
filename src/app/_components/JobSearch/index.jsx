@@ -37,7 +37,7 @@ export const JobSearch = () => {
       <p className={styles['search-detail']}>
         働きたい職種・地域・希望給与を入れて検索！
       </p>
-      <form>
+      <form className={styles['search-form']}>
         <div className={styles['search-options']}>
           <div className={styles['select-wrapper']}>
             <select className={styles['option']} aria-label='職種'>

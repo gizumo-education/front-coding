@@ -53,7 +53,7 @@ export const JobOpening = () => {
         <button className={`custom-prev ${styles['custom-prev']}`}>
           <img
             src='/icon/path.svg'
-            alt='next'
+            alt='前'
             width='10'
             height='10'
             className={styles['custom-prev-svg']}
@@ -65,7 +65,8 @@ export const JobOpening = () => {
             nextEl: '.custom-next',
             prevEl: '.custom-prev',
           }}
-          spaceBetween={30}
+          spaceBetween={20}
+          watchOverflow={false}
           slidesPerView={1}
           loop={true}
           breakpoints={{
@@ -76,13 +77,15 @@ export const JobOpening = () => {
         >
           {jobOpnenings.map((jobOpnening) => (
             <SwiperSlide key={jobOpnening.id}>
-              <img
-                src={jobOpnening.img}
-                alt={jobOpnening.alt}
-                width='740'
-                height='416'
-                className={styles['jobopening-img']}
-              />
+              <div className={styles['jobopening-img-wrap']}>
+                <img
+                  src={jobOpnening.img}
+                  alt={jobOpnening.alt}
+                  width='740'
+                  height='416'
+                  className={styles['jobopening-img']}
+                />
+              </div>
               <h3 className={styles['jobopening-heading']}>
                 {jobOpnening.title}
               </h3>
@@ -104,7 +107,7 @@ export const JobOpening = () => {
         <button className={`custom-next ${styles['custom-next']}`}>
           <img
             src='/icon/path.svg'
-            alt='next'
+            alt='次'
             width='10'
             height='10'
             className={styles['custom-next-svg']}

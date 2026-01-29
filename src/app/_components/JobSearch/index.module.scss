@@ -7,17 +7,41 @@
   text-align: center;
   background-color: #{$color-light-skyblue};
   border-radius: sp-vw(5);
+
+  @include media-pc {
+    width: pc-vw(1180);
+    padding: pc-vw(40);
+    border-radius: pc-vw(5);
+  }
 }
 
 .search-title {
   margin-bottom: sp-vw(16);
   font-size: sp-vw(22);
   font-weight: 700;
+
+  @include media-pc {
+    margin-bottom: pc-vw(20);
+    font-size: pc-vw(25);
+  }
 }
 
 .search-detail {
   margin-bottom: sp-vw(13);
   font-size: sp-vw(14);
+
+  @include media-pc {
+    margin-bottom: pc-vw(26);
+    font-size: pc-vw(20);
+  }
+}
+
+.search-form {
+  @include media-pc {
+    display: flex;
+    gap: pc-vw(16);
+    align-items: center;
+  }
 }
 
 .search-options {
@@ -25,10 +49,24 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: sp-vw(15);
+
+  @include media-pc {
+    display: flex;
+    gap: pc-vw(16);
+    justify-content: space-between;
+    width: auto;
+    margin-bottom: 0;
+  }
 }
 
 .select-wrapper {
   position: relative;
+
+  @include media-pc {
+    flex: 1;
+    width: pc-vw(200);
+    min-width: 0;
+  }
 }
 
 .select-wrapper::after {
@@ -43,10 +81,21 @@
   border-right: sp-vw(7) solid transparent;
   border-left: sp-vw(7) solid transparent;
   transform: translateY(-50%);
+
+  @include media-pc {
+    right: pc-vw(10);
+    border-top: pc-vw(10) solid #{$color-pink};
+    border-right: pc-vw(10) solid transparent;
+    border-left: pc-vw(10) solid transparent;
+  }
 }
 
 .option {
   width: sp-vw(100);
+
+  @include media-pc {
+    width: pc-vw(200);
+  }
 }
 
 .option,
@@ -57,6 +106,13 @@
   background-color: #{$color-white};
   border: 1px solid #{$color-pink};
   border-radius: sp-vw(5);
+
+  @include media-pc {
+    width: 100%;
+    padding: pc-vw(15) pc-vw(17);
+    font-size: pc-vw(18);
+    border-radius: pc-vw(10);
+  }
 }
 
 .search-input {
@@ -64,12 +120,24 @@
   width: 100%;
   margin-bottom: sp-vw(20);
   color: #{$color-gray};
+
+  @include media-pc {
+    flex: 1;
+    width: pc-vw(300);
+    padding: pc-vw(11);
+    margin-bottom: 0;
+  }
 }
 
 .search-icon {
   width: sp-vw(17);
   margin-right: sp-vw(14);
   fill: #{$color-white};
+
+  @include media-pc {
+    width: pc-vw(30);
+    margin-right: pc-vw(0);
+  }
 }
 
 .search-button {
@@ -83,4 +151,11 @@
   text-align: left;
   background-color: #{$color-pink};
   border-radius: sp-vw(40);
+
+  @include media-pc {
+    width: pc-vw(140);
+    padding: pc-vw(14);
+    margin: 0;
+    font-size: pc-vw(18);
+  }
 }

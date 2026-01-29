@@ -3,6 +3,11 @@
 .hero-img {
   position: relative;
   margin-bottom: sp-vw(25);
+
+  @include media-pc {
+    height: pc-vw(500);
+    object-fit: cover;
+  }
 }
 
 .hero-logo {
@@ -10,6 +15,12 @@
   top: sp-vw(130);
   left: sp-vw(200);
   width: sp-vw(150);
+
+  @include media-pc {
+    top: pc-vw(156);
+    left: pc-vw(830);
+    width: pc-vw(341);
+  }
 }
 
 .hero-title {
@@ -17,6 +28,12 @@
   top: sp-vw(215);
   left: sp-vw(120);
   width: sp-vw(272);
+
+  @include media-pc {
+    top: pc-vw(365);
+    left: pc-vw(607);
+    width: pc-vw(800);
+  }
 }
 
 .job-info {
@@ -32,9 +49,20 @@
   background-color: #{$color-white};
   border: 1px solid #{$color-green};
   border-radius: 5px;
+
+  @include media-pc {
+    top: pc-vw(484);
+    left: pc-vw(809);
+    width: pc-vw(391);
+    font-size: pc-vw(20);
+  }
 }
 
 .job-count {
   font-size: sp-vw(16);
   font-weight: 700;
+
+  @include media-pc {
+    font-size: pc-vw(40);
+  }
 }
