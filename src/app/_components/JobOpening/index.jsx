@@ -65,7 +65,7 @@ export const JobOpening = () => {
             nextEl: '.custom-next',
             prevEl: '.custom-prev',
           }}
-          spaceBetween={20}
+          spaceBetween={0}
           watchOverflow={false}
           slidesPerView={1}
           loop={true}
@@ -76,7 +76,10 @@ export const JobOpening = () => {
           }}
         >
           {jobOpnenings.map((jobOpnening) => (
-            <SwiperSlide key={jobOpnening.id}>
+            <SwiperSlide
+              key={jobOpnening.id}
+              className={styles['jobopening-wrap']}
+            >
               <div className={styles['jobopening-img-wrap']}>
                 <img
                   src={jobOpnening.img}
