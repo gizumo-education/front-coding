@@ -45,9 +45,18 @@ export const JobOpening = () => {
       adress: '三重県伊勢市',
       station: '伊勢市駅 徒歩15分',
     },
+    {
+      id: 5,
+      img: '/JobOpening/JobOpening-img02.jpg',
+      alt: '',
+      title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+      salary: '月給 148,000円～',
+      adress: '三重県伊勢市',
+      station: '伊勢市駅 徒歩15分',
+    },
   ]
   return (
-    <div className={styles['jobopening-container']} id='job-opening'>
+    <div className={styles['jobopening-container']}>
       <h2 className={styles['jobopening-title']}>新着求人</h2>
       <div className={styles['jobopening-content']}>
         <button className={`custom-prev ${styles['custom-prev']}`}>
