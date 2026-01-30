@@ -77,15 +77,13 @@ export const JobOpening = () => {
         >
           {jobOpnenings.map((jobOpnening) => (
             <SwiperSlide key={jobOpnening.id}>
-              <div className={styles['jobopening-img-wrap']}>
-                <img
-                  src={jobOpnening.img}
-                  alt={jobOpnening.alt}
-                  width='740'
-                  height='416'
-                  className={styles['jobopening-img']}
-                />
-              </div>
+              <img
+                src={jobOpnening.img}
+                alt={jobOpnening.alt}
+                width='740'
+                height='416'
+                className={styles['jobopening-img']}
+              />
               <h3 className={styles['jobopening-heading']}>
                 {jobOpnening.title}
               </h3>
