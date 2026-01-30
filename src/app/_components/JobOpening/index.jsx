@@ -47,7 +47,7 @@ export const JobOpening = () => {
     },
   ]
   return (
-    <div className={styles['jobopening-container']}>
+    <div className={styles['jobopening-container']} id='job-opening'>
       <h2 className={styles['jobopening-title']}>新着求人</h2>
       <div className={styles['jobopening-content']}>
         <button className={`custom-prev ${styles['custom-prev']}`}>
