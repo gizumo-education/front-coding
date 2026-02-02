@@ -78,6 +78,7 @@ export const JobOpening = () => {
           watchOverflow={false}
           slidesPerView={1}
           loop={true}
+          speed={1500}
           breakpoints={{
             768: {
               slidesPerView: 4,
