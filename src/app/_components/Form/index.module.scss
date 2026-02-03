@@ -76,13 +76,13 @@
 .job-search-select-arrow {
   position: absolute;
   top: 50%;
-  right: sp-vw(10);
+  right: sp-vw(6);
   width: 0;
   height: 0;
 
-  border-top: sp-vw(5) solid #{$color-pink-flame};
-  border-right: sp-vw(5) solid transparent;
-  border-left: sp-vw(5) solid transparent;
+  border-top: sp-vw(7) solid #{$color-pink-flame};
+  border-right: sp-vw(7) solid transparent;
+  border-left: sp-vw(7) solid transparent;
   transform: translateY(-50%);
 }
 
