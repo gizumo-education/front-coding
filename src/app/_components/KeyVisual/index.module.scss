@@ -30,7 +30,7 @@
   left: sp-vw(200);
   width: sp-vw(20);
   height: sp-vw(62);
-  filter: drop-shadow(0 4px 2px $color-black-shadow);
+  filter: drop-shadow(0 sp-vw(4) sp-vw(2) $color-black-shadow);
 }
 
 .leaf-l {
@@ -39,7 +39,7 @@
   left: sp-vw(330);
   width: sp-vw(20);
   height: sp-vw(62);
-  filter: drop-shadow(0 4px 2px $color-black-shadow);
+  filter: drop-shadow(0 sp-vw(4) sp-vw(2) $color-black-shadow);
 }
 
 .no1 {
@@ -50,7 +50,7 @@
   font-size: sp-vw(48);
   font-weight: 700;
   color: #{$color-white};
-  filter: drop-shadow(0 4px 2px $color-black-shadow);
+  filter: drop-shadow(0 sp-vw(4) sp-vw(2) $color-black-shadow);
 }
 
 .no1-image {
@@ -70,7 +70,7 @@
   font-weight: 700;
   line-height: 1;
   color: #{$color-white};
-  filter: drop-shadow(0 4px 2px $color-black-shadow);
+  filter: drop-shadow(0 sp-vw(4) sp-vw(2) $color-black-shadow);
 }
 
 .message-image {
@@ -88,7 +88,7 @@
   font-size: sp-vw(3);
   font-weight: 400;
   color: #{$color-white};
-  filter: drop-shadow(0 4px 2px $color-black-shadow);
+  filter: drop-shadow(0 sp-vw(4) sp-vw(2) $color-black-shadow);
 }
 
 .count {
@@ -105,8 +105,8 @@
   padding-left: sp-vw(23);
   margin: 0;
   background-color: #{$color-white};
-  border: 1px solid #{$color-light-blue};
-  border-radius: 6px;
+  border: sp-vw(1) solid #{$color-light-blue};
+  border-radius: sp-vw(6);
 }
 
 .count-label {
