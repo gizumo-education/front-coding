@@ -1,7 +1,8 @@
 import { Header } from '@/components/layout'
 import { Keyvisual } from './_components/Keyvisual'
-// import { JobSearch } from './_components/Jobsearch'
-// import { NewJobs } from './_components/NewJobs'
+import { Form } from './_components/Form'
+import { Recruitment } from './_components/Recruitment'
+import { SubMessage } from './_components/SubMessage'
 
 const Top = () => {
   return (
@@ -9,8 +10,9 @@ const Top = () => {
       <Header />
       <main>
         <Keyvisual />
-        {/* <JobSearch /> */}
-        {/* <NewJobs /> */}
+        <Form />
+        <Recruitment />
+        <SubMessage />
       </main>
     </>
   )

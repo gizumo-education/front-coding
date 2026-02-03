@@ -6,7 +6,6 @@
   max-width: sp-vw(400);
   height: sp-vw(270);
   margin: 0 auto;
-  overflow: hidden;
   background-color: #{$color-white};
 }
 
@@ -68,14 +67,12 @@
 
   padding-left: sp-vw(23);
   margin: 0;
-  white-space: nowrap;
   background-color: #{$color-white};
   border: 1px solid #{$color-light-blue};
   border-radius: 6px;
 }
 
 .count-label {
-  font-family: 'Noto Sans JP', sans-serif;
   font-size: sp-vw(8);
   font-weight: 400;
   line-height: 1;
@@ -84,7 +81,6 @@
 
 .count-value {
   margin-left: sp-vw(4);
-  font-family: 'Noto Sans JP', sans-serif;
   font-size: sp-vw(16);
   font-weight: 700;
   line-height: 1;
@@ -93,7 +89,6 @@
 
 .count-unit {
   margin-left: sp-vw(2);
-  font-family: 'Noto Sans JP', sans-serif;
   font-size: sp-vw(8);
   font-weight: 400;
   line-height: 1;

@@ -1,0 +1,140 @@
+@use '@/styles' as *;
+
+.recruitment {
+  width: 100%;
+  height: sp-vw(600);
+  padding: sp-vw(30) 0 sp-vw(35);
+  background-color: #{$color-light-blue-rec};
+}
+
+.recruitment-inner {
+  width: sp-vw(370);
+  margin: 0 auto;
+}
+
+.recruitment-title {
+  margin: 0;
+  font-size: sp-vw(24);
+  font-weight: 700;
+  color: #{$color-black};
+  text-align: center;
+}
+
+.card {
+  margin-top: sp-vw(35);
+}
+
+.card-photo-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: sp-vw(10);
+}
+
+.card-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  width: sp-vw(42);
+  height: sp-vw(42);
+
+  background-color: #{$color-white-07};
+  border-radius: 50%;
+}
+
+.arrow::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: sp-vw(18);
+  font-weight: 700;
+  line-height: 1;
+  color: #{$color-black};
+  content: '';
+  transform: translate(-50%, -50%);
+}
+
+.arrow-left {
+  left: sp-vw(0);
+  margin-top: sp-vw(55);
+  font-weight: 100;
+}
+
+.arrow-left::before {
+  content: '<';
+}
+
+.arrow-right {
+  right: sp-vw(0);
+  margin-top: sp-vw(55);
+}
+
+.arrow-right::before {
+  content: '>';
+}
+
+.card-title {
+  margin: sp-vw(12) 0 0;
+  font-size: sp-vw(16);
+  font-weight: 700;
+  line-height: sp-vw(21);
+  color: #{$color-black};
+}
+
+.table {
+  margin: sp-vw(13) 0 0;
+}
+
+.row {
+  display: flex;
+  column-gap: sp-vw(21);
+  align-items: center;
+  margin-top: sp-vw(5);
+}
+
+.row:first-child {
+  margin-top: 0;
+}
+
+.term {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(60);
+  height: sp-vw(21);
+  font-size: sp-vw(14);
+  font-weight: 400;
+  color: #{$color-black};
+  background-color: #{$color-light-pink};
+}
+
+.desc {
+  margin: 0;
+  font-size: sp-vw(14);
+  font-weight: 400;
+  line-height: sp-vw(20);
+  color: #{$color-black};
+}
+
+.more-button {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(370);
+  height: sp-vw(60);
+  margin: sp-vw(43) auto 0;
+
+  font-size: sp-vw(18);
+  font-weight: 700;
+  line-height: sp-vw(22);
+  color: #{$color-white};
+
+  background-color: #{$color-pink};
+  border-radius: sp-vw(30);
+}
