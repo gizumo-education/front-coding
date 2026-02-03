@@ -1,5 +1,5 @@
 import { Header } from '@/components/layout'
-import { Keyvisual } from './_components/Keyvisual'
+import { Keyvisual } from './_components/KeyVisual/'
 import { Form } from './_components/Form'
 import { Recruitment } from './_components/Recruitment'
 import { SubMessage } from './_components/SubMessage'
