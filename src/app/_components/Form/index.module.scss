@@ -17,7 +17,7 @@
 }
 
 .job-search-title {
-  margin: 0;
+  margin: sp-vw(1);
   font-size: sp-vw(22);
   font-weight: 700;
   line-height: sp-vw(22);
@@ -88,7 +88,7 @@
 
 .job-search-input-wrap {
   width: 100%;
-  padding-top: sp-vw(5);
+  padding-top: sp-vw(3);
 }
 
 .job-search-input {
@@ -97,7 +97,7 @@
   align-items: center;
   width: 100%;
   height: sp-vw(30);
-  padding: 0 sp-vw(12);
+  padding: 0 sp-vw(6);
   margin: 0;
 
   font-size: sp-vw(14);
@@ -114,13 +114,13 @@
 
 .job-search-button {
   display: flex;
-  column-gap: sp-vw(10);
+  column-gap: sp-vw(13);
   align-items: center;
   justify-content: center;
 
   width: sp-vw(160);
   height: sp-vw(40);
-  margin: sp-vw(2) auto 0;
+  margin: sp-vw(6) auto 0;
 
   font-size: sp-vw(18);
   font-weight: 700;

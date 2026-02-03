@@ -4,36 +4,34 @@ export const Keyvisual = () => {
   return (
     <section className={styles.keyvisual}>
       <div className={styles.photo}>
-        <picture>
-          <img
-            src='/img/keyvisualphoto.png'
-            alt=''
-            width='400'
-            height='270'
-            className={styles['photo-image']}
-          />
-        </picture>
-      </div>
-
-      <div className={styles.no1}>
         <img
-          src='/img/keyvisualNo1.png'
+          src='/img/keyvisualphoto.png'
           alt=''
-          width='150'
-          height='73'
-          className={styles['no1-image']}
+          width='400'
+          height='270'
+          className={styles['photo-image']}
         />
-      </div>
-
-      <h1 className={styles['main-message']}>
         <img
-          src='/img/mainmessage.png'
-          alt='医療事務求人を探すならギズジョブ'
-          width='272'
-          height='22'
-          className={styles['message-image']}
+          src='/img/Leaf-L.png'
+          alt=''
+          width='20'
+          height='62'
+          className={styles['leaf-r']}
         />
-      </h1>
+        <p className={styles['no1']}>no.1</p>
+        <img
+          src='/img/Leaf-R.png'
+          alt=''
+          className={styles['leaf-l']}
+          width='20'
+          height='62'
+        />
+
+        <h1 className={styles['main-message']}>
+          医療事務求人を探すならギズジョブ
+        </h1>
+        <p className={styles['survey']}>※株式会社●●社実績調査</p>
+      </div>
 
       <p className={styles.count}>
         <span className={styles['count-label']}>現在の求人掲載数：</span>
