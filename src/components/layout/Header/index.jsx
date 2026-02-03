@@ -1,3 +1,5 @@
+'use client'
+
 import clsx from 'clsx'
 import styles from './index.module.scss'
 
@@ -39,11 +41,13 @@ export const Header = () => {
             </a>
           </li>
         </ul>
-        <button className={styles.button}>
-          <span className={styles.line} />
-          <span className={styles.line} />
-          <span className={styles.line} />
-        </button>
+        <div className='menu'>
+          <button className={styles.button}>
+            <span className={styles.line} />
+            <span className={styles.line} />
+            <span className={styles.line} />
+          </button>
+        </div>
       </nav>
     </header>
   )

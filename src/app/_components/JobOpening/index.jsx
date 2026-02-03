@@ -45,6 +45,15 @@ export const JobOpening = () => {
       adress: '三重県伊勢市',
       station: '伊勢市駅 徒歩15分',
     },
+    {
+      id: 5,
+      img: '/JobOpening/JobOpening-img02.jpg',
+      alt: '',
+      title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+      salary: '月給 148,000円～',
+      adress: '三重県伊勢市',
+      station: '伊勢市駅 徒歩15分',
+    },
   ]
   return (
     <div className={styles['jobopening-container']}>
@@ -65,9 +74,11 @@ export const JobOpening = () => {
             nextEl: '.custom-next',
             prevEl: '.custom-prev',
           }}
-          spaceBetween={30}
+          spaceBetween={20}
+          watchOverflow={false}
           slidesPerView={1}
           loop={true}
+          speed={1500}
           breakpoints={{
             768: {
               slidesPerView: 4,
@@ -79,8 +90,8 @@ export const JobOpening = () => {
               <img
                 src={jobOpnening.img}
                 alt={jobOpnening.alt}
-                width='1000'
-                height='685'
+                width='740'
+                height='416'
                 className={styles['jobopening-img']}
               />
               <h3 className={styles['jobopening-heading']}>

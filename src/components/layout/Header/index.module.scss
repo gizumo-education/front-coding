@@ -163,3 +163,34 @@
     background-image: url('/icon/history.svg');
   }
 }
+
+.menu {
+  position: relative;
+}
+
+.menu-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: sp-vw(57) sp-vw(60);
+  background-color: rgba($color-black, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.7s ease;
+}
+
+.menu-open {
+  transform: translateX(0);
+}
+
+.list-item {
+  margin-bottom: sp-vw(28);
+  font-size: sp-vw(22);
+  font-weight: 700;
+  color: #{$color-white};
+}
+
+.list-item:last-child {
+  margin-bottom: 0;
+}

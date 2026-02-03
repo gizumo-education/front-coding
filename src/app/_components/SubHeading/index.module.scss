@@ -21,4 +21,9 @@
   line-height: 1.5;
   color: #{$color-white};
   text-align: center;
+
+  @include media-pc {
+    font-size: pc-vw(25);
+    line-height: 2;
+  }
 }
