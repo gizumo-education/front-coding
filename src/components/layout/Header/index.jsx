@@ -17,7 +17,9 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }) => {
   const closeMenu = () => {
     menuRef.current.classList.remove(styles['menu-open'])
     buttonRef.current.classList.remove(styles['button-isopen'])
+    setIsMenuOpen(false)
   }
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>

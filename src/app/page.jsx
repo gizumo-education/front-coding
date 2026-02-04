@@ -8,28 +8,26 @@ import { SubHeading } from './_components/SubHeading'
 import { useRef, useState, useEffect } from 'react'
 
 const Top = () => {
-  const appRootRef = useRef(null)
   const scrollYRef = useRef(0)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
-    const root = appRootRef.current
-
-    if (!root) return
-
     if (isMenuOpen) {
       scrollYRef.current = window.scrollY
-      root.style.top = `-${scrollYRef.current}px`
-      root.classList.add('scroll-lock')
+      document.body.style.position = 'fixed'
+      document.body.style.top = `-${scrollYRef.current}px`
+      document.body.style.width = '100%'
     } else {
-      root.classList.remove('scroll-lock')
-      root.style.top = ''
+      document.body.style.position = ''
+      document.body.style.top = ''
+      document.body.style.width = ''
+
       window.scrollTo(0, scrollYRef.current)
     }
   }, [isMenuOpen])
 
   return (
-    <div ref={appRootRef}>
+    <div>
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <main>
         <Hero />

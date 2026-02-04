@@ -76,7 +76,3 @@ button:focus-visible {
     max-width: math.div(100vw, $design-pc-width) * $inner-pc-max-width;
   }
 }
-
-.scroll-lock {
-  overflow: hidden;
-}
