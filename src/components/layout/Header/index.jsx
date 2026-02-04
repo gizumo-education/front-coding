@@ -2,21 +2,31 @@
 
 import clsx from 'clsx'
 import styles from './index.module.scss'
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 
-export const Header = ({ isMenuOpen, setIsMenuOpen }) => {
-  const menuRef = useRef(null)
-  const buttonRef = useRef(null)
+export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const scrollYRef = useRef(0)
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      scrollYRef.current = window.scrollY
+      document.body.style.position = 'fixed'
+      document.body.style.top = `-${scrollYRef.current}px`
+      document.body.style.width = '100%'
+    } else {
+      document.body.style.position = ''
+      document.body.style.top = ''
+      document.body.style.width = ''
+      window.scrollTo(0, scrollYRef.current)
+    }
+  }, [isMenuOpen])
 
   const toggleMenu = () => {
-    menuRef.current.classList.toggle(styles['menu-open'])
-    buttonRef.current.classList.toggle(styles['button-isopen'])
     setIsMenuOpen((prev) => !prev)
   }
 
   const closeMenu = () => {
-    menuRef.current.classList.remove(styles['menu-open'])
-    buttonRef.current.classList.remove(styles['button-isopen'])
     setIsMenuOpen(false)
   }
 
@@ -57,10 +67,9 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }) => {
             </a>
           </li>
         </ul>
-        <div className='menu'>
+        <div>
           <button
             type='button'
-            ref={buttonRef}
             className={clsx(styles.button, isMenuOpen && styles.open)}
             onClick={toggleMenu}
           >
@@ -69,7 +78,12 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }) => {
             <span className={clsx(styles['button-line-bottom'], styles.line)} />
           </button>
         </div>
-        <div ref={menuRef} className={styles['menu-list']}>
+        <div
+          className={clsx(
+            styles['menu-list'],
+            isMenuOpen && styles['menu-open']
+          )}
+        >
           <ul>
             <li className={styles['list-item']}>
               <a href='#top' onClick={closeMenu}>
