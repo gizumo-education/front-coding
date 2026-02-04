@@ -1,11 +1,13 @@
+/* stylelint-disable rule-empty-line-before */
 @use '@/styles' as *;
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
   display: flex;
   justify-content: flex-end;
+  width: 100vw;
   padding: sp-vw(16) sp-vw(15);
   background-color: #{$color-white};
   @include media-pc {
@@ -181,6 +183,7 @@
 }
 
 .menu-open {
+  overflow: hidden;
   transform: translateX(0);
 }
 
@@ -193,4 +196,28 @@
 
 .list-item:last-child {
   margin-bottom: 0;
+}
+
+.button-line-top {
+  transition: all 0.3s;
+}
+
+.button-isopen .button-line-top {
+  transform: translateY(sp-vw(19)) rotate(45deg);
+}
+
+.button-line-medium {
+  transition: all 0.3s;
+}
+
+.button-isopen .button-line-medium {
+  opacity: 0;
+}
+
+.button-line-bottom {
+  transition: all 0.3s;
+}
+
+.button-isopen .button-line-bottom {
+  transform: translateY(sp-vw(-19)) rotate(-45deg);
 }
