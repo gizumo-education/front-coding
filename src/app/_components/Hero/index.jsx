@@ -2,7 +2,7 @@ import styles from './index.module.scss'
 
 export const Hero = () => {
   return (
-    <div className={styles['hero-content']}>
+    <div className={styles['hero-content']} id='top'>
       <picture>
         <source srcSet='/Hero/hero-sp.png' media='(max-width: 767px)' />
         <img

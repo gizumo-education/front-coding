@@ -1,5 +1,13 @@
 @use '@/styles' as *;
 
+.hero-content {
+  margin-top: sp-vw(70);
+  scroll-margin-top: sp-vw(70);
+  @include media-pc {
+    margin-top: pc-vw(95);
+  }
+}
+
 .hero-img {
   position: relative;
   margin-bottom: sp-vw(25);

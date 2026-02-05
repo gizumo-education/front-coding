@@ -5,6 +5,7 @@
   padding-top: sp-vw(30);
   padding-bottom: sp-vw(60);
   text-align: center;
+  scroll-margin-top: sp-vw(70);
   background-color: #{$color-soft-skyblue};
 
   @include media-pc {

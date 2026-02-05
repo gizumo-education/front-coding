@@ -2,8 +2,34 @@
 
 import clsx from 'clsx'
 import styles from './index.module.scss'
+import { useRef, useState, useEffect } from 'react'
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const scrollYRef = useRef(0)
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      scrollYRef.current = window.scrollY
+      document.body.style.position = 'fixed'
+      document.body.style.top = `-${scrollYRef.current}px`
+      document.body.style.width = '100%'
+    } else {
+      document.body.style.position = ''
+      document.body.style.top = ''
+      document.body.style.width = ''
+      window.scrollTo(0, scrollYRef.current)
+    }
+  }, [isMenuOpen])
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev)
+  }
+
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -41,12 +67,50 @@ export const Header = () => {
             </a>
           </li>
         </ul>
-        <div className='menu'>
-          <button className={styles.button}>
-            <span className={styles.line} />
-            <span className={styles.line} />
-            <span className={styles.line} />
+        <div>
+          <button
+            type='button'
+            className={clsx(styles.button, isMenuOpen && styles.open)}
+            onClick={toggleMenu}
+          >
+            <span className={clsx(styles['button-line-top'], styles.line)} />
+            <span className={clsx(styles['button-line-medium'], styles.line)} />
+            <span className={clsx(styles['button-line-bottom'], styles.line)} />
           </button>
+        </div>
+        <div
+          className={clsx(
+            styles['menu-list'],
+            isMenuOpen && styles['menu-open']
+          )}
+        >
+          <ul>
+            <li className={styles['list-item']}>
+              <a href='#top' onClick={closeMenu}>
+                トップ
+              </a>
+            </li>
+            <li className={styles['list-item']}>
+              <a href='/#job-opening' onClick={closeMenu}>
+                新着求人
+              </a>
+            </li>
+            <li className={styles['list-item']}>
+              <a href='/' onClick={closeMenu}>
+                ４つの特徴
+              </a>
+            </li>
+            <li className={styles['list-item']}>
+              <a href='/' onClick={closeMenu}>
+                転職までの流れ
+              </a>
+            </li>
+            <li className={styles['list-item']}>
+              <a href='/' onClick={closeMenu}>
+                転職お役立ちコンテンツ
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
