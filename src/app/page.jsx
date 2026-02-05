@@ -1,5 +1,3 @@
-'use client'
-
 import { Header } from '@/components/layout'
 import { Hero } from './_components/Hero'
 import { JobSearch } from './_components/JobSearch'
