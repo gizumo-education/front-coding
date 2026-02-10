@@ -34,8 +34,9 @@
   <main class="l-main">
     <div class="l-main__key-visual">
       <picture class="c-main__key-visual-picture">
-        <source srcset="/img/picture/keyvisual_sp.png 1x" media="(max-width: 767px)" width="400" height="270">
-        <img src="/img/picture/keyvisual.png" alt="医療事務求人を探すならギズジョブ" width="1600" height="500" class="c-main__key-visual">
+        <source srcset="./img/picture/keyvisual_sp.png" media="(max-width: 767px)" width="400" height="270">
+        <!-- <source srcset="./img/picture/column_1.jpg" media="(max-width: 767px)" width="400" height="270"> -->
+        <img src="./img/picture/keyvisual.png" alt="医療事務求人を探すならギズジョブ" width="1600" height="500" class="c-main__key-visual">
       </picture>
       <img src="./img/picture/keyvisual-logo.png" alt="2021年使ってよかった転職サイト" width="342" height="168" class="c-main__key-visual-logo">
       <img src="./img/picture/keyvisual-title.png" alt="医療事務求人を探すならギズジョブ" width="800" height="65" class="c-main__key-visual-title">
@@ -96,7 +97,7 @@
           <div class="c-select__button is-left"><a href="" class="c-select__button__arrow_left"></a></div>
           <div class="l-main__new-recruit-item">
             <picture class="recruit-picture">
-              <source srcset="/img/picture/recruit_sp_1.png" media="(max-width: 767px)" width="370" height="208">
+              <source srcset="/img/picture/recruit_1_sp.png" media="(max-width: 767px)" width="370" height="208">
               <img src="./img/picture/recruit_1.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200">
             </picture>
             <div class="recruit-info">
@@ -298,6 +299,52 @@
         <a href="" class="l-main__column-button">医療事務コラムをもっと見る</a>
 
     </section>
+
+    <div class="l-main__select-footer">
+      <form class="l-main__select-area">
+        <div class="l-main__select-area-text-footer">
+          <h2>お仕事検索</h2>
+          <h3>働きたい職種・地域・希望給与を入れて検索！</h3>
+        </div>
+        <div class="l-main__select-area-form">
+          <div class="select-box">
+            <select name="genre" id="genre-select-footer">
+              <option value="medical-work" selected>医療事務</option>
+              <option value="medicine">調剤事務</option>
+              <option value="medical-adm">診療情報管理士</option>
+              <option value="dental-assistant">歯科助手</option>
+              <option value="dental-work">歯科事務</option>
+              <option value="nurse-assistant">看護補助・看護助手</option>
+              <option value="hospital-se">病院内SE</option>
+            </select>
+          </div>
+          <div class="select-box">
+            <select name="region" id="region-select-footer">
+              <option value="ibaragi">茨城県</option>
+              <option value="kanagawa">神奈川県</option>
+              <option value="gunma">群馬県</option>
+              <option value="saistama">埼玉県</option>
+              <option value="chiba">千葉県</option>
+              <option value="tokyo" selected>東京都</option>
+              <option value="tochigi">栃木県</option>
+            </select>
+          </div>
+          <div class="select-box">
+            <select name="salary" id="salary-select-footer">
+              <option value="17up">月給17万～</option>
+              <option value="18up">月給18万～</option>
+              <option value="19up">月給19万～</option>
+              <option value="20up" selected>月給20万～</option>
+              <option value="21up">月給21万～</option>
+              <option value="22up">月給22万～</option>
+              <option value="23up">月給23万～</option>
+            </select>
+          </div>
+          <input type="text" class="select-form" placeholder="キーワード・企業名・スキルなど">
+          <button type="submit" name="submit" class="is-job-search">検索する</button>
+        </div>
+      </form>
+    </div>
 
   </main>
 
