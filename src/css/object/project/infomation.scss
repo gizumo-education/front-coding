@@ -1,5 +1,12 @@
 @use '../../object/utility/utility.scss';
 
+@include utility.sp {
+  .l_main__infomation {
+    width:400px;
+    margin: 0 auto;
+  }
+}
+
 .l_main__overview {
   height: 478px;
   width: 1180px;
@@ -12,6 +19,11 @@
     font-weight: bold;
   }
 
+  @include utility.sp {
+    height: 736px;
+    width: 370px;
+    margin: 55px auto;
+  }
 }
 
 .c_main__overview-parts {
@@ -20,6 +32,13 @@
   grid-template-rows: auto auto;
   gap: 40px;
   margin-top: 53px;
+
+  @include utility.sp {
+    grid-template-columns: 1fr;
+    gap: 21px;
+    margin-top: 38px;
+
+  }
 
   .c_main__overview-part {
     height: 180px;
@@ -43,14 +62,43 @@
       margin-top: 36px;
       line-height: 130%;
     }
+    
+    .u-pc-only {
+      display: inline;
+    }
+
+    .u-sp-only {
+      display: none;
+    }
+
+    @include utility.sp {
+      height: 100%;
+      width: 370px;
+      padding: 30px 0;
+
+      &-title {
+        font-size: 20px;
+      }
+      &-text {
+        font-size: 12px;
+        margin-top: 30px;
+        line-height: 17px;
+      }
+      .u-pc-only {
+        display: none;
+      }
+
+      .u-sp-only {
+        display: inline;
+      }
+    }
   }
 }
 
 .l_main__root {
   height: 478px;
   width: 1180px;
-  margin:0 auto;
-  margin-top: 105px;
+  margin: 105px auto 0;
   
   &-title {
     text-align: center;
@@ -58,6 +106,12 @@
     font-weight: bold;
   }
   
+  @include utility.sp {
+    height: 1350px;
+    width: 280px;
+    margin-top: 60px;
+  }
+
 }
 
 .c_main__root-parts {
@@ -66,6 +120,12 @@
   gap: 20px;
   margin-top: 53px;
   counter-reset: step;
+
+  @include utility.sp {
+    grid-template-columns: 1fr;
+    gap: 39px;
+    margin-top: 34px;
+  }
 
   .c_main__root-part {
     display: flex;
@@ -84,6 +144,12 @@
     justify-items: center;
     padding: 0 20px 42px;
     counter-increment: step;
+
+    @include utility.sp {
+      height: 293px;
+      width: 280px;
+      padding: 0 0 22px;
+    }
 
     &::before {
       content: "STEP\A" counter(step);
@@ -107,6 +173,7 @@
 
     &::after {
       content: '';
+      display: block;
       position: absolute;
       background-position: center;
       top: 43%;
@@ -114,6 +181,12 @@
       border-style: solid;
       border-color: transparent transparent transparent #DE5579;
       border-width: 20px 0 20px 20px;
+
+      @include utility.sp {
+        top: 100%;
+        right: 46%;
+        transform: rotate(90deg);
+      }
     }
 
     &:last-child {
@@ -123,43 +196,95 @@
     }
 
   .c_main__root-icon {
-    height: 110.13px;
-    width: 110.13px;
     background-repeat: no-repeat;
     background-position: center;
   }
   .is-sheet {
+    height: 110.13px;
+    width: 110.13px;
     background-image: url("../img/icon/icon-sheet.png");
+
+    @include utility.sp {
+      background-size: contain;
+      height: 75px;
+      width: 76.72px;
+      margin-top: 55px;
+    }
   }
   .is-pickup {
-  background-image: url("../img/icon/icon-search-8080.png");
+    background-image: url("../img/icon/icon-search-8080.png");
+
+    @include utility.sp {
+      background-size: contain;
+      height: 74.95px;
+      width: 74.95px;
+      margin-top: 55px;
+    }
 }
   .is-sendmail {
     background-image: url("../img/icon/icon-sendmail.png");
+
+    @include utility.sp {
+      background-size: contain;
+      height: 75px;
+      width: 80.12px;
+      margin-top: 55px;
+    }
   }
   .is-pass {
     background-image: url("../img/icon/icon-flash.png");
+
+    @include utility.sp {
+      background-size: contain;
+      height: 75px;
+      width: 73.57px;
+      margin-top: 55px;
+    }
   }
 
-    &-title {
-      width: 216px;
-      font-size: 24px;
-      font-weight: bold;
-      text-align: center;
-      // line-height: 30px;
-      height: calc(30px*2);
-      margin-top: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  &-title {
+    width: 216px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    height: calc(30px*2);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
     &-text {
-      width: 237px;
-      font-size: 14px;
-      font-weight: 400;
-      margin-top: 18px;
-      line-height: 100%;
+    width: 237px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 18px;
+    line-height: 150%;
     }
+
+    @include utility.sp {
+      &-title {
+        width: 260px;
+        height: 29px;
+        font-size: 20px;
+        margin-top: 22px;
+      }
+
+      &-text {
+        width: 240px;
+        height: 80px;
+        font-size: 14px;
+
+
+      }
+      .u-pc-only {
+        display: none;
+      }
+
+      .u-sp-only {
+        display: inline;
+      }
+  }
+
   }
 }
