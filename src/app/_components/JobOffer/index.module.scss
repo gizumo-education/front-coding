@@ -43,6 +43,7 @@
 }
 
 .job-img {
+  border-radius: 5%;
   @include media-pc {
     width: 100%;
     max-width: pc-vw(280);
@@ -141,10 +142,20 @@
 .category {
   width: sp-vw(60);
   height: sp-vw(21);
+  line-height: sp-vw(21);
+  text-align: center;
   background-color: #{$color-job-pink};
   @include media-pc {
     width: pc-vw(60);
     height: pc-vw(21);
+    line-height: pc-vw(21);
+  }
+}
+
+.content {
+  line-height: sp-vw(20);
+  @include media-pc {
+    line-height: pc-vw(20);
   }
 }
 
