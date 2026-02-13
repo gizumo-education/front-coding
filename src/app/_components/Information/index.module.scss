@@ -1,0 +1,30 @@
+@use '@/styles' as *;
+
+.information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(2);
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(400);
+  height: sp-vw(75);
+  background-image: url('/img/information.jpg');
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+}
+
+.information::before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background: rgb(0 0 0 / 50%);
+}
+
+.info-text {
+  position: relative;
+  font-size: sp-vw(14);
+  color: #{$color-white};
+  text-align: center;
+}

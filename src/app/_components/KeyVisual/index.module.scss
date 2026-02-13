@@ -1,0 +1,51 @@
+@use '@/styles' as *;
+@import 'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap';
+
+.section {
+  position: relative;
+  width: 100%;
+  max-width: sp-vw(400);
+  height: sp-vw(270);
+  margin: 0 auto;
+}
+
+.no1 {
+  position: absolute;
+  top: sp-vw(61);
+  right: sp-vw(50);
+  display: inline-block;
+  width: sp-vw(150);
+  height: sp-vw(73);
+}
+
+.title {
+  position: absolute;
+  right: 0;
+  bottom: sp-vw(100);
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: sp-vw(17);
+  font-weight: 700;
+  color: #{$color-white};
+}
+
+.text-box {
+  position: absolute;
+  right: sp-vw(40);
+  bottom: sp-vw(52);
+  display: inline-block;
+  padding: sp-vw(4) sp-vw(23);
+  background-color: #{$color-white};
+  border: sp-vw(1) solid #{$color-light-green};
+  border-radius: sp-vw(5);
+}
+
+.text {
+  font-size: sp-vw(8);
+  color: #{$color-light-green};
+}
+
+.is-big {
+  font-size: sp-vw(16);
+  font-weight: 700;
+}

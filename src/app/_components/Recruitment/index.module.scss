@@ -1,0 +1,102 @@
+@use '@/styles' as *;
+
+.section {
+  width: sp-vw(370);
+  height: sp-vw(240);
+  padding: sp-vw(15) sp-vw(25) sp-vw(20);
+  margin: sp-vw(25) sp-vw(15);
+  background-color: #{$color-blue};
+  border-radius: sp-vw(10);
+}
+
+.text-area {
+  text-align: center;
+}
+
+.title {
+  font-size: sp-vw(22);
+  font-weight: 700;
+  color: #{$color-black};
+}
+
+.text {
+  margin-top: sp-vw(16);
+  font-size: sp-vw(14);
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: sp-vw(10);
+  width: 100%;
+  height: auto;
+  margin-top: sp-vw(13);
+}
+
+.select-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  max-width: sp-vw(100);
+  height: sp-vw(30);
+  padding: sp-vw(7);
+  font-size: sp-vw(12);
+  cursor: pointer;
+  background-color: #{$color-white};
+  border: 1px solid #{$color-pink};
+  border-radius: sp-vw(5);
+}
+
+.select-wrapper::after {
+  position: absolute;
+  top: sp-vw(11);
+  right: sp-vw(8);
+  width: sp-vw(13);
+  height: sp-vw(7);
+  font-size: sp-vw(12);
+  color: #{$color-pink};
+  pointer-events: none;
+  content: '▼';
+  transform: translateY(-50%);
+}
+
+.input {
+  position: relative;
+  width: sp-vw(320);
+  height: sp-vw(30);
+  margin-top: sp-vw(5);
+  background-color: #{$color-white};
+  border: 1px solid #{$color-pink};
+  border-radius: sp-vw(5);
+}
+
+.input::placeholder {
+  position: absolute;
+  top: sp-ve(5);
+  bottom: sp-vw(5);
+  left: sp-vw(7);
+  width: 100%;
+  font-size: sp-vw(12);
+  color: #{$color-gray};
+}
+
+.button {
+  display: inline-flex;
+  gap: sp-vw(14);
+  align-items: center;
+  width: sp-vw(160);
+  height: sp-vw(40);
+  padding-left: sp-vw(13);
+  margin: sp-vw(9) auto 0;
+  font-size: sp-vw(18);
+  color: #{$color-white};
+  background-color: #{$color-light-pink};
+  border-radius: sp-vw(50);
+}
+
+.icon {
+  width: sp-vw(18);
+  height: sp-vw(18);
+  filter: brightness(0) invert(1);
+}

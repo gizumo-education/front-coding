@@ -1,0 +1,105 @@
+@use '@/styles' as *;
+
+.section {
+  padding: sp-vw(30) sp-vw(15) sp-vw(60);
+  background-color: #{$color-job-green};
+}
+
+.inner {
+  text-align: center;
+}
+
+.title {
+  width: 100%;
+  margin: sp-vw(10) auto 0;
+  font-size: sp-vw(25);
+  font-weight: 700;
+}
+
+.list {
+  margin-top: sp-vw(35);
+}
+
+.carousel {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  bottom: sp-vw(9);
+  display: grid;
+  place-items: center;
+  width: sp-vw(42);
+  height: sp-vw(42);
+  cursor: pointer;
+  background: rgb(255 255 255 / 60%);
+  border: none;
+  border-radius: sp-vw(999);
+}
+
+.arrow::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: sp-vw(10);
+  height: sp-vw(10);
+  content: '';
+  border-top: sp-vw(1) solid #{$color-black};
+  border-right: sp-vw(1) solid #{$color-black};
+  transform: translate(-50%, -50%);
+}
+
+.left {
+  left: 0;
+}
+
+.left::before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.right {
+  right: 0;
+}
+
+.right::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.job-title {
+  margin-top: sp-vw(10);
+  font-size: sp-vw(16);
+  font-weight: 700;
+  text-align: left;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(4);
+  margin-top: sp-vw(12);
+}
+
+.text-box {
+  display: flex;
+  gap: sp-vw(21);
+  align-items: center;
+  font-size: sp-vw(14);
+}
+
+.category {
+  width: sp-vw(60);
+  height: sp-vw(21);
+  background-color: #{$color-job-pink};
+}
+
+.is-search {
+  width: 100%;
+  padding: sp-vw(21) sp-vw(77);
+  margin-top: sp-vw(44);
+  font-size: sp-vw(18);
+  font-weight: sp-vw(700);
+  color: #{$color-white};
+  background-color: #{$color-light-pink};
+  border-radius: sp-vw(50);
+}
