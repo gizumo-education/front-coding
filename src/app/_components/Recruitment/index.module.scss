@@ -7,6 +7,12 @@
   margin: sp-vw(25) sp-vw(15);
   background-color: #{$color-blue};
   border-radius: sp-vw(10);
+  @include media-pc {
+    width: pc-vw(1180);
+    height: pc-vw(240);
+    padding: pc-vw(40);
+    margin: pc-vw(60) auto;
+  }
 }
 
 .text-area {
@@ -17,11 +23,18 @@
   font-size: sp-vw(22);
   font-weight: 700;
   color: #{$color-black};
+  @include media-pc {
+    font-size: pc-vw(25);
+  }
 }
 
 .text {
   margin-top: sp-vw(16);
   font-size: sp-vw(14);
+  @include media-pc {
+    margin-top: pc-vw(20);
+    font-size: pc-vw(20);
+  }
 }
 
 .form {
@@ -31,6 +44,11 @@
   width: 100%;
   height: auto;
   margin-top: sp-vw(13);
+  @include media-pc {
+    flex-wrap: nowrap;
+    gap: pc-vw(15);
+    margin-top: pc-vw(26);
+  }
 }
 
 .select-wrapper {
@@ -46,6 +64,12 @@
   background-color: #{$color-white};
   border: 1px solid #{$color-pink};
   border-radius: sp-vw(5);
+  @include media-pc {
+    max-width: pc-vw(200);
+    height: pc-vw(60);
+    padding: pc-vw(17) pc-vw(15);
+    font-size: pc-vw(18);
+  }
 }
 
 .select-wrapper::after {
@@ -59,6 +83,13 @@
   pointer-events: none;
   content: '▼';
   transform: translateY(-50%);
+  @include media-pc {
+    top: pc-vw(25);
+    right: pc-vw(15);
+    width: pc-vw(20);
+    height: pc-vw(10);
+    font-size: pc-vw(18);
+  }
 }
 
 .input {
@@ -69,6 +100,12 @@
   background-color: #{$color-white};
   border: 1px solid #{$color-pink};
   border-radius: sp-vw(5);
+  @include media-pc {
+    width: 100%;
+    max-width: pc-vw(300);
+    height: pc-vw(60);
+    margin-top: 0;
+  }
 }
 
 .input::placeholder {
@@ -76,9 +113,15 @@
   top: sp-ve(5);
   bottom: sp-vw(5);
   left: sp-vw(7);
-  width: 100%;
   font-size: sp-vw(12);
   color: #{$color-gray};
+  @include media-pc {
+    top: pc-vw(16);
+    bottom: pc-vw(18);
+    left: pc-vw(10);
+    font-size: pc-vw(18);
+    letter-spacing: pc-vw(-1);
+  }
 }
 
 .button {
@@ -93,10 +136,22 @@
   color: #{$color-white};
   background-color: #{$color-light-pink};
   border-radius: sp-vw(50);
+  @include media-pc {
+    gap: pc-vw(4);
+    width: pc-vw(140);
+    height: pc-vw(60);
+    padding-left: pc-vw(14);
+    margin-top: 0;
+    font-size: pc-vw(18);
+  }
 }
 
 .icon {
   width: sp-vw(18);
   height: sp-vw(18);
   filter: brightness(0) invert(1);
+  @include media-pc {
+    width: pc-vw(30);
+    height: pc-vw(30);
+  }
 }
