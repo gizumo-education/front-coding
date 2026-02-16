@@ -5,6 +5,8 @@ import { notoSansJP } from '@/libs/fonts'
 
 export const metadata = {
   title: '基本コーディング',
+  description: 'ギズジョブは完全無料の求職者向け求人サービスです',
+  keywords: ['ギズジョブ', 'ギズジョブ医療事務', '医療事務求人', '医療事務'],
 }
 
 const RootLayout = ({ children }) => {
