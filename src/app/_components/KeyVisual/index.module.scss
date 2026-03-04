@@ -1,0 +1,57 @@
+@use '@/styles' as *;
+
+.sec-keyvisual {
+  position: relative;
+  width: sp-vw(400);
+}
+
+.contents-keyvisual {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: sp-vw(400);
+  height: sp-vw(270);
+  padding: sp-vw(61.64) sp-vw(3.32) sp-vw(52) sp-vw(124.68);
+}
+
+.keyvisual-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 18;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.keyvisual {
+  width: sp-vw(194.54);
+  height: sp-vw(73.36);
+}
+
+.keyvisual-text {
+  width: sp-vw(272);
+  height: sp-vw(22);
+}
+
+.current-recruitment-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(170);
+  height: sp-vw(30);
+
+  padding: sp-vw(4) sp-vw(20);
+  font-size: sp-vw(8);
+  font-weight: 400;
+  color: #{$color-cyan};
+  background-color: #{$color-white};
+  border: sp-vw(1) solid #{$color-cyan};
+  border-radius: sp-vw(5);
+}
+
+.current-recruitment-count-num {
+  font-size: sp-vw(16);
+  font-weight: 700;
+}
