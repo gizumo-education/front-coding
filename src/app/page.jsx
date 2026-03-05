@@ -1,13 +1,15 @@
 import { Header } from '@/components/layout'
-import { KeyVisual } from './_components/KeyVisual'
-import { SearchJobs } from './_components/SearchJobs'
+import { KeyVisual, SearchJobs, NewJobOffers } from './_components'
 
 const Top = () => {
   return (
     <>
-      <Header />
-      <KeyVisual />
-      <SearchJobs />
+      <main>
+        <Header />
+        <KeyVisual />
+        <SearchJobs />
+        <NewJobOffers />
+      </main>
     </>
   )
 }
