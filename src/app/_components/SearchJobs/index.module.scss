@@ -1,0 +1,41 @@
+@use '@/styles/' as *;
+
+.sec-search-jobs {
+  width: sp-vw(400);
+  padding: sp-vw(20) sp-vw(15);
+}
+
+.search-jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: sp-vw(370);
+  height: sp-vw(240);
+  padding: sp-vw(15) sp-vw(25);
+  background-color: #{$color-ash-blue};
+  border-radius: sp-vw(10);
+}
+
+.search-jobs-text {
+  margin-bottom: sp-vw(13);
+  font-size: sp-vw(14);
+  font-weight: 400;
+  line-height: sp-vw(20);
+  text-align: center;
+}
+
+.search-jobs-title {
+  margin-bottom: sp-vw(16);
+  font-size: sp-vw(22);
+}
+
+.search-jobs-pulldowns {
+  display: flex;
+  flex-direction: row;
+  gap: sp-vw(10);
+  margin-bottom: sp-vw(15);
+}
+
+.search-jobs-keyword-input {
+  margin-bottom: sp-vw(19);
+}
