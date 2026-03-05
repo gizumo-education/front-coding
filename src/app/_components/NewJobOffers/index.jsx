@@ -8,6 +8,9 @@ export const NewJobOffers = () => {
       <div className={clsx(styles['new-job-offers-inner'])}>
         <h1 className={clsx(styles['new-job-offers-title'])}>新着求人</h1>
         <div className={clsx(styles['new-job-cards'])}>
+          <button className={clsx(styles['new-job-card-navigation-previous'])}>
+            <span className={clsx(styles['new-job-card-previous-icon'])}></span>
+          </button>
           <div className={clsx(styles['new-job-card'])}>
             <div className={clsx(styles['new-job-card-img-wrap'])}>
               <img
@@ -42,6 +45,9 @@ export const NewJobOffers = () => {
               </div>
             </div>
           </div>
+          <button className={clsx(styles['new-job-card-navigation-next'])}>
+            <span className={clsx(styles['new-job-card-next-icon'])}></span>
+          </button>
         </div>
         <LinkButton href='/' text='新着求人一覧をもっと見る' />
       </div>
