@@ -1,5 +1,5 @@
 import { Header } from '@/components/layout'
-import { KeyVisual, SearchJobs, NewJobOffers } from './_components'
+import { KeyVisual, SearchJobs, NewJobOffers, ServiceInto } from './_components'
 
 const Top = () => {
   return (
@@ -9,6 +9,7 @@ const Top = () => {
         <KeyVisual />
         <SearchJobs />
         <NewJobOffers />
+        <ServiceInto />
       </main>
     </>
   )
