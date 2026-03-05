@@ -12,14 +12,13 @@
   right: 0;
   width: sp-vw(400);
   height: sp-vw(270);
-  padding: sp-vw(61.64) sp-vw(3.32) sp-vw(52) sp-vw(124.68);
+  padding: sp-vw(61.64) sp-vw(2) sp-vw(52) sp-vw(124.68);
 }
 
 .keyvisual-inner {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 18;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -27,13 +26,14 @@
 }
 
 .keyvisual {
-  width: sp-vw(194.54);
-  height: sp-vw(73.36);
+  width: sp-vw(165);
+  height: sp-vw(80);
+  margin-bottom: sp-vw(5);
+  margin-left: sp-vw(25);
 }
 
 .keyvisual-text {
-  width: sp-vw(272);
-  height: sp-vw(22);
+  margin-bottom: sp-vw(15);
 }
 
 .current-recruitment-count {
@@ -42,8 +42,8 @@
   justify-content: center;
   width: sp-vw(170);
   height: sp-vw(30);
-
-  padding: sp-vw(4) sp-vw(20);
+  padding: sp-vw(5) sp-vw(20);
+  margin-left: sp-vw(25);
   font-size: sp-vw(8);
   font-weight: 400;
   color: #{$color-cyan};

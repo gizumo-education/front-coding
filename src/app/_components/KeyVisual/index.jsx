@@ -5,7 +5,7 @@ import styles from './index.module.scss'
 export const KeyVisual = () => {
   return (
     <section className={clsx(styles['sec-keyvisual'])}>
-      <picture className='keyvisual-bg-sp'>
+      <picture className={clsx(styles['keyvisual-bg-sp'])}>
         <source
           srcSet='/image/keyVisual/keyvisual-bg-sp.png'
           media='(max-width: 400px)'
