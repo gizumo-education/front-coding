@@ -19,6 +19,7 @@
   position: absolute;
   top: sp-vw(12.5);
   right: sp-vw(7);
+  pointer-events: none;
   border-top: sp-vw(6) solid #{$color-pink};
   border-right: sp-vw(6) solid transparent;
   border-left: sp-vw(6) solid transparent;
