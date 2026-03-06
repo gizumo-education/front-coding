@@ -42,7 +42,7 @@ export const SearchJobs = () => {
 
   return (
     <section className={clsx(styles['sec-search-jobs'])}>
-      <div className={clsx(styles['search-jobs'])}>
+      <form className={clsx(styles['search-jobs'])}>
         <div className={clsx(styles['search-jobs-text'])}>
           <h2 className={clsx(styles['search-jobs-title'])}>お仕事検索</h2>
           <p>働きたい職種・地域・希望給与を入れて検索！</p>
@@ -81,7 +81,7 @@ export const SearchJobs = () => {
             type='submit'
           />
         </div>
-      </div>
+      </form>
     </section>
   )
 }
