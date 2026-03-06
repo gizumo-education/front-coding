@@ -6,6 +6,18 @@
   height: sp-vw(600);
   padding: sp-vw(30) sp-vw(15);
   background-color: #{$color-ice-blue};
+  @include media-pc {
+    width: pc-vw(1600);
+    height: pc-vw(636);
+    padding: pc-vw(64) pc-vw(210);
+  }
+}
+
+.new-job-offers-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .new-job-offers-title {
@@ -13,6 +25,13 @@
   font-size: sp-vw(25);
   font-weight: 700;
   text-align: center;
+  @include media-pc {
+    align-self: flex-start;
+    margin-bottom: pc-vw(25);
+    font-size: pc-vw(25);
+    font-weight: 400;
+    text-align: left;
+  }
 }
 
 .new-job-cards {
@@ -20,6 +39,11 @@
   width: sp-vw(370);
   height: sp-vw(346);
   margin-bottom: sp-vw(44);
+  @include media-pc {
+    width: 100%;
+    height: pc-vw(325);
+    margin-bottom: pc-vw(61);
+  }
 }
 
 .new-job-card-navigation-previous {
@@ -30,6 +54,12 @@
   background-color: #{$color-white};
   border-radius: sp-vw(42);
   opacity: 0.7;
+  @include media-pc {
+    top: 20%;
+    width: pc-vw(60);
+    height: pc-vw(60);
+    border-radius: pc-vw(30);
+  }
 }
 
 .new-job-card-navigation-next {
@@ -42,6 +72,12 @@
   background-color: #{$color-white};
   border-radius: sp-vw(42);
   opacity: 0.7;
+  @include media-pc {
+    top: 20%;
+    width: pc-vw(60);
+    height: pc-vw(60);
+    border-radius: pc-vw(30);
+  }
 }
 
 .new-job-card-previous-icon {
@@ -54,6 +90,13 @@
   border-top: sp-vw(1) solid #{$color-black};
   border-right: sp-vw(1) solid #{$color-black};
   transform: rotate(225deg);
+  @include media-pc {
+    top: pc-vw(22);
+    left: pc-vw(25);
+    width: pc-vw(15);
+    height: pc-vw(15);
+    border-width: pc-vw(0.7);
+  }
 }
 
 .new-job-card-next-icon {
@@ -66,11 +109,22 @@
   border-top: sp-vw(1) solid #{$color-black};
   border-right: sp-vw(1) solid #{$color-black};
   transform: rotate(45deg);
+  @include media-pc {
+    top: pc-vw(22);
+    right: pc-vw(25);
+    width: pc-vw(15);
+    height: pc-vw(15);
+    border-width: pc-vw(0.7);
+  }
 }
 
 .new-job-card {
   width: sp-vw(370);
   height: sp-vw(346);
+  @include media-pc {
+    width: pc-vw(280);
+    height: pc-vw(200);
+  }
 }
 
 .new-job-card-img-wrap {
@@ -79,6 +133,12 @@
   margin-bottom: sp-vw(10);
   overflow: hidden;
   border-radius: sp-vw(10);
+  @include media-pc {
+    width: pc-vw(280);
+    height: pc-vw(200);
+    margin-bottom: pc-vw(8);
+    border-radius: pc-vw(10);
+  }
 }
 
 .new-job-card-img {
@@ -91,6 +151,11 @@
   font-size: sp-vw(16);
   font-weight: 700;
   line-height: sp-vw(22);
+  @include media-pc {
+    margin-bottom: pc-vw(9);
+    font-size: pc-vw(16);
+    line-height: pc-vw(22);
+  }
 }
 
 .new-job-card-details {
@@ -98,11 +163,18 @@
   flex-direction: column;
   font-size: sp-vw(14);
   line-height: sp-vw(21);
+  @include media-pc {
+    font-size: pc-vw(14);
+    line-height: pc-vw(21);
+  }
 }
 
 .new-job-card-detail {
   display: flex;
   margin-bottom: sp-vw(5);
+  @include media-pc {
+    margin-bottom: pc-vw(5);
+  }
 }
 
 .new-job-card-details-label {
@@ -113,4 +185,9 @@
   text-align: center;
   word-break: none;
   background-color: #{$color-pale-pink};
+  @include media-pc {
+    width: pc-vw(60);
+    height: pc-vw(21);
+    margin-right: pc-vw(21);
+  }
 }

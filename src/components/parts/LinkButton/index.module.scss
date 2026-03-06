@@ -11,4 +11,11 @@
   text-align: center;
   background-color: #{$color-rose-pink};
   border-radius: sp-vw(30);
+  @include media-pc {
+    width: pc-vw(360);
+    height: pc-vw(60);
+    padding: pc-vw(17) pc-vw(72);
+    font-size: pc-vw(18);
+    line-height: pc-vw(26);
+  }
 }
