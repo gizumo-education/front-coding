@@ -26,9 +26,9 @@ export const KeyVisual = () => {
             height='73'
             alt='No.1'
           />
-          <h1>
+          <h1 className={clsx(styles['keyvisual-text'])}>
             <Image
-              className={clsx(styles['keyvisual-text'])}
+              className={clsx(styles['keyvisual-text-img'])}
               src='/image/keyVisual/medical-office-work-job-offer-find-if-giz-job.svg'
               width='272'
               height='22'
