@@ -6,6 +6,11 @@
   height: sp-vw(75);
   padding: sp-vw(16) sp-vw(25);
   color: #{$color-white};
+  @include media-pc {
+    width: pc-vw(1600);
+    height: pc-vw(300);
+    padding: pc-vw(103) pc-vw(487);
+  }
 }
 
 .sec-service-intro::before {
@@ -32,4 +37,9 @@
   font-size: sp-vw(14);
   font-weight: 100;
   line-height: sp-vw(20);
+  @include media-pc {
+    font-size: pc-vw(25);
+    font-weight: 700;
+    line-height: pc-vw(50);
+  }
 }
