@@ -26,13 +26,15 @@ export const KeyVisual = () => {
             height='73'
             alt='No.1'
           />
-          <Image
-            className={clsx(styles['keyvisual-text'])}
-            src='/image/keyVisual/医療事務求人を探すならギズジョブ.svg'
-            width='272'
-            height='22'
-            alt='医療事務求人を探すならギズジョブ'
-          />
+          <h1>
+            <Image
+              className={clsx(styles['keyvisual-text'])}
+              src='/image/keyVisual/medical-office-work-job-offer-find-if-giz-job.svg'
+              width='272'
+              height='22'
+              alt='医療事務求人を探すならギズジョブ'
+            />
+          </h1>
           <div className={clsx(styles['current-recruitment-count'])}>
             <p>
               現在の求人掲載数：

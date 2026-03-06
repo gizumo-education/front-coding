@@ -6,7 +6,7 @@ export const NewJobOffers = () => {
   return (
     <section className={clsx(styles['sec-new-job-offers'])}>
       <div className={clsx(styles['new-job-offers-inner'])}>
-        <h1 className={clsx(styles['new-job-offers-title'])}>新着求人</h1>
+        <h2 className={clsx(styles['new-job-offers-title'])}>新着求人</h2>
         <div className={clsx(styles['new-job-cards'])}>
           <button className={clsx(styles['new-job-card-navigation-previous'])}>
             <span className={clsx(styles['new-job-card-previous-icon'])}></span>

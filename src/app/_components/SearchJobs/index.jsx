@@ -44,7 +44,7 @@ export const SearchJobs = () => {
     <section className={clsx(styles['sec-search-jobs'])}>
       <div className={clsx(styles['search-jobs'])}>
         <div className={clsx(styles['search-jobs-text'])}>
-          <h1 className={clsx(styles['search-jobs-title'])}>お仕事検索</h1>
+          <h2 className={clsx(styles['search-jobs-title'])}>お仕事検索</h2>
           <p>働きたい職種・地域・希望給与を入れて検索！</p>
         </div>
         <div className={clsx(styles['search-jobs-pulldowns'])}>
