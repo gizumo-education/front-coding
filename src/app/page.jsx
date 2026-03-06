@@ -8,13 +8,15 @@ import {
 
 const Top = () => {
   return (
-    <main>
+    <>
       <Header />
-      <KeyVisual />
-      <SearchJobs />
-      <NewJobOffers />
-      <ServiceIntro />
-    </main>
+      <main>
+        <KeyVisual />
+        <SearchJobs />
+        <NewJobOffers />
+        <ServiceIntro />
+      </main>
+    </>
   )
 }
 
