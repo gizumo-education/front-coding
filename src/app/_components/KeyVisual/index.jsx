@@ -14,7 +14,7 @@ export const KeyVisual = () => {
           src='/image/keyVisual/keyvisual-bg-sp.png'
           width='400'
           height='270'
-          alt='keyvisual'
+          alt=''
         />
       </picture>
       <div className={clsx(styles['contents-keyvisual'])}>
