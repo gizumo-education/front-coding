@@ -5,10 +5,14 @@ import styles from './index.module.scss'
 export const KeyVisual = () => {
   return (
     <section className={clsx(styles['sec-keyvisual'])}>
-      <picture className={clsx(styles['keyvisual-bg-sp'])}>
+      <picture className={clsx(styles['keyvisual-bg'])}>
         <source
           srcSet='/image/keyVisual/keyvisual-bg-sp.png'
-          media='(max-width: 400px)'
+          media='(max-width: 768px)'
+        />
+        <source
+          srcSet='/image/keyVisual/keyvisual-bg-pc.jpg'
+          media='(min-width: 769px)'
         />
         <img
           src='/image/keyVisual/keyvisual-bg-sp.png'
@@ -19,13 +23,23 @@ export const KeyVisual = () => {
       </picture>
       <div className={clsx(styles['contents-keyvisual'])}>
         <div className={clsx(styles['keyvisual-inner'])}>
-          <Image
-            className={clsx(styles['keyvisual'])}
-            src='/image/keyVisual/keyvisual.svg'
-            width='150'
-            height='73'
-            alt='No.1'
-          />
+          <picture>
+            <source
+              srcSet='image/keyVisual/keyvisual.svg'
+              media='(max-width: 768px)'
+            />
+            <source
+              srcSet='image/keyVisual/keyvisual-pc.svg'
+              media='(min-width: 769px)'
+            />
+            <img
+              className={clsx(styles['keyvisual'])}
+              src='/image/keyVisual/keyvisual.svg'
+              width='150'
+              height='73'
+              alt='No.1'
+            />
+          </picture>
           <h1 className={clsx(styles['keyvisual-text'])}>
             <Image
               className={clsx(styles['keyvisual-text-img'])}
