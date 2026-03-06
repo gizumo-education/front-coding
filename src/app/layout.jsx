@@ -4,7 +4,10 @@ import '@/styles/style.scss'
 import { notoSansJP } from '@/libs/fonts'
 
 export const metadata = {
-  title: '基本コーディング',
+  charset: 'utf-8',
+  title: '医療事務求人を探すならギズジョブ',
+  description: 'ギズジョブは完全無料の求職者向け求人サービスです',
+  keyword: 'ギズジョブ, ギズジョブ医療事務, 医療事務求人, 医療事務',
 }
 
 const RootLayout = ({ children }) => {
