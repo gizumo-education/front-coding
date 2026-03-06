@@ -1,0 +1,26 @@
+@use '@/styles' as *;
+
+.search-button {
+  position: relative;
+  width: sp-vw(160);
+  height: sp-vw(40);
+  padding: sp-vw(10);
+  font-size: sp-vw(18);
+  font-weight: 700;
+  vertical-align: middle;
+  color: #{$color-white};
+  text-align: center;
+  background-color: #{$color-rose-pink};
+  border-radius: sp-vw(20);
+}
+
+.search-icon::after {
+  position: absolute;
+  top: sp-vw(12);
+  left: sp-vw(13);
+  width: sp-vw(18);
+  height: sp-vw(18);
+  content: '';
+  background-color: #{$color-white};
+  mask: url('/icon/search.svg') no-repeat center / contain;
+}

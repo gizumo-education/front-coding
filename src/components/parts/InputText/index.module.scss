@@ -1,0 +1,15 @@
+@use '@/styles/' as *;
+
+.input-text {
+  width: sp-vw(320);
+  height: sp-vw(30);
+  padding: sp-vw(7) sp-vw(5);
+  font-size: sp-vw(14);
+  background-color: #{$color-white};
+  border: sp-vw(1) solid #{$color-pink};
+  border-radius: sp-vw(6);
+}
+
+.input-text::placeholder {
+  color: $color-light-gray;
+}

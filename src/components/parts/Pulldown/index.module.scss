@@ -1,0 +1,26 @@
+@use '@/styles' as *;
+
+.pulldown-wrap {
+  position: relative;
+}
+
+.pulldown {
+  display: flex;
+  width: sp-vw(100);
+  height: sp-vw(30);
+  padding: sp-vw(8) sp-vw(6) sp-vw(6);
+  font-size: sp-vw(12);
+  background-color: #{$color-white};
+  border: sp-vw(1) solid #{$color-pink};
+  border-radius: sp-vw(5);
+}
+
+.pulldown-triangle {
+  position: absolute;
+  top: sp-vw(12.5);
+  right: sp-vw(7);
+  pointer-events: none;
+  border-top: sp-vw(6) solid #{$color-pink};
+  border-right: sp-vw(6) solid transparent;
+  border-left: sp-vw(6) solid transparent;
+}

@@ -1,0 +1,116 @@
+@use '@/styles' as *;
+
+.sec-new-job-offers {
+  box-sizing: border-box;
+  width: sp-vw(400);
+  height: sp-vw(600);
+  padding: sp-vw(30) sp-vw(15);
+  background-color: #{$color-ice-blue};
+}
+
+.new-job-offers-title {
+  margin-bottom: sp-vw(35);
+  font-size: sp-vw(25);
+  font-weight: 700;
+  text-align: center;
+}
+
+.new-job-cards {
+  position: relative;
+  width: sp-vw(370);
+  height: sp-vw(346);
+  margin-bottom: sp-vw(44);
+}
+
+.new-job-card-navigation-previous {
+  position: absolute;
+  top: 45%;
+  width: sp-vw(42);
+  height: sp-vw(42);
+  background-color: #{$color-white};
+  border-radius: sp-vw(42);
+  opacity: 0.7;
+}
+
+.new-job-card-navigation-next {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  z-index: 5;
+  width: sp-vw(42);
+  height: sp-vw(42);
+  background-color: #{$color-white};
+  border-radius: sp-vw(42);
+  opacity: 0.7;
+}
+
+.new-job-card-previous-icon {
+  position: absolute;
+  top: sp-vw(16);
+  left: sp-vw(18);
+  width: sp-vw(10);
+  height: sp-vw(10);
+  content: '';
+  border-top: sp-vw(1) solid #{$color-black};
+  border-right: sp-vw(1) solid #{$color-black};
+  transform: rotate(225deg);
+}
+
+.new-job-card-next-icon {
+  position: absolute;
+  top: sp-vw(16);
+  right: sp-vw(18);
+  width: sp-vw(10);
+  height: sp-vw(10);
+  content: '';
+  border-top: sp-vw(1) solid #{$color-black};
+  border-right: sp-vw(1) solid #{$color-black};
+  transform: rotate(45deg);
+}
+
+.new-job-card {
+  width: sp-vw(370);
+  height: sp-vw(346);
+}
+
+.new-job-card-img-wrap {
+  width: sp-vw(370);
+  height: sp-vw(208);
+  margin-bottom: sp-vw(10);
+  overflow: hidden;
+  border-radius: sp-vw(10);
+}
+
+.new-job-card-img {
+  object-fit: cover;
+  object-position: top;
+}
+
+.new-job-card-title {
+  margin-bottom: sp-vw(11);
+  font-size: sp-vw(16);
+  font-weight: 700;
+  line-height: sp-vw(22);
+}
+
+.new-job-card-details {
+  display: flex;
+  flex-direction: column;
+  font-size: sp-vw(14);
+  line-height: sp-vw(21);
+}
+
+.new-job-card-detail {
+  display: flex;
+  margin-bottom: sp-vw(5);
+}
+
+.new-job-card-details-label {
+  width: sp-vw(60);
+  height: sp-vw(21);
+  margin-right: sp-vw(21);
+  vertical-align: middle;
+  text-align: center;
+  word-break: none;
+  background-color: #{$color-pale-pink};
+}

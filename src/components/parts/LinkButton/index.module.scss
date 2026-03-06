@@ -1,0 +1,14 @@
+@use '@/styles' as *;
+
+.link-button {
+  width: sp-vw(370);
+  height: sp-vw(60);
+  padding: sp-vw(21) sp-vw(77);
+  font-size: sp-vw(18);
+  font-weight: 700;
+  vertical-align: middle;
+  color: #{$color-white};
+  text-align: center;
+  background-color: #{$color-rose-pink};
+  border-radius: sp-vw(30);
+}
