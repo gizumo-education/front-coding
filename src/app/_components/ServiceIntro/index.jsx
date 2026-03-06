@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import styles from './index.module.scss'
 
-export const ServiceInto = () => {
+export const ServiceIntro = () => {
   return (
     <section className={clsx(styles['sec-service-intro'])}>
       <div className={clsx(styles['service-intro-inner'])}>

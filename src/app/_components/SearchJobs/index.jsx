@@ -52,19 +52,19 @@ export const SearchJobs = () => {
             name='job-roles'
             id='select-job-roles'
             data={jobRoles}
-            defoultValue={selectedJob}
+            defaultValue={selectedJob}
           />
           <Pulldown
             name='prefecture'
             id='select-prefecture'
             data={prefectures}
-            defoultValue={selectedPrefecture}
+            defaultValue={selectedPrefecture}
           />
           <Pulldown
             name='salary'
             id='select-salary'
             data={salaries}
-            defoultValue={selectedSalary}
+            defaultValue={selectedSalary}
           />
         </div>
         <div className={clsx(styles['search-jobs-keyword-input'])}>
