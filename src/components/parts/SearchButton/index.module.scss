@@ -12,6 +12,14 @@
   text-align: center;
   background-color: #{$color-rose-pink};
   border-radius: sp-vw(20);
+  @include media-pc {
+    width: pc-vw(140);
+    height: pc-vw(60);
+    padding: pc-vw(20);
+    font-size: pc-vw(18);
+    text-align: right;
+    border-radius: pc-vw(30);
+  }
 }
 
 .search-icon::after {
@@ -23,4 +31,10 @@
   content: '';
   background-color: #{$color-white};
   mask: url('/icon/search.svg') no-repeat center / contain;
+  @include media-pc {
+    top: pc-vw(15);
+    left: pc-vw(15);
+    width: pc-vw(30);
+    height: pc-vw(30);
+  }
 }

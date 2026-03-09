@@ -8,6 +8,14 @@
   background-color: #{$color-white};
   border: sp-vw(1) solid #{$color-pink};
   border-radius: sp-vw(6);
+  @include media-pc {
+    width: pc-vw(300);
+    height: pc-vw(60);
+    padding: pc-vw(17) pc-vw(10);
+    font-size: pc-vw(18);
+    border-width: pc-vw(2);
+    border-radius: pc-vw(10);
+  }
 }
 
 .input-text::placeholder {

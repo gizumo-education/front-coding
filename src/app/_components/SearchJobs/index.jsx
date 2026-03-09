@@ -47,39 +47,41 @@ export const SearchJobs = () => {
           <h2 className={clsx(styles['search-jobs-title'])}>お仕事検索</h2>
           <p>働きたい職種・地域・希望給与を入れて検索！</p>
         </div>
-        <div className={clsx(styles['search-jobs-pulldowns'])}>
-          <Pulldown
-            name='job-roles'
-            id='select-job-roles'
-            data={jobRoles}
-            defaultValue={selectedJob}
-          />
-          <Pulldown
-            name='prefecture'
-            id='select-prefecture'
-            data={prefectures}
-            defaultValue={selectedPrefecture}
-          />
-          <Pulldown
-            name='salary'
-            id='select-salary'
-            data={salaries}
-            defaultValue={selectedSalary}
-          />
-        </div>
-        <div className={clsx(styles['search-jobs-keyword-input'])}>
-          <InputText
-            name='search-by-job-keyword'
-            placeholder='キーワード・企業名・スキルなど'
-          />
-        </div>
-        <div className={clsx(styles['search-jobs-submit'])}>
-          <SearchButton
-            name='search-button'
-            isIconShow={true}
-            text='検索する'
-            type='submit'
-          />
+        <div className={clsx(styles['search-jobs-form-contents'])}>
+          <div className={clsx(styles['search-jobs-pulldowns'])}>
+            <Pulldown
+              name='job-roles'
+              id='select-job-roles'
+              data={jobRoles}
+              defaultValue={selectedJob}
+            />
+            <Pulldown
+              name='prefecture'
+              id='select-prefecture'
+              data={prefectures}
+              defaultValue={selectedPrefecture}
+            />
+            <Pulldown
+              name='salary'
+              id='select-salary'
+              data={salaries}
+              defaultValue={selectedSalary}
+            />
+          </div>
+          <div className={clsx(styles['search-jobs-keyword-input'])}>
+            <InputText
+              name='search-by-job-keyword'
+              placeholder='キーワード・企業名・スキルなど'
+            />
+          </div>
+          <div className={clsx(styles['search-jobs-submit'])}>
+            <SearchButton
+              name='search-button'
+              isIconShow={true}
+              text='検索する'
+              type='submit'
+            />
+          </div>
         </div>
       </form>
     </section>

@@ -6,6 +6,7 @@
 
 .pulldown {
   display: flex;
+  align-items: center;
   width: sp-vw(100);
   height: sp-vw(30);
   padding: sp-vw(8) sp-vw(6) sp-vw(6);
@@ -13,6 +14,14 @@
   background-color: #{$color-white};
   border: sp-vw(1) solid #{$color-pink};
   border-radius: sp-vw(5);
+  @include media-pc {
+    width: pc-vw(200);
+    height: pc-vw(60);
+    padding: pc-vw(15);
+    font-size: pc-vw(18);
+    border-width: pc-vw(2);
+    border-radius: pc-vw(10);
+  }
 }
 
 .pulldown-triangle {
@@ -23,4 +32,10 @@
   border-top: sp-vw(6) solid #{$color-pink};
   border-right: sp-vw(6) solid transparent;
   border-left: sp-vw(6) solid transparent;
+
+  @include media-pc {
+    top: pc-vw(25);
+    right: pc-vw(10);
+    border-width: pc-vw(12);
+  }
 }
