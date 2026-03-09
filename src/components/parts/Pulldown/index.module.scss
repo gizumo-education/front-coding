@@ -6,6 +6,7 @@
 
 .pulldown {
   display: flex;
+  align-items: center;
   width: sp-vw(100);
   height: sp-vw(30);
   padding: sp-vw(8) sp-vw(6) sp-vw(6);
@@ -16,7 +17,7 @@
   @include media-pc {
     width: pc-vw(200);
     height: pc-vw(60);
-    padding: pc-vw(20) pc-vw(15);
+    padding: pc-vw(15);
     font-size: pc-vw(18);
     border-width: pc-vw(2);
     border-radius: pc-vw(10);
