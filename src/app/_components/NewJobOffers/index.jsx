@@ -1,6 +1,54 @@
 import clsx from 'clsx'
 import styles from './index.module.scss'
 import { LinkButton } from '@/components/parts/LinkButton'
+import { JobCard } from '@/components/parts/jobCard'
+
+const NewJobOfferItems = [
+  {
+    id: 1,
+    title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+    image: {
+      url: '/image/newJobOffers/ise-red-cross-medical-office-work-job-offer.jpg',
+      altText: '伊勢赤十字病院 医療事務求人',
+    },
+    salary: '月給 148,000円～',
+    location: '三重県伊勢市',
+    closestStation: '伊勢市駅 徒歩15分',
+  },
+  {
+    id: 2,
+    title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+    image: {
+      url: '/image/newJobOffers/ise-red-cross-medical-office-work-job-offer2.jpg',
+      altText: '伊勢赤十字病院 医療事務求人',
+    },
+    salary: '月給 148,000円～',
+    location: '三重県伊勢市',
+    closestStation: '伊勢市駅 徒歩15分',
+  },
+  {
+    id: 3,
+    title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+    image: {
+      url: '/image/newJobOffers/ise-red-cross-medical-office-work-job-offer3.jpg',
+      altText: '伊勢赤十字病院 医療事務求人',
+    },
+    salary: '月給 148,000円～',
+    location: '三重県伊勢市',
+    closestStation: '伊勢市駅 徒歩15分',
+  },
+  {
+    id: 4,
+    title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
+    image: {
+      url: '/image/newJobOffers/ise-red-cross-medical-office-work-job-offer4.jpg',
+      altText: '伊勢赤十字病院 医療事務求人',
+    },
+    salary: '月給 148,000円～',
+    location: '三重県伊勢市',
+    closestStation: '伊勢市駅 徒歩15分',
+  },
+]
 
 export const NewJobOffers = () => {
   return (
@@ -11,40 +59,9 @@ export const NewJobOffers = () => {
           <button className={clsx(styles['new-job-card-navigation-previous'])}>
             <span className={clsx(styles['new-job-card-previous-icon'])}></span>
           </button>
-          <div className={clsx(styles['new-job-card'])}>
-            <div className={clsx(styles['new-job-card-img-wrap'])}>
-              <img
-                className={clsx(styles['new-job-card-img'])}
-                src='/image/newJobOffers/ise-red-cross-medical-office-work-job-offer.jpg'
-                width='370'
-                height='208'
-                alt='伊勢赤十字病院 医療事務求人'
-              />
-            </div>
-            <h2 className={clsx(styles['new-job-card-title'])}>
-              平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
-            </h2>
-            <div className={clsx(styles['new-job-card-details'])}>
-              <div className={clsx(styles['new-job-card-detail'])}>
-                <span className={clsx(styles['new-job-card-details-label'])}>
-                  給与
-                </span>
-                <p>月給 148,000円～</p>
-              </div>
-              <div className={clsx(styles['new-job-card-detail'])}>
-                <span className={clsx(styles['new-job-card-details-label'])}>
-                  所在地
-                </span>
-                <p>三重県伊勢市</p>
-              </div>
-              <div className={clsx(styles['new-job-card-detail'])}>
-                <span className={clsx(styles['new-job-card-details-label'])}>
-                  最寄駅
-                </span>
-                <p>伊勢市駅 徒歩15分</p>
-              </div>
-            </div>
-          </div>
+          {NewJobOfferItems.map((item) => (
+            <JobCard key={item.id} item={item} />
+          ))}
           <button className={clsx(styles['new-job-card-navigation-next'])}>
             <span className={clsx(styles['new-job-card-next-icon'])}></span>
           </button>

@@ -1,0 +1,74 @@
+@use '@/styles' as *;
+
+.new-job-card {
+  width: sp-vw(370);
+  height: fit-content;
+  @include media-pc {
+    width: pc-vw(280);
+  }
+}
+
+.new-job-card-img-wrap {
+  width: sp-vw(370);
+  height: sp-vw(208);
+  margin-bottom: sp-vw(10);
+  overflow: hidden;
+  border-radius: sp-vw(10);
+  @include media-pc {
+    width: pc-vw(280);
+    height: pc-vw(200);
+    margin-bottom: pc-vw(8);
+    border-radius: pc-vw(10);
+  }
+}
+
+.new-job-card-img {
+  object-fit: cover;
+  object-position: top;
+}
+
+.new-job-card-title {
+  margin-bottom: sp-vw(11);
+  font-size: sp-vw(16);
+  font-weight: 700;
+  line-height: sp-vw(22);
+  @include media-pc {
+    margin-bottom: pc-vw(9);
+    font-size: pc-vw(16);
+    line-height: pc-vw(22);
+  }
+}
+
+.new-job-card-details {
+  display: flex;
+  flex-direction: column;
+  font-size: sp-vw(14);
+  line-height: sp-vw(21);
+  @include media-pc {
+    font-size: pc-vw(14);
+    line-height: pc-vw(21);
+  }
+}
+
+.new-job-card-detail {
+  display: flex;
+  margin-bottom: sp-vw(5);
+  @include media-pc {
+    margin-bottom: pc-vw(5);
+  }
+}
+
+.new-job-card-details-label {
+  width: sp-vw(60);
+  height: sp-vw(21);
+  margin-right: sp-vw(21);
+  vertical-align: middle;
+  text-align: center;
+  word-break: none;
+  background-color: #{$color-pale-pink};
+  @include media-pc {
+    width: pc-vw(60);
+    height: pc-vw(21);
+    margin-right: pc-vw(21);
+  }
+}

@@ -36,12 +36,15 @@
 
 .new-job-cards {
   position: relative;
+  display: flex;
+  flex-direction: row;
   width: sp-vw(370);
-  height: sp-vw(346);
+  height: fit-content;
   margin-bottom: sp-vw(44);
+  overflow: hidden;
   @include media-pc {
+    gap: pc-vw(20);
     width: 100%;
-    height: pc-vw(325);
     margin-bottom: pc-vw(61);
   }
 }
