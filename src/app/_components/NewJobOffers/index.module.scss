@@ -52,6 +52,7 @@
 .new-job-card-navigation-previous {
   position: absolute;
   top: 45%;
+  z-index: 5;
   width: sp-vw(42);
   height: sp-vw(42);
   background-color: #{$color-white};
