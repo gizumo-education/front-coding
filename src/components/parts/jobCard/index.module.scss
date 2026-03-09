@@ -25,6 +25,9 @@
 .new-job-card-img {
   object-fit: cover;
   object-position: top;
+  @include media-pc {
+    transform: scale(1.1);
+  }
 }
 
 .new-job-card-title {
