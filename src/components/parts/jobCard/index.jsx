@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import styles from './index.module.scss'
 
-export const JobCard = ({ item = {} }) => {
+export const JobCard = ({ as: JobTitle = 'h3', item = {} }) => {
   return (
     <div className={clsx(styles['new-job-card'])}>
       <div className={clsx(styles['new-job-card-img-wrap'])}>
@@ -13,7 +13,9 @@ export const JobCard = ({ item = {} }) => {
           alt={item?.image?.altText}
         />
       </div>
-      <h2 className={clsx(styles['new-job-card-title'])}>{item.title}</h2>
+      <JobTitle className={clsx(styles['new-job-card-title'])}>
+        {item.title}
+      </JobTitle>
       <div className={clsx(styles['new-job-card-details'])}>
         <div className={clsx(styles['new-job-card-detail'])}>
           <span className={clsx(styles['new-job-card-details-label'])}>
