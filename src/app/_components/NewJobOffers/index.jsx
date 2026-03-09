@@ -1,7 +1,6 @@
 import clsx from 'clsx'
 import styles from './index.module.scss'
-import { LinkButton } from '@/components/parts/LinkButton'
-import { JobCard } from '@/components/parts/jobCard'
+import { JobCard, LinkButton } from '@/components/parts'
 
 const NewJobOfferItems = [
   {
