@@ -3,7 +3,7 @@
 import clsx from 'clsx'
 import styles from './index.module.scss'
 import { useCallback, useState } from 'react'
-import { MenuOverray } from '@/components/layout'
+import { MenuOverlay } from '@/components/layout'
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,7 +13,7 @@ export const Header = () => {
   )
   return (
     <>
-      <MenuOverray isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
+      <MenuOverlay isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
       <header className={styles.header}>
         <nav className={styles.nav}>
           <ul className={styles.list}>

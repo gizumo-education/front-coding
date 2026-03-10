@@ -13,7 +13,7 @@ const links = [
   { id: 5, text: '転職お役立ちコンテンツ', url: '#' },
 ]
 
-export const MenuOverray = ({ isOpen, setIsOpen }) => {
+export const MenuOverlay = ({ isOpen, setIsOpen }) => {
   const handleLinkClick = useCallback(() => setIsOpen(false), [setIsOpen])
 
   useEffect(() => {
@@ -31,12 +31,12 @@ export const MenuOverray = ({ isOpen, setIsOpen }) => {
 
   return (
     isOpen && (
-      <div className={clsx(styles['menu-overray-body'])}>
-        <nav className={clsx(styles['menu-overray-inner'])}>
+      <div className={clsx(styles['menu-overlay-body'])}>
+        <nav className={clsx(styles['menu-overlay-inner'])}>
           <ul>
             {links.map((link) => {
               return (
-                <li key={link.id} className={clsx(styles['menu-overray-link'])}>
+                <li key={link.id} className={clsx(styles['menu-overlay-link'])}>
                   <Link href={link.url} onClick={handleLinkClick}>
                     {link.text}
                   </Link>

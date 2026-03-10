@@ -1,6 +1,6 @@
 @use '@/styles' as *;
 
-.menu-overray-body {
+.menu-overlay-body {
   position: fixed;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@
   }
 }
 
-.menu-overray-link {
+.menu-overlay-link {
   margin-bottom: sp-vw(38);
   font-size: sp-vw(22);
   font-weight: 700;
