@@ -128,7 +128,10 @@ export const NewJobOffers = () => {
   }, [])
 
   return (
-    <section className={clsx(styles['sec-new-job-offers'])}>
+    <section
+      className={clsx(styles['sec-new-job-offers'])}
+      id={clsx('new-job-offers')}
+    >
       <div className={clsx(styles['new-job-offers-inner'])}>
         <h2 className={clsx(styles['new-job-offers-title'])}>新着求人</h2>
         <div
