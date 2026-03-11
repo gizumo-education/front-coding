@@ -17,6 +17,12 @@ export const MenuOverlay = ({ isOpen, setIsOpen }) => {
   const handleLinkClick = useCallback(() => setIsOpen(false), [setIsOpen])
 
   useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('is-menu-open')
+    } else {
+      document.body.classList.remove('is-menu-open')
+    }
+
     const media = window.matchMedia('(max-width: 768px)')
 
     const listener = (e) => {
@@ -27,7 +33,7 @@ export const MenuOverlay = ({ isOpen, setIsOpen }) => {
     media.addEventListener('change', listener)
 
     return () => media.removeEventListener('change', listener)
-  }, [setIsOpen])
+  }, [isOpen, setIsOpen])
 
   return (
     isOpen && (
