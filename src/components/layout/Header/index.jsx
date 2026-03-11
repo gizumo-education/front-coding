@@ -54,9 +54,15 @@ export const Header = () => {
             </li>
           </ul>
           <button className={styles.button} onClick={handleButtonClick}>
-            <span className={styles.line} />
-            <span className={styles.line} />
-            <span className={styles.line} />
+            <span
+              className={`${styles.line} ${isMenuOpen ? `${clsx(styles['button-close'])}` : ''}`}
+            />
+            <span
+              className={`${styles.line} ${isMenuOpen ? `${clsx(styles['button-close'])}` : ''}`}
+            />
+            <span
+              className={`${styles.line} ${isMenuOpen ? `${clsx(styles['button-close'])}` : ''}`}
+            />
           </button>
         </nav>
       </header>

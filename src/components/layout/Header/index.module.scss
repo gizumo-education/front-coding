@@ -38,6 +38,7 @@
   height: sp-vw(6);
   background-color: #{$color-black};
   border-radius: 6px;
+  transition: 0.3s;
 }
 
 .line:nth-child(1) {
@@ -52,6 +53,20 @@
 .line:nth-child(3) {
   top: 100%;
   transform: translateY(-100%);
+}
+
+.button-close:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.button-close:nth-child(2) {
+  opacity: 0;
+}
+
+.button-close:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
 }
 
 .nav {
