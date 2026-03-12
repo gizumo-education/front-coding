@@ -15,8 +15,28 @@
   .c-main__key-visual {
     display: block;
     width: 100%;
-    height: auto;
+    // height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
+  .u-pc-only {
+    display: block;
+  }
+  .u-sp-only {
+    display: none;
+  }
+
+  @include utility.sp {
+    .u-pc-only {
+      display: none;
+    }
+    .u-sp-only {
+      display: block;
+    }
+  }
+
   .c-main__key-visual-text {
     display: block;
     position: absolute;
@@ -83,6 +103,27 @@
       left: 65%;
     }
   }
+}
+
+.recruit-picture {
+
+  .u-pc-only {
+    display: block;
+  }
+  .u-sp-only {
+    display: none;
+  }
+
+  @include utility.sp {
+    .u-pc-only {
+      display: none;
+    }
+    .u-sp-only {
+      display: block;
+    }
+  }
+
+
 }
 
 .l-main__banner {

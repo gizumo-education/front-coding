@@ -108,6 +108,7 @@
     }
   }
   &__sp-items {
+    position:relative;
     display: flex;
     justify-content: flex-end;
     @include utility.pc {
@@ -117,7 +118,34 @@
       display: none!important;
     }
   }
+
+  &__sp-items__nav {
+    position: absolute;
+    top: 54px;
+    right: -15px;
+    background: rgba(0, 0, 0, 0.7);
+    height: 554px;
+    width: 400px;
+    display: none;
+  }
+  &__sp-items__nav__menu {
+    padding:57px 0 0 60.25px;
+
+    a {
+      font-size: 22px;
+      height: 22px;
+      color: #ffff;
+      font-weight: bold;
+    }
+    li {
+      padding-bottom: 38px;
+    }
+
+  }
+
+
   &__hamburger {
+    position:relative;
     width: .5rem;
     height: .38rem;
     display: flex;

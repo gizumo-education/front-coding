@@ -22,7 +22,16 @@
         </ul>
       </div>
       <div class="l-header__sp-items">
-        <button class="l-header__hamburger">
+        <div id="sp_nav_menu" class="l-header__sp-items__nav">
+          <ul class="l-header__sp-items__nav__menu">
+            <li><a href="">トップ</a></li>
+            <li><a href="">新着求人</a></li>
+            <li><a href="">4つの特徴</a></li>
+            <li><a href="">転職までの流れ</a></li>
+            <li><a href="">転職お役立ちコンテンツ</a></li>
+          </ul>
+        </div>
+        <button id="sp_hamburger" class="l-header__hamburger">
           <span></span>
           <span></span>
           <span></span>
@@ -33,11 +42,10 @@
 
   <main class="l-main">
     <div class="l-main__key-visual">
-      <picture class="c-main__key-visual-picture">
-        <source srcset="./img/picture/keyvisual_sp.png" media="(max-width: 767px)" width="400" height="270">
-        <!-- <source srcset="./img/picture/column_1.jpg" media="(max-width: 767px)" width="400" height="270"> -->
-        <img src="./img/picture/keyvisual.png" alt="医療事務求人を探すならギズジョブ" width="1600" height="500" class="c-main__key-visual">
-      </picture>
+      <div class="c-main__key-visual-picture">
+        <img src="./img/picture/keyvisual_sp.png" alt="医療事務求人を探すならギズジョブ" width="400" height="270" class="u-sp-only">
+        <img src="./img/picture/keyvisual.png" alt="医療事務求人を探すならギズジョブ" width="1600" height="500" class="u-pc-only">
+      </div>
       <img src="./img/picture/keyvisual-logo.png" alt="2021年使ってよかった転職サイト" width="342" height="168" class="c-main__key-visual-logo">
       <img src="./img/picture/keyvisual-title.png" alt="医療事務求人を探すならギズジョブ" width="800" height="65" class="c-main__key-visual-title">
       <p class="c-main__key-visual-text">現在の求人掲載数：<span>2,320</span>件</p>
@@ -96,10 +104,10 @@
         <div class="l-main__new-recruit-list">
           <div class="c-select__button is-left"><a href="" class="c-select__button__arrow_left"></a></div>
           <div class="l-main__new-recruit-item">
-            <picture class="recruit-picture">
-              <source srcset="/img/picture/recruit_1_sp.png" media="(max-width: 767px)" width="370" height="208">
-              <img src="./img/picture/recruit_1.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200">
-            </picture>
+            <div class="recruit-picture">
+              <img src="./img/picture/recruit_1_sp.png" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="370" height="208" class="u-sp-only">
+              <img src="./img/picture/recruit_1.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200" class="u-pc-only">
+            </div>
             <div class="recruit-info">
               <h2 class="recruit-info-text">
                 平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
