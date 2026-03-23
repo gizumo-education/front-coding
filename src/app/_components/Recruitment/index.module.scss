@@ -61,10 +61,16 @@
   transform: translateY(-50%);
 }
 
+.select-box {
+  width: 100%;
+  appearance: none;
+}
+
 .input {
   position: relative;
   width: sp-vw(320);
   height: sp-vw(30);
+  padding-left: sp-vw(7);
   margin-top: sp-vw(5);
   background-color: #{$color-white};
   border: 1px solid #{$color-pink};
@@ -75,7 +81,6 @@
   position: absolute;
   top: sp-ve(5);
   bottom: sp-vw(5);
-  left: sp-vw(7);
   width: 100%;
   font-size: sp-vw(12);
   color: #{$color-gray};
