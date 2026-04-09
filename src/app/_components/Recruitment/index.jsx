@@ -65,7 +65,7 @@ export const Recruitment = () => {
           name='keyword'
           placeholder='キーワード・企業名・スキルなど'
           className={styles.input}
-        ></input>
+        />
         <button type='submit' className={styles.button}>
           <img
             src='/icon/search.svg'

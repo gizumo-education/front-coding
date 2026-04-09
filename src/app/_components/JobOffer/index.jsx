@@ -22,18 +22,18 @@ export const JobOffer = () => {
               平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
             </h3>
             <div className={styles['text-container']}>
-              <div className={styles['text-box']}>
-                <p className={styles.category}>給与</p>
-                <p className={styles.content}>月給 148,000円～</p>
-              </div>
-              <div className={styles['text-box']}>
-                <p className={styles.category}>所在地</p>
-                <p className={styles.content}>三重県伊勢市</p>
-              </div>
-              <div className={styles['text-box']}>
-                <p className={styles.category}>最寄駅</p>
-                <p className={styles.content}>伊勢市駅 徒歩15分</p>
-              </div>
+              <dl className={styles['text-box']}>
+                <dt className={styles.category}>給与</dt>
+                <dd className={styles.content}>月給 148,000円～</dd>
+              </dl>
+              <dl className={styles['text-box']}>
+                <dt className={styles.category}>所在地</dt>
+                <dd className={styles.content}>三重県伊勢市</dd>
+              </dl>
+              <dl className={styles['text-box']}>
+                <dt className={styles.category}>最寄駅</dt>
+                <dd className={styles.content}>伊勢市駅 徒歩15分</dd>
+              </dl>
             </div>
             <button className={styles['is-search']}>
               新着求人一覧をもっと見る
