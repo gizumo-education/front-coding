@@ -69,7 +69,7 @@ export const Recruitment = () => {
         <button type='submit' className={styles.button}>
           <img
             src='/icon/search.svg'
-            alt='虫眼鏡'
+            alt=''
             className={styles.icon}
             width={18}
             height={18}

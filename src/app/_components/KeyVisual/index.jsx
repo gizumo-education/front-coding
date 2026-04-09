@@ -5,7 +5,7 @@ export const KeyVisual = () => {
     <section className={styles['section']}>
       <img
         src='/img/keyVisual.jpg'
-        alt='キービジュアル'
+        alt=''
         width={400}
         height={270}
         className={styles['key-visual']}
