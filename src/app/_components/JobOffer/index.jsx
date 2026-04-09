@@ -35,11 +35,11 @@ export const JobOffer = () => {
                 <dd className={styles.content}>伊勢市駅 徒歩15分</dd>
               </dl>
             </div>
-            <button className={styles['is-search']}>
-              新着求人一覧をもっと見る
-            </button>
           </li>
         </ul>
+        <a href='/' className={styles['is-search']}>
+          新着求人一覧をもっと見る
+        </a>
       </div>
     </section>
   )
