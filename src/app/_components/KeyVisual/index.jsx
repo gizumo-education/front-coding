@@ -6,15 +6,15 @@ export const KeyVisual = () => {
       <img
         src='/img/keyVisual.jpg'
         alt=''
-        width={400}
-        height={270}
+        width={1000}
+        height={661}
         className={styles['key-visual']}
       />
       <img
         src='/img/no-1.png'
         alt='no.1'
-        width={150}
-        height={73}
+        width={158}
+        height={81}
         className={styles.no1}
       />
       <h1 className={styles.title}>医療事務求人を探すならギズジョブ</h1>

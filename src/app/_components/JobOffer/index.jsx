@@ -12,8 +12,8 @@ export const JobOffer = () => {
                 src='/img/job_01.jpg'
                 alt='求人情報01'
                 className={styles['job-img']}
-                width={370}
-                height={208}
+                width={1000}
+                height={660}
               />
               <button className={`${styles.arrow} ${styles.left}`}></button>
               <button className={`${styles.arrow} ${styles.right}`}></button>

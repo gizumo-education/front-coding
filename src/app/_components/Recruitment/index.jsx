@@ -72,7 +72,7 @@ export const Recruitment = () => {
             alt=''
             className={styles.icon}
             width={18}
-            height={18}
+            height={19}
           />
           検索する
         </button>
