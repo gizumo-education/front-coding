@@ -109,11 +109,13 @@
   margin-top: sp-vw(10);
   font-size: sp-vw(16);
   font-weight: 700;
+  line-height: sp-vw(22);
   text-align: left;
   @include media-pc {
     margin-top: pc-vw(8);
     font-size: pc-vw(18);
     font-weight: 400;
+    line-height: pc-vw(22);
   }
 }
 
