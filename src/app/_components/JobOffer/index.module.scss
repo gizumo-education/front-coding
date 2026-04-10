@@ -169,7 +169,8 @@
   border-radius: sp-vw(50);
   transition: 0.3s;
   @include media-pc {
-    display: block;
+    display: flex;
+    align-items: center;
     width: pc-vw(360);
     height: pc-vw(60);
     padding: pc-vw(17) pc-vw(72);
