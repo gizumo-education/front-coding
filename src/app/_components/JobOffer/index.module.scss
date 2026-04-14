@@ -4,6 +4,9 @@
   width: 100%;
   margin-top: sp-vw(20);
   background-color: #{$color-job-green};
+  @include media-pc {
+    margin-top: 0;
+  }
 }
 
 .job {
@@ -57,13 +60,12 @@
   display: block;
   flex-shrink: 0;
   width: 100%;
-  height: sp-vw(208);
   object-fit: cover;
   object-position: top;
   border-radius: 15px;
   @include media-pc {
-    width: pc-vw(280);
-    height: pc-vw(200);
+    width: 100%;
+    max-width: pc-vw(280);
   }
 }
 
@@ -171,6 +173,8 @@
   border-radius: sp-vw(50);
   transition: 0.3s;
   @include media-pc {
+    display: flex;
+    align-items: center;
     width: pc-vw(360);
     height: pc-vw(60);
     margin: 0 auto;

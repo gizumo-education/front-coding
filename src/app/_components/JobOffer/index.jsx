@@ -75,7 +75,6 @@ export const JobOffer = () => {
               breakpoints={{
                 768: {
                   slidesPerView: 4,
-                  spaceBetween: 20,
                 },
               }}
               pagination={false}
