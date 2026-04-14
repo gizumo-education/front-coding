@@ -11,8 +11,13 @@
   height: sp-vw(75);
   background-image: url('/img/information.jpg');
   background-repeat: no-repeat;
-  background-position: center 60%;
+  background-position: center 80%;
   background-size: cover;
+  @include media-pc {
+    gap: pc-vw(21);
+    width: pc-vw(1600);
+    height: pc-vw(300);
+  }
 }
 
 .information::before {
@@ -27,4 +32,8 @@
   font-size: sp-vw(14);
   color: #{$color-white};
   text-align: center;
+  @include media-pc {
+    font-size: pc-vw(25);
+    font-weight: 700;
+  }
 }
