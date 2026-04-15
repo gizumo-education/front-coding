@@ -6,6 +6,7 @@
   z-index: 100;
   display: flex;
   justify-content: flex-end;
+  width: 100%;
   padding: sp-vw(16) sp-vw(15);
   background-color: #{$color-white};
   @include media-pc {
@@ -13,52 +14,23 @@
   }
 }
 
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  @include media-pc {
+    column-gap: pc-vw(25);
+  }
+}
+
+// PC/TAB ヘッダー
+
 .list,
 .button-list {
   display: none;
   @include media-pc {
     display: flex;
-  }
-}
-
-.button {
-  position: relative;
-  display: block;
-  width: sp-vw(50);
-  height: sp-vw(38);
-  border-radius: 50%;
-  @include media-pc {
-    display: none;
-  }
-}
-
-.line {
-  position: absolute;
-  width: 100%;
-  height: sp-vw(6);
-  background-color: #{$color-black};
-  border-radius: 6px;
-}
-
-.line:nth-child(1) {
-  top: 0%;
-}
-
-.line:nth-child(2) {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.line:nth-child(3) {
-  top: 100%;
-  transform: translateY(-100%);
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  @include media-pc {
-    column-gap: pc-vw(25);
   }
 }
 
@@ -162,4 +134,104 @@
     height: pc-vw(16);
     background-image: url('/icon/history.svg');
   }
+}
+
+// SP ハンバーガーメニュー
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: sp-vw(50);
+  height: sp-vw(38);
+  border-radius: 50%;
+  @include media-pc {
+    display: none;
+  }
+}
+
+.hamburger-line {
+  position: absolute;
+  width: 100%;
+  height: sp-vw(6);
+  background-color: #{$color-black};
+  border-radius: 6px;
+  transition:
+    transform 0.3s ease,
+    top 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.hamburger-line:nth-child(1) {
+  top: 0%;
+}
+
+.hamburger-line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-line:nth-child(3) {
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+.hamburger.open .hamburger-line:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.hamburger.open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .hamburger-line:nth-child(3) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  top: sp-vw(70);
+  pointer-events: none;
+  background: rgb(0 0 0 / 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  &.open {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  @include media-pc {
+    display: none;
+  }
+}
+
+.sp-menu {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(38);
+  align-items: flex-start;
+  width: 100%;
+  height: calc(100vh - sp-vw(70));
+  padding: sp-vw(57) sp-vw(98) sp-vw(235) sp-vw(60);
+  background-color: rgb(0 0 0 / 70%);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+
+  &.open {
+    transform: translateX(0);
+  }
+  @include media-pc {
+    display: none;
+  }
+}
+
+.sp-menu-link {
+  width: 100%;
+  font-size: sp-vw(22);
+  font-weight: 700;
+  color: #{$color-white};
 }
