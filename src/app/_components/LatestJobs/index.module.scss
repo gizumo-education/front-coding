@@ -1,0 +1,60 @@
+@use '@/styles' as *;
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: sp-vw(15);
+  padding-bottom: sp-vw(60);
+  padding-left: sp-vw(15);
+  background-color: #{$color-ice-blue};
+}
+
+.title {
+  margin-top: sp-vw(30);
+  margin-bottom: sp-vw(35);
+  font-size: sp-vw(25);
+  font-weight: bold;
+  text-align: center;
+}
+
+.jobs-card {
+  margin-bottom: sp-vw(44);
+
+  &-title {
+    margin-top: sp-vw(11);
+    margin-bottom: sp-vw(11);
+    font-size: sp-vw(16);
+    font-weight: bold;
+    line-height: 1.4;
+  }
+}
+
+.jobs-info {
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: sp-vw(4);
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+  }
+
+  &-label {
+    flex-shrink: 0;
+    width: sp-vw(60);
+    height: sp-vw(21);
+    font-size: sp-vw(14);
+    line-height: sp-vw(21);
+    text-align: center;
+    background-color: #{$color-light-pink};
+  }
+
+  &-data {
+    padding-left: sp-vw(21);
+    font-size: sp-vw(14);
+    line-height: sp-vw(21);
+  }
+}

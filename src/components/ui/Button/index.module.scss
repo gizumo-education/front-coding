@@ -1,0 +1,41 @@
+@use '@/styles' as *;
+
+.button {
+  display: inline-flex;
+  gap: sp-vw(14);
+  align-items: center;
+  justify-content: center;
+  font-size: sp-vw(18);
+  font-weight: bold;
+  color: #{$color-white};
+  white-space: nowrap;
+  background-color: #{$color-soft-pink};
+}
+
+.full-width {
+  display: flex;
+  width: 100%;
+}
+
+.medium {
+  height: sp-vw(60);
+  border-radius: sp-vw(30);
+}
+
+.small {
+  height: sp-vw(40);
+  padding-right: sp-vw(43);
+  font-size: sp-vw(14);
+  border-radius: sp-vw(20);
+}
+
+.icon {
+  display: inline-block;
+  width: sp-vw(18);
+  height: sp-vw(18);
+  margin-left: sp-vw(13);
+  background-color: #{$color-white};
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
