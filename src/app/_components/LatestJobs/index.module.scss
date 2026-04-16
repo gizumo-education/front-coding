@@ -10,6 +10,54 @@
   background-color: #{$color-ice-blue};
 }
 
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.arrow-button {
+  position: absolute;
+  top: sp-vw(157);
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(42);
+  height: sp-vw(42);
+  padding: 0;
+  background-color: #{$color-white-alpha-25};
+  border: none;
+  border-radius: 50%;
+
+  &::after {
+    width: sp-vw(10);
+    height: sp-vw(10);
+    content: '';
+    border-top: sp-vw(1) solid #{$color-black};
+    border-right: sp-vw(1) solid #{$color-black};
+  }
+
+  &.prev {
+    left: 0;
+
+    &::after {
+      margin-left: sp-vw(4);
+      transform: rotate(-135deg);
+    }
+  }
+
+  // 右向き
+  &.next {
+    right: 0;
+
+    &::after {
+      margin-right: sp-vw(4);
+      transform: rotate(45deg);
+    }
+  }
+}
+
 .title {
   margin-top: sp-vw(30);
   margin-bottom: sp-vw(35);
