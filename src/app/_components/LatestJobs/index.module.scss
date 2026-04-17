@@ -47,7 +47,6 @@
     }
   }
 
-  // 右向き
   &.next {
     right: 0;
 
@@ -66,8 +65,29 @@
   text-align: center;
 }
 
+// 3. カードを並べるためのコンテナを追加
+.jobs-container {
+  display: flex;
+  flex-direction: column; // スマホでは縦並び（スライダー化するならここが変化します）
+  gap: sp-vw(20); // カード同士の隙間
+
+  @include media-pc {
+    // PCデザインカンプに合わせてサイズなど指定
+    flex-direction: row; // PCでは横並び
+    gap: pc-vw(20);
+    justify-content: space-between;
+  }
+}
+
 .jobs-card {
+  width: 100%; // スマホでは1枚全幅
   margin-bottom: sp-vw(44);
+
+  @include media-pc {
+    // PCデザインカンプに合わせてサイズなど指定
+    width: pc-vw(280); // 4枚並ぶように幅を調整（数値はデザインに合わせて）
+    margin-bottom: 0;
+  }
 
   &-title {
     margin-top: sp-vw(11);
