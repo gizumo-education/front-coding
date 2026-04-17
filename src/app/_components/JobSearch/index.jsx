@@ -47,7 +47,7 @@ export const JobSearch = () => {
         <input
           type='search'
           name='keyword'
-          autocomplete='off'
+          autoComplete='off'
           placeholder='キーワード・企業名・スキルなど'
           className={styles.search}
         />

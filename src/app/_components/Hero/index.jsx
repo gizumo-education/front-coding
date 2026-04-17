@@ -8,8 +8,8 @@ export const Hero = () => {
           <img
             src='/images/keyVisualLabel_sp.png'
             alt='no.1'
-            width='400'
-            height='270'
+            width='149.54'
+            height='73.36'
             className={styles.label}
           />
           <h1 className={styles.title}>医療事務求人を探すならギズジョブ</h1>
