@@ -1,0 +1,98 @@
+@use '@/styles' as *;
+
+.job-search-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: sp-vw(15) sp-vw(25) sp-vw(20);
+  margin: sp-vw(25) sp-vw(15);
+  background-color: #{$color-pale-blue};
+  border-radius: sp-vw(10);
+}
+
+.title {
+  margin-bottom: sp-vw(16);
+  font-size: sp-vw(22);
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  margin-bottom: sp-vw(13);
+  font-size: sp-vw(14);
+  text-align: center;
+}
+
+.select {
+  display: block;
+  width: 100%;
+  height: 100%;
+  height: sp-vw(28);
+  padding: 0 sp-vw(20) 0 sp-vw(8);
+  padding-top: 0;
+  padding-bottom: 0;
+  text-overflow: ellipsis;
+  font-size: inherit;
+  line-height: 1;
+  line-height: sp-vw(28);
+  color: inherit;
+  white-space: nowrap;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  border: none;
+
+  &-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: sp-vw(100);
+    height: sp-vw(30);
+    margin-right: sp-vw(10);
+    margin-bottom: sp-vw(15);
+    font-size: sp-vw(12);
+    background-color: #{$color-white};
+    border: #{$color-pink} solid sp-vw(1);
+    border-radius: sp-vw(5);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: sp-vw(10);
+      font-size: sp-vw(12);
+      color: #{$color-pink};
+      pointer-events: none;
+      content: '▼';
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.search {
+  width: sp-vw(320);
+  height: sp-vw(30);
+  padding-right: sp-vw(7);
+  padding-left: sp-vw(7);
+  margin-right: auto;
+  margin-bottom: sp-vw(15);
+  margin-left: auto;
+  background-color: #{$color-white};
+  border: #{$color-pink} solid sp-vw(1);
+  border-radius: sp-vw(5);
+
+  &::placeholder {
+    font-size: sp-vw(14);
+    color: #{$color-gray};
+  }
+}
