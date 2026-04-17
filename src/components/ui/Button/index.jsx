@@ -2,13 +2,14 @@ import styles from './index.module.scss'
 
 export const Button = ({
   text,
+  type = 'button',
   icon,
   isFullWidth = false,
   size = 'medium',
 }) => {
   return (
     <button
-      type='button'
+      type={type}
       className={`
         ${styles.button}
         ${styles[size]}
