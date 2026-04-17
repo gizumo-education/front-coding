@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/Button'
 export const JobSearch = () => {
   return (
     <section>
-      <div className={styles['job-search-wrapper']}>
-        <h1 className={styles.title}>お仕事検索</h1>
+      <form action='#' className={styles['job-search-wrapper']}>
+        <h2 className={styles.title}>お仕事検索</h2>
         <p className={styles.description}>
           働きたい職種・地域・希望給与を入れて検索！
         </p>
@@ -46,6 +46,8 @@ export const JobSearch = () => {
         </div>
         <input
           type='search'
+          name='keyword'
+          autocomplete='off'
           placeholder='キーワード・企業名・スキルなど'
           className={styles.search}
         />
@@ -54,8 +56,9 @@ export const JobSearch = () => {
           icon='/icon/search.svg'
           size='small'
           className={styles.button}
+          type='submit'
         />
-      </div>
+      </form>
     </section>
   )
 }
