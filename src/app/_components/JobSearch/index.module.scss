@@ -44,6 +44,7 @@
   font-size: sp-vw(14);
   text-align: center;
   @include media-pc {
+    margin-bottom: pc-vw(26);
     font-size: pc-vw(20);
   }
 }
@@ -114,6 +115,7 @@
       content: '▼';
       transform: translateY(-50%);
       @include media-pc {
+        right: pc-vw(15);
         font-size: pc-vw(20);
       }
     }

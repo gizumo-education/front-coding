@@ -51,7 +51,7 @@ export const LatestJobs = () => {
               <img
                 src={job.imageSp}
                 alt={job.title}
-                width='380'
+                width='280'
                 height='200'
                 className={styles.image}
               />

@@ -8,11 +8,15 @@ export const Hero = () => {
           <picture>
             <source
               srcSet='/images/keyVisualLabel_sp.png'
+              width='150'
+              height='73'
               media='(max-width: 768px)'
               className={styles.label}
             />
             <img
               src='/images/keyVisualLabel_pc.png'
+              width='342'
+              height='169'
               alt='no.1'
               className={styles.label}
             />

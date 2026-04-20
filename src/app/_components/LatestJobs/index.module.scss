@@ -61,6 +61,9 @@
     &::after {
       margin-left: sp-vw(4);
       transform: rotate(-135deg);
+      @include media-pc {
+        margin-left: pc-vw(8);
+      }
     }
   }
 
@@ -70,6 +73,9 @@
     &::after {
       margin-right: sp-vw(4);
       transform: rotate(45deg);
+      @include media-pc {
+        margin-right: pc-vw(8);
+      }
     }
   }
 }
@@ -118,6 +124,7 @@
       margin-top: pc-vw(8);
       margin-bottom: pc-vw(7);
       font-size: pc-vw(16);
+      font-weight: normal;
     }
   }
 }

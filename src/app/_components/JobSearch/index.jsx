@@ -56,7 +56,6 @@ export const JobSearch = () => {
             text='検索する'
             icon='/icon/search.svg'
             size='small'
-            className={styles.button}
             type='submit'
           />
         </div>
