@@ -1,6 +1,11 @@
 @use '@/styles' as *;
 
 .hero {
+  @include media-pc {
+    height: pc-vw(500);
+    background-color: #{$color-hero};
+  }
+
   &-inner {
     display: grid;
     justify-content: end;
@@ -8,6 +13,14 @@
     background-image: url('/images/keyVisual_sp.png');
     background-repeat: no-repeat;
     background-size: cover;
+    @include media-pc {
+      max-width: pc-vw(1262);
+      height: pc-vw(500);
+      aspect-ratio: 1262 / 500;
+      margin: 0 auto;
+      background-image: url('/images/keyVisual_pc.png');
+      background-size: cover;
+    }
   }
 
   &-container {
@@ -16,12 +29,20 @@
     align-items: center;
     margin-top: sp-vw(62);
     margin-right: sp-vw(3);
+    @include media-pc {
+      margin-top: pc-vw(56);
+      margin-right: pc-vw(30);
+    }
   }
 }
 
 .label {
   width: sp-vw(150);
   height: sp-vw(74);
+  @include media-pc {
+    width: pc-vw(342);
+    height: pc-vw(169);
+  }
 }
 
 .title {
@@ -30,6 +51,9 @@
   font-weight: bold;
   color: #{$color-white};
   text-shadow: 0 4px 4px 0 $color-black-alpha-25;
+  @include media-pc {
+    font-size: pc-vw(50);
+  }
 }
 
 .job-count {
@@ -42,15 +66,27 @@
   background-color: #{$color-white};
   border: #{$color-mint} solid sp-vw(1);
   border-radius: sp-vw(5);
+  @include media-pc {
+    width: pc-vw(391);
+    height: pc-vw(69);
+    border: #{$color-mint} solid pc-vw(2.3);
+    border-radius: pc-vw(10);
+  }
 
   &-text {
     font-size: sp-vw(8);
     color: #{$color-mint};
+    @include media-pc {
+      font-size: pc-vw(20);
+    }
   }
 
   &-num {
     font-size: sp-vw(16);
     font-weight: bold;
     color: #{$color-mint};
+    @include media-pc {
+      font-size: pc-vw(40);
+    }
   }
 }

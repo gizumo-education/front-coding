@@ -8,6 +8,12 @@
   padding-bottom: sp-vw(60);
   padding-left: sp-vw(15);
   background-color: #{$color-ice-blue};
+  @include media-pc {
+    align-items: flex-start;
+    padding-right: pc-vw(210);
+    padding-bottom: pc-vw(67);
+    padding-left: pc-vw(210);
+  }
 }
 
 .slider-wrapper {
@@ -29,6 +35,11 @@
   background-color: #{$color-white-alpha-25};
   border: none;
   border-radius: 50%;
+  @include media-pc {
+    top: pc-vw(70);
+    width: pc-vw(60);
+    height: pc-vw(60);
+  }
 
   &::after {
     width: sp-vw(10);
@@ -36,6 +47,12 @@
     content: '';
     border-top: sp-vw(1) solid #{$color-black};
     border-right: sp-vw(1) solid #{$color-black};
+    @include media-pc {
+      width: pc-vw(21);
+      height: pc-vw(21);
+      border-top: pc-vw(1) solid #{$color-black};
+      border-right: pc-vw(1) solid #{$color-black};
+    }
   }
 
   &.prev {
@@ -62,31 +79,33 @@
   margin-bottom: sp-vw(35);
   font-size: sp-vw(25);
   font-weight: bold;
-  text-align: center;
+  @include media-pc {
+    margin-top: pc-vw(64);
+    margin-bottom: pc-vw(25);
+    font-size: pc-vw(25);
+    font-weight: normal;
+    text-align: left;
+  }
 }
 
-// 3. カードを並べるためのコンテナを追加
 .jobs-container {
   display: flex;
-  flex-direction: column; // スマホでは縦並び（スライダー化するならここが変化します）
-  gap: sp-vw(20); // カード同士の隙間
+  flex-direction: column;
+  gap: sp-vw(20);
 
   @include media-pc {
-    // PCデザインカンプに合わせてサイズなど指定
-    flex-direction: row; // PCでは横並び
+    flex-direction: row;
     gap: pc-vw(20);
     justify-content: space-between;
   }
 }
 
 .jobs-card {
-  width: 100%; // スマホでは1枚全幅
+  width: 100%;
   margin-bottom: sp-vw(44);
-
   @include media-pc {
-    // PCデザインカンプに合わせてサイズなど指定
-    width: pc-vw(280); // 4枚並ぶように幅を調整（数値はデザインに合わせて）
-    margin-bottom: 0;
+    width: pc-vw(280);
+    margin-bottom: pc-vw(60);
   }
 
   &-title {
@@ -95,6 +114,24 @@
     font-size: sp-vw(16);
     font-weight: bold;
     line-height: 1.4;
+    @include media-pc {
+      margin-top: pc-vw(8);
+      margin-bottom: pc-vw(7);
+      font-size: pc-vw(16);
+    }
+  }
+}
+
+.image {
+  width: sp-vw(370);
+  height: sp-vw(208);
+  object-fit: cover;
+  object-position: 0 0;
+  border-radius: sp-vw(10);
+  @include media-pc {
+    width: pc-vw(280);
+    height: pc-vw(200);
+    border-radius: pc-vw(10);
   }
 }
 
@@ -103,6 +140,9 @@
     display: flex;
     flex-direction: column;
     gap: sp-vw(4);
+    @include media-pc {
+      gap: pc-vw(8);
+    }
   }
 
   &-item {
@@ -118,11 +158,22 @@
     line-height: sp-vw(21);
     text-align: center;
     background-color: #{$color-light-pink};
+    @include media-pc {
+      width: pc-vw(60);
+      height: pc-vw(21);
+      font-size: pc-vw(14);
+      line-height: pc-vw(21);
+    }
   }
 
   &-data {
     padding-left: sp-vw(21);
     font-size: sp-vw(14);
     line-height: sp-vw(21);
+    @include media-pc {
+      padding-left: pc-vw(10);
+      font-size: pc-vw(14);
+      line-height: pc-vw(21);
+    }
   }
 }

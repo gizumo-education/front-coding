@@ -5,13 +5,18 @@ export const Hero = () => {
     <section className={styles.hero}>
       <div className={styles['hero-inner']}>
         <div className={styles['hero-container']}>
-          <img
-            src='/images/keyVisualLabel_sp.png'
-            alt='no.1'
-            width='150'
-            height='74'
-            className={styles.label}
-          />
+          <picture>
+            <source
+              srcSet='/images/keyVisualLabel_sp.png'
+              media='(max-width: 768px)'
+              className={styles.label}
+            />
+            <img
+              src='/images/keyVisualLabel_pc.png'
+              alt='no.1'
+              className={styles.label}
+            />
+          </picture>
           <h1 className={styles.title}>医療事務求人を探すならギズジョブ</h1>
           <div className={styles['job-count']}>
             <p className={styles['job-count-text']}>
