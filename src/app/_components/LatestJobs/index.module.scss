@@ -7,6 +7,7 @@
   padding-right: sp-vw(15);
   padding-bottom: sp-vw(60);
   padding-left: sp-vw(15);
+  overflow: hidden; // スライダーが画面外にはみ出すのを防ぐ
   background-color: #{$color-ice-blue};
   @include media-pc {
     align-items: flex-start;
@@ -94,23 +95,24 @@
   }
 }
 
-.jobs-container {
-  display: flex;
-  flex-direction: column;
-  gap: sp-vw(20);
+// .jobs-container {
+//   display: flex;
+//   flex-direction: column;
+//   gap: sp-vw(20);
 
-  @include media-pc {
-    flex-direction: row;
-    gap: pc-vw(20);
-    justify-content: space-between;
-  }
-}
+//   @include media-pc {
+//     flex-direction: row;
+//     gap: pc-vw(20);
+//     justify-content: space-between;
+//   }
+// }
 
 .jobs-card {
   width: 100%;
   margin-bottom: sp-vw(44);
   @include media-pc {
     width: pc-vw(280);
+    margin-inline: auto;
     margin-bottom: pc-vw(60);
   }
 
