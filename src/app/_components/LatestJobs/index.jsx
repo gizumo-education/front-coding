@@ -4,7 +4,7 @@ import styles from './index.module.scss'
 const JOBS_DATA = [
   {
     id: 1,
-    imageSp: '/images/LatestJobs1.png',
+    photo: '/images/LatestJobs1.png',
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
     salary: '月給 148,000円〜',
     location: '三重県伊勢市',
@@ -12,7 +12,7 @@ const JOBS_DATA = [
   },
   {
     id: 2,
-    imageSp: '/images/LatestJobs2.png',
+    photo: '/images/LatestJobs2.png',
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
     salary: '月給 148,000円〜',
     location: '三重県伊勢市',
@@ -20,7 +20,7 @@ const JOBS_DATA = [
   },
   {
     id: 3,
-    imageSp: '/images/LatestJobs3.png',
+    photo: '/images/LatestJobs3.png',
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
     salary: '月給 148,000円〜',
     location: '三重県伊勢市',
@@ -28,7 +28,7 @@ const JOBS_DATA = [
   },
   {
     id: 4,
-    imageSp: '/images/LatestJobs4.png',
+    photo: '/images/LatestJobs4.png',
     title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
     salary: '月給 148,000円〜',
     location: '三重県伊勢市',
@@ -49,7 +49,7 @@ export const LatestJobs = () => {
           {JOBS_DATA.map((job) => (
             <div key={job.id} className={styles['jobs-card']}>
               <img
-                src={job.imageSp}
+                src={job.photo}
                 alt={job.title}
                 width='280'
                 height='200'

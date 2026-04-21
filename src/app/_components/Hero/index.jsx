@@ -10,7 +10,7 @@ export const Hero = () => {
               srcSet='/images/keyVisualLabel_sp.png'
               width='150'
               height='73'
-              media='(max-width: 768px)'
+              media='(max-width: 767px)'
               className={styles.label}
             />
             <img

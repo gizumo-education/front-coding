@@ -21,8 +21,8 @@
   display: flex;
   width: 100%;
   @include media-pc {
-    display: inline-flex; // PCでは中身に合わせた幅にする
-    width: auto; // 横幅100%を解除
+    display: inline-flex;
+    width: auto;
   }
 }
 
@@ -62,7 +62,5 @@
     width: pc-vw(30);
     height: pc-vw(30);
     margin-left: pc-vw(14);
-
-    // : pc-vw();
   }
 }

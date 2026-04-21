@@ -38,7 +38,7 @@
 
 .label {
   width: sp-vw(150);
-  height: sp-vw(74);
+  height: sp-vw(73);
   @include media-pc {
     width: pc-vw(342);
     height: pc-vw(169);
@@ -52,6 +52,7 @@
   color: #{$color-white};
   text-shadow: 0 4px 4px 0 $color-black-alpha-25;
   @include media-pc {
+    margin-top: pc-vw(40);
     font-size: pc-vw(50);
   }
 }
@@ -69,6 +70,7 @@
   @include media-pc {
     width: pc-vw(391);
     height: pc-vw(69);
+    margin-top: pc-vw(54);
     border: #{$color-mint} solid pc-vw(2.3);
     border-radius: pc-vw(10);
   }
