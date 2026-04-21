@@ -10,16 +10,30 @@
   color: #{$color-white};
   white-space: nowrap;
   background-color: #{$color-soft-pink};
+  @include media-pc {
+    gap: pc-vw(6);
+    margin: 0 auto;
+    font-size: pc-vw(18);
+  }
 }
 
 .full-width {
   display: flex;
   width: 100%;
+  @include media-pc {
+    display: inline-flex;
+    width: auto;
+  }
 }
 
 .medium {
   height: sp-vw(60);
   border-radius: sp-vw(30);
+  @include media-pc {
+    height: pc-vw(60);
+    padding: pc-vw(17) pc-vw(72);
+    border-radius: pc-vw(30);
+  }
 }
 
 .small {
@@ -27,6 +41,12 @@
   padding-right: sp-vw(43);
   font-size: sp-vw(14);
   border-radius: sp-vw(20);
+  @include media-pc {
+    height: pc-vw(60);
+    padding-right: pc-vw(20);
+    font-size: pc-vw(18);
+    border-radius: pc-vw(30);
+  }
 }
 
 .icon {
@@ -38,4 +58,9 @@
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
+  @include media-pc {
+    width: pc-vw(30);
+    height: pc-vw(30);
+    margin-left: pc-vw(14);
+  }
 }
