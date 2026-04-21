@@ -53,7 +53,7 @@ const JOBS_DATA = [
 
 export const LatestJobs = () => {
   return (
-    <section className={styles.section}>
+    <section id='latest-jobs' className={styles.section}>
       <h2 className={styles.title}>新着求人</h2>
       <div className={styles['slider-wrapper']}>
         <button
@@ -74,9 +74,8 @@ export const LatestJobs = () => {
             nextEl: `.${styles.next}`,
           }}
           breakpoints={{
-            // PCサイズの時の調整
             768: {
-              slidesPerView: 4, // PCでは4枚並べる
+              slidesPerView: 4,
               centeredSlides: false,
             },
           }}

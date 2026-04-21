@@ -2,7 +2,7 @@ import styles from './index.module.scss'
 
 export const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section id='hero' className={styles.hero}>
       <div className={styles['hero-inner']}>
         <div className={styles['hero-container']}>
           <picture>
