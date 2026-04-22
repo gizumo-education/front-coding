@@ -12,7 +12,7 @@ export const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1024) {
+      if (window.innerWidth >= 768) {
         setIsOpen(false)
       }
     }
@@ -21,6 +21,18 @@ export const Header = () => {
 
     return () => window.removeEventListener('resize', handleResize)
   }, [])
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'visible'
+    }
+    return () => {
+      document.body.style.overflow = 'visible'
+    }
+  }, [isOpen])
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
