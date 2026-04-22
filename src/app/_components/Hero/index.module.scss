@@ -1,6 +1,7 @@
 @use '@/styles' as *;
 
 .hero {
+  scroll-margin-top: sp-vw(70);
   @include media-pc {
     height: pc-vw(500);
     background-color: #{$color-hero};

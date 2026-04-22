@@ -15,6 +15,11 @@
     margin: 0 auto;
     font-size: pc-vw(18);
   }
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }
 
 .full-width {
