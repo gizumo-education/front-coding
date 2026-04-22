@@ -66,13 +66,11 @@ export const Header = () => {
           <span className={styles.line} />
           <span className={styles.line} />
         </button>
-        {/* 1. 背景部分の div に onClick を残す場合は role と TabIndex を追加 */}
         <div
           className={clsx(styles['menu-drawer'], isOpen && styles.active)}
           onClick={() => setIsOpen(false)}
           role='presentation'
         >
-          {/* 2. menu-inner も同様の対応。キーボードの Enter でも反応するようにします */}
           <div
             className={styles['menu-inner']}
             onClick={toggleMenu}
