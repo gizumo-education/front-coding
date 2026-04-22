@@ -76,6 +76,7 @@ export const LatestJobs = () => {
           breakpoints={{
             768: {
               slidesPerView: 4,
+              spaceBetween: 20,
               centeredSlides: false,
             },
           }}

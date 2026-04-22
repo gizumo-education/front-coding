@@ -9,6 +9,7 @@ export const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
@@ -65,31 +66,85 @@ export const Header = () => {
           <span className={styles.line} />
           <span className={styles.line} />
         </button>
-        <div className={clsx(styles['menu-drawer'], isOpen && styles.active)}>
-          <div className={styles['menu-inner']}>
+        {/* 1. 背景部分の div に onClick を残す場合は role と TabIndex を追加 */}
+        <div
+          className={clsx(styles['menu-drawer'], isOpen && styles.active)}
+          onClick={() => setIsOpen(false)}
+          role='presentation'
+        >
+          {/* 2. menu-inner も同様の対応。キーボードの Enter でも反応するようにします */}
+          <div
+            className={styles['menu-inner']}
+            onClick={toggleMenu}
+            onKeyDown={(e) => {
+              if (
+                typeof window !== 'undefined' &&
+                (e.key === 'Enter' || e.key === ' ')
+              ) {
+                toggleMenu()
+              }
+            }}
+            role='button'
+            tabIndex={0}
+          >
             <ul className={styles['menu-list']}>
               <li className={styles['menu-list-li']}>
-                <a href='#hero' onClick={() => setIsOpen(false)}>
+                <a
+                  href='#hero'
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    setIsOpen(false)
+                  }}
+                  className={styles['menu-list-li-a']}
+                >
                   トップ
                 </a>
               </li>
               <li className={styles['menu-list-li']}>
-                <a href='#latest-jobs' onClick={() => setIsOpen(false)}>
+                <a
+                  href='#latest-jobs'
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    setIsOpen(false)
+                  }}
+                  className={styles['menu-list-li-a']}
+                >
                   新着求人
                 </a>
               </li>
               <li className={styles['menu-list-li']}>
-                <a href='/' onClick={() => setIsOpen(false)}>
+                <a
+                  href='/'
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    setIsOpen(false)
+                  }}
+                  className={styles['menu-list-li-a']}
+                >
                   4つの特徴
                 </a>
               </li>
               <li className={styles['menu-list-li']}>
-                <a href='/' onClick={() => setIsOpen(false)}>
+                <a
+                  href='/'
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    setIsOpen(false)
+                  }}
+                  className={styles['menu-list-li-a']}
+                >
                   転職までの流れ
                 </a>
               </li>
               <li className={styles['menu-list-li']}>
-                <a href='/' onClick={() => setIsOpen(false)}>
+                <a
+                  href='/'
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    setIsOpen(false)
+                  }}
+                  className={styles['menu-list-li-a']}
+                >
                   転職お役立ちコンテンツ
                 </a>
               </li>
