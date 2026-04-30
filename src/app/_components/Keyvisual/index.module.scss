@@ -1,0 +1,69 @@
+@use '@/styles' as *;
+
+@use '../../../styles/functions' as *;
+@use '../../../styles/variables' as *;
+
+.keyvisual {
+  width: 100%;
+  overflow: hidden;
+}
+
+.background-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2.3px solid #{$color-light-blue};
+}
+
+.no1-badge {
+  position: absolute;
+  top: sp-vw(131);
+  left: sp-vw(200);
+  width: sp-vw(149);
+  height: sp-vw(73);
+  object-fit: contain;
+  object-position: center;
+}
+
+.giz-job {
+  position: absolute;
+  top: sp-vw(217);
+  left: sp-vw(124);
+  width: sp-vw(272);
+  height: sp-vw(22);
+  font-family: 'DM Sans', sans-serif;
+  font-size: sp-vw(17);
+  font-weight: bold;
+  font-weight: 700;
+  color: #{$color-white};
+  text-shadow: 0 4px 4px 0 #{$color-semi-black};
+}
+
+.job-count {
+  position: absolute;
+  top: sp-vw(258);
+  left: sp-vw(189);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(170);
+  height: sp-vw(30);
+  background-color: #{$color-white};
+  border: 1px solid #{$color-blue-green};
+  border-radius: 5px;
+}
+
+.job-count-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: sp-vw(8);
+  font-weight: 400;
+  line-height: 1;
+  color: #{$color-blue-green};
+  letter-spacing: 0;
+}
+
+.job-count-number {
+  font-size: sp-vw(16);
+  font-weight: 700;
+}
