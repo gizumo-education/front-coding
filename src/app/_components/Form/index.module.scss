@@ -3,6 +3,14 @@
 @use '../../../styles/functions' as *;
 @use '../../../styles/variables' as *;
 
+.list {
+  font-size: sp-vw(22);
+
+  @include media-pc {
+    font-size: pc-vw(25);
+  }
+}
+
 .form {
   position: relative;
   width: sp-vw(370);
