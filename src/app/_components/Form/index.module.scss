@@ -1,0 +1,146 @@
+@use '@/styles' as *;
+
+@use '../../../styles/functions' as *;
+@use '../../../styles/variables' as *;
+
+.list {
+  font-size: sp-vw(22);
+}
+
+.form {
+  position: relative;
+  width: sp-vw(370);
+  height: sp-vw(240);
+  padding: sp-vw(15) sp-vw(20) sp-vw(40);
+  margin: sp-vw(25) auto 0;
+  background: #{$color-pale-blue};
+  border-radius: sp-vw(20);
+}
+
+.title {
+  position: absolute;
+  top: sp-vw(15);
+  left: 50%;
+  margin-bottom: sp-vw(16);
+  font-size: sp-vw(22);
+  font-weight: bold;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.subtitle {
+  position: absolute;
+  top: sp-vw(53);
+  left: 50%;
+  width: sp-vw(370);
+  margin-bottom: sp-vw(20);
+  font-size: sp-vw(14);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0;
+  transform: translateX(-50%);
+}
+
+.form-group {
+  position: absolute;
+  top: sp-vw(86);
+  display: flex;
+  flex-direction: row;
+  gap: sp-vw(8);
+  justify-content: space-between;
+  width: sp-vw(320);
+  margin-right: auto;
+  margin-bottom: sp-vw(22);
+  margin-left: auto;
+}
+
+.select-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: sp-vw(100);
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: sp-vw(8);
+    font-size: sp-vw(10);
+    color: #{$color-pink};
+    pointer-events: none;
+    content: '▼';
+    transform: translateY(-50%);
+  }
+}
+
+.select {
+  width: 100%;
+  height: sp-vw(30);
+  padding: 0 sp-vw(20) 0 sp-vw(6);
+  font-size: sp-vw(12);
+  line-height: sp-vw(30);
+  color: #{$color-black};
+  appearance: none;
+  cursor: pointer;
+  background-color: #{$color-white};
+  border: sp-vw(1) solid #{$color-pink};
+  border-radius: sp-vw(4);
+}
+
+.input-wrapper {
+  position: absolute;
+  top: sp-vw(131);
+  margin-bottom: sp-vw(19);
+}
+
+.input {
+  display: block;
+  width: sp-vw(320);
+  height: sp-vw(30);
+  padding: sp-vw(8) sp-vw(12);
+  margin: 0 auto;
+  font-size: sp-vw(14);
+  color: #{$color-black};
+  background-color: #{$color-white};
+  border: sp-vw(1) solid #{$color-pink};
+  border-radius: sp-vw(4);
+
+  &::placeholder {
+    color: #{$color-gray};
+  }
+}
+
+.button {
+  position: absolute;
+  top: sp-vw(180);
+  left: 50%;
+  display: flex;
+  gap: sp-vw(8);
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(160);
+  height: sp-vw(40);
+  padding: 0;
+  margin: 0 auto;
+  font-size: sp-vw(18);
+  font-style: normal;
+  font-weight: 700;
+  line-height: sp-vw(18);
+  color: #{$color-white};
+  letter-spacing: 0;
+  background: #{$color-light-pink};
+  border: none;
+  border-radius: sp-vw(20);
+  transform: translateX(-50%);
+}
+
+.button-icon {
+  display: block;
+  width: sp-vw(18);
+  height: sp-vw(18);
+  filter: brightness(0) invert(1);
+}
+
+.button-text {
+  line-height: 1;
+}
