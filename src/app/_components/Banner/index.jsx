@@ -4,7 +4,7 @@ export const Banner = () => {
   return (
     <section className={styles['banner']}>
       <img
-        src='img/group21.png'
+        src='img/meeting.png'
         alt=''
         className={styles['background-image']}
         width='400'

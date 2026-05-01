@@ -12,7 +12,7 @@ export const News = () => {
           aria-label='次のスライド'
         >
           <img
-            src='/img/path69.png'
+            src='/img/arrow-right.png'
             alt=''
             className={styles['nav-icon-right']}
           />
@@ -24,7 +24,7 @@ export const News = () => {
           aria-label='前のスライド'
         >
           <img
-            src='/img/path71.png'
+            src='/img/arrow-left.png'
             alt=''
             className={styles['nav-icon-left']}
           />
@@ -33,7 +33,7 @@ export const News = () => {
         <div className={styles['card']}>
           <div className={styles['image-wrapper']}>
             <img
-              src='img/group10.png'
+              src='img/person-with-documents-2.png'
               alt='平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人'
               className={styles['image']}
               width='370'
