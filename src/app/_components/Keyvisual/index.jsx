@@ -10,6 +10,14 @@ export const Keyvisual = () => {
         height={270}
         alt=''
       />
+      <img
+        className={styles['no1-badge']}
+        src='/img/keyvisual.png'
+        width={149}
+        height={73}
+        alt='No.1画像'
+      />
+
       <h1 className={styles['giz-job']}>医療事務求人を探すならギズジョブ</h1>
       <div className={styles['job-count']}>
         <p className={styles['job-count-text']}>
