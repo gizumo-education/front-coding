@@ -5,10 +5,6 @@
 
 .list {
   font-size: sp-vw(22);
-
-  @include media-pc {
-    font-size: pc-vw(25);
-  }
 }
 
 .form {
