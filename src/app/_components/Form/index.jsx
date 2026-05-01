@@ -56,7 +56,7 @@ export const Form = () => {
 
       <button type='submit' className={styles.button}>
         <img
-          src='img/path18.png'
+          src='/icon/search.svg'
           alt='検索'
           className={styles['button-icon']}
           width='18'
