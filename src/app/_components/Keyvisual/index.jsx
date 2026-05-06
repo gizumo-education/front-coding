@@ -3,20 +3,28 @@ import styles from './index.module.scss'
 export const Keyvisual = () => {
   return (
     <section className={styles['keyvisual']}>
-      <img
-        className={styles['background-img']}
-        src='/img/person-with-documents.png'
-        width={400}
-        height={270}
-        alt=''
-      />
-      <img
-        className={styles['no1-badge']}
-        src='/img/keyvisual.png'
-        width={149}
-        height={73}
-        alt='No.1画像'
-      />
+      <div className={styles['back-color']}>
+        <picture>
+          <source
+            srcset='/img/person-with-documents.png'
+            media='(max-width: 400px)'
+          />
+          <img
+            className={styles['background-img']}
+            src='/img/person-with-documents-pc.png'
+            alt=''
+          />
+        </picture>
+
+        <picture>
+          <source srcset='/img/keyvisual.png' media='(max-width: 400px)' />
+          <img
+            className={styles['no1-badge']}
+            src='/img/keyvisual-pc.png'
+            alt='No.1画像'
+          />
+        </picture>
+      </div>
 
       <h1 className={styles['giz-job']}>医療事務求人を探すならギズジョブ</h1>
       <div className={styles['job-count']}>

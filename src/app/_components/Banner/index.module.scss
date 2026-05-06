@@ -9,6 +9,10 @@
   height: sp-vw(75);
   overflow: hidden;
 
+  @include media-pc {
+    margin-top: pc-vw(0);
+  }
+
   &::after {
     position: absolute;
     top: 0;
@@ -52,4 +56,9 @@
   line-height: 1.5;
   color: #{$color-white};
   letter-spacing: 0;
+
+  @include media-pc {
+    font-size: pc-vw(25);
+    line-height: 2;
+  }
 }
