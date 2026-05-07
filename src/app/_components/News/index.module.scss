@@ -144,9 +144,16 @@
   }
 }
 
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .image-wrapper {
   width: sp-vw(370);
   height: sp-vw(208);
+  overflow: hidden;
 
   @include media-pc {
     width: pc-vw(280);

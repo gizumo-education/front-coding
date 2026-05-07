@@ -39,7 +39,7 @@ export const News = () => {
                 />
                 <img
                   className={styles['image']}
-                  src='img/person-with-documents-6.jpg'
+                  src='img/person-with-documents-6.png'
                   alt='平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人'
                 />
               </picture>
