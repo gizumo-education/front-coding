@@ -55,7 +55,7 @@ export const Form = () => {
           />
         </div>
 
-        <button type='submit' className={styles.button}>
+        <a href='/' className={styles.button}>
           <img
             src='/icon/search.svg'
             alt='検索'
@@ -64,7 +64,7 @@ export const Form = () => {
             height='18'
           />
           <span className={styles['button-text']}>検索する</span>
-        </button>
+        </a>
       </div>
     </form>
   )
