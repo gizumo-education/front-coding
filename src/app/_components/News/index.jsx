@@ -34,7 +34,7 @@ export const News = () => {
             <div className={styles['image-wrapper']}>
               <picture>
                 <source
-                  srcset='img/person-with-documents-2.png'
+                  srcSet='img/person-with-documents-2.png'
                   media='(max-width: 400px)'
                 />
                 <img

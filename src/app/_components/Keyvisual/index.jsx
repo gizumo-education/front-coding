@@ -6,7 +6,7 @@ export const Keyvisual = () => {
       <div className={styles['back-color']}>
         <picture>
           <source
-            srcset='/img/person-with-documents.png'
+            srcSet='/img/person-with-documents.png'
             media='(max-width: 400px)'
           />
           <img
@@ -17,7 +17,7 @@ export const Keyvisual = () => {
         </picture>
 
         <picture>
-          <source srcset='/img/keyvisual.png' media='(max-width: 400px)' />
+          <source srcSet='/img/keyvisual.png' media='(max-width: 400px)' />
           <img
             className={styles['no1-badge']}
             src='/img/keyvisual-pc.png'
