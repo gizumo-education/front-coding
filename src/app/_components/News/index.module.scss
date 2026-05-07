@@ -85,6 +85,8 @@
 
 .nav-button-right,
 .nav-button-left {
+  position: absolute;
+  z-index: 10;
   display: flex;
   flex-shrink: 0;
   align-items: center;
@@ -111,8 +113,8 @@
   left: sp-vw(343);
 
   @include media-pc {
-    top: 50%;
-    right: pc-vw(-30);
+    top: pc-vw(60);
+    right: pc-vw(170);
     left: auto;
     transform: translateY(-50%);
   }
@@ -124,9 +126,9 @@
   left: sp-vw(15);
 
   @include media-pc {
-    top: 50%;
+    top: pc-vw(60);
     right: auto;
-    left: pc-vw(-30);
+    left: pc-vw(170);
     transform: translateY(-50%);
   }
 }
