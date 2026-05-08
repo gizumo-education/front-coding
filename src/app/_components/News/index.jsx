@@ -32,49 +32,10 @@ export const News = () => {
         <div className={styles['card-content']}>
           <div className={styles['card']}>
             <div className={styles['image-wrapper']}>
-              <picture>
-                <source
-                  srcSet='img/person-with-documents-2.png'
-                  media='(max-width: 400px)'
-                />
-                <img
-                  className={styles['image']}
-                  src='img/person-with-documents-6.png'
-                  alt='平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人'
-                />
-              </picture>
-            </div>
-
-            <div className={styles['content']}>
-              <p className={styles['description']}>
-                平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
-              </p>
-
-              <dl className={styles['info-list']}>
-                <div className={styles['info-item']}>
-                  <dt className={styles['label']}>給与</dt>
-                  <dd className={styles['value']}>月給148,000円〜</dd>
-                </div>
-                <div className={styles['info-item']}>
-                  <dt className={styles['label']}>所在地</dt>
-                  <dd className={styles['value']}>三重県伊勢市</dd>
-                </div>
-                <div className={styles['info-item']}>
-                  <dt className={styles['label']}>最寄駅</dt>
-                  <dd className={styles['value']}>伊勢市駅 徒歩15分</dd>
-                </div>
-              </dl>
-            </div>
-          </div>
-
-          <div className={`${styles['card']} ${styles['card-hidden-sp']}`}>
-            <div className={styles['image-wrapper']}>
               <img
-                src='img/person-with-documents-3.png'
-                alt='平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人'
                 className={styles['image']}
-                width='370'
-                height='208'
+                src='img/person-with-documents-a.jpg'
+                alt='平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人'
               />
             </div>
 
@@ -82,7 +43,6 @@ export const News = () => {
               <p className={styles['description']}>
                 平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
               </p>
-
               <dl className={styles['info-list']}>
                 <div className={styles['info-item']}>
                   <dt className={styles['label']}>給与</dt>
@@ -103,11 +63,9 @@ export const News = () => {
           <div className={`${styles['card']} ${styles['card-hidden-sp']}`}>
             <div className={styles['image-wrapper']}>
               <img
-                src='img/person-with-documents-4.jpg'
-                alt='平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人'
                 className={styles['image']}
-                width='370'
-                height='208'
+                src='img/person-with-documents-b.jpg'
+                alt='平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人'
               />
             </div>
             <div className={styles['content']}>
@@ -134,11 +92,37 @@ export const News = () => {
           <div className={`${styles['card']} ${styles['card-hidden-sp']}`}>
             <div className={styles['image-wrapper']}>
               <img
-                src='img/person-with-documents-5.jpg'
-                alt='平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人'
                 className={styles['image']}
-                width='370'
-                height='208'
+                src='img/person-with-documents-c.jpg'
+                alt='平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人'
+              />
+            </div>
+            <div className={styles['content']}>
+              <p className={styles['description']}>
+                平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
+              </p>
+              <dl className={styles['info-list']}>
+                <div className={styles['info-item']}>
+                  <dt className={styles['label']}>給与</dt>
+                  <dd className={styles['value']}>月給148,000円〜</dd>
+                </div>
+                <div className={styles['info-item']}>
+                  <dt className={styles['label']}>所在地</dt>
+                  <dd className={styles['value']}>三重県伊勢市</dd>
+                </div>
+                <div className={styles['info-item']}>
+                  <dt className={styles['label']}>最寄駅</dt>
+                  <dd className={styles['value']}>伊勢市駅 徒歩15分</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <div className={`${styles['card']} ${styles['card-hidden-sp']}`}>
+            <div className={styles['image-wrapper']}>
+              <img
+                className={styles['image']}
+                src='img/person-with-documents-d.jpg'
+                alt='平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人'
               />
             </div>
             <div className={styles['content']}>

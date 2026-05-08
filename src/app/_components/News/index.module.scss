@@ -66,7 +66,6 @@
   position: relative;
   width: sp-vw(370);
   height: sp-vw(450);
-  border-radius: sp-vw(12);
 
   @include media-pc {
     top: pc-vw(-30);
@@ -154,10 +153,12 @@
   width: sp-vw(370);
   height: sp-vw(208);
   overflow: hidden;
+  border-radius: sp-vw(10);
 
   @include media-pc {
     width: pc-vw(280);
     height: pc-vw(200);
+    border-radius: pc-vw(10);
   }
 }
 
