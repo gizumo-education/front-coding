@@ -277,7 +277,6 @@
   transform: translateX(-50%);
 
   @include media-pc {
-    // position: absolute;
     top: pc-vw(1486);
     width: pc-vw(400);
     height: pc-vw(60);

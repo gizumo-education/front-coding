@@ -8,6 +8,7 @@
   justify-content: flex-end;
   padding: sp-vw(16) sp-vw(15);
   background-color: #{$color-white};
+
   @include media-pc {
     padding: pc-vw(25) pc-vw(100) pc-vw(25) 0;
   }
@@ -16,6 +17,7 @@
 .list,
 .button-list {
   display: none;
+
   @include media-pc {
     display: flex;
   }
@@ -27,6 +29,7 @@
   width: sp-vw(50);
   height: sp-vw(38);
   border-radius: 50%;
+
   @include media-pc {
     display: none;
   }
@@ -57,6 +60,7 @@
 .nav {
   display: flex;
   align-items: center;
+
   @include media-pc {
     column-gap: pc-vw(25);
   }
@@ -64,6 +68,7 @@
 
 .list {
   height: fit-content;
+
   @include media-pc {
     font-size: pc-vw(16);
   }
@@ -72,6 +77,7 @@
 .list-link {
   display: flex;
   align-items: center;
+
   @include media-pc {
     column-gap: pc-vw(6);
   }
@@ -85,6 +91,7 @@
 
 .list-link.search {
   border-inline: 1px solid #{$color-black};
+
   @include media-pc {
     padding-inline: pc-vw(18);
   }
@@ -134,6 +141,7 @@
   color: #{$color-white};
   background-color: #{$color-light-blue};
   border-radius: 6px;
+
   @include media-pc {
     column-gap: pc-vw(10);
     padding: pc-vw(16) pc-vw(20);
@@ -161,5 +169,83 @@
     width: pc-vw(16);
     height: pc-vw(16);
     background-image: url('/icon/history.svg');
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  width: 100%;
+  height: 100%;
+
+  animation: fade-in 0.3s ease;
+
+  @include media-pc {
+    display: none;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.drawer {
+  position: fixed;
+  top: sp-vw(70);
+  right: -100%;
+  z-index: 999;
+  width: sp-vw(400);
+  height: sp-vw(554);
+  padding-top: sp-vw(60);
+  overflow-y: auto;
+  background-color: rgba($color-black, 0.7);
+  transition: right 0.3s ease;
+
+  @include media-pc {
+    display: none;
+  }
+
+  &.drawer-open {
+    right: 0;
+  }
+}
+
+.drawer-nav {
+  width: 100%;
+}
+
+.drawer-list {
+  position: fixed;
+  top: sp-vw(107);
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(19);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.drawer-item {
+  .link {
+    display: block;
+    padding-top: sp-vw(20);
+    padding-left: sp-vw(60);
+    font-size: sp-vw(22);
+    font-weight: bold;
+    color: #{$color-white};
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: rgba($color-black, 0.1);
+    }
   }
 }
