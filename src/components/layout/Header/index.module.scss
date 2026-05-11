@@ -235,7 +235,7 @@
 
 .drawer-item {
   .link {
-    display: block;
+    display: inline-block;
     padding-top: sp-vw(20);
     padding-left: sp-vw(60);
     font-size: sp-vw(22);
@@ -243,9 +243,5 @@
     color: #{$color-white};
     text-decoration: none;
     transition: background-color 0.2s ease;
-
-    &:hover {
-      background-color: rgba($color-black, 0.1);
-    }
   }
 }

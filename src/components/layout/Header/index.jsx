@@ -74,7 +74,9 @@ export const Header = () => {
           </button>
         </nav>
       </header>
-      {isMenuOpen && <button className={styles.overlay} onClick={toggleMenu} />}
+      {isMenuOpen && (
+        <button className={styles['overlay']} onClick={toggleMenu} />
+      )}
       <div
         ref={drawerRef}
         className={clsx(styles.drawer, { [styles['drawer-open']]: isMenuOpen })}

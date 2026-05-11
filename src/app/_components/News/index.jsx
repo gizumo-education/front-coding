@@ -11,19 +11,19 @@ const commonInfo = {
 }
 const cards = [
   {
-    image: 'img/person-with-documents-a.jpg',
+    image: '/img/person-with-documents-a.jpg',
     ...commonInfo,
   },
   {
-    image: 'img/person-with-documents-b.jpg',
+    image: '/img/person-with-documents-b.jpg',
     ...commonInfo,
   },
   {
-    image: 'img/person-with-documents-c.jpg',
+    image: '/img/person-with-documents-c.jpg',
     ...commonInfo,
   },
   {
-    image: 'img/person-with-documents-d.jpg',
+    image: '/img/person-with-documents-d.jpg',
     ...commonInfo,
   },
 ]
@@ -59,6 +59,8 @@ export const News = () => {
         >
           <img
             src='/img/arrow-right.png'
+            width={7}
+            height={14}
             alt=''
             className={styles['nav-icon-right']}
           />
@@ -73,16 +75,20 @@ export const News = () => {
           <img
             src='/img/arrow-left.png'
             alt=''
+            width={7}
+            height={14}
             className={styles['nav-icon-left']}
           />
         </button>
 
         <div className={styles['card-content']}>
-          {displayCards.map((card, index) => (
+          {displayCards?.map((card, index) => (
             <div className={styles['card']} key={index}>
               <div className={styles['image-wrapper']}>
                 <img
                   src={card.image}
+                  width={370}
+                  height={208}
                   alt={card.title}
                   className={styles['image']}
                 />
