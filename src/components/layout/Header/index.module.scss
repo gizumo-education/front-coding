@@ -205,7 +205,7 @@
   width: sp-vw(400);
   height: sp-vw(554);
   padding-top: sp-vw(60);
-  overflow-y: auto;
+  overflow: auto;
   background-color: rgba($color-black, 0.7);
   transition: right 0.3s ease;
 
