@@ -1,7 +1,7 @@
 @use '@/styles' as *;
 
 .header {
-  position: relative;
+  position: sticky;
   top: 0;
   z-index: 100;
   display: flex;
@@ -171,33 +171,6 @@
     background-image: url('/icon/history.svg');
   }
 }
-
-// .overlay {
-//   position: fixed;
-//   top: sp-vw(70);
-//   left: sp-vw(0);
-//   z-index: 997;
-//   width: sp-vw(400);
-//   height: sp-vw(554);
-//   background-color: rgba($color-black, 0.7);
-
-//   animation: fade-in 0.3s ease;
-
-//   @include media-pc {
-//     display: none;
-//   }
-
-//   @keyframes fade-in {
-//     from {
-//       opacity: 0;
-//     }
-
-//     to {
-//       opacity: 1;
-//     }
-//   }
-
-// }
 
 .drawer {
   position: fixed;

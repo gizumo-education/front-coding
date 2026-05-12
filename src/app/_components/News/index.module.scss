@@ -7,6 +7,7 @@
   width: sp-vw(400);
   height: sp-vw(600);
   margin-top: sp-vw(25);
+  scroll-margin-top: 70px;
   background-color: #{$color-sky-blue};
 
   @include media-pc {
