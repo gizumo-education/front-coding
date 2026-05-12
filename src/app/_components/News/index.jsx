@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './index.module.scss'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const commonInfo = {
   title: '平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人',
@@ -29,10 +29,21 @@ const cards = [
 ]
 
 export const News = () => {
+  const [isClient, setIsClient] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [visibleCards, setVisibleCards] = useState(1)
 
-  const visibleCards =
-    typeof window !== 'undefined' && window.innerWidth >= 768 ? 4 : 1
+  useEffect(() => {
+    setIsClient(true)
+    const updateVisibleCards = () => {
+      // 768px以上（PC）なら4枚、それ以外なら1枚
+      setVisibleCards(window.innerWidth >= 768 ? 4 : 1)
+    }
+
+    updateVisibleCards()
+    window.addEventListener('resize', updateVisibleCards)
+    return () => window.removeEventListener('resize', updateVisibleCards)
+  }, [])
 
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1) % cards.length)
@@ -46,6 +57,8 @@ export const News = () => {
     { length: visibleCards },
     (_, i) => cards[(currentIndex + i) % cards.length]
   )
+
+  if (!isClient) return null
 
   return (
     <section id='news' className={styles['news']}>
