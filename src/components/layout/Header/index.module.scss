@@ -245,11 +245,12 @@
 }
 
 .drawer-item {
+  padding-top: sp-vw(20);
+  padding-left: sp-vw(60);
+
   .link {
     z-index: 999;
     display: inline-block;
-    padding-top: sp-vw(20);
-    padding-left: sp-vw(60);
     font-size: sp-vw(22);
     font-weight: bold;
     color: #{$color-white};
