@@ -74,39 +74,46 @@ export const Header = () => {
           </button>
         </nav>
       </header>
-      {isMenuOpen && (
-        <button className={styles['overlay']} onClick={toggleMenu} />
-      )}
+      {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
       <div
         ref={drawerRef}
         className={clsx(styles.drawer, {
           [styles['drawer-open']]: isMenuOpen,
         })}
+        onClick={toggleMenu}
       >
         <nav className={styles['drawer-nav']}>
           <ul className={styles['drawer-list']}>
             <li className={styles['drawer-item']}>
-              <a className={styles.link} href='#top' onClick={toggleMenu}>
+              <a className={styles['link']} href='#top' onClick={toggleMenu}>
                 トップ
               </a>
             </li>
             <li className={styles['drawer-item']}>
-              <a className={styles.link} href='#news' onClick={toggleMenu}>
+              <a className={styles['link']} href='#news' onClick={toggleMenu}>
                 新着求人
               </a>
             </li>
             <li className={styles['drawer-item']}>
-              <a className={styles.link} href='#features' onClick={toggleMenu}>
+              <a
+                className={styles['link']}
+                href='#features'
+                onClick={toggleMenu}
+              >
                 4つの特徴
               </a>
             </li>
             <li className={styles['drawer-item']}>
-              <a className={styles.link} href='#flow' onClick={toggleMenu}>
+              <a className={styles['link']} href='#flow' onClick={toggleMenu}>
                 転職までの流れ
               </a>
             </li>
             <li className={styles['drawer-item']}>
-              <a className={styles.link} href='#content' onClick={toggleMenu}>
+              <a
+                className={styles['link']}
+                href='#content'
+                onClick={toggleMenu}
+              >
                 転職お役立ちコンテンツ
               </a>
             </li>
