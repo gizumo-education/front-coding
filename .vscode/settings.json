@@ -13,5 +13,8 @@
   "path-intellisense.autoTriggerNextSuggestion": true,
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.absolutePathToWorkspace": true,
-  "stylelint.validate": ["scss"]
+  "stylelint.validate": ["scss"],
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
 }
