@@ -1,0 +1,64 @@
+@use '@/styles' as *;
+
+.keyvisual {
+  position: relative;
+  width: 100%;
+}
+
+.main-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.crown-img {
+  position: absolute;
+  top: sp-vw(61);
+  left: sp-vw(200);
+  display: block;
+  width: sp-vw(149);
+  height: auto;
+}
+
+.catchphrase {
+  position: absolute;
+  top: sp-vw(147);
+  left: sp-vw(124);
+  width: sp-vw(272);
+  margin-bottom: sp-vw(18);
+  font-size: sp-vw(17);
+  font-weight: 700;
+  line-height: 1;
+  color: #{$color-white};
+  text-shadow: 0 sp-vw(4) sp-vw(4) rgb(0 0 0 / 25%);
+}
+
+.job-count-badge {
+  position: absolute;
+  top: sp-vw(188);
+  left: sp-vw(189);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(170);
+  height: sp-vw(30);
+  background-color: #{$color-white};
+  border: 1px solid #{$color-light-green};
+  border-radius: 5px;
+}
+
+.job-count-text {
+  font-size: sp-vw(8);
+  font-weight: 400;
+  line-height: 1;
+  color: #{$color-light-green};
+  letter-spacing: 0;
+}
+
+.count-number {
+  margin: 0 sp-vw(1);
+  font-size: sp-vw(16);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0%;
+}
