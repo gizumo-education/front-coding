@@ -38,8 +38,8 @@
   height: sp-vw(30);
   overflow: hidden;
   background-color: #{$color-white};
-  border: 1px solid #{$color-passion-pink};
-  border-radius: 5px;
+  border: sp-vw(1) solid #{$color-passion-pink};
+  border-radius: sp-vw(4);
 
   &::after {
     position: absolute;
@@ -57,14 +57,12 @@
 
   .search-select {
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: 2;
     width: 100%;
     height: 100%;
-    padding: 0 sp-vw(25) 0 sp-vw(10);
+    padding-top: sp-vw(8);
+    padding-left: sp-vw(8);
     font-size: sp-vw(12);
-    line-height: sp-vw(30);
     color: $color-black;
     appearance: none;
     cursor: pointer;
@@ -88,8 +86,8 @@
 }
 
 .search-button {
+  position: relative;
   display: flex;
-  gap: sp-vw(8);
   align-items: center;
   justify-content: center;
   width: sp-vw(160);
@@ -106,8 +104,10 @@
 }
 
 .button-icon {
-  top: sp-vw(556);
-  left: sp-vw(133);
-  width: sp-vw(17);
-  height: sp-vw(17);
+  position: absolute;
+  top: sp-vw(11);
+  left: sp-vw(13);
+  display: block;
+  width: sp-vw(18);
+  height: sp-vw(18);
 }

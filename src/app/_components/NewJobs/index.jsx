@@ -10,7 +10,15 @@ export const NewJobs = () => {
           type='button'
           className={styles['arrow-button-prev']}
           aria-label='前のスライドへ'
-        ></button>
+        >
+          <img
+            src='/img/pass.left.png'
+            alt='左ボタン'
+            className={styles['arrow-icon']}
+            width={14}
+            height={7}
+          />
+        </button>
 
         <article>
           <div className={styles['card-image-wrap']}>
@@ -48,7 +56,15 @@ export const NewJobs = () => {
           type='button'
           className={styles['arrow-button-next']}
           aria-label='次のスライドへ'
-        ></button>
+        >
+          <img
+            src='/img/pass.light.png'
+            alt='右ボタン'
+            className={styles['arrow-icon']}
+            width={14}
+            height={7}
+          />
+        </button>
       </div>
 
       <a href='/' className={styles['more-button']}>
