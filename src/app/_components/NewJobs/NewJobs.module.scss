@@ -2,8 +2,8 @@
 
 .new-jobs-container {
   width: 100%;
-  padding: sp-vw(40) sp-vw(15);
-  margin-top: sp-vw(25);
+  padding: sp-vw(30) sp-vw(15);
+  padding-bottom: sp-vw(60);
   background-color: $color-white-blue;
 }
 
@@ -119,6 +119,7 @@
   height: sp-vw(60);
   padding: 0;
   margin: sp-vw(44) auto;
+  margin-bottom: sp-vw(0);
   font-family: 'Noto Sans JP', sans-serif;
   font-size: sp-vw(18);
   font-weight: 700;

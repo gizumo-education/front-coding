@@ -1,23 +1,24 @@
 @use '@/styles' as *;
 
 .search-container {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(15);
   width: sp-vw(370);
   min-height: sp-vw(240);
+  padding: sp-vw(15);
   margin: sp-vw(25) auto;
   background-color: $color-blue;
   border-radius: sp-vw(8);
 }
 
 .search-title {
-  padding-top: sp-vw(15);
   font-size: sp-vw(22);
   font-weight: 700;
   text-align: center;
 }
 
 .search-description {
-  padding-top: sp-vw(16);
-  padding-bottom: sp-vw(13);
   font-family: 'Noto Sans JP', sans-serif;
   font-size: sp-vw(14);
   font-weight: 400;
@@ -29,7 +30,6 @@
   flex-wrap: wrap;
   gap: sp-vw(12);
   justify-content: space-between;
-  padding-inline: sp-vw(15);
 }
 
 .search-select-wrap {
@@ -46,8 +46,8 @@
     top: 50%;
     right: sp-vw(10);
     z-index: 1;
-    width: sp-vw(10);
-    height: sp-vw(6);
+    width: sp-vw(13);
+    height: sp-vw(7);
     pointer-events: none;
     content: '';
     background-color: #{$color-pink};
@@ -93,7 +93,8 @@
   width: sp-vw(160);
   height: sp-vw(40);
   padding: 0;
-  margin: sp-vw(10) auto 0;
+  margin: 0 auto;
+  margin-top: sp-vw(10);
   font-size: sp-vw(18);
   font-weight: 700;
   color: #{$color-white};
