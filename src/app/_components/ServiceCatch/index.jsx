@@ -4,13 +4,19 @@ export const ServiceCatch = () => {
   return (
     <section>
       <div className={styles['banner-wrapper']}>
-        <img
-          src='/img/img_servicecatch.jpg'
-          alt='バナーの背景画像'
-          className={styles['banner-image']}
-          width={400}
-          height={75}
-        />
+        <picture>
+          <source
+            srcSet='/img/img_servicecatch.jpg'
+            media='(max-width: 400px)'
+          />
+          <img
+            className={styles['banner-image']}
+            src='/img/img.servicecatch.pc.jpg'
+            alt='バナーの背景画像'
+            width='1600'
+            height='300'
+          />
+        </picture>
         <div className={styles['banner-text-wrap']}>
           <p className={styles['banner-text']}>
             ギズジョブなら理想の職場がきっと見つかる

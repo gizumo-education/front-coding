@@ -10,18 +10,34 @@
   margin: sp-vw(25) auto;
   background-color: $color-blue;
   border-radius: sp-vw(8);
+  @include media-pc {
+    gap: pc-vw(0);
+    width: pc-vw(1180);
+    min-height: pc-vw(240);
+    padding: pc-vw(40);
+    margin: pc-vw(60) auto;
+    border-radius: pc-vw(15);
+  }
 }
 
 .search-title {
   font-size: sp-vw(22);
   font-weight: 700;
   text-align: center;
+  @include media-pc {
+    font-size: pc-vw(25);
+  }
 }
 
 .search-description {
   font-size: sp-vw(14);
   font-weight: 400;
   text-align: center;
+  @include media-pc {
+    margin-top: pc-vw(20);
+    margin-bottom: pc-vw(26);
+    font-size: pc-vw(20);
+  }
 }
 
 .search-form {
@@ -29,6 +45,11 @@
   flex-wrap: wrap;
   gap: sp-vw(12);
   justify-content: space-between;
+  @include media-pc {
+    flex-wrap: nowrap;
+    gap: pc-vw(15);
+    align-items: center;
+  }
 }
 
 .search-select-wrap {
@@ -39,6 +60,12 @@
   background-color: #{$color-white};
   border: sp-vw(1) solid #{$color-passion-pink};
   border-radius: sp-vw(4);
+  @include media-pc {
+    width: pc-vw(200);
+    height: pc-vw(60);
+    border: pc-vw(1) solid #{$color-passion-pink};
+    border-radius: sp-vw(3);
+  }
 
   &::after {
     position: absolute;
@@ -52,6 +79,11 @@
     background-color: #{$color-pink};
     clip-path: polygon(0 0, 100% 0, 50% 100%);
     transform: translateY(-50%);
+    @include media-pc {
+      right: pc-vw(15);
+      width: pc-vw(20);
+      height: pc-vw(10);
+    }
   }
 
   .search-select {
@@ -67,6 +99,11 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
+    @include media-pc {
+      padding-top: pc-vw(19);
+      padding-left: pc-vw(15);
+      font-size: pc-vw(18);
+    }
   }
 }
 
@@ -78,6 +115,15 @@
   background-color: #{$color-white};
   border: sp-vw(1) solid #{$color-passion-pink};
   border-radius: sp-vw(4);
+
+  @include media-pc {
+    width: pc-vw(300);
+    height: pc-vw(60);
+    padding: 0 pc-vw(10);
+    font-size: pc-vw(18);
+    border: pc-vw(1) solid #{$color-passion-pink};
+    border-radius: sp-vw(3);
+  }
 
   &::placeholder {
     color: $color-light-gray;
@@ -101,6 +147,18 @@
   background: #{$color-pink};
   border: none;
   border-radius: sp-vw(20);
+  @include media-pc {
+    position: relative;
+    display: flex;
+    gap: pc-vw(12);
+    align-items: center;
+    justify-content: center;
+    order: 1;
+    width: pc-vw(140);
+    height: pc-vw(60);
+    margin-top: 0;
+    font-size: pc-vw(18);
+  }
 }
 
 .button-icon {
@@ -110,4 +168,9 @@
   display: block;
   width: sp-vw(18);
   height: sp-vw(18);
+  @include media-pc {
+    position: static;
+    width: pc-vw(29);
+    height: pc-vw(29);
+  }
 }

@@ -3,12 +3,35 @@
 .keyvisual {
   position: relative;
   width: 100%;
+
+  @include media-pc {
+    background-color: #{$color-grey};
+  }
+}
+
+.keyvisual-container {
+  width: 100%;
+  @include media-pc {
+    position: relative;
+    width: pc-vw(1600);
+    height: pc-vw(500);
+    margin: 0 auto;
+  }
 }
 
 .main-img {
   display: block;
   width: 100%;
   height: auto;
+  @include media-pc {
+    position: absolute;
+    top: 0;
+    width: pc-vw(1262);
+    height: pc-vw(500);
+    margin-left: pc-vw(175);
+    object-fit: cover;
+    object-position: 50% 38%;
+  }
 }
 
 .crown-img {
@@ -18,6 +41,11 @@
   display: block;
   width: sp-vw(149);
   height: auto;
+  @include media-pc {
+    top: pc-vw(56);
+    left: pc-vw(840);
+    width: pc-vw(341);
+  }
 }
 
 .catchphrase {
@@ -31,20 +59,37 @@
   line-height: 1;
   color: #{$color-white};
   text-shadow: 0 sp-vw(4) sp-vw(4) rgb(0 0 0 / 25%);
+  @include media-pc {
+    top: pc-vw(265);
+    left: pc-vw(607);
+    width: pc-vw(800);
+    height: pc-vw(75);
+    font-size: pc-vw(50);
+    text-shadow: 0 pc-vw(4) pc-vw(4) rgb(0 0 0 / 25%);
+  }
 }
 
 .job-count-badge {
   position: absolute;
   top: sp-vw(188);
   left: sp-vw(189);
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   width: sp-vw(170);
   height: sp-vw(30);
   background-color: #{$color-white};
-  border: 1px solid #{$color-light-green};
-  border-radius: 5px;
+  border: sp-vw(1) solid #{$color-light-green};
+  border-radius: sp-vw(5);
+  @include media-pc {
+    top: pc-vw(375);
+    left: pc-vw(809);
+    width: pc-vw(391);
+    height: pc-vw(69);
+    border: pc-vw(3) solid #{$color-light-green};
+    border-radius: pc-vw(10);
+  }
 }
 
 .job-count-text {
@@ -53,6 +98,10 @@
   line-height: 1;
   color: #{$color-light-green};
   letter-spacing: 0;
+  @include media-pc {
+    font-size: pc-vw(20);
+    font-weight: 400;
+  }
 }
 
 .count-number {
@@ -61,4 +110,8 @@
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0%;
+  @include media-pc {
+    font-size: sp-vw(10);
+    font-weight: 700;
+  }
 }
