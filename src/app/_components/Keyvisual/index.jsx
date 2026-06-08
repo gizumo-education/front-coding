@@ -5,7 +5,7 @@ export const Keyvisual = () => {
     <section className={styles['keyvisual']}>
       <div className={styles['keyvisual-container']}>
         <picture>
-          <source srcSet='/img/img_kv_main_sp.png' media='(max-width: 400px)' />
+          <source srcSet='/img/img_kv_main_sp.png' media='(max-width: 768px)' />
           <img
             className={styles['main-img']}
             src='/img/img_kv_main_pc.jpg'

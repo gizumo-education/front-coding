@@ -96,7 +96,8 @@
 .arrow-button-prev,
 .arrow-button-next {
   position: absolute;
-  top: 50%;
+  top: auto;
+  bottom: sp-vw(150);
   z-index: 10;
   display: flex;
   align-items: center;
@@ -107,11 +108,13 @@
   cursor: pointer;
   background-color: rgb(255 255 255 / 70%);
   border-radius: 50%;
-  transform: translateY(-50%) translateY(sp-vw(10));
+  transform: none;
   @include media-pc {
+    top: calc(50% - pc-vw(65));
+    bottom: auto;
     width: pc-vw(60);
     height: pc-vw(60);
-    transform: translateY(calc(-50% + pc-vw(-50)));
+    transform: translateY(-50%);
   }
 }
 

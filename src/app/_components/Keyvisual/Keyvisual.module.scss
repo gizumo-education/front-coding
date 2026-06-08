@@ -80,15 +80,15 @@
   width: sp-vw(170);
   height: sp-vw(30);
   background-color: #{$color-white};
-  border: 1px solid #{$color-light-green};
-  border-radius: 5px;
+  border: sp-vw(1) solid #{$color-light-green};
+  border-radius: sp-vw(5);
   @include media-pc {
-    top: pc-vw(389);
+    top: pc-vw(375);
     left: pc-vw(809);
     width: pc-vw(391);
     height: pc-vw(69);
-    border: 3px solid #{$color-light-green};
-    border-radius: 10px;
+    border: pc-vw(3) solid #{$color-light-green};
+    border-radius: pc-vw(10);
   }
 }
 
