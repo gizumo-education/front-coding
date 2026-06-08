@@ -54,13 +54,16 @@ export const JobSearch = () => {
           />
 
           <button type='submit' className={styles['search-button']}>
-            <img
-              src='/img/pass.18.png'
-              alt='検索'
-              className={styles['button-icon']}
-              width={18}
-              height={18}
-            />
+            <picture>
+              <source srcSet='/img/pass.18.png' media='(max-width: 400px)' />
+              <img
+                className={styles['button-icon']}
+                src='/img/pass.18.pc.png'
+                alt='検索'
+                width='30'
+                height='20'
+              />
+            </picture>
             <span className={styles['button-text']}>検索する</span>
           </button>
         </form>

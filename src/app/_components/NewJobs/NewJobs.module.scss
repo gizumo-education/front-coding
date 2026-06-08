@@ -5,6 +5,11 @@
   padding: sp-vw(30) sp-vw(15);
   padding-bottom: sp-vw(60);
   background-color: $color-white-blue;
+  @include media-pc {
+    max-width: 1600px;
+    padding: pc-vw(64) pc-vw(210);
+    padding-bottom: pc-vw(67);
+  }
 }
 
 .section-title {
@@ -13,6 +18,13 @@
   font-weight: 700;
   color: $color-black;
   text-align: center;
+  @include media-pc {
+    margin-bottom: pc-vw(25);
+    margin-left: pc-vw(0);
+    font-size: pc-vw(25);
+    font-weight: 400;
+    text-align: left;
+  }
 }
 
 .slider-wrapper {
@@ -20,14 +32,48 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include media-pc {
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.card-grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: sp-vw(15);
+  width: 100%;
+  @include media-pc {
+    flex-direction: row;
+    gap: pc-vw(20);
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.card {
+  display: none;
+  width: 100%;
+
+  &:nth-child(1) {
+    display: block;
+  }
+  @include media-pc {
+    display: block;
+    flex: none;
+    width: pc-vw(280);
+  }
 }
 
 .card-image-wrap {
   width: 100%;
-  aspect-ratio: 370 / 208;
+  aspect-ratio: 370 / 210;
   overflow: hidden;
-  border: sp-vw(1) solid rgb(0 0 0 / 10%);
   border-radius: sp-vw(10);
+  @include media-pc {
+    aspect-ratio: 260 / 170;
+    border-radius: pc-vw(10);
+  }
 }
 
 .card-image {
@@ -35,10 +81,16 @@
   height: 100%;
   object-fit: cover;
   object-position: 50% 5%;
+  @include media-pc {
+    object-position: 50% 0%;
+  }
 }
 
 .card-content {
   padding-top: sp-vw(10);
+  @include media-pc {
+    padding-top: pc-vw(8);
+  }
 }
 
 .arrow-button-prev,
@@ -54,23 +106,37 @@
   padding: 0;
   cursor: pointer;
   background-color: rgb(255 255 255 / 70%);
-  border: sp-vw(0.71) solid rgb(0 0 0 / 10%);
   border-radius: 50%;
   transform: translateY(-50%) translateY(sp-vw(10));
+  @include media-pc {
+    width: pc-vw(60);
+    height: pc-vw(60);
+    transform: translateY(calc(-50% + pc-vw(-50)));
+  }
 }
 
 .arrow-button-prev {
   left: sp-vw(0);
+  @include media-pc {
+    left: pc-vw(0);
+  }
 }
 
 .arrow-button-next {
   right: sp-vw(0);
+  @include media-pc {
+    right: pc-vw(0);
+  }
 }
 
 .arrow-icon {
   width: sp-vw(40);
   height: sp-vw(15);
   object-fit: contain;
+  @include media-pc {
+    width: pc-vw(15);
+    height: pc-vw(30);
+  }
 }
 
 .card-title {
@@ -79,17 +145,30 @@
   font-weight: 700;
   line-height: sp-vw(20);
   color: #{$color-black};
+  @include media-pc {
+    margin-bottom: pc-vw(7);
+    font-size: pc-vw(16);
+    font-weight: 400;
+    line-height: pc-vw(20);
+  }
 }
 
 .meta-list {
   display: flex;
   flex-direction: column;
   gap: sp-vw(8);
+  @include media-pc {
+    gap: pc-vw(8);
+  }
 }
 
 .meta-item {
   display: flex;
   align-items: center;
+  @include media-pc {
+    flex-direction: row;
+    gap: pc-vw(8);
+  }
 }
 
 .label-pink {
@@ -104,11 +183,20 @@
   font-weight: 400;
   color: #{$color-black};
   background-color: #{$color-light-pink};
+  @include media-pc {
+    width: pc-vw(60);
+    height: pc-vw(21);
+    margin-right: pc-vw(2);
+    font-size: pc-vw(14);
+  }
 }
 
 .meta-value {
   font-size: sp-vw(14);
   color: $color-black;
+  @include media-pc {
+    font-size: pc-vw(14);
+  }
 }
 
 .more-button {
@@ -127,4 +215,11 @@
   background: #{$color-pink};
   border: none;
   border-radius: sp-vw(30);
+  @include media-pc {
+    width: pc-vw(360);
+    height: pc-vw(60);
+    margin: pc-vw(60) auto;
+    margin-bottom: pc-vw(0);
+    font-size: pc-vw(18);
+  }
 }

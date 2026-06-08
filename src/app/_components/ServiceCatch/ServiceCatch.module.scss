@@ -5,6 +5,9 @@
   width: 100%;
   aspect-ratio: 400 / 75;
   overflow: hidden;
+  @include media-pc {
+    aspect-ratio: 1600 / 300;
+  }
 }
 
 .banner-image {
@@ -12,6 +15,10 @@
   height: sp-vw(75);
   object-fit: cover;
   object-position: 50% 70%;
+  @include media-pc {
+    height: pc-vw(300);
+    object-position: 50% 73%;
+  }
 }
 
 .banner-text-wrap {
@@ -33,4 +40,8 @@
   color: #{$color-white};
   text-align: center;
   text-shadow: 0 0 4px rgb(0 0 0 / 50%);
+  @include media-pc {
+    font-size: pc-vw(25);
+    line-height: 1.9;
+  }
 }
