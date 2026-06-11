@@ -164,9 +164,11 @@
   &-link {
     display: flex;
     align-items: center;
+    font-size: sp-vw(14);
 
     @include media-pc {
       column-gap: pc-vw(6);
+      font-size: pc-vw(16);
     }
 
     &.medical {
