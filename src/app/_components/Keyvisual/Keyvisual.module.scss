@@ -3,6 +3,7 @@
 .keyvisual {
   position: relative;
   width: 100%;
+  scroll-margin-top: 70px;
 
   @include media-pc {
     background-color: #{$color-grey};
