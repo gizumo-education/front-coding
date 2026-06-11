@@ -1,18 +1,37 @@
 'use client'
+
+import { useState, useEffect } from 'react'
 import clsx from 'clsx'
 import styles from './index.module.scss'
-import { useState, useRef } from 'react'
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const menuRef = useRef(null)
-
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
-  const closeMenu = () => {
-    setIsOpen(false)
-  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsOpen(false)
+      }
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'visible'
+    }
+    return () => {
+      document.body.style.overflow = 'visible'
+    }
+  }, [isOpen])
 
   return (
     <header className={styles.header}>
@@ -52,53 +71,77 @@ export const Header = () => {
           </li>
         </ul>
         <button
-          className={clsx(styles.button, { [styles.open]: isOpen })}
+          className={clsx(styles.button, isOpen && styles.active)}
           onClick={toggleMenu}
         >
           <span className={styles.line} />
           <span className={styles.line} />
           <span className={styles.line} />
         </button>
-        <nav
-          ref={menuRef}
-          className={clsx(styles['menu-drawer'], { [styles.open]: isOpen })}
+        <div
+          className={clsx(styles['menu-drawer'], isOpen && styles.active)}
+          onClick={() => setIsOpen(false)}
+          role='presentation'
         >
-          <button
-            type='button'
-            className={styles['overlay-button']}
-            onClick={closeMenu}
-            aria-label='メニューを閉じる'
-          />
-          <div className={styles['menu-list-wrapper']}>
+          <div
+            className={styles['menu-inner']}
+            onClick={toggleMenu}
+            onKeyDown={(e) => {
+              if (
+                typeof window !== 'undefined' &&
+                (e.key === 'Enter' || e.key === ' ')
+              ) {
+                toggleMenu()
+              }
+            }}
+            role='button'
+            tabIndex={0}
+          >
             <ul className={styles['menu-list']}>
-              <li className={styles['menu-item']}>
-                <a href='/' className={styles['menu-link']}>
+              <li className={styles['menu-list-li']}>
+                <a
+                  href='#top'
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    setIsOpen(false)
+                  }}
+                  className={styles['menu-list-li-a']}
+                >
                   トップ
                 </a>
               </li>
-              <li className={styles['menu-item']}>
-                <a href='/' className={styles['menu-link']}>
+              <li className={styles['menu-list-li']}>
+                {/* // eslint-disable-next-line -- （今回はMarkuplint用のため下記を使用） */}
+                {/* // markuplint-disable-next-line */}
+                <a
+                  href='#job'
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    setIsOpen(false)
+                  }}
+                  className={styles['menu-list-li-a']}
+                >
                   新着求人
                 </a>
               </li>
-              <li className={styles['menu-item']}>
-                <a href='/' className={styles['menu-link']}>
+              <li className={styles['menu-list-li']}>
+                <a href='/' className={styles['menu-list-li-a']}>
                   4つの特徴
                 </a>
               </li>
-              <li className={styles['menu-item']}>
-                <a href='/' className={styles['menu-link']}>
+              <li className={styles['menu-list-li']}>
+                <a href='/' className={styles['menu-list-li-a']}>
                   転職までの流れ
                 </a>
               </li>
-              <li className={styles['menu-item']}>
-                <a href='/' className={styles['menu-link']}>
+              <li className={styles['menu-list-li']}>
+                <a href='/' className={styles['menu-list-li-a']}>
                   転職お役立ちコンテンツ
                 </a>
               </li>
             </ul>
           </div>
-        </nav>
+        </div>
       </nav>
     </header>
   )

@@ -2,7 +2,7 @@ import styles from './Keyvisual.module.scss'
 
 export const Keyvisual = () => {
   return (
-    <section className={styles['keyvisual']}>
+    <section id='top' className={styles['keyvisual']}>
       <div className={styles['keyvisual-container']}>
         <picture>
           <source srcSet='/img/img_kv_main_sp.png' media='(max-width: 767px)' />
