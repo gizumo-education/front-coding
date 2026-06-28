@@ -1,6 +1,6 @@
 @use 'sass:math';
 @use 'sass:list';
-@use '@/styles/variables' as *;
+@use './variables' as *;
 
 @function pc-vw($px-value) {
   $vw-value: math.div($px-value, $design-pc-width) * 100vw;

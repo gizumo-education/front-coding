@@ -1,0 +1,316 @@
+@import '../../../styles/functions';
+
+/* ==========================================================================
+   1. メインジュアル
+   ========================================================================== */
+
+.keyvisual-section {
+  width: 100%;
+  max-width: sp-vw(400);
+  margin: 0 auto;
+  font-family: 'DM Sans', sans-serif;
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  min-height: sp-vw(270);
+  padding-left: sp-vw(40);
+  background-color: rgb(185 211 227);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(4);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.keyvisual-img {
+  margin: sp-vw(5) 0;
+  font-size: sp-vw(40);
+  color: rgb(255 255 255);
+}
+
+.main-title {
+  margin: sp-vw(5) 0;
+  font-size: sp-vw(17);
+  font-weight: bold;
+  color: rgb(255 255 255);
+  text-shadow: 0 2px 8px rgb(0 0 0 / 20%);
+}
+
+.job-count {
+  display: inline-block;
+  padding: sp-vw(5) sp-vw(30);
+  margin: sp-vw(5) 0;
+  font-size: sp-vw(8);
+  color: rgb(46 182 170);
+  background-color: rgb(255 255 255);
+  border: 2px solid rgb(46 182 170);
+  border-radius: sp-vw(6);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 8%);
+}
+
+.job-count .count-num {
+  font-size: sp-vw(20);
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   2. 仕事検索フォーム
+   ========================================================================== */
+
+.search-form {
+  position: relative;
+  max-width: sp-vw(370);
+  padding: sp-vw(15);
+  margin: sp-vw(20) auto;
+  text-align: center;
+  background-color: rgb(222 238 249);
+  border-radius: sp-vw(12);
+  box-shadow: 0 6px 16px rgb(0 0 0 / 6%);
+}
+
+.sub-title {
+  font-size: sp-vw(26);
+  font-weight: bold;
+}
+
+.description {
+  margin: sp-vw(20) auto;
+  font-size: sp-vw(15);
+  color: rgb(0 0 0);
+}
+
+.search-conditions {
+  display: flex;
+  gap: sp-vw(7);
+  align-items: center;
+  justify-content: center;
+}
+
+.group-action {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(12);
+  align-items: center;
+}
+
+.select {
+  width: sp-vw(110);
+  padding: sp-vw(7);
+
+  padding-right: sp-vw(25);
+  margin: sp-vw(5) 0;
+  font-size: sp-vw(13);
+  color: rgb(0 0 0);
+  text-align: left;
+
+  appearance: none;
+
+  cursor: pointer;
+
+  background-color: rgb(255 255 255);
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgb(222 85 121) 50%),
+    linear-gradient(135deg, rgb(222 85 121) 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-position:
+    right sp-vw(15) center,
+    right sp-vw(8) center;
+  background-size: sp-vw(7) sp-vw(7);
+  border: 1.5px solid rgb(222 85 121);
+  border-radius: sp-vw(6);
+}
+
+.search-input {
+  width: sp-vw(340);
+  padding: sp-vw(7);
+  margin: sp-vw(5) 0;
+  font-size: sp-vw(14);
+  color: rgb(164 164 164);
+  text-align: left;
+
+  cursor: pointer;
+
+  background-color: rgb(255 255 255);
+  border: 1.5px solid rgb(222 85 121);
+  border-radius: sp-vw(6);
+}
+
+.search-button {
+  display: flex;
+  gap: sp-vw(10);
+  align-items: center;
+  width: sp-vw(140);
+  padding: sp-vw(10);
+
+  font-size: sp-vw(18);
+  font-weight: bold;
+  color: rgb(255 255 255);
+
+  cursor: pointer;
+  background-color: rgb(222 85 121);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgb(224 82 117 / 20%);
+}
+
+.search-img {
+  width: sp-vw(16);
+  height: sp-vw(16);
+  filter: brightness(0) invert(1);
+}
+
+// /* ==========================================================================
+//    3. 新着求人セクション
+//    ========================================================================== */
+
+// .new-job {
+//   max-width: 1000px;
+//   padding: 0 20px 60px;
+//   margin: 0 auto;
+// }
+
+// .new-job .new-sub-title {
+//   margin-bottom: 24px;
+//   font-size: sp-vw(24);
+//   text-align: left;
+// }
+
+// .new-job-contant {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   gap: 16px;
+// }
+
+// .contant {
+//   display: flex;
+//   flex-direction: column;
+//   overflow: hidden;
+//   background-color: #fff;
+//   border-radius: 8px;
+//   box-shadow: 0 4px 12px rgb(0 0 0 / 4%);
+//   transition: transform 0.2s;
+// }
+
+// .contant:hover {
+//   transform: translateY(-4px);
+// }
+
+// /* 画像は固定が正解 */
+// .job-image-wrap {
+//   width: 100%;
+//   height: 140px;
+//   overflow: hidden;
+//   background-color: #cbd5e1;
+// }
+
+// .job-image {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+// .job-info {
+//   display: flex;
+//   flex-grow: 1;
+//   flex-direction: column;
+//   padding: 12px;
+// }
+
+// .job-card-title {
+//   display: -webkit-box;
+
+//   height: 54px;
+//   margin-bottom: 12px;
+//   overflow: hidden;
+//   -webkit-line-clamp: 3;
+//   font-size: sp-vw(12);
+//   font-weight: bold;
+//   line-height: 1.5;
+//   color: #333;
+//   -webkit-box-orient: vertical;
+// }
+
+// .job-meta {
+//   margin-top: auto;
+// }
+
+// .meta-row {
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 6px;
+// }
+
+// .meta-row:last-child {
+//   margin-bottom: 0;
+// }
+
+// .label-salary,
+// .label-location,
+// .label-station {
+//   min-width: 45px;
+//   padding: 2px 0;
+//   margin: 0 8px 0 0;
+//   font-size: sp-vw(10);
+//   font-weight: bold;
+//   color: #fff;
+//   text-align: center;
+//   background-color: #f17c91;
+//   border-radius: 4px;
+// }
+
+// .meta-text {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   font-size: sp-vw(11);
+//   color: #4a5568;
+//   white-space: nowrap;
+// }
+
+// /* ボタン */
+// .new-job button {
+//   display: block;
+//   padding: 12px 32px;
+//   margin: 30px auto;
+//   font-size: sp-vw(14);
+//   color: #fff;
+//   cursor: pointer;
+//   background-color: #e05275;
+//   border: none;
+//   border-radius: 50px;
+//   box-shadow: 0 4px 6px rgb(224 82 117 / 20%);
+// }
+
+// /* ==========================================================================
+//    4. バナー
+//    ========================================================================== */
+
+// .middle-banner {
+//   width: 100%;
+//   padding: 80px 20px;
+//   margin-top: 40px;
+//   text-align: center;
+
+//   background:
+//     linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+//     linear-gradient(135deg, #1e293b 0%, #475569 100%);
+// }
+
+// .banner-title {
+//   margin-bottom: 12px;
+//   font-size: sp-vw(26);
+//   font-weight: bold;
+//   color: #fff;
+// }
+
+// .banner-sub {
+//   font-size: sp-vw(14);
+//   color: #e2e8f0;
+// }
