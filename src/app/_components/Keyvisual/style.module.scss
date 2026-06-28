@@ -8,7 +8,7 @@
   width: 100%;
   max-width: sp-vw(400);
   margin: 0 auto;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   color: black;
 }
 
@@ -17,7 +17,12 @@
   justify-content: flex-end;
   min-height: sp-vw(270);
   padding-left: sp-vw(40);
-  background-color: rgb(185 211 227);
+
+  background-image: url('/icon/title.jpg');
+  background-position: center;
+  background-position: 80% center;
+  background-size: cover;
+  background-size: 130%;
 }
 
 .content {
@@ -30,13 +35,14 @@
 }
 
 .keyvisual-img {
+  width: sp-vw(150);
+  height: sp-vw(73);
   margin: sp-vw(5) 0;
-  font-size: sp-vw(40);
-  color: rgb(255 255 255);
 }
 
 .main-title {
-  margin: sp-vw(5) 0;
+  margin: sp-vw(8);
+  font-family: 'DM Sans', sans-serif;
   font-size: sp-vw(17);
   font-weight: bold;
   color: rgb(255 255 255);
@@ -103,19 +109,14 @@
 .select {
   width: sp-vw(110);
   padding: sp-vw(7);
-
   padding-right: sp-vw(25);
   margin: sp-vw(5) 0;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: sp-vw(13);
   color: rgb(0 0 0);
   text-align: left;
-
   appearance: none;
-
-  cursor: pointer;
-
   background-color: rgb(255 255 255);
-
   background-image:
     linear-gradient(45deg, transparent 50%, rgb(222 85 121) 50%),
     linear-gradient(135deg, rgb(222 85 121) 50%, transparent 50%);
@@ -132,12 +133,10 @@
   width: sp-vw(340);
   padding: sp-vw(7);
   margin: sp-vw(5) 0;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: sp-vw(14);
   color: rgb(164 164 164);
   text-align: left;
-
-  cursor: pointer;
-
   background-color: rgb(255 255 255);
   border: 1.5px solid rgb(222 85 121);
   border-radius: sp-vw(6);
@@ -149,12 +148,10 @@
   align-items: center;
   width: sp-vw(140);
   padding: sp-vw(10);
-
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: sp-vw(18);
   font-weight: bold;
   color: rgb(255 255 255);
-
-  cursor: pointer;
   background-color: rgb(222 85 121);
   border: none;
   border-radius: 50px;
@@ -281,7 +278,6 @@
 //   margin: 30px auto;
 //   font-size: sp-vw(14);
 //   color: #fff;
-//   cursor: pointer;
 //   background-color: #e05275;
 //   border: none;
 //   border-radius: 50px;

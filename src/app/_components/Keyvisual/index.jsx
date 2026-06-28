@@ -74,13 +74,19 @@ export const Keyvisual = () => {
     <section className={styles['keyvisual-section']}>
       <div className={styles['container']}>
         <div className={styles['content']}>
-          <p className={styles['keyvisual-img']}>No.1</p>
+          <img
+            className={styles['keyvisual-img']}
+            src='/icon/no1.png'
+            alt='no.1写真'
+            width='150'
+            height='73'
+          />
           <h1 className={styles['main-title']}>
             医療事務求人を探すならギズジョブ
           </h1>
           <p className={styles['job-count']}>
-            現在の求人掲載数:<span className={styles['count-num']}>2,320</span>
-            件
+            現在の求人掲載数 :
+            <span className={styles['count-num']}> 2,320</span>件
           </p>
         </div>
       </div>
