@@ -33,41 +33,41 @@ const SALARIES = [
   '月給23万〜',
 ]
 
-// // 4. 新着求人データ
-// const NEW_JOBS_DATA = [
-//   {
-//     id: 1,
-//     title: '平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人',
-//     salary: '月給 148,000円〜',
-//     location: '三重県伊勢市',
-//     station: '伊勢市駅 徒歩15分',
-//     imgSrc: 'https://via.placeholder.com/300x200/cbd5e1/ffffff?text=NO+IMAGE',
-//   },
-//   {
-//     id: 2,
-//     title: '平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人',
-//     salary: '月給 148,000円〜',
-//     location: '三重県伊勢市',
-//     station: '伊勢市駅 徒歩15分',
-//     imgSrc: 'https://via.placeholder.com/300x200/cbd5e1/ffffff?text=NO+IMAGE',
-//   },
-//   {
-//     id: 3,
-//     title: '平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人',
-//     salary: '月給 148,000円〜',
-//     location: '三重県伊勢市',
-//     station: '伊勢市駅 徒歩15分',
-//     imgSrc: 'https://via.placeholder.com/300x200/cbd5e1/ffffff?text=NO+IMAGE',
-//   },
-//   {
-//     id: 4,
-//     title: '平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人',
-//     salary: '月給 148,000円〜',
-//     location: '三重県伊勢市',
-//     station: '伊勢市駅 徒歩15分',
-//     imgSrc: 'https://via.placeholder.com/300x200/cbd5e1/ffffff?text=NO+IMAGE',
-//   },
-// ]
+// 4. 新着求人データ
+const NEW_JOBS_DATA = [
+  {
+    id: 1,
+    title: '平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人',
+    salary: '月給 148,000円〜',
+    location: '三重県伊勢市',
+    station: '伊勢市駅 徒歩15分',
+    imgSrc: '/icon/poster1.jpg',
+  },
+  {
+    id: 2,
+    title: '平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人',
+    salary: '月給 148,000円〜',
+    location: '三重県伊勢市',
+    station: '伊勢市駅 徒歩15分',
+    imgSrc: '/icon/poster2.jpg',
+  },
+  {
+    id: 3,
+    title: '平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人',
+    salary: '月給 148,000円〜',
+    location: '三重県伊勢市',
+    station: '伊勢市駅 徒歩15分',
+    imgSrc: '/icon/poster3.jpg',
+  },
+  {
+    id: 4,
+    title: '平日・夕方までの勤務！伊勢市の伊勢赤十字病院で医療事務求人',
+    salary: '月給 148,000円〜',
+    location: '三重県伊勢市',
+    station: '伊勢市駅 徒歩15分',
+    imgSrc: '/icon/poster4.jpg',
+  },
+]
 
 export const Keyvisual = () => {
   return (
@@ -78,8 +78,8 @@ export const Keyvisual = () => {
             className={styles['keyvisual-img']}
             src='/icon/no1.png'
             alt='no.1写真'
-            width='150'
-            height='73'
+            width='140'
+            height='65'
           />
           <h1 className={styles['main-title']}>
             医療事務求人を探すならギズジョブ
@@ -147,51 +147,73 @@ export const Keyvisual = () => {
               className={styles['search-img']}
               src='/icon/search.svg'
               alt='検索ボタン'
-              width='16'
-              height='16'
+              width={16}
+              height={16}
             />
             検索する
           </button>
         </div>
       </div>
 
-      {/* <div className={styles['new-job']}>
+      <div className={styles['new-job']}>
         <h2 className={styles['new-sub-title']}>新着求人</h2>
-        <div className={styles['new-job-contant']}>
-          {NEW_JOBS_DATA.map((job) => (
-            <div key={job.id} className={styles['contant']}>
-              <div className={styles['job-image-wrap']}>
-                <img
-                  src={job.imgSrc}
-                  alt='求人イメージ'
-                  className={styles['job-image']}
-                  width={300}
-                  height={200}
-                />
-              </div>
 
-              <div className={styles['job-info']}>
-                <h3 className={styles['job-card-title']}>{job.title}</h3>
+        <div className={styles['slider-wrapper']}>
+          <button
+            className={styles['prev-button']}
+            type='button'
+            aria-label='前へ'
+          >
+            ＜
+          </button>
 
-                <div className={styles['job-meta']}>
-                  <div className={styles['meta-row']}>
-                    <p className={styles['label-salary']}>給与</p>
-                    <p className={styles['meta-text']}>{job.salary}</p>
-                  </div>
-                  <div className={styles['meta-row']}>
-                    <p className={styles['label-location']}>所在地</p>
-                    <p className={styles['meta-text']}>{job.location}</p>
-                  </div>
-                  <div className={styles['meta-row']}>
-                    <p className={styles['label-station']}>最寄駅</p>
-                    <p className={styles['meta-text']}>{job.station}</p>
+          <div className={styles['new-job-contant']}>
+            {NEW_JOBS_DATA.map((job) => (
+              <div key={job.id} className={styles['contant']}>
+                <div className={styles['job-img-wrap']}>
+                  <img
+                    src={job.imgSrc}
+                    alt='求人イメージ'
+                    className={styles['job-img']}
+                    width={300}
+                    height={200}
+                  />
+                </div>
+
+                <div className={styles['job-info']}>
+                  <h3 className={styles['job-card-title']}>{job.title}</h3>
+
+                  <div className={styles['job-meta']}>
+                    <div className={styles['meta-row']}>
+                      <p className={styles['label-salary']}>給与</p>
+                      <p className={styles['meta-text']}>{job.salary}</p>
+                    </div>
+                    <div className={styles['meta-row']}>
+                      <p className={styles['label-location']}>所在地</p>
+                      <p className={styles['meta-text']}>{job.location}</p>
+                    </div>
+                    <div className={styles['meta-row']}>
+                      <p className={styles['label-station']}>最寄駅</p>
+                      <p className={styles['meta-text']}>{job.station}</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <button
+            className={styles['next-button']}
+            type='button'
+            aria-label='次へ'
+          >
+            ＞
+          </button>
         </div>
-        <button type='button'>新着求人一覧をもっと見る</button>
+
+        <button className={styles['new-job-button']} type='button'>
+          新着求人一覧をもっと見る
+        </button>
       </div>
 
       <div className={styles['middle-banner']}>
@@ -203,7 +225,7 @@ export const Keyvisual = () => {
             ギズジョブは完全無料の求職者向け求人サービスです。
           </p>
         </div>
-      </div> */}
+      </div>
     </section>
   )
 }
