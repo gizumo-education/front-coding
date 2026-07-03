@@ -167,9 +167,9 @@ export const Keyvisual = () => {
             ＜
           </button>
 
-          <div className={styles['new-job-contant']}>
+          <div className={styles['new-job-content']}>
             {NEW_JOBS_DATA.map((job) => (
-              <div key={job.id} className={styles['contant']}>
+              <div key={job.id} className={styles['content']}>
                 <div className={styles['job-img-wrap']}>
                   <img
                     src={job.imgSrc}

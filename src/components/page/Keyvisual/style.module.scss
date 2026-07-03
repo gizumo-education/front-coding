@@ -8,7 +8,6 @@
 
 .keyvisual-section {
   width: 100%;
-  max-width: sp-vw($inner-sp-max-width);
   margin: 0 auto;
   font-family: 'Noto Sans JP', sans-serif;
   color: $color-black;
@@ -172,7 +171,7 @@
     font-weight: bold;
   }
 
-  &-contant {
+  &-content {
     display: flex;
     gap: sp-vw(16);
     width: sp-vw($design-sp-width);
@@ -181,7 +180,7 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  .contant {
+  .content {
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
