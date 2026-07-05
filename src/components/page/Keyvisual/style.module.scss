@@ -59,6 +59,38 @@
       font-weight: bold;
     }
   }
+
+  /* ================
+       PC版
+================ */
+  @media screen and (width >= $breakpoint-pc) {
+    .container {
+      justify-content: center;
+      min-height: pc-vw(500);
+      padding-left: pc-vw(500);
+      background-position: 65% 35%;
+      background-size: 75%;
+    }
+
+    .keyvisual-img {
+      width: pc-vw(340);
+      height: pc-vw(160);
+      margin: pc-vw(5) 0;
+    }
+
+    .main-title {
+      font-size: pc-vw(50);
+    }
+
+    .job-count {
+      padding: pc-vw(10) pc-vw(50);
+      font-size: pc-vw(20);
+
+      .count-num {
+        font-size: pc-vw(40);
+      }
+    }
+  }
 }
 
 /* ==========================================================================
@@ -154,6 +186,71 @@
     height: sp-vw(16);
     filter: brightness(0) invert(1);
   }
+
+  /* ================
+       PC版
+================ */
+  @media screen and (width >= $breakpoint-pc) {
+    max-width: pc-vw($inner-pc-max-width);
+    padding: pc-vw(30);
+    margin: pc-vw(60) auto;
+    border-radius: pc-vw(12);
+
+    .search-title {
+      font-size: pc-vw(25);
+    }
+
+    .description {
+      margin: pc-vw(20) auto;
+      font-size: pc-vw(20);
+    }
+
+    .search-area {
+      display: flex;
+      gap: $gap-sm;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .search-conditions {
+      display: flex;
+      gap: $gap-sm;
+    }
+
+    .group-action {
+      display: flex;
+      flex-direction: row;
+      gap: $gap-sm;
+    }
+
+    .select {
+      width: pc-vw(200);
+      padding: pc-vw(15) pc-vw(25);
+      font-size: pc-vw(18);
+      background-position:
+        right pc-vw(20) center,
+        right pc-vw(12) center;
+      background-size: pc-vw(10) pc-vw(10);
+    }
+
+    .search-input {
+      width: pc-vw(300);
+      padding: pc-vw(15) pc-vw(25);
+      font-size: pc-vw(16);
+    }
+
+    .search-button {
+      gap: pc-vw(5);
+      width: pc-vw(140);
+      padding: pc-vw(25);
+      font-size: pc-vw(16);
+    }
+
+    .search-img {
+      width: pc-vw(20);
+      height: pc-vw(20);
+    }
+  }
 }
 
 /* ==========================================================================
@@ -174,20 +271,15 @@
   &-content {
     display: flex;
     gap: sp-vw(16);
-    width: sp-vw($design-sp-width);
-    margin-bottom: sp-vw(30);
     overflow-x: auto;
+    border-radius: $radius-sm;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 4%);
     -webkit-overflow-scrolling: touch;
   }
 
-  .content {
-    display: flex;
-    flex-shrink: 0;
-    flex-direction: column;
+  &-card {
+    flex: 0 0 auto;
     width: sp-vw($inner-sp-max-width);
-    padding: sp-vw(10);
-    border-radius: $radius-sm;
-    box-shadow: 0 4px 12px rgb(0 0 0 / 4%);
   }
 
   .job-img-wrap {
@@ -208,6 +300,7 @@
     display: flex;
     flex-direction: column;
     min-height: sp-vw(100);
+    margin: sp-vw(5) 0 sp-vw(30);
   }
 
   .job-card-title {
@@ -224,8 +317,6 @@
 
   .meta-row {
     display: flex;
-    flex-direction: row;
-
     align-items: center;
   }
 
@@ -272,6 +363,88 @@
   }
 }
 
+/* ================
+       PC版
+================ */
+@media screen and (width >= $breakpoint-pc) {
+  .new-job {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: pc-vw(30) pc-vw(210);
+
+    &-sub-title {
+      margin: pc-vw(30) 0;
+      font-size: pc-vw(28);
+      font-weight: normal;
+    }
+
+    &-content {
+      gap: pc-vw(20);
+      width: pc-vw($inner-pc-max-width);
+      margin: 0 auto;
+    }
+
+    &-card {
+      width: pc-vw(280);
+    }
+
+    .job-img {
+      width: pc-vw(280);
+      height: pc-vw(200);
+      border-radius: pc-vw(15);
+    }
+
+    .job-info {
+      min-height: pc-vw(100);
+      margin: pc-vw(10) 0;
+    }
+
+    .job-card-title {
+      margin: pc-vw(3) 0;
+      font-size: pc-vw(16);
+      font-weight: normal;
+    }
+
+    .meta-text {
+      margin: 0 pc-vw(15);
+      font-size: pc-vw(14);
+    }
+
+    .job-meta {
+      margin-top: 0;
+    }
+
+    @each $label in $job-labels {
+      .label-#{$label} {
+        min-width: pc-vw(60);
+        padding: pc-vw(5) 0;
+        margin: pc-vw(3);
+        font-size: pc-vw(12);
+      }
+    }
+
+    &-button {
+      padding: pc-vw(25) pc-vw(80);
+      margin: pc-vw(40) auto;
+      font-size: pc-vw(18);
+    }
+
+    .slider-wrapper {
+      width: pc-vw($inner-pc-max-width);
+
+      @each $dir, $side in (prev: left, next: right) {
+        .#{$dir}-button {
+          #{$side}: 0;
+          top: pc-vw(80);
+          width: pc-vw(60);
+          height: pc-vw(60);
+        }
+      }
+    }
+  }
+}
+
 /* ==========================================================================
    4. バナー
    ========================================================================== */
@@ -301,5 +474,19 @@
     flex-direction: column;
     gap: sp-vw(8);
     align-items: center;
+  }
+}
+
+/* ================
+       PC版
+================ */
+@media screen and (width >= $breakpoint-pc) {
+  .middle-banner {
+    height: pc-vw(300);
+
+    .banner-title,
+    .banner-sub {
+      font-size: pc-vw(30);
+    }
   }
 }

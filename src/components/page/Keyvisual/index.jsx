@@ -97,61 +97,63 @@ export const Keyvisual = () => {
           働きたい環境・地域・希望給与を入れて検索！
         </p>
 
-        <div className={styles['search-conditions']}>
-          <select
-            className={styles['select']}
-            aria-label='職種を選択'
-            defaultValue='医療事務'
-          >
-            {JOB_TYPES.map((type) => (
-              <option key={type} value={type}>
-                {type}
-              </option>
-            ))}
-          </select>
+        <div className={styles['search-area']}>
+          <div className={styles['search-conditions']}>
+            <select
+              className={styles['select']}
+              aria-label='職種を選択'
+              defaultValue='医療事務'
+            >
+              {JOB_TYPES.map((type) => (
+                <option key={type} value={type}>
+                  {type}
+                </option>
+              ))}
+            </select>
 
-          <select
-            className={styles['select']}
-            aria-label='都道府県を選択'
-            defaultValue='東京都'
-          >
-            {LOCATIONS.map((loc) => (
-              <option key={loc} value={loc}>
-                {loc}
-              </option>
-            ))}
-          </select>
+            <select
+              className={styles['select']}
+              aria-label='都道府県を選択'
+              defaultValue='東京都'
+            >
+              {LOCATIONS.map((loc) => (
+                <option key={loc} value={loc}>
+                  {loc}
+                </option>
+              ))}
+            </select>
 
-          <select
-            className={styles['select']}
-            aria-label='給与を選択'
-            defaultValue='月給20万〜'
-          >
-            {SALARIES.map((salary) => (
-              <option key={salary} value={salary}>
-                {salary}
-              </option>
-            ))}
-          </select>
-        </div>
+            <select
+              className={styles['select']}
+              aria-label='給与を選択'
+              defaultValue='月給20万〜'
+            >
+              {SALARIES.map((salary) => (
+                <option key={salary} value={salary}>
+                  {salary}
+                </option>
+              ))}
+            </select>
+          </div>
 
-        <div className={styles['group-action']}>
-          <input
-            type='text'
-            placeholder='キーワード・企業名・スキルなど'
-            aria-label='キーワード検索'
-            className={styles['search-input']}
-          />
-          <button className={styles['search-button']} type='button'>
-            <img
-              className={styles['search-img']}
-              src='/icon/search.svg'
-              alt='検索ボタン'
-              width={16}
-              height={16}
+          <div className={styles['group-action']}>
+            <input
+              type='text'
+              placeholder='キーワード・企業名・スキルなど'
+              aria-label='キーワード検索'
+              className={styles['search-input']}
             />
-            検索する
-          </button>
+            <button className={styles['search-button']} type='button'>
+              <img
+                className={styles['search-img']}
+                src='/icon/search.svg'
+                alt='検索ボタン'
+                width={16}
+                height={16}
+              />
+              検索する
+            </button>
+          </div>
         </div>
       </div>
 
@@ -169,7 +171,7 @@ export const Keyvisual = () => {
 
           <div className={styles['new-job-content']}>
             {NEW_JOBS_DATA.map((job) => (
-              <div key={job.id} className={styles['content']}>
+              <div key={job.id} className={styles['new-job-card']}>
                 <div className={styles['job-img-wrap']}>
                   <img
                     src={job.imgSrc}
