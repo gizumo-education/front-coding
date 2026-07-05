@@ -71,11 +71,11 @@
   padding: sp-vw(15);
   margin: sp-vw(20) auto;
   text-align: center;
-  background-color: $color-light-blue;
+  background-color: $color-dark-blue;
   border-radius: sp-vw(12);
   box-shadow: 0 6px 16px rgb(0 0 0 / 6%);
 
-  .sub-title {
+  .search-title {
     font-size: sp-vw(22);
     font-weight: bold;
   }
@@ -167,7 +167,7 @@
 
   &-sub-title {
     margin: sp-vw(30) 0;
-    font-size: sp-vw(27);
+    font-size: sp-vw(25);
     font-weight: bold;
   }
 
@@ -280,7 +280,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: sp-vw($inner-sp-max-width);
   height: sp-vw(75);
   background-image:
     linear-gradient(rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url('/icon/banner.jpg');

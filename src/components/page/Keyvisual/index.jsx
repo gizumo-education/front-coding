@@ -92,7 +92,7 @@ export const Keyvisual = () => {
       </div>
 
       <div className={styles['search-form']}>
-        <h2 className={styles['sub-title']}>お仕事検索</h2>
+        <h2 className={styles['search-title']}>お仕事検索</h2>
         <p className={styles['description']}>
           働きたい環境・地域・希望給与を入れて検索！
         </p>
@@ -156,7 +156,7 @@ export const Keyvisual = () => {
       </div>
 
       <div className={styles['new-job']}>
-        <h2 className={styles['new-sub-title']}>新着求人</h2>
+        <h2 className={styles['new-job-sub-title']}>新着求人</h2>
 
         <div className={styles['slider-wrapper']}>
           <button
