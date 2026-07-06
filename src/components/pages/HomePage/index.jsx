@@ -183,20 +183,20 @@ export const Keyvisual = () => {
                 <div className={styles['job-info']}>
                   <h3 className={styles['job-card-title']}>{job.title}</h3>
 
-                  <div className={styles['job-meta']}>
-                    <div className={styles['meta-row']}>
+                  <ul className={styles['job-meta']}>
+                    <li className={styles['meta-row']}>
                       <p className={styles['label-salary']}>給与</p>
                       <p className={styles['meta-text']}>{job.salary}</p>
-                    </div>
-                    <div className={styles['meta-row']}>
+                    </li>
+                    <li className={styles['meta-row']}>
                       <p className={styles['label-location']}>所在地</p>
                       <p className={styles['meta-text']}>{job.location}</p>
-                    </div>
-                    <div className={styles['meta-row']}>
+                    </li>
+                    <li className={styles['meta-row']}>
                       <p className={styles['label-station']}>最寄駅</p>
                       <p className={styles['meta-text']}>{job.station}</p>
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             ))}
