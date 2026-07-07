@@ -69,7 +69,7 @@ const NEW_JOBS_DATA = [
   },
 ]
 
-export const Keyvisual = () => {
+export const HomePage = () => {
   return (
     <section className={styles['keyvisual-section']}>
       <div className={styles['container']}>
