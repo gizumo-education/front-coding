@@ -1,5 +1,5 @@
 import { Header } from '../components/layout/Header'
-import { Keyvisual } from '../components/page/Keyvisual'
+import { Keyvisual } from './_components/Keyvisual'
 
 const Top = () => {
   return (

@@ -78,8 +78,8 @@ export const Keyvisual = () => {
             className={styles['keyvisual-img']}
             src='/icon/no1.png'
             alt='no.1写真'
-            width='140'
-            height='65'
+            width='1262'
+            height='500'
           />
           <h1 className={styles['main-title']}>
             医療事務求人を探すならギズジョブ
@@ -148,8 +148,8 @@ export const Keyvisual = () => {
                 className={styles['search-img']}
                 src='/icon/search.svg'
                 alt='検索ボタン'
-                width={16}
-                height={16}
+                width={17}
+                height={17}
               />
               検索する
             </button>
@@ -177,7 +177,7 @@ export const Keyvisual = () => {
                     src={job.imgSrc}
                     alt='求人イメージ'
                     className={styles['job-img']}
-                    width={300}
+                    width={280}
                     height={200}
                   />
                 </div>
