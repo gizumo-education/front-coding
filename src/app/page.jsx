@@ -1,11 +1,11 @@
 import { Header } from '../components/layout/Header'
-import { HomePage } from '../components/pages/HomePage'
+import { Keyvisual } from './_components/Keyvisual'
 
 const Top = () => {
   return (
     <>
       <Header />
-      <HomePage />
+      <Keyvisual />
     </>
   )
 }

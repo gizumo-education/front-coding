@@ -69,17 +69,17 @@ const NEW_JOBS_DATA = [
   },
 ]
 
-export const HomePage = () => {
+export const Keyvisual = () => {
   return (
     <section className={styles['keyvisual-section']}>
       <div className={styles['container']}>
-        <div className={styles['content']}>
+        <div className={styles['group']}>
           <img
             className={styles['keyvisual-img']}
             src='/icon/no1.png'
             alt='no.1写真'
-            width='140'
-            height='65'
+            width={149}
+            height={73}
           />
           <h1 className={styles['main-title']}>
             医療事務求人を探すならギズジョブ
@@ -91,7 +91,7 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <div className={styles['search-form']}>
+      <form className={styles['search-form']}>
         <h2 className={styles['search-title']}>お仕事検索</h2>
         <p className={styles['description']}>
           働きたい環境・地域・希望給与を入れて検索！
@@ -142,18 +142,18 @@ export const HomePage = () => {
             aria-label='キーワード検索'
             className={styles['search-input']}
           />
-          <button className={styles['search-button']} type='button'>
+          <button className={styles['search-button']} type='submit'>
             <img
               className={styles['search-img']}
               src='/icon/search.svg'
               alt='検索ボタン'
-              width={16}
-              height={16}
+              width={17}
+              height={17}
             />
             検索する
           </button>
         </div>
-      </div>
+      </form>
 
       <div className={styles['new-job']}>
         <h2 className={styles['new-job-sub-title']}>新着求人</h2>
@@ -175,28 +175,26 @@ export const HomePage = () => {
                     src={job.imgSrc}
                     alt='求人イメージ'
                     className={styles['job-img']}
-                    width={300}
-                    height={200}
+                    width={370}
+                    height={208}
                   />
                 </div>
-
                 <div className={styles['job-info']}>
                   <h3 className={styles['job-card-title']}>{job.title}</h3>
-
-                  <ul className={styles['job-meta']}>
-                    <li className={styles['meta-row']}>
-                      <p className={styles['label-salary']}>給与</p>
-                      <p className={styles['meta-text']}>{job.salary}</p>
-                    </li>
-                    <li className={styles['meta-row']}>
-                      <p className={styles['label-location']}>所在地</p>
-                      <p className={styles['meta-text']}>{job.location}</p>
-                    </li>
-                    <li className={styles['meta-row']}>
-                      <p className={styles['label-station']}>最寄駅</p>
-                      <p className={styles['meta-text']}>{job.station}</p>
-                    </li>
-                  </ul>
+                  <dl className={styles['job-meta']}>
+                    <div className={styles['meta-row']}>
+                      <dt className={styles['label-salary']}>給与</dt>
+                      <dd className={styles['meta-text']}>{job.salary}</dd>
+                    </div>
+                    <div className={styles['meta-row']}>
+                      <dt className={styles['label-location']}>所在地</dt>
+                      <dd className={styles['meta-text']}>{job.location}</dd>
+                    </div>
+                    <div className={styles['meta-row']}>
+                      <dt className={styles['label-station']}>最寄駅</dt>
+                      <dd className={styles['meta-text']}>{job.station}</dd>
+                    </div>
+                  </dl>
                 </div>
               </div>
             ))}
