@@ -16,26 +16,24 @@
     display: flex;
     justify-content: flex-end;
     min-height: sp-vw(270);
-    padding-left: sp-vw(40);
     background-image: url('/icon/title.jpg');
     background-position: 80% center;
-    background-size: 120%;
+    background-size: 125%;
   }
 
-  .content {
-    gap: sp-vw(4);
+  .group {
     text-align: center;
     @include mixins.flex-column-center;
   }
 
   .keyvisual-img {
-    width: sp-vw(140);
-    height: sp-vw(100);
+    width: sp-vw(150);
+    height: sp-vw(80);
     margin: sp-vw(5) 0;
   }
 
   .main-title {
-    margin: sp-vw(8);
+    margin: sp-vw(8) 0;
     font-family: 'DM Sans', sans-serif;
     font-size: sp-vw(17);
     font-weight: bold;
@@ -45,7 +43,7 @@
 
   .job-count {
     display: inline-block;
-    padding: sp-vw(5) sp-vw(30);
+    padding: sp-vw(3) sp-vw(15);
     margin: sp-vw(5) 0;
     font-size: sp-vw(8);
     color: $color-light-green;
@@ -100,7 +98,7 @@
 .search-form {
   position: relative;
   max-width: sp-vw($inner-sp-max-width);
-  padding: sp-vw(15);
+  padding: sp-vw(20) sp-vw(15) sp-vw(15);
   margin: sp-vw(20) auto;
   text-align: center;
   background-color: $color-dark-blue;
@@ -113,7 +111,7 @@
   }
 
   .description {
-    margin: sp-vw(20) auto;
+    margin: sp-vw(15) auto;
     font-size: sp-vw(15);
     color: $color-black;
   }
@@ -133,8 +131,8 @@
   }
 
   .select {
-    width: sp-vw(110);
-    padding: sp-vw(7);
+    width: sp-vw(105);
+    padding: sp-vw(6);
     padding-right: sp-vw(25);
     margin: sp-vw(5) 0;
     font-family: 'Noto Sans JP', sans-serif;
@@ -156,9 +154,9 @@
   }
 
   .search-input {
-    width: sp-vw(340);
-    padding: sp-vw(7);
-    margin: sp-vw(5) 0;
+    width: sp-vw(320);
+    padding: sp-vw(4);
+    margin: sp-vw(8) 0;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: sp-vw(14);
     color: $color-text-sub;
@@ -170,9 +168,9 @@
 
   .search-button {
     display: flex;
-    gap: sp-vw(10);
+    gap: sp-vw(20);
     align-items: center;
-    width: sp-vw(140);
+    width: sp-vw(160);
     padding: sp-vw(10);
     font-family: 'Noto Sans JP', sans-serif;
     font-size: sp-vw(18);
@@ -258,12 +256,12 @@
    ========================================================================== */
 
 .new-job {
-  padding: sp-vw(10) 0 sp-vw(40);
+  padding: sp-vw(10) 0 sp-vw(60);
   background-color: $color-light-blue;
   @include mixins.flex-column-center;
 
   &-sub-title {
-    margin: sp-vw(30) 0;
+    margin: sp-vw(35) 0;
     font-size: sp-vw(25);
     font-weight: bold;
   }
@@ -280,6 +278,8 @@
   &-card {
     flex: 0 0 auto;
     width: sp-vw($inner-sp-max-width);
+    border-radius: $radius-sm;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 4%);
   }
 
   .job-img-wrap {
@@ -290,8 +290,8 @@
 
   .job-img {
     display: block;
-    width: 100%;
-    height: sp-vw(240);
+    width: sp-vw(470);
+    height: sp-vw(210);
     object-fit: cover;
     border-radius: $radius-sm;
   }
@@ -304,11 +304,12 @@
   }
 
   .job-card-title {
-    margin: sp-vw(10) auto;
+    margin: sp-vw(5) auto;
     font-size: sp-vw(16);
     font-weight: bold;
     line-height: 1.5;
     color: $color-black;
+    text-align: left;
   }
 
   .job-meta {
@@ -324,7 +325,7 @@
     .label-#{$label} {
       min-width: sp-vw(60);
       padding: sp-vw(5) 0;
-      margin: sp-vw(3);
+      margin: sp-vw(1);
       font-size: sp-vw(14);
       color: $color-black;
       text-align: center;
@@ -340,7 +341,7 @@
 
   &-button {
     display: block;
-    padding: sp-vw(20) sp-vw(70);
+    padding: sp-vw(20) sp-vw(80);
     font-size: sp-vw(17);
     box-shadow: $shadow-pink;
     @include mixins.pink-btn;
@@ -349,13 +350,14 @@
   .slider-wrapper {
     position: relative;
     width: sp-vw($inner-sp-max-width);
+    margin-bottom: sp-vw(11);
 
     @each $dir, $side in (prev: left, next: right) {
       .#{$dir}-button {
-        #{$side}: sp-vw(18);
-        top: sp-vw(180);
-        width: sp-vw(50);
-        height: sp-vw(50);
+        #{$side}: sp-vw(0);
+        top: sp-vw(155);
+        width: sp-vw(45);
+        height: sp-vw(45);
         @include mixins.slider-button;
       }
     }

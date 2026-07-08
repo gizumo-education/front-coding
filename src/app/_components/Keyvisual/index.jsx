@@ -73,7 +73,7 @@ export const Keyvisual = () => {
   return (
     <section className={styles['keyvisual-section']}>
       <div className={styles['container']}>
-        <div className={styles['content']}>
+        <div className={styles['group']}>
           <img
             className={styles['keyvisual-img']}
             src='/icon/no1.png'
@@ -91,7 +91,7 @@ export const Keyvisual = () => {
         </div>
       </div>
 
-      <div className={styles['search-form']}>
+      <form className={styles['search-form']}>
         <h2 className={styles['search-title']}>お仕事検索</h2>
         <p className={styles['description']}>
           働きたい環境・地域・希望給与を入れて検索！
@@ -143,7 +143,7 @@ export const Keyvisual = () => {
               aria-label='キーワード検索'
               className={styles['search-input']}
             />
-            <button className={styles['search-button']} type='button'>
+            <button className={styles['search-button']} type='submit'>
               <img
                 className={styles['search-img']}
                 src='/icon/search.svg'
@@ -155,7 +155,7 @@ export const Keyvisual = () => {
             </button>
           </div>
         </div>
-      </div>
+      </form>
 
       <div className={styles['new-job']}>
         <h2 className={styles['new-job-sub-title']}>新着求人</h2>
@@ -181,24 +181,22 @@ export const Keyvisual = () => {
                     height={208}
                   />
                 </div>
-
                 <div className={styles['job-info']}>
                   <h3 className={styles['job-card-title']}>{job.title}</h3>
-
-                  <div className={styles['job-meta']}>
+                  <dl className={styles['job-meta']}>
                     <div className={styles['meta-row']}>
-                      <p className={styles['label-salary']}>給与</p>
-                      <p className={styles['meta-text']}>{job.salary}</p>
+                      <dt className={styles['label-salary']}>給与</dt>
+                      <dd className={styles['meta-text']}>{job.salary}</dd>
                     </div>
                     <div className={styles['meta-row']}>
-                      <p className={styles['label-location']}>所在地</p>
-                      <p className={styles['meta-text']}>{job.location}</p>
+                      <dt className={styles['label-location']}>所在地</dt>
+                      <dd className={styles['meta-text']}>{job.location}</dd>
                     </div>
                     <div className={styles['meta-row']}>
-                      <p className={styles['label-station']}>最寄駅</p>
-                      <p className={styles['meta-text']}>{job.station}</p>
+                      <dt className={styles['label-station']}>最寄駅</dt>
+                      <dd className={styles['meta-text']}>{job.station}</dd>
                     </div>
-                  </div>
+                  </dl>
                 </div>
               </div>
             ))}
