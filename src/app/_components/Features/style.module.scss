@@ -1,0 +1,44 @@
+@use '../../../styles/functions' as *;
+@use '../../../styles/variables' as *;
+
+.feature-banner {
+  position: relative;
+  margin-top: sp-vw(58);
+  overflow: hidden;
+
+  .image-wrapper {
+    position: relative;
+    transform: translateY(-50%);
+  }
+
+  .middle-banner {
+    width: sp-vw(400);
+    height: sp-vw(150);
+    object-fit: cover;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 55%);
+  }
+
+  .banner-title {
+    text-align: center;
+  }
+
+  .banner-title,
+  .banner-sub {
+    margin-top: sp-vw(15);
+    font-size: sp-vw(14);
+    color: $color-white;
+  }
+
+  .banner-inner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

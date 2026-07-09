@@ -1,0 +1,116 @@
+@use '../../../styles/functions' as *;
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as mixins;
+
+.new-job {
+  padding: sp-vw(10) 0 sp-vw(5);
+  background-color: $color-light-blue;
+  @include mixins.flex-column-center;
+
+  &-sub-title {
+    margin: sp-vw(18) 0 sp-vw(25);
+    font-size: sp-vw(25);
+    font-weight: bold;
+  }
+
+  &-content {
+    display: flex;
+    gap: sp-vw(16);
+    width: sp-vw($design-sp-width);
+    margin-bottom: sp-vw(30);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .content {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    width: sp-vw($inner-sp-max-width);
+    border-radius: $radius-sm;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 4%);
+  }
+
+  .job-img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: sp-vw(10) 0 sp-vw(5);
+  }
+
+  .job-img {
+    width: sp-vw(370);
+    height: sp-vw(210);
+    font-weight: bold;
+    object-fit: cover;
+    border-radius: $radius-sm;
+  }
+
+  .job-info {
+    display: flex;
+    flex-direction: column;
+    min-height: sp-vw(100);
+  }
+
+  .job-card-title {
+    margin: sp-vw(5) auto;
+    font-size: sp-vw(16);
+    font-weight: bold;
+    line-height: 1.5;
+    color: $color-black;
+    text-align: left;
+  }
+
+  .job-meta {
+    margin-top: auto;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+  }
+
+  @each $label in $job-labels {
+    .label-#{$label} {
+      min-width: sp-vw(60);
+      padding: sp-vw(5) 0;
+      margin: sp-vw(1);
+      font-size: sp-vw(14);
+      color: $color-black;
+      text-align: center;
+      background-color: $color-light-pink;
+    }
+  }
+
+  .meta-text {
+    margin: 0 sp-vw(18);
+    font-size: sp-vw(15);
+    color: $color-black;
+  }
+
+  &-button {
+    display: block;
+    padding: sp-vw(20) sp-vw(80);
+    font-size: sp-vw(18);
+    box-shadow: $shadow-pink;
+    @include mixins.pink-btn;
+  }
+
+  .slider-wrapper {
+    position: relative;
+    width: sp-vw($inner-sp-max-width);
+    margin-bottom: sp-vw(11);
+
+    @each $dir, $side in (prev: left, next: right) {
+      .#{$dir}-button {
+        #{$side}: sp-vw(0);
+        top: sp-vw(165);
+        width: sp-vw(45);
+        height: sp-vw(45);
+        @include mixins.slider-button;
+      }
+    }
+  }
+}

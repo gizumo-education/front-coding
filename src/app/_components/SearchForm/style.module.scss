@@ -1,0 +1,94 @@
+@use '../../../styles/functions' as *;
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as mixins;
+
+.search-form {
+  position: relative;
+  max-width: sp-vw($inner-sp-max-width);
+  padding: sp-vw(20) sp-vw(25) sp-vw(25);
+  margin: sp-vw(22) auto;
+  text-align: center;
+  background-color: $color-dark-blue;
+  border-radius: sp-vw(12);
+  box-shadow: 0 6px 16px rgb(0 0 0 / 6%);
+
+  .search-title {
+    font-size: sp-vw(22);
+    font-weight: bold;
+  }
+
+  .description {
+    margin: sp-vw(15) auto;
+    font-size: sp-vw(14);
+    color: $color-black;
+  }
+
+  .search-conditions {
+    display: flex;
+    gap: sp-vw(7);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .group-action {
+    display: flex;
+    flex-direction: column;
+    gap: sp-vw(12);
+    align-items: center;
+  }
+
+  .select {
+    width: sp-vw(105);
+    padding: sp-vw(6);
+    padding-right: sp-vw(25);
+    margin: sp-vw(5) 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: sp-vw(12);
+    color: $color-black;
+    text-align: left;
+    appearance: none;
+    background-color: $color-white;
+    background-image:
+      linear-gradient(45deg, transparent 50%, $color-primary-pink 50%),
+      linear-gradient(135deg, $color-primary-pink 50%, transparent 50%);
+    background-repeat: no-repeat;
+    background-position:
+      right sp-vw(15) center,
+      right sp-vw(8) center;
+    background-size: sp-vw(7) sp-vw(7);
+    border: 1.5px solid $color-primary-pink;
+    border-radius: $radius-sm;
+  }
+
+  .search-input {
+    width: sp-vw(320);
+    padding: sp-vw(4);
+    margin: sp-vw(8) 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: sp-vw(14);
+    color: $color-text-sub;
+    text-align: left;
+    background-color: $color-white;
+    border: 1.5px solid $color-primary-pink;
+    border-radius: $radius-sm;
+  }
+
+  .search-button {
+    display: flex;
+    gap: sp-vw(18);
+    align-items: center;
+    width: sp-vw(160);
+    padding: sp-vw(10);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: sp-vw(18);
+    font-weight: bold;
+    box-shadow: $shadow-pink;
+    @include mixins.pink-btn;
+  }
+
+  .search-img {
+    width: sp-vw(20);
+    height: sp-vw(18);
+    filter: brightness(0) invert(1);
+  }
+}
