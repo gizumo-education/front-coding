@@ -1,9 +1,7 @@
-@use '../../../styles/functions' as *;
-@use '../../../styles/variables' as *;
+@use '../../../styles' as *;
 
 .feature-banner {
   position: relative;
-  margin-top: sp-vw(58);
   overflow: hidden;
 
   .image-wrapper {
@@ -29,7 +27,7 @@
 
   .banner-title,
   .banner-sub {
-    margin-top: sp-vw(15);
+    margin-top: sp-vw(17);
     font-size: sp-vw(14);
     color: $color-white;
   }

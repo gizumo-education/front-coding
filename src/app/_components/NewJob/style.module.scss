@@ -1,11 +1,9 @@
-@use '../../../styles/functions' as *;
-@use '../../../styles/variables' as *;
-@use '../../../styles/mixins' as mixins;
+@use '../../../styles' as *;
 
 .new-job {
-  padding: sp-vw(10) 0 sp-vw(5);
+  padding: sp-vw(10) 0 sp-vw(60);
   background-color: $color-light-blue;
-  @include mixins.flex-column-center;
+  @include flex-column-center;
 
   &-sub-title {
     margin: sp-vw(18) 0 sp-vw(25);
@@ -95,7 +93,7 @@
     padding: sp-vw(20) sp-vw(80);
     font-size: sp-vw(18);
     box-shadow: $shadow-pink;
-    @include mixins.pink-btn;
+    @include pink-btn;
   }
 
   .slider-wrapper {
@@ -109,7 +107,7 @@
         top: sp-vw(165);
         width: sp-vw(45);
         height: sp-vw(45);
-        @include mixins.slider-button;
+        @include slider-button;
       }
     }
   }

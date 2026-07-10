@@ -1,6 +1,4 @@
-@use '../../../styles/functions' as *;
-@use '../../../styles/variables' as *;
-@use '../../../styles/mixins' as mixins;
+@use '../../../styles' as *;
 
 .search-form {
   position: relative;
@@ -83,7 +81,7 @@
     font-size: sp-vw(18);
     font-weight: bold;
     box-shadow: $shadow-pink;
-    @include mixins.pink-btn;
+    @include pink-btn;
   }
 
   .search-img {
