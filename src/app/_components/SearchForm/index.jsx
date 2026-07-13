@@ -89,7 +89,7 @@ export const SearchForm = () => {
         <button className={styles['search-button']} type='submit'>
           <img
             className={styles['search-img']}
-            src='/images/search.svg'
+            src='/icon/search.svg'
             alt='検索ボタン'
             width={18}
             height={19}
