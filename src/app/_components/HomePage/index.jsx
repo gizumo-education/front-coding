@@ -6,7 +6,7 @@ export const HomePage = () => {
       <div className={styles['container']}>
         <img
           className={styles['keyvisual-img']}
-          src='/icon/keyvisual.jpg'
+          src='/images/keyvisual.jpg'
           alt='Keyvisual写真'
           width={1000}
           height={685}
@@ -14,7 +14,7 @@ export const HomePage = () => {
         <div className={styles['group']}>
           <img
             className={styles['no1-img']}
-            src='/icon/no1.png'
+            src='/images/no1.png'
             alt='no.1写真'
             width={705}
             height={354}

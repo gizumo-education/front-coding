@@ -6,7 +6,7 @@ export const Features = () => {
       <div className={styles['image-wrapper']}>
         <img
           className={styles['middle-banner']}
-          src='/icon/banner.jpg'
+          src='/images/banner.jpg'
           alt='Keyvisual写真'
           width={1000}
           height={685}
