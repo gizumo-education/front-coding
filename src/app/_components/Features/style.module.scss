@@ -1,0 +1,59 @@
+@use '../../../styles' as *;
+
+.feature-banner {
+  position: relative;
+  overflow: hidden;
+
+  .image-wrapper {
+    position: relative;
+    transform: translateY(-50%);
+    @include media-pc {
+      transform: translateY(0%);
+    }
+  }
+
+  .middle-banner {
+    width: sp-vw(400);
+    height: sp-vw(250);
+    object-fit: cover;
+    @include media-pc {
+      width: 100%;
+      height: pc-vw(300);
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 55%);
+  }
+
+  .banner-title {
+    margin-top: sp-vw(17);
+    font-size: sp-vw(14);
+    color: $color-white;
+    text-align: center;
+    @include media-pc {
+      margin-top: pc-vw(110);
+      font-size: pc-vw(25);
+    }
+  }
+
+  .banner-sub {
+    margin-top: sp-vw(17);
+    font-size: sp-vw(14);
+    color: $color-white;
+    @include media-pc {
+      margin-top: pc-vw(30);
+      font-size: pc-vw(25);
+    }
+  }
+
+  .banner-inner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

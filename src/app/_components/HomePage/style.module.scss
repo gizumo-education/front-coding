@@ -1,0 +1,99 @@
+@use '../../../styles' as *;
+
+.keyvisual-section {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: $color-black;
+  @include media-pc {
+    width: 100%;
+    height: pc-vw(500);
+  }
+
+  .container {
+    position: relative;
+    overflow: hidden;
+    background-color: $color-homepage;
+    @include media-pc {
+      height: auto;
+    }
+  }
+
+  .keyvisual-img {
+    width: sp-vw(400);
+    height: sp-vw(270);
+    object-fit: cover;
+    transform: translateX(-10%) scale(1.2);
+    transform-origin: center;
+    @include media-pc {
+      display: block;
+      width: pc-vw(1200);
+      height: pc-vw(500);
+      margin: 0 auto;
+      transform: none;
+      transform: translateX(3%);
+    }
+  }
+
+  .group {
+    position: absolute;
+    top: sp-vw(137);
+    left: sp-vw(150);
+    transform: translateY(-50%);
+    @include flex-column-center;
+    @include media-pc {
+      top: pc-vw(230);
+      left: pc-vw(585);
+      transform: translateY(-46%) translateX(3%);
+    }
+  }
+
+  .no1-img {
+    width: sp-vw(150);
+    height: sp-vw(80);
+    margin: sp-vw(5) 0;
+    @include media-pc {
+      width: pc-vw(350);
+      height: pc-vw(160);
+      margin: pc-vw(40) 0;
+    }
+  }
+
+  .main-title {
+    margin: sp-vw(12) 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: sp-vw(15);
+    font-weight: bold;
+    color: $color-white;
+    text-shadow: 0 2px 8px rgb(0 0 0 / 20%);
+    @include media-pc {
+      margin: pc-vw(12) 0;
+      font-size: pc-vw(50);
+    }
+  }
+
+  .job-count {
+    display: inline-block;
+    padding: sp-vw(6) sp-vw(13);
+    margin: sp-vw(5) 0;
+    font-size: sp-vw(10);
+    color: $color-light-green;
+    background-color: $color-white;
+    border: 2px solid $color-light-green;
+    border-radius: $radius-sm;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 8%);
+    @include media-pc {
+      padding: pc-vw(10) pc-vw(40);
+      margin-top: pc-vw(50);
+      font-size: pc-vw(20);
+    }
+
+    .count-num {
+      font-size: sp-vw(16);
+      font-weight: bold;
+      @include media-pc {
+        font-size: pc-vw(40);
+      }
+    }
+  }
+}
