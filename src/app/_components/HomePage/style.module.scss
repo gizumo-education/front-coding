@@ -1,0 +1,62 @@
+@use '../../../styles' as *;
+
+.keyvisual-section {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: $color-black;
+
+  .container {
+    position: relative;
+    overflow: hidden;
+    background-color: $color-homepage;
+  }
+
+  .keyvisual-img {
+    width: sp-vw(400);
+    height: sp-vw(270);
+    object-fit: cover;
+    transform: translateX(-10%) scale(1.2);
+    transform-origin: center;
+  }
+
+  .group {
+    position: absolute;
+    top: sp-vw(137);
+    left: sp-vw(150);
+    transform: translateY(-50%);
+    @include flex-column-center;
+  }
+
+  .no1-img {
+    width: sp-vw(150);
+    height: sp-vw(80);
+    margin: sp-vw(5) 0;
+  }
+
+  .main-title {
+    margin: sp-vw(12) 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: sp-vw(15);
+    font-weight: bold;
+    color: $color-white;
+    text-shadow: 0 2px 8px rgb(0 0 0 / 20%);
+  }
+
+  .job-count {
+    display: inline-block;
+    padding: sp-vw(6) sp-vw(13);
+    margin: sp-vw(5) 0;
+    font-size: sp-vw(10);
+    color: $color-light-green;
+    background-color: $color-white;
+    border: 2px solid $color-light-green;
+    border-radius: $radius-sm;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 8%);
+
+    .count-num {
+      font-size: sp-vw(16);
+      font-weight: bold;
+    }
+  }
+}

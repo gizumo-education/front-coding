@@ -1,0 +1,42 @@
+@use '../../../styles' as *;
+
+.feature-banner {
+  position: relative;
+  overflow: hidden;
+
+  .image-wrapper {
+    position: relative;
+    transform: translateY(-50%);
+  }
+
+  .middle-banner {
+    width: sp-vw(400);
+    height: sp-vw(150);
+    object-fit: cover;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 55%);
+  }
+
+  .banner-title {
+    text-align: center;
+  }
+
+  .banner-title,
+  .banner-sub {
+    margin-top: sp-vw(17);
+    font-size: sp-vw(14);
+    color: $color-white;
+  }
+
+  .banner-inner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
