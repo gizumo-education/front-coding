@@ -8,17 +8,17 @@
     position: relative;
     transform: translateY(-50%);
     @include media-pc {
-      transform: translateY(0%);
+      transform: translateY(-55%);
     }
   }
 
   .middle-banner {
     width: sp-vw(400);
-    height: sp-vw(250);
+    height: sp-vw(150);
     object-fit: cover;
     @include media-pc {
       width: 100%;
-      height: pc-vw(300);
+      height: pc-vw(660);
     }
   }
 
@@ -29,7 +29,7 @@
   }
 
   .banner-title {
-    margin-top: sp-vw(17);
+    margin-top: sp-vw(20);
     font-size: sp-vw(14);
     color: $color-white;
     text-align: center;
@@ -40,7 +40,7 @@
   }
 
   .banner-sub {
-    margin-top: sp-vw(17);
+    margin-top: sp-vw(10);
     font-size: sp-vw(14);
     color: $color-white;
     @include media-pc {

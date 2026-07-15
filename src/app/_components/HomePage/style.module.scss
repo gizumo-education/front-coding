@@ -2,11 +2,11 @@
 
 .keyvisual-section {
   width: 100%;
+  height: sp-vw(270);
   margin: 0 auto;
   font-family: 'Noto Sans JP', sans-serif;
   color: $color-black;
   @include media-pc {
-    width: 100%;
     height: pc-vw(500);
   }
 
@@ -15,7 +15,7 @@
     overflow: hidden;
     background-color: $color-homepage;
     @include media-pc {
-      height: auto;
+      height: pc-vw(500);
     }
   }
 
@@ -26,11 +26,11 @@
     transform: translateX(-10%) scale(1.2);
     transform-origin: center;
     @include media-pc {
-      display: block;
       width: pc-vw(1200);
       height: pc-vw(500);
-      margin: 0 auto;
-      transform: translateX(3%) scale(1);
+      object-fit: cover;
+      object-position: center 38%;
+      transform: translateX(20%) scale(1);
     }
   }
 
