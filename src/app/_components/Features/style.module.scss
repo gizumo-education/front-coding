@@ -6,19 +6,16 @@
 
   .image-wrapper {
     position: relative;
-    transform: translateY(-50%);
-    @include media-pc {
-      transform: translateY(-55%);
-    }
   }
 
   .middle-banner {
     width: sp-vw(400);
-    height: sp-vw(150);
+    height: sp-vw(75);
     object-fit: cover;
+    object-position: center 73%;
     @include media-pc {
       width: 100%;
-      height: pc-vw(660);
+      height: pc-vw(300);
     }
   }
 
