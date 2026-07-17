@@ -14,7 +14,7 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    width: $inner-pc-max-width;
+    width: pc-vw($inner-pc-max-width);
     height: pc-vw(240);
     padding: pc-vw(20);
     margin: pc-vw(60) auto;
