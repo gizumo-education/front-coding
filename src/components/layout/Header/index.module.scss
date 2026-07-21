@@ -1,4 +1,5 @@
 @use '../../../styles/index' as *;
+@use '../../../styles/variables' as *;
 
 .header {
   position: sticky;
@@ -27,6 +28,7 @@
   width: sp-vw(50);
   height: sp-vw(38);
   border-radius: 50%;
+
   @include media-pc {
     display: none;
   }
@@ -132,10 +134,10 @@
   align-items: center;
   height: 100%;
   color: #{$color-white};
-  background-color: #{$color-light-blue};
+  background-color: #{$color-blue};
   border-radius: 6px;
   @include media-pc {
-    column-gap: pc-vw(10);
+    column-gap: pc-vw(20);
     padding: pc-vw(16) pc-vw(20);
   }
 }

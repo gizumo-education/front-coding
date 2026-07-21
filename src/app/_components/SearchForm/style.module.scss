@@ -9,16 +9,37 @@
   background-color: $color-dark-blue;
   border-radius: sp-vw(12);
   box-shadow: 0 6px 16px rgb(0 0 0 / 6%);
+  @include media-pc {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: pc-vw($inner-pc-max-width);
+    height: pc-vw(240);
+    padding: pc-vw(20);
+    margin: pc-vw(60) auto;
+    border-radius: pc-vw(12);
+  }
 
   .search-title {
     font-size: sp-vw(22);
     font-weight: bold;
+    @include media-pc {
+      width: 100%;
+      margin-top: pc-vw(10);
+      font-size: pc-vw(25);
+    }
   }
 
   .description {
     margin: sp-vw(15) auto;
     font-size: sp-vw(14);
     color: $color-black;
+    @include media-pc {
+      width: 100%;
+      margin: 0 auto;
+      font-size: pc-vw(20);
+    }
   }
 
   .search-conditions {
@@ -26,6 +47,11 @@
     gap: sp-vw(7);
     align-items: center;
     justify-content: center;
+    @include media-pc {
+      display: flex;
+      gap: pc-vw(15);
+      border-radius: sp-vw(22);
+    }
   }
 
   .group-action {
@@ -33,6 +59,13 @@
     flex-direction: column;
     gap: sp-vw(12);
     align-items: center;
+    @include media-pc {
+      display: flex;
+      flex-direction: row;
+      gap: pc-vw(15);
+      align-items: center;
+      margin-left: pc-vw(12);
+    }
   }
 
   .select {
@@ -56,6 +89,17 @@
     background-size: sp-vw(7) sp-vw(7);
     border: 1.5px solid $color-primary-pink;
     border-radius: $radius-sm;
+    @include media-pc {
+      width: pc-vw(200);
+      padding: pc-vw(20) 0 pc-vw(20) pc-vw(13);
+      margin: pc-vw(10) 0;
+      font-size: pc-vw(18);
+      background-position:
+        right pc-vw(24) center,
+        right pc-vw(14) center;
+      background-size: pc-vw(10) pc-vw(10);
+      border-radius: sp-vw(3);
+    }
   }
 
   .search-input {
@@ -69,6 +113,13 @@
     background-color: $color-white;
     border: 1.5px solid $color-primary-pink;
     border-radius: $radius-sm;
+    @include media-pc {
+      width: pc-vw(300);
+      padding: pc-vw(14);
+      margin: pc-vw(8) 0;
+      font-size: pc-vw(18);
+      border-radius: sp-vw(2);
+    }
   }
 
   .search-button {
@@ -82,11 +133,22 @@
     font-weight: bold;
     box-shadow: $shadow-pink;
     @include pink-btn;
+    @include media-pc {
+      gap: pc-vw(5);
+      width: pc-vw(140);
+      height: pc-vw(60);
+      padding: pc-vw(10);
+      font-size: pc-vw(18);
+    }
   }
 
   .search-img {
     width: sp-vw(20);
     height: sp-vw(18);
     filter: brightness(0) invert(1);
+    @include media-pc {
+      width: pc-vw(38);
+      height: pc-vw(32);
+    }
   }
 }

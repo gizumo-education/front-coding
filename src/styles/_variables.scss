@@ -9,13 +9,14 @@ $breakpoint-pc: 768;
 // INFO: Color variables
 $color-white: #fff;
 $color-black: #000;
+$color-blue: #92c5ea;
 $color-homepage: #98b1be;
 $color-dark-blue: #deeef9;
 $color-light-blue: #eff6fc;
 $color-light-green: #2eb6aa;
 $color-primary-pink: #de5579;
 $color-text-sub: #a4a4a4;
-$color-light-pink: #ffe6f0;
+$color-light-pink: #ffcad0;
 $shadow-pink: 0 4px 6px rgb(224 82 117 / 20%);
 
 // INFO: Radius variables
@@ -23,3 +24,6 @@ $radius-sm: 6px;
 
 // INFO: Job label variables
 $job-labels: (salary, location, station);
+
+// INFO: Gap variables
+$gap-sm: 15px;

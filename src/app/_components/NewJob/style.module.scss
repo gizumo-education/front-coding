@@ -4,11 +4,22 @@
   padding: sp-vw(10) 0 sp-vw(60);
   background-color: $color-light-blue;
   @include flex-column-center;
+  @include media-pc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: pc-vw(0) pc-vw(210);
+  }
 
   &-sub-title {
     margin: sp-vw(18) 0 sp-vw(25);
     font-size: sp-vw(25);
     font-weight: bold;
+    @include media-pc {
+      margin: pc-vw(65) 0 pc-vw(13);
+      font-size: pc-vw(25);
+      font-weight: normal;
+    }
   }
 
   &-content {
@@ -18,6 +29,12 @@
     margin-bottom: sp-vw(30);
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    @include media-pc {
+      gap: pc-vw(20);
+      width: pc-vw($inner-pc-max-width);
+      margin: 0 auto;
+      margin-top: pc-vw(5);
+    }
   }
 
   .content {
@@ -27,6 +44,9 @@
     width: sp-vw($inner-sp-max-width);
     border-radius: $radius-sm;
     box-shadow: 0 4px 12px rgb(0 0 0 / 4%);
+    @include media-pc {
+      width: pc-vw(280);
+    }
   }
 
   .job-img-wrap {
@@ -34,6 +54,9 @@
     align-items: center;
     justify-content: center;
     padding: sp-vw(10) 0 sp-vw(5);
+    @include media-pc {
+      padding: pc-vw(10) 0 pc-vw(5);
+    }
   }
 
   .job-img {
@@ -42,12 +65,21 @@
     font-weight: bold;
     object-fit: cover;
     border-radius: $radius-sm;
+    @include media-pc {
+      width: pc-vw(280);
+      height: pc-vw(200);
+      border-radius: pc-vw(15);
+    }
   }
 
   .job-info {
     display: flex;
     flex-direction: column;
     min-height: sp-vw(100);
+    @include media-pc {
+      min-height: pc-vw(100);
+      margin: pc-vw(1) 0;
+    }
   }
 
   .job-card-title {
@@ -57,6 +89,11 @@
     line-height: 1.5;
     color: $color-black;
     text-align: left;
+    @include media-pc {
+      margin: pc-vw(3) 0;
+      font-size: pc-vw(16);
+      font-weight: normal;
+    }
   }
 
   .job-meta {
@@ -65,8 +102,6 @@
 
   .meta-row {
     display: flex;
-    flex-direction: row;
-
     align-items: center;
   }
 
@@ -79,13 +114,23 @@
       color: $color-black;
       text-align: center;
       background-color: $color-light-pink;
+      @include media-pc {
+        min-width: pc-vw(55);
+        padding: pc-vw(3) 0;
+        margin: pc-vw(2) pc-vw(4);
+        font-size: pc-vw(14);
+      }
     }
   }
 
   .meta-text {
     margin: 0 sp-vw(18);
     font-size: sp-vw(15);
-    color: $color-black;
+
+    @include media-pc {
+      margin: 0 pc-vw(5);
+      font-size: pc-vw(14);
+    }
   }
 
   &-button {
@@ -94,12 +139,20 @@
     font-size: sp-vw(18);
     box-shadow: $shadow-pink;
     @include pink-btn;
+    @include media-pc {
+      padding: pc-vw(20) pc-vw(75);
+      margin: pc-vw(15) auto pc-vw(70);
+      font-size: pc-vw(18);
+    }
   }
 
   .slider-wrapper {
     position: relative;
     width: sp-vw($inner-sp-max-width);
     margin-bottom: sp-vw(11);
+    @include media-pc {
+      width: pc-vw($inner-pc-max-width);
+    }
 
     @each $dir, $side in (prev: left, next: right) {
       .#{$dir}-button {
@@ -108,6 +161,12 @@
         width: sp-vw(45);
         height: sp-vw(45);
         @include slider-button;
+        @include media-pc {
+          #{$side}: 0;
+          top: pc-vw(80);
+          width: pc-vw(60);
+          height: pc-vw(60);
+        }
       }
     }
   }
