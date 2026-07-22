@@ -1,3 +1,7 @@
+'use client'
+
+import { useRef } from 'react'
+import Slider from 'react-slick'
 import styles from './style.module.scss'
 
 const NEW_JOBS_DATA = [
@@ -35,7 +39,25 @@ const NEW_JOBS_DATA = [
   },
 ]
 
+const settings = {
+  infinite: true,
+  speed: 500,
+  slidesToScroll: 1,
+  slidesToShow: 4,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+      },
+    },
+  ],
+}
+
 export const NewJob = () => {
+  const sliderRef = useRef(null)
+
   return (
     <div className={styles['new-job']}>
       <h2 className={styles['new-job-sub-title']}>新着求人</h2>
@@ -45,11 +67,16 @@ export const NewJob = () => {
           className={styles['prev-button']}
           type='button'
           aria-label='前へ'
+          onClick={() => sliderRef.current.slickPrev()}
         >
           ＜
         </button>
 
-        <div className={styles['new-job-content']}>
+        <Slider
+          ref={sliderRef}
+          {...settings}
+          className={styles['new-job-content']}
+        >
           {NEW_JOBS_DATA.map((job) => (
             <div key={job.id} className={styles['content']}>
               <div className={styles['job-img-wrap']}>
@@ -80,11 +107,12 @@ export const NewJob = () => {
               </div>
             </div>
           ))}
-        </div>
+        </Slider>
         <button
           className={styles['next-button']}
           type='button'
           aria-label='次へ'
+          onClick={() => sliderRef.current.slickNext()}
         >
           ＞
         </button>

@@ -12,7 +12,7 @@
   }
 
   &-sub-title {
-    margin: sp-vw(18) 0 sp-vw(25);
+    margin: sp-vw(18) 0 sp-vw(40);
     font-size: sp-vw(25);
     font-weight: bold;
     @include media-pc {
@@ -23,29 +23,42 @@
   }
 
   &-content {
-    display: flex;
-    gap: sp-vw(16);
     width: sp-vw($design-sp-width);
     margin-bottom: sp-vw(30);
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     @include media-pc {
-      gap: pc-vw(20);
       width: pc-vw($inner-pc-max-width);
       margin: 0 auto;
       margin-top: pc-vw(5);
     }
   }
 
+  /* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+  .new-job-content :global(.slick-slide) {
+    box-sizing: border-box;
+    padding: 0 sp-vw(15);
+    @include media-pc {
+      padding: 0 pc-vw(10);
+    }
+  }
+
+  /* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+  .new-job-content :global(.slick-list) {
+    margin: 0 sp-vw(-15);
+    @include media-pc {
+      margin: 0 pc-vw(-10);
+    }
+  }
+
   .content {
     display: flex;
-    flex-shrink: 0;
     flex-direction: column;
-    width: sp-vw($inner-sp-max-width);
+    align-items: center;
+    width: 100%;
+    max-width: sp-vw(370);
     border-radius: $radius-sm;
     box-shadow: 0 4px 12px rgb(0 0 0 / 4%);
     @include media-pc {
-      width: pc-vw(280);
+      width: 100%;
     }
   }
 
@@ -53,21 +66,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: sp-vw(10) 0 sp-vw(5);
+    width: 100%;
     @include media-pc {
-      padding: pc-vw(10) 0 pc-vw(5);
+      padding: pc-vw(10) 0 0;
     }
   }
 
   .job-img {
     width: sp-vw(370);
     height: sp-vw(210);
-    font-weight: bold;
     object-fit: cover;
     border-radius: $radius-sm;
     @include media-pc {
       width: pc-vw(280);
-      height: pc-vw(200);
+      height: pc-vw(207);
       border-radius: pc-vw(15);
     }
   }
@@ -78,12 +90,11 @@
     min-height: sp-vw(100);
     @include media-pc {
       min-height: pc-vw(100);
-      margin: pc-vw(1) 0;
     }
   }
 
   .job-card-title {
-    margin: sp-vw(5) auto;
+    margin: sp-vw(7) auto;
     font-size: sp-vw(16);
     font-weight: bold;
     line-height: 1.5;
@@ -91,7 +102,7 @@
     text-align: left;
     @include media-pc {
       margin: pc-vw(3) 0;
-      font-size: pc-vw(16);
+      font-size: pc-vw(15);
       font-weight: normal;
     }
   }
@@ -157,7 +168,7 @@
     @each $dir, $side in (prev: left, next: right) {
       .#{$dir}-button {
         #{$side}: sp-vw(0);
-        top: sp-vw(165);
+        top: sp-vw(150);
         width: sp-vw(45);
         height: sp-vw(45);
         @include slider-button;

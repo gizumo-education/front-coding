@@ -1,6 +1,9 @@
 import 'the-new-css-reset/css/reset.css'
 import '../styles/style.scss'
 
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
 import { notoSansJP } from '../libs/fonts'
 
 export const metadata = {
