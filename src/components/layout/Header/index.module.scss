@@ -40,6 +40,7 @@
   height: sp-vw(6);
   background-color: #{$color-black};
   border-radius: 6px;
+  transition: 0.3s;
 }
 
 .line:nth-child(1) {
@@ -163,5 +164,44 @@
     width: pc-vw(16);
     height: pc-vw(16);
     background-image: url('/icon/history.svg');
+  }
+}
+
+.sp-menu {
+  position: fixed;
+  top: sp-vw(70);
+  width: 100%;
+  height: sp-vw(554);
+  background-color: rgba($color-black, 0.8);
+  transform: translateX(115%);
+  transition: transform 0.3s ease;
+}
+
+.sp-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(38);
+  margin: sp-vw(57) 0 0 sp-vw(97);
+  font-size: sp-vw(22);
+  color: $color-white;
+}
+
+.open {
+  transform: translateX(15);
+}
+
+.button.open {
+  .line:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .line:nth-child(3) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
   }
 }

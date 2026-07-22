@@ -2,6 +2,8 @@
 
 .new-job {
   padding: sp-vw(10) 0 sp-vw(60);
+
+  // scroll-margin-top: sp-vw(70);
   background-color: $color-light-blue;
   @include flex-column-center;
   @include media-pc {
@@ -74,7 +76,7 @@
 
   .job-img {
     width: sp-vw(370);
-    height: sp-vw(210);
+    height: sp-vw(205);
     object-fit: cover;
     object-position: center 5%;
     border-radius: $radius-sm;

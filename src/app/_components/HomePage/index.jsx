@@ -2,7 +2,7 @@ import styles from './style.module.scss'
 
 export const HomePage = () => {
   return (
-    <div className={styles['keyvisual-section']}>
+    <div id='HomePage' className={styles['keyvisual-section']}>
       <div className={styles['container']}>
         <img
           className={styles['keyvisual-img']}

@@ -59,7 +59,7 @@ export const NewJob = () => {
   const sliderRef = useRef(null)
 
   return (
-    <div className={styles['new-job']}>
+    <div id='NewJob' className={styles['new-job']}>
       <h2 className={styles['new-job-sub-title']}>新着求人</h2>
 
       <div className={styles['slider-wrapper']}>
