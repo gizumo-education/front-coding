@@ -76,6 +76,7 @@
     width: sp-vw(370);
     height: sp-vw(210);
     object-fit: cover;
+    object-position: center 5%;
     border-radius: $radius-sm;
     @include media-pc {
       width: pc-vw(280);
