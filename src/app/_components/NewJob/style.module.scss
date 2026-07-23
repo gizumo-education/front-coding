@@ -2,8 +2,7 @@
 
 .new-job {
   padding: sp-vw(10) 0 sp-vw(60);
-
-  // scroll-margin-top: sp-vw(70);
+  scroll-margin-top: sp-vw(70);
   background-color: $color-light-blue;
   @include flex-column-center;
   @include media-pc {
@@ -31,23 +30,6 @@
       width: pc-vw($inner-pc-max-width);
       margin: 0 auto;
       margin-top: pc-vw(5);
-    }
-  }
-
-  /* stylelint-disable-next-line selector-pseudo-class-no-unknown */
-  .new-job-content :global(.slick-slide) {
-    box-sizing: border-box;
-    padding: 0 sp-vw(15);
-    @include media-pc {
-      padding: 0 pc-vw(10);
-    }
-  }
-
-  /* stylelint-disable-next-line selector-pseudo-class-no-unknown */
-  .new-job-content :global(.slick-list) {
-    margin: 0 sp-vw(-15);
-    @include media-pc {
-      margin: 0 pc-vw(-10);
     }
   }
 

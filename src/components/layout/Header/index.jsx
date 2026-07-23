@@ -64,17 +64,30 @@ export const Header = () => {
           <span className={styles.line} />
         </button>
       </nav>
-
       {/* SP用メニュー */}
       <nav className={clsx(styles['sp-menu'], { [styles.open]: isOpen })}>
+        <button
+          type='button'
+          className={styles.overlay}
+          onClick={() => setIsOpen(false)}
+          aria-label='メニューを閉じる'
+        />
         <ul className={styles['sp-menu-list']}>
           <li>
-            <a href='#HomePage' onClick={() => setIsOpen(false)}>
+            <a
+              href='#HomePage'
+              className={styles['sp-menu-link']}
+              onClick={() => setIsOpen(false)}
+            >
               トップ
             </a>
           </li>
           <li>
-            <a href='#NewJob' onClick={() => setIsOpen(false)}>
+            <a
+              href='#NewJob'
+              className={styles['sp-menu-link']}
+              onClick={() => setIsOpen(false)}
+            >
               新着求人
             </a>
           </li>
