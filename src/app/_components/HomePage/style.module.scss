@@ -6,6 +6,7 @@
   margin: 0 auto;
   font-family: 'Noto Sans JP', sans-serif;
   color: $color-black;
+  scroll-margin-top: sp-vw(70);
   @include media-pc {
     height: pc-vw(500);
   }
