@@ -1,11 +1,24 @@
 $white: #fff;
 $black: #000;
 $buttonBlue: #92C5EA;
+$green: rgba(46, 182, 170, 1);
+$pink: rgba(222, 85, 121, 1);
+$clear: rgba(255, 255, 255, 0.7);
 
 // 背景
 $bgLightBlue: #EFF6FC;
+$bgBlue: rgba(222, 238, 249, 1);
 $bgGray: #D7D7D7;
+$bgPink: rgba(255, 202, 208, 1);
 
 // フォントの太さ
 $regular: 400;
 $bold: 700;
+
+//フォントのサイズ
+$fontMain: 50;
+$fontRegular: 18;
+
+//フォントの種類
+$fontRegular: "NotoSansJP-Regular";
+$fontBolt: "NotoSansJP-Bold";
