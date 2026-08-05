@@ -1,0 +1,70 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/_variables.scss';
+// 新着求人に関するスタイル
+
+.p-news {
+  background-color: variables.$bgLightBlue;
+  padding-block: 60px;
+  height: 636px;
+
+  &_title {
+    font-size: 25px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  &_slider {
+    position: relative;
+
+    &_button {
+      position: absolute;
+      top: 130px;
+      transform: translateY(-50%);
+      z-index: 10;
+
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      font-size: 30px;
+      background-color: variables.$clear;
+
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        &::before {
+          content: '';
+          display: block;
+          width: 18px;  /* 矢印のサイズ */
+          height: 18px; /* 矢印のサイズ */
+          border-top: 1px solid variables.$black;
+          border-right: 1px solid variables.$black;
+        }
+
+      &._back {
+        left: 0;
+        &::before {
+          transform: rotate(-135deg); /* 左向きに回転 */
+          margin-left: 4px; /* 見た目の中央微調整 */
+        }
+      }
+      &._next {
+        right: 0;
+        &::before {
+          transform: rotate(45deg); /* 右向きに回転 */
+          margin-right: 4px; /* 見た目の中央微調整 */
+        }
+      }
+    }
+
+  }
+
+  &_button{
+    font-size: 18px;
+    display: block;
+    margin-inline: auto;
+    width: 360px;
+  }
+}

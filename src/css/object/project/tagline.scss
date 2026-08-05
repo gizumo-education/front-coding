@@ -1,0 +1,24 @@
+@use '../../object/utility/utility.scss';
+@use '../../foundation/_variables.scss';
+// タグラインに関するスタイル
+
+.p-tagline {
+  background-image: url('../img/picture/main-overview.jpg');
+  background-position: center;
+  height: 300px;
+  padding-block: 110px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+
+  &_contents{
+    display: grid;
+    place-items: center;
+    gap: 32px;
+
+    &_text {
+      color: variables.$white;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+}
