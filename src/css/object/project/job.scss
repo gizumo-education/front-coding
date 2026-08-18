@@ -1,5 +1,4 @@
 @use '../../object/utility/utility.scss';
-@use '../../foundation/_variables.scss';
 // 新着求人の記事に関するスタイル
 
 .p-job {
@@ -28,7 +27,7 @@
       font-size: 14px;
 
       &_dt {
-        background-color: variables.$bgPink;
+        background-color: utility.$bgPink;
         width: 60px;
         height: 21px;
         line-height: 21px;

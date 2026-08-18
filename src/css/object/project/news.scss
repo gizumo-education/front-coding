@@ -1,9 +1,8 @@
 @use '../../object/utility/utility.scss';
-@use '../../foundation/_variables.scss';
 // 新着求人に関するスタイル
 
 .p-news {
-  background-color: variables.$bgLightBlue;
+  background-color: utility.$bgLightBlue;
   padding-block: 60px;
   height: 636px;
 
@@ -28,7 +27,7 @@
       border-radius: 50%;
       border: none;
       font-size: 30px;
-      background-color: variables.$clear;
+      background-color: utility.$clear;
 
       cursor: pointer;
       display: flex;
@@ -39,8 +38,8 @@
           display: block;
           width: 18px;
           height: 18px;
-          border-top: 1px solid variables.$black;
-          border-right: 1px solid variables.$black;
+          border-top: 1px solid utility.$black;
+          border-right: 1px solid utility.$black;
         }
 
       &._back {

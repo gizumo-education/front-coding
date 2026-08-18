@@ -1,12 +1,11 @@
 @use '../../object/utility/utility.scss';
-@use '../../foundation/_variables.scss';
 // お仕事検索に関するスタイル
 
 .p-search {
   padding-block: 60px;
 
   &_form {
-    background-color: variables.$bgBlue;
+    background-color: utility.$bgBlue;
     padding-block: 40px;
     display: flex;
     flex-direction: column;
@@ -33,7 +32,7 @@
       &_keyword {
         height: 60px;
         width: 300px;
-        border: 2px solid variables.$pink;
+        border: 2px solid utility.$pink;
         border-radius: 10px;
         font-size: 18px;
         display: flex;

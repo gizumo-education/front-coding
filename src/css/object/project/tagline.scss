@@ -1,5 +1,4 @@
 @use '../../object/utility/utility.scss';
-@use '../../foundation/_variables.scss';
 // タグラインに関するスタイル
 
 .p-tagline {
@@ -16,7 +15,7 @@
     gap: 32px;
 
     &_text {
-      color: variables.$white;
+      color: utility.$white;
       font-size: 25px;
       font-weight: bold;
     }
