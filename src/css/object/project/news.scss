@@ -37,8 +37,8 @@
         &::before {
           content: '';
           display: block;
-          width: 18px;  /* 矢印のサイズ */
-          height: 18px; /* 矢印のサイズ */
+          width: 18px;
+          height: 18px;
           border-top: 1px solid variables.$black;
           border-right: 1px solid variables.$black;
         }
@@ -46,15 +46,15 @@
       &._back {
         left: 0;
         &::before {
-          transform: rotate(-135deg); /* 左向きに回転 */
-          margin-left: 4px; /* 見た目の中央微調整 */
+          transform: rotate(-135deg);
+          margin-left: 4px;
         }
       }
       &._next {
         right: 0;
         &::before {
-          transform: rotate(45deg); /* 右向きに回転 */
-          margin-right: 4px; /* 見た目の中央微調整 */
+          transform: rotate(45deg);
+          margin-right: 4px;
         }
       }
     }
