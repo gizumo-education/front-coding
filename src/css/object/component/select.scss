@@ -13,20 +13,20 @@
     transform: translateY(-50%);
     width: 18px;
     height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 9px solid utility.$pink;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid utility.$pink;
     pointer-events: none;
   }
 
   &_type {
-  height: 60px;
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: 2px solid utility.$pink;
-  border-radius: 10px;
-  appearance: none;
+    height: 60px;
+    width: 200px;
+    font-size: 18px;
+    padding: 13px;
+    border: 2px solid utility.$pink;
+    border-radius: 10px;
+    appearance: none;
   }
 }
 

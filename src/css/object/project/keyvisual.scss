@@ -11,10 +11,10 @@
     flex-direction: column;
     align-items: center;
     height: 500px;
-    padding-block: 50px;
+    padding-block: 54px 46px;
     justify-content: space-between;
     width: fit-content;
-    margin-left: auto;
+    margin-left: 395px;
 
     &_img {
       background-color: transparent;
@@ -23,8 +23,10 @@
     &_title {
       color: utility.$white;
       font-size: 50px;
+      white-space: nowrap;
       font-weight: utility.$bold;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      padding-block: 30px 50px;
     }
 
     &_count {
