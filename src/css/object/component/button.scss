@@ -1,2 +1,14 @@
 @use '../../object/utility/utility.scss';
 // 共通パーツであるボタンのスタイルを記述するファイル
+
+.pink-button {
+  color: utility.$white;
+  font-size: 18px;
+  background-color: utility.$pink;
+  border-radius: 30px;
+  height: 60px;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}

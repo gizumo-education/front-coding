@@ -1,0 +1,44 @@
+@use '../../object/utility/utility.scss';
+// 新着求人の記事に関するスタイル
+
+.p-job {
+  padding-block: 30px 57px;
+  display: flex;
+  justify-content: space-between;
+
+  &_post{
+    width: 280px;
+
+    &_text {
+      overflow-wrap: anywhere;
+      padding-block: 5px;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    &_contents {
+      display: flex;
+      font-size: 14px;
+
+      &_dt {
+        background-color: utility.$bgPink;
+        width: 60px;
+        height: 21px;
+        line-height: 21px;
+        text-align: center;
+        margin-right: 10px;
+      }
+
+      &_dd {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
