@@ -1,0 +1,51 @@
+@use '../../object/utility/utility.scss';
+//ギズジョブの特徴に関するスタイル
+
+.p-strengths {
+  padding-top: 80px;
+  height: 540px;
+
+  &_style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &_title {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  &_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &_item {
+    background-color: rgba(247, 210, 219, 1);
+    width: 570px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_title {
+      color: utility.$pink;
+      font-size: 25px;
+      font-weight: bold;
+      padding-top: 40px;
+    }
+
+    &_content {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      height: 120px;
+
+    }
+  }
+}
