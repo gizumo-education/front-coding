@@ -1,0 +1,67 @@
+@use '../../object/utility/utility.scss';
+// STEPに関するスタイル
+
+
+.p-step {
+  width: 280px;
+  height: 360px;
+  border-radius: 10px;
+  border: 2px solid utility.$pink;
+  position: relative;
+
+  &_number {
+    color: utility.$white;
+    font-size: 16px;
+    font-weight: 520;
+    width: 60px;
+    height: 60px;
+    background-color: utility.$pink;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+  }
+
+  &_imgstyle {
+    height: 100px;
+  }
+
+  &_img {
+    display: block;
+    margin: auto;
+  }
+
+  &_title {
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    padding: 20px;
+  }
+
+  &_content {
+    font-size: 14px;
+    padding-inline: 18px;
+  }
+}
+
+.p-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  transform: translateY(-50%);
+
+  border-style: solid;
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent utility.$pink;
+}
+
+.a {
+  margin-top: -10px;
+}
