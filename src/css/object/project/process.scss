@@ -2,14 +2,14 @@
 //転職までの流れに関するスタイル
 
 .p-process {
-  padding-top: 100px;
+  padding-top: 150px;
   height: 540px;
 
   &_style {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
   }
 
   &_title {
