@@ -2,11 +2,10 @@
 //お役立ちコンテンツに関するスタイル
 
 .p-guide {
-  padding-top: 80px;
-  height: 550px;
-  padding-top: 90px;
+  height: 460px;
 
   &_style {
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +20,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding-top: 48px;
+    margin-top: 48px;
   }
 
   &_resource {
@@ -45,7 +44,7 @@
       display: flex;
       align-items: center;
       text-align: center;
-      padding-top: 46px;
+      margin-top: 46px;
       line-height: 1.4;
     }
   }
@@ -72,7 +71,7 @@
   }
 
   &_button {
-    padding-top: 80px;
+    margin-top: 80px;
 
     &_item {
       width: 420px;

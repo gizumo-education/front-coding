@@ -2,10 +2,10 @@
 //ギズジョブの特徴に関するスタイル
 
 .p-strengths {
-  padding-top: 105px;
-  height: 600px;
+  height: 495px;
 
   &_style {
+    margin-top: 105px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,12 +31,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 40px;
 
     &_title {
       color: utility.$pink;
       font-size: 25px;
       font-weight: bold;
-      padding-top: 40px;
     }
 
     &_content {
