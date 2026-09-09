@@ -63,7 +63,7 @@
   font-size: sp-vw(14);
   color: $color-black;
   background-color: $color-white;
-  border: 1px solid $color-pink-border;
+  border: sp-vw(1) solid $color-pink-border;
   border-radius: sp-vw(5);
 
   &::placeholder {
