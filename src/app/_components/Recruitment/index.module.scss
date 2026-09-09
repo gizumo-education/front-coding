@@ -1,0 +1,121 @@
+@use '@/styles' as *;
+
+.recruitment {
+  width: 100%;
+  padding-bottom: sp-vw(60);
+  background-color: $color-blue-pale;
+}
+
+.title {
+  margin-top: sp-vw(30);
+  margin-bottom: sp-vw(35);
+  font-size: sp-vw(25);
+  font-weight: 700;
+  line-height: sp-vw(25);
+  color: $color-black;
+  text-align: center;
+}
+
+.image {
+  width: sp-vw(370);
+  height: sp-vw(208);
+  margin: 0 sp-vw(15);
+  object-fit: cover;
+  border-radius: sp-vw(10);
+}
+
+.job-title {
+  margin-top: sp-vw(10.08);
+  margin-right: sp-vw(27);
+  margin-left: sp-vw(15);
+  font-size: sp-vw(16);
+  font-weight: 700;
+  line-height: sp-vw(22);
+  color: $color-black;
+}
+
+.info {
+  margin-top: sp-vw(8);
+  margin-left: sp-vw(15);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-top: sp-vw(4);
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(60);
+  height: sp-vw(21);
+  margin-top: sp-vw(2);
+  font-size: sp-vw(12);
+  color: $color-black;
+  background-color: $color-pink-light;
+}
+
+.value {
+  margin-left: sp-vw(21);
+  font-size: sp-vw(14);
+  line-height: sp-vw(20);
+  color: $color-black;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(370);
+  height: sp-vw(60);
+  margin-top: sp-vw(42);
+  margin-left: sp-vw(14);
+  font-size: sp-vw(18);
+  font-weight: 700;
+  color: $color-white;
+  background-color: $color-pink;
+  border-radius: sp-vw(30);
+}
+
+.image-wrapper {
+  position: relative;
+  width: sp-vw(370);
+  margin: 0 sp-vw(15);
+  margin-left: sp-vw(-2);
+}
+
+.slider-button-left,
+.slider-button-right {
+  position: absolute;
+  bottom: sp-vw(10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(42);
+  height: sp-vw(42);
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.slider-button-left {
+  left: sp-vw(16);
+}
+
+.slider-button-right {
+  right: sp-vw(-16);
+}
+
+.slider-circle {
+  position: absolute;
+  width: sp-vw(42);
+  height: sp-vw(42);
+}
+
+.slider-arrow {
+  position: relative;
+  width: sp-vw(8);
+  height: sp-vw(15);
+}

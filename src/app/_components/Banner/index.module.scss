@@ -1,0 +1,29 @@
+@use '@/styles' as *;
+
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: sp-vw(75);
+  background-image: url('/banner.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.banner::before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background-color: $color-black;
+  opacity: 0.5;
+}
+
+.text {
+  position: relative;
+  font-size: sp-vw(14);
+  line-height: 1.5;
+  color: $color-white;
+  text-align: center;
+}
