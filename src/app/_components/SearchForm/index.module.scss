@@ -8,6 +8,7 @@
   height: sp-vw(240);
   margin: sp-vw(25) sp-vw(15);
   background-color: $color-blue-bg;
+  border-radius: sp-vw(10);
 }
 
 .title {
@@ -42,15 +43,15 @@
   height: sp-vw(30);
   padding: 0 sp-vw(8);
   font-size: sp-vw(12);
-  line-height: sp-vw(30);
+  line-height: sp-vw(28);
   color: $color-black;
   appearance: none;
   background-color: $color-white;
   background-image: url('/arrow-down.svg');
   background-repeat: no-repeat;
-  background-position: right sp-vw(5) center;
+  background-position: right sp-vw(6) top sp-vw(12);
   background-size: sp-vw(13) sp-vw(7);
-  border: 1px solid $color-pink-border;
+  border: sp-vw(1) solid $color-pink-border;
   border-radius: sp-vw(5);
 }
 
@@ -59,7 +60,7 @@
   height: sp-vw(30);
   padding: 0 sp-vw(10);
   margin: sp-vw(15) sp-vw(25) sp-vw(19);
-  font-size: sp-vw(12);
+  font-size: sp-vw(14);
   color: $color-black;
   background-color: $color-white;
   border: 1px solid $color-pink-border;
@@ -72,16 +73,28 @@
 
 .button {
   display: flex;
+  gap: sp-vw(14);
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: sp-vw(160);
   height: sp-vw(40);
-  margin-left: 2px;
-  font-size: sp-vw(16);
+  padding-left: sp-vw(13);
+  font-size: sp-vw(18);
   font-weight: 700;
   color: $color-white;
   cursor: pointer;
   background-color: $color-pink;
   border: none;
   border-radius: sp-vw(20);
+}
+
+.button-icon {
+  width: sp-vw(18);
+  height: sp-vw(18);
+  margin-bottom: sp-vw(-1);
+  margin-left: sp-vw(-1);
+}
+
+.button-text {
+  margin-bottom: sp-vw(2);
 }

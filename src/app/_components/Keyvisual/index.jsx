@@ -8,8 +8,8 @@ export const Keyvisual = () => {
           className={styles.badge}
           src='/no1.png'
           alt='2021年 使って良かった転職サイト no.1'
-          width={150}
-          height={73}
+          width={316}
+          height={162}
         />
         <h1 className={styles.title}>医療事務求人を探すならギズジョブ</h1>
         <p className={styles.count}>

@@ -43,9 +43,11 @@ export const SearchForm = () => {
             <option key={job.id}>{job.name}</option>
           ))}
         </select>
-        <select className={styles.select}>
+        <select className={styles.select} defaultValue='東京都'>
           {areas.map((area) => (
-            <option key={area.id}>{area.name}</option>
+            <option key={area.id} value={area.name}>
+              {area.name}
+            </option>
           ))}
         </select>
         <select className={styles.select}>
@@ -60,7 +62,14 @@ export const SearchForm = () => {
         placeholder='キーワード・企業名・スキルなど'
       />
       <button className={styles.button} type='submit'>
-        検索する
+        <img
+          className={styles['button-icon']}
+          src='/icon/search.svg'
+          alt=''
+          width={18}
+          height={19}
+        />
+        <span className={styles['button-text']}>検索する</span>
       </button>
     </form>
   )
