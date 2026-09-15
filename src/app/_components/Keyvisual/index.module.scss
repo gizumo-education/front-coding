@@ -6,6 +6,22 @@
   background-image: url('/keyvisual.jpg');
   background-position: center;
   background-size: cover;
+
+  @include media-pc {
+    height: pc-vw(500);
+    background-image: url('/keyvisual-pc1.png');
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: pc-vw(175);
+      width: pc-vw(1262);
+      height: pc-vw(500);
+      content: '';
+      background-image: url('/keyvisual-pc2.png');
+      background-size: cover;
+    }
+  }
 }
 
 .inner {
@@ -17,12 +33,23 @@
   row-gap: sp-vw(15);
   align-items: center;
   transform: translateX(-50%);
+  @include media-pc {
+    top: pc-vw(56);
+    left: pc-vw(1004);
+    row-gap: 0;
+  }
 }
 
 .badge {
+  position: relative;
   width: sp-vw(150);
   height: sp-vw(73);
   margin-left: sp-vw(30);
+  @include media-pc {
+    width: pc-vw(342);
+    height: pc-vw(169);
+    margin-left: 0;
+  }
 }
 
 .title {
@@ -33,6 +60,12 @@
   line-height: sp-vw(22);
   color: $color-white;
   white-space: nowrap;
+  @include media-pc {
+    width: pc-vw(800);
+    margin-top: pc-vw(40);
+    font-size: pc-vw(50);
+    line-height: pc-vw(65);
+  }
 }
 
 .count {
@@ -45,10 +78,25 @@
   background-color: $color-white;
   border: 1px solid $color-green;
   border-radius: sp-vw(5);
+  @include media-pc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: pc-vw(391);
+    height: pc-vw(69);
+    padding: 0;
+    margin-top: pc-vw(54);
+    margin-left: 0;
+    font-size: pc-vw(20);
+    white-space: nowrap;
+  }
 }
 
 .number {
   font-size: sp-vw(16);
   font-weight: 700;
   color: $color-green;
+  @include media-pc {
+    font-size: pc-vw(40);
+  }
 }
