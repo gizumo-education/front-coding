@@ -5,7 +5,7 @@
   padding-bottom: sp-vw(60);
   background-color: $color-blue-pale;
   @include media-pc {
-    padding-bottom: pc-vw(80);
+    padding-bottom: pc-vw(67);
   }
 }
 
@@ -55,6 +55,9 @@
   display: flex;
   align-items: center;
   margin-top: sp-vw(4);
+  @include media-pc {
+    margin-top: pc-vw(4);
+  }
 }
 
 .label {
@@ -81,8 +84,8 @@
   line-height: sp-vw(20);
   color: $color-black;
   @include media-pc {
-    margin-top: pc-vw(4);
-    margin-left: pc-vw(21);
+    margin-top: pc-vw(2);
+    margin-left: pc-vw(10);
     font-family: var(--font-inter);
     font-size: pc-vw(14);
     line-height: pc-vw(17);
@@ -105,8 +108,8 @@
   @include media-pc {
     width: pc-vw(360);
     height: pc-vw(60);
-    margin: pc-vw(67) auto 0;
-    font-size: pc-vw(20);
+    margin: pc-vw(60) auto 0;
+    font-size: pc-vw(18);
     border-radius: pc-vw(30);
   }
 }

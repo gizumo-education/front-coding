@@ -35,10 +35,19 @@
   }
 }
 
-.text-bold {
+.text-bold-1 {
   display: block;
   @include media-pc {
     font-weight: 700;
+    transform: translateY(pc-vw(-5));
+  }
+}
+
+.text-bold-2 {
+  display: block;
+  @include media-pc {
+    font-weight: 700;
+    transform: translateY(pc-vw(4));
   }
 }
 
