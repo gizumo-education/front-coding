@@ -35,7 +35,7 @@ export const Recruitment = () => {
                 <img
                   className={styles.image}
                   src={recruitment.image}
-                  alt='医療事務求人'
+                  alt=''
                   width={10000}
                   height={685}
                 />
