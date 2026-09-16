@@ -5,10 +5,20 @@
   flex-direction: column;
   align-items: center;
   width: sp-vw(370);
-  height: sp-vw(240);
   margin: sp-vw(25) sp-vw(15);
   background-color: $color-blue-bg;
   border-radius: sp-vw(10);
+  @include media-pc {
+    flex-flow: row wrap;
+    flex-direction: row;
+    gap: pc-vw(15);
+    place-content: center center;
+    width: pc-vw(1180);
+    height: pc-vw(240);
+    padding: pc-vw(40);
+    margin: pc-vw(60) pc-vw(210);
+    border-radius: pc-vw(10);
+  }
 }
 
 .title {
@@ -18,6 +28,15 @@
   font-weight: 700;
   line-height: sp-vw(22);
   color: $color-black;
+  @include media-pc {
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: pc-vw(70);
+    font-size: pc-vw(25);
+    line-height: pc-vw(25);
+    text-align: center;
+    transform: translateY(pc-vw(-22));
+  }
 }
 
 .description {
@@ -28,6 +47,14 @@
   font-size: sp-vw(14);
   line-height: sp-vw(20);
   color: $color-black;
+  @include media-pc {
+    width: 100%;
+    height: pc-vw(33);
+    margin-top: pc-vw(-39);
+    margin-bottom: pc-vw(34);
+    font-size: pc-vw(20);
+    text-align: center;
+  }
 }
 
 .select-wrapper {
@@ -36,6 +63,13 @@
   justify-content: space-between;
   width: 100%;
   padding: 0 sp-vw(24);
+  @include media-pc {
+    gap: pc-vw(15);
+    justify-content: flex-start;
+    width: auto;
+    padding: 0;
+    margin-bottom: pc-vw(40);
+  }
 }
 
 .select {
@@ -53,6 +87,17 @@
   background-size: sp-vw(13) sp-vw(7);
   border: sp-vw(1) solid $color-pink-border;
   border-radius: sp-vw(5);
+  @include media-pc {
+    width: pc-vw(200);
+    height: pc-vw(60);
+    padding: 0 pc-vw(16);
+    font-size: pc-vw(18);
+    line-height: pc-vw(58);
+    background-position: right pc-vw(16) top pc-vw(26);
+    background-size: pc-vw(13) pc-vw(7);
+    border: pc-vw(1) solid $color-pink-border;
+    border-radius: pc-vw(10);
+  }
 }
 
 .input {
@@ -69,6 +114,16 @@
   &::placeholder {
     color: $color-placeholder;
   }
+  @include media-pc {
+    width: pc-vw(300);
+    height: pc-vw(60);
+    padding: pc-vw(17) pc-vw(20) pc-vw(17) pc-vw(10);
+    margin: 0;
+    margin-bottom: pc-vw(40);
+    font-size: pc-vw(18);
+    border: pc-vw(1) solid $color-pink-border;
+    border-radius: pc-vw(10);
+  }
 }
 
 .button {
@@ -79,6 +134,7 @@
   width: sp-vw(160);
   height: sp-vw(40);
   padding-left: sp-vw(13);
+  margin-bottom: sp-vw(20);
   font-size: sp-vw(18);
   font-weight: 700;
   color: $color-white;
@@ -86,6 +142,16 @@
   background-color: $color-pink;
   border: none;
   border-radius: sp-vw(20);
+  @include media-pc {
+    gap: pc-vw(4);
+    width: pc-vw(140);
+    height: pc-vw(60);
+    padding-right: pc-vw(20);
+    padding-left: pc-vw(14);
+    margin-bottom: pc-vw(40);
+    font-size: pc-vw(18);
+    border-radius: pc-vw(30);
+  }
 }
 
 .button-icon {
@@ -93,8 +159,17 @@
   height: sp-vw(18);
   margin-bottom: sp-vw(-1);
   margin-left: sp-vw(-1);
+  @include media-pc {
+    width: pc-vw(30);
+    height: pc-vw(30);
+    transform: translate(pc-vw(4), pc-vw(-2));
+  }
 }
 
 .button-text {
   margin-bottom: sp-vw(2);
+  @include media-pc {
+    height: pc-vw(18);
+    transform: translate(pc-vw(4), pc-vw(3));
+  }
 }

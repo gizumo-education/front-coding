@@ -1,7 +1,7 @@
 import 'the-new-css-reset/css/reset.css'
 import '@/styles/style.scss'
 
-import { notoSansJP, dmSans } from '@/libs/fonts'
+import { notoSansJP, dmSans, inter } from '@/libs/fonts'
 
 export const metadata = {
   title: '医療事務求人を探すならギズジョブ',
@@ -12,7 +12,9 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang='ja'>
-      <body className={`${notoSansJP.variable} ${dmSans.variable}`}>
+      <body
+        className={`${notoSansJP.variable} ${dmSans.variable} ${inter.variable}`}
+      >
         {children}
       </body>
     </html>

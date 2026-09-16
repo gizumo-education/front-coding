@@ -10,6 +10,9 @@
   background-image: url('/banner.jpg');
   background-position: center;
   background-size: cover;
+  @include media-pc {
+    height: pc-vw(300);
+  }
 }
 
 .banner::before {
@@ -26,4 +29,30 @@
   line-height: 1.5;
   color: $color-white;
   text-align: center;
+  @include media-pc {
+    font-size: pc-vw(25);
+    line-height: pc-vw(46);
+  }
+}
+
+.text-bold-1 {
+  display: block;
+  @include media-pc {
+    font-weight: 700;
+    transform: translateY(pc-vw(-5));
+  }
+}
+
+.text-bold-2 {
+  display: block;
+  @include media-pc {
+    font-weight: 700;
+    transform: translateY(pc-vw(4));
+  }
+}
+
+.text-normal {
+  @include media-pc {
+    font-weight: 400;
+  }
 }
