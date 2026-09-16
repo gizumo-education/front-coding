@@ -36,7 +36,7 @@ export const Recruitment = () => {
                   className={styles.image}
                   src={recruitment.image}
                   alt=''
-                  width={10000}
+                  width={1000}
                   height={685}
                 />
               </div>
