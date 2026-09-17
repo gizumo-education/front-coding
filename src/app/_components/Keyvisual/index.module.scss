@@ -1,0 +1,53 @@
+@use '@/styles' as *;
+
+.keyvisual-inner {
+  position: relative;
+}
+
+.keyvisual-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.keyvisual-ranking {
+  position: absolute;
+  top: sp-vw(61);
+  right: sp-vw(43);
+  width: sp-vw(165);
+  height: sp-vw(80.3);
+}
+
+.keyvisual-heading {
+  position: absolute;
+  top: sp-vw(148);
+  right: sp-vw(3);
+  width: sp-vw(272);
+  height: sp-vw(22);
+  font-size: sp-vw(17);
+  color: $color-white;
+  text-shadow: sp-vw(0) sp-vw(4) sp-vw(4) rgba($color-black, 0.25);
+}
+
+.keyvisual-count {
+  position: absolute;
+  top: sp-vw(186);
+  right: sp-vw(40);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: sp-vw(170);
+  height: sp-vw(30);
+  padding: sp-vw(6) sp-vw(16);
+  font-size: sp-vw(8);
+  color: $color-accent-teal;
+  background-color: $color-white;
+  border: sp-vw(1) solid $color-accent-teal;
+  border-radius: sp-vw(5);
+}
+
+.keyvisual-count-number {
+  font-size: sp-vw(16);
+  font-weight: 700;
+  color: $color-accent-teal;
+}

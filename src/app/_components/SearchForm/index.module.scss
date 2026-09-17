@@ -1,0 +1,99 @@
+@use '@/styles' as *;
+
+.search-form {
+  padding: sp-vw(25) sp-vw(15);
+}
+
+.search-form-inner {
+  width: 100%;
+  height: sp-vw(240);
+  padding: sp-vw(15) sp-vw(25) sp-vw(20);
+  background-color: $color-bg-form;
+  border-radius: sp-vw(10);
+}
+
+.search-form-heading {
+  position: relative;
+  top: sp-vw(1);
+  margin-bottom: sp-vw(16);
+  font-size: sp-vw(22);
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+.search-form-text {
+  position: relative;
+  top: sp-vw(3);
+  margin-bottom: sp-vw(19);
+  font-size: sp-vw(14);
+  text-align: center;
+}
+
+.search-form-selects {
+  display: flex;
+  column-gap: sp-vw(10);
+  justify-content: center;
+}
+
+.search-form-select {
+  align-items: center;
+  width: sp-vw(100);
+  height: sp-vw(30);
+  padding-right: sp-vw(18);
+  padding-left: sp-vw(8);
+  margin-bottom: sp-vw(15);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: sp-vw(12);
+  white-space: nowrap;
+  appearance: none;
+  background-color: $color-white;
+  background-image: url('/icon/select-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right sp-vw(6) center;
+  background-size: sp-vw(13) sp-vw(7);
+  border: solid sp-vw(1) $color-border-select;
+  border-radius: sp-vw(5);
+}
+
+.search-form-keyword {
+  display: block;
+  align-items: center;
+  width: 100%;
+  height: sp-vw(30);
+  padding-left: sp-vw(7);
+  margin-bottom: sp-vw(19);
+  font-size: sp-vw(14);
+  color: $color-placeholder;
+  background-color: $color-white;
+  border: solid sp-vw(1) $color-border-select;
+  border-radius: sp-vw(5);
+}
+
+.search-form-button {
+  display: flex;
+  column-gap: sp-vw(15);
+  align-items: center;
+  justify-content: flex-start;
+  width: sp-vw(160);
+  height: sp-vw(40);
+  padding-bottom: sp-vw(1);
+  padding-left: sp-vw(13);
+  margin-inline: auto;
+  font-size: sp-vw(18);
+  font-weight: 700;
+  color: $color-white;
+  background-color: $color-primary;
+  border-radius: sp-vw(30);
+}
+
+.search-form-button::before {
+  display: block;
+  width: sp-vw(18);
+  height: sp-vw(18);
+  content: '';
+  background-image: url('/icon/search-icon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
