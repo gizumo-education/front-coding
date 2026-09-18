@@ -12,7 +12,7 @@ export const Keyvisual = () => {
           <img
             className={styles['keyvisual-bg']}
             src='/keyvisual/keyvisual-bg.png'
-            alt='キービジュアル'
+            alt=''
             width='400'
             height='270'
           />

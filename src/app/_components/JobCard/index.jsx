@@ -6,6 +6,11 @@ export const JobCard = () => {
     <section className={styles['job-cards']}>
       <h2 className={styles['job-cards-heading']}>新着求人</h2>
       <div className={styles['job-cards-slider']}>
+        <button
+          type='button'
+          className={clsx(styles['job-cards-arrow'], styles.prev)}
+          aria-label='前の求人'
+        />
         <ul className={styles['job-cards-list']}>
           <li className={styles['job-cards-item']}>
             <div className={styles['job-cards-image']}>
@@ -15,16 +20,6 @@ export const JobCard = () => {
                 alt=''
                 width='370'
                 height='208'
-              />
-              <button
-                type='button'
-                className={clsx(styles['job-cards-arrow'], styles.prev)}
-                aria-label='前の求人'
-              />
-              <button
-                type='button'
-                className={clsx(styles['job-cards-arrow'], styles.next)}
-                aria-label='次の求人'
               />
             </div>
             <p className={styles['job-cards-title']}>
@@ -46,6 +41,11 @@ export const JobCard = () => {
             </dl>
           </li>
         </ul>
+        <button
+          type='button'
+          className={clsx(styles['job-cards-arrow'], styles.next)}
+          aria-label='次の求人'
+        />
       </div>
       <a href='/' className={styles['job-cards-more']}>
         <span className={styles['job-cards-more-text']}>

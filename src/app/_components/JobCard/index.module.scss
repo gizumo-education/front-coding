@@ -13,17 +13,17 @@
 }
 
 .job-cards-slider {
+  position: relative;
   margin-bottom: sp-vw(44);
 }
 
 .job-cards-image {
-  position: relative;
   margin-bottom: sp-vw(10);
 }
 
 .job-cards-arrow {
   position: absolute;
-  bottom: sp-vw(9);
+  bottom: sp-vw(147);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,6 +55,7 @@
 
 .job-cards-photo {
   display: block;
+  border-radius: sp-vw(10);
 }
 
 .job-cards-title {
