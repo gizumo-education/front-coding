@@ -1,0 +1,32 @@
+@use '@/styles' as *;
+
+.banner-inner {
+  position: relative;
+}
+
+.banner-bg {
+  display: block;
+}
+
+.banner-inner::before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background-color: rgba($color-black, 0.5);
+}
+
+.banner-heading {
+  position: absolute;
+  top: sp-vw(17);
+  left: sp-vw(60);
+  font-size: sp-vw(14);
+  color: $color-white;
+}
+
+.banner-text {
+  position: absolute;
+  top: sp-vw(39);
+  left: sp-vw(26);
+  font-size: sp-vw(14);
+  color: $color-white;
+}

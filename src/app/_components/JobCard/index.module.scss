@@ -1,0 +1,106 @@
+@use '@/styles' as *;
+
+.job-cards {
+  padding: sp-vw(30) sp-vw(15) sp-vw(60);
+  background-color: $color-bg-section;
+}
+
+.job-cards-heading {
+  margin-bottom: sp-vw(35);
+  font-size: sp-vw(25);
+  font-weight: 700;
+  text-align: center;
+}
+
+.job-cards-slider {
+  position: relative;
+  margin-bottom: sp-vw(44);
+}
+
+.job-cards-image {
+  margin-bottom: sp-vw(10);
+}
+
+.job-cards-arrow {
+  position: absolute;
+  bottom: sp-vw(147);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(42);
+  height: sp-vw(42);
+  background-image: url('/icon/ellipse.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.job-cards-arrow::before {
+  width: sp-vw(7);
+  height: sp-vw(14);
+  content: '';
+  background-image: url('/icon/arrow-icon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateX(sp-vw(-1));
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.job-cards-photo {
+  display: block;
+  border-radius: sp-vw(10);
+}
+
+.job-cards-title {
+  margin-bottom: sp-vw(12);
+  font-size: sp-vw(16);
+  font-weight: 700;
+  line-height: 1.375;
+}
+
+.job-cards-row {
+  display: flex;
+  column-gap: sp-vw(21);
+  align-items: center;
+  margin-bottom: sp-vw(5);
+}
+
+.job-cards-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: sp-vw(60);
+  height: sp-vw(21);
+  font-size: sp-vw(14);
+  background-color: $color-bg-square;
+}
+
+.job-cards-value {
+  font-size: sp-vw(14);
+  line-height: sp-vw(21);
+  transform: translateY(sp-vw(-3));
+}
+
+.job-cards-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: sp-vw(60);
+  background-color: $color-primary;
+  border-radius: sp-vw(30);
+}
+
+.job-cards-more-text {
+  font-size: sp-vw(18);
+  font-weight: 700;
+  line-height: 1;
+  color: $color-white;
+}
