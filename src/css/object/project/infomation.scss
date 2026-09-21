@@ -212,6 +212,8 @@
     }
   }
   .is-pickup {
+    height: 110.13px;
+    width: 110.13px;
     background-image: url("../img/icon/icon-search-8080.png");
 
     @include utility.sp {
@@ -222,6 +224,8 @@
     }
 }
   .is-sendmail {
+    height: 110.13px;
+    width: 110.13px;
     background-image: url("../img/icon/icon-sendmail.png");
 
     @include utility.sp {
@@ -232,6 +236,8 @@
     }
   }
   .is-pass {
+    height: 110.13px;
+    width: 110.13px;
     background-image: url("../img/icon/icon-flash.png");
 
     @include utility.sp {
