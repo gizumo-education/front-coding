@@ -2,15 +2,27 @@
 
 .recruitment {
   width: 100%;
+  padding-top: sp-vw(30);
   padding-bottom: sp-vw(60);
   background-color: $color-blue-pale;
   @include media-pc {
+    padding-top: pc-vw(64);
     padding-bottom: pc-vw(67);
   }
 }
 
+.card-wrapper {
+  position: relative;
+  @include media-pc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: pc-vw(1180);
+    margin: 0 pc-vw(210);
+  }
+}
+
 .title {
-  margin-top: sp-vw(30);
   margin-bottom: sp-vw(35);
   font-size: sp-vw(25);
   font-weight: 700;
@@ -19,7 +31,7 @@
   text-align: center;
   @include media-pc {
     width: pc-vw(1180);
-    margin: pc-vw(64) pc-vw(210) pc-vw(25);
+    margin: pc-vw(0) pc-vw(210) pc-vw(25);
     font-size: pc-vw(25);
     font-weight: 400;
     line-height: pc-vw(30);
@@ -196,26 +208,8 @@
   }
 }
 
-.card-wrapper {
-  position: relative;
-  @include media-pc {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: pc-vw(1180);
-    margin: 0 pc-vw(210);
-  }
-}
-
 .card-list {
-  display: flex;
   width: sp-vw(400);
-  margin: 0 auto;
-  overflow: hidden;
-  @include media-pc {
-    display: flex;
-    gap: pc-vw(20);
-  }
 }
 
 .card {
