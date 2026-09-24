@@ -21,6 +21,12 @@
   left: sp-vw(60);
   font-size: sp-vw(14);
   color: $color-white;
+  @include media-pc {
+    top: pc-vw(111);
+    left: pc-vw(548);
+    font-size: pc-vw(25);
+    font-weight: 700;
+  }
 }
 
 .banner-text {
@@ -29,4 +35,10 @@
   left: sp-vw(26);
   font-size: sp-vw(14);
   color: $color-white;
+  @include media-pc {
+    top: pc-vw(168);
+    left: pc-vw(487);
+    font-size: pc-vw(25);
+    font-weight: 700;
+  }
 }

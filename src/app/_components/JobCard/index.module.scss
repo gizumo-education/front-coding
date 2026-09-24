@@ -3,6 +3,9 @@
 .job-cards {
   padding: sp-vw(30) sp-vw(15) sp-vw(60);
   background-color: $color-bg-section;
+  @include media-pc {
+    padding: pc-vw(64) pc-vw(210) pc-vw(67);
+  }
 }
 
 .job-cards-heading {
@@ -10,15 +13,18 @@
   font-size: sp-vw(25);
   font-weight: 700;
   text-align: center;
+  @include media-pc {
+    margin-bottom: pc-vw(30);
+    font-size: pc-vw(25);
+  }
 }
 
 .job-cards-slider {
   position: relative;
-  margin-bottom: sp-vw(44);
-}
-
-.job-cards-image {
-  margin-bottom: sp-vw(10);
+  margin-bottom: sp-vw(43);
+  @include media-pc {
+    margin-bottom: pc-vw(59);
+  }
 }
 
 .job-cards-arrow {
@@ -32,6 +38,12 @@
   background-image: url('/icon/ellipse.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  @include media-pc {
+    top: pc-vw(70);
+    bottom: auto;
+    width: pc-vw(60);
+    height: pc-vw(60);
+  }
 }
 
 .job-cards-arrow::before {
@@ -42,6 +54,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   transform: translateX(sp-vw(-1));
+  @include media-pc {
+    width: pc-vw(15);
+    height: pc-vw(30);
+    transform: 0;
+  }
 }
 
 .prev {
@@ -53,9 +70,42 @@
   transform: scaleX(-1);
 }
 
+.job-cards-list {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  @include media-pc {
+    column-gap: pc-vw(20);
+  }
+}
+
+.job-cards-item {
+  flex-shrink: 0;
+  width: sp-vw(370);
+  @include media-pc {
+    width: pc-vw(280);
+  }
+}
+
+.job-cards-image {
+  margin-bottom: sp-vw(10);
+  @include media-pc {
+    margin-bottom: pc-vw(8);
+  }
+}
+
 .job-cards-photo {
   display: block;
+  width: sp-vw(370);
+  height: sp-vw(208);
+  object-fit: cover;
+  object-position: top;
   border-radius: sp-vw(10);
+  @include media-pc {
+    width: pc-vw(280);
+    height: pc-vw(200);
+    border-radius: pc-vw(10);
+  }
 }
 
 .job-cards-title {
@@ -63,13 +113,28 @@
   font-size: sp-vw(16);
   font-weight: 700;
   line-height: 1.375;
+  @include media-pc {
+    margin-bottom: pc-vw(7);
+    font-size: pc-vw(16);
+  }
+}
+
+.job-cards-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: sp-vw(5);
+  @include media-pc {
+    row-gap: pc-vw(4);
+  }
 }
 
 .job-cards-row {
   display: flex;
   column-gap: sp-vw(21);
   align-items: center;
-  margin-bottom: sp-vw(5);
+  @include media-pc {
+    column-gap: pc-vw(10);
+  }
 }
 
 .job-cards-label {
@@ -80,12 +145,22 @@
   height: sp-vw(21);
   font-size: sp-vw(14);
   background-color: $color-bg-square;
+  @include media-pc {
+    width: pc-vw(60);
+    height: pc-vw(21);
+    font-size: pc-vw(14);
+  }
 }
 
 .job-cards-value {
   font-size: sp-vw(14);
   line-height: sp-vw(21);
-  transform: translateY(sp-vw(-3));
+  transform: translateY(sp-vw(-1));
+  @include media-pc {
+    font-size: pc-vw(14);
+    line-height: pc-vw(21);
+    transform: translateY(pc-vw(1));
+  }
 }
 
 .job-cards-more {
@@ -96,6 +171,11 @@
   height: sp-vw(60);
   background-color: $color-primary;
   border-radius: sp-vw(30);
+  @include media-pc {
+    width: pc-vw(360);
+    height: pc-vw(60);
+    margin-inline: auto;
+  }
 }
 
 .job-cards-more-text {
@@ -103,4 +183,7 @@
   font-weight: 700;
   line-height: 1;
   color: $color-white;
+  @include media-pc {
+    font-size: pc-vw(18);
+  }
 }
