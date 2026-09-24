@@ -2,6 +2,9 @@
 
 .search-form {
   padding: sp-vw(25) sp-vw(15);
+  @include media-pc {
+    padding: pc-vw(60) pc-vw(210);
+  }
 }
 
 .search-form-inner {
@@ -9,7 +12,12 @@
   height: sp-vw(240);
   padding: sp-vw(15) sp-vw(25) sp-vw(20);
   background-color: $color-bg-form;
-  border-radius: sp-vw(10);
+  border-radius: sp-vw(2);
+  @include media-pc {
+    width: pc-vw($inner-pc-max-width);
+    height: auto;
+    padding: pc-vw(40);
+  }
 }
 
 .search-form-heading {
@@ -20,6 +28,11 @@
   font-weight: 700;
   line-height: 1;
   text-align: center;
+  @include media-pc {
+    top: auto;
+    margin-bottom: pc-vw(25);
+    font-size: pc-vw(25);
+  }
 }
 
 .search-form-text {
@@ -28,12 +41,28 @@
   margin-bottom: sp-vw(19);
   font-size: sp-vw(14);
   text-align: center;
+  @include media-pc {
+    top: auto;
+    margin-bottom: pc-vw(30);
+    font-size: pc-vw(20);
+  }
+}
+
+.search-form-fields {
+  @include media-pc {
+    display: flex;
+    column-gap: pc-vw(15);
+    align-items: center;
+  }
 }
 
 .search-form-selects {
   display: flex;
   column-gap: sp-vw(10);
   justify-content: center;
+  @include media-pc {
+    column-gap: pc-vw(15);
+  }
 }
 
 .search-form-select {
@@ -55,6 +84,18 @@
   background-size: sp-vw(13) sp-vw(7);
   border: solid sp-vw(1) $color-border-select;
   border-radius: sp-vw(5);
+  @include media-pc {
+    width: pc-vw(200);
+    height: pc-vw(60);
+    padding-right: auto;
+    padding-left: pc-vw(15);
+    margin-bottom: 0;
+    font-size: pc-vw(18);
+    background-position: right pc-vw(14) center;
+    background-size: pc-vw(20) pc-vw(10);
+    border: solid pc-vw(1) $color-border-select;
+    border-radius: pc-vw(10);
+  }
 }
 
 .search-form-keyword {
@@ -65,10 +106,23 @@
   padding-left: sp-vw(7);
   margin-bottom: sp-vw(19);
   font-size: sp-vw(14);
-  color: $color-placeholder;
+  color: $color-black;
   background-color: $color-white;
   border: solid sp-vw(1) $color-border-select;
   border-radius: sp-vw(5);
+  @include media-pc {
+    width: pc-vw(300);
+    height: pc-vw(60);
+    padding-left: pc-vw(10);
+    margin-bottom: 0;
+    font-size: pc-vw(18);
+    border: solid pc-vw(1) $color-border-select;
+    border-radius: pc-vw(10);
+  }
+
+  &::placeholder {
+    color: $color-placeholder;
+  }
 }
 
 .search-form-button {
@@ -86,6 +140,15 @@
   color: $color-white;
   background-color: $color-primary;
   border-radius: sp-vw(30);
+  @include media-pc {
+    column-gap: pc-vw(4);
+    width: pc-vw(140);
+    height: pc-vw(60);
+    padding-bottom: 0;
+    padding-left: pc-vw(14);
+    margin-inline: 0;
+    font-size: pc-vw(18);
+  }
 }
 
 .search-form-button::before {
@@ -96,4 +159,8 @@
   background-image: url('/icon/search-icon.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  @include media-pc {
+    width: pc-vw(30);
+    height: pc-vw(30);
+  }
 }

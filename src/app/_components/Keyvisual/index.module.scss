@@ -1,7 +1,17 @@
 @use '@/styles' as *;
 
+.keyvisual {
+  @include media-pc {
+    background-color: $color-keyvisual-bg;
+  }
+}
+
 .keyvisual-inner {
   position: relative;
+  @include media-pc {
+    width: pc-vw(1262);
+    margin-inline: auto;
+  }
 }
 
 .keyvisual-bg {
@@ -16,6 +26,12 @@
   right: sp-vw(43);
   width: sp-vw(165);
   height: sp-vw(80.3);
+  @include media-pc {
+    top: pc-vw(57);
+    right: pc-vw(250);
+    width: pc-vw(360);
+    height: pc-vw(175);
+  }
 }
 
 .keyvisual-heading {
@@ -27,6 +43,13 @@
   font-size: sp-vw(17);
   color: $color-white;
   text-shadow: sp-vw(0) sp-vw(4) sp-vw(4) rgba($color-black, 0.25);
+  @include media-pc {
+    top: pc-vw(268);
+    left: pc-vw(437);
+    width: pc-vw(800);
+    font-size: pc-vw(50);
+    font-weight: 700;
+  }
 }
 
 .keyvisual-count {
@@ -44,10 +67,24 @@
   background-color: $color-white;
   border: sp-vw(1) solid $color-accent-teal;
   border-radius: sp-vw(5);
+  @include media-pc {
+    top: auto;
+    right: pc-vw(231);
+    bottom: pc-vw(47);
+    width: pc-vw(390);
+    height: pc-vw(69);
+    padding: pc-vw(10) pc-vw(35) pc-vw(16);
+    font-size: pc-vw(20);
+    border: pc-vw(2.3) solid $color-accent-teal;
+    border-radius: pc-vw(10);
+  }
 }
 
 .keyvisual-count-number {
   font-size: sp-vw(16);
   font-weight: 700;
   color: $color-accent-teal;
+  @include media-pc {
+    font-size: pc-vw(40);
+  }
 }
