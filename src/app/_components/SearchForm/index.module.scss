@@ -106,7 +106,7 @@
   padding-left: sp-vw(7);
   margin-bottom: sp-vw(19);
   font-size: sp-vw(14);
-  color: $color-placeholder;
+  color: $color-black;
   background-color: $color-white;
   border: solid sp-vw(1) $color-border-select;
   border-radius: sp-vw(5);
@@ -118,6 +118,10 @@
     font-size: pc-vw(18);
     border: solid pc-vw(1) $color-border-select;
     border-radius: pc-vw(10);
+  }
+
+  &::placeholder {
+    color: $color-placeholder;
   }
 }
 
