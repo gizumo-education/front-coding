@@ -33,7 +33,7 @@ export const JobCard = () => {
         />
         <Swiper
           className={styles['job-cards-list']}
-          tag='ul'
+          wrapperTag='ul'
           {...swiperOptions}
           onSwiper={(swiper) => {
             swiperRef.current = swiper
