@@ -13,9 +13,6 @@ const swiperOptions = {
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 0,
-  breakpoints: {
-    768: { spaceBetween: 20 },
-  },
 }
 
 export const JobCard = () => {

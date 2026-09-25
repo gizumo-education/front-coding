@@ -78,6 +78,7 @@
   width: sp-vw(370);
   @include media-pc {
     width: pc-vw(280);
+    margin-right: pc-vw(20);
   }
 }
 
