@@ -2,6 +2,7 @@
 
 .job-cards {
   padding: sp-vw(30) sp-vw(15) sp-vw(60);
+  scroll-margin-top: sp-vw(70);
   background-color: $color-bg-section;
   @include media-pc {
     padding: pc-vw(64) pc-vw(210) pc-vw(67);
@@ -31,6 +32,7 @@
 .job-cards-arrow {
   position: absolute;
   bottom: sp-vw(147);
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,15 +71,6 @@
 .next {
   right: 0;
   transform: scaleX(-1);
-}
-
-.job-cards-list {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-  @include media-pc {
-    column-gap: pc-vw(20);
-  }
 }
 
 .job-cards-item {
