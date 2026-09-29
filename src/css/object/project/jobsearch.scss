@@ -1,0 +1,156 @@
+@use '../../object/utility/utility.scss';
+@use '../component/select.scss';
+@use '../component/button.scss';
+
+.l-main__select {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  
+  @include utility.sp {
+    padding: 25px 0;
+    width: 100%;
+  }
+
+}
+
+.l-main__select-area {
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background-color: #DEEEF9;
+  padding-top: 40px ;
+  height: 240px;
+  width: 1180px;
+  border-radius: 10px;
+  
+  @include utility.sp {
+    padding: 15px 25px 20px;
+    height: 240px;
+    width: 370px;
+    border-radius: 10px;
+  }
+
+  &-text {
+    text-align: center;
+
+    h1 {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 20px;
+      padding-top: 20px;
+      padding-bottom: 9px;
+
+    }
+
+    @include utility.sp {
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 14px;
+        padding-top: 16px;
+        padding-bottom: 0px;
+      }
+    }
+  }
+
+  &-text-footer {
+    text-align: center;
+
+    h2 {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: 20px;
+      padding-top: 20px;
+      padding-bottom: 9px;
+
+    }
+
+    @include utility.sp {
+      h2 {
+        font-size: 22px;
+      }
+      h3 {
+        font-size: 14px;
+        padding-top: 16px;
+        padding-bottom: 0px;
+      }
+    }
+  }
+
+
+  &-form {
+    padding-top: 25px;
+
+    @include utility.sp {
+      padding-top: 13px;
+      flex-wrap: wrap;
+    }
+
+
+    input {
+      border-color: #DE5579;
+      border-radius: 10px;
+      border-style: 1px;
+      padding: 10px;
+      height: 60px;
+      width: 300px;
+      font-size: 18px;
+
+      @include utility.sp {
+        border-radius: 5px;
+        height: 30px;
+        width: 320px;
+        font-size: 14px;
+      }
+    }
+  
+    button {
+      padding: 21px 20px 21px 48px;
+      width: 140px;
+      @include button.c-btn();
+      background-position: center left 20px;
+      background-repeat: no-repeat;
+      background-size: 30px;
+
+      @include utility.sp {
+        margin: 4px auto;
+        height: 40px;
+        width: 160px;
+        font-size: 18px;
+      }
+    
+
+      &.is-job-search {
+        background-position: center left 14.02px;
+        background-repeat: no-repeat;
+        background-size: 29.98px 29.98px;
+        background-image: url("../img/icon/icon-search-fff.png");
+
+        @include utility.sp {
+          background-size: 17.98px 17.97px;
+        }
+      }
+    }
+  }
+
+}
+
+.l-main__select-footer {
+  margin: 150px 0 200px;
+
+  @include utility.sp {
+    margin: 60px 0 100px;
+  }
+
+
+}

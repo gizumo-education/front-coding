@@ -30,7 +30,19 @@ export default {
     rules: [
       {
         test: /\.html$/,
-        loader: 'html-loader'
+        loader: 'html-loader',
+        options: {
+          sources: {
+            list: [
+              "...",
+              {
+                tag: "source",
+                attribute: "srcset",
+                type: "srcset"
+              }
+            ]
+          }
+        }
       },
       {
         test: /\.js$/,
