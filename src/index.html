@@ -98,12 +98,11 @@
     </div>
 
     <div class="l-main__new-recruit">
-      <div class="l-main__new-recruit-area">
+      <div class="l-main__new-recruit-area swiper">
         <h2 class="l-main__new-recruit-title">新着求人</h2>
 
-        <div class="l-main__new-recruit-list">
-          <div class="c-select__button is-left"><a href="" class="c-select__button__arrow_left"></a></div>
-          <div class="l-main__new-recruit-item">
+        <div class="l-main__new-recruit-list swiper-wrapper">
+          <div class="l-main__new-recruit-item swiper-slide">
             <div class="recruit-picture">
               <img src="./img/picture/recruit_1_sp.png" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="370" height="208" class="u-sp-only">
               <img src="./img/picture/recruit_1.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200" class="u-pc-only">
@@ -128,7 +127,7 @@
               </table>
             </div>
           </div>
-          <div class="l-main__new-recruit-item">
+          <div class="l-main__new-recruit-item swiper-slide">
             <picture class="recruit-picture">
               <img src="./img/picture/recruit_2.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200">
             </picture>
@@ -152,7 +151,7 @@
               </table>
             </div>
           </div>
-          <div class="l-main__new-recruit-item">
+          <div class="l-main__new-recruit-item swiper-slide">
             <picture class="recruit-picture">
               <img src="./img/picture/recruit_3.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200">
             </picture>
@@ -176,7 +175,7 @@
               </table>
             </div>
           </div>
-          <div class="l-main__new-recruit-item">
+          <div class="l-main__new-recruit-item swiper-slide">
             <picture class="recruit-picture">
               <img src="./img/picture/recruit_4.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200">
             </picture>
@@ -200,8 +199,8 @@
               </table>
             </div>
           </div>
-
-          <div class="c-select__button is-right"><a href="" class="c-select__button__arrow_right"></a></div>
+          <div class="c-select__button is-left swiper-button-prev"><a href="" class="c-select__button__arrow_left"></a></div>
+          <div class="c-select__button is-right swiper-button-next"><a href="" class="c-select__button__arrow_right"></a></div>
         </div>
 
         <button class="c-button recruit-list-button">新着求人一覧をもっと見る</button>
@@ -375,5 +374,6 @@
     </div>
     <p class="l-footer__copyright">© 2022 Gizumo Inc.</p>
   </footer>
+  <script src="./js/lib/swiper-bundle.min.js" defer></script>
 </body>
 </html>
