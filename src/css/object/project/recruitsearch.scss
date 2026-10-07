@@ -16,8 +16,10 @@
   }
   
   &-area {
+    position: relative;
     margin: 0 auto;
     padding-top: 64px;
+    max-width: 1200px;
 
     @include utility.sp {
       padding-top: 30px;
@@ -35,12 +37,9 @@
       }
     }
     .l-main__new-recruit-list {
-      position: relative;
-      // display: flex;
       height: 337px;
-      // width: 300px;
       margin-top: 25px;
-      gap: 20px;
+      // gap: 20px;
 
       @include utility.sp {
         height: 346px;
@@ -48,48 +47,51 @@
         margin-top: 35px;
         gap: 0;
       }
+    }
+  }
 
-      .c-select__button {
-        position: absolute;
-        display: flex;
-        z-index: 10;
-        top: 20%;
+  .c-select__button {
+    position: absolute !important;
+    // display: flex;
+    z-index: 10;
+    top: 38%;
+    transform: translateY(-50%);
 
-        &.is-right {
-          right: 0px;
-        }
-        &.is-left {
-          left: 0px;
-        }
-
-        @include utility.sp {
-          top: 45%;
-
-          &.is-right {
-            right: 15px;
-          }
-          &.is-left {
-            left: 15px;
-          }
-        }
-      }
-      .c-select__button__arrow_right {
-        @include button.c-arrow();
-      }
-      .c-select__button__arrow_left {
-        @include button.c-arrow($trans-x: 15%, $rotate-deg: -135deg);
-      }
+    &.swiper-button-next,
+    &.swiper-button-prev {
+      margin-top: 0;
     }
 
-    .c-button {
-      @include button.c-btn();
-      display: block;
-      width: 360px;
-      margin: 60px auto 0 auto;
+    &.is-right {
+      @include button.c-arrow();
+      right: 5px;
+    }
+    &.is-left {
+      @include button.c-arrow($trans-x: 15%, $rotate-deg: -135deg);
+      left: 0px;
+    }
 
-      @include utility.sp {
-        margin-top: 44px;
+    @include utility.sp {
+      top: 45%;
+
+      &.is-right {
+        right: 15px;
       }
+      &.is-left {
+        left: 15px;
+      }
+    }
+  }
+
+
+  .c-button {
+    @include button.c-btn();
+    display: block;
+    width: 360px;
+    margin:60px auto 0 auto;
+
+    @include utility.sp {
+      margin-top: 44px;
     }
   }
 }
