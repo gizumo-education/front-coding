@@ -20,6 +20,9 @@
     margin: 0 auto;
     padding-top: 64px;
     max-width: 1200px;
+    width: 100%;
+    min-width: 0;
+    
 
     @include utility.sp {
       padding-top: 30px;
@@ -39,13 +42,15 @@
     .l-main__new-recruit-list {
       height: 337px;
       margin-top: 25px;
+      width: 100%;
+      box-sizing: border-box;
       // gap: 20px;
 
       @include utility.sp {
         height: 346px;
         width: 400px;
         margin-top: 35px;
-        gap: 0;
+        padding-left: 15px;
       }
     }
   }
@@ -53,9 +58,10 @@
   .c-select__button {
     position: absolute !important;
     // display: flex;
-    z-index: 10;
+    z-index: 100 !important;
     top: 38%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) !important;
+    pointer-events: auto !important;
 
     &.swiper-button-next,
     &.swiper-button-prev {
@@ -64,24 +70,28 @@
 
     &.is-right {
       @include button.c-arrow();
-      right: 5px;
+      right: 5px !important;
     }
     &.is-left {
       @include button.c-arrow($trans-x: 15%, $rotate-deg: -135deg);
-      left: 0px;
+      left: 0px !important;
     }
 
     @include utility.sp {
-      top: 45%;
+      top: 50%;
 
       &.is-right {
-        right: 15px;
+        right: 15px !important;
       }
       &.is-left {
-        left: 15px;
+        left: 15px !important;
       }
     }
   }
+.swiper-button-disabled {
+  opacity: 0.35 !important; // 無効時も消さずにうっすら表示させてテスト
+  pointer-events: auto !important; // テスト用にクリックを強制許可
+}
 
 
   .c-button {

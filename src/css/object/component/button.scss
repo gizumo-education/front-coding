@@ -34,6 +34,13 @@
   opacity: 70%;
   position: relative;
 
+  &:hover {
+    opacity: .8;
+    transition: .3s;
+    cursor: pointer;
+  }
+
+
   &::after {
     display: none !important;
     content: none !important;
@@ -57,10 +64,12 @@
     transform: translate($trans-x,$trans-y) rotate($rotate-deg);
     border-top: 0.71px solid #000;
     border-right: 0.71px solid #000;
+
+    @include utility.sp {
+      width: 9.8px;
+      height: 9.8px;
+    }
+
   }
 
-  @include utility.sp {
-    width: 9.8px;
-    height: 9.8px;
-  }
 }

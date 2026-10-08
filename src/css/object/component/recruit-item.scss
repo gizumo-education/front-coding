@@ -1,23 +1,35 @@
 @use '../../object/utility/utility.scss';
 @use '../component/button.scss';
 
-// .l-main__new-recruit-list {
-//   height: 337px;
+.l-main__new-recruit-list {
+  height: 337px;
 
-//   @include utility.sp {
-//     height: 346px;
-//     width: 400px;
-//   }
-// }
+  @include utility.sp {
+    height: 346px;
+    width: 410px;
+    margin: 0 auto;
+  }
+}
 
 .l-main__new-recruit-item {
 // width: 280px;
   width: 100%;
   height: auto;
   object-fit: cover;
+  box-sizing: border-box;
 
   img {
     border-radius: 10px;
+    max-width: 100%;
+    display: block;
+
+    @include utility.sp {
+      width: 370px;
+      display: none;
+
+    }
+
+
   }
   .recruit-info-text {
     font-size: 16px;
@@ -29,6 +41,7 @@
 
     @include utility.sp {
       width: 358px;
+      
     }
   }
 
