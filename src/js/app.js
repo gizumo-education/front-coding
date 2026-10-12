@@ -31,6 +31,8 @@ $(function() {
 $(function() {
   $('#sp_hamburger').on('click',function(){
     $('#sp_hamburger').toggleClass("open");
-    $('#sp_nav_menu').slideToggle();
+    $('#sp_nav_menu').toggleClass("active");
+    $('body').toggleClass("noScroll");
+    console.log('環境構築完了');
   });
 });
