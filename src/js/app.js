@@ -36,3 +36,16 @@ $(function() {
     console.log('環境構築完了');
   });
 });
+
+$('a[href^="#"]').click(function () {
+  const speed = 600;
+  let href = $(this).attr("href");
+  let target = $(href == "#" || href == "" ? "html" : href);
+  const headerHeight = $('.l-header').outerHeight();
+  let position = target.offset().top - headerHeight;
+  $("body,html").animate({ scrollTop: position }, speed, "swing");
+  $('#sp_hamburger').removeClass("open");
+  $('#sp_nav_menu').removeClass("active");
+  $('body').removeClass("noScroll");
+  return false;
+});
