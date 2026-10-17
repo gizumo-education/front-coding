@@ -44,7 +44,6 @@
       margin-top: 25px;
       width: 100%;
       box-sizing: border-box;
-      // gap: 20px;
 
       @include utility.sp {
         height: 346px;
@@ -57,7 +56,6 @@
 
   .c-select__button {
     position: absolute !important;
-    // display: flex;
     z-index: 100 !important;
     top: 38%;
     transform: translateY(-50%) !important;
@@ -88,11 +86,6 @@
       }
     }
   }
-.swiper-button-disabled {
-  opacity: 0.35 !important; // 無効時も消さずにうっすら表示させてテスト
-  pointer-events: auto !important; // テスト用にクリックを強制許可
-}
-
 
   .c-button {
     @include button.c-btn();
