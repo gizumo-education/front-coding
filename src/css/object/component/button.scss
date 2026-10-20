@@ -34,6 +34,21 @@
   opacity: 70%;
   position: relative;
 
+  &:hover {
+    opacity: .8;
+    transition: .3s;
+    cursor: pointer;
+  }
+
+
+  &::after {
+    display: none !important;
+    content: none !important;
+  }
+  svg {
+    display: none !important;
+  }
+
   @include utility.sp {
     height: 42px;
     width: 42px;
@@ -54,5 +69,7 @@
       width: 9.8px;
       height: 9.8px;
     }
+
   }
+
 }

@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>基本コーディング</title>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+  <script src="./js/app.js" defer></script>
 </head>
 <body>
   <header class="l-header">
@@ -24,11 +26,11 @@
       <div class="l-header__sp-items">
         <div id="sp_nav_menu" class="l-header__sp-items__nav">
           <ul class="l-header__sp-items__nav__menu">
-            <li><a href="">トップ</a></li>
-            <li><a href="">新着求人</a></li>
-            <li><a href="">4つの特徴</a></li>
-            <li><a href="">転職までの流れ</a></li>
-            <li><a href="">転職お役立ちコンテンツ</a></li>
+            <li><a href="#">トップ</a></li>
+            <li><a href="#new_recruit">新着求人</a></li>
+            <li><a href="#features">4つの特徴</a></li>
+            <li><a href="#job_root">転職までの流れ</a></li>
+            <li><a href="#job_contents">転職お役立ちコンテンツ</a></li>
           </ul>
         </div>
         <button id="sp_hamburger" class="l-header__hamburger">
@@ -40,7 +42,7 @@
     </nav>
   </header>
 
-  <main class="l-main">
+  <main id="top" class="l-main">
     <div class="l-main__key-visual">
       <div class="c-main__key-visual-picture">
         <img src="./img/picture/keyvisual_sp.png" alt="医療事務求人を探すならギズジョブ" width="400" height="270" class="u-sp-only">
@@ -97,13 +99,12 @@
       </form>
     </div>
 
-    <div class="l-main__new-recruit">
-      <div class="l-main__new-recruit-area">
+    <div id="new_recruit" class="l-main__new-recruit">
+      <div class="l-main__new-recruit-area swiper">
         <h2 class="l-main__new-recruit-title">新着求人</h2>
 
-        <div class="l-main__new-recruit-list">
-          <div class="c-select__button is-left"><a href="" class="c-select__button__arrow_left"></a></div>
-          <div class="l-main__new-recruit-item">
+        <div class="l-main__new-recruit-list swiper-wrapper">
+          <div class="l-main__new-recruit-item swiper-slide">
             <div class="recruit-picture">
               <img src="./img/picture/recruit_1_sp.png" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="370" height="208" class="u-sp-only">
               <img src="./img/picture/recruit_1.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200" class="u-pc-only">
@@ -128,9 +129,10 @@
               </table>
             </div>
           </div>
-          <div class="l-main__new-recruit-item">
+          <div class="l-main__new-recruit-item swiper-slide">
             <picture class="recruit-picture">
-              <img src="./img/picture/recruit_2.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200">
+              <img src="./img/picture/recruit_2_sp.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="370" height="208" class="u-sp-only">
+              <img src="./img/picture/recruit_2.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200" class="u-pc-only">
             </picture>
             <div class="recruit-info">
               <h2 class="recruit-info-text">
@@ -152,9 +154,10 @@
               </table>
             </div>
           </div>
-          <div class="l-main__new-recruit-item">
+          <div class="l-main__new-recruit-item swiper-slide">
             <picture class="recruit-picture">
-              <img src="./img/picture/recruit_3.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200">
+              <img src="./img/picture/recruit_3_sp.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="370" height="208" class="u-sp-only">
+              <img src="./img/picture/recruit_3.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200" class="u-pc-only">
             </picture>
             <div class="recruit-info">
               <h2 class="recruit-info-text">
@@ -176,9 +179,10 @@
               </table>
             </div>
           </div>
-          <div class="l-main__new-recruit-item">
+          <div class="l-main__new-recruit-item swiper-slide">
             <picture class="recruit-picture">
-              <img src="./img/picture/recruit_4.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200">
+              <img src="./img/picture/recruit_4_sp.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="370" height="208" class="u-sp-only">
+              <img src="./img/picture/recruit_4.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200" class="u-pc-only">
             </picture>
             <div class="recruit-info">
               <h2 class="recruit-info-text">
@@ -200,9 +204,109 @@
               </table>
             </div>
           </div>
-
-          <div class="c-select__button is-right"><a href="" class="c-select__button__arrow_right"></a></div>
+          <div class="l-main__new-recruit-item swiper-slide">
+            <div class="recruit-picture">
+              <img src="./img/picture/recruit_1_sp.png" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="370" height="208" class="u-sp-only">
+              <img src="./img/picture/recruit_1.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200" class="u-pc-only">
+            </div>
+            <div class="recruit-info">
+              <h2 class="recruit-info-text">
+                平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
+              </h2>
+              <table class="c-recruit__info">
+                <tr>
+                  <th>給与</th>
+                  <td>月給 148,000円～</td>
+                </tr>
+                <tr>
+                  <th>所在地</th>
+                  <td>三重県伊勢市</td>
+                </tr>
+                <tr>
+                  <th>最寄駅</th>
+                  <td>伊勢市駅 徒歩15分</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="l-main__new-recruit-item swiper-slide">
+            <picture class="recruit-picture">
+              <img src="./img/picture/recruit_2_sp.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="370" height="208" class="u-sp-only">
+              <img src="./img/picture/recruit_2.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200" class="u-pc-only">
+            </picture>
+            <div class="recruit-info">
+              <h2 class="recruit-info-text">
+                平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
+              </h2>
+              <table class="c-recruit__info">
+                <tr>
+                  <th>給与</th>
+                  <td>月給 148,000円～</td>
+                </tr>
+                <tr>
+                  <th>所在地</th>
+                  <td>三重県伊勢市</td>
+                </tr>
+                <tr>
+                  <th>最寄駅</th>
+                  <td>伊勢市駅 徒歩15分</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="l-main__new-recruit-item swiper-slide">
+            <picture class="recruit-picture">
+              <img src="./img/picture/recruit_3_sp.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="370" height="208" class="u-sp-only">
+              <img src="./img/picture/recruit_3.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200" class="u-pc-only">
+            </picture>
+            <div class="recruit-info">
+              <h2 class="recruit-info-text">
+                平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
+              </h2>
+              <table class="c-recruit__info">
+                <tr>
+                  <th>給与</th>
+                  <td>月給 148,000円～</td>
+                </tr>
+                <tr>
+                  <th>所在地</th>
+                  <td>三重県伊勢市</td>
+                </tr>
+                <tr>
+                  <th>最寄駅</th>
+                  <td>伊勢市駅 徒歩15分</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="l-main__new-recruit-item swiper-slide">
+            <picture class="recruit-picture">
+              <img src="./img/picture/recruit_2_sp.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="370" height="208" class="u-sp-only">
+              <img src="./img/picture/recruit_4.jpg" alt="平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人" width="280" height="200" class="u-pc-only">
+            </picture>
+            <div class="recruit-info">
+              <h2 class="recruit-info-text">
+                平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
+              </h2>
+              <table class="c-recruit__info">
+                <tr>
+                  <th>給与</th>
+                  <td>月給 148,000円～</td>
+                </tr>
+                <tr>
+                  <th>所在地</th>
+                  <td>三重県伊勢市</td>
+                </tr>
+                <tr>
+                  <th>最寄駅</th>
+                  <td>伊勢市駅 徒歩15分</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
+        <div class="c-select__button is-left swiper-button-prev"></div>
+        <div class="c-select__button is-right swiper-button-next"></div>
 
         <button class="c-button recruit-list-button">新着求人一覧をもっと見る</button>
       </div>
@@ -223,7 +327,7 @@
 <!-- 後半セクション -->
 
     <section class="l_main__infomation">
-      <section class="l_main__overview">
+      <section id="features" class="l_main__overview">
         <h2 class="l_main__overview-title">ギズジョブの4つの特徴</h2>
         <div class="c_main__overview-parts">
           <div class="c_main__overview-part">
@@ -248,7 +352,7 @@
         </div>
         
       </section>
-      <section class="l_main__root">
+      <section id="job_root" class="l_main__root">
         <h2 class="l_main__root-title">転職までの流れ</h2>
         <div class="c_main__root-parts">
           <div class="c_main__root-part ">
@@ -285,7 +389,7 @@
       </section>
     </section>
 
-    <section class="l-main__column">
+    <section id="job_contents" class="l-main__column">
         <h2 class="l-main__column-title">転職お役立ちコンテンツ</h2>
         <div class="c-main__column-container">
           <div class="c-main__column-part is_manual-1">
