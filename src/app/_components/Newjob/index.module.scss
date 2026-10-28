@@ -2,53 +2,53 @@
 
 .job {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 60px;
-  padding-left: 15px;
+  padding-top: sp-vw(30);
+  padding-bottom: sp-vw(60);
+  padding-left: sp-vw(15);
   background-color: $color-background-blue;
 
   &-title {
-    margin-left: 135px;
+    margin-left: sp-vw(135);
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.5625rem;
+    font-size: sp-vw(25);
     font-weight: bold;
   }
 
   &-btn {
     &-left {
       position: absolute;
-      top: 246px;
+      top: sp-vw(246);
       z-index: 2;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 42px;
-      height: 42px;
+      width: sp-vvw(42);
+      height: sp-vw(42);
       background-color: rgba($color-white, 0.7);
       border-radius: 50%;
 
       &-arrow {
-        width: 7px;
-        height: 14px;
+        width: sp-vw(7);
+        height: sp-vw(14);
       }
     }
 
     &-right {
       position: absolute;
-      top: 246px;
-      left: 343px;
+      top: sp-vw(246);
+      left: sp-vw(343);
       z-index: 2;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 42px;
-      height: 42px;
+      width: sp-vw(42);
+      height: sp-vw(42);
       background-color: rgba($color-white, 0.7);
       border-radius: 50%;
 
       &-arrow {
-        width: 7px;
-        height: 14px;
+        width: sp-vw(7);
+        height: sp-vw(14);
         transform: scaleX(-1);
       }
     }
@@ -56,52 +56,52 @@
 
   &-img {
     position: relative;
-    width: 370px;
-    height: 208px;
-    margin-top: 35px;
+    width: sp-vw(370);
+    height: sp-vw(208);
+    margin-top: sp-vw(35);
   }
 
   &-jobtitle {
-    width: 370px;
-    height: 44px;
-    margin-top: 11px;
+    width: sp-vw(370);
+    height: sp-vw(44);
+    margin-top: sp-vw(11);
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1rem;
+    font-size: sp-vw(16);
     font-weight: bold;
     line-height: 1.3;
   }
 
   &-submit {
-    width: 370px;
-    height: 60px;
-    margin-top: 44px;
+    width: sp-vw(370);
+    height: sp-vw(60);
+    margin-top: sp-vw(44);
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.125rem;
+    font-size: sp-vw(18);
     color: $color-white;
     text-align: center;
     background-color: $color-pink;
-    border-radius: 50px;
+    border-radius: sp-vw(50);
   }
 
   &-info {
     display: flex;
     align-items: center;
-    width: 358px;
-    margin-top: 11.2px;
+    width: sp-vw(358);
+    margin-top: sp-vw(11.2);
 
     &-category {
       display: flex;
       flex-direction: column;
-      gap: 0.25rem;
+      gap: sp-vw(4);
 
       &-list {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 60px;
-        height: 21px;
+        width: sp-vw(60);
+        height: sp-vw(21);
         font-family: 'Noto Sans JP', sans-serif;
-        font-size: 0.875rem;
+        font-size: sp-vw(14);
 
         background-color: $color-light-pink;
       }
@@ -110,12 +110,12 @@
     &-item {
       display: flex;
       flex-direction: column;
-      gap: 0.71875rem;
-      margin-left: 21.64px;
+      gap: sp-vw(12);
+      margin-left: sp-vw(21.64);
 
       &-list {
         font-family: 'Noto Sans JP', sans-serif;
-        font-size: 0.875rem;
+        font-size: sp-vw(14);
       }
     }
   }

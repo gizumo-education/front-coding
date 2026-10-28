@@ -2,17 +2,17 @@
 
 .section {
   position: relative;
-  height: 270px;
-  padding-top: 61.64px;
-  padding-left: 124.68px;
+  height: sp-vw(270);
+  padding-top: sp-vw(61.64);
+  padding-left: sp-vw(124.68);
   background-image: url('/images/background-sp.png');
   background-repeat: no-repeat;
 
   &-catchcopy {
     position: absolute;
-    top: 147.65px;
-    width: 275px;
-    height: 27px;
+    top: sp-vw(147.65);
+    width: sp-vw(275);
+    height: sp-vw(27);
   }
 
   &-img {
@@ -21,15 +21,15 @@
     align-items: center;
 
     &-keyvisual {
-      width: 158px;
-      height: 81px;
-      margin-left: 23px;
+      width: sp-vw(158);
+      height: sp-vw(81);
+      margin-left: sp-vw(23);
     }
 
     &-subtitle {
-      width: 170px;
-      height: 30px;
-      margin: 2.875rem 0 0 1.4375rem;
+      width: sp-vw(170);
+      height: sp-vw(30);
+      margin: sp-vw(46) 0 0 sp-vw(23);
     }
   }
 }
