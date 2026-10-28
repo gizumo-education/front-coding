@@ -1,0 +1,35 @@
+@use '@/styles' as *;
+
+.section {
+  position: relative;
+  height: 270px;
+  padding-top: 61.64px;
+  padding-left: 124.68px;
+  background-image: url('/images/background-sp.png');
+  background-repeat: no-repeat;
+
+  &-catchcopy {
+    position: absolute;
+    top: 147.65px;
+    width: 275px;
+    height: 27px;
+  }
+
+  &-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-keyvisual {
+      width: 158px;
+      height: 81px;
+      margin-left: 23px;
+    }
+
+    &-subtitle {
+      width: 170px;
+      height: 30px;
+      margin: 2.875rem 0 0 1.4375rem;
+    }
+  }
+}

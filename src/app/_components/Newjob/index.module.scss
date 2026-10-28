@@ -1,0 +1,122 @@
+@use '@/styles' as *;
+
+.job {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  background-color: $color-background-blue;
+
+  &-title {
+    margin-left: 135px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.5625rem;
+    font-weight: bold;
+  }
+
+  &-btn {
+    &-left {
+      position: absolute;
+      top: 246px;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      background-color: rgba($color-white, 0.7);
+      border-radius: 50%;
+
+      &-arrow {
+        width: 7px;
+        height: 14px;
+      }
+    }
+
+    &-right {
+      position: absolute;
+      top: 246px;
+      left: 343px;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      background-color: rgba($color-white, 0.7);
+      border-radius: 50%;
+
+      &-arrow {
+        width: 7px;
+        height: 14px;
+        transform: scaleX(-1);
+      }
+    }
+  }
+
+  &-img {
+    position: relative;
+    width: 370px;
+    height: 208px;
+    margin-top: 35px;
+  }
+
+  &-jobtitle {
+    width: 370px;
+    height: 44px;
+    margin-top: 11px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.3;
+  }
+
+  &-submit {
+    width: 370px;
+    height: 60px;
+    margin-top: 44px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.125rem;
+    color: $color-white;
+    text-align: center;
+    background-color: $color-pink;
+    border-radius: 50px;
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    width: 358px;
+    margin-top: 11.2px;
+
+    &-category {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      &-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 21px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.875rem;
+
+        background-color: $color-light-pink;
+      }
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.71875rem;
+      margin-left: 21.64px;
+
+      &-list {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@use '@/styles' as *;
+
+.banner {
+  position: relative;
+  height: 75px;
+  padding-top: 16.18px;
+  background-image: url('/images/banner.png');
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    content: '';
+    background-color: rgba($color-black, 0.5);
+  }
+
+  &-text {
+    position: relative;
+    z-index: 2;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: $color-white;
+    text-align: center;
+  }
+}
