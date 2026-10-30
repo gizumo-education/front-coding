@@ -1,0 +1,48 @@
+@use '@/styles' as *;
+
+.footer-inner {
+  padding: sp-vw(40);
+  background-color: $color-footer-background;
+}
+
+.footer-home {
+  padding-right: sp-vw(134);
+  padding-left: sp-vw(10);
+  margin-bottom: sp-vw(40);
+}
+
+.footer-nav {
+  margin-bottom: sp-vw(30);
+}
+
+.footer-links {
+  display: flex;
+  column-gap: sp-vw(40);
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(20);
+}
+
+.footer-list-primary {
+  padding-left: sp-vw(15);
+}
+
+.footer-list-secondary {
+  padding-left: 0;
+}
+
+.footer-banners {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(15);
+}
+
+.footer-copyright {
+  padding: sp-vw(10) 0;
+  font-size: sp-vw(14);
+  text-align: center;
+  background-color: $color-copywright;
+}

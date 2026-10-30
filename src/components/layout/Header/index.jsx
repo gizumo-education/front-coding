@@ -97,17 +97,29 @@ export const Header = () => {
               </a>
             </li>
             <li>
-              <a href='/' className={styles['menu-link']} onClick={closeMenu}>
+              <a
+                href='#features'
+                className={styles['menu-link']}
+                onClick={closeMenu}
+              >
                 4つの特徴
               </a>
             </li>
             <li>
-              <a href='/' className={styles['menu-link']} onClick={closeMenu}>
+              <a
+                href='#jobchange'
+                className={styles['menu-link']}
+                onClick={closeMenu}
+              >
                 転職までの流れ
               </a>
             </li>
             <li>
-              <a href='/' className={styles['menu-link']} onClick={closeMenu}>
+              <a
+                href='#helpful'
+                className={styles['menu-link']}
+                onClick={closeMenu}
+              >
                 転職お役立ちコンテンツ
               </a>
             </li>

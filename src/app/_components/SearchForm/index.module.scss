@@ -7,6 +7,14 @@
   }
 }
 
+.search-form-footer {
+  margin-bottom: sp-vw(75);
+
+  @include media-pc {
+    margin-bottom: 0;
+  }
+}
+
 .search-form-inner {
   width: 100%;
   height: sp-vw(240);

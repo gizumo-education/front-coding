@@ -1,0 +1,88 @@
+@use '@/styles' as *;
+
+.helpful {
+  margin-inline: sp-vw(15);
+}
+
+.helpful-heading {
+  margin-bottom: sp-vw(30.5);
+  font-size: sp-vw(25);
+  font-weight: 700;
+  text-align: center;
+}
+
+.helpful-list {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(17);
+  margin-bottom: sp-vw(35);
+}
+
+.helpful-card-visual {
+  position: relative;
+  width: sp-vw(370);
+  height: sp-vw(235);
+  overflow: hidden;
+  color: $color-white;
+  border-radius: sp-vw(16);
+}
+
+.helpful-card-visual::before {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  content: '';
+  background-color: rgba($color-black, 0.5);
+}
+
+.helpful-title,
+.helpful-description {
+  position: absolute;
+  inset-inline: 0;
+  z-index: 2;
+  padding-inline: sp-vw(20);
+  text-align: center;
+}
+
+.helpful-title {
+  top: sp-vw(60.5);
+  font-size: sp-vw(21);
+  font-weight: 700;
+}
+
+.helpful-description {
+  top: sp-vw(135);
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(5);
+  font-size: sp-vw(14);
+}
+
+.helpful-card:last-child .helpful-description {
+  top: sp-vw(140);
+}
+
+.helpful-card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.helpful-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: sp-vw(60);
+  margin-bottom: sp-vw(35);
+  background-color: $color-primary;
+  border-radius: sp-vw(30);
+}
+
+.helpful-more-text {
+  font-size: sp-vw(18);
+  font-weight: 700;
+  line-height: 1;
+  color: $color-white;
+}
