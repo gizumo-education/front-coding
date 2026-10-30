@@ -3,8 +3,8 @@
 .banner {
   position: relative;
   height: sp-vw(75);
-  padding-top: sp-vw(16.18);
-  background-image: url('/images/banner.png');
+  padding-top: sp-vw(16);
+  background-image: url('/img/banner.png');
 
   &::before {
     position: absolute;
@@ -17,7 +17,6 @@
   &-text {
     position: relative;
     z-index: 2;
-    font-family: 'Noto Sans JP', sans-serif;
     font-size: sp-vw(14);
     line-height: 1.5;
     color: $color-white;

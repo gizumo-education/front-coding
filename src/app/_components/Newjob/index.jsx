@@ -9,13 +9,13 @@ export const NewJob = () => {
           className={styles['job-btn-left-arrow']}
           width={8}
           height={15}
-          src='/images/miniarrow.png'
+          src='/img/miniarrow.png'
           alt='左'
         />
       </button>
       <img
         className={styles['job-img']}
-        src='/images/newjob.png'
+        src='/img/newjob.png'
         alt=''
         width={370}
         height={208}
@@ -25,28 +25,26 @@ export const NewJob = () => {
           className={styles['job-btn-right-arrow']}
           width={8}
           height={15}
-          src='/images/miniarrow.png'
-          alt='左'
+          src='/img/miniarrow.png'
+          alt='右'
         />
       </button>
       <h2 className={styles['job-jobtitle']}>
         平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
       </h2>
       <div className={styles['job-info']}>
-        <ul className={styles['job-info-category']}>
-          <li className={styles['job-info-category-list']}>給与</li>
-          <li className={styles['job-info-category-list']}>所在地</li>
-          <li className={styles['job-info-category-list']}>最寄駅</li>
-        </ul>
-        <ul className={styles['job-info-item']}>
-          <li className={styles['job-info-item-list']}>月給 148,000円～</li>
-          <li className={styles['job-info-item-list']}>三重県伊勢市</li>
-          <li className={styles['job-info-item-list']}>伊勢市駅 徒歩15分</li>
-        </ul>
+        <dl className={styles['job-info-item']}>
+          <dt className={styles['job-info-item-list']}>給与</dt>
+          <dd className={styles['job-info-item-name']}>月給 148,000円～</dd>
+          <dt className={styles['job-info-item-list']}>所在地</dt>
+          <dd className={styles['job-info-item-name']}>三重県伊勢市</dd>
+          <dt className={styles['job-info-item-list']}>最寄駅</dt>
+          <dd className={styles['job-info-item-name']}>伊勢市駅 徒歩15分</dd>
+        </dl>
       </div>
-      <button className={styles['job-submit']} type='submit'>
+      <a href='/' className={styles['job-submit']}>
         新着求人一覧をもっと見る
-      </button>
+      </a>
     </section>
   )
 }

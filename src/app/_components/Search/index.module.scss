@@ -22,7 +22,6 @@
   &-title {
     position: relative;
     z-index: 1;
-    font-family: 'Noto Sans JP', sans-serif;
     font-size: sp-vw(22);
     font-weight: bold;
     text-align: center;
@@ -32,7 +31,6 @@
     position: relative;
     z-index: 1;
     margin-top: sp-vw(18);
-    font-family: 'Noto Sans JP', sans-serif;
     font-size: sp-vw(14);
     text-align: center;
   }
@@ -49,27 +47,39 @@
       height: sp-vw(30);
       padding-left: sp-vw(7);
       margin-top: sp-vw(15);
-      font-family: 'Noto Sans JP', sans-serif;
       font-size: sp-vw(14);
-      color: $color-gray;
+      color: $color-black;
       background-color: $color-white;
       border: sp-vw(1) solid $color-pink;
       border-radius: sp-vw(5);
+
+      &::placeholder {
+        color: $color-gray;
+      }
     }
 
     &-submit {
+      position: relative;
       width: sp-vw(160);
       height: sp-vw(40);
       margin-top: sp-vw(19);
-      font-family: 'Noto Sans JP', sans-serif;
       font-size: sp-vw(18);
+      font-weight: bold;
       color: $color-white;
       text-align: center;
       background-color: $color-pink;
-      background-image: url('/images/search.png');
-      background-repeat: no-repeat;
-      background-position: left sp-vw(14) center;
       border-radius: sp-vw(50);
+
+      &::before {
+        position: absolute;
+        left: sp-vw(14);
+        z-index: 2;
+        width: sp-vw(18);
+        height: sp-vw(18);
+        content: '';
+        background-color: $color-white;
+        mask-image: url('/icon/search.svg');
+      }
     }
 
     &-select {
@@ -83,11 +93,10 @@
         width: sp-vw(100);
         height: sp-vw(30);
         padding: sp-vw(7) sp-vw(6) sp-vw(6) sp-vw(8);
-        font-family: 'Noto Sans JP', sans-serif;
         font-size: sp-vw(12);
         appearance: none;
         background-color: $color-white;
-        background-image: url('/images/arrow.png');
+        background-image: url('/img/arrow.png');
         background-repeat: no-repeat;
         background-position: right sp-vw(6) center;
         background-size: sp-vw(13) sp-vw(7);

@@ -8,12 +8,10 @@ const Top = () => {
   return (
     <>
       <Header />
-      <main>
-        <KeyVisual />
-        <Search />
-        <NewJob />
-        <Banner />
-      </main>
+      <KeyVisual />
+      <Search />
+      <NewJob />
+      <Banner />
     </>
   )
 }
