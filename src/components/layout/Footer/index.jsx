@@ -54,7 +54,7 @@ export const Footer = () => {
           <li className={styles['footer-banner']}>
             <img
               className={styles['footer-banner-image']}
-              src='/Footer/footer1.png'
+              src='/img/footer-banner-1.png'
               alt=''
               width='323'
               height='86'
@@ -64,7 +64,7 @@ export const Footer = () => {
           <li className={styles['footer-banner']}>
             <img
               className={styles['footer-banner-image']}
-              src='/Footer/footer2.png'
+              src='/img/footer-banner-2.png'
               alt=''
               width='323'
               height='86'

@@ -12,16 +12,14 @@ export const JobChange = () => {
           </div>
           <img
             className={styles['steps-icon']}
-            src='/JobChange/sheet.png'
+            src='/icon/job-change-sheet.png'
             alt=''
             width='77'
             height='75'
           />
           <h3 className={styles['steps-title']}>エントリーシートの作成</h3>
           <p className={styles['steps-description']}>
-            ここにはテキストが入ります。ここに
-            <br />
-            はテキストが入ります。
+            ここにはテキストが入ります。ここにはテキストが入ります。
             <br />
             ここにはテキストが入ります。
             <br />
@@ -35,16 +33,14 @@ export const JobChange = () => {
           </div>
           <img
             className={styles['steps-icon']}
-            src='/JobChange/search-icon.png'
+            src='/icon/job-change-search.png'
             alt=''
             width='75'
             height='75'
           />
           <h3 className={styles['steps-title']}>気になる企業のピックアップ</h3>
           <p className={styles['steps-description']}>
-            ここにはテキストが入ります。ここに
-            <br />
-            はテキストが入ります。
+            ここにはテキストが入ります。ここにはテキストが入ります。
             <br />
             ここにはテキストが入ります。
             <br />
@@ -58,16 +54,14 @@ export const JobChange = () => {
           </div>
           <img
             className={styles['steps-icon']}
-            src='/JobChange/mail-exchange.png'
+            src='/icon/job-change-mail-exchange.png'
             alt=''
             width='81'
             height='75'
           />
           <h3 className={styles['steps-title']}>複数企業に応募</h3>
           <p className={styles['steps-description']}>
-            ここにはテキストが入ります。ここに
-            <br />
-            はテキストが入ります。
+            ここにはテキストが入ります。ここにはテキストが入ります。
             <br />
             ここにはテキストが入ります。
             <br />
@@ -81,16 +75,14 @@ export const JobChange = () => {
           </div>
           <img
             className={styles['steps-icon']}
-            src='/JobChange/sparkle.png'
+            src='/icon/job-change-sparkle.png'
             alt=''
             width='74'
             height='75'
           />
           <h3 className={styles['steps-title']}>内定・転職！</h3>
           <p className={styles['steps-description']}>
-            ここにはテキストが入ります。ここに
-            <br />
-            はテキストが入ります。
+            ここにはテキストが入ります。ここにはテキストが入ります。
             <br />
             ここにはテキストが入ります。
             <br />

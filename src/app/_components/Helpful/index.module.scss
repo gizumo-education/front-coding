@@ -27,6 +27,11 @@
   border-radius: sp-vw(16);
 }
 
+.helpful-card {
+  position: relative;
+  color: $color-white;
+}
+
 .helpful-card-visual::before {
   position: absolute;
   inset: 0;
