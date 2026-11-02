@@ -1,0 +1,25 @@
+@use '@/styles' as *;
+
+.banner {
+  position: relative;
+  height: sp-vw(75);
+  padding-top: sp-vw(16);
+  background-image: url('/img/banner.png');
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    content: '';
+    background-color: rgba($color-black, 0.5);
+  }
+
+  &-text {
+    position: relative;
+    z-index: 2;
+    font-size: sp-vw(14);
+    line-height: 1.5;
+    color: $color-white;
+    text-align: center;
+  }
+}

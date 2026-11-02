@@ -1,0 +1,54 @@
+@use '@/styles' as *;
+
+.section {
+  position: relative;
+  height: sp-vw(270);
+  padding: sp-vw(61) 0 0 sp-vw(124);
+  background-image: url('/img/background-sp.png');
+  background-repeat: no-repeat;
+  background-size: sp-vw(400) sp-vw(270);
+
+  &-catchcopy {
+    position: absolute;
+    top: sp-vw(147);
+    width: sp-vw(275);
+    height: sp-vw(27);
+  }
+
+  &-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-keyvisual {
+      width: sp-vw(158);
+      height: sp-vw(81);
+      margin-left: sp-vw(23);
+    }
+  }
+
+  &-title {
+    margin-top: sp-vw(8);
+    font-size: sp-vw(17);
+    font-weight: bold;
+    color: $color-white;
+    text-shadow: sp-vw(0) sp-vw(4) sp-vw(4) rgba($color-black, 0.25);
+  }
+
+  &-subtitle {
+    width: sp-vw(170);
+    height: sp-vw(30);
+    padding: sp-vw(5) sp-vw(22) sp-vw(3) sp-vw(23);
+    margin: sp-vw(21) 0 0 sp-vw(25);
+    font-size: sp-vw(8);
+    color: $color-green;
+    background-color: $color-white;
+    border: $color-green solid sp-vw(1);
+    border-radius: sp-vw(5);
+
+    &-number {
+      font-size: sp-vw(16);
+      font-weight: bold;
+    }
+  }
+}
