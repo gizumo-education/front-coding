@@ -37,7 +37,6 @@ export const Search = () => {
               <option value='神奈川県'>神奈川県</option>
               <option value='群馬県'>群馬県</option>
               <option value='埼玉県'> 埼玉県</option>
-              <option value='埼玉県'> 埼玉県</option>
               <option value='千葉県'> 千葉県</option>
               <option value='東京都'> 東京都</option>
               <option value='栃木県'> 栃木県</option>
