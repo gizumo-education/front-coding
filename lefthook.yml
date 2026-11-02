@@ -2,7 +2,7 @@ pre-commit:
   parallel: true
   commands:
     markuplint:
-      glob: '*.{jsx}'
+      glob: '**/*.{jsx}'
       run: npx markuplint "{staged_files}"
     eslint:
       glob: '**/*.{js,jsx}'
