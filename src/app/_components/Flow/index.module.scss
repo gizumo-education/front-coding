@@ -1,0 +1,86 @@
+@use '@/styles' as *;
+
+.flow {
+  margin-inline: sp-vw(60);
+  margin-bottom: sp-vw(60);
+}
+
+.title {
+  margin-bottom: sp-vw(35);
+  font-size: sp-vw(25);
+  font-weight: 700;
+  line-height: sp-vw(25);
+  color: $color-black;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(40);
+}
+
+.step {
+  position: absolute;
+  top: sp-vw(8);
+  left: sp-vw(8);
+  display: grid;
+  place-items: center;
+  width: sp-vw(45);
+  height: sp-vw(45);
+  font-size: sp-vw(10);
+  font-weight: 700;
+  line-height: 1;
+  color: $color-white;
+  text-align: center;
+  background-color: $color-pink;
+  border-radius: 50%;
+}
+
+.item {
+  position: relative;
+  height: sp-vw(293);
+  padding-block: sp-vw(55) sp-vw(20);
+  border: sp-vw(2) solid $color-pink;
+  border-radius: sp-vw(10);
+
+  &:not(:last-child)::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: sp-vw(40);
+    height: sp-vw(20);
+    margin-top: sp-vw(11);
+    content: '';
+    background-color: $color-pink;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    transform: translateX(-50%);
+  }
+}
+
+.icon {
+  display: block;
+  width: auto;
+  height: sp-vw(75);
+  margin-inline: auto;
+}
+
+.item-title {
+  margin-block: sp-vw(22) sp-vw(10);
+  font-size: sp-vw(20);
+  font-weight: 700;
+  line-height: sp-vw(29);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.item:last-child .item-title {
+  line-height: sp-vw(20);
+}
+
+.item-text {
+  padding-inline: sp-vw(18);
+  font-size: sp-vw(14);
+  line-height: sp-vw(20);
+  white-space: pre-line;
+}
