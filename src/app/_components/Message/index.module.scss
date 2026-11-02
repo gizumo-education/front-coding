@@ -1,0 +1,40 @@
+@use '@/styles' as *;
+
+.message {
+  position: relative;
+  width: 100%;
+  height: sp-vw(75);
+  color: $color-white;
+  background-image: url('/img/message.jpg');
+  background-repeat: no-repeat;
+  background-position: center 70%;
+  background-size: cover;
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    content: '';
+    background-color: rgba($color-black, 55%);
+  }
+}
+
+.text-main,
+.text-sub {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: sp-vw(14);
+  font-weight: 400;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.text-main {
+  padding-top: sp-vw(16);
+  padding-left: sp-vw(61);
+}
+
+.text-sub {
+  padding-top: sp-vw(38);
+  padding-left: sp-vw(26);
+}
