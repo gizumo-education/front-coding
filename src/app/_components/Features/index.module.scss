@@ -2,6 +2,9 @@
 
 .features {
   padding: sp-vw(55) sp-vw(15) sp-vw(60);
+  @include media-pc {
+    padding: pc-vw(106) pc-vw(210) pc-vw(105);
+  }
 }
 
 .features-heading {
@@ -10,12 +13,22 @@
   font-weight: 700;
   line-height: sp-vw(25);
   text-align: center;
+  @include media-pc {
+    // padding: pc-vw(64) pc-vw(210) pc-vw(67);
+    margin-bottom: pc-vw(53);
+    font-size: pc-vw(25);
+  }
 }
 
 .features-list {
   display: flex;
   flex-direction: column;
   gap: sp-vw(21);
+  @include media-pc {
+    display: grid;
+    grid-template-columns: repeat(2, pc-vw(570));
+    gap: pc-vw(20);
+  }
 }
 
 .features-list-item-small {
@@ -25,6 +38,12 @@
   text-align: center;
   background-color: $color-features-item;
   border-radius: sp-vw(16);
+  @include media-pc {
+    width: 100%;
+    height: pc-vw(180);
+    padding: pc-vw(30) pc-vw(15);
+    border-radius: pc-vw(16);
+  }
 }
 
 .features-list-item-large {
@@ -34,6 +53,12 @@
   text-align: center;
   background-color: $color-features-item;
   border-radius: sp-vw(16);
+  @include media-pc {
+    width: 100%;
+    height: pc-vw(180);
+    padding: pc-vw(30) pc-vw(15);
+    border-radius: pc-vw(16);
+  }
 }
 
 .features-title {
@@ -41,6 +66,10 @@
   font-size: sp-vw(20);
   font-weight: 700;
   color: $color-primary;
+  @include media-pc {
+    margin-bottom: pc-vw(36);
+    font-size: pc-vw(20);
+  }
 }
 
 .features-description {
@@ -48,8 +77,15 @@
   flex-direction: column;
   gap: sp-vw(4);
   font-size: sp-vw(12);
+  @include media-pc {
+    gap: pc-vw(4);
+    font-size: pc-vw(12);
+  }
 }
 
 .features-list-item-large:last-child {
   padding-inline: sp-vw(10.5);
+  @include media-pc {
+    padding-inline: pc-vw(10.5);
+  }
 }

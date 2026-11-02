@@ -17,7 +17,11 @@ export const JobChange = () => {
             width='77'
             height='75'
           />
-          <h3 className={styles['steps-title']}>エントリーシートの作成</h3>
+          <h3 className={styles['steps-title']}>
+            エントリーシートの
+            <br />
+            作成
+          </h3>
           <p className={styles['steps-description']}>
             ここにはテキストが入ります。ここにはテキストが入ります。
             <br />
@@ -38,7 +42,11 @@ export const JobChange = () => {
             width='75'
             height='75'
           />
-          <h3 className={styles['steps-title']}>気になる企業のピックアップ</h3>
+          <h3 className={styles['steps-title']}>
+            気になる企業の
+            <br />
+            ピックアップ
+          </h3>
           <p className={styles['steps-description']}>
             ここにはテキストが入ります。ここにはテキストが入ります。
             <br />

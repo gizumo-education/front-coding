@@ -11,7 +11,7 @@
   margin-bottom: sp-vw(75);
 
   @include media-pc {
-    margin-bottom: 0;
+    margin-bottom: pc-vw(160);
   }
 }
 
@@ -25,6 +25,7 @@
     width: pc-vw($inner-pc-max-width);
     height: auto;
     padding: pc-vw(40);
+    border-radius: pc-vw(16);
   }
 }
 

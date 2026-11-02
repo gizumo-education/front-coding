@@ -9,12 +9,19 @@
   font-size: sp-vw(25);
   font-weight: 700;
   text-align: center;
+  @include media-pc {
+    font-size: pc-vw(25);
+  }
 }
 
 .job-change-steps {
   display: flex;
   flex-direction: column;
   gap: sp-vw(40);
+  @include media-pc {
+    flex-direction: row;
+    gap: pc-vw(20);
+  }
 }
 
 .job-change-item {
@@ -26,6 +33,13 @@
   text-align: center;
   border: solid sp-vw(2.3) $color-primary;
   border-radius: sp-vw(16);
+  @include media-pc {
+    width: pc-vw(280);
+    height: pc-vw(360);
+    padding: pc-vw(70) pc-vw(10) pc-vw(42);
+    border: solid pc-vw(2.3) $color-primary;
+    border-radius: pc-vw(16);
+  }
 }
 
 .job-change-item:not(:last-child)::after {
@@ -40,6 +54,13 @@
   background-position: center;
   background-size: contain;
   transform: translateX(-50%);
+  @include media-pc {
+    bottom: pc-vw(170);
+    left: pc-vw(270);
+    width: pc-vw(40);
+    height: pc-vw(20);
+    transform: translateX(-50%) rotate(-90deg);
+  }
 }
 
 .steps-badge {
@@ -56,6 +77,13 @@
   color: $color-white;
   background-color: $color-primary;
   border-radius: 50%;
+  @include media-pc {
+    top: pc-vw(10);
+    left: pc-vw(10);
+    width: pc-vw(60);
+    height: pc-vw(60);
+    font-size: pc-vw(16);
+  }
 }
 
 .steps-icon {
@@ -64,16 +92,28 @@
   height: auto;
   margin-inline: auto;
   margin-bottom: sp-vw(26);
+  @include media-pc {
+    width: pc-vw(100);
+    height: pc-vw(100);
+    margin-bottom: pc-vw(30);
+  }
 }
 
 .job-change-item:last-child .steps-icon {
   margin-bottom: sp-vw(17);
+  @include media-pc {
+    margin-bottom: pc-vw(30);
+  }
 }
 
 .steps-title {
   margin-bottom: sp-vw(15);
   font-size: sp-vw(20);
   font-weight: 700;
+  @include media-pc {
+    margin-bottom: pc-vw(30);
+    font-size: pc-vw(24);
+  }
 }
 
 .steps-description {
@@ -83,4 +123,10 @@
   font-size: sp-vw(14);
   line-height: sp-vw(20);
   text-align: left;
+  @include media-pc {
+    width: pc-vw(237);
+    height: pc-vw(60);
+    font-size: pc-vw(14);
+    line-height: pc-vw(20);
+  }
 }
