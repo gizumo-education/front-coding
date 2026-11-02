@@ -1,0 +1,49 @@
+@use '@/styles' as *;
+
+.footer {
+  padding-top: sp-vw(38);
+  margin-top: sp-vw(75);
+  background-color: $color-blue-pale;
+}
+
+.top {
+  margin-bottom: sp-vw(27);
+  margin-left: sp-vw(35);
+  font-size: sp-vw(16);
+  line-height: sp-vw(23);
+}
+
+.links {
+  display: grid;
+  grid-template-columns: sp-vw(136) auto;
+  margin-bottom: sp-vw(22);
+  margin-left: sp-vw(40);
+}
+
+.link {
+  font-size: sp-vw(16);
+  line-height: sp-vw(36);
+  color: $color-black;
+}
+
+.banners {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(15);
+  margin-bottom: sp-vw(40);
+  margin-left: sp-vw(25);
+}
+
+.banner {
+  display: block;
+  width: sp-vw(322);
+}
+
+.copyright {
+  padding-block: sp-vw(11) sp-vw(10);
+  font-size: sp-vw(14);
+  line-height: sp-vw(14);
+  color: $color-black;
+  text-align: center;
+  background-color: $color-gray-light;
+}

@@ -1,0 +1,50 @@
+@use '@/styles' as *;
+
+.features {
+  margin-block: sp-vw(55) sp-vw(60);
+}
+
+.title {
+  margin-bottom: sp-vw(38);
+  font-size: sp-vw(25);
+  font-weight: 700;
+  line-height: sp-vw(25);
+  color: $color-black;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(21);
+}
+
+.item {
+  padding-block: sp-vw(30);
+  background-color: $color-pink-pale;
+  border-radius: sp-vw(10);
+}
+
+.item-title {
+  margin-bottom: sp-vw(30);
+  font-size: sp-vw(20);
+  font-weight: 700;
+  line-height: sp-vw(20);
+  color: $color-pink;
+  text-align: center;
+}
+
+.item-text {
+  font-size: sp-vw(12);
+  line-height: sp-vw(17);
+  color: $color-black;
+  text-align: center;
+}
+
+.item-short {
+  height: sp-vw(144);
+}
+
+.item-tall {
+  height: sp-vw(161);
+}
