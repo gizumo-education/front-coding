@@ -1,8 +1,13 @@
+import clsx from 'clsx'
 import styles from './index.module.scss'
 
-export const SearchForm = () => {
+export const SearchForm = ({ variant }) => {
   return (
-    <section className={styles['search-form']}>
+    <section
+      className={clsx(styles['search-form'], {
+        [styles['search-form-footer']]: variant === 'footer',
+      })}
+    >
       <form className={styles['search-form-inner']} action='/'>
         <h2 className={styles['search-form-heading']}>お仕事検索</h2>
         <p className={styles['search-form-text']}>

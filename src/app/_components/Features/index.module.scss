@@ -1,0 +1,55 @@
+@use '@/styles' as *;
+
+.features {
+  padding: sp-vw(55) sp-vw(15) sp-vw(60);
+}
+
+.features-heading {
+  margin-bottom: sp-vw(38);
+  font-size: sp-vw(25);
+  font-weight: 700;
+  line-height: sp-vw(25);
+  text-align: center;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(21);
+}
+
+.features-list-item-small {
+  width: sp-vw(370);
+  height: sp-vw(144);
+  padding: sp-vw(30) sp-vw(15);
+  text-align: center;
+  background-color: $color-features-item;
+  border-radius: sp-vw(16);
+}
+
+.features-list-item-large {
+  width: sp-vw(370);
+  height: sp-vw(161);
+  padding: sp-vw(30) sp-vw(15);
+  text-align: center;
+  background-color: $color-features-item;
+  border-radius: sp-vw(16);
+}
+
+.features-title {
+  margin-bottom: sp-vw(33);
+  font-size: sp-vw(20);
+  font-weight: 700;
+  color: $color-primary;
+}
+
+.features-description {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(4);
+  font-size: sp-vw(12);
+}
+
+.features-list-item-large:last-child {
+  padding-inline: sp-vw(10.5);
+}

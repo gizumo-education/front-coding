@@ -7,12 +7,20 @@
   }
 }
 
+.search-form-footer {
+  margin-bottom: sp-vw(75);
+
+  @include media-pc {
+    margin-bottom: 0;
+  }
+}
+
 .search-form-inner {
   width: 100%;
   height: sp-vw(240);
   padding: sp-vw(15) sp-vw(25) sp-vw(20);
   background-color: $color-bg-form;
-  border-radius: sp-vw(2);
+  border-radius: sp-vw(16);
   @include media-pc {
     width: pc-vw($inner-pc-max-width);
     height: auto;

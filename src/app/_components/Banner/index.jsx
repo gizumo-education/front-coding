@@ -5,13 +5,10 @@ export const Banner = () => {
     <section className={styles['banner']}>
       <div className={styles['banner-inner']}>
         <picture>
-          <source
-            media='(min-width: 768px)'
-            srcSet='/Banner/banner-bg-pc.png'
-          />
+          <source media='(min-width: 768px)' srcSet='/img/banner-bg-pc.png' />
           <img
             className={styles['banner-bg']}
-            src='/Banner/banner-bg.png'
+            src='/img/banner-bg.png'
             alt=''
             width='400'
             height='75'

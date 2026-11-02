@@ -7,11 +7,11 @@ export const Keyvisual = () => {
         <picture>
           <source
             media='(min-width: 768px)'
-            srcSet='/keyvisual/keyvisual-bg-pc.png'
+            srcSet='/img/keyvisual-bg-pc.png'
           />
           <img
             className={styles['keyvisual-bg']}
-            src='/keyvisual/keyvisual-bg.png'
+            src='/img/keyvisual-bg.png'
             alt=''
             width='400'
             height='270'
@@ -20,11 +20,11 @@ export const Keyvisual = () => {
         <picture>
           <source
             media='(min-width: 768px)'
-            srcSet='/keyvisual/keyvisual-ranking-pc.svg'
+            srcSet='/img/keyvisual-ranking-pc.svg'
           />
           <img
             className={styles['keyvisual-ranking']}
-            src='/keyvisual/keyvisual-ranking.svg'
+            src='/img/keyvisual-ranking.svg'
             alt='no.1の下の小さいテキスト内容'
             width='158'
             height='81'
