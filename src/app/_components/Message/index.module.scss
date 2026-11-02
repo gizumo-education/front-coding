@@ -1,11 +1,11 @@
 @use '@/styles' as *;
 
-.footer {
+.message {
   position: relative;
   width: 100%;
   height: sp-vw(75);
   color: $color-white;
-  background-image: url('/img/news-footer.jpg');
+  background-image: url('/img/message.jpg');
   background-repeat: no-repeat;
   background-position: center 70%;
   background-size: cover;

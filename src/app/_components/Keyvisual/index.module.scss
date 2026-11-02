@@ -70,11 +70,12 @@
 .catch {
   width: 100%;
   aspect-ratio: 272 / 22;
-  padding-top: sp-vw(8);
-  padding-left: sp-vw(125.4);
+  padding-top: sp-vw(7);
+  padding-left: sp-vw(125);
   margin: 0;
   margin-top: sp-vw(141);
-  filter: drop-shadow(0 sp-vw(4) sp-vw(4) rgba($color-black, 0.25));
+  font-size: sp-vw(17);
+  text-shadow: (0 sp-vw(4) sp-vw(4) rgba($color-black, 0.25));
 }
 
 .count {

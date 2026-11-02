@@ -27,14 +27,7 @@ export const Keyvisual = () => {
         height={4}
         className={styles.note}
       />
-      <h1 className={styles.catch}>
-        <img
-          src='/img/catch.svg'
-          alt='医療事務求人を探すならギズジョブ'
-          width={272}
-          height={22}
-        />
-      </h1>
+      <h1 className={styles.catch}>医療事務求人を探すならギズジョブ</h1>
       <p className={styles.count}>
         現在の求人掲載数：<strong className={styles.number}>2,320</strong>件
       </p>

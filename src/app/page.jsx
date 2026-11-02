@@ -2,7 +2,7 @@ import { Header } from '@/components/layout'
 import { Keyvisual } from '@/app/_components/Keyvisual'
 import { Search } from '@/app/_components/Search'
 import { News } from '@/app/_components/News'
-import { NewsFooter } from '@/app/_components/NewsFooter'
+import { Message } from '@/app/_components/Message'
 
 const Top = () => {
   return (
@@ -12,7 +12,7 @@ const Top = () => {
         <Keyvisual />
         <Search />
         <News />
-        <NewsFooter />
+        <Message />
       </main>
     </>
   )
