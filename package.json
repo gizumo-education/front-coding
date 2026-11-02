@@ -6,9 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint:html": "markuplint '**/*.jsx'",
-    "lint:js": "eslint --fix '**/*.@(js|jsx)' --no-warn-ignored",
-    "lint:css": "stylelint --fix 'src/**/*.@(scss)'",
+    "lint:html": "markuplint \"src/**/*.jsx\"",
+    "lint:js": "eslint --fix \"**/*.{js,jsx}\" --no-warn-ignored",
+    "lint:css": "stylelint --fix \"src/**/*.scss\"",
     "format": "prettier --ignore-path .prettierignore --write .",
     "lefthook": "lefthook install"
   },

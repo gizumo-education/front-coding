@@ -1,0 +1,32 @@
+@use '@/styles' as *;
+
+.button {
+  position: relative;
+  width: sp-vw(160);
+  height: sp-vw(40);
+  padding-top: sp-vw(1);
+  padding-left: sp-vw(2);
+  margin-top: sp-vw(9);
+  font-size: sp-vw(18);
+  font-weight: 700;
+  line-height: 1;
+  color: $color-white;
+  background-color: $color-pink;
+  border: none;
+  border-radius: sp-vw(20);
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: sp-vw(12.9);
+    width: sp-vw(18);
+    height: sp-vw(18);
+    content: '';
+    background-color: $color-white;
+    mask-image: url('/icon/search.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    transform: translateY(-47%);
+  }
+}

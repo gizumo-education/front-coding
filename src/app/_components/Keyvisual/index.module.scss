@@ -1,0 +1,97 @@
+@use '@/styles' as *;
+
+.keyvisual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  aspect-ratio: 375 / 252;
+  color: $color-white;
+  background-image: url('/img/keyvisual.png');
+  background-repeat: no-repeat;
+  background-position: 40% center;
+  background-size: cover;
+}
+
+.laurel {
+  position: absolute;
+  width: sp-vw(20);
+  height: sp-vw(62.02);
+  aspect-ratio: 20 / 62.02;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(0 sp-vw(4) sp-vw(4) rgba($color-black, 0.25));
+
+  &-left {
+    top: sp-vw(70);
+    left: sp-vw(200);
+    background-image: url('/img/laurel-left.svg');
+  }
+
+  &-right {
+    top: sp-vw(70);
+    left: sp-vw(330);
+    background-image: url('/img/laurel-right.svg');
+  }
+}
+
+.title {
+  position: absolute;
+  top: sp-vw(61.7);
+  left: sp-vw(224.38);
+  width: sp-vw(100);
+  height: auto;
+  aspect-ratio: 100 / 70;
+  filter: drop-shadow(0 sp-vw(4) sp-vw(4) rgba($color-black, 0.25));
+
+  &-mark {
+    position: absolute;
+    top: sp-vw(75.5);
+    left: sp-vw(319);
+    width: sp-vw(3);
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+}
+
+.note {
+  position: absolute;
+  top: sp-vw(131.7);
+  left: sp-vw(273);
+  width: sp-vw(35);
+  height: auto;
+  aspect-ratio: 35 / 4;
+  filter: drop-shadow(0 sp-vw(4) sp-vw(4) rgba($color-black, 0.6));
+}
+
+.catch {
+  width: 100%;
+  aspect-ratio: 272 / 22;
+  padding-top: sp-vw(8);
+  padding-left: sp-vw(125.4);
+  margin: 0;
+  margin-top: sp-vw(141);
+  filter: drop-shadow(0 sp-vw(4) sp-vw(4) rgba($color-black, 0.25));
+}
+
+.count {
+  height: sp-vw(29);
+  padding: sp-vw(7) sp-vw(23) sp-vw(3);
+  margin-top: sp-vw(13.5);
+  margin-left: sp-vw(189);
+  font-size: sp-vw(8);
+  color: $color-light-green;
+  white-space: nowrap;
+  background-color: $color-white;
+  border: sp-vw(1) solid $color-light-green;
+  border-radius: sp-vw(6);
+
+  .number {
+    font-size: sp-vw(16);
+    font-weight: 700;
+    color: $color-green;
+  }
+}

@@ -1,0 +1,151 @@
+@use '@/styles' as *;
+
+.news-wrapper {
+  width: 100%;
+  padding: sp-vw(31) sp-vw(15) sp-vw(30);
+  margin-top: sp-vw(25);
+  background-color: $color-light-blue;
+}
+
+.news-title {
+  font-size: sp-vw(25);
+  font-weight: 700;
+  text-align: center;
+}
+
+.news-slider-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: sp-vw(370);
+  aspect-ratio: 370 / 346;
+  margin-top: sp-vw(35);
+  overflow: hidden;
+}
+
+.news-image {
+  flex-shrink: 0;
+  width: 100%;
+  aspect-ratio: 370 / 208;
+  object-fit: cover;
+  object-position: top;
+  border-radius: sp-vw(10);
+}
+
+.news-sub-title {
+  position: relative;
+  top: sp-vw(0.2);
+  flex-shrink: 0;
+  margin-top: sp-vw(10.09);
+  font-size: sp-vw(16);
+  font-weight: 700;
+  line-height: sp-vw(22);
+
+  &-line1,
+  &-line2 {
+    position: relative;
+    top: sp-vw(0.6);
+    display: block;
+  }
+}
+
+.news-dl {
+  display: grid;
+  flex-shrink: 0;
+  grid-template-columns: sp-vw(60) 1fr;
+  gap: sp-vw(4) sp-vw(20.06);
+  align-items: center;
+  margin-top: sp-vw(12);
+}
+
+.news-salary,
+.news-place,
+.news-station {
+  position: relative;
+  top: sp-vw(2);
+  grid-column: 1;
+  height: sp-vw(21);
+  padding: sp-vw(2) 0;
+  font-size: sp-vw(14);
+  font-weight: 400;
+  line-height: 1;
+  color: $color-black;
+  text-align: center;
+  background-color: $color-white-pink;
+}
+
+.news-place {
+  top: sp-vw(1);
+}
+
+.news-salary-desc,
+.news-place-desc,
+.news-station-desc {
+  position: relative;
+  left: sp-vw(1);
+  grid-column: 2;
+  font-size: sp-vw(14);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.news-salary-desc {
+  top: sp-vw(-1);
+}
+
+.news-station-desc {
+  top: sp-vw(1);
+}
+
+.arrow {
+  position: absolute;
+  top: sp-vw(157);
+  z-index: 10;
+  width: sp-vw(43);
+  height: sp-vw(43);
+  background-color: $color-white;
+  border-radius: 50%;
+  opacity: 0.7;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: sp-vw(10);
+    height: sp-vw(10);
+    content: '';
+    border-top: sp-vw(2) solid $color-gray;
+    border-right: sp-vw(2) solid $color-gray;
+  }
+}
+
+.prev {
+  left: 0;
+
+  &::before {
+    transform: translate(-30%, -50%) rotate(-135deg);
+  }
+}
+
+.next {
+  right: 0;
+
+  &::before {
+    transform: translate(-70%, -50%) rotate(45deg);
+  }
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: sp-vw(60);
+  margin-top: sp-vw(44);
+  margin-bottom: sp-vw(30);
+  font-size: sp-vw(18);
+  font-weight: 700;
+  color: $color-white;
+  background-color: $color-pink;
+  border-radius: sp-vw(30);
+}
