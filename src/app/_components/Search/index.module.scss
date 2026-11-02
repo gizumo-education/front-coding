@@ -79,6 +79,8 @@
         content: '';
         background-color: $color-white;
         mask-image: url('/icon/search.svg');
+        mask-repeat: no-repeat;
+        mask-size: sp-vw(18) sp-vw(18);
       }
     }
 
