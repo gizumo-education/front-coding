@@ -4,13 +4,22 @@ export const KeyVisual = () => {
   return (
     <section className={styles['section']}>
       <div className={styles['section-img']}>
-        <img
-          src='/img/keyvisual.png'
-          className={styles['section-img-keyvisual']}
-          width={158}
-          height={81}
-          alt='no.1 ※株式会社●●社実績調査'
-        />
+        <picture>
+          <source
+            srcSet='img/keyvisual-pc.png'
+            media='(min-width: 1200px)'
+            width={350}
+            height={176}
+          />
+          <img
+            src='/img/keyvisual.png'
+            className={styles['section-img-keyvisual']}
+            width={158}
+            height={81}
+            alt='no.1 ※株式会社●●社実績調査'
+          />
+        </picture>
+
         <h1 className={styles['section-title']}>
           医療事務求人を探すならギズジョブ
         </h1>

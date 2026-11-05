@@ -6,6 +6,15 @@
   padding-top: sp-vw(16);
   background-image: url('/img/banner.png');
 
+  @include media-pc {
+    height: pc-vw(300);
+    padding-top: pc-vw(100);
+    background-image: url('/img/banner-pc.png');
+    background-repeat: no-repeat;
+    background-position: pc-vw(138) pc-vw(3);
+    background-size: pc-vw(1600) pc-vw(300);
+  }
+
   &::before {
     position: absolute;
     inset: 0;
@@ -21,5 +30,11 @@
     line-height: 1.5;
     color: $color-white;
     text-align: center;
+
+    @include media-pc {
+      font-size: pc-vw(25);
+      font-weight: bold;
+      line-height: 2.15;
+    }
   }
 }
