@@ -29,12 +29,7 @@ export const News = () => {
                 />
               </picture>
               <p className={styles['news-sub-title']}>
-                <span className={styles['news-sub-title-line1']}>
-                  平日・夕方までの勤務!伊勢市の伊勢赤
-                </span>
-                <span className={styles['news-sub-title-line2']}>
-                  十字病院で医療事務求人
-                </span>
+                平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
               </p>
               <dl className={styles['news-dl']}>
                 <dt className={styles['news-salary']}>給与</dt>
@@ -65,12 +60,7 @@ export const News = () => {
                 />
               </picture>
               <p className={styles['news-sub-title']}>
-                <span className={styles['news-sub-title-line1']}>
-                  平日・夕方までの勤務!伊勢市の伊勢赤
-                </span>
-                <span className={styles['news-sub-title-line2']}>
-                  十字病院で医療事務求人
-                </span>
+                平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
               </p>
               <dl className={styles['news-dl']}>
                 <dt className={styles['news-salary']}>給与</dt>
@@ -101,12 +91,7 @@ export const News = () => {
                 />
               </picture>
               <p className={styles['news-sub-title']}>
-                <span className={styles['news-sub-title-line1']}>
-                  平日・夕方までの勤務!伊勢市の伊勢赤
-                </span>
-                <span className={styles['news-sub-title-line2']}>
-                  十字病院で医療事務求人
-                </span>
+                平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
               </p>
               <dl className={styles['news-dl']}>
                 <dt className={styles['news-salary']}>給与</dt>
@@ -137,12 +122,7 @@ export const News = () => {
                 />
               </picture>
               <p className={styles['news-sub-title']}>
-                <span className={styles['news-sub-title-line1']}>
-                  平日・夕方までの勤務!伊勢市の伊勢赤
-                </span>
-                <span className={styles['news-sub-title-line2']}>
-                  十字病院で医療事務求人
-                </span>
+                平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
               </p>
               <dl className={styles['news-dl']}>
                 <dt className={styles['news-salary']}>給与</dt>
