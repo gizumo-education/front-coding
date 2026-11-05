@@ -118,6 +118,8 @@
         content: '';
         background-color: $color-white;
         mask-image: url('/icon/search.svg');
+        mask-repeat: no-repeat;
+        mask-size: sp-vw(18);
       }
 
       @include media-pc {
@@ -136,8 +138,7 @@
           content: '';
           background-color: $color-white;
           mask-image: url('/icon/search.svg');
-          mask-repeat: no-repeat;
-          mask-size: pc-vw(30) pc-vw(30);
+          mask-size: pc-vw(30);
         }
       }
     }
