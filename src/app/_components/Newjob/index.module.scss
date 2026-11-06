@@ -85,6 +85,8 @@
   }
 
   &-container {
+    max-width: sp-vw(370);
+
     @include media-pc {
       display: flex;
       gap: pc-vw(20);
@@ -99,7 +101,7 @@
       width: sp-vw(370);
 
       &-pc {
-        display: none;
+        display: block;
 
         @include media-pc {
           display: block;
@@ -110,8 +112,9 @@
 
   &-img {
     position: relative;
-    width: sp-vw(370);
-    height: sp-vw(208);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 370 / 208;
     margin-top: sp-vw(35);
 
     @include media-pc {
