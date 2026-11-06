@@ -9,7 +9,6 @@
   text-align: center;
   background-color: $color-blue;
   border-radius: sp-vw(12);
-
   @include media-pc {
     width: pc-vw(1180);
     height: auto;
@@ -22,7 +21,6 @@
 .form-title {
   font-size: sp-vw(22);
   font-weight: 700;
-
   @include media-pc {
     font-size: pc-vw(25);
   }
@@ -32,7 +30,6 @@
   margin-top: sp-vw(18);
   font-size: sp-vw(14);
   font-weight: 400;
-
   @include media-pc {
     margin-top: pc-vw(24);
     font-size: pc-vw(20);
@@ -45,7 +42,6 @@
   gap: sp-vw(10);
   justify-content: center;
   margin-top: sp-vw(16);
-
   @include media-pc {
     flex-wrap: nowrap;
     gap: pc-vw(15);
@@ -73,7 +69,6 @@
   background-size: sp-vw(13) sp-vw(7);
   border: sp-vw(1) solid $color-pink;
   border-radius: sp-vw(4);
-
   @include media-pc {
     flex: 0 0 pc-vw(200);
     width: pc-vw(200);
@@ -106,7 +101,6 @@
   &::placeholder {
     color: $color-light-gray;
   }
-
   @include media-pc {
     flex: 1.5;
     width: 0;
@@ -152,7 +146,6 @@
     mask-size: contain;
     transform: translateY(-47%);
   }
-
   @include media-pc {
     flex: 0 0 pc-vw(140);
     width: pc-vw(160);
