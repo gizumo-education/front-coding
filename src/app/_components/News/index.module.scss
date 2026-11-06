@@ -2,15 +2,65 @@
 
 .news-wrapper {
   width: 100%;
-  padding: sp-vw(31) sp-vw(15) sp-vw(30);
+  padding: sp-vw(31) sp-vw(15) sp-vw(60);
   margin-top: sp-vw(25);
   background-color: $color-light-blue;
+
+  @include media-pc {
+    width: 100%;
+    padding: pc-vw(60) 0 pc-vw(68);
+    margin-top: pc-vw(60);
+    background-color: $color-light-blue;
+  }
+}
+
+.news-inner {
+  @include media-pc {
+    box-sizing: border-box;
+    width: pc-vw(1180);
+    padding-top: pc-vw(5);
+    margin: 0 auto;
+  }
 }
 
 .news-title {
   font-size: sp-vw(25);
   font-weight: 700;
   text-align: center;
+
+  @include media-pc {
+    width: 100%;
+    font-size: pc-vw(25);
+    font-weight: 400;
+    text-align: left;
+  }
+}
+
+.news-container {
+  position: relative;
+  margin-top: sp-vw(35);
+
+  @include media-pc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: pc-vw(28) 0 auto;
+  }
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: sp-vw(30);
+
+  @include media-pc {
+    display: flex;
+    flex-direction: row;
+    gap: pc-vw(16);
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .news-slider-wrapper {
@@ -19,8 +69,21 @@
   flex-direction: column;
   width: sp-vw(370);
   aspect-ratio: 370 / 346;
-  margin-top: sp-vw(35);
   overflow: hidden;
+
+  &:nth-child(n + 2) {
+    display: none;
+
+    @include media-pc {
+      display: block;
+    }
+  }
+
+  @include media-pc {
+    width: pc-vw(280);
+    height: auto;
+    aspect-ratio: auto;
+  }
 }
 
 .news-image {
@@ -30,11 +93,16 @@
   object-fit: cover;
   object-position: top;
   border-radius: sp-vw(10);
+
+  @include media-pc {
+    aspect-ratio: 280 / 200;
+    border-radius: pc-vw(10);
+  }
 }
 
 .news-sub-title {
   position: relative;
-  top: sp-vw(0.2);
+  top: sp-vw(-2);
   flex-shrink: 0;
   margin-top: sp-vw(10.09);
   font-size: sp-vw(16);
@@ -47,6 +115,18 @@
     top: sp-vw(0.6);
     display: block;
   }
+
+  @include media-pc {
+    margin-top: pc-vw(16);
+    font-size: pc-vw(16);
+    font-weight: 400;
+    line-height: pc-vw(22);
+
+    &-line1,
+    &-line2 {
+      top: pc-vw(-3);
+    }
+  }
 }
 
 .news-dl {
@@ -55,7 +135,13 @@
   grid-template-columns: sp-vw(60) 1fr;
   gap: sp-vw(4) sp-vw(20.06);
   align-items: center;
-  margin-top: sp-vw(12);
+  margin-top: sp-vw(9);
+
+  @include media-pc {
+    grid-template-columns: pc-vw(55) 1fr;
+    gap: pc-vw(4) pc-vw(10);
+    margin-top: pc-vw(-1);
+  }
 }
 
 .news-salary,
@@ -72,10 +158,24 @@
   color: $color-black;
   text-align: center;
   background-color: $color-white-pink;
+
+  @include media-pc {
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: pc-vw(60);
+    height: pc-vw(21);
+    padding: pc-vw(2) 0;
+    font-size: pc-vw(14);
+  }
 }
 
 .news-place {
   top: sp-vw(1);
+  @include media-pc {
+    top: 0;
+  }
 }
 
 .news-salary-desc,
@@ -87,25 +187,38 @@
   font-size: sp-vw(14);
   font-weight: 400;
   line-height: 1;
+
+  @include media-pc {
+    left: 0;
+    margin-left: pc-vw(7);
+    font-size: pc-vw(14);
+  }
 }
 
 .news-salary-desc {
   top: sp-vw(-1);
+  @include media-pc {
+    top: 0;
+  }
 }
 
 .news-station-desc {
   top: sp-vw(1);
+  @include media-pc {
+    top: 0;
+  }
 }
 
 .arrow {
   position: absolute;
-  top: sp-vw(157);
+  top: sp-vw(178);
   z-index: 10;
   width: sp-vw(43);
   height: sp-vw(43);
   background-color: $color-white;
   border-radius: 50%;
   opacity: 0.7;
+  transform: translateY(-50%);
 
   &::before {
     position: absolute;
@@ -117,6 +230,19 @@
     border-top: sp-vw(2) solid $color-gray;
     border-right: sp-vw(2) solid $color-gray;
   }
+
+  @include media-pc {
+    top: pc-vw(100);
+    width: pc-vw(60);
+    height: pc-vw(60);
+
+    &::before {
+      width: pc-vw(22);
+      height: pc-vw(22);
+      border-top-width: pc-vw(2);
+      border-right-width: pc-vw(2);
+    }
+  }
 }
 
 .prev {
@@ -124,6 +250,10 @@
 
   &::before {
     transform: translate(-30%, -50%) rotate(-135deg);
+  }
+
+  @include media-pc {
+    left: pc-vw(0);
   }
 }
 
@@ -133,6 +263,10 @@
   &::before {
     transform: translate(-70%, -50%) rotate(45deg);
   }
+
+  @include media-pc {
+    right: pc-vw(0);
+  }
 }
 
 .submit-btn {
@@ -140,12 +274,21 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: sp-vw(370);
   height: sp-vw(60);
-  margin-top: sp-vw(44);
-  margin-bottom: sp-vw(30);
+  margin: sp-vw(43) auto 0;
   font-size: sp-vw(18);
   font-weight: 700;
   color: $color-white;
   background-color: $color-pink;
   border-radius: sp-vw(30);
+
+  @include media-pc {
+    width: pc-vw(360);
+    max-width: none;
+    height: pc-vw(60);
+    margin: pc-vw(60) auto 0;
+    font-size: pc-vw(18);
+    border-radius: pc-vw(30);
+  }
 }

@@ -3,23 +3,40 @@
 .form-wrapper {
   box-sizing: border-box;
   width: sp-vw(370);
-  height: sp-vw(240);
+  height: auto;
   padding: sp-vw(17) sp-vw(12) sp-vw(20);
   margin: sp-vw(25) sp-vw(15);
   text-align: center;
   background-color: $color-blue;
   border-radius: sp-vw(12);
+
+  @include media-pc {
+    width: pc-vw(1180);
+    height: auto;
+    padding: pc-vw(40);
+    margin: pc-vw(60) auto;
+    border-radius: pc-vw(13);
+  }
 }
 
 .form-title {
   font-size: sp-vw(22);
   font-weight: 700;
+
+  @include media-pc {
+    font-size: pc-vw(25);
+  }
 }
 
 .form-sub-title {
   margin-top: sp-vw(18);
   font-size: sp-vw(14);
   font-weight: 400;
+
+  @include media-pc {
+    margin-top: pc-vw(24);
+    font-size: pc-vw(20);
+  }
 }
 
 .form {
@@ -28,9 +45,18 @@
   gap: sp-vw(10);
   justify-content: center;
   margin-top: sp-vw(16);
+
+  @include media-pc {
+    flex-wrap: nowrap;
+    gap: pc-vw(15);
+    align-items: center;
+    justify-content: space-between;
+    margin-top: pc-vw(31);
+  }
 }
 
 .select {
+  box-sizing: border-box;
   align-items: center;
   width: sp-vw(100);
   min-width: 0;
@@ -47,6 +73,19 @@
   background-size: sp-vw(13) sp-vw(7);
   border: sp-vw(1) solid $color-pink;
   border-radius: sp-vw(4);
+
+  @include media-pc {
+    flex: 0 0 pc-vw(200);
+    width: pc-vw(200);
+    min-width: pc-vw(200);
+    height: pc-vw(60);
+    padding-left: pc-vw(14);
+    font-size: pc-vw(18);
+    background-position: right pc-vw(14) center;
+    background-size: pc-vw(16) pc-vw(8);
+    border: pc-vw(1) solid $color-pink;
+    border-radius: pc-vw(10);
+  }
 }
 
 .input-field {
@@ -67,10 +106,25 @@
   &::placeholder {
     color: $color-light-gray;
   }
+
+  @include media-pc {
+    flex: 1.5;
+    width: 0;
+    height: pc-vw(60);
+    padding: pc-vw(10) pc-vw(16);
+    margin-top: 0;
+    font-size: pc-vw(16);
+    border: pc-vw(1) solid $color-pink;
+    border-radius: pc-vw(10);
+  }
 }
 
-.submit {
+.form .submit {
   position: relative;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: sp-vw(160);
   height: sp-vw(40);
   padding-top: sp-vw(1);
@@ -97,5 +151,26 @@
     mask-position: center;
     mask-size: contain;
     transform: translateY(-47%);
+  }
+
+  @include media-pc {
+    flex: 0 0 pc-vw(140);
+    width: pc-vw(160);
+    min-width: pc-vw(140);
+    height: pc-vw(60);
+    min-height: pc-vw(60);
+    padding-top: pc-vw(1.5);
+    padding-left: pc-vw(28);
+    margin-top: 0;
+    font-size: pc-vw(18);
+    border-radius: pc-vw(30);
+
+    &::before {
+      left: pc-vw(13);
+      width: pc-vw(31);
+      height: pc-vw(31);
+      padding-left: pc-vw(32);
+      transform: translateY(-47%);
+    }
   }
 }
