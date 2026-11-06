@@ -9,11 +9,11 @@
   width: 100%;
   aspect-ratio: 375 / 252;
   color: $color-white;
+  scroll-margin-top: sp-vw(80);
   background-image: url('/img/keyvisual.png');
   background-repeat: no-repeat;
   background-position: 40% center;
   background-size: cover;
-
   @include media-pc {
     aspect-ratio: 1600 / 500;
     background-color: $color-smoky-blue;
@@ -31,7 +31,6 @@
   background-position: center;
   background-size: contain;
   filter: drop-shadow(0 sp-vw(4) sp-vw(4) rgba($color-black, 0.25));
-
   @include media-pc {
     width: pc-vw(44.9);
     height: pc-vw(142);
@@ -42,7 +41,6 @@
     top: sp-vw(70);
     left: sp-vw(200);
     background-image: url('/img/laurel-left.svg');
-
     @include media-pc {
       top: pc-vw(75);
       left: pc-vw(830);
@@ -53,7 +51,6 @@
     top: sp-vw(70);
     left: sp-vw(330);
     background-image: url('/img/laurel-right.svg');
-
     @include media-pc {
       top: pc-vw(75);
       left: pc-vw(1127);
@@ -68,7 +65,6 @@
   width: sp-vw(100);
   height: auto;
   filter: drop-shadow(0 sp-vw(4) sp-vw(4) rgba($color-black, 0.25));
-
   @include media-pc {
     top: pc-vw(56.49);
     left: pc-vw(885.73);
@@ -83,7 +79,6 @@
     left: sp-vw(319);
     width: sp-vw(3);
     height: auto;
-
     @include media-pc {
       top: pc-vw(85);
       left: pc-vw(1101.82);
@@ -100,7 +95,6 @@
   width: sp-vw(35);
   height: auto;
   filter: drop-shadow(0 sp-vw(4) sp-vw(4) rgba($color-black, 0.6));
-
   @include media-pc {
     top: pc-vw(213);
     left: pc-vw(996.82);
@@ -117,7 +111,6 @@
   margin-top: sp-vw(141);
   font-size: sp-vw(17);
   text-shadow: 0 sp-vw(4) sp-vw(4) rgba($color-black, 0.25);
-
   @include media-pc {
     padding-top: pc-vw(40);
     padding-left: pc-vw(607);
@@ -138,7 +131,6 @@
   background-color: $color-white;
   border: sp-vw(1) solid $color-light-green;
   border-radius: sp-vw(6);
-
   @include media-pc {
     height: pc-vw(69);
     padding: pc-vw(12) pc-vw(41.5) pc-vw(6);
@@ -153,7 +145,6 @@
     font-size: sp-vw(16);
     font-weight: 700;
     color: $color-green;
-
     @include media-pc {
       font-size: pc-vw(40);
     }

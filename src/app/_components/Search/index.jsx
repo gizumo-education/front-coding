@@ -1,6 +1,36 @@
 import styles from './index.module.scss'
 import { Button } from '@/app/_components/common/Button'
 
+const jobCategory = [
+  { value: 'medical-clerk', label: '医療事務' },
+  { value: 'dispensing-clerk', label: '調剤事務' },
+  { value: 'health-information-manager', label: '診療情報管理士' },
+  { value: 'dental-assistant', label: '歯科助手' },
+  { value: 'dental-clerk', label: '歯科事務' },
+  { value: 'nursing-assistant', label: '看護補助・看護助手' },
+  { value: 'hospital-in-house-se', label: '病院内SE' },
+]
+
+const jobArea = [
+  { value: 'ibaragi', label: '茨城県' },
+  { value: 'kanagawa', label: '神奈川県' },
+  { value: 'gunma', label: '群馬県' },
+  { value: 'saitama', label: '埼玉県' },
+  { value: 'tiba', label: '千葉県' },
+  { value: 'tokyo', label: '東京都' },
+  { value: 'totigi', label: '栃木県' },
+]
+
+const desiredSalary = [
+  { value: 'from-170000', label: '月給17万〜' },
+  { value: 'from-180000', label: '月給18万〜' },
+  { value: 'from-190000', label: '月給19万〜' },
+  { value: 'from-200000', label: '月給20万〜' },
+  { value: 'from-210000', label: '月給21万〜' },
+  { value: 'from-220000', label: '月給22万〜' },
+  { value: 'from-230000', label: '月給23万〜' },
+]
+
 export const Search = () => {
   return (
     <section className={styles['form-wrapper']}>
@@ -15,13 +45,11 @@ export const Search = () => {
           defaultValue='medical-clerk'
           aria-label='職種'
         >
-          <option value='medical-clerk'>医療事務</option>
-          <option value='dispensing-clerk'>調剤事務</option>
-          <option value='health-information-manager'>診療情報管理士</option>
-          <option value='dental-assistant'>歯科助手</option>
-          <option value='dental-clerk'>歯科事務</option>
-          <option value='nursing-assistant'>看護補助・看護助手</option>
-          <option value='hospital-in-house-se'>病院内SE</option>
+          {jobCategory.map((item) => (
+            <option key={item.value} value={item.value}>
+              {item.label}
+            </option>
+          ))}
         </select>
         <select
           name='area'
@@ -29,13 +57,11 @@ export const Search = () => {
           defaultValue='tokyo'
           aria-label='地域'
         >
-          <option value='ibaragi'>茨城県</option>
-          <option value='kanagawa'>神奈川県</option>
-          <option value='gunma'>群馬県</option>
-          <option value='saitama'>埼玉県</option>
-          <option value='tiba'>千葉県</option>
-          <option value='tokyo'>東京都</option>
-          <option value='totigi'>栃木県</option>
+          {jobArea.map((item) => (
+            <option key={item.value} value={item.value}>
+              {item.label}
+            </option>
+          ))}
         </select>
         <select
           name='salary'
@@ -43,13 +69,11 @@ export const Search = () => {
           defaultValue='from-200000'
           aria-label='希望給与'
         >
-          <option value='from-170000'>月給17万〜</option>
-          <option value='from-180000'>月給18万〜</option>
-          <option value='from-190000'>月給19万〜</option>
-          <option value='from-200000'>月給20万〜</option>
-          <option value='from-210000'>月給21万〜</option>
-          <option value='from-220000'>月給22万〜</option>
-          <option value='from-230000'>月給23万〜</option>
+          {desiredSalary.map((item) => (
+            <option key={item.value} value={item.value}>
+              {item.label}
+            </option>
+          ))}
         </select>
         <input
           type='text'

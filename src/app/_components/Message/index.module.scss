@@ -16,7 +16,6 @@
     content: '';
     background-color: rgba($color-black, 55%);
   }
-
   @include media-pc {
     background-position: center 74%;
   }
@@ -31,7 +30,6 @@
   font-weight: 400;
   line-height: 1.6;
   white-space: nowrap;
-
   @include media-pc {
     font-size: pc-vw(25);
     font-weight: 700;
@@ -41,7 +39,6 @@
 .text-main {
   padding-top: sp-vw(16);
   padding-left: sp-vw(61);
-
   @include media-pc {
     padding-top: pc-vw(102);
     padding-left: pc-vw(548.25);
@@ -51,7 +48,6 @@
 .text-sub {
   padding-top: sp-vw(38);
   padding-left: sp-vw(26);
-
   @include media-pc {
     padding-top: pc-vw(159);
     padding-left: pc-vw(487);
