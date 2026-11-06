@@ -12,8 +12,8 @@ export const Header = () => {
 
   const toggleMenu = (e) => {
     e.stopPropagation()
-    setIsOpen(nextIsOpen)
     const nextIsOpen = !isOpen
+    setIsOpen(nextIsOpen)
 
     if (nextIsOpen) {
       document.body.classList.add('is-fixed')
