@@ -1,29 +1,50 @@
 'use client'
 
 import clsx from 'clsx'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import styles from './index.module.scss'
+import Link from 'next/link'
 
 export const Header = () => {
   const menuRef = useRef(null)
+  const buttonRef = useRef(null)
   const [isOpen, setIsOpen] = useState(false)
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
+  const toggleMenu = (e) => {
+    e.stopPropagation()
+    setIsOpen(nextIsOpen)
+    const nextIsOpen = !isOpen
 
-  const handleScroll = (e, targetId) => {
-    e.preventDefault()
-    setIsOpen(false)
-
-    const targetElement = document.getElementById(targetId)
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      })
+    if (nextIsOpen) {
+      document.body.classList.add('is-fixed')
+    } else {
+      document.body.classList.remove('is-fixed')
     }
   }
+
+  const closeMenu = () => {
+    setIsOpen(false)
+    document.body.classList.remove('is-fixed')
+  }
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!isOpen) return
+
+      const isClickInsideButton =
+        buttonRef.current && buttonRef.current.contains(e.target)
+      const isClickOnLink = e.target.closest('a')
+
+      if (!isClickInsideButton && !isClickOnLink) {
+        closeMenu()
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isOpen])
 
   return (
     <header className={styles.header}>
@@ -63,6 +84,7 @@ export const Header = () => {
           </li>
         </ul>
         <button
+          ref={buttonRef}
           type='button'
           className={styles.button}
           onClick={toggleMenu}
@@ -72,65 +94,55 @@ export const Header = () => {
           <span className={styles.line} />
           <span className={styles.line} />
         </button>
-
         <div
           ref={menuRef}
           className={clsx(styles['nav-menu'], isOpen && styles['is-opened'])}
         >
           <ul className={styles['nav-menu-list']}>
             <li>
-              <a
-                href='#top'
+              <Link
+                href='#keyvisual'
                 className={styles['nav-menu-link']}
-                onClick={(e) => handleScroll(e, 'top')}
+                onClick={closeMenu}
               >
                 トップ
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href='#news'
                 className={styles['nav-menu-link']}
-                onClick={(e) => handleScroll(e, 'news')}
+                onClick={closeMenu}
               >
                 新着求人
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='#features'
+              <Link
+                href='#keyvisual'
                 className={styles['nav-menu-link']}
-                onClick={(e) => handleScroll(e, 'features')}
+                onClick={closeMenu}
               >
                 4つの特徴
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='#flow'
+              <Link
+                href='#keyvisual'
                 className={styles['nav-menu-link']}
-                onClick={(e) => handleScroll(e, 'flow')}
+                onClick={closeMenu}
               >
                 転職までの流れ
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='#contents'
+              <Link
+                href='#keyvisual'
                 className={styles['nav-menu-link']}
-                onClick={(e) => handleScroll(e, 'contents')}
+                onClick={closeMenu}
               >
                 転職お役立ちコンテンツ
-              </a>
-            </li>
-            <li>
-              <a
-                href='#search'
-                className={styles['nav-menu-link']}
-                onClick={(e) => handleScroll(e, 'search')}
-              >
-                お仕事検索
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

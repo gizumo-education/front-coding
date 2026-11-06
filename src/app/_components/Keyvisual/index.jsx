@@ -3,7 +3,7 @@ import styles from './index.module.scss'
 
 export const Keyvisual = () => {
   return (
-    <section className={styles.keyvisual}>
+    <section className={styles.keyvisual} id='keyvisual'>
       <span className={clsx(styles.laurel, styles['laurel-left'])} />
       <span className={clsx(styles.laurel, styles['laurel-right'])} />
       <picture>

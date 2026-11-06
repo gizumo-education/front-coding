@@ -4,6 +4,7 @@
   width: 100%;
   padding: sp-vw(31) sp-vw(15) sp-vw(60);
   margin-top: sp-vw(25);
+  scroll-margin-top: sp-vw(80);
   background-color: $color-light-blue;
 
   @include media-pc {

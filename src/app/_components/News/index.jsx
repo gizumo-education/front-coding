@@ -59,7 +59,7 @@ export const News = () => {
   }, [])
 
   return (
-    <section className={styles['news-wrapper']}>
+    <section className={styles['news-wrapper']} id='news'>
       <div className={styles['news-inner']}>
         <h2 className={styles['news-title']}>新着求人</h2>
         <div className={styles['news-slider']}>
