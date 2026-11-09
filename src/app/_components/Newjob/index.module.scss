@@ -3,6 +3,7 @@
 .job {
   position: relative;
   padding: sp-vw(30) 0 sp-vw(60) sp-vw(15);
+  scroll-margin-top: sp-vw(70);
   background-color: $color-background-blue;
 
   @include media-pc {
@@ -85,6 +86,8 @@
   }
 
   &-container {
+    max-width: sp-vw(370);
+
     @include media-pc {
       display: flex;
       gap: pc-vw(20);
@@ -97,22 +100,18 @@
       display: flex;
       flex-direction: column;
       width: sp-vw(370);
-
-      &-pc {
-        display: none;
-
-        @include media-pc {
-          display: block;
-        }
-      }
     }
   }
 
   &-img {
     position: relative;
-    width: sp-vw(370);
-    height: sp-vw(208);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 370 / 208;
     margin-top: sp-vw(35);
+    object-fit: cover;
+    object-position: top;
 
     @include media-pc {
       width: pc-vw(280);

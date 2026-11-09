@@ -2,7 +2,7 @@ import styles from './index.module.scss'
 
 export const KeyVisual = () => {
   return (
-    <section className={styles['section']}>
+    <section className={styles['section']} id='keyvisual'>
       <div className={styles['section-img']}>
         <picture>
           <source
