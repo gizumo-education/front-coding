@@ -1,26 +1,44 @@
 'use client'
 import clsx from 'clsx'
 import styles from './index.module.scss'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 
 export const Header = () => {
+  const btnRef = useRef(null)
+  const menuRef = useRef(null)
   const [openMenu, setOpenMenu] = useState(false)
-  const menuFunction = () => {
-    setOpenMenu((prev) => !prev)
+
+  const menuBtnClick = (e) => {
+    e.stopPropagation()
+    const nextState = !openMenu
+    setOpenMenu(nextState)
+
+    if (nextState) {
+      document.body.classList.add('is-fixed')
+    } else {
+      document.body.classList.remove('is-fixed')
+    }
   }
 
   const closeMenu = () => {
     setOpenMenu(false)
+    document.body.classList.remove('is-fixed')
   }
 
   useEffect(() => {
-    if (openMenu) {
-      const previousOverflow = document.body.style.overflow
-      document.body.style.overflow = 'hidden'
-      return () => {
-        document.body.style.overflow = previousOverflow
+    const handleClickMenu = (e) => {
+      if (!openMenu) return
+      const linkTarget = e.target.closest('a')
+      const btnTarget = btnRef.current.contains(e.target)
+
+      if (!linkTarget && !btnTarget) {
+        closeMenu()
       }
+    }
+    document.addEventListener('click', handleClickMenu)
+    return () => {
+      document.removeEventListener('click', handleClickMenu)
     }
   }, [openMenu])
 
@@ -64,7 +82,7 @@ export const Header = () => {
 
         <button
           type='button'
-          onClick={menuFunction}
+          onClick={menuBtnClick}
           className={clsx(styles.button, styles.hamburger)}
           aria-expanded={openMenu}
         >
@@ -74,6 +92,7 @@ export const Header = () => {
         </button>
 
         <button
+          ref={btnRef}
           type='button'
           className={clsx(
             styles['overlay'],
@@ -84,32 +103,33 @@ export const Header = () => {
         />
 
         <div
+          ref={menuRef}
           className={clsx(styles['menu'], openMenu && styles['menu-open'])}
           aria-hidden={!openMenu}
         >
           <ul>
             <li>
-              <Link href='/' onClick={closeMenu}>
+              <Link href='#keyvisual' onClick={closeMenu}>
                 トップ
               </Link>
             </li>
             <li>
-              <Link href='/#news' onClick={closeMenu}>
+              <Link href='#news' onClick={closeMenu}>
                 新着求人
               </Link>
             </li>
             <li>
-              <Link href='/' onClick={closeMenu}>
+              <Link href='#keyvisual' onClick={closeMenu}>
                 4つの特徴
               </Link>
             </li>
             <li>
-              <Link href='/' onClick={closeMenu}>
+              <Link href='#keyvisual' onClick={closeMenu}>
                 転職までの流れ
               </Link>
             </li>
             <li>
-              <Link href='/' onClick={closeMenu}>
+              <Link href='#keyvisual' onClick={closeMenu}>
                 転職お役立ちコンテンツ
               </Link>
             </li>
