@@ -1,0 +1,109 @@
+@use '@/styles' as *;
+
+.search {
+  padding: sp-vw(25) sp-vw(15);
+  background-color: $color-white;
+
+  &-inner {
+    width: sp-vw(370);
+    height: sp-vw(240);
+    padding: sp-vw(15) sp-vw(25) sp-vw(20);
+    background-color: $color-light-blue;
+    border-radius: sp-vw(5);
+  }
+
+  &-title {
+    font-size: sp-vw(22);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &-sub-title {
+    margin-top: sp-vw(18);
+    font-size: sp-vw(14);
+    text-align: center;
+  }
+
+  &-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-input {
+      width: sp-vw(320);
+      height: sp-vw(30);
+      padding-left: sp-vw(7);
+      margin-top: sp-vw(15);
+      font-size: sp-vw(14);
+      color: $color-black;
+      background-color: $color-white;
+      border: sp-vw(1) solid $color-pink;
+      border-radius: sp-vw(5);
+
+      &::placeholder {
+        color: $color-gray;
+      }
+    }
+
+    &-submit-btn {
+      position: relative;
+      width: sp-vw(160);
+      height: sp-vw(40);
+      margin-top: sp-vw(19);
+      font-size: sp-vw(18);
+      font-weight: bold;
+      color: $color-white;
+      text-align: center;
+      background-color: $color-pink;
+      border-radius: sp-vw(50);
+
+      &::before {
+        position: absolute;
+        left: sp-vw(14);
+        z-index: 1;
+        width: sp-vw(18);
+        height: sp-vw(18);
+        content: '';
+        background-color: $color-white;
+        mask-image: url('/icon/search.svg');
+        mask-repeat: no-repeat;
+        mask-size: sp-vw(18);
+      }
+    }
+
+    &-select {
+      display: flex;
+      gap: sp-vw(10);
+      justify-content: center;
+      margin-top: sp-vw(16);
+
+      &-box {
+        align-items: center;
+        width: sp-vw(100);
+        height: sp-vw(30);
+        padding: sp-vw(7) sp-vw(6) sp-vw(6) sp-vw(8);
+        font-size: sp-vw(12);
+        appearance: none;
+        background-color: $color-white;
+        background-image: url('/icon/select-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: right sp-vw(6) center;
+        background-size: sp-vw(13) sp-vw(7);
+        border: sp-vw(1) solid $color-pink;
+        border-radius: sp-vw(5);
+      }
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: sp-vw(1);
+  height: sp-vw(1);
+  padding: 0;
+  margin: sp-vw(-1);
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
+}

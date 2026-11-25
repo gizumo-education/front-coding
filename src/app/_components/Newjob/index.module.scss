@@ -1,0 +1,118 @@
+@use '@/styles' as *;
+
+.job {
+  position: relative;
+  padding: sp-vw(30) sp-vw(15) sp-vw(60);
+  background-color: $color-background-light-blue;
+
+  &-title {
+    font-size: sp-vw(25);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &-btn {
+    &-left {
+      position: absolute;
+      top: sp-vw(246);
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: sp-vw(42);
+      height: sp-vw(42);
+      background-color: rgba($color-white, 0.7);
+      border-radius: 50%;
+
+      &-arrow {
+        width: sp-vw(7);
+        height: sp-vw(14);
+      }
+    }
+
+    &-right {
+      position: absolute;
+      top: sp-vw(246);
+      left: sp-vw(343);
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: sp-vw(42);
+      height: sp-vw(42);
+      background-color: rgba($color-white, 0.7);
+      border-radius: 50%;
+
+      &-arrow {
+        width: sp-vw(7);
+        height: sp-vw(14);
+        transform: scaleX(-1);
+      }
+    }
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    max-width: sp-vw(370);
+  }
+
+  &-img {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 370 / 208;
+    margin-top: sp-vw(35);
+    object-fit: cover;
+    object-position: top;
+    border-radius: sp-vw(10);
+  }
+
+  &-jobtitle {
+    width: sp-vw(370);
+    height: sp-vw(44);
+    margin-top: sp-vw(11);
+    font-size: sp-vw(16);
+    font-weight: bold;
+    line-height: 1.3;
+  }
+
+  &-submit {
+    width: sp-vw(370);
+    height: sp-vw(60);
+    padding-top: sp-vw(21);
+    margin-top: sp-vw(44);
+    font-size: sp-vw(18);
+    font-weight: bold;
+    color: $color-white;
+    text-align: center;
+    background-color: $color-pink;
+    border-radius: sp-vw(50);
+  }
+
+  &-info {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: sp-vw(60) 1fr;
+    gap: sp-vw(4);
+    margin-top: sp-vw(11);
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: sp-vw(60);
+      height: sp-vw(21);
+      font-size: sp-vw(14);
+      background-color: $color-light-pink;
+    }
+
+    &-detail {
+      display: flex;
+      align-items: center;
+      margin-left: sp-vw(18);
+      font-size: sp-vw(14);
+    }
+  }
+}
