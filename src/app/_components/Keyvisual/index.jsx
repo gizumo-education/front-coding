@@ -5,7 +5,7 @@ export const Keyvisual = () => {
     <section className={styles['section']}>
       <div className={styles['section-inner']}>
         <img
-          src='/img/keyvisual.png'
+          src='/img/keyvisual-sp.png'
           className={styles['section-inner-img']}
           width={158}
           height={81}

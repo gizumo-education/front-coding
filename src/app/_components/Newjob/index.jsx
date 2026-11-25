@@ -20,10 +20,10 @@ export const NewJob = () => {
         </button>
         <div className={styles['job-container']}>
           <img
-            src='/img/jobcard.png'
+            src='/img/jobcard-1.png'
             width={370}
             height={208}
-            alt='新着求人ジョブ1写真'
+            alt=''
             className={styles['job-img']}
           />
           <h3 className={styles['job-jobtitle']}>
