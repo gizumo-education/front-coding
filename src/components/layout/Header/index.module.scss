@@ -132,7 +132,7 @@
   align-items: center;
   height: 100%;
   color: #{$color-white};
-  background-color: #{$color-light-blue};
+  background-color: #{$color-blue};
   border-radius: 6px;
   @include media-pc {
     column-gap: pc-vw(10);

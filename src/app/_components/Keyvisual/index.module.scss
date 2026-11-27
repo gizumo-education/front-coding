@@ -7,6 +7,15 @@
   background-repeat: no-repeat;
   background-size: sp-vw(400) sp-vw(270);
 
+  @include media-pc {
+    height: pc-vw(500);
+    padding: pc-vw(56) 0 0 pc-vw(400);
+    background-color: $color-blue-gray;
+    background-image: url('/img/keyvisual-bg-pc.png');
+    background-position: pc-vw(176);
+    background-size: pc-vw(1262) pc-vw(500);
+  }
+
   &-inner {
     display: flex;
     flex-direction: column;
@@ -16,6 +25,12 @@
       width: sp-vw(157);
       height: sp-vw(81);
       margin-left: sp-vw(24);
+
+      @include media-pc {
+        width: pc-vw(350);
+        height: pc-vw(176);
+        margin-left: 0;
+      }
     }
   }
 
@@ -25,6 +40,11 @@
     font-weight: bold;
     color: $color-white;
     text-shadow: sp-vw(0) sp-vw(4) sp-vw(4) rgba($color-black, 0.25);
+
+    @include media-pc {
+      margin-top: pc-vw(40);
+      font-size: pc-vw(50);
+    }
   }
 
   &-subtitle {
@@ -38,9 +58,23 @@
     border: $color-emerald-green solid sp-vw(1);
     border-radius: sp-vw(5);
 
+    @include media-pc {
+      width: pc-vw(391);
+      height: pc-vw(69);
+      padding: pc-vw(10) pc-vw(37) pc-vw(4);
+      margin: pc-vw(58) 0 0;
+      font-size: pc-vw(20);
+      border: $color-emerald-green solid pc-vw(2);
+      border-radius: pc-vw(10);
+    }
+
     &-number {
       font-size: sp-vw(16);
       font-weight: bold;
+
+      @include media-pc {
+        font-size: pc-vw(40);
+      }
     }
   }
 }

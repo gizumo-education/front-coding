@@ -18,26 +18,97 @@ export const NewJob = () => {
             className={styles['job-btn-left-arrow']}
           />
         </button>
-        <div className={styles['job-container']}>
-          <img
-            src='/img/jobcard-1.png'
-            width={370}
-            height={208}
-            alt=''
-            className={styles['job-img']}
-          />
-          <h3 className={styles['job-jobtitle']}>
-            平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
-          </h3>
-          <dl className={styles['job-info']}>
-            <dt className={styles['job-info-list']}>給与</dt>
-            <dd className={styles['job-info-detail']}>月給 148,000円～</dd>
-            <dt className={styles['job-info-list']}>所在地</dt>
-            <dd className={styles['job-info-detail']}>三重県伊勢市</dd>
-            <dt className={styles['job-info-list']}>最寄駅</dt>
-            <dd className={styles['job-info-detail']}>伊勢市駅 徒歩15分</dd>
-          </dl>
+
+        <div className={styles['job-list']}>
+          {/*求人1*/}
+          <div className={styles['job-container']}>
+            <img
+              src='/img/jobcard-1.png'
+              width={370}
+              height={208}
+              alt=''
+              className={styles['job-img']}
+            />
+            <h3 className={styles['job-jobtitle']}>
+              平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
+            </h3>
+            <dl className={styles['job-info']}>
+              <dt className={styles['job-info-list']}>給与</dt>
+              <dd className={styles['job-info-detail']}>月給 148,000円～</dd>
+              <dt className={styles['job-info-list']}>所在地</dt>
+              <dd className={styles['job-info-detail']}>三重県伊勢市</dd>
+              <dt className={styles['job-info-list']}>最寄駅</dt>
+              <dd className={styles['job-info-detail']}>伊勢市駅 徒歩15分</dd>
+            </dl>
+          </div>
+
+          {/*求人2*/}
+          <div className={styles['job-container']}>
+            <img
+              src='/img/jobcard-2.png'
+              width={370}
+              height={208}
+              alt=''
+              className={styles['job-img']}
+            />
+            <h3 className={styles['job-jobtitle']}>
+              平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
+            </h3>
+            <dl className={styles['job-info']}>
+              <dt className={styles['job-info-list']}>給与</dt>
+              <dd className={styles['job-info-detail']}>月給 148,000円～</dd>
+              <dt className={styles['job-info-list']}>所在地</dt>
+              <dd className={styles['job-info-detail']}>三重県伊勢市</dd>
+              <dt className={styles['job-info-list']}>最寄駅</dt>
+              <dd className={styles['job-info-detail']}>伊勢市駅 徒歩15分</dd>
+            </dl>
+          </div>
+
+          {/*求人3*/}
+          <div className={styles['job-container']}>
+            <img
+              src='/img/jobcard-3.png'
+              width={370}
+              height={208}
+              alt=''
+              className={styles['job-img']}
+            />
+            <h3 className={styles['job-jobtitle']}>
+              平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
+            </h3>
+            <dl className={styles['job-info']}>
+              <dt className={styles['job-info-list']}>給与</dt>
+              <dd className={styles['job-info-detail']}>月給 148,000円～</dd>
+              <dt className={styles['job-info-list']}>所在地</dt>
+              <dd className={styles['job-info-detail']}>三重県伊勢市</dd>
+              <dt className={styles['job-info-list']}>最寄駅</dt>
+              <dd className={styles['job-info-detail']}>伊勢市駅 徒歩15分</dd>
+            </dl>
+          </div>
+
+          {/*求人4*/}
+          <div className={styles['job-container']}>
+            <img
+              src='/img/jobcard-4.png'
+              width={370}
+              height={208}
+              alt=''
+              className={styles['job-img']}
+            />
+            <h3 className={styles['job-jobtitle']}>
+              平日・夕方までの勤務!伊勢市の伊勢赤十字病院で医療事務求人
+            </h3>
+            <dl className={styles['job-info']}>
+              <dt className={styles['job-info-list']}>給与</dt>
+              <dd className={styles['job-info-detail']}>月給 148,000円～</dd>
+              <dt className={styles['job-info-list']}>所在地</dt>
+              <dd className={styles['job-info-detail']}>三重県伊勢市</dd>
+              <dt className={styles['job-info-list']}>最寄駅</dt>
+              <dd className={styles['job-info-detail']}>伊勢市駅 徒歩15分</dd>
+            </dl>
+          </div>
         </div>
+
         <button
           type='button'
           aria-label='次の求人'

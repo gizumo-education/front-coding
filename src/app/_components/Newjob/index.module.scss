@@ -1,20 +1,44 @@
 @use '@/styles' as *;
 
 .job {
-  position: relative;
   padding: sp-vw(30) sp-vw(15) sp-vw(60);
   background-color: $color-background-light-blue;
+
+  @include media-pc {
+    padding: pc-vw(64) pc-vw(210) pc-vw(67);
+  }
 
   &-title {
     font-size: sp-vw(25);
     font-weight: bold;
     text-align: center;
+
+    @include media-pc {
+      font-size: pc-vw(25);
+      font-weight: normal;
+      text-align: left;
+    }
+  }
+
+  &-slider {
+    position: relative;
+
+    @include media-pc {
+      margin-top: pc-vw(29);
+    }
+  }
+
+  &-list {
+    @include media-pc {
+      display: flex;
+      gap: pc-vw(20);
+    }
   }
 
   &-btn {
     &-left {
       position: absolute;
-      top: sp-vw(246);
+      top: sp-vw(192);
       z-index: 2;
       display: flex;
       align-items: center;
@@ -24,16 +48,27 @@
       background-color: rgba($color-white, 0.7);
       border-radius: 50%;
 
+      @include media-pc {
+        top: pc-vw(70);
+        width: pc-vw(60);
+        height: pc-vw(60);
+      }
+
       &-arrow {
         width: sp-vw(7);
         height: sp-vw(14);
+
+        @include media-pc {
+          width: pc-vw(15);
+          height: pc-vw(30);
+        }
       }
     }
 
     &-right {
       position: absolute;
-      top: sp-vw(246);
-      left: sp-vw(343);
+      top: sp-vw(192);
+      left: sp-vw(328);
       z-index: 2;
       display: flex;
       align-items: center;
@@ -43,10 +78,22 @@
       background-color: rgba($color-white, 0.7);
       border-radius: 50%;
 
+      @include media-pc {
+        top: pc-vw(70);
+        left: pc-vw(1120);
+        width: pc-vw(60);
+        height: pc-vw(60);
+      }
+
       &-arrow {
         width: sp-vw(7);
         height: sp-vw(14);
         transform: scaleX(-1);
+
+        @include media-pc {
+          width: pc-vw(15);
+          height: pc-vw(30);
+        }
       }
     }
   }
@@ -55,6 +102,18 @@
     display: flex;
     flex-direction: column;
     max-width: sp-vw(370);
+
+    @include media-pc {
+      max-width: pc-vw(280);
+    }
+
+    &:nth-child(n + 2) {
+      display: none;
+
+      @include media-pc {
+        display: block;
+      }
+    }
   }
 
   &-img {
@@ -66,7 +125,12 @@
     margin-top: sp-vw(35);
     object-fit: cover;
     object-position: top;
-    border-radius: sp-vw(10);
+
+    @include media-pc {
+      width: pc-vw(280);
+      height: pc-vw(200);
+      margin-top: 0;
+    }
   }
 
   &-jobtitle {
@@ -76,6 +140,14 @@
     font-size: sp-vw(16);
     font-weight: bold;
     line-height: 1.3;
+
+    @include media-pc {
+      width: 100%;
+      height: auto;
+      margin-top: pc-vw(8);
+      font-size: pc-vw(16);
+      font-weight: normal;
+    }
   }
 
   &-submit {
@@ -89,6 +161,15 @@
     text-align: center;
     background-color: $color-pink;
     border-radius: sp-vw(50);
+
+    @include media-pc {
+      display: block;
+      width: pc-vw(360);
+      height: pc-vw(60);
+      padding: pc-vw(20);
+      margin: pc-vw(59) auto 0;
+      font-size: pc-vw(18);
+    }
   }
 
   &-info {
@@ -98,6 +179,12 @@
     gap: sp-vw(4);
     margin-top: sp-vw(11);
 
+    @include media-pc {
+      grid-template-columns: pc-vw(60) 1fr;
+      gap: pc-vw(4);
+      margin-top: pc-vw(7);
+    }
+
     &-list {
       display: flex;
       align-items: center;
@@ -106,6 +193,12 @@
       height: sp-vw(21);
       font-size: sp-vw(14);
       background-color: $color-light-pink;
+
+      @include media-pc {
+        width: pc-vw(60);
+        height: pc-vw(21);
+        font-size: pc-vw(14);
+      }
     }
 
     &-detail {
@@ -113,6 +206,11 @@
       align-items: center;
       margin-left: sp-vw(18);
       font-size: sp-vw(14);
+
+      @include media-pc {
+        margin-left: pc-vw(10);
+        font-size: pc-vw(14);
+      }
     }
   }
 }
