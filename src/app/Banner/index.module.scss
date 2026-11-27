@@ -8,6 +8,13 @@
   background-repeat: no-repeat;
   background-size: sp-vw(400) sp-vw(75);
 
+  @include media-pc {
+    height: pc-vw(300);
+    padding-top: pc-vw(104);
+    background-image: url('/img/banner-bg-pc.png');
+    background-size: pc-vw(1600) pc-vw(300);
+  }
+
   &::before {
     position: absolute;
     inset: 0;
@@ -23,5 +30,11 @@
     line-height: 1.6;
     color: $color-white;
     text-align: center;
+
+    @include media-pc {
+      font-size: pc-vw(25);
+      font-weight: bold;
+      line-height: 2.2;
+    }
   }
 }
